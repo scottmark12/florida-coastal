@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://floridacoastal.co/sitemap.xml
+Sitemap: https://www.floridacoastal.co/sitemap.xml
