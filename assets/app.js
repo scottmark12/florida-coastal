@@ -1165,7 +1165,7 @@ function homeView(){
   return `<div class="hero"><div class="ph">${srcsets(`<img src="img/southbeach-lifeguard.jpg" alt="" style="object-position:center 60%">`,true)}</div><div class="wrap"><div class="inner">
       <h1>Florida is 1,350 miles of coastline. Find your mile.</h1>
       <p>Most people only know Disney and Miami. We match you to the rest.</p>
-      <div class="sub"><a class="btn btn-accent btn-cta" href="#quiz">See my top 5 towns</a></div></div></div></div>
+      <div class="sub"><a class="btn btn-accent btn-cta" href="#quiz">See your top 5 towns</a></div></div></div></div>
   <section class="wrap"><div class="label">Featured articles</div><div class="grid3">${ARTICLES.slice(0,3).map(acard).join("")}</div><div style="text-align:center;margin-top:30px"><a class="btn btn-accent" href="#articles">View all articles</a></div></section>
   <section class="wrap" style="padding-top:10px"><div class="label">Browse by coast</div><div class="grid4">${coastInfo.map(c=>`<a class="coast" href="#towns" data-coastlink="${c[0]}"><img src="${COASTPHOTO[c[0]]}" alt="" loading="lazy"><div class="t"><h3>${c[1]}</h3><p>${c[2]}</p></div></a>`).join("")}</div></section>
   <section class="wrap" id="quizsec">${mapInner(false)}</section>
@@ -1211,7 +1211,7 @@ function mapInner(full){
     <p class="lede">${SQ.length} quick questions, and the map changes as you answer. We score all ${T.length} beach towns on your answers, and your best fits light up first.</p>${full?`<p style="margin:0 0 14px"><button class="linkbtn" data-act="svclose">Skip the questions and browse the map</button></p>`:""}${svSummary()}</div>
     <div>${body}</div></div></div>`;
   return `<div id="mapsec"><div class="label">The Town Map</div>${full?`<h1 style="font-size:clamp(30px,4vw,44px);margin-bottom:8px">${browse?"Every beach town, by style":"Every beach town, matched to you"}</h1>`:""}<p class="lede" style="margin:0 0 18px">${browse?"Tap a town style to see where it lives on the coast, then tap any dot to meet the town.":"The towns that fit you best grow on the map. Fine tune it anytime with the filters, or browse by town style."}</p>
-  ${browse?`<div class="invite"><div><b>Want it ranked for you?</b><span>${SQ.length} quick questions and your best fits light up on this map.</span></div><button class="btn btn-accent" data-act="svstart">See my top 5 towns</button></div>`:`<div class="ptabs" role="group" aria-label="Map mode" style="max-width:320px"><button data-ptab="prio" aria-pressed="${S.ptab==="prio"}">Matched to me</button><button data-ptab="vibe" aria-pressed="${S.ptab==="vibe"}">Town styles</button></div>`}
+  ${browse?`<div class="invite"><div><b>Want it ranked for you?</b><span>${SQ.length} quick questions and your best fits light up on this map.</span></div><button class="btn btn-accent" data-act="svstart">See your top 5 towns</button></div>`:`<div class="ptabs" role="group" aria-label="Map mode" style="max-width:320px"><button data-ptab="prio" aria-pressed="${S.ptab==="prio"}">Matched to me</button><button data-ptab="vibe" aria-pressed="${S.ptab==="vibe"}">Town styles</button></div>`}
   ${best}${body}</div>`;
 }
 function newsSection(){return `<section class="news"><div class="wrap grid">
@@ -1402,7 +1402,7 @@ function articleView(id){
   const more=ARTICLES.filter(x=>x.id!==a.id).slice(0,3);
   return `${pageHero(`<img src="${a.img}" alt="">`,`<a href="#home">Home</a> / <a href="#articles">Articles</a> / ${a.cat}`,a.title,a.dek)}
   <section class="wrap twocol"><article><div class="byline"><span class="cat">${a.cat}</span><span>·</span><span>By Florida Coastal</span><span>·</span>${a.date?`<time datetime="${a.date}">${fmtDate(a.date)}</time><span>·</span>`:""}<span>${a.read} min read</span></div><div class="prose">${a.vs?a.body.replace("<!--vs-->",vsTable(a.vs)):a.body}</div>
-    <div style="margin-top:34px"><a class="btn btn-accent" href="#quiz">See my top 5 towns</a></div></article>
+    <div style="margin-top:34px"><a class="btn btn-accent" href="#quiz">See your top 5 towns</a></div></article>
     <aside class="side"><div class="boxed"><div class="label" style="margin-bottom:14px">Towns in this article</div>${a.towns.map(id=>byId[id]).filter(Boolean).map(t=>`<a href="#town-${t.id}" style="display:flex;gap:12px;align-items:center;text-decoration:none;color:var(--ink);padding:8px 0;border-top:1px solid var(--line)"><span style="width:64px;height:48px;border-radius:4px;overflow:hidden;flex-shrink:0;display:block">${art(t,false)}</span><span><b style="font-family:var(--display);font-weight:400">${t.name}</b><br><span style="font-size:13px;color:var(--muted)">${COASTS[t.coast][0]}</span></span></a>`).join("")}</div></aside></section>
   <section class="band"><div class="wrap"><div class="label">More articles</div><div class="grid3">${more.map(acard).join("")}</div></div></section>`;
 }
