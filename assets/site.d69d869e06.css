@@ -434,6 +434,17 @@ section{padding-block:44px}
 }
 @media (max-width:620px){ nav.main a{padding:8px 8px;font-size:14px} nav.main a.btn{padding:9px 14px;margin-left:0} .grid4{grid-template-columns:1fr} }
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media (max-width:700px){
+.stylemap{display:flex;flex-direction:column}
+.stylemap .maplayout{display:contents}
+.stylemap .mapcol{order:1}
+.stylemap .stylebar{order:2;margin:12px 0 14px;padding:10px 0 10px 12px;gap:8px}
+.stylemap .maplayout>.card{order:3}
+.stylemap .stylerow .vgroup{display:none}
+.mapcta span{display:none}
+.maphead{margin-bottom:14px}
+.maphead .lede{font-size:15px}
+}
 .lmodal{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:16px}
 .lmback{position:absolute;inset:0;background:rgba(10,25,35,.55);backdrop-filter:blur(2px)}
 .lmcard{position:relative;background:var(--white);border-radius:16px;width:100%;max-width:520px;max-height:calc(100vh - 32px);overflow:auto;padding:30px 30px 22px;box-shadow:0 24px 60px rgba(10,25,35,.3);animation:lmin .22s ease-out}
