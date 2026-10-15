@@ -4,16 +4,16 @@
 --accent:#C65213; --accent-dark:#A8440E; --accent-tint:#FBEEE5; --accent-2:#E3A66D; --sea:#1B6E78; --deep:#152A2E;
 --gulf:#C65213; --atl:#3A56B0; --pan:#2B8C6E; --keys:#D39A22;
 --fit-top:#863207; --fit-strong:#C65213; --fit-good:#DE9258; --fit-out:#7E8F92;
---display:'Marcellus', 'Cormorant Garamond', 'Hoefler Text', Georgia, 'Times New Roman', serif;
---body:'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
---ui:'Nunito Sans', 'Helvetica Neue', Arial, sans-serif;
+--display:'Fraunces', Georgia, 'Times New Roman', serif;
+--body:'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+--ui:'DM Sans', 'Helvetica Neue', Arial, sans-serif;
 color-scheme:light;
 }
 *{box-sizing:border-box}
 picture{display:contents}
 body{background:var(--white);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;margin:0}
 a{color:var(--sea)} a:hover{color:var(--accent)}
-h1,h2,h3{font-family:var(--display);font-weight:400;font-synthesis-weight:none;line-height:1.16;letter-spacing:.005em;font-variant-numeric:lining-nums;text-wrap:balance;margin:0;color:var(--ink)}
+h1,h2,h3{font-family:var(--display);font-weight:400;font-optical-sizing:auto;font-synthesis-weight:none;line-height:1.14;letter-spacing:-.01em;font-variant-numeric:lining-nums;text-wrap:balance;margin:0;color:var(--ink)}
 p{margin:0}
 button,input,select{font:inherit;color:inherit}
 :focus-visible{outline:3px solid var(--accent);outline-offset:2px}
