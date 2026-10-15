@@ -196,9 +196,17 @@ section{padding-block:60px}
 .mapbox svg{width:100%;height:auto;display:block}
 .fl-land{fill:#FBF6EA;stroke:#DCCBA6;stroke-width:1.2;stroke-linejoin:round}
 .lake{fill:#CFE6EA;stroke:#B9D9DE;stroke-width:1}
-.sand{fill:none;stroke:#F5E6C4;stroke-width:3;stroke-linejoin:round}
+.sand{fill:none;stroke:#F8EDD3;stroke-width:4;stroke-linejoin:round}
+svg[data-illus] .fl-land{fill:#EDE4CC;stroke:#E2CFA5;stroke-width:1}
+svg[data-illus] .shore2{stroke:#B9E6E2;stroke-width:34;stroke-opacity:.75}
+svg[data-illus] .shore{stroke:#D8F2EE;stroke-width:14;stroke-opacity:.9}
+svg[data-illus] .nb-land{fill:#EAE3D0}
+svg[data-illus] .grat{display:none}
+svg[data-illus] .road{stroke:#F8F2E4;stroke-width:2.4;stroke-opacity:.95}
+svg[data-illus] .citytxt{font-weight:800;letter-spacing:.06em;text-transform:uppercase;font-size:10px;fill:#4A5A5C}
+.fs-map:has(svg[data-illus]){background:radial-gradient(ellipse at 60% 40%,#CFEBEE,#A9D5DD)}
 .park{fill:#CAD6AE;opacity:.75}.tree{fill:#9DB27C;opacity:.8}
-.sketch,.parks{pointer-events:none}
+.sketch,.parks,.illus-img{pointer-events:none}
 .nb-land{fill:#F2ECDF;stroke:#DCCBA6;stroke-width:1}
 .shore2{fill:none;stroke:#E9F6F8;stroke-width:24;stroke-opacity:.55;stroke-linejoin:round}
 .keys-line{fill:none;stroke:#D9C9A3;stroke-width:4;stroke-dasharray:2 6;stroke-linecap:round}
@@ -550,7 +558,6 @@ body:has(.fs){overflow:hidden}
 .rvp-foot .btn{height:52px;white-space:nowrap}.rvp-foot .btn-line{flex:none;padding:0 20px;background:#fff}.rvp-foot .btn-accent{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .rvp-back{width:52px;padding:0!important;justify-content:center}
 .fs.flying .fs-pulse,.fs.flying .placelabel{opacity:0}
-.fs.flying button{pointer-events:none}
 .fs-enter.fs-rvp .rvp-hero img,.fs-rvp .ph-next img{animation:rvkb 6s ease-out both}
 @keyframes rvkb{from{transform:scale(1.08)}to{transform:scale(1)}}
 .fs-enter.fs-rvp .rvp-name,.fs-enter.fs-rvp .rvp-body,.fs-rvp .ph-next .rvp-name{animation:rvslide .45s ease-out both}
