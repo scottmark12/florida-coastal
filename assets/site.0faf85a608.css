@@ -484,7 +484,7 @@ section{padding-block:44px}
 .smap-card .ph{height:150px}
 }
 body:has(.fs){overflow:hidden}
-.fs{position:fixed;inset:0;z-index:60;background:#D6ECF0;overflow:hidden;color:var(--ink);animation:fsin .3s ease-out}
+.fs{position:fixed;inset:0;z-index:60;background:#D6ECF0;overflow:hidden;color:var(--ink)}.fs.fs-enter{animation:fsin .3s ease-out}
 @keyframes fsin{from{opacity:0}to{opacity:1}}
 .fs-logo{display:inline-block;line-height:0}.fs-logo img{height:38px;width:auto}
 .fs-logo.wl img{filter:brightness(0) invert(1);opacity:.92}
@@ -546,6 +546,14 @@ body:has(.fs){overflow:hidden}
 .rvp-foot{position:fixed;left:0;right:0;bottom:0;z-index:6;display:flex;gap:10px;padding:14px 20px calc(16px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(255,255,255,0),#fff 30%)}
 .rvp-foot .btn{height:52px;white-space:nowrap}.rvp-foot .btn-line{flex:none;padding:0 20px;background:#fff}.rvp-foot .btn-accent{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .rvp-back{width:52px;padding:0!important;justify-content:center}
+.fs .rv-out{opacity:0!important;transform:translateY(10px);transition:opacity .22s ease,transform .22s ease;pointer-events:none}
+.fs-rvp .rvp-hero.rv-out,.fs-rvp .rvp-body.rv-out{transform:translateX(-28px)}
+.fs.flying .fs-pulse,.fs.flying .placelabel{opacity:0}
+.fs.flying button{pointer-events:none}
+.fs-rvp .rvp-hero img{animation:rvkb 6s ease-out both}
+@keyframes rvkb{from{transform:scale(1.08)}to{transform:scale(1)}}
+.fs-rvp .rvp-name,.fs-rvp .rvp-body{animation:rvslide .38s ease-out both}
+@keyframes rvslide{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}
 .fs-top{display:grid;grid-template-columns:1fr minmax(440px,32vw)}
 .fs-mapcol{position:relative;overflow:hidden}
 .fs-mapcol>.fs-logo{position:absolute;left:36px;top:28px;z-index:3}
