@@ -523,7 +523,7 @@ body:has(.fs){overflow:hidden}
 .rv-steps span{font-size:13px;font-weight:800;color:var(--muted);margin-left:6px;white-space:nowrap}
 .fs-bar{position:absolute;left:0;right:0;top:0;z-index:4;display:flex;justify-content:space-between;align-items:center;padding:24px 40px;background:linear-gradient(180deg,rgba(255,255,255,.88),rgba(255,255,255,0))}
 .fs-bar>span{display:flex;gap:22px}
-.fs-rv .rv-card{position:absolute;left:40px;top:96px;bottom:40px;width:520px;z-index:3;display:flex;flex-direction:column;overflow:auto;border-radius:20px!important;box-shadow:0 2px 6px rgba(20,40,55,.08),0 30px 70px rgba(20,40,55,.25);animation:rvin .35s ease-out}
+.fs-rv .rv-card{position:absolute;left:40px;top:96px;bottom:40px;width:520px;z-index:3;display:flex;flex-direction:column;overflow:auto;border-radius:20px!important;box-shadow:0 2px 6px rgba(20,40,55,.08),0 30px 70px rgba(20,40,55,.25)}
 .fs-rv .rv-card .ph{position:relative;aspect-ratio:auto;height:clamp(180px,30vh,280px);flex:none}
 .fs-rv .rv-card .bd{padding:24px 30px 0;gap:0;flex:1;display:flex;flex-direction:column}
 .fs-rv .rv-foot{position:sticky;bottom:0;margin:auto -30px 0;padding:16px 30px 22px;background:var(--white);border-top:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;gap:12px}
@@ -539,21 +539,33 @@ body:has(.fs){overflow:hidden}
 .rvp-name{position:absolute;left:20px;right:20px;bottom:20px;color:#fff;z-index:2}
 .rvp-name .rv-badge{position:static;display:inline-block;box-shadow:none}
 .rvp-name h2{color:#fff;font-size:46px;margin:12px 0 2px;line-height:1.02}.rvp-name span{font-size:14px;font-weight:700;opacity:.92}
-.rvp-body{padding:18px 20px 110px;animation:rvin .35s ease-out}.rvp-body .rv-day{font-size:18px;margin-bottom:12px}
+.rvp-body{padding:18px 20px 110px}.rvp-body .rv-day{font-size:18px;margin-bottom:12px}
 .rvp-map{display:none;position:absolute;inset:0;z-index:5}
 .rvp-maplabel{position:absolute;left:50%;top:calc(18px + env(safe-area-inset-top));transform:translateX(-50%);background:#fff;border-radius:999px;padding:8px 16px;font-weight:800;box-shadow:0 4px 14px rgba(20,40,55,.15)}
 .fs-rvp.showmap{overflow:hidden}.fs-rvp.showmap .rvp-map{display:block}
 .rvp-foot{position:fixed;left:0;right:0;bottom:0;z-index:6;display:flex;gap:10px;padding:14px 20px calc(16px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(255,255,255,0),#fff 30%)}
 .rvp-foot .btn{height:52px;white-space:nowrap}.rvp-foot .btn-line{flex:none;padding:0 20px;background:#fff}.rvp-foot .btn-accent{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .rvp-back{width:52px;padding:0!important;justify-content:center}
-.fs .rv-out{opacity:0!important;transform:translateY(10px);transition:opacity .22s ease,transform .22s ease;pointer-events:none}
-.fs-rvp .rvp-hero.rv-out,.fs-rvp .rvp-body.rv-out{transform:translateX(-28px)}
 .fs.flying .fs-pulse,.fs.flying .placelabel{opacity:0}
 .fs.flying button{pointer-events:none}
-.fs-rvp .rvp-hero img{animation:rvkb 6s ease-out both}
+.fs-enter.fs-rvp .rvp-hero img,.fs-rvp .ph-next img{animation:rvkb 6s ease-out both}
 @keyframes rvkb{from{transform:scale(1.08)}to{transform:scale(1)}}
-.fs-rvp .rvp-name,.fs-rvp .rvp-body{animation:rvslide .38s ease-out both}
+.fs-enter.fs-rvp .rvp-name,.fs-enter.fs-rvp .rvp-body,.fs-rvp .ph-next .rvp-name{animation:rvslide .45s ease-out both}
+.fs-rvp .ph-next .rvp-name{animation-delay:calc(var(--wdel) + var(--wd) * .55)}
 @keyframes rvslide{from{opacity:0;transform:translateX(28px)}to{opacity:1;transform:none}}
+.fs-enter.fs-rv .rv-card{animation:rvin .4s ease-out}
+.ph-next{position:absolute;inset:0;z-index:3;overflow:hidden;clip-path:inset(0 100% 0 0);animation:wipe var(--wd,.6s) cubic-bezier(.65,0,.35,1) var(--wdel,0s) forwards}
+.ph-next.rev{clip-path:inset(0 0 0 100%)}
+.ph-next>img,.ph-next>.fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+@keyframes wipe{to{clip-path:inset(0 0 0 0)}}
+.fs .st-out{animation:stout .22s ease-in forwards}
+@keyframes stout{to{opacity:0;transform:translateY(-10px)}}
+.fs .st-in{animation:stin .5s cubic-bezier(.2,.7,.2,1) both}
+@keyframes stin{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.rv-steps i{transition:width .4s ease,background .4s ease}
+.fs .dot.depart,.fs .dot.arrive{transform-box:fill-box;transform-origin:center;transition:transform .45s ease,fill .3s ease}
+.fs .dot.depart{transform:scale(.45)}
+.fs .dot.arrive{fill:var(--accent);opacity:1;transform:scale(2.4);transition-delay:var(--late,0s)}
 .fs-top{display:grid;grid-template-columns:1fr minmax(440px,32vw)}
 .fs-mapcol{position:relative;overflow:hidden}
 .fs-mapcol>.fs-logo{position:absolute;left:36px;top:28px;z-index:3}
@@ -579,7 +591,7 @@ body:has(.fs){overflow:hidden}
 .fs-panel{padding:24px 20px calc(28px + env(safe-area-inset-bottom));box-shadow:none;border-radius:20px 20px 0 0;margin-top:-18px;position:relative}
 .fs-panel h1{font-size:38px;margin-top:10px}
 }
-@media (prefers-reduced-motion:reduce){.fs,.rv-prog i,.rv-ans span,.rv-card,.rv-scanmap .dot,.fs-pulse,.fs-row,.fs-pattern,.rvp-body,.rvp-segs i.cur{animation:none!important;opacity:1;transform:none}.fs-pulse{display:none}}
+@media (prefers-reduced-motion:reduce){.ph-next,.st-in,.st-out,.fs,.rv-prog i,.rv-ans span,.rv-card,.rv-scanmap .dot,.fs-pulse,.fs-row,.fs-pattern,.rvp-body,.rvp-segs i.cur{animation:none!important;opacity:1;transform:none}.fs-pulse{display:none}}
 .lmodal{position:fixed;inset:0;z-index:80;display:grid;place-items:center;padding:16px}
 .lmback{position:absolute;inset:0;background:rgba(10,25,35,.55);backdrop-filter:blur(2px)}
 .lmcard{position:relative;background:var(--white);border-radius:16px;width:100%;max-width:520px;max-height:calc(100vh - 32px);overflow:auto;padding:30px 30px 22px;box-shadow:0 24px 60px rgba(10,25,35,.3);animation:lmin .22s ease-out}
