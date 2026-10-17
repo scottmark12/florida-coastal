@@ -1,0 +1,44 @@
+{
+  "palm-bay": [
+    355000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/brevard-county/palm-bay"
+  ],
+  "west-melbourne": [
+    392000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/brevard-county/west-melbourne"
+  ],
+  "melbourne-beach": [
+    820000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/brevard-county/melbourne-beach"
+  ],
+  "indialantic": [
+    665000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/brevard-county/indialantic"
+  ],
+  "satellite-beach": [
+    520000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/brevard-county/satellite-beach"
+  ],
+  "cocoa": [
+    323750,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/brevard-county/cocoa"
+  ],
+  "titusville": [
+    309000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/brevard-county/titusville"
+  ]
+}

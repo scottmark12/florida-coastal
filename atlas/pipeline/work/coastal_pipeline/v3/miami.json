@@ -1,0 +1,53 @@
+{
+  "id": "miami",
+  "bounds": [
+    -80.285,
+    25.71,
+    -80.115,
+    25.82
+  ],
+  "district_recipes": {
+    "brickell": "brickell",
+    "grove": "grove",
+    "gables": "gables",
+    "southbeach-district": "southbeach-district",
+    "edgewater": "edgewater"
+  },
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v3/miami/osm.json"
+    ],
+    "districts": "work/coastal_pipeline/v3/miami/districts.json",
+    "prices": "work/coastal_pipeline/v3/miami/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v3/miami/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v3/miami/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v3/miami/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v3/miami/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v3/miami/context.json",
+      "source": "US Census TIGER/Line 2025 and Census state polygons; existing atlas base outside OSM review rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    }
+  }
+}

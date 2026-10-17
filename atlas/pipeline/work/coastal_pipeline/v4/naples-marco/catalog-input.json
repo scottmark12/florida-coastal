@@ -1,0 +1,218 @@
+{
+  "region": {
+    "id": "naples-marco",
+    "coast": "gulf",
+    "name": "Naples, Marco Island and the Everglades",
+    "map": "Naples and Marco",
+    "at": [
+      26.02,
+      -81.8
+    ],
+    "side": "W",
+    "img": "img/marco-island.jpg",
+    "pos": "62% center",
+    "hpos": "center 45%",
+    "text": "The polished southwest corner of the state, with calm Gulf beaches, golf and a walkable downtown in Naples. Past Marco Island the road ends at Everglades City and Chokoloskee, on the edge of the Ten Thousand Islands and Everglades National Park.",
+    "towns": [
+      "naples",
+      "marco-island",
+      "everglades-city",
+      "chokoloskee"
+    ],
+    "center": [
+      243.65435418393685,
+      217.12498039003987
+    ]
+  },
+  "towns": [
+    {
+      "id": "naples",
+      "name": "Naples",
+      "aka": "Naples Beach Park Shore Vanderbilt Beach Clam Pass",
+      "region": "Southwest Gulf",
+      "coast": "gulf",
+      "lat": 26.14,
+      "lon": -81.79,
+      "tier": 3,
+      "price": "$685K median",
+      "vibes": [
+        "sophcalm",
+        "beaches",
+        "active",
+        "bluezone"
+      ],
+      "airport": "Southwest Florida (RSW), about 40 minutes",
+      "season": "Busy winters, sleepy summers",
+      "watch": "Storm surge (Ian in 2022), summer heat",
+      "blurb": "Polished and peaceful, with golf, boating, a walkable downtown and calm Gulf beaches from the pier north to Vanderbilt Beach.",
+      "day": "You play a morning round, walk Fifth Avenue South for lunch and watch the sunset from the beach at the end of the street.",
+      "todo": [
+        [
+          "Naples Pier",
+          "The classic sunset spot. The pier is closed for a rebuild, expected to finish around mid 2027."
+        ],
+        [
+          "Fifth Avenue South",
+          "Walkable dining and shops."
+        ],
+        [
+          "Delnor-Wiggins Pass State Park",
+          "A mile of natural beach that often lands on best beach lists."
+        ]
+      ],
+      "pros": [
+        "Polished and well kept",
+        "Lots of golf and boating",
+        "Calm, beautiful Gulf beaches"
+      ],
+      "cons": [
+        "Expensive",
+        "Hot, quiet summers",
+        "Limited public beach parking"
+      ],
+      "x": 220.6070683027296,
+      "y": 239.26202802064194,
+      "area_id": "naples-marco",
+      "area_name": "Naples, Marco Island and the Everglades",
+      "source_url": "https://www.floridacoastal.co/towns/naples.html",
+      "nearest_town_km": 22.22449152667052
+    },
+    {
+      "id": "chokoloskee",
+      "name": "Chokoloskee",
+      "region": "Everglades",
+      "coast": "gulf",
+      "lat": 25.808,
+      "lon": -81.361,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "oldfl",
+        "dock",
+        "active"
+      ],
+      "airport": "Southwest Florida (RSW), about 1.5 hours",
+      "season": "Quiet. Winter is prime fishing season",
+      "watch": "Very low lying and isolated, with storm surge risk",
+      "blurb": "A tiny shell mound island at the edge of Everglades National Park, the last stop before the Ten Thousand Islands.",
+      "day": "You pole a skiff through the mangrove islands for snook and stop at the old Smallwood Store on the way in.",
+      "todo": [
+        [
+          "Ten Thousand Islands",
+          "A maze of mangrove islands for fishing, paddling and camping."
+        ]
+      ],
+      "pros": [
+        "Wild Florida at your door",
+        "Legendary backcountry fishing"
+      ],
+      "cons": [
+        "Extremely remote",
+        "Mosquitoes and storm risk"
+      ],
+      "x": 264.2131525211526,
+      "y": 203.27108643566743,
+      "area_id": "naples-marco",
+      "area_name": "Naples, Marco Island and the Everglades",
+      "source_url": "https://www.floridacoastal.co/towns/chokoloskee.html",
+      "nearest_town_km": 6.045710259669096
+    },
+    {
+      "id": "everglades-city",
+      "name": "Everglades City",
+      "aka": "Everglades Stone Crab Capital",
+      "region": "Everglades",
+      "coast": "gulf",
+      "lat": 25.858,
+      "lon": -81.385,
+      "tier": 1,
+      "price": "Thin data. About $250K to $400K depending on the source (Redfin and Zillow, late 2025 to 2026)",
+      "vibes": [
+        "oldfl",
+        "dock",
+        "active"
+      ],
+      "airport": "Southwest Florida (RSW), about 1.5 hours",
+      "season": "Busy November through April, very quiet in summer",
+      "watch": "Storm surge. Wilma in 2005, Irma in 2017 and Ian in 2022 all flooded town, and nearly every property is in a flood zone",
+      "blurb": "A small fishing town on the Barron River at the edge of Everglades National Park, known for stone crab and as the way into the Ten Thousand Islands.",
+      "day": "You launch a kayak at the national park visitor center, eat stone crab on the river for lunch and catch the Third Thursday talk at the museum.",
+      "todo": [
+        [
+          "Everglades National Park, Gulf Coast",
+          "The new Marjory Stoneman Douglas Visitor Center opened in December 2025, with boat tours and a kayak launch."
+        ],
+        [
+          "Museum of the Everglades",
+          "The county's history museum, a short walk from the circle. Open Tuesday through Saturday."
+        ],
+        [
+          "Ten Thousand Islands",
+          "A maze of mangrove islands for fishing, paddling and camping, starting right off the dock."
+        ]
+      ],
+      "pros": [
+        "Wild Florida and big water at the door",
+        "A real small town with a busy calendar in season",
+        "Lower prices than Naples or Marco Island"
+      ],
+      "cons": [
+        "Storm surge has flooded town again and again",
+        "Supermarket, pharmacy and hospital are 35 to 45 minutes away",
+        "Very quiet and very hot in summer"
+      ],
+      "x": 261.6930278199826,
+      "y": 208.7665012548072,
+      "area_id": "naples-marco",
+      "area_name": "Naples, Marco Island and the Everglades",
+      "source_url": "https://www.floridacoastal.co/towns/everglades-city.html",
+      "nearest_town_km": 6.045710259669096
+    },
+    {
+      "id": "marco-island",
+      "name": "Marco Island",
+      "region": "Southwest Gulf",
+      "coast": "gulf",
+      "lat": 25.94,
+      "lon": -81.719,
+      "tier": 4,
+      "price": null,
+      "vibes": [
+        "sophcalm",
+        "dock",
+        "bluezone"
+      ],
+      "airport": "Southwest Florida (RSW), about 50 minutes",
+      "season": "Busy winters",
+      "watch": "Storm surge, high insurance",
+      "blurb": "The largest of the Ten Thousand Islands, with a wide crescent beach on one side and wild mangrove country on the other.",
+      "day": "You shell on Tigertail Beach at low tide, then take the boat into the Ten Thousand Islands for the afternoon.",
+      "todo": [
+        [
+          "Tigertail Beach",
+          "A lagoon and sandbar beach known for shelling and shorebirds."
+        ]
+      ],
+      "pros": [
+        "Beautiful beach and boating",
+        "Quiet and well kept"
+      ],
+      "cons": [
+        "Expensive",
+        "Far from everything else"
+      ],
+      "x": 228.10416809188268,
+      "y": 217.20030584904288,
+      "area_id": "naples-marco",
+      "area_name": "Naples, Marco Island and the Everglades",
+      "source_url": "https://www.floridacoastal.co/towns/marco-island.html",
+      "nearest_town_km": 23.300774459775894
+    }
+  ],
+  "bounds": [
+    -81.91000000000001,
+    25.688,
+    -81.241,
+    26.26
+  ]
+}

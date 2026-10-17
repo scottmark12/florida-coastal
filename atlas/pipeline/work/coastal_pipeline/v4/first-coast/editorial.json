@@ -1,0 +1,216 @@
+{
+  "prices": {
+    "staug": [
+      479900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/st-johns-county/st-augustine"
+    ],
+    "st-augustine-beach": [
+      598500,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/st-johns-county/st-augustine-beach"
+    ],
+    "ponte-vedra-beach": [
+      899000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/st-johns-county/ponte-vedra-beach"
+    ],
+    "jaxbeach": [
+      714995,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/duval-county/jacksonville-beach"
+    ],
+    "neptune-beach": [
+      1199950,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/duval-county/neptune-beach"
+    ],
+    "atlantic-beach": [
+      749000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/duval-county/atlantic-beach"
+    ],
+    "fernandina": [
+      665000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/nassau-county/fernandina-beach"
+    ],
+    "jacksonville": [
+      295000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/duval-county/jacksonville"
+    ]
+  },
+  "recipes": {
+    "staug": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "st-augustine-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "ponte-vedra-beach": {
+      "walls": [
+        "#f7ecd3",
+        "#d9e6d0",
+        "#efd6bf"
+      ],
+      "roofs": [
+        "#b9947c",
+        "#cdb59a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "jaxbeach": {
+      "walls": [
+        "#f5edda",
+        "#c0dcd7",
+        "#e9d9c0",
+        "#d5e8e1"
+      ],
+      "roofs": [
+        "#d4dfd3",
+        "#a8c4bd"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "neptune-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "atlantic-beach": {
+      "walls": [
+        "#d1c3aa",
+        "#e4dcc4",
+        "#c7d3bf",
+        "#f1e6ca"
+      ],
+      "roofs": [
+        "#aabbb1",
+        "#c6ccc0"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "fernandina": {
+      "walls": [
+        "#f1dab8",
+        "#c5decf",
+        "#efc7bf",
+        "#f7efda"
+      ],
+      "roofs": [
+        "#a2b7ab",
+        "#b8b5a3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.ameliaisland.com/blog/exploring-history-and-architecture-in-downtown-fernandina-beach/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "jacksonville": {
+      "walls": [
+        "#87b9c5",
+        "#9bc9c9",
+        "#d3e8e4",
+        "#f1f1e6"
+      ],
+      "roofs": [
+        "#dfede6",
+        "#adc4c3"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    }
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory."
+  ]
+}

@@ -1,0 +1,191 @@
+{
+  "prices": {
+    "palm-bay": [
+      355000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county/palm-bay"
+    ],
+    "west-melbourne": [
+      392000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county/west-melbourne"
+    ],
+    "melbourne-beach": [
+      820000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county/melbourne-beach"
+    ],
+    "indialantic": [
+      665000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county/indialantic"
+    ],
+    "satellite-beach": [
+      520000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county/satellite-beach"
+    ],
+    "cocoa": [
+      323750,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county/cocoa"
+    ],
+    "titusville": [
+      309000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county/titusville"
+    ]
+  },
+  "recipes": {
+    "palm-bay": {
+      "walls": [
+        "#e4e5cf",
+        "#c9ded3",
+        "#f2deb8",
+        "#f4eddb"
+      ],
+      "roofs": [
+        "#bac5b8",
+        "#d2d5c5"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "west-melbourne": {
+      "walls": [
+        "#e4e5cf",
+        "#c9ded3",
+        "#f2deb8",
+        "#f4eddb"
+      ],
+      "roofs": [
+        "#bac5b8",
+        "#d2d5c5"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "melbourne-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "indialantic": {
+      "walls": [
+        "#e4e5cf",
+        "#c9ded3",
+        "#f2deb8",
+        "#f4eddb"
+      ],
+      "roofs": [
+        "#bac5b8",
+        "#d2d5c5"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "satellite-beach": {
+      "walls": [
+        "#f5edda",
+        "#c0dcd7",
+        "#e9d9c0",
+        "#d5e8e1"
+      ],
+      "roofs": [
+        "#d4dfd3",
+        "#a8c4bd"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "cocoa": {
+      "walls": [
+        "#b9856b",
+        "#d2a68b",
+        "#ead4b5",
+        "#eee4ce"
+      ],
+      "roofs": [
+        "#b5aa93",
+        "#ddd8c7"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://visitcocoavillage.com/discover/historic-walking-tour",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "titusville": {
+      "walls": [
+        "#b9856b",
+        "#d2a68b",
+        "#ead4b5",
+        "#eee4ce"
+      ],
+      "roofs": [
+        "#b5aa93",
+        "#ddd8c7"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    }
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory."
+  ]
+}

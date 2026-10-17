@@ -1,0 +1,242 @@
+{
+  "prices": {
+    "boca-raton": [
+      559000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/palm-beach-county/boca-raton"
+    ],
+    "highland-beach": [
+      999250,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/palm-beach-county/highland-beach"
+    ],
+    "delray": [
+      285000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/palm-beach-county/delray-beach"
+    ],
+    "palm-beach": [
+      2285000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/palm-beach-county/palm-beach"
+    ],
+    "west-palm-beach": [
+      334950,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/palm-beach-county/west-palm-beach"
+    ],
+    "riviera-beach": [
+      579000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/palm-beach-county/riviera-beach"
+    ],
+    "north-palm-beach": [
+      498500,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/palm-beach-county/north-palm-beach"
+    ],
+    "palm-beach-gardens": [
+      788750,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/palm-beach-county/palm-beach-gardens"
+    ],
+    "jupiter": [
+      847000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/palm-beach-county/jupiter"
+    ]
+  },
+  "recipes": {
+    "boca-raton": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://bocahistory.org/virtual-exhibition/mizners-dream/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "highland-beach": {
+      "walls": [
+        "#f5edda",
+        "#c0dcd7",
+        "#e9d9c0",
+        "#d5e8e1"
+      ],
+      "roofs": [
+        "#d4dfd3",
+        "#a8c4bd"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "delray": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.delraybeachfl.gov/government/city-departments/development-services/historic-preservation/historic-districts",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "palm-beach": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "west-palm-beach": {
+      "walls": [
+        "#87b9c5",
+        "#9bc9c9",
+        "#d3e8e4",
+        "#f1f1e6"
+      ],
+      "roofs": [
+        "#dfede6",
+        "#adc4c3"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "riviera-beach": {
+      "walls": [
+        "#f5edda",
+        "#c0dcd7",
+        "#e9d9c0",
+        "#d5e8e1"
+      ],
+      "roofs": [
+        "#d4dfd3",
+        "#a8c4bd"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "north-palm-beach": {
+      "walls": [
+        "#e4e5cf",
+        "#c9ded3",
+        "#f2deb8",
+        "#f4eddb"
+      ],
+      "roofs": [
+        "#bac5b8",
+        "#d2d5c5"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "palm-beach-gardens": {
+      "walls": [
+        "#f7ecd3",
+        "#d9e6d0",
+        "#efd6bf"
+      ],
+      "roofs": [
+        "#b9947c",
+        "#cdb59a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "jupiter": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    }
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory."
+  ]
+}

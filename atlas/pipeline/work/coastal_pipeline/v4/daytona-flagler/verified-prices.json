@@ -1,0 +1,50 @@
+{
+  "nsb": [
+    529900,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/volusia-county/new-smyrna-beach"
+  ],
+  "port-orange": [
+    349000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/volusia-county/port-orange"
+  ],
+  "south-daytona": [
+    238748,
+    "median listing price",
+    "August 2026",
+    "https://www.realtor.com/local/market/florida/volusia-county/south-daytona"
+  ],
+  "daytona-beach-shores": [
+    375000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/volusia-county/daytona-beach-shores"
+  ],
+  "daytona": [
+    264500,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/volusia-county/daytona-beach"
+  ],
+  "ormond-beach": [
+    399900,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/volusia-county/ormond-beach"
+  ],
+  "flagler": [
+    581500,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/flagler-county/flagler-beach"
+  ],
+  "palm-coast": [
+    400000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/flagler-county/palm-coast"
+  ]
+}
