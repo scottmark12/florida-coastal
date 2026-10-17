@@ -1,0 +1,13 @@
+{
+  "id":"alys",
+  "sourceLinks":["https://www.openstreetmap.org/node/358740251"],
+  "footprintPolicy":"exact-source-polygon-with-inner-rings",
+  "roof":"bermuda",
+  "roofCourses":7,
+  "walls":["#fff9e9"],
+  "roofs":["#fffdf6"],
+  "details":["courtyards","narrow mapped pedestrian lanes"],
+  "height":{"prefer":"height_m","fallback":"levels * 3 m","missing":"assumed two stories; requires review"},
+  "landmarks":[{"id":"example-only","sourceRequired":true,"geometryAssetRequired":true,"anchorMustBeVerified":true}],
+  "placement":"never move a footprint or landmark to solve label collision"
+}

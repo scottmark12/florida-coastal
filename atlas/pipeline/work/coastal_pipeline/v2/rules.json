@@ -1,0 +1,239 @@
+{
+  "scale": {
+    "buildings": 3,
+    "trees": 5,
+    "maxHeightToFootprint": 3,
+    "metersPerStorey": 3,
+    "defaultResidentialStoreys": 2,
+    "treeRealHeightMeters": 12,
+    "treeCrownWidthMeters": 8,
+    "notes": "Footprint width means the shorter side of the oriented footprint rectangle. Height includes roof. Height tags override levels; missing levels use explicitly assumed two stories. This is the authoritative scale rule for rebuilt assets; legacy regions require real-height metadata before migration.",
+    "treeSpacingMeters": 8,
+    "densityStatus": "Illustrative 8 m forest spacing (156 crowns/ha), not a surveyed stem count"
+  },
+  "sandWidthMeters": 100,
+  "cameraTiltDegrees": 45,
+  "phoneBreakpoint": 700,
+  "leaderMaxPixels": 40,
+  "regionMiles": [
+    20,
+    30
+  ],
+  "maxRegionBytes": 4000000,
+  "maxAnchorErrorMeters": 150,
+  "recipes": {
+    "seaside": {
+      "walls": [
+        "#f1dbb4",
+        "#e7b7ac",
+        "#a7cfce"
+      ],
+      "roofs": [
+        "#bfd0cb"
+      ],
+      "roof": "gable",
+      "details": [
+        "porches",
+        "tin seams",
+        "town green"
+      ]
+    },
+    "rosemary": {
+      "walls": [
+        "#ddc7a3",
+        "#f2e8d2",
+        "#babcb6",
+        "#c4a05d",
+        "#9b8270"
+      ],
+      "roofs": [
+        "#50595b",
+        "#50595b",
+        "#50595b",
+        "#899493",
+        "#899493",
+        "#8e6d59",
+        "#8e6d59",
+        "#486357"
+      ],
+      "roof": "gable",
+      "details": [
+        "townhouse porches",
+        "green shutters",
+        "timber trim"
+      ]
+    },
+    "alys": {
+      "walls": [
+        "#fff9e9"
+      ],
+      "roofs": [
+        "#fffdf6"
+      ],
+      "roof": "bermuda",
+      "details": [
+        "actual multipolygon courtyards",
+        "7 roof courses",
+        "narrow mapped lanes"
+      ]
+    },
+    "watercolor": {
+      "walls": [
+        "#c7d5ad",
+        "#f1dbb4",
+        "#a7cfce"
+      ],
+      "roofs": [
+        "#bfd0cb"
+      ],
+      "roof": "gable",
+      "details": [
+        "lowcountry porches"
+      ]
+    },
+    "urban": {
+      "walls": [
+        "#ddd9c8",
+        "#b5ccc5",
+        "#eee4d0"
+      ],
+      "roofs": [
+        "#d0d2c4"
+      ],
+      "roof": "flat",
+      "details": [
+        "verified height metadata needed",
+        "landmark recipes needed"
+      ]
+    },
+    "default": {
+      "walls": [
+        "#e8ddc5",
+        "#cbd0b6"
+      ],
+      "roofs": [
+        "#b6c2b8"
+      ],
+      "roof": "gable",
+      "details": []
+    },
+    "cottage": {
+      "walls": [
+        "#c7d5ad",
+        "#f1dbb4",
+        "#a7cfce"
+      ],
+      "roofs": [
+        "#bfd0cb"
+      ],
+      "roof": "gable",
+      "details": [
+        "small detached cottages"
+      ]
+    },
+    "grayton": {
+      "walls": [
+        "#c7d5ad",
+        "#f1dbb4",
+        "#a7cfce"
+      ],
+      "roofs": [
+        "#bfd0cb"
+      ],
+      "roof": "gable",
+      "details": [
+        "small historic cottages",
+        "irregular village lanes"
+      ]
+    },
+    "inlet": {
+      "walls": [
+        "#c7d5ad",
+        "#f1dbb4",
+        "#a7cfce"
+      ],
+      "roofs": [
+        "#bfd0cb"
+      ],
+      "roof": "gable",
+      "details": [
+        "low-rise beach cottages"
+      ]
+    },
+    "seacrest": {
+      "walls": [
+        "#c7d5ad",
+        "#f1dbb4",
+        "#a7cfce"
+      ],
+      "roofs": [
+        "#bfd0cb"
+      ],
+      "roof": "gable",
+      "details": [
+        "pastel cottages",
+        "shared greens"
+      ]
+    },
+    "seagrove": {
+      "walls": [
+        "#c7d5ad",
+        "#f1dbb4",
+        "#a7cfce"
+      ],
+      "roofs": [
+        "#bfd0cb"
+      ],
+      "roof": "gable",
+      "details": [
+        "mixed coastal cottages",
+        "tree canopy"
+      ]
+    },
+    "watersound": {
+      "walls": [
+        "#c7d5ad",
+        "#f1dbb4",
+        "#a7cfce"
+      ],
+      "roofs": [
+        "#bfd0cb"
+      ],
+      "roof": "gable",
+      "details": [
+        "shingle cottages",
+        "dune boardwalks"
+      ]
+    }
+  },
+  "palette": {
+    "land": "#f1e3c8",
+    "sand": "#fffdf1",
+    "canopy": [
+      "#bdcba5",
+      "#b3c896",
+      "#91ad72"
+    ],
+    "shallows": [
+      "#91e1d0",
+      "#64cfc9",
+      "#44aebc"
+    ],
+    "deepWater": "#3593ae"
+  },
+  "labels": {
+    "maxLeaderPx": 40,
+    "alternateSides": true,
+    "hideLowerPriorityCollisions": true,
+    "rotate": false,
+    "moveBuildings": false
+  },
+  "phone": {
+    "breakpoint": 700,
+    "regionBuildings": false,
+    "truePositionDots": true,
+    "cardControlsHeightPx": 42,
+    "cardGapPx": 10,
+    "canvas": "full-viewport"
+  }
+}

@@ -1,0 +1,1952 @@
+{
+  "attribution": "© OpenStreetMap contributors, ODbL. Canopy: ESA WorldCover 2021 CC BY 4.0 and Tampa/USF 2021 where used. Display attribution alongside these UI-free images on the website.",
+  "towns": [
+    {
+      "town_id": "30a",
+      "name": "30A (Santa Rosa Beach)",
+      "desktop": "30a.webp",
+      "mobile": "30a-m.webp",
+      "center": {
+        "x": -205.34192045251544,
+        "y": 703.2020141945516,
+        "lon": -86.1376671,
+        "lat": 30.32019869999998
+      },
+      "districts": [
+        {
+          "id": "dune-allen",
+          "name": "Dune Allen",
+          "lon": -86.2423271,
+          "lat": 30.350679499999984
+        },
+        {
+          "id": "santa-rosa-beach",
+          "name": "Santa Rosa Beach",
+          "lon": -86.2307992,
+          "lat": 30.346642299999985
+        },
+        {
+          "id": "blue-mountain-beach",
+          "name": "Blue Mountain Beach",
+          "lon": -86.1971649,
+          "lat": 30.337422699999998
+        },
+        {
+          "id": "grayton",
+          "name": "Grayton Beach",
+          "lon": -86.165929,
+          "lat": 30.327959499999995
+        },
+        {
+          "id": "watercolor",
+          "name": "WaterColor",
+          "lon": -86.1436111,
+          "lat": 30.323872700000013
+        },
+        {
+          "id": "seaside",
+          "name": "Seaside",
+          "lon": -86.1376671,
+          "lat": 30.32019869999998
+        },
+        {
+          "id": "seagrove",
+          "name": "Seagrove",
+          "lon": -86.1312569,
+          "lat": 30.3180152
+        },
+        {
+          "id": "watersound",
+          "name": "Watersound",
+          "lon": -86.0452972,
+          "lat": 30.288149999999995
+        },
+        {
+          "id": "alys",
+          "name": "Alys Beach",
+          "lon": -86.030005,
+          "lat": 30.28413259999999
+        },
+        {
+          "id": "seacrest",
+          "name": "Seacrest",
+          "lon": -86.0216796,
+          "lat": 30.28280059999999
+        },
+        {
+          "id": "rosemary",
+          "name": "Rosemary Beach",
+          "lon": -86.015565,
+          "lat": 30.280291900000005
+        },
+        {
+          "id": "inlet-beach",
+          "name": "Inlet Beach",
+          "lon": -86.0079936,
+          "lat": 30.276868099999998
+        }
+      ],
+      "district": "seaside",
+      "span": 1.4,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          -205.34192045251544,
+          1.0937499999999998,
+          -702.1082641945516
+        ],
+        "target": [
+          -205.34192045251544,
+          0,
+          -703.2020141945516
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.43749999999999994,
+        "bottom": -0.43749999999999994,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=30a&level=town&landing=1&cx=-205.34192045251544&cy=703.2020141945516&span=1.4&district=seaside",
+      "mobile_camera": {
+        "position": [
+          -205.34192045251544,
+          1.0937499999999998,
+          -702.1082641945516
+        ],
+        "target": [
+          -205.34192045251544,
+          0,
+          -703.2020141945516
+        ],
+        "left": -0.35,
+        "right": 0.35,
+        "top": 0.43749999999999994,
+        "bottom": -0.43749999999999994,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=30a&level=town&landing=1&cx=-205.34192045251544&cy=703.2020141945516&span=0.7&district=seaside"
+    },
+    {
+      "town_id": "dunedin",
+      "name": "Dunedin",
+      "desktop": "dunedin.webp",
+      "mobile": "dunedin-m.webp",
+      "center": {
+        "x": 120.70388716833563,
+        "y": 446.61876663325586,
+        "lon": -82.77,
+        "lat": 28.019999999999996
+      },
+      "districts": [
+        {
+          "id": "dunedin-center",
+          "name": "Dunedin",
+          "lon": -82.7893788,
+          "lat": 28.01166269999998
+        }
+      ],
+      "district": "dunedin-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          120.70388716833563,
+          2.1874999999999996,
+          -444.43126663325586
+        ],
+        "target": [
+          120.70388716833563,
+          0,
+          -446.61876663325586
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=dunedin&level=town&landing=1&cx=120.70388716833563&cy=446.61876663325586&span=2.8&district=dunedin-center",
+      "mobile_camera": {
+        "position": [
+          120.70388716833563,
+          2.1874999999999996,
+          -444.43126663325586
+        ],
+        "target": [
+          120.70388716833563,
+          0,
+          -446.61876663325586
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=dunedin&level=town&landing=1&cx=120.70388716833563&cy=446.61876663325586&span=1.4&district=dunedin-center"
+    },
+    {
+      "town_id": "clearwaterbeach",
+      "name": "Clearwater Beach",
+      "desktop": "clearwaterbeach.webp",
+      "mobile": "clearwaterbeach-m.webp",
+      "center": {
+        "x": 114.8582207302606,
+        "y": 442.11945294406513,
+        "lon": -82.83,
+        "lat": 27.980000000000004
+      },
+      "districts": [
+        {
+          "id": "clearwaterbeach-center",
+          "name": "Clearwater Beach",
+          "lon": -82.8279313,
+          "lat": 27.977473599999996
+        }
+      ],
+      "district": "clearwaterbeach-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          114.8582207302606,
+          2.1874999999999996,
+          -439.93195294406513
+        ],
+        "target": [
+          114.8582207302606,
+          0,
+          -442.11945294406513
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=clearwaterbeach&level=town&landing=1&cx=114.8582207302606&cy=442.11945294406513&span=2.8&district=clearwaterbeach-center",
+      "mobile_camera": {
+        "position": [
+          114.8582207302606,
+          2.1874999999999996,
+          -439.93195294406513
+        ],
+        "target": [
+          114.8582207302606,
+          0,
+          -442.11945294406513
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=clearwaterbeach&level=town&landing=1&cx=114.8582207302606&cy=442.11945294406513&span=1.4&district=clearwaterbeach-center"
+    },
+    {
+      "town_id": "gulfport",
+      "name": "Gulfport",
+      "desktop": "gulfport.webp",
+      "mobile": "gulfport-m.webp",
+      "center": {
+        "x": 127.88906252270131,
+        "y": 416.70633531808073,
+        "lon": -82.7,
+        "lat": 27.75000000000002
+      },
+      "districts": [
+        {
+          "id": "gulfport-center",
+          "name": "Gulfport",
+          "lon": -82.7034334,
+          "lat": 27.748361299999996
+        }
+      ],
+      "district": "gulfport-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          127.88906252270131,
+          2.1874999999999996,
+          -414.51883531808073
+        ],
+        "target": [
+          127.88906252270131,
+          0,
+          -416.70633531808073
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=gulfport&level=town&landing=1&cx=127.88906252270131&cy=416.70633531808073&span=2.8&district=gulfport-center",
+      "mobile_camera": {
+        "position": [
+          127.88906252270131,
+          2.1874999999999996,
+          -414.51883531808073
+        ],
+        "target": [
+          127.88906252270131,
+          0,
+          -416.70633531808073
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=gulfport&level=town&landing=1&cx=127.88906252270131&cy=416.70633531808073&span=1.4&district=gulfport-center"
+    },
+    {
+      "town_id": "ami",
+      "name": "Anna Maria Island",
+      "desktop": "ami.webp",
+      "mobile": "ami-m.webp",
+      "center": {
+        "x": 125.18948851146489,
+        "y": 392.2459624241382,
+        "lon": -82.73,
+        "lat": 27.530000000000012
+      },
+      "districts": [
+        {
+          "id": "ami-center",
+          "name": "Anna Maria Island",
+          "lon": -82.7189887,
+          "lat": 27.514203699999985
+        }
+      ],
+      "district": "ami-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          125.18948851146489,
+          2.1874999999999996,
+          -390.0584624241382
+        ],
+        "target": [
+          125.18948851146489,
+          0,
+          -392.2459624241382
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=ami&level=town&landing=1&cx=125.18948851146489&cy=392.2459624241382&span=2.8&district=ami-center",
+      "mobile_camera": {
+        "position": [
+          125.18948851146489,
+          2.1874999999999996,
+          -390.0584624241382
+        ],
+        "target": [
+          125.18948851146489,
+          0,
+          -392.2459624241382
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=ami&level=town&landing=1&cx=125.18948851146489&cy=392.2459624241382&span=1.4&district=ami-center"
+    },
+    {
+      "town_id": "longboat",
+      "name": "Longboat Key",
+      "desktop": "longboat.webp",
+      "mobile": "longboat-m.webp",
+      "center": {
+        "x": 132.23423062801888,
+        "y": 378.99431676359575,
+        "lon": -82.66,
+        "lat": 27.409999999999986
+      },
+      "districts": [
+        {
+          "id": "longboat-center",
+          "name": "Longboat Key",
+          "lon": -82.6589881,
+          "lat": 27.412541700000002
+        }
+      ],
+      "district": "longboat-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          132.23423062801888,
+          2.1874999999999996,
+          -376.80681676359575
+        ],
+        "target": [
+          132.23423062801888,
+          0,
+          -378.99431676359575
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=longboat&level=town&landing=1&cx=132.23423062801888&cy=378.99431676359575&span=2.8&district=longboat-center",
+      "mobile_camera": {
+        "position": [
+          132.23423062801888,
+          2.1874999999999996,
+          -376.80681676359575
+        ],
+        "target": [
+          132.23423062801888,
+          0,
+          -378.99431676359575
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=longboat&level=town&landing=1&cx=132.23423062801888&cy=378.99431676359575&span=1.4&district=longboat-center"
+    },
+    {
+      "town_id": "apollo-beach",
+      "name": "Apollo Beach",
+      "desktop": "apollo-beach.webp",
+      "mobile": "apollo-beach-m.webp",
+      "center": {
+        "x": 156.57905627266078,
+        "y": 419.7082048725144,
+        "lon": -82.408,
+        "lat": 27.774000000000004
+      },
+      "districts": [
+        {
+          "id": "apollo-beach",
+          "name": "Apollo Beach",
+          "lon": -82.4062097,
+          "lat": 27.7741547
+        }
+      ],
+      "district": "apollo-beach",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          156.57905627266078,
+          2.1874999999999996,
+          -417.5207048725144
+        ],
+        "target": [
+          156.57905627266078,
+          0,
+          -419.7082048725144
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=apollo-beach&level=town&landing=1&cx=156.57905627266078&cy=419.7082048725144&span=2.8&district=apollo-beach",
+      "mobile_camera": {
+        "position": [
+          156.57905627266078,
+          2.1874999999999996,
+          -417.5207048725144
+        ],
+        "target": [
+          156.57905627266078,
+          0,
+          -419.7082048725144
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=apollo-beach&level=town&landing=1&cx=156.57905627266078&cy=419.7082048725144&span=1.4&district=apollo-beach"
+    },
+    {
+      "town_id": "clearwater",
+      "name": "Clearwater",
+      "desktop": "clearwater.webp",
+      "mobile": "clearwater-m.webp",
+      "center": {
+        "x": 117.81834109858865,
+        "y": 440.59305576768026,
+        "lon": -82.8,
+        "lat": 27.966
+      },
+      "districts": [
+        {
+          "id": "clearwater-center",
+          "name": "Clearwater",
+          "lon": -82.8001026,
+          "lat": 27.965853299999978
+        }
+      ],
+      "district": "clearwater-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          117.81834109858865,
+          2.1874999999999996,
+          -438.40555576768026
+        ],
+        "target": [
+          117.81834109858865,
+          0,
+          -440.59305576768026
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=clearwater&level=town&landing=1&cx=117.81834109858865&cy=440.59305576768026&span=2.8&district=clearwater-center",
+      "mobile_camera": {
+        "position": [
+          117.81834109858865,
+          2.1874999999999996,
+          -438.40555576768026
+        ],
+        "target": [
+          117.81834109858865,
+          0,
+          -440.59305576768026
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=clearwater&level=town&landing=1&cx=117.81834109858865&cy=440.59305576768026&span=1.4&district=clearwater-center"
+    },
+    {
+      "town_id": "indian-rocks-beach",
+      "name": "Indian Rocks Beach",
+      "desktop": "indian-rocks-beach.webp",
+      "mobile": "indian-rocks-beach-m.webp",
+      "center": {
+        "x": 113.18563134322272,
+        "y": 431.9972818008752,
+        "lon": -82.848,
+        "lat": 27.88900000000001
+      },
+      "districts": [
+        {
+          "id": "indian-rocks-beach-center",
+          "name": "Indian Rocks Beach",
+          "lon": -82.8512152,
+          "lat": 27.8753005
+        }
+      ],
+      "district": "indian-rocks-beach-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          113.18563134322272,
+          2.1874999999999996,
+          -429.8097818008752
+        ],
+        "target": [
+          113.18563134322272,
+          0,
+          -431.9972818008752
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=indian-rocks-beach&level=town&landing=1&cx=113.18563134322272&cy=431.9972818008752&span=2.8&district=indian-rocks-beach-center",
+      "mobile_camera": {
+        "position": [
+          113.18563134322272,
+          2.1874999999999996,
+          -429.8097818008752
+        ],
+        "target": [
+          113.18563134322272,
+          0,
+          -431.9972818008752
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=indian-rocks-beach&level=town&landing=1&cx=113.18563134322272&cy=431.9972818008752&span=1.4&district=indian-rocks-beach-center"
+    },
+    {
+      "town_id": "madeira-beach",
+      "name": "Madeira Beach",
+      "desktop": "madeira-beach.webp",
+      "mobile": "madeira-beach-m.webp",
+      "center": {
+        "x": 118.19547204955511,
+        "y": 422.0498357186228,
+        "lon": -82.798,
+        "lat": 27.799000000000003
+      },
+      "districts": [
+        {
+          "id": "madeira-beach-center",
+          "name": "Madeira Beach",
+          "lon": -82.7973247,
+          "lat": 27.798081400000004
+        }
+      ],
+      "district": "madeira-beach-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          118.19547204955511,
+          2.1874999999999996,
+          -419.8623357186228
+        ],
+        "target": [
+          118.19547204955511,
+          0,
+          -422.0498357186228
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=madeira-beach&level=town&landing=1&cx=118.19547204955511&cy=422.0498357186228&span=2.8&district=madeira-beach-center",
+      "mobile_camera": {
+        "position": [
+          118.19547204955511,
+          2.1874999999999996,
+          -419.8623357186228
+        ],
+        "target": [
+          118.19547204955511,
+          0,
+          -422.0498357186228
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=madeira-beach&level=town&landing=1&cx=118.19547204955511&cy=422.0498357186228&span=1.4&district=madeira-beach-center"
+    },
+    {
+      "town_id": "new-port-richey",
+      "name": "New Port Richey",
+      "desktop": "new-port-richey.webp",
+      "mobile": "new-port-richey-m.webp",
+      "center": {
+        "x": 125.45009041204979,
+        "y": 471.5450030796562,
+        "lon": -82.719,
+        "lat": 28.244000000000018
+      },
+      "districts": [
+        {
+          "id": "new-port-richey-center",
+          "name": "New Port Richey",
+          "lon": -82.7192671,
+          "lat": 28.244176800000005
+        }
+      ],
+      "district": "new-port-richey-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          125.45009041204979,
+          2.1874999999999996,
+          -469.3575030796562
+        ],
+        "target": [
+          125.45009041204979,
+          0,
+          -471.5450030796562
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=new-port-richey&level=town&landing=1&cx=125.45009041204979&cy=471.5450030796562&span=2.8&district=new-port-richey-center",
+      "mobile_camera": {
+        "position": [
+          125.45009041204979,
+          2.1874999999999996,
+          -469.3575030796562
+        ],
+        "target": [
+          125.45009041204979,
+          0,
+          -471.5450030796562
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=new-port-richey&level=town&landing=1&cx=125.45009041204979&cy=471.5450030796562&span=1.4&district=new-port-richey-center"
+    },
+    {
+      "town_id": "ruskin",
+      "name": "Ruskin",
+      "desktop": "ruskin.webp",
+      "mobile": "ruskin-m.webp",
+      "center": {
+        "x": 154.1951379597975,
+        "y": 413.7914381007037,
+        "lon": -82.433,
+        "lat": 27.721
+      },
+      "districts": [
+        {
+          "id": "ruskin",
+          "name": "Ruskin",
+          "lon": -82.4340374,
+          "lat": 27.720644800000013
+        }
+      ],
+      "district": "ruskin",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          154.1951379597975,
+          2.1874999999999996,
+          -411.6039381007037
+        ],
+        "target": [
+          154.1951379597975,
+          0,
+          -413.7914381007037
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=ruskin&level=town&landing=1&cx=154.1951379597975&cy=413.7914381007037&span=2.8&district=ruskin",
+      "mobile_camera": {
+        "position": [
+          154.1951379597975,
+          2.1874999999999996,
+          -411.6039381007037
+        ],
+        "target": [
+          154.1951379597975,
+          0,
+          -413.7914381007037
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=ruskin&level=town&landing=1&cx=154.1951379597975&cy=413.7914381007037&span=1.4&district=ruskin"
+    },
+    {
+      "town_id": "safety-harbor",
+      "name": "Safety Harbor",
+      "desktop": "safety-harbor.webp",
+      "mobile": "safety-harbor-m.webp",
+      "center": {
+        "x": 128.27988194651235,
+        "y": 444.80865781935324,
+        "lon": -82.693,
+        "lat": 28.003000000000004
+      },
+      "districts": [
+        {
+          "id": "safety-harbor-center",
+          "name": "Safety Harbor",
+          "lon": -82.6931553,
+          "lat": 27.990852900000007
+        }
+      ],
+      "district": "safety-harbor-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          128.27988194651235,
+          2.1874999999999996,
+          -442.62115781935324
+        ],
+        "target": [
+          128.27988194651235,
+          0,
+          -444.80865781935324
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=safety-harbor&level=town&landing=1&cx=128.27988194651235&cy=444.80865781935324&span=2.8&district=safety-harbor-center",
+      "mobile_camera": {
+        "position": [
+          128.27988194651235,
+          2.1874999999999996,
+          -442.62115781935324
+        ],
+        "target": [
+          128.27988194651235,
+          0,
+          -444.80865781935324
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=safety-harbor&level=town&landing=1&cx=128.27988194651235&cy=444.80865781935324&span=1.4&district=safety-harbor-center"
+    },
+    {
+      "town_id": "st-pete-beach",
+      "name": "St. Pete Beach",
+      "desktop": "st-pete-beach.webp",
+      "mobile": "st-pete-beach-m.webp",
+      "center": {
+        "x": 123.88412520086557,
+        "y": 413.88833816088925,
+        "lon": -82.741,
+        "lat": 27.724999999999998
+      },
+      "districts": [
+        {
+          "id": "st-pete-beach-center",
+          "name": "St. Pete Beach",
+          "lon": -82.741212,
+          "lat": 27.725306500000006
+        }
+      ],
+      "district": "st-pete-beach-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          123.88412520086557,
+          2.1874999999999996,
+          -411.70083816088925
+        ],
+        "target": [
+          123.88412520086557,
+          0,
+          -413.88833816088925
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=st-pete-beach&level=town&landing=1&cx=123.88412520086557&cy=413.88833816088925&span=2.8&district=st-pete-beach-center",
+      "mobile_camera": {
+        "position": [
+          123.88412520086557,
+          2.1874999999999996,
+          -411.70083816088925
+        ],
+        "target": [
+          123.88412520086557,
+          0,
+          -413.88833816088925
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=st-pete-beach&level=town&landing=1&cx=123.88412520086557&cy=413.88833816088925&span=1.4&district=st-pete-beach-center"
+    },
+    {
+      "town_id": "st-petersburg",
+      "name": "St. Petersburg",
+      "desktop": "st-petersburg.webp",
+      "mobile": "st-petersburg-m.webp",
+      "center": {
+        "x": 133.76935534186887,
+        "y": 418.76881238171075,
+        "lon": -82.64,
+        "lat": 27.768
+      },
+      "districts": [
+        {
+          "id": "dtsp",
+          "name": "Downtown St. Pete",
+          "lon": -82.6340259,
+          "lat": 27.771226400000018
+        },
+        {
+          "id": "old-ne",
+          "name": "Historic Old Northeast",
+          "lon": -82.6297314,
+          "lat": 27.78752919999998
+        }
+      ],
+      "district": "dtsp",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          133.76935534186887,
+          2.1874999999999996,
+          -416.58131238171075
+        ],
+        "target": [
+          133.76935534186887,
+          0,
+          -418.76881238171075
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=st-petersburg&level=town&landing=1&cx=133.76935534186887&cy=418.76881238171075&span=2.8&district=dtsp",
+      "mobile_camera": {
+        "position": [
+          133.76935534186887,
+          2.1874999999999996,
+          -416.58131238171075
+        ],
+        "target": [
+          133.76935534186887,
+          0,
+          -418.76881238171075
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=st-petersburg&level=town&landing=1&cx=133.76935534186887&cy=418.76881238171075&span=1.4&district=dtsp"
+    },
+    {
+      "town_id": "sun-city-center",
+      "name": "Sun City Center",
+      "desktop": "sun-city-center.webp",
+      "mobile": "sun-city-center-m.webp",
+      "center": {
+        "x": 162.16964815741423,
+        "y": 413.56221571468006,
+        "lon": -82.352,
+        "lat": 27.717999999999996
+      },
+      "districts": [
+        {
+          "id": "sun-city-center",
+          "name": "Sun City Center",
+          "lon": -82.3519192,
+          "lat": 27.71230350000001
+        }
+      ],
+      "district": "sun-city-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          162.16964815741423,
+          2.1874999999999996,
+          -411.37471571468006
+        ],
+        "target": [
+          162.16964815741423,
+          0,
+          -413.56221571468006
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=sun-city-center&level=town&landing=1&cx=162.16964815741423&cy=413.56221571468006&span=2.8&district=sun-city-center",
+      "mobile_camera": {
+        "position": [
+          162.16964815741423,
+          2.1874999999999996,
+          -411.37471571468006
+        ],
+        "target": [
+          162.16964815741423,
+          0,
+          -413.56221571468006
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=sun-city-center&level=town&landing=1&cx=162.16964815741423&cy=413.56221571468006&span=1.4&district=sun-city-center"
+    },
+    {
+      "town_id": "tampa",
+      "name": "Tampa",
+      "desktop": "tampa.webp",
+      "mobile": "tampa-m.webp",
+      "center": {
+        "x": 151.51403151441085,
+        "y": 439.30190785711875,
+        "lon": -82.457,
+        "lat": 27.950999999999997
+      },
+      "districts": [
+        {
+          "id": "downtown-tampa",
+          "name": "Downtown & Water Street",
+          "lon": -82.4577068,
+          "lat": 27.949510399999976
+        },
+        {
+          "id": "hydepark",
+          "name": "Hyde Park",
+          "lon": -82.4732361,
+          "lat": 27.93534259999999
+        },
+        {
+          "id": "ybor",
+          "name": "Ybor City",
+          "lon": -82.4411596,
+          "lat": 27.960047499999995
+        },
+        {
+          "id": "davis",
+          "name": "Davis Islands",
+          "lon": -82.4565865,
+          "lat": 27.930484900000017
+        },
+        {
+          "id": "westchase",
+          "name": "Westchase",
+          "lon": -82.6236135,
+          "lat": 28.055477100000015
+        },
+        {
+          "id": "seminole",
+          "name": "Seminole Heights",
+          "lon": -82.4572883,
+          "lat": 27.994203400000004
+        }
+      ],
+      "district": "downtown-tampa",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          151.51403151441085,
+          2.1874999999999996,
+          -437.11440785711875
+        ],
+        "target": [
+          151.51403151441085,
+          0,
+          -439.30190785711875
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=tampa&level=town&landing=1&cx=151.51403151441085&cy=439.30190785711875&span=2.8&district=downtown-tampa",
+      "mobile_camera": {
+        "position": [
+          151.51403151441085,
+          2.1874999999999996,
+          -437.11440785711875
+        ],
+        "target": [
+          151.51403151441085,
+          0,
+          -439.30190785711875
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=tampa&level=town&landing=1&cx=151.51403151441085&cy=439.30190785711875&span=1.4&district=downtown-tampa"
+    },
+    {
+      "town_id": "tarpon-springs",
+      "name": "Tarpon Springs",
+      "desktop": "tarpon-springs.webp",
+      "mobile": "tarpon-springs-m.webp",
+      "center": {
+        "x": 121.83852968781844,
+        "y": 460.6239155430581,
+        "lon": -82.75700000000002,
+        "lat": 28.14600000000002
+      },
+      "districts": [
+        {
+          "id": "tarpon-springs-center",
+          "name": "Tarpon Springs",
+          "lon": -82.756367,
+          "lat": 28.147096499999993
+        }
+      ],
+      "district": "tarpon-springs-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          121.83852968781844,
+          2.1874999999999996,
+          -458.4364155430581
+        ],
+        "target": [
+          121.83852968781844,
+          0,
+          -460.6239155430581
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=tarpon-springs&level=town&landing=1&cx=121.83852968781844&cy=460.6239155430581&span=2.8&district=tarpon-springs-center",
+      "mobile_camera": {
+        "position": [
+          121.83852968781844,
+          2.1874999999999996,
+          -458.4364155430581
+        ],
+        "target": [
+          121.83852968781844,
+          0,
+          -460.6239155430581
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=tarpon-springs&level=town&landing=1&cx=121.83852968781844&cy=460.6239155430581&span=1.4&district=tarpon-springs-center"
+    },
+    {
+      "town_id": "treasure-island",
+      "name": "Treasure Island",
+      "desktop": "treasure-island.webp",
+      "mobile": "treasure-island-m.webp",
+      "center": {
+        "x": 121.07916496863993,
+        "y": 418.85760529837006,
+        "lon": -82.769,
+        "lat": 27.770000000000003
+      },
+      "districts": [
+        {
+          "id": "treasure-island-center",
+          "name": "Treasure Island",
+          "lon": -82.7689906,
+          "lat": 27.7691937
+        }
+      ],
+      "district": "treasure-island-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          121.07916496863993,
+          2.1874999999999996,
+          -416.67010529837006
+        ],
+        "target": [
+          121.07916496863993,
+          0,
+          -418.85760529837006
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=treasure-island&level=town&landing=1&cx=121.07916496863993&cy=418.85760529837006&span=2.8&district=treasure-island-center",
+      "mobile_camera": {
+        "position": [
+          121.07916496863993,
+          2.1874999999999996,
+          -416.67010529837006
+        ],
+        "target": [
+          121.07916496863993,
+          0,
+          -418.85760529837006
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=treasure-island&level=town&landing=1&cx=121.07916496863993&cy=418.85760529837006&span=1.4&district=treasure-island-center"
+    },
+    {
+      "town_id": "bradenton",
+      "name": "Bradenton",
+      "desktop": "bradenton.webp",
+      "mobile": "bradenton-m.webp",
+      "center": {
+        "x": 140.50765687438656,
+        "y": 388.9707044460102,
+        "lon": -82.575,
+        "lat": 27.498999999999995
+      },
+      "districts": [
+        {
+          "id": "bradenton-center",
+          "name": "Bradenton",
+          "lon": -82.5748194,
+          "lat": 27.49892779999998
+        }
+      ],
+      "district": "bradenton-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          140.50765687438656,
+          2.1874999999999996,
+          -386.7832044460102
+        ],
+        "target": [
+          140.50765687438656,
+          0,
+          -388.9707044460102
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=bradenton&level=town&landing=1&cx=140.50765687438656&cy=388.9707044460102&span=2.8&district=bradenton-center",
+      "mobile_camera": {
+        "position": [
+          140.50765687438656,
+          2.1874999999999996,
+          -386.7832044460102
+        ],
+        "target": [
+          140.50765687438656,
+          0,
+          -388.9707044460102
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=bradenton&level=town&landing=1&cx=140.50765687438656&cy=388.9707044460102&span=1.4&district=bradenton-center"
+    },
+    {
+      "town_id": "bradenton-beach",
+      "name": "Bradenton Beach",
+      "desktop": "bradenton-beach.webp",
+      "mobile": "bradenton-beach-m.webp",
+      "center": {
+        "x": 128.31547564914402,
+        "y": 385.6154115920655,
+        "lon": -82.699,
+        "lat": 27.46999999999998
+      },
+      "districts": [
+        {
+          "id": "bradenton-beach-center",
+          "name": "Bradenton Beach",
+          "lon": -82.6995822,
+          "lat": 27.468255399999997
+        }
+      ],
+      "district": "bradenton-beach-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          128.31547564914402,
+          2.1874999999999996,
+          -383.4279115920655
+        ],
+        "target": [
+          128.31547564914402,
+          0,
+          -385.6154115920655
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=bradenton-beach&level=town&landing=1&cx=128.31547564914402&cy=385.6154115920655&span=2.8&district=bradenton-beach-center",
+      "mobile_camera": {
+        "position": [
+          128.31547564914402,
+          2.1874999999999996,
+          -383.4279115920655
+        ],
+        "target": [
+          128.31547564914402,
+          0,
+          -385.6154115920655
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=bradenton-beach&level=town&landing=1&cx=128.31547564914402&cy=385.6154115920655&span=1.4&district=bradenton-beach-center"
+    },
+    {
+      "town_id": "cortez",
+      "name": "Cortez",
+      "desktop": "cortez.webp",
+      "mobile": "cortez-m.webp",
+      "center": {
+        "x": 130.88329942601635,
+        "y": 385.30961932433064,
+        "lon": -82.673,
+        "lat": 27.466999999999995
+      },
+      "districts": [
+        {
+          "id": "cortez-center",
+          "name": "Cortez",
+          "lon": -82.6862105,
+          "lat": 27.4692058
+        }
+      ],
+      "district": "cortez-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          130.88329942601635,
+          2.1874999999999996,
+          -383.12211932433064
+        ],
+        "target": [
+          130.88329942601635,
+          0,
+          -385.30961932433064
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=cortez&level=town&landing=1&cx=130.88329942601635&cy=385.30961932433064&span=2.8&district=cortez-center",
+      "mobile_camera": {
+        "position": [
+          130.88329942601635,
+          2.1874999999999996,
+          -383.12211932433064
+        ],
+        "target": [
+          130.88329942601635,
+          0,
+          -385.30961932433064
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=cortez&level=town&landing=1&cx=130.88329942601635&cy=385.30961932433064&span=1.4&district=cortez-center"
+    },
+    {
+      "town_id": "englewood",
+      "name": "Englewood",
+      "desktop": "englewood.webp",
+      "mobile": "englewood-m.webp",
+      "center": {
+        "x": 163.19241959454374,
+        "y": 329.6215097848868,
+        "lon": -82.353,
+        "lat": 26.961999999999993
+      },
+      "districts": [
+        {
+          "id": "englewood-center",
+          "name": "Englewood",
+          "lon": -82.3525952,
+          "lat": 26.962005299999998
+        }
+      ],
+      "district": "englewood-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          163.19241959454374,
+          2.1874999999999996,
+          -327.4340097848868
+        ],
+        "target": [
+          163.19241959454374,
+          0,
+          -329.6215097848868
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=englewood&level=town&landing=1&cx=163.19241959454374&cy=329.6215097848868&span=2.8&district=englewood-center",
+      "mobile_camera": {
+        "position": [
+          163.19241959454374,
+          2.1874999999999996,
+          -327.4340097848868
+        ],
+        "target": [
+          163.19241959454374,
+          0,
+          -329.6215097848868
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=englewood&level=town&landing=1&cx=163.19241959454374&cy=329.6215097848868&span=1.4&district=englewood-center"
+    },
+    {
+      "town_id": "sarasota",
+      "name": "Sarasota",
+      "desktop": "sarasota.webp",
+      "mobile": "sarasota-m.webp",
+      "center": {
+        "x": 145.061552307255,
+        "y": 370.9227329848446,
+        "lon": -82.531,
+        "lat": 27.335999999999977
+      },
+      "districts": [
+        {
+          "id": "sarasota-center",
+          "name": "Sarasota",
+          "lon": -82.5308545,
+          "lat": 27.33658049999999
+        }
+      ],
+      "district": "sarasota-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          145.061552307255,
+          2.1874999999999996,
+          -368.7352329848446
+        ],
+        "target": [
+          145.061552307255,
+          0,
+          -370.9227329848446
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=sarasota&level=town&landing=1&cx=145.061552307255&cy=370.9227329848446&span=2.8&district=sarasota-center",
+      "mobile_camera": {
+        "position": [
+          145.061552307255,
+          2.1874999999999996,
+          -368.7352329848446
+        ],
+        "target": [
+          145.061552307255,
+          0,
+          -370.9227329848446
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=sarasota&level=town&landing=1&cx=145.061552307255&cy=370.9227329848446&span=1.4&district=sarasota-center"
+    },
+    {
+      "town_id": "siesta-key",
+      "name": "Siesta Key",
+      "desktop": "siesta-key.webp",
+      "mobile": "siesta-key-m.webp",
+      "center": {
+        "x": 142.98039170470418,
+        "y": 363.12475723000387,
+        "lon": -82.553,
+        "lat": 27.266
+      },
+      "districts": [
+        {
+          "id": "siesta-key-center",
+          "name": "Siesta Key",
+          "lon": -82.5642993,
+          "lat": 27.276201000000004
+        }
+      ],
+      "district": "siesta-key-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          142.98039170470418,
+          2.1874999999999996,
+          -360.93725723000387
+        ],
+        "target": [
+          142.98039170470418,
+          0,
+          -363.12475723000387
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=siesta-key&level=town&landing=1&cx=142.98039170470418&cy=363.12475723000387&span=2.8&district=siesta-key-center",
+      "mobile_camera": {
+        "position": [
+          142.98039170470418,
+          2.1874999999999996,
+          -360.93725723000387
+        ],
+        "target": [
+          142.98039170470418,
+          0,
+          -363.12475723000387
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=siesta-key&level=town&landing=1&cx=142.98039170470418&cy=363.12475723000387&span=1.4&district=siesta-key-center"
+    },
+    {
+      "town_id": "venice",
+      "name": "Venice",
+      "desktop": "venice.webp",
+      "mobile": "venice-m.webp",
+      "center": {
+        "x": 152.60166430066968,
+        "y": 344.47488293572377,
+        "lon": -82.458,
+        "lat": 27.096999999999998
+      },
+      "districts": [
+        {
+          "id": "venice-center",
+          "name": "Venice",
+          "lon": -82.4442832,
+          "lat": 27.09983149999999
+        }
+      ],
+      "district": "venice-center",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          152.60166430066968,
+          2.1874999999999996,
+          -342.28738293572377
+        ],
+        "target": [
+          152.60166430066968,
+          0,
+          -344.47488293572377
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=venice&level=town&landing=1&cx=152.60166430066968&cy=344.47488293572377&span=2.8&district=venice-center",
+      "mobile_camera": {
+        "position": [
+          152.60166430066968,
+          2.1874999999999996,
+          -342.28738293572377
+        ],
+        "target": [
+          152.60166430066968,
+          0,
+          -344.47488293572377
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=venice&level=town&landing=1&cx=152.60166430066968&cy=344.47488293572377&span=1.4&district=venice-center"
+    },
+    {
+      "town_id": "miami",
+      "name": "Miami",
+      "desktop": "miami.webp",
+      "mobile": "miami-m.webp",
+      "center": {
+        "x": 381.39901288730687,
+        "y": 201.19634774000806,
+        "lon": -80.1918,
+        "lat": 25.761700000000005
+      },
+      "districts": [
+        {
+          "id": "brickell",
+          "name": "Brickell",
+          "lon": -80.1928833,
+          "lat": 25.761474400000008
+        },
+        {
+          "id": "grove",
+          "name": "Coconut Grove",
+          "lon": -80.25699470000002,
+          "lat": 25.712601299999992
+        },
+        {
+          "id": "gables",
+          "name": "Coral Gables",
+          "lon": -80.2585107,
+          "lat": 25.733110499999995
+        },
+        {
+          "id": "southbeach-district",
+          "name": "South Beach",
+          "lon": -80.1332415,
+          "lat": 25.774429099999992
+        },
+        {
+          "id": "edgewater",
+          "name": "Edgewater",
+          "lon": -80.1892142,
+          "lat": 25.80083039999999
+        },
+        {
+          "id": "mid-beach",
+          "name": "Mid Beach",
+          "lon": -80.12206005818982,
+          "lat": 25.818260376316758
+        },
+        {
+          "id": "key-biscayne",
+          "name": "Key Biscayne",
+          "lon": -80.1635261,
+          "lat": 25.696835099999998
+        }
+      ],
+      "district": "brickell",
+      "span": 2.8,
+      "status": "existing approved/review-ready package; physical-phone speed not verified",
+      "camera": {
+        "position": [
+          381.39901288730687,
+          2.1874999999999996,
+          -199.00884774000806
+        ],
+        "target": [
+          381.39901288730687,
+          0,
+          -201.19634774000806
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=miami&level=town&landing=1&cx=381.39901288730687&cy=201.19634774000806&span=2.8&district=brickell",
+      "mobile_camera": {
+        "position": [
+          381.39901288730687,
+          2.1874999999999996,
+          -199.00884774000806
+        ],
+        "target": [
+          381.39901288730687,
+          0,
+          -201.19634774000806
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=miami&level=town&landing=1&cx=381.39901288730687&cy=201.19634774000806&span=1.4&district=brickell"
+    }
+  ]
+}

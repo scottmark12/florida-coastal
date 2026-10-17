@@ -1,0 +1,38 @@
+{
+  "id": "30a",
+  "bounds": [
+    -86.27,
+    30.26,
+    -85.99,
+    30.36
+  ],
+  "district_recipes": {},
+  "inputs": {
+    "osm": [
+      "work/30a_finish/source/map-data.json",
+      "work/30a_districts/alys-current.osm"
+    ],
+    "districts": "outputs/30a_finish/30a.json",
+    "prices": "outputs/30a_finish/30a.json",
+    "land": {
+      "path": "work/coastal_pipeline/30a-land.geojson",
+      "source": "OSM / ODbL",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v2/30a-landcover.geojson",
+      "source": "OSM / ODbL",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v2/30a-shoreline.geojson",
+      "source": "OSM / ODbL",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v2/30a-roads.geojson",
+      "source": "OSM / ODbL",
+      "license_verified": true
+    }
+  }
+}
