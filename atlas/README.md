@@ -21,7 +21,7 @@ Here “finished” means the existing approved or review-ready detailed package
 | Package | Catalog town IDs with landing images | Review |
 |---|---|---|
 | 30A, frozen approved reference | `30a` | [30A](regions/30a-review/index.html) |
-| Miami | `miami` | [Miami](regions/packages/miami/atlas-review.html) |
+| Miami | `miami`, `southbeach` | [Miami](regions/packages/miami/atlas-review.html) |
 | Tampa Bay | `tampa`, `apollo-beach`, `ruskin`, `sun-city-center` | [Tampa](regions/packages/tampa-south-shore/atlas-review.html) |
 | St. Pete/Clearwater | `dunedin`, `clearwaterbeach`, `gulfport`, `clearwater`, `indian-rocks-beach`, `madeira-beach`, `new-port-richey`, `safety-harbor`, `st-pete-beach`, `st-petersburg`, `tarpon-springs`, `treasure-island` | [St. Pete](regions/packages/st-pete-clearwater/atlas-review.html) |
 | Sarasota/Bradenton/Venice | `ami`, `longboat`, `bradenton`, `bradenton-beach`, `cortez`, `englewood`, `sarasota`, `siesta-key`, `venice` | [Sarasota](regions/packages/sarasota-bradenton/atlas-review.html) |
@@ -30,7 +30,7 @@ Other regions retain their existing overview/legacy GLBs. They are **not finishe
 
 ## Landing images
 
-27 towns × two WebP files: `<town-id>.webp` at 1600×1000, `<town-id>-m.webp` at 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
+28 towns × two WebP files: `<town-id>.webp` at 1600×1000, `<town-id>-m.webp` at 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
 
 The 30A catalog entry describes a corridor, so its representative Town image is centered on Seaside; the exact representative center is recorded. Other images use catalog town centers. To regenerate a screenshot, serve the atlas and use the manifest's relative render URL at the corresponding viewport. `landing=1` enables the clean render mode. Wait for `body[data-ready="true"]`; `body[data-camera]` exposes the actual orthographic camera. Save as WebP at the specified dimensions. Images were inspected as a contact sheet; browser console checks found no errors during export.
 

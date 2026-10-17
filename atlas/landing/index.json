@@ -1947,6 +1947,73 @@
         "tiltDegrees": 45
       },
       "mobile_render_url": "../explore_coast.html?view=miami&level=town&landing=1&cx=381.39901288730687&cy=201.19634774000806&span=1.4&district=brickell"
+    },
+    {
+      "town_id": "southbeach",
+      "name": "Miami (South Beach)",
+      "desktop": "southbeach.webp",
+      "mobile": "southbeach-m.webp",
+      "center": {
+        "x": 387.48786777049804,
+        "y": 204.5274455921016,
+        "lon": -80.13,
+        "lat": 25.79
+      },
+      "districts": [
+        {
+          "id": "southbeach-district",
+          "name": "South Beach",
+          "lon": -80.1332415,
+          "lat": 25.774429099999992
+        }
+      ],
+      "district": "southbeach-district",
+      "span": 2.8,
+      "status": "Approved South Beach district in the Miami package",
+      "camera": {
+        "position": [
+          387.48786777049804,
+          2.1874999999999996,
+          -202.3399455921016
+        ],
+        "target": [
+          387.48786777049804,
+          0,
+          -204.5274455921016
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=southbeach&level=town&landing=1&cx=387.48786777049804&cy=204.5274455921016&span=2.8&district=southbeach-district",
+      "mobile_camera": {
+        "position": [
+          387.48786777049804,
+          2.1874999999999996,
+          -202.3399455921016
+        ],
+        "target": [
+          387.48786777049804,
+          0,
+          -204.5274455921016
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=southbeach&level=town&landing=1&cx=387.48786777049804&cy=204.5274455921016&span=1.4&district=southbeach-district"
     }
   ]
 }

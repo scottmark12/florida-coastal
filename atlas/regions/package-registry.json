@@ -24,5 +24,6 @@
   "cortez": "packages/sarasota-bradenton/",
   "englewood": "packages/sarasota-bradenton/",
   "siesta-key": "packages/sarasota-bradenton/",
-  "venice": "packages/sarasota-bradenton/"
+  "venice": "packages/sarasota-bradenton/",
+  "southbeach": "packages/miami/"
 }
