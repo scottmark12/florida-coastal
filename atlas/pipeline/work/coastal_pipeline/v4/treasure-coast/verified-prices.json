@@ -1,0 +1,38 @@
+{
+  "stuart": [
+    429000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/martin-county/stuart"
+  ],
+  "jensen-beach": [
+    504444,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/martin-county/jensen-beach"
+  ],
+  "port-st-lucie": [
+    429900,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/st-lucie-county/port-st-lucie"
+  ],
+  "fortpierce": [
+    341151,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/st-lucie-county/fort-pierce"
+  ],
+  "vero-beach": [
+    425000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/indian-river-county/vero-beach"
+  ],
+  "sebastian": [
+    383900,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/indian-river-county/sebastian"
+  ]
+}

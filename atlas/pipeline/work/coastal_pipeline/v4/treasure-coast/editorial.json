@@ -1,0 +1,164 @@
+{
+  "prices": {
+    "stuart": [
+      429000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/martin-county/stuart"
+    ],
+    "jensen-beach": [
+      504444,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/martin-county/jensen-beach"
+    ],
+    "port-st-lucie": [
+      429900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/st-lucie-county/port-st-lucie"
+    ],
+    "fortpierce": [
+      341151,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/st-lucie-county/fort-pierce"
+    ],
+    "vero-beach": [
+      425000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/indian-river-county/vero-beach"
+    ],
+    "sebastian": [
+      383900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/indian-river-county/sebastian"
+    ]
+  },
+  "recipes": {
+    "stuart": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "jensen-beach": {
+      "walls": [
+        "#d1c3aa",
+        "#e4dcc4",
+        "#c7d3bf",
+        "#f1e6ca"
+      ],
+      "roofs": [
+        "#aabbb1",
+        "#c6ccc0"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "port-st-lucie": {
+      "walls": [
+        "#f7ecd3",
+        "#d9e6d0",
+        "#efd6bf"
+      ],
+      "roofs": [
+        "#b9947c",
+        "#cdb59a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "fortpierce": {
+      "walls": [
+        "#b9856b",
+        "#d2a68b",
+        "#ead4b5",
+        "#eee4ce"
+      ],
+      "roofs": [
+        "#b5aa93",
+        "#ddd8c7"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "vero-beach": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "sebastian": {
+      "walls": [
+        "#d1c3aa",
+        "#e4dcc4",
+        "#c7d3bf",
+        "#f1e6ca"
+      ],
+      "roofs": [
+        "#aabbb1",
+        "#c6ccc0"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitflorida.com/places-to-go/central-east/sebastian/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    }
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory."
+  ]
+}

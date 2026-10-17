@@ -1,0 +1,68 @@
+{
+  "new-port-richey": [
+    285000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pasco-county/new-port-richey"
+  ],
+  "tarpon-springs": [
+    439000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pinellas-county/tarpon-springs"
+  ],
+  "dunedin": [
+    399000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pinellas-county/dunedin"
+  ],
+  "safety-harbor": [
+    635000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pinellas-county/safety-harbor"
+  ],
+  "clearwater": [
+    349850,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pinellas-county/clearwater"
+  ],
+  "clearwaterbeach": [
+    815950,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pinellas-county/clearwater-beach"
+  ],
+  "indian-rocks-beach": [
+    869000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pinellas-county/indian-rocks-beach"
+  ],
+  "madeira-beach": [
+    749950,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pinellas-county/madeira-beach"
+  ],
+  "treasure-island": [
+    659000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pinellas-county/treasure-island"
+  ],
+  "st-pete-beach": [
+    589000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pinellas-county/st-pete-beach"
+  ],
+  "gulfport": [
+    375000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/pinellas-county/gulfport"
+  ]
+}
