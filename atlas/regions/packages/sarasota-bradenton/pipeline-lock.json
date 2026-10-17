@@ -1,0 +1,19 @@
+{
+  "version": "florida-coastal-illustration-v4.5",
+  "date": "2026-10-17",
+  "rules": "Approved Miami/30A scale and UI; regional recipes and source inputs remain external",
+  "files": {
+    "work/coastal_pipeline/v4/engine.py": "48c4680212525e519ac20fb785d4db0af97ea9c37f148bfdb2ee695d1d0ebf6f",
+    "work/coastal_pipeline/v4/source_canopy.py": "09dc6b10874a37cca2f56cdcbbfa88a9a269b196dedcc03b849307d37c193418",
+    "work/coastal_pipeline/v4/mesh_export.py": "b3542116505e0114cfe070f62e1f5f704b2128600d263b3e3c850d5e584fe7b6",
+    "work/coastal_pipeline/v4/preflight.py": "aad9d3d06303798038c4b8415edf0a932e0d34b18c4ba2886891637f3c261e55",
+    "work/coastal_pipeline/v4/rules.json": "000b3c8217b424f908eba942ffb35b2666f0bb4190bcfedd84246101f6078a1a",
+    "work/coastal_pipeline/v4/water_wash.py": "d662f2a054bb848c77074bd4b657cd9a6e53c0f7181e9f1f8fb7b4c6f03e31a9",
+    "work/coastal_pipeline/v4/proof.py": "a80e7aef87bb825311fd98124a29cb3fa02ba05f794fc4e458dc746bc2bbbc12",
+    "work/coastal_pipeline/v4/run.py": "5a9b7451edf2ca4fb9bc579c9da5dbdbd5489e4249f8a57ff8562fef0a8181a5",
+    "work/coastal_pipeline/v4/publish.py": "0eff4367e067a413586c377a15439bc92892c2fcaa289b00959f8f7b1d5b22a5",
+    "work/coastal_pipeline/v3/atlas-layer.js": "a7edb14eb4356d429c8032e4014eb9327cfc43575269ee18b92495a5d1baba98",
+    "work/atlas_regions/app.js": "6c5165baf66d2c026a49608cb849cbf843ccd8ecd40c63c79d2fa097baf90138",
+    "work/30a_finish/geometry.py": "0e286e67440ae5adfe1cb972f63b960178af3062c3c1d6ee7f245cffc2d9d9f5"
+  }
+}

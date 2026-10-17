@@ -1,0 +1,8 @@
+district,median_usd,metric,period,source
+Brickell,735000,median listing price,September 2026,https://www.realtor.com/local/market/florida/miami/brickell
+Coconut Grove,1890000,median sale price,"trailing three months, retrieved October 17, 2026",https://www.redfin.com/neighborhood/219259/FL/Miami/Coconut-Grove/housing-market
+Coral Gables,1399334,median sale price,September 2026,https://www.redfin.com/city/3707/FL/Coral-Gables/housing-market
+South Beach,489000,median listing price,August 2026,https://www.realtor.com/local/market/florida/miami-beach/south-beach
+Edgewater,526000,median sale price,"trailing three months, retrieved October 17, 2026",https://www.redfin.com/neighborhood/224218/FL/Miami/Edgewater/housing-market
+Mid Beach,750000,median listing price,September 2026,https://www.realtor.com/local/market/florida/miami-beach/mid-beach
+Key Biscayne,1520276,median sale price,September 2026,https://www.redfin.com/city/9243/FL/Key-Biscayne/housing-market

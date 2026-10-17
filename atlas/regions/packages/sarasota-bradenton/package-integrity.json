@@ -1,0 +1,16 @@
+{
+  "region": "sarasota-bradenton",
+  "pipeline_version": "florida-coastal-illustration-v4.5",
+  "lock_hashes_pass": true,
+  "tree_points_accounted_for": 337814,
+  "geometry_tiles_checked": 2733,
+  "initial_region_asset_bytes": 3559989,
+  "initial_assets": {
+    "base.glb.gz": 2919830,
+    "region.glb.gz": 247815,
+    "scene.json": 71045,
+    "shore-wash.png": 321137,
+    "shore-wash.json": 162
+  },
+  "physical_phone_timing_verified": false
+}
