@@ -1,0 +1,10 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Downtown & Water Street,151.4467010498047,439.1356201171875,-82.4577067924455,27.949510353927536,-82.4577068,27.9495104,0.0052,https://www.openstreetmap.org/node/153970120,Representative OSM place-label anchor: Tampa
+Hyde Park,149.94134521484375,437.5433654785156,-82.47323611396276,27.935342578931383,-82.4732361,27.9353426,0.0027,https://www.openstreetmap.org/node/367352831,Representative OSM place-label anchor: Hyde Park
+Ybor City,153.0566864013672,440.326171875,-82.44115960720427,27.96004760906396,-82.4411596,27.9600475,0.0121,https://www.openstreetmap.org/node/154312872,Representative OSM place-label anchor: Ybor City
+Davis Islands,151.58314514160156,437.0242919921875,-82.45658652369762,27.930484874011796,-82.4565865,27.9304849,0.0037,https://www.openstreetmap.org/node/321483098,Representative OSM place-label anchor: Davis Islands
+Westchase,135.0247344970703,450.71026611328125,-82.6236134448544,28.055477054164783,-82.6236135,28.0554771,0.0074,https://www.openstreetmap.org/node/154340130,Representative OSM place-label anchor: Westchase
+Seminole Heights,151.4257049560547,444.0991516113281,-82.45728825547572,27.994203530959645,-82.4572883,27.9942034,0.0152,https://www.openstreetmap.org/node/11923589471,Representative OSM place-label anchor: Seminole Heights of North Tampa
+Apollo Beach,156.75491333007812,419.7276611328125,-82.40620963549067,27.77415472972341,-82.4062097,27.7741547,0.0072,https://www.openstreetmap.org/node/154125902,Representative OSM place-label anchor: Apollo Beach
+Ruskin,154.09356689453125,413.7507019042969,-82.43403735643433,27.72064482488493,-82.4340374,27.7206448,0.0051,https://www.openstreetmap.org/node/153831375,Representative OSM place-label anchor: Ruskin
+Sun City Center,162.18605041503906,412.9297790527344,-82.35191922701122,27.712303535553975,-82.3519192,27.7123035,0.0048,https://www.openstreetmap.org/node/154211608,Representative OSM place-label anchor: Sun City Center

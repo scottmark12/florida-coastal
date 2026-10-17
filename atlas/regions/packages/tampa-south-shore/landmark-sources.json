@@ -1,0 +1,135 @@
+{
+  "promenade_paths": [
+    {
+      "osm_way": 28923961,
+      "length_m": 134.9,
+      "source": "https://www.openstreetmap.org/way/28923961"
+    },
+    {
+      "osm_way": 112979328,
+      "length_m": 37.8,
+      "source": "https://www.openstreetmap.org/way/112979328"
+    },
+    {
+      "osm_way": 117967364,
+      "length_m": 3291.9,
+      "source": "https://www.openstreetmap.org/way/117967364"
+    },
+    {
+      "osm_way": 384813369,
+      "length_m": 37.3,
+      "source": "https://www.openstreetmap.org/way/384813369"
+    },
+    {
+      "osm_way": 545294719,
+      "length_m": 60.4,
+      "source": "https://www.openstreetmap.org/way/545294719"
+    },
+    {
+      "osm_way": 545294720,
+      "length_m": 67.2,
+      "source": "https://www.openstreetmap.org/way/545294720"
+    },
+    {
+      "osm_way": 775660200,
+      "length_m": 415.6,
+      "source": "https://www.openstreetmap.org/way/775660200"
+    },
+    {
+      "osm_way": 775660201,
+      "length_m": 108.0,
+      "source": "https://www.openstreetmap.org/way/775660201"
+    },
+    {
+      "osm_way": 870859004,
+      "length_m": 15.3,
+      "source": "https://www.openstreetmap.org/way/870859004"
+    },
+    {
+      "osm_way": 870859014,
+      "length_m": 24.5,
+      "source": "https://www.openstreetmap.org/way/870859014"
+    },
+    {
+      "osm_way": 870859016,
+      "length_m": 46.4,
+      "source": "https://www.openstreetmap.org/way/870859016"
+    },
+    {
+      "osm_way": 870859017,
+      "length_m": 44.1,
+      "source": "https://www.openstreetmap.org/way/870859017"
+    },
+    {
+      "osm_way": 1029103155,
+      "length_m": 179.6,
+      "source": "https://www.openstreetmap.org/way/1029103155"
+    },
+    {
+      "osm_way": 1308297787,
+      "length_m": 118.2,
+      "source": "https://www.openstreetmap.org/way/1308297787"
+    },
+    {
+      "osm_way": 1308297788,
+      "length_m": 93.1,
+      "source": "https://www.openstreetmap.org/way/1308297788"
+    },
+    {
+      "osm_way": 1308297789,
+      "length_m": 17.0,
+      "source": "https://www.openstreetmap.org/way/1308297789"
+    },
+    {
+      "osm_way": 1308297849,
+      "length_m": 18.2,
+      "source": "https://www.openstreetmap.org/way/1308297849"
+    },
+    {
+      "osm_way": 1308297857,
+      "length_m": 41.4,
+      "source": "https://www.openstreetmap.org/way/1308297857"
+    },
+    {
+      "osm_way": 1308297858,
+      "length_m": 232.0,
+      "source": "https://www.openstreetmap.org/way/1308297858"
+    },
+    {
+      "osm_way": 1364504517,
+      "length_m": 48.8,
+      "source": "https://www.openstreetmap.org/way/1364504517"
+    },
+    {
+      "osm_way": 1365101826,
+      "length_m": 17.0,
+      "source": "https://www.openstreetmap.org/way/1365101826"
+    },
+    {
+      "osm_way": 1469518968,
+      "length_m": 38.1,
+      "source": "https://www.openstreetmap.org/way/1469518968"
+    },
+    {
+      "osm_way": 1477857516,
+      "length_m": 172.5,
+      "source": "https://www.openstreetmap.org/way/1477857516"
+    },
+    {
+      "osm_way": 1477857563,
+      "length_m": 54.6,
+      "source": "https://www.openstreetmap.org/way/1477857563"
+    },
+    {
+      "osm_way": 1482943842,
+      "length_m": 36.7,
+      "source": "https://www.openstreetmap.org/way/1482943842"
+    },
+    {
+      "osm_way": 1482943843,
+      "length_m": 18.6,
+      "source": "https://www.openstreetmap.org/way/1482943843"
+    }
+  ],
+  "total_m": 5369.2
+}

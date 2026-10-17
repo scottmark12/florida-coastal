@@ -1,0 +1,18 @@
+{
+  "console_errors": [],
+  "views": [
+    {
+      "name": "Hyde Park",
+      "width": 1440,
+      "file": "atlas-hydepark-1440.png",
+      "url": "/explore_coast.html?view=tampa&level=town&district=hydepark&v=oak80"
+    },
+    {
+      "name": "Seminole Heights",
+      "width": 1440,
+      "file": "atlas-seminole-1440.png",
+      "url": "/explore_coast.html?view=tampa&level=town&district=seminole&v=oak80"
+    }
+  ],
+  "physical_phone_tested": false
+}

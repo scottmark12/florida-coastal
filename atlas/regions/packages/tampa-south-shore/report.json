@@ -1,0 +1,27 @@
+{
+  "region": "tampa-south-shore",
+  "building_count": 40018,
+  "tree_count": 527599,
+  "region_bytes": 2846747,
+  "max_tile_bytes": 836566,
+  "max_anchor_error_m": 0.0152,
+  "max_coast_float32_error_m": 0.01703539366753476,
+  "height_sources": {
+    "height": 14577,
+    "levels": 229,
+    "assumed": 25207
+  },
+  "max_height_width_ratio": 3.000000000000001,
+  "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "review candidate; physical phone timing unverified",
+  "exported_boundary_source_error_m": 102.37641535663185,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+  "visual_qa": "Saved and inspected screenshots at 1440px; no observed console errors",
+  "physical_phone_tested": false
+}
