@@ -1,0 +1,5214 @@
+[
+  {
+    "id": "dune-allen",
+    "town": "30a",
+    "name": "Dune Allen",
+    "lon": -86.2423271,
+    "lat": 30.3506795,
+    "x": -215.33285025358336,
+    "y": 706.7629187620404,
+    "description": "Lakeside cottages and beach houses between Topsail preserve and the Gulf.",
+    "kind": "walk",
+    "style": "cottage",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/dune-allen/",
+    "positionSource": "https://www.openstreetmap.org/node/153715302",
+    "osmNode": 153715302,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$0.35M\u2013$7.25M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/dune-allen-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/dune-allen-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 1804337860,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Santa Rosa Dunes",
+          "price": "$7,250,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 7250000
+        },
+        {
+          "mlsId": 218466546,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beach Highlands",
+          "price": "$5,995,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5995000
+        },
+        {
+          "mlsId": 216297632,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beach View Hgts S/D",
+          "price": "$5,249,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5249000
+        },
+        {
+          "mlsId": 218619803,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beach Highland",
+          "price": "$4,995,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4995000
+        },
+        {
+          "mlsId": 1807662816,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Dune Allen",
+          "price": "$4,975,000",
+          "beds": {
+            "count": 9
+          },
+          "baths": {
+            "count": 9
+          },
+          "listType": 1,
+          "listTypeDescrip": "Attached Single Unit",
+          "listingClass": "1",
+          "priceValue": 4975000
+        },
+        {
+          "mlsId": 216340456,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "",
+          "price": "$4,950,000",
+          "beds": {
+            "count": 8
+          },
+          "baths": {
+            "count": 8
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4950000
+        },
+        {
+          "mlsId": 218551542,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beach Highlands",
+          "price": "$4,850,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4850000
+        },
+        {
+          "mlsId": 217615631,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beach Highlands",
+          "price": "$4,499,000",
+          "beds": {
+            "count": 7
+          },
+          "baths": {
+            "count": 7
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4499000
+        },
+        {
+          "mlsId": 216748609,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Santa Rosa Dunes",
+          "price": "$3,999,999",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3999999
+        },
+        {
+          "mlsId": 1802995741,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "No Recorded Subdivision",
+          "price": "$3,995,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3995000
+        },
+        {
+          "mlsId": 1803143068,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "No Recorded Subdivision",
+          "price": "$3,990,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3990000
+        },
+        {
+          "mlsId": 216616889,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Duncan",
+          "price": "$3,550,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3550000
+        },
+        {
+          "mlsId": 1801018260,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beach View Heights",
+          "price": "$3,200,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3200000
+        },
+        {
+          "mlsId": 218185418,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Fort Panic / Dune Allen",
+          "price": "$3,200,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3200000
+        },
+        {
+          "mlsId": 1805957965,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Lot 6 Blk A Dune Allen 1St Addition Pb 2-78 Or 286-807 Or 3105-3105 Or 3243-242",
+          "price": "$3,150,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3150000
+        },
+        {
+          "mlsId": 1806870993,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Unrecorded Subdivision",
+          "price": "$2,985,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2985000
+        },
+        {
+          "mlsId": 1806986193,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beach Haven Cottages",
+          "price": "$2,950,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2950000
+        },
+        {
+          "mlsId": 1805535507,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Vizcaya At Dune Allen",
+          "price": "$2,920,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2920000
+        },
+        {
+          "mlsId": 218841935,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beach Highland",
+          "price": "$2,850,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2850000
+        },
+        {
+          "mlsId": 218228178,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Serenity At Dune Allen",
+          "price": "$945,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 945000
+        },
+        {
+          "mlsId": 1800794973,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Serenity At Dune Allen",
+          "price": "$900,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 900000
+        },
+        {
+          "mlsId": 218667440,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Parkside",
+          "price": "$892,906",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 892906
+        },
+        {
+          "mlsId": 1807145189,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Dune Allen 1St Addn",
+          "price": "$889,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 889000
+        },
+        {
+          "mlsId": 1806694675,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Hidden Highlands",
+          "price": "$850,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 850000
+        },
+        {
+          "mlsId": 1806157513,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Azure",
+          "price": "$839,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 839000
+        },
+        {
+          "mlsId": 215191232,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Palms North A Condo",
+          "price": "$835,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 835000
+        },
+        {
+          "mlsId": 1802107463,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Sea Dunes",
+          "price": "$825,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 825000
+        },
+        {
+          "mlsId": 1802266815,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Azure At 30A",
+          "price": "$789,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 789000
+        },
+        {
+          "mlsId": 1703528153,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Sea Dunes",
+          "price": "$749,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 749000
+        },
+        {
+          "mlsId": 1803586049,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Escada S/D",
+          "price": "$575,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Attached Single Unit",
+          "listingClass": "1",
+          "priceValue": 575000
+        },
+        {
+          "mlsId": 1805934251,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Escada S/D",
+          "price": "$486,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Attached Single Unit",
+          "listingClass": "1",
+          "priceValue": 486000
+        },
+        {
+          "mlsId": 1702864658,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Palms North A Condo",
+          "price": "$399,500",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 399500
+        },
+        {
+          "mlsId": 1806796385,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Topsail Village",
+          "price": "$367,500",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 367500
+        },
+        {
+          "mlsId": 1807038066,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Topsail Village",
+          "price": "$365,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 365000
+        },
+        {
+          "mlsId": 1806454548,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Topsail Village",
+          "price": "$359,900",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 359900
+        },
+        {
+          "mlsId": 218769053,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Topsail Village",
+          "price": "$349,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 349000
+        }
+      ],
+      "min": 349000,
+      "max": 7250000,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/dune-allen-real-estate/",
+        "https://www.bestofemeraldcoast.com/dune-allen-real-estate/?pg=4"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "santa-rosa-beach",
+    "town": "30a",
+    "name": "Santa Rosa Beach",
+    "lon": -86.2307992,
+    "lat": 30.3466423,
+    "x": -214.23404111025675,
+    "y": 706.2948478288799,
+    "description": "Gulf Place shops and beach neighborhoods, with the wider Santa Rosa Beach area extending toward the bay. Housing examples here are for Gulf Place, the coastal center shown, rather than the entire Santa Rosa Beach postal area.",
+    "kind": "walk",
+    "style": "cottage",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/santa-rosa-beach/",
+    "positionSource": "https://www.openstreetmap.org/node/4932709768",
+    "osmNode": 4932709768,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$0.43M\u2013$1.05M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/gulf-place-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/gulf-place-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 1805593811,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Town Center East Condo",
+          "price": "$1,050,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 1050000
+        },
+        {
+          "mlsId": 215834094,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Residences",
+          "price": "$745,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 745000
+        },
+        {
+          "mlsId": 1804333884,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Residences",
+          "price": "$650,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 650000
+        },
+        {
+          "mlsId": 218367257,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Residences",
+          "price": "$644,900",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 644900
+        },
+        {
+          "mlsId": 1807271708,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Cabanas Condo",
+          "price": "$625,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 625000
+        },
+        {
+          "mlsId": 1805704993,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Caribbean Condo",
+          "price": "$575,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 575000
+        },
+        {
+          "mlsId": 1805544497,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Town Center East Condo",
+          "price": "$549,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 549000
+        },
+        {
+          "mlsId": 1805542399,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Town Center East Condo",
+          "price": "$549,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 549000
+        },
+        {
+          "mlsId": 1802189879,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Town Center East Condo",
+          "price": "$499,000",
+          "beds": {
+            "count": 0
+          },
+          "baths": {
+            "count": 0
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 499000
+        },
+        {
+          "mlsId": 1807272064,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Cabanas Condo",
+          "price": "$485,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 485000
+        },
+        {
+          "mlsId": 1806758669,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Place Cabanas Condo",
+          "price": "$429,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 429000
+        }
+      ],
+      "min": 429000,
+      "max": 1050000,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/gulf-place-real-estate/"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "blue-mountain-beach",
+    "town": "30a",
+    "name": "Blue Mountain Beach",
+    "lon": -86.1971649,
+    "lat": 30.3374227,
+    "x": -211.02255761570612,
+    "y": 705.2137825656412,
+    "description": "Beach homes among coastal pines, dune lakes and the Timpoochee Trail.",
+    "kind": "walk",
+    "style": "cottage",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/blue-mountain-beach/",
+    "positionSource": "https://www.openstreetmap.org/node/153600995",
+    "osmNode": 153600995,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$0.52M\u2013$8.90M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/blue-mountain-beach-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/blue-mountain-beach-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 1800400709,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Blue Mountain Beach",
+          "price": "$8,900,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 8900000
+        },
+        {
+          "mlsId": 1804163721,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Retreat The",
+          "price": "$7,775,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 7775000
+        },
+        {
+          "mlsId": 1802706452,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Retreat The",
+          "price": "$6,895,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6895000
+        },
+        {
+          "mlsId": 215465608,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Retreat The",
+          "price": "$6,795,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6795000
+        },
+        {
+          "mlsId": 1808045190,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Blue Mountain Beach",
+          "price": "$6,695,000",
+          "beds": {
+            "count": 8
+          },
+          "baths": {
+            "count": 8
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6695000
+        },
+        {
+          "mlsId": 1703319666,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Retreat The",
+          "price": "$6,695,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6695000
+        },
+        {
+          "mlsId": 1808406843,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Blue Mountain Beach",
+          "price": "$5,750,000",
+          "beds": {
+            "count": 7
+          },
+          "baths": {
+            "count": 7
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5750000
+        },
+        {
+          "mlsId": 1805660228,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Blue Mountain Beach",
+          "price": "$4,895,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4895000
+        },
+        {
+          "mlsId": 217808397,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "",
+          "price": "$4,550,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4550000
+        },
+        {
+          "mlsId": 218171824,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Blue Mountain Beach",
+          "price": "$4,200,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4200000
+        },
+        {
+          "mlsId": 218726203,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Village Of White Cliffs The",
+          "price": "$3,500,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3500000
+        },
+        {
+          "mlsId": 1805175915,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Sanctuary By The Sea Condo",
+          "price": "$3,224,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 3224000
+        },
+        {
+          "mlsId": 1806881499,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Hills Estates Unrec",
+          "price": "$3,200,000",
+          "beds": {
+            "count": 7
+          },
+          "baths": {
+            "count": 7
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3200000
+        },
+        {
+          "mlsId": 218179788,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Hills Estates Unrec",
+          "price": "$2,999,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2999000
+        },
+        {
+          "mlsId": 217277064,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Blue Mountain Beach",
+          "price": "$2,995,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2995000
+        },
+        {
+          "mlsId": 1806703218,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Crest Development",
+          "price": "$2,875,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2875000
+        },
+        {
+          "mlsId": 1806011174,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Crest Development",
+          "price": "$2,765,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2765000
+        },
+        {
+          "mlsId": 218467888,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Sanctuary By The Sea Condo",
+          "price": "$2,700,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 2700000
+        },
+        {
+          "mlsId": 1807653594,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Blue Mountain Beach",
+          "price": "$2,650,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2650000
+        },
+        {
+          "mlsId": 1803672295,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Village At Blue Mountain Beach",
+          "price": "$535,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 535000
+        },
+        {
+          "mlsId": 1805943667,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Village At Blue Mountain Beach",
+          "price": "$529,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 529000
+        },
+        {
+          "mlsId": 1800302461,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Village At Blue Mountain Beach",
+          "price": "$520,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 520000
+        }
+      ],
+      "min": 520000,
+      "max": 8900000,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/blue-mountain-beach-real-estate/",
+        "https://www.bestofemeraldcoast.com/blue-mountain-beach-real-estate/?pg=5"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "grayton",
+    "town": "30a",
+    "name": "Grayton Beach",
+    "lon": -86.165929,
+    "lat": 30.3279595,
+    "x": -208.04132167951528,
+    "y": 704.1105943936478,
+    "description": "Older wood cottages and a compact village beside Western Lake and protected dunes.",
+    "kind": "walk",
+    "style": "grayton",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/grayton-beach/",
+    "positionSource": "https://www.openstreetmap.org/node/153727411",
+    "osmNode": 153727411,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$1.20M\u2013$20.15M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/grayton-beach-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/grayton-beach-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 1807799843,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Trace",
+          "price": "$20,150,000",
+          "beds": {
+            "count": 10
+          },
+          "baths": {
+            "count": 10
+          },
+          "listType": 1,
+          "listTypeDescrip": "Attached Single Unit",
+          "listingClass": "1",
+          "priceValue": 20150000
+        },
+        {
+          "mlsId": 1803948015,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$18,900,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 18900000
+        },
+        {
+          "mlsId": 1801684706,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$10,750,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 10750000
+        },
+        {
+          "mlsId": 216516182,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$10,500,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 10500000
+        },
+        {
+          "mlsId": 1807798652,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Trace",
+          "price": "$10,175,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Duplex - All Units",
+          "listingClass": "1",
+          "priceValue": 10175000
+        },
+        {
+          "mlsId": 1802734948,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Trace",
+          "price": "$9,975,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Attached Single Unit",
+          "listingClass": "1",
+          "priceValue": 9975000
+        },
+        {
+          "mlsId": 218666676,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Trace 1",
+          "price": "$6,750,000",
+          "beds": {
+            "count": 7
+          },
+          "baths": {
+            "count": 7
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6750000
+        },
+        {
+          "mlsId": 1805016726,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Lake Place At Grayton Beach",
+          "price": "$6,299,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6299000
+        },
+        {
+          "mlsId": 218403914,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$5,900,000",
+          "beds": {
+            "count": 7
+          },
+          "baths": {
+            "count": 7
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5900000
+        },
+        {
+          "mlsId": 1806011157,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Old Miller Place",
+          "price": "$5,325,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5325000
+        },
+        {
+          "mlsId": 1804798186,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$4,450,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4450000
+        },
+        {
+          "mlsId": 218168466,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$4,450,000",
+          "beds": {
+            "count": 7
+          },
+          "baths": {
+            "count": 7
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4450000
+        },
+        {
+          "mlsId": 1807797533,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Trace",
+          "price": "$3,500,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3500000
+        },
+        {
+          "mlsId": 218144118,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$3,390,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3390000
+        },
+        {
+          "mlsId": 218290964,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$3,295,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3295000
+        },
+        {
+          "mlsId": 1807882147,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$3,250,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3250000
+        },
+        {
+          "mlsId": 1807749246,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$2,995,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2995000
+        },
+        {
+          "mlsId": 218741821,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$2,950,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2950000
+        },
+        {
+          "mlsId": 1804613590,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$2,700,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2700000
+        },
+        {
+          "mlsId": 1804291898,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$2,499,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2499000
+        },
+        {
+          "mlsId": 218037347,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Beach",
+          "price": "$2,495,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2495000
+        },
+        {
+          "mlsId": 218842666,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Lakeplace At Grayton Beach",
+          "price": "$2,195,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2195000
+        },
+        {
+          "mlsId": 1807912401,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Gulf Trace",
+          "price": "$2,100,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2100000
+        },
+        {
+          "mlsId": 1807229560,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Grayton Cove",
+          "price": "$1,199,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 1199000
+        }
+      ],
+      "min": 1199000,
+      "max": 20150000,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/grayton-beach-real-estate/",
+        "https://www.bestofemeraldcoast.com/grayton-beach-real-estate/?pg=2"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "watercolor",
+    "town": "30a",
+    "name": "WaterColor",
+    "lon": -86.1436111,
+    "lat": 30.3238727,
+    "x": -205.9057491263774,
+    "y": 703.6196275284425,
+    "description": "Lowcountry porches, muted painted siding and leafy streets beside Western Lake.",
+    "kind": "walk",
+    "style": "watercolor",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/watercolor/",
+    "positionSource": "https://www.openstreetmap.org/node/153374071",
+    "osmNode": 153374071,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$1.70M\u2013$11.49M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/watercolor-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/watercolor-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 218751961,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$11,495,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 11495000
+        },
+        {
+          "mlsId": 1802129717,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$8,000,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 8000000
+        },
+        {
+          "mlsId": 218675372,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$6,999,000",
+          "beds": {
+            "count": 10
+          },
+          "baths": {
+            "count": 10
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6999000
+        },
+        {
+          "mlsId": 218391193,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$6,295,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6295000
+        },
+        {
+          "mlsId": 1806175492,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$5,395,000",
+          "beds": {
+            "count": 7
+          },
+          "baths": {
+            "count": 7
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5395000
+        },
+        {
+          "mlsId": 1807737936,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$5,375,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5375000
+        },
+        {
+          "mlsId": 1807279871,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$5,295,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5295000
+        },
+        {
+          "mlsId": 218016790,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$4,995,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4995000
+        },
+        {
+          "mlsId": 1806587067,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$4,795,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4795000
+        },
+        {
+          "mlsId": 1802007725,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$4,750,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 4750000
+        },
+        {
+          "mlsId": 1806855679,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$4,599,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4599000
+        },
+        {
+          "mlsId": 1807345808,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$4,499,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4499000
+        },
+        {
+          "mlsId": 1802189876,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$4,489,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4489000
+        },
+        {
+          "mlsId": 1801680365,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$3,995,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3995000
+        },
+        {
+          "mlsId": 218466265,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$3,799,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3799000
+        },
+        {
+          "mlsId": 218830508,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$3,750,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3750000
+        },
+        {
+          "mlsId": 1808608763,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$3,495,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3495000
+        },
+        {
+          "mlsId": 1808632985,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$3,295,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3295000
+        },
+        {
+          "mlsId": 1805931391,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$3,295,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3295000
+        },
+        {
+          "mlsId": 1806840250,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$3,100,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3100000
+        },
+        {
+          "mlsId": 218549016,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$2,450,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2450000
+        },
+        {
+          "mlsId": 1806606158,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$2,395,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2395000
+        },
+        {
+          "mlsId": 1808585435,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$2,390,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2390000
+        },
+        {
+          "mlsId": 1806318670,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$2,250,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2250000
+        },
+        {
+          "mlsId": 218701016,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$1,735,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 1735000
+        },
+        {
+          "mlsId": 1804418573,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Watercolor",
+          "price": "$1,695,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 1695000
+        }
+      ],
+      "min": 1695000,
+      "max": 11495000,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/watercolor-real-estate/",
+        "https://www.bestofemeraldcoast.com/watercolor-real-estate/?pg=2"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "seaside",
+    "town": "30a",
+    "name": "Seaside",
+    "lon": -86.1376671,
+    "lat": 30.3201987,
+    "x": -205.34192045251544,
+    "y": 703.2020141945516,
+    "description": "Pastel porch cottages on small streets around the central square and beach pavilions.",
+    "kind": "walk",
+    "style": "seaside",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/seaside/",
+    "positionSource": "https://www.openstreetmap.org/node/153560890",
+    "osmNode": 153560890,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$2.00M\u2013$11.60M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/seaside-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/seaside-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 1808292796,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seaside 11",
+          "price": "$11,598,750",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 11598750
+        },
+        {
+          "mlsId": 1804944204,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seaside 10",
+          "price": "$8,900,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 8900000
+        },
+        {
+          "mlsId": 218759225,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seaside 10",
+          "price": "$5,750,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5750000
+        },
+        {
+          "mlsId": 1805350956,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seaside 6",
+          "price": "$4,400,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4400000
+        },
+        {
+          "mlsId": 218795634,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seaside 01",
+          "price": "$4,400,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4400000
+        },
+        {
+          "mlsId": 1803065869,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seaside",
+          "price": "$3,785,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3785000
+        },
+        {
+          "mlsId": 1806121129,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seaside 08",
+          "price": "$3,329,500",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3329500
+        },
+        {
+          "mlsId": 1806428552,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seaside 01",
+          "price": "$2,250,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2250000
+        },
+        {
+          "mlsId": 1805694216,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seaside",
+          "price": "$1,995,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 1995000
+        }
+      ],
+      "min": 1995000,
+      "max": 11598750,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/seaside-real-estate/"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "seagrove",
+    "town": "30a",
+    "name": "Seagrove",
+    "lon": -86.1312569,
+    "lat": 30.3180152,
+    "x": -204.73041334372652,
+    "y": 702.9490533771544,
+    "description": "Older shaded beach cottages mingle with newer homes and small condo buildings.",
+    "kind": "walk",
+    "style": "seagrove",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/seagrove/",
+    "positionSource": "https://www.openstreetmap.org/node/153666073",
+    "osmNode": 153666073,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$0.30M\u2013$16.00M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/seagrove-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/seagrove-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 218592512,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "No Recorded Subdivision",
+          "price": "$16,000,000",
+          "beds": {
+            "count": 8
+          },
+          "baths": {
+            "count": 8
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 16000000
+        },
+        {
+          "mlsId": 1805967370,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seagrove 1St Addn",
+          "price": "$14,999,900",
+          "beds": {
+            "count": 7
+          },
+          "baths": {
+            "count": 7
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 14999900
+        },
+        {
+          "mlsId": 218494853,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Sea Walk",
+          "price": "$14,995,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 14995000
+        },
+        {
+          "mlsId": 218620980,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beachside Estates",
+          "price": "$11,700,000",
+          "beds": {
+            "count": 8
+          },
+          "baths": {
+            "count": 8
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 11700000
+        },
+        {
+          "mlsId": 217068711,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seahighland",
+          "price": "$10,899,000",
+          "beds": {
+            "count": 8
+          },
+          "baths": {
+            "count": 8
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 10899000
+        },
+        {
+          "mlsId": 218652225,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seahighland",
+          "price": "$9,200,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 9200000
+        },
+        {
+          "mlsId": 218696689,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seahighland",
+          "price": "$8,900,000",
+          "beds": {
+            "count": 7
+          },
+          "baths": {
+            "count": 7
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 8900000
+        },
+        {
+          "mlsId": 218423957,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Costera",
+          "price": "$8,500,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 8500000
+        },
+        {
+          "mlsId": 1807096844,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seagrove Beach",
+          "price": "$7,995,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 7995000
+        },
+        {
+          "mlsId": 218763957,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seagrove 5Th Addn",
+          "price": "$6,950,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6950000
+        },
+        {
+          "mlsId": 1805175911,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seagrove 1St Addn",
+          "price": "$6,895,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6895000
+        },
+        {
+          "mlsId": 1807714012,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Oceanside Subdivision",
+          "price": "$6,500,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 6500000
+        },
+        {
+          "mlsId": 1805938319,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Summer Dream Ph 2",
+          "price": "$5,950,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5950000
+        },
+        {
+          "mlsId": 1808335178,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seagrove Village 6Th Add",
+          "price": "$5,900,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5900000
+        },
+        {
+          "mlsId": 218620984,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beachside Estates",
+          "price": "$5,850,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 5850000
+        },
+        {
+          "mlsId": 218620983,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beachside Estates",
+          "price": "$5,850,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 5850000
+        },
+        {
+          "mlsId": 218423958,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Costera",
+          "price": "$5,850,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Attached Single Unit",
+          "listingClass": "1",
+          "priceValue": 5850000
+        },
+        {
+          "mlsId": 1807973828,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seagrove 5Th Addn",
+          "price": "$5,795,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5795000
+        },
+        {
+          "mlsId": 1807756464,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seagrove 1St Addn",
+          "price": "$5,600,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5600000
+        },
+        {
+          "mlsId": 218394152,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seclusion Dunes",
+          "price": "$5,599,000",
+          "beds": {
+            "count": 8
+          },
+          "baths": {
+            "count": 8
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5599000
+        },
+        {
+          "mlsId": 1801680500,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Beachwood Villas Condo",
+          "price": "$450,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 450000
+        },
+        {
+          "mlsId": 1807492730,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Herons Watch Condo Ph 3",
+          "price": "$449,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 449000
+        },
+        {
+          "mlsId": 218690374,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Cassine Station",
+          "price": "$425,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 425000
+        },
+        {
+          "mlsId": 1703753818,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Herons Watch Condo Ph 4",
+          "price": "$422,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 422000
+        },
+        {
+          "mlsId": 1804877736,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Herons Watch Condo",
+          "price": "$419,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 419000
+        },
+        {
+          "mlsId": 1807973870,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Rollin Tide Villas",
+          "price": "$394,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 394000
+        },
+        {
+          "mlsId": 1808601614,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Herons Watch Condo Ph 5",
+          "price": "$375,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 375000
+        },
+        {
+          "mlsId": 1806429223,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Herons Watch Condo Ph 3",
+          "price": "$349,990",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 349990
+        },
+        {
+          "mlsId": 1808090815,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Rollin Tide Villas",
+          "price": "$349,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 349000
+        },
+        {
+          "mlsId": 1802415421,
+          "status": "Active",
+          "city": "Santa Rosa Beach",
+          "state": "FL",
+          "zip": "32459",
+          "subDivision": "Seagrove Highlands",
+          "price": "$299,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 299000
+        }
+      ],
+      "min": 299000,
+      "max": 16000000,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/seagrove-real-estate/",
+        "https://www.bestofemeraldcoast.com/seagrove-real-estate/?pg=9"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "watersound",
+    "town": "30a",
+    "name": "Watersound",
+    "lon": -86.0452972,
+    "lat": 30.28815,
+    "x": -196.5287966430352,
+    "y": 699.495009438806,
+    "description": "Shingle-clad coastal homes, deep porches and boardwalks beside protected dunes.",
+    "kind": "walk",
+    "style": "watersound",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/watersound/",
+    "positionSource": "https://www.openstreetmap.org/node/4931630754",
+    "osmNode": 4931630754,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$1.79M\u2013$4.50M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/watersound-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/watersound-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 218567508,
+          "status": "Active",
+          "city": "Watersound",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$4,499,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4499000
+        },
+        {
+          "mlsId": 1807973844,
+          "status": "Active",
+          "city": "Inlet Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$4,199,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4199000
+        },
+        {
+          "mlsId": 218820897,
+          "status": "Active",
+          "city": "Inlet Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$3,795,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3795000
+        },
+        {
+          "mlsId": 218022052,
+          "status": "Active",
+          "city": "Watersound",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$3,400,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3400000
+        },
+        {
+          "mlsId": 1804766188,
+          "status": "Active",
+          "city": "Watersound",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$3,300,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 3300000
+        },
+        {
+          "mlsId": 218463849,
+          "status": "Active",
+          "city": "Inlet Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach, The Crossings",
+          "price": "$3,295,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 3295000
+        },
+        {
+          "mlsId": 1801912387,
+          "status": "Active",
+          "city": "Inlet Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$3,245,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3245000
+        },
+        {
+          "mlsId": 1806840233,
+          "status": "Active",
+          "city": "Watersound",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$3,150,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 3150000
+        },
+        {
+          "mlsId": 1805175922,
+          "status": "Active",
+          "city": "Watersound",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$2,950,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2950000
+        },
+        {
+          "mlsId": 1803143056,
+          "status": "Active",
+          "city": "Inlet Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach, The Crossings",
+          "price": "$2,850,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 2850000
+        },
+        {
+          "mlsId": 1805813774,
+          "status": "Active",
+          "city": "Inlet Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$2,775,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2775000
+        },
+        {
+          "mlsId": 1807973837,
+          "status": "Active",
+          "city": "Inlet Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$2,725,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 2725000
+        },
+        {
+          "mlsId": 218690130,
+          "status": "Active",
+          "city": "Inlet Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$2,625,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2625000
+        },
+        {
+          "mlsId": 1801032653,
+          "status": "Active",
+          "city": "Inlet Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$2,350,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2350000
+        },
+        {
+          "mlsId": 1805975846,
+          "status": "Active",
+          "city": "Watersound",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$2,025,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2025000
+        },
+        {
+          "mlsId": 1806048991,
+          "status": "Active",
+          "city": "Watersound",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$1,895,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 1895000
+        },
+        {
+          "mlsId": 1805643722,
+          "status": "Active",
+          "city": "Watersound",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Watersound Beach",
+          "price": "$1,795,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 1795000
+        }
+      ],
+      "min": 1795000,
+      "max": 4499000,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/watersound-real-estate/"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "alys",
+    "town": "30a",
+    "name": "Alys Beach",
+    "lon": -86.030005,
+    "lat": 30.2841326,
+    "x": -195.06687073181627,
+    "y": 699.0249034390273,
+    "description": "White courtyard houses with Bermudian roofs and shaded pedestrian passages.",
+    "kind": "walk",
+    "style": "alys",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/alys-beach/",
+    "positionSource": "https://www.openstreetmap.org/node/358740251",
+    "osmNode": 358740251,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$3.19M\u2013$14.62M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://alysbeach.com/real-estate-listings/",
+    "priceEvidence": {
+      "min": 3189330,
+      "max": 14615000,
+      "source": "https://alysbeach.com/real-estate-listings/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "sourcePages": [
+        "https://alysbeach.com/real-estate-listings/"
+      ],
+      "listings": [
+        {
+          "address": "Varian 201",
+          "priceValue": 3189330
+        },
+        {
+          "address": "185 Elbow Beach Road",
+          "priceValue": 14615000
+        }
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "seacrest",
+    "town": "30a",
+    "name": "Seacrest",
+    "lon": -86.0216796,
+    "lat": 30.2828006,
+    "x": -194.26936334455561,
+    "y": 698.8639434462204,
+    "description": "Colorful vacation homes and compact resort streets between Alys and Rosemary.",
+    "kind": "walk",
+    "style": "seacrest",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/seacrest/",
+    "positionSource": "https://www.openstreetmap.org/node/153635959",
+    "osmNode": 153635959,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$0.88M\u2013$2.65M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/seacrest-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/seacrest-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 218585057,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Seacrest Beach",
+          "price": "$2,650,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2650000
+        },
+        {
+          "mlsId": 218585056,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Seacrest Beach",
+          "price": "$2,650,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 2650000
+        },
+        {
+          "mlsId": 1807191908,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Seacrest Beach",
+          "price": "$1,599,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 1599000
+        },
+        {
+          "mlsId": 218498090,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Magnolia Cottages",
+          "price": "$1,548,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 1548000
+        },
+        {
+          "mlsId": 218592508,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Mistral Condo",
+          "price": "$1,269,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 1269000
+        },
+        {
+          "mlsId": 1802185534,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Seacrest Beach",
+          "price": "$1,190,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 1190000
+        },
+        {
+          "mlsId": 218332072,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Seabreeze",
+          "price": "$1,150,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 1150000
+        },
+        {
+          "mlsId": 1802192806,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Arcadia Place",
+          "price": "$1,130,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Attached Single Unit",
+          "listingClass": "1",
+          "priceValue": 1130000
+        },
+        {
+          "mlsId": 1803402304,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Sea Mist Condo",
+          "price": "$995,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 995000
+        },
+        {
+          "mlsId": 1803517945,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Village Of South Walton Beach",
+          "price": "$899,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 899000
+        },
+        {
+          "mlsId": 218592513,
+          "status": "Active",
+          "city": "Seacrest",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Mistral Condo",
+          "price": "$879,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 879000
+        }
+      ],
+      "min": 879000,
+      "max": 2650000,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/seacrest-real-estate/"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "rosemary",
+    "town": "30a",
+    "name": "Rosemary Beach",
+    "lon": -86.015565,
+    "lat": 30.2802919,
+    "x": -193.68639601952387,
+    "y": 698.5759241161421,
+    "description": "Closely spaced masonry and timber homes, tall porches and shaded pedestrian lanes.",
+    "kind": "walk",
+    "style": "rosemary",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/rosemary-beach/",
+    "positionSource": "https://www.openstreetmap.org/node/153474753",
+    "osmNode": 153474753,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$1.59M\u2013$8.10M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/rosemary-beach-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/rosemary-beach-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 1806340613,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$8,100,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 8100000
+        },
+        {
+          "mlsId": 1806050671,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Inlet Beach",
+          "price": "$5,275,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 5275000
+        },
+        {
+          "mlsId": 218282523,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$4,900,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4900000
+        },
+        {
+          "mlsId": 1808306804,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$4,899,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4899000
+        },
+        {
+          "mlsId": 1807588559,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$4,350,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4350000
+        },
+        {
+          "mlsId": 218284279,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$4,295,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 4295000
+        },
+        {
+          "mlsId": 1805766299,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$3,995,000",
+          "beds": {
+            "count": 5
+          },
+          "baths": {
+            "count": 5
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3995000
+        },
+        {
+          "mlsId": 1807442098,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$3,595,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3595000
+        },
+        {
+          "mlsId": 218437352,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$3,350,000",
+          "beds": {
+            "count": 4
+          },
+          "baths": {
+            "count": 4
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 3350000
+        },
+        {
+          "mlsId": 1807542378,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$2,700,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 2700000
+        },
+        {
+          "mlsId": 1807790777,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$2,625,000",
+          "beds": {
+            "count": 3
+          },
+          "baths": {
+            "count": 3
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 2625000
+        },
+        {
+          "mlsId": 218263353,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$2,065,000",
+          "beds": {
+            "count": 2
+          },
+          "baths": {
+            "count": 2
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 2065000
+        },
+        {
+          "mlsId": 1801569668,
+          "status": "Active",
+          "city": "Rosemary Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "Rosemary Beach",
+          "price": "$1,595,000",
+          "beds": {
+            "count": 1
+          },
+          "baths": {
+            "count": 1
+          },
+          "listType": 1,
+          "listTypeDescrip": "Condominium",
+          "listingClass": "1",
+          "priceValue": 1595000
+        }
+      ],
+      "min": 1595000,
+      "max": 8100000,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/rosemary-beach-real-estate/"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "id": "inlet-beach",
+    "town": "30a",
+    "name": "Inlet Beach",
+    "lon": -86.0079936,
+    "lat": 30.2768681,
+    "x": -192.96507176595222,
+    "y": 698.1840997400922,
+    "description": "A mix of beach cottages and newer houses near wide beaches and Lake Powell.",
+    "kind": "walk",
+    "style": "inlet",
+    "source": "https://www.visitsouthwalton.com/neighborhoods/inlet-beach/",
+    "positionSource": "https://www.openstreetmap.org/node/153690848",
+    "osmNode": 153690848,
+    "positionStatus": "OSM place label anchor; not a legal district centroid",
+    "priceRange": "$0.74M\u2013$13.88M \u00b7 verified listing examples \u00b7 Oct 16, 2026",
+    "priceSource": "https://www.bestofemeraldcoast.com/inlet-beach-real-estate/",
+    "priceEvidence": {
+      "source": "https://www.bestofemeraldcoast.com/inlet-beach-real-estate/",
+      "checked": "2026-10-16",
+      "scope": "Verified observed asking-price sample of 1+ bedroom houses/condos, not an exhaustive market range. Land, fractional interests and obvious hotel/large multi-home packages excluded. See subdivision names and source pages.",
+      "listings": [
+        {
+          "mlsId": 1808517988,
+          "status": "Active",
+          "city": "Inlet Beach",
+          "state": "FL",
+          "zip": "32461",
+          "subDivision": "The Overlook At Inlet Beach",
+          "price": "$13,875,000",
+          "beds": {
+            "count": 6
+          },
+          "baths": {
+            "count": 6
+          },
+          "listType": 1,
+          "listTypeDescrip": "Detached Single Family",
+          "listingClass": "1",
+          "priceValue": 13875000
+        },
+        {
+          "address": "81 S Orange Street #102",
+          "subDivision": "Inlet Dunes",
+          "priceValue": 740000,
+          "source": "https://movewithmomentum.com/listings/idx-emeraldcoast/81-s-orange-street-102-inlet-beach"
+        }
+      ],
+      "min": 740000,
+      "max": 13875000,
+      "sourcePages": [
+        "https://www.bestofemeraldcoast.com/inlet-beach-real-estate/",
+        "https://www.bestofemeraldcoast.com/inlet-beach-real-estate/?pg=15",
+        "https://movewithmomentum.com/listings/idx-emeraldcoast/81-s-orange-street-102-inlet-beach"
+      ]
+    },
+    "priceStatus": "Verified against listed asking prices; availability can change"
+  },
+  {
+    "town": "miami",
+    "id": "brickell",
+    "name": "Brickell",
+    "x": 381.2913253090709,
+    "y": 201.16797901439807,
+    "lon": -80.1928833,
+    "lat": 25.7614744,
+    "kind": "walk",
+    "description": "High-rise condo living with restaurants, transit and a busy urban waterfront.",
+    "priceRange": "$735,000 median listing price \u00b7 September 2026",
+    "priceStatus": "Published market median; property types and reporting periods vary.",
+    "source": "https://www.miamiandbeaches.com/neighborhoods",
+    "priceSource": "https://www.realtor.com/local/market/florida/miami/brickell",
+    "previousGuideCenter": [
+      -80.193,
+      25.759
+    ],
+    "positionSource": "https://www.openstreetmap.org/node/13764971423",
+    "style": "brickell",
+    "centerMeaning": "OSM place-label anchor; not a surveyed neighborhood centroid",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 735000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/miami/brickell"
+    }
+  },
+  {
+    "town": "miami",
+    "id": "grove",
+    "name": "Coconut Grove",
+    "x": 375.0369765047152,
+    "y": 195.55148103753746,
+    "lon": -80.2569947,
+    "lat": 25.7126013,
+    "kind": "water",
+    "description": "Leafy streets, bayfront parks and sailing around a compact village center.",
+    "priceRange": "$1,890,000 median sale price \u00b7 trailing three months, retrieved October 17, 2026",
+    "priceStatus": "Published market median; property types and reporting periods vary.",
+    "source": "https://www.miamiandbeaches.com/neighborhoods",
+    "priceSource": "https://www.redfin.com/neighborhood/219259/FL/Miami/Coconut-Grove/housing-market",
+    "previousGuideCenter": [
+      -80.24,
+      25.728
+    ],
+    "positionSource": "https://www.openstreetmap.org/node/154217332",
+    "style": "grove",
+    "centerMeaning": "OSM place-label anchor; not a surveyed neighborhood centroid",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1890000,
+      "metric": "median sale price",
+      "period": "trailing three months, retrieved October 17, 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.redfin.com/neighborhood/219259/FL/Miami/Coconut-Grove/housing-market"
+    }
+  },
+  {
+    "town": "miami",
+    "id": "gables",
+    "name": "Coral Gables",
+    "x": 374.816095769826,
+    "y": 197.82127873694407,
+    "lon": -80.2585107,
+    "lat": 25.7331105,
+    "kind": "outdoors",
+    "description": "A separate city of Mediterranean homes, shaded streets and Miracle Mile shops.",
+    "priceRange": "$1,399,334 median sale price \u00b7 September 2026",
+    "priceStatus": "Published market median; property types and reporting periods vary.",
+    "source": "https://www.miamiandbeaches.com/neighborhoods",
+    "previousGuideCenter": [
+      -80.268,
+      25.75
+    ],
+    "positionSource": "https://www.openstreetmap.org/node/154098311",
+    "style": "gables",
+    "centerMeaning": "OSM place-label anchor; not a surveyed neighborhood centroid",
+    "priceSource": "https://www.redfin.com/city/3707/FL/Coral-Gables/housing-market",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1399334,
+      "metric": "median sale price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.redfin.com/city/3707/FL/Coral-Gables/housing-market"
+    }
+  },
+  {
+    "town": "miami",
+    "id": "southbeach-district",
+    "name": "South Beach",
+    "x": 387.21758000637493,
+    "y": 202.79047685455177,
+    "lon": -80.1332415,
+    "lat": 25.7744291,
+    "kind": "beach",
+    "description": "Art Deco condos and apartments, beach access and lively walkable streets.",
+    "priceRange": "$489,000 median listing price \u00b7 August 2026",
+    "priceStatus": "Published market median; property types and reporting periods vary.",
+    "source": "https://www.miamiandbeaches.com/neighborhoods",
+    "airport": "MIA",
+    "airportMinutes": "20\u201325 min in light traffic",
+    "airportSource": "https://www.floridacoastal.co/towns/southbeach.html",
+    "previousGuideCenter": [
+      -80.135,
+      25.781
+    ],
+    "positionSource": "https://www.openstreetmap.org/node/4226222889",
+    "style": "southbeach-district",
+    "centerMeaning": "OSM place-label anchor; not a surveyed neighborhood centroid",
+    "priceSource": "https://www.realtor.com/local/market/florida/miami-beach/south-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 489000,
+      "metric": "median listing price",
+      "period": "August 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/miami-beach/south-beach"
+    }
+  },
+  {
+    "town": "miami",
+    "id": "edgewater",
+    "name": "Edgewater",
+    "x": 381.5237556558401,
+    "y": 205.54390360404116,
+    "lon": -80.1892142,
+    "lat": 25.8008304,
+    "kind": "water",
+    "description": "Waterfront condominium towers and parks just north of downtown.",
+    "priceRange": "$526,000 median sale price \u00b7 trailing three months, retrieved October 17, 2026",
+    "priceStatus": "Published market median; property types and reporting periods vary.",
+    "source": "https://www.miamiandbeaches.com/neighborhoods",
+    "previousGuideCenter": [
+      -80.187,
+      25.801
+    ],
+    "positionSource": "https://www.openstreetmap.org/node/13884264146",
+    "style": "edgewater",
+    "centerMeaning": "OSM place-label anchor; not a surveyed neighborhood centroid",
+    "priceSource": "https://www.redfin.com/neighborhood/224218/FL/Miami/Edgewater/housing-market",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 526000,
+      "metric": "median sale price",
+      "period": "trailing three months, retrieved October 17, 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.redfin.com/neighborhood/224218/FL/Miami/Edgewater/housing-market"
+    }
+  },
+  {
+    "id": "mid-beach",
+    "town": "miami",
+    "name": "Mid Beach",
+    "lon": -80.12206005818982,
+    "lat": 25.818260376316744,
+    "x": 388.1840096516244,
+    "y": 207.68649157217385,
+    "style": "mid-beach",
+    "positionSource": "https://www.openstreetmap.org/way/447042031",
+    "centerMeaning": "Representative Mid Beach anchor: centroid of the mapped Fontainebleau hotel, not a district boundary centroid",
+    "kind": "coastal",
+    "description": "Oceanfront resorts, MiMo architecture and a quieter beachwalk north of South Beach.",
+    "source": "https://www.miamiandbeaches.com/neighborhoods/miami-beach/mid-beach",
+    "priceRange": "$750,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/miami-beach/mid-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 750000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/miami-beach/mid-beach"
+    },
+    "priceStatus": "Published market median; property types and reporting periods vary."
+  },
+  {
+    "id": "key-biscayne",
+    "town": "miami",
+    "name": "Key Biscayne",
+    "lon": -80.1635261,
+    "lat": 25.6968351,
+    "x": 384.4536530115511,
+    "y": 194.09093796269707,
+    "style": "key-biscayne",
+    "positionSource": "https://www.openstreetmap.org/node/154335289",
+    "centerMeaning": "OSM place-label anchor; not a surveyed neighborhood centroid",
+    "kind": "coastal",
+    "description": "A leafy island village with beach condos, family streets and coastal parks.",
+    "source": "https://www.miamiandbeaches.com/neighborhoods/key-biscayne",
+    "priceRange": "$1,520,276 median sale price \u00b7 September 2026",
+    "priceSource": "https://www.redfin.com/city/9243/FL/Key-Biscayne/housing-market",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1520276,
+      "metric": "median sale price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.redfin.com/city/9243/FL/Key-Biscayne/housing-market"
+    },
+    "priceStatus": "Published market median; property types and reporting periods vary."
+  },
+  {
+    "town": "st-petersburg",
+    "id": "dtsp",
+    "name": "Downtown St. Pete",
+    "x": 134.35297390736343,
+    "y": 419.1335841717872,
+    "lon": -82.6340259,
+    "lat": 27.7712264,
+    "kind": "walk",
+    "description": "Condos and walkable city blocks along museums, parks and the bayfront.",
+    "priceRange": "$1,432,000 median listing price \u00b7 September 2026",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "source": "https://npgallery.nps.gov/GetAsset/67a8c166-5975-486e-a9f9-938018068578",
+    "positionSource": "https://www.openstreetmap.org/node/154143132",
+    "centerMeaning": "Representative OSM place-label anchor: Saint Petersburg",
+    "style": "dtsp",
+    "priceSource": "https://www.realtor.com/local/market/florida/st-petersburg/downtown-st-petersburg",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1432000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/st-petersburg/downtown-st-petersburg"
+    }
+  },
+  {
+    "town": "st-petersburg",
+    "id": "old-ne",
+    "name": "Historic Old Northeast",
+    "x": 134.75523279121919,
+    "y": 420.94862386709696,
+    "lon": -82.6297314,
+    "lat": 27.7875292,
+    "kind": "outdoors",
+    "description": "Older houses and leafy residential blocks close to downtown and the waterfront.",
+    "priceRange": "$1,175,000 median listing price \u00b7 September 2026",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "source": "https://npgallery.nps.gov/GetAsset/f49bc6e0-7060-48e2-a0b6-f506c027aeed/",
+    "priceSource": "https://www.realtor.com/local/market/florida/st-petersburg/historic-old-northeast",
+    "positionSource": "https://www.openstreetmap.org/node/3132081458",
+    "centerMeaning": "Representative OSM place-label anchor: Historic Old Northeast",
+    "style": "old-ne",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1175000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/st-petersburg/historic-old-northeast"
+    }
+  },
+  {
+    "town": "new-port-richey",
+    "id": "new-port-richey-center",
+    "name": "New Port Richey",
+    "kind": "walk",
+    "description": "A small river town with a 1920s downtown that has been adding breweries, restaurants and a restored theater.",
+    "style": "new-port-richey",
+    "lon": -82.7192671,
+    "lat": 28.2441768,
+    "x": 125.42372996049023,
+    "y": 471.5643651706389,
+    "positionSource": "https://www.openstreetmap.org/node/153904041",
+    "centerMeaning": "Representative OSM town place-label anchor: New Port Richey",
+    "priceRange": "$285,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pasco-county/new-port-richey",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 285000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pasco-county/new-port-richey"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "tarpon-springs",
+    "id": "tarpon-springs-center",
+    "name": "Tarpon Springs",
+    "kind": "walk",
+    "description": "A working sponge port with Greek bakeries and restaurants along the docks and bayous winding through town.",
+    "style": "tarpon-springs",
+    "lon": -82.756367,
+    "lat": 28.1470965,
+    "x": 121.89934600541861,
+    "y": 460.746308387042,
+    "positionSource": "https://www.openstreetmap.org/node/11043216711",
+    "centerMeaning": "Representative OSM town place-label anchor: Tarpon Springs",
+    "priceRange": "$439,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/tarpon-springs",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 439000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/tarpon-springs"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "dunedin",
+    "id": "dunedin-center",
+    "name": "Dunedin",
+    "kind": "walk",
+    "description": "A walkable, laid back downtown near some of the Gulf's best island beaches.",
+    "style": "dunedin",
+    "lon": -82.7893788,
+    "lat": 28.0116627,
+    "x": 118.81133406475494,
+    "y": 445.6740885978002,
+    "positionSource": "https://www.openstreetmap.org/node/154088089",
+    "centerMeaning": "Representative OSM town place-label anchor: Dunedin",
+    "priceRange": "$399,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/dunedin",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 399000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/dunedin"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "safety-harbor",
+    "id": "safety-harbor-center",
+    "name": "Safety Harbor",
+    "kind": "beach",
+    "description": "A small town on Old Tampa Bay with oak shaded streets, a historic spa and a Main Street full of local shops.",
+    "style": "safety-harbor",
+    "lon": -82.6931553,
+    "lat": 27.9908529,
+    "x": 128.2789360647605,
+    "y": 443.45957125952265,
+    "positionSource": "https://www.openstreetmap.org/node/153855420",
+    "centerMeaning": "Representative OSM town place-label anchor: Safety Harbor",
+    "priceRange": "$635,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/safety-harbor",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 635000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/safety-harbor"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "clearwaterbeach",
+    "id": "clearwaterbeach-center",
+    "name": "Clearwater Beach",
+    "kind": "walk",
+    "description": "Soft white sand, a walkable beach strip and nightly sunset gatherings at Pier 60.",
+    "style": "clearwaterbeach",
+    "lon": -82.8279313,
+    "lat": 27.9774736,
+    "x": 115.06396439425254,
+    "y": 441.84082433021257,
+    "positionSource": "https://www.openstreetmap.org/node/154365551",
+    "centerMeaning": "Representative OSM town place-label anchor: Clearwater Beach",
+    "priceRange": "$815,950 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/clearwater-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 815950,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/clearwater-beach"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "clearwater",
+    "id": "clearwater-center",
+    "name": "Clearwater",
+    "kind": "beach",
+    "description": "The mainland city behind Clearwater Beach, with a rebuilt downtown waterfront and the sand a bridge away.",
+    "style": "clearwater",
+    "lon": -82.8001026,
+    "lat": 27.9658533,
+    "x": 117.80842647115584,
+    "y": 440.5766667400813,
+    "positionSource": "https://www.openstreetmap.org/node/153983435",
+    "centerMeaning": "Representative OSM town place-label anchor: Clearwater",
+    "priceRange": "$349,850 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/clearwater",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 349850,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/clearwater"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "indian-rocks-beach",
+    "id": "indian-rocks-beach-center",
+    "name": "Indian Rocks Beach",
+    "kind": "beach",
+    "description": "A low key beach town of cottages and small condos, with public beach access at the end of nearly every street.",
+    "style": "indian-rocks-beach",
+    "lon": -82.8512152,
+    "lat": 27.8753005,
+    "x": 112.88391539779771,
+    "y": 430.4730164580408,
+    "positionSource": "https://www.openstreetmap.org/node/154338926",
+    "centerMeaning": "Representative OSM town place-label anchor: Indian Rocks Beach",
+    "priceRange": "$869,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/indian-rocks-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 869000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/indian-rocks-beach"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "madeira-beach",
+    "id": "madeira-beach-center",
+    "name": "Madeira Beach",
+    "kind": "beach",
+    "description": "Locals call it Mad Beach: a casual Gulf town built around the fishing boats and boardwalk at John's Pass.",
+    "style": "madeira-beach",
+    "lon": -82.7973247,
+    "lat": 27.7980814,
+    "x": 118.26286868225992,
+    "y": 421.9484749789674,
+    "positionSource": "https://www.openstreetmap.org/node/154312331",
+    "centerMeaning": "Representative OSM town place-label anchor: Madeira Beach",
+    "priceRange": "$749,950 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/madeira-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 749950,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/madeira-beach"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "treasure-island",
+    "id": "treasure-island-center",
+    "name": "Treasure Island",
+    "kind": "beach",
+    "description": "A barrier island with one of the widest beaches on the Gulf.",
+    "style": "treasure-island",
+    "lon": -82.7689906,
+    "lat": 27.7691937,
+    "x": 121.0809833557039,
+    "y": 418.7680775704826,
+    "positionSource": "https://www.openstreetmap.org/node/153833388",
+    "centerMeaning": "Representative OSM town place-label anchor: Treasure Island",
+    "priceRange": "$659,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/treasure-island",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 659000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/treasure-island"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "gulfport",
+    "id": "gulfport-center",
+    "name": "Gulfport",
+    "kind": "walk",
+    "description": "An artsy little waterfront town with a slow pace and a friendly main street.",
+    "style": "gulfport",
+    "lon": -82.7034334,
+    "lat": 27.7483613,
+    "x": 127.55322350088922,
+    "y": 416.52080860813066,
+    "positionSource": "https://www.openstreetmap.org/node/153947140",
+    "centerMeaning": "Representative OSM town place-label anchor: Gulfport",
+    "priceRange": "$375,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/gulfport",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 375000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/gulfport"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "st-pete-beach",
+    "id": "st-pete-beach-center",
+    "name": "St. Pete Beach",
+    "kind": "beach",
+    "description": "A wide Gulf beach anchored by the pink Don CeSar hotel, with the old fishing village of Pass-a-Grille at its tip.",
+    "style": "st-pete-beach",
+    "lon": -82.741212,
+    "lat": 27.7253065,
+    "x": 123.86291792914193,
+    "y": 413.9221606871317,
+    "positionSource": "https://www.openstreetmap.org/node/154042418",
+    "centerMeaning": "Representative OSM town place-label anchor: Saint Pete Beach",
+    "priceRange": "$589,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/st-pete-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 589000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/st-pete-beach"
+    },
+    "source": "https://www.visitstpeteclearwater.com/list/classic-old-florida-attractions-restaurants",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "sarasota",
+    "id": "sarasota-center",
+    "name": "Sarasota",
+    "kind": "beach",
+    "description": "The arts capital of the Gulf coast, with an opera, a ballet, The Ringling museum, Lido Beach just over the bridge and Siesta Key's famous sand minutes away.",
+    "style": "sarasota",
+    "lon": -82.5308545,
+    "lat": 27.3365805,
+    "x": 145.0751515933078,
+    "y": 370.9873591736568,
+    "positionSource": "https://www.openstreetmap.org/node/153881958",
+    "centerMeaning": "Representative OSM town place-label anchor: Sarasota",
+    "priceRange": "$560,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/sarasota-county/sarasota",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 560000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/sarasota-county/sarasota"
+    },
+    "source": "https://www.visitsarasota.com/article/then-and-now-architecture-glance-sarasota-county",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "labelPriority": 100
+  },
+  {
+    "town": "ami",
+    "id": "ami-center",
+    "name": "Anna Maria Island",
+    "kind": "beach",
+    "description": "Old Florida on a small island, with no high rises and a free trolley.",
+    "style": "ami",
+    "lon": -82.7189887,
+    "lat": 27.5142037,
+    "x": 126.29310379654386,
+    "y": 390.50315462923834,
+    "positionSource": "https://www.openstreetmap.org/node/358710155",
+    "centerMeaning": "Representative OSM town place-label anchor: Anna Maria Island",
+    "priceRange": "$3,660,000 Anna Maria city median listing price (north island) \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/manatee-county/anna-maria",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 3660000,
+      "metric": "Anna Maria city median listing price (north island)",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/manatee-county/anna-maria"
+    },
+    "source": "https://annamariaislandchamber.org/wp-content/uploads/AMI26_VisitorsGuidebook_WEB.pdf",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "labelPriority": 90
+  },
+  {
+    "town": "bradenton",
+    "id": "bradenton-center",
+    "name": "Bradenton",
+    "kind": "walk",
+    "description": "A river city with a long Riverwalk, spring training baseball and the Anna Maria Island beaches 20 minutes west.",
+    "style": "bradenton",
+    "lon": -82.5748194,
+    "lat": 27.4989278,
+    "x": 140.52555623725803,
+    "y": 388.9628932346485,
+    "positionSource": "https://www.openstreetmap.org/node/154204998",
+    "centerMeaning": "Representative OSM town place-label anchor: Bradenton",
+    "priceRange": "$400,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/manatee-county/bradenton",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 400000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/manatee-county/bradenton"
+    },
+    "source": "https://annamariaislandchamber.org/wp-content/uploads/AMI26_VisitorsGuidebook_WEB.pdf",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "labelPriority": 70
+  },
+  {
+    "town": "cortez",
+    "id": "cortez-center",
+    "name": "Cortez",
+    "kind": "beach",
+    "description": "One of the last working fishing villages in Florida, with fish houses on the bay that date back to the 1880s.",
+    "style": "cortez",
+    "lon": -82.6862105,
+    "lat": 27.4692058,
+    "x": 129.57777494265127,
+    "y": 385.54059787595855,
+    "positionSource": "https://www.openstreetmap.org/node/154198415",
+    "centerMeaning": "Representative OSM town place-label anchor: Cortez",
+    "priceRange": "$549,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/manatee-county/cortez",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 549000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/manatee-county/cortez"
+    },
+    "source": "https://annamariaislandchamber.org/wp-content/uploads/AMI26_VisitorsGuidebook_WEB.pdf",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "labelPriority": 10
+  },
+  {
+    "town": "bradenton-beach",
+    "id": "bradenton-beach-center",
+    "name": "Bradenton Beach",
+    "kind": "walk",
+    "description": "The south end of Anna Maria Island, with a historic fishing pier, a walkable Bridge Street and water on both sides.",
+    "style": "bradenton-beach",
+    "lon": -82.6995822,
+    "lat": 27.4682554,
+    "x": 128.26009930540343,
+    "y": 385.42108678694353,
+    "positionSource": "https://www.openstreetmap.org/node/154055994",
+    "centerMeaning": "Representative OSM town place-label anchor: Bradenton Beach",
+    "priceRange": "$1,190,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/manatee-county/bradenton-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1190000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/manatee-county/bradenton-beach"
+    },
+    "source": "https://annamariaislandchamber.org/wp-content/uploads/AMI26_VisitorsGuidebook_WEB.pdf",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "labelPriority": 10
+  },
+  {
+    "town": "longboat",
+    "id": "longboat-center",
+    "name": "Longboat Key",
+    "kind": "beach",
+    "description": "A quiet, polished barrier island minutes from Sarasota's arts scene.",
+    "style": "longboat",
+    "lon": -82.6589881,
+    "lat": 27.4125417,
+    "x": 132.3310140486229,
+    "y": 379.27762562426824,
+    "positionSource": "https://www.openstreetmap.org/node/154336057",
+    "centerMeaning": "Representative OSM town place-label anchor: Longboat Key",
+    "priceRange": "$1,050,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/sarasota-county/longboat-key",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1050000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/sarasota-county/longboat-key"
+    },
+    "source": "https://www.visitsarasota.com/article/then-and-now-architecture-glance-sarasota-county",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "labelPriority": 10
+  },
+  {
+    "town": "siesta-key",
+    "id": "siesta-key-center",
+    "name": "Siesta Key",
+    "kind": "beach",
+    "description": "An island of quartz white sand so fine it stays cool underfoot, with a small, lively village at the north end.",
+    "style": "siesta-key",
+    "lon": -82.5642993,
+    "lat": 27.276201,
+    "x": 141.8507529686853,
+    "y": 364.24434281814075,
+    "positionSource": "https://www.openstreetmap.org/node/153925636",
+    "centerMeaning": "Representative OSM town place-label anchor: Siesta Key",
+    "priceRange": "$1,099,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/sarasota-county/siesta-key",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1099000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/sarasota-county/siesta-key"
+    },
+    "source": "https://www.visitsarasota.com/article/then-and-now-architecture-glance-sarasota-county",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "labelPriority": 10
+  },
+  {
+    "town": "venice",
+    "id": "venice-center",
+    "name": "Venice",
+    "kind": "walk",
+    "description": "A 1920s planned town of palm lined avenues you can walk from downtown to the Gulf, with newer mainland neighborhoods and the Legacy Trail just over the bridge.",
+    "style": "venice",
+    "lon": -82.4442832,
+    "lat": 27.0998315,
+    "x": 153.95508847625408,
+    "y": 344.8062978770424,
+    "positionSource": "https://www.openstreetmap.org/node/154399353",
+    "centerMeaning": "Representative OSM town place-label anchor: Venice",
+    "priceRange": "$399,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/sarasota-county/venice",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 399000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/sarasota-county/venice"
+    },
+    "source": "https://www.visitsarasota.com/article/then-and-now-architecture-glance-sarasota-county",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "labelPriority": 80
+  },
+  {
+    "town": "englewood",
+    "id": "englewood-center",
+    "name": "Englewood",
+    "kind": "beach",
+    "description": "A laid back Gulf town with a small old downtown and beaches on Manasota Key, known for shark teeth.",
+    "style": "englewood",
+    "lon": -82.3525952,
+    "lat": 26.9620053,
+    "x": 163.2325188142102,
+    "y": 329.6226339487947,
+    "positionSource": "https://www.openstreetmap.org/node/153867830",
+    "centerMeaning": "Representative OSM town place-label anchor: Englewood",
+    "priceRange": "$399,367 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/sarasota-county/englewood",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 399367,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/sarasota-county/englewood"
+    },
+    "source": "https://www.visitsarasota.com/article/then-and-now-architecture-glance-sarasota-county",
+    "priceStatus": "Published market median; reporting period shown on card.",
+    "labelPriority": 10
+  },
+  {
+    "town": "tampa",
+    "id": "downtown-tampa",
+    "name": "Downtown & Water Street",
+    "x": 151.44670024403274,
+    "y": 439.1356252240794,
+    "lon": -82.4577068,
+    "lat": 27.9495104,
+    "kind": "walk",
+    "description": "Urban apartments and condos beside the Riverwalk, restaurants and waterfront parks.",
+    "priceRange": "$1,254,824 median listing price \u00b7 September 2026",
+    "priceStatus": "Neighborhood price range not yet verified",
+    "source": "https://planhillsborough.org/wp-content/uploads/2023/01/Hillsborough_County_Sustainable_Growth_Study_Report.pdf",
+    "positionSource": "https://www.openstreetmap.org/node/153970120",
+    "style": "downtown-tampa",
+    "centerMeaning": "Representative OSM place-label anchor: Tampa",
+    "priceSource": "https://www.realtor.com/local/market/florida/tampa/downtown-tampa",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1254824,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/tampa/downtown-tampa"
+    }
+  },
+  {
+    "town": "tampa",
+    "id": "hydepark",
+    "name": "Hyde Park",
+    "x": 149.9413465570687,
+    "y": 437.54336783508165,
+    "lon": -82.4732361,
+    "lat": 27.9353426,
+    "kind": "walk",
+    "description": "Porches, older homes and a walkable shopping village near Bayshore.",
+    "priceRange": "$792,450 median listing price \u00b7 September 2026",
+    "priceStatus": "Neighborhood price range not yet verified",
+    "source": "https://www.tampa.gov/neighborhoods/historic-hyde-park",
+    "priceBenchmark": "$1.20M median sale price \u00b7 Aug 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/tampa/hyde-park",
+    "positionSource": "https://www.openstreetmap.org/node/367352831",
+    "style": "hydepark",
+    "centerMeaning": "Representative OSM place-label anchor: Hyde Park",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 792450,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/tampa/hyde-park"
+    }
+  },
+  {
+    "town": "tampa",
+    "id": "ybor",
+    "name": "Ybor City",
+    "x": 153.05668726179638,
+    "y": 440.3261597728131,
+    "lon": -82.4411596,
+    "lat": 27.9600475,
+    "kind": "walk",
+    "description": "Historic brick blocks, restaurants and nightlife with a lively evening scene.",
+    "priceRange": "$310,000 median sale price \u00b7 trailing 12 months, retrieved October 17, 2026",
+    "priceStatus": "Neighborhood price range not yet verified",
+    "source": "https://www.tampa.gov/historic-preservation/info/design-guidelines",
+    "positionSource": "https://www.openstreetmap.org/node/154312872",
+    "style": "ybor",
+    "centerMeaning": "Representative OSM place-label anchor: Ybor City",
+    "priceSource": "https://www.homes.com/local-guide/tampa-fl/ybor-city-neighborhood/",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 310000,
+      "metric": "median sale price",
+      "period": "trailing 12 months, retrieved October 17, 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.homes.com/local-guide/tampa-fl/ybor-city-neighborhood/"
+    }
+  },
+  {
+    "town": "tampa",
+    "id": "davis",
+    "name": "Davis Islands",
+    "x": 151.5831474327706,
+    "y": 437.0242949072041,
+    "lon": -82.4565865,
+    "lat": 27.9304849,
+    "kind": "water",
+    "description": "Island streets, boating access and mostly low-rise residential living.",
+    "priceRange": "$2,050,000 median listing price \u00b7 September 2026",
+    "priceStatus": "Neighborhood price range not yet verified",
+    "source": "https://apps.tampagov.net/DepartmentPDFs/162381/city-of-tampa-designations-book-final-2024/index.html",
+    "priceBenchmark": "$1.48M median sale price \u00b7 3 months ending Sep 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/tampa/davis-islands",
+    "positionSource": "https://www.openstreetmap.org/node/321483098",
+    "style": "davis",
+    "centerMeaning": "Representative OSM place-label anchor: Davis Islands",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 2050000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/tampa/davis-islands"
+    }
+  },
+  {
+    "town": "tampa",
+    "id": "westchase",
+    "name": "Westchase",
+    "x": 135.0247290306479,
+    "y": 450.710271142853,
+    "lon": -82.6236135,
+    "lat": 28.0554771,
+    "kind": "golf",
+    "description": "Planned neighborhoods, golf and community amenities northwest of central Tampa.",
+    "priceRange": "$469,000 median listing price \u00b7 current listings, retrieved October 17, 2026",
+    "priceStatus": "Neighborhood price range not yet verified",
+    "source": "https://www.homes.com/local-guide/westchase-fl/",
+    "positionSource": "https://www.openstreetmap.org/node/154340130",
+    "style": "westchase",
+    "centerMeaning": "Representative OSM place-label anchor: Westchase",
+    "priceSource": "https://www.realtor.com/realestateandhomes-search/Westchase_FL",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 469000,
+      "metric": "median listing price",
+      "period": "current listings, retrieved October 17, 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/realestateandhomes-search/Westchase_FL"
+    }
+  },
+  {
+    "town": "tampa",
+    "id": "seminole",
+    "name": "Seminole Heights",
+    "x": 151.4257007679203,
+    "y": 444.0991370140249,
+    "lon": -82.4572883,
+    "lat": 27.9942034,
+    "kind": "outdoors",
+    "description": "Older bungalows, mature trees and independent restaurants north of downtown.",
+    "priceRange": "$514,949 median listing price \u00b7 September 2026",
+    "priceStatus": "Neighborhood price range not yet verified",
+    "source": "https://www.tampa.gov/historic-preservation/info/design-guidelines",
+    "positionSource": "https://www.openstreetmap.org/node/11923589471",
+    "style": "seminole",
+    "centerMeaning": "Representative OSM place-label anchor: Seminole Heights of North Tampa",
+    "priceSource": "https://www.realtor.com/local/market/florida/tampa/seminole-heights",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 514949,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/tampa/seminole-heights"
+    }
+  },
+  {
+    "id": "apollo-beach",
+    "town": "apollo-beach",
+    "name": "Apollo Beach",
+    "kind": "boating",
+    "description": "A canal community on Tampa Bay where a lot of back yards have a boat lift.",
+    "lon": -82.4062097,
+    "lat": 27.7741547,
+    "x": 156.75490702837004,
+    "y": 419.7276577502333,
+    "positionSource": "https://www.openstreetmap.org/node/154125902",
+    "style": "apollo-beach",
+    "centerMeaning": "Representative OSM place-label anchor: Apollo Beach",
+    "priceRange": "$515,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/hillsborough-county/apollo-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 515000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/hillsborough-county/apollo-beach"
+    },
+    "source": "https://planhillsborough.org/wp-content/uploads/2023/01/Hillsborough_County_Sustainable_Growth_Study_Report.pdf"
+  },
+  {
+    "id": "ruskin",
+    "town": "ruskin",
+    "name": "Ruskin",
+    "kind": "boating",
+    "description": "A fast growing bayside community on the Little Manatee River, with some of the lowest prices near Tampa Bay.",
+    "lon": -82.4340374,
+    "lat": 27.7206448,
+    "x": 154.09356264291335,
+    "y": 413.750699086575,
+    "positionSource": "https://www.openstreetmap.org/node/153831375",
+    "style": "ruskin",
+    "centerMeaning": "Representative OSM place-label anchor: Ruskin",
+    "priceRange": "$346,500 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/hillsborough-county/ruskin",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 346500,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/hillsborough-county/ruskin"
+    },
+    "source": "https://planhillsborough.org/wp-content/uploads/2023/01/Hillsborough_County_Sustainable_Growth_Study_Report.pdf"
+  },
+  {
+    "id": "sun-city-center",
+    "town": "sun-city-center",
+    "name": "Sun City Center",
+    "kind": "boating",
+    "description": "A golf cart community inland from Tampa Bay with more than 100 clubs. Most homes here are age restricted to 55 and over.",
+    "lon": -82.3519192,
+    "lat": 27.7123035,
+    "x": 162.18605312579703,
+    "y": 412.9297751403021,
+    "positionSource": "https://www.openstreetmap.org/node/154211608",
+    "style": "sun-city-center",
+    "centerMeaning": "Representative OSM place-label anchor: Sun City Center",
+    "priceRange": "$255,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/hillsborough-county/sun-city-center",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 255000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/hillsborough-county/sun-city-center"
+    },
+    "source": "https://planhillsborough.org/wp-content/uploads/2023/01/Hillsborough_County_Sustainable_Growth_Study_Report.pdf"
+  }
+]

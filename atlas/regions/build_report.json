@@ -1,0 +1,212 @@
+{
+  "height_caps_applied": 6290,
+  "overlapping_or_water_homes_removed": 2648,
+  "spaced_lots": 3264,
+  "landcover_polygons": 12429,
+  "main_road_segments": 629,
+  "packages": {
+    "mobile-st-pete-clearwater": {
+      "gzip": 260966,
+      "raw": 1159340
+    },
+    "terrain-naples-marco": {
+      "gzip": 2003583,
+      "raw": 10416832
+    },
+    "terrain-emerald-coast": {
+      "gzip": 1808106,
+      "raw": 10253112
+    },
+    "terrain-sarasota-bradenton": {
+      "gzip": 2324984,
+      "raw": 13274928
+    },
+    "mobile-nature-coast": {
+      "gzip": 104331,
+      "raw": 448096
+    },
+    "florida-keys": {
+      "gzip": 147266,
+      "raw": 544016
+    },
+    "terrain-first-coast": {
+      "gzip": 488478,
+      "raw": 2986948
+    },
+    "treasure-coast": {
+      "gzip": 206182,
+      "raw": 890932
+    },
+    "terrain-miami-fort-lauderdale": {
+      "gzip": 2115661,
+      "raw": 11398672
+    },
+    "mobile-tampa-south-shore": {
+      "gzip": 264657,
+      "raw": 1171344
+    },
+    "emerald-coast": {
+      "gzip": 649013,
+      "raw": 2413372
+    },
+    "terrain-treasure-coast": {
+      "gzip": 2725163,
+      "raw": 15322872
+    },
+    "mobile-space-coast": {
+      "gzip": 97918,
+      "raw": 402328
+    },
+    "daytona-flagler": {
+      "gzip": 297056,
+      "raw": 1165392
+    },
+    "mobile-palm-beaches": {
+      "gzip": 192592,
+      "raw": 783564
+    },
+    "fort-myers-sanibel": {
+      "gzip": 269655,
+      "raw": 1119576
+    },
+    "space-coast": {
+      "gzip": 168353,
+      "raw": 618348
+    },
+    "mobile-naples-marco": {
+      "gzip": 127599,
+      "raw": 550184
+    },
+    "terrain-nature-coast": {
+      "gzip": 1022768,
+      "raw": 6189956
+    },
+    "terrain-space-coast": {
+      "gzip": 3160934,
+      "raw": 18478748
+    },
+    "mobile-first-coast": {
+      "gzip": 187626,
+      "raw": 826408
+    },
+    "mobile-miami-fort-lauderdale": {
+      "gzip": 343597,
+      "raw": 1424724
+    },
+    "first-coast": {
+      "gzip": 532792,
+      "raw": 2060596
+    },
+    "mobile-sarasota-bradenton": {
+      "gzip": 214719,
+      "raw": 941912
+    },
+    "forgotten-coast": {
+      "gzip": 150813,
+      "raw": 583076
+    },
+    "terrain-st-pete-clearwater": {
+      "gzip": 2597754,
+      "raw": 14918336
+    },
+    "terrain-palm-beaches": {
+      "gzip": 1299679,
+      "raw": 7340396
+    },
+    "mobile-emerald-coast": {
+      "gzip": 242235,
+      "raw": 1174392
+    },
+    "nature-coast": {
+      "gzip": 183542,
+      "raw": 684988
+    },
+    "mobile-forgotten-coast": {
+      "gzip": 82834,
+      "raw": 373048
+    },
+    "terrain-fort-myers-sanibel": {
+      "gzip": 2371029,
+      "raw": 14028828
+    },
+    "mobile-florida-keys": {
+      "gzip": 75218,
+      "raw": 315420
+    },
+    "state": {
+      "gzip": 82533,
+      "raw": 408356
+    },
+    "palm-beaches": {
+      "gzip": 471338,
+      "raw": 1771560
+    },
+    "mobile-treasure-coast": {
+      "gzip": 138602,
+      "raw": 588044
+    },
+    "terrain": {
+      "gzip": 11144921,
+      "raw": 63531600
+    },
+    "terrain-state": {
+      "gzip": 2160476,
+      "raw": 9859656
+    },
+    "terrain-forgotten-coast": {
+      "gzip": 1056013,
+      "raw": 5970952
+    },
+    "sarasota-bradenton": {
+      "gzip": 550344,
+      "raw": 2124012
+    },
+    "terrain-florida-keys": {
+      "gzip": 1656912,
+      "raw": 8186196
+    },
+    "st-pete-clearwater": {
+      "gzip": 635629,
+      "raw": 2526316
+    },
+    "miami-fort-lauderdale": {
+      "gzip": 1440027,
+      "raw": 4389388
+    },
+    "mobile-daytona-flagler": {
+      "gzip": 138141,
+      "raw": 590612
+    },
+    "tampa-south-shore": {
+      "gzip": 640858,
+      "raw": 2540520
+    },
+    "naples-marco": {
+      "gzip": 273937,
+      "raw": 1117008
+    },
+    "mobile-fort-myers-sanibel": {
+      "gzip": 139196,
+      "raw": 605172
+    },
+    "terrain-daytona-flagler": {
+      "gzip": 1152597,
+      "raw": 6997300
+    },
+    "terrain-tampa-south-shore": {
+      "gzip": 3227609,
+      "raw": 18631968
+    }
+  },
+  "district_homes_added": 80,
+  "validation": {
+    "valid_gzip_glb_packages": 48,
+    "towns": 108,
+    "regions": 15,
+    "curated_districts": 18,
+    "district_price_ranges_verified": 2,
+    "public_site_deployed": false
+  },
+  "statewide_habitat_polygons": 1520,
+  "airport_routes": 23
+}

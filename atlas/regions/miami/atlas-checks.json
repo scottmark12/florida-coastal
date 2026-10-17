@@ -1,0 +1,18 @@
+{
+  "entry": "explore_coast.html",
+  "same_renderer_cards_labels_phone_controls_as_30a": true,
+  "approved_core_geometry_unchanged": true,
+  "districts": 7,
+  "published_medians": 7,
+  "screenshots": [
+    "atlas-region-390.png",
+    "atlas-region-1440.png",
+    "atlas-south-beach-390.png",
+    "atlas-south-beach-1440.png",
+    "atlas-brickell-390.png",
+    "atlas-brickell-1440.png"
+  ],
+  "console_errors_observed": 0,
+  "physical_phone_tested": false,
+  "exporter_matches_build": true
+}
