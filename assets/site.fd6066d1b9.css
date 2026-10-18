@@ -576,6 +576,21 @@ body:has(.fs){overflow:hidden}
 .fs .dot.depart,.fs .dot.arrive{transform-box:fill-box;transform-origin:center;transition:transform .45s ease,fill .3s ease}
 .fs .dot.depart{transform:scale(.45)}
 .fs .dot.arrive{fill:var(--accent);opacity:1;transform:scale(2.4);transition-delay:var(--late,0s)}
+.lnd{position:absolute;inset:0;overflow:hidden;z-index:1;background:#9fd3d8;animation:lndin .6s ease-out both}
+@keyframes lndin{from{opacity:0;transform:scale(1.04)}to{opacity:1;transform:none}}
+.lnd-w{position:absolute;top:0;bottom:0;left:0;right:0;container-type:size;overflow:hidden}
+.fs-rv .lnd-w{right:-560px}
+.lnd-box{position:absolute;left:50%;top:50%;width:max(100cqw,160cqh);height:max(100cqh,62.5cqw);transform:translate(-50%,-50%)}
+.lnd.m .lnd-box{width:max(100cqw,80cqh);height:max(100cqh,125cqw)}
+.lnd-box img{position:absolute;inset:0;width:100%;height:100%;display:block}
+.lnd-pin{position:absolute;transform:translate(-50%,-100%);display:flex;flex-direction:column;align-items:center;gap:4px;pointer-events:none}
+.lnd-pin b{order:-1;background:rgba(255,255,255,.94);color:var(--ink);font:600 12.5px/1 var(--body);padding:6px 10px;border-radius:999px;box-shadow:0 4px 14px rgba(20,40,55,.16);white-space:nowrap}
+.lnd-pin i{width:9px;height:9px;border-radius:50%;background:#fff;border:2.5px solid var(--ink);transform:translateY(50%)}
+.lnd-pin.main b{background:var(--accent);color:#fff;font-size:14px;padding:8px 13px}
+.lnd-pin.main i{width:14px;height:14px;background:var(--accent);border:3px solid #fff;box-shadow:0 0 0 6px rgba(198,82,19,.25)}
+.lnd-credit{position:absolute;right:10px;bottom:8px;font:500 10.5px var(--body);color:rgba(21,42,46,.75);background:rgba(255,255,255,.7);padding:2px 7px;border-radius:6px}
+.fs.flying .lnd{opacity:0;transition:opacity .28s ease;animation:none}
+@media (prefers-reduced-motion:reduce){.lnd{animation:none}}
 .fs-top{display:grid;grid-template-columns:1fr minmax(440px,32vw)}
 .fs-mapcol{position:relative;overflow:hidden}
 .fs-mapcol>.fs-logo{position:absolute;left:24px;top:18px;z-index:3;background:rgba(255,255,255,.88);padding:10px 14px;border-radius:14px;box-shadow:0 6px 20px rgba(20,40,55,.1)}
