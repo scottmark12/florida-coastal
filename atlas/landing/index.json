@@ -7,10 +7,10 @@
       "desktop": "30a.webp",
       "mobile": "30a-m.webp",
       "center": {
-        "x": -205.34192045251544,
-        "y": 703.2020141945516,
-        "lon": -86.1376671,
-        "lat": 30.32019869999998
+        "x": -205.33973846763203,
+        "y": 703.2053976717225,
+        "lon": -86.13764499999999,
+        "lat": 30.32022952173913
       },
       "districts": [
         {
@@ -91,14 +91,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          -205.34192045251544,
+          -205.33973846763203,
           1.0937499999999998,
-          -702.1082641945516
+          -702.1116476717225
         ],
         "target": [
-          -205.34192045251544,
+          -205.33973846763203,
           0,
-          -703.2020141945516
+          -703.2053976717225
         ],
         "left": -0.7,
         "right": 0.7,
@@ -110,17 +110,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=30a&level=town&landing=1&cx=-205.34192045251544&cy=703.2020141945516&span=1.4&district=seaside",
+      "render_url": "../explore_coast.html?view=30a&level=town&landing=1&cx=-205.33973846763203&cy=703.2053976717225&span=1.4&district=seaside",
       "mobile_camera": {
         "position": [
-          -205.34192045251544,
+          -205.33973846763203,
           1.0937499999999998,
-          -702.1082641945516
+          -702.1116476717225
         ],
         "target": [
-          -205.34192045251544,
+          -205.33973846763203,
           0,
-          -703.2020141945516
+          -703.2053976717225
         ],
         "left": -0.35,
         "right": 0.35,
@@ -132,7 +132,32 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=30a&level=town&landing=1&cx=-205.34192045251544&cy=703.2020141945516&span=0.7&district=seaside"
+      "mobile_render_url": "../explore_coast.html?view=30a&level=town&landing=1&cx=-205.33973846763203&cy=703.2053976717225&span=0.7&district=seaside",
+      "hero": {
+        "lon": -86.13764499999999,
+        "lat": 30.32022952173913,
+        "reason": "Seaside’s square puts the pastel village and its Gulf beach together in one frame."
+      },
+      "callouts": [
+        {
+          "name": "Central Square",
+          "type": "walkable",
+          "lon": -86.13764499999999,
+          "lat": 30.32022952173913
+        },
+        {
+          "name": "Seaside Post Office",
+          "type": "landmark",
+          "lon": -86.13704368,
+          "lat": 30.320311980000003
+        },
+        {
+          "name": "Seaside Interfaith Chapel",
+          "type": "landmark",
+          "lon": -86.13666385555557,
+          "lat": 30.322463844444442
+        }
+      ]
     },
     {
       "town_id": "dunedin",
@@ -140,10 +165,10 @@
       "desktop": "dunedin.webp",
       "mobile": "dunedin-m.webp",
       "center": {
-        "x": 120.70388716833563,
-        "y": 446.61876663325586,
-        "lon": -82.77,
-        "lat": 28.019999999999996
+        "x": 118.52465669123623,
+        "y": 445.7608258552086,
+        "lon": -82.79229104000001,
+        "lat": 28.012469
       },
       "districts": [
         {
@@ -158,14 +183,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          120.70388716833563,
+          118.52465669123623,
           2.1874999999999996,
-          -444.43126663325586
+          -443.5733258552086
         ],
         "target": [
-          120.70388716833563,
+          118.52465669123623,
           0,
-          -446.61876663325586
+          -445.7608258552086
         ],
         "left": -1.4,
         "right": 1.4,
@@ -177,17 +202,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=dunedin&level=town&landing=1&cx=120.70388716833563&cy=446.61876663325586&span=2.8&district=dunedin-center",
+      "render_url": "../explore_coast.html?view=dunedin&level=town&landing=1&cx=118.52465669123623&cy=445.7608258552086&span=2.8&district=dunedin-center",
       "mobile_camera": {
         "position": [
-          120.70388716833563,
+          118.52465669123623,
           2.1874999999999996,
-          -444.43126663325586
+          -443.5733258552086
         ],
         "target": [
-          120.70388716833563,
+          118.52465669123623,
           0,
-          -446.61876663325586
+          -445.7608258552086
         ],
         "left": -0.7,
         "right": 0.7,
@@ -199,7 +224,32 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=dunedin&level=town&landing=1&cx=120.70388716833563&cy=446.61876663325586&span=1.4&district=dunedin-center"
+      "mobile_render_url": "../explore_coast.html?view=dunedin&level=town&landing=1&cx=118.52465669123623&cy=445.7608258552086&span=1.4&district=dunedin-center",
+      "hero": {
+        "lon": -82.79229104000001,
+        "lat": 28.012469,
+        "reason": "The municipal marina and Main Street waterfront express Dunedin’s boating and walkable-town character."
+      },
+      "callouts": [
+        {
+          "name": "Municipal Marina",
+          "type": "boating",
+          "lon": -82.79229104000001,
+          "lat": 28.012469
+        },
+        {
+          "name": "Edgewater Park",
+          "type": "park",
+          "lon": -82.79189637857142,
+          "lat": 28.011816660714288
+        },
+        {
+          "name": "Pioneer Park",
+          "type": "park",
+          "lon": -82.78769128000002,
+          "lat": 28.011970129999998
+        }
+      ]
     },
     {
       "town_id": "clearwaterbeach",
@@ -207,10 +257,10 @@
       "desktop": "clearwaterbeach.webp",
       "mobile": "clearwaterbeach-m.webp",
       "center": {
-        "x": 114.8582207302606,
-        "y": 442.11945294406513,
-        "lon": -82.83,
-        "lat": 27.980000000000004
+        "x": 114.97532158970833,
+        "y": 441.809629356734,
+        "lon": -82.8288372,
+        "lat": 27.9772003
       },
       "districts": [
         {
@@ -225,14 +275,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          114.8582207302606,
+          114.97532158970833,
           2.1874999999999996,
-          -439.93195294406513
+          -439.622129356734
         ],
         "target": [
-          114.8582207302606,
+          114.97532158970833,
           0,
-          -442.11945294406513
+          -441.809629356734
         ],
         "left": -1.4,
         "right": 1.4,
@@ -244,17 +294,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=clearwaterbeach&level=town&landing=1&cx=114.8582207302606&cy=442.11945294406513&span=2.8&district=clearwaterbeach-center",
+      "render_url": "../explore_coast.html?view=clearwaterbeach&level=town&landing=1&cx=114.97532158970833&cy=441.809629356734&span=2.8&district=clearwaterbeach-center",
       "mobile_camera": {
         "position": [
-          114.8582207302606,
+          114.97532158970833,
           2.1874999999999996,
-          -439.93195294406513
+          -439.622129356734
         ],
         "target": [
-          114.8582207302606,
+          114.97532158970833,
           0,
-          -442.11945294406513
+          -441.809629356734
         ],
         "left": -0.7,
         "right": 0.7,
@@ -266,7 +316,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=clearwaterbeach&level=town&landing=1&cx=114.8582207302606&cy=442.11945294406513&span=1.4&district=clearwaterbeach-center"
+      "mobile_render_url": "../explore_coast.html?view=clearwaterbeach&level=town&landing=1&cx=114.97532158970833&cy=441.809629356734&span=1.4&district=clearwaterbeach-center",
+      "hero": {
+        "lon": -82.8288372,
+        "lat": 27.9772003,
+        "reason": "The landward entrance to Pier 60 centers Clearwater Beach’s Gulf sand and resort waterfront."
+      },
+      "callouts": [
+        {
+          "name": "Pier 60 beach entrance",
+          "type": "beach",
+          "lon": -82.8288372,
+          "lat": 27.9772003
+        }
+      ]
     },
     {
       "town_id": "gulfport",
@@ -274,10 +337,10 @@
       "desktop": "gulfport.webp",
       "mobile": "gulfport-m.webp",
       "center": {
-        "x": 127.88906252270131,
-        "y": 416.70633531808073,
-        "lon": -82.7,
-        "lat": 27.75000000000002
+        "x": 126.95377094961746,
+        "y": 415.2303165805355,
+        "lon": -82.70966358947369,
+        "lat": 27.73679792105263
       },
       "districts": [
         {
@@ -292,14 +355,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          127.88906252270131,
+          126.95377094961746,
           2.1874999999999996,
-          -414.51883531808073
+          -413.0428165805355
         ],
         "target": [
-          127.88906252270131,
+          126.95377094961746,
           0,
-          -416.70633531808073
+          -415.2303165805355
         ],
         "left": -1.4,
         "right": 1.4,
@@ -311,17 +374,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=gulfport&level=town&landing=1&cx=127.88906252270131&cy=416.70633531808073&span=2.8&district=gulfport-center",
+      "render_url": "../explore_coast.html?view=gulfport&level=town&landing=1&cx=126.95377094961746&cy=415.2303165805355&span=2.8&district=gulfport-center",
       "mobile_camera": {
         "position": [
-          127.88906252270131,
+          126.95377094961746,
           2.1874999999999996,
-          -414.51883531808073
+          -413.0428165805355
         ],
         "target": [
-          127.88906252270131,
+          126.95377094961746,
           0,
-          -416.70633531808073
+          -415.2303165805355
         ],
         "left": -0.7,
         "right": 0.7,
@@ -333,7 +396,26 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=gulfport&level=town&landing=1&cx=127.88906252270131&cy=416.70633531808073&span=1.4&district=gulfport-center"
+      "mobile_render_url": "../explore_coast.html?view=gulfport&level=town&landing=1&cx=126.95377094961746&cy=415.2303165805355&span=1.4&district=gulfport-center",
+      "hero": {
+        "lon": -82.70966358947369,
+        "lat": 27.73679792105263,
+        "reason": "The small-town waterfront and beach show Gulfport’s low-rise Boca Ciega Bay character."
+      },
+      "callouts": [
+        {
+          "name": "Gulfport Beach Park",
+          "type": "park",
+          "lon": -82.70966358947369,
+          "lat": 27.73679792105263
+        },
+        {
+          "name": "Gulfport History Museum",
+          "type": "landmark",
+          "lon": -82.70554881999999,
+          "lat": 27.74256336
+        }
+      ]
     },
     {
       "town_id": "ami",
@@ -341,10 +423,10 @@
       "desktop": "ami.webp",
       "mobile": "ami-m.webp",
       "center": {
-        "x": 125.18948851146489,
-        "y": 392.2459624241382,
-        "lon": -82.73,
-        "lat": 27.530000000000012
+        "x": 125.13016793495929,
+        "y": 392.74827897519083,
+        "lon": -82.73054928571428,
+        "lat": 27.53452871428571
       },
       "districts": [
         {
@@ -359,14 +441,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          125.18948851146489,
+          125.13016793495929,
           2.1874999999999996,
-          -390.0584624241382
+          -390.56077897519083
         ],
         "target": [
-          125.18948851146489,
+          125.13016793495929,
           0,
-          -392.2459624241382
+          -392.74827897519083
         ],
         "left": -1.4,
         "right": 1.4,
@@ -378,17 +460,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=ami&level=town&landing=1&cx=125.18948851146489&cy=392.2459624241382&span=2.8&district=ami-center",
+      "render_url": "../explore_coast.html?view=ami&level=town&landing=1&cx=125.13016793495929&cy=392.74827897519083&span=2.8&district=ami-center",
       "mobile_camera": {
         "position": [
-          125.18948851146489,
+          125.13016793495929,
           2.1874999999999996,
-          -390.0584624241382
+          -390.56077897519083
         ],
         "target": [
-          125.18948851146489,
+          125.13016793495929,
           0,
-          -392.2459624241382
+          -392.74827897519083
         ],
         "left": -0.7,
         "right": 0.7,
@@ -400,7 +482,26 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=ami&level=town&landing=1&cx=125.18948851146489&cy=392.2459624241382&span=1.4&district=ami-center"
+      "mobile_render_url": "../explore_coast.html?view=ami&level=town&landing=1&cx=125.13016793495929&cy=392.74827897519083&span=1.4&district=ami-center",
+      "hero": {
+        "lon": -82.73054928571428,
+        "lat": 27.53452871428571,
+        "reason": "Anna Maria’s historic pier anchors the bayfront end of Pine Avenue."
+      },
+      "callouts": [
+        {
+          "name": "City Pier",
+          "type": "landmark",
+          "lon": -82.73054928571428,
+          "lat": 27.53452871428571
+        },
+        {
+          "name": "Anna Maria Bayfront Park",
+          "type": "park",
+          "lon": -82.73429105999999,
+          "lat": 27.534403024000003
+        }
+      ]
     },
     {
       "town_id": "longboat",
@@ -408,10 +509,10 @@
       "desktop": "longboat.webp",
       "mobile": "longboat-m.webp",
       "center": {
-        "x": 132.23423062801888,
-        "y": 378.99431676359575,
-        "lon": -82.66,
-        "lat": 27.409999999999986
+        "x": 133.36442117705857,
+        "y": 377.8096942502279,
+        "lon": -82.64867963235295,
+        "lat": 27.39922148823529
       },
       "districts": [
         {
@@ -426,14 +527,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          132.23423062801888,
+          133.36442117705857,
           2.1874999999999996,
-          -376.80681676359575
+          -375.6221942502279
         ],
         "target": [
-          132.23423062801888,
+          133.36442117705857,
           0,
-          -378.99431676359575
+          -377.8096942502279
         ],
         "left": -1.4,
         "right": 1.4,
@@ -445,17 +546,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=longboat&level=town&landing=1&cx=132.23423062801888&cy=378.99431676359575&span=2.8&district=longboat-center",
+      "render_url": "../explore_coast.html?view=longboat&level=town&landing=1&cx=133.36442117705857&cy=377.8096942502279&span=2.8&district=longboat-center",
       "mobile_camera": {
         "position": [
-          132.23423062801888,
+          133.36442117705857,
           2.1874999999999996,
-          -376.80681676359575
+          -375.6221942502279
         ],
         "target": [
-          132.23423062801888,
+          133.36442117705857,
           0,
-          -378.99431676359575
+          -377.8096942502279
         ],
         "left": -0.7,
         "right": 0.7,
@@ -467,7 +568,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=longboat&level=town&landing=1&cx=132.23423062801888&cy=378.99431676359575&span=1.4&district=longboat-center"
+      "mobile_render_url": "../explore_coast.html?view=longboat&level=town&landing=1&cx=133.36442117705857&cy=377.8096942502279&span=1.4&district=longboat-center",
+      "hero": {
+        "lon": -82.64867963235295,
+        "lat": 27.39922148823529,
+        "reason": "This mid-island Gulf-front anchor shows Longboat’s narrow beach, resort strip and residential island fabric."
+      },
+      "callouts": [
+        {
+          "name": "Zota Beach Resort",
+          "type": "landmark",
+          "lon": -82.64867963235295,
+          "lat": 27.39922148823529
+        }
+      ]
     },
     {
       "town_id": "apollo-beach",
@@ -475,10 +589,10 @@
       "desktop": "apollo-beach.webp",
       "mobile": "apollo-beach-m.webp",
       "center": {
-        "x": 156.57905627266078,
-        "y": 419.7082048725144,
-        "lon": -82.408,
-        "lat": 27.774000000000004
+        "x": 155.6928547200065,
+        "y": 421.6719725696378,
+        "lon": -82.4167530256757,
+        "lat": 27.79178451351351
       },
       "districts": [
         {
@@ -493,14 +607,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          156.57905627266078,
+          155.6928547200065,
           2.1874999999999996,
-          -417.5207048725144
+          -419.4844725696378
         ],
         "target": [
-          156.57905627266078,
+          155.6928547200065,
           0,
-          -419.7082048725144
+          -421.6719725696378
         ],
         "left": -1.4,
         "right": 1.4,
@@ -512,17 +626,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=apollo-beach&level=town&landing=1&cx=156.57905627266078&cy=419.7082048725144&span=2.8&district=apollo-beach",
+      "render_url": "../explore_coast.html?view=apollo-beach&level=town&landing=1&cx=155.6928547200065&cy=421.6719725696378&span=2.8&district=apollo-beach",
       "mobile_camera": {
         "position": [
-          156.57905627266078,
+          155.6928547200065,
           2.1874999999999996,
-          -417.5207048725144
+          -419.4844725696378
         ],
         "target": [
-          156.57905627266078,
+          155.6928547200065,
           0,
-          -419.7082048725144
+          -421.6719725696378
         ],
         "left": -0.7,
         "right": 0.7,
@@ -534,7 +648,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=apollo-beach&level=town&landing=1&cx=156.57905627266078&cy=419.7082048725144&span=1.4&district=apollo-beach"
+      "mobile_render_url": "../explore_coast.html?view=apollo-beach&level=town&landing=1&cx=155.6928547200065&cy=421.6719725696378&span=1.4&district=apollo-beach",
+      "hero": {
+        "lon": -82.4167530256757,
+        "lat": 27.79178451351351,
+        "reason": "The bayfront nature park frames Apollo Beach’s water-oriented residential shoreline."
+      },
+      "callouts": [
+        {
+          "name": "Apollo Beach Nature Park",
+          "type": "park",
+          "lon": -82.4167530256757,
+          "lat": 27.79178451351351
+        }
+      ]
     },
     {
       "town_id": "clearwater",
@@ -542,10 +669,10 @@
       "desktop": "clearwater.webp",
       "mobile": "clearwater-m.webp",
       "center": {
-        "x": 117.81834109858865,
-        "y": 440.59305576768026,
-        "lon": -82.8,
-        "lat": 27.966
+        "x": 117.52061525388183,
+        "y": 440.7010997305708,
+        "lon": -82.80302151666667,
+        "lat": 27.966998895555562
       },
       "districts": [
         {
@@ -560,14 +687,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          117.81834109858865,
+          117.52061525388183,
           2.1874999999999996,
-          -438.40555576768026
+          -438.5135997305708
         ],
         "target": [
-          117.81834109858865,
+          117.52061525388183,
           0,
-          -440.59305576768026
+          -440.7010997305708
         ],
         "left": -1.4,
         "right": 1.4,
@@ -579,17 +706,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=clearwater&level=town&landing=1&cx=117.81834109858865&cy=440.59305576768026&span=2.8&district=clearwater-center",
+      "render_url": "../explore_coast.html?view=clearwater&level=town&landing=1&cx=117.52061525388183&cy=440.7010997305708&span=2.8&district=clearwater-center",
       "mobile_camera": {
         "position": [
-          117.81834109858865,
+          117.52061525388183,
           2.1874999999999996,
-          -438.40555576768026
+          -438.5135997305708
         ],
         "target": [
-          117.81834109858865,
+          117.52061525388183,
           0,
-          -440.59305576768026
+          -440.7010997305708
         ],
         "left": -0.7,
         "right": 0.7,
@@ -601,7 +728,26 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=clearwater&level=town&landing=1&cx=117.81834109858865&cy=440.59305576768026&span=1.4&district=clearwater-center"
+      "mobile_render_url": "../explore_coast.html?view=clearwater&level=town&landing=1&cx=117.52061525388183&cy=440.7010997305708&span=1.4&district=clearwater-center",
+      "hero": {
+        "lon": -82.80302151666667,
+        "lat": 27.966998895555562,
+        "reason": "Coachman Park connects downtown Clearwater to its harbor waterfront."
+      },
+      "callouts": [
+        {
+          "name": "Coachman Park",
+          "type": "park",
+          "lon": -82.80302151666667,
+          "lat": 27.966998895555562
+        },
+        {
+          "name": "Clearwater Post Office",
+          "type": "landmark",
+          "lon": -82.79720015333334,
+          "lat": 27.965974586666665
+        }
+      ]
     },
     {
       "town_id": "indian-rocks-beach",
@@ -609,10 +755,10 @@
       "desktop": "indian-rocks-beach.webp",
       "mobile": "indian-rocks-beach-m.webp",
       "center": {
-        "x": 113.18563134322272,
-        "y": 431.9972818008752,
-        "lon": -82.848,
-        "lat": 27.88900000000001
+        "x": 113.30330435526676,
+        "y": 433.0128058941069,
+        "lon": -82.84670573333334,
+        "lat": 27.898134099999996
       },
       "districts": [
         {
@@ -627,14 +773,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          113.18563134322272,
+          113.30330435526676,
           2.1874999999999996,
-          -429.8097818008752
+          -430.8253058941069
         ],
         "target": [
-          113.18563134322272,
+          113.30330435526676,
           0,
-          -431.9972818008752
+          -433.0128058941069
         ],
         "left": -1.4,
         "right": 1.4,
@@ -646,17 +792,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=indian-rocks-beach&level=town&landing=1&cx=113.18563134322272&cy=431.9972818008752&span=2.8&district=indian-rocks-beach-center",
+      "render_url": "../explore_coast.html?view=indian-rocks-beach&level=town&landing=1&cx=113.30330435526676&cy=433.0128058941069&span=2.8&district=indian-rocks-beach-center",
       "mobile_camera": {
         "position": [
-          113.18563134322272,
+          113.30330435526676,
           2.1874999999999996,
-          -429.8097818008752
+          -430.8253058941069
         ],
         "target": [
-          113.18563134322272,
+          113.30330435526676,
           0,
-          -431.9972818008752
+          -433.0128058941069
         ],
         "left": -0.7,
         "right": 0.7,
@@ -668,7 +814,26 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=indian-rocks-beach&level=town&landing=1&cx=113.18563134322272&cy=431.9972818008752&span=1.4&district=indian-rocks-beach-center"
+      "mobile_render_url": "../explore_coast.html?view=indian-rocks-beach&level=town&landing=1&cx=113.30330435526676&cy=433.0128058941069&span=1.4&district=indian-rocks-beach-center",
+      "hero": {
+        "lon": -82.84670573333334,
+        "lat": 27.898134099999996,
+        "reason": "The civic beach-town center keeps the Gulf edge and low-rise neighborhood together."
+      },
+      "callouts": [
+        {
+          "name": "Kolb Park",
+          "type": "park",
+          "lon": -82.84670573333334,
+          "lat": 27.898134099999996
+        },
+        {
+          "name": "Indian Rocks Beach Nature Preserve",
+          "type": "park",
+          "lon": -82.84583125,
+          "lat": 27.89297631666667
+        }
+      ]
     },
     {
       "town_id": "madeira-beach",
@@ -676,10 +841,10 @@
       "desktop": "madeira-beach.webp",
       "mobile": "madeira-beach-m.webp",
       "center": {
-        "x": 118.19547204955511,
-        "y": 422.0498357186228,
-        "lon": -82.798,
-        "lat": 27.799000000000003
+        "x": 119.7589943445045,
+        "y": 420.47239472564655,
+        "lon": -82.78225905000001,
+        "lat": 27.784658105555557
       },
       "districts": [
         {
@@ -694,14 +859,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          118.19547204955511,
+          119.7589943445045,
           2.1874999999999996,
-          -419.8623357186228
+          -418.28489472564655
         ],
         "target": [
-          118.19547204955511,
+          119.7589943445045,
           0,
-          -422.0498357186228
+          -420.47239472564655
         ],
         "left": -1.4,
         "right": 1.4,
@@ -713,17 +878,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=madeira-beach&level=town&landing=1&cx=118.19547204955511&cy=422.0498357186228&span=2.8&district=madeira-beach-center",
+      "render_url": "../explore_coast.html?view=madeira-beach&level=town&landing=1&cx=119.7589943445045&cy=420.47239472564655&span=2.8&district=madeira-beach-center",
       "mobile_camera": {
         "position": [
-          118.19547204955511,
+          119.7589943445045,
           2.1874999999999996,
-          -419.8623357186228
+          -418.28489472564655
         ],
         "target": [
-          118.19547204955511,
+          119.7589943445045,
           0,
-          -422.0498357186228
+          -420.47239472564655
         ],
         "left": -0.7,
         "right": 0.7,
@@ -735,7 +900,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=madeira-beach&level=town&landing=1&cx=118.19547204955511&cy=422.0498357186228&span=1.4&district=madeira-beach-center"
+      "mobile_render_url": "../explore_coast.html?view=madeira-beach&level=town&landing=1&cx=119.7589943445045&cy=420.47239472564655&span=1.4&district=madeira-beach-center",
+      "hero": {
+        "lon": -82.78225905000001,
+        "lat": 27.784658105555557,
+        "reason": "John’s Pass working marina and inlet define Madeira Beach’s boating waterfront."
+      },
+      "callouts": [
+        {
+          "name": "Hubbards Marina",
+          "type": "boating",
+          "lon": -82.78225905000001,
+          "lat": 27.784658105555557
+        }
+      ]
     },
     {
       "town_id": "new-port-richey",
@@ -743,10 +921,10 @@
       "desktop": "new-port-richey.webp",
       "mobile": "new-port-richey-m.webp",
       "center": {
-        "x": 125.45009041204979,
-        "y": 471.5450030796562,
-        "lon": -82.719,
-        "lat": 28.244000000000018
+        "x": 125.22170561625978,
+        "y": 472.37876484928506,
+        "lon": -82.72124363958334,
+        "lat": 28.251528462500005
       },
       "districts": [
         {
@@ -761,14 +939,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          125.45009041204979,
+          125.22170561625978,
           2.1874999999999996,
-          -469.3575030796562
+          -470.19126484928506
         ],
         "target": [
-          125.45009041204979,
+          125.22170561625978,
           0,
-          -471.5450030796562
+          -472.37876484928506
         ],
         "left": -1.4,
         "right": 1.4,
@@ -780,17 +958,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=new-port-richey&level=town&landing=1&cx=125.45009041204979&cy=471.5450030796562&span=2.8&district=new-port-richey-center",
+      "render_url": "../explore_coast.html?view=new-port-richey&level=town&landing=1&cx=125.22170561625978&cy=472.37876484928506&span=2.8&district=new-port-richey-center",
       "mobile_camera": {
         "position": [
-          125.45009041204979,
+          125.22170561625978,
           2.1874999999999996,
-          -469.3575030796562
+          -470.19126484928506
         ],
         "target": [
-          125.45009041204979,
+          125.22170561625978,
           0,
-          -471.5450030796562
+          -472.37876484928506
         ],
         "left": -0.7,
         "right": 0.7,
@@ -802,7 +980,32 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=new-port-richey&level=town&landing=1&cx=125.45009041204979&cy=471.5450030796562&span=1.4&district=new-port-richey-center"
+      "mobile_render_url": "../explore_coast.html?view=new-port-richey&level=town&landing=1&cx=125.22170561625978&cy=472.37876484928506&span=1.4&district=new-port-richey-center",
+      "hero": {
+        "lon": -82.72124363958334,
+        "lat": 28.251528462500005,
+        "reason": "Sims Park and the Pithlachascotee River anchor the historic downtown."
+      },
+      "callouts": [
+        {
+          "name": "Sims Park",
+          "type": "park",
+          "lon": -82.72124363958334,
+          "lat": 28.251528462500005
+        },
+        {
+          "name": "Hacienda Hotel",
+          "type": "landmark",
+          "lon": -82.72124703076923,
+          "lat": 28.250667446153845
+        },
+        {
+          "name": "West Pasco Historical Society",
+          "type": "landmark",
+          "lon": -82.72127241538462,
+          "lat": 28.251992169230775
+        }
+      ]
     },
     {
       "town_id": "ruskin",
@@ -810,10 +1013,10 @@
       "desktop": "ruskin.webp",
       "mobile": "ruskin-m.webp",
       "center": {
-        "x": 154.1951379597975,
-        "y": 413.7914381007037,
-        "lon": -82.433,
-        "lat": 27.721
+        "x": 153.04679451629025,
+        "y": 410.766389389732,
+        "lon": -82.44505636000001,
+        "lat": 27.693892920000003
       },
       "districts": [
         {
@@ -828,14 +1031,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          154.1951379597975,
+          153.04679451629025,
           2.1874999999999996,
-          -411.6039381007037
+          -408.578889389732
         ],
         "target": [
-          154.1951379597975,
+          153.04679451629025,
           0,
-          -413.7914381007037
+          -410.766389389732
         ],
         "left": -1.4,
         "right": 1.4,
@@ -847,17 +1050,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=ruskin&level=town&landing=1&cx=154.1951379597975&cy=413.7914381007037&span=2.8&district=ruskin",
+      "render_url": "../explore_coast.html?view=ruskin&level=town&landing=1&cx=153.04679451629025&cy=410.766389389732&span=2.8&district=ruskin",
       "mobile_camera": {
         "position": [
-          154.1951379597975,
+          153.04679451629025,
           2.1874999999999996,
-          -411.6039381007037
+          -408.578889389732
         ],
         "target": [
-          154.1951379597975,
+          153.04679451629025,
           0,
-          -413.7914381007037
+          -410.766389389732
         ],
         "left": -0.7,
         "right": 0.7,
@@ -869,7 +1072,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=ruskin&level=town&landing=1&cx=154.1951379597975&cy=413.7914381007037&span=1.4&district=ruskin"
+      "mobile_render_url": "../explore_coast.html?view=ruskin&level=town&landing=1&cx=153.04679451629025&cy=410.766389389732&span=1.4&district=ruskin",
+      "hero": {
+        "lon": -82.44505636000001,
+        "lat": 27.693892920000003,
+        "reason": "Domino Park’s boat ramp opens onto Mill Bayou and the Little Manatee River, expressing Ruskin’s boating character."
+      },
+      "callouts": [
+        {
+          "name": "Domino Park",
+          "type": "boating",
+          "lon": -82.44505636000001,
+          "lat": 27.693892920000003
+        }
+      ]
     },
     {
       "town_id": "safety-harbor",
@@ -877,10 +1093,10 @@
       "desktop": "safety-harbor.webp",
       "mobile": "safety-harbor-m.webp",
       "center": {
-        "x": 128.27988194651235,
-        "y": 444.80865781935324,
-        "lon": -82.693,
-        "lat": 28.003000000000004
+        "x": 129.05307990615043,
+        "y": 443.5011754333687,
+        "lon": -82.68526476842104,
+        "lat": 27.991153408771932
       },
       "districts": [
         {
@@ -895,14 +1111,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          128.27988194651235,
+          129.05307990615043,
           2.1874999999999996,
-          -442.62115781935324
+          -441.3136754333687
         ],
         "target": [
-          128.27988194651235,
+          129.05307990615043,
           0,
-          -444.80865781935324
+          -443.5011754333687
         ],
         "left": -1.4,
         "right": 1.4,
@@ -914,17 +1130,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=safety-harbor&level=town&landing=1&cx=128.27988194651235&cy=444.80865781935324&span=2.8&district=safety-harbor-center",
+      "render_url": "../explore_coast.html?view=safety-harbor&level=town&landing=1&cx=129.05307990615043&cy=443.5011754333687&span=2.8&district=safety-harbor-center",
       "mobile_camera": {
         "position": [
-          128.27988194651235,
+          129.05307990615043,
           2.1874999999999996,
-          -442.62115781935324
+          -441.3136754333687
         ],
         "target": [
-          128.27988194651235,
+          129.05307990615043,
           0,
-          -444.80865781935324
+          -443.5011754333687
         ],
         "left": -0.7,
         "right": 0.7,
@@ -936,7 +1152,38 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=safety-harbor&level=town&landing=1&cx=128.27988194651235&cy=444.80865781935324&span=1.4&district=safety-harbor-center"
+      "mobile_render_url": "../explore_coast.html?view=safety-harbor&level=town&landing=1&cx=129.05307990615043&cy=443.5011754333687&span=1.4&district=safety-harbor-center",
+      "hero": {
+        "lon": -82.68526476842104,
+        "lat": 27.991153408771932,
+        "reason": "The waterfront park and Main Street end bring the bay and compact downtown together."
+      },
+      "callouts": [
+        {
+          "name": "Safety Harbor Waterfront Park",
+          "type": "park",
+          "lon": -82.68526476842104,
+          "lat": 27.991153408771932
+        },
+        {
+          "name": "Safety Harbor Resort and Spa",
+          "type": "landmark",
+          "lon": -82.6871539361702,
+          "lat": 27.990855774468095
+        },
+        {
+          "name": "Safety Harbor Museum & Cultural Center",
+          "type": "landmark",
+          "lon": -82.69007142000001,
+          "lat": 27.989083700000002
+        },
+        {
+          "name": "John Wilson Park",
+          "type": "park",
+          "lon": -82.6914318375,
+          "lat": 27.9910348125
+        }
+      ]
     },
     {
       "town_id": "st-pete-beach",
@@ -944,10 +1191,10 @@
       "desktop": "st-pete-beach.webp",
       "mobile": "st-pete-beach-m.webp",
       "center": {
-        "x": 123.88412520086557,
-        "y": 413.88833816088925,
-        "lon": -82.741,
-        "lat": 27.724999999999998
+        "x": 124.25104700442442,
+        "y": 412.15004099561645,
+        "lon": -82.73745219999999,
+        "lat": 27.709313932692314
       },
       "districts": [
         {
@@ -962,14 +1209,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          123.88412520086557,
+          124.25104700442442,
           2.1874999999999996,
-          -411.70083816088925
+          -409.96254099561645
         ],
         "target": [
-          123.88412520086557,
+          124.25104700442442,
           0,
-          -413.88833816088925
+          -412.15004099561645
         ],
         "left": -1.4,
         "right": 1.4,
@@ -981,17 +1228,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=st-pete-beach&level=town&landing=1&cx=123.88412520086557&cy=413.88833816088925&span=2.8&district=st-pete-beach-center",
+      "render_url": "../explore_coast.html?view=st-pete-beach&level=town&landing=1&cx=124.25104700442442&cy=412.15004099561645&span=2.8&district=st-pete-beach-center",
       "mobile_camera": {
         "position": [
-          123.88412520086557,
+          124.25104700442442,
           2.1874999999999996,
-          -411.70083816088925
+          -409.96254099561645
         ],
         "target": [
-          123.88412520086557,
+          124.25104700442442,
           0,
-          -413.88833816088925
+          -412.15004099561645
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1003,7 +1250,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=st-pete-beach&level=town&landing=1&cx=123.88412520086557&cy=413.88833816088925&span=1.4&district=st-pete-beach-center"
+      "mobile_render_url": "../explore_coast.html?view=st-pete-beach&level=town&landing=1&cx=124.25104700442442&cy=412.15004099561645&span=1.4&district=st-pete-beach-center",
+      "hero": {
+        "lon": -82.73745219999999,
+        "lat": 27.709313932692314,
+        "reason": "The pink Don CeSar is the recognizable Gulf-front landmark of St. Pete Beach."
+      },
+      "callouts": [
+        {
+          "name": "The Don CeSar",
+          "type": "landmark",
+          "lon": -82.73745219999999,
+          "lat": 27.709313932692314
+        }
+      ]
     },
     {
       "town_id": "st-petersburg",
@@ -1011,10 +1271,10 @@
       "desktop": "st-petersburg.webp",
       "mobile": "st-petersburg-m.webp",
       "center": {
-        "x": 133.76935534186887,
-        "y": 418.76881238171075,
-        "lon": -82.64,
-        "lat": 27.768
+        "x": 134.5017064568625,
+        "y": 419.27300274044217,
+        "lon": -82.63249813333333,
+        "lat": 27.77246691111111
       },
       "districts": [
         {
@@ -1035,14 +1295,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          133.76935534186887,
+          134.5017064568625,
           2.1874999999999996,
-          -416.58131238171075
+          -417.08550274044217
         ],
         "target": [
-          133.76935534186887,
+          134.5017064568625,
           0,
-          -418.76881238171075
+          -419.27300274044217
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1054,17 +1314,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=st-petersburg&level=town&landing=1&cx=133.76935534186887&cy=418.76881238171075&span=2.8&district=dtsp",
+      "render_url": "../explore_coast.html?view=st-petersburg&level=town&landing=1&cx=134.5017064568625&cy=419.27300274044217&span=2.8&district=dtsp",
       "mobile_camera": {
         "position": [
-          133.76935534186887,
+          134.5017064568625,
           2.1874999999999996,
-          -416.58131238171075
+          -417.08550274044217
         ],
         "target": [
-          133.76935534186887,
+          134.5017064568625,
           0,
-          -418.76881238171075
+          -419.27300274044217
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1076,7 +1336,38 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=st-petersburg&level=town&landing=1&cx=133.76935534186887&cy=418.76881238171075&span=1.4&district=dtsp"
+      "mobile_render_url": "../explore_coast.html?view=st-petersburg&level=town&landing=1&cx=134.5017064568625&cy=419.27300274044217&span=1.4&district=dtsp",
+      "hero": {
+        "lon": -82.63249813333333,
+        "lat": 27.77246691111111,
+        "reason": "The downtown waterfront park frames the skyline, marina basin and approach to the Pier."
+      },
+      "callouts": [
+        {
+          "name": "South Straub Park",
+          "type": "park",
+          "lon": -82.63249813333333,
+          "lat": 27.77246691111111
+        },
+        {
+          "name": "Saint Pete Pier District",
+          "type": "park",
+          "lon": -82.62880281308415,
+          "lat": 27.773985379439242
+        },
+        {
+          "name": "Museum of Fine Arts",
+          "type": "landmark",
+          "lon": -82.63192598809522,
+          "lat": 27.77430312619049
+        },
+        {
+          "name": "North Straub Park",
+          "type": "park",
+          "lon": -82.63126621333332,
+          "lat": 27.776405846666663
+        }
+      ]
     },
     {
       "town_id": "sun-city-center",
@@ -1084,10 +1375,10 @@
       "desktop": "sun-city-center.webp",
       "mobile": "sun-city-center-m.webp",
       "center": {
-        "x": 162.16964815741423,
-        "y": 413.56221571468006,
-        "lon": -82.352,
-        "lat": 27.717999999999996
+        "x": 162.225478598969,
+        "y": 413.32865117771325,
+        "lon": -82.35146443636364,
+        "lat": 27.715890254545457
       },
       "districts": [
         {
@@ -1102,14 +1393,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          162.16964815741423,
+          162.225478598969,
           2.1874999999999996,
-          -411.37471571468006
+          -411.14115117771325
         ],
         "target": [
-          162.16964815741423,
+          162.225478598969,
           0,
-          -413.56221571468006
+          -413.32865117771325
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1121,17 +1412,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=sun-city-center&level=town&landing=1&cx=162.16964815741423&cy=413.56221571468006&span=2.8&district=sun-city-center",
+      "render_url": "../explore_coast.html?view=sun-city-center&level=town&landing=1&cx=162.225478598969&cy=413.32865117771325&span=2.8&district=sun-city-center",
       "mobile_camera": {
         "position": [
-          162.16964815741423,
+          162.225478598969,
           2.1874999999999996,
-          -411.37471571468006
+          -411.14115117771325
         ],
         "target": [
-          162.16964815741423,
+          162.225478598969,
           0,
-          -413.56221571468006
+          -413.32865117771325
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1143,7 +1434,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=sun-city-center&level=town&landing=1&cx=162.16964815741423&cy=413.56221571468006&span=1.4&district=sun-city-center"
+      "mobile_render_url": "../explore_coast.html?view=sun-city-center&level=town&landing=1&cx=162.225478598969&cy=413.32865117771325&span=1.4&district=sun-city-center",
+      "hero": {
+        "lon": -82.35146443636364,
+        "lat": 27.715890254545457,
+        "reason": "The central recreation campus represents this inland retirement community; there is no coastal waterfront here."
+      },
+      "callouts": [
+        {
+          "name": "Sun City Center Arts and Crafts Hall",
+          "type": "landmark",
+          "lon": -82.35146443636364,
+          "lat": 27.715890254545457
+        }
+      ]
     },
     {
       "town_id": "tampa",
@@ -1151,10 +1455,10 @@
       "desktop": "tampa.webp",
       "mobile": "tampa-m.webp",
       "center": {
-        "x": 151.51403151441085,
-        "y": 439.30190785711875,
-        "lon": -82.457,
-        "lat": 27.950999999999997
+        "x": 151.01290613592246,
+        "y": 439.095043026871,
+        "lon": -82.46212913972602,
+        "lat": 27.94919378630136
       },
       "districts": [
         {
@@ -1199,14 +1503,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          151.51403151441085,
+          151.01290613592246,
           2.1874999999999996,
-          -437.11440785711875
+          -436.907543026871
         ],
         "target": [
-          151.51403151441085,
+          151.01290613592246,
           0,
-          -439.30190785711875
+          -439.095043026871
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1218,17 +1522,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=tampa&level=town&landing=1&cx=151.51403151441085&cy=439.30190785711875&span=2.8&district=downtown-tampa",
+      "render_url": "../explore_coast.html?view=tampa&level=town&landing=1&cx=151.01290613592246&cy=439.095043026871&span=2.8&district=downtown-tampa",
       "mobile_camera": {
         "position": [
-          151.51403151441085,
+          151.01290613592246,
           2.1874999999999996,
-          -437.11440785711875
+          -436.907543026871
         ],
         "target": [
-          151.51403151441085,
+          151.01290613592246,
           0,
-          -439.30190785711875
+          -439.095043026871
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1240,7 +1544,38 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=tampa&level=town&landing=1&cx=151.51403151441085&cy=439.30190785711875&span=1.4&district=downtown-tampa"
+      "mobile_render_url": "../explore_coast.html?view=tampa&level=town&landing=1&cx=151.01290613592246&cy=439.095043026871&span=1.4&district=downtown-tampa",
+      "hero": {
+        "lon": -82.46212913972602,
+        "lat": 27.94919378630136,
+        "reason": "The Riverwalk bend places downtown Tampa and the Hillsborough River at the heart of the image."
+      },
+      "callouts": [
+        {
+          "name": "Curtis Hixon Waterfront Park",
+          "type": "park",
+          "lon": -82.46212913972602,
+          "lat": 27.94919378630136
+        },
+        {
+          "name": "Plant Park",
+          "type": "park",
+          "lon": -82.46344825609758,
+          "lat": 27.94629318780488
+        },
+        {
+          "name": "Kiley Gardens",
+          "type": "park",
+          "lon": -82.4606775229508,
+          "lat": 27.947929673770492
+        },
+        {
+          "name": "MacDill Park on the Riverwalk",
+          "type": "park",
+          "lon": -82.45885274,
+          "lat": 27.945338014999997
+        }
+      ]
     },
     {
       "town_id": "tarpon-springs",
@@ -1248,10 +1583,10 @@
       "desktop": "tarpon-springs.webp",
       "mobile": "tarpon-springs-m.webp",
       "center": {
-        "x": 121.83852968781844,
-        "y": 460.6239155430581,
-        "lon": -82.75700000000002,
-        "lat": 28.14600000000002
+        "x": 121.48744781079378,
+        "y": 461.61183328472003,
+        "lon": -82.7604802,
+        "lat": 28.154927
       },
       "districts": [
         {
@@ -1266,14 +1601,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          121.83852968781844,
+          121.48744781079378,
           2.1874999999999996,
-          -458.4364155430581
+          -459.42433328472003
         ],
         "target": [
-          121.83852968781844,
+          121.48744781079378,
           0,
-          -460.6239155430581
+          -461.61183328472003
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1285,17 +1620,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=tarpon-springs&level=town&landing=1&cx=121.83852968781844&cy=460.6239155430581&span=2.8&district=tarpon-springs-center",
+      "render_url": "../explore_coast.html?view=tarpon-springs&level=town&landing=1&cx=121.48744781079378&cy=461.61183328472003&span=2.8&district=tarpon-springs-center",
       "mobile_camera": {
         "position": [
-          121.83852968781844,
+          121.48744781079378,
           2.1874999999999996,
-          -458.4364155430581
+          -459.42433328472003
         ],
         "target": [
-          121.83852968781844,
+          121.48744781079378,
           0,
-          -460.6239155430581
+          -461.61183328472003
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1307,7 +1642,26 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=tarpon-springs&level=town&landing=1&cx=121.83852968781844&cy=460.6239155430581&span=1.4&district=tarpon-springs-center"
+      "mobile_render_url": "../explore_coast.html?view=tarpon-springs&level=town&landing=1&cx=121.48744781079378&cy=461.61183328472003&span=1.4&district=tarpon-springs-center",
+      "hero": {
+        "lon": -82.7604802,
+        "lat": 28.154927,
+        "reason": "The sponge docks and Anclote River show Tarpon Springs’ distinctive working waterfront."
+      },
+      "callouts": [
+        {
+          "name": "Historic Sponge Docks",
+          "type": "landmark",
+          "lon": -82.7604802,
+          "lat": 28.154927
+        },
+        {
+          "name": "Spongeorama Sponge Factory",
+          "type": "landmark",
+          "lon": -82.75881280000002,
+          "lat": 28.15585504
+        }
+      ]
     },
     {
       "town_id": "treasure-island",
@@ -1315,10 +1669,10 @@
       "desktop": "treasure-island.webp",
       "mobile": "treasure-island-m.webp",
       "center": {
-        "x": 121.07916496863993,
-        "y": 418.85760529837006,
-        "lon": -82.769,
-        "lat": 27.770000000000003
+        "x": 120.56636741542025,
+        "y": 418.9854330292268,
+        "lon": -82.7742003,
+        "lat": 27.771197
       },
       "districts": [
         {
@@ -1333,14 +1687,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          121.07916496863993,
+          120.56636741542025,
           2.1874999999999996,
-          -416.67010529837006
+          -416.7979330292268
         ],
         "target": [
-          121.07916496863993,
+          120.56636741542025,
           0,
-          -418.85760529837006
+          -418.9854330292268
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1352,17 +1706,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=treasure-island&level=town&landing=1&cx=121.07916496863993&cy=418.85760529837006&span=2.8&district=treasure-island-center",
+      "render_url": "../explore_coast.html?view=treasure-island&level=town&landing=1&cx=120.56636741542025&cy=418.9854330292268&span=2.8&district=treasure-island-center",
       "mobile_camera": {
         "position": [
-          121.07916496863993,
+          120.56636741542025,
           2.1874999999999996,
-          -416.67010529837006
+          -416.7979330292268
         ],
         "target": [
-          121.07916496863993,
+          120.56636741542025,
           0,
-          -418.85760529837006
+          -418.9854330292268
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1374,7 +1728,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=treasure-island&level=town&landing=1&cx=121.07916496863993&cy=418.85760529837006&span=1.4&district=treasure-island-center"
+      "mobile_render_url": "../explore_coast.html?view=treasure-island&level=town&landing=1&cx=120.56636741542025&cy=418.9854330292268&span=1.4&district=treasure-island-center",
+      "hero": {
+        "lon": -82.7742003,
+        "lat": 27.771197,
+        "reason": "The wide Gulf beachfront frames Treasure Island’s resort and residential strip."
+      },
+      "callouts": [
+        {
+          "name": "Treasure Island Beach",
+          "type": "park",
+          "lon": -82.7742003,
+          "lat": 27.771197
+        }
+      ]
     },
     {
       "town_id": "bradenton",
@@ -1382,10 +1749,10 @@
       "desktop": "bradenton.webp",
       "mobile": "bradenton-m.webp",
       "center": {
-        "x": 140.50765687438656,
-        "y": 388.9707044460102,
-        "lon": -82.575,
-        "lat": 27.498999999999995
+        "x": 141.31539722314756,
+        "y": 389.05458288215937,
+        "lon": -82.56679891127456,
+        "lat": 27.49967099999999
       },
       "districts": [
         {
@@ -1400,14 +1767,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          140.50765687438656,
+          141.31539722314756,
           2.1874999999999996,
-          -386.7832044460102
+          -386.86708288215937
         ],
         "target": [
-          140.50765687438656,
+          141.31539722314756,
           0,
-          -388.9707044460102
+          -389.05458288215937
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1419,17 +1786,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=bradenton&level=town&landing=1&cx=140.50765687438656&cy=388.9707044460102&span=2.8&district=bradenton-center",
+      "render_url": "../explore_coast.html?view=bradenton&level=town&landing=1&cx=141.31539722314756&cy=389.05458288215937&span=2.8&district=bradenton-center",
       "mobile_camera": {
         "position": [
-          140.50765687438656,
+          141.31539722314756,
           2.1874999999999996,
-          -386.7832044460102
+          -386.86708288215937
         ],
         "target": [
-          140.50765687438656,
+          141.31539722314756,
           0,
-          -388.9707044460102
+          -389.05458288215937
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1441,7 +1808,32 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=bradenton&level=town&landing=1&cx=140.50765687438656&cy=388.9707044460102&span=1.4&district=bradenton-center"
+      "mobile_render_url": "../explore_coast.html?view=bradenton&level=town&landing=1&cx=141.31539722314756&cy=389.05458288215937&span=1.4&district=bradenton-center",
+      "hero": {
+        "lon": -82.56679891127456,
+        "lat": 27.49967099999999,
+        "reason": "The Riverwalk puts the Manatee River and downtown Bradenton together."
+      },
+      "callouts": [
+        {
+          "name": "Bradenton Riverwalk",
+          "type": "park",
+          "lon": -82.56679891127456,
+          "lat": 27.49967099999999
+        },
+        {
+          "name": "The Bishop Museum of Science and Nature",
+          "type": "landmark",
+          "lon": -82.57154800506329,
+          "lat": 27.49813177468355
+        },
+        {
+          "name": "ArtCenter Manatee",
+          "type": "landmark",
+          "lon": -82.57075546666667,
+          "lat": 27.49762033333333
+        }
+      ]
     },
     {
       "town_id": "bradenton-beach",
@@ -1449,10 +1841,10 @@
       "desktop": "bradenton-beach.webp",
       "mobile": "bradenton-beach-m.webp",
       "center": {
-        "x": 128.31547564914402,
-        "y": 385.6154115920655,
-        "lon": -82.699,
-        "lat": 27.46999999999998
+        "x": 128.6198991401283,
+        "y": 385.1458693742731,
+        "lon": -82.695964,
+        "lat": 27.4657429
       },
       "districts": [
         {
@@ -1467,14 +1859,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          128.31547564914402,
+          128.6198991401283,
           2.1874999999999996,
-          -383.4279115920655
+          -382.9583693742731
         ],
         "target": [
-          128.31547564914402,
+          128.6198991401283,
           0,
-          -385.6154115920655
+          -385.1458693742731
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1486,17 +1878,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=bradenton-beach&level=town&landing=1&cx=128.31547564914402&cy=385.6154115920655&span=2.8&district=bradenton-beach-center",
+      "render_url": "../explore_coast.html?view=bradenton-beach&level=town&landing=1&cx=128.6198991401283&cy=385.1458693742731&span=2.8&district=bradenton-beach-center",
       "mobile_camera": {
         "position": [
-          128.31547564914402,
+          128.6198991401283,
           2.1874999999999996,
-          -383.4279115920655
+          -382.9583693742731
         ],
         "target": [
-          128.31547564914402,
+          128.6198991401283,
           0,
-          -385.6154115920655
+          -385.1458693742731
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1508,7 +1900,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=bradenton-beach&level=town&landing=1&cx=128.31547564914402&cy=385.6154115920655&span=1.4&district=bradenton-beach-center"
+      "mobile_render_url": "../explore_coast.html?view=bradenton-beach&level=town&landing=1&cx=128.6198991401283&cy=385.1458693742731&span=1.4&district=bradenton-beach-center",
+      "hero": {
+        "lon": -82.695964,
+        "lat": 27.4657429,
+        "reason": "The bayfront end of Bridge Street frames the old beach-town main street and pier approach."
+      },
+      "callouts": [
+        {
+          "name": "Bridge Street",
+          "type": "walkable",
+          "lon": -82.695964,
+          "lat": 27.4657429
+        }
+      ]
     },
     {
       "town_id": "cortez",
@@ -1516,10 +1921,10 @@
       "desktop": "cortez.webp",
       "mobile": "cortez-m.webp",
       "center": {
-        "x": 130.88329942601635,
-        "y": 385.30961932433064,
-        "lon": -82.673,
-        "lat": 27.466999999999995
+        "x": 129.66469492071693,
+        "y": 385.1814834717026,
+        "lon": -82.6853681,
+        "lat": 27.4659637
       },
       "districts": [
         {
@@ -1534,14 +1939,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          130.88329942601635,
+          129.66469492071693,
           2.1874999999999996,
-          -383.12211932433064
+          -382.9939834717026
         ],
         "target": [
-          130.88329942601635,
+          129.66469492071693,
           0,
-          -385.30961932433064
+          -385.1814834717026
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1553,17 +1958,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=cortez&level=town&landing=1&cx=130.88329942601635&cy=385.30961932433064&span=2.8&district=cortez-center",
+      "render_url": "../explore_coast.html?view=cortez&level=town&landing=1&cx=129.66469492071693&cy=385.1814834717026&span=2.8&district=cortez-center",
       "mobile_camera": {
         "position": [
-          130.88329942601635,
+          129.66469492071693,
           2.1874999999999996,
-          -383.12211932433064
+          -382.9939834717026
         ],
         "target": [
-          130.88329942601635,
+          129.66469492071693,
           0,
-          -385.30961932433064
+          -385.1814834717026
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1575,7 +1980,26 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=cortez&level=town&landing=1&cx=130.88329942601635&cy=385.30961932433064&span=1.4&district=cortez-center"
+      "mobile_render_url": "../explore_coast.html?view=cortez&level=town&landing=1&cx=129.66469492071693&cy=385.1814834717026&span=1.4&district=cortez-center",
+      "hero": {
+        "lon": -82.6853681,
+        "lat": 27.4659637,
+        "reason": "The fish-house waterfront on Sarasota Bay captures Cortez’s working fishing-village identity."
+      },
+      "callouts": [
+        {
+          "name": "Star Fish Company",
+          "type": "landmark",
+          "lon": -82.6853681,
+          "lat": 27.4659637
+        },
+        {
+          "name": "Florida Maritime Museum",
+          "type": "landmark",
+          "lon": -82.6806979923077,
+          "lat": 27.467745907692308
+        }
+      ]
     },
     {
       "town_id": "englewood",
@@ -1583,10 +2007,10 @@
       "desktop": "englewood.webp",
       "mobile": "englewood-m.webp",
       "center": {
-        "x": 163.19241959454374,
-        "y": 329.6215097848868,
-        "lon": -82.353,
-        "lat": 26.961999999999993
+        "x": 162.20557588146886,
+        "y": 329.0393149664095,
+        "lon": -82.36303642272726,
+        "lat": 26.956875097727277
       },
       "districts": [
         {
@@ -1601,14 +2025,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          163.19241959454374,
+          162.20557588146886,
           2.1874999999999996,
-          -327.4340097848868
+          -326.8518149664095
         ],
         "target": [
-          163.19241959454374,
+          162.20557588146886,
           0,
-          -329.6215097848868
+          -329.0393149664095
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1620,17 +2044,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=englewood&level=town&landing=1&cx=163.19241959454374&cy=329.6215097848868&span=2.8&district=englewood-center",
+      "render_url": "../explore_coast.html?view=englewood&level=town&landing=1&cx=162.20557588146886&cy=329.0393149664095&span=2.8&district=englewood-center",
       "mobile_camera": {
         "position": [
-          163.19241959454374,
+          162.20557588146886,
           2.1874999999999996,
-          -327.4340097848868
+          -326.8518149664095
         ],
         "target": [
-          163.19241959454374,
+          162.20557588146886,
           0,
-          -329.6215097848868
+          -329.0393149664095
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1642,7 +2066,26 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=englewood&level=town&landing=1&cx=163.19241959454374&cy=329.6215097848868&span=1.4&district=englewood-center"
+      "mobile_render_url": "../explore_coast.html?view=englewood&level=town&landing=1&cx=162.20557588146886&cy=329.0393149664095&span=1.4&district=englewood-center",
+      "hero": {
+        "lon": -82.36303642272726,
+        "lat": 26.956875097727277,
+        "reason": "The Lemon Bay waterfront and nearby Old Englewood blocks convey the town’s quiet boating character."
+      },
+      "callouts": [
+        {
+          "name": "Indian Mound Park",
+          "type": "park",
+          "lon": -82.36303642272726,
+          "lat": 26.956875097727277
+        },
+        {
+          "name": "Dearborn Street Park",
+          "type": "park",
+          "lon": -82.35998430000001,
+          "lat": 26.962757040000003
+        }
+      ]
     },
     {
       "town_id": "sarasota",
@@ -1650,10 +2093,10 @@
       "desktop": "sarasota.webp",
       "mobile": "sarasota-m.webp",
       "center": {
-        "x": 145.061552307255,
-        "y": 370.9227329848446,
-        "lon": -82.531,
-        "lat": 27.335999999999977
+        "x": 143.3482648377456,
+        "y": 370.87111582530054,
+        "lon": -82.54835455,
+        "lat": 27.3357179
       },
       "districts": [
         {
@@ -1668,14 +2111,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          145.061552307255,
+          143.3482648377456,
           2.1874999999999996,
-          -368.7352329848446
+          -368.68361582530054
         ],
         "target": [
-          145.061552307255,
+          143.3482648377456,
           0,
-          -370.9227329848446
+          -370.87111582530054
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1687,17 +2130,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=sarasota&level=town&landing=1&cx=145.061552307255&cy=370.9227329848446&span=2.8&district=sarasota-center",
+      "render_url": "../explore_coast.html?view=sarasota&level=town&landing=1&cx=143.3482648377456&cy=370.87111582530054&span=2.8&district=sarasota-center",
       "mobile_camera": {
         "position": [
-          145.061552307255,
+          143.3482648377456,
           2.1874999999999996,
-          -368.7352329848446
+          -368.68361582530054
         ],
         "target": [
-          145.061552307255,
+          143.3482648377456,
           0,
-          -370.9227329848446
+          -370.87111582530054
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1709,7 +2152,32 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=sarasota&level=town&landing=1&cx=145.061552307255&cy=370.9227329848446&span=1.4&district=sarasota-center"
+      "mobile_render_url": "../explore_coast.html?view=sarasota&level=town&landing=1&cx=143.3482648377456&cy=370.87111582530054&span=1.4&district=sarasota-center",
+      "hero": {
+        "lon": -82.54835455,
+        "lat": 27.3357179,
+        "reason": "The Ringling Causeway approach frames the bayfront marina, bridge and downtown Sarasota."
+      },
+      "callouts": [
+        {
+          "name": "John Ringling Boulevard",
+          "type": "walkable",
+          "lon": -82.54835455,
+          "lat": 27.3357179
+        },
+        {
+          "name": "Marina Plaza",
+          "type": "walkable",
+          "lon": -82.54561977692308,
+          "lat": 27.33341185384615
+        },
+        {
+          "name": "Ringling Bridge Causeway Park",
+          "type": "park",
+          "lon": -82.55314849999998,
+          "lat": 27.334856523076926
+        }
+      ]
     },
     {
       "town_id": "siesta-key",
@@ -1717,10 +2185,10 @@
       "desktop": "siesta-key.webp",
       "mobile": "siesta-key-m.webp",
       "center": {
-        "x": 142.98039170470418,
-        "y": 363.12475723000387,
-        "lon": -82.553,
-        "lat": 27.266
+        "x": 143.0583116676493,
+        "y": 363.2090360554255,
+        "lon": -82.55220148800001,
+        "lat": 27.266750711999993
       },
       "districts": [
         {
@@ -1735,14 +2203,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          142.98039170470418,
+          143.0583116676493,
           2.1874999999999996,
-          -360.93725723000387
+          -361.0215360554255
         ],
         "target": [
-          142.98039170470418,
+          143.0583116676493,
           0,
-          -363.12475723000387
+          -363.2090360554255
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1754,17 +2222,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=siesta-key&level=town&landing=1&cx=142.98039170470418&cy=363.12475723000387&span=2.8&district=siesta-key-center",
+      "render_url": "../explore_coast.html?view=siesta-key&level=town&landing=1&cx=143.0583116676493&cy=363.2090360554255&span=2.8&district=siesta-key-center",
       "mobile_camera": {
         "position": [
-          142.98039170470418,
+          143.0583116676493,
           2.1874999999999996,
-          -360.93725723000387
+          -361.0215360554255
         ],
         "target": [
-          142.98039170470418,
+          143.0583116676493,
           0,
-          -363.12475723000387
+          -363.2090360554255
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1776,7 +2244,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=siesta-key&level=town&landing=1&cx=142.98039170470418&cy=363.12475723000387&span=1.4&district=siesta-key-center"
+      "mobile_render_url": "../explore_coast.html?view=siesta-key&level=town&landing=1&cx=143.0583116676493&cy=363.2090360554255&span=1.4&district=siesta-key-center",
+      "hero": {
+        "lon": -82.55220148800001,
+        "lat": 27.266750711999993,
+        "reason": "The public beach park anchors Siesta Key’s broad white-sand Gulf frontage."
+      },
+      "callouts": [
+        {
+          "name": "Siesta Beach Park",
+          "type": "park",
+          "lon": -82.55220148800001,
+          "lat": 27.266750711999993
+        }
+      ]
     },
     {
       "town_id": "venice",
@@ -1784,10 +2265,10 @@
       "desktop": "venice.webp",
       "mobile": "venice-m.webp",
       "center": {
-        "x": 152.60166430066968,
-        "y": 344.47488293572377,
-        "lon": -82.458,
-        "lat": 27.096999999999998
+        "x": 152.42927355363904,
+        "y": 344.76473598086034,
+        "lon": -82.4597052,
+        "lat": 27.099629712499997
       },
       "districts": [
         {
@@ -1802,14 +2283,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          152.60166430066968,
+          152.42927355363904,
           2.1874999999999996,
-          -342.28738293572377
+          -342.57723598086034
         ],
         "target": [
-          152.60166430066968,
+          152.42927355363904,
           0,
-          -344.47488293572377
+          -344.76473598086034
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1821,17 +2302,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=venice&level=town&landing=1&cx=152.60166430066968&cy=344.47488293572377&span=2.8&district=venice-center",
+      "render_url": "../explore_coast.html?view=venice&level=town&landing=1&cx=152.42927355363904&cy=344.76473598086034&span=2.8&district=venice-center",
       "mobile_camera": {
         "position": [
-          152.60166430066968,
+          152.42927355363904,
           2.1874999999999996,
-          -342.28738293572377
+          -342.57723598086034
         ],
         "target": [
-          152.60166430066968,
+          152.42927355363904,
           0,
-          -344.47488293572377
+          -344.76473598086034
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1843,7 +2324,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=venice&level=town&landing=1&cx=152.60166430066968&cy=344.47488293572377&span=1.4&district=venice-center"
+      "mobile_render_url": "../explore_coast.html?view=venice&level=town&landing=1&cx=152.42927355363904&cy=344.76473598086034&span=1.4&district=venice-center",
+      "hero": {
+        "lon": -82.4597052,
+        "lat": 27.099629712499997,
+        "reason": "Venice Beach puts the Gulf and the town’s coastal neighborhood in the same frame."
+      },
+      "callouts": [
+        {
+          "name": "Venice Beach",
+          "type": "park",
+          "lon": -82.4597052,
+          "lat": 27.099629712499997
+        }
+      ]
     },
     {
       "town_id": "miami",
@@ -1851,10 +2345,10 @@
       "desktop": "miami.webp",
       "mobile": "miami-m.webp",
       "center": {
-        "x": 381.39901288730687,
-        "y": 201.19634774000806,
-        "lon": -80.1918,
-        "lat": 25.761700000000005
+        "x": 381.9260525560732,
+        "y": 202.8229280651679,
+        "lon": -80.18603879999999,
+        "lat": 25.776206457142855
       },
       "districts": [
         {
@@ -1905,14 +2399,14 @@
       "status": "existing approved/review-ready package; physical-phone speed not verified",
       "camera": {
         "position": [
-          381.39901288730687,
+          381.9260525560732,
           2.1874999999999996,
-          -199.00884774000806
+          -200.6354280651679
         ],
         "target": [
-          381.39901288730687,
+          381.9260525560732,
           0,
-          -201.19634774000806
+          -202.8229280651679
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1924,17 +2418,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=miami&level=town&landing=1&cx=381.39901288730687&cy=201.19634774000806&span=2.8&district=brickell",
+      "render_url": "../explore_coast.html?view=miami&level=town&landing=1&cx=381.9260525560732&cy=202.8229280651679&span=2.8&district=brickell",
       "mobile_camera": {
         "position": [
-          381.39901288730687,
+          381.9260525560732,
           2.1874999999999996,
-          -199.00884774000806
+          -200.6354280651679
         ],
         "target": [
-          381.39901288730687,
+          381.9260525560732,
           0,
-          -201.19634774000806
+          -202.8229280651679
         ],
         "left": -0.7,
         "right": 0.7,
@@ -1946,7 +2440,26 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=miami&level=town&landing=1&cx=381.39901288730687&cy=201.19634774000806&span=1.4&district=brickell"
+      "mobile_render_url": "../explore_coast.html?view=miami&level=town&landing=1&cx=381.9260525560732&cy=202.8229280651679&span=1.4&district=brickell",
+      "hero": {
+        "lon": -80.18603879999999,
+        "lat": 25.776206457142855,
+        "reason": "Bayfront Park frames Biscayne Bay beside Miami’s downtown skyline."
+      },
+      "callouts": [
+        {
+          "name": "FPL Solar Amphitheater at Bayfront Park",
+          "type": "landmark",
+          "lon": -80.18603879999999,
+          "lat": 25.776206457142855
+        },
+        {
+          "name": "Dan Paul Park",
+          "type": "park",
+          "lon": -80.1858914875,
+          "lat": 25.7811733375
+        }
+      ]
     },
     {
       "town_id": "southbeach",
@@ -1954,10 +2467,10 @@
       "desktop": "southbeach.webp",
       "mobile": "southbeach-m.webp",
       "center": {
-        "x": 387.48786777049804,
-        "y": 204.5274455921016,
-        "lon": -80.13,
-        "lat": 25.79
+        "x": 387.5553211373281,
+        "y": 203.37971562399522,
+        "lon": -80.12968640965909,
+        "lat": 25.779641738636368
       },
       "districts": [
         {
@@ -1972,14 +2485,14 @@
       "status": "Approved South Beach district in the Miami package",
       "camera": {
         "position": [
-          387.48786777049804,
+          387.5553211373281,
           2.1874999999999996,
-          -202.3399455921016
+          -201.19221562399522
         ],
         "target": [
-          387.48786777049804,
+          387.5553211373281,
           0,
-          -204.5274455921016
+          -203.37971562399522
         ],
         "left": -1.4,
         "right": 1.4,
@@ -1991,17 +2504,17 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=southbeach&level=town&landing=1&cx=387.48786777049804&cy=204.5274455921016&span=2.8&district=southbeach-district",
+      "render_url": "../explore_coast.html?view=southbeach&level=town&landing=1&cx=387.5553211373281&cy=203.37971562399522&span=2.8&district=southbeach-district",
       "mobile_camera": {
         "position": [
-          387.48786777049804,
+          387.5553211373281,
           2.1874999999999996,
-          -202.3399455921016
+          -201.19221562399522
         ],
         "target": [
-          387.48786777049804,
+          387.5553211373281,
           0,
-          -204.5274455921016
+          -203.37971562399522
         ],
         "left": -0.7,
         "right": 0.7,
@@ -2013,7 +2526,20 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "mobile_render_url": "../explore_coast.html?view=southbeach&level=town&landing=1&cx=387.48786777049804&cy=204.5274455921016&span=1.4&district=southbeach-district"
+      "mobile_render_url": "../explore_coast.html?view=southbeach&level=town&landing=1&cx=387.5553211373281&cy=203.37971562399522&span=1.4&district=southbeach-district",
+      "hero": {
+        "lon": -80.12968640965909,
+        "lat": 25.779641738636368,
+        "reason": "Ocean Drive and Lummus Park pair the Art Deco frontage with South Beach’s ocean edge."
+      },
+      "callouts": [
+        {
+          "name": "Lummus Park",
+          "type": "park",
+          "lon": -80.12968640965909,
+          "lat": 25.779641738636368
+        }
+      ]
     }
   ]
 }

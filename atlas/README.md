@@ -85,3 +85,11 @@ Buildings start at 3× real height; houses without OSM height use 1–2 real sto
 - **Dependencies/caches:** `node_modules`, virtual environments, Python packages, pickle caches, raw image tiles and logs are excluded. Install dependencies with the commands above.
 
 `.gitignore` excludes source downloads and caches. Gitignore cannot express a file-size threshold; `python pipeline/check_handoff.py` rejects any deliverable over 50,000,000 bytes and checks relative links, camera consistency, catalog IDs, image dimensions and the portable pipeline lock. No file in this handoff exceeds that threshold.
+
+## Landing hero framing (2026-10-18)
+
+The 28 existing town landing pairs are centered on individually chosen, sourced hero points. `landing/index.json` retains its original fields and adds `hero` and `callouts`. `landing/hero-sources.json` records the OSM feature links and projected callout positions. `landing/review.html` shows the images and one-line reasons. Coordinates are WGS84; camera coordinates remain atlas kilometers. Every callout is inside both crops with a 3% edge margin. These are geographic points, not new geometry or visible labels baked into the images.
+
+Desktop is 1600×1000; phone is the central 800×1000 crop at the same camera position, tilt and vertical span. Existing spans are unchanged (30A 1.4 km, other towns 2.8 km). `python pipeline/check_landings.py` validates image dimensions, camera/hero alignment and projected callout visibility; results are in `landing/validation.json`.
+
+Exceptions: Sun City Center has an inland recreation-campus hero, not a coastal waterfront. Ruskin uses the county's Domino Park boat-ramp location; the frame exposes sparse detail toward the southern edge of the existing approved package. No geometry was extended to hide that limitation. The other hero choices and reasons are in the manifest. Source positions identify the mapped feature, not an independent survey measurement.

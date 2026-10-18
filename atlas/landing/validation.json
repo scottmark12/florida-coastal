@@ -1,0 +1,426 @@
+{
+  "town_count": 28,
+  "callout_count": 55,
+  "towns": [
+    {
+      "town_id": "30a",
+      "callouts": 3,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 1.4,
+      "checks": "passed"
+    },
+    {
+      "town_id": "dunedin",
+      "callouts": 3,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "clearwaterbeach",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "gulfport",
+      "callouts": 2,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ami",
+      "callouts": 2,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "longboat",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "apollo-beach",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "clearwater",
+      "callouts": 2,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "indian-rocks-beach",
+      "callouts": 2,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "madeira-beach",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "new-port-richey",
+      "callouts": 3,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ruskin",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "safety-harbor",
+      "callouts": 4,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-pete-beach",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-petersburg",
+      "callouts": 4,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sun-city-center",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "tampa",
+      "callouts": 4,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "tarpon-springs",
+      "callouts": 2,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "treasure-island",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "bradenton",
+      "callouts": 3,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "bradenton-beach",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cortez",
+      "callouts": 2,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "englewood",
+      "callouts": 2,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sarasota",
+      "callouts": 3,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "siesta-key",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "venice",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "miami",
+      "callouts": 2,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "southbeach",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    }
+  ]
+}

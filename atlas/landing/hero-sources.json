@@ -1,0 +1,947 @@
+{
+  "attribution": "\u00a9 OpenStreetMap contributors, ODbL 1.0",
+  "coordinate_reference": "WGS84 lon/lat",
+  "frame_check": "Both desktop and phone ground-plane frames, minimum 3% inset; visual review follows export.",
+  "towns": [
+    {
+      "town_id": "30a",
+      "hero_name": "Central Square",
+      "hero_source": "https://www.openstreetmap.org/way/11373129",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Central Square",
+          "source": "https://www.openstreetmap.org/way/11373129",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Seaside Post Office",
+          "source": "https://www.openstreetmap.org/way/178904592",
+          "mobile_uv": [
+            0.5827356018349487,
+            0.49341444811147483
+          ],
+          "desktop_uv": [
+            0.5413678009174744,
+            0.49341444811147483
+          ],
+          "included": true
+        },
+        {
+          "name": "Seaside Interfaith Chapel",
+          "source": "https://www.openstreetmap.org/way/388644461",
+          "mobile_uv": [
+            0.6407638409499766,
+            0.3009526976909669
+          ],
+          "desktop_uv": [
+            0.5703819204749883,
+            0.3009526976909669
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "dunedin",
+      "hero_name": "Municipal Marina",
+      "hero_source": "https://www.openstreetmap.org/way/523224923",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Municipal Marina",
+          "source": "https://www.openstreetmap.org/way/523224923",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Edgewater Park",
+          "source": "https://www.openstreetmap.org/way/31791428",
+          "mobile_uv": [
+            0.5281718588079879,
+            0.5291178538623352
+          ],
+          "desktop_uv": [
+            0.514085929403994,
+            0.5291178538623352
+          ],
+          "included": true
+        },
+        {
+          "name": "Pioneer Park",
+          "source": "https://www.openstreetmap.org/way/129702898",
+          "mobile_uv": [
+            0.8228221157593023,
+            0.5205950218190898
+          ],
+          "desktop_uv": [
+            0.6614110578796512,
+            0.5205950218190898
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "clearwaterbeach",
+      "hero_name": "Pier 60 beach entrance",
+      "hero_source": "https://www.openstreetmap.org/way/11250192",
+      "coordinate_method": "Mapped OSM feature: landward pier endpoint for Pier 60; park representative point for Domino Park.",
+      "points": [
+        {
+          "name": "Pier 60 beach entrance",
+          "source": "https://www.openstreetmap.org/way/11250192",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "gulfport",
+      "hero_name": "Gulfport Beach Park",
+      "hero_source": "https://www.openstreetmap.org/way/765453067",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Gulfport Beach Park",
+          "source": "https://www.openstreetmap.org/way/765453067",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Gulfport History Museum",
+          "source": "https://www.openstreetmap.org/way/522742306",
+          "mobile_uv": [
+            0.7843634090336573,
+            0.23959501390613996
+          ],
+          "desktop_uv": [
+            0.6421817045168287,
+            0.23959501390613996
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "ami",
+      "hero_name": "City Pier",
+      "hero_source": "https://www.openstreetmap.org/way/508405202",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "City Pier",
+          "source": "https://www.openstreetmap.org/way/508405202",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Anna Maria Bayfront Park",
+          "source": "https://www.openstreetmap.org/way/343946609",
+          "mobile_uv": [
+            0.23666309099955235,
+            0.5071713116483272
+          ],
+          "desktop_uv": [
+            0.3683315454997762,
+            0.5071713116483272
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "longboat",
+      "hero_name": "Zota Beach Resort",
+      "hero_source": "https://www.openstreetmap.org/way/449763136",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Zota Beach Resort",
+          "source": "https://www.openstreetmap.org/way/449763136",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "apollo-beach",
+      "hero_name": "Apollo Beach Nature Park",
+      "hero_source": "https://www.openstreetmap.org/way/95463405",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Apollo Beach Nature Park",
+          "source": "https://www.openstreetmap.org/way/95463405",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "clearwater",
+      "hero_name": "Coachman Park",
+      "hero_source": "https://www.openstreetmap.org/way/31824123",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Coachman Park",
+          "source": "https://www.openstreetmap.org/way/31824123",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Clearwater Post Office",
+          "source": "https://www.openstreetmap.org/way/525785846",
+          "mobile_uv": [
+            0.9090279092331681,
+            0.5437145247668381
+          ],
+          "desktop_uv": [
+            0.7045139546165841,
+            0.5437145247668381
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "indian-rocks-beach",
+      "hero_name": "Kolb Park",
+      "hero_source": "https://www.openstreetmap.org/way/227121358",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Kolb Park",
+          "source": "https://www.openstreetmap.org/way/227121358",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Indian Rocks Beach Nature Preserve",
+          "source": "https://www.openstreetmap.org/way/469846735",
+          "mobile_uv": [
+            0.5651932408976259,
+            0.731108585077203
+          ],
+          "desktop_uv": [
+            0.532596620448813,
+            0.731108585077203
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "madeira-beach",
+      "hero_name": "Hubbards Marina",
+      "hero_source": "https://www.openstreetmap.org/way/231594757",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Hubbards Marina",
+          "source": "https://www.openstreetmap.org/way/231594757",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "new-port-richey",
+      "hero_name": "Sims Park",
+      "hero_source": "https://www.openstreetmap.org/way/476006475",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Sims Park",
+          "source": "https://www.openstreetmap.org/way/476006475",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Hacienda Hotel",
+          "source": "https://www.openstreetmap.org/way/775581991",
+          "mobile_uv": [
+            0.5004710695404546,
+            0.5386363377783793
+          ],
+          "desktop_uv": [
+            0.5002355347702273,
+            0.5386363377783793
+          ],
+          "included": true
+        },
+        {
+          "name": "West Pasco Historical Society",
+          "source": "https://www.openstreetmap.org/way/546691751",
+          "mobile_uv": [
+            0.49760588396748673,
+            0.47920467013198326
+          ],
+          "desktop_uv": [
+            0.49880294198374336,
+            0.47920467013198326
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "ruskin",
+      "hero_name": "Domino Park",
+      "hero_source": "https://www.openstreetmap.org/way/89534973",
+      "coordinate_method": "Mapped OSM feature: landward pier endpoint for Pier 60; park representative point for Domino Park.",
+      "points": [
+        {
+          "name": "Domino Park",
+          "source": "https://www.openstreetmap.org/way/89534973",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ],
+      "identity_source": "https://hcfl.gov/locations/domino-boat-ramp"
+    },
+    {
+      "town_id": "safety-harbor",
+      "hero_name": "Safety Harbor Waterfront Park",
+      "hero_source": "https://www.openstreetmap.org/way/586362994",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Safety Harbor Waterfront Park",
+          "source": "https://www.openstreetmap.org/way/586362994",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Safety Harbor Resort and Spa",
+          "source": "https://www.openstreetmap.org/way/522991075",
+          "mobile_uv": [
+            0.3678000802913297,
+            0.5141533125722331
+          ],
+          "desktop_uv": [
+            0.43390004014566486,
+            0.5141533125722331
+          ],
+          "included": true
+        },
+        {
+          "name": "Safety Harbor Museum & Cultural Center",
+          "source": "https://www.openstreetmap.org/way/522991119",
+          "mobile_uv": [
+            0.1647452298721654,
+            0.5948978994216751
+          ],
+          "desktop_uv": [
+            0.3323726149360827,
+            0.5948978994216751
+          ],
+          "included": true
+        },
+        {
+          "name": "John Wilson Park",
+          "source": "https://www.openstreetmap.org/way/388603970",
+          "mobile_uv": [
+            0.06772091175732187,
+            0.5079232049799172
+          ],
+          "desktop_uv": [
+            0.28386045587866093,
+            0.5079232049799172
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "st-pete-beach",
+      "hero_name": "The Don CeSar",
+      "hero_source": "https://www.openstreetmap.org/way/523253223",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "The Don CeSar",
+          "source": "https://www.openstreetmap.org/way/523253223",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "st-petersburg",
+      "hero_name": "South Straub Park",
+      "hero_source": "https://www.openstreetmap.org/way/31667524",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "South Straub Park",
+          "source": "https://www.openstreetmap.org/way/31667524",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Saint Pete Pier District",
+          "source": "https://www.openstreetmap.org/way/887065364",
+          "mobile_uv": [
+            0.7582614927652165,
+            0.4302368500151844
+          ],
+          "desktop_uv": [
+            0.6291307463826082,
+            0.4302368500151844
+          ],
+          "included": true
+        },
+        {
+          "name": "Museum of Fine Arts",
+          "source": "https://www.openstreetmap.org/way/563870513",
+          "mobile_uv": [
+            0.5385780318652807,
+            0.41735839093788857
+          ],
+          "desktop_uv": [
+            0.5192890159326404,
+            0.41735839093788857
+          ],
+          "included": true
+        },
+        {
+          "name": "North Straub Park",
+          "source": "https://www.openstreetmap.org/way/184390362",
+          "mobile_uv": [
+            0.5830759453181023,
+            0.32272013480947603
+          ],
+          "desktop_uv": [
+            0.5415379726590511,
+            0.32272013480947603
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "sun-city-center",
+      "hero_name": "Sun City Center Arts and Crafts Hall",
+      "hero_source": "https://www.openstreetmap.org/way/585274790",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Sun City Center Arts and Crafts Hall",
+          "source": "https://www.openstreetmap.org/way/585274790",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "tampa",
+      "hero_name": "Curtis Hixon Waterfront Park",
+      "hero_source": "https://www.openstreetmap.org/way/905636016",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Curtis Hixon Waterfront Park",
+          "source": "https://www.openstreetmap.org/way/905636016",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Plant Park",
+          "source": "https://www.openstreetmap.org/way/32534602",
+          "mobile_uv": [
+            0.4103488261000905,
+            0.6308007035183414
+          ],
+          "desktop_uv": [
+            0.45517441305004525,
+            0.6308007035183414
+          ],
+          "included": true
+        },
+        {
+          "name": "Kiley Gardens",
+          "source": "https://www.openstreetmap.org/way/906203996",
+          "mobile_uv": [
+            0.6030629065678365,
+            0.5560013950182733
+          ],
+          "desktop_uv": [
+            0.5515314532839183,
+            0.5560013950182733
+          ],
+          "included": true
+        },
+        {
+          "name": "MacDill Park on the Riverwalk",
+          "source": "https://www.openstreetmap.org/way/906263885",
+          "mobile_uv": [
+            0.7336173667716578,
+            0.671383293308436
+          ],
+          "desktop_uv": [
+            0.6168086833858288,
+            0.671383293308436
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "tarpon-springs",
+      "hero_name": "Historic Sponge Docks",
+      "hero_source": "https://www.openstreetmap.org/node/13328565200",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Historic Sponge Docks",
+          "source": "https://www.openstreetmap.org/node/13328565200",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Spongeorama Sponge Factory",
+          "source": "https://www.openstreetmap.org/way/301417961",
+          "mobile_uv": [
+            0.6159870332724974,
+            0.45769339900096057
+          ],
+          "desktop_uv": [
+            0.5579935166362487,
+            0.45769339900096057
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "treasure-island",
+      "hero_name": "Treasure Island Beach",
+      "hero_source": "https://www.openstreetmap.org/node/2398616591",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Treasure Island Beach",
+          "source": "https://www.openstreetmap.org/node/2398616591",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "bradenton",
+      "hero_name": "Bradenton Riverwalk",
+      "hero_source": "https://www.openstreetmap.org/way/573271871",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Bradenton Riverwalk",
+          "source": "https://www.openstreetmap.org/way/573271871",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "The Bishop Museum of Science and Nature",
+          "source": "https://www.openstreetmap.org/way/498036409",
+          "mobile_uv": [
+            0.16695313543273266,
+            0.5712549801890148
+          ],
+          "desktop_uv": [
+            0.33347656771636636,
+            0.5712549801890148
+          ],
+          "included": true
+        },
+        {
+          "name": "ArtCenter Manatee",
+          "source": "https://www.openstreetmap.org/way/895748016",
+          "mobile_uv": [
+            0.223239645306815,
+            0.5938356620864113
+          ],
+          "desktop_uv": [
+            0.36161982265340753,
+            0.5938356620864113
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "bradenton-beach",
+      "hero_name": "Bridge Street",
+      "hero_source": "https://www.openstreetmap.org/way/1153404730",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Bridge Street",
+          "source": "https://www.openstreetmap.org/way/1153404730",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "cortez",
+      "hero_name": "Star Fish Company",
+      "hero_source": "https://www.openstreetmap.org/node/3697235664",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Star Fish Company",
+          "source": "https://www.openstreetmap.org/node/3697235664",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Florida Maritime Museum",
+          "source": "https://www.openstreetmap.org/way/601190320",
+          "mobile_uv": [
+            0.8274906761621058,
+            0.41805078885881347
+          ],
+          "desktop_uv": [
+            0.663745338081053,
+            0.41805078885881347
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "englewood",
+      "hero_name": "Indian Mound Park",
+      "hero_source": "https://www.openstreetmap.org/way/571369430",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Indian Mound Park",
+          "source": "https://www.openstreetmap.org/way/571369430",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Dearborn Street Park",
+          "source": "https://www.openstreetmap.org/way/571367409",
+          "mobile_uv": [
+            0.7098070441386061,
+            0.2345253768844488
+          ],
+          "desktop_uv": [
+            0.6049035220693031,
+            0.2345253768844488
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "sarasota",
+      "hero_name": "John Ringling Boulevard",
+      "hero_source": "https://www.openstreetmap.org/way/202253496",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "John Ringling Boulevard",
+          "source": "https://www.openstreetmap.org/way/202253496",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Marina Plaza",
+          "source": "https://www.openstreetmap.org/way/11333502",
+          "mobile_uv": [
+            0.6950450611062138,
+            0.6021736342556266
+          ],
+          "desktop_uv": [
+            0.5975225305531069,
+            0.6021736342556266
+          ],
+          "included": true
+        },
+        {
+          "name": "Ringling Bridge Causeway Park",
+          "source": "https://www.openstreetmap.org/way/479372430",
+          "mobile_uv": [
+            0.16267650670520845,
+            0.5408932218872841
+          ],
+          "desktop_uv": [
+            0.33133825335260425,
+            0.5408932218872841
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "siesta-key",
+      "hero_name": "Siesta Beach Park",
+      "hero_source": "https://www.openstreetmap.org/way/165304233",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Siesta Beach Park",
+          "source": "https://www.openstreetmap.org/way/165304233",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "venice",
+      "hero_name": "Venice Beach",
+      "hero_source": "https://www.openstreetmap.org/way/571373984",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Venice Beach",
+          "source": "https://www.openstreetmap.org/way/571373984",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "miami",
+      "hero_name": "FPL Solar Amphitheater at Bayfront Park",
+      "hero_source": "https://www.openstreetmap.org/way/301237024",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "FPL Solar Amphitheater at Bayfront Park",
+          "source": "https://www.openstreetmap.org/way/301237024",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Dan Paul Park",
+          "source": "https://www.openstreetmap.org/way/364382505",
+          "mobile_uv": [
+            0.49836042938710534,
+            0.2772488147217041
+          ],
+          "desktop_uv": [
+            0.49918021469355267,
+            0.2772488147217041
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "southbeach",
+      "hero_name": "Lummus Park",
+      "hero_source": "https://www.openstreetmap.org/way/76677464",
+      "coordinate_method": "OSM node coordinate or mean of mapped way vertices; illustrative representative point within named feature.",
+      "points": [
+        {
+          "name": "Lummus Park",
+          "source": "https://www.openstreetmap.org/way/76677464",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    }
+  ]
+}
