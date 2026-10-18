@@ -942,6 +942,168 @@
           "included": true
         }
       ]
+    },
+    {
+      "town_id": "naples",
+      "hero_name": "Naples Historical Society",
+      "hero_source": "https://www.openstreetmap.org/node/4555299724",
+      "coordinate_method": "OSM node coordinate or mapped-way representative point.",
+      "points": [
+        {
+          "name": "Naples Historical Society",
+          "source": "https://www.openstreetmap.org/node/4555299724",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "13th Avenue South Beach",
+          "source": "https://www.openstreetmap.org/node/4859630669",
+          "mobile_uv": [
+            0.36938418257446004,
+            0.5697019160928808
+          ],
+          "desktop_uv": [
+            0.43469209128723,
+            0.5697019160928808
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "marco-island",
+      "hero_name": "Tigertail Beach Park",
+      "hero_source": "https://www.openstreetmap.org/way/494236771",
+      "coordinate_method": "OSM node coordinate or mapped-way representative point.",
+      "points": [
+        {
+          "name": "Tigertail Beach Park",
+          "source": "https://www.openstreetmap.org/way/494236771",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "everglades-city",
+      "hero_name": "Rod and Gun Club",
+      "hero_source": "https://www.openstreetmap.org/node/13704761080",
+      "coordinate_method": "OSM node coordinate or mapped-way representative point.",
+      "points": [
+        {
+          "name": "Rod and Gun Club",
+          "source": "https://www.openstreetmap.org/node/13704761080",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Museum of the Everglades",
+          "source": "https://www.openstreetmap.org/node/13704767578",
+          "mobile_uv": [
+            0.5897918890312002,
+            0.5411801105468292
+          ],
+          "desktop_uv": [
+            0.5448959445156001,
+            0.5411801105468292
+          ],
+          "included": true
+        },
+        {
+          "name": "Bank of Everglades Building",
+          "source": "https://www.openstreetmap.org/way/523066643",
+          "mobile_uv": [
+            0.548925076263231,
+            0.5221010449076989
+          ],
+          "desktop_uv": [
+            0.5244625381316155,
+            0.5221010449076989
+          ],
+          "included": true
+        },
+        {
+          "name": "McLeod Park",
+          "source": "https://www.openstreetmap.org/way/825971745",
+          "mobile_uv": [
+            0.6196917862679518,
+            0.5126004816466306
+          ],
+          "desktop_uv": [
+            0.5598458931339759,
+            0.5126004816466306
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "chokoloskee",
+      "hero_name": "Smallwood Store",
+      "hero_source": "https://www.openstreetmap.org/node/5477084519",
+      "coordinate_method": "OSM node coordinate or mapped-way representative point.",
+      "points": [
+        {
+          "name": "Smallwood Store",
+          "source": "https://www.openstreetmap.org/node/5477084519",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Parkway Motel & Marina",
+          "source": "https://www.openstreetmap.org/node/13704767710",
+          "mobile_uv": [
+            0.4568070798731664,
+            0.40291746287256724
+          ],
+          "desktop_uv": [
+            0.4784035399365832,
+            0.40291746287256724
+          ],
+          "included": true
+        },
+        {
+          "name": "Lighthouse Park",
+          "source": "https://www.openstreetmap.org/way/577465622",
+          "mobile_uv": [
+            0.7094167433378809,
+            0.519264831425677
+          ],
+          "desktop_uv": [
+            0.6047083716689404,
+            0.519264831425677
+          ],
+          "included": true
+        }
+      ]
     }
   ]
 }

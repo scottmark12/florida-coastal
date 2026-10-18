@@ -2540,6 +2540,362 @@
           "lat": 25.779641738636368
         }
       ]
+    },
+    {
+      "town_id": "naples",
+      "name": "Naples",
+      "desktop": "naples.webp",
+      "mobile": "naples-m.webp",
+      "center": {
+        "x": 219.20149873296256,
+        "y": 238.36297694902805,
+        "lon": -81.8042381,
+        "lat": 26.1321265
+      },
+      "districts": [
+        {
+          "id": "naples-center",
+          "name": "Naples",
+          "lon": -81.7942944,
+          "lat": 26.1421976
+        }
+      ],
+      "district": "naples-center",
+      "span": 2.8,
+      "status": "locked pipeline passed; desktop and phone crop visually reviewed; physical-phone speed not verified",
+      "hero": {
+        "lon": -81.8042381,
+        "lat": 26.1321265,
+        "reason": "Historic Palm Cottage anchors Old Naples beside Third Street South and the Gulf beachfront."
+      },
+      "callouts": [
+        {
+          "name": "Naples Historical Society",
+          "type": "landmark",
+          "lon": -81.8042381,
+          "lat": 26.1321265
+        },
+        {
+          "name": "13th Avenue South Beach",
+          "type": "beach",
+          "lon": -81.8061002,
+          "lat": 26.1306017
+        }
+      ],
+      "camera": {
+        "position": [
+          219.20149873296256,
+          2.1874999999999996,
+          -236.17547694902805
+        ],
+        "target": [
+          219.20149873296256,
+          0,
+          -238.36297694902805
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=naples&level=town&landing=1&cx=219.20149873296256&cy=238.36297694902805&span=2.8&district=naples-center",
+      "mobile_camera": {
+        "position": [
+          219.20149873296256,
+          2.1874999999999996,
+          -236.17547694902805
+        ],
+        "target": [
+          219.20149873296256,
+          0,
+          -238.36297694902805
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=naples&level=town&landing=1&cx=219.20149873296256&cy=238.36297694902805&span=1.4&district=naples-center"
+    },
+    {
+      "town_id": "marco-island",
+      "name": "Marco Island",
+      "desktop": "marco-island.webp",
+      "mobile": "marco-island-m.webp",
+      "center": {
+        "x": 225.7409071565093,
+        "y": 218.03242000077077,
+        "lon": -81.74247455454541,
+        "lat": 25.94788946477271
+      },
+      "districts": [
+        {
+          "id": "marco-island-center",
+          "name": "Marco Island",
+          "lon": -81.71573,
+          "lat": 25.9372513
+        }
+      ],
+      "district": "marco-island-center",
+      "span": 2.8,
+      "status": "locked pipeline passed; desktop and phone crop visually reviewed; physical-phone speed not verified",
+      "hero": {
+        "lon": -81.74247455454541,
+        "lat": 25.94788946477271,
+        "reason": "Tigertail’s lagoon, white sand and nearby canal homes show Marco Island’s coastal character."
+      },
+      "callouts": [
+        {
+          "name": "Tigertail Beach Park",
+          "type": "park",
+          "lon": -81.74247455454541,
+          "lat": 25.94788946477271
+        }
+      ],
+      "camera": {
+        "position": [
+          225.7409071565093,
+          2.1874999999999996,
+          -215.84492000077077
+        ],
+        "target": [
+          225.7409071565093,
+          0,
+          -218.03242000077077
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=marco-island&level=town&landing=1&cx=225.7409071565093&cy=218.03242000077077&span=2.8&district=marco-island-center",
+      "mobile_camera": {
+        "position": [
+          225.7409071565093,
+          2.1874999999999996,
+          -215.84492000077077
+        ],
+        "target": [
+          225.7409071565093,
+          0,
+          -218.03242000077077
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=marco-island&level=town&landing=1&cx=225.7409071565093&cy=218.03242000077077&span=1.4&district=marco-island-center"
+    },
+    {
+      "town_id": "everglades-city",
+      "name": "Everglades City",
+      "desktop": "everglades-city.webp",
+      "mobile": "everglades-city-m.webp",
+      "center": {
+        "x": 261.47356183591376,
+        "y": 208.78437826319805,
+        "lon": -81.3871886,
+        "lat": 25.858203
+      },
+      "districts": [
+        {
+          "id": "everglades-city-center",
+          "name": "Everglades City",
+          "lon": -81.384961,
+          "lat": 25.8574788
+        }
+      ],
+      "district": "everglades-city-center",
+      "span": 2.8,
+      "status": "locked pipeline passed; desktop and phone crop visually reviewed; physical-phone speed not verified",
+      "hero": {
+        "lon": -81.3871886,
+        "lat": 25.858203,
+        "reason": "The historic Rod and Gun Club on the Barron River anchors Everglades City’s fishing-town waterfront."
+      },
+      "callouts": [
+        {
+          "name": "Rod and Gun Club",
+          "type": "landmark",
+          "lon": -81.3871886,
+          "lat": 25.858203
+        },
+        {
+          "name": "Museum of the Everglades",
+          "type": "landmark",
+          "lon": -81.3859544,
+          "lat": 25.8572607
+        },
+        {
+          "name": "Bank of Everglades Building",
+          "type": "landmark",
+          "lon": -81.38651594000001,
+          "lat": 25.857697079999998
+        },
+        {
+          "name": "McLeod Park",
+          "type": "park",
+          "lon": -81.38552125555556,
+          "lat": 25.85789001111111
+        }
+      ],
+      "camera": {
+        "position": [
+          261.47356183591376,
+          2.1874999999999996,
+          -206.59687826319805
+        ],
+        "target": [
+          261.47356183591376,
+          0,
+          -208.78437826319805
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=everglades-city&level=town&landing=1&cx=261.47356183591376&cy=208.78437826319805&span=2.8&district=everglades-city-center",
+      "mobile_camera": {
+        "position": [
+          261.47356183591376,
+          2.1874999999999996,
+          -206.59687826319805
+        ],
+        "target": [
+          261.47356183591376,
+          0,
+          -208.78437826319805
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=everglades-city&level=town&landing=1&cx=261.47356183591376&cy=208.78437826319805&span=1.4&district=everglades-city-center"
+    },
+    {
+      "town_id": "chokoloskee",
+      "name": "Chokoloskee",
+      "desktop": "chokoloskee.webp",
+      "mobile": "chokoloskee-m.webp",
+      "center": {
+        "x": 264.05906097637387,
+        "y": 203.49074900837044,
+        "lon": -81.3624917,
+        "lat": 25.810009
+      },
+      "districts": [
+        {
+          "id": "chokoloskee-center",
+          "name": "Chokoloskee",
+          "lon": -81.359413,
+          "lat": 25.8144027
+        }
+      ],
+      "district": "chokoloskee-center",
+      "span": 2.8,
+      "status": "locked pipeline passed; desktop and phone crop visually reviewed; physical-phone speed not verified",
+      "hero": {
+        "lon": -81.3624917,
+        "lat": 25.810009,
+        "reason": "Smallwood Store’s bayfront setting captures Chokoloskee’s historic trading-post and fishing-island identity."
+      },
+      "callouts": [
+        {
+          "name": "Smallwood Store",
+          "type": "landmark",
+          "lon": -81.3624917,
+          "lat": 25.810009
+        },
+        {
+          "name": "Parkway Motel & Marina",
+          "type": "boating",
+          "lon": -81.3630442,
+          "lat": 25.8121856
+        },
+        {
+          "name": "Lighthouse Park",
+          "type": "park",
+          "lon": -81.35957437777778,
+          "lat": 25.80952285
+        }
+      ],
+      "camera": {
+        "position": [
+          264.05906097637387,
+          2.1874999999999996,
+          -201.30324900837044
+        ],
+        "target": [
+          264.05906097637387,
+          0,
+          -203.49074900837044
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=chokoloskee&level=town&landing=1&cx=264.05906097637387&cy=203.49074900837044&span=2.8&district=chokoloskee-center",
+      "mobile_camera": {
+        "position": [
+          264.05906097637387,
+          2.1874999999999996,
+          -201.30324900837044
+        ],
+        "target": [
+          264.05906097637387,
+          0,
+          -203.49074900837044
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=chokoloskee&level=town&landing=1&cx=264.05906097637387&cy=203.49074900837044&span=1.4&district=chokoloskee-center"
     }
   ]
 }

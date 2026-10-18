@@ -16,7 +16,7 @@ Useful links: [atlas](explore_coast.html), [landing gallery](landing/review.html
 
 ## Finished/built coverage
 
-Here “finished” means the existing approved or review-ready detailed package, not a new blanket production approval. 30A and Miami were approved; Tampa Bay, St. Pete/Clearwater and Sarasota have built review packages. Physical mid-range-phone loading time is still unverified. Price sources are dated snapshots, not live pricing.
+Here “finished” means the existing approved or review-ready detailed package, not a new blanket production approval. 30A and Miami were approved; Tampa Bay, St. Pete/Clearwater and Sarasota have built review packages. Naples/Marco has passed the locked pipeline and visual review. Physical mid-range-phone loading time is still unverified. Price sources are dated snapshots, not live pricing.
 
 | Package | Catalog town IDs with landing images | Review |
 |---|---|---|
@@ -26,13 +26,15 @@ Here “finished” means the existing approved or review-ready detailed package
 | St. Pete/Clearwater | `dunedin`, `clearwaterbeach`, `gulfport`, `clearwater`, `indian-rocks-beach`, `madeira-beach`, `new-port-richey`, `safety-harbor`, `st-pete-beach`, `st-petersburg`, `tarpon-springs`, `treasure-island` | [St. Pete](regions/packages/st-pete-clearwater/atlas-review.html) |
 | Sarasota/Bradenton/Venice | `ami`, `longboat`, `bradenton`, `bradenton-beach`, `cortez`, `englewood`, `sarasota`, `siesta-key`, `venice` | [Sarasota](regions/packages/sarasota-bradenton/atlas-review.html) |
 
-Other regions retain their existing overview/legacy GLBs. They are **not finished detailed packages**, and do not receive landing exports: Naples, Fort Myers, Keys, Palm Beaches, Fort Lauderdale, Treasure Coast, Space Coast, Daytona, First Coast, Forgotten Coast, Nature Coast and the remaining Emerald Coast. Configuration and editorial preparations that already existed are included; this handoff does not finish them.
+| Naples/Marco/Everglades | `naples`, `marco-island`, `everglades-city`, `chokoloskee` | [Naples/Marco](regions/packages/naples-marco/atlas-review.html) |
+
+Other regions retain their existing overview/legacy GLBs. They are **not finished detailed packages**, and do not receive landing exports: Fort Myers, Keys, Palm Beaches, Fort Lauderdale, Treasure Coast, Space Coast, Daytona, First Coast, Forgotten Coast, Nature Coast and the remaining Emerald Coast. Configuration and editorial preparations that already existed are included; this handoff does not finish them.
 
 ## Landing images
 
-28 towns × two WebP files: `<town-id>.webp` at 1600×1000, `<town-id>-m.webp` at 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
+32 towns × two WebP files: `<town-id>.webp` at 1600×1000, `<town-id>-m.webp` at 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
 
-The 30A catalog entry describes a corridor, so its representative Town image is centered on Seaside; the exact representative center is recorded. Other images use catalog town centers. To regenerate a screenshot, serve the atlas and use the manifest's relative render URL at the corresponding viewport. `landing=1` enables the clean render mode. Wait for `body[data-ready="true"]`; `body[data-camera]` exposes the actual orthographic camera. Save as WebP at the specified dimensions. Images were inspected as a contact sheet; browser console checks found no errors during export.
+The 30A catalog entry describes a corridor, so its representative Town image is centered on Seaside; the exact representative center is recorded. Every image now uses its sourced hero point, recorded with a one-line reason. To regenerate a screenshot, serve the atlas and use the manifest's relative render URL at the corresponding viewport. `landing=1` enables the clean render mode. Wait for `body[data-ready="true"]`; `body[data-camera]` exposes the actual orthographic camera. Save as WebP at the specified dimensions. Images were inspected as a contact sheet; browser console checks found no errors during export.
 
 **Attribution must appear beside the landing images in the live walkthrough**, since these deliberately contain no UI labels: © OpenStreetMap contributors, ODbL; ESA WorldCover 2021 v200 (CC BY 4.0) and Tampa/USF 2021 canopy where used. See package canopy sources, [OSM copyright](https://www.openstreetmap.org/copyright), and [WorldCover DOI](https://doi.org/10.5281/zenodo.7254221). Rendered crowns and building heights are illustrative, not surveys.
 
@@ -93,3 +95,9 @@ The 28 existing town landing pairs are centered on individually chosen, sourced 
 Desktop is 1600×1000; phone is the central 800×1000 crop at the same camera position, tilt and vertical span. Existing spans are unchanged (30A 1.4 km, other towns 2.8 km). `python pipeline/check_landings.py` validates image dimensions, camera/hero alignment and projected callout visibility; results are in `landing/validation.json`.
 
 Exceptions: Sun City Center has an inland recreation-campus hero, not a coastal waterfront. Ruskin uses the county's Domino Park boat-ramp location; the frame exposes sparse detail toward the southern edge of the existing approved package. No geometry was extended to hide that limitation. The other hero choices and reasons are in the manifest. Source positions identify the mapped feature, not an independent survey measurement.
+
+### Naples/Marco release
+
+Naples, Marco Island, Everglades City and Chokoloskee have detailed packages and hero landing pairs. Initial regional assets total 2,284,184 bytes; maximum exported coastline deviation is 84.799 m and maximum district-anchor deviation is 0.008 m. The review page includes the OSM overlay, accuracy and price CSVs, phone/desktop captures and landing links. Manual input work: recovered Marco buildings/streets through OSM API map tiles after Overpass failures; fitted the regional camera to the east–west town extent; extended Census background context to the wider frame. The renderer, style recipes and shared rules were not changed.
+
+For an unavailable Overpass district download, `python osm_api_fallback.py REGION TOWN` (from `pipeline/`) obtains the same building/highway selection using four bounded requests to `https://api.openstreetmap.org/api/0.6/map`. The downloaded file remains ignored; do not merge its other features into the reviewed geography input.

@@ -1,6 +1,6 @@
 {
-  "town_count": 28,
-  "callout_count": 55,
+  "town_count": 32,
+  "callout_count": 65,
   "towns": [
     {
       "town_id": "30a",
@@ -410,6 +410,66 @@
     {
       "town_id": "southbeach",
       "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "naples",
+      "callouts": 2,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "marco-island",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "everglades-city",
+      "callouts": 4,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "chokoloskee",
+      "callouts": 3,
       "desktop_size": [
         1600,
         1000
