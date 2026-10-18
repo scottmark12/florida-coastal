@@ -589,6 +589,16 @@ body:has(.fs){overflow:hidden}
 .lnd-pin.main b{background:var(--accent);color:#fff;font-size:14px;padding:8px 13px}
 .lnd-pin.main i{width:14px;height:14px;background:var(--accent);border:3px solid #fff;box-shadow:0 0 0 6px rgba(198,82,19,.25)}
 .lnd-credit{position:absolute;right:10px;bottom:8px;font:500 10.5px var(--body);color:rgba(21,42,46,.75);background:rgba(255,255,255,.7);padding:2px 7px;border-radius:6px}
+.lnd-pin.co b{display:flex;align-items:center;gap:6px;font-size:12px;background:rgba(255,255,255,.9)}
+.lnd-pin.co i{width:8px;height:8px;border:2px solid #4F8C96}
+.lnd-pin.co.hot b{background:#fff;box-shadow:0 0 0 2px var(--accent),0 6px 18px rgba(198,82,19,.25)}
+.lnd-pin.co.hot i{border-color:var(--accent);background:var(--accent)}
+.lnd-pin.co em{font-style:normal;font-size:10.5px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:#fff;background:var(--accent);border-radius:999px;padding:3px 7px;margin:-2px 0 -2px -5px}
+.lnd-pin.dist b{font-size:11.5px;background:rgba(21,42,46,.78);color:#fff}
+.lnd-pin.dist i{width:7px;height:7px;border-color:#fff;background:var(--ink)}
+.lnd.m .lnd-pin b{font-size:11px;padding:5px 8px}
+.lnd-pin.l{transform:translate(-8px,-100%);align-items:flex-start}
+.lnd-pin.r{transform:translate(calc(-100% + 8px),-100%);align-items:flex-end}
 .fs.flying .lnd{opacity:0;transition:opacity .28s ease;animation:none}
 @media (prefers-reduced-motion:reduce){.lnd{animation:none}}
 .fs-top{display:grid;grid-template-columns:1fr minmax(440px,32vw)}
