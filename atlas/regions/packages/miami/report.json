@@ -27,5 +27,9 @@
   "scene_bytes": 20540,
   "approved_source_geometry_unchanged": true,
   "30a_assets_unchanged": true,
-  "export_migration": "Overview meshes losslessly repacked; detailed geometry and all source coordinates preserved."
+  "export_migration": "Overview meshes losslessly repacked; detailed geometry and all source coordinates preserved.",
+  "illustrative_boats": 117,
+  "boat_land_intersections": 0,
+  "initial_asset_bytes_with_boats": 2381118,
+  "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions."
 }

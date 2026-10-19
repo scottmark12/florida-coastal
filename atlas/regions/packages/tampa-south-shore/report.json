@@ -23,5 +23,9 @@
   "exported_boundary_source_error_m": 102.37641535663185,
   "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
   "visual_qa": "Saved and inspected screenshots at 1440px; no observed console errors",
-  "physical_phone_tested": false
+  "physical_phone_tested": false,
+  "illustrative_boats": 310,
+  "boat_land_intersections": 0,
+  "initial_asset_bytes_with_boats": 3302181,
+  "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions."
 }

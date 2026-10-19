@@ -29,5 +29,9 @@
     "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged.",
     "Retained explicitly mapped closed coastline island inside generalized Pensacola Bay water polygon, which omits this small island. https://www.openstreetmap.org/way/555468911"
   ],
-  "initial_asset_bytes": 511348
+  "initial_asset_bytes": 511348,
+  "illustrative_boats": 90,
+  "boat_land_intersections": 0,
+  "initial_asset_bytes_with_boats": 513603,
+  "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions."
 }

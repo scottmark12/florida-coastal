@@ -30,5 +30,9 @@
     "Overpass unavailable for Marco Island: used four OSM API 0.6 map tiles, filtered to the original building/highway selectors to avoid mixing coastline snapshots.",
     "Camera input fitted to both east-west and north-south district extent; the default north-south-only span cropped Naples and the Everglades on phone. Landing tilt and span unchanged.",
     "Extended existing Census background land to the wider region camera footprint so the phone frame does not end in an artificial northern water edge."
-  ]
+  ],
+  "illustrative_boats": 65,
+  "boat_land_intersections": 0,
+  "initial_asset_bytes_with_boats": 2286004,
+  "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions."
 }

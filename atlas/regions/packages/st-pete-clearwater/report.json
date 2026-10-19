@@ -24,5 +24,9 @@
   "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
   "export_migration": "Overview meshes losslessly repacked; detailed geometry and all source coordinates preserved.",
   "visual_qa": "Saved and inspected desktop and phone screenshots; no observed console errors",
-  "physical_phone_tested": false
+  "physical_phone_tested": false,
+  "illustrative_boats": 1151,
+  "boat_land_intersections": 0,
+  "initial_asset_bytes_with_boats": 3999298,
+  "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions."
 }

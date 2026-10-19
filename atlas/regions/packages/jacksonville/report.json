@@ -32,5 +32,9 @@
     "Separated straight river-mouth closure across mapped open water from physical shoreline reference. Land geometry unchanged. https://www.openstreetmap.org/way/253129425",
     "Normalized OSM bridge=movable to bridge=yes for the existing exporter while retaining sourceBridgeType, so Main Street lift span remains continuous across water."
   ],
-  "initial_asset_bytes": 1351886
+  "initial_asset_bytes": 1351886,
+  "illustrative_boats": 126,
+  "boat_land_intersections": 0,
+  "initial_asset_bytes_with_boats": 1356592,
+  "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions."
 }

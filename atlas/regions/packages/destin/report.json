@@ -30,5 +30,9 @@
     "Extended detailed building inputs east through Henderson Beach and Crystal Beach using OSM map extracts; added a measured ESA WorldCover canopy window.",
     "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged."
   ],
-  "initial_asset_bytes": 436647
+  "initial_asset_bytes": 436647,
+  "illustrative_boats": 22,
+  "boat_land_intersections": 0,
+  "initial_asset_bytes_with_boats": 437519,
+  "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions."
 }

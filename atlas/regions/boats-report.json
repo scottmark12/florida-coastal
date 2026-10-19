@@ -1,0 +1,111 @@
+{
+  "description": "Illustrated marina occupancy from mapped dock geometry; not real-time boats.",
+  "towns": [
+    {
+      "town": "dunedin",
+      "boats": 191,
+      "mapped_docks": 27
+    },
+    {
+      "town": "clearwaterbeach",
+      "boats": 209,
+      "mapped_docks": 69
+    },
+    {
+      "town": "gulfport",
+      "boats": 110,
+      "mapped_docks": 16
+    },
+    {
+      "town": "apollo-beach",
+      "boats": 246,
+      "mapped_docks": 44
+    },
+    {
+      "town": "clearwater",
+      "boats": 171,
+      "mapped_docks": 22
+    },
+    {
+      "town": "madeira-beach",
+      "boats": 59,
+      "mapped_docks": 30
+    },
+    {
+      "town": "st-petersburg",
+      "boats": 389,
+      "mapped_docks": 37
+    },
+    {
+      "town": "tampa",
+      "boats": 64,
+      "mapped_docks": 17
+    },
+    {
+      "town": "tarpon-springs",
+      "boats": 22,
+      "mapped_docks": 6
+    },
+    {
+      "town": "bradenton",
+      "boats": 440,
+      "mapped_docks": 66
+    },
+    {
+      "town": "cortez",
+      "boats": 183,
+      "mapped_docks": 40
+    },
+    {
+      "town": "sarasota",
+      "boats": 130,
+      "mapped_docks": 21
+    },
+    {
+      "town": "venice",
+      "boats": 34,
+      "mapped_docks": 11
+    },
+    {
+      "town": "miami",
+      "boats": 117,
+      "mapped_docks": 17
+    },
+    {
+      "town": "marco-island",
+      "boats": 40,
+      "mapped_docks": 6
+    },
+    {
+      "town": "everglades-city",
+      "boats": 10,
+      "mapped_docks": 3
+    },
+    {
+      "town": "chokoloskee",
+      "boats": 15,
+      "mapped_docks": 2
+    },
+    {
+      "town": "pensacola",
+      "boats": 90,
+      "mapped_docks": 16
+    },
+    {
+      "town": "jacksonville",
+      "boats": 126,
+      "mapped_docks": 15
+    },
+    {
+      "town": "panama-city",
+      "boats": 0,
+      "note": "Downtown marina closure; no illustrative fleet added."
+    },
+    {
+      "town": "destin",
+      "boats": 22,
+      "mapped_docks": 4
+    }
+  ],
+  "total_boats": 2668
+}

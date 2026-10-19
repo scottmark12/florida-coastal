@@ -25,5 +25,9 @@
   "visual_qa": "Saved and inspected desktop and phone screenshots; no observed console errors",
   "physical_phone_tested": false,
   "canopy_rule": "Mapped canopy sources required; no default roadside planting",
-  "canopy_audit": "canopy-sources.json"
+  "canopy_audit": "canopy-sources.json",
+  "illustrative_boats": 787,
+  "boat_land_intersections": 0,
+  "initial_asset_bytes_with_boats": 3578291,
+  "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions."
 }

@@ -127,3 +127,7 @@ City-specific detailed coverage, hero/callouts and both landing sizes are availa
 ### Destin city package (2026-10-19)
 
 City-specific detailed coverage, hero/callouts and both landing sizes are available. [Review](regions/packages/destin/atlas-review.html). Initial assets: 436647 bytes; maximum shoreline/source alignment error: 5.011 m. Sourced citywide median is labeled as such. Other towns in the parent coastal region remain at their previous coverage. Manual input fixes are documented in the review and source-conflicts.json. Shared renderer and pipeline rules are unchanged.
+
+### Illustrated marina boats (2026-10-19)
+
+Source-positioned docks carry illustrative moored boats, not live vessel traffic. Land, buildings, scale and canopy rules are unchanged. Run `python fetch_boats.py` from `atlas/pipeline` to restore excluded OSM extracts and regenerate boat sidecars. Source windows are in `pipeline/work/coastal_pipeline/boat-sources.json`; counts and omissions are in `regions/boats-report.json`. Raw XML goes under ignored `pipeline/work/coastal_pipeline/raw/boats/`. `build_region.py` reapplies the committed boat sidecar and checks the combined 4 MB limit. After changing land geometry, regenerate boats to rerun land-clearance checks. Downtown Panama City marina remains unpopulated because of its documented closure. Runtime boat files are gzip compressed.

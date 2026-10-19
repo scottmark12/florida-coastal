@@ -1,5 +1,5 @@
 """Run from any directory; normalized inputs stay fixed unless explicitly refreshed."""
-import os,sys,json,subprocess,shutil
+import gzip,os,sys,json,subprocess,shutil
 from pathlib import Path
 P=Path(__file__).resolve().parent;os.chdir(P);region=sys.argv[1];m=Path('work/coastal_pipeline/v4')/region/'manifest.json'
 if not m.exists():raise SystemExit('No configured region: '+region)
@@ -17,4 +17,8 @@ shutil.copytree(out,target,dirs_exist_ok=True)
 for html in target.glob('*.html'):
  s=html.read_text().replace('"/explore_coast.html','"../../../explore_coast.html').replace("'/explore_coast.html","'../../../explore_coast.html")
  html.write_text(s)
+boats=P/'work/coastal_pipeline/v4'/region/'boats.json'
+if boats.exists():
+ shutil.copy2(boats,target/'boats.json');(target/'boats.json.gz').write_bytes(gzip.compress(boats.read_bytes(),mtime=0));scene=json.load(open(target/'scene.json'));scene['boats']='boats.json.gz';(target/'scene.json').write_text(json.dumps(scene,separators=(',',':')))
+ assert sum((target/name).stat().st_size for name in ['base.glb.gz','region.glb.gz','scene.json','shore-wash.png','shore-wash.json','boats.json.gz'])<4000000,'Regional assets with boats exceed 4 MB'
 print('Built',target,'— inspect new screenshots and update landing images before release.')
