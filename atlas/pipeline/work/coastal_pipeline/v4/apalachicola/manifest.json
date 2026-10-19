@@ -1,0 +1,98 @@
+{
+  "id": "apalachicola",
+  "name": "Apalachicola",
+  "towns": [
+    "apalachicola"
+  ],
+  "bounds": [
+    -85.065,
+    29.67,
+    -84.92,
+    29.8
+  ],
+  "recipes": "work/coastal_pipeline/v4/apalachicola/recipes.json",
+  "camera": {
+    "center": [
+      -94.93386069861549,
+      635.7867685148606
+    ],
+    "desktopSpan": 11,
+    "phoneSpan": 5,
+    "phoneOffsetY": 0.5
+  },
+  "district_recipes": {
+    "apalachicola-center": "apalachicola"
+  },
+  "manual_fixes": [
+    "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Replaced Census background context with the same OSM coastline outside the detailed clip: the mixed-source join produced a 1,749m export-check discrepancy at the eastern clip endpoint.",
+    "Excluded the straight OSM river-mouth closure way/163718731 from physical shoreline color/accuracy controls; it crosses open water. Mapped land and water polygons retained."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/apalachicola/geography.json.gz",
+      "work/coastal_pipeline/v4/apalachicola/cover.json.gz",
+      "work/coastal_pipeline/v4/apalachicola/district-apalachicola.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/apalachicola/districts.json",
+    "prices": "work/coastal_pipeline/v4/apalachicola/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/apalachicola/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/apalachicola/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/apalachicola/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/apalachicola/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/apalachicola/apalachicola-center-worldcover-2021.png",
+        "bounds": [
+          -85.00683333333333,
+          29.701583333333332,
+          -84.95883333333333,
+          29.749583333333334
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W087_Map.tif",
+        "surveyYear": 2021,
+        "district": "apalachicola-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "context": {
+      "path": "work/coastal_pipeline/v4/apalachicola/context.json",
+      "source": "Same OpenStreetMap source snapshot as the detailed region, continuing beyond the clip edge",
+      "license": "ODbL 1.0",
+      "projection": "atlas kilometers"
+    }
+  },
+  "waterRecipe": "emerald-forgotten"
+}

@@ -1,0 +1,96 @@
+{
+  "id": "port-st-joe",
+  "name": "Port St. Joe",
+  "towns": [
+    "port-st-joe"
+  ],
+  "bounds": [
+    -85.37,
+    29.72,
+    -85.24,
+    29.89
+  ],
+  "recipes": "work/coastal_pipeline/v4/port-st-joe/recipes.json",
+  "camera": {
+    "center": [
+      -125.76236389844888,
+      645.6613706291353
+    ],
+    "desktopSpan": 11,
+    "phoneSpan": 5,
+    "phoneOffsetY": 0.5
+  },
+  "district_recipes": {
+    "port-st-joe-center": "port-st-joe"
+  },
+  "manual_fixes": [
+    "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/port-st-joe/geography.json.gz",
+      "work/coastal_pipeline/v4/port-st-joe/cover.json.gz",
+      "work/coastal_pipeline/v4/port-st-joe/district-port-st-joe.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/port-st-joe/districts.json",
+    "prices": "work/coastal_pipeline/v4/port-st-joe/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/port-st-joe/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/port-st-joe/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/port-st-joe/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/port-st-joe/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/port-st-joe/port-st-joe-center-worldcover-2021.png",
+        "bounds": [
+          -85.327,
+          29.787916666666668,
+          -85.279,
+          29.835916666666666
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W087_Map.tif",
+        "surveyYear": 2021,
+        "district": "port-st-joe-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "context": {
+      "path": "work/coastal_pipeline/v4/port-st-joe/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    }
+  },
+  "waterRecipe": "emerald-forgotten"
+}

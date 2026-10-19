@@ -105,7 +105,27 @@
       "town": "destin",
       "boats": 22,
       "mapped_docks": 4
+    },
+    {
+      "town": "port-st-joe",
+      "boats": 39,
+      "mapped_docks": 3
+    },
+    {
+      "town": "apalachicola",
+      "boats": 111,
+      "mapped_docks": 21
+    },
+    {
+      "town": "carrabelle",
+      "boats": 145,
+      "mapped_docks": 27
+    },
+    {
+      "town": "st-marks",
+      "boats": 24,
+      "mapped_docks": 8
     }
   ],
-  "total_boats": 2668
+  "total_boats": 2987
 }

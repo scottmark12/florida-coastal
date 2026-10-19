@@ -1,6 +1,6 @@
 {
-  "town_count": 38,
-  "callout_count": 88,
+  "town_count": 43,
+  "callout_count": 109,
   "towns": [
     {
       "town_id": "30a",
@@ -570,6 +570,81 @@
       ],
       "tilt_degrees": 45,
       "span_km": 1.4,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-st-joe",
+      "callouts": 4,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 1.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "apalachicola",
+      "callouts": 5,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 1.6,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-george-island",
+      "callouts": 4,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 1.4,
+      "checks": "passed"
+    },
+    {
+      "town_id": "carrabelle",
+      "callouts": 4,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 1.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-marks",
+      "callouts": 4,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 1.9,
       "checks": "passed"
     }
   ]

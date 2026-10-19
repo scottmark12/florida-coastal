@@ -35,5 +35,10 @@
   "pensacola-beach": "packages/pensacola-beach/",
   "panama-city": "packages/panama-city/",
   "pcb": "packages/pcb/",
-  "destin": "packages/destin/"
+  "destin": "packages/destin/",
+  "port-st-joe": "packages/port-st-joe/",
+  "st-george-island": "packages/st-george-island/",
+  "carrabelle": "packages/carrabelle/",
+  "st-marks": "packages/st-marks/",
+  "apalachicola": "packages/apalachicola/"
 }

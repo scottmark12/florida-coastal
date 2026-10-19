@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Port St. Joe,-125.76236724853516,645.661376953125,-85.3029740353986,29.811875756641886,-85.302974,29.8118757,0.0072,https://www.openstreetmap.org/node/153386352,Representative OSM town place-label anchor: Port Saint Joe

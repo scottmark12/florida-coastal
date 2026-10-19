@@ -1,0 +1,97 @@
+{
+  "id": "st-george-island",
+  "name": "St. George Island",
+  "towns": [
+    "st-george-island"
+  ],
+  "bounds": [
+    -84.98,
+    29.6,
+    -84.73,
+    29.79
+  ],
+  "recipes": "work/coastal_pipeline/v4/st-george-island/recipes.json",
+  "camera": {
+    "center": [
+      -83.37991851976939,
+      628.7695676771389
+    ],
+    "desktopSpan": 18,
+    "phoneSpan": 7,
+    "phoneOffsetY": 0.5
+  },
+  "district_recipes": {
+    "st-george-island-center": "st-george-island"
+  },
+  "manual_fixes": [
+    "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+    "Used mapped Lighthouse Park centroid as district anchor because no named island settlement node is present in the source extract.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/st-george-island/geography.json.gz",
+      "work/coastal_pipeline/v4/st-george-island/cover.json.gz",
+      "work/coastal_pipeline/v4/st-george-island/district-st-george-island.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/st-george-island/districts.json",
+    "prices": "work/coastal_pipeline/v4/st-george-island/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/st-george-island/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/st-george-island/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/st-george-island/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/st-george-island/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/st-george-island/st-george-island-center-worldcover-2021.png",
+        "bounds": [
+          -84.88666666666667,
+          29.639083333333332,
+          -84.83866666666667,
+          29.687083333333334
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W087_Map.tif",
+        "surveyYear": 2021,
+        "district": "st-george-island-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "context": {
+      "path": "work/coastal_pipeline/v4/st-george-island/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    }
+  },
+  "waterRecipe": "emerald-forgotten"
+}

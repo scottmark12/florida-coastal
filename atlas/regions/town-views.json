@@ -8,5 +8,55 @@
     "desktopSpan": 1.4,
     "phoneSpan": 0.9,
     "reason": "Open Town view on Destin Harbor Boardwalk, HarborWalk Marina and Emerald Grande; preserve the mapped district anchor."
+  },
+  "port-st-joe": {
+    "district": "port-st-joe-center",
+    "x": -126.14598448763898,
+    "y": 645.8079315423564,
+    "lon": -85.30696433666667,
+    "lat": 29.81315922,
+    "desktopSpan": 1.8,
+    "phoneSpan": 0.9,
+    "reason": "George Core Park brings the Cape San Blas lighthouse, marina and St. Joseph Bay into one frame."
+  },
+  "apalachicola": {
+    "district": "apalachicola-center",
+    "x": -94.97975249638793,
+    "y": 636.1317969697183,
+    "lon": -84.98327604,
+    "lat": 29.728612759999997,
+    "desktopSpan": 1.6,
+    "phoneSpan": 0.9,
+    "reason": "The downtown riverfront frames the brick storefronts, historic warehouses and working-waterfront docks."
+  },
+  "st-george-island": {
+    "district": "st-george-island-center",
+    "x": -83.3841326707911,
+    "y": 628.7630329024872,
+    "lon": -84.862703125,
+    "lat": 29.663025030000007,
+    "desktopSpan": 1.4,
+    "phoneSpan": 0.9,
+    "reason": "The lighthouse anchors the island\u2019s pastel cottages and Gulf beach."
+  },
+  "carrabelle": {
+    "district": "carrabelle-center",
+    "x": -64.07756438425336,
+    "y": 649.1472825643078,
+    "lon": -84.66409504,
+    "lat": 29.84770636,
+    "desktopSpan": 1.8,
+    "phoneSpan": 0.9,
+    "reason": "The city dock frames Carrabelle\u2019s riverfront fishing town, marinas and compact main street."
+  },
+  "st-marks": {
+    "district": "st-marks-center",
+    "x": -20.08162685130476,
+    "y": 682.7976940981381,
+    "lon": -84.20871656304348,
+    "lat": 30.152245621739137,
+    "desktopSpan": 1.9,
+    "phoneSpan": 0.95,
+    "reason": "The river park puts the river junction, historic fort and boating waterfront together."
   }
 }

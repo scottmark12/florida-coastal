@@ -1480,6 +1480,358 @@
           "included": false
         }
       ]
+    },
+    {
+      "town_id": "port-st-joe",
+      "hero_name": "George Core Park",
+      "hero_source": "https://www.openstreetmap.org/way/627569703",
+      "coordinate_method": "OSM mapped named point or feature geometry centroid; source URL retained.",
+      "points": [
+        {
+          "name": "George Core Park",
+          "source": "https://www.openstreetmap.org/way/627569703",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Frank Pate Park",
+          "source": "https://www.openstreetmap.org/way/627569127",
+          "mobile_uv": [
+            0.8038073540143513,
+            0.6679646594090964
+          ],
+          "desktop_uv": [
+            0.6519036770071757,
+            0.6679646594090964
+          ],
+          "included": true
+        },
+        {
+          "name": "Port Saint Joe Marina",
+          "source": "https://www.openstreetmap.org/way/627569126",
+          "mobile_uv": [
+            0.27377525169300854,
+            0.39086648612787284
+          ],
+          "desktop_uv": [
+            0.38688762584650427,
+            0.39086648612787284
+          ],
+          "included": true
+        },
+        {
+          "name": "Gulf County Welcome Center",
+          "source": "https://www.openstreetmap.org/way/295704647",
+          "mobile_uv": [
+            0.6237884237393101,
+            0.5878782068108284
+          ],
+          "desktop_uv": [
+            0.561894211869655,
+            0.5878782068108284
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "apalachicola",
+      "hero_name": "Riveside Park",
+      "hero_source": "https://www.openstreetmap.org/way/331858570",
+      "coordinate_method": "OSM mapped named point or feature geometry centroid; source URL retained.",
+      "points": [
+        {
+          "name": "Riveside Park",
+          "source": "https://www.openstreetmap.org/way/331858570",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Apalachicola Cotton Exchange Building",
+          "source": "https://www.openstreetmap.org/way/318374904",
+          "mobile_uv": [
+            0.44805332578454937,
+            0.5147557051631573
+          ],
+          "desktop_uv": [
+            0.4740266628922747,
+            0.5147557051631573
+          ],
+          "included": true
+        },
+        {
+          "name": "1838 Cotton Warehouse",
+          "source": "https://www.openstreetmap.org/way/318374906",
+          "mobile_uv": [
+            0.3906425875453685,
+            0.49859169279931265
+          ],
+          "desktop_uv": [
+            0.44532129377268426,
+            0.49859169279931265
+          ],
+          "included": true
+        },
+        {
+          "name": "Raney House",
+          "source": "https://www.openstreetmap.org/way/332416437",
+          "mobile_uv": [
+            0.2178574908292248,
+            0.5333331611431791
+          ],
+          "desktop_uv": [
+            0.3589287454146124,
+            0.5333331611431791
+          ],
+          "included": true
+        },
+        {
+          "name": "Gibson Inn",
+          "source": "https://www.openstreetmap.org/way/287308524",
+          "mobile_uv": [
+            0.4606757894262543,
+            0.7030310626685994
+          ],
+          "desktop_uv": [
+            0.48033789471312716,
+            0.7030310626685994
+          ],
+          "included": true
+        },
+        {
+          "name": "Scipio Creek Marina",
+          "source": "https://www.openstreetmap.org/way/480638981",
+          "mobile_uv": [
+            -0.42831963798101214,
+            0.20948076914336505
+          ],
+          "desktop_uv": [
+            0.03584018100949393,
+            0.20948076914336505
+          ],
+          "included": false
+        }
+      ]
+    },
+    {
+      "town_id": "st-george-island",
+      "hero_name": "Cape Saint George Light",
+      "hero_source": "https://www.openstreetmap.org/way/319963532",
+      "coordinate_method": "OSM mapped named point or feature geometry centroid; source URL retained.",
+      "points": [
+        {
+          "name": "Cape Saint George Light",
+          "source": "https://www.openstreetmap.org/way/319963532",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Saint George Lighthouse Park",
+          "source": "https://www.openstreetmap.org/way/318393587",
+          "mobile_uv": [
+            0.5052023007109929,
+            0.49376204987941424
+          ],
+          "desktop_uv": [
+            0.5026011503554965,
+            0.49376204987941424
+          ],
+          "included": true
+        },
+        {
+          "name": "Saint George Island Visitors Center",
+          "source": "https://www.openstreetmap.org/way/319963533",
+          "mobile_uv": [
+            0.5299870975435316,
+            0.4883495831428699
+          ],
+          "desktop_uv": [
+            0.5149935487717657,
+            0.4883495831428699
+          ],
+          "included": true
+        },
+        {
+          "name": "Lighthouse Museum and Gift shop",
+          "source": "https://www.openstreetmap.org/way/319963531",
+          "mobile_uv": [
+            0.4809493959818748,
+            0.5054758150313552
+          ],
+          "desktop_uv": [
+            0.4904746979909374,
+            0.5054758150313552
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "carrabelle",
+      "hero_name": "City Dock",
+      "hero_source": "https://www.openstreetmap.org/way/476112777",
+      "coordinate_method": "OSM mapped named point or feature geometry centroid; source URL retained.",
+      "points": [
+        {
+          "name": "City Dock",
+          "source": "https://www.openstreetmap.org/way/476112777",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Carrabelle History Museum",
+          "source": "https://www.openstreetmap.org/way/476112756",
+          "mobile_uv": [
+            0.4799827920449186,
+            0.3080226261451418
+          ],
+          "desktop_uv": [
+            0.48999139602245934,
+            0.3080226261451418
+          ],
+          "included": true
+        },
+        {
+          "name": "George Sands Park",
+          "source": "https://www.openstreetmap.org/way/476112727",
+          "mobile_uv": [
+            0.8090341029385495,
+            0.38994809818906206
+          ],
+          "desktop_uv": [
+            0.6545170514692747,
+            0.38994809818906206
+          ],
+          "included": true
+        },
+        {
+          "name": "Carrabelle Marina",
+          "source": "https://www.openstreetmap.org/node/4697972390",
+          "mobile_uv": [
+            -0.27915407253317737,
+            0.1711931034037097
+          ],
+          "desktop_uv": [
+            0.11042296373341132,
+            0.1711931034037097
+          ],
+          "included": false
+        },
+        {
+          "name": "MS Dockside Marina",
+          "source": "https://www.openstreetmap.org/way/476496216",
+          "mobile_uv": [
+            0.16676389077709547,
+            0.4344273848923226
+          ],
+          "desktop_uv": [
+            0.3333819453885477,
+            0.4344273848923226
+          ],
+          "included": true
+        }
+      ]
+    },
+    {
+      "town_id": "st-marks",
+      "hero_name": "Saint Marks River City Park",
+      "hero_source": "https://www.openstreetmap.org/way/325755732",
+      "coordinate_method": "OSM mapped named point or feature geometry centroid; source URL retained.",
+      "points": [
+        {
+          "name": "Saint Marks River City Park",
+          "source": "https://www.openstreetmap.org/way/325755732",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "San Marcos De Apalache Historic State Park",
+          "source": "https://www.openstreetmap.org/way/138518807",
+          "mobile_uv": [
+            0.30872032578569386,
+            0.5709582643286777
+          ],
+          "desktop_uv": [
+            0.40436016289284693,
+            0.5709582643286777
+          ],
+          "included": true
+        },
+        {
+          "name": "Wakulla River Park",
+          "source": "https://www.openstreetmap.org/way/248118820",
+          "mobile_uv": [
+            0.11297607935129861,
+            0.2723630563760717
+          ],
+          "desktop_uv": [
+            0.3064880396756493,
+            0.2723630563760717
+          ],
+          "included": true
+        },
+        {
+          "name": "Shields Marina",
+          "source": "https://www.openstreetmap.org/way/248175990",
+          "mobile_uv": [
+            1.2935991070396549,
+            0.2725630915637013
+          ],
+          "desktop_uv": [
+            0.8967995535198274,
+            0.2725630915637013
+          ],
+          "included": false
+        },
+        {
+          "name": "Spanish Bastion Wall",
+          "source": "https://www.openstreetmap.org/way/138519892",
+          "mobile_uv": [
+            0.2403460562590769,
+            0.5480928816035016
+          ],
+          "desktop_uv": [
+            0.37017302812953845,
+            0.5480928816035016
+          ],
+          "included": true
+        }
+      ]
     }
   ]
 }

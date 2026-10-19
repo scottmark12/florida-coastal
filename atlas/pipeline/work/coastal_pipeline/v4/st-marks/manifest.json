@@ -1,0 +1,97 @@
+{
+  "id": "st-marks",
+  "name": "St. Marks",
+  "towns": [
+    "st-marks"
+  ],
+  "bounds": [
+    -84.27,
+    30.045,
+    -84.14,
+    30.2
+  ],
+  "recipes": "work/coastal_pipeline/v4/st-marks/recipes.json",
+  "camera": {
+    "center": [
+      -19.864723765763717,
+      683.7915090474906
+    ],
+    "desktopSpan": 11,
+    "phoneSpan": 5,
+    "phoneOffsetY": 0.5
+  },
+  "district_recipes": {
+    "st-marks-center": "st-marks"
+  },
+  "manual_fixes": [
+    "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+    "Latest published sale median is the three months ending May 2026, based on one sale; shown explicitly rather than described as a current robust estimate.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/st-marks/geography.json.gz",
+      "work/coastal_pipeline/v4/st-marks/district-st-marks.json.gz",
+      "work/coastal_pipeline/v4/st-marks/cover.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/st-marks/districts.json",
+    "prices": "work/coastal_pipeline/v4/st-marks/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/st-marks/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/st-marks/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/st-marks/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/st-marks/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/st-marks/st-marks-center-worldcover-2021.png",
+        "bounds": [
+          -84.2305,
+          30.13725,
+          -84.1825,
+          30.18525
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W087_Map.tif",
+        "surveyYear": 2021,
+        "district": "st-marks-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "context": {
+      "path": "work/coastal_pipeline/v4/st-marks/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    }
+  },
+  "waterRecipe": "emerald-forgotten"
+}

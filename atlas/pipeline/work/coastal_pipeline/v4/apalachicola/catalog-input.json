@@ -1,0 +1,61 @@
+{
+  "towns": [
+    {
+      "id": "apalachicola",
+      "name": "Apalachicola",
+      "region": "Forgotten Coast",
+      "coast": "panhandle",
+      "lat": 29.73,
+      "lon": -84.98,
+      "tier": 1,
+      "price": "About $300K to $385K, depending on the source (Zillow and Redfin, Aug 2026)",
+      "vibes": [
+        "oldfl",
+        "dock",
+        "walk"
+      ],
+      "airport": "Tallahassee (TLH), about 1.5 hours",
+      "season": "Quiet year round",
+      "watch": "Storm surge and flooding in low areas",
+      "blurb": "An oyster town with brick storefronts, shrimp boats and no hurry at all.",
+      "day": "You walk to breakfast past the shrimp boats, browse the old brick downtown and watch the sun set over the bay.",
+      "todo": [
+        [
+          "Historic downtown",
+          "Brick storefronts from the town's cotton and oyster days."
+        ],
+        [
+          "St. George Island",
+          "A quiet barrier island beach just across the bridge."
+        ]
+      ],
+      "pros": [
+        "Real Old Florida character",
+        "Affordable for the coast"
+      ],
+      "cons": [
+        "Far from big airports and hospitals",
+        "Few big city services"
+      ],
+      "x": -94.66208544869843,
+      "y": 636.2832867644105,
+      "area_id": "forgotten-coast",
+      "area_name": "The Forgotten Coast",
+      "source_url": "https://www.floridacoastal.co/towns/apalachicola.html",
+      "nearest_town_km": 13.532863335503848
+    }
+  ],
+  "bounds": [
+    -85.065,
+    29.67,
+    -84.92,
+    29.8
+  ],
+  "region": {
+    "id": "apalachicola",
+    "name": "Apalachicola",
+    "towns": [
+      "apalachicola"
+    ]
+  }
+}
