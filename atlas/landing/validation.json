@@ -1,6 +1,6 @@
 {
-  "town_count": 37,
-  "callout_count": 84,
+  "town_count": 38,
+  "callout_count": 89,
   "towns": [
     {
       "town_id": "30a",
@@ -545,6 +545,21 @@
     {
       "town_id": "pcb",
       "callouts": 4,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "destin",
+      "callouts": 5,
       "desktop_size": [
         1600,
         1000

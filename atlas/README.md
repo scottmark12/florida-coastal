@@ -32,7 +32,7 @@ Other regions retain their existing overview/legacy GLBs. They are **not finishe
 
 ## Landing images
 
-37 towns × two WebP files: `<town-id>.webp` at 1600×1000, `<town-id>-m.webp` at 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
+38 towns × two WebP files: `<town-id>.webp` at 1600×1000, `<town-id>-m.webp` at 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
 
 The 30A catalog entry describes a corridor, so its representative Town image is centered on Seaside; the exact representative center is recorded. Every image now uses its sourced hero point, recorded with a one-line reason. To regenerate a screenshot, serve the atlas and use the manifest's relative render URL at the corresponding viewport. `landing=1` enables the clean render mode. Wait for `body[data-ready="true"]`; `body[data-camera]` exposes the actual orthographic camera. Save as WebP at the specified dimensions. Images were inspected as a contact sheet; browser console checks found no errors during export.
 
@@ -123,3 +123,7 @@ City-specific detailed coverage, hero/callouts and both landing sizes are availa
 ### Pcb city package (2026-10-19)
 
 City-specific detailed coverage, hero/callouts and both landing sizes are available. [Review](regions/packages/pcb/atlas-review.html). Initial assets: 753891 bytes; maximum shoreline/source alignment error: 33.06 m. Sourced citywide median is labeled as such. Other towns in the parent coastal region remain at their previous coverage. Manual input fixes are documented in the review and source-conflicts.json. Shared renderer and pipeline rules are unchanged.
+
+### Destin city package (2026-10-19)
+
+City-specific detailed coverage, hero/callouts and both landing sizes are available. [Review](regions/packages/destin/atlas-review.html). Initial assets: 436647 bytes; maximum shoreline/source alignment error: 5.011 m. Sourced citywide median is labeled as such. Other towns in the parent coastal region remain at their previous coverage. Manual input fixes are documented in the review and source-conflicts.json. Shared renderer and pipeline rules are unchanged.

@@ -1,0 +1,124 @@
+{
+  "id": "destin",
+  "name": "Destin",
+  "towns": [
+    "destin"
+  ],
+  "bounds": [
+    -86.61,
+    30.33,
+    -86.39,
+    30.46
+  ],
+  "recipes": "work/coastal_pipeline/v4/destin/recipes.json",
+  "camera": {
+    "center": [
+      -239.57309792355602,
+      711.9856144264916
+    ],
+    "desktopSpan": 11,
+    "phoneSpan": 4,
+    "phoneOffsetY": 0.3
+  },
+  "district_recipes": {
+    "destin-center": "destin"
+  },
+  "manual_fixes": [
+    "City-specific package requested by user; other cities in the parent region remain unchanged.",
+    "Emerald Grande uses a sourced 13-story project description and explicitly estimated 39m height, within the unchanged scale cap.",
+    "Mapped harbor pier centerlines added through the existing footbridge renderer; no invented docks.",
+    "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged.",
+    "Extended detailed building inputs east through Henderson Beach and Crystal Beach using OSM map extracts; added a measured ESA WorldCover canopy window.",
+    "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/destin/district-destin.json.gz",
+      "work/coastal_pipeline/v4/destin/geography.json.gz",
+      "work/coastal_pipeline/v4/destin/cover.json.gz",
+      "work/coastal_pipeline/v4/destin/district-destin-east.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/destin/districts.json",
+    "prices": "work/coastal_pipeline/v4/destin/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/destin/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/destin/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/destin/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/destin/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/destin/destin-center-worldcover-2021.png",
+        "bounds": [
+          -86.51983333333334,
+          30.369583333333335,
+          -86.47183333333334,
+          30.417583333333333
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W087_Map.tif",
+        "surveyYear": 2021,
+        "district": "destin-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/destin/destin-east-worldcover-2021.png",
+        "bounds": [
+          -86.456,
+          30.366,
+          -86.408,
+          30.414
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W087_Map.tif",
+        "surveyYear": 2021,
+        "district": "destin-east",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "context": {
+      "path": "work/coastal_pipeline/v4/destin/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    }
+  }
+}

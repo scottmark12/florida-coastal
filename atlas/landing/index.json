@@ -3380,6 +3380,110 @@
         "tiltDegrees": 45
       },
       "mobile_render_url": "../explore_coast.html?view=pcb&level=town&landing=1&cx=-180.5019253030766&cy=691.1840294582316&span=1.4&district=pcb-center"
+    },
+    {
+      "town_id": "destin",
+      "name": "Destin",
+      "desktop": "destin.webp",
+      "mobile": "destin-m.webp",
+      "center": {
+        "x": -241.0827545599742,
+        "y": 712.0506359968194,
+        "lon": -86.5115199,
+        "lat": 30.3938433
+      },
+      "districts": [
+        {
+          "id": "destin-center",
+          "name": "Destin",
+          "lon": -86.4957834,
+          "lat": 30.3935337
+        }
+      ],
+      "district": "destin-center",
+      "span": 2.8,
+      "status": "Passed locked pipeline and desktop/phone visual review; physical-phone speed not verified",
+      "hero": {
+        "lon": -86.5115199,
+        "lat": 30.3938433,
+        "reason": "HarborWalk frames Destin\u2019s fishing fleet, Emerald Grande and the sheltered harbor beside East Pass."
+      },
+      "callouts": [
+        {
+          "name": "HarborWalk Marina",
+          "type": "boating",
+          "lon": -86.5115199,
+          "lat": 30.3938433
+        },
+        {
+          "name": "Destin History & Fishing Museum",
+          "type": "landmark",
+          "lon": -86.50919731111111,
+          "lat": 30.395969955555554
+        },
+        {
+          "name": "Emerald Grande",
+          "type": "landmark",
+          "lon": -86.51223835348839,
+          "lat": 30.394685886046513
+        },
+        {
+          "name": "Destin Harbor Boardwalk",
+          "type": "walkable",
+          "lon": -86.50931862222222,
+          "lat": 30.394826544444445
+        },
+        {
+          "name": "Captain Leonard Destin Park",
+          "type": "park",
+          "lon": -86.5131774,
+          "lat": 30.3981818
+        }
+      ],
+      "camera": {
+        "position": [
+          -241.0827545599742,
+          2.1874999999999996,
+          -709.8631359968194
+        ],
+        "target": [
+          -241.0827545599742,
+          0,
+          -712.0506359968194
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=destin&level=town&landing=1&cx=-241.0827545599742&cy=712.0506359968194&span=2.8&district=destin-center",
+      "mobile_camera": {
+        "position": [
+          -241.0827545599742,
+          2.1874999999999996,
+          -709.8631359968194
+        ],
+        "target": [
+          -241.0827545599742,
+          0,
+          -712.0506359968194
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=destin&level=town&landing=1&cx=-241.0827545599742&cy=712.0506359968194&span=1.4&district=destin-center"
     }
   ]
 }

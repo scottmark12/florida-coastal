@@ -1,0 +1,60 @@
+{
+  "recipes": {
+    "destin": {
+      "walls": [
+        "#f7eed9",
+        "#dfddc2",
+        "#c4ded6",
+        "#e4cfb4"
+      ],
+      "roofs": [
+        "#a7bab3",
+        "#c2c6bb",
+        "#b8aa8d"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridacoastal.co/towns/destin.html"
+    },
+    "harbor-resort": {
+      "walls": [
+        "#f5ead0",
+        "#e9dbc4",
+        "#d8e2d5"
+      ],
+      "roofs": [
+        "#7f9e8f",
+        "#a9bcb1"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.rac.com/projects/residential/emerald-grande-at-harborwalk-village/"
+    }
+  },
+  "landmarks": {
+    "way/550902540": {
+      "illustratedRealHeightMeters": 39,
+      "recipe": "harbor-resort",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.2,
+          0.04
+        ],
+        [
+          0.85,
+          0.09
+        ],
+        [
+          0.96,
+          0.15
+        ]
+      ],
+      "source": "https://www.rac.com/projects/residential/emerald-grande-at-harborwalk-village/",
+      "note": "13-story project description; 3m per story is an illustrative estimate, not a surveyed height. Original OSM footprint retained; shared 3x scale and width cap apply."
+    }
+  }
+}
