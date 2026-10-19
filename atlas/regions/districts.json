@@ -5396,5 +5396,32 @@
     },
     "source": "https://www.floridacoastal.co/towns/pensacola-beach.html",
     "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "panama-city",
+    "id": "panama-city-center",
+    "name": "Panama City",
+    "kind": "beach",
+    "description": "A bayfront city on St. Andrews Bay with a reviving downtown and the Gulf beaches a bridge away.",
+    "style": "panama-city",
+    "lon": -85.6602936,
+    "lat": 30.1586518,
+    "x": -159.7305288126607,
+    "y": 684.5670831302621,
+    "positionSource": "https://www.openstreetmap.org/node/153634645",
+    "centerMeaning": "Representative OSM town place-label anchor: Panama City",
+    "priceRange": "$335,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/bay-county/panama-city",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 335000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/bay-county/panama-city",
+      "geographicScope": "Citywide published median; not a neighborhood-specific valuation."
+    },
+    "source": "https://destinationpanamacity.com/about-panama-city",
+    "priceStatus": "Published market median; reporting period shown on card."
   }
 ]

@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Panama City,-159.73052978515625,684.5670776367188,-85.66029360933847,30.158651750393904,-85.6602936,30.1586518,0.0056,https://www.openstreetmap.org/node/153634645,Representative OSM town place-label anchor: Panama City

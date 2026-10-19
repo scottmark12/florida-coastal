@@ -3190,6 +3190,98 @@
         "tiltDegrees": 45
       },
       "mobile_render_url": "../explore_coast.html?view=pensacola-beach&level=town&landing=1&cx=-301.84537297204264&cy=706.5022191774556&span=1.4&district=pensacola-beach-center"
+    },
+    {
+      "town_id": "panama-city",
+      "name": "Panama City",
+      "desktop": "panama-city.webp",
+      "mobile": "panama-city-m.webp",
+      "center": {
+        "x": -160.05587894793337,
+        "y": 683.9402685041948,
+        "lon": -85.6635871,
+        "lat": 30.1529657
+      },
+      "districts": [
+        {
+          "id": "panama-city-center",
+          "name": "Panama City",
+          "lon": -85.6602936,
+          "lat": 30.1586518
+        }
+      ],
+      "district": "panama-city-center",
+      "span": 2.8,
+      "status": "Passed locked pipeline and desktop/phone visual review; physical-phone speed not verified",
+      "hero": {
+        "lon": -85.6635871,
+        "lat": 30.1529657,
+        "reason": "The downtown waterfront at Harrison Avenue connects Panama City\u2019s historic commercial streets to St. Andrews Bay."
+      },
+      "callouts": [
+        {
+          "name": "Panama City Flame",
+          "type": "landmark",
+          "lon": -85.6635871,
+          "lat": 30.1529657
+        },
+        {
+          "name": "Martin Theatre",
+          "type": "landmark",
+          "lon": -85.66077544,
+          "lat": 30.15545596
+        },
+        {
+          "name": "Panama City Center for the Arts",
+          "type": "landmark",
+          "lon": -85.65992962222221,
+          "lat": 30.15547321111111
+        }
+      ],
+      "camera": {
+        "position": [
+          -160.05587894793337,
+          2.1874999999999996,
+          -681.7527685041948
+        ],
+        "target": [
+          -160.05587894793337,
+          0,
+          -683.9402685041948
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=panama-city&level=town&landing=1&cx=-160.05587894793337&cy=683.9402685041948&span=2.8&district=panama-city-center",
+      "mobile_camera": {
+        "position": [
+          -160.05587894793337,
+          2.1874999999999996,
+          -681.7527685041948
+        ],
+        "target": [
+          -160.05587894793337,
+          0,
+          -683.9402685041948
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=panama-city&level=town&landing=1&cx=-160.05587894793337&cy=683.9402685041948&span=1.4&district=panama-city-center"
     }
   ]
 }

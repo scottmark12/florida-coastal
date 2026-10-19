@@ -1,6 +1,6 @@
 {
-  "town_count": 35,
-  "callout_count": 77,
+  "town_count": 36,
+  "callout_count": 80,
   "towns": [
     {
       "town_id": "30a",
@@ -514,6 +514,21 @@
     },
     {
       "town_id": "pensacola-beach",
+      "callouts": 3,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 2.8,
+      "checks": "passed"
+    },
+    {
+      "town_id": "panama-city",
       "callouts": 3,
       "desktop_size": [
         1600,

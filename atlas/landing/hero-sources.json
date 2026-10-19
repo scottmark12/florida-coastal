@@ -1284,6 +1284,69 @@
           "included": true
         }
       ]
+    },
+    {
+      "town_id": "panama-city",
+      "hero_name": "Panama City Flame",
+      "hero_source": "https://www.openstreetmap.org/node/5808923770",
+      "coordinate_method": "OSM mapped feature, or published government facility GPS where linked.",
+      "points": [
+        {
+          "name": "Panama City Flame",
+          "source": "https://www.openstreetmap.org/node/5808923770",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Martin Theatre",
+          "source": "https://www.openstreetmap.org/way/636947377",
+          "mobile_uv": [
+            0.695871183747341,
+            0.3897958723391175
+          ],
+          "desktop_uv": [
+            0.5979355918736705,
+            0.3897958723391175
+          ],
+          "included": true
+        },
+        {
+          "name": "Panama City Center for the Arts",
+          "source": "https://www.openstreetmap.org/way/636947519",
+          "mobile_uv": [
+            0.7540113262317942,
+            0.38946495156314487
+          ],
+          "desktop_uv": [
+            0.6270056631158971,
+            0.38946495156314487
+          ],
+          "included": true
+        },
+        {
+          "name": "Panama City Marina",
+          "source": "https://www.openstreetmap.org/node/1643364356",
+          "mobile_uv": [
+            0.4244849068365275,
+            0.6411484483170268
+          ],
+          "desktop_uv": [
+            0.46224245341826375,
+            0.6411484483170268
+          ],
+          "included": false,
+          "reason": "Operational status not suitable for a boating callout."
+        }
+      ],
+      "note": "Downtown marina not included as a boating callout: municipal source reports boat ramp closure and revitalization.",
+      "marinaStatusSource": "https://www.panamacity.gov/665/Marinas"
     }
   ]
 }

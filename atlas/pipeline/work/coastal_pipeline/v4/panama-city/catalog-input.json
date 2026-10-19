@@ -1,0 +1,56 @@
+{
+  "region": {
+    "id": "panama-city",
+    "name": "Panama City",
+    "towns": [
+      "panama-city"
+    ]
+  },
+  "towns": [
+    {
+      "id": "panama-city",
+      "name": "Panama City",
+      "region": "Panhandle",
+      "coast": "panhandle",
+      "lat": 30.159,
+      "lon": -85.66,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "dock",
+        "afford"
+      ],
+      "airport": "Northwest Florida Beaches (ECP), about 30 minutes",
+      "season": "Steady year round",
+      "watch": "Hurricane exposure. Parts of town are still rebuilding from Michael in 2018",
+      "blurb": "A bayfront city on St. Andrews Bay with a reviving downtown and the Gulf beaches a bridge away.",
+      "day": "You grab coffee downtown, walk the marina in St. Andrews and drive 20 minutes to the beach when you feel like it.",
+      "todo": [
+        [
+          "Historic St. Andrews",
+          "A waterfront district of seafood spots, a marina and a weekend market."
+        ]
+      ],
+      "pros": [
+        "More affordable than the beach side",
+        "A year round town, not just a resort"
+      ],
+      "cons": [
+        "The beach is a drive",
+        "Hurricane risk"
+      ],
+      "x": -159.70176411862852,
+      "y": 684.605348590552,
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.floridacoastal.co/towns/panama-city.html",
+      "nearest_town_km": 13.66812795407636
+    }
+  ],
+  "bounds": [
+    -85.76,
+    30.04,
+    -85.57,
+    30.25
+  ]
+}

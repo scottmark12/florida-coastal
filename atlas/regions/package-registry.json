@@ -32,5 +32,6 @@
   "marco-island": "packages/naples-marco/",
   "pensacola": "packages/pensacola/",
   "jacksonville": "packages/jacksonville/",
-  "pensacola-beach": "packages/pensacola-beach/"
+  "pensacola-beach": "packages/pensacola-beach/",
+  "panama-city": "packages/panama-city/"
 }
