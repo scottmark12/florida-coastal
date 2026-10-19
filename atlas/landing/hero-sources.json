@@ -1104,6 +1104,79 @@
           "included": true
         }
       ]
+    },
+    {
+      "town_id": "pensacola",
+      "hero_name": "Palafox Pier",
+      "hero_source": "https://www.openstreetmap.org/way/458181099",
+      "coordinate_method": "OSM mapped feature, or published government facility GPS where linked.",
+      "points": [
+        {
+          "name": "Palafox Pier",
+          "source": "https://www.openstreetmap.org/way/458181099",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Plaza Ferdinand VII",
+          "source": "https://www.openstreetmap.org/way/206038857",
+          "mobile_uv": [
+            0.532762724675633,
+            0.28607981460931897
+          ],
+          "desktop_uv": [
+            0.5163813623378165,
+            0.28607981460931897
+          ],
+          "included": true
+        },
+        {
+          "name": "Pensacola Museum of History",
+          "source": "https://www.openstreetmap.org/way/361999506",
+          "mobile_uv": [
+            0.5839790717874475,
+            0.2966828895013316
+          ],
+          "desktop_uv": [
+            0.5419895358937238,
+            0.2966828895013316
+          ],
+          "included": true
+        },
+        {
+          "name": "Seville Square",
+          "source": "https://www.openstreetmap.org/way/674649792",
+          "mobile_uv": [
+            0.8141153244770781,
+            0.2658750037465655
+          ],
+          "desktop_uv": [
+            0.6570576622385391,
+            0.2658750037465655
+          ],
+          "included": true
+        },
+        {
+          "name": "Saenger Theatre",
+          "source": "https://www.openstreetmap.org/way/364217763",
+          "mobile_uv": [
+            0.5060287185630159,
+            0.20487049471701146
+          ],
+          "desktop_uv": [
+            0.503014359281508,
+            0.20487049471701146
+          ],
+          "included": true
+        }
+      ]
     }
   ]
 }

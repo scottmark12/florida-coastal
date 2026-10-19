@@ -1,0 +1,57 @@
+{
+  "region": {
+    "id": "pensacola",
+    "name": "Pensacola",
+    "towns": [
+      "pensacola"
+    ]
+  },
+  "towns": [
+    {
+      "id": "pensacola",
+      "name": "Pensacola",
+      "region": "Panhandle",
+      "coast": "panhandle",
+      "lat": 30.421,
+      "lon": -87.217,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "social",
+        "walk",
+        "afford"
+      ],
+      "airport": "Pensacola (PNS), about 15 minutes",
+      "season": "Busy summers",
+      "watch": "Hurricane exposure",
+      "blurb": "Florida's westernmost city, with more than 450 years of history, a lively downtown and white sand beaches across the bay.",
+      "day": "You walk Palafox Street to the Saturday market, catch a Blue Angels practice in season and watch the sunset from the bayfront.",
+      "todo": [
+        [
+          "Palafox Street",
+          "The heart of downtown, lined with restaurants, galleries and a Saturday market."
+        ]
+      ],
+      "pros": [
+        "A real city with history and culture",
+        "More affordable than much of the coast"
+      ],
+      "cons": [
+        "The beaches are a 20 minute drive",
+        "Hurricane exposure"
+      ],
+      "x": -308.7100455681391,
+      "y": 716.6363698124599,
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.floridacoastal.co/towns/pensacola.html",
+      "nearest_town_km": 11.987799688158464
+    }
+  ],
+  "bounds": [
+    -87.32,
+    30.3,
+    -87.05,
+    30.5
+  ]
+}

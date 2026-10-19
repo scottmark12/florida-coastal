@@ -1,5 +1,5 @@
 {
-  "attribution": "© OpenStreetMap contributors, ODbL. Canopy: ESA WorldCover 2021 CC BY 4.0 and Tampa/USF 2021 where used. Display attribution alongside these UI-free images on the website.",
+  "attribution": "\u00a9 OpenStreetMap contributors, ODbL. Canopy: ESA WorldCover 2021 CC BY 4.0 and Tampa/USF 2021 where used. Display attribution alongside these UI-free images on the website.",
   "towns": [
     {
       "town_id": "30a",
@@ -136,7 +136,7 @@
       "hero": {
         "lon": -86.13764499999999,
         "lat": 30.32022952173913,
-        "reason": "Seaside’s square puts the pastel village and its Gulf beach together in one frame."
+        "reason": "Seaside\u2019s square puts the pastel village and its Gulf beach together in one frame."
       },
       "callouts": [
         {
@@ -228,7 +228,7 @@
       "hero": {
         "lon": -82.79229104000001,
         "lat": 28.012469,
-        "reason": "The municipal marina and Main Street waterfront express Dunedin’s boating and walkable-town character."
+        "reason": "The municipal marina and Main Street waterfront express Dunedin\u2019s boating and walkable-town character."
       },
       "callouts": [
         {
@@ -320,7 +320,7 @@
       "hero": {
         "lon": -82.8288372,
         "lat": 27.9772003,
-        "reason": "The landward entrance to Pier 60 centers Clearwater Beach’s Gulf sand and resort waterfront."
+        "reason": "The landward entrance to Pier 60 centers Clearwater Beach\u2019s Gulf sand and resort waterfront."
       },
       "callouts": [
         {
@@ -400,7 +400,7 @@
       "hero": {
         "lon": -82.70966358947369,
         "lat": 27.73679792105263,
-        "reason": "The small-town waterfront and beach show Gulfport’s low-rise Boca Ciega Bay character."
+        "reason": "The small-town waterfront and beach show Gulfport\u2019s low-rise Boca Ciega Bay character."
       },
       "callouts": [
         {
@@ -486,7 +486,7 @@
       "hero": {
         "lon": -82.73054928571428,
         "lat": 27.53452871428571,
-        "reason": "Anna Maria’s historic pier anchors the bayfront end of Pine Avenue."
+        "reason": "Anna Maria\u2019s historic pier anchors the bayfront end of Pine Avenue."
       },
       "callouts": [
         {
@@ -572,7 +572,7 @@
       "hero": {
         "lon": -82.64867963235295,
         "lat": 27.39922148823529,
-        "reason": "This mid-island Gulf-front anchor shows Longboat’s narrow beach, resort strip and residential island fabric."
+        "reason": "This mid-island Gulf-front anchor shows Longboat\u2019s narrow beach, resort strip and residential island fabric."
       },
       "callouts": [
         {
@@ -652,7 +652,7 @@
       "hero": {
         "lon": -82.4167530256757,
         "lat": 27.79178451351351,
-        "reason": "The bayfront nature park frames Apollo Beach’s water-oriented residential shoreline."
+        "reason": "The bayfront nature park frames Apollo Beach\u2019s water-oriented residential shoreline."
       },
       "callouts": [
         {
@@ -904,7 +904,7 @@
       "hero": {
         "lon": -82.78225905000001,
         "lat": 27.784658105555557,
-        "reason": "John’s Pass working marina and inlet define Madeira Beach’s boating waterfront."
+        "reason": "John\u2019s Pass working marina and inlet define Madeira Beach\u2019s boating waterfront."
       },
       "callouts": [
         {
@@ -1076,7 +1076,7 @@
       "hero": {
         "lon": -82.44505636000001,
         "lat": 27.693892920000003,
-        "reason": "Domino Park’s boat ramp opens onto Mill Bayou and the Little Manatee River, expressing Ruskin’s boating character."
+        "reason": "Domino Park\u2019s boat ramp opens onto Mill Bayou and the Little Manatee River, expressing Ruskin\u2019s boating character."
       },
       "callouts": [
         {
@@ -1646,7 +1646,7 @@
       "hero": {
         "lon": -82.7604802,
         "lat": 28.154927,
-        "reason": "The sponge docks and Anclote River show Tarpon Springs’ distinctive working waterfront."
+        "reason": "The sponge docks and Anclote River show Tarpon Springs\u2019 distinctive working waterfront."
       },
       "callouts": [
         {
@@ -1732,7 +1732,7 @@
       "hero": {
         "lon": -82.7742003,
         "lat": 27.771197,
-        "reason": "The wide Gulf beachfront frames Treasure Island’s resort and residential strip."
+        "reason": "The wide Gulf beachfront frames Treasure Island\u2019s resort and residential strip."
       },
       "callouts": [
         {
@@ -1984,7 +1984,7 @@
       "hero": {
         "lon": -82.6853681,
         "lat": 27.4659637,
-        "reason": "The fish-house waterfront on Sarasota Bay captures Cortez’s working fishing-village identity."
+        "reason": "The fish-house waterfront on Sarasota Bay captures Cortez\u2019s working fishing-village identity."
       },
       "callouts": [
         {
@@ -2070,7 +2070,7 @@
       "hero": {
         "lon": -82.36303642272726,
         "lat": 26.956875097727277,
-        "reason": "The Lemon Bay waterfront and nearby Old Englewood blocks convey the town’s quiet boating character."
+        "reason": "The Lemon Bay waterfront and nearby Old Englewood blocks convey the town\u2019s quiet boating character."
       },
       "callouts": [
         {
@@ -2248,7 +2248,7 @@
       "hero": {
         "lon": -82.55220148800001,
         "lat": 27.266750711999993,
-        "reason": "The public beach park anchors Siesta Key’s broad white-sand Gulf frontage."
+        "reason": "The public beach park anchors Siesta Key\u2019s broad white-sand Gulf frontage."
       },
       "callouts": [
         {
@@ -2328,7 +2328,7 @@
       "hero": {
         "lon": -82.4597052,
         "lat": 27.099629712499997,
-        "reason": "Venice Beach puts the Gulf and the town’s coastal neighborhood in the same frame."
+        "reason": "Venice Beach puts the Gulf and the town\u2019s coastal neighborhood in the same frame."
       },
       "callouts": [
         {
@@ -2444,7 +2444,7 @@
       "hero": {
         "lon": -80.18603879999999,
         "lat": 25.776206457142855,
-        "reason": "Bayfront Park frames Biscayne Bay beside Miami’s downtown skyline."
+        "reason": "Bayfront Park frames Biscayne Bay beside Miami\u2019s downtown skyline."
       },
       "callouts": [
         {
@@ -2530,7 +2530,7 @@
       "hero": {
         "lon": -80.12968640965909,
         "lat": 25.779641738636368,
-        "reason": "Ocean Drive and Lummus Park pair the Art Deco frontage with South Beach’s ocean edge."
+        "reason": "Ocean Drive and Lummus Park pair the Art Deco frontage with South Beach\u2019s ocean edge."
       },
       "callouts": [
         {
@@ -2652,7 +2652,7 @@
       "hero": {
         "lon": -81.74247455454541,
         "lat": 25.94788946477271,
-        "reason": "Tigertail’s lagoon, white sand and nearby canal homes show Marco Island’s coastal character."
+        "reason": "Tigertail\u2019s lagoon, white sand and nearby canal homes show Marco Island\u2019s coastal character."
       },
       "callouts": [
         {
@@ -2732,7 +2732,7 @@
       "hero": {
         "lon": -81.3871886,
         "lat": 25.858203,
-        "reason": "The historic Rod and Gun Club on the Barron River anchors Everglades City’s fishing-town waterfront."
+        "reason": "The historic Rod and Gun Club on the Barron River anchors Everglades City\u2019s fishing-town waterfront."
       },
       "callouts": [
         {
@@ -2830,7 +2830,7 @@
       "hero": {
         "lon": -81.3624917,
         "lat": 25.810009,
-        "reason": "Smallwood Store’s bayfront setting captures Chokoloskee’s historic trading-post and fishing-island identity."
+        "reason": "Smallwood Store\u2019s bayfront setting captures Chokoloskee\u2019s historic trading-post and fishing-island identity."
       },
       "callouts": [
         {
@@ -2896,6 +2896,110 @@
         "tiltDegrees": 45
       },
       "mobile_render_url": "../explore_coast.html?view=chokoloskee&level=town&landing=1&cx=264.05906097637387&cy=203.49074900837044&span=1.4&district=chokoloskee-center"
+    },
+    {
+      "town_id": "pensacola",
+      "name": "Pensacola",
+      "desktop": "pensacola.webp",
+      "mobile": "pensacola-m.webp",
+      "center": {
+        "x": -308.49336690182474,
+        "y": 714.758666691564,
+        "lon": -87.21423315348837,
+        "lat": 30.40413731627907
+      },
+      "districts": [
+        {
+          "id": "pensacola-center",
+          "name": "Pensacola",
+          "lon": -87.2169149,
+          "lat": 30.421309
+        }
+      ],
+      "district": "pensacola-center",
+      "span": 2.8,
+      "status": "Passed locked pipeline and desktop/phone visual review; physical-phone speed not verified",
+      "hero": {
+        "lon": -87.21423315348837,
+        "lat": 30.40413731627907,
+        "reason": "Palafox Pier connects Pensacola\u2019s historic main street to its working bayfront."
+      },
+      "callouts": [
+        {
+          "name": "Palafox Pier",
+          "type": "boating",
+          "lon": -87.21423315348837,
+          "lat": 30.40413731627907
+        },
+        {
+          "name": "Plaza Ferdinand VII",
+          "type": "park",
+          "lon": -87.2138992,
+          "lat": 30.408916920000003
+        },
+        {
+          "name": "Pensacola Museum of History",
+          "type": "landmark",
+          "lon": -87.21314530000001,
+          "lat": 30.408697384615383
+        },
+        {
+          "name": "Seville Square",
+          "type": "park",
+          "lon": -87.20981040000001,
+          "lat": 30.409459771428573
+        },
+        {
+          "name": "Saenger Theatre",
+          "type": "landmark",
+          "lon": -87.21434357857143,
+          "lat": 30.4107185
+        }
+      ],
+      "camera": {
+        "position": [
+          -308.49336690182474,
+          2.1874999999999996,
+          -712.571166691564
+        ],
+        "target": [
+          -308.49336690182474,
+          0,
+          -714.758666691564
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=pensacola&level=town&landing=1&cx=-308.49336690182474&cy=714.758666691564&span=2.8&district=pensacola-center",
+      "mobile_camera": {
+        "position": [
+          -308.49336690182474,
+          2.1874999999999996,
+          -712.571166691564
+        ],
+        "target": [
+          -308.49336690182474,
+          0,
+          -714.758666691564
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=pensacola&level=town&landing=1&cx=-308.49336690182474&cy=714.758666691564&span=1.4&district=pensacola-center"
     }
   ]
 }

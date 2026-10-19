@@ -1,0 +1,59 @@
+{
+  "recipes": {
+    "pensacola": {
+      "walls": [
+        "#f0dec5",
+        "#d8bda5",
+        "#d5dfcf",
+        "#e4c8b5",
+        "#d1dde0"
+      ],
+      "roofs": [
+        "#85938d",
+        "#b9beb8",
+        "#a78975"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "canopy": "live-oak",
+      "source": "https://www.cityofpensacola.com/3414/Historic-Preservation"
+    },
+    "pensacola-downtown": {
+      "walls": [
+        "#f0dec5",
+        "#d8bda5",
+        "#d5dfcf",
+        "#e4c8b5"
+      ],
+      "roofs": [
+        "#82908b",
+        "#babbb3",
+        "#b18a71"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.cityofpensacola.com/DocumentCenter/View/21296"
+    }
+  },
+  "styleZones": [
+    {
+      "bounds": [
+        -87.222,
+        30.4,
+        -87.205,
+        30.417
+      ],
+      "recipe": "pensacola-downtown"
+    }
+  ],
+  "landmarks": {
+    "way/361999506": {
+      "illustratedRealHeightMeters": 10.5,
+      "walls": [
+        "#efd4ae"
+      ],
+      "source": "https://www.visitpensacola.com/things-to-do/downtown/",
+      "note": "Three-story historic city hall; floor height is an illustrative estimate."
+    }
+  }
+}

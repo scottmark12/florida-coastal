@@ -1,0 +1,33 @@
+{
+  "region": "pensacola",
+  "building_count": 5161,
+  "tree_count": 56761,
+  "region_bytes": 259593,
+  "max_tile_bytes": 472778,
+  "max_anchor_error_m": 0.0276,
+  "max_coast_float32_error_m": 0.0338578955636743,
+  "height_sources": {
+    "height": 0,
+    "levels": 50,
+    "assumed": 5110
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "Passed locked release gates; desktop and phone visual review completed; physical phone timing unverified",
+  "exported_boundary_source_error_m": 131.62943662991032,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+  "manual_fixes": [
+    "City-specific package requested by user; other cities in the parent region remain unchanged.",
+    "Separate downtown and historic-residential style zones; source canopy preserved.",
+    "Landmark-specific recipe inputs supply missing height where documented; shared scale caps still apply.",
+    "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged.",
+    "Retained explicitly mapped closed coastline island inside generalized Pensacola Bay water polygon, which omits this small island. https://www.openstreetmap.org/way/555468911"
+  ],
+  "initial_asset_bytes": 511348
+}
