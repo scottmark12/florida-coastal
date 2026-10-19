@@ -13,7 +13,7 @@
     "work/coastal_pipeline/v4/run.py": "5a9b7451edf2ca4fb9bc579c9da5dbdbd5489e4249f8a57ff8562fef0a8181a5",
     "work/coastal_pipeline/v4/publish.py": "0eff4367e067a413586c377a15439bc92892c2fcaa289b00959f8f7b1d5b22a5",
     "work/coastal_pipeline/v3/atlas-layer.js": "3b69812849bcca8b7b482fa926f5b6fc5d8cd7bc063802205277be7b6c14a370",
-    "work/atlas_regions/app.js": "1c1cecaa2b5cec73be418e4f45dbac4e9a0edb6460501437da18e261df1e1edf",
+    "work/atlas_regions/app.js": "13e846ea52b12f8a8b720663ee5d331e78e11cc69ec8e345eb5f28d1122668bc",
     "work/30a_finish/geometry.py": "0e286e67440ae5adfe1cb972f63b960178af3062c3c1d6ee7f245cffc2d9d9f5",
     "work/coastal_pipeline/v3/marina-boats.js": "139647b5104dfe9725f2fffc122d7b37046cde4636a50e4be0743ae6a52b9f09",
     "work/coastal_pipeline/v4/water-recipes.json": "1433dbeb9118ce26e64d732bb7acb92fd132b4d4e3a8b0f6fac9da8848105299",
@@ -23,5 +23,5 @@
     "boats.py": "bfb71e3093d098174f0e1a9ed2521aaf77f08dd650a08688b87feadd0fdc52f2",
     "extract_marinas.py": "6d47fe817315d1816f1c38fe99c691648afef15bb30c64bc3f39da447643dce4"
   },
-  "change": "User-authorized two-level hero exports, OSM bridge decks/piers, and type/footprint height estimates for non-house buildings; existing explicit heights and scale caps retained."
+  "change": "User-authorized two-level hero exports, OSM bridge decks/piers, and type/footprint height estimates for non-house buildings; existing explicit heights and scale caps retained. User-requested 30A lake navigation repair only: frame mapped lake bounds; no geometry, palette or scale-rule changes."
 }
