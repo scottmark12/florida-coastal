@@ -1410,20 +1410,20 @@
     },
     {
       "town_id": "destin",
-      "hero_name": "HarborWalk Marina",
-      "hero_source": "https://www.openstreetmap.org/node/5320475763",
-      "coordinate_method": "OSM mapped feature, or published government facility GPS where linked.",
+      "hero_name": "Destin Harbor Boardwalk",
+      "hero_source": "https://www.openstreetmap.org/way/679963288",
+      "coordinate_method": "OSM mapped Boardwalk building centroid; view target only, district place-label anchor unchanged.",
       "points": [
         {
           "name": "HarborWalk Marina",
           "source": "https://www.openstreetmap.org/node/5320475763",
           "mobile_uv": [
-            0.5,
-            0.5
+            0.19500922079362226,
+            0.5846889319114389
           ],
           "desktop_uv": [
-            0.5,
-            0.5
+            0.34750461039681113,
+            0.5846889319114389
           ],
           "included": true
         },
@@ -1431,12 +1431,12 @@
           "name": "Destin History & Fishing Museum",
           "source": "https://www.openstreetmap.org/way/165762172",
           "mobile_uv": [
-            0.6626560670586384,
-            0.4064878267944778
+            0.520321354910899,
+            0.3976645855003945
           ],
           "desktop_uv": [
-            0.5813280335293192,
-            0.4064878267944778
+            0.5101606774554496,
+            0.3976645855003945
           ],
           "included": true
         },
@@ -1444,12 +1444,12 @@
           "name": "Emerald Grande",
           "source": "https://www.openstreetmap.org/way/550902540",
           "mobile_uv": [
-            0.45210683043859085,
-            0.4616560449494898
+            0.0992228816708039,
+            0.5080010218104185
           ],
           "desktop_uv": [
-            0.4760534152192954,
-            0.4616560449494898
+            0.2996114408354019,
+            0.5080010218104185
           ],
           "included": true
         },
@@ -1457,12 +1457,12 @@
           "name": "Destin Harbor Boardwalk",
           "source": "https://www.openstreetmap.org/way/679963288",
           "mobile_uv": [
-            0.6524953896031889,
-            0.45765553404428055
+            0.5,
+            0.5
           ],
           "desktop_uv": [
-            0.5762476948015944,
-            0.45765553404428055
+            0.5,
+            0.5
           ],
           "included": true
         },
@@ -1470,14 +1470,14 @@
           "name": "Captain Leonard Destin Park",
           "source": "https://www.openstreetmap.org/node/8759151706",
           "mobile_uv": [
-            0.39337822533087774,
-            0.30417905099010745
+            -0.018234328544622258,
+            0.1930470338916539
           ],
           "desktop_uv": [
-            0.44668911266543887,
-            0.30417905099010745
+            0.24088283572768887,
+            0.1930470338916539
           ],
-          "included": true
+          "included": false
         }
       ]
     }

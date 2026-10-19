@@ -1,6 +1,6 @@
 {
   "town_count": 38,
-  "callout_count": 89,
+  "callout_count": 88,
   "towns": [
     {
       "town_id": "30a",
@@ -559,7 +559,7 @@
     },
     {
       "town_id": "destin",
-      "callouts": 5,
+      "callouts": 4,
       "desktop_size": [
         1600,
         1000
@@ -569,7 +569,7 @@
         1000
       ],
       "tilt_degrees": 45,
-      "span_km": 2.8,
+      "span_km": 1.4,
       "checks": "passed"
     }
   ]
