@@ -7,6 +7,7 @@ if(new URLSearchParams(location.search).get('proof')==='unlabeled')document.docu
 const started=performance.now(), $=s=>document.querySelector(s), mobile=matchMedia('(max-width:699px)').matches;
 const [catalog,districts,features,builtRoutes,roadData]=await Promise.all(['catalog.json','districts.json','features.json','routes.json','roads.json'].map(p=>fetch(assetBase+p).then(r=>r.json())));
 const packageRegistry=await fetch(assetBase+'package-registry.json').then(r=>r.json());
+const townViews=await fetch(assetBase+'town-views.json').then(r=>r.json());
 const towns=catalog.towns, regions=catalog.regions, byId=Object.fromEntries(towns.map(t=>[t.id,t]));
 const qs=new URLSearchParams(location.search);const landing=qs.get('landing')==='1';if(landing)document.documentElement.classList.add('landing-export');
 let thirty=null,thirtyModel=null,sandArt=null,alysArt=null,alysOccupied=[];
@@ -55,6 +56,8 @@ function setCamera(){
  else {target.set(activeTown.x,0,-activeTown.y);span=level==='region'?48:22;if(level==='town'&&selectedDistrict){target.set(selectedDistrict.x,0,-selectedDistrict.y);span=17}}
  if(isThirty()){if(level==='region'){target.set(innerWidth<700?-204:-199,0,innerWidth<700?-705:-708);span=innerWidth<700?32:48;if(weights.airport){const route=builtRoutes.find(r=>r.town==='30a'&&(selectedDistrict?r.district===selectedDistrict.id:!r.district));if(route){const xs=route.points.map(p=>p[0]),ys=route.points.map(p=>p[1]);span=Math.max(48,(Math.max(...xs)-Math.min(...xs))*1.55);target.set((Math.min(...xs)+Math.max(...xs))/2+(mobile?0:span*.09),0,-(Math.min(...ys)+Math.max(...ys))/2)}}}else{const d=selectedDistrict||districts.find(d=>d.id==='seaside'&&d.town==='30a');target.set(d.x,0,-d.y);span=.85}}
  if(isDetailed()&&detailedLayer){if(level==='region'){const c=detailedLayer.meta.camera||{center:[detailedLayer.meta.center[0]+1,detailedLayer.meta.center[1]],phoneOffsetY:4,phoneSpan:20,desktopSpan:32};target.set(c.center[0]+(innerWidth<700?0:(c.desktopOffsetX||0)),0,-c.center[1]+(innerWidth<700?c.phoneOffsetY:0));span=innerWidth<700?c.phoneSpan:c.desktopSpan}else{const d=selectedDistrict||detailedLayer.meta.districts[0];target.set(d.x,0,-d.y);span=innerWidth<700?1.05:1.9}}
+ const townView=townViews[activeTown.id];
+ if(level==='town'&&townView&&(!selectedDistrict||selectedDistrict.id===townView.district)){target.set(townView.x,0,-townView.y);span=innerWidth<700?townView.phoneSpan:townView.desktopSpan}
  if(landing&&level==='town'){if(qs.has('cx'))target.set(Number(qs.get('cx')),0,-Number(qs.get('cy')));span=Number(qs.get('span')||span);}
  const mapHeight=innerHeight;renderer.setSize(innerWidth,mapHeight);const a=innerWidth/mapHeight, height=level==='state'?Math.max(span,span/(a*.9)):span/a;camera.left=-height*a/2;camera.right=height*a/2;camera.top=height/2;camera.bottom=-height/2;camera.position.copy(target).add(new THREE.Vector3(0,height*1.25,height*1.25));camera.lookAt(target);camera.updateProjectionMatrix();sun.position.copy(target).add(new THREE.Vector3(-height,height*1.5,height*.6));sun.target.position.copy(target);Object.assign(sun.shadow.camera,{left:-height,right:height,top:height,bottom:-height,near:.001,far:height*5});sun.shadow.camera.updateProjectionMatrix();sun.shadow.normalBias=(isThirty()||isDetailed())?.0001:.06;
  $('#scale').textContent=level==='state'?'Florida · regional overview':level==='region'?(isDetailed()?activeTown.name+' · regional atlas':'Regional view · approximately 30 miles across'):(isThirty()?'Neighborhood view · 850 m across · 3× height, capped at 3× footprint':'Neighborhood view · illustrated building scale');
@@ -67,7 +70,7 @@ async function show(){
    const packagePath=packageRegistry[activeTown.id];if(detailedLayer)detailedLayer.hide();if(!detailedLayers.has(packagePath)){const layer=await createRegionLayer(assetBase+packagePath);detailedLayers.set(packagePath,layer);scene.add(layer.root)}detailedLayer=detailedLayers.get(packagePath);const credit=document.getElementById('canopy-credit');if(credit)credit.textContent=detailedLayer.meta.canopyAttribution||'OSM-based geography · original illustrated canopy';
    if(token!==packageToken)return;
    for(const o of [terrain,architecture,stateIcons,thirtyModel,sandArt,alysArt])if(o)o.visible=false;
-   roadLines.visible=false;setCamera();await detailedLayer.show(level==='town'?(landing?{...(selectedDistrict||{}),id:selectedDistrict?.id||activeTown.id,x:target.x,y:-target.z}:(selectedDistrict||detailedLayer.meta.districts[0])):null,innerWidth<700?2.5:2.1);
+   roadLines.visible=false;setCamera();await detailedLayer.show(level==='town'?{...(selectedDistrict||detailedLayer.meta.districts[0]),x:target.x,y:-target.z}:null,innerWidth<700?2.5:2.1);
    if(token!==packageToken)return;status('');updateUi();makeLabels();highlight();if(flight)animateFlight(flight,token);else render();document.body.dataset.ready='true';document.body.dataset.pipeline='shared-atlas';return;
   }
   if(detailedLayer)detailedLayer.hide();const credit=document.getElementById('canopy-credit');if(credit)credit.textContent='OSM-based geography · original illustrated canopy';if(terrain)terrain.visible=true;

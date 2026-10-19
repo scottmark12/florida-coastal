@@ -13,10 +13,10 @@
     "work/coastal_pipeline/v4/run.py": "5a9b7451edf2ca4fb9bc579c9da5dbdbd5489e4249f8a57ff8562fef0a8181a5",
     "work/coastal_pipeline/v4/publish.py": "0eff4367e067a413586c377a15439bc92892c2fcaa289b00959f8f7b1d5b22a5",
     "work/coastal_pipeline/v3/atlas-layer.js": "3b69812849bcca8b7b482fa926f5b6fc5d8cd7bc063802205277be7b6c14a370",
-    "work/atlas_regions/app.js": "dcbb978acb00478b8dbe477a3d01aa754cff976185d67b4e92052a24a75aa6f7",
+    "work/atlas_regions/app.js": "8328646ca25b657d2ba15471fd65ca208da43bf576a061de031df8c652a58f97",
     "work/30a_finish/geometry.py": "0e286e67440ae5adfe1cb972f63b960178af3062c3c1d6ee7f245cffc2d9d9f5",
     "work/coastal_pipeline/v3/marina-boats.js": "139647b5104dfe9725f2fffc122d7b37046cde4636a50e4be0743ae6a52b9f09",
     "work/coastal_pipeline/v4/water-recipes.json": "1433dbeb9118ce26e64d732bb7acb92fd132b4d4e3a8b0f6fac9da8848105299"
   },
-  "change": "User-requested wider Emerald/Forgotten Coast illustrated water recipe; land, buildings, coastline, canopy, scale and camera geometry unchanged."
+  "change": "User-requested Destin Town camera framing on the approved HarborWalk hero; tiles follow camera center. Geometry and scale rules unchanged."
 }
