@@ -29,8 +29,10 @@ Here “finished” means the existing approved or review-ready detailed package
 | Emerald Coast beyond 30A | `pensacola`, `pensacola-beach`, `destin`, `panama-city`, `pcb` | Individual package reviews under `regions/packages/<id>/atlas-review.html` |
 | Jacksonville | `jacksonville` | [Jacksonville](regions/packages/jacksonville/atlas-review.html) |
 | Forgotten Coast | `mexico-beach`, `port-st-joe`, `apalachicola`, `st-george-island`, `carrabelle`, `st-teresa`, `st-marks` | [Forgotten Coast](regions/packages/forgotten-coast/atlas-review.html) |
+| Nature Coast | `steinhatchee`, `cedarkey`, `crystal-river`, `ozello`, `homosassa` | [Nature Coast](regions/packages/nature-coast/atlas-review.html) |
 
-Remaining towns in Fort Myers, Keys, Palm Beaches, Fort Lauderdale, Treasure Coast, Space Coast, Daytona, First Coast beyond Jacksonville, and Nature Coast retain overview coverage and are not finished detailed packages. They do not receive landing exports yet.
+
+Remaining towns in Fort Myers, Keys, Palm Beaches, Fort Lauderdale, Treasure Coast, Space Coast, Daytona and First Coast beyond Jacksonville retain overview coverage and are not finished detailed packages. They do not receive landing exports yet.
 
 ## Landing images
 
@@ -165,8 +167,21 @@ Region fits all towns in the selected catalog region, reserving space for the he
 
 ## Two landing zooms, mapped bridges, and coastal height rules (v5.0)
 
-All 45 finished towns have two hero-centered zooms and 180 landing images. Most Town images span 5–6 km; Tampa, Miami and Jacksonville span 8 km, and smaller towns use tighter context. The Street camera preserves the previous close span. `landing/index.json` keeps existing compatibility fields and adds `views.town` / `views.street`, both desktop and phone cameras, and separate per-frame callouts. The gallery compares both zooms side by side. See [export steps](pipeline/landing-export.md).
+All 50 finished towns have two hero-centered zooms and 200 landing images. Most Town images span 5–6 km; Tampa, Miami and Jacksonville span 8 km, and smaller towns use tighter context. The Street camera preserves the previous close span. `landing/index.json` keeps existing compatibility fields and adds `views.town` / `views.street`, both desktop and phone cameras, and separate per-frame callouts. The gallery compares both zooms side by side. See [export steps](pipeline/landing-export.md).
 
 Bridge geometry comes from every highway/rail bridge way (at least 3 m long) in the existing Geofabrik Florida 2026-10-17 snapshot. Warm decks, pale rails and piers follow the mapped centerlines. The runtime loads only intersecting 10 km bridge tiles. Width uses OSM width/lanes when available; missing width, clearance and pier spacing are illustration estimates. [Coverage](regions/bridges-report.json), [source inventory](regions/bridges.json.gz), and [serialized alignment check](regions/bridges-validation.json) accompany the export. The statewide intermediate mesh stays in ignored pipeline outputs. Raw PBF data is re-downloadable from the existing Geofabrik source recorded above.
 
 The Emerald Coast rebuild preserves footprints and explicit OSM heights/levels, adds flagged type/area estimates for untagged coastal condos/hotels/resorts, and keeps the 3× display and footprint caps. Pensacola historic blocks retain red brick; Pensacola Beach/PCB use white and pastel condos; Destin keeps fishing-village buildings and a separate resort recipe. Mapped marina docks and marina water areas receive illustrative fleets; Destin also has a source-aligned HarborWalk shoreline berth recipe where OSM lacks individual slip detail. Emerald and Forgotten Coast use the existing wider vivid green-turquoise wash to deep blue. Boat occupancy and missing height estimates are not field surveys.
+
+
+### Nature Coast detailed packages (2026-10-19)
+
+Five source-aligned town packages use the unchanged v5.0 lock: Steinhatchee, Cedar Key, Crystal River, Ozello and Homosassa. The Nature Coast review hub links each town’s OSM overlay, accuracy CSV, source-attributed asking median and both landing zooms. Town-wide prices are September 2026 Realtor.com asking medians; Ozello retains the dated October 17 sample of 16 residential listings, with its individual sample table in `pipeline/work/coastal_pipeline/v4/nature-coast/`. They are not live feeds or neighborhood sale medians.
+
+OSM water, roads, land cover and anchors come from the Geofabrik Florida 2026-10-17 snapshot. ESA WorldCover 2021 supplies measured tree-class masks; mapped wetlands remain open marsh. Microsoft Global ML Building Footprints fills incomplete OSM coverage after excluding footprint overlaps, under CDLA Permissive 2.0. These are imagery-derived house footprints with explicitly estimated default heights, not surveyed houses or heights. Per-town `building-sources.json` and source subsets identify them separately from OSM.
+
+Manual input work: five district palette recipes; source-positioned waterfront heroes; supplemental building footprints; and illustrative Steinhatchee marina-frontage berths where OSM has no individual slips. The renderer, scale rules, labels and phone behavior were unchanged. Every district anchor is under 0.04 m from its serialized source anchor; the maximum coastline-to-source deviation is under 38 m. These measure source fidelity, not independent ground truth. Physical-phone speed remains unverified.
+
+Rebuild an existing normalized package from `atlas/pipeline`: restore excluded OSM and WorldCover inputs with `python fetch_inputs.py <town-id>`, then `python build_region.py <town-id>`. Supplemental normalized footprints are included; original Microsoft downloads are excluded. To refresh their source subsets, use `python supplement_nature_buildings.py`; it downloads only the three published tiles listed in `nature-building-downloads.json`. A coherent historical source archive can be normalized with `python prepare_nature_coast.py /path/to/nature-coast-source`; live OSM re-downloads can differ from the reviewed snapshot and must pass the same accuracy checks.
+
+For mapped marina extraction, run `python extract_marinas.py /path/to/florida-261017.osm.pbf steinhatchee,cedarkey,crystal-river,ozello,homosassa`, then `python boats.py work/coastal_pipeline/downloads/marinas/index.json`. Re-apply source-positioned hero metadata with `python prepare_nature_landings.py`, capture the resulting queue through the shared viewer and finish with `python finalize_landings.py` and `python check_landings.py`. The four WebPs per town use the existing Town/Street camera schema. No raw PBF, tile downloads, canopy PNG inputs or caches are committed.

@@ -1,0 +1,69 @@
+{
+  "region": {
+    "id": "nature-coast",
+    "coast": "gulf",
+    "name": "Crystal River",
+    "map": "Nature Coast",
+    "at": [
+      29.02,
+      -83.05
+    ],
+    "side": "W",
+    "img": "img/spring-nature-coast.jpg",
+    "text": "Where the Panhandle bends into the peninsula, the coast turns to marsh and there is very little development. Life here is springs, rivers, scalloping and fishing, in towns like Cedar Key, Crystal River and Steinhatchee.",
+    "towns": [
+      "crystal-river"
+    ],
+    "center": [
+      111.67831447013353,
+      563.3144324692848
+    ]
+  },
+  "towns": [
+    {
+      "id": "crystal-river",
+      "name": "Crystal River",
+      "region": "Nature Coast",
+      "coast": "gulf",
+      "lat": 28.9,
+      "lon": -82.591,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "dock",
+        "active"
+      ],
+      "airport": "Tampa (TPA), about 1.5 hours",
+      "season": "Busiest in winter manatee season",
+      "watch": "Storm surge flooding. Hit by recent hurricanes",
+      "blurb": "A spring fed town on Kings Bay where hundreds of manatees spend the winter.",
+      "day": "You paddle Kings Bay at first light with manatees surfacing around you, and in summer you head out for scallops.",
+      "todo": [
+        [
+          "Three Sisters Springs",
+          "Clear blue springs and a boardwalk for watching manatees in winter."
+        ]
+      ],
+      "pros": [
+        "Springs, manatees and scalloping",
+        "Affordable"
+      ],
+      "cons": [
+        "Only a small Gulf beach nearby",
+        "Flood risk in storms"
+      ],
+      "x": 137.15239068209831,
+      "y": 544.5290289684691,
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://www.floridacoastal.co/towns/crystal-river.html",
+      "nearest_town_km": 5.788678461698223
+    }
+  ],
+  "bounds": [
+    -82.65599999999999,
+    28.845,
+    -82.526,
+    28.955
+  ]
+}

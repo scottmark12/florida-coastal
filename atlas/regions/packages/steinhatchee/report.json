@@ -1,0 +1,41 @@
+{
+  "region": "steinhatchee",
+  "building_count": 3494,
+  "tree_count": 174035,
+  "region_bytes": 242930,
+  "max_tile_bytes": 356575,
+  "max_anchor_error_m": 0.0094,
+  "max_coast_float32_error_m": 0.030541292165104553,
+  "height_sources": {
+    "assumed-house": 3472,
+    "estimated-nonresidential": 21,
+    "estimated-type-footprint": 1
+  },
+  "max_height_width_ratio": 2.600095261399494,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates.",
+    "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+  ],
+  "status": "candidate; visual QA required",
+  "exported_boundary_source_error_m": 26.279561881968885,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+  "building_sources": [
+    {
+      "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+      "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021023/part-00185-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+      "release": "2026-02-03",
+      "license": "CDLA Permissive 2.0",
+      "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+      "download_sha256": "d2ffcf7365449507d4b9054973c6544a8f850fb363c413fd46c9f578b4799a5c",
+      "footprints": 2187,
+      "notes": [
+        "Imagery-derived footprints, not current field survey. OSM overlaps excluded.",
+        "Negative IDs are local, never OSM IDs. Heights use unchanged house defaults, not surveyed heights."
+      ]
+    }
+  ]
+}

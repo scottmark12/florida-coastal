@@ -1,0 +1,68 @@
+{
+  "region": {
+    "id": "nature-coast",
+    "coast": "gulf",
+    "name": "Homosassa",
+    "map": "Nature Coast",
+    "at": [
+      29.02,
+      -83.05
+    ],
+    "side": "W",
+    "img": "img/spring-nature-coast.jpg",
+    "text": "Where the Panhandle bends into the peninsula, the coast turns to marsh and there is very little development. Life here is springs, rivers, scalloping and fishing, in towns like Cedar Key, Crystal River and Steinhatchee.",
+    "towns": [
+      "homosassa"
+    ],
+    "center": [
+      111.67831447013353,
+      563.3144324692848
+    ]
+  },
+  "towns": [
+    {
+      "id": "homosassa",
+      "name": "Homosassa",
+      "region": "Nature Coast",
+      "coast": "gulf",
+      "lat": 28.781,
+      "lon": -82.615,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "dock"
+      ],
+      "airport": "Tampa (TPA), about 1 hour 20 minutes",
+      "season": "Quiet, busier in scallop season",
+      "watch": "Storm surge flooding. Helene flooded Old Homosassa in 2024",
+      "blurb": "An Old Florida river town known for manatees, scalloping and waterfront spots you can pull up to by boat.",
+      "day": "You idle down the Homosassa River to the Gulf for scallops and stop at a riverside spot on the way home.",
+      "todo": [
+        [
+          "Homosassa Springs Wildlife State Park",
+          "See manatees and native Florida wildlife up close."
+        ]
+      ],
+      "pros": [
+        "River and Gulf access",
+        "Affordable"
+      ],
+      "cons": [
+        "No beach",
+        "Few services nearby"
+      ],
+      "x": 134.9647464779653,
+      "y": 531.2882309927161,
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://www.floridacoastal.co/towns/homosassa.html",
+      "nearest_town_km": 9.401314717950076
+    }
+  ],
+  "bounds": [
+    -82.67999999999999,
+    28.726,
+    -82.55,
+    28.836
+  ]
+}

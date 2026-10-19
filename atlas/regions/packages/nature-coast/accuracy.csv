@@ -1,0 +1,6 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Steinhatchee,60.32114791870117,629.6295776367188,-83.37585929631007,29.672082184605824,-83.3758593,29.6720821,0.0094,https://www.openstreetmap.org/node/3676401329,Representative OSM town place-label anchor: Steinhatchee
+Cedar Key,93.63422393798828,570.5098876953125,-83.03596379020479,29.13772102025968,-83.0359638,29.1377209,0.0134,https://www.openstreetmap.org/node/153930590,Representative OSM town place-label anchor: Cedar Key
+Crystal River,136.99339294433594,544.8025512695312,-82.59260121171737,28.90247923027014,-82.5926012,28.902479,0.0256,https://www.openstreetmap.org/node/154066628,Representative OSM town place-label anchor: Crystal River
+Ozello,130.81344604492188,536.2194213867188,-82.6570458959742,28.82581489003173,-82.6570459,28.8258147,0.0211,https://www.openstreetmap.org/node/153933485,Representative OSM town place-label anchor: Ozello
+Homosassa,134.95452880859375,531.3294677734375,-82.61510009202186,28.781372335556313,-82.6151001,28.7813722,0.0151,https://www.openstreetmap.org/node/154073926,Representative OSM town place-label anchor: Homosassa

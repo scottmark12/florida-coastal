@@ -1,7 +1,7 @@
 {
-  "town_count": 45,
-  "view_count": 90,
-  "image_count": 180,
+  "town_count": 50,
+  "view_count": 100,
+  "image_count": 200,
   "towns": [
     {
       "town_id": "30a",
@@ -631,6 +631,76 @@
       "view": "street",
       "span_km": 1.9,
       "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cedarkey",
+      "view": "town",
+      "span_km": 3.2,
+      "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cedarkey",
+      "view": "street",
+      "span_km": 1.4,
+      "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "crystal-river",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 3,
+      "checks": "passed"
+    },
+    {
+      "town_id": "crystal-river",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 3,
+      "checks": "passed"
+    },
+    {
+      "town_id": "homosassa",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "homosassa",
+      "view": "street",
+      "span_km": 2.4,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ozello",
+      "view": "town",
+      "span_km": 3.8,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ozello",
+      "view": "street",
+      "span_km": 1.6,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "steinhatchee",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "steinhatchee",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
       "checks": "passed"
     }
   ]

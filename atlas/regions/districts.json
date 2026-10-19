@@ -5692,5 +5692,236 @@
       "geographicScope": "Publisher-defined Cape San Blas market; not an appraisal of this district."
     },
     "source": "https://www.visitgulf.com/destinations/cape-san-blas/"
+  },
+  {
+    "town": "cedarkey",
+    "id": "cedarkey-center",
+    "name": "Cedar Key",
+    "kind": "walk",
+    "description": "A tiny island town of clam farms, kayaks and sunsets over the Gulf.",
+    "style": "cedarkey",
+    "lon": -83.0359638,
+    "lat": 29.1377209,
+    "x": 93.63422309102246,
+    "y": 570.5098743340711,
+    "positionSource": "https://www.openstreetmap.org/node/153930590",
+    "centerMeaning": "Representative OSM town place-label anchor: Cedar Key",
+    "priceRange": "$387,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/levy-county/cedar-key",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 387000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/levy-county/cedar-key"
+    },
+    "source": "https://www.floridacoastal.co/towns/cedarkey.html",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "crystal-river",
+    "id": "crystal-river-center",
+    "name": "Crystal River",
+    "kind": "beach",
+    "description": "A spring fed town on Kings Bay where hundreds of manatees spend the winter.",
+    "style": "crystal-river",
+    "lon": -82.5926012,
+    "lat": 28.902479,
+    "x": 136.99339437667703,
+    "y": 544.8025257125723,
+    "positionSource": "https://www.openstreetmap.org/node/154066628",
+    "centerMeaning": "Representative OSM town place-label anchor: Crystal River",
+    "priceRange": "$325,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/citrus-county/crystal-river",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 325000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/citrus-county/crystal-river"
+    },
+    "source": "https://www.floridacoastal.co/towns/crystal-river.html",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "homosassa",
+    "id": "homosassa-center",
+    "name": "Homosassa",
+    "kind": "beach",
+    "description": "An Old Florida river town known for manatees, scalloping and waterfront spots you can pull up to by boat.",
+    "style": "homosassa",
+    "lon": -82.6151001,
+    "lat": 28.7813722,
+    "x": 134.9545282002394,
+    "y": 531.3294527117348,
+    "positionSource": "https://www.openstreetmap.org/node/154073926",
+    "centerMeaning": "Representative OSM town place-label anchor: Homosassa",
+    "priceRange": "$358,275 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/citrus-county/homosassa",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 358275,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/citrus-county/homosassa"
+    },
+    "source": "https://www.floridacoastal.co/towns/homosassa.html",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "ozello",
+    "id": "ozello-center",
+    "name": "Ozello",
+    "kind": "beach",
+    "description": "A handful of homes on marsh islands at the end of a nine mile winding road. About as remote as the Gulf coast gets.",
+    "style": "ozello",
+    "lon": -82.6570459,
+    "lat": 28.8258147,
+    "x": 130.81344588261746,
+    "y": 536.2194002802755,
+    "positionSource": "https://www.openstreetmap.org/node/153933485",
+    "centerMeaning": "Representative OSM town place-label anchor: Ozello",
+    "priceRange": "$335,000 sample median asking price of 16 residential listings \u00b7 checked October 17, 2026",
+    "priceSource": "https://www.zillow.com/ozello-crystal-river-fl/",
+    "priceEvidence": {
+      "kind": "calculated listing median",
+      "value": 335000.0,
+      "metric": "sample median asking price of 16 residential listings",
+      "period": "checked October 17, 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+      "min": 99000,
+      "max": 995000,
+      "examples": [
+        {
+          "address": "14141 W Board Walk Ln",
+          "price": 315000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1625 S Wallace Point",
+          "price": 559000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1455 S Ozello Trail",
+          "price": 449000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1326 S Estuary Dr",
+          "price": 549000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "2215 S Hunt Point",
+          "price": 314000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1142 S Ozello Trl",
+          "price": 355000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1126 S Urchin Point",
+          "price": 295000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "14272 W Sutton Ct",
+          "price": 99000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "14365 & 14353 W Ebbtide Court",
+          "price": 160000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "13465 W Hillbilly Ln",
+          "price": 410000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1517 S Fishcreek Point",
+          "price": 375000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "13980 W Sanddollar Ln",
+          "price": 548000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "14496 & 14498 W Captain Ct",
+          "price": 250000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "2160 S Gulfwater Point",
+          "price": 299000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1489 S Ozello Trl",
+          "price": 995000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "2195 S Gulfwater Point",
+          "price": 184900,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        }
+      ],
+      "method": "Median of the 16 distinct residential listings on Ozello streets in the cited search; vacant lots, duplicate property rows and southeast Crystal River listings excluded. Sample median, not a published districtwide statistic."
+    },
+    "source": "https://www.floridacoastal.co/towns/ozello.html",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "steinhatchee",
+    "id": "steinhatchee-center",
+    "name": "Steinhatchee",
+    "kind": "beach",
+    "description": "A river fishing village on the Big Bend where summer means scallops and the nearest stoplight is a long way off.",
+    "style": "steinhatchee",
+    "lon": -83.3758593,
+    "lat": 29.6720821,
+    "x": 60.32114760962737,
+    "y": 629.6295682417184,
+    "positionSource": "https://www.openstreetmap.org/node/3676401329",
+    "centerMeaning": "Representative OSM town place-label anchor: Steinhatchee",
+    "priceRange": "$427,450 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/taylor-county/steinhatchee",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 427450,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/taylor-county/steinhatchee"
+    },
+    "source": "https://www.floridacoastal.co/towns/steinhatchee.html",
+    "priceStatus": "Published market median; reporting period shown on card."
   }
 ]

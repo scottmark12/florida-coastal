@@ -2,6 +2,41 @@
   "description": "Illustrated marina occupancy from mapped dock geometry; not real-time boats.",
   "towns": [
     {
+      "town": "cedarkey",
+      "boats": 211,
+      "mapped_docks": 38,
+      "placement_sources": 38,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "crystal-river",
+      "boats": 82,
+      "mapped_docks": 17,
+      "placement_sources": 17,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "homosassa",
+      "boats": 17,
+      "mapped_docks": 3,
+      "placement_sources": 3,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "ozello",
+      "boats": 96,
+      "mapped_docks": 18,
+      "placement_sources": 19,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "steinhatchee",
+      "boats": 7,
+      "mapped_docks": 0,
+      "placement_sources": 2,
+      "mapped_marina_areas": 6
+    },
+    {
       "town": "destin",
       "boats": 485,
       "mapped_docks": 53,
@@ -147,5 +182,5 @@
       "mapped_docks": 0
     }
   ],
-  "total_boats": 7576
+  "total_boats": 7989
 }

@@ -14661,6 +14661,1464 @@
       "mobile_render_url": "../explore_coast.html?view=mexico-beach&level=town&district=mexico-beach-center&landing=1&cx=-137.2673548965128&cy=661.3482631645624&span=2.0",
       "close_render_url": "../explore_coast.html?view=mexico-beach&level=town&district=mexico-beach-center&landing=1&cx=-137.2673548965128&cy=661.3482631645624&span=1.9",
       "close_mobile_render_url": "../explore_coast.html?view=mexico-beach&level=town&district=mexico-beach-center&landing=1&cx=-137.2673548965128&cy=661.3482631645624&span=0.95"
+    },
+    {
+      "town_id": "cedarkey",
+      "name": "Cedar Key",
+      "desktop": "cedarkey.webp",
+      "mobile": "cedarkey-m.webp",
+      "center": {
+        "x": 94.18752446456139,
+        "y": 570.2316157171475,
+        "lon": -83.0302899,
+        "lat": 29.1351760875
+      },
+      "districts": [
+        {
+          "id": "cedarkey-center",
+          "name": "Cedar Key",
+          "lon": -83.0359638,
+          "lat": 29.1377209
+        }
+      ],
+      "district": "cedarkey-center",
+      "span": 3.2,
+      "close_span": 1.4,
+      "hero": {
+        "lon": -83.0302899,
+        "lat": 29.1351760875,
+        "reason": "Dock Street frames Cedar Key\u2019s compact waterfront blocks, wharves and surrounding island water.",
+        "source": "https://www.openstreetmap.org/way/11058267"
+      },
+      "callouts": [
+        {
+          "name": "Dock Street",
+          "type": "walkable",
+          "lon": -83.0302899,
+          "lat": 29.1351760875
+        },
+        {
+          "name": "Lil\u2019 Shark Park",
+          "type": "park",
+          "lon": -83.02956044285713,
+          "lat": 29.1372346
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Dock Street",
+          "type": "walkable",
+          "lon": -83.0302899,
+          "lat": 29.1351760875
+        },
+        {
+          "name": "Lil\u2019 Shark Park",
+          "type": "park",
+          "lon": -83.02956044285713,
+          "lat": 29.1372346
+        }
+      ],
+      "close_desktop": "cedarkey-close.webp",
+      "close_mobile": "cedarkey-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "cedarkey.webp",
+          "mobile": "cedarkey-m.webp",
+          "span": 3.2,
+          "camera": {
+            "position": [
+              94.18752446456139,
+              2.5,
+              -567.7316157171475
+            ],
+            "target": [
+              94.18752446456139,
+              0,
+              -570.2316157171475
+            ],
+            "left": -1.6,
+            "right": 1.6,
+            "top": 1,
+            "bottom": -1,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              94.18752446456139,
+              2.5,
+              -567.7316157171475
+            ],
+            "target": [
+              94.18752446456139,
+              0,
+              -570.2316157171475
+            ],
+            "left": -0.8,
+            "right": 0.8,
+            "top": 1,
+            "bottom": -1,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Dock Street",
+              "type": "walkable",
+              "lon": -83.0302899,
+              "lat": 29.1351760875
+            },
+            {
+              "name": "Lil\u2019 Shark Park",
+              "type": "park",
+              "lon": -83.02956044285713,
+              "lat": 29.1372346
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Dock Street",
+              "type": "walkable",
+              "lon": -83.0302899,
+              "lat": 29.1351760875
+            },
+            {
+              "name": "Lil\u2019 Shark Park",
+              "type": "park",
+              "lon": -83.02956044285713,
+              "lat": 29.1372346
+            }
+          ],
+          "render_url": "../explore_coast.html?view=cedarkey&level=town&district=cedarkey-center&landing=1&cx=94.18752446456139&cy=570.2316157171475&span=3.2",
+          "mobile_render_url": "../explore_coast.html?view=cedarkey&level=town&district=cedarkey-center&landing=1&cx=94.18752446456139&cy=570.2316157171475&span=1.6",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "cedarkey-close.webp",
+          "mobile": "cedarkey-close-m.webp",
+          "span": 1.4,
+          "camera": {
+            "position": [
+              94.18752446456139,
+              1.0937499999999998,
+              -569.1378657171475
+            ],
+            "target": [
+              94.18752446456139,
+              0,
+              -570.2316157171475
+            ],
+            "left": -0.7,
+            "right": 0.7,
+            "top": 0.43749999999999994,
+            "bottom": -0.43749999999999994,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              94.18752446456139,
+              1.0937499999999998,
+              -569.1378657171475
+            ],
+            "target": [
+              94.18752446456139,
+              0,
+              -570.2316157171475
+            ],
+            "left": -0.35,
+            "right": 0.35,
+            "top": 0.43749999999999994,
+            "bottom": -0.43749999999999994,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Dock Street",
+              "type": "walkable",
+              "lon": -83.0302899,
+              "lat": 29.1351760875
+            },
+            {
+              "name": "Lil\u2019 Shark Park",
+              "type": "park",
+              "lon": -83.02956044285713,
+              "lat": 29.1372346
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Dock Street",
+              "type": "walkable",
+              "lon": -83.0302899,
+              "lat": 29.1351760875
+            },
+            {
+              "name": "Lil\u2019 Shark Park",
+              "type": "park",
+              "lon": -83.02956044285713,
+              "lat": 29.1372346
+            }
+          ],
+          "render_url": "../explore_coast.html?view=cedarkey&level=town&district=cedarkey-center&landing=1&cx=94.18752446456139&cy=570.2316157171475&span=1.4",
+          "mobile_render_url": "../explore_coast.html?view=cedarkey&level=town&district=cedarkey-center&landing=1&cx=94.18752446456139&cy=570.2316157171475&span=0.7",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          94.18752446456139,
+          2.5,
+          -567.7316157171475
+        ],
+        "target": [
+          94.18752446456139,
+          0,
+          -570.2316157171475
+        ],
+        "left": -1.6,
+        "right": 1.6,
+        "top": 1,
+        "bottom": -1,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          94.18752446456139,
+          2.5,
+          -567.7316157171475
+        ],
+        "target": [
+          94.18752446456139,
+          0,
+          -570.2316157171475
+        ],
+        "left": -0.8,
+        "right": 0.8,
+        "top": 1,
+        "bottom": -1,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=cedarkey&level=town&district=cedarkey-center&landing=1&cx=94.18752446456139&cy=570.2316157171475&span=3.2",
+      "mobile_render_url": "../explore_coast.html?view=cedarkey&level=town&district=cedarkey-center&landing=1&cx=94.18752446456139&cy=570.2316157171475&span=1.6",
+      "close_camera": {
+        "position": [
+          94.18752446456139,
+          1.0937499999999998,
+          -569.1378657171475
+        ],
+        "target": [
+          94.18752446456139,
+          0,
+          -570.2316157171475
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.43749999999999994,
+        "bottom": -0.43749999999999994,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          94.18752446456139,
+          1.0937499999999998,
+          -569.1378657171475
+        ],
+        "target": [
+          94.18752446456139,
+          0,
+          -570.2316157171475
+        ],
+        "left": -0.35,
+        "right": 0.35,
+        "top": 0.43749999999999994,
+        "bottom": -0.43749999999999994,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=cedarkey&level=town&district=cedarkey-center&landing=1&cx=94.18752446456139&cy=570.2316157171475&span=1.4",
+      "close_mobile_render_url": "../explore_coast.html?view=cedarkey&level=town&district=cedarkey-center&landing=1&cx=94.18752446456139&cy=570.2316157171475&span=0.7",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "crystal-river",
+      "name": "Crystal River",
+      "desktop": "crystal-river.webp",
+      "mobile": "crystal-river-m.webp",
+      "center": {
+        "x": 136.72462604043787,
+        "y": 544.1869682220439,
+        "lon": -82.59543417391305,
+        "lat": 28.89696392173913
+      },
+      "districts": [
+        {
+          "id": "crystal-river-center",
+          "name": "Crystal River",
+          "lon": -82.5926012,
+          "lat": 28.902479
+        }
+      ],
+      "district": "crystal-river-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -82.59543417391305,
+        "lat": 28.89696392173913,
+        "reason": "Kings Bay Park puts the spring-fed bay, waterfront homes and historic downtown in the same frame.",
+        "source": "https://www.openstreetmap.org/way/307590931"
+      },
+      "callouts": [
+        {
+          "name": "Kings Bay Park",
+          "type": "park",
+          "lon": -82.59543417391305,
+          "lat": 28.89696392173913
+        },
+        {
+          "name": "Hunter Springs Park",
+          "type": "park",
+          "lon": -82.59256543478261,
+          "lat": 28.895074356521743
+        },
+        {
+          "name": "Little Springs Park",
+          "type": "park",
+          "lon": -82.59519391428572,
+          "lat": 28.900448864285718
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Kings Bay Park",
+          "type": "park",
+          "lon": -82.59543417391305,
+          "lat": 28.89696392173913
+        },
+        {
+          "name": "Hunter Springs Park",
+          "type": "park",
+          "lon": -82.59256543478261,
+          "lat": 28.895074356521743
+        },
+        {
+          "name": "Little Springs Park",
+          "type": "park",
+          "lon": -82.59519391428572,
+          "lat": 28.900448864285718
+        }
+      ],
+      "close_desktop": "crystal-river-close.webp",
+      "close_mobile": "crystal-river-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "crystal-river.webp",
+          "mobile": "crystal-river-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              136.72462604043787,
+              4.296875,
+              -539.8900932220439
+            ],
+            "target": [
+              136.72462604043787,
+              0,
+              -544.1869682220439
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              136.72462604043787,
+              4.296875,
+              -539.8900932220439
+            ],
+            "target": [
+              136.72462604043787,
+              0,
+              -544.1869682220439
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Kings Bay Park",
+              "type": "park",
+              "lon": -82.59543417391305,
+              "lat": 28.89696392173913
+            },
+            {
+              "name": "Hunter Springs Park",
+              "type": "park",
+              "lon": -82.59256543478261,
+              "lat": 28.895074356521743
+            },
+            {
+              "name": "Little Springs Park",
+              "type": "park",
+              "lon": -82.59519391428572,
+              "lat": 28.900448864285718
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Kings Bay Park",
+              "type": "park",
+              "lon": -82.59543417391305,
+              "lat": 28.89696392173913
+            },
+            {
+              "name": "Hunter Springs Park",
+              "type": "park",
+              "lon": -82.59256543478261,
+              "lat": 28.895074356521743
+            },
+            {
+              "name": "Little Springs Park",
+              "type": "park",
+              "lon": -82.59519391428572,
+              "lat": 28.900448864285718
+            }
+          ],
+          "render_url": "../explore_coast.html?view=crystal-river&level=town&district=crystal-river-center&landing=1&cx=136.72462604043787&cy=544.1869682220439&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=crystal-river&level=town&district=crystal-river-center&landing=1&cx=136.72462604043787&cy=544.1869682220439&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "crystal-river-close.webp",
+          "mobile": "crystal-river-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              136.72462604043787,
+              1.71875,
+              -542.4682182220439
+            ],
+            "target": [
+              136.72462604043787,
+              0,
+              -544.1869682220439
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              136.72462604043787,
+              1.71875,
+              -542.4682182220439
+            ],
+            "target": [
+              136.72462604043787,
+              0,
+              -544.1869682220439
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Kings Bay Park",
+              "type": "park",
+              "lon": -82.59543417391305,
+              "lat": 28.89696392173913
+            },
+            {
+              "name": "Hunter Springs Park",
+              "type": "park",
+              "lon": -82.59256543478261,
+              "lat": 28.895074356521743
+            },
+            {
+              "name": "Little Springs Park",
+              "type": "park",
+              "lon": -82.59519391428572,
+              "lat": 28.900448864285718
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Kings Bay Park",
+              "type": "park",
+              "lon": -82.59543417391305,
+              "lat": 28.89696392173913
+            },
+            {
+              "name": "Hunter Springs Park",
+              "type": "park",
+              "lon": -82.59256543478261,
+              "lat": 28.895074356521743
+            },
+            {
+              "name": "Little Springs Park",
+              "type": "park",
+              "lon": -82.59519391428572,
+              "lat": 28.900448864285718
+            }
+          ],
+          "render_url": "../explore_coast.html?view=crystal-river&level=town&district=crystal-river-center&landing=1&cx=136.72462604043787&cy=544.1869682220439&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=crystal-river&level=town&district=crystal-river-center&landing=1&cx=136.72462604043787&cy=544.1869682220439&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          136.72462604043787,
+          4.296875,
+          -539.8900932220439
+        ],
+        "target": [
+          136.72462604043787,
+          0,
+          -544.1869682220439
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          136.72462604043787,
+          4.296875,
+          -539.8900932220439
+        ],
+        "target": [
+          136.72462604043787,
+          0,
+          -544.1869682220439
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=crystal-river&level=town&district=crystal-river-center&landing=1&cx=136.72462604043787&cy=544.1869682220439&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=crystal-river&level=town&district=crystal-river-center&landing=1&cx=136.72462604043787&cy=544.1869682220439&span=2.75",
+      "close_camera": {
+        "position": [
+          136.72462604043787,
+          1.71875,
+          -542.4682182220439
+        ],
+        "target": [
+          136.72462604043787,
+          0,
+          -544.1869682220439
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          136.72462604043787,
+          1.71875,
+          -542.4682182220439
+        ],
+        "target": [
+          136.72462604043787,
+          0,
+          -544.1869682220439
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=crystal-river&level=town&district=crystal-river-center&landing=1&cx=136.72462604043787&cy=544.1869682220439&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=crystal-river&level=town&district=crystal-river-center&landing=1&cx=136.72462604043787&cy=544.1869682220439&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "homosassa",
+      "name": "Homosassa",
+      "desktop": "homosassa.webp",
+      "mobile": "homosassa-m.webp",
+      "center": {
+        "x": 134.374020137449,
+        "y": 531.7547659211393,
+        "lon": -82.62100795555554,
+        "lat": 28.785260366666666
+      },
+      "districts": [
+        {
+          "id": "homosassa-center",
+          "name": "Homosassa",
+          "lon": -82.6151001,
+          "lat": 28.7813722
+        }
+      ],
+      "district": "homosassa-center",
+      "span": 5.5,
+      "close_span": 2.4,
+      "hero": {
+        "lon": -82.62100795555554,
+        "lat": 28.785260366666666,
+        "reason": "Riverhaven Marina frames the Homosassa River, boating channels and oak-covered fishing neighborhoods.",
+        "source": "https://www.openstreetmap.org/way/149509334"
+      },
+      "callouts": [
+        {
+          "name": "Riverhaven Marina",
+          "type": "boating",
+          "lon": -82.62100795555554,
+          "lat": 28.785260366666666
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Riverhaven Marina",
+          "type": "boating",
+          "lon": -82.62100795555554,
+          "lat": 28.785260366666666
+        }
+      ],
+      "close_desktop": "homosassa-close.webp",
+      "close_mobile": "homosassa-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "homosassa.webp",
+          "mobile": "homosassa-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              134.374020137449,
+              4.296875,
+              -527.4578909211393
+            ],
+            "target": [
+              134.374020137449,
+              0,
+              -531.7547659211393
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              134.374020137449,
+              4.296875,
+              -527.4578909211393
+            ],
+            "target": [
+              134.374020137449,
+              0,
+              -531.7547659211393
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Riverhaven Marina",
+              "type": "boating",
+              "lon": -82.62100795555554,
+              "lat": 28.785260366666666
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Riverhaven Marina",
+              "type": "boating",
+              "lon": -82.62100795555554,
+              "lat": 28.785260366666666
+            }
+          ],
+          "render_url": "../explore_coast.html?view=homosassa&level=town&district=homosassa-center&landing=1&cx=134.374020137449&cy=531.7547659211393&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=homosassa&level=town&district=homosassa-center&landing=1&cx=134.374020137449&cy=531.7547659211393&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "homosassa-close.webp",
+          "mobile": "homosassa-close-m.webp",
+          "span": 2.4,
+          "camera": {
+            "position": [
+              134.374020137449,
+              1.8749999999999998,
+              -529.8797659211393
+            ],
+            "target": [
+              134.374020137449,
+              0,
+              -531.7547659211393
+            ],
+            "left": -1.2,
+            "right": 1.2,
+            "top": 0.7499999999999999,
+            "bottom": -0.7499999999999999,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              134.374020137449,
+              1.8749999999999998,
+              -529.8797659211393
+            ],
+            "target": [
+              134.374020137449,
+              0,
+              -531.7547659211393
+            ],
+            "left": -0.6,
+            "right": 0.6,
+            "top": 0.7499999999999999,
+            "bottom": -0.7499999999999999,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Riverhaven Marina",
+              "type": "boating",
+              "lon": -82.62100795555554,
+              "lat": 28.785260366666666
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Riverhaven Marina",
+              "type": "boating",
+              "lon": -82.62100795555554,
+              "lat": 28.785260366666666
+            }
+          ],
+          "render_url": "../explore_coast.html?view=homosassa&level=town&district=homosassa-center&landing=1&cx=134.374020137449&cy=531.7547659211393&span=2.4",
+          "mobile_render_url": "../explore_coast.html?view=homosassa&level=town&district=homosassa-center&landing=1&cx=134.374020137449&cy=531.7547659211393&span=1.2",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          134.374020137449,
+          4.296875,
+          -527.4578909211393
+        ],
+        "target": [
+          134.374020137449,
+          0,
+          -531.7547659211393
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          134.374020137449,
+          4.296875,
+          -527.4578909211393
+        ],
+        "target": [
+          134.374020137449,
+          0,
+          -531.7547659211393
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=homosassa&level=town&district=homosassa-center&landing=1&cx=134.374020137449&cy=531.7547659211393&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=homosassa&level=town&district=homosassa-center&landing=1&cx=134.374020137449&cy=531.7547659211393&span=2.75",
+      "close_camera": {
+        "position": [
+          134.374020137449,
+          1.8749999999999998,
+          -529.8797659211393
+        ],
+        "target": [
+          134.374020137449,
+          0,
+          -531.7547659211393
+        ],
+        "left": -1.2,
+        "right": 1.2,
+        "top": 0.7499999999999999,
+        "bottom": -0.7499999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          134.374020137449,
+          1.8749999999999998,
+          -529.8797659211393
+        ],
+        "target": [
+          134.374020137449,
+          0,
+          -531.7547659211393
+        ],
+        "left": -0.6,
+        "right": 0.6,
+        "top": 0.7499999999999999,
+        "bottom": -0.7499999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=homosassa&level=town&district=homosassa-center&landing=1&cx=134.374020137449&cy=531.7547659211393&span=2.4",
+      "close_mobile_render_url": "../explore_coast.html?view=homosassa&level=town&district=homosassa-center&landing=1&cx=134.374020137449&cy=531.7547659211393&span=1.2",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "ozello",
+      "name": "Ozello",
+      "desktop": "ozello.webp",
+      "mobile": "ozello-m.webp",
+      "center": {
+        "x": 130.8787484903484,
+        "y": 536.0593875035927,
+        "lon": -82.65639344285715,
+        "lat": 28.824367499999997
+      },
+      "districts": [
+        {
+          "id": "ozello-center",
+          "name": "Ozello",
+          "lon": -82.6570459,
+          "lat": 28.8258147
+        }
+      ],
+      "district": "ozello-center",
+      "span": 3.8,
+      "close_span": 1.6,
+      "hero": {
+        "lon": -82.65639344285715,
+        "lat": 28.824367499999997,
+        "reason": "The fishing pier frames Ozello\u2019s marsh-island homes and branching tidal creeks at the end of Ozello Trail.",
+        "source": "https://www.openstreetmap.org/way/1319936816"
+      },
+      "callouts": [
+        {
+          "name": "Ozello Fishing Pier",
+          "type": "landmark",
+          "lon": -82.65639344285715,
+          "lat": 28.824367499999997
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Ozello Fishing Pier",
+          "type": "landmark",
+          "lon": -82.65639344285715,
+          "lat": 28.824367499999997
+        }
+      ],
+      "close_desktop": "ozello-close.webp",
+      "close_mobile": "ozello-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "ozello.webp",
+          "mobile": "ozello-m.webp",
+          "span": 3.8,
+          "camera": {
+            "position": [
+              130.8787484903484,
+              2.9687499999999996,
+              -533.0906375035927
+            ],
+            "target": [
+              130.8787484903484,
+              0,
+              -536.0593875035927
+            ],
+            "left": -1.8999999999999997,
+            "right": 1.8999999999999997,
+            "top": 1.1874999999999998,
+            "bottom": -1.1874999999999998,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              130.8787484903484,
+              2.9687499999999996,
+              -533.0906375035927
+            ],
+            "target": [
+              130.8787484903484,
+              0,
+              -536.0593875035927
+            ],
+            "left": -0.9499999999999998,
+            "right": 0.9499999999999998,
+            "top": 1.1874999999999998,
+            "bottom": -1.1874999999999998,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Ozello Fishing Pier",
+              "type": "landmark",
+              "lon": -82.65639344285715,
+              "lat": 28.824367499999997
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Ozello Fishing Pier",
+              "type": "landmark",
+              "lon": -82.65639344285715,
+              "lat": 28.824367499999997
+            }
+          ],
+          "render_url": "../explore_coast.html?view=ozello&level=town&district=ozello-center&landing=1&cx=130.8787484903484&cy=536.0593875035927&span=3.8",
+          "mobile_render_url": "../explore_coast.html?view=ozello&level=town&district=ozello-center&landing=1&cx=130.8787484903484&cy=536.0593875035927&span=1.9",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "ozello-close.webp",
+          "mobile": "ozello-close-m.webp",
+          "span": 1.6,
+          "camera": {
+            "position": [
+              130.8787484903484,
+              1.25,
+              -534.8093875035927
+            ],
+            "target": [
+              130.8787484903484,
+              0,
+              -536.0593875035927
+            ],
+            "left": -0.8,
+            "right": 0.8,
+            "top": 0.5,
+            "bottom": -0.5,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              130.8787484903484,
+              1.25,
+              -534.8093875035927
+            ],
+            "target": [
+              130.8787484903484,
+              0,
+              -536.0593875035927
+            ],
+            "left": -0.4,
+            "right": 0.4,
+            "top": 0.5,
+            "bottom": -0.5,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Ozello Fishing Pier",
+              "type": "landmark",
+              "lon": -82.65639344285715,
+              "lat": 28.824367499999997
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Ozello Fishing Pier",
+              "type": "landmark",
+              "lon": -82.65639344285715,
+              "lat": 28.824367499999997
+            }
+          ],
+          "render_url": "../explore_coast.html?view=ozello&level=town&district=ozello-center&landing=1&cx=130.8787484903484&cy=536.0593875035927&span=1.6",
+          "mobile_render_url": "../explore_coast.html?view=ozello&level=town&district=ozello-center&landing=1&cx=130.8787484903484&cy=536.0593875035927&span=0.8",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          130.8787484903484,
+          2.9687499999999996,
+          -533.0906375035927
+        ],
+        "target": [
+          130.8787484903484,
+          0,
+          -536.0593875035927
+        ],
+        "left": -1.8999999999999997,
+        "right": 1.8999999999999997,
+        "top": 1.1874999999999998,
+        "bottom": -1.1874999999999998,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          130.8787484903484,
+          2.9687499999999996,
+          -533.0906375035927
+        ],
+        "target": [
+          130.8787484903484,
+          0,
+          -536.0593875035927
+        ],
+        "left": -0.9499999999999998,
+        "right": 0.9499999999999998,
+        "top": 1.1874999999999998,
+        "bottom": -1.1874999999999998,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=ozello&level=town&district=ozello-center&landing=1&cx=130.8787484903484&cy=536.0593875035927&span=3.8",
+      "mobile_render_url": "../explore_coast.html?view=ozello&level=town&district=ozello-center&landing=1&cx=130.8787484903484&cy=536.0593875035927&span=1.9",
+      "close_camera": {
+        "position": [
+          130.8787484903484,
+          1.25,
+          -534.8093875035927
+        ],
+        "target": [
+          130.8787484903484,
+          0,
+          -536.0593875035927
+        ],
+        "left": -0.8,
+        "right": 0.8,
+        "top": 0.5,
+        "bottom": -0.5,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          130.8787484903484,
+          1.25,
+          -534.8093875035927
+        ],
+        "target": [
+          130.8787484903484,
+          0,
+          -536.0593875035927
+        ],
+        "left": -0.4,
+        "right": 0.4,
+        "top": 0.5,
+        "bottom": -0.5,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=ozello&level=town&district=ozello-center&landing=1&cx=130.8787484903484&cy=536.0593875035927&span=1.6",
+      "close_mobile_render_url": "../explore_coast.html?view=ozello&level=town&district=ozello-center&landing=1&cx=130.8787484903484&cy=536.0593875035927&span=0.8",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "steinhatchee",
+      "name": "Steinhatchee",
+      "desktop": "steinhatchee.webp",
+      "mobile": "steinhatchee-m.webp",
+      "center": {
+        "x": 59.11207863203964,
+        "y": 629.23476786639,
+        "lon": -83.38838954545453,
+        "lat": 29.668580736363637
+      },
+      "districts": [
+        {
+          "id": "steinhatchee-center",
+          "name": "Steinhatchee",
+          "lon": -83.3758593,
+          "lat": 29.6720821
+        }
+      ],
+      "district": "steinhatchee-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -83.38838954545453,
+        "lat": 29.668580736363637,
+        "reason": "The mapped riverfront docks frame Steinhatchee\u2019s fishing neighborhoods, boats and working river.",
+        "source": "https://www.openstreetmap.org/way/1112362744"
+      },
+      "callouts": [
+        {
+          "name": "Steinhatchee riverfront docks",
+          "type": "boating",
+          "lon": -83.38838954545453,
+          "lat": 29.668580736363637
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Steinhatchee riverfront docks",
+          "type": "boating",
+          "lon": -83.38838954545453,
+          "lat": 29.668580736363637
+        }
+      ],
+      "close_desktop": "steinhatchee-close.webp",
+      "close_mobile": "steinhatchee-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "steinhatchee.webp",
+          "mobile": "steinhatchee-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              59.11207863203964,
+              4.296875,
+              -624.93789286639
+            ],
+            "target": [
+              59.11207863203964,
+              0,
+              -629.23476786639
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              59.11207863203964,
+              4.296875,
+              -624.93789286639
+            ],
+            "target": [
+              59.11207863203964,
+              0,
+              -629.23476786639
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Steinhatchee riverfront docks",
+              "type": "boating",
+              "lon": -83.38838954545453,
+              "lat": 29.668580736363637
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Steinhatchee riverfront docks",
+              "type": "boating",
+              "lon": -83.38838954545453,
+              "lat": 29.668580736363637
+            }
+          ],
+          "render_url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "steinhatchee-close.webp",
+          "mobile": "steinhatchee-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              59.11207863203964,
+              1.71875,
+              -627.51601786639
+            ],
+            "target": [
+              59.11207863203964,
+              0,
+              -629.23476786639
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              59.11207863203964,
+              1.71875,
+              -627.51601786639
+            ],
+            "target": [
+              59.11207863203964,
+              0,
+              -629.23476786639
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Steinhatchee riverfront docks",
+              "type": "boating",
+              "lon": -83.38838954545453,
+              "lat": 29.668580736363637
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Steinhatchee riverfront docks",
+              "type": "boating",
+              "lon": -83.38838954545453,
+              "lat": 29.668580736363637
+            }
+          ],
+          "render_url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          59.11207863203964,
+          4.296875,
+          -624.93789286639
+        ],
+        "target": [
+          59.11207863203964,
+          0,
+          -629.23476786639
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          59.11207863203964,
+          4.296875,
+          -624.93789286639
+        ],
+        "target": [
+          59.11207863203964,
+          0,
+          -629.23476786639
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=2.75",
+      "close_camera": {
+        "position": [
+          59.11207863203964,
+          1.71875,
+          -627.51601786639
+        ],
+        "target": [
+          59.11207863203964,
+          0,
+          -629.23476786639
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          59.11207863203964,
+          1.71875,
+          -627.51601786639
+        ],
+        "target": [
+          59.11207863203964,
+          0,
+          -629.23476786639
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
     }
   ],
   "landing_schema_version": 2,

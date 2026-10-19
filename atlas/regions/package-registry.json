@@ -42,5 +42,10 @@
   "st-marks": "packages/st-marks/",
   "apalachicola": "packages/apalachicola/",
   "st-teresa": "packages/st-teresa/",
-  "mexico-beach": "packages/mexico-beach/"
+  "mexico-beach": "packages/mexico-beach/",
+  "cedarkey": "packages/cedarkey/",
+  "crystal-river": "packages/crystal-river/",
+  "homosassa": "packages/homosassa/",
+  "ozello": "packages/ozello/",
+  "steinhatchee": "packages/steinhatchee/"
 }

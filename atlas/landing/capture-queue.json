@@ -464,8 +464,8 @@
         0,
         -433.0128058941069
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -520,8 +520,8 @@
         0,
         -420.47239472564655
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -800,8 +800,8 @@
         0,
         -419.27300274044217
       ],
-      "left": -3.0,
-      "right": 3.0,
+      "left": -3,
+      "right": 3,
       "top": 1.875,
       "bottom": -1.875,
       "near": 0.0001,
@@ -912,8 +912,8 @@
         0,
         -439.095043026871
       ],
-      "left": -4.0,
-      "right": 4.0,
+      "left": -4,
+      "right": 4,
       "top": 2.5,
       "bottom": -2.5,
       "near": 0.0001,
@@ -1024,8 +1024,8 @@
         0,
         -418.9854330292268
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -1136,8 +1136,8 @@
         0,
         -385.1458693742731
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -1192,8 +1192,8 @@
         0,
         -385.1814834717026
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -1304,8 +1304,8 @@
         0,
         -370.87111582530054
       ],
-      "left": -3.0,
-      "right": 3.0,
+      "left": -3,
+      "right": 3,
       "top": 1.875,
       "bottom": -1.875,
       "near": 0.0001,
@@ -1472,8 +1472,8 @@
         0,
         -202.8229280651679
       ],
-      "left": -4.0,
-      "right": 4.0,
+      "left": -4,
+      "right": 4,
       "top": 2.5,
       "bottom": -2.5,
       "near": 0.0001,
@@ -1808,8 +1808,8 @@
         0,
         -714.758666691564
       ],
-      "left": -3.0,
-      "right": 3.0,
+      "left": -3,
+      "right": 3,
       "top": 1.875,
       "bottom": -1.875,
       "near": 0.0001,
@@ -1864,8 +1864,8 @@
         0,
         -703.5363279272586
       ],
-      "left": -4.0,
-      "right": 4.0,
+      "left": -4,
+      "right": 4,
       "top": 2.5,
       "bottom": -2.5,
       "near": 0.0001,
@@ -2032,8 +2032,8 @@
         0,
         -691.1840294582316
       ],
-      "left": -3.0,
-      "right": 3.0,
+      "left": -3,
+      "right": 3,
       "top": 1.875,
       "bottom": -1.875,
       "near": 0.0001,
@@ -2200,8 +2200,8 @@
         0,
         -636.1317969697183
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -2256,8 +2256,8 @@
         0,
         -628.7630329024872
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -2312,8 +2312,8 @@
         0,
         -649.1472825643078
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -2396,8 +2396,8 @@
         0,
         -682.7976940981381
       ],
-      "left": -0.95,
-      "right": 0.95,
+      "left": -0.9499999999999998,
+      "right": 0.9499999999999998,
       "top": 0.5937499999999999,
       "bottom": -0.5937499999999999,
       "near": 0.0001,
@@ -2480,8 +2480,8 @@
         0,
         -661.3482631645624
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -2508,10 +2508,290 @@
         0,
         -661.3482631645624
       ],
-      "left": -0.95,
-      "right": 0.95,
+      "left": -0.9499999999999998,
+      "right": 0.9499999999999998,
       "top": 0.5937499999999999,
       "bottom": -0.5937499999999999,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "cedarkey",
+    "view": "town",
+    "url": "../explore_coast.html?view=cedarkey&level=town&district=cedarkey-center&landing=1&cx=94.18752446456139&cy=570.2316157171475&span=3.2",
+    "desktop": "cedarkey.webp",
+    "mobile": "cedarkey-m.webp",
+    "camera": {
+      "position": [
+        94.18752446456139,
+        2.5,
+        -567.7316157171475
+      ],
+      "target": [
+        94.18752446456139,
+        0,
+        -570.2316157171475
+      ],
+      "left": -1.6,
+      "right": 1.6,
+      "top": 1.0,
+      "bottom": -1.0,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "cedarkey",
+    "view": "street",
+    "url": "../explore_coast.html?view=cedarkey&level=town&district=cedarkey-center&landing=1&cx=94.18752446456139&cy=570.2316157171475&span=1.4",
+    "desktop": "cedarkey-close.webp",
+    "mobile": "cedarkey-close-m.webp",
+    "camera": {
+      "position": [
+        94.18752446456139,
+        1.0937499999999998,
+        -569.1378657171475
+      ],
+      "target": [
+        94.18752446456139,
+        0,
+        -570.2316157171475
+      ],
+      "left": -0.7,
+      "right": 0.7,
+      "top": 0.43749999999999994,
+      "bottom": -0.43749999999999994,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "crystal-river",
+    "view": "town",
+    "url": "../explore_coast.html?view=crystal-river&level=town&district=crystal-river-center&landing=1&cx=136.72462604043787&cy=544.1869682220439&span=5.5",
+    "desktop": "crystal-river.webp",
+    "mobile": "crystal-river-m.webp",
+    "camera": {
+      "position": [
+        136.72462604043787,
+        4.296875,
+        -539.8900932220439
+      ],
+      "target": [
+        136.72462604043787,
+        0,
+        -544.1869682220439
+      ],
+      "left": -2.75,
+      "right": 2.75,
+      "top": 1.71875,
+      "bottom": -1.71875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "crystal-river",
+    "view": "street",
+    "url": "../explore_coast.html?view=crystal-river&level=town&district=crystal-river-center&landing=1&cx=136.72462604043787&cy=544.1869682220439&span=2.2",
+    "desktop": "crystal-river-close.webp",
+    "mobile": "crystal-river-close-m.webp",
+    "camera": {
+      "position": [
+        136.72462604043787,
+        1.71875,
+        -542.4682182220439
+      ],
+      "target": [
+        136.72462604043787,
+        0,
+        -544.1869682220439
+      ],
+      "left": -1.1,
+      "right": 1.1,
+      "top": 0.6875,
+      "bottom": -0.6875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "homosassa",
+    "view": "town",
+    "url": "../explore_coast.html?view=homosassa&level=town&district=homosassa-center&landing=1&cx=134.374020137449&cy=531.7547659211393&span=5.5",
+    "desktop": "homosassa.webp",
+    "mobile": "homosassa-m.webp",
+    "camera": {
+      "position": [
+        134.374020137449,
+        4.296875,
+        -527.4578909211393
+      ],
+      "target": [
+        134.374020137449,
+        0,
+        -531.7547659211393
+      ],
+      "left": -2.75,
+      "right": 2.75,
+      "top": 1.71875,
+      "bottom": -1.71875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "homosassa",
+    "view": "street",
+    "url": "../explore_coast.html?view=homosassa&level=town&district=homosassa-center&landing=1&cx=134.374020137449&cy=531.7547659211393&span=2.4",
+    "desktop": "homosassa-close.webp",
+    "mobile": "homosassa-close-m.webp",
+    "camera": {
+      "position": [
+        134.374020137449,
+        1.8749999999999998,
+        -529.8797659211393
+      ],
+      "target": [
+        134.374020137449,
+        0,
+        -531.7547659211393
+      ],
+      "left": -1.2,
+      "right": 1.2,
+      "top": 0.7499999999999999,
+      "bottom": -0.7499999999999999,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "ozello",
+    "view": "town",
+    "url": "../explore_coast.html?view=ozello&level=town&district=ozello-center&landing=1&cx=130.8787484903484&cy=536.0593875035927&span=3.8",
+    "desktop": "ozello.webp",
+    "mobile": "ozello-m.webp",
+    "camera": {
+      "position": [
+        130.8787484903484,
+        2.9687499999999996,
+        -533.0906375035927
+      ],
+      "target": [
+        130.8787484903484,
+        0,
+        -536.0593875035927
+      ],
+      "left": -1.9,
+      "right": 1.9,
+      "top": 1.1874999999999998,
+      "bottom": -1.1874999999999998,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "ozello",
+    "view": "street",
+    "url": "../explore_coast.html?view=ozello&level=town&district=ozello-center&landing=1&cx=130.8787484903484&cy=536.0593875035927&span=1.6",
+    "desktop": "ozello-close.webp",
+    "mobile": "ozello-close-m.webp",
+    "camera": {
+      "position": [
+        130.8787484903484,
+        1.25,
+        -534.8093875035927
+      ],
+      "target": [
+        130.8787484903484,
+        0,
+        -536.0593875035927
+      ],
+      "left": -0.8,
+      "right": 0.8,
+      "top": 0.5,
+      "bottom": -0.5,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "steinhatchee",
+    "view": "town",
+    "url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=5.5",
+    "desktop": "steinhatchee.webp",
+    "mobile": "steinhatchee-m.webp",
+    "camera": {
+      "position": [
+        59.11207863203964,
+        4.296875,
+        -624.93789286639
+      ],
+      "target": [
+        59.11207863203964,
+        0,
+        -629.23476786639
+      ],
+      "left": -2.75,
+      "right": 2.75,
+      "top": 1.71875,
+      "bottom": -1.71875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "steinhatchee",
+    "view": "street",
+    "url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=2.2",
+    "desktop": "steinhatchee-close.webp",
+    "mobile": "steinhatchee-close-m.webp",
+    "camera": {
+      "position": [
+        59.11207863203964,
+        1.71875,
+        -627.51601786639
+      ],
+      "target": [
+        59.11207863203964,
+        0,
+        -629.23476786639
+      ],
+      "left": -1.1,
+      "right": 1.1,
+      "top": 0.6875,
+      "bottom": -0.6875,
       "near": 0.0001,
       "far": 3500,
       "projection": "orthographic",

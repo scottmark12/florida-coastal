@@ -1,0 +1,70 @@
+{
+  "region": {
+    "id": "nature-coast",
+    "coast": "gulf",
+    "name": "Steinhatchee",
+    "map": "Nature Coast",
+    "at": [
+      29.02,
+      -83.05
+    ],
+    "side": "W",
+    "img": "img/spring-nature-coast.jpg",
+    "text": "Where the Panhandle bends into the peninsula, the coast turns to marsh and there is very little development. Life here is springs, rivers, scalloping and fishing, in towns like Cedar Key, Crystal River and Steinhatchee.",
+    "towns": [
+      "steinhatchee"
+    ],
+    "center": [
+      111.67831447013353,
+      563.3144324692848
+    ]
+  },
+  "towns": [
+    {
+      "id": "steinhatchee",
+      "name": "Steinhatchee",
+      "region": "Big Bend",
+      "coast": "gulf",
+      "lat": 29.671,
+      "lon": -83.389,
+      "tier": 1,
+      "price": "$285K median",
+      "vibes": [
+        "afford",
+        "oldfl",
+        "dock"
+      ],
+      "airport": "Gainesville (GNV), about 1.5 hours",
+      "season": "Busy in summer scallop season",
+      "watch": "Hit hard by Idalia in 2023 and Helene in 2024. Check rebuilding and flood zones",
+      "blurb": "A river fishing village on the Big Bend where summer means scallops and the nearest stoplight is a long way off.",
+      "day": "You run the river to the Gulf at dawn, fill a bucket with scallops and clean them on the dock.",
+      "todo": [
+        [
+          "Steinhatchee River",
+          "Marinas, fish camps and a straight shot to the grass flats."
+        ]
+      ],
+      "pros": [
+        "Affordable",
+        "Outstanding fishing and scalloping"
+      ],
+      "cons": [
+        "Very remote",
+        "Major hurricane damage in recent years"
+      ],
+      "x": 59.05174790900254,
+      "y": 629.5030698056833,
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://www.floridacoastal.co/towns/steinhatchee.html",
+      "nearest_town_km": 68.45490590258193
+    }
+  ],
+  "bounds": [
+    -83.454,
+    29.616,
+    -83.324,
+    29.726
+  ]
+}

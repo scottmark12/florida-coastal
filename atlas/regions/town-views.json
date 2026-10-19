@@ -78,5 +78,55 @@
     "desktopSpan": 1.9,
     "phoneSpan": 0.95,
     "reason": "The fishing canal and marina frame Mexico Beach\u2019s low-rise streets and nearby Gulf beach."
+  },
+  "cedarkey": {
+    "district": "cedarkey-center",
+    "x": 94.18752446456139,
+    "y": 570.2316157171475,
+    "lon": -83.0302899,
+    "lat": 29.1351760875,
+    "desktopSpan": 1.4,
+    "phoneSpan": 0.7,
+    "reason": "Dock Street frames Cedar Key\u2019s compact waterfront blocks, wharves and surrounding island water."
+  },
+  "crystal-river": {
+    "district": "crystal-river-center",
+    "x": 136.72462604043787,
+    "y": 544.1869682220439,
+    "lon": -82.59543417391305,
+    "lat": 28.89696392173913,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Kings Bay Park puts the spring-fed bay, waterfront homes and historic downtown in the same frame."
+  },
+  "homosassa": {
+    "district": "homosassa-center",
+    "x": 134.374020137449,
+    "y": 531.7547659211393,
+    "lon": -82.62100795555554,
+    "lat": 28.785260366666666,
+    "desktopSpan": 2.4,
+    "phoneSpan": 1.2,
+    "reason": "Riverhaven Marina frames the Homosassa River, boating channels and oak-covered fishing neighborhoods."
+  },
+  "ozello": {
+    "district": "ozello-center",
+    "x": 130.8787484903484,
+    "y": 536.0593875035927,
+    "lon": -82.65639344285715,
+    "lat": 28.824367499999997,
+    "desktopSpan": 1.6,
+    "phoneSpan": 0.8,
+    "reason": "The fishing pier frames Ozello\u2019s marsh-island homes and branching tidal creeks at the end of Ozello Trail."
+  },
+  "steinhatchee": {
+    "district": "steinhatchee-center",
+    "x": 59.11207863203964,
+    "y": 629.23476786639,
+    "lon": -83.38838954545453,
+    "lat": 29.668580736363637,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "The mapped riverfront docks frame Steinhatchee\u2019s fishing neighborhoods, boats and working river."
   }
 }
