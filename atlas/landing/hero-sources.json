@@ -1237,6 +1237,53 @@
           "included": true
         }
       ]
+    },
+    {
+      "town_id": "pensacola-beach",
+      "hero_name": "Pensacola Beach Pier entrance",
+      "hero_source": "https://www.openstreetmap.org/node/971334209",
+      "coordinate_method": "OSM mapped feature, or published government facility GPS where linked.",
+      "points": [
+        {
+          "name": "Pensacola Beach Pier entrance",
+          "source": "https://www.openstreetmap.org/node/971334209",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Pensacola Beach Water Tower",
+          "source": "https://www.openstreetmap.org/way/145115191",
+          "mobile_uv": [
+            0.600423236898085,
+            0.4589377725469752
+          ],
+          "desktop_uv": [
+            0.5502116184490424,
+            0.4589377725469752
+          ],
+          "included": true
+        },
+        {
+          "name": "Quietwater Beach Boardwalk",
+          "source": "https://www.openstreetmap.org/way/377811022",
+          "mobile_uv": [
+            0.6182808741843036,
+            0.30593640857652366
+          ],
+          "desktop_uv": [
+            0.5591404370921518,
+            0.30593640857652366
+          ],
+          "included": true
+        }
+      ]
     }
   ]
 }

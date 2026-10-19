@@ -3098,6 +3098,98 @@
         "tiltDegrees": 45
       },
       "mobile_render_url": "../explore_coast.html?view=jacksonville&level=town&landing=1&cx=224.793824950257&cy=703.5363279272586&span=1.4&district=jacksonville-center"
+    },
+    {
+      "town_id": "pensacola-beach",
+      "name": "Pensacola Beach",
+      "desktop": "pensacola-beach.webp",
+      "mobile": "pensacola-beach-m.webp",
+      "center": {
+        "x": -301.84537297204264,
+        "y": 706.5022191774556,
+        "lon": -87.1428052,
+        "lat": 30.331312
+      },
+      "districts": [
+        {
+          "id": "pensacola-beach-center",
+          "name": "Pensacola Beach",
+          "lon": -87.1350979,
+          "lat": 30.3342348
+        }
+      ],
+      "district": "pensacola-beach-center",
+      "span": 2.8,
+      "status": "Passed locked pipeline and desktop/phone visual review; physical-phone speed not verified",
+      "hero": {
+        "lon": -87.1428052,
+        "lat": 30.331312,
+        "reason": "The pier entrance frames Casino Beach, the water tower and the narrow island between Gulf and sound."
+      },
+      "callouts": [
+        {
+          "name": "Pensacola Beach Pier entrance",
+          "type": "landmark",
+          "lon": -87.1428052,
+          "lat": 30.331312
+        },
+        {
+          "name": "Pensacola Beach Water Tower",
+          "type": "landmark",
+          "lon": -87.1413689368421,
+          "lat": 30.33225962631579
+        },
+        {
+          "name": "Quietwater Beach Boardwalk",
+          "type": "landmark",
+          "lon": -87.14120915000001,
+          "lat": 30.33567605
+        }
+      ],
+      "camera": {
+        "position": [
+          -301.84537297204264,
+          2.1874999999999996,
+          -704.3147191774556
+        ],
+        "target": [
+          -301.84537297204264,
+          0,
+          -706.5022191774556
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=pensacola-beach&level=town&landing=1&cx=-301.84537297204264&cy=706.5022191774556&span=2.8&district=pensacola-beach-center",
+      "mobile_camera": {
+        "position": [
+          -301.84537297204264,
+          2.1874999999999996,
+          -704.3147191774556
+        ],
+        "target": [
+          -301.84537297204264,
+          0,
+          -706.5022191774556
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=pensacola-beach&level=town&landing=1&cx=-301.84537297204264&cy=706.5022191774556&span=1.4&district=pensacola-beach-center"
     }
   ]
 }

@@ -31,5 +31,6 @@
   "everglades-city": "packages/naples-marco/",
   "marco-island": "packages/naples-marco/",
   "pensacola": "packages/pensacola/",
-  "jacksonville": "packages/jacksonville/"
+  "jacksonville": "packages/jacksonville/",
+  "pensacola-beach": "packages/pensacola-beach/"
 }

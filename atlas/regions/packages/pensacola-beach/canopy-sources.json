@@ -1,0 +1,49 @@
+{
+  "rule": "Source-only canopy; no sparse fallback or invented roadside planting",
+  "spacing_m": 10.0,
+  "crown_profiles": {},
+  "measured_rasters": [],
+  "source_polygon_count": 43,
+  "osm_tree_nodes": 144,
+  "source_links": [
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W090_Map.tif",
+    "https://www.openstreetmap.org/relation/15558672",
+    "https://www.openstreetmap.org/relation/15558698",
+    "https://www.openstreetmap.org/way/1151290453",
+    "https://www.openstreetmap.org/way/1151290574",
+    "https://www.openstreetmap.org/way/1151290612",
+    "https://www.openstreetmap.org/way/1151290616",
+    "https://www.openstreetmap.org/way/1151291028",
+    "https://www.openstreetmap.org/way/1151291029",
+    "https://www.openstreetmap.org/way/1151291030",
+    "https://www.openstreetmap.org/way/1151291031",
+    "https://www.openstreetmap.org/way/1151297852",
+    "https://www.openstreetmap.org/way/1151297934",
+    "https://www.openstreetmap.org/way/1151299683",
+    "https://www.openstreetmap.org/way/1151299685",
+    "https://www.openstreetmap.org/way/1151299688",
+    "https://www.openstreetmap.org/way/1151299689",
+    "https://www.openstreetmap.org/way/1151299690",
+    "https://www.openstreetmap.org/way/1151299691",
+    "https://www.openstreetmap.org/way/1151299692",
+    "https://www.openstreetmap.org/way/1151299694",
+    "https://www.openstreetmap.org/way/1151299696",
+    "https://www.openstreetmap.org/way/1151299697",
+    "https://www.openstreetmap.org/way/1151300276",
+    "https://www.openstreetmap.org/way/1151300516",
+    "https://www.openstreetmap.org/way/1151300899",
+    "https://www.openstreetmap.org/way/1151300943",
+    "https://www.openstreetmap.org/way/1151301105"
+  ],
+  "districts": [
+    {
+      "district": "pensacola-beach-center",
+      "mapped_canopy_km2_within_1650m": 0.00052,
+      "rendered_crowns_in_town_view": 2,
+      "source_only": true,
+      "species": "Live-oak illustration; species is editorial unless OSM supplies species",
+      "individual_stems_surveyed": false
+    }
+  ],
+  "note": "Canopy extent is sourced; crown positions within mapped canopy are illustrative. OSM completeness varies."
+}
