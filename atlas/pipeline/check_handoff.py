@@ -2,9 +2,12 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit,unquote
-import json,sys,hashlib
+import json,sys,hashlib,subprocess
 from PIL import Image
-root=Path(__file__).resolve().parents[1];errors=[];files=[p for p in root.rglob('*') if p.is_file() and not any(x in p.parts for x in ['node_modules','.venv','__pycache__','outputs'])]
+root=Path(__file__).resolve().parents[1];errors=[]
+# Validate the Git handoff, excluding ignored downloads and local build caches.
+tracked=subprocess.check_output(['git','ls-files','-z','--',str(root)],cwd=root.parent).decode().split('\0')
+files=[root.parent/p for p in tracked if p and (root.parent/p).is_file()]
 for p in files:
  if p.stat().st_size>50_000_000:errors.append('Over 50 MB: '+str(p.relative_to(root)))
  if p.is_symlink():errors.append('Symlink: '+str(p.relative_to(root)))
@@ -28,5 +31,5 @@ for t in index['towns']:
  assert t['districts'] and all('lon' in d and 'lat' in d for d in t['districts'])
 lock=json.load(open(root/'pipeline/work/coastal_pipeline/v4/pipeline-lock.json'))
 assert all(hashlib.sha256((root/'pipeline'/p).read_bytes()).hexdigest()==h for p,h in lock['files'].items())
-report={'files':len(files),'total_bytes':sum(p.stat().st_size for p in files),'largest_file_bytes':max(p.stat().st_size for p in files),'landing_images':len(index['towns'])*2,'finished_towns':[t['town_id'] for t in index['towns']],'errors':errors,'physical_phone_load_time_verified':False}
+report={'files':len(files),'total_bytes':sum(p.stat().st_size for p in files),'largest_file_bytes':max(p.stat().st_size for p in files),'landing_images':sum(2*len(t.get('views',{'town':{}})) for t in index['towns']),'finished_towns':[t['town_id'] for t in index['towns']],'errors':errors,'physical_phone_load_time_verified':False}
 print(json.dumps(report,indent=2));sys.exit(bool(errors))

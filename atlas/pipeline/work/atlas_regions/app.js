@@ -11,7 +11,7 @@ const townViews=await fetch(assetBase+'town-views.json').then(r=>r.json());
 const towns=catalog.towns, regions=catalog.regions, byId=Object.fromEntries(towns.map(t=>[t.id,t]));
 const qs=new URLSearchParams(location.search);const landing=qs.get('landing')==='1';if(landing)document.documentElement.classList.add('landing-export');
 let thirty=null,thirtyModel=null,sandArt=null,alysArt=null,alysOccupied=[];
-let emeraldWater=null;
+let emeraldWater=null,bridgeModel=null,bridgeIndex=null;
 async function regionalWater(){
  const emerald=['emerald-coast','forgotten-coast'].includes(region.id)&&level!=='state';
  sea.material.color.set(emerald?'#17658f':'#3593ae');scene.background.set(emerald?'#17658f':'#3593ae');
@@ -75,12 +75,18 @@ function setCamera(){
 async function show(){
  document.documentElement.classList.toggle('miami-region',isDetailed()&&level==='region');const token=++packageToken,flight=pendingFlight;pendingFlight=null;document.documentElement.classList.toggle('thirty-region',(isThirty()||isDetailed())&&level==='region');setCamera();status('Loading this part of the coast…');
  try{
+  if(!bridgeModel){bridgeModel=new THREE.Group();bridgeModel.name='OSM bridges and causeways';scene.add(bridgeModel)}bridgeModel.visible=level==='town';
+  if(level==='town'){
+   if(!bridgeIndex)bridgeIndex=await fetch(assetBase+'bridge-index.json').then(r=>r.json());
+   const radius=Math.max(2.5,span*.8,(camera.top-camera.bottom)*Math.SQRT2*.65),visible=bridgeIndex.tiles.filter(t=>t.bounds[0]<=target.x+radius&&t.bounds[2]>=target.x-radius&&t.bounds[1]<=-target.z+radius&&t.bounds[3]>=-target.z-radius);
+   const meshes=await Promise.all(visible.map(t=>load(t.name)));if(token!==packageToken)return;bridgeModel.clear();meshes.forEach(mesh=>bridgeModel.add(mesh));document.body.dataset.bridgeTiles=visible.length;
+  }
   await regionalWater();document.body.dataset.ready='false';renderer.toneMapping=isDetailed()?THREE.NoToneMapping:THREE.ACESFilmicToneMapping;
   if(isDetailed()){
    const packagePath=packageRegistry[activeTown.id];if(detailedLayer)detailedLayer.hide();if(!detailedLayers.has(packagePath)){const layer=await createRegionLayer(assetBase+packagePath);detailedLayers.set(packagePath,layer);scene.add(layer.root)}detailedLayer=detailedLayers.get(packagePath);const credit=document.getElementById('canopy-credit');if(credit)credit.textContent=detailedLayer.meta.canopyAttribution||'OSM-based geography · original illustrated canopy';
    if(token!==packageToken)return;
    for(const o of [terrain,architecture,stateIcons,thirtyModel,sandArt,alysArt])if(o)o.visible=false;
-   roadLines.visible=false;setCamera();await detailedLayer.show(level==='town'?{...(selectedDistrict||detailedLayer.meta.districts[0]),x:target.x,y:-target.z}:null,innerWidth<700?2.5:2.1);
+   roadLines.visible=false;setCamera();await detailedLayer.show(level==='town'?{...(selectedDistrict||detailedLayer.meta.districts[0]),x:target.x,y:-target.z}:null,landing?Math.max(2.1,span*.6,(camera.top-camera.bottom)*Math.SQRT2*.6):innerWidth<700?2.5:2.1);
    if(token!==packageToken)return;status('');updateUi();makeLabels();highlight();if(flight)animateFlight(flight,token);else render();document.body.dataset.ready='true';document.body.dataset.pipeline='shared-atlas';return;
   }
   if(detailedLayer)detailedLayer.hide();const credit=document.getElementById('canopy-credit');if(credit)credit.textContent='OSM-based geography · original illustrated canopy';if(terrain)terrain.visible=true;

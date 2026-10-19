@@ -1,22 +1,27 @@
 {
-  "version": "florida-coastal-illustration-v4.9-full-region-framing",
+  "version": "florida-coastal-illustration-v5.0-landing-bridges-coastal-heights",
   "date": "2026-10-19",
   "rules": "Approved Miami/30A scale and UI; regional recipes and source inputs remain external",
   "files": {
-    "work/coastal_pipeline/v4/engine.py": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+    "work/coastal_pipeline/v4/engine.py": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
     "work/coastal_pipeline/v4/source_canopy.py": "7cbeb8d08194d5e661b5f1dda88b98a6823887c7d8e2e630ebbada32f22c783d",
     "work/coastal_pipeline/v4/mesh_export.py": "b3542116505e0114cfe070f62e1f5f704b2128600d263b3e3c850d5e584fe7b6",
-    "work/coastal_pipeline/v4/preflight.py": "3c752fc533d1a7f81ce02a402a0818498614fbb5400306ca4784d9645fcb2a15",
-    "work/coastal_pipeline/v4/rules.json": "4720ee1247db889d4659381dd958090849c198b62a7085ce20ae4125132d9945",
+    "work/coastal_pipeline/v4/preflight.py": "01f74d9c20360fbcbcba324760054987ebe9805865ede2dd38bb45593bbfc523",
+    "work/coastal_pipeline/v4/rules.json": "2c5f31d8493edc8c83f2ae6f0378ac89780136e9dde5d9396574f38f02a13078",
     "work/coastal_pipeline/v4/water_wash.py": "db3df6a8cc81422b312f2a09cb9e999e9f62a05092b3848066a2dc2610c3099b",
     "work/coastal_pipeline/v4/proof.py": "9c3438a8c1d556ef40012a0408f09bf6226de0e809e9237d2ccc5e730b3304a4",
     "work/coastal_pipeline/v4/run.py": "5a9b7451edf2ca4fb9bc579c9da5dbdbd5489e4249f8a57ff8562fef0a8181a5",
     "work/coastal_pipeline/v4/publish.py": "0eff4367e067a413586c377a15439bc92892c2fcaa289b00959f8f7b1d5b22a5",
     "work/coastal_pipeline/v3/atlas-layer.js": "3b69812849bcca8b7b482fa926f5b6fc5d8cd7bc063802205277be7b6c14a370",
-    "work/atlas_regions/app.js": "ffc504ba4265052208a898f6fdaa75291e02c82a384b25b9c88f059e57cb17e2",
+    "work/atlas_regions/app.js": "1c1cecaa2b5cec73be418e4f45dbac4e9a0edb6460501437da18e261df1e1edf",
     "work/30a_finish/geometry.py": "0e286e67440ae5adfe1cb972f63b960178af3062c3c1d6ee7f245cffc2d9d9f5",
     "work/coastal_pipeline/v3/marina-boats.js": "139647b5104dfe9725f2fffc122d7b37046cde4636a50e4be0743ae6a52b9f09",
-    "work/coastal_pipeline/v4/water-recipes.json": "1433dbeb9118ce26e64d732bb7acb92fd132b4d4e3a8b0f6fac9da8848105299"
+    "work/coastal_pipeline/v4/water-recipes.json": "1433dbeb9118ce26e64d732bb7acb92fd132b4d4e3a8b0f6fac9da8848105299",
+    "export_bridges.py": "38b4dbb06a53a4ef69cce5ed7306ee713dc03893e3e0e71699a3b782fb42670b",
+    "tile_bridges.py": "4d624f815a81c3e5f987082affd534f121e6c981dca4855f9489ec9f62ea3e21",
+    "prepare_landings.py": "565d68b7678b1fdf492a6bd581611a881b8ab2cebc97fca1b214336e206d210a",
+    "boats.py": "bfb71e3093d098174f0e1a9ed2521aaf77f08dd650a08688b87feadd0fdc52f2",
+    "extract_marinas.py": "6d47fe817315d1816f1c38fe99c691648afef15bb30c64bc3f39da447643dce4"
   },
-  "change": "User-requested full coastal-region framing: fit all catalog town anchors with UI-safe padding; region-wide overview assets and continuous statewide background; town detail cameras and generated geometry unchanged."
+  "change": "User-authorized two-level hero exports, OSM bridge decks/piers, and type/footprint height estimates for non-house buildings; existing explicit heights and scale caps retained."
 }

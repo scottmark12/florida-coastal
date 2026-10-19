@@ -1,680 +1,636 @@
 {
   "town_count": 45,
-  "callout_count": 112,
+  "view_count": 90,
+  "image_count": 180,
   "towns": [
     {
       "town_id": "30a",
+      "view": "town",
+      "span_km": 5,
       "callouts": 3,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "30a",
+      "view": "street",
       "span_km": 1.4,
+      "callouts": 3,
       "checks": "passed"
     },
     {
       "town_id": "dunedin",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 3,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "dunedin",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 3,
       "checks": "passed"
     },
     {
       "town_id": "clearwaterbeach",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "clearwaterbeach",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "gulfport",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 2,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "gulfport",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 2,
       "checks": "passed"
     },
     {
       "town_id": "ami",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 2,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ami",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 2,
       "checks": "passed"
     },
     {
       "town_id": "longboat",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "longboat",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "apollo-beach",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "apollo-beach",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "clearwater",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 2,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "clearwater",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 2,
       "checks": "passed"
     },
     {
       "town_id": "indian-rocks-beach",
+      "view": "town",
+      "span_km": 4,
       "callouts": 2,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "indian-rocks-beach",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 2,
       "checks": "passed"
     },
     {
       "town_id": "madeira-beach",
+      "view": "town",
+      "span_km": 4,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "madeira-beach",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "new-port-richey",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 3,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "new-port-richey",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 3,
       "checks": "passed"
     },
     {
       "town_id": "ruskin",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ruskin",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "safety-harbor",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "safety-harbor",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "st-pete-beach",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-pete-beach",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "st-petersburg",
+      "view": "town",
+      "span_km": 6,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-petersburg",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "sun-city-center",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sun-city-center",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "tampa",
+      "view": "town",
+      "span_km": 8,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "tampa",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "tarpon-springs",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 2,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "tarpon-springs",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 2,
       "checks": "passed"
     },
     {
       "town_id": "treasure-island",
+      "view": "town",
+      "span_km": 4,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "treasure-island",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "bradenton",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 3,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "bradenton",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 3,
       "checks": "passed"
     },
     {
       "town_id": "bradenton-beach",
+      "view": "town",
+      "span_km": 4,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "bradenton-beach",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "cortez",
+      "view": "town",
+      "span_km": 4,
       "callouts": 2,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cortez",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 2,
       "checks": "passed"
     },
     {
       "town_id": "englewood",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 2,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "englewood",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 2,
       "checks": "passed"
     },
     {
       "town_id": "sarasota",
+      "view": "town",
+      "span_km": 6,
       "callouts": 3,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sarasota",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 3,
       "checks": "passed"
     },
     {
       "town_id": "siesta-key",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "siesta-key",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "venice",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "venice",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "miami",
+      "view": "town",
+      "span_km": 8,
       "callouts": 2,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "miami",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 2,
       "checks": "passed"
     },
     {
       "town_id": "southbeach",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "southbeach",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "naples",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 2,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "naples",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 2,
       "checks": "passed"
     },
     {
       "town_id": "marco-island",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "marco-island",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "everglades-city",
+      "view": "town",
+      "span_km": 3.5,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "everglades-city",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "chokoloskee",
+      "view": "town",
+      "span_km": 3.5,
       "callouts": 3,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "chokoloskee",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 3,
       "checks": "passed"
     },
     {
       "town_id": "pensacola",
+      "view": "town",
+      "span_km": 6,
       "callouts": 5,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "pensacola",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 5,
       "checks": "passed"
     },
     {
       "town_id": "jacksonville",
+      "view": "town",
+      "span_km": 8,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "jacksonville",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "pensacola-beach",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 3,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "pensacola-beach",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 3,
       "checks": "passed"
     },
     {
       "town_id": "panama-city",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 3,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "panama-city",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 3,
       "checks": "passed"
     },
     {
       "town_id": "pcb",
+      "view": "town",
+      "span_km": 6,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "pcb",
+      "view": "street",
       "span_km": 2.8,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "destin",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "destin",
+      "view": "street",
       "span_km": 1.4,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "port-st-joe",
+      "view": "town",
+      "span_km": 5.5,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-st-joe",
+      "view": "street",
       "span_km": 1.8,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "apalachicola",
+      "view": "town",
+      "span_km": 4,
       "callouts": 5,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "apalachicola",
+      "view": "street",
       "span_km": 1.6,
+      "callouts": 5,
       "checks": "passed"
     },
     {
       "town_id": "st-george-island",
+      "view": "town",
+      "span_km": 4,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-george-island",
+      "view": "street",
       "span_km": 1.4,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "carrabelle",
+      "view": "town",
+      "span_km": 4,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "carrabelle",
+      "view": "street",
       "span_km": 1.8,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "st-marks",
+      "view": "town",
+      "span_km": 3.5,
       "callouts": 4,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-marks",
+      "view": "street",
       "span_km": 1.9,
+      "callouts": 4,
       "checks": "passed"
     },
     {
       "town_id": "st-teresa",
+      "view": "town",
+      "span_km": 3.5,
       "callouts": 1,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-teresa",
+      "view": "street",
       "span_km": 1.6,
+      "callouts": 1,
       "checks": "passed"
     },
     {
       "town_id": "mexico-beach",
+      "view": "town",
+      "span_km": 4,
       "callouts": 2,
-      "desktop_size": [
-        1600,
-        1000
-      ],
-      "phone_size": [
-        800,
-        1000
-      ],
-      "tilt_degrees": 45,
+      "checks": "passed"
+    },
+    {
+      "town_id": "mexico-beach",
+      "view": "street",
       "span_km": 1.9,
+      "callouts": 2,
       "checks": "passed"
     }
   ]

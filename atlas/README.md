@@ -25,14 +25,16 @@ Here “finished” means the existing approved or review-ready detailed package
 | Tampa Bay | `tampa`, `apollo-beach`, `ruskin`, `sun-city-center` | [Tampa](regions/packages/tampa-south-shore/atlas-review.html) |
 | St. Pete/Clearwater | `dunedin`, `clearwaterbeach`, `gulfport`, `clearwater`, `indian-rocks-beach`, `madeira-beach`, `new-port-richey`, `safety-harbor`, `st-pete-beach`, `st-petersburg`, `tarpon-springs`, `treasure-island` | [St. Pete](regions/packages/st-pete-clearwater/atlas-review.html) |
 | Sarasota/Bradenton/Venice | `ami`, `longboat`, `bradenton`, `bradenton-beach`, `cortez`, `englewood`, `sarasota`, `siesta-key`, `venice` | [Sarasota](regions/packages/sarasota-bradenton/atlas-review.html) |
-
 | Naples/Marco/Everglades | `naples`, `marco-island`, `everglades-city`, `chokoloskee` | [Naples/Marco](regions/packages/naples-marco/atlas-review.html) |
+| Emerald Coast beyond 30A | `pensacola`, `pensacola-beach`, `destin`, `panama-city`, `pcb` | Individual package reviews under `regions/packages/<id>/atlas-review.html` |
+| Jacksonville | `jacksonville` | [Jacksonville](regions/packages/jacksonville/atlas-review.html) |
+| Forgotten Coast | `mexico-beach`, `port-st-joe`, `apalachicola`, `st-george-island`, `carrabelle`, `st-teresa`, `st-marks` | [Forgotten Coast](regions/packages/forgotten-coast/atlas-review.html) |
 
-Other regions retain their existing overview/legacy GLBs. They are **not finished detailed packages**, and do not receive landing exports: Fort Myers, Keys, Palm Beaches, Fort Lauderdale, Treasure Coast, Space Coast, Daytona, First Coast, Forgotten Coast, Nature Coast and the remaining Emerald Coast. Configuration and editorial preparations that already existed are included; this handoff does not finish them.
+Remaining towns in Fort Myers, Keys, Palm Beaches, Fort Lauderdale, Treasure Coast, Space Coast, Daytona, First Coast beyond Jacksonville, and Nature Coast retain overview coverage and are not finished detailed packages. They do not receive landing exports yet.
 
 ## Landing images
 
-38 towns × two WebP files: `<town-id>.webp` at 1600×1000, `<town-id>-m.webp` at 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
+45 towns × four WebP files: `<town-id>.webp` and `<town-id>-m.webp` are the wider Town view; `<town-id>-close.webp` and `<town-id>-close-m.webp` retain the Street close view. Desktop is 1600×1000; phone is 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
 
 The 30A catalog entry describes a corridor, so its representative Town image is centered on Seaside; the exact representative center is recorded. Every image now uses its sourced hero point, recorded with a one-line reason. To regenerate a screenshot, serve the atlas and use the manifest's relative render URL at the corresponding viewport. `landing=1` enables the clean render mode. Wait for `body[data-ready="true"]`; `body[data-camera]` exposes the actual orthographic camera. Save as WebP at the specified dimensions. Images were inspected as a contact sheet; browser console checks found no errors during export.
 
@@ -160,3 +162,11 @@ The coastal-region selector directly lists every catalog town in that region. Se
 ### Full coastal-region framing (v4.9)
 
 Region fits all towns in the selected catalog region, reserving space for the header and controls on desktop and phone. It uses the existing coastal-region overview architecture over continuous statewide terrain; Town retains the approved detailed packages and hero cameras. Town markers stay at their catalog coordinates; labels may move to avoid collisions. No model exports or style recipes changed.
+
+## Two landing zooms, mapped bridges, and coastal height rules (v5.0)
+
+All 45 finished towns have two hero-centered zooms and 180 landing images. Most Town images span 5–6 km; Tampa, Miami and Jacksonville span 8 km, and smaller towns use tighter context. The Street camera preserves the previous close span. `landing/index.json` keeps existing compatibility fields and adds `views.town` / `views.street`, both desktop and phone cameras, and separate per-frame callouts. The gallery compares both zooms side by side. See [export steps](pipeline/landing-export.md).
+
+Bridge geometry comes from every highway/rail bridge way (at least 3 m long) in the existing Geofabrik Florida 2026-10-17 snapshot. Warm decks, pale rails and piers follow the mapped centerlines. The runtime loads only intersecting 10 km bridge tiles. Width uses OSM width/lanes when available; missing width, clearance and pier spacing are illustration estimates. [Coverage](regions/bridges-report.json), [source inventory](regions/bridges.json.gz), and [serialized alignment check](regions/bridges-validation.json) accompany the export. The statewide intermediate mesh stays in ignored pipeline outputs. Raw PBF data is re-downloadable from the existing Geofabrik source recorded above.
+
+The Emerald Coast rebuild preserves footprints and explicit OSM heights/levels, adds flagged type/area estimates for untagged coastal condos/hotels/resorts, and keeps the 3× display and footprint caps. Pensacola historic blocks retain red brick; Pensacola Beach/PCB use white and pastel condos; Destin keeps fishing-village buildings and a separate resort recipe. Mapped marina docks and marina water areas receive illustrative fleets; Destin also has a source-aligned HarborWalk shoreline berth recipe where OSM lacks individual slip detail. Emerald and Forgotten Coast use the existing wider vivid green-turquoise wash to deep blue. Boat occupancy and missing height estimates are not field surveys.

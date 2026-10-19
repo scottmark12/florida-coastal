@@ -2,6 +2,36 @@
   "description": "Illustrated marina occupancy from mapped dock geometry; not real-time boats.",
   "towns": [
     {
+      "town": "destin",
+      "boats": 485,
+      "mapped_docks": 53,
+      "placement_sources": 59
+    },
+    {
+      "town": "pcb",
+      "boats": 1249,
+      "mapped_docks": 51,
+      "placement_sources": 58
+    },
+    {
+      "town": "pensacola",
+      "boats": 994,
+      "mapped_docks": 98,
+      "placement_sources": 103
+    },
+    {
+      "town": "pensacola-beach",
+      "boats": 1790,
+      "mapped_docks": 101,
+      "placement_sources": 117
+    },
+    {
+      "town": "panama-city",
+      "boats": 183,
+      "mapped_docks": 11,
+      "placement_sources": 12
+    },
+    {
       "town": "dunedin",
       "boats": 191,
       "mapped_docks": 27
@@ -87,24 +117,9 @@
       "mapped_docks": 2
     },
     {
-      "town": "pensacola",
-      "boats": 90,
-      "mapped_docks": 16
-    },
-    {
       "town": "jacksonville",
       "boats": 126,
       "mapped_docks": 15
-    },
-    {
-      "town": "panama-city",
-      "boats": 0,
-      "note": "Downtown marina closure; no illustrative fleet added."
-    },
-    {
-      "town": "destin",
-      "boats": 22,
-      "mapped_docks": 4
     },
     {
       "town": "port-st-joe",
@@ -132,5 +147,5 @@
       "mapped_docks": 0
     }
   ],
-  "total_boats": 2987
+  "total_boats": 7576
 }

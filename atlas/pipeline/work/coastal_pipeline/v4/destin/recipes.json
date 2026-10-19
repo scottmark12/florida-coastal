@@ -64,5 +64,32 @@
       "source": "https://www.rac.com/projects/residential/emerald-grande-at-harborwalk-village/",
       "note": "13-story project description; 3m per story is an illustrative estimate, not a surveyed height. Original OSM footprint retained; shared 3x scale and width cap apply."
     }
-  }
+  },
+  "styleZones": [
+    {
+      "bounds": [
+        -86.49,
+        30.375,
+        -86.39,
+        30.389
+      ],
+      "recipe": "harbor-resort"
+    }
+  ],
+  "towerRecipe": "harbor-resort",
+  "workingHarbors": [
+    {
+      "bounds": [
+        -86.515,
+        30.3935,
+        -86.497,
+        30.3952
+      ],
+      "spacingMeters": 12,
+      "offsetMeters": 10,
+      "source": "https://www.floridacoastal.co/towns/destin.html",
+      "note": "Illustrated charter berths along the mapped HarborWalk shoreline; vessel occupancy and individual berth positions are estimates.",
+      "waterSide": "south"
+    }
+  ]
 }

@@ -2,31 +2,26 @@
   "region": "pensacola",
   "building_count": 5161,
   "tree_count": 56761,
-  "region_bytes": 259372,
-  "max_tile_bytes": 472778,
+  "region_bytes": 260847,
+  "max_tile_bytes": 472789,
   "max_anchor_error_m": 0.0276,
   "max_coast_float32_error_m": 0.0338578955636743,
   "height_sources": {
-    "height": 0,
-    "levels": 50,
-    "assumed": 5110
+    "assumed-house": 3872,
+    "estimated-nonresidential": 1229,
+    "estimated-type-footprint": 9,
+    "landmark-recipe": 1,
+    "levels": 50
   },
   "max_height_width_ratio": 3.0000000000000004,
-  "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
   "phone_hardware_verified": false,
   "notes": [
     "Source-alignment checks are not independent survey accuracy.",
     "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
     "Unmapped heights remain explicitly flagged estimates."
   ],
-  "status": "Passed locked release gates; desktop and phone visual review completed; physical phone timing unverified",
+  "status": "candidate; visual QA required",
   "exported_boundary_source_error_m": 131.62943662991032,
-  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
-  "illustrative_boats": 90,
-  "boat_land_intersections": 0,
-  "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions.",
-  "initial_asset_bytes": 371868,
-  "initial_asset_bytes_with_boats": 374099,
-  "water_recipe": "emerald-forgotten",
-  "district_style_refresh": "2026-10-19"
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
 }

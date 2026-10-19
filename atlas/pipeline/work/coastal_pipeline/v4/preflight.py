@@ -40,9 +40,9 @@ def preflight(m,rules):
   p=polygons(e)
   if p.is_empty:center_only+=1;continue
   rawheight=tags.get('height');height=None
-  try:height=float(rawheight.replace(' m','')) if rawheight and 'ft' not in rawheight else None
+  try:height=float(rawheight.replace(' m','').replace('ft','').strip())*(.3048 if 'ft' in rawheight else 1) if rawheight else None
   except ValueError:pass
-  buildings.append({'type':'Feature','geometry':mapping(p),'properties':{'id':e['id'],'osm_type':e['type'],'height_m':height,'levels':tags.get('building:levels'),'building_type':tags.get('building'),'use':tags.get('shop') or tags.get('amenity') or tags.get('office'),'source':f'https://www.openstreetmap.org/{e["type"]}/{e["id"]}'}})
+  buildings.append({'type':'Feature','geometry':mapping(p),'properties':{'id':e['id'],'osm_type':e['type'],'height_m':height,'levels':tags.get('building:levels'),'building_type':tags.get('building'),'use':tags.get('shop') or tags.get('amenity') or tags.get('office') or tags.get('tourism'),'tourism':tags.get('tourism'),'source':f'https://www.openstreetmap.org/{e["type"]}/{e["id"]}'}})
  if not buildings:issues.append({'code':'building_geometry','detail':f'{center_only} OSM building records have no usable polygon geometry; fetch complete ways and relation members.'})
  districts=read(m['inputs']['districts']);districts=districts.get('districts',[]) if isinstance(districts,dict) else districts;districts=[d for d in districts if d.get('town') in m.get('towns',[m['id']])]
  prices=read(m['inputs']['prices']);prices=prices.get('districts',[]) if isinstance(prices,dict) else prices;prices={d['id']:d for d in prices}

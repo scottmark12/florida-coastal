@@ -30,7 +30,7 @@ def tiled_ground(p,z,color):
  current='base'
 # Cache only geometry, keyed by every geometry input and the construction code.
 import pickle,os
-cache_inputs=[m['recipes'],m['inputs']['land']['path'],m['inputs']['shoreline']['path'],m['inputs']['landcover']['path'],m['inputs']['roads']['path'],m['inputs']['districts'],*m['inputs']['osm']]
+cache_inputs=[str(HERE/'preflight.py'),m['recipes'],m['inputs']['land']['path'],m['inputs']['shoreline']['path'],m['inputs']['landcover']['path'],m['inputs']['roads']['path'],m['inputs']['districts'],*m['inputs']['osm']]
 if m['inputs'].get('context'):cache_inputs.append(m['inputs']['context']['path'])
 geometry_source=Path(__file__).read_text();geometry_start=geometry_source.index('\n # Geographic geometry')+1;geometry_end=geometry_source.index('\n with cache_path.open',geometry_start);geometry_code='\n'.join(line[1:] for line in geometry_source[geometry_start:geometry_end].splitlines())+'\n'
 cache_key=hashlib.sha256((geometry_code+json.dumps(rules['scale'])+json.dumps(m['bounds'])+''.join(hashlib.sha256(Path(p).read_bytes()).hexdigest() for p in cache_inputs)).encode()).hexdigest()
@@ -68,6 +68,8 @@ else:
   p=project(make_valid(shape(f['geometry']))).intersection(land)
   if p.is_empty:continue
   cover.append(p);surf(p.simplify(.025,preserve_topology=True),.003,'#c3cfac');tiled_ground(p,.0031,'#c3cfac')
+ # Gulf-facing beach polygons distinguish open-ocean towers from large inland buildings.
+ gulf_edge=unary_union(beaches) if beaches else Polygon()
  roads=[]
  for f in json.load(open(m['inputs']['roads']['path']))['features']:
   p=project(shape(f['geometry']));cl=f['properties'].get('class');bridge=f['properties'].get('bridge') in ['yes','viaduct']
@@ -114,11 +116,22 @@ else:
   for zone in rules.get('styleZones',[]):
    if box(*zone['bounds']).covers(raw.centroid):recipe=rules['recipes'][zone['recipe']];break
   house=props.get('building_type') in ['house','detached','semidetached_house','bungalow','terrace'] or (recipe.get('detail')=='painted-wood-porches' and props.get('building_type') in ['yes','residential'] and not props.get('use') and p.area<.00065 and w<.025 and (props.get('height_m') or 0)<20)
+  tower_rules=rules['scale']['coastalBuildings']
+  tower_type=props.get('building_type') in tower_rules['types'] or props.get('tourism') in ['hotel','resort']
+  height_zones=regional.get('coastalHeightZones');ocean_frontage=height_zones is None or any(box(*zone).covers(raw.centroid) for zone in height_zones)
+  coastal_large=ocean_frontage and p.area*1e6>=tower_rules['minFootprintM2'] and not gulf_edge.is_empty and p.distance(gulf_edge)*1000<=tower_rules['beachDistanceMeters']
+  if tower_type or coastal_large:
+   house=False
+   if regional.get('towerRecipe'):recipe=rules['recipes'][regional['towerRecipe']]
   real=props.get('height_m');source='height'
   if real is None:
    try:real=float(props.get('levels'))*rules['scale']['metersPerStorey'];source='levels'
-   except (ValueError,TypeError):real=rules['scale']['residentialStoreys'][seed%2]*rules['scale']['metersPerStorey'];source='assumed'
-   if house:real=max(3,min(real,2*rules['scale']['metersPerStorey']))
+   except (ValueError,TypeError):
+    if house:storeys=rules['scale']['residentialStoreys'][seed%2];source='assumed-house'
+    elif tower_type or coastal_large:
+     area=p.area*1e6;storeys=min(tower_rules['estimateMaxStoreys'],max(tower_rules['estimateMinStoreys'],round(tower_rules['estimateBaseStoreys']+math.sqrt(area)/tower_rules['estimateSqrtAreaDivisor'])));source='estimated-type-footprint'
+    else:storeys=2 if p.area<.0015 else 3;source='estimated-nonresidential'
+    real=storeys*rules['scale']['metersPerStorey']
   landmark=rules.get('landmarks',{}).get(props['osm_type']+'/'+str(seed),{})
   if landmark.get('illustratedRealHeightMeters') is not None:real=landmark['illustratedRealHeightMeters'];source='landmark-recipe'
   if landmark.get('recipe'):recipe=rules['recipes'][landmark['recipe']]
@@ -172,7 +185,7 @@ else:
   # Region LOD uses all significant buildings and deterministic small-building sampling.
   if h>.065 or seed%11==0:
    current='region';q=p.simplify(.001,preserve_topology=True);walls(q,z0,z,wc);surf(q,z,rc)
-  building_polys.append(p);centers.append(c);inventory.append({'id':seed,'district':d['id'],'x':c.x,'y':c.y,'height_m':h*1000,'real_height_m':real,'height_source':source,'house':house,'osm_height_m':props.get('height_m'),'width_m':w*1000,'tile':tile,'osm_type':props['osm_type']})
+  building_polys.append(p);centers.append(c);inventory.append({'id':seed,'district':d['id'],'x':c.x,'y':c.y,'height_m':h*1000,'real_height_m':real,'height_source':source,'house':house,'building_type':props.get('building_type'),'footprint_m2':round(p.area*1e6,2),'coastal_large':coastal_large,'osm_height_m':props.get('height_m'),'width_m':w*1000,'tile':tile,'osm_type':props['osm_type']})
  with cache_path.open('wb') as handle:pickle.dump((groups,inventory,building_polys,roads,es),handle,protocol=5)
  (HERE/m['id']/'geometry-cache.sha256').write_text(cache_key)
  print('Geometry built and cached',flush=True)
@@ -200,5 +213,5 @@ for point in trees:
 for key,points in tree_tiles.items():(O/(key+'.trees.json.gz')).write_bytes(gzip.compress(json.dumps(points,separators=(',',':')).encode()))
 meta={'crownProfiles':canopy_audit.get('crown_profiles',{}),'canopyAttribution': 'Canopy: '+('ESA WorldCover 2021 v200 (CC BY 4.0) · ' if any('worldcover' in r['path'] for r in m['inputs'].get('canopyRasters',[])) else '')+('Tampa / USF 2021 · ' if any('usf.edu' in r['source'] for r in m['inputs'].get('canopyRasters',[])) else '')+'OSM · illustrated crowns','treeTiles':{key:len(points) for key,points in tree_tiles.items()},'camera':m['camera'],'recipes':rules['recipes'],'id':m['id'],'districts':ds,'center':[center.x,center.y],'regionSpan':max(project(clip).bounds[2]-project(clip).bounds[0],20),'tiles':{k:v for k,v in sizes.items() if k.startswith('tile')},'trees':[],'palette':rules['palette'],'scale':rules['scale'],'bounds':project(clip).bounds,'attribution':'© OpenStreetMap contributors · ODbL'}
 (O/'scene.json').write_text(json.dumps(meta,separators=(',',':')));(O/'inventory.json').write_text(json.dumps(inventory,separators=(',',':')))
-report={'region':m['id'],'building_count':len(inventory),'tree_count':len(trees),'region_bytes':sizes['base']+sizes['region'],'max_tile_bytes':max(v for k,v in sizes.items() if k.startswith('tile')),'max_anchor_error_m':max(r['distance_m'] for r in anchors),'max_coast_float32_error_m':max(errs),'height_sources':{k:sum(i['height_source']==k for i in inventory) for k in ['height','levels','assumed']},'max_height_width_ratio':max(i['height_m']/i['width_m'] for i in inventory),'engine_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'phone_hardware_verified':False,'notes':['Source-alignment checks are not independent survey accuracy.','Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.','Unmapped heights remain explicitly flagged estimates.'],'status':'candidate; visual QA required'}
+report={'region':m['id'],'building_count':len(inventory),'tree_count':len(trees),'region_bytes':sizes['base']+sizes['region'],'max_tile_bytes':max(v for k,v in sizes.items() if k.startswith('tile')),'max_anchor_error_m':max(r['distance_m'] for r in anchors),'max_coast_float32_error_m':max(errs),'height_sources':{k:sum(i['height_source']==k for i in inventory) for k in sorted(set(i['height_source'] for i in inventory))},'max_height_width_ratio':max(i['height_m']/i['width_m'] for i in inventory),'engine_sha256':hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),'phone_hardware_verified':False,'notes':['Source-alignment checks are not independent survey accuracy.','Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.','Unmapped heights remain explicitly flagged estimates.'],'status':'candidate; visual QA required'}
 (O/'report.json').write_text(json.dumps(report,indent=2));print(json.dumps(report,indent=2))
