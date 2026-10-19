@@ -1,5 +1,5 @@
 {
-  "version": "florida-coastal-illustration-v4.8-town-navigation",
+  "version": "florida-coastal-illustration-v4.9-full-region-framing",
   "date": "2026-10-19",
   "rules": "Approved Miami/30A scale and UI; regional recipes and source inputs remain external",
   "files": {
@@ -13,10 +13,10 @@
     "work/coastal_pipeline/v4/run.py": "5a9b7451edf2ca4fb9bc579c9da5dbdbd5489e4249f8a57ff8562fef0a8181a5",
     "work/coastal_pipeline/v4/publish.py": "0eff4367e067a413586c377a15439bc92892c2fcaa289b00959f8f7b1d5b22a5",
     "work/coastal_pipeline/v3/atlas-layer.js": "3b69812849bcca8b7b482fa926f5b6fc5d8cd7bc063802205277be7b6c14a370",
-    "work/atlas_regions/app.js": "92d0d9e705fe0869bd285adff20fa22f04c6bfad49ade0b99db16bfe886adb40",
+    "work/atlas_regions/app.js": "ffc504ba4265052208a898f6fdaa75291e02c82a384b25b9c88f059e57cb17e2",
     "work/30a_finish/geometry.py": "0e286e67440ae5adfe1cb972f63b960178af3062c3c1d6ee7f245cffc2d9d9f5",
     "work/coastal_pipeline/v3/marina-boats.js": "139647b5104dfe9725f2fffc122d7b37046cde4636a50e4be0743ae6a52b9f09",
     "work/coastal_pipeline/v4/water-recipes.json": "1433dbeb9118ce26e64d732bb7acb92fd132b4d4e3a8b0f6fac9da8848105299"
   },
-  "change": "User-requested navigation: coastal region directly lists its towns; town selection opens Town view; district choices belong to that town. Zoom labels are Florida / Nearby / Town. No geometry, recipe, scale or camera changes."
+  "change": "User-requested full coastal-region framing: fit all catalog town anchors with UI-safe padding; region-wide overview assets and continuous statewide background; town detail cameras and generated geometry unchanged."
 }

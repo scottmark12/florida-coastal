@@ -156,3 +156,7 @@ Restore excluded supplemental downloads with `python supplement_st_teresa.py` an
 ### Town navigation (v4.8)
 
 The coastal-region selector directly lists every catalog town in that region. Selecting a town opens its Town view. District choices appear only in Town view and are filtered to the selected town, even when the underlying geometry package serves several towns. A single same-name center uses an About button instead of a duplicate district level. The zoom controls are labeled Florida / Nearby / Town; their existing cameras and URL levels are unchanged. Phone cards retain the slim navigation bar. This user-requested UI revision updates only the viewer portion of the lock; geography, recipes, scale and export rules are unchanged. Rebuild the viewer with `npm ci && npm run build:viewer` from `pipeline/`.
+
+### Full coastal-region framing (v4.9)
+
+Region fits all towns in the selected catalog region, reserving space for the header and controls on desktop and phone. It uses the existing coastal-region overview architecture over continuous statewide terrain; Town retains the approved detailed packages and hero cameras. Town markers stay at their catalog coordinates; labels may move to avoid collisions. No model exports or style recipes changed.

@@ -49,18 +49,28 @@ function maskLegacyThirty(model){model.traverse(o=>{if(!o.isMesh||o.userData.thi
 
 function status(text){$('#status').textContent=text;$('#status').hidden=!text}
 let terrain=null,terrainName='';
-let detailedLayer=null;const detailedLayers=new Map();const isDetailed=()=>!!packageRegistry[activeTown.id]&&level!=='state';
-const isThirty=()=>activeTown.id==='30a'&&level!=='state';
+let detailedLayer=null;const detailedLayers=new Map();const isDetailed=()=>!!packageRegistry[activeTown.id]&&level==='town';
+const isThirty=()=>activeTown.id==='30a'&&level==='town';
 function setCamera(){
  if(level==='state'){target.set(30,0,-440);span=830}
  else {target.set(activeTown.x,0,-activeTown.y);span=level==='region'?48:22;if(level==='town'&&selectedDistrict){target.set(selectedDistrict.x,0,-selectedDistrict.y);span=17}}
  if(isThirty()){if(level==='region'){target.set(innerWidth<700?-204:-199,0,innerWidth<700?-705:-708);span=innerWidth<700?32:48;if(weights.airport){const route=builtRoutes.find(r=>r.town==='30a'&&(selectedDistrict?r.district===selectedDistrict.id:!r.district));if(route){const xs=route.points.map(p=>p[0]),ys=route.points.map(p=>p[1]);span=Math.max(48,(Math.max(...xs)-Math.min(...xs))*1.55);target.set((Math.min(...xs)+Math.max(...xs))/2+(mobile?0:span*.09),0,-(Math.min(...ys)+Math.max(...ys))/2)}}}else{const d=selectedDistrict||districts.find(d=>d.id==='seaside'&&d.town==='30a');target.set(d.x,0,-d.y);span=.85}}
  if(isDetailed()&&detailedLayer){if(level==='region'){const c=detailedLayer.meta.camera||{center:[detailedLayer.meta.center[0]+1,detailedLayer.meta.center[1]],phoneOffsetY:4,phoneSpan:20,desktopSpan:32};target.set(c.center[0]+(innerWidth<700?0:(c.desktopOffsetX||0)),0,-c.center[1]+(innerWidth<700?c.phoneOffsetY:0));span=innerWidth<700?c.phoneSpan:c.desktopSpan}else{const d=selectedDistrict||detailedLayer.meta.districts[0];target.set(d.x,0,-d.y);span=innerWidth<700?1.05:1.9}}
+ // Fit every town in the selected coastal region, within the unobstructed map area.
+ if(level==='region'){
+  const points=region.towns.map(id=>byId[id]).filter(Boolean);
+  const xs=points.map(t=>t.x),ys=points.map(t=>t.y/Math.SQRT2);
+  const left=innerWidth<700?35:75,right=innerWidth<700?innerWidth-35:innerWidth-330;
+  const top=155,bottom=innerWidth<700?innerHeight-Math.min(innerHeight*.34,360)-85:innerHeight-85;
+  const scale=Math.max((Math.max(...xs)-Math.min(...xs)+6)/Math.max(100,right-left),(Math.max(...ys)-Math.min(...ys)+6)/Math.max(120,bottom-top));
+  span=scale*innerWidth;
+  target.set((Math.min(...xs)+Math.max(...xs))/2+(innerWidth/2-(left+right)/2)*scale,0,-((Math.min(...ys)+Math.max(...ys))/2+((top+bottom)/2-innerHeight/2)*scale)*Math.SQRT2);
+ }
  const townView=townViews[activeTown.id];
  if(level==='town'&&townView&&(!selectedDistrict||selectedDistrict.id===townView.district)){target.set(townView.x,0,-townView.y);span=innerWidth<700?townView.phoneSpan:townView.desktopSpan}
  if(landing&&level==='town'){if(qs.has('cx'))target.set(Number(qs.get('cx')),0,-Number(qs.get('cy')));span=Number(qs.get('span')||span);}
  const mapHeight=innerHeight;renderer.setSize(innerWidth,mapHeight);const a=innerWidth/mapHeight, height=level==='state'?Math.max(span,span/(a*.9)):span/a;camera.left=-height*a/2;camera.right=height*a/2;camera.top=height/2;camera.bottom=-height/2;camera.position.copy(target).add(new THREE.Vector3(0,height*1.25,height*1.25));camera.lookAt(target);camera.updateProjectionMatrix();sun.position.copy(target).add(new THREE.Vector3(-height,height*1.5,height*.6));sun.target.position.copy(target);Object.assign(sun.shadow.camera,{left:-height,right:height,top:height,bottom:-height,near:.001,far:height*5});sun.shadow.camera.updateProjectionMatrix();sun.shadow.normalBias=(isThirty()||isDetailed())?.0001:.06;
- $('#scale').textContent=level==='state'?'Florida · regional overview':level==='region'?(isDetailed()?activeTown.name+' · regional atlas':'Regional view · approximately 30 miles across'):(isThirty()?'Neighborhood view · 850 m across · 3× height, capped at 3× footprint':'Neighborhood view · illustrated building scale');
+ $('#scale').textContent=level==='state'?'Florida · regional overview':level==='region'?region.map+' · all '+region.towns.length+' towns':(isThirty()?'Neighborhood view · 850 m across · 3× height, capped at 3× footprint':'Neighborhood view · illustrated building scale');
 }
 async function show(){
  document.documentElement.classList.toggle('miami-region',isDetailed()&&level==='region');const token=++packageToken,flight=pendingFlight;pendingFlight=null;document.documentElement.classList.toggle('thirty-region',(isThirty()||isDetailed())&&level==='region');setCamera();status('Loading this part of the coast…');
@@ -75,14 +85,14 @@ async function show(){
   }
   if(detailedLayer)detailedLayer.hide();const credit=document.getElementById('canopy-credit');if(credit)credit.textContent='OSM-based geography · original illustrated canopy';if(terrain)terrain.visible=true;
   if(isThirty()){await loadThirty();await localCanopy()}
-  const tn=isThirty()?'30a-finished':level==='state'?'terrain-state':'terrain-'+region.id;if(tn!==terrainName){const next=await load(tn);if(token!==packageToken)return;if(terrain)scene.remove(terrain);terrain=next;terrainName=tn;if(tn==='30a-finished'||tn==='terrain-state')illustrateThirty(terrain);scene.add(terrain);document.body.dataset.terrainMs=Math.round(performance.now()-started)}
+  const tn=isThirty()?'30a-finished':level==='town'?'terrain-'+region.id:'terrain-state';if(tn!==terrainName){const next=await load(tn);if(token!==packageToken)return;if(terrain)scene.remove(terrain);terrain=next;terrainName=tn;if(tn==='30a-finished'||tn==='terrain-state')illustrateThirty(terrain);scene.add(terrain);document.body.dataset.terrainMs=Math.round(performance.now()-started)}
   if(level==='state'){
    maskLegacyThirty(terrain);await loadThirty();thirtyModel=await load('30a-finished');if(token!==packageToken)return;illustrateThirty(thirtyModel);scene.add(thirtyModel);thirtyModel.visible=true;
    roadLines.visible=true;if(architecture)architecture.visible=false;if(!stateIcons){stateIcons=await load('state');stateIcons.traverse(o=>{if(!o.isInstancedMesh)return;for(let i=0;i<o.instanceMatrix.array.length;i+=16)for(let j=0;j<12;j++)o.instanceMatrix.array[i+j]*=3;o.instanceMatrix.needsUpdate=true;o.computeBoundingSphere()});scene.add(stateIcons)}stateIcons.visible=true;stateIcons.traverse(o=>{if(!o.isInstancedMesh)return;const a=o.instanceMatrix.array;for(let i=0;i<a.length;i+=16)if(a[i+12]>-226&&a[i+12]<-186&&-a[i+14]>695&&-a[i+14]<733){for(let j=0;j<12;j++)a[i+j]=0}o.instanceMatrix.needsUpdate=true});
   }else if(isThirty()){
    if(stateIcons)stateIcons.visible=false;if(architecture)architecture.visible=false;roadLines.visible=false;
   }else{
-   if(thirtyModel)scene.remove(thirtyModel);roadLines.visible=true;if(stateIcons)stateIcons.visible=false;
+   if(region.id==='emerald-coast'){await loadThirty();thirtyModel=await load('30a-finished');if(token!==packageToken)return;illustrateThirty(thirtyModel);scene.add(thirtyModel);thirtyModel.visible=true;}else if(thirtyModel)scene.remove(thirtyModel);roadLines.visible=true;if(stateIcons)stateIcons.visible=false;
    if(currentPackage!==region.id){const next=await load((mobile?'mobile-':'')+region.id);if(token!==packageToken)return;if(architecture)scene.remove(architecture);architecture=next;scene.add(architecture);currentPackage=region.id}
    architecture.visible=true;
   }
@@ -94,7 +104,7 @@ function updateUi(){
  $('#region-select').value=region.id;
  $('#town-title').textContent='Towns in '+region.map;$('#town-list').replaceChildren();
  for(const id of region.towns){const t=byId[id];if(!t)continue;const b=document.createElement('button');b.textContent=t.name;b.dataset.town=id;b.classList.toggle('active',id===activeTown.id);b.setAttribute('aria-pressed',id===activeTown.id);b.onclick=()=>chooseTown(id);$('#town-list').append(b)}
- $('#title').textContent=level==='state'?'Find your stretch of coast':level==='region'?(activeTown.id==='30a'?'The 30A coast':activeTown.name+' & nearby towns'):selectedDistrict?.name||activeTown.name;
+ $('#title').textContent=level==='state'?'Find your stretch of coast':level==='region'?region.map:selectedDistrict?.name||activeTown.name;
  $('#subtitle').textContent=level==='state'?'Choose a region to compare places.':level==='region'?'Compare towns, then explore their neighborhoods.':'Tap a district for its character and housing context.';
  $('#district-list').replaceChildren();const available=isDetailed()?detailedLayer.meta.districts:districts;const ds=available.filter(d=>d.town===activeTown.id||(activeTown.id==='southbeach'&&d.town==='miami'));
  const hasDistricts=ds.length>1||(ds.length===1&&ds[0].name!==activeTown.name);$('#town-about').hidden=level!=='town'||hasDistricts;$('#town-about').textContent='About '+activeTown.name;$('#town-about').onclick=()=>ds.length===1?openDistrict(ds[0]):openTown(activeTown);
@@ -110,11 +120,13 @@ function label(text,x,y,kind,onClick,priority=1){
  let anchor=null,d=null;if((isThirty()||isDetailed())&&level==='region'&&kind==='district-label'){
   d=isDetailed()?detailedLayer.meta.districts.find(d=>d.name===text):districts.find(d=>d.name===text&&d.town===activeTown.id);if(d){anchor=document.createElement('button');anchor.className='district-anchor';anchor.setAttribute('aria-label','Explore '+text);anchor.dataset.district=d.id;anchor.innerHTML=isDetailed()?recipeGlyph(d,detailedLayer.meta.recipes):districtGlyph(d).split('<span>')[0];anchor.onclick=e=>{if(innerWidth<700&&e.detail){const nearest=labels.filter(l=>l.anchor&&Number.isFinite(l.ax)).sort((a,b)=>Math.hypot(e.clientX-a.ax,e.clientY-a.ay)-Math.hypot(e.clientX-b.ax,e.clientY-b.ay))[0];flyToDistrict(nearest?.d||d)}else flyToDistrict(d)};$('#labels').append(anchor);b.onclick=()=>flyToDistrict(d);}
  }
+ if(level==='region'&&kind==='town-label'){const dot=document.createElement('button');dot.className='region-town-dot';dot.setAttribute('aria-label','Explore '+text);dot.onclick=onClick;$('#labels').append(dot);anchor=dot;}
  labels.push({b,x,y,priority,leader,anchor,d});
 }
 function makeLabels(){
  $('#labels').replaceChildren();$('#leaders').replaceChildren();labels.length=0;
  if(level==='state')for(const r of regions)label(r.map,r.center[0],r.center[1],'region-label',()=>{region=r;activeTown=byId[r.towns[0]];level='region';selectedDistrict=null;show()},3);
+ else if(level==='region'){for(const id of region.towns){const t=byId[id];if(t)label(t.name,t.x,t.y,'town-label',()=>chooseTown(id),3)}}
  else {
   for(const t of towns){if(isDetailed())continue;if(isThirty()&&t.id==='30a')continue;if(Math.hypot(t.x-activeTown.x,t.y-activeTown.y)>42)continue;label(t.name,t.x,t.y,'town-label',()=>{activeTown=t;region=regionFor(t.id);selectedDistrict=null;level='town';openTown(t);show()},t.id===activeTown.id?5:2)}
   for(const d of districts.filter(d=>(!isDetailed()||detailedLayer.meta.districts.some(q=>q.id===d.id))&&(isDetailed()||Math.hypot(d.x-activeTown.x,d.y-activeTown.y)<24&&(level==='town'||d.town===activeTown.id||(activeTown.id==='southbeach'&&d.town==='miami')))))label(d.name,d.x,d.y,'district-label',()=>openDistrict(d),4);
@@ -170,11 +182,12 @@ function illustrateThirty(model){
 function placeLabels(){
  const boxes=[];const header=$('header').getBoundingClientRect(),controls=$('#controls').getBoundingClientRect();
  for(const l of [...labels].sort((a,b)=>b.priority-a.priority)){
-  l.leader.style.display='none';const mapRect=renderer.domElement.getBoundingClientRect();const p=new THREE.Vector3(l.x,(isThirty()||isDetailed())?.004:.8,-l.y).project(camera),w=l.b.offsetWidth||100,h=l.b.offsetHeight||28;let x=(p.x*.5+.5)*innerWidth,y=mapRect.top+(-p.y*.5+.5)*mapRect.height;
+  l.leader.style.display='none';const mapRect=renderer.domElement.getBoundingClientRect();const p=new THREE.Vector3(l.x,(isThirty()||isDetailed()||level==='region')?.004:.8,-l.y).project(camera),w=l.b.offsetWidth||100,h=l.b.offsetHeight||28;let x=(p.x*.5+.5)*innerWidth,y=mapRect.top+(-p.y*.5+.5)*mapRect.height;
+  if(level==='region'&&l.anchor){l.anchor.style.left=x+'px';l.anchor.style.top=y+'px';l.anchor.dataset.screenX=x;l.anchor.dataset.screenY=y;}
   if(p.z>1||x<-w||x>innerWidth+w||y<0||y>innerHeight){l.b.style.visibility='hidden';continue}
   if((isThirty()||isDetailed())&&level==='region'&&l.b.classList.contains('district-label'))continue;
-  if(x<w/2+10||x>innerWidth-w/2-10){l.b.style.visibility='hidden';continue}let good=false;
-  const anchorX=x;for(const [dx,dy] of (level==='state'?[[0,0],[-150,0],[150,0],[-260,0],[260,0]]:[[0,0]])){x=Math.min(innerWidth-w/2-10,Math.max(w/2+10,anchorX+dx));const b={left:x-w/2,right:x+w/2,top:y+dy-h/2,bottom:y+dy+h/2};const overlaps=q=>!(b.right+5<q.left||b.left-5>q.right||b.bottom+4<q.top||b.top-4>q.bottom);
+  if(level!=='region'&&(x<w/2+10||x>innerWidth-w/2-10)){l.b.style.visibility='hidden';continue}let good=false;
+  const anchorX=x;for(const [dx,dy] of (level==='state'?[[0,0],[-150,0],[150,0],[-260,0],[260,0]]:level==='region'?[[0,0],[0,-30],[0,30],[0,-60],[0,60]]:[[0,0]])){x=Math.min(innerWidth-w/2-10,Math.max(w/2+10,anchorX+dx));const b={left:x-w/2,right:x+w/2,top:y+dy-h/2,bottom:y+dy+h/2};const overlaps=q=>!(b.right+5<q.left||b.left-5>q.right||b.bottom+4<q.top||b.top-4>q.bottom);
    if(b.top<12||b.bottom>innerHeight-45||overlaps(header)||overlaps(controls)||boxes.some(overlaps))continue;l.b.style.left=x+'px';l.b.style.top=y+dy+'px';l.b.style.visibility='visible';if(Math.abs(dy)>3||level==='state'){l.leader.setAttribute('x1',(p.x*.5+.5)*innerWidth);l.leader.setAttribute('y1',(-p.y*.5+.5)*innerHeight);l.leader.setAttribute('x2',x);l.leader.setAttribute('y2',y+dy);l.leader.style.display='block'}boxes.push(b);good=true;break}
   if(!good)l.b.style.visibility='hidden';
  }
