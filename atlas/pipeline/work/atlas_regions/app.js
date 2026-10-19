@@ -10,6 +10,22 @@ const packageRegistry=await fetch(assetBase+'package-registry.json').then(r=>r.j
 const towns=catalog.towns, regions=catalog.regions, byId=Object.fromEntries(towns.map(t=>[t.id,t]));
 const qs=new URLSearchParams(location.search);const landing=qs.get('landing')==='1';if(landing)document.documentElement.classList.add('landing-export');
 let thirty=null,thirtyModel=null,sandArt=null,alysArt=null,alysOccupied=[];
+let emeraldWater=null;
+async function regionalWater(){
+ const emerald=['emerald-coast','forgotten-coast'].includes(region.id)&&level!=='state';
+ sea.material.color.set(emerald?'#17658f':'#3593ae');scene.background.set(emerald?'#17658f':'#3593ae');
+ const visible=!isDetailed()&&(level==='state'||['emerald-coast','forgotten-coast'].includes(region.id));
+ if(visible&&!emeraldWater){
+  const info=await fetch(assetBase+'emerald-water/shore-wash.json').then(r=>r.json());
+  const texture=await new THREE.TextureLoader().loadAsync(assetBase+'emerald-water/shore-wash.png');texture.colorSpace=THREE.SRGBColorSpace;
+  const [x0,y0,x1,y1]=info.bounds;
+  emeraldWater=new THREE.Mesh(new THREE.PlaneGeometry(x1-x0,y1-y0),new THREE.MeshBasicMaterial({map:texture,transparent:true,depthWrite:false,toneMapped:false}));
+  emeraldWater.rotation.x=-Math.PI/2;emeraldWater.position.set((x0+x1)/2,-.001,-(y0+y1)/2);emeraldWater.renderOrder=-1;scene.add(emeraldWater);
+ }
+ if(emeraldWater)emeraldWater.visible=visible;
+ if(terrain)terrain.traverse(o=>{if(/Depth[_ ]band/.test(o.name))o.visible=!(visible&&level!=='state')});
+}
+
 async function loadThirty(){if(!thirty){thirty=await fetch(assetBase+'30a.json').then(r=>r.json());const vs=await fetch(assetBase+'sand.json').then(r=>r.json());const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(vs,3));sandArt=new THREE.Mesh(g,new THREE.MeshBasicMaterial({color:'#fffdf1',side:THREE.DoubleSide,toneMapped:false}));scene.add(sandArt);const exact=await fetch(assetBase+'alys-geometry.json.gz').then(async r=>new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).json());alysOccupied=exact.occupied;alysArt=new THREE.Group();for(const [key,vs] of Object.entries(exact)){if(key==='occupied')continue;const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(vs,3));g.computeVertexNormals();const m=new THREE.MeshStandardMaterial({color:key==='walls'?'#fff9e9':key==='roofs'?'#fffdf6':'#ded1b4',side:THREE.DoubleSide,roughness:.92,flatShading:true});const mesh=new THREE.Mesh(g,m);mesh.castShadow=key!=='lanes';mesh.receiveShadow=true;alysArt.add(mesh)}scene.add(alysArt)}return thirty}
 let townId=qs.get('view')||'30a';if(!byId[townId])townId='30a';
 let level=qs.get('level')||'region', activeTown=byId[townId], region=regionFor(townId), selectedDistrict=null, selectedFeature=null, weights={}, top5=[], resultsProvided=false, airportRoutes=builtRoutes;
@@ -46,7 +62,7 @@ function setCamera(){
 async function show(){
  document.documentElement.classList.toggle('miami-region',isDetailed()&&level==='region');const token=++packageToken,flight=pendingFlight;pendingFlight=null;document.documentElement.classList.toggle('thirty-region',(isThirty()||isDetailed())&&level==='region');setCamera();status('Loading this part of the coast…');
  try{
-  document.body.dataset.ready='false';renderer.toneMapping=isDetailed()?THREE.NoToneMapping:THREE.ACESFilmicToneMapping;
+  await regionalWater();document.body.dataset.ready='false';renderer.toneMapping=isDetailed()?THREE.NoToneMapping:THREE.ACESFilmicToneMapping;
   if(isDetailed()){
    const packagePath=packageRegistry[activeTown.id];if(detailedLayer)detailedLayer.hide();if(!detailedLayers.has(packagePath)){const layer=await createRegionLayer(assetBase+packagePath);detailedLayers.set(packagePath,layer);scene.add(layer.root)}detailedLayer=detailedLayers.get(packagePath);const credit=document.getElementById('canopy-credit');if(credit)credit.textContent=detailedLayer.meta.canopyAttribution||'OSM-based geography · original illustrated canopy';
    if(token!==packageToken)return;
@@ -67,7 +83,7 @@ async function show(){
    if(currentPackage!==region.id){const next=await load((mobile?'mobile-':'')+region.id);if(token!==packageToken)return;if(architecture)scene.remove(architecture);architecture=next;scene.add(architecture);currentPackage=region.id}
    architecture.visible=true;
   }
-  if(token!==packageToken)return;if(isThirty())terrain.visible=true;status('');updateUi();makeLabels();highlight();if(flight)animateFlight(flight,token);else render();document.body.dataset.ready='true';document.body.dataset.readyMs=Math.round(performance.now()-started);document.body.dataset.drawCalls=renderer.info.render.calls;document.body.dataset.triangles=renderer.info.render.triangles;
+  if(token!==packageToken)return;await regionalWater();if(isThirty())terrain.visible=true;status('');updateUi();makeLabels();highlight();if(flight)animateFlight(flight,token);else render();document.body.dataset.ready='true';document.body.dataset.readyMs=Math.round(performance.now()-started);document.body.dataset.drawCalls=renderer.info.render.calls;document.body.dataset.triangles=renderer.info.render.triangles;
  }catch(e){status('This map section could not load. Try another region.');console.error(e)}
 }
 function updateUi(){

@@ -28,8 +28,10 @@
     "Russell-Fields Pier deck uses the actual OSM way geometry, rendered by the existing footbridge recipe.",
     "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged."
   ],
-  "initial_asset_bytes": 753891,
+  "initial_asset_bytes": 587855,
   "known_ui_limitations": [
     "At 390 px the existing long-title header places the canopy attribution close to the subtitle. Approved shared UI was not changed."
-  ]
+  ],
+  "water_recipe": "emerald-forgotten",
+  "water_geometry_changed": false
 }

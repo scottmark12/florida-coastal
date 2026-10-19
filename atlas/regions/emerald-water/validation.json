@@ -1,0 +1,27 @@
+{
+  "packages": [
+    {
+      "region": "destin",
+      "initial_bytes": 325701
+    },
+    {
+      "region": "pensacola",
+      "initial_bytes": 374118
+    },
+    {
+      "region": "pensacola-beach",
+      "initial_bytes": 110229
+    },
+    {
+      "region": "pcb",
+      "initial_bytes": 587855
+    },
+    {
+      "region": "panama-city",
+      "initial_bytes": 721570
+    }
+  ],
+  "geometry_changes": 0,
+  "landing_images_refreshed": 12,
+  "illustration_not_bathymetry": true
+}
