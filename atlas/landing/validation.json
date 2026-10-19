@@ -1,7 +1,7 @@
 {
-  "town_count": 50,
-  "view_count": 100,
-  "image_count": 200,
+  "town_count": 70,
+  "view_count": 140,
+  "image_count": 280,
   "towns": [
     {
       "town_id": "30a",
@@ -700,6 +700,286 @@
       "town_id": "steinhatchee",
       "view": "street",
       "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "perdido-key",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "perdido-key",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "gulf-breeze",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "gulf-breeze",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "navarre",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "navarre",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "navarre-beach",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "navarre-beach",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "fort-walton-beach",
+      "view": "town",
+      "span_km": 6,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "fort-walton-beach",
+      "view": "street",
+      "span_km": 2.4,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "okaloosa-island",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "okaloosa-island",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "mary-esther",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "mary-esther",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "shalimar",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "shalimar",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "niceville",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "niceville",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "valparaiso",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "valparaiso",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "miramar-beach",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "miramar-beach",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "freeport",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "freeport",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "keaton-beach",
+      "view": "town",
+      "span_km": 3.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "keaton-beach",
+      "view": "street",
+      "span_km": 1.6,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "horseshoe-beach",
+      "view": "town",
+      "span_km": 3.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "horseshoe-beach",
+      "view": "street",
+      "span_km": 1.6,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "suwannee",
+      "view": "town",
+      "span_km": 4,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "suwannee",
+      "view": "street",
+      "span_km": 1.8,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "yankeetown",
+      "view": "town",
+      "span_km": 4,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "yankeetown",
+      "view": "street",
+      "span_km": 1.8,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "inglis",
+      "view": "town",
+      "span_km": 4,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "inglis",
+      "view": "street",
+      "span_km": 1.8,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hernando-beach",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hernando-beach",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "weeki-wachee",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "weeki-wachee",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "aripeka",
+      "view": "town",
+      "span_km": 3.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "aripeka",
+      "view": "street",
+      "span_km": 1.6,
       "callouts": 1,
       "checks": "passed"
     }

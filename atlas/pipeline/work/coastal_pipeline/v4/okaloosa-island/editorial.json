@@ -1,0 +1,38 @@
+{
+  "prices": {
+    "okaloosa-island": [
+      431500,
+      "median listing price",
+      "October 2026",
+      "https://www.realtor.com/local/market/florida/okaloosa-county/okaloosa-island"
+    ]
+  },
+  "recipes": {
+    "okaloosa-island": {
+      "walls": [
+        "#fffbed",
+        "#efc5b7",
+        "#cbdfe9",
+        "#f4e8bf"
+      ],
+      "roofs": [
+        "#c6d4d2",
+        "#d8ded7",
+        "#9eafb0"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.destinfwb.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "Beachfront resort blocks, white sand and the fishing pier across the sound from downtown."
+    }
+  },
+  "manual_fixes": [
+    "Town palette and waterfront hero curated from regional visitor references; facade color is editorial, not surveyed.",
+    "Published prices retain their actual metric and period; thin markets are explicitly labeled.",
+    "Four communities without named OSM place nodes use explicitly documented OSM locality or park reference anchors; these are not claimed as municipal centers."
+  ]
+}

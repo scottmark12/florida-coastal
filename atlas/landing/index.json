@@ -16119,6 +16119,5399 @@
       "close_render_url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=2.2",
       "close_mobile_render_url": "../explore_coast.html?view=steinhatchee&level=town&district=steinhatchee-center&landing=1&cx=59.11207863203964&cy=629.23476786639&span=1.1",
       "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "perdido-key",
+      "name": "Perdido Key",
+      "desktop": "perdido-key.webp",
+      "mobile": "perdido-key-m.webp",
+      "center": {
+        "x": -327.98161625315595,
+        "y": 703.7648501418054,
+        "lon": -87.4140126,
+        "lat": 30.3003968
+      },
+      "districts": [
+        {
+          "id": "perdido-key-center",
+          "name": "Perdido Key",
+          "lon": -87.4140126,
+          "lat": 30.3003968
+        }
+      ],
+      "district": "perdido-key-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -87.4140126,
+        "lat": 30.3003968,
+        "reason": "The Johnsons Beach reference frames Perdido Key\u2019s Gulf shore and neighboring condo and dune landscape.",
+        "source": "https://www.openstreetmap.org/node/153522537"
+      },
+      "callouts": [
+        {
+          "name": "Johnsons Beach locality",
+          "type": "landmark",
+          "lon": -87.4140126,
+          "lat": 30.3003968
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Johnsons Beach locality",
+          "type": "landmark",
+          "lon": -87.4140126,
+          "lat": 30.3003968
+        }
+      ],
+      "close_desktop": "perdido-key-close.webp",
+      "close_mobile": "perdido-key-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "perdido-key.webp",
+          "mobile": "perdido-key-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -327.98161625315595,
+              4.296875,
+              -699.4679751418054
+            ],
+            "target": [
+              -327.98161625315595,
+              0,
+              -703.7648501418054
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -327.98161625315595,
+              4.296875,
+              -699.4679751418054
+            ],
+            "target": [
+              -327.98161625315595,
+              0,
+              -703.7648501418054
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Johnsons Beach locality",
+              "type": "landmark",
+              "lon": -87.4140126,
+              "lat": 30.3003968
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Johnsons Beach locality",
+              "type": "landmark",
+              "lon": -87.4140126,
+              "lat": 30.3003968
+            }
+          ],
+          "render_url": "../explore_coast.html?view=perdido-key&level=town&district=perdido-key-center&landing=1&cx=-327.98161625315595&cy=703.7648501418054&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=perdido-key&level=town&district=perdido-key-center&landing=1&cx=-327.98161625315595&cy=703.7648501418054&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "perdido-key-close.webp",
+          "mobile": "perdido-key-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -327.98161625315595,
+              1.71875,
+              -702.0461001418054
+            ],
+            "target": [
+              -327.98161625315595,
+              0,
+              -703.7648501418054
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -327.98161625315595,
+              1.71875,
+              -702.0461001418054
+            ],
+            "target": [
+              -327.98161625315595,
+              0,
+              -703.7648501418054
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Johnsons Beach locality",
+              "type": "landmark",
+              "lon": -87.4140126,
+              "lat": 30.3003968
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Johnsons Beach locality",
+              "type": "landmark",
+              "lon": -87.4140126,
+              "lat": 30.3003968
+            }
+          ],
+          "render_url": "../explore_coast.html?view=perdido-key&level=town&district=perdido-key-center&landing=1&cx=-327.98161625315595&cy=703.7648501418054&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=perdido-key&level=town&district=perdido-key-center&landing=1&cx=-327.98161625315595&cy=703.7648501418054&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -327.98161625315595,
+          4.296875,
+          -699.4679751418054
+        ],
+        "target": [
+          -327.98161625315595,
+          0,
+          -703.7648501418054
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -327.98161625315595,
+          4.296875,
+          -699.4679751418054
+        ],
+        "target": [
+          -327.98161625315595,
+          0,
+          -703.7648501418054
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=perdido-key&level=town&district=perdido-key-center&landing=1&cx=-327.98161625315595&cy=703.7648501418054&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=perdido-key&level=town&district=perdido-key-center&landing=1&cx=-327.98161625315595&cy=703.7648501418054&span=2.75",
+      "close_camera": {
+        "position": [
+          -327.98161625315595,
+          1.71875,
+          -702.0461001418054
+        ],
+        "target": [
+          -327.98161625315595,
+          0,
+          -703.7648501418054
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -327.98161625315595,
+          1.71875,
+          -702.0461001418054
+        ],
+        "target": [
+          -327.98161625315595,
+          0,
+          -703.7648501418054
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=perdido-key&level=town&district=perdido-key-center&landing=1&cx=-327.98161625315595&cy=703.7648501418054&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=perdido-key&level=town&district=perdido-key-center&landing=1&cx=-327.98161625315595&cy=703.7648501418054&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "gulf-breeze",
+      "name": "Gulf Breeze",
+      "desktop": "gulf-breeze.webp",
+      "mobile": "gulf-breeze-m.webp",
+      "center": {
+        "x": -304.82969044462965,
+        "y": 709.0356382773564,
+        "lon": -87.17454307834623,
+        "lat": 30.35344255
+      },
+      "districts": [
+        {
+          "id": "gulf-breeze-center",
+          "name": "Gulf Breeze",
+          "lon": -87.18058243992614,
+          "lat": 30.361390028565907
+        }
+      ],
+      "district": "gulf-breeze-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -87.17454307834623,
+        "lat": 30.35344255,
+        "reason": "Shoreline Park frames the wooded Gulf Breeze peninsula and Pensacola Bay waterfront.",
+        "source": "https://www.openstreetmap.org/relation/3534076"
+      },
+      "callouts": [
+        {
+          "name": "Shoreline Park South",
+          "type": "park",
+          "lon": -87.17454307834623,
+          "lat": 30.35344255
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Shoreline Park South",
+          "type": "park",
+          "lon": -87.17454307834623,
+          "lat": 30.35344255
+        }
+      ],
+      "close_desktop": "gulf-breeze-close.webp",
+      "close_mobile": "gulf-breeze-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "gulf-breeze.webp",
+          "mobile": "gulf-breeze-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -304.82969044462965,
+              4.296875,
+              -704.7387632773564
+            ],
+            "target": [
+              -304.82969044462965,
+              0,
+              -709.0356382773564
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -304.82969044462965,
+              4.296875,
+              -704.7387632773564
+            ],
+            "target": [
+              -304.82969044462965,
+              0,
+              -709.0356382773564
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Shoreline Park South",
+              "type": "park",
+              "lon": -87.17454307834623,
+              "lat": 30.35344255
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Shoreline Park South",
+              "type": "park",
+              "lon": -87.17454307834623,
+              "lat": 30.35344255
+            }
+          ],
+          "render_url": "../explore_coast.html?view=gulf-breeze&level=town&district=gulf-breeze-center&landing=1&cx=-304.82969044462965&cy=709.0356382773564&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=gulf-breeze&level=town&district=gulf-breeze-center&landing=1&cx=-304.82969044462965&cy=709.0356382773564&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "gulf-breeze-close.webp",
+          "mobile": "gulf-breeze-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -304.82969044462965,
+              1.71875,
+              -707.3168882773564
+            ],
+            "target": [
+              -304.82969044462965,
+              0,
+              -709.0356382773564
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -304.82969044462965,
+              1.71875,
+              -707.3168882773564
+            ],
+            "target": [
+              -304.82969044462965,
+              0,
+              -709.0356382773564
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Shoreline Park South",
+              "type": "park",
+              "lon": -87.17454307834623,
+              "lat": 30.35344255
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Shoreline Park South",
+              "type": "park",
+              "lon": -87.17454307834623,
+              "lat": 30.35344255
+            }
+          ],
+          "render_url": "../explore_coast.html?view=gulf-breeze&level=town&district=gulf-breeze-center&landing=1&cx=-304.82969044462965&cy=709.0356382773564&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=gulf-breeze&level=town&district=gulf-breeze-center&landing=1&cx=-304.82969044462965&cy=709.0356382773564&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -304.82969044462965,
+          4.296875,
+          -704.7387632773564
+        ],
+        "target": [
+          -304.82969044462965,
+          0,
+          -709.0356382773564
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -304.82969044462965,
+          4.296875,
+          -704.7387632773564
+        ],
+        "target": [
+          -304.82969044462965,
+          0,
+          -709.0356382773564
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=gulf-breeze&level=town&district=gulf-breeze-center&landing=1&cx=-304.82969044462965&cy=709.0356382773564&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=gulf-breeze&level=town&district=gulf-breeze-center&landing=1&cx=-304.82969044462965&cy=709.0356382773564&span=2.75",
+      "close_camera": {
+        "position": [
+          -304.82969044462965,
+          1.71875,
+          -707.3168882773564
+        ],
+        "target": [
+          -304.82969044462965,
+          0,
+          -709.0356382773564
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -304.82969044462965,
+          1.71875,
+          -707.3168882773564
+        ],
+        "target": [
+          -304.82969044462965,
+          0,
+          -709.0356382773564
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=gulf-breeze&level=town&district=gulf-breeze-center&landing=1&cx=-304.82969044462965&cy=709.0356382773564&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=gulf-breeze&level=town&district=gulf-breeze-center&landing=1&cx=-304.82969044462965&cy=709.0356382773564&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "navarre",
+      "name": "Navarre",
+      "desktop": "navarre.webp",
+      "mobile": "navarre-m.webp",
+      "center": {
+        "x": -274.9336851699442,
+        "y": 713.5270752632855,
+        "lon": -86.86440582563611,
+        "lat": 30.4004956
+      },
+      "districts": [
+        {
+          "id": "navarre-center",
+          "name": "Navarre",
+          "lon": -86.8700821,
+          "lat": 30.4019789
+        }
+      ],
+      "district": "navarre-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -86.86440582563611,
+        "lat": 30.4004956,
+        "reason": "Navarre Park frames the soundside town and the causeway to the beach.",
+        "source": "https://www.openstreetmap.org/way/554596477"
+      },
+      "callouts": [
+        {
+          "name": "Navarre Park",
+          "type": "park",
+          "lon": -86.86440582563611,
+          "lat": 30.4004956
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Navarre Park",
+          "type": "park",
+          "lon": -86.86440582563611,
+          "lat": 30.4004956
+        }
+      ],
+      "close_desktop": "navarre-close.webp",
+      "close_mobile": "navarre-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "navarre.webp",
+          "mobile": "navarre-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -274.9336851699442,
+              4.296875,
+              -709.2302002632855
+            ],
+            "target": [
+              -274.9336851699442,
+              0,
+              -713.5270752632855
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -274.9336851699442,
+              4.296875,
+              -709.2302002632855
+            ],
+            "target": [
+              -274.9336851699442,
+              0,
+              -713.5270752632855
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Navarre Park",
+              "type": "park",
+              "lon": -86.86440582563611,
+              "lat": 30.4004956
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Navarre Park",
+              "type": "park",
+              "lon": -86.86440582563611,
+              "lat": 30.4004956
+            }
+          ],
+          "render_url": "../explore_coast.html?view=navarre&level=town&district=navarre-center&landing=1&cx=-274.9336851699442&cy=713.5270752632855&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=navarre&level=town&district=navarre-center&landing=1&cx=-274.9336851699442&cy=713.5270752632855&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "navarre-close.webp",
+          "mobile": "navarre-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -274.9336851699442,
+              1.71875,
+              -711.8083252632855
+            ],
+            "target": [
+              -274.9336851699442,
+              0,
+              -713.5270752632855
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -274.9336851699442,
+              1.71875,
+              -711.8083252632855
+            ],
+            "target": [
+              -274.9336851699442,
+              0,
+              -713.5270752632855
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Navarre Park",
+              "type": "park",
+              "lon": -86.86440582563611,
+              "lat": 30.4004956
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Navarre Park",
+              "type": "park",
+              "lon": -86.86440582563611,
+              "lat": 30.4004956
+            }
+          ],
+          "render_url": "../explore_coast.html?view=navarre&level=town&district=navarre-center&landing=1&cx=-274.9336851699442&cy=713.5270752632855&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=navarre&level=town&district=navarre-center&landing=1&cx=-274.9336851699442&cy=713.5270752632855&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -274.9336851699442,
+          4.296875,
+          -709.2302002632855
+        ],
+        "target": [
+          -274.9336851699442,
+          0,
+          -713.5270752632855
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -274.9336851699442,
+          4.296875,
+          -709.2302002632855
+        ],
+        "target": [
+          -274.9336851699442,
+          0,
+          -713.5270752632855
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=navarre&level=town&district=navarre-center&landing=1&cx=-274.9336851699442&cy=713.5270752632855&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=navarre&level=town&district=navarre-center&landing=1&cx=-274.9336851699442&cy=713.5270752632855&span=2.75",
+      "close_camera": {
+        "position": [
+          -274.9336851699442,
+          1.71875,
+          -711.8083252632855
+        ],
+        "target": [
+          -274.9336851699442,
+          0,
+          -713.5270752632855
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -274.9336851699442,
+          1.71875,
+          -711.8083252632855
+        ],
+        "target": [
+          -274.9336851699442,
+          0,
+          -713.5270752632855
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=navarre&level=town&district=navarre-center&landing=1&cx=-274.9336851699442&cy=713.5270752632855&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=navarre&level=town&district=navarre-center&landing=1&cx=-274.9336851699442&cy=713.5270752632855&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "navarre-beach",
+      "name": "Navarre Beach",
+      "desktop": "navarre-beach.webp",
+      "mobile": "navarre-beach-m.webp",
+      "center": {
+        "x": -274.9112888501443,
+        "y": 711.1521204472629,
+        "lon": -86.86359808340126,
+        "lat": 30.379106471572403
+      },
+      "districts": [
+        {
+          "id": "navarre-beach-center",
+          "name": "Navarre Beach",
+          "lon": -86.8555410285035,
+          "lat": 30.382812465795578
+        }
+      ],
+      "district": "navarre-beach-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -86.86359808340126,
+        "lat": 30.379106471572403,
+        "reason": "The Gulf fishing pier frames Navarre Beach\u2019s white sand, towers and low beach homes.",
+        "source": "https://www.openstreetmap.org/way/218192413"
+      },
+      "callouts": [
+        {
+          "name": "Navarre Beach Fishing Pier",
+          "type": "landmark",
+          "lon": -86.86359808340126,
+          "lat": 30.379106471572403
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Navarre Beach Fishing Pier",
+          "type": "landmark",
+          "lon": -86.86359808340126,
+          "lat": 30.379106471572403
+        }
+      ],
+      "close_desktop": "navarre-beach-close.webp",
+      "close_mobile": "navarre-beach-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "navarre-beach.webp",
+          "mobile": "navarre-beach-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -274.9112888501443,
+              4.296875,
+              -706.8552454472629
+            ],
+            "target": [
+              -274.9112888501443,
+              0,
+              -711.1521204472629
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -274.9112888501443,
+              4.296875,
+              -706.8552454472629
+            ],
+            "target": [
+              -274.9112888501443,
+              0,
+              -711.1521204472629
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Navarre Beach Fishing Pier",
+              "type": "landmark",
+              "lon": -86.86359808340126,
+              "lat": 30.379106471572403
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Navarre Beach Fishing Pier",
+              "type": "landmark",
+              "lon": -86.86359808340126,
+              "lat": 30.379106471572403
+            }
+          ],
+          "render_url": "../explore_coast.html?view=navarre-beach&level=town&district=navarre-beach-center&landing=1&cx=-274.9112888501443&cy=711.1521204472629&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=navarre-beach&level=town&district=navarre-beach-center&landing=1&cx=-274.9112888501443&cy=711.1521204472629&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "navarre-beach-close.webp",
+          "mobile": "navarre-beach-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -274.9112888501443,
+              1.71875,
+              -709.4333704472629
+            ],
+            "target": [
+              -274.9112888501443,
+              0,
+              -711.1521204472629
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -274.9112888501443,
+              1.71875,
+              -709.4333704472629
+            ],
+            "target": [
+              -274.9112888501443,
+              0,
+              -711.1521204472629
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Navarre Beach Fishing Pier",
+              "type": "landmark",
+              "lon": -86.86359808340126,
+              "lat": 30.379106471572403
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Navarre Beach Fishing Pier",
+              "type": "landmark",
+              "lon": -86.86359808340126,
+              "lat": 30.379106471572403
+            }
+          ],
+          "render_url": "../explore_coast.html?view=navarre-beach&level=town&district=navarre-beach-center&landing=1&cx=-274.9112888501443&cy=711.1521204472629&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=navarre-beach&level=town&district=navarre-beach-center&landing=1&cx=-274.9112888501443&cy=711.1521204472629&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -274.9112888501443,
+          4.296875,
+          -706.8552454472629
+        ],
+        "target": [
+          -274.9112888501443,
+          0,
+          -711.1521204472629
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -274.9112888501443,
+          4.296875,
+          -706.8552454472629
+        ],
+        "target": [
+          -274.9112888501443,
+          0,
+          -711.1521204472629
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=navarre-beach&level=town&district=navarre-beach-center&landing=1&cx=-274.9112888501443&cy=711.1521204472629&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=navarre-beach&level=town&district=navarre-beach-center&landing=1&cx=-274.9112888501443&cy=711.1521204472629&span=2.75",
+      "close_camera": {
+        "position": [
+          -274.9112888501443,
+          1.71875,
+          -709.4333704472629
+        ],
+        "target": [
+          -274.9112888501443,
+          0,
+          -711.1521204472629
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -274.9112888501443,
+          1.71875,
+          -709.4333704472629
+        ],
+        "target": [
+          -274.9112888501443,
+          0,
+          -711.1521204472629
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=navarre-beach&level=town&district=navarre-beach-center&landing=1&cx=-274.9112888501443&cy=711.1521204472629&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=navarre-beach&level=town&district=navarre-beach-center&landing=1&cx=-274.9112888501443&cy=711.1521204472629&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "fort-walton-beach",
+      "name": "Fort Walton Beach",
+      "desktop": "fort-walton-beach.webp",
+      "mobile": "fort-walton-beach-m.webp",
+      "center": {
+        "x": -250.2457191945155,
+        "y": 713.2130669576186,
+        "lon": -86.60720469123035,
+        "lat": 30.402601750000002
+      },
+      "districts": [
+        {
+          "id": "fort-walton-beach-center",
+          "name": "Fort Walton Beach",
+          "lon": -86.618842,
+          "lat": 30.4057552
+        }
+      ],
+      "district": "fort-walton-beach-center",
+      "span": 6,
+      "close_span": 2.4,
+      "hero": {
+        "lon": -86.60720469123035,
+        "lat": 30.402601750000002,
+        "reason": "The Landing frames downtown Fort Walton Beach, Santa Rosa Sound and Brooks Bridge.",
+        "source": "https://www.openstreetmap.org/way/230074295"
+      },
+      "callouts": [
+        {
+          "name": "Fort Walton Landing",
+          "type": "park",
+          "lon": -86.60720469123035,
+          "lat": 30.402601750000002
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Fort Walton Landing",
+          "type": "park",
+          "lon": -86.60720469123035,
+          "lat": 30.402601750000002
+        }
+      ],
+      "close_desktop": "fort-walton-beach-close.webp",
+      "close_mobile": "fort-walton-beach-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "fort-walton-beach.webp",
+          "mobile": "fort-walton-beach-m.webp",
+          "span": 6,
+          "camera": {
+            "position": [
+              -250.2457191945155,
+              4.6875,
+              -708.5255669576186
+            ],
+            "target": [
+              -250.2457191945155,
+              0,
+              -713.2130669576186
+            ],
+            "left": -3,
+            "right": 3,
+            "top": 1.875,
+            "bottom": -1.875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -250.2457191945155,
+              4.6875,
+              -708.5255669576186
+            ],
+            "target": [
+              -250.2457191945155,
+              0,
+              -713.2130669576186
+            ],
+            "left": -1.5,
+            "right": 1.5,
+            "top": 1.875,
+            "bottom": -1.875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Fort Walton Landing",
+              "type": "park",
+              "lon": -86.60720469123035,
+              "lat": 30.402601750000002
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Fort Walton Landing",
+              "type": "park",
+              "lon": -86.60720469123035,
+              "lat": 30.402601750000002
+            }
+          ],
+          "render_url": "../explore_coast.html?view=fort-walton-beach&level=town&district=fort-walton-beach-center&landing=1&cx=-250.2457191945155&cy=713.2130669576186&span=6",
+          "mobile_render_url": "../explore_coast.html?view=fort-walton-beach&level=town&district=fort-walton-beach-center&landing=1&cx=-250.2457191945155&cy=713.2130669576186&span=3.0",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "fort-walton-beach-close.webp",
+          "mobile": "fort-walton-beach-close-m.webp",
+          "span": 2.4,
+          "camera": {
+            "position": [
+              -250.2457191945155,
+              1.8749999999999998,
+              -711.3380669576186
+            ],
+            "target": [
+              -250.2457191945155,
+              0,
+              -713.2130669576186
+            ],
+            "left": -1.2,
+            "right": 1.2,
+            "top": 0.7499999999999999,
+            "bottom": -0.7499999999999999,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -250.2457191945155,
+              1.8749999999999998,
+              -711.3380669576186
+            ],
+            "target": [
+              -250.2457191945155,
+              0,
+              -713.2130669576186
+            ],
+            "left": -0.6,
+            "right": 0.6,
+            "top": 0.7499999999999999,
+            "bottom": -0.7499999999999999,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Fort Walton Landing",
+              "type": "park",
+              "lon": -86.60720469123035,
+              "lat": 30.402601750000002
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Fort Walton Landing",
+              "type": "park",
+              "lon": -86.60720469123035,
+              "lat": 30.402601750000002
+            }
+          ],
+          "render_url": "../explore_coast.html?view=fort-walton-beach&level=town&district=fort-walton-beach-center&landing=1&cx=-250.2457191945155&cy=713.2130669576186&span=2.4",
+          "mobile_render_url": "../explore_coast.html?view=fort-walton-beach&level=town&district=fort-walton-beach-center&landing=1&cx=-250.2457191945155&cy=713.2130669576186&span=1.2",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -250.2457191945155,
+          4.6875,
+          -708.5255669576186
+        ],
+        "target": [
+          -250.2457191945155,
+          0,
+          -713.2130669576186
+        ],
+        "left": -3,
+        "right": 3,
+        "top": 1.875,
+        "bottom": -1.875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -250.2457191945155,
+          4.6875,
+          -708.5255669576186
+        ],
+        "target": [
+          -250.2457191945155,
+          0,
+          -713.2130669576186
+        ],
+        "left": -1.5,
+        "right": 1.5,
+        "top": 1.875,
+        "bottom": -1.875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=fort-walton-beach&level=town&district=fort-walton-beach-center&landing=1&cx=-250.2457191945155&cy=713.2130669576186&span=6",
+      "mobile_render_url": "../explore_coast.html?view=fort-walton-beach&level=town&district=fort-walton-beach-center&landing=1&cx=-250.2457191945155&cy=713.2130669576186&span=3.0",
+      "close_camera": {
+        "position": [
+          -250.2457191945155,
+          1.8749999999999998,
+          -711.3380669576186
+        ],
+        "target": [
+          -250.2457191945155,
+          0,
+          -713.2130669576186
+        ],
+        "left": -1.2,
+        "right": 1.2,
+        "top": 0.7499999999999999,
+        "bottom": -0.7499999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -250.2457191945155,
+          1.8749999999999998,
+          -711.3380669576186
+        ],
+        "target": [
+          -250.2457191945155,
+          0,
+          -713.2130669576186
+        ],
+        "left": -0.6,
+        "right": 0.6,
+        "top": 0.7499999999999999,
+        "bottom": -0.7499999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=fort-walton-beach&level=town&district=fort-walton-beach-center&landing=1&cx=-250.2457191945155&cy=713.2130669576186&span=2.4",
+      "close_mobile_render_url": "../explore_coast.html?view=fort-walton-beach&level=town&district=fort-walton-beach-center&landing=1&cx=-250.2457191945155&cy=713.2130669576186&span=1.2",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "okaloosa-island",
+      "name": "Okaloosa Island",
+      "desktop": "okaloosa-island.webp",
+      "mobile": "okaloosa-island-m.webp",
+      "center": {
+        "x": -248.90091837445502,
+        "y": 712.1135080966595,
+        "lon": -86.59295707056104,
+        "lat": 30.392951775855327
+      },
+      "districts": [
+        {
+          "id": "okaloosa-island-center",
+          "name": "Okaloosa Island",
+          "lon": -86.60737086072753,
+          "lat": 30.397773812772755
+        }
+      ],
+      "district": "okaloosa-island-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -86.59295707056104,
+        "lat": 30.392951775855327,
+        "reason": "The fishing pier frames the island\u2019s Gulf resort strip and the sound behind it.",
+        "source": "https://www.openstreetmap.org/way/83459432"
+      },
+      "callouts": [
+        {
+          "name": "Okaloosa Island Fishing Pier",
+          "type": "landmark",
+          "lon": -86.59295707056104,
+          "lat": 30.392951775855327
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Okaloosa Island Fishing Pier",
+          "type": "landmark",
+          "lon": -86.59295707056104,
+          "lat": 30.392951775855327
+        }
+      ],
+      "close_desktop": "okaloosa-island-close.webp",
+      "close_mobile": "okaloosa-island-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "okaloosa-island.webp",
+          "mobile": "okaloosa-island-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -248.90091837445502,
+              4.296875,
+              -707.8166330966595
+            ],
+            "target": [
+              -248.90091837445502,
+              0,
+              -712.1135080966595
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -248.90091837445502,
+              4.296875,
+              -707.8166330966595
+            ],
+            "target": [
+              -248.90091837445502,
+              0,
+              -712.1135080966595
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Okaloosa Island Fishing Pier",
+              "type": "landmark",
+              "lon": -86.59295707056104,
+              "lat": 30.392951775855327
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Okaloosa Island Fishing Pier",
+              "type": "landmark",
+              "lon": -86.59295707056104,
+              "lat": 30.392951775855327
+            }
+          ],
+          "render_url": "../explore_coast.html?view=okaloosa-island&level=town&district=okaloosa-island-center&landing=1&cx=-248.90091837445502&cy=712.1135080966595&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=okaloosa-island&level=town&district=okaloosa-island-center&landing=1&cx=-248.90091837445502&cy=712.1135080966595&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "okaloosa-island-close.webp",
+          "mobile": "okaloosa-island-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -248.90091837445502,
+              1.71875,
+              -710.3947580966595
+            ],
+            "target": [
+              -248.90091837445502,
+              0,
+              -712.1135080966595
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -248.90091837445502,
+              1.71875,
+              -710.3947580966595
+            ],
+            "target": [
+              -248.90091837445502,
+              0,
+              -712.1135080966595
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Okaloosa Island Fishing Pier",
+              "type": "landmark",
+              "lon": -86.59295707056104,
+              "lat": 30.392951775855327
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Okaloosa Island Fishing Pier",
+              "type": "landmark",
+              "lon": -86.59295707056104,
+              "lat": 30.392951775855327
+            }
+          ],
+          "render_url": "../explore_coast.html?view=okaloosa-island&level=town&district=okaloosa-island-center&landing=1&cx=-248.90091837445502&cy=712.1135080966595&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=okaloosa-island&level=town&district=okaloosa-island-center&landing=1&cx=-248.90091837445502&cy=712.1135080966595&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -248.90091837445502,
+          4.296875,
+          -707.8166330966595
+        ],
+        "target": [
+          -248.90091837445502,
+          0,
+          -712.1135080966595
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -248.90091837445502,
+          4.296875,
+          -707.8166330966595
+        ],
+        "target": [
+          -248.90091837445502,
+          0,
+          -712.1135080966595
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=okaloosa-island&level=town&district=okaloosa-island-center&landing=1&cx=-248.90091837445502&cy=712.1135080966595&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=okaloosa-island&level=town&district=okaloosa-island-center&landing=1&cx=-248.90091837445502&cy=712.1135080966595&span=2.75",
+      "close_camera": {
+        "position": [
+          -248.90091837445502,
+          1.71875,
+          -710.3947580966595
+        ],
+        "target": [
+          -248.90091837445502,
+          0,
+          -712.1135080966595
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -248.90091837445502,
+          1.71875,
+          -710.3947580966595
+        ],
+        "target": [
+          -248.90091837445502,
+          0,
+          -712.1135080966595
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=okaloosa-island&level=town&district=okaloosa-island-center&landing=1&cx=-248.90091837445502&cy=712.1135080966595&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=okaloosa-island&level=town&district=okaloosa-island-center&landing=1&cx=-248.90091837445502&cy=712.1135080966595&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "mary-esther",
+      "name": "Mary Esther",
+      "desktop": "mary-esther.webp",
+      "mobile": "mary-esther-m.webp",
+      "center": {
+        "x": -255.89816948533465,
+        "y": 714.3082323812506,
+        "lon": -86.66632371165201,
+        "lat": 30.41137865
+      },
+      "districts": [
+        {
+          "id": "mary-esther-center",
+          "name": "Mary Esther",
+          "lon": -86.6630098,
+          "lat": 30.4099215
+        }
+      ],
+      "district": "mary-esther-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -86.66632371165201,
+        "lat": 30.41137865,
+        "reason": "Oak Tree Nature Park frames Mary Esther\u2019s low wooded neighborhoods beside Santa Rosa Sound.",
+        "source": "https://www.openstreetmap.org/way/318342121"
+      },
+      "callouts": [
+        {
+          "name": "Oak Tree Nature Park",
+          "type": "park",
+          "lon": -86.66632371165201,
+          "lat": 30.41137865
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Oak Tree Nature Park",
+          "type": "park",
+          "lon": -86.66632371165201,
+          "lat": 30.41137865
+        }
+      ],
+      "close_desktop": "mary-esther-close.webp",
+      "close_mobile": "mary-esther-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "mary-esther.webp",
+          "mobile": "mary-esther-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -255.89816948533465,
+              4.296875,
+              -710.0113573812506
+            ],
+            "target": [
+              -255.89816948533465,
+              0,
+              -714.3082323812506
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -255.89816948533465,
+              4.296875,
+              -710.0113573812506
+            ],
+            "target": [
+              -255.89816948533465,
+              0,
+              -714.3082323812506
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Oak Tree Nature Park",
+              "type": "park",
+              "lon": -86.66632371165201,
+              "lat": 30.41137865
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Oak Tree Nature Park",
+              "type": "park",
+              "lon": -86.66632371165201,
+              "lat": 30.41137865
+            }
+          ],
+          "render_url": "../explore_coast.html?view=mary-esther&level=town&district=mary-esther-center&landing=1&cx=-255.89816948533465&cy=714.3082323812506&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=mary-esther&level=town&district=mary-esther-center&landing=1&cx=-255.89816948533465&cy=714.3082323812506&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "mary-esther-close.webp",
+          "mobile": "mary-esther-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -255.89816948533465,
+              1.71875,
+              -712.5894823812506
+            ],
+            "target": [
+              -255.89816948533465,
+              0,
+              -714.3082323812506
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -255.89816948533465,
+              1.71875,
+              -712.5894823812506
+            ],
+            "target": [
+              -255.89816948533465,
+              0,
+              -714.3082323812506
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Oak Tree Nature Park",
+              "type": "park",
+              "lon": -86.66632371165201,
+              "lat": 30.41137865
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Oak Tree Nature Park",
+              "type": "park",
+              "lon": -86.66632371165201,
+              "lat": 30.41137865
+            }
+          ],
+          "render_url": "../explore_coast.html?view=mary-esther&level=town&district=mary-esther-center&landing=1&cx=-255.89816948533465&cy=714.3082323812506&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=mary-esther&level=town&district=mary-esther-center&landing=1&cx=-255.89816948533465&cy=714.3082323812506&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -255.89816948533465,
+          4.296875,
+          -710.0113573812506
+        ],
+        "target": [
+          -255.89816948533465,
+          0,
+          -714.3082323812506
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -255.89816948533465,
+          4.296875,
+          -710.0113573812506
+        ],
+        "target": [
+          -255.89816948533465,
+          0,
+          -714.3082323812506
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=mary-esther&level=town&district=mary-esther-center&landing=1&cx=-255.89816948533465&cy=714.3082323812506&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=mary-esther&level=town&district=mary-esther-center&landing=1&cx=-255.89816948533465&cy=714.3082323812506&span=2.75",
+      "close_camera": {
+        "position": [
+          -255.89816948533465,
+          1.71875,
+          -712.5894823812506
+        ],
+        "target": [
+          -255.89816948533465,
+          0,
+          -714.3082323812506
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -255.89816948533465,
+          1.71875,
+          -712.5894823812506
+        ],
+        "target": [
+          -255.89816948533465,
+          0,
+          -714.3082323812506
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=mary-esther&level=town&district=mary-esther-center&landing=1&cx=-255.89816948533465&cy=714.3082323812506&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=mary-esther&level=town&district=mary-esther-center&landing=1&cx=-255.89816948533465&cy=714.3082323812506&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "shalimar",
+      "name": "Shalimar",
+      "desktop": "shalimar.webp",
+      "mobile": "shalimar-m.webp",
+      "center": {
+        "x": -247.08713089050204,
+        "y": 716.5588164978197,
+        "lon": -86.5750341076087,
+        "lat": 30.4333406
+      },
+      "districts": [
+        {
+          "id": "shalimar-center",
+          "name": "Shalimar",
+          "lon": -86.5791189,
+          "lat": 30.4457544
+        }
+      ],
+      "district": "shalimar-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -86.5750341076087,
+        "lat": 30.4333406,
+        "reason": "Meigs Park frames Shalimar\u2019s sheltered bayou, boat ramp and neighboring residential streets.",
+        "source": "https://www.openstreetmap.org/way/688807549"
+      },
+      "callouts": [
+        {
+          "name": "Meigs Park and Boat Ramp",
+          "type": "boating",
+          "lon": -86.5750341076087,
+          "lat": 30.4333406
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Meigs Park and Boat Ramp",
+          "type": "boating",
+          "lon": -86.5750341076087,
+          "lat": 30.4333406
+        }
+      ],
+      "close_desktop": "shalimar-close.webp",
+      "close_mobile": "shalimar-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "shalimar.webp",
+          "mobile": "shalimar-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -247.08713089050204,
+              4.296875,
+              -712.2619414978197
+            ],
+            "target": [
+              -247.08713089050204,
+              0,
+              -716.5588164978197
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -247.08713089050204,
+              4.296875,
+              -712.2619414978197
+            ],
+            "target": [
+              -247.08713089050204,
+              0,
+              -716.5588164978197
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Meigs Park and Boat Ramp",
+              "type": "boating",
+              "lon": -86.5750341076087,
+              "lat": 30.4333406
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Meigs Park and Boat Ramp",
+              "type": "boating",
+              "lon": -86.5750341076087,
+              "lat": 30.4333406
+            }
+          ],
+          "render_url": "../explore_coast.html?view=shalimar&level=town&district=shalimar-center&landing=1&cx=-247.08713089050204&cy=716.5588164978197&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=shalimar&level=town&district=shalimar-center&landing=1&cx=-247.08713089050204&cy=716.5588164978197&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "shalimar-close.webp",
+          "mobile": "shalimar-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -247.08713089050204,
+              1.71875,
+              -714.8400664978197
+            ],
+            "target": [
+              -247.08713089050204,
+              0,
+              -716.5588164978197
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -247.08713089050204,
+              1.71875,
+              -714.8400664978197
+            ],
+            "target": [
+              -247.08713089050204,
+              0,
+              -716.5588164978197
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Meigs Park and Boat Ramp",
+              "type": "boating",
+              "lon": -86.5750341076087,
+              "lat": 30.4333406
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Meigs Park and Boat Ramp",
+              "type": "boating",
+              "lon": -86.5750341076087,
+              "lat": 30.4333406
+            }
+          ],
+          "render_url": "../explore_coast.html?view=shalimar&level=town&district=shalimar-center&landing=1&cx=-247.08713089050204&cy=716.5588164978197&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=shalimar&level=town&district=shalimar-center&landing=1&cx=-247.08713089050204&cy=716.5588164978197&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -247.08713089050204,
+          4.296875,
+          -712.2619414978197
+        ],
+        "target": [
+          -247.08713089050204,
+          0,
+          -716.5588164978197
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -247.08713089050204,
+          4.296875,
+          -712.2619414978197
+        ],
+        "target": [
+          -247.08713089050204,
+          0,
+          -716.5588164978197
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=shalimar&level=town&district=shalimar-center&landing=1&cx=-247.08713089050204&cy=716.5588164978197&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=shalimar&level=town&district=shalimar-center&landing=1&cx=-247.08713089050204&cy=716.5588164978197&span=2.75",
+      "close_camera": {
+        "position": [
+          -247.08713089050204,
+          1.71875,
+          -714.8400664978197
+        ],
+        "target": [
+          -247.08713089050204,
+          0,
+          -716.5588164978197
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -247.08713089050204,
+          1.71875,
+          -714.8400664978197
+        ],
+        "target": [
+          -247.08713089050204,
+          0,
+          -716.5588164978197
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=shalimar&level=town&district=shalimar-center&landing=1&cx=-247.08713089050204&cy=716.5588164978197&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=shalimar&level=town&district=shalimar-center&landing=1&cx=-247.08713089050204&cy=716.5588164978197&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "niceville",
+      "name": "Niceville",
+      "desktop": "niceville.webp",
+      "mobile": "niceville-m.webp",
+      "center": {
+        "x": -238.58153302486048,
+        "y": 725.8921204418643,
+        "lon": -86.48837946450773,
+        "lat": 30.51899915
+      },
+      "districts": [
+        {
+          "id": "niceville-center",
+          "name": "Niceville",
+          "lon": -86.482172,
+          "lat": 30.5168639
+        }
+      ],
+      "district": "niceville-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -86.48837946450773,
+        "lat": 30.51899915,
+        "reason": "Niceville Landing frames the working waterfront on Boggy Bayou and the old town behind it.",
+        "source": "https://www.openstreetmap.org/way/617522472"
+      },
+      "callouts": [
+        {
+          "name": "Niceville Landing",
+          "type": "park",
+          "lon": -86.48837946450773,
+          "lat": 30.51899915
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Niceville Landing",
+          "type": "park",
+          "lon": -86.48837946450773,
+          "lat": 30.51899915
+        }
+      ],
+      "close_desktop": "niceville-close.webp",
+      "close_mobile": "niceville-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "niceville.webp",
+          "mobile": "niceville-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -238.58153302486048,
+              4.296875,
+              -721.5952454418643
+            ],
+            "target": [
+              -238.58153302486048,
+              0,
+              -725.8921204418643
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -238.58153302486048,
+              4.296875,
+              -721.5952454418643
+            ],
+            "target": [
+              -238.58153302486048,
+              0,
+              -725.8921204418643
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Niceville Landing",
+              "type": "park",
+              "lon": -86.48837946450773,
+              "lat": 30.51899915
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Niceville Landing",
+              "type": "park",
+              "lon": -86.48837946450773,
+              "lat": 30.51899915
+            }
+          ],
+          "render_url": "../explore_coast.html?view=niceville&level=town&district=niceville-center&landing=1&cx=-238.58153302486048&cy=725.8921204418643&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=niceville&level=town&district=niceville-center&landing=1&cx=-238.58153302486048&cy=725.8921204418643&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "niceville-close.webp",
+          "mobile": "niceville-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -238.58153302486048,
+              1.71875,
+              -724.1733704418643
+            ],
+            "target": [
+              -238.58153302486048,
+              0,
+              -725.8921204418643
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -238.58153302486048,
+              1.71875,
+              -724.1733704418643
+            ],
+            "target": [
+              -238.58153302486048,
+              0,
+              -725.8921204418643
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Niceville Landing",
+              "type": "park",
+              "lon": -86.48837946450773,
+              "lat": 30.51899915
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Niceville Landing",
+              "type": "park",
+              "lon": -86.48837946450773,
+              "lat": 30.51899915
+            }
+          ],
+          "render_url": "../explore_coast.html?view=niceville&level=town&district=niceville-center&landing=1&cx=-238.58153302486048&cy=725.8921204418643&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=niceville&level=town&district=niceville-center&landing=1&cx=-238.58153302486048&cy=725.8921204418643&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -238.58153302486048,
+          4.296875,
+          -721.5952454418643
+        ],
+        "target": [
+          -238.58153302486048,
+          0,
+          -725.8921204418643
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -238.58153302486048,
+          4.296875,
+          -721.5952454418643
+        ],
+        "target": [
+          -238.58153302486048,
+          0,
+          -725.8921204418643
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=niceville&level=town&district=niceville-center&landing=1&cx=-238.58153302486048&cy=725.8921204418643&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=niceville&level=town&district=niceville-center&landing=1&cx=-238.58153302486048&cy=725.8921204418643&span=2.75",
+      "close_camera": {
+        "position": [
+          -238.58153302486048,
+          1.71875,
+          -724.1733704418643
+        ],
+        "target": [
+          -238.58153302486048,
+          0,
+          -725.8921204418643
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -238.58153302486048,
+          1.71875,
+          -724.1733704418643
+        ],
+        "target": [
+          -238.58153302486048,
+          0,
+          -725.8921204418643
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=niceville&level=town&district=niceville-center&landing=1&cx=-238.58153302486048&cy=725.8921204418643&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=niceville&level=town&district=niceville-center&landing=1&cx=-238.58153302486048&cy=725.8921204418643&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "valparaiso",
+      "name": "Valparaiso",
+      "desktop": "valparaiso.webp",
+      "mobile": "valparaiso-m.webp",
+      "center": {
+        "x": -238.60896414629053,
+        "y": 724.6971562932195,
+        "lon": -86.48841402150202,
+        "lat": 30.508228199999998
+      },
+      "districts": [
+        {
+          "id": "valparaiso-center",
+          "name": "Valparaiso",
+          "lon": -86.5027282,
+          "lat": 30.5085309
+        }
+      ],
+      "district": "valparaiso-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -86.48841402150202,
+        "lat": 30.508228199999998,
+        "reason": "Lincoln Park frames the bayou waterfront and Valparaiso\u2019s tree-covered historic streets.",
+        "source": "https://www.openstreetmap.org/way/455428842"
+      },
+      "callouts": [
+        {
+          "name": "Lincoln Park",
+          "type": "park",
+          "lon": -86.48841402150202,
+          "lat": 30.508228199999998
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Lincoln Park",
+          "type": "park",
+          "lon": -86.48841402150202,
+          "lat": 30.508228199999998
+        }
+      ],
+      "close_desktop": "valparaiso-close.webp",
+      "close_mobile": "valparaiso-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "valparaiso.webp",
+          "mobile": "valparaiso-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -238.60896414629053,
+              4.296875,
+              -720.4002812932195
+            ],
+            "target": [
+              -238.60896414629053,
+              0,
+              -724.6971562932195
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -238.60896414629053,
+              4.296875,
+              -720.4002812932195
+            ],
+            "target": [
+              -238.60896414629053,
+              0,
+              -724.6971562932195
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Lincoln Park",
+              "type": "park",
+              "lon": -86.48841402150202,
+              "lat": 30.508228199999998
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Lincoln Park",
+              "type": "park",
+              "lon": -86.48841402150202,
+              "lat": 30.508228199999998
+            }
+          ],
+          "render_url": "../explore_coast.html?view=valparaiso&level=town&district=valparaiso-center&landing=1&cx=-238.60896414629053&cy=724.6971562932195&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=valparaiso&level=town&district=valparaiso-center&landing=1&cx=-238.60896414629053&cy=724.6971562932195&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "valparaiso-close.webp",
+          "mobile": "valparaiso-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -238.60896414629053,
+              1.71875,
+              -722.9784062932195
+            ],
+            "target": [
+              -238.60896414629053,
+              0,
+              -724.6971562932195
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -238.60896414629053,
+              1.71875,
+              -722.9784062932195
+            ],
+            "target": [
+              -238.60896414629053,
+              0,
+              -724.6971562932195
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Lincoln Park",
+              "type": "park",
+              "lon": -86.48841402150202,
+              "lat": 30.508228199999998
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Lincoln Park",
+              "type": "park",
+              "lon": -86.48841402150202,
+              "lat": 30.508228199999998
+            }
+          ],
+          "render_url": "../explore_coast.html?view=valparaiso&level=town&district=valparaiso-center&landing=1&cx=-238.60896414629053&cy=724.6971562932195&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=valparaiso&level=town&district=valparaiso-center&landing=1&cx=-238.60896414629053&cy=724.6971562932195&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -238.60896414629053,
+          4.296875,
+          -720.4002812932195
+        ],
+        "target": [
+          -238.60896414629053,
+          0,
+          -724.6971562932195
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -238.60896414629053,
+          4.296875,
+          -720.4002812932195
+        ],
+        "target": [
+          -238.60896414629053,
+          0,
+          -724.6971562932195
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=valparaiso&level=town&district=valparaiso-center&landing=1&cx=-238.60896414629053&cy=724.6971562932195&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=valparaiso&level=town&district=valparaiso-center&landing=1&cx=-238.60896414629053&cy=724.6971562932195&span=2.75",
+      "close_camera": {
+        "position": [
+          -238.60896414629053,
+          1.71875,
+          -722.9784062932195
+        ],
+        "target": [
+          -238.60896414629053,
+          0,
+          -724.6971562932195
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -238.60896414629053,
+          1.71875,
+          -722.9784062932195
+        ],
+        "target": [
+          -238.60896414629053,
+          0,
+          -724.6971562932195
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=valparaiso&level=town&district=valparaiso-center&landing=1&cx=-238.60896414629053&cy=724.6971562932195&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=valparaiso&level=town&district=valparaiso-center&landing=1&cx=-238.60896414629053&cy=724.6971562932195&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "miramar-beach",
+      "name": "Miramar Beach",
+      "desktop": "miramar-beach.webp",
+      "mobile": "miramar-beach-m.webp",
+      "center": {
+        "x": -229.21578062657323,
+        "y": 710.0778394494215,
+        "lon": -86.38752755,
+        "lat": 30.37819479
+      },
+      "districts": [
+        {
+          "id": "miramar-beach-center",
+          "name": "Miramar Beach",
+          "lon": -86.3616979,
+          "lat": 30.377985
+        }
+      ],
+      "district": "miramar-beach-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -86.38752755,
+        "lat": 30.37819479,
+        "reason": "The county\u2019s Gulf beach access frames Miramar\u2019s white-sand shore, beach homes and beachfront buildings.",
+        "source": "https://www.visitsouthwalton.com/beach-access/miramar-beach-regional-beach-access-49/"
+      },
+      "callouts": [
+        {
+          "name": "Miramar Beach Regional Beach Access",
+          "type": "beach",
+          "lon": -86.38752755,
+          "lat": 30.37819479
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Miramar Beach Regional Beach Access",
+          "type": "beach",
+          "lon": -86.38752755,
+          "lat": 30.37819479
+        }
+      ],
+      "close_desktop": "miramar-beach-close.webp",
+      "close_mobile": "miramar-beach-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "miramar-beach.webp",
+          "mobile": "miramar-beach-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -229.21578062657323,
+              4.296875,
+              -705.7809644494215
+            ],
+            "target": [
+              -229.21578062657323,
+              0,
+              -710.0778394494215
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -229.21578062657323,
+              4.296875,
+              -705.7809644494215
+            ],
+            "target": [
+              -229.21578062657323,
+              0,
+              -710.0778394494215
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Miramar Beach Regional Beach Access",
+              "type": "beach",
+              "lon": -86.38752755,
+              "lat": 30.37819479
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Miramar Beach Regional Beach Access",
+              "type": "beach",
+              "lon": -86.38752755,
+              "lat": 30.37819479
+            }
+          ],
+          "render_url": "../explore_coast.html?view=miramar-beach&level=town&district=miramar-beach-center&landing=1&cx=-229.21578062657323&cy=710.0778394494215&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=miramar-beach&level=town&district=miramar-beach-center&landing=1&cx=-229.21578062657323&cy=710.0778394494215&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "miramar-beach-close.webp",
+          "mobile": "miramar-beach-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -229.21578062657323,
+              1.71875,
+              -708.3590894494215
+            ],
+            "target": [
+              -229.21578062657323,
+              0,
+              -710.0778394494215
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -229.21578062657323,
+              1.71875,
+              -708.3590894494215
+            ],
+            "target": [
+              -229.21578062657323,
+              0,
+              -710.0778394494215
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Miramar Beach Regional Beach Access",
+              "type": "beach",
+              "lon": -86.38752755,
+              "lat": 30.37819479
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Miramar Beach Regional Beach Access",
+              "type": "beach",
+              "lon": -86.38752755,
+              "lat": 30.37819479
+            }
+          ],
+          "render_url": "../explore_coast.html?view=miramar-beach&level=town&district=miramar-beach-center&landing=1&cx=-229.21578062657323&cy=710.0778394494215&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=miramar-beach&level=town&district=miramar-beach-center&landing=1&cx=-229.21578062657323&cy=710.0778394494215&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -229.21578062657323,
+          4.296875,
+          -705.7809644494215
+        ],
+        "target": [
+          -229.21578062657323,
+          0,
+          -710.0778394494215
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -229.21578062657323,
+          4.296875,
+          -705.7809644494215
+        ],
+        "target": [
+          -229.21578062657323,
+          0,
+          -710.0778394494215
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=miramar-beach&level=town&district=miramar-beach-center&landing=1&cx=-229.21578062657323&cy=710.0778394494215&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=miramar-beach&level=town&district=miramar-beach-center&landing=1&cx=-229.21578062657323&cy=710.0778394494215&span=2.75",
+      "close_camera": {
+        "position": [
+          -229.21578062657323,
+          1.71875,
+          -708.3590894494215
+        ],
+        "target": [
+          -229.21578062657323,
+          0,
+          -710.0778394494215
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -229.21578062657323,
+          1.71875,
+          -708.3590894494215
+        ],
+        "target": [
+          -229.21578062657323,
+          0,
+          -710.0778394494215
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=miramar-beach&level=town&district=miramar-beach-center&landing=1&cx=-229.21578062657323&cy=710.0778394494215&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=miramar-beach&level=town&district=miramar-beach-center&landing=1&cx=-229.21578062657323&cy=710.0778394494215&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "freeport",
+      "name": "Freeport",
+      "desktop": "freeport.webp",
+      "mobile": "freeport-m.webp",
+      "center": {
+        "x": -205.0120305224914,
+        "y": 723.2366998889893,
+        "lon": -86.13784900935144,
+        "lat": 30.50074865
+      },
+      "districts": [
+        {
+          "id": "freeport-center",
+          "name": "Freeport",
+          "lon": -86.1360517,
+          "lat": 30.4982516
+        }
+      ],
+      "district": "freeport-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -86.13784900935144,
+        "lat": 30.50074865,
+        "reason": "The public park anchors Freeport\u2019s low town center, wooded neighborhoods and nearby creek network.",
+        "source": "https://www.openstreetmap.org/way/819631431"
+      },
+      "callouts": [
+        {
+          "name": "City of Freeport Public Park",
+          "type": "park",
+          "lon": -86.13784900935144,
+          "lat": 30.50074865
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "City of Freeport Public Park",
+          "type": "park",
+          "lon": -86.13784900935144,
+          "lat": 30.50074865
+        }
+      ],
+      "close_desktop": "freeport-close.webp",
+      "close_mobile": "freeport-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "freeport.webp",
+          "mobile": "freeport-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              -205.0120305224914,
+              4.296875,
+              -718.9398248889893
+            ],
+            "target": [
+              -205.0120305224914,
+              0,
+              -723.2366998889893
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -205.0120305224914,
+              4.296875,
+              -718.9398248889893
+            ],
+            "target": [
+              -205.0120305224914,
+              0,
+              -723.2366998889893
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "City of Freeport Public Park",
+              "type": "park",
+              "lon": -86.13784900935144,
+              "lat": 30.50074865
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "City of Freeport Public Park",
+              "type": "park",
+              "lon": -86.13784900935144,
+              "lat": 30.50074865
+            }
+          ],
+          "render_url": "../explore_coast.html?view=freeport&level=town&district=freeport-center&landing=1&cx=-205.0120305224914&cy=723.2366998889893&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=freeport&level=town&district=freeport-center&landing=1&cx=-205.0120305224914&cy=723.2366998889893&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "freeport-close.webp",
+          "mobile": "freeport-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              -205.0120305224914,
+              1.71875,
+              -721.5179498889893
+            ],
+            "target": [
+              -205.0120305224914,
+              0,
+              -723.2366998889893
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              -205.0120305224914,
+              1.71875,
+              -721.5179498889893
+            ],
+            "target": [
+              -205.0120305224914,
+              0,
+              -723.2366998889893
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "City of Freeport Public Park",
+              "type": "park",
+              "lon": -86.13784900935144,
+              "lat": 30.50074865
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "City of Freeport Public Park",
+              "type": "park",
+              "lon": -86.13784900935144,
+              "lat": 30.50074865
+            }
+          ],
+          "render_url": "../explore_coast.html?view=freeport&level=town&district=freeport-center&landing=1&cx=-205.0120305224914&cy=723.2366998889893&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=freeport&level=town&district=freeport-center&landing=1&cx=-205.0120305224914&cy=723.2366998889893&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          -205.0120305224914,
+          4.296875,
+          -718.9398248889893
+        ],
+        "target": [
+          -205.0120305224914,
+          0,
+          -723.2366998889893
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -205.0120305224914,
+          4.296875,
+          -718.9398248889893
+        ],
+        "target": [
+          -205.0120305224914,
+          0,
+          -723.2366998889893
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=freeport&level=town&district=freeport-center&landing=1&cx=-205.0120305224914&cy=723.2366998889893&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=freeport&level=town&district=freeport-center&landing=1&cx=-205.0120305224914&cy=723.2366998889893&span=2.75",
+      "close_camera": {
+        "position": [
+          -205.0120305224914,
+          1.71875,
+          -721.5179498889893
+        ],
+        "target": [
+          -205.0120305224914,
+          0,
+          -723.2366998889893
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          -205.0120305224914,
+          1.71875,
+          -721.5179498889893
+        ],
+        "target": [
+          -205.0120305224914,
+          0,
+          -723.2366998889893
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=freeport&level=town&district=freeport-center&landing=1&cx=-205.0120305224914&cy=723.2366998889893&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=freeport&level=town&district=freeport-center&landing=1&cx=-205.0120305224914&cy=723.2366998889893&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "keaton-beach",
+      "name": "Keaton Beach",
+      "desktop": "keaton-beach.webp",
+      "mobile": "keaton-beach-m.webp",
+      "center": {
+        "x": 39.15604051951193,
+        "y": 645.8421461254557,
+        "lon": -83.59429998905289,
+        "lat": 29.81890875
+      },
+      "districts": [
+        {
+          "id": "keaton-beach-center",
+          "name": "Keaton Beach",
+          "lon": -83.5938806,
+          "lat": 29.8252983
+        }
+      ],
+      "district": "keaton-beach-center",
+      "span": 3.5,
+      "close_span": 1.6,
+      "hero": {
+        "lon": -83.59429998905289,
+        "lat": 29.81890875,
+        "reason": "Hodges Park frames Keaton Beach\u2019s Gulf edge, fishing cottages, marsh and boat access.",
+        "source": "https://www.openstreetmap.org/way/353272150"
+      },
+      "callouts": [
+        {
+          "name": "Hodges Park",
+          "type": "park",
+          "lon": -83.59429998905289,
+          "lat": 29.81890875
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Hodges Park",
+          "type": "park",
+          "lon": -83.59429998905289,
+          "lat": 29.81890875
+        }
+      ],
+      "close_desktop": "keaton-beach-close.webp",
+      "close_mobile": "keaton-beach-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "keaton-beach.webp",
+          "mobile": "keaton-beach-m.webp",
+          "span": 3.5,
+          "camera": {
+            "position": [
+              39.15604051951193,
+              2.734375,
+              -643.1077711254557
+            ],
+            "target": [
+              39.15604051951193,
+              0,
+              -645.8421461254557
+            ],
+            "left": -1.75,
+            "right": 1.75,
+            "top": 1.09375,
+            "bottom": -1.09375,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              39.15604051951193,
+              2.734375,
+              -643.1077711254557
+            ],
+            "target": [
+              39.15604051951193,
+              0,
+              -645.8421461254557
+            ],
+            "left": -0.875,
+            "right": 0.875,
+            "top": 1.09375,
+            "bottom": -1.09375,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Hodges Park",
+              "type": "park",
+              "lon": -83.59429998905289,
+              "lat": 29.81890875
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Hodges Park",
+              "type": "park",
+              "lon": -83.59429998905289,
+              "lat": 29.81890875
+            }
+          ],
+          "render_url": "../explore_coast.html?view=keaton-beach&level=town&district=keaton-beach-center&landing=1&cx=39.15604051951193&cy=645.8421461254557&span=3.5",
+          "mobile_render_url": "../explore_coast.html?view=keaton-beach&level=town&district=keaton-beach-center&landing=1&cx=39.15604051951193&cy=645.8421461254557&span=1.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "keaton-beach-close.webp",
+          "mobile": "keaton-beach-close-m.webp",
+          "span": 1.6,
+          "camera": {
+            "position": [
+              39.15604051951193,
+              1.25,
+              -644.5921461254557
+            ],
+            "target": [
+              39.15604051951193,
+              0,
+              -645.8421461254557
+            ],
+            "left": -0.8,
+            "right": 0.8,
+            "top": 0.5,
+            "bottom": -0.5,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              39.15604051951193,
+              1.25,
+              -644.5921461254557
+            ],
+            "target": [
+              39.15604051951193,
+              0,
+              -645.8421461254557
+            ],
+            "left": -0.4,
+            "right": 0.4,
+            "top": 0.5,
+            "bottom": -0.5,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Hodges Park",
+              "type": "park",
+              "lon": -83.59429998905289,
+              "lat": 29.81890875
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Hodges Park",
+              "type": "park",
+              "lon": -83.59429998905289,
+              "lat": 29.81890875
+            }
+          ],
+          "render_url": "../explore_coast.html?view=keaton-beach&level=town&district=keaton-beach-center&landing=1&cx=39.15604051951193&cy=645.8421461254557&span=1.6",
+          "mobile_render_url": "../explore_coast.html?view=keaton-beach&level=town&district=keaton-beach-center&landing=1&cx=39.15604051951193&cy=645.8421461254557&span=0.8",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          39.15604051951193,
+          2.734375,
+          -643.1077711254557
+        ],
+        "target": [
+          39.15604051951193,
+          0,
+          -645.8421461254557
+        ],
+        "left": -1.75,
+        "right": 1.75,
+        "top": 1.09375,
+        "bottom": -1.09375,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          39.15604051951193,
+          2.734375,
+          -643.1077711254557
+        ],
+        "target": [
+          39.15604051951193,
+          0,
+          -645.8421461254557
+        ],
+        "left": -0.875,
+        "right": 0.875,
+        "top": 1.09375,
+        "bottom": -1.09375,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=keaton-beach&level=town&district=keaton-beach-center&landing=1&cx=39.15604051951193&cy=645.8421461254557&span=3.5",
+      "mobile_render_url": "../explore_coast.html?view=keaton-beach&level=town&district=keaton-beach-center&landing=1&cx=39.15604051951193&cy=645.8421461254557&span=1.75",
+      "close_camera": {
+        "position": [
+          39.15604051951193,
+          1.25,
+          -644.5921461254557
+        ],
+        "target": [
+          39.15604051951193,
+          0,
+          -645.8421461254557
+        ],
+        "left": -0.8,
+        "right": 0.8,
+        "top": 0.5,
+        "bottom": -0.5,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          39.15604051951193,
+          1.25,
+          -644.5921461254557
+        ],
+        "target": [
+          39.15604051951193,
+          0,
+          -645.8421461254557
+        ],
+        "left": -0.4,
+        "right": 0.4,
+        "top": 0.5,
+        "bottom": -0.5,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=keaton-beach&level=town&district=keaton-beach-center&landing=1&cx=39.15604051951193&cy=645.8421461254557&span=1.6",
+      "close_mobile_render_url": "../explore_coast.html?view=keaton-beach&level=town&district=keaton-beach-center&landing=1&cx=39.15604051951193&cy=645.8421461254557&span=0.8",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "horseshoe-beach",
+      "name": "Horseshoe Beach",
+      "desktop": "horseshoe-beach.webp",
+      "mobile": "horseshoe-beach-m.webp",
+      "center": {
+        "x": 68.45093493437354,
+        "y": 603.8871271760905,
+        "lon": -83.29326892980195,
+        "lat": 29.4398384
+      },
+      "districts": [
+        {
+          "id": "horseshoe-beach-center",
+          "name": "Horseshoe Beach",
+          "lon": -83.2870525,
+          "lat": 29.4411343
+        }
+      ],
+      "district": "horseshoe-beach-center",
+      "span": 3.5,
+      "close_span": 1.6,
+      "hero": {
+        "lon": -83.29326892980195,
+        "lat": 29.4398384,
+        "reason": "The waterfront park frames Horseshoe Beach\u2019s low fishing village, canals and Gulf marsh.",
+        "source": "https://www.openstreetmap.org/way/659611663"
+      },
+      "callouts": [
+        {
+          "name": "Butler-Douglas Memorial Park",
+          "type": "park",
+          "lon": -83.29326892980195,
+          "lat": 29.4398384
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Butler-Douglas Memorial Park",
+          "type": "park",
+          "lon": -83.29326892980195,
+          "lat": 29.4398384
+        }
+      ],
+      "close_desktop": "horseshoe-beach-close.webp",
+      "close_mobile": "horseshoe-beach-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "horseshoe-beach.webp",
+          "mobile": "horseshoe-beach-m.webp",
+          "span": 3.5,
+          "camera": {
+            "position": [
+              68.45093493437354,
+              2.734375,
+              -601.1527521760905
+            ],
+            "target": [
+              68.45093493437354,
+              0,
+              -603.8871271760905
+            ],
+            "left": -1.75,
+            "right": 1.75,
+            "top": 1.09375,
+            "bottom": -1.09375,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              68.45093493437354,
+              2.734375,
+              -601.1527521760905
+            ],
+            "target": [
+              68.45093493437354,
+              0,
+              -603.8871271760905
+            ],
+            "left": -0.875,
+            "right": 0.875,
+            "top": 1.09375,
+            "bottom": -1.09375,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Butler-Douglas Memorial Park",
+              "type": "park",
+              "lon": -83.29326892980195,
+              "lat": 29.4398384
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Butler-Douglas Memorial Park",
+              "type": "park",
+              "lon": -83.29326892980195,
+              "lat": 29.4398384
+            }
+          ],
+          "render_url": "../explore_coast.html?view=horseshoe-beach&level=town&district=horseshoe-beach-center&landing=1&cx=68.45093493437354&cy=603.8871271760905&span=3.5",
+          "mobile_render_url": "../explore_coast.html?view=horseshoe-beach&level=town&district=horseshoe-beach-center&landing=1&cx=68.45093493437354&cy=603.8871271760905&span=1.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "horseshoe-beach-close.webp",
+          "mobile": "horseshoe-beach-close-m.webp",
+          "span": 1.6,
+          "camera": {
+            "position": [
+              68.45093493437354,
+              1.25,
+              -602.6371271760905
+            ],
+            "target": [
+              68.45093493437354,
+              0,
+              -603.8871271760905
+            ],
+            "left": -0.8,
+            "right": 0.8,
+            "top": 0.5,
+            "bottom": -0.5,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              68.45093493437354,
+              1.25,
+              -602.6371271760905
+            ],
+            "target": [
+              68.45093493437354,
+              0,
+              -603.8871271760905
+            ],
+            "left": -0.4,
+            "right": 0.4,
+            "top": 0.5,
+            "bottom": -0.5,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Butler-Douglas Memorial Park",
+              "type": "park",
+              "lon": -83.29326892980195,
+              "lat": 29.4398384
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Butler-Douglas Memorial Park",
+              "type": "park",
+              "lon": -83.29326892980195,
+              "lat": 29.4398384
+            }
+          ],
+          "render_url": "../explore_coast.html?view=horseshoe-beach&level=town&district=horseshoe-beach-center&landing=1&cx=68.45093493437354&cy=603.8871271760905&span=1.6",
+          "mobile_render_url": "../explore_coast.html?view=horseshoe-beach&level=town&district=horseshoe-beach-center&landing=1&cx=68.45093493437354&cy=603.8871271760905&span=0.8",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          68.45093493437354,
+          2.734375,
+          -601.1527521760905
+        ],
+        "target": [
+          68.45093493437354,
+          0,
+          -603.8871271760905
+        ],
+        "left": -1.75,
+        "right": 1.75,
+        "top": 1.09375,
+        "bottom": -1.09375,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          68.45093493437354,
+          2.734375,
+          -601.1527521760905
+        ],
+        "target": [
+          68.45093493437354,
+          0,
+          -603.8871271760905
+        ],
+        "left": -0.875,
+        "right": 0.875,
+        "top": 1.09375,
+        "bottom": -1.09375,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=horseshoe-beach&level=town&district=horseshoe-beach-center&landing=1&cx=68.45093493437354&cy=603.8871271760905&span=3.5",
+      "mobile_render_url": "../explore_coast.html?view=horseshoe-beach&level=town&district=horseshoe-beach-center&landing=1&cx=68.45093493437354&cy=603.8871271760905&span=1.75",
+      "close_camera": {
+        "position": [
+          68.45093493437354,
+          1.25,
+          -602.6371271760905
+        ],
+        "target": [
+          68.45093493437354,
+          0,
+          -603.8871271760905
+        ],
+        "left": -0.8,
+        "right": 0.8,
+        "top": 0.5,
+        "bottom": -0.5,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          68.45093493437354,
+          1.25,
+          -602.6371271760905
+        ],
+        "target": [
+          68.45093493437354,
+          0,
+          -603.8871271760905
+        ],
+        "left": -0.4,
+        "right": 0.4,
+        "top": 0.5,
+        "bottom": -0.5,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=horseshoe-beach&level=town&district=horseshoe-beach-center&landing=1&cx=68.45093493437354&cy=603.8871271760905&span=1.6",
+      "close_mobile_render_url": "../explore_coast.html?view=horseshoe-beach&level=town&district=horseshoe-beach-center&landing=1&cx=68.45093493437354&cy=603.8871271760905&span=0.8",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "suwannee",
+      "name": "Suwannee",
+      "desktop": "suwannee.webp",
+      "mobile": "suwannee-m.webp",
+      "center": {
+        "x": 82.950284295743,
+        "y": 591.4718333194324,
+        "lon": -83.1444621,
+        "lat": 29.3272009
+      },
+      "districts": [
+        {
+          "id": "suwannee-center",
+          "name": "Suwannee",
+          "lon": -83.1442945,
+          "lat": 29.32885
+        }
+      ],
+      "district": "suwannee-center",
+      "span": 4,
+      "close_span": 1.8,
+      "hero": {
+        "lon": -83.1444621,
+        "lat": 29.3272009,
+        "reason": "The mapped riverfront bridge frames Suwannee\u2019s canal homes, docks and river-mouth landscape.",
+        "source": "https://www.openstreetmap.org/way/10867209"
+      },
+      "callouts": [
+        {
+          "name": "Suwannee River Drive bridge",
+          "type": "landmark",
+          "lon": -83.1444621,
+          "lat": 29.3272009
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Suwannee River Drive bridge",
+          "type": "landmark",
+          "lon": -83.1444621,
+          "lat": 29.3272009
+        }
+      ],
+      "close_desktop": "suwannee-close.webp",
+      "close_mobile": "suwannee-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "suwannee.webp",
+          "mobile": "suwannee-m.webp",
+          "span": 4,
+          "camera": {
+            "position": [
+              82.950284295743,
+              3.125,
+              -588.3468333194324
+            ],
+            "target": [
+              82.950284295743,
+              0,
+              -591.4718333194324
+            ],
+            "left": -2,
+            "right": 2,
+            "top": 1.25,
+            "bottom": -1.25,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              82.950284295743,
+              3.125,
+              -588.3468333194324
+            ],
+            "target": [
+              82.950284295743,
+              0,
+              -591.4718333194324
+            ],
+            "left": -1.0,
+            "right": 1.0,
+            "top": 1.25,
+            "bottom": -1.25,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Suwannee River Drive bridge",
+              "type": "landmark",
+              "lon": -83.1444621,
+              "lat": 29.3272009
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Suwannee River Drive bridge",
+              "type": "landmark",
+              "lon": -83.1444621,
+              "lat": 29.3272009
+            }
+          ],
+          "render_url": "../explore_coast.html?view=suwannee&level=town&district=suwannee-center&landing=1&cx=82.950284295743&cy=591.4718333194324&span=4",
+          "mobile_render_url": "../explore_coast.html?view=suwannee&level=town&district=suwannee-center&landing=1&cx=82.950284295743&cy=591.4718333194324&span=2.0",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "suwannee-close.webp",
+          "mobile": "suwannee-close-m.webp",
+          "span": 1.8,
+          "camera": {
+            "position": [
+              82.950284295743,
+              1.40625,
+              -590.0655833194324
+            ],
+            "target": [
+              82.950284295743,
+              0,
+              -591.4718333194324
+            ],
+            "left": -0.9,
+            "right": 0.9,
+            "top": 0.5625,
+            "bottom": -0.5625,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              82.950284295743,
+              1.40625,
+              -590.0655833194324
+            ],
+            "target": [
+              82.950284295743,
+              0,
+              -591.4718333194324
+            ],
+            "left": -0.45,
+            "right": 0.45,
+            "top": 0.5625,
+            "bottom": -0.5625,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Suwannee River Drive bridge",
+              "type": "landmark",
+              "lon": -83.1444621,
+              "lat": 29.3272009
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Suwannee River Drive bridge",
+              "type": "landmark",
+              "lon": -83.1444621,
+              "lat": 29.3272009
+            }
+          ],
+          "render_url": "../explore_coast.html?view=suwannee&level=town&district=suwannee-center&landing=1&cx=82.950284295743&cy=591.4718333194324&span=1.8",
+          "mobile_render_url": "../explore_coast.html?view=suwannee&level=town&district=suwannee-center&landing=1&cx=82.950284295743&cy=591.4718333194324&span=0.9",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          82.950284295743,
+          3.125,
+          -588.3468333194324
+        ],
+        "target": [
+          82.950284295743,
+          0,
+          -591.4718333194324
+        ],
+        "left": -2,
+        "right": 2,
+        "top": 1.25,
+        "bottom": -1.25,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          82.950284295743,
+          3.125,
+          -588.3468333194324
+        ],
+        "target": [
+          82.950284295743,
+          0,
+          -591.4718333194324
+        ],
+        "left": -1.0,
+        "right": 1.0,
+        "top": 1.25,
+        "bottom": -1.25,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=suwannee&level=town&district=suwannee-center&landing=1&cx=82.950284295743&cy=591.4718333194324&span=4",
+      "mobile_render_url": "../explore_coast.html?view=suwannee&level=town&district=suwannee-center&landing=1&cx=82.950284295743&cy=591.4718333194324&span=2.0",
+      "close_camera": {
+        "position": [
+          82.950284295743,
+          1.40625,
+          -590.0655833194324
+        ],
+        "target": [
+          82.950284295743,
+          0,
+          -591.4718333194324
+        ],
+        "left": -0.9,
+        "right": 0.9,
+        "top": 0.5625,
+        "bottom": -0.5625,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          82.950284295743,
+          1.40625,
+          -590.0655833194324
+        ],
+        "target": [
+          82.950284295743,
+          0,
+          -591.4718333194324
+        ],
+        "left": -0.45,
+        "right": 0.45,
+        "top": 0.5625,
+        "bottom": -0.5625,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=suwannee&level=town&district=suwannee-center&landing=1&cx=82.950284295743&cy=591.4718333194324&span=1.8",
+      "close_mobile_render_url": "../explore_coast.html?view=suwannee&level=town&district=suwannee-center&landing=1&cx=82.950284295743&cy=591.4718333194324&span=0.9",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "yankeetown",
+      "name": "Yankeetown",
+      "desktop": "yankeetown.webp",
+      "mobile": "yankeetown-m.webp",
+      "center": {
+        "x": 124.8409109727234,
+        "y": 558.8288382682148,
+        "lon": -82.7159396,
+        "lat": 29.0299729
+      },
+      "districts": [
+        {
+          "id": "yankeetown-center",
+          "name": "Yankeetown",
+          "lon": -82.7159396,
+          "lat": 29.0299729
+        }
+      ],
+      "district": "yankeetown-center",
+      "span": 4,
+      "close_span": 1.8,
+      "hero": {
+        "lon": -82.7159396,
+        "lat": 29.0299729,
+        "reason": "The mapped riverfront center frames Yankeetown\u2019s cottage streets and the Withlacoochee River.",
+        "source": "https://www.openstreetmap.org/node/154092372"
+      },
+      "callouts": [
+        {
+          "name": "Yankeetown riverfront center",
+          "type": "walkable",
+          "lon": -82.7159396,
+          "lat": 29.0299729
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Yankeetown riverfront center",
+          "type": "walkable",
+          "lon": -82.7159396,
+          "lat": 29.0299729
+        }
+      ],
+      "close_desktop": "yankeetown-close.webp",
+      "close_mobile": "yankeetown-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "yankeetown.webp",
+          "mobile": "yankeetown-m.webp",
+          "span": 4,
+          "camera": {
+            "position": [
+              124.8409109727234,
+              3.125,
+              -555.7038382682148
+            ],
+            "target": [
+              124.8409109727234,
+              0,
+              -558.8288382682148
+            ],
+            "left": -2,
+            "right": 2,
+            "top": 1.25,
+            "bottom": -1.25,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              124.8409109727234,
+              3.125,
+              -555.7038382682148
+            ],
+            "target": [
+              124.8409109727234,
+              0,
+              -558.8288382682148
+            ],
+            "left": -1.0,
+            "right": 1.0,
+            "top": 1.25,
+            "bottom": -1.25,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Yankeetown riverfront center",
+              "type": "walkable",
+              "lon": -82.7159396,
+              "lat": 29.0299729
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Yankeetown riverfront center",
+              "type": "walkable",
+              "lon": -82.7159396,
+              "lat": 29.0299729
+            }
+          ],
+          "render_url": "../explore_coast.html?view=yankeetown&level=town&district=yankeetown-center&landing=1&cx=124.8409109727234&cy=558.8288382682148&span=4",
+          "mobile_render_url": "../explore_coast.html?view=yankeetown&level=town&district=yankeetown-center&landing=1&cx=124.8409109727234&cy=558.8288382682148&span=2.0",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "yankeetown-close.webp",
+          "mobile": "yankeetown-close-m.webp",
+          "span": 1.8,
+          "camera": {
+            "position": [
+              124.8409109727234,
+              1.40625,
+              -557.4225882682148
+            ],
+            "target": [
+              124.8409109727234,
+              0,
+              -558.8288382682148
+            ],
+            "left": -0.9,
+            "right": 0.9,
+            "top": 0.5625,
+            "bottom": -0.5625,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              124.8409109727234,
+              1.40625,
+              -557.4225882682148
+            ],
+            "target": [
+              124.8409109727234,
+              0,
+              -558.8288382682148
+            ],
+            "left": -0.45,
+            "right": 0.45,
+            "top": 0.5625,
+            "bottom": -0.5625,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Yankeetown riverfront center",
+              "type": "walkable",
+              "lon": -82.7159396,
+              "lat": 29.0299729
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Yankeetown riverfront center",
+              "type": "walkable",
+              "lon": -82.7159396,
+              "lat": 29.0299729
+            }
+          ],
+          "render_url": "../explore_coast.html?view=yankeetown&level=town&district=yankeetown-center&landing=1&cx=124.8409109727234&cy=558.8288382682148&span=1.8",
+          "mobile_render_url": "../explore_coast.html?view=yankeetown&level=town&district=yankeetown-center&landing=1&cx=124.8409109727234&cy=558.8288382682148&span=0.9",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          124.8409109727234,
+          3.125,
+          -555.7038382682148
+        ],
+        "target": [
+          124.8409109727234,
+          0,
+          -558.8288382682148
+        ],
+        "left": -2,
+        "right": 2,
+        "top": 1.25,
+        "bottom": -1.25,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          124.8409109727234,
+          3.125,
+          -555.7038382682148
+        ],
+        "target": [
+          124.8409109727234,
+          0,
+          -558.8288382682148
+        ],
+        "left": -1.0,
+        "right": 1.0,
+        "top": 1.25,
+        "bottom": -1.25,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=yankeetown&level=town&district=yankeetown-center&landing=1&cx=124.8409109727234&cy=558.8288382682148&span=4",
+      "mobile_render_url": "../explore_coast.html?view=yankeetown&level=town&district=yankeetown-center&landing=1&cx=124.8409109727234&cy=558.8288382682148&span=2.0",
+      "close_camera": {
+        "position": [
+          124.8409109727234,
+          1.40625,
+          -557.4225882682148
+        ],
+        "target": [
+          124.8409109727234,
+          0,
+          -558.8288382682148
+        ],
+        "left": -0.9,
+        "right": 0.9,
+        "top": 0.5625,
+        "bottom": -0.5625,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          124.8409109727234,
+          1.40625,
+          -557.4225882682148
+        ],
+        "target": [
+          124.8409109727234,
+          0,
+          -558.8288382682148
+        ],
+        "left": -0.45,
+        "right": 0.45,
+        "top": 0.5625,
+        "bottom": -0.5625,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=yankeetown&level=town&district=yankeetown-center&landing=1&cx=124.8409109727234&cy=558.8288382682148&span=1.8",
+      "close_mobile_render_url": "../explore_coast.html?view=yankeetown&level=town&district=yankeetown-center&landing=1&cx=124.8409109727234&cy=558.8288382682148&span=0.9",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "inglis",
+      "name": "Inglis",
+      "desktop": "inglis.webp",
+      "mobile": "inglis-m.webp",
+      "center": {
+        "x": 129.39577347575997,
+        "y": 558.3315418693523,
+        "lon": -82.669149,
+        "lat": 29.02506005
+      },
+      "districts": [
+        {
+          "id": "inglis-center",
+          "name": "Inglis",
+          "lon": -82.6687161,
+          "lat": 29.0302514
+        }
+      ],
+      "district": "inglis-center",
+      "span": 4,
+      "close_span": 1.8,
+      "hero": {
+        "lon": -82.669149,
+        "lat": 29.02506005,
+        "reason": "The river crossing frames Inglis\u2019s low town streets and the Withlacoochee River.",
+        "source": "https://www.openstreetmap.org/way/85708601"
+      },
+      "callouts": [
+        {
+          "name": "Inglis river crossing",
+          "type": "landmark",
+          "lon": -82.669149,
+          "lat": 29.02506005
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Inglis river crossing",
+          "type": "landmark",
+          "lon": -82.669149,
+          "lat": 29.02506005
+        }
+      ],
+      "close_desktop": "inglis-close.webp",
+      "close_mobile": "inglis-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "inglis.webp",
+          "mobile": "inglis-m.webp",
+          "span": 4,
+          "camera": {
+            "position": [
+              129.39577347575997,
+              3.125,
+              -555.2065418693523
+            ],
+            "target": [
+              129.39577347575997,
+              0,
+              -558.3315418693523
+            ],
+            "left": -2,
+            "right": 2,
+            "top": 1.25,
+            "bottom": -1.25,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              129.39577347575997,
+              3.125,
+              -555.2065418693523
+            ],
+            "target": [
+              129.39577347575997,
+              0,
+              -558.3315418693523
+            ],
+            "left": -1.0,
+            "right": 1.0,
+            "top": 1.25,
+            "bottom": -1.25,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Inglis river crossing",
+              "type": "landmark",
+              "lon": -82.669149,
+              "lat": 29.02506005
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Inglis river crossing",
+              "type": "landmark",
+              "lon": -82.669149,
+              "lat": 29.02506005
+            }
+          ],
+          "render_url": "../explore_coast.html?view=inglis&level=town&district=inglis-center&landing=1&cx=129.39577347575997&cy=558.3315418693523&span=4",
+          "mobile_render_url": "../explore_coast.html?view=inglis&level=town&district=inglis-center&landing=1&cx=129.39577347575997&cy=558.3315418693523&span=2.0",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "inglis-close.webp",
+          "mobile": "inglis-close-m.webp",
+          "span": 1.8,
+          "camera": {
+            "position": [
+              129.39577347575997,
+              1.40625,
+              -556.9252918693523
+            ],
+            "target": [
+              129.39577347575997,
+              0,
+              -558.3315418693523
+            ],
+            "left": -0.9,
+            "right": 0.9,
+            "top": 0.5625,
+            "bottom": -0.5625,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              129.39577347575997,
+              1.40625,
+              -556.9252918693523
+            ],
+            "target": [
+              129.39577347575997,
+              0,
+              -558.3315418693523
+            ],
+            "left": -0.45,
+            "right": 0.45,
+            "top": 0.5625,
+            "bottom": -0.5625,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Inglis river crossing",
+              "type": "landmark",
+              "lon": -82.669149,
+              "lat": 29.02506005
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Inglis river crossing",
+              "type": "landmark",
+              "lon": -82.669149,
+              "lat": 29.02506005
+            }
+          ],
+          "render_url": "../explore_coast.html?view=inglis&level=town&district=inglis-center&landing=1&cx=129.39577347575997&cy=558.3315418693523&span=1.8",
+          "mobile_render_url": "../explore_coast.html?view=inglis&level=town&district=inglis-center&landing=1&cx=129.39577347575997&cy=558.3315418693523&span=0.9",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          129.39577347575997,
+          3.125,
+          -555.2065418693523
+        ],
+        "target": [
+          129.39577347575997,
+          0,
+          -558.3315418693523
+        ],
+        "left": -2,
+        "right": 2,
+        "top": 1.25,
+        "bottom": -1.25,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          129.39577347575997,
+          3.125,
+          -555.2065418693523
+        ],
+        "target": [
+          129.39577347575997,
+          0,
+          -558.3315418693523
+        ],
+        "left": -1.0,
+        "right": 1.0,
+        "top": 1.25,
+        "bottom": -1.25,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=inglis&level=town&district=inglis-center&landing=1&cx=129.39577347575997&cy=558.3315418693523&span=4",
+      "mobile_render_url": "../explore_coast.html?view=inglis&level=town&district=inglis-center&landing=1&cx=129.39577347575997&cy=558.3315418693523&span=2.0",
+      "close_camera": {
+        "position": [
+          129.39577347575997,
+          1.40625,
+          -556.9252918693523
+        ],
+        "target": [
+          129.39577347575997,
+          0,
+          -558.3315418693523
+        ],
+        "left": -0.9,
+        "right": 0.9,
+        "top": 0.5625,
+        "bottom": -0.5625,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          129.39577347575997,
+          1.40625,
+          -556.9252918693523
+        ],
+        "target": [
+          129.39577347575997,
+          0,
+          -558.3315418693523
+        ],
+        "left": -0.45,
+        "right": 0.45,
+        "top": 0.5625,
+        "bottom": -0.5625,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=inglis&level=town&district=inglis-center&landing=1&cx=129.39577347575997&cy=558.3315418693523&span=1.8",
+      "close_mobile_render_url": "../explore_coast.html?view=inglis&level=town&district=inglis-center&landing=1&cx=129.39577347575997&cy=558.3315418693523&span=0.9",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "hernando-beach",
+      "name": "Hernando Beach",
+      "desktop": "hernando-beach.webp",
+      "mobile": "hernando-beach-m.webp",
+      "center": {
+        "x": 131.25457997854875,
+        "y": 499.6395296388083,
+        "lon": -82.65660843072605,
+        "lat": 28.496404176956737
+      },
+      "districts": [
+        {
+          "id": "hernando-beach-center",
+          "name": "Hernando Beach",
+          "lon": -82.6592677,
+          "lat": 28.469443
+        }
+      ],
+      "district": "hernando-beach-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -82.65660843072605,
+        "lat": 28.496404176956737,
+        "reason": "Gulf Coast Drive frames Hernando Beach\u2019s canal peninsula, waterfront homes and nearby Gulf marsh.",
+        "source": "https://www.openstreetmap.org/way/10959139"
+      },
+      "callouts": [
+        {
+          "name": "Hernando Beach Marina",
+          "type": "boating",
+          "lon": -82.6507817,
+          "lat": 28.49008835
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Hernando Beach Marina",
+          "type": "boating",
+          "lon": -82.6507817,
+          "lat": 28.49008835
+        }
+      ],
+      "close_desktop": "hernando-beach-close.webp",
+      "close_mobile": "hernando-beach-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "hernando-beach.webp",
+          "mobile": "hernando-beach-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              131.25457997854875,
+              4.296875,
+              -495.3426546388083
+            ],
+            "target": [
+              131.25457997854875,
+              0,
+              -499.6395296388083
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              131.25457997854875,
+              4.296875,
+              -495.3426546388083
+            ],
+            "target": [
+              131.25457997854875,
+              0,
+              -499.6395296388083
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Hernando Beach Marina",
+              "type": "boating",
+              "lon": -82.6507817,
+              "lat": 28.49008835
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Hernando Beach Marina",
+              "type": "boating",
+              "lon": -82.6507817,
+              "lat": 28.49008835
+            }
+          ],
+          "render_url": "../explore_coast.html?view=hernando-beach&level=town&district=hernando-beach-center&landing=1&cx=131.25457997854875&cy=499.6395296388083&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=hernando-beach&level=town&district=hernando-beach-center&landing=1&cx=131.25457997854875&cy=499.6395296388083&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "hernando-beach-close.webp",
+          "mobile": "hernando-beach-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              131.25457997854875,
+              1.71875,
+              -497.9207796388083
+            ],
+            "target": [
+              131.25457997854875,
+              0,
+              -499.6395296388083
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              131.25457997854875,
+              1.71875,
+              -497.9207796388083
+            ],
+            "target": [
+              131.25457997854875,
+              0,
+              -499.6395296388083
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Hernando Beach Marina",
+              "type": "boating",
+              "lon": -82.6507817,
+              "lat": 28.49008835
+            }
+          ],
+          "mobile_callouts": [],
+          "render_url": "../explore_coast.html?view=hernando-beach&level=town&district=hernando-beach-center&landing=1&cx=131.25457997854875&cy=499.6395296388083&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=hernando-beach&level=town&district=hernando-beach-center&landing=1&cx=131.25457997854875&cy=499.6395296388083&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          131.25457997854875,
+          4.296875,
+          -495.3426546388083
+        ],
+        "target": [
+          131.25457997854875,
+          0,
+          -499.6395296388083
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          131.25457997854875,
+          4.296875,
+          -495.3426546388083
+        ],
+        "target": [
+          131.25457997854875,
+          0,
+          -499.6395296388083
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=hernando-beach&level=town&district=hernando-beach-center&landing=1&cx=131.25457997854875&cy=499.6395296388083&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=hernando-beach&level=town&district=hernando-beach-center&landing=1&cx=131.25457997854875&cy=499.6395296388083&span=2.75",
+      "close_camera": {
+        "position": [
+          131.25457997854875,
+          1.71875,
+          -497.9207796388083
+        ],
+        "target": [
+          131.25457997854875,
+          0,
+          -499.6395296388083
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          131.25457997854875,
+          1.71875,
+          -497.9207796388083
+        ],
+        "target": [
+          131.25457997854875,
+          0,
+          -499.6395296388083
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=hernando-beach&level=town&district=hernando-beach-center&landing=1&cx=131.25457997854875&cy=499.6395296388083&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=hernando-beach&level=town&district=hernando-beach-center&landing=1&cx=131.25457997854875&cy=499.6395296388083&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "weeki-wachee",
+      "name": "Weeki Wachee",
+      "desktop": "weeki-wachee.webp",
+      "mobile": "weeki-wachee-m.webp",
+      "center": {
+        "x": 139.21750358334276,
+        "y": 502.0302632801172,
+        "lon": -82.57483211637238,
+        "lat": 28.517125200000002
+      },
+      "districts": [
+        {
+          "id": "weeki-wachee-center",
+          "name": "Weeki Wachee",
+          "lon": -82.5735662,
+          "lat": 28.5156479
+        }
+      ],
+      "district": "weeki-wachee-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -82.57483211637238,
+        "lat": 28.517125200000002,
+        "reason": "The springs park frames the source of the Weeki Wachee River, its visitor buildings and wooded setting.",
+        "source": "https://www.openstreetmap.org/way/1148344197"
+      },
+      "callouts": [
+        {
+          "name": "Weeki Wachee Springs State Park",
+          "type": "park",
+          "lon": -82.57483211637238,
+          "lat": 28.517125200000002
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Weeki Wachee Springs State Park",
+          "type": "park",
+          "lon": -82.57483211637238,
+          "lat": 28.517125200000002
+        }
+      ],
+      "close_desktop": "weeki-wachee-close.webp",
+      "close_mobile": "weeki-wachee-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "weeki-wachee.webp",
+          "mobile": "weeki-wachee-m.webp",
+          "span": 5.5,
+          "camera": {
+            "position": [
+              139.21750358334276,
+              4.296875,
+              -497.7333882801172
+            ],
+            "target": [
+              139.21750358334276,
+              0,
+              -502.0302632801172
+            ],
+            "left": -2.75,
+            "right": 2.75,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              139.21750358334276,
+              4.296875,
+              -497.7333882801172
+            ],
+            "target": [
+              139.21750358334276,
+              0,
+              -502.0302632801172
+            ],
+            "left": -1.375,
+            "right": 1.375,
+            "top": 1.71875,
+            "bottom": -1.71875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Weeki Wachee Springs State Park",
+              "type": "park",
+              "lon": -82.57483211637238,
+              "lat": 28.517125200000002
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Weeki Wachee Springs State Park",
+              "type": "park",
+              "lon": -82.57483211637238,
+              "lat": 28.517125200000002
+            }
+          ],
+          "render_url": "../explore_coast.html?view=weeki-wachee&level=town&district=weeki-wachee-center&landing=1&cx=139.21750358334276&cy=502.0302632801172&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=weeki-wachee&level=town&district=weeki-wachee-center&landing=1&cx=139.21750358334276&cy=502.0302632801172&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "weeki-wachee-close.webp",
+          "mobile": "weeki-wachee-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "position": [
+              139.21750358334276,
+              1.71875,
+              -500.3115132801172
+            ],
+            "target": [
+              139.21750358334276,
+              0,
+              -502.0302632801172
+            ],
+            "left": -1.1,
+            "right": 1.1,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              139.21750358334276,
+              1.71875,
+              -500.3115132801172
+            ],
+            "target": [
+              139.21750358334276,
+              0,
+              -502.0302632801172
+            ],
+            "left": -0.55,
+            "right": 0.55,
+            "top": 0.6875,
+            "bottom": -0.6875,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Weeki Wachee Springs State Park",
+              "type": "park",
+              "lon": -82.57483211637238,
+              "lat": 28.517125200000002
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Weeki Wachee Springs State Park",
+              "type": "park",
+              "lon": -82.57483211637238,
+              "lat": 28.517125200000002
+            }
+          ],
+          "render_url": "../explore_coast.html?view=weeki-wachee&level=town&district=weeki-wachee-center&landing=1&cx=139.21750358334276&cy=502.0302632801172&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=weeki-wachee&level=town&district=weeki-wachee-center&landing=1&cx=139.21750358334276&cy=502.0302632801172&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          139.21750358334276,
+          4.296875,
+          -497.7333882801172
+        ],
+        "target": [
+          139.21750358334276,
+          0,
+          -502.0302632801172
+        ],
+        "left": -2.75,
+        "right": 2.75,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          139.21750358334276,
+          4.296875,
+          -497.7333882801172
+        ],
+        "target": [
+          139.21750358334276,
+          0,
+          -502.0302632801172
+        ],
+        "left": -1.375,
+        "right": 1.375,
+        "top": 1.71875,
+        "bottom": -1.71875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=weeki-wachee&level=town&district=weeki-wachee-center&landing=1&cx=139.21750358334276&cy=502.0302632801172&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=weeki-wachee&level=town&district=weeki-wachee-center&landing=1&cx=139.21750358334276&cy=502.0302632801172&span=2.75",
+      "close_camera": {
+        "position": [
+          139.21750358334276,
+          1.71875,
+          -500.3115132801172
+        ],
+        "target": [
+          139.21750358334276,
+          0,
+          -502.0302632801172
+        ],
+        "left": -1.1,
+        "right": 1.1,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          139.21750358334276,
+          1.71875,
+          -500.3115132801172
+        ],
+        "target": [
+          139.21750358334276,
+          0,
+          -502.0302632801172
+        ],
+        "left": -0.55,
+        "right": 0.55,
+        "top": 0.6875,
+        "bottom": -0.6875,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=weeki-wachee&level=town&district=weeki-wachee-center&landing=1&cx=139.21750358334276&cy=502.0302632801172&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=weeki-wachee&level=town&district=weeki-wachee-center&landing=1&cx=139.21750358334276&cy=502.0302632801172&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "aripeka",
+      "name": "Aripeka",
+      "desktop": "aripeka.webp",
+      "mobile": "aripeka-m.webp",
+      "center": {
+        "x": 130.3400213373642,
+        "y": 492.58389927183316,
+        "lon": -82.66674895,
+        "lat": 28.432965324999998
+      },
+      "districts": [
+        {
+          "id": "aripeka-center",
+          "name": "Aripeka",
+          "lon": -82.664536,
+          "lat": 28.4317572
+        }
+      ],
+      "district": "aripeka-center",
+      "span": 3.5,
+      "close_span": 1.6,
+      "hero": {
+        "lon": -82.66674895,
+        "lat": 28.432965324999998,
+        "reason": "The creek bridge frames Aripeka\u2019s old cottages and tidal marsh channels.",
+        "source": "https://www.openstreetmap.org/way/119237120"
+      },
+      "callouts": [
+        {
+          "name": "Aripeka Road creek bridge",
+          "type": "landmark",
+          "lon": -82.66674895,
+          "lat": 28.432965324999998
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Aripeka Road creek bridge",
+          "type": "landmark",
+          "lon": -82.66674895,
+          "lat": 28.432965324999998
+        }
+      ],
+      "close_desktop": "aripeka-close.webp",
+      "close_mobile": "aripeka-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "aripeka.webp",
+          "mobile": "aripeka-m.webp",
+          "span": 3.5,
+          "camera": {
+            "position": [
+              130.3400213373642,
+              2.734375,
+              -489.84952427183316
+            ],
+            "target": [
+              130.3400213373642,
+              0,
+              -492.58389927183316
+            ],
+            "left": -1.75,
+            "right": 1.75,
+            "top": 1.09375,
+            "bottom": -1.09375,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              130.3400213373642,
+              2.734375,
+              -489.84952427183316
+            ],
+            "target": [
+              130.3400213373642,
+              0,
+              -492.58389927183316
+            ],
+            "left": -0.875,
+            "right": 0.875,
+            "top": 1.09375,
+            "bottom": -1.09375,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Aripeka Road creek bridge",
+              "type": "landmark",
+              "lon": -82.66674895,
+              "lat": 28.432965324999998
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Aripeka Road creek bridge",
+              "type": "landmark",
+              "lon": -82.66674895,
+              "lat": 28.432965324999998
+            }
+          ],
+          "render_url": "../explore_coast.html?view=aripeka&level=town&district=aripeka-center&landing=1&cx=130.3400213373642&cy=492.58389927183316&span=3.5",
+          "mobile_render_url": "../explore_coast.html?view=aripeka&level=town&district=aripeka-center&landing=1&cx=130.3400213373642&cy=492.58389927183316&span=1.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "aripeka-close.webp",
+          "mobile": "aripeka-close-m.webp",
+          "span": 1.6,
+          "camera": {
+            "position": [
+              130.3400213373642,
+              1.25,
+              -491.33389927183316
+            ],
+            "target": [
+              130.3400213373642,
+              0,
+              -492.58389927183316
+            ],
+            "left": -0.8,
+            "right": 0.8,
+            "top": 0.5,
+            "bottom": -0.5,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "mobile_camera": {
+            "position": [
+              130.3400213373642,
+              1.25,
+              -491.33389927183316
+            ],
+            "target": [
+              130.3400213373642,
+              0,
+              -492.58389927183316
+            ],
+            "left": -0.4,
+            "right": 0.4,
+            "top": 0.5,
+            "bottom": -0.5,
+            "near": 0.0001,
+            "far": 3500,
+            "projection": "orthographic",
+            "mapUnits": "kilometers",
+            "tiltDegrees": 45
+          },
+          "callouts": [
+            {
+              "name": "Aripeka Road creek bridge",
+              "type": "landmark",
+              "lon": -82.66674895,
+              "lat": 28.432965324999998
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Aripeka Road creek bridge",
+              "type": "landmark",
+              "lon": -82.66674895,
+              "lat": 28.432965324999998
+            }
+          ],
+          "render_url": "../explore_coast.html?view=aripeka&level=town&district=aripeka-center&landing=1&cx=130.3400213373642&cy=492.58389927183316&span=1.6",
+          "mobile_render_url": "../explore_coast.html?view=aripeka&level=town&district=aripeka-center&landing=1&cx=130.3400213373642&cy=492.58389927183316&span=0.8",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "position": [
+          130.3400213373642,
+          2.734375,
+          -489.84952427183316
+        ],
+        "target": [
+          130.3400213373642,
+          0,
+          -492.58389927183316
+        ],
+        "left": -1.75,
+        "right": 1.75,
+        "top": 1.09375,
+        "bottom": -1.09375,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          130.3400213373642,
+          2.734375,
+          -489.84952427183316
+        ],
+        "target": [
+          130.3400213373642,
+          0,
+          -492.58389927183316
+        ],
+        "left": -0.875,
+        "right": 0.875,
+        "top": 1.09375,
+        "bottom": -1.09375,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=aripeka&level=town&district=aripeka-center&landing=1&cx=130.3400213373642&cy=492.58389927183316&span=3.5",
+      "mobile_render_url": "../explore_coast.html?view=aripeka&level=town&district=aripeka-center&landing=1&cx=130.3400213373642&cy=492.58389927183316&span=1.75",
+      "close_camera": {
+        "position": [
+          130.3400213373642,
+          1.25,
+          -491.33389927183316
+        ],
+        "target": [
+          130.3400213373642,
+          0,
+          -492.58389927183316
+        ],
+        "left": -0.8,
+        "right": 0.8,
+        "top": 0.5,
+        "bottom": -0.5,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_mobile_camera": {
+        "position": [
+          130.3400213373642,
+          1.25,
+          -491.33389927183316
+        ],
+        "target": [
+          130.3400213373642,
+          0,
+          -492.58389927183316
+        ],
+        "left": -0.4,
+        "right": 0.4,
+        "top": 0.5,
+        "bottom": -0.5,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "close_render_url": "../explore_coast.html?view=aripeka&level=town&district=aripeka-center&landing=1&cx=130.3400213373642&cy=492.58389927183316&span=1.6",
+      "close_mobile_render_url": "../explore_coast.html?view=aripeka&level=town&district=aripeka-center&landing=1&cx=130.3400213373642&cy=492.58389927183316&span=0.8",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
     }
   ],
   "landing_schema_version": 2,

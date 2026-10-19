@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Aripeka,130.55780029296875,492.45208740234375,-82.6645360593741,28.431757286068482,-82.664536,28.4317572,0.0112,https://www.openstreetmap.org/node/154110241,Representative OSM town place-label anchor: Aripeka

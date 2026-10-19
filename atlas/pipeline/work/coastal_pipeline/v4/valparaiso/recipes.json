@@ -1,0 +1,27 @@
+{
+  "recipes": {
+    "valparaiso": {
+      "walls": [
+        "#ead9b7",
+        "#b9cdb6",
+        "#d8b299",
+        "#c6d9df"
+      ],
+      "roofs": [
+        "#a6b8b1",
+        "#c3ccc8",
+        "#9ba7a0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.destinfwb.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "Low historic homes and waterfront parks along Boggy Bayou.",
+      "canopy": "live-oak"
+    }
+  },
+  "coastalHeightZones": []
+}

@@ -1,0 +1,66 @@
+{
+  "recipes": {
+    "navarre-beach": {
+      "walls": [
+        "#fffbed",
+        "#e8ddec",
+        "#d9eacb",
+        "#f4e7b8"
+      ],
+      "roofs": [
+        "#c6d4d2",
+        "#d8ded7",
+        "#9eafb0"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.getrelaxing.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "White sand, a long Gulf fishing pier, pastel beach homes and condo towers."
+    },
+    "beach-houses": {
+      "walls": [
+        "#fffbed",
+        "#e8ddec",
+        "#d9eacb",
+        "#f4e7b8"
+      ],
+      "roofs": [
+        "#c6d4d2",
+        "#d8ded7",
+        "#9eafb0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.getrelaxing.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "White sand, a long Gulf fishing pier, pastel beach homes and condo towers."
+    }
+  },
+  "coastalHeightZones": [
+    [
+      -86.931,
+      30.325,
+      -86.801,
+      30.435
+    ]
+  ],
+  "towerRecipe": "navarre-beach",
+  "styleZones": [
+    {
+      "bounds": [
+        -86.931,
+        30.325,
+        -86.801,
+        30.435
+      ],
+      "recipe": "beach-houses"
+    }
+  ]
+}

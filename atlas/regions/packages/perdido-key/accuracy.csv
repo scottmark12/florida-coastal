@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Perdido Key,-327.98162841796875,703.7648315429688,-87.4140127212023,30.30039662945451,-87.4140126,30.3003968,0.0222,https://www.openstreetmap.org/node/153522537,"Johnsons Beach locality: representative point on Perdido Key, not a municipal center"

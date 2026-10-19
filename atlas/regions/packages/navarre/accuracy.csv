@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Navarre,-275.4745788574219,713.704345703125,-86.87008208967481,30.401979167505,-86.8700821,30.4019789,0.0297,https://www.openstreetmap.org/node/153547009,Representative OSM town place-label anchor: Navarre

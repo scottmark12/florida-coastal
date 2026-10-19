@@ -1,0 +1,47 @@
+{
+  "region": "navarre",
+  "building_count": 8914,
+  "tree_count": 65887,
+  "region_bytes": 183048,
+  "max_tile_bytes": 394898,
+  "max_anchor_error_m": 0.0297,
+  "max_coast_float32_error_m": 0.03335076671246559,
+  "height_sources": {
+    "assumed-house": 8572,
+    "estimated-nonresidential": 218,
+    "estimated-type-footprint": 67,
+    "levels": 57
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates.",
+    "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+  ],
+  "status": "candidate; visual QA required",
+  "exported_boundary_source_error_m": 40.30979640816119,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+  "building_sources": [
+    {
+      "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+      "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+      "downloads": [
+        {
+          "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032020120/part-00192-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+          "sha256": "985232e185af6acea3be8a64b7b13f3d98f2700c02c57c0376de25925d0e11bf"
+        }
+      ],
+      "release": "2026-02-03",
+      "license": "CDLA Permissive 2.0",
+      "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+      "footprints": 853,
+      "notes": [
+        "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+        "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+      ]
+    }
+  ]
+}

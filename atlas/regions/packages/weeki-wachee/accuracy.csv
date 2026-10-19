@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Weeki Wachee,139.3430633544922,501.8676452636719,-82.57356613282715,28.51564793801298,-82.5735662,28.5156479,0.0078,https://www.openstreetmap.org/node/153907354,Representative OSM town place-label anchor: Weeki Wachee

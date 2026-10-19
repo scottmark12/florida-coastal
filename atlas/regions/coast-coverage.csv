@@ -1,0 +1,32 @@
+region,town_id,name,package,landing_zoom_levels,images,status
+nature-coast,keaton-beach,Keaton Beach,packages/keaton-beach/,2,4,built; physical-phone speed unverified
+nature-coast,steinhatchee,Steinhatchee,packages/steinhatchee/,2,4,built; physical-phone speed unverified
+nature-coast,horseshoe-beach,Horseshoe Beach,packages/horseshoe-beach/,2,4,built; physical-phone speed unverified
+nature-coast,suwannee,Suwannee,packages/suwannee/,2,4,built; physical-phone speed unverified
+nature-coast,cedarkey,Cedar Key,packages/cedarkey/,2,4,built; physical-phone speed unverified
+nature-coast,inglis,Inglis,packages/inglis/,2,4,built; physical-phone speed unverified
+nature-coast,yankeetown,Yankeetown,packages/yankeetown/,2,4,built; physical-phone speed unverified
+nature-coast,crystal-river,Crystal River,packages/crystal-river/,2,4,built; physical-phone speed unverified
+nature-coast,ozello,Ozello,packages/ozello/,2,4,built; physical-phone speed unverified
+nature-coast,homosassa,Homosassa,packages/homosassa/,2,4,built; physical-phone speed unverified
+nature-coast,weeki-wachee,Weeki Wachee,packages/weeki-wachee/,2,4,built; physical-phone speed unverified
+nature-coast,hernando-beach,Hernando Beach,packages/hernando-beach/,2,4,built; physical-phone speed unverified
+nature-coast,aripeka,Aripeka,packages/aripeka/,2,4,built; physical-phone speed unverified
+emerald-coast,perdido-key,Perdido Key,packages/perdido-key/,2,4,built; physical-phone speed unverified
+emerald-coast,pensacola,Pensacola,packages/pensacola/,2,4,built; physical-phone speed unverified
+emerald-coast,gulf-breeze,Gulf Breeze,packages/gulf-breeze/,2,4,built; physical-phone speed unverified
+emerald-coast,pensacola-beach,Pensacola Beach,packages/pensacola-beach/,2,4,built; physical-phone speed unverified
+emerald-coast,navarre,Navarre,packages/navarre/,2,4,built; physical-phone speed unverified
+emerald-coast,navarre-beach,Navarre Beach,packages/navarre-beach/,2,4,built; physical-phone speed unverified
+emerald-coast,mary-esther,Mary Esther,packages/mary-esther/,2,4,built; physical-phone speed unverified
+emerald-coast,fort-walton-beach,Fort Walton Beach,packages/fort-walton-beach/,2,4,built; physical-phone speed unverified
+emerald-coast,okaloosa-island,Okaloosa Island,packages/okaloosa-island/,2,4,built; physical-phone speed unverified
+emerald-coast,shalimar,Shalimar,packages/shalimar/,2,4,built; physical-phone speed unverified
+emerald-coast,valparaiso,Valparaiso,packages/valparaiso/,2,4,built; physical-phone speed unverified
+emerald-coast,destin,Destin,packages/destin/,2,4,built; physical-phone speed unverified
+emerald-coast,niceville,Niceville,packages/niceville/,2,4,built; physical-phone speed unverified
+emerald-coast,miramar-beach,Miramar Beach,packages/miramar-beach/,2,4,built; physical-phone speed unverified
+emerald-coast,30a,30A (Santa Rosa Beach),approved 30A reference,2,4,built; physical-phone speed unverified
+emerald-coast,freeport,Freeport,packages/freeport/,2,4,built; physical-phone speed unverified
+emerald-coast,pcb,Panama City Beach,packages/pcb/,2,4,built; physical-phone speed unverified
+emerald-coast,panama-city,Panama City,packages/panama-city/,2,4,built; physical-phone speed unverified

@@ -16,6 +16,8 @@ def download(query):
 for filename in m['inputs']['osm']:
  path=Path(filename)
  if path.exists():continue
+ if id=='weeki-wachee' and path.name=='coast-extension.json.gz':
+  subprocess.run([sys.executable,'extend_weeki_coast.py'],check=True);continue
  w,s,e,n=m['bounds'];name=path.name.split('.')[0];d=next((d for d in ds if name=='district-'+d['id']),None)
  if d:w,s,e,n=d['lon']-.025,d['lat']-.024,d['lon']+.025,d['lat']+.024
  bbox=f'{s},{w},{n},{e}'
@@ -32,6 +34,7 @@ for r in m['inputs'].get('canopyRasters',[]):
 source=json.load(open(m['inputs']['districts']))
 if isinstance(source,list) and any('lon' not in d for d in source):Path(m['inputs']['districts']).write_text(json.dumps(ds,indent=2))
 subprocess.run([sys.executable,'work/coastal_pipeline/v4/fetch_worldcover.py',id],check=True)
+if id=='miramar-beach':subprocess.run([sys.executable,'fetch_coast_hero_canopy.py'],check=True)
 if id=='tampa-south-shore':subprocess.run([sys.executable,'work/coastal_pipeline/v4/fetch_tampa_canopy_raster.py'],check=True)
 if m['inputs'].get('canopy'):subprocess.run([sys.executable,'work/coastal_pipeline/v4/fetch_forest_cover.py',id],check=True)
 print('Inputs restored. Re-downloaded OSM is current, not a bit-for-bit historical snapshot. Run build_region.py and review accuracy gates.')

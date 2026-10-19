@@ -1,13 +1,66 @@
 {
   "region": "nature-coast",
   "towns": [
+    "keaton-beach",
     "steinhatchee",
+    "horseshoe-beach",
+    "suwannee",
     "cedarkey",
+    "inglis",
+    "yankeetown",
     "crystal-river",
     "ozello",
-    "homosassa"
+    "homosassa",
+    "weeki-wachee",
+    "hernando-beach",
+    "aripeka"
   ],
   "packages": [
+    {
+      "region": "keaton-beach",
+      "building_count": 795,
+      "tree_count": 92309,
+      "region_bytes": 134594,
+      "max_tile_bytes": 131796,
+      "max_anchor_error_m": 0.0119,
+      "max_coast_float32_error_m": 0.0305230732717648,
+      "height_sources": {
+        "assumed-house": 792,
+        "estimated-nonresidential": 3
+      },
+      "max_height_width_ratio": 3.0,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "candidate; visual QA required",
+      "exported_boundary_source_error_m": 70.76323469495155,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021023/part-00185-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "d2ffcf7365449507d4b9054973c6544a8f850fb363c413fd46c9f578b4799a5c"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 793,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ]
+    },
     {
       "region": "steinhatchee",
       "building_count": 3494,
@@ -50,6 +103,97 @@
       ]
     },
     {
+      "region": "horseshoe-beach",
+      "building_count": 402,
+      "tree_count": 56994,
+      "region_bytes": 154683,
+      "max_tile_bytes": 123600,
+      "max_anchor_error_m": 0.0046,
+      "max_coast_float32_error_m": 0.03055645072967479,
+      "height_sources": {
+        "assumed-house": 396,
+        "estimated-nonresidential": 5,
+        "estimated-type-footprint": 1
+      },
+      "max_height_width_ratio": 3.0,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "candidate; visual QA required",
+      "exported_boundary_source_error_m": 5.0716120712191755,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021201/part-00131-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "010d4b09a7f48a5663ae52eeb39b58cd96bf9a6321fd1662fef4cf68c5e41c69"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 404,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ]
+    },
+    {
+      "region": "suwannee",
+      "building_count": 1017,
+      "tree_count": 81361,
+      "region_bytes": 286700,
+      "max_tile_bytes": 251223,
+      "max_anchor_error_m": 0.0263,
+      "max_coast_float32_error_m": 0.03070484324832003,
+      "height_sources": {
+        "assumed-house": 1016,
+        "estimated-nonresidential": 1
+      },
+      "max_height_width_ratio": 1.2000000000000002,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "candidate; visual QA required",
+      "exported_boundary_source_error_m": 6.009192416658776,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021201/part-00131-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "010d4b09a7f48a5663ae52eeb39b58cd96bf9a6321fd1662fef4cf68c5e41c69"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 1173,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ]
+    },
+    {
       "region": "cedarkey",
       "building_count": 866,
       "tree_count": 17338,
@@ -86,6 +230,96 @@
           "notes": [
             "Imagery-derived footprints, not current field survey. OSM overlaps excluded.",
             "Negative IDs are local, never OSM IDs. Heights use unchanged house defaults, not surveyed heights."
+          ]
+        }
+      ]
+    },
+    {
+      "region": "inglis",
+      "building_count": 2261,
+      "tree_count": 210493,
+      "region_bytes": 220110,
+      "max_tile_bytes": 143560,
+      "max_anchor_error_m": 0.0039,
+      "max_coast_float32_error_m": 0.030615598760829213,
+      "height_sources": {
+        "assumed-house": 2230,
+        "estimated-nonresidential": 31
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "candidate; visual QA required",
+      "exported_boundary_source_error_m": 7.5857957412071295,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021210/part-00030-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "d63f7a52e74827577b3bcd0687ca4d3e9b32cd292f7dfa43a15402314b023459"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 2141,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ]
+    },
+    {
+      "region": "yankeetown",
+      "building_count": 1453,
+      "tree_count": 167534,
+      "region_bytes": 248096,
+      "max_tile_bytes": 145188,
+      "max_anchor_error_m": 0.0192,
+      "max_coast_float32_error_m": 0.030725949590429395,
+      "height_sources": {
+        "assumed-house": 1430,
+        "estimated-nonresidential": 23
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "candidate; visual QA required",
+      "exported_boundary_source_error_m": 43.02614322707158,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021210/part-00030-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "d63f7a52e74827577b3bcd0687ca4d3e9b32cd292f7dfa43a15402314b023459"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 1385,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
           ]
         }
       ]
@@ -210,13 +444,155 @@
           ]
         }
       ]
+    },
+    {
+      "region": "weeki-wachee",
+      "building_count": 15144,
+      "tree_count": 125382,
+      "region_bytes": 404996,
+      "max_tile_bytes": 779345,
+      "max_anchor_error_m": 0.0078,
+      "max_coast_float32_error_m": 0.016854915145232158,
+      "height_sources": {
+        "assumed-house": 14787,
+        "estimated-nonresidential": 286,
+        "estimated-type-footprint": 3,
+        "height": 6,
+        "levels": 62
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "candidate; visual QA required",
+      "exported_boundary_source_error_m": 28.347856679067863,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021212/part-00040-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "c69cd5f4fec5cc2496d20f0477525fbc26e9b7b9b0dccc7acb198223b00bad97"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 13413,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ]
+    },
+    {
+      "region": "hernando-beach",
+      "building_count": 4471,
+      "tree_count": 74631,
+      "region_bytes": 183776,
+      "max_tile_bytes": 482660,
+      "max_anchor_error_m": 0.0056,
+      "max_coast_float32_error_m": 0.017019437206288887,
+      "height_sources": {
+        "assumed-house": 4378,
+        "estimated-nonresidential": 90,
+        "estimated-type-footprint": 2,
+        "height": 1
+      },
+      "max_height_width_ratio": 3.0,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "candidate; visual QA required",
+      "exported_boundary_source_error_m": 5.850455467601815,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021212/part-00040-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "c69cd5f4fec5cc2496d20f0477525fbc26e9b7b9b0dccc7acb198223b00bad97"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 4230,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ]
+    },
+    {
+      "region": "aripeka",
+      "building_count": 4019,
+      "tree_count": 109822,
+      "region_bytes": 175846,
+      "max_tile_bytes": 464753,
+      "max_anchor_error_m": 0.0112,
+      "max_coast_float32_error_m": 0.017019437206288887,
+      "height_sources": {
+        "assumed-house": 3927,
+        "estimated-nonresidential": 90,
+        "estimated-type-footprint": 1,
+        "levels": 1
+      },
+      "max_height_width_ratio": 3.0,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "candidate; visual QA required",
+      "exported_boundary_source_error_m": 5.016564523059511,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021212/part-00040-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "c69cd5f4fec5cc2496d20f0477525fbc26e9b7b9b0dccc7acb198223b00bad97"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 3815,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ]
     }
   ],
   "pipeline_changed": false,
   "phone_hardware_verified": false,
   "notes": [
-    "Alignment is fidelity to mapped source, not independent survey accuracy.",
-    "Supplemental imagery-derived building footprints retain separate source metadata.",
-    "Boat occupancy is illustrative, constrained to mapped docks and marina frontage."
+    "Source-alignment checks are not an independent ground survey.",
+    "Prices retain metric and period; some small communities have thin or older published medians.",
+    "Facade palettes, canopy crowns and boat occupancy are illustrated; source geometries retained."
   ]
 }

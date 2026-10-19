@@ -1,0 +1,28 @@
+[
+  {
+    "town": "keaton-beach",
+    "id": "keaton-beach-center",
+    "name": "Keaton Beach",
+    "kind": "beach",
+    "description": "Raised fishing cottages, canals, a public boat ramp and broad salt marsh.",
+    "style": "keaton-beach",
+    "lon": -83.5938806,
+    "lat": 29.8252983,
+    "x": 39.19418146986799,
+    "y": 646.5516239412847,
+    "positionSource": "https://www.openstreetmap.org/node/154124453",
+    "centerMeaning": "Representative OSM town place-label anchor: Keaton Beach",
+    "priceRange": "$144,500 published median asking price (6 residential listings) \u00b7 October 9, 2026",
+    "priceSource": "https://movewithmomentum.com/homes-for-sale/keaton-beach-fl/",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 144500,
+      "metric": "published median asking price (6 residential listings)",
+      "period": "October 9, 2026",
+      "checked": "2026-10-19",
+      "source": "https://movewithmomentum.com/homes-for-sale/keaton-beach-fl/"
+    },
+    "source": "https://www.naturalnorthflorida.com/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

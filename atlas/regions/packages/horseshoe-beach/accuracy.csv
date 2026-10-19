@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Horseshoe Beach,69.05219268798828,604.0344848632812,-83.28705250333064,29.441134341532795,-83.2870525,29.4411343,0.0046,https://www.openstreetmap.org/node/154194756,Representative OSM town place-label anchor: Horseshoe Beach

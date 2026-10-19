@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Freeport,-204.84449768066406,722.9566650390625,-86.13605176162041,30.49825174182999,-86.1360517,30.4982516,0.0168,https://www.openstreetmap.org/node/153539288,Representative OSM town place-label anchor: Freeport

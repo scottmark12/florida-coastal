@@ -1,0 +1,51 @@
+{
+  "region": {
+    "id": "emerald-coast",
+    "coast": "panhandle",
+    "name": "Mary Esther",
+    "map": "Emerald Coast",
+    "at": [
+      30.3,
+      -86.55
+    ],
+    "side": "S",
+    "img": "img/destin-beach.jpg",
+    "text": "The western Panhandle runs from historic Pensacola east to Panama City Beach. In between are Destin's harbor and the small beach towns of 30A, all on sugar white sand and clear green water.",
+    "towns": [
+      "mary-esther"
+    ],
+    "center": [
+      -231.63663375567083,
+      702.5863824581506
+    ]
+  },
+  "towns": [
+    {
+      "id": "mary-esther",
+      "name": "Mary Esther",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.666,
+      "lat": 30.41,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Low residential streets beneath coastal tree cover beside Santa Rosa Sound.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.openstreetmap.org/",
+      "source_bounds": [
+        -86.711,
+        30.375,
+        -86.621,
+        30.445
+      ]
+    }
+  ],
+  "bounds": [
+    -86.731,
+    30.355,
+    -86.601,
+    30.465
+  ]
+}

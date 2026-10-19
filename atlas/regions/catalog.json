@@ -55,7 +55,7 @@
       "area_id": "emerald-coast",
       "area_name": "Pensacola and the Emerald Coast",
       "source_url": "https://www.floridacoastal.co/towns/30a.html",
-      "nearest_town_km": 33.67667329206274
+      "nearest_town_km": 14.295911081596843
     },
     {
       "id": "destin",
@@ -94,7 +94,7 @@
       "area_id": "emerald-coast",
       "area_name": "Pensacola and the Emerald Coast",
       "source_url": "https://www.floridacoastal.co/towns/destin.html",
-      "nearest_town_km": 33.67667329206274
+      "nearest_town_km": 9.795274435806263
     },
     {
       "id": "pcb",
@@ -218,7 +218,7 @@
       "area_id": "nature-coast",
       "area_name": "The Nature Coast and Big Bend",
       "source_url": "https://www.floridacoastal.co/towns/cedarkey.html",
-      "nearest_town_km": 49.2187953583521
+      "nearest_town_km": 23.722720659727173
     },
     {
       "id": "dunedin",
@@ -1351,7 +1351,7 @@
       "area_id": "emerald-coast",
       "area_name": "Pensacola and the Emerald Coast",
       "source_url": "https://www.floridacoastal.co/towns/pensacola.html",
-      "nearest_town_km": 11.987799688158464
+      "nearest_town_km": 7.482551235516551
     },
     {
       "id": "pensacola-beach",
@@ -1390,7 +1390,7 @@
       "area_id": "emerald-coast",
       "area_name": "Pensacola and the Emerald Coast",
       "source_url": "https://www.floridacoastal.co/towns/pensacola-beach.html",
-      "nearest_town_km": 11.987799688158464
+      "nearest_town_km": 4.718939588204549
     },
     {
       "id": "port-st-joe",
@@ -1585,7 +1585,7 @@
       "area_id": "nature-coast",
       "area_name": "The Nature Coast and Big Bend",
       "source_url": "https://www.floridacoastal.co/towns/steinhatchee.html",
-      "nearest_town_km": 68.45490590258193
+      "nearest_town_km": 26.172048888063294
     },
     {
       "id": "apollo-beach",
@@ -4286,6 +4286,526 @@
       "x": -136.82426629489638,
       "y": 660.9496558815367,
       "nearest_town_km": 18
+    },
+    {
+      "id": "perdido-key",
+      "name": "Perdido Key",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -87.4140126,
+      "lat": 30.3003968,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Quiet barrier-island beaches, white condos and protected dunes.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.visitpensacola.com/beaches/perdido-key/",
+      "source_bounds": [
+        -87.47,
+        30.265,
+        -87.38,
+        30.335
+      ],
+      "x": -327.98161625315595,
+      "y": 703.7648501418054,
+      "tier": 2,
+      "price": "$585,000 median listing price \u00b7 October 2026",
+      "nearest_town_km": 23.174759012763143
+    },
+    {
+      "id": "gulf-breeze",
+      "name": "Gulf Breeze",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -87.18058243992614,
+      "lat": 30.361390028565907,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Leafy bayside neighborhoods between Pensacola Bay and Santa Rosa Sound.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.getrelaxing.com/",
+      "source_bounds": [
+        -87.208,
+        30.322,
+        -87.118,
+        30.392
+      ],
+      "x": -305.3867331422099,
+      "y": 709.9323286795465,
+      "tier": 2,
+      "price": "$482,000 median listing price \u00b7 October 2026",
+      "nearest_town_km": 4.718939588204549
+    },
+    {
+      "id": "navarre",
+      "name": "Navarre",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.8700821,
+      "lat": 30.4019789,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Soundside neighborhoods and boating beside the bridge to Navarre Beach.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.getrelaxing.com/",
+      "source_bounds": [
+        -86.908,
+        30.367,
+        -86.818,
+        30.437
+      ],
+      "x": -275.4745805391776,
+      "y": 713.7043160464041,
+      "tier": 2,
+      "price": "$540,950 median listing price \u00b7 October 2026",
+      "nearest_town_km": 2.544251190887006
+    },
+    {
+      "id": "navarre-beach",
+      "name": "Navarre Beach",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.8555410285035,
+      "lat": 30.382812465795578,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "White sand, a long Gulf fishing pier, pastel beach homes and condo towers.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.getrelaxing.com/",
+      "source_bounds": [
+        -86.911,
+        30.345,
+        -86.821,
+        30.415
+      ],
+      "x": -274.1284100940407,
+      "y": 711.5453720325469,
+      "tier": 2,
+      "price": "$899,000 median listing price \u00b7 October 2026",
+      "nearest_town_km": 2.544251190887006
+    },
+    {
+      "id": "fort-walton-beach",
+      "name": "Fort Walton Beach",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.618842,
+      "lat": 30.4057552,
+      "vibes": [
+        "walk"
+      ],
+      "blurb": "A walkable low downtown on Santa Rosa Sound with waterfront parks and Brooks Bridge.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.destinfwb.com/",
+      "source_bounds": [
+        -86.663,
+        30.37,
+        -86.573,
+        30.44
+      ],
+      "x": -251.35509645732105,
+      "y": 713.5866274799567,
+      "tier": 2,
+      "price": "$385,990 median listing price \u00b7 October 2026",
+      "nearest_town_km": 1.4131750069998448
+    },
+    {
+      "id": "okaloosa-island",
+      "name": "Okaloosa Island",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.60737086072753,
+      "lat": 30.397773812772755,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Beachfront resort blocks, white sand and the fishing pier across the sound from downtown.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.destinfwb.com/",
+      "source_bounds": [
+        -86.639,
+        30.361,
+        -86.54899999999999,
+        30.431
+      ],
+      "x": -250.2729944714731,
+      "y": 712.6777166522993,
+      "tier": 2,
+      "price": "$431,500 median listing price \u00b7 October 2026",
+      "nearest_town_km": 1.4131750069998448
+    },
+    {
+      "id": "mary-esther",
+      "name": "Mary Esther",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.6630098,
+      "lat": 30.4099215,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Low residential streets beneath coastal tree cover beside Santa Rosa Sound.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.destinfwb.com/",
+      "source_bounds": [
+        -86.711,
+        30.375,
+        -86.621,
+        30.445
+      ],
+      "x": -255.5836610757675,
+      "y": 714.1396831985345,
+      "tier": 2,
+      "price": "$328,250 median listing price \u00b7 October 2026",
+      "nearest_town_km": 4.264578450471837
+    },
+    {
+      "id": "shalimar",
+      "name": "Shalimar",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.5791189,
+      "lat": 30.4457544,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Small bayou neighborhoods with marinas, sheltered water and leafy streets.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.destinfwb.com/",
+      "source_bounds": [
+        -86.626,
+        30.411,
+        -86.536,
+        30.481
+      ],
+      "x": -247.45021809757043,
+      "y": 717.9443610960806,
+      "tier": 2,
+      "price": "$430,900 median listing price \u00b7 October 2026",
+      "nearest_town_km": 5.851317567312883
+    },
+    {
+      "id": "niceville",
+      "name": "Niceville",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.482172,
+      "lat": 30.5168639,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Boggy Bayou, working docks and oak-shaded neighborhoods on Choctawhatchee Bay.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.destinfwb.com/",
+      "source_bounds": [
+        -86.528,
+        30.480999999999998,
+        -86.438,
+        30.551
+      ],
+      "x": -237.9912217571873,
+      "y": 725.6432212352096,
+      "tier": 2,
+      "price": "$499,900 median listing price \u00b7 October 2026",
+      "nearest_town_km": 2.177276484571251
+    },
+    {
+      "id": "valparaiso",
+      "name": "Valparaiso",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.5027282,
+      "lat": 30.5085309,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Low historic homes and waterfront parks along Boggy Bayou.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.destinfwb.com/",
+      "source_bounds": [
+        -86.553,
+        30.472,
+        -86.463,
+        30.542
+      ],
+      "x": -239.98065200832085,
+      "y": 724.7585178012038,
+      "tier": 2,
+      "price": "$489,450 median listing price \u00b7 October 2026",
+      "nearest_town_km": 2.177276484571251
+    },
+    {
+      "id": "miramar-beach",
+      "name": "Miramar Beach",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.3616979,
+      "lat": 30.377985,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Gulf condos and pastel beach neighborhoods alongside the white-sand shore.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.visitsouthwalton.com/",
+      "source_bounds": [
+        -86.402,
+        30.34,
+        -86.312,
+        30.41
+      ],
+      "x": -226.73674285486504,
+      "y": 710.0068085234275,
+      "tier": 2,
+      "price": "$660,500 median listing price \u00b7 October 2026",
+      "nearest_town_km": 13.34465821732814
+    },
+    {
+      "id": "freeport",
+      "name": "Freeport",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.1360517,
+      "lat": 30.4982516,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "A small bayhead town of creeks, boat ramps and wooded neighborhoods.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.visitsouthwalton.com/",
+      "source_bounds": [
+        -86.181,
+        30.463,
+        -86.091,
+        30.533
+      ],
+      "x": -204.84449204456328,
+      "y": 722.9566491997289,
+      "tier": 2,
+      "price": "$447,688 median listing price \u00b7 October 2026",
+      "nearest_town_km": 14.295911081596843
+    },
+    {
+      "id": "keaton-beach",
+      "name": "Keaton Beach",
+      "region": "Gulf Coast \u00b7 Nature Coast",
+      "coast": "gulf",
+      "lon": -83.5938806,
+      "lat": 29.8252983,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Raised fishing cottages, canals, a public boat ramp and broad salt marsh.",
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://www.naturalnorthflorida.com/",
+      "source_bounds": [
+        -83.641,
+        29.788,
+        -83.551,
+        29.858
+      ],
+      "x": 39.19418146986799,
+      "y": 646.5516239412847,
+      "tier": 2,
+      "price": "$144,500 published median asking price (6 residential listings) \u00b7 October 9, 2026",
+      "nearest_town_km": 26.172048888063294
+    },
+    {
+      "id": "horseshoe-beach",
+      "name": "Horseshoe Beach",
+      "region": "Gulf Coast \u00b7 Nature Coast",
+      "coast": "gulf",
+      "lon": -83.2870525,
+      "lat": 29.4411343,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "A working Gulf fishing village of stilt homes, canals and boat basins, rather than a sandy beach.",
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://www.naturalnorthflorida.com/",
+      "source_bounds": [
+        -83.33200000000001,
+        29.406,
+        -83.242,
+        29.476
+      ],
+      "x": 69.05219303723398,
+      "y": 604.0344802536509,
+      "tier": 2,
+      "price": "$389,000 median listing price \u00b7 October 2026",
+      "nearest_town_km": 18.62320275177173
+    },
+    {
+      "id": "suwannee",
+      "name": "Suwannee",
+      "region": "Gulf Coast \u00b7 Nature Coast",
+      "coast": "gulf",
+      "lon": -83.1442945,
+      "lat": 29.32885,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Fishing camps and canal homes where the Suwannee River meets marsh islands and the Gulf.",
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://www.naturalnorthflorida.com/",
+      "source_bounds": [
+        -83.193,
+        29.294,
+        -83.103,
+        29.364
+      ],
+      "x": 82.9652633510793,
+      "y": 591.6550555830294,
+      "tier": 2,
+      "price": "$349,450 median listing price \u00b7 October 2026",
+      "nearest_town_km": 18.62320275177173
+    },
+    {
+      "id": "yankeetown",
+      "name": "Yankeetown",
+      "region": "Gulf Coast \u00b7 Nature Coast",
+      "coast": "gulf",
+      "lon": -82.7159396,
+      "lat": 29.0299729,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Painted cottages beneath live oaks along the Withlacoochee River.",
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://inglisyankeetownchamber.com/",
+      "source_bounds": [
+        -82.76,
+        28.995,
+        -82.67,
+        29.065
+      ],
+      "x": 124.8409109727234,
+      "y": 558.8288382682148,
+      "tier": 2,
+      "price": "$289,450 median listing price \u00b7 October 2026",
+      "nearest_town_km": 4.591417511240673
+    },
+    {
+      "id": "inglis",
+      "name": "Inglis",
+      "region": "Gulf Coast \u00b7 Nature Coast",
+      "coast": "gulf",
+      "lon": -82.6687161,
+      "lat": 29.0302514,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "A low river town with wooded lots and access to the Withlacoochee and Gulf.",
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://inglisyankeetownchamber.com/",
+      "source_bounds": [
+        -82.714,
+        28.996,
+        -82.624,
+        29.066
+      ],
+      "x": 129.43163822148992,
+      "y": 558.908450390157,
+      "tier": 2,
+      "price": "$302,000 median listing price \u00b7 October 2026",
+      "nearest_town_km": 4.591417511240673
+    },
+    {
+      "id": "hernando-beach",
+      "name": "Hernando Beach",
+      "region": "Gulf Coast \u00b7 Nature Coast",
+      "coast": "gulf",
+      "lon": -82.6592677,
+      "lat": 28.469443,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Canal neighborhoods, marinas and waterfront restaurants beside open Gulf marsh.",
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://floridasadventurecoast.com/",
+      "source_bounds": [
+        -82.702,
+        28.435,
+        -82.612,
+        28.505
+      ],
+      "x": 131.0273230645047,
+      "y": 496.64267097381446,
+      "tier": 2,
+      "price": "$520,000 median listing price \u00b7 September 2026",
+      "nearest_town_km": 4.21681352853744
+    },
+    {
+      "id": "weeki-wachee",
+      "name": "Weeki Wachee",
+      "region": "Gulf Coast \u00b7 Nature Coast",
+      "coast": "gulf",
+      "lon": -82.5735662,
+      "lat": 28.5156479,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Spring-fed river, wooded neighborhoods and small waterfront homes along the river toward the Gulf.",
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://floridasadventurecoast.com/",
+      "source_bounds": [
+        -82.64,
+        28.48,
+        -82.52799999999999,
+        28.55
+      ],
+      "x": 139.34305684174785,
+      "y": 501.8676409664791,
+      "tier": 2,
+      "price": "$387,187 median listing price \u00b7 October 2026",
+      "nearest_town_km": 9.820984659301134
+    },
+    {
+      "id": "aripeka",
+      "name": "Aripeka",
+      "region": "Gulf Coast \u00b7 Nature Coast",
+      "coast": "gulf",
+      "lon": -82.664536,
+      "lat": 28.4317572,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "A small fishing settlement of old cottages, creek bridges and salt marsh.",
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://floridasadventurecoast.com/",
+      "source_bounds": [
+        -82.71000000000001,
+        28.398,
+        -82.62,
+        28.468
+      ],
+      "x": 130.55780620079446,
+      "y": 492.45207790729654,
+      "tier": 2,
+      "price": "$430,000 published median sale price (three-month window; thin market) \u00b7 three months ending June 2026",
+      "nearest_town_km": 4.21681352853744
     }
   ],
   "regions": [
@@ -4302,10 +4822,22 @@
       "img": "img/destin-beach.jpg",
       "text": "The western Panhandle runs from historic Pensacola east to Panama City Beach. In between are Destin's harbor and the small beach towns of 30A, all on sugar white sand and clear green water.",
       "towns": [
+        "perdido-key",
         "pensacola",
+        "gulf-breeze",
         "pensacola-beach",
+        "navarre",
+        "navarre-beach",
+        "mary-esther",
+        "fort-walton-beach",
+        "okaloosa-island",
+        "shalimar",
+        "valparaiso",
         "destin",
+        "niceville",
+        "miramar-beach",
         "30a",
+        "freeport",
         "pcb",
         "panama-city"
       ],
@@ -4353,11 +4885,19 @@
       "img": "img/spring-nature-coast.jpg",
       "text": "Where the Panhandle bends into the peninsula, the coast turns to marsh and there is very little development. Life here is springs, rivers, scalloping and fishing, in towns like Cedar Key, Crystal River and Steinhatchee.",
       "towns": [
+        "keaton-beach",
         "steinhatchee",
+        "horseshoe-beach",
+        "suwannee",
         "cedarkey",
+        "inglis",
+        "yankeetown",
         "crystal-river",
         "ozello",
-        "homosassa"
+        "homosassa",
+        "weeki-wachee",
+        "hernando-beach",
+        "aripeka"
       ],
       "center": [
         111.67831447013353,

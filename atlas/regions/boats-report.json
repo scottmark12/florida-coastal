@@ -2,6 +2,146 @@
   "description": "Illustrated marina occupancy from mapped dock geometry; not real-time boats.",
   "towns": [
     {
+      "town": "perdido-key",
+      "boats": 794,
+      "mapped_docks": 96,
+      "placement_sources": 96,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "gulf-breeze",
+      "boats": 648,
+      "mapped_docks": 47,
+      "placement_sources": 48,
+      "mapped_marina_areas": 5
+    },
+    {
+      "town": "navarre",
+      "boats": 304,
+      "mapped_docks": 27,
+      "placement_sources": 27,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "navarre-beach",
+      "boats": 242,
+      "mapped_docks": 21,
+      "placement_sources": 21,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "fort-walton-beach",
+      "boats": 238,
+      "mapped_docks": 27,
+      "placement_sources": 30,
+      "mapped_marina_areas": 8
+    },
+    {
+      "town": "okaloosa-island",
+      "boats": 238,
+      "mapped_docks": 27,
+      "placement_sources": 30,
+      "mapped_marina_areas": 8
+    },
+    {
+      "town": "mary-esther",
+      "boats": 185,
+      "mapped_docks": 23,
+      "placement_sources": 24,
+      "mapped_marina_areas": 4
+    },
+    {
+      "town": "shalimar",
+      "boats": 249,
+      "mapped_docks": 31,
+      "placement_sources": 34,
+      "mapped_marina_areas": 14
+    },
+    {
+      "town": "niceville",
+      "boats": 269,
+      "mapped_docks": 53,
+      "placement_sources": 54,
+      "mapped_marina_areas": 7
+    },
+    {
+      "town": "valparaiso",
+      "boats": 104,
+      "mapped_docks": 15,
+      "placement_sources": 16,
+      "mapped_marina_areas": 9
+    },
+    {
+      "town": "miramar-beach",
+      "boats": 104,
+      "mapped_docks": 1,
+      "placement_sources": 2,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "freeport",
+      "boats": 0,
+      "mapped_docks": 0,
+      "placement_sources": 0,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "keaton-beach",
+      "boats": 22,
+      "mapped_docks": 4,
+      "placement_sources": 4,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "horseshoe-beach",
+      "boats": 0,
+      "mapped_docks": 0,
+      "placement_sources": 0,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "suwannee",
+      "boats": 0,
+      "mapped_docks": 0,
+      "placement_sources": 0,
+      "mapped_marina_areas": 4
+    },
+    {
+      "town": "yankeetown",
+      "boats": 5,
+      "mapped_docks": 2,
+      "placement_sources": 2,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "inglis",
+      "boats": 9,
+      "mapped_docks": 4,
+      "placement_sources": 4,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "hernando-beach",
+      "boats": 0,
+      "mapped_docks": 0,
+      "placement_sources": 0,
+      "mapped_marina_areas": 3
+    },
+    {
+      "town": "weeki-wachee",
+      "boats": 13,
+      "mapped_docks": 4,
+      "placement_sources": 4,
+      "mapped_marina_areas": 3
+    },
+    {
+      "town": "aripeka",
+      "boats": 0,
+      "mapped_docks": 0,
+      "placement_sources": 0,
+      "mapped_marina_areas": 0
+    },
+    {
       "town": "cedarkey",
       "boats": 211,
       "mapped_docks": 38,
@@ -182,5 +322,5 @@
       "mapped_docks": 0
     }
   ],
-  "total_boats": 7989
+  "total_boats": 11413
 }

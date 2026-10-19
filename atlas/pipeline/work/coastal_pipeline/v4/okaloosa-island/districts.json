@@ -1,0 +1,28 @@
+[
+  {
+    "town": "okaloosa-island",
+    "id": "okaloosa-island-center",
+    "name": "Okaloosa Island",
+    "kind": "beach",
+    "description": "Beachfront resort blocks, white sand and the fishing pier across the sound from downtown.",
+    "style": "okaloosa-island",
+    "lon": -86.60737086072753,
+    "lat": 30.397773812772755,
+    "x": -250.2729944714731,
+    "y": 712.6777166522993,
+    "positionSource": "https://www.openstreetmap.org/way/1456497356",
+    "centerMeaning": "Okaloosa Island Boat Basin: representative waterfront reference, not an island centroid",
+    "priceRange": "$431,500 median listing price \u00b7 October 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/okaloosa-county/okaloosa-island",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 431500,
+      "metric": "median listing price",
+      "period": "October 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/okaloosa-county/okaloosa-island"
+    },
+    "source": "https://www.destinfwb.com/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

@@ -1,0 +1,28 @@
+[
+  {
+    "town": "valparaiso",
+    "id": "valparaiso-center",
+    "name": "Valparaiso",
+    "kind": "beach",
+    "description": "Low historic homes and waterfront parks along Boggy Bayou.",
+    "style": "valparaiso",
+    "lon": -86.5027282,
+    "lat": 30.5085309,
+    "x": -239.98065200832085,
+    "y": 724.7585178012038,
+    "positionSource": "https://www.openstreetmap.org/node/153736585",
+    "centerMeaning": "Representative OSM town place-label anchor: Valparaiso",
+    "priceRange": "$489,450 median listing price \u00b7 October 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/okaloosa-county/valparaiso",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 489450,
+      "metric": "median listing price",
+      "period": "October 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/okaloosa-county/valparaiso"
+    },
+    "source": "https://www.destinfwb.com/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Keaton Beach,39.194183349609375,646.5516357421875,-83.59388058012007,29.82529840624202,-83.5938806,29.8252983,0.0119,https://www.openstreetmap.org/node/154124453,Representative OSM town place-label anchor: Keaton Beach

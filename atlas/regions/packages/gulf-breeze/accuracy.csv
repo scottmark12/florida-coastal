@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Gulf Breeze,-305.38671875,709.9323120117188,-87.18058228562226,30.361389881777136,-87.18058243992614,30.361390028565907,0.022,https://www.openstreetmap.org/way/835845728,"Woodland Park: representative neighborhood reference inside Gulf Breeze, not a municipal center"

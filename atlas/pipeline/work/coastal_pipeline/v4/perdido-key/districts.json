@@ -1,0 +1,28 @@
+[
+  {
+    "town": "perdido-key",
+    "id": "perdido-key-center",
+    "name": "Perdido Key",
+    "kind": "beach",
+    "description": "Quiet barrier-island beaches, white condos and protected dunes.",
+    "style": "perdido-key",
+    "lon": -87.4140126,
+    "lat": 30.3003968,
+    "x": -327.98161625315595,
+    "y": 703.7648501418054,
+    "positionSource": "https://www.openstreetmap.org/node/153522537",
+    "centerMeaning": "Johnsons Beach locality: representative point on Perdido Key, not a municipal center",
+    "priceRange": "$585,000 median listing price \u00b7 October 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pensacola/perdido-key",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 585000,
+      "metric": "median listing price",
+      "period": "October 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/pensacola/perdido-key"
+    },
+    "source": "https://www.visitpensacola.com/beaches/perdido-key/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

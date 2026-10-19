@@ -128,5 +128,205 @@
     "desktopSpan": 2.2,
     "phoneSpan": 1.1,
     "reason": "The mapped riverfront docks frame Steinhatchee\u2019s fishing neighborhoods, boats and working river."
+  },
+  "perdido-key": {
+    "district": "perdido-key-center",
+    "x": -327.98161625315595,
+    "y": 703.7648501418054,
+    "lon": -87.4140126,
+    "lat": 30.3003968,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "The Johnsons Beach reference frames Perdido Key\u2019s Gulf shore and neighboring condo and dune landscape."
+  },
+  "gulf-breeze": {
+    "district": "gulf-breeze-center",
+    "x": -304.82969044462965,
+    "y": 709.0356382773564,
+    "lon": -87.17454307834623,
+    "lat": 30.35344255,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Shoreline Park frames the wooded Gulf Breeze peninsula and Pensacola Bay waterfront."
+  },
+  "navarre": {
+    "district": "navarre-center",
+    "x": -274.9336851699442,
+    "y": 713.5270752632855,
+    "lon": -86.86440582563611,
+    "lat": 30.4004956,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Navarre Park frames the soundside town and the causeway to the beach."
+  },
+  "navarre-beach": {
+    "district": "navarre-beach-center",
+    "x": -274.9112888501443,
+    "y": 711.1521204472629,
+    "lon": -86.86359808340126,
+    "lat": 30.379106471572403,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "The Gulf fishing pier frames Navarre Beach\u2019s white sand, towers and low beach homes."
+  },
+  "fort-walton-beach": {
+    "district": "fort-walton-beach-center",
+    "x": -250.2457191945155,
+    "y": 713.2130669576186,
+    "lon": -86.60720469123035,
+    "lat": 30.402601750000002,
+    "desktopSpan": 2.4,
+    "phoneSpan": 1.2,
+    "reason": "The Landing frames downtown Fort Walton Beach, Santa Rosa Sound and Brooks Bridge."
+  },
+  "okaloosa-island": {
+    "district": "okaloosa-island-center",
+    "x": -248.90091837445502,
+    "y": 712.1135080966595,
+    "lon": -86.59295707056104,
+    "lat": 30.392951775855327,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "The fishing pier frames the island\u2019s Gulf resort strip and the sound behind it."
+  },
+  "mary-esther": {
+    "district": "mary-esther-center",
+    "x": -255.89816948533465,
+    "y": 714.3082323812506,
+    "lon": -86.66632371165201,
+    "lat": 30.41137865,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Oak Tree Nature Park frames Mary Esther\u2019s low wooded neighborhoods beside Santa Rosa Sound."
+  },
+  "shalimar": {
+    "district": "shalimar-center",
+    "x": -247.08713089050204,
+    "y": 716.5588164978197,
+    "lon": -86.5750341076087,
+    "lat": 30.4333406,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Meigs Park frames Shalimar\u2019s sheltered bayou, boat ramp and neighboring residential streets."
+  },
+  "niceville": {
+    "district": "niceville-center",
+    "x": -238.58153302486048,
+    "y": 725.8921204418643,
+    "lon": -86.48837946450773,
+    "lat": 30.51899915,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Niceville Landing frames the working waterfront on Boggy Bayou and the old town behind it."
+  },
+  "valparaiso": {
+    "district": "valparaiso-center",
+    "x": -238.60896414629053,
+    "y": 724.6971562932195,
+    "lon": -86.48841402150202,
+    "lat": 30.508228199999998,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Lincoln Park frames the bayou waterfront and Valparaiso\u2019s tree-covered historic streets."
+  },
+  "miramar-beach": {
+    "district": "miramar-beach-center",
+    "x": -229.21578062657323,
+    "y": 710.0778394494215,
+    "lon": -86.38752755,
+    "lat": 30.37819479,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "The county\u2019s Gulf beach access frames Miramar\u2019s white-sand shore, beach homes and beachfront buildings."
+  },
+  "freeport": {
+    "district": "freeport-center",
+    "x": -205.0120305224914,
+    "y": 723.2366998889893,
+    "lon": -86.13784900935144,
+    "lat": 30.50074865,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "The public park anchors Freeport\u2019s low town center, wooded neighborhoods and nearby creek network."
+  },
+  "keaton-beach": {
+    "district": "keaton-beach-center",
+    "x": 39.15604051951193,
+    "y": 645.8421461254557,
+    "lon": -83.59429998905289,
+    "lat": 29.81890875,
+    "desktopSpan": 1.6,
+    "phoneSpan": 0.8,
+    "reason": "Hodges Park frames Keaton Beach\u2019s Gulf edge, fishing cottages, marsh and boat access."
+  },
+  "horseshoe-beach": {
+    "district": "horseshoe-beach-center",
+    "x": 68.45093493437354,
+    "y": 603.8871271760905,
+    "lon": -83.29326892980195,
+    "lat": 29.4398384,
+    "desktopSpan": 1.6,
+    "phoneSpan": 0.8,
+    "reason": "The waterfront park frames Horseshoe Beach\u2019s low fishing village, canals and Gulf marsh."
+  },
+  "suwannee": {
+    "district": "suwannee-center",
+    "x": 82.950284295743,
+    "y": 591.4718333194324,
+    "lon": -83.1444621,
+    "lat": 29.3272009,
+    "desktopSpan": 1.8,
+    "phoneSpan": 0.9,
+    "reason": "The mapped riverfront bridge frames Suwannee\u2019s canal homes, docks and river-mouth landscape."
+  },
+  "yankeetown": {
+    "district": "yankeetown-center",
+    "x": 124.8409109727234,
+    "y": 558.8288382682148,
+    "lon": -82.7159396,
+    "lat": 29.0299729,
+    "desktopSpan": 1.8,
+    "phoneSpan": 0.9,
+    "reason": "The mapped riverfront center frames Yankeetown\u2019s cottage streets and the Withlacoochee River."
+  },
+  "inglis": {
+    "district": "inglis-center",
+    "x": 129.39577347575997,
+    "y": 558.3315418693523,
+    "lon": -82.669149,
+    "lat": 29.02506005,
+    "desktopSpan": 1.8,
+    "phoneSpan": 0.9,
+    "reason": "The river crossing frames Inglis\u2019s low town streets and the Withlacoochee River."
+  },
+  "hernando-beach": {
+    "district": "hernando-beach-center",
+    "x": 131.25457997854875,
+    "y": 499.6395296388083,
+    "lon": -82.65660843072605,
+    "lat": 28.496404176956737,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Gulf Coast Drive frames Hernando Beach\u2019s canal peninsula, waterfront homes and nearby Gulf marsh."
+  },
+  "weeki-wachee": {
+    "district": "weeki-wachee-center",
+    "x": 139.21750358334276,
+    "y": 502.0302632801172,
+    "lon": -82.57483211637238,
+    "lat": 28.517125200000002,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "The springs park frames the source of the Weeki Wachee River, its visitor buildings and wooded setting."
+  },
+  "aripeka": {
+    "district": "aripeka-center",
+    "x": 130.3400213373642,
+    "y": 492.58389927183316,
+    "lon": -82.66674895,
+    "lat": 28.432965324999998,
+    "desktopSpan": 1.6,
+    "phoneSpan": 0.8,
+    "reason": "The creek bridge frames Aripeka\u2019s old cottages and tidal marsh channels."
   }
 }
