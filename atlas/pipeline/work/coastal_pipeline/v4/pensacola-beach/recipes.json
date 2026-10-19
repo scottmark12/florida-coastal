@@ -2,18 +2,27 @@
   "recipes": {
     "pensacola-beach": {
       "walls": [
-        "#fff9e9",
-        "#d2e8e2",
-        "#d4e4e9",
-        "#f3e4c4"
+        "#fffdf4",
+        "#fffdf4",
+        "#fffdf4",
+        "#d5ece6",
+        "#f0d4d0",
+        "#f6e8b9",
+        "#d8e8ef"
       ],
       "roofs": [
-        "#c2d4d2",
-        "#b9c3c2"
+        "#d8e0db",
+        "#b8cccd",
+        "#d1d9d7"
       ],
       "roof": "flat",
       "detail": "balconies",
-      "source": "https://visitpensacolabeach.com/pensacola-beach-icons-blog/"
+      "source": "https://visitpensacolabeach.com/pensacola-beach-icons-blog/",
+      "trim": [
+        "#fffdf5",
+        "#f8f7ee"
+      ],
+      "character": "White and pastel beachfront condominium towers; existing mapped heights, balconies and footprint scale retained."
     },
     "beach-residential": {
       "walls": [

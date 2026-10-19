@@ -2,7 +2,7 @@
   "region": "pensacola",
   "building_count": 5161,
   "tree_count": 56761,
-  "region_bytes": 259593,
+  "region_bytes": 259372,
   "max_tile_bytes": 472778,
   "max_anchor_error_m": 0.0276,
   "max_coast_float32_error_m": 0.0338578955636743,
@@ -22,18 +22,11 @@
   "status": "Passed locked release gates; desktop and phone visual review completed; physical phone timing unverified",
   "exported_boundary_source_error_m": 131.62943662991032,
   "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
-  "manual_fixes": [
-    "City-specific package requested by user; other cities in the parent region remain unchanged.",
-    "Separate downtown and historic-residential style zones; source canopy preserved.",
-    "Landmark-specific recipe inputs supply missing height where documented; shared scale caps still apply.",
-    "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged.",
-    "Retained explicitly mapped closed coastline island inside generalized Pensacola Bay water polygon, which omits this small island. https://www.openstreetmap.org/way/555468911"
-  ],
-  "initial_asset_bytes": 371863,
   "illustrative_boats": 90,
   "boat_land_intersections": 0,
-  "initial_asset_bytes_with_boats": 374118,
   "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions.",
+  "initial_asset_bytes": 371868,
+  "initial_asset_bytes_with_boats": 374099,
   "water_recipe": "emerald-forgotten",
-  "water_geometry_changed": false
+  "district_style_refresh": "2026-10-19"
 }

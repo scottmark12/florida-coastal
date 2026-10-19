@@ -2,18 +2,27 @@
   "recipes": {
     "pcb": {
       "walls": [
-        "#fff6e5",
-        "#d8e8ed",
-        "#f2e1bf",
-        "#e3dbd1"
+        "#fffdf4",
+        "#fffdf4",
+        "#fffdf4",
+        "#d5ece6",
+        "#f0d4d0",
+        "#f6e8b9",
+        "#d8e8ef"
       ],
       "roofs": [
-        "#afc5c7",
-        "#d6d9cc"
+        "#d8e0db",
+        "#b8cccd",
+        "#d1d9d7"
       ],
       "roof": "flat",
       "detail": "balconies",
-      "source": "https://www.visitpanamacitybeach.com/"
+      "source": "https://www.visitpanamacitybeach.com/",
+      "trim": [
+        "#fffdf5",
+        "#f8f7ee"
+      ],
+      "character": "White and pastel beachfront condominium towers; existing mapped heights, balconies and footprint scale retained."
     }
   }
 }

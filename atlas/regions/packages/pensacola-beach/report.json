@@ -2,8 +2,8 @@
   "region": "pensacola-beach",
   "building_count": 659,
   "tree_count": 311,
-  "region_bytes": 52152,
-  "max_tile_bytes": 232145,
+  "region_bytes": 52677,
+  "max_tile_bytes": 232658,
   "max_anchor_error_m": 0.0192,
   "max_coast_float32_error_m": 0.0338578955636743,
   "height_sources": {
@@ -22,15 +22,8 @@
   "status": "Passed locked release gates; desktop and phone visual review completed; physical phone timing unverified",
   "exported_boundary_source_error_m": 4.988989771735361,
   "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
-  "manual_fixes": [
-    "City-specific package requested by user; other cities in the parent region remain unchanged.",
-    "Vectorized the exact ESA 10m tree-class cells because this water-dominated barrier island has only 0.17% canopy in the full raster window; no new trees or density fallback added.",
-    "Mapped the OSM pier walking-deck line into the existing elevated footway input, retaining its original coordinates.",
-    "Added a sourced water-tower height and a stylized tank-and-stem profile using existing landmark recipe support.",
-    "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged.",
-    "Phone Region camera fitted within the verified coastal extent to avoid exposing the outer water-wash boundary."
-  ],
-  "initial_asset_bytes": 110229,
+  "initial_asset_bytes": 110950,
+  "initial_asset_bytes_with_boats": 110950,
   "water_recipe": "emerald-forgotten",
-  "water_geometry_changed": false
+  "district_style_refresh": "2026-10-19"
 }

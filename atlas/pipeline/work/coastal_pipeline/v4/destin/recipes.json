@@ -2,19 +2,27 @@
   "recipes": {
     "destin": {
       "walls": [
-        "#f7eed9",
-        "#dfddc2",
-        "#c4ded6",
-        "#e4cfb4"
+        "#f4ead5",
+        "#ddc6a3",
+        "#b5cfc7",
+        "#d8b38d",
+        "#eadbc0",
+        "#bdd6d8"
       ],
       "roofs": [
-        "#a7bab3",
-        "#c2c6bb",
-        "#b8aa8d"
+        "#a7b9b8",
+        "#c2ccc7",
+        "#778f8c",
+        "#aa8d74"
       ],
       "roof": "gable",
       "detail": "painted-wood-porches",
-      "source": "https://www.floridacoastal.co/towns/destin.html"
+      "source": "https://www.floridacoastal.co/towns/destin.html",
+      "trim": [
+        "#f6efdf",
+        "#d7c2a0"
+      ],
+      "character": "Working harbor fishing village: warm painted timber, weathered coastal colors, crisp pitched metal roofs and dockside boats; landmark resort stays distinct."
     },
     "harbor-resort": {
       "walls": [
