@@ -1,0 +1,36 @@
+{
+  "region": "jacksonville",
+  "building_count": 7512,
+  "tree_count": 44358,
+  "region_bytes": 1019662,
+  "max_tile_bytes": 896158,
+  "max_anchor_error_m": 0.0074,
+  "max_coast_float32_error_m": 0.031329879433034336,
+  "height_sources": {
+    "height": 5,
+    "levels": 38,
+    "assumed": 7468
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "Passed locked release gates; desktop and phone visual review completed; physical phone timing unverified",
+  "exported_boundary_source_error_m": 68.90324777977992,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+  "manual_fixes": [
+    "City-specific package requested by user; other cities in the parent region remain unchanged.",
+    "Separate downtown and historic-residential style zones; source canopy preserved.",
+    "Landmark-specific recipe inputs supply missing height where documented; shared scale caps still apply.",
+    "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged.",
+    "Separated straight river-mouth closure across mapped open water from physical shoreline reference. Land geometry unchanged. https://www.openstreetmap.org/way/138366840",
+    "Separated straight river-mouth closure across mapped open water from physical shoreline reference. Land geometry unchanged. https://www.openstreetmap.org/way/253472100",
+    "Separated straight river-mouth closure across mapped open water from physical shoreline reference. Land geometry unchanged. https://www.openstreetmap.org/way/253129425",
+    "Normalized OSM bridge=movable to bridge=yes for the existing exporter while retaining sourceBridgeType, so Main Street lift span remains continuous across water."
+  ],
+  "initial_asset_bytes": 1351886
+}

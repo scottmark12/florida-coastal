@@ -32,7 +32,7 @@ Other regions retain their existing overview/legacy GLBs. They are **not finishe
 
 ## Landing images
 
-33 towns × two WebP files: `<town-id>.webp` at 1600×1000, `<town-id>-m.webp` at 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
+34 towns × two WebP files: `<town-id>.webp` at 1600×1000, `<town-id>-m.webp` at 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
 
 The 30A catalog entry describes a corridor, so its representative Town image is centered on Seaside; the exact representative center is recorded. Every image now uses its sourced hero point, recorded with a one-line reason. To regenerate a screenshot, serve the atlas and use the manifest's relative render URL at the corresponding viewport. `landing=1` enables the clean render mode. Wait for `body[data-ready="true"]`; `body[data-camera]` exposes the actual orthographic camera. Save as WebP at the specified dimensions. Images were inspected as a contact sheet; browser console checks found no errors during export.
 
@@ -105,3 +105,9 @@ For an unavailable Overpass district download, `python osm_api_fallback.py REGIO
 ### Pensacola city package (2026-10-19)
 
 City-specific detailed coverage, hero/callouts and both landing sizes are available. [Review](regions/packages/pensacola/atlas-review.html). Initial assets: 511348 bytes; maximum shoreline/source alignment error: 131.629 m. Sourced citywide median is labeled as such. Other towns in the parent coastal region remain at their previous coverage. Manual input fixes are documented in the review and source-conflicts.json. Shared renderer and pipeline rules are unchanged.
+
+### Jacksonville city package (2026-10-19)
+
+City-specific detailed coverage, hero/callouts and both landing sizes are available. [Review](regions/packages/jacksonville/atlas-review.html). Initial assets: 1351886 bytes; maximum shoreline/source alignment error: 68.903 m. Sourced citywide median is labeled as such. Other towns in the parent coastal region remain at their previous coverage. Manual input fixes are documented in the review and source-conflicts.json. Shared renderer and pipeline rules are unchanged.
+
+The Pensacola and Jacksonville source inputs use the dated Geofabrik Florida snapshot `florida-261017.osm.pbf` (MD5 `7748a39378ba82af00e5fbc35603143c`), from https://download.geofabrik.de/north-america/us/florida.html. Raw PBF/downloads remain excluded. The optional `pipeline/extract_osm_snapshot.py` acquisition adapter requires `pip install osmium`; it writes the same raw input schema from a local snapshot. Normalized, reviewed inputs remain the source for rebuilding. Do not regenerate them without rechecking the documented source conflicts and bridge-type normalization.

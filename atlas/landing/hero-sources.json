@@ -1177,6 +1177,66 @@
           "included": true
         }
       ]
+    },
+    {
+      "town_id": "jacksonville",
+      "hero_name": "Friendship Fountain",
+      "hero_source": "https://www.openstreetmap.org/way/348479221",
+      "coordinate_method": "OSM mapped feature, or published government facility GPS where linked.",
+      "points": [
+        {
+          "name": "Friendship Fountain",
+          "source": "https://www.openstreetmap.org/way/348479221",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Main Street Bridge",
+          "source": "https://www.openstreetmap.org/way/590221019",
+          "mobile_uv": [
+            0.573596778454836,
+            0.44999726299170467
+          ],
+          "desktop_uv": [
+            0.5367983892274181,
+            0.44999726299170467
+          ],
+          "included": true
+        },
+        {
+          "name": "Saint Johns Marina",
+          "source": "https://www.openstreetmap.org/way/492185758",
+          "mobile_uv": [
+            0.3659961377604231,
+            0.5302165350640614
+          ],
+          "desktop_uv": [
+            0.43299806888021153,
+            0.5302165350640614
+          ],
+          "included": true
+        },
+        {
+          "name": "Treaty Oak at Jessie Ball Dupont Park",
+          "source": "https://www.openstreetmap.org/way/348722368",
+          "mobile_uv": [
+            0.6145793586380657,
+            0.6402471357685248
+          ],
+          "desktop_uv": [
+            0.5572896793190328,
+            0.6402471357685248
+          ],
+          "included": true
+        }
+      ]
     }
   ]
 }

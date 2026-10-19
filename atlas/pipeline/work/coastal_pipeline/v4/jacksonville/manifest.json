@@ -1,0 +1,101 @@
+{
+  "id": "jacksonville",
+  "name": "Jacksonville",
+  "towns": [
+    "jacksonville"
+  ],
+  "bounds": [
+    -81.75,
+    30.23,
+    -81.35,
+    30.48
+  ],
+  "recipes": "work/coastal_pipeline/v4/jacksonville/recipes.json",
+  "camera": {
+    "center": [
+      224.96283795750207,
+      704.2273587501284
+    ],
+    "desktopSpan": 9,
+    "phoneSpan": 7,
+    "phoneOffsetY": 1
+  },
+  "district_recipes": {
+    "jacksonville-center": "jacksonville"
+  },
+  "manual_fixes": [
+    "City-specific package requested by user; other cities in the parent region remain unchanged.",
+    "Separate downtown and historic-residential style zones; source canopy preserved.",
+    "Landmark-specific recipe inputs supply missing height where documented; shared scale caps still apply.",
+    "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged.",
+    "Separated straight river-mouth closure across mapped open water from physical shoreline reference. Land geometry unchanged. https://www.openstreetmap.org/way/138366840",
+    "Separated straight river-mouth closure across mapped open water from physical shoreline reference. Land geometry unchanged. https://www.openstreetmap.org/way/253472100",
+    "Separated straight river-mouth closure across mapped open water from physical shoreline reference. Land geometry unchanged. https://www.openstreetmap.org/way/253129425",
+    "Normalized OSM bridge=movable to bridge=yes for the existing exporter while retaining sourceBridgeType, so Main Street lift span remains continuous across water."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/jacksonville/geography.json.gz",
+      "work/coastal_pipeline/v4/jacksonville/cover.json.gz",
+      "work/coastal_pipeline/v4/jacksonville/district-jacksonville.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/jacksonville/districts.json",
+    "prices": "work/coastal_pipeline/v4/jacksonville/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/jacksonville/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/jacksonville/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/jacksonville/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/jacksonville/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/jacksonville/jacksonville-center-worldcover-2021.png",
+        "bounds": [
+          -81.68191666666667,
+          30.30225,
+          -81.63391666666666,
+          30.35025
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "jacksonville-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "context": {
+      "path": "work/coastal_pipeline/v4/jacksonville/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    }
+  }
+}

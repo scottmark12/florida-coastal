@@ -3000,6 +3000,104 @@
         "tiltDegrees": 45
       },
       "mobile_render_url": "../explore_coast.html?view=pensacola&level=town&landing=1&cx=-308.49336690182474&cy=714.758666691564&span=1.4&district=pensacola-center"
+    },
+    {
+      "town_id": "jacksonville",
+      "name": "Jacksonville",
+      "desktop": "jacksonville.webp",
+      "mobile": "jacksonville-m.webp",
+      "center": {
+        "x": 224.793824950257,
+        "y": 703.5363279272586,
+        "lon": -81.65981358,
+        "lat": 30.320028450000002
+      },
+      "districts": [
+        {
+          "id": "jacksonville-center",
+          "name": "Jacksonville",
+          "lon": -81.6579179,
+          "lat": 30.3262247
+        }
+      ],
+      "district": "jacksonville-center",
+      "span": 2.8,
+      "status": "Passed locked pipeline and desktop/phone visual review; physical-phone speed not verified",
+      "hero": {
+        "lon": -81.65981358,
+        "lat": 30.320028450000002,
+        "reason": "Friendship Fountain frames the St. Johns River, Main Street Bridge and Jacksonville\u2019s downtown skyline."
+      },
+      "callouts": [
+        {
+          "name": "Friendship Fountain",
+          "type": "landmark",
+          "lon": -81.65981358,
+          "lat": 30.320028450000002
+        },
+        {
+          "name": "Main Street Bridge",
+          "type": "landmark",
+          "lon": -81.65871674347827,
+          "lat": 30.32112563478261
+        },
+        {
+          "name": "Saint Johns Marina",
+          "type": "boating",
+          "lon": -81.66178091290323,
+          "lat": 30.319386838709676
+        },
+        {
+          "name": "Treaty Oak at Jessie Ball Dupont Park",
+          "type": "park",
+          "lon": -81.65821265384616,
+          "lat": 30.316874223076923
+        }
+      ],
+      "camera": {
+        "position": [
+          224.793824950257,
+          2.1874999999999996,
+          -701.3488279272586
+        ],
+        "target": [
+          224.793824950257,
+          0,
+          -703.5363279272586
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=jacksonville&level=town&landing=1&cx=224.793824950257&cy=703.5363279272586&span=2.8&district=jacksonville-center",
+      "mobile_camera": {
+        "position": [
+          224.793824950257,
+          2.1874999999999996,
+          -701.3488279272586
+        ],
+        "target": [
+          224.793824950257,
+          0,
+          -703.5363279272586
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=jacksonville&level=town&landing=1&cx=224.793824950257&cy=703.5363279272586&span=1.4&district=jacksonville-center"
     }
   ]
 }

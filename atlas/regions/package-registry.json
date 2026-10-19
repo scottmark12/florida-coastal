@@ -30,5 +30,6 @@
   "chokoloskee": "packages/naples-marco/",
   "everglades-city": "packages/naples-marco/",
   "marco-island": "packages/naples-marco/",
-  "pensacola": "packages/pensacola/"
+  "pensacola": "packages/pensacola/",
+  "jacksonville": "packages/jacksonville/"
 }
