@@ -21,4 +21,6 @@ boats=P/'work/coastal_pipeline/v4'/region/'boats.json'
 if boats.exists():
  shutil.copy2(boats,target/'boats.json');(target/'boats.json.gz').write_bytes(gzip.compress(boats.read_bytes(),mtime=0));scene=json.load(open(target/'scene.json'));scene['boats']='boats.json.gz';(target/'scene.json').write_text(json.dumps(scene,separators=(',',':')))
  assert sum((target/name).stat().st_size for name in ['base.glb.gz','region.glb.gz','scene.json','shore-wash.png','shore-wash.json','boats.json.gz'])<4000000,'Regional assets with boats exceed 4 MB'
+from annotate_building_sources import annotate
+annotate(manifest,[out,target])
 print('Built',target,'— inspect new screenshots and update landing images before release.')

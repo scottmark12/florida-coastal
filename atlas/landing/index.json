@@ -3496,6 +3496,12 @@
           "name": "Port St. Joe",
           "lon": -85.302974,
           "lat": 29.8118757
+        },
+        {
+          "id": "cape-san-blas",
+          "name": "Cape San Blas",
+          "lon": -85.3855237490263,
+          "lat": 29.716771660979518
         }
       ],
       "district": "port-st-joe-center",
@@ -3974,6 +3980,168 @@
         "tiltDegrees": 45
       },
       "mobile_render_url": "../explore_coast.html?view=st-marks&level=town&landing=1&cx=-20.08162685130476&cy=682.7976940981381&span=0.95&district=st-marks-center"
+    },
+    {
+      "town_id": "st-teresa",
+      "name": "St. Teresa",
+      "desktop": "st-teresa.webp",
+      "mobile": "st-teresa-m.webp",
+      "center": {
+        "x": -42.94834463020165,
+        "y": 658.2109860225521,
+        "lon": -84.4454551,
+        "lat": 29.930207
+      },
+      "districts": [
+        {
+          "id": "st-teresa-center",
+          "name": "St. Teresa",
+          "lon": -84.4540665,
+          "lat": 29.9307625
+        }
+      ],
+      "district": "st-teresa-center",
+      "span": 1.6,
+      "hero": {
+        "lon": -84.4454551,
+        "lat": 29.930207,
+        "reason": "The Wilson Beach shoreline frames St. Teresa’s wooded beachfront homes and quiet bay water."
+      },
+      "callouts": [
+        {
+          "name": "Wilson Beach",
+          "type": "landmark",
+          "lon": -84.4454551,
+          "lat": 29.930207
+        }
+      ],
+      "status": "Desktop and phone crop checked; physical phone speed unverified",
+      "camera": {
+        "position": [
+          -42.94834463020165,
+          1.25,
+          -656.9609860225521
+        ],
+        "target": [
+          -42.94834463020165,
+          0,
+          -658.2109860225521
+        ],
+        "left": -0.8,
+        "right": 0.8,
+        "top": 0.5,
+        "bottom": -0.5,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -42.94834463020165,
+          1.25,
+          -656.9609860225521
+        ],
+        "target": [
+          -42.94834463020165,
+          0,
+          -658.2109860225521
+        ],
+        "left": -0.4,
+        "right": 0.4,
+        "top": 0.5,
+        "bottom": -0.5,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      }
+    },
+    {
+      "town_id": "mexico-beach",
+      "name": "Mexico Beach",
+      "desktop": "mexico-beach.webp",
+      "mobile": "mexico-beach-m.webp",
+      "center": {
+        "x": -137.2673548965128,
+        "y": 661.3482631645624,
+        "lon": -85.42403928000002,
+        "lat": 29.95202708
+      },
+      "districts": [
+        {
+          "id": "mexico-beach-center",
+          "name": "Mexico Beach",
+          "lon": -85.4193954,
+          "lat": 29.9484826
+        }
+      ],
+      "district": "mexico-beach-center",
+      "span": 1.9,
+      "hero": {
+        "lon": -85.42403928000002,
+        "lat": 29.95202708,
+        "reason": "The fishing canal and marina frame Mexico Beach’s low-rise streets and nearby Gulf beach."
+      },
+      "callouts": [
+        {
+          "name": "Mexico Beach Marina",
+          "type": "boating",
+          "lon": -85.42403928000002,
+          "lat": 29.95202708
+        },
+        {
+          "name": "Mexico Beach Boat Ramp",
+          "type": "boating",
+          "lon": -85.4246189,
+          "lat": 29.9541342
+        }
+      ],
+      "status": "Desktop and phone crop checked; physical phone speed unverified",
+      "camera": {
+        "position": [
+          -137.2673548965128,
+          1.4843749999999998,
+          -659.8638881645624
+        ],
+        "target": [
+          -137.2673548965128,
+          0,
+          -661.3482631645624
+        ],
+        "left": -0.9499999999999998,
+        "right": 0.9499999999999998,
+        "top": 0.5937499999999999,
+        "bottom": -0.5937499999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_camera": {
+        "position": [
+          -137.2673548965128,
+          1.4843749999999998,
+          -659.8638881645624
+        ],
+        "target": [
+          -137.2673548965128,
+          0,
+          -661.3482631645624
+        ],
+        "left": -0.4749999999999999,
+        "right": 0.4749999999999999,
+        "top": 0.5937499999999999,
+        "bottom": -0.5937499999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      }
     }
   ]
 }

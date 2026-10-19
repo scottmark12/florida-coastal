@@ -10,7 +10,7 @@ import osmium
 regions=sys.argv[1].split(',');source=Path(sys.argv[2]);packages={}
 for region in regions:
  root=Path('work/coastal_pipeline/v4')/region;catalog=json.load(open(root/'catalog-input.json'));towns=catalog['towns']
- packages[region]={'root':root,'bounds':catalog['bounds'],'boxes':{t['id']:[t['lon']-.025,t['lat']-.022,t['lon']+.025,t['lat']+.022] for t in towns},'groups':{'geography':{},'cover':{},**{'district-'+t['id']:{} for t in towns}}}
+ packages[region]={'root':root,'bounds':catalog['bounds'],'boxes':{t['id']:t.get('source_bounds',[t['lon']-.025,t['lat']-.022,t['lon']+.025,t['lat']+.022]) for t in towns},'groups':{'geography':{},'cover':{},**{'district-'+t['id']:{} for t in towns}}}
 bounds=[min(p['bounds'][0] for p in packages.values()),min(p['bounds'][1] for p in packages.values()),max(p['bounds'][2] for p in packages.values()),max(p['bounds'][3] for p in packages.values())]
 def intersects(a,b):return a[0]<=b[2] and a[2]>=b[0] and a[1]<=b[3] and a[3]>=b[1]
 def flags(t):

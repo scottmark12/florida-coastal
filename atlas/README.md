@@ -141,6 +141,14 @@ Town-entry camera overrides live in `regions/town-views.json`. Destin opens on t
 
 ### Forgotten Coast detailed towns (2026-10-19)
 
-Port St. Joe, Apalachicola, St. George Island, Carrabelle and St. Marks now have detailed packages, town-entry hero cameras, source-linked prices, OSM overlays, and desktop/phone landing images with callouts. [Review all five](regions/packages/forgotten-coast/atlas-review.html). St. Teresa remains blocked by missing residential OSM footprints; it is not a finished package. St. Marks pricing explicitly discloses a one-sale, older sample.
+Port St. Joe, Apalachicola, St. George Island, Carrabelle and St. Marks now have detailed packages, town-entry hero cameras, source-linked prices, OSM overlays, and desktop/phone landing images with callouts. [Review all five](regions/packages/forgotten-coast/atlas-review.html). St. Teresa was initially blocked by missing OSM footprints; the supplemental source update below resolves that gap. St. Marks pricing explicitly discloses a one-sale, older sample.
 
 Rebuild each with `python build_region.py <town-id>` from `pipeline/`, using the committed normalized inputs. Raw sources use the Geofabrik 2026-10-17 Florida snapshot above, ESA WorldCover 2021, and OSM API map extracts for docks; restore downloads with the existing acquisition adapters. Source URLs and manual input corrections are recorded in each manifest and source-conflicts.json where applicable. Apalachicola excludes a documented straight river-mouth closure from physical-shoreline control checks, while retaining its water/land polygons. St. George Island uses the mapped lighthouse-park centroid as its district anchor. Shared renderer, rules and lock remain unchanged.
+
+### Mexico Beach, St. Teresa and Cape San Blas update
+
+Mexico Beach is a selectable town with its canal/shoreline hero and sourced market median. Port St. Joe Region view now includes the full Cape San Blas peninsula; tap Cape San Blas to enter its neighborhood view. The approved Port St. Joe downtown hero and existing buildings remain in place.
+
+St. Teresa uses 244 supplemental Microsoft Global ML Building Footprints. Cape San Blas fills gaps with the same open imagery-derived source, excluding overlaps with mapped OSM buildings. These are not current field surveys; source imagery dates vary. The shared renderer and locked scale/style rules are unchanged. Negative IDs are explicitly local supplemental IDs, not OSM objects. `building-sources.json` and the source GeoJSON subset accompany the inputs. Microsoft data is CDLA Permissive 2.0; OSM is ODbL.
+
+Restore excluded supplemental downloads with `python supplement_st_teresa.py` and `python supplement_cape_buildings.py` from `pipeline/`. Then use the normal `python build_region.py <package-id>`. The build wrapper publishes truthful supplemental attribution without modifying the locked engine. `extract_osm_snapshot.py` also accepts an optional per-town `source_bounds` window for a long peninsula; the Cape acquisition entry is not a separate top-level town. Initial regional assets remain under 4 MB. Source overlays measure model/source agreement, not an independent survey.

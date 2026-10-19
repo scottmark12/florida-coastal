@@ -298,5 +298,17 @@
     "path": "work/coastal_pipeline/raw/boats/st-marks.osm",
     "source": "https://api.openstreetmap.org/api/0.6/map",
     "retrieved": "2026-10-19"
+  },
+  {
+    "town": "mexico-beach",
+    "path": "work/coastal_pipeline/raw/boats/mexico-beach.osm",
+    "bounds": [
+      -85.43,
+      29.94,
+      -85.4,
+      29.96
+    ],
+    "source": "https://api.openstreetmap.org/api/0.6/map?bbox=-85.43,29.94,-85.40,29.96",
+    "retrieved": "2026-10-19"
   }
 ]

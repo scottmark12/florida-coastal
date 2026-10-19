@@ -1,0 +1,114 @@
+{
+  "id": "st-teresa",
+  "name": "St. Teresa",
+  "towns": [
+    "st-teresa"
+  ],
+  "bounds": [
+    -84.54,
+    29.87,
+    -84.4,
+    29.99
+  ],
+  "recipes": "work/coastal_pipeline/v4/st-teresa/recipes.json",
+  "camera": {
+    "center": [
+      -43.77837793985738,
+      658.2756804354282
+    ],
+    "desktopSpan": 11,
+    "phoneSpan": 5,
+    "phoneOffsetY": 0.5
+  },
+  "district_recipes": {
+    "st-teresa-center": "st-teresa"
+  },
+  "manual_fixes": [
+    "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "St. Teresa residential footprints supplemented from Microsoft Global ML Building Footprints (CDLA Permissive 2.0); negative local IDs are not OSM IDs."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/st-teresa/geography.json.gz",
+      "work/coastal_pipeline/v4/st-teresa/cover.json.gz",
+      "work/coastal_pipeline/v4/st-teresa/district-st-teresa.json.gz",
+      "work/coastal_pipeline/v4/st-teresa/supplemental-buildings.json"
+    ],
+    "districts": "work/coastal_pipeline/v4/st-teresa/districts.json",
+    "prices": "work/coastal_pipeline/v4/st-teresa/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/st-teresa/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/st-teresa/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/st-teresa/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/st-teresa/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/st-teresa/st-teresa-center-worldcover-2021.png",
+        "bounds": [
+          -84.47808333333333,
+          29.906833333333335,
+          -84.43008333333333,
+          29.954833333333333
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W087_Map.tif",
+        "surveyYear": 2021,
+        "district": "st-teresa-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "context": {
+      "path": "work/coastal_pipeline/v4/st-teresa/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "supplementalBuildingSources": [
+      {
+        "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+        "download": "https://bfppub.z5.web.core.windows.net/2026-08-13/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032020133/part-00025-110f5303-ff85-4c71-a2bf-c6070024fec8.c000.csv.gz",
+        "release": "2026-08-13",
+        "license": "CDLA Permissive 2.0",
+        "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+        "download_sha256": "cb76d78979c1ddf2ac57445f7418261c1558a704ab7c77121e1a50a85c887961",
+        "footprints": 244,
+        "notes": [
+          "Imagery-derived footprint estimates, not a current field survey.",
+          "Height estimates are retained in the source subset but not used as surveyed heights; the unchanged house default of one to two storeys applies.",
+          "Negative IDs are local supplemental IDs, never OSM IDs. OSM coast, roads and district anchors are retained."
+        ]
+      }
+    ]
+  },
+  "waterRecipe": "emerald-forgotten"
+}

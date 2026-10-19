@@ -31,6 +31,24 @@
       "roof": "flat",
       "detail": "balconies",
       "source": "https://capesanblaslight.org/history-of-the-cape-san-blas-lighthouse.cfm"
+    },
+    "cape-san-blas": {
+      "walls": [
+        "#f8e6c5",
+        "#badcd3",
+        "#eecbc0",
+        "#c8dce3",
+        "#fff2db"
+      ],
+      "roofs": [
+        "#b7c7c1",
+        "#cdd4cd",
+        "#91a9a3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitgulf.com/destinations/cape-san-blas/",
+      "referenceScope": "Low-rise peninsula cottages; editorial palette."
     }
   },
   "landmarks": {

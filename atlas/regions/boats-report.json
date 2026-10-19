@@ -125,6 +125,11 @@
       "town": "st-marks",
       "boats": 24,
       "mapped_docks": 8
+    },
+    {
+      "town": "mexico-beach",
+      "boats": 0,
+      "mapped_docks": 0
     }
   ],
   "total_boats": 2987

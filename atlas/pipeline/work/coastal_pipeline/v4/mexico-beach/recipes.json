@@ -1,0 +1,22 @@
+{
+  "recipes": {
+    "mexico-beach": {
+      "walls": [
+        "#f5ddbc",
+        "#b9dfd6",
+        "#f2cbc3",
+        "#d5e0e4",
+        "#f8edda"
+      ],
+      "roofs": [
+        "#acbdb7",
+        "#cbd1c7",
+        "#8da7a5"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://mexicobeach.com/things-to-do/beaches/",
+      "referenceScope": "Low-rise coastal character; colors are editorial."
+    }
+  }
+}

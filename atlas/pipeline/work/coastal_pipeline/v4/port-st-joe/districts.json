@@ -25,5 +25,31 @@
     },
     "source": "https://www.floridasforgottencoast.com/maritime-museum/brief-history-of-franklin-county/",
     "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "port-st-joe",
+    "id": "cape-san-blas",
+    "name": "Cape San Blas",
+    "kind": "beach",
+    "description": "Beach cottages along the narrow peninsula, with Gulf beaches, St. Joseph Bay and the Loggerhead Trail.",
+    "style": "cape-san-blas",
+    "lon": -85.3855237490263,
+    "lat": 29.716771660979518,
+    "x": -133.84832585949007,
+    "y": 635.1904482818011,
+    "positionSource": "https://www.openstreetmap.org/way/333880519",
+    "centerMeaning": "Mapped Cape Palms Park centroid; a recognizable northern Cape community anchor, not the geographic cape tip.",
+    "priceRange": "$944,675 median listing price \u00b7 August 2026 \u00b7 published Cape San Blas market",
+    "priceSource": "https://www.realtor.com/local/market/florida/gulf-county/cape-san-blas",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 944675,
+      "metric": "median listing price",
+      "period": "August 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/gulf-county/cape-san-blas",
+      "geographicScope": "Publisher-defined Cape San Blas market; not an appraisal of this district."
+    },
+    "source": "https://www.visitgulf.com/destinations/cape-san-blas/"
   }
 ]

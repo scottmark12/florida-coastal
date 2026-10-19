@@ -58,5 +58,25 @@
     "desktopSpan": 1.9,
     "phoneSpan": 0.95,
     "reason": "The river park puts the river junction, historic fort and boating waterfront together."
+  },
+  "st-teresa": {
+    "district": "st-teresa-center",
+    "x": -42.94834463020165,
+    "y": 658.2109860225521,
+    "lon": -84.4454551,
+    "lat": 29.930207,
+    "desktopSpan": 1.6,
+    "phoneSpan": 0.9,
+    "reason": "The Wilson Beach shoreline frames St. Teresa\u2019s wooded beachfront homes and quiet bay water."
+  },
+  "mexico-beach": {
+    "district": "mexico-beach-center",
+    "x": -137.2673548965128,
+    "y": 661.3482631645624,
+    "lon": -85.42403928000002,
+    "lat": 29.95202708,
+    "desktopSpan": 1.9,
+    "phoneSpan": 0.95,
+    "reason": "The fishing canal and marina frame Mexico Beach\u2019s low-rise streets and nearby Gulf beach."
   }
 }

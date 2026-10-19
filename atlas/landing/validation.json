@@ -1,6 +1,6 @@
 {
-  "town_count": 43,
-  "callout_count": 109,
+  "town_count": 45,
+  "callout_count": 112,
   "towns": [
     {
       "town_id": "30a",
@@ -635,6 +635,36 @@
     {
       "town_id": "st-marks",
       "callouts": 4,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 1.9,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-teresa",
+      "callouts": 1,
+      "desktop_size": [
+        1600,
+        1000
+      ],
+      "phone_size": [
+        800,
+        1000
+      ],
+      "tilt_degrees": 45,
+      "span_km": 1.6,
+      "checks": "passed"
+    },
+    {
+      "town_id": "mexico-beach",
+      "callouts": 2,
       "desktop_size": [
         1600,
         1000
