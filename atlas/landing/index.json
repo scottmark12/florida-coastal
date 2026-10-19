@@ -3282,6 +3282,104 @@
         "tiltDegrees": 45
       },
       "mobile_render_url": "../explore_coast.html?view=panama-city&level=town&landing=1&cx=-160.05587894793337&cy=683.9402685041948&span=1.4&district=panama-city-center"
+    },
+    {
+      "town_id": "pcb",
+      "name": "Panama City Beach",
+      "desktop": "pcb.webp",
+      "mobile": "pcb-m.webp",
+      "center": {
+        "x": -180.5019253030766,
+        "y": 691.1840294582316,
+        "lon": -85.8772141,
+        "lat": 30.2155762
+      },
+      "districts": [
+        {
+          "id": "pcb-center",
+          "name": "Panama City Beach",
+          "lon": -85.805386,
+          "lat": 30.1765914
+        }
+      ],
+      "district": "pcb-center",
+      "span": 2.8,
+      "status": "Passed locked pipeline and desktop/phone visual review; physical-phone speed not verified",
+      "hero": {
+        "lon": -85.8772141,
+        "lat": 30.2155762,
+        "reason": "Russell-Fields Pier and Pier Park frame Panama City Beach\u2019s broad Gulf beach and resort skyline."
+      },
+      "callouts": [
+        {
+          "name": "Russell-Fields Pier",
+          "type": "beach",
+          "lon": -85.8772141,
+          "lat": 30.2155762
+        },
+        {
+          "name": "Aaron Bessant Park",
+          "type": "park",
+          "lon": -85.87663783888887,
+          "lat": 30.221453487037042
+        },
+        {
+          "name": "Calypso Resort and Towers",
+          "type": "landmark",
+          "lon": -85.87418534107142,
+          "lat": 30.214112530357138
+        },
+        {
+          "name": "The Grand 16 - Pier Park",
+          "type": "landmark",
+          "lon": -85.87371295344826,
+          "lat": 30.218869813793102
+        }
+      ],
+      "camera": {
+        "position": [
+          -180.5019253030766,
+          2.1874999999999996,
+          -688.9965294582316
+        ],
+        "target": [
+          -180.5019253030766,
+          0,
+          -691.1840294582316
+        ],
+        "left": -1.4,
+        "right": 1.4,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "render_url": "../explore_coast.html?view=pcb&level=town&landing=1&cx=-180.5019253030766&cy=691.1840294582316&span=2.8&district=pcb-center",
+      "mobile_camera": {
+        "position": [
+          -180.5019253030766,
+          2.1874999999999996,
+          -688.9965294582316
+        ],
+        "target": [
+          -180.5019253030766,
+          0,
+          -691.1840294582316
+        ],
+        "left": -0.7,
+        "right": 0.7,
+        "top": 0.8749999999999999,
+        "bottom": -0.8749999999999999,
+        "near": 0.0001,
+        "far": 3500,
+        "projection": "orthographic",
+        "mapUnits": "kilometers",
+        "tiltDegrees": 45
+      },
+      "mobile_render_url": "../explore_coast.html?view=pcb&level=town&landing=1&cx=-180.5019253030766&cy=691.1840294582316&span=1.4&district=pcb-center"
     }
   ]
 }

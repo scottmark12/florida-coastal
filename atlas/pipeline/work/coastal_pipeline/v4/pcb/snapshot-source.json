@@ -1,0 +1,6 @@
+{
+  "source": "https://download.geofabrik.de/north-america/us/florida.html",
+  "snapshot": "florida-261017.osm.pbf",
+  "license": "ODbL 1.0",
+  "method": "Dated Geofabrik snapshot with original OSM geometry. Expanded town building window: west .09, south .035, east .035, north .055 degrees from catalog anchor."
+}

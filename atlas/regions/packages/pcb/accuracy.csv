@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Panama City Beach,-173.65921020507812,686.7542724609375,-85.80538603022889,30.176591544279887,-85.805386,30.1765914,0.0163,https://www.openstreetmap.org/node/153480469,Representative OSM town place-label anchor: Panama City Beach

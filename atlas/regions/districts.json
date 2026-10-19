@@ -5423,5 +5423,32 @@
     },
     "source": "https://destinationpanamacity.com/about-panama-city",
     "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "pcb",
+    "id": "pcb-center",
+    "name": "Panama City Beach",
+    "kind": "beach",
+    "description": "Big beaches, big energy and a lot going on after dark.",
+    "style": "pcb",
+    "lon": -85.805386,
+    "lat": 30.1765914,
+    "x": -173.65920753203676,
+    "y": 686.7542564055817,
+    "positionSource": "https://www.openstreetmap.org/node/153480469",
+    "centerMeaning": "Representative OSM town place-label anchor: Panama City Beach",
+    "priceRange": "$463,480 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/bay-county/panama-city-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 463480,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/bay-county/panama-city-beach",
+      "geographicScope": "Citywide published median; not a neighborhood-specific valuation."
+    },
+    "source": "https://www.floridacoastal.co/towns/pcb.html",
+    "priceStatus": "Published market median; reporting period shown on card."
   }
 ]

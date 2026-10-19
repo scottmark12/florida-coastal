@@ -1347,6 +1347,66 @@
       ],
       "note": "Downtown marina not included as a boating callout: municipal source reports boat ramp closure and revitalization.",
       "marinaStatusSource": "https://www.panamacity.gov/665/Marinas"
+    },
+    {
+      "town_id": "pcb",
+      "hero_name": "Russell-Fields Pier",
+      "hero_source": "https://www.openstreetmap.org/way/1282273459",
+      "coordinate_method": "OSM mapped feature, or published government facility GPS where linked.",
+      "points": [
+        {
+          "name": "Russell-Fields Pier",
+          "source": "https://www.openstreetmap.org/way/1282273459",
+          "mobile_uv": [
+            0.5,
+            0.5
+          ],
+          "desktop_uv": [
+            0.5,
+            0.5
+          ],
+          "included": true
+        },
+        {
+          "name": "Aaron Bessant Park",
+          "source": "https://www.openstreetmap.org/way/424601494",
+          "mobile_uv": [
+            0.546666244076375,
+            0.23678634340692645
+          ],
+          "desktop_uv": [
+            0.5233331220381875,
+            0.23678634340692645
+          ],
+          "included": true
+        },
+        {
+          "name": "Calypso Resort and Towers",
+          "source": "https://www.openstreetmap.org/way/636623670",
+          "mobile_uv": [
+            0.7062402056729087,
+            0.5674252165431497
+          ],
+          "desktop_uv": [
+            0.6031201028364543,
+            0.5674252165431497
+          ],
+          "included": true
+        },
+        {
+          "name": "The Grand 16 - Pier Park",
+          "source": "https://www.openstreetmap.org/way/259287705",
+          "mobile_uv": [
+            0.7444130717029834,
+            0.3543735365744565
+          ],
+          "desktop_uv": [
+            0.6222065358514917,
+            0.3543735365744565
+          ],
+          "included": true
+        }
+      ]
     }
   ]
 }

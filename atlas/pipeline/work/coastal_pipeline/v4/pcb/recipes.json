@@ -1,0 +1,19 @@
+{
+  "recipes": {
+    "pcb": {
+      "walls": [
+        "#fff6e5",
+        "#d8e8ed",
+        "#f2e1bf",
+        "#e3dbd1"
+      ],
+      "roofs": [
+        "#afc5c7",
+        "#d6d9cc"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitpanamacitybeach.com/"
+    }
+  }
+}

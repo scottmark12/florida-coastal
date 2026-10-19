@@ -33,5 +33,6 @@
   "pensacola": "packages/pensacola/",
   "jacksonville": "packages/jacksonville/",
   "pensacola-beach": "packages/pensacola-beach/",
-  "panama-city": "packages/panama-city/"
+  "panama-city": "packages/panama-city/",
+  "pcb": "packages/pcb/"
 }
