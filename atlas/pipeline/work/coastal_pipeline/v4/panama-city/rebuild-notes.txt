@@ -1,6 +1,0 @@
-Run from atlas/pipeline. Download florida-261017.osm.pbf from the Geofabrik Florida archive (or a newer snapshot and review changes).
-python acquire_panama_snapshot.py panama-city /path/to/florida-261017.osm.pbf
-python work/coastal_pipeline/v4/fetch_worldcover.py panama-city
-python acquire_panama_canopy.py panama-city
-python build_region.py panama-city
-Keep committed normalized land, shoreline, roads and district/style JSON; these preserve the documented manual input fixes. Do not rerun normalization without reapplying the recipe and pier inputs.

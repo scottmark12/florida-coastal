@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Pensacola,-308.70098876953125,716.67041015625,-87.21691491558752,30.42130875201945,-87.2169149,30.421309,0.0276,https://www.openstreetmap.org/node/153578302,Representative OSM town place-label anchor: Pensacola

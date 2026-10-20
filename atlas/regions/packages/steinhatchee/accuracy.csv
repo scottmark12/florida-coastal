@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Steinhatchee,60.32114791870117,629.6295776367188,-83.37585929631007,29.672082184605824,-83.3758593,29.6720821,0.0094,https://www.openstreetmap.org/node/3676401329,Representative OSM town place-label anchor: Steinhatchee

@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Cedar Key,93.63422393798828,570.5098876953125,-83.03596379020479,29.13772102025968,-83.0359638,29.1377209,0.0134,https://www.openstreetmap.org/node/153930590,Representative OSM town place-label anchor: Cedar Key

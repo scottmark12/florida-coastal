@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Hobe Sound,382.4299011230469,345.3482666015625,-80.13643229264899,27.05949789076381,-80.1364323,27.059498,0.0122,https://www.openstreetmap.org/node/154397514,Representative OSM town place-label anchor: Hobe Sound

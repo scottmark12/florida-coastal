@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Valparaiso,-239.98065185546875,724.758544921875,-86.50272820414592,30.508531144368682,-86.5027282,30.5085309,0.0271,https://www.openstreetmap.org/node/153736585,Representative OSM town place-label anchor: Valparaiso

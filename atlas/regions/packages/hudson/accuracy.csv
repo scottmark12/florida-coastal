@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Hudson,127.8297348022461,484.64996337890625,-82.69328473661197,28.36177095313649,-82.6932847,28.3617709,0.0069,https://www.openstreetmap.org/node/3567708460,Representative OSM town place-label anchor: Hudson

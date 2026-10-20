@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Delray Beach,390.83837890625,279.1885986328125,-80.07282013301796,26.461462594048903,-80.0728201,26.4614625,0.0109,https://www.openstreetmap.org/node/154058069,Representative OSM town place-label anchor: Delray Beach

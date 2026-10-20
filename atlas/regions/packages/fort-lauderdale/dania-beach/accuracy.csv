@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Dania Beach,385.1832580566406,233.58892822265625,-80.1439288702511,26.05242241177939,-80.143929,26.0524224,0.013,https://www.openstreetmap.org/node/154169354,Representative OSM town place-label anchor: Dania Beach

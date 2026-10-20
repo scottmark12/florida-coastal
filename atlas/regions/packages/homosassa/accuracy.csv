@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Homosassa,134.95452880859375,531.3294677734375,-82.61510009202186,28.781372335556313,-82.6151001,28.7813722,0.0151,https://www.openstreetmap.org/node/154073926,Representative OSM town place-label anchor: Homosassa

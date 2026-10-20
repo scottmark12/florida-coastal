@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Yankeetown,124.84091186523438,558.828857421875,-82.71593958876936,29.029973072388326,-82.7159396,29.0299729,0.0192,https://www.openstreetmap.org/node/154092372,Representative OSM town place-label anchor: Yankeetown

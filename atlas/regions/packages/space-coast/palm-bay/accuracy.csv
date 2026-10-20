@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Palm Bay,330.1011047363281,447.708740234375,-80.63661452421651,27.994696860457143,-80.6366144,27.9946969,0.013,https://www.openstreetmap.org/node/154045159,Representative OSM town place-label anchor: Palm Bay

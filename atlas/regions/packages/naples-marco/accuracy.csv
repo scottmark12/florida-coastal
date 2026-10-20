@@ -1,5 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Naples,220.174072265625,239.49819946289062,-81.79429443227106,26.142197559586354,-81.7942944,26.1421976,0.0055,https://www.openstreetmap.org/node/154394726,Representative OSM town place-label anchor: Naples
-Chokoloskee,264.3568115234375,203.9847412109375,-81.35941293749313,25.814402726372254,-81.359413,25.8144027,0.0069,https://www.openstreetmap.org/node/154031039,Representative OSM town place-label anchor: Chokoloskee
-Everglades City,261.6981506347656,208.70877075195312,-81.38496105660407,25.85747885116033,-81.384961,25.8574788,0.008,https://www.openstreetmap.org/node/154396509,Representative OSM town place-label anchor: Everglades City
-Marco Island,228.43678283691406,216.90139770507812,-81.71573003584102,25.937251271470025,-81.71573,25.9372513,0.0048,https://www.openstreetmap.org/node/5094470881,Representative OSM town place-label anchor: Marco Island

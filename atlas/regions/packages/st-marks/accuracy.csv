@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-St. Marks,-19.864723205566406,683.79150390625,-84.20647949408769,30.1612023536898,-84.2064795,30.1612024,0.0052,https://www.openstreetmap.org/node/154293005,Representative OSM town place-label anchor: Saint Marks

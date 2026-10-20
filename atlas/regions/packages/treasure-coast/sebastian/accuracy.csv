@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Sebastian,347.07147216796875,428.481201171875,-80.46940401153552,27.81735709623292,-80.4694039,27.817357,0.0153,https://www.openstreetmap.org/node/154206530,Representative OSM town place-label anchor: Sebastian

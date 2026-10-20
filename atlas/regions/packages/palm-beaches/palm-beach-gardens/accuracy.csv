@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Palm Beach Gardens,383.03070068359375,319.14056396484375,-80.13865454612885,26.823394683895145,-80.1386547,26.8233946,0.0179,https://www.openstreetmap.org/node/153916378,Representative OSM town place-label anchor: Palm Beach Gardens

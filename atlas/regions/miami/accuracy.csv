@@ -1,8 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Brickell,381.29132080078125,201.16798400878906,-80.19288334344668,25.761474446247114,-80.1928833,25.7614744,0.0067,https://www.openstreetmap.org/node/13764971423,OSM place-label anchor; not a surveyed neighborhood centroid
-Coconut Grove,375.0369873046875,195.55148315429688,-80.25699459163751,25.712601316115965,-80.2569947,25.7126013,0.011,https://www.openstreetmap.org/node/154217332,OSM place-label anchor; not a surveyed neighborhood centroid
-Coral Gables,374.81610107421875,197.82127380371094,-80.25851064857666,25.73311045410608,-80.2585107,25.7331105,0.0072,https://www.openstreetmap.org/node/154098311,OSM place-label anchor; not a surveyed neighborhood centroid
-South Beach,387.21759033203125,202.7904815673828,-80.13324139548023,25.774429139537613,-80.1332415,25.7744291,0.0114,https://www.openstreetmap.org/node/4226222889,OSM place-label anchor; not a surveyed neighborhood centroid
-Edgewater,381.52374267578125,205.5438995361328,-80.18921433082184,25.800830366969244,-80.1892142,25.8008304,0.0136,https://www.openstreetmap.org/node/13884264146,OSM place-label anchor; not a surveyed neighborhood centroid
-Mid Beach,388.18402099609375,207.68649291992188,-80.12205994451054,25.81826038524269,-80.12206005818982,25.818260376316744,0.0114,https://www.openstreetmap.org/way/447042031,"Representative Mid Beach anchor: centroid of the mapped Fontainebleau hotel, not a district boundary centroid"
-Key Biscayne,384.4536437988281,194.0909423828125,-80.16352619050288,25.696835142404037,-80.1635261,25.6968351,0.0102,https://www.openstreetmap.org/node/154335289,OSM place-label anchor; not a surveyed neighborhood centroid

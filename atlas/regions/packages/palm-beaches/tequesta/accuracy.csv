@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Tequesta,383.5180358886719,335.2309265136719,-80.12865423746584,26.968112403009556,-80.1286542,26.9681123,0.012,https://www.openstreetmap.org/node/154185944,Representative OSM town place-label anchor: Tequesta

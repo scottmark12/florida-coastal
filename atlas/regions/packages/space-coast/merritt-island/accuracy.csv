@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Merritt Island,323.11083984375,487.8948974609375,-80.69683845579785,28.358119304842724,-80.6968385,28.3581193,0.0044,https://www.openstreetmap.org/node/7714474007,Representative OSM town place-label anchor: Merritt Island

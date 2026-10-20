@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Jensen Beach,372.4833068847656,366.2082824707031,-80.23041611046555,27.250048619834182,-80.2304161,27.2500487,0.009,https://www.openstreetmap.org/node/154015114,Representative OSM town place-label anchor: Jensen Beach

@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Destin,-239.57310485839844,711.985595703125,-86.49578346827771,30.393533530062196,-86.4957834,30.3935337,0.02,https://www.openstreetmap.org/node/153715785,Representative OSM town place-label anchor: Destin

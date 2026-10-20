@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Fort Walton Beach,-251.3551025390625,713.5866088867188,-86.61884205923252,30.40575503133751,-86.618842,30.4057552,0.0196,https://www.openstreetmap.org/node/153519423,Representative OSM town place-label anchor: Fort Walton Beach

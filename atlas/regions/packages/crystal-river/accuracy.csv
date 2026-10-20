@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Crystal River,136.99339294433594,544.8025512695312,-82.59260121171737,28.90247923027014,-82.5926012,28.902479,0.0256,https://www.openstreetmap.org/node/154066628,Representative OSM town place-label anchor: Crystal River

@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Apalachicola,-94.9338607788086,635.7867431640625,-84.98277249873865,29.72550817166094,-84.9827725,29.7255084,0.0254,https://www.openstreetmap.org/node/153970262,Representative OSM town place-label anchor: Apalachicola

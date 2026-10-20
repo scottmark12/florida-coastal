@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Cape Canaveral,331.9371337890625,491.4703369140625,-80.60564635197338,28.388144145628857,-80.6056464,28.3881442,0.0077,https://www.openstreetmap.org/node/154352850,Representative OSM town place-label anchor: Cape Canaveral

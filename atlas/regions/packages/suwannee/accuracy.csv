@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Suwannee,82.96526336669922,591.655029296875,-83.1442945017202,29.32884976327498,-83.1442945,29.32885,0.0263,https://www.openstreetmap.org/node/154063545,Representative OSM town place-label anchor: Suwannee

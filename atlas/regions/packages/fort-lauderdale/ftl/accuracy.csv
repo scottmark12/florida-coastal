@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Fort Lauderdale,384.9956970214844,241.34254455566406,-80.14337852368476,26.12230836077986,-80.1433786,26.1223084,0.0088,https://www.openstreetmap.org/node/154017676,Representative OSM town place-label anchor: Fort Lauderdale

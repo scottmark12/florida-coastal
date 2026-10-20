@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Cocoa Village,319.62713623046875,487.52923583984375,-80.73253462012696,28.355663526936855,-80.7325345,28.3556635,0.0121,https://www.openstreetmap.org/node/153964215,Representative OSM town place-label anchor: Cocoa

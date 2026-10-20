@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Port St. Lucie,360.4937438964844,370.7226257324219,-80.35032845074784,27.293933273200388,-80.3503283,27.2939333,0.0152,https://www.openstreetmap.org/node/154194802,Representative OSM town place-label anchor: Port Saint Lucie

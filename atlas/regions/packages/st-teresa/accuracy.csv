@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-St. Teresa,-43.778377532958984,658.2756958007812,-84.45406649636654,29.930762638425406,-84.4540665,29.9307625,0.0154,https://www.openstreetmap.org/node/153843184,Representative OSM town place-label anchor: Saint Teresa

@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-North Miami Beach,383.7359924316406,220.30160522460938,-80.16254620087864,25.93314882731978,-80.1625463,25.9331488,0.0104,https://www.openstreetmap.org/node/154288838,Representative OSM town place-label anchor: North Miami Beach

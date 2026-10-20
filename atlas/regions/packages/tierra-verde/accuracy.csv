@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Tierra Verde,125.6505355834961,410.2388000488281,-82.72343367383202,27.691974615688643,-82.7234337,27.6919746,0.0031,https://www.openstreetmap.org/node/154171450,Representative OSM town place-label anchor: Tierra Verde

@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Ozello,130.81344604492188,536.2194213867188,-82.6570458959742,28.82581489003173,-82.6570459,28.8258147,0.0211,https://www.openstreetmap.org/node/153933485,Representative OSM town place-label anchor: Ozello

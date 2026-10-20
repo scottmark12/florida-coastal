@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Gibsonton,159.05010986328125,428.1573181152344,-82.3817514323969,27.849785779616788,-82.3817515,27.8497857,0.0111,https://www.openstreetmap.org/node/153868815,Representative OSM town place-label anchor: Gibsonton

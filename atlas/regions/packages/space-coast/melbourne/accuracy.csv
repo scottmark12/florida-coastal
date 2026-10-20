@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Melbourne,332.6733093261719,457.08990478515625,-80.60779087655278,28.078503399743564,-80.6077908,28.0785034,0.0075,https://www.openstreetmap.org/node/154003355,Representative OSM town place-label anchor: Melbourne

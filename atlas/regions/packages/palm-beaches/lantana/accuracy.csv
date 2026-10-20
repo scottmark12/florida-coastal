@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Lantana,392.4488220214844,293.1302795410156,-80.05216599664594,26.58653066302428,-80.052166,26.5865308,0.0152,https://www.openstreetmap.org/node/153996864,Representative OSM town place-label anchor: Lantana

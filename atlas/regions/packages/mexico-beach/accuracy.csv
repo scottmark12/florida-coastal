@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Mexico Beach,-136.8242645263672,660.9496459960938,-85.41939538047481,29.948482511139275,-85.4193954,29.9484826,0.01,https://www.openstreetmap.org/node/5981611952,Representative OSM town place-label anchor: Mexico Beach

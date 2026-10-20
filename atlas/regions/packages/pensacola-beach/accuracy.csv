@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Pensacola Beach,-301.0970458984375,706.8076782226562,-87.13509784205938,30.33423496528806,-87.1350979,30.3342348,0.0192,https://www.openstreetmap.org/node/153520638,Representative OSM town place-label anchor: Pensacola Beach

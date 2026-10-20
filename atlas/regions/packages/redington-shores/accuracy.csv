@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Redington Shores,115.11940002441406,425.03387451171875,-82.82899233460306,27.826135678812825,-82.8289923,27.8261357,0.0041,https://www.openstreetmap.org/node/154035489,Representative OSM town place-label anchor: Redington Shores

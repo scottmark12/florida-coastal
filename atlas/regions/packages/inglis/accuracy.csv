@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Inglis,129.431640625,558.908447265625,-82.66871607562727,29.03025137163114,-82.6687161,29.0302514,0.0039,https://www.openstreetmap.org/node/154374185,Representative OSM town place-label anchor: Inglis

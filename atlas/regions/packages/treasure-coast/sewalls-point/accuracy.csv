@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Sewall’s Point,375.4366455078125,360.6826477050781,-80.20226837153386,27.199492503670978,-80.2022684,27.1994926,0.0111,https://www.openstreetmap.org/node/154100920,Representative OSM town place-label anchor: Sewall's Point

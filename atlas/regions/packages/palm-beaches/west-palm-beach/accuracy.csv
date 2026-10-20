@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-West Palm Beach,391.8790588378906,307.4214172363281,-80.05329406080651,26.715364081851863,-80.0532942,26.715364,0.0165,https://www.openstreetmap.org/node/154153690,Representative OSM town place-label anchor: West Palm Beach

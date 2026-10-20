@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Ormond Beach,285.5471496582031,589.9529418945312,-81.05579212941137,29.285412961489076,-81.0557921,29.2854132,0.0266,https://www.openstreetmap.org/node/153831682,Representative OSM town place-label anchor: Ormond Beach

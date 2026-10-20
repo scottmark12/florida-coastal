@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Titusville,311.5125427246094,515.8634643554688,-80.8079544323359,28.612623739140005,-80.8079545,28.6126236,0.0168,https://www.openstreetmap.org/node/153999270,Representative OSM town place-label anchor: Titusville

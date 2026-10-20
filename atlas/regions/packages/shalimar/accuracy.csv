@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Shalimar,-247.45021057128906,717.9443359375,-86.57911881609454,30.44575417476748,-86.5791189,30.4457544,0.0263,https://www.openstreetmap.org/node/153814419,Representative OSM town place-label anchor: Shalimar

@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Ponce Inlet,297.5875244140625,569.2484130859375,-80.9369983493012,29.096372689761857,-80.9369983,29.0963729,0.0238,https://www.openstreetmap.org/node/154365783,Representative OSM town place-label anchor: Ponce Inlet

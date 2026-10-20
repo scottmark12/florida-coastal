@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-North Palm Beach,388.6584777832031,318.6653137207031,-80.08211079832715,26.817517426586374,-80.0821108,26.8175175,0.0082,https://www.openstreetmap.org/node/154113533,Representative OSM town place-label anchor: North Palm Beach

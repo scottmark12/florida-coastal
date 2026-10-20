@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Wilton Manors,385.3070373535156,245.57762145996094,-80.13893387200866,26.1603625462859,-80.138934,26.1603626,0.0141,https://www.openstreetmap.org/node/154364244,Representative OSM town place-label anchor: Wilton Manors

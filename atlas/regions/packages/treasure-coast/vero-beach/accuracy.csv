@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Vero Beach,354.7134704589844,408.8556823730469,-80.39753992854766,27.63871640654344,-80.3975399,27.6387163,0.0122,https://www.openstreetmap.org/node/154191276,Representative OSM town place-label anchor: Vero Beach

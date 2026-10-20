@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Palm Beach Shores,393.4117736816406,314.44097900390625,-80.03559634366465,26.77811836809018,-80.0355962,26.7781183,0.0161,https://www.openstreetmap.org/node/154041664,Representative OSM town place-label anchor: Palm Beach Shores

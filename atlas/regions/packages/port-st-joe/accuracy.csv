@@ -1,3 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Port St. Joe,-125.76236724853516,645.661376953125,-85.3029740353986,29.811875756641886,-85.302974,29.8118757,0.0072,https://www.openstreetmap.org/node/153386352,Representative OSM town place-label anchor: Port Saint Joe
-Cape San Blas,-133.84832763671875,635.1904296875,-85.38552376525911,29.71677149332769,-85.3855237490263,29.716771660979518,0.0187,https://www.openstreetmap.org/way/333880519,"Mapped Cape Palms Park centroid; a recognizable northern Cape community anchor, not the geographic cape tip."

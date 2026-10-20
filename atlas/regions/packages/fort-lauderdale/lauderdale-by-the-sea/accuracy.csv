@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Lauderdale by the Sea,389.43572998046875,249.2237091064453,-80.09643255487184,26.192028016516794,-80.0964326,26.192028,0.0049,https://www.openstreetmap.org/node/154079475,Representative OSM town place-label anchor: Lauderdale-by-the-Sea

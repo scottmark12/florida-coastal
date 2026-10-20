@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Daytona Beach Shores,292.9188232421875,577.988525390625,-80.98283229191311,29.176093126778692,-80.9828323,29.1760933,0.0193,https://www.openstreetmap.org/node/154036627,Representative OSM town place-label anchor: Daytona Beach Shores

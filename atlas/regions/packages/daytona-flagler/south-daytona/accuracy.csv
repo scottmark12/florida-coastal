@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-South Daytona,290.8434143066406,576.7963256835938,-81.00449954379877,29.165815624526257,-81.0044995,29.1658158,0.0199,https://www.openstreetmap.org/node/154325196,Representative OSM town place-label anchor: South Daytona

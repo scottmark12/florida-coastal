@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Atlantic Beach,249.83908081054688,705.6343994140625,-81.39869602670485,30.334407534356924,-81.398696,30.3344077,0.0186,https://www.openstreetmap.org/node/154312873,Representative OSM town place-label anchor: Atlantic Beach

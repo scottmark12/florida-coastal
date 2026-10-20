@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Lake Worth Beach,391.86468505859375,296.38128662109375,-80.05699276436603,26.61596991340895,-80.0569927,26.6159698,0.0141,https://www.openstreetmap.org/node/153986944,Representative OSM town place-label anchor: Lake Worth Beach

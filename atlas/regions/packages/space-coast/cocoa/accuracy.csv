@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Cocoa Beach,331.773681640625,483.7185363769531,-80.60949589000097,28.3184107244278,-80.6094959,28.3184107,0.0029,https://www.openstreetmap.org/node/154347783,Representative OSM town place-label anchor: Cocoa Beach

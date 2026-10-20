@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Indialantic,336.5365905761719,458.6065368652344,-80.56798762511912,28.091192192492546,-80.5679875,28.0911921,0.016,https://www.openstreetmap.org/node/154102997,Representative OSM town place-label anchor: Indialantic

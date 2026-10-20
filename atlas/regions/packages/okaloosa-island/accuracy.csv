@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Okaloosa Island,-250.2729949951172,712.677734375,-86.60737087008468,30.39777397232897,-86.60737086072753,30.397773812772755,0.0177,https://www.openstreetmap.org/way/1456497356,"Okaloosa Island Boat Basin: representative waterfront reference, not an island centroid"

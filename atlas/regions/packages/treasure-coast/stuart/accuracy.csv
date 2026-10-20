@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Stuart,370.5350341796875,360.36492919921875,-80.25191757067691,27.19798287477742,-80.2519175,27.197983,0.0156,https://www.openstreetmap.org/node/154296436,Representative OSM town place-label anchor: Stuart

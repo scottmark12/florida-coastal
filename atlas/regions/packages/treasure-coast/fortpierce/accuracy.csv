@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Fort Pierce,362.4295959472656,387.7518310546875,-80.32560562763499,27.446705504703438,-80.3256056,27.4467056,0.0109,https://www.openstreetmap.org/node/154081180,Representative OSM town place-label anchor: Fort Pierce

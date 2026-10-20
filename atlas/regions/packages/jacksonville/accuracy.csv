@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Jacksonville,224.9628448486328,704.2273559570312,-81.65791782882609,30.32622467365911,-81.6579179,30.3262247,0.0074,https://www.openstreetmap.org/node/154321322,Representative OSM town place-label anchor: Jacksonville

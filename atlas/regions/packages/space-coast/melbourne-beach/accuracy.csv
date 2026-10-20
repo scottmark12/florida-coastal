@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Melbourne Beach,337.312255859375,456.0967102050781,-80.56079512043647,28.068406766893787,-80.5607951,28.0684067,0.0077,https://www.openstreetmap.org/node/153839720,Representative OSM town place-label anchor: Melbourne Beach

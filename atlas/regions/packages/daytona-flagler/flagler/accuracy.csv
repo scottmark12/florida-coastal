@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Flagler Beach,278.15203857421875,610.8346557617188,-81.12699809232078,29.47499268874874,-81.1269982,29.4749927,0.0105,https://www.openstreetmap.org/node/154150111,Representative OSM town place-label anchor: Flagler Beach

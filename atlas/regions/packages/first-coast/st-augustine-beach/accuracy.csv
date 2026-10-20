@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-St. Augustine Beach,263.22528076171875,652.237060546875,-81.27166334886599,29.850861469839103,-81.2716634,29.8508613,0.0195,https://www.openstreetmap.org/node/154303449,Representative OSM town place-label anchor: Saint Augustine Beach

@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Mary Esther,-255.5836639404297,714.1397094726562,-86.66300983574955,30.409921736134145,-86.6630098,30.4099215,0.0264,https://www.openstreetmap.org/node/153354287,Representative OSM town place-label anchor: Mary Esther

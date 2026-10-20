@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Niceville,-237.99122619628906,725.6432495117188,-86.48217205222139,30.516864153951303,-86.482172,30.5168639,0.0286,https://www.openstreetmap.org/node/153629179,Representative OSM town place-label anchor: Niceville

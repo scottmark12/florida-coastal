@@ -1,2 +1,0 @@
-district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
-Fernandina Beach,242.89479064941406,742.875732421875,-81.46300248791015,30.67122836404423,-81.4630025,30.6712285,0.0151,https://www.openstreetmap.org/node/154081150,Representative OSM town place-label anchor: Fernandina Beach
