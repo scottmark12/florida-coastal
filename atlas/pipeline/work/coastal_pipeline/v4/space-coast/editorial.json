@@ -31,33 +31,71 @@
       "https://www.realtor.com/local/market/florida/brevard-county/satellite-beach"
     ],
     "cocoa": [
-      323750,
+      478750,
       "median listing price",
       "September 2026",
-      "https://www.realtor.com/local/market/florida/brevard-county/cocoa"
+      "https://www.realtor.com/local/market/florida/brevard-county"
     ],
     "titusville": [
       309000,
       "median listing price",
       "September 2026",
       "https://www.realtor.com/local/market/florida/brevard-county/titusville"
+    ],
+    "melbourne": [
+      399900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county"
+    ],
+    "cape-canaveral": [
+      339900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county"
+    ],
+    "merritt-island": [
+      507450,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county"
+    ],
+    "rockledge": [
+      386250,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county"
+    ],
+    "cocoa-village": [
+      323750,
+      "median listing price (Cocoa city)",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county"
+    ],
+    "indian-harbour-beach": [
+      455000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/brevard-county/indian-harbour-beach"
     ]
   },
   "recipes": {
     "palm-bay": {
       "walls": [
-        "#e4e5cf",
-        "#c9ded3",
-        "#f2deb8",
-        "#f4eddb"
+        "#e9d7b8",
+        "#d5e5d8",
+        "#edcdc3",
+        "#f6ebd5",
+        "#cadde0"
       ],
       "roofs": [
-        "#bac5b8",
-        "#d2d5c5"
+        "#b1c1bb",
+        "#d3d8ca",
+        "#b5a48e"
       ],
       "roof": "gable",
-      "detail": "stucco",
-      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/palm-bay/",
       "referenceScope": "regional context; palette is an editorial interpretation",
       "trim": [
         "#f6efdc",
@@ -66,18 +104,20 @@
     },
     "west-melbourne": {
       "walls": [
-        "#e4e5cf",
-        "#c9ded3",
-        "#f2deb8",
-        "#f4eddb"
+        "#e9d7b8",
+        "#d5e5d8",
+        "#edcdc3",
+        "#f6ebd5",
+        "#cadde0"
       ],
       "roofs": [
-        "#bac5b8",
-        "#d2d5c5"
+        "#b1c1bb",
+        "#d3d8ca",
+        "#b5a48e"
       ],
       "roof": "gable",
-      "detail": "stucco",
-      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/melbourne-and-the-beaches/",
       "referenceScope": "regional context; palette is an editorial interpretation",
       "trim": [
         "#f6efdc",
@@ -86,18 +126,20 @@
     },
     "melbourne-beach": {
       "walls": [
-        "#d3eadc",
-        "#f3c9c3",
-        "#f8e1ac",
-        "#f7f0dd"
+        "#e9d7b8",
+        "#d5e5d8",
+        "#edcdc3",
+        "#f6ebd5",
+        "#cadde0"
       ],
       "roofs": [
-        "#bdc9c3",
-        "#dce0d3"
+        "#b1c1bb",
+        "#d3d8ca",
+        "#b5a48e"
       ],
       "roof": "gable",
-      "detail": "porches",
-      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/melbourne-and-the-beaches/",
       "referenceScope": "regional context; palette is an editorial interpretation",
       "trim": [
         "#f6efdc",
@@ -106,18 +148,20 @@
     },
     "indialantic": {
       "walls": [
-        "#e4e5cf",
-        "#c9ded3",
-        "#f2deb8",
-        "#f4eddb"
+        "#e9d7b8",
+        "#d5e5d8",
+        "#edcdc3",
+        "#f6ebd5",
+        "#cadde0"
       ],
       "roofs": [
-        "#bac5b8",
-        "#d2d5c5"
+        "#b1c1bb",
+        "#d3d8ca",
+        "#b5a48e"
       ],
       "roof": "gable",
-      "detail": "stucco",
-      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/melbourne-and-the-beaches/",
       "referenceScope": "regional context; palette is an editorial interpretation",
       "trim": [
         "#f6efdc",
@@ -126,18 +170,19 @@
     },
     "satellite-beach": {
       "walls": [
-        "#f5edda",
-        "#c0dcd7",
-        "#e9d9c0",
-        "#d5e8e1"
+        "#f8f0dc",
+        "#d1e5de",
+        "#efcec6",
+        "#f2dfb5",
+        "#e3e6de"
       ],
       "roofs": [
-        "#d4dfd3",
-        "#a8c4bd"
+        "#b7c7c1",
+        "#dfdacc"
       ],
-      "roof": "flat",
-      "detail": "balconies",
-      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/melbourne-and-the-beaches/",
       "referenceScope": "regional context; palette is an editorial interpretation",
       "trim": [
         "#f6efdc",
@@ -146,18 +191,19 @@
     },
     "cocoa": {
       "walls": [
-        "#b9856b",
-        "#d2a68b",
-        "#ead4b5",
-        "#eee4ce"
+        "#f8f0dc",
+        "#d1e5de",
+        "#efcec6",
+        "#f2dfb5",
+        "#e3e6de"
       ],
       "roofs": [
-        "#b5aa93",
-        "#ddd8c7"
+        "#b7c7c1",
+        "#dfdacc"
       ],
-      "roof": "flat",
-      "detail": "stucco",
-      "source": "https://visitcocoavillage.com/discover/historic-walking-tour",
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.cityofcocoabeach.com/",
       "referenceScope": "district reference",
       "trim": [
         "#f6efdc",
@@ -166,18 +212,153 @@
     },
     "titusville": {
       "walls": [
-        "#b9856b",
-        "#d2a68b",
-        "#ead4b5",
-        "#eee4ce"
+        "#e9d7b8",
+        "#d5e5d8",
+        "#edcdc3",
+        "#f6ebd5",
+        "#cadde0"
       ],
       "roofs": [
-        "#b5aa93",
-        "#ddd8c7"
+        "#b1c1bb",
+        "#d3d8ca",
+        "#b5a48e"
       ],
-      "roof": "flat",
-      "detail": "stucco",
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/titusville/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "melbourne": {
+      "walls": [
+        "#e9d7b8",
+        "#d5e5d8",
+        "#edcdc3",
+        "#f6ebd5",
+        "#cadde0"
+      ],
+      "roofs": [
+        "#b1c1bb",
+        "#d3d8ca",
+        "#b5a48e"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/melbourne-and-the-beaches/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "cape-canaveral": {
+      "walls": [
+        "#f8f0dc",
+        "#d1e5de",
+        "#efcec6",
+        "#f2dfb5",
+        "#e3e6de"
+      ],
+      "roofs": [
+        "#b7c7c1",
+        "#dfdacc"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "merritt-island": {
+      "walls": [
+        "#e9d7b8",
+        "#d5e5d8",
+        "#edcdc3",
+        "#f6ebd5",
+        "#cadde0"
+      ],
+      "roofs": [
+        "#b1c1bb",
+        "#d3d8ca",
+        "#b5a48e"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
       "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "rockledge": {
+      "walls": [
+        "#e9d7b8",
+        "#d5e5d8",
+        "#edcdc3",
+        "#f6ebd5",
+        "#cadde0"
+      ],
+      "roofs": [
+        "#b1c1bb",
+        "#d3d8ca",
+        "#b5a48e"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "cocoa-village": {
+      "walls": [
+        "#e9d7b8",
+        "#d5e5d8",
+        "#edcdc3",
+        "#f6ebd5",
+        "#cadde0"
+      ],
+      "roofs": [
+        "#b1c1bb",
+        "#d3d8ca",
+        "#b5a48e"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://visitcocoavillage.com/discover/historic-walking-tour",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "indian-harbour-beach": {
+      "walls": [
+        "#f8f0dc",
+        "#d1e5de",
+        "#efcec6",
+        "#f2dfb5",
+        "#e3e6de"
+      ],
+      "roofs": [
+        "#b7c7c1",
+        "#dfdacc"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitspacecoast.com/explore/communities/melbourne-and-the-beaches/",
       "referenceScope": "regional context; palette is an editorial interpretation",
       "trim": [
         "#f6efdc",
@@ -186,6 +367,43 @@
     }
   },
   "manual_fixes": [
-    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory."
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Separated mainland Cocoa (new cocoa-village ID) from the existing cocoa ID, which remains Cocoa Beach; corrected the beach city price source.",
+    "Added six missing cities and coastal communities. Residential styles use the approved low-house recipe; explicit commercial and apartment tags retain their height handling.",
+    "Curated hero points at mapped parks, piers, historic streets and harbor entrances; West Melbourne retains its inland town anchor.",
+    "Added a small live OSM patch for the real VAB building and roads, with OSM height and NASA reference; no fabricated landmark position or footprint.",
+    "Public sightseeing/fishing piers are exported as decks without moored boats.",
+    "Extended measured WorldCover canopy to five hero frames outside the district-label raster windows.",
+    "Extended Cocoa Beach\u2019s source envelope and fetched actual OSM footprints around the pier, beyond the original seed box.",
+    "Cocoa Village displays the City of Cocoa market scope explicitly on its card, rather than claiming a neighborhood-specific median."
+  ],
+  "priceEvidence": {
+    "melbourne": {
+      "checked": "2026-10-20"
+    },
+    "cape-canaveral": {
+      "checked": "2026-10-20"
+    },
+    "merritt-island": {
+      "checked": "2026-10-20"
+    },
+    "rockledge": {
+      "checked": "2026-10-20"
+    },
+    "cocoa-village": {
+      "checked": "2026-10-20"
+    },
+    "indian-harbour-beach": {
+      "checked": "2026-10-20"
+    },
+    "cocoa": {
+      "checked": "2026-10-20",
+      "scope": "Cocoa Beach city; distinct from mainland Cocoa."
+    }
+  },
+  "nonBoatingWays": [
+    50841564,
+    470411685,
+    470411686
   ]
 }

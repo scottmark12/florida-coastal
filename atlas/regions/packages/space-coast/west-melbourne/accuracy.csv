@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+West Melbourne,326.4082946777344,456.3772888183594,-80.6718388395189,28.07362606410276,-80.6718389,28.0736261,0.0071,https://www.openstreetmap.org/node/154392864,Representative OSM town place-label anchor: West Melbourne

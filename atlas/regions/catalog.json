@@ -837,10 +837,10 @@
       "name": "Cocoa Beach",
       "region": "Space Coast",
       "coast": "atlantic",
-      "lat": 28.32,
-      "lon": -80.61,
+      "lat": 28.3184107,
+      "lon": -80.6094959,
       "tier": 2,
-      "price": null,
+      "price": "$478,750 median listing price \u00b7 September 2026",
       "vibes": [
         "active"
       ],
@@ -862,8 +862,8 @@
       "cons": [
         "Tourist traffic"
       ],
-      "x": 331.71951349855436,
-      "y": 483.89361345653975,
+      "x": 331.7736807370095,
+      "y": 483.7185336382012,
       "area_id": "space-coast",
       "area_name": "The Space Coast",
       "source_url": "https://www.floridacoastal.co/towns/cocoa.html",
@@ -3642,10 +3642,10 @@
       "name": "Indialantic",
       "region": "Space Coast",
       "coast": "atlantic",
-      "lat": 28.09,
-      "lon": -80.565,
+      "lat": 28.0911921,
+      "lon": -80.5679875,
       "tier": 2,
-      "price": null,
+      "price": "$665,000 median listing price \u00b7 September 2026",
       "vibes": [
         "active",
         "island"
@@ -3669,8 +3669,8 @@
         "Limited dining and shopping",
         "Island storm exposure"
       ],
-      "x": 336.8331632717051,
-      "y": 458.4823449529667,
+      "x": 336.53660312778925,
+      "y": 458.6065269388062,
       "area_id": "space-coast",
       "area_name": "The Space Coast",
       "source_url": "https://www.floridacoastal.co/towns/indialantic.html",
@@ -3681,10 +3681,10 @@
       "name": "Melbourne Beach",
       "region": "Space Coast",
       "coast": "atlantic",
-      "lat": 28.069,
-      "lon": -80.562,
+      "lat": 28.0684067,
+      "lon": -80.5607951,
       "tier": 3,
-      "price": null,
+      "price": "$820,000 median listing price \u00b7 September 2026",
       "vibes": [
         "active"
       ],
@@ -3707,8 +3707,8 @@
         "Few restaurants",
         "Limited homes for sale"
       ],
-      "x": 337.1922770828023,
-      "y": 456.1592714737234,
+      "x": 337.3122580703981,
+      "y": 456.0967028349109,
       "area_id": "space-coast",
       "area_name": "The Space Coast",
       "source_url": "https://www.floridacoastal.co/towns/melbourne-beach.html",
@@ -3719,10 +3719,10 @@
       "name": "Palm Bay",
       "region": "Space Coast",
       "coast": "atlantic",
-      "lat": 28.035,
-      "lon": -80.589,
+      "lat": 27.9946969,
+      "lon": -80.6366144,
       "tier": 1,
-      "price": null,
+      "price": "$355,000 median listing price \u00b7 September 2026",
       "vibes": [
         "afford"
       ],
@@ -3745,8 +3745,8 @@
         "Sprawling and car dependent",
         "No downtown or beach of its own"
       ],
-      "x": 334.64928010199975,
-      "y": 452.3112768654951,
+      "x": 330.1011168048335,
+      "y": 447.70874495670165,
       "area_id": "space-coast",
       "area_name": "The Space Coast",
       "source_url": "https://www.floridacoastal.co/towns/palm-bay.html",
@@ -3757,10 +3757,10 @@
       "name": "Satellite Beach",
       "region": "Space Coast",
       "coast": "atlantic",
-      "lat": 28.176,
-      "lon": -80.59,
+      "lat": 28.1760051,
+      "lon": -80.5904623,
       "tier": 2,
-      "price": null,
+      "price": "$520,000 median listing price \u00b7 September 2026",
       "vibes": [
         "active"
       ],
@@ -3783,8 +3783,8 @@
         "Few restaurants and no downtown",
         "A narrow, eroding beach in spots"
       ],
-      "x": 334.11823689991957,
-      "y": 467.96150660998336,
+      "x": 334.07293575927156,
+      "y": 467.96082027385404,
       "area_id": "space-coast",
       "area_name": "The Space Coast",
       "source_url": "https://www.floridacoastal.co/towns/satellite-beach.html",
@@ -3795,10 +3795,10 @@
       "name": "Titusville",
       "region": "Space Coast",
       "coast": "atlantic",
-      "lat": 28.612,
-      "lon": -80.808,
+      "lat": 28.6126236,
+      "lon": -80.8079545,
       "tier": 1,
-      "price": null,
+      "price": "$309,000 median listing price \u00b7 September 2026",
       "vibes": [
         "afford"
       ],
@@ -3821,8 +3821,8 @@
         "A quiet downtown",
         "The beach is a 20 minute drive"
       ],
-      "x": 311.50988960065547,
-      "y": 515.7941029923406,
+      "x": 311.51253652267076,
+      "y": 515.8634487374985,
       "area_id": "space-coast",
       "area_name": "The Space Coast",
       "source_url": "https://www.floridacoastal.co/towns/titusville.html",
@@ -3833,10 +3833,10 @@
       "name": "West Melbourne",
       "region": "Space Coast",
       "coast": "atlantic",
-      "lat": 28.072,
-      "lon": -80.654,
+      "lat": 28.0736261,
+      "lon": -80.6718389,
       "tier": 1,
-      "price": null,
+      "price": "$392,000 median listing price \u00b7 September 2026",
       "vibes": [
         "afford"
       ],
@@ -3859,8 +3859,8 @@
         "Not on the water",
         "Suburban, with no downtown"
       ],
-      "x": 328.1623040180318,
-      "y": 456.244116241894,
+      "x": 326.40828863992806,
+      "y": 456.37729264342136,
       "area_id": "space-coast",
       "area_name": "The Space Coast",
       "source_url": "https://www.floridacoastal.co/towns/west-melbourne.html",
@@ -5379,6 +5379,120 @@
       "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
       "x": 373.7346692100232,
       "y": 371.3687252120372
+    },
+    {
+      "id": "melbourne",
+      "name": "Melbourne",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.6077908,
+      "lat": 28.0785034,
+      "price": "$399,900 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "walk"
+      ],
+      "blurb": "Downtown streets, Crane Creek harbor and the causeway across the Indian River.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "x": 332.6733168310109,
+      "y": 457.0899050201469
+    },
+    {
+      "id": "cape-canaveral",
+      "name": "Cape Canaveral",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.6056464,
+      "lat": 28.3881442,
+      "price": "$339,900 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Low beach neighborhoods, oceanfront condos and the working cruise port to the north.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "x": 331.93712892748994,
+      "y": 491.47034282077914
+    },
+    {
+      "id": "merritt-island",
+      "name": "Merritt Island",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.6968385,
+      "lat": 28.3581193,
+      "price": "$507,450 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Canal homes and marinas between the Indian and Banana rivers, with broad natural preserves.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "x": 323.1108355353931,
+      "y": 487.8948968074935
+    },
+    {
+      "id": "rockledge",
+      "name": "Rockledge",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.7349162,
+      "lat": 28.330831,
+      "price": "$386,250 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "walk"
+      ],
+      "blurb": "Historic riverfront homes, oak-lined streets and low mainland neighborhoods.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "x": 319.4672341402951,
+      "y": 484.7662099504507
+    },
+    {
+      "id": "cocoa-village",
+      "name": "Cocoa Village",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.7325345,
+      "lat": 28.3556635,
+      "price": "$323,750 median listing price (Cocoa city) \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "walk"
+      ],
+      "blurb": "Historic Cocoa Village\u2019s colorful shopping blocks and riverfront park on the mainland.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "x": 319.6271480579291,
+      "y": 487.5292331607403
+    },
+    {
+      "id": "indian-harbour-beach",
+      "name": "Indian Harbour Beach",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.5868802,
+      "lat": 28.1489365,
+      "price": "$455,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Beachside homes, oceanfront condos, Gleason Park and lagoon-side canals.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "x": 334.5070211251245,
+      "y": 464.9655350691114
     }
   ],
   "regions": [
@@ -5761,11 +5875,17 @@
       "text": "The coast around Cape Canaveral, where rocket launches are part of the view. Surf towns line the barrier island, and the mainland cities have some of the lowest prices near the Atlantic.",
       "towns": [
         "palm-bay",
-        "west-melbourne",
         "melbourne-beach",
+        "west-melbourne",
+        "melbourne",
         "indialantic",
+        "indian-harbour-beach",
         "satellite-beach",
         "cocoa",
+        "rockledge",
+        "cocoa-village",
+        "merritt-island",
+        "cape-canaveral",
         "titusville"
       ],
       "center": [

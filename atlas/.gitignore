@@ -33,3 +33,6 @@ __pycache__/
 /pipeline/work/coastal_pipeline/deps/
 .DS_Store
 # Size cannot be expressed in gitignore: check_handoff.py rejects files over 50 MB.
+
+# Re-downloadable WorldCover windows centered on hero cameras
+pipeline/work/coastal_pipeline/v4/**/*-hero-canopy.png

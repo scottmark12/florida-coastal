@@ -1,0 +1,122 @@
+{
+  "id": "space-coast/cape-canaveral",
+  "name": "Cape Canaveral",
+  "towns": [
+    "cape-canaveral"
+  ],
+  "bounds": [
+    -80.67,
+    28.36,
+    -80.57,
+    28.425
+  ],
+  "recipes": "work/coastal_pipeline/v4/space-coast/recipes.json",
+  "camera": {
+    "center": [
+      331.93712892748994,
+      491.47034282077914
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "cape-canaveral-center": "cape-canaveral"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Separated mainland Cocoa (new cocoa-village ID) from the existing cocoa ID, which remains Cocoa Beach; corrected the beach city price source.",
+    "Added six missing cities and coastal communities. Residential styles use the approved low-house recipe; explicit commercial and apartment tags retain their height handling.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/space-coast/geography.json.gz",
+      "work/coastal_pipeline/v4/space-coast/cover.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-cape-canaveral.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/space-coast/districts.json",
+    "prices": "work/coastal_pipeline/v4/space-coast/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/space-coast/cape-canaveral/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/space-coast/cape-canaveral/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/space-coast/cape-canaveral/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/space-coast/cape-canaveral/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/space-coast/cape-canaveral/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/cape-canaveral-center-worldcover-2021.png",
+        "bounds": [
+          -80.62966666666667,
+          28.364166666666666,
+          -80.58166666666666,
+          28.412166666666668
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "cape-canaveral-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/cape-canaveral-hero-canopy.png",
+        "bounds": [
+          -80.61766666666666,
+          28.382833333333334,
+          -80.56966666666666,
+          28.430833333333332
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "cape-canaveral-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10,
+        "scope": "Additional real canopy coverage centered on the curated hero, not an inferred default."
+      }
+    ]
+  }
+}

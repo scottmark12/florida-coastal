@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Satellite Beach,334.07293701171875,467.9608154296875,-80.59046228859069,28.176005056086,-80.5904623,28.1760051,0.005,https://www.openstreetmap.org/node/154354025,Representative OSM town place-label anchor: Satellite Beach

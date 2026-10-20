@@ -2,6 +2,97 @@
   "description": "Illustrated marina occupancy from mapped dock geometry; not real-time boats.",
   "towns": [
     {
+      "town": "palm-bay",
+      "boats": 428,
+      "mapped_docks": 86,
+      "placement_sources": 87,
+      "mapped_marina_areas": 4
+    },
+    {
+      "town": "melbourne-beach",
+      "boats": 613,
+      "mapped_docks": 133,
+      "placement_sources": 134,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "west-melbourne",
+      "boats": 406,
+      "mapped_docks": 78,
+      "placement_sources": 78,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "melbourne",
+      "boats": 703,
+      "mapped_docks": 126,
+      "placement_sources": 127,
+      "mapped_marina_areas": 8
+    },
+    {
+      "town": "indialantic",
+      "boats": 491,
+      "mapped_docks": 103,
+      "placement_sources": 103,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "indian-harbour-beach",
+      "boats": 1017,
+      "mapped_docks": 173,
+      "placement_sources": 174,
+      "mapped_marina_areas": 6
+    },
+    {
+      "town": "satellite-beach",
+      "boats": 906,
+      "mapped_docks": 157,
+      "placement_sources": 157,
+      "mapped_marina_areas": 3
+    },
+    {
+      "town": "cocoa",
+      "boats": 83,
+      "mapped_docks": 14,
+      "placement_sources": 15,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "rockledge",
+      "boats": 845,
+      "mapped_docks": 74,
+      "placement_sources": 78,
+      "mapped_marina_areas": 5
+    },
+    {
+      "town": "cocoa-village",
+      "boats": 697,
+      "mapped_docks": 49,
+      "placement_sources": 53,
+      "mapped_marina_areas": 5
+    },
+    {
+      "town": "merritt-island",
+      "boats": 1225,
+      "mapped_docks": 65,
+      "placement_sources": 73,
+      "mapped_marina_areas": 10
+    },
+    {
+      "town": "cape-canaveral",
+      "boats": 780,
+      "mapped_docks": 46,
+      "placement_sources": 47,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "titusville",
+      "boats": 382,
+      "mapped_docks": 36,
+      "placement_sources": 37,
+      "mapped_marina_areas": 7
+    },
+    {
       "town": "hobe-sound",
       "boats": 0,
       "mapped_docks": 0,
@@ -490,5 +581,5 @@
       "mapped_docks": 0
     }
   ],
-  "total_boats": 22478
+  "total_boats": 31054
 }

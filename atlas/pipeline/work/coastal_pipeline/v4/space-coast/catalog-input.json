@@ -1,0 +1,490 @@
+{
+  "region": {
+    "id": "space-coast",
+    "coast": "atlantic",
+    "name": "The Space Coast",
+    "map": "Space Coast",
+    "at": [
+      28.25,
+      -80.6
+    ],
+    "side": "E",
+    "img": "img/titusville.jpg",
+    "pos": "20% center",
+    "hpos": "center 12%",
+    "text": "The coast around Cape Canaveral, where rocket launches are part of the view. Surf towns line the barrier island, and the mainland cities have some of the lowest prices near the Atlantic.",
+    "towns": [
+      "palm-bay",
+      "melbourne-beach",
+      "west-melbourne",
+      "melbourne",
+      "indialantic",
+      "indian-harbour-beach",
+      "satellite-beach",
+      "cocoa",
+      "rockledge",
+      "cocoa-village",
+      "merritt-island",
+      "cape-canaveral",
+      "titusville"
+    ],
+    "center": [
+      330.59780921052396,
+      470.12089037042045
+    ]
+  },
+  "towns": [
+    {
+      "id": "cocoa",
+      "name": "Cocoa Beach",
+      "region": "Space Coast",
+      "coast": "atlantic",
+      "lat": 28.32,
+      "lon": -80.61,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "active"
+      ],
+      "airport": "Orlando (MCO), about 50 minutes, or Melbourne (MLB), about 40",
+      "season": "Busy spring and summer",
+      "watch": "Hurricane exposure",
+      "blurb": "A classic surf town where you can watch rocket launches from the sand.",
+      "day": "You surf in the morning and watch a launch from the beach in the evening.",
+      "todo": [
+        [
+          "Cocoa Beach Pier",
+          "Surfing and the classic pier."
+        ]
+      ],
+      "pros": [
+        "Surf culture",
+        "Near Orlando"
+      ],
+      "cons": [
+        "Tourist traffic"
+      ],
+      "x": 331.71951349855436,
+      "y": 483.89361345653975,
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.floridacoastal.co/towns/cocoa.html",
+      "nearest_town_km": 16.11166976220485,
+      "source_bounds": [
+        -80.65,
+        28.285,
+        -80.57,
+        28.395
+      ]
+    },
+    {
+      "id": "indialantic",
+      "name": "Indialantic",
+      "region": "Space Coast",
+      "coast": "atlantic",
+      "lat": 28.09,
+      "lon": -80.565,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "active",
+        "island"
+      ],
+      "airport": "Melbourne (MLB), about 15 minutes",
+      "season": "Easygoing year round",
+      "watch": "Barrier island hurricane exposure",
+      "blurb": "A small oceanside town with a boardwalk, a couple of surf shops and rocket launches you can watch from the sand.",
+      "day": "You surf before breakfast, walk Fifth Avenue for a taco and watch a launch light up the sky after dinner.",
+      "todo": [
+        [
+          "Indialantic Boardwalk",
+          "A short oceanfront boardwalk with easy beach access."
+        ]
+      ],
+      "pros": [
+        "A quiet beach town",
+        "Uncrowded surf"
+      ],
+      "cons": [
+        "Limited dining and shopping",
+        "Island storm exposure"
+      ],
+      "x": 336.8331632717051,
+      "y": 458.4823449529667,
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.floridacoastal.co/towns/indialantic.html",
+      "nearest_town_km": 2.35066652660142,
+      "source_bounds": [
+        -80.605,
+        28.055,
+        -80.52499999999999,
+        28.125
+      ]
+    },
+    {
+      "id": "melbourne-beach",
+      "name": "Melbourne Beach",
+      "region": "Space Coast",
+      "coast": "atlantic",
+      "lat": 28.069,
+      "lon": -80.562,
+      "tier": 3,
+      "price": null,
+      "vibes": [
+        "active"
+      ],
+      "airport": "Melbourne (MLB), about 20 minutes",
+      "season": "Quiet year round",
+      "watch": "Barrier island hurricane exposure",
+      "blurb": "One of the oldest beach towns on the Space Coast, a few quiet streets between the ocean and the Indian River.",
+      "day": "You walk the historic pier on the river at sunrise, and in summer you can book a guided night walk to see sea turtles nest.",
+      "todo": [
+        [
+          "Archie Carr National Wildlife Refuge",
+          "One of the most important sea turtle nesting beaches in the world."
+        ]
+      ],
+      "pros": [
+        "Very quiet and residential",
+        "Natural, uncrowded beaches"
+      ],
+      "cons": [
+        "Few restaurants",
+        "Limited homes for sale"
+      ],
+      "x": 337.1922770828023,
+      "y": 456.1592714737234,
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.floridacoastal.co/towns/melbourne-beach.html",
+      "nearest_town_km": 2.35066652660142,
+      "source_bounds": [
+        -80.602,
+        28.034,
+        -80.52199999999999,
+        28.104
+      ]
+    },
+    {
+      "id": "palm-bay",
+      "name": "Palm Bay",
+      "region": "Space Coast",
+      "coast": "atlantic",
+      "lat": 28.035,
+      "lon": -80.589,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford"
+      ],
+      "airport": "Melbourne (MLB), about 15 minutes",
+      "season": "Steady year round",
+      "watch": "Spread out, and not on the ocean",
+      "blurb": "The biggest city on the Space Coast, with lots of land, newer homes and some of the lowest prices near the beach.",
+      "day": "You hike Turkey Creek Sanctuary in the morning and drive 20 minutes to the beach in the afternoon.",
+      "todo": [
+        [
+          "Turkey Creek Sanctuary",
+          "Boardwalks and trails along a quiet creek."
+        ]
+      ],
+      "pros": [
+        "Affordable",
+        "Close to aerospace and tech jobs"
+      ],
+      "cons": [
+        "Sprawling and car dependent",
+        "No downtown or beach of its own"
+      ],
+      "x": 334.64928010199975,
+      "y": 452.3112768654951,
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.floridacoastal.co/towns/palm-bay.html",
+      "nearest_town_km": 4.612363401698211,
+      "source_bounds": [
+        -80.629,
+        28.0,
+        -80.54899999999999,
+        28.07
+      ]
+    },
+    {
+      "id": "satellite-beach",
+      "name": "Satellite Beach",
+      "region": "Space Coast",
+      "coast": "atlantic",
+      "lat": 28.176,
+      "lon": -80.59,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "active"
+      ],
+      "airport": "Melbourne (MLB), about 20 minutes",
+      "season": "Easygoing year round",
+      "watch": "Beach erosion, hurricane exposure. Beach parking is paid year round",
+      "blurb": "A residential beach town between the ocean and the Banana River, with surf breaks, parks and front row launch views.",
+      "day": "You surf at sunrise, hit the skate park or the dog park and watch a rocket go up from your street.",
+      "todo": [
+        [
+          "Pelican Beach Park",
+          "A beachfront park with pavilions and a dune crossover."
+        ]
+      ],
+      "pros": [
+        "Quiet, with parks everywhere",
+        "Good surf"
+      ],
+      "cons": [
+        "Few restaurants and no downtown",
+        "A narrow, eroding beach in spots"
+      ],
+      "x": 334.11823689991957,
+      "y": 467.96150660998336,
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.floridacoastal.co/towns/satellite-beach.html",
+      "nearest_town_km": 9.86029061052825,
+      "source_bounds": [
+        -80.63000000000001,
+        28.141,
+        -80.55,
+        28.211
+      ]
+    },
+    {
+      "id": "titusville",
+      "name": "Titusville",
+      "region": "Space Coast",
+      "coast": "atlantic",
+      "lat": 28.612,
+      "lon": -80.808,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford"
+      ],
+      "airport": "Orlando (MCO), about 45 minutes",
+      "season": "Busy on launch days",
+      "watch": "Hurricane exposure, lagoon water quality",
+      "blurb": "The town across the river from the launch pads, with the best rocket views anywhere and a huge wildlife refuge next door.",
+      "day": "You bike the trail downtown, watch a launch from the riverfront and drive the wildlife loop at Merritt Island at dusk.",
+      "todo": [
+        [
+          "Merritt Island National Wildlife Refuge",
+          "140,000 acres of marsh and scrub next to Canaveral National Seashore."
+        ]
+      ],
+      "pros": [
+        "Affordable",
+        "Launches and wild beaches close by"
+      ],
+      "cons": [
+        "A quiet downtown",
+        "The beach is a 20 minute drive"
+      ],
+      "x": 311.50988960065547,
+      "y": 515.7941029923406,
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.floridacoastal.co/towns/titusville.html",
+      "nearest_town_km": 37.76334374387771,
+      "source_bounds": [
+        -80.86,
+        28.5,
+        -80.6,
+        28.66
+      ]
+    },
+    {
+      "id": "west-melbourne",
+      "name": "West Melbourne",
+      "region": "Space Coast",
+      "coast": "atlantic",
+      "lat": 28.072,
+      "lon": -80.654,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford"
+      ],
+      "airport": "Melbourne (MLB), about 10 minutes",
+      "season": "Steady year round",
+      "watch": "Inland, with traffic on the main roads",
+      "blurb": "A fast growing inland city with newer neighborhoods and big box shopping, 20 minutes from the beach.",
+      "day": "You run errands in ten minutes flat and save the beach for the weekend.",
+      "todo": [
+        [
+          "Space Coast Field of Dreams",
+          "An accessible sports park and community gathering spot."
+        ]
+      ],
+      "pros": [
+        "Newer homes at lower prices",
+        "Convenient shopping"
+      ],
+      "cons": [
+        "Not on the water",
+        "Suburban, with no downtown"
+      ],
+      "x": 328.1623040180318,
+      "y": 456.244116241894,
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.floridacoastal.co/towns/west-melbourne.html",
+      "nearest_town_km": 7.586045364649875,
+      "source_bounds": [
+        -80.694,
+        28.037,
+        -80.61399999999999,
+        28.107
+      ]
+    },
+    {
+      "id": "melbourne",
+      "name": "Melbourne",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.606,
+      "lat": 28.0836,
+      "price": "$399,900 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "walk"
+      ],
+      "blurb": "Downtown streets, Crane Creek harbor and the causeway across the Indian River.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "source_bounds": [
+        -80.66,
+        28.04,
+        -80.57,
+        28.17
+      ]
+    },
+    {
+      "id": "cape-canaveral",
+      "name": "Cape Canaveral",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.604,
+      "lat": 28.392,
+      "price": "$339,900 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Low beach neighborhoods, oceanfront condos and the working cruise port to the north.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "source_bounds": [
+        -80.67,
+        28.36,
+        -80.57,
+        28.425
+      ]
+    },
+    {
+      "id": "merritt-island",
+      "name": "Merritt Island",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.685,
+      "lat": 28.358,
+      "price": "$507,450 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Canal homes and marinas between the Indian and Banana rivers, with broad natural preserves.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "source_bounds": [
+        -80.75,
+        28.31,
+        -80.62,
+        28.41
+      ]
+    },
+    {
+      "id": "rockledge",
+      "name": "Rockledge",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.731,
+      "lat": 28.321,
+      "price": "$386,250 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "walk"
+      ],
+      "blurb": "Historic riverfront homes, oak-lined streets and low mainland neighborhoods.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "source_bounds": [
+        -80.771,
+        28.286,
+        -80.69099999999999,
+        28.356
+      ]
+    },
+    {
+      "id": "cocoa-village",
+      "name": "Cocoa",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.737,
+      "lat": 28.356,
+      "price": "$323,750 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "walk"
+      ],
+      "blurb": "Historic Cocoa Village\u2019s colorful shopping blocks and riverfront park on the mainland.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "source_bounds": [
+        -80.78,
+        28.32,
+        -80.7,
+        28.4
+      ]
+    },
+    {
+      "id": "indian-harbour-beach",
+      "name": "Indian Harbour Beach",
+      "region": "Atlantic Coast \u00b7 Space Coast",
+      "coast": "atlantic",
+      "lon": -80.588,
+      "lat": 28.148,
+      "price": "$455,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Beachside homes, oceanfront condos, Gleason Park and lagoon-side canals.",
+      "area_id": "space-coast",
+      "area_name": "The Space Coast",
+      "source_url": "https://www.visitspacecoast.com/explore/communities/cocoa-merritt-island/",
+      "source_bounds": [
+        -80.628,
+        28.113,
+        -80.54799999999999,
+        28.183
+      ]
+    }
+  ],
+  "bounds": [
+    -80.92800000000001,
+    27.915,
+    -80.442,
+    28.732
+  ]
+}

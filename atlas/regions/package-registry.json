@@ -129,5 +129,18 @@
   "port-salerno": "packages/treasure-coast/port-salerno/",
   "sewalls-point": "packages/treasure-coast/sewalls-point/",
   "indian-river-shores": "packages/treasure-coast/indian-river-shores/",
-  "hutchinson-island": "packages/treasure-coast/hutchinson-island/"
+  "hutchinson-island": "packages/treasure-coast/hutchinson-island/",
+  "cocoa": "packages/space-coast/cocoa/",
+  "indialantic": "packages/space-coast/indialantic/",
+  "melbourne-beach": "packages/space-coast/melbourne-beach/",
+  "palm-bay": "packages/space-coast/palm-bay/",
+  "satellite-beach": "packages/space-coast/satellite-beach/",
+  "titusville": "packages/space-coast/titusville/",
+  "west-melbourne": "packages/space-coast/west-melbourne/",
+  "melbourne": "packages/space-coast/melbourne/",
+  "cape-canaveral": "packages/space-coast/cape-canaveral/",
+  "merritt-island": "packages/space-coast/merritt-island/",
+  "rockledge": "packages/space-coast/rockledge/",
+  "cocoa-village": "packages/space-coast/cocoa-village/",
+  "indian-harbour-beach": "packages/space-coast/indian-harbour-beach/"
 }

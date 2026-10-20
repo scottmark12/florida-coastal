@@ -6,7 +6,7 @@ from pathlib import Path
 import json,csv,sys,re,shutil,html
 from PIL import Image,ImageDraw
 P=Path(__file__).resolve().parent;A=P.parent;rid=sys.argv[1];shots=Path(sys.argv[2]);src=P/'work/coastal_pipeline/v4'/rid;out=A/'regions/packages'/rid
-catalog=json.load(open(src/'catalog-input.json'));ids=catalog['region']['towns'];towns={t['id']:t for t in catalog['towns']};preview=out/'previews';preview.mkdir(exist_ok=True);cards=[];reports=[]
+catalog=json.load(open(src/'catalog-input.json'));ids=catalog['region']['towns'];towns={t['id']:t for t in catalog['towns']};towns.update({t['id']:t for t in json.load(open(A/'regions/catalog.json'))['towns'] if t['id'] in towns});preview=out/'previews';preview.mkdir(exist_ok=True);cards=[];reports=[]
 qa=json.load(open(shots/'browser-checks.json'))
 for check in qa['towns']:
  assert check['active']==check['id'] and not check['errors'],check

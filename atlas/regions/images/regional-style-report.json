@@ -127,25 +127,6 @@
     },
     {
       "bounds": [
-        262.96825552192195,
-        293.9507377942257,
-        402.22901069001455,
-        397.1020924848175
-      ],
-      "width": 2304,
-      "height": 1707,
-      "counts": {
-        "buildings": 513912,
-        "roads": 63727,
-        "preserve_landcover_areas": 76847
-      },
-      "region": "space-coast",
-      "output_bytes": 210136,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         225.10034213700698,
         366.3453250531644,
         359.28093475788836,
@@ -241,25 +222,6 @@
     },
     {
       "bounds": [
-        -425.1888477351769,
-        -226.66663311517388,
-        558.5359493042099,
-        742.9916716839022
-      ],
-      "width": 4096,
-      "height": 4037,
-      "counts": {
-        "buildings": 0,
-        "roads": 862124,
-        "preserve_landcover_areas": 970616
-      },
-      "region": "_backdrop",
-      "output_bytes": 594630,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         294.26934615412694,
         230.80647494449696,
         442.6279579582726,
@@ -274,6 +236,44 @@
       },
       "region": "treasure-coast",
       "output_bytes": 197538,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        -425.1888477351769,
+        -226.66663311517388,
+        558.5359493042099,
+        742.9916716839022
+      ],
+      "width": 4096,
+      "height": 4037,
+      "counts": {
+        "buildings": 0,
+        "roads": 862124,
+        "preserve_landcover_areas": 970616
+      },
+      "region": "_backdrop",
+      "output_bytes": 595016,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        262.96825552192195,
+        293.9507377942257,
+        402.22901069001455,
+        397.1020924848175
+      ],
+      "width": 2304,
+      "height": 1707,
+      "counts": {
+        "buildings": 513912,
+        "roads": 63727,
+        "preserve_landcover_areas": 76847
+      },
+      "region": "space-coast",
+      "output_bytes": 241626,
       "landcover_fraction": 1.0,
       "sourceOnly": true
     }
