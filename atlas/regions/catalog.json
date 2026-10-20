@@ -5219,8 +5219,8 @@
     {
       "id": "tampa-bay",
       "coast": "gulf",
-      "name": "Tampa Bay & Sarasota Coast",
-      "map": "Tampa Bay & Sarasota Coast",
+      "name": "Tampa Bay",
+      "map": "Tampa Bay",
       "at": [
         27.65,
         -82.55
@@ -5229,7 +5229,7 @@
       "img": "img/st-pete-beach.jpg",
       "pos": "30% center",
       "hpos": "center 50%",
-      "text": "One continuous Gulf coast: Tampa and St. Petersburg around the bay, the Pinellas beaches, then Anna Maria, Bradenton, Sarasota and the barrier islands south through Englewood.",
+      "text": "Tampa Bay, the Pinellas beaches, Anna Maria Island, Bradenton and Sarasota, south through Siesta Key.",
       "towns": [
         "hudson",
         "port-richey",
@@ -5288,7 +5288,9 @@
         "new-port-richey",
         "holiday",
         "tarpon-springs",
-        "palm-harbor"
+        "palm-harbor",
+        "venice",
+        "englewood"
       ],
       "regionalTowns": [
         "oldsmar",
@@ -5319,9 +5321,7 @@
         "ami",
         "longboat",
         "sarasota",
-        "siesta-key",
-        "venice",
-        "englewood"
+        "siesta-key"
       ]
     },
     {
