@@ -1,0 +1,34 @@
+{
+  "tampa-bay": {
+    "file": "images/sarasota-bradenton.webp",
+    "width": 3072,
+    "height": 3072,
+    "camera": {
+      "bottom": -117.04722135863386,
+      "far": 1170.4722135863385,
+      "left": -117.04722135863386,
+      "mapUnits": "kilometers",
+      "near": 11.704722135863388,
+      "position": [
+        144.55364443164265,
+        292.6180533965846,
+        -97.91481233717168
+      ],
+      "projection": "orthographic",
+      "right": 117.04722135863386,
+      "target": [
+        144.55364443164265,
+        0,
+        -390.5328657337563
+      ],
+      "tiltDegrees": 45,
+      "top": 117.04722135863386
+    },
+    "bytes": 363284,
+    "revision": "593fb00f68d55c09",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0",
+    "reference": "Approved Sarasota and Bradenton regional capture",
+    "presentation": "approved-source",
+    "waterColor": "#3593ae"
+  }
+}

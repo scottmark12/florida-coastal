@@ -15,6 +15,7 @@ const backdropMeta=await fetch(assetBase+'region-backdrop.json').then(r=>r.json(
 const overviewLayers=new Map();
 const townViews=await fetch(assetBase+'town-views.json').then(r=>r.json());
 const towns=catalog.towns, regions=catalog.regions, byId=Object.fromEntries(towns.map(t=>[t.id,t]));
+const regionalTownIds=r=>r.regionalTowns||r.towns;
 const qs=new URLSearchParams(location.search);const landing=qs.get('landing')==='1';if(landing)document.documentElement.classList.add('landing-export');
 let selectedLake=null;
 let thirty=null,thirtyModel=null,sandArt=null,alysArt=null,alysOccupied=[];
@@ -68,7 +69,7 @@ function setCamera(){
  if(isDetailed()&&detailedLayer){if(level==='region'){const c=detailedLayer.meta.camera||{center:[detailedLayer.meta.center[0]+1,detailedLayer.meta.center[1]],phoneOffsetY:4,phoneSpan:20,desktopSpan:32};target.set(c.center[0]+(innerWidth<700?0:(c.desktopOffsetX||0)),0,-c.center[1]+(innerWidth<700?c.phoneOffsetY:0));span=innerWidth<700?c.phoneSpan:c.desktopSpan}else{const d=selectedDistrict||detailedLayer.meta.districts[0];target.set(d.x,0,-d.y);span=innerWidth<700?1.05:1.9}}
  // Fit every town in the selected coastal region, within the unobstructed map area.
  if(level==='region'){
-  const points=region.towns.map(id=>byId[id]).filter(Boolean);
+  const points=regionalTownIds(region).map(id=>byId[id]).filter(Boolean);
   const xs=points.map(t=>t.x),ys=points.map(t=>t.y/Math.SQRT2);
   const left=innerWidth<700?24:48,right=innerWidth<700?innerWidth-24:innerWidth-330;
   const top=innerWidth<700?125:145,bottom=innerWidth<700?innerHeight-Math.min(innerHeight*.34,300)-40:innerHeight-65;
@@ -91,7 +92,7 @@ function setCamera(){
  }
  if(level==='region'&&qs.get('regionalExport')==='1')span*=Number(qs.get('exportPadding')||region.regionalExport?.padding||1.6);
  const mapHeight=innerHeight;renderer.setSize(innerWidth,mapHeight);const a=innerWidth/mapHeight, height=level==='state'?Math.max(span,span/(a*.9)):span/a;camera.left=-height*a/2;camera.right=height*a/2;camera.top=height/2;camera.bottom=-height/2;camera.position.copy(target).add(new THREE.Vector3(0,height*1.25,height*1.25));camera.lookAt(target);camera.near=level==='region'&&overviewRegistry[region.id]?height*.05:.0001;camera.far=level==='region'&&overviewRegistry[region.id]?height*5:3500;camera.updateProjectionMatrix();sun.position.copy(target).add(new THREE.Vector3(-height,height*1.5,height*.6));sun.target.position.copy(target);Object.assign(sun.shadow.camera,{left:-height,right:height,top:height,bottom:-height,near:.001,far:height*5});sun.shadow.camera.updateProjectionMatrix();sun.shadow.normalBias=(isThirty()||isDetailed())?.0001:.06;sun.shadow.bias=level==='region'&&overviewRegistry[region.id]?-.0001/(height*5):-.0003;
- $('#scale').textContent=level==='state'?'Florida · regional overview':level==='region'?region.map+' · all '+region.towns.length+' towns':(isThirty()?(selectedLake?selectedLake.name+' · mapped dune lake':'Neighborhood view · 850 m across · 3× height, capped at 3× footprint'):'Neighborhood view · illustrated building scale');
+ $('#scale').textContent=level==='state'?'Florida · regional overview':level==='region'?region.map+' · all '+regionalTownIds(region).length+' towns':(isThirty()?(selectedLake?selectedLake.name+' · mapped dune lake':'Neighborhood view · 850 m across · 3× height, capped at 3× footprint'):'Neighborhood view · illustrated building scale');
 }
 function renderFlatRegion(){
  camera.updateMatrixWorld(true);
@@ -167,7 +168,7 @@ function updateUi(){
  document.querySelectorAll('[data-level]').forEach(b=>{b.classList.toggle('active',b.dataset.level===level);b.setAttribute('aria-pressed',b.dataset.level===level)});
  $('#region-select').value=region.id;
  $('#town-title').textContent='Towns in '+region.map;$('#town-list').replaceChildren();
- for(const id of region.towns){const t=byId[id];if(!t)continue;const b=document.createElement('button');b.textContent=t.name;b.dataset.town=id;b.classList.toggle('active',id===activeTown.id);b.setAttribute('aria-pressed',id===activeTown.id);b.onclick=()=>chooseTown(id);$('#town-list').append(b)}
+ for(const id of regionalTownIds(region)){const t=byId[id];if(!t)continue;const b=document.createElement('button');b.textContent=t.name;b.dataset.town=id;b.classList.toggle('active',id===activeTown.id);b.setAttribute('aria-pressed',id===activeTown.id);b.onclick=()=>chooseTown(id);$('#town-list').append(b)}
  $('#title').textContent=level==='state'?'Find your stretch of coast':level==='region'?region.map:(isThirty()&&selectedLake?selectedLake.name:selectedDistrict?.name)||activeTown.name;
  $('#subtitle').textContent=level==='state'?'Choose a region to compare places.':level==='region'?'Compare towns, then explore their neighborhoods.':'Tap a district for its character and housing context.';
  $('#district-list').replaceChildren();const available=isDetailed()?detailedLayer.meta.districts:districts;const ds=available.filter(d=>d.town===activeTown.id||(activeTown.id==='southbeach'&&d.town==='miami'));
@@ -190,7 +191,7 @@ function label(text,x,y,kind,onClick,priority=1){
 function makeLabels(){
  $('#labels').replaceChildren();$('#leaders').replaceChildren();labels.length=0;
  if(level==='state')for(const r of regions)label(r.map,r.center[0],r.center[1],'region-label',()=>{region=r;activeTown=byId[r.towns[0]];level='region';selectedDistrict=null;show()},3);
- else if(level==='region'){const own=region.towns.map(id=>byId[id]).filter(Boolean),neighbors=towns.filter(t=>!region.towns.includes(t.id)&&own.some(o=>Math.hypot(o.x-t.x,o.y-t.y)<regionalStyle.framing.neighborRadiusKm));for(const t of [...own,...neighbors]){const isOwn=region.towns.includes(t.id),priority=isOwn?(regionalStyle.labels.priorityTowns.includes(t.id)?200:100):10;label(t.name,t.x,t.y,'town-label',()=>chooseTown(t.id),priority);const l=labels.at(-1);l.b.classList.toggle('neighbor-label',!isOwn);l.b.dataset.labelGroup=isOwn?'own':'neighbor';if(l.anchor)l.anchor.classList.toggle('neighbor-dot',!isOwn)}}
+ else if(level==='region'){const own=regionalTownIds(region).map(id=>byId[id]).filter(Boolean),neighbors=towns.filter(t=>!region.towns.includes(t.id)&&!(region.regionalDeferredTowns||[]).includes(t.id)&&own.some(o=>Math.hypot(o.x-t.x,o.y-t.y)<regionalStyle.framing.neighborRadiusKm));for(const t of [...own,...neighbors]){const isOwn=region.towns.includes(t.id),priority=isOwn?(regionalStyle.labels.priorityTowns.includes(t.id)?200:100):10;label(t.name,t.x,t.y,'town-label',()=>chooseTown(t.id),priority);const l=labels.at(-1);l.b.classList.toggle('neighbor-label',!isOwn);l.b.dataset.labelGroup=isOwn?'own':'neighbor';if(l.anchor)l.anchor.classList.toggle('neighbor-dot',!isOwn)}}
  else {
   for(const t of towns){if(isDetailed())continue;if(isThirty()&&t.id==='30a')continue;if(Math.hypot(t.x-activeTown.x,t.y-activeTown.y)>42)continue;label(t.name,t.x,t.y,'town-label',()=>{activeTown=t;region=regionFor(t.id);selectedDistrict=null;level='town';openTown(t);show()},t.id===activeTown.id?5:2)}
   for(const d of districts.filter(d=>(!isDetailed()||detailedLayer.meta.districts.some(q=>q.id===d.id))&&(isDetailed()||Math.hypot(d.x-activeTown.x,d.y-activeTown.y)<24&&(level==='town'||d.town===activeTown.id||(activeTown.id==='southbeach'&&d.town==='miami')))))label(d.name,d.x,d.y,'district-label',()=>openDistrict(d),4);
@@ -338,7 +339,7 @@ function highlight(){
 for(const r of regions){const o=document.createElement('option');o.value=r.id;o.textContent=r.map;$('#region-select').append(o)}
 function closeNavigationCard(){selectedLake=null;selectedDistrict=null;$('#card').hidden=true;document.body.classList.remove('card-open')}
 function chooseTown(id){activeTown=byId[id];region=regionFor(id);level='town';closeNavigationCard();show()}
-$('#region-select').onchange=e=>{region=regions.find(r=>r.id===e.target.value);activeTown=byId[region.towns[0]];level='region';closeNavigationCard();show()};
+$('#region-select').onchange=e=>{region=regions.find(r=>r.id===e.target.value);activeTown=byId[regionalTownIds(region)[0]];level='region';closeNavigationCard();show()};
 for(const b of document.querySelectorAll('[data-level]'))b.onclick=()=>{level=b.dataset.level;closeNavigationCard();show()};
 for(const b of document.querySelectorAll('[data-priority]'))b.onclick=()=>{const k=b.dataset.priority;weights[k]=weights[k]?0:3;b.classList.toggle('active',!!weights[k]);b.setAttribute('aria-pressed',!!weights[k]);if(k==='airport'&&activeTown.id==='30a'){level='region';show()}else{highlight();render()}};
 function applyResults(payload){

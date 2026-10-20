@@ -72,28 +72,36 @@
     "waterColor": "#71adbd"
   },
   "tampa-bay": {
-    "file": "images/tampa-bay.webp",
-    "width": 2304,
-    "height": 1328,
+    "file": "images/sarasota-bradenton.webp",
+    "width": 3072,
+    "height": 3072,
     "camera": {
-      "target": [
-        156.91981221307435,
-        0,
-        -415.26167171022985
+      "bottom": -117.04722135863386,
+      "far": 1170.4722135863385,
+      "left": -117.04722135863386,
+      "mapUnits": "kilometers",
+      "near": 11.704722135863388,
+      "position": [
+        144.55364443164265,
+        292.6180533965846,
+        -97.91481233717168
       ],
-      "left": -158.20233563333636,
-      "right": 158.20233563333636,
-      "top": 91.19901853320083,
-      "bottom": -91.19901853320083,
-      "tiltDegrees": 45,
       "projection": "orthographic",
-      "mapUnits": "kilometers"
+      "right": 117.04722135863386,
+      "target": [
+        144.55364443164265,
+        0,
+        -390.5328657337563
+      ],
+      "tiltDegrees": 45,
+      "top": 117.04722135863386
     },
-    "bytes": 256040,
-    "revision": "e7aeff74fd01f98e",
-    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
-    "styleReference": "Approved Sarasota and Bradenton regional illustration",
-    "waterColor": "#71adbd"
+    "bytes": 363284,
+    "revision": "593fb00f68d55c09",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0",
+    "reference": "Approved Sarasota and Bradenton regional capture",
+    "presentation": "approved-source",
+    "waterColor": "#3593ae"
   },
   "fort-myers-sanibel": {
     "file": "images/fort-myers-sanibel.webp",

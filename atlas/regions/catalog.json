@@ -5281,7 +5281,48 @@
       "regionalExport": {
         "size": 3072,
         "padding": 3
-      }
+      },
+      "regionalDeferredTowns": [
+        "hudson",
+        "port-richey",
+        "new-port-richey",
+        "holiday",
+        "tarpon-springs",
+        "palm-harbor"
+      ],
+      "regionalTowns": [
+        "oldsmar",
+        "dunedin",
+        "safety-harbor",
+        "clearwaterbeach",
+        "clearwater",
+        "belleair-beach",
+        "indian-rocks-beach",
+        "indian-shores",
+        "redington-shores",
+        "north-redington-beach",
+        "redington-beach",
+        "madeira-beach",
+        "treasure-island",
+        "st-petersburg",
+        "gulfport",
+        "st-pete-beach",
+        "tierra-verde",
+        "tampa",
+        "gibsonton",
+        "apollo-beach",
+        "ruskin",
+        "sun-city-center",
+        "bradenton",
+        "bradenton-beach",
+        "cortez",
+        "ami",
+        "longboat",
+        "sarasota",
+        "siesta-key",
+        "venice",
+        "englewood"
+      ]
     },
     {
       "id": "fort-myers-sanibel",

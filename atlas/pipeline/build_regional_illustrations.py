@@ -11,7 +11,7 @@ from pyproj import Transformer
 P=Path(__file__).resolve().parent;A=P.parent;os_args=sys.argv[1:];D=P/'work/coastal_pipeline/raw/regional-illustration';D.mkdir(parents=True,exist_ok=True)
 S=json.load(open(P/'regional-style.json'));catalog=json.load(open(A/'regions/catalog.json'));regions=catalog['regions'];towns={t['id']:t for t in catalog['towns']};CRS='+proj=aea +lat_1=24 +lat_2=31.5 +lat_0=24 +lon_0=-84 +datum=NAD83 +units=m +no_defs';T=Transformer.from_crs('EPSG:4326',CRS,always_xy=True);I=Transformer.from_crs(CRS,'EPSG:4326',always_xy=True)
 def frame(r,w,h):
- ts=[towns[t] for t in r['towns']];xs=[t['x'] for t in ts];vs=[t['y']/math.sqrt(2) for t in ts];l=24 if w<700 else 48;right=w-24 if w<700 else w-330;top=125 if w<700 else 145;bottom=h-min(h*.34,300)-40 if w<700 else h-65
+ ts=[towns[t] for t in r.get('regionalTowns',r['towns'])];xs=[t['x'] for t in ts];vs=[t['y']/math.sqrt(2) for t in ts];l=24 if w<700 else 48;right=w-24 if w<700 else w-330;top=125 if w<700 else 145;bottom=h-min(h*.34,300)-40 if w<700 else h-65
  scale=max((max(xs)-min(xs)+6)/max(100,right-l),(max(vs)-min(vs)+6)/max(120,bottom-top));ax=(l+right)/2;ay=(top+bottom)/2
  if (max(vs)-min(vs))/(max(xs)-min(xs)+.001)<.35 and w>=700:ay=h*S['framing']['horizontalCoastAnchor']
  x=(min(xs)+max(xs))/2+(w/2-ax)*scale;v=(min(vs)+max(vs))/2+(ay-h/2)*scale;return [x-w*scale/2,v-h*scale/2,x+w*scale/2,v+h*scale/2]
@@ -104,8 +104,11 @@ def render(selected=None):
  print('BEACH_TRIANGLES',len(beach_shapes),flush=True)
  results=json.load(open(A/'regions/region-images.json')) if selected else {};reports=[]
  if selected:reports=[r for r in json.load(open(A/'regions/images/regional-style-report.json'))['regions'] if r['region'] not in selected]
+ overrides=json.load(open(P/'regional-image-overrides.json'))
  for rid in ['_backdrop',*[r['id'] for r in regions]]:
   if selected and rid not in selected:continue
+  if rid in overrides:
+   results[rid]=overrides[rid];reports.append({'region':rid,'presentation':'approved-source','output_bytes':overrides[rid]['bytes'],'town_geometry_changed':False});continue
   m=json.load(open(D/(rid+'.json')));b=m['bounds'];W=m['width'];H=m['height'];y0=b[1]*math.sqrt(2);y1=b[3]*math.sqrt(2);transform_km=from_bounds(b[0],y0,b[2],y1,W,H);dst_transform=from_bounds(b[0]*1000,y0*1000,b[2]*1000,y1*1000,W,H);mask=rasterize(land_shapes,out_shape=(H,W),transform=transform_km,fill=0,dtype='uint8');classes=np.zeros((H,W),dtype='uint8');lons,lats=I.transform([b[0]*1000,b[2]*1000,b[0]*1000,b[2]*1000],[y0*1000,y0*1000,y1*1000,y1*1000]);gb=[min(lons),min(lats),max(lons),max(lats)]
   for t,a in tiles:
    west,south,east,north=t['bounds']

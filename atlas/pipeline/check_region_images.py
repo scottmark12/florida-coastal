@@ -8,7 +8,7 @@ for rid,r in [*rows.items(),('_backdrop',backdrop)]:
  p=A/'regions'/r['file'];assert p.stat().st_size==r['bytes'];assert hashlib.sha256(p.read_bytes()).hexdigest()[:16]==r['revision'];assert p.stat().st_size<1_000_000
  with Image.open(p) as im:assert im.format=='WEBP' and im.size==(r['width'],r['height'])
  assert 512<=r['width']<=4096 and 512<=r['height']<=4096
- if rid!='_backdrop':
+ if rid!='_backdrop' and r.get('presentation')!='approved-source':
   with Image.open(p) as im:assert 'A' in im.mode and im.getpixel((0,0))[3]==0
  c=r['camera'];assert c['tiltDegrees']==45 and c['projection']=='orthographic';assert c['right']>c['left'] and c['top']>c['bottom'];assert all(math.isfinite(x) for x in c['target'])
 print(json.dumps({'regions':len(rows),'total_bytes':sum(r['bytes'] for r in rows.values()),'maximum_image_bytes':max(r['bytes'] for r in rows.values())}))
