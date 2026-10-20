@@ -1,0 +1,27 @@
+{
+  "region": "palm-beaches/boynton-beach",
+  "building_count": 10753,
+  "tree_count": 29415,
+  "region_bytes": 162336,
+  "max_tile_bytes": 186718,
+  "max_anchor_error_m": 0.0081,
+  "max_coast_float32_error_m": 0.02084060161041811,
+  "height_sources": {
+    "assumed-house": 4977,
+    "estimated-nonresidential": 5505,
+    "estimated-type-footprint": 66,
+    "height": 1,
+    "levels": 204
+  },
+  "max_height_width_ratio": 3.000000000000001,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+  "exported_boundary_source_error_m": 13.05762602551128,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

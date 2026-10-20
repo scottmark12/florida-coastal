@@ -1,0 +1,29 @@
+[
+  {
+    "town": "tierra-verde",
+    "id": "tierra-verde-center",
+    "name": "Tierra Verde",
+    "kind": "beach",
+    "description": "Island canal homes, marinas and low condominiums along the Pinellas Bayway toward Fort De Soto.",
+    "style": "tierra-verde",
+    "lon": -82.7234337,
+    "lat": 27.6919746,
+    "x": 125.6505330259468,
+    "y": 410.23879828002123,
+    "positionSource": "https://www.openstreetmap.org/node/154171450",
+    "centerMeaning": "Representative OSM town place-label anchor: Tierra Verde",
+    "priceRange": "$862,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/tierra-verde",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 862000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/tierra-verde",
+      "activeListings": 105
+    },
+    "source": "https://www.visitstpeteclearwater.com/communities/tierra-verde",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

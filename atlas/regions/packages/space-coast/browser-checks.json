@@ -1,0 +1,198 @@
+{
+  "towns": [
+    {
+      "id": "palm-bay",
+      "active": "palm-bay",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "melbourne-beach",
+      "active": "melbourne-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "west-melbourne",
+      "active": "west-melbourne",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "melbourne",
+      "active": "melbourne",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "indialantic",
+      "active": "indialantic",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "indian-harbour-beach",
+      "active": "indian-harbour-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "satellite-beach",
+      "active": "satellite-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "cocoa",
+      "active": "cocoa",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "rockledge",
+      "active": "rockledge",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "cocoa-village",
+      "active": "cocoa-village",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "merritt-island",
+      "active": "merritt-island",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "cape-canaveral",
+      "active": "cape-canaveral",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "titusville",
+      "active": "titusville",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "palm-bay",
+      "active": "palm-bay",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "melbourne-beach",
+      "active": "melbourne-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "west-melbourne",
+      "active": "west-melbourne",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "melbourne",
+      "active": "melbourne",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "indialantic",
+      "active": "indialantic",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "indian-harbour-beach",
+      "active": "indian-harbour-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "satellite-beach",
+      "active": "satellite-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "cocoa",
+      "active": "cocoa",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "rockledge",
+      "active": "rockledge",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "cocoa-village",
+      "active": "cocoa-village",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "merritt-island",
+      "active": "merritt-island",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "cape-canaveral",
+      "active": "cape-canaveral",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "titusville",
+      "active": "titusville",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    }
+  ],
+  "regions": [
+    {
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    }
+  ]
+}

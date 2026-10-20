@@ -1,0 +1,302 @@
+{
+  "prices": {
+    "hallandale": [
+      319000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/broward-county/hallandale-beach"
+    ],
+    "hollywood": [
+      489948,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/broward-county/hollywood"
+    ],
+    "wilton-manors": [
+      697000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/broward-county/wilton-manors"
+    ],
+    "lauderdale-by-the-sea": [
+      799000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/broward-county/lauderdale-by-the-sea"
+    ],
+    "lighthouse-point": [
+      1149000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/broward-county/lighthouse-point"
+    ],
+    "dania-beach": [
+      327000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/broward-county/dania-beach"
+    ],
+    "ftl": [
+      669900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/broward-county/fort-lauderdale"
+    ],
+    "bal-harbour": [
+      2865000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/miami-dade-county/bal-harbour"
+    ],
+    "sunny-isles-beach": [
+      749000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/miami-dade-county/sunny-isles-beach"
+    ],
+    "north-miami-beach": [
+      298950,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/miami-dade-county/north-miami-beach"
+    ]
+  },
+  "recipes": {
+    "hallandale": {
+      "walls": [
+        "#f5edda",
+        "#c0dcd7",
+        "#e9d9c0",
+        "#d5e8e1"
+      ],
+      "roofs": [
+        "#d4dfd3",
+        "#a8c4bd"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "hollywood": {
+      "walls": [
+        "#bdebd7",
+        "#f7c5d1",
+        "#fae4a3",
+        "#fff9ec"
+      ],
+      "roofs": [
+        "#dce9df",
+        "#f4edda"
+      ],
+      "roof": "flat",
+      "detail": "deco",
+      "source": "https://www.hollywoodfl.org/1575/Historic-Preservation",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "dania-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "ftl": {
+      "walls": [
+        "#f7ecd3",
+        "#d9e6d0",
+        "#e2d5c5",
+        "#fff6e8"
+      ],
+      "roofs": [
+        "#b9947c",
+        "#cdb59a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "wilton-manors": {
+      "walls": [
+        "#e4e5cf",
+        "#c9ded3",
+        "#f2deb8",
+        "#f4eddb"
+      ],
+      "roofs": [
+        "#bac5b8",
+        "#d2d5c5"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "lauderdale-by-the-sea": {
+      "walls": [
+        "#e4e5cf",
+        "#c9ded3",
+        "#f2deb8",
+        "#f4eddb"
+      ],
+      "roofs": [
+        "#bac5b8",
+        "#d2d5c5"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitlauderdale.com/beaches-and-beyond/beaches/lauderdale-by-the-sea/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "lighthouse-point": {
+      "walls": [
+        "#f7ecd3",
+        "#d9e6d0",
+        "#efd6bf"
+      ],
+      "roofs": [
+        "#b9947c",
+        "#cdb59a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "bal-harbour": {
+      "walls": [
+        "#87b9c5",
+        "#9bc9c9",
+        "#d3e8e4",
+        "#f1f1e6"
+      ],
+      "roofs": [
+        "#dfede6",
+        "#adc4c3"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "sunny-isles-beach": {
+      "walls": [
+        "#87b9c5",
+        "#9bc9c9",
+        "#d3e8e4",
+        "#f1f1e6"
+      ],
+      "roofs": [
+        "#dfede6",
+        "#adc4c3"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "north-miami-beach": {
+      "walls": [
+        "#e4e5cf",
+        "#c9ded3",
+        "#f2deb8",
+        "#f4eddb"
+      ],
+      "roofs": [
+        "#bac5b8",
+        "#d2d5c5"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "ftl-downtown": {
+      "walls": [
+        "#87b9c5",
+        "#9bc9c9",
+        "#d3e8e4",
+        "#f1f1e6"
+      ],
+      "roofs": [
+        "#dfede6",
+        "#adc4c3"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    }
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Bal Harbour source uses the OSM name Bal Harbour Village; the existing public town ID is retained.",
+    "Fort Lauderdale downtown uses its glass recipe; surrounding canal homes use the prepared canal-villa recipe.",
+    "Source building windows for Fort Lauderdale, Hollywood, Hallandale and Dania extend east to the beachfront."
+  ],
+  "styleZones": [
+    {
+      "bounds": [
+        -80.153,
+        26.112,
+        -80.132,
+        26.133
+      ],
+      "recipe": "ftl-downtown"
+    }
+  ]
+}

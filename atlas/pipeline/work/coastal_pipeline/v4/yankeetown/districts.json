@@ -1,0 +1,28 @@
+[
+  {
+    "town": "yankeetown",
+    "id": "yankeetown-center",
+    "name": "Yankeetown",
+    "kind": "beach",
+    "description": "Painted cottages beneath live oaks along the Withlacoochee River.",
+    "style": "yankeetown",
+    "lon": -82.7159396,
+    "lat": 29.0299729,
+    "x": 124.8409109727234,
+    "y": 558.8288382682148,
+    "positionSource": "https://www.openstreetmap.org/node/154092372",
+    "centerMeaning": "Representative OSM town place-label anchor: Yankeetown",
+    "priceRange": "$289,450 median listing price \u00b7 October 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/levy-county/yankeetown",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 289450,
+      "metric": "median listing price",
+      "period": "October 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/levy-county/yankeetown"
+    },
+    "source": "https://inglisyankeetownchamber.com/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

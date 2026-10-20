@@ -1,0 +1,446 @@
+{
+  "region": {
+    "id": "treasure-coast",
+    "coast": "atlantic",
+    "name": "The Treasure Coast",
+    "map": "Treasure Coast",
+    "at": [
+      27.45,
+      -80.3
+    ],
+    "side": "E",
+    "img": "img/stuart.jpg",
+    "pos": "38% center",
+    "hpos": "center 42%",
+    "text": "Named for the Spanish treasure fleet that wrecked here in 1715. It is a lower key run of river towns and uncrowded barrier island beaches from Stuart to Sebastian, with no high rise skyline.",
+    "towns": [
+      "hobe-sound",
+      "port-salerno",
+      "palm-city",
+      "stuart",
+      "sewalls-point",
+      "jensen-beach",
+      "port-st-lucie",
+      "hutchinson-island",
+      "fortpierce",
+      "vero-beach",
+      "indian-river-shores",
+      "sebastian"
+    ],
+    "center": [
+      361.1721680103522,
+      387.1950041066056
+    ]
+  },
+  "towns": [
+    {
+      "id": "fortpierce",
+      "name": "Fort Pierce",
+      "region": "Treasure Coast",
+      "coast": "atlantic",
+      "lat": 27.45,
+      "lon": -80.33,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford",
+        "dock"
+      ],
+      "airport": "Palm Beach airport or Melbourne (MLB)",
+      "season": "Easygoing year round",
+      "watch": "Hurricane exposure",
+      "blurb": "An affordable working waterfront with a big Saturday market.",
+      "day": "You fish the inlet in the morning and walk the downtown farmers market.",
+      "todo": [
+        [
+          "Fort Pierce Inlet",
+          "Fishing and beaches at the inlet park."
+        ]
+      ],
+      "pros": [
+        "Affordable for the coast"
+      ],
+      "cons": [
+        "Fewer upscale amenities"
+      ],
+      "x": 361.98539208350826,
+      "y": 388.1045982320245,
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.floridacoastal.co/towns/fortpierce.html",
+      "nearest_town_km": 17.43479681943263,
+      "source_bounds": [
+        -80.37,
+        27.415,
+        -80.28999999999999,
+        27.485
+      ]
+    },
+    {
+      "id": "jensen-beach",
+      "name": "Jensen Beach",
+      "region": "Treasure Coast",
+      "coast": "atlantic",
+      "lat": 27.255,
+      "lon": -80.231,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "island"
+      ],
+      "airport": "Palm Beach airport, about 50 minutes",
+      "season": "Easygoing year round",
+      "watch": "Hurricane exposure, lagoon water quality",
+      "blurb": "A small, colorful river town with a Caribbean streak and uncrowded Hutchinson Island beaches across the causeway.",
+      "day": "You paddle the Indian River Lagoon in the morning and walk downtown for dinner and live music.",
+      "todo": [
+        [
+          "Downtown Jensen",
+          "A few blocks of local restaurants and shops by the river."
+        ]
+      ],
+      "pros": [
+        "Relaxed and unpretentious",
+        "Quiet beaches"
+      ],
+      "cons": [
+        "Far from a major airport",
+        "A small downtown"
+      ],
+      "x": 372.408827674914,
+      "y": 366.75605705159757,
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.floridacoastal.co/towns/jensen-beach.html",
+      "nearest_town_km": 6.797453696947378,
+      "source_bounds": [
+        -80.271,
+        27.22,
+        -80.19099999999999,
+        27.29
+      ]
+    },
+    {
+      "id": "port-st-lucie",
+      "name": "Port St. Lucie",
+      "region": "Treasure Coast",
+      "coast": "atlantic",
+      "lat": 27.294,
+      "lon": -80.35,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford"
+      ],
+      "airport": "Palm Beach airport, about 50 minutes",
+      "season": "Steady year round",
+      "watch": "Fast growth and traffic. Inland from the beach",
+      "blurb": "One of the fastest growing cities in Florida: newer homes, golf, Mets spring training and beaches 20 minutes east.",
+      "day": "You paddle the North Fork of the St. Lucie River, catch a Mets game in March and drive out to the beach on weekends.",
+      "todo": [
+        [
+          "Tradition",
+          "A planned town center with shops, restaurants and community events."
+        ]
+      ],
+      "pros": [
+        "Newer homes at lower prices",
+        "Lots of golf"
+      ],
+      "cons": [
+        "Spread out, with no real downtown",
+        "Not on the ocean"
+      ],
+      "x": 360.5259576355677,
+      "y": 370.7309920655701,
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.floridacoastal.co/towns/port-st-lucie.html",
+      "nearest_town_km": 12.530072176061028,
+      "source_bounds": [
+        -80.4,
+        27.22,
+        -80.27,
+        27.34
+      ]
+    },
+    {
+      "id": "sebastian",
+      "name": "Sebastian",
+      "region": "Treasure Coast",
+      "coast": "atlantic",
+      "lat": 27.817,
+      "lon": -80.471,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford",
+        "oldfl",
+        "dock"
+      ],
+      "airport": "Melbourne (MLB), about 35 minutes, or Vero Beach, about 25",
+      "season": "Quiet year round",
+      "watch": "Hurricane exposure, few big city services",
+      "blurb": "A riverfront fishing town on the Indian River Lagoon, near the country's first wildlife refuge and a famous surf inlet.",
+      "day": "You fish the lagoon at sunrise, have lunch on the riverfront and watch the surfers at Sebastian Inlet.",
+      "todo": [
+        [
+          "Sebastian Inlet State Park",
+          "Top surfing and fishing on both sides of the inlet. Bridge work started in 2026, so check access first."
+        ]
+      ],
+      "pros": [
+        "Affordable riverfront living",
+        "Great fishing"
+      ],
+      "cons": [
+        "Quiet nightlife",
+        "Beaches are across the lagoon"
+      ],
+      "x": 346.9157578014098,
+      "y": 428.43706985585806,
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.floridacoastal.co/towns/sebastian.html",
+      "nearest_town_km": 21.06560584295147,
+      "source_bounds": [
+        -80.51100000000001,
+        27.782,
+        -80.431,
+        27.852
+      ]
+    },
+    {
+      "id": "stuart",
+      "name": "Stuart",
+      "region": "Treasure Coast",
+      "coast": "atlantic",
+      "lat": 27.197,
+      "lon": -80.253,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "dock"
+      ],
+      "airport": "Palm Beach airport, about 45 minutes",
+      "season": "Busier in winter",
+      "watch": "River water quality after Lake Okeechobee releases, hurricane exposure",
+      "blurb": "The Sailfish Capital of the World, with a small historic downtown and a riverwalk on the St. Lucie River.",
+      "day": "You're offshore for sailfish at dawn, back downtown for lunch on the riverwalk and at the Sunday green market downtown.",
+      "todo": [
+        [
+          "Downtown Stuart",
+          "A compact historic district of shops, restaurants and a riverwalk stage."
+        ]
+      ],
+      "pros": [
+        "A charming, walkable downtown",
+        "Serious fishing"
+      ],
+      "cons": [
+        "River water quality problems some summers",
+        "Far from a major airport"
+      ],
+      "x": 370.43137391503126,
+      "y": 360.25259232964595,
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.floridacoastal.co/towns/stuart.html",
+      "nearest_town_km": 6.797453696947378,
+      "source_bounds": [
+        -80.293,
+        27.162,
+        -80.213,
+        27.232
+      ]
+    },
+    {
+      "id": "vero-beach",
+      "name": "Vero Beach",
+      "region": "Treasure Coast",
+      "coast": "atlantic",
+      "lat": 27.639,
+      "lon": -80.397,
+      "tier": 2,
+      "price": "$390K median",
+      "vibes": [
+        "sophcalm"
+      ],
+      "airport": "Melbourne (MLB), about 45 minutes. Vero's own airport has a few airline flights",
+      "season": "Busy winters",
+      "watch": "Hurricane exposure",
+      "blurb": "A quietly polished town with strict height limits, an oceanside village of shops and a serious arts scene.",
+      "day": "You walk the beach at Humiston Park, browse Ocean Drive and see a play at Riverside Theatre.",
+      "todo": [
+        [
+          "Riverside Theatre",
+          "A professional theater next to the Vero Beach Museum of Art."
+        ]
+      ],
+      "pros": [
+        "No high rises on the beach",
+        "Strong arts for a small town"
+      ],
+      "cons": [
+        "Quiet at night",
+        "Far from a major airport"
+      ],
+      "x": 354.76569895168245,
+      "y": 408.88871510493726,
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.floridacoastal.co/towns/vero-beach.html",
+      "nearest_town_km": 21.06560584295147,
+      "source_bounds": [
+        -80.43,
+        27.6,
+        -80.34,
+        27.68
+      ]
+    },
+    {
+      "id": "hobe-sound",
+      "name": "Hobe Sound",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.1364,
+      "lat": 27.0595,
+      "price": "$649,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "Leafy low-rise village, Bridge Road banyans and the beach across the lagoon.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "source_bounds": [
+        -80.1764,
+        27.0245,
+        -80.09639999999999,
+        27.0945
+      ]
+    },
+    {
+      "id": "port-salerno",
+      "name": "Port Salerno",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.2006,
+      "lat": 27.1442,
+      "price": "$399,900 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "Working fishing docks and small painted cottages around Manatee Pocket.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "source_bounds": [
+        -80.2406,
+        27.1092,
+        -80.16059999999999,
+        27.1792
+      ]
+    },
+    {
+      "id": "palm-city",
+      "name": "Palm City",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.2662,
+      "lat": 27.1678,
+      "price": "$649,900 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "Riverfront homes, canal neighborhoods and leafy golf communities west of Stuart.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "source_bounds": [
+        -80.3062,
+        27.1328,
+        -80.22619999999999,
+        27.2028
+      ]
+    },
+    {
+      "id": "sewalls-point",
+      "name": "Sewall\u2019s Point",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.2023,
+      "lat": 27.1989,
+      "price": "$1,972,500 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "A densely wooded peninsula of waterfront homes between two rivers.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "source_bounds": [
+        -80.2423,
+        27.163899999999998,
+        -80.16229999999999,
+        27.2339
+      ]
+    },
+    {
+      "id": "indian-river-shores",
+      "name": "Indian River Shores",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.3856,
+      "lat": 27.7167,
+      "price": "$475,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "Quiet barrier-island villas and low-rise oceanfront homes amid coastal canopy.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "source_bounds": [
+        -80.4256,
+        27.6817,
+        -80.34559999999999,
+        27.7517
+      ]
+    },
+    {
+      "id": "hutchinson-island",
+      "name": "Hutchinson Island",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.209,
+      "lat": 27.301,
+      "price": "$561,750 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "Atlantic beaches, lagoon marinas, dunes and white coastal condominium clusters.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "source_bounds": [
+        -80.3,
+        27.2,
+        -80.15,
+        27.49
+      ]
+    }
+  ],
+  "bounds": [
+    -80.59100000000001,
+    26.9395,
+    -80.01639999999999,
+    27.937
+  ]
+}

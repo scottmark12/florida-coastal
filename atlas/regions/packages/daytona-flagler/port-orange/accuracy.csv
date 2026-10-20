@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Port Orange,291.6614074707031,573.8029174804688,-80.99682874889847,29.138687582489442,-80.9968286,29.1386874,0.0249,https://www.openstreetmap.org/node/10268301307,Representative OSM town place-label anchor: Port Orange

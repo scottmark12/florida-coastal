@@ -1,0 +1,63 @@
+{
+  "towns": [
+    {
+      "id": "st-george-island",
+      "name": "St. George Island",
+      "aka": "SGI Saint George",
+      "region": "Forgotten Coast",
+      "coast": "panhandle",
+      "lat": 29.663,
+      "lon": -84.863,
+      "tier": 1,
+      "price": "About $1.1M median for the island's zip code, which includes Eastpoint (Redfin, three months ending Aug 2026)",
+      "vibes": [
+        "beaches",
+        "island"
+      ],
+      "airport": "Tallahassee (TLH), about 1 hour 40 minutes",
+      "season": "Busy summers and spring break, quiet winters",
+      "watch": "Storm surge on a barrier island. Michael brought at least 5 feet of it in 2018. One bridge on and off",
+      "blurb": "A barrier island with no high rises, a lighthouse at its center and nine miles of state park beach at the east end.",
+      "day": "You bike to coffee, spend the day on the state park beach and climb the lighthouse at sunset.",
+      "todo": [
+        [
+          "St. George Island State Park",
+          "Nine miles of undeveloped beach. Dr. Beach named it number one in America in 2023."
+        ],
+        [
+          "Cape St. George Light",
+          "A 77 foot lighthouse with 92 stairs and a small museum, right where the bridge lands."
+        ]
+      ],
+      "pros": [
+        "One of the best beaches in the country",
+        "No high rises",
+        "Quiet most of the year"
+      ],
+      "cons": [
+        "Expensive",
+        "One bridge, and a long drive to an airport or a hospital",
+        "No marina on the island"
+      ],
+      "x": -83.4128459528382,
+      "y": 628.7604547961819,
+      "area_id": "forgotten-coast",
+      "area_name": "The Forgotten Coast",
+      "source_url": "https://www.floridacoastal.co/towns/st-george-island.html",
+      "nearest_town_km": 13.532863335503848
+    }
+  ],
+  "bounds": [
+    -84.98,
+    29.6,
+    -84.73,
+    29.79
+  ],
+  "region": {
+    "id": "st-george-island",
+    "name": "St. George Island",
+    "towns": [
+      "st-george-island"
+    ]
+  }
+}

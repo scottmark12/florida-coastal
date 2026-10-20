@@ -1,0 +1,145 @@
+{
+  "prices": {
+    "ozello": [
+      335000.0,
+      "sample median asking price of 16 residential listings",
+      "checked October 17, 2026",
+      "https://www.zillow.com/ozello-crystal-river-fl/"
+    ]
+  },
+  "recipes": {
+    "ozello": {
+      "walls": [
+        "#d7c3a2",
+        "#d4ded0",
+        "#bbcec8",
+        "#e4bcab",
+        "#f3e9d0"
+      ],
+      "roofs": [
+        "#b8c8c4",
+        "#d0d4ca",
+        "#a6aca3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridacoastal.co/towns/ozello.html",
+      "character": "Very sparse fishing homes on tiny marsh islands, reached by winding Ozello Trail; creeks and salt marsh dominate.",
+      "trim": [
+        "#f7eed9",
+        "#b3cbbd"
+      ]
+    }
+  },
+  "manual_fixes": [
+    "Recipes curated from Florida Coastal town profiles; facade colors are editorial, not per-building surveys.",
+    "Town-wide published medians and the dated Ozello listing sample are labeled with their source and period."
+  ],
+  "priceEvidence": {
+    "ozello": {
+      "kind": "calculated listing median",
+      "value": 335000.0,
+      "min": 99000,
+      "max": 995000,
+      "examples": [
+        {
+          "address": "14141 W Board Walk Ln",
+          "price": 315000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1625 S Wallace Point",
+          "price": 559000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1455 S Ozello Trail",
+          "price": 449000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1326 S Estuary Dr",
+          "price": 549000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "2215 S Hunt Point",
+          "price": 314000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1142 S Ozello Trl",
+          "price": 355000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1126 S Urchin Point",
+          "price": 295000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "14272 W Sutton Ct",
+          "price": 99000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "14365 & 14353 W Ebbtide Court",
+          "price": 160000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "13465 W Hillbilly Ln",
+          "price": 410000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1517 S Fishcreek Point",
+          "price": 375000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "13980 W Sanddollar Ln",
+          "price": 548000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "14496 & 14498 W Captain Ct",
+          "price": 250000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "2160 S Gulfwater Point",
+          "price": 299000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "1489 S Ozello Trl",
+          "price": 995000,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        },
+        {
+          "address": "2195 S Gulfwater Point",
+          "price": 184900,
+          "source": "https://www.zillow.com/ozello-crystal-river-fl/",
+          "checked": "2026-10-17"
+        }
+      ],
+      "method": "Median of the 16 distinct residential listings on Ozello streets in the cited search; vacant lots, duplicate property rows and southeast Crystal River listings excluded. Sample median, not a published districtwide statistic."
+    }
+  }
+}

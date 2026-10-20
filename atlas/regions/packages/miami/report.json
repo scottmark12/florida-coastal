@@ -1,0 +1,35 @@
+{
+  "region": "miami",
+  "building_count": 81883,
+  "tree_count": 29612,
+  "region_bytes": 1988877,
+  "max_tile_bytes": 809865,
+  "max_anchor_error_m": 0.0136,
+  "max_coast_float32_error_m": 0.017002859119285677,
+  "height_sources": {
+    "height": 72835,
+    "levels": 551,
+    "assumed": 8497
+  },
+  "max_height_width_ratio": 3.000000000000001,
+  "engine_sha256": "ad885428f4a1d3727c6a7193eb8f36e65aa0430fe9dc04a7d0461658bba7d8ab",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Trees are illustrative gap-aware placement.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "validated at requested viewport widths; physical phone timing unverified",
+  "exported_boundary_source_error_m": 6.290440056683442,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+  "visual_qa": "v4.4 revalidated: Region, South Beach and Brickell at 390 and 1440 px; no observed console errors",
+  "physical_phone_tested": false,
+  "scene_bytes": 20540,
+  "approved_source_geometry_unchanged": true,
+  "30a_assets_unchanged": true,
+  "export_migration": "Overview meshes losslessly repacked; detailed geometry and all source coordinates preserved.",
+  "illustrative_boats": 117,
+  "boat_land_intersections": 0,
+  "initial_asset_bytes_with_boats": 2381118,
+  "boat_note": "Source-backed dock placement; illustrative occupancy, not live vessel positions."
+}

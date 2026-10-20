@@ -1,0 +1,102 @@
+{
+  "towns": [
+    {
+      "id": "port-st-joe",
+      "name": "Port St. Joe",
+      "region": "Forgotten Coast",
+      "coast": "panhandle",
+      "lat": 29.812,
+      "lon": -85.304,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford",
+        "oldfl"
+      ],
+      "airport": "Northwest Florida Beaches (ECP), about 1 hour",
+      "season": "Quiet year round, busier in summer",
+      "watch": "Hurricane exposure. Michael hit hard here in 2018. The state closed the 2026 scallop season in St. Joseph Bay",
+      "blurb": "A small town on St. Joseph Bay, known for calm clear water, bay sunsets and the beaches of Cape San Blas.",
+      "day": "You paddle the clear grass flats in the morning, drive out to Cape San Blas for the beach and watch the sun set over the bay.",
+      "todo": [
+        [
+          "Cape San Blas",
+          "A long, quiet peninsula of dunes and beach with a state park at the tip."
+        ]
+      ],
+      "pros": [
+        "Quiet and still affordable",
+        "Beautiful bay and nearby beaches"
+      ],
+      "cons": [
+        "Far from big city services",
+        "Storm exposure"
+      ],
+      "x": -125.86124326693647,
+      "y": 645.6762161113126,
+      "area_id": "forgotten-coast",
+      "area_name": "The Forgotten Coast",
+      "source_url": "https://www.floridacoastal.co/towns/port-st-joe.html",
+      "nearest_town_km": 32.58242732337813
+    },
+    {
+      "id": "cape-san-blas",
+      "name": "Cape San Blas",
+      "region": "Forgotten Coast",
+      "coast": "panhandle",
+      "lat": 29.78,
+      "lon": -85.39,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford",
+        "oldfl"
+      ],
+      "airport": "Northwest Florida Beaches (ECP), about 1 hour",
+      "season": "Quiet year round, busier in summer",
+      "watch": "Hurricane exposure. Michael hit hard here in 2018. The state closed the 2026 scallop season in St. Joseph Bay",
+      "blurb": "A small town on St. Joseph Bay, known for calm clear water, bay sunsets and the beaches of Cape San Blas.",
+      "day": "You paddle the clear grass flats in the morning, drive out to Cape San Blas for the beach and watch the sun set over the bay.",
+      "todo": [
+        [
+          "Cape San Blas",
+          "A long, quiet peninsula of dunes and beach with a state park at the tip."
+        ]
+      ],
+      "pros": [
+        "Quiet and still affordable",
+        "Beautiful bay and nearby beaches"
+      ],
+      "cons": [
+        "Far from big city services",
+        "Storm exposure"
+      ],
+      "x": -125.86124326693647,
+      "y": 645.6762161113126,
+      "area_id": "forgotten-coast",
+      "area_name": "The Forgotten Coast",
+      "source_url": "https://www.floridacoastal.co/towns/port-st-joe.html",
+      "nearest_town_km": 32.58242732337813,
+      "source_bounds": [
+        -85.44,
+        29.64,
+        -85.33,
+        29.95
+      ],
+      "acquisition_only": true
+    }
+  ],
+  "bounds": [
+    -85.44,
+    29.64,
+    -85.23,
+    29.95
+  ],
+  "region": {
+    "id": "port-st-joe",
+    "name": "Port St. Joe",
+    "towns": [
+      "port-st-joe"
+    ]
+  }
+}

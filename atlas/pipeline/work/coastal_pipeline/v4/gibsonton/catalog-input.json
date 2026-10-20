@@ -1,0 +1,51 @@
+{
+  "region": {
+    "id": "tampa-south-shore",
+    "coast": "gulf",
+    "name": "Gibsonton",
+    "map": "Tampa area",
+    "at": [
+      27.8,
+      -82.3
+    ],
+    "side": "E",
+    "img": "img/tampa.jpg",
+    "text": "The east side of Tampa Bay is the big city and the canal communities south of it. You trade Gulf beaches for jobs, pro sports, a major airport and boating on the bay.",
+    "towns": [
+      "gibsonton"
+    ],
+    "center": [
+      156.11446847607084,
+      421.59094163625423
+    ]
+  },
+  "towns": [
+    {
+      "id": "gibsonton",
+      "name": "Gibsonton",
+      "region": "Gulf Coast \u00b7 Tampa area",
+      "coast": "gulf",
+      "lon": -82.382,
+      "lat": 27.853,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Low riverfront homes, boat ramps and working yards along the Alafia River and eastern Tampa Bay.",
+      "area_id": "tampa-south-shore",
+      "area_name": "Tampa and the South Shore",
+      "source_url": "https://hcfl.gov/locations/eg-simmons-conservation-park",
+      "source_bounds": [
+        -82.427,
+        27.818,
+        -82.337,
+        27.888
+      ]
+    }
+  ],
+  "bounds": [
+    -82.447,
+    27.798000000000002,
+    -82.31700000000001,
+    27.908
+  ]
+}

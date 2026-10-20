@@ -1,0 +1,79 @@
+{
+  "id": "pensacola-beach",
+  "name": "Pensacola Beach",
+  "towns": [
+    "pensacola-beach"
+  ],
+  "bounds": [
+    -87.24,
+    30.29,
+    -87.03,
+    30.38
+  ],
+  "recipes": "work/coastal_pipeline/v4/pensacola-beach/recipes.json",
+  "camera": {
+    "center": [
+      -301.09705192823134,
+      706.8076600255056
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 3,
+    "phoneOffsetY": 0.3
+  },
+  "district_recipes": {
+    "pensacola-beach-center": "pensacola-beach"
+  },
+  "manual_fixes": [
+    "City-specific package requested by user; other cities in the parent region remain unchanged.",
+    "Vectorized the exact ESA 10m tree-class cells because this water-dominated barrier island has only 0.17% canopy in the full raster window; no new trees or density fallback added.",
+    "Mapped the OSM pier walking-deck line into the existing elevated footway input, retaining its original coordinates.",
+    "Added a sourced water-tower height and a stylized tank-and-stem profile using existing landmark recipe support.",
+    "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged.",
+    "Phone Region camera fitted within the verified coastal extent to avoid exposing the outer water-wash boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/pensacola-beach/geography.json.gz",
+      "work/coastal_pipeline/v4/pensacola-beach/district-pensacola-beach.json.gz",
+      "work/coastal_pipeline/v4/pensacola-beach/cover.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/pensacola-beach/districts.json",
+    "prices": "work/coastal_pipeline/v4/pensacola-beach/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/pensacola-beach/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/pensacola-beach/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/pensacola-beach/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/pensacola-beach/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopy": {
+      "path": "work/coastal_pipeline/v4/pensacola-beach/measured-canopy.json",
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W090_Map.tif",
+      "license": "CC BY 4.0",
+      "surveyYear": 2021
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/pensacola-beach/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    }
+  }
+}

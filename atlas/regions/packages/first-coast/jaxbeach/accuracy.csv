@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Jacksonville Beach,250.46585083007812,701.2380981445312,-81.39313960517605,30.294686064046566,-81.3931396,30.2946859,0.0182,https://www.openstreetmap.org/node/153962963,Representative OSM town place-label anchor: Jacksonville Beach

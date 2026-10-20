@@ -1,0 +1,28 @@
+[
+  {
+    "town": "navarre",
+    "id": "navarre-center",
+    "name": "Navarre",
+    "kind": "beach",
+    "description": "Soundside neighborhoods and boating beside the bridge to Navarre Beach.",
+    "style": "navarre",
+    "lon": -86.8700821,
+    "lat": 30.4019789,
+    "x": -275.4745805391776,
+    "y": 713.7043160464041,
+    "positionSource": "https://www.openstreetmap.org/node/153547009",
+    "centerMeaning": "Representative OSM town place-label anchor: Navarre",
+    "priceRange": "$540,950 median listing price \u00b7 October 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/santa-rosa-county/navarre",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 540950,
+      "metric": "median listing price",
+      "period": "October 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/santa-rosa-county/navarre"
+    },
+    "source": "https://www.getrelaxing.com/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "prices": {
+    "mary-esther": [
+      328250,
+      "median listing price",
+      "October 2026",
+      "https://www.realtor.com/local/market/florida/okaloosa-county/mary-esther"
+    ]
+  },
+  "recipes": {
+    "mary-esther": {
+      "walls": [
+        "#f1dfb5",
+        "#c5dbe0",
+        "#dfbaa8",
+        "#eee9d6"
+      ],
+      "roofs": [
+        "#a6b8b1",
+        "#c3ccc8",
+        "#9ba7a0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.destinfwb.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "Low residential streets beneath coastal tree cover beside Santa Rosa Sound."
+    }
+  },
+  "manual_fixes": [
+    "Town palette and waterfront hero curated from regional visitor references; facade color is editorial, not surveyed.",
+    "Published prices retain their actual metric and period; thin markets are explicitly labeled.",
+    "Four communities without named OSM place nodes use explicitly documented OSM locality or park reference anchors; these are not claimed as municipal centers."
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "towns": [
+    {
+      "id": "nsb",
+      "active": "nsb",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "daytona",
+      "active": "daytona",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "flagler",
+      "active": "flagler",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "daytona-beach-shores",
+      "active": "daytona-beach-shores",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "ormond-beach",
+      "active": "ormond-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "palm-coast",
+      "active": "palm-coast",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "port-orange",
+      "active": "port-orange",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "south-daytona",
+      "active": "south-daytona",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "edgewater",
+      "active": "edgewater",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "holly-hill",
+      "active": "holly-hill",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "ormond-by-the-sea",
+      "active": "ormond-by-the-sea",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "beverly-beach",
+      "active": "beverly-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "nsb",
+      "active": "nsb",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "daytona",
+      "active": "daytona",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "flagler",
+      "active": "flagler",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "daytona-beach-shores",
+      "active": "daytona-beach-shores",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "ormond-beach",
+      "active": "ormond-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "palm-coast",
+      "active": "palm-coast",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "port-orange",
+      "active": "port-orange",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "south-daytona",
+      "active": "south-daytona",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "edgewater",
+      "active": "edgewater",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "holly-hill",
+      "active": "holly-hill",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "ormond-by-the-sea",
+      "active": "ormond-by-the-sea",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "beverly-beach",
+      "active": "beverly-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "ponce-inlet",
+      "active": "ponce-inlet",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "ponce-inlet",
+      "active": "ponce-inlet",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    }
+  ],
+  "regions": [
+    {
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "errors": []
+    }
+  ],
+  "card": {
+    "town": "ponce-inlet",
+    "controlsCollapsed": true,
+    "priceSource": "https://www.realtor.com/local/market/florida/volusia-county/ponce-inlet"
+  }
+}

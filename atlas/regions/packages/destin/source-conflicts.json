@@ -1,0 +1,26 @@
+{
+  "features": [],
+  "input_adaptations": [
+    "City-specific package requested by user; other cities in the parent region remain unchanged.",
+    "Emerald Grande uses a sourced 13-story project description and explicitly estimated 39m height, within the unchanged scale cap.",
+    "Mapped harbor pier centerlines added through the existing footbridge renderer; no invented docks.",
+    "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged.",
+    "Extended detailed building inputs east through Henderson Beach and Crystal Beach using OSM map extracts; added a measured ESA WorldCover canopy window."
+  ],
+  "pier_sources": [
+    "https://www.openstreetmap.org/way/1426121006",
+    "https://www.openstreetmap.org/way/1426121007",
+    "https://www.openstreetmap.org/way/1426121008",
+    "https://www.openstreetmap.org/way/1426121009",
+    "https://www.openstreetmap.org/way/1426121010",
+    "https://www.openstreetmap.org/way/1426121188",
+    "https://www.openstreetmap.org/way/1426121189",
+    "https://www.openstreetmap.org/way/1426121190",
+    "https://www.openstreetmap.org/way/1426121191",
+    "https://www.openstreetmap.org/way/1426121192",
+    "https://www.openstreetmap.org/way/1426121193",
+    "https://www.openstreetmap.org/way/1426121194",
+    "https://www.openstreetmap.org/way/1426121195"
+  ],
+  "coverage": "Harbor and Holiday Isle dated snapshot; eastern beach neighborhoods supplemented with OSM API extracts retrieved 2026-10-19."
+}

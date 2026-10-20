@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Carrabelle,-64.09864807128906,649.7644653320312,-84.66434800553175,29.85326468758004,-84.664348,29.8532645,0.0208,https://www.openstreetmap.org/node/154070305,Representative OSM town place-label anchor: Carrabelle

@@ -1,0 +1,212 @@
+{
+  "recipes": {
+    "downtown-tampa": {
+      "walls": [
+        "#84b9c6",
+        "#b6d0d4",
+        "#f4edda"
+      ],
+      "roofs": [
+        "#eceddf"
+      ],
+      "roof": "flat",
+      "detail": "glass-bands",
+      "source": "https://planhillsborough.org/wp-content/uploads/2023/01/Hillsborough_County_Sustainable_Growth_Study_Report.pdf"
+    },
+    "hydepark": {
+      "walls": [
+        "#ecd4ad",
+        "#e8bc9d",
+        "#d4dfce",
+        "#e9d5c1",
+        "#b9cec9",
+        "#f6ebd6"
+      ],
+      "roofs": [
+        "#a9aaa0",
+        "#8f9d99",
+        "#b49a83"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.tampa.gov/neighborhoods/historic-hyde-park",
+      "canopy": "live-oak",
+      "note": "Species is an architectural illustration, not a surveyed botanical inventory."
+    },
+    "ybor": {
+      "walls": [
+        "#ba8566",
+        "#d5ac87",
+        "#e4c69e",
+        "#a8735d"
+      ],
+      "roofs": [
+        "#a59482",
+        "#b7a58b"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://www.tampa.gov/historic-preservation/info/design-guidelines"
+    },
+    "davis": {
+      "walls": [
+        "#f2e3c8",
+        "#e7cfb2",
+        "#fff2db"
+      ],
+      "roofs": [
+        "#bf8d71",
+        "#c6a07e"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://apps.tampagov.net/DepartmentPDFs/162381/city-of-tampa-designations-book-final-2024/index.html"
+    },
+    "westchase": {
+      "walls": [
+        "#e4d6bd",
+        "#f2e5cf",
+        "#d4cbb8"
+      ],
+      "roofs": [
+        "#a29d8a",
+        "#baa58e"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.homes.com/local-guide/westchase-fl/"
+    },
+    "seminole": {
+      "walls": [
+        "#ecd4ad",
+        "#e8bc9d",
+        "#d4dfce",
+        "#e9d5c1",
+        "#b9cec9",
+        "#f6ebd6"
+      ],
+      "roofs": [
+        "#a9aaa0",
+        "#8f9d99",
+        "#b49a83"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.tampa.gov/historic-preservation/info/design-guidelines",
+      "canopy": "live-oak",
+      "note": "Species is an architectural illustration, not a surveyed botanical inventory."
+    },
+    "apollo-beach": {
+      "walls": [
+        "#f4e9d1",
+        "#d8e7dc",
+        "#e9d4ba"
+      ],
+      "roofs": [
+        "#b8a68e",
+        "#c6b396",
+        "#aab7a8"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://planhillsborough.org/wp-content/uploads/2023/01/Hillsborough_County_Sustainable_Growth_Study_Report.pdf"
+    },
+    "ruskin": {
+      "walls": [
+        "#dac9a8",
+        "#d7dfc4",
+        "#edddba"
+      ],
+      "roofs": [
+        "#b8a68e",
+        "#c6b396",
+        "#aab7a8"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://planhillsborough.org/wp-content/uploads/2023/01/Hillsborough_County_Sustainable_Growth_Study_Report.pdf"
+    },
+    "sun-city-center": {
+      "walls": [
+        "#e5d9bd",
+        "#f4e6ca",
+        "#e2d6bd"
+      ],
+      "roofs": [
+        "#b8a68e",
+        "#c6b396",
+        "#aab7a8"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://planhillsborough.org/wp-content/uploads/2023/01/Hillsborough_County_Sustainable_Growth_Study_Report.pdf"
+    },
+    "village-square": {
+      "walls": [
+        "#efe0c6",
+        "#f5ead7",
+        "#dec5a5"
+      ],
+      "roofs": [
+        "#9a9c94",
+        "#b7aa93"
+      ],
+      "roof": "flat",
+      "detail": "low-shopping-square",
+      "source": "https://www.tampa.gov/neighborhoods/historic-hyde-park"
+    }
+  },
+  "landmarks": {
+    "way/32728957": {
+      "recipe": "village-square",
+      "illustratedRealHeightMeters": 6,
+      "source": "https://www.tampa.gov/neighborhoods/historic-hyde-park",
+      "note": "Two-storey illustration of shopping square; OSM footprint and original height retained in inventory."
+    },
+    "way/32729007": {
+      "recipe": "village-square",
+      "illustratedRealHeightMeters": 6,
+      "source": "https://www.tampa.gov/neighborhoods/historic-hyde-park",
+      "note": "Two-storey illustration of shopping square; OSM footprint and original height retained in inventory."
+    },
+    "way/32729157": {
+      "recipe": "village-square",
+      "illustratedRealHeightMeters": 6,
+      "source": "https://www.tampa.gov/neighborhoods/historic-hyde-park",
+      "note": "Two-storey illustration of shopping square; OSM footprint and original height retained in inventory."
+    },
+    "way/32761158": {
+      "recipe": "village-square",
+      "illustratedRealHeightMeters": 6,
+      "source": "https://www.tampa.gov/neighborhoods/historic-hyde-park",
+      "note": "Two-storey illustration of shopping square; OSM footprint and original height retained in inventory."
+    },
+    "way/88150387": {
+      "recipe": "village-square",
+      "illustratedRealHeightMeters": 6,
+      "source": "https://www.tampa.gov/neighborhoods/historic-hyde-park",
+      "note": "Two-storey illustration of shopping square; OSM footprint and original height retained in inventory."
+    }
+  },
+  "linearLandmarks": [
+    {
+      "name": "Bayshore waterfront promenade",
+      "bounds": [
+        -82.49,
+        27.91,
+        -82.458,
+        27.942
+      ],
+      "highways": [
+        "footway",
+        "path",
+        "cycleway"
+      ],
+      "coastDistanceMeters": 22,
+      "widthMeters": 10,
+      "source": "https://www.tclf.org/landscapes/bayshore-boulevard",
+      "geometrySource": "OpenStreetMap footways; rail side selected against mapped coastline",
+      "note": "10m illustrated width; real sidewalk approximately 3m."
+    }
+  ]
+}

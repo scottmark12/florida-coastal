@@ -1,0 +1,26 @@
+{
+  "recipes": {
+    "niceville": {
+      "walls": [
+        "#c7b69a",
+        "#c2d5ce",
+        "#b4cfd7",
+        "#ead9b8"
+      ],
+      "roofs": [
+        "#a6b8b1",
+        "#c3ccc8",
+        "#9ba7a0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.destinfwb.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "Boggy Bayou, working docks and oak-shaded neighborhoods on Choctawhatchee Bay."
+    }
+  },
+  "coastalHeightZones": []
+}

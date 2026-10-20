@@ -1,0 +1,159 @@
+{
+  "towns": [
+    {
+      "id": "staug",
+      "active": "staug",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "st-augustine-beach",
+      "active": "st-augustine-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "ponte-vedra-beach",
+      "active": "ponte-vedra-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "jaxbeach",
+      "active": "jaxbeach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "neptune-beach",
+      "active": "neptune-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "atlantic-beach",
+      "active": "atlantic-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "fernandina",
+      "active": "fernandina",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "jacksonville",
+      "active": "jacksonville",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "vilano-beach",
+      "active": "vilano-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "crescent-beach",
+      "active": "crescent-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "staug",
+      "active": "staug",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "st-augustine-beach",
+      "active": "st-augustine-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "ponte-vedra-beach",
+      "active": "ponte-vedra-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "jaxbeach",
+      "active": "jaxbeach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "neptune-beach",
+      "active": "neptune-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "atlantic-beach",
+      "active": "atlantic-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "fernandina",
+      "active": "fernandina",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "jacksonville",
+      "active": "jacksonville",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "vilano-beach",
+      "active": "vilano-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "crescent-beach",
+      "active": "crescent-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    }
+  ],
+  "regions": [
+    {
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "width": 390,
+      "errors": []
+    }
+  ],
+  "card": {
+    "town": "crescent-beach",
+    "controlsCollapsed": true,
+    "priceSource": "https://www.realtor.com/local/market/florida/st-johns-county/crescent-beach"
+  }
+}

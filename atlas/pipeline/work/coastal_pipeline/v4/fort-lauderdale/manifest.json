@@ -1,0 +1,341 @@
+{
+  "id": "fort-lauderdale",
+  "name": "Fort Lauderdale and the northern Miami coast",
+  "towns": [
+    "ftl",
+    "bal-harbour",
+    "dania-beach",
+    "hallandale",
+    "hollywood",
+    "lauderdale-by-the-sea",
+    "lighthouse-point",
+    "north-miami-beach",
+    "sunny-isles-beach",
+    "wilton-manors"
+  ],
+  "bounds": [
+    -80.28200000000001,
+    25.772,
+    -79.96799999999999,
+    26.396
+  ],
+  "recipes": "work/coastal_pipeline/v4/fort-lauderdale/recipes.json",
+  "camera": {
+    "center": [
+      386.3675332912306,
+      234.0546575173425
+    ],
+    "desktopSpan": 55.51631253646663,
+    "phoneSpan": 34.16388463782562,
+    "phoneOffsetY": 4
+  },
+  "district_recipes": {
+    "ftl-center": "ftl",
+    "bal-harbour-center": "bal-harbour",
+    "dania-beach-center": "dania-beach",
+    "hallandale-center": "hallandale",
+    "hollywood-center": "hollywood",
+    "lauderdale-by-the-sea-center": "lauderdale-by-the-sea",
+    "lighthouse-point-center": "lighthouse-point",
+    "north-miami-beach-center": "north-miami-beach",
+    "sunny-isles-beach-center": "sunny-isles-beach",
+    "wilton-manors-center": "wilton-manors"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Bal Harbour source uses the OSM name Bal Harbour Village; the existing public town ID is retained.",
+    "Fort Lauderdale downtown uses its glass recipe; surrounding canal homes use the prepared canal-villa recipe.",
+    "Source building windows for Fort Lauderdale, Hollywood, Hallandale and Dania extend east to the beachfront.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/fort-lauderdale/district-lauderdale-by-the-sea.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/geography.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-dania-beach.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-wilton-manors.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-ftl.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/cover.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-hollywood.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-sunny-isles-beach.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-hallandale.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-north-miami-beach.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-lighthouse-point.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-bal-harbour.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/fort-lauderdale/districts.json",
+    "prices": "work/coastal_pipeline/v4/fort-lauderdale/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/ftl-center-worldcover-2021.png",
+        "bounds": [
+          -80.16741666666667,
+          26.098333333333333,
+          -80.11941666666667,
+          26.146333333333335
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "ftl-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/bal-harbour-center-worldcover-2021.png",
+        "bounds": [
+          -80.151,
+          25.867833333333333,
+          -80.103,
+          25.91583333333333
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "bal-harbour-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/dania-beach-center-worldcover-2021.png",
+        "bounds": [
+          -80.168,
+          26.028416666666665,
+          -80.12,
+          26.076416666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "dania-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/hallandale-center-worldcover-2021.png",
+        "bounds": [
+          -80.17241666666666,
+          25.95725,
+          -80.12441666666666,
+          26.00525
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "hallandale-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/hollywood-center-worldcover-2021.png",
+        "bounds": [
+          -80.1735,
+          25.98725,
+          -80.1255,
+          26.03525
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "hollywood-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/lauderdale-by-the-sea-center-worldcover-2021.png",
+        "bounds": [
+          -80.1205,
+          26.168083333333332,
+          -80.0725,
+          26.216083333333334
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "lauderdale-by-the-sea-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/lighthouse-point-center-worldcover-2021.png",
+        "bounds": [
+          -80.11133333333333,
+          26.251666666666665,
+          -80.06333333333333,
+          26.299666666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "lighthouse-point-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/north-miami-beach-center-worldcover-2021.png",
+        "bounds": [
+          -80.18658333333333,
+          25.909166666666668,
+          -80.13858333333333,
+          25.957166666666666
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "north-miami-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/sunny-isles-beach-center-worldcover-2021.png",
+        "bounds": [
+          -80.14591666666666,
+          25.91875,
+          -80.09791666666666,
+          25.96675
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "sunny-isles-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/wilton-manors-center-worldcover-2021.png",
+        "bounds": [
+          -80.163,
+          26.136416666666666,
+          -80.115,
+          26.184416666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "wilton-manors-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  }
+}

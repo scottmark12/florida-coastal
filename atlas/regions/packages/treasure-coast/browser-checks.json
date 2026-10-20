@@ -1,0 +1,186 @@
+{
+  "towns": [
+    {
+      "id": "hobe-sound",
+      "active": "hobe-sound",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "port-salerno",
+      "active": "port-salerno",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "palm-city",
+      "active": "palm-city",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "stuart",
+      "active": "stuart",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "sewalls-point",
+      "active": "sewalls-point",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "jensen-beach",
+      "active": "jensen-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "port-st-lucie",
+      "active": "port-st-lucie",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "hutchinson-island",
+      "active": "hutchinson-island",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "fortpierce",
+      "active": "fortpierce",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "vero-beach",
+      "active": "vero-beach",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "indian-river-shores",
+      "active": "indian-river-shores",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "sebastian",
+      "active": "sebastian",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    },
+    {
+      "id": "hobe-sound",
+      "active": "hobe-sound",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "port-salerno",
+      "active": "port-salerno",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "palm-city",
+      "active": "palm-city",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "stuart",
+      "active": "stuart",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "sewalls-point",
+      "active": "sewalls-point",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "jensen-beach",
+      "active": "jensen-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "port-st-lucie",
+      "active": "port-st-lucie",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "hutchinson-island",
+      "active": "hutchinson-island",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "fortpierce",
+      "active": "fortpierce",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "vero-beach",
+      "active": "vero-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "indian-river-shores",
+      "active": "indian-river-shores",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "sebastian",
+      "active": "sebastian",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    }
+  ],
+  "regions": [
+    {
+      "level": "region",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "level": "region",
+      "scrollWidth": 1440,
+      "width": 1440,
+      "errors": []
+    }
+  ]
+}

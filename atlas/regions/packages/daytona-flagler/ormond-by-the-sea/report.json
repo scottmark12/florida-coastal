@@ -1,0 +1,26 @@
+{
+  "region": "daytona-flagler/ormond-by-the-sea",
+  "building_count": 8274,
+  "tree_count": 38711,
+  "region_bytes": 129024,
+  "max_tile_bytes": 626498,
+  "max_anchor_error_m": 0.0125,
+  "max_coast_float32_error_m": 0.0333429268939876,
+  "height_sources": {
+    "assumed-house": 7961,
+    "estimated-nonresidential": 290,
+    "estimated-type-footprint": 17,
+    "levels": 6
+  },
+  "max_height_width_ratio": 3.0,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+  "exported_boundary_source_error_m": 4.99009702124426,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

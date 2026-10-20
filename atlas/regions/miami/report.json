@@ -1,0 +1,25 @@
+{
+  "region": "miami",
+  "building_count": 81883,
+  "tree_count": 29612,
+  "region_bytes": 2280875,
+  "max_tile_bytes": 799590,
+  "max_anchor_error_m": 0.0136,
+  "max_coast_float32_error_m": 0.017002859119285677,
+  "height_sources": {
+    "height": 72835,
+    "levels": 551,
+    "assumed": 8497
+  },
+  "max_height_width_ratio": 3.000000000000001,
+  "engine_sha256": "3aba51296dad4247ba46c1df103ed1ffca0c5916894f4133c791e8285acfbf14",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Trees are illustrative gap-aware placement.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "candidate; visual QA required",
+  "exported_boundary_source_error_m": 6.128357494860663,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

@@ -1,0 +1,143 @@
+{
+  "id": "miami-fort-lauderdale",
+  "base": "base.glb.gz",
+  "bounds": [
+    366.39901288730687,
+    186.19634774000806,
+    404.9811053477214,
+    273.5654455967688
+  ],
+  "canopy": "canopy.png",
+  "water": "water.png",
+  "trees": "trees.json.gz",
+  "scale": {
+    "buildings": 3,
+    "trees": 5,
+    "maxHeightToFootprint": 3,
+    "metersPerStorey": 3,
+    "defaultResidentialStoreys": 2,
+    "treeRealHeightMeters": 12,
+    "treeCrownWidthMeters": 8,
+    "notes": "Use OSM height, then levels. Only houses without either default to 1\u20132 stories. Apartments/condos/hotels/resorts and footprints >=1500 m\u00b2 within 300 m of mapped beach use explicit, flagged type/area estimates when height and levels are absent. Retain 3x display scale and width caps.",
+    "residentialStoreys": [
+      1,
+      2
+    ],
+    "houseMaxHeightToFootprint": 1.2,
+    "coastalBuildings": {
+      "types": [
+        "apartments",
+        "condominium",
+        "condo",
+        "hotel",
+        "resort"
+      ],
+      "minFootprintM2": 1500,
+      "beachDistanceMeters": 300,
+      "estimateMinStoreys": 4,
+      "estimateMaxStoreys": 20,
+      "estimateBaseStoreys": 4,
+      "estimateSqrtAreaDivisor": 10,
+      "note": "Estimated storeys = clamp(round(4 + sqrt(footprint m\u00b2)/10),4,20), only when OSM height and levels are absent. Beach proximity is measured to mapped natural=beach polygons. This is an illustration estimate, not building research."
+    }
+  },
+  "buildings": [
+    {
+      "file": "native-buildings-48-24.glb.gz",
+      "bounds": [
+        384,
+        192,
+        392,
+        200
+      ],
+      "bytes": 384889
+    },
+    {
+      "file": "native-buildings-47-24.glb.gz",
+      "bounds": [
+        376,
+        192,
+        384,
+        200
+      ],
+      "bytes": 1734580
+    },
+    {
+      "file": "native-buildings-47-25.glb.gz",
+      "bounds": [
+        376,
+        200,
+        384,
+        208
+      ],
+      "bytes": 5944760
+    },
+    {
+      "file": "native-buildings-48-25.glb.gz",
+      "bounds": [
+        384,
+        200,
+        392,
+        208
+      ],
+      "bytes": 3707774
+    },
+    {
+      "file": "native-buildings-46-25.glb.gz",
+      "bounds": [
+        368,
+        200,
+        376,
+        208
+      ],
+      "bytes": 4230566
+    },
+    {
+      "file": "native-buildings-46-24.glb.gz",
+      "bounds": [
+        368,
+        192,
+        376,
+        200
+      ],
+      "bytes": 3193930
+    },
+    {
+      "file": "native-buildings-47-26.glb.gz",
+      "bounds": [
+        376,
+        208,
+        384,
+        216
+      ],
+      "bytes": 238794
+    },
+    {
+      "file": "native-buildings-48-26.glb.gz",
+      "bounds": [
+        384,
+        208,
+        392,
+        216
+      ],
+      "bytes": 442863
+    }
+  ],
+  "sourcePackages": [
+    "miami"
+  ],
+  "native_buildings": 81883,
+  "native_triangles": 2405925,
+  "coverage_buildings": {},
+  "initial_bytes": 2091818,
+  "total_building_bytes": 19878156,
+  "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0",
+  "supplemental_sources": [],
+  "notes": [
+    "Approved town geometry is read-only; region meshes retain the source wall and roof vertices.",
+    "OSM/Microsoft coverage fills use the existing 3\u00d7 height and footprint caps; untagged houses are 1\u20132 stories.",
+    "Phone Region view retains terrain, cover and labels, without building clusters.",
+    "Source land cover/canopy positions are composited into a softened regional canopy layer."
+  ],
+  "revision": "f4ab20e2460f40a9"
+}

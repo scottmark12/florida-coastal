@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Hutchinson Island,373.73468017578125,371.36871337890625,-80.21615799272284,27.2961555904542,-80.2161581,27.2961557,0.0161,https://www.openstreetmap.org/node/358734644,Representative OSM town place-label anchor: Hutchinson Island

@@ -1,0 +1,12 @@
+{
+  "buildings": 3,
+  "trees": 5,
+  "maxHeightToFootprint": 3,
+  "metersPerStorey": 3,
+  "defaultResidentialStoreys": 2,
+  "treeRealHeightMeters": 12,
+  "treeCrownWidthMeters": 8,
+  "notes": "Footprint width means the shorter side of the oriented footprint rectangle. Height includes roof. Height tags override levels; missing levels use explicitly assumed two stories. This is the authoritative scale rule for rebuilt assets; legacy regions require real-height metadata before migration.",
+  "treeSpacingMeters": 8,
+  "densityStatus": "Illustrative 8 m forest spacing (156 crowns/ha), not a surveyed stem count"
+}

@@ -1,0 +1,122 @@
+{
+  "id": "daytona-flagler/nsb",
+  "name": "New Smyrna Beach",
+  "towns": [
+    "nsb"
+  ],
+  "bounds": [
+    -80.97500000000001,
+    28.990000000000002,
+    -80.885,
+    29.07
+  ],
+  "recipes": "work/coastal_pipeline/v4/daytona-flagler/recipes.json",
+  "camera": {
+    "center": [
+      298.7416030439824,
+      561.4392932116486
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "nsb-center": "nsb"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Curated real waterfront hero cameras; place-label coordinates remain the district source anchors.",
+    "Flagler Beach pier is under reconstruction: mapped pier geometry is not a statement that the pier is open. See https://www.cityofflaglerbeach.com/334/Downtown-City-Projects.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/daytona-flagler/geography.json.gz",
+      "work/coastal_pipeline/v4/daytona-flagler/cover.json.gz",
+      "work/coastal_pipeline/v4/daytona-flagler/district-nsb.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/daytona-flagler/districts.json",
+    "prices": "work/coastal_pipeline/v4/daytona-flagler/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/nsb/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/nsb/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/nsb/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/nsb/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/nsb/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/daytona-flagler/nsb-center-worldcover-2021.png",
+        "bounds": [
+          -80.95116666666667,
+          29.001833333333334,
+          -80.90316666666666,
+          29.049833333333332
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "nsb-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/daytona-flagler/nsb-hero-canopy.png",
+        "bounds": [
+          -80.92141666666667,
+          29.01175,
+          -80.87341666666667,
+          29.05975
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "nsb-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10,
+        "scope": "Additional real canopy coverage centered on the curated hero, not an inferred default."
+      }
+    ]
+  }
+}

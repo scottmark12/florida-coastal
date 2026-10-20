@@ -1,0 +1,30 @@
+[
+  {
+    "town": "st-marks",
+    "id": "st-marks-center",
+    "name": "St. Marks",
+    "kind": "beach",
+    "description": "A tiny river town where the road ends at the water, half an hour south of Tallahassee, with a Spanish fort site, a rail trail and a huge wildlife refuge next door.",
+    "style": "st-marks",
+    "lon": -84.2064795,
+    "lat": 30.1612024,
+    "x": -19.864723765763717,
+    "y": 683.7915090474906,
+    "positionSource": "https://www.openstreetmap.org/node/154293005",
+    "centerMeaning": "Representative OSM town place-label anchor: Saint Marks",
+    "priceRange": "$219,000 median sale price \u00b7 three months ending May 2026; latest reported window on source \u00b7 1 reported sale; older reporting window",
+    "priceSource": "https://www.redfin.com/city/16124/FL/St-Marks/housing-market",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 219000,
+      "metric": "median sale price",
+      "period": "three months ending May 2026; latest reported window on source",
+      "checked": "2026-10-19",
+      "source": "https://www.redfin.com/city/16124/FL/St-Marks/housing-market",
+      "geographicScope": "Published town-wide market median; not a neighborhood valuation.",
+      "sampleSize": 1
+    },
+    "source": "https://www.floridasforgottencoast.com/maritime-museum/brief-history-of-franklin-county/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

@@ -1,0 +1,27 @@
+{
+  "region": "fort-lauderdale/hollywood",
+  "building_count": 19134,
+  "tree_count": 36337,
+  "region_bytes": 340864,
+  "max_tile_bytes": 1248476,
+  "max_anchor_error_m": 0.0125,
+  "max_coast_float32_error_m": 0.016984670031586113,
+  "height_sources": {
+    "assumed-house": 1473,
+    "estimated-nonresidential": 17009,
+    "estimated-type-footprint": 131,
+    "height": 319,
+    "levels": 202
+  },
+  "max_height_width_ratio": 3.000000000000001,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "Town view visually checked at desktop and 390 px phone width; no console errors",
+  "exported_boundary_source_error_m": 14.325910727205288,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

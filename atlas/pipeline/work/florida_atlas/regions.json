@@ -1,0 +1,347 @@
+[
+  {
+    "id": "emerald-coast",
+    "coast": "panhandle",
+    "name": "Pensacola and the Emerald Coast",
+    "map": "Emerald Coast",
+    "at": [
+      30.3,
+      -86.55
+    ],
+    "side": "S",
+    "img": "img/destin-beach.jpg",
+    "text": "The western Panhandle runs from historic Pensacola east to Panama City Beach. In between are Destin's harbor and the small beach towns of 30A, all on sugar white sand and clear green water.",
+    "towns": [
+      "pensacola",
+      "pensacola-beach",
+      "destin",
+      "30a",
+      "pcb",
+      "panama-city"
+    ]
+  },
+  {
+    "id": "forgotten-coast",
+    "coast": "panhandle",
+    "name": "The Forgotten Coast",
+    "map": "Forgotten Coast",
+    "at": [
+      29.68,
+      -85.02
+    ],
+    "side": "S",
+    "img": "img/port-st-joe.jpg",
+    "text": "East of Panama City the high rises stop. Port St. Joe, Apalachicola and Carrabelle are small working waterfront towns on quiet bays, St. George Island has the long empty beaches, and the coast runs on east past St. Teresa to the river town of St. Marks, half an hour from Tallahassee.",
+    "towns": [
+      "port-st-joe",
+      "apalachicola",
+      "st-george-island",
+      "carrabelle",
+      "st-teresa",
+      "st-marks"
+    ]
+  },
+  {
+    "id": "nature-coast",
+    "coast": "gulf",
+    "name": "The Nature Coast and Big Bend",
+    "map": "Nature Coast",
+    "at": [
+      29.02,
+      -83.05
+    ],
+    "side": "W",
+    "img": "img/spring-nature-coast.jpg",
+    "text": "Where the Panhandle bends into the peninsula, the coast turns to marsh and there is very little development. Life here is springs, rivers, scalloping and fishing, in towns like Cedar Key, Crystal River and Steinhatchee.",
+    "towns": [
+      "steinhatchee",
+      "cedarkey",
+      "crystal-river",
+      "ozello",
+      "homosassa"
+    ]
+  },
+  {
+    "id": "st-pete-clearwater",
+    "coast": "gulf",
+    "name": "St. Pete and the Clearwater Beaches",
+    "map": "St. Pete and Clearwater",
+    "at": [
+      27.98,
+      -82.9
+    ],
+    "side": "W",
+    "img": "img/st-pete-beach.jpg",
+    "pos": "30% center",
+    "hpos": "center 50%",
+    "text": "A narrow peninsula between the Gulf and Tampa Bay that packs in a walkable waterfront city, a string of barrier island beach towns and a few small bayside downtowns. Tampa's airport is close to all of it.",
+    "towns": [
+      "new-port-richey",
+      "tarpon-springs",
+      "dunedin",
+      "safety-harbor",
+      "clearwater",
+      "clearwaterbeach",
+      "indian-rocks-beach",
+      "madeira-beach",
+      "treasure-island",
+      "st-pete-beach",
+      "gulfport",
+      "st-petersburg"
+    ]
+  },
+  {
+    "id": "tampa-south-shore",
+    "coast": "gulf",
+    "name": "Tampa and the South Shore",
+    "map": "Tampa area",
+    "at": [
+      27.8,
+      -82.3
+    ],
+    "side": "E",
+    "img": "img/tampa.jpg",
+    "text": "The east side of Tampa Bay is the big city and the canal communities south of it. You trade Gulf beaches for jobs, pro sports, a major airport and boating on the bay.",
+    "towns": [
+      "tampa",
+      "apollo-beach",
+      "ruskin",
+      "sun-city-center"
+    ]
+  },
+  {
+    "id": "sarasota-bradenton",
+    "coast": "gulf",
+    "name": "Sarasota, Bradenton and Venice",
+    "map": "Sarasota and Bradenton",
+    "at": [
+      27.28,
+      -82.68
+    ],
+    "side": "W",
+    "img": "img/bradenton-beach.jpg",
+    "text": "From the Manatee River down to Englewood, this stretch pairs an arts minded city with some of the Gulf's best known sand on Anna Maria Island, Longboat Key and Siesta Key. Venice adds a walkable island downtown.",
+    "towns": [
+      "bradenton",
+      "bradenton-beach",
+      "cortez",
+      "ami",
+      "longboat",
+      "sarasota",
+      "siesta-key",
+      "venice",
+      "englewood"
+    ]
+  },
+  {
+    "id": "fort-myers-sanibel",
+    "coast": "gulf",
+    "name": "Fort Myers, Sanibel and Charlotte Harbor",
+    "map": "Fort Myers and Sanibel",
+    "at": [
+      26.62,
+      -82.22
+    ],
+    "side": "W",
+    "img": "img/sanibel-island.jpg",
+    "pos": "center center",
+    "hpos": "center 48%",
+    "text": "Charlotte Harbor, the Caloosahatchee River and the barrier islands of Sanibel and Captiva make this boating and shelling country. Much of it was hit hard by Hurricane Ian in 2022 and has been rebuilding since.",
+    "towns": [
+      "punta-gorda",
+      "port-charlotte",
+      "matlacha",
+      "cape-coral",
+      "fort-myers",
+      "fort-myers-beach",
+      "sanibel-island",
+      "captiva",
+      "bonita-springs"
+    ]
+  },
+  {
+    "id": "naples-marco",
+    "coast": "gulf",
+    "name": "Naples, Marco Island and the Everglades",
+    "map": "Naples and Marco",
+    "at": [
+      26.02,
+      -81.8
+    ],
+    "side": "W",
+    "img": "img/marco-island.jpg",
+    "pos": "62% center",
+    "hpos": "center 45%",
+    "text": "The polished southwest corner of the state, with calm Gulf beaches, golf and a walkable downtown in Naples. Past Marco Island the road ends at Everglades City and Chokoloskee, on the edge of the Ten Thousand Islands and Everglades National Park.",
+    "towns": [
+      "naples",
+      "marco-island",
+      "everglades-city",
+      "chokoloskee"
+    ]
+  },
+  {
+    "id": "florida-keys",
+    "coast": "keys",
+    "name": "The Florida Keys",
+    "map": "Florida Keys",
+    "at": [
+      24.8,
+      -81.05
+    ],
+    "side": "W",
+    "img": "img/keys-bridge.jpg",
+    "text": "A chain of islands strung along one highway for more than 100 miles, from Key Largo to Key West. Everything here revolves around the water: diving, fishing, sailing and sunsets.",
+    "towns": [
+      "key-largo",
+      "islamorada",
+      "keywest"
+    ]
+  },
+  {
+    "id": "miami-fort-lauderdale",
+    "coast": "atlantic",
+    "name": "Miami and Fort Lauderdale",
+    "map": "Miami and Fort Lauderdale",
+    "at": [
+      26,
+      -80.12
+    ],
+    "side": "E",
+    "img": "img/southbeach-lifeguard.jpg",
+    "text": "The most urban stretch of the Florida coast, from the Art Deco blocks of South Beach north through Hollywood to the canals of Fort Lauderdale. Two major airports, late nights and beaches with a city right behind them.",
+    "towns": [
+      "southbeach",
+      "bal-harbour",
+      "sunny-isles-beach",
+      "north-miami-beach",
+      "hallandale",
+      "hollywood",
+      "dania-beach",
+      "ftl",
+      "wilton-manors",
+      "lauderdale-by-the-sea",
+      "lighthouse-point"
+    ]
+  },
+  {
+    "id": "palm-beaches",
+    "coast": "atlantic",
+    "name": "The Palm Beaches",
+    "map": "The Palm Beaches",
+    "at": [
+      26.68,
+      -80.04
+    ],
+    "side": "E",
+    "img": "img/jupiter.jpg",
+    "pos": "58% center",
+    "hpos": "center 42%",
+    "text": "From Boca Raton up to Jupiter, this stretch mixes lively downtowns in Delray Beach and West Palm Beach with quiet oceanfront towns, golf communities and clear water at the inlets.",
+    "towns": [
+      "boca-raton",
+      "highland-beach",
+      "delray",
+      "palm-beach",
+      "west-palm-beach",
+      "riviera-beach",
+      "north-palm-beach",
+      "palm-beach-gardens",
+      "jupiter"
+    ]
+  },
+  {
+    "id": "treasure-coast",
+    "coast": "atlantic",
+    "name": "The Treasure Coast",
+    "map": "Treasure Coast",
+    "at": [
+      27.45,
+      -80.3
+    ],
+    "side": "E",
+    "img": "img/stuart.jpg",
+    "pos": "38% center",
+    "hpos": "center 42%",
+    "text": "Named for the Spanish treasure fleet that wrecked here in 1715. It is a lower key run of river towns and uncrowded barrier island beaches from Stuart to Sebastian, with no high rise skyline.",
+    "towns": [
+      "stuart",
+      "jensen-beach",
+      "port-st-lucie",
+      "fortpierce",
+      "vero-beach",
+      "sebastian"
+    ]
+  },
+  {
+    "id": "space-coast",
+    "coast": "atlantic",
+    "name": "The Space Coast",
+    "map": "Space Coast",
+    "at": [
+      28.25,
+      -80.6
+    ],
+    "side": "E",
+    "img": "img/titusville.jpg",
+    "pos": "20% center",
+    "hpos": "center 12%",
+    "text": "The coast around Cape Canaveral, where rocket launches are part of the view. Surf towns line the barrier island, and the mainland cities have some of the lowest prices near the Atlantic.",
+    "towns": [
+      "palm-bay",
+      "west-melbourne",
+      "melbourne-beach",
+      "indialantic",
+      "satellite-beach",
+      "cocoa",
+      "titusville"
+    ]
+  },
+  {
+    "id": "daytona-flagler",
+    "coast": "atlantic",
+    "name": "Daytona, New Smyrna and Flagler",
+    "map": "Daytona and Flagler",
+    "at": [
+      29.22,
+      -81.02
+    ],
+    "side": "E",
+    "img": "img/daytona-beach-shores.jpg",
+    "pos": "42% center",
+    "hpos": "62% 40%",
+    "text": "Wide, hard packed beaches run from New Smyrna Beach up through Daytona to Flagler Beach. Surf towns, race week crowds and some of the most affordable oceanfront in Florida share this stretch.",
+    "towns": [
+      "nsb",
+      "port-orange",
+      "south-daytona",
+      "daytona-beach-shores",
+      "daytona",
+      "ormond-beach",
+      "flagler",
+      "palm-coast"
+    ]
+  },
+  {
+    "id": "first-coast",
+    "coast": "atlantic",
+    "name": "The First Coast",
+    "map": "First Coast",
+    "at": [
+      30.22,
+      -81.38
+    ],
+    "side": "E",
+    "img": "img/atlantic-aerial.jpg",
+    "text": "Northeast Florida, from the brick streets of St. Augustine to Fernandina Beach on Amelia Island. Expect wide beaches, real seasons and the Jacksonville beach towns in between.",
+    "towns": [
+      "staug",
+      "st-augustine-beach",
+      "ponte-vedra-beach",
+      "jaxbeach",
+      "neptune-beach",
+      "atlantic-beach",
+      "fernandina"
+    ]
+  }
+]

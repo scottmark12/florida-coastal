@@ -1,0 +1,97 @@
+{
+  "id": "first-coast/fernandina",
+  "name": "Fernandina Beach",
+  "towns": [
+    "fernandina"
+  ],
+  "bounds": [
+    -81.50999999999999,
+    30.625,
+    -81.41,
+    30.715000000000003
+  ],
+  "recipes": "work/coastal_pipeline/v4/first-coast/recipes.json",
+  "camera": {
+    "center": [
+      242.8947891817433,
+      742.8757474804413
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "fernandina-center": "fernandina"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Retain the existing Jacksonville Town package unchanged; build the other coastal towns from the shared source pipeline.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Complete 134 adjoining OSM coastline ways cut at the Georgia boundary in the Florida Geofabrik extract. Patch dated 2026-10-20, acquired from OSM API; preserve actual coordinates and the 150 m source-fidelity gate."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/first-coast/geography.json.gz",
+      "work/coastal_pipeline/v4/first-coast/cover.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-fernandina.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/first-coast/districts.json",
+    "prices": "work/coastal_pipeline/v4/first-coast/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/first-coast/fernandina/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/first-coast/fernandina/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/first-coast/fernandina/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/first-coast/fernandina/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/first-coast/fernandina/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/fernandina-center-worldcover-2021.png",
+        "bounds": [
+          -81.487,
+          30.64725,
+          -81.439,
+          30.69525
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "fernandina-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  }
+}

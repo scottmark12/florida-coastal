@@ -1,0 +1,12 @@
+{
+  "source": "https://api.openstreetmap.org/api/0.6/map?bbox=-80.66,28.579,-80.642,28.594",
+  "bounds": [
+    -80.66,
+    28.579,
+    -80.642,
+    28.594
+  ],
+  "retrieved": "2026-10-20",
+  "license": "ODbL 1.0",
+  "scope": "VAB building footprints and local access roads; no satellite imagery."
+}

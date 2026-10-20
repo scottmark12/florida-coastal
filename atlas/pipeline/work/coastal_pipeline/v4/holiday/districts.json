@@ -1,0 +1,29 @@
+[
+  {
+    "town": "holiday",
+    "id": "holiday-center",
+    "name": "Holiday",
+    "kind": "beach",
+    "description": "Low bungalow neighborhoods and lake streets giving way to mangroves, tidal creeks and Gulf waterfront parks.",
+    "style": "holiday",
+    "lon": -82.740074,
+    "lat": 28.1879273,
+    "x": 123.44998090384118,
+    "y": 465.29681291305263,
+    "positionSource": "https://www.openstreetmap.org/node/154288670",
+    "centerMeaning": "Representative OSM town place-label anchor: Holiday",
+    "priceRange": "$250,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pasco-county/holiday",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 250000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/pasco-county/holiday",
+      "activeListings": 387
+    },
+    "source": "https://flsportscoast.com/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

@@ -1,0 +1,71 @@
+{
+  "features": [
+    {
+      "source": "https://www.openstreetmap.org/way/138366840",
+      "action": "Separated straight river-mouth closure across mapped open water from physical shoreline reference. Land geometry unchanged.",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.4542666,
+            30.3788301
+          ],
+          [
+            -81.4536643,
+            30.3759108
+          ],
+          [
+            -81.4524297,
+            30.3720943
+          ]
+        ]
+      },
+      "original_error_m": 227.33
+    },
+    {
+      "source": "https://www.openstreetmap.org/way/253472100",
+      "action": "Separated straight river-mouth closure across mapped open water from physical shoreline reference. Land geometry unchanged.",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.6122932,
+            30.320537
+          ],
+          [
+            -81.6138129,
+            30.3191322
+          ],
+          [
+            -81.615476,
+            30.3175948
+          ]
+        ]
+      },
+      "original_error_m": 198.59
+    },
+    {
+      "source": "https://www.openstreetmap.org/way/253129425",
+      "action": "Separated straight river-mouth closure across mapped open water from physical shoreline reference. Land geometry unchanged.",
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            -81.7039612,
+            30.2796722
+          ],
+          [
+            -81.7053699,
+            30.2805078
+          ],
+          [
+            -81.7071193,
+            30.2815454
+          ]
+        ]
+      },
+      "original_error_m": 154.98
+    }
+  ],
+  "river_mouth_convention": "https://wiki.openstreetmap.org/wiki/Tag:natural%3Dcoastline#River_mouths"
+}

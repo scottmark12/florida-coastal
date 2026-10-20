@@ -1,0 +1,279 @@
+{
+  "recipes": {
+    "staug": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.floridashistoriccoast.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "st-augustine-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridashistoriccoast.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "ponte-vedra-beach": {
+      "walls": [
+        "#f7ecd3",
+        "#d9e6d0",
+        "#efd6bf"
+      ],
+      "roofs": [
+        "#b9947c",
+        "#cdb59a"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridashistoriccoast.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "jaxbeach": {
+      "walls": [
+        "#f5edda",
+        "#c0dcd7",
+        "#e9d9c0",
+        "#d5e8e1"
+      ],
+      "roofs": [
+        "#d4dfd3",
+        "#a8c4bd"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitjacksonville.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "neptune-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitjacksonville.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "atlantic-beach": {
+      "walls": [
+        "#d1c3aa",
+        "#e4dcc4",
+        "#c7d3bf",
+        "#f1e6ca"
+      ],
+      "roofs": [
+        "#aabbb1",
+        "#c6ccc0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitjacksonville.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "fernandina": {
+      "walls": [
+        "#f1dab8",
+        "#c5decf",
+        "#efc7bf",
+        "#f7efda"
+      ],
+      "roofs": [
+        "#a2b7ab",
+        "#b8b5a3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.ameliaisland.com/travel-guides/downtown/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "jacksonville": {
+      "walls": [
+        "#87b9c5",
+        "#9bc9c9",
+        "#d3e8e4",
+        "#f1f1e6"
+      ],
+      "roofs": [
+        "#dfede6",
+        "#adc4c3"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitjacksonville.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "vilano-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridashistoriccoast.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "crescent-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridashistoriccoast.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "staug-coquina-fort": {
+      "walls": [
+        "#cfbea0"
+      ],
+      "roofs": [
+        "#d9cdb3"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://www.nps.gov/casa/learn/historyculture/construction.htm"
+    },
+    "first-coast-condos": {
+      "walls": [
+        "#f7f0e3",
+        "#c7ded9",
+        "#ebdad4",
+        "#d6e5df"
+      ],
+      "roofs": [
+        "#c4d1ca",
+        "#e3dfd1"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitjacksonville.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "fernandina-brick": {
+      "walls": [
+        "#bc8067",
+        "#e4c39e",
+        "#f2e3ca",
+        "#d6bf9e"
+      ],
+      "roofs": [
+        "#a2b7ab",
+        "#b8b5a3"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://www.ameliaisland.com/travel-guides/downtown/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    }
+  },
+  "towerRecipe": "first-coast-condos",
+  "styleZones": [
+    {
+      "bounds": [
+        -81.467,
+        30.669,
+        -81.458,
+        30.674
+      ],
+      "recipe": "fernandina-brick"
+    }
+  ],
+  "landmarks": {
+    "relation/1972715": {
+      "recipe": "staug-coquina-fort",
+      "profile": [
+        [
+          0,
+          0
+        ]
+      ],
+      "source": "https://www.nps.gov/casa/learn/historyculture/construction.htm",
+      "note": "Use actual OSM star-fort footprint and courtyard, limestone palette and mapped building levels."
+    }
+  }
+}

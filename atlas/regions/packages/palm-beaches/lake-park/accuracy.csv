@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Lake Park,390.3012390136719,316.7957763671875,-80.06616307913504,26.800215337209465,-80.0661631,26.8002153,0.0046,https://www.openstreetmap.org/node/153893337,Representative OSM town place-label anchor: Lake Park

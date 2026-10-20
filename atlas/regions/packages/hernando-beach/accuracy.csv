@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Hernando Beach,131.02732849121094,496.6426696777344,-82.65926764461999,28.46944298779894,-82.6592677,28.469443,0.0056,https://www.openstreetmap.org/node/153961963,Representative OSM town place-label anchor: Hernando Beach

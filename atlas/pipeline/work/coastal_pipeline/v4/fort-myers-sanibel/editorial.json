@@ -1,0 +1,194 @@
+{
+  "prices": {
+    "punta-gorda": [
+      369700,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/charlotte-county/punta-gorda"
+    ],
+    "port-charlotte": [
+      337900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/charlotte-county/port-charlotte"
+    ],
+    "matlacha": [
+      600000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/lee-county/matlacha"
+    ],
+    "cape-coral": [
+      402800,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/lee-county/cape-coral"
+    ],
+    "fort-myers": [
+      324900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/lee-county/fort-myers"
+    ],
+    "fort-myers-beach": [
+      777000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/lee-county/fort-myers-beach"
+    ],
+    "sanibel-island": [
+      970000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/lee-county/sanibel"
+    ],
+    "captiva": [
+      1720000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/lee-county/captiva"
+    ],
+    "bonita-springs": [
+      622500,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/lee-county/bonita-springs"
+    ]
+  },
+  "recipes": {
+    "punta-gorda": {
+      "walls": [
+        "#f0e3c6",
+        "#d0ddca",
+        "#e5c5ae"
+      ],
+      "roofs": [
+        "#b2c2b8",
+        "#c59d7e"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitfortmyers.com/location-overview"
+    },
+    "port-charlotte": {
+      "walls": [
+        "#e6d7b8",
+        "#f2e3c8",
+        "#d4ddc3"
+      ],
+      "roofs": [
+        "#a9b9ad",
+        "#bfaa8e"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitfortmyers.com/location-overview"
+    },
+    "matlacha": {
+      "walls": [
+        "#f3b1bd",
+        "#8ed8c9",
+        "#f6dc8f",
+        "#c7b2d9"
+      ],
+      "roofs": [
+        "#c2d5c9",
+        "#a5c0b6"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitfortmyers.com/visit/editorial/neighborhood-spotlight-matlacha"
+    },
+    "cape-coral": {
+      "walls": [
+        "#f3e7cf",
+        "#d2e0ca",
+        "#ecd3b9"
+      ],
+      "roofs": [
+        "#bd967a",
+        "#cdb99c"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitfortmyers.com/location-overview"
+    },
+    "fort-myers": {
+      "walls": [
+        "#c79276",
+        "#dfb798",
+        "#e9d4b2",
+        "#f1e7ce"
+      ],
+      "roofs": [
+        "#b7aa91",
+        "#ddd8c5"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://www.visitfortmyers.com/location-overview"
+    },
+    "fort-myers-beach": {
+      "walls": [
+        "#f5d9aa",
+        "#c2dfd2",
+        "#e7c0bd",
+        "#f3edda"
+      ],
+      "roofs": [
+        "#d2dcd1",
+        "#b5c4b8"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitfortmyers.com/location-overview"
+    },
+    "sanibel-island": {
+      "walls": [
+        "#eee4c9",
+        "#d0dec9",
+        "#e0c7ad"
+      ],
+      "roofs": [
+        "#a4b9ac",
+        "#bdcbbf"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitfortmyers.com/location-overview"
+    },
+    "captiva": {
+      "walls": [
+        "#f9dfa2",
+        "#f1c3ba",
+        "#c4dfd0",
+        "#f9f1db"
+      ],
+      "roofs": [
+        "#becfc3",
+        "#d5dfd2"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitfortmyers.com/location-overview"
+    },
+    "bonita-springs": {
+      "walls": [
+        "#f2e0c1",
+        "#e5c6ab",
+        "#e7e5cb"
+      ],
+      "roofs": [
+        "#bf9678",
+        "#d1b395"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitfortmyers.com/location-overview"
+    }
+  },
+  "manual_fixes": [
+    "Town-wide price medians are labeled with their reporting periods; they are not street-level appraisals.",
+    "Recipe colors are editorial selections informed by regional architectural and neighborhood references; original OSM footprints remain the geometry source."
+  ]
+}

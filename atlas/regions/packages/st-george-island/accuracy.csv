@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+St. George Island,-83.37992095947266,628.7695922851562,-84.86266002625048,29.663084374224116,-84.86265999922877,29.663084152739113,0.0247,https://www.openstreetmap.org/way/318393587,"Mapped Lighthouse Park centroid; central island district control, not a municipal boundary centroid."

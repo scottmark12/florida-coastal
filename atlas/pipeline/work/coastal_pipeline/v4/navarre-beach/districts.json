@@ -1,0 +1,28 @@
+[
+  {
+    "town": "navarre-beach",
+    "id": "navarre-beach-center",
+    "name": "Navarre Beach",
+    "kind": "beach",
+    "description": "White sand, a long Gulf fishing pier, pastel beach homes and condo towers.",
+    "style": "navarre-beach",
+    "lon": -86.8555410285035,
+    "lat": 30.382812465795578,
+    "x": -274.1284100940407,
+    "y": 711.5453720325469,
+    "positionSource": "https://www.openstreetmap.org/way/561157915",
+    "centerMeaning": "Navarre Beach Park: representative waterfront reference, not a municipal center",
+    "priceRange": "$899,000 median listing price \u00b7 October 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/santa-rosa-county/navarre-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 899000,
+      "metric": "median listing price",
+      "period": "October 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/santa-rosa-county/navarre-beach"
+    },
+    "source": "https://www.getrelaxing.com/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

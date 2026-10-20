@@ -1,0 +1,38 @@
+{
+  "id": "miami",
+  "bounds": [
+    -80.285,
+    25.71,
+    -80.115,
+    25.82
+  ],
+  "district_recipes": {},
+  "inputs": {
+    "osm": [
+      "work/miami_geo/osm_core.json",
+      "work/miami_geo/osm_beach.json"
+    ],
+    "districts": "work/atlas_regions/districts.json",
+    "prices": "work/atlas_regions/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/miami-land.geojson",
+      "source": "Miami-Dade cached GIS",
+      "license_verified": false
+    },
+    "landcover": {
+      "path": "work/miami_geo/parks.json",
+      "source": "Miami-Dade cached GIS",
+      "license_verified": false
+    },
+    "shoreline": {
+      "path": "work/miami_geo/water.json",
+      "source": "Miami-Dade cached GIS",
+      "license_verified": false
+    },
+    "roads": {
+      "path": "work/miami_geo/streets.json",
+      "source": "Miami-Dade cached GIS",
+      "license_verified": false
+    }
+  }
+}

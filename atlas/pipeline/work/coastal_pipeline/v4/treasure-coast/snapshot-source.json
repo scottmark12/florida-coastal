@@ -1,0 +1,6 @@
+{
+  "source": "https://download.geofabrik.de/north-america/us/florida.html",
+  "snapshot": "florida-261017.osm.pbf",
+  "license": "ODbL 1.0",
+  "method": "Same geography/cover/building/highway tag selectors and district bounding boxes as fetch_region.py; complete OSM area rings assembled by libosmium."
+}

@@ -1,0 +1,40 @@
+# Downloaded inputs: restore with pipeline/fetch_inputs.py
+/pipeline/work/**/*.json.gz
+/pipeline/work/**/osm*.json
+/pipeline/work/**/extension.json
+/pipeline/work/**/forest-cover.json
+/pipeline/work/**/*-worldcover-*.png
+/pipeline/work/**/*-canopy-*.png
+/pipeline/work/**/source/*
+!/pipeline/work/30a_finish/source/geometry.json
+!/pipeline/work/30a_finish/source/districts.json
+/pipeline/work/**/tiles/
+/pipeline/work/**/downloads/
+/pipeline/work/**/raw/
+*.tif
+*.tiff
+*.shp
+*.shx
+*.dbf
+*.prj
+*.cpg
+*.zip
+*.osm
+*.pbf
+node_modules/
+.venv/
+__pycache__/
+*.pyc
+*.pkl
+**/*cache*/
+**/*cache*.sha256
+/pipeline/outputs/
+/pipeline/work/florida_atlas/python_pkgs/
+/pipeline/work/coastal_pipeline/deps/
+.DS_Store
+# Size cannot be expressed in gitignore: check_handoff.py rejects files over 50 MB.
+
+# Re-downloadable WorldCover windows centered on hero cameras
+pipeline/work/coastal_pipeline/v4/**/*-hero-canopy.png
+# Derived region-wide land cover exceeds the 50 MB handoff limit; rebuild from OSM.
+pipeline/work/coastal_pipeline/v4/daytona-flagler/landcover.json

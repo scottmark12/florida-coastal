@@ -1,0 +1,27 @@
+{
+  "region": "daytona-flagler/port-orange",
+  "building_count": 29266,
+  "tree_count": 47840,
+  "region_bytes": 470866,
+  "max_tile_bytes": 908285,
+  "max_anchor_error_m": 0.0249,
+  "max_coast_float32_error_m": 0.03366013773692725,
+  "height_sources": {
+    "assumed-house": 27732,
+    "estimated-nonresidential": 1386,
+    "estimated-type-footprint": 79,
+    "height": 1,
+    "levels": 68
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+  "exported_boundary_source_error_m": 4.892440698734272,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

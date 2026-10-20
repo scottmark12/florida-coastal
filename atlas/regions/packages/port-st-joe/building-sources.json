@@ -1,0 +1,14 @@
+{
+  "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+  "download": "https://bfppub.z5.web.core.windows.net/2026-08-13/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032020132/part-00002-110f5303-ff85-4c71-a2bf-c6070024fec8.c000.csv.gz",
+  "release": "2026-08-13",
+  "license": "CDLA Permissive 2.0",
+  "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+  "download_sha256": "c071fdabdc7ed579a9364fd97b23b99b1b1e390cd6f9bc5d9d9525b03209086e",
+  "footprints": 545,
+  "notes": [
+    "Only adds Cape footprints that do not intersect an existing OSM building with approximately 4 m tolerance.",
+    "Imagery-derived estimates, not a current field survey. Imagery dates vary; no claim all footprints are current.",
+    "Negative IDs are local supplemental IDs, never OSM IDs. Default one-to-two-storey house heights, unchanged 3x scale rule."
+  ]
+}

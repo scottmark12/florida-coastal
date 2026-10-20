@@ -1,0 +1,51 @@
+{
+  "region": {
+    "id": "emerald-coast",
+    "coast": "panhandle",
+    "name": "Niceville",
+    "map": "Emerald Coast",
+    "at": [
+      30.3,
+      -86.55
+    ],
+    "side": "S",
+    "img": "img/destin-beach.jpg",
+    "text": "The western Panhandle runs from historic Pensacola east to Panama City Beach. In between are Destin's harbor and the small beach towns of 30A, all on sugar white sand and clear green water.",
+    "towns": [
+      "niceville"
+    ],
+    "center": [
+      -231.63663375567083,
+      702.5863824581506
+    ]
+  },
+  "towns": [
+    {
+      "id": "niceville",
+      "name": "Niceville",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.483,
+      "lat": 30.516,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Boggy Bayou, working docks and oak-shaded neighborhoods on Choctawhatchee Bay.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.openstreetmap.org/",
+      "source_bounds": [
+        -86.528,
+        30.480999999999998,
+        -86.438,
+        30.551
+      ]
+    }
+  ],
+  "bounds": [
+    -86.548,
+    30.461,
+    -86.418,
+    30.570999999999998
+  ]
+}

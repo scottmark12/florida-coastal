@@ -1,0 +1,44 @@
+{
+  "prices": {
+    "hudson": [
+      339000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/pasco-county/hudson"
+    ]
+  },
+  "priceEvidence": {
+    "hudson": {
+      "activeListings": 964,
+      "checked": "2026-10-19"
+    }
+  },
+  "recipes": {
+    "hudson": {
+      "walls": [
+        "#ead7b7",
+        "#b9cdbb",
+        "#d6b49c",
+        "#ccdcdf",
+        "#f3e8ce"
+      ],
+      "roofs": [
+        "#a6b7af",
+        "#b8c6c3",
+        "#a38670"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://flsportscoast.com/",
+      "trim": [
+        "#fff8e7",
+        "#abc2b2"
+      ],
+      "character": "Hudson Beach, canal neighborhoods and working marinas beside broad Gulf marsh."
+    }
+  },
+  "manual_fixes": [
+    "Town style palette curated from municipal/visitor references; individual facade colors remain illustrative.",
+    "Published town-level listing median, period and inventory are retained; not a pair of example listings."
+  ]
+}

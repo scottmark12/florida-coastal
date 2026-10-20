@@ -1,0 +1,98 @@
+{
+  "id": "space-coast/titusville",
+  "name": "Titusville",
+  "towns": [
+    "titusville"
+  ],
+  "bounds": [
+    -80.86,
+    28.5,
+    -80.6,
+    28.66
+  ],
+  "recipes": "work/coastal_pipeline/v4/space-coast/recipes.json",
+  "camera": {
+    "center": [
+      311.51253652267076,
+      515.8634487374985
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "titusville-center": "titusville"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Separated mainland Cocoa (new cocoa-village ID) from the existing cocoa ID, which remains Cocoa Beach; corrected the beach city price source.",
+    "Added six missing cities and coastal communities. Residential styles use the approved low-house recipe; explicit commercial and apartment tags retain their height handling.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/space-coast/geography.json.gz",
+      "work/coastal_pipeline/v4/space-coast/cover.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-titusville.json.gz",
+      "work/coastal_pipeline/v4/space-coast/landmarks-titusville.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/space-coast/districts.json",
+    "prices": "work/coastal_pipeline/v4/space-coast/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/space-coast/titusville/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/space-coast/titusville/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/space-coast/titusville/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/space-coast/titusville/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/space-coast/titusville/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/titusville-center-worldcover-2021.png",
+        "bounds": [
+          -80.832,
+          28.58866666666667,
+          -80.784,
+          28.636666666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "titusville-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  }
+}

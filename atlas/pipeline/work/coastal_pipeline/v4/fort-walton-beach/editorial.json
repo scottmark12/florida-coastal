@@ -1,0 +1,38 @@
+{
+  "prices": {
+    "fort-walton-beach": [
+      385990,
+      "median listing price",
+      "October 2026",
+      "https://www.realtor.com/local/market/florida/okaloosa-county/fort-walton-beach"
+    ]
+  },
+  "recipes": {
+    "fort-walton-beach": {
+      "walls": [
+        "#c9967d",
+        "#e9d7b5",
+        "#f1e8d4",
+        "#b9d2cd"
+      ],
+      "roofs": [
+        "#9caaa5",
+        "#b9c5c0",
+        "#ab8b73"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.destinfwb.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "A walkable low downtown on Santa Rosa Sound with waterfront parks and Brooks Bridge."
+    }
+  },
+  "manual_fixes": [
+    "Town palette and waterfront hero curated from regional visitor references; facade color is editorial, not surveyed.",
+    "Published prices retain their actual metric and period; thin markets are explicitly labeled.",
+    "Four communities without named OSM place nodes use explicitly documented OSM locality or park reference anchors; these are not claimed as municipal centers."
+  ]
+}

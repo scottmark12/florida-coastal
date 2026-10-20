@@ -1,0 +1,229 @@
+{
+  "perdido-key": [
+    "Johnsons Beach locality",
+    -87.4140126,
+    30.3003968,
+    "The Johnsons Beach reference frames Perdido Key\u2019s Gulf shore and neighboring condo and dune landscape.",
+    5.5,
+    2.2,
+    "landmark",
+    "https://www.openstreetmap.org/node/153522537",
+    []
+  ],
+  "gulf-breeze": [
+    "Shoreline Park South",
+    -87.17454307834623,
+    30.35344255,
+    "Shoreline Park frames the wooded Gulf Breeze peninsula and Pensacola Bay waterfront.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/relation/3534076",
+    []
+  ],
+  "navarre": [
+    "Navarre Park",
+    -86.86440582563611,
+    30.4004956,
+    "Navarre Park frames the soundside town and the causeway to the beach.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/554596477",
+    []
+  ],
+  "navarre-beach": [
+    "Navarre Beach Fishing Pier",
+    -86.86359808340126,
+    30.379106471572403,
+    "The Gulf fishing pier frames Navarre Beach\u2019s white sand, towers and low beach homes.",
+    5.5,
+    2.2,
+    "landmark",
+    "https://www.openstreetmap.org/way/218192413",
+    []
+  ],
+  "fort-walton-beach": [
+    "Fort Walton Landing",
+    -86.60720469123035,
+    30.402601750000002,
+    "The Landing frames downtown Fort Walton Beach, Santa Rosa Sound and Brooks Bridge.",
+    6,
+    2.4,
+    "park",
+    "https://www.openstreetmap.org/way/230074295",
+    []
+  ],
+  "okaloosa-island": [
+    "Okaloosa Island Fishing Pier",
+    -86.59295707056104,
+    30.392951775855327,
+    "The fishing pier frames the island\u2019s Gulf resort strip and the sound behind it.",
+    5.5,
+    2.2,
+    "landmark",
+    "https://www.openstreetmap.org/way/83459432",
+    []
+  ],
+  "mary-esther": [
+    "Oak Tree Nature Park",
+    -86.66632371165201,
+    30.41137865,
+    "Oak Tree Nature Park frames Mary Esther\u2019s low wooded neighborhoods beside Santa Rosa Sound.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/318342121",
+    []
+  ],
+  "shalimar": [
+    "Meigs Park and Boat Ramp",
+    -86.5750341076087,
+    30.4333406,
+    "Meigs Park frames Shalimar\u2019s sheltered bayou, boat ramp and neighboring residential streets.",
+    5.5,
+    2.2,
+    "boating",
+    "https://www.openstreetmap.org/way/688807549",
+    []
+  ],
+  "niceville": [
+    "Niceville Landing",
+    -86.48837946450773,
+    30.51899915,
+    "Niceville Landing frames the working waterfront on Boggy Bayou and the old town behind it.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/617522472",
+    []
+  ],
+  "valparaiso": [
+    "Lincoln Park",
+    -86.48841402150202,
+    30.508228199999998,
+    "Lincoln Park frames the bayou waterfront and Valparaiso\u2019s tree-covered historic streets.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/455428842",
+    []
+  ],
+  "miramar-beach": [
+    "Miramar Beach Regional Beach Access",
+    -86.38752755,
+    30.37819479,
+    "The county\u2019s Gulf beach access frames Miramar\u2019s white-sand shore, beach homes and beachfront buildings.",
+    5.5,
+    2.2,
+    "beach",
+    "https://www.visitsouthwalton.com/beach-access/miramar-beach-regional-beach-access-49/",
+    []
+  ],
+  "freeport": [
+    "City of Freeport Public Park",
+    -86.13784900935144,
+    30.50074865,
+    "The public park anchors Freeport\u2019s low town center, wooded neighborhoods and nearby creek network.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/819631431",
+    []
+  ],
+  "keaton-beach": [
+    "Hodges Park",
+    -83.59429998905289,
+    29.81890875,
+    "Hodges Park frames Keaton Beach\u2019s Gulf edge, fishing cottages, marsh and boat access.",
+    3.5,
+    1.6,
+    "park",
+    "https://www.openstreetmap.org/way/353272150",
+    []
+  ],
+  "horseshoe-beach": [
+    "Butler-Douglas Memorial Park",
+    -83.29326892980195,
+    29.4398384,
+    "The waterfront park frames Horseshoe Beach\u2019s low fishing village, canals and Gulf marsh.",
+    3.5,
+    1.6,
+    "park",
+    "https://www.openstreetmap.org/way/659611663",
+    []
+  ],
+  "suwannee": [
+    "Suwannee River Drive bridge",
+    -83.1444621,
+    29.3272009,
+    "The mapped riverfront bridge frames Suwannee\u2019s canal homes, docks and river-mouth landscape.",
+    4,
+    1.8,
+    "landmark",
+    "https://www.openstreetmap.org/way/10867209",
+    []
+  ],
+  "yankeetown": [
+    "Yankeetown riverfront center",
+    -82.7159396,
+    29.0299729,
+    "The mapped riverfront center frames Yankeetown\u2019s cottage streets and the Withlacoochee River.",
+    4,
+    1.8,
+    "walkable",
+    "https://www.openstreetmap.org/node/154092372",
+    []
+  ],
+  "inglis": [
+    "Inglis river crossing",
+    -82.669149,
+    29.02506005,
+    "The river crossing frames Inglis\u2019s low town streets and the Withlacoochee River.",
+    4,
+    1.8,
+    "landmark",
+    "https://www.openstreetmap.org/way/85708601",
+    []
+  ],
+  "hernando-beach": [
+    "Gulf Coast Drive canal neighborhoods",
+    -82.65660843072605,
+    28.496404176956737,
+    "Gulf Coast Drive frames Hernando Beach\u2019s canal peninsula, waterfront homes and nearby Gulf marsh.",
+    5.5,
+    2.2,
+    null,
+    "https://www.openstreetmap.org/way/10959139",
+    [
+      [
+        "Hernando Beach Marina",
+        "boating",
+        -82.6507817,
+        28.49008835
+      ]
+    ]
+  ],
+  "weeki-wachee": [
+    "Weeki Wachee Springs State Park",
+    -82.57483211637238,
+    28.517125200000002,
+    "The springs park frames the source of the Weeki Wachee River, its visitor buildings and wooded setting.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/1148344197",
+    []
+  ],
+  "aripeka": [
+    "Aripeka Road creek bridge",
+    -82.66674895,
+    28.432965324999998,
+    "The creek bridge frames Aripeka\u2019s old cottages and tidal marsh channels.",
+    3.5,
+    1.6,
+    "landmark",
+    "https://www.openstreetmap.org/way/119237120",
+    []
+  ]
+}

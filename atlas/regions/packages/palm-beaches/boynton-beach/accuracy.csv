@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Boynton Beach,392.0594787597656,286.71868896484375,-80.05814093321742,26.528913857929908,-80.058141,26.5289139,0.0081,https://www.openstreetmap.org/node/154293014,Representative OSM town place-label anchor: Boynton Beach

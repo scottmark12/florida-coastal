@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Rockledge,319.46722412109375,484.7662048339844,-80.73491630373668,28.33083095633392,-80.7349162,28.330831,0.0113,https://www.openstreetmap.org/node/153902507,Representative OSM town place-label anchor: Rockledge

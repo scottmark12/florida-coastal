@@ -1,0 +1,268 @@
+{
+  "status": "seven town packages built; Port St. Joe includes Cape San Blas",
+  "towns": [
+    {
+      "region": "mexico-beach",
+      "building_count": 1031,
+      "tree_count": 90625,
+      "region_bytes": 64230,
+      "max_tile_bytes": 234015,
+      "max_anchor_error_m": 0.01,
+      "max_coast_float32_error_m": 0.030573959563129523,
+      "height_sources": {
+        "height": 0,
+        "levels": 2,
+        "assumed": 1029
+      },
+      "max_height_width_ratio": 2.5199046701657135,
+      "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "Source/export checks passed; visual review completed; physical phone speed unverified",
+      "exported_boundary_source_error_m": 4.832088035814066,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "manual_fixes": [
+        "Added Mexico Beach to the catalog at user request, using OSM town geometry and official tourism context.",
+        "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+      ],
+      "initial_asset_bytes": 119538
+    },
+    {
+      "region": "port-st-joe",
+      "building_count": 2324,
+      "tree_count": 79909,
+      "region_bytes": 361955,
+      "max_tile_bytes": 244874,
+      "max_anchor_error_m": 0.0187,
+      "max_coast_float32_error_m": 0.03136003877752298,
+      "height_sources": {
+        "height": 0,
+        "levels": 3,
+        "assumed": 2320
+      },
+      "max_height_width_ratio": 3.0,
+      "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "Source/export checks passed; visual review completed; physical phone speed unverified",
+      "exported_boundary_source_error_m": 5.449869915210947,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://bfppub.z5.web.core.windows.net/2026-08-13/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032020132/part-00002-110f5303-ff85-4c71-a2bf-c6070024fec8.c000.csv.gz",
+          "release": "2026-08-13",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "download_sha256": "c071fdabdc7ed579a9364fd97b23b99b1b1e390cd6f9bc5d9d9525b03209086e",
+          "footprints": 545,
+          "notes": [
+            "Only adds Cape footprints that do not intersect an existing OSM building with approximately 4 m tolerance.",
+            "Imagery-derived estimates, not a current field survey. Imagery dates vary; no claim all footprints are current.",
+            "Negative IDs are local supplemental IDs, never OSM IDs. Default one-to-two-storey house heights, unchanged 3x scale rule."
+          ]
+        }
+      ],
+      "manual_fixes": [
+        "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+        "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+        "Expanded mapped coverage to the full St. Joseph Peninsula; Cape Palms Park is the sourced Cape San Blas district control. Port St. Joe town hero remains unchanged.",
+        "Matched the background coast to the same OSM snapshot at the expanded package edge to remove a mixed-source shoreline wedge.",
+        "Filled missing Cape housing footprints from Microsoft open imagery-derived data, excluding overlaps with existing OSM buildings; no Port St. Joe buildings replaced."
+      ],
+      "initial_asset_bytes": 493274
+    },
+    {
+      "region": "apalachicola",
+      "building_count": 1757,
+      "tree_count": 29799,
+      "region_bytes": 196195,
+      "max_tile_bytes": 283945,
+      "max_anchor_error_m": 0.0254,
+      "max_coast_float32_error_m": 0.030601518106092976,
+      "height_sources": {
+        "height": 1,
+        "levels": 6,
+        "assumed": 1750
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "source and export gates passed; desktop and phone-width visual checks completed",
+      "exported_boundary_source_error_m": 4.911612126233551,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "initial_asset_bytes": 238340,
+      "illustrated_boats": 111,
+      "manual_fixes": [
+        "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+        "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+        "Replaced Census background context with the same OSM coastline outside the detailed clip: the mixed-source join produced a 1,749m export-check discrepancy at the eastern clip endpoint.",
+        "Excluded the straight OSM river-mouth closure way/163718731 from physical shoreline color/accuracy controls; it crosses open water. Mapped land and water polygons retained."
+      ]
+    },
+    {
+      "region": "st-george-island",
+      "building_count": 922,
+      "tree_count": 6139,
+      "region_bytes": 157679,
+      "max_tile_bytes": 214153,
+      "max_anchor_error_m": 0.0247,
+      "max_coast_float32_error_m": 0.030727390680622847,
+      "height_sources": {
+        "height": 2,
+        "levels": 93,
+        "assumed": 827
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "source and export gates passed; desktop and phone-width visual checks completed",
+      "exported_boundary_source_error_m": 6.046498232615676,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "initial_asset_bytes": 243188,
+      "illustrated_boats": 0,
+      "manual_fixes": [
+        "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+        "Used mapped Lighthouse Park centroid as district anchor because no named island settlement node is present in the source extract.",
+        "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+      ]
+    },
+    {
+      "region": "carrabelle",
+      "building_count": 1451,
+      "tree_count": 101511,
+      "region_bytes": 224009,
+      "max_tile_bytes": 164436,
+      "max_anchor_error_m": 0.0208,
+      "max_coast_float32_error_m": 0.030635311717840667,
+      "height_sources": {
+        "height": 0,
+        "levels": 36,
+        "assumed": 1415
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "source and export gates passed; desktop and phone-width visual checks completed",
+      "exported_boundary_source_error_m": 4.963822012271601,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "initial_asset_bytes": 308978,
+      "illustrated_boats": 145,
+      "manual_fixes": [
+        "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+        "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+      ]
+    },
+    {
+      "region": "st-teresa",
+      "building_count": 244,
+      "tree_count": 144304,
+      "region_bytes": 117932,
+      "max_tile_bytes": 61385,
+      "max_anchor_error_m": 0.0154,
+      "max_coast_float32_error_m": 0.03049196312193875,
+      "height_sources": {
+        "height": 0,
+        "levels": 0,
+        "assumed": 244
+      },
+      "max_height_width_ratio": 1.2000000000000002,
+      "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "Source/export checks passed; visual review completed; physical phone speed unverified",
+      "exported_boundary_source_error_m": 4.947786341289825,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://bfppub.z5.web.core.windows.net/2026-08-13/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032020133/part-00025-110f5303-ff85-4c71-a2bf-c6070024fec8.c000.csv.gz",
+          "release": "2026-08-13",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "download_sha256": "cb76d78979c1ddf2ac57445f7418261c1558a704ab7c77121e1a50a85c887961",
+          "footprints": 244,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey.",
+            "Height estimates are retained in the source subset but not used as surveyed heights; the unchanged house default of one to two storeys applies.",
+            "Negative IDs are local supplemental IDs, never OSM IDs. OSM coast, roads and district anchors are retained."
+          ]
+        }
+      ],
+      "manual_fixes": [
+        "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+        "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+        "St. Teresa residential footprints supplemented from Microsoft Global ML Building Footprints (CDLA Permissive 2.0); negative local IDs are not OSM IDs."
+      ],
+      "initial_asset_bytes": 206451
+    },
+    {
+      "region": "st-marks",
+      "building_count": 151,
+      "tree_count": 218507,
+      "region_bytes": 294078,
+      "max_tile_bytes": 65738,
+      "max_anchor_error_m": 0.0052,
+      "max_coast_float32_error_m": 0.03052371206783261,
+      "height_sources": {
+        "height": 0,
+        "levels": 3,
+        "assumed": 148
+      },
+      "max_height_width_ratio": 3.0,
+      "engine_sha256": "2e8440f560776416b026bfc205f173b4b5404ecc3d211cb5ca12bc4f72bc1e11",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "source and export gates passed; desktop and phone-width visual checks completed",
+      "exported_boundary_source_error_m": 7.718577016702312,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "initial_asset_bytes": 362835,
+      "illustrated_boats": 24,
+      "manual_fixes": [
+        "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory.",
+        "Latest published sale median is the three months ending May 2026, based on one sale; shown explicitly rather than described as a current robust estimate.",
+        "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+      ]
+    }
+  ],
+  "blocked": [],
+  "limitations": [
+    "Source-alignment checks are not an independent survey.",
+    "Supplemental Microsoft buildings are imagery-derived estimates with varying imagery dates.",
+    "Physical mid-range phone speed unverified.",
+    "St. Marks price is an explicitly labeled older, one-sale sample."
+  ]
+}

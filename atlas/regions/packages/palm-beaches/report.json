@@ -1,0 +1,471 @@
+{
+  "towns": [
+    "delray",
+    "jupiter",
+    "boca-raton",
+    "highland-beach",
+    "north-palm-beach",
+    "palm-beach",
+    "palm-beach-gardens",
+    "riviera-beach",
+    "west-palm-beach",
+    "boynton-beach",
+    "lake-worth-beach",
+    "juno-beach",
+    "tequesta",
+    "lantana",
+    "lake-park",
+    "palm-beach-shores"
+  ],
+  "districts": 17,
+  "max_anchor_error_m": 0.0179,
+  "max_serialized_coast_source_error_m": 53.044452642539575,
+  "phone_hardware_verified": false,
+  "manual_fixes": [
+    "Expanded inland Palm Beach Gardens source context to its nearest real coast.",
+    "Curated hero points and district palette/land-cover recipes, including Singer Island within Riviera Beach.",
+    "Imported mapped Juno and Lake Worth piers; cleared three illustrative crowns immediately over the Jupiter lighthouse."
+  ],
+  "town_reports": [
+    {
+      "region": "palm-beaches/delray",
+      "building_count": 11629,
+      "tree_count": 33346,
+      "region_bytes": 181869,
+      "max_tile_bytes": 156825,
+      "max_anchor_error_m": 0.0109,
+      "max_coast_float32_error_m": 0.02093748796514114,
+      "height_sources": {
+        "assumed-house": 26,
+        "estimated-nonresidential": 11546,
+        "estimated-type-footprint": 38,
+        "levels": 19
+      },
+      "max_height_width_ratio": 3.000000000000001,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.944793189960567,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/jupiter",
+      "building_count": 6968,
+      "tree_count": 53341,
+      "region_bytes": 162658,
+      "max_tile_bytes": 128062,
+      "max_anchor_error_m": 0.0104,
+      "max_coast_float32_error_m": 0.021348383563157398,
+      "height_sources": {
+        "assumed-house": 249,
+        "estimated-nonresidential": 6614,
+        "estimated-type-footprint": 43,
+        "height": 1,
+        "levels": 61
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 53.044452642539575,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "landmark_canopy_clearance": {
+        "removed_illustrative_crowns": 3,
+        "clearances": [
+          [
+            388.2035559928667,
+            333.2122541599656,
+            0.012,
+            "way/552218629"
+          ]
+        ],
+        "building_meshes_changed": false
+      }
+    },
+    {
+      "region": "palm-beaches/boca-raton",
+      "building_count": 16751,
+      "tree_count": 39501,
+      "region_bytes": 348061,
+      "max_tile_bytes": 146279,
+      "max_anchor_error_m": 0.0113,
+      "max_coast_float32_error_m": 0.021323597833183553,
+      "height_sources": {
+        "assumed-house": 1337,
+        "estimated-nonresidential": 15203,
+        "estimated-type-footprint": 83,
+        "height": 11,
+        "levels": 117
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 13.750751818711572,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/highland-beach",
+      "building_count": 3418,
+      "tree_count": 20899,
+      "region_bytes": 81440,
+      "max_tile_bytes": 135602,
+      "max_anchor_error_m": 0.0087,
+      "max_coast_float32_error_m": 0.021026977428756755,
+      "height_sources": {
+        "assumed-house": 807,
+        "estimated-nonresidential": 2546,
+        "estimated-type-footprint": 16,
+        "height": 28,
+        "levels": 21
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 25.045809307638773,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/north-palm-beach",
+      "building_count": 5215,
+      "tree_count": 46224,
+      "region_bytes": 117932,
+      "max_tile_bytes": 136831,
+      "max_anchor_error_m": 0.0082,
+      "max_coast_float32_error_m": 0.021320232818845302,
+      "height_sources": {
+        "assumed-house": 15,
+        "estimated-nonresidential": 5162,
+        "estimated-type-footprint": 2,
+        "height": 19,
+        "levels": 17
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.9914884352367075,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/palm-beach",
+      "building_count": 4804,
+      "tree_count": 15390,
+      "region_bytes": 91633,
+      "max_tile_bytes": 169402,
+      "max_anchor_error_m": 0.0127,
+      "max_coast_float32_error_m": 0.020719164135646544,
+      "height_sources": {
+        "assumed-house": 29,
+        "estimated-nonresidential": 4657,
+        "estimated-type-footprint": 39,
+        "height": 9,
+        "levels": 70
+      },
+      "max_height_width_ratio": 3.000000000000001,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.964938170595548,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/palm-beach-gardens",
+      "building_count": 5797,
+      "tree_count": 75473,
+      "region_bytes": 183232,
+      "max_tile_bytes": 123677,
+      "max_anchor_error_m": 0.0179,
+      "max_coast_float32_error_m": 0.01975318112416649,
+      "height_sources": {
+        "assumed-house": 51,
+        "estimated-nonresidential": 5685,
+        "estimated-type-footprint": 61
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.6882167126313865,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/riviera-beach",
+      "building_count": 15749,
+      "tree_count": 20920,
+      "region_bytes": 230886,
+      "max_tile_bytes": 171380,
+      "max_anchor_error_m": 0.0174,
+      "max_coast_float32_error_m": 0.021320232818845302,
+      "height_sources": {
+        "assumed-house": 322,
+        "estimated-nonresidential": 15217,
+        "estimated-type-footprint": 131,
+        "height": 22,
+        "levels": 57
+      },
+      "max_height_width_ratio": 3.000000000000001,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.9914884352367075,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/west-palm-beach",
+      "building_count": 6629,
+      "tree_count": 24107,
+      "region_bytes": 130244,
+      "max_tile_bytes": 572162,
+      "max_anchor_error_m": 0.0165,
+      "max_coast_float32_error_m": 0.020719164135646544,
+      "height_sources": {
+        "assumed-house": 4258,
+        "estimated-nonresidential": 2213,
+        "estimated-type-footprint": 50,
+        "height": 15,
+        "levels": 93
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.964938170595548,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/boynton-beach",
+      "building_count": 10753,
+      "tree_count": 29415,
+      "region_bytes": 162336,
+      "max_tile_bytes": 186718,
+      "max_anchor_error_m": 0.0081,
+      "max_coast_float32_error_m": 0.02084060161041811,
+      "height_sources": {
+        "assumed-house": 4977,
+        "estimated-nonresidential": 5505,
+        "estimated-type-footprint": 66,
+        "height": 1,
+        "levels": 204
+      },
+      "max_height_width_ratio": 3.000000000000001,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 13.05762602551128,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/lake-worth-beach",
+      "building_count": 11730,
+      "tree_count": 21731,
+      "region_bytes": 159632,
+      "max_tile_bytes": 762425,
+      "max_anchor_error_m": 0.0141,
+      "max_coast_float32_error_m": 0.020830507141285162,
+      "height_sources": {
+        "assumed-house": 11007,
+        "estimated-nonresidential": 608,
+        "estimated-type-footprint": 48,
+        "height": 39,
+        "levels": 28
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.995494320073114,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/juno-beach",
+      "building_count": 3694,
+      "tree_count": 46195,
+      "region_bytes": 94633,
+      "max_tile_bytes": 137272,
+      "max_anchor_error_m": 0.0117,
+      "max_coast_float32_error_m": 0.01765738768175288,
+      "height_sources": {
+        "assumed-house": 1528,
+        "estimated-nonresidential": 2108,
+        "estimated-type-footprint": 45,
+        "levels": 13
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.22505130075229,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/tequesta",
+      "building_count": 4997,
+      "tree_count": 104379,
+      "region_bytes": 129630,
+      "max_tile_bytes": 133787,
+      "max_anchor_error_m": 0.012,
+      "max_coast_float32_error_m": 0.020324872619819755,
+      "height_sources": {
+        "assumed-house": 17,
+        "estimated-nonresidential": 4953,
+        "estimated-type-footprint": 8,
+        "height": 1,
+        "levels": 18
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 53.044452642539575,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/lantana",
+      "building_count": 8205,
+      "tree_count": 27352,
+      "region_bytes": 139799,
+      "max_tile_bytes": 677448,
+      "max_anchor_error_m": 0.0152,
+      "max_coast_float32_error_m": 0.020917749661769562,
+      "height_sources": {
+        "assumed-house": 7623,
+        "estimated-nonresidential": 439,
+        "estimated-type-footprint": 58,
+        "height": 39,
+        "levels": 46
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.997196264880565,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/lake-park",
+      "building_count": 9690,
+      "tree_count": 19932,
+      "region_bytes": 145307,
+      "max_tile_bytes": 190073,
+      "max_anchor_error_m": 0.0046,
+      "max_coast_float32_error_m": 0.021320232818845302,
+      "height_sources": {
+        "assumed-house": 352,
+        "estimated-nonresidential": 9262,
+        "estimated-type-footprint": 66,
+        "height": 3,
+        "levels": 7
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 15.843736951455442,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "palm-beaches/palm-beach-shores",
+      "building_count": 4784,
+      "tree_count": 8909,
+      "region_bytes": 80189,
+      "max_tile_bytes": 130733,
+      "max_anchor_error_m": 0.0161,
+      "max_coast_float32_error_m": 0.020892922453162512,
+      "height_sources": {
+        "assumed-house": 27,
+        "estimated-nonresidential": 4665,
+        "estimated-type-footprint": 40,
+        "height": 4,
+        "levels": 48
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.9914884352367075,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    }
+  ]
+}

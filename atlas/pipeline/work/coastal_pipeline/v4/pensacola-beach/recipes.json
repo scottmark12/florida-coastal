@@ -1,0 +1,106 @@
+{
+  "recipes": {
+    "pensacola-beach": {
+      "walls": [
+        "#fffdf4",
+        "#fffdf4",
+        "#fffdf4",
+        "#d5ece6",
+        "#f0d4d0",
+        "#f6e8b9",
+        "#d8e8ef"
+      ],
+      "roofs": [
+        "#d8e0db",
+        "#b8cccd",
+        "#d1d9d7"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://visitpensacolabeach.com/pensacola-beach-icons-blog/",
+      "trim": [
+        "#fffdf5",
+        "#f8f7ee"
+      ],
+      "character": "White and pastel beachfront condominium towers; existing mapped heights, balconies and footprint scale retained."
+    },
+    "beach-residential": {
+      "walls": [
+        "#fff9e9",
+        "#d2e8e2",
+        "#d4e4e9",
+        "#f3e4c4",
+        "#eed1cb"
+      ],
+      "roofs": [
+        "#b7c6c5",
+        "#d9dbd2",
+        "#819c98"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridacoastal.co/towns/pensacola-beach.html"
+    }
+  },
+  "landmarks": {
+    "way/145115191": {
+      "illustratedRealHeightMeters": 48.768,
+      "profile": [
+        [
+          0,
+          0.39
+        ],
+        [
+          0.57,
+          0.39
+        ],
+        [
+          0.64,
+          0.22
+        ],
+        [
+          0.72,
+          0.06
+        ],
+        [
+          0.85,
+          0
+        ],
+        [
+          0.94,
+          0.1
+        ],
+        [
+          0.98,
+          0.27
+        ]
+      ],
+      "walls": [
+        "#f3e8c5"
+      ],
+      "source": "https://www.visitflorida.com/travel-ideas/articles/beach-highlights-pensacola-beach/",
+      "note": "160ft reported height; stylized tank-and-stem profile, palette simplified by existing recipe format."
+    }
+  },
+  "styleZones": [
+    {
+      "bounds": [
+        -87.24,
+        30.29,
+        -87.151,
+        30.38
+      ],
+      "recipe": "beach-residential"
+    },
+    {
+      "bounds": [
+        -87.13,
+        30.29,
+        -87.03,
+        30.38
+      ],
+      "recipe": "beach-residential"
+    }
+  ],
+  "towerRecipe": "pensacola-beach"
+}

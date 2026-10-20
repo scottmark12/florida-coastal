@@ -1,0 +1,385 @@
+{
+  "id": "nature-coast",
+  "base": "base.glb.gz",
+  "bounds": [
+    24.194181469867992,
+    477.45207790729654,
+    154.34305684174785,
+    661.5516239412847
+  ],
+  "canopy": "canopy.png",
+  "water": "water.png",
+  "trees": "trees.json.gz",
+  "scale": {
+    "buildings": 3,
+    "trees": 5,
+    "maxHeightToFootprint": 3,
+    "metersPerStorey": 3,
+    "defaultResidentialStoreys": 2,
+    "treeRealHeightMeters": 12,
+    "treeCrownWidthMeters": 8,
+    "notes": "Use OSM height, then levels. Only houses without either default to 1\u20132 stories. Apartments/condos/hotels/resorts and footprints >=1500 m\u00b2 within 300 m of mapped beach use explicit, flagged type/area estimates when height and levels are absent. Retain 3x display scale and width caps.",
+    "residentialStoreys": [
+      1,
+      2
+    ],
+    "houseMaxHeightToFootprint": 1.2,
+    "coastalBuildings": {
+      "types": [
+        "apartments",
+        "condominium",
+        "condo",
+        "hotel",
+        "resort"
+      ],
+      "minFootprintM2": 1500,
+      "beachDistanceMeters": 300,
+      "estimateMinStoreys": 4,
+      "estimateMaxStoreys": 20,
+      "estimateBaseStoreys": 4,
+      "estimateSqrtAreaDivisor": 10,
+      "note": "Estimated storeys = clamp(round(4 + sqrt(footprint m\u00b2)/10),4,20), only when OSM height and levels are absent. Beach proximity is measured to mapped natural=beach polygons. This is an illustration estimate, not building research."
+    }
+  },
+  "buildings": [
+    {
+      "file": "native-buildings-16-62.glb.gz",
+      "bounds": [
+        128,
+        496,
+        136,
+        504
+      ],
+      "bytes": 387071
+    },
+    {
+      "file": "native-buildings-16-61.glb.gz",
+      "bounds": [
+        128,
+        488,
+        136,
+        496
+      ],
+      "bytes": 840641
+    },
+    {
+      "file": "native-buildings-11-71.glb.gz",
+      "bounds": [
+        88,
+        568,
+        96,
+        576
+      ],
+      "bytes": 131517
+    },
+    {
+      "file": "native-buildings-12-72.glb.gz",
+      "bounds": [
+        96,
+        576,
+        104,
+        584
+      ],
+      "bytes": 1004
+    },
+    {
+      "file": "native-buildings-17-67.glb.gz",
+      "bounds": [
+        136,
+        536,
+        144,
+        544
+      ],
+      "bytes": 881750
+    },
+    {
+      "file": "native-buildings-17-68.glb.gz",
+      "bounds": [
+        136,
+        544,
+        144,
+        552
+      ],
+      "bytes": 304936
+    },
+    {
+      "file": "native-buildings-16-68.glb.gz",
+      "bounds": [
+        128,
+        544,
+        136,
+        552
+      ],
+      "bytes": 156414
+    },
+    {
+      "file": "native-buildings-16-67.glb.gz",
+      "bounds": [
+        128,
+        536,
+        136,
+        544
+      ],
+      "bytes": 111985
+    },
+    {
+      "file": "native-buildings-17-66.glb.gz",
+      "bounds": [
+        136,
+        528,
+        144,
+        536
+      ],
+      "bytes": 395281
+    },
+    {
+      "file": "native-buildings-16-66.glb.gz",
+      "bounds": [
+        128,
+        528,
+        136,
+        536
+      ],
+      "bytes": 267829
+    },
+    {
+      "file": "native-buildings-17-65.glb.gz",
+      "bounds": [
+        136,
+        520,
+        144,
+        528
+      ],
+      "bytes": 18937
+    },
+    {
+      "file": "native-buildings-8-75.glb.gz",
+      "bounds": [
+        64,
+        600,
+        72,
+        608
+      ],
+      "bytes": 54244
+    },
+    {
+      "file": "native-buildings-16-69.glb.gz",
+      "bounds": [
+        128,
+        552,
+        136,
+        560
+      ],
+      "bytes": 187769
+    },
+    {
+      "file": "native-buildings-15-69.glb.gz",
+      "bounds": [
+        120,
+        552,
+        128,
+        560
+      ],
+      "bytes": 130828
+    },
+    {
+      "file": "native-buildings-16-70.glb.gz",
+      "bounds": [
+        128,
+        560,
+        136,
+        568
+      ],
+      "bytes": 43691
+    },
+    {
+      "file": "native-buildings-15-70.glb.gz",
+      "bounds": [
+        120,
+        560,
+        128,
+        568
+      ],
+      "bytes": 10672
+    },
+    {
+      "file": "native-buildings-4-80.glb.gz",
+      "bounds": [
+        32,
+        640,
+        40,
+        648
+      ],
+      "bytes": 41761
+    },
+    {
+      "file": "native-buildings-5-81.glb.gz",
+      "bounds": [
+        40,
+        648,
+        48,
+        656
+      ],
+      "bytes": 20659
+    },
+    {
+      "file": "native-buildings-5-80.glb.gz",
+      "bounds": [
+        40,
+        640,
+        48,
+        648
+      ],
+      "bytes": 30980
+    },
+    {
+      "file": "native-buildings-4-81.glb.gz",
+      "bounds": [
+        32,
+        648,
+        40,
+        656
+      ],
+      "bytes": 12419
+    },
+    {
+      "file": "native-buildings-15-68.glb.gz",
+      "bounds": [
+        120,
+        544,
+        128,
+        552
+      ],
+      "bytes": 1731
+    },
+    {
+      "file": "native-buildings-7-78.glb.gz",
+      "bounds": [
+        56,
+        624,
+        64,
+        632
+      ],
+      "bytes": 465687
+    },
+    {
+      "file": "native-buildings-8-78.glb.gz",
+      "bounds": [
+        64,
+        624,
+        72,
+        632
+      ],
+      "bytes": 4795
+    },
+    {
+      "file": "native-buildings-7-79.glb.gz",
+      "bounds": [
+        56,
+        632,
+        64,
+        640
+      ],
+      "bytes": 26930
+    },
+    {
+      "file": "native-buildings-7-77.glb.gz",
+      "bounds": [
+        56,
+        616,
+        64,
+        624
+      ],
+      "bytes": 3606
+    },
+    {
+      "file": "native-buildings-8-79.glb.gz",
+      "bounds": [
+        64,
+        632,
+        72,
+        640
+      ],
+      "bytes": 708
+    },
+    {
+      "file": "native-buildings-10-74.glb.gz",
+      "bounds": [
+        80,
+        592,
+        88,
+        600
+      ],
+      "bytes": 59231
+    },
+    {
+      "file": "native-buildings-10-73.glb.gz",
+      "bounds": [
+        80,
+        584,
+        88,
+        592
+      ],
+      "bytes": 78439
+    },
+    {
+      "file": "native-buildings-17-62.glb.gz",
+      "bounds": [
+        136,
+        496,
+        144,
+        504
+      ],
+      "bytes": 2345872
+    },
+    {
+      "file": "native-buildings-17-63.glb.gz",
+      "bounds": [
+        136,
+        504,
+        144,
+        512
+      ],
+      "bytes": 346245
+    },
+    {
+      "file": "native-buildings-16-63.glb.gz",
+      "bounds": [
+        128,
+        504,
+        136,
+        512
+      ],
+      "bytes": 14894
+    }
+  ],
+  "sourcePackages": [
+    "aripeka",
+    "cedarkey",
+    "crystal-river",
+    "hernando-beach",
+    "homosassa",
+    "horseshoe-beach",
+    "inglis",
+    "keaton-beach",
+    "ozello",
+    "steinhatchee",
+    "suwannee",
+    "weeki-wachee",
+    "yankeetown"
+  ],
+  "native_buildings": 45118,
+  "native_triangles": 812550,
+  "coverage_buildings": {},
+  "initial_bytes": 3067111,
+  "total_building_bytes": 7378526,
+  "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0",
+  "supplemental_sources": [],
+  "notes": [
+    "Approved town geometry is read-only; region meshes retain the source wall and roof vertices.",
+    "OSM/Microsoft coverage fills use the existing 3\u00d7 height and footprint caps; untagged houses are 1\u20132 stories.",
+    "Phone Region view retains terrain, cover and labels, without building clusters.",
+    "Source land cover/canopy positions are composited into a softened regional canopy layer."
+  ],
+  "revision": "3ac9c35c14619750"
+}

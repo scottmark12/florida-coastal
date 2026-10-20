@@ -1,0 +1,217 @@
+{
+  "date": "2026-10-19",
+  "regions": 13,
+  "checks": [
+    {
+      "region": "emerald-coast",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 34.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "forgotten-coast",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 4.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "nature-coast",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 20.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "tampa-bay",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 34.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "fort-myers-sanibel",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 9,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "naples-marco",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 4.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "florida-keys",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 4.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "miami-fort-lauderdale",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 9,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "palm-beaches",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 20.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "treasure-coast",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 4.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "space-coast",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 20.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "daytona-flagler",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 4.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "first-coast",
+      "viewport": "1440\u00d71000",
+      "label_overlaps": 0,
+      "maximum_leader_px": 34.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "emerald-coast",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 34.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "forgotten-coast",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 20.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "nature-coast",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 34.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "tampa-bay",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 34.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "naples-marco",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 9.000000000000014,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "florida-keys",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 4.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "miami-fort-lauderdale",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 34.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "palm-beaches",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 20.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "treasure-coast",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 20.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "space-coast",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 20.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "daytona-flagler",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 20.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "first-coast",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 34.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    },
+    {
+      "region": "fort-myers-sanibel",
+      "viewport": "390\u00d7844",
+      "label_overlaps": 0,
+      "maximum_leader_px": 34.5,
+      "horizontal_overflow": false,
+      "continuous_backdrop_covers_viewport": true
+    }
+  ],
+  "approved_tampa_pinellas_town_packages_unchanged": true,
+  "physical_phone_timing_verified": false,
+  "reference": "Approved Sarasota and Bradenton regional artwork preserved as Tampa Bay foreground"
+}

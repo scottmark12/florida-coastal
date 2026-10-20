@@ -1,0 +1,11 @@
+{
+  "snapshot": "florida-261017.osm.pbf",
+  "source": "https://download.geofabrik.de/north-america/us/florida.html",
+  "buildingWindowOffsetsDegrees": [
+    -0.09,
+    -0.035,
+    0.035,
+    0.055
+  ],
+  "note": "Expanded source window only; scale, exporter, styling implementation and phone rules unchanged. Use the regional acquisition adapter to reproduce the reviewed broad building coverage. Raw PBF, extracts and canopy raster PNGs excluded from Git."
+}

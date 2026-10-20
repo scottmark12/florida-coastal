@@ -1,0 +1,38 @@
+{
+  "prices": {
+    "navarre-beach": [
+      899000,
+      "median listing price",
+      "October 2026",
+      "https://www.realtor.com/local/market/florida/santa-rosa-county/navarre-beach"
+    ]
+  },
+  "recipes": {
+    "navarre-beach": {
+      "walls": [
+        "#fffbed",
+        "#e8ddec",
+        "#d9eacb",
+        "#f4e7b8"
+      ],
+      "roofs": [
+        "#c6d4d2",
+        "#d8ded7",
+        "#9eafb0"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.getrelaxing.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "White sand, a long Gulf fishing pier, pastel beach homes and condo towers."
+    }
+  },
+  "manual_fixes": [
+    "Town palette and waterfront hero curated from regional visitor references; facade color is editorial, not surveyed.",
+    "Published prices retain their actual metric and period; thin markets are explicitly labeled.",
+    "Four communities without named OSM place nodes use explicitly documented OSM locality or park reference anchors; these are not claimed as municipal centers."
+  ]
+}

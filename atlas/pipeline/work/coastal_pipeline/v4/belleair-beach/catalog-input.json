@@ -1,0 +1,53 @@
+{
+  "region": {
+    "id": "st-pete-clearwater",
+    "coast": "gulf",
+    "name": "Belleair Beach",
+    "map": "St. Pete and Clearwater",
+    "at": [
+      27.98,
+      -82.9
+    ],
+    "side": "W",
+    "img": "img/st-pete-beach.jpg",
+    "pos": "30% center",
+    "hpos": "center 50%",
+    "text": "A narrow peninsula between the Gulf and Tampa Bay that packs in a walkable waterfront city, a string of barrier island beach towns and a few small bayside downtowns. Tampa's airport is close to all of it.",
+    "towns": [
+      "belleair-beach"
+    ],
+    "center": [
+      122.24598020586825,
+      435.71475503880146
+    ]
+  },
+  "towns": [
+    {
+      "id": "belleair-beach",
+      "name": "Belleair Beach",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.844,
+      "lat": 27.923,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "A quiet residential barrier island of Gulf homes, low beach condos and Intracoastal docks.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.cityofbelleairbeach.com/",
+      "source_bounds": [
+        -82.889,
+        27.887999999999998,
+        -82.79899999999999,
+        27.958
+      ]
+    }
+  ],
+  "bounds": [
+    -82.90899999999999,
+    27.868,
+    -82.779,
+    27.977999999999998
+  ]
+}

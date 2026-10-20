@@ -1,0 +1,935 @@
+{
+  "id": "st-pete-clearwater",
+  "base": "base.glb.gz",
+  "bounds": [
+    98.16983701524006,
+    395.23879828002123,
+    148.76935534186887,
+    499.6499575160206
+  ],
+  "canopy": "canopy.png",
+  "water": "water.png",
+  "trees": "trees.json.gz",
+  "scale": {
+    "buildings": 3,
+    "trees": 5,
+    "maxHeightToFootprint": 3,
+    "metersPerStorey": 3,
+    "defaultResidentialStoreys": 2,
+    "treeRealHeightMeters": 12,
+    "treeCrownWidthMeters": 8,
+    "notes": "Use OSM height, then levels. Only houses without either default to 1\u20132 stories. Apartments/condos/hotels/resorts and footprints >=1500 m\u00b2 within 300 m of mapped beach use explicit, flagged type/area estimates when height and levels are absent. Retain 3x display scale and width caps.",
+    "residentialStoreys": [
+      1,
+      2
+    ],
+    "houseMaxHeightToFootprint": 1.2,
+    "coastalBuildings": {
+      "types": [
+        "apartments",
+        "condominium",
+        "condo",
+        "hotel",
+        "resort"
+      ],
+      "minFootprintM2": 1500,
+      "beachDistanceMeters": 300,
+      "estimateMinStoreys": 4,
+      "estimateMaxStoreys": 20,
+      "estimateBaseStoreys": 4,
+      "estimateSqrtAreaDivisor": 10,
+      "note": "Estimated storeys = clamp(round(4 + sqrt(footprint m\u00b2)/10),4,20), only when OSM height and levels are absent. Beach proximity is measured to mapped natural=beach polygons. This is an illustration estimate, not building research."
+    }
+  },
+  "buildings": [
+    {
+      "file": "native-buildings-14-54.glb.gz",
+      "bounds": [
+        112,
+        432,
+        120,
+        440
+      ],
+      "bytes": 2412259
+    },
+    {
+      "file": "native-buildings-14-53.glb.gz",
+      "bounds": [
+        112,
+        424,
+        120,
+        432
+      ],
+      "bytes": 3920742
+    },
+    {
+      "file": "native-buildings-15-57.glb.gz",
+      "bounds": [
+        120,
+        456,
+        128,
+        464
+      ],
+      "bytes": 1525441
+    },
+    {
+      "file": "native-buildings-15-58.glb.gz",
+      "bounds": [
+        120,
+        464,
+        128,
+        472
+      ],
+      "bytes": 4516652
+    },
+    {
+      "file": "native-buildings-14-58.glb.gz",
+      "bounds": [
+        112,
+        464,
+        120,
+        472
+      ],
+      "bytes": 81281
+    },
+    {
+      "file": "native-buildings-14-57.glb.gz",
+      "bounds": [
+        112,
+        456,
+        120,
+        464
+      ],
+      "bytes": 250254
+    },
+    {
+      "file": "native-buildings-16-57.glb.gz",
+      "bounds": [
+        128,
+        456,
+        136,
+        464
+      ],
+      "bytes": 900
+    },
+    {
+      "file": "native-buildings-16-60.glb.gz",
+      "bounds": [
+        128,
+        480,
+        136,
+        488
+      ],
+      "bytes": 1756149
+    },
+    {
+      "file": "native-buildings-15-60.glb.gz",
+      "bounds": [
+        120,
+        480,
+        128,
+        488
+      ],
+      "bytes": 703293
+    },
+    {
+      "file": "native-buildings-16-61.glb.gz",
+      "bounds": [
+        128,
+        488,
+        136,
+        496
+      ],
+      "bytes": 79968
+    },
+    {
+      "file": "native-buildings-14-52.glb.gz",
+      "bounds": [
+        112,
+        416,
+        120,
+        424
+      ],
+      "bytes": 577845
+    },
+    {
+      "file": "native-buildings-15-52.glb.gz",
+      "bounds": [
+        120,
+        416,
+        128,
+        424
+      ],
+      "bytes": 1605765
+    },
+    {
+      "file": "native-buildings-15-53.glb.gz",
+      "bounds": [
+        120,
+        424,
+        128,
+        432
+      ],
+      "bytes": 242316
+    },
+    {
+      "file": "native-buildings-16-56.glb.gz",
+      "bounds": [
+        128,
+        448,
+        136,
+        456
+      ],
+      "bytes": 1861815
+    },
+    {
+      "file": "native-buildings-16-55.glb.gz",
+      "bounds": [
+        128,
+        440,
+        136,
+        448
+      ],
+      "bytes": 969981
+    },
+    {
+      "file": "native-buildings-15-55.glb.gz",
+      "bounds": [
+        120,
+        440,
+        128,
+        448
+      ],
+      "bytes": 2291710
+    },
+    {
+      "file": "native-buildings-15-56.glb.gz",
+      "bounds": [
+        120,
+        448,
+        128,
+        456
+      ],
+      "bytes": 4272263
+    },
+    {
+      "file": "native-buildings-14-56.glb.gz",
+      "bounds": [
+        112,
+        448,
+        120,
+        456
+      ],
+      "bytes": 390752
+    },
+    {
+      "file": "native-buildings-15-59.glb.gz",
+      "bounds": [
+        120,
+        472,
+        128,
+        480
+      ],
+      "bytes": 2083147
+    },
+    {
+      "file": "native-buildings-16-59.glb.gz",
+      "bounds": [
+        128,
+        472,
+        136,
+        480
+      ],
+      "bytes": 1220264
+    },
+    {
+      "file": "native-buildings-16-58.glb.gz",
+      "bounds": [
+        128,
+        464,
+        136,
+        472
+      ],
+      "bytes": 51528
+    },
+    {
+      "file": "native-buildings-16-52.glb.gz",
+      "bounds": [
+        128,
+        416,
+        136,
+        424
+      ],
+      "bytes": 2740153
+    },
+    {
+      "file": "native-buildings-14-55.glb.gz",
+      "bounds": [
+        112,
+        440,
+        120,
+        448
+      ],
+      "bytes": 1441167
+    },
+    {
+      "file": "native-buildings-16-51.glb.gz",
+      "bounds": [
+        128,
+        408,
+        136,
+        416
+      ],
+      "bytes": 322983
+    },
+    {
+      "file": "native-buildings-15-51.glb.gz",
+      "bounds": [
+        120,
+        408,
+        128,
+        416
+      ],
+      "bytes": 1181631
+    },
+    {
+      "file": "native-buildings-15-54.glb.gz",
+      "bounds": [
+        120,
+        432,
+        128,
+        440
+      ],
+      "bytes": 57838
+    },
+    {
+      "file": "native-buildings-17-52.glb.gz",
+      "bounds": [
+        136,
+        416,
+        144,
+        424
+      ],
+      "bytes": 1458
+    },
+    {
+      "file": "native-buildings-15-50.glb.gz",
+      "bounds": [
+        120,
+        400,
+        128,
+        408
+      ],
+      "bytes": 19200
+    },
+    {
+      "file": "buildings-14-56.glb.gz",
+      "bounds": [
+        112,
+        448,
+        120,
+        456
+      ],
+      "bytes": 52603
+    },
+    {
+      "file": "buildings-18-54.glb.gz",
+      "bounds": [
+        144,
+        432,
+        152,
+        440
+      ],
+      "bytes": 2579582
+    },
+    {
+      "file": "buildings-15-55.glb.gz",
+      "bounds": [
+        120,
+        440,
+        128,
+        448
+      ],
+      "bytes": 3349844
+    },
+    {
+      "file": "buildings-17-53.glb.gz",
+      "bounds": [
+        136,
+        424,
+        144,
+        432
+      ],
+      "bytes": 530605
+    },
+    {
+      "file": "buildings-14-54.glb.gz",
+      "bounds": [
+        112,
+        432,
+        120,
+        440
+      ],
+      "bytes": 1554111
+    },
+    {
+      "file": "buildings-16-53.glb.gz",
+      "bounds": [
+        128,
+        424,
+        136,
+        432
+      ],
+      "bytes": 4290913
+    },
+    {
+      "file": "buildings-15-54.glb.gz",
+      "bounds": [
+        120,
+        432,
+        128,
+        440
+      ],
+      "bytes": 5062895
+    },
+    {
+      "file": "buildings-16-54.glb.gz",
+      "bounds": [
+        128,
+        432,
+        136,
+        440
+      ],
+      "bytes": 328973
+    },
+    {
+      "file": "buildings-17-52.glb.gz",
+      "bounds": [
+        136,
+        416,
+        144,
+        424
+      ],
+      "bytes": 327983
+    },
+    {
+      "file": "buildings-17-55.glb.gz",
+      "bounds": [
+        136,
+        440,
+        144,
+        448
+      ],
+      "bytes": 4115417
+    },
+    {
+      "file": "buildings-16-51.glb.gz",
+      "bounds": [
+        128,
+        408,
+        136,
+        416
+      ],
+      "bytes": 1696018
+    },
+    {
+      "file": "buildings-18-57.glb.gz",
+      "bounds": [
+        144,
+        456,
+        152,
+        464
+      ],
+      "bytes": 1356922
+    },
+    {
+      "file": "buildings-17-57.glb.gz",
+      "bounds": [
+        136,
+        456,
+        144,
+        464
+      ],
+      "bytes": 1324665
+    },
+    {
+      "file": "buildings-17-56.glb.gz",
+      "bounds": [
+        136,
+        448,
+        144,
+        456
+      ],
+      "bytes": 4484219
+    },
+    {
+      "file": "buildings-18-55.glb.gz",
+      "bounds": [
+        144,
+        440,
+        152,
+        448
+      ],
+      "bytes": 1248631
+    },
+    {
+      "file": "buildings-18-56.glb.gz",
+      "bounds": [
+        144,
+        448,
+        152,
+        456
+      ],
+      "bytes": 2102457
+    },
+    {
+      "file": "buildings-16-52.glb.gz",
+      "bounds": [
+        128,
+        416,
+        136,
+        424
+      ],
+      "bytes": 3393016
+    },
+    {
+      "file": "buildings-15-53.glb.gz",
+      "bounds": [
+        120,
+        424,
+        128,
+        432
+      ],
+      "bytes": 5007719
+    },
+    {
+      "file": "buildings-15-52.glb.gz",
+      "bounds": [
+        120,
+        416,
+        128,
+        424
+      ],
+      "bytes": 3414147
+    },
+    {
+      "file": "buildings-14-57.glb.gz",
+      "bounds": [
+        112,
+        456,
+        120,
+        464
+      ],
+      "bytes": 201171
+    },
+    {
+      "file": "buildings-17-54.glb.gz",
+      "bounds": [
+        136,
+        432,
+        144,
+        440
+      ],
+      "bytes": 78697
+    },
+    {
+      "file": "buildings-16-55.glb.gz",
+      "bounds": [
+        128,
+        440,
+        136,
+        448
+      ],
+      "bytes": 135311
+    },
+    {
+      "file": "buildings-14-55.glb.gz",
+      "bounds": [
+        112,
+        440,
+        120,
+        448
+      ],
+      "bytes": 338639
+    },
+    {
+      "file": "buildings-15-56.glb.gz",
+      "bounds": [
+        120,
+        448,
+        128,
+        456
+      ],
+      "bytes": 1212150
+    },
+    {
+      "file": "buildings-15-57.glb.gz",
+      "bounds": [
+        120,
+        456,
+        128,
+        464
+      ],
+      "bytes": 1009427
+    },
+    {
+      "file": "buildings-16-56.glb.gz",
+      "bounds": [
+        128,
+        448,
+        136,
+        456
+      ],
+      "bytes": 1377272
+    },
+    {
+      "file": "buildings-16-57.glb.gz",
+      "bounds": [
+        128,
+        456,
+        136,
+        464
+      ],
+      "bytes": 837925
+    },
+    {
+      "file": "buildings-14-53.glb.gz",
+      "bounds": [
+        112,
+        424,
+        120,
+        432
+      ],
+      "bytes": 1057763
+    },
+    {
+      "file": "buildings-18-50.glb.gz",
+      "bounds": [
+        144,
+        400,
+        152,
+        408
+      ],
+      "bytes": 281190
+    },
+    {
+      "file": "buildings-18-53.glb.gz",
+      "bounds": [
+        144,
+        424,
+        152,
+        432
+      ],
+      "bytes": 858913
+    },
+    {
+      "file": "buildings-16-58.glb.gz",
+      "bounds": [
+        128,
+        464,
+        136,
+        472
+      ],
+      "bytes": 1761548
+    },
+    {
+      "file": "buildings-16-60.glb.gz",
+      "bounds": [
+        128,
+        480,
+        136,
+        488
+      ],
+      "bytes": 1315314
+    },
+    {
+      "file": "buildings-15-59.glb.gz",
+      "bounds": [
+        120,
+        472,
+        128,
+        480
+      ],
+      "bytes": 418879
+    },
+    {
+      "file": "buildings-14-58.glb.gz",
+      "bounds": [
+        112,
+        464,
+        120,
+        472
+      ],
+      "bytes": 10434
+    },
+    {
+      "file": "buildings-16-59.glb.gz",
+      "bounds": [
+        128,
+        472,
+        136,
+        480
+      ],
+      "bytes": 1137639
+    },
+    {
+      "file": "buildings-16-61.glb.gz",
+      "bounds": [
+        128,
+        488,
+        136,
+        496
+      ],
+      "bytes": 237983
+    },
+    {
+      "file": "buildings-17-61.glb.gz",
+      "bounds": [
+        136,
+        488,
+        144,
+        496
+      ],
+      "bytes": 587638
+    },
+    {
+      "file": "buildings-15-58.glb.gz",
+      "bounds": [
+        120,
+        464,
+        128,
+        472
+      ],
+      "bytes": 410778
+    },
+    {
+      "file": "buildings-17-59.glb.gz",
+      "bounds": [
+        136,
+        472,
+        144,
+        480
+      ],
+      "bytes": 140839
+    },
+    {
+      "file": "buildings-17-58.glb.gz",
+      "bounds": [
+        136,
+        464,
+        144,
+        472
+      ],
+      "bytes": 312157
+    },
+    {
+      "file": "buildings-17-60.glb.gz",
+      "bounds": [
+        136,
+        480,
+        144,
+        488
+      ],
+      "bytes": 884840
+    },
+    {
+      "file": "buildings-18-60.glb.gz",
+      "bounds": [
+        144,
+        480,
+        152,
+        488
+      ],
+      "bytes": 48172
+    },
+    {
+      "file": "buildings-15-50.glb.gz",
+      "bounds": [
+        120,
+        400,
+        128,
+        408
+      ],
+      "bytes": 39870
+    },
+    {
+      "file": "buildings-18-58.glb.gz",
+      "bounds": [
+        144,
+        464,
+        152,
+        472
+      ],
+      "bytes": 187366
+    },
+    {
+      "file": "buildings-15-60.glb.gz",
+      "bounds": [
+        120,
+        480,
+        128,
+        488
+      ],
+      "bytes": 258348
+    },
+    {
+      "file": "buildings-18-59.glb.gz",
+      "bounds": [
+        144,
+        472,
+        152,
+        480
+      ],
+      "bytes": 14599
+    },
+    {
+      "file": "buildings-18-49.glb.gz",
+      "bounds": [
+        144,
+        392,
+        152,
+        400
+      ],
+      "bytes": 161409
+    },
+    {
+      "file": "buildings-15-49.glb.gz",
+      "bounds": [
+        120,
+        392,
+        128,
+        400
+      ],
+      "bytes": 4727
+    },
+    {
+      "file": "buildings-17-50.glb.gz",
+      "bounds": [
+        136,
+        400,
+        144,
+        408
+      ],
+      "bytes": 43125
+    },
+    {
+      "file": "buildings-17-49.glb.gz",
+      "bounds": [
+        136,
+        392,
+        144,
+        400
+      ],
+      "bytes": 11109
+    },
+    {
+      "file": "buildings-18-51.glb.gz",
+      "bounds": [
+        144,
+        408,
+        152,
+        416
+      ],
+      "bytes": 5158
+    },
+    {
+      "file": "buildings-18-61.glb.gz",
+      "bounds": [
+        144,
+        488,
+        152,
+        496
+      ],
+      "bytes": 103633
+    },
+    {
+      "file": "buildings-16-50.glb.gz",
+      "bounds": [
+        128,
+        400,
+        136,
+        408
+      ],
+      "bytes": 4509
+    },
+    {
+      "file": "buildings-15-51.glb.gz",
+      "bounds": [
+        120,
+        408,
+        128,
+        416
+      ],
+      "bytes": 64033
+    },
+    {
+      "file": "buildings-14-52.glb.gz",
+      "bounds": [
+        112,
+        416,
+        120,
+        424
+      ],
+      "bytes": 32401
+    }
+  ],
+  "sourcePackages": [
+    "belleair-beach",
+    "holiday",
+    "hudson",
+    "indian-shores",
+    "north-redington-beach",
+    "oldsmar",
+    "palm-harbor",
+    "port-richey",
+    "redington-beach",
+    "redington-shores",
+    "st-pete-clearwater",
+    "tierra-verde"
+  ],
+  "native_buildings": 226462,
+  "native_triangles": 4108712,
+  "coverage_buildings": {
+    "osm": 317563,
+    "microsoft": 25339
+  },
+  "initial_bytes": 3641687,
+  "total_building_bytes": 98384441,
+  "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0",
+  "supplemental_sources": [
+    {
+      "url": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021212/part-00040-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+      "license": "CDLA Permissive 2.0",
+      "sha256": "c69cd5f4fec5cc2496d20f0477525fbc26e9b7b9b0dccc7acb198223b00bad97"
+    },
+    {
+      "url": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021232/part-00104-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+      "license": "CDLA Permissive 2.0",
+      "sha256": "42d08f161d490f9598ca89d9d363e10e0a256ceb35eaebb4b2c9ce4eef2dc8f8"
+    }
+  ],
+  "notes": [
+    "Approved town geometry is read-only; region meshes retain the source wall and roof vertices.",
+    "OSM/Microsoft coverage fills use the existing 3\u00d7 height and footprint caps; untagged houses are 1\u20132 stories.",
+    "Phone Region view retains terrain, cover and labels, without building clusters.",
+    "Source land cover/canopy positions are composited into a softened regional canopy layer."
+  ],
+  "revision": "b29c442209f7e284",
+  "coverageBounds": [
+    98.73308061866146,
+    397.5612256209079,
+    147.79303043419154,
+    493.55235842658954
+  ],
+  "continuousCoverage": true,
+  "surroundingContext": {
+    "file": "../../context/tampa-bay/context.png",
+    "bounds": [
+      83.90387126582064,
+      375.233720102606,
+      200.18876267978354,
+      506.54073803784706
+    ],
+    "bytes": 273907
+  }
+}

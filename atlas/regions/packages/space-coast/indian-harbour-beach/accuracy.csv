@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Indian Harbour Beach,334.50701904296875,464.9655456542969,-80.58688021824565,28.148936595795863,-80.5868802,28.1489365,0.0108,https://www.openstreetmap.org/node/154191253,Representative OSM town place-label anchor: Indian Harbour Beach

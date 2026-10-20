@@ -1,0 +1,38 @@
+{
+  "prices": {
+    "freeport": [
+      447688,
+      "median listing price",
+      "October 2026",
+      "https://www.realtor.com/local/market/florida/walton-county/freeport"
+    ]
+  },
+  "recipes": {
+    "freeport": {
+      "walls": [
+        "#d5b68c",
+        "#c1ccad",
+        "#e7d7b9",
+        "#bfd1cd"
+      ],
+      "roofs": [
+        "#a6b8b1",
+        "#c3ccc8",
+        "#9ba7a0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitsouthwalton.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "A small bayhead town of creeks, boat ramps and wooded neighborhoods."
+    }
+  },
+  "manual_fixes": [
+    "Town palette and waterfront hero curated from regional visitor references; facade color is editorial, not surveyed.",
+    "Published prices retain their actual metric and period; thin markets are explicitly labeled.",
+    "Four communities without named OSM place nodes use explicitly documented OSM locality or park reference anchors; these are not claimed as municipal centers."
+  ]
+}

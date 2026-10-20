@@ -1,0 +1,27 @@
+{
+  "recipes": {
+    "ozello": {
+      "walls": [
+        "#d7c3a2",
+        "#d4ded0",
+        "#bbcec8",
+        "#e4bcab",
+        "#f3e9d0"
+      ],
+      "roofs": [
+        "#b8c8c4",
+        "#d0d4ca",
+        "#a6aca3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridacoastal.co/towns/ozello.html",
+      "character": "Very sparse fishing homes on tiny marsh islands, reached by winding Ozello Trail; creeks and salt marsh dominate.",
+      "trim": [
+        "#f7eed9",
+        "#b3cbbd"
+      ]
+    }
+  },
+  "coastalHeightZones": []
+}

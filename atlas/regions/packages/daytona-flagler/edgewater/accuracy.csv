@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Edgewater,301.2601318359375,557.399169921875,-80.90227593910657,28.98887551810246,-80.9022758,28.9888754,0.0188,https://www.openstreetmap.org/node/153919256,Representative OSM town place-label anchor: Edgewater

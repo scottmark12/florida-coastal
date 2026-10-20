@@ -1,0 +1,477 @@
+{
+  "recipes": {
+    "boca-raton": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://bocahistory.org/virtual-exhibition/mizners-dream/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "highland-beach": {
+      "walls": [
+        "#f5edda",
+        "#c0dcd7",
+        "#e9d9c0",
+        "#d5e8e1"
+      ],
+      "roofs": [
+        "#d4dfd3",
+        "#a8c4bd"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "delray": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.delraybeachfl.gov/government/city-departments/development-services/historic-preservation/historic-districts",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "palm-beach": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "west-palm-beach": {
+      "walls": [
+        "#efdbb7",
+        "#c7ddcf",
+        "#edc3b8",
+        "#d0dee3",
+        "#f6ead5"
+      ],
+      "roofs": [
+        "#b6c4bf",
+        "#cbd3ce",
+        "#9daaa3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.wpb.org/Departments/Development-Services/Planning-Division/Historic-Preservation/WPB-Historic-Preservation",
+      "referenceScope": "Town character reference; illustrative facade palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "riviera-beach": {
+      "walls": [
+        "#f5edda",
+        "#c0dcd7",
+        "#e9d9c0",
+        "#d5e8e1"
+      ],
+      "roofs": [
+        "#d4dfd3",
+        "#a8c4bd"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "north-palm-beach": {
+      "walls": [
+        "#e4e5cf",
+        "#c9ded3",
+        "#f2deb8",
+        "#f4eddb"
+      ],
+      "roofs": [
+        "#bac5b8",
+        "#d2d5c5"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "palm-beach-gardens": {
+      "walls": [
+        "#f7ecd3",
+        "#d9e6d0",
+        "#efd6bf"
+      ],
+      "roofs": [
+        "#b9947c",
+        "#cdb59a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "jupiter": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "boynton-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "referenceScope": "Town character reference; illustrative facade palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "lake-worth-beach": {
+      "walls": [
+        "#efdbb7",
+        "#c7ddcf",
+        "#edc3b8",
+        "#d0dee3",
+        "#f6ead5"
+      ],
+      "roofs": [
+        "#b6c4bf",
+        "#cbd3ce",
+        "#9daaa3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "referenceScope": "Town character reference; illustrative facade palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "juno-beach": {
+      "walls": [
+        "#f5edda",
+        "#c0dcd7",
+        "#e9d9c0",
+        "#d5e8e1"
+      ],
+      "roofs": [
+        "#d4dfd3",
+        "#a8c4bd"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "referenceScope": "Town character reference; illustrative facade palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "tequesta": {
+      "walls": [
+        "#f7ecd3",
+        "#d9e6d0",
+        "#efd6bf"
+      ],
+      "roofs": [
+        "#b9947c",
+        "#cdb59a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "referenceScope": "Town character reference; illustrative facade palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "lantana": {
+      "walls": [
+        "#efdbb7",
+        "#c7ddcf",
+        "#edc3b8",
+        "#d0dee3",
+        "#f6ead5"
+      ],
+      "roofs": [
+        "#b6c4bf",
+        "#cbd3ce",
+        "#9daaa3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "referenceScope": "Town character reference; illustrative facade palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "lake-park": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "referenceScope": "Town character reference; illustrative facade palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "palm-beach-shores": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "referenceScope": "Town character reference; illustrative facade palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "wpb-downtown": {
+      "walls": [
+        "#87b9c5",
+        "#9bc9c9",
+        "#d3e8e4",
+        "#f1f1e6"
+      ],
+      "roofs": [
+        "#dfede6",
+        "#adc4c3"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "jupiter-lighthouse": {
+      "walls": [
+        "#a9634d"
+      ],
+      "roofs": [
+        "#454b48"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://www.floridalighthouses.org/florida-lighthouses/jupiter-inlet/"
+    },
+    "wpb-elcid": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://npgallery.nps.gov/AssetDetail/NRIS/95001064",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "singer-island-district": {
+      "walls": [
+        "#e9f2e9",
+        "#a9cfd1",
+        "#c5dfe1",
+        "#fff7e7"
+      ],
+      "roofs": [
+        "#d8e5dc",
+        "#b8cfd0"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "referenceScope": "Town character reference; illustrative facade palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "boca-pink-tower": {
+      "walls": [
+        "#f1a0b3"
+      ],
+      "roofs": [
+        "#efb2bd"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://bocahistory.org/virtual-exhibition/mizners-dream/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    }
+  },
+  "styleZones": [
+    {
+      "bounds": [
+        -80.064,
+        26.706,
+        -80.045,
+        26.726
+      ],
+      "recipe": "wpb-downtown"
+    },
+    {
+      "bounds": [
+        -80.056,
+        26.68,
+        -80.045,
+        26.702
+      ],
+      "recipe": "wpb-elcid"
+    }
+  ],
+  "landmarks": {
+    "way/552218629": {
+      "recipe": "jupiter-lighthouse",
+      "profile": [
+        [
+          0,
+          0
+        ],
+        [
+          0.82,
+          0.12
+        ],
+        [
+          0.89,
+          0.02
+        ],
+        [
+          0.96,
+          0.08
+        ]
+      ],
+      "canopyClearanceMeters": 12
+    },
+    "way/480456373": {
+      "walls": [
+        "#f1a0b3"
+      ],
+      "source": "https://www.thebocaraton.com/stay/tower/",
+      "note": "Recognizable pink Tower facade; geometry and height unchanged.",
+      "recipe": "boca-pink-tower"
+    },
+    "way/1047305523": {
+      "walls": [
+        "#edb4a5"
+      ],
+      "source": "https://www.thebocaraton.com/stay/cloister/",
+      "note": "Warm pink historic Cloister facade; geometry and height unchanged."
+    }
+  }
+}

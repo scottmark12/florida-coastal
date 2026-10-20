@@ -1,0 +1,324 @@
+{
+  "emerald-coast": {
+    "file": "images/emerald-coast.webp",
+    "width": 2304,
+    "height": 3072,
+    "camera": {
+      "target": [
+        -180.8328205680246,
+        0,
+        -666.2959487790478
+      ],
+      "left": -212.7822933137861,
+      "right": 212.7822933137861,
+      "top": 283.7097244183815,
+      "bottom": -283.7097244183815,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 366308,
+    "revision": "8d93005e93cdbcdd",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#388eae"
+  },
+  "forgotten-coast": {
+    "file": "images/forgotten-coast.webp",
+    "width": 2304,
+    "height": 3072,
+    "camera": {
+      "target": [
+        -34.015145116076255,
+        0,
+        -629.1802254839164
+      ],
+      "left": -149.94664029912792,
+      "right": 149.94664029912792,
+      "top": 199.92885373217064,
+      "bottom": -199.92885373217064,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 383836,
+    "revision": "207362df967efa01",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#388eae"
+  },
+  "nature-coast": {
+    "file": "images/nature-coast.webp",
+    "width": 2304,
+    "height": 2531,
+    "camera": {
+      "target": [
+        107.90085086954886,
+        0,
+        -584.8984846865022
+      ],
+      "left": -157.30360731941286,
+      "right": 157.30360731941286,
+      "top": 172.79948204127973,
+      "bottom": -172.79948204127973,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 519124,
+    "revision": "fb1e67dc62613b25",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#71adbd"
+  },
+  "tampa-bay": {
+    "file": "images/sarasota-bradenton.webp",
+    "width": 3072,
+    "height": 3072,
+    "camera": {
+      "bottom": -117.04722135863386,
+      "far": 1170.4722135863385,
+      "left": -117.04722135863386,
+      "mapUnits": "kilometers",
+      "near": 11.704722135863388,
+      "position": [
+        144.55364443164265,
+        292.6180533965846,
+        -97.91481233717168
+      ],
+      "projection": "orthographic",
+      "right": 117.04722135863386,
+      "target": [
+        144.55364443164265,
+        0,
+        -390.5328657337563
+      ],
+      "tiltDegrees": 45,
+      "top": 117.04722135863386
+    },
+    "bytes": 363284,
+    "revision": "593fb00f68d55c09",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0",
+    "reference": "Approved Sarasota and Bradenton regional capture",
+    "presentation": "approved-source",
+    "waterColor": "#3593ae"
+  },
+  "fort-myers-sanibel": {
+    "file": "images/fort-myers-sanibel.webp",
+    "width": 2304,
+    "height": 2331,
+    "camera": {
+      "target": [
+        209.68672197078283,
+        0,
+        -303.3652488344336
+      ],
+      "left": -76.00789791590407,
+      "right": 76.00789791590407,
+      "top": 76.90659916532368,
+      "bottom": -76.90659916532368,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 447072,
+    "revision": "0775546f7e1d2f24",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#71adbd",
+    "layers": [
+      {
+        "file": "images/naples-marco.webp",
+        "width": 2304,
+        "height": 3072,
+        "camera": {
+          "target": [
+            260.34461778321713,
+            0,
+            -228.46179795409483
+          ],
+          "left": -60.56521297806229,
+          "right": 60.56521297806229,
+          "top": 80.75361730408308,
+          "bottom": -80.75361730408308,
+          "tiltDegrees": 45,
+          "projection": "orthographic",
+          "mapUnits": "kilometers"
+        },
+        "bytes": 384488,
+        "revision": "a02e76c6c3376a3d",
+        "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+        "styleReference": "Approved Sarasota and Bradenton regional illustration",
+        "waterColor": "#71adbd"
+      }
+    ]
+  },
+  "florida-keys": {
+    "file": "images/florida-keys.webp",
+    "width": 2304,
+    "height": 3072,
+    "camera": {
+      "target": [
+        341.72362615531085,
+        0,
+        -63.82467174201937
+      ],
+      "left": -170.00585603216217,
+      "right": 170.00585603216217,
+      "top": 226.67447470954954,
+      "bottom": -226.67447470954954,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 194934,
+    "revision": "ee46b56a924fceed",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#71adbd"
+  },
+  "miami-fort-lauderdale": {
+    "file": "images/miami-fort-lauderdale.webp",
+    "width": 2304,
+    "height": 1322,
+    "camera": {
+      "target": [
+        393.2369752274393,
+        0,
+        -233.2152956167935
+      ],
+      "left": -63.71524068975117,
+      "right": 63.71524068975117,
+      "top": 36.545529667776606,
+      "bottom": -36.545529667776606,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 180976,
+    "revision": "5c78de91b472e153",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#71adbd"
+  },
+  "palm-beaches": {
+    "file": "images/palm-beaches.webp",
+    "width": 2304,
+    "height": 1322,
+    "camera": {
+      "target": [
+        396.44601952705244,
+        0,
+        -303.47571679290377
+      ],
+      "left": -68.65977907832047,
+      "right": 68.65977907832047,
+      "top": 39.381597968182234,
+      "bottom": -39.381597968182234,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 175030,
+    "revision": "72c50c63ade28b39",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#71adbd"
+  },
+  "treasure-coast": {
+    "file": "images/treasure-coast.webp",
+    "width": 2304,
+    "height": 1592,
+    "camera": {
+      "target": [
+        368.44865205619976,
+        0,
+        -398.9128235579698
+      ],
+      "left": -74.17930590207283,
+      "right": 74.17930590207283,
+      "top": 51.267487695616225,
+      "bottom": -51.267487695616225,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 197538,
+    "revision": "c79264ab4090d756",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#71adbd"
+  },
+  "space-coast": {
+    "file": "images/space-coast.webp",
+    "width": 2304,
+    "height": 1707,
+    "camera": {
+      "target": [
+        332.59863310596825,
+        0,
+        -488.6481424484678
+      ],
+      "left": -69.6303775840463,
+      "right": 69.6303775840463,
+      "top": 51.5756773452959,
+      "bottom": -51.5756773452959,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 241626,
+    "revision": "f96e0de7996c7ba2",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#71adbd"
+  },
+  "daytona-flagler": {
+    "file": "images/daytona-flagler.webp",
+    "width": 2304,
+    "height": 1924,
+    "camera": {
+      "target": [
+        292.19063844744767,
+        0,
+        -597.317477383849
+      ],
+      "left": -67.09029631044069,
+      "right": 67.09029631044069,
+      "top": 56.021913726197454,
+      "bottom": -56.021913726197454,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 252592,
+    "revision": "c7085a42b0b1b78a",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#71adbd"
+  },
+  "first-coast": {
+    "file": "images/first-coast.webp",
+    "width": 2304,
+    "height": 1712,
+    "camera": {
+      "target": [
+        255.7702484715206,
+        0,
+        -703.3084824290625
+      ],
+      "left": -96.94091001412752,
+      "right": 96.94091001412752,
+      "top": 72.03313227970267,
+      "bottom": -72.03313227970267,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 227854,
+    "revision": "69cd5167667c7a99",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#71adbd"
+  }
+}

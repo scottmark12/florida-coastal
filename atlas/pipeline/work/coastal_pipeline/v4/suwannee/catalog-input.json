@@ -1,0 +1,51 @@
+{
+  "region": {
+    "id": "nature-coast",
+    "coast": "gulf",
+    "name": "Suwannee",
+    "map": "Nature Coast",
+    "at": [
+      29.02,
+      -83.05
+    ],
+    "side": "W",
+    "img": "img/spring-nature-coast.jpg",
+    "text": "Where the Panhandle bends into the peninsula, the coast turns to marsh and there is very little development. Life here is springs, rivers, scalloping and fishing, in towns like Cedar Key, Crystal River and Steinhatchee.",
+    "towns": [
+      "suwannee"
+    ],
+    "center": [
+      111.67831447013353,
+      563.3144324692848
+    ]
+  },
+  "towns": [
+    {
+      "id": "suwannee",
+      "name": "Suwannee",
+      "region": "Gulf Coast \u00b7 Nature Coast",
+      "coast": "gulf",
+      "lon": -83.148,
+      "lat": 29.329,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Fishing camps and canal homes where the Suwannee River meets marsh islands and the Gulf.",
+      "area_id": "nature-coast",
+      "area_name": "The Nature Coast and Big Bend",
+      "source_url": "https://www.openstreetmap.org/",
+      "source_bounds": [
+        -83.193,
+        29.294,
+        -83.103,
+        29.364
+      ]
+    }
+  ],
+  "bounds": [
+    -83.213,
+    29.274,
+    -83.083,
+    29.384
+  ]
+}

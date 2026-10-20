@@ -1,0 +1,180 @@
+{
+  "id": "naples-marco",
+  "name": "Naples, Marco Island and the Everglades",
+  "towns": [
+    "naples",
+    "chokoloskee",
+    "everglades-city",
+    "marco-island"
+  ],
+  "bounds": [
+    -81.91000000000001,
+    25.688,
+    -81.241,
+    26.26
+  ],
+  "recipes": "work/coastal_pipeline/v4/naples-marco/recipes.json",
+  "camera": {
+    "center": [
+      242.26544036783542,
+      221.74147107818453
+    ],
+    "desktopSpan": 56.55389430135863,
+    "phoneSpan": 56.55389430135863,
+    "phoneOffsetY": 10
+  },
+  "district_recipes": {
+    "naples-center": "naples",
+    "chokoloskee-center": "chokoloskee",
+    "everglades-city-center": "everglades-city",
+    "marco-island-center": "marco-island"
+  },
+  "manual_fixes": [
+    "Everglades City and Chokoloskee use published residential medians with small sample counts explicitly shown; these are not ranges based on two listings.",
+    "Town place-label anchors represent districts; facade colors remain an illustration, not a per-house color survey.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Overpass unavailable for Marco Island: used four OSM API 0.6 map tiles, filtered to the original building/highway selectors to avoid mixing coastline snapshots.",
+    "Camera input fitted to both east-west and north-south district extent; the default north-south-only span cropped Naples and the Everglades on phone. Landing tilt and span unchanged.",
+    "Extended existing Census background land to the wider region camera footprint so the phone frame does not end in an artificial northern water edge."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/naples-marco/geography.json.gz",
+      "work/coastal_pipeline/v4/naples-marco/district-chokoloskee.json.gz",
+      "work/coastal_pipeline/v4/naples-marco/district-everglades-city.json.gz",
+      "work/coastal_pipeline/v4/naples-marco/district-naples.json.gz",
+      "work/coastal_pipeline/v4/naples-marco/cover.json.gz",
+      "work/coastal_pipeline/v4/naples-marco/district-marco-island.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/naples-marco/districts.json",
+    "prices": "work/coastal_pipeline/v4/naples-marco/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/naples-marco/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/naples-marco/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/naples-marco/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/naples-marco/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/naples-marco/naples-center-worldcover-2021.png",
+        "bounds": [
+          -81.81833333333333,
+          26.11825,
+          -81.77033333333333,
+          26.16625
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "naples-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/naples-marco/chokoloskee-center-worldcover-2021.png",
+        "bounds": [
+          -81.38341666666666,
+          25.790416666666665,
+          -81.33541666666666,
+          25.838416666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "chokoloskee-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/naples-marco/everglades-city-center-worldcover-2021.png",
+        "bounds": [
+          -81.409,
+          25.8335,
+          -81.361,
+          25.8815
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "everglades-city-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/naples-marco/marco-island-center-worldcover-2021.png",
+        "bounds": [
+          -81.73975,
+          25.91325,
+          -81.69175,
+          25.96125
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "marco-island-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "context": {
+      "path": "work/coastal_pipeline/v4/naples-marco/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    }
+  }
+}

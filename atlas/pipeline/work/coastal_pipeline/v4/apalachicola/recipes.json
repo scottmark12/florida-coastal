@@ -1,0 +1,53 @@
+{
+  "recipes": {
+    "apalachicola": {
+      "walls": [
+        "#e8d5b4",
+        "#d4dfce",
+        "#e9c8b2",
+        "#f0e3cb"
+      ],
+      "roofs": [
+        "#a0aca5",
+        "#bcc7bf",
+        "#a38975"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridasforgottencoast.com/business/apalachicola-historic-district/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f8efdc",
+        "#d4c2a4"
+      ],
+      "canopy": "live-oak"
+    },
+    "historic-waterfront": {
+      "walls": [
+        "#a65f48",
+        "#b57c5f",
+        "#c49372",
+        "#eadac0"
+      ],
+      "roofs": [
+        "#82938b",
+        "#aab9ad",
+        "#9b8b73"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.floridasforgottencoast.com/business/apalachicola-historic-district/"
+    }
+  },
+  "styleZones": [
+    {
+      "bounds": [
+        -84.992,
+        29.723,
+        -84.979,
+        29.734
+      ],
+      "recipe": "historic-waterfront"
+    }
+  ]
+}

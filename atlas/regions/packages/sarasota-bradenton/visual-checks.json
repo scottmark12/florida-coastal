@@ -1,0 +1,55 @@
+{
+  "console_errors": [],
+  "views": [
+    {
+      "name": "Region",
+      "width": 1440,
+      "file": "atlas-region-1440.png",
+      "url": "/explore_coast.html?view=sarasota&level=region&v=canopy453"
+    },
+    {
+      "name": "Region",
+      "width": 390,
+      "file": "atlas-region-390.png",
+      "url": "/explore_coast.html?view=sarasota&level=region&v=canopy453"
+    },
+    {
+      "name": "Sarasota",
+      "width": 1440,
+      "file": "atlas-sarasota-1440.png",
+      "url": "/explore_coast.html?view=sarasota&level=town&district=sarasota-center&v=canopy453"
+    },
+    {
+      "name": "Sarasota",
+      "width": 390,
+      "file": "atlas-sarasota-390.png",
+      "url": "/explore_coast.html?view=sarasota&level=town&district=sarasota-center&v=canopy453"
+    },
+    {
+      "name": "Cortez",
+      "width": 1440,
+      "file": "atlas-cortez-1440.png",
+      "url": "/explore_coast.html?view=cortez&level=town&district=cortez-center&v=canopy453"
+    },
+    {
+      "name": "Cortez",
+      "width": 390,
+      "file": "atlas-cortez-390.png",
+      "url": "/explore_coast.html?view=cortez&level=town&district=cortez-center&v=canopy453"
+    },
+    {
+      "name": "Venice",
+      "width": 1440,
+      "file": "atlas-venice-1440.png",
+      "url": "/explore_coast.html?view=venice&level=town&district=venice-center&v=canopy453"
+    },
+    {
+      "name": "Venice",
+      "width": 390,
+      "file": "atlas-venice-390.png",
+      "url": "/explore_coast.html?view=venice&level=town&district=venice-center&v=canopy453"
+    }
+  ],
+  "phone_layout": "Slim controls retained with district cards; attribution clear of controls.",
+  "physical_phone_tested": false
+}

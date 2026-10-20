@@ -1,0 +1,68 @@
+{
+  "recipes": {
+    "belleair-beach": {
+      "walls": [
+        "#fff8e7",
+        "#d3e4db",
+        "#efd1c7",
+        "#e6dfbc",
+        "#d3e1e5"
+      ],
+      "roofs": [
+        "#a6b9b7",
+        "#c6d0cb",
+        "#9eaea7"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.cityofbelleairbeach.com/",
+      "trim": [
+        "#fff8e7",
+        "#abc2b2"
+      ],
+      "character": "A quiet residential barrier island of Gulf homes, low beach condos and Intracoastal docks."
+    },
+    "beach-houses": {
+      "walls": [
+        "#fff8e7",
+        "#d3e4db",
+        "#efd1c7",
+        "#e6dfbc",
+        "#d3e1e5"
+      ],
+      "roofs": [
+        "#a6b9b7",
+        "#c6d0cb",
+        "#9eaea7"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.cityofbelleairbeach.com/",
+      "trim": [
+        "#fff8e7",
+        "#abc2b2"
+      ],
+      "character": "A quiet residential barrier island of Gulf homes, low beach condos and Intracoastal docks."
+    }
+  },
+  "coastalHeightZones": [
+    [
+      -82.90899999999999,
+      27.868,
+      -82.779,
+      27.977999999999998
+    ]
+  ],
+  "towerRecipe": "belleair-beach",
+  "styleZones": [
+    {
+      "bounds": [
+        -82.90899999999999,
+        27.868,
+        -82.779,
+        27.977999999999998
+      ],
+      "recipe": "beach-houses"
+    }
+  ]
+}

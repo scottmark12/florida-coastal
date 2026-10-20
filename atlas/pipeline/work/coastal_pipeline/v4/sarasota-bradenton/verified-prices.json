@@ -1,0 +1,56 @@
+{
+  "sarasota": [
+    560000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/sarasota-county/sarasota"
+  ],
+  "bradenton": [
+    400000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/manatee-county/bradenton"
+  ],
+  "bradenton-beach": [
+    1190000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/manatee-county/bradenton-beach"
+  ],
+  "cortez": [
+    549000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/manatee-county/cortez"
+  ],
+  "ami": [
+    3660000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/manatee-county/anna-maria"
+  ],
+  "siesta-key": [
+    1099000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/sarasota-county/siesta-key"
+  ],
+  "englewood": [
+    399367,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/sarasota-county/englewood"
+  ],
+  "venice": [
+    399000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/sarasota-county/venice"
+  ],
+  "longboat": [
+    1050000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/sarasota-county/longboat-key"
+  ]
+}

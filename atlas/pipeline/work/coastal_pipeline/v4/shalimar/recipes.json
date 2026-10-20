@@ -1,0 +1,26 @@
+{
+  "recipes": {
+    "shalimar": {
+      "walls": [
+        "#d1d9bf",
+        "#efe4c9",
+        "#b9cfca",
+        "#ddc1a4"
+      ],
+      "roofs": [
+        "#a6b8b1",
+        "#c3ccc8",
+        "#9ba7a0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.destinfwb.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "Small bayou neighborhoods with marinas, sheltered water and leafy streets."
+    }
+  },
+  "coastalHeightZones": []
+}

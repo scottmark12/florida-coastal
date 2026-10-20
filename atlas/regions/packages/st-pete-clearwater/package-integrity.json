@@ -1,0 +1,16 @@
+{
+  "region": "st-pete-clearwater",
+  "pipeline_version": "florida-coastal-illustration-v4.4",
+  "lock_hashes_pass": true,
+  "tree_points_accounted_for": 751900,
+  "geometry_tiles_checked": 1928,
+  "initial_region_asset_bytes": 3963868,
+  "initial_assets": {
+    "base.glb.gz": 2146473,
+    "region.glb.gz": 1166955,
+    "scene.json": 88859,
+    "shore-wash.png": 561422,
+    "shore-wash.json": 159
+  },
+  "physical_phone_timing_verified": false
+}

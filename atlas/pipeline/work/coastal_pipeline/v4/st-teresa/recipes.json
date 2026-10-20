@@ -1,0 +1,24 @@
+{
+  "recipes": {
+    "st-teresa": {
+      "walls": [
+        "#d8cbb3",
+        "#e7ddc4",
+        "#bfcebb",
+        "#edd5ba"
+      ],
+      "roofs": [
+        "#9eaea2",
+        "#b9c1b6"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridasforgottencoast.com/maritime-museum/brief-history-of-franklin-county/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f8efdc",
+        "#d4c2a4"
+      ]
+    }
+  }
+}

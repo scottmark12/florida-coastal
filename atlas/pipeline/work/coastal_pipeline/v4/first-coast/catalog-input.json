@@ -1,0 +1,437 @@
+{
+  "region": {
+    "id": "first-coast",
+    "coast": "atlantic",
+    "name": "The First Coast",
+    "map": "First Coast",
+    "at": [
+      30.22,
+      -81.38
+    ],
+    "side": "E",
+    "img": "img/atlantic-aerial.jpg",
+    "text": "Northeast Florida, from the brick streets of St. Augustine to Fernandina Beach on Amelia Island. Expect wide beaches, real seasons and the Jacksonville beach towns in between.",
+    "towns": [
+      "staug",
+      "st-augustine-beach",
+      "ponte-vedra-beach",
+      "jaxbeach",
+      "neptune-beach",
+      "atlantic-beach",
+      "fernandina",
+      "jacksonville",
+      "vilano-beach",
+      "crescent-beach"
+    ],
+    "center": [
+      252.56653883549535,
+      693.4820368989227
+    ]
+  },
+  "towns": [
+    {
+      "id": "staug",
+      "name": "St. Augustine",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.89,
+      "lon": -81.31,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "walk"
+      ],
+      "airport": "Jacksonville (JAX), about an hour",
+      "season": "Busy with visitors downtown",
+      "watch": "Low lying streets flood in big storms",
+      "blurb": "The oldest city in the country, with brick streets and beaches a bridge away.",
+      "day": "You have coffee in the old town before the tour buses arrive and bike over the bridge to the beach.",
+      "todo": [
+        [
+          "Historic district",
+          "Colonial streets and the Castillo de San Marcos."
+        ]
+      ],
+      "pros": [
+        "History and walkability"
+      ],
+      "cons": [
+        "Visitor traffic",
+        "Flooding downtown"
+      ],
+      "x": 259.43244308009787,
+      "y": 656.4997081284534,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridacoastal.co/towns/staug.html",
+      "nearest_town_km": 6.760328355537536,
+      "source_bounds": [
+        -81.36,
+        29.845,
+        -81.26,
+        29.935000000000002
+      ]
+    },
+    {
+      "id": "jaxbeach",
+      "name": "Jacksonville Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 30.29,
+      "lon": -81.39,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "social",
+        "active"
+      ],
+      "airport": "Jacksonville (JAX), about 40 minutes",
+      "season": "Busy summers",
+      "watch": "Hurricane exposure",
+      "blurb": "A lively beach town with surf, patios and a big city next door.",
+      "day": "You surf by the pier and meet friends for dinner a block from the sand.",
+      "todo": [
+        [
+          "Jacksonville Beach Pier",
+          "Surf and fishing."
+        ]
+      ],
+      "pros": [
+        "Social and active",
+        "Near a big city"
+      ],
+      "cons": [
+        "Busy summer weekends"
+      ],
+      "x": 250.77846478168811,
+      "y": 700.7244972109538,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridacoastal.co/towns/jaxbeach.html",
+      "nearest_town_km": 2.772385101850511,
+      "source_bounds": [
+        -81.44,
+        30.244999999999997,
+        -81.34,
+        30.335
+      ]
+    },
+    {
+      "id": "fernandina",
+      "name": "Fernandina Beach",
+      "region": "Amelia Island",
+      "coast": "atlantic",
+      "lat": 30.67,
+      "lon": -81.46,
+      "tier": 3,
+      "price": null,
+      "vibes": [
+        "walk"
+      ],
+      "airport": "Jacksonville (JAX), about 40 minutes",
+      "season": "Quiet small town feel",
+      "watch": "Storm surge on the island",
+      "blurb": "A Victorian downtown, shrimp boats and quiet beaches near Georgia.",
+      "day": "You walk Centre Street for coffee, watch the shrimp boats come in and spend the afternoon on an uncrowded beach.",
+      "todo": [
+        [
+          "Centre Street",
+          "A walkable Victorian downtown."
+        ]
+      ],
+      "pros": [
+        "Charming and quiet"
+      ],
+      "cons": [
+        "Island storm exposure"
+      ],
+      "x": 243.18501859228073,
+      "y": 742.7453802749754,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridacoastal.co/towns/fernandina.html",
+      "nearest_town_km": 37.757937185983884,
+      "source_bounds": [
+        -81.50999999999999,
+        30.625,
+        -81.41,
+        30.715000000000003
+      ]
+    },
+    {
+      "id": "atlantic-beach",
+      "name": "Atlantic Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 30.334,
+      "lon": -81.398,
+      "tier": 3,
+      "price": "$630K median",
+      "vibes": [
+        "active"
+      ],
+      "airport": "Jacksonville (JAX), about 35 minutes",
+      "season": "Busy summers",
+      "watch": "Hurricane exposure, rising prices",
+      "blurb": "A leafy beach town with a walkable town center it shares with Neptune Beach, and the trails of Hanna Park to the north.",
+      "day": "You surf or walk the beach at sunrise, bike to Beaches Town Center for coffee and ride the trails at Hanna Park.",
+      "todo": [
+        [
+          "Beaches Town Center",
+          "A few walkable blocks of restaurants and shops at the ocean."
+        ]
+      ],
+      "pros": [
+        "A walkable center by the beach",
+        "Great parks"
+      ],
+      "cons": [
+        "Pricey",
+        "Cooler winters than South Florida"
+      ],
+      "x": 249.9068742432221,
+      "y": 705.590589505162,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridacoastal.co/towns/atlantic-beach.html",
+      "nearest_town_km": 2.2197212005279043,
+      "source_bounds": [
+        -81.448,
+        30.288999999999998,
+        -81.348,
+        30.379
+      ]
+    },
+    {
+      "id": "neptune-beach",
+      "name": "Neptune Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 30.314,
+      "lon": -81.398,
+      "tier": 3,
+      "price": null,
+      "vibes": [
+        "active",
+        "walk"
+      ],
+      "airport": "Jacksonville (JAX), about 35 minutes",
+      "season": "Busy summers",
+      "watch": "Hurricane exposure",
+      "blurb": "A small residential beach town that shares a walkable town center with Atlantic Beach.",
+      "day": "You walk to the beach with a board, then walk to Beaches Town Center for dinner.",
+      "todo": [
+        [
+          "Beaches Town Center",
+          "Restaurants, a bookstore and shops a block from the sand."
+        ]
+      ],
+      "pros": [
+        "Small and walkable",
+        "A local, low key feel"
+      ],
+      "cons": [
+        "Limited housing",
+        "Pricey"
+      ],
+      "x": 249.95370805744975,
+      "y": 703.371362432076,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridacoastal.co/towns/neptune-beach.html",
+      "nearest_town_km": 2.2197212005279043,
+      "source_bounds": [
+        -81.448,
+        30.269,
+        -81.348,
+        30.359
+      ]
+    },
+    {
+      "id": "ponte-vedra-beach",
+      "name": "Ponte Vedra Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 30.233,
+      "lon": -81.386,
+      "tier": 4,
+      "price": null,
+      "vibes": [
+        "sophcalm",
+        "active",
+        "bluezone"
+      ],
+      "airport": "Jacksonville (JAX), about 40 minutes",
+      "season": "Busy during The Players in March",
+      "watch": "Limited public beach access, hurricane exposure",
+      "blurb": "A golf town on the ocean, home to TPC Sawgrass and The Players Championship, with tall dunes and a huge coastal preserve.",
+      "day": "You play the Stadium Course, or at least watch someone hit the island green, then walk the dunes at Guana.",
+      "todo": [
+        [
+          "Guana Tolomato Matanzas Reserve",
+          "Miles of trails, marsh and undeveloped beach."
+        ]
+      ],
+      "pros": [
+        "World famous golf",
+        "Quiet, beautiful beaches"
+      ],
+      "cons": [
+        "Expensive",
+        "Little public beach parking and no real downtown"
+      ],
+      "x": 251.29683915364774,
+      "y": 694.4076070007042,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridacoastal.co/towns/ponte-vedra-beach.html",
+      "nearest_town_km": 6.338123848415432,
+      "source_bounds": [
+        -81.43599999999999,
+        30.188,
+        -81.336,
+        30.278000000000002
+      ]
+    },
+    {
+      "id": "st-augustine-beach",
+      "name": "St. Augustine Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.84,
+      "lon": -81.27,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "active",
+        "bluezone"
+      ],
+      "airport": "Jacksonville (JAX), about 1 hour",
+      "season": "Busy summers",
+      "watch": "Hurricane exposure, erosion",
+      "blurb": "A relaxed beach town on Anastasia Island, ten minutes from the oldest city in the country.",
+      "day": "You walk the wide beach, stop by the farmers market at the pier park when it's on and head into old St. Augustine for dinner.",
+      "todo": [
+        [
+          "Anastasia State Park",
+          "Four miles of protected beach, plus a tidal lagoon for paddling."
+        ]
+      ],
+      "pros": [
+        "Easygoing beach life with history next door",
+        "A great state park"
+      ],
+      "cons": [
+        "Summer crowds",
+        "An hour to a major airport"
+      ],
+      "x": 263.412423940081,
+      "y": 651.035113740134,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridacoastal.co/towns/st-augustine-beach.html",
+      "nearest_town_km": 6.760328355537536,
+      "source_bounds": [
+        -81.32,
+        29.794999999999998,
+        -81.22,
+        29.885
+      ]
+    },
+    {
+      "id": "jacksonville",
+      "name": "Jacksonville",
+      "x": 225.16324048953282,
+      "y": 704.8944597601211,
+      "lon": -81.6557,
+      "lat": 30.3322,
+      "vibes": [
+        "dock",
+        "walk",
+        "active"
+      ],
+      "todo": [],
+      "source_bounds": [
+        -81.7057,
+        30.2872,
+        -81.6057,
+        30.377200000000002
+      ],
+      "blurb": "Downtown towers and riverwalks face each other across the St. Johns, with historic neighborhoods beyond."
+    },
+    {
+      "id": "vilano-beach",
+      "name": "Vilano Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.918,
+      "lon": -81.301,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "active",
+        "bluezone"
+      ],
+      "airport": "Jacksonville (JAX), about 1 hour",
+      "season": "Busy summers",
+      "watch": "Hurricane exposure, erosion",
+      "blurb": "Low beach cottages and a small waterfront main street at the Vilano pier and inlet.",
+      "day": "Low beach cottages and a small waterfront main street at the Vilano pier and inlet.",
+      "todo": [],
+      "pros": [],
+      "cons": [],
+      "x": 263.412423940081,
+      "y": 651.035113740134,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridashistoriccoast.com/",
+      "nearest_town_km": 6.760328355537536,
+      "source_bounds": [
+        -81.351,
+        29.872999999999998,
+        -81.251,
+        29.963
+      ]
+    },
+    {
+      "id": "crescent-beach",
+      "name": "Crescent Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.768,
+      "lon": -81.253,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "active",
+        "bluezone"
+      ],
+      "airport": "Jacksonville (JAX), about 1 hour",
+      "season": "Busy summers",
+      "watch": "Hurricane exposure, erosion",
+      "blurb": "Quiet beachside homes and low condos on Anastasia Island beside the Matanzas marshes.",
+      "day": "Quiet beachside homes and low condos on Anastasia Island beside the Matanzas marshes.",
+      "todo": [],
+      "pros": [],
+      "cons": [],
+      "x": 263.412423940081,
+      "y": 651.035113740134,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridashistoriccoast.com/",
+      "nearest_town_km": 6.760328355537536,
+      "source_bounds": [
+        -81.303,
+        29.723,
+        -81.203,
+        29.813000000000002
+      ]
+    }
+  ],
+  "bounds": [
+    -81.82,
+    29.63,
+    -81.08,
+    30.82
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "prices": {
+    "aripeka": [
+      430000,
+      "published median sale price (three-month window; thin market)",
+      "three months ending June 2026",
+      "https://www.redfin.com/city/31434/FL/Aripeka/housing-market"
+    ]
+  },
+  "recipes": {
+    "aripeka": {
+      "walls": [
+        "#c8b596",
+        "#d8dccc",
+        "#eee7d8",
+        "#b6c9bf"
+      ],
+      "roofs": [
+        "#a5b9b6",
+        "#c6ceca",
+        "#af8d72"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://floridasadventurecoast.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "A small fishing settlement of old cottages, creek bridges and salt marsh."
+    }
+  },
+  "manual_fixes": [
+    "Town palette and waterfront hero curated from regional visitor references; facade color is editorial, not surveyed.",
+    "Published prices retain their actual metric and period; thin markets are explicitly labeled.",
+    "Four communities without named OSM place nodes use explicitly documented OSM locality or park reference anchors; these are not claimed as municipal centers."
+  ]
+}

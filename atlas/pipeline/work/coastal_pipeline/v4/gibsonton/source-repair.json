@@ -1,0 +1,7 @@
+{
+  "method": "Gibsonton source crop intersected a tiny coast fragment whose original midpoint lay outside the window. Land-side probes on clipped OSM segments restore the small land face; no coastline vertex was moved.",
+  "changed_area_m2": 40.4082393094316,
+  "coastline_vertices_moved": 0,
+  "source": "https://www.openstreetmap.org/copyright",
+  "license": "ODbL 1.0"
+}

@@ -1,0 +1,123 @@
+{
+  "id": "panama-city",
+  "name": "Panama City",
+  "towns": [
+    "panama-city"
+  ],
+  "bounds": [
+    -85.76,
+    30.04,
+    -85.57,
+    30.25
+  ],
+  "recipes": "work/coastal_pipeline/v4/panama-city/recipes.json",
+  "camera": {
+    "center": [
+      -159.7305288126607,
+      684.5670831302621
+    ],
+    "desktopSpan": 9,
+    "phoneSpan": 7,
+    "phoneOffsetY": 1
+  },
+  "district_recipes": {
+    "panama-city-center": "panama-city"
+  },
+  "manual_fixes": [
+    "City-specific package requested by user; other cities in the parent region remain unchanged.",
+    "Expanded the dated OSM building acquisition westward to cover the requested waterfront and neighborhoods; shared exporter unchanged.",
+    "Historic residential pitched roofs and painted wood are separated from the low downtown commercial blocks.",
+    "Downtown marina is shown from mapped geometry, not represented as fully operational; city reports continuing revitalization.",
+    "Expanded southern acquisition extent to retain the complete Shell Island coastline; no shoreline vertices removed.",
+    "Input camera fitted to both geographic axes; Census background context extended to cover the wider region frame. Geometry and style implementation unchanged."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/panama-city/geography.json.gz",
+      "work/coastal_pipeline/v4/panama-city/district-panama-city.json.gz",
+      "work/coastal_pipeline/v4/panama-city/cover.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/panama-city/districts.json",
+    "prices": "work/coastal_pipeline/v4/panama-city/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/panama-city/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/panama-city/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/panama-city/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/panama-city/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/panama-city/panama-city-center-worldcover-2021.png",
+        "bounds": [
+          -85.68433333333333,
+          30.134666666666668,
+          -85.63633333333334,
+          30.182666666666666
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W087_Map.tif",
+        "surveyYear": 2021,
+        "district": "panama-city-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/panama-city/panama-west-worldcover-2021.png",
+        "bounds": [
+          -85.728,
+          30.152,
+          -85.68,
+          30.2
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W087_Map.tif",
+        "surveyYear": 2021,
+        "district": "panama-west",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "context": {
+      "path": "work/coastal_pipeline/v4/panama-city/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    }
+  }
+}

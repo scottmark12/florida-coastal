@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+North Redington Beach,115.94925689697266,423.9312438964844,-82.82065871267162,27.81613605809003,-82.8206587,27.8161361,0.0048,https://www.openstreetmap.org/node/154304050,Representative OSM town place-label anchor: North Redington Beach

@@ -1,0 +1,56 @@
+{
+  "region": {
+    "id": "destin",
+    "name": "Destin",
+    "towns": [
+      "destin"
+    ]
+  },
+  "towns": [
+    {
+      "id": "destin",
+      "name": "Destin",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lat": 30.39,
+      "lon": -86.5,
+      "tier": 3,
+      "price": null,
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "airport": "Destin Fort Walton (VPS)",
+      "season": "Very busy summers",
+      "watch": "Summer crowds, hurricane exposure",
+      "blurb": "A harbor town built around fishing charters and emerald water.",
+      "day": "You're on a charter boat out of the harbor at dawn and back at a dockside table by lunch.",
+      "todo": [
+        [
+          "Destin Harbor",
+          "Charter fishing, boardwalk dining and sunset cruises."
+        ]
+      ],
+      "pros": [
+        "Big boating and fishing culture",
+        "Beautiful water"
+      ],
+      "cons": [
+        "Crowded summers",
+        "Busy traffic on 98"
+      ],
+      "x": -239.98574891501818,
+      "y": 711.6017196041241,
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.floridacoastal.co/towns/destin.html",
+      "nearest_town_km": 33.67667329206274
+    }
+  ],
+  "bounds": [
+    -86.61,
+    30.33,
+    -86.39,
+    30.46
+  ]
+}

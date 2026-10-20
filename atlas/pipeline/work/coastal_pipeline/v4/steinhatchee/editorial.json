@@ -1,0 +1,38 @@
+{
+  "prices": {
+    "steinhatchee": [
+      427450,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/taylor-county/steinhatchee"
+    ]
+  },
+  "recipes": {
+    "steinhatchee": {
+      "walls": [
+        "#e8d9b9",
+        "#c2d1bc",
+        "#c9dfe0",
+        "#e4bca0",
+        "#eee9d8"
+      ],
+      "roofs": [
+        "#9faeaa",
+        "#c4cecb",
+        "#9b8c7c"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridacoastal.co/towns/steinhatchee.html",
+      "character": "Riverfront fishing camps, modest raised cottages and working marina sheds; open tidal river and docks.",
+      "trim": [
+        "#f7eed9",
+        "#b3cbbd"
+      ]
+    }
+  },
+  "manual_fixes": [
+    "Recipes curated from Florida Coastal town profiles; facade colors are editorial, not per-building surveys.",
+    "Town-wide published medians and the dated Ozello listing sample are labeled with their source and period."
+  ]
+}

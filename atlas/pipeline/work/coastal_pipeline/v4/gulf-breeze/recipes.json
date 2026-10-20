@@ -1,0 +1,26 @@
+{
+  "recipes": {
+    "gulf-breeze": {
+      "walls": [
+        "#efe1bf",
+        "#d3ddc8",
+        "#cbdce0",
+        "#e1b5a1"
+      ],
+      "roofs": [
+        "#a6b8b1",
+        "#c3ccc8",
+        "#9ba7a0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.getrelaxing.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "Leafy bayside neighborhoods between Pensacola Bay and Santa Rosa Sound."
+    }
+  },
+  "coastalHeightZones": []
+}

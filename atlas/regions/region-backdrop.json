@@ -1,0 +1,24 @@
+{
+  "file": "images/context-world.webp",
+  "width": 4096,
+  "height": 4037,
+  "camera": {
+    "target": [
+      66.6735507845165,
+      0,
+      -365.09693606835344
+    ],
+    "left": -491.86239851969344,
+    "right": 491.86239851969344,
+    "top": 484.82915239953803,
+    "bottom": -484.82915239953803,
+    "tiltDegrees": 45,
+    "projection": "orthographic",
+    "mapUnits": "kilometers"
+  },
+  "bytes": 601668,
+  "revision": "5c2e617da97e260a",
+  "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+  "styleReference": "Approved Sarasota and Bradenton regional illustration",
+  "waterColor": "#71adbd"
+}

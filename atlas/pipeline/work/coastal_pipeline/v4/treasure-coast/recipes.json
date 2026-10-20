@@ -1,0 +1,312 @@
+{
+  "recipes": {
+    "stuart": {
+      "walls": [
+        "#e9d6b3",
+        "#d2e4d7",
+        "#edc6b8",
+        "#f4e7cf",
+        "#c9dbe0"
+      ],
+      "roofs": [
+        "#a3b7b3",
+        "#d3d9ce",
+        "#b2aaa0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "jensen-beach": {
+      "walls": [
+        "#e9d6b3",
+        "#d2e4d7",
+        "#edc6b8",
+        "#f4e7cf",
+        "#c9dbe0"
+      ],
+      "roofs": [
+        "#a3b7b3",
+        "#d3d9ce",
+        "#b2aaa0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "port-st-lucie": {
+      "walls": [
+        "#f7ecd3",
+        "#d9e6d0",
+        "#efd6bf"
+      ],
+      "roofs": [
+        "#b9947c",
+        "#cdb59a"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "fortpierce": {
+      "walls": [
+        "#b9856b",
+        "#d2a68b",
+        "#ead4b5",
+        "#eee4ce"
+      ],
+      "roofs": [
+        "#b5aa93",
+        "#ddd8c7"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.choosefortpierce.com/224/About-Fort-Pierce",
+      "referenceScope": "Historic downtown Spanish Revival character; editorial palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "vero-beach": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "sebastian": {
+      "walls": [
+        "#e9d6b3",
+        "#d2e4d7",
+        "#edc6b8",
+        "#f4e7cf",
+        "#c9dbe0"
+      ],
+      "roofs": [
+        "#a3b7b3",
+        "#d3d9ce",
+        "#b2aaa0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/places-to-go/central-east/sebastian/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "hobe-sound": {
+      "walls": [
+        "#e9d6b3",
+        "#d2e4d7",
+        "#edc6b8",
+        "#f4e7cf",
+        "#c9dbe0"
+      ],
+      "roofs": [
+        "#a3b7b3",
+        "#d3d9ce",
+        "#b2aaa0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "port-salerno": {
+      "walls": [
+        "#e9d6b3",
+        "#d2e4d7",
+        "#edc6b8",
+        "#f4e7cf",
+        "#c9dbe0"
+      ],
+      "roofs": [
+        "#a3b7b3",
+        "#d3d9ce",
+        "#b2aaa0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://discovermartin.com/communities/port-salerno/",
+      "referenceScope": "Working fishing village and Manatee Pocket waterfront.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "palm-city": {
+      "walls": [
+        "#f4e6cb",
+        "#ead6bb",
+        "#d6dfcc"
+      ],
+      "roofs": [
+        "#b68e75",
+        "#c5aa8c",
+        "#a7b4ae"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "sewalls-point": {
+      "walls": [
+        "#f4e6cb",
+        "#ead6bb",
+        "#d6dfcc"
+      ],
+      "roofs": [
+        "#b68e75",
+        "#c5aa8c",
+        "#a7b4ae"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "indian-river-shores": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "hutchinson-island": {
+      "walls": [
+        "#faf3e1",
+        "#dfebe6",
+        "#eed4ce",
+        "#e4e7dc"
+      ],
+      "roofs": [
+        "#c6d2cd",
+        "#e5dfcc"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "palm-city-center": {
+      "walls": [
+        "#f4e6cb",
+        "#ead6bb",
+        "#d6dfcc"
+      ],
+      "roofs": [
+        "#b68e75",
+        "#c5aa8c",
+        "#a7b4ae"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "fort-pierce-downtown": {
+      "walls": [
+        "#b9856b",
+        "#d2a68b",
+        "#ead4b5",
+        "#eee4ce"
+      ],
+      "roofs": [
+        "#b5aa93",
+        "#ddd8c7"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://www.choosefortpierce.com/224/About-Fort-Pierce",
+      "referenceScope": "Historic downtown Spanish Revival character; editorial palette.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    }
+  },
+  "styleZones": [
+    {
+      "bounds": [
+        -80.327,
+        27.443,
+        -80.319,
+        27.451
+      ],
+      "recipe": "fort-pierce-downtown"
+    }
+  ]
+}

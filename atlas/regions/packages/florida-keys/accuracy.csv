@@ -1,0 +1,4 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Key West,222.53561401367188,63.45494842529297,-81.80207220725721,24.554826216142022,-81.8020722,24.5548262,0.0019,https://www.openstreetmap.org/node/154206819,Representative OSM town place-label anchor: Key West
+Islamorada,340.14984130859375,107.00605010986328,-80.62914804641498,24.92365612540625,-80.6291479,24.9236561,0.015,https://www.openstreetmap.org/node/154160442,Representative OSM town place-label anchor: Islamorada
+Key Largo,357.97930908203125,125.62928771972656,-80.44723927860973,25.087034999927486,-80.4472392,25.087035,0.0079,https://www.openstreetmap.org/node/153891314,Representative OSM town place-label anchor: Key Largo

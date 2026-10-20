@@ -1,0 +1,28 @@
+[
+  {
+    "town": "st-george-island",
+    "id": "st-george-island-center",
+    "name": "St. George Island",
+    "kind": "beach",
+    "description": "A barrier island with no high rises, a lighthouse at its center and nine miles of state park beach at the east end.",
+    "style": "st-george-island",
+    "lon": -84.86265999922877,
+    "lat": 29.663084152739113,
+    "x": -83.37991851976939,
+    "y": 628.7695676771389,
+    "positionSource": "https://www.openstreetmap.org/way/318393587",
+    "centerMeaning": "Mapped Lighthouse Park centroid; central island district control, not a municipal boundary centroid.",
+    "priceRange": "$1,200,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/franklin-county/st-george-island",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1200000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/franklin-county/st-george-island"
+    },
+    "source": "https://www.floridasforgottencoast.com/maritime-museum/brief-history-of-franklin-county/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

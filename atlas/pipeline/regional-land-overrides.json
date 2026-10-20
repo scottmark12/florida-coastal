@@ -1,0 +1,26 @@
+[
+  {
+    "manifest": "work/coastal_pipeline/v4/fort-lauderdale/manifest.json",
+    "reason": "Use the complete 2026-10-17 OSM land mask over the legacy inland Miami rectangular coverage hole. Town models remain unchanged."
+  },
+  {
+    "manifest": "work/coastal_pipeline/v4/palm-beaches/manifest.json",
+    "reason": "Complete Palm Beaches OSM coast, lagoon and inland water mask for the expanded 16-town region."
+  },
+  {
+    "manifest": "work/coastal_pipeline/v4/treasure-coast/manifest.json",
+    "reason": "Complete Treasure Coast OSM lagoon, coastal river and barrier-island masks for the 12-town region."
+  },
+  {
+    "manifest": "work/coastal_pipeline/v4/space-coast/manifest.json",
+    "reason": "Complete Space Coast OSM Indian River/Banana River lagoon and barrier-island mask for the 13-town region."
+  },
+  {
+    "manifest": "work/coastal_pipeline/v4/daytona-flagler/manifest.json",
+    "reason": "Complete Daytona and Flagler OSM coast, Halifax estuary, lagoon and inland water mask for the expanded 13-town region."
+  },
+  {
+    "manifest": "work/coastal_pipeline/v4/first-coast/manifest.json",
+    "reason": "Complete First Coast OSM shoreline and tidal estuary masks for the expanded coastal-town region."
+  }
+]

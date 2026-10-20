@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Palm Coast,268.877197265625,619.4125366210938,-81.22076743003973,29.554142946400066,-81.2207673,29.5541432,0.0308,https://www.openstreetmap.org/node/154209707,Representative OSM town place-label anchor: Palm Coast

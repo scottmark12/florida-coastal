@@ -1,0 +1,561 @@
+{
+  "region": {
+    "id": "daytona-flagler",
+    "coast": "atlantic",
+    "name": "Daytona, New Smyrna and Flagler",
+    "map": "Daytona and Flagler",
+    "at": [
+      29.22,
+      -81.02
+    ],
+    "side": "E",
+    "img": "img/daytona-beach-shores.jpg",
+    "pos": "42% center",
+    "hpos": "62% 40%",
+    "text": "Wide, hard packed beaches run from New Smyrna Beach up through Daytona to Flagler Beach. Surf towns, race week crowds and some of the most affordable oceanfront in Florida share this stretch.",
+    "towns": [
+      "nsb",
+      "port-orange",
+      "south-daytona",
+      "daytona-beach-shores",
+      "daytona",
+      "ormond-beach",
+      "flagler",
+      "palm-coast",
+      "ponce-inlet",
+      "edgewater",
+      "holly-hill",
+      "ormond-by-the-sea",
+      "beverly-beach"
+    ],
+    "center": [
+      287.0078835705408,
+      586.8897570698991
+    ]
+  },
+  "towns": [
+    {
+      "id": "nsb",
+      "name": "New Smyrna Beach",
+      "region": "Central Atlantic",
+      "coast": "atlantic",
+      "lat": 29.03,
+      "lon": -80.93,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "island",
+        "beaches",
+        "active"
+      ],
+      "airport": "Daytona Beach (DAB) or Orlando (MCO)",
+      "season": "Busy summer weekends",
+      "watch": "Hurricane exposure on the barrier island",
+      "blurb": "A laid back surf town about an hour from Orlando.",
+      "day": "You check the surf before breakfast and end the day with tacos on Flagler Avenue.",
+      "todo": [
+        [
+          "Flagler Avenue",
+          "The walkable beach strip."
+        ]
+      ],
+      "pros": [
+        "Casual and friendly",
+        "Good surf"
+      ],
+      "cons": [
+        "Summer crowds"
+      ],
+      "x": 298.4507866550827,
+      "y": 561.8971272400936,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.floridacoastal.co/towns/nsb.html",
+      "nearest_town_km": 14.084619675762712,
+      "source_bounds": [
+        -80.97500000000001,
+        28.990000000000002,
+        -80.885,
+        29.07
+      ]
+    },
+    {
+      "id": "daytona",
+      "name": "Daytona Beach",
+      "region": "Central Atlantic",
+      "coast": "atlantic",
+      "lat": 29.21,
+      "lon": -81.02,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford"
+      ],
+      "airport": "Daytona Beach (DAB)",
+      "season": "Event weekends get busy",
+      "watch": "Event crowds, hurricane exposure",
+      "blurb": "Wide beaches and some of the most affordable coastal homes in Florida.",
+      "day": "You drive onto the hard packed beach and set up for the day.",
+      "todo": [
+        [
+          "Beach driving",
+          "One of the few beaches where you can drive on the sand."
+        ]
+      ],
+      "pros": [
+        "Affordable"
+      ],
+      "cons": [
+        "Busy event weekends"
+      ],
+      "x": 289.22016023480717,
+      "y": 581.6648085021361,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.floridacoastal.co/towns/daytona.html",
+      "nearest_town_km": 5.0983059448221155,
+      "source_bounds": [
+        -81.1,
+        29.16,
+        -80.97,
+        29.26
+      ]
+    },
+    {
+      "id": "flagler",
+      "name": "Flagler Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.47,
+      "lon": -81.13,
+      "tier": 1,
+      "price": "$375K median",
+      "vibes": [
+        "island"
+      ],
+      "airport": "Daytona Beach (DAB)",
+      "season": "Quiet most of the year",
+      "watch": "Beach erosion, hurricane exposure",
+      "blurb": "A small, unhurried beach town along A1A, with a new pier on the way.",
+      "day": "You walk the beach at sunrise and grab lunch on A1A with an ocean view.",
+      "todo": [
+        [
+          "Flagler Beach Pier",
+          "Being rebuilt as a longer pier, expected to open in early 2027."
+        ]
+      ],
+      "pros": [
+        "Quiet and affordable"
+      ],
+      "cons": [
+        "Few big city services"
+      ],
+      "x": 277.87435970881853,
+      "y": 610.2736838856592,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.floridacoastal.co/towns/flagler.html",
+      "nearest_town_km": 14.73754925106862,
+      "source_bounds": [
+        -81.175,
+        29.43,
+        -81.085,
+        29.509999999999998
+      ]
+    },
+    {
+      "id": "daytona-beach-shores",
+      "name": "Daytona Beach Shores",
+      "region": "Central Atlantic",
+      "coast": "atlantic",
+      "lat": 29.176,
+      "lon": -80.978,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford"
+      ],
+      "airport": "Daytona Beach (DAB), about 15 minutes",
+      "season": "Busy during event weeks",
+      "watch": "Condo assessments, event traffic, hurricane exposure",
+      "blurb": "A quiet strip of oceanfront condos just south of Daytona Beach, with the river a block behind you.",
+      "day": "You walk out of the lobby onto the sand, and drive up to Daytona only when you want the noise.",
+      "todo": [
+        [
+          "Ponce Inlet",
+          "A lighthouse you can climb and a marine science center, ten minutes south."
+        ]
+      ],
+      "pros": [
+        "Oceanfront condos at low prices",
+        "Quieter than Daytona"
+      ],
+      "cons": [
+        "Not much in town besides the beach",
+        "Condo fees and assessments"
+      ],
+      "x": 293.3881212064318,
+      "y": 577.9896750815091,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.floridacoastal.co/towns/daytona-beach-shores.html",
+      "nearest_town_km": 2.847129237010475,
+      "source_bounds": [
+        -81.023,
+        29.136,
+        -80.93299999999999,
+        29.215999999999998
+      ]
+    },
+    {
+      "id": "ormond-beach",
+      "name": "Ormond Beach",
+      "region": "Central Atlantic",
+      "coast": "atlantic",
+      "lat": 29.286,
+      "lon": -81.056,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "active",
+        "afford"
+      ],
+      "airport": "Daytona Beach (DAB), about 20 minutes",
+      "season": "Busy during event weeks",
+      "watch": "Hurricane exposure",
+      "blurb": "Daytona's quieter neighbor to the north, with oak canopy roads, a small downtown and the same hard packed beach.",
+      "day": "You drive the Ormond Scenic Loop under the oaks, walk the beach and have dinner on Granada Boulevard.",
+      "todo": [
+        [
+          "Ormond Scenic Loop",
+          "About 30 miles of canopy road, marsh and ocean views."
+        ]
+      ],
+      "pros": [
+        "Quieter than Daytona, with more green space",
+        "Still affordable"
+      ],
+      "cons": [
+        "Event traffic spills over",
+        "Limited nightlife"
+      ],
+      "x": 285.5254368668199,
+      "y": 590.0176268442967,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.floridacoastal.co/towns/ormond-beach.html",
+      "nearest_town_km": 9.13348537104461,
+      "source_bounds": [
+        -81.101,
+        29.246000000000002,
+        -81.011,
+        29.326
+      ]
+    },
+    {
+      "id": "palm-coast",
+      "name": "Palm Coast",
+      "region": "Central Atlantic",
+      "coast": "atlantic",
+      "lat": 29.584,
+      "lon": -81.208,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "active",
+        "afford"
+      ],
+      "airport": "Daytona Beach (DAB), about 35 minutes",
+      "season": "Steady year round",
+      "watch": "Canal homes can flood in storms. Car dependent",
+      "blurb": "A planned city of saltwater canals and more than 130 miles of trails, between St. Augustine and Daytona.",
+      "day": "You bike the trails under the oaks, take the boat down the canal to the Intracoastal and drive ten minutes to the beach.",
+      "todo": [
+        [
+          "Washington Oaks Gardens State Park",
+          "Formal gardens on one side of A1A and a beach of coquina rock on the other."
+        ]
+      ],
+      "pros": [
+        "Canal homes and trails at fair prices",
+        "Quiet"
+      ],
+      "cons": [
+        "No real downtown",
+        "You drive to the beach"
+      ],
+      "x": 270.03712367433513,
+      "y": 622.7545928776946,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.floridacoastal.co/towns/palm-coast.html",
+      "nearest_town_km": 14.73754925106862,
+      "source_bounds": [
+        -81.253,
+        29.544,
+        -81.163,
+        29.624
+      ]
+    },
+    {
+      "id": "port-orange",
+      "name": "Port Orange",
+      "region": "Central Atlantic",
+      "coast": "atlantic",
+      "lat": 29.138,
+      "lon": -81.006,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford",
+        "dock"
+      ],
+      "airport": "Daytona Beach (DAB), about 15 minutes",
+      "season": "Steady year round",
+      "watch": "Hurricane and river flooding",
+      "blurb": "A suburb on the Halifax River just south of Daytona, with parks, a riverfront and the beach over the bridge.",
+      "day": "You paddle Spruce Creek in the morning and cross the Dunlawton Bridge to the beach in the afternoon.",
+      "todo": [
+        [
+          "Spruce Creek Preserve",
+          "Trails and a blackwater creek for paddling."
+        ]
+      ],
+      "pros": [
+        "Affordable and convenient",
+        "Close to the beach and the airport"
+      ],
+      "cons": [
+        "Suburban, without much of a downtown",
+        "Event traffic"
+      ],
+      "x": 290.7727445733494,
+      "y": 573.7049289492186,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.floridacoastal.co/towns/port-orange.html",
+      "nearest_town_km": 3.1107591596245148,
+      "source_bounds": [
+        -81.051,
+        29.098000000000003,
+        -80.961,
+        29.178
+      ]
+    },
+    {
+      "id": "south-daytona",
+      "name": "South Daytona",
+      "region": "Central Atlantic",
+      "coast": "atlantic",
+      "lat": 29.166,
+      "lon": -81.005,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford"
+      ],
+      "airport": "Daytona Beach (DAB), about 10 minutes",
+      "season": "Steady year round",
+      "watch": "River flooding, event traffic",
+      "blurb": "A small riverfront city tucked between Daytona Beach and Port Orange, with low prices and the beach ten minutes away.",
+      "day": "You walk the riverfront park at sunrise and are on the beach before your coffee gets cold.",
+      "todo": [
+        [
+          "Riverfront Park",
+          "A park and boardwalk on the Halifax River."
+        ]
+      ],
+      "pros": [
+        "Among the most affordable spots near the ocean",
+        "Close to everything in Daytona"
+      ],
+      "cons": [
+        "Small, with few restaurants",
+        "Not on the beach"
+      ],
+      "x": 290.79433564468206,
+      "y": 576.8156131785846,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.floridacoastal.co/towns/south-daytona.html",
+      "nearest_town_km": 2.847129237010475,
+      "source_bounds": [
+        -81.05,
+        29.126,
+        -80.96,
+        29.206
+      ]
+    },
+    {
+      "id": "ponce-inlet",
+      "name": "Ponce Inlet",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.096,
+      "lon": -80.943,
+      "tier": 1,
+      "price": "$375K median",
+      "vibes": [
+        "island"
+      ],
+      "airport": "Daytona Beach (DAB)",
+      "season": "Quiet most of the year",
+      "watch": "Beach erosion, hurricane exposure",
+      "blurb": "The red lighthouse, inlet jetties, marinas and quiet beachside homes.",
+      "day": "The red lighthouse, inlet jetties, marinas and quiet beachside homes.",
+      "todo": [],
+      "pros": [],
+      "cons": [],
+      "x": 277.87435970881853,
+      "y": 610.2736838856592,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.daytonabeach.com/",
+      "nearest_town_km": 14.73754925106862,
+      "source_bounds": [
+        -80.988,
+        29.056,
+        -80.898,
+        29.136
+      ]
+    },
+    {
+      "id": "edgewater",
+      "name": "Edgewater",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 28.989,
+      "lon": -80.902,
+      "tier": 1,
+      "price": "$375K median",
+      "vibes": [
+        "island"
+      ],
+      "airport": "Daytona Beach (DAB)",
+      "season": "Quiet most of the year",
+      "watch": "Beach erosion, hurricane exposure",
+      "blurb": "Low riverfront neighborhoods, boat ramps and Indian River Lagoon preserves.",
+      "day": "Low riverfront neighborhoods, boat ramps and Indian River Lagoon preserves.",
+      "todo": [],
+      "pros": [],
+      "cons": [],
+      "x": 277.87435970881853,
+      "y": 610.2736838856592,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.daytonabeach.com/",
+      "nearest_town_km": 14.73754925106862,
+      "source_bounds": [
+        -80.947,
+        28.949,
+        -80.857,
+        29.029
+      ]
+    },
+    {
+      "id": "holly-hill",
+      "name": "Holly Hill",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.244,
+      "lon": -81.038,
+      "tier": 1,
+      "price": "$375K median",
+      "vibes": [
+        "island"
+      ],
+      "airport": "Daytona Beach (DAB)",
+      "season": "Quiet most of the year",
+      "watch": "Beach erosion, hurricane exposure",
+      "blurb": "Hammock-shaded riverfront homes and small local streets beside the Halifax.",
+      "day": "Hammock-shaded riverfront homes and small local streets beside the Halifax.",
+      "todo": [],
+      "pros": [],
+      "cons": [],
+      "x": 277.87435970881853,
+      "y": 610.2736838856592,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.daytonabeach.com/",
+      "nearest_town_km": 14.73754925106862,
+      "source_bounds": [
+        -81.083,
+        29.204,
+        -80.993,
+        29.284
+      ]
+    },
+    {
+      "id": "ormond-by-the-sea",
+      "name": "Ormond-by-the-Sea",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.349,
+      "lon": -81.083,
+      "tier": 1,
+      "price": "$375K median",
+      "vibes": [
+        "island"
+      ],
+      "airport": "Daytona Beach (DAB)",
+      "season": "Quiet most of the year",
+      "watch": "Beach erosion, hurricane exposure",
+      "blurb": "Low beach cottages between the Atlantic and the marshes of the Tomoka basin.",
+      "day": "Low beach cottages between the Atlantic and the marshes of the Tomoka basin.",
+      "todo": [],
+      "pros": [],
+      "cons": [],
+      "x": 277.87435970881853,
+      "y": 610.2736838856592,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.daytonabeach.com/",
+      "nearest_town_km": 14.73754925106862,
+      "source_bounds": [
+        -81.128,
+        29.309,
+        -81.038,
+        29.389
+      ]
+    },
+    {
+      "id": "beverly-beach",
+      "name": "Beverly Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.518,
+      "lon": -81.147,
+      "tier": 1,
+      "price": "$375K median",
+      "vibes": [
+        "island"
+      ],
+      "airport": "Daytona Beach (DAB)",
+      "season": "Quiet most of the year",
+      "watch": "Beach erosion, hurricane exposure",
+      "blurb": "A narrow beach town along A1A, between the Atlantic and Intracoastal marsh.",
+      "day": "A narrow beach town along A1A, between the Atlantic and Intracoastal marsh.",
+      "todo": [],
+      "pros": [],
+      "cons": [],
+      "x": 277.87435970881853,
+      "y": 610.2736838856592,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.visitflagler.com/",
+      "nearest_town_km": 14.73754925106862,
+      "source_bounds": [
+        -81.19200000000001,
+        29.478,
+        -81.102,
+        29.558
+      ]
+    }
+  ],
+  "bounds": [
+    -81.45,
+    28.82,
+    -80.7,
+    29.79
+  ]
+}

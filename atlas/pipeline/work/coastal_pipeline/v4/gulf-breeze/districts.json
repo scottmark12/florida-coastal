@@ -1,0 +1,28 @@
+[
+  {
+    "town": "gulf-breeze",
+    "id": "gulf-breeze-center",
+    "name": "Gulf Breeze",
+    "kind": "beach",
+    "description": "Leafy bayside neighborhoods between Pensacola Bay and Santa Rosa Sound.",
+    "style": "gulf-breeze",
+    "lon": -87.18058243992614,
+    "lat": 30.361390028565907,
+    "x": -305.3867331422099,
+    "y": 709.9323286795465,
+    "positionSource": "https://www.openstreetmap.org/way/835845728",
+    "centerMeaning": "Woodland Park: representative neighborhood reference inside Gulf Breeze, not a municipal center",
+    "priceRange": "$482,000 median listing price \u00b7 October 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/santa-rosa-county/gulf-breeze",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 482000,
+      "metric": "median listing price",
+      "period": "October 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/santa-rosa-county/gulf-breeze"
+    },
+    "source": "https://www.getrelaxing.com/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

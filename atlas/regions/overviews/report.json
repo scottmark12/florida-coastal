@@ -1,0 +1,119 @@
+{
+  "regions": [
+    {
+      "region": "st-pete-clearwater",
+      "source_packages": 12,
+      "native_buildings": 226462,
+      "coverage_buildings": {
+        "osm": 317563,
+        "microsoft": 25339
+      },
+      "initial_bytes_including_manifest": 3658040,
+      "architecture_chunks": 83,
+      "total_bytes": 102042481
+    },
+    {
+      "region": "nature-coast",
+      "source_packages": 13,
+      "native_buildings": 45118,
+      "coverage_buildings": {},
+      "initial_bytes_including_manifest": 3074534,
+      "architecture_chunks": 31,
+      "total_bytes": 10453060
+    },
+    {
+      "region": "first-coast",
+      "source_packages": 1,
+      "native_buildings": 7512,
+      "coverage_buildings": {},
+      "initial_bytes_including_manifest": 2528099,
+      "architecture_chunks": 4,
+      "total_bytes": 3944402
+    },
+    {
+      "region": "sarasota-bradenton",
+      "source_packages": 1,
+      "native_buildings": 16735,
+      "coverage_buildings": {},
+      "initial_bytes_including_manifest": 3758976,
+      "architecture_chunks": 15,
+      "total_bytes": 7033714
+    },
+    {
+      "region": "forgotten-coast",
+      "source_packages": 7,
+      "native_buildings": 6961,
+      "coverage_buildings": {},
+      "initial_bytes_including_manifest": 2430588,
+      "architecture_chunks": 16,
+      "total_bytes": 3468876
+    },
+    {
+      "region": "miami-fort-lauderdale",
+      "source_packages": 1,
+      "native_buildings": 81883,
+      "coverage_buildings": {},
+      "initial_bytes_including_manifest": 2095412,
+      "architecture_chunks": 8,
+      "total_bytes": 21973568
+    },
+    {
+      "region": "emerald-coast",
+      "source_packages": 17,
+      "native_buildings": 112637,
+      "coverage_buildings": {},
+      "initial_bytes_including_manifest": 2597536,
+      "architecture_chunks": 35,
+      "total_bytes": 28201864
+    },
+    {
+      "region": "tampa-south-shore",
+      "source_packages": 2,
+      "native_buildings": 52020,
+      "coverage_buildings": {
+        "osm": 608464,
+        "microsoft": 47592
+      },
+      "initial_bytes_including_manifest": 3473985,
+      "architecture_chunks": 75,
+      "total_bytes": 139064636
+    },
+    {
+      "region": "naples-marco",
+      "source_packages": 1,
+      "native_buildings": 15483,
+      "coverage_buildings": {},
+      "initial_bytes_including_manifest": 3094989,
+      "architecture_chunks": 7,
+      "total_bytes": 6443407
+    }
+  ],
+  "approved_tampa_pinellas_town_packages_unchanged": true,
+  "phone_hardware_timing_verified": false,
+  "approved_pipeline_files_unchanged": 18,
+  "viewer_checks": {
+    "tampa_region_1440": {
+      "console_errors": [],
+      "pipeline": "accurate-region",
+      "context": "st-pete-clearwater"
+    },
+    "phone_390": {
+      "region_architecture_chunks": 0,
+      "town_tap_pipeline": "shared-atlas",
+      "district_controls_height_px": 42,
+      "console_errors": []
+    },
+    "pinellas_region_1440": {
+      "console_errors": [],
+      "pipeline": "accurate-region",
+      "context": "tampa-south-shore"
+    }
+  },
+  "notes": [
+    "Regional architecture retains approved source roofs and walls.",
+    "Tampa/Pinellas gaps use mapped OSM/Microsoft footprints and streets.",
+    "Neighboring continuous coverage is clipped at overlap bounds, without relocating buildings.",
+    "Initial byte counts cover terrain and cover files; desktop architecture streams separately.",
+    "Alignment inherits source-package proofs; this is not a new independent survey."
+  ]
+}

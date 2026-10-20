@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Sunny Isles Beach,387.7710266113281,221.4873046875,-80.12184855220664,25.94269151515027,-80.1218486,25.9426915,0.0051,https://www.openstreetmap.org/node/154303551,Representative OSM town place-label anchor: Sunny Isles Beach

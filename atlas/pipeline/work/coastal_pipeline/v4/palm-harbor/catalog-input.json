@@ -1,0 +1,53 @@
+{
+  "region": {
+    "id": "st-pete-clearwater",
+    "coast": "gulf",
+    "name": "Palm Harbor",
+    "map": "St. Pete and Clearwater",
+    "at": [
+      27.98,
+      -82.9
+    ],
+    "side": "W",
+    "img": "img/st-pete-beach.jpg",
+    "pos": "30% center",
+    "hpos": "center 50%",
+    "text": "A narrow peninsula between the Gulf and Tampa Bay that packs in a walkable waterfront city, a string of barrier island beach towns and a few small bayside downtowns. Tampa's airport is close to all of it.",
+    "towns": [
+      "palm-harbor"
+    ],
+    "center": [
+      122.24598020586825,
+      435.71475503880146
+    ]
+  },
+  "towns": [
+    {
+      "id": "palm-harbor",
+      "name": "Palm Harbor",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.764,
+      "lat": 28.078,
+      "vibes": [
+        "walk"
+      ],
+      "blurb": "Historic porch homes around Florida Avenue, oak-shaded residential streets and the sheltered waterfront of Ozona and Crystal Beach.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.visitstpeteclearwater.com/communities/palm-harbor",
+      "source_bounds": [
+        -82.809,
+        28.043,
+        -82.719,
+        28.113
+      ]
+    }
+  ],
+  "bounds": [
+    -82.829,
+    28.023,
+    -82.699,
+    28.133
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "region": {
+    "id": "pcb",
+    "name": "Panama City Beach",
+    "towns": [
+      "pcb"
+    ]
+  },
+  "towns": [
+    {
+      "id": "pcb",
+      "name": "Panama City Beach",
+      "region": "Panhandle",
+      "coast": "panhandle",
+      "lat": 30.18,
+      "lon": -85.8,
+      "tier": 2,
+      "price": "$485K median",
+      "vibes": [
+        "sophhigh",
+        "beaches",
+        "social"
+      ],
+      "airport": "Northwest Florida Beaches (ECP)",
+      "season": "Busy spring and summer",
+      "watch": "Spring break crowds, hurricane exposure",
+      "blurb": "Big beaches, big energy and a lot going on after dark.",
+      "day": "You spend the day on wide white sand and the evening at a live music spot near the pier.",
+      "todo": [
+        [
+          "St. Andrews State Park",
+          "Jetties, clear water and a quiet side of town."
+        ]
+      ],
+      "pros": [
+        "Lively and social",
+        "More affordable than 30A"
+      ],
+      "cons": [
+        "Very busy in season"
+      ],
+      "x": -173.13564526332763,
+      "y": 687.1249833178689,
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.floridacoastal.co/towns/pcb.html",
+      "nearest_town_km": 13.66812795407636
+    }
+  ],
+  "bounds": [
+    -85.95,
+    30.09,
+    -85.72,
+    30.3
+  ]
+}

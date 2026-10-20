@@ -1,0 +1,51 @@
+{
+  "region": {
+    "id": "emerald-coast",
+    "coast": "panhandle",
+    "name": "Okaloosa Island",
+    "map": "Emerald Coast",
+    "at": [
+      30.3,
+      -86.55
+    ],
+    "side": "S",
+    "img": "img/destin-beach.jpg",
+    "text": "The western Panhandle runs from historic Pensacola east to Panama City Beach. In between are Destin's harbor and the small beach towns of 30A, all on sugar white sand and clear green water.",
+    "towns": [
+      "okaloosa-island"
+    ],
+    "center": [
+      -231.63663375567083,
+      702.5863824581506
+    ]
+  },
+  "towns": [
+    {
+      "id": "okaloosa-island",
+      "name": "Okaloosa Island",
+      "region": "Panhandle \u00b7 Emerald Coast",
+      "coast": "panhandle",
+      "lon": -86.594,
+      "lat": 30.396,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Beachfront resort blocks, white sand and the fishing pier across the sound from downtown.",
+      "area_id": "emerald-coast",
+      "area_name": "Pensacola and the Emerald Coast",
+      "source_url": "https://www.openstreetmap.org/",
+      "source_bounds": [
+        -86.639,
+        30.361,
+        -86.54899999999999,
+        30.431
+      ]
+    }
+  ],
+  "bounds": [
+    -86.65899999999999,
+    30.341,
+    -86.529,
+    30.451
+  ]
+}

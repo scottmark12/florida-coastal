@@ -1,0 +1,27 @@
+{
+  "region": "pensacola",
+  "building_count": 5161,
+  "tree_count": 56761,
+  "region_bytes": 260847,
+  "max_tile_bytes": 472789,
+  "max_anchor_error_m": 0.0276,
+  "max_coast_float32_error_m": 0.0338578955636743,
+  "height_sources": {
+    "assumed-house": 3872,
+    "estimated-nonresidential": 1229,
+    "estimated-type-footprint": 9,
+    "landmark-recipe": 1,
+    "levels": 50
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "candidate; visual QA required",
+  "exported_boundary_source_error_m": 131.62943662991032,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

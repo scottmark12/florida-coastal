@@ -1,0 +1,29 @@
+[
+  {
+    "town": "indian-shores",
+    "id": "indian-shores-center",
+    "name": "Indian Shores",
+    "kind": "beach",
+    "description": "A narrow Gulf Boulevard beach town of pastel condominiums, small motels and the Intracoastal Waterway.",
+    "style": "indian-shores",
+    "lon": -82.8484373,
+    "lat": 27.862801,
+    "x": 113.16983701524006,
+    "y": 429.0875057329882,
+    "positionSource": "https://www.openstreetmap.org/node/154019414",
+    "centerMeaning": "Representative OSM town place-label anchor: Indian Shores",
+    "priceRange": "$654,750 median listing price \u00b7 August 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/indian-shores",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 654750,
+      "metric": "median listing price",
+      "period": "August 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/indian-shores",
+      "activeListings": 89
+    },
+    "source": "https://www.visitstpeteclearwater.com/communities/indian-shores-indian-rocks-beach",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

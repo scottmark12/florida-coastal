@@ -1,0 +1,97 @@
+{
+  "id": "treasure-coast/palm-city",
+  "name": "Palm City",
+  "towns": [
+    "palm-city"
+  ],
+  "bounds": [
+    -80.3062,
+    27.1328,
+    -80.22619999999999,
+    27.2028
+  ],
+  "recipes": "work/coastal_pipeline/v4/treasure-coast/recipes.json",
+  "camera": {
+    "center": [
+      369.12967869557895,
+      357.0343941827782
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "palm-city-center": "palm-city-center"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Added six coastal and riverfront communities to complement the existing six Treasure Coast cities. Source bounds include real downtowns, lagoon crossings and barrier-island context.",
+    "Palm City has no town-label node in the snapshot. Used the real Old Palm City place node (154183414) as its explicitly identified riverfront representative anchor.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/treasure-coast/geography.json.gz",
+      "work/coastal_pipeline/v4/treasure-coast/cover.json.gz",
+      "work/coastal_pipeline/v4/treasure-coast/district-palm-city.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/treasure-coast/districts.json",
+    "prices": "work/coastal_pipeline/v4/treasure-coast/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/treasure-coast/palm-city/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/treasure-coast/palm-city/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/treasure-coast/palm-city/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/treasure-coast/palm-city/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/treasure-coast/palm-city/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/treasure-coast/palm-city-center-worldcover-2021.png",
+        "bounds": [
+          -80.29116666666667,
+          27.144416666666668,
+          -80.24316666666667,
+          27.192416666666666
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "palm-city-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  }
+}

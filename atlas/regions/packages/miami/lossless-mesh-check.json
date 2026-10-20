@@ -1,0 +1,14 @@
+{
+  "base": {
+    "all_triangle_positions_identical": true,
+    "material_names_identical": true,
+    "bytes_before": 616187,
+    "bytes_after": 529162
+  },
+  "region": {
+    "all_triangle_positions_identical": true,
+    "material_names_identical": true,
+    "bytes_before": 1459715,
+    "bytes_after": 1459715
+  }
+}

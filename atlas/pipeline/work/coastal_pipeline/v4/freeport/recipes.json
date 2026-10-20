@@ -1,0 +1,26 @@
+{
+  "recipes": {
+    "freeport": {
+      "walls": [
+        "#d5b68c",
+        "#c1ccad",
+        "#e7d7b9",
+        "#bfd1cd"
+      ],
+      "roofs": [
+        "#a6b8b1",
+        "#c3ccc8",
+        "#9ba7a0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitsouthwalton.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "A small bayhead town of creeks, boat ramps and wooded neighborhoods."
+    }
+  },
+  "coastalHeightZones": []
+}

@@ -1,0 +1,96 @@
+{
+  "id": "mexico-beach",
+  "name": "Mexico Beach",
+  "towns": [
+    "mexico-beach"
+  ],
+  "bounds": [
+    -85.46,
+    29.91,
+    -85.37,
+    30.0
+  ],
+  "recipes": "work/coastal_pipeline/v4/mexico-beach/recipes.json",
+  "camera": {
+    "center": [
+      -136.82426629489638,
+      660.9496558815367
+    ],
+    "desktopSpan": 9,
+    "phoneSpan": 5,
+    "phoneOffsetY": 0.2
+  },
+  "district_recipes": {
+    "mexico-beach-center": "mexico-beach"
+  },
+  "manual_fixes": [
+    "Added Mexico Beach to the catalog at user request, using OSM town geometry and official tourism context.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/mexico-beach/geography.json.gz",
+      "work/coastal_pipeline/v4/mexico-beach/district-mexico-beach.json.gz",
+      "work/coastal_pipeline/v4/mexico-beach/cover.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/mexico-beach/districts.json",
+    "prices": "work/coastal_pipeline/v4/mexico-beach/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/mexico-beach/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/mexico-beach/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/mexico-beach/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/mexico-beach/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/mexico-beach/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/mexico-beach/mexico-beach-center-worldcover-2021.png",
+        "bounds": [
+          -85.44341666666666,
+          29.9245,
+          -85.39541666666666,
+          29.9725
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W087_Map.tif",
+        "surveyYear": 2021,
+        "district": "mexico-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  },
+  "waterRecipe": "emerald-forgotten"
+}

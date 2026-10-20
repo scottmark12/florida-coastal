@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Jupiter,387.0484313964844,331.5779724121094,-80.09420863284838,26.934224671665056,-80.0942087,26.9342246,0.0104,https://www.openstreetmap.org/node/153922813,Representative OSM town place-label anchor: Jupiter

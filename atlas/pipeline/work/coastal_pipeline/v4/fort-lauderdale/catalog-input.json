@@ -1,0 +1,449 @@
+{
+  "region": {
+    "id": "fort-lauderdale",
+    "coast": "atlantic",
+    "name": "Fort Lauderdale and the northern Miami coast",
+    "map": "Miami and Fort Lauderdale",
+    "at": [
+      26,
+      -80.12
+    ],
+    "side": "E",
+    "img": "img/southbeach-lifeguard.jpg",
+    "text": "The most urban stretch of the Florida coast, from the Art Deco blocks of South Beach north through Hollywood to the canals of Fort Lauderdale. Two major airports, late nights and beaches with a city right behind them.",
+    "towns": [
+      "bal-harbour",
+      "sunny-isles-beach",
+      "north-miami-beach",
+      "hallandale",
+      "hollywood",
+      "dania-beach",
+      "ftl",
+      "wilton-manors",
+      "lauderdale-by-the-sea",
+      "lighthouse-point"
+    ],
+    "center": [
+      386.4967006141653,
+      231.42407160329319
+    ]
+  },
+  "towns": [
+    {
+      "id": "ftl",
+      "name": "Fort Lauderdale",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 26.12,
+      "lon": -80.14,
+      "tier": 3,
+      "price": null,
+      "vibes": [
+        "sophhigh",
+        "dock",
+        "social",
+        "active",
+        "remote"
+      ],
+      "airport": "Fort Lauderdale (FLL)",
+      "season": "Busy winters",
+      "watch": "Flooding, high insurance",
+      "blurb": "A boating city of canals, marinas and a lively beach.",
+      "day": "You take the boat out through the canals, then grab dinner on Las Olas.",
+      "todo": [
+        [
+          "Las Olas Boulevard",
+          "Dining and shops near the river."
+        ]
+      ],
+      "pros": [
+        "Huge boating scene",
+        "Close to a big airport"
+      ],
+      "cons": [
+        "Busy and pricey"
+      ],
+      "x": 385.3408730774342,
+      "y": 241.09704351060543,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/ftl.html",
+      "nearest_town_km": 4.440327895453733,
+      "source_bounds": [
+        -80.18,
+        26.095,
+        -80.093,
+        26.15
+      ]
+    },
+    {
+      "id": "bal-harbour",
+      "name": "Bal Harbour Village",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 25.892,
+      "lon": -80.126,
+      "tier": 4,
+      "price": "$1.28M median",
+      "vibes": [
+        "sophcalm",
+        "remote"
+      ],
+      "airport": "Miami (MIA) or Fort Lauderdale (FLL), about 35 minutes",
+      "season": "Busy winters",
+      "watch": "Very high prices, flooding, traffic",
+      "blurb": "A tiny oceanfront village at the north tip of Miami Beach, known for a luxury shopping center and a quiet beach path.",
+      "day": "You jog the beach path at sunrise, have a long lunch at the Bal Harbour Shops and walk the beach at dusk.",
+      "todo": [
+        [
+          "Bal Harbour Shops",
+          "An open air luxury mall with palm lined courtyards."
+        ]
+      ],
+      "pros": [
+        "Quiet and polished",
+        "Close to two airports"
+      ],
+      "cons": [
+        "Among the priciest places in Florida",
+        "Small, with little nightlife"
+      ],
+      "x": 387.5327468718726,
+      "y": 215.85211642038416,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/bal-harbour.html",
+      "nearest_town_km": 5.802264216545203
+    },
+    {
+      "id": "dania-beach",
+      "name": "Dania Beach",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 26.052,
+      "lon": -80.144,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "afford"
+      ],
+      "airport": "Fort Lauderdale (FLL), about 10 minutes",
+      "season": "Busy winters",
+      "watch": "Airport noise, flooding",
+      "blurb": "A small, unflashy beach city right next to the Fort Lauderdale airport, with a fishing pier and a quiet beach.",
+      "day": "You fish off the pier at sunrise, have lunch at a dockside spot and can be at your gate 15 minutes after leaving home.",
+      "todo": [
+        [
+          "Dania Beach Pier",
+          "A long fishing pier with a restaurant at the foot."
+        ]
+      ],
+      "pros": [
+        "More affordable than its neighbors",
+        "Minutes from a major airport"
+      ],
+      "cons": [
+        "Airplane noise",
+        "Fewer restaurants and shops in town"
+      ],
+      "x": 385.1776207940512,
+      "y": 233.54185230642682,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/dania-beach.html",
+      "nearest_town_km": 4.589197024994013,
+      "source_bounds": [
+        -80.17,
+        26.03,
+        -80.105,
+        26.075
+      ]
+    },
+    {
+      "id": "hallandale",
+      "name": "Hallandale Beach",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 25.981,
+      "lon": -80.148,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "sophhigh"
+      ],
+      "airport": "Fort Lauderdale (FLL), about 20 minutes",
+      "season": "Busy winters",
+      "watch": "Traffic, flooding, condo fees and assessments",
+      "blurb": "A city of oceanfront condo towers between Fort Lauderdale and Miami, home to Gulfstream Park.",
+      "day": "You walk the beach in the morning, watch the horses run at Gulfstream Park and stay for dinner in the village there.",
+      "todo": [
+        [
+          "Gulfstream Park",
+          "Horse racing, a casino and an outdoor village of shops and restaurants."
+        ]
+      ],
+      "pros": [
+        "Condos at lower prices than Miami Beach",
+        "Close to two airports"
+      ],
+      "cons": [
+        "Dense, with heavy traffic",
+        "Not much of a walkable center"
+      ],
+      "x": 385.02426555844715,
+      "y": 225.65425378709475,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/hallandale.html",
+      "nearest_town_km": 3.335087032093765,
+      "source_bounds": [
+        -80.173,
+        25.959,
+        -80.108,
+        26.005
+      ]
+    },
+    {
+      "id": "hollywood",
+      "name": "Hollywood",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 26.011,
+      "lon": -80.15,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "active",
+        "walk"
+      ],
+      "airport": "Fort Lauderdale (FLL), about 15 minutes",
+      "season": "Busy winters",
+      "watch": "Flooding in low areas, traffic",
+      "blurb": "A beach city with a 2.5 mile oceanfront Broadwalk for walking and biking, plus a downtown full of murals.",
+      "day": "You bike the Broadwalk before it gets hot, stop for breakfast a few steps from the sand and catch a concert at the bandshell.",
+      "todo": [
+        [
+          "Hollywood Beach Broadwalk",
+          "A 2.5 mile brick promenade along the ocean, lined with cafes."
+        ]
+      ],
+      "pros": [
+        "The Broadwalk makes beach life car free",
+        "Close to the airport"
+      ],
+      "cons": [
+        "Crowded on weekends",
+        "Parking is tight"
+      ],
+      "x": 384.720501155254,
+      "y": 228.97547836531777,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/hollywood.html",
+      "nearest_town_km": 3.335087032093765,
+      "source_bounds": [
+        -80.175,
+        25.989,
+        -80.105,
+        26.035
+      ]
+    },
+    {
+      "id": "lauderdale-by-the-sea",
+      "name": "Lauderdale by the Sea",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 26.192,
+      "lon": -80.096,
+      "tier": 3,
+      "price": null,
+      "vibes": [
+        "beaches",
+        "walk"
+      ],
+      "airport": "Fort Lauderdale (FLL), about 25 minutes",
+      "season": "Busy winters",
+      "watch": "Oceanfront storm exposure",
+      "blurb": "A low rise beach village where a coral reef sits close enough to shore that you can snorkel it from the sand.",
+      "day": "You snorkel the reef off the beach in the morning, walk to lunch in the square and listen to live music there at night.",
+      "todo": [
+        [
+          "Anglin's Square",
+          "The little downtown by the pier, with restaurants and outdoor music."
+        ]
+      ],
+      "pros": [
+        "Walkable village scale",
+        "Reef snorkeling from the beach"
+      ],
+      "cons": [
+        "Small, with limited housing",
+        "Pricey"
+      ],
+      "x": 389.47896741544025,
+      "y": 249.2219674005212,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/lauderdale-by-the-sea.html",
+      "nearest_town_km": 5.570196060818032
+    },
+    {
+      "id": "lighthouse-point",
+      "name": "Lighthouse Point",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 26.276,
+      "lon": -80.088,
+      "tier": 4,
+      "price": null,
+      "vibes": [
+        "dock"
+      ],
+      "airport": "Fort Lauderdale (FLL), about 25 minutes",
+      "season": "Steady year round",
+      "watch": "Canal flooding at king tides, high prices",
+      "blurb": "A boating town of deep water canals near Hillsboro Inlet, where most streets end at the water.",
+      "day": "You run the boat out Hillsboro Inlet for mahi and tie up at a waterfront restaurant on the way home.",
+      "todo": [
+        [
+          "Hillsboro Inlet",
+          "A quick route to the ocean, watched over by a historic lighthouse."
+        ]
+      ],
+      "pros": [
+        "Fast ocean access by boat",
+        "Quiet residential feel"
+      ],
+      "cons": [
+        "Expensive",
+        "No beach in town"
+      ],
+      "x": 389.9811053477214,
+      "y": 258.5654455967688,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/lighthouse-point.html",
+      "nearest_town_km": 9.356961435572458
+    },
+    {
+      "id": "north-miami-beach",
+      "name": "North Miami Beach",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 25.933,
+      "lon": -80.162,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "social"
+      ],
+      "airport": "Miami (MIA) or Fort Lauderdale (FLL), about 30 minutes",
+      "season": "Busy year round",
+      "watch": "Traffic. Despite the name, it is not on the ocean",
+      "blurb": "A mainland city in north Miami-Dade with restaurants from all over the world and Oleta River State Park next door.",
+      "day": "You mountain bike or paddle at Oleta River State Park, then pick from a dozen cuisines for dinner.",
+      "todo": [
+        [
+          "Oleta River State Park",
+          "The largest urban park in Florida, with trails, kayaking and a small beach."
+        ]
+      ],
+      "pros": [
+        "More affordable than the beach towns",
+        "Great variety of food"
+      ],
+      "cons": [
+        "The ocean is a drive over the causeway",
+        "Heavy traffic"
+      ],
+      "x": 383.7911074597694,
+      "y": 220.28679843247897,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/north-miami-beach.html",
+      "nearest_town_km": 4.381925464985344
+    },
+    {
+      "id": "sunny-isles-beach",
+      "name": "Sunny Isles Beach",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 25.951,
+      "lon": -80.123,
+      "tier": 4,
+      "price": null,
+      "vibes": [
+        "sophcalm"
+      ],
+      "airport": "Fort Lauderdale (FLL) or Miami (MIA), about 30 minutes",
+      "season": "Busy year round",
+      "watch": "Traffic on Collins Avenue, high condo fees",
+      "blurb": "A two mile line of luxury condo towers on the ocean between Miami Beach and Fort Lauderdale.",
+      "day": "You take the elevator down to the beach, walk to the pier for lunch and watch the lights come on from your balcony.",
+      "todo": [
+        [
+          "Newport Fishing Pier",
+          "A historic pier with a restaurant over the water."
+        ]
+      ],
+      "pros": [
+        "Ocean views from nearly every home",
+        "Restaurants from around the world"
+      ],
+      "cons": [
+        "Dense, with heavy traffic",
+        "Expensive"
+      ],
+      "x": 387.62695131028346,
+      "y": 222.4051876165433,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/sunny-isles-beach.html",
+      "nearest_town_km": 4.162980194936511
+    },
+    {
+      "id": "wilton-manors",
+      "name": "Wilton Manors",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 26.16,
+      "lon": -80.139,
+      "tier": 3,
+      "price": null,
+      "vibes": [
+        "walk"
+      ],
+      "airport": "Fort Lauderdale (FLL), about 20 minutes",
+      "season": "Lively year round",
+      "watch": "Flooding at king tides, traffic",
+      "blurb": "A small island city ringed by the Middle River, built around the restaurants, bars and shops of Wilton Drive.",
+      "day": "You kayak the river loop around the city in the morning and walk Wilton Drive for dinner and a show at night.",
+      "todo": [
+        [
+          "Wilton Drive",
+          "A walkable main street of restaurants, bars and shops."
+        ]
+      ],
+      "pros": [
+        "A walkable, social main street",
+        "Ten minutes from the beach"
+      ],
+      "cons": [
+        "Not on the ocean",
+        "Busy on weekends"
+      ],
+      "x": 385.3016999950465,
+      "y": 245.5371986079822,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/wilton-manors.html",
+      "nearest_town_km": 4.440327895453733
+    }
+  ],
+  "bounds": [
+    -80.28200000000001,
+    25.772,
+    -79.96799999999999,
+    26.396
+  ]
+}

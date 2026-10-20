@@ -1,0 +1,547 @@
+{
+  "id": "space-coast",
+  "name": "The Space Coast",
+  "towns": [
+    "cocoa",
+    "indialantic",
+    "melbourne-beach",
+    "palm-bay",
+    "satellite-beach",
+    "titusville",
+    "west-melbourne",
+    "melbourne",
+    "cape-canaveral",
+    "merritt-island",
+    "rockledge",
+    "cocoa-village",
+    "indian-harbour-beach"
+  ],
+  "bounds": [
+    -80.92800000000001,
+    27.915,
+    -80.442,
+    28.732
+  ],
+  "recipes": "work/coastal_pipeline/v4/space-coast/recipes.json",
+  "camera": {
+    "center": [
+      328.3877003291649,
+      473.8498609886243
+    ],
+    "desktopSpan": 88.60111491503592,
+    "phoneSpan": 54.523763024637496,
+    "phoneOffsetY": 4
+  },
+  "district_recipes": {
+    "cocoa-center": "cocoa",
+    "indialantic-center": "indialantic",
+    "melbourne-beach-center": "melbourne-beach",
+    "palm-bay-center": "palm-bay",
+    "satellite-beach-center": "satellite-beach",
+    "titusville-center": "titusville",
+    "west-melbourne-center": "west-melbourne",
+    "melbourne-center": "melbourne",
+    "cape-canaveral-center": "cape-canaveral",
+    "merritt-island-center": "merritt-island",
+    "rockledge-center": "rockledge",
+    "cocoa-village-center": "cocoa-village",
+    "indian-harbour-beach-center": "indian-harbour-beach"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Separated mainland Cocoa (new cocoa-village ID) from the existing cocoa ID, which remains Cocoa Beach; corrected the beach city price source.",
+    "Added six missing cities and coastal communities. Residential styles use the approved low-house recipe; explicit commercial and apartment tags retain their height handling.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/space-coast/geography.json.gz",
+      "work/coastal_pipeline/v4/space-coast/landmarks-titusville.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-west-melbourne.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-melbourne.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-satellite-beach.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-indialantic.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-melbourne-beach.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-cocoa-village.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-rockledge.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-indian-harbour-beach.json.gz",
+      "work/coastal_pipeline/v4/space-coast/cover.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-merritt-island.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-cocoa.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-titusville.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-palm-bay.json.gz",
+      "work/coastal_pipeline/v4/space-coast/district-cape-canaveral.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/space-coast/districts.json",
+    "prices": "work/coastal_pipeline/v4/space-coast/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/space-coast/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/space-coast/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/space-coast/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/space-coast/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/space-coast/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/cocoa-center-worldcover-2021.png",
+        "bounds": [
+          -80.6335,
+          28.294416666666667,
+          -80.5855,
+          28.342416666666665
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "cocoa-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/indialantic-center-worldcover-2021.png",
+        "bounds": [
+          -80.592,
+          28.06725,
+          -80.544,
+          28.11525
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "indialantic-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/melbourne-beach-center-worldcover-2021.png",
+        "bounds": [
+          -80.58483333333334,
+          28.044416666666667,
+          -80.53683333333333,
+          28.092416666666665
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "melbourne-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/palm-bay-center-worldcover-2021.png",
+        "bounds": [
+          -80.66066666666667,
+          27.97075,
+          -80.61266666666667,
+          28.01875
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "palm-bay-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/satellite-beach-center-worldcover-2021.png",
+        "bounds": [
+          -80.6145,
+          28.152,
+          -80.5665,
+          28.2
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "satellite-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/titusville-center-worldcover-2021.png",
+        "bounds": [
+          -80.832,
+          28.58866666666667,
+          -80.784,
+          28.636666666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "titusville-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/west-melbourne-center-worldcover-2021.png",
+        "bounds": [
+          -80.69583333333334,
+          28.049666666666667,
+          -80.64783333333334,
+          28.097666666666665
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "west-melbourne-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/melbourne-center-worldcover-2021.png",
+        "bounds": [
+          -80.63183333333333,
+          28.0545,
+          -80.58383333333333,
+          28.1025
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "melbourne-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/cape-canaveral-center-worldcover-2021.png",
+        "bounds": [
+          -80.62966666666667,
+          28.364166666666666,
+          -80.58166666666666,
+          28.412166666666668
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "cape-canaveral-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/merritt-island-center-worldcover-2021.png",
+        "bounds": [
+          -80.72083333333333,
+          28.33416666666667,
+          -80.67283333333333,
+          28.382166666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "merritt-island-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/rockledge-center-worldcover-2021.png",
+        "bounds": [
+          -80.75891666666666,
+          28.306833333333334,
+          -80.71091666666666,
+          28.354833333333332
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "rockledge-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/cocoa-village-center-worldcover-2021.png",
+        "bounds": [
+          -80.75658333333334,
+          28.331666666666667,
+          -80.70858333333334,
+          28.379666666666665
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "cocoa-village-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/indian-harbour-beach-center-worldcover-2021.png",
+        "bounds": [
+          -80.61091666666667,
+          28.125,
+          -80.56291666666667,
+          28.173000000000002
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "indian-harbour-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/cocoa-hero-canopy.png",
+        "bounds": [
+          -80.62575,
+          28.34375,
+          -80.57775,
+          28.391750000000002
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "cocoa-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10,
+        "scope": "Additional real canopy coverage centered on the curated hero, not an inferred default."
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/palm-bay-hero-canopy.png",
+        "bounds": [
+          -80.60458333333334,
+          28.016,
+          -80.55658333333334,
+          28.064
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "palm-bay-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10,
+        "scope": "Additional real canopy coverage centered on the curated hero, not an inferred default."
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/cape-canaveral-hero-canopy.png",
+        "bounds": [
+          -80.61766666666666,
+          28.382833333333334,
+          -80.56966666666666,
+          28.430833333333332
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "cape-canaveral-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10,
+        "scope": "Additional real canopy coverage centered on the curated hero, not an inferred default."
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/merritt-island-hero-canopy.png",
+        "bounds": [
+          -80.70083333333334,
+          28.336833333333335,
+          -80.65283333333333,
+          28.384833333333333
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "merritt-island-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10,
+        "scope": "Additional real canopy coverage centered on the curated hero, not an inferred default."
+      },
+      {
+        "path": "work/coastal_pipeline/v4/space-coast/rockledge-hero-canopy.png",
+        "bounds": [
+          -80.73641666666667,
+          28.301666666666666,
+          -80.68841666666667,
+          28.349666666666668
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "rockledge-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10,
+        "scope": "Additional real canopy coverage centered on the curated hero, not an inferred default."
+      }
+    ]
+  }
+}

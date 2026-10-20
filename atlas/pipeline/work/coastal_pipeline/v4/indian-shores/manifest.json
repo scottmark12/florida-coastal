@@ -1,0 +1,118 @@
+{
+  "id": "indian-shores",
+  "name": "Indian Shores",
+  "towns": [
+    "indian-shores"
+  ],
+  "bounds": [
+    -82.911,
+    27.808,
+    -82.781,
+    27.918
+  ],
+  "recipes": "work/coastal_pipeline/v4/indian-shores/recipes.json",
+  "camera": {
+    "center": [
+      113.16983701524006,
+      429.0875057329882
+    ],
+    "desktopSpan": 30,
+    "phoneSpan": 25,
+    "phoneOffsetY": 4
+  },
+  "district_recipes": {
+    "indian-shores-center": "indian-shores"
+  },
+  "manual_fixes": [
+    "Town style palette curated from municipal/visitor references; individual facade colors remain illustrative.",
+    "Published town-level listing median, period and inventory are retained; not a pair of example listings.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Incomplete OSM footprints filled by non-overlapping Microsoft imagery footprints with separate source IDs."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/indian-shores/geography.json.gz",
+      "work/coastal_pipeline/v4/indian-shores/district-indian-shores.json.gz",
+      "work/coastal_pipeline/v4/indian-shores/cover.json.gz",
+      "work/coastal_pipeline/v4/indian-shores/supplemental-buildings.json"
+    ],
+    "districts": "work/coastal_pipeline/v4/indian-shores/districts.json",
+    "prices": "work/coastal_pipeline/v4/indian-shores/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/indian-shores/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/indian-shores/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/indian-shores/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/indian-shores/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/indian-shores/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/indian-shores/indian-shores-center-worldcover-2021.png",
+        "bounds": [
+          -82.8725,
+          27.838833333333334,
+          -82.8245,
+          27.886833333333335
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "indian-shores-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "supplementalBuildingSources": [
+      {
+        "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+        "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+        "downloads": [
+          {
+            "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+            "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+          }
+        ],
+        "release": "2026-02-03",
+        "license": "CDLA Permissive 2.0",
+        "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+        "footprints": 536,
+        "notes": [
+          "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+          "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+        ]
+      }
+    ]
+  }
+}

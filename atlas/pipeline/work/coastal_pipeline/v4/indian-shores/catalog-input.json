@@ -1,0 +1,53 @@
+{
+  "region": {
+    "id": "st-pete-clearwater",
+    "coast": "gulf",
+    "name": "Indian Shores",
+    "map": "St. Pete and Clearwater",
+    "at": [
+      27.98,
+      -82.9
+    ],
+    "side": "W",
+    "img": "img/st-pete-beach.jpg",
+    "pos": "30% center",
+    "hpos": "center 50%",
+    "text": "A narrow peninsula between the Gulf and Tampa Bay that packs in a walkable waterfront city, a string of barrier island beach towns and a few small bayside downtowns. Tampa's airport is close to all of it.",
+    "towns": [
+      "indian-shores"
+    ],
+    "center": [
+      122.24598020586825,
+      435.71475503880146
+    ]
+  },
+  "towns": [
+    {
+      "id": "indian-shores",
+      "name": "Indian Shores",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.846,
+      "lat": 27.863,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "A narrow Gulf Boulevard beach town of pastel condominiums, small motels and the Intracoastal Waterway.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.visitstpeteclearwater.com/communities/indian-shores-indian-rocks-beach",
+      "source_bounds": [
+        -82.891,
+        27.828,
+        -82.801,
+        27.898
+      ]
+    }
+  ],
+  "bounds": [
+    -82.911,
+    27.808,
+    -82.781,
+    27.918
+  ]
+}

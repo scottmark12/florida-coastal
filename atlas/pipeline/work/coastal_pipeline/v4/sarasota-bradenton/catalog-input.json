@@ -1,0 +1,408 @@
+{
+  "region": {
+    "id": "sarasota-bradenton",
+    "coast": "gulf",
+    "name": "Sarasota, Bradenton and Venice",
+    "map": "Sarasota and Bradenton",
+    "at": [
+      27.28,
+      -82.68
+    ],
+    "side": "W",
+    "img": "img/bradenton-beach.jpg",
+    "text": "From the Manatee River down to Englewood, this stretch pairs an arts minded city with some of the Gulf's best known sand on Anna Maria Island, Longboat Key and Siesta Key. Venice adds a walkable island downtown.",
+    "towns": [
+      "bradenton",
+      "bradenton-beach",
+      "cortez",
+      "ami",
+      "longboat",
+      "sarasota",
+      "siesta-key",
+      "venice",
+      "englewood"
+    ],
+    "center": [
+      140.10735322180037,
+      371.03109972062214
+    ]
+  },
+  "towns": [
+    {
+      "id": "ami",
+      "name": "Anna Maria Island",
+      "region": "Southwest Gulf",
+      "coast": "gulf",
+      "lat": 27.53,
+      "lon": -82.73,
+      "tier": 4,
+      "price": "$1.15M median",
+      "vibes": [
+        "sophcalm",
+        "island",
+        "beaches",
+        "bluezone"
+      ],
+      "airport": "Sarasota Bradenton (SRQ), about 35 minutes",
+      "season": "Busy winters and weekends",
+      "watch": "Island flooding and storm exposure",
+      "blurb": "Old Florida on a small island, with no high rises and a free trolley.",
+      "day": "You ride the trolley to breakfast, read on a quiet beach and watch the sun drop into the Gulf.",
+      "todo": [
+        [
+          "Free island trolley",
+          "Runs the length of the island."
+        ]
+      ],
+      "pros": [
+        "Low key and beautiful",
+        "No high rises"
+      ],
+      "cons": [
+        "Expensive",
+        "Island storm risk"
+      ],
+      "x": 125.18948851146489,
+      "y": 392.2459624241382,
+      "area_id": "sarasota-bradenton",
+      "area_name": "Sarasota, Bradenton and Venice",
+      "source_url": "https://www.floridacoastal.co/towns/ami.html",
+      "nearest_town_km": 7.330484289706592
+    },
+    {
+      "id": "longboat",
+      "name": "Longboat Key",
+      "region": "Southwest Gulf",
+      "coast": "gulf",
+      "lat": 27.41,
+      "lon": -82.66,
+      "tier": 4,
+      "price": null,
+      "vibes": [
+        "sophcalm",
+        "beaches",
+        "bluezone"
+      ],
+      "airport": "Sarasota Bradenton (SRQ)",
+      "season": "Busy winters",
+      "watch": "Storm surge on the key",
+      "blurb": "A quiet, polished barrier island minutes from Sarasota's arts scene.",
+      "day": "You walk an uncrowded beach in the morning and head to a Sarasota show at night.",
+      "todo": [
+        [
+          "St. Armands Circle",
+          "Shops and dining just off the key."
+        ]
+      ],
+      "pros": [
+        "Quiet and polished",
+        "Near Sarasota culture"
+      ],
+      "cons": [
+        "Expensive",
+        "Barrier island exposure"
+      ],
+      "x": 132.23423062801888,
+      "y": 378.99431676359575,
+      "area_id": "sarasota-bradenton",
+      "area_name": "Sarasota, Bradenton and Venice",
+      "source_url": "https://www.floridacoastal.co/towns/longboat.html",
+      "nearest_town_km": 6.458177881273377
+    },
+    {
+      "id": "bradenton",
+      "name": "Bradenton",
+      "region": "Sarasota \u00b7 Manatee",
+      "coast": "gulf",
+      "lat": 27.499,
+      "lon": -82.575,
+      "tier": 1,
+      "price": "$283K median",
+      "vibes": [
+        "afford",
+        "walk"
+      ],
+      "airport": "Sarasota Bradenton (SRQ), about 20 minutes",
+      "season": "Busier in winter",
+      "watch": "Flooding along the river",
+      "blurb": "A river city with a long Riverwalk, spring training baseball and the Anna Maria Island beaches 20 minutes west.",
+      "day": "You walk the Riverwalk in the morning, catch a Pirates spring training game and head to the island for sunset.",
+      "todo": [
+        [
+          "Village of the Arts",
+          "A neighborhood of colorful cottages turned into galleries and cafes."
+        ]
+      ],
+      "pros": [
+        "Affordable for this stretch of coast",
+        "Close to great beaches"
+      ],
+      "cons": [
+        "Beach traffic in season",
+        "Not on the Gulf itself"
+      ],
+      "x": 140.50765687438656,
+      "y": 388.9707044460102,
+      "area_id": "sarasota-bradenton",
+      "area_name": "Sarasota, Bradenton and Venice",
+      "source_url": "https://www.floridacoastal.co/towns/bradenton.html",
+      "nearest_town_km": 10.297174396997576
+    },
+    {
+      "id": "bradenton-beach",
+      "name": "Bradenton Beach",
+      "region": "Anna Maria Island",
+      "coast": "gulf",
+      "lat": 27.47,
+      "lon": -82.699,
+      "tier": 4,
+      "price": null,
+      "vibes": [
+        "island",
+        "walk"
+      ],
+      "airport": "Sarasota Bradenton (SRQ), about 30 minutes",
+      "season": "Busy winters and weekends",
+      "watch": "Island flooding. Hit hard by Helene in 2024. Cortez Bridge replacement work is planned through about 2029",
+      "blurb": "The south end of Anna Maria Island, with a historic fishing pier, a walkable Bridge Street and water on both sides.",
+      "day": "You walk Bridge Street to the pier for breakfast and cross the road to the Gulf for the rest of the day.",
+      "todo": [
+        [
+          "Bridge Street",
+          "A short, walkable strip of restaurants and shops that ends at the pier."
+        ]
+      ],
+      "pros": [
+        "Walk to the beach, the bay and dinner",
+        "No high rises"
+      ],
+      "cons": [
+        "Expensive",
+        "Island storm risk and traffic"
+      ],
+      "x": 128.31547564914402,
+      "y": 385.6154115920655,
+      "area_id": "sarasota-bradenton",
+      "area_name": "Sarasota, Bradenton and Venice",
+      "source_url": "https://www.floridacoastal.co/towns/bradenton-beach.html",
+      "nearest_town_km": 2.585967490143162
+    },
+    {
+      "id": "cortez",
+      "name": "Cortez",
+      "region": "Sarasota \u00b7 Manatee",
+      "coast": "gulf",
+      "lat": 27.467,
+      "lon": -82.673,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "island",
+        "oldfl",
+        "dock"
+      ],
+      "airport": "Sarasota Bradenton (SRQ), about 25 minutes",
+      "season": "Quiet, except festival weekend",
+      "watch": "Low lying, with storm surge risk. The Cortez Bridge is set to be replaced, with work running to about 2029",
+      "blurb": "One of the last working fishing villages in Florida, with fish houses on the bay that date back to the 1880s.",
+      "day": "You eat lunch at a fish house on the water and watch the boats come in.",
+      "todo": [
+        [
+          "Cortez Commercial Fishing Festival",
+          "A February weekend of seafood, music and boat tours."
+        ]
+      ],
+      "pros": [
+        "A real working waterfront",
+        "Minutes from the island beaches"
+      ],
+      "cons": [
+        "Tiny, with few homes for sale",
+        "Flood risk"
+      ],
+      "x": 130.88329942601635,
+      "y": 385.30961932433064,
+      "area_id": "sarasota-bradenton",
+      "area_name": "Sarasota, Bradenton and Venice",
+      "source_url": "https://www.floridacoastal.co/towns/cortez.html",
+      "nearest_town_km": 2.585967490143162
+    },
+    {
+      "id": "englewood",
+      "name": "Englewood",
+      "region": "Sarasota \u00b7 Charlotte",
+      "coast": "gulf",
+      "lat": 26.962,
+      "lon": -82.353,
+      "tier": 1,
+      "price": "$329K median",
+      "vibes": [
+        "oldfl",
+        "afford"
+      ],
+      "airport": "Punta Gorda (PGD), about 40 minutes",
+      "season": "Busier in winter",
+      "watch": "Storm surge. Hit by Ian in 2022 and by Helene and Milton in 2024",
+      "blurb": "A laid back Gulf town with a small old downtown and beaches on Manasota Key, known for shark teeth.",
+      "day": "You walk Stump Pass Beach looking for shark teeth, then head to Dearborn Street for the farmers market.",
+      "todo": [
+        [
+          "Stump Pass Beach State Park",
+          "A mile of undeveloped beach at the tip of Manasota Key."
+        ]
+      ],
+      "pros": [
+        "Affordable for the Gulf",
+        "Quiet, uncrowded beaches"
+      ],
+      "cons": [
+        "Limited shopping and nightlife",
+        "Hurricane exposure"
+      ],
+      "x": 163.19241959454374,
+      "y": 329.6215097848868,
+      "area_id": "sarasota-bradenton",
+      "area_name": "Sarasota, Bradenton and Venice",
+      "source_url": "https://www.floridacoastal.co/towns/englewood.html",
+      "nearest_town_km": 18.242444782778573
+    },
+    {
+      "id": "sarasota",
+      "name": "Sarasota",
+      "aka": "Sarasota Beach Lido Key Lido Beach St Armands Circle",
+      "region": "Sarasota \u00b7 Manatee",
+      "coast": "gulf",
+      "lat": 27.336,
+      "lon": -82.531,
+      "tier": 2,
+      "price": "$428K median",
+      "vibes": [
+        "sophcalm",
+        "active",
+        "remote",
+        "bluezone"
+      ],
+      "airport": "Sarasota Bradenton (SRQ), about 15 minutes",
+      "season": "Busy winters",
+      "watch": "Storm surge (Helene and Milton in 2024), season traffic",
+      "blurb": "The arts capital of the Gulf coast, with an opera, a ballet, The Ringling museum, Lido Beach just over the bridge and Siesta Key's famous sand minutes away.",
+      "day": "You walk the bayfront at sunrise, spend the afternoon at The Ringling and see a show downtown at night.",
+      "todo": [
+        [
+          "The Ringling",
+          "An art museum, a circus museum and a bayfront mansion on 66 acres."
+        ],
+        [
+          "St. Armands Circle",
+          "A walkable circle of shops and restaurants on Lido Key, a few blocks from Lido Beach."
+        ]
+      ],
+      "pros": [
+        "Arts and dining well beyond its size",
+        "Close to top beaches",
+        "St. Armands Circle and Lido Beach are just over the bridge"
+      ],
+      "cons": [
+        "Heavy traffic in season",
+        "Prices have climbed",
+        "Bridge traffic to the beach in season"
+      ],
+      "x": 145.061552307255,
+      "y": 370.9227329848446,
+      "area_id": "sarasota-bradenton",
+      "area_name": "Sarasota, Bradenton and Venice",
+      "source_url": "https://www.floridacoastal.co/towns/sarasota.html",
+      "nearest_town_km": 8.070914156816016
+    },
+    {
+      "id": "siesta-key",
+      "name": "Siesta Key",
+      "region": "Sarasota \u00b7 Manatee",
+      "coast": "gulf",
+      "lat": 27.266,
+      "lon": -82.553,
+      "tier": 4,
+      "price": null,
+      "vibes": [
+        "beaches"
+      ],
+      "airport": "Sarasota Bradenton (SRQ), about 25 minutes",
+      "season": "Very busy winter and spring",
+      "watch": "Bridge traffic, storm surge",
+      "blurb": "An island of quartz white sand so fine it stays cool underfoot, with a small, lively village at the north end.",
+      "day": "You walk to Siesta Beach before the crowds, have lunch in the Village and come back for the Sunday drum circle.",
+      "todo": [
+        [
+          "Siesta Beach",
+          "Named the number one beach in America by Tripadvisor in 2025."
+        ]
+      ],
+      "pros": [
+        "One of the best beaches anywhere",
+        "A walkable village"
+      ],
+      "cons": [
+        "Heavy traffic in season",
+        "Expensive"
+      ],
+      "x": 142.98039170470418,
+      "y": 363.12475723000387,
+      "area_id": "sarasota-bradenton",
+      "area_name": "Sarasota, Bradenton and Venice",
+      "source_url": "https://www.floridacoastal.co/towns/siesta-key.html",
+      "nearest_town_km": 8.070914156816016
+    },
+    {
+      "id": "venice",
+      "name": "Venice",
+      "aka": "Venice Island Venice Beach",
+      "region": "Sarasota \u00b7 Manatee",
+      "coast": "gulf",
+      "lat": 27.097,
+      "lon": -82.458,
+      "tier": 3,
+      "price": "$384K median on the mainland, $550K on the island",
+      "vibes": [
+        "walk"
+      ],
+      "airport": "Sarasota Bradenton (SRQ), about 35 to 40 minutes",
+      "season": "Busy winters",
+      "watch": "Storm surge on the island and near the water",
+      "blurb": "A 1920s planned town of palm lined avenues you can walk from downtown to the Gulf, with newer mainland neighborhoods and the Legacy Trail just over the bridge.",
+      "day": "You hunt for shark teeth on the beach, walk Venice Avenue for lunch and watch the sunset from the jetty.",
+      "todo": [
+        [
+          "Venice Avenue",
+          "A palm lined main street of shops and restaurants that ends at the beach."
+        ],
+        [
+          "The Legacy Trail",
+          "A paved rail trail of about 18 miles running north to Sarasota."
+        ]
+      ],
+      "pros": [
+        "Walkable from downtown to the beach",
+        "Charming historic streets",
+        "More home for the money on the mainland side",
+        "Great bike trails"
+      ],
+      "cons": [
+        "Quiet at night",
+        "The island costs more than the mainland",
+        "From mainland neighborhoods you drive to the beach"
+      ],
+      "x": 152.60166430066968,
+      "y": 344.47488293572377,
+      "area_id": "sarasota-bradenton",
+      "area_name": "Sarasota, Bradenton and Venice",
+      "source_url": "https://www.floridacoastal.co/towns/venice.html",
+      "nearest_town_km": 18.242444782778573
+    }
+  ],
+  "bounds": [
+    -82.85000000000001,
+    26.842,
+    -82.23299999999999,
+    27.650000000000002
+  ]
+}

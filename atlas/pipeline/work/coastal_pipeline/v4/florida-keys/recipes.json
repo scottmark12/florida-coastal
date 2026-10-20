@@ -1,0 +1,47 @@
+{
+  "recipes": {
+    "key-largo": {
+      "walls": [
+        "#ece5ce",
+        "#c1daca",
+        "#d2e5de"
+      ],
+      "roofs": [
+        "#b8c9be",
+        "#d2dccf"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://visitfloridakeys.com/plan-your-trip/plan-book/insiders-guide/key-west-architecture-treasures-tour"
+    },
+    "islamorada": {
+      "walls": [
+        "#f6e3b8",
+        "#f0d2bc",
+        "#d3e3cb"
+      ],
+      "roofs": [
+        "#c5d1c2",
+        "#a9c0af"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://visitfloridakeys.com/plan-your-trip/plan-book/insiders-guide/key-west-architecture-treasures-tour"
+    },
+    "keywest": {
+      "walls": [
+        "#fff3d9",
+        "#cbe4d2",
+        "#f5c9c0",
+        "#e3d9ed"
+      ],
+      "roofs": [
+        "#a6bfac",
+        "#c4d3c8"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://visitfloridakeys.com/plan-your-trip/plan-book/insiders-guide/key-west-architecture-treasures-tour"
+    }
+  }
+}

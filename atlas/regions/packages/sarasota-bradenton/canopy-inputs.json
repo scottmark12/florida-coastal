@@ -1,0 +1,225 @@
+{
+  "canopy": {
+    "path": "work/coastal_pipeline/v4/sarasota-bradenton/forest-cover.json",
+    "source": "https://gis.myfwc.com/hosting/rest/services/Open_Data/Cooperative_Land_Cover/MapServer/1",
+    "description": "Florida FWC Cooperative Land Cover: mapped forest and forested wetland classes only."
+  },
+  "canopyRasters": [
+    {
+      "path": "work/coastal_pipeline/v4/sarasota-bradenton/ami-center-worldcover-2021.png",
+      "bounds": [
+        -82.743,
+        27.49025,
+        -82.695,
+        27.53825
+      ],
+      "canopyRGB": [
+        38,
+        115,
+        0
+      ],
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+      "surveyYear": 2021,
+      "district": "ami-center",
+      "license": "CC BY 4.0",
+      "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+      "classes": [
+        10,
+        95
+      ],
+      "resolutionMeters": 10
+    },
+    {
+      "path": "work/coastal_pipeline/v4/sarasota-bradenton/longboat-center-worldcover-2021.png",
+      "bounds": [
+        -82.683,
+        27.388583333333333,
+        -82.635,
+        27.436583333333335
+      ],
+      "canopyRGB": [
+        38,
+        115,
+        0
+      ],
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+      "surveyYear": 2021,
+      "district": "longboat-center",
+      "license": "CC BY 4.0",
+      "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+      "classes": [
+        10,
+        95
+      ],
+      "resolutionMeters": 10
+    },
+    {
+      "path": "work/coastal_pipeline/v4/sarasota-bradenton/bradenton-center-worldcover-2021.png",
+      "bounds": [
+        -82.59883333333333,
+        27.475,
+        -82.55083333333333,
+        27.523
+      ],
+      "canopyRGB": [
+        38,
+        115,
+        0
+      ],
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+      "surveyYear": 2021,
+      "district": "bradenton-center",
+      "license": "CC BY 4.0",
+      "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+      "classes": [
+        10,
+        95
+      ],
+      "resolutionMeters": 10
+    },
+    {
+      "path": "work/coastal_pipeline/v4/sarasota-bradenton/bradenton-beach-center-worldcover-2021.png",
+      "bounds": [
+        -82.72358333333334,
+        27.44425,
+        -82.67558333333334,
+        27.49225
+      ],
+      "canopyRGB": [
+        38,
+        115,
+        0
+      ],
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+      "surveyYear": 2021,
+      "district": "bradenton-beach-center",
+      "license": "CC BY 4.0",
+      "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+      "classes": [
+        10,
+        95
+      ],
+      "resolutionMeters": 10
+    },
+    {
+      "path": "work/coastal_pipeline/v4/sarasota-bradenton/cortez-center-worldcover-2021.png",
+      "bounds": [
+        -82.71025,
+        27.44525,
+        -82.66225,
+        27.49325
+      ],
+      "canopyRGB": [
+        38,
+        115,
+        0
+      ],
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+      "surveyYear": 2021,
+      "district": "cortez-center",
+      "license": "CC BY 4.0",
+      "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+      "classes": [
+        10,
+        95
+      ],
+      "resolutionMeters": 10
+    },
+    {
+      "path": "work/coastal_pipeline/v4/sarasota-bradenton/englewood-center-worldcover-2021.png",
+      "bounds": [
+        -82.37666666666667,
+        26.938,
+        -82.32866666666666,
+        26.986
+      ],
+      "canopyRGB": [
+        38,
+        115,
+        0
+      ],
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W084_Map.tif",
+      "surveyYear": 2021,
+      "district": "englewood-center",
+      "license": "CC BY 4.0",
+      "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+      "classes": [
+        10,
+        95
+      ],
+      "resolutionMeters": 10
+    },
+    {
+      "path": "work/coastal_pipeline/v4/sarasota-bradenton/sarasota-center-worldcover-2021.png",
+      "bounds": [
+        -82.55491666666667,
+        27.312583333333333,
+        -82.50691666666667,
+        27.360583333333334
+      ],
+      "canopyRGB": [
+        38,
+        115,
+        0
+      ],
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+      "surveyYear": 2021,
+      "district": "sarasota-center",
+      "license": "CC BY 4.0",
+      "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+      "classes": [
+        10,
+        95
+      ],
+      "resolutionMeters": 10
+    },
+    {
+      "path": "work/coastal_pipeline/v4/sarasota-bradenton/siesta-key-center-worldcover-2021.png",
+      "bounds": [
+        -82.58833333333334,
+        27.25225,
+        -82.54033333333334,
+        27.30025
+      ],
+      "canopyRGB": [
+        38,
+        115,
+        0
+      ],
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+      "surveyYear": 2021,
+      "district": "siesta-key-center",
+      "license": "CC BY 4.0",
+      "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+      "classes": [
+        10,
+        95
+      ],
+      "resolutionMeters": 10
+    },
+    {
+      "path": "work/coastal_pipeline/v4/sarasota-bradenton/venice-center-worldcover-2021.png",
+      "bounds": [
+        -82.46833333333333,
+        27.075833333333335,
+        -82.42033333333333,
+        27.123833333333334
+      ],
+      "canopyRGB": [
+        38,
+        115,
+        0
+      ],
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+      "surveyYear": 2021,
+      "district": "venice-center",
+      "license": "CC BY 4.0",
+      "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+      "classes": [
+        10,
+        95
+      ],
+      "resolutionMeters": 10
+    }
+  ]
+}

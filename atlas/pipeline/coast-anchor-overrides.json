@@ -1,0 +1,6 @@
+{
+  "perdido-key": {"type":"node","id":153522537,"meaning":"Johnsons Beach locality: representative point on Perdido Key, not a municipal center"},
+  "gulf-breeze": {"type":"way","id":835845728,"meaning":"Woodland Park: representative neighborhood reference inside Gulf Breeze, not a municipal center"},
+  "navarre-beach": {"type":"way","id":561157915,"meaning":"Navarre Beach Park: representative waterfront reference, not a municipal center"},
+  "okaloosa-island": {"type":"way","id":1456497356,"meaning":"Okaloosa Island Boat Basin: representative waterfront reference, not an island centroid"}
+}

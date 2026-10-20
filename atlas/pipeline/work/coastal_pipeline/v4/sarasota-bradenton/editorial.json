@@ -1,0 +1,191 @@
+{
+  "prices": {
+    "sarasota": [
+      560000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/sarasota-county/sarasota"
+    ],
+    "bradenton": [
+      400000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/manatee-county/bradenton"
+    ],
+    "bradenton-beach": [
+      1190000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/manatee-county/bradenton-beach"
+    ],
+    "cortez": [
+      549000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/manatee-county/cortez"
+    ],
+    "ami": [
+      3660000,
+      "Anna Maria city median listing price (north island)",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/manatee-county/anna-maria"
+    ],
+    "siesta-key": [
+      1099000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/sarasota-county/siesta-key"
+    ],
+    "englewood": [
+      399367,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/sarasota-county/englewood"
+    ],
+    "venice": [
+      399000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/sarasota-county/venice"
+    ],
+    "longboat": [
+      1050000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/sarasota-county/longboat-key"
+    ]
+  },
+  "recipes": {
+    "sarasota": {
+      "walls": [
+        "#f2eddf",
+        "#b7d4cf",
+        "#c8d8d9"
+      ],
+      "roofs": [
+        "#f7f5e9",
+        "#abb9b4"
+      ],
+      "roof": "flat",
+      "detail": "glass-bands",
+      "source": "https://www.visitsarasota.com/article/then-and-now-architecture-glance-sarasota-county"
+    },
+    "bradenton": {
+      "walls": [
+        "#dfb88f",
+        "#ecd5b5",
+        "#d0d8bd"
+      ],
+      "roofs": [
+        "#b39780",
+        "#b8b4a4"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://annamariaislandchamber.org/wp-content/uploads/AMI26_VisitorsGuidebook_WEB.pdf"
+    },
+    "bradenton-beach": {
+      "walls": [
+        "#f2ccbd",
+        "#d7e5ca",
+        "#c7e1dc"
+      ],
+      "roofs": [
+        "#d3d9d0",
+        "#aebeb1"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://annamariaislandchamber.org/wp-content/uploads/AMI26_VisitorsGuidebook_WEB.pdf"
+    },
+    "cortez": {
+      "walls": [
+        "#c8bda3",
+        "#d8dfc6",
+        "#ebe0c4"
+      ],
+      "roofs": [
+        "#a9b7ae",
+        "#c1c8ba"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://annamariaislandchamber.org/wp-content/uploads/AMI26_VisitorsGuidebook_WEB.pdf"
+    },
+    "ami": {
+      "walls": [
+        "#ffd9be",
+        "#c9e4d2",
+        "#f5e6b1",
+        "#d8e7e5"
+      ],
+      "roofs": [
+        "#c7d4ce",
+        "#e5e6da"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://annamariaislandchamber.org/wp-content/uploads/AMI26_VisitorsGuidebook_WEB.pdf"
+    },
+    "longboat": {
+      "walls": [
+        "#f0e2cb",
+        "#f7f0df",
+        "#bed8d3"
+      ],
+      "roofs": [
+        "#cfb39a",
+        "#e6e8db"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitsarasota.com/article/then-and-now-architecture-glance-sarasota-county"
+    },
+    "siesta-key": {
+      "walls": [
+        "#d9e5ce",
+        "#f3ddba",
+        "#c6e0dc"
+      ],
+      "roofs": [
+        "#d5dcd4",
+        "#b3c1b5"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitsarasota.com/article/then-and-now-architecture-glance-sarasota-county"
+    },
+    "venice": {
+      "walls": [
+        "#f0d6bb",
+        "#eac2a8",
+        "#f6e7cc"
+      ],
+      "roofs": [
+        "#b98268",
+        "#c49375"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://www.visitsarasota.com/article/then-and-now-architecture-glance-sarasota-county"
+    },
+    "englewood": {
+      "walls": [
+        "#d3dbc1",
+        "#e9d4ad",
+        "#c5d9d0"
+      ],
+      "roofs": [
+        "#b7c5bb",
+        "#aab7ac"
+      ],
+      "roof": "gable",
+      "detail": "porches",
+      "source": "https://www.visitsarasota.com/article/then-and-now-architecture-glance-sarasota-county"
+    }
+  },
+  "manual_fixes": [
+    "Anna Maria Island card uses the Anna Maria city median and representative place anchor; it does not claim that median covers Holmes Beach or the entire island.",
+    "Districts use mapped town place-label anchors; recipe colors are an editorial interpretation of cited local architectural references."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "steinhatchee": [
+    427450,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/taylor-county/steinhatchee"
+  ],
+  "cedarkey": [
+    387000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/levy-county/cedar-key"
+  ],
+  "crystal-river": [
+    325000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/citrus-county/crystal-river"
+  ],
+  "homosassa": [
+    358275,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/citrus-county/homosassa"
+  ],
+  "ozello": [
+    335000.0,
+    "sample median asking price of 16 residential listings",
+    "checked October 17, 2026",
+    "https://www.zillow.com/ozello-crystal-river-fl/"
+  ]
+}

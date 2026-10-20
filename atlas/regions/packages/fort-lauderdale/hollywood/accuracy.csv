@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Hollywood,384.770751953125,228.99940490722656,-80.1494899796422,26.01120136965855,-80.1494901,26.0112014,0.0125,https://www.openstreetmap.org/node/154090920,Representative OSM town place-label anchor: Hollywood

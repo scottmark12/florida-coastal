@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Ormond-by-the-Sea,284.3457946777344,597.0030517578125,-81.06644537159006,29.349144908157,-81.0664455,29.3491449,0.0125,https://www.openstreetmap.org/node/154310246,Representative OSM town place-label anchor: Ormond-by-the-Sea

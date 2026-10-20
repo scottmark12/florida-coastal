@@ -1,0 +1,9 @@
+{
+  "features": [],
+  "input_adaptations": [
+    "City-specific package requested by user; other cities in the parent region remain unchanged.",
+    "Vectorized the exact ESA 10m tree-class cells because this water-dominated barrier island has only 0.17% canopy in the full raster window; no new trees or density fallback added.",
+    "Mapped the OSM pier walking-deck line into the existing elevated footway input, retaining its original coordinates.",
+    "Added a sourced water-tower height and a stylized tank-and-stem profile using existing landmark recipe support."
+  ]
+}

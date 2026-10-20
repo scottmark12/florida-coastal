@@ -1,0 +1,13 @@
+#map,.thirty-region #map{position:fixed!important;inset:0!important;width:100vw!important;height:100vh!important;bottom:0!important;top:0!important}
+#map canvas{display:block;width:100%!important;height:100%!important}
+.thirty-region .district-label{transform:translate(-50%,-50%);width:auto;height:auto;min-height:21px;padding:3px 7px;max-width:none;white-space:nowrap;border:0;border-radius:9px;background:#fff9e8ed;color:#536049;font:11px/1.1 Georgia,serif;box-shadow:0 1px 3px #716d4720;filter:none}
+.district-anchor{position:absolute;transform:translate(-50%,-81.1764705882%);width:42px;height:29.75px;padding:0;margin:0;background:none;border:0;cursor:pointer;pointer-events:auto;z-index:1}
+.district-anchor svg{width:100%;height:100%;display:block;pointer-events:none}
+.district-anchor.coast-dot{width:18px;height:18px;transform:translate(-50%,-50%);border-radius:50%;background:none}
+.district-anchor.coast-dot:after{content:'';position:absolute;left:5px;top:5px;width:8px;height:8px;border:1.5px solid #fff9e5;border-radius:50%;background:#aa5e36;box-shadow:0 1px 3px #5d71544a;box-sizing:border-box}
+.district-anchor.coast-dot svg{display:none}
+#leaders{z-index:1;pointer-events:none}#labels{z-index:2}header,#controls{z-index:3}
+@media(max-width:699px){.thirty-region #controls{bottom:32px;max-height:29vh}.thirty-region .district-label{font-size:10px}.thirty-region header{max-width:calc(100vw - 40px)}}
+
+#controls-slim{display:none}
+@media(max-width:699px){body.card-open #controls{bottom:32px!important;top:auto!important;left:10px;right:10px;width:auto;height:42px;max-height:42px!important;padding:0;overflow:hidden}body.card-open #controls>*{display:none!important}body.card-open #controls>#controls-slim{display:block!important;width:100%;height:42px;text-align:left;padding:8px 14px;border:0}body.card-open #card{bottom:84px;left:10px;right:10px;width:auto;max-height:235px;overflow:auto;padding:14px}body.card-open #card h2{margin-bottom:5px}body.card-open #card-copy{font-size:12px;line-height:1.4;margin:7px 0}body.card-open #card-price{font-size:10px;margin:6px 0;padding-top:6px}}

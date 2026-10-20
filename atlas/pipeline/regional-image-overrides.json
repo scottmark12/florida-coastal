@@ -1,0 +1,84 @@
+{
+  "tampa-bay": {
+    "file": "images/sarasota-bradenton.webp",
+    "width": 3072,
+    "height": 3072,
+    "camera": {
+      "bottom": -117.04722135863386,
+      "far": 1170.4722135863385,
+      "left": -117.04722135863386,
+      "mapUnits": "kilometers",
+      "near": 11.704722135863388,
+      "position": [
+        144.55364443164265,
+        292.6180533965846,
+        -97.91481233717168
+      ],
+      "projection": "orthographic",
+      "right": 117.04722135863386,
+      "target": [
+        144.55364443164265,
+        0,
+        -390.5328657337563
+      ],
+      "tiltDegrees": 45,
+      "top": 117.04722135863386
+    },
+    "bytes": 363284,
+    "revision": "593fb00f68d55c09",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0",
+    "reference": "Approved Sarasota and Bradenton regional capture",
+    "presentation": "approved-source",
+    "waterColor": "#3593ae"
+  },
+  "fort-myers-sanibel": {
+    "file": "images/fort-myers-sanibel.webp",
+    "width": 2304,
+    "height": 2331,
+    "camera": {
+      "target": [
+        209.68672197078283,
+        0,
+        -303.3652488344336
+      ],
+      "left": -76.00789791590407,
+      "right": 76.00789791590407,
+      "top": 76.90659916532368,
+      "bottom": -76.90659916532368,
+      "tiltDegrees": 45,
+      "projection": "orthographic",
+      "mapUnits": "kilometers"
+    },
+    "bytes": 447072,
+    "revision": "0775546f7e1d2f24",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+    "styleReference": "Approved Sarasota and Bradenton regional illustration",
+    "waterColor": "#71adbd",
+    "layers": [
+      {
+        "file": "images/naples-marco.webp",
+        "width": 2304,
+        "height": 3072,
+        "camera": {
+          "target": [
+            260.34461778321713,
+            0,
+            -228.46179795409483
+          ],
+          "left": -60.56521297806229,
+          "right": 60.56521297806229,
+          "top": 80.75361730408308,
+          "bottom": -80.75361730408308,
+          "tiltDegrees": 45,
+          "projection": "orthographic",
+          "mapUnits": "kilometers"
+        },
+        "bytes": 384488,
+        "revision": "a02e76c6c3376a3d",
+        "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+        "styleReference": "Approved Sarasota and Bradenton regional illustration",
+        "waterColor": "#71adbd"
+      }
+    ]
+  }
+}

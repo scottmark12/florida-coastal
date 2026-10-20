@@ -1,0 +1,27 @@
+{
+  "region": "treasure-coast/palm-city",
+  "building_count": 5739,
+  "tree_count": 82554,
+  "region_bytes": 138864,
+  "max_tile_bytes": 387886,
+  "max_anchor_error_m": 0.0095,
+  "max_coast_float32_error_m": 0.021217166832371404,
+  "height_sources": {
+    "assumed-house": 4641,
+    "estimated-nonresidential": 1005,
+    "estimated-type-footprint": 21,
+    "height": 1,
+    "levels": 71
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+  "exported_boundary_source_error_m": 5.754216953161477,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

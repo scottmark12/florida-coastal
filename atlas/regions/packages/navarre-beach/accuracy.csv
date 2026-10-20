@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Navarre Beach,-274.12841796875,711.5453491210938,-86.8555411049778,30.382812257764744,-86.8555410285035,30.382812465795578,0.0242,https://www.openstreetmap.org/way/561157915,"Navarre Beach Park: representative waterfront reference, not a municipal center"

@@ -1,0 +1,159 @@
+{
+  "recipes": {
+    "okaloosa-island": {
+      "walls": [
+        "#fffbed",
+        "#efc5b7",
+        "#cbdfe9",
+        "#f4e8bf"
+      ],
+      "roofs": [
+        "#c6d4d2",
+        "#d8ded7",
+        "#9eafb0"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.destinfwb.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "Beachfront resort blocks, white sand and the fishing pier across the sound from downtown."
+    },
+    "beach-houses": {
+      "walls": [
+        "#fffbed",
+        "#efc5b7",
+        "#cbdfe9",
+        "#f4e8bf"
+      ],
+      "roofs": [
+        "#c6d4d2",
+        "#d8ded7",
+        "#9eafb0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.destinfwb.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "Beachfront resort blocks, white sand and the fishing pier across the sound from downtown."
+    },
+    "four-points-resort": {
+      "walls": [
+        "#fff8e8",
+        "#d6e3df"
+      ],
+      "roofs": [
+        "#b9caca",
+        "#d4dbd4"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.marriott.com/en-us/hotels/vpsfp-four-points-destin-fort-walton-beach/overview/"
+    },
+    "waterscape-resort": {
+      "walls": [
+        "#dbc3a7",
+        "#e8d7bd"
+      ],
+      "roofs": [
+        "#adbcb7"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.homes.com/building/waterscape-condominiums-fort-walton-beach-fl/b-2j33348hwssgb/"
+    }
+  },
+  "coastalHeightZones": [
+    [
+      -86.65899999999999,
+      30.341,
+      -86.529,
+      30.451
+    ]
+  ],
+  "towerRecipe": "okaloosa-island",
+  "styleZones": [
+    {
+      "bounds": [
+        -86.65899999999999,
+        30.341,
+        -86.529,
+        30.451
+      ],
+      "recipe": "beach-houses"
+    }
+  ],
+  "landmarks": {
+    "way/550565521": {
+      "illustratedRealHeightMeters": 18,
+      "recipe": "waterscape-resort",
+      "source": "https://www.homes.com/building/waterscape-condominiums-fort-walton-beach-fl/b-2j33348hwssgb/",
+      "note": "Published six-storey complex; existing 3 m/storey illustration convention, not a surveyed roof height."
+    },
+    "way/758291058": {
+      "illustratedRealHeightMeters": 3,
+      "recipe": "four-points-resort",
+      "source": "https://www.tripadvisor.co.uk/FAQ_Answers-g34234-d84552-t3657255-Does_this_property_have_interior_corridors_Are.html",
+      "note": "Hotel representative describes six-floor south building and two-floor east/west wings. Existing 3 m/storey illustration convention; ancillary structures use one-storey estimates, not surveyed heights."
+    },
+    "way/758291059": {
+      "illustratedRealHeightMeters": 6,
+      "recipe": "four-points-resort",
+      "source": "https://www.tripadvisor.co.uk/FAQ_Answers-g34234-d84552-t3657255-Does_this_property_have_interior_corridors_Are.html",
+      "note": "Hotel representative describes six-floor south building and two-floor east/west wings. Existing 3 m/storey illustration convention; ancillary structures use one-storey estimates, not surveyed heights."
+    },
+    "way/758291061": {
+      "illustratedRealHeightMeters": 6,
+      "recipe": "four-points-resort",
+      "source": "https://www.tripadvisor.co.uk/FAQ_Answers-g34234-d84552-t3657255-Does_this_property_have_interior_corridors_Are.html",
+      "note": "Hotel representative describes six-floor south building and two-floor east/west wings. Existing 3 m/storey illustration convention; ancillary structures use one-storey estimates, not surveyed heights."
+    },
+    "way/758291062": {
+      "illustratedRealHeightMeters": 6,
+      "recipe": "four-points-resort",
+      "source": "https://www.tripadvisor.co.uk/FAQ_Answers-g34234-d84552-t3657255-Does_this_property_have_interior_corridors_Are.html",
+      "note": "Hotel representative describes six-floor south building and two-floor east/west wings. Existing 3 m/storey illustration convention; ancillary structures use one-storey estimates, not surveyed heights."
+    },
+    "way/758291064": {
+      "illustratedRealHeightMeters": 3,
+      "recipe": "four-points-resort",
+      "source": "https://www.tripadvisor.co.uk/FAQ_Answers-g34234-d84552-t3657255-Does_this_property_have_interior_corridors_Are.html",
+      "note": "Hotel representative describes six-floor south building and two-floor east/west wings. Existing 3 m/storey illustration convention; ancillary structures use one-storey estimates, not surveyed heights."
+    },
+    "way/758291065": {
+      "illustratedRealHeightMeters": 3,
+      "recipe": "four-points-resort",
+      "source": "https://www.tripadvisor.co.uk/FAQ_Answers-g34234-d84552-t3657255-Does_this_property_have_interior_corridors_Are.html",
+      "note": "Hotel representative describes six-floor south building and two-floor east/west wings. Existing 3 m/storey illustration convention; ancillary structures use one-storey estimates, not surveyed heights."
+    },
+    "way/758291066": {
+      "illustratedRealHeightMeters": 6,
+      "recipe": "four-points-resort",
+      "source": "https://www.tripadvisor.co.uk/FAQ_Answers-g34234-d84552-t3657255-Does_this_property_have_interior_corridors_Are.html",
+      "note": "Hotel representative describes six-floor south building and two-floor east/west wings. Existing 3 m/storey illustration convention; ancillary structures use one-storey estimates, not surveyed heights."
+    },
+    "way/758291067": {
+      "illustratedRealHeightMeters": 6,
+      "recipe": "four-points-resort",
+      "source": "https://www.tripadvisor.co.uk/FAQ_Answers-g34234-d84552-t3657255-Does_this_property_have_interior_corridors_Are.html",
+      "note": "Hotel representative describes six-floor south building and two-floor east/west wings. Existing 3 m/storey illustration convention; ancillary structures use one-storey estimates, not surveyed heights."
+    },
+    "way/758291068": {
+      "illustratedRealHeightMeters": 3,
+      "recipe": "four-points-resort",
+      "source": "https://www.tripadvisor.co.uk/FAQ_Answers-g34234-d84552-t3657255-Does_this_property_have_interior_corridors_Are.html",
+      "note": "Hotel representative describes six-floor south building and two-floor east/west wings. Existing 3 m/storey illustration convention; ancillary structures use one-storey estimates, not surveyed heights."
+    },
+    "way/758291070": {
+      "illustratedRealHeightMeters": 18,
+      "recipe": "four-points-resort",
+      "source": "https://www.tripadvisor.co.uk/FAQ_Answers-g34234-d84552-t3657255-Does_this_property_have_interior_corridors_Are.html",
+      "note": "Hotel representative describes six-floor south building and two-floor east/west wings. Existing 3 m/storey illustration convention; ancillary structures use one-storey estimates, not surveyed heights."
+    }
+  }
+}

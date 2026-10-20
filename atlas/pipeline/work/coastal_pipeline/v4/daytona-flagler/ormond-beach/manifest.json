@@ -1,0 +1,97 @@
+{
+  "id": "daytona-flagler/ormond-beach",
+  "name": "Ormond Beach",
+  "towns": [
+    "ormond-beach"
+  ],
+  "bounds": [
+    -81.101,
+    29.246000000000002,
+    -81.011,
+    29.326
+  ],
+  "recipes": "work/coastal_pipeline/v4/daytona-flagler/recipes.json",
+  "camera": {
+    "center": [
+      285.5471518778846,
+      589.9529684393832
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "ormond-beach-center": "ormond-beach"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Curated real waterfront hero cameras; place-label coordinates remain the district source anchors.",
+    "Flagler Beach pier is under reconstruction: mapped pier geometry is not a statement that the pier is open. See https://www.cityofflaglerbeach.com/334/Downtown-City-Projects.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/daytona-flagler/geography.json.gz",
+      "work/coastal_pipeline/v4/daytona-flagler/cover.json.gz",
+      "work/coastal_pipeline/v4/daytona-flagler/district-ormond-beach.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/daytona-flagler/districts.json",
+    "prices": "work/coastal_pipeline/v4/daytona-flagler/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/ormond-beach/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/ormond-beach/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/ormond-beach/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/ormond-beach/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/ormond-beach/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/daytona-flagler/ormond-beach-center-worldcover-2021.png",
+        "bounds": [
+          -81.07983333333334,
+          29.261416666666666,
+          -81.03183333333334,
+          29.309416666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "ormond-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  }
+}

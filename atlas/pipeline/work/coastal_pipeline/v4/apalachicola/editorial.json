@@ -1,0 +1,43 @@
+{
+  "prices": {
+    "apalachicola": [
+      442000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/franklin-county/apalachicola"
+    ]
+  },
+  "recipes": {
+    "apalachicola": {
+      "walls": [
+        "#e8d5b4",
+        "#d4dfce",
+        "#e9c8b2",
+        "#f0e3cb"
+      ],
+      "roofs": [
+        "#a0aca5",
+        "#bcc7bf",
+        "#a38975"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridasforgottencoast.com/business/apalachicola-historic-district/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f8efdc",
+        "#d4c2a4"
+      ],
+      "canopy": "live-oak"
+    }
+  },
+  "manual_fixes": [
+    "Town-specific package using the shared locked pipeline; facade colors are editorial interpretations, not a surveyed color inventory."
+  ],
+  "priceEvidence": {
+    "apalachicola": {
+      "checked": "2026-10-19",
+      "geographicScope": "Published town-wide market median; not a neighborhood valuation."
+    }
+  }
+}

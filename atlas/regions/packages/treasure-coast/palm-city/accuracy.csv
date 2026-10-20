@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Palm City,369.1296691894531,357.0343933105469,-80.26714409633973,27.168385494739393,-80.267144,27.1683855,0.0095,https://www.openstreetmap.org/node/154183414,Representative OSM place-label anchor: Old Palm City

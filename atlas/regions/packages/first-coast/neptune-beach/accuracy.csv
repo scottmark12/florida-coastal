@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Neptune Beach,250.10523986816406,703.142333984375,-81.39647336268955,30.31190808043785,-81.3964734,30.311908,0.0096,https://www.openstreetmap.org/node/154213571,Representative OSM town place-label anchor: Neptune Beach

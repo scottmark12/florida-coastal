@@ -1,0 +1,29 @@
+[
+  {
+    "town": "north-redington-beach",
+    "id": "north-redington-beach-center",
+    "name": "North Redington Beach",
+    "kind": "beach",
+    "description": "A compact beach resort strip with white condos, small hotels and sheltered residential waterfront streets.",
+    "style": "north-redington-beach",
+    "lon": -82.8206587,
+    "lat": 27.8161361,
+    "x": 115.94925809825943,
+    "y": 423.93124856241485,
+    "positionSource": "https://www.openstreetmap.org/node/154304050",
+    "centerMeaning": "Representative OSM town place-label anchor: North Redington Beach",
+    "priceRange": "$1,190,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/north-redington-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1190000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/north-redington-beach",
+      "activeListings": 23
+    },
+    "source": "https://www.visitstpeteclearwater.com/communities/north-redington-beach-redington-shores",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

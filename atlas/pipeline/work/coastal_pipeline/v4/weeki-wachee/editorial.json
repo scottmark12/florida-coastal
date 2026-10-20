@@ -1,0 +1,38 @@
+{
+  "prices": {
+    "weeki-wachee": [
+      387187,
+      "median listing price",
+      "October 2026",
+      "https://www.realtor.com/local/market/florida/hernando-county/weeki-wachee"
+    ]
+  },
+  "recipes": {
+    "weeki-wachee": {
+      "walls": [
+        "#cdb79b",
+        "#bad4ca",
+        "#c4dcdf",
+        "#ebdfc5"
+      ],
+      "roofs": [
+        "#a6b8b1",
+        "#c3ccc8",
+        "#9ba7a0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://floridasadventurecoast.com/",
+      "trim": [
+        "#f6efdc",
+        "#acc4b5"
+      ],
+      "character": "Spring-fed river, wooded neighborhoods and small waterfront homes along the river toward the Gulf."
+    }
+  },
+  "manual_fixes": [
+    "Town palette and waterfront hero curated from regional visitor references; facade color is editorial, not surveyed.",
+    "Published prices retain their actual metric and period; thin markets are explicitly labeled.",
+    "Four communities without named OSM place nodes use explicitly documented OSM locality or park reference anchors; these are not claimed as municipal centers."
+  ]
+}

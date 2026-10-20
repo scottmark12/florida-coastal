@@ -1,0 +1,27 @@
+{
+  "recipes": {
+    "cedarkey": {
+      "walls": [
+        "#d6c3a5",
+        "#b4c9c3",
+        "#e5b8a8",
+        "#d7d9cd",
+        "#f2e7ca"
+      ],
+      "roofs": [
+        "#b9c9c8",
+        "#a4aaa0",
+        "#a77966"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridacoastal.co/towns/cedarkey.html",
+      "character": "Compact island cottages and weathered Dock Street fish-house buildings, clustered beside tidal keys and marsh.",
+      "trim": [
+        "#f7eed9",
+        "#b3cbbd"
+      ]
+    }
+  },
+  "coastalHeightZones": []
+}

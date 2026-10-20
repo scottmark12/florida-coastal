@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Redington Beach,116.88583374023438,423.1073303222656,-82.81121398941107,27.808636316936063,-82.811214,27.8086364,0.0093,https://www.openstreetmap.org/node/154183454,Representative OSM town place-label anchor: Redington Beach

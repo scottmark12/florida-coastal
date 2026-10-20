@@ -1,0 +1,58 @@
+{
+  "towns": [
+    {
+      "id": "mexico-beach",
+      "name": "Mexico Beach",
+      "region": "Forgotten Coast",
+      "coast": "panhandle",
+      "lat": 29.948,
+      "lon": -85.417,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "beach",
+        "oldfl",
+        "boating"
+      ],
+      "airport": "Northwest Florida Beaches (ECP)",
+      "season": "Busier in summer",
+      "watch": "Storm exposure; rebuilding and new homes sit alongside older beach cottages.",
+      "blurb": "A low-rise Gulf beach town with pastel cottages, public white-sand beaches and a fishing canal at its west end.",
+      "day": "Walk to the beach, launch a fishing boat from the canal, and return for sunset.",
+      "todo": [
+        [
+          "Mexico Beach Canal",
+          "Fishing boats and Gulf access."
+        ],
+        [
+          "Public beach",
+          "A long white-sand shoreline."
+        ]
+      ],
+      "pros": [
+        "Walk-to-beach neighborhoods",
+        "Small-town fishing character"
+      ],
+      "cons": [
+        "Storm exposure",
+        "Limited big-city services"
+      ],
+      "area_id": "forgotten-coast",
+      "area_name": "The Forgotten Coast",
+      "source_url": "https://mexicobeach.com/"
+    }
+  ],
+  "bounds": [
+    -85.46,
+    29.91,
+    -85.37,
+    30.0
+  ],
+  "region": {
+    "id": "mexico-beach",
+    "name": "Mexico Beach",
+    "towns": [
+      "mexico-beach"
+    ]
+  }
+}

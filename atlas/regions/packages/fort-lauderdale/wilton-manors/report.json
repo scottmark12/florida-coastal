@@ -1,0 +1,27 @@
+{
+  "region": "fort-lauderdale/wilton-manors",
+  "building_count": 15194,
+  "tree_count": 29068,
+  "region_bytes": 227906,
+  "max_tile_bytes": 156013,
+  "max_anchor_error_m": 0.0141,
+  "max_coast_float32_error_m": 0.016070328795571513,
+  "height_sources": {
+    "assumed-house": 426,
+    "estimated-nonresidential": 14625,
+    "estimated-type-footprint": 104,
+    "height": 1,
+    "levels": 38
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "Town view visually checked at desktop and 390 px phone width; no console errors",
+  "exported_boundary_source_error_m": 28.429287547779005,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

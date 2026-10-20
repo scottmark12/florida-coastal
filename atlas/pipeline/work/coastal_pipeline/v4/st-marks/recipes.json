@@ -1,0 +1,25 @@
+{
+  "recipes": {
+    "st-marks": {
+      "walls": [
+        "#d5c5a5",
+        "#b9ccc0",
+        "#eee0c7",
+        "#d4ae8c"
+      ],
+      "roofs": [
+        "#829c93",
+        "#bbc6ba"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridasforgottencoast.com/maritime-museum/brief-history-of-franklin-county/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f8efdc",
+        "#d4c2a4"
+      ],
+      "canopy": "live-oak"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "recipes": {
+    "steinhatchee": {
+      "walls": [
+        "#e8d9b9",
+        "#c2d1bc",
+        "#c9dfe0",
+        "#e4bca0",
+        "#eee9d8"
+      ],
+      "roofs": [
+        "#9faeaa",
+        "#c4cecb",
+        "#9b8c7c"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridacoastal.co/towns/steinhatchee.html",
+      "character": "Riverfront fishing camps, modest raised cottages and working marina sheds; open tidal river and docks.",
+      "trim": [
+        "#f7eed9",
+        "#b3cbbd"
+      ]
+    }
+  },
+  "coastalHeightZones": [],
+  "workingHarbors": [
+    {
+      "bounds": [
+        -83.3891,
+        29.668,
+        -83.3878,
+        29.6692
+      ],
+      "spacingMeters": 25,
+      "offsetMeters": 14,
+      "source": "https://www.openstreetmap.org/way/1112362744",
+      "note": "Illustrative riverfront berths at mapped marina frontage; individual occupancy is estimated."
+    },
+    {
+      "bounds": [
+        -83.3893,
+        29.6708,
+        -83.3881,
+        29.6717
+      ],
+      "spacingMeters": 25,
+      "offsetMeters": 14,
+      "source": "https://www.openstreetmap.org/way/1093602958",
+      "note": "Illustrative riverfront berths at mapped marina frontage; individual occupancy is estimated."
+    }
+  ]
+}
