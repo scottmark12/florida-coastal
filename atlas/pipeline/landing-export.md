@@ -13,3 +13,15 @@
 Use OSM height (including feet) first, then OSM building levels. Only a house with neither gets the 1–2 story default. Apartments, condos, hotels, resorts, and buildings of at least 1,500 m² within 300 m of a mapped beach get a clearly flagged area/type estimate when both are missing. The shared constants and exact estimate formula are in `work/coastal_pipeline/v4/rules.json`, under `scale.coastalBuildings`. Display height remains 3× real/estimated height, capped at 3× footprint width; house silhouettes retain their approved stricter cap.
 
 District recipes can restrict the area-based exception with `coastalHeightZones` (an empty list excludes bay-only frontage, as in Pensacola city). They may specify `towerRecipe`, which applies to qualifying resort/condo buildings while the surrounding houses retain their district recipe. Pensacola's historic red brick center, beach condo pastels, and Destin's fishing-village cottages are explicit recipes. Emerald/Forgotten shoreline washes use the existing wider green-turquoise bands, fading into deep blue; they illustrate water character rather than bathymetry.
+
+## Publish to the site walkthrough
+
+After checking the landing files, run `python sync_walkthrough.py` from any directory.
+It requires every catalog town to have two verified cameras and all four correctly
+sized images, copies the exports into the site's `img/atlas/` directory, rebuilds
+the walkthrough's landing catalog, and updates HTML references to a content-hashed
+runtime. It keeps the old runtime for cached pages. Review
+`landing/walkthrough-coverage.json` and `landing/walkthrough-review.html` before
+release. Missing imagery fails this step instead of silently shipping a regional
+map fallback. To capture newly added towns, use their saved `town-views.json` hero
+camera with `landing=1`; record the actual DOM camera and errors as in step 5 above.

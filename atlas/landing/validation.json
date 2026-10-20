@@ -1,7 +1,7 @@
 {
-  "town_count": 82,
-  "view_count": 164,
-  "image_count": 328,
+  "town_count": 167,
+  "view_count": 334,
+  "image_count": 668,
   "towns": [
     {
       "town_id": "30a",
@@ -1149,6 +1149,1196 @@
       "view": "street",
       "span_km": 2.2,
       "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "captiva",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "captiva",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "matlacha",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "matlacha",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "keywest",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "keywest",
+      "view": "street",
+      "span_km": 2.4,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "islamorada",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "islamorada",
+      "view": "street",
+      "span_km": 2.4,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ftl",
+      "view": "town",
+      "span_km": 8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ftl",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "delray",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "delray",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "jupiter",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "jupiter",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "fortpierce",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "fortpierce",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cocoa",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cocoa",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "nsb",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "nsb",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "daytona",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "daytona",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "flagler",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "flagler",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "staug",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "staug",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "jaxbeach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "jaxbeach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "fernandina",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "fernandina",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "bonita-springs",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "bonita-springs",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cape-coral",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cape-coral",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "fort-myers",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "fort-myers",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "fort-myers-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "fort-myers-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-charlotte",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-charlotte",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "punta-gorda",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "punta-gorda",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sanibel-island",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sanibel-island",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "key-largo",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "key-largo",
+      "view": "street",
+      "span_km": 2.4,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "bal-harbour",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "bal-harbour",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "boca-raton",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "boca-raton",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "dania-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "dania-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hallandale",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hallandale",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "highland-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "highland-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hollywood",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hollywood",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "lauderdale-by-the-sea",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "lauderdale-by-the-sea",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "lighthouse-point",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "lighthouse-point",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "north-miami-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "north-miami-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "north-palm-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "north-palm-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-beach-gardens",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-beach-gardens",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "riviera-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "riviera-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sunny-isles-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sunny-isles-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "west-palm-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "west-palm-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "wilton-manors",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "wilton-manors",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "jensen-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "jensen-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-st-lucie",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-st-lucie",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sebastian",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sebastian",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "stuart",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "stuart",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "vero-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "vero-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "indialantic",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "indialantic",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "melbourne-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "melbourne-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-bay",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-bay",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "satellite-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "satellite-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "titusville",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "titusville",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "west-melbourne",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "west-melbourne",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "atlantic-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "atlantic-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "neptune-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "neptune-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ponte-vedra-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ponte-vedra-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-augustine-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "st-augustine-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "daytona-beach-shores",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "daytona-beach-shores",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ormond-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ormond-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-coast",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-coast",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-orange",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-orange",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "south-daytona",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "south-daytona",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "boynton-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "boynton-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "lake-worth-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "lake-worth-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "juno-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "juno-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "tequesta",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "tequesta",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "lantana",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "lantana",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "lake-park",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "lake-park",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-beach-shores",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-beach-shores",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hobe-sound",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hobe-sound",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-salerno",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-salerno",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-city",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-city",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sewalls-point",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "sewalls-point",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "indian-river-shores",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "indian-river-shores",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hutchinson-island",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hutchinson-island",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "melbourne",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "melbourne",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cape-canaveral",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cape-canaveral",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "merritt-island",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "merritt-island",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "rockledge",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "rockledge",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cocoa-village",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "cocoa-village",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "indian-harbour-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "indian-harbour-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ponce-inlet",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ponce-inlet",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "edgewater",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "edgewater",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "holly-hill",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "holly-hill",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ormond-by-the-sea",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "ormond-by-the-sea",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "beverly-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "beverly-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "vilano-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "vilano-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "crescent-beach",
+      "view": "town",
+      "span_km": 5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "crescent-beach",
+      "view": "street",
+      "span_km": 2.8,
+      "callouts": 0,
       "checks": "passed"
     }
   ]
