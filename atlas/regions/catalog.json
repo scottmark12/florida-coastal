@@ -5219,17 +5219,17 @@
     {
       "id": "tampa-bay",
       "coast": "gulf",
-      "name": "Tampa Bay and the Gulf Beaches",
-      "map": "Tampa Bay",
+      "name": "Tampa Bay & Sarasota Coast",
+      "map": "Tampa Bay & Sarasota Coast",
       "at": [
-        27.95,
-        -82.6
+        27.65,
+        -82.55
       ],
       "side": "W",
       "img": "img/st-pete-beach.jpg",
       "pos": "30% center",
       "hpos": "center 50%",
-      "text": "Tampa and St. Petersburg share one bay, with waterfront downtowns, bayside neighborhoods and the Gulf beach towns of Pinellas.",
+      "text": "One continuous Gulf coast: Tampa and St. Petersburg around the bay, the Pinellas beaches, then Anna Maria, Bradenton, Sarasota and the barrier islands south through Englewood.",
       "towns": [
         "hudson",
         "port-richey",
@@ -5258,30 +5258,7 @@
         "gibsonton",
         "apollo-beach",
         "ruskin",
-        "sun-city-center"
-      ],
-      "center": [
-        139.18,
-        428.65
-      ],
-      "sourceRegions": [
-        "st-pete-clearwater",
-        "tampa-south-shore"
-      ]
-    },
-    {
-      "id": "sarasota-bradenton",
-      "coast": "gulf",
-      "name": "Sarasota, Bradenton and Venice",
-      "map": "Sarasota and Bradenton",
-      "at": [
-        27.28,
-        -82.68
-      ],
-      "side": "W",
-      "img": "img/bradenton-beach.jpg",
-      "text": "From the Manatee River down to Englewood, this stretch pairs an arts minded city with some of the Gulf's best known sand on Anna Maria Island, Longboat Key and Siesta Key. Venice adds a walkable island downtown.",
-      "towns": [
+        "sun-city-center",
         "bradenton",
         "bradenton-beach",
         "cortez",
@@ -5293,26 +5270,17 @@
         "englewood"
       ],
       "center": [
-        140.10735322180037,
-        371.03109972062214
+        145,
+        400
       ],
-      "contextTowns": [
-        "tampa",
-        "st-petersburg",
-        "oldsmar",
-        "safety-harbor",
-        "clearwater",
-        "gulfport",
-        "st-pete-beach",
-        "tierra-verde",
-        "gibsonton",
-        "apollo-beach",
-        "ruskin",
-        "sun-city-center"
+      "sourceRegions": [
+        "st-pete-clearwater",
+        "tampa-south-shore",
+        "sarasota-bradenton"
       ],
       "regionalExport": {
         "size": 3072,
-        "padding": 2.4
+        "padding": 3
       }
     },
     {

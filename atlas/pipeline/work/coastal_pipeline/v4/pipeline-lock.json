@@ -33,7 +33,8 @@
     "build_surrounding_context.py": "ae0b4836925240fe3619f4e626b06dc4041829a7cc38bc933c4707370aadf742",
     "finalize_region_images.py": "2ea278e0dfba5f5be852d87704606d12e16cb1f0374a08b214582cc877c456b1",
     "check_region_images.py": "19d8a412de4c49a6d9130f2494fe08e86180aee799e9591cdbf58c1035849502",
-    "regional-context.json": "d2349a0195f48cb1b2c98e8baa2b0368ea0857bbdbc9f345dad9746fc830cc0f"
+    "regional-context.json": "d2349a0195f48cb1b2c98e8baa2b0368ea0857bbdbc9f345dad9746fc830cc0f",
+    "prepare_combined_bay_image.py": "615bcdbabfd2f3c0c53b9c9e8aba4a398d5460b76ebe5011adf23e037412f6c3"
   },
   "change": "User-authorized two-level hero exports, OSM bridge decks/piers, and type/footprint height estimates for non-house buildings; existing explicit heights and scale caps retained. User-requested 30A lake navigation repair only: frame mapped lake bounds; no geometry, palette or scale-rule changes. User-requested Region presentation repair: use complete approved town roof/wall meshes and source-backed Tampa/Pinellas coverage instead of legacy regional icons. Town packages and the approved scale/style engine remain unchanged."
 }
