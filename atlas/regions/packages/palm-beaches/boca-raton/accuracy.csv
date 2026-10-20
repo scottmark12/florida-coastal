@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Boca Raton,390.1781005859375,267.75408935546875,-80.08309844240061,26.358688405145855,-80.0830984,26.3586885,0.0113,https://www.openstreetmap.org/node/154367991,Representative OSM town place-label anchor: Boca Raton

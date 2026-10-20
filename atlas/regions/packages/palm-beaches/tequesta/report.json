@@ -1,0 +1,27 @@
+{
+  "region": "palm-beaches/tequesta",
+  "building_count": 4997,
+  "tree_count": 104379,
+  "region_bytes": 129630,
+  "max_tile_bytes": 133787,
+  "max_anchor_error_m": 0.012,
+  "max_coast_float32_error_m": 0.020324872619819755,
+  "height_sources": {
+    "assumed-house": 17,
+    "estimated-nonresidential": 4953,
+    "estimated-type-footprint": 8,
+    "height": 1,
+    "levels": 18
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+  "exported_boundary_source_error_m": 53.044452642539575,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

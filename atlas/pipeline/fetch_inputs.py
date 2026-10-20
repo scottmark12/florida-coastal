@@ -15,6 +15,8 @@ def download(query):
  raise RuntimeError('OSM download failed; retry later. No fabricated fallback.')
 for filename in m['inputs']['osm']:
  path=Path(filename)
+ if id=='palm-beaches' and path.name.startswith('landmarks-') and not path.exists():
+  subprocess.run([sys.executable,'fetch_palm_landmarks.py'],check=True)
  if path.exists():continue
  if id=='weeki-wachee' and path.name=='coast-extension.json.gz':
   subprocess.run([sys.executable,'extend_weeki_coast.py'],check=True);continue

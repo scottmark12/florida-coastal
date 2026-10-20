@@ -1,0 +1,3 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Riviera Beach,390.46990966796875,315.0381164550781,-80.06502931322565,26.784342911620683,-80.0650293,26.784343,0.0099,https://www.openstreetmap.org/node/154335223,Representative OSM town place-label anchor: Riviera Beach
+Singer Island,393.1941223144531,315.205322265625,-80.03754069122625,26.78506262295093,-80.0375408,26.7850625,0.0174,https://www.openstreetmap.org/node/358706540,OSM Singer Island place-label anchor within the Riviera Beach town package.

@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Highland Beach,391.7762451171875,272.3394775390625,-80.06559776359947,26.399520453446037,-80.0655977,26.3995204,0.0087,https://www.openstreetmap.org/node/154074901,Representative OSM town place-label anchor: Highland Beach

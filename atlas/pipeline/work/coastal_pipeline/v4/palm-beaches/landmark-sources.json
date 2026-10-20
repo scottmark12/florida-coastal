@@ -1,0 +1,38 @@
+[
+  {
+    "town": "jupiter",
+    "source": "https://api.openstreetmap.org/api/0.6/map?bbox=-80.087,26.949,-80.077,26.956",
+    "bounds": [
+      -80.087,
+      26.949,
+      -80.077,
+      26.956
+    ],
+    "retrieved": "2026-10-20",
+    "license": "ODbL 1.0"
+  },
+  {
+    "town": "juno-beach",
+    "source": "https://api.openstreetmap.org/api/0.6/map?bbox=-80.062,26.888,-80.048,26.898",
+    "bounds": [
+      -80.062,
+      26.888,
+      -80.048,
+      26.898
+    ],
+    "retrieved": "2026-10-20",
+    "license": "ODbL 1.0"
+  },
+  {
+    "town": "lake-worth-beach",
+    "source": "https://api.openstreetmap.org/api/0.6/map?bbox=-80.038,26.607,-80.025,26.618",
+    "bounds": [
+      -80.038,
+      26.607,
+      -80.025,
+      26.618
+    ],
+    "retrieved": "2026-10-20",
+    "license": "ODbL 1.0"
+  }
+]

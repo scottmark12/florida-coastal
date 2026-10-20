@@ -720,10 +720,10 @@
       "name": "Delray Beach",
       "region": "Southeast Atlantic",
       "coast": "atlantic",
-      "lat": 26.46,
-      "lon": -80.07,
+      "lat": 26.4614625,
+      "lon": -80.0728201,
       "tier": 3,
-      "price": "$768K median for houses, $210K for condos and townhomes (BeachesMLS, Sept 2026)",
+      "price": "$285,000 median listing price \u00b7 September 2026",
       "vibes": [
         "sophhigh",
         "walk",
@@ -749,8 +749,8 @@
         "Pricey",
         "Busy season crowds"
       ],
-      "x": 391.12412061910806,
-      "y": 279.0352729762057,
+      "x": 390.8383825235423,
+      "y": 279.1885883032195,
       "area_id": "palm-beaches",
       "area_name": "The Palm Beaches",
       "source_url": "https://www.floridacoastal.co/towns/delray.html",
@@ -761,10 +761,10 @@
       "name": "Jupiter",
       "region": "Southeast Atlantic",
       "coast": "atlantic",
-      "lat": 26.93,
-      "lon": -80.09,
+      "lat": 26.9342246,
+      "lon": -80.0942087,
       "tier": 3,
-      "price": null,
+      "price": "$847,000 median listing price \u00b7 September 2026",
       "vibes": [
         "sophcalm",
         "dock",
@@ -788,8 +788,8 @@
       "cons": [
         "Pricey"
       ],
-      "x": 387.48022039717216,
-      "y": 331.1223768055546,
+      "x": 387.048424996224,
+      "y": 331.577964248642,
       "area_id": "palm-beaches",
       "area_name": "The Palm Beaches",
       "source_url": "https://www.floridacoastal.co/towns/jupiter.html",
@@ -2875,10 +2875,10 @@
       "name": "Boca Raton",
       "region": "Southeast Atlantic",
       "coast": "atlantic",
-      "lat": 26.368,
-      "lon": -80.129,
+      "lat": 26.3586885,
+      "lon": -80.0830984,
       "tier": 3,
-      "price": "$630K median",
+      "price": "$559,000 median listing price \u00b7 September 2026",
       "vibes": [
         "sophcalm",
         "remote"
@@ -2902,8 +2902,8 @@
         "Expensive",
         "Spread out and car dependent"
       ],
-      "x": 385.5747364159528,
-      "y": 268.64273549579775,
+      "x": 390.17810447384943,
+      "y": 267.75410001263225,
       "area_id": "palm-beaches",
       "area_name": "The Palm Beaches",
       "source_url": "https://www.floridacoastal.co/towns/boca-raton.html",
@@ -2990,10 +2990,10 @@
       "name": "Highland Beach",
       "region": "Southeast Atlantic",
       "coast": "atlantic",
-      "lat": 26.4,
-      "lon": -80.066,
+      "lat": 26.3995204,
+      "lon": -80.0655977,
       "tier": 4,
-      "price": null,
+      "price": "$999,250 median listing price \u00b7 September 2026",
       "vibes": [
         "sophcalm"
       ],
@@ -3016,8 +3016,8 @@
         "Nothing in town to walk to",
         "Expensive"
       ],
-      "x": 391.73450737054384,
-      "y": 272.3914010038442,
+      "x": 391.77625163732915,
+      "y": 272.3394718117712,
       "area_id": "palm-beaches",
       "area_name": "The Palm Beaches",
       "source_url": "https://www.floridacoastal.co/towns/highland-beach.html",
@@ -3182,10 +3182,10 @@
       "name": "North Palm Beach",
       "region": "Southeast Atlantic",
       "coast": "atlantic",
-      "lat": 26.818,
-      "lon": -80.053,
+      "lat": 26.8175175,
+      "lon": -80.0821108,
       "tier": 3,
-      "price": null,
+      "price": "$498,500 median listing price \u00b7 September 2026",
       "vibes": [
         "dock"
       ],
@@ -3208,8 +3208,8 @@
         "Pricey",
         "Quiet at night"
       ],
-      "x": 391.5436005851474,
-      "y": 318.81095307629556,
+      "x": 388.65847735840356,
+      "y": 318.6653218617401,
       "area_id": "palm-beaches",
       "area_name": "The Palm Beaches",
       "source_url": "https://www.floridacoastal.co/towns/north-palm-beach.html",
@@ -3220,10 +3220,10 @@
       "name": "Palm Beach",
       "region": "Southeast Atlantic",
       "coast": "atlantic",
-      "lat": 26.706,
-      "lon": -80.036,
+      "lat": 26.7056172,
+      "lon": -80.0361517,
       "tier": 4,
-      "price": null,
+      "price": "$2,285,000 median listing price \u00b7 September 2026",
       "vibes": [
         "sophcalm",
         "walk"
@@ -3247,8 +3247,8 @@
         "One of the most expensive towns in the country",
         "Very quiet in summer"
       ],
-      "x": 393.6290537047368,
-      "y": 306.4374780465171,
+      "x": 393.61536071845546,
+      "y": 306.39451926117727,
       "area_id": "palm-beaches",
       "area_name": "The Palm Beaches",
       "source_url": "https://www.floridacoastal.co/towns/palm-beach.html",
@@ -3259,10 +3259,10 @@
       "name": "Palm Beach Gardens",
       "region": "Southeast Atlantic",
       "coast": "atlantic",
-      "lat": 26.823,
-      "lon": -80.139,
+      "lat": 26.8233946,
+      "lon": -80.1386547,
       "tier": 3,
-      "price": null,
+      "price": "$788,750 median listing price \u00b7 September 2026",
       "vibes": [
         "sophcalm",
         "active"
@@ -3286,8 +3286,8 @@
         "Not on the ocean",
         "Mostly gated and car dependent"
       ],
-      "x": 382.9978159104514,
-      "y": 319.0956943254955,
+      "x": 383.03068571675686,
+      "y": 319.14055417735375,
       "area_id": "palm-beaches",
       "area_name": "The Palm Beaches",
       "source_url": "https://www.floridacoastal.co/towns/palm-beach-gardens.html",
@@ -3298,10 +3298,10 @@
       "name": "Riviera Beach",
       "region": "Southeast Atlantic",
       "coast": "atlantic",
-      "lat": 26.775,
-      "lon": -80.058,
+      "lat": 26.784343,
+      "lon": -80.0650293,
       "tier": 2,
-      "price": null,
+      "price": "$579,000 median listing price \u00b7 September 2026",
       "vibes": [
         "dock"
       ],
@@ -3324,8 +3324,8 @@
         "The mainland and the island feel very different",
         "An industrial port area"
       ],
-      "x": 391.20034775773394,
-      "y": 314.0236863974036,
+      "x": 390.4699106668712,
+      "y": 315.0381263037384,
       "area_id": "palm-beaches",
       "area_name": "The Palm Beaches",
       "source_url": "https://www.floridacoastal.co/towns/riviera-beach.html",
@@ -3374,10 +3374,10 @@
       "name": "West Palm Beach",
       "region": "Southeast Atlantic",
       "coast": "atlantic",
-      "lat": 26.715,
-      "lon": -80.053,
+      "lat": 26.715364,
+      "lon": -80.0532942,
       "tier": 2,
-      "price": null,
+      "price": "$334,950 median listing price \u00b7 September 2026",
       "vibes": [
         "walk"
       ],
@@ -3400,8 +3400,8 @@
         "The ocean beach is across the bridge in Palm Beach",
         "Prices are rising fast"
       ],
-      "x": 391.90954044043303,
-      "y": 307.38195377052335,
+      "x": 391.87904531248904,
+      "y": 307.4214077118206,
       "area_id": "palm-beaches",
       "area_name": "The Palm Beaches",
       "source_url": "https://www.floridacoastal.co/towns/west-palm-beach.html",
@@ -5118,6 +5118,153 @@
       "tier": 2,
       "price": "$326,250 median listing price \u00b7 August 2026",
       "nearest_town_km": 8.803035686856429
+    },
+    {
+      "id": "boynton-beach",
+      "name": "Boynton Beach",
+      "region": "Atlantic Coast \u00b7 The Palm Beaches",
+      "coast": "atlantic",
+      "lon": -80.058141,
+      "lat": 26.5289139,
+      "price": "$340,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Lagoon marinas, a working inlet and low coastal neighborhoods.",
+      "area_id": "palm-beaches",
+      "area_name": "The Palm Beaches",
+      "source_url": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "x": 392.0594719705401,
+      "y": 286.7186934201298,
+      "tier": 2,
+      "nearest_town_km": 0
+    },
+    {
+      "id": "lake-worth-beach",
+      "name": "Lake Worth Beach",
+      "region": "Atlantic Coast \u00b7 The Palm Beaches",
+      "coast": "atlantic",
+      "lon": -80.0569927,
+      "lat": 26.6159698,
+      "price": "$427,450 median listing price \u00b7 September 2026",
+      "vibes": [
+        "walk",
+        "dock"
+      ],
+      "blurb": "Colorful historic cottages and a walkable downtown between the lagoon and ocean beach.",
+      "area_id": "palm-beaches",
+      "area_name": "The Palm Beaches",
+      "source_url": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "x": 391.86469185573486,
+      "y": 296.3812742425324,
+      "tier": 2,
+      "nearest_town_km": 0
+    },
+    {
+      "id": "juno-beach",
+      "name": "Juno Beach",
+      "region": "Atlantic Coast \u00b7 The Palm Beaches",
+      "coast": "atlantic",
+      "lon": -80.0539253,
+      "lat": 26.8815475,
+      "price": "$1,330,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Oceanfront condos, sea-turtle beaches and the long fishing pier.",
+      "area_id": "palm-beaches",
+      "area_name": "The Palm Beaches",
+      "source_url": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "x": 391.22611400497317,
+      "y": 325.85958156282743,
+      "tier": 2,
+      "nearest_town_km": 0
+    },
+    {
+      "id": "tequesta",
+      "name": "Tequesta",
+      "region": "Atlantic Coast \u00b7 The Palm Beaches",
+      "coast": "atlantic",
+      "lon": -80.1286542,
+      "lat": 26.9681123,
+      "price": "$745,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Leafy river neighborhoods and boating around the Loxahatchee and Jupiter Inlet.",
+      "area_id": "palm-beaches",
+      "area_name": "The Palm Beaches",
+      "source_url": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "x": 383.51803995802743,
+      "y": 335.2309151989301,
+      "tier": 2,
+      "nearest_town_km": 0
+    },
+    {
+      "id": "lantana",
+      "name": "Lantana",
+      "region": "Atlantic Coast \u00b7 The Palm Beaches",
+      "coast": "atlantic",
+      "lon": -80.052166,
+      "lat": 26.5865308,
+      "price": "$424,450 median listing price \u00b7 September 2026",
+      "vibes": [
+        "walk",
+        "dock"
+      ],
+      "blurb": "An older fishing-town waterfront with low cottages along the lagoon.",
+      "area_id": "palm-beaches",
+      "area_name": "The Palm Beaches",
+      "source_url": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "x": 392.4488212014651,
+      "y": 293.1302947280106,
+      "tier": 2,
+      "nearest_town_km": 0
+    },
+    {
+      "id": "lake-park",
+      "name": "Lake Park",
+      "region": "Atlantic Coast \u00b7 The Palm Beaches",
+      "coast": "atlantic",
+      "lon": -80.0661631,
+      "lat": 26.8002153,
+      "price": "$1,200,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Low-rise neighborhoods and a marina on Lake Worth Lagoon, with new waterfront towers.",
+      "area_id": "palm-beaches",
+      "area_name": "The Palm Beaches",
+      "source_url": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "x": 390.30123707598744,
+      "y": 316.79577217226324,
+      "tier": 2,
+      "nearest_town_km": 0
+    },
+    {
+      "id": "palm-beach-shores",
+      "name": "Palm Beach Shores",
+      "region": "Atlantic Coast \u00b7 The Palm Beaches",
+      "coast": "atlantic",
+      "lon": -80.0355962,
+      "lat": 26.7781183,
+      "price": "$1,575,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Compact island streets between the inlet, marinas and Atlantic beach.",
+      "area_id": "palm-beaches",
+      "area_name": "The Palm Beaches",
+      "source_url": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "x": 393.41178817642077,
+      "y": 314.44097190687046,
+      "tier": 2,
+      "nearest_town_km": 0
     }
   ],
   "regions": [
@@ -5432,12 +5579,19 @@
         "boca-raton",
         "highland-beach",
         "delray",
+        "boynton-beach",
+        "lantana",
+        "lake-worth-beach",
         "palm-beach",
         "west-palm-beach",
+        "palm-beach-shores",
         "riviera-beach",
+        "lake-park",
         "north-palm-beach",
         "palm-beach-gardens",
-        "jupiter"
+        "juno-beach",
+        "jupiter",
+        "tequesta"
       ],
       "center": [
         389.6882159112533,

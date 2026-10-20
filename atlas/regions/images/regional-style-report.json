@@ -127,25 +127,6 @@
     },
     {
       "bounds": [
-        327.786240448732,
-        175.20813930152823,
-        465.1057986053729,
-        253.9713352378927
-      ],
-      "width": 2304,
-      "height": 1322,
-      "counts": {
-        "buildings": 572927,
-        "roads": 80366,
-        "preserve_landcover_areas": 16124
-      },
-      "region": "palm-beaches",
-      "output_bytes": 153934,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         294.26934615412694,
         230.80647494449696,
         442.6279579582726,
@@ -241,25 +222,6 @@
     },
     {
       "bounds": [
-        -425.1888477351769,
-        -226.66663311517388,
-        558.5359493042099,
-        742.9916716839022
-      ],
-      "width": 4096,
-      "height": 4037,
-      "counts": {
-        "buildings": 0,
-        "roads": 862124,
-        "preserve_landcover_areas": 970616
-      },
-      "region": "_backdrop",
-      "output_bytes": 589078,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         329.52173453768813,
         128.36258733928338,
         456.9522159171905,
@@ -274,6 +236,44 @@
       },
       "region": "miami-fort-lauderdale",
       "output_bytes": 180976,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        -425.1888477351769,
+        -226.66663311517388,
+        558.5359493042099,
+        742.9916716839022
+      ],
+      "width": 4096,
+      "height": 4037,
+      "counts": {
+        "buildings": 0,
+        "roads": 862124,
+        "preserve_landcover_areas": 970616
+      },
+      "region": "_backdrop",
+      "output_bytes": 590294,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        327.786240448732,
+        175.20813930152823,
+        465.1057986053729,
+        253.9713352378927
+      ],
+      "width": 2304,
+      "height": 1322,
+      "counts": {
+        "buildings": 572927,
+        "roads": 80366,
+        "preserve_landcover_areas": 16124
+      },
+      "region": "palm-beaches",
+      "output_bytes": 175030,
       "landcover_fraction": 1.0,
       "sourceOnly": true
     }

@@ -2,5 +2,9 @@
   {
     "manifest": "work/coastal_pipeline/v4/fort-lauderdale/manifest.json",
     "reason": "Use the complete 2026-10-17 OSM land mask over the legacy inland Miami rectangular coverage hole. Town models remain unchanged."
+  },
+  {
+    "manifest": "work/coastal_pipeline/v4/palm-beaches/manifest.json",
+    "reason": "Complete Palm Beaches OSM coast, lagoon and inland water mask for the expanded 16-town region."
   }
 ]

@@ -1,0 +1,246 @@
+{
+  "desktop": [
+    {
+      "town": "boca-raton",
+      "check": {
+        "active": "boca-raton",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "highland-beach",
+      "check": {
+        "active": "highland-beach",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "delray",
+      "check": {
+        "active": "delray",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "boynton-beach",
+      "check": {
+        "active": "boynton-beach",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "lantana",
+      "check": {
+        "active": "lantana",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "lake-worth-beach",
+      "check": {
+        "active": "lake-worth-beach",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "palm-beach",
+      "check": {
+        "active": "palm-beach",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "west-palm-beach",
+      "check": {
+        "active": "west-palm-beach",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "palm-beach-shores",
+      "check": {
+        "active": "palm-beach-shores",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "riviera-beach",
+      "check": {
+        "active": "riviera-beach",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "lake-park",
+      "check": {
+        "active": "lake-park",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "north-palm-beach",
+      "check": {
+        "active": "north-palm-beach",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "palm-beach-gardens",
+      "check": {
+        "active": "palm-beach-gardens",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "juno-beach",
+      "check": {
+        "active": "juno-beach",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "jupiter",
+      "check": {
+        "active": "jupiter",
+        "width": 1280
+      },
+      "errors": []
+    },
+    {
+      "town": "tequesta",
+      "check": {
+        "active": "tequesta",
+        "width": 1280
+      },
+      "errors": []
+    }
+  ],
+  "phone": [
+    {
+      "id": "boca-raton",
+      "active": "boca-raton",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "highland-beach",
+      "active": "highland-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "delray",
+      "active": "delray",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "boynton-beach",
+      "active": "boynton-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "lantana",
+      "active": "lantana",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "lake-worth-beach",
+      "active": "lake-worth-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "palm-beach",
+      "active": "palm-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "west-palm-beach",
+      "active": "west-palm-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "palm-beach-shores",
+      "active": "palm-beach-shores",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "riviera-beach",
+      "active": "riviera-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "lake-park",
+      "active": "lake-park",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "north-palm-beach",
+      "active": "north-palm-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "palm-beach-gardens",
+      "active": "palm-beach-gardens",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "juno-beach",
+      "active": "juno-beach",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "jupiter",
+      "active": "jupiter",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    },
+    {
+      "id": "tequesta",
+      "active": "tequesta",
+      "scrollWidth": 390,
+      "width": 390,
+      "errors": []
+    }
+  ]
+}

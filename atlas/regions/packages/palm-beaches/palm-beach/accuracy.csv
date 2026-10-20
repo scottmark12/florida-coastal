@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Palm Beach,393.6153564453125,306.39453125,-80.03615173912296,26.705617309174187,-80.0361517,26.7056172,0.0127,https://www.openstreetmap.org/node/4419891621,Representative OSM town place-label anchor: Palm Beach

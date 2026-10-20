@@ -101,5 +101,21 @@
   "lighthouse-point": "packages/fort-lauderdale/lighthouse-point/",
   "north-miami-beach": "packages/fort-lauderdale/north-miami-beach/",
   "sunny-isles-beach": "packages/fort-lauderdale/sunny-isles-beach/",
-  "wilton-manors": "packages/fort-lauderdale/wilton-manors/"
+  "wilton-manors": "packages/fort-lauderdale/wilton-manors/",
+  "delray": "packages/palm-beaches/delray/",
+  "jupiter": "packages/palm-beaches/jupiter/",
+  "boca-raton": "packages/palm-beaches/boca-raton/",
+  "highland-beach": "packages/palm-beaches/highland-beach/",
+  "north-palm-beach": "packages/palm-beaches/north-palm-beach/",
+  "palm-beach": "packages/palm-beaches/palm-beach/",
+  "palm-beach-gardens": "packages/palm-beaches/palm-beach-gardens/",
+  "riviera-beach": "packages/palm-beaches/riviera-beach/",
+  "west-palm-beach": "packages/palm-beaches/west-palm-beach/",
+  "boynton-beach": "packages/palm-beaches/boynton-beach/",
+  "lake-worth-beach": "packages/palm-beaches/lake-worth-beach/",
+  "juno-beach": "packages/palm-beaches/juno-beach/",
+  "tequesta": "packages/palm-beaches/tequesta/",
+  "lantana": "packages/palm-beaches/lantana/",
+  "lake-park": "packages/palm-beaches/lake-park/",
+  "palm-beach-shores": "packages/palm-beaches/palm-beach-shores/"
 }

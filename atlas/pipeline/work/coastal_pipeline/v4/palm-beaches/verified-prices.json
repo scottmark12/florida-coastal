@@ -52,5 +52,47 @@
     "median listing price",
     "September 2026",
     "https://www.realtor.com/local/market/florida/palm-beach-county/jupiter"
+  ],
+  "boynton-beach": [
+    340000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/palm-beach-county/boynton-beach"
+  ],
+  "lake-worth-beach": [
+    427450,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/palm-beach-county"
+  ],
+  "juno-beach": [
+    1330000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/palm-beach-county/juno-beach"
+  ],
+  "tequesta": [
+    745000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/palm-beach-county/tequesta"
+  ],
+  "lantana": [
+    424450,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/palm-beach-county/lantana"
+  ],
+  "lake-park": [
+    1200000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/palm-beach-county/lake-park"
+  ],
+  "palm-beach-shores": [
+    1575000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/palm-beach-county/palm-beach-shores"
   ]
 }
