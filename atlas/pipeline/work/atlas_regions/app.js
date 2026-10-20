@@ -9,6 +9,7 @@ const started=performance.now(), $=s=>document.querySelector(s), mobile=matchMed
 const [catalog,districts,features,builtRoutes,roadData]=await Promise.all(['catalog.json','districts.json','features.json','routes.json','roads.json'].map(p=>fetch(assetBase+p).then(r=>r.json())));
 const packageRegistry=await fetch(assetBase+'package-registry.json').then(r=>r.json());
 const overviewRegistry=await fetch(assetBase+'accurate-overviews.json').then(r=>r.json());
+const regionImages=await fetch(assetBase+'region-images.json').then(r=>r.json());
 const overviewLayers=new Map();
 const townViews=await fetch(assetBase+'town-views.json').then(r=>r.json());
 const towns=catalog.towns, regions=catalog.regions, byId=Object.fromEntries(towns.map(t=>[t.id,t]));
@@ -41,6 +42,7 @@ const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'low-powe
 scene.add(new THREE.HemisphereLight(0xffffff,0x798b77,1.5));const sun=new THREE.DirectionalLight(0xfff5df,1.7);sun.castShadow=!mobile;sun.shadow.mapSize.set(mobile?1024:2048, mobile?1024:2048);sun.shadow.bias=-.0003;scene.add(sun,sun.target);
 const sea=new THREE.Mesh(new THREE.PlaneGeometry(3500,3500),new THREE.MeshBasicMaterial({color:'#3593ae',toneMapped:false}));sea.rotation.x=-Math.PI/2;sea.position.set(0,-.4,-400);scene.add(sea);
 const roadGeometry=new THREE.BufferGeometry();roadGeometry.setAttribute('position',new THREE.Float32BufferAttribute(roadData,3));const roadLines=new THREE.LineSegments(roadGeometry,new THREE.LineBasicMaterial({color:'#958a6e',transparent:true,opacity:.3}));scene.add(roadLines);
+const flatCanvas=document.createElement('canvas');flatCanvas.setAttribute('aria-label','Illustrated regional map');Object.assign(flatCanvas.style,{position:'absolute',inset:'0',width:'100%',height:'100%',pointerEvents:'none'});flatCanvas.hidden=true;$('#map').append(flatCanvas);const flatCache=new Map();let flatImage=null,flatMeta=null;
 const camera=new THREE.OrthographicCamera(-50,50,50,-50,.0001,3500), target=new THREE.Vector3(), overlays=new THREE.Group();scene.add(overlays);let span=48, architecture=null, stateIcons=null, currentPackage='', packageToken=0;
 const loader=new GLTFLoader(), cache=new Map();
 const lakeRay=new THREE.Raycaster();renderer.domElement.addEventListener('click',e=>{if(!isThirty()||!terrain)return;lakeRay.setFromCamera(new THREE.Vector2(e.clientX/innerWidth*2-1,-(e.clientY-renderer.domElement.getBoundingClientRect().top)/renderer.domElement.getBoundingClientRect().height*2+1),camera);const hit=lakeRay.intersectObject(terrain,true).find(h=>h.object.name.startsWith('Lake_')||h.object.name.startsWith('Lake /'));if(!hit)return;const lake=thirty.lakes.find(l=>hit.object.name.includes(l.name.replaceAll(' ','_'))||hit.object.name.includes(l.name));if(lake)openLake(lake)});
@@ -83,13 +85,32 @@ function setCamera(){
   target.set((Math.min(...xs)+Math.max(...xs))/2,0,-(Math.min(...ys)+Math.max(...ys))/2);
   $('#title').textContent=selectedLake.name;
  }
+ if(level==='region'&&qs.get('regionalExport')==='1')span*=1.6;
  const mapHeight=innerHeight;renderer.setSize(innerWidth,mapHeight);const a=innerWidth/mapHeight, height=level==='state'?Math.max(span,span/(a*.9)):span/a;camera.left=-height*a/2;camera.right=height*a/2;camera.top=height/2;camera.bottom=-height/2;camera.position.copy(target).add(new THREE.Vector3(0,height*1.25,height*1.25));camera.lookAt(target);camera.near=level==='region'&&overviewRegistry[region.id]?height*.05:.0001;camera.far=level==='region'&&overviewRegistry[region.id]?height*5:3500;camera.updateProjectionMatrix();sun.position.copy(target).add(new THREE.Vector3(-height,height*1.5,height*.6));sun.target.position.copy(target);Object.assign(sun.shadow.camera,{left:-height,right:height,top:height,bottom:-height,near:.001,far:height*5});sun.shadow.camera.updateProjectionMatrix();sun.shadow.normalBias=(isThirty()||isDetailed())?.0001:.06;sun.shadow.bias=level==='region'&&overviewRegistry[region.id]?-.0001/(height*5):-.0003;
  $('#scale').textContent=level==='state'?'Florida · regional overview':level==='region'?region.map+' · all '+region.towns.length+' towns':(isThirty()?(selectedLake?selectedLake.name+' · mapped dune lake':'Neighborhood view · 850 m across · 3× height, capped at 3× footprint'):'Neighborhood view · illustrated building scale');
 }
+function renderFlatRegion(){
+ camera.updateMatrixWorld(true);
+ const ratio=Math.min(devicePixelRatio,2);flatCanvas.width=Math.round(innerWidth*ratio);flatCanvas.height=Math.round(innerHeight*ratio);const ctx=flatCanvas.getContext('2d');ctx.scale(ratio,ratio);ctx.fillStyle=['emerald-coast','forgotten-coast'].includes(region.id)?'#17658f':'#3593ae';ctx.fillRect(0,0,innerWidth,innerHeight);
+ const m=flatMeta.camera,c=new THREE.Vector3(...m.target).project(camera),scale=innerWidth/(camera.right-camera.left),w=(m.right-m.left)*scale,h=(m.top-m.bottom)*scale;ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';ctx.drawImage(flatImage,(c.x*.5+.5)*innerWidth-w/2,(-c.y*.5+.5)*innerHeight-h/2,w,h);
+ const point=(o,i)=>{const a=o.geometry.attributes.position,v=new THREE.Vector3(a.getX(i),a.getY(i),a.getZ(i)).applyMatrix4(o.matrixWorld).project(camera);return [(v.x*.5+.5)*innerWidth,(-v.y*.5+.5)*innerHeight]};overlays.updateMatrixWorld(true);
+ for(const o of overlays.children){if(!o.geometry||!o.material)continue;ctx.globalAlpha=o.material.opacity;ctx.fillStyle=ctx.strokeStyle=o.material.color.getStyle(THREE.SRGBColorSpace);ctx.lineWidth=2;
+  if(o.isMesh){const indices=o.geometry.index;for(let i=0;i<(indices?indices.count:o.geometry.attributes.position.count);i+=3){ctx.beginPath();for(let j=0;j<3;j++){const p=point(o,indices?indices.getX(i+j):i+j);j?ctx.lineTo(...p):ctx.moveTo(...p)}ctx.closePath();ctx.fill()}}
+  else{ctx.setLineDash(o.material.isLineDashedMaterial?[6,4]:[]);ctx.beginPath();for(let i=0;i<o.geometry.attributes.position.count;i++){const p=point(o,i);i?ctx.lineTo(...p):ctx.moveTo(...p)}ctx.stroke();ctx.setLineDash([])}
+ }ctx.globalAlpha=1;placeLabels();document.body.dataset.drawCalls='0';document.body.dataset.triangles='0';document.body.dataset.viewport=innerWidth+'×'+innerHeight;
+}
 async function show(){
+ document.body.dataset.ready='false';
  document.documentElement.classList.toggle('miami-region',isDetailed()&&level==='region');const token=++packageToken,flight=pendingFlight;pendingFlight=null;document.documentElement.classList.toggle('thirty-region',(isThirty()||isDetailed())&&level==='region');setCamera();status('Loading this part of the coast…');
  try{
   for(const layer of overviewLayers.values())layer.hide();
+  flatCanvas.hidden=true;renderer.domElement.style.visibility='visible';
+  if(level==='region'&&qs.get('regionalExport')!=='1'){
+   const m=regionImages[region.id];if(!m)throw Error('Regional image unavailable');if(detailedLayer)detailedLayer.hide();if(bridgeModel)bridgeModel.visible=false;
+   if(!flatCache.has(m.file))flatCache.set(m.file,new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>reject(Error('Regional image unavailable'));image.src=assetBase+m.file+'?v='+m.revision}));
+   const image=await flatCache.get(m.file);if(token!==packageToken)return;flatImage=image;flatMeta=m;flatCanvas.hidden=false;renderer.domElement.style.visibility='hidden';updateUi();makeLabels();highlight();renderFlatRegion();status('');const credit=document.getElementById('canopy-credit');if(credit)credit.textContent=m.attribution;document.body.dataset.ready='true';document.body.dataset.pipeline='flat-region-image';document.body.dataset.regionChunks='0';document.body.dataset.regionImage=m.file;return;
+  }
+
   if(!bridgeModel){bridgeModel=new THREE.Group();bridgeModel.name='OSM bridges and causeways';scene.add(bridgeModel)}bridgeModel.visible=level==='town'||(level==='region'&&innerWidth>=700&&!!overviewRegistry[region.id]);
   if(level==='town'||(level==='region'&&innerWidth>=700&&overviewRegistry[region.id])){
    if(!bridgeIndex)bridgeIndex=await fetch(assetBase+'bridge-index.json').then(r=>r.json());
@@ -277,7 +298,7 @@ function architectureDetails(){
  for(let i=0;i<o.count;i++){o.getMatrixAt(i,matrix);line([0,1,.395],[0,1,-.515]);line([-.47,.77,.395],[0,1,.395]);line([0,1,.395],[.47,.77,.395]);if(o.material.name==='Standing seam zinc')for(const x of [-.32,-.16,.16,.32]){const h=1-Math.abs(x)/.47*.23;line([x,h,.395],[x,h,-.515])}}});
  roofInk.geometry.dispose();roofInk.geometry=new THREE.BufferGeometry();roofInk.geometry.setAttribute('position',new THREE.Float32BufferAttribute(points,3));
 }
-function render(){overlays.visible=!landing;if(alysArt)alysArt.visible=isThirty()&&level==='town';if(sandArt)sandArt.visible=activeTown.id==='30a'||level==='state';trimInstances();updateForestDetail();architectureDetails();renderer.render(scene,camera);placeLabels();placeDistrictArt();document.body.dataset.drawCalls=renderer.info.render.calls;document.body.dataset.triangles=renderer.info.render.triangles;document.body.dataset.viewport=innerWidth+'×'+innerHeight;if(landing)document.body.dataset.camera=JSON.stringify({position:camera.position.toArray(),target:target.toArray(),left:camera.left,right:camera.right,top:camera.top,bottom:camera.bottom,near:camera.near,far:camera.far,projection:'orthographic',mapUnits:'kilometers',tiltDegrees:45})}
+function render(){if(level==='region'&&qs.get('regionalExport')!=='1'){if(flatImage&&flatMeta===regionImages[region.id])renderFlatRegion();return}overlays.visible=!landing;if(alysArt)alysArt.visible=isThirty()&&level==='town';if(sandArt)sandArt.visible=activeTown.id==='30a'||level==='state';trimInstances();updateForestDetail();architectureDetails();renderer.render(scene,camera);placeLabels();placeDistrictArt();document.body.dataset.drawCalls=renderer.info.render.calls;document.body.dataset.triangles=renderer.info.render.triangles;document.body.dataset.viewport=innerWidth+'×'+innerHeight;if(landing)document.body.dataset.camera=JSON.stringify({position:camera.position.toArray(),target:target.toArray(),left:camera.left,right:camera.right,top:camera.top,bottom:camera.bottom,near:camera.near,far:camera.far,projection:'orthographic',mapUnits:'kilometers',tiltDegrees:45})}
 function openTown(t){selectedLake=null;selectedDistrict=null;$('#card-title').textContent=t.name;$('#card-copy').textContent=t.blurb||'Explore the surrounding coastal neighborhoods.';$('#card-price').textContent=t.price?('Town-level housing context: '+t.price):'Current neighborhood price ranges are not yet verified.';$('#card-source').href='https://www.floridacoastal.co/towns/'+(t.id==='miami'?'southbeach':t.id)+'.html';$('#card-source').textContent='Read the Florida Coastal guide';$('#card').hidden=false;document.body.classList.add('card-open')}
 function openDistrict(d){selectedLake=null;selectedDistrict=d;if(d.town==='30a'||isDetailed()){level=weights.airport?'region':'town';show()} $('#card-title').textContent=d.name;$('#card-copy').textContent=d.description;$('#card-price').textContent=d.priceRange||d.priceBenchmark||d.priceStatus;$('#card-source').href=d.priceSource||d.source;$('#card-source').textContent=d.priceSource?'View market-price source':'Place guide';let place=document.querySelector('#card-place');if(!place){place=document.createElement('a');place.id='card-place';place.target='_blank';place.rel='noopener';$('#card-source').after(place)}place.href=d.source;place.textContent=' · Place guide';$('#card').hidden=false;document.body.classList.add('card-open');highlight();render()}
 const slim=document.createElement('button');slim.id='controls-slim';slim.textContent='Towns & districts · open navigation';slim.onclick=()=>$('#card-close').click();$('#controls').prepend(slim);
@@ -311,7 +332,7 @@ window.setFloridaCoastalResults=applyResults;
 window.addEventListener('floridacoastal:results',e=>applyResults(e.detail));
 window.addEventListener('message',e=>{if(e.origin!==location.origin&&e.origin!=='https://www.floridacoastal.co'&&e.origin!=='https://floridacoastal.co')return;if(e.data?.type==='floridacoastal:results')applyResults(e.data.payload)});
 $('#import-results').onchange=async e=>{try{const payload=JSON.parse(await e.target.files[0].text());if(!applyResults(payload))throw Error();$('#import-note').textContent='Quiz matches loaded.'}catch{$('#import-note').textContent='Use an exported top-five result file.'}};
-window.addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);if(level==='region'&&overviewRegistry[region.id])show();else{setCamera();render()}});
+window.addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);if(level==='region')show();else{setCamera();render()}});
 if(qs.get('district')){selectedDistrict=districts.find(d=>d.id===qs.get('district'));if(selectedDistrict)level='town'}
 await show();if(selectedDistrict&&isDetailed())openDistrict(selectedDistrict);
 

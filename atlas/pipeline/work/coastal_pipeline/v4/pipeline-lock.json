@@ -13,7 +13,7 @@
     "work/coastal_pipeline/v4/run.py": "5a9b7451edf2ca4fb9bc579c9da5dbdbd5489e4249f8a57ff8562fef0a8181a5",
     "work/coastal_pipeline/v4/publish.py": "0eff4367e067a413586c377a15439bc92892c2fcaa289b00959f8f7b1d5b22a5",
     "work/coastal_pipeline/v3/atlas-layer.js": "3b69812849bcca8b7b482fa926f5b6fc5d8cd7bc063802205277be7b6c14a370",
-    "work/atlas_regions/app.js": "f6d756cde9adfb50c41cd507fc8ad29600a916198ce39a03fc37a1fa3a62c95b",
+    "work/atlas_regions/app.js": "83ef446c4c75d925f02b82cc05dbadfdbbd6d2b57fcdb3193d340b460c70e7f3",
     "work/30a_finish/geometry.py": "0e286e67440ae5adfe1cb972f63b960178af3062c3c1d6ee7f245cffc2d9d9f5",
     "work/coastal_pipeline/v3/marina-boats.js": "139647b5104dfe9725f2fffc122d7b37046cde4636a50e4be0743ae6a52b9f09",
     "work/coastal_pipeline/v4/water-recipes.json": "1433dbeb9118ce26e64d732bb7acb92fd132b4d4e3a8b0f6fac9da8848105299",
@@ -30,7 +30,9 @@
     "normalize_overview_context.py": "a55e754e5d37c5ba5bb43706e2a1bb9f6dbbae377554cedc3b87776d63048972",
     "check_overviews.py": "d48c9d8573640eaa25efb78057df4d34ecffd23f311e1113f62dceeb97abb1e2",
     "regional-coverage.json": "f74fe9642d4e275b17d858d595b3d3cdcee9b8dd291520b91f386d051a67d2b1",
-    "build_surrounding_context.py": "ae0b4836925240fe3619f4e626b06dc4041829a7cc38bc933c4707370aadf742"
+    "build_surrounding_context.py": "ae0b4836925240fe3619f4e626b06dc4041829a7cc38bc933c4707370aadf742",
+    "finalize_region_images.py": "d4dfe8b52c273dd0c98a320918fb0b1244eced86f15e13aedba6b7f4f000c1fb",
+    "check_region_images.py": "8541e59fa1c634d7a8ac5ec88583af67743f03ccea2031aa9d9875511fdd15fc"
   },
   "change": "User-authorized two-level hero exports, OSM bridge decks/piers, and type/footprint height estimates for non-house buildings; existing explicit heights and scale caps retained. User-requested 30A lake navigation repair only: frame mapped lake bounds; no geometry, palette or scale-rule changes. User-requested Region presentation repair: use complete approved town roof/wall meshes and source-backed Tampa/Pinellas coverage instead of legacy regional icons. Town packages and the approved scale/style engine remain unchanged."
 }
