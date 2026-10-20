@@ -3,6 +3,7 @@ import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
 const intersects=(a,b)=>a[0]<b[2]&&a[2]>b[0]&&a[1]<b[3]&&a[3]>b[1];
 const contained=(a,b)=>a[0]>=b[0]&&a[2]<=b[2]&&a[1]>=b[1]&&a[3]<=b[3];
 function outside(mesh,rects){
+ mesh.castShadow=false; // Context clipping also excludes duplicated shadow casters.
  for(const material of Array.isArray(mesh.material)?mesh.material:[mesh.material]){
   let u=material.userData.overviewClip;
   if(!u){u={overviewRects:{value:Array.from({length:9},()=>new T.Vector4())},overviewCount:{value:0}};material.userData.overviewClip=u;
@@ -18,7 +19,7 @@ export async function createAccurateOverview(url,neighborUrls=[]){
  const own=await metadata(url),meta=own.meta,neighbors=await Promise.all(neighborUrls.map(metadata));
  const root=new T.Group(),architecture=new T.Group(),context=new T.Group(),cache=new Map(),covers=new Map();root.add(architecture,context);root.visible=false;let version=0,disposed=false;
  const asset=(source,file)=>source.url+file+'?v='+(source.meta.revision||source.meta.initial_bytes);
- async function model(source,file){const key=asset(source,file);if(!cache.has(key))cache.set(key,(async()=>{const r=await fetch(key);if(!r.ok)throw Error('Missing overview '+file);const bytes=await new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();return new Promise((resolve,reject)=>new GLTFLoader().parse(bytes,'',g=>{g.scene.traverse(o=>{if(o.isMesh){o.geometry.computeVertexNormals();o.material.flatShading=true;o.castShadow=false;o.receiveShadow=false}});if(disposed)disposeObject(g.scene);resolve(g.scene)},reject))})());return cache.get(key)}
+ async function model(source,file){const key=asset(source,file);if(!cache.has(key))cache.set(key,(async()=>{const r=await fetch(key);if(!r.ok)throw Error('Missing overview '+file);const bytes=await new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).arrayBuffer();return new Promise((resolve,reject)=>new GLTFLoader().parse(bytes,'',g=>{g.scene.traverse(o=>{if(o.isMesh){o.geometry.computeVertexNormals();o.geometry.computeBoundingBox();o.material.flatShading=true;o.castShadow=file!==source.meta.base&&o.geometry.boundingBox.max.y>.05;o.receiveShadow=true}});if(disposed)disposeObject(g.scene);resolve(g.scene)},reject))})());return cache.get(key)}
  async function plane(source,file,y){const texture=await new T.TextureLoader().loadAsync(asset(source,file));texture.colorSpace=T.SRGBColorSpace;const [x0,y0,x1,y1]=source.meta.bounds;const mesh=new T.Mesh(new T.PlaneGeometry(x1-x0,y1-y0),new T.MeshBasicMaterial({map:texture,transparent:true,depthWrite:false,toneMapped:false}));mesh.rotation.x=-Math.PI/2;mesh.position.set((x0+x1)/2,y,-(y0+y1)/2);
   // Plane shader receives projected coordinates, rather than local plane vertices.
   const position=mesh.geometry.getAttribute('position');for(let i=0;i<position.count;i++)position.setXYZ(i,position.getX(i)+(x0+x1)/2,y,-(position.getY(i)+(y0+y1)/2));position.needsUpdate=true;mesh.rotation.set(0,0,0);mesh.position.set(0,0,0);return mesh;
