@@ -5333,7 +5333,7 @@
       "img": "img/sanibel-island.jpg",
       "pos": "center center",
       "hpos": "center 48%",
-      "text": "Venice and Englewood south through Charlotte Harbor, Punta Gorda, Fort Myers, Cape Coral, Sanibel, Captiva and Bonita Springs.",
+      "text": "Venice and Englewood through Charlotte Harbor, Fort Myers, Sanibel and Captiva, south to Naples, Marco Island, Everglades City and Chokoloskee.",
       "towns": [
         "venice",
         "englewood",
@@ -5345,36 +5345,20 @@
         "fort-myers-beach",
         "sanibel-island",
         "captiva",
-        "bonita-springs"
-      ],
-      "center": [
-        198.32028908468948,
-        291.20012451186
-      ]
-    },
-    {
-      "id": "naples-marco",
-      "coast": "gulf",
-      "name": "Naples, Marco Island and the Everglades",
-      "map": "Naples and Marco",
-      "at": [
-        26.02,
-        -81.8
-      ],
-      "side": "W",
-      "img": "img/marco-island.jpg",
-      "pos": "62% center",
-      "hpos": "center 45%",
-      "text": "The polished southwest corner of the state, with calm Gulf beaches, golf and a walkable downtown in Naples. Past Marco Island the road ends at Everglades City and Chokoloskee, on the edge of the Ten Thousand Islands and Everglades National Park.",
-      "towns": [
+        "bonita-springs",
         "naples",
         "marco-island",
         "everglades-city",
         "chokoloskee"
       ],
       "center": [
-        243.65435418393685,
-        217.12498039003987
+        198.32028908468948,
+        291.20012451186
+      ],
+      "sourceRegions": [
+        "fort-myers-sanibel",
+        "naples-marco",
+        "sarasota-bradenton"
       ]
     },
     {

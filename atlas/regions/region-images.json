@@ -125,31 +125,33 @@
     "revision": "0775546f7e1d2f24",
     "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
     "styleReference": "Approved Sarasota and Bradenton regional illustration",
-    "waterColor": "#71adbd"
-  },
-  "naples-marco": {
-    "file": "images/naples-marco.webp",
-    "width": 2304,
-    "height": 3072,
-    "camera": {
-      "target": [
-        260.34461778321713,
-        0,
-        -228.46179795409483
-      ],
-      "left": -60.56521297806229,
-      "right": 60.56521297806229,
-      "top": 80.75361730408308,
-      "bottom": -80.75361730408308,
-      "tiltDegrees": 45,
-      "projection": "orthographic",
-      "mapUnits": "kilometers"
-    },
-    "bytes": 384488,
-    "revision": "a02e76c6c3376a3d",
-    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
-    "styleReference": "Approved Sarasota and Bradenton regional illustration",
-    "waterColor": "#71adbd"
+    "waterColor": "#71adbd",
+    "layers": [
+      {
+        "file": "images/naples-marco.webp",
+        "width": 2304,
+        "height": 3072,
+        "camera": {
+          "target": [
+            260.34461778321713,
+            0,
+            -228.46179795409483
+          ],
+          "left": -60.56521297806229,
+          "right": 60.56521297806229,
+          "top": 80.75361730408308,
+          "bottom": -80.75361730408308,
+          "tiltDegrees": 45,
+          "projection": "orthographic",
+          "mapUnits": "kilometers"
+        },
+        "bytes": 384488,
+        "revision": "a02e76c6c3376a3d",
+        "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
+        "styleReference": "Approved Sarasota and Bradenton regional illustration",
+        "waterColor": "#71adbd"
+      }
+    ]
   },
   "florida-keys": {
     "file": "images/florida-keys.webp",
