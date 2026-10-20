@@ -6,5 +6,6 @@ A=Path(__file__).resolve().parents[1];rows=json.load(open(A/'regions/region-imag
 for rid,r in rows.items():
  p=A/'regions'/r['file'];assert p.stat().st_size==r['bytes'];assert hashlib.sha256(p.read_bytes()).hexdigest()[:16]==r['revision'];assert p.stat().st_size<1_000_000
  with Image.open(p) as im:assert im.format=='WEBP' and im.size==(r['width'],r['height'])
+ assert r['width']==r['height'] and 2048<=r['width']<=4096
  c=r['camera'];assert c['tiltDegrees']==45 and c['projection']=='orthographic';assert c['right']>c['left'] and c['top']>c['bottom'];assert all(math.isfinite(x) for x in c['target'])
 print(json.dumps({'regions':len(rows),'total_bytes':sum(r['bytes'] for r in rows.values()),'maximum_image_bytes':max(r['bytes'] for r in rows.values())}))

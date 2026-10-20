@@ -11,6 +11,6 @@ for r in json.load(open(A/'regions/catalog.json'))['regions']:
  rid=r['id'];capture=P/'outputs/region-images'/rid;meta=json.load(open(capture.with_suffix('.json')))
  assert meta['ready']=='true' and meta['camera']['tiltDegrees']==45
  with Image.open(capture.with_suffix('.png')) as im:
-  assert im.size==(2048,2048);im.convert('RGB').save(out/(rid+'.webp'),quality=94,method=6)
- file=out/(rid+'.webp');registry[rid]={'file':'images/'+file.name,'width':2048,'height':2048,'camera':meta['camera'],'bytes':file.stat().st_size,'revision':hashlib.sha256(file.read_bytes()).hexdigest()[:16],'attribution':'© OpenStreetMap contributors, ODbL · ESA WorldCover 2021 CC BY 4.0 · Microsoft footprints, CDLA Permissive 2.0'}
+  assert im.width==im.height and 2048<=im.width<=4096;size=im.width;im.convert('RGB').save(out/(rid+'.webp'),quality=94,method=6)
+ file=out/(rid+'.webp');registry[rid]={'file':'images/'+file.name,'width':size,'height':size,'camera':meta['camera'],'bytes':file.stat().st_size,'revision':hashlib.sha256(file.read_bytes()).hexdigest()[:16],'attribution':'© OpenStreetMap contributors, ODbL · ESA WorldCover 2021 CC BY 4.0 · Microsoft footprints, CDLA Permissive 2.0'}
 (A/'regions/region-images.json').write_text(json.dumps(registry,indent=2)+'\n');print(len(registry),'regions',sum(r['bytes'] for r in registry.values()),'bytes total')

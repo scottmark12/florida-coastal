@@ -5295,7 +5295,25 @@
       "center": [
         140.10735322180037,
         371.03109972062214
-      ]
+      ],
+      "contextTowns": [
+        "tampa",
+        "st-petersburg",
+        "oldsmar",
+        "safety-harbor",
+        "clearwater",
+        "gulfport",
+        "st-pete-beach",
+        "tierra-verde",
+        "gibsonton",
+        "apollo-beach",
+        "ruskin",
+        "sun-city-center"
+      ],
+      "regionalExport": {
+        "size": 3072,
+        "padding": 2.4
+      }
     },
     {
       "id": "fort-myers-sanibel",

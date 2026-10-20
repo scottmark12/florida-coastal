@@ -117,31 +117,31 @@
   },
   "sarasota-bradenton": {
     "file": "images/sarasota-bradenton.webp",
-    "width": 2048,
-    "height": 2048,
+    "width": 3072,
+    "height": 3072,
     "camera": {
-      "bottom": -45.565440117180465,
-      "far": 455.65440117180464,
-      "left": -45.565440117180465,
+      "bottom": -117.04722135863386,
+      "far": 1170.4722135863385,
+      "left": -117.04722135863386,
       "mapUnits": "kilometers",
-      "near": 4.556544011718047,
+      "near": 11.704722135863388,
       "position": [
-        147.73684859337328,
-        113.91360029295116,
-        -248.39670698991983
+        144.55364443164265,
+        292.6180533965846,
+        -97.91481233717168
       ],
       "projection": "orthographic",
-      "right": 45.565440117180465,
+      "right": 117.04722135863386,
       "target": [
-        147.73684859337328,
+        144.55364443164265,
         0,
-        -362.310307282871
+        -390.5328657337563
       ],
       "tiltDegrees": 45,
-      "top": 45.565440117180465
+      "top": 117.04722135863386
     },
-    "bytes": 248466,
-    "revision": "1ecf896848c0c4ca",
+    "bytes": 363284,
+    "revision": "593fb00f68d55c09",
     "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
   },
   "fort-myers-sanibel": {

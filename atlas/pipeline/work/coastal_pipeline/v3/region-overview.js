@@ -30,11 +30,11 @@ export async function createAccurateOverview(url,neighborUrls=[]){
   const token=++version;root.visible=true;architecture.clear();context.clear();document.body.dataset.regionChunks='0';document.body.dataset.regionBuildings='0';document.body.dataset.regionNeighbors='';document.body.dataset.regionContext=meta.surroundingContext?'osm-surroundings':'none';if(phone)return;
   const excluded=[],tasks=[];let queued=false;
   function update(){if(!queued){queued=true;requestAnimationFrame(()=>{queued=false;if(token===version)onUpdate()})}}
-  const sources=[own,...(meta.continuousCoverage?neighbors.filter(s=>s.meta.continuousCoverage&&intersects(s.meta.bounds,bounds)).sort((a,b)=>a.meta.id.localeCompare(b.meta.id)):[])];
+  const sources=[own,...((meta.continuousCoverage||meta.contextOverviews?.length)?neighbors.filter(s=>(meta.contextOverviews?meta.contextOverviews.includes(s.meta.id):s.meta.continuousCoverage)&&intersects(s.meta.bounds,bounds)).sort((a,b)=>a.meta.id.localeCompare(b.meta.id)):[])];
   for(const source of sources){
    const holes=excluded.map(b=>b.slice()),tiles=source.meta.buildings.filter(t=>intersects(t.bounds,bounds)&&!holes.some(b=>contained(t.bounds,b)));
    for(const tile of tiles)tasks.push((async()=>{const g=await model(source,tile.file);if(token!==version)return;if(holes.length)g.traverse(o=>{if(o.isMesh)outside(o,holes)});architecture.add(g);update()})());
-   if(source!==own&&tiles.length){if(!covers.has(source.url))covers.set(source.url,plane(source,source.meta.canopy,.0025));tasks.push((async()=>{const p=await covers.get(source.url);if(token!==version)return;outside(p,holes);context.add(p);update()})())}
+   if(source!==own&&tiles.length){if(!covers.has(source.url))covers.set(source.url,(async()=>{const group=new T.Group();group.add(await plane(source,source.meta.canopy,.0025),await plane(source,source.meta.water,.00015));if(source.meta.surroundingContext){const c=source.meta.surroundingContext;group.add(await plane({url:source.url,meta:{...source.meta,bounds:c.bounds}},c.file,.00215))}return group})());tasks.push((async()=>{const p=await covers.get(source.url);if(token!==version)return;p.traverse(o=>{if(o.isMesh)outside(o,holes)});context.add(p);update()})())}
    excluded.push(source.meta.coverageBounds||source.meta.bounds);
   }
   await Promise.all(tasks);if(token!==version)return;document.body.dataset.regionChunks=architecture.children.length;document.body.dataset.regionBuildings=meta.native_buildings+Object.values(meta.coverage_buildings).reduce((a,b)=>a+b,0);document.body.dataset.regionNeighbors=sources.slice(1).map(s=>s.meta.id).join(',');

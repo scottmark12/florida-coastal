@@ -165,6 +165,8 @@ for region in catalog.get('sourceRegions',catalog['regions']):
  (out/'region.glb.gz').unlink(missing_ok=True)
  initial=base_bytes+sum((out/f).stat().st_size for f in ['canopy.png','water.png','trees.json.gz'])
  manifest={'id':rid,'base':'base.glb.gz','bounds':b,'canopy':'canopy.png','water':'water.png','trees':'trees.json.gz','scale':rules['scale'],'buildings':tile_records,'sourcePackages':[p['name'] for p in packs],'native_buildings':len(owned),'native_triangles':native_triangles,'coverage_buildings':dict(fills),'initial_bytes':initial,'total_building_bytes':sum(t['bytes'] for t in tile_records),'attribution':'© OpenStreetMap contributors, ODbL · ESA WorldCover 2021 CC BY 4.0 · Microsoft footprints, CDLA Permissive 2.0','supplemental_sources':source_notes,'notes':['Approved town geometry is read-only; region meshes retain the source wall and roof vertices.','OSM/Microsoft coverage fills use the existing 3× height and footprint caps; untagged houses are 1–2 stories.','Phone Region view retains terrain, cover and labels, without building clusters.','Source land cover/canopy positions are composited into a softened regional canopy layer.']}
+ context_config=json.load(open(P/'regional-context.json'))
+ if rid in context_config:manifest['contextOverviews']=context_config[rid]
  manifest['coverageBounds']=coverage_bounds(packs,rid);manifest['continuousCoverage']=rid in COVERAGE
  context_report=A/'regions/context/tampa-bay/report.json'
  if rid in ['tampa-south-shore','st-pete-clearwater'] and context_report.exists():

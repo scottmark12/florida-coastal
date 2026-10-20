@@ -209,5 +209,9 @@
     "Phone Region view retains terrain, cover and labels, without building clusters.",
     "Source land cover/canopy positions are composited into a softened regional canopy layer."
   ],
-  "revision": "ad842bb9aa48ca75"
+  "revision": "ad842bb9aa48ca75",
+  "contextOverviews": [
+    "tampa-south-shore",
+    "st-pete-clearwater"
+  ]
 }
