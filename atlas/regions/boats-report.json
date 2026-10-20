@@ -2,6 +2,90 @@
   "description": "Illustrated marina occupancy from mapped dock geometry; not real-time boats.",
   "towns": [
     {
+      "town": "hobe-sound",
+      "boats": 0,
+      "mapped_docks": 0,
+      "placement_sources": 0,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "port-salerno",
+      "boats": 207,
+      "mapped_docks": 39,
+      "placement_sources": 40,
+      "mapped_marina_areas": 8
+    },
+    {
+      "town": "palm-city",
+      "boats": 508,
+      "mapped_docks": 71,
+      "placement_sources": 71,
+      "mapped_marina_areas": 3
+    },
+    {
+      "town": "stuart",
+      "boats": 1443,
+      "mapped_docks": 162,
+      "placement_sources": 163,
+      "mapped_marina_areas": 8
+    },
+    {
+      "town": "sewalls-point",
+      "boats": 1803,
+      "mapped_docks": 159,
+      "placement_sources": 160,
+      "mapped_marina_areas": 5
+    },
+    {
+      "town": "jensen-beach",
+      "boats": 366,
+      "mapped_docks": 44,
+      "placement_sources": 45,
+      "mapped_marina_areas": 5
+    },
+    {
+      "town": "port-st-lucie",
+      "boats": 207,
+      "mapped_docks": 28,
+      "placement_sources": 28,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "hutchinson-island",
+      "boats": 813,
+      "mapped_docks": 77,
+      "placement_sources": 78,
+      "mapped_marina_areas": 5
+    },
+    {
+      "town": "fortpierce",
+      "boats": 858,
+      "mapped_docks": 103,
+      "placement_sources": 106,
+      "mapped_marina_areas": 10
+    },
+    {
+      "town": "vero-beach",
+      "boats": 14,
+      "mapped_docks": 2,
+      "placement_sources": 2,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "indian-river-shores",
+      "boats": 158,
+      "mapped_docks": 19,
+      "placement_sources": 19,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "sebastian",
+      "boats": 1327,
+      "mapped_docks": 146,
+      "placement_sources": 146,
+      "mapped_marina_areas": 7
+    },
+    {
       "town": "oldsmar",
       "boats": 124,
       "mapped_docks": 20,
@@ -406,5 +490,5 @@
       "mapped_docks": 0
     }
   ],
-  "total_boats": 14774
+  "total_boats": 22478
 }

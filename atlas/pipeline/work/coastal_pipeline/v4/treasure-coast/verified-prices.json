@@ -34,5 +34,41 @@
     "median listing price",
     "September 2026",
     "https://www.realtor.com/local/market/florida/indian-river-county/sebastian"
+  ],
+  "hobe-sound": [
+    649450,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/martin-county/hobe-sound"
+  ],
+  "port-salerno": [
+    399900,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/martin-county/port-salerno"
+  ],
+  "palm-city": [
+    649900,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/martin-county/palm-city"
+  ],
+  "sewalls-point": [
+    1972500,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/martin-county/sewalls-point"
+  ],
+  "indian-river-shores": [
+    475000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/indian-river-county/indian-river-shores"
+  ],
+  "hutchinson-island": [
+    561750,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/st-lucie-county/hutchinson-island"
   ]
 }

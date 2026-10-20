@@ -1,0 +1,26 @@
+{
+  "region": "treasure-coast/fortpierce",
+  "building_count": 13525,
+  "tree_count": 35716,
+  "region_bytes": 199056,
+  "max_tile_bytes": 613335,
+  "max_anchor_error_m": 0.0109,
+  "max_coast_float32_error_m": 0.020801580054330398,
+  "height_sources": {
+    "assumed-house": 12599,
+    "estimated-nonresidential": 866,
+    "estimated-type-footprint": 17,
+    "levels": 43
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+  "exported_boundary_source_error_m": 4.981576150111237,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

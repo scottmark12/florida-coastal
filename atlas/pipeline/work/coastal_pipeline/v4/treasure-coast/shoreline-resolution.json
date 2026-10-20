@@ -1,0 +1,6 @@
+{
+  "source": "https://www.openstreetmap.org/relation/1240802",
+  "sea_river_seam_source": "https://www.openstreetmap.org/way/82576745",
+  "method": "The first three tidal coastline segments span open water at the sea/river transition, rather than a land edge. Preserve the complete land mask; replace that seam with the mapped river-water banks coincident with land. No invented edges, snapping or relaxed accuracy threshold.",
+  "sea_river_seam_length_m": 1004.5410180387868
+}

@@ -243,8 +243,8 @@
       "projection": "orthographic",
       "mapUnits": "kilometers"
     },
-    "bytes": 175296,
-    "revision": "729b70e9f940d030",
+    "bytes": 197538,
+    "revision": "c79264ab4090d756",
     "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021, CC BY 4.0 \u00b7 normalized Census/TIGER context",
     "styleReference": "Approved Sarasota and Bradenton regional illustration",
     "waterColor": "#71adbd"

@@ -11,7 +11,7 @@ registry=json.load(open(A/'regions/package-registry.json'));packages={};summary=
 for entry in json.load(open(sys.argv[1])):
  tid=entry['town']
  if 'error' in entry:summary.append(entry);continue
- pkg=registry[tid];rid=pkg.strip('/').split('/')[-1];m=json.load(open(P/'work/coastal_pipeline/v4'/rid/'manifest.json'))
+ pkg=registry[tid];rid=pkg.strip('/').removeprefix('packages/');m=json.load(open(P/'work/coastal_pipeline/v4'/rid/'manifest.json'))
  if rid not in packages:packages[rid]={'land':project(shape(json.load(open(P/m['inputs']['land']['path'])))),'boats':[],'towns':[],'sources':[],'dock_sources':[],'occupied':[],'seen':set(),'docks':[]}
  pack=packages[rid];land=pack['land'];root=E.parse(entry['path']).getroot();nodes={n.attrib['id']:(float(n.attrib['lon']),float(n.attrib['lat'])) for n in root.findall('node')};piers=[];marinas=[];marina_polygons=[]
  for w in root.findall('way'):

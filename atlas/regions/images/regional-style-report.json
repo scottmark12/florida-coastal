@@ -127,25 +127,6 @@
     },
     {
       "bounds": [
-        294.26934615412694,
-        230.80647494449696,
-        442.6279579582726,
-        333.3414503357294
-      ],
-      "width": 2304,
-      "height": 1592,
-      "counts": {
-        "buildings": 364673,
-        "roads": 50416,
-        "preserve_landcover_areas": 52236
-      },
-      "region": "treasure-coast",
-      "output_bytes": 175296,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         262.96825552192195,
         293.9507377942257,
         402.22901069001455,
@@ -241,25 +222,6 @@
     },
     {
       "bounds": [
-        -425.1888477351769,
-        -226.66663311517388,
-        558.5359493042099,
-        742.9916716839022
-      ],
-      "width": 4096,
-      "height": 4037,
-      "counts": {
-        "buildings": 0,
-        "roads": 862124,
-        "preserve_landcover_areas": 970616
-      },
-      "region": "_backdrop",
-      "output_bytes": 590294,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         327.786240448732,
         175.20813930152823,
         465.1057986053729,
@@ -274,6 +236,44 @@
       },
       "region": "palm-beaches",
       "output_bytes": 175030,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        -425.1888477351769,
+        -226.66663311517388,
+        558.5359493042099,
+        742.9916716839022
+      ],
+      "width": 4096,
+      "height": 4037,
+      "counts": {
+        "buildings": 0,
+        "roads": 862124,
+        "preserve_landcover_areas": 970616
+      },
+      "region": "_backdrop",
+      "output_bytes": 594630,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        294.26934615412694,
+        230.80647494449696,
+        442.6279579582726,
+        333.3414503357294
+      ],
+      "width": 2304,
+      "height": 1592,
+      "counts": {
+        "buildings": 364673,
+        "roads": 50416,
+        "preserve_landcover_areas": 52236
+      },
+      "region": "treasure-coast",
+      "output_bytes": 197538,
       "landcover_fraction": 1.0,
       "sourceOnly": true
     }

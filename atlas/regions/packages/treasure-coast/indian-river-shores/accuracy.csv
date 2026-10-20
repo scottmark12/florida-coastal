@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Indian River Shores,356.382568359375,417.09161376953125,-80.37814234332882,27.712408275620323,-80.3781423,27.7124084,0.0145,https://www.openstreetmap.org/node/154336086,Representative OSM town place-label anchor: Indian River Shores

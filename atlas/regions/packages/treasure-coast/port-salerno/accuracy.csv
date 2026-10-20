@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Port Salerno,375.79046630859375,354.55303955078125,-80.20060134150856,27.14421666714231,-80.2006014,27.1442168,0.0158,https://www.openstreetmap.org/node/154298455,Representative OSM town place-label anchor: Port Salerno

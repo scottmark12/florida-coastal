@@ -117,5 +117,17 @@
   "tequesta": "packages/palm-beaches/tequesta/",
   "lantana": "packages/palm-beaches/lantana/",
   "lake-park": "packages/palm-beaches/lake-park/",
-  "palm-beach-shores": "packages/palm-beaches/palm-beach-shores/"
+  "palm-beach-shores": "packages/palm-beaches/palm-beach-shores/",
+  "fortpierce": "packages/treasure-coast/fortpierce/",
+  "jensen-beach": "packages/treasure-coast/jensen-beach/",
+  "port-st-lucie": "packages/treasure-coast/port-st-lucie/",
+  "sebastian": "packages/treasure-coast/sebastian/",
+  "stuart": "packages/treasure-coast/stuart/",
+  "vero-beach": "packages/treasure-coast/vero-beach/",
+  "hobe-sound": "packages/treasure-coast/hobe-sound/",
+  "palm-city": "packages/treasure-coast/palm-city/",
+  "port-salerno": "packages/treasure-coast/port-salerno/",
+  "sewalls-point": "packages/treasure-coast/sewalls-point/",
+  "indian-river-shores": "packages/treasure-coast/indian-river-shores/",
+  "hutchinson-island": "packages/treasure-coast/hutchinson-island/"
 }

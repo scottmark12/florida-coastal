@@ -35,48 +35,96 @@
       "median listing price",
       "September 2026",
       "https://www.realtor.com/local/market/florida/indian-river-county/sebastian"
+    ],
+    "hobe-sound": [
+      649450,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/martin-county/hobe-sound"
+    ],
+    "port-salerno": [
+      399900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/martin-county/port-salerno"
+    ],
+    "palm-city": [
+      649900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/martin-county/palm-city"
+    ],
+    "sewalls-point": [
+      1972500,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/martin-county/sewalls-point"
+    ],
+    "indian-river-shores": [
+      475000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/indian-river-county/indian-river-shores"
+    ],
+    "hutchinson-island": [
+      561750,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/st-lucie-county/hutchinson-island"
+    ],
+    "palm-city-center": [
+      649900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/martin-county/palm-city"
     ]
   },
   "recipes": {
     "stuart": {
       "walls": [
-        "#d3eadc",
-        "#f3c9c3",
-        "#f8e1ac",
-        "#f7f0dd"
+        "#e9d6b3",
+        "#d2e4d7",
+        "#edc6b8",
+        "#f4e7cf",
+        "#c9dbe0"
       ],
       "roofs": [
-        "#bdc9c3",
-        "#dce0d3"
+        "#a3b7b3",
+        "#d3d9ce",
+        "#b2aaa0"
       ],
       "roof": "gable",
-      "detail": "porches",
+      "detail": "painted-wood-porches",
       "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
       "referenceScope": "regional context; palette is an editorial interpretation",
       "trim": [
         "#f6efdc",
         "#92b6a3"
-      ]
+      ],
+      "canopy": "live-oak"
     },
     "jensen-beach": {
       "walls": [
-        "#d1c3aa",
-        "#e4dcc4",
-        "#c7d3bf",
-        "#f1e6ca"
+        "#e9d6b3",
+        "#d2e4d7",
+        "#edc6b8",
+        "#f4e7cf",
+        "#c9dbe0"
       ],
       "roofs": [
-        "#aabbb1",
-        "#c6ccc0"
+        "#a3b7b3",
+        "#d3d9ce",
+        "#b2aaa0"
       ],
       "roof": "gable",
-      "detail": "porches",
+      "detail": "painted-wood-porches",
       "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
       "referenceScope": "regional context; palette is an editorial interpretation",
       "trim": [
         "#f6efdc",
         "#92b6a3"
-      ]
+      ],
+      "canopy": "live-oak"
     },
     "port-st-lucie": {
       "walls": [
@@ -89,7 +137,7 @@
         "#cdb59a"
       ],
       "roof": "gable",
-      "detail": "stucco",
+      "detail": "painted-wood-porches",
       "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
       "referenceScope": "regional context; palette is an editorial interpretation",
       "trim": [
@@ -108,10 +156,10 @@
         "#b5aa93",
         "#ddd8c7"
       ],
-      "roof": "flat",
-      "detail": "stucco",
-      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.choosefortpierce.com/224/About-Fort-Pierce",
+      "referenceScope": "Historic downtown Spanish Revival character; editorial palette.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -139,26 +187,220 @@
     },
     "sebastian": {
       "walls": [
-        "#d1c3aa",
-        "#e4dcc4",
-        "#c7d3bf",
-        "#f1e6ca"
+        "#e9d6b3",
+        "#d2e4d7",
+        "#edc6b8",
+        "#f4e7cf",
+        "#c9dbe0"
       ],
       "roofs": [
-        "#aabbb1",
-        "#c6ccc0"
+        "#a3b7b3",
+        "#d3d9ce",
+        "#b2aaa0"
       ],
       "roof": "gable",
-      "detail": "porches",
+      "detail": "painted-wood-porches",
       "source": "https://www.visitflorida.com/places-to-go/central-east/sebastian/",
       "referenceScope": "district reference",
       "trim": [
         "#f6efdc",
         "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "hobe-sound": {
+      "walls": [
+        "#e9d6b3",
+        "#d2e4d7",
+        "#edc6b8",
+        "#f4e7cf",
+        "#c9dbe0"
+      ],
+      "roofs": [
+        "#a3b7b3",
+        "#d3d9ce",
+        "#b2aaa0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "port-salerno": {
+      "walls": [
+        "#e9d6b3",
+        "#d2e4d7",
+        "#edc6b8",
+        "#f4e7cf",
+        "#c9dbe0"
+      ],
+      "roofs": [
+        "#a3b7b3",
+        "#d3d9ce",
+        "#b2aaa0"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://discovermartin.com/communities/port-salerno/",
+      "referenceScope": "Working fishing village and Manatee Pocket waterfront.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "palm-city": {
+      "walls": [
+        "#f4e6cb",
+        "#ead6bb",
+        "#d6dfcc"
+      ],
+      "roofs": [
+        "#b68e75",
+        "#c5aa8c",
+        "#a7b4ae"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "sewalls-point": {
+      "walls": [
+        "#f4e6cb",
+        "#ead6bb",
+        "#d6dfcc"
+      ],
+      "roofs": [
+        "#b68e75",
+        "#c5aa8c",
+        "#a7b4ae"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
+    },
+    "indian-river-shores": {
+      "walls": [
+        "#fff0d1",
+        "#e9ce9e",
+        "#f6e4c5",
+        "#d7b186"
+      ],
+      "roofs": [
+        "#bd8368",
+        "#cf9e7a"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
       ]
+    },
+    "hutchinson-island": {
+      "walls": [
+        "#faf3e1",
+        "#dfebe6",
+        "#eed4ce",
+        "#e4e7dc"
+      ],
+      "roofs": [
+        "#c6d2cd",
+        "#e5dfcc"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "palm-city-center": {
+      "walls": [
+        "#f4e6cb",
+        "#ead6bb",
+        "#d6dfcc"
+      ],
+      "roofs": [
+        "#b68e75",
+        "#c5aa8c",
+        "#a7b4ae"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ],
+      "canopy": "live-oak"
     }
   },
   "manual_fixes": [
-    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory."
-  ]
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Added six coastal and riverfront communities to complement the existing six Treasure Coast cities. Source bounds include real downtowns, lagoon crossings and barrier-island context.",
+    "Palm City has no town-label node in the snapshot. Used the real Old Palm City place node (154183414) as its explicitly identified riverfront representative anchor.",
+    "Applied the existing low residential porch recipe to untagged small residential footprints, preserving the approved 1\u20132 story house default; explicit commercial, hotel and apartment tags retain their own height handling.",
+    "The Manatee Pocket open-water sea/river seam was replaced by the actual mapped tidal river banks for shoreline validation; the OSM land mask was preserved. See shoreline-resolution.json.",
+    "Added nested Town package lookup support to the existing boat exporter; vessel placement rules are unchanged.",
+    "Hero cameras are curated to mapped waterfronts, downtown streets, parks or marinas; see town-hero-sources.json."
+  ],
+  "priceEvidence": {
+    "hobe-sound": {
+      "checked": "2026-10-20"
+    },
+    "port-salerno": {
+      "checked": "2026-10-20"
+    },
+    "palm-city": {
+      "checked": "2026-10-20"
+    },
+    "sewalls-point": {
+      "checked": "2026-10-20"
+    },
+    "indian-river-shores": {
+      "checked": "2026-10-20"
+    },
+    "hutchinson-island": {
+      "checked": "2026-10-20"
+    }
+  },
+  "skip_town_centers": [
+    "palm-city"
+  ],
+  "extraDistricts": [
+    {
+      "id": "palm-city-center",
+      "town": "palm-city",
+      "name": "Palm City",
+      "kind": "walk",
+      "description": "Old Palm City\u2019s riverfront neighborhoods and lagoon crossings.",
+      "style": "palm-city-center"
+    }
+  ],
+  "osmAnchors": {
+    "palm-city-center": 154183414
+  }
 }

@@ -800,10 +800,10 @@
       "name": "Fort Pierce",
       "region": "Treasure Coast",
       "coast": "atlantic",
-      "lat": 27.45,
-      "lon": -80.33,
+      "lat": 27.4467056,
+      "lon": -80.3256056,
       "tier": 1,
-      "price": null,
+      "price": "$341,151 median listing price \u00b7 September 2026",
       "vibes": [
         "afford",
         "dock"
@@ -825,8 +825,8 @@
       "cons": [
         "Fewer upscale amenities"
       ],
-      "x": 361.98539208350826,
-      "y": 388.1045982320245,
+      "x": 362.42959835700856,
+      "y": 387.75184171340175,
       "area_id": "treasure-coast",
       "area_name": "The Treasure Coast",
       "source_url": "https://www.floridacoastal.co/towns/fortpierce.html",
@@ -3450,10 +3450,10 @@
       "name": "Jensen Beach",
       "region": "Treasure Coast",
       "coast": "atlantic",
-      "lat": 27.255,
-      "lon": -80.231,
+      "lat": 27.2500487,
+      "lon": -80.2304161,
       "tier": 2,
-      "price": null,
+      "price": "$504,444 median listing price \u00b7 September 2026",
       "vibes": [
         "island"
       ],
@@ -3476,8 +3476,8 @@
         "Far from a major airport",
         "A small downtown"
       ],
-      "x": 372.408827674914,
-      "y": 366.75605705159757,
+      "x": 372.48330764650814,
+      "y": 366.20829139965974,
       "area_id": "treasure-coast",
       "area_name": "The Treasure Coast",
       "source_url": "https://www.floridacoastal.co/towns/jensen-beach.html",
@@ -3488,10 +3488,10 @@
       "name": "Port St. Lucie",
       "region": "Treasure Coast",
       "coast": "atlantic",
-      "lat": 27.294,
-      "lon": -80.35,
+      "lat": 27.2939333,
+      "lon": -80.3503283,
       "tier": 1,
-      "price": null,
+      "price": "$429,900 median listing price \u00b7 September 2026",
       "vibes": [
         "afford"
       ],
@@ -3514,8 +3514,8 @@
         "Spread out, with no real downtown",
         "Not on the ocean"
       ],
-      "x": 360.5259576355677,
-      "y": 370.7309920655701,
+      "x": 360.49375869408726,
+      "y": 370.722629147642,
       "area_id": "treasure-coast",
       "area_name": "The Treasure Coast",
       "source_url": "https://www.floridacoastal.co/towns/port-st-lucie.html",
@@ -3526,10 +3526,10 @@
       "name": "Sebastian",
       "region": "Treasure Coast",
       "coast": "atlantic",
-      "lat": 27.817,
-      "lon": -80.471,
+      "lat": 27.817357,
+      "lon": -80.4694039,
       "tier": 1,
-      "price": null,
+      "price": "$383,900 median listing price \u00b7 September 2026",
       "vibes": [
         "afford",
         "oldfl",
@@ -3554,8 +3554,8 @@
         "Quiet nightlife",
         "Beaches are across the lagoon"
       ],
-      "x": 346.9157578014098,
-      "y": 428.43706985585806,
+      "x": 347.0714834352874,
+      "y": 428.4811908032168,
       "area_id": "treasure-coast",
       "area_name": "The Treasure Coast",
       "source_url": "https://www.floridacoastal.co/towns/sebastian.html",
@@ -3566,10 +3566,10 @@
       "name": "Stuart",
       "region": "Treasure Coast",
       "coast": "atlantic",
-      "lat": 27.197,
-      "lon": -80.253,
+      "lat": 27.197983,
+      "lon": -80.2519175,
       "tier": 2,
-      "price": null,
+      "price": "$429,000 median listing price \u00b7 September 2026",
       "vibes": [
         "dock"
       ],
@@ -3592,8 +3592,8 @@
         "River water quality problems some summers",
         "Far from a major airport"
       ],
-      "x": 370.43137391503126,
-      "y": 360.25259232964595,
+      "x": 370.535040742097,
+      "y": 360.3649433094779,
       "area_id": "treasure-coast",
       "area_name": "The Treasure Coast",
       "source_url": "https://www.floridacoastal.co/towns/stuart.html",
@@ -3604,10 +3604,10 @@
       "name": "Vero Beach",
       "region": "Treasure Coast",
       "coast": "atlantic",
-      "lat": 27.639,
-      "lon": -80.397,
+      "lat": 27.6387163,
+      "lon": -80.3975399,
       "tier": 2,
-      "price": "$390K median",
+      "price": "$425,000 median listing price \u00b7 September 2026",
       "vibes": [
         "sophcalm"
       ],
@@ -3630,8 +3630,8 @@
         "Quiet at night",
         "Far from a major airport"
       ],
-      "x": 354.76569895168245,
-      "y": 408.88871510493726,
+      "x": 354.71347361470396,
+      "y": 408.8556706286013,
       "area_id": "treasure-coast",
       "area_name": "The Treasure Coast",
       "source_url": "https://www.floridacoastal.co/towns/vero-beach.html",
@@ -5265,6 +5265,120 @@
       "y": 314.44097190687046,
       "tier": 2,
       "nearest_town_km": 0
+    },
+    {
+      "id": "hobe-sound",
+      "name": "Hobe Sound",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.1364323,
+      "lat": 27.059498,
+      "price": "$649,450 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "Leafy low-rise village, Bridge Road banyans and the beach across the lagoon.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "x": 382.429900015714,
+      "y": 345.34827870146296
+    },
+    {
+      "id": "port-salerno",
+      "name": "Port Salerno",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.2006014,
+      "lat": 27.1442168,
+      "price": "$399,900 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "Working fishing docks and small painted cottages around Manatee Pocket.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "x": 375.79046007071815,
+      "y": 354.55305411735606
+    },
+    {
+      "id": "palm-city",
+      "name": "Palm City",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.267144,
+      "lat": 27.1683855,
+      "price": "$649,900 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "Riverfront homes, canal neighborhoods and leafy golf communities west of Stuart.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "x": 369.12967869557895,
+      "y": 357.0343941827782
+    },
+    {
+      "id": "sewalls-point",
+      "name": "Sewall\u2019s Point",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.2022684,
+      "lat": 27.1994926,
+      "price": "$1,972,500 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "A densely wooded peninsula of waterfront homes between two rivers.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "x": 375.43664236523637,
+      "y": 360.682658309409
+    },
+    {
+      "id": "indian-river-shores",
+      "name": "Indian River Shores",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.3781423,
+      "lat": 27.7124084,
+      "price": "$475,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "Quiet barrier-island villas and low-rise oceanfront homes amid coastal canopy.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "x": 356.38257221597974,
+      "y": 417.0916277013069
+    },
+    {
+      "id": "hutchinson-island",
+      "name": "Hutchinson Island",
+      "region": "Atlantic Coast \u00b7 Treasure Coast",
+      "coast": "atlantic",
+      "lon": -80.2161581,
+      "lat": 27.2961557,
+      "price": "$561,750 median listing price \u00b7 September 2026",
+      "vibes": [
+        "dock",
+        "beaches"
+      ],
+      "blurb": "Atlantic beaches, lagoon marinas, dunes and white coastal condominium clusters.",
+      "area_id": "treasure-coast",
+      "area_name": "The Treasure Coast",
+      "source_url": "https://www.visitflorida.com/travel-ideas/articles/florida-beaches-exploring-the-treasure-coast/",
+      "x": 373.7346692100232,
+      "y": 371.3687252120372
     }
   ],
   "regions": [
@@ -5613,11 +5727,17 @@
       "hpos": "center 42%",
       "text": "Named for the Spanish treasure fleet that wrecked here in 1715. It is a lower key run of river towns and uncrowded barrier island beaches from Stuart to Sebastian, with no high rise skyline.",
       "towns": [
+        "hobe-sound",
+        "port-salerno",
+        "palm-city",
         "stuart",
+        "sewalls-point",
         "jensen-beach",
         "port-st-lucie",
+        "hutchinson-island",
         "fortpierce",
         "vero-beach",
+        "indian-river-shores",
         "sebastian"
       ],
       "center": [

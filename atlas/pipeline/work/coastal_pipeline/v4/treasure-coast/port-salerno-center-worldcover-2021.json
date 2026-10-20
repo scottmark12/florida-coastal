@@ -1,0 +1,24 @@
+{
+  "path": "work/coastal_pipeline/v4/treasure-coast/port-salerno-center-worldcover-2021.png",
+  "bounds": [
+    -80.22466666666666,
+    27.12025,
+    -80.17666666666666,
+    27.16825
+  ],
+  "canopyRGB": [
+    38,
+    115,
+    0
+  ],
+  "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+  "surveyYear": 2021,
+  "district": "port-salerno-center",
+  "license": "CC BY 4.0",
+  "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+  "classes": [
+    10,
+    95
+  ],
+  "resolutionMeters": 10
+}

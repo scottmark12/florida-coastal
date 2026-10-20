@@ -6,5 +6,9 @@
   {
     "manifest": "work/coastal_pipeline/v4/palm-beaches/manifest.json",
     "reason": "Complete Palm Beaches OSM coast, lagoon and inland water mask for the expanded 16-town region."
+  },
+  {
+    "manifest": "work/coastal_pipeline/v4/treasure-coast/manifest.json",
+    "reason": "Complete Treasure Coast OSM lagoon, coastal river and barrier-island masks for the 12-town region."
   }
 ]
