@@ -12,9 +12,9 @@
     "https://www.realtor.com/local/market/florida/volusia-county/port-orange"
   ],
   "south-daytona": [
-    238748,
+    230000,
     "median listing price",
-    "August 2026",
+    "September 2026",
     "https://www.realtor.com/local/market/florida/volusia-county/south-daytona"
   ],
   "daytona-beach-shores": [
@@ -46,5 +46,35 @@
     "median listing price",
     "September 2026",
     "https://www.realtor.com/local/market/florida/flagler-county/palm-coast"
+  ],
+  "edgewater": [
+    338000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/volusia-county"
+  ],
+  "holly-hill": [
+    275000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/volusia-county"
+  ],
+  "ormond-by-the-sea": [
+    370000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/volusia-county"
+  ],
+  "beverly-beach": [
+    982000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/flagler-county"
+  ],
+  "ponce-inlet": [
+    655900,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/volusia-county/ponce-inlet"
   ]
 }

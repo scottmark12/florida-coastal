@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Daytona Beach,288.94305419921875,581.7485961914062,-81.02283323259658,29.21081460541798,-81.0228331,29.2108147,0.0166,https://www.openstreetmap.org/node/154347957,Representative OSM town place-label anchor: Daytona Beach

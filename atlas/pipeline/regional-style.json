@@ -95,7 +95,12 @@
       "merritt-island",
       "titusville",
       "melbourne-beach",
-      "satellite-beach"
+      "satellite-beach",
+      "nsb",
+      "flagler",
+      "palm-coast",
+      "ponce-inlet",
+      "ormond-beach"
     ]
   },
   "exports": {

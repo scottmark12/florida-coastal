@@ -1,0 +1,97 @@
+{
+  "id": "daytona-flagler/south-daytona",
+  "name": "South Daytona",
+  "towns": [
+    "south-daytona"
+  ],
+  "bounds": [
+    -81.05,
+    29.126,
+    -80.96,
+    29.206
+  ],
+  "recipes": "work/coastal_pipeline/v4/daytona-flagler/recipes.json",
+  "camera": {
+    "center": [
+      290.84341808509595,
+      576.7963452664483
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "south-daytona-center": "south-daytona"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Curated real waterfront hero cameras; place-label coordinates remain the district source anchors.",
+    "Flagler Beach pier is under reconstruction: mapped pier geometry is not a statement that the pier is open. See https://www.cityofflaglerbeach.com/334/Downtown-City-Projects.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/daytona-flagler/geography.json.gz",
+      "work/coastal_pipeline/v4/daytona-flagler/cover.json.gz",
+      "work/coastal_pipeline/v4/daytona-flagler/district-south-daytona.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/daytona-flagler/districts.json",
+    "prices": "work/coastal_pipeline/v4/daytona-flagler/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/south-daytona/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/south-daytona/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/south-daytona/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/south-daytona/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/daytona-flagler/south-daytona/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/daytona-flagler/south-daytona-center-worldcover-2021.png",
+        "bounds": [
+          -81.0285,
+          29.141833333333334,
+          -80.9805,
+          29.189833333333333
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "south-daytona-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  }
+}

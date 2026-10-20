@@ -13,9 +13,9 @@
       "https://www.realtor.com/local/market/florida/volusia-county/port-orange"
     ],
     "south-daytona": [
-      238748,
+      230000,
       "median listing price",
-      "August 2026",
+      "September 2026",
       "https://www.realtor.com/local/market/florida/volusia-county/south-daytona"
     ],
     "daytona-beach-shores": [
@@ -47,6 +47,36 @@
       "median listing price",
       "September 2026",
       "https://www.realtor.com/local/market/florida/flagler-county/palm-coast"
+    ],
+    "edgewater": [
+      338000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/volusia-county"
+    ],
+    "holly-hill": [
+      275000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/volusia-county"
+    ],
+    "ormond-by-the-sea": [
+      370000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/volusia-county"
+    ],
+    "beverly-beach": [
+      982000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/flagler-county"
+    ],
+    "ponce-inlet": [
+      655900,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/volusia-county/ponce-inlet"
     ]
   },
   "recipes": {
@@ -62,9 +92,9 @@
         "#dce0d3"
       ],
       "roof": "gable",
-      "detail": "porches",
-      "source": "https://www.daytonabeach.com/things-to-do/districts/beach-street/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitnsbfl.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -82,9 +112,9 @@
         "#d2d5c5"
       ],
       "roof": "gable",
-      "detail": "stucco",
-      "source": "https://www.daytonabeach.com/things-to-do/districts/beach-street/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "detail": "painted-wood-porches",
+      "source": "https://www.daytonabeach.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -102,9 +132,9 @@
         "#d2d5c5"
       ],
       "roof": "gable",
-      "detail": "stucco",
-      "source": "https://www.daytonabeach.com/things-to-do/districts/beach-street/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "detail": "painted-wood-porches",
+      "source": "https://www.daytonabeach.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -113,18 +143,18 @@
     "daytona-beach-shores": {
       "walls": [
         "#f5edda",
-        "#c0dcd7",
-        "#e9d9c0",
-        "#d5e8e1"
+        "#d0e3d7",
+        "#e7d6c2",
+        "#f1d4cb"
       ],
       "roofs": [
-        "#d4dfd3",
-        "#a8c4bd"
+        "#bdc9c3",
+        "#dce0d3"
       ],
-      "roof": "flat",
-      "detail": "balconies",
-      "source": "https://www.daytonabeach.com/things-to-do/districts/beach-street/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.daytonabeach.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -133,18 +163,18 @@
     "daytona": {
       "walls": [
         "#f5edda",
-        "#c0dcd7",
-        "#e9d9c0",
-        "#d5e8e1"
+        "#d0e3d7",
+        "#e7d6c2",
+        "#f1d4cb"
       ],
       "roofs": [
-        "#d4dfd3",
-        "#a8c4bd"
+        "#bdc9c3",
+        "#dce0d3"
       ],
-      "roof": "flat",
-      "detail": "balconies",
-      "source": "https://daytonabeach.gov/274/Historic-Preservation",
-      "referenceScope": "district reference",
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.daytonabeach.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -162,9 +192,9 @@
         "#cf9e7a"
       ],
       "roof": "gable",
-      "detail": "stucco",
-      "source": "https://www.daytonabeach.com/things-to-do/districts/beach-street/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "detail": "painted-wood-porches",
+      "source": "https://www.daytonabeach.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -182,9 +212,9 @@
         "#dce0d3"
       ],
       "roof": "gable",
-      "detail": "porches",
-      "source": "https://www.visitflagler.com/where-to-stay/vacation-rentals/",
-      "referenceScope": "district reference",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflagler.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -201,9 +231,109 @@
         "#cdb59a"
       ],
       "roof": "gable",
-      "detail": "stucco",
-      "source": "https://www.daytonabeach.com/things-to-do/districts/beach-street/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflagler.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "ponce-inlet": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.daytonabeach.com/things-to-do/districts/ponce-inlet/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "edgewater": {
+      "walls": [
+        "#e4e5cf",
+        "#c9ded3",
+        "#f2deb8",
+        "#f4eddb"
+      ],
+      "roofs": [
+        "#bac5b8",
+        "#d2d5c5"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitnsbfl.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "holly-hill": {
+      "walls": [
+        "#e4e5cf",
+        "#c9ded3",
+        "#f2deb8",
+        "#f4eddb"
+      ],
+      "roofs": [
+        "#bac5b8",
+        "#d2d5c5"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.daytonabeach.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "ormond-by-the-sea": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.daytonabeach.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "beverly-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitflagler.com/",
+      "referenceScope": "Local visitor guide character reference; palettes interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -211,6 +341,85 @@
     }
   },
   "manual_fixes": [
-    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory."
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Curated real waterfront hero cameras; place-label coordinates remain the district source anchors.",
+    "Flagler Beach pier is under reconstruction: mapped pier geometry is not a statement that the pier is open. See https://www.cityofflaglerbeach.com/334/Downtown-City-Projects.",
+    "At Ponce Inlet, replace OSM coastline way 80146691 (open-water sea/river seam) with actual river banks from OSM relation 1204546; preserve land mask and the 150 m accuracy gate.",
+    "Checked illustrative crown overlaps within 12 m of the mapped Ponce Inlet lighthouse; no crowns needed removal. Its footprint-specific recipe prevents the generic building=yes tag from classifying it as a house; source geometry and the height cap are unchanged."
+  ],
+  "priceEvidence": {
+    "nsb": {
+      "checked": "2026-10-20"
+    },
+    "port-orange": {
+      "checked": "2026-10-20"
+    },
+    "south-daytona": {
+      "checked": "2026-10-20"
+    },
+    "daytona-beach-shores": {
+      "checked": "2026-10-20"
+    },
+    "daytona": {
+      "checked": "2026-10-20"
+    },
+    "ormond-beach": {
+      "checked": "2026-10-20"
+    },
+    "flagler": {
+      "checked": "2026-10-20"
+    },
+    "palm-coast": {
+      "checked": "2026-10-20"
+    },
+    "edgewater": {
+      "checked": "2026-10-20"
+    },
+    "holly-hill": {
+      "checked": "2026-10-20"
+    },
+    "ormond-by-the-sea": {
+      "checked": "2026-10-20"
+    },
+    "beverly-beach": {
+      "checked": "2026-10-20"
+    },
+    "ponce-inlet": {
+      "checked": "2026-10-20"
+    }
+  },
+  "nonBoatingWays": [
+    333300755,
+    350952077,
+    682408641,
+    984754695
+  ],
+  "reference_sources": [
+    {
+      "topic": "Daytona Beach Street and beachside districts",
+      "url": "https://www.daytonabeach.com/things-to-do/districts/beach-street/",
+      "checked": "2026-10-20"
+    },
+    {
+      "topic": "Ponce Inlet lighthouse height and history",
+      "url": "https://www.ponceinlet.org/tour-explore/explore-the-museum/explore-the-ponce-inlet-light-station/lighthouse-tower/",
+      "height_feet": 175,
+      "checked": "2026-10-20"
+    },
+    {
+      "topic": "Flagler pier reconstruction status",
+      "url": "https://www.cityofflaglerbeach.com/334/Downtown-City-Projects",
+      "checked": "2026-10-20"
+    },
+    {
+      "topic": "Ormond waterfront parks",
+      "url": "https://www.ormondbeach.org/facilities/facility/details/Fortunato-Park-25",
+      "checked": "2026-10-20"
+    },
+    {
+      "topic": "Port Orange waterfront",
+      "url": "https://www.port-orange.org/Facilities/Facility/Details/Riverwalk-Park-19",
+      "checked": "2026-10-20"
+    }
   ]
 }

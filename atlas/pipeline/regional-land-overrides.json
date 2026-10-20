@@ -14,5 +14,9 @@
   {
     "manifest": "work/coastal_pipeline/v4/space-coast/manifest.json",
     "reason": "Complete Space Coast OSM Indian River/Banana River lagoon and barrier-island mask for the 13-town region."
+  },
+  {
+    "manifest": "work/coastal_pipeline/v4/daytona-flagler/manifest.json",
+    "reason": "Complete Daytona and Flagler OSM coast, Halifax estuary, lagoon and inland water mask for the expanded 13-town region."
   }
 ]

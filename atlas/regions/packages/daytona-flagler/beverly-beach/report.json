@@ -1,0 +1,26 @@
+{
+  "region": "daytona-flagler/beverly-beach",
+  "building_count": 4732,
+  "tree_count": 64093,
+  "region_bytes": 128188,
+  "max_tile_bytes": 407655,
+  "max_anchor_error_m": 0.02,
+  "max_coast_float32_error_m": 0.03396428406696999,
+  "height_sources": {
+    "assumed-house": 4473,
+    "estimated-nonresidential": 248,
+    "estimated-type-footprint": 8,
+    "levels": 3
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+  "exported_boundary_source_error_m": 4.960733316143303,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

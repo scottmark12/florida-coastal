@@ -142,5 +142,18 @@
   "merritt-island": "packages/space-coast/merritt-island/",
   "rockledge": "packages/space-coast/rockledge/",
   "cocoa-village": "packages/space-coast/cocoa-village/",
-  "indian-harbour-beach": "packages/space-coast/indian-harbour-beach/"
+  "indian-harbour-beach": "packages/space-coast/indian-harbour-beach/",
+  "nsb": "packages/daytona-flagler/nsb/",
+  "daytona": "packages/daytona-flagler/daytona/",
+  "flagler": "packages/daytona-flagler/flagler/",
+  "daytona-beach-shores": "packages/daytona-flagler/daytona-beach-shores/",
+  "ormond-beach": "packages/daytona-flagler/ormond-beach/",
+  "palm-coast": "packages/daytona-flagler/palm-coast/",
+  "port-orange": "packages/daytona-flagler/port-orange/",
+  "south-daytona": "packages/daytona-flagler/south-daytona/",
+  "ponce-inlet": "packages/daytona-flagler/ponce-inlet/",
+  "edgewater": "packages/daytona-flagler/edgewater/",
+  "holly-hill": "packages/daytona-flagler/holly-hill/",
+  "ormond-by-the-sea": "packages/daytona-flagler/ormond-by-the-sea/",
+  "beverly-beach": "packages/daytona-flagler/beverly-beach/"
 }

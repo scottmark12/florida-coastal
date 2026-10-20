@@ -127,25 +127,6 @@
     },
     {
       "bounds": [
-        225.10034213700698,
-        366.3453250531644,
-        359.28093475788836,
-        478.3891525055593
-      ],
-      "width": 2304,
-      "height": 1924,
-      "counts": {
-        "buildings": 522910,
-        "roads": 66360,
-        "preserve_landcover_areas": 78548
-      },
-      "region": "daytona-flagler",
-      "output_bytes": 219110,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         158.82933845739308,
         425.28106491190715,
         352.7111584856481,
@@ -241,25 +222,6 @@
     },
     {
       "bounds": [
-        -425.1888477351769,
-        -226.66663311517388,
-        558.5359493042099,
-        742.9916716839022
-      ],
-      "width": 4096,
-      "height": 4037,
-      "counts": {
-        "buildings": 0,
-        "roads": 862124,
-        "preserve_landcover_areas": 970616
-      },
-      "region": "_backdrop",
-      "output_bytes": 595016,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         262.96825552192195,
         293.9507377942257,
         402.22901069001455,
@@ -274,6 +236,44 @@
       },
       "region": "space-coast",
       "output_bytes": 241626,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        -425.1888477351769,
+        -226.66663311517388,
+        558.5359493042099,
+        742.9916716839022
+      ],
+      "width": 4096,
+      "height": 4037,
+      "counts": {
+        "buildings": 0,
+        "roads": 862124,
+        "preserve_landcover_areas": 970616
+      },
+      "region": "_backdrop",
+      "output_bytes": 599118,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        225.10034213700698,
+        366.3453250531644,
+        359.28093475788836,
+        478.3891525055593
+      ],
+      "width": 2304,
+      "height": 1924,
+      "counts": {
+        "buildings": 522910,
+        "roads": 66360,
+        "preserve_landcover_areas": 78548
+      },
+      "region": "daytona-flagler",
+      "output_bytes": 252592,
       "landcover_fraction": 1.0,
       "sourceOnly": true
     }

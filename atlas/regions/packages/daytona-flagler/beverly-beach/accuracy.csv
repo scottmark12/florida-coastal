@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Beverly Beach,276.3553771972656,615.2025756835938,-81.1445044348475,29.514697070696172,-81.1445045,29.5146969,0.02,https://www.openstreetmap.org/node/154347982,Representative OSM town place-label anchor: Beverly Beach

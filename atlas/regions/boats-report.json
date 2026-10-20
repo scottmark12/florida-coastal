@@ -2,6 +2,97 @@
   "description": "Illustrated marina occupancy from mapped dock geometry; not real-time boats.",
   "towns": [
     {
+      "town": "nsb",
+      "boats": 655,
+      "mapped_docks": 103,
+      "placement_sources": 112,
+      "mapped_marina_areas": 14
+    },
+    {
+      "town": "port-orange",
+      "boats": 366,
+      "mapped_docks": 63,
+      "placement_sources": 65,
+      "mapped_marina_areas": 3
+    },
+    {
+      "town": "south-daytona",
+      "boats": 467,
+      "mapped_docks": 66,
+      "placement_sources": 69,
+      "mapped_marina_areas": 5
+    },
+    {
+      "town": "daytona-beach-shores",
+      "boats": 303,
+      "mapped_docks": 57,
+      "placement_sources": 57,
+      "mapped_marina_areas": 3
+    },
+    {
+      "town": "daytona",
+      "boats": 362,
+      "mapped_docks": 61,
+      "placement_sources": 61,
+      "mapped_marina_areas": 4
+    },
+    {
+      "town": "ormond-beach",
+      "boats": 1077,
+      "mapped_docks": 188,
+      "placement_sources": 188,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "flagler",
+      "boats": 292,
+      "mapped_docks": 62,
+      "placement_sources": 64,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "palm-coast",
+      "boats": 314,
+      "mapped_docks": 29,
+      "placement_sources": 32,
+      "mapped_marina_areas": 3
+    },
+    {
+      "town": "ponce-inlet",
+      "boats": 418,
+      "mapped_docks": 72,
+      "placement_sources": 74,
+      "mapped_marina_areas": 7
+    },
+    {
+      "town": "edgewater",
+      "boats": 576,
+      "mapped_docks": 98,
+      "placement_sources": 103,
+      "mapped_marina_areas": 7
+    },
+    {
+      "town": "holly-hill",
+      "boats": 271,
+      "mapped_docks": 39,
+      "placement_sources": 40,
+      "mapped_marina_areas": 4
+    },
+    {
+      "town": "ormond-by-the-sea",
+      "boats": 510,
+      "mapped_docks": 126,
+      "placement_sources": 126,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "beverly-beach",
+      "boats": 318,
+      "mapped_docks": 74,
+      "placement_sources": 76,
+      "mapped_marina_areas": 2
+    },
+    {
       "town": "palm-bay",
       "boats": 428,
       "mapped_docks": 86,
@@ -581,5 +672,5 @@
       "mapped_docks": 0
     }
   ],
-  "total_boats": 31054
+  "total_boats": 36983
 }

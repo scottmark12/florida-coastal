@@ -1,0 +1,401 @@
+{
+  "towns": [
+    "nsb",
+    "port-orange",
+    "south-daytona",
+    "daytona-beach-shores",
+    "daytona",
+    "ormond-beach",
+    "flagler",
+    "palm-coast",
+    "ponce-inlet",
+    "edgewater",
+    "holly-hill",
+    "ormond-by-the-sea",
+    "beverly-beach"
+  ],
+  "districts": 13,
+  "max_anchor_error_m": 0.0308,
+  "max_serialized_coast_source_error_m": 5.001297102984087,
+  "phone_hardware_verified": false,
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Curated real waterfront hero cameras; place-label coordinates remain the district source anchors.",
+    "Flagler Beach pier is under reconstruction: mapped pier geometry is not a statement that the pier is open. See https://www.cityofflaglerbeach.com/334/Downtown-City-Projects.",
+    "At Ponce Inlet, replace OSM coastline way 80146691 (open-water sea/river seam) with actual river banks from OSM relation 1204546; preserve land mask and the 150 m accuracy gate.",
+    "Checked illustrative crown overlaps within 12 m of the mapped Ponce Inlet lighthouse; no crowns needed removal. Its footprint-specific recipe prevents the generic building=yes tag from classifying it as a house; source geometry and the height cap are unchanged."
+  ],
+  "town_reports": [
+    {
+      "region": "daytona-flagler/nsb",
+      "building_count": 8195,
+      "tree_count": 155561,
+      "region_bytes": 223824,
+      "max_tile_bytes": 621181,
+      "max_anchor_error_m": 0.0236,
+      "max_coast_float32_error_m": 0.031166968661250197,
+      "height_sources": {
+        "assumed-house": 7222,
+        "estimated-nonresidential": 946,
+        "estimated-type-footprint": 25,
+        "levels": 2
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.723696515771435,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/port-orange",
+      "building_count": 29266,
+      "tree_count": 47840,
+      "region_bytes": 470866,
+      "max_tile_bytes": 908285,
+      "max_anchor_error_m": 0.0249,
+      "max_coast_float32_error_m": 0.03366013773692725,
+      "height_sources": {
+        "assumed-house": 27732,
+        "estimated-nonresidential": 1386,
+        "estimated-type-footprint": 79,
+        "height": 1,
+        "levels": 68
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.892440698734272,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/south-daytona",
+      "building_count": 23817,
+      "tree_count": 62610,
+      "region_bytes": 380622,
+      "max_tile_bytes": 785718,
+      "max_anchor_error_m": 0.0199,
+      "max_coast_float32_error_m": 0.03366013773692725,
+      "height_sources": {
+        "assumed-house": 21776,
+        "estimated-nonresidential": 1841,
+        "estimated-type-footprint": 113,
+        "height": 9,
+        "levels": 78
+      },
+      "max_height_width_ratio": 3.000000000000001,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.892440698734272,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/daytona-beach-shores",
+      "building_count": 12424,
+      "tree_count": 4098,
+      "region_bytes": 215164,
+      "max_tile_bytes": 718884,
+      "max_anchor_error_m": 0.0193,
+      "max_coast_float32_error_m": 0.03366013773692725,
+      "height_sources": {
+        "assumed-house": 11110,
+        "estimated-nonresidential": 1155,
+        "estimated-type-footprint": 101,
+        "levels": 58
+      },
+      "max_height_width_ratio": 3.000000000000001,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.892440698734272,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/daytona",
+      "building_count": 33318,
+      "tree_count": 63834,
+      "region_bytes": 559134,
+      "max_tile_bytes": 836439,
+      "max_anchor_error_m": 0.0166,
+      "max_coast_float32_error_m": 0.032594348134921,
+      "height_sources": {
+        "assumed-house": 29320,
+        "estimated-nonresidential": 3661,
+        "estimated-type-footprint": 197,
+        "height": 22,
+        "levels": 118
+      },
+      "max_height_width_ratio": 3.000000000000001,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.992990390445634,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/ormond-beach",
+      "building_count": 20128,
+      "tree_count": 79085,
+      "region_bytes": 302126,
+      "max_tile_bytes": 836432,
+      "max_anchor_error_m": 0.0266,
+      "max_coast_float32_error_m": 0.03323654232854381,
+      "height_sources": {
+        "assumed-house": 18948,
+        "estimated-nonresidential": 1112,
+        "estimated-type-footprint": 49,
+        "height": 2,
+        "levels": 17
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.832326096838657,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/flagler",
+      "building_count": 4380,
+      "tree_count": 80979,
+      "region_bytes": 127458,
+      "max_tile_bytes": 426361,
+      "max_anchor_error_m": 0.0105,
+      "max_coast_float32_error_m": 0.03352657712023855,
+      "height_sources": {
+        "assumed-house": 4176,
+        "estimated-nonresidential": 181,
+        "estimated-type-footprint": 18,
+        "levels": 5
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.408268082234878,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/palm-coast",
+      "building_count": 22339,
+      "tree_count": 184117,
+      "region_bytes": 428225,
+      "max_tile_bytes": 781445,
+      "max_anchor_error_m": 0.0308,
+      "max_coast_float32_error_m": 0.033426044001701925,
+      "height_sources": {
+        "assumed-house": 21572,
+        "estimated-nonresidential": 721,
+        "estimated-type-footprint": 15,
+        "levels": 31
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 5.001297102984087,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/ponce-inlet",
+      "building_count": 6914,
+      "tree_count": 91864,
+      "region_bytes": 197077,
+      "max_tile_bytes": 690322,
+      "max_anchor_error_m": 0.0238,
+      "max_coast_float32_error_m": 0.033792389936594204,
+      "height_sources": {
+        "assumed-house": 6674,
+        "estimated-nonresidential": 219,
+        "estimated-type-footprint": 20,
+        "landmark-recipe": 1
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.969026245733777,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "landmark_canopy_clearance": {
+        "removed_illustrative_crowns": 0,
+        "clearances": [
+          [
+            298.49968240749,
+            567.5221710273656,
+            0.012,
+            "way/318263235"
+          ]
+        ],
+        "building_meshes_changed": false
+      }
+    },
+    {
+      "region": "daytona-flagler/edgewater",
+      "building_count": 8913,
+      "tree_count": 110876,
+      "region_bytes": 231160,
+      "max_tile_bytes": 425006,
+      "max_anchor_error_m": 0.0188,
+      "max_coast_float32_error_m": 0.03357507912542809,
+      "height_sources": {
+        "assumed-house": 8124,
+        "estimated-nonresidential": 740,
+        "estimated-type-footprint": 43,
+        "levels": 6
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.953721662371111,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/holly-hill",
+      "building_count": 25557,
+      "tree_count": 75200,
+      "region_bytes": 371210,
+      "max_tile_bytes": 836443,
+      "max_anchor_error_m": 0.0224,
+      "max_coast_float32_error_m": 0.03309600109361347,
+      "height_sources": {
+        "assumed-house": 23040,
+        "estimated-nonresidential": 2399,
+        "estimated-type-footprint": 92,
+        "height": 2,
+        "levels": 24
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.994420124275506,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/ormond-by-the-sea",
+      "building_count": 8274,
+      "tree_count": 38711,
+      "region_bytes": 129024,
+      "max_tile_bytes": 626498,
+      "max_anchor_error_m": 0.0125,
+      "max_coast_float32_error_m": 0.0333429268939876,
+      "height_sources": {
+        "assumed-house": 7961,
+        "estimated-nonresidential": 290,
+        "estimated-type-footprint": 17,
+        "levels": 6
+      },
+      "max_height_width_ratio": 3.0,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.99009702124426,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    },
+    {
+      "region": "daytona-flagler/beverly-beach",
+      "building_count": 4732,
+      "tree_count": 64093,
+      "region_bytes": 128188,
+      "max_tile_bytes": 407655,
+      "max_anchor_error_m": 0.02,
+      "max_coast_float32_error_m": 0.03396428406696999,
+      "height_sources": {
+        "assumed-house": 4473,
+        "estimated-nonresidential": 248,
+        "estimated-type-footprint": 8,
+        "levels": 3
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates."
+      ],
+      "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+      "exported_boundary_source_error_m": 4.960733316143303,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+    }
+  ],
+  "initial_asset_bytes": {
+    "ormond-by-the-sea": 149666,
+    "daytona-beach-shores": 230983,
+    "port-orange": 488823,
+    "ormond-beach": 331841,
+    "ponce-inlet": 217330,
+    "holly-hill": 387168,
+    "flagler": 144495,
+    "daytona": 579243,
+    "edgewater": 253607,
+    "palm-coast": 446577,
+    "south-daytona": 399756,
+    "nsb": 248091,
+    "beverly-beach": 145376
+  },
+  "initial_asset_scope": "Scene, base and overview geometry, boats; excludes shared app and view-dependent detail tiles."
+}
