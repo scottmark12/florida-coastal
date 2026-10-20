@@ -25,3 +25,17 @@ runtime. It keeps the old runtime for cached pages. Review
 release. Missing imagery fails this step instead of silently shipping a regional
 map fallback. To capture newly added towns, use their saved `town-views.json` hero
 camera with `landing=1`; record the actual DOM camera and errors as in step 5 above.
+
+## Illustrated town-to-town flight
+
+`python build_flight_map.py` stitches the approved `region-images.json` exports
+onto `region-backdrop.json`, using their saved orthographic cameras. It exports
+8192 px desktop and 4096 px phone WebPs in the site's `img/atlas/` folder. Offshore
+water is matched to the context; outer image edges fade, and the blank paper
+extension in the Tampa reference allows the existing context to show through.
+No source geometry or region artwork is changed. Hero anchors use the landing
+manifest's projected coordinates, with the atlas's 45 degree tilt.
+
+Then run `python publish_town_flight.py`. It embeds the latest image revisions,
+bounds and anchors with `site-town-flight.js` in a newly hashed site runtime,
+updates HTML references, and retains previous runtimes for cached pages.
