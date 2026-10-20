@@ -478,5 +478,155 @@
     "desktopSpan": 2.4,
     "phoneSpan": 1.3,
     "reason": "Mapped town center with surrounding island streets and water."
+  },
+  "venice": {
+    "district": "venice-center",
+    "x": 152.42927355363904,
+    "y": 344.76473598086034,
+    "lon": -82.4597052,
+    "lat": 27.099629712499997,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Venice Beach puts the Gulf and the town\u2019s coastal neighborhood in the same frame."
+  },
+  "englewood": {
+    "district": "englewood-center",
+    "x": 162.20557588146886,
+    "y": 329.0393149664095,
+    "lon": -82.36303642272726,
+    "lat": 26.956875097727277,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "The Lemon Bay waterfront and nearby Old Englewood blocks convey the town\u2019s quiet boating character."
+  },
+  "punta-gorda": {
+    "district": "punta-gorda-center",
+    "x": 193.14039987092454,
+    "y": 327.07711652731234,
+    "lon": -82.0512058,
+    "lat": 26.9351529,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center, surrounding streets and shoreline."
+  },
+  "port-charlotte": {
+    "district": "port-charlotte-center",
+    "x": 189.16149821411827,
+    "y": 331.5695076981133,
+    "lon": -82.0906448,
+    "lat": 26.9761707,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center, surrounding streets and shoreline."
+  },
+  "matlacha": {
+    "district": "matlacha-center",
+    "x": 191.71658637934416,
+    "y": 293.15018447890964,
+    "lon": -82.0709245,
+    "lat": 26.6297958,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center, surrounding streets and shoreline."
+  },
+  "cape-coral": {
+    "district": "cape-coral-center",
+    "x": 204.4658658586557,
+    "y": 285.89303977509024,
+    "lon": -81.9438802,
+    "lat": 26.5625742,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center, surrounding streets and shoreline."
+  },
+  "fort-myers": {
+    "district": "fort-myers-center",
+    "x": 211.43296123482136,
+    "y": 294.6771829866854,
+    "lon": -81.8723084,
+    "lat": 26.640628,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center, surrounding streets and shoreline."
+  },
+  "fort-myers-beach": {
+    "district": "fort-myers-beach-center",
+    "x": 204.24597946371452,
+    "y": 273.61626375895213,
+    "lon": -81.948145,
+    "lat": 26.4520248,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center, surrounding streets and shoreline."
+  },
+  "sanibel-island": {
+    "district": "sanibel-island-center",
+    "x": 196.86915412132367,
+    "y": 273.1565418635824,
+    "lon": -82.0223137,
+    "lat": 26.4489695,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center, surrounding streets and shoreline."
+  },
+  "captiva": {
+    "district": "captiva-center",
+    "x": 180.1324943840106,
+    "y": 281.00949270934643,
+    "lon": -82.1892614,
+    "lat": 26.5220228,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center, surrounding streets and shoreline."
+  },
+  "bonita-springs": {
+    "district": "bonita-springs-center",
+    "x": 221.33577763040137,
+    "y": 261.45456525173364,
+    "lon": -81.7786972,
+    "lat": 26.339806,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center, surrounding streets and shoreline."
+  },
+  "naples": {
+    "district": "naples-center",
+    "x": 219.20149873296256,
+    "y": 238.36297694902805,
+    "lon": -81.8042381,
+    "lat": 26.1321265,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Historic Palm Cottage anchors Old Naples beside Third Street South and the Gulf beachfront."
+  },
+  "marco-island": {
+    "district": "marco-island-center",
+    "x": 225.7409071565093,
+    "y": 218.03242000077077,
+    "lon": -81.74247455454541,
+    "lat": 25.94788946477271,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Tigertail\u2019s lagoon, white sand and nearby canal homes show Marco Island\u2019s coastal character."
+  },
+  "everglades-city": {
+    "district": "everglades-city-center",
+    "x": 261.47356183591376,
+    "y": 208.78437826319805,
+    "lon": -81.3871886,
+    "lat": 25.858203,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "The historic Rod and Gun Club on the Barron River anchors Everglades City\u2019s fishing-town waterfront."
+  },
+  "chokoloskee": {
+    "district": "chokoloskee-center",
+    "x": 264.05906097637387,
+    "y": 203.49074900837044,
+    "lon": -81.3624917,
+    "lat": 25.810009,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Smallwood Store\u2019s bayfront setting captures Chokoloskee\u2019s historic trading-post and fishing-island identity."
   }
 }

@@ -82,5 +82,14 @@
   "gibsonton": "packages/gibsonton/",
   "keywest": "packages/florida-keys/",
   "islamorada": "packages/florida-keys/",
-  "key-largo": "packages/florida-keys/"
+  "key-largo": "packages/florida-keys/",
+  "captiva": "packages/fort-myers-sanibel/captiva/",
+  "matlacha": "packages/fort-myers-sanibel/matlacha/",
+  "bonita-springs": "packages/fort-myers-sanibel/bonita-springs/",
+  "cape-coral": "packages/fort-myers-sanibel/cape-coral/",
+  "fort-myers": "packages/fort-myers-sanibel/fort-myers/",
+  "fort-myers-beach": "packages/fort-myers-sanibel/fort-myers-beach/",
+  "port-charlotte": "packages/fort-myers-sanibel/port-charlotte/",
+  "punta-gorda": "packages/fort-myers-sanibel/punta-gorda/",
+  "sanibel-island": "packages/fort-myers-sanibel/sanibel-island/"
 }

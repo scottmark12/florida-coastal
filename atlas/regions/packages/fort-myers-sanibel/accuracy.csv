@@ -1,0 +1,10 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Captiva Island,180.1324920654297,281.0094909667969,-82.18926142356084,26.52202278461041,-82.1892614,26.5220228,0.0029,https://www.openstreetmap.org/node/154176147,Representative OSM town place-label anchor: Captiva
+Matlacha,191.71658325195312,293.1501770019531,-82.07092453263988,26.62979573309555,-82.0709245,26.6297958,0.0081,https://www.openstreetmap.org/node/153983291,Representative OSM town place-label anchor: Matlacha
+Bonita Springs,221.33578491210938,261.4545593261719,-81.77869712800845,26.33980594544046,-81.7786972,26.339806,0.0094,https://www.openstreetmap.org/node/154045311,Representative OSM town place-label anchor: Bonita Springs
+Cape Coral,204.4658660888672,285.8930358886719,-81.94388019833698,26.56257416495973,-81.9438802,26.5625742,0.0039,https://www.openstreetmap.org/node/154286316,Representative OSM town place-label anchor: Cape Coral
+Fort Myers,211.43296813964844,294.67718505859375,-81.87230833016943,26.64062801758797,-81.8723084,26.640628,0.0072,https://www.openstreetmap.org/node/154000776,Representative OSM town place-label anchor: Fort Myers
+Fort Myers Beach,204.24598693847656,273.61627197265625,-81.94814492354955,26.452024872866264,-81.948145,26.4520248,0.0111,https://www.openstreetmap.org/node/154324412,Representative OSM town place-label anchor: Fort Myers Beach
+Port Charlotte,189.1614990234375,331.56951904296875,-82.0906447900593,26.97617080205511,-82.0906448,26.9761707,0.0114,https://www.openstreetmap.org/node/154177046,Representative OSM town place-label anchor: Port Charlotte
+Punta Gorda,193.14039611816406,327.0771179199219,-82.05120583763717,26.935152913075672,-82.0512058,26.9351529,0.004,https://www.openstreetmap.org/node/154328371,Representative OSM town place-label anchor: Punta Gorda
+Sanibel Island,196.86915588378906,273.15655517578125,-82.0223136801533,26.448969619659202,-82.0223137,26.4489695,0.0134,https://www.openstreetmap.org/node/154124106,Representative OSM town place-label anchor: Sanibel
