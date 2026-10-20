@@ -5265,9 +5265,7 @@
         "ami",
         "longboat",
         "sarasota",
-        "siesta-key",
-        "venice",
-        "englewood"
+        "siesta-key"
       ],
       "center": [
         145,
@@ -5288,9 +5286,7 @@
         "new-port-richey",
         "holiday",
         "tarpon-springs",
-        "palm-harbor",
-        "venice",
-        "englewood"
+        "palm-harbor"
       ],
       "regionalTowns": [
         "oldsmar",
@@ -5327,8 +5323,8 @@
     {
       "id": "fort-myers-sanibel",
       "coast": "gulf",
-      "name": "Fort Myers, Sanibel and Charlotte Harbor",
-      "map": "Fort Myers and Sanibel",
+      "name": "Southwest Florida Coast",
+      "map": "Southwest Florida Coast",
       "at": [
         26.62,
         -82.22
@@ -5337,8 +5333,10 @@
       "img": "img/sanibel-island.jpg",
       "pos": "center center",
       "hpos": "center 48%",
-      "text": "Charlotte Harbor, the Caloosahatchee River and the barrier islands of Sanibel and Captiva make this boating and shelling country. Much of it was hit hard by Hurricane Ian in 2022 and has been rebuilding since.",
+      "text": "Venice and Englewood south through Charlotte Harbor, Punta Gorda, Fort Myers, Cape Coral, Sanibel, Captiva and Bonita Springs.",
       "towns": [
+        "venice",
+        "englewood",
         "punta-gorda",
         "port-charlotte",
         "matlacha",
