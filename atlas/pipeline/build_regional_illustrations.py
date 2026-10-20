@@ -91,6 +91,9 @@ def render(selected=None):
   seen.add(key);clip=project(box(*m['bounds']));p=P/ip
   if not p.exists():continue
   local=project(shape(json.load(open(p)))).intersection(clip).simplify(.02,preserve_topology=True);land_shapes.extend([(mapping(clip),0),(mapping(local),255)])
+ # Complete source masks have priority over legacy rectangular coverage gaps.
+ for override in json.load(open(P/'regional-land-overrides.json')):
+  m=json.load(open(P/override['manifest']));clip=project(box(*m['bounds']));local=project(shape(json.load(open(P/m['inputs']['land']['path'])))).intersection(clip).simplify(.02,preserve_topology=True);land_shapes.extend([(mapping(clip),0),(mapping(local),255)])
  coverdir=P/'work/coastal_pipeline/raw/regional-landcover';covermeta=json.load(open(coverdir/'index.json'));tiles=[]
  for t in covermeta['tiles']:
   if t.get('absent'):continue
@@ -162,7 +165,7 @@ def render(selected=None):
   else:results[rid]=entry
   print('RENDERED',rid,W,H,entry['bytes'],flush=True)
  for file in out.glob('*.webp'):shutil.copy2(file,A/'regions/images'/file.name)
- if not selected:(A/'regions/region-backdrop.json').write_text(json.dumps(backdrop_entry,indent=2)+'\n')
+ if not selected or '_backdrop' in selected:(A/'regions/region-backdrop.json').write_text(json.dumps(backdrop_entry,indent=2)+'\n')
  (A/'regions/region-images.json').write_text(json.dumps(results,indent=2)+'\n');(A/'regions/images/regional-style-report.json').write_text(json.dumps({'reference':S['reference'],'osm':json.load(open(D/'osm-source.json')),'landcover':{k:v for k,v in covermeta.items() if k!='tiles'},'regions':reports,'town_geometry_changed':False},indent=2)+'\n')
 if os_args[0]=='--extract':extract(Path(os_args[1]))
 elif os_args[0]=='--render':render(set(os_args[1:]) or None)

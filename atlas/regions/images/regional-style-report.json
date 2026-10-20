@@ -13,25 +13,6 @@
   "regions": [
     {
       "bounds": [
-        -425.1888477351769,
-        -226.66663311517388,
-        558.5359493042099,
-        742.9916716839022
-      ],
-      "width": 4096,
-      "height": 4037,
-      "counts": {
-        "buildings": 0,
-        "roads": 862124,
-        "preserve_landcover_areas": 970616
-      },
-      "region": "_backdrop",
-      "output_bytes": 586372,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         -393.6151138818107,
         187.43265924040765,
         31.94947274576151,
@@ -146,25 +127,6 @@
     },
     {
       "bounds": [
-        329.52173453768813,
-        128.36258733928338,
-        456.9522159171905,
-        201.4536466748366
-      ],
-      "width": 2304,
-      "height": 1322,
-      "counts": {
-        "buildings": 1025538,
-        "roads": 150285,
-        "preserve_landcover_areas": 10951
-      },
-      "region": "miami-fort-lauderdale",
-      "output_bytes": 168862,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         327.786240448732,
         175.20813930152823,
         465.1057986053729,
@@ -274,6 +236,44 @@
       },
       "region": "tampa-bay",
       "output_bytes": 256040,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        -425.1888477351769,
+        -226.66663311517388,
+        558.5359493042099,
+        742.9916716839022
+      ],
+      "width": 4096,
+      "height": 4037,
+      "counts": {
+        "buildings": 0,
+        "roads": 862124,
+        "preserve_landcover_areas": 970616
+      },
+      "region": "_backdrop",
+      "output_bytes": 589078,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        329.52173453768813,
+        128.36258733928338,
+        456.9522159171905,
+        201.4536466748366
+      ],
+      "width": 2304,
+      "height": 1322,
+      "counts": {
+        "buildings": 1025538,
+        "roads": 150285,
+        "preserve_landcover_areas": 10951
+      },
+      "region": "miami-fort-lauderdale",
+      "output_bytes": 180976,
       "landcover_fraction": 1.0,
       "sourceOnly": true
     }
