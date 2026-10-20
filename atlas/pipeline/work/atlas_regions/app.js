@@ -1,3 +1,4 @@
+import {createAccurateOverview} from '../coastal_pipeline/v3/region-overview.js';
 import {createRegionLayer,recipeGlyph} from '../coastal_pipeline/v3/atlas-layer.js';
 import * as THREE from 'three';
 import {GLTFLoader} from 'three/addons/loaders/GLTFLoader.js';
@@ -7,6 +8,8 @@ if(new URLSearchParams(location.search).get('proof')==='unlabeled')document.docu
 const started=performance.now(), $=s=>document.querySelector(s), mobile=matchMedia('(max-width:699px)').matches;
 const [catalog,districts,features,builtRoutes,roadData]=await Promise.all(['catalog.json','districts.json','features.json','routes.json','roads.json'].map(p=>fetch(assetBase+p).then(r=>r.json())));
 const packageRegistry=await fetch(assetBase+'package-registry.json').then(r=>r.json());
+const overviewRegistry=await fetch(assetBase+'accurate-overviews.json').then(r=>r.json());
+const overviewLayers=new Map();
 const townViews=await fetch(assetBase+'town-views.json').then(r=>r.json());
 const towns=catalog.towns, regions=catalog.regions, byId=Object.fromEntries(towns.map(t=>[t.id,t]));
 const qs=new URLSearchParams(location.search);const landing=qs.get('landing')==='1';if(landing)document.documentElement.classList.add('landing-export');
@@ -16,7 +19,7 @@ let emeraldWater=null,bridgeModel=null,bridgeIndex=null;
 async function regionalWater(){
  const emerald=['emerald-coast','forgotten-coast'].includes(region.id)&&level!=='state';
  sea.material.color.set(emerald?'#17658f':'#3593ae');scene.background.set(emerald?'#17658f':'#3593ae');
- const visible=!isDetailed()&&(level==='state'||['emerald-coast','forgotten-coast'].includes(region.id));
+ const visible=!isDetailed()&&!(level==='region'&&overviewRegistry[region.id])&&(level==='state'||['emerald-coast','forgotten-coast'].includes(region.id));
  if(visible&&!emeraldWater){
   const info=await fetch(assetBase+'emerald-water/shore-wash.json').then(r=>r.json());
   const texture=await new THREE.TextureLoader().loadAsync(assetBase+'emerald-water/shore-wash.png');texture.colorSpace=THREE.SRGBColorSpace;
@@ -79,19 +82,38 @@ function setCamera(){
   target.set((Math.min(...xs)+Math.max(...xs))/2,0,-(Math.min(...ys)+Math.max(...ys))/2);
   $('#title').textContent=selectedLake.name;
  }
- const mapHeight=innerHeight;renderer.setSize(innerWidth,mapHeight);const a=innerWidth/mapHeight, height=level==='state'?Math.max(span,span/(a*.9)):span/a;camera.left=-height*a/2;camera.right=height*a/2;camera.top=height/2;camera.bottom=-height/2;camera.position.copy(target).add(new THREE.Vector3(0,height*1.25,height*1.25));camera.lookAt(target);camera.updateProjectionMatrix();sun.position.copy(target).add(new THREE.Vector3(-height,height*1.5,height*.6));sun.target.position.copy(target);Object.assign(sun.shadow.camera,{left:-height,right:height,top:height,bottom:-height,near:.001,far:height*5});sun.shadow.camera.updateProjectionMatrix();sun.shadow.normalBias=(isThirty()||isDetailed())?.0001:.06;
+ const mapHeight=innerHeight;renderer.setSize(innerWidth,mapHeight);const a=innerWidth/mapHeight, height=level==='state'?Math.max(span,span/(a*.9)):span/a;camera.left=-height*a/2;camera.right=height*a/2;camera.top=height/2;camera.bottom=-height/2;camera.position.copy(target).add(new THREE.Vector3(0,height*1.25,height*1.25));camera.lookAt(target);camera.near=level==='region'&&overviewRegistry[region.id]?height*.05:.0001;camera.far=level==='region'&&overviewRegistry[region.id]?height*5:3500;camera.updateProjectionMatrix();sun.position.copy(target).add(new THREE.Vector3(-height,height*1.5,height*.6));sun.target.position.copy(target);Object.assign(sun.shadow.camera,{left:-height,right:height,top:height,bottom:-height,near:.001,far:height*5});sun.shadow.camera.updateProjectionMatrix();sun.shadow.normalBias=(isThirty()||isDetailed())?.0001:.06;
  $('#scale').textContent=level==='state'?'Florida · regional overview':level==='region'?region.map+' · all '+region.towns.length+' towns':(isThirty()?(selectedLake?selectedLake.name+' · mapped dune lake':'Neighborhood view · 850 m across · 3× height, capped at 3× footprint'):'Neighborhood view · illustrated building scale');
 }
 async function show(){
  document.documentElement.classList.toggle('miami-region',isDetailed()&&level==='region');const token=++packageToken,flight=pendingFlight;pendingFlight=null;document.documentElement.classList.toggle('thirty-region',(isThirty()||isDetailed())&&level==='region');setCamera();status('Loading this part of the coast…');
  try{
-  if(!bridgeModel){bridgeModel=new THREE.Group();bridgeModel.name='OSM bridges and causeways';scene.add(bridgeModel)}bridgeModel.visible=level==='town';
-  if(level==='town'){
+  for(const layer of overviewLayers.values())layer.hide();
+  if(!bridgeModel){bridgeModel=new THREE.Group();bridgeModel.name='OSM bridges and causeways';scene.add(bridgeModel)}bridgeModel.visible=level==='town'||(level==='region'&&innerWidth>=700&&!!overviewRegistry[region.id]);
+  if(level==='town'||(level==='region'&&innerWidth>=700&&overviewRegistry[region.id])){
    if(!bridgeIndex)bridgeIndex=await fetch(assetBase+'bridge-index.json').then(r=>r.json());
    const radius=Math.max(2.5,span*.8,(camera.top-camera.bottom)*Math.SQRT2*.65),visible=bridgeIndex.tiles.filter(t=>t.bounds[0]<=target.x+radius&&t.bounds[2]>=target.x-radius&&t.bounds[1]<=-target.z+radius&&t.bounds[3]>=-target.z-radius);
    const meshes=await Promise.all(visible.map(t=>load(t.name)));if(token!==packageToken)return;bridgeModel.clear();meshes.forEach(mesh=>bridgeModel.add(mesh));document.body.dataset.bridgeTiles=visible.length;
   }
   await regionalWater();document.body.dataset.ready='false';renderer.toneMapping=isDetailed()?THREE.NoToneMapping:THREE.ACESFilmicToneMapping;
+  if(level==='region'&&overviewRegistry[region.id]){
+   if(detailedLayer)detailedLayer.hide();for(const o of [terrain,architecture,stateIcons,thirtyModel,sandArt,alysArt,emeraldWater])if(o)o.visible=false;roadLines.visible=false;
+   renderer.toneMapping=THREE.NoToneMapping;sun.shadow.normalBias=.0001;
+   const path=overviewRegistry[region.id];if(!overviewLayers.has(path)){const layer=await createAccurateOverview(assetBase+path,Object.entries(overviewRegistry).filter(([id])=>id!==region.id).map(([,p])=>assetBase+p));overviewLayers.set(path,layer);scene.add(layer.root)}
+   const layer=overviewLayers.get(path);overviewLayers.delete(path);overviewLayers.set(path,layer);while(overviewLayers.size>2){const oldest=overviewLayers.keys().next().value;overviewLayers.get(oldest).dispose();overviewLayers.delete(oldest)}if(token!==packageToken)return;
+   if(region.id==='emerald-coast'&&innerWidth>=700&&!layer.thirty){
+    await loadThirty();const source=await load('30a-finished');illustrateThirty(source);const copy=source.clone(true);copy.userData.sharedTownSource=true;
+    copy.traverse(o=>{if(!o.isMesh)return;const name=o.name+' '+o.parent?.name;if(/Depth|Lake|Homes.*alys/.test(name)||(/Geography/.test(name)&&!/street|Timpoochee/.test(name)))o.visible=false;if(o.isInstancedMesh){const original=source.getObjectByName(o.name);const matrices=original.userData.allMatrices||original.instanceMatrix.array;o.instanceMatrix.array.set(matrices);o.count=matrices.length/16;if(original.userData.allColors&&o.instanceColor)o.instanceColor.array.set(original.userData.allColors);o.instanceMatrix.needsUpdate=true;o.computeBoundingSphere()}});
+    copy.add(sandArt.clone(),alysArt.clone(true));layer.root.add(copy);layer.thirty=copy;
+   }
+   if(layer.thirty)layer.thirty.visible=innerWidth>=700;
+   if(token!==packageToken){layer.hide();return}layer.root.visible=true;
+   const halfWidth=span/2,halfDepth=(camera.top-camera.bottom)*Math.SQRT2/2;
+   updateUi();makeLabels();highlight();render();status(innerWidth<700?'':'Loading mapped neighborhoods…');
+   await layer.show([target.x-halfWidth,-target.z-halfDepth,target.x+halfWidth,-target.z+halfDepth],innerWidth<700,render);if(token!==packageToken)return;
+   const credit=document.getElementById('canopy-credit');if(credit)credit.textContent=layer.meta.attribution;
+   status('');updateUi();makeLabels();highlight();render();document.body.dataset.ready='true';document.body.dataset.pipeline='accurate-region';document.body.dataset.readyMs=Math.round(performance.now()-started);document.body.dataset.drawCalls=renderer.info.render.calls;document.body.dataset.triangles=renderer.info.render.triangles;document.body.dataset.regionSources=layer.meta.sourcePackages.join(',');return;
+  }
   if(isDetailed()){
    const packagePath=packageRegistry[activeTown.id];if(detailedLayer)detailedLayer.hide();if(!detailedLayers.has(packagePath)){const layer=await createRegionLayer(assetBase+packagePath);detailedLayers.set(packagePath,layer);scene.add(layer.root)}detailedLayer=detailedLayers.get(packagePath);const credit=document.getElementById('canopy-credit');if(credit)credit.textContent=detailedLayer.meta.canopyAttribution||'OSM-based geography · original illustrated canopy';
    if(token!==packageToken)return;
@@ -288,7 +310,7 @@ window.setFloridaCoastalResults=applyResults;
 window.addEventListener('floridacoastal:results',e=>applyResults(e.detail));
 window.addEventListener('message',e=>{if(e.origin!==location.origin&&e.origin!=='https://www.floridacoastal.co'&&e.origin!=='https://floridacoastal.co')return;if(e.data?.type==='floridacoastal:results')applyResults(e.data.payload)});
 $('#import-results').onchange=async e=>{try{const payload=JSON.parse(await e.target.files[0].text());if(!applyResults(payload))throw Error();$('#import-note').textContent='Quiz matches loaded.'}catch{$('#import-note').textContent='Use an exported top-five result file.'}};
-window.addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);setCamera();render()});
+window.addEventListener('resize',()=>{renderer.setSize(innerWidth,innerHeight);if(level==='region'&&overviewRegistry[region.id])show();else{setCamera();render()}});
 if(qs.get('district')){selectedDistrict=districts.find(d=>d.id===qs.get('district'));if(selectedDistrict)level='town'}
 await show();if(selectedDistrict&&isDetailed())openDistrict(selectedDistrict);
 

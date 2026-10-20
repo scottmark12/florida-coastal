@@ -1,0 +1,429 @@
+{
+  "id": "emerald-coast",
+  "base": "base.glb.gz",
+  "bounds": [
+    -342.98161625315595,
+    669.605348590552,
+    -144.70176411862852,
+    740.6432212352096
+  ],
+  "canopy": "canopy.png",
+  "water": "water.png",
+  "trees": "trees.json.gz",
+  "scale": {
+    "buildings": 3,
+    "trees": 5,
+    "maxHeightToFootprint": 3,
+    "metersPerStorey": 3,
+    "defaultResidentialStoreys": 2,
+    "treeRealHeightMeters": 12,
+    "treeCrownWidthMeters": 8,
+    "notes": "Use OSM height, then levels. Only houses without either default to 1\u20132 stories. Apartments/condos/hotels/resorts and footprints >=1500 m\u00b2 within 300 m of mapped beach use explicit, flagged type/area estimates when height and levels are absent. Retain 3x display scale and width caps.",
+    "residentialStoreys": [
+      1,
+      2
+    ],
+    "houseMaxHeightToFootprint": 1.2,
+    "coastalBuildings": {
+      "types": [
+        "apartments",
+        "condominium",
+        "condo",
+        "hotel",
+        "resort"
+      ],
+      "minFootprintM2": 1500,
+      "beachDistanceMeters": 300,
+      "estimateMinStoreys": 4,
+      "estimateMaxStoreys": 20,
+      "estimateBaseStoreys": 4,
+      "estimateSqrtAreaDivisor": 10,
+      "note": "Estimated storeys = clamp(round(4 + sqrt(footprint m\u00b2)/10),4,20), only when OSM height and levels are absent. Beach proximity is measured to mapped natural=beach polygons. This is an illustration estimate, not building research."
+    }
+  },
+  "buildings": [
+    {
+      "file": "native-buildings--30-89.glb.gz",
+      "bounds": [
+        -240,
+        712,
+        -232,
+        720
+      ],
+      "bytes": 1101347
+    },
+    {
+      "file": "native-buildings--31-89.glb.gz",
+      "bounds": [
+        -248,
+        712,
+        -240,
+        720
+      ],
+      "bytes": 1397829
+    },
+    {
+      "file": "native-buildings--30-88.glb.gz",
+      "bounds": [
+        -240,
+        704,
+        -232,
+        712
+      ],
+      "bytes": 747969
+    },
+    {
+      "file": "native-buildings--31-88.glb.gz",
+      "bounds": [
+        -248,
+        704,
+        -240,
+        712
+      ],
+      "bytes": 46512
+    },
+    {
+      "file": "native-buildings--29-88.glb.gz",
+      "bounds": [
+        -232,
+        704,
+        -224,
+        712
+      ],
+      "bytes": 1560764
+    },
+    {
+      "file": "native-buildings--29-89.glb.gz",
+      "bounds": [
+        -232,
+        712,
+        -224,
+        720
+      ],
+      "bytes": 158119
+    },
+    {
+      "file": "native-buildings--32-89.glb.gz",
+      "bounds": [
+        -256,
+        712,
+        -248,
+        720
+      ],
+      "bytes": 5374248
+    },
+    {
+      "file": "native-buildings--26-90.glb.gz",
+      "bounds": [
+        -208,
+        720,
+        -200,
+        728
+      ],
+      "bytes": 301799
+    },
+    {
+      "file": "native-buildings--27-90.glb.gz",
+      "bounds": [
+        -216,
+        720,
+        -208,
+        728
+      ],
+      "bytes": 81836
+    },
+    {
+      "file": "native-buildings--26-89.glb.gz",
+      "bounds": [
+        -208,
+        712,
+        -200,
+        720
+      ],
+      "bytes": 18290
+    },
+    {
+      "file": "native-buildings--39-88.glb.gz",
+      "bounds": [
+        -312,
+        704,
+        -304,
+        712
+      ],
+      "bytes": 446353
+    },
+    {
+      "file": "native-buildings--38-88.glb.gz",
+      "bounds": [
+        -304,
+        704,
+        -296,
+        712
+      ],
+      "bytes": 311672
+    },
+    {
+      "file": "native-buildings--38-89.glb.gz",
+      "bounds": [
+        -304,
+        712,
+        -296,
+        720
+      ],
+      "bytes": 46756
+    },
+    {
+      "file": "native-buildings--33-89.glb.gz",
+      "bounds": [
+        -264,
+        712,
+        -256,
+        720
+      ],
+      "bytes": 316576
+    },
+    {
+      "file": "native-buildings--28-88.glb.gz",
+      "bounds": [
+        -224,
+        704,
+        -216,
+        712
+      ],
+      "bytes": 390645
+    },
+    {
+      "file": "native-buildings--28-89.glb.gz",
+      "bounds": [
+        -224,
+        712,
+        -216,
+        720
+      ],
+      "bytes": 201892
+    },
+    {
+      "file": "native-buildings--35-89.glb.gz",
+      "bounds": [
+        -280,
+        712,
+        -272,
+        720
+      ],
+      "bytes": 1011689
+    },
+    {
+      "file": "native-buildings--34-89.glb.gz",
+      "bounds": [
+        -272,
+        712,
+        -264,
+        720
+      ],
+      "bytes": 230717
+    },
+    {
+      "file": "native-buildings--35-88.glb.gz",
+      "bounds": [
+        -280,
+        704,
+        -272,
+        712
+      ],
+      "bytes": 98920
+    },
+    {
+      "file": "native-buildings--30-90.glb.gz",
+      "bounds": [
+        -240,
+        720,
+        -232,
+        728
+      ],
+      "bytes": 2433261
+    },
+    {
+      "file": "native-buildings--31-90.glb.gz",
+      "bounds": [
+        -248,
+        720,
+        -240,
+        728
+      ],
+      "bytes": 287925
+    },
+    {
+      "file": "native-buildings--30-91.glb.gz",
+      "bounds": [
+        -240,
+        728,
+        -232,
+        736
+      ],
+      "bytes": 10242
+    },
+    {
+      "file": "native-buildings--20-85.glb.gz",
+      "bounds": [
+        -160,
+        680,
+        -152,
+        688
+      ],
+      "bytes": 1284731
+    },
+    {
+      "file": "native-buildings--21-85.glb.gz",
+      "bounds": [
+        -168,
+        680,
+        -160,
+        688
+      ],
+      "bytes": 1931460
+    },
+    {
+      "file": "native-buildings--22-85.glb.gz",
+      "bounds": [
+        -176,
+        680,
+        -168,
+        688
+      ],
+      "bytes": 1365861
+    },
+    {
+      "file": "native-buildings--21-86.glb.gz",
+      "bounds": [
+        -168,
+        688,
+        -160,
+        696
+      ],
+      "bytes": 984574
+    },
+    {
+      "file": "native-buildings--20-86.glb.gz",
+      "bounds": [
+        -160,
+        688,
+        -152,
+        696
+      ],
+      "bytes": 530869
+    },
+    {
+      "file": "native-buildings--22-86.glb.gz",
+      "bounds": [
+        -176,
+        688,
+        -168,
+        696
+      ],
+      "bytes": 331499
+    },
+    {
+      "file": "native-buildings--23-86.glb.gz",
+      "bounds": [
+        -184,
+        688,
+        -176,
+        696
+      ],
+      "bytes": 1039444
+    },
+    {
+      "file": "native-buildings--39-89.glb.gz",
+      "bounds": [
+        -312,
+        712,
+        -304,
+        720
+      ],
+      "bytes": 779483
+    },
+    {
+      "file": "native-buildings--41-88.glb.gz",
+      "bounds": [
+        -328,
+        704,
+        -320,
+        712
+      ],
+      "bytes": 302852
+    },
+    {
+      "file": "native-buildings--42-88.glb.gz",
+      "bounds": [
+        -336,
+        704,
+        -328,
+        712
+      ],
+      "bytes": 296277
+    },
+    {
+      "file": "native-buildings--42-87.glb.gz",
+      "bounds": [
+        -336,
+        696,
+        -328,
+        704
+      ],
+      "bytes": 52585
+    },
+    {
+      "file": "native-buildings--41-87.glb.gz",
+      "bounds": [
+        -328,
+        696,
+        -320,
+        704
+      ],
+      "bytes": 1982
+    },
+    {
+      "file": "native-buildings--32-90.glb.gz",
+      "bounds": [
+        -256,
+        720,
+        -248,
+        728
+      ],
+      "bytes": 126978
+    }
+  ],
+  "sourcePackages": [
+    "destin",
+    "fort-walton-beach",
+    "freeport",
+    "gulf-breeze",
+    "mary-esther",
+    "miramar-beach",
+    "navarre-beach",
+    "navarre",
+    "niceville",
+    "okaloosa-island",
+    "panama-city",
+    "pcb",
+    "pensacola-beach",
+    "pensacola",
+    "perdido-key",
+    "shalimar",
+    "valparaiso"
+  ],
+  "native_buildings": 112637,
+  "native_triangles": 3016835,
+  "coverage_buildings": {},
+  "initial_bytes": 2589227,
+  "total_building_bytes": 25603956,
+  "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0",
+  "supplemental_sources": [],
+  "notes": [
+    "Approved town geometry is read-only; region meshes retain the source wall and roof vertices.",
+    "OSM/Microsoft coverage fills use the existing 3\u00d7 height and footprint caps; untagged houses are 1\u20132 stories.",
+    "Phone Region view retains terrain, cover and labels, without building clusters.",
+    "Source land cover/canopy positions are composited into a softened regional canopy layer."
+  ],
+  "revision": "81b2a578225bac8b"
+}

@@ -1,0 +1,213 @@
+{
+  "id": "sarasota-bradenton",
+  "base": "base.glb.gz",
+  "bounds": [
+    110.18948851146489,
+    314.6215097848868,
+    178.19241959454374,
+    407.2459624241382
+  ],
+  "canopy": "canopy.png",
+  "water": "water.png",
+  "trees": "trees.json.gz",
+  "scale": {
+    "buildings": 3,
+    "trees": 5,
+    "maxHeightToFootprint": 3,
+    "metersPerStorey": 3,
+    "defaultResidentialStoreys": 2,
+    "treeRealHeightMeters": 12,
+    "treeCrownWidthMeters": 8,
+    "notes": "Use OSM height, then levels. Only houses without either default to 1\u20132 stories. Apartments/condos/hotels/resorts and footprints >=1500 m\u00b2 within 300 m of mapped beach use explicit, flagged type/area estimates when height and levels are absent. Retain 3x display scale and width caps.",
+    "residentialStoreys": [
+      1,
+      2
+    ],
+    "houseMaxHeightToFootprint": 1.2,
+    "coastalBuildings": {
+      "types": [
+        "apartments",
+        "condominium",
+        "condo",
+        "hotel",
+        "resort"
+      ],
+      "minFootprintM2": 1500,
+      "beachDistanceMeters": 300,
+      "estimateMinStoreys": 4,
+      "estimateMaxStoreys": 20,
+      "estimateBaseStoreys": 4,
+      "estimateSqrtAreaDivisor": 10,
+      "note": "Estimated storeys = clamp(round(4 + sqrt(footprint m\u00b2)/10),4,20), only when OSM height and levels are absent. Beach proximity is measured to mapped natural=beach polygons. This is an illustration estimate, not building research."
+    }
+  },
+  "buildings": [
+    {
+      "file": "native-buildings-18-46.glb.gz",
+      "bounds": [
+        144,
+        368,
+        152,
+        376
+      ],
+      "bytes": 470296
+    },
+    {
+      "file": "native-buildings-17-46.glb.gz",
+      "bounds": [
+        136,
+        368,
+        144,
+        376
+      ],
+      "bytes": 46175
+    },
+    {
+      "file": "native-buildings-19-43.glb.gz",
+      "bounds": [
+        152,
+        344,
+        160,
+        352
+      ],
+      "bytes": 625105
+    },
+    {
+      "file": "native-buildings-19-42.glb.gz",
+      "bounds": [
+        152,
+        336,
+        160,
+        344
+      ],
+      "bytes": 477336
+    },
+    {
+      "file": "native-buildings-18-43.glb.gz",
+      "bounds": [
+        144,
+        344,
+        152,
+        352
+      ],
+      "bytes": 26430
+    },
+    {
+      "file": "native-buildings-16-47.glb.gz",
+      "bounds": [
+        128,
+        376,
+        136,
+        384
+      ],
+      "bytes": 20354
+    },
+    {
+      "file": "native-buildings-15-48.glb.gz",
+      "bounds": [
+        120,
+        384,
+        128,
+        392
+      ],
+      "bytes": 174923
+    },
+    {
+      "file": "native-buildings-16-48.glb.gz",
+      "bounds": [
+        128,
+        384,
+        136,
+        392
+      ],
+      "bytes": 128060
+    },
+    {
+      "file": "native-buildings-19-47.glb.gz",
+      "bounds": [
+        152,
+        376,
+        160,
+        384
+      ],
+      "bytes": 1909
+    },
+    {
+      "file": "native-buildings-15-49.glb.gz",
+      "bounds": [
+        120,
+        392,
+        128,
+        400
+      ],
+      "bytes": 183114
+    },
+    {
+      "file": "native-buildings-20-41.glb.gz",
+      "bounds": [
+        160,
+        328,
+        168,
+        336
+      ],
+      "bytes": 362824
+    },
+    {
+      "file": "native-buildings-20-40.glb.gz",
+      "bounds": [
+        160,
+        320,
+        168,
+        328
+      ],
+      "bytes": 7353
+    },
+    {
+      "file": "native-buildings-17-48.glb.gz",
+      "bounds": [
+        136,
+        384,
+        144,
+        392
+      ],
+      "bytes": 116665
+    },
+    {
+      "file": "native-buildings-17-45.glb.gz",
+      "bounds": [
+        136,
+        360,
+        144,
+        368
+      ],
+      "bytes": 497052
+    },
+    {
+      "file": "native-buildings-18-45.glb.gz",
+      "bounds": [
+        144,
+        360,
+        152,
+        368
+      ],
+      "bytes": 137142
+    }
+  ],
+  "sourcePackages": [
+    "sarasota-bradenton"
+  ],
+  "native_buildings": 16735,
+  "native_triangles": 374534,
+  "coverage_buildings": {},
+  "initial_bytes": 3754266,
+  "total_building_bytes": 3274738,
+  "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0",
+  "supplemental_sources": [],
+  "notes": [
+    "Approved town geometry is read-only; region meshes retain the source wall and roof vertices.",
+    "OSM/Microsoft coverage fills use the existing 3\u00d7 height and footprint caps; untagged houses are 1\u20132 stories.",
+    "Phone Region view retains terrain, cover and labels, without building clusters.",
+    "Source land cover/canopy positions are composited into a softened regional canopy layer."
+  ],
+  "revision": "ad842bb9aa48ca75"
+}

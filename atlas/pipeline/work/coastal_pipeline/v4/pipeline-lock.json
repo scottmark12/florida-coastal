@@ -13,7 +13,7 @@
     "work/coastal_pipeline/v4/run.py": "5a9b7451edf2ca4fb9bc579c9da5dbdbd5489e4249f8a57ff8562fef0a8181a5",
     "work/coastal_pipeline/v4/publish.py": "0eff4367e067a413586c377a15439bc92892c2fcaa289b00959f8f7b1d5b22a5",
     "work/coastal_pipeline/v3/atlas-layer.js": "3b69812849bcca8b7b482fa926f5b6fc5d8cd7bc063802205277be7b6c14a370",
-    "work/atlas_regions/app.js": "13e846ea52b12f8a8b720663ee5d331e78e11cc69ec8e345eb5f28d1122668bc",
+    "work/atlas_regions/app.js": "db6f40ae1d60a87ae12dc70a2aa35ea518a0dd34e5804af203db0a1c69959cfc",
     "work/30a_finish/geometry.py": "0e286e67440ae5adfe1cb972f63b960178af3062c3c1d6ee7f245cffc2d9d9f5",
     "work/coastal_pipeline/v3/marina-boats.js": "139647b5104dfe9725f2fffc122d7b37046cde4636a50e4be0743ae6a52b9f09",
     "work/coastal_pipeline/v4/water-recipes.json": "1433dbeb9118ce26e64d732bb7acb92fd132b4d4e3a8b0f6fac9da8848105299",
@@ -21,7 +21,15 @@
     "tile_bridges.py": "4d624f815a81c3e5f987082affd534f121e6c981dca4855f9489ec9f62ea3e21",
     "prepare_landings.py": "565d68b7678b1fdf492a6bd581611a881b8ab2cebc97fca1b214336e206d210a",
     "boats.py": "bfb71e3093d098174f0e1a9ed2521aaf77f08dd650a08688b87feadd0fdc52f2",
-    "extract_marinas.py": "6d47fe817315d1816f1c38fe99c691648afef15bb30c64bc3f39da447643dce4"
+    "extract_marinas.py": "6d47fe817315d1816f1c38fe99c691648afef15bb30c64bc3f39da447643dce4",
+    "work/coastal_pipeline/v3/region-overview.js": "1e6531155aac4e8b2a12e9cea9da6ed07724cfe305ad1a0accd4769cca8d8513",
+    "build_accurate_overviews.py": "1f3341a8e3c71219a98702b3f38c78b9b50c6a25d322f17340898e690cf1d497",
+    "overview_geometry.py": "78dbea5ece18db086c1b7dce232bfa6babca343ef7d25dc77b3deac9b912b9a0",
+    "extract_regional_coverage.py": "64a4195f0eef62818b4d72844bad0daa9286e281243f6c0b97e7115ba01c522f",
+    "refresh_overview_terrain.py": "9048211f9a67644bac50e94314e17aa52c8070845a099ee39b3ce448c79dfc83",
+    "normalize_overview_context.py": "a55e754e5d37c5ba5bb43706e2a1bb9f6dbbae377554cedc3b87776d63048972",
+    "check_overviews.py": "790702c171ca0655d542bf6c2846c0c34309d9b6a01e460b1f8b36c8ee9f35cf",
+    "regional-coverage.json": "f74fe9642d4e275b17d858d595b3d3cdcee9b8dd291520b91f386d051a67d2b1"
   },
-  "change": "User-authorized two-level hero exports, OSM bridge decks/piers, and type/footprint height estimates for non-house buildings; existing explicit heights and scale caps retained. User-requested 30A lake navigation repair only: frame mapped lake bounds; no geometry, palette or scale-rule changes."
+  "change": "User-authorized two-level hero exports, OSM bridge decks/piers, and type/footprint height estimates for non-house buildings; existing explicit heights and scale caps retained. User-requested 30A lake navigation repair only: frame mapped lake bounds; no geometry, palette or scale-rule changes. User-requested Region presentation repair: use complete approved town roof/wall meshes and source-backed Tampa/Pinellas coverage instead of legacy regional icons. Town packages and the approved scale/style engine remain unchanged."
 }
