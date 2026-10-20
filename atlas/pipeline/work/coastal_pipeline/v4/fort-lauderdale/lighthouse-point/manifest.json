@@ -1,0 +1,98 @@
+{
+  "id": "fort-lauderdale/lighthouse-point",
+  "name": "Lighthouse Point",
+  "towns": [
+    "lighthouse-point"
+  ],
+  "bounds": [
+    -80.11526540000001,
+    26.247636,
+    -80.0592654,
+    26.303635999999997
+  ],
+  "recipes": "work/coastal_pipeline/v4/fort-lauderdale/recipes.json",
+  "camera": {
+    "center": [
+      390.05559355800153,
+      258.5273891684394
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "lighthouse-point-center": "lighthouse-point"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Bal Harbour source uses the OSM name Bal Harbour Village; the existing public town ID is retained.",
+    "Fort Lauderdale downtown uses its glass recipe; surrounding canal homes use the prepared canal-villa recipe.",
+    "Source building windows for Fort Lauderdale, Hollywood, Hallandale and Dania extend east to the beachfront.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/fort-lauderdale/geography.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/cover.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-lighthouse-point.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/fort-lauderdale/districts.json",
+    "prices": "work/coastal_pipeline/v4/fort-lauderdale/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/lighthouse-point/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/lighthouse-point/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/lighthouse-point/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/lighthouse-point/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/lighthouse-point/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/lighthouse-point-center-worldcover-2021.png",
+        "bounds": [
+          -80.11133333333333,
+          26.251666666666665,
+          -80.06333333333333,
+          26.299666666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "lighthouse-point-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  }
+}

@@ -91,5 +91,15 @@
   "fort-myers-beach": "packages/fort-myers-sanibel/fort-myers-beach/",
   "port-charlotte": "packages/fort-myers-sanibel/port-charlotte/",
   "punta-gorda": "packages/fort-myers-sanibel/punta-gorda/",
-  "sanibel-island": "packages/fort-myers-sanibel/sanibel-island/"
+  "sanibel-island": "packages/fort-myers-sanibel/sanibel-island/",
+  "ftl": "packages/fort-lauderdale/ftl/",
+  "bal-harbour": "packages/fort-lauderdale/bal-harbour/",
+  "dania-beach": "packages/fort-lauderdale/dania-beach/",
+  "hallandale": "packages/fort-lauderdale/hallandale/",
+  "hollywood": "packages/fort-lauderdale/hollywood/",
+  "lauderdale-by-the-sea": "packages/fort-lauderdale/lauderdale-by-the-sea/",
+  "lighthouse-point": "packages/fort-lauderdale/lighthouse-point/",
+  "north-miami-beach": "packages/fort-lauderdale/north-miami-beach/",
+  "sunny-isles-beach": "packages/fort-lauderdale/sunny-isles-beach/",
+  "wilton-manors": "packages/fort-lauderdale/wilton-manors/"
 }

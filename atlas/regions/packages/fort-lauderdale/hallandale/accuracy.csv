@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Hallandale Beach,384.9856872558594,225.675537109375,-80.1483790595883,25.9812025597798,-80.148379,25.9812025,0.0089,https://www.openstreetmap.org/node/154173790,Representative OSM town place-label anchor: Hallandale Beach

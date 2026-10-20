@@ -628,5 +628,128 @@
     "desktopSpan": 2.8,
     "phoneSpan": 1.4,
     "reason": "Smallwood Store\u2019s bayfront setting captures Chokoloskee\u2019s historic trading-post and fishing-island identity."
+  },
+  "miami": {
+    "district": "brickell",
+    "x": 381.9260525560732,
+    "y": 202.8229280651679,
+    "lon": -80.18603879999999,
+    "lat": 25.776206457142855,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Bayfront Park frames Biscayne Bay beside Miami\u2019s downtown skyline."
+  },
+  "southbeach": {
+    "district": "southbeach-district",
+    "x": 387.5553211373281,
+    "y": 203.37971562399522,
+    "lon": -80.12968640965909,
+    "lat": 25.779641738636368,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Ocean Drive and Lummus Park pair the Art Deco frontage with South Beach\u2019s ocean edge."
+  },
+  "ftl": {
+    "district": "ftl-center",
+    "x": 384.995689269526,
+    "y": 241.34254866788277,
+    "lon": -80.1433786,
+    "lat": 26.1223084,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center with its source streets, buildings and surrounding coast or canals."
+  },
+  "bal-harbour": {
+    "district": "bal-harbour-center",
+    "x": 387.43461726108495,
+    "y": 215.8225333711574,
+    "lon": -80.1269896,
+    "lat": 25.8917613,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center with its source streets, buildings and surrounding coast or canals."
+  },
+  "dania-beach": {
+    "district": "dania-beach-center",
+    "x": 388.3237198273766,
+    "y": 234.10805457288328,
+    "lon": -80.11234665026477,
+    "lat": 26.05620961975937,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Dania Beach Ocean Park brings the Atlantic beachfront and adjacent waterfront into view.",
+    "heroSource": "https://www.openstreetmap.org/relation/7149797"
+  },
+  "hallandale": {
+    "district": "hallandale-center",
+    "x": 387.9751665017277,
+    "y": 226.0140848644494,
+    "lon": -80.11838366483542,
+    "lat": 25.98340732060424,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "South City Beach Park frames Hallandale\u2019s public beach and beachfront condo towers.",
+    "heroSource": "https://www.openstreetmap.org/way/718136857"
+  },
+  "hollywood": {
+    "district": "hollywood-center",
+    "x": 388.1697474823762,
+    "y": 230.1664019160641,
+    "lon": -80.11512987452863,
+    "lat": 26.020751895464706,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Hollywood Broadwalk places the oceanfront promenade, beach and hotel blocks together.",
+    "heroSource": "https://www.openstreetmap.org/way/10790959"
+  },
+  "lauderdale-by-the-sea": {
+    "district": "lauderdale-by-the-sea-center",
+    "x": 389.435725537822,
+    "y": 249.2237071317498,
+    "lon": -80.0964326,
+    "lat": 26.192028,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center with its source streets, buildings and surrounding coast or canals."
+  },
+  "lighthouse-point": {
+    "district": "lighthouse-point-center",
+    "x": 390.05559355800153,
+    "y": 258.5273891684394,
+    "lon": -80.0872654,
+    "lat": 26.275636,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center with its source streets, buildings and surrounding coast or canals."
+  },
+  "north-miami-beach": {
+    "district": "north-miami-beach-center",
+    "x": 383.73598261727057,
+    "y": 220.30160188608892,
+    "lon": -80.1625463,
+    "lat": 25.9331488,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center with its source streets, buildings and surrounding coast or canals."
+  },
+  "sunny-isles-beach": {
+    "district": "sunny-isles-beach-center",
+    "x": 387.7710218869736,
+    "y": 221.48730285688296,
+    "lon": -80.1218486,
+    "lat": 25.9426915,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center with its source streets, buildings and surrounding coast or canals."
+  },
+  "wilton-manors": {
+    "district": "wilton-manors-center",
+    "x": 385.3070243984384,
+    "y": 245.57762701839604,
+    "lon": -80.138934,
+    "lat": 26.1603626,
+    "desktopSpan": 2.8,
+    "phoneSpan": 1.4,
+    "reason": "Mapped town center with its source streets, buildings and surrounding coast or canals."
   }
 }

@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Lighthouse Point,390.05560302734375,258.5273742675781,-80.08726530981583,26.275635863106125,-80.0872654,26.275636,0.0177,https://www.openstreetmap.org/node/153880828,Representative OSM town place-label anchor: Lighthouse Point

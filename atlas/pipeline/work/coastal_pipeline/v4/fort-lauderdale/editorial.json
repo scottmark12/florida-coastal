@@ -124,17 +124,17 @@
     },
     "ftl": {
       "walls": [
-        "#87b9c5",
-        "#9bc9c9",
-        "#d3e8e4",
-        "#f1f1e6"
+        "#f7ecd3",
+        "#d9e6d0",
+        "#e2d5c5",
+        "#fff6e8"
       ],
       "roofs": [
-        "#dfede6",
-        "#adc4c3"
+        "#b9947c",
+        "#cdb59a"
       ],
-      "roof": "flat",
-      "detail": "balconies",
+      "roof": "gable",
+      "detail": "stucco",
       "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
       "referenceScope": "regional context; palette is an editorial interpretation",
       "trim": [
@@ -260,9 +260,43 @@
         "#f6efdc",
         "#92b6a3"
       ]
+    },
+    "ftl-downtown": {
+      "walls": [
+        "#87b9c5",
+        "#9bc9c9",
+        "#d3e8e4",
+        "#f1f1e6"
+      ],
+      "roofs": [
+        "#dfede6",
+        "#adc4c3"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+      "referenceScope": "regional context; palette is an editorial interpretation",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
     }
   },
   "manual_fixes": [
-    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory."
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Bal Harbour source uses the OSM name Bal Harbour Village; the existing public town ID is retained.",
+    "Fort Lauderdale downtown uses its glass recipe; surrounding canal homes use the prepared canal-villa recipe.",
+    "Source building windows for Fort Lauderdale, Hollywood, Hallandale and Dania extend east to the beachfront."
+  ],
+  "styleZones": [
+    {
+      "bounds": [
+        -80.153,
+        26.112,
+        -80.132,
+        26.133
+      ],
+      "recipe": "ftl-downtown"
+    }
   ]
 }

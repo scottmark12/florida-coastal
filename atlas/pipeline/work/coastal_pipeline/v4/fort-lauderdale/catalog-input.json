@@ -68,11 +68,17 @@
       "area_id": "miami-fort-lauderdale",
       "area_name": "Miami and Fort Lauderdale",
       "source_url": "https://www.floridacoastal.co/towns/ftl.html",
-      "nearest_town_km": 4.440327895453733
+      "nearest_town_km": 4.440327895453733,
+      "source_bounds": [
+        -80.18,
+        26.095,
+        -80.093,
+        26.15
+      ]
     },
     {
       "id": "bal-harbour",
-      "name": "Bal Harbour",
+      "name": "Bal Harbour Village",
       "region": "Southeast Atlantic",
       "coast": "atlantic",
       "lat": 25.892,
@@ -145,7 +151,13 @@
       "area_id": "miami-fort-lauderdale",
       "area_name": "Miami and Fort Lauderdale",
       "source_url": "https://www.floridacoastal.co/towns/dania-beach.html",
-      "nearest_town_km": 4.589197024994013
+      "nearest_town_km": 4.589197024994013,
+      "source_bounds": [
+        -80.17,
+        26.03,
+        -80.105,
+        26.075
+      ]
     },
     {
       "id": "hallandale",
@@ -183,7 +195,13 @@
       "area_id": "miami-fort-lauderdale",
       "area_name": "Miami and Fort Lauderdale",
       "source_url": "https://www.floridacoastal.co/towns/hallandale.html",
-      "nearest_town_km": 3.335087032093765
+      "nearest_town_km": 3.335087032093765,
+      "source_bounds": [
+        -80.173,
+        25.959,
+        -80.108,
+        26.005
+      ]
     },
     {
       "id": "hollywood",
@@ -222,7 +240,13 @@
       "area_id": "miami-fort-lauderdale",
       "area_name": "Miami and Fort Lauderdale",
       "source_url": "https://www.floridacoastal.co/towns/hollywood.html",
-      "nearest_town_km": 3.335087032093765
+      "nearest_town_km": 3.335087032093765,
+      "source_bounds": [
+        -80.175,
+        25.989,
+        -80.105,
+        26.035
+      ]
     },
     {
       "id": "lauderdale-by-the-sea",

@@ -1,0 +1,98 @@
+{
+  "id": "fort-lauderdale/dania-beach",
+  "name": "Dania Beach",
+  "towns": [
+    "dania-beach"
+  ],
+  "bounds": [
+    -80.171929,
+    26.024422400000002,
+    -80.105,
+    26.0804224
+  ],
+  "recipes": "work/coastal_pipeline/v4/fort-lauderdale/recipes.json",
+  "camera": {
+    "center": [
+      385.18324514110776,
+      233.5889265108101
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "dania-beach-center": "dania-beach"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Bal Harbour source uses the OSM name Bal Harbour Village; the existing public town ID is retained.",
+    "Fort Lauderdale downtown uses its glass recipe; surrounding canal homes use the prepared canal-villa recipe.",
+    "Source building windows for Fort Lauderdale, Hollywood, Hallandale and Dania extend east to the beachfront.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/fort-lauderdale/geography.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/cover.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-dania-beach.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/fort-lauderdale/districts.json",
+    "prices": "work/coastal_pipeline/v4/fort-lauderdale/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/dania-beach/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/dania-beach/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/dania-beach/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/dania-beach/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/fort-lauderdale/dania-beach/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/fort-lauderdale/dania-beach-center-worldcover-2021.png",
+        "bounds": [
+          -80.168,
+          26.028416666666665,
+          -80.12,
+          26.076416666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "dania-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  }
+}

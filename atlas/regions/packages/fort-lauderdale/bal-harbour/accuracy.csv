@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Bal Harbour Village,387.43463134765625,215.82254028320312,-80.126989457106,25.891761358274938,-80.1269896,25.8917613,0.0157,https://www.openstreetmap.org/node/154131417,Representative OSM town place-label anchor: Bal Harbour Village
