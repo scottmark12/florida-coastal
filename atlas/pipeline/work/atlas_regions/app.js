@@ -10,6 +10,8 @@ const [catalog,districts,features,builtRoutes,roadData]=await Promise.all(['cata
 const packageRegistry=await fetch(assetBase+'package-registry.json').then(r=>r.json());
 const overviewRegistry=await fetch(assetBase+'accurate-overviews.json').then(r=>r.json());
 const regionImages=await fetch(assetBase+'region-images.json').then(r=>r.json());
+const regionalStyle=await fetch(assetBase+'regional-style.json').then(r=>r.json());
+const backdropMeta=await fetch(assetBase+'region-backdrop.json').then(r=>r.json());
 const overviewLayers=new Map();
 const townViews=await fetch(assetBase+'town-views.json').then(r=>r.json());
 const towns=catalog.towns, regions=catalog.regions, byId=Object.fromEntries(towns.map(t=>[t.id,t]));
@@ -42,7 +44,8 @@ const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'low-powe
 scene.add(new THREE.HemisphereLight(0xffffff,0x798b77,1.5));const sun=new THREE.DirectionalLight(0xfff5df,1.7);sun.castShadow=!mobile;sun.shadow.mapSize.set(mobile?1024:2048, mobile?1024:2048);sun.shadow.bias=-.0003;scene.add(sun,sun.target);
 const sea=new THREE.Mesh(new THREE.PlaneGeometry(3500,3500),new THREE.MeshBasicMaterial({color:'#3593ae',toneMapped:false}));sea.rotation.x=-Math.PI/2;sea.position.set(0,-.4,-400);scene.add(sea);
 const roadGeometry=new THREE.BufferGeometry();roadGeometry.setAttribute('position',new THREE.Float32BufferAttribute(roadData,3));const roadLines=new THREE.LineSegments(roadGeometry,new THREE.LineBasicMaterial({color:'#958a6e',transparent:true,opacity:.3}));scene.add(roadLines);
-const flatCanvas=document.createElement('canvas');flatCanvas.setAttribute('aria-label','Illustrated regional map');Object.assign(flatCanvas.style,{position:'absolute',inset:'0',width:'100%',height:'100%',pointerEvents:'none'});flatCanvas.hidden=true;$('#map').append(flatCanvas);const flatCache=new Map();let flatImage=null,flatMeta=null;
+const flatCanvas=document.createElement('canvas');flatCanvas.setAttribute('aria-label','Illustrated regional map');Object.assign(flatCanvas.style,{position:'absolute',inset:'0',width:'100%',height:'100%',pointerEvents:'none'});flatCanvas.hidden=true;$('#map').append(flatCanvas);const flatCache=new Map();let flatImage=null,flatMeta=null,flatBackground=null;
+const regionCSS=document.createElement('style');regionCSS.textContent=`.map-label.neighbor-label{font-size:${regionalStyle.labels.neighborFontPx}px!important;opacity:${regionalStyle.labels.neighborOpacity};padding:2px 5px;min-height:18px;box-shadow:none;background:#fff9}.region-town-dot.neighbor-dot{width:5px;height:5px;min-width:5px;min-height:5px;border-width:1px;opacity:${regionalStyle.labels.neighborOpacity}}.map-label.town-label:not(.neighbor-label){font-size:${regionalStyle.labels.ownFontPx}px}@media(max-width:699px){.map-label.town-label:not(.neighbor-label){font-size:11px}}`;document.head.append(regionCSS);
 const camera=new THREE.OrthographicCamera(-50,50,50,-50,.0001,3500), target=new THREE.Vector3(), overlays=new THREE.Group();scene.add(overlays);let span=48, architecture=null, stateIcons=null, currentPackage='', packageToken=0;
 const loader=new GLTFLoader(), cache=new Map();
 const lakeRay=new THREE.Raycaster();renderer.domElement.addEventListener('click',e=>{if(!isThirty()||!terrain)return;lakeRay.setFromCamera(new THREE.Vector2(e.clientX/innerWidth*2-1,-(e.clientY-renderer.domElement.getBoundingClientRect().top)/renderer.domElement.getBoundingClientRect().height*2+1),camera);const hit=lakeRay.intersectObject(terrain,true).find(h=>h.object.name.startsWith('Lake_')||h.object.name.startsWith('Lake /'));if(!hit)return;const lake=thirty.lakes.find(l=>hit.object.name.includes(l.name.replaceAll(' ','_'))||hit.object.name.includes(l.name));if(lake)openLake(lake)});
@@ -65,13 +68,14 @@ function setCamera(){
  if(isDetailed()&&detailedLayer){if(level==='region'){const c=detailedLayer.meta.camera||{center:[detailedLayer.meta.center[0]+1,detailedLayer.meta.center[1]],phoneOffsetY:4,phoneSpan:20,desktopSpan:32};target.set(c.center[0]+(innerWidth<700?0:(c.desktopOffsetX||0)),0,-c.center[1]+(innerWidth<700?c.phoneOffsetY:0));span=innerWidth<700?c.phoneSpan:c.desktopSpan}else{const d=selectedDistrict||detailedLayer.meta.districts[0];target.set(d.x,0,-d.y);span=innerWidth<700?1.05:1.9}}
  // Fit every town in the selected coastal region, within the unobstructed map area.
  if(level==='region'){
-  const points=[...region.towns,...(region.contextTowns||[])].map(id=>byId[id]).filter(Boolean);
+  const points=region.towns.map(id=>byId[id]).filter(Boolean);
   const xs=points.map(t=>t.x),ys=points.map(t=>t.y/Math.SQRT2);
-  const left=innerWidth<700?35:75,right=innerWidth<700?innerWidth-35:innerWidth-330;
-  const top=155,bottom=innerWidth<700?innerHeight-Math.min(innerHeight*.34,360)-85:innerHeight-85;
+  const left=innerWidth<700?24:48,right=innerWidth<700?innerWidth-24:innerWidth-330;
+  const top=innerWidth<700?125:145,bottom=innerWidth<700?innerHeight-Math.min(innerHeight*.34,300)-40:innerHeight-65;
   const scale=Math.max((Math.max(...xs)-Math.min(...xs)+6)/Math.max(100,right-left),(Math.max(...ys)-Math.min(...ys)+6)/Math.max(120,bottom-top));
+  let anchorY=(top+bottom)/2;if((Math.max(...ys)-Math.min(...ys))/(Math.max(...xs)-Math.min(...xs)+.001)<.35&&innerWidth>=700)anchorY=innerHeight*regionalStyle.framing.horizontalCoastAnchor;
   span=scale*innerWidth;
-  target.set((Math.min(...xs)+Math.max(...xs))/2+(innerWidth/2-(left+right)/2)*scale,0,-((Math.min(...ys)+Math.max(...ys))/2+((top+bottom)/2-innerHeight/2)*scale)*Math.SQRT2);
+  target.set((Math.min(...xs)+Math.max(...xs))/2+(innerWidth/2-(left+right)/2)*scale,0,-((Math.min(...ys)+Math.max(...ys))/2+(anchorY-innerHeight/2)*scale)*Math.SQRT2);
  }
  const townView=townViews[activeTown.id];
  if(level==='town'&&townView&&(!selectedDistrict||selectedDistrict.id===townView.district)){target.set(townView.x,0,-townView.y);span=innerWidth<700?townView.phoneSpan:townView.desktopSpan}
@@ -91,13 +95,13 @@ function setCamera(){
 }
 function renderFlatRegion(){
  camera.updateMatrixWorld(true);
- const ratio=Math.min(devicePixelRatio,2);flatCanvas.width=Math.round(innerWidth*ratio);flatCanvas.height=Math.round(innerHeight*ratio);const ctx=flatCanvas.getContext('2d');ctx.scale(ratio,ratio);ctx.fillStyle=['emerald-coast','forgotten-coast'].includes(region.id)?'#17658f':'#3593ae';ctx.fillRect(0,0,innerWidth,innerHeight);
- const m=flatMeta.camera,c=new THREE.Vector3(...m.target).project(camera),scale=innerWidth/(camera.right-camera.left),w=(m.right-m.left)*scale,h=(m.top-m.bottom)*scale;ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';ctx.drawImage(flatImage,(c.x*.5+.5)*innerWidth-w/2,(-c.y*.5+.5)*innerHeight-h/2,w,h);
+ const ratio=Math.min(devicePixelRatio,2);flatCanvas.width=Math.round(innerWidth*ratio);flatCanvas.height=Math.round(innerHeight*ratio);const ctx=flatCanvas.getContext('2d');ctx.scale(ratio,ratio);ctx.fillStyle=flatMeta.waterColor||regionalStyle.water.deep;ctx.fillRect(0,0,innerWidth,innerHeight);
+ const drawRaster=(image,meta)=>{const m=meta.camera,c=new THREE.Vector3(...m.target).project(camera),scale=innerWidth/(camera.right-camera.left),w=(m.right-m.left)*scale,h=(m.top-m.bottom)*scale;ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';ctx.drawImage(image,(c.x*.5+.5)*innerWidth-w/2,(-c.y*.5+.5)*innerHeight-h/2,w,h)};if(flatBackground)drawRaster(flatBackground,backdropMeta);drawRaster(flatImage,flatMeta);
  const point=(o,i)=>{const a=o.geometry.attributes.position,v=new THREE.Vector3(a.getX(i),a.getY(i),a.getZ(i)).applyMatrix4(o.matrixWorld).project(camera);return [(v.x*.5+.5)*innerWidth,(-v.y*.5+.5)*innerHeight]};overlays.updateMatrixWorld(true);
  for(const o of overlays.children){if(!o.geometry||!o.material)continue;ctx.globalAlpha=o.material.opacity;ctx.fillStyle=ctx.strokeStyle=o.material.color.getStyle(THREE.SRGBColorSpace);ctx.lineWidth=2;
   if(o.isMesh){const indices=o.geometry.index;for(let i=0;i<(indices?indices.count:o.geometry.attributes.position.count);i+=3){ctx.beginPath();for(let j=0;j<3;j++){const p=point(o,indices?indices.getX(i+j):i+j);j?ctx.lineTo(...p):ctx.moveTo(...p)}ctx.closePath();ctx.fill()}}
   else{ctx.setLineDash(o.material.isLineDashedMaterial?[6,4]:[]);ctx.beginPath();for(let i=0;i<o.geometry.attributes.position.count;i++){const p=point(o,i);i?ctx.lineTo(...p):ctx.moveTo(...p)}ctx.stroke();ctx.setLineDash([])}
- }ctx.globalAlpha=1;placeLabels();document.body.dataset.drawCalls='0';document.body.dataset.triangles='0';document.body.dataset.viewport=innerWidth+'×'+innerHeight;
+ }ctx.globalAlpha=1;placeLabels();document.body.dataset.regionViewport=JSON.stringify([target.x+camera.left,-target.z/Math.SQRT2+camera.bottom,target.x+camera.right,-target.z/Math.SQRT2+camera.top]);document.body.dataset.drawCalls='0';document.body.dataset.triangles='0';document.body.dataset.viewport=innerWidth+'×'+innerHeight;
 }
 async function show(){
  document.body.dataset.ready='false';
@@ -107,8 +111,8 @@ async function show(){
   flatCanvas.hidden=true;renderer.domElement.style.visibility='visible';
   if(level==='region'&&qs.get('regionalExport')!=='1'){
    const m=regionImages[region.id];if(!m)throw Error('Regional image unavailable');if(detailedLayer)detailedLayer.hide();if(bridgeModel)bridgeModel.visible=false;
-   if(!flatCache.has(m.file))flatCache.set(m.file,new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>reject(Error('Regional image unavailable'));image.src=assetBase+m.file+'?v='+m.revision}));
-   const image=await flatCache.get(m.file);if(token!==packageToken)return;flatImage=image;flatMeta=m;flatCanvas.hidden=false;renderer.domElement.style.visibility='hidden';updateUi();makeLabels();highlight();renderFlatRegion();status('');const credit=document.getElementById('canopy-credit');if(credit)credit.textContent=m.attribution;document.body.dataset.ready='true';document.body.dataset.pipeline='flat-region-image';document.body.dataset.regionChunks='0';document.body.dataset.regionImage=m.file;return;
+   const raster=meta=>{if(!flatCache.has(meta.file))flatCache.set(meta.file,new Promise((resolve,reject)=>{const image=new Image();image.onload=()=>resolve(image);image.onerror=()=>reject(Error('Regional image unavailable'));image.src=assetBase+meta.file+'?v='+meta.revision}));return flatCache.get(meta.file)};
+   const [image,background]=await Promise.all([raster(m),raster(backdropMeta)]);flatBackground=background;if(token!==packageToken)return;flatImage=image;flatMeta=m;flatCanvas.hidden=false;renderer.domElement.style.visibility='hidden';updateUi();makeLabels();highlight();renderFlatRegion();status('');const credit=document.getElementById('canopy-credit');if(credit)credit.textContent=m.attribution;document.body.dataset.ready='true';document.body.dataset.pipeline='flat-region-image';document.body.dataset.regionChunks='0';document.body.dataset.regionImage=m.file;return;
   }
 
   if(!bridgeModel){bridgeModel=new THREE.Group();bridgeModel.name='OSM bridges and causeways';scene.add(bridgeModel)}bridgeModel.visible=level==='town'||(level==='region'&&innerWidth>=700&&!!overviewRegistry[region.id]);
@@ -186,7 +190,7 @@ function label(text,x,y,kind,onClick,priority=1){
 function makeLabels(){
  $('#labels').replaceChildren();$('#leaders').replaceChildren();labels.length=0;
  if(level==='state')for(const r of regions)label(r.map,r.center[0],r.center[1],'region-label',()=>{region=r;activeTown=byId[r.towns[0]];level='region';selectedDistrict=null;show()},3);
- else if(level==='region'){for(const id of [...new Set([...region.towns,...(region.contextTowns||[])])]){const t=byId[id];if(t)label(t.name,t.x,t.y,'town-label',()=>chooseTown(id),region.towns.includes(id)?3:2)}}
+ else if(level==='region'){const own=region.towns.map(id=>byId[id]).filter(Boolean),neighbors=towns.filter(t=>!region.towns.includes(t.id)&&own.some(o=>Math.hypot(o.x-t.x,o.y-t.y)<regionalStyle.framing.neighborRadiusKm));for(const t of [...own,...neighbors]){const isOwn=region.towns.includes(t.id),priority=isOwn?(regionalStyle.labels.priorityTowns.includes(t.id)?200:100):10;label(t.name,t.x,t.y,'town-label',()=>chooseTown(t.id),priority);const l=labels.at(-1);l.b.classList.toggle('neighbor-label',!isOwn);l.b.dataset.labelGroup=isOwn?'own':'neighbor';if(l.anchor)l.anchor.classList.toggle('neighbor-dot',!isOwn)}}
  else {
   for(const t of towns){if(isDetailed())continue;if(isThirty()&&t.id==='30a')continue;if(Math.hypot(t.x-activeTown.x,t.y-activeTown.y)>42)continue;label(t.name,t.x,t.y,'town-label',()=>{activeTown=t;region=regionFor(t.id);selectedDistrict=null;level='town';openTown(t);show()},t.id===activeTown.id?5:2)}
   for(const d of districts.filter(d=>(!isDetailed()||detailedLayer.meta.districts.some(q=>q.id===d.id))&&(isDetailed()||Math.hypot(d.x-activeTown.x,d.y-activeTown.y)<24&&(level==='town'||d.town===activeTown.id||(activeTown.id==='southbeach'&&d.town==='miami')))))label(d.name,d.x,d.y,'district-label',()=>openDistrict(d),4);
@@ -239,7 +243,22 @@ function illustrateThirty(model){
  });
 }
 
+function placeRegionLabels(){
+ const used=[],header=$('header').getBoundingClientRect(),controls=$('#controls').getBoundingClientRect(),limit=regionalStyle.labels.maxLeaderPx;
+ for(const l of [...labels].sort((a,b)=>b.priority-a.priority)){
+  l.leader.style.display='none';l.b.style.visibility='hidden';l.b.style.left='0px';l.b.style.top='0px';const p=new THREE.Vector3(l.x,.004,-l.y).project(camera),ax=(p.x*.5+.5)*innerWidth,ay=(-p.y*.5+.5)*innerHeight,inside=p.z<=1&&ax>=6&&ax<=innerWidth-6&&ay>=6&&ay<=innerHeight-6;
+  if(l.anchor){l.anchor.style.left=(inside?ax:0)+'px';l.anchor.style.top=(inside?ay:0)+'px';l.anchor.dataset.screenX=ax;l.anchor.dataset.screenY=ay;l.anchor.style.visibility=inside?'visible':'hidden'}if(!inside)continue;
+  const w=l.b.offsetWidth||100,h=l.b.offsetHeight||24;
+  for(const [dx,dy] of [[0,-18],[0,18],[0,-34],[0,34],[0,-48],[0,48],[-24,-30],[24,30]]){
+   const x=Math.min(innerWidth-w/2-8,Math.max(w/2+8,ax+dx)),y=ay+dy,b={left:x-w/2,right:x+w/2,top:y-h/2,bottom:y+h/2},overlaps=q=>!(b.right+5<q.left||b.left-5>q.right||b.bottom+4<q.top||b.top-4>q.bottom),ex=Math.max(b.left,Math.min(b.right,ax)),ey=Math.max(b.top,Math.min(b.bottom,ay)),distance=Math.hypot(ex-ax,ey-ay);
+   if(b.top<10||b.bottom>innerHeight-35||overlaps(header)||overlaps(controls)||used.some(overlaps)||distance>limit)continue;
+   l.b.style.left=x+'px';l.b.style.top=y+'px';l.b.style.visibility='visible';used.push(b);l.b.dataset.anchorX=ax;l.b.dataset.anchorY=ay;
+   if(distance>2){for(const [k,v] of Object.entries({x1:ax,y1:ay,x2:ex,y2:ey}))l.leader.setAttribute(k,v);l.leader.dataset.length=distance;l.leader.style.opacity=l.priority<50?regionalStyle.labels.neighborOpacity:'.8';l.leader.style.display='block'}break;
+  }
+ }
+}
 function placeLabels(){
+ if(level==='region'){placeRegionLabels();return}
  const boxes=[];const header=$('header').getBoundingClientRect(),controls=$('#controls').getBoundingClientRect();
  for(const l of [...labels].sort((a,b)=>b.priority-a.priority)){
   l.leader.style.display='none';const mapRect=renderer.domElement.getBoundingClientRect();const p=new THREE.Vector3(l.x,(isThirty()||isDetailed()||level==='region')?.004:.8,-l.y).project(camera),w=l.b.offsetWidth||100,h=l.b.offsetHeight||28;let x=(p.x*.5+.5)*innerWidth,y=mapRect.top+(-p.y*.5+.5)*mapRect.height;

@@ -1,0 +1,380 @@
+{
+  "emerald-coast": {
+    "file": "work/regional-art/emerald-coast.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -173.79191097821652,
+      "far": 1737.9191097821652,
+      "left": -173.79191097821652,
+      "mapUnits": "kilometers",
+      "near": 17.379191097821653,
+      "position": [
+        -230.31723422292677,
+        434.4797774455413,
+        -275.8949107350182
+      ],
+      "projection": "orthographic",
+      "right": 173.79191097821652,
+      "target": [
+        -230.31723422292677,
+        0,
+        -710.3746881805595
+      ],
+      "tiltDegrees": 45,
+      "top": 173.79191097821652
+    },
+    "bytes": 71812,
+    "revision": "2a94deb5ebc46dcb",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "forgotten-coast": {
+    "file": "work/regional-art/forgotten-coast.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -122.47030876727705,
+      "far": 1224.7030876727704,
+      "left": -122.47030876727705,
+      "mapUnits": "kilometers",
+      "near": 12.247030876727706,
+      "position": [
+        -68.88656913904559,
+        306.1757719181926,
+        -354.06652540894163
+      ],
+      "projection": "orthographic",
+      "right": 122.47030876727705,
+      "target": [
+        -68.88656913904559,
+        0,
+        -660.2422973271342
+      ],
+      "tiltDegrees": 45,
+      "top": 122.47030876727705
+    },
+    "bytes": 60806,
+    "revision": "c8a5d9eebf30a7a5",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "nature-coast": {
+    "file": "work/regional-art/nature-coast.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -105.85168436353496,
+      "far": 1058.5168436353497,
+      "left": -105.85168436353496,
+      "mapUnits": "kilometers",
+      "near": 10.5851684363535,
+      "position": [
+        97.50597862623682,
+        264.6292109088374,
+        -308.07051053971054
+      ],
+      "projection": "orthographic",
+      "right": 105.85168436353496,
+      "target": [
+        97.50597862623682,
+        0,
+        -572.699721448548
+      ],
+      "tiltDegrees": 45,
+      "top": 105.85168436353496
+    },
+    "bytes": 78178,
+    "revision": "328c206ccd2de15c",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "tampa-bay": {
+    "file": "work/regional-art/tampa-bay.webp",
+    "width": 4096,
+    "height": 4096,
+    "camera": {
+      "bottom": -117.04722135863386,
+      "far": 1170.4722135863385,
+      "left": -117.04722135863386,
+      "mapUnits": "kilometers",
+      "near": 11.704722135863388,
+      "position": [
+        144.55364443164265,
+        292.6180533965846,
+        -97.91481233717168
+      ],
+      "projection": "orthographic",
+      "right": 117.04722135863386,
+      "target": [
+        144.55364443164265,
+        0,
+        -390.5328657337563
+      ],
+      "tiltDegrees": 45,
+      "top": 117.04722135863386
+    },
+    "bytes": 223720,
+    "revision": "54bac61615b220fe",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0",
+    "reference": "Approved Sarasota and Bradenton regional capture"
+  },
+  "fort-myers-sanibel": {
+    "file": "work/regional-art/fort-myers-sanibel.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -50.33923013556877,
+      "far": 3500,
+      "left": -50.33923013556877,
+      "mapUnits": "kilometers",
+      "near": 0.0001,
+      "position": [
+        204.60116039317677,
+        125.84807533892192,
+        -172.18549802147143
+      ],
+      "projection": "orthographic",
+      "right": 50.33923013556877,
+      "target": [
+        204.60116039317677,
+        0,
+        -298.03357336039335
+      ],
+      "tiltDegrees": 45,
+      "top": 50.33923013556877
+    },
+    "bytes": 282550,
+    "revision": "a43772ae90d05df4",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "naples-marco": {
+    "file": "work/regional-art/naples-marco.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -49.46719925956437,
+      "far": 494.6719925956437,
+      "left": -49.46719925956437,
+      "mapUnits": "kilometers",
+      "near": 4.946719925956437,
+      "position": [
+        246.25963916291428,
+        123.66799814891093,
+        -99.0930057607575
+      ],
+      "projection": "orthographic",
+      "right": 49.46719925956437,
+      "target": [
+        246.25963916291428,
+        0,
+        -222.76100390966843
+      ],
+      "tiltDegrees": 45,
+      "top": 49.46719925956437
+    },
+    "bytes": 93436,
+    "revision": "b79eda4902999c91",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "florida-keys": {
+    "file": "work/regional-art/florida-keys.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -138.85385920597545,
+      "far": 3500,
+      "left": -138.85385920597545,
+      "mapUnits": "kilometers",
+      "near": 0.0001,
+      "position": [
+        302.18725321451694,
+        347.13464801493853,
+        248.09255423995967
+      ],
+      "projection": "orthographic",
+      "right": 138.85385920597545,
+      "target": [
+        302.18725321451694,
+        0,
+        -99.04209377497888
+      ],
+      "tiltDegrees": 45,
+      "top": 138.85385920597545
+    },
+    "bytes": 157712,
+    "revision": "cdf8845c27c65083",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "miami-fort-lauderdale": {
+    "file": "work/regional-art/miami-fort-lauderdale.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -42.19793274342641,
+      "far": 421.9793274342641,
+      "left": -42.19793274342641,
+      "mapUnits": "kilometers",
+      "near": 4.219793274342641,
+      "position": [
+        388.9738948260022,
+        105.49483185856604,
+        -125.66090069095353
+      ],
+      "projection": "orthographic",
+      "right": 42.19793274342641,
+      "target": [
+        388.9738948260022,
+        0,
+        -231.1557325495195
+      ],
+      "tiltDegrees": 45,
+      "top": 42.19793274342641
+    },
+    "bytes": 153134,
+    "revision": "169f129ce42a76f4",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "palm-beaches": {
+    "file": "work/regional-art/palm-beaches.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -45.472648433258215,
+      "far": 3500,
+      "left": -45.472648433258215,
+      "mapUnits": "kilometers",
+      "near": 0.0001,
+      "position": [
+        391.8521083154313,
+        113.68162108314552,
+        -187.57470292922295
+      ],
+      "projection": "orthographic",
+      "right": 45.472648433258215,
+      "target": [
+        391.8521083154313,
+        0,
+        -301.2563240123685
+      ],
+      "tiltDegrees": 45,
+      "top": 45.472648433258215
+    },
+    "bytes": 167420,
+    "revision": "6b84477bb79cc1b3",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "treasure-coast": {
+    "file": "work/regional-art/treasure-coast.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -49.12817290688235,
+      "far": 3500,
+      "left": -49.12817290688235,
+      "mapUnits": "kilometers",
+      "near": 0.0001,
+      "position": [
+        363.4854385179638,
+        122.82043226720587,
+        -273.00860322903935
+      ],
+      "projection": "orthographic",
+      "right": 49.12817290688235,
+      "target": [
+        363.4854385179638,
+        0,
+        -395.8290354962453
+      ],
+      "tiltDegrees": 45,
+      "top": 49.12817290688235
+    },
+    "bytes": 200080,
+    "revision": "ffaba79f3f3b68a3",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "space-coast": {
+    "file": "work/regional-art/space-coast.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -46.115465599482576,
+      "far": 3500,
+      "left": -46.115465599482576,
+      "mapUnits": "kilometers",
+      "near": 0.0001,
+      "position": [
+        327.93978076844644,
+        115.28866399870644,
+        -370.1572138519691
+      ],
+      "projection": "orthographic",
+      "right": 46.115465599482576,
+      "target": [
+        327.93978076844644,
+        0,
+        -485.4458778506756
+      ],
+      "tiltDegrees": 45,
+      "top": 46.115465599482576
+    },
+    "bytes": 250852,
+    "revision": "9131bd1155f1e431",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "daytona-flagler": {
+    "file": "work/regional-art/daytona-flagler.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -44.43319652875318,
+      "far": 3500,
+      "left": -44.43319652875318,
+      "mapUnits": "kilometers",
+      "near": 0.0001,
+      "position": [
+        287.7017387080537,
+        111.08299132188294,
+        -482.5852338616873
+      ],
+      "projection": "orthographic",
+      "right": 44.43319652875318,
+      "target": [
+        287.7017387080537,
+        0,
+        -593.6682251835703
+      ],
+      "tiltDegrees": 45,
+      "top": 44.43319652875318
+    },
+    "bytes": 184562,
+    "revision": "8adc4349439b4969",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  },
+  "first-coast": {
+    "file": "work/regional-art/first-coast.webp",
+    "width": 2048,
+    "height": 2048,
+    "camera": {
+      "bottom": -64.20294354347011,
+      "far": 642.0294354347011,
+      "left": -64.20294354347011,
+      "mapUnits": "kilometers",
+      "near": 6.4202943543470115,
+      "position": [
+        249.28409399568608,
+        160.50735885867527,
+        -538.3225143528715
+      ],
+      "projection": "orthographic",
+      "right": 64.20294354347011,
+      "target": [
+        249.28409399568608,
+        0,
+        -698.8298732115468
+      ],
+      "tiltDegrees": 45,
+      "top": 64.20294354347011
+    },
+    "bytes": 52384,
+    "revision": "6448dfc13fcc7c93",
+    "attribution": "\u00a9 OpenStreetMap contributors, ODbL \u00b7 ESA WorldCover 2021 CC BY 4.0 \u00b7 Microsoft footprints, CDLA Permissive 2.0"
+  }
+}
