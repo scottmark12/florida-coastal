@@ -448,5 +448,35 @@
     "desktopSpan": 2.2,
     "phoneSpan": 1.1,
     "reason": "Williams Park frames the Alafia River crossing, boat ramp and low riverfront neighborhoods."
+  },
+  "keywest": {
+    "district": "keywest-center",
+    "x": 222.53561478025637,
+    "y": 63.454946649665125,
+    "lon": -81.8020722,
+    "lat": 24.5548262,
+    "desktopSpan": 2.4,
+    "phoneSpan": 1.3,
+    "reason": "Mapped town center with surrounding island streets and water."
+  },
+  "islamorada": {
+    "district": "islamorada-center",
+    "x": 340.1498561565159,
+    "y": 107.00604769796205,
+    "lon": -80.6291479,
+    "lat": 24.9236561,
+    "desktopSpan": 2.4,
+    "phoneSpan": 1.3,
+    "reason": "Mapped town center with surrounding island streets and water."
+  },
+  "key-largo": {
+    "district": "key-largo-center",
+    "x": 357.9793170003936,
+    "y": 125.62928795596595,
+    "lon": -80.4472392,
+    "lat": 25.087035,
+    "desktopSpan": 2.4,
+    "phoneSpan": 1.3,
+    "reason": "Mapped town center with surrounding island streets and water."
   }
 }

@@ -79,5 +79,8 @@
   "holiday": "packages/holiday/",
   "port-richey": "packages/port-richey/",
   "hudson": "packages/hudson/",
-  "gibsonton": "packages/gibsonton/"
+  "gibsonton": "packages/gibsonton/",
+  "keywest": "packages/florida-keys/",
+  "islamorada": "packages/florida-keys/",
+  "key-largo": "packages/florida-keys/"
 }

@@ -1,0 +1,80 @@
+[
+  {
+    "town": "keywest",
+    "id": "keywest-center",
+    "name": "Key West",
+    "kind": "walk",
+    "description": "The end of the road: bikes, sunsets, live music and island time.",
+    "style": "keywest",
+    "lon": -81.8020722,
+    "lat": 24.5548262,
+    "x": 222.53561478025637,
+    "y": 63.454946649665125,
+    "positionSource": "https://www.openstreetmap.org/node/154206819",
+    "centerMeaning": "Representative OSM town place-label anchor: Key West",
+    "priceRange": "$1,150,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/monroe-county/key-west",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1150000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/monroe-county/key-west"
+    },
+    "source": "https://visitfloridakeys.com/plan-your-trip/plan-book/insiders-guide/key-west-architecture-treasures-tour",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "islamorada",
+    "id": "islamorada-center",
+    "name": "Islamorada",
+    "kind": "beach",
+    "description": "The sport fishing capital of the Keys, laid back and on the water.",
+    "style": "islamorada",
+    "lon": -80.6291479,
+    "lat": 24.9236561,
+    "x": 340.1498561565159,
+    "y": 107.00604769796205,
+    "positionSource": "https://www.openstreetmap.org/node/154160442",
+    "centerMeaning": "Representative OSM town place-label anchor: Islamorada",
+    "priceRange": "$2,712,500 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/monroe-county/islamorada",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 2712500,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/monroe-county/islamorada"
+    },
+    "source": "https://visitfloridakeys.com/plan-your-trip/plan-book/insiders-guide/key-west-architecture-treasures-tour",
+    "priceStatus": "Published market median; reporting period shown on card."
+  },
+  {
+    "town": "key-largo",
+    "id": "key-largo-center",
+    "name": "Key Largo",
+    "kind": "beach",
+    "description": "The first Key off the mainland and the dive capital of the country, with a coral reef state park offshore.",
+    "style": "key-largo",
+    "lon": -80.4472392,
+    "lat": 25.087035,
+    "x": 357.9793170003936,
+    "y": 125.62928795596595,
+    "positionSource": "https://www.openstreetmap.org/node/153891314",
+    "centerMeaning": "Representative OSM town place-label anchor: Key Largo",
+    "priceRange": "$1,195,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/monroe-county/key-largo",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1195000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/monroe-county/key-largo"
+    },
+    "source": "https://visitfloridakeys.com/plan-your-trip/plan-book/insiders-guide/key-west-architecture-treasures-tour",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]
