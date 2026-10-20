@@ -15,7 +15,7 @@ def continuous_land(fallback,packs,rid,source30):
   registry=json.load(open(P.parent/'regions/package-registry.json'));catalog=json.load(open(P.parent/'regions/catalog.json'))
   for neighbor in COVERAGE:
    if neighbor==rid:continue
-   region=next(r for r in catalog['regions'] if r['id']==neighbor)
+   region=next(r for r in catalog.get('sourceRegions',catalog['regions']) if r['id']==neighbor)
    paths={registry[t] for t in region['towns'] if t in registry}
    for path in paths:
     manifest=json.load(open(P/'work/coastal_pipeline/v4'/Path(path).name/'manifest.json'));clip=project(box(*manifest['bounds']));patch=project(shape(json.load(open(P/manifest['inputs']['land']['path'])))).simplify(.025,preserve_topology=True);land=land.difference(clip).union(patch)

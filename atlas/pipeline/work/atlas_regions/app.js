@@ -34,6 +34,7 @@ async function regionalWater(){
 async function loadThirty(){if(!thirty){thirty=await fetch(assetBase+'30a.json').then(r=>r.json());const vs=await fetch(assetBase+'sand.json').then(r=>r.json());const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(vs,3));sandArt=new THREE.Mesh(g,new THREE.MeshBasicMaterial({color:'#fffdf1',side:THREE.DoubleSide,toneMapped:false}));scene.add(sandArt);const exact=await fetch(assetBase+'alys-geometry.json.gz').then(async r=>new Response(r.body.pipeThrough(new DecompressionStream('gzip'))).json());alysOccupied=exact.occupied;alysArt=new THREE.Group();for(const [key,vs] of Object.entries(exact)){if(key==='occupied')continue;const g=new THREE.BufferGeometry();g.setAttribute('position',new THREE.Float32BufferAttribute(vs,3));g.computeVertexNormals();const m=new THREE.MeshStandardMaterial({color:key==='walls'?'#fff9e9':key==='roofs'?'#fffdf6':'#ded1b4',side:THREE.DoubleSide,roughness:.92,flatShading:true});const mesh=new THREE.Mesh(g,m);mesh.castShadow=key!=='lanes';mesh.receiveShadow=true;alysArt.add(mesh)}scene.add(alysArt)}return thirty}
 let townId=qs.get('view')||'30a';if(!byId[townId])townId='30a';
 let level=qs.get('level')||'region', activeTown=byId[townId], region=regionFor(townId), selectedDistrict=null, selectedFeature=null, weights={}, top5=[], resultsProvided=false, airportRoutes=builtRoutes;
+function sourceRegionFor(id){return (catalog.sourceRegions||regions).find(r=>r.towns.includes(id))||regionFor(id)}
 function regionFor(id){return regions.find(r=>r.towns.includes(id))||regions[0]}
 const scene=new THREE.Scene();scene.background=new THREE.Color('#3593ae');
 const renderer=new THREE.WebGLRenderer({antialias:true,powerPreference:'low-power'});renderer.setPixelRatio(Math.min(devicePixelRatio,mobile?1.5:2));renderer.setSize(innerWidth,innerHeight);renderer.outputColorSpace=THREE.SRGBColorSpace;renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.05;renderer.shadowMap.enabled=!mobile;renderer.shadowMap.type=THREE.PCFSoftShadowMap;$('#map').append(renderer.domElement);
@@ -99,7 +100,7 @@ async function show(){
   if(level==='region'&&overviewRegistry[region.id]){
    if(detailedLayer)detailedLayer.hide();for(const o of [terrain,architecture,stateIcons,thirtyModel,sandArt,alysArt,emeraldWater])if(o)o.visible=false;roadLines.visible=false;
    renderer.toneMapping=THREE.NoToneMapping;sun.shadow.normalBias=.0001;
-   const path=overviewRegistry[region.id];if(!overviewLayers.has(path)){const layer=await createAccurateOverview(assetBase+path,Object.entries(overviewRegistry).filter(([id])=>id!==region.id).map(([,p])=>assetBase+p));overviewLayers.set(path,layer);scene.add(layer.root)}
+   const path=overviewRegistry[region.id];if(!overviewLayers.has(path)){const layer=await createAccurateOverview(assetBase+path,[...new Set(Object.values(overviewRegistry))].filter(p=>p!==path).map(p=>assetBase+p));overviewLayers.set(path,layer);scene.add(layer.root)}
    const layer=overviewLayers.get(path);overviewLayers.delete(path);overviewLayers.set(path,layer);while(overviewLayers.size>2){const oldest=overviewLayers.keys().next().value;overviewLayers.get(oldest).dispose();overviewLayers.delete(oldest)}if(token!==packageToken)return;
    if(region.id==='emerald-coast'&&innerWidth>=700&&!layer.thirty){
     await loadThirty();const source=await load('30a-finished');illustrateThirty(source);const copy=source.clone(true);copy.userData.sharedTownSource=true;
@@ -123,7 +124,7 @@ async function show(){
   }
   if(detailedLayer)detailedLayer.hide();const credit=document.getElementById('canopy-credit');if(credit)credit.textContent='OSM-based geography · original illustrated canopy';if(terrain)terrain.visible=true;
   if(isThirty()){await loadThirty();await localCanopy()}
-  const tn=isThirty()?'30a-finished':level==='town'?'terrain-'+region.id:'terrain-state';if(tn!==terrainName){const next=await load(tn);if(token!==packageToken)return;if(terrain)scene.remove(terrain);terrain=next;terrainName=tn;if(tn==='30a-finished'||tn==='terrain-state')illustrateThirty(terrain);scene.add(terrain);document.body.dataset.terrainMs=Math.round(performance.now()-started)}
+  const tn=isThirty()?'30a-finished':level==='town'?'terrain-'+sourceRegionFor(activeTown.id).id:'terrain-state';if(tn!==terrainName){const next=await load(tn);if(token!==packageToken)return;if(terrain)scene.remove(terrain);terrain=next;terrainName=tn;if(tn==='30a-finished'||tn==='terrain-state')illustrateThirty(terrain);scene.add(terrain);document.body.dataset.terrainMs=Math.round(performance.now()-started)}
   if(level==='state'){
    maskLegacyThirty(terrain);await loadThirty();thirtyModel=await load('30a-finished');if(token!==packageToken)return;illustrateThirty(thirtyModel);scene.add(thirtyModel);thirtyModel.visible=true;
    roadLines.visible=true;if(architecture)architecture.visible=false;if(!stateIcons){stateIcons=await load('state');stateIcons.traverse(o=>{if(!o.isInstancedMesh)return;for(let i=0;i<o.instanceMatrix.array.length;i+=16)for(let j=0;j<12;j++)o.instanceMatrix.array[i+j]*=3;o.instanceMatrix.needsUpdate=true;o.computeBoundingSphere()});scene.add(stateIcons)}stateIcons.visible=true;stateIcons.traverse(o=>{if(!o.isInstancedMesh)return;const a=o.instanceMatrix.array;for(let i=0;i<a.length;i+=16)if(a[i+12]>-226&&a[i+12]<-186&&-a[i+14]>695&&-a[i+14]<733){for(let j=0;j<12;j++)a[i+j]=0}o.instanceMatrix.needsUpdate=true});
@@ -131,7 +132,7 @@ async function show(){
    if(stateIcons)stateIcons.visible=false;if(architecture)architecture.visible=false;roadLines.visible=false;
   }else{
    if(region.id==='emerald-coast'){await loadThirty();thirtyModel=await load('30a-finished');if(token!==packageToken)return;illustrateThirty(thirtyModel);scene.add(thirtyModel);thirtyModel.visible=true;}else if(thirtyModel)scene.remove(thirtyModel);roadLines.visible=true;if(stateIcons)stateIcons.visible=false;
-   if(currentPackage!==region.id){const next=await load((mobile?'mobile-':'')+region.id);if(token!==packageToken)return;if(architecture)scene.remove(architecture);architecture=next;scene.add(architecture);currentPackage=region.id}
+   if(currentPackage!==sourceRegionFor(activeTown.id).id){const next=await load((mobile?'mobile-':'')+sourceRegionFor(activeTown.id).id);if(token!==packageToken)return;if(architecture)scene.remove(architecture);architecture=next;scene.add(architecture);currentPackage=sourceRegionFor(activeTown.id).id}
    architecture.visible=true;
   }
   if(token!==packageToken)return;await regionalWater();if(isThirty())terrain.visible=true;status('');updateUi();makeLabels();highlight();if(flight)animateFlight(flight,token);else render();document.body.dataset.ready='true';document.body.dataset.readyMs=Math.round(performance.now()-started);document.body.dataset.drawCalls=renderer.info.render.calls;document.body.dataset.triangles=renderer.info.render.triangles;

@@ -48,7 +48,7 @@ def extrude(groups,p,h,wc,rc,roof='gable'):
    for t in constrained_delaunay_triangles(q).geoms:
     groups.setdefault(rc,[]).extend([(x,z+(h*.16*max(0,1-abs(np.dot(np.array([x,y])-center,normal))/(w/2))) if roof=='gable' else z,-y) for x,y in list(t.exterior.coords)[:3]])
 from shapely.ops import split
-for region in catalog['regions']:
+for region in catalog.get('sourceRegions',catalog['regions']):
  rid=region['id']
  if selected and rid not in selected:continue
  paths=sorted({registry[t] for t in region['towns'] if t in registry})

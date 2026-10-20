@@ -246,3 +246,5 @@ Regional source alignment inherits each approved package's source proof; the cov
 Run `pipeline/check_overviews.py` to check the registered regional files, the 4 MB initial terrain/cover budget, and byte preservation of the approved Tampa/St. Pete Town packages. Architecture is streamed separately; the initial budget does not describe the full desktop geometry transfer.
 
 `pipeline/regional-coverage.json` defines the areas with contiguous supplemental footprint coverage. Nearby finished coverage is streamed into neighboring regional views; shader exclusions prevent overlapping buildings from being rendered twice. This flag describes export coverage, not a claim that every real building has been surveyed. Town packages remain read-only.
+
+Tampa Bay is one navigation region, combining Tampa, the South Shore, St. Petersburg and the Gulf beaches. Its regional camera fits every listed town. The original Tampa and Pinellas source packages remain separate and unchanged; `catalog.sourceRegions` preserves their build grouping, while `catalog.regions` controls navigation. The viewer streams both source overviews without duplicating assets.

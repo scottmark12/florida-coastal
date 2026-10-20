@@ -2,8 +2,11 @@
 import json,gzip,struct,hashlib
 from pathlib import Path
 A=Path(__file__).resolve().parents[1];R=A/'regions';registry=json.load(open(R/'accurate-overviews.json'));packages=json.load(open(R/'package-registry.json'));catalog=json.load(open(R/'catalog.json'));rows=[]
+seen=set()
 for rid,path in registry.items():
- root=R/path;m=json.load(open(root/'manifest.json'));region=next(r for r in catalog['regions'] if r['id']==rid);expected={Path(packages[t]).name for t in region['towns'] if t in packages};assert set(m['sourcePackages'])==expected,(rid,'missing approved town source')
+ if path in seen:continue
+ seen.add(path)
+ root=R/path;m=json.load(open(root/'manifest.json'));region=next(r for r in catalog.get('sourceRegions',catalog['regions']) if r['id']==rid);expected={Path(packages[t]).name for t in region['towns'] if t in packages};assert set(m['sourcePackages'])==expected,(rid,'missing approved town source')
  initial=sum((root/f).stat().st_size for f in [m['base'],m['canopy'],m['water'],m['trees'],'manifest.json']);assert initial<4_000_000,(rid,initial)
  for tile in [{'file':m['base']},*m['buildings']]:
   data=gzip.decompress((root/tile['file']).read_bytes());assert data[:4]==b'glTF';assert struct.unpack_from('<I',data,8)[0]==len(data)
