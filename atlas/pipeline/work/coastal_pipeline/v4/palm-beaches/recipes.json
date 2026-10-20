@@ -397,6 +397,22 @@
         "#f6efdc",
         "#92b6a3"
       ]
+    },
+    "boca-pink-tower": {
+      "walls": [
+        "#f1a0b3"
+      ],
+      "roofs": [
+        "#efb2bd"
+      ],
+      "roof": "gable",
+      "detail": "stucco",
+      "source": "https://bocahistory.org/virtual-exhibition/mizners-dream/",
+      "referenceScope": "district reference",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
     }
   },
   "styleZones": [
@@ -441,6 +457,21 @@
         ]
       ],
       "canopyClearanceMeters": 12
+    },
+    "way/480456373": {
+      "walls": [
+        "#f1a0b3"
+      ],
+      "source": "https://www.thebocaraton.com/stay/tower/",
+      "note": "Recognizable pink Tower facade; geometry and height unchanged.",
+      "recipe": "boca-pink-tower"
+    },
+    "way/1047305523": {
+      "walls": [
+        "#edb4a5"
+      ],
+      "source": "https://www.thebocaraton.com/stay/cloister/",
+      "note": "Warm pink historic Cloister facade; geometry and height unchanged."
     }
   }
 }

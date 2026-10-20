@@ -2,7 +2,7 @@
   "region": "palm-beaches/boca-raton",
   "building_count": 16751,
   "tree_count": 39501,
-  "region_bytes": 348061,
+  "region_bytes": 348492,
   "max_tile_bytes": 146279,
   "max_anchor_error_m": 0.0113,
   "max_coast_float32_error_m": 0.021323597833183553,
@@ -21,7 +21,7 @@
     "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
     "Unmapped heights remain explicitly flagged estimates."
   ],
-  "status": "desktop and 390px browser QA passed; physical-phone timing unverified",
+  "status": "pink hotel materials visually verified; geometry and building inventory unchanged",
   "exported_boundary_source_error_m": 13.750751818711572,
   "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
 }
