@@ -2,6 +2,69 @@
   "description": "Illustrated marina occupancy from mapped dock geometry; not real-time boats.",
   "towns": [
     {
+      "town": "staug",
+      "boats": 1448,
+      "mapped_docks": 181,
+      "placement_sources": 188,
+      "mapped_marina_areas": 20
+    },
+    {
+      "town": "st-augustine-beach",
+      "boats": 629,
+      "mapped_docks": 67,
+      "placement_sources": 68,
+      "mapped_marina_areas": 3
+    },
+    {
+      "town": "ponte-vedra-beach",
+      "boats": 98,
+      "mapped_docks": 13,
+      "placement_sources": 14,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "jaxbeach",
+      "boats": 555,
+      "mapped_docks": 61,
+      "placement_sources": 64,
+      "mapped_marina_areas": 3
+    },
+    {
+      "town": "neptune-beach",
+      "boats": 462,
+      "mapped_docks": 56,
+      "placement_sources": 58,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "atlantic-beach",
+      "boats": 375,
+      "mapped_docks": 48,
+      "placement_sources": 49,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "fernandina",
+      "boats": 509,
+      "mapped_docks": 48,
+      "placement_sources": 51,
+      "mapped_marina_areas": 10
+    },
+    {
+      "town": "vilano-beach",
+      "boats": 1422,
+      "mapped_docks": 180,
+      "placement_sources": 187,
+      "mapped_marina_areas": 20
+    },
+    {
+      "town": "crescent-beach",
+      "boats": 5,
+      "mapped_docks": 1,
+      "placement_sources": 1,
+      "mapped_marina_areas": 0
+    },
+    {
       "town": "nsb",
       "boats": 655,
       "mapped_docks": 103,
@@ -672,5 +735,5 @@
       "mapped_docks": 0
     }
   ],
-  "total_boats": 36983
+  "total_boats": 42486
 }

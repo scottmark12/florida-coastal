@@ -155,5 +155,14 @@
   "edgewater": "packages/daytona-flagler/edgewater/",
   "holly-hill": "packages/daytona-flagler/holly-hill/",
   "ormond-by-the-sea": "packages/daytona-flagler/ormond-by-the-sea/",
-  "beverly-beach": "packages/daytona-flagler/beverly-beach/"
+  "beverly-beach": "packages/daytona-flagler/beverly-beach/",
+  "staug": "packages/first-coast/staug/",
+  "jaxbeach": "packages/first-coast/jaxbeach/",
+  "fernandina": "packages/first-coast/fernandina/",
+  "atlantic-beach": "packages/first-coast/atlantic-beach/",
+  "neptune-beach": "packages/first-coast/neptune-beach/",
+  "ponte-vedra-beach": "packages/first-coast/ponte-vedra-beach/",
+  "st-augustine-beach": "packages/first-coast/st-augustine-beach/",
+  "vilano-beach": "packages/first-coast/vilano-beach/",
+  "crescent-beach": "packages/first-coast/crescent-beach/"
 }

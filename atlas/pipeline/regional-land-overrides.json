@@ -18,5 +18,9 @@
   {
     "manifest": "work/coastal_pipeline/v4/daytona-flagler/manifest.json",
     "reason": "Complete Daytona and Flagler OSM coast, Halifax estuary, lagoon and inland water mask for the expanded 13-town region."
+  },
+  {
+    "manifest": "work/coastal_pipeline/v4/first-coast/manifest.json",
+    "reason": "Complete First Coast OSM shoreline and tidal estuary masks for the expanded coastal-town region."
   }
 ]

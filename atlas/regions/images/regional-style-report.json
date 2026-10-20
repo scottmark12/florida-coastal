@@ -127,25 +127,6 @@
     },
     {
       "bounds": [
-        158.82933845739308,
-        425.28106491190715,
-        352.7111584856481,
-        569.3473294713125
-      ],
-      "width": 2304,
-      "height": 1712,
-      "counts": {
-        "buildings": 399405,
-        "roads": 83575,
-        "preserve_landcover_areas": 103694
-      },
-      "region": "first-coast",
-      "output_bytes": 202864,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         -1.282523420261981,
         202.4353254999646,
         315.1221478464107,
@@ -241,25 +222,6 @@
     },
     {
       "bounds": [
-        -425.1888477351769,
-        -226.66663311517388,
-        558.5359493042099,
-        742.9916716839022
-      ],
-      "width": 4096,
-      "height": 4037,
-      "counts": {
-        "buildings": 0,
-        "roads": 862124,
-        "preserve_landcover_areas": 970616
-      },
-      "region": "_backdrop",
-      "output_bytes": 599118,
-      "landcover_fraction": 1.0,
-      "sourceOnly": true
-    },
-    {
-      "bounds": [
         225.10034213700698,
         366.3453250531644,
         359.28093475788836,
@@ -274,6 +236,44 @@
       },
       "region": "daytona-flagler",
       "output_bytes": 252592,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        -425.1888477351769,
+        -226.66663311517388,
+        558.5359493042099,
+        742.9916716839022
+      ],
+      "width": 4096,
+      "height": 4037,
+      "counts": {
+        "buildings": 0,
+        "roads": 862124,
+        "preserve_landcover_areas": 970616
+      },
+      "region": "_backdrop",
+      "output_bytes": 601668,
+      "landcover_fraction": 1.0,
+      "sourceOnly": true
+    },
+    {
+      "bounds": [
+        158.82933845739308,
+        425.28106491190715,
+        352.7111584856481,
+        569.3473294713125
+      ],
+      "width": 2304,
+      "height": 1712,
+      "counts": {
+        "buildings": 399405,
+        "roads": 83575,
+        "preserve_landcover_areas": 103694
+      },
+      "region": "first-coast",
+      "output_bytes": 227854,
       "landcover_fraction": 1.0,
       "sourceOnly": true
     }

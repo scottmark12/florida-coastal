@@ -1,0 +1,97 @@
+{
+  "id": "first-coast/vilano-beach",
+  "name": "Vilano Beach",
+  "towns": [
+    "vilano-beach"
+  ],
+  "bounds": [
+    -81.351,
+    29.872999999999998,
+    -81.251,
+    29.963
+  ],
+  "recipes": "work/coastal_pipeline/v4/first-coast/recipes.json",
+  "camera": {
+    "center": [
+      261.0158675133272,
+      659.7386865025395
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "vilano-beach-center": "vilano-beach"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Retain the existing Jacksonville Town package unchanged; build the other coastal towns from the shared source pipeline.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Complete 134 adjoining OSM coastline ways cut at the Georgia boundary in the Florida Geofabrik extract. Patch dated 2026-10-20, acquired from OSM API; preserve actual coordinates and the 150 m source-fidelity gate."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/first-coast/geography.json.gz",
+      "work/coastal_pipeline/v4/first-coast/cover.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-vilano-beach.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/first-coast/districts.json",
+    "prices": "work/coastal_pipeline/v4/first-coast/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/first-coast/vilano-beach/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/first-coast/vilano-beach/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/first-coast/vilano-beach/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/first-coast/vilano-beach/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/first-coast/vilano-beach/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/vilano-beach-center-worldcover-2021.png",
+        "bounds": [
+          -81.31691666666667,
+          29.894916666666667,
+          -81.26891666666667,
+          29.942916666666665
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "vilano-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  }
+}

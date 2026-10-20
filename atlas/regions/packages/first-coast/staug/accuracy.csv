@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+St. Augustine,258.9833679199219,657.0112915039062,-81.3145393922317,29.89469537981536,-81.3145395,29.8946952,0.0225,https://www.openstreetmap.org/node/153987228,Representative OSM town place-label anchor: Saint Augustine

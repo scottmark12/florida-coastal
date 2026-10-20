@@ -46,5 +46,17 @@
     "median listing price",
     "September 2026",
     "https://www.realtor.com/local/market/florida/duval-county/jacksonville"
+  ],
+  "vilano-beach": [
+    887450,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/st-johns-county/vilano-beach"
+  ],
+  "crescent-beach": [
+    619000,
+    "median listing price",
+    "September 2026",
+    "https://www.realtor.com/local/market/florida/st-johns-county/crescent-beach"
   ]
 }

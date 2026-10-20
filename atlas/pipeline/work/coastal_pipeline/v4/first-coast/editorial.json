@@ -47,6 +47,18 @@
       "median listing price",
       "September 2026",
       "https://www.realtor.com/local/market/florida/duval-county/jacksonville"
+    ],
+    "vilano-beach": [
+      887450,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/st-johns-county/vilano-beach"
+    ],
+    "crescent-beach": [
+      619000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/st-johns-county/crescent-beach"
     ]
   },
   "recipes": {
@@ -63,8 +75,8 @@
       ],
       "roof": "gable",
       "detail": "stucco",
-      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
-      "referenceScope": "district reference",
+      "source": "https://www.floridashistoriccoast.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -82,9 +94,9 @@
         "#dce0d3"
       ],
       "roof": "gable",
-      "detail": "porches",
-      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridashistoriccoast.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -101,9 +113,9 @@
         "#cdb59a"
       ],
       "roof": "gable",
-      "detail": "stucco",
-      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridashistoriccoast.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -120,10 +132,10 @@
         "#d4dfd3",
         "#a8c4bd"
       ],
-      "roof": "flat",
-      "detail": "balconies",
-      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitjacksonville.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -141,9 +153,9 @@
         "#dce0d3"
       ],
       "roof": "gable",
-      "detail": "porches",
-      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitjacksonville.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -161,9 +173,9 @@
         "#c6ccc0"
       ],
       "roof": "gable",
-      "detail": "porches",
-      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitjacksonville.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -181,9 +193,9 @@
         "#b8b5a3"
       ],
       "roof": "gable",
-      "detail": "porches",
-      "source": "https://www.ameliaisland.com/blog/exploring-history-and-architecture-in-downtown-fernandina-beach/",
-      "referenceScope": "district reference",
+      "detail": "painted-wood-porches",
+      "source": "https://www.ameliaisland.com/travel-guides/downtown/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
@@ -202,15 +214,136 @@
       ],
       "roof": "flat",
       "detail": "balconies",
-      "source": "https://www.floridashistoriccoast.com/things-to-do/history/historic-district/",
-      "referenceScope": "regional context; palette is an editorial interpretation",
+      "source": "https://www.visitjacksonville.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
       "trim": [
         "#f6efdc",
         "#92b6a3"
       ]
+    },
+    "vilano-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridashistoriccoast.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "crescent-beach": {
+      "walls": [
+        "#d3eadc",
+        "#f3c9c3",
+        "#f8e1ac",
+        "#f7f0dd"
+      ],
+      "roofs": [
+        "#bdc9c3",
+        "#dce0d3"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.floridashistoriccoast.com/",
+      "referenceScope": "Local visitor-guide character reference; palette interpreted editorially, not a facade survey.",
+      "trim": [
+        "#f6efdc",
+        "#92b6a3"
+      ]
+    },
+    "staug-coquina-fort": {
+      "walls": [
+        "#cfbea0"
+      ],
+      "roofs": [
+        "#d9cdb3"
+      ],
+      "roof": "flat",
+      "detail": "stucco",
+      "source": "https://www.nps.gov/casa/learn/historyculture/construction.htm"
     }
   },
   "manual_fixes": [
-    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory."
-  ]
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Retain the existing Jacksonville Town package unchanged; build the other coastal towns from the shared source pipeline.",
+    "Complete 134 adjoining OSM coastline ways cut at the Georgia boundary in the Florida Geofabrik extract. Patch dated 2026-10-20, acquired from OSM API; preserve actual coordinates and the 150 m source-fidelity gate.",
+    "Replace the open-water St. Augustine sea/river seam, OSM way 82144581, with mapped river banks from relation 1204548; corrected land mask and 150 m gate retained."
+  ],
+  "priceEvidence": {
+    "vilano-beach": {
+      "checked": "2026-10-20"
+    },
+    "crescent-beach": {
+      "checked": "2026-10-20"
+    },
+    "staug": {
+      "checked": "2026-10-20"
+    },
+    "ponte-vedra-beach": {
+      "checked": "2026-10-20"
+    },
+    "jaxbeach": {
+      "checked": "2026-10-20"
+    },
+    "fernandina": {
+      "checked": "2026-10-20"
+    },
+    "neptune-beach": {
+      "checked": "2026-10-20"
+    },
+    "atlantic-beach": {
+      "checked": "2026-10-20"
+    }
+  },
+  "nonBoatingWays": [
+    351712855,
+    925211556,
+    444563951,
+    622549217
+  ],
+  "reference_sources": [
+    {
+      "topic": "Coquina fortress architecture",
+      "url": "https://www.nps.gov/casa/learn/historyculture/construction.htm",
+      "checked": "2026-10-20"
+    },
+    {
+      "topic": "Beaches Town Center character",
+      "url": "https://www.visitjacksonville.com/directory/beaches-town-center/",
+      "checked": "2026-10-20"
+    },
+    {
+      "topic": "Vilano Beach and pier",
+      "url": "https://www.floridashistoriccoast.com/beaches/vilano-beach/",
+      "checked": "2026-10-20"
+    },
+    {
+      "topic": "Fernandina historic waterfront",
+      "url": "https://www.ameliaisland.com/travel-guides/downtown/",
+      "checked": "2026-10-20"
+    }
+  ],
+  "landmarks": {
+    "relation/1972715": {
+      "recipe": "staug-coquina-fort",
+      "profile": [
+        [
+          0,
+          0
+        ]
+      ],
+      "source": "https://www.nps.gov/casa/learn/historyculture/construction.htm",
+      "note": "Use actual OSM star-fort footprint and courtyard, limestone palette and mapped building levels."
+    }
+  }
 }

@@ -1,0 +1,11 @@
+town,district,median_usd,metric,period,source
+staug,St. Augustine,479900,median listing price,September 2026,https://www.realtor.com/local/market/florida/st-johns-county/st-augustine
+st-augustine-beach,St. Augustine Beach,598500,median listing price,September 2026,https://www.realtor.com/local/market/florida/st-johns-county/st-augustine-beach
+ponte-vedra-beach,Ponte Vedra Beach,899000,median listing price,September 2026,https://www.realtor.com/local/market/florida/st-johns-county/ponte-vedra-beach
+jaxbeach,Jacksonville Beach,714995,median listing price,September 2026,https://www.realtor.com/local/market/florida/duval-county/jacksonville-beach
+neptune-beach,Neptune Beach,1199950,median listing price,September 2026,https://www.realtor.com/local/market/florida/duval-county/neptune-beach
+atlantic-beach,Atlantic Beach,749000,median listing price,September 2026,https://www.realtor.com/local/market/florida/duval-county/atlantic-beach
+fernandina,Fernandina Beach,665000,median listing price,September 2026,https://www.realtor.com/local/market/florida/nassau-county/fernandina-beach
+jacksonville,Jacksonville,295000,median listing price,September 2026,https://www.realtor.com/local/market/florida/duval-county/jacksonville
+vilano-beach,Vilano Beach,887450,median listing price,September 2026,https://www.realtor.com/local/market/florida/st-johns-county/vilano-beach
+crescent-beach,Crescent Beach,619000,median listing price,September 2026,https://www.realtor.com/local/market/florida/st-johns-county/crescent-beach

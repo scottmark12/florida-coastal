@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Crescent Beach,265.1975402832031,643.1494140625,-81.25332526900316,29.76862958284575,-81.2533253,29.7686294,0.0205,https://www.openstreetmap.org/node/153887864,Representative OSM town place-label anchor: Crescent Beach

@@ -985,10 +985,10 @@
       "name": "St. Augustine",
       "region": "Northeast Atlantic",
       "coast": "atlantic",
-      "lat": 29.89,
-      "lon": -81.31,
+      "lat": 29.8946952,
+      "lon": -81.3145395,
       "tier": 2,
-      "price": null,
+      "price": "$479,900 median listing price \u00b7 September 2026",
       "vibes": [
         "walk"
       ],
@@ -1010,8 +1010,8 @@
         "Visitor traffic",
         "Flooding downtown"
       ],
-      "x": 259.43244308009787,
-      "y": 656.4997081284534,
+      "x": 258.98335796317053,
+      "y": 657.0112713204554,
       "area_id": "first-coast",
       "area_name": "The First Coast",
       "source_url": "https://www.floridacoastal.co/towns/staug.html",
@@ -1022,10 +1022,10 @@
       "name": "Jacksonville Beach",
       "region": "Northeast Atlantic",
       "coast": "atlantic",
-      "lat": 30.29,
-      "lon": -81.39,
+      "lat": 30.2946859,
+      "lon": -81.3931396,
       "tier": 2,
-      "price": null,
+      "price": "$714,995 median listing price \u00b7 September 2026",
       "vibes": [
         "social",
         "active"
@@ -1048,8 +1048,8 @@
       "cons": [
         "Busy summer weekends"
       ],
-      "x": 250.77846478168811,
-      "y": 700.7244972109538,
+      "x": 250.4658517121874,
+      "y": 701.2380799518921,
       "area_id": "first-coast",
       "area_name": "The First Coast",
       "source_url": "https://www.floridacoastal.co/towns/jaxbeach.html",
@@ -1060,10 +1060,10 @@
       "name": "Fernandina Beach",
       "region": "Amelia Island",
       "coast": "atlantic",
-      "lat": 30.67,
-      "lon": -81.46,
+      "lat": 30.6712285,
+      "lon": -81.4630025,
       "tier": 3,
-      "price": null,
+      "price": "$665,000 median listing price \u00b7 September 2026",
       "vibes": [
         "walk"
       ],
@@ -1084,8 +1084,8 @@
       "cons": [
         "Island storm exposure"
       ],
-      "x": 243.18501859228073,
-      "y": 742.7453802749754,
+      "x": 242.8947891817433,
+      "y": 742.8757474804413,
       "area_id": "first-coast",
       "area_name": "The First Coast",
       "source_url": "https://www.floridacoastal.co/towns/fernandina.html",
@@ -3871,10 +3871,10 @@
       "name": "Atlantic Beach",
       "region": "Northeast Atlantic",
       "coast": "atlantic",
-      "lat": 30.334,
-      "lon": -81.398,
+      "lat": 30.3344077,
+      "lon": -81.398696,
       "tier": 3,
-      "price": "$630K median",
+      "price": "$749,000 median listing price \u00b7 September 2026",
       "vibes": [
         "active"
       ],
@@ -3897,8 +3897,8 @@
         "Pricey",
         "Cooler winters than South Florida"
       ],
-      "x": 249.9068742432221,
-      "y": 705.590589505162,
+      "x": 249.83908298722346,
+      "y": 705.6344178480258,
       "area_id": "first-coast",
       "area_name": "The First Coast",
       "source_url": "https://www.floridacoastal.co/towns/atlantic-beach.html",
@@ -3909,10 +3909,10 @@
       "name": "Neptune Beach",
       "region": "Northeast Atlantic",
       "coast": "atlantic",
-      "lat": 30.314,
-      "lon": -81.398,
+      "lat": 30.311908,
+      "lon": -81.3964734,
       "tier": 3,
-      "price": null,
+      "price": "$1,199,950 median listing price \u00b7 September 2026",
       "vibes": [
         "active",
         "walk"
@@ -3936,8 +3936,8 @@
         "Limited housing",
         "Pricey"
       ],
-      "x": 249.95370805744975,
-      "y": 703.371362432076,
+      "x": 250.10523647297717,
+      "y": 703.1423249831425,
       "area_id": "first-coast",
       "area_name": "The First Coast",
       "source_url": "https://www.floridacoastal.co/towns/neptune-beach.html",
@@ -3948,10 +3948,10 @@
       "name": "Ponte Vedra Beach",
       "region": "Northeast Atlantic",
       "coast": "atlantic",
-      "lat": 30.233,
-      "lon": -81.386,
+      "lat": 30.2396865,
+      "lon": -81.3856384,
       "tier": 4,
-      "price": null,
+      "price": "$899,000 median listing price \u00b7 September 2026",
       "vibes": [
         "sophcalm",
         "active",
@@ -3976,8 +3976,8 @@
         "Expensive",
         "Little public beach parking and no real downtown"
       ],
-      "x": 251.29683915364774,
-      "y": 694.4076070007042,
+      "x": 251.31586340728768,
+      "y": 695.1503258590673,
       "area_id": "first-coast",
       "area_name": "The First Coast",
       "source_url": "https://www.floridacoastal.co/towns/ponte-vedra-beach.html",
@@ -3988,10 +3988,10 @@
       "name": "St. Augustine Beach",
       "region": "Northeast Atlantic",
       "coast": "atlantic",
-      "lat": 29.84,
-      "lon": -81.27,
+      "lat": 29.8508613,
+      "lon": -81.2716634,
       "tier": 2,
-      "price": null,
+      "price": "$598,500 median listing price \u00b7 September 2026",
       "vibes": [
         "active",
         "bluezone"
@@ -4015,8 +4015,8 @@
         "Summer crowds",
         "An hour to a major airport"
       ],
-      "x": 263.412423940081,
-      "y": 651.035113740134,
+      "x": 263.22527624632994,
+      "y": 652.2370415875788,
       "area_id": "first-coast",
       "area_name": "The First Coast",
       "source_url": "https://www.floridacoastal.co/towns/st-augustine-beach.html",
@@ -5628,6 +5628,62 @@
       "area_name": "Daytona, New Smyrna and Flagler",
       "source_url": "https://www.visitflagler.com/",
       "nearest_town_km": 14.73754925106862
+    },
+    {
+      "id": "vilano-beach",
+      "name": "Vilano Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.9188576,
+      "lon": -81.2928499,
+      "tier": 2,
+      "price": "$887,450 median listing price \u00b7 September 2026",
+      "vibes": [
+        "active",
+        "bluezone"
+      ],
+      "airport": "Jacksonville (JAX), about 1 hour",
+      "season": "Busy summers",
+      "watch": "Hurricane exposure, erosion",
+      "blurb": "Low beach cottages and a small waterfront main street at the Vilano pier and inlet.",
+      "day": "Low beach cottages and a small waterfront main street at the Vilano pier and inlet.",
+      "todo": [],
+      "pros": [],
+      "cons": [],
+      "x": 261.0158675133272,
+      "y": 659.7386865025395,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridashistoriccoast.com/",
+      "nearest_town_km": 6.760328355537536
+    },
+    {
+      "id": "crescent-beach",
+      "name": "Crescent Beach",
+      "region": "Northeast Atlantic",
+      "coast": "atlantic",
+      "lat": 29.7686294,
+      "lon": -81.2533253,
+      "tier": 2,
+      "price": "$619,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "active",
+        "bluezone"
+      ],
+      "airport": "Jacksonville (JAX), about 1 hour",
+      "season": "Busy summers",
+      "watch": "Hurricane exposure, erosion",
+      "blurb": "Quiet beachside homes and low condos on Anastasia Island beside the Matanzas marshes.",
+      "day": "Quiet beachside homes and low condos on Anastasia Island beside the Matanzas marshes.",
+      "todo": [],
+      "pros": [],
+      "cons": [],
+      "x": 265.19753774299227,
+      "y": 643.1493937013868,
+      "area_id": "first-coast",
+      "area_name": "The First Coast",
+      "source_url": "https://www.floridashistoriccoast.com/",
+      "nearest_town_km": 6.760328355537536
     }
   ],
   "regions": [
@@ -6082,7 +6138,9 @@
         "neptune-beach",
         "atlantic-beach",
         "fernandina",
-        "jacksonville"
+        "jacksonville",
+        "vilano-beach",
+        "crescent-beach"
       ],
       "center": [
         252.56653883549535,

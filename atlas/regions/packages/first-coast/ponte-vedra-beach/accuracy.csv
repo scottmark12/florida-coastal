@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Ponte Vedra Beach,251.31585693359375,695.1503295898438,-81.38563846650099,30.23968653484197,-81.3856384,30.2396865,0.0075,https://www.openstreetmap.org/node/153904286,Representative OSM town place-label anchor: Ponte Vedra Beach

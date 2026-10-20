@@ -1,0 +1,342 @@
+{
+  "id": "first-coast",
+  "name": "The First Coast",
+  "towns": [
+    "staug",
+    "jaxbeach",
+    "fernandina",
+    "atlantic-beach",
+    "neptune-beach",
+    "ponte-vedra-beach",
+    "st-augustine-beach",
+    "jacksonville",
+    "vilano-beach",
+    "crescent-beach"
+  ],
+  "bounds": [
+    -81.82,
+    29.63,
+    -81.08,
+    30.82
+  ],
+  "recipes": "work/coastal_pipeline/v4/first-coast/recipes.json",
+  "camera": {
+    "center": [
+      251.80057011847413,
+      686.4404647984659
+    ],
+    "desktopSpan": 129.6442599127709,
+    "phoneSpan": 79.78108302324364,
+    "phoneOffsetY": 4
+  },
+  "district_recipes": {
+    "staug-center": "staug",
+    "jaxbeach-center": "jaxbeach",
+    "fernandina-center": "fernandina",
+    "atlantic-beach-center": "atlantic-beach",
+    "neptune-beach-center": "neptune-beach",
+    "ponte-vedra-beach-center": "ponte-vedra-beach",
+    "st-augustine-beach-center": "st-augustine-beach",
+    "jacksonville-center": "jacksonville",
+    "vilano-beach-center": "vilano-beach",
+    "crescent-beach-center": "crescent-beach"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Retain the existing Jacksonville Town package unchanged; build the other coastal towns from the shared source pipeline.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Complete 134 adjoining OSM coastline ways cut at the Georgia boundary in the Florida Geofabrik extract. Patch dated 2026-10-20, acquired from OSM API; preserve actual coordinates and the 150 m source-fidelity gate.",
+    "Replace the open-water St. Augustine sea/river seam, OSM way 82144581, with mapped river banks from relation 1204548; corrected land mask and 150 m gate retained."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/first-coast/geography.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-st-augustine-beach.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-staug.json.gz",
+      "work/coastal_pipeline/v4/first-coast/landmarks-north-coast.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-ponte-vedra-beach.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-vilano-beach.json.gz",
+      "work/coastal_pipeline/v4/first-coast/cover.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-jacksonville.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-neptune-beach.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-atlantic-beach.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-jaxbeach.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-fernandina.json.gz",
+      "work/coastal_pipeline/v4/first-coast/district-crescent-beach.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/first-coast/districts.json",
+    "prices": "work/coastal_pipeline/v4/first-coast/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/first-coast/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/first-coast/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/first-coast/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/first-coast/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/first-coast/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/staug-center-worldcover-2021.png",
+        "bounds": [
+          -81.33858333333333,
+          29.87075,
+          -81.29058333333333,
+          29.91875
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "staug-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/jaxbeach-center-worldcover-2021.png",
+        "bounds": [
+          -81.41716666666667,
+          30.27075,
+          -81.36916666666667,
+          30.31875
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "jaxbeach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/fernandina-center-worldcover-2021.png",
+        "bounds": [
+          -81.487,
+          30.64725,
+          -81.439,
+          30.69525
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "fernandina-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/atlantic-beach-center-worldcover-2021.png",
+        "bounds": [
+          -81.42275,
+          30.31041666666667,
+          -81.37475,
+          30.358416666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "atlantic-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/neptune-beach-center-worldcover-2021.png",
+        "bounds": [
+          -81.4205,
+          30.287916666666668,
+          -81.3725,
+          30.335916666666666
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "neptune-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/ponte-vedra-beach-center-worldcover-2021.png",
+        "bounds": [
+          -81.40966666666667,
+          30.21575,
+          -81.36166666666666,
+          30.26375
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "ponte-vedra-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/st-augustine-beach-center-worldcover-2021.png",
+        "bounds": [
+          -81.29566666666666,
+          29.826916666666666,
+          -81.24766666666666,
+          29.874916666666667
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "st-augustine-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/jacksonville-center-worldcover-2021.png",
+        "bounds": [
+          -81.68191666666667,
+          30.30225,
+          -81.63391666666666,
+          30.35025
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N30W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "jacksonville-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/vilano-beach-center-worldcover-2021.png",
+        "bounds": [
+          -81.31691666666667,
+          29.894916666666667,
+          -81.26891666666667,
+          29.942916666666665
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "vilano-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      },
+      {
+        "path": "work/coastal_pipeline/v4/first-coast/crescent-beach-center-worldcover-2021.png",
+        "bounds": [
+          -81.27733333333333,
+          29.744666666666667,
+          -81.22933333333333,
+          29.792666666666666
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "crescent-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  }
+}
