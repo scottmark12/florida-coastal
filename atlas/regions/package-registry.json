@@ -67,5 +67,17 @@
   "inglis": "packages/inglis/",
   "hernando-beach": "packages/hernando-beach/",
   "aripeka": "packages/aripeka/",
-  "weeki-wachee": "packages/weeki-wachee/"
+  "weeki-wachee": "packages/weeki-wachee/",
+  "oldsmar": "packages/oldsmar/",
+  "palm-harbor": "packages/palm-harbor/",
+  "belleair-beach": "packages/belleair-beach/",
+  "indian-shores": "packages/indian-shores/",
+  "redington-shores": "packages/redington-shores/",
+  "north-redington-beach": "packages/north-redington-beach/",
+  "redington-beach": "packages/redington-beach/",
+  "tierra-verde": "packages/tierra-verde/",
+  "holiday": "packages/holiday/",
+  "port-richey": "packages/port-richey/",
+  "hudson": "packages/hudson/",
+  "gibsonton": "packages/gibsonton/"
 }

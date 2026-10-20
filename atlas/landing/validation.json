@@ -1,7 +1,7 @@
 {
-  "town_count": 70,
-  "view_count": 140,
-  "image_count": 280,
+  "town_count": 82,
+  "view_count": 164,
+  "image_count": 328,
   "towns": [
     {
       "town_id": "30a",
@@ -981,6 +981,174 @@
       "view": "street",
       "span_km": 1.6,
       "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "oldsmar",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 4,
+      "checks": "passed"
+    },
+    {
+      "town_id": "oldsmar",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-harbor",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 3,
+      "checks": "passed"
+    },
+    {
+      "town_id": "palm-harbor",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "belleair-beach",
+      "view": "town",
+      "span_km": 4,
+      "callouts": 3,
+      "checks": "passed"
+    },
+    {
+      "town_id": "belleair-beach",
+      "view": "street",
+      "span_km": 1.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "indian-shores",
+      "view": "town",
+      "span_km": 4,
+      "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "indian-shores",
+      "view": "street",
+      "span_km": 1.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "redington-shores",
+      "view": "town",
+      "span_km": 4,
+      "callouts": 3,
+      "checks": "passed"
+    },
+    {
+      "town_id": "redington-shores",
+      "view": "street",
+      "span_km": 1.5,
+      "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "north-redington-beach",
+      "view": "town",
+      "span_km": 4,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "north-redington-beach",
+      "view": "street",
+      "span_km": 1.5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "redington-beach",
+      "view": "town",
+      "span_km": 4,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "redington-beach",
+      "view": "street",
+      "span_km": 1.5,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "tierra-verde",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "tierra-verde",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 0,
+      "checks": "passed"
+    },
+    {
+      "town_id": "holiday",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "holiday",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-richey",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 4,
+      "checks": "passed"
+    },
+    {
+      "town_id": "port-richey",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hudson",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "hudson",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 1,
+      "checks": "passed"
+    },
+    {
+      "town_id": "gibsonton",
+      "view": "town",
+      "span_km": 5.5,
+      "callouts": 2,
+      "checks": "passed"
+    },
+    {
+      "town_id": "gibsonton",
+      "view": "street",
+      "span_km": 2.2,
+      "callouts": 2,
       "checks": "passed"
     }
   ]

@@ -1,0 +1,118 @@
+{
+  "id": "oldsmar",
+  "name": "Oldsmar",
+  "towns": [
+    "oldsmar"
+  ],
+  "bounds": [
+    -82.73,
+    27.979,
+    -82.60000000000001,
+    28.089
+  ],
+  "recipes": "work/coastal_pipeline/v4/oldsmar/recipes.json",
+  "camera": {
+    "center": [
+      130.9807039324674,
+      448.30102405029
+    ],
+    "desktopSpan": 30,
+    "phoneSpan": 25,
+    "phoneOffsetY": 4
+  },
+  "district_recipes": {
+    "oldsmar-center": "oldsmar"
+  },
+  "manual_fixes": [
+    "Town style palette curated from municipal/visitor references; individual facade colors remain illustrative.",
+    "Published town-level listing median, period and inventory are retained; not a pair of example listings.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Incomplete OSM footprints filled by non-overlapping Microsoft imagery footprints with separate source IDs."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/oldsmar/district-oldsmar.json.gz",
+      "work/coastal_pipeline/v4/oldsmar/geography.json.gz",
+      "work/coastal_pipeline/v4/oldsmar/cover.json.gz",
+      "work/coastal_pipeline/v4/oldsmar/supplemental-buildings.json"
+    ],
+    "districts": "work/coastal_pipeline/v4/oldsmar/districts.json",
+    "prices": "work/coastal_pipeline/v4/oldsmar/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/oldsmar/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/oldsmar/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/oldsmar/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/oldsmar/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "context": {
+      "path": "work/coastal_pipeline/v4/oldsmar/context.json",
+      "source": "Existing US Census TIGER/Line state and lake context outside the detailed OSM rectangle",
+      "license": "US government public-domain data",
+      "projection": "atlas kilometers"
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/oldsmar/oldsmar-center-worldcover-2021.png",
+        "bounds": [
+          -82.68916666666667,
+          28.01025,
+          -82.64116666666666,
+          28.05825
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "oldsmar-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "supplementalBuildingSources": [
+      {
+        "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+        "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+        "downloads": [
+          {
+            "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+            "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+          }
+        ],
+        "release": "2026-02-03",
+        "license": "CDLA Permissive 2.0",
+        "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+        "footprints": 2732,
+        "notes": [
+          "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+          "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "prices": {
+    "tierra-verde": [
+      862000,
+      "median listing price",
+      "September 2026",
+      "https://www.realtor.com/local/market/florida/pinellas-county/tierra-verde"
+    ]
+  },
+  "priceEvidence": {
+    "tierra-verde": {
+      "activeListings": 105,
+      "checked": "2026-10-19"
+    }
+  },
+  "recipes": {
+    "tierra-verde": {
+      "walls": [
+        "#f4e9d0",
+        "#e3cab0",
+        "#d0e1dc",
+        "#e8d8bf"
+      ],
+      "roofs": [
+        "#a6b7af",
+        "#b8c6c3",
+        "#a38670"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://www.visitstpeteclearwater.com/communities/tierra-verde",
+      "trim": [
+        "#fff8e7",
+        "#abc2b2"
+      ],
+      "character": "Island canal homes, marinas and low condominiums along the Pinellas Bayway toward Fort De Soto."
+    }
+  },
+  "manual_fixes": [
+    "Town style palette curated from municipal/visitor references; individual facade colors remain illustrative.",
+    "Published town-level listing median, period and inventory are retained; not a pair of example listings."
+  ]
+}

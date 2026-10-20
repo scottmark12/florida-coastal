@@ -22,8 +22,8 @@ Here “finished” means the existing approved or review-ready detailed package
 |---|---|---|
 | 30A, frozen approved reference | `30a` | [30A](regions/30a-review/index.html) |
 | Miami | `miami`, `southbeach` | [Miami](regions/packages/miami/atlas-review.html) |
-| Tampa Bay | `tampa`, `apollo-beach`, `ruskin`, `sun-city-center` | [Tampa](regions/packages/tampa-south-shore/atlas-review.html) |
-| St. Pete/Clearwater | `dunedin`, `clearwaterbeach`, `gulfport`, `clearwater`, `indian-rocks-beach`, `madeira-beach`, `new-port-richey`, `safety-harbor`, `st-pete-beach`, `st-petersburg`, `tarpon-springs`, `treasure-island` | [St. Pete](regions/packages/st-pete-clearwater/atlas-review.html) |
+| Tampa Bay | `tampa`, `gibsonton`, `apollo-beach`, `ruskin`, `sun-city-center` | [Tampa](regions/packages/tampa-south-shore/atlas-review.html) |
+| St. Pete/Clearwater | `hudson`, `port-richey`, `new-port-richey`, `holiday`, `tarpon-springs`, `palm-harbor`, `oldsmar`, `dunedin`, `safety-harbor`, `clearwaterbeach`, `clearwater`, `belleair-beach`, `indian-rocks-beach`, `indian-shores`, `redington-shores`, `north-redington-beach`, `redington-beach`, `madeira-beach`, `treasure-island`, `st-petersburg`, `gulfport`, `st-pete-beach`, `tierra-verde` | [St. Pete](regions/packages/st-pete-clearwater/atlas-review.html) |
 | Sarasota/Bradenton/Venice | `ami`, `longboat`, `bradenton`, `bradenton-beach`, `cortez`, `englewood`, `sarasota`, `siesta-key`, `venice` | [Sarasota](regions/packages/sarasota-bradenton/atlas-review.html) |
 | Naples/Marco/Everglades | `naples`, `marco-island`, `everglades-city`, `chokoloskee` | [Naples/Marco](regions/packages/naples-marco/atlas-review.html) |
 | Emerald Coast beyond 30A | `perdido-key`, `pensacola`, `gulf-breeze`, `pensacola-beach`, `navarre`, `navarre-beach`, `mary-esther`, `fort-walton-beach`, `okaloosa-island`, `shalimar`, `valparaiso`, `destin`, `niceville`, `miramar-beach`, `freeport`, `pcb`, `panama-city` | [Emerald Coast](regions/packages/emerald-coast/atlas-review.html) |
@@ -167,7 +167,7 @@ Region fits all towns in the selected catalog region, reserving space for the he
 
 ## Two landing zooms, mapped bridges, and coastal height rules (v5.0)
 
-All 70 finished towns have two hero-centered zooms and 280 landing images. Most Town images span 5–6 km; Tampa, Miami and Jacksonville span 8 km, and smaller towns use tighter context. The Street camera preserves the previous close span. `landing/index.json` keeps existing compatibility fields and adds `views.town` / `views.street`, both desktop and phone cameras, and separate per-frame callouts. The gallery compares both zooms side by side. See [export steps](pipeline/landing-export.md).
+All 82 finished towns have two hero-centered zooms and 328 landing images. Most Town images span 5–6 km; Tampa, Miami and Jacksonville span 8 km, and smaller towns use tighter context. The Street camera preserves the previous close span. `landing/index.json` keeps existing compatibility fields and adds `views.town` / `views.street`, both desktop and phone cameras, and separate per-frame callouts. The gallery compares both zooms side by side. See [export steps](pipeline/landing-export.md).
 
 Bridge geometry comes from every highway/rail bridge way (at least 3 m long) in the existing Geofabrik Florida 2026-10-17 snapshot. Warm decks, pale rails and piers follow the mapped centerlines. The runtime loads only intersecting 10 km bridge tiles. Width uses OSM width/lanes when available; missing width, clearance and pier spacing are illustration estimates. [Coverage](regions/bridges-report.json), [source inventory](regions/bridges.json.gz), and [serialized alignment check](regions/bridges-validation.json) accompany the export. The statewide intermediate mesh stays in ignored pipeline outputs. Raw PBF data is re-downloadable from the existing Geofabrik source recorded above.
 
@@ -207,3 +207,28 @@ Prices are published medians with their provider, metric and actual period, not 
 To restore excluded inputs, run `python fetch_inputs.py <town-id>` from `pipeline`. Rebuild with `python build_region.py <town-id>`. For a fresh coherent source acquisition: run `python seed_coast_additions.py` to create the per-town catalog inputs, then run `python extract_osm_snapshot.py <comma-separated-new-ids> /path/to/florida-261017.osm.pbf`; run `python prepare_coast_additions.py`, `python acquire_addition_buildings.py`, `python supplement_addition_buildings.py` and `python correct_resort_site.py` before building. For the final Miramar frame, run `select_coast_heroes.py`, `refine_coast_heroes.py` and `fetch_coast_hero_canopy.py` before the build so measured canopy covers the Gulf-facing hero window. The explicit anchor and marine-water input adapters are `normalize_coast_addition.py`, `coast-anchor-overrides.json` and `coast-water-priority.json`. No shared normalizer, renderer or locked scale implementation was edited.
 
 For boats/piers: extract the new-town marina windows from the PBF with `extract_marinas.py`, run `filter_coast_marinas.py`, then `boats.py work/coastal_pipeline/downloads/marinas/coast-additions-index.json` and `add_mapped_piers.py`. All raw XML/PBF, Microsoft tile downloads, masks and caches stay ignored. `merge_addition_overviews.py` reads the original overview bytes from Git commit `c0887e33`, then appends only the new package overview meshes. Re-run `register_coast_additions.py`, `select_coast_heroes.py`, `refine_coast_heroes.py` and `prepare_addition_landings.py`, capture through the shared viewer, finalize/check the landings, then run `review_coast_coverage.py`.
+
+### Tampa and Pinellas coastal expansion
+
+The added-town roster is `pipeline/tampa-coast-additions.json`. This adds town packages without rebuilding the existing Tampa South Shore or St. Pete/Clearwater packages. The shared scale, canopy, palette, labels and phone rules remain locked. `pipeline/tampa-approved-package-hashes.json` records the existing package hashes used by the preservation check.
+
+Rebuild the expansion from the same excluded Geofabrik Florida PBF and Microsoft footprint downloads:
+
+```sh
+cd atlas/pipeline
+python prepare_tampa_additions.py seed
+python extract_osm_snapshot.py oldsmar,palm-harbor,belleair-beach,indian-shores,redington-shores,north-redington-beach,redington-beach,tierra-verde,holiday,port-richey,hudson,gibsonton /path/to/florida-261017.osm.pbf
+python tampa_additions.py acquire
+python select_tampa_heroes.py
+python run_tampa_additions.py
+# Extract mapped marinas/docks using the same town list and PBF:
+python extract_tampa_marinas.py /path/to/florida-261017.osm.pbf oldsmar,palm-harbor,belleair-beach,indian-shores,redington-shores,north-redington-beach,redington-beach,tierra-verde,holiday,port-richey,hudson,gibsonton
+python sync_tampa_additions.py
+python tampa_additions.py merge
+```
+
+The preparation adapter records the published median's actual reporting period and listing inventory, visitor/municipal style sources, OSM reference anchors and ESA WorldCover canopy windows. Missing OSM footprints are supplemented with separately attributed, non-overlapping Microsoft imagery footprints; these are not labeled as OSM buildings. The raw files remain ignored and are re-downloadable using the recorded source URLs.
+
+Hero points and visible callouts are in `pipeline/tampa-addition-heroes.json`. Prepare landing cameras with `python tampa_additions.py landings`, capture both views through the shared viewer using `landing/capture-queue.json`, then run `python finalize_landings.py`, `python check_landings.py`, `python finish_tampa_additions.py` and `python review_tampa_additions.py`. New-town accuracy and price CSVs, preservation results and the two regional landing galleries are exported into `landing/`.
+
+Tampa/Pinellas expansion review galleries: [Tampa area](landing/tampa-review.html) and [St. Pete/Clearwater](landing/st-pete-review.html). The 12 added communities have 48 new WebPs. [Expansion checks](landing/tampa-expansion-report.json) include byte-identical preservation of the existing Tampa and St. Pete packages. Gibsonton needed an input-only fix for land-side classification of a 40 m² fragment at the source crop edge; no source coast vertex moved.

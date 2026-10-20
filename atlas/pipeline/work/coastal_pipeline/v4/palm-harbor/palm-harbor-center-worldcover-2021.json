@@ -1,0 +1,24 @@
+{
+  "path": "work/coastal_pipeline/v4/palm-harbor/palm-harbor-center-worldcover-2021.png",
+  "bounds": [
+    -82.78775,
+    28.054083333333335,
+    -82.73975,
+    28.102083333333333
+  ],
+  "canopyRGB": [
+    38,
+    115,
+    0
+  ],
+  "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+  "surveyYear": 2021,
+  "district": "palm-harbor-center",
+  "license": "CC BY 4.0",
+  "attribution": "ESA WorldCover 10 m 2021 v200 \u00b7 https://doi.org/10.5281/zenodo.7254221",
+  "classes": [
+    10,
+    95
+  ],
+  "resolutionMeters": 10
+}

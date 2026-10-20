@@ -1,0 +1,22 @@
+{
+  "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+  "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+  "downloads": [
+    {
+      "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021212/part-00040-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+      "sha256": "c69cd5f4fec5cc2496d20f0477525fbc26e9b7b9b0dccc7acb198223b00bad97"
+    },
+    {
+      "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+      "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+    }
+  ],
+  "release": "2026-02-03",
+  "license": "CDLA Permissive 2.0",
+  "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+  "footprints": 22313,
+  "notes": [
+    "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+    "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+  ]
+}

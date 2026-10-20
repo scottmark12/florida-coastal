@@ -1,0 +1,44 @@
+{
+  "prices": {
+    "indian-shores": [
+      654750,
+      "median listing price",
+      "August 2026",
+      "https://www.realtor.com/local/market/florida/pinellas-county/indian-shores"
+    ]
+  },
+  "priceEvidence": {
+    "indian-shores": {
+      "activeListings": 89,
+      "checked": "2026-10-19"
+    }
+  },
+  "recipes": {
+    "indian-shores": {
+      "walls": [
+        "#fff8e7",
+        "#d3e4db",
+        "#efd1c7",
+        "#e6dfbc",
+        "#d3e1e5"
+      ],
+      "roofs": [
+        "#a6b9b7",
+        "#c6d0cb",
+        "#9eaea7"
+      ],
+      "roof": "flat",
+      "detail": "balconies",
+      "source": "https://www.visitstpeteclearwater.com/communities/indian-shores-indian-rocks-beach",
+      "trim": [
+        "#fff8e7",
+        "#abc2b2"
+      ],
+      "character": "A narrow Gulf Boulevard beach town of pastel condominiums, small motels and the Intracoastal Waterway."
+    }
+  },
+  "manual_fixes": [
+    "Town style palette curated from municipal/visitor references; individual facade colors remain illustrative.",
+    "Published town-level listing median, period and inventory are retained; not a pair of example listings."
+  ]
+}

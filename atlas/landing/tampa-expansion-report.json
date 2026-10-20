@@ -1,0 +1,662 @@
+{
+  "towns_added": [
+    "belleair-beach",
+    "gibsonton",
+    "holiday",
+    "hudson",
+    "indian-shores",
+    "north-redington-beach",
+    "oldsmar",
+    "palm-harbor",
+    "port-richey",
+    "redington-beach",
+    "redington-shores",
+    "tierra-verde"
+  ],
+  "reports": {
+    "belleair-beach": {
+      "region": "belleair-beach",
+      "building_count": 12705,
+      "tree_count": 8795,
+      "region_bytes": 240551,
+      "max_tile_bytes": 1295411,
+      "max_anchor_error_m": 0.0136,
+      "max_coast_float32_error_m": 0.015648899650695977,
+      "height_sources": {
+        "assumed-house": 492,
+        "estimated-nonresidential": 25,
+        "estimated-type-footprint": 6,
+        "height": 12180,
+        "levels": 2
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 5.825878943111339,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 446,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 668,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 441005
+    },
+    "gibsonton": {
+      "region": "gibsonton",
+      "building_count": 12002,
+      "tree_count": 98458,
+      "region_bytes": 296665,
+      "max_tile_bytes": 867500,
+      "max_anchor_error_m": 0.0111,
+      "max_coast_float32_error_m": 0.01703539366753476,
+      "height_sources": {
+        "assumed-house": 11653,
+        "estimated-nonresidential": 291,
+        "estimated-type-footprint": 1,
+        "levels": 57
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 71.19108827965165,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 809,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 49,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 504537
+    },
+    "holiday": {
+      "region": "holiday",
+      "building_count": 29581,
+      "tree_count": 149906,
+      "region_bytes": 570462,
+      "max_tile_bytes": 1132393,
+      "max_anchor_error_m": 0.0013,
+      "max_coast_float32_error_m": 0.015647270697562287,
+      "height_sources": {
+        "assumed-house": 28634,
+        "estimated-nonresidential": 818,
+        "estimated-type-footprint": 27,
+        "levels": 102
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 5.3766480677327175,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 20251,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 168,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 794623
+    },
+    "hudson": {
+      "region": "hudson",
+      "building_count": 16187,
+      "tree_count": 86728,
+      "region_bytes": 313829,
+      "max_tile_bytes": 735401,
+      "max_anchor_error_m": 0.0069,
+      "max_coast_float32_error_m": 0.0166956844124736,
+      "height_sources": {
+        "assumed-house": 15781,
+        "estimated-nonresidential": 381,
+        "estimated-type-footprint": 3,
+        "levels": 22
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 6.302272649187541,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021212/part-00040-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "c69cd5f4fec5cc2496d20f0477525fbc26e9b7b9b0dccc7acb198223b00bad97"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 13694,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 16,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 455609
+    },
+    "indian-shores": {
+      "region": "indian-shores",
+      "building_count": 18495,
+      "tree_count": 30465,
+      "region_bytes": 299395,
+      "max_tile_bytes": 1478834,
+      "max_anchor_error_m": 0.0119,
+      "max_coast_float32_error_m": 0.0156768998433976,
+      "height_sources": {
+        "assumed-house": 738,
+        "estimated-nonresidential": 51,
+        "estimated-type-footprint": 9,
+        "height": 17663,
+        "levels": 34
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 7.358606945235088,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 536,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 151,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 460157
+    },
+    "north-redington-beach": {
+      "region": "north-redington-beach",
+      "building_count": 15151,
+      "tree_count": 19910,
+      "region_bytes": 284579,
+      "max_tile_bytes": 999095,
+      "max_anchor_error_m": 0.0048,
+      "max_coast_float32_error_m": 0.0156768998433976,
+      "height_sources": {
+        "assumed-house": 1083,
+        "estimated-nonresidential": 162,
+        "estimated-type-footprint": 25,
+        "height": 13853,
+        "levels": 28
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 5.730572767330017,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 379,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 299,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 509865
+    },
+    "oldsmar": {
+      "region": "oldsmar",
+      "building_count": 15845,
+      "tree_count": 86250,
+      "region_bytes": 440332,
+      "max_tile_bytes": 1216042,
+      "max_anchor_error_m": 0.0064,
+      "max_coast_float32_error_m": 0.01698398253040388,
+      "height_sources": {
+        "assumed-house": 9100,
+        "estimated-nonresidential": 884,
+        "estimated-type-footprint": 91,
+        "height": 5747,
+        "levels": 23
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 27.691514220305574,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 2732,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 124,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 598496
+    },
+    "palm-harbor": {
+      "region": "palm-harbor",
+      "building_count": 25109,
+      "tree_count": 88147,
+      "region_bytes": 447336,
+      "max_tile_bytes": 1286868,
+      "max_anchor_error_m": 0.0038,
+      "max_coast_float32_error_m": 0.01562962825323741,
+      "height_sources": {
+        "assumed-house": 939,
+        "estimated-nonresidential": 62,
+        "estimated-type-footprint": 2,
+        "height": 24096,
+        "levels": 10
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 15.20997296752443,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 432,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 344,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 669443
+    },
+    "port-richey": {
+      "region": "port-richey",
+      "building_count": 24301,
+      "tree_count": 83082,
+      "region_bytes": 467969,
+      "max_tile_bytes": 1391000,
+      "max_anchor_error_m": 0.0092,
+      "max_coast_float32_error_m": 0.015632429650140677,
+      "height_sources": {
+        "assumed-house": 23433,
+        "estimated-nonresidential": 827,
+        "estimated-type-footprint": 32,
+        "levels": 9
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 55.590418839051985,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021212/part-00040-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "c69cd5f4fec5cc2496d20f0477525fbc26e9b7b9b0dccc7acb198223b00bad97"
+            },
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 22313,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 53,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 620060
+    },
+    "redington-beach": {
+      "region": "redington-beach",
+      "building_count": 14061,
+      "tree_count": 11521,
+      "region_bytes": 284428,
+      "max_tile_bytes": 1001751,
+      "max_anchor_error_m": 0.0093,
+      "max_coast_float32_error_m": 0.0156768998433976,
+      "height_sources": {
+        "assumed-house": 1101,
+        "estimated-nonresidential": 155,
+        "estimated-type-footprint": 25,
+        "height": 12758,
+        "levels": 22
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 5.730572767330017,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 409,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 383,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 528040
+    },
+    "redington-shores": {
+      "region": "redington-shores",
+      "building_count": 17351,
+      "tree_count": 26233,
+      "region_bytes": 304620,
+      "max_tile_bytes": 1391475,
+      "max_anchor_error_m": 0.0041,
+      "max_coast_float32_error_m": 0.0156768998433976,
+      "height_sources": {
+        "assumed-house": 981,
+        "estimated-nonresidential": 134,
+        "estimated-type-footprint": 26,
+        "height": 16169,
+        "levels": 41
+      },
+      "max_height_width_ratio": 3.0000000000000004,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 5.943615637255937,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 362,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 250,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 500842
+    },
+    "tierra-verde": {
+      "region": "tierra-verde",
+      "building_count": 4796,
+      "tree_count": 4565,
+      "region_bytes": 159769,
+      "max_tile_bytes": 945165,
+      "max_anchor_error_m": 0.0031,
+      "max_coast_float32_error_m": 0.016533046149182568,
+      "height_sources": {
+        "assumed-house": 1055,
+        "estimated-nonresidential": 88,
+        "estimated-type-footprint": 21,
+        "height": 3624,
+        "levels": 8
+      },
+      "max_height_width_ratio": 3.000000000000001,
+      "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+      "phone_hardware_verified": false,
+      "notes": [
+        "Source-alignment checks are not independent survey accuracy.",
+        "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+        "Unmapped heights remain explicitly flagged estimates.",
+        "Supplemental negative IDs denote imagery-derived Microsoft footprints, not OpenStreetMap objects."
+      ],
+      "status": "review candidate; physical phone timing unverified",
+      "exported_boundary_source_error_m": 72.77422727464332,
+      "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey",
+      "building_sources": [
+        {
+          "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "download": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+          "downloads": [
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+            },
+            {
+              "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021232/part-00104-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+              "sha256": "42d08f161d490f9598ca89d9d363e10e0a256ceb35eaebb4b2c9ce4eef2dc8f8"
+            }
+          ],
+          "release": "2026-02-03",
+          "license": "CDLA Permissive 2.0",
+          "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+          "footprints": 130,
+          "notes": [
+            "Imagery-derived footprint estimates, not a current field survey. OSM overlaps excluded.",
+            "Negative local IDs are never OSM IDs; heights follow the unchanged house defaults."
+          ]
+        }
+      ],
+      "visual_qa": "Both landing zooms captured at 1600\u00d71000; phone crops exported; no observed console errors.",
+      "illustrative_boats": 856,
+      "boat_land_intersections": 0,
+      "initial_asset_bytes_with_boats": 511113
+    }
+  },
+  "existing_packages": {
+    "tampa-south-shore": {
+      "files": 4704,
+      "sha256": "34e5f5a64447bf5cfbde4857a3ee3dfd7f79ad54da0d272c24865cab5a79f070",
+      "after_sha256": "34e5f5a64447bf5cfbde4857a3ee3dfd7f79ad54da0d272c24865cab5a79f070",
+      "unchanged": true
+    },
+    "st-pete-clearwater": {
+      "files": 3714,
+      "sha256": "926a1dc64303b10d3a7955374bee05b66b0ce1718ddc84f7fcb8c0c275a32f0d",
+      "after_sha256": "926a1dc64303b10d3a7955374bee05b66b0ce1718ddc84f7fcb8c0c275a32f0d",
+      "unchanged": true
+    }
+  },
+  "pipeline_rules_changed": false,
+  "phone_hardware_verified": false
+}

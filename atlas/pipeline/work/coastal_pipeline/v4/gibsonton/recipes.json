@@ -1,0 +1,26 @@
+{
+  "recipes": {
+    "gibsonton": {
+      "walls": [
+        "#ead7b7",
+        "#b9cdbb",
+        "#d6b49c",
+        "#ccdcdf",
+        "#f3e8ce"
+      ],
+      "roofs": [
+        "#a6b7af",
+        "#b8c6c3",
+        "#a38670"
+      ],
+      "roof": "gable",
+      "detail": "painted-wood-porches",
+      "source": "https://hcfl.gov/locations/williams-boat-ramp",
+      "trim": [
+        "#fff8e7",
+        "#abc2b2"
+      ],
+      "character": "Low riverfront homes, boat ramps and working yards along the Alafia River and eastern Tampa Bay."
+    }
+  }
+}

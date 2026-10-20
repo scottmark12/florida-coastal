@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Indian Shores,113.16983795166016,429.0874938964844,-82.8484372915967,27.862800893342335,-82.8484373,27.862801,0.0119,https://www.openstreetmap.org/node/154019414,Representative OSM town place-label anchor: Indian Shores

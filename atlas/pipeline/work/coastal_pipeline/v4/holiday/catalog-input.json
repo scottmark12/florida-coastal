@@ -1,0 +1,53 @@
+{
+  "region": {
+    "id": "st-pete-clearwater",
+    "coast": "gulf",
+    "name": "Holiday",
+    "map": "St. Pete and Clearwater",
+    "at": [
+      27.98,
+      -82.9
+    ],
+    "side": "W",
+    "img": "img/st-pete-beach.jpg",
+    "pos": "30% center",
+    "hpos": "center 50%",
+    "text": "A narrow peninsula between the Gulf and Tampa Bay that packs in a walkable waterfront city, a string of barrier island beach towns and a few small bayside downtowns. Tampa's airport is close to all of it.",
+    "towns": [
+      "holiday"
+    ],
+    "center": [
+      122.24598020586825,
+      435.71475503880146
+    ]
+  },
+  "towns": [
+    {
+      "id": "holiday",
+      "name": "Holiday",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.739,
+      "lat": 28.188,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Low bungalow neighborhoods and lake streets giving way to mangroves, tidal creeks and Gulf waterfront parks.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://flsportscoast.com/",
+      "source_bounds": [
+        -82.784,
+        28.153,
+        -82.694,
+        28.223
+      ]
+    }
+  ],
+  "bounds": [
+    -82.804,
+    28.133,
+    -82.674,
+    28.243
+  ]
+}

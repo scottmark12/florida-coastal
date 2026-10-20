@@ -1,0 +1,29 @@
+[
+  {
+    "town": "redington-shores",
+    "id": "redington-shores-center",
+    "name": "Redington Shores",
+    "kind": "beach",
+    "description": "White and pastel Gulf condos with low cottages and canal-front homes behind Gulf Boulevard.",
+    "style": "redington-shores",
+    "lon": -82.8289923,
+    "lat": 27.8261357,
+    "x": 115.11940340372554,
+    "y": 425.0338768968178,
+    "positionSource": "https://www.openstreetmap.org/node/154035489",
+    "centerMeaning": "Representative OSM town place-label anchor: Redington Shores",
+    "priceRange": "$672,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pinellas-county/redington-shores",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 672000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/pinellas-county/redington-shores",
+      "activeListings": 73
+    },
+    "source": "https://www.visitstpeteclearwater.com/communities/north-redington-beach-redington-shores",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

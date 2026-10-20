@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Palm Harbor,121.2562026977539,453.0738220214844,-82.76371271634605,28.07807176873309,-82.7637127,28.0780718,0.0038,https://www.openstreetmap.org/node/154198543,Representative OSM town place-label anchor: Palm Harbor

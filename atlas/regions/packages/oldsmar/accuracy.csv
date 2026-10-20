@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Oldsmar,130.98069763183594,448.301025390625,-82.66509926406053,28.034184712682457,-82.6650992,28.0341847,0.0064,https://www.openstreetmap.org/node/153871015,Representative OSM town place-label anchor: Oldsmar

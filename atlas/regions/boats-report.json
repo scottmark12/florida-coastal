@@ -2,6 +2,90 @@
   "description": "Illustrated marina occupancy from mapped dock geometry; not real-time boats.",
   "towns": [
     {
+      "town": "oldsmar",
+      "boats": 124,
+      "mapped_docks": 20,
+      "placement_sources": 20,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "palm-harbor",
+      "boats": 344,
+      "mapped_docks": 44,
+      "placement_sources": 45,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "belleair-beach",
+      "boats": 668,
+      "mapped_docks": 133,
+      "placement_sources": 135,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "indian-shores",
+      "boats": 151,
+      "mapped_docks": 33,
+      "placement_sources": 33,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "redington-shores",
+      "boats": 250,
+      "mapped_docks": 78,
+      "placement_sources": 78,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "north-redington-beach",
+      "boats": 299,
+      "mapped_docks": 87,
+      "placement_sources": 87,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "redington-beach",
+      "boats": 383,
+      "mapped_docks": 101,
+      "placement_sources": 101,
+      "mapped_marina_areas": 2
+    },
+    {
+      "town": "tierra-verde",
+      "boats": 856,
+      "mapped_docks": 164,
+      "placement_sources": 167,
+      "mapped_marina_areas": 4
+    },
+    {
+      "town": "holiday",
+      "boats": 168,
+      "mapped_docks": 40,
+      "placement_sources": 40,
+      "mapped_marina_areas": 1
+    },
+    {
+      "town": "port-richey",
+      "boats": 53,
+      "mapped_docks": 16,
+      "placement_sources": 16,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "hudson",
+      "boats": 16,
+      "mapped_docks": 3,
+      "placement_sources": 3,
+      "mapped_marina_areas": 0
+    },
+    {
+      "town": "gibsonton",
+      "boats": 49,
+      "mapped_docks": 8,
+      "placement_sources": 8,
+      "mapped_marina_areas": 0
+    },
+    {
       "town": "perdido-key",
       "boats": 794,
       "mapped_docks": 96,
@@ -322,5 +406,5 @@
       "mapped_docks": 0
     }
   ],
-  "total_boats": 11413
+  "total_boats": 14774
 }

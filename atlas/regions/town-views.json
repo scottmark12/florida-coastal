@@ -328,5 +328,125 @@
     "desktopSpan": 1.6,
     "phoneSpan": 0.8,
     "reason": "The creek bridge frames Aripeka\u2019s old cottages and tidal marsh channels."
+  },
+  "oldsmar": {
+    "district": "oldsmar-center",
+    "x": 130.5604578173398,
+    "y": 448.0169717406092,
+    "lon": -82.66941307624445,
+    "lat": 28.031668,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "R.E. Olds Park puts Old Tampa Bay, the park edge and the small residential center together."
+  },
+  "palm-harbor": {
+    "district": "palm-harbor-center",
+    "x": 120.55360524328151,
+    "y": 453.14586098656605,
+    "lon": -82.770868366126,
+    "lat": 28.07878365,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Pop Stansell Park frames the Ozona waterfront with historic Palm Harbor streets inland."
+  },
+  "belleair-beach": {
+    "district": "belleair-beach-center",
+    "x": 113.8347686458046,
+    "y": 435.04925064352943,
+    "lon": -82.84110157023768,
+    "lat": 27.9164258,
+    "desktopSpan": 1.5,
+    "phoneSpan": 0.75,
+    "reason": "Bayside Park shows the residential island between the Intracoastal and the Gulf beach."
+  },
+  "indian-shores": {
+    "district": "indian-shores-center",
+    "x": 113.53497466273747,
+    "y": 428.15462542257745,
+    "lon": -82.84481097114428,
+    "lat": 27.85437035,
+    "desktopSpan": 1.5,
+    "phoneSpan": 0.75,
+    "reason": "Tiki Gardens anchors the narrow beach-and-Intracoastal strip around Gulf Boulevard."
+  },
+  "redington-shores": {
+    "district": "redington-shores-center",
+    "x": 114.53495193754456,
+    "y": 425.9490021840943,
+    "lon": -82.83484909998678,
+    "lat": 27.8344256,
+    "desktopSpan": 1.5,
+    "phoneSpan": 0.75,
+    "reason": "Constitution Park anchors the local beach neighborhood beside Gulf Boulevard."
+  },
+  "north-redington-beach": {
+    "district": "north-redington-beach-center",
+    "x": 115.85934660633794,
+    "y": 423.9647695001625,
+    "lon": -82.82156989257871,
+    "lat": 27.816445672360516,
+    "desktopSpan": 1.5,
+    "phoneSpan": 0.75,
+    "reason": "Gulf Boulevard frames the beach resort strip and the bayfront neighborhood together."
+  },
+  "redington-beach": {
+    "district": "redington-beach-center",
+    "x": 116.80487046208214,
+    "y": 423.1415517970719,
+    "lon": -82.8120340216517,
+    "lat": 27.808951483066252,
+    "desktopSpan": 1.5,
+    "phoneSpan": 0.75,
+    "reason": "Gulf Boulevard puts the low beach homes and Boca Ciega waterfront in the same frame."
+  },
+  "tierra-verde": {
+    "district": "tierra-verde-center",
+    "x": 126.04477973998121,
+    "y": 410.15042026870316,
+    "lon": -82.7194379,
+    "lat": 27.691142,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "The central Pinellas Bayway waterfront frames the island canals, docks and connecting road."
+  },
+  "holiday": {
+    "district": "holiday-center",
+    "x": 118.88568081346217,
+    "y": 463.79983610284836,
+    "lon": -82.7868043207585,
+    "lat": 28.1748607,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Anclote River Park frames the river mouth, mangroves and nearby low residential neighborhoods."
+  },
+  "port-richey": {
+    "district": "port-richey-center",
+    "x": 124.851557368493,
+    "y": 474.984867367389,
+    "lon": -82.72474808962515,
+    "lat": 28.2750281,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Waterfront Park frames the Pithlachascotee river mouth and its working docks."
+  },
+  "hudson": {
+    "district": "hudson-center",
+    "x": 126.13669574670934,
+    "y": 484.64971640545474,
+    "lon": -82.71059026431722,
+    "lat": 28.3619292,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Hudson Beach frames the Gulf edge, canal homes and waterfront boating neighborhood."
+  },
+  "gibsonton": {
+    "district": "gibsonton-center",
+    "x": 158.63969100855115,
+    "y": 429.3830704518233,
+    "lon": -82.38576349802327,
+    "lat": 27.86087075,
+    "desktopSpan": 2.2,
+    "phoneSpan": 1.1,
+    "reason": "Williams Park frames the Alafia River crossing, boat ramp and low riverfront neighborhoods."
   }
 }

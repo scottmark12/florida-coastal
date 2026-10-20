@@ -1,0 +1,29 @@
+[
+  {
+    "town": "gibsonton",
+    "id": "gibsonton-center",
+    "name": "Gibsonton",
+    "kind": "beach",
+    "description": "Low riverfront homes, boat ramps and working yards along the Alafia River and eastern Tampa Bay.",
+    "style": "gibsonton",
+    "lon": -82.3817515,
+    "lat": 27.8497857,
+    "x": 159.05010333529492,
+    "y": 428.1573091870743,
+    "positionSource": "https://www.openstreetmap.org/node/153868815",
+    "centerMeaning": "Representative OSM town place-label anchor: Gibsonton",
+    "priceRange": "$326,250 median listing price \u00b7 August 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/hillsborough-county/gibsonton",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 326250,
+      "metric": "median listing price",
+      "period": "August 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/hillsborough-county/gibsonton",
+      "activeListings": 136
+    },
+    "source": "https://hcfl.gov/locations/williams-boat-ramp",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

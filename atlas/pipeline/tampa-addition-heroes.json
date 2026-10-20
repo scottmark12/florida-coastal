@@ -1,0 +1,259 @@
+{
+  "oldsmar": [
+    "R.E. Olds Park",
+    -82.66941307624445,
+    28.031668,
+    "R.E. Olds Park puts Old Tampa Bay, the park edge and the small residential center together.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/179005590",
+    [
+      [
+        "Veterans Memorial Park",
+        "park",
+        -82.66475678112812,
+        28.0292526
+      ],
+      [
+        "Bicentennial Park",
+        "park",
+        -82.65825576798275,
+        28.0287645
+      ],
+      [
+        "Richard B. Rogers Park",
+        "park",
+        -82.66982005811559,
+        28.043786349999998
+      ]
+    ]
+  ],
+  "palm-harbor": [
+    "Pop Stansell Park",
+    -82.770868366126,
+    28.07878365,
+    "Pop Stansell Park frames the Ozona waterfront with historic Palm Harbor streets inland.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/597466837",
+    [
+      [
+        "Gulf Shore Park",
+        "park",
+        -82.78191009866335,
+        28.0901269
+      ],
+      [
+        "Live Oak Park",
+        "park",
+        -82.78039016957713,
+        28.09227745
+      ]
+    ]
+  ],
+  "belleair-beach": [
+    "Bayside Park",
+    -82.84110157023768,
+    27.9164258,
+    "Bayside Park shows the residential island between the Intracoastal and the Gulf beach.",
+    4,
+    1.5,
+    "park",
+    "https://www.openstreetmap.org/way/32122198",
+    [
+      [
+        "Brown Park",
+        "park",
+        -82.84441122690987,
+        27.9094866
+      ],
+      [
+        "Harbor Bluffs Park",
+        "park",
+        -82.82543734024631,
+        27.9111
+      ]
+    ]
+  ],
+  "indian-shores": [
+    "Tiki Gardens",
+    -82.84481097114428,
+    27.85437035,
+    "Tiki Gardens anchors the narrow beach-and-Intracoastal strip around Gulf Boulevard.",
+    4,
+    1.5,
+    "park",
+    "https://www.openstreetmap.org/way/227084349",
+    [
+      [
+        "Town Square Nature Park",
+        "park",
+        -82.84048046651925,
+        27.844582350000003
+      ]
+    ]
+  ],
+  "redington-shores": [
+    "Constitution Park",
+    -82.83484909998678,
+    27.8344256,
+    "Constitution Park anchors the local beach neighborhood beside Gulf Boulevard.",
+    4,
+    1.5,
+    "park",
+    "https://www.openstreetmap.org/way/218887857",
+    [
+      [
+        "Del Bello Park",
+        "park",
+        -82.83137792200361,
+        27.83094825
+      ],
+      [
+        "Town Square Nature Park",
+        "park",
+        -82.84048046651925,
+        27.844582350000003
+      ]
+    ]
+  ],
+  "north-redington-beach": [
+    "Gulf Boulevard",
+    -82.82156989257871,
+    27.816445672360516,
+    "Gulf Boulevard frames the beach resort strip and the bayfront neighborhood together.",
+    4,
+    1.5,
+    null,
+    "https://www.openstreetmap.org/way/800658167",
+    [
+      [
+        "Del Bello Park",
+        "park",
+        -82.83137792200361,
+        27.83094825
+      ]
+    ]
+  ],
+  "redington-beach": [
+    "Gulf Boulevard",
+    -82.8120340216517,
+    27.808951483066252,
+    "Gulf Boulevard puts the low beach homes and Boca Ciega waterfront in the same frame.",
+    4,
+    1.5,
+    null,
+    "https://www.openstreetmap.org/way/576456566",
+    [
+      [
+        "Remember Our Children Park",
+        "park",
+        -82.80019116918056,
+        27.8056606
+      ]
+    ]
+  ],
+  "tierra-verde": [
+    "Pinellas Bayway South",
+    -82.7194379,
+    27.691142,
+    "The central Pinellas Bayway waterfront frames the island canals, docks and connecting road.",
+    5.5,
+    2.2,
+    null,
+    "https://www.openstreetmap.org/way/82789295",
+    [
+      [
+        "Frank T. Hurley Park",
+        "park",
+        -82.73676442155666,
+        27.693194300000002
+      ],
+      [
+        "The Pass-a-Grille Park",
+        "park",
+        -82.73689579404491,
+        27.689009249999998
+      ]
+    ]
+  ],
+  "holiday": [
+    "Anclote River Park",
+    -82.7868043207585,
+    28.1748607,
+    "Anclote River Park frames the river mouth, mangroves and nearby low residential neighborhoods.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/476217523",
+    [
+      [
+        "Fred Howard Park",
+        "park",
+        -82.79159950769238,
+        28.158485849999998
+      ]
+    ]
+  ],
+  "port-richey": [
+    "Port Richey Waterfront Park",
+    -82.72474808962515,
+    28.2750281,
+    "Waterfront Park frames the Pithlachascotee river mouth and its working docks.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/547113996",
+    [
+      [
+        "Wilmslow Park",
+        "park",
+        -82.7331344847953,
+        28.27856525
+      ],
+      [
+        "Brasher Park",
+        "park",
+        -82.73239952981072,
+        28.285496549999998
+      ],
+      [
+        "Pinehill Park",
+        "park",
+        -82.7116279,
+        28.27229605
+      ]
+    ]
+  ],
+  "hudson": [
+    "Robert J. Strickland Park",
+    -82.71059026431722,
+    28.3619292,
+    "Hudson Beach frames the Gulf edge, canal homes and waterfront boating neighborhood.",
+    5.5,
+    2.2,
+    "park",
+    "https://www.openstreetmap.org/way/526290765",
+    []
+  ],
+  "gibsonton": [
+    "Williams Park",
+    -82.38576349802327,
+    27.86087075,
+    "Williams Park frames the Alafia River crossing, boat ramp and low riverfront neighborhoods.",
+    5.5,
+    2.2,
+    "boating",
+    "https://www.openstreetmap.org/way/26139347",
+    [
+      [
+        "Mosaic Park",
+        "park",
+        -82.38355839953019,
+        27.86331095
+      ]
+    ]
+  ]
+}

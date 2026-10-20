@@ -3040,8 +3040,8 @@
         0,
         -713.2130669576186
       ],
-      "left": -3.0,
-      "right": 3.0,
+      "left": -3,
+      "right": 3,
       "top": 1.875,
       "bottom": -1.875,
       "near": 0.0001,
@@ -3600,8 +3600,8 @@
         0,
         -591.4718333194324
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -3656,8 +3656,8 @@
         0,
         -558.8288382682148
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -3712,8 +3712,8 @@
         0,
         -558.3315418693523
       ],
-      "left": -2.0,
-      "right": 2.0,
+      "left": -2,
+      "right": 2,
       "top": 1.25,
       "bottom": -1.25,
       "near": 0.0001,
@@ -3912,6 +3912,678 @@
       "right": 0.8,
       "top": 0.5,
       "bottom": -0.5,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "oldsmar",
+    "view": "town",
+    "url": "../explore_coast.html?view=oldsmar&level=town&district=oldsmar-center&landing=1&cx=130.5604578173398&cy=448.0169717406092&span=5.5",
+    "desktop": "oldsmar.webp",
+    "mobile": "oldsmar-m.webp",
+    "camera": {
+      "position": [
+        130.5604578173398,
+        4.296875,
+        -443.7200967406092
+      ],
+      "target": [
+        130.5604578173398,
+        0,
+        -448.0169717406092
+      ],
+      "left": -2.75,
+      "right": 2.75,
+      "top": 1.71875,
+      "bottom": -1.71875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "oldsmar",
+    "view": "street",
+    "url": "../explore_coast.html?view=oldsmar&level=town&district=oldsmar-center&landing=1&cx=130.5604578173398&cy=448.0169717406092&span=2.2",
+    "desktop": "oldsmar-close.webp",
+    "mobile": "oldsmar-close-m.webp",
+    "camera": {
+      "position": [
+        130.5604578173398,
+        1.71875,
+        -446.2982217406092
+      ],
+      "target": [
+        130.5604578173398,
+        0,
+        -448.0169717406092
+      ],
+      "left": -1.1,
+      "right": 1.1,
+      "top": 0.6875,
+      "bottom": -0.6875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "palm-harbor",
+    "view": "town",
+    "url": "../explore_coast.html?view=palm-harbor&level=town&district=palm-harbor-center&landing=1&cx=120.55360524328151&cy=453.14586098656605&span=5.5",
+    "desktop": "palm-harbor.webp",
+    "mobile": "palm-harbor-m.webp",
+    "camera": {
+      "position": [
+        120.55360524328151,
+        4.296875,
+        -448.84898598656605
+      ],
+      "target": [
+        120.55360524328151,
+        0,
+        -453.14586098656605
+      ],
+      "left": -2.75,
+      "right": 2.75,
+      "top": 1.71875,
+      "bottom": -1.71875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "palm-harbor",
+    "view": "street",
+    "url": "../explore_coast.html?view=palm-harbor&level=town&district=palm-harbor-center&landing=1&cx=120.55360524328151&cy=453.14586098656605&span=2.2",
+    "desktop": "palm-harbor-close.webp",
+    "mobile": "palm-harbor-close-m.webp",
+    "camera": {
+      "position": [
+        120.55360524328151,
+        1.71875,
+        -451.42711098656605
+      ],
+      "target": [
+        120.55360524328151,
+        0,
+        -453.14586098656605
+      ],
+      "left": -1.1,
+      "right": 1.1,
+      "top": 0.6875,
+      "bottom": -0.6875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "belleair-beach",
+    "view": "town",
+    "url": "../explore_coast.html?view=belleair-beach&level=town&district=belleair-beach-center&landing=1&cx=113.8347686458046&cy=435.04925064352943&span=4",
+    "desktop": "belleair-beach.webp",
+    "mobile": "belleair-beach-m.webp",
+    "camera": {
+      "position": [
+        113.8347686458046,
+        3.125,
+        -431.92425064352943
+      ],
+      "target": [
+        113.8347686458046,
+        0,
+        -435.04925064352943
+      ],
+      "left": -2.0,
+      "right": 2.0,
+      "top": 1.25,
+      "bottom": -1.25,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "belleair-beach",
+    "view": "street",
+    "url": "../explore_coast.html?view=belleair-beach&level=town&district=belleair-beach-center&landing=1&cx=113.8347686458046&cy=435.04925064352943&span=1.5",
+    "desktop": "belleair-beach-close.webp",
+    "mobile": "belleair-beach-close-m.webp",
+    "camera": {
+      "position": [
+        113.8347686458046,
+        1.171875,
+        -433.87737564352943
+      ],
+      "target": [
+        113.8347686458046,
+        0,
+        -435.04925064352943
+      ],
+      "left": -0.75,
+      "right": 0.75,
+      "top": 0.46875,
+      "bottom": -0.46875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "indian-shores",
+    "view": "town",
+    "url": "../explore_coast.html?view=indian-shores&level=town&district=indian-shores-center&landing=1&cx=113.53497466273747&cy=428.15462542257745&span=4",
+    "desktop": "indian-shores.webp",
+    "mobile": "indian-shores-m.webp",
+    "camera": {
+      "position": [
+        113.53497466273747,
+        3.125,
+        -425.02962542257745
+      ],
+      "target": [
+        113.53497466273747,
+        0,
+        -428.15462542257745
+      ],
+      "left": -2.0,
+      "right": 2.0,
+      "top": 1.25,
+      "bottom": -1.25,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "indian-shores",
+    "view": "street",
+    "url": "../explore_coast.html?view=indian-shores&level=town&district=indian-shores-center&landing=1&cx=113.53497466273747&cy=428.15462542257745&span=1.5",
+    "desktop": "indian-shores-close.webp",
+    "mobile": "indian-shores-close-m.webp",
+    "camera": {
+      "position": [
+        113.53497466273747,
+        1.171875,
+        -426.98275042257745
+      ],
+      "target": [
+        113.53497466273747,
+        0,
+        -428.15462542257745
+      ],
+      "left": -0.75,
+      "right": 0.75,
+      "top": 0.46875,
+      "bottom": -0.46875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "redington-shores",
+    "view": "town",
+    "url": "../explore_coast.html?view=redington-shores&level=town&district=redington-shores-center&landing=1&cx=114.53495193754456&cy=425.9490021840943&span=4",
+    "desktop": "redington-shores.webp",
+    "mobile": "redington-shores-m.webp",
+    "camera": {
+      "position": [
+        114.53495193754456,
+        3.125,
+        -422.8240021840943
+      ],
+      "target": [
+        114.53495193754456,
+        0,
+        -425.9490021840943
+      ],
+      "left": -2.0,
+      "right": 2.0,
+      "top": 1.25,
+      "bottom": -1.25,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "redington-shores",
+    "view": "street",
+    "url": "../explore_coast.html?view=redington-shores&level=town&district=redington-shores-center&landing=1&cx=114.53495193754456&cy=425.9490021840943&span=1.5",
+    "desktop": "redington-shores-close.webp",
+    "mobile": "redington-shores-close-m.webp",
+    "camera": {
+      "position": [
+        114.53495193754456,
+        1.171875,
+        -424.7771271840943
+      ],
+      "target": [
+        114.53495193754456,
+        0,
+        -425.9490021840943
+      ],
+      "left": -0.75,
+      "right": 0.75,
+      "top": 0.46875,
+      "bottom": -0.46875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "north-redington-beach",
+    "view": "town",
+    "url": "../explore_coast.html?view=north-redington-beach&level=town&district=north-redington-beach-center&landing=1&cx=115.85934660633794&cy=423.9647695001625&span=4",
+    "desktop": "north-redington-beach.webp",
+    "mobile": "north-redington-beach-m.webp",
+    "camera": {
+      "position": [
+        115.85934660633794,
+        3.125,
+        -420.8397695001625
+      ],
+      "target": [
+        115.85934660633794,
+        0,
+        -423.9647695001625
+      ],
+      "left": -2.0,
+      "right": 2.0,
+      "top": 1.25,
+      "bottom": -1.25,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "north-redington-beach",
+    "view": "street",
+    "url": "../explore_coast.html?view=north-redington-beach&level=town&district=north-redington-beach-center&landing=1&cx=115.85934660633794&cy=423.9647695001625&span=1.5",
+    "desktop": "north-redington-beach-close.webp",
+    "mobile": "north-redington-beach-close-m.webp",
+    "camera": {
+      "position": [
+        115.85934660633794,
+        1.171875,
+        -422.7928945001625
+      ],
+      "target": [
+        115.85934660633794,
+        0,
+        -423.9647695001625
+      ],
+      "left": -0.75,
+      "right": 0.75,
+      "top": 0.46875,
+      "bottom": -0.46875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "redington-beach",
+    "view": "town",
+    "url": "../explore_coast.html?view=redington-beach&level=town&district=redington-beach-center&landing=1&cx=116.80487046208214&cy=423.1415517970719&span=4",
+    "desktop": "redington-beach.webp",
+    "mobile": "redington-beach-m.webp",
+    "camera": {
+      "position": [
+        116.80487046208214,
+        3.125,
+        -420.0165517970719
+      ],
+      "target": [
+        116.80487046208214,
+        0,
+        -423.1415517970719
+      ],
+      "left": -2.0,
+      "right": 2.0,
+      "top": 1.25,
+      "bottom": -1.25,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "redington-beach",
+    "view": "street",
+    "url": "../explore_coast.html?view=redington-beach&level=town&district=redington-beach-center&landing=1&cx=116.80487046208214&cy=423.1415517970719&span=1.5",
+    "desktop": "redington-beach-close.webp",
+    "mobile": "redington-beach-close-m.webp",
+    "camera": {
+      "position": [
+        116.80487046208214,
+        1.171875,
+        -421.9696767970719
+      ],
+      "target": [
+        116.80487046208214,
+        0,
+        -423.1415517970719
+      ],
+      "left": -0.75,
+      "right": 0.75,
+      "top": 0.46875,
+      "bottom": -0.46875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "tierra-verde",
+    "view": "town",
+    "url": "../explore_coast.html?view=tierra-verde&level=town&district=tierra-verde-center&landing=1&cx=126.04477973998121&cy=410.15042026870316&span=5.5",
+    "desktop": "tierra-verde.webp",
+    "mobile": "tierra-verde-m.webp",
+    "camera": {
+      "position": [
+        126.04477973998121,
+        4.296875,
+        -405.85354526870316
+      ],
+      "target": [
+        126.04477973998121,
+        0,
+        -410.15042026870316
+      ],
+      "left": -2.75,
+      "right": 2.75,
+      "top": 1.71875,
+      "bottom": -1.71875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "tierra-verde",
+    "view": "street",
+    "url": "../explore_coast.html?view=tierra-verde&level=town&district=tierra-verde-center&landing=1&cx=126.04477973998121&cy=410.15042026870316&span=2.2",
+    "desktop": "tierra-verde-close.webp",
+    "mobile": "tierra-verde-close-m.webp",
+    "camera": {
+      "position": [
+        126.04477973998121,
+        1.71875,
+        -408.43167026870316
+      ],
+      "target": [
+        126.04477973998121,
+        0,
+        -410.15042026870316
+      ],
+      "left": -1.1,
+      "right": 1.1,
+      "top": 0.6875,
+      "bottom": -0.6875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "holiday",
+    "view": "town",
+    "url": "../explore_coast.html?view=holiday&level=town&district=holiday-center&landing=1&cx=118.88568081346217&cy=463.79983610284836&span=5.5",
+    "desktop": "holiday.webp",
+    "mobile": "holiday-m.webp",
+    "camera": {
+      "position": [
+        118.88568081346217,
+        4.296875,
+        -459.50296110284836
+      ],
+      "target": [
+        118.88568081346217,
+        0,
+        -463.79983610284836
+      ],
+      "left": -2.75,
+      "right": 2.75,
+      "top": 1.71875,
+      "bottom": -1.71875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "holiday",
+    "view": "street",
+    "url": "../explore_coast.html?view=holiday&level=town&district=holiday-center&landing=1&cx=118.88568081346217&cy=463.79983610284836&span=2.2",
+    "desktop": "holiday-close.webp",
+    "mobile": "holiday-close-m.webp",
+    "camera": {
+      "position": [
+        118.88568081346217,
+        1.71875,
+        -462.08108610284836
+      ],
+      "target": [
+        118.88568081346217,
+        0,
+        -463.79983610284836
+      ],
+      "left": -1.1,
+      "right": 1.1,
+      "top": 0.6875,
+      "bottom": -0.6875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "port-richey",
+    "view": "town",
+    "url": "../explore_coast.html?view=port-richey&level=town&district=port-richey-center&landing=1&cx=124.851557368493&cy=474.984867367389&span=5.5",
+    "desktop": "port-richey.webp",
+    "mobile": "port-richey-m.webp",
+    "camera": {
+      "position": [
+        124.851557368493,
+        4.296875,
+        -470.687992367389
+      ],
+      "target": [
+        124.851557368493,
+        0,
+        -474.984867367389
+      ],
+      "left": -2.75,
+      "right": 2.75,
+      "top": 1.71875,
+      "bottom": -1.71875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "port-richey",
+    "view": "street",
+    "url": "../explore_coast.html?view=port-richey&level=town&district=port-richey-center&landing=1&cx=124.851557368493&cy=474.984867367389&span=2.2",
+    "desktop": "port-richey-close.webp",
+    "mobile": "port-richey-close-m.webp",
+    "camera": {
+      "position": [
+        124.851557368493,
+        1.71875,
+        -473.266117367389
+      ],
+      "target": [
+        124.851557368493,
+        0,
+        -474.984867367389
+      ],
+      "left": -1.1,
+      "right": 1.1,
+      "top": 0.6875,
+      "bottom": -0.6875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "hudson",
+    "view": "town",
+    "url": "../explore_coast.html?view=hudson&level=town&district=hudson-center&landing=1&cx=126.13669574670934&cy=484.64971640545474&span=5.5",
+    "desktop": "hudson.webp",
+    "mobile": "hudson-m.webp",
+    "camera": {
+      "position": [
+        126.13669574670934,
+        4.296875,
+        -480.35284140545474
+      ],
+      "target": [
+        126.13669574670934,
+        0,
+        -484.64971640545474
+      ],
+      "left": -2.75,
+      "right": 2.75,
+      "top": 1.71875,
+      "bottom": -1.71875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "hudson",
+    "view": "street",
+    "url": "../explore_coast.html?view=hudson&level=town&district=hudson-center&landing=1&cx=126.13669574670934&cy=484.64971640545474&span=2.2",
+    "desktop": "hudson-close.webp",
+    "mobile": "hudson-close-m.webp",
+    "camera": {
+      "position": [
+        126.13669574670934,
+        1.71875,
+        -482.93096640545474
+      ],
+      "target": [
+        126.13669574670934,
+        0,
+        -484.64971640545474
+      ],
+      "left": -1.1,
+      "right": 1.1,
+      "top": 0.6875,
+      "bottom": -0.6875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "gibsonton",
+    "view": "town",
+    "url": "../explore_coast.html?view=gibsonton&level=town&district=gibsonton-center&landing=1&cx=158.63969100855115&cy=429.3830704518233&span=5.5",
+    "desktop": "gibsonton.webp",
+    "mobile": "gibsonton-m.webp",
+    "camera": {
+      "position": [
+        158.63969100855115,
+        4.296875,
+        -425.0861954518233
+      ],
+      "target": [
+        158.63969100855115,
+        0,
+        -429.3830704518233
+      ],
+      "left": -2.75,
+      "right": 2.75,
+      "top": 1.71875,
+      "bottom": -1.71875,
+      "near": 0.0001,
+      "far": 3500,
+      "projection": "orthographic",
+      "mapUnits": "kilometers",
+      "tiltDegrees": 45
+    }
+  },
+  {
+    "town_id": "gibsonton",
+    "view": "street",
+    "url": "../explore_coast.html?view=gibsonton&level=town&district=gibsonton-center&landing=1&cx=158.63969100855115&cy=429.3830704518233&span=2.2",
+    "desktop": "gibsonton-close.webp",
+    "mobile": "gibsonton-close-m.webp",
+    "camera": {
+      "position": [
+        158.63969100855115,
+        1.71875,
+        -427.6643204518233
+      ],
+      "target": [
+        158.63969100855115,
+        0,
+        -429.3830704518233
+      ],
+      "left": -1.1,
+      "right": 1.1,
+      "top": 0.6875,
+      "bottom": -0.6875,
       "near": 0.0001,
       "far": 3500,
       "projection": "orthographic",

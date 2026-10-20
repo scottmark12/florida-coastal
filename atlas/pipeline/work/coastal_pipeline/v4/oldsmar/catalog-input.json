@@ -1,0 +1,53 @@
+{
+  "region": {
+    "id": "st-pete-clearwater",
+    "coast": "gulf",
+    "name": "Oldsmar",
+    "map": "St. Pete and Clearwater",
+    "at": [
+      27.98,
+      -82.9
+    ],
+    "side": "W",
+    "img": "img/st-pete-beach.jpg",
+    "pos": "30% center",
+    "hpos": "center 50%",
+    "text": "A narrow peninsula between the Gulf and Tampa Bay that packs in a walkable waterfront city, a string of barrier island beach towns and a few small bayside downtowns. Tampa's airport is close to all of it.",
+    "towns": [
+      "oldsmar"
+    ],
+    "center": [
+      122.24598020586825,
+      435.71475503880146
+    ]
+  },
+  "towns": [
+    {
+      "id": "oldsmar",
+      "name": "Oldsmar",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.665,
+      "lat": 28.034,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Low wooded neighborhoods and a walkable small center beside the parks and tidal shoreline of upper Tampa Bay.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.visitstpeteclearwater.com/communities/oldsmar",
+      "source_bounds": [
+        -82.71000000000001,
+        27.999,
+        -82.62,
+        28.069
+      ]
+    }
+  ],
+  "bounds": [
+    -82.73,
+    27.979,
+    -82.60000000000001,
+    28.089
+  ]
+}

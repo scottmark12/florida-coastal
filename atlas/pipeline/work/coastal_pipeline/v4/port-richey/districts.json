@@ -1,0 +1,29 @@
+[
+  {
+    "town": "port-richey",
+    "id": "port-richey-center",
+    "name": "Port Richey",
+    "kind": "beach",
+    "description": "A working river-mouth waterfront of fishing docks, marinas and low homes where the Pithlachascotee meets the Gulf.",
+    "style": "port-richey",
+    "lon": -82.7195451,
+    "lat": 28.2716755,
+    "x": 125.36479578477307,
+    "y": 474.6178367831701,
+    "positionSource": "https://www.openstreetmap.org/node/153976121",
+    "centerMeaning": "Representative OSM town place-label anchor: Port Richey",
+    "priceRange": "$259,900 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/pasco-county/port-richey",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 259900,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-19",
+      "source": "https://www.realtor.com/local/market/florida/pasco-county/port-richey",
+      "activeListings": 550
+    },
+    "source": "https://flsportscoast.com/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

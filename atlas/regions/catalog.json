@@ -261,7 +261,7 @@
       "area_id": "st-pete-clearwater",
       "area_name": "St. Pete and the Clearwater Beaches",
       "source_url": "https://www.floridacoastal.co/towns/dunedin.html",
-      "nearest_town_km": 6.6809855228213255
+      "nearest_town_km": 6.478644864141411
     },
     {
       "id": "clearwaterbeach",
@@ -1700,7 +1700,7 @@
       "area_id": "st-pete-clearwater",
       "area_name": "St. Pete and the Clearwater Beaches",
       "source_url": "https://www.floridacoastal.co/towns/indian-rocks-beach.html",
-      "nearest_town_km": 9.764698140027978
+      "nearest_town_km": 2.909818933549744
     },
     {
       "id": "madeira-beach",
@@ -1739,7 +1739,7 @@
       "area_id": "st-pete-clearwater",
       "area_name": "St. Pete and the Clearwater Beaches",
       "source_url": "https://www.floridacoastal.co/towns/madeira-beach.html",
-      "nearest_town_km": 4.301862376641861
+      "nearest_town_km": 1.6832913549069315
     },
     {
       "id": "new-port-richey",
@@ -1778,7 +1778,7 @@
       "area_id": "st-pete-clearwater",
       "area_name": "St. Pete and the Clearwater Beaches",
       "source_url": "https://www.floridacoastal.co/towns/new-port-richey.html",
-      "nearest_town_km": 11.502761574806692
+      "nearest_town_km": 3.0740172645730373
     },
     {
       "id": "ruskin",
@@ -1854,7 +1854,7 @@
       "area_id": "st-pete-clearwater",
       "area_name": "St. Pete and the Clearwater Beaches",
       "source_url": "https://www.floridacoastal.co/towns/safety-harbor.html",
-      "nearest_town_km": 7.789235572065392
+      "nearest_town_km": 4.414868207637179
     },
     {
       "id": "st-pete-beach",
@@ -1892,7 +1892,7 @@
       "area_id": "st-pete-clearwater",
       "area_name": "St. Pete and the Clearwater Beaches",
       "source_url": "https://www.floridacoastal.co/towns/st-pete-beach.html",
-      "nearest_town_km": 4.897002239102217
+      "nearest_town_km": 4.054545344000282
     },
     {
       "id": "st-petersburg",
@@ -2012,7 +2012,7 @@
       "area_id": "tampa-south-shore",
       "area_name": "Tampa and the South Shore",
       "source_url": "https://www.floridacoastal.co/towns/tampa.html",
-      "nearest_town_km": 20.23777834769861
+      "nearest_town_km": 13.453418078907658
     },
     {
       "id": "tarpon-springs",
@@ -2053,7 +2053,7 @@
       "area_id": "st-pete-clearwater",
       "area_name": "St. Pete and the Clearwater Beaches",
       "source_url": "https://www.floridacoastal.co/towns/tarpon-springs.html",
-      "nearest_town_km": 11.502761574806692
+      "nearest_town_km": 4.9429490035931964
     },
     {
       "id": "treasure-island",
@@ -4806,6 +4806,318 @@
       "tier": 2,
       "price": "$430,000 published median sale price (three-month window; thin market) \u00b7 three months ending June 2026",
       "nearest_town_km": 4.21681352853744
+    },
+    {
+      "id": "oldsmar",
+      "name": "Oldsmar",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.6650992,
+      "lat": 28.0341847,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Low wooded neighborhoods and a walkable small center beside the parks and tidal shoreline of upper Tampa Bay.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.visitstpeteclearwater.com/communities/oldsmar",
+      "source_bounds": [
+        -82.71000000000001,
+        27.999,
+        -82.62,
+        28.069
+      ],
+      "x": 130.9807039324674,
+      "y": 448.30102405029,
+      "tier": 2,
+      "price": "$349,900 median listing price \u00b7 September 2026",
+      "nearest_town_km": 4.414868207637179
+    },
+    {
+      "id": "palm-harbor",
+      "name": "Palm Harbor",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.7637127,
+      "lat": 28.0780718,
+      "vibes": [
+        "walk"
+      ],
+      "blurb": "Historic porch homes around Florida Avenue, oak-shaded residential streets and the sheltered waterfront of Ozona and Crystal Beach.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.visitstpeteclearwater.com/communities/palm-harbor",
+      "source_bounds": [
+        -82.809,
+        28.043,
+        -82.719,
+        28.113
+      ],
+      "x": 121.25620426612414,
+      "y": 453.07382550976166,
+      "tier": 2,
+      "price": "$398,000 median listing price \u00b7 September 2026",
+      "nearest_town_km": 6.478644864141411
+    },
+    {
+      "id": "belleair-beach",
+      "name": "Belleair Beach",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.8431594,
+      "lat": 27.9230767,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "A quiet residential barrier island of Gulf homes, low beach condos and Intracoastal docks.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.cityofbelleairbeach.com/",
+      "source_bounds": [
+        -82.889,
+        27.887999999999998,
+        -82.79899999999999,
+        27.958
+      ],
+      "x": 113.6257117661331,
+      "y": 435.7859325956372,
+      "tier": 2,
+      "price": "$1,374,950 median listing price \u00b7 September 2026",
+      "nearest_town_km": 3.814124489745901
+    },
+    {
+      "id": "indian-shores",
+      "name": "Indian Shores",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.8484373,
+      "lat": 27.862801,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "A narrow Gulf Boulevard beach town of pastel condominiums, small motels and the Intracoastal Waterway.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.visitstpeteclearwater.com/communities/indian-shores-indian-rocks-beach",
+      "source_bounds": [
+        -82.891,
+        27.828,
+        -82.801,
+        27.898
+      ],
+      "x": 113.16983701524006,
+      "y": 429.0875057329882,
+      "tier": 2,
+      "price": "$654,750 median listing price \u00b7 August 2026",
+      "nearest_town_km": 2.909818933549744
+    },
+    {
+      "id": "redington-shores",
+      "name": "Redington Shores",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.8289923,
+      "lat": 27.8261357,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "White and pastel Gulf condos with low cottages and canal-front homes behind Gulf Boulevard.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.visitstpeteclearwater.com/communities/north-redington-beach-redington-shores",
+      "source_bounds": [
+        -82.876,
+        27.792,
+        -82.786,
+        27.862000000000002
+      ],
+      "x": 115.11940340372554,
+      "y": 425.0338768968178,
+      "tier": 2,
+      "price": "$672,000 median listing price \u00b7 September 2026",
+      "nearest_town_km": 1.3800174121612143
+    },
+    {
+      "id": "north-redington-beach",
+      "name": "North Redington Beach",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.8206587,
+      "lat": 27.8161361,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "A compact beach resort strip with white condos, small hotels and sheltered residential waterfront streets.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.visitstpeteclearwater.com/communities/north-redington-beach-redington-shores",
+      "source_bounds": [
+        -82.867,
+        27.781,
+        -82.777,
+        27.851
+      ],
+      "x": 115.94925809825943,
+      "y": 423.93124856241485,
+      "tier": 2,
+      "price": "$1,190,000 median listing price \u00b7 September 2026",
+      "nearest_town_km": 1.2473964485036975
+    },
+    {
+      "id": "redington-beach",
+      "name": "Redington Beach",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.811214,
+      "lat": 27.8086364,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Low residential beach streets and waterfront homes between the Gulf sand and Boca Ciega Bay.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://townofredingtonbeach.com/",
+      "source_bounds": [
+        -82.857,
+        27.774,
+        -82.767,
+        27.844
+      ],
+      "x": 116.88583261019897,
+      "y": 423.1073395362931,
+      "tier": 2,
+      "price": "$1,249,000 median listing price \u00b7 September 2026",
+      "nearest_town_km": 1.2473964485036975
+    },
+    {
+      "id": "tierra-verde",
+      "name": "Tierra Verde",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.7234337,
+      "lat": 27.6919746,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Island canal homes, marinas and low condominiums along the Pinellas Bayway toward Fort De Soto.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.visitstpeteclearwater.com/communities/tierra-verde",
+      "source_bounds": [
+        -82.765,
+        27.65,
+        -82.675,
+        27.72
+      ],
+      "x": 125.6505330259468,
+      "y": 410.23879828002123,
+      "tier": 2,
+      "price": "$862,000 median listing price \u00b7 September 2026",
+      "nearest_town_km": 4.054545344000282
+    },
+    {
+      "id": "holiday",
+      "name": "Holiday",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.740074,
+      "lat": 28.1879273,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Low bungalow neighborhoods and lake streets giving way to mangroves, tidal creeks and Gulf waterfront parks.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://flsportscoast.com/",
+      "source_bounds": [
+        -82.784,
+        28.153,
+        -82.694,
+        28.223
+      ],
+      "x": 123.44998090384118,
+      "y": 465.29681291305263,
+      "tier": 2,
+      "price": "$250,000 median listing price \u00b7 September 2026",
+      "nearest_town_km": 4.9429490035931964
+    },
+    {
+      "id": "port-richey",
+      "name": "Port Richey",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.7195451,
+      "lat": 28.2716755,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "A working river-mouth waterfront of fishing docks, marinas and low homes where the Pithlachascotee meets the Gulf.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://flsportscoast.com/",
+      "source_bounds": [
+        -82.765,
+        28.237,
+        -82.675,
+        28.307
+      ],
+      "x": 125.36479578477307,
+      "y": 474.6178367831701,
+      "tier": 2,
+      "price": "$259,900 median listing price \u00b7 September 2026",
+      "nearest_town_km": 3.0740172645730373
+    },
+    {
+      "id": "hudson",
+      "name": "Hudson",
+      "region": "Gulf Coast \u00b7 St. Pete and Clearwater",
+      "coast": "gulf",
+      "lon": -82.6932847,
+      "lat": 28.3617709,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Hudson Beach, canal neighborhoods and working marinas beside broad Gulf marsh.",
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://flsportscoast.com/",
+      "source_bounds": [
+        -82.739,
+        28.329,
+        -82.649,
+        28.399
+      ],
+      "x": 127.82973844621903,
+      "y": 484.6499575160206,
+      "tier": 2,
+      "price": "$339,000 median listing price \u00b7 September 2026",
+      "nearest_town_km": 10.330507670134375
+    },
+    {
+      "id": "gibsonton",
+      "name": "Gibsonton",
+      "region": "Gulf Coast \u00b7 Tampa area",
+      "coast": "gulf",
+      "lon": -82.3817515,
+      "lat": 27.8497857,
+      "vibes": [
+        "dock"
+      ],
+      "blurb": "Low riverfront homes, boat ramps and working yards along the Alafia River and eastern Tampa Bay.",
+      "area_id": "tampa-south-shore",
+      "area_name": "Tampa and the South Shore",
+      "source_url": "https://hcfl.gov/locations/williams-boat-ramp",
+      "source_bounds": [
+        -82.427,
+        27.818,
+        -82.337,
+        27.888
+      ],
+      "x": 159.05010333529492,
+      "y": 428.1573091870743,
+      "tier": 2,
+      "price": "$326,250 median listing price \u00b7 August 2026",
+      "nearest_town_km": 8.803035686856429
     }
   ],
   "regions": [
@@ -4919,18 +5231,29 @@
       "hpos": "center 50%",
       "text": "A narrow peninsula between the Gulf and Tampa Bay that packs in a walkable waterfront city, a string of barrier island beach towns and a few small bayside downtowns. Tampa's airport is close to all of it.",
       "towns": [
+        "hudson",
+        "port-richey",
         "new-port-richey",
+        "holiday",
         "tarpon-springs",
+        "palm-harbor",
+        "oldsmar",
         "dunedin",
         "safety-harbor",
-        "clearwater",
         "clearwaterbeach",
+        "clearwater",
+        "belleair-beach",
         "indian-rocks-beach",
+        "indian-shores",
+        "redington-shores",
+        "north-redington-beach",
+        "redington-beach",
         "madeira-beach",
         "treasure-island",
-        "st-pete-beach",
+        "st-petersburg",
         "gulfport",
-        "st-petersburg"
+        "st-pete-beach",
+        "tierra-verde"
       ],
       "center": [
         122.24598020586825,
@@ -4951,6 +5274,7 @@
       "text": "The east side of Tampa Bay is the big city and the canal communities south of it. You trade Gulf beaches for jobs, pro sports, a major airport and boating on the bay.",
       "towns": [
         "tampa",
+        "gibsonton",
         "apollo-beach",
         "ruskin",
         "sun-city-center"

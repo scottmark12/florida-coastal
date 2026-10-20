@@ -21512,6 +21512,3504 @@
       "close_render_url": "../explore_coast.html?view=aripeka&level=town&district=aripeka-center&landing=1&cx=130.3400213373642&cy=492.58389927183316&span=1.6",
       "close_mobile_render_url": "../explore_coast.html?view=aripeka&level=town&district=aripeka-center&landing=1&cx=130.3400213373642&cy=492.58389927183316&span=0.8",
       "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "oldsmar",
+      "name": "Oldsmar",
+      "desktop": "oldsmar.webp",
+      "mobile": "oldsmar-m.webp",
+      "center": {
+        "x": 130.5604578173398,
+        "y": 448.0169717406092,
+        "lon": -82.66941307624445,
+        "lat": 28.031668
+      },
+      "districts": [
+        {
+          "id": "oldsmar-center",
+          "name": "Oldsmar",
+          "lon": -82.6650992,
+          "lat": 28.0341847
+        }
+      ],
+      "district": "oldsmar-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -82.66941307624445,
+        "lat": 28.031668,
+        "reason": "R.E. Olds Park puts Old Tampa Bay, the park edge and the small residential center together.",
+        "source": "https://www.openstreetmap.org/way/179005590"
+      },
+      "callouts": [
+        {
+          "name": "R.E. Olds Park",
+          "type": "park",
+          "lon": -82.66941307624445,
+          "lat": 28.031668
+        },
+        {
+          "name": "Veterans Memorial Park",
+          "type": "park",
+          "lon": -82.66475678112812,
+          "lat": 28.0292526
+        },
+        {
+          "name": "Bicentennial Park",
+          "type": "park",
+          "lon": -82.65825576798275,
+          "lat": 28.0287645
+        },
+        {
+          "name": "Richard B. Rogers Park",
+          "type": "park",
+          "lon": -82.66982005811559,
+          "lat": 28.043786349999998
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "R.E. Olds Park",
+          "type": "park",
+          "lon": -82.66941307624445,
+          "lat": 28.031668
+        },
+        {
+          "name": "Veterans Memorial Park",
+          "type": "park",
+          "lon": -82.66475678112812,
+          "lat": 28.0292526
+        }
+      ],
+      "close_desktop": "oldsmar-close.webp",
+      "close_mobile": "oldsmar-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "oldsmar.webp",
+          "mobile": "oldsmar-m.webp",
+          "span": 5.5,
+          "camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -2.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              130.5604578173398,
+              4.296875,
+              -443.7200967406092
+            ],
+            "projection": "orthographic",
+            "right": 2.75,
+            "target": [
+              130.5604578173398,
+              0,
+              -448.0169717406092
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "mobile_camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -1.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              130.5604578173398,
+              4.296875,
+              -443.7200967406092
+            ],
+            "projection": "orthographic",
+            "right": 1.375,
+            "target": [
+              130.5604578173398,
+              0,
+              -448.0169717406092
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "callouts": [
+            {
+              "name": "R.E. Olds Park",
+              "type": "park",
+              "lon": -82.66941307624445,
+              "lat": 28.031668
+            },
+            {
+              "name": "Veterans Memorial Park",
+              "type": "park",
+              "lon": -82.66475678112812,
+              "lat": 28.0292526
+            },
+            {
+              "name": "Bicentennial Park",
+              "type": "park",
+              "lon": -82.65825576798275,
+              "lat": 28.0287645
+            },
+            {
+              "name": "Richard B. Rogers Park",
+              "type": "park",
+              "lon": -82.66982005811559,
+              "lat": 28.043786349999998
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "R.E. Olds Park",
+              "type": "park",
+              "lon": -82.66941307624445,
+              "lat": 28.031668
+            },
+            {
+              "name": "Veterans Memorial Park",
+              "type": "park",
+              "lon": -82.66475678112812,
+              "lat": 28.0292526
+            },
+            {
+              "name": "Bicentennial Park",
+              "type": "park",
+              "lon": -82.65825576798275,
+              "lat": 28.0287645
+            },
+            {
+              "name": "Richard B. Rogers Park",
+              "type": "park",
+              "lon": -82.66982005811559,
+              "lat": 28.043786349999998
+            }
+          ],
+          "render_url": "../explore_coast.html?view=oldsmar&level=town&district=oldsmar-center&landing=1&cx=130.5604578173398&cy=448.0169717406092&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=oldsmar&level=town&district=oldsmar-center&landing=1&cx=130.5604578173398&cy=448.0169717406092&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "oldsmar-close.webp",
+          "mobile": "oldsmar-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -1.1,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              130.5604578173398,
+              1.71875,
+              -446.2982217406092
+            ],
+            "projection": "orthographic",
+            "right": 1.1,
+            "target": [
+              130.5604578173398,
+              0,
+              -448.0169717406092
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "mobile_camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -0.55,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              130.5604578173398,
+              1.71875,
+              -446.2982217406092
+            ],
+            "projection": "orthographic",
+            "right": 0.55,
+            "target": [
+              130.5604578173398,
+              0,
+              -448.0169717406092
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "callouts": [
+            {
+              "name": "R.E. Olds Park",
+              "type": "park",
+              "lon": -82.66941307624445,
+              "lat": 28.031668
+            },
+            {
+              "name": "Veterans Memorial Park",
+              "type": "park",
+              "lon": -82.66475678112812,
+              "lat": 28.0292526
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "R.E. Olds Park",
+              "type": "park",
+              "lon": -82.66941307624445,
+              "lat": 28.031668
+            },
+            {
+              "name": "Veterans Memorial Park",
+              "type": "park",
+              "lon": -82.66475678112812,
+              "lat": 28.0292526
+            }
+          ],
+          "render_url": "../explore_coast.html?view=oldsmar&level=town&district=oldsmar-center&landing=1&cx=130.5604578173398&cy=448.0169717406092&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=oldsmar&level=town&district=oldsmar-center&landing=1&cx=130.5604578173398&cy=448.0169717406092&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -2.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          130.5604578173398,
+          4.296875,
+          -443.7200967406092
+        ],
+        "projection": "orthographic",
+        "right": 2.75,
+        "target": [
+          130.5604578173398,
+          0,
+          -448.0169717406092
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "mobile_camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -1.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          130.5604578173398,
+          4.296875,
+          -443.7200967406092
+        ],
+        "projection": "orthographic",
+        "right": 1.375,
+        "target": [
+          130.5604578173398,
+          0,
+          -448.0169717406092
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "render_url": "../explore_coast.html?view=oldsmar&level=town&district=oldsmar-center&landing=1&cx=130.5604578173398&cy=448.0169717406092&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=oldsmar&level=town&district=oldsmar-center&landing=1&cx=130.5604578173398&cy=448.0169717406092&span=2.75",
+      "close_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -1.1,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          130.5604578173398,
+          1.71875,
+          -446.2982217406092
+        ],
+        "projection": "orthographic",
+        "right": 1.1,
+        "target": [
+          130.5604578173398,
+          0,
+          -448.0169717406092
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -0.55,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          130.5604578173398,
+          1.71875,
+          -446.2982217406092
+        ],
+        "projection": "orthographic",
+        "right": 0.55,
+        "target": [
+          130.5604578173398,
+          0,
+          -448.0169717406092
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_render_url": "../explore_coast.html?view=oldsmar&level=town&district=oldsmar-center&landing=1&cx=130.5604578173398&cy=448.0169717406092&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=oldsmar&level=town&district=oldsmar-center&landing=1&cx=130.5604578173398&cy=448.0169717406092&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "palm-harbor",
+      "name": "Palm Harbor",
+      "desktop": "palm-harbor.webp",
+      "mobile": "palm-harbor-m.webp",
+      "center": {
+        "x": 120.55360524328151,
+        "y": 453.14586098656605,
+        "lon": -82.770868366126,
+        "lat": 28.07878365
+      },
+      "districts": [
+        {
+          "id": "palm-harbor-center",
+          "name": "Palm Harbor",
+          "lon": -82.7637127,
+          "lat": 28.0780718
+        }
+      ],
+      "district": "palm-harbor-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -82.770868366126,
+        "lat": 28.07878365,
+        "reason": "Pop Stansell Park frames the Ozona waterfront with historic Palm Harbor streets inland.",
+        "source": "https://www.openstreetmap.org/way/597466837"
+      },
+      "callouts": [
+        {
+          "name": "Pop Stansell Park",
+          "type": "park",
+          "lon": -82.770868366126,
+          "lat": 28.07878365
+        },
+        {
+          "name": "Gulf Shore Park",
+          "type": "park",
+          "lon": -82.78191009866335,
+          "lat": 28.0901269
+        },
+        {
+          "name": "Live Oak Park",
+          "type": "park",
+          "lon": -82.78039016957713,
+          "lat": 28.09227745
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Pop Stansell Park",
+          "type": "park",
+          "lon": -82.770868366126,
+          "lat": 28.07878365
+        }
+      ],
+      "close_desktop": "palm-harbor-close.webp",
+      "close_mobile": "palm-harbor-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "palm-harbor.webp",
+          "mobile": "palm-harbor-m.webp",
+          "span": 5.5,
+          "camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -2.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              120.55360524328152,
+              4.296875,
+              -448.8489859865661
+            ],
+            "projection": "orthographic",
+            "right": 2.75,
+            "target": [
+              120.55360524328152,
+              0,
+              -453.1458609865661
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "mobile_camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -1.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              120.55360524328152,
+              4.296875,
+              -448.8489859865661
+            ],
+            "projection": "orthographic",
+            "right": 1.375,
+            "target": [
+              120.55360524328152,
+              0,
+              -453.1458609865661
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "callouts": [
+            {
+              "name": "Pop Stansell Park",
+              "type": "park",
+              "lon": -82.770868366126,
+              "lat": 28.07878365
+            },
+            {
+              "name": "Gulf Shore Park",
+              "type": "park",
+              "lon": -82.78191009866335,
+              "lat": 28.0901269
+            },
+            {
+              "name": "Live Oak Park",
+              "type": "park",
+              "lon": -82.78039016957713,
+              "lat": 28.09227745
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Pop Stansell Park",
+              "type": "park",
+              "lon": -82.770868366126,
+              "lat": 28.07878365
+            },
+            {
+              "name": "Gulf Shore Park",
+              "type": "park",
+              "lon": -82.78191009866335,
+              "lat": 28.0901269
+            },
+            {
+              "name": "Live Oak Park",
+              "type": "park",
+              "lon": -82.78039016957713,
+              "lat": 28.09227745
+            }
+          ],
+          "render_url": "../explore_coast.html?view=palm-harbor&level=town&district=palm-harbor-center&landing=1&cx=120.55360524328151&cy=453.14586098656605&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=palm-harbor&level=town&district=palm-harbor-center&landing=1&cx=120.55360524328151&cy=453.14586098656605&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "palm-harbor-close.webp",
+          "mobile": "palm-harbor-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -1.1,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              120.55360524328152,
+              1.71875,
+              -451.4271109865661
+            ],
+            "projection": "orthographic",
+            "right": 1.1,
+            "target": [
+              120.55360524328152,
+              0,
+              -453.1458609865661
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "mobile_camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -0.55,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              120.55360524328152,
+              1.71875,
+              -451.4271109865661
+            ],
+            "projection": "orthographic",
+            "right": 0.55,
+            "target": [
+              120.55360524328152,
+              0,
+              -453.1458609865661
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "callouts": [
+            {
+              "name": "Pop Stansell Park",
+              "type": "park",
+              "lon": -82.770868366126,
+              "lat": 28.07878365
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Pop Stansell Park",
+              "type": "park",
+              "lon": -82.770868366126,
+              "lat": 28.07878365
+            }
+          ],
+          "render_url": "../explore_coast.html?view=palm-harbor&level=town&district=palm-harbor-center&landing=1&cx=120.55360524328151&cy=453.14586098656605&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=palm-harbor&level=town&district=palm-harbor-center&landing=1&cx=120.55360524328151&cy=453.14586098656605&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -2.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          120.55360524328152,
+          4.296875,
+          -448.8489859865661
+        ],
+        "projection": "orthographic",
+        "right": 2.75,
+        "target": [
+          120.55360524328152,
+          0,
+          -453.1458609865661
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "mobile_camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -1.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          120.55360524328152,
+          4.296875,
+          -448.8489859865661
+        ],
+        "projection": "orthographic",
+        "right": 1.375,
+        "target": [
+          120.55360524328152,
+          0,
+          -453.1458609865661
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "render_url": "../explore_coast.html?view=palm-harbor&level=town&district=palm-harbor-center&landing=1&cx=120.55360524328151&cy=453.14586098656605&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=palm-harbor&level=town&district=palm-harbor-center&landing=1&cx=120.55360524328151&cy=453.14586098656605&span=2.75",
+      "close_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -1.1,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          120.55360524328152,
+          1.71875,
+          -451.4271109865661
+        ],
+        "projection": "orthographic",
+        "right": 1.1,
+        "target": [
+          120.55360524328152,
+          0,
+          -453.1458609865661
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -0.55,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          120.55360524328152,
+          1.71875,
+          -451.4271109865661
+        ],
+        "projection": "orthographic",
+        "right": 0.55,
+        "target": [
+          120.55360524328152,
+          0,
+          -453.1458609865661
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_render_url": "../explore_coast.html?view=palm-harbor&level=town&district=palm-harbor-center&landing=1&cx=120.55360524328151&cy=453.14586098656605&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=palm-harbor&level=town&district=palm-harbor-center&landing=1&cx=120.55360524328151&cy=453.14586098656605&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "belleair-beach",
+      "name": "Belleair Beach",
+      "desktop": "belleair-beach.webp",
+      "mobile": "belleair-beach-m.webp",
+      "center": {
+        "x": 113.8347686458046,
+        "y": 435.04925064352943,
+        "lon": -82.84110157023768,
+        "lat": 27.9164258
+      },
+      "districts": [
+        {
+          "id": "belleair-beach-center",
+          "name": "Belleair Beach",
+          "lon": -82.8431594,
+          "lat": 27.9230767
+        }
+      ],
+      "district": "belleair-beach-center",
+      "span": 4,
+      "close_span": 1.5,
+      "hero": {
+        "lon": -82.84110157023768,
+        "lat": 27.9164258,
+        "reason": "Bayside Park shows the residential island between the Intracoastal and the Gulf beach.",
+        "source": "https://www.openstreetmap.org/way/32122198"
+      },
+      "callouts": [
+        {
+          "name": "Bayside Park",
+          "type": "park",
+          "lon": -82.84110157023768,
+          "lat": 27.9164258
+        },
+        {
+          "name": "Brown Park",
+          "type": "park",
+          "lon": -82.84441122690987,
+          "lat": 27.9094866
+        },
+        {
+          "name": "Harbor Bluffs Park",
+          "type": "park",
+          "lon": -82.82543734024631,
+          "lat": 27.9111
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Bayside Park",
+          "type": "park",
+          "lon": -82.84110157023768,
+          "lat": 27.9164258
+        }
+      ],
+      "close_desktop": "belleair-beach-close.webp",
+      "close_mobile": "belleair-beach-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "belleair-beach.webp",
+          "mobile": "belleair-beach-m.webp",
+          "span": 4,
+          "camera": {
+            "bottom": -1.25,
+            "far": 3500,
+            "left": -2,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              113.8347686458046,
+              3.125,
+              -431.92425064352943
+            ],
+            "projection": "orthographic",
+            "right": 2,
+            "target": [
+              113.8347686458046,
+              0,
+              -435.04925064352943
+            ],
+            "tiltDegrees": 45,
+            "top": 1.25
+          },
+          "mobile_camera": {
+            "bottom": -1.25,
+            "far": 3500,
+            "left": -1.0,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              113.8347686458046,
+              3.125,
+              -431.92425064352943
+            ],
+            "projection": "orthographic",
+            "right": 1.0,
+            "target": [
+              113.8347686458046,
+              0,
+              -435.04925064352943
+            ],
+            "tiltDegrees": 45,
+            "top": 1.25
+          },
+          "callouts": [
+            {
+              "name": "Bayside Park",
+              "type": "park",
+              "lon": -82.84110157023768,
+              "lat": 27.9164258
+            },
+            {
+              "name": "Brown Park",
+              "type": "park",
+              "lon": -82.84441122690987,
+              "lat": 27.9094866
+            },
+            {
+              "name": "Harbor Bluffs Park",
+              "type": "park",
+              "lon": -82.82543734024631,
+              "lat": 27.9111
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Bayside Park",
+              "type": "park",
+              "lon": -82.84110157023768,
+              "lat": 27.9164258
+            },
+            {
+              "name": "Brown Park",
+              "type": "park",
+              "lon": -82.84441122690987,
+              "lat": 27.9094866
+            }
+          ],
+          "render_url": "../explore_coast.html?view=belleair-beach&level=town&district=belleair-beach-center&landing=1&cx=113.8347686458046&cy=435.04925064352943&span=4",
+          "mobile_render_url": "../explore_coast.html?view=belleair-beach&level=town&district=belleair-beach-center&landing=1&cx=113.8347686458046&cy=435.04925064352943&span=2.0",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "belleair-beach-close.webp",
+          "mobile": "belleair-beach-close-m.webp",
+          "span": 1.5,
+          "camera": {
+            "bottom": -0.46875,
+            "far": 3500,
+            "left": -0.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              113.8347686458046,
+              1.171875,
+              -433.87737564352943
+            ],
+            "projection": "orthographic",
+            "right": 0.75,
+            "target": [
+              113.8347686458046,
+              0,
+              -435.04925064352943
+            ],
+            "tiltDegrees": 45,
+            "top": 0.46875
+          },
+          "mobile_camera": {
+            "bottom": -0.46875,
+            "far": 3500,
+            "left": -0.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              113.8347686458046,
+              1.171875,
+              -433.87737564352943
+            ],
+            "projection": "orthographic",
+            "right": 0.375,
+            "target": [
+              113.8347686458046,
+              0,
+              -435.04925064352943
+            ],
+            "tiltDegrees": 45,
+            "top": 0.46875
+          },
+          "callouts": [
+            {
+              "name": "Bayside Park",
+              "type": "park",
+              "lon": -82.84110157023768,
+              "lat": 27.9164258
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Bayside Park",
+              "type": "park",
+              "lon": -82.84110157023768,
+              "lat": 27.9164258
+            }
+          ],
+          "render_url": "../explore_coast.html?view=belleair-beach&level=town&district=belleair-beach-center&landing=1&cx=113.8347686458046&cy=435.04925064352943&span=1.5",
+          "mobile_render_url": "../explore_coast.html?view=belleair-beach&level=town&district=belleair-beach-center&landing=1&cx=113.8347686458046&cy=435.04925064352943&span=0.75",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.25,
+        "far": 3500,
+        "left": -2,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          113.8347686458046,
+          3.125,
+          -431.92425064352943
+        ],
+        "projection": "orthographic",
+        "right": 2,
+        "target": [
+          113.8347686458046,
+          0,
+          -435.04925064352943
+        ],
+        "tiltDegrees": 45,
+        "top": 1.25
+      },
+      "mobile_camera": {
+        "bottom": -1.25,
+        "far": 3500,
+        "left": -1.0,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          113.8347686458046,
+          3.125,
+          -431.92425064352943
+        ],
+        "projection": "orthographic",
+        "right": 1.0,
+        "target": [
+          113.8347686458046,
+          0,
+          -435.04925064352943
+        ],
+        "tiltDegrees": 45,
+        "top": 1.25
+      },
+      "render_url": "../explore_coast.html?view=belleair-beach&level=town&district=belleair-beach-center&landing=1&cx=113.8347686458046&cy=435.04925064352943&span=4",
+      "mobile_render_url": "../explore_coast.html?view=belleair-beach&level=town&district=belleair-beach-center&landing=1&cx=113.8347686458046&cy=435.04925064352943&span=2.0",
+      "close_camera": {
+        "bottom": -0.46875,
+        "far": 3500,
+        "left": -0.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          113.8347686458046,
+          1.171875,
+          -433.87737564352943
+        ],
+        "projection": "orthographic",
+        "right": 0.75,
+        "target": [
+          113.8347686458046,
+          0,
+          -435.04925064352943
+        ],
+        "tiltDegrees": 45,
+        "top": 0.46875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.46875,
+        "far": 3500,
+        "left": -0.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          113.8347686458046,
+          1.171875,
+          -433.87737564352943
+        ],
+        "projection": "orthographic",
+        "right": 0.375,
+        "target": [
+          113.8347686458046,
+          0,
+          -435.04925064352943
+        ],
+        "tiltDegrees": 45,
+        "top": 0.46875
+      },
+      "close_render_url": "../explore_coast.html?view=belleair-beach&level=town&district=belleair-beach-center&landing=1&cx=113.8347686458046&cy=435.04925064352943&span=1.5",
+      "close_mobile_render_url": "../explore_coast.html?view=belleair-beach&level=town&district=belleair-beach-center&landing=1&cx=113.8347686458046&cy=435.04925064352943&span=0.75",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "indian-shores",
+      "name": "Indian Shores",
+      "desktop": "indian-shores.webp",
+      "mobile": "indian-shores-m.webp",
+      "center": {
+        "x": 113.53497466273747,
+        "y": 428.15462542257745,
+        "lon": -82.84481097114428,
+        "lat": 27.85437035
+      },
+      "districts": [
+        {
+          "id": "indian-shores-center",
+          "name": "Indian Shores",
+          "lon": -82.8484373,
+          "lat": 27.862801
+        }
+      ],
+      "district": "indian-shores-center",
+      "span": 4,
+      "close_span": 1.5,
+      "hero": {
+        "lon": -82.84481097114428,
+        "lat": 27.85437035,
+        "reason": "Tiki Gardens anchors the narrow beach-and-Intracoastal strip around Gulf Boulevard.",
+        "source": "https://www.openstreetmap.org/way/227084349"
+      },
+      "callouts": [
+        {
+          "name": "Tiki Gardens",
+          "type": "park",
+          "lon": -82.84481097114428,
+          "lat": 27.85437035
+        },
+        {
+          "name": "Town Square Nature Park",
+          "type": "park",
+          "lon": -82.84048046651925,
+          "lat": 27.844582350000003
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Tiki Gardens",
+          "type": "park",
+          "lon": -82.84481097114428,
+          "lat": 27.85437035
+        }
+      ],
+      "close_desktop": "indian-shores-close.webp",
+      "close_mobile": "indian-shores-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "indian-shores.webp",
+          "mobile": "indian-shores-m.webp",
+          "span": 4,
+          "camera": {
+            "bottom": -1.25,
+            "far": 3500,
+            "left": -2,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              113.53497466273748,
+              3.125,
+              -425.02962542257745
+            ],
+            "projection": "orthographic",
+            "right": 2,
+            "target": [
+              113.53497466273748,
+              0,
+              -428.15462542257745
+            ],
+            "tiltDegrees": 45,
+            "top": 1.25
+          },
+          "mobile_camera": {
+            "bottom": -1.25,
+            "far": 3500,
+            "left": -1.0,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              113.53497466273748,
+              3.125,
+              -425.02962542257745
+            ],
+            "projection": "orthographic",
+            "right": 1.0,
+            "target": [
+              113.53497466273748,
+              0,
+              -428.15462542257745
+            ],
+            "tiltDegrees": 45,
+            "top": 1.25
+          },
+          "callouts": [
+            {
+              "name": "Tiki Gardens",
+              "type": "park",
+              "lon": -82.84481097114428,
+              "lat": 27.85437035
+            },
+            {
+              "name": "Town Square Nature Park",
+              "type": "park",
+              "lon": -82.84048046651925,
+              "lat": 27.844582350000003
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Tiki Gardens",
+              "type": "park",
+              "lon": -82.84481097114428,
+              "lat": 27.85437035
+            },
+            {
+              "name": "Town Square Nature Park",
+              "type": "park",
+              "lon": -82.84048046651925,
+              "lat": 27.844582350000003
+            }
+          ],
+          "render_url": "../explore_coast.html?view=indian-shores&level=town&district=indian-shores-center&landing=1&cx=113.53497466273747&cy=428.15462542257745&span=4",
+          "mobile_render_url": "../explore_coast.html?view=indian-shores&level=town&district=indian-shores-center&landing=1&cx=113.53497466273747&cy=428.15462542257745&span=2.0",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "indian-shores-close.webp",
+          "mobile": "indian-shores-close-m.webp",
+          "span": 1.5,
+          "camera": {
+            "bottom": -0.46875,
+            "far": 3500,
+            "left": -0.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              113.53497466273748,
+              1.171875,
+              -426.98275042257745
+            ],
+            "projection": "orthographic",
+            "right": 0.75,
+            "target": [
+              113.53497466273748,
+              0,
+              -428.15462542257745
+            ],
+            "tiltDegrees": 45,
+            "top": 0.46875
+          },
+          "mobile_camera": {
+            "bottom": -0.46875,
+            "far": 3500,
+            "left": -0.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              113.53497466273748,
+              1.171875,
+              -426.98275042257745
+            ],
+            "projection": "orthographic",
+            "right": 0.375,
+            "target": [
+              113.53497466273748,
+              0,
+              -428.15462542257745
+            ],
+            "tiltDegrees": 45,
+            "top": 0.46875
+          },
+          "callouts": [
+            {
+              "name": "Tiki Gardens",
+              "type": "park",
+              "lon": -82.84481097114428,
+              "lat": 27.85437035
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Tiki Gardens",
+              "type": "park",
+              "lon": -82.84481097114428,
+              "lat": 27.85437035
+            }
+          ],
+          "render_url": "../explore_coast.html?view=indian-shores&level=town&district=indian-shores-center&landing=1&cx=113.53497466273747&cy=428.15462542257745&span=1.5",
+          "mobile_render_url": "../explore_coast.html?view=indian-shores&level=town&district=indian-shores-center&landing=1&cx=113.53497466273747&cy=428.15462542257745&span=0.75",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.25,
+        "far": 3500,
+        "left": -2,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          113.53497466273748,
+          3.125,
+          -425.02962542257745
+        ],
+        "projection": "orthographic",
+        "right": 2,
+        "target": [
+          113.53497466273748,
+          0,
+          -428.15462542257745
+        ],
+        "tiltDegrees": 45,
+        "top": 1.25
+      },
+      "mobile_camera": {
+        "bottom": -1.25,
+        "far": 3500,
+        "left": -1.0,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          113.53497466273748,
+          3.125,
+          -425.02962542257745
+        ],
+        "projection": "orthographic",
+        "right": 1.0,
+        "target": [
+          113.53497466273748,
+          0,
+          -428.15462542257745
+        ],
+        "tiltDegrees": 45,
+        "top": 1.25
+      },
+      "render_url": "../explore_coast.html?view=indian-shores&level=town&district=indian-shores-center&landing=1&cx=113.53497466273747&cy=428.15462542257745&span=4",
+      "mobile_render_url": "../explore_coast.html?view=indian-shores&level=town&district=indian-shores-center&landing=1&cx=113.53497466273747&cy=428.15462542257745&span=2.0",
+      "close_camera": {
+        "bottom": -0.46875,
+        "far": 3500,
+        "left": -0.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          113.53497466273748,
+          1.171875,
+          -426.98275042257745
+        ],
+        "projection": "orthographic",
+        "right": 0.75,
+        "target": [
+          113.53497466273748,
+          0,
+          -428.15462542257745
+        ],
+        "tiltDegrees": 45,
+        "top": 0.46875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.46875,
+        "far": 3500,
+        "left": -0.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          113.53497466273748,
+          1.171875,
+          -426.98275042257745
+        ],
+        "projection": "orthographic",
+        "right": 0.375,
+        "target": [
+          113.53497466273748,
+          0,
+          -428.15462542257745
+        ],
+        "tiltDegrees": 45,
+        "top": 0.46875
+      },
+      "close_render_url": "../explore_coast.html?view=indian-shores&level=town&district=indian-shores-center&landing=1&cx=113.53497466273747&cy=428.15462542257745&span=1.5",
+      "close_mobile_render_url": "../explore_coast.html?view=indian-shores&level=town&district=indian-shores-center&landing=1&cx=113.53497466273747&cy=428.15462542257745&span=0.75",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "redington-shores",
+      "name": "Redington Shores",
+      "desktop": "redington-shores.webp",
+      "mobile": "redington-shores-m.webp",
+      "center": {
+        "x": 114.53495193754456,
+        "y": 425.9490021840943,
+        "lon": -82.83484909998678,
+        "lat": 27.8344256
+      },
+      "districts": [
+        {
+          "id": "redington-shores-center",
+          "name": "Redington Shores",
+          "lon": -82.8289923,
+          "lat": 27.8261357
+        }
+      ],
+      "district": "redington-shores-center",
+      "span": 4,
+      "close_span": 1.5,
+      "hero": {
+        "lon": -82.83484909998678,
+        "lat": 27.8344256,
+        "reason": "Constitution Park anchors the local beach neighborhood beside Gulf Boulevard.",
+        "source": "https://www.openstreetmap.org/way/218887857"
+      },
+      "callouts": [
+        {
+          "name": "Constitution Park",
+          "type": "park",
+          "lon": -82.83484909998678,
+          "lat": 27.8344256
+        },
+        {
+          "name": "Del Bello Park",
+          "type": "park",
+          "lon": -82.83137792200361,
+          "lat": 27.83094825
+        },
+        {
+          "name": "Town Square Nature Park",
+          "type": "park",
+          "lon": -82.84048046651925,
+          "lat": 27.844582350000003
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Constitution Park",
+          "type": "park",
+          "lon": -82.83484909998678,
+          "lat": 27.8344256
+        },
+        {
+          "name": "Del Bello Park",
+          "type": "park",
+          "lon": -82.83137792200361,
+          "lat": 27.83094825
+        }
+      ],
+      "close_desktop": "redington-shores-close.webp",
+      "close_mobile": "redington-shores-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "redington-shores.webp",
+          "mobile": "redington-shores-m.webp",
+          "span": 4,
+          "camera": {
+            "bottom": -1.25,
+            "far": 3500,
+            "left": -2,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              114.53495193754456,
+              3.125,
+              -422.8240021840943
+            ],
+            "projection": "orthographic",
+            "right": 2,
+            "target": [
+              114.53495193754456,
+              0,
+              -425.9490021840943
+            ],
+            "tiltDegrees": 45,
+            "top": 1.25
+          },
+          "mobile_camera": {
+            "bottom": -1.25,
+            "far": 3500,
+            "left": -1.0,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              114.53495193754456,
+              3.125,
+              -422.8240021840943
+            ],
+            "projection": "orthographic",
+            "right": 1.0,
+            "target": [
+              114.53495193754456,
+              0,
+              -425.9490021840943
+            ],
+            "tiltDegrees": 45,
+            "top": 1.25
+          },
+          "callouts": [
+            {
+              "name": "Constitution Park",
+              "type": "park",
+              "lon": -82.83484909998678,
+              "lat": 27.8344256
+            },
+            {
+              "name": "Del Bello Park",
+              "type": "park",
+              "lon": -82.83137792200361,
+              "lat": 27.83094825
+            },
+            {
+              "name": "Town Square Nature Park",
+              "type": "park",
+              "lon": -82.84048046651925,
+              "lat": 27.844582350000003
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Constitution Park",
+              "type": "park",
+              "lon": -82.83484909998678,
+              "lat": 27.8344256
+            },
+            {
+              "name": "Del Bello Park",
+              "type": "park",
+              "lon": -82.83137792200361,
+              "lat": 27.83094825
+            },
+            {
+              "name": "Town Square Nature Park",
+              "type": "park",
+              "lon": -82.84048046651925,
+              "lat": 27.844582350000003
+            }
+          ],
+          "render_url": "../explore_coast.html?view=redington-shores&level=town&district=redington-shores-center&landing=1&cx=114.53495193754456&cy=425.9490021840943&span=4",
+          "mobile_render_url": "../explore_coast.html?view=redington-shores&level=town&district=redington-shores-center&landing=1&cx=114.53495193754456&cy=425.9490021840943&span=2.0",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "redington-shores-close.webp",
+          "mobile": "redington-shores-close-m.webp",
+          "span": 1.5,
+          "camera": {
+            "bottom": -0.46875,
+            "far": 3500,
+            "left": -0.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              114.53495193754456,
+              1.171875,
+              -424.7771271840943
+            ],
+            "projection": "orthographic",
+            "right": 0.75,
+            "target": [
+              114.53495193754456,
+              0,
+              -425.9490021840943
+            ],
+            "tiltDegrees": 45,
+            "top": 0.46875
+          },
+          "mobile_camera": {
+            "bottom": -0.46875,
+            "far": 3500,
+            "left": -0.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              114.53495193754456,
+              1.171875,
+              -424.7771271840943
+            ],
+            "projection": "orthographic",
+            "right": 0.375,
+            "target": [
+              114.53495193754456,
+              0,
+              -425.9490021840943
+            ],
+            "tiltDegrees": 45,
+            "top": 0.46875
+          },
+          "callouts": [
+            {
+              "name": "Constitution Park",
+              "type": "park",
+              "lon": -82.83484909998678,
+              "lat": 27.8344256
+            },
+            {
+              "name": "Del Bello Park",
+              "type": "park",
+              "lon": -82.83137792200361,
+              "lat": 27.83094825
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Constitution Park",
+              "type": "park",
+              "lon": -82.83484909998678,
+              "lat": 27.8344256
+            },
+            {
+              "name": "Del Bello Park",
+              "type": "park",
+              "lon": -82.83137792200361,
+              "lat": 27.83094825
+            }
+          ],
+          "render_url": "../explore_coast.html?view=redington-shores&level=town&district=redington-shores-center&landing=1&cx=114.53495193754456&cy=425.9490021840943&span=1.5",
+          "mobile_render_url": "../explore_coast.html?view=redington-shores&level=town&district=redington-shores-center&landing=1&cx=114.53495193754456&cy=425.9490021840943&span=0.75",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.25,
+        "far": 3500,
+        "left": -2,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          114.53495193754456,
+          3.125,
+          -422.8240021840943
+        ],
+        "projection": "orthographic",
+        "right": 2,
+        "target": [
+          114.53495193754456,
+          0,
+          -425.9490021840943
+        ],
+        "tiltDegrees": 45,
+        "top": 1.25
+      },
+      "mobile_camera": {
+        "bottom": -1.25,
+        "far": 3500,
+        "left": -1.0,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          114.53495193754456,
+          3.125,
+          -422.8240021840943
+        ],
+        "projection": "orthographic",
+        "right": 1.0,
+        "target": [
+          114.53495193754456,
+          0,
+          -425.9490021840943
+        ],
+        "tiltDegrees": 45,
+        "top": 1.25
+      },
+      "render_url": "../explore_coast.html?view=redington-shores&level=town&district=redington-shores-center&landing=1&cx=114.53495193754456&cy=425.9490021840943&span=4",
+      "mobile_render_url": "../explore_coast.html?view=redington-shores&level=town&district=redington-shores-center&landing=1&cx=114.53495193754456&cy=425.9490021840943&span=2.0",
+      "close_camera": {
+        "bottom": -0.46875,
+        "far": 3500,
+        "left": -0.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          114.53495193754456,
+          1.171875,
+          -424.7771271840943
+        ],
+        "projection": "orthographic",
+        "right": 0.75,
+        "target": [
+          114.53495193754456,
+          0,
+          -425.9490021840943
+        ],
+        "tiltDegrees": 45,
+        "top": 0.46875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.46875,
+        "far": 3500,
+        "left": -0.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          114.53495193754456,
+          1.171875,
+          -424.7771271840943
+        ],
+        "projection": "orthographic",
+        "right": 0.375,
+        "target": [
+          114.53495193754456,
+          0,
+          -425.9490021840943
+        ],
+        "tiltDegrees": 45,
+        "top": 0.46875
+      },
+      "close_render_url": "../explore_coast.html?view=redington-shores&level=town&district=redington-shores-center&landing=1&cx=114.53495193754456&cy=425.9490021840943&span=1.5",
+      "close_mobile_render_url": "../explore_coast.html?view=redington-shores&level=town&district=redington-shores-center&landing=1&cx=114.53495193754456&cy=425.9490021840943&span=0.75",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "north-redington-beach",
+      "name": "North Redington Beach",
+      "desktop": "north-redington-beach.webp",
+      "mobile": "north-redington-beach-m.webp",
+      "center": {
+        "x": 115.85934660633794,
+        "y": 423.9647695001625,
+        "lon": -82.82156989257871,
+        "lat": 27.816445672360516
+      },
+      "districts": [
+        {
+          "id": "north-redington-beach-center",
+          "name": "North Redington Beach",
+          "lon": -82.8206587,
+          "lat": 27.8161361
+        }
+      ],
+      "district": "north-redington-beach-center",
+      "span": 4,
+      "close_span": 1.5,
+      "hero": {
+        "lon": -82.82156989257871,
+        "lat": 27.816445672360516,
+        "reason": "Gulf Boulevard frames the beach resort strip and the bayfront neighborhood together.",
+        "source": "https://www.openstreetmap.org/way/800658167"
+      },
+      "callouts": [
+        {
+          "name": "Del Bello Park",
+          "type": "park",
+          "lon": -82.83137792200361,
+          "lat": 27.83094825
+        }
+      ],
+      "close_callouts": [],
+      "close_desktop": "north-redington-beach-close.webp",
+      "close_mobile": "north-redington-beach-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "north-redington-beach.webp",
+          "mobile": "north-redington-beach-m.webp",
+          "span": 4,
+          "camera": {
+            "bottom": -1.25,
+            "far": 3500,
+            "left": -2,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              115.85934660633794,
+              3.125,
+              -420.8397695001625
+            ],
+            "projection": "orthographic",
+            "right": 2,
+            "target": [
+              115.85934660633794,
+              0,
+              -423.9647695001625
+            ],
+            "tiltDegrees": 45,
+            "top": 1.25
+          },
+          "mobile_camera": {
+            "bottom": -1.25,
+            "far": 3500,
+            "left": -1.0,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              115.85934660633794,
+              3.125,
+              -420.8397695001625
+            ],
+            "projection": "orthographic",
+            "right": 1.0,
+            "target": [
+              115.85934660633794,
+              0,
+              -423.9647695001625
+            ],
+            "tiltDegrees": 45,
+            "top": 1.25
+          },
+          "callouts": [
+            {
+              "name": "Del Bello Park",
+              "type": "park",
+              "lon": -82.83137792200361,
+              "lat": 27.83094825
+            }
+          ],
+          "mobile_callouts": [],
+          "render_url": "../explore_coast.html?view=north-redington-beach&level=town&district=north-redington-beach-center&landing=1&cx=115.85934660633794&cy=423.9647695001625&span=4",
+          "mobile_render_url": "../explore_coast.html?view=north-redington-beach&level=town&district=north-redington-beach-center&landing=1&cx=115.85934660633794&cy=423.9647695001625&span=2.0",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "north-redington-beach-close.webp",
+          "mobile": "north-redington-beach-close-m.webp",
+          "span": 1.5,
+          "camera": {
+            "bottom": -0.46875,
+            "far": 3500,
+            "left": -0.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              115.85934660633794,
+              1.171875,
+              -422.7928945001625
+            ],
+            "projection": "orthographic",
+            "right": 0.75,
+            "target": [
+              115.85934660633794,
+              0,
+              -423.9647695001625
+            ],
+            "tiltDegrees": 45,
+            "top": 0.46875
+          },
+          "mobile_camera": {
+            "bottom": -0.46875,
+            "far": 3500,
+            "left": -0.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              115.85934660633794,
+              1.171875,
+              -422.7928945001625
+            ],
+            "projection": "orthographic",
+            "right": 0.375,
+            "target": [
+              115.85934660633794,
+              0,
+              -423.9647695001625
+            ],
+            "tiltDegrees": 45,
+            "top": 0.46875
+          },
+          "callouts": [],
+          "mobile_callouts": [],
+          "render_url": "../explore_coast.html?view=north-redington-beach&level=town&district=north-redington-beach-center&landing=1&cx=115.85934660633794&cy=423.9647695001625&span=1.5",
+          "mobile_render_url": "../explore_coast.html?view=north-redington-beach&level=town&district=north-redington-beach-center&landing=1&cx=115.85934660633794&cy=423.9647695001625&span=0.75",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.25,
+        "far": 3500,
+        "left": -2,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          115.85934660633794,
+          3.125,
+          -420.8397695001625
+        ],
+        "projection": "orthographic",
+        "right": 2,
+        "target": [
+          115.85934660633794,
+          0,
+          -423.9647695001625
+        ],
+        "tiltDegrees": 45,
+        "top": 1.25
+      },
+      "mobile_camera": {
+        "bottom": -1.25,
+        "far": 3500,
+        "left": -1.0,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          115.85934660633794,
+          3.125,
+          -420.8397695001625
+        ],
+        "projection": "orthographic",
+        "right": 1.0,
+        "target": [
+          115.85934660633794,
+          0,
+          -423.9647695001625
+        ],
+        "tiltDegrees": 45,
+        "top": 1.25
+      },
+      "render_url": "../explore_coast.html?view=north-redington-beach&level=town&district=north-redington-beach-center&landing=1&cx=115.85934660633794&cy=423.9647695001625&span=4",
+      "mobile_render_url": "../explore_coast.html?view=north-redington-beach&level=town&district=north-redington-beach-center&landing=1&cx=115.85934660633794&cy=423.9647695001625&span=2.0",
+      "close_camera": {
+        "bottom": -0.46875,
+        "far": 3500,
+        "left": -0.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          115.85934660633794,
+          1.171875,
+          -422.7928945001625
+        ],
+        "projection": "orthographic",
+        "right": 0.75,
+        "target": [
+          115.85934660633794,
+          0,
+          -423.9647695001625
+        ],
+        "tiltDegrees": 45,
+        "top": 0.46875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.46875,
+        "far": 3500,
+        "left": -0.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          115.85934660633794,
+          1.171875,
+          -422.7928945001625
+        ],
+        "projection": "orthographic",
+        "right": 0.375,
+        "target": [
+          115.85934660633794,
+          0,
+          -423.9647695001625
+        ],
+        "tiltDegrees": 45,
+        "top": 0.46875
+      },
+      "close_render_url": "../explore_coast.html?view=north-redington-beach&level=town&district=north-redington-beach-center&landing=1&cx=115.85934660633794&cy=423.9647695001625&span=1.5",
+      "close_mobile_render_url": "../explore_coast.html?view=north-redington-beach&level=town&district=north-redington-beach-center&landing=1&cx=115.85934660633794&cy=423.9647695001625&span=0.75",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "redington-beach",
+      "name": "Redington Beach",
+      "desktop": "redington-beach.webp",
+      "mobile": "redington-beach-m.webp",
+      "center": {
+        "x": 116.80487046208214,
+        "y": 423.1415517970719,
+        "lon": -82.8120340216517,
+        "lat": 27.808951483066252
+      },
+      "districts": [
+        {
+          "id": "redington-beach-center",
+          "name": "Redington Beach",
+          "lon": -82.811214,
+          "lat": 27.8086364
+        }
+      ],
+      "district": "redington-beach-center",
+      "span": 4,
+      "close_span": 1.5,
+      "hero": {
+        "lon": -82.8120340216517,
+        "lat": 27.808951483066252,
+        "reason": "Gulf Boulevard puts the low beach homes and Boca Ciega waterfront in the same frame.",
+        "source": "https://www.openstreetmap.org/way/576456566"
+      },
+      "callouts": [
+        {
+          "name": "Remember Our Children Park",
+          "type": "park",
+          "lon": -82.80019116918056,
+          "lat": 27.8056606
+        }
+      ],
+      "close_callouts": [],
+      "close_desktop": "redington-beach-close.webp",
+      "close_mobile": "redington-beach-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "redington-beach.webp",
+          "mobile": "redington-beach-m.webp",
+          "span": 4,
+          "camera": {
+            "bottom": -1.25,
+            "far": 3500,
+            "left": -2,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              116.80487046208214,
+              3.125,
+              -420.0165517970719
+            ],
+            "projection": "orthographic",
+            "right": 2,
+            "target": [
+              116.80487046208214,
+              0,
+              -423.1415517970719
+            ],
+            "tiltDegrees": 45,
+            "top": 1.25
+          },
+          "mobile_camera": {
+            "bottom": -1.25,
+            "far": 3500,
+            "left": -1.0,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              116.80487046208214,
+              3.125,
+              -420.0165517970719
+            ],
+            "projection": "orthographic",
+            "right": 1.0,
+            "target": [
+              116.80487046208214,
+              0,
+              -423.1415517970719
+            ],
+            "tiltDegrees": 45,
+            "top": 1.25
+          },
+          "callouts": [
+            {
+              "name": "Remember Our Children Park",
+              "type": "park",
+              "lon": -82.80019116918056,
+              "lat": 27.8056606
+            }
+          ],
+          "mobile_callouts": [],
+          "render_url": "../explore_coast.html?view=redington-beach&level=town&district=redington-beach-center&landing=1&cx=116.80487046208214&cy=423.1415517970719&span=4",
+          "mobile_render_url": "../explore_coast.html?view=redington-beach&level=town&district=redington-beach-center&landing=1&cx=116.80487046208214&cy=423.1415517970719&span=2.0",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "redington-beach-close.webp",
+          "mobile": "redington-beach-close-m.webp",
+          "span": 1.5,
+          "camera": {
+            "bottom": -0.46875,
+            "far": 3500,
+            "left": -0.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              116.80487046208214,
+              1.171875,
+              -421.9696767970719
+            ],
+            "projection": "orthographic",
+            "right": 0.75,
+            "target": [
+              116.80487046208214,
+              0,
+              -423.1415517970719
+            ],
+            "tiltDegrees": 45,
+            "top": 0.46875
+          },
+          "mobile_camera": {
+            "bottom": -0.46875,
+            "far": 3500,
+            "left": -0.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              116.80487046208214,
+              1.171875,
+              -421.9696767970719
+            ],
+            "projection": "orthographic",
+            "right": 0.375,
+            "target": [
+              116.80487046208214,
+              0,
+              -423.1415517970719
+            ],
+            "tiltDegrees": 45,
+            "top": 0.46875
+          },
+          "callouts": [],
+          "mobile_callouts": [],
+          "render_url": "../explore_coast.html?view=redington-beach&level=town&district=redington-beach-center&landing=1&cx=116.80487046208214&cy=423.1415517970719&span=1.5",
+          "mobile_render_url": "../explore_coast.html?view=redington-beach&level=town&district=redington-beach-center&landing=1&cx=116.80487046208214&cy=423.1415517970719&span=0.75",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.25,
+        "far": 3500,
+        "left": -2,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          116.80487046208214,
+          3.125,
+          -420.0165517970719
+        ],
+        "projection": "orthographic",
+        "right": 2,
+        "target": [
+          116.80487046208214,
+          0,
+          -423.1415517970719
+        ],
+        "tiltDegrees": 45,
+        "top": 1.25
+      },
+      "mobile_camera": {
+        "bottom": -1.25,
+        "far": 3500,
+        "left": -1.0,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          116.80487046208214,
+          3.125,
+          -420.0165517970719
+        ],
+        "projection": "orthographic",
+        "right": 1.0,
+        "target": [
+          116.80487046208214,
+          0,
+          -423.1415517970719
+        ],
+        "tiltDegrees": 45,
+        "top": 1.25
+      },
+      "render_url": "../explore_coast.html?view=redington-beach&level=town&district=redington-beach-center&landing=1&cx=116.80487046208214&cy=423.1415517970719&span=4",
+      "mobile_render_url": "../explore_coast.html?view=redington-beach&level=town&district=redington-beach-center&landing=1&cx=116.80487046208214&cy=423.1415517970719&span=2.0",
+      "close_camera": {
+        "bottom": -0.46875,
+        "far": 3500,
+        "left": -0.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          116.80487046208214,
+          1.171875,
+          -421.9696767970719
+        ],
+        "projection": "orthographic",
+        "right": 0.75,
+        "target": [
+          116.80487046208214,
+          0,
+          -423.1415517970719
+        ],
+        "tiltDegrees": 45,
+        "top": 0.46875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.46875,
+        "far": 3500,
+        "left": -0.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          116.80487046208214,
+          1.171875,
+          -421.9696767970719
+        ],
+        "projection": "orthographic",
+        "right": 0.375,
+        "target": [
+          116.80487046208214,
+          0,
+          -423.1415517970719
+        ],
+        "tiltDegrees": 45,
+        "top": 0.46875
+      },
+      "close_render_url": "../explore_coast.html?view=redington-beach&level=town&district=redington-beach-center&landing=1&cx=116.80487046208214&cy=423.1415517970719&span=1.5",
+      "close_mobile_render_url": "../explore_coast.html?view=redington-beach&level=town&district=redington-beach-center&landing=1&cx=116.80487046208214&cy=423.1415517970719&span=0.75",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "tierra-verde",
+      "name": "Tierra Verde",
+      "desktop": "tierra-verde.webp",
+      "mobile": "tierra-verde-m.webp",
+      "center": {
+        "x": 126.04477973998121,
+        "y": 410.15042026870316,
+        "lon": -82.7194379,
+        "lat": 27.691142
+      },
+      "districts": [
+        {
+          "id": "tierra-verde-center",
+          "name": "Tierra Verde",
+          "lon": -82.7234337,
+          "lat": 27.6919746
+        }
+      ],
+      "district": "tierra-verde-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -82.7194379,
+        "lat": 27.691142,
+        "reason": "The central Pinellas Bayway waterfront frames the island canals, docks and connecting road.",
+        "source": "https://www.openstreetmap.org/way/82789295"
+      },
+      "callouts": [
+        {
+          "name": "Frank T. Hurley Park",
+          "type": "park",
+          "lon": -82.73676442155666,
+          "lat": 27.693194300000002
+        },
+        {
+          "name": "The Pass-a-Grille Park",
+          "type": "park",
+          "lon": -82.73689579404491,
+          "lat": 27.689009249999998
+        }
+      ],
+      "close_callouts": [],
+      "close_desktop": "tierra-verde-close.webp",
+      "close_mobile": "tierra-verde-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "tierra-verde.webp",
+          "mobile": "tierra-verde-m.webp",
+          "span": 5.5,
+          "camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -2.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              126.0447797399812,
+              4.296875,
+              -405.8535452687032
+            ],
+            "projection": "orthographic",
+            "right": 2.75,
+            "target": [
+              126.0447797399812,
+              0,
+              -410.1504202687032
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "mobile_camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -1.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              126.0447797399812,
+              4.296875,
+              -405.8535452687032
+            ],
+            "projection": "orthographic",
+            "right": 1.375,
+            "target": [
+              126.0447797399812,
+              0,
+              -410.1504202687032
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "callouts": [
+            {
+              "name": "Frank T. Hurley Park",
+              "type": "park",
+              "lon": -82.73676442155666,
+              "lat": 27.693194300000002
+            },
+            {
+              "name": "The Pass-a-Grille Park",
+              "type": "park",
+              "lon": -82.73689579404491,
+              "lat": 27.689009249999998
+            }
+          ],
+          "mobile_callouts": [],
+          "render_url": "../explore_coast.html?view=tierra-verde&level=town&district=tierra-verde-center&landing=1&cx=126.04477973998121&cy=410.15042026870316&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=tierra-verde&level=town&district=tierra-verde-center&landing=1&cx=126.04477973998121&cy=410.15042026870316&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "tierra-verde-close.webp",
+          "mobile": "tierra-verde-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -1.1,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              126.0447797399812,
+              1.71875,
+              -408.4316702687032
+            ],
+            "projection": "orthographic",
+            "right": 1.1,
+            "target": [
+              126.0447797399812,
+              0,
+              -410.1504202687032
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "mobile_camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -0.55,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              126.0447797399812,
+              1.71875,
+              -408.4316702687032
+            ],
+            "projection": "orthographic",
+            "right": 0.55,
+            "target": [
+              126.0447797399812,
+              0,
+              -410.1504202687032
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "callouts": [],
+          "mobile_callouts": [],
+          "render_url": "../explore_coast.html?view=tierra-verde&level=town&district=tierra-verde-center&landing=1&cx=126.04477973998121&cy=410.15042026870316&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=tierra-verde&level=town&district=tierra-verde-center&landing=1&cx=126.04477973998121&cy=410.15042026870316&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -2.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          126.0447797399812,
+          4.296875,
+          -405.8535452687032
+        ],
+        "projection": "orthographic",
+        "right": 2.75,
+        "target": [
+          126.0447797399812,
+          0,
+          -410.1504202687032
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "mobile_camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -1.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          126.0447797399812,
+          4.296875,
+          -405.8535452687032
+        ],
+        "projection": "orthographic",
+        "right": 1.375,
+        "target": [
+          126.0447797399812,
+          0,
+          -410.1504202687032
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "render_url": "../explore_coast.html?view=tierra-verde&level=town&district=tierra-verde-center&landing=1&cx=126.04477973998121&cy=410.15042026870316&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=tierra-verde&level=town&district=tierra-verde-center&landing=1&cx=126.04477973998121&cy=410.15042026870316&span=2.75",
+      "close_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -1.1,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          126.0447797399812,
+          1.71875,
+          -408.4316702687032
+        ],
+        "projection": "orthographic",
+        "right": 1.1,
+        "target": [
+          126.0447797399812,
+          0,
+          -410.1504202687032
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -0.55,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          126.0447797399812,
+          1.71875,
+          -408.4316702687032
+        ],
+        "projection": "orthographic",
+        "right": 0.55,
+        "target": [
+          126.0447797399812,
+          0,
+          -410.1504202687032
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_render_url": "../explore_coast.html?view=tierra-verde&level=town&district=tierra-verde-center&landing=1&cx=126.04477973998121&cy=410.15042026870316&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=tierra-verde&level=town&district=tierra-verde-center&landing=1&cx=126.04477973998121&cy=410.15042026870316&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "holiday",
+      "name": "Holiday",
+      "desktop": "holiday.webp",
+      "mobile": "holiday-m.webp",
+      "center": {
+        "x": 118.88568081346217,
+        "y": 463.79983610284836,
+        "lon": -82.7868043207585,
+        "lat": 28.1748607
+      },
+      "districts": [
+        {
+          "id": "holiday-center",
+          "name": "Holiday",
+          "lon": -82.740074,
+          "lat": 28.1879273
+        }
+      ],
+      "district": "holiday-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -82.7868043207585,
+        "lat": 28.1748607,
+        "reason": "Anclote River Park frames the river mouth, mangroves and nearby low residential neighborhoods.",
+        "source": "https://www.openstreetmap.org/way/476217523"
+      },
+      "callouts": [
+        {
+          "name": "Anclote River Park",
+          "type": "park",
+          "lon": -82.7868043207585,
+          "lat": 28.1748607
+        },
+        {
+          "name": "Fred Howard Park",
+          "type": "park",
+          "lon": -82.79159950769238,
+          "lat": 28.158485849999998
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Anclote River Park",
+          "type": "park",
+          "lon": -82.7868043207585,
+          "lat": 28.1748607
+        }
+      ],
+      "close_desktop": "holiday-close.webp",
+      "close_mobile": "holiday-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "holiday.webp",
+          "mobile": "holiday-m.webp",
+          "span": 5.5,
+          "camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -2.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              118.88568081346216,
+              4.296875,
+              -459.5029611028483
+            ],
+            "projection": "orthographic",
+            "right": 2.75,
+            "target": [
+              118.88568081346216,
+              0,
+              -463.7998361028483
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "mobile_camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -1.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              118.88568081346216,
+              4.296875,
+              -459.5029611028483
+            ],
+            "projection": "orthographic",
+            "right": 1.375,
+            "target": [
+              118.88568081346216,
+              0,
+              -463.7998361028483
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "callouts": [
+            {
+              "name": "Anclote River Park",
+              "type": "park",
+              "lon": -82.7868043207585,
+              "lat": 28.1748607
+            },
+            {
+              "name": "Fred Howard Park",
+              "type": "park",
+              "lon": -82.79159950769238,
+              "lat": 28.158485849999998
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Anclote River Park",
+              "type": "park",
+              "lon": -82.7868043207585,
+              "lat": 28.1748607
+            },
+            {
+              "name": "Fred Howard Park",
+              "type": "park",
+              "lon": -82.79159950769238,
+              "lat": 28.158485849999998
+            }
+          ],
+          "render_url": "../explore_coast.html?view=holiday&level=town&district=holiday-center&landing=1&cx=118.88568081346217&cy=463.79983610284836&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=holiday&level=town&district=holiday-center&landing=1&cx=118.88568081346217&cy=463.79983610284836&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "holiday-close.webp",
+          "mobile": "holiday-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -1.1,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              118.88568081346216,
+              1.71875,
+              -462.0810861028483
+            ],
+            "projection": "orthographic",
+            "right": 1.1,
+            "target": [
+              118.88568081346216,
+              0,
+              -463.7998361028483
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "mobile_camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -0.55,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              118.88568081346216,
+              1.71875,
+              -462.0810861028483
+            ],
+            "projection": "orthographic",
+            "right": 0.55,
+            "target": [
+              118.88568081346216,
+              0,
+              -463.7998361028483
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "callouts": [
+            {
+              "name": "Anclote River Park",
+              "type": "park",
+              "lon": -82.7868043207585,
+              "lat": 28.1748607
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Anclote River Park",
+              "type": "park",
+              "lon": -82.7868043207585,
+              "lat": 28.1748607
+            }
+          ],
+          "render_url": "../explore_coast.html?view=holiday&level=town&district=holiday-center&landing=1&cx=118.88568081346217&cy=463.79983610284836&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=holiday&level=town&district=holiday-center&landing=1&cx=118.88568081346217&cy=463.79983610284836&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -2.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          118.88568081346216,
+          4.296875,
+          -459.5029611028483
+        ],
+        "projection": "orthographic",
+        "right": 2.75,
+        "target": [
+          118.88568081346216,
+          0,
+          -463.7998361028483
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "mobile_camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -1.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          118.88568081346216,
+          4.296875,
+          -459.5029611028483
+        ],
+        "projection": "orthographic",
+        "right": 1.375,
+        "target": [
+          118.88568081346216,
+          0,
+          -463.7998361028483
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "render_url": "../explore_coast.html?view=holiday&level=town&district=holiday-center&landing=1&cx=118.88568081346217&cy=463.79983610284836&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=holiday&level=town&district=holiday-center&landing=1&cx=118.88568081346217&cy=463.79983610284836&span=2.75",
+      "close_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -1.1,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          118.88568081346216,
+          1.71875,
+          -462.0810861028483
+        ],
+        "projection": "orthographic",
+        "right": 1.1,
+        "target": [
+          118.88568081346216,
+          0,
+          -463.7998361028483
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -0.55,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          118.88568081346216,
+          1.71875,
+          -462.0810861028483
+        ],
+        "projection": "orthographic",
+        "right": 0.55,
+        "target": [
+          118.88568081346216,
+          0,
+          -463.7998361028483
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_render_url": "../explore_coast.html?view=holiday&level=town&district=holiday-center&landing=1&cx=118.88568081346217&cy=463.79983610284836&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=holiday&level=town&district=holiday-center&landing=1&cx=118.88568081346217&cy=463.79983610284836&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "port-richey",
+      "name": "Port Richey",
+      "desktop": "port-richey.webp",
+      "mobile": "port-richey-m.webp",
+      "center": {
+        "x": 124.851557368493,
+        "y": 474.984867367389,
+        "lon": -82.72474808962515,
+        "lat": 28.2750281
+      },
+      "districts": [
+        {
+          "id": "port-richey-center",
+          "name": "Port Richey",
+          "lon": -82.7195451,
+          "lat": 28.2716755
+        }
+      ],
+      "district": "port-richey-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -82.72474808962515,
+        "lat": 28.2750281,
+        "reason": "Waterfront Park frames the Pithlachascotee river mouth and its working docks.",
+        "source": "https://www.openstreetmap.org/way/547113996"
+      },
+      "callouts": [
+        {
+          "name": "Port Richey Waterfront Park",
+          "type": "park",
+          "lon": -82.72474808962515,
+          "lat": 28.2750281
+        },
+        {
+          "name": "Wilmslow Park",
+          "type": "park",
+          "lon": -82.7331344847953,
+          "lat": 28.27856525
+        },
+        {
+          "name": "Brasher Park",
+          "type": "park",
+          "lon": -82.73239952981072,
+          "lat": 28.285496549999998
+        },
+        {
+          "name": "Pinehill Park",
+          "type": "park",
+          "lon": -82.7116279,
+          "lat": 28.27229605
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Port Richey Waterfront Park",
+          "type": "park",
+          "lon": -82.72474808962515,
+          "lat": 28.2750281
+        },
+        {
+          "name": "Wilmslow Park",
+          "type": "park",
+          "lon": -82.7331344847953,
+          "lat": 28.27856525
+        }
+      ],
+      "close_desktop": "port-richey-close.webp",
+      "close_mobile": "port-richey-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "port-richey.webp",
+          "mobile": "port-richey-m.webp",
+          "span": 5.5,
+          "camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -2.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              124.851557368493,
+              4.296875,
+              -470.687992367389
+            ],
+            "projection": "orthographic",
+            "right": 2.75,
+            "target": [
+              124.851557368493,
+              0,
+              -474.984867367389
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "mobile_camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -1.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              124.851557368493,
+              4.296875,
+              -470.687992367389
+            ],
+            "projection": "orthographic",
+            "right": 1.375,
+            "target": [
+              124.851557368493,
+              0,
+              -474.984867367389
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "callouts": [
+            {
+              "name": "Port Richey Waterfront Park",
+              "type": "park",
+              "lon": -82.72474808962515,
+              "lat": 28.2750281
+            },
+            {
+              "name": "Wilmslow Park",
+              "type": "park",
+              "lon": -82.7331344847953,
+              "lat": 28.27856525
+            },
+            {
+              "name": "Brasher Park",
+              "type": "park",
+              "lon": -82.73239952981072,
+              "lat": 28.285496549999998
+            },
+            {
+              "name": "Pinehill Park",
+              "type": "park",
+              "lon": -82.7116279,
+              "lat": 28.27229605
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Port Richey Waterfront Park",
+              "type": "park",
+              "lon": -82.72474808962515,
+              "lat": 28.2750281
+            },
+            {
+              "name": "Wilmslow Park",
+              "type": "park",
+              "lon": -82.7331344847953,
+              "lat": 28.27856525
+            },
+            {
+              "name": "Brasher Park",
+              "type": "park",
+              "lon": -82.73239952981072,
+              "lat": 28.285496549999998
+            },
+            {
+              "name": "Pinehill Park",
+              "type": "park",
+              "lon": -82.7116279,
+              "lat": 28.27229605
+            }
+          ],
+          "render_url": "../explore_coast.html?view=port-richey&level=town&district=port-richey-center&landing=1&cx=124.851557368493&cy=474.984867367389&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=port-richey&level=town&district=port-richey-center&landing=1&cx=124.851557368493&cy=474.984867367389&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "port-richey-close.webp",
+          "mobile": "port-richey-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -1.1,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              124.851557368493,
+              1.71875,
+              -473.266117367389
+            ],
+            "projection": "orthographic",
+            "right": 1.1,
+            "target": [
+              124.851557368493,
+              0,
+              -474.984867367389
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "mobile_camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -0.55,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              124.851557368493,
+              1.71875,
+              -473.266117367389
+            ],
+            "projection": "orthographic",
+            "right": 0.55,
+            "target": [
+              124.851557368493,
+              0,
+              -474.984867367389
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "callouts": [
+            {
+              "name": "Port Richey Waterfront Park",
+              "type": "park",
+              "lon": -82.72474808962515,
+              "lat": 28.2750281
+            },
+            {
+              "name": "Wilmslow Park",
+              "type": "park",
+              "lon": -82.7331344847953,
+              "lat": 28.27856525
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Port Richey Waterfront Park",
+              "type": "park",
+              "lon": -82.72474808962515,
+              "lat": 28.2750281
+            }
+          ],
+          "render_url": "../explore_coast.html?view=port-richey&level=town&district=port-richey-center&landing=1&cx=124.851557368493&cy=474.984867367389&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=port-richey&level=town&district=port-richey-center&landing=1&cx=124.851557368493&cy=474.984867367389&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -2.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          124.851557368493,
+          4.296875,
+          -470.687992367389
+        ],
+        "projection": "orthographic",
+        "right": 2.75,
+        "target": [
+          124.851557368493,
+          0,
+          -474.984867367389
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "mobile_camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -1.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          124.851557368493,
+          4.296875,
+          -470.687992367389
+        ],
+        "projection": "orthographic",
+        "right": 1.375,
+        "target": [
+          124.851557368493,
+          0,
+          -474.984867367389
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "render_url": "../explore_coast.html?view=port-richey&level=town&district=port-richey-center&landing=1&cx=124.851557368493&cy=474.984867367389&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=port-richey&level=town&district=port-richey-center&landing=1&cx=124.851557368493&cy=474.984867367389&span=2.75",
+      "close_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -1.1,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          124.851557368493,
+          1.71875,
+          -473.266117367389
+        ],
+        "projection": "orthographic",
+        "right": 1.1,
+        "target": [
+          124.851557368493,
+          0,
+          -474.984867367389
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -0.55,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          124.851557368493,
+          1.71875,
+          -473.266117367389
+        ],
+        "projection": "orthographic",
+        "right": 0.55,
+        "target": [
+          124.851557368493,
+          0,
+          -474.984867367389
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_render_url": "../explore_coast.html?view=port-richey&level=town&district=port-richey-center&landing=1&cx=124.851557368493&cy=474.984867367389&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=port-richey&level=town&district=port-richey-center&landing=1&cx=124.851557368493&cy=474.984867367389&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "hudson",
+      "name": "Hudson",
+      "desktop": "hudson.webp",
+      "mobile": "hudson-m.webp",
+      "center": {
+        "x": 126.13669574670934,
+        "y": 484.64971640545474,
+        "lon": -82.71059026431722,
+        "lat": 28.3619292
+      },
+      "districts": [
+        {
+          "id": "hudson-center",
+          "name": "Hudson",
+          "lon": -82.6932847,
+          "lat": 28.3617709
+        }
+      ],
+      "district": "hudson-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -82.71059026431722,
+        "lat": 28.3619292,
+        "reason": "Hudson Beach frames the Gulf edge, canal homes and waterfront boating neighborhood.",
+        "source": "https://www.openstreetmap.org/way/526290765"
+      },
+      "callouts": [
+        {
+          "name": "Robert J. Strickland Park",
+          "type": "park",
+          "lon": -82.71059026431722,
+          "lat": 28.3619292
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Robert J. Strickland Park",
+          "type": "park",
+          "lon": -82.71059026431722,
+          "lat": 28.3619292
+        }
+      ],
+      "close_desktop": "hudson-close.webp",
+      "close_mobile": "hudson-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "hudson.webp",
+          "mobile": "hudson-m.webp",
+          "span": 5.5,
+          "camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -2.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              126.13669574670934,
+              4.296875,
+              -480.35284140545474
+            ],
+            "projection": "orthographic",
+            "right": 2.75,
+            "target": [
+              126.13669574670934,
+              0,
+              -484.64971640545474
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "mobile_camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -1.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              126.13669574670934,
+              4.296875,
+              -480.35284140545474
+            ],
+            "projection": "orthographic",
+            "right": 1.375,
+            "target": [
+              126.13669574670934,
+              0,
+              -484.64971640545474
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "callouts": [
+            {
+              "name": "Robert J. Strickland Park",
+              "type": "park",
+              "lon": -82.71059026431722,
+              "lat": 28.3619292
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Robert J. Strickland Park",
+              "type": "park",
+              "lon": -82.71059026431722,
+              "lat": 28.3619292
+            }
+          ],
+          "render_url": "../explore_coast.html?view=hudson&level=town&district=hudson-center&landing=1&cx=126.13669574670934&cy=484.64971640545474&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=hudson&level=town&district=hudson-center&landing=1&cx=126.13669574670934&cy=484.64971640545474&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "hudson-close.webp",
+          "mobile": "hudson-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -1.1,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              126.13669574670934,
+              1.71875,
+              -482.93096640545474
+            ],
+            "projection": "orthographic",
+            "right": 1.1,
+            "target": [
+              126.13669574670934,
+              0,
+              -484.64971640545474
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "mobile_camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -0.55,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              126.13669574670934,
+              1.71875,
+              -482.93096640545474
+            ],
+            "projection": "orthographic",
+            "right": 0.55,
+            "target": [
+              126.13669574670934,
+              0,
+              -484.64971640545474
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "callouts": [
+            {
+              "name": "Robert J. Strickland Park",
+              "type": "park",
+              "lon": -82.71059026431722,
+              "lat": 28.3619292
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Robert J. Strickland Park",
+              "type": "park",
+              "lon": -82.71059026431722,
+              "lat": 28.3619292
+            }
+          ],
+          "render_url": "../explore_coast.html?view=hudson&level=town&district=hudson-center&landing=1&cx=126.13669574670934&cy=484.64971640545474&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=hudson&level=town&district=hudson-center&landing=1&cx=126.13669574670934&cy=484.64971640545474&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -2.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          126.13669574670934,
+          4.296875,
+          -480.35284140545474
+        ],
+        "projection": "orthographic",
+        "right": 2.75,
+        "target": [
+          126.13669574670934,
+          0,
+          -484.64971640545474
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "mobile_camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -1.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          126.13669574670934,
+          4.296875,
+          -480.35284140545474
+        ],
+        "projection": "orthographic",
+        "right": 1.375,
+        "target": [
+          126.13669574670934,
+          0,
+          -484.64971640545474
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "render_url": "../explore_coast.html?view=hudson&level=town&district=hudson-center&landing=1&cx=126.13669574670934&cy=484.64971640545474&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=hudson&level=town&district=hudson-center&landing=1&cx=126.13669574670934&cy=484.64971640545474&span=2.75",
+      "close_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -1.1,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          126.13669574670934,
+          1.71875,
+          -482.93096640545474
+        ],
+        "projection": "orthographic",
+        "right": 1.1,
+        "target": [
+          126.13669574670934,
+          0,
+          -484.64971640545474
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -0.55,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          126.13669574670934,
+          1.71875,
+          -482.93096640545474
+        ],
+        "projection": "orthographic",
+        "right": 0.55,
+        "target": [
+          126.13669574670934,
+          0,
+          -484.64971640545474
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_render_url": "../explore_coast.html?view=hudson&level=town&district=hudson-center&landing=1&cx=126.13669574670934&cy=484.64971640545474&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=hudson&level=town&district=hudson-center&landing=1&cx=126.13669574670934&cy=484.64971640545474&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
+    },
+    {
+      "town_id": "gibsonton",
+      "name": "Gibsonton",
+      "desktop": "gibsonton.webp",
+      "mobile": "gibsonton-m.webp",
+      "center": {
+        "x": 158.63969100855115,
+        "y": 429.3830704518233,
+        "lon": -82.38576349802327,
+        "lat": 27.86087075
+      },
+      "districts": [
+        {
+          "id": "gibsonton-center",
+          "name": "Gibsonton",
+          "lon": -82.3817515,
+          "lat": 27.8497857
+        }
+      ],
+      "district": "gibsonton-center",
+      "span": 5.5,
+      "close_span": 2.2,
+      "hero": {
+        "lon": -82.38576349802327,
+        "lat": 27.86087075,
+        "reason": "Williams Park frames the Alafia River crossing, boat ramp and low riverfront neighborhoods.",
+        "source": "https://www.openstreetmap.org/way/26139347"
+      },
+      "callouts": [
+        {
+          "name": "Williams Park",
+          "type": "boating",
+          "lon": -82.38576349802327,
+          "lat": 27.86087075
+        },
+        {
+          "name": "Mosaic Park",
+          "type": "park",
+          "lon": -82.38355839953019,
+          "lat": 27.86331095
+        }
+      ],
+      "close_callouts": [
+        {
+          "name": "Williams Park",
+          "type": "boating",
+          "lon": -82.38576349802327,
+          "lat": 27.86087075
+        },
+        {
+          "name": "Mosaic Park",
+          "type": "park",
+          "lon": -82.38355839953019,
+          "lat": 27.86331095
+        }
+      ],
+      "close_desktop": "gibsonton-close.webp",
+      "close_mobile": "gibsonton-close-m.webp",
+      "views": {
+        "town": {
+          "desktop": "gibsonton.webp",
+          "mobile": "gibsonton-m.webp",
+          "span": 5.5,
+          "camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -2.75,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              158.63969100855115,
+              4.296875,
+              -425.0861954518233
+            ],
+            "projection": "orthographic",
+            "right": 2.75,
+            "target": [
+              158.63969100855115,
+              0,
+              -429.3830704518233
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "mobile_camera": {
+            "bottom": -1.71875,
+            "far": 3500,
+            "left": -1.375,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              158.63969100855115,
+              4.296875,
+              -425.0861954518233
+            ],
+            "projection": "orthographic",
+            "right": 1.375,
+            "target": [
+              158.63969100855115,
+              0,
+              -429.3830704518233
+            ],
+            "tiltDegrees": 45,
+            "top": 1.71875
+          },
+          "callouts": [
+            {
+              "name": "Williams Park",
+              "type": "boating",
+              "lon": -82.38576349802327,
+              "lat": 27.86087075
+            },
+            {
+              "name": "Mosaic Park",
+              "type": "park",
+              "lon": -82.38355839953019,
+              "lat": 27.86331095
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Williams Park",
+              "type": "boating",
+              "lon": -82.38576349802327,
+              "lat": 27.86087075
+            },
+            {
+              "name": "Mosaic Park",
+              "type": "park",
+              "lon": -82.38355839953019,
+              "lat": 27.86331095
+            }
+          ],
+          "render_url": "../explore_coast.html?view=gibsonton&level=town&district=gibsonton-center&landing=1&cx=158.63969100855115&cy=429.3830704518233&span=5.5",
+          "mobile_render_url": "../explore_coast.html?view=gibsonton&level=town&district=gibsonton-center&landing=1&cx=158.63969100855115&cy=429.3830704518233&span=2.75",
+          "capture_verified": true
+        },
+        "street": {
+          "desktop": "gibsonton-close.webp",
+          "mobile": "gibsonton-close-m.webp",
+          "span": 2.2,
+          "camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -1.1,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              158.63969100855115,
+              1.71875,
+              -427.6643204518233
+            ],
+            "projection": "orthographic",
+            "right": 1.1,
+            "target": [
+              158.63969100855115,
+              0,
+              -429.3830704518233
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "mobile_camera": {
+            "bottom": -0.6875,
+            "far": 3500,
+            "left": -0.55,
+            "mapUnits": "kilometers",
+            "near": 0.0001,
+            "position": [
+              158.63969100855115,
+              1.71875,
+              -427.6643204518233
+            ],
+            "projection": "orthographic",
+            "right": 0.55,
+            "target": [
+              158.63969100855115,
+              0,
+              -429.3830704518233
+            ],
+            "tiltDegrees": 45,
+            "top": 0.6875
+          },
+          "callouts": [
+            {
+              "name": "Williams Park",
+              "type": "boating",
+              "lon": -82.38576349802327,
+              "lat": 27.86087075
+            },
+            {
+              "name": "Mosaic Park",
+              "type": "park",
+              "lon": -82.38355839953019,
+              "lat": 27.86331095
+            }
+          ],
+          "mobile_callouts": [
+            {
+              "name": "Williams Park",
+              "type": "boating",
+              "lon": -82.38576349802327,
+              "lat": 27.86087075
+            },
+            {
+              "name": "Mosaic Park",
+              "type": "park",
+              "lon": -82.38355839953019,
+              "lat": 27.86331095
+            }
+          ],
+          "render_url": "../explore_coast.html?view=gibsonton&level=town&district=gibsonton-center&landing=1&cx=158.63969100855115&cy=429.3830704518233&span=2.2",
+          "mobile_render_url": "../explore_coast.html?view=gibsonton&level=town&district=gibsonton-center&landing=1&cx=158.63969100855115&cy=429.3830704518233&span=1.1",
+          "capture_verified": true
+        }
+      },
+      "camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -2.75,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          158.63969100855115,
+          4.296875,
+          -425.0861954518233
+        ],
+        "projection": "orthographic",
+        "right": 2.75,
+        "target": [
+          158.63969100855115,
+          0,
+          -429.3830704518233
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "mobile_camera": {
+        "bottom": -1.71875,
+        "far": 3500,
+        "left": -1.375,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          158.63969100855115,
+          4.296875,
+          -425.0861954518233
+        ],
+        "projection": "orthographic",
+        "right": 1.375,
+        "target": [
+          158.63969100855115,
+          0,
+          -429.3830704518233
+        ],
+        "tiltDegrees": 45,
+        "top": 1.71875
+      },
+      "render_url": "../explore_coast.html?view=gibsonton&level=town&district=gibsonton-center&landing=1&cx=158.63969100855115&cy=429.3830704518233&span=5.5",
+      "mobile_render_url": "../explore_coast.html?view=gibsonton&level=town&district=gibsonton-center&landing=1&cx=158.63969100855115&cy=429.3830704518233&span=2.75",
+      "close_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -1.1,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          158.63969100855115,
+          1.71875,
+          -427.6643204518233
+        ],
+        "projection": "orthographic",
+        "right": 1.1,
+        "target": [
+          158.63969100855115,
+          0,
+          -429.3830704518233
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_mobile_camera": {
+        "bottom": -0.6875,
+        "far": 3500,
+        "left": -0.55,
+        "mapUnits": "kilometers",
+        "near": 0.0001,
+        "position": [
+          158.63969100855115,
+          1.71875,
+          -427.6643204518233
+        ],
+        "projection": "orthographic",
+        "right": 0.55,
+        "target": [
+          158.63969100855115,
+          0,
+          -429.3830704518233
+        ],
+        "tiltDegrees": 45,
+        "top": 0.6875
+      },
+      "close_render_url": "../explore_coast.html?view=gibsonton&level=town&district=gibsonton-center&landing=1&cx=158.63969100855115&cy=429.3830704518233&span=2.2",
+      "close_mobile_render_url": "../explore_coast.html?view=gibsonton&level=town&district=gibsonton-center&landing=1&cx=158.63969100855115&cy=429.3830704518233&span=1.1",
+      "status": "Both landing zooms rendered and camera/size/callout checked; physical-phone speed unverified"
     }
   ],
   "landing_schema_version": 2,

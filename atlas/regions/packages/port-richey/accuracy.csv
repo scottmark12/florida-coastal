@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Port Richey,125.36479949951172,474.6178283691406,-82.71954506295336,28.27167542389353,-82.7195451,28.2716755,0.0092,https://www.openstreetmap.org/node/153976121,Representative OSM town place-label anchor: Port Richey

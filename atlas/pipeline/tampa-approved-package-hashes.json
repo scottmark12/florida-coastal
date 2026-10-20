@@ -1,0 +1,10 @@
+{
+  "tampa-south-shore": {
+    "files": 4704,
+    "sha256": "34e5f5a64447bf5cfbde4857a3ee3dfd7f79ad54da0d272c24865cab5a79f070"
+  },
+  "st-pete-clearwater": {
+    "files": 3714,
+    "sha256": "926a1dc64303b10d3a7955374bee05b66b0ce1718ddc84f7fcb8c0c275a32f0d"
+  }
+}
