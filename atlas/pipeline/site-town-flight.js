@@ -105,16 +105,17 @@ function flyTo(id, finished, destination) {
   const startScale=departure.scale,endScale=arrival.scale;
   const viewport=map.getBoundingClientRect();
   const cruise=Math.min(Math.min(startScale,endScale)*.12,Math.min(viewport.width,viewport.height)*.64/(km+45));
-  const duration=Math.round(Math.min(4600,3000+km*2.5));
-  const smooth=t=>{t=Math.max(0,Math.min(1,t));return t*t*(3-2*t);};
+  const duration=Math.round(Math.min(5000,3300+km*2.5));
+  const smooth=t=>{t=Math.max(0,Math.min(1,t));return t*t*t*(t*(t*6-15)+10);};
   const mix=(a,b,t)=>a+(b-a)*t;
   const exponential=(a,b,t)=>Math.exp(mix(Math.log(a),Math.log(b),t));
+  const KEYFRAMES=180;
   const regional=[],outgoing=[],entering=[];
   const rawFrom={x:Number(from.getAttribute('cx')),y:Number(from.getAttribute('cy'))};
   const rawTo={x:Number(to.getAttribute('cx')),y:Number(to.getAttribute('cy'))};
-  for(let i=0;i<=120;i++) {
-    const time=i/120,travel=smooth((time-.17)/.66);
-    const scale=time<.42?exponential(startScale,cruise,smooth(time/.42)):time>.58?exponential(cruise,endScale,smooth((time-.58)/.42)):cruise;
+  for(let i=0;i<=KEYFRAMES;i++) {
+    const time=i/KEYFRAMES,travel=smooth((time-.1)/.8);
+    const scale=time<.48?exponential(startScale,cruise,smooth(time/.48)):time>.52?exponential(cruise,endScale,smooth((time-.52)/.48)):cruise;
     const anchor={x:mix(departure.center.x,arrival.center.x,travel),y:mix(departure.center.y,arrival.center.y,travel)};
     const camera={x:delta.x/baseScale*travel,y:delta.y/baseScale*travel};
     const oldPosition={x:anchor.x-camera.x*scale,y:anchor.y-camera.y*scale};
@@ -145,8 +146,8 @@ function flyTo(id, finished, destination) {
   const tick=now=>{
     if(complete)return;
     if(!root.isConnected){done();return;}
-    const progress=Math.max(0,Math.min(1,(now-started)/duration)),index=progress*120;
-    const a=regional[Math.floor(index)],b=regional[Math.min(120,Math.floor(index)+1)];
+    const progress=Math.max(0,Math.min(1,(now-started)/duration)),index=progress*KEYFRAMES;
+    const a=regional[Math.floor(index)],b=regional[Math.min(KEYFRAMES,Math.floor(index)+1)];
     svg.setAttribute('viewBox',a.map((v,i)=>mix(v,b[i],index%1)).join(' '));
     if(progress<1)requestAnimationFrame(tick);else done();
   };
