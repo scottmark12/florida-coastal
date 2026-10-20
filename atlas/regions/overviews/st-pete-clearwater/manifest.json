@@ -914,12 +914,22 @@
     "Phone Region view retains terrain, cover and labels, without building clusters.",
     "Source land cover/canopy positions are composited into a softened regional canopy layer."
   ],
-  "revision": "07296296bc77a2dc",
+  "revision": "b29c442209f7e284",
   "coverageBounds": [
     98.73308061866146,
     397.5612256209079,
     147.79303043419154,
     493.55235842658954
   ],
-  "continuousCoverage": true
+  "continuousCoverage": true,
+  "surroundingContext": {
+    "file": "../../context/tampa-bay/context.png",
+    "bounds": [
+      83.90387126582064,
+      375.233720102606,
+      200.18876267978354,
+      506.54073803784706
+    ],
+    "bytes": 273907
+  }
 }

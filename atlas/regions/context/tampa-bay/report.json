@@ -1,0 +1,24 @@
+{
+  "bounds": [
+    83.90387126582064,
+    375.233720102606,
+    200.18876267978354,
+    506.54073803784706
+  ],
+  "file": "context.png",
+  "source": "https://download.geofabrik.de/north-america/us/florida.html",
+  "snapshot": "florida-261017.osm.pbf",
+  "license": "OpenStreetMap contributors, ODbL 1.0",
+  "counts": {
+    "buildings": 896345,
+    "roads": 132101,
+    "landcover_areas": 158379
+  },
+  "purpose": "Subdued geographic context only; no new tracked destinations or Town geometry.",
+  "bytes": 273907,
+  "resolution": [
+    1024,
+    1157
+  ],
+  "edge_fade_pixels": 32
+}

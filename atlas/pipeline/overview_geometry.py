@@ -66,7 +66,7 @@ def beach_index(packs):
 def asset_revision(out,meta):
  import hashlib
  digest=hashlib.sha256()
- for name in [meta['base'],meta['canopy'],meta['water'],meta['trees'],*[t['file'] for t in meta['buildings']]]:
+ for name in [meta['base'],meta['canopy'],meta['water'],meta['trees'],*[t['file'] for t in meta['buildings']],*([meta['surroundingContext']['file']] if meta.get('surroundingContext') else [])]:
   digest.update(name.encode()+b'\0'+hashlib.sha256((out/name).read_bytes()).digest())
  return digest.hexdigest()[:16]
 

@@ -7,7 +7,9 @@ for rid,path in registry.items():
  if path in seen:continue
  seen.add(path)
  root=R/path;m=json.load(open(root/'manifest.json'));region=next(r for r in catalog.get('sourceRegions',catalog['regions']) if r['id']==rid);expected={Path(packages[t]).name for t in region['towns'] if t in packages};assert set(m['sourcePackages'])==expected,(rid,'missing approved town source')
- initial=sum((root/f).stat().st_size for f in [m['base'],m['canopy'],m['water'],m['trees'],'manifest.json']);assert initial<4_000_000,(rid,initial)
+ if m.get('surroundingContext'):
+  c=m['surroundingContext'];context=root/c['file'];assert context.stat().st_size==c['bytes'];assert context.read_bytes()[:8]==b'\x89PNG\r\n\x1a\n';assert len(c['bounds'])==4
+ initial=sum((root/f).stat().st_size for f in [m['base'],m['canopy'],m['water'],m['trees'],'manifest.json']);initial+=m.get('surroundingContext',{}).get('bytes',0);assert initial<4_000_000,(rid,initial)
  for tile in [{'file':m['base']},*m['buildings']]:
   data=gzip.decompress((root/tile['file']).read_bytes());assert data[:4]==b'glTF';assert struct.unpack_from('<I',data,8)[0]==len(data)
   if 'bytes' in tile:assert (root/tile['file']).stat().st_size==tile['bytes']

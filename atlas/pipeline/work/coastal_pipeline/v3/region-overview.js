@@ -24,9 +24,10 @@ export async function createAccurateOverview(url,neighborUrls=[]){
   // Plane shader receives projected coordinates, rather than local plane vertices.
   const position=mesh.geometry.getAttribute('position');for(let i=0;i<position.count;i++)position.setXYZ(i,position.getX(i)+(x0+x1)/2,y,-(position.getY(i)+(y0+y1)/2));position.needsUpdate=true;mesh.rotation.set(0,0,0);mesh.position.set(0,0,0);return mesh;
  }
- const [base,canopy,water]=await Promise.all([model(own,meta.base),plane(own,meta.canopy,.0024),plane(own,meta.water,.0001)]);root.add(base,water,canopy);
+ const [base,canopy,water]=await Promise.all([model(own,meta.base),plane(own,meta.canopy,.0024),plane(own,meta.water,.0001)]);root.add(base,water);
+ if(meta.surroundingContext){const c=meta.surroundingContext;root.add(await plane({url:own.url,meta:{...meta,bounds:c.bounds}},c.file,.00215))}root.add(canopy);
  async function show(bounds,phone,onUpdate=()=>{}){
-  const token=++version;root.visible=true;architecture.clear();context.clear();document.body.dataset.regionChunks='0';document.body.dataset.regionBuildings='0';document.body.dataset.regionNeighbors='';if(phone)return;
+  const token=++version;root.visible=true;architecture.clear();context.clear();document.body.dataset.regionChunks='0';document.body.dataset.regionBuildings='0';document.body.dataset.regionNeighbors='';document.body.dataset.regionContext=meta.surroundingContext?'osm-surroundings':'none';if(phone)return;
   const excluded=[],tasks=[];let queued=false;
   function update(){if(!queued){queued=true;requestAnimationFrame(()=>{queued=false;if(token===version)onUpdate()})}}
   const sources=[own,...(meta.continuousCoverage?neighbors.filter(s=>s.meta.continuousCoverage&&intersects(s.meta.bounds,bounds)).sort((a,b)=>a.meta.id.localeCompare(b.meta.id)):[])];
