@@ -599,6 +599,10 @@ body:has(.fs){overflow:hidden}
 .lnd.m .lnd-pin b{font-size:11px;padding:5px 8px}
 .lnd-pin.l{transform:translate(-8px,-100%);align-items:flex-start}
 .lnd-pin.r{transform:translate(calc(-100% + 8px),-100%);align-items:flex-end}
+.lnd-zoom{position:absolute;z-index:3;right:40px;top:96px;height:40px;padding:0 16px;border:0;border-radius:999px;background:#fff;color:var(--ink);font:700 14px var(--body);box-shadow:0 6px 18px rgba(20,40,55,.18);cursor:pointer}
+.lnd-zoom:hover{color:var(--accent)}
+.lnd.m .lnd-zoom{right:16px;top:auto;bottom:96px;height:38px;font-size:13px}
+.lnd.swap{animation:lndin .35s ease-out both}
 .fs.flying .lnd{opacity:0;transition:opacity .28s ease;animation:none}
 @media (prefers-reduced-motion:reduce){.lnd{animation:none}}
 .fs-top{display:grid;grid-template-columns:1fr minmax(440px,32vw)}
