@@ -1,0 +1,44 @@
+{
+  "rule": "Source-only canopy; no sparse fallback or invented roadside planting",
+  "spacing_m": 10.0,
+  "crown_profiles": {},
+  "measured_rasters": [
+    {
+      "district": "dania-beach-center",
+      "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+      "year": 2021,
+      "bounds": [
+        -80.14683333333333,
+        26.033666666666665,
+        -80.083,
+        26.086
+      ],
+      "mapped_canopy_fraction": 0.18708320167634,
+      "rendered_crowns": 63738
+    }
+  ],
+  "source_polygon_count": 8,
+  "osm_tree_nodes": 10205,
+  "source_links": [
+    "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+    "https://www.openstreetmap.org/way/356915609",
+    "https://www.openstreetmap.org/way/41456634",
+    "https://www.openstreetmap.org/way/41456760",
+    "https://www.openstreetmap.org/way/487975381",
+    "https://www.openstreetmap.org/way/542157351",
+    "https://www.openstreetmap.org/way/588193030",
+    "https://www.openstreetmap.org/way/588193033",
+    "https://www.openstreetmap.org/way/777506615"
+  ],
+  "districts": [
+    {
+      "district": "dania-beach-center",
+      "mapped_canopy_km2_within_1650m": 0.03076,
+      "rendered_crowns_in_town_view": 20609,
+      "source_only": true,
+      "species": "Live-oak illustration; species is editorial unless OSM supplies species",
+      "individual_stems_surveyed": false
+    }
+  ],
+  "note": "Canopy extent is sourced; crown positions within mapped canopy are illustrative. OSM completeness varies."
+}

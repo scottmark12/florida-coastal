@@ -1,0 +1,15 @@
+{
+  "bounds_lonlat": [
+    -80.0936784533959,
+    26.86201005279577,
+    -80.02937161480936,
+    26.914381967697956
+  ],
+  "frame_bounds_km": [
+    387.9486196569168,
+    324.36391489866094,
+    392.9486196569168,
+    328.7833322810768
+  ],
+  "source": "OSM full-frame extraction/query, approved parent coastline and ESA WorldCover 2021."
+}

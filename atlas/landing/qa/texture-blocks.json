@@ -1,0 +1,31 @@
+{
+  "method": "Flag large periodic canopy blocks using image-space spectral concentration.\n160 px windows, 80 px stride, at least 70% vegetation; high-pass/Hann-windowed\nluminance. Four or more windows with >10% power in 12 frequency bins flags a\nlarge repeating block. Roads, water and tiny isolated patterns are excluded.\nDefault release scope is the repaired 30A Town pair; callers may pass any image.\n",
+  "rows": [
+    {
+      "image": "/Users/markscott/Documents/Codex/2026-10-15/referenced-chatgpt-conversation-this-is-an/work/github-atlas/atlas/landing/30a.webp",
+      "vegetation_windows": 89,
+      "periodic_windows": 2,
+      "status": "pass",
+      "flagged_windows": [
+        {
+          "x": 80,
+          "y": 160,
+          "score": 0.116194
+        },
+        {
+          "x": 160,
+          "y": 160,
+          "score": 0.121711
+        }
+      ]
+    },
+    {
+      "image": "/Users/markscott/Documents/Codex/2026-10-15/referenced-chatgpt-conversation-this-is-an/work/github-atlas/atlas/landing/30a-m.webp",
+      "vegetation_windows": 35,
+      "periodic_windows": 0,
+      "status": "pass",
+      "flagged_windows": []
+    }
+  ],
+  "failures": []
+}

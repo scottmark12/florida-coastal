@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+New Smyrna Beach,298.7416076660156,561.4392700195312,-80.92712705842052,29.025812990179723,-80.9271271,29.0258132,0.0236,https://www.openstreetmap.org/node/154061896,Representative OSM town place-label anchor: New Smyrna Beach

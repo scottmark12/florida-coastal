@@ -1,0 +1,59 @@
+{
+  "region": {
+    "id": "landing-repair/new-port-richey",
+    "name": "New Port Richey"
+  },
+  "towns": [
+    {
+      "id": "new-port-richey",
+      "name": "New Port Richey",
+      "region": "Tampa Bay",
+      "coast": "gulf",
+      "lat": 28.244,
+      "lon": -82.719,
+      "tier": 1,
+      "price": null,
+      "vibes": [
+        "afford",
+        "walk"
+      ],
+      "airport": "Tampa (TPA), about 45 minutes",
+      "season": "Easygoing year round",
+      "watch": "Flooding along the river and coast",
+      "blurb": "A small river town with a 1920s downtown that has been adding breweries, restaurants and a restored theater.",
+      "day": "You kayak the Cotee River in the morning and walk Main Street for dinner.",
+      "todo": [
+        [
+          "Sims Park",
+          "A riverfront park downtown with concerts and events."
+        ]
+      ],
+      "pros": [
+        "Affordable",
+        "A downtown on the rise"
+      ],
+      "cons": [
+        "Not much of a beach nearby",
+        "Traffic on US 19"
+      ],
+      "x": 125.45009041204979,
+      "y": 471.5450030796562,
+      "area_id": "st-pete-clearwater",
+      "area_name": "St. Pete and the Clearwater Beaches",
+      "source_url": "https://www.floridacoastal.co/towns/new-port-richey.html",
+      "nearest_town_km": 3.0740172645730373,
+      "source_bounds": [
+        -82.75076940741094,
+        28.222636946376195,
+        -82.68686569613989,
+        28.273813695324225
+      ]
+    }
+  ],
+  "bounds": [
+    -82.75076940741094,
+    28.222636946376195,
+    -82.68686569613989,
+    28.273813695324225
+  ]
+}

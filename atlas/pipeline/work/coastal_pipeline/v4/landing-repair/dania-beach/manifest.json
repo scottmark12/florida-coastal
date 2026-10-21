@@ -1,0 +1,111 @@
+{
+  "id": "landing-repair/dania-beach",
+  "name": "Dania Beach",
+  "towns": [
+    "dania-beach"
+  ],
+  "bounds": [
+    -80.14681711297332,
+    26.0335641114136,
+    -80.08301379570972,
+    26.0859359290248
+  ],
+  "recipes": "work/coastal_pipeline/v4/fort-lauderdale/recipes.json",
+  "camera": {
+    "center": [
+      385.18324514110776,
+      233.5889265108101
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "dania-beach-center": "dania-beach"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Bal Harbour source uses the OSM name Bal Harbour Village; the existing public town ID is retained.",
+    "Fort Lauderdale downtown uses its glass recipe; surrounding canal homes use the prepared canal-villa recipe.",
+    "Source building windows for Fort Lauderdale, Hollywood, Hallandale and Dania extend east to the beachfront.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Landing source envelope extended to the fixed frame plus 600 m; original camera, hero, palette and district styles retained."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/landing-repair/dania-beach/geography.json.gz",
+      "work/coastal_pipeline/v4/landing-repair/dania-beach/cover.json.gz",
+      "work/coastal_pipeline/v4/landing-repair/dania-beach/district-dania-beach.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/geography.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/cover.json.gz",
+      "work/coastal_pipeline/v4/fort-lauderdale/district-dania-beach.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/landing-repair/dania-beach/districts.json",
+    "prices": "work/coastal_pipeline/v4/landing-repair/dania-beach/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/landing-repair/dania-beach/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/landing-repair/dania-beach/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/landing-repair/dania-beach/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/landing-repair/dania-beach/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/landing-repair/dania-beach/frame-worldcover-2021.png",
+        "bounds": [
+          -80.14683333333333,
+          26.033666666666665,
+          -80.083,
+          26.086
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "dania-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  },
+  "coverage": {
+    "bounds_lonlat": [
+      -80.14681711297332,
+      26.0335641114136,
+      -80.08301379570972,
+      26.0859359290248
+    ],
+    "frame_bounds_km": [
+      385.554126618173,
+      232.28332804449917,
+      390.554126618173,
+      236.7027454269151
+    ],
+    "source": "OSM full-frame extraction/query, approved parent coastline and ESA WorldCover 2021."
+  }
+}

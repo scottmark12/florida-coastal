@@ -299,7 +299,7 @@
           "render_url": "../explore_coast.html?view=30a&level=town&district=seaside&landing=1&cx=-205.12920847238226&cy=703.5883150957892&span=5.0",
           "mobile_render_url": "../explore_coast.html?view=30a&level=town&district=seaside&landing=1&cx=-205.12920847238226&cy=703.5883150957892&span=2.5",
           "capture_verified": true,
-          "capture_sha256": "abe33d8dfac9d40e99cb30eb829b50f1cc1d830609e7001e0ca8593498ddb5ed",
+          "capture_sha256": "d13d738872e0fe9222c8498341c2cf023bdd7a11f6596b734ee67736d84c79f5",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         },
         "street": {
@@ -4021,7 +4021,7 @@
           "render_url": "../explore_coast.html?view=new-port-richey&level=town&district=new-port-richey-center&landing=1&cx=125.46235829677109&cy=472.0147975397244&span=5.0",
           "mobile_render_url": "../explore_coast.html?view=new-port-richey&level=town&district=new-port-richey-center&landing=1&cx=125.46235829677109&cy=472.0147975397244&span=2.5",
           "capture_verified": true,
-          "capture_sha256": "4a780026961d156c0af867aa1dbecd0bfa693230968b014604aebd7a01cdb431",
+          "capture_sha256": "4ab4000436482b329040a10470f5789a00d533c954e9fa8556bca1af7cd3afa3",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         },
         "street": {
@@ -4119,7 +4119,7 @@
           "render_url": "../explore_coast.html?view=new-port-richey&level=town&district=new-port-richey-center&landing=1&cx=125.46235829677109&cy=472.0147975397244&span=2.0",
           "mobile_render_url": "../explore_coast.html?view=new-port-richey&level=town&district=new-port-richey-center&landing=1&cx=125.46235829677109&cy=472.0147975397244&span=1.0",
           "capture_verified": true,
-          "capture_sha256": "2f3eb07ed534e3f544218fcb27a3e6c1289003511a4d94b003f46346bebec8f7",
+          "capture_sha256": "b180d2ed36489027d5ac9951a351d58760dd386c2c321bcbcbe3ee41daa09401",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         }
       },
@@ -32457,7 +32457,7 @@
           "render_url": "../explore_coast.html?view=jupiter&level=town&district=jupiter-center&landing=1&cx=387.8400860914756&cy=332.6063211250103&span=5.0",
           "mobile_render_url": "../explore_coast.html?view=jupiter&level=town&district=jupiter-center&landing=1&cx=387.8400860914756&cy=332.6063211250103&span=2.5",
           "capture_verified": true,
-          "capture_sha256": "619980fbabb5002894e6089af8e725b081773345c36f889c0c48f66a7cbd5eb6",
+          "capture_sha256": "212a98c12f7c0b32f35dc2de929d93d06de821c7644bf62d023c29b1f6dd01a0",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         },
         "street": {
@@ -33562,7 +33562,7 @@
           "render_url": "../explore_coast.html?view=nsb&level=town&district=nsb-center&landing=1&cx=301.2425206655232&cy=561.9828240401158&span=5.0",
           "mobile_render_url": "../explore_coast.html?view=nsb&level=town&district=nsb-center&landing=1&cx=301.2425206655232&cy=561.9828240401158&span=2.5",
           "capture_verified": true,
-          "capture_sha256": "e8ce079219044a1f10633bc049040a5d1e2c04793388e56c8c12605fb7d8fac2",
+          "capture_sha256": "17c199fb2e2702f9e4cceba6d15e1d78ad7a269c25bdc7ddeebd0198571a50b8",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         },
         "street": {
@@ -39210,9 +39210,9 @@
       ],
       "center": {
         "x": 388.054126618173,
-        "y": 234.49303673570714,
-        "lon": -80.11492247391038,
-        "lat": 26.059753559304692
+        "y": 233.99303673570714,
+        "lon": -80.11508012674948,
+        "lat": 26.05525024420004
       },
       "span": 5.0,
       "close_span": 2.0,
@@ -39245,12 +39245,12 @@
             "position": [
               388.054126618173,
               3.90625,
-              -230.58678673570714
+              -230.08678673570714
             ],
             "target": [
               388.054126618173,
               0,
-              -234.49303673570714
+              -233.99303673570714
             ],
             "left": -2.5,
             "right": 2.5,
@@ -39266,12 +39266,12 @@
             "position": [
               388.054126618173,
               3.90625,
-              -230.58678673570714
+              -230.08678673570714
             ],
             "target": [
               388.054126618173,
               0,
-              -234.49303673570714
+              -233.99303673570714
             ],
             "left": -1.25,
             "right": 1.25,
@@ -39315,10 +39315,10 @@
               "source": "https://www.openstreetmap.org/relation/7149797"
             }
           ],
-          "render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=234.49303673570714&span=5.0",
-          "mobile_render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=234.49303673570714&span=2.5",
+          "render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=233.99303673570714&span=5.0",
+          "mobile_render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=233.99303673570714&span=2.5",
           "capture_verified": true,
-          "capture_sha256": "54a76799504e83bc8cb288c943b8139e442ec37cf880f42065ee7b4832ed75d5",
+          "capture_sha256": "4c6d5498827d0fba16ee97391d22085ed3cbbd503929ecee003302376c909ef1",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         },
         "street": {
@@ -39329,12 +39329,12 @@
             "position": [
               388.054126618173,
               1.5625,
-              -232.93053673570714
+              -232.43053673570714
             ],
             "target": [
               388.054126618173,
               0,
-              -234.49303673570714
+              -233.99303673570714
             ],
             "left": -1.0,
             "right": 1.0,
@@ -39350,12 +39350,12 @@
             "position": [
               388.054126618173,
               1.5625,
-              -232.93053673570714
+              -232.43053673570714
             ],
             "target": [
               388.054126618173,
               0,
-              -234.49303673570714
+              -233.99303673570714
             ],
             "left": -0.5,
             "right": 0.5,
@@ -39399,10 +39399,10 @@
               "source": "https://www.openstreetmap.org/relation/7149797"
             }
           ],
-          "render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=234.49303673570714&span=2.0",
-          "mobile_render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=234.49303673570714&span=1.0",
+          "render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=233.99303673570714&span=2.0",
+          "mobile_render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=233.99303673570714&span=1.0",
           "capture_verified": true,
-          "capture_sha256": "aeaf63477c35e16ff1537a07c6a8d5e3a3f73b2c86477741b3f0ea090c22dda3",
+          "capture_sha256": "00afc896983b14e925b028aa13810b8b4952ece42ac61882f9018e8939abe45d",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         }
       },
@@ -39410,12 +39410,12 @@
         "position": [
           388.054126618173,
           3.90625,
-          -230.58678673570714
+          -230.08678673570714
         ],
         "target": [
           388.054126618173,
           0,
-          -234.49303673570714
+          -233.99303673570714
         ],
         "left": -2.5,
         "right": 2.5,
@@ -39431,12 +39431,12 @@
         "position": [
           388.054126618173,
           3.90625,
-          -230.58678673570714
+          -230.08678673570714
         ],
         "target": [
           388.054126618173,
           0,
-          -234.49303673570714
+          -233.99303673570714
         ],
         "left": -1.25,
         "right": 1.25,
@@ -39452,12 +39452,12 @@
         "position": [
           388.054126618173,
           1.5625,
-          -232.93053673570714
+          -232.43053673570714
         ],
         "target": [
           388.054126618173,
           0,
-          -234.49303673570714
+          -233.99303673570714
         ],
         "left": -1.0,
         "right": 1.0,
@@ -39473,12 +39473,12 @@
         "position": [
           388.054126618173,
           1.5625,
-          -232.93053673570714
+          -232.43053673570714
         ],
         "target": [
           388.054126618173,
           0,
-          -234.49303673570714
+          -233.99303673570714
         ],
         "left": -0.5,
         "right": 0.5,
@@ -39490,8 +39490,8 @@
         "mapUnits": "kilometers",
         "tiltDegrees": 45
       },
-      "render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=234.49303673570714&span=5.0",
-      "close_render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=234.49303673570714&span=2.0",
+      "render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=233.99303673570714&span=5.0",
+      "close_render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=233.99303673570714&span=2.0",
       "status": "Fixed camera Town/Close exports verified; see qa for explicit island water exceptions and boundary/source flags.",
       "hero_verification": {
         "boundary": {
@@ -39503,7 +39503,7 @@
         "inside_boundary": true
       },
       "frame_class": "narrow_island",
-      "mobile_render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=234.49303673570714&span=2.5",
+      "mobile_render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=233.99303673570714&span=2.5",
       "close_callouts": [
         {
           "name": "North Beach Road",
@@ -39520,18 +39520,18 @@
           "source": "https://www.openstreetmap.org/relation/7149797"
         }
       ],
-      "close_mobile_render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=234.49303673570714&span=1.0",
+      "close_mobile_render_url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=233.99303673570714&span=1.0",
       "qa": {
         "town_span_km": 5.0,
         "close_span_km": 2.0,
         "zoom_ratio": 2.5,
-        "water_pct_town": 52.92,
-        "water_pct_close": 45.94,
+        "water_pct_town": 53.79,
+        "water_pct_close": 48.17,
         "hero_in_limits": true,
         "callouts_town": 2,
         "callouts_close": 2,
-        "water_pct_town_mobile": 52.75,
-        "water_pct_close_mobile": 38.45,
+        "water_pct_town_mobile": 54.45,
+        "water_pct_close_mobile": 36.69,
         "flags": [],
         "water_measurement": "Projected OSM land polygon fraction; sand included, before building occlusion",
         "land_source": "pipeline/work/coastal_pipeline/v4/fort-lauderdale/land.json",
@@ -39539,6 +39539,12 @@
         "callout_edge_margin_px": {
           "desktop": 128,
           "mobile": 64
+        },
+        "framing_exception": {
+          "reason": "User authorized moving the view away from a port/airport block. Port-side northwest corner reduced; public beach hero and callouts unchanged.",
+          "camera_shift_north_km": -0.5,
+          "span_changed": false,
+          "hero_changed": false
         }
       },
       "frame_reason": "Narrow or fragmented waterfront land around the public core; normal land coverage could not be attained within the shared hero/phone constraints."
@@ -43691,7 +43697,7 @@
           "render_url": "../explore_coast.html?view=west-palm-beach&level=town&district=west-palm-beach-center&landing=1&cx=391.71790539442316&cy=307.3505282524422&span=7.0",
           "mobile_render_url": "../explore_coast.html?view=west-palm-beach&level=town&district=west-palm-beach-center&landing=1&cx=391.71790539442316&cy=307.3505282524422&span=3.5",
           "capture_verified": true,
-          "capture_sha256": "7e168f4b93b4bb508c6287640c25f6b066f148e720a30b23a84bccfb28381ed8",
+          "capture_sha256": "c23e9fc4cc83feb694d9e6e36449752254c3a5e975704d57236c838769076d87",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         },
         "street": {
@@ -43789,7 +43795,7 @@
           "render_url": "../explore_coast.html?view=west-palm-beach&level=town&district=west-palm-beach-center&landing=1&cx=391.71790539442316&cy=307.3505282524422&span=2.0",
           "mobile_render_url": "../explore_coast.html?view=west-palm-beach&level=town&district=west-palm-beach-center&landing=1&cx=391.71790539442316&cy=307.3505282524422&span=1.0",
           "capture_verified": true,
-          "capture_sha256": "80538896515e8a5c1782d014c9dcae84a81b997f88087c50d2a7c8b128bc22bb",
+          "capture_sha256": "881c0ef08b710f9c491376372a579733e3bfed39974f5543b2dfec0f84da4b45",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         }
       },
@@ -52303,7 +52309,7 @@
           "render_url": "../explore_coast.html?view=juno-beach&level=town&district=juno-beach-center&landing=1&cx=390.4486196569168&cy=326.5736235898689&span=5.0",
           "mobile_render_url": "../explore_coast.html?view=juno-beach&level=town&district=juno-beach-center&landing=1&cx=390.4486196569168&cy=326.5736235898689&span=2.5",
           "capture_verified": true,
-          "capture_sha256": "abdc1435417102d63aacd2a8561252df8ac8af3d9499341d19798763a228a603",
+          "capture_sha256": "7b85b0141fff18458da532523f1dffa2fc76b9f5613dd98c8d50173bf1307771",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         },
         "street": {
@@ -52387,7 +52393,7 @@
           "render_url": "../explore_coast.html?view=juno-beach&level=town&district=juno-beach-center&landing=1&cx=390.4486196569168&cy=326.5736235898689&span=2.0",
           "mobile_render_url": "../explore_coast.html?view=juno-beach&level=town&district=juno-beach-center&landing=1&cx=390.4486196569168&cy=326.5736235898689&span=1.0",
           "capture_verified": true,
-          "capture_sha256": "374903a2f1ab0aa21ed024c8dd742f4330006c96ab72aa17b3782e014ed5c8e9",
+          "capture_sha256": "120b35d42a124c52eb2bcd378507c5bb319f1d67aedc70d7d68a56a419812c65",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         }
       },
@@ -53342,7 +53348,7 @@
           "render_url": "../explore_coast.html?view=lake-park&level=town&district=lake-park-center&landing=1&cx=391.43423369455354&cy=316.2837532970393&span=5.0",
           "mobile_render_url": "../explore_coast.html?view=lake-park&level=town&district=lake-park-center&landing=1&cx=391.43423369455354&cy=316.2837532970393&span=2.5",
           "capture_verified": true,
-          "capture_sha256": "8915c767cfa8b796cf3a450efa3dd56504c5d6658f26977fc6747a9338c2652a",
+          "capture_sha256": "71f226913f05dc064802d415959fc772d3fa58b3c5b5f6a1db46ada580783637",
           "callout_note": "Only named OSM features inside both frames; unnamed features dropped if no named replacement exists."
         },
         "street": {

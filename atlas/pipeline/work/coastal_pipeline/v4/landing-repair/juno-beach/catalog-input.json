@@ -1,0 +1,41 @@
+{
+  "region": {
+    "id": "landing-repair/juno-beach",
+    "name": "Juno Beach"
+  },
+  "towns": [
+    {
+      "id": "juno-beach",
+      "name": "Juno Beach",
+      "region": "Atlantic Coast \u00b7 The Palm Beaches",
+      "coast": "atlantic",
+      "lon": -80.0539253,
+      "lat": 26.8815475,
+      "price": "$1,330,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Oceanfront condos, sea-turtle beaches and the long fishing pier.",
+      "area_id": "palm-beaches",
+      "area_name": "The Palm Beaches",
+      "source_url": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "x": 391.22611400497317,
+      "y": 325.85958156282743,
+      "tier": 2,
+      "nearest_town_km": 0,
+      "source_bounds": [
+        -80.0936784533959,
+        26.86201005279577,
+        -80.02937161480936,
+        26.914381967697956
+      ]
+    }
+  ],
+  "bounds": [
+    -80.0936784533959,
+    26.86201005279577,
+    -80.02937161480936,
+    26.914381967697956
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "checks": [
+    {
+      "check": "pre-fix repeating forest rejected; scattered replacement accepted",
+      "before_periodic_windows": 13,
+      "after_periodic_windows": 2
+    },
+    {
+      "check": "injected source extent cutoff rejected",
+      "passed": true
+    },
+    {
+      "check": "all 167 towns, 668 frames covered after repair",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

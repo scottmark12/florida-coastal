@@ -1,0 +1,28 @@
+[
+  {
+    "town": "dania-beach",
+    "id": "dania-beach-center",
+    "name": "Dania Beach",
+    "kind": "beach",
+    "description": "A small, unflashy beach city right next to the Fort Lauderdale airport, with a fishing pier and a quiet beach.",
+    "style": "dania-beach",
+    "lon": -80.143929,
+    "lat": 26.0524224,
+    "x": 385.18324514110776,
+    "y": 233.5889265108101,
+    "positionSource": "https://www.openstreetmap.org/node/154169354",
+    "centerMeaning": "Representative OSM town place-label anchor: Dania Beach",
+    "priceRange": "$327,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/broward-county/dania-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 327000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/broward-county/dania-beach"
+    },
+    "source": "https://www.visitlauderdale.com/plan-your-vacation/trip-ideas-itineraries/culture/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

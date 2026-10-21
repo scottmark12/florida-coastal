@@ -1,0 +1,58 @@
+{
+  "region": {
+    "id": "landing-repair/dania-beach",
+    "name": "Dania Beach"
+  },
+  "towns": [
+    {
+      "id": "dania-beach",
+      "name": "Dania Beach",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 26.052,
+      "lon": -80.144,
+      "tier": 2,
+      "price": null,
+      "vibes": [
+        "afford"
+      ],
+      "airport": "Fort Lauderdale (FLL), about 10 minutes",
+      "season": "Busy winters",
+      "watch": "Airport noise, flooding",
+      "blurb": "A small, unflashy beach city right next to the Fort Lauderdale airport, with a fishing pier and a quiet beach.",
+      "day": "You fish off the pier at sunrise, have lunch at a dockside spot and can be at your gate 15 minutes after leaving home.",
+      "todo": [
+        [
+          "Dania Beach Pier",
+          "A long fishing pier with a restaurant at the foot."
+        ]
+      ],
+      "pros": [
+        "More affordable than its neighbors",
+        "Minutes from a major airport"
+      ],
+      "cons": [
+        "Airplane noise",
+        "Fewer restaurants and shops in town"
+      ],
+      "x": 385.1776207940512,
+      "y": 233.54185230642682,
+      "area_id": "miami-fort-lauderdale",
+      "area_name": "Miami and Fort Lauderdale",
+      "source_url": "https://www.floridacoastal.co/towns/dania-beach.html",
+      "nearest_town_km": 4.589197024994013,
+      "source_bounds": [
+        -80.14681711297332,
+        26.0335641114136,
+        -80.08301379570972,
+        26.0859359290248
+      ]
+    }
+  ],
+  "bounds": [
+    -80.14681711297332,
+    26.0335641114136,
+    -80.08301379570972,
+    26.0859359290248
+  ]
+}

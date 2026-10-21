@@ -29,8 +29,8 @@
       "file": "30a.webp",
       "sparse_water_frame": false,
       "geographic_samples": 37552,
-      "samples": 37463,
-      "outside_palette_pct": 0.032,
+      "samples": 37457,
+      "outside_palette_pct": 0.045,
       "status": "pass"
     },
     {
@@ -40,8 +40,8 @@
       "file": "30a-m.webp",
       "sparse_water_frame": false,
       "geographic_samples": 18593,
-      "samples": 18520,
-      "outside_palette_pct": 0.065,
+      "samples": 18516,
+      "outside_palette_pct": 0.092,
       "status": "pass"
     },
     {
@@ -469,8 +469,8 @@
       "file": "new-port-richey.webp",
       "sparse_water_frame": false,
       "geographic_samples": 2383,
-      "samples": 2368,
-      "outside_palette_pct": 0.0,
+      "samples": 2295,
+      "outside_palette_pct": 0.305,
       "status": "pass"
     },
     {
@@ -480,8 +480,8 @@
       "file": "new-port-richey-m.webp",
       "sparse_water_frame": true,
       "geographic_samples": 459,
-      "samples": 459,
-      "outside_palette_pct": 0.0,
+      "samples": 439,
+      "outside_palette_pct": 0.228,
       "status": "pass"
     },
     {
@@ -491,8 +491,8 @@
       "file": "new-port-richey-close.webp",
       "sparse_water_frame": true,
       "geographic_samples": 422,
-      "samples": 420,
-      "outside_palette_pct": 0.238,
+      "samples": 383,
+      "outside_palette_pct": 0.0,
       "status": "pass"
     },
     {
@@ -502,8 +502,8 @@
       "file": "new-port-richey-close-m.webp",
       "sparse_water_frame": true,
       "geographic_samples": 271,
-      "samples": 269,
-      "outside_palette_pct": 0.372,
+      "samples": 247,
+      "outside_palette_pct": 0.0,
       "status": "pass"
     },
     {
@@ -3901,8 +3901,8 @@
       "file": "jupiter.webp",
       "sparse_water_frame": false,
       "geographic_samples": 33525,
-      "samples": 33382,
-      "outside_palette_pct": 0.015,
+      "samples": 33376,
+      "outside_palette_pct": 0.012,
       "status": "pass"
     },
     {
@@ -3912,8 +3912,8 @@
       "file": "jupiter-m.webp",
       "sparse_water_frame": false,
       "geographic_samples": 8169,
-      "samples": 8050,
-      "outside_palette_pct": 0.05,
+      "samples": 8051,
+      "outside_palette_pct": 0.062,
       "status": "pass"
     },
     {
@@ -4033,8 +4033,8 @@
       "file": "nsb.webp",
       "sparse_water_frame": false,
       "geographic_samples": 36694,
-      "samples": 36520,
-      "outside_palette_pct": 0.027,
+      "samples": 36514,
+      "outside_palette_pct": 0.047,
       "status": "pass"
     },
     {
@@ -4044,8 +4044,8 @@
       "file": "nsb-m.webp",
       "sparse_water_frame": false,
       "geographic_samples": 13523,
-      "samples": 13402,
-      "outside_palette_pct": 0.022,
+      "samples": 13395,
+      "outside_palette_pct": 0.075,
       "status": "pass"
     },
     {
@@ -4736,9 +4736,9 @@
       "frame": "desktop",
       "file": "dania-beach.webp",
       "sparse_water_frame": false,
-      "geographic_samples": 48778,
-      "samples": 48733,
-      "outside_palette_pct": 0.01,
+      "geographic_samples": 49533,
+      "samples": 49460,
+      "outside_palette_pct": 0.018,
       "status": "pass"
     },
     {
@@ -4747,9 +4747,9 @@
       "frame": "mobile",
       "file": "dania-beach-m.webp",
       "sparse_water_frame": false,
-      "geographic_samples": 23118,
-      "samples": 23086,
-      "outside_palette_pct": 0.022,
+      "geographic_samples": 23998,
+      "samples": 23933,
+      "outside_palette_pct": 0.029,
       "status": "pass"
     },
     {
@@ -4758,8 +4758,8 @@
       "frame": "desktop",
       "file": "dania-beach-close.webp",
       "sparse_water_frame": false,
-      "geographic_samples": 38306,
-      "samples": 38166,
+      "geographic_samples": 40055,
+      "samples": 39859,
       "outside_palette_pct": 0.018,
       "status": "pass"
     },
@@ -4769,8 +4769,8 @@
       "frame": "mobile",
       "file": "dania-beach-close-m.webp",
       "sparse_water_frame": false,
-      "geographic_samples": 12869,
-      "samples": 12769,
+      "geographic_samples": 12443,
+      "samples": 12319,
       "outside_palette_pct": 0.008,
       "status": "pass"
     },
@@ -5265,8 +5265,8 @@
       "file": "west-palm-beach.webp",
       "sparse_water_frame": false,
       "geographic_samples": 35537,
-      "samples": 35396,
-      "outside_palette_pct": 0.003,
+      "samples": 35354,
+      "outside_palette_pct": 0.034,
       "status": "pass"
     },
     {
@@ -5276,8 +5276,8 @@
       "file": "west-palm-beach-m.webp",
       "sparse_water_frame": false,
       "geographic_samples": 12606,
-      "samples": 12490,
-      "outside_palette_pct": 0.0,
+      "samples": 12482,
+      "outside_palette_pct": 0.008,
       "status": "pass"
     },
     {
@@ -5288,7 +5288,7 @@
       "sparse_water_frame": false,
       "geographic_samples": 22293,
       "samples": 21546,
-      "outside_palette_pct": 0.037,
+      "outside_palette_pct": 0.019,
       "status": "pass"
     },
     {
@@ -6321,8 +6321,8 @@
       "file": "juno-beach.webp",
       "sparse_water_frame": false,
       "geographic_samples": 39190,
-      "samples": 39136,
-      "outside_palette_pct": 0.01,
+      "samples": 39080,
+      "outside_palette_pct": 0.023,
       "status": "pass"
     },
     {
@@ -6332,8 +6332,8 @@
       "file": "juno-beach-m.webp",
       "sparse_water_frame": false,
       "geographic_samples": 12623,
-      "samples": 12581,
-      "outside_palette_pct": 0.032,
+      "samples": 12582,
+      "outside_palette_pct": 0.0,
       "status": "pass"
     },
     {
@@ -6343,8 +6343,8 @@
       "file": "juno-beach-close.webp",
       "sparse_water_frame": false,
       "geographic_samples": 17235,
-      "samples": 17109,
-      "outside_palette_pct": 0.018,
+      "samples": 17111,
+      "outside_palette_pct": 0.012,
       "status": "pass"
     },
     {
@@ -6354,8 +6354,8 @@
       "file": "juno-beach-close-m.webp",
       "sparse_water_frame": false,
       "geographic_samples": 645,
-      "samples": 595,
-      "outside_palette_pct": 0.168,
+      "samples": 594,
+      "outside_palette_pct": 0.0,
       "status": "pass"
     },
     {
@@ -6453,8 +6453,8 @@
       "file": "lake-park.webp",
       "sparse_water_frame": false,
       "geographic_samples": 28321,
-      "samples": 28230,
-      "outside_palette_pct": 0.004,
+      "samples": 28226,
+      "outside_palette_pct": 0.007,
       "status": "pass"
     },
     {
@@ -6464,8 +6464,8 @@
       "file": "lake-park-m.webp",
       "sparse_water_frame": false,
       "geographic_samples": 16266,
-      "samples": 16182,
-      "outside_palette_pct": 0.0,
+      "samples": 16186,
+      "outside_palette_pct": 0.012,
       "status": "pass"
     },
     {

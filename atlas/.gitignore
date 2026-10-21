@@ -38,3 +38,5 @@ __pycache__/
 pipeline/work/coastal_pipeline/v4/**/*-hero-canopy.png
 # Derived region-wide land cover exceeds the 50 MB handoff limit; rebuild from OSM.
 pipeline/work/coastal_pipeline/v4/daytona-flagler/landcover.json
+# Re-downloadable imagery footprint inputs for fixed-frame repairs.
+/pipeline/work/coastal_pipeline/v4/landing-repair/**/supplemental-buildings.json

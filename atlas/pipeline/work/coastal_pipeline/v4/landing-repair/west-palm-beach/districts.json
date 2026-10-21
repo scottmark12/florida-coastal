@@ -1,0 +1,28 @@
+[
+  {
+    "town": "west-palm-beach",
+    "id": "west-palm-beach-center",
+    "name": "West Palm Beach",
+    "kind": "walk",
+    "description": "The downtown of Palm Beach County, with Clematis Street, a waterfront, the Norton Museum of Art and a Brightline train station.",
+    "style": "west-palm-beach",
+    "lon": -80.0532942,
+    "lat": 26.715364,
+    "x": 391.87904531248904,
+    "y": 307.4214077118206,
+    "positionSource": "https://www.openstreetmap.org/node/154153690",
+    "centerMeaning": "Representative OSM town place-label anchor: West Palm Beach",
+    "priceRange": "$334,950 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/palm-beach-county/west-palm-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 334950,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-17",
+      "source": "https://www.realtor.com/local/market/florida/palm-beach-county/west-palm-beach"
+    },
+    "source": "https://www.palmbeachpreservation.org/explore-palm-beach/",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

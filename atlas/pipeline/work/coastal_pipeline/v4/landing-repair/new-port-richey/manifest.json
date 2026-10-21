@@ -1,0 +1,129 @@
+{
+  "id": "landing-repair/new-port-richey",
+  "name": "St. Pete and the Clearwater Beaches",
+  "towns": [
+    "new-port-richey"
+  ],
+  "bounds": [
+    -82.75076940741094,
+    28.222636946376195,
+    -82.68686569613989,
+    28.273813695324225
+  ],
+  "recipes": "work/coastal_pipeline/v4/st-pete-clearwater/recipes.json",
+  "camera": {
+    "center": [
+      123.81957409450845,
+      442.7432629288853
+    ],
+    "desktopSpan": 80,
+    "phoneSpan": 38,
+    "phoneOffsetY": 14
+  },
+  "district_recipes": {
+    "new-port-richey-center": "new-port-richey"
+  },
+  "manual_fixes": [
+    "Downtown uses the OSM Saint Petersburg place-label point as its representative anchor, not a surveyed district centroid.",
+    "Old Northeast recipe mixes historic porch-house and Mediterranean colors; per-building facade colors are illustrative.",
+    "Expanded inputs to the existing St. Pete/Clearwater catalog towns; retained Downtown and Old Northeast as separate St. Petersburg districts.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Framed the long peninsula by its north/south district extents, with a phone offset that leaves the southern towns above the controls. Buildings and anchors remain at source positions.",
+    "Placed Downtown and Old Northeast first in the St. Pete district choices so Town opens on St. Pete instead of an unrelated northern town.",
+    "The shared exporter needed lossless indexing of repeated overview vertices to meet 4 MB. Every decoded triangle position was compared exactly; Miami was revalidated.",
+    "Landing source envelope extended to the fixed frame plus 600 m; original camera, hero, palette and district styles retained."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/landing-repair/new-port-richey/geography.json.gz",
+      "work/coastal_pipeline/v4/landing-repair/new-port-richey/cover.json.gz",
+      "work/coastal_pipeline/v4/landing-repair/new-port-richey/district-new-port-richey.json.gz",
+      "work/coastal_pipeline/v4/landing-repair/new-port-richey/supplemental-buildings.json"
+    ],
+    "districts": "work/coastal_pipeline/v4/landing-repair/new-port-richey/districts.json",
+    "prices": "work/coastal_pipeline/v4/landing-repair/new-port-richey/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/landing-repair/new-port-richey/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/landing-repair/new-port-richey/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/landing-repair/new-port-richey/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/landing-repair/new-port-richey/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/landing-repair/new-port-richey/frame-worldcover-2021.png",
+        "bounds": [
+          -82.75083333333333,
+          28.222666666666665,
+          -82.68691666666666,
+          28.273833333333332
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+        "surveyYear": 2021,
+        "district": "new-port-richey-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ],
+    "supplementalBuildingSources": [
+      {
+        "source": "https://github.com/microsoft/GlobalMLBuildingFootprints",
+        "license": "CDLA Permissive 2.0",
+        "license_url": "https://github.com/microsoft/GlobalMLBuildingFootprints/blob/main/LICENSE",
+        "downloads": [
+          {
+            "download": "https://minedbuildings.z5.web.core.windows.net/global-buildings/2026-02-03/global-buildings.geojsonl/RegionName=UnitedStates/quadkey=032021230/part-00174-4feead82-d499-422b-94cb-c036c212127a.c000.csv.gz",
+            "sha256": "7af185a4aa980d2c0e595699aace6a54a820bd3268c71584182f659aa2761933"
+          }
+        ],
+        "footprints": 13974,
+        "notes": [
+          "Non-overlapping imagery-derived footprints, not OSM records or a surveyed height inventory. Negative IDs are local supplemental IDs."
+        ],
+        "download": "https://github.com/microsoft/GlobalMLBuildingFootprints"
+      }
+    ]
+  },
+  "coverage": {
+    "bounds_lonlat": [
+      -82.75076940741094,
+      28.222636946376195,
+      -82.68686569613989,
+      28.273813695324225
+    ],
+    "frame_bounds_km": [
+      122.96235829677109,
+      469.80508884851645,
+      127.9623582967711,
+      474.2245062309323
+    ],
+    "source": "OSM full-frame extraction/query, approved parent coastline and ESA WorldCover 2021."
+  }
+}

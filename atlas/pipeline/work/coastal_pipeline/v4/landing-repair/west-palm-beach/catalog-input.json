@@ -1,0 +1,58 @@
+{
+  "region": {
+    "id": "landing-repair/west-palm-beach",
+    "name": "West Palm Beach"
+  },
+  "towns": [
+    {
+      "id": "west-palm-beach",
+      "name": "West Palm Beach",
+      "region": "Southeast Atlantic",
+      "coast": "atlantic",
+      "lat": 26.715364,
+      "lon": -80.0532942,
+      "tier": 2,
+      "price": "$334,950 median listing price \u00b7 September 2026",
+      "vibes": [
+        "walk"
+      ],
+      "airport": "Palm Beach airport, about 10 minutes",
+      "season": "Busy winters",
+      "watch": "Traffic, rising prices",
+      "blurb": "The downtown of Palm Beach County, with Clematis Street, a waterfront, the Norton Museum of Art and a Brightline train station.",
+      "day": "You walk the waterfront to the Saturday GreenMarket, spend the afternoon at the Norton and stay out on Clematis Street.",
+      "todo": [
+        [
+          "Clematis Street",
+          "The main downtown strip for restaurants, bars and live music."
+        ]
+      ],
+      "pros": [
+        "A real downtown with nightlife and arts",
+        "The airport and the train are minutes away"
+      ],
+      "cons": [
+        "The ocean beach is across the bridge in Palm Beach",
+        "Prices are rising fast"
+      ],
+      "x": 391.87904531248904,
+      "y": 307.4214077118206,
+      "area_id": "palm-beaches",
+      "area_name": "The Palm Beaches",
+      "source_url": "https://www.floridacoastal.co/towns/west-palm-beach.html",
+      "nearest_town_km": 1.9618257464295068,
+      "source_bounds": [
+        -80.09737977944022,
+        26.680330910351653,
+        -80.01247313448953,
+        26.749201483187957
+      ]
+    }
+  ],
+  "bounds": [
+    -80.09737977944022,
+    26.680330910351653,
+    -80.01247313448953,
+    26.749201483187957
+  ]
+}

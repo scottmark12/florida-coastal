@@ -1,0 +1,113 @@
+{
+  "id": "landing-repair/juno-beach",
+  "name": "Juno Beach",
+  "towns": [
+    "juno-beach"
+  ],
+  "bounds": [
+    -80.0936784533959,
+    26.86201005279577,
+    -80.02937161480936,
+    26.914381967697956
+  ],
+  "recipes": "work/coastal_pipeline/v4/palm-beaches/recipes.json",
+  "camera": {
+    "center": [
+      391.22611400497317,
+      325.85958156282743
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "juno-beach-center": "juno-beach"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Added seven omitted coastal and lagoon towns after checking the official Palm Beaches directory.",
+    "New price evidence checked October 20, 2026; published September 2026 listing medians. Lake Worth Beach uses the county table because its direct city report was region-restricted.",
+    "West Palm Beach uses glass downtown and pitched-roof historic residential blocks outside the downtown style zone.",
+    "Jupiter Inlet Light keeps its mapped footprint and height rules, with red brick and a dark lantern silhouette from the Florida Lighthouse Association reference.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Landing source envelope extended to the fixed frame plus 600 m; original camera, hero, palette and district styles retained."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/landing-repair/juno-beach/geography.json.gz",
+      "work/coastal_pipeline/v4/landing-repair/juno-beach/cover.json.gz",
+      "work/coastal_pipeline/v4/landing-repair/juno-beach/district-juno-beach.json.gz",
+      "work/coastal_pipeline/v4/palm-beaches/geography.json.gz",
+      "work/coastal_pipeline/v4/palm-beaches/cover.json.gz",
+      "work/coastal_pipeline/v4/palm-beaches/district-juno-beach.json.gz",
+      "work/coastal_pipeline/v4/palm-beaches/landmarks-juno-beach.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/landing-repair/juno-beach/districts.json",
+    "prices": "work/coastal_pipeline/v4/landing-repair/juno-beach/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/landing-repair/juno-beach/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/landing-repair/juno-beach/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/landing-repair/juno-beach/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/landing-repair/juno-beach/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/landing-repair/juno-beach/frame-worldcover-2021.png",
+        "bounds": [
+          -80.09375,
+          26.862083333333334,
+          -80.02941666666666,
+          26.914416666666668
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "juno-beach-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  },
+  "coverage": {
+    "bounds_lonlat": [
+      -80.0936784533959,
+      26.86201005279577,
+      -80.02937161480936,
+      26.914381967697956
+    ],
+    "frame_bounds_km": [
+      387.9486196569168,
+      324.36391489866094,
+      392.9486196569168,
+      328.7833322810768
+    ],
+    "source": "OSM full-frame extraction/query, approved parent coastline and ESA WorldCover 2021."
+  }
+}

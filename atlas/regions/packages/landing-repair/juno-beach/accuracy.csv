@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+Juno Beach,391.2261047363281,325.8595886230469,-80.0539253911457,26.881547566230516,-80.0539253,26.8815475,0.0117,https://www.openstreetmap.org/node/154325150,Representative OSM town place-label anchor: Juno Beach

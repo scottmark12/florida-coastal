@@ -1,0 +1,24 @@
+{
+  "path": "work/coastal_pipeline/v4/landing-repair/west-palm-beach/frame-worldcover-2021.png",
+  "bounds": [
+    -80.09741666666666,
+    26.680416666666666,
+    -80.0125,
+    26.74925
+  ],
+  "canopyRGB": [
+    38,
+    115,
+    0
+  ],
+  "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+  "surveyYear": 2021,
+  "district": "west-palm-beach-center",
+  "license": "CC BY 4.0",
+  "attribution": "ESA WorldCover 10 m 2021 v200",
+  "classes": [
+    10,
+    95
+  ],
+  "resolutionMeters": 10
+}

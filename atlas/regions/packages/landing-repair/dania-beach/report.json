@@ -1,0 +1,27 @@
+{
+  "region": "landing-repair/dania-beach",
+  "building_count": 2933,
+  "tree_count": 63753,
+  "region_bytes": 69491,
+  "max_tile_bytes": 153055,
+  "max_anchor_error_m": 0.013,
+  "max_coast_float32_error_m": 0.017022988473992202,
+  "height_sources": {
+    "assumed-house": 61,
+    "estimated-nonresidential": 2751,
+    "estimated-type-footprint": 14,
+    "height": 12,
+    "levels": 95
+  },
+  "max_height_width_ratio": 3.0000000000000004,
+  "engine_sha256": "80a5d1196bfb7ed0d69e71a69e5ba39dcd12b71fd2948672689704c7b186353f",
+  "phone_hardware_verified": false,
+  "notes": [
+    "Source-alignment checks are not independent survey accuracy.",
+    "Canopy extent is sourced; crowns within canopy polygons are illustrative. See canopy-sources.json.",
+    "Unmapped heights remain explicitly flagged estimates."
+  ],
+  "status": "candidate; visual QA required",
+  "exported_boundary_source_error_m": 27.542669690579686,
+  "boundary_check": "Every input coast vertex distance to actual serialized land boundary; not a survey"
+}

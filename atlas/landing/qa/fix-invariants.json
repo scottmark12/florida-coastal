@@ -1,0 +1,111 @@
+{
+  "towns_checked": 167,
+  "heroes_callouts_spans_unchanged": true,
+  "camera_exceptions": [
+    {
+      "town_id": "dania-beach",
+      "shift_south_m": 500,
+      "reason": "User-authorized port/airport framing exception; public beach hero unchanged."
+    }
+  ],
+  "captured_views": [
+    {
+      "town_id": "30a",
+      "view": "town",
+      "files": [
+        "30a.webp",
+        "30a-m.webp"
+      ]
+    },
+    {
+      "town_id": "new-port-richey",
+      "view": "town",
+      "files": [
+        "new-port-richey.webp",
+        "new-port-richey-m.webp"
+      ]
+    },
+    {
+      "town_id": "new-port-richey",
+      "view": "street",
+      "files": [
+        "new-port-richey-close.webp",
+        "new-port-richey-close-m.webp"
+      ]
+    },
+    {
+      "town_id": "jupiter",
+      "view": "town",
+      "files": [
+        "jupiter.webp",
+        "jupiter-m.webp"
+      ]
+    },
+    {
+      "town_id": "nsb",
+      "view": "town",
+      "files": [
+        "nsb.webp",
+        "nsb-m.webp"
+      ]
+    },
+    {
+      "town_id": "dania-beach",
+      "view": "town",
+      "files": [
+        "dania-beach.webp",
+        "dania-beach-m.webp"
+      ]
+    },
+    {
+      "town_id": "dania-beach",
+      "view": "street",
+      "files": [
+        "dania-beach-close.webp",
+        "dania-beach-close-m.webp"
+      ]
+    },
+    {
+      "town_id": "west-palm-beach",
+      "view": "town",
+      "files": [
+        "west-palm-beach.webp",
+        "west-palm-beach-m.webp"
+      ]
+    },
+    {
+      "town_id": "west-palm-beach",
+      "view": "street",
+      "files": [
+        "west-palm-beach-close.webp",
+        "west-palm-beach-close-m.webp"
+      ]
+    },
+    {
+      "town_id": "juno-beach",
+      "view": "town",
+      "files": [
+        "juno-beach.webp",
+        "juno-beach-m.webp"
+      ]
+    },
+    {
+      "town_id": "juno-beach",
+      "view": "street",
+      "files": [
+        "juno-beach-close.webp",
+        "juno-beach-close-m.webp"
+      ]
+    },
+    {
+      "town_id": "lake-park",
+      "view": "town",
+      "files": [
+        "lake-park.webp",
+        "lake-park-m.webp"
+      ]
+    }
+  ],
+  "water_palette_unchanged": true,
+  "camera_locked_towns": 166
+}

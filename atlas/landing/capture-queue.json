@@ -5994,17 +5994,17 @@
   {
     "town_id": "dania-beach",
     "view": "town",
-    "url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=234.49303673570714&span=5.0",
+    "url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=233.99303673570714&span=5.0",
     "camera": {
       "position": [
         388.054126618173,
         3.90625,
-        -230.58678673570714
+        -230.08678673570714
       ],
       "target": [
         388.054126618173,
         0,
-        -234.49303673570714
+        -233.99303673570714
       ],
       "left": -2.5,
       "right": 2.5,
@@ -6022,17 +6022,17 @@
   {
     "town_id": "dania-beach",
     "view": "street",
-    "url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=234.49303673570714&span=2.0",
+    "url": "../explore_coast.html?view=dania-beach&level=town&district=dania-beach-center&landing=1&cx=388.054126618173&cy=233.99303673570714&span=2.0",
     "camera": {
       "position": [
         388.054126618173,
         1.5625,
-        -232.93053673570714
+        -232.43053673570714
       ],
       "target": [
         388.054126618173,
         0,
-        -234.49303673570714
+        -233.99303673570714
       ],
       "left": -1.0,
       "right": 1.0,

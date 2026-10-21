@@ -1,0 +1,59 @@
+{
+  "region": {
+    "id": "landing-repair/nsb",
+    "name": "New Smyrna Beach"
+  },
+  "towns": [
+    {
+      "id": "nsb",
+      "name": "New Smyrna Beach",
+      "region": "Central Atlantic",
+      "coast": "atlantic",
+      "lat": 29.0258132,
+      "lon": -80.9271271,
+      "tier": 2,
+      "price": "$529,900 median listing price \u00b7 September 2026",
+      "vibes": [
+        "island",
+        "beaches",
+        "active"
+      ],
+      "airport": "Daytona Beach (DAB) or Orlando (MCO)",
+      "season": "Busy summer weekends",
+      "watch": "Hurricane exposure on the barrier island",
+      "blurb": "A laid back surf town about an hour from Orlando.",
+      "day": "You check the surf before breakfast and end the day with tacos on Flagler Avenue.",
+      "todo": [
+        [
+          "Flagler Avenue",
+          "The walkable beach strip."
+        ]
+      ],
+      "pros": [
+        "Casual and friendly",
+        "Good surf"
+      ],
+      "cons": [
+        "Summer crowds"
+      ],
+      "x": 298.7416030439824,
+      "y": 561.4392932116486,
+      "area_id": "daytona-flagler",
+      "area_name": "Daytona, New Smyrna and Flagler",
+      "source_url": "https://www.floridacoastal.co/towns/nsb.html",
+      "nearest_town_km": 14.084619675762712,
+      "source_bounds": [
+        -80.93386622185655,
+        29.00414411604814,
+        -80.86866461420483,
+        29.056134609181623
+      ]
+    }
+  ],
+  "bounds": [
+    -80.93386622185655,
+    29.00414411604814,
+    -80.86866461420483,
+    29.056134609181623
+  ]
+}

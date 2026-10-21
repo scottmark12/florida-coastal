@@ -49,3 +49,7 @@ result={'town_count':len(index['towns']),'view_count':len(rows),'image_count':le
 
 from check_water_palette import check
 check(index)
+from check_landing_extents import audit
+from check_landing_textures import check as check_textures
+audit()
+check_textures()

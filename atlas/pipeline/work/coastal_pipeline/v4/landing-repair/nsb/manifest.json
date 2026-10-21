@@ -1,0 +1,110 @@
+{
+  "id": "landing-repair/nsb",
+  "name": "New Smyrna Beach",
+  "towns": [
+    "nsb"
+  ],
+  "bounds": [
+    -80.93386622185655,
+    29.00414411604814,
+    -80.86866461420483,
+    29.056134609181623
+  ],
+  "recipes": "work/coastal_pipeline/v4/daytona-flagler/recipes.json",
+  "camera": {
+    "center": [
+      298.7416030439824,
+      561.4392932116486
+    ],
+    "desktopSpan": 8,
+    "phoneSpan": 8,
+    "phoneOffsetY": 0
+  },
+  "district_recipes": {
+    "nsb-center": "nsb"
+  },
+  "manual_fixes": [
+    "District palettes were selected editorially from local or regional character references; these colors are not a surveyed facade inventory.",
+    "Curated real waterfront hero cameras; place-label coordinates remain the district source anchors.",
+    "Flagler Beach pier is under reconstruction: mapped pier geometry is not a statement that the pier is open. See https://www.cityofflaglerbeach.com/334/Downtown-City-Projects.",
+    "Existing Census land context continues beyond the OSM data rectangle, avoiding artificial water edges at the package boundary.",
+    "Landing source envelope extended to the fixed frame plus 600 m; original camera, hero, palette and district styles retained."
+  ],
+  "inputs": {
+    "osm": [
+      "work/coastal_pipeline/v4/landing-repair/nsb/geography.json.gz",
+      "work/coastal_pipeline/v4/landing-repair/nsb/cover.json.gz",
+      "work/coastal_pipeline/v4/landing-repair/nsb/district-nsb.json.gz",
+      "work/coastal_pipeline/v4/daytona-flagler/geography.json.gz",
+      "work/coastal_pipeline/v4/daytona-flagler/cover.json.gz",
+      "work/coastal_pipeline/v4/daytona-flagler/district-nsb.json.gz"
+    ],
+    "districts": "work/coastal_pipeline/v4/landing-repair/nsb/districts.json",
+    "prices": "work/coastal_pipeline/v4/landing-repair/nsb/districts.json",
+    "land": {
+      "path": "work/coastal_pipeline/v4/landing-repair/nsb/land.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "shoreline": {
+      "path": "work/coastal_pipeline/v4/landing-repair/nsb/shoreline.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "landcover": {
+      "path": "work/coastal_pipeline/v4/landing-repair/nsb/landcover.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "roads": {
+      "path": "work/coastal_pipeline/v4/landing-repair/nsb/roads.json",
+      "source": "https://www.openstreetmap.org/copyright",
+      "license": "ODbL 1.0",
+      "license_verified": true
+    },
+    "canopyRasters": [
+      {
+        "path": "work/coastal_pipeline/v4/landing-repair/nsb/frame-worldcover-2021.png",
+        "bounds": [
+          -80.93391666666666,
+          29.004166666666666,
+          -80.86875,
+          29.056166666666666
+        ],
+        "canopyRGB": [
+          38,
+          115,
+          0
+        ],
+        "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W081_Map.tif",
+        "surveyYear": 2021,
+        "district": "nsb-center",
+        "license": "CC BY 4.0",
+        "attribution": "ESA WorldCover 10 m 2021 v200",
+        "classes": [
+          10,
+          95
+        ],
+        "resolutionMeters": 10
+      }
+    ]
+  },
+  "coverage": {
+    "bounds_lonlat": [
+      -80.93386622185655,
+      29.00414411604814,
+      -80.86866461420483,
+      29.056134609181623
+    ],
+    "frame_bounds_km": [
+      298.7425206655232,
+      559.7731153489078,
+      303.7425206655232,
+      564.1925327313238
+    ],
+    "source": "OSM full-frame extraction/query, approved parent coastline and ESA WorldCover 2021."
+  }
+}

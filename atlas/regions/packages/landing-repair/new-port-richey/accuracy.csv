@@ -1,0 +1,2 @@
+district,model_x_km,model_y_km,model_lon,model_lat,osm_lon,osm_lat,distance_m,source,anchor_definition
+New Port Richey,125.4237289428711,471.5643615722656,-82.71926711077201,28.244176767695727,-82.7192671,28.2441768,0.0037,https://www.openstreetmap.org/node/153904041,Representative OSM town place-label anchor: New Port Richey

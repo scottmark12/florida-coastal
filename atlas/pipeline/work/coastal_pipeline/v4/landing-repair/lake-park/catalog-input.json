@@ -1,0 +1,41 @@
+{
+  "region": {
+    "id": "landing-repair/lake-park",
+    "name": "Lake Park"
+  },
+  "towns": [
+    {
+      "id": "lake-park",
+      "name": "Lake Park",
+      "region": "Atlantic Coast \u00b7 The Palm Beaches",
+      "coast": "atlantic",
+      "lon": -80.0661631,
+      "lat": 26.8002153,
+      "price": "$1,200,000 median listing price \u00b7 September 2026",
+      "vibes": [
+        "beaches",
+        "dock"
+      ],
+      "blurb": "Low-rise neighborhoods and a marina on Lake Worth Lagoon, with new waterfront towers.",
+      "area_id": "palm-beaches",
+      "area_name": "The Palm Beaches",
+      "source_url": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+      "x": 390.30123707598744,
+      "y": 316.79577217226324,
+      "tier": 2,
+      "nearest_town_km": 0,
+      "source_bounds": [
+        -80.08703714230913,
+        26.76908776706716,
+        -80.02278158488953,
+        26.821464694049745
+      ]
+    }
+  ],
+  "bounds": [
+    -80.08703714230913,
+    26.76908776706716,
+    -80.02278158488953,
+    26.821464694049745
+  ]
+}

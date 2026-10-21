@@ -1,0 +1,28 @@
+[
+  {
+    "town": "juno-beach",
+    "id": "juno-beach-center",
+    "name": "Juno Beach",
+    "kind": "beach",
+    "description": "Oceanfront condos, sea-turtle beaches and the long fishing pier.",
+    "style": "juno-beach",
+    "lon": -80.0539253,
+    "lat": 26.8815475,
+    "x": 391.22611400497317,
+    "y": 325.85958156282743,
+    "positionSource": "https://www.openstreetmap.org/node/154325150",
+    "centerMeaning": "Representative OSM town place-label anchor: Juno Beach",
+    "priceRange": "$1,330,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/palm-beach-county/juno-beach",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1330000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-20",
+      "source": "https://www.realtor.com/local/market/florida/palm-beach-county/juno-beach"
+    },
+    "source": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

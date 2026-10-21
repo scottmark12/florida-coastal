@@ -1,0 +1,24 @@
+{
+  "path": "work/coastal_pipeline/v4/landing-repair/lake-park/frame-worldcover-2021.png",
+  "bounds": [
+    -80.08708333333334,
+    26.769083333333334,
+    -80.02283333333334,
+    26.8215
+  ],
+  "canopyRGB": [
+    38,
+    115,
+    0
+  ],
+  "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N24W081_Map.tif",
+  "surveyYear": 2021,
+  "district": "lake-park-center",
+  "license": "CC BY 4.0",
+  "attribution": "ESA WorldCover 10 m 2021 v200",
+  "classes": [
+    10,
+    95
+  ],
+  "resolutionMeters": 10
+}

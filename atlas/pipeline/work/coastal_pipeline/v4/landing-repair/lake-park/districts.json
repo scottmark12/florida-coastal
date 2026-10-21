@@ -1,0 +1,28 @@
+[
+  {
+    "town": "lake-park",
+    "id": "lake-park-center",
+    "name": "Lake Park",
+    "kind": "beach",
+    "description": "Low-rise neighborhoods and a marina on Lake Worth Lagoon, with new waterfront towers.",
+    "style": "lake-park",
+    "lon": -80.0661631,
+    "lat": 26.8002153,
+    "x": 390.30123707598744,
+    "y": 316.79577217226324,
+    "positionSource": "https://www.openstreetmap.org/node/153893337",
+    "centerMeaning": "Representative OSM town place-label anchor: Lake Park",
+    "priceRange": "$1,200,000 median listing price \u00b7 September 2026",
+    "priceSource": "https://www.realtor.com/local/market/florida/palm-beach-county/lake-park",
+    "priceEvidence": {
+      "kind": "published median",
+      "value": 1200000,
+      "metric": "median listing price",
+      "period": "September 2026",
+      "checked": "2026-10-20",
+      "source": "https://www.realtor.com/local/market/florida/palm-beach-county/lake-park"
+    },
+    "source": "https://www.thepalmbeaches.com/cities-beach-towns-palm-beaches",
+    "priceStatus": "Published market median; reporting period shown on card."
+  }
+]

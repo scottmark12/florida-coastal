@@ -354,3 +354,10 @@ and `callout-name-audit.json` for proof. Sanibel Close has no named callout insi
 its fixed phone frame and is intentionally empty. Three Close phone crops have
 no sampleable open water; those are explicit QA records, not palette passes.
 The existing 17 fixed-zoom island land-coverage exceptions remain unchanged.
+
+Latest landing repairs: see `landing/fix-review.html` and
+`pipeline/landing-repairs.md`. Juno Beach, West Palm Beach, 30A, New Port Richey
+and Dania Beach have a focused before/after contact sheet. The extent guard now
+checks all 167 towns; Jupiter, Lake Park and New Smyrna Beach received the same
+source-edge repair. Only Dania's camera targets move, 500 m south under the
+requested port exception; public heroes, callouts, spans and palette stay fixed.

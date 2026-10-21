@@ -1,0 +1,24 @@
+{
+  "path": "work/coastal_pipeline/v4/landing-repair/new-port-richey/frame-worldcover-2021.png",
+  "bounds": [
+    -82.75083333333333,
+    28.222666666666665,
+    -82.68691666666666,
+    28.273833333333332
+  ],
+  "canopyRGB": [
+    38,
+    115,
+    0
+  ],
+  "source": "https://esa-worldcover.s3.eu-central-1.amazonaws.com/v200/2021/map/ESA_WorldCover_10m_2021_v200_N27W084_Map.tif",
+  "surveyYear": 2021,
+  "district": "new-port-richey-center",
+  "license": "CC BY 4.0",
+  "attribution": "ESA WorldCover 10 m 2021 v200",
+  "classes": [
+    10,
+    95
+  ],
+  "resolutionMeters": 10
+}
