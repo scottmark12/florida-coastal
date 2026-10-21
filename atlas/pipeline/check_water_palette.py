@@ -13,7 +13,7 @@ from scipy.ndimage import distance_transform_edt
 from landing_water import PALETTE,rgb
 from fixed_landings import A,OUT
 
-def check(index=None,fail=True):
+def check(index=None,fail=True,report_path=None):
  index=index or json.load(open(A/'landing/index.json'));meta=json.load(open(A/'regions/landing-water/index.json'));rows=[]
  # The desktop capture transport encodes display-P3 channel values without an
  # ICC tag. Convert the sRGB recipe endpoints to those captured channel values;
@@ -39,7 +39,7 @@ def check(index=None,fail=True):
     else:outside=0.;status='FAIL' if geographic_samples>=20 else 'no_open_water_samples'
     rows.append({'town_id':t['town_id'],'view':level,'frame':frame,'file':v[frame],'sparse_water_frame':geographic_samples<mask.size*.01,'geographic_samples':geographic_samples,'samples':len(samples),'outside_palette_pct':round(outside,3),'status':status})
  result={'palette':PALETTE,'method':__doc__,'capture_endpoint_rgb':{'shallow':lo.tolist(),'deep':hi.tolist()},'images_checked':len(rows),'flags':[r for r in rows if r['status']=='FAIL'],'rows':rows}
- (A/'landing/qa/water-palette.json').write_text(json.dumps(result,indent=2)+'\n')
+ (report_path or A/'landing/qa/water-palette.json').write_text(json.dumps(result,indent=2)+'\n')
  print('Water palette:',len(rows),'images;',len(result['flags']),'flags',flush=True)
  if fail:assert not result['flags'],[(r['file'],r['outside_palette_pct']) for r in result['flags']]
  return result
