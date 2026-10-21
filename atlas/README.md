@@ -32,13 +32,13 @@ Here “finished” means the existing approved or review-ready detailed package
 | Nature Coast | `keaton-beach`, `steinhatchee`, `horseshoe-beach`, `suwannee`, `cedarkey`, `inglis`, `yankeetown`, `crystal-river`, `ozello`, `homosassa`, `weeki-wachee`, `hernando-beach`, `aripeka` | [Nature Coast](regions/packages/nature-coast/atlas-review.html) |
 
 
-Remaining towns in Fort Myers, Keys, Palm Beaches, Fort Lauderdale, Treasure Coast, Space Coast, Daytona and First Coast beyond Jacksonville retain overview coverage and are not finished detailed packages. They do not receive landing exports yet.
+All 167 catalog towns now have verified Town and Close landing exports. The manifest and fixed-camera QA report are the current export inventory; older regional notes below describe earlier build stages.
 
 ## Landing images
 
-45 towns × four WebP files: `<town-id>.webp` and `<town-id>-m.webp` are the wider Town view; `<town-id>-close.webp` and `<town-id>-close-m.webp` retain the Street close view. Desktop is 1600×1000; phone is 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
+167 towns × four WebP files: `<town-id>.webp` and `<town-id>-m.webp` are the wider Town view; `<town-id>-close.webp` and `<town-id>-close-m.webp` retain the Street close view. Desktop is 1600×1000; phone is 800×1000. These are actual Town-view renders from this atlas, with UI, labels and selection markers hidden. The phone image is the centered half-width crop of the same camera view, with identical camera position/target and vertical extent. Each pair's camera, rendering URL and district lon/lat list are in `landing/index.json`.
 
-The 30A catalog entry describes a corridor, so its representative Town image is centered on Seaside; the exact representative center is recorded. Every image now uses its sourced hero point, recorded with a one-line reason. To regenerate a screenshot, serve the atlas and use the manifest's relative render URL at the corresponding viewport. `landing=1` enables the clean render mode. Wait for `body[data-ready="true"]`; `body[data-camera]` exposes the actual orthographic camera. Save as WebP at the specified dimensions. Images were inspected as a contact sheet; browser console checks found no errors during export.
+The 30A catalog entry describes a corridor, so its representative Town image is centered on Seaside; the exact representative center is recorded. Every image keeps a sourced public hero in frame, recorded with a one-line reason. Both zooms share a camera target; framing may shift inland while retaining the hero. To regenerate a screenshot, serve the atlas and use the manifest's relative render URL at the corresponding viewport. `landing=1` enables the clean render mode. Wait for `body[data-ready="true"]`; `body[data-camera]` exposes the actual orthographic camera. Save as WebP at the specified dimensions. Images were inspected as a contact sheet; browser console checks found no errors during export.
 
 **Attribution must appear beside the landing images in the live walkthrough**, since these deliberately contain no UI labels: © OpenStreetMap contributors, ODbL; ESA WorldCover 2021 v200 (CC BY 4.0) and Tampa/USF 2021 canopy where used. See package canopy sources, [OSM copyright](https://www.openstreetmap.org/copyright), and [WorldCover DOI](https://doi.org/10.5281/zenodo.7254221). Rendered crowns and building heights are illustrative, not surveys.
 
@@ -336,3 +336,11 @@ Sources/licensing: OSM/Geofabrik geometry under ODbL 1.0, ESA WorldCover 2021 v2
 First Coast source repair: the Florida PBF cuts coastline chains at the Georgia border, which initially caused tidal water to be classified as land. `fetch_first_coast_boundary.py` obtains the 134 actual adjoining OSM coastline ways (October 20) before polygonization; see northern-coast-source.json. No invented closure or relaxed accuracy gate.
 
 The St. Augustine Inlet sea/river seam (OSM way 82144581) is replaced in the shoreline input by mapped tidal river banks (relation 1204548), preserving the corrected land mask and the 150 m source check.
+
+## Fixed camera landing exports (current)
+
+All 167 towns have four fresh exports, with the approved geometry, art, lighting and 45° tilt unchanged. Town is 5 km, or 7 km only for the listed big-city IDs; Close is exactly 2 km. Centered phone crops halve those widths. No width exceptions were used.
+
+[Contact-sheet review](landing/fixed-camera-review.html) · [Full contact sheet](landing/qa/all-towns.jpg) · [QA CSV](landing/qa/report.csv) · [QA JSON](landing/qa/report.json). Water shortfalls are explicit flags under the approved narrow-island exception. Formal place limits use Census polygons; named unincorporated localities use reviewed public-feature and locality sources, distinguished in the manifest. Water measurements use the regional OSM-derived land geometry, including sand, so a clipped town extract is not mistaken for water.
+
+Re-run with [the fixed export steps](pipeline/landing-export.md). Raw inputs and browser PNG captures remain ignored. The site camera catalog uses the actual shared camera center, which can differ from the public hero point.

@@ -3,7 +3,7 @@
   "catalog_towns": 167,
   "missing": [],
   "images": 668,
-  "asset": "app.e91cbb254a.js",
+  "asset": "app.a88465d5cb.js",
   "town_ids": [
     "30a",
     "ami",
@@ -173,5 +173,5 @@
     "wilton-manors",
     "yankeetown"
   ],
-  "total_image_bytes": 100218000
+  "total_image_bytes": 119779754
 }

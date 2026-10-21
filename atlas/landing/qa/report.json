@@ -1,0 +1,3795 @@
+{
+  "towns": 167,
+  "images": 668,
+  "width_exceptions": [],
+  "flagged": [
+    {
+      "town_id": "clearwaterbeach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 79.26,
+      "water_pct_close": 65.11,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 69.35,
+      "water_pct_close_mobile": 50.54,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "ami",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 78.3,
+      "water_pct_close": 42.52,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 71.22,
+      "water_pct_close_mobile": 30.07,
+      "flags": [
+        "town_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "longboat",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 86.54,
+      "water_pct_close": 72.41,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 80.64,
+      "water_pct_close_mobile": 62.67,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "st-pete-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 76.79,
+      "water_pct_close": 61.19,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 65.7,
+      "water_pct_close_mobile": 36.77,
+      "flags": [
+        "town_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "bradenton-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 75.7,
+      "water_pct_close": 60.53,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 73.6,
+      "water_pct_close_mobile": 76.6,
+      "flags": [
+        "town_land_shortfall",
+        "close_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "chokoloskee",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 63.58,
+      "water_pct_close": 79.72,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 71.96,
+      "water_pct_close_mobile": 69.17,
+      "flags": [
+        "close_land_shortfall",
+        "close_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "pensacola-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 86.26,
+      "water_pct_close": 68.19,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 85.79,
+      "water_pct_close_mobile": 66.0,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall",
+        "close_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "st-george-island",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 83.72,
+      "water_pct_close": 64.93,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 83.23,
+      "water_pct_close_mobile": 61.04,
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "cedarkey",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 84.42,
+      "water_pct_close": 68.34,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 80.47,
+      "water_pct_close_mobile": 63.5,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "navarre-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 75.09,
+      "water_pct_close": 70.2,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 75.03,
+      "water_pct_close_mobile": 68.95,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall",
+        "close_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "belleair-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 61.97,
+      "water_pct_close": 65.33,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 64.99,
+      "water_pct_close_mobile": 61.15,
+      "flags": [
+        "close_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "tierra-verde",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 77.18,
+      "water_pct_close": 64.89,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 65.92,
+      "water_pct_close_mobile": 55.8,
+      "flags": [
+        "town_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "captiva",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 87.32,
+      "water_pct_close": 72.5,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 74.64,
+      "water_pct_close_mobile": 60.57,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "islamorada",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 83.82,
+      "water_pct_close": 68.61,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 78.76,
+      "water_pct_close_mobile": 61.5,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "cocoa",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 76.75,
+      "water_pct_close": 51.61,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 55.08,
+      "water_pct_close_mobile": 14.56,
+      "flags": [
+        "town_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "sanibel-island",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 79.99,
+      "water_pct_close": 64.25,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 84.25,
+      "water_pct_close_mobile": 59.39,
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "hutchinson-island",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 82.43,
+      "water_pct_close": 52.15,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 75.02,
+      "water_pct_close_mobile": 24.93,
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    }
+  ],
+  "rows": [
+    {
+      "town_id": "30a",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 39.25,
+      "water_pct_close": 21.37,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 38.81,
+      "water_pct_close_mobile": 18.39,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "dunedin",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.44,
+      "water_pct_close": 33.34,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 36.48,
+      "water_pct_close_mobile": 16.0,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "clearwaterbeach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 79.26,
+      "water_pct_close": 65.11,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 69.35,
+      "water_pct_close_mobile": 50.54,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "gulfport",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 40.1,
+      "water_pct_close": 23.48,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 40.53,
+      "water_pct_close_mobile": 20.1,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "ami",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 78.3,
+      "water_pct_close": 42.52,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 71.22,
+      "water_pct_close_mobile": 30.07,
+      "flags": [
+        "town_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "longboat",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 86.54,
+      "water_pct_close": 72.41,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 80.64,
+      "water_pct_close_mobile": 62.67,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "apollo-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.45,
+      "water_pct_close": 34.27,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 41.91,
+      "water_pct_close_mobile": 37.49,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "clearwater",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 37.11,
+      "water_pct_close": 31.65,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 33.3,
+      "water_pct_close_mobile": 15.13,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "indian-rocks-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 50.78,
+      "water_pct_close": 49.79,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 48.67,
+      "water_pct_close_mobile": 47.11,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "madeira-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 72.15,
+      "water_pct_close": 64.01,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 64.71,
+      "water_pct_close_mobile": 63.06,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "new-port-richey",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 8.45,
+      "water_pct_close": 4.55,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 4.12,
+      "water_pct_close_mobile": 5.43,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "ruskin",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 17.1,
+      "water_pct_close": 23.26,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 21.39,
+      "water_pct_close_mobile": 16.51,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "safety-harbor",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.57,
+      "water_pct_close": 22.19,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 37.99,
+      "water_pct_close_mobile": 9.8,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "st-pete-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 76.79,
+      "water_pct_close": 61.19,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 65.7,
+      "water_pct_close_mobile": 36.77,
+      "flags": [
+        "town_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "st-petersburg",
+      "frame_class": "standard",
+      "town_span_km": 7.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 3.5,
+      "water_pct_town": 36.39,
+      "water_pct_close": 19.14,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 27.37,
+      "water_pct_close_mobile": 9.12,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "sun-city-center",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 10.29,
+      "water_pct_close": 9.41,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 10.99,
+      "water_pct_close_mobile": 9.18,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "tampa",
+      "frame_class": "standard",
+      "town_span_km": 7.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 3.5,
+      "water_pct_town": 11.5,
+      "water_pct_close": 6.55,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 14.97,
+      "water_pct_close_mobile": 12.63,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "tarpon-springs",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 13.83,
+      "water_pct_close": 19.21,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 14.32,
+      "water_pct_close_mobile": 12.68,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "treasure-island",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 68.86,
+      "water_pct_close": 40.81,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 66.76,
+      "water_pct_close_mobile": 28.99,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "bradenton",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 31.44,
+      "water_pct_close": 31.7,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 31.53,
+      "water_pct_close_mobile": 29.66,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "bradenton-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 75.7,
+      "water_pct_close": 60.53,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 73.6,
+      "water_pct_close_mobile": 76.6,
+      "flags": [
+        "town_land_shortfall",
+        "close_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "cortez",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 69.58,
+      "water_pct_close": 35.29,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 66.05,
+      "water_pct_close_mobile": 28.7,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "englewood",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 40.51,
+      "water_pct_close": 33.32,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 36.38,
+      "water_pct_close_mobile": 26.2,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "sarasota",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.94,
+      "water_pct_close": 33.75,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 43.69,
+      "water_pct_close_mobile": 19.29,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "siesta-key",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 46.18,
+      "water_pct_close": 21.47,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 45.9,
+      "water_pct_close_mobile": 14.59,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "venice",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.58,
+      "water_pct_close": 35.45,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 39.16,
+      "water_pct_close_mobile": 25.63,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "miami",
+      "frame_class": "standard",
+      "town_span_km": 7.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 3.5,
+      "water_pct_town": 40.18,
+      "water_pct_close": 31.68,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 41.47,
+      "water_pct_close_mobile": 27.99,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "southbeach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 63.39,
+      "water_pct_close": 23.28,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 39.85,
+      "water_pct_close_mobile": 0.85,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "naples",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.17,
+      "water_pct_close": 20.34,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 32.21,
+      "water_pct_close_mobile": 1.84,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "marco-island",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 57.91,
+      "water_pct_close": 35.49,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 52.51,
+      "water_pct_close_mobile": 30.43,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "everglades-city",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 25.97,
+      "water_pct_close": 17.7,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 23.26,
+      "water_pct_close_mobile": 25.85,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "chokoloskee",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 63.58,
+      "water_pct_close": 79.72,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 71.96,
+      "water_pct_close_mobile": 69.17,
+      "flags": [
+        "close_land_shortfall",
+        "close_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "pensacola",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 42.06,
+      "water_pct_close": 16.62,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 37.3,
+      "water_pct_close_mobile": 20.51,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "jacksonville",
+      "frame_class": "standard",
+      "town_span_km": 7.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 3.5,
+      "water_pct_town": 25.74,
+      "water_pct_close": 34.1,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 26.4,
+      "water_pct_close_mobile": 26.96,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "pensacola-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 86.26,
+      "water_pct_close": 68.19,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 85.79,
+      "water_pct_close_mobile": 66.0,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall",
+        "close_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "panama-city",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 38.2,
+      "water_pct_close": 28.43,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 35.29,
+      "water_pct_close_mobile": 20.32,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "pcb",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 38.86,
+      "water_pct_close": 27.28,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 39.95,
+      "water_pct_close_mobile": 23.15,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "destin",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 61.27,
+      "water_pct_close": 37.13,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 62.73,
+      "water_pct_close_mobile": 26.74,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "port-st-joe",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.16,
+      "water_pct_close": 23.36,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 35.7,
+      "water_pct_close_mobile": 14.9,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "apalachicola",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.13,
+      "water_pct_close": 37.98,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 43.24,
+      "water_pct_close_mobile": 37.89,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "st-george-island",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 83.72,
+      "water_pct_close": 64.93,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 83.23,
+      "water_pct_close_mobile": 61.04,
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "carrabelle",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 31.83,
+      "water_pct_close": 17.74,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 31.11,
+      "water_pct_close_mobile": 16.76,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "st-marks",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 8.87,
+      "water_pct_close": 23.39,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 12.31,
+      "water_pct_close_mobile": 9.93,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "st-teresa",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 35.15,
+      "water_pct_close": 19.97,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 37.46,
+      "water_pct_close_mobile": 22.65,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "mexico-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 27.26,
+      "water_pct_close": 8.58,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 30.28,
+      "water_pct_close_mobile": 6.77,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "cedarkey",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 84.42,
+      "water_pct_close": 68.34,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 80.47,
+      "water_pct_close_mobile": 63.5,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "crystal-river",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 14.23,
+      "water_pct_close": 13.83,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 19.13,
+      "water_pct_close_mobile": 15.02,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "homosassa",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 12.9,
+      "water_pct_close": 15.97,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 8.33,
+      "water_pct_close_mobile": 14.17,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "ozello",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 33.07,
+      "water_pct_close": 40.53,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 42.29,
+      "water_pct_close_mobile": 33.7,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "steinhatchee",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 10.74,
+      "water_pct_close": 12.04,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 6.97,
+      "water_pct_close_mobile": 12.15,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "perdido-key",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 50.86,
+      "water_pct_close": 43.39,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 48.29,
+      "water_pct_close_mobile": 43.99,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "gulf-breeze",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 61.88,
+      "water_pct_close": 58.86,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 55.78,
+      "water_pct_close_mobile": 61.77,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "navarre",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 40.89,
+      "water_pct_close": 33.02,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 41.55,
+      "water_pct_close_mobile": 29.71,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "navarre-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 75.09,
+      "water_pct_close": 70.2,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 75.03,
+      "water_pct_close_mobile": 68.95,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall",
+        "close_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "fort-walton-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 40.74,
+      "water_pct_close": 20.92,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 34.77,
+      "water_pct_close_mobile": 20.52,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "okaloosa-island",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 63.53,
+      "water_pct_close": 49.7,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 55.88,
+      "water_pct_close_mobile": 45.83,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "mary-esther",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 19.97,
+      "water_pct_close": 11.56,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 19.53,
+      "water_pct_close_mobile": 12.66,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "shalimar",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 38.75,
+      "water_pct_close": 27.71,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 43.83,
+      "water_pct_close_mobile": 9.96,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "niceville",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 8.7,
+      "water_pct_close": 17.38,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 15.33,
+      "water_pct_close_mobile": 20.59,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "valparaiso",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 17.18,
+      "water_pct_close": 41.35,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 29.31,
+      "water_pct_close_mobile": 40.26,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "miramar-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 57.32,
+      "water_pct_close": 17.91,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 55.97,
+      "water_pct_close_mobile": 17.84,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "freeport",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 1.35,
+      "water_pct_close": 0.41,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 1.79,
+      "water_pct_close_mobile": 0.32,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "keaton-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 42.92,
+      "water_pct_close": 43.63,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 40.52,
+      "water_pct_close_mobile": 39.82,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "horseshoe-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.31,
+      "water_pct_close": 14.33,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 33.9,
+      "water_pct_close_mobile": 5.84,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "suwannee",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 23.44,
+      "water_pct_close": 22.14,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 18.95,
+      "water_pct_close_mobile": 23.42,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "yankeetown",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 4.99,
+      "water_pct_close": 3.18,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 4.94,
+      "water_pct_close_mobile": 4.1,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "inglis",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 3.27,
+      "water_pct_close": 2.8,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 3.27,
+      "water_pct_close_mobile": 2.31,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "hernando-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 38.96,
+      "water_pct_close": 26.79,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 25.75,
+      "water_pct_close_mobile": 29.16,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "weeki-wachee",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 2.12,
+      "water_pct_close": 1.9,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 2.13,
+      "water_pct_close_mobile": 2.13,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "aripeka",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 30.71,
+      "water_pct_close": 18.21,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 25.01,
+      "water_pct_close_mobile": 16.81,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "oldsmar",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 25.83,
+      "water_pct_close": 21.3,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 29.69,
+      "water_pct_close_mobile": 17.39,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "palm-harbor",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 29.59,
+      "water_pct_close": 17.34,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 11.1,
+      "water_pct_close_mobile": 16.11,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "belleair-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 61.97,
+      "water_pct_close": 65.33,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 64.99,
+      "water_pct_close_mobile": 61.15,
+      "flags": [
+        "close_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "indian-shores",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 42.96,
+      "water_pct_close": 30.16,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 35.63,
+      "water_pct_close_mobile": 25.25,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "redington-shores",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 51.94,
+      "water_pct_close": 38.0,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 41.44,
+      "water_pct_close_mobile": 23.36,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "north-redington-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 60.97,
+      "water_pct_close": 61.89,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 63.02,
+      "water_pct_close_mobile": 58.54,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "redington-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 61.22,
+      "water_pct_close": 64.68,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 66.05,
+      "water_pct_close_mobile": 62.4,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "tierra-verde",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 77.18,
+      "water_pct_close": 64.89,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 65.92,
+      "water_pct_close_mobile": 55.8,
+      "flags": [
+        "town_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "holiday",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 18.63,
+      "water_pct_close": 5.78,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 10.58,
+      "water_pct_close_mobile": 7.93,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "port-richey",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 23.94,
+      "water_pct_close": 16.87,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 15.6,
+      "water_pct_close_mobile": 17.51,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "hudson",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.78,
+      "water_pct_close": 34.14,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 36.53,
+      "water_pct_close_mobile": 29.96,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "gibsonton",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 28.63,
+      "water_pct_close": 28.67,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 17.86,
+      "water_pct_close_mobile": 27.68,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "captiva",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 87.32,
+      "water_pct_close": 72.5,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 74.64,
+      "water_pct_close_mobile": 60.57,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "matlacha",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.39,
+      "water_pct_close": 44.06,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 46.02,
+      "water_pct_close_mobile": 39.12,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "keywest",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 66.17,
+      "water_pct_close": 24.18,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 54.54,
+      "water_pct_close_mobile": 17.93,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "islamorada",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 83.82,
+      "water_pct_close": 68.61,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 78.76,
+      "water_pct_close_mobile": 61.5,
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "ftl",
+      "frame_class": "standard",
+      "town_span_km": 7.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 3.5,
+      "water_pct_town": 9.12,
+      "water_pct_close": 3.72,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 2.66,
+      "water_pct_close_mobile": 3.85,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "delray",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 35.01,
+      "water_pct_close": 7.05,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 15.73,
+      "water_pct_close_mobile": 10.75,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "jupiter",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 38.81,
+      "water_pct_close": 31.94,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 23.81,
+      "water_pct_close_mobile": 34.9,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "fortpierce",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 39.24,
+      "water_pct_close": 32.04,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 34.41,
+      "water_pct_close_mobile": 15.8,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "cocoa",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 76.75,
+      "water_pct_close": 51.61,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 55.08,
+      "water_pct_close_mobile": 14.56,
+      "flags": [
+        "town_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "nsb",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 42.34,
+      "water_pct_close": 19.87,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 34.61,
+      "water_pct_close_mobile": 13.7,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "daytona",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 55.74,
+      "water_pct_close": 52.31,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 52.59,
+      "water_pct_close_mobile": 24.56,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "flagler",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.0,
+      "water_pct_close": 32.07,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 38.26,
+      "water_pct_close_mobile": 23.6,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "staug",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 26.84,
+      "water_pct_close": 33.63,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 34.61,
+      "water_pct_close_mobile": 9.73,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "jaxbeach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.92,
+      "water_pct_close": 29.99,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 34.61,
+      "water_pct_close_mobile": 10.67,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "fernandina",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 34.79,
+      "water_pct_close": 31.16,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 34.91,
+      "water_pct_close_mobile": 21.34,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "bonita-springs",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 5.09,
+      "water_pct_close": 1.74,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 4.19,
+      "water_pct_close_mobile": 0.83,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "cape-coral",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 39.34,
+      "water_pct_close": 15.61,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 31.04,
+      "water_pct_close_mobile": 6.81,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "fort-myers",
+      "frame_class": "standard",
+      "town_span_km": 7.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 3.5,
+      "water_pct_town": 36.77,
+      "water_pct_close": 9.4,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 34.53,
+      "water_pct_close_mobile": 2.45,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "fort-myers-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 54.51,
+      "water_pct_close": 44.89,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 55.91,
+      "water_pct_close_mobile": 40.95,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "port-charlotte",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 8.69,
+      "water_pct_close": 6.31,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 9.77,
+      "water_pct_close_mobile": 5.89,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "punta-gorda",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 39.85,
+      "water_pct_close": 10.66,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 36.75,
+      "water_pct_close_mobile": 2.17,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "sanibel-island",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 79.99,
+      "water_pct_close": 64.25,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 84.25,
+      "water_pct_close_mobile": 59.39,
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "key-largo",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 70.97,
+      "water_pct_close": 41.01,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 61.5,
+      "water_pct_close_mobile": 37.61,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "bal-harbour",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 62.03,
+      "water_pct_close": 60.95,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 52.34,
+      "water_pct_close_mobile": 50.65,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "boca-raton",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 18.75,
+      "water_pct_close": 0.35,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 4.44,
+      "water_pct_close_mobile": 0.0,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "dania-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 52.92,
+      "water_pct_close": 45.94,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 52.75,
+      "water_pct_close_mobile": 38.45,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "hallandale",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.67,
+      "water_pct_close": 31.33,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 36.74,
+      "water_pct_close_mobile": 26.0,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "highland-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 46.64,
+      "water_pct_close": 39.58,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 42.5,
+      "water_pct_close_mobile": 28.47,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "hollywood",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.98,
+      "water_pct_close": 34.2,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 37.64,
+      "water_pct_close_mobile": 39.99,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "lauderdale-by-the-sea",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.83,
+      "water_pct_close": 32.8,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 35.43,
+      "water_pct_close_mobile": 17.23,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "lighthouse-point",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 35.97,
+      "water_pct_close": 15.96,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 21.94,
+      "water_pct_close_mobile": 17.13,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "north-miami-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 11.53,
+      "water_pct_close": 3.16,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 5.34,
+      "water_pct_close_mobile": 2.86,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "north-palm-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 25.52,
+      "water_pct_close": 11.44,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 15.81,
+      "water_pct_close_mobile": 16.55,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "palm-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 52.16,
+      "water_pct_close": 44.25,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 54.11,
+      "water_pct_close_mobile": 3.81,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "palm-beach-gardens",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 10.73,
+      "water_pct_close": 11.47,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 10.78,
+      "water_pct_close_mobile": 7.59,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "riviera-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 36.05,
+      "water_pct_close": 43.03,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 38.64,
+      "water_pct_close_mobile": 44.11,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "sunny-isles-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 59.64,
+      "water_pct_close": 56.11,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 54.83,
+      "water_pct_close_mobile": 29.18,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "west-palm-beach",
+      "frame_class": "standard",
+      "town_span_km": 7.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 3.5,
+      "water_pct_town": 38.15,
+      "water_pct_close": 24.2,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 28.22,
+      "water_pct_close_mobile": 0.22,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "wilton-manors",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 4.58,
+      "water_pct_close": 3.15,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 3.07,
+      "water_pct_close_mobile": 2.23,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "jensen-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 41.91,
+      "water_pct_close": 23.73,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 32.86,
+      "water_pct_close_mobile": 7.36,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "port-st-lucie",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 6.31,
+      "water_pct_close": 9.57,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 9.61,
+      "water_pct_close_mobile": 9.42,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "sebastian",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 40.56,
+      "water_pct_close": 25.99,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 33.58,
+      "water_pct_close_mobile": 14.09,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "stuart",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.77,
+      "water_pct_close": 38.89,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 44.7,
+      "water_pct_close_mobile": 35.32,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "vero-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 60.7,
+      "water_pct_close": 36.46,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 49.01,
+      "water_pct_close_mobile": 10.83,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "indialantic",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 71.35,
+      "water_pct_close": 39.48,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 50.56,
+      "water_pct_close_mobile": 23.2,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "melbourne-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 74.32,
+      "water_pct_close": 57.76,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 62.84,
+      "water_pct_close_mobile": 63.67,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "palm-bay",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.25,
+      "water_pct_close": 30.92,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 36.41,
+      "water_pct_close_mobile": 23.74,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "satellite-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 54.51,
+      "water_pct_close": 24.94,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 30.7,
+      "water_pct_close_mobile": 5.44,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "titusville",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.8,
+      "water_pct_close": 31.9,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 41.3,
+      "water_pct_close_mobile": 14.22,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "west-melbourne",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 4.23,
+      "water_pct_close": 4.35,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 4.58,
+      "water_pct_close_mobile": 4.54,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "atlantic-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 32.7,
+      "water_pct_close": 2.39,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 10.81,
+      "water_pct_close_mobile": 1.53,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "neptune-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 42.27,
+      "water_pct_close": 28.56,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 32.63,
+      "water_pct_close_mobile": 7.38,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "ponte-vedra-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 43.3,
+      "water_pct_close": 27.62,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 32.8,
+      "water_pct_close_mobile": 12.5,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "st-augustine-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.51,
+      "water_pct_close": 29.42,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 35.32,
+      "water_pct_close_mobile": 5.79,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "daytona-beach-shores",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 68.0,
+      "water_pct_close": 64.95,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 71.31,
+      "water_pct_close_mobile": 44.89,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "ormond-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 45.38,
+      "water_pct_close": 41.73,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 43.02,
+      "water_pct_close_mobile": 45.59,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "palm-coast",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 18.18,
+      "water_pct_close": 11.3,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 11.07,
+      "water_pct_close_mobile": 10.53,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "port-orange",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 32.55,
+      "water_pct_close": 28.06,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 30.97,
+      "water_pct_close_mobile": 15.23,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "south-daytona",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 32.62,
+      "water_pct_close": 25.93,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 27.51,
+      "water_pct_close_mobile": 10.04,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "boynton-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 34.97,
+      "water_pct_close": 10.25,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 18.63,
+      "water_pct_close_mobile": 14.86,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "lake-worth-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 41.3,
+      "water_pct_close": 39.28,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 33.22,
+      "water_pct_close_mobile": 31.28,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "juno-beach",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.31,
+      "water_pct_close": 21.54,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 29.97,
+      "water_pct_close_mobile": 3.09,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "tequesta",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 33.16,
+      "water_pct_close": 14.88,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 24.75,
+      "water_pct_close_mobile": 13.94,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "lantana",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 38.81,
+      "water_pct_close": 28.78,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 29.63,
+      "water_pct_close_mobile": 35.43,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "lake-park",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 31.51,
+      "water_pct_close": 33.62,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 35.36,
+      "water_pct_close_mobile": 17.24,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "palm-beach-shores",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 58.55,
+      "water_pct_close": 55.71,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 3,
+      "water_pct_town_mobile": 65.53,
+      "water_pct_close_mobile": 44.71,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "hobe-sound",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 19.25,
+      "water_pct_close": 4.57,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 7.05,
+      "water_pct_close_mobile": 0.76,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "port-salerno",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 9.97,
+      "water_pct_close": 12.23,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 11.07,
+      "water_pct_close_mobile": 20.08,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "palm-city",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 19.58,
+      "water_pct_close": 6.41,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 13.96,
+      "water_pct_close_mobile": 3.13,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "sewalls-point",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 58.31,
+      "water_pct_close": 61.98,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 61.38,
+      "water_pct_close_mobile": 61.38,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "indian-river-shores",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 62.06,
+      "water_pct_close": 35.8,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 49.66,
+      "water_pct_close_mobile": 24.31,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "hutchinson-island",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 82.43,
+      "water_pct_close": 52.15,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 75.02,
+      "water_pct_close_mobile": 24.93,
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "melbourne",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 42.61,
+      "water_pct_close": 31.58,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 36.19,
+      "water_pct_close_mobile": 15.93,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "cape-canaveral",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 54.03,
+      "water_pct_close": 41.04,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 38.97,
+      "water_pct_close_mobile": 29.61,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "merritt-island",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.62,
+      "water_pct_close": 36.64,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 38.77,
+      "water_pct_close_mobile": 43.91,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "rockledge",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 38.07,
+      "water_pct_close": 33.92,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 37.64,
+      "water_pct_close_mobile": 20.86,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "cocoa-village",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 37.21,
+      "water_pct_close": 31.89,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 40.72,
+      "water_pct_close_mobile": 14.56,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "indian-harbour-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 56.39,
+      "water_pct_close": 27.8,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 33.82,
+      "water_pct_close_mobile": 16.24,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "ponce-inlet",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 44.51,
+      "water_pct_close": 35.53,
+      "hero_in_limits": true,
+      "callouts_town": 4,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 38.2,
+      "water_pct_close_mobile": 33.18,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "edgewater",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 20.34,
+      "water_pct_close": 25.57,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 24.17,
+      "water_pct_close_mobile": 14.7,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "holly-hill",
+      "frame_class": "standard",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 26.05,
+      "water_pct_close": 22.62,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 23.98,
+      "water_pct_close_mobile": 13.06,
+      "flags": [],
+      "hero_middle_fraction": 0.4,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "ormond-by-the-sea",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 58.62,
+      "water_pct_close": 51.18,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 54.17,
+      "water_pct_close_mobile": 18.28,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "beverly-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 45.46,
+      "water_pct_close": 39.02,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 40.59,
+      "water_pct_close_mobile": 29.78,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "vilano-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 55.33,
+      "water_pct_close": 45.43,
+      "hero_in_limits": true,
+      "callouts_town": 3,
+      "callouts_close": 2,
+      "water_pct_town_mobile": 55.73,
+      "water_pct_close_mobile": 49.42,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    },
+    {
+      "town_id": "crescent-beach",
+      "frame_class": "narrow_island",
+      "town_span_km": 5.0,
+      "close_span_km": 2.0,
+      "zoom_ratio": 2.5,
+      "water_pct_town": 62.51,
+      "water_pct_close": 62.98,
+      "hero_in_limits": true,
+      "callouts_town": 2,
+      "callouts_close": 1,
+      "water_pct_town_mobile": 58.65,
+      "water_pct_close_mobile": 39.98,
+      "flags": [],
+      "hero_middle_fraction": 0.6,
+      "callout_edge_margin_px": {
+        "desktop": 128,
+        "mobile": 64
+      }
+    }
+  ]
+}

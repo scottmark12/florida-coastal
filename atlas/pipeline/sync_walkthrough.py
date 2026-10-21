@@ -3,7 +3,7 @@ Run after finalize_landings.py. No geometry, camera or style changes.
 Missing images, unverified cameras and unexpected dimensions fail the build.
 """
 from pathlib import Path
-import json, hashlib, re, shutil, html
+import json, hashlib, re, shutil, html, math
 from PIL import Image
 ROOT=Path(__file__).resolve().parents[2]
 A=ROOT/'atlas'
@@ -24,8 +24,10 @@ def sync():
     dest=ROOT/'img/atlas'/v[key]
     if not dest.exists() or source.read_bytes()!=dest.read_bytes():shutil.copyfile(source,dest)
     images.append(str(dest.relative_to(ROOT)))
-  h=t['hero'];c=town['camera'];m=town['mobile_camera'];cc=street['camera'];cm=street['mobile_camera']
+  h=t['center'];c=town['camera'];m=town['mobile_camera'];cc=street['camera'];cm=street['mobile_camera']
   manifest[tid]={'lon':h['lon'],'lat':h['lat'],'hw':c['right'],'hh':c['top'],'mhw':m['right'],'mhh':m['top'],'d':[[d['name'],d['lon'],d['lat']] for d in t['districts']],'c':[[d['name'],d['type'],d['lon'],d['lat']] for d in town.get('callouts',[])],'chw':cc['right'],'chh':cc['top'],'cmhw':cm['right'],'cmhh':cm['top'],'cc':[[d['name'],d['type'],d['lon'],d['lat']] for d in street.get('callouts',[])]}
+ flight_path=ROOT/'img/atlas/flight-regions.json'
+ flight=json.loads(flight_path.read_text());flight['towns']={tid:[t['center']['x'],-t['center']['y']/math.sqrt(2)] for tid,t in towns.items()};flight_path.write_text(json.dumps(flight,indent=2)+'\n')
  entry_page=ROOT/'find-your-mile.html';old=re.search(r'assets/(app\.[a-f0-9]+\.js)',entry_page.read_text())[1]
  source=(ROOT/'assets'/old).read_text();start=source.index('const LANDING=')+len('const LANDING=')
  # The following declaration starts after the literal; retain its comma/semicolon.

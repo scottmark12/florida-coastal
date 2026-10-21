@@ -2,2344 +2,2804 @@
   "town_count": 167,
   "view_count": 334,
   "image_count": 668,
+  "width_exceptions": [],
+  "flagged_towns": [
+    "clearwaterbeach",
+    "ami",
+    "longboat",
+    "st-pete-beach",
+    "bradenton-beach",
+    "chokoloskee",
+    "pensacola-beach",
+    "st-george-island",
+    "cedarkey",
+    "navarre-beach",
+    "belleair-beach",
+    "tierra-verde",
+    "captiva",
+    "islamorada",
+    "cocoa",
+    "sanibel-island",
+    "hutchinson-island"
+  ],
   "towns": [
     {
       "town_id": "30a",
       "view": "town",
-      "span_km": 5,
+      "span_km": 5.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "30a",
       "view": "street",
-      "span_km": 1.4,
+      "span_km": 2.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "dunedin",
       "view": "town",
-      "span_km": 5.5,
+      "span_km": 5.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "dunedin",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "clearwaterbeach",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall"
+      ]
     },
     {
       "town_id": "clearwaterbeach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall"
+      ]
     },
     {
       "town_id": "gulfport",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "gulfport",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ami",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall"
+      ]
     },
     {
       "town_id": "ami",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 2,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall"
+      ]
     },
     {
       "town_id": "longboat",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "longboat",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "apollo-beach",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "apollo-beach",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "clearwater",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "clearwater",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "indian-rocks-beach",
       "view": "town",
-      "span_km": 4,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "indian-rocks-beach",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 2,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "madeira-beach",
       "view": "town",
-      "span_km": 4,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "madeira-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "new-port-richey",
       "view": "town",
-      "span_km": 5.5,
+      "span_km": 5.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "new-port-richey",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ruskin",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ruskin",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "safety-harbor",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "safety-harbor",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "st-pete-beach",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall"
+      ]
     },
     {
       "town_id": "st-pete-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall"
+      ]
     },
     {
       "town_id": "st-petersburg",
       "view": "town",
-      "span_km": 6,
+      "span_km": 7.0,
       "callouts": 4,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "st-petersburg",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sun-city-center",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sun-city-center",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "tampa",
       "view": "town",
-      "span_km": 8,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 7.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "tampa",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "tarpon-springs",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "tarpon-springs",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "treasure-island",
       "view": "town",
-      "span_km": 4,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "treasure-island",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "bradenton",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 3,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "bradenton",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 3,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "bradenton-beach",
       "view": "town",
-      "span_km": 4,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "bradenton-beach",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "cortez",
       "view": "town",
-      "span_km": 4,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "cortez",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "englewood",
       "view": "town",
-      "span_km": 5.5,
+      "span_km": 5.0,
       "callouts": 2,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "englewood",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 2,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sarasota",
       "view": "town",
-      "span_km": 6,
-      "callouts": 3,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sarasota",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "siesta-key",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "siesta-key",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "venice",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "venice",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "miami",
       "view": "town",
-      "span_km": 8,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 7.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "miami",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "southbeach",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "southbeach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "naples",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "naples",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 2,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "marco-island",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "marco-island",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "everglades-city",
       "view": "town",
-      "span_km": 3.5,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "everglades-city",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "chokoloskee",
       "view": "town",
-      "span_km": 3.5,
+      "span_km": 5.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": [
+        "close_land_shortfall",
+        "close_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "chokoloskee",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": [
+        "close_land_shortfall",
+        "close_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "pensacola",
       "view": "town",
-      "span_km": 6,
-      "callouts": 5,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "pensacola",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 5,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "jacksonville",
       "view": "town",
-      "span_km": 8,
+      "span_km": 7.0,
       "callouts": 4,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "jacksonville",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "pensacola-beach",
       "view": "town",
-      "span_km": 5.5,
+      "span_km": 5.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall",
+        "close_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "pensacola-beach",
       "view": "street",
-      "span_km": 2.8,
+      "span_km": 2.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall",
+        "close_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "panama-city",
       "view": "town",
-      "span_km": 5.5,
+      "span_km": 5.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "panama-city",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 3,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "pcb",
       "view": "town",
-      "span_km": 6,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "pcb",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "destin",
       "view": "town",
-      "span_km": 5.5,
+      "span_km": 5.0,
       "callouts": 4,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "destin",
       "view": "street",
-      "span_km": 1.4,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-st-joe",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-st-joe",
       "view": "street",
-      "span_km": 1.8,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "apalachicola",
       "view": "town",
-      "span_km": 4,
-      "callouts": 5,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "apalachicola",
       "view": "street",
-      "span_km": 1.6,
-      "callouts": 5,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "st-george-island",
       "view": "town",
-      "span_km": 4,
+      "span_km": 5.0,
       "callouts": 4,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "st-george-island",
       "view": "street",
-      "span_km": 1.4,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "carrabelle",
       "view": "town",
-      "span_km": 4,
+      "span_km": 5.0,
       "callouts": 4,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "carrabelle",
       "view": "street",
-      "span_km": 1.8,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "st-marks",
       "view": "town",
-      "span_km": 3.5,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "st-marks",
       "view": "street",
-      "span_km": 1.9,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "st-teresa",
       "view": "town",
-      "span_km": 3.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "st-teresa",
       "view": "street",
-      "span_km": 1.6,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "mexico-beach",
       "view": "town",
-      "span_km": 4,
+      "span_km": 5.0,
       "callouts": 2,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "mexico-beach",
       "view": "street",
-      "span_km": 1.9,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "cedarkey",
       "view": "town",
-      "span_km": 3.2,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "cedarkey",
       "view": "street",
-      "span_km": 1.4,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "crystal-river",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 3,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "crystal-river",
       "view": "street",
-      "span_km": 2.2,
+      "span_km": 2.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "homosassa",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "homosassa",
       "view": "street",
-      "span_km": 2.4,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ozello",
       "view": "town",
-      "span_km": 3.8,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ozello",
       "view": "street",
-      "span_km": 1.6,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "steinhatchee",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "steinhatchee",
       "view": "street",
-      "span_km": 2.2,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "perdido-key",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "perdido-key",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "gulf-breeze",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "gulf-breeze",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "navarre",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "navarre",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "navarre-beach",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall",
+        "close_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "navarre-beach",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall",
+        "close_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "fort-walton-beach",
       "view": "town",
-      "span_km": 6,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "fort-walton-beach",
       "view": "street",
-      "span_km": 2.4,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "okaloosa-island",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "okaloosa-island",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "mary-esther",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "mary-esther",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "shalimar",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "shalimar",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "niceville",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "niceville",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "valparaiso",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "valparaiso",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "miramar-beach",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "miramar-beach",
       "view": "street",
-      "span_km": 2.2,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "freeport",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "freeport",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "keaton-beach",
       "view": "town",
-      "span_km": 3.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "keaton-beach",
       "view": "street",
-      "span_km": 1.6,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "horseshoe-beach",
       "view": "town",
-      "span_km": 3.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "horseshoe-beach",
       "view": "street",
-      "span_km": 1.6,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "suwannee",
       "view": "town",
-      "span_km": 4,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "suwannee",
       "view": "street",
-      "span_km": 1.8,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "yankeetown",
       "view": "town",
-      "span_km": 4,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "yankeetown",
       "view": "street",
-      "span_km": 1.8,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "inglis",
       "view": "town",
-      "span_km": 4,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "inglis",
       "view": "street",
-      "span_km": 1.8,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "hernando-beach",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "hernando-beach",
       "view": "street",
-      "span_km": 2.2,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "weeki-wachee",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "weeki-wachee",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "aripeka",
       "view": "town",
-      "span_km": 3.5,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "aripeka",
       "view": "street",
-      "span_km": 1.6,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "oldsmar",
       "view": "town",
-      "span_km": 5.5,
-      "callouts": 4,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "oldsmar",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 2,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-harbor",
       "view": "town",
-      "span_km": 5.5,
+      "span_km": 5.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-harbor",
       "view": "street",
-      "span_km": 2.2,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "belleair-beach",
       "view": "town",
-      "span_km": 4,
+      "span_km": 5.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": [
+        "close_land_shortfall"
+      ]
     },
     {
       "town_id": "belleair-beach",
       "view": "street",
-      "span_km": 1.5,
-      "callouts": 1,
-      "checks": "passed"
-    },
-    {
-      "town_id": "indian-shores",
-      "view": "town",
-      "span_km": 4,
-      "callouts": 2,
-      "checks": "passed"
-    },
-    {
-      "town_id": "indian-shores",
-      "view": "street",
-      "span_km": 1.5,
-      "callouts": 1,
-      "checks": "passed"
-    },
-    {
-      "town_id": "redington-shores",
-      "view": "town",
-      "span_km": 4,
+      "span_km": 2.0,
       "callouts": 3,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": [
+        "close_land_shortfall"
+      ]
+    },
+    {
+      "town_id": "indian-shores",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "indian-shores",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "redington-shores",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "redington-shores",
       "view": "street",
-      "span_km": 1.5,
+      "span_km": 2.0,
       "callouts": 2,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "north-redington-beach",
       "view": "town",
-      "span_km": 4,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "north-redington-beach",
       "view": "street",
-      "span_km": 1.5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "redington-beach",
       "view": "town",
-      "span_km": 4,
-      "callouts": 1,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "redington-beach",
       "view": "street",
-      "span_km": 1.5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "tierra-verde",
-      "view": "town",
-      "span_km": 5.5,
-      "callouts": 2,
-      "checks": "passed"
-    },
-    {
-      "town_id": "tierra-verde",
-      "view": "street",
-      "span_km": 2.2,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "holiday",
-      "view": "town",
-      "span_km": 5.5,
-      "callouts": 2,
-      "checks": "passed"
-    },
-    {
-      "town_id": "holiday",
-      "view": "street",
-      "span_km": 2.2,
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "tierra-verde",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall"
+      ]
+    },
+    {
+      "town_id": "tierra-verde",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall"
+      ]
+    },
+    {
+      "town_id": "holiday",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "holiday",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-richey",
       "view": "town",
-      "span_km": 5.5,
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "port-richey",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "hudson",
+      "view": "town",
+      "span_km": 5.0,
       "callouts": 4,
-      "checks": "passed"
-    },
-    {
-      "town_id": "port-richey",
-      "view": "street",
-      "span_km": 2.2,
-      "callouts": 2,
-      "checks": "passed"
-    },
-    {
-      "town_id": "hudson",
-      "view": "town",
-      "span_km": 5.5,
-      "callouts": 1,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "hudson",
       "view": "street",
-      "span_km": 2.2,
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "gibsonton",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "gibsonton",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "captiva",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall"
+      ]
+    },
+    {
+      "town_id": "captiva",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall"
+      ]
+    },
+    {
+      "town_id": "matlacha",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "matlacha",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "keywest",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "keywest",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "islamorada",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
+    },
+    {
+      "town_id": "islamorada",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "close_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
+    },
+    {
+      "town_id": "ftl",
+      "view": "town",
+      "span_km": 7.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "ftl",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "delray",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "delray",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "jupiter",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "jupiter",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "fortpierce",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "fortpierce",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "cocoa",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall"
+      ]
+    },
+    {
+      "town_id": "cocoa",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall"
+      ]
+    },
+    {
+      "town_id": "nsb",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "nsb",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "daytona",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "daytona",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "flagler",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "flagler",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "staug",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "staug",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "jaxbeach",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "jaxbeach",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "fernandina",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "fernandina",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "bonita-springs",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "bonita-springs",
+      "view": "street",
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "cape-coral",
+      "view": "town",
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
+    },
+    {
+      "town_id": "cape-coral",
+      "view": "street",
+      "span_km": 2.0,
       "callouts": 1,
-      "checks": "passed"
-    },
-    {
-      "town_id": "gibsonton",
-      "view": "town",
-      "span_km": 5.5,
-      "callouts": 2,
-      "checks": "passed"
-    },
-    {
-      "town_id": "gibsonton",
-      "view": "street",
-      "span_km": 2.2,
-      "callouts": 2,
-      "checks": "passed"
-    },
-    {
-      "town_id": "captiva",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "captiva",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "matlacha",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "matlacha",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "keywest",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "keywest",
-      "view": "street",
-      "span_km": 2.4,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "islamorada",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "islamorada",
-      "view": "street",
-      "span_km": 2.4,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "ftl",
-      "view": "town",
-      "span_km": 8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "ftl",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "delray",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "delray",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "jupiter",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "jupiter",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "fortpierce",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "fortpierce",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "cocoa",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "cocoa",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "nsb",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "nsb",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "daytona",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "daytona",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "flagler",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "flagler",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "staug",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "staug",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "jaxbeach",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "jaxbeach",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "fernandina",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "fernandina",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "bonita-springs",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "bonita-springs",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "cape-coral",
-      "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
-    },
-    {
-      "town_id": "cape-coral",
-      "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "fort-myers",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 7.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "fort-myers",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "fort-myers-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "fort-myers-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-charlotte",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-charlotte",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "punta-gorda",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "punta-gorda",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sanibel-island",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "sanibel-island",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "key-largo",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "key-largo",
       "view": "street",
-      "span_km": 2.4,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "bal-harbour",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "bal-harbour",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "boca-raton",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "boca-raton",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "dania-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "dania-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "hallandale",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "hallandale",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "highland-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "highland-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "hollywood",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "hollywood",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "lauderdale-by-the-sea",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "lauderdale-by-the-sea",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "lighthouse-point",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "lighthouse-point",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "north-miami-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "north-miami-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "north-palm-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "north-palm-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-beach-gardens",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-beach-gardens",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "riviera-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "riviera-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sunny-isles-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sunny-isles-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "west-palm-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 7.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "west-palm-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "wilton-manors",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "wilton-manors",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "jensen-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "jensen-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-st-lucie",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-st-lucie",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sebastian",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sebastian",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "stuart",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "stuart",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "vero-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "vero-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "indialantic",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "indialantic",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "melbourne-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "melbourne-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-bay",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-bay",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "satellite-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "satellite-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "titusville",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "titusville",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "west-melbourne",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "west-melbourne",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "atlantic-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "atlantic-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "neptune-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "neptune-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ponte-vedra-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ponte-vedra-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "st-augustine-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "st-augustine-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "daytona-beach-shores",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "daytona-beach-shores",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ormond-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ormond-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-coast",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-coast",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-orange",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-orange",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "south-daytona",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "south-daytona",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "boynton-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "boynton-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "lake-worth-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "lake-worth-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "juno-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "juno-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "tequesta",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "tequesta",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "lantana",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "lantana",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "lake-park",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "lake-park",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-beach-shores",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-beach-shores",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "hobe-sound",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "hobe-sound",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-salerno",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "port-salerno",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-city",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "palm-city",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sewalls-point",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "sewalls-point",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "indian-river-shores",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "indian-river-shores",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "hutchinson-island",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "hutchinson-island",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": [
+        "town_land_shortfall",
+        "town_mobile_land_shortfall"
+      ]
     },
     {
       "town_id": "melbourne",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "melbourne",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "cape-canaveral",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "cape-canaveral",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "merritt-island",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "merritt-island",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "rockledge",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "rockledge",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "cocoa-village",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "cocoa-village",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "indian-harbour-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "indian-harbour-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ponce-inlet",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 4,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ponce-inlet",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "edgewater",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "edgewater",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "holly-hill",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "holly-hill",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ormond-by-the-sea",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "ormond-by-the-sea",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "beverly-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "beverly-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "vilano-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 3,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "vilano-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "crescent-beach",
       "view": "town",
-      "span_km": 5,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 5.0,
+      "callouts": 2,
+      "checks": "passed",
+      "flags": []
     },
     {
       "town_id": "crescent-beach",
       "view": "street",
-      "span_km": 2.8,
-      "callouts": 0,
-      "checks": "passed"
+      "span_km": 2.0,
+      "callouts": 1,
+      "checks": "passed",
+      "flags": []
     }
   ]
 }

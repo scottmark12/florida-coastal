@@ -1,0 +1,83 @@
+{
+  "heroes": {
+    "okaloosa-island": {
+      "name": "Okaloosa Island Fishing Pier entrance",
+      "lon": -86.592839,
+      "lat": 30.3938076,
+      "source": "https://www.openstreetmap.org/node/7081736588",
+      "reason": "The public fishing-pier entrance frames Okaloosa Island's beach, resort strip and bay-side context."
+    },
+    "ponte-vedra-beach": {
+      "name": "Ponte Vedra Boulevard",
+      "lon": -81.37874555915332,
+      "lat": 30.24218777525053,
+      "source": "https://www.openstreetmap.org/way/1032748573",
+      "reason": "Public Ponte Vedra Boulevard frames the oceanfront neighborhood, beach edge and resort lagoons."
+    },
+    "ozello": {
+      "name": "Ozello Community Park",
+      "lon": -82.65609438444932,
+      "lat": 28.8314047,
+      "source": "https://www.openstreetmap.org/way/1319918435",
+      "reason": "Public Ozello Community Park frames the marsh channels and wooded island neighborhoods, with the fishing pier in the wider Town view."
+    }
+  },
+  "localities": {
+    "30a": {
+      "name": "Seaside / 30A",
+      "node": 153560890,
+      "radius_km": 1.5
+    },
+    "pensacola-beach": {
+      "name": "Pensacola Beach",
+      "node": 153520638,
+      "radius_km": 1.5,
+      "reference": "https://visitpensacolabeach.com/wp-content/uploads/2025/02/SRAI_ADA_map_2025.pdf"
+    },
+    "st-teresa": {
+      "name": "Saint Teresa",
+      "node": 153843184,
+      "radius_km": 1.5,
+      "reference": "https://floridadep.gov/rcp/coastal-access-guide"
+    },
+    "ozello": {
+      "name": "Ozello",
+      "node": 153933485,
+      "radius_km": 1.5,
+      "reference": "https://www.citrusbocc.com/departments/community_services/parks___recreation/parks___beaches/ozello_community_park.php"
+    },
+    "perdido-key": {
+      "name": "Johnsons Beach / Perdido Key",
+      "node": 153522537,
+      "radius_km": 2.0,
+      "reference": "https://www.nps.gov/guis/planyourvisit/perdido-key-area.htm"
+    },
+    "okaloosa-island": {
+      "name": "Okaloosa Island",
+      "reference": "https://gis.myokaloosa.com/gis/maps/Parks/parks.pdf",
+      "public_feature_source": "https://www.openstreetmap.org/node/7081736588"
+    },
+    "keaton-beach": {
+      "name": "Keaton Beach",
+      "node": 154124453,
+      "radius_km": 1.5
+    },
+    "suwannee": {
+      "name": "Suwannee",
+      "node": 154063545,
+      "radius_km": 1.5
+    },
+    "weeki-wachee": {
+      "name": "Weeki Wachee",
+      "node": 153907354,
+      "radius_km": 1.5,
+      "reference": "https://www.floridastateparks.org/WeekiWachee"
+    },
+    "ponte-vedra-beach": {
+      "name": "Ponte Vedra Beach",
+      "node": 153904286,
+      "radius_km": 2.0,
+      "reference": "https://www.sjcfl.us/beach-services/beach-access/"
+    }
+  }
+}
