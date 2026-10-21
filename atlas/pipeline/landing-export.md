@@ -49,3 +49,8 @@ geometry stay intact. Colors outside the source water family pass through
 unchanged. Transfers are capped at 48 RGB steps per channel, and scenes without
 sufficient water pixels receive no recipe. Both Town/Close and desktop/phone
 variants are measured independently against the regional surroundings.
+
+The display filter ends with a restrained 3×3 edge-sharpening kernel (center
+1.48, four neighbors −0.12, sum 1). This preserves flat colors and alpha while
+slightly improving roof/street edge contrast. It also applies to scenes without
+a water-color recipe. It does not create detail absent from the original render.
