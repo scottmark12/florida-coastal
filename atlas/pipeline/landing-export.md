@@ -39,3 +39,13 @@ manifest's projected coordinates, with the atlas's 45 degree tilt.
 Then run `python publish_town_flight.py`. It embeds the latest image revisions,
 bounds and anchors with `site-town-flight.js` in a newly hashed site runtime,
 updates HTML references, and retains previous runtimes for cached pages.
+
+After rebuilding the flight raster, run `python build_town_tones.py` before
+`publish_town_flight.py`. It measures each landing image's dominant water color
+against the regional raster at its saved camera footprint, producing selective
+RGB display recipes in `img/atlas/town-tones.json`. The walkthrough applies these
+with a feathered SVG color-key filter; the original WebPs, model materials and
+geometry stay intact. Colors outside the source water family pass through
+unchanged. Transfers are capped at 48 RGB steps per channel, and scenes without
+sufficient water pixels receive no recipe. Both Town/Close and desktop/phone
+variants are measured independently against the regional surroundings.
