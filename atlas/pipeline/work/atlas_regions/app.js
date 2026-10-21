@@ -20,7 +20,20 @@ const qs=new URLSearchParams(location.search);const landing=qs.get('landing')===
 let selectedLake=null;
 let thirty=null,thirtyModel=null,sandArt=null,alysArt=null,alysOccupied=[];
 let emeraldWater=null,bridgeModel=null,bridgeIndex=null;
+let landingWater=null,landingWaterId=null,landingWaterMeta=null;
+async function uniformLandingWater(){
+ if(!landing)return;
+ if(!landingWaterMeta)landingWaterMeta=await fetch(assetBase+'landing-water/index.json').then(r=>r.json());
+ const meta=landingWaterMeta.towns[activeTown.id];if(!meta)throw Error('Missing landing water '+activeTown.id);
+ sea.material.color.set(landingWaterMeta.palette.deep);scene.background.set(landingWaterMeta.palette.deep);
+ if(landingWaterId===activeTown.id)return;
+ if(landingWater){scene.remove(landingWater);landingWater.geometry.dispose();landingWater.material.map.dispose();landingWater.material.dispose()}
+ const texture=await new THREE.TextureLoader().loadAsync(assetBase+'landing-water/'+meta.file);texture.colorSpace=THREE.SRGBColorSpace;
+ const [x0,y0,x1,y1]=meta.bounds;landingWater=new THREE.Mesh(new THREE.PlaneGeometry(x1-x0,y1-y0),new THREE.MeshBasicMaterial({map:texture,transparent:true,depthWrite:false,toneMapped:false}));
+ landingWater.rotation.x=-Math.PI/2;landingWater.position.set((x0+x1)/2,.0013,-(y0+y1)/2);scene.add(landingWater);landingWaterId=activeTown.id;
+}
 async function regionalWater(){
+ if(landing){await uniformLandingWater();if(emeraldWater)emeraldWater.visible=false;return}
  const emerald=['emerald-coast','forgotten-coast'].includes(region.id)&&level!=='state';
  sea.material.color.set(emerald?'#17658f':'#3593ae');scene.background.set(emerald?'#17658f':'#3593ae');
  const visible=!isDetailed()&&!(level==='region'&&overviewRegistry[region.id])&&(level==='state'||['emerald-coast','forgotten-coast'].includes(region.id));
@@ -122,7 +135,7 @@ async function show(){
    const radius=Math.max(2.5,span*.8,(camera.top-camera.bottom)*Math.SQRT2*.65),visible=bridgeIndex.tiles.filter(t=>t.bounds[0]<=target.x+radius&&t.bounds[2]>=target.x-radius&&t.bounds[1]<=-target.z+radius&&t.bounds[3]>=-target.z-radius);
    const meshes=await Promise.all(visible.map(t=>load(t.name)));if(token!==packageToken)return;bridgeModel.clear();meshes.forEach(mesh=>bridgeModel.add(mesh));document.body.dataset.bridgeTiles=visible.length;
   }
-  await regionalWater();document.body.dataset.ready='false';renderer.toneMapping=isDetailed()?THREE.NoToneMapping:THREE.ACESFilmicToneMapping;
+  await regionalWater();document.body.dataset.ready='false';renderer.toneMapping=(isDetailed()||(landing&&isThirty()))?THREE.NoToneMapping:THREE.ACESFilmicToneMapping;
   if(level==='region'&&overviewRegistry[region.id]){
    if(detailedLayer)detailedLayer.hide();for(const o of [terrain,architecture,stateIcons,thirtyModel,sandArt,alysArt,emeraldWater])if(o)o.visible=false;roadLines.visible=false;
    renderer.toneMapping=THREE.NoToneMapping;sun.shadow.normalBias=.0001;
@@ -282,15 +295,15 @@ function updateForestDetail(){
  const key=target.x.toFixed(4)+','+target.z.toFixed(4);if(key===forestDetailKey)return;forestDetailKey=key;
  while(forestDetail.children.length){const o=forestDetail.children.pop();o.dispose?.()}
  const prototypes=[];const occupied=new Set(alysOccupied),cell=.004;
- terrain.traverse(o=>{if(!o.isInstancedMesh)return;const name=o.name+' '+o.parent?.name;if(/Trees/.test(name)){prototypes.push(o);return}const a=o.userData.allMatrices||o.instanceMatrix.array;for(let i=0;i<a.length;i+=16){const x=a[i+12],z=a[i+14];if(Math.abs(x-target.x)>1||Math.abs(z-target.z)>1)continue;const wx=Math.hypot(a[i],a[i+2]),wz=Math.hypot(a[i+8],a[i+10]),radius=Math.max(wx,wz)*.75+.003;for(let xx=Math.floor((x-radius)/cell);xx<=Math.ceil((x+radius)/cell);xx++)for(let zz=Math.floor((z-radius)/cell);zz<=Math.ceil((z+radius)/cell);zz++){const dx=(xx+.5)*cell-x,dz=(zz+.5)*cell-z;if(Math.abs((dx*a[i]+dz*a[i+2])/wx)<wx*.5+.001&&Math.abs((dx*a[i+8]+dz*a[i+10])/wz)<wz*.5+.001)occupied.add(xx+','+zz)}}});
- const id=selectedDistrict?.id||'seaside',local=localCanopies.get(id),b=local?thirty.neighborhoodCanopies[id].bounds:thirty.canopyBounds,pixels=local||canopyPixels,positions=[];const halfX=span*.55,halfZ=(camera.top-camera.bottom)*.78;const step=(thirty.scaleRule.treeSpacingMeters||8)/1000;
+ terrain.traverse(o=>{if(!o.isInstancedMesh)return;const name=o.name+' '+o.parent?.name;if(/Trees/.test(name)){prototypes.push(o);return}const a=o.userData.allMatrices||o.instanceMatrix.array;for(let i=0;i<a.length;i+=16){const x=a[i+12],z=a[i+14];if(Math.abs(x-target.x)>(landing?span*.55:1)||Math.abs(z-target.z)>(landing?(camera.top-camera.bottom)*.78:1))continue;const wx=Math.hypot(a[i],a[i+2]),wz=Math.hypot(a[i+8],a[i+10]),radius=Math.max(wx,wz)*.75+.003;for(let xx=Math.floor((x-radius)/cell);xx<=Math.ceil((x+radius)/cell);xx++)for(let zz=Math.floor((z-radius)/cell);zz<=Math.ceil((z+radius)/cell);zz++){const dx=(xx+.5)*cell-x,dz=(zz+.5)*cell-z;if(Math.abs((dx*a[i]+dz*a[i+2])/wx)<wx*.5+.001&&Math.abs((dx*a[i+8]+dz*a[i+10])/wz)<wz*.5+.001)occupied.add(xx+','+zz)}}});
+ const id=selectedDistrict?.id||'seaside',local=localCanopies.get(id),b=local&&span<3?thirty.neighborhoodCanopies[id].bounds:thirty.canopyBounds,pixels=local&&span<3?local:canopyPixels,positions=[];const halfX=span*.55,halfZ=(camera.top-camera.bottom)*.78;const step=(thirty.scaleRule.treeSpacingMeters||8)/1000;
  for(let x=Math.floor((target.x-halfX)/step)*step;x<target.x+halfX;x+=step)for(let z=Math.floor((target.z-halfZ)/step)*step;z<target.z+halfZ;z+=step){
   if(occupied.has(Math.floor(x/cell)+','+Math.floor(z/cell)))continue;const u=(x-b[0])/(b[2]-b[0]),v=(b[3]+z)/(b[3]-b[1]);if(u<0||u>=1||v<0||v>=1)continue;
   const density=pixels.data[(Math.floor(v*pixels.height)*pixels.width+Math.floor(u*pixels.width))*4];const grove=Math.sin(x*72+Math.sin(z*39)*2)+Math.cos(z*63+Math.sin(x*27)*2);if(density<110||grove<-.2||Math.sin(x*1937+z*1271)<-.05)continue;
-  const j=Math.sin(x*1813+z*912)*.0035,k=Math.sin(x*931-z*1717)*.0035;positions.push([x+j,.003,z+k]);if(positions.length>=18000)break;
+  const j=Math.sin(x*1813+z*912)*.0035,k=Math.sin(x*931-z*1717)*.0035;positions.push([x+j,.003,z+k]);if(positions.length>=(landing?48000:18000))break;
  }
  const district=thirty.districts.find(d=>d.id===id),palms=[],broadleaf=[];for(const p of positions){const nearCoast=district&&p[2]>-district.y-.18;const random=Math.abs(Math.sin(p[0]*4171+p[2]*7583));(random<(nearCoast?.72:.16)?palms:broadleaf).push(p)}
- for(const proto of prototypes){const mesh=new THREE.InstancedMesh(proto.geometry,proto.material,broadleaf.length);mesh.castShadow=!mobile;mesh.receiveShadow=true;const m=new THREE.Matrix4();broadleaf.forEach((p,i)=>{const size=.55+.22*Math.abs(Math.sin(p[0]*1173+p[2]*837));m.makeScale(size,size,size);m.setPosition(...p);mesh.setMatrixAt(i,m);mesh.setColorAt(i,new THREE.Color(['#edf0cf','#d1dfb6','#b9ce9d','#dce6be'][i%4]))});mesh.computeBoundingSphere();forestDetail.add(mesh)}
+ for(const proto of prototypes){const mesh=new THREE.InstancedMesh(proto.geometry,proto.material,broadleaf.length);mesh.castShadow=!mobile;mesh.receiveShadow=true;const m=new THREE.Matrix4();broadleaf.forEach((p,i)=>{const variation=Math.abs(Math.sin(p[0]*1173+p[2]*837)),size=landing&&span>=3?1.15+.25*variation:.55+.22*variation;m.makeScale(size,size,size);m.setPosition(...p);mesh.setMatrixAt(i,m);mesh.setColorAt(i,new THREE.Color(['#edf0cf','#d1dfb6','#b9ce9d','#dce6be'][i%4]))});mesh.computeBoundingSphere();forestDetail.add(mesh)}
  for(const proto of palmGeometry()){const mesh=new THREE.InstancedMesh(proto.geometry,proto.material,palms.length),m=new THREE.Matrix4(),q=new THREE.Quaternion();palms.forEach((p,i)=>{const size=.72+.25*Math.abs(Math.sin(p[0]*831+p[2]*413));q.setFromAxisAngle(new THREE.Vector3(0,1,0),p[0]*877);m.compose(new THREE.Vector3(...p),q,new THREE.Vector3(size,size,size));mesh.setMatrixAt(i,m)});mesh.castShadow=!mobile;mesh.receiveShadow=true;mesh.computeBoundingSphere();forestDetail.add(mesh)}
  document.body.dataset.palmTrees=palms.length;document.body.dataset.forestTrees=positions.length;
 }

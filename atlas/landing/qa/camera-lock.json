@@ -1,0 +1,16 @@
+{
+  "towns": 167,
+  "camera_views": 334,
+  "unchanged": true,
+  "before_sha256": "88847d5e0e643bc99736cf0c22c16a16456415f6604ece09ad5de66e59c50f1a",
+  "after_sha256": "88847d5e0e643bc99736cf0c22c16a16456415f6604ece09ad5de66e59c50f1a",
+  "fields": [
+    "hero",
+    "center",
+    "span",
+    "close_span",
+    "views.*.camera",
+    "views.*.mobile_camera",
+    "views.*.span"
+  ]
+}

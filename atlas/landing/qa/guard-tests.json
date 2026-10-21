@@ -1,0 +1,7 @@
+{
+  "checks": [
+    "Mapped callout rejected",
+    "Out-of-palette navy water rejected"
+  ],
+  "passed": true
+}

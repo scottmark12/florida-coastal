@@ -88,9 +88,7 @@ def feature(e,h):
  if e['type']=='node':
   if abs(e['lon']-h['lon'])>.12 or abs(e['lat']-h['lat'])>.10:return
  elif geo and not any(abs(p['lon']-h['lon'])<.12 and abs(p['lat']-h['lat'])<.10 for p in geo):return
- if not name:
-  if typ=='walkable' or typ=='landmark':return
-  name={'park':'Mapped public park','beach':'Mapped beach access','boating':'Mapped marina or boat ramp'}[typ]
+ if not name or name.strip().lower().startswith("mapped"):return
  try:
   if e['type']=='node':p=Point(e['lon'],e['lat'])
   else:
@@ -279,7 +277,7 @@ def finish():
  sheet.save(folder/'all-towns.jpg',quality=84,optimize=True)
  (folder/'report.json').write_text(json.dumps({'towns':len(rows),'images':len(rows)*4,'width_exceptions':[],'flagged':[r for r in rows if r['flags']],'rows':rows},indent=2)+'\n')
  with open(folder/'report.csv','w') as f:
-  writer=csv.DictWriter(f,fieldnames=rows[0].keys());writer.writeheader();writer.writerows(rows)
+  writer=csv.DictWriter(f,fieldnames=rows[0].keys(),lineterminator='\n');writer.writeheader();writer.writerows(rows)
  (A/'landing/index.json').write_text(json.dumps(index,indent=2)+'\n')
  (A/'landing/capture-queue.json').write_text((OUT/'capture-queue.json').read_text())
  page='<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Fixed camera landing QA · 167 towns</title><style>body{background:#f5f0e3;color:#294a43;font:16px system-ui;margin:24px}main{max-width:1400px;margin:auto}article{padding:18px;background:#fffcf5;margin:24px 0}.pair{display:grid;grid-template-columns:1fr 1fr;gap:12px}figure{margin:0}img{width:100%;display:block;aspect-ratio:8/5;object-fit:contain}figcaption{padding:8px 0}a{color:inherit}.flag{color:#a13d20}pre{white-space:pre-wrap;font-size:12px}@media(max-width:600px){body{margin:8px}.pair{gap:6px}article{padding:8px}}</style><main><h1>Fixed camera landing QA</h1><p>167 towns · 668 images · 45° orthographic · fixed Town 5 km (listed big cities 7 km), Close 2 km. Phone crops halve width. Both zooms share a camera target. Land percentages use approved OSM-derived coastline polygons, including sand.</p><p><a href="qa/report.csv">QA CSV</a> · <a href="qa/report.json">QA JSON</a> · <a href="qa/all-towns.jpg">Full contact sheet</a></p><p>'+ ' · '.join(links)+'</p>'+''.join(articles)+'</main>'
@@ -364,7 +362,7 @@ def refresh_callouts():
   tid=t['town_id'];h=t['hero'];hx,hy=xy(h);cx,cy=t['center']['x'],t['center']['y']
   features=[feature(e,h) for e in elements(str(region_source(tid)))];features=[q for q in features if q]
   for key,v in t['views'].items():
-   pool=[q for q in features+v['callouts'] if visible(q,cx,cy,v['span']) and visible(q,cx,cy,v['span'],True)]
+   pool=[q for q in features+[q for q in v['callouts'] if not q['name'].strip().lower().startswith('mapped')] if visible(q,cx,cy,v['span']) and visible(q,cx,cy,v['span'],True)]
    pool.sort(key=lambda q:math.hypot(xy(q)[0]-hx,xy(q)[1]-hy))
    selected=[];seen=set();maximum=4 if key=='town' else 3
    for typ in ['beach','boating','walkable','park','landmark']:
@@ -375,7 +373,8 @@ def refresh_callouts():
    for q in pool:
     if len(selected)>=minimum:break
     if norm(q['name']) not in seen:selected.append({k:a for k,a in q.items() if k!='public'});seen.add(norm(q['name']))
-   assert minimum<=len(selected)<=maximum,(tid,key)
+   assert len(selected)<=maximum,(tid,key)
+   v['callout_note']='Only named OSM features inside both frames; unnamed features dropped if no named replacement exists.'
    v['callouts']=selected;v['mobile_callouts']=copy.deepcopy(selected)
    prefix='' if key=='town' else 'close_';t[prefix+'callouts']=selected
    t['qa']['callouts_'+('town' if key=='town' else 'close')]=len(selected)

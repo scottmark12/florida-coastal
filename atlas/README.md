@@ -344,3 +344,13 @@ All 167 towns have four fresh exports, with the approved geometry, art, lighting
 [Contact-sheet review](landing/fixed-camera-review.html) · [Full contact sheet](landing/qa/all-towns.jpg) · [QA CSV](landing/qa/report.csv) · [QA JSON](landing/qa/report.json). Water shortfalls are explicit flags under the approved narrow-island exception. Formal place limits use Census polygons; named unincorporated localities use reviewed public-feature and locality sources, distinguished in the manifest. Water measurements use the regional OSM-derived land geometry, including sand, so a clipped town extract is not mistaken for water.
 
 Re-run with [the fixed export steps](pipeline/landing-export.md). Raw inputs and browser PNG captures remain ignored. The site camera catalog uses the actual shared camera center, which can differ from the public hero point.
+
+Landing polish: all 167 towns (668 images) now use the same light-teal / teal-blue
+water recipe, fixed 1.2 km shore gradient, and named OSM callouts only. All cameras,
+spans and hero points are unchanged. 30A's Town export uses the full source canopy
+and fuller crown rendering. See `landing/fixed-camera-review.html`, the new
+`landing/qa/all-towns.jpg` contact sheet, `water-palette.json`, `camera-lock.json`
+and `callout-name-audit.json` for proof. Sanibel Close has no named callout inside
+its fixed phone frame and is intentionally empty. Three Close phone crops have
+no sampleable open water; those are explicit QA records, not palette passes.
+The existing 17 fixed-zoom island land-coverage exceptions remain unchanged.

@@ -36,8 +36,9 @@ for t in index['towns']:
    allowance=.3 if t['frame_class']=='narrow_island' else .2
    assert .5-allowance-1e-7<=u<=.5+allowance+1e-7 and .5-allowance-1e-7<=vv<=.5+allowance+1e-7,(tid,level,frame,'hero',u,vv)
    calls=v['callouts'] if frame=='desktop' else v['mobile_callouts']
-   assert (2<=len(calls)<=4 if level=='town' else 1<=len(calls)<=3),(tid,level,frame,'count')
+   assert (0<=len(calls)<=4 if level=='town' else 0<=len(calls)<=3),(tid,level,frame,'count')
    for q in calls:
+    assert q['name'].strip() and not q['name'].strip().lower().startswith('mapped'),(tid,q['name'])
     assert q['type'] in ['beach','boating','walkable','park','landmark']
     assert q['source'].startswith('https://www.openstreetmap.org/'),(tid,q)
     px,py=[v/1000 for v in T.transform(q['lon'],q['lat'])];u=.5+(px-x)/width;vv=.5-(py-y)/ground_height
@@ -45,3 +46,6 @@ for t in index['towns']:
     assert .08-1e-7<=u<=.92+1e-7 and vertical_margin-1e-7<=vv<=1-vertical_margin+1e-7,(tid,level,frame,q['name'],u,vv)
   rows.append({'town_id':tid,'view':level,'span_km':v['span'],'callouts':len(v['callouts']),'checks':'passed','flags':qa['flags']})
 result={'town_count':len(index['towns']),'view_count':len(rows),'image_count':len(rows)*2,'width_exceptions':[],'flagged_towns':[t['town_id'] for t in index['towns'] if t['qa']['flags']],'towns':rows};(A/'landing/validation.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k!='towns'}))
+
+from check_water_palette import check
+check(index)

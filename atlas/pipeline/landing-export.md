@@ -65,3 +65,35 @@ size, rather than timed sliding or crossfading DOM panels. The canvas remains
 after arrival, retaining up to four recent detail textures. Town/Close uses the
 same camera for a 900 ms zoom. Destination images decode before flight; phone
 Photo mode and reduced-motion navigation retain their existing fallback behavior.
+
+### Landing polish: one water recipe and named callouts
+
+Keep the published `landing/index.json` as the camera/hero baseline. Copy it to
+`outputs/fixed-landings/planned-index.json`; **do not run the framing planner**
+for a color or callout-only pass. `fixed_landings.py calls` keeps every camera,
+span and hero unchanged and selects only named OSM features visible in both
+exports. Unnamed features without a named alternative in-frame are dropped.
+The callout-name audit records the omissions, including Sanibel's Close frame.
+
+Run `landing_water.py` before browser capture. It clips a single shared water
+texture to the approved land polygons, with light teal `#8bcfc9`, mid teal-blue
+`#3593ae` and a 1.2 km smooth shore transition for every town. Mapped inland
+water polygons and river/canal ways use the shallow color. This is an illustrated
+color treatment, not bathymetry; no shoreline coordinates are moved. Rendered
+water uses an unlit material so lighting does not create per-town color shifts.
+The original sunlight, tilt and architecture recipes remain unchanged. 30A uses
+the same town display transform as other town packages; broad Town frames use
+the full source forest mask rather than only a neighborhood canopy patch.
+
+After capture/finalize, run `check_landings.py`. It rejects empty or `Mapped…`
+callout names and runs `check_water_palette.py` against all 668 images. Water
+samples use the geographic mask, exclude a 20 m shoreline margin and neutral occluders (boats, bridges and roofs). For frames with at least 1% open-water coverage in the sampling mask, at least 60% of samples must remain water-like. Palette tolerance is 22 channel values, with at most 5% or three boundary/occlusion pixels outside it. Sparse river frames are identified separately for visual review. Frames
+with no open-water sample are reported explicitly. The desktop capture transport
+uses display-P3 channel values without an ICC tag, so the QA compares recipe
+endpoints in that same capture space. Per-town display water shifts are disabled
+in `img/atlas/town-tones.json`; the existing sharpening remains.
+
+Outputs: `landing/qa/callout-name-audit.json`, `water-palette.json`, camera-lock
+proof and the new polish contact sheets. Raw OSM inputs and captures remain
+ignored; generated water textures are distributable OSM-derived illustration
+assets under `regions/landing-water/`.

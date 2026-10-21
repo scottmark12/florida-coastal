@@ -1,0 +1,4247 @@
+{
+  "generic_before": 159,
+  "generic_after": 0,
+  "callouts_before": 831,
+  "callouts_after": 734,
+  "empty_frames": [
+    {
+      "town_id": "sanibel-island",
+      "view": "street",
+      "reason": "No named OSM feature of the requested types inside the unchanged close phone frame; dropped per request."
+    }
+  ],
+  "changes": [
+    {
+      "town_id": "30a",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.13816750572725,
+          "lat": 30.31906625,
+          "source": "https://www.openstreetmap.org/way/103385907"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -86.13771905772637,
+          "lat": 30.3201825,
+          "source": "https://www.openstreetmap.org/way/57182994"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Central Square",
+          "type": "walkable",
+          "lon": -86.1375407,
+          "lat": 30.3204957,
+          "source": "https://www.openstreetmap.org/way/11373129"
+        },
+        {
+          "name": "Lyceum",
+          "type": "park",
+          "lon": -86.13830499781315,
+          "lat": 30.3211772,
+          "source": "https://www.openstreetmap.org/way/57184490"
+        }
+      ]
+    },
+    {
+      "town_id": "30a",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.13816750572725,
+          "lat": 30.31906625,
+          "source": "https://www.openstreetmap.org/way/103385907"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -86.13771905772637,
+          "lat": 30.3201825,
+          "source": "https://www.openstreetmap.org/way/57182994"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Central Square",
+          "type": "walkable",
+          "lon": -86.1375407,
+          "lat": 30.3204957,
+          "source": "https://www.openstreetmap.org/way/11373129"
+        },
+        {
+          "name": "Lyceum",
+          "type": "park",
+          "lon": -86.13830499781315,
+          "lat": 30.3211772,
+          "source": "https://www.openstreetmap.org/way/57184490"
+        }
+      ]
+    },
+    {
+      "town_id": "clearwaterbeach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.82479974833183,
+          "lat": 27.9778098,
+          "source": "https://www.openstreetmap.org/way/1374823641"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Clearwater Beach",
+          "type": "beach",
+          "lon": -82.8286879,
+          "lat": 27.9849747,
+          "source": "https://www.openstreetmap.org/node/5462507225"
+        },
+        {
+          "name": "Clearwater Beach Public Boat Ramp",
+          "type": "boating",
+          "lon": -82.82372544844823,
+          "lat": 27.984851473993565,
+          "source": "https://www.openstreetmap.org/way/889581597"
+        },
+        {
+          "name": "Beachwalk",
+          "type": "walkable",
+          "lon": -82.8288372,
+          "lat": 27.9772003,
+          "source": "https://www.openstreetmap.org/way/383719202"
+        },
+        {
+          "name": "Papaya Street Plaza",
+          "type": "park",
+          "lon": -82.82549080803271,
+          "lat": 27.979939450000003,
+          "source": "https://www.openstreetmap.org/way/765286982"
+        }
+      ]
+    },
+    {
+      "town_id": "clearwaterbeach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.82479974833183,
+          "lat": 27.9778098,
+          "source": "https://www.openstreetmap.org/way/1374823641"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Beachwalk",
+          "type": "walkable",
+          "lon": -82.8288372,
+          "lat": 27.9772003,
+          "source": "https://www.openstreetmap.org/way/383719202"
+        }
+      ]
+    },
+    {
+      "town_id": "gulfport",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.70750282541884,
+          "lat": 27.73752065,
+          "source": "https://www.openstreetmap.org/way/233322745"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -82.7061617241313,
+          "lat": 27.73828055,
+          "source": "https://www.openstreetmap.org/way/471175801"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Beach Boulevard South",
+          "type": "walkable",
+          "lon": -82.7078413,
+          "lat": 27.742027,
+          "source": "https://www.openstreetmap.org/way/228151031"
+        },
+        {
+          "name": "Clymer Park",
+          "type": "park",
+          "lon": -82.70789377485019,
+          "lat": 27.74645245,
+          "source": "https://www.openstreetmap.org/way/307039281"
+        },
+        {
+          "name": "Gulfport History Museum",
+          "type": "landmark",
+          "lon": -82.70552670000001,
+          "lat": 27.74256015,
+          "source": "https://www.openstreetmap.org/way/522742306"
+        }
+      ]
+    },
+    {
+      "town_id": "gulfport",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.70750282541884,
+          "lat": 27.73752065,
+          "source": "https://www.openstreetmap.org/way/233322745"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -82.7061617241313,
+          "lat": 27.73828055,
+          "source": "https://www.openstreetmap.org/way/471175801"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Beach Boulevard South",
+          "type": "walkable",
+          "lon": -82.7078413,
+          "lat": 27.742027,
+          "source": "https://www.openstreetmap.org/way/228151031"
+        },
+        {
+          "name": "Clymer Park",
+          "type": "park",
+          "lon": -82.70789377485019,
+          "lat": 27.74645245,
+          "source": "https://www.openstreetmap.org/way/307039281"
+        },
+        {
+          "name": "Gulfport History Museum",
+          "type": "landmark",
+          "lon": -82.70552670000001,
+          "lat": 27.74256015,
+          "source": "https://www.openstreetmap.org/way/522742306"
+        }
+      ]
+    },
+    {
+      "town_id": "ami",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.72801032858038,
+          "lat": 27.531146550000003,
+          "source": "https://www.openstreetmap.org/relation/17387382"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Bay Boulevard",
+          "type": "walkable",
+          "lon": -82.73154227211292,
+          "lat": 27.532561158546848,
+          "source": "https://www.openstreetmap.org/way/11093523"
+        },
+        {
+          "name": "Anna Maria Bayfront Park",
+          "type": "park",
+          "lon": -82.7356661185446,
+          "lat": 27.5349252,
+          "source": "https://www.openstreetmap.org/way/343946609"
+        }
+      ]
+    },
+    {
+      "town_id": "ami",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.72801032858038,
+          "lat": 27.531146550000003,
+          "source": "https://www.openstreetmap.org/relation/17387382"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Bay Boulevard",
+          "type": "walkable",
+          "lon": -82.73154227211292,
+          "lat": 27.532561158546848,
+          "source": "https://www.openstreetmap.org/way/11093523"
+        }
+      ]
+    },
+    {
+      "town_id": "longboat",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.65740540413807,
+          "lat": 27.4086049,
+          "source": "https://www.openstreetmap.org/way/207125832"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Gulf of Mexico Drive",
+          "type": "walkable",
+          "lon": -82.64802272563357,
+          "lat": 27.39967921746859,
+          "source": "https://www.openstreetmap.org/way/761402744"
+        },
+        {
+          "name": "Bayfront Park Recreation Center",
+          "type": "park",
+          "lon": -82.63908595661498,
+          "lat": 27.388188800000002,
+          "source": "https://www.openstreetmap.org/way/31733858"
+        }
+      ]
+    },
+    {
+      "town_id": "clearwater",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.80769944276668,
+          "lat": 27.9679317,
+          "source": "https://www.openstreetmap.org/way/1374819519"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Cleveland Street",
+          "type": "walkable",
+          "lon": -82.80260912256539,
+          "lat": 27.965664487385805,
+          "source": "https://www.openstreetmap.org/way/1255598510"
+        },
+        {
+          "name": "Coachman Park",
+          "type": "park",
+          "lon": -82.80266453988465,
+          "lat": 27.9662772,
+          "source": "https://www.openstreetmap.org/way/31824123"
+        },
+        {
+          "name": "Clearwater Historical Society Museum and Cultural Center",
+          "type": "landmark",
+          "lon": -82.80052235033361,
+          "lat": 27.958627749999998,
+          "source": "https://www.openstreetmap.org/way/525433486"
+        }
+      ]
+    },
+    {
+      "town_id": "madeira-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -82.7835726666298,
+          "lat": 27.78395635,
+          "source": "https://www.openstreetmap.org/way/267254772"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Hubbard's Beach",
+          "type": "beach",
+          "lon": -82.782387,
+          "lat": 27.7842311,
+          "source": "https://www.openstreetmap.org/node/7029159397"
+        },
+        {
+          "name": "Hubbards Marina",
+          "type": "boating",
+          "lon": -82.78230444109371,
+          "lat": 27.78459625,
+          "source": "https://www.openstreetmap.org/way/231594757"
+        },
+        {
+          "name": "John's Pass Boardwalk",
+          "type": "walkable",
+          "lon": -82.78213512784848,
+          "lat": 27.784542048103184,
+          "source": "https://www.openstreetmap.org/way/469847145"
+        }
+      ]
+    },
+    {
+      "town_id": "st-pete-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -82.73290645293068,
+          "lat": 27.7074064,
+          "source": "https://www.openstreetmap.org/way/190358975"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Pass-a-Grille Beach",
+          "type": "beach",
+          "lon": -82.73949111485409,
+          "lat": 27.71367975,
+          "source": "https://www.openstreetmap.org/way/193761305"
+        },
+        {
+          "name": "Gulf Boulevard",
+          "type": "walkable",
+          "lon": -82.73702513901922,
+          "lat": 27.709399434890788,
+          "source": "https://www.openstreetmap.org/way/525609946"
+        },
+        {
+          "name": "Frank T. Hurley Park",
+          "type": "park",
+          "lon": -82.73676442155666,
+          "lat": 27.693194300000002,
+          "source": "https://www.openstreetmap.org/way/192864489"
+        }
+      ]
+    },
+    {
+      "town_id": "st-pete-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -82.73290645293068,
+          "lat": 27.7074064,
+          "source": "https://www.openstreetmap.org/way/190358975"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Gulf Boulevard",
+          "type": "walkable",
+          "lon": -82.73702513901922,
+          "lat": 27.709399434890788,
+          "source": "https://www.openstreetmap.org/way/525609946"
+        }
+      ]
+    },
+    {
+      "town_id": "bradenton",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -82.5567477,
+          "lat": 27.49929475,
+          "source": "https://www.openstreetmap.org/way/1093949362"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Riverwalk",
+          "type": "walkable",
+          "lon": -82.56689467965204,
+          "lat": 27.499998852863914,
+          "source": "https://www.openstreetmap.org/way/217641711"
+        },
+        {
+          "name": "Bradenton Riverwalk",
+          "type": "park",
+          "lon": -82.56740577425369,
+          "lat": 27.499686,
+          "source": "https://www.openstreetmap.org/way/573271871"
+        },
+        {
+          "name": "The Bishop Museum of Science and Nature",
+          "type": "landmark",
+          "lon": -82.57155584336576,
+          "lat": 27.49826315,
+          "source": "https://www.openstreetmap.org/way/498036409"
+        }
+      ]
+    },
+    {
+      "town_id": "bradenton-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.68853571582699,
+          "lat": 27.4674167,
+          "source": "https://www.openstreetmap.org/way/989024801"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Bridge Street",
+          "type": "walkable",
+          "lon": -82.69596747465943,
+          "lat": 27.465749479674237,
+          "source": "https://www.openstreetmap.org/way/1153404730"
+        },
+        {
+          "name": "Moose Club 2188 Beach",
+          "type": "park",
+          "lon": -82.69921892997141,
+          "lat": 27.4651271,
+          "source": "https://www.openstreetmap.org/way/1335209817"
+        }
+      ]
+    },
+    {
+      "town_id": "cortez",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.68853571582699,
+          "lat": 27.4674167,
+          "source": "https://www.openstreetmap.org/way/989024801"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "46th Avenue West",
+          "type": "walkable",
+          "lon": -82.6853587166212,
+          "lat": 27.46628742656873,
+          "source": "https://www.openstreetmap.org/way/949974062"
+        },
+        {
+          "name": "Florida Maritime Museum Park",
+          "type": "park",
+          "lon": -82.68017630410945,
+          "lat": 27.467506,
+          "source": "https://www.openstreetmap.org/way/601190306"
+        },
+        {
+          "name": "Florida Maritime Museum",
+          "type": "landmark",
+          "lon": -82.68067520954374,
+          "lat": 27.46775315,
+          "source": "https://www.openstreetmap.org/way/601190320"
+        }
+      ]
+    },
+    {
+      "town_id": "sarasota",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.54297551039758,
+          "lat": 27.33194057130596,
+          "source": "https://www.openstreetmap.org/relation/6777965"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "John Ringling Boulevard",
+          "type": "walkable",
+          "lon": -82.54835455,
+          "lat": 27.3357179,
+          "source": "https://www.openstreetmap.org/way/202253496"
+        },
+        {
+          "name": "Ringling Bridge Causeway Park",
+          "type": "park",
+          "lon": -82.55344183561553,
+          "lat": 27.33482825,
+          "source": "https://www.openstreetmap.org/way/479372430"
+        },
+        {
+          "name": "Historical Exhibits & Education Center",
+          "type": "landmark",
+          "lon": -82.5476086202379,
+          "lat": 27.3422181,
+          "source": "https://www.openstreetmap.org/way/172230233"
+        }
+      ]
+    },
+    {
+      "town_id": "venice",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.46332160956719,
+          "lat": 27.11320715,
+          "source": "https://www.openstreetmap.org/way/1058106451"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Orlando Street",
+          "type": "walkable",
+          "lon": -82.4557476,
+          "lat": 27.1038981,
+          "source": "https://www.openstreetmap.org/way/11342028"
+        },
+        {
+          "name": "Prentiss French Park",
+          "type": "park",
+          "lon": -82.4520384501811,
+          "lat": 27.102402650000002,
+          "source": "https://www.openstreetmap.org/way/489148200"
+        },
+        {
+          "name": "Venice Museum and Archives",
+          "type": "landmark",
+          "lon": -82.4475697217091,
+          "lat": 27.09531085,
+          "source": "https://www.openstreetmap.org/way/546126808"
+        }
+      ]
+    },
+    {
+      "town_id": "naples",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -81.79289773885374,
+          "lat": 26.135494694679736,
+          "source": "https://www.openstreetmap.org/way/1023112436"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "9th Avenue South Beach",
+          "type": "beach",
+          "lon": -81.8068116,
+          "lat": 26.1360399,
+          "source": "https://www.openstreetmap.org/node/4859630684"
+        },
+        {
+          "name": "4th Street South",
+          "type": "walkable",
+          "lon": -81.8010817,
+          "lat": 26.1365124,
+          "source": "https://www.openstreetmap.org/way/10852354"
+        },
+        {
+          "name": "Rogers Park",
+          "type": "park",
+          "lon": -81.80187687000772,
+          "lat": 26.13388265,
+          "source": "https://www.openstreetmap.org/way/501189786"
+        }
+      ]
+    },
+    {
+      "town_id": "chokoloskee",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.36274296187773,
+          "lat": 25.8104242,
+          "source": "https://www.openstreetmap.org/way/507660299"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.36222548597247,
+          "lat": 25.8101815,
+          "source": "https://www.openstreetmap.org/way/577465624"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Mamie Street",
+          "type": "walkable",
+          "lon": -81.362196,
+          "lat": 25.810074,
+          "source": "https://www.openstreetmap.org/way/10847782"
+        },
+        {
+          "name": "Lighthouse Park",
+          "type": "park",
+          "lon": -81.3594973529416,
+          "lat": 25.80963665,
+          "source": "https://www.openstreetmap.org/way/577465622"
+        }
+      ]
+    },
+    {
+      "town_id": "chokoloskee",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.36274296187773,
+          "lat": 25.8104242,
+          "source": "https://www.openstreetmap.org/way/507660299"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.36222548597247,
+          "lat": 25.8101815,
+          "source": "https://www.openstreetmap.org/way/577465624"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Mamie Street",
+          "type": "walkable",
+          "lon": -81.362196,
+          "lat": 25.810074,
+          "source": "https://www.openstreetmap.org/way/10847782"
+        },
+        {
+          "name": "Lighthouse Park",
+          "type": "park",
+          "lon": -81.3594973529416,
+          "lat": 25.80963665,
+          "source": "https://www.openstreetmap.org/way/577465622"
+        }
+      ]
+    },
+    {
+      "town_id": "pensacola",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -87.22266982351351,
+          "lat": 30.4042866,
+          "source": "https://www.openstreetmap.org/way/1540839606"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Spring Street",
+          "type": "walkable",
+          "lon": -87.217989,
+          "lat": 30.408674,
+          "source": "https://www.openstreetmap.org/way/136698533"
+        },
+        {
+          "name": "Plaza Ferdinand VII",
+          "type": "park",
+          "lon": -87.21394774958995,
+          "lat": 30.408818150000002,
+          "source": "https://www.openstreetmap.org/way/206038857"
+        },
+        {
+          "name": "Pensacola Museum of Art",
+          "type": "landmark",
+          "lon": -87.21353900621554,
+          "lat": 30.40793135,
+          "source": "https://www.openstreetmap.org/way/911111425"
+        }
+      ]
+    },
+    {
+      "town_id": "pensacola-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -87.1439778764138,
+          "lat": 30.33656405,
+          "source": "https://www.openstreetmap.org/way/1157324776"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -87.1410513199566,
+          "lat": 30.3314667,
+          "source": "https://www.openstreetmap.org/way/701205301"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Fort Pickens Road",
+          "type": "walkable",
+          "lon": -87.143095,
+          "lat": 30.331753,
+          "source": "https://www.openstreetmap.org/way/1374015899"
+        },
+        {
+          "name": "Pensacola Beach Band Shell",
+          "type": "park",
+          "lon": -87.14155329709891,
+          "lat": 30.33512135,
+          "source": "https://www.openstreetmap.org/way/377811020"
+        }
+      ]
+    },
+    {
+      "town_id": "pensacola-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -87.1439778764138,
+          "lat": 30.33656405,
+          "source": "https://www.openstreetmap.org/way/1157324776"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -87.14608027598996,
+          "lat": 30.33908255,
+          "source": "https://www.openstreetmap.org/way/421161505"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Fort Pickens Road",
+          "type": "walkable",
+          "lon": -87.143095,
+          "lat": 30.331753,
+          "source": "https://www.openstreetmap.org/way/1374015899"
+        }
+      ]
+    },
+    {
+      "town_id": "panama-city",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -85.6518228280244,
+          "lat": 30.1437244,
+          "source": "https://www.openstreetmap.org/way/1136084168"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -85.66174048239063,
+          "lat": 30.1526446,
+          "source": "https://www.openstreetmap.org/way/1147430606"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "West Government Street",
+          "type": "walkable",
+          "lon": -85.6630942556124,
+          "lat": 30.15345396559683,
+          "source": "https://www.openstreetmap.org/way/10762680"
+        },
+        {
+          "name": "McKenzie Park",
+          "type": "park",
+          "lon": -85.66090434183671,
+          "lat": 30.154404800000002,
+          "source": "https://www.openstreetmap.org/relation/8840259"
+        }
+      ]
+    },
+    {
+      "town_id": "panama-city",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -85.66174048239063,
+          "lat": 30.1526446,
+          "source": "https://www.openstreetmap.org/way/1147430606"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "West Government Street",
+          "type": "walkable",
+          "lon": -85.6630942556124,
+          "lat": 30.15345396559683,
+          "source": "https://www.openstreetmap.org/way/10762680"
+        },
+        {
+          "name": "McKenzie Park",
+          "type": "park",
+          "lon": -85.66090434183671,
+          "lat": 30.154404800000002,
+          "source": "https://www.openstreetmap.org/relation/8840259"
+        }
+      ]
+    },
+    {
+      "town_id": "destin",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.50935575880936,
+          "lat": 30.39044495,
+          "source": "https://www.openstreetmap.org/way/1140748474"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -86.5002106,
+          "lat": 30.41064375,
+          "source": "https://www.openstreetmap.org/way/718236002"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Stahlman Avenue",
+          "type": "walkable",
+          "lon": -86.5104461,
+          "lat": 30.3952028,
+          "source": "https://www.openstreetmap.org/way/1402582282"
+        },
+        {
+          "name": "Captain Leonard Destin Park",
+          "type": "park",
+          "lon": -86.5131774,
+          "lat": 30.3981818,
+          "source": "https://www.openstreetmap.org/node/8759151706"
+        },
+        {
+          "name": "Destin History & Fishing Museum",
+          "type": "landmark",
+          "lon": -86.50911077602106,
+          "lat": 30.39599545,
+          "source": "https://www.openstreetmap.org/way/165762172"
+        }
+      ]
+    },
+    {
+      "town_id": "port-st-joe",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -85.30650816301235,
+          "lat": 29.811460750000002,
+          "source": "https://www.openstreetmap.org/way/1132111895"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Harborview Drive",
+          "type": "walkable",
+          "lon": -85.3071401,
+          "lat": 29.8140918,
+          "source": "https://www.openstreetmap.org/way/193798085"
+        },
+        {
+          "name": "George Core Park",
+          "type": "park",
+          "lon": -85.30687038766492,
+          "lat": 29.8130858,
+          "source": "https://www.openstreetmap.org/way/627569703"
+        }
+      ]
+    },
+    {
+      "town_id": "port-st-joe",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -85.30650816301235,
+          "lat": 29.811460750000002,
+          "source": "https://www.openstreetmap.org/way/1132111895"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Harborview Drive",
+          "type": "walkable",
+          "lon": -85.3071401,
+          "lat": 29.8140918,
+          "source": "https://www.openstreetmap.org/way/193798085"
+        },
+        {
+          "name": "George Core Park",
+          "type": "park",
+          "lon": -85.30687038766492,
+          "lat": 29.8130858,
+          "source": "https://www.openstreetmap.org/way/627569703"
+        }
+      ]
+    },
+    {
+      "town_id": "st-george-island",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -84.86285594630178,
+          "lat": 29.668319150000002,
+          "source": "https://www.openstreetmap.org/way/1121099085"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -84.86829925,
+          "lat": 29.672673500000002,
+          "source": "https://www.openstreetmap.org/way/910080424"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Gulf Beach Drive East",
+          "type": "walkable",
+          "lon": -84.8627809,
+          "lat": 29.6634226,
+          "source": "https://www.openstreetmap.org/way/10927940"
+        },
+        {
+          "name": "Saint George Lighthouse Park",
+          "type": "park",
+          "lon": -84.86265069034653,
+          "lat": 29.6630776,
+          "source": "https://www.openstreetmap.org/way/318393587"
+        }
+      ]
+    },
+    {
+      "town_id": "st-george-island",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -84.86285594630178,
+          "lat": 29.668319150000002,
+          "source": "https://www.openstreetmap.org/way/1121099085"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -84.86829925,
+          "lat": 29.672673500000002,
+          "source": "https://www.openstreetmap.org/way/910080424"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Gulf Beach Drive East",
+          "type": "walkable",
+          "lon": -84.8627809,
+          "lat": 29.6634226,
+          "source": "https://www.openstreetmap.org/way/10927940"
+        },
+        {
+          "name": "Saint George Lighthouse Park",
+          "type": "park",
+          "lon": -84.86265069034653,
+          "lat": 29.6630776,
+          "source": "https://www.openstreetmap.org/way/318393587"
+        }
+      ]
+    },
+    {
+      "town_id": "carrabelle",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -84.65877457676721,
+          "lat": 29.8449978,
+          "source": "https://www.openstreetmap.org/way/1121099476"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Carrabelle Marina",
+          "type": "boating",
+          "lon": -84.67106476550566,
+          "lat": 29.85260715,
+          "source": "https://www.openstreetmap.org/way/476149704"
+        },
+        {
+          "name": "Marine Street",
+          "type": "walkable",
+          "lon": -84.66386775427456,
+          "lat": 29.847717688883524,
+          "source": "https://www.openstreetmap.org/way/136461694"
+        },
+        {
+          "name": "George Sands Park",
+          "type": "park",
+          "lon": -84.66104315472877,
+          "lat": 29.84943055,
+          "source": "https://www.openstreetmap.org/way/476112727"
+        },
+        {
+          "name": "Carrabelle History Museum",
+          "type": "landmark",
+          "lon": -84.66428455091247,
+          "lat": 29.850468499999998,
+          "source": "https://www.openstreetmap.org/way/476112756"
+        }
+      ]
+    },
+    {
+      "town_id": "mexico-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -85.41298898236776,
+          "lat": 29.9435244,
+          "source": "https://www.openstreetmap.org/way/1136084185"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South 39th Street",
+          "type": "walkable",
+          "lon": -85.4244362,
+          "lat": 29.9519253,
+          "source": "https://www.openstreetmap.org/way/10759586"
+        },
+        {
+          "name": "South 40th Street",
+          "type": "walkable",
+          "lon": -85.4250963,
+          "lat": 29.9523046,
+          "source": "https://www.openstreetmap.org/way/10762444"
+        }
+      ]
+    },
+    {
+      "town_id": "cedarkey",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -83.03225041212121,
+          "lat": 29.1351926,
+          "source": "https://www.openstreetmap.org/way/565936965"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "City Beach",
+          "type": "beach",
+          "lon": -83.02926032340909,
+          "lat": 29.13714565,
+          "source": "https://www.openstreetmap.org/way/565936963"
+        },
+        {
+          "name": "C Street",
+          "type": "walkable",
+          "lon": -83.0314586,
+          "lat": 29.1349313,
+          "source": "https://www.openstreetmap.org/way/11060308"
+        },
+        {
+          "name": "Lil' Shark Park",
+          "type": "park",
+          "lon": -83.0295672659515,
+          "lat": 29.137140100000003,
+          "source": "https://www.openstreetmap.org/way/396246391"
+        },
+        {
+          "name": "Cedar Key Historical Society Museum",
+          "type": "landmark",
+          "lon": -83.03348987770181,
+          "lat": 29.13618925,
+          "source": "https://www.openstreetmap.org/way/396246772"
+        }
+      ]
+    },
+    {
+      "town_id": "cedarkey",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -83.03225041212121,
+          "lat": 29.1351926,
+          "source": "https://www.openstreetmap.org/way/565936965"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "C Street",
+          "type": "walkable",
+          "lon": -83.0314586,
+          "lat": 29.1349313,
+          "source": "https://www.openstreetmap.org/way/11060308"
+        },
+        {
+          "name": "Cedar Key Historical Society Museum",
+          "type": "landmark",
+          "lon": -83.03348987770181,
+          "lat": 29.13618925,
+          "source": "https://www.openstreetmap.org/way/396246772"
+        }
+      ]
+    },
+    {
+      "town_id": "crystal-river",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.59241661055556,
+          "lat": 28.89487725,
+          "source": "https://www.openstreetmap.org/relation/7826698"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Northwest 3rd Street",
+          "type": "walkable",
+          "lon": -82.59541935525014,
+          "lat": 28.896817363275304,
+          "source": "https://www.openstreetmap.org/way/588713715"
+        },
+        {
+          "name": "Kings Bay Park",
+          "type": "park",
+          "lon": -82.59490193118017,
+          "lat": 28.89714075,
+          "source": "https://www.openstreetmap.org/way/307590931"
+        },
+        {
+          "name": "Coastal Heritage Museum",
+          "type": "landmark",
+          "lon": -82.5932876,
+          "lat": 28.89876775,
+          "source": "https://www.openstreetmap.org/way/1192555959"
+        }
+      ]
+    },
+    {
+      "town_id": "crystal-river",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.59241661055556,
+          "lat": 28.89487725,
+          "source": "https://www.openstreetmap.org/relation/7826698"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Northwest 3rd Street",
+          "type": "walkable",
+          "lon": -82.59541935525014,
+          "lat": 28.896817363275304,
+          "source": "https://www.openstreetmap.org/way/588713715"
+        },
+        {
+          "name": "Kings Bay Park",
+          "type": "park",
+          "lon": -82.59490193118017,
+          "lat": 28.89714075,
+          "source": "https://www.openstreetmap.org/way/307590931"
+        },
+        {
+          "name": "Coastal Heritage Museum",
+          "type": "landmark",
+          "lon": -82.5932876,
+          "lat": 28.89876775,
+          "source": "https://www.openstreetmap.org/way/1192555959"
+        }
+      ]
+    },
+    {
+      "town_id": "steinhatchee",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -83.39236863813585,
+          "lat": 29.6728522,
+          "source": "https://www.openstreetmap.org/way/353284903"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Riverside Drive",
+          "type": "walkable",
+          "lon": -83.38735957024669,
+          "lat": 29.67104664745378,
+          "source": "https://www.openstreetmap.org/way/205163071"
+        },
+        {
+          "name": "Park Avenue",
+          "type": "walkable",
+          "lon": -83.3877916,
+          "lat": 29.6712271,
+          "source": "https://www.openstreetmap.org/way/11351841"
+        }
+      ]
+    },
+    {
+      "town_id": "perdido-key",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -87.41277768780441,
+          "lat": 30.30283665,
+          "source": "https://www.openstreetmap.org/way/1157336597"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -87.41377304031195,
+          "lat": 30.299859249999997,
+          "source": "https://www.openstreetmap.org/way/1157336876"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Johnson Beach Road",
+          "type": "walkable",
+          "lon": -87.41402995462421,
+          "lat": 30.300500978638564,
+          "source": "https://www.openstreetmap.org/way/10926201"
+        },
+        {
+          "name": "Snorkeling Reef (approximate location)",
+          "type": "park",
+          "lon": -87.4262331,
+          "lat": 30.2946612,
+          "source": "https://www.openstreetmap.org/node/2446616180"
+        }
+      ]
+    },
+    {
+      "town_id": "perdido-key",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -87.41962616382713,
+          "lat": 30.3110584,
+          "source": "https://www.openstreetmap.org/way/1157336863"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -87.41377304031195,
+          "lat": 30.299859249999997,
+          "source": "https://www.openstreetmap.org/way/1157336876"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Johnson Beach Road",
+          "type": "walkable",
+          "lon": -87.41402995462421,
+          "lat": 30.300500978638564,
+          "source": "https://www.openstreetmap.org/way/10926201"
+        }
+      ]
+    },
+    {
+      "town_id": "gulf-breeze",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -87.17673916748599,
+          "lat": 30.35078065,
+          "source": "https://www.openstreetmap.org/way/84667210"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -87.17444565,
+          "lat": 30.35140295,
+          "source": "https://www.openstreetmap.org/way/242304784"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Shoreline Loop",
+          "type": "walkable",
+          "lon": -87.17441253787828,
+          "lat": 30.353433969129316,
+          "source": "https://www.openstreetmap.org/way/262079777"
+        },
+        {
+          "name": "Shoreline Park South",
+          "type": "park",
+          "lon": -87.17454307834623,
+          "lat": 30.35344255,
+          "source": "https://www.openstreetmap.org/relation/3534076"
+        }
+      ]
+    },
+    {
+      "town_id": "gulf-breeze",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -87.17673916748599,
+          "lat": 30.35078065,
+          "source": "https://www.openstreetmap.org/way/84667210"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -87.17444565,
+          "lat": 30.35140295,
+          "source": "https://www.openstreetmap.org/way/242304784"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Shoreline Loop",
+          "type": "walkable",
+          "lon": -87.17441253787828,
+          "lat": 30.353433969129316,
+          "source": "https://www.openstreetmap.org/way/262079777"
+        },
+        {
+          "name": "Shoreline Park South",
+          "type": "park",
+          "lon": -87.17454307834623,
+          "lat": 30.35344255,
+          "source": "https://www.openstreetmap.org/relation/3534076"
+        }
+      ]
+    },
+    {
+      "town_id": "navarre",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.8617237411595,
+          "lat": 30.4003312,
+          "source": "https://www.openstreetmap.org/way/1151306792"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Navarre Park Memorial Foot Path",
+          "type": "walkable",
+          "lon": -86.864034,
+          "lat": 30.4008862,
+          "source": "https://www.openstreetmap.org/way/1088944538"
+        },
+        {
+          "name": "Navarre Park",
+          "type": "park",
+          "lon": -86.86440582563611,
+          "lat": 30.4004956,
+          "source": "https://www.openstreetmap.org/way/554596477"
+        }
+      ]
+    },
+    {
+      "town_id": "navarre",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.8617237411595,
+          "lat": 30.4003312,
+          "source": "https://www.openstreetmap.org/way/1151306792"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Navarre Park Memorial Foot Path",
+          "type": "walkable",
+          "lon": -86.864034,
+          "lat": 30.4008862,
+          "source": "https://www.openstreetmap.org/way/1088944538"
+        },
+        {
+          "name": "Navarre Park",
+          "type": "park",
+          "lon": -86.86440582563611,
+          "lat": 30.4004956,
+          "source": "https://www.openstreetmap.org/way/554596477"
+        }
+      ]
+    },
+    {
+      "town_id": "navarre-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.8648584648715,
+          "lat": 30.3829749,
+          "source": "https://www.openstreetmap.org/way/1151315549"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Navarre Beach",
+          "type": "beach",
+          "lon": -86.862182,
+          "lat": 30.3793662,
+          "source": "https://www.openstreetmap.org/node/358701412"
+        },
+        {
+          "name": "Gulf Boulevard",
+          "type": "walkable",
+          "lon": -86.863945054238,
+          "lat": 30.381342082201837,
+          "source": "https://www.openstreetmap.org/way/48133971"
+        },
+        {
+          "name": "Navarre Beach Park",
+          "type": "park",
+          "lon": -86.85564134973694,
+          "lat": 30.383080200000002,
+          "source": "https://www.openstreetmap.org/way/561157915"
+        }
+      ]
+    },
+    {
+      "town_id": "navarre-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.8648584648715,
+          "lat": 30.3829749,
+          "source": "https://www.openstreetmap.org/way/1151315549"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Gulf Boulevard",
+          "type": "walkable",
+          "lon": -86.863945054238,
+          "lat": 30.381342082201837,
+          "source": "https://www.openstreetmap.org/way/48133971"
+        }
+      ]
+    },
+    {
+      "town_id": "fort-walton-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.60494938422053,
+          "lat": 30.395184999999998,
+          "source": "https://www.openstreetmap.org/way/550905686"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Brooks Street Southeast",
+          "type": "walkable",
+          "lon": -86.6071195078175,
+          "lat": 30.403149260882216,
+          "source": "https://www.openstreetmap.org/way/11150169"
+        },
+        {
+          "name": "Fort Walton Landing",
+          "type": "park",
+          "lon": -86.60720469123035,
+          "lat": 30.402601750000002,
+          "source": "https://www.openstreetmap.org/way/230074295"
+        },
+        {
+          "name": "Indian Temple Mound Museum",
+          "type": "landmark",
+          "lon": -86.6073009,
+          "lat": 30.404211,
+          "source": "https://www.openstreetmap.org/way/695757337"
+        }
+      ]
+    },
+    {
+      "town_id": "okaloosa-island",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.5920702673607,
+          "lat": 30.39393385,
+          "source": "https://www.openstreetmap.org/way/1140724655"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Expedition Trail",
+          "type": "walkable",
+          "lon": -86.5945487,
+          "lat": 30.394078,
+          "source": "https://www.openstreetmap.org/way/719008909"
+        },
+        {
+          "name": "Marler Park",
+          "type": "park",
+          "lon": -86.5941347658575,
+          "lat": 30.3999868,
+          "source": "https://www.openstreetmap.org/way/550672667"
+        },
+        {
+          "name": "Okaloosa Island Fishing Pier entrance",
+          "lon": -86.592839,
+          "lat": 30.3938076,
+          "source": "https://www.openstreetmap.org/node/7081736588",
+          "reason": "The public fishing-pier entrance frames Okaloosa Island's beach, resort strip and bay-side context.",
+          "type": "landmark"
+        }
+      ]
+    },
+    {
+      "town_id": "okaloosa-island",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.5920702673607,
+          "lat": 30.39393385,
+          "source": "https://www.openstreetmap.org/way/1140724655"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Expedition Trail",
+          "type": "walkable",
+          "lon": -86.5945487,
+          "lat": 30.394078,
+          "source": "https://www.openstreetmap.org/way/719008909"
+        },
+        {
+          "name": "Marler Park",
+          "type": "park",
+          "lon": -86.5941347658575,
+          "lat": 30.3999868,
+          "source": "https://www.openstreetmap.org/way/550672667"
+        },
+        {
+          "name": "Stingray Bay",
+          "type": "landmark",
+          "lon": -86.59323961727988,
+          "lat": 30.3941703,
+          "source": "https://www.openstreetmap.org/way/719008892"
+        }
+      ]
+    },
+    {
+      "town_id": "shalimar",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -86.58123503152791,
+          "lat": 30.434415,
+          "source": "https://www.openstreetmap.org/way/1140741096"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -86.5828497,
+          "lat": 30.441518,
+          "source": "https://www.openstreetmap.org/node/11004956217"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "6th Avenue",
+          "type": "walkable",
+          "lon": -86.5809657,
+          "lat": 30.4418197,
+          "source": "https://www.openstreetmap.org/way/11143035"
+        },
+        {
+          "name": "Cherokee Park",
+          "type": "park",
+          "lon": -86.58434257881386,
+          "lat": 30.4383534,
+          "source": "https://www.openstreetmap.org/way/688534803"
+        }
+      ]
+    },
+    {
+      "town_id": "shalimar",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -86.5828497,
+          "lat": 30.441518,
+          "source": "https://www.openstreetmap.org/node/11004956217"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "6th Avenue",
+          "type": "walkable",
+          "lon": -86.5809657,
+          "lat": 30.4418197,
+          "source": "https://www.openstreetmap.org/way/11143035"
+        },
+        {
+          "name": "Cherokee Park",
+          "type": "park",
+          "lon": -86.58434257881386,
+          "lat": 30.4383534,
+          "source": "https://www.openstreetmap.org/way/688534803"
+        }
+      ]
+    },
+    {
+      "town_id": "horseshoe-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -83.29135283274736,
+          "lat": 29.432484549999998,
+          "source": "https://www.openstreetmap.org/way/1112373529"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Southwest 351 Highway",
+          "type": "walkable",
+          "lon": -83.2868795,
+          "lat": 29.4440613,
+          "source": "https://www.openstreetmap.org/way/10867590"
+        },
+        {
+          "name": "Horseshoe Beach Kiddie Park",
+          "type": "park",
+          "lon": -83.28622097499999,
+          "lat": 29.441914349999998,
+          "source": "https://www.openstreetmap.org/way/659612215"
+        }
+      ]
+    },
+    {
+      "town_id": "oldsmar",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.670204366283,
+          "lat": 28.0313169,
+          "source": "https://www.openstreetmap.org/way/179005624"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Chestnut Street",
+          "type": "walkable",
+          "lon": -82.6694331,
+          "lat": 28.0318909,
+          "source": "https://www.openstreetmap.org/way/11258074"
+        },
+        {
+          "name": "R.E. Olds Park",
+          "type": "park",
+          "lon": -82.66941307624445,
+          "lat": 28.031668,
+          "source": "https://www.openstreetmap.org/way/179005590"
+        }
+      ]
+    },
+    {
+      "town_id": "oldsmar",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.670204366283,
+          "lat": 28.0313169,
+          "source": "https://www.openstreetmap.org/way/179005624"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Chestnut Street",
+          "type": "walkable",
+          "lon": -82.6694331,
+          "lat": 28.0318909,
+          "source": "https://www.openstreetmap.org/way/11258074"
+        },
+        {
+          "name": "R.E. Olds Park",
+          "type": "park",
+          "lon": -82.66941307624445,
+          "lat": 28.031668,
+          "source": "https://www.openstreetmap.org/way/179005590"
+        }
+      ]
+    },
+    {
+      "town_id": "palm-harbor",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -82.77119471611266,
+          "lat": 28.07888296553988,
+          "source": "https://www.openstreetmap.org/way/1176649224"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "8th Street",
+          "type": "walkable",
+          "lon": -82.77008493979554,
+          "lat": 28.07878870550785,
+          "source": "https://www.openstreetmap.org/way/11259257"
+        },
+        {
+          "name": "Pop Stansell Park",
+          "type": "park",
+          "lon": -82.770868366126,
+          "lat": 28.07878365,
+          "source": "https://www.openstreetmap.org/way/597466837"
+        }
+      ]
+    },
+    {
+      "town_id": "palm-harbor",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -82.77119471611266,
+          "lat": 28.07888296553988,
+          "source": "https://www.openstreetmap.org/way/1176649224"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "8th Street",
+          "type": "walkable",
+          "lon": -82.77008493979554,
+          "lat": 28.07878870550785,
+          "source": "https://www.openstreetmap.org/way/11259257"
+        },
+        {
+          "name": "Pop Stansell Park",
+          "type": "park",
+          "lon": -82.770868366126,
+          "lat": 28.07878365,
+          "source": "https://www.openstreetmap.org/way/597466837"
+        }
+      ]
+    },
+    {
+      "town_id": "belleair-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.83748642226922,
+          "lat": 27.9113927,
+          "source": "https://www.openstreetmap.org/way/1196837593"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Harbor Drive",
+          "type": "walkable",
+          "lon": -82.8413371226037,
+          "lat": 27.916498416554173,
+          "source": "https://www.openstreetmap.org/way/11225452"
+        },
+        {
+          "name": "Bayside Park",
+          "type": "park",
+          "lon": -82.84110157023768,
+          "lat": 27.9164258,
+          "source": "https://www.openstreetmap.org/way/32122198"
+        }
+      ]
+    },
+    {
+      "town_id": "belleair-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.83748642226922,
+          "lat": 27.9113927,
+          "source": "https://www.openstreetmap.org/way/1196837593"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Harbor Drive",
+          "type": "walkable",
+          "lon": -82.8413371226037,
+          "lat": 27.916498416554173,
+          "source": "https://www.openstreetmap.org/way/11225452"
+        },
+        {
+          "name": "Bayside Park",
+          "type": "park",
+          "lon": -82.84110157023768,
+          "lat": 27.9164258,
+          "source": "https://www.openstreetmap.org/way/32122198"
+        }
+      ]
+    },
+    {
+      "town_id": "north-redington-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.82414651014008,
+          "lat": 27.817749550000002,
+          "source": "https://www.openstreetmap.org/way/1196841362"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Bath Club Concourse",
+          "type": "walkable",
+          "lon": -82.8212114,
+          "lat": 27.8160997,
+          "source": "https://www.openstreetmap.org/way/11237290"
+        },
+        {
+          "name": "Boca Ciega Millennium Park",
+          "type": "park",
+          "lon": -82.811712624546,
+          "lat": 27.8340877,
+          "source": "https://www.openstreetmap.org/way/225936867"
+        }
+      ]
+    },
+    {
+      "town_id": "tierra-verde",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.71593191149245,
+          "lat": 27.69727945,
+          "source": "https://www.openstreetmap.org/way/701488449"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Pinellas Bayway South",
+          "type": "walkable",
+          "lon": -82.719271,
+          "lat": 27.691255,
+          "source": "https://www.openstreetmap.org/way/82789295"
+        },
+        {
+          "name": "1st Street East",
+          "type": "walkable",
+          "lon": -82.71927999449609,
+          "lat": 27.690659114633903,
+          "source": "https://www.openstreetmap.org/way/620812325"
+        }
+      ]
+    },
+    {
+      "town_id": "hudson",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -82.70848645000001,
+          "lat": 28.361424149999998,
+          "source": "https://www.openstreetmap.org/way/1052355487"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Hudson Beach",
+          "type": "beach",
+          "lon": -82.71074751489917,
+          "lat": 28.36160975,
+          "source": "https://www.openstreetmap.org/relation/14047115"
+        },
+        {
+          "name": "Evelane Drive",
+          "type": "walkable",
+          "lon": -82.707272,
+          "lat": 28.3569169,
+          "source": "https://www.openstreetmap.org/way/11209362"
+        },
+        {
+          "name": "Robert J. Strickland Park",
+          "type": "park",
+          "lon": -82.71059026431722,
+          "lat": 28.3619292,
+          "source": "https://www.openstreetmap.org/way/526290765"
+        }
+      ]
+    },
+    {
+      "town_id": "hudson",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.70956696743782,
+          "lat": 28.3627387,
+          "source": "https://www.openstreetmap.org/way/1052355466"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -82.70848645000001,
+          "lat": 28.361424149999998,
+          "source": "https://www.openstreetmap.org/way/1052355487"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Evelane Drive",
+          "type": "walkable",
+          "lon": -82.707272,
+          "lat": 28.3569169,
+          "source": "https://www.openstreetmap.org/way/11209362"
+        }
+      ]
+    },
+    {
+      "town_id": "keywest",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.8045899617339,
+          "lat": 24.5622438,
+          "source": "https://www.openstreetmap.org/way/495352762"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -81.7985901,
+          "lat": 24.5633973,
+          "source": "https://www.openstreetmap.org/way/1158831722"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Beach",
+          "type": "beach",
+          "lon": -81.79546248953459,
+          "lat": 24.547000750000002,
+          "source": "https://www.openstreetmap.org/way/337817712"
+        },
+        {
+          "name": "Southard Street",
+          "type": "walkable",
+          "lon": -81.80208422803702,
+          "lat": 24.554845359414156,
+          "source": "https://www.openstreetmap.org/way/11120033"
+        },
+        {
+          "name": "Nancy Forrester's Secret Garden",
+          "type": "park",
+          "lon": -81.80050824691344,
+          "lat": 24.55665285,
+          "source": "https://www.openstreetmap.org/way/83551822"
+        },
+        {
+          "name": "The Kapok Tree",
+          "type": "landmark",
+          "lon": -81.8038174,
+          "lat": 24.5547564,
+          "source": "https://www.openstreetmap.org/node/9395545457"
+        }
+      ]
+    },
+    {
+      "town_id": "keywest",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -81.7985901,
+          "lat": 24.5633973,
+          "source": "https://www.openstreetmap.org/way/1158831722"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Southard Street",
+          "type": "walkable",
+          "lon": -81.80208422803702,
+          "lat": 24.554845359414156,
+          "source": "https://www.openstreetmap.org/way/11120033"
+        },
+        {
+          "name": "Nancy Forrester's Secret Garden",
+          "type": "park",
+          "lon": -81.80050824691344,
+          "lat": 24.55665285,
+          "source": "https://www.openstreetmap.org/way/83551822"
+        },
+        {
+          "name": "Donkey Milk House Museum",
+          "type": "landmark",
+          "lon": -81.80191165839024,
+          "lat": 24.55823715,
+          "source": "https://www.openstreetmap.org/way/596606919"
+        }
+      ]
+    },
+    {
+      "town_id": "islamorada",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.62889349107374,
+          "lat": 24.919174400000003,
+          "source": "https://www.openstreetmap.org/way/672344387"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Caribee Boat Sales & Marina",
+          "type": "boating",
+          "lon": -80.63666195,
+          "lat": 24.918344949999998,
+          "source": "https://www.openstreetmap.org/way/965392909"
+        },
+        {
+          "name": "List Street",
+          "type": "walkable",
+          "lon": -80.62918006766505,
+          "lat": 24.923621994662774,
+          "source": "https://www.openstreetmap.org/way/11121752"
+        },
+        {
+          "name": "History of Diving Museum",
+          "type": "landmark",
+          "lon": -80.6209510106143,
+          "lat": 24.9310556,
+          "source": "https://www.openstreetmap.org/way/213571983"
+        }
+      ]
+    },
+    {
+      "town_id": "islamorada",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.62889349107374,
+          "lat": 24.919174400000003,
+          "source": "https://www.openstreetmap.org/way/672344387"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "List Street",
+          "type": "walkable",
+          "lon": -80.62918006766505,
+          "lat": 24.923621994662774,
+          "source": "https://www.openstreetmap.org/way/11121752"
+        }
+      ]
+    },
+    {
+      "town_id": "jupiter",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.08462300758427,
+          "lat": 26.948107,
+          "source": "https://www.openstreetmap.org/way/1284691181"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "North A1A",
+          "type": "walkable",
+          "lon": -80.0845135,
+          "lat": 26.944279,
+          "source": "https://www.openstreetmap.org/way/982407635"
+        },
+        {
+          "name": "Jupiter Inlet Lighthouse & Museum",
+          "type": "park",
+          "lon": -80.08240340979924,
+          "lat": 26.94843305,
+          "source": "https://www.openstreetmap.org/way/772236342"
+        },
+        {
+          "name": "Museum & Gift Shop",
+          "type": "landmark",
+          "lon": -80.08453724640135,
+          "lat": 26.948349800000003,
+          "source": "https://www.openstreetmap.org/way/554973839"
+        }
+      ]
+    },
+    {
+      "town_id": "jupiter",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.08462300758427,
+          "lat": 26.948107,
+          "source": "https://www.openstreetmap.org/way/1284691181"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "North A1A",
+          "type": "walkable",
+          "lon": -80.0845135,
+          "lat": 26.944279,
+          "source": "https://www.openstreetmap.org/way/982407635"
+        },
+        {
+          "name": "Jupiter Inlet Lighthouse & Museum",
+          "type": "park",
+          "lon": -80.08240340979924,
+          "lat": 26.94843305,
+          "source": "https://www.openstreetmap.org/way/772236342"
+        },
+        {
+          "name": "Museum & Gift Shop",
+          "type": "landmark",
+          "lon": -80.08453724640135,
+          "lat": 26.948349800000003,
+          "source": "https://www.openstreetmap.org/way/554973839"
+        }
+      ]
+    },
+    {
+      "town_id": "fortpierce",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.32320728141279,
+          "lat": 27.4547904,
+          "source": "https://www.openstreetmap.org/way/988956534"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -80.32408886353711,
+          "lat": 27.45589974828717,
+          "source": "https://www.openstreetmap.org/way/988539039"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Indian River Drive",
+          "type": "walkable",
+          "lon": -80.32439643243194,
+          "lat": 27.453317720863218,
+          "source": "https://www.openstreetmap.org/way/90758043"
+        },
+        {
+          "name": "Veteran's Memorial Park",
+          "type": "park",
+          "lon": -80.32369326704836,
+          "lat": 27.45359405,
+          "source": "https://www.openstreetmap.org/way/988833393"
+        },
+        {
+          "name": "Manatee Center",
+          "type": "landmark",
+          "lon": -80.3234721280303,
+          "lat": 27.451619100000002,
+          "source": "https://www.openstreetmap.org/way/988834839"
+        }
+      ]
+    },
+    {
+      "town_id": "fortpierce",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.32320728141279,
+          "lat": 27.4547904,
+          "source": "https://www.openstreetmap.org/way/988956534"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -80.32408886353711,
+          "lat": 27.45589974828717,
+          "source": "https://www.openstreetmap.org/way/988539039"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Indian River Drive",
+          "type": "walkable",
+          "lon": -80.32439643243194,
+          "lat": 27.453317720863218,
+          "source": "https://www.openstreetmap.org/way/90758043"
+        },
+        {
+          "name": "Veteran's Memorial Park",
+          "type": "park",
+          "lon": -80.32369326704836,
+          "lat": 27.45359405,
+          "source": "https://www.openstreetmap.org/way/988833393"
+        },
+        {
+          "name": "Manatee Center",
+          "type": "landmark",
+          "lon": -80.3234721280303,
+          "lat": 27.451619100000002,
+          "source": "https://www.openstreetmap.org/way/988834839"
+        }
+      ]
+    },
+    {
+      "town_id": "cocoa",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.60329211716174,
+          "lat": 28.3679572,
+          "source": "https://www.openstreetmap.org/way/1235985233"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Meade Avenue",
+          "type": "walkable",
+          "lon": -80.6026743,
+          "lat": 28.3679412,
+          "source": "https://www.openstreetmap.org/way/10770612"
+        },
+        {
+          "name": "Canaveral City Park",
+          "type": "park",
+          "lon": -80.60204347469295,
+          "lat": 28.387213799999998,
+          "source": "https://www.openstreetmap.org/way/778544549"
+        }
+      ]
+    },
+    {
+      "town_id": "cocoa",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.60329211716174,
+          "lat": 28.3679572,
+          "source": "https://www.openstreetmap.org/way/1235985233"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Meade Avenue",
+          "type": "walkable",
+          "lon": -80.6026743,
+          "lat": 28.3679412,
+          "source": "https://www.openstreetmap.org/way/10770612"
+        }
+      ]
+    },
+    {
+      "town_id": "daytona",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.01122085193259,
+          "lat": 29.23634165,
+          "source": "https://www.openstreetmap.org/way/49592081"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Main Street",
+          "type": "walkable",
+          "lon": -81.006878,
+          "lat": 29.2271771,
+          "source": "https://www.openstreetmap.org/way/115933632"
+        },
+        {
+          "name": "Breakers Beachfront Park",
+          "type": "park",
+          "lon": -81.00688918800466,
+          "lat": 29.226463850000002,
+          "source": "https://www.openstreetmap.org/way/333158889"
+        }
+      ]
+    },
+    {
+      "town_id": "flagler",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.12889977022749,
+          "lat": 29.485141249999998,
+          "source": "https://www.openstreetmap.org/way/141399070"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Flagler Avenue",
+          "type": "walkable",
+          "lon": -81.1280464,
+          "lat": 29.4747952,
+          "source": "https://www.openstreetmap.org/way/10923208"
+        },
+        {
+          "name": "Wickline Park",
+          "type": "park",
+          "lon": -81.12776068209793,
+          "lat": 29.47524195,
+          "source": "https://www.openstreetmap.org/way/350960013"
+        }
+      ]
+    },
+    {
+      "town_id": "bonita-springs",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.77840954307618,
+          "lat": 26.3406709,
+          "source": "https://www.openstreetmap.org/way/662478621"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Childers Street",
+          "type": "walkable",
+          "lon": -81.77869665434511,
+          "lat": 26.339648149836833,
+          "source": "https://www.openstreetmap.org/way/159006480"
+        },
+        {
+          "name": "Riverside Park",
+          "type": "park",
+          "lon": -81.77958673442267,
+          "lat": 26.3409737,
+          "source": "https://www.openstreetmap.org/way/590862041"
+        }
+      ]
+    },
+    {
+      "town_id": "bonita-springs",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.77840954307618,
+          "lat": 26.3406709,
+          "source": "https://www.openstreetmap.org/way/662478621"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Childers Street",
+          "type": "walkable",
+          "lon": -81.77869665434511,
+          "lat": 26.339648149836833,
+          "source": "https://www.openstreetmap.org/way/159006480"
+        },
+        {
+          "name": "Riverside Park",
+          "type": "park",
+          "lon": -81.77958673442267,
+          "lat": 26.3409737,
+          "source": "https://www.openstreetmap.org/way/590862041"
+        }
+      ]
+    },
+    {
+      "town_id": "fort-myers",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.88295848575996,
+          "lat": 26.65741115,
+          "source": "https://www.openstreetmap.org/way/333884158"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.8744934,
+          "lat": 26.6418578,
+          "source": "https://www.openstreetmap.org/node/13684698824"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Dr Martin Luther King Boulevard",
+          "type": "walkable",
+          "lon": -81.87231692842205,
+          "lat": 26.640716419669932,
+          "source": "https://www.openstreetmap.org/way/378567186"
+        },
+        {
+          "name": "Monroe Street Median",
+          "type": "park",
+          "lon": -81.87153196295105,
+          "lat": 26.64308505,
+          "source": "https://www.openstreetmap.org/relation/5652258"
+        },
+        {
+          "name": "Sydney Berne Davis Art Center",
+          "type": "landmark",
+          "lon": -81.87183633869219,
+          "lat": 26.64474235,
+          "source": "https://www.openstreetmap.org/way/428108217"
+        }
+      ]
+    },
+    {
+      "town_id": "fort-myers",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.8744934,
+          "lat": 26.6418578,
+          "source": "https://www.openstreetmap.org/node/13684698824"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Dr Martin Luther King Boulevard",
+          "type": "walkable",
+          "lon": -81.87231692842205,
+          "lat": 26.640716419669932,
+          "source": "https://www.openstreetmap.org/way/378567186"
+        },
+        {
+          "name": "Monroe Street Median",
+          "type": "park",
+          "lon": -81.87153196295105,
+          "lat": 26.64308505,
+          "source": "https://www.openstreetmap.org/relation/5652258"
+        }
+      ]
+    },
+    {
+      "town_id": "fort-myers-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.94419409463075,
+          "lat": 26.4480547,
+          "source": "https://www.openstreetmap.org/way/1234064936"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Ohio Avenue",
+          "type": "walkable",
+          "lon": -81.94787170217519,
+          "lat": 26.45202732316321,
+          "source": "https://www.openstreetmap.org/way/165355917"
+        },
+        {
+          "name": "Bay Oaks Pool",
+          "type": "park",
+          "lon": -81.94094902699118,
+          "lat": 26.44877665,
+          "source": "https://www.openstreetmap.org/way/604626912"
+        }
+      ]
+    },
+    {
+      "town_id": "punta-gorda",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.055064072895,
+          "lat": 26.9351085,
+          "source": "https://www.openstreetmap.org/way/629138323"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Taylor Street",
+          "type": "walkable",
+          "lon": -82.05115262859445,
+          "lat": 26.935205744322694,
+          "source": "https://www.openstreetmap.org/way/770904062"
+        },
+        {
+          "name": "Herald Court Plaza",
+          "type": "park",
+          "lon": -82.05049987188701,
+          "lat": 26.935153749999998,
+          "source": "https://www.openstreetmap.org/way/621264877"
+        },
+        {
+          "name": "A. C. Freeman House",
+          "type": "landmark",
+          "lon": -82.05336668164489,
+          "lat": 26.9349626,
+          "source": "https://www.openstreetmap.org/way/621299786"
+        }
+      ]
+    },
+    {
+      "town_id": "sanibel-island",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.01934216664529,
+          "lat": 26.45294875,
+          "source": "https://www.openstreetmap.org/way/1265187290"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Dixie Beach",
+          "type": "beach",
+          "lon": -82.0295361,
+          "lat": 26.4525805,
+          "source": "https://www.openstreetmap.org/node/358694785"
+        },
+        {
+          "name": "Lighthouse Beach Park",
+          "type": "park",
+          "lon": -82.01597226143673,
+          "lat": 26.45223035,
+          "source": "https://www.openstreetmap.org/way/207521206"
+        }
+      ]
+    },
+    {
+      "town_id": "sanibel-island",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -82.01934216664529,
+          "lat": 26.45294875,
+          "source": "https://www.openstreetmap.org/way/1265187290"
+        }
+      ],
+      "named_callouts": []
+    },
+    {
+      "town_id": "dania-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.1120053577348,
+          "lat": 26.0527168,
+          "source": "https://www.openstreetmap.org/way/24078453"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "North Beach Road",
+          "type": "walkable",
+          "lon": -80.1123625,
+          "lat": 26.0548664,
+          "source": "https://www.openstreetmap.org/way/317308172"
+        },
+        {
+          "name": "Dania Beach Ocean Park",
+          "type": "park",
+          "lon": -80.1120325211262,
+          "lat": 26.05648405,
+          "source": "https://www.openstreetmap.org/relation/7149797"
+        }
+      ]
+    },
+    {
+      "town_id": "hallandale",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.11826249155189,
+          "lat": 25.97575565,
+          "source": "https://www.openstreetmap.org/way/24040800"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "East Hallandale Beach Boulevard",
+          "type": "walkable",
+          "lon": -80.1219088,
+          "lat": 25.9864996,
+          "source": "https://www.openstreetmap.org/way/436363870"
+        },
+        {
+          "name": "South City Beach Park",
+          "type": "park",
+          "lon": -80.11839673657582,
+          "lat": 25.9832575,
+          "source": "https://www.openstreetmap.org/way/718136857"
+        }
+      ]
+    },
+    {
+      "town_id": "highland-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.06435657159244,
+          "lat": 26.4060373,
+          "source": "https://www.openstreetmap.org/way/528976830"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Ocean Boulevard",
+          "type": "walkable",
+          "lon": -80.06587912882286,
+          "lat": 26.399557886594668,
+          "source": "https://www.openstreetmap.org/way/661982529"
+        },
+        {
+          "name": "Sand Pine Park",
+          "type": "park",
+          "lon": -80.07813314930235,
+          "lat": 26.397201449999997,
+          "source": "https://www.openstreetmap.org/way/329914605"
+        },
+        {
+          "name": "Sports Immortals Museum",
+          "type": "landmark",
+          "lon": -80.07573845398403,
+          "lat": 26.4103229,
+          "source": "https://www.openstreetmap.org/way/790237646"
+        }
+      ]
+    },
+    {
+      "town_id": "hollywood",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.11877865490008,
+          "lat": 26.0134373,
+          "source": "https://www.openstreetmap.org/way/1176485505"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Hollywood Beach",
+          "type": "beach",
+          "lon": -80.1142111,
+          "lat": 26.0281452,
+          "source": "https://www.openstreetmap.org/node/358697553"
+        },
+        {
+          "name": "Kayak Ramp",
+          "type": "boating",
+          "lon": -80.1291429,
+          "lat": 26.030489099999997,
+          "source": "https://www.openstreetmap.org/way/760074623"
+        },
+        {
+          "name": "Polk Street",
+          "type": "walkable",
+          "lon": -80.1206915,
+          "lat": 26.014013,
+          "source": "https://www.openstreetmap.org/way/10784137"
+        },
+        {
+          "name": "Holland Park",
+          "type": "park",
+          "lon": -80.12188654720754,
+          "lat": 26.01972195,
+          "source": "https://www.openstreetmap.org/relation/7159487"
+        }
+      ]
+    },
+    {
+      "town_id": "hollywood",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.11877865490008,
+          "lat": 26.0134373,
+          "source": "https://www.openstreetmap.org/way/1176485505"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Polk Street",
+          "type": "walkable",
+          "lon": -80.1206915,
+          "lat": 26.014013,
+          "source": "https://www.openstreetmap.org/way/10784137"
+        },
+        {
+          "name": "Holland Park",
+          "type": "park",
+          "lon": -80.12188654720754,
+          "lat": 26.01972195,
+          "source": "https://www.openstreetmap.org/relation/7159487"
+        }
+      ]
+    },
+    {
+      "town_id": "lauderdale-by-the-sea",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.09454193384042,
+          "lat": 26.19213555,
+          "source": "https://www.openstreetmap.org/way/572071787"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Trade Winds Avenue North",
+          "type": "walkable",
+          "lon": -80.0990248,
+          "lat": 26.1962443,
+          "source": "https://www.openstreetmap.org/way/10783869"
+        },
+        {
+          "name": "Friedt Park",
+          "type": "park",
+          "lon": -80.09759354340724,
+          "lat": 26.1928573,
+          "source": "https://www.openstreetmap.org/way/737043825"
+        }
+      ]
+    },
+    {
+      "town_id": "palm-beach-gardens",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.13693268254147,
+          "lat": 26.8128198,
+          "source": "https://www.openstreetmap.org/way/166907133"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Via del Corso",
+          "type": "walkable",
+          "lon": -80.13680777527692,
+          "lat": 26.82482507790192,
+          "source": "https://www.openstreetmap.org/way/11229845"
+        },
+        {
+          "name": "Via Aurelia",
+          "type": "walkable",
+          "lon": -80.135757,
+          "lat": 26.825117,
+          "source": "https://www.openstreetmap.org/way/11249858"
+        }
+      ]
+    },
+    {
+      "town_id": "riviera-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.04298182052003,
+          "lat": 26.78325765,
+          "source": "https://www.openstreetmap.org/way/783349142"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Cannonsport Marina",
+          "type": "boating",
+          "lon": -80.03952238030575,
+          "lat": 26.78073615,
+          "source": "https://www.openstreetmap.org/way/934624191"
+        },
+        {
+          "name": "East 25th Street",
+          "type": "walkable",
+          "lon": -80.048655,
+          "lat": 26.782518,
+          "source": "https://www.openstreetmap.org/way/11248128"
+        },
+        {
+          "name": "Phil Foster Park",
+          "type": "park",
+          "lon": -80.04280817634856,
+          "lat": 26.78410505,
+          "source": "https://www.openstreetmap.org/way/355809616"
+        }
+      ]
+    },
+    {
+      "town_id": "riviera-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.05221380945008,
+          "lat": 26.77515635,
+          "source": "https://www.openstreetmap.org/way/1444711701"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "East 25th Street",
+          "type": "walkable",
+          "lon": -80.048655,
+          "lat": 26.782518,
+          "source": "https://www.openstreetmap.org/way/11248128"
+        },
+        {
+          "name": "Rivera Beach Bicentennial Park",
+          "type": "park",
+          "lon": -80.05272414449502,
+          "lat": 26.7750596,
+          "source": "https://www.openstreetmap.org/relation/15331604"
+        }
+      ]
+    },
+    {
+      "town_id": "west-palm-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.05297277434303,
+          "lat": 26.715672050000002,
+          "source": "https://www.openstreetmap.org/way/1100614585"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Palm Harbor Marina",
+          "type": "boating",
+          "lon": -80.05017685383918,
+          "lat": 26.7164479,
+          "source": "https://www.openstreetmap.org/way/420019318"
+        },
+        {
+          "name": "Quadrille Boulevard",
+          "type": "walkable",
+          "lon": -80.0549388,
+          "lat": 26.7147723,
+          "source": "https://www.openstreetmap.org/way/11244644"
+        },
+        {
+          "name": "Quadrille Linear Park and Greenway",
+          "type": "park",
+          "lon": -80.05514204505323,
+          "lat": 26.71235985,
+          "source": "https://www.openstreetmap.org/way/255447380"
+        },
+        {
+          "name": "Richard and Pat Johnson Palm Beach County History Museum",
+          "type": "landmark",
+          "lon": -80.05298400041679,
+          "lat": 26.7155966,
+          "source": "https://www.openstreetmap.org/way/325845717"
+        }
+      ]
+    },
+    {
+      "town_id": "west-palm-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.05297277434303,
+          "lat": 26.715672050000002,
+          "source": "https://www.openstreetmap.org/way/1100614585"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Quadrille Boulevard",
+          "type": "walkable",
+          "lon": -80.0549388,
+          "lat": 26.7147723,
+          "source": "https://www.openstreetmap.org/way/11244644"
+        },
+        {
+          "name": "Quadrille Linear Park and Greenway",
+          "type": "park",
+          "lon": -80.05514204505323,
+          "lat": 26.71235985,
+          "source": "https://www.openstreetmap.org/way/255447380"
+        },
+        {
+          "name": "Richard and Pat Johnson Palm Beach County History Museum",
+          "type": "landmark",
+          "lon": -80.05298400041679,
+          "lat": 26.7155966,
+          "source": "https://www.openstreetmap.org/way/325845717"
+        }
+      ]
+    },
+    {
+      "town_id": "jensen-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.223933305498,
+          "lat": 27.251886300000002,
+          "source": "https://www.openstreetmap.org/way/84515041"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "SunDance Marine",
+          "type": "boating",
+          "lon": -80.22449745646139,
+          "lat": 27.24517055,
+          "source": "https://www.openstreetmap.org/way/112757266"
+        },
+        {
+          "name": "Northeast Indian River Drive",
+          "type": "walkable",
+          "lon": -80.23059567813385,
+          "lat": 27.25714300612524,
+          "source": "https://www.openstreetmap.org/way/85234845"
+        }
+      ]
+    },
+    {
+      "town_id": "vero-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.3539567,
+          "lat": 27.650069,
+          "source": "https://www.openstreetmap.org/node/6415054917"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Ocean Drive",
+          "type": "walkable",
+          "lon": -80.35550277969443,
+          "lat": 27.649720013565194,
+          "source": "https://www.openstreetmap.org/way/85103341"
+        },
+        {
+          "name": "Humiston Park",
+          "type": "park",
+          "lon": -80.35488409402689,
+          "lat": 27.64990215,
+          "source": "https://www.openstreetmap.org/way/544668216"
+        },
+        {
+          "name": "Vero Beach Museum of Art",
+          "type": "landmark",
+          "lon": -80.36678651515392,
+          "lat": 27.6498436,
+          "source": "https://www.openstreetmap.org/way/544675428"
+        }
+      ]
+    },
+    {
+      "town_id": "vero-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.3539567,
+          "lat": 27.650069,
+          "source": "https://www.openstreetmap.org/node/6415054917"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Ocean Drive",
+          "type": "walkable",
+          "lon": -80.35550277969443,
+          "lat": 27.649720013565194,
+          "source": "https://www.openstreetmap.org/way/85103341"
+        },
+        {
+          "name": "Humiston Park",
+          "type": "park",
+          "lon": -80.35488409402689,
+          "lat": 27.64990215,
+          "source": "https://www.openstreetmap.org/way/544668216"
+        }
+      ]
+    },
+    {
+      "town_id": "indialantic",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.56474437607312,
+          "lat": 28.09130635,
+          "source": "https://www.openstreetmap.org/way/1235985263"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Wave Crest Avenue",
+          "type": "walkable",
+          "lon": -80.56659894104843,
+          "lat": 28.0932145838124,
+          "source": "https://www.openstreetmap.org/way/10779969"
+        },
+        {
+          "name": "James H Nance Park.",
+          "type": "park",
+          "lon": -80.56664416772065,
+          "lat": 28.09338845,
+          "source": "https://www.openstreetmap.org/way/470403748"
+        }
+      ]
+    },
+    {
+      "town_id": "indialantic",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.56961682454848,
+          "lat": 28.1035325,
+          "source": "https://www.openstreetmap.org/way/1235985248"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Wave Crest Avenue",
+          "type": "walkable",
+          "lon": -80.56659894104843,
+          "lat": 28.0932145838124,
+          "source": "https://www.openstreetmap.org/way/10779969"
+        },
+        {
+          "name": "James H Nance Park.",
+          "type": "park",
+          "lon": -80.56664416772065,
+          "lat": 28.09338845,
+          "source": "https://www.openstreetmap.org/way/470403748"
+        }
+      ]
+    },
+    {
+      "town_id": "melbourne-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.55753325265263,
+          "lat": 28.07056285,
+          "source": "https://www.openstreetmap.org/way/1235985249"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Ocean Avenue",
+          "type": "walkable",
+          "lon": -80.56501354910354,
+          "lat": 28.068402524693454,
+          "source": "https://www.openstreetmap.org/way/47653444"
+        },
+        {
+          "name": "Ryckman Park",
+          "type": "park",
+          "lon": -80.56501427129243,
+          "lat": 28.06812325,
+          "source": "https://www.openstreetmap.org/way/470411692"
+        }
+      ]
+    },
+    {
+      "town_id": "satellite-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.58627111459785,
+          "lat": 28.1642679,
+          "source": "https://www.openstreetmap.org/way/380116628"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Majorca Court",
+          "type": "walkable",
+          "lon": -80.5881457,
+          "lat": 28.1671431,
+          "source": "https://www.openstreetmap.org/way/10772178"
+        },
+        {
+          "name": "Pelican Beach Park",
+          "type": "park",
+          "lon": -80.58789799176321,
+          "lat": 28.168189599999998,
+          "source": "https://www.openstreetmap.org/way/225761189"
+        }
+      ]
+    },
+    {
+      "town_id": "titusville",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.80797241462903,
+          "lat": 28.61049285,
+          "source": "https://www.openstreetmap.org/way/938638092"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Street",
+          "type": "walkable",
+          "lon": -80.807603,
+          "lat": 28.6080174,
+          "source": "https://www.openstreetmap.org/way/40416499"
+        },
+        {
+          "name": "Space View Park",
+          "type": "park",
+          "lon": -80.80467787065346,
+          "lat": 28.6137304,
+          "source": "https://www.openstreetmap.org/way/143515404"
+        },
+        {
+          "name": "North Brevard Historical Museum",
+          "type": "landmark",
+          "lon": -80.8073158,
+          "lat": 28.6124725,
+          "source": "https://www.openstreetmap.org/way/327940137"
+        }
+      ]
+    },
+    {
+      "town_id": "titusville",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.80797241462903,
+          "lat": 28.61049285,
+          "source": "https://www.openstreetmap.org/way/938638092"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Street",
+          "type": "walkable",
+          "lon": -80.807603,
+          "lat": 28.6080174,
+          "source": "https://www.openstreetmap.org/way/40416499"
+        },
+        {
+          "name": "Space View Park",
+          "type": "park",
+          "lon": -80.80467787065346,
+          "lat": 28.6137304,
+          "source": "https://www.openstreetmap.org/way/143515404"
+        },
+        {
+          "name": "North Brevard Historical Museum",
+          "type": "landmark",
+          "lon": -80.8073158,
+          "lat": 28.6124725,
+          "source": "https://www.openstreetmap.org/way/327940137"
+        }
+      ]
+    },
+    {
+      "town_id": "west-melbourne",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.67110902499999,
+          "lat": 28.0746349,
+          "source": "https://www.openstreetmap.org/way/468646833"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Minton Road",
+          "type": "walkable",
+          "lon": -80.67122703645289,
+          "lat": 28.073873537618432,
+          "source": "https://www.openstreetmap.org/way/1369629355"
+        },
+        {
+          "name": "Melbourne Village Park",
+          "type": "park",
+          "lon": -80.66507454812823,
+          "lat": 28.0879635,
+          "source": "https://www.openstreetmap.org/way/771886331"
+        }
+      ]
+    },
+    {
+      "town_id": "west-melbourne",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.67110902499999,
+          "lat": 28.0746349,
+          "source": "https://www.openstreetmap.org/way/468646833"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Minton Road",
+          "type": "walkable",
+          "lon": -80.67122703645289,
+          "lat": 28.073873537618432,
+          "source": "https://www.openstreetmap.org/way/1369629355"
+        }
+      ]
+    },
+    {
+      "town_id": "atlantic-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.39401685962446,
+          "lat": 30.32497635,
+          "source": "https://www.openstreetmap.org/relation/6756422"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Magnolia Street",
+          "type": "walkable",
+          "lon": -81.40257980833242,
+          "lat": 30.330093684651366,
+          "source": "https://www.openstreetmap.org/way/137593625"
+        },
+        {
+          "name": "Howell Park",
+          "type": "park",
+          "lon": -81.4021406436685,
+          "lat": 30.32991615,
+          "source": "https://www.openstreetmap.org/way/137593619"
+        }
+      ]
+    },
+    {
+      "town_id": "neptune-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.39401685962446,
+          "lat": 30.32497635,
+          "source": "https://www.openstreetmap.org/relation/6756422"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Midway Street",
+          "type": "walkable",
+          "lon": -81.39548038755733,
+          "lat": 30.32421543091546,
+          "source": "https://www.openstreetmap.org/way/660050786"
+        },
+        {
+          "name": "Howell Park",
+          "type": "park",
+          "lon": -81.4021406436685,
+          "lat": 30.32991615,
+          "source": "https://www.openstreetmap.org/way/137593619"
+        }
+      ]
+    },
+    {
+      "town_id": "neptune-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.39401685962446,
+          "lat": 30.32497635,
+          "source": "https://www.openstreetmap.org/relation/6756422"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Midway Street",
+          "type": "walkable",
+          "lon": -81.39548038755733,
+          "lat": 30.32421543091546,
+          "source": "https://www.openstreetmap.org/way/660050786"
+        },
+        {
+          "name": "Jarboe Park",
+          "type": "park",
+          "lon": -81.3988893640126,
+          "lat": 30.31553405,
+          "source": "https://www.openstreetmap.org/way/126439318"
+        }
+      ]
+    },
+    {
+      "town_id": "ponte-vedra-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.37646649415447,
+          "lat": 30.2379201,
+          "source": "https://www.openstreetmap.org/relation/19475324"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Miranda Road",
+          "type": "walkable",
+          "lon": -81.3799276,
+          "lat": 30.2382976,
+          "source": "https://www.openstreetmap.org/way/11281414"
+        },
+        {
+          "name": "PVIC Fountain",
+          "type": "park",
+          "lon": -81.37898593936498,
+          "lat": 30.242119549999998,
+          "source": "https://www.openstreetmap.org/way/613119525"
+        }
+      ]
+    },
+    {
+      "town_id": "st-augustine-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.26541597351076,
+          "lat": 29.849654049999998,
+          "source": "https://www.openstreetmap.org/way/1187762056"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.26753658524942,
+          "lat": 29.85380395,
+          "source": "https://www.openstreetmap.org/way/355529114"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "2nd Avenue",
+          "type": "walkable",
+          "lon": -81.2689766,
+          "lat": 29.8500003,
+          "source": "https://www.openstreetmap.org/way/11284522"
+        },
+        {
+          "name": "Lakeside Park",
+          "type": "park",
+          "lon": -81.27856525707065,
+          "lat": 29.852693199999997,
+          "source": "https://www.openstreetmap.org/way/292354231"
+        }
+      ]
+    },
+    {
+      "town_id": "st-augustine-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.26541597351076,
+          "lat": 29.849654049999998,
+          "source": "https://www.openstreetmap.org/way/1187762056"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.26753658524942,
+          "lat": 29.85380395,
+          "source": "https://www.openstreetmap.org/way/355529114"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "2nd Avenue",
+          "type": "walkable",
+          "lon": -81.2689766,
+          "lat": 29.8500003,
+          "source": "https://www.openstreetmap.org/way/11284522"
+        }
+      ]
+    },
+    {
+      "town_id": "daytona-beach-shores",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.9893067932872,
+          "lat": 29.1917155,
+          "source": "https://www.openstreetmap.org/way/650324454"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Atlantic Avenue",
+          "type": "walkable",
+          "lon": -80.9849069517583,
+          "lat": 29.17995678748591,
+          "source": "https://www.openstreetmap.org/way/720120258"
+        },
+        {
+          "name": "Frank Rendon Park",
+          "type": "park",
+          "lon": -80.98436741585165,
+          "lat": 29.180235500000002,
+          "source": "https://www.openstreetmap.org/way/964676992"
+        }
+      ]
+    },
+    {
+      "town_id": "ormond-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.04040800023562,
+          "lat": 29.294804749999997,
+          "source": "https://www.openstreetmap.org/way/1232916833"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "John Anderson Drive",
+          "type": "walkable",
+          "lon": -81.04792056142527,
+          "lat": 29.289657809366123,
+          "source": "https://www.openstreetmap.org/way/879518922"
+        },
+        {
+          "name": "Fortunato Park",
+          "type": "park",
+          "lon": -81.04837599830097,
+          "lat": 29.2894682,
+          "source": "https://www.openstreetmap.org/way/543887720"
+        }
+      ]
+    },
+    {
+      "town_id": "lake-worth-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.04753000943037,
+          "lat": 26.6133029,
+          "source": "https://www.openstreetmap.org/way/631974430"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -80.04768394999999,
+          "lat": 26.61426105,
+          "source": "https://www.openstreetmap.org/way/1016561091"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Bryant Park Paved Paths",
+          "type": "walkable",
+          "lon": -80.04765853421999,
+          "lat": 26.61347712894922,
+          "source": "https://www.openstreetmap.org/way/254962345"
+        },
+        {
+          "name": "Bryant Park",
+          "type": "park",
+          "lon": -80.04756946199473,
+          "lat": 26.6133879,
+          "source": "https://www.openstreetmap.org/relation/3414815"
+        }
+      ]
+    },
+    {
+      "town_id": "lake-worth-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.04753000943037,
+          "lat": 26.6133029,
+          "source": "https://www.openstreetmap.org/way/631974430"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -80.04768394999999,
+          "lat": 26.61426105,
+          "source": "https://www.openstreetmap.org/way/1016561091"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Bryant Park Paved Paths",
+          "type": "walkable",
+          "lon": -80.04765853421999,
+          "lat": 26.61347712894922,
+          "source": "https://www.openstreetmap.org/way/254962345"
+        },
+        {
+          "name": "Bryant Park",
+          "type": "park",
+          "lon": -80.04756946199473,
+          "lat": 26.6133879,
+          "source": "https://www.openstreetmap.org/relation/3414815"
+        }
+      ]
+    },
+    {
+      "town_id": "juno-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.05831650051601,
+          "lat": 26.89898155,
+          "source": "https://www.openstreetmap.org/way/522971923"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Juno Beach Mobil Home Condo",
+          "type": "walkable",
+          "lon": -80.0594022,
+          "lat": 26.8913248,
+          "source": "https://www.openstreetmap.org/way/11232380"
+        },
+        {
+          "name": "Juno Beach Park",
+          "type": "park",
+          "lon": -80.05833830464995,
+          "lat": 26.893250549999998,
+          "source": "https://www.openstreetmap.org/way/557535152"
+        }
+      ]
+    },
+    {
+      "town_id": "lantana",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.04735529556669,
+          "lat": 26.58472035,
+          "source": "https://www.openstreetmap.org/way/562329911"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "East Ocean Avenue",
+          "type": "walkable",
+          "lon": -80.04894567470893,
+          "lat": 26.584328809268836,
+          "source": "https://www.openstreetmap.org/way/11204225"
+        },
+        {
+          "name": "McKinley Park",
+          "type": "park",
+          "lon": -80.04243690641977,
+          "lat": 26.5813763,
+          "source": "https://www.openstreetmap.org/way/562348663"
+        }
+      ]
+    },
+    {
+      "town_id": "lantana",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.04735529556669,
+          "lat": 26.58472035,
+          "source": "https://www.openstreetmap.org/way/562329911"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "East Ocean Avenue",
+          "type": "walkable",
+          "lon": -80.04894567470893,
+          "lat": 26.584328809268836,
+          "source": "https://www.openstreetmap.org/way/11204225"
+        }
+      ]
+    },
+    {
+      "town_id": "palm-beach-shores",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.04151566929332,
+          "lat": 26.7832795,
+          "source": "https://www.openstreetmap.org/way/355809579"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.03708161045695,
+          "lat": 26.77739845,
+          "source": "https://www.openstreetmap.org/way/317733930"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Riviera Beach",
+          "type": "beach",
+          "lon": -80.03204907992637,
+          "lat": 26.78677735,
+          "source": "https://www.openstreetmap.org/way/234177865"
+        },
+        {
+          "name": "Buccaneer Marina",
+          "type": "boating",
+          "lon": -80.0395239682534,
+          "lat": 26.7787501,
+          "source": "https://www.openstreetmap.org/way/934624579"
+        },
+        {
+          "name": "Edwards Lane",
+          "type": "walkable",
+          "lon": -80.03561940927409,
+          "lat": 26.77841320514145,
+          "source": "https://www.openstreetmap.org/way/11208085"
+        },
+        {
+          "name": "Phil Foster Park Snorkel Reef",
+          "type": "park",
+          "lon": -80.04219343900317,
+          "lat": 26.7825695,
+          "source": "https://www.openstreetmap.org/way/401419815"
+        }
+      ]
+    },
+    {
+      "town_id": "palm-beach-shores",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.04151566929332,
+          "lat": 26.7832795,
+          "source": "https://www.openstreetmap.org/way/355809579"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Buccaneer Marina",
+          "type": "boating",
+          "lon": -80.0395239682534,
+          "lat": 26.7787501,
+          "source": "https://www.openstreetmap.org/way/934624579"
+        },
+        {
+          "name": "Edwards Lane",
+          "type": "walkable",
+          "lon": -80.03561940927409,
+          "lat": 26.77841320514145,
+          "source": "https://www.openstreetmap.org/way/11208085"
+        },
+        {
+          "name": "Phil Foster Park Snorkel Reef",
+          "type": "park",
+          "lon": -80.04219343900317,
+          "lat": 26.7825695,
+          "source": "https://www.openstreetmap.org/way/401419815"
+        }
+      ]
+    },
+    {
+      "town_id": "port-salerno",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.20207354559709,
+          "lat": 27.148520750000003,
+          "source": "https://www.openstreetmap.org/way/1233381159"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Southeast Mulford Lane",
+          "type": "walkable",
+          "lon": -80.19628266391156,
+          "lat": 27.149725844595125,
+          "source": "https://www.openstreetmap.org/way/11100661"
+        },
+        {
+          "name": "Wojcieszak Park",
+          "type": "park",
+          "lon": -80.20412062874604,
+          "lat": 27.1475419,
+          "source": "https://www.openstreetmap.org/way/95683678"
+        }
+      ]
+    },
+    {
+      "town_id": "hutchinson-island",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.20158525587155,
+          "lat": 27.2665862,
+          "source": "https://www.openstreetmap.org/way/1234825325"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "South Ocean Drive",
+          "type": "walkable",
+          "lon": -80.2015592,
+          "lat": 27.2636947,
+          "source": "https://www.openstreetmap.org/way/1427901991"
+        },
+        {
+          "name": "Jensen Beach Park",
+          "type": "park",
+          "lon": -80.19708867546652,
+          "lat": 27.255659950000002,
+          "source": "https://www.openstreetmap.org/way/1233381151"
+        }
+      ]
+    },
+    {
+      "town_id": "cape-canaveral",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.59173425324809,
+          "lat": 28.403457850000002,
+          "source": "https://www.openstreetmap.org/way/215682895"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Jetty Park Road",
+          "type": "walkable",
+          "lon": -80.5929714821831,
+          "lat": 28.405909783762908,
+          "source": "https://www.openstreetmap.org/way/297610879"
+        },
+        {
+          "name": "Jetty Park",
+          "type": "park",
+          "lon": -80.59401466660535,
+          "lat": 28.4065705,
+          "source": "https://www.openstreetmap.org/way/296954741"
+        },
+        {
+          "name": "USS Nathaniel Greene",
+          "type": "landmark",
+          "lon": -80.60252065434041,
+          "lat": 28.4110989,
+          "source": "https://www.openstreetmap.org/way/1227825542"
+        }
+      ]
+    },
+    {
+      "town_id": "rockledge",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -80.72489497228518,
+          "lat": 28.337332,
+          "source": "https://www.openstreetmap.org/way/1235985512"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Rockledge Drive",
+          "type": "walkable",
+          "lon": -80.71247884522815,
+          "lat": 28.325546776962714,
+          "source": "https://www.openstreetmap.org/way/10779447"
+        },
+        {
+          "name": "Scott Lane",
+          "type": "walkable",
+          "lon": -80.71341535867114,
+          "lat": 28.324759484963074,
+          "source": "https://www.openstreetmap.org/way/10779352"
+        }
+      ]
+    },
+    {
+      "town_id": "ponce-inlet",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.93181912436867,
+          "lat": 29.0798462,
+          "source": "https://www.openstreetmap.org/way/984757300"
+        },
+        {
+          "name": "Mapped marina or boat ramp",
+          "type": "boating",
+          "lon": -80.92858,
+          "lat": 29.07914675,
+          "source": "https://www.openstreetmap.org/way/984761480"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Disappearing Island",
+          "type": "beach",
+          "lon": -80.92757668061613,
+          "lat": 29.070813,
+          "source": "https://www.openstreetmap.org/way/491316799"
+        },
+        {
+          "name": "Front Street",
+          "type": "walkable",
+          "lon": -80.9345428,
+          "lat": 29.0816602,
+          "source": "https://www.openstreetmap.org/way/11378777"
+        },
+        {
+          "name": "Kay and Ares Davies Lighthouse Park",
+          "type": "park",
+          "lon": -80.92843673133802,
+          "lat": 29.0800345,
+          "source": "https://www.openstreetmap.org/way/488734674"
+        },
+        {
+          "name": "Oil Storage Building",
+          "type": "landmark",
+          "lon": -80.92840454386408,
+          "lat": 29.08046035,
+          "source": "https://www.openstreetmap.org/way/318263243"
+        }
+      ]
+    },
+    {
+      "town_id": "ponce-inlet",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.93181912436867,
+          "lat": 29.0798462,
+          "source": "https://www.openstreetmap.org/way/984757300"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Front Street",
+          "type": "walkable",
+          "lon": -80.9345428,
+          "lat": 29.0816602,
+          "source": "https://www.openstreetmap.org/way/11378777"
+        }
+      ]
+    },
+    {
+      "town_id": "edgewater",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -80.90043782070757,
+          "lat": 28.99431135,
+          "source": "https://www.openstreetmap.org/way/1040089050"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "North Riverside Drive",
+          "type": "walkable",
+          "lon": -80.90474060206478,
+          "lat": 28.99295196192861,
+          "source": "https://www.openstreetmap.org/way/11377997"
+        },
+        {
+          "name": "George R. Kennedy Memorial Park",
+          "type": "park",
+          "lon": -80.90431244583093,
+          "lat": 28.993174500000002,
+          "source": "https://www.openstreetmap.org/way/553154504"
+        }
+      ]
+    },
+    {
+      "town_id": "ormond-by-the-sea",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.061526466201,
+          "lat": 29.33964585,
+          "source": "https://www.openstreetmap.org/way/1101746915"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Ocean Shore Boulevard",
+          "type": "walkable",
+          "lon": -81.05889878792054,
+          "lat": 29.331330142681388,
+          "source": "https://www.openstreetmap.org/way/756471583"
+        },
+        {
+          "name": "Tom Renick Park",
+          "type": "park",
+          "lon": -81.05827176640653,
+          "lat": 29.3314163,
+          "source": "https://www.openstreetmap.org/way/964715597"
+        }
+      ]
+    },
+    {
+      "town_id": "beverly-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped beach access",
+          "type": "beach",
+          "lon": -81.14504291656817,
+          "lat": 29.517924450000002,
+          "source": "https://www.openstreetmap.org/way/602688107"
+        },
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.14791700746757,
+          "lat": 29.52153665,
+          "source": "https://www.openstreetmap.org/way/1187963211"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Osprey Drive",
+          "type": "walkable",
+          "lon": -81.1447351,
+          "lat": 29.5150193,
+          "source": "https://www.openstreetmap.org/way/738986525"
+        },
+        {
+          "name": "North Ocean Shore Boulevard",
+          "type": "walkable",
+          "lon": -81.1446021,
+          "lat": 29.5151071,
+          "source": "https://www.openstreetmap.org/way/205660067"
+        }
+      ]
+    },
+    {
+      "town_id": "vilano-beach",
+      "view": "town",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.29798059909302,
+          "lat": 29.916646749999998,
+          "source": "https://www.openstreetmap.org/way/510310568"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Vilano Point",
+          "type": "beach",
+          "lon": -81.2938285,
+          "lat": 29.9096213,
+          "source": "https://www.openstreetmap.org/node/4993527967"
+        },
+        {
+          "name": "Harbor Court",
+          "type": "walkable",
+          "lon": -81.297413,
+          "lat": 29.91609,
+          "source": "https://www.openstreetmap.org/way/11282398"
+        },
+        {
+          "name": "Oceanfront Park",
+          "type": "park",
+          "lon": -81.2906565820729,
+          "lat": 29.9165807,
+          "source": "https://www.openstreetmap.org/way/351689537"
+        }
+      ]
+    },
+    {
+      "town_id": "vilano-beach",
+      "view": "street",
+      "removed_generic": [
+        {
+          "name": "Mapped public park",
+          "type": "park",
+          "lon": -81.29798059909302,
+          "lat": 29.916646749999998,
+          "source": "https://www.openstreetmap.org/way/510310568"
+        }
+      ],
+      "named_callouts": [
+        {
+          "name": "Harbor Court",
+          "type": "walkable",
+          "lon": -81.297413,
+          "lat": 29.91609,
+          "source": "https://www.openstreetmap.org/way/11282398"
+        },
+        {
+          "name": "Nease Beachfront Park",
+          "type": "park",
+          "lon": -81.29608495323984,
+          "lat": 29.92676115,
+          "source": "https://www.openstreetmap.org/way/316105393"
+        }
+      ]
+    }
+  ]
+}
