@@ -554,6 +554,7 @@ body:has(.fs){overflow:hidden}
 .rvp-map{display:none;position:absolute;inset:0;z-index:5}
 .rvp-maplabel{position:absolute;left:50%;top:calc(18px + env(safe-area-inset-top));transform:translateX(-50%);background:#fff;border-radius:999px;padding:8px 16px;font-weight:800;box-shadow:0 4px 14px rgba(20,40,55,.15)}
 .fs-rvp.showmap{overflow:hidden}.fs-rvp.showmap .rvp-map{display:block}
+.fs-rvp.showmap .rvp-top{z-index:7}.fs-rvp.showmap .rvp-top .linkbtn{background:rgba(21,42,46,.6);padding:7px 12px;border-radius:999px;font-size:13px}
 .rvp-foot{position:fixed;left:0;right:0;bottom:0;z-index:6;display:flex;gap:10px;padding:14px 20px calc(16px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(255,255,255,0),#fff 30%)}
 .rvp-foot .btn{height:52px;white-space:nowrap}.rvp-foot .btn-line{flex:none;padding:0 20px;background:#fff}.rvp-foot .btn-accent{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis}
 .rvp-back{width:52px;padding:0!important;justify-content:center}
@@ -644,6 +645,9 @@ body:has(.fs){overflow:hidden}
 .lmtop li::before{content:counter(lm) ". ";opacity:.7}
 .lmcard p.sub{color:var(--muted);font-size:15px;margin:0 0 16px}
 .lmcard .leadform .btn{justify-self:stretch}
+.who{display:flex;gap:10px;align-items:flex-start;margin-top:4px}.who-av{flex:none;width:36px;height:36px;border-radius:50%;background:var(--accent);color:#fff;font:600 13px/36px var(--sans,inherit);text-align:center;letter-spacing:.5px}.who p{margin:0;font-size:13px;line-height:1.45;color:var(--muted)}.who b{color:var(--ink);font-weight:600}
+.fs-bar .rv-save{margin-right:18px}.rvp-tl{display:flex;gap:14px;align-items:center}
+.askbar{display:none}@media (max-width:760px){.askbar{display:flex;border:0;font:inherit;cursor:pointer;justify-content:center;gap:6px;position:fixed;left:12px;right:12px;bottom:12px;z-index:40;background:var(--accent);color:#fff;border-radius:999px;padding:13px 16px;font-size:15px;box-shadow:0 8px 24px rgba(0,0,0,.18);text-decoration:none}.askbar b{text-decoration:underline}body.ask-hide .askbar{display:none}}
 .lmor{display:flex;align-items:center;gap:12px;color:var(--muted);font-size:13px;font-weight:700;margin:16px 0 12px}
 .lmor::before,.lmor::after{content:"";flex:1;height:1px;background:var(--line)}
 .lmalt{display:grid;gap:4px}.lmalt .linkbtn{font-size:14px}
