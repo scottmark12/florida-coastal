@@ -21,15 +21,7 @@ if(location.pathname.endsWith('/find-your-mile.html')){
  if(window.requestIdleCallback)requestIdleCallback(()=>flightMapTexture(),{timeout:1500});else setTimeout(()=>flightMapTexture(),1000);
 }
 async function prepareRevealView(root) {
-  const current=document.querySelector('.fs-rv,.fs-rvp .fs-map')?.querySelector('.dot.hot')?.getAttribute('data-id');
-  const world=document.createElement('div');
-  world.className='flight-world';
-  world.style.cssText='position:absolute;inset:0;overflow:visible;pointer-events:none';
-  const texture=flightMapTexture(),b=FLIGHT_MAP.bounds;
-  const point=town=>FLIGHT_MAP.towns[town.id];
-  world.innerHTML=`<svg viewBox="${b[0]} ${b[1]} ${b[2]-b[0]} ${b[3]-b[1]}" role="img" aria-label="Illustrated regional atlas, travel between towns"><image href="${texture.src}" x="${b[0]}" y="${b[1]}" width="${b[2]-b[0]}" height="${b[3]-b[1]}" preserveAspectRatio="none"/>${T.filter(town=>point(town)).map(town=>{const p=point(town);return `<circle class="dot ${town.id===current?'hot':''}" data-id="${town.id}" cx="${p[0]}" cy="${p[1]}" r="0.01"/>`}).join('')}</svg>`;
-  world.querySelector('svg').style.cssText='width:100%;height:100%;display:block';
-  root.querySelector('.fs-map').appendChild(world);
+  const texture=flightMapTexture();
   const images = [texture,...root.querySelectorAll('.lnd img,.rv-card .ph img,.rvp-hero img')];
   for(const illustrated of root.querySelectorAll('.illus-img')) {
     const image=new Image();image.src=illustrated.getAttribute('href');images.push(image);
@@ -51,119 +43,108 @@ async function prepareRevealView(root) {
   const aerial = root.querySelector('.lnd img');
   if (aerial && (!aerial.complete || !aerial.naturalWidth)) aerial.closest('.lnd').remove();
 }
-// Town textures and the regional SVG follow one virtual camera in screen/world
-// coordinates. Scale changes exponentially, so lift-off and landing feel like a
-// continuous change of altitude rather than a full-screen image dissolve.
-// Town textures and the regional SVG follow one virtual camera in screen/world
-// coordinates. Scale changes exponentially, so lift-off and landing feel like a
-// continuous change of altitude rather than a full-screen image dissolve.
-// Town textures and the regional SVG follow one virtual camera in screen/world
-// coordinates. Scale changes exponentially, so lift-off and landing feel like a
-// continuous change of altitude rather than a full-screen image dissolve.
-// Town textures and the regional SVG follow one virtual camera in screen/world
-// coordinates. Scale changes exponentially, so lift-off and landing feel like a
-// continuous change of altitude rather than a full-screen image dissolve.
-// Town textures and the regional SVG follow one virtual camera in screen/world
-// coordinates. Scale changes exponentially, so lift-off and landing feel like a
-// continuous change of altitude rather than a full-screen image dissolve.
-// Town textures and the regional SVG follow one virtual camera in screen/world
-// coordinates. Scale changes exponentially, so lift-off and landing feel like a
-// continuous change of altitude rather than a full-screen image dissolve.
-// Town textures and the regional SVG follow one virtual camera in screen/world
-// coordinates. Scale changes exponentially, so lift-off and landing feel like a
-// continuous change of altitude rather than a full-screen image dissolve.
-function flyTo(id, finished, destination) {
-  const root = document.querySelector('.fs-rv,.fs-rvp');
-  if (!root) return 0;
-  const map = root.querySelector('.fs-map');
-  const original = [...map.querySelectorAll('svg')].find(node => node.getBoundingClientRect().width > 0);
-  const world = destination?.querySelector('.flight-world')?.cloneNode(true);
-  if(world)map.insertBefore(world,map.firstChild);
-  const svg = world?.querySelector('svg') || original;
-  if(world&&original)original.style.visibility='hidden';
-  if (!svg || !svg.animate) return 0;
-  const from = svg.querySelector('.dot.hot');
-  const to = svg.querySelector(`.dot[data-id="${id}"]`);
-  if (!from || !to) return 0;
-  const a = from.getBoundingClientRect(), b = to.getBoundingClientRect(), bounds = svg.getBoundingClientRect();
-  const source = {x:a.left+a.width/2,y:a.top+a.height/2};
-  const delta = {x:b.left+b.width/2-source.x,y:b.top+b.height/2-source.y};
-  const fromTown = T.find(town => town.id === from.getAttribute('data-id'));
-  const toTown = T.find(town => town.id === id);
-  const km = fromTown && toTown ? Math.hypot((toTown.lon-fromTown.lon)*111.32*Math.cos((toTown.lat+fromTown.lat)*Math.PI/360),(toTown.lat-fromTown.lat)*110.57) : 100;
-  const nativeScale=svg.getScreenCTM().a;
-  const baseScale=nativeScale;
-  const oldAerial = map.querySelector('.lnd');
-  const nextAerial = destination && destination.querySelector('.fs-map .lnd');
-  let incoming;
-  if (nextAerial) {
-    incoming = nextAerial.cloneNode(true);
-    incoming.classList.add('flight-layer');
-    incoming.setAttribute('aria-hidden','true');
-    incoming.style.opacity='0';
-    map.appendChild(incoming);
+const townTextureCache=new Map();
+function townTexture(image){
+ const key=image.getAttribute('src').split('/').pop().replace(/\.webp(?:\?.*)?$/,'');
+ if(townTextureCache.has(key))return townTextureCache.get(key);
+ const canvas=document.createElement('canvas');canvas.width=image.naturalWidth;canvas.height=image.naturalHeight;
+ const ctx=canvas.getContext('2d',{willReadFrequently:true});ctx.drawImage(image,0,0);
+ const pixels=ctx.getImageData(0,0,canvas.width,canvas.height),data=pixels.data,tone=TOWN_TONES[key];
+ if(tone)for(let i=0;i<data.length;i+=4){
+  const weight=Math.max(0,[0,1,2].reduce((sum,c)=>sum+Math.max(0,Math.min(1,(64-Math.abs(data[i+c]-tone.water[c]))/52)),0)-2);
+  for(let c=0;c<3;c++)data[i+c]+=tone.shift[c]*weight;
+ }
+ const original=new Uint8ClampedArray(data),stride=canvas.width*4;
+ for(let y=1;y<canvas.height-1;y++)for(let x=1;x<canvas.width-1;x++){
+  const i=y*stride+x*4;for(let c=0;c<3;c++)data[i+c]=original[i+c]*1.48-.12*(original[i+c-4]+original[i+c+4]+original[i+c-stride]+original[i+c+stride]);
+ }
+ ctx.putImageData(pixels,0,0);
+ // Feather in map space, so detail merges with its surroundings instead of
+ // presenting the outline of a moving viewport-sized photograph.
+ ctx.globalCompositeOperation='destination-in';
+ for(const horizontal of [true,false]){
+  const gradient=ctx.createLinearGradient(0,0,horizontal?canvas.width:0,horizontal?0:canvas.height);
+  gradient.addColorStop(0,'transparent');gradient.addColorStop(.2,'#000');gradient.addColorStop(.8,'#000');gradient.addColorStop(1,'transparent');
+  ctx.fillStyle=gradient;ctx.fillRect(0,0,canvas.width,canvas.height);
+ }
+ ctx.globalCompositeOperation='source-over';
+ townTextureCache.set(key,canvas);
+ while(townTextureCache.size>4)townTextureCache.delete(townTextureCache.keys().next().value);
+ return canvas;
+}
+function flyTo(id,finished,destination){
+ const root=document.querySelector('.fs-rv,.fs-rvp');if(!root)return 0;
+ const map=root.querySelector('.fs-map'),oldAerial=map.querySelector('.lnd'),nextAerial=destination?.querySelector('.fs-map .lnd');
+ const fromId=map.dataset.town||map.querySelector('.dot.hot')?.getAttribute('data-id');
+ const fromTown=T.find(t=>t.id===fromId),toTown=T.find(t=>t.id===id);
+ if(!oldAerial||!nextAerial||!fromTown||!toTown)return 0;
+ const rawFrom=FLIGHT_MAP.towns[fromId],rawTo=FLIGHT_MAP.towns[id];if(!rawFrom||!rawTo)return 0;
+ const next=nextAerial.cloneNode(true);next.style.visibility='hidden';map.appendChild(next);
+ const measure=(node,tid,image=node.querySelector('img'))=>{
+  const box=node.querySelector('.lnd-box').getBoundingClientRect(),entry=LANDING[tid],close=/-close(?:-m)?\.webp/.test(image.getAttribute('src'))&&entry.chw,mobile=node.classList.contains('m');
+  const half=close?mobile?entry.cmhw:entry.chw:mobile?entry.mhw:entry.hw;
+  const vertical=close?mobile?entry.cmhh:entry.chh:mobile?entry.mhh:entry.hh;
+  return {key:image.getAttribute('src'),center:[box.left+box.width/2,box.top+box.height/2],scale:box.width/(half*2),half,vertical,point:FLIGHT_MAP.towns[tid],texture:townTexture(image)};
+ };
+ const departure=measure(oldAerial,fromId),arrival=measure(next,id,nextAerial.querySelector('img'));next.remove();
+ const tiles=[...(map.atlasTiles||[departure]).filter(tile=>tile.key!==arrival.key),arrival].slice(-4);
+ const viewport=map.getBoundingClientRect(),ratio=Math.min(devicePixelRatio||1,2),canvas=document.createElement('canvas');
+ canvas.className='continuous-atlas';canvas.setAttribute('aria-hidden','true');canvas.width=Math.round(viewport.width*ratio);canvas.height=Math.round(viewport.height*ratio);
+ canvas.style.cssText='position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none';
+ const ctx=canvas.getContext('2d',{alpha:false});ctx.setTransform(ratio,0,0,ratio,0,0);ctx.imageSmoothingEnabled=true;ctx.imageSmoothingQuality='high';
+ const background=flightMapTexture(),bounds=FLIGHT_MAP.bounds;
+ const smooth=t=>{t=Math.max(0,Math.min(1,t));return t*t*t*(t*(t*6-15)+10);};
+ const mix=(a,b,t)=>a+(b-a)*t,exp=(a,b,t)=>Math.exp(mix(Math.log(a),Math.log(b),t));
+ const km=Math.hypot((toTown.lon-fromTown.lon)*111.32*Math.cos((toTown.lat+fromTown.lat)*Math.PI/360),(toTown.lat-fromTown.lat)*110.57);
+ const zoomOnly=fromId===id;
+ const duration=zoomOnly?900:Math.round(Math.min(5000,3300+km*2.5)),cruise=Math.min(Math.min(departure.scale,arrival.scale)*.12,Math.min(viewport.width,viewport.height)*.64/(km+45));
+ function paint(time){
+  const travel=smooth((time-.1)/.8),scale=zoomOnly?exp(departure.scale,arrival.scale,smooth(time)):time<.48?exp(departure.scale,cruise,smooth(time/.48)):time>.52?exp(cruise,arrival.scale,smooth((time-.52)/.48)):cruise;
+  const anchor=[mix(departure.center[0],arrival.center[0],travel)-viewport.left,mix(departure.center[1],arrival.center[1],travel)-viewport.top];
+  const left=mix(rawFrom[0],rawTo[0],travel)-anchor[0]/scale,top=mix(rawFrom[1],rawTo[1],travel)-anchor[1]/scale;
+  const draw=(image,x,y,w,h)=>ctx.drawImage(image,(x-left)*scale,(y-top)*scale,w*scale,h*scale);
+  ctx.globalAlpha=1;ctx.fillStyle='#71adbd';ctx.fillRect(0,0,viewport.width,viewport.height);
+  if(background.complete&&background.naturalWidth)draw(background,bounds[0],bounds[1],bounds[2]-bounds[0],bounds[3]-bounds[1]);
+  for(const tile of tiles){
+   const width=tile.half*2*scale;
+   // A geographic level of detail, independent of departure/arrival timing.
+   // These tiles never slide or scale separately from the map camera.
+   ctx.globalAlpha=smooth((width-12)/100);
+   if(ctx.globalAlpha)draw(tile.texture,tile.point[0]-tile.half,tile.point[1]-tile.vertical,tile.half*2,tile.vertical*2);
   }
-  // Measure the incoming texture after attachment: detached DOM has no layout.
-  const texture = (node, townId) => {
-    if (!node) return {node:null,center:source,scale:baseScale};
-    const rect=node.getBoundingClientRect(),box=node.querySelector('.lnd-box').getBoundingClientRect();
-    const entry=LANDING[townId],close=!!S.lndClose&&entry&&entry.chw;
-    const half=entry ? close ? node.classList.contains('m')?entry.cmhw:entry.chw : node.classList.contains('m')?entry.mhw:entry.hw : 2.5;
-    const center={x:box.left+box.width/2,y:box.top+box.height/2};
-    node.style.transformOrigin=`${center.x-rect.left}px ${center.y-rect.top}px`;
-    return {node,center,scale:box.width/(2*half)};
-  };
-  const departure=texture(oldAerial,fromTown?.id),arrival=texture(incoming,id);
-  const startScale=departure.scale,endScale=arrival.scale;
-  const viewport=map.getBoundingClientRect();
-  const cruise=Math.min(Math.min(startScale,endScale)*.12,Math.min(viewport.width,viewport.height)*.64/(km+45));
-  const duration=Math.round(Math.min(5000,3300+km*2.5));
-  const smooth=t=>{t=Math.max(0,Math.min(1,t));return t*t*t*(t*(t*6-15)+10);};
-  const mix=(a,b,t)=>a+(b-a)*t;
-  const exponential=(a,b,t)=>Math.exp(mix(Math.log(a),Math.log(b),t));
-  const KEYFRAMES=180;
-  const regional=[],outgoing=[],entering=[];
-  const rawFrom={x:Number(from.getAttribute('cx')),y:Number(from.getAttribute('cy'))};
-  const rawTo={x:Number(to.getAttribute('cx')),y:Number(to.getAttribute('cy'))};
-  for(let i=0;i<=KEYFRAMES;i++) {
-    const time=i/KEYFRAMES,travel=smooth((time-.1)/.8);
-    const scale=time<.48?exponential(startScale,cruise,smooth(time/.48)):time>.52?exponential(cruise,endScale,smooth((time-.52)/.48)):cruise;
-    const anchor={x:mix(departure.center.x,arrival.center.x,travel),y:mix(departure.center.y,arrival.center.y,travel)};
-    const camera={x:delta.x/baseScale*travel,y:delta.y/baseScale*travel};
-    const oldPosition={x:anchor.x-camera.x*scale,y:anchor.y-camera.y*scale};
-    const newPosition={x:anchor.x+(delta.x/baseScale-camera.x)*scale,y:anchor.y+(delta.y/baseScale-camera.y)*scale};
-    const pixelsPerUnit=scale/baseScale*nativeScale;
-    regional.push([mix(rawFrom.x,rawTo.x,travel)-(anchor.x-viewport.left)/pixelsPerUnit,mix(rawFrom.y,rawTo.y,travel)-(anchor.y-viewport.top)/pixelsPerUnit,viewport.width/pixelsPerUnit,viewport.height/pixelsPerUnit]);
-    const oldScale=scale/startScale,newScale=scale/endScale;
-    outgoing.push({'--flight-edge':`${60+40*Math.min(1,oldScale)}%`,offset:time,opacity:time<.5?smooth((oldScale-.07)/.23):0,transform:`translate(${oldPosition.x-departure.center.x}px,${oldPosition.y-departure.center.y}px) scale(${oldScale})`});
-    entering.push({'--flight-edge':`${60+40*Math.min(1,newScale)}%`,offset:time,opacity:time>.5?smooth((newScale-.07)/.23):0,transform:`translate(${newPosition.x-arrival.center.x}px,${newPosition.y-arrival.center.y}px) scale(${newScale})`});
+  ctx.globalAlpha=1;
+ }
+ map.querySelectorAll('.continuous-atlas').forEach(node=>node.remove());map.appendChild(canvas);paint(0);
+ oldAerial.style.background='transparent';oldAerial.querySelector('img').style.opacity='0';root.classList.add('flying');
+ const label=root.querySelector('.rvp-maplabel');if(label)label.textContent=zoomOnly?short(toTown):short(fromTown)+' → '+short(toTown);
+ let complete=false;const started=performance.now();
+ const done=()=>{
+  if(complete)return;complete=true;clearTimeout(deadline);
+  if(root.isConnected){
+   paint(1);const target=destination.querySelector('.fs-map');target.dataset.town=id;target.atlasTiles=tiles;
+   nextAerial.style.background='transparent';nextAerial.querySelector('img').style.opacity='0';target.appendChild(canvas);
   }
-  svg.setAttribute('preserveAspectRatio','none');
-  svg.style.overflow='visible';
-  if(world)world.querySelectorAll('circle,text,rect').forEach(node=>node.style.visibility='hidden');
-  if(world)world.querySelectorAll('path,line').forEach(node=>node.style.vectorEffect='non-scaling-stroke');
-  const travelLabel=root.querySelector('.rvp-maplabel');
-  if(travelLabel&&fromTown&&toTown)travelLabel.textContent=short(fromTown)+' → '+short(toTown);
-  root.classList.add('flying');
-  from.classList.add('depart');to.classList.add('arrive');
-  to.style.setProperty('--late',Math.round(.7*duration)+'ms');
-  const options={duration,easing:'linear',fill:'forwards'};
-  departure.node?.animate(outgoing,options);
-  arrival.node?.animate(entering,options);
-  let complete=false;
-  const done=()=>{if(!complete){complete=true;clearTimeout(deadline);finished();}};
-  // Changing the viewBox repaints the complete coastline on Safari as well as
-  // Chromium. A composited SVG transform can cache only its initial visible crop.
-  const started=performance.now();
-  const tick=now=>{
-    if(complete)return;
-    if(!root.isConnected){done();return;}
-    const progress=Math.max(0,Math.min(1,(now-started)/duration)),index=progress*KEYFRAMES;
-    const a=regional[Math.floor(index)],b=regional[Math.min(KEYFRAMES,Math.floor(index)+1)];
-    svg.setAttribute('viewBox',a.map((v,i)=>mix(v,b[i],index%1)).join(' '));
-    if(progress<1)requestAnimationFrame(tick);else done();
-  };
-  const deadline=setTimeout(done,duration+400);
-  tick(started);
-  return duration;
+  finished();
+ };
+ const tick=now=>{if(complete)return;if(!root.isConnected){done();return;}const t=Math.max(0,Math.min(1,(now-started)/duration));paint(t);if(t<1)requestAnimationFrame(tick);else done();};
+ const deadline=setTimeout(done,duration+400);tick(started);return duration;
+}
+
+async function zoomTownDetail(button){
+ if(S.flying)return;
+ const root=button.closest('.fs-rv,.fs-rvp'),old=button.closest('.lnd'),town=rankedTowns().slice(0,5)[S.reveal||0];
+ if(!root||!old||!town)return;
+ S.lndClose=!S.lndClose;track('aerial_zoom',S.lndClose?'close':'town');S.flying=true;
+ const holder=document.createElement('div');holder.innerHTML='<div class="fs-map mapbox">'+landingHTML(town,old.classList.contains('m'))+'</div>';
+ await prepareRevealView(holder);
+ if(!root.isConnected){S.flying=false;return;}
+ if(!holder.querySelector('.lnd')){S.lndClose=!S.lndClose;S.flying=false;return;}
+ const done=()=>{
+  if(!root.isConnected){S.flying=false;return;}
+  holder.querySelector('.flight-world')?.remove();
+  root.querySelector('.fs-map').replaceWith(holder.querySelector('.fs-map'));
+  root.classList.remove('flying');S.flying=false;
+  const queued=S.rvQueue;S.rvQueue=null;if(queued)root.querySelector(`[data-rv="${queued}"]`)?.click();
+ };
+ if(!flyTo(town.id,done,holder))done();
 }

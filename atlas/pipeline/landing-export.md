@@ -54,3 +54,12 @@ The display filter ends with a restrained 3×3 edge-sharpening kernel (center
 1.48, four neighbors −0.12, sum 1). This preserves flat colors and alpha while
 slightly improving roof/street edge contrast. It also applies to scenes without
 a water-color recipe. It does not create detail absent from the original render.
+
+The walkthrough uses one continuous canvas and one projected world camera.
+The regional raster and geographically anchored town textures are drawn together;
+only the camera moves. Town textures use the same selective color transfer and
+sharpening, plus feathered map-space edges. Their visibility follows projected
+size, rather than timed sliding or crossfading DOM panels. The canvas remains
+after arrival, retaining up to four recent detail textures. Town/Close uses the
+same camera for a 900 ms zoom. Destination images decode before flight; phone
+Photo mode and reduced-motion navigation retain their existing fallback behavior.

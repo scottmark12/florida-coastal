@@ -15,6 +15,9 @@ old=re.search(r'assets/(app\.[a-f0-9]+\.js)',(R/'find-your-mile.html').read_text
 runtime=runtime[:start]+source+runtime[end:]
 key='e.id+(o?"-close":"")+(a?"-m":"")'
 runtime=runtime.replace('<div class="lnd-box"><img src=', '<div class="lnd-box">${townToneHTML('+key+')}<img style="${townToneStyle('+key+')}" src=')
+zoom_start=runtime.index('{const a=e.target.closest("[data-lndzoom]");')
+zoom_end=runtime.index('if(e.target.closest("[data-rvmap]"))',zoom_start)
+runtime=runtime[:zoom_start]+'{const a=e.target.closest("[data-lndzoom]");if(a){zoomTownDetail(a);return}}'+runtime[zoom_end:]
 name='app.'+hashlib.sha256(runtime.encode()).hexdigest()[:10]+'.js';(R/'assets'/name).write_text(runtime)
 for p in R.rglob('*.html'):
  if R/'atlas' in p.parents or '.git' in p.parts:continue
