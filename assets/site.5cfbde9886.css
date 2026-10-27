@@ -852,3 +852,20 @@ body:has(.fs){overflow:hidden}
   .hero-acts{flex-direction:column;gap:10px;width:100%}
   .hero-acts .btn{width:100%;justify-content:center;text-align:center}
 }
+
+/* Inline "keep your 5 towns" email box */
+.savebox{display:flex;flex-direction:column;gap:10px;margin:0 0 16px;padding:16px;border:1.5px solid var(--accent);border-radius:16px;background:var(--accent-tint)}
+.savebox .sv-hd{display:flex;flex-direction:column;gap:3px}
+.savebox .sv-hd b{font-family:var(--display);font-weight:500;font-size:22px;line-height:1.15}
+.savebox .sv-hd span{font-size:14px;color:var(--muted)}
+.savebox .sv-row{display:flex;gap:8px}
+.savebox input[type=email]{flex:1;min-width:0;height:48px;border:1px solid var(--line);border-radius:12px;padding:0 14px;font:500 16px var(--body);background:var(--white);color:var(--ink)}
+.savebox .btn{height:48px;flex:none;padding:0 20px}
+.savebox .sv-note{font-size:12.5px;color:var(--muted);margin:0}
+.savebox.sent{border-color:var(--line);background:var(--paper)}
+.savebox.sent span{font-size:14px;color:var(--muted)}
+.savebox .thanks{margin:0}
+.fs-acts .savebox{margin-bottom:6px;text-align:left}
+.sl-ctrls .savebox{margin:18px 0 0}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media (max-width:420px){.savebox .btn{padding:0 14px}}
