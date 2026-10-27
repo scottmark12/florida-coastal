@@ -737,7 +737,10 @@ body:has(.fs){overflow:hidden}
   .fs-rvp.split .rvp-name .rv-badge{background:var(--accent-tint);color:var(--accent-dark)}
   .fs-rvp.split .rvp-maplabel{display:none}
   .fs-rvp.split .rvp-body{padding-top:134px}
-  .fs-rvp.split .rvp-hero:has(.ph-next)>.rvp-name{opacity:0}
+  .fs-rvp.split .rvp-hero:has(.ph-next)>.rvp-name{visibility:hidden}
+  .fs-rvp.split .rvp-name{right:20px}
+  .fs-rvp.split .rvp-name h2{font-size:min(34px,8.4vw);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .fs-rvp .rvp-foot .btn-accent{display:block;text-align:center;line-height:52px;padding:0 16px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .fs-rvp.split .ph-next{overflow:visible;clip-path:inset(0 100% -220px 0);animation-name:wipe2}
   .fs-rvp.split .ph-next.rev{clip-path:inset(0 0 -220px 100%)}
   .fs-rvp.split .ph-next .rvp-name{top:calc(100% + 16px);bottom:auto}
