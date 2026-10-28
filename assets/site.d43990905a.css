@@ -869,3 +869,10 @@ body:has(.fs){overflow:hidden}
 .sl-ctrls .savebox{margin:18px 0 0}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (max-width:420px){.savebox .btn{padding:0 14px}}
+
+/* ===== Oct 28 2026 patch: save boxes ===== */
+.keepbox{margin:22px 0 30px}
+.savebox.svwalk{margin:4px 0 18px;padding:14px;gap:8px}
+.savebox.svwalk .sv-hd b{font-size:19px}
+.savebox.svwalk .sv-hd span{font-size:13.5px}
+.savebox.svwalk input[type=email],.savebox.svwalk .btn{height:44px}
