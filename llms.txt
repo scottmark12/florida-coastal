@@ -1,0 +1,279 @@
+# Florida Coastal
+
+> Florida Coastal helps people who are moving to or retiring in Florida pick the right beach town. It covers 167 coastal towns on all 1,350 miles of Florida coast, scores each one honestly (affordability, walkability, beaches, boating, nightlife, peace and quiet, flood and storm risk, insurance, airport access) and matches visitors to their top 5 towns with a free 8 question quiz. Run by the Scott family, who have lived on the Florida coast for 20 years.
+
+Key facts:
+- Free quiz that returns your top 5 Florida beach towns: https://www.floridacoastal.co/find-your-mile.html
+- Every town page has a scorecard, pros and cons, a typical day, prices (fall 2026), flood and insurance notes, and common questions.
+- We are honest about tradeoffs. Affordable towns are cheap for a reason, and we say what it is.
+- How the scores work: https://www.floridacoastal.co/scoring.html
+
+## Start here
+
+- [Find your top 5 Florida beach towns (quiz)](https://www.floridacoastal.co/find-your-mile.html): 8 questions about how you want to live, matched against every town.
+- [Set your priorities (sliders)](https://www.floridacoastal.co/priorities.html): slide what matters and watch the best towns light up on the map.
+- [Style Map](https://www.floridacoastal.co/map.html): every beach town on one map, grouped by style (Old Florida, island, boating, walkable, affordable and more).
+- [All towns](https://www.floridacoastal.co/towns/index.html)
+- [All guides](https://www.floridacoastal.co/articles/index.html)
+- [How we score towns](https://www.floridacoastal.co/scoring.html)
+
+## Guides
+
+- [Florida's Most Affordable Beach Towns, and the Catch With Each](https://www.floridacoastal.co/articles/affordable-beach-towns.html): Ten towns score a 5 on affordability. Every one of them is priced that way for a reason, so here is the reason.
+- [8 Florida "Beach Towns" Where You Can't Walk to the Beach](https://www.floridacoastal.co/articles/beach-towns-without-a-beach.html): Some Florida towns sell the beach life from a bridge, a boat or a drive away. Know which ones before you sign.
+- [The Florida Dream Home Has 6 Bills Nobody Puts on the Listing](https://www.floridacoastal.co/articles/bills-not-on-the-listing.html): The list price leaves a lot out. Six costs to ask about before you make an offer on the coast.
+- [Florida's Best Boating Towns, and What to Check Before You Buy on a Canal](https://www.floridacoastal.co/articles/boating-towns.html): A dock behind the house is the dream. Whether the boat can actually reach open water is the question to ask first.
+- [Destin vs 30A: Same Emerald Water, Very Different Days](https://www.floridacoastal.co/articles/destin-vs-30a.html): They sit side by side on the Panhandle and share the same sugar white sand. One runs on boats and one runs on bikes.
+- [Skip the Famous Beach Town. Live in the One Next Door.](https://www.floridacoastal.co/articles/famous-town-next-door.html): The town you have heard of comes with traffic, meters and prices. Five famous names and the quieter neighbor to look at first.
+- [You Fell in Love With It in February. You'll Live There in August.](https://www.floridacoastal.co/articles/february-vs-august.html): A winter vacation shows a town at its best. Six ways to see the rest of the year before you buy.
+- [Beyond the Beach Bar: How to Find Your People on the Florida Coast](https://www.floridacoastal.co/articles/find-your-people.html): Moving is the easy part. Knowing someone to call on a Tuesday takes a plan. Here is where the standing weekly dates are, town by town.
+- [Your First 90 Days: How to Get Settled and Build a Community in a New Town](https://www.floridacoastal.co/articles/first-90-days.html): Unpacking is the easy half. Here is a simple plan for making a new Florida town feel like home.
+- [Hurricane Season Is Part of the Deal. Here's What to Check Before You Buy](https://www.floridacoastal.co/articles/hurricane-season.html): Every coastal town in Florida lives with storms. The difference is in the house, the zone and the insurance, and you can check all three.
+- [What Nobody Tells You About Florida Home Insurance](https://www.floridacoastal.co/articles/insurance.html): It can change your budget more than the price of the house. Here's what to check before you fall in love with a town.
+- [The Keys, Mile by Mile: Choosing Your Island](https://www.floridacoastal.co/articles/keys-mile-by-mile.html): From Key Largo to Key West, each stretch of the Overseas Highway has its own personality.
+- [Everyone Is Moving to These 5 Florida Cities. Here's Why You Probably Shouldn't.](https://www.floridacoastal.co/articles/most-moved-to-cities.html): The top of the moving lists is mostly inland. If you are coming for the water, here is what the rankings leave out and where to look instead.
+- [Naples vs Fort Myers: Two Different Ways to Live in Southwest Florida](https://www.floridacoastal.co/articles/naples-vs-fort-myers.html): They are under an hour apart and share an airport, but a normal day looks very different in each. Here is how they compare.
+- [Old Florida Is Still Out There](https://www.floridacoastal.co/articles/old-florida.html): Fishing villages, brick main streets and no high rises. The quieter side of the coast.
+- [Gulf, Atlantic or Panhandle? How to Pick Your Florida Coast](https://www.floridacoastal.co/articles/pick-your-coast.html): Florida isn't one place. Here's how the three coasts, plus the Keys, really feel to live on.
+- [Sarasota vs St. Petersburg: Two Arts Towns on Two Different Bays](https://www.floridacoastal.co/articles/sarasota-vs-st-petersburg.html): Both have a walkable downtown, serious museums and a full calendar. The beach, the nights and the price are where they split.
+- [Florida's Springs: The Other Florida Water](https://www.floridacoastal.co/articles/springs.html): Crystal clear, cool all year and just inland from the coast. Why springs belong on your list.
+- [How to Test Drive a Beach Town Before You Move](https://www.floridacoastal.co/articles/test-drive.html): A vacation shows you the best week of the year. Here's how to see the other fifty one.
+- [Eight Florida Beach Towns Where You Can Park the Car](https://www.floridacoastal.co/articles/walkable-beach-towns.html): Most of Florida is built for driving. These are the towns where coffee, dinner and the water are all a walk or a bike ride away.
+
+## Regions
+
+- [Daytona, New Smyrna and Flagler: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/daytona-flagler.html): Wide, hard packed beaches run from New Smyrna Beach up through Daytona to Flagler Beach. Surf towns, race week crowds and some of the most affordable...
+- [Pensacola and the Emerald Coast: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/emerald-coast.html): The western Panhandle runs from historic Pensacola east to Panama City Beach. In between are Destin's harbor and the small beach towns of 30A, all on sugar...
+- [The First Coast: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/first-coast.html): Northeast Florida, from the brick streets of St. Augustine to Fernandina Beach on Amelia Island. Expect wide beaches, real seasons and the Jacksonville...
+- [The Florida Keys: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/florida-keys.html): A chain of islands strung along one highway for more than 100 miles, from Key Largo to Key West. Everything here revolves around the water: diving, fishing...
+- [The Forgotten Coast: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/forgotten-coast.html): East of Panama City the high rises stop. Port St. Joe, Apalachicola and Carrabelle are small working waterfront towns on quiet bays, St. George Island has...
+- [Fort Myers, Sanibel and Charlotte Harbor: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/fort-myers-sanibel.html): Charlotte Harbor, the Caloosahatchee River and the barrier islands of Sanibel and Captiva make this boating and shelling country.
+- [Miami and Fort Lauderdale: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/miami-fort-lauderdale.html): The most urban stretch of the Florida coast, from the Art Deco blocks of South Beach north through Hollywood to the canals of Fort Lauderdale.
+- [Naples, Marco Island and the Everglades: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/naples-marco.html): The polished southwest corner of the state, with calm Gulf beaches, golf and a walkable downtown in Naples.
+- [The Nature Coast and Big Bend: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/nature-coast.html): Where the Panhandle bends into the peninsula, the coast turns to marsh and there is very little development.
+- [The Palm Beaches: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/palm-beaches.html): From Boca Raton up to Jupiter, this stretch mixes lively downtowns in Delray Beach and West Palm Beach with quiet oceanfront towns, golf communities and...
+- [Sarasota, Bradenton and Venice: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/sarasota-bradenton.html): From the Manatee River down to Englewood, this stretch pairs an arts minded city with some of the Gulf's best known sand on Anna Maria Island, Longboat Key...
+- [The Space Coast: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/space-coast.html): The coast around Cape Canaveral, where rocket launches are part of the view. Surf towns line the barrier island, and the mainland cities have some of the...
+- [St. Pete and the Clearwater Beaches: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/st-pete-clearwater.html): A narrow peninsula between the Gulf and Tampa Bay that packs in a walkable waterfront city, a string of barrier island beach towns and a few small bayside...
+- [Tampa and the South Shore: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/tampa-south-shore.html): The east side of Tampa Bay is the big city and the canal communities south of it. You trade Gulf beaches for jobs, pro sports, a major airport and boating...
+- [The Treasure Coast: Florida Beach Towns Guide](https://www.floridacoastal.co/areas/treasure-coast.html): Named for the Spanish treasure fleet that wrecked here in 1715. It is a lower key run of river towns and uncrowded barrier island beaches from Stuart to...
+
+## Towns
+
+### Daytona and Flagler
+
+- [Beverly Beach](https://www.floridacoastal.co/towns/beverly-beach.html): One of Florida's tiniest towns, a few blocks wide between the ocean and the Intracoastal just north of Flagler Beach, with an RV resort, beach cottages and...
+- [Daytona Beach](https://www.floridacoastal.co/towns/daytona.html): Wide beaches and some of the most affordable coastal homes in Florida. See how Daytona Beach scores on beaches, boating, walkability, nightlife and cost.
+- [Daytona Beach Shores](https://www.floridacoastal.co/towns/daytona-beach-shores.html): A quiet strip of oceanfront condos just south of Daytona Beach, with the river a block behind you. See how Daytona Beach Shores scores on beaches, boating...
+- [Edgewater](https://www.floridacoastal.co/towns/edgewater.html): A riverfront city on the Indian River Lagoon just south of New Smyrna Beach, with mangrove paddling trails, a long river walk and more house for the money...
+- [Flagler Beach](https://www.floridacoastal.co/towns/flagler.html): A small, unhurried beach town along A1A, with a new pier on the way. See how Flagler Beach scores on beaches, boating, walkability, nightlife and cost.
+- [Holly Hill](https://www.floridacoastal.co/towns/holly-hill.html): A small, affordable city on the mainland bank of the Halifax River, wedged between Daytona Beach and Ormond Beach, with a riverfront drive, a waterfront...
+- [New Smyrna Beach](https://www.floridacoastal.co/towns/nsb.html): A laid back surf town about an hour from Orlando. See how New Smyrna Beach scores on beaches, boating, walkability, nightlife and cost.
+- [Ormond Beach](https://www.floridacoastal.co/towns/ormond-beach.html): Daytona's quieter neighbor to the north, with oak canopy roads, a small downtown and the same hard packed beach.
+- [Ormond by the Sea](https://www.floridacoastal.co/towns/ormond-by-the-sea.html): A quiet beach community on the barrier island north of Ormond Beach, with small streets of beach cottages between the ocean and the Halifax River and miles...
+- [Palm Coast](https://www.floridacoastal.co/towns/palm-coast.html): A planned city of saltwater canals and more than 130 miles of trails, between St. Augustine and Daytona.
+- [Ponce Inlet](https://www.floridacoastal.co/towns/ponce-inlet.html): A small town at the southern tip of the Daytona peninsula, built around a tall red lighthouse, a working fishing harbor and a wide beach that wraps around...
+- [Port Orange](https://www.floridacoastal.co/towns/port-orange.html): A suburb on the Halifax River just south of Daytona, with parks, a riverfront and the beach over the bridge.
+- [South Daytona](https://www.floridacoastal.co/towns/south-daytona.html): A small riverfront city tucked between Daytona Beach and Port Orange, with low prices and the beach ten minutes away.
+
+### Emerald Coast
+
+- [30A (Santa Rosa Beach)](https://www.floridacoastal.co/towns/30a.html): Sugar white sand, rare coastal dune lakes and small beach towns strung along Scenic Highway 30A. See how 30A scores on beaches, boating, walkability...
+- [Destin](https://www.floridacoastal.co/towns/destin.html): A harbor town built around fishing charters and emerald water. See how Destin scores on beaches, boating, walkability, nightlife and cost.
+- [Fort Walton Beach](https://www.floridacoastal.co/towns/fort-walton-beach.html): An unpretentious waterfront city on Santa Rosa Sound with a walkable old downtown, a calendar full of local events and Okaloosa Island's beaches just over...
+- [Freeport](https://www.floridacoastal.co/towns/freeport.html): A fast growing inland town on the bay side of Walton County, where newer neighborhoods sit a short drive from the 30A beaches.
+- [Gulf Breeze](https://www.floridacoastal.co/towns/gulf-breeze.html): A leafy peninsula between downtown Pensacola and Pensacola Beach, where families come for the schools and the water is at the end of every street.
+- [Mary Esther](https://www.floridacoastal.co/towns/mary-esther.html): A small, settled city on Santa Rosa Sound between Fort Walton Beach and Hurlburt Field, with sound front streets and some of the most approachable prices in...
+- [Miramar Beach](https://www.floridacoastal.co/towns/miramar-beach.html): The stretch of Gulf front between Destin and 30A, with sugar white beaches, Sandestin's shops and a lot going on all year.
+- [Navarre](https://www.floridacoastal.co/towns/navarre.html): The mainland side of Navarre, a growing stretch of neighborhoods along Santa Rosa Sound with Navarre Beach a short causeway drive away.
+- [Navarre Beach](https://www.floridacoastal.co/towns/navarre-beach.html): The quiet stretch of the Emerald Coast, with a long Gulf pier, a sea turtle center and miles of open dunes between Pensacola Beach and Destin.
+- [Niceville](https://www.floridacoastal.co/towns/niceville.html): A bayside town on Choctawhatchee Bay where boats tie up on the bayous and the Gulf beaches are a short drive away.
+- [Okaloosa Island](https://www.floridacoastal.co/towns/okaloosa-island.html): A short barrier island strip across the bridge from Fort Walton Beach, with a Gulf pier, a beachfront boardwalk, the Gulfarium and undeveloped land running...
+- [Panama City](https://www.floridacoastal.co/towns/panama-city.html): A bayfront city on St. Andrews Bay with a reviving downtown and the Gulf beaches a bridge away. See how Panama City scores on beaches, boating, walkability...
+- [Panama City Beach](https://www.floridacoastal.co/towns/pcb.html): Big beaches, big energy and a lot going on after dark. See how Panama City Beach scores on beaches, boating, walkability, nightlife and cost.
+- [Pensacola](https://www.floridacoastal.co/towns/pensacola.html): Florida's westernmost city, with more than 450 years of history, a lively downtown and white sand beaches across the bay.
+- [Pensacola Beach](https://www.floridacoastal.co/towns/pensacola-beach.html): A barrier island town on Santa Rosa Island, with sugar white sand and miles of protected national seashore on both sides.
+- [Perdido Key](https://www.floridacoastal.co/towns/perdido-key.html): A skinny barrier island on the Alabama line, with Gulf front condos, protected dunes on both ends and the Flora-Bama in the middle of it all.
+- [Shalimar](https://www.floridacoastal.co/towns/shalimar.html): A tiny, leafy town on Choctawhatchee Bay and its bayous, just north of Fort Walton Beach, with shady streets, docks and a waterfront golf course.
+- [Valparaiso](https://www.floridacoastal.co/towns/valparaiso.html): A small, older bayou town tucked between Eglin Air Force Base and Boggy Bayou, right next door to Niceville.
+
+### First Coast
+
+- [Atlantic Beach](https://www.floridacoastal.co/towns/atlantic-beach.html): A leafy beach town with a walkable town center it shares with Neptune Beach, and the trails of Hanna Park to the north.
+- [Crescent Beach](https://www.floridacoastal.co/towns/crescent-beach.html): A quiet strip of beach houses and condos south of St. Augustine Beach, between the ocean and the Matanzas River, with one of the widest, calmest beaches on...
+- [Fernandina Beach](https://www.floridacoastal.co/towns/fernandina.html): A Victorian downtown, shrimp boats and quiet beaches near Georgia. See how Fernandina Beach scores on beaches, boating, walkability, nightlife and cost.
+- [Jacksonville](https://www.floridacoastal.co/towns/jacksonville.html): A big, spread out river city where old oak lined neighborhoods like Riverside, Avondale and San Marco sit right on the St. Johns.
+- [Jacksonville Beach](https://www.floridacoastal.co/towns/jaxbeach.html): A lively beach town with surf, patios and a big city next door. See how Jacksonville Beach scores on beaches, boating, walkability, nightlife and cost.
+- [Neptune Beach](https://www.floridacoastal.co/towns/neptune-beach.html): A small residential beach town that shares a walkable town center with Atlantic Beach. See how Neptune Beach scores on beaches, boating, walkability...
+- [Ponte Vedra Beach](https://www.floridacoastal.co/towns/ponte-vedra-beach.html): A golf town on the ocean, home to TPC Sawgrass and The Players Championship, with tall dunes and a huge coastal preserve.
+- [St. Augustine](https://www.floridacoastal.co/towns/staug.html): The oldest city in the country, with brick streets and beaches a bridge away. See how St. Augustine scores on beaches, boating, walkability, nightlife and cost.
+- [St. Augustine Beach](https://www.floridacoastal.co/towns/st-augustine-beach.html): A relaxed beach town on Anastasia Island, ten minutes from the oldest city in the country. See how St. Augustine Beach scores on beaches, boating...
+- [Vilano Beach](https://www.floridacoastal.co/towns/vilano-beach.html): A small beach community on the north side of the St. Augustine Inlet, with a retro little main street, a fishing pier on the river and downtown St....
+
+### Florida Keys
+
+- [Islamorada](https://www.floridacoastal.co/towns/islamorada.html): The sport fishing capital of the Keys, laid back and on the water. See how Islamorada scores on beaches, boating, walkability, nightlife and cost.
+- [Key Largo](https://www.floridacoastal.co/towns/key-largo.html): The first Key off the mainland and the dive capital of the country, with a coral reef state park offshore.
+- [Key West](https://www.floridacoastal.co/towns/keywest.html): The end of the road: bikes, sunsets, live music and island time. See how Key West scores on beaches, boating, walkability, nightlife and cost.
+
+### Forgotten Coast
+
+- [Apalachicola](https://www.floridacoastal.co/towns/apalachicola.html): An oyster town with brick storefronts, shrimp boats and no hurry at all. See how Apalachicola scores on beaches, boating, walkability, nightlife and cost.
+- [Carrabelle](https://www.floridacoastal.co/towns/carrabelle.html): A small fishing town on the Forgotten Coast with a working harbor and a slow, friendly pace. See how Carrabelle scores on beaches, boating, walkability...
+- [Mexico Beach](https://www.floridacoastal.co/towns/mexico-beach.html): A small, quiet Gulf town on the Forgotten Coast that was nearly wiped out by Hurricane Michael and has steadily rebuilt around its wide, uncrowded beach.
+- [Port St. Joe](https://www.floridacoastal.co/towns/port-st-joe.html): A small town on St. Joseph Bay, known for calm clear water, bay sunsets and the beaches of Cape San Blas.
+- [St. George Island](https://www.floridacoastal.co/towns/st-george-island.html): A barrier island with no high rises, a lighthouse at its center and nine miles of state park beach at the east end.
+- [St. Marks](https://www.floridacoastal.co/towns/st-marks.html): A tiny river town where the road ends at the water, half an hour south of Tallahassee, with a Spanish fort site, a rail trail and a huge wildlife refuge...
+- [St. Teresa](https://www.floridacoastal.co/towns/st-teresa.html): A quiet line of beach houses on US 98 east of Carrabelle, beside the FSU Coastal and Marine Lab. There are no stores here, and that is the point.
+
+### Fort Myers and Sanibel
+
+- [Bonita Springs](https://www.floridacoastal.co/towns/bonita-springs.html): A city between Naples and Fort Myers with a small historic downtown, golf communities and a quiet Gulf beach on Little Hickory Island, next to Lovers Key.
+- [Cape Coral](https://www.floridacoastal.co/towns/cape-coral.html): A city of more than 400 miles of canals, where a boat in the back yard is normal and waterfront is still within reach.
+- [Captiva Island](https://www.floridacoastal.co/towns/captiva.html): A small, lush island known for shelling, sunsets and slowing down. See how Captiva Island scores on beaches, boating, walkability, nightlife and cost.
+- [Fort Myers](https://www.floridacoastal.co/towns/fort-myers.html): The City of Palms, with a brick street River District downtown and the winter homes of Edison and Ford on the river.
+- [Fort Myers Beach](https://www.floridacoastal.co/towns/fort-myers-beach.html): Seven miles of soft sand on Estero Island, rebuilding after Hurricane Ian with its beach town spirit intact.
+- [Matlacha](https://www.floridacoastal.co/towns/matlacha.html): A colorful fishing village of galleries, bait shops and bridges. See how Matlacha scores on beaches, boating, walkability, nightlife and cost.
+- [Port Charlotte](https://www.floridacoastal.co/towns/port-charlotte.html): A canal community on Charlotte Harbor with some of the most affordable waterfront homes in Southwest Florida.
+- [Punta Gorda](https://www.floridacoastal.co/towns/punta-gorda.html): A small harbor town with brick streets, a waterfront Harborwalk and sailboat canals that lead to the Gulf.
+- [Sanibel Island](https://www.floridacoastal.co/towns/sanibel-island.html): A barrier island famous for shells, with 25 miles of bike paths, no traffic lights and more than half the island preserved.
+
+### Miami and Fort Lauderdale
+
+- [Bal Harbour](https://www.floridacoastal.co/towns/bal-harbour.html): A tiny oceanfront village at the north tip of Miami Beach, known for a luxury shopping center and a quiet beach path.
+- [Dania Beach](https://www.floridacoastal.co/towns/dania-beach.html): A small, unflashy beach city right next to the Fort Lauderdale airport, with a fishing pier and a quiet beach.
+- [Fort Lauderdale](https://www.floridacoastal.co/towns/ftl.html): A boating city of canals, marinas and a lively beach. See how Fort Lauderdale scores on beaches, boating, walkability, nightlife and cost.
+- [Hallandale Beach](https://www.floridacoastal.co/towns/hallandale.html): A city of oceanfront condo towers between Fort Lauderdale and Miami, home to Gulfstream Park. See how Hallandale Beach scores on beaches, boating...
+- [Hollywood](https://www.floridacoastal.co/towns/hollywood.html): A beach city with a 2.5 mile oceanfront Broadwalk for walking and biking, plus a downtown full of murals.
+- [Lauderdale by the Sea](https://www.floridacoastal.co/towns/lauderdale-by-the-sea.html): A low rise beach village where a coral reef sits close enough to shore that you can snorkel it from the sand.
+- [Lighthouse Point](https://www.floridacoastal.co/towns/lighthouse-point.html): A boating town of deep water canals near Hillsboro Inlet, where most streets end at the water. See how Lighthouse Point scores on beaches, boating...
+- [Miami](https://www.floridacoastal.co/towns/miami.html): The mainland city on Biscayne Bay, from the towers of Brickell and Edgewater to the shady streets of Coconut Grove and the murals of Wynwood.
+- [Miami (South Beach)](https://www.floridacoastal.co/towns/southbeach.html): Art deco, ocean views and a city that never slows down. See how Miami scores on beaches, boating, walkability, nightlife and cost.
+- [North Miami Beach](https://www.floridacoastal.co/towns/north-miami-beach.html): A mainland city in north Miami-Dade with restaurants from all over the world and Oleta River State Park next door.
+- [Sunny Isles Beach](https://www.floridacoastal.co/towns/sunny-isles-beach.html): A two mile line of luxury condo towers on the ocean between Miami Beach and Fort Lauderdale. See how Sunny Isles Beach scores on beaches, boating...
+- [Wilton Manors](https://www.floridacoastal.co/towns/wilton-manors.html): A small island city ringed by the Middle River, built around the restaurants, bars and shops of Wilton Drive.
+
+### Naples and Marco
+
+- [Chokoloskee](https://www.floridacoastal.co/towns/chokoloskee.html): A tiny shell mound island at the edge of Everglades National Park, the last stop before the Ten Thousand Islands.
+- [Everglades City](https://www.floridacoastal.co/towns/everglades-city.html): A small fishing town on the Barron River at the edge of Everglades National Park, known for stone crab and as the way into the Ten Thousand Islands.
+- [Marco Island](https://www.floridacoastal.co/towns/marco-island.html): The largest of the Ten Thousand Islands, with a wide crescent beach on one side and wild mangrove country on the other.
+- [Naples](https://www.floridacoastal.co/towns/naples.html): Polished and peaceful, with golf, boating, a walkable downtown and calm Gulf beaches from the pier north to Vanderbilt Beach.
+
+### Nature Coast
+
+- [Aripeka](https://www.floridacoastal.co/towns/aripeka.html): A tiny old fishing village on Hammock Creek, straddling the Pasco and Hernando line, with stilt homes, marsh views and no stoplights.
+- [Cedar Key](https://www.floridacoastal.co/towns/cedarkey.html): A tiny island town of clam farms, kayaks and sunsets over the Gulf. See how Cedar Key scores on beaches, boating, walkability, nightlife and cost.
+- [Crystal River](https://www.floridacoastal.co/towns/crystal-river.html): A spring fed town on Kings Bay where hundreds of manatees spend the winter. See how Crystal River scores on beaches, boating, walkability, nightlife and cost.
+- [Hernando Beach](https://www.floridacoastal.co/towns/hernando-beach.html): A canal community on the Hernando County coast where most homes have a dock and a short run to the shallow Gulf flats.
+- [Homosassa](https://www.floridacoastal.co/towns/homosassa.html): An Old Florida river town known for manatees, scalloping and waterfront spots you can pull up to by boat.
+- [Horseshoe Beach](https://www.floridacoastal.co/towns/horseshoe-beach.html): A tiny fishing town at the end of the road in Dixie County, built around canals, a little Main Street and open Gulf flats.
+- [Hudson](https://www.floridacoastal.co/towns/hudson.html): A laid back Pasco County coast town with canal homes, a small beach strip of bars and seafood spots, and Tampa within an hour.
+- [Inglis](https://www.floridacoastal.co/towns/inglis.html): A small river town where the Withlacoochee, Lake Rousseau and the old barge canal meet, a few miles in from the Gulf.
+- [Keaton Beach](https://www.floridacoastal.co/towns/keaton-beach.html): A small canal and fishing community on the Taylor County coast, where the boat ramp and the flats matter more than anything on land.
+- [Ozello](https://www.floridacoastal.co/towns/ozello.html): A handful of homes on marsh islands at the end of a nine mile winding road. About as remote as the Gulf coast gets.
+- [Steinhatchee](https://www.floridacoastal.co/towns/steinhatchee.html): A river fishing village on the Big Bend where summer means scallops and the nearest stoplight is a long way off.
+- [Suwannee](https://www.floridacoastal.co/towns/suwannee.html): A canal town at the mouth of the Suwannee River, wrapped in a national wildlife refuge, where nearly every street ends at a dock.
+- [Weeki Wachee](https://www.floridacoastal.co/towns/weeki-wachee.html): A spring fed river corridor on the Nature Coast, best known for its mermaid shows and a clear blue river that runs a few miles to the Gulf.
+- [Yankeetown](https://www.floridacoastal.co/towns/yankeetown.html): An old river town on the Withlacoochee a few miles from the Gulf, with live oaks, fish camps and a big nature preserve at the end of the road.
+
+### Sarasota and Bradenton
+
+- [Anna Maria Island](https://www.floridacoastal.co/towns/ami.html): Old Florida on a small island, with no high rises and a free trolley. See how Anna Maria Island scores on beaches, boating, walkability, nightlife and cost.
+- [Bradenton](https://www.floridacoastal.co/towns/bradenton.html): A river city with a long Riverwalk, spring training baseball and the Anna Maria Island beaches 20 minutes west.
+- [Bradenton Beach](https://www.floridacoastal.co/towns/bradenton-beach.html): The south end of Anna Maria Island, with a historic fishing pier, a walkable Bridge Street and water on both sides.
+- [Cortez](https://www.floridacoastal.co/towns/cortez.html): One of the last working fishing villages in Florida, with fish houses on the bay that date back to the 1880s.
+- [Englewood](https://www.floridacoastal.co/towns/englewood.html): A laid back Gulf town with a small old downtown and beaches on Manasota Key, known for shark teeth. See how Englewood scores on beaches, boating...
+- [Longboat Key](https://www.floridacoastal.co/towns/longboat.html): A quiet, polished barrier island minutes from Sarasota's arts scene. See how Longboat Key scores on beaches, boating, walkability, nightlife and cost.
+- [Sarasota](https://www.floridacoastal.co/towns/sarasota.html): The arts capital of the Gulf coast, with an opera, a ballet, The Ringling museum, Lido Beach just over the bridge and Siesta Key's famous sand minutes away.
+- [Siesta Key](https://www.floridacoastal.co/towns/siesta-key.html): An island of quartz white sand so fine it stays cool underfoot, with a small, lively village at the north end.
+- [Venice](https://www.floridacoastal.co/towns/venice.html): A 1920s planned town of palm lined avenues you can walk from downtown to the Gulf, with newer mainland neighborhoods and the Legacy Trail just over the bridge.
+
+### Space Coast
+
+- [Cape Canaveral](https://www.floridacoastal.co/towns/cape-canaveral.html): A small, low key beach city at the north end of the barrier island, between the cruise port and Cocoa Beach, with a quiet beach and launch views from the jetty.
+- [Cocoa Beach](https://www.floridacoastal.co/towns/cocoa.html): A classic surf town where you can watch rocket launches from the sand. See how Cocoa Beach scores on beaches, boating, walkability, nightlife and cost.
+- [Cocoa Village](https://www.floridacoastal.co/towns/cocoa-village.html): The old brick downtown of Cocoa on the Indian River, with shady streets, pubs, a historic playhouse and a riverfront park that hosts concerts.
+- [Indialantic](https://www.floridacoastal.co/towns/indialantic.html): A small oceanside town with a boardwalk, a couple of surf shops and rocket launches you can watch from the sand.
+- [Indian Harbour Beach](https://www.floridacoastal.co/towns/indian-harbour-beach.html): A small, settled beach town between Satellite Beach and Indialantic, with ocean access on one side, Banana River canals on the other and a big park in the...
+- [Melbourne](https://www.floridacoastal.co/towns/melbourne.html): The Space Coast's main mainland city on the Indian River, with two walkable old downtowns, an arts district, its own airport and the beach 15 minutes away.
+- [Melbourne Beach](https://www.floridacoastal.co/towns/melbourne-beach.html): One of the oldest beach towns on the Space Coast, a few quiet streets between the ocean and the Indian River.
+- [Merritt Island](https://www.floridacoastal.co/towns/merritt-island.html): A big, leafy island between the Indian and Banana Rivers, full of canal homes and boat docks, with the space center and a huge wildlife refuge at its north end.
+- [Palm Bay](https://www.floridacoastal.co/towns/palm-bay.html): The biggest city on the Space Coast, with lots of land, newer homes and some of the lowest prices near the beach.
+- [Rockledge](https://www.floridacoastal.co/towns/rockledge.html): A quiet river city just south of Cocoa, known for the oak shaded historic homes along Rockledge Drive and newer neighborhoods toward Viera.
+- [Satellite Beach](https://www.floridacoastal.co/towns/satellite-beach.html): A residential beach town between the ocean and the Banana River, with surf breaks, parks and front row launch views.
+- [Titusville](https://www.floridacoastal.co/towns/titusville.html): The town across the river from the launch pads, with the best rocket views anywhere and a huge wildlife refuge next door.
+- [West Melbourne](https://www.floridacoastal.co/towns/west-melbourne.html): A fast growing inland city with newer neighborhoods and big box shopping, 20 minutes from the beach.
+
+### St. Pete and Clearwater
+
+- [Belleair Beach](https://www.floridacoastal.co/towns/belleair-beach.html): A small, residential barrier island town on Sand Key, with the Gulf on one side and docks on the Intracoastal on the other.
+- [Clearwater](https://www.floridacoastal.co/towns/clearwater.html): The mainland city behind Clearwater Beach, with a rebuilt downtown waterfront and the sand a bridge away.
+- [Clearwater Beach](https://www.floridacoastal.co/towns/clearwaterbeach.html): Soft white sand, a walkable beach strip and nightly sunset gatherings at Pier 60. See how Clearwater Beach scores on beaches, boating, walkability...
+- [Dunedin](https://www.floridacoastal.co/towns/dunedin.html): A walkable, laid back downtown near some of the Gulf's best island beaches. See how Dunedin scores on beaches, boating, walkability, nightlife and cost.
+- [Gulfport](https://www.floridacoastal.co/towns/gulfport.html): An artsy little waterfront town with a slow pace and a friendly main street. See how Gulfport scores on beaches, boating, walkability, nightlife and cost.
+- [Holiday](https://www.floridacoastal.co/towns/holiday.html): A modest, affordable stretch of Pasco coast where canal neighborhoods run out to the Anclote River and the Gulf.
+- [Indian Rocks Beach](https://www.floridacoastal.co/towns/indian-rocks-beach.html): A low key beach town of cottages and small condos, with public beach access at the end of nearly every street.
+- [Indian Shores](https://www.floridacoastal.co/towns/indian-shores.html): A narrow strip of Gulf front condos and beach cottages in the middle of the Pinellas barrier islands, with the Intracoastal on one side and the Gulf a short...
+- [Madeira Beach](https://www.floridacoastal.co/towns/madeira-beach.html): Locals call it Mad Beach: a casual Gulf town built around the fishing boats and boardwalk at John's Pass.
+- [New Port Richey](https://www.floridacoastal.co/towns/new-port-richey.html): A small river town with a 1920s downtown that has been adding breweries, restaurants and a restored theater.
+- [North Redington Beach](https://www.floridacoastal.co/towns/north-redington-beach.html): A tidy little beach town where resorts and condo towers line the Gulf and quiet single family streets reach out into the bay on narrow fingers of land.
+- [Oldsmar](https://www.floridacoastal.co/towns/oldsmar.html): A small, tidy city at the top of Old Tampa Bay, with bayfront parks and the fastest airport run in Pinellas.
+- [Palm Harbor](https://www.floridacoastal.co/towns/palm-harbor.html): A leafy, established town in north Pinellas with an old downtown on the Pinellas Trail and quiet waterfront villages on St. Joseph Sound.
+- [Port Richey](https://www.floridacoastal.co/towns/port-richey.html): A small, unfussy river town where the Pithlachascotee meets the Gulf, built around canals, docks and fishing boats.
+- [Redington Beach](https://www.floridacoastal.co/towns/redington-beach.html): A small, almost entirely residential beach town of single family homes, where the streets are quiet and the Gulf is at the end of the block.
+- [Redington Shores](https://www.floridacoastal.co/towns/redington-shores.html): A small barrier island town with a big public beach park, bay side canal streets full of boat lifts, and a hometown calendar of picnics and holiday parades.
+- [Safety Harbor](https://www.floridacoastal.co/towns/safety-harbor.html): A small town on Old Tampa Bay with oak shaded streets, a historic spa and a Main Street full of local shops.
+- [St. Pete Beach](https://www.floridacoastal.co/towns/st-pete-beach.html): A wide Gulf beach anchored by the pink Don CeSar hotel, with the old fishing village of Pass-a-Grille at its tip.
+- [St. Petersburg](https://www.floridacoastal.co/towns/st-petersburg.html): A sunny waterfront city with a walkable downtown, the Dalí Museum, murals on every block and Gulf beaches 20 minutes away.
+- [Tarpon Springs](https://www.floridacoastal.co/towns/tarpon-springs.html): A working sponge port with Greek bakeries and restaurants along the docks and bayous winding through town.
+- [Tierra Verde](https://www.floridacoastal.co/towns/tierra-verde.html): A cluster of canal islands at the mouth of Tampa Bay, between St. Pete Beach and Fort De Soto, made for people who live on their boats.
+- [Treasure Island](https://www.floridacoastal.co/towns/treasure-island.html): A barrier island with one of the widest beaches on the Gulf. See how Treasure Island scores on beaches, boating, walkability, nightlife and cost.
+
+### Tampa area
+
+- [Apollo Beach](https://www.floridacoastal.co/towns/apollo-beach.html): A canal community on Tampa Bay where a lot of back yards have a boat lift. See how Apollo Beach scores on beaches, boating, walkability, nightlife and cost.
+- [Gibsonton](https://www.floridacoastal.co/towns/gibsonton.html): An old river town on the Alafia where carnival and circus families once wintered, now a growing and affordable South Shore suburb with water close by.
+- [Ruskin](https://www.floridacoastal.co/towns/ruskin.html): A fast growing bayside community on the Little Manatee River, with some of the lowest prices near Tampa Bay.
+- [Sun City Center](https://www.floridacoastal.co/towns/sun-city-center.html): A golf cart community inland from Tampa Bay with more than 100 clubs. Most homes here are age restricted to 55 and over.
+- [Tampa](https://www.floridacoastal.co/towns/tampa.html): The big city of the Gulf coast: a downtown riverwalk, historic Ybor City, pro sports and a major airport.
+
+### The Palm Beaches
+
+- [Boca Raton](https://www.floridacoastal.co/towns/boca-raton.html): A polished city of pink Mediterranean buildings, big parks and beaches kept natural behind a line of dunes.
+- [Boynton Beach](https://www.floridacoastal.co/towns/boynton-beach.html): A big, easygoing city with a busy harbor marina at the inlet, a growing downtown on Ocean Avenue and wetlands to the west.
+- [Delray Beach](https://www.floridacoastal.co/towns/delray.html): A walkable downtown that runs right to the ocean and stays up late. See how Delray Beach scores on beaches, boating, walkability, nightlife and cost.
+- [Highland Beach](https://www.floridacoastal.co/towns/highland-beach.html): A three mile strip of oceanfront condos and homes between Boca Raton and Delray Beach, with no shops and no crowds.
+- [Juno Beach](https://www.floridacoastal.co/towns/juno-beach.html): A small, low key oceanfront town known for its long fishing pier, wide sandy beach and the sea turtles that nest there every summer.
+- [Jupiter](https://www.floridacoastal.co/towns/jupiter.html): Clear inlet water, a red lighthouse and a relaxed, outdoorsy pace. See how Jupiter scores on beaches, boating, walkability, nightlife and cost.
+- [Lake Park](https://www.floridacoastal.co/towns/lake-park.html): A compact, older town on the Intracoastal with a busy public marina, a small downtown on Park Avenue and the inlet just to the south.
+- [Lake Worth Beach](https://www.floridacoastal.co/towns/lake-worth-beach.html): An artsy little city with a lively downtown of bungalows and storefronts, a bridge over the lagoon to a classic public beach and pier.
+- [Lantana](https://www.floridacoastal.co/towns/lantana.html): A small, old Florida town on the Intracoastal with a little public beach across the bridge and the state's oldest waterfront restaurant.
+- [North Palm Beach](https://www.floridacoastal.co/towns/north-palm-beach.html): A village wrapped in water, between the Intracoastal and Lake Worth, with a state park beach across the bridge.
+- [Palm Beach](https://www.floridacoastal.co/towns/palm-beach.html): A barrier island of clipped hedges, grand estates and Worth Avenue, with a bike trail along the lake.
+- [Palm Beach Gardens](https://www.floridacoastal.co/towns/palm-beach-gardens.html): A green, golf centered city a few miles inland, home to PGA National and a lot of shopping and dining.
+- [Palm Beach Shores](https://www.floridacoastal.co/towns/palm-beach-shores.html): An eleven block town at the south tip of Singer Island, wrapped by the ocean, the Palm Beach Inlet and the Intracoastal, with a 1950s beach town feel.
+- [Riviera Beach](https://www.floridacoastal.co/towns/riviera-beach.html): A working port city with a big public marina, Peanut Island offshore and the beaches of Singer Island across the bridge.
+- [Tequesta](https://www.floridacoastal.co/towns/tequesta.html): A small riverfront village at the top of Palm Beach County, where the Loxahatchee River meets the Intracoastal and the beach is a short bridge away.
+- [West Palm Beach](https://www.floridacoastal.co/towns/west-palm-beach.html): The downtown of Palm Beach County, with Clematis Street, a waterfront, the Norton Museum of Art and a Brightline train station.
+
+### Treasure Coast
+
+- [Fort Pierce](https://www.floridacoastal.co/towns/fortpierce.html): An affordable working waterfront with a big Saturday market. See how Fort Pierce scores on beaches, boating, walkability, nightlife and cost.
+- [Hobe Sound](https://www.floridacoastal.co/towns/hobe-sound.html): A low key village between Stuart and Jupiter, surrounded by a big state park, a wildlife refuge and some of the prettiest beaches on the coast.
+- [Hutchinson Island](https://www.floridacoastal.co/towns/hutchinson-island.html): The long barrier island off Stuart, Jensen Beach and Fort Pierce, with free beach parking, low rise condos and miles of quiet sand.
+- [Indian River Shores](https://www.floridacoastal.co/towns/indian-river-shores.html): A quiet barrier island town north of Vero Beach, with low rise oceanfront living, big private clubs and the lagoon on the other side.
+- [Jensen Beach](https://www.floridacoastal.co/towns/jensen-beach.html): A small, colorful river town with a Caribbean streak and uncrowded Hutchinson Island beaches across the causeway.
+- [Palm City](https://www.floridacoastal.co/towns/palm-city.html): A green, spread out community across the St. Lucie River from Stuart, with canal homes, golf, big sports parks and easy highway access.
+- [Port Salerno](https://www.floridacoastal.co/towns/port-salerno.html): An old fishing village on the Manatee Pocket near the St. Lucie Inlet, with working docks, an artists' district and a waterfront boardwalk.
+- [Port St. Lucie](https://www.floridacoastal.co/towns/port-st-lucie.html): One of the fastest growing cities in Florida: newer homes, golf, Mets spring training and beaches 20 minutes east.
+- [Sebastian](https://www.floridacoastal.co/towns/sebastian.html): A riverfront fishing town on the Indian River Lagoon, near the country's first wildlife refuge and a famous surf inlet.
+- [Sewall's Point](https://www.floridacoastal.co/towns/sewalls-point.html): A small, leafy peninsula town between the St. Lucie and Indian rivers, with deep water lots, quiet streets and the beach one bridge away.
+- [Stuart](https://www.floridacoastal.co/towns/stuart.html): The Sailfish Capital of the World, with a small historic downtown and a riverwalk on the St. Lucie River.
+- [Vero Beach](https://www.floridacoastal.co/towns/vero-beach.html): A quietly polished town with strict height limits, an oceanside village of shops and a serious arts scene.
+
+## Optional
+
+- [About us](https://www.floridacoastal.co/about.html)
+- [For local agents](https://www.floridacoastal.co/agents.html)
+- [Privacy](https://www.floridacoastal.co/privacy.html)
