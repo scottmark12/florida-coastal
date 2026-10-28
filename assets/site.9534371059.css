@@ -876,3 +876,6 @@ body:has(.fs){overflow:hidden}
 .savebox.svwalk .sv-hd b{font-size:19px}
 .savebox.svwalk .sv-hd span{font-size:13.5px}
 .savebox.svwalk input[type=email],.savebox.svwalk .btn{height:44px}
+
+/* ===== Oct 28 2026 patch: style/priorities toggle ===== */
+.pgtog{display:inline-flex;gap:4px;padding:4px;margin:0 0 18px;background:var(--sand,#f3efe6);border-radius:999px;border:1px solid var(--line,#e2ddd2)}.pgtog a{padding:8px 18px;border-radius:999px;font-weight:700;font-size:14px;color:var(--ink,#152a2e);text-decoration:none}.pgtog a.on{background:var(--accent,#c4561c);color:#fff}.pgtog a:not(.on):hover{background:#fff}.sl-note{font-size:12.5px;color:var(--muted,#5b6b6e);margin:4px 0 10px}@media (max-width:760px){.pgtog{display:flex;margin:4px 0 14px}.pgtog a{flex:1;text-align:center;padding:9px 10px}}
