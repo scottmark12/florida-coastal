@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
+Disallow: /mail/
 
 Sitemap: https://www.floridacoastal.co/sitemap.xml
