@@ -1,0 +1,109 @@
+// Florida Coastal email sender.
+// Runs every minute (pg_cron) and right after a lead comes in. Builds the
+// top 5 email + Shortlist PDF (and the day 3 / day 7 follow ups) and hands
+// them to the Zapier hook that sends from hello@floridacoastal.co.
+import { createClient } from "npm:@supabase/supabase-js@2";
+import * as PDF from "npm:pdf-lib@1.17.1";
+import fontkit from "npm:@pdf-lib/fontkit@1.1.1";
+import { render, buildGuideEmail, buildNoteEmail, pickTowns } from "./render.js";
+
+const SITE = "https://www.floridacoastal.co";
+const sb = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!, { auth: { persistSession: false } });
+
+async function bytes(url: string): Promise<Uint8Array> {
+  const r = await fetch(url);
+  if (!r.ok) throw new Error(`fetch ${url} -> ${r.status}`);
+  return new Uint8Array(await r.arrayBuffer());
+}
+let cache: any = null;
+async function assets() {
+  if (cache && Date.now() - cache.at < 10 * 60 * 1000) return cache;
+  const [towns, fr, fs, dr, db, logo, mark] = await Promise.all([
+    fetch(`${SITE}/mail/towns.json`).then((r) => r.json()),
+    bytes(`${SITE}/mail/fonts/Fraunces-Regular.ttf`), bytes(`${SITE}/mail/fonts/Fraunces-SemiBold.ttf`),
+    bytes(`${SITE}/mail/fonts/DMSans-Regular.ttf`), bytes(`${SITE}/mail/fonts/DMSans-Bold.ttf`),
+    bytes(`${SITE}/img/logo.png`), bytes(`${SITE}/img/logo-mark.png`),
+  ]);
+  cache = { at: Date.now(), towns, fonts: { frauncesRegular: fr, frauncesSemiBold: fs, dmRegular: dr, dmBold: db }, logo, mark };
+  return cache;
+}
+
+async function upload(path: string, body: Uint8Array | string, type: string) {
+  const { error } = await sb.storage.from("shortlists").upload(path, body, { contentType: type, upsert: true });
+  if (error) throw new Error("upload: " + error.message);
+  const { data, error: e2 } = await sb.storage.from("shortlists").createSignedUrl(path, 60 * 60 * 24 * 30);
+  if (e2) throw new Error("sign: " + e2.message);
+  return data.signedUrl;
+}
+
+async function processRow(row: any, settings: any, dry: boolean) {
+  const { data: lead, error } = await sb.from("fc_leads").select("*").eq("id", row.lead_id).single();
+  if (error || !lead) throw new Error("lead not found");
+  const enabled = { top5: settings.top5_enabled, guide: settings.guide_enabled && !!settings.guide_url, note: settings.note_enabled }[row.step as "top5"];
+  if (!enabled && !dry) return { status: "hold", error: "step turned off in fc_email_settings" };
+  if (row.step !== "top5" && !["new", "test"].includes(lead.status)) return { status: "skipped", error: `lead status is ${lead.status}` };
+
+  const a = await assets();
+  let mail: any, attachment_url: string | null = null, attachment_name: string | null = null;
+  if (row.step === "top5") {
+    const out = await render(lead, a.towns, {
+      PDFDocument: PDF.PDFDocument, rgb: PDF.rgb, fontkit, ops: PDF,
+      fonts: a.fonts, logoPng: a.logo, markPng: a.mark, loadImage: bytes,
+    });
+    mail = out;
+    attachment_name = out.filename;
+    attachment_url = await upload(`top5/${crypto.randomUUID()}/${out.filename}`, out.pdf, "application/pdf");
+  } else {
+    const picks = pickTowns(lead, a.towns);
+    mail = row.step === "guide" ? buildGuideEmail(lead, picks, settings.guide_url) : buildNoteEmail(lead, picks);
+    if (row.step === "guide" && settings.guide_url) { attachment_url = settings.guide_url; attachment_name = "Florida-Coastal-Move-and-Belong-Guide.pdf"; }
+  }
+  const preview_url = await upload(`preview/${row.id}-${crypto.randomUUID()}.html`, mail.html, "text/html");
+
+  if (dry || !settings.send_hook) return { status: "ready", pdf_url: attachment_url, preview_url, error: dry ? "dry run" : "no send hook set" };
+
+  const r = await fetch(settings.send_hook, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      to: lead.email, subject: mail.subject, html: mail.html, text: mail.text,
+      from_name: "Florida Coastal", reply_to: "hello@floridacoastal.co",
+      attachment_url, attachment_name, lead_id: lead.id, step: row.step,
+    }),
+  });
+  if (!r.ok) throw new Error(`send hook ${r.status}: ${(await r.text()).slice(0, 200)}`);
+  return { status: "sent", sent_at: new Date().toISOString(), pdf_url: attachment_url, preview_url, error: null };
+}
+
+Deno.serve(async (req) => {
+  if (req.headers.get("x-fc-secret") !== Deno.env.get("FC_SEND_SECRET")) return new Response("unauthorized", { status: 401 });
+  const body = await req.json().catch(() => ({}));
+  const dry = !!body.dry;
+  const { data: settings } = await sb.from("fc_email_settings").select("*").eq("id", 1).single();
+
+  let rows: any[] = [];
+  if (body.send_id) {
+    const { data } = await sb.from("fc_sends").select("*").eq("id", body.send_id);
+    rows = data || [];
+  } else {
+    const { data: due } = await sb.from("fc_sends").select("id").eq("status", "queued").lte("send_at", new Date().toISOString()).order("send_at").limit(body.limit || 10);
+    for (const d of due || []) {
+      const { data: claimed } = await sb.from("fc_sends").update({ status: "sending" }).eq("id", d.id).eq("status", "queued").select("*");
+      if (claimed && claimed[0]) rows.push(claimed[0]);
+    }
+  }
+
+  const results: any[] = [];
+  for (const row of rows) {
+    try {
+      const res = await processRow(row, settings, dry);
+      await sb.from("fc_sends").update({ ...res, attempts: row.attempts + 1 }).eq("id", row.id);
+      results.push({ id: row.id, step: row.step, ...res });
+    } catch (e) {
+      const attempts = row.attempts + 1, msg = String((e as Error).message || e);
+      const retry = attempts < 3;
+      await sb.from("fc_sends").update({ status: retry ? "queued" : "failed", attempts, error: msg, send_at: new Date(Date.now() + 10 * 60 * 1000).toISOString() }).eq("id", row.id);
+      results.push({ id: row.id, step: row.step, error: msg });
+    }
+  }
+  return new Response(JSON.stringify({ processed: results.length, results }), { headers: { "Content-Type": "application/json" } });
+});
