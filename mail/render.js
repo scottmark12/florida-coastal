@@ -107,6 +107,14 @@ export function buildEmail(lead, picks, opts = {}) {
     <h1 class="hero-h" style="margin:0;font-family:${F_HEAD};font-weight:400;font-size:46px;line-height:1.1;letter-spacing:-.01em;color:${C.ink};">${saved ? `Your saved<br>Florida towns` : `Your top ${picks.length}<br>Florida towns`}</h1>
     <p style="margin:18px 0 0 0;font-family:${F_BODY};font-size:17px;line-height:1.6;color:${C.muted};">${name ? `Hi ${esc(name)}, here` : "Here"} ${saved ? `are the ${picks.length === 1 ? "town" : picks.length + " towns"} you looked at, with the honest details on each.` : `are the ${picks.length === 5 ? "five" : picks.length} towns that fit how you want to live, with the honest details on each.`}${hasPdf ? ` Your personal Florida Shortlist is attached as a PDF${picks.length > 1 ? ", with " + (picks.length === 5 ? "all five" : "them") + " side by side" : ""}. It's a good one to print or share.` : ""}</p>
   </td></tr>
+  ${opts.guideUrl ? `<tr><td class="px" style="padding:26px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.tint};border-radius:12px;"><tr>
+    <td width="112" valign="top" style="padding:18px 0 18px 18px;"><a href="${opts.guideUrl}"><img src="${SITE}/img/guide/cover-thumb.jpg" width="94" alt="The Move and Belong Guide" style="display:block;width:94px;height:auto;border:0;"></a></td>
+    <td valign="top" style="padding:18px 18px 18px 16px;font-family:${F_BODY};">
+      <p style="margin:0 0 4px 0;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${C.rust};">Your free guide</p>
+      <p style="margin:0 0 6px 0;font-family:${F_HEAD};font-size:22px;line-height:1.2;color:${C.ink};">The Move and Belong Guide</p>
+      <p style="margin:0 0 10px 0;font-size:14.5px;line-height:1.5;color:${C.ink};">Finding the town is the easy part. This is how to go from new in town to knowing people in your first 90 days.</p>
+      <a href="${opts.guideUrl}" style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:${C.sea};text-decoration:none;">Read the guide &rarr;</a>
+    </td></tr></table></td></tr>` : ""}
   ${picks.map(townBlock).join("")}
   <tr><td class="px" style="padding:40px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-left:3px solid ${C.rust};padding:4px 0 4px 18px;">
     <p style="margin:0 0 6px 0;font-family:${F_BODY};font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${C.rust};">The honest part</p>
@@ -128,6 +136,7 @@ export function buildEmail(lead, picks, opts = {}) {
 </table></td></tr></table></body></html>`;
   const text = [`${name ? `Hi ${name}, here` : "Here"} are your top 5 Florida towns:`, "",
     ...picks.map((t, i) => `${i + 1}. ${t.name} (${t.coast}, ${t.area})\n${t.blurb}\nMedian home: ${t.price || "ask us"} | Airport: ${t.airport} | Heads up: ${t.watch}\n${link(t)}\n`),
+    ...(opts.guideUrl ? [`Your free Move and Belong Guide: ${opts.guideUrl}`, ""] : []),
     "Questions? Just reply. We read every message.", "", "Mark and Betsy Scott", "Florida Coastal", SITE].join("\n");
   return { subject, html, text };
 }
@@ -402,7 +411,7 @@ export async function buildPdf(lead, picks, deps) {
 export async function render(lead, towns, deps) {
   const picks = pickTowns(lead, towns, deps.now || new Date());
   if (picks.length === 0) throw new Error("No matching towns for lead " + lead.id);
-  const email = buildEmail(lead, picks, { hasPdf: true });
+  const email = buildEmail(lead, picks, { hasPdf: true, guideUrl: deps.guideUrl });
   const pdf = await buildPdf(lead, picks, { coverUrl: picks[0].region_img, ...deps });
   const nm = firstName(lead.name);
   return { ...email, pdf, filename: `${nm ? nm + "s-" : ""}Florida-Shortlist.pdf`.replace(/[^A-Za-z0-9.-]/g, "") , picks };
@@ -429,25 +438,25 @@ const P = (t, extra = "") => `<p style="margin:0 0 16px 0;font-family:${F_BODY};
 
 export function buildGuideEmail(lead, picks, guideUrl) {
   const name = firstName(lead.name);
-  const subject = "You picked your towns. Here's how to belong there.";
-  const top = picks[0] ? esc(picks[0].name) : "your new town";
+  const subject = "Have you picked your three yet?";
+  const top = picks[0] ? esc(picks[0].name) : "";
+  const url = guideUrl || SITE + "/articles/first-90-days.html";
   const items = [
-    ["Pick three groups.", "Three groups that meet on a schedule, from three parts of life. Each one opens a different circle."],
-    ["Your first 90 days.", "What to do in month one, two and three so the town starts to feel like yours."],
-    ["The paperwork.", "Driver license within 30 days, car registration within 10, and the homestead tax break by March 1."],
-    ["Florida groups worth knowing.", "Turtle patrols, Master Naturalists, Master Gardeners, Surfrider and more, by name."],
+    ["Serve something.", "Rotary, Kiwanis, the chamber, Habitat. You meet the people who run the town."],
+    ["Believe something.", "A church or synagogue, a small group. A weekly rhythm and real care for newcomers."],
+    ["Play something.", "A pickleball league, a run club, a fishing or sailing club. The same faces every week."],
   ].map(([a, b]) => `<tr><td valign="top" width="22" style="padding:4px 0 12px 0;font-family:${F_HEAD};font-size:18px;color:${C.rust};">&bull;</td><td style="padding:4px 0 12px 0;font-family:${F_BODY};font-size:15px;line-height:1.55;color:${C.ink};"><b>${a}</b> ${b}</td></tr>`).join("");
   const rows = `
 <tr><td class="px" style="padding:34px 40px 6px 40px;">
-  <p style="margin:0 0 12px 0;font-family:${F_BODY};font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:${C.rust};">The Move and Belong Guide</p>
-  <h1 class="hero-h" style="margin:0 0 18px 0;font-family:${F_HEAD};font-weight:400;font-size:40px;line-height:1.12;color:${C.ink};">Finding the town is the easy part.</h1>
-  ${P(`${name ? `Hi ${esc(name)}, a` : "A"} few days ago you found your five${picks[0] ? `, with ${top} at the top` : ""}. The harder question is how you go from new in town to knowing people at the market. We wrote a short guide for exactly that, and your copy is ${guideUrl ? "attached and linked below" : "linked below"}.`)}
+  <p style="margin:0 0 12px 0;font-family:${F_BODY};font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:${C.rust};">From the Move and Belong Guide</p>
+  <h1 class="hero-h" style="margin:0 0 18px 0;font-family:${F_HEAD};font-weight:400;font-size:40px;line-height:1.12;color:${C.ink};">Pick your three.</h1>
+  ${P(`${name ? `Hi ${esc(name)}, a` : "A"} few days ago you found your five${top ? `, with ${top} at the top` : ""}. If you only do one thing from the guide, do this: pick three groups that meet in person on a schedule, from three different parts of life. You can even look them up before you move.`)}
 </td></tr>
 <tr><td class="px" style="padding:6px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${items}</table></td></tr>
-<tr><td class="px" align="left" style="padding:14px 40px 34px 40px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${C.rust};border-radius:999px;"><a href="${guideUrl || SITE + "/articles/first-90-days.html"}" style="display:inline-block;padding:14px 30px;font-family:${F_BODY};font-size:15px;font-weight:700;color:${C.white};text-decoration:none;">Read the guide</a></td></tr></table>
-  <p style="margin:22px 0 0 0;font-family:${F_BODY};font-size:15px;line-height:1.6;color:${C.muted};">Questions about any of your towns? Just reply.<br><span style="font-family:${F_HEAD};font-style:italic;color:${C.rustDark};">Mark and Betsy Scott</span></p></td></tr>`;
-  const text = `${name ? `Hi ${name}, a` : "A"} few days ago you found your five. Here's our guide to going from new in town to knowing people: ${guideUrl || SITE + "/articles/first-90-days.html"}\n\nQuestions? Just reply.\nMark and Betsy Scott\nFlorida Coastal`;
-  return { subject, html: shell(subject, "Three groups, your first 90 days and the paperwork, in one short guide.", rows), text };
+<tr><td class="px" align="left" style="padding:14px 40px 34px 40px;">${P("Search your town plus the thing plus \"club\" or \"league\". Then go to the next meeting, alone if you have to.")}<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${C.rust};border-radius:999px;"><a href="${url}" style="display:inline-block;padding:14px 30px;font-family:${F_BODY};font-size:15px;font-weight:700;color:${C.white};text-decoration:none;">Open the guide</a></td></tr></table>
+  <p style="margin:22px 0 0 0;font-family:${F_BODY};font-size:15px;line-height:1.6;color:${C.muted};">Want help finding the groups in your town? Just reply.<br><span style="font-family:${F_HEAD};font-style:italic;color:${C.rustDark};">Mark and Betsy Scott</span></p></td></tr>`;
+  const text = `${name ? `Hi ${name}, a` : "A"} few days ago you found your five. If you only do one thing from the Move and Belong Guide, pick three groups that meet in person on a schedule: serve something, believe something, play something.\n\nThe guide: ${url}\n\nWant help finding the groups in your town? Just reply.\nMark and Betsy Scott\nFlorida Coastal`;
+  return { subject, html: shell(subject, "The one thing from the guide we'd do this week.", rows), text };
 }
 
 export function buildNoteEmail(lead, picks) {

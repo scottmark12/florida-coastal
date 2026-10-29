@@ -49,6 +49,7 @@ async function processRow(row: any, settings: any, dry: boolean) {
     const out = await render(lead, a.towns, {
       PDFDocument: PDF.PDFDocument, rgb: PDF.rgb, fontkit, ops: PDF,
       fonts: a.fonts, logoPng: a.logo, markPng: a.mark, loadImage: bytes,
+      guideUrl: settings.guide_enabled && settings.guide_url ? settings.guide_url : null,
     });
     mail = out;
     attachment_name = out.filename;
@@ -56,7 +57,7 @@ async function processRow(row: any, settings: any, dry: boolean) {
   } else {
     const picks = pickTowns(lead, a.towns);
     mail = row.step === "guide" ? buildGuideEmail(lead, picks, settings.guide_url) : buildNoteEmail(lead, picks);
-    if (row.step === "guide" && settings.guide_url) { attachment_url = settings.guide_url; attachment_name = "Florida-Coastal-Move-and-Belong-Guide.pdf"; }
+    // the guide itself goes out as a link in the top 5 email; day 3 is a short nudge with no attachment
   }
   const preview_url = await upload(`preview/${row.id}-${crypto.randomUUID()}.html`, mail.html, "text/html");
 
@@ -75,10 +76,11 @@ async function processRow(row: any, settings: any, dry: boolean) {
 }
 
 Deno.serve(async (req) => {
-  if (req.headers.get("x-fc-secret") !== Deno.env.get("FC_SEND_SECRET")) return new Response("unauthorized", { status: 401 });
+  const { data: settings } = await sb.from("fc_email_settings").select("*").eq("id", 1).single();
+  const secret = settings && settings.call_secret;
+  if (!secret || req.headers.get("x-fc-secret") !== secret) return new Response("unauthorized", { status: 401 });
   const body = await req.json().catch(() => ({}));
   const dry = !!body.dry;
-  const { data: settings } = await sb.from("fc_email_settings").select("*").eq("id", 1).single();
 
   let rows: any[] = [];
   if (body.send_id) {
