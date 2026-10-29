@@ -1215,3 +1215,17 @@ body,header.top,.tnav,.cmp-head{background:var(--page)}
 svg.mm .stlabel{font-size:15px}
 .dot{stroke-width:2}
 .citytxt{fill:#5E6D72;stroke:#F3F1E4}
+
+/* Oct 29 2026: Vibe Map photo picker (desktop panel) */
+.vp-pgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.vp-pc{position:relative;display:block;padding:0;border:2px solid transparent;border-radius:8px;overflow:hidden;aspect-ratio:4/3.3;background:var(--paper);cursor:pointer;text-align:left;color:#fff;transition:transform .15s,box-shadow .15s,border-color .15s}
+.vp-pc:hover{background:var(--paper);transform:translateY(-2px);box-shadow:0 8px 18px rgba(20,40,45,.16);border-color:var(--vc)}
+.vp-pc:focus-visible{outline:none;border-color:var(--vc);box-shadow:0 0 0 2px var(--vc)}
+.vp-pc img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.vp-pc::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,22,25,0) 38%,rgba(10,22,25,.84))}
+.vp-pc span{position:absolute;left:10px;right:10px;bottom:8px;z-index:1}
+.vp-pc b{display:block;font:600 14.5px/1.15 var(--ui);color:#fff}
+.vp-pc small{display:block;font:400 11.5px/1.25 var(--ui);color:rgba(255,255,255,.9);margin-top:2px}
+.vp-pc em{position:absolute;top:8px;left:8px;z-index:1;display:flex;align-items:center;gap:5px;font:600 11.5px var(--ui);font-style:normal;color:var(--ink);background:rgba(255,255,255,.93);border-radius:4px;padding:2px 6px}
+.vp-pc em i{width:8px;height:8px;border-radius:4px}
+.pcred+h3,ul.pcred+h3{margin-top:22px}
