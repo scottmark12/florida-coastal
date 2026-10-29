@@ -1208,3 +1208,10 @@ body,header.top,.tnav,.cmp-head{background:var(--page)}
 .vp-c.on[style*="--vc"] i{background:#fff!important}
 .vp-head[style*="--vc"]{background:color-mix(in srgb,var(--vc) 13%,var(--page));border-bottom-color:color-mix(in srgb,var(--vc) 30%,var(--line))}
 .vp-head[style*="--vc"] h3 i{box-shadow:0 0 0 3px color-mix(in srgb,var(--vc) 25%,transparent)}
+
+/* Oct 29 2026: green terrain base map */
+.terr-sea{fill:#C3DFE3}
+.stlabel{font-family:var(--body);font-size:10px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;fill:#9C9177;text-anchor:middle;pointer-events:none}
+svg.mm .stlabel{font-size:15px}
+.dot{stroke-width:2}
+.citytxt{fill:#5E6D72;stroke:#F3F1E4}
