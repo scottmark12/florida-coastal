@@ -1084,3 +1084,25 @@ body,header.top,.tnav,.cmp-head{background:var(--page)}
 /* Map town cards: ink button, so the only orange on the map page is "See your top 5 towns" */
 .smap .btn-accent,.ss-go{background:var(--ink);border-color:var(--ink);color:#fff}
 .smap .btn-accent:hover,.ss-go:hover{background:#0c1d20;border-color:#0c1d20}
+
+/* ===== Oct 29 2026 patch: second UI audit (calm Priorities page, last round pills, article byline, About page call to action) ===== */
+/* 1. Priorities: ink sliders, neutral tags; orange stays on the one main button */
+.sl-row input[type=range]::-webkit-slider-runnable-track{background:linear-gradient(90deg,var(--ink) var(--p,50%),var(--line) var(--p,50%))}
+.sl-row input[type=range]::-moz-range-track{background:linear-gradient(90deg,var(--ink) var(--p,50%),var(--line) var(--p,50%))}
+.sl-row input[type=range]::-webkit-slider-thumb{border-color:var(--ink)}
+.sl-row input[type=range]::-moz-range-thumb{border-color:var(--ink)}
+.prio input[type=range],.fchip input[type=range]{accent-color:var(--ink)}
+.sl-top output{color:var(--ink);background:var(--paper);font-weight:700;border-radius:4px}
+.sl-top5 .pct{color:var(--ink)}
+/* 2. Last round pills: 6px controls, 4px tags */
+.slchip,.tabs .tab,.tab{border-radius:6px}
+.rv-badge,.fs-rvp.showmap .rvp-top .linkbtn{border-radius:6px}
+/* 3. Article byline flows on phones instead of four skinny columns */
+.byline{flex-wrap:wrap;gap:4px 10px}
+.byline>*{white-space:nowrap}
+/* 4. About page call to action */
+.about-cta{padding-top:8px;padding-bottom:48px;max-width:760px}
+.about-cta h2{font-size:clamp(26px,3.4vw,36px);margin:8px 0 10px}
+.about-cta p{font-family:var(--read);font-size:18.5px;line-height:1.55;color:var(--ink);max-width:34em;margin:0 0 20px}
+.about-acts{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.sl-top5 a{border-radius:6px}
