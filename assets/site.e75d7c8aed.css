@@ -983,3 +983,6 @@ nav.main a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-
 
 /* ===== Oct 29 2026 patch: phone article text, bigger and a touch heavier ===== */
 @media (max-width:700px){.prose{font-size:20.5px;line-height:1.6;-webkit-text-stroke:.25px currentColor}.prose b,.prose strong{font-weight:600}#sec-day .prose{font-size:21px}}
+
+/* ===== Oct 29 2026 patch: phone articles back to the original sans (Mark preferred it) ===== */
+@media (max-width:700px){article .prose{font-family:var(--sans,'DM Sans'),system-ui,sans-serif;font-size:18.5px;line-height:1.7;-webkit-text-stroke:0;letter-spacing:0}article .prose b,article .prose strong{font-weight:700}}
