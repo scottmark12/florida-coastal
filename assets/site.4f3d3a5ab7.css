@@ -886,3 +886,6 @@ body:has(.fs){overflow:hidden}
 .hvhint{display:flex;flex-wrap:wrap;gap:12px 22px;justify-content:center;align-items:center;margin-top:18px;color:var(--muted,#5b6b6e);font-size:15px}
 .hvfoot{margin-top:18px;display:grid;gap:14px}.hvrank{display:flex;gap:16px;align-items:center;justify-content:space-between;background:#152a2e;color:#fff;border-radius:16px;padding:18px 22px}.hvrank b{display:block;font-size:18px;margin-bottom:4px}.hvrank span{color:rgba(255,255,255,.8);font-size:14.5px}.hvrank .btn{flex:none}
 @media (max-width:760px){.vhero-b{padding:22px 0 0}.vhero-b .lede{font-size:16px}.hvrank{flex-direction:column;align-items:stretch;text-align:left}.hvrank .btn{width:100%}}
+
+/* ===== Oct 28 2026 patch: photo credits ===== */
+.pcred{font-size:14.5px;line-height:1.5;padding-left:18px}.pcred li{margin:4px 0}
