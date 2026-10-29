@@ -132,7 +132,7 @@ function homeView2(){
   return `<div class="hero"><div class="ph">${srcsets('<img src="img/southbeach-lifeguard.jpg" alt="" style="object-position:center 60%">',!0)}</div><div class="wrap"><div class="inner">
       <h1>Florida is 1,350 miles of coastline. Find your mile.</h1>
       <p>Tell us how you want to live. We'll show you the 5 beach towns that fit.</p>
-      <div class="sub hero-acts"><a class="btn btn-accent btn-cta" href="#sliders">See your top 5 towns</a><a class="btn hero-alt" href="#map">Explore the Vibe Map</a></div></div></div></div>
+      <div class="sub hero-acts"><a class="btn hero-alt" href="#map">Explore the Vibe Map</a><a class="btn btn-accent btn-cta" href="#quiz">See your top 5 towns</a></div></div></div></div>
   <section class="wrap vals-sec"><div class="label">What you get</div><div class="vals">${V.map(v=>`<a class="val" href="${v[3]}"><span class="num">${v[0]}</span><h3>${v[1]}</h3><p>${v[2]}</p><span class="more">${v[4]}</span></a>`).join("")}</div></section>
   <section class="wrap" id="quizsec">${mapInner(!1)}</section>
   <section class="wrap story2"><div class="ph"><img src="img/our-story.jpg" alt="Two people in white linen sitting together on a white sofa" loading="lazy" style="object-position:center 30%"></div><div><div class="label">Our story</div><h2 style="font-size:clamp(26px,3.2vw,36px)">We had two weeks to pick our Florida town. So we built the guide we wished we'd had.</h2><p style="margin-top:14px;color:var(--muted)">In 2005, after selling their business, Mark and Betsy Scott had two weeks to choose where in Florida to retire and raise three kids. Today they live on a coastal dune lake on 30A.</p><p style="margin-top:16px"><a class="more" href="#about">Read our story</a></p></div></section>
