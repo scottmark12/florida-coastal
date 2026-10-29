@@ -939,3 +939,29 @@ nav.main a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-
 .savebox.sent{background:transparent;border-color:var(--line)}
 .savebox.svwalk{padding:14px 0 4px}
 .lmguide{border-radius:4px!important}
+
+/* ===== Oct 29 2026 patch: readable hero, home trust section, compact town scorecard ===== */
+.hero .ph::after{background:linear-gradient(180deg,rgba(10,25,35,.38) 0%,rgba(10,25,35,.55) 45%,rgba(10,25,35,.6) 100%)}
+.hero h1{text-shadow:0 2px 24px rgba(0,0,0,.35)}
+.hero p{text-shadow:0 1px 14px rgba(0,0,0,.5);opacity:1}
+.hero .ctaalt{font-size:16px;margin-top:14px}
+.trust{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:center}
+.trust .ph{overflow:hidden;aspect-ratio:16/10;border-radius:4px}
+.trust .ph img{width:100%;height:100%;object-fit:cover;object-position:40% 45%}
+.trust h2{font-size:clamp(26px,3vw,34px);line-height:1.2;margin:0 0 14px}
+.trust p{color:var(--muted)}
+.trustl{list-style:none;margin:18px 0;padding:0}
+.trustl li{padding:10px 0;border-top:1px solid var(--line);font-size:15.5px;color:var(--muted)}
+.trustl li b{color:var(--ink);font-weight:600}
+@media (max-width:860px){.trust{grid-template-columns:1fr;gap:22px}}
+.scd{display:grid;grid-template-columns:1fr 1fr;column-gap:32px;border-top:1px solid var(--line)}
+.scd .it{border-bottom:1px solid var(--line)}
+.scd summary{display:grid;grid-template-columns:28px minmax(0,1fr) 84px 14px;gap:10px;align-items:center;padding:12px 0;cursor:pointer;list-style:none}
+.scd summary::-webkit-details-marker{display:none}
+.scd .svi{width:28px;height:28px}
+.scd .svi svg{width:18px;height:18px}
+.scd summary b{font-family:var(--ui);font-weight:600;font-size:15.5px}
+.scd .n{font-family:var(--ui);font-weight:700;font-variant-numeric:tabular-nums;text-align:right}
+.scd p{color:var(--muted);font-size:15px;line-height:1.55;margin:0 0 14px 38px}
+.scd details[open] summary b{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:760px){.scd{grid-template-columns:1fr}}
