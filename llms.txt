@@ -12,7 +12,7 @@ Key facts:
 
 - [Find your top 5 Florida beach towns (quiz)](https://www.floridacoastal.co/find-your-mile.html): 8 questions about how you want to live, matched against every town.
 - [Set your priorities (sliders)](https://www.floridacoastal.co/priorities.html): slide what matters and watch the best towns light up on the map.
-- [Style Map](https://www.floridacoastal.co/map.html): every beach town on one map, grouped by style (Old Florida, island, boating, walkable, affordable and more).
+- [Vibe Map](https://www.floridacoastal.co/map.html): every beach town on one map, grouped by vibe (Old Florida, island, boating, walkable, affordable and more).
 - [All towns](https://www.floridacoastal.co/towns/index.html)
 - [All guides](https://www.floridacoastal.co/articles/index.html)
 - [How we score towns](https://www.floridacoastal.co/scoring.html)
