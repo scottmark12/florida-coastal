@@ -1050,3 +1050,7 @@ nav.main a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-
 .cmp-sc .bar{width:96px;flex:none}
 .cmp-head{background:#fff}
 @media (max-width:700px){.cmp-sc .bar{width:62px}.cmp-sc .bar i{width:auto}}
+
+/* ===== Oct 29 2026 patch: warm sand palette (Mark picked it over the cool gray) ===== */
+:root{--paper:#F6F1E9;--line:#E6DDD0;--gulf:#2E93A3;--accent-tint:#F8EBDD;--page:#FFFDF9}
+body,header.top,.tnav,.cmp-head{background:var(--page)}
