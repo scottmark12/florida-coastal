@@ -879,3 +879,10 @@ body:has(.fs){overflow:hidden}
 
 /* ===== Oct 28 2026 patch: style/priorities toggle ===== */
 .pgtog{display:inline-flex;gap:4px;padding:4px;margin:0 0 18px;background:var(--sand,#f3efe6);border-radius:999px;border:1px solid var(--line,#e2ddd2)}.pgtog a{padding:8px 18px;border-radius:999px;font-weight:700;font-size:14px;color:var(--ink,#152a2e);text-decoration:none}.pgtog a.on{background:var(--accent,#c4561c);color:#fff}.pgtog a:not(.on):hover{background:#fff}.sl-note{font-size:12.5px;color:var(--muted,#5b6b6e);margin:4px 0 10px}@media (max-width:760px){.pgtog{display:flex;margin:4px 0 14px}.pgtog a{flex:1;text-align:center;padding:9px 10px}}
+
+/* ===== Oct 28 2026 patch: hero A/B test, variant B (live Vibe Map hero) ===== */
+.vhero-b{padding:42px 0 6px;background:linear-gradient(180deg,#f3efe6 0%,rgba(243,239,230,0) 100%)}.vhero-b h1{font-size:clamp(34px,5vw,56px);margin:6px 0 10px}.vhero-b .lede{max-width:640px;margin:0;font-size:18px}
+.vhero-map{padding-top:14px}.vhero-map #mapsec>.label,.vhero-map .maphead{display:none}
+.hvhint{display:flex;flex-wrap:wrap;gap:12px 22px;justify-content:center;align-items:center;margin-top:18px;color:var(--muted,#5b6b6e);font-size:15px}
+.hvfoot{margin-top:18px;display:grid;gap:14px}.hvrank{display:flex;gap:16px;align-items:center;justify-content:space-between;background:#152a2e;color:#fff;border-radius:16px;padding:18px 22px}.hvrank b{display:block;font-size:18px;margin-bottom:4px}.hvrank span{color:rgba(255,255,255,.8);font-size:14.5px}.hvrank .btn{flex:none}
+@media (max-width:760px){.vhero-b{padding:22px 0 0}.vhero-b .lede{font-size:16px}.hvrank{flex-direction:column;align-items:stretch;text-align:left}.hvrank .btn{width:100%}}
