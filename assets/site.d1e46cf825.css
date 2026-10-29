@@ -1000,3 +1000,53 @@ nav.main a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-
 .cmd details[open] summary b{text-decoration:underline;text-underline-offset:4px}
 .cmd details>span{display:block;padding:0 0 14px;color:var(--ink);font-size:15.5px;line-height:1.55}
 .cmd details>span .cl{display:block;margin-bottom:6px}
+
+/* ===== Oct 29 2026 patch: compare towns page ===== */
+.cmp-page{padding-top:28px;padding-bottom:56px}
+.cmp-top h1{margin:6px 0 8px}
+.cmp-top .lede{max-width:36em;margin:0 0 22px}
+.cmp-hint{font-family:var(--ui);color:var(--muted);margin:0 0 12px}
+.cmp{--n:3}
+.cmp-head,.cmp-cells{display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:0 20px}
+.cmp-head{position:sticky;top:0;z-index:5;background:var(--paper,#fff);padding:10px 0 12px;border-bottom:1px solid var(--ink)}
+.cmp-town{position:relative;min-width:0}
+.cmp-ph{display:block;aspect-ratio:16/10;border-radius:6px;overflow:hidden;background:var(--line)}
+.cmp-ph img,.cmp-ph .fallback{width:100%;height:100%;object-fit:cover;display:block}
+.cmp-tn{display:flex;flex-direction:column;gap:2px;margin-top:8px;font-family:var(--ui)}
+.cmp-tn a{color:var(--ink);text-decoration:none}
+.cmp-tn b{font-family:var(--display);font-weight:500;font-size:clamp(18px,2.2vw,24px);line-height:1.15}
+.cmp-tn>span{font-size:13px;color:var(--muted)}
+.cmp-tn .fitbadge{align-self:flex-start;margin-top:4px}
+.cmp-x{position:absolute;top:6px;right:6px;width:28px;height:28px;border-radius:50%;border:0;background:rgba(255,255,255,.92);color:var(--ink);font-size:18px;line-height:1;cursor:pointer}
+.cmp-add{display:flex}
+.cmp-addl{flex:1;display:flex;flex-direction:column;justify-content:center;gap:8px;border:1px dashed var(--line);border-radius:6px;padding:14px;min-height:120px;font-family:var(--ui);font-size:14px;color:var(--muted)}
+.cmp-addl select{font:inherit;color:var(--ink);padding:10px;border:1px solid var(--line);border-radius:6px;background:#fff;width:100%}
+.cmp-h{font-size:clamp(22px,2.6vw,28px);margin:30px 0 4px}
+.cmp-note{font-family:var(--ui);font-size:14px;color:var(--muted);margin:0 0 6px}
+.cmp-row{border-bottom:1px solid var(--line);padding:12px 0}
+.cmp-lab{font-family:var(--ui);font-size:12.5px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.cmp-c{font-family:var(--ui);font-size:15px;line-height:1.5;color:var(--ink);min-width:0;overflow-wrap:anywhere}
+.cmp-sub{display:block;font-size:13px;color:var(--muted);margin-top:4px}
+.cmp-read .cmp-c{font-family:var(--read);font-size:17px;line-height:1.5}
+.cmp-s{padding:8px 0}
+.cmp-s .cmp-lab{margin-bottom:4px}
+.cmp-sc{display:flex;align-items:center;gap:10px}
+.cmp-sc .n{font-weight:500;color:var(--muted);font-variant-numeric:tabular-nums}
+.cmp-sc.win .n{font-weight:800;color:var(--ink)}
+.cmp-foot{font-family:var(--ui);font-size:13.5px;color:var(--muted);margin:18px 0 0;max-width:46em}
+.cmp-acts{margin-top:22px;display:flex;gap:12px;flex-wrap:wrap}
+.cmp-link{margin:10px 0 0}
+@media (max-width:700px){
+ .cmp-head,.cmp-cells{gap:0 12px}
+ .cmp-ph{aspect-ratio:4/3}
+ .cmp-tn b{font-size:17px}
+ .cmp-tn .fitbadge,.cmp-tn>span{font-size:12px}
+ .cmp-c{font-size:14px}
+ .cmp-read .cmp-c{font-size:15.5px}
+ .cmp-sc{flex-direction:column;align-items:flex-start;gap:4px}
+ .cmp-sc .bar i{width:9px}
+ .cmp-addl{min-height:90px;padding:10px;font-size:13px}
+}
+.cmp-sc .bar{width:96px;flex:none}
+.cmp-head{background:#fff}
+@media (max-width:700px){.cmp-sc .bar{width:62px}.cmp-sc .bar i{width:auto}}
