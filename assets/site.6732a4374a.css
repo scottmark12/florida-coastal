@@ -1054,3 +1054,33 @@ nav.main a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-
 /* ===== Oct 29 2026 patch: warm sand palette (Mark picked it over the cool gray) ===== */
 :root{--paper:#F6F1E9;--line:#E6DDD0;--gulf:#2E93A3;--accent-tint:#F8EBDD;--page:#FFFDF9}
 body,header.top,.tnav,.cmp-head{background:var(--page)}
+
+/* ===== Oct 29 2026 patch: UI audit fixes (shorter home, one orange, one shape, calmer details, sticky ask box) ===== */
+/* 1. Home: smaller coast cards, two by two on phones; the vibe list stays on the map page */
+.coastgrid .coast{min-height:200px}
+.coastgrid .coast h3{font-size:21px}
+@media (max-width:700px){
+ .coastgrid{grid-template-columns:1fr 1fr!important;gap:10px}
+ .coastgrid .coast{min-height:150px}
+ .coastgrid .coast .t{padding:12px}
+ .coastgrid .coast h3{font-size:17px}
+ .coastgrid .coast p{display:none}
+ #quizsec .smap-cats{display:none}
+}
+/* 2. Orange only for the main action: page toggle is ink */
+.pgtog a.on{background:var(--ink);color:#fff}
+/* 3. One shape: 6px corners on controls, 4px on tags and counters */
+.pgtog,.pgtog a,.vchip,.scat,.navsearch,.news input,.news button,.news .btn,.search,.search button,.cmp-addl select{border-radius:6px}
+.chip,.stag,.vchip small,.scat small,.sc-all small{border-radius:4px}
+.navsearch button{border-radius:4px}
+/* 4. The honest details: regular weight answers so they scan */
+.kv dd{font-weight:400}
+.kv dt{color:var(--muted)}
+/* 5. Town page sidebar: the ask box follows you on desktop; the mini map goes */
+.town .side .mapbox{display:none}
+@media (min-width:1001px) and (min-height:760px){.town .side{position:sticky;top:calc(var(--hh) + 64px)}}
+.smap-bar .vchip,.stylebar .vchip,.svchip{border-radius:6px}
+.smap-bar .vchip small,.stylebar .vchip small{border-radius:4px}
+/* Map town cards: ink button, so the only orange on the map page is "See your top 5 towns" */
+.smap .btn-accent,.ss-go{background:var(--ink);border-color:var(--ink);color:#fff}
+.smap .btn-accent:hover,.ss-go:hover{background:#0c1d20;border-color:#0c1d20}
