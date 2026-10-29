@@ -986,3 +986,17 @@ nav.main a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-
 
 /* ===== Oct 29 2026 patch: phone articles back to the original sans (Mark preferred it) ===== */
 @media (max-width:700px){article .prose{font-family:var(--sans,'DM Sans'),system-ui,sans-serif;font-size:18.5px;line-height:1.7;-webkit-text-stroke:0;letter-spacing:0}article .prose b,article .prose strong{font-weight:700}}
+
+/* ===== Oct 29 2026 patch: community and social scene, tap to open rows ===== */
+.cmd{display:block;border-top:1px solid var(--line);margin-top:6px}
+.cmd>div{display:none}
+.cmd .it{border-bottom:1px solid var(--line);padding:0}
+.cmd summary{display:grid;grid-template-columns:minmax(0,1fr) auto 18px;gap:12px;align-items:center;padding:13px 0;cursor:pointer;list-style:none}
+.cmd summary::-webkit-details-marker{display:none}
+.cmd summary b{font-family:var(--ui);font-weight:600;font-size:15.5px;color:var(--ink)}
+.cmd summary small{font-family:var(--ui);font-size:13.5px;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:46vw;text-align:right}
+.cmd summary::after{content:"+";font-size:20px;line-height:1;color:var(--ink);text-align:right}
+.cmd details[open] summary::after{content:"\2212"}
+.cmd details[open] summary b{text-decoration:underline;text-underline-offset:4px}
+.cmd details>span{display:block;padding:0 0 14px;color:var(--ink);font-size:15.5px;line-height:1.55}
+.cmd details>span .cl{display:block;margin-bottom:6px}

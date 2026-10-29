@@ -56,7 +56,7 @@ def main(files):
     finally:
         srv.shutdown()
     for f, (html, title) in res.items():
-        path = os.path.join(ROOT, f)
+        path = os.path.join(ROOT, f.split("?")[0])  # "index.html?hero=a" renders that variant
         s = open(path, encoding="utf-8").read()
         a = s.index('<main id="app">') + len('<main id="app">')
         b = s.index("</main>", a)
