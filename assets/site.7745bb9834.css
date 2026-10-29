@@ -892,3 +892,50 @@ body:has(.fs){overflow:hidden}
 
 /* ===== Oct 29 2026 patch: guide offer, stack save boxes on phones ===== */
 @media (max-width:560px){.savebox .sv-row{flex-direction:column}.savebox .sv-row input[type=email],.savebox .sv-row .btn{width:100%;flex:none;height:48px}}
+
+/* ===== Oct 29 2026 patch: calmer, editorial style (color rules, no template tells, quiet save boxes) ===== */
+/* 1. color: ink and white do the work, orange only on the primary button */
+.label::after{background:var(--ink);height:1px;border-radius:0;opacity:.85}
+.top{border-bottom:1px solid var(--line);border-image:none}
+.cat{color:var(--muted);font-weight:600;letter-spacing:.08em}
+.more,.val .more{color:var(--ink);font-weight:600;letter-spacing:.06em}
+.alike,.best .also2 span{color:var(--muted)}
+.bar i.on{background:var(--ink)}
+.faq summary::after{color:var(--ink)}
+.tnav button[aria-current="true"]{color:var(--ink);border-bottom-color:var(--ink)}
+nav.main a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1.5px}
+.who-av{background:var(--ink)}
+.pct{color:var(--ink)}
+.fitbadge{background:var(--paper);color:var(--ink)}
+.svcount{color:var(--ink);background:var(--paper)}
+.svcount.full{background:var(--ink);color:#fff}
+.vchip[aria-pressed="true"],.svchip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+.opt:hover,.svtile:hover:not(:disabled),.svchip:hover,.smap-bar .vchip:hover,.stylebar .vchip:hover{border-color:var(--ink)}
+.opt[aria-pressed="true"],.svtile[aria-pressed="true"]{border-color:var(--ink);background:var(--paper)}
+.svtile[aria-pressed="true"] .svi,.svtile[aria-pressed="true"] .svck{background:var(--ink);border-color:var(--ink)}
+.svtile.must{background:var(--ink);border-color:var(--ink)}
+.svtile.must .svck::after{border-color:var(--ink)}
+.progress i.on,.svprog i,.rv-steps i.on,.svsteps li.on span{background:var(--ink);border-color:var(--ink)}
+.svsteps li.done span{background:var(--paper);border-color:var(--ink);color:var(--ink)}
+.search{border-color:rgba(255,255,255,.6)}
+.btn-line:hover{border-color:var(--ink);color:var(--ink)}
+/* 2. no template tells: square-ish buttons, flat cards, plain numbers */
+.btn{border-radius:6px;font-weight:600;letter-spacing:0}
+.search,.search button{border-radius:6px}
+.card{border-radius:4px;box-shadow:none;border:1px solid var(--line)}
+.card:hover{box-shadow:none;border-color:var(--ink);transform:none}
+.val{border-radius:4px}
+.val:hover{border-color:var(--ink);box-shadow:none;transform:none}
+.val .num,.why .num{width:auto;height:auto;border-radius:0;background:none;color:var(--muted);font-family:var(--display);font-weight:400;font-size:22px;justify-content:flex-start}
+.boxed{border-radius:4px}
+.askbar{background:var(--ink)}
+.hero p{text-shadow:0 1px 12px rgba(0,0,0,.45)}
+/* 3. quiet save boxes */
+.savebox{background:transparent;border:0;border-top:1px solid var(--ink);border-radius:0;padding:16px 0 4px;gap:12px}
+.savebox .sv-hd b{font-size:22px;font-weight:400}
+.savebox .sv-hd span{font-size:14.5px;line-height:1.5}
+.savebox input[type=email]{border-radius:6px;border-color:#c9d1d0}
+.savebox .btn{border-radius:6px}
+.savebox.sent{background:transparent;border-color:var(--line)}
+.savebox.svwalk{padding:14px 0 4px}
+.lmguide{border-radius:4px!important}
