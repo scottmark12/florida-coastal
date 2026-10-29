@@ -1,0 +1,333 @@
+{
+ "source": "Florida Department of Health, Florida Trauma Centers listing PDF https://www.floridahealth.gov/wp-content/uploads/2025/08/Florida-Trauma-Centers.pdf (linked from https://www.floridahealth.gov/licensing-and-regulation/trauma-system/index.html); coordinates, cities and provisional status from FDOH ArcGIS layer 'Florida Designated Trauma Centers' https://services1.arcgis.com/CY1LXxl9zlJeBuRZ/arcgis/rest/services/Florida_Designated_Trauma_Centers/FeatureServer/0 (map data last updated 06/25/2026)",
+ "as_of": "2026-07-23",
+ "centers": [
+  {
+   "name": "Ascension Sacred Heart Bay",
+   "public_name": null,
+   "city": "Panama City",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 30.159,
+   "lon": -85.647
+  },
+  {
+   "name": "Ascension Sacred Heart Pensacola",
+   "public_name": null,
+   "city": "Pensacola",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 30.476,
+   "lon": -87.211,
+   "note": "DOH map layer also shows a pediatric certification (exp 1/22/2031); PDF lists Level I only"
+  },
+  {
+   "name": "Baptist Hospital",
+   "public_name": "Baptist Hospital (Pensacola)",
+   "city": "Pensacola",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 30.429,
+   "lon": -87.232
+  },
+  {
+   "name": "Broward Health Medical Center",
+   "public_name": null,
+   "city": "Fort Lauderdale",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 26.102,
+   "lon": -80.142
+  },
+  {
+   "name": "Broward Health North",
+   "public_name": null,
+   "city": "Pompano Beach",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 26.275,
+   "lon": -80.121
+  },
+  {
+   "name": "Delray Medical Center",
+   "public_name": null,
+   "city": "Delray Beach",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 26.439,
+   "lon": -80.128
+  },
+  {
+   "name": "Gulf Coast Medical Center",
+   "public_name": "Lee Health Gulf Coast Medical Center",
+   "city": "Fort Myers",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 26.544,
+   "lon": -81.85
+  },
+  {
+   "name": "Halifax Health Medical Center of Daytona Beach",
+   "public_name": null,
+   "city": "Daytona Beach",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 29.201,
+   "lon": -81.055
+  },
+  {
+   "name": "HCA Florida Aventura Hospital",
+   "public_name": null,
+   "city": "Aventura",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 25.969,
+   "lon": -80.145
+  },
+  {
+   "name": "HCA Florida Bayonet Point Hospital",
+   "public_name": null,
+   "city": "Hudson",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 28.361,
+   "lon": -82.69
+  },
+  {
+   "name": "HCA Florida Blake Hospital",
+   "public_name": null,
+   "city": "Bradenton",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 27.482,
+   "lon": -82.621
+  },
+  {
+   "name": "HCA Florida Fort Walton-Destin Hospital",
+   "public_name": null,
+   "city": "Fort Walton Beach",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 30.454,
+   "lon": -86.634
+  },
+  {
+   "name": "HCA Florida Kendall Hospital",
+   "public_name": null,
+   "city": "Miami",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 25.732,
+   "lon": -80.385
+  },
+  {
+   "name": "HCA Florida Lake Monroe Hospital",
+   "public_name": null,
+   "city": "Sanford",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 28.816,
+   "lon": -81.284
+  },
+  {
+   "name": "HCA Florida Lawnwood Hospital",
+   "public_name": null,
+   "city": "Fort Pierce",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 27.432,
+   "lon": -80.347
+  },
+  {
+   "name": "HCA Florida Memorial Hospital",
+   "public_name": null,
+   "city": "Jacksonville",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 30.289,
+   "lon": -81.601
+  },
+  {
+   "name": "HCA Florida Ocala Hospital",
+   "public_name": null,
+   "city": "Ocala",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 29.175,
+   "lon": -82.138
+  },
+  {
+   "name": "HCA Florida Orange Park Hospital",
+   "public_name": null,
+   "city": "Orange Park",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 30.166,
+   "lon": -81.738
+  },
+  {
+   "name": "HCA Florida Osceola Hospital",
+   "public_name": null,
+   "city": "Kissimmee",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 28.301,
+   "lon": -81.41
+  },
+  {
+   "name": "Holmes Regional Medical Center",
+   "public_name": "Holmes Regional Medical Center",
+   "city": "Melbourne",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 28.087,
+   "lon": -80.614
+  },
+  {
+   "name": "Jackson Memorial Hospital",
+   "public_name": null,
+   "city": "Miami",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 25.791,
+   "lon": -80.215
+  },
+  {
+   "name": "Jackson South Medical Center",
+   "public_name": null,
+   "city": "Miami",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 25.63,
+   "lon": -80.345
+  },
+  {
+   "name": "Johns Hopkins All Children's Hospital",
+   "public_name": null,
+   "city": "St. Petersburg",
+   "level": "Pediatric",
+   "provisional": false,
+   "lat": 27.764,
+   "lon": -82.641
+  },
+  {
+   "name": "Lakeland Regional Health Medical Center",
+   "public_name": null,
+   "city": "Lakeland",
+   "level": "Level I",
+   "provisional": true,
+   "lat": 28.061,
+   "lon": -81.953,
+   "note": "PROVISIONAL per DOH map layer (Verification_Status = PROVISIONAL)"
+  },
+  {
+   "name": "Memorial Regional Hospital",
+   "public_name": null,
+   "city": "Hollywood",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 26.018,
+   "lon": -80.179
+  },
+  {
+   "name": "Nicklaus Children's Hospital",
+   "public_name": null,
+   "city": "Miami",
+   "level": "Pediatric",
+   "provisional": false,
+   "lat": 25.742,
+   "lon": -80.295
+  },
+  {
+   "name": "Orlando Health Bayfront Hospital",
+   "public_name": null,
+   "city": "St. Petersburg",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 27.763,
+   "lon": -82.642
+  },
+  {
+   "name": "Orlando Health Orlando Regional Medical Center",
+   "public_name": null,
+   "city": "Orlando",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 28.525,
+   "lon": -81.378
+  },
+  {
+   "name": "Sarasota Memorial Hospital",
+   "public_name": null,
+   "city": "Sarasota",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 27.318,
+   "lon": -82.53
+  },
+  {
+   "name": "St. Joseph's Hospital",
+   "public_name": null,
+   "city": "Tampa",
+   "level": "Level II and Pediatric",
+   "provisional": false,
+   "lat": 27.982,
+   "lon": -82.49,
+   "note": "PDF writes 'Level II / Pediatric'"
+  },
+  {
+   "name": "St. Mary's Medical Center",
+   "public_name": null,
+   "city": "West Palm Beach",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 26.753,
+   "lon": -80.063
+  },
+  {
+   "name": "Tallahassee Memorial Hospital",
+   "public_name": "Tallahassee Memorial HealthCare",
+   "city": "Tallahassee",
+   "level": "Level II",
+   "provisional": false,
+   "lat": 30.455,
+   "lon": -84.264
+  },
+  {
+   "name": "Tampa General Hospital",
+   "public_name": null,
+   "city": "Tampa",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 27.937,
+   "lon": -82.459
+  },
+  {
+   "name": "UF Health Jacksonville",
+   "public_name": null,
+   "city": "Jacksonville",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 30.347,
+   "lon": -81.664
+  },
+  {
+   "name": "UF Health Shands Hospital",
+   "public_name": null,
+   "city": "Gainesville",
+   "level": "Level I",
+   "provisional": false,
+   "lat": 29.638,
+   "lon": -82.346
+  },
+  {
+   "name": "Wolfson Children's Hospital",
+   "public_name": null,
+   "city": "Jacksonville",
+   "level": "Pediatric",
+   "provisional": false,
+   "lat": 30.316,
+   "lon": -81.664
+  }
+ ]
+}

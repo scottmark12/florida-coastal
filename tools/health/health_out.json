@@ -1,0 +1,1171 @@
+{
+"30a": [
+"Ascension Sacred Heart Emerald Coast",
+9,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+29
+],
+"destin": [
+"HCA Florida Fort Walton-Destin Hospital",
+9,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+9
+],
+"pcb": [
+"HCA Florida Gulf Coast Hospital",
+8,
+"Ascension Sacred Heart Bay",
+"Level II",
+9
+],
+"apalachicola": [
+"George E. Weems Memorial Hospital",
+1,
+"Ascension Sacred Heart Bay",
+"Level II",
+50
+],
+"cedarkey": [
+"Tampa General Hospital Crystal River",
+28,
+"UF Health Shands Hospital",
+"Level I",
+54
+],
+"dunedin": [
+"Mease Dunedin Hospital",
+1,
+"St. Joseph's Hospital",
+"Level II",
+17
+],
+"clearwaterbeach": [
+"Morton Plant Hospital",
+3,
+"Orlando Health Bayfront Hospital",
+"Level II",
+19
+],
+"gulfport": [
+"HCA Florida Pasadena Hospital",
+2,
+"Orlando Health Bayfront Hospital",
+"Level II",
+4
+],
+"ami": [
+"HCA Florida Blake Hospital",
+7,
+"HCA Florida Blake Hospital",
+"Level II",
+7
+],
+"longboat": [
+"HCA Florida Blake Hospital",
+5,
+"HCA Florida Blake Hospital",
+"Level II",
+6
+],
+"captiva": [
+"HealthPark Medical Center",
+17,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+21
+],
+"matlacha": [
+"Cape Coral Hospital",
+8,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+15
+],
+"naples": [
+"NCH Baker Hospital Downtown",
+1,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+28
+],
+"keywest": [
+"Lower Keys Medical Center",
+3,
+"Jackson South Medical Center",
+"Level II",
+116
+],
+"islamorada": [
+"Baptist Health Mariners Hospital",
+9,
+"Jackson South Medical Center",
+"Level II",
+52
+],
+"southbeach": [
+"Mount Sinai Medical Center",
+2,
+"Jackson Memorial Hospital",
+"Level I",
+5
+],
+"ftl": [
+"Broward Health Medical Center",
+1,
+"Broward Health Medical Center",
+"Level I",
+1
+],
+"delray": [
+"Baptist Health Bethesda Hospital East",
+3,
+"Delray Medical Center",
+"Level I",
+4
+],
+"jupiter": [
+"Jupiter Medical Center",
+1,
+"St. Mary's Medical Center",
+"Level I",
+12
+],
+"fortpierce": [
+"HCA Florida Lawnwood Hospital",
+2,
+"HCA Florida Lawnwood Hospital",
+"Level II",
+2
+],
+"cocoa": [
+"Cape Canaveral Hospital",
+3,
+"Holmes Regional Medical Center",
+"Level II",
+16
+],
+"nsb": [
+"AdventHealth New Smyrna Beach",
+1,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+14
+],
+"daytona": [
+"Halifax Health Medical Center of Daytona Beach",
+2,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+2
+],
+"flagler": [
+"AdventHealth Palm Coast",
+4,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+19
+],
+"staug": [
+"UF Health Flagler Hospital",
+2,
+"HCA Florida Orange Park Hospital",
+"Level II",
+32
+],
+"jaxbeach": [
+"Baptist Medical Center Beaches",
+1,
+"HCA Florida Memorial Hospital",
+"Level II",
+13
+],
+"fernandina": [
+"Baptist Medical Center Nassau",
+1,
+"UF Health Jacksonville",
+"Level I",
+25
+],
+"carrabelle": [
+"George E. Weems Memorial Hospital",
+22,
+"Tallahassee Memorial HealthCare",
+"Level II",
+48
+],
+"st-george-island": [
+"George E. Weems Memorial Hospital",
+9,
+"Ascension Sacred Heart Bay",
+"Level II",
+58
+],
+"st-teresa": [
+"George E. Weems Memorial Hospital",
+35,
+"Tallahassee Memorial HealthCare",
+"Level II",
+38
+],
+"st-marks": [
+"Tallahassee Memorial HealthCare",
+20,
+"Tallahassee Memorial HealthCare",
+"Level II",
+20
+],
+"panama-city": [
+"Ascension Sacred Heart Bay",
+1,
+"Ascension Sacred Heart Bay",
+"Level II",
+1
+],
+"pensacola": [
+"Baptist Hospital",
+1,
+"Baptist Hospital (Pensacola)",
+"Level II",
+1
+],
+"pensacola-beach": [
+"Gulf Breeze Hospital",
+2,
+"Baptist Hospital (Pensacola)",
+"Level II",
+8
+],
+"navarre-beach": [
+"HCA Florida Fort Walton-Destin Hospital",
+15,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+15
+],
+"perdido-key": [
+"Baptist Hospital",
+14,
+"Baptist Hospital (Pensacola)",
+"Level II",
+14
+],
+"gulf-breeze": [
+"Gulf Breeze Hospital",
+1,
+"Baptist Hospital (Pensacola)",
+"Level II",
+6
+],
+"port-st-joe": [
+"Ascension Sacred Heart Gulf",
+3,
+"Ascension Sacred Heart Bay",
+"Level II",
+32
+],
+"crystal-river": [
+"Tampa General Hospital Crystal River",
+4,
+"HCA Florida Ocala Hospital",
+"Level II",
+33
+],
+"homosassa": [
+"Tampa General Hospital Crystal River",
+12,
+"HCA Florida Bayonet Point Hospital",
+"Level II",
+29
+],
+"ozello": [
+"Tampa General Hospital Crystal River",
+6,
+"HCA Florida Bayonet Point Hospital",
+"Level II",
+35
+],
+"steinhatchee": [
+"Doctors' Memorial Hospital",
+33,
+"UF Health Shands Hospital",
+"Level I",
+63
+],
+"apollo-beach": [
+"St. Joseph's Hospital-South",
+4,
+"Tampa General Hospital",
+"Level I",
+12
+],
+"clearwater": [
+"Morton Plant Hospital",
+1,
+"Orlando Health Bayfront Hospital",
+"Level II",
+17
+],
+"indian-rocks-beach": [
+"HCA Florida Largo West Hospital",
+2,
+"Orlando Health Bayfront Hospital",
+"Level II",
+15
+],
+"madeira-beach": [
+"HCA Florida St. Petersburg Hospital",
+4,
+"Orlando Health Bayfront Hospital",
+"Level II",
+10
+],
+"new-port-richey": [
+"Morton Plant North Bay Hospital",
+1,
+"HCA Florida Bayonet Point Hospital",
+"Level II",
+8
+],
+"ruskin": [
+"HCA Florida South Shore Hospital",
+4,
+"Orlando Health Bayfront Hospital",
+"Level II",
+13
+],
+"safety-harbor": [
+"Mease Countryside Hospital",
+3,
+"St. Joseph's Hospital",
+"Level II",
+12
+],
+"st-pete-beach": [
+"HCA Florida Pasadena Hospital",
+2,
+"Orlando Health Bayfront Hospital",
+"Level II",
+7
+],
+"st-petersburg": [
+"Orlando Health Bayfront Hospital",
+1,
+"Orlando Health Bayfront Hospital",
+"Level II",
+1
+],
+"sun-city-center": [
+"HCA Florida South Shore Hospital",
+1,
+"Tampa General Hospital",
+"Level I",
+16
+],
+"tampa": [
+"Tampa General Hospital",
+1,
+"Tampa General Hospital",
+"Level I",
+1
+],
+"tarpon-springs": [
+"AdventHealth North Pinellas",
+1,
+"HCA Florida Bayonet Point Hospital",
+"Level II",
+15
+],
+"treasure-island": [
+"HCA Florida Pasadena Hospital",
+2,
+"Orlando Health Bayfront Hospital",
+"Level II",
+8
+],
+"bradenton": [
+"Manatee Memorial Hospital",
+1,
+"HCA Florida Blake Hospital",
+"Level II",
+3
+],
+"bradenton-beach": [
+"HCA Florida Blake Hospital",
+5,
+"HCA Florida Blake Hospital",
+"Level II",
+5
+],
+"cortez": [
+"HCA Florida Blake Hospital",
+3,
+"HCA Florida Blake Hospital",
+"Level II",
+3
+],
+"englewood": [
+"HCA Florida Englewood Hospital",
+2,
+"Sarasota Memorial Hospital",
+"Level II",
+27
+],
+"sarasota": [
+"Sarasota Memorial Hospital",
+1,
+"Sarasota Memorial Hospital",
+"Level II",
+1
+],
+"siesta-key": [
+"Sarasota Memorial Hospital",
+4,
+"Sarasota Memorial Hospital",
+"Level II",
+4
+],
+"venice": [
+"Sarasota Memorial Hospital-Venice",
+4,
+"Sarasota Memorial Hospital",
+"Level II",
+16
+],
+"bonita-springs": [
+"NCH North Naples Hospital",
+5,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+15
+],
+"cape-coral": [
+"HealthPark Medical Center",
+4,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+6
+],
+"chokoloskee": [
+"Physicians Regional Medical Center Collier Boulevard",
+29,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+59
+],
+"everglades-city": [
+"Physicians Regional Medical Center Collier Boulevard",
+25,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+55
+],
+"fort-myers": [
+"Lee Memorial Hospital",
+1,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+7
+],
+"fort-myers-beach": [
+"HealthPark Medical Center",
+4,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+9
+],
+"marco-island": [
+"Physicians Regional Medical Center Collier Boulevard",
+12,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+43
+],
+"port-charlotte": [
+"HCA Florida Fawcett Hospital",
+1,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+33
+],
+"punta-gorda": [
+"HCA Florida Fawcett Hospital",
+5,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+29
+],
+"sanibel-island": [
+"HealthPark Medical Center",
+12,
+"Lee Health Gulf Coast Medical Center",
+"Level II",
+17
+],
+"key-largo": [
+"Baptist Health Mariners Hospital",
+7,
+"Jackson South Medical Center",
+"Level II",
+38
+],
+"bal-harbour": [
+"Jackson North Medical Center",
+5,
+"HCA Florida Aventura Hospital",
+"Level II",
+5
+],
+"boca-raton": [
+"Baptist Health Boca Raton Regional Hospital",
+2,
+"Delray Medical Center",
+"Level I",
+5
+],
+"dania-beach": [
+"Memorial Regional Hospital",
+3,
+"Memorial Regional Hospital",
+"Level I",
+3
+],
+"hallandale": [
+"HCA Florida Aventura Hospital",
+1,
+"HCA Florida Aventura Hospital",
+"Level II",
+1
+],
+"highland-beach": [
+"Baptist Health Boca Raton Regional Hospital",
+4,
+"Delray Medical Center",
+"Level I",
+5
+],
+"hollywood": [
+"Memorial Regional Hospital",
+2,
+"Memorial Regional Hospital",
+"Level I",
+2
+],
+"lauderdale-by-the-sea": [
+"Broward Health Imperial Point",
+1,
+"Broward Health North",
+"Level II",
+6
+],
+"lighthouse-point": [
+"Broward Health North",
+2,
+"Broward Health North",
+"Level II",
+2
+],
+"north-miami-beach": [
+"Jackson North Medical Center",
+3,
+"HCA Florida Aventura Hospital",
+"Level II",
+3
+],
+"north-palm-beach": [
+"Palm Beach Gardens Medical Center",
+2,
+"St. Mary's Medical Center",
+"Level I",
+5
+],
+"palm-beach": [
+"Good Samaritan Medical Center",
+2,
+"St. Mary's Medical Center",
+"Level I",
+4
+],
+"palm-beach-gardens": [
+"Palm Beach Gardens Medical Center",
+3,
+"St. Mary's Medical Center",
+"Level I",
+7
+],
+"riviera-beach": [
+"St. Mary's Medical Center",
+1,
+"St. Mary's Medical Center",
+"Level I",
+2
+],
+"sunny-isles-beach": [
+"HCA Florida Aventura Hospital",
+2,
+"HCA Florida Aventura Hospital",
+"Level II",
+2
+],
+"west-palm-beach": [
+"Good Samaritan Medical Center",
+1,
+"St. Mary's Medical Center",
+"Level I",
+3
+],
+"wilton-manors": [
+"Holy Cross Hospital",
+2,
+"Broward Health Medical Center",
+"Level I",
+4
+],
+"jensen-beach": [
+"Cleveland Clinic Martin North Hospital",
+4,
+"HCA Florida Lawnwood Hospital",
+"Level II",
+14
+],
+"port-st-lucie": [
+"HCA Florida St. Lucie Hospital",
+3,
+"HCA Florida Lawnwood Hospital",
+"Level II",
+10
+],
+"sebastian": [
+"Orlando Health Sebastian River Hospital",
+2,
+"Holmes Regional Medical Center",
+"Level II",
+21
+],
+"stuart": [
+"Cleveland Clinic Martin North Hospital",
+1,
+"HCA Florida Lawnwood Hospital",
+"Level II",
+17
+],
+"vero-beach": [
+"Cleveland Clinic Indian River Hospital",
+1,
+"HCA Florida Lawnwood Hospital",
+"Level II",
+15
+],
+"indialantic": [
+"Holmes Regional Medical Center",
+3,
+"Holmes Regional Medical Center",
+"Level II",
+3
+],
+"melbourne-beach": [
+"Holmes Regional Medical Center",
+3,
+"Holmes Regional Medical Center",
+"Level II",
+3
+],
+"palm-bay": [
+"Palm Bay Hospital",
+3,
+"Holmes Regional Medical Center",
+"Level II",
+4
+],
+"satellite-beach": [
+"Holmes Regional Medical Center",
+6,
+"Holmes Regional Medical Center",
+"Level II",
+6
+],
+"titusville": [
+"Parrish Medical Center",
+2,
+"HCA Florida Lake Monroe Hospital",
+"Level II",
+32
+],
+"west-melbourne": [
+"Holmes Regional Medical Center",
+3,
+"Holmes Regional Medical Center",
+"Level II",
+3
+],
+"atlantic-beach": [
+"Baptist Medical Center Beaches",
+4,
+"HCA Florida Memorial Hospital",
+"Level II",
+13
+],
+"neptune-beach": [
+"Baptist Medical Center Beaches",
+3,
+"HCA Florida Memorial Hospital",
+"Level II",
+12
+],
+"ponte-vedra-beach": [
+"Baptist Medical Center Beaches",
+3,
+"HCA Florida Memorial Hospital",
+"Level II",
+13
+],
+"st-augustine-beach": [
+"UF Health Flagler Hospital",
+3,
+"HCA Florida Orange Park Hospital",
+"Level II",
+36
+],
+"daytona-beach-shores": [
+"Halifax Health Medical Center of Port Orange",
+4,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+5
+],
+"ormond-beach": [
+"AdventHealth Daytona Beach",
+4,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+6
+],
+"palm-coast": [
+"AdventHealth Palm Coast Parkway",
+3,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+28
+],
+"port-orange": [
+"Halifax Health Medical Center of Port Orange",
+1,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+5
+],
+"south-daytona": [
+"Halifax Health Medical Center of Port Orange",
+3,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+4
+],
+"navarre": [
+"HCA Florida Fort Walton-Destin Hospital",
+14,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+14
+],
+"mary-esther": [
+"HCA Florida Fort Walton-Destin Hospital",
+4,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+4
+],
+"fort-walton-beach": [
+"HCA Florida Fort Walton-Destin Hospital",
+4,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+4
+],
+"okaloosa-island": [
+"HCA Florida Fort Walton-Destin Hospital",
+5,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+5
+],
+"shalimar": [
+"HCA Florida Fort Walton-Destin Hospital",
+4,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+4
+],
+"niceville": [
+"HCA Florida Twin Cities Hospital",
+1,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+10
+],
+"valparaiso": [
+"HCA Florida Twin Cities Hospital",
+2,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+9
+],
+"miramar-beach": [
+"Ascension Sacred Heart Emerald Coast",
+5,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+16
+],
+"freeport": [
+"North Walton Doctors Hospital",
+11,
+"HCA Florida Fort Walton-Destin Hospital",
+"Level II",
+30
+],
+"mexico-beach": [
+"Ascension Sacred Heart Gulf",
+14,
+"Ascension Sacred Heart Bay",
+"Level II",
+20
+],
+"keaton-beach": [
+"Doctors' Memorial Hospital",
+21,
+"Tallahassee Memorial HealthCare",
+"Level II",
+59
+],
+"horseshoe-beach": [
+"Doctors' Memorial Hospital",
+50,
+"UF Health Shands Hospital",
+"Level I",
+59
+],
+"suwannee": [
+"Tampa General Hospital Crystal River",
+41,
+"UF Health Shands Hospital",
+"Level I",
+53
+],
+"yankeetown": [
+"Tampa General Hospital Crystal River",
+8,
+"HCA Florida Ocala Hospital",
+"Level II",
+36
+],
+"inglis": [
+"Tampa General Hospital Crystal River",
+6,
+"HCA Florida Ocala Hospital",
+"Level II",
+34
+],
+"hernando-beach": [
+"HCA Florida Oak Hill Hospital",
+8,
+"HCA Florida Bayonet Point Hospital",
+"Level II",
+10
+],
+"weeki-wachee": [
+"HCA Florida Oak Hill Hospital",
+3,
+"HCA Florida Bayonet Point Hospital",
+"Level II",
+13
+],
+"aripeka": [
+"HCA Florida Bayonet Point Hospital",
+5,
+"HCA Florida Bayonet Point Hospital",
+"Level II",
+5
+],
+"hudson": [
+"HCA Florida Bayonet Point Hospital",
+1,
+"HCA Florida Bayonet Point Hospital",
+"Level II",
+1
+],
+"port-richey": [
+"Morton Plant North Bay Hospital",
+2,
+"HCA Florida Bayonet Point Hospital",
+"Level II",
+6
+],
+"holiday": [
+"AdventHealth North Pinellas",
+3,
+"HCA Florida Bayonet Point Hospital",
+"Level II",
+14
+],
+"palm-harbor": [
+"AdventHealth North Pinellas",
+4,
+"St. Joseph's Hospital",
+"Level II",
+18
+],
+"oldsmar": [
+"Mease Countryside Hospital",
+2,
+"St. Joseph's Hospital",
+"Level II",
+11
+],
+"belleair-beach": [
+"HCA Florida Largo West Hospital",
+2,
+"Orlando Health Bayfront Hospital",
+"Level II",
+16
+],
+"tierra-verde": [
+"HCA Florida Pasadena Hospital",
+4,
+"Orlando Health Bayfront Hospital",
+"Level II",
+7
+],
+"indian-shores": [
+"HCA Florida Largo West Hospital",
+3,
+"Orlando Health Bayfront Hospital",
+"Level II",
+14
+],
+"redington-shores": [
+"HCA Florida Largo West Hospital",
+4,
+"Orlando Health Bayfront Hospital",
+"Level II",
+13
+],
+"north-redington-beach": [
+"HCA Florida Largo West Hospital",
+6,
+"Orlando Health Bayfront Hospital",
+"Level II",
+12
+],
+"redington-beach": [
+"HCA Florida St. Petersburg Hospital",
+5,
+"Orlando Health Bayfront Hospital",
+"Level II",
+11
+],
+"gibsonton": [
+"AdventHealth Riverview",
+4,
+"Tampa General Hospital",
+"Level I",
+7
+],
+"miami": [
+"Jackson Memorial Hospital",
+2,
+"Jackson Memorial Hospital",
+"Level I",
+2
+],
+"jacksonville": [
+"Baptist Medical Center Jacksonville",
+1,
+"UF Health Jacksonville",
+"Level I",
+2
+],
+"indian-river-shores": [
+"Cleveland Clinic Indian River Hospital",
+4,
+"HCA Florida Lawnwood Hospital",
+"Level II",
+19
+],
+"hutchinson-island": [
+"Cleveland Clinic Martin North Hospital",
+5,
+"HCA Florida Lawnwood Hospital",
+"Level II",
+15
+],
+"sewalls-point": [
+"Cleveland Clinic Martin North Hospital",
+3,
+"HCA Florida Lawnwood Hospital",
+"Level II",
+18
+],
+"palm-city": [
+"Cleveland Clinic Martin North Hospital",
+2,
+"HCA Florida Lawnwood Hospital",
+"Level II",
+18
+],
+"port-salerno": [
+"Cleveland Clinic Martin South Hospital",
+2,
+"HCA Florida Lawnwood Hospital",
+"Level II",
+22
+],
+"hobe-sound": [
+"Cleveland Clinic Martin South Hospital",
+8,
+"St. Mary's Medical Center",
+"Level I",
+22
+],
+"tequesta": [
+"Jupiter Medical Center",
+3,
+"St. Mary's Medical Center",
+"Level I",
+14
+],
+"juno-beach": [
+"Jupiter Medical Center",
+3,
+"St. Mary's Medical Center",
+"Level I",
+10
+],
+"lake-park": [
+"St. Mary's Medical Center",
+3,
+"St. Mary's Medical Center",
+"Level I",
+3
+],
+"palm-beach-shores": [
+"St. Mary's Medical Center",
+2,
+"St. Mary's Medical Center",
+"Level I",
+2
+],
+"lake-worth-beach": [
+"HCA Florida JFK Hospital",
+3,
+"St. Mary's Medical Center",
+"Level I",
+10
+],
+"lantana": [
+"HCA Florida JFK Hospital",
+3,
+"Delray Medical Center",
+"Level I",
+11
+],
+"boynton-beach": [
+"Baptist Health Bethesda Hospital East",
+2,
+"Delray Medical Center",
+"Level I",
+8
+],
+"vilano-beach": [
+"UF Health Flagler Hospital",
+4,
+"HCA Florida Orange Park Hospital",
+"Level II",
+31
+],
+"crescent-beach": [
+"UF Health Flagler Hospital",
+8,
+"HCA Florida Orange Park Hospital",
+"Level II",
+40
+],
+"beverly-beach": [
+"AdventHealth Palm Coast",
+4,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+22
+],
+"ormond-by-the-sea": [
+"AdventHealth Daytona Beach",
+7,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+9
+],
+"holly-hill": [
+"Halifax Health Medical Center of Daytona Beach",
+3,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+3
+],
+"ponce-inlet": [
+"AdventHealth New Smyrna Beach",
+4,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+11
+],
+"edgewater": [
+"AdventHealth New Smyrna Beach",
+2,
+"Halifax Health Medical Center of Daytona Beach",
+"Level II",
+17
+],
+"cape-canaveral": [
+"Cape Canaveral Hospital",
+4,
+"Holmes Regional Medical Center",
+"Level II",
+22
+],
+"merritt-island": [
+"Cape Canaveral Hospital",
+3,
+"Holmes Regional Medical Center",
+"Level II",
+19
+],
+"cocoa-village": [
+"Cape Canaveral Hospital",
+6,
+"Holmes Regional Medical Center",
+"Level II",
+20
+],
+"rockledge": [
+"Cape Canaveral Hospital",
+6,
+"Holmes Regional Medical Center",
+"Level II",
+18
+],
+"indian-harbour-beach": [
+"Holmes Regional Medical Center",
+4,
+"Holmes Regional Medical Center",
+"Level II",
+4
+],
+"melbourne": [
+"Holmes Regional Medical Center",
+1,
+"Holmes Regional Medical Center",
+"Level II",
+1
+]
+}

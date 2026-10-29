@@ -1,0 +1,167 @@
+30a                      Ascension Sacred Heart Emerald Coast             9.4 | HCA Florida Fort Walton-Destin Hospital  Level II  29.4 | 2nd: North Walton Doctors Hospital 20.1
+destin                   HCA Florida Fort Walton-Destin Hospital          9.1 | HCA Florida Fort Walton-Destin Hospital  Level II   9.1 | 2nd: HCA Florida Twin Cities Hospit 9.9
+pcb                      HCA Florida Gulf Coast Hospital                  8.1 | Ascension Sacred Heart Bay               Level II   9.3 | 2nd: Ascension Sacred Heart Bay 9.2
+apalachicola             George E. Weems Memorial Hospital                0.8 | Ascension Sacred Heart Bay               Level II  49.7 | 2nd: Ascension Sacred Heart Gulf 18.8
+cedarkey                 Tampa General Hospital Crystal River            27.7 | UF Health Shands Hospital                Level I  53.7 | 2nd: HCA Florida Citrus Hospital 47.0
+dunedin                  Mease Dunedin Hospital                           0.9 | St. Joseph's Hospital                    Level II  17.3 | 2nd: Mease Countryside Hospital 4.1
+clearwaterbeach          Morton Plant Hospital                            2.5 | Orlando Health Bayfront Hospital         Level II  18.9 | 2nd: Mease Dunedin Hospital 3.7
+gulfport                 HCA Florida Pasadena Hospital                    2.5 | Orlando Health Bayfront Hospital         Level II   3.7 | 2nd: St. Anthony's Hospital 3.6
+ami                      HCA Florida Blake Hospital                       7.3 | HCA Florida Blake Hospital               Level II   7.5 | 2nd: Manatee Memorial Hospital 10.5
+longboat                 HCA Florida Blake Hospital                       5.5 | HCA Florida Blake Hospital               Level II   5.5 | 2nd: Manatee Memorial Hospital 8.5
+captiva                  HealthPark Medical Center                       17.1 | Lee Health Gulf Coast Medical Center     Level II  21.1 | 2nd: Cape Coral Hospital 17.4
+matlacha                 Cape Coral Hospital                              7.9 | Lee Health Gulf Coast Medical Center     Level II  14.8 | 2nd: Lee Memorial Hospital 12.1
+naples                   NCH Baker Hospital Downtown                      0.9 | Lee Health Gulf Coast Medical Center     Level II  28.2 | 2nd: Physicians Regional Medical Ce 6.2
+keywest                  Lower Keys Medical Center                        2.8 | Jackson South Medical Center             Level II 116.3 | 2nd: Baptist Health Fishermen's Com 44.3
+islamorada               Baptist Health Mariners Hospital                 9.0 | Jackson South Medical Center             Level II  52.2 | 2nd: Baptist Health Fishermen's Com 32.5
+southbeach               Mount Sinai Medical Center                       1.7 | Jackson Memorial Hospital                Level I   5.3 | 2nd: Jackson Memorial Hospital 5.3
+ftl                      Broward Health Medical Center                    1.2 | Broward Health Medical Center            Level I   1.2 | 2nd: Holy Cross Hospital 4.8
+delray                   Baptist Health Bethesda Hospital East            3.1 | Delray Medical Center                    Level I   3.9 | 2nd: Delray Medical Center 3.9
+jupiter                  Jupiter Medical Center                           0.6 | St. Mary's Medical Center                Level I  12.3 | 2nd: Palm Beach Gardens Medical Cen 7.0
+fortpierce               HCA Florida Lawnwood Hospital                    1.6 | HCA Florida Lawnwood Hospital            Level II   1.6 | 2nd: HCA Florida St. Lucie Hospital 11.4
+cocoa                    Cape Canaveral Hospital                          2.9 | Holmes Regional Medical Center           Level II  16.1 | 2nd: Viera Hospital 9.6
+nsb                      AdventHealth New Smyrna Beach                    0.8 | Halifax Health Medical Center of Daytona Level II  14.0 | 2nd: Halifax Health Medical Center  8.2
+daytona                  Halifax Health Medical Center of Daytona Beach   2.2 | Halifax Health Medical Center of Daytona Level II   2.2 | 2nd: AdventHealth Daytona Beach 5.7
+flagler                  AdventHealth Palm Coast                          3.6 | Halifax Health Medical Center of Daytona Level II  19.1 | 2nd: AdventHealth Palm Coast Parkwa 8.9
+staug                    UF Health Flagler Hospital                       1.9 | HCA Florida Orange Park Hospital         Level II  31.9 | 2nd: Ascension St. Vincent's St. Jo 16.8
+jaxbeach                 Baptist Medical Center Beaches                   1.3 | HCA Florida Memorial Hospital            Level II  12.6 | 2nd: Mayo Clinic in Florida 3.7
+fernandina               Baptist Medical Center Nassau                    1.4 | UF Health Jacksonville                   Level I  25.4 | 2nd: UF Health North 16.5
+carrabelle               George E. Weems Memorial Hospital               21.6 | Tallahassee Memorial HealthCare          Level II  48.0 | 2nd: Ascension Sacred Heart Gulf 37.7
+st-george-island         George E. Weems Memorial Hospital                8.9 | Ascension Sacred Heart Bay               Level II  58.1 | 2nd: Ascension Sacred Heart Gulf 26.7
+st-teresa                George E. Weems Memorial Hospital               35.3 | Tallahassee Memorial HealthCare          Level II  37.9 | 2nd: Tallahassee Memorial HealthCar 38.1
+st-marks                 Tallahassee Memorial HealthCare                 20.4 | Tallahassee Memorial HealthCare          Level II  20.2 | 2nd: HCA Florida Capital Hospital 21.5
+panama-city              Ascension Sacred Heart Bay                       0.7 | Ascension Sacred Heart Bay               Level II   0.8 | 2nd: HCA Florida Gulf Coast Hospita 2.0
+pensacola                Baptist Hospital                                 1.0 | Baptist Hospital (Pensacola)             Level II   1.1 | 2nd: Ascension Sacred Heart Pensaco 3.9
+pensacola-beach          Gulf Breeze Hospital                             2.0 | Baptist Hospital (Pensacola)             Level II   8.4 | 2nd: Baptist Hospital 8.4
+navarre-beach            HCA Florida Fort Walton-Destin Hospital         14.7 | HCA Florida Fort Walton-Destin Hospital  Level II  14.7 | 2nd: Gulf Breeze Hospital 17.5
+perdido-key              Baptist Hospital                                14.1 | Baptist Hospital (Pensacola)             Level II  14.0 | 2nd: Gulf Breeze Hospital 15.9
+gulf-breeze              Gulf Breeze Hospital                             0.4 | Baptist Hospital (Pensacola)             Level II   6.5 | 2nd: Baptist Hospital 6.4
+port-st-joe              Ascension Sacred Heart Gulf                      2.5 | Ascension Sacred Heart Bay               Level II  31.6 | 2nd: George E. Weems Memorial Hospi 19.6
+crystal-river            Tampa General Hospital Crystal River             4.1 | HCA Florida Ocala Hospital               Level II  33.3 | 2nd: HCA Florida Citrus Hospital 16.1
+homosassa                Tampa General Hospital Crystal River            11.8 | HCA Florida Bayonet Point Hospital       Level II  29.4 | 2nd: HCA Florida Citrus Hospital 17.3
+ozello                   Tampa General Hospital Crystal River             6.1 | HCA Florida Bayonet Point Hospital       Level II  34.9 | 2nd: HCA Florida Citrus Hospital 18.2
+steinhatchee             Doctors' Memorial Hospital                      33.4 | UF Health Shands Hospital                Level I  62.7 | 2nd: HCA Florida Lake City Hospital 54.9
+apollo-beach             St. Joseph's Hospital-South                      4.0 | Tampa General Hospital                   Level I  11.7 | 2nd: HCA Florida South Shore Hospit 4.9
+clearwater               Morton Plant Hospital                            1.0 | Orlando Health Bayfront Hospital         Level II  17.0 | 2nd: Mease Dunedin Hospital 3.5
+indian-rocks-beach       HCA Florida Largo West Hospital                  1.6 | Orlando Health Bayfront Hospital         Level II  15.3 | 2nd: HCA Florida Largo Hospital 3.2
+madeira-beach            HCA Florida St. Petersburg Hospital              4.4 | Orlando Health Bayfront Hospital         Level II   9.9 | 2nd: HCA Florida Pasadena Hospital 4.8
+new-port-richey          Morton Plant North Bay Hospital                  0.8 | HCA Florida Bayonet Point Hospital       Level II   8.3 | 2nd: HCA Florida Trinity Hospital 4.5
+ruskin                   HCA Florida South Shore Hospital                 4.1 | Orlando Health Bayfront Hospital         Level II  13.1 | 2nd: St. Joseph's Hospital-South 7.1
+safety-harbor            Mease Countryside Hospital                       2.7 | St. Joseph's Hospital                    Level II  12.5 | 2nd: Mease Dunedin Hospital 5.5
+st-pete-beach            HCA Florida Pasadena Hospital                    1.9 | Orlando Health Bayfront Hospital         Level II   6.6 | 2nd: HCA Florida St. Petersburg Hos 5.6
+st-petersburg            Orlando Health Bayfront Hospital                 0.3 | Orlando Health Bayfront Hospital         Level II   0.4 | 2nd: St. Anthony's Hospital 1.0
+sun-city-center          HCA Florida South Shore Hospital                 0.9 | Tampa General Hospital                   Level I  16.5 | 2nd: St. Joseph's Hospital-South 4.9
+tampa                    Tampa General Hospital                           0.9 | Tampa General Hospital                   Level I   1.0 | 2nd: HCA Florida South Tampa Hospit 2.2
+tarpon-springs           AdventHealth North Pinellas                      0.9 | HCA Florida Bayonet Point Hospital       Level II  15.4 | 2nd: HCA Florida Trinity Hospital 7.1
+treasure-island          HCA Florida Pasadena Hospital                    2.1 | Orlando Health Bayfront Hospital         Level II   7.8 | 2nd: HCA Florida St. Petersburg Hos 3.5
+bradenton                Manatee Memorial Hospital                        0.8 | HCA Florida Blake Hospital               Level II   3.1 | 2nd: HCA Florida Blake Hospital 3.2
+bradenton-beach          HCA Florida Blake Hospital                       4.7 | HCA Florida Blake Hospital               Level II   4.9 | 2nd: Manatee Memorial Hospital 8.6
+cortez                   HCA Florida Blake Hospital                       3.2 | HCA Florida Blake Hospital               Level II   3.4 | 2nd: Manatee Memorial Hospital 7.1
+englewood                HCA Florida Englewood Hospital                   1.8 | Sarasota Memorial Hospital               Level II  26.9 | 2nd: Sarasota Memorial Hospital-Ven 12.5
+sarasota                 Sarasota Memorial Hospital                       1.2 | Sarasota Memorial Hospital               Level II   1.2 | 2nd: HCA Florida Sarasota Doctors H 5.3
+siesta-key               Sarasota Memorial Hospital                       3.8 | Sarasota Memorial Hospital               Level II   3.9 | 2nd: HCA Florida Sarasota Doctors H 6.6
+venice                   Sarasota Memorial Hospital-Venice                3.9 | Sarasota Memorial Hospital               Level II  15.9 | 2nd: HCA Florida Englewood Hospital 13.0
+bonita-springs           NCH North Naples Hospital                        4.6 | Lee Health Gulf Coast Medical Center     Level II  14.8 | 2nd: Physicians Regional Medical Ce 9.2
+cape-coral               HealthPark Medical Center                        4.5 | Lee Health Gulf Coast Medical Center     Level II   6.3 | 2nd: Cape Coral Hospital 5.3
+chokoloskee              Physicians Regional Medical Center Collier Bou  28.7 | Lee Health Gulf Coast Medical Center     Level II  59.2 | 2nd: NCH Baker Hospital Downtown 36.0
+everglades-city          Physicians Regional Medical Center Collier Bou  25.3 | Lee Health Gulf Coast Medical Center     Level II  55.5 | 2nd: NCH Baker Hospital Downtown 32.7
+fort-myers               Lee Memorial Hospital                            0.9 | Lee Health Gulf Coast Medical Center     Level II   6.8 | 2nd: Cape Coral Hospital 4.4
+fort-myers-beach         HealthPark Medical Center                        4.4 | Lee Health Gulf Coast Medical Center     Level II   8.9 | 2nd: Gulf Coast Medical Center 8.8
+marco-island             Physicians Regional Medical Center Collier Bou  11.6 | Lee Health Gulf Coast Medical Center     Level II  42.5 | 2nd: NCH Baker Hospital Downtown 15.4
+port-charlotte           HCA Florida Fawcett Hospital                     1.0 | Lee Health Gulf Coast Medical Center     Level II  33.3 | 2nd: HCA Florida Englewood Hospital 14.6
+punta-gorda              HCA Florida Fawcett Hospital                     5.2 | Lee Health Gulf Coast Medical Center     Level II  29.3 | 2nd: HCA Florida Englewood Hospital 17.4
+sanibel-island           HealthPark Medical Center                       12.1 | Lee Health Gulf Coast Medical Center     Level II  16.6 | 2nd: Cape Coral Hospital 16.3
+key-largo                Baptist Health Mariners Hospital                 7.3 | Jackson South Medical Center             Level II  38.1 | 2nd: Baptist Health Homestead Hospi 27.2
+bal-harbour              Jackson North Medical Center                     5.5 | HCA Florida Aventura Hospital            Level II   5.4 | 2nd: Mount Sinai Medical Center 5.5
+boca-raton               Baptist Health Boca Raton Regional Hospital      1.7 | Delray Medical Center                    Level I   4.9 | 2nd: West Boca Medical Center 4.5
+dania-beach              Memorial Regional Hospital                       3.2 | Memorial Regional Hospital               Level I   3.2 | 2nd: Broward Health Medical Center 3.5
+hallandale               HCA Florida Aventura Hospital                    0.8 | HCA Florida Aventura Hospital            Level II   0.8 | 2nd: Memorial Regional Hospital Sou 2.5
+highland-beach           Baptist Health Boca Raton Regional Hospital      3.6 | Delray Medical Center                    Level I   4.7 | 2nd: Delray Medical Center 4.6
+hollywood                Memorial Regional Hospital                       1.9 | Memorial Regional Hospital               Level I   1.9 | 2nd: Memorial Regional Hospital Sou 2.0
+lauderdale-by-the-sea    Broward Health Imperial Point                    1.4 | Broward Health North                     Level II   5.9 | 2nd: Holy Cross Hospital 1.5
+lighthouse-point         Broward Health North                             2.1 | Broward Health North                     Level II   2.0 | 2nd: Broward Health Imperial Point 5.0
+north-miami-beach        Jackson North Medical Center                     2.6 | HCA Florida Aventura Hospital            Level II   2.7 | 2nd: HCA Florida Aventura Hospital 2.8
+north-palm-beach         Palm Beach Gardens Medical Center                2.2 | St. Mary's Medical Center                Level I   4.5 | 2nd: St. Mary's Medical Center 4.3
+palm-beach               Good Samaritan Medical Center                    1.7 | St. Mary's Medical Center                Level I   3.6 | 2nd: St. Mary's Medical Center 3.8
+palm-beach-gardens       Palm Beach Gardens Medical Center                3.3 | St. Mary's Medical Center                Level I   6.7 | 2nd: HCA Florida JFK North Hospital 5.3
+riviera-beach            St. Mary's Medical Center                        1.3 | St. Mary's Medical Center                Level I   1.6 | 2nd: HCA Florida JFK North Hospital 2.1
+sunny-isles-beach        HCA Florida Aventura Hospital                    1.9 | HCA Florida Aventura Hospital            Level II   1.8 | 2nd: Memorial Regional Hospital Sou 5.0
+west-palm-beach          Good Samaritan Medical Center                    0.7 | St. Mary's Medical Center                Level I   2.7 | 2nd: St. Mary's Medical Center 2.9
+wilton-manors            Holy Cross Hospital                              2.2 | Broward Health Medical Center            Level I   4.0 | 2nd: Broward Health Imperial Point 3.7
+jensen-beach             Cleveland Clinic Martin North Hospital           3.9 | HCA Florida Lawnwood Hospital            Level II  14.2 | 2nd: HCA Florida St. Lucie Hospital 4.5
+port-st-lucie            HCA Florida St. Lucie Hospital                   3.4 | HCA Florida Lawnwood Hospital            Level II   9.5 | 2nd: Cleveland Clinic Tradition Hos 5.2
+sebastian                Orlando Health Sebastian River Hospital          2.1 | Holmes Regional Medical Center           Level II  20.6 | 2nd: Cleveland Clinic Indian River  11.9
+stuart                   Cleveland Clinic Martin North Hospital           0.6 | HCA Florida Lawnwood Hospital            Level II  17.2 | 2nd: Cleveland Clinic Martin South  4.7
+vero-beach               Cleveland Clinic Indian River Hospital           1.4 | HCA Florida Lawnwood Hospital            Level II  14.6 | 2nd: HCA Florida Lawnwood Hospital 14.6
+indialantic              Holmes Regional Medical Center                   3.0 | Holmes Regional Medical Center           Level II   3.0 | 2nd: Orlando Health Melbourne Hospi 6.8
+melbourne-beach          Holmes Regional Medical Center                   3.4 | Holmes Regional Medical Center           Level II   3.4 | 2nd: Palm Bay Hospital 5.6
+palm-bay                 Palm Bay Hospital                                2.8 | Holmes Regional Medical Center           Level II   3.9 | 2nd: Holmes Regional Medical Center 3.9
+satellite-beach          Holmes Regional Medical Center                   6.3 | Holmes Regional Medical Center           Level II   6.3 | 2nd: Orlando Health Melbourne Hospi 6.9
+titusville               Parrish Medical Center                           1.6 | HCA Florida Lake Monroe Hospital         Level II  32.1 | 2nd: Cape Canaveral Hospital 20.7
+west-melbourne           Holmes Regional Medical Center                   2.6 | Holmes Regional Medical Center           Level II   2.6 | 2nd: Orlando Health Melbourne Hospi 2.9
+atlantic-beach           Baptist Medical Center Beaches                   4.2 | HCA Florida Memorial Hospital            Level II  12.5 | 2nd: Mayo Clinic in Florida 5.7
+neptune-beach            Baptist Medical Center Beaches                   2.8 | HCA Florida Memorial Hospital            Level II  12.2 | 2nd: Mayo Clinic in Florida 4.5
+ponte-vedra-beach        Baptist Medical Center Beaches                   2.9 | HCA Florida Memorial Hospital            Level II  13.4 | 2nd: Mayo Clinic in Florida 3.9
+st-augustine-beach       UF Health Flagler Hospital                       3.3 | HCA Florida Orange Park Hospital         Level II  35.9 | 2nd: AdventHealth Palm Coast Parkwa 19.9
+daytona-beach-shores     Halifax Health Medical Center of Port Orange     3.9 | Halifax Health Medical Center of Daytona Level II   5.0 | 2nd: Halifax Health Medical Center  5.0
+ormond-beach             AdventHealth Daytona Beach                       4.3 | Halifax Health Medical Center of Daytona Level II   5.9 | 2nd: Halifax Health Medical Center  5.8
+palm-coast               AdventHealth Palm Coast Parkway                  3.1 | Halifax Health Medical Center of Daytona Level II  28.0 | 2nd: AdventHealth Palm Coast 7.3
+port-orange              Halifax Health Medical Center of Port Orange     0.8 | Halifax Health Medical Center of Daytona Level II   5.3 | 2nd: Halifax Health Medical Center  5.3
+south-daytona            Halifax Health Medical Center of Port Orange     2.8 | Halifax Health Medical Center of Daytona Level II   3.9 | 2nd: Halifax Health Medical Center  3.9
+navarre                  HCA Florida Fort Walton-Destin Hospital         14.2 | HCA Florida Fort Walton-Destin Hospital  Level II  14.2 | 2nd: Gulf Breeze Hospital 17.7
+mary-esther              HCA Florida Fort Walton-Destin Hospital          3.6 | HCA Florida Fort Walton-Destin Hospital  Level II   3.5 | 2nd: HCA Florida Twin Cities Hospit 13.2
+fort-walton-beach        HCA Florida Fort Walton-Destin Hospital          3.9 | HCA Florida Fort Walton-Destin Hospital  Level II   3.9 | 2nd: HCA Florida Twin Cities Hospit 11.2
+okaloosa-island          HCA Florida Fort Walton-Destin Hospital          4.9 | HCA Florida Fort Walton-Destin Hospital  Level II   4.9 | 2nd: HCA Florida Twin Cities Hospit 11.3
+shalimar                 HCA Florida Fort Walton-Destin Hospital          3.8 | HCA Florida Fort Walton-Destin Hospital  Level II   3.8 | 2nd: HCA Florida Twin Cities Hospit 8.4
+niceville                HCA Florida Twin Cities Hospital                 1.1 | HCA Florida Fort Walton-Destin Hospital  Level II   9.8 | 2nd: HCA Florida Fort Walton-Destin 9.7
+valparaiso               HCA Florida Twin Cities Hospital                 1.8 | HCA Florida Fort Walton-Destin Hospital  Level II   9.5 | 2nd: HCA Florida Fort Walton-Destin 9.4
+miramar-beach            Ascension Sacred Heart Emerald Coast             4.8 | HCA Florida Fort Walton-Destin Hospital  Level II  15.6 | 2nd: HCA Florida Twin Cities Hospit 12.5
+freeport                 North Walton Doctors Hospital                   11.0 | HCA Florida Fort Walton-Destin Hospital  Level II  29.7 | 2nd: Ascension Sacred Heart Emerald 13.1
+mexico-beach             Ascension Sacred Heart Gulf                     14.5 | Ascension Sacred Heart Bay               Level II  19.6 | 2nd: Ascension Sacred Heart Bay 19.6
+keaton-beach             Doctors' Memorial Hospital                      20.8 | Tallahassee Memorial HealthCare          Level II  59.4 | 2nd: Madison County Memorial Hospit 46.3
+horseshoe-beach          Doctors' Memorial Hospital                      50.3 | UF Health Shands Hospital                Level I  58.5 | 2nd: Tampa General Hospital Crystal 52.6
+suwannee                 Tampa General Hospital Crystal River            40.7 | UF Health Shands Hospital                Level I  52.6 | 2nd: HCA Florida North Florida Hosp 49.7
+yankeetown               Tampa General Hospital Crystal River             7.7 | HCA Florida Ocala Hospital               Level II  36.3 | 2nd: HCA Florida Citrus Hospital 26.7
+inglis                   Tampa General Hospital Crystal River             5.7 | HCA Florida Ocala Hospital               Level II  33.7 | 2nd: HCA Florida Citrus Hospital 24.1
+hernando-beach           HCA Florida Oak Hill Hospital                    7.9 | HCA Florida Bayonet Point Hospital       Level II   9.5 | 2nd: Tampa General Hospital Spring  8.2
+weeki-wachee             HCA Florida Oak Hill Hospital                    2.8 | HCA Florida Bayonet Point Hospital       Level II  12.8 | 2nd: Tampa General Hospital Spring  5.9
+aripeka                  HCA Florida Bayonet Point Hospital               5.1 | HCA Florida Bayonet Point Hospital       Level II   5.2 | 2nd: Tampa General Hospital Spring  7.7
+hudson                   HCA Florida Bayonet Point Hospital               1.4 | HCA Florida Bayonet Point Hospital       Level II   1.3 | 2nd: Morton Plant North Bay Hospita 7.4
+port-richey              Morton Plant North Bay Hospital                  1.6 | HCA Florida Bayonet Point Hospital       Level II   6.3 | 2nd: HCA Florida Trinity Hospital 6.3
+holiday                  AdventHealth North Pinellas                      3.4 | HCA Florida Bayonet Point Hospital       Level II  14.1 | 2nd: Morton Plant North Bay Hospita 7.0
+palm-harbor              AdventHealth North Pinellas                      3.8 | St. Joseph's Hospital                    Level II  18.4 | 2nd: Mease Dunedin Hospital 4.6
+oldsmar                  Mease Countryside Hospital                       2.4 | St. Joseph's Hospital                    Level II  11.5 | 2nd: HCA Florida West Tampa Hospita 6.1
+belleair-beach           HCA Florida Largo West Hospital                  1.6 | Orlando Health Bayfront Hospital         Level II  16.1 | 2nd: HCA Florida Largo Hospital 2.3
+tierra-verde             HCA Florida Pasadena Hospital                    4.5 | Orlando Health Bayfront Hospital         Level II   6.9 | 2nd: Orlando Health Bayfront Hospit 6.9
+indian-shores            HCA Florida Largo West Hospital                  3.3 | Orlando Health Bayfront Hospital         Level II  13.9 | 2nd: HCA Florida Largo Hospital 4.9
+redington-shores         HCA Florida Largo West Hospital                  4.5 | Orlando Health Bayfront Hospital         Level II  12.8 | 2nd: HCA Florida Largo Hospital 5.9
+north-redington-beach    HCA Florida Largo West Hospital                  5.7 | Orlando Health Bayfront Hospital         Level II  11.6 | 2nd: HCA Florida St. Petersburg Hos 5.9
+redington-beach          HCA Florida St. Petersburg Hospital              5.2 | Orlando Health Bayfront Hospital         Level II  10.9 | 2nd: HCA Florida Pasadena Hospital 5.9
+gibsonton                AdventHealth Riverview                           3.7 | Tampa General Hospital                   Level I   6.9 | 2nd: St. Joseph's Hospital-South 5.6
+miami                    Jackson Memorial Hospital                        2.0 | Jackson Memorial Hospital                Level I   2.1 | 2nd: HCA Florida Mercy Hospital 3.0
+jacksonville             Baptist Medical Center Jacksonville              0.4 | UF Health Jacksonville                   Level I   1.9 | 2nd: UF Health Jacksonville 2.0
+indian-river-shores      Cleveland Clinic Indian River Hospital           3.8 | HCA Florida Lawnwood Hospital            Level II  19.4 | 2nd: Orlando Health Sebastian River 11.4
+hutchinson-island        Cleveland Clinic Martin North Hospital           4.8 | HCA Florida Lawnwood Hospital            Level II  15.3 | 2nd: HCA Florida St. Lucie Hospital 6.4
+sewalls-point            Cleveland Clinic Martin North Hospital           2.5 | HCA Florida Lawnwood Hospital            Level II  18.4 | 2nd: Cleveland Clinic Martin South  4.7
+palm-city                Cleveland Clinic Martin North Hospital           2.3 | HCA Florida Lawnwood Hospital            Level II  18.0 | 2nd: Florida Coast Medical Center 4.0
+port-salerno             Cleveland Clinic Martin South Hospital           2.1 | HCA Florida Lawnwood Hospital            Level II  21.6 | 2nd: Cleveland Clinic Martin North  4.5
+hobe-sound               Cleveland Clinic Martin South Hospital           7.6 | St. Mary's Medical Center                Level I  21.7 | 2nd: Jupiter Medical Center 9.8
+tequesta                 Jupiter Medical Center                           2.6 | St. Mary's Medical Center                Level I  14.4 | 2nd: Palm Beach Gardens Medical Cen 9.0
+juno-beach               Jupiter Medical Center                           3.2 | St. Mary's Medical Center                Level I   9.7 | 2nd: Palm Beach Gardens Medical Cen 4.8
+lake-park                St. Mary's Medical Center                        3.0 | St. Mary's Medical Center                Level I   3.2 | 2nd: Palm Beach Gardens Medical Cen 3.0
+palm-beach-shores        St. Mary's Medical Center                        2.2 | St. Mary's Medical Center                Level I   2.4 | 2nd: HCA Florida JFK North Hospital 3.4
+lake-worth-beach         HCA Florida JFK Hospital                         2.9 | St. Mary's Medical Center                Level I   9.6 | 2nd: Baptist Health Bethesda Hospit 7.6
+lantana                  HCA Florida JFK Hospital                         2.8 | Delray Medical Center                    Level I  11.1 | 2nd: Baptist Health Bethesda Hospit 5.6
+boynton-beach            Baptist Health Bethesda Hospital East            1.7 | Delray Medical Center                    Level I   7.5 | 2nd: HCA Florida JFK Hospital 5.4
+vilano-beach             UF Health Flagler Hospital                       3.9 | HCA Florida Orange Park Hospital         Level II  31.4 | 2nd: Ascension St. Vincent's St. Jo 15.9
+crescent-beach           UF Health Flagler Hospital                       7.6 | HCA Florida Orange Park Hospital         Level II  39.9 | 2nd: AdventHealth Palm Coast Parkwa 15.0
+beverly-beach            AdventHealth Palm Coast                          3.6 | Halifax Health Medical Center of Daytona Level II  22.4 | 2nd: AdventHealth Palm Coast Parkwa 6.5
+ormond-by-the-sea        AdventHealth Daytona Beach                       6.8 | Halifax Health Medical Center of Daytona Level II   9.0 | 2nd: Halifax Health Medical Center  8.9
+holly-hill               Halifax Health Medical Center of Daytona Beach   2.6 | Halifax Health Medical Center of Daytona Level II   2.6 | 2nd: AdventHealth Daytona Beach 4.9
+ponce-inlet              AdventHealth New Smyrna Beach                    4.2 | Halifax Health Medical Center of Daytona Level II  11.3 | 2nd: Halifax Health Medical Center  5.8
+edgewater                AdventHealth New Smyrna Beach                    2.2 | Halifax Health Medical Center of Daytona Level II  17.0 | 2nd: Halifax Health Medical Center  11.2
+cape-canaveral           Cape Canaveral Hospital                          3.7 | Holmes Regional Medical Center           Level II  22.1 | 2nd: Viera Hospital 14.9
+merritt-island           Cape Canaveral Hospital                          3.3 | Holmes Regional Medical Center           Level II  19.3 | 2nd: Viera Hospital 9.7
+cocoa-village            Cape Canaveral Hospital                          6.2 | Holmes Regional Medical Center           Level II  19.6 | 2nd: Viera Hospital 8.7
+rockledge                Cape Canaveral Hospital                          5.9 | Holmes Regional Medical Center           Level II  17.6 | 2nd: Viera Hospital 6.9
+indian-harbour-beach     Holmes Regional Medical Center                   4.1 | Holmes Regional Medical Center           Level II   4.1 | 2nd: Orlando Health Melbourne Hospi 5.4
+melbourne                Holmes Regional Medical Center                   1.1 | Holmes Regional Medical Center           Level II   1.0 | 2nd: Orlando Health Melbourne Hospi 5.0

@@ -1,0 +1,392 @@
+[
+ {
+  "k": 13,
+  "name": "HCA Florida Fawcett Hospital",
+  "city": "Port Charlotte",
+  "keep": true,
+  "note": "Merged row: two separate full hospitals with ERs about 1 mile apart. Fawcett Memorial renamed HCA Florida Fawcett Hospital; Bayfront/ShorePoint Health Port Charlotte bought by AdventHealth Mar 2025, now AdventHealth Port Charlotte (also full hospital with ER). Either name works",
+  "source": "https://www.chiefhealthcareexecutive.com/view/florida-hospital-system-gain-new-ownership"
+ },
+ {
+  "k": 57,
+  "name": "HCA Florida Englewood Hospital",
+  "city": "Englewood",
+  "keep": true,
+  "note": "Englewood Community Hospital renamed under HCA Florida branding (2021-22)",
+  "source": "https://www.businesswire.com/news/home/20211115005152/en"
+ },
+ {
+  "k": 216,
+  "name": "ShorePoint Health Punta Gorda",
+  "city": "Punta Gorda",
+  "keep": false,
+  "note": "Closed after Hurricane Helene surge Sept 2024, announced Dec 2024 it will not reopen; AdventHealth bought site Mar 2025 and plans only a freestanding ER",
+  "source": "https://www.adventhealth.com/news/adventhealth-expand-emergency-care-access-punta-gorda"
+ },
+ {
+  "k": 118,
+  "name": "Jupiter Medical Center",
+  "city": "Jupiter",
+  "keep": true,
+  "note": "Independent nonprofit, name unchanged",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 162,
+  "name": "Palm Beach Gardens Medical Center",
+  "city": "Palm Beach Gardens",
+  "keep": true,
+  "note": "Tenet, name unchanged",
+  "source": "https://www.beckershospitalreview.com/capital/palm-beach-gardens-medical-center-plans-16m-expansion/"
+ },
+ {
+  "k": 91,
+  "name": "HCA Florida JFK North Hospital",
+  "city": "West Palm Beach",
+  "keep": true,
+  "note": "Formerly West Palm Hospital / JFK Medical Center North Campus; renamed under HCA Florida branding",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 178,
+  "name": "St. Mary's Medical Center",
+  "city": "West Palm Beach",
+  "keep": true,
+  "note": "Tenet, name unchanged; Level I trauma center",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 70,
+  "name": "Good Samaritan Medical Center",
+  "city": "West Palm Beach",
+  "keep": true,
+  "note": "Tenet, name unchanged",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 44,
+  "name": "Cape Coral Hospital",
+  "city": "Cape Coral",
+  "keep": true,
+  "note": "Lee Health (not Lee Memorial) acute care hospital with 24/7 ER; Lee Health site writes it as Cape Coral Hospital, can say 'Lee Health Cape Coral Hospital'",
+  "source": "https://leehealth-production-website.azurewebsites.net/about-us/get-to-know-lee-health/lee-health-fast-facts/lee-health-four-acute-care-hospitals-fast-facts"
+ },
+ {
+  "k": 128,
+  "name": "Lee Memorial Hospital",
+  "city": "Fort Myers",
+  "keep": true,
+  "note": "Lee Health, 24/7 ER, open now but scheduled to close when replacement Lee Health Fort Myers opens about Dec 2027",
+  "source": "https://fox4now.com/fort-myers-metro-south/new-era-of-healthcare-in-fort-myers-lee-memorial-hospital-set-to-close-in-2027"
+ },
+ {
+  "k": 116,
+  "name": "HCA Florida JFK Hospital",
+  "city": "Atlantis",
+  "keep": true,
+  "note": "JFK Medical Center renamed under HCA Florida branding",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 72,
+  "name": "Gulf Coast Medical Center",
+  "city": "Fort Myers",
+  "keep": true,
+  "note": "Lee Health, Level II trauma center, 24/7 ER",
+  "source": "https://leehealth-production-website.azurewebsites.net/about-us/get-to-know-lee-health/lee-health-fast-facts/lee-health-four-acute-care-hospitals-fast-facts"
+ },
+ {
+  "k": 26,
+  "name": "Baptist Health Bethesda Hospital West",
+  "city": "Boynton Beach",
+  "keep": true,
+  "note": "Bethesda now part of Baptist Health South Florida",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 102,
+  "name": "HealthPark Medical Center",
+  "city": "Fort Myers",
+  "keep": true,
+  "note": "Lee Health, 24/7 ER",
+  "source": "https://leehealth-production-website.azurewebsites.net/about-us/get-to-know-lee-health/lee-health-fast-facts/lee-health-four-acute-care-hospitals-fast-facts"
+ },
+ {
+  "k": 36,
+  "name": "Baptist Health Bethesda Hospital East",
+  "city": "Boynton Beach",
+  "keep": true,
+  "note": "Formerly Bethesda Memorial Hospital; OSM city Delray Beach is wrong, address is Boynton Beach",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 50,
+  "name": "Delray Medical Center",
+  "city": "Delray Beach",
+  "keep": true,
+  "note": "Tenet, name unchanged; Level I trauma center",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 37,
+  "name": "Baptist Health Boca Raton Regional Hospital",
+  "city": "Boca Raton",
+  "keep": true,
+  "note": "Joined Baptist Health South Florida, renamed",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 198,
+  "name": "West Boca Medical Center",
+  "city": "Boca Raton",
+  "keep": true,
+  "note": "Tenet, name unchanged",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 41,
+  "name": "Broward Health North",
+  "city": "Deerfield Beach",
+  "keep": true,
+  "note": "Name unchanged; address is Deerfield Beach (hifld says Pompano Beach)",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 151,
+  "name": "NCH North Naples Hospital",
+  "city": "Naples",
+  "keep": true,
+  "note": "NCH Healthcare System North Naples campus, has ER",
+  "source": "https://nchmd.org/services/emergency-services/"
+ },
+ {
+  "k": 166,
+  "name": "Physicians Regional Medical Center Pine Ridge",
+  "city": "Naples",
+  "keep": true,
+  "note": "Community Health Systems; no sale or closure found as of 2026",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 39,
+  "name": "Broward Health Imperial Point",
+  "city": "Fort Lauderdale",
+  "keep": true,
+  "note": "Name unchanged",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 108,
+  "name": "Holy Cross Hospital",
+  "city": "Fort Lauderdale",
+  "keep": true,
+  "note": "Holy Cross Health (Trinity Health), name unchanged",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 67,
+  "name": "Florida Medical Center",
+  "city": "Lauderdale Lakes",
+  "keep": true,
+  "note": "Ex Tenet then Steward; since Steward bankruptcy (2024) run by HSA Florida, reported fully operational Mar 2026. Mailing city often Fort Lauderdale",
+  "source": "https://www.beckershospitalreview.com/legal-regulatory-issues/former-ceo-of-5-florida-hospitals-sued-over-bank-account-control/"
+ },
+ {
+  "k": 149,
+  "name": "NCH Baker Hospital Downtown",
+  "city": "Naples",
+  "keep": true,
+  "note": "Formerly Naples Community Hospital; NCH Baker campus has ER",
+  "source": "https://nchmd.org/services/emergency-services/"
+ },
+ {
+  "k": 358,
+  "name": "HCA Florida Plantation Emergency",
+  "city": "Plantation",
+  "keep": false,
+  "note": "Plantation General Hospital stopped inpatient care Nov 2021 and became a freestanding ER; nearest full HCA hospitals are HCA Florida Westside Hospital (Plantation) and HCA Florida University Hospital (Davie)",
+  "source": "https://www.beckershospitalreview.com/?p=189843"
+ },
+ {
+  "k": 167,
+  "name": "Physicians Regional Medical Center Collier Boulevard",
+  "city": "Naples",
+  "keep": true,
+  "note": "Community Health Systems; no sale or closure found as of 2026",
+  "source": "https://turquoise.health/providers/physicians-regional-medical-center-collier-boulev"
+ },
+ {
+  "k": 40,
+  "name": "Broward Health Medical Center",
+  "city": "Fort Lauderdale",
+  "keep": true,
+  "note": "Name unchanged; Level I trauma center",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 142,
+  "name": "Memorial Hospital Pembroke",
+  "city": "Pembroke Pines",
+  "keep": true,
+  "note": "Memorial Healthcare System, name unchanged",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 144,
+  "name": "Memorial Regional Hospital",
+  "city": "Hollywood",
+  "keep": true,
+  "note": "Memorial Healthcare System, Level I trauma center",
+  "source": "https://southfloridahospitalnews.com/memorial-regional-hospital-celebrates-70th-anniversary-with-88m-investment-in-patient-focused-infrastructure/"
+ },
+ {
+  "k": 145,
+  "name": "Memorial Regional Hospital South",
+  "city": "Hollywood",
+  "keep": true,
+  "note": "Memorial Healthcare System campus with acute beds, rehab and its own ER; very close to k 144 (Memorial Regional Hospital is the main one)",
+  "source": "https://daisyfoundation.org/node/370472894"
+ },
+ {
+  "k": 89,
+  "name": "HCA Florida Aventura Hospital",
+  "city": "Aventura",
+  "keep": true,
+  "note": "Formerly Aventura Hospital and Medical Center",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 112,
+  "name": "Jackson North Medical Center",
+  "city": "North Miami Beach",
+  "keep": true,
+  "note": "Jackson Health System, name unchanged",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 153,
+  "name": "North Shore Medical Center",
+  "city": "Miami",
+  "keep": true,
+  "note": "Ex Steward; run by HSA Florida since 2024, reported fully operational Mar 2026",
+  "source": "https://www.beckershospitalreview.com/legal-regulatory-issues/former-ceo-of-5-florida-hospitals-sued-over-bank-account-control/"
+ },
+ {
+  "k": 148,
+  "name": "Mount Sinai Medical Center",
+  "city": "Miami Beach",
+  "keep": true,
+  "note": "Independent, name unchanged",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 111,
+  "name": "Jackson Memorial Hospital",
+  "city": "Miami",
+  "keep": true,
+  "note": "Merged row: Jackson Memorial (general hospital, Ryder Trauma Center ER) plus neighboring UHealth Tower / University of Miami Hospital; use Jackson Memorial",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 49,
+  "name": "Coral Gables Hospital",
+  "city": "Coral Gables",
+  "keep": true,
+  "note": "Ex Steward; run by HSA Florida since 2024, reported fully operational Mar 2026",
+  "source": "https://www.beckershospitalreview.com/legal-regulatory-issues/former-ceo-of-5-florida-hospitals-sued-over-bank-account-control/"
+ },
+ {
+  "k": 146,
+  "name": "HCA Florida Mercy Hospital",
+  "city": "Miami",
+  "keep": true,
+  "note": "Mercy Hospital renamed under HCA Florida branding",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 200,
+  "name": "Baptist Health West Kendall Baptist Hospital",
+  "city": "Miami",
+  "keep": true,
+  "note": "Baptist Health South Florida, Baptist Health prefix added",
+  "source": "https://baptisthealth.net/newsroom/press-release/baptist-health-celebrates-the-grand-opening-of-baptist-health-hospital-in-doral"
+ },
+ {
+  "k": 113,
+  "name": "Jackson South Medical Center",
+  "city": "Miami",
+  "keep": true,
+  "note": "Formerly Jackson South Community Hospital",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 109,
+  "name": "Baptist Health Homestead Hospital",
+  "city": "Homestead",
+  "keep": true,
+  "note": "Baptist Health prefix added",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 133,
+  "name": "Baptist Health Mariners Hospital",
+  "city": "Tavernier",
+  "keep": true,
+  "note": "Baptist Health prefix added",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 59,
+  "name": "Baptist Health Fishermen's Community Hospital",
+  "city": "Marathon",
+  "keep": true,
+  "note": "Rebuilt after Hurricane Irma, renamed from Fishermen's Hospital",
+  "source": "https://wiki.krisyotam.com/content/wikipedia_en_all_nopic_2026-03/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 130,
+  "name": "Lower Keys Medical Center",
+  "city": "Key West",
+  "keep": true,
+  "note": "Community Health Systems, Key West's only hospital; name unchanged, county board seeking new operator for when lease ends 2029",
+  "source": "https://health.wusf.usf.edu/health-news-florida/2025-03-10/key-wests-only-hospital-seeks-a-new-operator-as-lease-nears-expiration-in-2029"
+ },
+ {
+  "k": 239,
+  "name": "Lower Keys Medical Center DePoo Medical Building",
+  "city": "Key West",
+  "keep": false,
+  "note": "Old DePoo Hospital is now a Lower Keys Medical Center behavioral health / medical office building, not a general hospital with ER; use k 130",
+  "source": "https://lkmc.com/depoo-medical-building"
+ },
+ {
+  "k": null,
+  "name": "HCA Florida University Hospital",
+  "city": "Davie",
+  "keep": true,
+  "lat": 26.081,
+  "lon": -80.243,
+  "note": "New full hospital opened Nov 2021 on NSU campus with ER; inland Broward, replaced Plantation General inpatient",
+  "source": "https://www.beckershospitalreview.com/?p=189843"
+ },
+ {
+  "k": null,
+  "name": "Jackson West Medical Center",
+  "city": "Doral",
+  "keep": true,
+  "lat": 25.802,
+  "lon": -80.325,
+  "note": "New Jackson Health hospital opened Aug 2021 with ER; inland Miami-Dade",
+  "source": "https://jacksonhealth.org/newsroom/jackson-west-medical-center-celebrates-grand-opening-with-ribbon-cutting-ceremony/"
+ },
+ {
+  "k": null,
+  "name": "Baptist Health Hospital Doral",
+  "city": "Doral",
+  "keep": true,
+  "lat": 25.824,
+  "lon": -80.348,
+  "note": "New Baptist Health hospital in Doral with ER, opened after 2018; inland Miami-Dade, coordinates approximate",
+  "source": "https://baptisthealth.net/newsroom/press-release/baptist-health-celebrates-the-grand-opening-of-baptist-health-hospital-in-doral"
+ }
+]

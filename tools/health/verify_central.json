@@ -1,0 +1,420 @@
+[
+ {
+  "k": 189,
+  "name": "Tampa General Hospital Crystal River",
+  "city": "Crystal River",
+  "keep": true,
+  "note": "formerly Seven Rivers Regional / Bravera Seven Rivers; TGH acquired Dec 2023",
+  "source": "https://www.tghnorth.org/locations"
+ },
+ {
+  "k": 90,
+  "name": "HCA Florida Citrus Hospital",
+  "city": "Inverness",
+  "keep": true,
+  "note": "formerly Citrus Memorial; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/citrus-hospital"
+ },
+ {
+  "k": 160,
+  "name": "Oviedo Medical Center",
+  "city": "Oviedo",
+  "keep": true,
+  "note": "HCA hospital, name unchanged",
+  "source": "https://hcafloridahealthcare.com/locations/oviedo-medical-center"
+ },
+ {
+  "k": 165,
+  "name": "Parrish Medical Center",
+  "city": "Titusville",
+  "keep": true,
+  "note": "system brands as Parrish Healthcare; hospital still Parrish Medical Center with ER",
+  "source": "https://www.parrishhealthcare.com/services/emergency-services/"
+ },
+ {
+  "k": 188,
+  "name": "Tampa General Hospital Brooksville",
+  "city": "Brooksville",
+  "keep": true,
+  "note": "formerly Bayfront Health / Bravera Brooksville; TGH acquired Dec 2023",
+  "source": "https://www.tghnorth.org/locations"
+ },
+ {
+  "k": 82,
+  "name": "HCA Florida Oak Hill Hospital",
+  "city": "Brooksville",
+  "keep": true,
+  "note": "formerly Oak Hill Hospital; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/oak-hill-hospital"
+ },
+ {
+  "k": 35,
+  "name": "Tampa General Hospital Spring Hill",
+  "city": "Spring Hill",
+  "keep": true,
+  "note": "formerly Bayfront Health / Bravera Spring Hill; TGH acquired Dec 2023",
+  "source": "https://www.tghnorth.org/locations"
+ },
+ {
+  "k": 76,
+  "name": "HCA Florida Bayonet Point Hospital",
+  "city": "Hudson",
+  "keep": true,
+  "note": "formerly Regional Medical Center Bayonet Point; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/bayonet-point-hospital"
+ },
+ {
+  "k": 43,
+  "name": "Cape Canaveral Hospital",
+  "city": "Cocoa Beach",
+  "keep": true,
+  "note": "open now; replacement hospital on Merritt Island expected 1H 2027, Cocoa Beach site to close then",
+  "source": "https://mymerrittislandfl.com/cape-canaveral-hospital-in-merritt-island-hosts-ceremony/"
+ },
+ {
+  "k": 411,
+  "name": "Rockledge Hospital",
+  "city": "Rockledge",
+  "keep": false,
+  "note": "ex Wuesthoff/Steward Rockledge; Orlando Health bought it Oct 2024 and closed it incl. ER April 2025",
+  "source": "https://www.beckershospitalreview.com/finance/orlando-health-to-close-298-bed-hospital-acquired-in-october/"
+ },
+ {
+  "k": 34,
+  "name": "Morton Plant North Bay Hospital",
+  "city": "New Port Richey",
+  "keep": true,
+  "note": "BayCare hospital, name unchanged",
+  "source": "https://baycare.org/locations/hospitals/morton-plant-north-bay-hospital"
+ },
+ {
+  "k": 321,
+  "name": "HCA Florida Trinity West (behavioral health, closed)",
+  "city": "New Port Richey",
+  "keep": false,
+  "note": "old Trinity West Pasco campus was a psych hospital, not general; HCA closed it Sept 2023",
+  "source": "https://www.axios.com/local/tampa-bay/2023/10/04/pasco-mental-health-hospital-closed-hca-trinity-west-north-port"
+ },
+ {
+  "k": 196,
+  "name": "Viera Hospital",
+  "city": "Melbourne",
+  "keep": true,
+  "note": "name unchanged, Health First",
+  "source": "https://en.wikipedia.org/wiki/Health_First"
+ },
+ {
+  "k": 87,
+  "name": "HCA Florida Trinity Hospital",
+  "city": "Trinity",
+  "keep": true,
+  "note": "formerly Medical Center of Trinity; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/trinity-hospital/specialties/emergency-care"
+ },
+ {
+  "k": 7,
+  "name": "AdventHealth North Pinellas",
+  "city": "Tarpon Springs",
+  "keep": true,
+  "note": "formerly Florida Hospital North Pinellas; renamed 2019",
+  "source": "https://www.adventhealth.com/hospital/adventhealth-north-pinellas"
+ },
+ {
+  "k": 139,
+  "name": "Orlando Health Melbourne Hospital",
+  "city": "Melbourne",
+  "keep": true,
+  "note": "hifld Wuesthoff Melbourne and osm Melbourne Regional Medical Center are this same site; Orlando Health bought from Steward Oct 2024",
+  "source": "https://www.orlandohealth.com/facilities/melbourne-hospital/services"
+ },
+ {
+  "k": 107,
+  "name": "Holmes Regional Medical Center",
+  "city": "Melbourne",
+  "keep": true,
+  "note": "Health First flagship, Level II trauma",
+  "source": "https://en.wikipedia.org/wiki/Health_First"
+ },
+ {
+  "k": 137,
+  "name": "Mease Countryside Hospital",
+  "city": "Safety Harbor",
+  "keep": true,
+  "note": "BayCare hospital, name unchanged",
+  "source": "https://baycare.org/locations/hospitals/mease-countryside-hospital"
+ },
+ {
+  "k": 138,
+  "name": "Mease Dunedin Hospital",
+  "city": "Dunedin",
+  "keep": true,
+  "note": "BayCare hospital, name unchanged",
+  "source": "https://baycare.org/locations/hospitals/mease-dunedin-hospital"
+ },
+ {
+  "k": 1,
+  "name": "AdventHealth Carrollwood",
+  "city": "Tampa",
+  "keep": true,
+  "note": "formerly Florida Hospital Carrollwood; renamed 2019",
+  "source": "https://www.adventhealth.com/hospital/adventhealth-carrollwood"
+ },
+ {
+  "k": 88,
+  "name": "HCA Florida West Tampa Hospital",
+  "city": "Tampa",
+  "keep": true,
+  "note": "formerly Tampa Community Hospital; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/west-tampa-hospital"
+ },
+ {
+  "k": 161,
+  "name": "Palm Bay Hospital",
+  "city": "Palm Bay",
+  "keep": true,
+  "note": "name unchanged, Health First",
+  "source": "https://en.wikipedia.org/wiki/Health_First"
+ },
+ {
+  "k": 175,
+  "name": "St. Joseph's Hospital",
+  "city": "Tampa",
+  "keep": true,
+  "note": "BayCare hospital, name unchanged",
+  "source": "https://baycare.org/locations/hospitals/st-josephs-hospital"
+ },
+ {
+  "k": 147,
+  "name": "Morton Plant Hospital",
+  "city": "Clearwater",
+  "keep": true,
+  "note": "BayCare hospital, name unchanged",
+  "source": "https://baycare.org/locations/hospitals/morton-plant-hospital"
+ },
+ {
+  "k": 86,
+  "name": "HCA Florida South Tampa Hospital",
+  "city": "Tampa",
+  "keep": true,
+  "note": "formerly Memorial Hospital of Tampa; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/south-tampa-hospital"
+ },
+ {
+  "k": 187,
+  "name": "Tampa General Hospital",
+  "city": "Tampa",
+  "keep": true,
+  "note": "name unchanged, Level I trauma",
+  "source": "https://www.tgh.org"
+ },
+ {
+  "k": 78,
+  "name": "HCA Florida Brandon Hospital",
+  "city": "Brandon",
+  "keep": true,
+  "note": "formerly Brandon Regional Hospital; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/brandon-hospital"
+ },
+ {
+  "k": 79,
+  "name": "HCA Florida Largo Hospital",
+  "city": "Largo",
+  "keep": true,
+  "note": "formerly Largo Medical Center; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/largo-hospital"
+ },
+ {
+  "k": 80,
+  "name": "HCA Florida Largo West Hospital",
+  "city": "Largo",
+  "keep": true,
+  "note": "formerly Largo Medical Center Indian Rocks campus; HCA rebrand 2021, has ER",
+  "source": "https://www.hcafloridahealthcare.com/locations/largo-west-hospital"
+ },
+ {
+  "k": 183,
+  "name": "Orlando Health Sebastian River Hospital",
+  "city": "Sebastian",
+  "keep": true,
+  "note": "formerly Sebastian River Medical Center (Steward); Orlando Health bought Oct 2024",
+  "source": "https://jobs.practicelink.com/facility/orlando-health-sebastian-river-hospital/orlando-health/"
+ },
+ {
+  "k": 81,
+  "name": "HCA Florida Northside Hospital",
+  "city": "St. Petersburg",
+  "keep": true,
+  "note": "formerly Northside Hospital; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/northside-hospital"
+ },
+ {
+  "k": 84,
+  "name": "HCA Florida St. Petersburg Hospital",
+  "city": "St. Petersburg",
+  "keep": true,
+  "note": "formerly St. Petersburg General; HCA rebrand 2021, 24/7 ER confirmed",
+  "source": "https://hcafloridahealthcare.com/locations/st-petersburg-hospital/about-us"
+ },
+ {
+  "k": 177,
+  "name": "St. Joseph's Hospital-South",
+  "city": "Riverview",
+  "keep": true,
+  "note": "BayCare hospital, name unchanged",
+  "source": "https://baycare.org/locations/hospitals/st-josephs-hospital-south"
+ },
+ {
+  "k": 173,
+  "name": "St. Anthony's Hospital",
+  "city": "St. Petersburg",
+  "keep": true,
+  "note": "BayCare hospital, name unchanged",
+  "source": "https://baycare.org/locations/hospitals/st-anthonys-hospital"
+ },
+ {
+  "k": 156,
+  "name": "Orlando Health Bayfront Hospital",
+  "city": "St. Petersburg",
+  "keep": true,
+  "note": "formerly Bayfront Medical Center / Bayfront Health St. Petersburg; Orlando Health since 2020",
+  "source": "https://www.orlandohealth.com/facilities/bayfront-hospital"
+ },
+ {
+  "k": 83,
+  "name": "HCA Florida Pasadena Hospital",
+  "city": "St. Petersburg",
+  "keep": true,
+  "note": "formerly Palms of Pasadena Hospital; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/pasadena-hospital"
+ },
+ {
+  "k": 85,
+  "name": "HCA Florida South Shore Hospital",
+  "city": "Sun City Center",
+  "keep": true,
+  "note": "formerly South Bay Hospital; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/south-shore-hospital"
+ },
+ {
+  "k": 47,
+  "name": "Cleveland Clinic Indian River Hospital",
+  "city": "Vero Beach",
+  "keep": true,
+  "note": "formerly Indian River Medical Center; Cleveland Clinic since 2019",
+  "source": "https://newsroom.clevelandclinic.org/2019/01/09/cleveland-clinic-indian-river-medical-center-and-martin-health-system-celebrate-hospital-integration/"
+ },
+ {
+  "k": 132,
+  "name": "Manatee Memorial Hospital",
+  "city": "Bradenton",
+  "keep": true,
+  "note": "UHS hospital, name unchanged",
+  "source": "https://www.manateememorial.com"
+ },
+ {
+  "k": 77,
+  "name": "HCA Florida Blake Hospital",
+  "city": "Bradenton",
+  "keep": true,
+  "note": "formerly Blake Medical Center; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/blake-hospital"
+ },
+ {
+  "k": 93,
+  "name": "HCA Florida Lawnwood Hospital",
+  "city": "Fort Pierce",
+  "keep": true,
+  "note": "formerly Lawnwood Regional Medical Center & Heart Institute; HCA rebrand 2021",
+  "source": "https://www.hcafloridahealthcare.com/locations/lawnwood-hospital"
+ },
+ {
+  "k": 125,
+  "name": "Lakewood Ranch Medical Center",
+  "city": "Lakewood Ranch",
+  "keep": true,
+  "note": "UHS hospital, name unchanged",
+  "source": "https://www.lakewoodranchmedicalcenter.com"
+ },
+ {
+  "k": 181,
+  "name": "Sarasota Memorial Hospital",
+  "city": "Sarasota",
+  "keep": true,
+  "note": "name unchanged, Level II trauma",
+  "source": "https://www.smh.com"
+ },
+ {
+  "k": 54,
+  "name": "HCA Florida Sarasota Doctors Hospital",
+  "city": "Sarasota",
+  "keep": true,
+  "note": "formerly Doctors Hospital of Sarasota; rebranded 2022",
+  "source": "https://sarasotamagazine.com/2022/03/doctors-hospital-of-sarasota-rebrands-as-hca-florida-sarasota-doctors-hospital"
+ },
+ {
+  "k": 98,
+  "name": "HCA Florida St. Lucie Hospital",
+  "city": "Port St. Lucie",
+  "keep": true,
+  "note": "formerly St. Lucie Medical Center; HCA rebrand 2021",
+  "source": "https://jobs.practicelink.com/facility/hca-florida-st-lucie-hospital/hca-healthcare"
+ },
+ {
+  "k": 48,
+  "name": "Cleveland Clinic Tradition Hospital",
+  "city": "Port St. Lucie",
+  "keep": true,
+  "note": "formerly Tradition Medical Center; Cleveland Clinic rebrand",
+  "source": "https://www.beckersspine.com/orthopedic-spine-practices-improving-profits/cleveland-clinic-rebrands-newly-acquired-hospitals-continues-30m-spine-center-3-takeaways/"
+ },
+ {
+  "k": 61,
+  "name": "Florida Coast Medical Center",
+  "city": "Port St. Lucie",
+  "keep": true,
+  "note": "new Tenet hospital, opened Sept 9 2025 with ER",
+  "source": "https://www.palmbeachhealthnetwork.com/news/newsroom/2025/09/10/florida-coast-medical-center-officially-opens-to-the-treasure-coast-community"
+ },
+ {
+  "k": 135,
+  "name": "Cleveland Clinic Martin North Hospital",
+  "city": "Stuart",
+  "keep": true,
+  "note": "formerly Martin Memorial Medical Center; Cleveland Clinic rebrand",
+  "source": "https://www.beckersspine.com/orthopedic-spine-practices-improving-profits/cleveland-clinic-rebrands-newly-acquired-hospitals-continues-30m-spine-center-3-takeaways/"
+ },
+ {
+  "k": 182,
+  "name": "Sarasota Memorial Hospital-Venice",
+  "city": "Venice",
+  "keep": true,
+  "note": "opened Nov 2021 (address North Venice), ER expanded Jan 2025",
+  "source": "https://www.smh.com/SMH-VENICE"
+ },
+ {
+  "k": 134,
+  "name": "Cleveland Clinic Martin South Hospital",
+  "city": "Stuart",
+  "keep": true,
+  "note": "formerly Martin Memorial Hospital South; Cleveland Clinic rebrand",
+  "source": "https://www.beckersspine.com/orthopedic-spine-practices-improving-profits/cleveland-clinic-rebrands-newly-acquired-hospitals-continues-30m-spine-center-3-takeaways/"
+ },
+ {
+  "k": 397,
+  "name": "ShorePoint Health Venice",
+  "city": "Venice",
+  "keep": false,
+  "note": "ex Venice Regional Medical Center; CHS closed ER Aug 2022 and hospital Sept 2022",
+  "source": "https://en.wikipedia.org/wiki/ShorePoint_Health_Venice"
+ },
+ {
+  "k": null,
+  "name": "AdventHealth Riverview",
+  "city": "Riverview",
+  "keep": true,
+  "lat": 27.861,
+  "lon": -82.325,
+  "note": "new full hospital with ER, opened Oct 23 2024 at 9330 US 301 S",
+  "source": "https://en.wikipedia.org/wiki/AdventHealth_Riverview"
+ }
+]

@@ -1,0 +1,380 @@
+[
+ {
+  "k": 152,
+  "name": "North Okaloosa Medical Center",
+  "city": "Crestview",
+  "keep": true,
+  "note": "still CHS owned, name unchanged; ER listed",
+  "source": "https://www.northokaloosa.com/"
+ },
+ {
+  "k": 154,
+  "name": "North Walton Doctors Hospital",
+  "city": "DeFuniak Springs",
+  "keep": true,
+  "note": "Healthmark closed Mar 2022; reopened as North Walton Doctors Hospital Sept 2024, ER open 24/7 (small, financially fragile; HCA freestanding ER also opened nearby 2026)",
+  "source": "https://nwdhospital.com/"
+ },
+ {
+  "k": 30,
+  "name": "Baptist Medical Center Nassau",
+  "city": "Fernandina Beach",
+  "keep": true,
+  "note": "name unchanged",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 180,
+  "name": "Santa Rosa Medical Center",
+  "city": "Milton",
+  "keep": true,
+  "note": "CHS hospital (not HCA), name unchanged",
+  "source": "https://www.srmcfl.com/hospital-about-us"
+ },
+ {
+  "k": 233,
+  "name": "HCA Florida Gadsden Emergency",
+  "city": "Quincy",
+  "keep": false,
+  "note": "freestanding ER of HCA Florida Capital Hospital, not a hospital",
+  "source": "https://www.hcafloridahealthcare.com/locations/gadsden-emergency"
+ },
+ {
+  "k": 190,
+  "name": "HCA Florida Twin Cities Hospital",
+  "city": "Niceville",
+  "keep": true,
+  "note": "renamed 2021 (was Twin Cities Hospital)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 20,
+  "name": "Ascension Sacred Heart Emergency Care - Nine Mile",
+  "city": "Pensacola",
+  "keep": false,
+  "note": "freestanding ER, not a hospital",
+  "source": "https://healthcare.ascension.org/locations/florida/flpen/pensacola-emergency-department-ascension-sacred-heart-at-nine-mile-road"
+ },
+ {
+  "k": 199,
+  "name": "HCA Florida West Hospital",
+  "city": "Pensacola",
+  "keep": true,
+  "note": "renamed 2021 (was West Florida Hospital)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 394,
+  "name": "UF Health North",
+  "city": "Jacksonville",
+  "keep": true,
+  "note": "full hospital with ER, opened 2017",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 170,
+  "name": "Ascension Sacred Heart Pensacola",
+  "city": "Pensacola",
+  "keep": true,
+  "note": "renamed (was Sacred Heart Hospital of Pensacola)",
+  "source": "https://healthcare.ascension.org/locations/florida/flpen/pensacola-emergency-department-ascension-sacred-heart-pensacola"
+ },
+ {
+  "k": 45,
+  "name": "HCA Florida Capital Hospital",
+  "city": "Tallahassee",
+  "keep": true,
+  "note": "renamed 2021 (was Capital Regional Medical Center)",
+  "source": "https://en.wikipedia.org/wiki/HCA_Florida_Capital_Hospital"
+ },
+ {
+  "k": 131,
+  "name": "Madison County Memorial Hospital",
+  "city": "Madison",
+  "keep": true,
+  "note": "rural hospital, open with ER",
+  "source": "https://turquoise.health/providers/madison-county-memorial-hospital"
+ },
+ {
+  "k": 42,
+  "name": "Calhoun Liberty Hospital",
+  "city": "Blountstown",
+  "keep": true,
+  "note": "moved into new $47M replacement building in Blountstown Aug 2025; coordinates may shift slightly",
+  "source": "https://www.wjhg.com/2025/11/21/calhoun-liberty-hospital-is-settling-into-its-new-state-of-the-art-facility"
+ },
+ {
+  "k": 186,
+  "name": "Tallahassee Memorial HealthCare",
+  "city": "Tallahassee",
+  "keep": true,
+  "note": "name unchanged (main hospital)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 68,
+  "name": "HCA Florida Fort Walton-Destin Hospital",
+  "city": "Fort Walton Beach",
+  "keep": true,
+  "note": "renamed 2021 (was Fort Walton Beach Medical Center)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 205,
+  "name": "Baptist Hospital",
+  "city": "Pensacola",
+  "keep": true,
+  "note": "moved to new campus at 123 Baptist Way in 2023, same location as these coordinates",
+  "source": "https://en.wikipedia.org/wiki/Baptist_Hospital_(Pensacola)"
+ },
+ {
+  "k": 171,
+  "name": "Ascension Sacred Heart Emerald Coast",
+  "city": "Miramar Beach",
+  "keep": true,
+  "note": "renamed (was Sacred Heart Hospital on the Emerald Coast)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 71,
+  "name": "Gulf Breeze Hospital",
+  "city": "Gulf Breeze",
+  "keep": true,
+  "note": "Baptist Health Care, name unchanged",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 191,
+  "name": "UF Health Jacksonville",
+  "city": "Jacksonville",
+  "keep": true,
+  "note": "name unchanged",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 29,
+  "name": "Baptist Medical Center Jacksonville",
+  "city": "Jacksonville",
+  "keep": true,
+  "note": "name unchanged",
+  "source": "https://www.baptistjax.com/"
+ },
+ {
+  "k": 24,
+  "name": "Ascension St. Vincent's Riverside",
+  "city": "Jacksonville",
+  "keep": true,
+  "note": "renamed (was St. Vincent's Medical Center Riverside)",
+  "source": "https://healthcare.ascension.org/"
+ },
+ {
+  "k": 371,
+  "name": "HCA Florida Suwannee Emergency",
+  "city": "Live Oak",
+  "keep": false,
+  "note": "Shands Live Oak ended inpatient care 2020, sold to HCA, now freestanding ER only",
+  "source": "https://hcafloridahealthcare.com/locations/suwannee-emergency"
+ },
+ {
+  "k": 140,
+  "name": "HCA Florida Memorial Hospital",
+  "city": "Jacksonville",
+  "keep": true,
+  "note": "renamed 2021 (was Memorial Hospital Jacksonville)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 28,
+  "name": "Baptist Medical Center Beaches",
+  "city": "Jacksonville Beach",
+  "keep": true,
+  "note": "name unchanged",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 136,
+  "name": "Mayo Clinic in Florida",
+  "city": "Jacksonville",
+  "keep": true,
+  "note": "Mayo Clinic Hospital on the Jacksonville campus has a 24/7 ER; Mayo calls the campus Mayo Clinic in Florida",
+  "source": "https://www.mayoclinic.org/patient-visitor-guide/florida/clinic-hospital-buildings/mayo-clinic-hospital"
+ },
+ {
+  "k": 22,
+  "name": "Ascension St. Vincent's Southside",
+  "city": "Jacksonville",
+  "keep": true,
+  "note": "renamed (was St. Vincent's Medical Center Southside)",
+  "source": "https://healthcare.ascension.org/"
+ },
+ {
+  "k": 275,
+  "name": "HCA Florida Gulf Coast Hospital",
+  "city": "Panama City",
+  "keep": true,
+  "note": "renamed 2021 (was Gulf Coast Regional Medical Center)",
+  "source": "https://www.wjhg.com/2026/08/20/hca-florida-gulf-coast-hospital-announces-125-million-expansion/"
+ },
+ {
+  "k": 120,
+  "name": "HCA Florida Lake City Hospital",
+  "city": "Lake City",
+  "keep": true,
+  "note": "renamed 2021 (was Lake City Medical Center)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 21,
+  "name": "Ascension Sacred Heart Bay",
+  "city": "Panama City",
+  "keep": true,
+  "note": "renamed (was Bay Medical Center Sacred Heart)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 31,
+  "name": "Baptist Medical Center South",
+  "city": "Jacksonville",
+  "keep": true,
+  "note": "name unchanged",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 55,
+  "name": "Doctors' Memorial Hospital",
+  "city": "Perry",
+  "keep": true,
+  "note": "rural hospital, open with ER",
+  "source": "https://www.wctv.tv/2025/08/06/doctors-memorial-hospital-opens-new-pediatric-service-perry"
+ },
+ {
+  "k": 23,
+  "name": "Ascension St. Vincent's St. Johns County",
+  "city": "St. Johns",
+  "keep": true,
+  "note": "new hospital opened July 2022 (56 beds, ER); not in 2018 data",
+  "source": "https://www.beckershospitalreview.com/capital/ascension-opens-florida-hospital.html"
+ },
+ {
+  "k": 60,
+  "name": "UF Health Flagler Hospital",
+  "city": "St. Augustine",
+  "keep": true,
+  "note": "renamed Sept 2023 after UF Health acquired Flagler Health+",
+  "source": "https://stjohns.ufhealth.org/uf-health-st-johns/frequently-asked-questions/"
+ },
+ {
+  "k": 172,
+  "name": "Ascension Sacred Heart Gulf",
+  "city": "Port St. Joe",
+  "keep": true,
+  "note": "renamed (was Sacred Heart Hospital on the Gulf)",
+  "source": "https://www.practicematch.com/employer/ascension-sacred-heart-gulf/989456"
+ },
+ {
+  "k": 69,
+  "name": "George E. Weems Memorial Hospital",
+  "city": "Apalachicola",
+  "keep": true,
+  "note": "critical access hospital, open with ER",
+  "source": "https://www.apalachicolabay.org/business/george-e-weems-memorial-hospital/"
+ },
+ {
+  "k": 150,
+  "name": "HCA Florida North Florida Hospital",
+  "city": "Gainesville",
+  "keep": true,
+  "note": "renamed 2021 (was North Florida Regional Medical Center)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 195,
+  "name": "UF Health Shands Hospital",
+  "city": "Gainesville",
+  "keep": true,
+  "note": "current name",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 12,
+  "name": "AdventHealth Palm Coast Parkway",
+  "city": "Palm Coast",
+  "keep": true,
+  "note": "new full hospital opened 2023, not in 2018 data",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 11,
+  "name": "AdventHealth Palm Coast",
+  "city": "Palm Coast",
+  "keep": true,
+  "note": "renamed 2019 (was Florida Hospital Flagler)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 66,
+  "name": "AdventHealth Daytona Beach",
+  "city": "Daytona Beach",
+  "keep": true,
+  "note": "renamed 2019 (was Florida Hospital Memorial Medical Center)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 73,
+  "name": "Halifax Health Medical Center of Daytona Beach",
+  "city": "Daytona Beach",
+  "keep": true,
+  "note": "name unchanged",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 8,
+  "name": "AdventHealth Ocala",
+  "city": "Ocala",
+  "keep": true,
+  "note": "row merges two adjacent full hospitals with ERs: AdventHealth Ocala (was Munroe Regional) and HCA Florida Ocala Hospital (was Ocala Regional); both keep, AdventHealth Ocala is the larger",
+  "source": "https://hcafloridahealthcare.com/locations/ocala-hospital"
+ },
+ {
+  "k": 99,
+  "name": "HCA Florida West Marion Hospital",
+  "city": "Ocala",
+  "keep": true,
+  "note": "renamed 2021 (was West Marion Community Hospital)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": 74,
+  "name": "Halifax Health Medical Center of Port Orange",
+  "city": "Port Orange",
+  "keep": true,
+  "note": "inpatient hospital with ER, name unchanged",
+  "source": "https://halifaxhealth.org/locations/halifax-health-medical-center-of-port-orange"
+ },
+ {
+  "k": 14,
+  "name": "AdventHealth Port Orange ER",
+  "city": "Port Orange",
+  "keep": false,
+  "note": "freestanding ER opened 2021, not a hospital",
+  "source": "https://www.adventhealth.com/locations/emergency-rooms/port-orange"
+ },
+ {
+  "k": 6,
+  "name": "AdventHealth New Smyrna Beach",
+  "city": "New Smyrna Beach",
+  "keep": true,
+  "note": "renamed 2019 (was Florida Hospital New Smyrna)",
+  "source": "https://en.wikipedia.org/wiki/List_of_hospitals_in_Florida"
+ },
+ {
+  "k": null,
+  "name": "Baptist Medical Center Clay",
+  "city": "Fleming Island",
+  "keep": true,
+  "lat": 30.093,
+  "lon": -81.716,
+  "note": "new full hospital with ER opened Dec 2022, not in 2018 data; lat/lon approximate",
+  "source": "https://www.baptistjax.com/about-us/newsroom/news-releases/new-baptist-medical-center-clay-officially-opens-today-monday-dec-19"
+ }
+]
