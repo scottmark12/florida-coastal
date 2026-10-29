@@ -301,7 +301,7 @@ function vPanel(o,s){
     body=`<div class="vp-body vp-cardv" aria-live="polite"><button class="vp-back" data-vback="1">${back}</button><div class="vp-ph">${art(s)}</div><span class="cat">${(regionOf[s.id]||{}).map||s.region}</span><h3>${s.name}</h3><div class="smap-tags">${s.vibes.map(e=>`<span class="stag"><i style="background:${VCOL[e]}"></i>${VSHORT[e]||VIBES[e]}</span>`).join("")}</div><p class="vp-blurb">${s.blurb}</p>${scorecard(s,!0)}<a class="vp-ink" href="#town-${s.id}">Explore ${short(s)} →</a></div>`;
   }else if(S.vibe){
     const L=smapOrder();
-    body=`<div class="vp-head"><button class="vp-back" data-vibe="">← All vibes</button><h3><i style="background:${VCOL[S.vibe]}"></i>${VIBES[S.vibe]}</h3><p>${L.length} towns, coast order from the Panhandle around to the Keys. Tap one to open it.</p></div><div class="vp-body vp-list">${L.map(vRow).join("")}</div>`;
+    body=`<div class="vp-head" style="--vc:${VCOL[S.vibe]}"><button class="vp-back" data-vibe="">← All vibes</button><h3><i style="background:${VCOL[S.vibe]}"></i>${VIBES[S.vibe]}</h3><p>${L.length} towns, coast order from the Panhandle around to the Keys. Tap one to open it.</p></div><div class="vp-body vp-list">${L.map(vRow).join("")}</div>`;
   }else{
     const V=VGROUPS.flatMap(g=>g[1]);
     body=`<div class="vp-body vp-hook"><h3>What should home feel like?</h3><p>Pick a vibe and its towns light up on the map.</p><div class="vp-grid">${V.map(v=>`<button class="vp-v" data-vibe="${v}"><i style="background:${VCOL[v]}"></i><span><b>${VSHORT[v]||VIBES[v]}</b><small>${VSUB[v]||""}</small></span><em>${o[v]}</em></button>`).join("")}</div><p class="vp-or">Or tap any dot to meet a town.</p></div>`;
@@ -311,7 +311,7 @@ function vPanel(o,s){
 function vCta(){return "map"===curRoute()?'<div class="vp-cta"><a class="btn btn-accent" href="#quiz">See your top 5 towns</a><p>'+SQ.length+' quick questions, matched to how you live</p></div>':""}
 function vPhoneTop(o){
   const V=VGROUPS.flatMap(g=>g[1]),ord=S.vibe?[S.vibe].concat(V.filter(v=>v!==S.vibe)):V,n=S.vibe?o[S.vibe]:T.length;
-  return `<div class="vp-chips" role="group" aria-label="Pick a vibe"><button class="vp-c${S.vibe?"":" on"}" data-vibe="">All</button>${ord.map(v=>`<button class="vp-c${S.vibe===v?" on":""}" data-vibe="${v}"><i style="background:${VCOL[v]}"></i>${VSHORT[v]||VIBES[v]}</button>`).join("")}</div><div class="vp-switch" role="group" aria-label="Show as"><button data-vlist="0" aria-pressed="${!S.vlist}">Map</button><button data-vlist="1" aria-pressed="${!!S.vlist}">List · ${n}</button></div>`;
+  return `<div class="vp-chips" role="group" aria-label="Pick a vibe"><button class="vp-c${S.vibe?"":" on"}" data-vibe="">All</button>${ord.map(v=>`<button class="vp-c${S.vibe===v?" on":""}" data-vibe="${v}" style="--vc:${VCOL[v]}"><i style="background:${VCOL[v]}"></i>${VSHORT[v]||VIBES[v]}</button>`).join("")}</div><div class="vp-switch" role="group" aria-label="Show as"><button data-vlist="0" aria-pressed="${!S.vlist}">Map</button><button data-vlist="1" aria-pressed="${!!S.vlist}">List · ${n}</button></div>`;
 }
 document.addEventListener("click",function(e){
   if(!e.target.closest)return;

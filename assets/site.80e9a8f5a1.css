@@ -1202,3 +1202,9 @@ body,header.top,.tnav,.cmp-head{background:var(--page)}
 .sl-top5 .pct small{font:500 12.5px var(--ui);color:var(--muted)}
 :root{--fit-good:#7FA3A5;--fit-strong:#2E5A60}
 @media (max-width:700px){.sl-top5 .pct b{font-size:13px}.sl-top5 .pct small{display:none}.sl-h{font-size:19px}}
+
+/* ===== Oct 29 2026 patch: the picked vibe wears its own color (phone button, desktop panel header) ===== */
+.vp-c.on[style*="--vc"]{background:var(--vc);border-color:var(--vc);color:#fff}
+.vp-c.on[style*="--vc"] i{background:#fff!important}
+.vp-head[style*="--vc"]{background:color-mix(in srgb,var(--vc) 13%,var(--page));border-bottom-color:color-mix(in srgb,var(--vc) 30%,var(--line))}
+.vp-head[style*="--vc"] h3 i{box-shadow:0 0 0 3px color-mix(in srgb,var(--vc) 25%,transparent)}
