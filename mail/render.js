@@ -131,7 +131,7 @@ export function buildEmail(lead, picks, opts = {}) {
   <tr><td class="px" align="center" style="padding:24px 40px 28px 40px;background:${C.paper};">
     <img src="${SITE}/img/logo-mark.png" width="28" alt="" style="display:block;width:28px;height:auto;margin:0 auto 10px auto;border:0;">
     <p style="margin:0;font-family:${F_BODY};font-size:13px;line-height:1.6;color:${C.muted};">Florida is 1,350 miles of coastline. We'll help you find your mile.</p>
-    <p style="margin:8px 0 0 0;font-family:${F_BODY};font-size:12px;line-height:1.6;color:#7E8F92;"><a href="${SITE}/find-your-mile.html?${UTM}" style="color:${C.muted};">Retake the quiz</a> &nbsp;&middot;&nbsp; <a href="${SITE}/privacy.html" style="color:${C.muted};">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.muted};">Unsubscribe</a><br>You're getting this because you asked for your top 5 on floridacoastal.co. Town details are for information and should be confirmed locally.</p>
+    <p style="margin:8px 0 0 0;font-family:${F_BODY};font-size:12px;line-height:1.6;color:#7E8F92;"><a href="${SITE}/find-your-mile.html?${UTM}" style="color:${C.muted};">Retake the quiz</a> &nbsp;&middot;&nbsp; <a href="${SITE}/privacy.html" style="color:${C.muted};">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.muted};">Unsubscribe</a><br>You're getting this because you asked for your towns${opts.guideUrl ? " and the Move and Belong Guide" : ""} on floridacoastal.co. Town details are for information and should be confirmed locally.</p>
   </td></tr>
 </table></td></tr></table></body></html>`;
   const text = [`${name ? `Hi ${name}, here` : "Here"} are your top 5 Florida towns:`, "",
@@ -475,4 +475,27 @@ export function buildNoteEmail(lead, picks) {
 <p style="margin:24px 0 0 0;font-size:12px;color:#7E8F92;"><a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:#7E8F92;">Unsubscribe</a></p></div></body></html>`;
   const text = body.join("\n\n").replace("<br>", "\n");
   return { subject, html, text };
+}
+
+export function buildWelcomeEmail(lead, guideUrl) {
+  const name = firstName(lead.name);
+  const subject = "Your Move and Belong Guide";
+  const url = guideUrl || SITE + "/articles/first-90-days.html";
+  const items = [
+    ["Plan to be exhausted for 90 days.", "Put the work in up front, so you can enjoy the friendships for years."],
+    ["Join three communities.", "Serve something, believe something, play something. Then get involved."],
+    ["Be the host.", "Don't wait for an invite. People remember who had them over first."],
+  ].map(([a, b]) => `<tr><td valign="top" width="22" style="padding:4px 0 12px 0;font-family:${F_HEAD};font-size:18px;color:${C.rust};">&bull;</td><td style="padding:4px 0 12px 0;font-family:${F_BODY};font-size:15px;line-height:1.55;color:${C.ink};"><b>${a}</b> ${b}</td></tr>`).join("");
+  const rows = `
+<tr><td class="px" style="padding:34px 40px 6px 40px;">
+  <p style="margin:0 0 12px 0;font-family:${F_BODY};font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:${C.rust};">Your free guide</p>
+  <h1 class="hero-h" style="margin:0 0 18px 0;font-family:${F_HEAD};font-weight:400;font-size:40px;line-height:1.12;color:${C.ink};">The boxes are the easy part.</h1>
+  ${P(`${name ? `Hi ${esc(name)}, here` : "Here"}'s the Move and Belong Guide. It's what we'd tell a friend who just signed the papers on a Florida town: how to go from new in town to knowing people in your first 90 days.`)}
+</td></tr>
+<tr><td class="px" style="padding:6px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${items}</table></td></tr>
+<tr><td class="px" align="left" style="padding:14px 40px 30px 40px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${C.rust};border-radius:999px;"><a href="${url}" style="display:inline-block;padding:14px 30px;font-family:${F_BODY};font-size:15px;font-weight:700;color:${C.white};text-decoration:none;">Read the guide</a></td></tr></table>
+  ${P(`Still picking your town? Our free quiz matches you to the Florida beach towns that fit how you want to live. <a href="${SITE}/find-your-mile.html?${UTM.replace("top5", "welcome")}" style="color:${C.sea};font-weight:700;">Find your top 5</a>`, "margin-top:22px;")}
+  <p style="margin:0;font-family:${F_BODY};font-size:15px;line-height:1.6;color:${C.muted};">After this, one short letter a month about the coast. Questions? Just reply.<br><span style="font-family:${F_HEAD};font-style:italic;color:${C.rustDark};">Mark and Betsy Scott</span></p></td></tr>`;
+  const text = `${name ? `Hi ${name}, here` : "Here"}'s the Move and Belong Guide: ${url}\n\nStill picking your town? Take the free quiz: ${SITE}/find-your-mile.html\n\nAfter this, one short letter a month about the coast. Questions? Just reply.\nMark and Betsy Scott\nFlorida Coastal`;
+  return { subject, html: shell(subject, "How to go from new in town to knowing people in your first 90 days.", rows), text };
 }

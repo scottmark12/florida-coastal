@@ -889,3 +889,6 @@ body:has(.fs){overflow:hidden}
 
 /* ===== Oct 28 2026 patch: photo credits ===== */
 .pcred{font-size:14.5px;line-height:1.5;padding-left:18px}.pcred li{margin:4px 0}
+
+/* ===== Oct 29 2026 patch: guide offer, stack save boxes on phones ===== */
+@media (max-width:560px){.savebox .sv-row{flex-direction:column}.savebox .sv-row input[type=email],.savebox .sv-row .btn{width:100%;flex:none;height:48px}}
