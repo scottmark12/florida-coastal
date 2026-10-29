@@ -21,7 +21,18 @@
 <link rel="icon" href="img/logo-mark.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700;9..40,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap">
-<link rel="stylesheet" href="assets/site.36b0a8028a.css">
+<link rel="stylesheet" href="assets/site.ae62aa930e.css">
+<style>
+.nf{min-height:calc(100vh - 72px - 260px);display:flex;align-items:center}
+.nf-in{padding-block:72px;text-align:center;max-width:640px}
+.nf-k{font:600 12px var(--ui);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.nf h1{margin-top:12px}
+.nf-p{margin-top:14px;color:var(--muted);font-size:17px}
+.nf-cta{margin-top:28px;display:flex;gap:20px;justify-content:center;align-items:center;flex-wrap:wrap}
+.nf-l{font:600 15px var(--ui);color:var(--ink);text-decoration:underline;text-underline-offset:3px}
+.nf-more{list-style:none;padding:0;margin:36px 0 0;display:flex;gap:10px 24px;justify-content:center;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:22px}
+.nf-more a{font:500 15px var(--ui);color:var(--ink)}
+</style>
 </head>
 <body>
 <header class="top">
@@ -34,22 +45,33 @@
       <div class="navlinks" id="navlinks">
       <form class="navsearch" id="navSearch" role="search"><label for="ns" style="position:absolute;left:-9999px">Search towns</label><input id="ns" type="search" placeholder="Search towns" autocomplete="off"><button type="submit" aria-label="Search"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5" fill="none" stroke="currentColor" stroke-width="2.2"></circle><path d="M16 16l4.5 4.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></path></svg></button></form>
       <a href="towns/index.html" data-nav="towns">Beach Towns</a>
-      <a href="map.html" data-nav="map">Town Map</a>
-      <a href="articles/index.html" data-nav="articles">Articles</a>
-      <a href="about.html" data-nav="about">About</a>
+      <a href="find-your-mile.html" data-nav="quiz">Find Your Mile</a>
+      <a href="priorities.html" data-nav="sliders">Priorities</a>
+      <a href="map.html" data-nav="map">Vibe Map</a>
+      <a href="articles/index.html" data-nav="articles">Coastal Guides</a>
       </div>
-      <a class="btn btn-accent" href="index.html#quiz"><span class="cta-l">See your top 5 towns</span><span class="cta-s">Your top 5 towns</span></a>
+      <a class="btn btn-accent navcta" href="find-your-mile.html">See your top 5</a>
       <button class="navtoggle" id="navtoggle" aria-expanded="false" aria-controls="navlinks" aria-label="Menu"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"></path></svg></button>
     </nav>
   </div>
 </header>
-<main id="app"><section class="wrap" style="padding-block:90px;text-align:center"><h1>We couldn't find that page</h1><p style="margin-top:16px;color:var(--muted)">The town or article may have moved.</p><p style="margin-top:26px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap"><a class="btn btn-accent" href="towns/index.html">See all beach towns</a><a class="btn" href="index.html#quiz">Take the quiz</a></p></section></main>
+<main id="app" class="nf"><section class="wrap nf-in">
+<p class="nf-k">Page not found</p>
+<h1>That mile of coast moved.</h1>
+<p class="nf-p">The town or guide you were looking for isn't here anymore. Try one of these instead.</p>
+<p class="nf-cta"><a class="btn btn-accent" href="find-your-mile.html">See your top 5 towns</a><a class="nf-l" href="towns/index.html">Browse all 167 beach towns &rarr;</a></p>
+<ul class="nf-more"><li><a href="map.html">Vibe Map</a></li><li><a href="compare.html">Compare Towns</a></li><li><a href="articles/index.html">Coastal Guides</a></li><li><a href="about.html">Our story</a></li></ul>
+</section></main>
 <footer>
   <div class="wrap">
     <div><b>Florida Coastal</b><p>Florida is 1,350 miles of coastline. We'll help you find your mile.</p><p style="margin-top:12px">Town details are for information and should be confirmed locally. We follow federal, state and local fair housing laws. Equal Housing Opportunity.</p></div>
-    <div><b>Explore</b><a href="towns/index.html">Beach towns</a><a href="map.html">Town Map</a><a href="index.html#quiz">Find your mile</a><a href="articles/index.html">Articles</a></div>
-    <div><b>Company</b><a href="about.html">Our story</a><a href="scoring.html">How we score</a><a href="agents.html">For local agents</a><a href="index.html">floridacoastal.co</a></div>
+    <div><b>Explore</b><a href="towns/index.html">Beach Towns</a><a href="find-your-mile.html">Find Your Mile</a><a href="priorities.html">Priorities</a><a href="compare.html">Compare Towns</a><a href="map.html">Vibe Map</a><a href="articles/index.html">Coastal Guides</a></div>
+    <div><b>Company</b><a href="about.html">Our story</a><a href="scoring.html">How we score</a><a href="agents.html">For local agents</a><a href="privacy.html">Privacy</a></div>
   </div>
 </footer>
+<script>
+document.getElementById('navtoggle').addEventListener('click',function(){var t=document.querySelector('header.top'),o=t.classList.toggle('open');this.setAttribute('aria-expanded',o?'true':'false')});
+document.getElementById('navSearch').addEventListener('submit',function(e){e.preventDefault();var q=document.getElementById('ns').value.trim();try{sessionStorage.setItem('fc-nav',JSON.stringify({q:q,coast:'all',fvibe:'all'}))}catch(x){}location.href='towns/index.html'});
+</script>
 </body>
 </html>
