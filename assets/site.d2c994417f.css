@@ -1710,3 +1710,33 @@ section.tmap-page.vm-page{padding:0!important;margin:0!important;max-width:none!
 .vm-chg{min-width:44px;justify-content:center}
 .vm-pan{top:40%}
 .vm-sub{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* ===== Oct 30 2026 patch: phone homepage ===== */
+nav.main a.navcta{transition:opacity .2s,transform .2s}
+@media (max-width:759px){
+  body.on-home.hcta-vis nav.main a.navcta{opacity:0;pointer-events:none;transform:translateY(-4px)}
+  body.on-home .ctaalt a,body.on-home a.more{display:inline-flex;align-items:center;min-height:44px}
+  .hp-vibe{padding-top:30px;padding-bottom:10px}
+  .hp-vibe.hp-b{padding-top:6px}
+  .hp-vibe h2{font-size:28px;line-height:1.15;margin:6px 0 6px}
+  .hp-vibe .hp-vl{margin:0 0 12px;color:var(--muted);font-size:15px}
+  .hv-map{display:block;position:relative;border-radius:16px;overflow:hidden;background:#C3DFE3;margin:0 0 12px;text-decoration:none}
+  .hv-map svg{display:block;width:100%;height:auto;pointer-events:none}
+  .hv-map .dot.pulse{transform-box:fill-box;transform-origin:center;animation:vmpulse 1.1s ease-in-out infinite}
+  .hv-map .dot.sig{stroke:#fff;stroke-width:2.6}
+  .hv-open{position:absolute;right:10px;bottom:10px;display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border-radius:999px;background:#fff;color:var(--ink);font-weight:700;font-size:14px;box-shadow:0 4px 14px rgba(21,42,46,.18)}
+  .hp-vibe .vm-tiles.row{margin:0 -16px;padding:0 16px 6px;scroll-padding-left:16px}
+  .hp-vibe .vm-tiles.row .vm-tile{width:136px;height:136px;text-decoration:none}
+  .hp-vibe .vm-tile small{display:block;margin-top:2px;font-size:11.5px;line-height:1.25;opacity:.92}
+  .hp-pop .grid4{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -16px;padding:2px 16px 10px;scroll-padding-left:16px;scrollbar-width:none}
+  .hp-pop .grid4::-webkit-scrollbar{display:none}
+  .hp-pop .grid4>.card{flex:0 0 78%;scroll-snap-align:start}
+  .hp-pop .grid4>.card p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .hp-guides .grid3{display:flex;flex-direction:column;gap:12px}
+  .hp-guides .grid3>.card{display:grid;grid-template-columns:116px minmax(0,1fr)}
+  .hp-guides .grid3 .ph{aspect-ratio:auto;height:100%;min-height:104px}
+  .hp-guides .grid3 .bd{padding:12px 14px;gap:5px}
+  .hp-guides .grid3 h3{font-size:16.5px;line-height:1.25;margin:0}
+  .hp-guides .grid3 .cat{font-size:10.5px}
+}
+@media (max-width:759px){.hv-open{right:auto;left:10px}.hp-vibe.hp-b{padding-top:14px}}
+@media (max-width:759px){.hv-open{left:auto;right:10px;bottom:auto;top:10px;min-height:40px;padding:0 14px;font-size:13.5px}}
