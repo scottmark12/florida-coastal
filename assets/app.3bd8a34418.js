@@ -13,7 +13,7 @@ function vmInit(ph){
   if(v&&VIBES[v]){S.vibe=v;S.vcard=!1;S.vlist="list"===q.get("view")}
   if(id&&byId[id]){S.sel=id;S.vcard=!0;S.vlist=!1}
   S.vmV=S.vibe;S.vmOpen=null;
-  ph&&!S.vibe&&!S.vcard&&!S.vlist&&(S.vmSheet="full");
+  ph&&!S.vibe&&!S.vcard&&!S.vlist&&(S.vmSheet="");
 }
 function vmURL(st){
   const q=[];st.vibe&&q.push("style="+st.vibe);st.vcard&&st.sel&&q.push("town="+st.sel);st.lst&&q.push("view=list");
@@ -109,7 +109,7 @@ window.addEventListener("popstate",function(e){
   const v=e.state&&e.state.vm;
   e.stopImmediatePropagation();
   S.vibe=v?v.vibe:null;S.vmV=S.vibe;S.vcard=!!(v&&v.vcard);v&&v.sel&&byId[v.sel]&&(S.sel=v.sel);S.vlist=!!(v&&v.lst);
-  S.vmSheet=v?v.sheet:(innerWidth<1e3?"full":"");S.vmOpen=null;S.vmMan=null;S.vcard||(S.vmz=1);
+  S.vmSheet=v?v.sheet:"";S.vmOpen=null;S.vmMan=null;S.vcard||(S.vmz=1);
   window.__vmRestoring=!0;rerenderMap();
 });
 function vmAfter(){
@@ -254,7 +254,7 @@ document.addEventListener("click",function(e){
   if(e.target.closest("[data-vmclose],[data-vmout]")){S.vcard=!1;S.vmz=1;S.vmOpen=null;S.vmMan=null;rerenderMap();return}
   const z=e.target.closest("[data-vmz]");if(z&&S.vmMan){S.vmMan.z=Math.max(1,Math.min(10,S.vmMan.z*("in"===z.dataset.vmz?1.6:1/1.6)));S.vmMan.z<1.05&&!S.vcard&&(S.vmMan=null);rerenderMap();return}if(z){const c=S.vmz||1;S.vmz="in"===z.dataset.vmz?Math.min(8,+(c*1.6).toFixed(2)):Math.max(1,+(c/1.6).toFixed(2));S.vmz<1.05&&(S.vmz=1);rerenderMap();return}
   if(e.target.closest("[data-vmpan]")){S.vmPan=!S.vmPan;S.vmMan=null;rerenderMap();return}
-  if(e.target.closest("[data-vmland]")){S.vibe=null;S.vmV=null;S.vcard=!1;S.vmz=1;S.vmOpen=null;S.vmMan=null;S.vlist=!1;S.vmSheet="full";try{track("style_tap","change")}catch(x){}rerenderMap();return}
+  if(e.target.closest("[data-vmland]")){S.vibe=null;S.vmV=null;S.vcard=!1;S.vmz=1;S.vmOpen=null;S.vmMan=null;S.vlist=!1;S.vmSheet="";try{track("style_tap","change")}catch(x){}rerenderMap();return}
   if(e.target.closest("[data-vmsheet]")){S.vmSheet="full"===S.vmSheet?"":"full";rerenderMap();return}
 });
 document.addEventListener("pointerdown",function(e){const t=e.target.closest&&e.target.closest(".vm-tile");t&&vmPulse(t.dataset.vsig)},!0);
