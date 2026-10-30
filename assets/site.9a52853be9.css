@@ -1706,3 +1706,7 @@ section.tmap-page.vm-page{padding:0!important;margin:0!important;max-width:none!
 .vm-sheet.pick.c4 .vm-tile span{left:6px;right:5px;bottom:6px}
 .vm-sheet.pick.c4 .vm-tile b{font-size:10.5px;line-height:1.15;letter-spacing:-.1px}
 .vm-sheet.pick.c4 .vm-tile span{left:5px;right:4px;bottom:5px}
+/* Oct 30 2026: audit round 3 polish */
+.vm-chg{min-width:44px;justify-content:center}
+.vm-pan{top:40%}
+.vm-sub{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
