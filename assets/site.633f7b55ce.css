@@ -1412,3 +1412,29 @@ body.has-cmptray footer{padding-bottom:110px}
 .agtop .agstats{margin-top:0}
 .agjump{display:none}
 @media (max-width:760px){.agjump{display:flex;width:100%;justify-content:center;margin-top:18px}.agtop{padding-top:24px}}
+
+/* ===== Oct 29 2026 patch: fourth UI audit (B and C pages) ===== */
+/* Results overlay: a way out to the full results page */
+.fs-close{position:absolute;top:18px;right:22px;z-index:6;display:inline-flex;align-items:center;gap:8px;height:38px;padding:0 14px;border:1px solid var(--line);border-radius:6px;background:var(--white);color:var(--ink);font:600 14px var(--ui);cursor:pointer;box-shadow:0 4px 14px rgba(20,40,55,.08)}
+.fs-close span{font-size:20px;line-height:1;margin-top:-2px}
+.fs-close:hover{background:var(--paper)}
+.fs-close:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media (max-width:899px){.fs-close{position:fixed;top:calc(12px + env(safe-area-inset-top));right:12px;height:36px;font-size:13px}}
+/* Reveal header: the logo sits on a white chip so the map never washes it out */
+.fs-bar .fs-logo{background:rgba(255,255,255,.94);padding:8px 12px;border-radius:8px;box-shadow:0 4px 14px rgba(20,40,55,.1)}
+/* Header: keep "See your top 5" at every desktop width; the header search folds away between 761 and 1179px (Beach Towns has its own search) */
+@media (min-width:761px) and (max-width:1179px){nav.main a.navcta{display:inline-flex;padding:9px 14px;font-size:14px;white-space:nowrap}nav.main{flex-wrap:nowrap}.navsearch{display:none}.navlinks a{padding-left:8px!important;padding-right:8px!important}}
+@media (min-width:761px) and (max-width:900px){.navlinks a{font-size:13.5px!important;padding-left:6px!important;padding-right:6px!important}}
+/* Home map hero: the main ask under the headline, so the panel's own button isn't needed there */
+.vhero-acts{display:flex;align-items:center;flex-wrap:wrap;gap:10px 16px;margin-top:18px}
+.vhero-acts span{color:var(--muted);font-size:15px}
+@media (min-width:761px){.vhero-map .vp-foot{display:none}}
+@media (max-width:760px){.vhero-acts{display:none}}
+/* Vibe tiles: bigger, easier to read descriptions */
+.vp-pc b{font-size:15.5px}
+.vp-pc small{font-size:13px;line-height:1.3}
+.vp-pc::after{background:linear-gradient(180deg,rgba(10,22,25,0) 30%,rgba(10,22,25,.88))}
+.ss-bd .stag{font-size:12.5px}
+/* Town pages on phones: the Compare button no longer covers the section tabs (the scorecard has its own Compare link) */
+@media (max-width:700px){.tnav-cmp{display:none}}
+.fs-row .pc.w,.pct.w{color:var(--muted);font-size:13px;font-weight:600;white-space:nowrap}
