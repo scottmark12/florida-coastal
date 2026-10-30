@@ -1438,3 +1438,43 @@ body.has-cmptray footer{padding-bottom:110px}
 /* Town pages on phones: the Compare button no longer covers the section tabs (the scorecard has its own Compare link) */
 @media (max-width:700px){.tnav-cmp{display:none}}
 .fs-row .pc.w,.pct.w{color:var(--muted);font-size:13px;font-weight:600;white-space:nowrap}
+
+/* ===== Oct 29 2026 late patch: audit fixes 1 to 5, full screen Town Map, Beach Towns towns first ===== */
+/* Home hero B: the "See your top 5 towns" button shows on phones too */
+@media (max-width:760px){.vhero-acts{display:flex;flex-direction:column;align-items:stretch;gap:8px;margin-top:16px}.vhero-acts .btn{width:100%;justify-content:center;min-height:50px;font-size:16px}.vhero-acts span{font-size:14px;text-align:center}}
+/* Returning visitors: results overlay shows at once instead of crossfading over the page */
+.fs.fs-instant,.fs-instant .fs-row,.fs-instant .fs-pattern{animation:none!important;opacity:1}
+/* Town Map page: full width, map fills the screen, Map / List switch */
+.tmap-page{max-width:none;padding-inline:24px}
+.tmap-page #mapsec>.label{display:none}
+.tmap-page .pgtog{margin-bottom:10px}
+.tmap-page .maphead{margin-bottom:12px}
+.tmap-page .maphead h1{font-size:clamp(28px,2.6vw,36px)!important;margin-bottom:4px!important}
+.tmap-page .maphead .lede{font-size:15.5px}
+.tmap-bar{display:flex;align-items:center;gap:14px;margin-bottom:12px}
+.tmap-bar .vp-chips{flex:1;min-width:0;margin:0;padding:2px 0}
+.tmap-bar .vp-switch{flex:none;width:220px;margin:0}
+.smap.vpan.tmap-full{height:calc(100vh - 250px);min-height:560px;grid-template-columns:minmax(0,1fr) 420px}
+@media (min-width:1600px){.smap.vpan.tmap-full{grid-template-columns:minmax(0,1fr) 460px}}
+.tmap-list .tml-head{color:var(--muted);font-size:15px;margin:4px 0 16px}
+.tmap-list .grid4{grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+/* Beach Towns: search sits right under the title, towns lead, areas follow */
+.tfilters{margin:22px 0 0;padding:16px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.tfilters .field{margin:0}
+.tl-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.tl-head .linkbtn{font-size:13px;letter-spacing:0;text-transform:none}
+.tmore-wrap{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:28px}
+.tmore-wrap span{color:var(--muted);font-size:13px}
+.tareas{padding-top:56px}
+.tareas-h{font-size:clamp(26px,3vw,34px);margin:0 0 6px}
+.tareas .rmap{margin:18px 0 30px}
+@media (max-width:760px){.tfilters{padding:12px}.tmap-page{padding-inline:16px}}
+.tmap-page #mapsec{display:grid;grid-template-columns:minmax(0,1fr) auto;column-gap:20px;align-items:end}
+.tmap-page #mapsec>*{grid-column:1/-1}
+.tmap-page #mapsec>.maphead{grid-column:1;grid-row:1;margin-bottom:12px}
+.tmap-page #mapsec>.pgtog{grid-column:2;grid-row:1;margin-bottom:14px}
+.tmap-page .maphead .lede{display:none}
+.smap.vpan.tmap-full{height:calc(100vh - 272px);min-height:520px}
+.tmap-page{padding-top:20px!important;padding-bottom:24px!important}
+.smap.vpan.tmap-full{height:calc(100vh - 236px)}
+@media (max-width:760px){.tfilters{display:grid;grid-template-columns:1fr 1fr;gap:10px}.tfilters .field:first-child{grid-column:1/-1}.tfilters select{width:100%}}
