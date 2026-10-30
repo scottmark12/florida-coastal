@@ -3,11 +3,26 @@
    Opening a town flies the map to it and centers it in the open space between the panels. Phone: big map, short bottom sheet.
    Map page zoom lives in S.vmz (not S.mz) so the home page map is never affected. */
 const VM={barH:64,lw:420,cw:344,gap:24,tz:3.3,tzPh:1.9,ph:1.85,phLon:-82.63,phLat:26.95,panLon:-85.3,panLat:29.55,ovLon:-83.75,ovLat:27.75};
-function vmHH(){try{return parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--hh"))||73}catch(e){return 73}}
+function vmHH(){try{const h=document.querySelector("header.top"),r=h&&h.getBoundingClientRect().height;if(r>30)return r;return parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--hh"))||73}catch(e){return 73}}
 function vmW(){return document.documentElement.clientWidth||window.innerWidth||1280}
+/* Links remember your place: map.html?style=island&town=matlacha (and &view=list) restores on load; vmHist keeps the URL in step */
+function vmInit(ph){
+  if(window.__vmLanded)return;window.__vmLanded=!0;S.vmMan=null;
+  let q=null;try{q=new URLSearchParams(location.search)}catch(e){}
+  const v=q&&q.get("style"),t=q&&q.get("town"),id=t&&(MERGED[t]||t);
+  if(v&&VIBES[v]){S.vibe=v;S.vcard=!1;S.vlist="list"===q.get("view")}
+  if(id&&byId[id]){S.sel=id;S.vcard=!0;S.vlist=!1}
+  S.vmV=S.vibe;S.vmOpen=null;
+  ph&&!S.vibe&&!S.vcard&&!S.vlist&&(S.vmSheet="full");
+}
+function vmURL(st){
+  const q=[];st.vibe&&q.push("style="+st.vibe);st.vcard&&st.sel&&q.push("town="+st.sel);st.lst&&q.push("view=list");
+  return location.pathname+(q.length?"?"+q.join("&"):"");
+}
 function vmSync(s,ph){
-  if(S.vmV!==S.vibe){S.vmV=S.vibe;S.vmSheet="";S.vcard||(S.vmz=1)}
-  if(S.vcard&&s){if(S.vmOpen!==s.id){S.vmOpen=s.id;S.vmz=ph?VM.tzPh:VM.tz}}else S.vmOpen=null;
+  vmInit(ph);
+  if(S.vmV!==S.vibe){S.vmV=S.vibe;S.vmSheet="";S.vmMan=null;S.vcard||(S.vmz=1)}
+  if(S.vcard&&s){if(S.vmOpen!==s.id){S.vmOpen=s.id;S.vmMan=null;S.vmz=ph?VM.tzPh:VM.tz}}else S.vmOpen=null;
   S.vmz||(S.vmz=1);
 }
 /* Where the map sits: k = screen px per map unit, the point to center and where on screen it goes */
@@ -29,6 +44,13 @@ function vmFrame(desk,W,H,s,o){
     if(card){lon=s.lon;lat=s.lat}else{lon=VM.ovLon;lat=VM.ovLat}
     gx=R/2;gy=(top+bot)/2;
     lb=[4,top+4,R-4,bot-4];
+  }else if(o.tab){
+    k=W/mw;
+    const top=o.top||8,bot=H-(o.sh||196);
+    z=card?VM.ph*(S.vmz||1)*(390/mw)/k:Math.min((bot-top)/(6.9*K*k),(W-24)/(8.2*COS*K*k));
+    if(card){lon=s.lon;lat=s.lat}else{lon=VM.ovLon;lat=VM.ovLat}
+    gx=W/2;gy=(top+bot)/2;
+    lb=[4,top+4,W-4,bot-6];
   }else{
     k=W/mw;
     const top=o.top||8,bot=H-(o.sh||196),fitZ=Math.min(VM.ph,(bot-top)/(6.5*K*k));
@@ -37,16 +59,17 @@ function vmFrame(desk,W,H,s,o){
     gx=W/2;gy=(top+bot)/2;
     lb=[4,top+4,W-4,bot-6];
   }
+  if(S.vmMan){z=Math.max(1,S.vmMan.z);lon=S.vmMan.lon;lat=S.vmMan.lat}
   const bx=PAD+(lon-LON0)*COS*K,by=PAD+(LAT0-lat)*K;
   let VX=0,VY=0,Z=1,Ux=bx,Uy=by;
   if(z>1){Z=z;VX=mw/2-bx*z;VY=(mh+ti)/2-ti-by*z;Ux=mw/2;Uy=(mh+ti)/2-ti}
   const vx=Ux-gx/k,vy=Uy-gy/k;
   return {zoom:z>1?{z:z,lon:lon,lat:lat}:null,vb:[vx,vy,W/k,H/k],T:{a:Z*k,bx:(VX-vx)*k,by:(VY-vy)*k},
-    lb:[vx+lb[0]/k,vy+lb[1]/k,vx+lb[2]/k,vy+lb[3]/k],gx:gx,k:k,desk:desk,ms:!desk&&o.pw?1.8*(390/mw)/k:0};
+    lb:[vx+lb[0]/k,vy+lb[1]/k,vx+lb[2]/k,vy+lb[3]/k],gx:gx,gy:gy,k:k,desk:desk,ms:!desk&&o.pw?1.8*(390/mw)/k:0};
 }
 function vmSVG(f,fr){
   window.__vmPrev=document.querySelector(".vm-map svg")?window.__vmCur:fr.T;
-  window.__vmCur=fr.T;
+  window.__vmCur=fr.T;window.__vmFr={k:fr.k,gx:fr.gx,gy:fr.gy};
   const v=fr.vb.map(n=>n.toFixed(1)).join(" ");
   const L=fr.lb,ar=(L[2]-L[0])*(L[3]-L[1])*fr.k*fr.k,
     lab={n:0,max:fr.desk?Math.max(14,Math.min(24,Math.round(ar/30000))):Math.max(6,Math.min(12,Math.round(ar/15000))),
@@ -66,20 +89,20 @@ function vmMeasure(){
 function vmLevel(){return S.vcard?2:S.vibe?1:0}
 function vmHist(){
   if(window.__vmRestoring){window.__vmRestoring=!1;return}
-  const st={vibe:S.vibe||null,sel:S.sel,vcard:!!S.vcard,sheet:S.vmSheet||"",lv:vmLevel()},cur=history.state&&history.state.vm;
+  const st={vibe:S.vibe||null,sel:S.sel,vcard:!!S.vcard,sheet:S.vmSheet||"",lst:!!S.vlist,lv:vmLevel()+(S.vlist?.5:0)},cur=history.state&&history.state.vm,u=vmURL(st);
   try{
-    if(!cur)history.replaceState(Object.assign({},history.state||{},{vm:st}),"");
-    else if(cur.vibe!==st.vibe||cur.vcard!==st.vcard||cur.sel!==st.sel&&st.vcard||cur.sheet!==st.sheet){
-      st.lv>cur.lv?history.pushState(Object.assign({},history.state||{},{vm:st}),""):history.replaceState(Object.assign({},history.state||{},{vm:st}),"");
+    if(!cur)history.replaceState(Object.assign({},history.state||{},{vm:st}),"",u);
+    else if(cur.vibe!==st.vibe||cur.vcard!==st.vcard||cur.sel!==st.sel&&st.vcard||cur.sheet!==st.sheet||!!cur.lst!==st.lst){
+      st.lv>cur.lv?history.pushState(Object.assign({},history.state||{},{vm:st}),"",u):history.replaceState(Object.assign({},history.state||{},{vm:st}),"",u);
     }
   }catch(e){}
 }
 window.addEventListener("popstate",function(e){
-  if(!document.querySelector(".vm-stage")||"map"!==curRoute())return;
+  if(!window.__vmLanded||"map"!==curRoute()||!document.getElementById("mapsec"))return;
   const v=e.state&&e.state.vm;
   e.stopImmediatePropagation();
-  S.vibe=v?v.vibe:null;S.vmV=S.vibe;S.vcard=!!(v&&v.vcard);v&&v.sel&&byId[v.sel]&&(S.sel=v.sel);
-  S.vmSheet=v?v.sheet:"full";S.vmOpen=null;S.vcard||(S.vmz=1);
+  S.vibe=v?v.vibe:null;S.vmV=S.vibe;S.vcard=!!(v&&v.vcard);v&&v.sel&&byId[v.sel]&&(S.sel=v.sel);S.vlist=!!(v&&v.lst);
+  S.vmSheet=v?v.sheet:(innerWidth<1e3?"full":"");S.vmOpen=null;S.vmMan=null;S.vcard||(S.vmz=1);
   window.__vmRestoring=!0;rerenderMap();
 });
 function vmAfter(){
@@ -129,7 +152,7 @@ function tmapDesk(f,a,s,o){
   vmSync(s,!1);
   const bar=`<div class="vm-bar"><h1 class="vm-title">Vibe Map</h1>${vPhoneTop(o)}${pageToggle("map")}</div>`;
   if(S.vlist){const L=smapOrder(),nm=S.vibe?(VSHORT[S.vibe]||VIBES[S.vibe]):null;return `${bar}<div class="wrap tmap-list"><p class="tml-head">${L.length} ${nm?nm+" towns":"beach towns"}, in coast order from the Panhandle around to the Keys.</p><div class="grid4">${L.map(tcard).join("")}</div></div>`}
-  const W=vmW(),H=Math.max(520,window.innerHeight-vmHH()-VM.barH);vmWH=[W,window.innerHeight];const fr=vmFrame(!0,W,H,s),card=!!(S.vcard&&s),z=S.vmz||1;
+  const W=vmW(),H=Math.max(520,window.innerHeight-vmHH()-VM.barH);vmWH=[W,window.innerHeight];const fr=vmFrame(!0,W,H,s),card=!!(S.vcard&&s),z=S.vmMan?S.vmMan.z:S.vmz||1;
   return `${bar}<div class="vm-stage" style="height:${H}px"><div class="vm-map mapbox">${vmSVG(f,fr)}</div>${vmLeft(o,s)}${card?vmCard(s):""}<div class="vm-zoom"><button data-vmz="in" aria-label="Zoom in">+</button><button data-vmz="out" aria-label="Zoom out"${z<=1?" disabled":""}>−</button></div>${z>1||card?`<button class="vm-out" data-vmout="1" style="left:${fr.gx.toFixed(0)}px">${VM_OUT_ICON}${vmOutTxt(o)}</button>`:""}</div>`;
 }
 /* Phones and tablets, map page only */
@@ -139,32 +162,87 @@ function vmChips(o){
 }
 function vmPhone(f,a,s,o){
   vmSync(s,!0);
-  if(!window.__vmLanded){window.__vmLanded=!0;S.vibe||S.vcard||S.vlist||(S.vmSheet="full")}
   if(S.vlist)return `<div class="wrap"><div class="smap smap-ph">${vPhoneTop(o)}<div class="vp-list vp-plist">${smapOrder().map(vRow).join("")}</div>${vCta()}</div></div>`;
-  const W=vmW(),land=vmLand(),H=Math.max(land?240:480,window.innerHeight-vmHH());vmWH=[W,window.innerHeight];const card=!!(S.vcard&&s),full=!land&&!card&&!S.vibe&&"full"===S.vmSheet,pw=land?Math.min(360,Math.round(W*.42)):0,
-    sh=(window.__vmSh||{})[(card?"c":S.vibe?"v":"l")+W]||(card?300:S.vibe?304:222),top=S.vibe||card?54:8,fr=vmFrame(!1,W,H,s,{top:top,sh:sh,pw:pw});
+  const W=vmW(),land=vmLand(),tab=!land&&W>=600,H=Math.max(land?240:480,window.innerHeight-vmHH());vmWH=[W,window.innerHeight];const card=!!(S.vcard&&s),full=!land&&!card&&!S.vibe&&"full"===S.vmSheet,pw=land?Math.min(360,Math.round(W*.42)):0,
+    sh=(window.__vmSh||{})[(card?"c":S.vibe?"v":"l")+W]||(card?300:S.vibe?304:222),top=S.vibe||card?54:8,fr=vmFrame(!1,W,H,s,{top:top,sh:sh,pw:pw,tab:tab});
   let sheet;
   if(card){
     const {k,n,nx}=vmNext(s);
     sheet=`<section class="vm-sheet crd" aria-live="polite" aria-label="${s.name}"><span class="vm-grab" aria-hidden="true"></span><div class="vm-pc"><a class="vm-pcph" href="#town-${s.id}" tabindex="-1" aria-hidden="true">${art(s,!1)}</a><div class="vm-pcb"><span class="cat">${vmReg(s)}</span><h3>${s.name}</h3><div class="smap-tags">${s.vibes.slice(0,2).map(vmTag).join("")}</div></div></div><p class="vm-bl">${s.blurb}</p><div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore ${short(s).length>14?"this town":short(s)} →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div>${k>=0&&nx?`<p class="vm-of"><span class="vm-swipe2" aria-hidden="true">‹ swipe ›</span> ${k+1} of ${n} · next up ${short(nx)}</p>`:""}</section>`;
   }else if(S.vibe){
     const L=smapOrder(),v=S.vibe;
-    sheet=`<section class="vm-sheet sty" aria-label="${VIBES[v]} towns"><span class="vm-grab" aria-hidden="true"></span><div class="vm-step"><span class="vm-stepn">Step 2 of 2</span><button class="vm-chg" data-vmland="1">Change style</button></div><div class="vm-shd"><h2>Tap a town to fly there</h2></div><p class="vm-sub"><i style="background:${VCOL[v]}"></i>${L.length} ${VIBES[v]} towns, lit up on the map. Tap a photo or any colored dot.</p><div class="vm-towns">${L.map(t=>`<button class="vm-tt" data-vpick="${t.id}">${art(t,!1)}<b>${short(t)}</b></button>`).join("")}</div></section>`;
+    sheet=`<section class="vm-sheet sty" aria-label="${VIBES[v]} towns"><span class="vm-grab" aria-hidden="true"></span><div class="vm-step"><span class="vm-stepn">Step 2 of 2</span><span class="vm-acts"><button class="vm-chg" data-vlist="1">List</button><button class="vm-chg" data-vmland="1">Change style</button></span></div><div class="vm-shd"><h2>Tap a town to fly there</h2></div><p class="vm-sub"><i style="background:${VCOL[v]}"></i>${L.length} ${VIBES[v]} towns, lit up on the map. Tap a photo or any colored dot.</p><div class="vm-towns">${L.map(t=>`<button class="vm-tt" data-vpick="${t.id}">${art(t,!1)}<b>${short(t)}</b></button>`).join("")}</div></section>`;
   }else{
     const V=VGROUPS.flatMap(g=>g[1]);
     sheet=`<section class="vm-sheet${full?" full":""}" aria-label="Pick a style"><button class="vm-handle" data-vmsheet="1" aria-expanded="${full}" aria-label="${full?"Show fewer styles":"Show all styles"}"><span></span></button><div class="vm-step"><span class="vm-stepn">Step 1 of 2</span>${full?"":'<span class="vm-swipe" aria-hidden="true">Swipe <b>→</b></span>'}</div><div class="vm-shd"><h2>Pick the style that feels like home</h2><button class="vm-all" data-vmsheet="1">${full?"Show map":"See all 12"}</button></div><div class="vm-tiles ${full||land?"grid":"row"}">${V.map(v=>vmTile(v,o)).join("")}</div></section>`;
   }
-  return `<div class="vm-stage vm-ph${full?" sheet-full":""}${land?" land":""}" style="height:${H}px${land?";--pw:"+pw+"px":""}"><div class="vm-map mapbox">${vmSVG(f,fr)}</div>${S.vibe||card?vmChips(o):""}${!land&&!card&&!S.vibe?`<button class="vm-pan" data-vmpan="1" aria-label="${S.vmPan?"Show the peninsula":"Show the Panhandle"}">${S.vmPan?"Peninsula ›":"‹ Panhandle"}</button>`:""}${card||(S.vmz||1)>1?`<button class="vm-out ph" data-vmout="1" style="bottom:${land?12:sh+12}px">${VM_OUT_ICON}${vmOutTxt(o,1)}</button>`:""}${card||full||S.vibe?"":`<a class="btn btn-accent vm-top5" href="#quiz" style="bottom:${land?12:sh+12}px">My top 5</a>`}${sheet}</div>`;
+  return `<div class="vm-stage vm-ph${full?" sheet-full":""}${land?" land":""}${tab?" tab":""}" style="height:${H}px${land?";--pw:"+pw+"px":""}"><div class="vm-map mapbox">${vmSVG(f,fr)}</div>${S.vibe||card?vmChips(o):""}${!land&&!tab&&!card&&!S.vibe?`<button class="vm-pan" data-vmpan="1" aria-label="${S.vmPan?"Show the peninsula":"Show the Panhandle"}">${S.vmPan?"Peninsula ›":"‹ Panhandle"}</button>`:""}${card||S.vmMan||(S.vmz||1)>1?`<button class="vm-out ph" data-vmout="1" style="bottom:${land?12:sh+12}px">${VM_OUT_ICON}${vmOutTxt(o,1)}</button>`:""}${card||full||S.vibe?"":`<a class="btn btn-accent vm-top5" href="#quiz" style="bottom:${land?12:sh+12}px">My top 5</a>`}${sheet}</div>`;
 }
 /* Signature town pulses while you hover or swipe its style */
+/* Drag and pinch: one finger (or the mouse) pans, two fingers pinch, a trackpad pinch zooms on desktop.
+   The svg moves live with a CSS transform; when the gesture ends the view is committed to S.vmMan and redrawn. */
+(function(){
+  const P=new Map();let g=null,wt=0;
+  const ZMAX=10;
+  function begin(){
+    const svg=document.querySelector(".vm-map svg");if(!svg||!window.__vmCur||!window.__vmFr)return null;
+    svg.style.transition="none";svg.style.transformOrigin="0 0";
+    return {svg:svg,r:svg.getBoundingClientRect(),a0:window.__vmCur.a,b0:[window.__vmCur.bx,window.__vmCur.by],S:1,T:[0,0],moved:!1,ref:null};
+  }
+  function cen(){const v=[...P.values()],n=v.length,cx=v.reduce((s,p)=>s+p[0],0)/n,cy=v.reduce((s,p)=>s+p[1],0)/n;return [cx,cy,n>1?Math.hypot(v[0][0]-v[1][0],v[0][1]-v[1][1]):0]}
+  function rebase(){if(!g||!P.size)return;const c=cen();g.ref={c:[c[0],c[1]],d:c[2],S0:g.S,T0:g.T.slice()}}
+  function clampS(S){const k=window.__vmFr.k;return Math.max(k/g.a0,Math.min(k*ZMAX/g.a0,S))}
+  function apply(c,sc){
+    const R=g.ref,S2=clampS(R.S0*sc),s2=S2/R.S0;
+    g.S=S2;g.T=[s2*(R.T0[0]-R.c[0])+c[0],s2*(R.T0[1]-R.c[1])+c[1]];
+    g.svg.style.transform=`translate(${g.T[0].toFixed(1)}px,${g.T[1].toFixed(1)}px) scale(${g.S.toFixed(4)})`;
+  }
+  function commit(){
+    const G=g;g=null;if(!G||!G.moved)return;
+    const F=window.__vmFr,a=G.S*G.a0,bx=G.S*G.b0[0]+G.T[0],by=G.S*G.b0[1]+G.T[1],u=(F.gx-bx)/a,v=(F.gy-by)/a;
+    const lon=Math.max(-87.6,Math.min(-80,LON0+(u-PAD)/(COS*K))),lat=Math.max(24.5,Math.min(30.9,LAT0-(v-PAD)/K));
+    S.vmMan={z:Math.max(1,a/F.k),lon:lon,lat:lat};
+    window.__vmCur={a:a,bx:bx,by:by};window.__vmDragT=Date.now();
+    rerenderMap();
+  }
+  document.addEventListener("pointerdown",function(e){
+    const m=e.target.closest&&e.target.closest(".vm-map");if(!m||e.button>0)return;
+    if(!g)g=begin();if(!g)return;
+    P.set(e.pointerId,[e.clientX-g.r.left,e.clientY-g.r.top]);rebase();
+  });
+  document.addEventListener("pointermove",function(e){
+    if(!g||!P.has(e.pointerId))return;
+    P.set(e.pointerId,[e.clientX-g.r.left,e.clientY-g.r.top]);
+    const c=cen(),R=g.ref;if(!R)return;
+    const sc=P.size>1&&R.d>0?c[2]/R.d:1;
+    if(!g.moved&&Math.hypot(c[0]-R.c[0],c[1]-R.c[1])<7&&Math.abs(sc-1)<.03)return;
+    g.moved=!0;e.preventDefault();apply([c[0],c[1]],sc);
+  },{passive:!1});
+  function up(e){
+    if(!P.has(e.pointerId))return;P.delete(e.pointerId);
+    P.size?rebase():commit();
+  }
+  document.addEventListener("pointerup",up);document.addEventListener("pointercancel",up);
+  /* a drag never counts as a tap on a town */
+  document.addEventListener("click",function(e){if(Date.now()-(window.__vmDragT||0)<400&&e.target.closest&&e.target.closest(".vm-map")){e.preventDefault();e.stopPropagation()}},!0);
+  /* trackpad pinch (and ctrl + wheel) zooms around the pointer on desktop */
+  document.addEventListener("wheel",function(e){
+    if(!e.ctrlKey||!e.target.closest||!e.target.closest(".vm-map"))return;
+    e.preventDefault();if(!g){g=begin();if(!g)return;g.ref={c:[0,0],d:0,S0:1,T0:[0,0]}}
+    const c=[e.clientX-g.r.left,e.clientY-g.r.top],S2=clampS(g.S*Math.exp(-e.deltaY*.01)),s2=S2/g.S;
+    g.T=[s2*(g.T[0]-c[0])+c[0],s2*(g.T[1]-c[1])+c[1]];g.S=S2;g.moved=!0;
+    g.svg.style.transform=`translate(${g.T[0].toFixed(1)}px,${g.T[1].toFixed(1)}px) scale(${g.S.toFixed(4)})`;
+    clearTimeout(wt);wt=setTimeout(commit,160);
+  },{passive:!1});
+})();
 function vmLand(){return window.innerWidth>window.innerHeight*1.2&&window.innerHeight<600}
 function vmPulse(id){document.querySelectorAll(".vm-map .dot.pulse").forEach(d=>d.classList.remove("pulse"));if(!id)return;const d=document.querySelector('.vm-map .dot[data-id="'+id+'"]');d&&d.classList.add("pulse")}
 document.addEventListener("click",function(e){
   if(!e.target.closest)return;
-  if(e.target.closest("[data-vmclose],[data-vmout]")){S.vcard=!1;S.vmz=1;S.vmOpen=null;rerenderMap();return}
-  const z=e.target.closest("[data-vmz]");if(z){const c=S.vmz||1;S.vmz="in"===z.dataset.vmz?Math.min(8,+(c*1.6).toFixed(2)):Math.max(1,+(c/1.6).toFixed(2));S.vmz<1.05&&(S.vmz=1);rerenderMap();return}
-  if(e.target.closest("[data-vmpan]")){S.vmPan=!S.vmPan;rerenderMap();return}
-  if(e.target.closest("[data-vmland]")){S.vibe=null;S.vmV=null;S.vcard=!1;S.vmz=1;S.vmOpen=null;S.vmSheet="full";try{track("style_tap","change")}catch(x){}rerenderMap();return}
+  if(e.target.closest("[data-vmclose],[data-vmout]")){S.vcard=!1;S.vmz=1;S.vmOpen=null;S.vmMan=null;rerenderMap();return}
+  const z=e.target.closest("[data-vmz]");if(z&&S.vmMan){S.vmMan.z=Math.max(1,Math.min(10,S.vmMan.z*("in"===z.dataset.vmz?1.6:1/1.6)));S.vmMan.z<1.05&&!S.vcard&&(S.vmMan=null);rerenderMap();return}if(z){const c=S.vmz||1;S.vmz="in"===z.dataset.vmz?Math.min(8,+(c*1.6).toFixed(2)):Math.max(1,+(c/1.6).toFixed(2));S.vmz<1.05&&(S.vmz=1);rerenderMap();return}
+  if(e.target.closest("[data-vmpan]")){S.vmPan=!S.vmPan;S.vmMan=null;rerenderMap();return}
+  if(e.target.closest("[data-vmland]")){S.vibe=null;S.vmV=null;S.vcard=!1;S.vmz=1;S.vmOpen=null;S.vmMan=null;S.vlist=!1;S.vmSheet="full";try{track("style_tap","change")}catch(x){}rerenderMap();return}
   if(e.target.closest("[data-vmsheet]")){S.vmSheet="full"===S.vmSheet?"":"full";rerenderMap();return}
 });
 document.addEventListener("mouseover",function(e){const t=e.target.closest&&e.target.closest(".vm-tile");t&&vmPulse(t.dataset.vsig)},!0);

@@ -1673,3 +1673,15 @@ section.tmap-page.vm-page{padding:0!important;margin:0!important;max-width:none!
 .vm-ph.land .vm-tt{width:auto}
 .vm-ph.land .vm-tt img,.vm-ph.land .vm-tt .fallback{width:100%;height:76px}
 .vm-ph.land .vm-sheet.crd{padding:14px 16px 12px;justify-content:flex-start}
+/* Oct 30 2026: drag and pinch, List link, tablet layout */
+.vm-map{touch-action:none;cursor:grab;-webkit-user-select:none;user-select:none}
+.vm-map:active{cursor:grabbing}
+.vm-acts{display:inline-flex;gap:16px;align-items:center}
+.vm-ph.tab .vm-sheet{left:0;right:0;margin:0 auto;max-width:680px;box-shadow:0 -10px 30px rgba(21,42,46,.16)}
+.vm-ph.tab .vm-tiles.row{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));overflow:visible;padding:0 18px 4px}
+.vm-ph.tab .vm-tiles.row .vm-tile{width:auto;height:100px}
+.vm-ph.tab .vm-swipe{display:none}
+.vm-ph.tab .vm-sheet.full .vm-tiles.grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+.vm-ph.tab .vm-sheet.full .vm-tile{height:150px}
+.vm-ph.tab .vm-tt{width:132px}
+.vm-ph.tab .vm-tt img,.vm-ph.tab .vm-tt .fallback{width:132px;height:100px}
