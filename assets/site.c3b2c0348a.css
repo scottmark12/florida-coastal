@@ -1300,3 +1300,115 @@ body.has-cmptray footer{padding-bottom:110px}
 /* ===== Oct 29 2026 patch: third UI audit (Compare dots, desktop top 5 button) ===== */
 /* The compare suggestion cards were renamed .cmp-sug so their styles stop hitting the score dots (.cmp-sc). */
 @media (min-width:1180px){nav.main a.navcta{display:inline-flex;padding:9px 16px;font-size:14px;white-space:nowrap}nav.main{flex-wrap:nowrap}.navlinks a{padding-left:9px!important;padding-right:9px!important}.navsearch input{width:104px}}
+
+/* ===== Oct 29 2026 patch: B pages to A minus (areas, Find Your Mile, scoring, guides, agents, privacy) ===== */
+/* Area overview */
+.rglance{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.15fr);gap:48px;align-items:start;padding-top:44px;padding-bottom:8px}
+.rg-facts{display:grid;gap:0;border-top:1px solid var(--ink)}
+.rg-f{display:grid;grid-template-columns:130px 1fr;column-gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.rg-f .k{grid-row:1/3;font:600 12px var(--ui);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);padding-top:5px}
+.rg-f b{font:400 24px/1.2 var(--display);color:var(--ink)}
+.rg-f small{font:400 14px/1.45 var(--ui);color:var(--muted);margin-top:2px}
+.rg-sc .label{margin-bottom:12px}
+.rg-sum{font:400 17px/1.5 var(--read,var(--ui));color:var(--ink);margin:0 0 14px}
+.rg-bars{display:grid;grid-template-columns:1fr 1fr;gap:6px 28px}
+.rg-b{display:grid;grid-template-columns:minmax(0,1fr) 84px 28px;align-items:center;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);font:500 14px var(--ui);color:var(--ink)}
+.rg-b .bar i{height:7px}
+.rg-b b{font:600 13px var(--ui);text-align:right;font-variant-numeric:tabular-nums}
+.rg-note{font:400 13px var(--ui);color:var(--muted);margin:12px 0 0}
+.rg-note a{color:var(--ink)}
+.rgmain{padding-top:40px}
+@media (max-width:900px){.rglance{grid-template-columns:1fr;gap:28px;padding-top:28px}.rg-bars{grid-template-columns:1fr}.rg-f{grid-template-columns:104px 1fr}.rg-f b{font-size:21px}}
+/* Illustrated town tiles read as deliberate */
+.card .ph:has(img.illus)::after{content:"Illustrated map";position:absolute;left:10px;bottom:10px;font:600 11px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:rgba(255,253,249,.92);border-radius:4px;padding:4px 7px;pointer-events:none}
+.card .ph img.illus{filter:saturate(.9) contrast(1.02)}
+
+/* Find Your Mile, desktop: questions on the left, the live map on the right */
+@media (min-width:1001px){
+ .svband .quizgrid{grid-template-columns:minmax(0,1fr) minmax(0,.92fr);column-gap:52px;row-gap:0;align-items:start}
+ .svband .svintro{display:contents}
+ .svband .svintro>.label{grid-column:1;grid-row:1}
+ .svband .svintro>h1,.svband .svintro>h2{grid-column:1;grid-row:2}
+ .svband .svintro>.lede{grid-column:1;grid-row:3;margin-bottom:22px}
+ .svband .quizgrid>div:last-child{grid-column:1;grid-row:4}
+ .svband .svintro>p:not(.lede){grid-column:1;margin:0!important}
+ .svband .svintro>p:nth-of-type(2){grid-row:5;margin-top:18px!important}
+ .svband .svintro>p:nth-of-type(3){grid-row:6;margin-top:6px!important}
+ .svband .svintro>p:not(.lede) .linkbtn{font:500 14.5px var(--ui);color:var(--muted);text-decoration:underline;text-underline-offset:3px}
+ .svband .svsum{grid-column:2;grid-row:1/8;position:sticky;top:100px;margin-top:6px}
+}
+/* One signal per answer: the check only appears once picked */
+.svtile .svck{opacity:0;transition:opacity .15s}
+.svtile[aria-pressed="true"] .svck,.svtile.must .svck{opacity:1}
+.svtile{padding-right:30px}
+
+/* How we score */
+.wts{display:grid;gap:8px;margin:6px 0 18px;max-width:520px}
+.wt{display:grid;grid-template-columns:110px 1fr 36px;align-items:center;gap:12px;font:500 14px var(--ui);color:var(--ink)}
+.wt i{display:block;height:10px;border-radius:3px;background:var(--ink)}
+.wt b{font:600 14px var(--ui);text-align:right}
+.bfit{border-collapse:collapse;width:100%;max-width:520px;margin:6px 0 18px;font:400 15px var(--ui)}
+.bfit th{text-align:left;font:600 12px var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:8px 0;border-bottom:1px solid var(--ink)}
+.bfit td{padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink)}
+.bfit td:first-child{font-weight:600;width:44%}
+.scrules ul{margin:0;padding-left:18px;font:400 14.5px/1.5 var(--ui);color:var(--ink)}
+.scrules li+li{margin-top:6px}
+
+/* Coastal Guides: one lead story, read times */
+.card .foot{display:flex;align-items:center;gap:10px}
+.card .foot .rt{margin-left:auto;font:500 13px var(--ui);color:var(--muted)}
+.alead{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);margin:0 0 26px}
+.alead .ph{aspect-ratio:auto;min-height:340px;height:100%}
+.alead .ph img{width:100%;height:100%;object-fit:cover}
+.alead .bd{padding:32px 34px;display:flex;flex-direction:column;justify-content:center}
+.alead h2{font-size:clamp(26px,2.6vw,34px);line-height:1.15;margin:10px 0 12px}
+.alead p{font:400 17px/1.55 var(--read,var(--ui));color:var(--ink);margin:0 0 18px}
+@media (max-width:760px){.alead{grid-template-columns:1fr}.alead .ph{min-height:220px}.alead .bd{padding:20px}.alead h2{font-size:24px}}
+
+/* For Agents */
+.agstats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--line);margin-top:40px}
+.agstats>div{padding:18px 0;display:grid;gap:2px}
+.agstats b{font:400 30px/1.1 var(--display);color:var(--ink)}
+.agstats span{font:500 13.5px var(--ui);color:var(--muted)}
+.agmain{padding-top:40px}
+.agsteps{list-style:none;counter-reset:ag;margin:0 0 30px;padding:0;display:grid;gap:0}
+.agsteps li{counter-increment:ag;display:grid;grid-template-columns:44px 1fr;column-gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.agsteps li::before{content:counter(ag);grid-row:1/3;width:32px;height:32px;border-radius:6px;background:var(--ink);color:#fff;font:600 15px var(--ui);display:grid;place-items:center}
+.agsteps b{font:600 17px var(--ui);color:var(--ink)}
+.agsteps span{font:400 15.5px/1.5 var(--ui);color:var(--ink);margin-top:3px}
+.aggive{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.aggive .label{margin-bottom:12px}
+.aggive ul{margin:0;padding-left:18px;font:400 15.5px/1.5 var(--ui);color:var(--ink)}
+.aggive li+li{margin-top:6px}
+.agex{position:relative;display:grid;grid-template-columns:200px 1fr;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--white)}
+.agex .agph{position:relative;min-height:170px}
+.agex .agph img,.agex .agph .fallback{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.agex .agbd{padding:18px 20px}
+.agex p{font:400 14.5px/1.5 var(--ui);color:var(--ink);margin:10px 0 0}
+.agtag{position:absolute;top:10px;right:10px;font:600 11px var(--ui);letter-spacing:.08em;text-transform:uppercase;border:1px dashed var(--muted);color:var(--muted);border-radius:4px;padding:3px 7px;background:var(--white);z-index:1}
+.agwho{display:flex;align-items:center;gap:12px;margin-top:10px}
+.agav{width:44px;height:44px;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;font:600 14px var(--ui);color:var(--ink)}
+.agwho b{display:block;font:600 16px var(--ui)}
+.agwho small{font:400 13px var(--ui);color:var(--muted)}
+.agfine{font:400 13.5px var(--ui);color:var(--muted);margin:14px 0 0}
+.agform{position:sticky;top:96px}
+@media (max-width:760px){.agstats{grid-template-columns:1fr 1fr}.aggive{grid-template-columns:1fr;gap:18px}.agex{grid-template-columns:1fr}.agex .agph{min-height:150px}.agform{position:static}}
+
+/* Privacy */
+.pv-upd{font:400 14px var(--ui);color:var(--muted);margin:0 0 22px}
+.pv-short{border-top:1px solid var(--ink);border-bottom:1px solid var(--line);padding:18px 0 16px;margin-bottom:26px}
+.pv-short .label{margin-bottom:10px}
+.pv-short ul{margin:0;padding-left:18px;font:400 16px/1.55 var(--ui);color:var(--ink)}
+.pv-short li+li{margin-top:8px}
+.pv-cred{margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
+.pv-cred summary{cursor:pointer;font:600 16px var(--ui);color:var(--ink);list-style:none}
+.pv-cred summary::before{content:"+ ";font-weight:600}
+.pv-cred[open] summary::before{content:"− "}
+@media (max-width:1000px){.svband .svintro>p:not(.lede) .linkbtn{font:500 14.5px var(--ui);color:var(--muted);text-decoration:underline;text-underline-offset:3px}.svband .svintro>p:nth-of-type(3){margin-top:-8px!important}}
+@media (min-width:1001px){.side.scside{position:sticky;top:96px}.side.rgside{position:sticky;top:96px}}
+.alead .foot{margin-top:4px}
+@media (max-width:760px){.wrap>.tabs{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-right:-20px;padding-right:20px}.wrap>.tabs::-webkit-scrollbar{display:none}.wrap>.tabs .tab{flex:none}}
+.agtop{padding-top:36px;padding-bottom:0}
+.agtop .agstats{margin-top:0}
+.agjump{display:none}
+@media (max-width:760px){.agjump{display:flex;width:100%;justify-content:center;margin-top:18px}.agtop{padding-top:24px}}
