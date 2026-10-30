@@ -1660,3 +1660,16 @@ section.tmap-page.vm-page{padding:0!important;margin:0!important;max-width:none!
 .vm-pcb .stag{flex:none;white-space:nowrap}
 .vm-bl{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .vm-sheet.crd{gap:8px}
+/* Oct 30 2026: phone turned sideways: the sheet becomes a panel on the right, the map fills the rest */
+.vm-ph.land .vm-sheet{top:0;bottom:0;left:auto;right:0;width:var(--pw);max-height:none;border-radius:18px 0 0 18px;box-shadow:-8px 0 26px rgba(21,42,46,.14);overflow:hidden;padding-top:14px}
+.vm-ph.land .vm-handle,.vm-ph.land .vm-grab,.vm-ph.land .vm-swipe,.vm-ph.land .vm-all{display:none}
+.vm-ph.land .vm-chips{right:var(--pw)}
+.vm-ph.land .vm-step{margin-bottom:-6px}
+.vm-ph.land .vm-shd h2{font-size:19px}
+.vm-ph.land .vm-tiles.grid{flex:1;min-height:0;overflow-y:auto;grid-template-columns:repeat(2,minmax(0,1fr));padding:0 14px 10px}
+.vm-ph.land .vm-tile{height:104px}
+.vm-ph.land .vm-tile small{display:block;margin-top:2px;font-size:11px;line-height:1.25;opacity:.92}
+.vm-ph.land .vm-towns{flex:1;min-height:0;overflow-y:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:0 14px 10px;align-content:start}
+.vm-ph.land .vm-tt{width:auto}
+.vm-ph.land .vm-tt img,.vm-ph.land .vm-tt .fallback{width:100%;height:76px}
+.vm-ph.land .vm-sheet.crd{padding:14px 16px 12px;justify-content:flex-start}
