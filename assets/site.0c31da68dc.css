@@ -1685,3 +1685,15 @@ section.tmap-page.vm-page{padding:0!important;margin:0!important;max-width:none!
 .vm-ph.tab .vm-sheet.full .vm-tile{height:150px}
 .vm-ph.tab .vm-tt{width:132px}
 .vm-ph.tab .vm-tt img,.vm-ph.tab .vm-tt .fallback{width:132px;height:100px}
+/* Oct 30 2026: one screen style picker on phones: all 12 in three columns, whole state map above */
+.vm-sheet.full.pick{max-height:none;gap:8px;padding-bottom:14px}
+.vm-sheet.pick .vm-shd h2{font-size:22px}
+.vm-sheet.pick .vm-tiles.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;padding:0 14px;overflow:visible}
+.vm-sheet.pick .vm-tile{height:var(--th,100px);border-radius:12px}
+.vm-sheet.pick .vm-tile em{top:5px;left:5px;padding:2px 6px;font-size:10.5px}
+.vm-sheet.pick .vm-tile span{left:8px;right:6px;bottom:6px}
+.vm-sheet.pick .vm-tile b{font-size:12.5px;line-height:1.12}
+.vm-sheet.pick .vm-tile small{display:block;margin-top:2px;font-size:10.5px;line-height:1.2;opacity:.92}
+.vm-sheet.pick.nodesc .vm-tile small{display:none}
+.vm-tile.lit{box-shadow:0 0 0 3px var(--vc)}
+.vm-tile.lit img{transform:scale(1.06)}
