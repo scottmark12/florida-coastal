@@ -88,7 +88,7 @@ function vmMeasure(){
   const st=document.querySelector(".vm-stage.vm-ph"),sh=st&&st.querySelector(".vm-sheet");
   if(!sh||sh.classList.contains("full")&&!sh.classList.contains("pick")||st.classList.contains("land"))return !1;
   const key=(sh.classList.contains("crd")?"c":sh.classList.contains("sty")?"v":sh.classList.contains("pick")?"f":"l")+vmW(),h=Math.round(sh.getBoundingClientRect().height),m=window.__vmSh||(window.__vmSh={}),
-    est=key[0]==="c"?300:key[0]==="v"?304:key[0]==="f"?parseFloat(sh.style.getPropertyValue("--th")||100)*4+24+122:222;
+    est=key[0]==="c"?300:key[0]==="v"?304:key[0]==="f"?(sh.classList.contains("c4")?3:4)*(parseFloat(sh.style.getPropertyValue("--th"))+8)+104:222;
   if(Math.abs((m[key]||est)-h)>10&&m[key]!==h){m[key]=h;window.__vmCur=null;rerenderMap();return !0}
   return !1;
 }
@@ -175,8 +175,8 @@ function vmPhone(f,a,s,o){
   vmSync(s,!0);
   if(S.vlist)return `<div class="wrap"><div class="smap smap-ph">${vPhoneTop(o)}<div class="vp-list vp-plist">${smapOrder().map(vRow).join("")}</div>${vCta()}</div></div>`;
   const W=vmW(),land=vmLand(),tab=!land&&W>=600,H=Math.max(land?240:480,window.innerHeight-vmHH());vmWH=[W,window.innerHeight];const card=!!(S.vcard&&s),full=!land&&!card&&!S.vibe&&"full"===S.vmSheet,pw=land?Math.min(360,Math.round(W*.42)):0,
-    mini=full&&!tab,th=Math.max(72,Math.min(104,Math.round((H-330)/4-8))),
-    sh=(window.__vmSh||{})[(card?"c":S.vibe?"v":full?"f":"l")+W]||(card?300:S.vibe?304:mini?th*4+24+122:222),top=S.vibe||card?54:8,fr=vmFrame(!1,W,H,s,{top:top,sh:sh,pw:pw,tab:tab,mini:mini});
+    mini=full&&!tab,w3=(W-44)/3,c4=H-(4*w3+24+112)<190,th=Math.round(c4?(W-52)/4:w3),rows=c4?3:4,
+    sh=(window.__vmSh||{})[(card?"c":S.vibe?"v":full?"f":"l")+W]||(card?300:S.vibe?304:mini?rows*th+(rows-1)*8+112:222),top=S.vibe||card?54:8,fr=vmFrame(!1,W,H,s,{top:top,sh:sh,pw:pw,tab:tab,mini:mini});
   let sheet;
   if(card){
     const {k,n,nx}=vmNext(s);
@@ -186,7 +186,7 @@ function vmPhone(f,a,s,o){
     sheet=`<section class="vm-sheet sty" aria-label="${VIBES[v]} towns"><span class="vm-grab" aria-hidden="true"></span><div class="vm-step"><span class="vm-stepn">Step 2 of 2</span><span class="vm-acts"><button class="vm-chg" data-vlist="1">List</button><button class="vm-chg" data-vmland="1">Change style</button></span></div><div class="vm-shd"><h2>Tap a town to fly there</h2></div><p class="vm-sub"><i style="background:${VCOL[v]}"></i>${L.length} ${VIBES[v]} towns, lit up on the map. Tap a photo or any colored dot.</p><div class="vm-towns">${L.map(t=>`<button class="vm-tt" data-vpick="${t.id}">${art(t,!1)}<b>${short(t)}</b></button>`).join("")}</div></section>`;
   }else{
     const V=VGROUPS.flatMap(g=>g[1]);
-    sheet=`<section class="vm-sheet${full?" full":""}${mini?" pick"+(th<90?" nodesc":""):""}" aria-label="Pick a style"${mini?` style="--th:${th}px"`:""}><button class="vm-handle" data-vmsheet="1" aria-expanded="${full}" aria-label="${full?"Show fewer styles":"Show all styles"}"><span></span></button><div class="vm-step"><span class="vm-stepn">Step 1 of 2</span>${full?"":'<span class="vm-swipe" aria-hidden="true">Swipe <b>→</b></span>'}</div><div class="vm-shd"><h2>Pick the style that feels like home</h2><button class="vm-all" data-vmsheet="1">${full?"Show map":"See all 12"}</button></div><div class="vm-tiles ${full||land?"grid":"row"}">${V.map(v=>vmTile(v,o,mini)).join("")}</div></section>`;
+    sheet=`<section class="vm-sheet${full?" full":""}${mini?" pick"+(c4?" c4":""):""}" aria-label="Pick a style"${mini?` style="--th:${th}px;--cols:${c4?4:3}"`:""}><button class="vm-handle" data-vmsheet="1" aria-expanded="${full}" aria-label="${full?"Show fewer styles":"Show all styles"}"><span></span></button><div class="vm-step"><span class="vm-stepn">Step 1 of 2</span>${full?"":'<span class="vm-swipe" aria-hidden="true">Swipe <b>→</b></span>'}</div><div class="vm-shd"><h2>Pick the style that feels like home</h2><button class="vm-all" data-vmsheet="1">${full?"Show map":"See all 12"}</button></div><div class="vm-tiles ${full||land?"grid":"row"}">${V.map(v=>vmTile(v,o,mini)).join("")}</div></section>`;
   }
   return `<div class="vm-stage vm-ph${full?" sheet-full":""}${land?" land":""}${tab?" tab":""}" style="height:${H}px${land?";--pw:"+pw+"px":""}"><div class="vm-map mapbox">${vmSVG(f,fr)}</div>${S.vibe||card?vmChips(o):""}${!land&&!tab&&!mini&&!card&&!S.vibe?`<button class="vm-pan" data-vmpan="1" aria-label="${S.vmPan?"Show the peninsula":"Show the Panhandle"}">${S.vmPan?"Peninsula ›":"‹ Panhandle"}</button>`:""}${card||S.vmMan||(S.vmz||1)>1?`<button class="vm-out ph" data-vmout="1" style="bottom:${land?12:sh+12}px">${VM_OUT_ICON}${vmOutTxt(o,1)}</button>`:""}${card||full||S.vibe?"":`<a class="btn btn-accent vm-top5" href="#quiz" style="bottom:${land?12:sh+12}px">My top 5</a>`}${sheet}</div>`;
 }

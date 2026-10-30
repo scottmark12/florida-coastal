@@ -1697,3 +1697,12 @@ section.tmap-page.vm-page{padding:0!important;margin:0!important;max-width:none!
 .vm-sheet.pick.nodesc .vm-tile small{display:none}
 .vm-tile.lit{box-shadow:0 0 0 3px var(--vc)}
 .vm-tile.lit img{transform:scale(1.06)}
+/* Oct 30 2026: picker tiles are squares (3 across when there's room, 4 across on shorter phones) */
+.vm-sheet.pick .vm-tiles.grid{grid-template-columns:repeat(var(--cols,3),minmax(0,1fr))}
+.vm-sheet.pick .vm-tile{height:auto;aspect-ratio:1/1}
+.vm-sheet.pick.c4 .vm-tiles.grid{gap:7px}
+.vm-sheet.pick.c4 .vm-tile small{display:none}
+.vm-sheet.pick.c4 .vm-tile b{font-size:11.5px}
+.vm-sheet.pick.c4 .vm-tile span{left:6px;right:5px;bottom:6px}
+.vm-sheet.pick.c4 .vm-tile b{font-size:10.5px;line-height:1.15;letter-spacing:-.1px}
+.vm-sheet.pick.c4 .vm-tile span{left:5px;right:4px;bottom:5px}
