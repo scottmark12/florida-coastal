@@ -2,7 +2,7 @@
 /* Desktop: style chips across the top, the map fills the rest of the screen, a style panel on the left and a light town card low on the right.
    Opening a town flies the map to it and centers it in the open space between the panels. Phone: big map, short bottom sheet.
    Map page zoom lives in S.vmz (not S.mz) so the home page map is never affected. */
-const VM={barH:64,lw:400,cw:344,gap:24,tz:3.3,tzPh:1.9,ph:1.85,phLon:-82.63,phLat:26.95,panLon:-85.3,panLat:29.55,ovLon:-83.75,ovLat:27.75};
+const VM={barH:64,lw:420,cw:344,gap:24,tz:3.3,tzPh:1.9,ph:1.85,phLon:-82.63,phLat:26.95,panLon:-85.3,panLat:29.55,ovLon:-83.75,ovLat:27.75};
 function vmHH(){try{return parseFloat(getComputedStyle(document.documentElement).getPropertyValue("--hh"))||73}catch(e){return 73}}
 function vmW(){return document.documentElement.clientWidth||window.innerWidth||1280}
 function vmSync(s,ph){
@@ -16,12 +16,12 @@ function vmFrame(desk,W,H,s,o){
   const {w:mw,h:mh}=mapSize(),ti=Math.round((isPhone()?.75:1.15)*K),card=!!(S.vcard&&s);
   let k,z,lon,lat,gx,gy,lb;
   if(desk){
-    const left=VM.gap+VM.lw,rightNo=W-VM.gap-64,right=card?W-2*VM.gap-VM.cw:rightNo;
-    k=Math.min((rightNo-left-40)/600,(H-30)/600);
+    const right=W-VM.lw-72,leftNo=24,left=card?2*VM.gap+VM.cw:leftNo;
+    k=Math.min((right-leftNo-40)/600,(H-30)/600);
     z=S.vmz||1;
     if(card){lon=s.lon;lat=s.lat}else{lon=VM.ovLon;lat=VM.ovLat}
-    gx=(left+(z>1.5||!card?right:rightNo))/2;gy=H/2;
-    lb=[left+8,8,right-8,H-8];
+    gx=((z>1.5||!card?left:leftNo)+right)/2;gy=H/2;
+    lb=[left+8,8,right+48,H-8];
   }else{
     k=W/mw;
     z=VM.ph*(S.vmz||1);
