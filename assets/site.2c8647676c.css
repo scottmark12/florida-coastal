@@ -1649,3 +1649,14 @@ section.tmap-page.vm-page{padding:0!important;margin:0!important;max-width:none!
 .vm-sheet.full{max-height:80%}
 .vm-sheet.full .vm-shd h2{font-size:23px}
 .vm-all{white-space:nowrap;flex:none}
+/* Oct 30 2026: mobile Vibe Map audit fixes */
+.vm-top5{right:auto;left:12px}
+.vm-all,.vm-chg{min-height:44px;padding:0 4px;display:inline-flex;align-items:center}
+.vm-step{margin-bottom:-12px}
+.vm-handle{flex:none;height:34px;margin:-6px auto -10px}
+.vm-c{min-height:42px}
+.vm-pan{height:42px}
+.vm-pcb .smap-tags{flex-wrap:nowrap;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,#000 85%,transparent);mask-image:linear-gradient(90deg,#000 85%,transparent)}
+.vm-pcb .stag{flex:none;white-space:nowrap}
+.vm-bl{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.vm-sheet.crd{gap:8px}

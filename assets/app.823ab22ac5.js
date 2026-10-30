@@ -24,10 +24,10 @@ function vmFrame(desk,W,H,s,o){
     lb=[left+8,8,right+48,H-8];
   }else{
     k=W/mw;
-    z=VM.ph*(S.vmz||1);
-    if(card){lon=s.lon;lat=s.lat}else if(S.vmPan){lon=VM.panLon;lat=VM.panLat}else{lon=VM.phLon;lat=VM.phLat}
-    const top=o.top||8,bot=H-(o.sh||196);
-    gx=W/2;gy=card?(top+bot)/2:Math.min((top+bot)/2+8,bot-40);
+    const top=o.top||8,bot=H-(o.sh||196),fitZ=Math.min(VM.ph,(bot-top)/(6.5*K*k));
+    z=(card?VM.ph:fitZ)*(S.vmz||1);
+    if(card){lon=s.lon;lat=s.lat}else if(S.vmPan){lon=VM.panLon;lat=VM.panLat}else{lon=VM.phLon;lat=27.25}
+    gx=W/2;gy=(top+bot)/2;
     lb=[4,top+4,W-4,bot-6];
   }
   const bx=PAD+(lon-LON0)*COS*K,by=PAD+(LAT0-lat)*K;
@@ -44,7 +44,36 @@ function vmSVG(f,fr){
   return mapSVG(f,{zoom:fr.zoom,lb:fr.lb,aria:"Map of Florida beach towns by style"}).replace(/viewBox="[^"]*"/,`viewBox="${v}" preserveAspectRatio="xMidYMid slice"`);
 }
 /* After the map redraws: glide from the old view to the new one */
+function vmMeasure(){
+  const st=document.querySelector(".vm-stage.vm-ph"),sh=st&&st.querySelector(".vm-sheet");
+  if(!sh||sh.classList.contains("full"))return !1;
+  const key=(sh.classList.contains("crd")?"c":sh.classList.contains("sty")?"v":"l")+vmW(),h=Math.round(sh.getBoundingClientRect().height),m=window.__vmSh||(window.__vmSh={});
+  if(Math.abs((m[key]||(key[0]==="c"?300:key[0]==="v"?304:222))-h)>10&&m[key]!==h){m[key]=h;window.__vmCur=null;rerenderMap();return !0}
+  return !1;
+}
+/* Back button: each Vibe Map step is a history entry, so back goes town, style, picker before leaving the page */
+function vmLevel(){return S.vcard?2:S.vibe?1:0}
+function vmHist(){
+  if(window.__vmRestoring){window.__vmRestoring=!1;return}
+  const st={vibe:S.vibe||null,sel:S.sel,vcard:!!S.vcard,sheet:S.vmSheet||"",lv:vmLevel()},cur=history.state&&history.state.vm;
+  try{
+    if(!cur)history.replaceState(Object.assign({},history.state||{},{vm:st}),"");
+    else if(cur.vibe!==st.vibe||cur.vcard!==st.vcard||cur.sel!==st.sel&&st.vcard||cur.sheet!==st.sheet){
+      st.lv>cur.lv?history.pushState(Object.assign({},history.state||{},{vm:st}),""):history.replaceState(Object.assign({},history.state||{},{vm:st}),"");
+    }
+  }catch(e){}
+}
+window.addEventListener("popstate",function(e){
+  if(!document.querySelector(".vm-stage")||"map"!==curRoute())return;
+  const v=e.state&&e.state.vm;
+  e.stopImmediatePropagation();
+  S.vibe=v?v.vibe:null;S.vmV=S.vibe;S.vcard=!!(v&&v.vcard);v&&v.sel&&byId[v.sel]&&(S.sel=v.sel);
+  S.vmSheet=v?v.sheet:"full";S.vmOpen=null;S.vcard||(S.vmz=1);
+  window.__vmRestoring=!0;rerenderMap();
+});
 function vmAfter(){
+  if(vmMeasure())return;
+  vmHist();
   const svg=document.querySelector(".vm-map svg");
   const on=document.querySelector(".vm-list .vm-row.on");
   if(on){const l=on.closest(".vm-list");l&&(l.scrollTop=Math.max(0,on.parentNode.offsetTop-l.clientHeight/2+on.offsetHeight/2))}
@@ -102,7 +131,7 @@ function vmPhone(f,a,s,o){
   if(!window.__vmLanded){window.__vmLanded=!0;S.vibe||S.vcard||S.vlist||(S.vmSheet="full")}
   if(S.vlist)return `<div class="wrap"><div class="smap smap-ph">${vPhoneTop(o)}<div class="vp-list vp-plist">${smapOrder().map(vRow).join("")}</div>${vCta()}</div></div>`;
   const W=vmW(),H=Math.max(480,window.innerHeight-vmHH());vmWH=[W,window.innerHeight];const card=!!(S.vcard&&s),full=!card&&!S.vibe&&"full"===S.vmSheet,
-    sh=card?300:S.vibe?304:222,top=S.vibe||card?54:8,fr=vmFrame(!1,W,H,s,{top:top,sh:sh});
+    sh=(window.__vmSh||{})[(card?"c":S.vibe?"v":"l")+W]||(card?300:S.vibe?304:222),top=S.vibe||card?54:8,fr=vmFrame(!1,W,H,s,{top:top,sh:sh});
   let sheet;
   if(card){
     const {k,n,nx}=vmNext(s);
