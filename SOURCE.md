@@ -15,4 +15,4 @@ The site was first generated from a single file, `site.html`, by `build.js`. Tha
 
 ## Change log
 
-A plain English log of every change is kept in the Florida Coastal claude.ai project docs: `florida-coastal-site-patches.md` (through Oct 28) and `florida-coastal-site-patches-oct29.md`.
+A plain English log of every change is kept in the Florida Coastal claude.ai project docs: `florida-coastal-site-patches.md` (through Oct 28) `florida-coastal-site-patches-oct29.md` and `florida-coastal-site-patches-oct29-evening.md`.
