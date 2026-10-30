@@ -1496,3 +1496,5 @@ body.has-cmptray footer{padding-bottom:110px}
 @media (max-width:1000px){.sl-list{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.sl-list{grid-template-columns:1fr}.sl-list .sl-row{display:grid;grid-template-columns:118px 1fr;align-items:center;column-gap:12px;padding:6px 2px}.sl-list .sl-top{flex-direction:column;align-items:flex-start;gap:2px}.sl-list .sl-top label{white-space:normal}}
 @media (max-width:560px){.sl-ctrls .sl-scale{padding-left:132px}}
+/* ===== Oct 30 2026 patch: Vibe Map signature towns ===== */
+.dot.sig{stroke:#fff;stroke-width:2.2;filter:drop-shadow(0 1px 2px rgba(20,40,55,.35))}
