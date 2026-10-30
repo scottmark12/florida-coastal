@@ -48,6 +48,7 @@ function vmAfter(){
   const svg=document.querySelector(".vm-map svg");
   const on=document.querySelector(".vm-list .vm-row.on");
   if(on){const l=on.closest(".vm-list");l&&(l.scrollTop=Math.max(0,on.parentNode.offsetTop-l.clientHeight/2+on.offsetHeight/2))}
+  vmHints();
   if(!svg)return;
   const p=window.__vmPrev,c=window.__vmCur;window.__vmPrev=c;
   if(!p||!c||Math.abs(p.a-c.a)<1e-6&&Math.abs(p.bx-c.bx)<.5&&Math.abs(p.by-c.by)<.5)return;
@@ -57,6 +58,15 @@ function vmAfter(){
   svg.style.transformOrigin="0 0";svg.style.transition="none";svg.style.transform=`translate(${tx.toFixed(1)}px,${ty.toFixed(1)}px) scale(${sc.toFixed(4)})`;
   svg.getBoundingClientRect();
   requestAnimationFrame(()=>{svg.style.transition="transform .65s cubic-bezier(.22,.7,.2,1)";svg.style.transform="none"});
+}
+function vmHints(){
+  const once=(k,f)=>{try{if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,"1")}catch(e){}setTimeout(f,700)};
+  const row=document.querySelector(".vm-tiles.row");
+  row&&once("vm-h1",()=>{try{row.scrollTo({left:150,behavior:"smooth"});setTimeout(()=>row.scrollTo({left:0,behavior:"smooth"}),900)}catch(e){}});
+  const tt=document.querySelector(".vm-towns");
+  tt&&once("vm-h2",()=>{tt.classList.add("vm-nudge")});
+  const crd=document.querySelector(".vm-sheet.crd");
+  crd&&once("vm-h3",()=>{crd.classList.add("vm-nudge")});
 }
 function vmTile(v,o){return `<button class="vm-tile" data-vibe="${v}" data-vsig="${VSIG[v]||""}" style="--vc:${VCOL[v]}"><img src="img/vibes/${v}.webp" alt="" loading="lazy" width="320" height="264"><em><i></i>${o[v]}</em><span><b>${VSHORT[v]||VIBES[v]}</b><small>${VSUB[v]||""}</small></span></button>`}
 function vmReg(t){return (regionOf[t.id]||{}).map||t.region}
@@ -91,19 +101,19 @@ function vmPhone(f,a,s,o){
   vmSync(s,!0);
   if(S.vlist)return `<div class="wrap"><div class="smap smap-ph">${vPhoneTop(o)}<div class="vp-list vp-plist">${smapOrder().map(vRow).join("")}</div>${vCta()}</div></div>`;
   const W=vmW(),H=Math.max(480,window.innerHeight-vmHH());vmWH=[W,window.innerHeight];const card=!!(S.vcard&&s),full=!card&&!S.vibe&&"full"===S.vmSheet,
-    sh=card?292:S.vibe?236:196,top=S.vibe||card?54:8,fr=vmFrame(!1,W,H,s,{top:top,sh:sh});
+    sh=card?300:S.vibe?304:222,top=S.vibe||card?54:8,fr=vmFrame(!1,W,H,s,{top:top,sh:sh});
   let sheet;
   if(card){
     const {k,n,nx}=vmNext(s);
-    sheet=`<section class="vm-sheet crd" aria-live="polite" aria-label="${s.name}"><span class="vm-grab" aria-hidden="true"></span><div class="vm-pc"><a class="vm-pcph" href="#town-${s.id}" tabindex="-1" aria-hidden="true">${art(s,!1)}</a><div class="vm-pcb"><span class="cat">${vmReg(s)}</span><h3>${s.name}</h3><div class="smap-tags">${s.vibes.slice(0,2).map(vmTag).join("")}</div></div></div><p class="vm-bl">${s.blurb}</p><div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore ${short(s).length>14?"this town":short(s)} →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div>${k>=0&&nx?`<p class="vm-of">${k+1} of ${n} · swipe for ${short(nx)}</p>`:""}</section>`;
+    sheet=`<section class="vm-sheet crd" aria-live="polite" aria-label="${s.name}"><span class="vm-grab" aria-hidden="true"></span><div class="vm-pc"><a class="vm-pcph" href="#town-${s.id}" tabindex="-1" aria-hidden="true">${art(s,!1)}</a><div class="vm-pcb"><span class="cat">${vmReg(s)}</span><h3>${s.name}</h3><div class="smap-tags">${s.vibes.slice(0,2).map(vmTag).join("")}</div></div></div><p class="vm-bl">${s.blurb}</p><div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore ${short(s).length>14?"this town":short(s)} →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div>${k>=0&&nx?`<p class="vm-of"><span class="vm-swipe2" aria-hidden="true">‹ swipe ›</span> ${k+1} of ${n} · next up ${short(nx)}</p>`:""}</section>`;
   }else if(S.vibe){
     const L=smapOrder(),v=S.vibe;
-    sheet=`<section class="vm-sheet sty" aria-label="${VIBES[v]} towns"><span class="vm-grab" aria-hidden="true"></span><div class="vm-shd"><h2><i style="background:${VCOL[v]}"></i>${VIBES[v]}</h2><span>${L.length} towns</span></div><p class="vm-sub">${VSUB[v]||""}. Tap a town to fly there.</p><div class="vm-towns">${L.map(t=>`<button class="vm-tt" data-vpick="${t.id}">${art(t,!1)}<b>${short(t)}</b></button>`).join("")}</div></section>`;
+    sheet=`<section class="vm-sheet sty" aria-label="${VIBES[v]} towns"><span class="vm-grab" aria-hidden="true"></span><div class="vm-step"><span class="vm-stepn">Step 2 of 2</span><button class="vm-chg" data-vibe="">Change style</button></div><div class="vm-shd"><h2>Tap a town to fly there</h2></div><p class="vm-sub"><i style="background:${VCOL[v]}"></i>${L.length} ${VIBES[v]} towns, lit up on the map. Tap a photo or any colored dot.</p><div class="vm-towns">${L.map(t=>`<button class="vm-tt" data-vpick="${t.id}">${art(t,!1)}<b>${short(t)}</b></button>`).join("")}</div></section>`;
   }else{
     const V=VGROUPS.flatMap(g=>g[1]);
-    sheet=`<section class="vm-sheet${full?" full":""}" aria-label="Pick a style"><button class="vm-handle" data-vmsheet="1" aria-expanded="${full}" aria-label="${full?"Show fewer styles":"Show all styles"}"><span></span></button><div class="vm-shd"><h2>What should home feel like?</h2><button class="vm-all" data-vmsheet="1">${full?"Less":"See all"}</button></div><div class="vm-tiles ${full?"grid":"row"}">${V.map(v=>vmTile(v,o)).join("")}</div></section>`;
+    sheet=`<section class="vm-sheet${full?" full":""}" aria-label="Pick a style"><button class="vm-handle" data-vmsheet="1" aria-expanded="${full}" aria-label="${full?"Show fewer styles":"Show all styles"}"><span></span></button><div class="vm-step"><span class="vm-stepn">Step 1 of 2</span>${full?"":'<span class="vm-swipe" aria-hidden="true">Swipe <b>→</b></span>'}</div><div class="vm-shd"><h2>Pick the style that feels like home</h2><button class="vm-all" data-vmsheet="1">${full?"Less":"See all 12"}</button></div><div class="vm-tiles ${full?"grid":"row"}">${V.map(v=>vmTile(v,o)).join("")}</div></section>`;
   }
-  return `<div class="vm-stage vm-ph${full?" sheet-full":""}" style="height:${H}px"><div class="vm-map mapbox">${vmSVG(f,fr)}</div>${S.vibe||card?vmChips(o):""}${!card&&!S.vibe?`<button class="vm-pan" data-vmpan="1" aria-label="${S.vmPan?"Show the peninsula":"Show the Panhandle"}">${S.vmPan?"Peninsula ›":"‹ Panhandle"}</button>`:""}${card||(S.vmz||1)>1?`<button class="vm-out ph" data-vmout="1" style="bottom:${sh+12}px">${VM_OUT_ICON}${vmOutTxt(o,1)}</button>`:""}${card||full?"":`<a class="btn btn-accent vm-top5" href="#quiz" style="bottom:${sh+12}px">My top 5</a>`}${sheet}</div>`;
+  return `<div class="vm-stage vm-ph${full?" sheet-full":""}" style="height:${H}px"><div class="vm-map mapbox">${vmSVG(f,fr)}</div>${S.vibe||card?vmChips(o):""}${!card&&!S.vibe?`<button class="vm-pan" data-vmpan="1" aria-label="${S.vmPan?"Show the peninsula":"Show the Panhandle"}">${S.vmPan?"Peninsula ›":"‹ Panhandle"}</button>`:""}${card||(S.vmz||1)>1?`<button class="vm-out ph" data-vmout="1" style="bottom:${sh+12}px">${VM_OUT_ICON}${vmOutTxt(o,1)}</button>`:""}${card||full||S.vibe?"":`<a class="btn btn-accent vm-top5" href="#quiz" style="bottom:${sh+12}px">My top 5</a>`}${sheet}</div>`;
 }
 /* Signature town pulses while you hover or swipe its style */
 function vmPulse(id){document.querySelectorAll(".vm-map .dot.pulse").forEach(d=>d.classList.remove("pulse"));if(!id)return;const d=document.querySelector('.vm-map .dot[data-id="'+id+'"]');d&&d.classList.add("pulse")}
