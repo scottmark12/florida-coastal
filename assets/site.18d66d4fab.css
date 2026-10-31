@@ -1768,3 +1768,25 @@ nav.main a.navcta{transition:opacity .2s,transform .2s}
   .hp-nb .btn{flex:1 1 auto;white-space:nowrap;padding:0 16px;font-size:15px}
   .hp-alt a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
 }
+
+/* Oct 30 2026: phone hero, family photo band + editorial type */
+@media (max-width:759px){
+  .hp-fig{position:relative;margin:0;height:200px;overflow:hidden;background:#d9cbb8}
+  .hp-fig img{display:block;width:100%;height:100%;object-fit:cover;object-position:42% 62%}
+  .hp-fig::after{content:"";position:absolute;inset:auto 0 0 0;height:70px;background:linear-gradient(180deg,rgba(255,253,249,0),var(--white))}
+  .hp-fig figcaption{position:absolute;left:16px;bottom:12px;z-index:1;font-size:12px;font-style:italic;color:var(--ink);letter-spacing:.01em;opacity:.85}
+  .hp-hero{padding-top:8px}
+  .hp-eyebrow{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent,#C65213);font-weight:700;margin:0 0 8px}
+  .hp-hero h1{font-size:27px;line-height:1.15}
+  .hp-hero h1 em{font-style:italic;color:var(--accent,#C65213)}
+}
+@media (max-width:759px){
+  .hp-fig{height:158px}
+  .hp-fig img{object-position:42% 58%}
+  .hp-fig::after{height:56px}
+  .hp-hero{padding-top:4px}
+  .hp-hero h1{font-size:26px;margin-bottom:6px}
+  .hp-hero .hp-trust{font-size:14px}
+  .hp-vibe.hp-ph{padding-top:12px}
+}
+@media (max-width:759px) and (max-height:700px){.hp-fig{height:112px}.hp-hero h1{font-size:24px}}
