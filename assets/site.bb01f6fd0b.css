@@ -1740,3 +1740,31 @@ nav.main a.navcta{transition:opacity .2s,transform .2s}
 }
 @media (max-width:759px){.hv-open{right:auto;left:10px}.hp-vibe.hp-b{padding-top:14px}}
 @media (max-width:759px){.hv-open{left:auto;right:10px;bottom:auto;top:10px;min-height:40px;padding:0 14px;font-size:13.5px}}
+
+/* ===== Oct 30 2026 patch: phone hero (headline + trust line above the Vibe Map, style tap lights the map) ===== */
+@media (max-width:759px){
+  .hp-hero{padding-top:20px;padding-bottom:0}
+  .hp-hero h1{font-size:28px;line-height:1.14;margin:0 0 8px;letter-spacing:-.005em}
+  .hp-hero .hp-trust{margin:0;font-size:14.5px;line-height:1.4;color:var(--muted)}
+  .hp-vibe.hp-ph{padding-top:14px;padding-bottom:6px}
+  .hp-ph .hv-map{margin-bottom:10px}
+  .hp-ph .hv-map .dot.dim{opacity:.35}
+  .hp-cue{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0 0 8px;font-size:13.5px;font-weight:600;color:var(--ink)}
+  .hp-cue span+span{color:var(--muted);font-weight:600}
+  .hp-ph .vm-tiles.row{padding-top:4px}
+  .hp-ph .vm-tile.on{outline:3px solid var(--vc);outline-offset:2px}
+  .hp-alt{margin:8px 0 0;font-size:14.5px;color:var(--muted)}
+  .hp-alt a{display:inline-flex;align-items:center;min-height:44px;font-weight:700;color:var(--ink)}
+  .hp-next{margin-top:10px;padding:12px 14px;border-radius:14px;background:#fff;box-shadow:0 4px 16px rgba(21,42,46,.12);animation:hpnx .25s ease-out}
+  .hp-next b{display:flex;align-items:center;gap:7px;font-size:15px;margin-bottom:10px}
+  .hp-next b i{width:10px;height:10px;border-radius:50%;background:var(--vc);flex:none}
+  .hp-nb{display:flex;align-items:center;gap:14px}
+  .hp-nb .btn{flex:1;min-height:46px;justify-content:center;display:inline-flex;align-items:center}
+  .hp-all{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:14.5px;color:var(--ink);white-space:nowrap}
+}
+@keyframes hpnx{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.hp-next{animation:none}}
+@media (max-width:759px){
+  .hp-nb .btn{flex:1 1 auto;white-space:nowrap;padding:0 16px;font-size:15px}
+  .hp-alt a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
+}
