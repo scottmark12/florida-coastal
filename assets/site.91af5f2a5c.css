@@ -2338,3 +2338,23 @@ main#app:has(.svband){background:linear-gradient(180deg,#FBF6EE 0,#F4ECDF 260px,
 .hp-ph .vm-tiles.row .vm-tile.on{box-shadow:none!important}
 .hp-ph .vm-tiles.row .vm-tile.on img{outline:3px solid var(--vc);outline-offset:-3px}
 .dk-map .vp-pc,.dk-map .vp-pc span{text-align:left!important}.dk-map .vp-pc span{display:block!important;width:100%}
+
+/* ===== Nov 3 2026 patch: How it works row on the home page; Latest list trimmed to 3 on phones ===== */
+.hiw{color:#13282C}
+.hiw .ed-flag a{color:#13282C;text-decoration:none}
+.hiw-steps{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));column-gap:48px}
+.hiw-steps li{position:relative;display:flex;flex-direction:column;gap:10px}
+.hiw-steps li+li::before{content:"";position:absolute;left:-24px;top:0;bottom:0;border-left:1px solid rgba(21,42,46,.16)}
+.hiw-n{font-family:var(--display);font-size:40px;line-height:1;color:#9AA6A8;font-variant-numeric:tabular-nums}
+.hiw-steps h3{margin:6px 0 0;font-family:var(--display);font-weight:400;font-size:26px;line-height:1.15;letter-spacing:-.01em}
+.hiw-steps p{margin:0;font-size:16.5px;line-height:1.6;color:#2C3E41;max-width:30em}
+@media (max-width:900px){
+.hiw-steps{grid-template-columns:1fr;column-gap:0}
+.hiw-steps li{display:grid;grid-template-columns:48px 1fr;column-gap:12px;row-gap:6px;padding:16px 0;border-bottom:1px solid rgba(21,42,46,.16)}
+.hiw-steps li:first-child{padding-top:4px}
+.hiw-steps li+li::before{display:none}
+.hiw-n{grid-row:1/span 2;font-size:28px}
+.hiw-steps h3{margin:0;font-size:21px}
+.hiw-steps p{font-size:15.5px}
+.ed-latest li:nth-child(n+4){display:none}
+}
