@@ -1768,3 +1768,29 @@ nav.main a.navcta{transition:opacity .2s,transform .2s}
   .hp-nb .btn{flex:1 1 auto;white-space:nowrap;padding:0 16px;font-size:15px}
   .hp-alt a{font-weight:600;text-decoration:underline;text-underline-offset:3px}
 }
+
+/* ===== Nov 3 2026 patch: phone hero high end look (sand to sea wash, edge to edge map, cover style tiles) ===== */
+@media (max-width:759px){
+ body.on-home .hp-hero{position:relative;padding-top:36px;padding-bottom:0;background:none}
+ .hp-hero::before{content:"";position:absolute;left:0;right:0;top:0;height:860px;z-index:-1;background:linear-gradient(180deg,#FBF6EE 0%,#F4ECDF 28%,#DCEBEA 50%,#C3DFE3 62%,#C3DFE3 74%,#E9EFEC 88%,var(--white) 100%)}
+ .hp-hero h1{font-family:var(--display);font-size:35px;line-height:1.06;letter-spacing:-.02em;font-weight:400;margin:0 0 14px;max-width:11.5em;color:#13282C}
+ .hp-hero h1 .hl{font-style:italic;color:#0F6E72}
+ .hp-hero .hp-trust{font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:#4A5B5E;font-weight:600}
+ .hp-vibe.hp-ph{padding-top:6px;position:relative}
+ .hp-ph .hv-map{margin:0 -16px;border-radius:0;background:transparent;-webkit-mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 93%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0,#000 14%,#000 93%,transparent 100%)}
+ .hp-ph .hv-map .terr{filter:saturate(1.18) contrast(1.04)}
+ .hp-ph .hv-map .dot.sig{stroke-width:3;filter:drop-shadow(0 0 5px rgba(255,255,255,.95))}
+ .hp-ph .hv-open{display:none}
+ .hp-cue{margin:6px 0 12px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#13282C}
+ .hp-cue a{color:#13282C;text-decoration:underline;text-underline-offset:3px}
+ .hp-ph .vm-tiles.row{gap:12px;padding-top:7px;padding-bottom:6px}
+ .hp-ph .vm-tiles.row .vm-tile{width:150px;height:200px;border-radius:6px;box-shadow:0 10px 24px rgba(19,40,44,.18)}
+ .hp-ph .vm-tile em{display:none}
+ .hp-ph .vm-tile span{padding:0 12px 12px}
+ .hp-ph .vm-tile span b{font-family:var(--display);font-weight:400;font-size:19px;line-height:1.1;letter-spacing:-.005em}
+ .hp-ph .vm-tile span small{font-size:12px;margin-top:3px;opacity:.9}
+ .hp-ph .vm-tiles.row .vm-tile.on{outline:none;box-shadow:0 0 0 3px #fff,0 0 0 5px var(--vc),0 10px 24px rgba(19,40,44,.2)}
+ .hp-alt{margin-top:14px}
+ .hp-next{border-radius:6px}
+ .hp-nb .btn{border-radius:4px}
+}
