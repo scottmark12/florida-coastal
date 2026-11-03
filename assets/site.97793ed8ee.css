@@ -1794,3 +1794,56 @@ nav.main a.navcta{transition:opacity .2s,transform .2s}
  .hp-next{border-radius:6px}
  .hp-nb .btn{border-radius:4px}
 }
+
+/* ===== Nov 3 2026 patch: desktop hero matches the phone (sand to sea wash, edge to edge map, cover style tiles up beside the headline) ===== */
+.dk-cue{display:none}
+@media (min-width:760px){
+ .dk-hero{background:linear-gradient(180deg,#FBF6EE 0%,#F4ECDF 100%)!important;padding:56px 0 10px!important;border:0!important}
+ .dk-hero .dk-l{max-width:calc(100% - 430px)}
+ .dk-eyebrow{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:#4A5B5E;font-weight:600;margin:0 0 18px}
+ .dk-hero h1{font-family:var(--display);font-weight:400;font-size:clamp(44px,4.1vw,58px);line-height:1.04;letter-spacing:-.02em;color:#13282C;margin:0 0 16px;max-width:13.5em}
+ .dk-hero h1 .hl{font-style:italic;color:#0F6E72}
+ .dk-alt{margin:0;font-size:16px}
+ .dk-alt a{color:#13282C;font-weight:600;text-decoration:underline;text-underline-offset:4px}
+ .dk-map{max-width:none!important;padding:0!important;margin:0!important;background:linear-gradient(180deg,#F4ECDF 0%,#DCEBEA 14%,#C3DFE3 30%,#C3DFE3 80%,#E9EFEC 93%,var(--white) 100%)}
+ .dk-map>div{max-width:1180px;margin:0 auto;padding:10px 20px 40px}
+ .dk-map .label,.dk-map .maphead{display:none}
+ .dk-map .smap.wide.vpan{border:0!important;box-shadow:none!important;background:transparent!important;border-radius:0!important;height:700px!important;overflow:visible!important}
+ .dk-map .smap-stage.mapbox{background:transparent!important;border:0!important;border-radius:0!important;box-shadow:none!important;-webkit-mask-image:linear-gradient(to right,transparent 0,#000 9%,#000 91%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 11%,#000 88%,transparent 100%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 9%,#000 91%,transparent 100%),linear-gradient(to bottom,transparent 0,#000 11%,#000 88%,transparent 100%);mask-composite:intersect}
+ .dk-map .smap-stage .terr{filter:saturate(1.18) contrast(1.04)}
+ .dk-map .dot.sig{stroke-width:3;filter:drop-shadow(0 0 6px rgba(255,255,255,.95))}
+ .dk-map .smap-zoom{display:none}
+ .dk-map aside.vpanel{background:transparent!important;border:0!important;box-shadow:none!important;width:400px!important;box-sizing:border-box;margin-top:calc(-1 * var(--dkup,0px))!important;height:calc(100% + var(--dkup,0px))!important;align-self:flex-start;position:relative;z-index:2}
+ .dk-map .vp-body{background:transparent!important}
+ .dk-map .vp-body.vp-hook{padding:0 4px 0 22px!important;box-sizing:border-box;width:100%!important;height:100%!important;overflow:auto!important}
+ .dk-map .vp-hook>h3,.dk-map .vp-hook>p{display:none}
+ .dk-cue{display:flex;justify-content:space-between;align-items:baseline;margin:0 0 14px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:700;color:#13282C}
+ .dk-cue a{color:#13282C;text-decoration:underline;text-underline-offset:4px}
+ .dk-map .vp-pgrid{gap:16px!important;grid-template-columns:1fr 1fr!important}
+ .dk-map .vp-pc{width:100%!important;min-width:0!important;max-width:100%!important;overflow:hidden!important;height:240px!important;border-radius:6px!important;box-shadow:0 12px 28px rgba(19,40,44,.18)!important;border:0!important}
+ .dk-map .vp-pc img{object-fit:cover;width:100%!important;height:100%!important;max-width:100%}
+ .dk-map .vp-pc em{display:none!important}
+ .dk-map .vp-pc span{padding:0 16px 16px!important}
+ .dk-map .vp-pc span b{font-family:var(--display)!important;font-weight:400!important;font-size:24px!important;line-height:1.08!important;letter-spacing:-.005em}
+ .dk-map .vp-pc span small{font-size:13px!important;opacity:.92;margin-top:4px}
+ .dk-map .hvhint{display:none}
+}
+/* phone hero order: trust eyebrow, headline, quiz link */
+@media (max-width:759px){
+ .hp-hero .hp-trust{margin:0 0 12px}
+ .hp-hero h1{margin-bottom:12px}
+ .hp-q{margin:0;font-size:15px}
+ .hp-q a{display:inline-flex;align-items:center;min-height:40px;color:#13282C;font-weight:600;text-decoration:underline;text-underline-offset:3px}
+}
+@media (min-width:760px) and (max-width:999px){.dk-hero .dk-l{max-width:none}.dk-hero{padding-top:40px!important}}
+@media (max-width:759px){
+ body.on-home .hp-hero{padding-top:22px}
+ .hp-hero h1{font-size:32px;margin-bottom:6px}
+ .hp-hero .hp-trust{margin-bottom:10px}
+ .hp-q{font-size:14.5px}
+ .hp-vibe.hp-ph{padding-top:0}
+ .hp-ph .hv-map{margin-top:-6px}
+ .hp-cue{margin-top:0}
+}
+@media (max-width:759px) and (max-height:700px){.hp-hero h1{font-size:29px}}
+@media (max-width:380px){.hp-q{font-size:13.5px}}
