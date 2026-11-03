@@ -2307,3 +2307,34 @@ main#app:has(.svband){background:linear-gradient(180deg,#FBF6EE 0,#F4ECDF 260px,
 .dk-map aside.vpanel{height:calc(100% + var(--dkup,0px))!important;max-height:calc(100% + var(--dkup,0px))!important;min-height:0!important;display:flex!important;flex-direction:column!important}
 .dk-map .vp-body{flex:1 1 auto!important;min-height:0!important;height:auto!important}
 .dk-map .vp-pgrid{height:100%}
+
+/* ===== Nov 3 2026 patch: hero button under the headline; flat style tiles (no photo overlays) on the home page ===== */
+.hero-cta{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:6px}
+.hero-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 28px;border-radius:999px;background:var(--accent,#C65213);color:#FDFCF8!important;font:700 16px/1 var(--body,'DM Sans'),system-ui,sans-serif;letter-spacing:.01em;text-decoration:none!important;box-shadow:0 8px 20px rgba(198,82,19,.22);transition:background .15s,transform .15s}
+.hero-btn:hover{background:var(--accent-dark,#A8440E);transform:translateY(-1px)}
+.hero-btn:focus-visible{outline:3px solid #13282C;outline-offset:3px}
+.hero-note{font-size:14px;color:#4A5B5E}
+.hp-hero .hero-cta{gap:10px;margin-top:4px}
+.hp-hero .hero-btn{width:100%;min-height:54px;font-size:16.5px}
+.hp-hero .hero-note{width:100%;text-align:center;font-size:13px}
+/* desktop tiles: photo on top, name and line underneath in ink */
+.dk-map .vp-pc{display:flex!important;flex-direction:column!important;background:transparent!important;color:#13282C!important;border-radius:0!important;box-shadow:none!important;transform:none!important}
+.dk-map .vp-pc::after{display:none!important}
+.dk-map .vp-pc img{position:static!important;flex:1 1 auto;min-height:0;height:auto!important;display:block;transition:transform .6s ease}
+.dk-map .vp-pc:hover img{transform:scale(1.03)}
+.dk-map .vp-pc{overflow:hidden!important}
+.dk-map .vp-pc span{position:static!important;padding:9px 0 0!important;flex:none}
+.dk-map .vp-pc span b{color:#13282C!important;font-size:20px!important}
+.dk-map .vp-pc span small{color:#4A5B5E!important;opacity:1!important;font-size:12.5px!important;margin-top:2px!important}
+.dk-map .vp-pc:hover span b{text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:4px}
+.dk-map .vp-pc:focus-visible{outline:3px solid var(--vc)!important;outline-offset:2px}
+/* phone tiles */
+.hp-ph .vm-tiles.row .vm-tile{height:auto!important;background:transparent!important;border-radius:0!important;box-shadow:none!important;overflow:visible!important;color:#13282C}
+.hp-ph .vm-tile::after{display:none!important}
+.hp-ph .vm-tile img{position:static!important;display:block;width:100%!important;height:auto!important;aspect-ratio:4/3;object-fit:cover}
+.hp-ph .vm-tile span{position:static!important;display:block;padding:8px 0 0!important;color:#13282C!important}
+.hp-ph .vm-tile span b{color:#13282C!important;font-size:18px!important}
+.hp-ph .vm-tile span small{color:#4A5B5E!important;opacity:1!important}
+.hp-ph .vm-tiles.row .vm-tile.on{box-shadow:none!important}
+.hp-ph .vm-tiles.row .vm-tile.on img{outline:3px solid var(--vc);outline-offset:-3px}
+.dk-map .vp-pc,.dk-map .vp-pc span{text-align:left!important}.dk-map .vp-pc span{display:block!important;width:100%}
