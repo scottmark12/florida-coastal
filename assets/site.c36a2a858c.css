@@ -1847,3 +1847,12 @@ nav.main a.navcta{transition:opacity .2s,transform .2s}
 }
 @media (max-width:759px) and (max-height:700px){.hp-hero h1{font-size:29px}}
 @media (max-width:380px){.hp-q{font-size:13.5px}}
+/* Nov 3 2026: wider home hero on big screens */
+@media (min-width:1360px){
+ body.on-home header.top .wrap,.dk-hero .wrap,.dk-map>div{max-width:1520px;padding-inline:56px}
+ .dk-hero .dk-l{max-width:calc(100% - 520px)}
+ .dk-map aside.vpanel{width:480px!important}
+ .dk-map .vp-pc{height:270px!important}
+ .dk-map .smap.wide.vpan{height:760px!important;grid-template-columns:minmax(0,1fr) 480px!important}
+ .dk-hero h1{font-size:clamp(52px,4.2vw,66px)}
+}
