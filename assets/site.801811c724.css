@@ -1979,3 +1979,105 @@ main#app:has(.svband){background:linear-gradient(180deg,#FBF6EE 0,#F4ECDF 260px,
  .svband .svintro>.fy-alt{font-size:14px!important;margin-top:14px!important}
 }
 .hp-pop .grid4>.card p,.hp-pop .card .foot{display:none!important}
+/* ===== Nov 3 2026 patch: homepage hierarchy (towns lead, story and guides support, coasts compact) ===== */
+.hp-sec{padding-top:96px}
+.hp-hd{margin-bottom:22px}
+.hp-hd h2{font-size:clamp(26px,2.3vw,34px)}
+/* 1. popular towns lead right after the hero */
+.hp-pop.hp-sec{padding-top:72px}
+.hp-pop .hp-hd h2{font-size:clamp(30px,2.8vw,42px)}
+/* 2. who we are: contained, quieter */
+.trust.hp-trust2{max-width:1180px;margin:96px auto 0;padding:0 20px;background:none;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center}
+.hp-trust2 .ph{min-height:0;border-radius:6px;aspect-ratio:4/3;box-shadow:0 14px 30px rgba(19,40,44,.14)}
+.hp-trust2 .ph img{border-radius:6px}
+.hp-trust2 .tx{padding:0;max-width:520px}
+.hp-trust2 h2{font-size:clamp(26px,2.3vw,34px);margin-bottom:14px}
+.trust.hp-trust2 .tx p:not(.hp-k):not(.hp-pts){font-size:17px}
+/* 3. coasts: compact row */
+.hp-coast .coastgrid{gap:14px}
+.hp-coast .coast{aspect-ratio:16/10;box-shadow:0 8px 18px rgba(19,40,44,.12)}
+.hp-coast .coast .t{padding:16px 18px}
+.hp-coast .coast h3{font-size:clamp(19px,1.5vw,23px);margin:0}
+.hp-coast .coast p{display:none}
+/* 4. guides: standard cards, photo on top, text below */
+.hp-guides .grid3{display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:none;height:auto;gap:22px}
+.hp-guides .card{background:transparent;color:var(--ink);box-shadow:none;border-radius:0;overflow:visible}
+.hp-guides .card:first-child{grid-row:auto}
+.hp-guides .card .ph{position:relative;inset:auto;aspect-ratio:16/10;border-radius:6px;overflow:hidden;box-shadow:0 8px 18px rgba(19,40,44,.12)}
+.hp-guides .card .bd{position:static;background:none;padding:14px 2px 0;gap:6px}
+.hp-guides .card .cat{color:#4A5B5E;font-size:11px;letter-spacing:.14em}
+.hp-guides .card h3,.hp-guides .card:first-child h3{font-size:20px;line-height:1.2;color:#13282C}
+@media (min-width:1360px){body.on-home .trust.hp-trust2{max-width:1520px;padding-inline:56px}}
+@media (max-width:759px){
+ .hp-sec{padding-top:56px}
+ .hp-pop.hp-sec{padding-top:44px}
+ .hp-hd h2,.hp-pop .hp-hd h2{font-size:26px}
+ .trust.hp-trust2{grid-template-columns:1fr;gap:18px;margin-top:56px;padding:0 16px}
+ .hp-trust2 .ph{height:auto;aspect-ratio:4/3}
+ .hp-trust2 h2{font-size:24px}
+ .hp-coast .coastgrid{grid-template-columns:1fr 1fr;gap:10px}
+ .hp-coast .coast{aspect-ratio:4/3}
+ .hp-coast .coast h3{font-size:17px}
+ .hp-guides .grid3{display:flex;flex-direction:column;gap:14px;overflow:visible;margin:0;padding:0}
+ .hp-guides .grid3>.card{display:grid;grid-template-columns:116px minmax(0,1fr);gap:14px;aspect-ratio:auto;flex:none}
+ .hp-guides .grid3 .ph{position:relative;aspect-ratio:1/1;height:auto}
+ .hp-guides .grid3 .bd{padding:2px 0 0}
+ .hp-guides .grid3 h3,.hp-guides .card:first-child h3{font-size:17px}
+}
+/* ===== Nov 3 2026 patch: one big about picture, coasts removed, editorial guides ===== */
+.trust.hp-trust2{position:relative;display:block;max-width:none!important;margin:110px 0 0!important;padding:0!important;height:clamp(560px,78vh,760px);overflow:hidden;background:#13282C;border-radius:0}
+.hp-trust2 .ph{position:absolute;inset:0;aspect-ratio:auto;border-radius:0;box-shadow:none;min-height:0;height:auto}
+.hp-trust2 .ph img{width:100%;height:100%;object-fit:cover;object-position:28% 55%;border-radius:0}
+.hp-trust2::after{content:"";position:absolute;inset:0;background:linear-gradient(270deg,rgba(10,24,28,.82) 0%,rgba(10,24,28,.62) 34%,rgba(10,24,28,0) 62%);pointer-events:none}
+.hp-trust2 .tx{position:absolute;z-index:1;right:max(56px,calc((100vw - 1408px)/2));top:50%;transform:translateY(-50%);width:min(500px,40vw);max-width:none;padding:0;color:#fff}
+.hp-trust2 h2{color:#fff;font-size:clamp(32px,3vw,46px)}
+.trust.hp-trust2 .tx p:not(.hp-k):not(.hp-pts){color:rgba(255,255,255,.9);font-size:18px}
+.trust.hp-trust2 .tx p.hp-k,.trust.hp-trust2 .tx p.hp-pts{color:rgba(255,255,255,.8)}
+.hp-trust2 .hp-link{color:#fff}
+/* guides: editorial */
+.hp-guides{padding-top:110px}
+.gx{display:flex;flex-direction:column;gap:28px}
+.gx a{text-decoration:none;color:#13282C}
+.gx .ph{overflow:hidden;border-radius:6px;background:#dfe9e8}
+.gx .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.gx a:hover .ph img{transform:scale(1.04)}
+.gx .cat{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;color:#4A5B5E}
+.gx-lead{display:grid;grid-template-columns:1.45fr 1fr;background:#F4ECDF;border-radius:8px;overflow:hidden;min-height:440px}
+.gx-lead .ph{border-radius:0}
+.gx-lead .bd{padding:48px clamp(28px,4vw,56px);display:flex;flex-direction:column;justify-content:center;gap:14px}
+.gx-lead h3{font-family:var(--display);font-weight:400;font-size:clamp(28px,2.6vw,40px);line-height:1.08;letter-spacing:-.015em;margin:0}
+.gx-lead p{font-size:17px;line-height:1.55;color:#2C3E41;margin:0}
+.gx-lead .hp-link{align-self:flex-start;margin-top:4px}
+.gx-row{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.gx-sm{display:grid;grid-template-columns:42% 1fr;gap:22px;align-items:center}
+.gx-sm .ph{aspect-ratio:4/3;box-shadow:0 8px 18px rgba(19,40,44,.12)}
+.gx-sm .bd{display:flex;flex-direction:column;gap:8px}
+.gx-sm h3{font-family:var(--display);font-weight:400;font-size:clamp(20px,1.6vw,25px);line-height:1.15;margin:0}
+.gx-sm p{font-size:14.5px;line-height:1.5;color:#4A5B5E;margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:759px){
+ .trust.hp-trust2{margin-top:64px!important;height:auto;display:flex;flex-direction:column;justify-content:flex-end;min-height:600px}
+ .hp-trust2::after{background:linear-gradient(0deg,rgba(10,24,28,.9) 0%,rgba(10,24,28,.7) 42%,rgba(10,24,28,0) 72%)}
+ .hp-trust2 .ph img{object-position:30% 40%}
+ .hp-trust2 .tx{position:relative;right:auto;top:auto;transform:none;width:auto;padding:260px 20px 30px}
+ .hp-trust2 h2{font-size:26px}
+ .trust.hp-trust2 .tx p:not(.hp-k):not(.hp-pts){font-size:16px}
+ .hp-guides{padding-top:64px}
+ .gx{gap:20px}
+ .gx-lead{grid-template-columns:1fr;min-height:0}
+ .gx-lead .ph{aspect-ratio:4/3}
+ .gx-lead .bd{padding:22px 20px 24px;gap:10px}
+ .gx-lead h3{font-size:26px}
+ .gx-lead p{font-size:15.5px}
+ .gx-row{grid-template-columns:1fr;gap:16px}
+ .gx-sm{grid-template-columns:112px 1fr;gap:14px}
+ .gx-sm .ph{aspect-ratio:1/1}
+ .gx-sm h3{font-size:18px}
+ .gx-sm p{display:none}
+}
+@media (max-width:759px){
+ .trust.hp-trust2{min-height:0;display:block}
+ .hp-trust2 .ph{position:relative;inset:auto;height:380px}
+ .hp-trust2 .ph img{object-position:32% 50%}
+ .hp-trust2::after{inset:auto 0 auto 0;top:300px;height:80px;background:linear-gradient(180deg,rgba(19,40,44,0),#13282C)}
+ .hp-trust2 .tx{padding:6px 20px 36px;background:#13282C}
+}

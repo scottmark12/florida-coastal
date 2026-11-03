@@ -458,6 +458,8 @@ document.addEventListener("click",function(e){
   sec.querySelectorAll(".vm-tile.on").forEach(x=>x.classList.remove("on"));t.classList.add("on");
   sec.querySelector(".hp-nx").innerHTML=hpNext(v,o);const nb=sec.querySelector(".hp-next");if(nb){const r=nb.getBoundingClientRect(),over=r.bottom-window.innerHeight+12;over>0&&window.scrollBy({top:over,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"})}
 },!0);
+function hpGuides(){const A=ARTICLES.slice(0,3);if(!A.length)return"";const m=e=>`${e.cat}${e.date?` · ${fmtDate(e.date)}`:""}${e.read?` · ${e.read} min read`:""}`,L=A[0];
+return `<div class="gx"><a class="gx-lead" href="#article-${L.id}"><div class="ph"><img src="${L.img}" alt="" loading="lazy"></div><div class="bd"><span class="cat">${m(L)}</span><h3>${L.title}</h3>${L.dek?`<p>${L.dek}</p>`:""}<span class="hp-link">Read the guide →</span></div></a><div class="gx-row">${A.slice(1).map(e=>`<a class="gx-sm" href="#article-${e.id}"><div class="ph"><img src="${e.img}" alt="" loading="lazy"></div><div class="bd"><span class="cat">${m(e)}</span><h3>${e.title}</h3>${e.dek?`<p>${e.dek}</p>`:""}</div></a>`).join("")}</div></div>`}
 function homeView2(){
   const V=[
     ["1","Your top 5 towns in 2 minutes",`${SQ.length} quick taps, no sign up. We score every beach town on how you want to live and show you the 5 that fit.`,"#quiz","See your top 5"],
@@ -467,10 +469,10 @@ function homeView2(){
   ];
   const HV=heroVar(!0),PH=window.innerWidth<760;
   return `${PH?hpHero():`<section class="vhero-b dk-hero"><div class="wrap"><div class="dk-l"><p class="dk-eyebrow">${T.length} towns · Scored honestly · No sales calls</p><h1>Making a big move to Florida? Find the beach town that <span class="hl">fits your life.</span></h1><p class="dk-alt"><a href="#quiz">Or take our quick quiz to find your best match →</a></p></div></div></section><section class="wrap vhero-map dk-map" id="quizsec">${mapInner(!1)}</section>`}
-  <section class="trust hp-trust2"><div class="ph"><img src="img/our-family-boat.jpg" alt="Mark and Betsy Scott on their boat in front of beach houses" loading="lazy"></div><div class="tx"><p class="hp-k">Who we are</p><h2>We had two weeks to pick our Florida town. So we built the guide we wished we'd had.</h2><p>Mark and Betsy Scott picked their town in 2005. Twenty years later, this is what we'd tell a friend.</p><p class="hp-pts">Honest tradeoffs · Every town scored the same way · No sales calls</p><a class="hp-link" href="#about">Read our story →</a></div></section>
   <section class="wrap hp-pop hp-sec"><div class="hp-hd"><h2>Popular beach towns</h2><a class="hp-link" href="#towns">See all ${T.length} towns →</a></div><div class="grid4">${["destin","southbeach","staug","naples"].map(e=>tcard(byId[e])).join("")}</div></section>
-  <section class="wrap hp-coast hp-sec"><div class="hp-hd"><h2>Browse by coast</h2></div><div class="grid4 coastgrid">${[["gulf","The Gulf Coast","Sunsets, soft sand and calm water"],["atlantic","The Atlantic Coast","Sunrises, surf and lively beach towns"],["panhandle","The Panhandle","Emerald water and sugar white sand"],["keys","The Florida Keys","Island time at the end of the road"]].map(e=>`<a class="coast" href="#towns?coast=${e[0]}" data-coastlink="${e[0]}"><img src="${COASTPHOTO[e[0]]}" alt="" loading="lazy"><div class="t"><h3>${e[1]}</h3><p>${e[2]}</p></div></a>`).join("")}</div></section>
-  <section class="wrap hp-guides hp-sec"><div class="hp-hd"><h2>Guides from the coast</h2><a class="hp-link" href="#articles">See all guides →</a></div><div class="grid3">${ARTICLES.slice(0,3).map(acard).join("")}</div></section>
+  <section class="trust hp-trust2"><div class="ph"><img src="img/our-family-boat.jpg" alt="Mark and Betsy Scott on their boat in front of beach houses" loading="lazy"></div><div class="tx"><p class="hp-k">Who we are</p><h2>We had two weeks to pick our Florida town. So we built the guide we wished we'd had.</h2><p>Mark and Betsy Scott picked their town in 2005. Twenty years later, this is what we'd tell a friend.</p><p class="hp-pts">Honest tradeoffs · Every town scored the same way · No sales calls</p><a class="hp-link" href="#about">Read our story →</a></div></section>
+  
+  <section class="wrap hp-guides hp-sec"><div class="hp-hd"><h2>Guides from the coast</h2><a class="hp-link" href="#articles">See all guides →</a></div>${hpGuides()}</section>
   ${newsSection()}`;
 }
 
