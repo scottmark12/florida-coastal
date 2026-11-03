@@ -2358,3 +2358,10 @@ main#app:has(.svband){background:linear-gradient(180deg,#FBF6EE 0,#F4ECDF 260px,
 .hiw-steps p{font-size:15.5px}
 .ed-latest li:nth-child(n+4){display:none}
 }
+
+/* ===== Nov 3 2026 patch: audit fixes (WCAG AA contrast, 24px tap targets) ===== */
+.ed-k{color:#B84C11!important}
+.ed-n,.hiw-n,.ww-tl li span{color:#66777A!important}
+.hero-btn{background:#B84C11}
+.hero-btn:hover{background:#A8440E}
+.ed-flag a,.ww-link,.dk-cue a,.hp-cue a{display:inline-block;padding-block:6px;margin-block:-6px}
