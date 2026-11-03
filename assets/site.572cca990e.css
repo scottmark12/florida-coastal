@@ -2172,3 +2172,8 @@ main#app:has(.svband){background:linear-gradient(180deg,#FBF6EE 0,#F4ECDF 260px,
 .prose .fc-box ul{margin:0}
 .prose .fc-box li{font-size:16.5px}
 @media (max-width:600px){.prose .fc-chart{padding:16px 14px 12px}.prose .fc-row{grid-template-columns:92px 1fr 56px;gap:8px}.prose .fc-lab{font-size:13.5px}.prose .fc-box{padding:18px 16px}.prose .fc-table{font-size:14.5px}.prose .fc-table th,.prose .fc-table td{padding:8px 6px}}
+.prose .fc-sources{margin-top:30px;padding-top:16px;border-top:1px solid var(--line)}
+.prose .fc-sources h3{font-size:15px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 8px}
+.prose .fc-sources ul{margin:0}
+.prose .fc-sources li{font-size:13.5px;line-height:1.5;color:var(--muted)}
+.prose .fc-sources li+li{margin-top:4px}
