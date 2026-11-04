@@ -2640,3 +2640,10 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
   .hiw-panel .hiw-n{font-size:34px}
   .hiw-panel .hiw-steps li{border-bottom-color:rgba(19,40,44,.16)}
 }
+
+/* ===== Nov 4 2026 patch: home spacing, even gap above Popular towns, one edge on the sand band ===== */
+@media (min-width:701px){.hp-guides{padding-bottom:28px!important}}
+.hiw .hiw-panel .ed-flag{border-top:0!important;padding-top:0!important}
+.hiw{padding-top:52px!important}
+@media (max-width:700px){.hiw{padding-top:32px!important}.hiw-go{justify-self:start;align-self:start}}
+@media (max-width:700px){.hiw-panel .hiw-a{justify-self:start}}
