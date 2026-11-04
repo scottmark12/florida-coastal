@@ -2845,3 +2845,24 @@ a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-family:'DM Sans',
 .hb3-grid.hb3-c3{grid-template-columns:repeat(3,minmax(0,1fr))}.hb3-grid.hb3-c3 .hb-tile .ph{aspect-ratio:16/10}
 .hb3-hero{min-height:520px}.hb3-hw{padding-top:72px}
 @media (max-width:700px){.hb3-hero{min-height:0}.hb3-hw{padding-top:0}.hb3-grid.hb3-c2,.hb3-grid.hb3-c3{grid-template-columns:1fr 1fr}.hb3-grid.hb3-c2 .hb-tile .ph,.hb3-grid.hb3-c3 .hb-tile .ph{aspect-ratio:4/3}.hb3-grid.hb3-c3 .hb-tile:last-child{grid-column:1/-1}.hb3-grid.hb3-c3 .hb-tile:last-child .ph{aspect-ratio:16/9}}
+
+/* ===== Nov 4 2026: rotating hub hero, area pages in the hub style ===== */
+.hb3-rot picture,.hb3-rot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hb3-rot img{opacity:0;transition:opacity 1.4s ease}
+.hb3-rot img.on{opacity:1}
+@media (prefers-reduced-motion:reduce){.hb3-rot img{transition:none}}
+.ar-hero{min-height:480px}
+.ar-hero .hb3-panel h1{font-size:clamp(32px,3.2vw,44px)!important}
+.ar-hero .hb-k{margin:10px 0 0}
+.ar-facts{padding-top:32px}
+.ar-facts dl{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:0;border-top:3px solid #13282C;border-bottom:1px solid var(--line)}
+.ar-facts dl>div{padding:14px 16px 14px 0}.ar-facts dl>div+div{padding-left:16px;border-left:1px solid var(--line)}
+.ar-facts dt{font:700 11px var(--ui);letter-spacing:.12em;text-transform:uppercase;color:#66777A;margin-bottom:5px}
+.ar-facts dd{margin:0;font:500 16px/1.35 var(--ui);color:#13282C;font-variant-numeric:tabular-nums}
+.ar-facts dd small{display:block;font:400 12.5px var(--ui);color:#66777A;margin-top:2px}
+.ar-towns{padding-top:48px}.ar-more{padding-top:64px;padding-bottom:40px}
+.ar-grid .hb-tile .tg{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ar-help{margin:22px 0 0;font-family:var(--read);font-size:17px;color:var(--text)}.ar-help a{color:#13282C;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:900px){.ar-facts dl{grid-template-columns:repeat(2,minmax(0,1fr))}.ar-facts dl>div{border-left:0!important;padding-left:0!important;border-top:1px solid var(--line)}.ar-facts dl>div:nth-child(-n+2){border-top:0}.ar-facts dl>div:nth-child(even){padding-left:14px!important;border-left:1px solid var(--line)!important}}
+@media (max-width:700px){.ar-hero .hb3-panel h1{font-size:28px!important}.ar-towns{padding-top:36px}.ar-towns .hb-flag a{display:none}.ar-help{font-size:16px}}
+@media (max-width:900px){.ar-facts dl>div:last-child:nth-child(odd){grid-column:1/-1;border-left:0!important;padding-left:0!important}}
