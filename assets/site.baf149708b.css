@@ -2636,3 +2636,7 @@ h1,h2,h3,h4,.hiw-n,.ww-tl li span{font-variation-settings:normal!important}
   .hp-guides .ed-lead p,.hp-guides p{font-size:16.5px!important;line-height:1.55!important}
 }
 .vm-tile b,.vm-tile strong,.vm-tile h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.015em!important;font-variation-settings:"opsz" 40!important}
+
+/* ===== Nov 4 2026 patch: article page titles match the home page article titles (DM Sans light desktop, regular phone) ===== */
+.phero:has(.crumbs a[href$="articles"]) h1,.phero:has(.crumbs a[href$="articles/index.html"]) h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:300!important;letter-spacing:-.012em!important;line-height:1.1!important;font-variation-settings:"opsz" 40!important}
+@media (max-width:700px){.phero:has(.crumbs a[href$="articles"]) h1,.phero:has(.crumbs a[href$="articles/index.html"]) h1{font-weight:400!important;letter-spacing:-.005em!important;line-height:1.15!important;font-variation-settings:"opsz" 14!important}}
