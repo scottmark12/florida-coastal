@@ -2425,3 +2425,16 @@ a.vchip:hover{text-decoration:underline;text-underline-offset:3px}
 .prose table,.prose table *{font-family:var(--ui)!important;font-size:15.5px!important;line-height:1.45!important;font-variation-settings:normal!important}
 .prose td{font-weight:400}.prose th{font-weight:600}
 .scd p,.scx p,.trust p,.cmp-read .cmp-c,.about-cta p,.vp-blurb,.lede,.phero p{font-weight:350;font-variation-settings:"opsz" 36}
+/* more negative space in reading pages */
+.prose{line-height:1.68!important;max-width:33em!important}
+.prose p+p,.prose ul+p,.prose p+ul,.prose ol+p,.prose p+ol{margin-top:1.15em!important}
+.prose h2{margin-top:2.6em!important;margin-bottom:.15em}
+.prose h2+p,.prose h2+ul,.prose h2+div{margin-top:.75em!important}
+.prose p+h3,.prose ul+h3{margin-top:1.9em!important}
+.prose h3+p{margin-top:.55em!important}
+.prose li+li{margin-top:.6em!important}
+.prose .fc-chart,.prose .fc-fig,.prose .fc-table-wrap,.prose table,.prose .fc-box,.prose .fc-rank{margin-top:2.4em!important;margin-bottom:2.4em!important}
+.byline{margin-bottom:40px!important}
+section.wrap.twocol{padding-top:56px;padding-bottom:72px}
+@media (min-width:901px){.twocol{gap:72px!important}}
+@media (max-width:900px){section.wrap.twocol{padding-top:36px;padding-bottom:56px}.prose h2{margin-top:2.2em!important}}
