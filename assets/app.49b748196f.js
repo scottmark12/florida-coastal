@@ -613,10 +613,11 @@ function cmpOptions(skip){
 function compareView(){
   var ts=cmpTowns(),n=ts.length,ids=ts.map(function(e){return e.id}),open=n<CMP_MAX,cols=n+(open?1:0);
   var head=ts.map(function(e){var f=fitBadge(e,"for you");return '<div class="cmp-town"><a class="cmp-ph" href="#town-'+e.id+'">'+art(e,!1)+'</a><div class="cmp-tn"><a href="#town-'+e.id+'"><b>'+short(e)+'</b></a><span>'+regionOf[e.id].map+"</span>"+(f?f:"")+'</div><button class="cmp-x" data-cmprm="'+e.id+'" aria-label="Remove '+short(e)+'">&times;</button></div>'});
+  if(open&&n>=2)head.push('<div class="cmp-town cmp-plusc"><button class="cmp-plus2" data-cmpsheet="1" aria-haspopup="dialog" aria-label="Add a third town"><span aria-hidden="true">+</span></button></div>');
   if(open&&n>=2)head.push('<div class="cmp-town cmp-add cmp-add2"><b>Add a third town</b><div class="cmp-search"><input type="search" data-cmpq="1" placeholder="Search" aria-label="Search for a town to add" autocomplete="off"><div class="cmp-res" role="listbox"></div></div><small class="cmp-or">Or a similar town</small>'+cmpSimilar(ts,3).map(function(e){return '<button class="cmp-pick" data-cmpadd2="'+e.id+'"><span class="ph">'+art(e,!1)+'</span><span class="tx"><b>'+short(e)+'</b><small>'+(regionOf[e.id]||{}).map+'</small></span><i>+ Add</i></button>'}).join("")+'</div>');
   else if(open)head.push('<div class="cmp-town cmp-add"><button class="cmp-addl cmp-focus" data-cmpfocus="1"><span>+ '+(n<2?"Add a town":"Add a third town")+'</span><small>Search or pick a similar town above</small></button></div>');
   var pad=open?['<div class="cmp-c cmp-empty"></div>']:[];
-  function cells(fn){return ts.map(function(e){return '<div class="cmp-c">'+fn(e)+"</div>"}).concat(pad)}
+  function cells(fn){return ts.map(function(e){return '<div class="cmp-c" data-t="'+short(e)+'">'+fn(e)+"</div>"}).concat(pad)}
   function scoreCells(k,get){var v=ts.map(function(e){return get(e,k)}),mx=Math.max.apply(null,v);return ts.map(function(e,i){var w=n>1&&v[i]===mx&&v.filter(function(x){return x===mx}).length<n;return '<div class="cmp-c cmp-sc'+(w?" win":"")+'">'+bar(Math.round(v[i]))+'<span class="n">'+Math.round(v[i])+"</span>"+(w?'<span class="cmp-best">Best</span>':"")+"</div>"}).concat(pad)}
   var rows=[
     '<h2 class="cmp-h">The basics</h2>',
@@ -626,17 +627,19 @@ function compareView(){
     cmpRow("Season",cells(function(e){return e.season})),
     cmpRow("Heads up",cells(function(e){return e.watch})),
     '<h2 class="cmp-h">The scorecard</h2><p class="cmp-note">The best score in each row is in teal. Tap a town for the local\'s take on every score.</p>'
-  ].concat(CATS.map(function(c){return cmpRow(c[1],scoreCells(c[0],score),"cmp-s")}))
-   .concat([cmpRow("Public school district",scoreCells("edu",function(e){return eduScore(e)}),"cmp-s"),
+  ].concat((function(){var same=[],out=[],all=CATS.map(function(c){return [c[0],c[1],score]}).concat([["edu","Public school district",function(e){return eduScore(e)}]]);
+     all.forEach(function(c){var v=ts.map(function(e){return Math.round(c[2](e,c[0]))});if(n>1&&v.every(function(x){return x===v[0]}))same.push(c[1]+" ("+v[0]+")");else out.push(cmpRow(c[1],scoreCells(c[0],c[2]),"cmp-s"))});
+     if(same.length)out.push('<div class="cmp-row cmp-same"><div class="cmp-lab">Same for '+(n>2?"all three":"both")+'</div><p class="cmp-samel">'+same.join(" · ")+"</p></div>");return out})())
+   .concat([
     '<h2 class="cmp-h">In their words</h2>',
     cmpRow("A day in town",cells(function(e){return e.day||e.blurb}),"cmp-read"),
-    cmpRow("Why people love it",cells(function(e){return e.pros.join(". ")+"."})),
-    cmpRow("Know before you go",cells(function(e){return e.cons.join(". ")+"."})),
+    cmpRow("Why people love it",cells(function(e){return e.pros.join(". ")+"."}),"cmp-txt"),
+    cmpRow("Know before you go",cells(function(e){return e.cons.join(". ")+"."}),"cmp-txt"),
     cmpRow("Next step",cells(function(e){return '<a class="btn btn-accent cmp-ask" href="#contact-'+e.id+'">Ask a local in '+short(e)+'&nbsp;→</a>'}),"cmp-act")
    ]);
   return '<section class="wrap cmp-page"><div class="cmp-top"><h1>Compare towns side by side</h1><p class="lede">Prices, hospitals, the airport and every score for up to three towns.</p></div>'
    +cmpSugg(ts,open)+cmpVerdict(ts)
-   +'<div class="cmp" style="--n:'+cols+';--nm:'+(open&&n>=2?n:cols)+'"><div class="cmp-head">'+head.join("")+'</div>'+(open&&n>=2?'<div class="cmp-plusrow"><button class="cmp-plus" data-cmpsheet="1" aria-haspopup="dialog"><span aria-hidden="true">+</span> Add a town</button></div><div class="cmp-scrim" data-cmpclose="1"></div><div class="cmp-addm" role="dialog" aria-label="Add a third town"><div class="cmp-sheethd"><b>Add a third town</b><button class="cmp-close" data-cmpclose="1" aria-label="Close">&times;</button></div><div class="cmp-search"><input type="search" data-cmpq="1" placeholder="Search any beach town" aria-label="Search for a town to add" autocomplete="off"><div class="cmp-res" role="listbox"></div></div><div class="cmp-mrow">'+cmpSimilar(ts,4).map(function(e){return '<button class="cmp-mpick" data-cmpadd2="'+e.id+'"><span class="ph">'+art(e,!1)+'</span><b>'+short(e)+'</b><i>+ Add</i></button>'}).join("")+'</div></div>':"")+'<div class="cmp-stick" aria-hidden="true"><div class="cmp-stick-in">'+ts.map(function(e){return "<span>"+short(e)+"</span>"}).join("")+(open?"<span></span>":"")+"</div></div>"+rows.join("")+"</div>"
+   +'<div class="cmp" style="--n:'+cols+';--nm:'+(open&&n>=2?n:cols)+'"><div class="cmp-head">'+head.join("")+'</div>'+(open&&n>=2?'<div class="cmp-plusrow"><button class="cmp-plus" data-cmpsheet="1" aria-haspopup="dialog"><span aria-hidden="true">+</span> Add a town</button></div><div class="cmp-scrim" data-cmpclose="1"></div><div class="cmp-addm" role="dialog" aria-modal="true" aria-label="Add a third town"><div class="cmp-sheethd"><b>Add a third town</b><button class="cmp-close" data-cmpclose="1" aria-label="Close">&times;</button></div><div class="cmp-search"><input type="search" data-cmpq="1" placeholder="Search any beach town" aria-label="Search for a town to add" autocomplete="off"><div class="cmp-res" role="listbox"></div></div><div class="cmp-mrow">'+cmpSimilar(ts,4).map(function(e){return '<button class="cmp-mpick" data-cmpadd2="'+e.id+'"><span class="ph">'+art(e,!1)+'</span><b>'+short(e)+'</b><i>+ Add</i></button>'}).join("")+'</div></div>':"")+'<div class="cmp-stick" aria-hidden="true"><div class="cmp-stick-in"><em class="cmp-stick-lab">Comparing</em>'+ts.map(function(e){return "<span>"+short(e)+"</span>"}).join("")+(open?"<span></span>":"")+"</div></div>"+rows.join("")+"</div>"
    +'<p class="cmp-foot">Prices are fall 2026 medians. Hospitals checked October 2026. Scores rate what each town offers, never who lives there. <a href="#scoring">How we score</a></p>'
    +'<div class="cmp-acts">'+(S.done?'<a class="btn btn-line" href="#quiz">Back to my top 5</a>':'<a class="btn btn-line" href="#quiz">See your top 5 towns</a>')+"</div></section>";
 }
@@ -644,7 +647,8 @@ function compareView(){
 function cmpSimilar(ts,k){var have=ts.map(function(e){return e.id}),seen={},out=[];ts.forEach(function(e){similarTowns(e,8).forEach(function(x){if(have.indexOf(x.id)<0&&!seen[x.id]){seen[x.id]=1;out.push(x)}})});return out.slice(0,k)}
 (function(){var raf=0;function chk(){raf=0;var h=document.querySelector(".cmp-head"),b=document.querySelector(".cmp-stick");if(!h||!b)return;var t=document.querySelector("header.top"),nh=t?t.getBoundingClientRect().bottom:0;b.style.top=Math.max(0,nh)+"px";b.classList.toggle("on",h.getBoundingClientRect().bottom<nh+4)}
 window.addEventListener("scroll",function(){raf||(raf=requestAnimationFrame(chk))},{passive:!0});window.addEventListener("hashchange",function(){setTimeout(chk,60)});})();
-document.addEventListener("click",function(e){var o=e.target.closest&&e.target.closest("[data-cmpsheet]"),c=e.target.closest&&e.target.closest("[data-cmpclose]");if(!o&&!c)return;var m=document.querySelector(".cmp");if(!m)return;e.preventDefault();m.classList.toggle("sheet",!!o);if(o){var q=m.querySelector(".cmp-addm [data-cmpq]");q&&setTimeout(function(){q.focus()},120)}});
+document.addEventListener("click",function(e){var o=e.target.closest&&e.target.closest("[data-cmpsheet]"),c=e.target.closest&&e.target.closest("[data-cmpclose]");if(!o&&!c)return;var m=document.querySelector(".cmp");if(!m)return;e.preventDefault();m.classList.toggle("sheet",!!o);document.documentElement.style.overflow=o?"hidden":"";if(o){window.__cmpRet=o;var q=m.querySelector(".cmp-addm [data-cmpq]");q&&setTimeout(function(){q.focus()},120)}else{try{window.__cmpRet&&window.__cmpRet.focus()}catch(x){}}});
+document.addEventListener("keydown",function(e){if(e.key!=="Tab")return;var d=document.querySelector(".cmp.sheet .cmp-addm");if(!d)return;var f=[].slice.call(d.querySelectorAll("button,input")).filter(function(x){return x.offsetParent});if(!f.length)return;var a=f[0],z=f[f.length-1];if(e.shiftKey&&document.activeElement===a){e.preventDefault();z.focus()}else if(!e.shiftKey&&document.activeElement===z){e.preventDefault();a.focus()}});
 document.addEventListener("keydown",function(e){if(e.key==="Escape"){var m=document.querySelector(".cmp.sheet");m&&m.classList.remove("sheet")}});
 function cmpVerdict(ts){
   if(ts.length<2)return"";
@@ -664,7 +668,7 @@ function cmpVerdict(ts){
     return '<div class="cmp-v"><b>'+short(e)+'</b><p>'+(out.length?out.join(" "):"Even with the others, no score where it comes out ahead.")+'</p><a href="#contact-'+e.id+'">Ask a local in '+short(e)+'&nbsp;→</a></div>'
   }).join("")+'</div></div>';
 }
-function cmpRender(){var a=document.getElementById("app");a&&(a.innerHTML=srcsets(compareView()))}
+function cmpRender(){document.documentElement.style.overflow="";var a=document.getElementById("app");a&&(a.innerHTML=srcsets(compareView()))}
 
 /* Oct 29 2026: compare page search and similar town suggestions */
 function cmpSugg(ts,open){if(!open||!ts.length)return"";if(ts.length>=2)return"";var have=ts.map(function(e){return e.id}),seen={},out=[];ts.forEach(function(e){similarTowns(e,8).forEach(function(x){if(have.indexOf(x.id)<0&&!seen[x.id]){seen[x.id]=1;out.push(x)}})});out=out.slice(0,ts.length<2?6:3);

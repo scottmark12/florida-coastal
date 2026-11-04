@@ -2577,3 +2577,29 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
   .cmp-addm:has(.cmp-res:not(:empty)) .cmp-mrow{display:none}
   .cmp-plusrow{margin:8px 0 0}
 }
+
+/* ===== Nov 4 2026 patch: compare, same for all line, stacked text on phones, + tile, sticky bar label ===== */
+.cmp-same{padding:12px 0}
+.cmp-samel{margin:0;font:400 14.5px/1.5 var(--ui);color:#4A5B5E}
+.cmp-stick{z-index:26}
+.cmp-stick-in{background:#FFFDF9!important}
+.cmp-stick-lab{display:none}
+.cmp-plusc{display:none}
+@media (min-width:701px){
+  .cmp-same{display:grid;grid-template-columns:var(--labw) minmax(0,1fr);column-gap:20px;align-items:center}
+  .cmp-same .cmp-lab{margin:0!important}
+  .cmp-stick-lab{display:block;position:absolute;left:0;top:50%;transform:translateY(-50%);font:600 12.5px var(--ui);font-style:normal;letter-spacing:.04em;text-transform:uppercase;color:#66777A}
+}
+@media (max-width:700px){
+  .cmp-txt .cmp-cells,.cmp-read .cmp-cells{grid-template-columns:1fr!important;row-gap:12px}
+  .cmp-txt .cmp-c::before,.cmp-read .cmp-c::before{content:attr(data-t);display:block;font:700 12px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:#13282C;margin-bottom:2px}
+  .cmp-txt .cmp-empty,.cmp-read .cmp-empty{display:none}
+  .cmp-plusrow{display:none!important}
+  .cmp:has(.cmp-plusc) .cmp-head{grid-template-columns:repeat(var(--nm),minmax(0,1fr)) 44px!important}
+  .cmp:has(.cmp-plusc) .cmp-cells,.cmp:has(.cmp-plusc) .cmp-stick-in{grid-template-columns:repeat(var(--nm),minmax(0,1fr)) 44px!important}
+  .cmp:has(.cmp-plusc) .cmp-txt .cmp-cells,.cmp:has(.cmp-plusc) .cmp-read .cmp-cells{grid-template-columns:1fr!important}
+  .cmp-plusc{display:block!important}
+  .cmp-plus2{display:flex;align-items:center;justify-content:center;width:44px;aspect-ratio:auto;height:calc((100vw - 40px - 24px - 44px)/2 * .75);border:1.5px dashed #9FAAAB;border-radius:6px;background:#fff;cursor:pointer;padding:0}
+  .cmp-plus2 span{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#13282C;color:#fff;font-size:20px;line-height:1}
+}
+.cmp-stick-in::after{content:"";position:absolute;left:0;right:0;top:calc(100% + 1px);height:16px;background:linear-gradient(#FFFDF9,rgba(255,253,249,0));pointer-events:none}
