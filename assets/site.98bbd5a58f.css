@@ -2903,3 +2903,14 @@ a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-family:'DM Sans',
 @media (max-width:700px){.hb3-panel{max-width:none}.hb3-ph{height:clamp(200px,42vw,300px)}}
 @media (min-width:701px) and (max-width:1000px){.hb3-hero{min-height:0;display:block}.hb3-ph{position:relative;inset:auto;height:clamp(280px,40vw,400px)}.hb3-hw{padding:0 0 8px}.hb3-panel{max-width:none;margin-top:-80px;position:relative}.hb3-cred{top:auto;bottom:auto;display:none}}
 @media (min-width:701px) and (max-width:1000px){.hb3-hero{padding-top:0!important}}
+
+/* ===== Nov 4 2026 patch: home Vibe Map bar (replaces the hero text once someone uses the home map) ===== */
+.dk-bar{position:sticky;top:var(--hh,73px);z-index:12;background:rgba(251,246,238,.94);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);transition:opacity .32s ease,transform .32s ease}
+.dk-bar.dk-in{opacity:0;transform:translateY(-8px)}
+.dk-bw{max-width:1180px;margin:0 auto;padding:0 20px;height:64px;box-sizing:border-box;display:flex;align-items:center;gap:18px}
+.dk-bw .vp-chips{flex:1;min-width:0;margin:0;padding:2px 0}
+.dk-bw .vp-switch{flex:none;width:200px;margin:0}
+.dk-hero.dk-fold{transition:height .36s ease,margin-bottom .36s ease,opacity .2s ease,padding .36s ease;opacity:0;padding-top:0!important;padding-bottom:0!important}
+body.dk-moving .dk-map aside.vpanel{transition:margin-top .36s ease}
+@media (min-width:1360px){.dk-bw{max-width:1520px;padding-inline:56px}}
+@media (max-width:1180px){.dk-bw .vp-switch{width:170px}.dk-bw{gap:14px}}

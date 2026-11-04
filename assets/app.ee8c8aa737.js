@@ -10,7 +10,7 @@ function vmInit(ph){
   if(window.__vmLanded)return;window.__vmLanded=!0;S.vmMan=null;
   let q=null;try{q=new URLSearchParams(location.search)}catch(e){}
   const v=q&&q.get("style"),t=q&&q.get("town"),id=t&&(MERGED[t]||t);
-  if(v&&VIBES[v]){S.vibe=v;S.vcard=!1;S.vlist="list"===q.get("view")}
+  if(v&&VIBES[v]){S.vibe=v;S.vcard=!1;S.vlist="list"===q.get("view")}else if(q&&"list"===q.get("view"))S.vlist=!0;
   if(id&&byId[id]){S.sel=id;S.vcard=!0;S.vlist=!1}
   S.vmV=S.vibe;S.vmOpen=null;
   ph&&!S.vibe&&!S.vcard&&!S.vlist&&(S.vmSheet="");
@@ -797,3 +797,62 @@ function fcEngage(){if(fcEng)return;fcEng=!0;const q=(fcPend||[]).map((x,i)=>[x,
 
 /* ===== Oct 29 2026 late patch: Beach Towns "show more" ===== */
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-tmore]");if(!b)return;var y=window.scrollY;S.tlim=(S.tlim||24)+48;route();window.scrollTo(0,y)});
+
+/* ===== Nov 4 2026 patch: home Vibe Map bar ===== */
+/* Desktop (1000px and up, where the home map has no style chips of its own). The first time someone uses the home map (a style, a dot, a town in the list),
+   the hero text folds away and the Vibe Map bar takes its place at the top of the map, pinned while the map is on screen.
+   The bar keeps whatever style they just picked. It stays for the rest of the visit and resets on a fresh load.
+   Phones and tablets keep their hero; their home map already has its own style row. */
+let dkBarOn=false;
+function dkBarHTML(){
+  const o={};Object.keys(VIBES).forEach(v=>o[v]=T.filter(t=>t.vibes.includes(v)).length);
+  return `<div class="dk-bw"><h2 class="vm-title">Vibe Map</h2>${vPhoneTop(o)}</div>`;
+}
+function dkHome(){return "home"===curRoute()&&window.innerWidth>=1000}
+function dkSync(){
+  try{
+    if(!dkHome())return;
+    const bar=document.querySelector(".dk-bar");
+    if(bar){bar.innerHTML=dkBarHTML();return}
+    const hero=document.querySelector(".dk-hero"),map=document.querySelector(".dk-map");
+    if(!hero||!map)return;
+    dkBarOn=true;try{track("home_bar","shown")}catch(x){}
+    const de=document.documentElement,reduce=matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const nb=document.createElement("nav");nb.className="dk-bar dk-in";nb.setAttribute("aria-label","Vibe Map styles");nb.innerHTML=dkBarHTML();
+    if(reduce){hero.remove();map.prepend(nb);de.style.setProperty("--dkup","0px");return}
+    document.body.classList.add("dk-moving");
+    hero.style.height=hero.offsetHeight+"px";hero.style.overflow="hidden";
+    map.prepend(nb);
+    const bh=nb.offsetHeight;
+    hero.style.marginBottom="-"+bh+"px";
+    requestAnimationFrame(()=>{requestAnimationFrame(()=>{
+      hero.classList.add("dk-fold");hero.style.height="0px";hero.style.marginBottom="0px";
+      de.style.setProperty("--dkup","0px");nb.classList.remove("dk-in");
+    })});
+    setTimeout(()=>{hero.remove();document.body.classList.remove("dk-moving")},420);
+  }catch(e){}
+}
+(function(){
+  const rr=rerenderMap;rerenderMap=function(){rr.apply(this,arguments);dkSync()};
+  const hv=homeView2;homeView2=function(){
+    let h=hv.apply(this,arguments);
+    if(dkBarOn&&window.innerWidth>=1000){
+      h=h.replace(/<section class="vhero-b dk-hero">[\s\S]*?<\/section>/,"")
+         .replace('<section class="wrap vhero-map dk-map" id="quizsec">',m=>m+'<nav class="dk-bar" aria-label="Vibe Map styles">'+dkBarHTML()+'</nav>');
+      setTimeout(()=>document.documentElement.style.setProperty("--dkup","0px"),0);
+    }
+    return h;
+  };
+})();
+/* List on the home bar opens the full Vibe Map as a list, same style picked */
+document.addEventListener("click",function(e){
+  const l=e.target.closest&&e.target.closest(".dk-bar [data-vlist]");if(!l)return;
+  e.preventDefault();e.stopPropagation();
+  if("1"===l.dataset.vlist){location.href="map.html?"+(S.vibe?"style="+S.vibe+"&":"")+"view=list"}
+},!0);
+/* A style picked from the pinned bar while the map is scrolled away brings the map back into view */
+document.addEventListener("click",function(e){
+  const c=e.target.closest&&e.target.closest(".dk-bar [data-vibe]");if(!c)return;
+  const m=document.querySelector(".dk-map");if(!m)return;const r=m.getBoundingClientRect();
+  if(r.top<-200)setTimeout(()=>m.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"}),0);
+},!0);
