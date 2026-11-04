@@ -3159,3 +3159,23 @@ body.dk-moving .dk-map aside.vpanel{transition:margin-top .36s ease}
 }
 @media (min-width:1000px) and (max-height:805px){.sl2 input[type=range]{height:22px!important}.sl2-where select{min-height:36px!important}}
 @media (min-width:1000px) and (max-height:805px){.sl2 label b{font-size:15px;line-height:1.15}.sl2 output{font-size:13.5px;line-height:1.2}}
+/* Nov 4: Slider Map starting points in the empty card; on tall screens the sliders breathe instead of leaving a gap */
+@media (min-width:1000px){
+ .slv-pre{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px}
+ .slv-pre button{display:flex;align-items:center;gap:8px;min-height:48px;padding:8px 10px;border:1px solid var(--line);border-radius:10px;background:var(--page,#FFFDF9);text-align:left;font:600 14px/1.2 'DM Sans',sans-serif;color:var(--ink);cursor:pointer}
+ .slv-pre button span{font-size:19px;flex:none}
+ .slv-pre button:hover{border-color:var(--ink);background:#fff}
+ .sl-mapwrap .vm-card.slc-empty{width:372px}
+}
+@media (min-width:1000px) and (min-height:860px){
+ .sl2{padding:clamp(3px,calc((100vh - 820px) / 36),11px) 0!important}
+ .slv-lh{padding-bottom:clamp(8px,calc((100vh - 820px) / 12),22px)!important}
+ .slv-lh h2{font-size:clamp(27px,calc(27px + (100vh - 860px) / 40),32px)!important}
+ .sl2-where{margin-bottom:clamp(8px,calc((100vh - 820px) / 14),18px)!important}
+ .slv-div{margin:clamp(4px,calc((100vh - 820px) / 20),12px) 0}
+}
+@media (min-width:1000px){
+ .sl-quizlf{display:none}
+ .sl-stage:has(.slc-empty) .sl-quizlf{display:block}
+ .sl-quizlf p{display:block!important;margin:8px 0 0;font-size:13.5px;color:var(--muted,#5b6b6e);text-align:center}
+}
