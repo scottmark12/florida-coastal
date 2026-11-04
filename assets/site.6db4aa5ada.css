@@ -2404,3 +2404,18 @@ footer a:focus-visible{outline:2px solid #1B6E78;outline-offset:2px}
 .fs-pattern .yv-a{display:inline-block;margin-top:4px;font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px}
 a.vchip{text-decoration:none;color:inherit;transition:background .15s,border-color .15s}
 a.vchip:hover{text-decoration:underline;text-underline-offset:3px}
+
+/* ===== Nov 3 2026 patch: readability (Surfing World lessons). Two typefaces: Fraunces for reading and headlines (real italics now loaded), DM Sans for buttons, forms, map and navigation. Newsreader dropped. ===== */
+:root{--read:'Fraunces',Georgia,'Times New Roman',serif;--text:#17191A}
+/* reading text: one serif, near black, comfortable size and line length */
+.prose{font-family:var(--read)!important;font-size:19px!important;line-height:1.6!important;color:var(--text)!important;max-width:34em!important;font-variation-settings:"opsz" 18;letter-spacing:0!important;-webkit-text-stroke:0!important}
+.prose p,.prose li{color:var(--text)}
+.prose b,.prose strong{font-weight:600!important}
+.prose h2,.prose h3{color:var(--text)}
+.scd p,.scx p,.trust p,.cmp-read .cmp-c,.about-cta p,.vp-blurb,.lede{font-family:var(--read);color:var(--text)}
+.phero p{font-family:var(--read)}
+/* fewer tiny caps: kickers a bit bigger and calmer; bylines in italic serif like a magazine */
+.ed-k,.cat,.gx .cat,.card .cat,.fs .cat{font-size:12.5px!important;letter-spacing:.08em!important}
+.ed-by,.byline{font-family:var(--read)!important;font-style:italic;font-size:15.5px!important;letter-spacing:0!important;color:#3A4A4D!important;text-transform:none!important}
+.byline .cat{font-family:var(--ui)!important;font-style:normal;font-size:12.5px!important}
+.prose .fc-src,.fc-fig figcaption,.ww-ph figcaption{font-size:14px}
