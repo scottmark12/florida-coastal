@@ -2643,3 +2643,8 @@ h1,h2,h3,h4,.hiw-n,.ww-tl li span{font-variation-settings:normal!important}
 
 /* ===== Nov 4 2026 patch: section headings inside articles in DM Sans medium to match the title; reading text stays Caslon ===== */
 .prose h2,.prose h3,.fc-box h3,.fc-sources h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.015em!important;font-variation-settings:"opsz" 32!important}
+
+/* ===== Nov 4 2026 patch: town page section headings and small section labels in DM Sans, matching articles ===== */
+.block>h2,.block h3.subh,.boxed>h3,.boxed h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.015em!important;font-variation-settings:"opsz" 32!important}
+.block>.label,section.wrap>.label,.boxed>.label{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:700!important;font-size:12px!important;letter-spacing:.14em!important;text-transform:uppercase}
+.sv-hd b{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.015em!important;font-variation-settings:"opsz" 32!important}
