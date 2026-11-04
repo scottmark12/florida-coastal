@@ -2673,3 +2673,70 @@ a.card[href^="towns/"] h3,a.card[href^="#town-"] h3,a.rcard h3{letter-spacing:-.
 a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:300!important;letter-spacing:-.012em!important;line-height:1.15!important;font-variation-settings:"opsz" 40!important}
 @media (max-width:700px){a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-weight:400!important;letter-spacing:-.005em!important;font-variation-settings:"opsz" 14!important}}
 .rsec>.label,.tareas>.label{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:700!important;font-size:12px!important;letter-spacing:.14em!important;text-transform:uppercase}
+
+/* ===== Nov 4 2026: Beach Towns hub ===== */
+.hb-hero .inner{padding-block:132px 30px!important}
+.hb-hero h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.025em!important;font-variation-settings:"opsz" 40!important}
+.hb-hero .ph::after{background:linear-gradient(180deg,rgba(10,25,35,.2),rgba(10,25,35,.72))!important}
+.hb-find{display:flex;align-items:center;flex-wrap:wrap;gap:10px 20px;margin-top:22px}
+.hb-find input{width:380px;max-width:100%;font:400 16px var(--ui);padding:12px 16px;border:0;border-radius:8px;background:#fff;color:#13282C;box-shadow:0 4px 18px rgba(0,0,0,.18)}
+.hb-find span{font:500 14.5px var(--ui);color:rgba(255,255,255,.92)}
+.hb-find span a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.hb-chips{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-top:28px;max-width:860px}
+.hb-chip{display:flex;flex-direction:column;gap:2px;padding:12px 16px;border-radius:8px;background:rgba(255,255,255,.95);color:#13282C;text-decoration:none;transition:transform .15s,background .15s}
+.hb-chip:hover{background:#fff;transform:translateY(-2px)}
+.hb-chip b{font:600 16px/1.2 var(--ui);letter-spacing:-.01em}.hb-chip span{font:400 13px var(--ui);color:#66777A}
+.hb-flag{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-top:3px solid #13282C;padding-top:12px;margin-bottom:20px}
+.hb-flag h2{margin:0;font:700 12px/1.2 var(--ui)!important;letter-spacing:.14em!important;text-transform:uppercase;color:#13282C}
+.hb-flag a{font:700 12px var(--ui);letter-spacing:.12em;text-transform:uppercase;color:#13282C;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.hb-glance{padding-top:56px}
+.hb-cols{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.hb-col{background:#fff;border:1px solid var(--line);border-radius:10px;padding:16px 16px 6px;border-top:4px solid var(--hc,#13282C)}
+.hb-c-panhandle{--hc:var(--pan)}.hb-c-gulf{--hc:var(--gulf)}.hb-c-keys{--hc:var(--keys)}.hb-c-atlantic{--hc:var(--atl)}
+.hb-colh{display:flex;flex-direction:column;gap:2px;font:500 20px/1.2 var(--ui);letter-spacing:-.015em;color:#13282C;text-decoration:none;margin-bottom:8px}
+.hb-colh span{font:400 13px var(--ui);letter-spacing:0;color:#66777A}
+.hb-col dl{margin:0}.hb-col dl>div{padding:9px 0;border-top:1px solid var(--line)}
+.hb-col dt{font:700 11px var(--ui);letter-spacing:.12em;text-transform:uppercase;color:#66777A;margin-bottom:2px}
+.hb-col dd{margin:0;font:500 15px/1.35 var(--ui);color:#13282C}
+.hb-col dd small{display:block;font:400 12.5px var(--ui);color:#66777A;margin-top:1px}
+.hb-note{margin:12px 0 0;font:400 13px var(--ui);color:#66777A}
+.hb-reg{padding-top:72px}
+.hb-rhead{border-top:3px solid #13282C;padding-top:14px;max-width:46em;margin-bottom:22px}
+.hb-k{display:block;font:700 12px/1.2 var(--ui);letter-spacing:.14em;text-transform:uppercase;color:#B84C11;margin-bottom:8px}
+.hb-rhead h2{margin:0 0 8px;font:500 clamp(30px,3.2vw,42px)/1.08 var(--ui)!important;letter-spacing:-.025em!important;color:#13282C}
+.hb-rhead p{margin:0;font-family:var(--read);font-size:18px;line-height:1.6;color:var(--text)}
+.hb-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px 22px}
+.hb-grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+.hb-tile{display:flex;flex-direction:column;gap:5px;color:#13282C;text-decoration:none}
+.hb-tile .ph{display:block;aspect-ratio:16/10;border-radius:6px;overflow:hidden;background:var(--line);margin-bottom:8px}
+.hb-grid.two .hb-tile .ph{aspect-ratio:16/9}
+.hb-tile .ph img,.hb-tile .ph .fallback{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.hb-tile:hover .ph img{transform:scale(1.03)}
+.hb-tile b{font:500 20px/1.2 var(--ui);letter-spacing:-.015em}
+.hb-tile .tg{font-family:var(--read);font-size:16px;line-height:1.4;color:var(--text)}
+.hb-tile .mt{font:400 13.5px var(--ui);color:#66777A}
+.hb-tile:hover b{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.hb-idx{padding-top:80px;padding-bottom:40px}
+.hb-idxcols{columns:4 220px;column-gap:28px}
+.hb-ia{break-inside:avoid;margin-bottom:22px}
+.hb-ian{display:block;font:600 15px var(--ui);color:#13282C;text-decoration:none;margin-bottom:6px;padding-bottom:4px;border-bottom:1px solid var(--line)}
+.hb-ia ul{list-style:none;margin:0;padding:0}
+.hb-ia li a{display:block;padding:3px 0;font:400 14.5px/1.4 var(--ui);color:#2C3E41;text-decoration:none}
+.hb-ia li a:hover,.hb-ian:hover{color:#B84C11;text-decoration:underline}
+@media (max-width:900px){.hb-cols{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:700px){
+  .hb-hero .inner{padding-block:96px 22px!important}
+  .hb-find input{width:100%}
+  .hb-chips{grid-template-columns:1fr 1fr;gap:8px;margin-top:18px}
+  .hb-chip{padding:10px 12px}.hb-chip b{font-size:15px}
+  .hb-glance{padding-top:40px}
+  .hb-cols{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:12px;margin:0 -20px;padding:0 20px 6px;scrollbar-width:none}
+  .hb-cols::-webkit-scrollbar{display:none}
+  .hb-col{flex:0 0 78%;scroll-snap-align:start}
+  .hb-reg{padding-top:52px}
+  .hb-rhead p{font-size:16.5px}
+  .hb-grid,.hb-grid.two{grid-template-columns:1fr 1fr;gap:20px 12px}
+  .hb-tile b{font-size:16px}.hb-tile .tg{font-size:14px}.hb-tile .mt{font-size:12.5px}
+  .hb-idxcols{columns:2;column-gap:16px}
+}
+@media (max-width:700px){.hb-glance .hb-flag a{display:none}.hb-hero p{font-size:17px!important}}
