@@ -2626,3 +2626,13 @@ h1,h2,h3,h4,.hiw-n,.ww-tl li span{font-variation-settings:normal!important}
 /* tool pages: DM Sans medium headlines */
 .cmp-top h1,.sl-head h1,.vm-title,.quiz h1,.quiz h2,.qz h1,.qz h2,.res-h h1,.results h1,.fy-h,.find h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.02em!important}
 .dk-map .vp-pc span b{font-size:clamp(15px,1.25vw,19px)!important}
+
+/* ===== Nov 4 2026 patch: home page headers in DM Sans medium; home article titles DM Sans light (desktop) / regular (phone). Reading text stays Caslon. ===== */
+.dk-hero h1,.hp-hero h1,.hp-pop h3,.hp-pop b,.dk-map .vp-pc span b,.hp-v b,.hiw-steps h3,.hiw-n,.ww-tx h3,.news h2{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.025em!important;font-variation-settings:"opsz" 40!important}
+.hp-pop b,.dk-map .vp-pc span b,.hp-v b,.hiw-steps h3{letter-spacing:-.015em!important}
+.hp-guides h3,.hp-guides .ed-t b,.hp-guides b{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:300!important;letter-spacing:-.012em!important;line-height:1.12!important;font-variation-settings:"opsz" 40!important}
+@media (max-width:700px){
+  .hp-guides h3,.hp-guides .ed-t b,.hp-guides b{font-weight:400!important;letter-spacing:-.005em!important;line-height:1.2!important;font-variation-settings:"opsz" 14!important}
+  .hp-guides .ed-lead p,.hp-guides p{font-size:16.5px!important;line-height:1.55!important}
+}
+.vm-tile b,.vm-tile strong,.vm-tile h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.015em!important;font-variation-settings:"opsz" 40!important}
