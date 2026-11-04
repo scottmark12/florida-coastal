@@ -2419,3 +2419,9 @@ a.vchip:hover{text-decoration:underline;text-underline-offset:3px}
 .ed-by,.byline{font-family:var(--read)!important;font-style:italic;font-size:15.5px!important;letter-spacing:0!important;color:#3A4A4D!important;text-transform:none!important}
 .byline .cat{font-family:var(--ui)!important;font-style:normal;font-size:12.5px!important}
 .prose .fc-src,.fc-fig figcaption,.ww-ph figcaption{font-size:14px}
+/* reading weight: lighter Fraunces with display optical size, like a magazine; data tables stay in the UI sans */
+.prose{font-weight:320!important;font-variation-settings:"opsz" 48!important}
+.prose b,.prose strong{font-weight:600!important}
+.prose table,.prose table *{font-family:var(--ui)!important;font-size:15.5px!important;line-height:1.45!important;font-variation-settings:normal!important}
+.prose td{font-weight:400}.prose th{font-weight:600}
+.scd p,.scx p,.trust p,.cmp-read .cmp-c,.about-cta p,.vp-blurb,.lede,.phero p{font-weight:350;font-variation-settings:"opsz" 36}
