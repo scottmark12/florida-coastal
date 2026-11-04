@@ -2899,3 +2899,7 @@ a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-family:'DM Sans',
   .hb3-grid.hb3-c1 .hb-tile .ph{aspect-ratio:16/9}
   .hb-tile .mt{font-size:13.5px!important}
 }
+/* ===== Nov 4 2026: hero panel at in between widths ===== */
+@media (max-width:700px){.hb3-panel{max-width:none}.hb3-ph{height:clamp(200px,42vw,300px)}}
+@media (min-width:701px) and (max-width:1000px){.hb3-hero{min-height:0;display:block}.hb3-ph{position:relative;inset:auto;height:clamp(280px,40vw,400px)}.hb3-hw{padding:0 0 8px}.hb3-panel{max-width:none;margin-top:-80px;position:relative}.hb3-cred{top:auto;bottom:auto;display:none}}
+@media (min-width:701px) and (max-width:1000px){.hb3-hero{padding-top:0!important}}
