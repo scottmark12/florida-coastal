@@ -2838,3 +2838,10 @@ a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-family:'DM Sans',
   .hb3-grid .hb-tile b{font-size:16px}.hb3-grid .hb-tile .tg{font-size:14px}
 }
 @media (max-width:700px){.hb3-glance .hb-flag a{display:none}}
+/* ===== Nov 4 2026: hub v3 fixes. Chapter bar only after the hero, short regions fill the row, shorter hero ===== */
+.hb3-bar{position:fixed!important;left:0;right:0;top:70px;transform:translateY(-120%);opacity:0;transition:transform .2s,opacity .2s;box-shadow:0 6px 16px rgba(19,40,44,.06)}
+.hb3-bar.show{transform:none;opacity:1}
+.hb3-grid.hb3-c2{grid-template-columns:repeat(2,minmax(0,1fr))}.hb3-grid.hb3-c2 .hb-tile .ph{aspect-ratio:16/8}
+.hb3-grid.hb3-c3{grid-template-columns:repeat(3,minmax(0,1fr))}.hb3-grid.hb3-c3 .hb-tile .ph{aspect-ratio:16/10}
+.hb3-hero{min-height:520px}.hb3-hw{padding-top:72px}
+@media (max-width:700px){.hb3-hero{min-height:0}.hb3-hw{padding-top:0}.hb3-grid.hb3-c2,.hb3-grid.hb3-c3{grid-template-columns:1fr 1fr}.hb3-grid.hb3-c2 .hb-tile .ph,.hb3-grid.hb3-c3 .hb-tile .ph{aspect-ratio:4/3}.hb3-grid.hb3-c3 .hb-tile:last-child{grid-column:1/-1}.hb3-grid.hb3-c3 .hb-tile:last-child .ph{aspect-ratio:16/9}}
