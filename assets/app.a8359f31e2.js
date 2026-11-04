@@ -596,11 +596,12 @@ function regionView(e){const a=REGIONS.find(a=>a.id===e);if(!a)return'<section c
 var CMP_MAX=3,cmpIds=null;
 function cmpLoad(){try{var v=JSON.parse(localStorage.getItem("fc-cmp")||"null");return Array.isArray(v)?v.filter(function(i){return byId[i]}).slice(0,CMP_MAX):null}catch(e){return null}}
 function cmpSave(){try{localStorage.setItem("fc-cmp",JSON.stringify(cmpIds))}catch(e){}}
-function townsQuery(q){var c=new URLSearchParams(q).get("coast");c&&COASTS[c]&&(S.coast=c,S.q="",S.fvibe="all",S.tlim=24)}function cmpQuery(q){var p=new URLSearchParams(q),t=(p.get("t")||"").split(",").map(function(i){return MERGED[i]||i}).filter(function(i){return byId[i]});if(!t.length)return;cmpIds=t.slice(0,CMP_MAX);cmpSave()}
+function townsQuery(q){var c=new URLSearchParams(q).get("coast");c&&COASTS[c]&&(S.coast=c,S.q="",S.fvibe="all",S.tlim=24)}function cmpQuery(q){var p=new URLSearchParams(q),t=(p.get("t")||"").split(",").map(function(i){return MERGED[i]||i}).filter(function(i){return byId[i]});if(!t.length)return;if(t.length===1)t=t.concat(similarTowns(byId[t[0]],2).map(function(e){return e.id}));cmpIds=t.slice(0,CMP_MAX);cmpSave()}
 function cmpDefault(){
   if(S.done&&hasW())return rankedTowns().slice(0,CMP_MAX).map(function(e){return e.id});
   var v=fcViewed().filter(function(i){return byId[i]});
-  return (v.length>=2?v:v.concat(["destin","sarasota","naples"].filter(function(i){return v.indexOf(i)<0}))).slice(0,CMP_MAX);
+  if(v.length===1)return v.concat(similarTowns(byId[v[0]],2).map(function(e){return e.id}));
+  return (v.length>=2?v:["destin","sarasota","naples"]).slice(0,CMP_MAX);
 }
 function cmpTowns(){if(!cmpIds)cmpIds=cmpLoad()||cmpDefault();return cmpIds.map(function(i){return byId[i]}).filter(Boolean)}
 function cmpHealth(e,full){var h=HEALTH[e.id];if(!h)return"Ask a local";var a=h[0]+", about "+h[1]+" mi";if(!full)return a;return a+(h[2]===h[0]?'<small class="cmp-sub">Also a '+h[3]+" trauma center</small>":h[2]?'<small class="cmp-sub">Trauma center: '+h[2]+" ("+h[3]+"), about "+h[4]+" mi</small>":"")}
@@ -615,7 +616,7 @@ function compareView(){
   if(open)head.push('<div class="cmp-town cmp-add"><button class="cmp-addl cmp-focus" data-cmpfocus="1"><span>+ '+(n<2?"Add a town":"Add a third town")+'</span><small>Search or pick a similar town above</small></button></div>');
   var pad=open?['<div class="cmp-c cmp-empty"></div>']:[];
   function cells(fn){return ts.map(function(e){return '<div class="cmp-c">'+fn(e)+"</div>"}).concat(pad)}
-  function scoreCells(k,get){var v=ts.map(function(e){return get(e,k)}),mx=Math.max.apply(null,v);return ts.map(function(e,i){var w=n>1&&v[i]===mx&&v.filter(function(x){return x===mx}).length<n;return '<div class="cmp-c cmp-sc'+(w?" win":"")+'">'+bar(Math.round(v[i]))+'<span class="n">'+Math.round(v[i])+"</span></div>"}).concat(pad)}
+  function scoreCells(k,get){var v=ts.map(function(e){return get(e,k)}),mx=Math.max.apply(null,v);return ts.map(function(e,i){var w=n>1&&v[i]===mx&&v.filter(function(x){return x===mx}).length<n;return '<div class="cmp-c cmp-sc'+(w?" win":"")+'">'+bar(Math.round(v[i]))+'<span class="n">'+Math.round(v[i])+"</span>"+(w?'<span class="cmp-best">Best</span>':"")+"</div>"}).concat(pad)}
   var rows=[
     '<h2 class="cmp-h">The basics</h2>',
     cmpRow("Home prices",cells(function(e){return priceLine(e)})),
@@ -623,19 +624,39 @@ function compareView(){
     cmpRow("Airport",cells(function(e){return e.airport})),
     cmpRow("Season",cells(function(e){return e.season})),
     cmpRow("Heads up",cells(function(e){return e.watch})),
-    '<h2 class="cmp-h">The scorecard</h2><p class="cmp-note">The best score in each row is bold. Tap a town for the local\'s take on every score.</p>'
+    '<h2 class="cmp-h">The scorecard</h2><p class="cmp-note">The best score in each row is in teal. Tap a town for the local\'s take on every score.</p>'
   ].concat(CATS.map(function(c){return cmpRow(c[1],scoreCells(c[0],score),"cmp-s")}))
    .concat([cmpRow("Public school district",scoreCells("edu",function(e){return eduScore(e)}),"cmp-s"),
     '<h2 class="cmp-h">In their words</h2>',
     cmpRow("A day in town",cells(function(e){return e.day||e.blurb}),"cmp-read"),
     cmpRow("Why people love it",cells(function(e){return e.pros.join(". ")+"."})),
-    cmpRow("Know before you go",cells(function(e){return e.cons.join(". ")+"."}))
+    cmpRow("Know before you go",cells(function(e){return e.cons.join(". ")+"."})),
+    cmpRow("Next step",cells(function(e){return '<a class="btn btn-accent cmp-ask" href="#contact-'+e.id+'">Ask a local in '+short(e)+'&nbsp;→</a>'}),"cmp-act")
    ]);
   return '<section class="wrap cmp-page"><div class="label">Compare towns</div><div class="cmp-top"><h1>Side by side.</h1><p class="lede">Pick up to three towns and see prices, hospitals, the drive to the airport and every score in one place.</p></div>'
-   +cmpSugg(ts,open)
+   +cmpSugg(ts,open)+cmpVerdict(ts)
    +'<div class="cmp" style="--n:'+cols+'"><div class="cmp-head">'+head.join("")+"</div>"+rows.join("")+"</div>"
    +'<p class="cmp-foot">Hospital distances are straight line miles from the center of town, so the drive is longer. Hospitals checked October 2026. Scores rate what each town offers, never who lives there. <a href="#scoring">How we score</a></p>'
    +'<div class="cmp-acts">'+(S.done?'<a class="btn btn-line" href="#quiz">Back to my top 5</a>':'<a class="btn btn-accent" href="#quiz">See your top 5 towns</a>')+"</div></section>";
+}
+/* Nov 4 2026: the short version, who leads on what, with a local per town */
+function cmpVerdict(ts){
+  if(ts.length<2)return"";
+  var ks=CATS.map(function(c){return c[0]}).concat(["edu"]),lead={},tie={};
+  ts.forEach(function(e){lead[e.id]=[];tie[e.id]=[]});
+  ks.forEach(function(k){
+    var v=ts.map(function(e){return k==="edu"?eduScore(e):score(e,k)}),mx=Math.max.apply(null,v),w=v.filter(function(x){return x===mx}).length,word=k==="edu"?"schools":k==="dining"?"dining":k==="quiet"?"quiet":(STRENGTH_WORD[k]||k);
+    if(w===ts.length||mx<3)return;
+    var rest=v.filter(function(x){return x<mx}),gap=mx-Math.max.apply(null,rest);
+    ts.forEach(function(e,i){if(v[i]===mx)(w===1?lead:tie)[e.id].push([word,gap])});
+  });
+  function list(a){a=a.sort(function(x,y){return y[1]-x[1]}).map(function(x){return x[0]});return a.length<2?a.join(""):a.slice(0,-1).join(", ")+" and "+a[a.length-1]}
+  return '<div class="cmp-verdict"><h2>The short version</h2><div class="cmp-vgrid" style="--n:'+ts.length+'">'+ts.map(function(e){
+    var l=lead[e.id].sort(function(x,y){return y[1]-x[1]}).slice(0,3),t=tie[e.id].sort(function(x,y){return y[1]-x[1]}).slice(0,Math.max(0,3-l.length)),out=[];
+    if(l.length)out.push("Best for "+list(l)+".");
+    if(t.length)out.push((l.length?"Tied for best on ":"Tied for best on ")+list(t)+".");
+    return '<div class="cmp-v"><b>'+short(e)+'</b><p>'+(out.length?out.join(" "):"Even with the others, no score where it comes out ahead.")+'</p><a href="#contact-'+e.id+'">Ask a local in '+short(e)+'&nbsp;→</a></div>'
+  }).join("")+'</div></div>';
 }
 function cmpRender(){var a=document.getElementById("app");a&&(a.innerHTML=srcsets(compareView()))}
 
