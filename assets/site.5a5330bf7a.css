@@ -2647,3 +2647,18 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
 .hiw{padding-top:52px!important}
 @media (max-width:700px){.hiw{padding-top:32px!important}.hiw-go{justify-self:start;align-self:start}}
 @media (max-width:700px){.hiw-panel .hiw-a{justify-self:start}}
+
+/* ===== Nov 4 2026 patch: How it works becomes a short note from the family; plain hero headline ===== */
+.hiw-letter{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,6fr);column-gap:64px;align-items:start;color:#13282C}
+.hiw-k{grid-column:1/-1;margin:0 0 14px;font:700 12px var(--ui);letter-spacing:.14em;text-transform:uppercase;color:#B84C11}
+.hiw-lead{margin:0;font-family:var(--display);font-weight:400;font-size:clamp(26px,2.6vw,36px);line-height:1.18;letter-spacing:-.01em;color:#13282C}
+.hiw-body p{margin:0 0 16px;font-family:var(--read);font-weight:330;font-variation-settings:"opsz" 36;font-size:18.5px;line-height:1.62;color:var(--text,#17191A)}
+.hiw-sign{display:flex;align-items:center;flex-wrap:wrap;gap:14px 22px;margin-top:8px}
+.hiw-sign .hiw-go{margin:0}
+.hiw-sign span{font-family:var(--display);font-size:20px;color:#13282C}
+@media (max-width:700px){
+  .hiw-letter{grid-template-columns:1fr;row-gap:14px}
+  .hiw-lead{font-size:25px}
+  .hiw-body p{font-size:17px}
+  .hiw-sign{flex-direction:column;align-items:flex-start}
+}
