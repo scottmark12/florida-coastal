@@ -2559,3 +2559,21 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
   .cmp-mpick b{font:600 13.5px/1.25 var(--ui);min-height:2.5em}
   .cmp-mpick i{align-self:flex-start;font:700 12.5px var(--ui);font-style:normal;color:#fff;background:#13282C;border-radius:4px;padding:6px 10px;min-height:28px}
 }
+
+/* ===== Nov 4 2026 patch: phone compare, small + Add a town opens a bottom sheet ===== */
+.cmp-plusrow,.cmp-scrim{display:none}
+@media (max-width:700px){
+  .cmp-plusrow{display:flex;justify-content:flex-end;margin:10px 0 0}
+  .cmp-plus{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:6px 14px 6px 10px;border:1px solid #B9C3C4;border-radius:999px;background:#fff;font:600 14px var(--ui);color:#13282C;cursor:pointer}
+  .cmp-plus span{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;border-radius:50%;background:#13282C;color:#fff;font-size:17px;line-height:1}
+  .cmp-addm{display:none!important}
+  .cmp.sheet .cmp-scrim{display:block;position:fixed;inset:0;z-index:60;background:rgba(19,40,44,.42)}
+  .cmp.sheet .cmp-addm{display:block!important;position:fixed;left:0;right:0;bottom:0;z-index:61;margin:0;padding:16px 16px calc(18px + env(safe-area-inset-bottom,0px));border:0;border-radius:16px 16px 0 0;background:var(--page,#FDFCF8);box-shadow:0 -10px 30px rgba(19,40,44,.2);max-height:85vh;overflow:visible}
+  .cmp-sheethd{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px}
+  .cmp-sheethd b{font-family:var(--display);font-weight:400;font-size:22px;color:#13282C}
+  .cmp-close{width:36px;height:36px;border:0;border-radius:50%;background:#EEE9DF;font-size:22px;line-height:1;color:#13282C;cursor:pointer}
+  .cmp-addm>b{display:none}
+  .cmp.sheet .cmp-addm .cmp-res{position:static;margin-top:8px;box-shadow:none}
+  .cmp-addm:has(.cmp-res:not(:empty)) .cmp-mrow{display:none}
+  .cmp-plusrow{margin:8px 0 0}
+}
