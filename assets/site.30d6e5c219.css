@@ -2518,3 +2518,26 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
   .cmp-pick .tx b{font-size:12.5px}
   .cmp-more{font-size:12.5px}
 }
+
+/* ===== Nov 4 2026 patch: compare, search in the third column, row labels on the left (desktop), tidy header ===== */
+.cmp-top h1{margin:0 0 6px!important;font-size:clamp(28px,3.4vw,40px)!important;line-height:1.1}
+.cmp-top .lede{margin:0 0 20px!important}
+.cmp-or{display:block;font:600 12px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:#66777A;margin-top:4px}
+.cmp-add2 .cmp-search input{padding:9px 12px;font-size:14.5px;border-width:1px}
+.cmp-pick .tx b,.cmp-pick .tx small{white-space:normal!important;overflow:visible!important;text-overflow:clip!important}
+.cmp-labsub{display:block;margin-top:3px;font-size:12px;font-weight:400;letter-spacing:0;text-transform:none;color:#66777A}
+@media (min-width:701px){
+  .cmp{--labw:190px}
+  .cmp-row{display:grid;grid-template-columns:var(--labw) minmax(0,1fr);column-gap:20px;align-items:center;padding:10px 0}
+  .cmp-row .cmp-lab{margin:0!important;line-height:1.35}
+  .cmp-read,.cmp-row:not(.cmp-s):not(.cmp-act){align-items:start}
+  .cmp-read .cmp-lab,.cmp-row:not(.cmp-s):not(.cmp-act) .cmp-lab{padding-top:3px}
+  .cmp-head,.cmp-stick-in{padding-left:calc(var(--labw) + 20px)!important}
+  .cmp-sc{flex-direction:row!important;align-items:center!important;gap:10px!important}
+}
+@media (max-width:700px){
+  .cmp-add2 .cmp-search input{padding:8px;font-size:13px}
+  .cmp-add2 .cmp-res{left:auto;right:0;width:260px}
+  .cmp-or{font-size:10.5px}
+  .cmp-pick .tx b{line-height:1.2}
+}

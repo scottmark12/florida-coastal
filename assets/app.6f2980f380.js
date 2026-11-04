@@ -613,15 +613,15 @@ function cmpOptions(skip){
 function compareView(){
   var ts=cmpTowns(),n=ts.length,ids=ts.map(function(e){return e.id}),open=n<CMP_MAX,cols=n+(open?1:0);
   var head=ts.map(function(e){var f=fitBadge(e,"for you");return '<div class="cmp-town"><a class="cmp-ph" href="#town-'+e.id+'">'+art(e,!1)+'</a><div class="cmp-tn"><a href="#town-'+e.id+'"><b>'+short(e)+'</b></a><span>'+regionOf[e.id].map+"</span>"+(f?f:"")+'</div><button class="cmp-x" data-cmprm="'+e.id+'" aria-label="Remove '+short(e)+'">&times;</button></div>'});
-  if(open&&n>=2)head.push('<div class="cmp-town cmp-add cmp-add2"><b>Or add a similar town</b>'+cmpSimilar(ts,3).map(function(e){return '<button class="cmp-pick" data-cmpadd2="'+e.id+'"><span class="ph">'+art(e,!1)+'</span><span class="tx"><b>'+short(e)+'</b><small>'+(regionOf[e.id]||{}).map+'</small></span><i>+ Add</i></button>'}).join("")+'</div>');
+  if(open&&n>=2)head.push('<div class="cmp-town cmp-add cmp-add2"><b>Add a third town</b><div class="cmp-search"><input type="search" data-cmpq="1" placeholder="Search" aria-label="Search for a town to add" autocomplete="off"><div class="cmp-res" role="listbox"></div></div><small class="cmp-or">Or a similar town</small>'+cmpSimilar(ts,3).map(function(e){return '<button class="cmp-pick" data-cmpadd2="'+e.id+'"><span class="ph">'+art(e,!1)+'</span><span class="tx"><b>'+short(e)+'</b><small>'+(regionOf[e.id]||{}).map+'</small></span><i>+ Add</i></button>'}).join("")+'</div>');
   else if(open)head.push('<div class="cmp-town cmp-add"><button class="cmp-addl cmp-focus" data-cmpfocus="1"><span>+ '+(n<2?"Add a town":"Add a third town")+'</span><small>Search or pick a similar town above</small></button></div>');
   var pad=open?['<div class="cmp-c cmp-empty"></div>']:[];
   function cells(fn){return ts.map(function(e){return '<div class="cmp-c">'+fn(e)+"</div>"}).concat(pad)}
   function scoreCells(k,get){var v=ts.map(function(e){return get(e,k)}),mx=Math.max.apply(null,v);return ts.map(function(e,i){var w=n>1&&v[i]===mx&&v.filter(function(x){return x===mx}).length<n;return '<div class="cmp-c cmp-sc'+(w?" win":"")+'">'+bar(Math.round(v[i]))+'<span class="n">'+Math.round(v[i])+"</span>"+(w?'<span class="cmp-best">Best</span>':"")+"</div>"}).concat(pad)}
   var rows=[
     '<h2 class="cmp-h">The basics</h2>',
-    cmpRow("Home prices",cells(function(e){return priceLine(e)})),
-    cmpRow("Nearest hospital with an ER",cells(function(e){return cmpHealth(e,!0)})),
+    cmpRow("Home prices",cells(function(e){return MED[e.id]?fmtK(MED[e.id])+" median":e.price||"Ask a local"})),
+    cmpRow('Nearest hospital with an ER<small class="cmp-labsub">Straight line miles, so the drive is longer</small>',cells(function(e){return cmpHealth(e,!0)})),
     cmpRow("Airport",cells(function(e){return e.airport})),
     cmpRow("Season",cells(function(e){return e.season})),
     cmpRow("Heads up",cells(function(e){return e.watch})),
@@ -634,11 +634,11 @@ function compareView(){
     cmpRow("Know before you go",cells(function(e){return e.cons.join(". ")+"."})),
     cmpRow("Next step",cells(function(e){return '<a class="btn btn-accent cmp-ask" href="#contact-'+e.id+'">Ask a local in '+short(e)+'&nbsp;→</a>'}),"cmp-act")
    ]);
-  return '<section class="wrap cmp-page"><div class="label">Compare towns</div><div class="cmp-top"><h1>Side by side.</h1><p class="lede">Pick up to three towns and see prices, hospitals, the drive to the airport and every score in one place.</p></div>'
+  return '<section class="wrap cmp-page"><div class="cmp-top"><h1>Compare towns side by side</h1><p class="lede">Prices, hospitals, the airport and every score for up to three towns.</p></div>'
    +cmpSugg(ts,open)+cmpVerdict(ts)
    +'<div class="cmp" style="--n:'+cols+'"><div class="cmp-head">'+head.join("")+'</div><div class="cmp-stick" aria-hidden="true"><div class="cmp-stick-in">'+ts.map(function(e){return "<span>"+short(e)+"</span>"}).join("")+(open?"<span></span>":"")+"</div></div>"+rows.join("")+"</div>"
-   +'<p class="cmp-foot">Hospital distances are straight line miles from the center of town, so the drive is longer. Hospitals checked October 2026. Scores rate what each town offers, never who lives there. <a href="#scoring">How we score</a></p>'
-   +'<div class="cmp-acts">'+(S.done?'<a class="btn btn-line" href="#quiz">Back to my top 5</a>':'<a class="btn btn-accent" href="#quiz">See your top 5 towns</a>')+"</div></section>";
+   +'<p class="cmp-foot">Prices are fall 2026 medians. Hospitals checked October 2026. Scores rate what each town offers, never who lives there. <a href="#scoring">How we score</a></p>'
+   +'<div class="cmp-acts">'+(S.done?'<a class="btn btn-line" href="#quiz">Back to my top 5</a>':'<a class="btn btn-line" href="#quiz">See your top 5 towns</a>')+"</div></section>";
 }
 /* Nov 4 2026: the short version, who leads on what, with a local per town */
 function cmpSimilar(ts,k){var have=ts.map(function(e){return e.id}),seen={},out=[];ts.forEach(function(e){similarTowns(e,8).forEach(function(x){if(have.indexOf(x.id)<0&&!seen[x.id]){seen[x.id]=1;out.push(x)}})});return out.slice(0,k)}
@@ -665,7 +665,7 @@ function cmpVerdict(ts){
 function cmpRender(){var a=document.getElementById("app");a&&(a.innerHTML=srcsets(compareView()))}
 
 /* Oct 29 2026: compare page search and similar town suggestions */
-function cmpSugg(ts,open){if(!open||!ts.length)return"";if(ts.length>=2)return '<div class="cmp-sugg2"><b>Add a third town</b><div class="cmp-search"><input type="search" data-cmpq="1" placeholder="Search any beach town" aria-label="Search for a town to add" autocomplete="off"><div class="cmp-res" role="listbox"></div></div></div>';var have=ts.map(function(e){return e.id}),seen={},out=[];ts.forEach(function(e){similarTowns(e,8).forEach(function(x){if(have.indexOf(x.id)<0&&!seen[x.id]){seen[x.id]=1;out.push(x)}})});out=out.slice(0,ts.length<2?6:3);
+function cmpSugg(ts,open){if(!open||!ts.length)return"";if(ts.length>=2)return"";var have=ts.map(function(e){return e.id}),seen={},out=[];ts.forEach(function(e){similarTowns(e,8).forEach(function(x){if(have.indexOf(x.id)<0&&!seen[x.id]){seen[x.id]=1;out.push(x)}})});out=out.slice(0,ts.length<2?6:3);
  return '<div class="cmp-sugg"><div class="cmp-find"><b>'+(ts.length<2?"Who should "+short(ts[0])+" go up against?":"Add a third town")+'</b><div class="cmp-search"><input type="search" data-cmpq="1" placeholder="Search any beach town" aria-label="Search for a town to add" autocomplete="off"><div class="cmp-res" role="listbox"></div></div></div><div class="cmp-sh"><b>Or try towns like '+ts.map(short).join(" and ")+'</b><span>The closest matches across our ten scores. Tap one to add it.</span></div><div class="cmp-sg">'+out.map(function(e){var w=sharedStrengths(ts[0],e).slice(0,2);return '<button class="cmp-sug" data-cmpadd2="'+e.id+'"><span class="ph">'+art(e,!1)+'</span><span class="tx"><b>'+short(e)+'</b><small>'+(regionOf[e.id]||{}).map+'</small>'+(w.length?'<em>Also strong on '+w.join(" and ")+'</em>':"")+'</span><i>+ Add</i></button>'}).join("")+'</div></div>'}
 function cmpAdd(id){cmpTowns();if(!byId[id]||cmpIds.indexOf(id)>=0||cmpIds.length>=CMP_MAX)return;cmpIds.push(id);cmpSave();try{track("compare_add",id)}catch(e){}cmpRender()}
 document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-cmpadd2]");if(b){e.preventDefault();cmpAdd(b.dataset.cmpadd2);return}var fo=e.target.closest&&e.target.closest("[data-cmpfocus]");if(fo){var q=document.querySelector("[data-cmpq]");q&&(q.scrollIntoView({block:"center",behavior:"smooth"}),q.focus())}});
