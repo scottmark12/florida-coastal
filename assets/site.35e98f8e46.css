@@ -2648,3 +2648,21 @@ h1,h2,h3,h4,.hiw-n,.ww-tl li span{font-variation-settings:normal!important}
 .block>h2,.block h3.subh,.boxed>h3,.boxed h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.015em!important;font-variation-settings:"opsz" 32!important}
 .block>.label,section.wrap>.label,.boxed>.label{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:700!important;font-size:12px!important;letter-spacing:.14em!important;text-transform:uppercase}
 .sv-hd b{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.015em!important;font-variation-settings:"opsz" 32!important}
+
+/* ===== Nov 4 2026 patch: flood rankings, PDF download at top, how to read it, top 5 / bottom 5 ===== */
+.fc-dl{display:flex;align-items:center;justify-content:space-between;gap:16px 24px;flex-wrap:wrap;margin:0 0 26px;padding:16px 18px;border:1px solid #13282C;border-radius:10px;background:#fff}
+.fc-dl b{display:block;font:600 16px/1.3 var(--ui);color:#13282C}
+.fc-dl span{display:block;font:400 14px/1.45 var(--ui);color:#4A5B5E;margin-top:2px;max-width:30em}
+.prose .fc-dlbtn,.fc-dlbtn{display:inline-flex;align-items:center;min-height:46px;padding:11px 18px;border-radius:6px;background:#C65213;color:#fff!important;font:700 15px var(--ui);text-decoration:none!important;white-space:nowrap}
+.fc-dlbtn:hover{background:#B84C11}
+.prose p.fc-how{font-size:inherit}
+.fc-quick{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0 26px}
+.fc-q{padding:14px 16px 10px;border-radius:10px;border:1px solid var(--line);background:#fff}
+.fc-q.hi{border-top:4px solid #B84C11}.fc-q.lo{border-top:4px solid #1B6E78}
+.prose .fc-q h3{margin:0 0 6px!important;font:700 12px/1.2 var(--ui)!important;letter-spacing:.12em!important;text-transform:uppercase;color:#13282C}
+.prose .fc-q ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.prose .fc-q li{display:flex;justify-content:space-between;gap:10px;margin:0;padding:7px 0;border-top:1px solid var(--line);font:400 15.5px/1.3 var(--ui)}
+.prose .fc-q li:first-child{border-top:0}
+.fc-q li b{font-weight:700;font-variant-numeric:tabular-nums}
+.fc-q.hi li b{color:#B84C11}.fc-q.lo li b{color:#1B6E78}
+@media (max-width:700px){.fc-quick{grid-template-columns:1fr}.fc-dlbtn{width:100%;justify-content:center}}
