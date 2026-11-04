@@ -2603,3 +2603,10 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
   .cmp-plus2 span{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#13282C;color:#fff;font-size:20px;line-height:1}
 }
 .cmp-stick-in::after{content:"";position:absolute;left:0;right:0;top:calc(100% + 1px);height:16px;background:linear-gradient(#FFFDF9,rgba(255,253,249,0));pointer-events:none}
+
+/* ===== Nov 4 2026 patch: Start the quiz button in How it works, even gap above Popular towns ===== */
+.hiw-go{align-self:flex-start;display:inline-flex;align-items:center;min-height:46px;margin-top:8px;padding:11px 20px;border-radius:6px;background:#C65213;color:#fff;font:700 15px var(--ui);text-decoration:none}
+.hiw-go:hover{background:#B84C11}
+@media (min-width:701px){.hp-guides{padding-bottom:28px!important}}
+@media (max-width:700px){.hiw-go{grid-column:2;justify-self:start;margin-top:4px}}
+@media (min-width:701px){.hp-sec.hiw{padding-top:40px!important}}
