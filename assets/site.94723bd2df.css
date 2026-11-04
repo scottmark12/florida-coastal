@@ -3112,3 +3112,16 @@ body.dk-moving .dk-map aside.vpanel{transition:margin-top .36s ease}
  .sl-save .sv-row .btn{flex:0 0 auto!important;width:auto!important;display:inline-flex!important;align-items:center;justify-content:center}
  .sl-save .sv-hd b{font-weight:600!important;color:var(--ink)}
 }
+/* Nov 4: tapped town slides up into the priorities card */
+@media (min-width:1000px){
+ .sl-mapwrap .dot{cursor:pointer}
+ .slc-back{border:0;background:none;padding:0;font:700 13px 'DM Sans',sans-serif;letter-spacing:.02em;text-transform:none;color:var(--ink);cursor:pointer}
+ .slc-back:hover{text-decoration:underline}
+ .slc-in{animation:slcUp .32s ease both}
+ @keyframes slcUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+ .slc-r button{display:flex;align-items:flex-start;gap:10px;width:100%;padding:7px 0;border:0;border-bottom:1px solid var(--line);background:none;text-align:left;color:#13282C;cursor:pointer;font:inherit}
+ .slc-r li:last-child button{border-bottom:0}
+ .slc-r button:hover b{text-decoration:underline}
+ .slc.picked .slc-k{color:#C65213}
+}
+@media (min-width:1000px) and (prefers-reduced-motion:reduce){.slc-in{animation:none}}
