@@ -3503,3 +3503,42 @@ body.qzi-on header.top,body.qzi-on .top,body.qzi-on .askbar{display:none!importa
 .qzi>.fs-logo{position:absolute;left:32px;top:24px;z-index:5;padding:8px 12px;border-radius:12px;background:rgba(255,253,249,.85);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px)}
 .qzi>.fs-logo img{height:32px}
 @media (max-width:759px){.qzi>.fs-logo{position:relative;left:auto;top:auto;display:block;width:max-content;margin:12px auto 0;padding:6px 10px}.qzi>.fs-logo img{height:28px}.qzi-wrap{padding-top:8px!important}.qzi{display:flex;flex-direction:column}}
+/* ===== Nov 4 2026: town reveal and results match the new quiz ===== */
+.rv-name{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.025em!important;font-size:40px!important;line-height:1.05!important}
+.fs-panel h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.03em!important}
+.fs-panel .label{font:700 12px 'DM Sans',sans-serif!important;letter-spacing:.16em!important;text-transform:uppercase;color:#C65213!important;border:0!important;padding:0!important;margin-bottom:6px!important}
+.fs-panel .nm,.fs-panel .nm b{font-family:'DM Sans',sans-serif!important}
+.fs-panel .nm b{font-weight:500!important;letter-spacing:-.015em}
+.yv{font-family:'DM Sans',sans-serif!important;font-weight:600!important}
+.rv-card{border-radius:18px!important;border:0!important;box-shadow:0 30px 70px rgba(19,40,44,.25),0 2px 8px rgba(19,40,44,.08)!important;background:#FFFDF9!important;overflow:hidden}
+.rv-badge{background:#FFFDF9!important;color:#13282C!important;border-radius:999px!important;padding:6px 12px!important;font:600 13.5px 'DM Sans',sans-serif!important;box-shadow:0 4px 12px rgba(19,40,44,.15)}
+.rv-badge::before{content:"";display:inline-block;width:8px;height:8px;margin-right:7px;border-radius:50%;background:#E8692C;box-shadow:0 0 0 3px rgba(232,105,44,.22);vertical-align:1px}
+.rv-whyh{color:#13282C!important;letter-spacing:.14em!important}
+.fs-pattern{border-radius:16px!important;background:#FFFDF9!important;box-shadow:0 14px 34px rgba(19,40,44,.16)!important;border:0!important}
+.fs-pattern .rv-eye{color:#13282C!important;letter-spacing:.16em}
+.fs-bar .linkbtn{background:rgba(255,253,249,.9)!important;color:#13282C!important;padding:8px 14px!important;border-radius:999px!important;font-size:14.5px!important;text-decoration:none!important;box-shadow:0 4px 12px rgba(19,40,44,.12)}
+.fs-bar .linkbtn.rv-save{color:#C65213!important}
+.fs-close{border-radius:999px!important;background:rgba(255,253,249,.92)!important}
+@media (max-width:899px){.rv-name{font-size:34px!important}.fs-bar .linkbtn{font-size:13.5px!important;padding:7px 12px!important}}
+/* phone quiz: Florida sits in a band at the top so it shows from question 1, the card below it */
+@media (max-width:759px){
+ .qzi{height:auto!important;min-height:100vh;display:block!important}
+ .qzi-map{position:absolute!important;left:0;right:0;top:0;bottom:auto!important;height:44vh!important;inset:0 0 auto 0!important;filter:saturate(1.2)!important}
+ .qzi-map svg{width:100%!important;height:100%!important}
+ .qzi-veil{display:none}
+ .qzi>.fs-logo{position:absolute!important;left:12px;top:12px;margin:0!important;z-index:5}
+ .qzi-wrap{padding:30vh 10px 18px!important;justify-content:flex-start!important;height:auto!important;overflow:visible!important}
+ .qzi-card{padding:14px 14px 10px!important}
+ .qzi-hd{margin:0 0 10px!important}.qzi-hd h1{font-size:22px!important}.qzi-sub{font-size:14px!important;margin-top:2px!important}
+ .qzi .svq{font-size:22px!important;margin:4px 0 10px!important}
+ .qzi .svgrid{gap:6px!important}
+ .qzi .svtile,.qzi .svtile.hasph,.qzi .svtile:not(.hasph){min-height:48px!important;padding:9px 36px 9px 40px!important}
+ .qzi .svtile::before{left:14px}
+ .qzi .svtile .svt b{font-size:15.5px!important}.qzi .svtile .svt small{font-size:12.5px!important}
+ .qzi-alt{margin-top:8px!important}
+}
+html body .fs .rv-card h2.rv-name,html body .fs-rv h2.rv-name{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.025em!important}
+html body .fs-panel h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important}
+html body .fs-panel .nm b{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important}
+.fs-panel .label{box-shadow:none!important;text-decoration:none!important;background:none!important}
+.fs-panel .label::before,.fs-panel .label::after{display:none!important}
