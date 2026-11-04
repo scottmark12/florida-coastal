@@ -1086,6 +1086,7 @@ function quizDesk(){
   const old=mapInner;
   mapInner=function(e,a){
     if("quiz"===a&&!S.done&&null==S.reveal&&QZI)return quizImm();
+    document.body.classList.remove("qzi-on");
     let h=old.apply(this,arguments);
     if("quiz"===a&&!S.done)h=h.replace(/(<h[12] class="fy-h">)[\s\S]*?(<\/h[12]>)/,`$1${QZ_H}$2`).replace(/<p class="lede fy-lede">[\s\S]*?<\/p>/,`<p class="lede fy-lede qz-sub">${QZ_S}</p>`);
     return h;
@@ -1104,7 +1105,7 @@ function qzFit(step){
   R=R.slice(0,60);return {lead:R.map(e=>e.id),n:R.length};
 }
 function quizImm(){
-  const step=Math.min(S.sv.step,SQ.length-1),{lead,n}=qzFit(step),H=Math.max(560,window.innerHeight-vmHH()),W=vmW();
+  document.body.classList.add("qzi-on");const step=Math.min(S.sv.step,SQ.length-1),{lead,n}=qzFit(step),H=Math.max(560,window.innerHeight),W=vmW();
   const f=e=>{if(!lead.length){const g=VSIG_T[e.id];return g?{hot:!1,dim:!1,label:!1,col:VCOL[g],r:7,sig:1}:{dim:!1,label:!1,col:"var(--dot-calm)",r:4}}
     const k=lead.indexOf(e.id);return k>=0?{hot:!1,dim:!1,label:!1,col:"#E8692C",r:k<5?7:5.5}:{dim:!0,tier:"out",r:2.6}};
   /* frame the state, then zoom toward the towns that fit you */
@@ -1112,13 +1113,13 @@ function quizImm(){
   let ox=50,oy=55,sc=1;
   if(lead.length){const L=lead.map(id=>byId[id]).filter(Boolean),c=L.reduce((m,t)=>{const q=P(t.lon,t.lat);return [m[0]+q[0]/L.length,m[1]+q[1]/L.length]},[0,0]);
     ox=Math.max(15,Math.min(85,(c[0]-a0[0])/bw*100));oy=Math.max(15,Math.min(85,(c[1]-a0[1])/bh*100));sc=1+Math.min(.28,.04*step+(lead.length<15?.06:0))}
-  if(W<760){sc=1;ox=50;oy=100}
-  const svg=mapSVG(f,{aria:"Map of Florida beach towns"}).replace(/viewBox="[^"]*"/,`viewBox="${a0[0].toFixed(1)} ${a0[1].toFixed(1)} ${bw.toFixed(1)} ${bh.toFixed(1)}" preserveAspectRatio="${W<760?"xMidYMax meet":"xMaxYMid meet"}"`).replace(/<text class="sealabel"[^>]*>[^<]*<\/text>/g,"");
+  if(W<760){sc=1;ox=50;oy=100}else{sc=1}
+  const svg=W<760?mapSVG(f,{aria:"Map of Florida beach towns"}).replace(/viewBox="[^"]*"/,`viewBox="${a0[0].toFixed(1)} ${a0[1].toFixed(1)} ${bw.toFixed(1)} ${bh.toFixed(1)}" preserveAspectRatio="${W<760?"xMidYMax meet":"xMaxYMid meet"}"`).replace(/<text class="sealabel"[^>]*>[^<]*<\/text>/g,""):mapSVG(f,{aria:"Map of Florida beach towns",slice:!0}).replace(/<text class="sealabel"[^>]*>[^<]*<\/text>/g,"");
   const tf=`scale(${sc.toFixed(3)})`,to=`${ox.toFixed(1)}% ${oy.toFixed(1)}%`;
   const top=`<div class="qzi-top">${step?'<button class="qzi-back" data-act="svback" aria-label="Back to the last question">←</button>':""}<div class="qzi-dots" role="progressbar" aria-valuemin="1" aria-valuemax="${SQ.length}" aria-valuenow="${step+1}" aria-label="Question ${step+1} of ${SQ.length}">${SQ.map((x,i)=>`<i class="${i<step?"on":i===step?"cur":""}"></i>`).join("")}</div>${lead.length?`<span class="qzi-n" aria-live="polite"><i></i><b>${n}</b> towns fit</span>`:`<span class="qzi-n qzi-n0">${step+1} of ${SQ.length}</span>`}</div>`;
   const chip="";
   const hd=step?"":`<div class="qzi-hd"><h1>Your top 5 Florida beach towns in 2 minutes</h1><p class="qzi-sub">${SQ.length} quick taps. No sign up.</p></div>`;
-  return `<div id="mapsec" class="qzi" style="height:${H}px"><div class="qzi-map mapbox${lead.length?" lit":""}" aria-hidden="true" data-tf="${tf}" data-to="${to}" style="transform:${tf};transform-origin:${to}">${svg}</div><div class="qzi-veil"></div>
+  return `<div id="mapsec" class="qzi" style="height:${H}px"><div class="qzi-map mapbox${lead.length?" lit":""}" aria-hidden="true" data-tf="${tf}" data-to="${to}" style="transform:${tf};transform-origin:${to}">${svg}</div><div class="qzi-veil"></div>${fsLogo()}
   <div class="qzi-wrap"><div class="qzi-card">${hd}${top}${surveyHTML()}<p class="qzi-alt"><a href="#map">Or browse the map instead</a></p></div>${chip}</div></div>`;
 }
 /* keep the drift smooth across answers: start the new map where the old one was, then ease to the new spot */
@@ -1135,5 +1136,6 @@ function quizImm(){
 "quiz"===curRoute()&&!S.done&&route();
 /* Nov 4: save boxes after the quiz name your style, "Get your Island Life towns and the guide" */
 (function(){const old=saveBox;saveBox=function(w){let h=old.apply(this,arguments);try{if(S.done){const y=youStyle(rankedTowns().slice(0,5));y&&(h=h.replace(/<b>Get your \d+ towns and the guide<\/b>/,`<b>Get your ${VIBES[y[0]]} towns and the guide</b>`).replace(/<b>That's your \d+\. Get them and the guide\.<\/b>/,`<b>Get your ${VIBES[y[0]]} towns and the guide</b>`))}}catch(e){}return h}})();
+addEventListener("hashchange",()=>{"quiz"!==curRoute()&&document.body.classList.remove("qzi-on")});
 /* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
 "sliders"===curRoute()&&slDesk()&&route();
