@@ -883,7 +883,7 @@ const slDesk=()=>window.innerWidth>=1000;
     S.sl||(S.sl=slLoad());null==S.sl.edu&&(S.sl.edu=slQuiz()?SL_FROM[S.w.edu||0]:50);
     const q=slQuiz();
     return `<div class="vm-bar sl-vbar"><h1 class="vm-title">${q?"Your answers":"Match by priorities"}</h1><p class="slv-sub">${q?"Your sliders start where your answers left them.":"Slide what matters and your best towns light up on the map."}</p>${pageToggle("sliders")}</div>
-  <div class="sl-stage"><div id="slres" class="sl-res sl-mapwrap" aria-live="polite">${slRes()}</div><aside class="sl-panel" role="group" aria-label="Your priorities"><div class="sl-pin">${slPanel2()}</div><div class="vm-lf sl-lf">${q?'<a class="btn btn-accent" href="#quiz">See my top 5</a>':`<a class="btn btn-accent" href="#quiz">See your top 5 towns</a><p>${SQ.length} quick questions, matched to how you live</p>`}</div></aside></div>`;
+  <div class="sl-stage"><div id="slres" class="sl-res sl-mapwrap" aria-live="polite">${slRes()}</div><aside class="sl-panel" role="group" aria-label="Your priorities"><div class="sl-pin">${slPanel2()}</div><div class="vm-lf sl-lf sl-save">${saveBox("sliders").replace(/<b>Get your (\d+) towns and the guide<\/b>/,"<b>Email me these $1 towns</b>")}</div></aside></div>`;
   };
   let was=slDesk();
   addEventListener("resize",()=>{const d=slDesk();if(d!==was){was=d;"sliders"===curRoute()&&route()}});
@@ -918,7 +918,7 @@ function slPanel2(){
   const xs=XCATS.filter(c=>"edu"!==c[0]&&(S.w[c[0]]||0)>0),pv=slPaceV(),bv=slBudV();
   const where=`<label class="sl2-where"><span>Where</span><select id="sl-coast"><option value="">Anywhere in Florida</option>${Object.entries(COASTS).map(([e,a])=>{const t=REGIONS.filter(a=>a.coast===e);return t.length>1?`<optgroup label="${a[0]}"><option value="${e}"${S.pc===e&&!S.pr?" selected":""}>All of the ${a[0]}</option>${t.map(e=>`<option value="r:${e.id}"${S.pr===e.id?" selected":""}>${e.map}</option>`).join("")}</optgroup>`:`<option value="${e}"${S.pc===e?" selected":""}>${a[0]}</option>`}).join("")}</select></label>`;
   const rows=slCore().concat(slMore()).filter(c=>c[0]!=="quiet"&&c[0]!=="afford").map(c=>{const v=S.sl[c[0]]??50;return slRow2("sl-"+c[0],`data-sl="${c[0]}"`,c[1],slWord2(c[0],v),v,0,100,5,v!==50)}).join("");
-  return `${where}<div class="sl2-grp">${slRow2("sl2-pace","data-slp","Pace",slPaceWord(pv),pv,0,100,5,pv!==50)}${slRow2("sl2-bud","data-slb","Budget",BUD_WORDS[bv],bv,0,4,1,bv>0)}</div>${xs.length?`<p class="sl-also">Also from your answers: ${xs.map(c=>`${c[1]} <button class="linkbtn" data-slx="${c[0]}" aria-label="Remove ${c[1]}">✕</button>`).join(" · ")}</p>`:""}<div class="sl2-hrow"><h2 class="sl-h">What matters to you</h2><button class="sl-reset" data-slreset="1"${slAnySet()?"":" disabled"}>↺ Reset</button></div><div class="sl-list sl2-list">${rows}</div><p class="sl-note">Public school grades use the Florida Department of Education grade for each county school district (${EDU_YEAR}). Check the official grade for any address.</p>${saveBox("sliders")}${slQuiz()?'<p class="sl-redo"><button class="linkbtn" data-act="retake">Start the questions over</button></p>':""}`;
+  return `${where}<div class="sl2-grp">${slRow2("sl2-pace","data-slp","Pace",slPaceWord(pv),pv,0,100,5,pv!==50)}${slRow2("sl2-bud","data-slb","Budget",BUD_WORDS[bv],bv,0,4,1,bv>0)}</div>${xs.length?`<p class="sl-also">Also from your answers: ${xs.map(c=>`${c[1]} <button class="linkbtn" data-slx="${c[0]}" aria-label="Remove ${c[1]}">✕</button>`).join(" · ")}</p>`:""}<div class="sl2-hrow"><h2 class="sl-h">What matters to you</h2><button class="sl-reset" data-slreset="1"${slAnySet()?"":" disabled"}>↺ Reset</button></div><div class="sl-list sl2-list">${rows.replace("<b>Public school grades</b>",'<b>Public school grades <button type="button" class="sl2-i" data-slinfo="1" aria-expanded="false" aria-label="About school grades">i</button></b>')}<p class="sl2-note" id="sl2-edu" hidden>We use the Florida Department of Education grade for each county school district (${EDU_YEAR}). It doesn't rate single schools, so check the official grade for any address.</p></div>${slQuiz()?'<p class="sl-redo"><button class="linkbtn" data-act="retake">Start the questions over</button></p>':""}`;
 }
 function sl2Paint(t,word,set){
   t.style.setProperty("--p",(t.value-t.min)/(t.max-t.min)*100+"%");sl2Two(t);t.setAttribute("aria-valuetext",word);
@@ -937,7 +937,8 @@ function sl2Paint(t,word,set){
     slSyncW();saveState();slSave();slRefresh();
   });
 })();
-/* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
-"sliders"===curRoute()&&slDesk()&&route();
 /* two sided sliders (Pace) fill from the middle out to the thumb */
 function sl2Two(t){if(!t.closest(".two"))return;const p=(t.value-t.min)/(t.max-t.min)*100;t.style.setProperty("--lo",Math.min(50,p)+"%");t.style.setProperty("--hi",Math.max(50,p)+"%")}
+document.addEventListener("click",function(e){const b=e.target.closest&&e.target.closest("[data-slinfo]");if(!b)return;e.preventDefault();e.stopPropagation();const n=document.getElementById("sl2-edu");if(!n)return;n.hidden=!n.hidden;b.setAttribute("aria-expanded",String(!n.hidden));n.hidden||n.scrollIntoView({block:"nearest",behavior:"smooth"})},!0);
+/* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
+"sliders"===curRoute()&&slDesk()&&route();

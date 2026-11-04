@@ -3066,3 +3066,49 @@ body.dk-moving .dk-map aside.vpanel{transition:margin-top .36s ease}
  .slc-t b{font:300 16px 'DM Sans',sans-serif;letter-spacing:-.012em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
  .slc-t small{font-size:12px;line-height:1.3;color:var(--muted,#5b6b6e);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 }
+/* Nov 4: easier to read panel (bigger type), email save in the pinned footer, school note behind an i button */
+@media (min-width:1000px){
+ .sl2-where span{font-size:12px;width:58px}
+ .sl2-where select{font-size:16px;min-height:42px}
+ .sl2{grid-template-columns:190px minmax(0,1fr);padding:4px 0}
+ .sl2 label b{font-size:16px;font-weight:600}
+ .sl2 output{font-size:14px;line-height:1.3}
+ .sl2 input[type=range]{height:30px}
+ .sl2 input[type=range]::-webkit-slider-runnable-track{height:6px}
+ .sl2 input[type=range]::-moz-range-track{height:6px}
+ .sl2 input[type=range]::-webkit-slider-thumb{width:22px;height:22px;margin-top:-8px}
+ .sl2 input[type=range]::-moz-range-thumb{width:18px;height:18px}
+ .sl-panel .sl2-hrow .sl-h{font-size:20px!important}
+ .sl-panel .sl-reset{font-size:14px;padding:4px 12px}
+ .sl2-i{display:inline-grid;place-items:center;width:18px;height:18px;margin-left:4px;border-radius:50%;border:1.5px solid currentColor;background:none;color:var(--muted,#5b6b6e);font:700 11px 'DM Sans',sans-serif;cursor:pointer;vertical-align:1px;padding:0}
+ .sl2-i[aria-expanded="true"]{background:var(--ink);border-color:var(--ink);color:#fff}
+ .sl2-note{margin:2px 0 6px;padding:10px 12px;border-radius:6px;background:var(--paper,#f4efe6);font-size:13.5px;line-height:1.45;color:var(--ink)}
+ .sl-save{text-align:left;padding:14px 24px 16px!important}
+ .sl-save .savebox{margin:0!important;padding:0!important;border:0!important;background:none!important;box-shadow:none!important}
+ .sl-save .sv-hd{margin:0 0 8px}
+ .sl-save .sv-hd b{font:600 17px 'DM Sans',sans-serif;letter-spacing:-.01em}
+ .sl-save .sv-hd span,.sl-save .sv-note{display:none!important}
+ .sl-save .sv-row{display:flex;gap:8px}
+ .sl-save .sv-row input{flex:1;min-width:0;min-height:48px;font-size:16px}
+ .sl-save .sv-row .btn{min-height:48px;font-size:16px;padding-inline:18px;white-space:nowrap}
+ .sl-save .savebox.sent b{font-size:16px}
+ .sl-save .savebox.sent span{display:block!important;font-size:14px}
+ .slc-t b{font-size:17px}
+ .slc-t small{font-size:13px}
+ .slc-b small{font-size:14px}
+ .slc-go{font-size:14.5px}
+}
+@media (min-width:1000px) and (max-height:805px){
+ .sl2{padding:1px 0}
+ .sl2 input[type=range]{height:24px}
+ .sl2-grp{padding-bottom:4px!important}
+ .sl2-where select{min-height:38px}
+ .sl-save{padding:10px 24px 12px!important}
+ .sl-save .sv-row input,.sl-save .sv-row .btn{min-height:44px}
+}
+@media (min-width:1000px){
+ .sl-save .sv-row{display:flex!important;grid-template-columns:none!important;width:100%}
+ .sl-save .sv-row input{flex:1 1 auto!important;width:auto!important}
+ .sl-save .sv-row .btn{flex:0 0 auto!important;width:auto!important;display:inline-flex!important;align-items:center;justify-content:center}
+ .sl-save .sv-hd b{font-weight:600!important;color:var(--ink)}
+}
