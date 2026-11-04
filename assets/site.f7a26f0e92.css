@@ -2365,3 +2365,15 @@ main#app:has(.svband){background:linear-gradient(180deg,#FBF6EE 0,#F4ECDF 260px,
 .hero-btn{background:#B84C11}
 .hero-btn:hover{background:#A8440E}
 .ed-flag a,.ww-link,.dk-cue a,.hp-cue a{display:inline-block;padding-block:6px;margin-block:-6px}
+
+/* ===== Nov 3 2026 patch: mission line in the hero, local intro ask on results, How it works step 3 link ===== */
+.hero-note{max-width:30em;line-height:1.45;color:#2C3E41}
+.dk-hero .hero-note{font-size:15px}
+.hiw-a{align-self:flex-start;margin-top:2px;font-size:12px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:#13282C;text-decoration:none;border-bottom:1px solid currentColor;padding-block:6px 2px}
+.introask{display:flex;flex-direction:column;gap:8px;margin:16px 0;padding:18px 20px;background:#F4ECDF;border-radius:10px;color:#13282C;text-align:left}
+.introask b{font-family:var(--display);font-weight:400;font-size:21px;line-height:1.2}
+.introask span{font-size:14.5px;line-height:1.5;color:#2C3E41}
+.introask .btn{align-self:flex-start;margin-top:4px}
+@media (max-width:900px){.hiw-a{grid-column:2}.introask .btn{align-self:stretch}}
+.introask .btn,.fs .introask .btn{display:inline-flex!important;align-items:center;justify-content:center;line-height:1.25!important;min-height:48px;padding:12px 22px!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;text-align:center;flex:none!important}
+@media (max-width:600px){.introask .btn,.fs .introask .btn{font-size:15px!important}}
