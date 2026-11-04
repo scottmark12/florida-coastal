@@ -2867,3 +2867,9 @@ a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-family:'DM Sans',
 @media (max-width:700px){.ar-hero .hb3-panel h1{font-size:28px!important}.ar-towns{padding-top:36px}.ar-towns .hb-flag a{display:none}.ar-help{font-size:16px}}
 @media (max-width:900px){.ar-facts dl>div:last-child:nth-child(odd){grid-column:1/-1;border-left:0!important;padding-left:0!important}}
 .hb3-glance+.hb3-reg,.hb3-bar+.hb3-reg{padding-top:56px}
+/* ===== Nov 4 2026: hub polish. Lighter chapter heads, search results as photo tiles ===== */
+.hb-nh{display:flex;align-items:flex-end;gap:14px;margin-bottom:10px}
+.hb-nh .hb-num{margin:0;line-height:.82}
+.hb-nh .hb-k{margin:0 0 2px;font-size:11px;line-height:1.35;color:#66777A}
+.ts-grid .hb-tile .tg{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.tlist .ts-grid{margin-top:4px}
