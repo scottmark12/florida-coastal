@@ -2914,3 +2914,7 @@ a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-family:'DM Sans',
 body.dk-moving .dk-map aside.vpanel{transition:margin-top .36s ease}
 @media (min-width:1360px){.dk-bw{max-width:1520px;padding-inline:56px}}
 @media (max-width:1180px){.dk-bw .vp-switch{width:170px}.dk-bw{gap:14px}}
+
+/* ===== Nov 4 2026 patch: home map side panel type. Style header DM Sans regular, town names DM Sans light ===== */
+.dk-map aside.vpanel h2,.dk-map aside.vpanel h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:400!important;letter-spacing:-.015em!important}
+.dk-map aside.vpanel li b,.dk-map aside.vpanel button b{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:300!important;letter-spacing:-.012em!important}
