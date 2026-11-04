@@ -2662,3 +2662,10 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
   .hiw-body p{font-size:17px}
   .hiw-sign{flex-direction:column;align-items:flex-start}
 }
+
+/* ===== Nov 4 2026 patch: no sand band on the family note, no italics on the home page ===== */
+.hiw{background:none!important;box-shadow:none!important;clip-path:none!important;margin-top:0!important;padding-top:36px!important;padding-bottom:24px!important}
+.hiw-letter{border-top:3px solid #13282C;padding-top:14px}
+@media (max-width:700px){.hiw{padding-top:44px!important;padding-bottom:8px!important}}
+.hl,.hp-hero h1 .hl,.dk-hero h1 .hl,.fy-h .hl,.hp-sw .tx>h2 .hl,.ww-tx h3 .hl{font-style:normal!important}
+.ww-tx p.ww-mission,.sw-by,.ed-by,.byline{font-style:normal!important}
