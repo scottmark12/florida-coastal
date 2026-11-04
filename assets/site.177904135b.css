@@ -2740,3 +2740,39 @@ a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-family:'DM Sans',
   .hb-idxcols{columns:2;column-gap:16px}
 }
 @media (max-width:700px){.hb-glance .hb-flag a{display:none}.hb-hero p{font-size:17px!important}}
+
+/* ===== Nov 4 2026: Beach Towns hub v2. Split hero with no overlay, chapter numbers, notes from the Scotts, lead tiles ===== */
+.hb-hero2{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,5fr);gap:48px;align-items:center;padding-top:36px}
+.hb-ht h1{margin:10px 0 12px;font:500 clamp(38px,4.6vw,60px)/1.03 var(--ui)!important;letter-spacing:-.03em!important;color:#13282C}
+.hb-ht>p{margin:0;max-width:30em;font-family:var(--read);font-size:19px;line-height:1.55;color:var(--text)}
+.hb-hero2 .hb-find{margin-top:22px}
+.hb-hero2 .hb-find input{width:360px;border:1px solid #B9C3C4;box-shadow:none;background:#fff}
+.hb-hero2 .hb-find span{color:#4A5B5E}.hb-hero2 .hb-find span a{color:#13282C}
+.hb-hero2 .hb-chips{grid-template-columns:repeat(2,minmax(0,1fr));max-width:520px;margin-top:24px;gap:0;border-top:1px solid #13282C}
+.hb-hero2 .hb-chip{flex-direction:row;align-items:baseline;gap:10px;padding:13px 4px;border-radius:0;background:none;border-bottom:1px solid var(--line)}
+.hb-hero2 .hb-chip:nth-child(odd){padding-right:16px}.hb-hero2 .hb-chip:nth-child(even){padding-left:16px;border-left:1px solid var(--line)}
+.hb-hero2 .hb-chip:hover{transform:none;background:none}.hb-hero2 .hb-chip:hover b{color:#B84C11}
+.hb-chip i{font:300 15px var(--ui);font-style:normal;color:#B84C11;font-variant-numeric:tabular-nums}
+.hb-hero2 .hb-chip b{font:500 17px var(--ui);flex:1}.hb-hero2 .hb-chip span{font:400 13px var(--ui);color:#66777A}
+.hb-hp{margin:0}.hb-hp img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:4px;display:block}
+.hb-hp figcaption{margin-top:8px;font:400 13px var(--ui);color:#66777A}
+.hb-rhead{display:grid!important;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:40px;max-width:none!important;align-items:end}
+.hb-num{display:block;font:300 64px/1 var(--ui);letter-spacing:-.04em;color:#C65213;margin-bottom:10px}
+.hb-note{border-left:3px solid #C65213;padding:2px 0 2px 18px;margin-bottom:4px}
+.hb-note span{display:block;font:700 11.5px var(--ui);letter-spacing:.14em;text-transform:uppercase;color:#13282C;margin-bottom:6px}
+.hb-note p{margin:0;font-family:var(--read);font-size:17px;line-height:1.55;color:var(--text)}
+.hb-grid{grid-template-columns:repeat(3,minmax(0,1fr))!important}
+.hb-tile.lead{grid-column:span 2;grid-row:span 2}
+.hb-tile.lead .ph{aspect-ratio:auto;flex:1;min-height:340px}
+.hb-tile.lead b{font-size:26px}
+.hb-tile .cap{font-family:var(--read);font-size:15.5px;line-height:1.5;color:#4A5B5E;max-width:44em}
+.hb-n2 .hb-tile.lead{grid-row:auto}.hb-n2 .hb-tile.lead .ph{min-height:0;aspect-ratio:16/9}.hb-n2 .hb-tile:not(.lead) .ph{aspect-ratio:auto;flex:1;min-height:0}
+@media (max-width:900px){.hb-hero2{grid-template-columns:1fr;gap:24px}.hb-hp img{aspect-ratio:16/10}.hb-rhead{grid-template-columns:1fr;gap:16px}}
+@media (max-width:700px){
+  .hb-hero2{padding-top:20px}.hb-ht>p{font-size:17px}.hb-hero2 .hb-find input{width:100%}
+  .hb-hero2 .hb-chip b{font-size:15.5px}
+  .hb-num{font-size:44px}.hb-note p{font-size:16px}
+  .hb-grid{grid-template-columns:1fr 1fr!important}
+  .hb-tile.lead{grid-column:1/-1;grid-row:auto}.hb-tile.lead .ph{min-height:0;aspect-ratio:16/10}
+  .hb-tile.lead b{font-size:20px}.hb-tile .cap{font-size:14.5px}
+}
