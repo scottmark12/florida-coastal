@@ -636,7 +636,7 @@ function compareView(){
    ]);
   return '<section class="wrap cmp-page"><div class="cmp-top"><h1>Compare towns side by side</h1><p class="lede">Prices, hospitals, the airport and every score for up to three towns.</p></div>'
    +cmpSugg(ts,open)+cmpVerdict(ts)
-   +'<div class="cmp" style="--n:'+cols+'"><div class="cmp-head">'+head.join("")+'</div><div class="cmp-stick" aria-hidden="true"><div class="cmp-stick-in">'+ts.map(function(e){return "<span>"+short(e)+"</span>"}).join("")+(open?"<span></span>":"")+"</div></div>"+rows.join("")+"</div>"
+   +'<div class="cmp" style="--n:'+cols+';--nm:'+(open&&n>=2?n:cols)+'"><div class="cmp-head">'+head.join("")+'</div>'+(open&&n>=2?'<div class="cmp-addm"><b>Add a third town</b><div class="cmp-search"><input type="search" data-cmpq="1" placeholder="Search any beach town" aria-label="Search for a town to add" autocomplete="off"><div class="cmp-res" role="listbox"></div></div><div class="cmp-mrow">'+cmpSimilar(ts,4).map(function(e){return '<button class="cmp-mpick" data-cmpadd2="'+e.id+'"><span class="ph">'+art(e,!1)+'</span><b>'+short(e)+'</b><i>+ Add</i></button>'}).join("")+'</div></div>':"")+'<div class="cmp-stick" aria-hidden="true"><div class="cmp-stick-in">'+ts.map(function(e){return "<span>"+short(e)+"</span>"}).join("")+(open?"<span></span>":"")+"</div></div>"+rows.join("")+"</div>"
    +'<p class="cmp-foot">Prices are fall 2026 medians. Hospitals checked October 2026. Scores rate what each town offers, never who lives there. <a href="#scoring">How we score</a></p>'
    +'<div class="cmp-acts">'+(S.done?'<a class="btn btn-line" href="#quiz">Back to my top 5</a>':'<a class="btn btn-line" href="#quiz">See your top 5 towns</a>')+"</div></section>";
 }
