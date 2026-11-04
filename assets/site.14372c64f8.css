@@ -2395,3 +2395,12 @@ footer p{color:#4A5B5E}
 footer a{color:#2C3E41!important}
 footer a:hover{color:#13282C!important;text-decoration:underline;text-underline-offset:3px}
 footer a:focus-visible{outline:2px solid #1B6E78;outline-offset:2px}
+
+/* ===== Nov 3 2026 patch: style guides wired into the Vibe Map, results and town pages ===== */
+.vm-guide{display:block;margin:14px 24px 2px;align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#13282C;text-decoration:none;border-bottom:1px solid currentColor;padding:4px 0 2px;width:max-content}
+.vm-guide:hover{color:#1B6E78}
+.vm-guide2{color:inherit;font-weight:700;text-decoration:underline;text-underline-offset:3px}
+.fs-pattern .yv{font-family:var(--display);font-weight:400;font-size:1.25em}
+.fs-pattern .yv-a{display:inline-block;margin-top:4px;font-weight:700;color:inherit;text-decoration:underline;text-underline-offset:3px}
+a.vchip{text-decoration:none;color:inherit;transition:background .15s,border-color .15s}
+a.vchip:hover{text-decoration:underline;text-underline-offset:3px}
