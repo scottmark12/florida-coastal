@@ -2438,3 +2438,10 @@ a.vchip:hover{text-decoration:underline;text-underline-offset:3px}
 section.wrap.twocol{padding-top:56px;padding-bottom:72px}
 @media (min-width:901px){.twocol{gap:72px!important}}
 @media (max-width:900px){section.wrap.twocol{padding-top:36px;padding-bottom:56px}.prose h2{margin-top:2.2em!important}}
+
+/* ===== Nov 3 2026 patch (preview): home page reading text in the same serif; UI stays sans ===== */
+.ed-lead p,.hiw-steps p,.ww-tx p,.news p:not(.note),.introask span,.gx-lead p,.gx-sm p{font-family:var(--read)!important;font-weight:330;font-variation-settings:"opsz" 36;color:var(--text,#17191A)!important;letter-spacing:0}
+.ed-lead p{font-size:19px;line-height:1.6}
+.hiw-steps p,.ww-tx p{font-size:17.5px;line-height:1.62}
+.news p:not(.note){font-size:18px;line-height:1.6}
+.ed-by{font-size:15px!important}
