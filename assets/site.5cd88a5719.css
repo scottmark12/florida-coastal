@@ -2624,3 +2624,19 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
   .hiw-go{grid-column:2;margin-top:4px}
 }
 .hiw .hiw-panel .ed-flag a{display:none}
+
+/* ===== Nov 4 2026 patch: How it works, sand band edge to edge instead of the teal card ===== */
+.hiw{background:#F4ECDF;box-shadow:0 0 0 100vmax #F4ECDF;clip-path:inset(0 -100vmax);margin-top:24px;padding-top:56px!important;padding-bottom:64px}
+.hiw-panel{background:none!important;background-image:none!important;color:#13282C;border-radius:0;padding:0!important}
+.hiw .hiw-panel .ed-flag{border-top-color:#13282C}
+.hiw .hiw-panel .ed-flag h2{color:#13282C}
+.hiw-panel .hiw-steps li+li::before{border-left-color:rgba(19,40,44,.18)}
+.hiw-panel .hiw-n{color:#C65213!important;font-size:64px;letter-spacing:-.02em}
+.hiw-panel .hiw-steps h3{color:#13282C}
+.hiw-panel .hiw-steps p{color:var(--text,#17191A)!important}
+.hiw-panel .hiw-a{color:#13282C;border-bottom-color:#C65213}
+@media (max-width:700px){
+  .hiw{margin-top:48px;padding-top:36px!important;padding-bottom:36px}
+  .hiw-panel .hiw-n{font-size:34px}
+  .hiw-panel .hiw-steps li{border-bottom-color:rgba(19,40,44,.16)}
+}
