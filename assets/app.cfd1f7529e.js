@@ -866,9 +866,9 @@ const slDesk=()=>window.innerWidth>=1000;
   slRes=function(){
     if(!slDesk())return resOld();
     const q=slQuiz(),F=q?(e=>fit(e)||0):fitSl,
-      R=q?rankedTowns().filter(inPool):T.filter(inPool).sort((x,y)=>Math.round(100*F(y))-Math.round(100*F(x))||slTie(y)-slTie(x)||F(y)-F(x)),top=R.slice(0,5),ids=top.map(e=>e.id),
+      R=q?rankedTowns().filter(inPool):T.filter(inPool).sort((x,y)=>Math.round(100*F(y))-Math.round(100*F(x))||slTie(y)-slTie(x)||F(y)-F(x)),top=slNone()?[]:R.slice(0,5),ids=top.map(e=>e.id),
       hi=R.length?F(R[0]):1,lo=R.length?F(R[Math.min(R.length-1,45)]):0,strong=new Set(R.slice(5,15).map(e=>e.id)),
-      f0=e=>{const k=ids.indexOf(e.id)+1;if(k)return{num:k,tier:"top",label:!0,r:11};if(!inPool(e))return{dim:!0,tier:"out",r:3.5};const v=F(e),dim=v<lo;return{tier:dim?"out":strong.has(e.id)?"strong":"good",dim:dim,r:dim?3.5:4.5+4*Math.pow(Math.max(0,(v-lo)/(hi-lo||1)),1.4)}},
+      f0=e=>{if(slNone())return{hot:!1,dim:!1,label:!1,col:"var(--dot-calm)"};const k=ids.indexOf(e.id)+1;if(k)return{num:k,tier:"top",label:!0,r:11};if(!inPool(e))return{dim:!0,tier:"out",r:3.5};const v=F(e),dim=v<lo;return{tier:dim?"out":strong.has(e.id)?"strong":"good",dim:dim,r:dim?3.5:4.5+4*Math.pow(Math.max(0,(v-lo)/(hi-lo||1)),1.4)}},
       f=e=>{const o=f0(e);return S.slPick===e.id?Object.assign(o,{hot:!0,label:!0,dim:!1}):o};
     const pct=e=>Math.round(100*F(e)),t1=top[0],pk=S.slPick&&byId[S.slPick]||null,ft=pk||t1,fk=ft?ids.indexOf(ft.id)+1:0,fi=ft?R.indexOf(ft):-1;
     /* same framing as the Vibe Map on desktop: Florida fills the space left of the panel, the open Gulf sits bottom left */
@@ -877,8 +877,8 @@ const slDesk=()=>window.innerWidth>=1000;
     const lab={n:0,sigOnly:!1,max:14,pad:0,prio:e=>{const k=ids.indexOf(e.id);return k<0?9:k}};
     const svg=mapSVG(f,{zoom:fr.zoom,lb:fr.lb,lab:lab,ms:0,aria:"Map of your best matching towns"}).replace(/viewBox="[^"]*"/,`viewBox="${fr.vb.map(n=>n.toFixed(1)).join(" ")}" preserveAspectRatio="xMidYMid slice"`).replace(/<text class="sealabel"[^>]*>Gulf of Mexico<\/text>/,"");
     /* the featured town is #1, or the town tapped on the map (it slides up in its place); the list keeps the rest of the top 5 */
-    const kword=!ft?"":fk?`<span class="n">${fk}</span>${slFitWord(F(ft),F(t1),fk-1)}${pct(ft)>=70?` · ${pct(ft)}%`:""}`:inPool(ft)?`${fi>=0?"No. "+(fi+1)+" for you":"Not in your top 5"}${pct(ft)>=50?` · ${pct(ft)}% fit`:""}`:"Outside the area you picked";
-    const card=t1?`<aside class="slc${pk?" picked":""}" aria-label="${pk?ft.name:"Your top 5 right now"}" aria-live="polite"><div class="slc-h">${pk?`<button class="slc-back" data-slpick="">← Your top 5</button>`:"Your top 5 right now"}</div><a class="slc-1${pk?" slc-in":""}" href="#town-${ft.id}"><span class="slc-ph">${art(ft,!1)}</span><span class="slc-b"><span class="slc-k">${kword}</span><b>${ft.name}</b><small>${pk?vmBlurb(ft.blurb,110):slWhy(ft)}</small><span class="slc-go">Explore ${short(ft).length>14?"this town":short(ft)} →</span></span></a><ol class="slc-r">${top.map((e,i)=>e.id===ft.id?"":`<li><button type="button" data-slpick="${e.id}"><span class="n">${i+1}</span><span class="slc-t"><b>${e.name}</b><small>${slWhy(e)}</small></span></button></li>`).join("")}</ol></aside>`:`<aside class="slc"><div class="slc-h">No towns in this area yet</div><p class="slc-e">Try Anywhere in Florida.</p></aside>`;
+    const kword=!ft||slNone()?"":fk?`<span class="n">${fk}</span>${slFitWord(F(ft),F(t1),fk-1)}${pct(ft)>=70?` · ${pct(ft)}%`:""}`:inPool(ft)?`${fi>=0?"No. "+(fi+1)+" for you":"Not in your top 5"}${pct(ft)>=50?` · ${pct(ft)}% fit`:""}`:"Outside the area you picked";
+    const card=slNone()&&!pk?`<aside class="slc slc-empty" aria-live="polite"><div class="slc-h">Your top 5</div><p class="slc-e">Move a slider or pick a budget and your best towns show up here and on the map.</p></aside>`:t1||pk?`<aside class="slc${pk?" picked":""}" aria-label="${pk?ft.name:"Your top 5 right now"}" aria-live="polite"><div class="slc-h">${pk?`<button class="slc-back" data-slpick="">← Your top 5</button>`:"Your top 5 right now"}</div><a class="slc-1${pk?" slc-in":""}" href="#town-${ft.id}"><span class="slc-ph">${art(ft,!1)}</span><span class="slc-b"><span class="slc-k">${kword}</span><b>${ft.name}</b><small>${pk?vmBlurb(ft.blurb,110):slWhy(ft)}</small><span class="slc-go">Explore ${short(ft).length>14?"this town":short(ft)} →</span></span></a><ol class="slc-r">${top.map((e,i)=>e.id===ft.id?"":`<li><button type="button" data-slpick="${e.id}"><span class="n">${i+1}</span><span class="slc-t"><b>${e.name}</b><small>${slWhy(e)}</small></span></button></li>`).join("")}</ol></aside>`:`<aside class="slc"><div class="slc-h">No towns in this area yet</div><p class="slc-e">Try Anywhere in Florida.</p></aside>`;
     return `<div class="sl-map mapbox">${svg}</div>${card}`;
   };
   slidersView=function(){
@@ -956,5 +956,7 @@ document.addEventListener("click",function(e){
 document.addEventListener("input",function(e){e.target.dataset&&(e.target.dataset.sl||null!=e.target.dataset.slp||null!=e.target.dataset.slb)&&(S.slPick=null)},!0);
 document.addEventListener("change",function(e){"sl-coast"===e.target.id&&(S.slPick=null)},!0);
 document.addEventListener("keydown",function(e){"Escape"===e.key&&S.slPick&&"sliders"===curRoute()&&(S.slPick=null,slRefresh())});
+/* nothing set yet (or just reset): no recommendations on the map or in the card */
+function slNone(){return !slQuiz()&&!slAnySet()&&!S.pc&&!S.pr}
 /* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
 "sliders"===curRoute()&&slDesk()&&route();

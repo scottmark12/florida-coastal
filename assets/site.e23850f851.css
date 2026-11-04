@@ -3125,3 +3125,5 @@ body.dk-moving .dk-map aside.vpanel{transition:margin-top .36s ease}
  .slc.picked .slc-k{color:#C65213}
 }
 @media (min-width:1000px) and (prefers-reduced-motion:reduce){.slc-in{animation:none}}
+/* Nov 4: nothing set yet, so no towns to email */
+@media (min-width:1000px){.sl-stage:has(.slc-empty) .sl-save{display:none}}
