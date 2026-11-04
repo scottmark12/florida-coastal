@@ -2611,3 +2611,18 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
 @media (max-width:700px){.hiw-go{grid-column:2;justify-self:start;margin-top:4px}}
 @media (min-width:701px){.hp-sec.hiw{padding-top:40px!important}}
 .hiw-n{color:#C65213!important}
+
+/* ===== Nov 4 2026 patch: type split. Libre Caslon for headlines and reading, DM Sans for tools. No italics, no faked bold. ===== */
+:root{--display:'Libre Caslon Text',Georgia,'Times New Roman',serif!important;--read:'Libre Caslon Text',Georgia,'Times New Roman',serif!important}
+/* Display cut only for big headlines, it is drawn for large sizes */
+h1,.ed-lead h3,.hiw-n,.ww-tx h3,.bd>h2,.news h2,.nl h2{font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important}
+html{font-synthesis:none}
+h1,h2,h3,h4,.hiw-n,.ww-tl li span{font-variation-settings:normal!important}
+.hl,.ww-tx p.ww-mission,.sw-by,.ed-by,.byline,.hp-hero h1 .hl,.dk-hero h1 .hl{font-style:normal!important}
+/* reading text in Caslon Text runs wide, so a touch smaller and no light weights */
+.prose{font-size:18px!important;font-weight:400!important;font-variation-settings:normal!important;line-height:1.7!important}
+.hiw-steps p,.ww-tx p,.news p:not(.note),.introask span,.gx-lead p,.gx-sm p,.cmp-v p,.cmp-read .cmp-c,.lede{font-weight:400!important;font-variation-settings:normal!important}
+.hiw-steps p,.ww-tx p{font-size:16.5px!important}
+/* tool pages: DM Sans medium headlines */
+.cmp-top h1,.sl-head h1,.vm-title,.quiz h1,.quiz h2,.qz h1,.qz h2,.res-h h1,.results h1,.fy-h,.find h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.02em!important}
+.dk-map .vp-pc span b{font-size:clamp(15px,1.25vw,19px)!important}
