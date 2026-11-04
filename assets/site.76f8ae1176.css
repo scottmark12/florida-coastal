@@ -2377,3 +2377,21 @@ main#app:has(.svband){background:linear-gradient(180deg,#FBF6EE 0,#F4ECDF 260px,
 @media (max-width:900px){.hiw-a{grid-column:2}.introask .btn{align-self:stretch}}
 .introask .btn,.fs .introask .btn{display:inline-flex!important;align-items:center;justify-content:center;line-height:1.25!important;min-height:48px;padding:12px 22px!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;text-align:center;flex:none!important}
 @media (max-width:600px){.introask .btn,.fs .introask .btn{font-size:15px!important}}
+.ww-tx p.ww-mission{font-family:var(--display);font-style:italic;font-size:20px;line-height:1.4;color:#13282C;margin:0}@media (max-width:900px){.ww-tx p.ww-mission{font-size:18px}}
+
+/* ===== Nov 3 2026 patch: light editorial newsletter band and footer (replaces the dark teal) ===== */
+.news{background:#F4ECDF!important;color:#13282C!important}
+.news h2{color:#13282C!important}
+.news p{opacity:1!important;color:#2C3E41}
+.news .note{color:#4A5B5E!important;opacity:1!important}
+.news input{background:#FFFDF9!important;border:1px solid rgba(21,42,46,.28)!important;color:#13282C!important}
+.news input:focus{outline:2px solid #1B6E78;outline-offset:1px}
+.news .thanks,.news .thanks b{color:#13282C!important}
+.news .btn-accent{background:#B84C11!important}
+.news .btn-accent:hover{background:#A8440E!important}
+footer{background:#FDFCF8!important;color:#4A5B5E!important;border-top:3px solid #13282C}
+footer b{color:#13282C!important}
+footer p{color:#4A5B5E}
+footer a{color:#2C3E41!important}
+footer a:hover{color:#13282C!important;text-decoration:underline;text-underline-offset:3px}
+footer a:focus-visible{outline:2px solid #1B6E78;outline-offset:2px}
