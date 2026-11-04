@@ -980,5 +980,27 @@ document.addEventListener("click",function(e){
   S.slPick=null;try{track("style_tap","slider preset "+x[1])}catch(z){}
   slSyncW();saveState();slSave();route();
 },!0);
+
+/* ===== Nov 4 2026 patch: phone quiz. A live map at the top of the card lights up your leading towns as you answer
+   (no numbers or names, the top 5 is saved for the reveal), and the answers fit on one screen. ===== */
+const svPh=()=>window.innerWidth<760;
+(function(){
+  const old=surveyHTML;
+  surveyHTML=function(){
+    const h=old.apply(this,arguments);if(!svPh())return h;
+    const step=Math.min(S.sv.step,SQ.length-1),answered=S.sv.ans.slice(0,step).some(a=>null!=a),n=Math.max(8,40-5*step),
+      lead=answered?svLead(n).map(e=>e.id):[];
+    const f=e=>{if(!lead.length){const g=VSIG_T[e.id];return g?{hot:!1,dim:!1,label:!1,col:VCOL[g],r:6,sig:1}:{dim:!1,label:!1,col:"var(--dot-calm)"}}
+      const k=lead.indexOf(e.id);return k>=0?{hot:!1,dim:!1,label:!1,col:"#E0642A",r:k<5?9:7,lit:1}:{dim:!0,tier:"out",r:3}};
+    /* crop the map to the state itself so it fills its square */
+    const P=(lon,lat)=>[PAD+(lon-LON0)*COS*K,PAD+(LAT0-lat)*K],a0=P(-87.75,31.05),a1=P(-79.85,24.45),vb=[a0[0],a0[1],a1[0]-a0[0],a1[1]-a0[1]].map(n=>n.toFixed(1)).join(" ");
+    const svg=mapSVG(f,{aria:"Map of the towns leading on your answers so far"}).replace(/viewBox="[^"]*"/,`viewBox="${vb}"`);
+    const cap=lead.length?`<b>${lead.length}</b><span>of ${T.length} towns fit you best so far</span>`:`<b>${T.length}</b><span>beach towns. Each answer narrows them down.</span>`;
+    const map=`<div class="svpm${lead.length?" on":""}"><div class="svpm-map" aria-hidden="true">${svg}</div><div class="svpm-r"><p class="svpm-cap" aria-live="polite">${cap}</p></div></div>`;
+    const top=(h.match(/<div class="svtop">[\s\S]*?<\/div><\/div>/)||[""])[0];
+    return h.replace(top,"").replace('<div class="quiz svcard" id="svcard">',`<div class="quiz svcard svp" id="svcard" data-step="${step}">${map.replace('<div class="svpm-r">','<div class="svpm-r">'+top)}`);
+  };
+})();
+"quiz"===curRoute()&&svPh()&&!S.done&&route();
 /* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
 "sliders"===curRoute()&&slDesk()&&route();

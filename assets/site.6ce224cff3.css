@@ -3179,3 +3179,52 @@ body.dk-moving .dk-map aside.vpanel{transition:margin-top .36s ease}
  .sl-stage:has(.slc-empty) .sl-quizlf{display:block}
  .sl-quizlf p{display:block!important;margin:8px 0 0;font-size:13.5px;color:var(--muted,#5b6b6e);text-align:center}
 }
+/* ===== Nov 4 2026 patch: phone quiz, live map on top and every answer on one screen ===== */
+@media (max-width:759px){
+ .svband .svintro .fy-lede,.svband .svintro .fy-alt{display:none}
+ .svband .svintro .fy-k{margin:0 0 4px;font-size:11px}
+ .svband .svintro .fy-h{font-size:24px!important;line-height:1.12;margin:0 0 10px}
+ .svband:has(.svp:not([data-step="0"])) .svintro{display:none}
+ .svcard.svp{padding:12px 14px 12px!important;border-radius:14px}
+ .svpm{position:relative;margin:-2px -2px 10px;border-radius:10px;overflow:hidden;background:#C9E1E4;height:150px}
+ .svpm-map{position:absolute;inset:0}
+ .svpm-map svg{width:100%;height:100%;display:block}
+ .svpm-map .citytxt,.svpm-map .sealabel,.svpm-map .statelbl{display:none}
+ .svpm.on .svpm-map .dot:not(.dim){animation:svpmPop .45s ease both}
+ @keyframes svpmPop{0%{transform-box:fill-box;transform-origin:center;transform:scale(.3);opacity:.2}70%{transform-box:fill-box;transform-origin:center;transform:scale(1.25)}100%{transform-box:fill-box;transform-origin:center;transform:scale(1);opacity:1}}
+ .svpm-cap{position:absolute;left:8px;bottom:8px;margin:0;padding:6px 10px;border-radius:999px;background:rgba(255,253,249,.95);font:500 13.5px 'DM Sans',sans-serif;color:#13282C;box-shadow:0 2px 8px rgba(19,40,44,.12)}
+ .svpm-cap span{display:none}
+ .svpm-cap b{font-weight:700;color:#0F6E72}
+ .svp .svtop{margin-bottom:6px}
+ .svp .svtop span{font-size:13px}
+ .svp .svq{font-size:25px!important;line-height:1.12;margin:0 0 10px!important}
+ .svp .svhelp{margin:-4px 0 8px;font-size:13.5px}
+ .svp .svgrid{grid-template-columns:1fr 1fr!important;gap:8px}
+ .svp .svtile.hasph{flex-direction:column;align-items:stretch;gap:0;padding:0!important;overflow:hidden;min-height:0}
+ .svp .svtile.hasph .svph{display:block;height:78px;width:100%;margin:0;border-radius:0}
+ .svp .svtile.hasph .svph img{width:100%;height:100%;object-fit:cover;display:block}
+ .svp .svtile.hasph .svt{padding:8px 10px 10px}
+ .svp .svtile .svt b{font-size:15px;line-height:1.22}
+ .svp .svtile.hasph .svt small{display:none}
+ .svp .svtile:not(.hasph){padding:10px 12px!important;min-height:52px}
+ .svp .svtile:not(.hasph) .svi{width:34px;height:34px}
+ .svp .svtile:not(.hasph) .svt small{font-size:13px}
+ .svp .svtile .svck{top:8px;right:8px}
+ .svp .svnav{margin-top:8px;padding-top:6px}
+ .svp .svhint2{display:none}
+ .svp .svnav .linkbtn{font-size:16px}
+}
+@media (max-width:759px){
+ .svpm{display:grid;grid-template-columns:132px minmax(0,1fr);gap:14px;align-items:center;height:auto;background:none;border-radius:0;overflow:visible;margin:0 0 12px}
+ .svpm-map{position:relative;inset:auto;width:132px;height:132px;border-radius:10px;overflow:hidden;background:#C9E1E4}
+ .svpm-map .terr-sea{fill:#C9E1E4}
+ .svpm-cap{position:static;padding:0;background:none;box-shadow:none;display:flex;flex-direction:column;margin:8px 0 0}
+ .svpm-cap b{font:600 34px/1 'DM Sans',sans-serif;letter-spacing:-.02em;color:#C65213}
+ .svpm.on .svpm-cap b{animation:svpmNum .4s ease both}
+ @keyframes svpmNum{from{opacity:.2;transform:translateY(6px)}to{opacity:1;transform:none}}
+ .svpm-cap span{display:block;margin-top:4px;font:500 14px/1.3 'DM Sans',sans-serif;color:#13282C}
+ .svpm-r .svtop{display:block;margin:0}
+ .svpm-r .svtop>span{display:block;font-size:13px;margin-bottom:6px}
+ .svpm-r .progress{display:flex;gap:4px}
+}
+@media (max-width:759px){.svp .svtile.hasph .svph{height:70px}.svband .svintro .fy-h{font-size:22px!important;margin-bottom:8px}}
