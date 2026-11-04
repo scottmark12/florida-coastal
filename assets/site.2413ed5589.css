@@ -2873,3 +2873,29 @@ a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-family:'DM Sans',
 .hb-nh .hb-k{margin:0 0 2px;font-size:11px;line-height:1.35;color:#66777A}
 .ts-grid .hb-tile .tg{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .tlist .ts-grid{margin-top:4px}
+
+/* ===== Nov 4 2026: UX review fixes. Ask a local blocks, inline search results, flood risk labels, no cut off text, larger small text, phone fixes ===== */
+.hb3-grid.hb3-c1{grid-template-columns:1fr}.hb3-grid.hb3-c1 .hb-tile .ph{aspect-ratio:21/8}
+.hb-tile .tg{display:block!important;-webkit-line-clamp:unset!important;overflow:visible!important}
+.hb-tile .mt{font-size:14px!important;color:#4A5B5E!important}
+.hb3-alt{font-size:15px!important}.hb3-alt a{display:inline-block;padding:10px 2px;margin:-10px 0}
+.hb-note span a{font-weight:400;letter-spacing:.02em;text-transform:none;color:#4A5B5E;text-decoration:none}.hb-note span a:hover{text-decoration:underline}
+.ar-facts dd small a{color:#13282C;text-decoration:underline;text-underline-offset:2px}
+.hb-res{padding-top:40px;padding-bottom:32px}.hb-clear{font:600 14px var(--ui);color:#13282C;background:none;border:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px;padding:8px 0}
+.hb-none{font-family:var(--read);font-size:18px;color:var(--text)}
+.hb-ask{padding-top:72px}.ar-ask{padding-top:56px}
+.hb-askin{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:32px;align-items:center;padding:30px 32px;background:#F4ECDF;border-radius:6px}
+.hb-ask h2{margin:0 0 8px;font:500 clamp(24px,2.4vw,30px)/1.15 var(--ui)!important;letter-spacing:-.02em!important;color:#13282C}
+.hb-ask p{margin:0;font-family:var(--read);font-size:17px;line-height:1.55;color:var(--text)}
+.hb-askb{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+.hb-askb .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;text-align:center}
+.hb-askl{font:600 15px var(--ui);color:#13282C;text-align:center;padding:10px 0}
+@media (max-width:700px){
+  .hb3-hero{padding-top:0!important}
+  .hb3-cred{display:none}
+  .hb3-bar .wrap{padding-right:40px}
+  .hb3-bar::after{content:"";position:absolute;right:0;top:0;bottom:0;width:44px;background:linear-gradient(90deg,rgba(255,253,249,0),#FFFDF9 70%);pointer-events:none}
+  .hb-askin{grid-template-columns:1fr;gap:18px;padding:22px 18px}
+  .hb3-grid.hb3-c1 .hb-tile .ph{aspect-ratio:16/9}
+  .hb-tile .mt{font-size:13.5px!important}
+}
