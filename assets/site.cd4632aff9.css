@@ -2866,3 +2866,4 @@ a.card[href^="articles/"] h3,a.card[href^="#article-"] h3{font-family:'DM Sans',
 @media (max-width:900px){.ar-facts dl{grid-template-columns:repeat(2,minmax(0,1fr))}.ar-facts dl>div{border-left:0!important;padding-left:0!important;border-top:1px solid var(--line)}.ar-facts dl>div:nth-child(-n+2){border-top:0}.ar-facts dl>div:nth-child(even){padding-left:14px!important;border-left:1px solid var(--line)!important}}
 @media (max-width:700px){.ar-hero .hb3-panel h1{font-size:28px!important}.ar-towns{padding-top:36px}.ar-towns .hb-flag a{display:none}.ar-help{font-size:16px}}
 @media (max-width:900px){.ar-facts dl>div:last-child:nth-child(odd){grid-column:1/-1;border-left:0!important;padding-left:0!important}}
+.hb3-glance+.hb3-reg,.hb3-bar+.hb3-reg{padding-top:56px}
