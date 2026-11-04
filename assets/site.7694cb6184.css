@@ -2480,3 +2480,41 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
   .cmp-best{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
   .cmp-sc.win .n{font-weight:800}
 }
+
+/* ===== Nov 4 2026 patch: compare layout, slim sticky names, suggestions in the empty column, muted non winners ===== */
+.cmp-head{position:static!important}
+.cmp-stick{position:sticky;top:0;height:0;z-index:20}
+.cmp-stick-in{position:absolute;left:0;right:0;top:0;display:grid;grid-template-columns:repeat(var(--n),minmax(0,1fr));gap:0 20px;padding:10px 0 9px;background:var(--page,#FDFCF8);border-bottom:1px solid #13282C;opacity:0;transform:translateY(-6px);transition:opacity .15s,transform .15s;pointer-events:none}
+.cmp-stick.on .cmp-stick-in{opacity:1;transform:none}
+.cmp-stick-in span{font-family:var(--display);font-size:19px;line-height:1.2;color:#13282C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cmp-sc:not(.win) .bar i.on{background:#A9B3B4}
+.cmp-sc:not(.win) .n{color:#66777A}
+.cmp-sugg2{display:flex;align-items:center;gap:14px;margin:18px 0 22px;padding:0}
+.cmp-sugg2>b{font:600 15px var(--ui);color:#13282C;white-space:nowrap}
+.cmp-sugg2 .cmp-search{flex:1;max-width:420px}
+.cmp-sugg2 .cmp-search input{padding:10px 14px;border-width:1px}
+.cmp-add2{display:flex;flex-direction:column;gap:8px;padding:12px;border:1px dashed #B9C3C4;border-radius:8px;align-self:start}
+.cmp-add2>b{font:600 15px var(--ui);color:#13282C;margin-bottom:2px}
+.cmp-pick{display:flex;align-items:center;gap:10px;width:100%;padding:6px;border:1px solid var(--line);border-radius:6px;background:#fff;cursor:pointer;text-align:left;color:#13282C;min-height:48px}
+.cmp-pick:hover{border-color:#13282C}
+.cmp-pick .ph{flex:none;width:52px;height:38px;border-radius:4px;overflow:hidden;background:var(--line)}
+.cmp-pick .ph img,.cmp-pick .ph .fallback{width:100%;height:100%;object-fit:cover;display:block}
+.cmp-pick .tx{flex:1;min-width:0;display:flex;flex-direction:column}
+.cmp-pick .tx b{font:600 14px/1.2 var(--ui);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cmp-pick .tx small{font:400 12px/1.3 var(--ui);color:#66777A;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cmp-pick i{flex:none;font:700 12.5px var(--ui);font-style:normal;color:#fff;background:#13282C;border-radius:4px;padding:5px 8px}
+.cmp-more{align-self:flex-start;border:0;background:none;padding:6px 0;min-height:24px;font:600 13.5px var(--ui);color:#B84C11;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:700px){
+  .cmp-stick-in{gap:0 12px;padding:8px 0 7px}
+  .cmp-stick-in span{font-size:15px}
+  .cmp-sugg2{flex-direction:column;align-items:stretch;gap:8px;margin:14px 0 18px}
+  .cmp-sugg2 .cmp-search{max-width:none}
+  .cmp-add2{padding:8px;gap:6px}
+  .cmp-add2>b{font-size:13px}
+  .cmp-pick{flex-direction:column;align-items:stretch;gap:4px;padding:5px}
+  .cmp-pick .ph{width:100%;height:44px}
+  .cmp-pick .tx small{display:none}
+  .cmp-pick i{display:none}
+  .cmp-pick .tx b{font-size:12.5px}
+  .cmp-more{font-size:12.5px}
+}
