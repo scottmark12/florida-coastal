@@ -1145,5 +1145,52 @@ function quizImm(){
 addEventListener("hashchange",()=>{"quiz"!==curRoute()&&document.body.classList.remove("qzi-on")});
 /* Nov 4: results panel says the same style as the scoring screen */
 (function(){const old=vibeLine;vibeLine=function(o){try{const y=youStyle(o);if(y){const v=y[0],nm=VIBES[v];return `<b class="yv">${nm}.</b> ${VYOU[v]||""} <a class="yv-a" href="${vguide(v)}">Read the ${VSHORT[v]||nm} guide →</a>`}}catch(e){}return old.apply(this,arguments)}})();
+
+/* ===== Nov 4 2026: results panel rebuilt around one ask, "Your Florida Shortlist" =====
+   Order: your style, your 5 towns (score on No. 1 only), the Shortlist email (the PDF the top5 email already sends),
+   then Ask a local as a quieter second step, then share and small links. */
+function shortlistBox(o){
+  if(S.sent.matches)return `<div class="sl-offer sent" role="status"><b>Your Shortlist is on its way.</b><span>Check your inbox in a few minutes. Questions? Just reply to that email.</span></div>`;
+  const sheet=`<div class="sl-stack" aria-hidden="true"><img class="sl-back" src="img/shortlist-p8.webp" alt="" loading="lazy"><div class="sl-cover"><span class="slc-logo">Florida Coastal</span><span class="slc-ph">${art(o[0],!1)}</span><span class="slc-k">Your Florida Shortlist</span><b>Five towns that fit how you want to live.</b>${o.slice(0,5).map((t,i)=>`<i><em>${i+1}</em>${short(t)}</i>`).join("")}</div><span class="sl-pages">8 pages</span></div>`;
+  return `<form class="savebox leadform sl-offer" data-lead="matches" data-key="matches">${hpField}${sheet}<div class="sl-ob"><b>Get your Florida Shortlist</b><span>An 8 page printable guide: a page for each town with home prices, storm and flood heads ups, the airport drive and your first weekend, then all 5 side by side.</span><div class="sl-row"><label for="sl-email" class="sr-only">Your email</label><input id="sl-email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required><button class="btn btn-accent" type="submit">Email it to me</button></div><p class="sl-note">Free. No spam, no sales calls.</p></div></form>`;
+}
+function localAsk(t){if(!t)return"";return `<div class="sl-local"><div><b>Want to see ${short(t)} in person?</b><span>A local shows you around the way they would a friend. No pressure.</span></div><a class="btn btn-line" href="#contact-${t.id}">Ask a local →</a></div>`}
+(function(){
+  const old=fsHTML;
+  fsHTML=function(e){
+    let h=old.apply(this,arguments);
+    if(!/class="fs fs-top/.test(h))return h;
+    const o=e.slice(0,5);let y=null;try{y=youStyle(o)}catch(x){}
+    const head=y?`<div class="res-hd" style="--vc:${VCOL[y[0]]}"><span class="res-eb"><i></i>Your Florida style</span><h1>${VIBES[y[0]]}</h1><p>${VYOU[y[0]]||""} <a href="${vguide(y[0])}">Read the guide →</a></p></div><div class="res-sub">Your top ${o.length} towns</div>`
+      :`<div class="res-hd"><span class="res-eb">Find your mile</span><h1>Your top ${o.length}</h1></div>`;
+    /* panel top: style + towns heading */
+    h=h.replace(/<div class="fs-panel"><div class="label">Find Your Mile<\/div><h1>Your top \d+<\/h1>[\s\S]*?<div class="fs-rows">/,`<div class="fs-panel res-panel">${head}<div class="fs-rows">`);
+    /* actions: one big ask, then the local, then share and links */
+    h=h.replace(/<div class="fs-acts">[\s\S]*?<div class="fs-links">/,`<div class="fs-acts">${shortlistBox(o)}${localAsk(o[0])}<div class="fs-links"><button class="linkbtn" data-card="1">Share my result</button>`);
+    /* the style now lives in the panel, so the floating box on the map goes */
+    h=h.replace(/<div class="fs-pattern">[\s\S]*?<\/p><\/div>/,"").replace('>See full results <span aria-hidden="true">×</span>','>Full scorecard <span aria-hidden="true">→</span>');
+    return h;
+  };
+})();
+/* Nov 4: after someone saves their Shortlist, the thank you screen asks one optional question, then offers the next step.
+   The answer is tracked as event "timeline" (same visit id as the "lead" event). */
+(function(){
+  const old=leadThanks;
+  leadThanks=function(k,n){
+    if(!("matches"===k&&document.querySelector(".res-panel")))return old.apply(this,arguments);
+    return `<div class="sl-offer sent sl-thanks" role="status"><b>Your Shortlist is on its way.</b><span>Check your inbox in a few minutes. Questions? Just reply to that email.</span>
+      <div class="sl-tl"><p>One quick question, so we send the right things: when are you thinking of moving?</p><div class="sl-tlb">${["This year","In 1 to 2 years","Just dreaming"].map(x=>`<button type="button" data-tl="${x}">${x}</button>`).join("")}</div></div></div>`;
+  };
+})();
+document.addEventListener("click",function(e){
+  const b=e.target.closest&&e.target.closest("[data-tl]");if(!b)return;e.preventDefault();
+  const v=b.dataset.tl;try{track("timeline",v)}catch(x){}
+  const w=b.closest(".sl-tl");if(!w)return;
+  const ig='<a class="btn btn-line" href="https://www.instagram.com/floridacoastalco/" target="_blank" rel="noopener">Follow @floridacoastalco</a>';
+  if("This year"===v){const l=document.querySelector(".res-panel .sl-local");l&&l.remove()}
+  w.innerHTML="This year"===v
+    ?`<p class="sl-tl-done"><b>Got it.</b> When you're ready to see a town in person, a local can show you around. No pressure.</p><div class="sl-tl-next"><a class="btn btn-accent" href="#contact-${(rankedTowns()[0]||{}).id||""}">Ask a local →</a>${ig}</div>`
+    :`<p class="sl-tl-done"><b>Thanks.</b> We share a beach town or two every week on Instagram, the good and the honest.</p><div class="sl-tl-next">${ig}<button class="linkbtn" data-card="1">Share my result</button></div>`;
+},!0);
 /* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
 "sliders"===curRoute()&&slDesk()&&route();
