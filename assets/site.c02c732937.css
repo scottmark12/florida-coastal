@@ -2918,3 +2918,151 @@ body.dk-moving .dk-map aside.vpanel{transition:margin-top .36s ease}
 /* ===== Nov 4 2026 patch: home map side panel type. Style header DM Sans regular, town names DM Sans light ===== */
 .dk-map aside.vpanel h2,.dk-map aside.vpanel h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:400!important;letter-spacing:-.015em!important}
 .dk-map aside.vpanel li b,.dk-map aside.vpanel button b{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:300!important;letter-spacing:-.012em!important}
+
+/* ===== Nov 4 2026 patch: Match by priorities desktop layout, same frame as the Vibe Map ===== */
+@media (min-width:1000px){
+ .sl-vbar{position:sticky;top:var(--hh,73px);z-index:12}
+ .sl-vbar .slv-sub{flex:1;min-width:0;margin:0;font-size:14.5px;color:var(--muted,#4b5b5e);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .sl-stage{height:max(560px,calc(100vh - var(--hh,73px) - 64px));position:relative;overflow:hidden}
+ .sl-mapwrap{position:absolute;inset:0;overflow:hidden;background:#C9E1E4}
+ .sl-mapwrap .sl-map{position:absolute;inset:0;border:0!important;border-radius:0!important;box-shadow:none!important;background:transparent!important;margin:0!important;aspect-ratio:auto!important;height:100%!important}
+ .sl-mapwrap .sl-map svg{width:100%!important;height:100%!important;max-height:none!important;max-width:none!important;display:block}
+ .slc{position:absolute;left:28px;bottom:28px;width:min(360px,34%);background:rgba(255,253,249,.97);border-radius:10px;box-shadow:0 18px 40px rgba(19,40,44,.18),0 2px 6px rgba(19,40,44,.08);padding:16px 16px 10px;z-index:3}
+ .slc-h{font:700 12px var(--ui,'DM Sans',sans-serif);letter-spacing:.14em;text-transform:uppercase;color:#13282C;margin:0 0 12px}
+ .slc-1{display:grid;grid-template-columns:96px minmax(0,1fr);gap:14px;text-decoration:none;color:inherit;padding-bottom:14px;border-bottom:1px solid var(--line)}
+ .slc-ph{display:block;width:96px;height:96px;border-radius:6px;overflow:hidden}
+ .slc-ph img,.slc-ph .fallback{width:100%;height:100%;object-fit:cover;display:block}
+ .slc-b{display:flex;flex-direction:column;min-width:0}
+ .slc-k{display:flex;align-items:center;gap:7px;font:600 12.5px 'DM Sans',sans-serif;color:#0F6E72}
+ .slc .n{display:inline-grid;place-items:center;width:22px;height:22px;border-radius:50%;background:#13282C;color:#fff;font:700 12px 'DM Sans',sans-serif;flex:none}
+ .slc-b b{font-family:'DM Sans',sans-serif;font-weight:400;font-size:22px;letter-spacing:-.015em;line-height:1.15;margin:4px 0 3px;color:#13282C}
+ .slc-b small{font-size:13px;line-height:1.35;color:var(--muted,#4b5b5e)}
+ .slc-go{margin-top:8px;font:600 13.5px 'DM Sans',sans-serif;color:#C65213}
+ .slc-1:hover b{text-decoration:underline}
+ .slc-r{list-style:none;margin:0;padding:4px 0 0}
+ .slc-r a{display:flex;align-items:center;gap:10px;padding:8px 0;text-decoration:none;color:#13282C;border-bottom:1px solid var(--line)}
+ .slc-r li:last-child a{border-bottom:0}
+ .slc-r b{flex:1;min-width:0;font:300 16px 'DM Sans',sans-serif;letter-spacing:-.012em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .slc-r .w{font:500 12.5px 'DM Sans',sans-serif;color:var(--muted,#4b5b5e);white-space:nowrap}
+ .slc-r a:hover b{text-decoration:underline}
+ .slc-e{margin:0 0 8px;font-size:14px}
+ .sl-panel{position:absolute;top:0;right:0;bottom:0;width:420px;z-index:4;display:flex;flex-direction:column;min-height:0;background:var(--page,#FFFDF9);border-left:1px solid var(--line)}
+ .sl-pin{flex:1;min-height:0;overflow:auto;padding:22px 26px 10px}
+ .sl-panel .sl-h{font-family:'DM Sans',sans-serif!important;font-weight:400!important;font-size:21px!important;letter-spacing:-.015em;margin:0 0 12px}
+ .sl-panel .sl-hrow{display:flex;align-items:center;justify-content:space-between;margin-top:22px;padding-top:18px;border-top:1px solid var(--line)}
+ .sl-panel .sl-hrow .sl-h{margin:0}
+ .sl-panel .sl-sel .sl-grp{flex-wrap:wrap}
+ .sl-panel .sl-list{display:block!important;grid-template-columns:none!important}
+ .sl-panel .sl-row{padding:10px 0}
+ .sl-panel .sl-note{font-size:12.5px}
+ .sl-lf{flex:none;padding:14px 26px 16px;border-top:1px solid var(--line);background:var(--page,#FFFDF9);text-align:center}
+ .sl-lf .btn{display:block;width:100%;box-sizing:border-box}
+ .sl-lf p{margin:8px 0 0;font-size:13px;color:var(--muted,#4b5b5e)}
+ .sl-redo{margin:12px 0 0}
+}
+@media (min-width:1000px) and (max-width:1180px){.sl-vbar .slv-sub{display:none}.slc{width:280px;left:20px;bottom:20px}.slc-1{grid-template-columns:72px minmax(0,1fr);gap:12px}.slc-ph{width:72px;height:72px}.slc-b b{font-size:19px}}
+@media (min-width:1000px){.sl-vbar .pgtog{display:inline-flex!important;margin-left:auto!important}}
+/* Nov 4: compact panel so the basics and every slider fit without scrolling. Each slider is one line: name, bar, setting */
+@media (min-width:1000px){
+ .sl-pin{padding:16px 24px 4px}
+ .sl-panel .sl-h{font-size:18px!important;margin:0 0 8px}
+ .sl-panel .sl-sel{display:grid;gap:6px}
+ .sl-panel .sl-grp{gap:5px}
+ .sl-panel .sl-gl{width:58px;font-size:10.5px}
+ .sl-panel .slchip{min-height:28px;padding:3px 10px;font-size:12.5px}
+ .sl-panel .sl-coast{display:flex;align-items:center}
+ .sl-panel .sl-coast select{flex:1;min-height:32px;padding:4px 10px;font-size:13px}
+ .sl-panel .sl-also{margin:4px 0 0;font-size:12.5px}
+ .sl-panel .sl-hrow{margin-top:12px;padding-top:12px}
+ .sl-panel .sl-reset{padding:3px 10px;font-size:12.5px;min-height:0}
+ .sl-panel .sl-scale{display:grid;grid-template-columns:152px minmax(0,1fr) 64px;column-gap:8px;margin:6px 0 0;font-size:11px}
+ .sl-panel .sl-scale span{grid-row:1;grid-column:2/4;white-space:nowrap}
+ .sl-panel .sl-scale span:last-child{justify-self:end}
+ .sl-panel .sl-row{display:grid;grid-template-columns:152px minmax(0,1fr) 64px;align-items:center;column-gap:8px;padding:2px 0!important;border-bottom:0!important}
+ .sl-panel .sl-top{display:contents}
+ .sl-panel .sl-top label{grid-column:1;grid-row:1;font-size:13.5px;font-weight:600;line-height:1.15}
+ .sl-panel .sl-top output{grid-column:3;grid-row:1;justify-self:end;font-size:10.5px;padding:2px 5px}
+ .sl-panel .sl-row input[type=range]{grid-column:2;grid-row:1;height:26px}
+ .sl-panel .sl-row input[type=range]::-webkit-slider-runnable-track{height:5px}
+ .sl-panel .sl-row input[type=range]::-moz-range-track{height:5px}
+ .sl-panel .sl-row input[type=range]::-webkit-slider-thumb{width:18px;height:18px;margin-top:-6.5px;border-width:2px}
+ .sl-panel .sl-row input[type=range]::-moz-range-thumb{width:14px;height:14px;border-width:2px}
+ .sl-panel .sl-note{margin:10px 0 0;font-size:11.5px;line-height:1.4}
+ .sl-lf{padding:12px 24px 12px}
+ .sl-lf p{margin-top:6px}
+}
+@media (min-width:1000px) and (max-height:880px){
+ .sl-pin{padding:12px 24px 6px}
+ .sl-panel .sl-h{font-size:17px!important;margin-bottom:6px}
+ .sl-panel .slchip{min-height:26px;padding:2px 9px}
+ .sl-panel .sl-sel{gap:5px}
+ .sl-panel .sl-coast select{min-height:30px}
+ .sl-panel .sl-hrow{margin-top:10px;padding-top:10px}
+ .sl-panel .sl-scale{margin-top:2px}
+ .sl-panel .sl-row input[type=range]{height:23px}
+ .sl-lf{padding:10px 24px}
+ .sl-lf .btn{min-height:42px;padding-top:9px;padding-bottom:9px}
+ .sl-lf p{display:none}
+}
+@media (min-width:1000px) and (max-height:820px){
+ .sl-panel .sl-row input[type=range]{height:21px}
+}
+@media (min-width:1000px) and (max-height:805px){
+ .sl-pin{padding-top:10px}
+ .sl-panel .sl-scale{margin:0;line-height:1.2}
+ .sl-panel .sl-hrow{margin-top:6px!important;padding-top:6px!important}
+ .sl-panel .sl-h{font-size:16px!important;margin-bottom:4px}
+ .sl-panel .sl-row input[type=range]{height:19px}
+ .sl-panel .slchip{min-height:24px;padding:1px 9px}
+ .sl-panel .sl-sel{gap:4px}
+ .sl-panel .sl-coast select{min-height:28px;padding:2px 10px}
+ .sl-panel .sl-hrow{margin-top:8px;padding-top:8px}
+ .sl-lf{padding:8px 24px}
+ .sl-lf .btn{min-height:38px;padding-top:7px;padding-bottom:7px}
+}
+/* Nov 4: simpler panel. Where on top, Pace and Budget as sliders, every slider says its setting in plain words */
+@media (min-width:1000px){
+ .sl-pin{padding:18px 24px 6px!important}
+ .sl2-where{display:flex;align-items:center;gap:12px;margin:0 0 14px}
+ .sl2-where span{font-size:10.5px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);width:52px;flex:none}
+ .sl2-where select{flex:1;min-height:36px;padding:4px 10px;font-size:14px;border:1px solid var(--line);border-radius:6px;background:var(--white)}
+ .sl2-grp{padding:2px 0 10px}
+ .sl2{display:grid;grid-template-columns:170px minmax(0,1fr);align-items:center;column-gap:12px;padding:4px 0}
+ .sl2 label{display:flex;flex-direction:column;min-width:0;cursor:pointer}
+ .sl2 label b{font:600 13.5px 'DM Sans',sans-serif;line-height:1.2;color:var(--ink)}
+ .sl2 output{font:400 12px 'DM Sans',sans-serif;line-height:1.25;color:var(--muted,#5b6b6e);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .sl2.set output{color:#0F6E72;font-weight:600}
+ .sl2 input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:24px;background:transparent;margin:0;cursor:pointer}
+ .sl2 input[type=range]::-webkit-slider-runnable-track{height:5px;border-radius:3px;background:linear-gradient(90deg,var(--ink) var(--p,50%),var(--line) var(--p,50%))}
+ .sl2 input[type=range]::-moz-range-track{height:5px;border-radius:3px;background:linear-gradient(90deg,var(--ink) var(--p,50%),var(--line) var(--p,50%))}
+ .sl2 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;margin-top:-6.5px;border-radius:50%;background:var(--white);border:2px solid var(--ink);box-shadow:0 1px 5px rgba(20,40,55,.2)}
+ .sl2 input[type=range]::-moz-range-thumb{width:14px;height:14px;border-radius:50%;background:var(--white);border:2px solid var(--ink)}
+ .sl2:not(.set) input[type=range]::-webkit-slider-runnable-track{background:var(--line)}
+ .sl2:not(.set) input[type=range]::-moz-range-track{background:var(--line)}
+ .sl2:not(.set) input[type=range]::-webkit-slider-thumb{border-color:#9aa8aa}
+ .sl2 input[type=range]:focus-visible{outline:2px solid var(--ink);outline-offset:3px;border-radius:4px}
+ .sl2-hrow{display:flex;align-items:center;justify-content:space-between;padding-top:12px;margin-bottom:4px;border-top:1px solid var(--line)}
+ .sl2-hrow .sl-h{margin:0!important}
+ .sl2-list{display:block!important}
+}
+@media (min-width:1000px) and (max-height:805px){
+ .sl-pin{padding-top:12px!important}
+ .sl2-where{margin-bottom:8px}.sl2-where select{min-height:32px}
+ .sl2{padding:2px 0}.sl2-grp{padding-bottom:6px}.sl2-hrow{padding-top:8px}
+ .sl2 input[type=range]{height:22px}
+}
+/* Nov 4: Pace fills from the middle; untouched sliders look ready, not switched off; top 5 rows show why */
+@media (min-width:1000px){
+ .sl2.two input[type=range]::-webkit-slider-runnable-track{background:linear-gradient(90deg,var(--line) var(--lo,50%),var(--ink) var(--lo,50%),var(--ink) var(--hi,50%),var(--line) var(--hi,50%))}
+ .sl2.two input[type=range]::-moz-range-track{background:linear-gradient(90deg,var(--line) var(--lo,50%),var(--ink) var(--lo,50%),var(--ink) var(--hi,50%),var(--line) var(--hi,50%))}
+ .sl2.two input[type=range]{background:linear-gradient(var(--line),var(--line)) center/2px 11px no-repeat}
+ .sl2:not(.set) input[type=range]::-webkit-slider-thumb{border-color:var(--ink)}
+ .sl2:not(.set) input[type=range]::-moz-range-thumb{border-color:var(--ink)}
+ .sl2:not(.set) input[type=range]::-webkit-slider-runnable-track{background:#D9D3C7}
+ .sl2:not(.set) input[type=range]::-moz-range-track{background:#D9D3C7}
+ .slc-r a{align-items:flex-start;padding:7px 0}
+ .slc-r .n{margin-top:1px}
+ .slc-t{display:flex;flex-direction:column;min-width:0;flex:1}
+ .slc-t b{font:300 16px 'DM Sans',sans-serif;letter-spacing:-.012em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .slc-t small{font-size:12px;line-height:1.3;color:var(--muted,#5b6b6e);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+}

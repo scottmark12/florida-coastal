@@ -856,3 +856,88 @@ document.addEventListener("click",function(e){
   const m=document.querySelector(".dk-map");if(!m)return;const r=m.getBoundingClientRect();
   if(r.top<-200)setTimeout(()=>m.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"}),0);
 },!0);
+
+/* ===== Nov 4 2026 patch: Match by priorities, desktop layout to match the Vibe Map ===== */
+/* 1000px and up: the same top bar as the Vibe Map, a full height map, all the sliders in a panel on the right,
+   and your top town (plus 2 to 5) on a card floating in the open Gulf of Mexico. Phones and tablets keep the old layout. */
+const slDesk=()=>window.innerWidth>=1000;
+(function(){
+  const resOld=slRes,viewOld=slidersView;
+  slRes=function(){
+    if(!slDesk())return resOld();
+    const q=slQuiz(),F=q?(e=>fit(e)||0):fitSl,
+      R=q?rankedTowns().filter(inPool):T.filter(inPool).sort((x,y)=>Math.round(100*F(y))-Math.round(100*F(x))||slTie(y)-slTie(x)||F(y)-F(x)),top=R.slice(0,5),ids=top.map(e=>e.id),
+      hi=R.length?F(R[0]):1,lo=R.length?F(R[Math.min(R.length-1,45)]):0,strong=new Set(R.slice(5,15).map(e=>e.id)),
+      f=e=>{const k=ids.indexOf(e.id)+1;if(k)return{num:k,tier:"top",label:!0,r:11};if(!inPool(e))return{dim:!0,tier:"out",r:3.5};const v=F(e),dim=v<lo;return{tier:dim?"out":strong.has(e.id)?"strong":"good",dim:dim,r:dim?3.5:4.5+4*Math.pow(Math.max(0,(v-lo)/(hi-lo||1)),1.4)}};
+    const pct=e=>Math.round(100*F(e)),t1=top[0];
+    /* same framing as the Vibe Map on desktop: Florida fills the space left of the panel, the open Gulf sits bottom left */
+    const W=vmW(),H=Math.max(560,window.innerHeight-vmHH()-VM.barH),keep=[S.vmMan,S.vmz,S.vcard];S.vmMan=null;S.vmz=1;S.vcard=!1;
+    const fr=vmFrame(!0,W,H,null);S.vmMan=keep[0];S.vmz=keep[1];S.vcard=keep[2];
+    const lab={n:0,sigOnly:!1,max:14,pad:0,prio:e=>{const k=ids.indexOf(e.id);return k<0?9:k}};
+    const svg=mapSVG(f,{zoom:fr.zoom,lb:fr.lb,lab:lab,ms:0,aria:"Map of your best matching towns"}).replace(/viewBox="[^"]*"/,`viewBox="${fr.vb.map(n=>n.toFixed(1)).join(" ")}" preserveAspectRatio="xMidYMid slice"`).replace(/<text class="sealabel"[^>]*>Gulf of Mexico<\/text>/,"");
+    const card=t1?`<aside class="slc" aria-label="Your top 5 right now"><div class="slc-h">Your top 5 right now</div><a class="slc-1" href="#town-${t1.id}"><span class="slc-ph">${art(t1,!1)}</span><span class="slc-b"><span class="slc-k"><span class="n">1</span>${slFitWord(F(t1),F(t1),0)}${pct(t1)>=70?` · ${pct(t1)}%`:""}</span><b>${t1.name}</b><small>${slWhy(t1)}</small><span class="slc-go">Explore ${short(t1).length>14?"this town":short(t1)} →</span></span></a><ol class="slc-r">${top.slice(1).map((e,i)=>`<li><a href="#town-${e.id}"><span class="n">${i+2}</span><span class="slc-t"><b>${e.name}</b><small>${slWhy(e)}</small></span></a></li>`).join("")}</ol></aside>`:`<aside class="slc"><div class="slc-h">No towns in this area yet</div><p class="slc-e">Try Anywhere in Florida.</p></aside>`;
+    return `<div class="sl-map mapbox">${svg}</div>${card}`;
+  };
+  slidersView=function(){
+    if(!slDesk())return viewOld();
+    S.sl||(S.sl=slLoad());null==S.sl.edu&&(S.sl.edu=slQuiz()?SL_FROM[S.w.edu||0]:50);
+    const q=slQuiz();
+    return `<div class="vm-bar sl-vbar"><h1 class="vm-title">${q?"Your answers":"Match by priorities"}</h1><p class="slv-sub">${q?"Your sliders start where your answers left them.":"Slide what matters and your best towns light up on the map."}</p>${pageToggle("sliders")}</div>
+  <div class="sl-stage"><div id="slres" class="sl-res sl-mapwrap" aria-live="polite">${slRes()}</div><aside class="sl-panel" role="group" aria-label="Your priorities"><div class="sl-pin">${slPanel2()}</div><div class="vm-lf sl-lf">${q?'<a class="btn btn-accent" href="#quiz">See my top 5</a>':`<a class="btn btn-accent" href="#quiz">See your top 5 towns</a><p>${SQ.length} quick questions, matched to how you live</p>`}</div></aside></div>`;
+  };
+  let was=slDesk();
+  addEventListener("resize",()=>{const d=slDesk();if(d!==was){was=d;"sliders"===curRoute()&&route()}});
+})();
+
+/* Nov 4: the desktop panel, simpler. Pace and Budget are sliders now (no chips), Peace and quiet folds into Pace,
+   and each slider says what its setting means in plain words instead of Important or Neutral. */
+const SL_WORDS={
+  afford:["Price is no issue","Price matters a little","Either way","Want good value","Most house for the money"],
+  beach:["Beach is a bonus","A beach for weekends","Either way","Close to the beach","Walk to the beach"],
+  walk:["Happy to drive","A few things on foot","Either way","Walk to coffee and dinner","Walk everywhere"],
+  water:["Water isn't a must","Water nearby is nice","Either way","Want to be on the water","Live right on the water"],
+  airport:["Airport can be far","An airport within reach","Either way","I fly often","Airport close by"],
+  nightlife:["Early nights","A night out now and then","Either way","Out most weekends","Lots of nightlife"],
+  meet:["Happy on my own","A few new friends","Either way","Easy to meet people","Big on community"],
+  dining:["Simple is fine","A few good spots","Either way","Good restaurants","Great food and arts"],
+  outdoors:["Not a priority","Some trails and parks","Either way","Outdoors a lot","Outside every day"],
+  edu:["Not a factor","Schools matter a little","Either way","Good schools","Top rated schools"]};
+const slBand=v=>v<=0?0:v<40?1:v<=60?2:v<90?3:4;
+const slWord2=(k,v)=>(SL_WORDS[k]||["Don't care","A little","Either way","Important","Must have"])[slBand(v)];
+const PACE_WORDS=["City energy","Lively town","Either way","Quiet town","As quiet as it gets"];
+function slPaceV(){const q=S.sl.quiet??50;return null==S.pace?(q>55?q:50):[0,30,q>=60&&q<=80?q:70,q>=85?q:100][S.pace]}
+function slPaceWord(v){return PACE_WORDS[v<=15?0:v<=40?1:v<=55?2:v<=80?3:4]}
+/* Budget and Affordability are one slider: slide right for a tighter budget. Each stop sets the price range and how much price counts */
+const BUD_WORDS=["Any price","$750K and up","$500K to $750K","$350K to $500K","Under $350K"],BUD_SET=[[null,50],[3,50],[2,60],[1,75],[0,90]];
+function slBudV(){return null==S.budget?0:4-S.budget}
+function slRow2(id,data,lab,word,v,min,max,step,set){
+  return `<div class="sl2${set?" set":""}${"sl2-pace"===id?" two":""}"><label for="${id}"><b>${lab}</b><output id="o-${id}" for="${id}">${word}</output></label><input id="${id}" type="range" min="${min}" max="${max}" step="${step}" value="${v}" ${data} aria-valuetext="${word}" style="--p:${(v-min)/(max-min)*100}%${"sl2-pace"===id?`;--lo:${Math.min(50,v)}%;--hi:${Math.max(50,v)}%`:""}"></div>`;
+}
+function slAnySet(){return SLC().some(c=>c[0]!=="quiet"&&(S.sl[c[0]]??50)!==50)||null!=S.pace||null!=S.budget||(S.sl.quiet??50)!==50}
+function slPanel2(){
+  const xs=XCATS.filter(c=>"edu"!==c[0]&&(S.w[c[0]]||0)>0),pv=slPaceV(),bv=slBudV();
+  const where=`<label class="sl2-where"><span>Where</span><select id="sl-coast"><option value="">Anywhere in Florida</option>${Object.entries(COASTS).map(([e,a])=>{const t=REGIONS.filter(a=>a.coast===e);return t.length>1?`<optgroup label="${a[0]}"><option value="${e}"${S.pc===e&&!S.pr?" selected":""}>All of the ${a[0]}</option>${t.map(e=>`<option value="r:${e.id}"${S.pr===e.id?" selected":""}>${e.map}</option>`).join("")}</optgroup>`:`<option value="${e}"${S.pc===e?" selected":""}>${a[0]}</option>`}).join("")}</select></label>`;
+  const rows=slCore().concat(slMore()).filter(c=>c[0]!=="quiet"&&c[0]!=="afford").map(c=>{const v=S.sl[c[0]]??50;return slRow2("sl-"+c[0],`data-sl="${c[0]}"`,c[1],slWord2(c[0],v),v,0,100,5,v!==50)}).join("");
+  return `${where}<div class="sl2-grp">${slRow2("sl2-pace","data-slp","Pace",slPaceWord(pv),pv,0,100,5,pv!==50)}${slRow2("sl2-bud","data-slb","Budget",BUD_WORDS[bv],bv,0,4,1,bv>0)}</div>${xs.length?`<p class="sl-also">Also from your answers: ${xs.map(c=>`${c[1]} <button class="linkbtn" data-slx="${c[0]}" aria-label="Remove ${c[1]}">✕</button>`).join(" · ")}</p>`:""}<div class="sl2-hrow"><h2 class="sl-h">What matters to you</h2><button class="sl-reset" data-slreset="1"${slAnySet()?"":" disabled"}>↺ Reset</button></div><div class="sl-list sl2-list">${rows}</div><p class="sl-note">Public school grades use the Florida Department of Education grade for each county school district (${EDU_YEAR}). Check the official grade for any address.</p>${saveBox("sliders")}${slQuiz()?'<p class="sl-redo"><button class="linkbtn" data-act="retake">Start the questions over</button></p>':""}`;
+}
+function sl2Paint(t,word,set){
+  t.style.setProperty("--p",(t.value-t.min)/(t.max-t.min)*100+"%");sl2Two(t);t.setAttribute("aria-valuetext",word);
+  const o=document.getElementById("o-"+t.id);o&&(o.textContent=word);t.closest(".sl2").classList.toggle("set",set);
+  const rb=document.querySelector(".sl-panel [data-slreset]");rb&&(rb.disabled=!slAnySet());
+}
+(function(){
+  const inOld=slInput;
+  slInput=function(t){inOld(t);if(t.closest&&t.closest(".sl2")){const k=t.dataset.sl,v=+t.value;sl2Paint(t,slWord2(k,v),v!==50)}};
+  const rsOld=slReset;slReset=function(){S.pace=null;S.budget=null;rsOld()};
+  app.addEventListener("input",e=>{
+    const t=e.target;if(!t.dataset)return;
+    if(null!=t.dataset.slp){const v=+t.value;S.pace=v<=15?0:v<=40?1:v<=55?null:v<=80?2:3;S.sl.quiet=v>55?v:50;sl2Paint(t,slPaceWord(v),v!==50)}
+    else if(null!=t.dataset.slb){const v=+t.value;S.budget=BUD_SET[v][0];S.sl.afford=BUD_SET[v][1];sl2Paint(t,BUD_WORDS[v],v>0)}
+    else return;
+    slSyncW();saveState();slSave();slRefresh();
+  });
+})();
+/* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
+"sliders"===curRoute()&&slDesk()&&route();
+/* two sided sliders (Pace) fill from the middle out to the thumb */
+function sl2Two(t){if(!t.closest(".two"))return;const p=(t.value-t.min)/(t.max-t.min)*100;t.style.setProperty("--lo",Math.min(50,p)+"%");t.style.setProperty("--hi",Math.max(50,p)+"%")}
