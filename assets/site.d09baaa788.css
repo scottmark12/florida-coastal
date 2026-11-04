@@ -2603,3 +2603,24 @@ section.wrap.twocol{padding-top:56px;padding-bottom:72px}
   .cmp-plus2 span{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;background:#13282C;color:#fff;font-size:20px;line-height:1}
 }
 .cmp-stick-in::after{content:"";position:absolute;left:0;right:0;top:calc(100% + 1px);height:16px;background:linear-gradient(#FFFDF9,rgba(255,253,249,0));pointer-events:none}
+
+/* ===== Nov 4 2026 patch: How it works in a deep teal panel so it stops the scroll ===== */
+.hiw-panel{background:#17545C;color:#FDFCF8;border-radius:14px;padding:40px 44px 44px;background-image:radial-gradient(120% 140% at 100% 0%,rgba(242,181,138,.16),rgba(242,181,138,0) 55%)}
+.hiw .hiw-panel .ed-flag{border-top-color:rgba(253,252,248,.85)}
+.hiw .hiw-panel .ed-flag h2{color:#FDFCF8}
+.hiw .hiw-panel .ed-flag a{color:#FDFCF8}
+.hiw-panel .hiw-steps li+li::before{border-left-color:rgba(253,252,248,.22)}
+.hiw-panel .hiw-n{color:#F2B58A!important;font-size:52px}
+.hiw-panel .hiw-steps h3{color:#FDFCF8}
+.hiw-panel .hiw-steps p{color:rgba(253,252,248,.9)!important}
+.hiw-panel .hiw-a{color:#FDFCF8;border-bottom-color:#F2B58A}
+.hiw-go{align-self:flex-start;display:inline-flex;align-items:center;min-height:46px;margin-top:8px;padding:11px 20px;border-radius:6px;background:#C65213;color:#fff;font:700 15px var(--ui);text-decoration:none}
+.hiw-go:hover{background:#B84C11}
+@media (max-width:700px){
+  .hiw-panel{padding:26px 20px 24px;border-radius:12px}
+  .hiw-panel .hiw-n{font-size:30px}
+  .hiw-panel .hiw-steps li{border-bottom-color:rgba(253,252,248,.18)}
+  .hiw-panel .hiw-steps li:last-child{border-bottom:0}
+  .hiw-go{grid-column:2;margin-top:4px}
+}
+.hiw .hiw-panel .ed-flag a{display:none}
