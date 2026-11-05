@@ -3771,3 +3771,5 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .pf-wrap .sl-tlb.pf-2col button{padding:9px 8px 9px 34px;font-size:15px;white-space:nowrap}
 .pf-wrap .sl-tlb.pf-2col button::before{left:11px}
 .pf-wrap .pf-end{justify-content:flex-start}
+.pf-wrap .pf-fine{margin:0!important;font:400 12.5px/1.4 'DM Sans',sans-serif!important;color:#566669!important}
+.pf-wrap .sl-tl p.pf-fine{font:400 12.5px/1.4 'DM Sans',sans-serif!important;color:#566669!important;margin:0!important}
