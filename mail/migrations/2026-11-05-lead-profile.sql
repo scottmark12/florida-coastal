@@ -18,7 +18,7 @@ returns boolean language plpgsql security definer set search_path = public as $$
 declare n int;
 begin
   if p_ref is null then return false; end if;
-  if p_timeline is not null and p_timeline not in ('This year','In 1 to 2 years','Just dreaming') then p_timeline := null; end if;
+  if p_timeline is not null and p_timeline not in ('This year','In 1 to 2 years','Still exploring') then p_timeline := null; end if;
   if p_plan is not null and p_plan not in ('Buy','Rent first','Not sure yet') then p_plan := null; end if;
   if p_budget is not null and p_budget not in ('Under $400K','$400K to $750K','$750K to $1.5M','$1.5M and up','Not sure yet') then p_budget := null; end if;
   update public.fc_leads set

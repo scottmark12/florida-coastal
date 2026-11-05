@@ -1240,7 +1240,7 @@ document.addEventListener("click",function(e){if(S.vmSeen||!e.target.closest)ret
    Needs mail/migrations/2026-11-05-lead-profile.sql applied first. ===== */
 function fcRef(){let r=null;try{r=crypto.randomUUID()}catch(e){r="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,c=>{const v=Math.random()*16|0;return(c==="x"?v:(v&3|8)).toString(16)})}window.__fcRef=r;return r}
 const PF_STEPS=[
-  {k:"timeline",q:"One quick question, so we send the right things: when are you thinking of moving?",o:["This year","In 1 to 2 years","Just dreaming"]},
+  {k:"timeline",q:"One quick question, so we send the right things: when are you thinking of moving?",o:["This year","In 1 to 2 years","Still exploring"]},
   {k:"plan",q:"Buying, or renting first to try a town out?",o:["Buy","Rent first","Not sure yet"]},
   {k:"budget",q:"Roughly what price range?",o:["Under $400K","$400K to $750K","$750K to $1.5M","$1.5M and up","Not sure yet"]},
   {k:"contact"}];
