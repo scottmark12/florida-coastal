@@ -3814,3 +3814,4 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 /* Nov 5: answers in semibold with orange arrows (option B) */
 .pf-wrap .sl-tlb button,.pf-wrap .sl-tlb.pf-2col button{font-weight:600!important;font-size:17px!important}
 .pf-wrap .sl-tlb button::after,.pf-wrap .sl-tlb.pf-2col button::after{color:#C65213!important;font-weight:400}
+.pf-wrap .pf-n{min-height:14px;line-height:14px!important}
