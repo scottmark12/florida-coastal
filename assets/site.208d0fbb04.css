@@ -3673,3 +3673,28 @@ html body .res-hd h1{margin:6px 0 6px!important;font:500 44px/1.02 'DM Sans',sys
  .sl-row input,.sl-row .btn{min-height:40px!important}
  .sl-note{margin-top:5px!important}
 }
+/* Nov 4: Shortlist from Mark and Betsy, and the pinned phone bar */
+.sl-from{display:flex;align-items:center;gap:10px;margin:10px 0 0;font:400 13px/1.4 'DM Sans',sans-serif;color:#3e5155}
+.sl-from img{width:40px;height:40px;border-radius:50%;object-fit:cover;flex:none;box-shadow:0 0 0 2px #fff,0 2px 6px rgba(19,40,44,.15)}
+.sl-from b{font-weight:600;color:#13282C}
+.sl-sticky{position:fixed;left:10px;right:10px;bottom:calc(10px + env(safe-area-inset-bottom,0px));z-index:60;display:flex;align-items:center;gap:10px;padding:8px 8px 8px 10px;border-radius:16px;background:#FFFDF9;box-shadow:0 12px 30px rgba(19,40,44,.28),0 0 0 1px rgba(19,40,44,.06);transition:transform .3s ease,opacity .3s ease}
+.sl-sticky.hide{transform:translateY(130%);opacity:0;pointer-events:none}
+.sl-sticky img{width:28px;height:36px;border-radius:2px;object-fit:cover;box-shadow:0 2px 6px rgba(19,40,44,.2);flex:none}
+.sl-sticky span{flex:1;min-width:0;display:flex;flex-direction:column}
+.sl-sticky b{font:600 15px 'DM Sans',sans-serif;color:#13282C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sl-sticky small{font:400 12.5px 'DM Sans',sans-serif;color:#5b6b6e;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.sl-sticky .btn{flex:none;min-height:44px;padding:0 18px;font-size:16px}
+@media (min-width:900px){.sl-sticky{display:none!important}}
+@media (prefers-reduced-motion:reduce){.sl-sticky{transition:none}}
+/* offer layout: Shortlist preview beside the title and line, then the email field and the note from Mark and Betsy full width */
+.sl-offer{grid-template-columns:104px minmax(0,1fr)!important;grid-template-areas:"sheet title" "sheet line" "form form" "from from";row-gap:0!important}
+.sl-offer .sl-ob{display:contents}
+.sl-offer .sl-stack{grid-area:sheet;margin-bottom:12px}
+.sl-offer .sl-ob>b{grid-area:title;align-self:end}
+.sl-offer .sl-ob>span{grid-area:line;align-self:start;margin-bottom:12px!important}
+.sl-offer .sl-row{grid-area:form}
+.sl-offer .sl-from{grid-area:from}
+.sl-from b{display:inline!important;font:600 13px 'DM Sans',sans-serif!important;letter-spacing:0!important}
+.sl-from span{display:block}
+@media (min-width:900px){.sl-offer .sl-row{flex-direction:row!important}.sl-offer .sl-row input{flex:1 1 auto!important;width:auto!important}.sl-offer .sl-row .btn{flex:0 0 auto!important;width:auto!important}}
+@media (max-width:899px){.sl-offer{grid-template-columns:96px minmax(0,1fr)!important}.sl-offer .sl-ob>span{font-size:14px!important;line-height:1.4!important}.sl-offer .sl-ob>b{font-size:18px!important}}
