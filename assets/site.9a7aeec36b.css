@@ -3780,3 +3780,4 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .pf-wrap .pf-hd span{display:block;margin-top:2px;font-size:14.5px;color:#3e5155}
 .pf-wrap .sl-tl p.pf-sig{margin:6px 0 10px!important;font:italic 400 16px/1.2 var(--display,Georgia),serif!important;color:#C65213!important}
 .pf-wrap .pf-from{min-height:68px}
+.pf-wrap .pf-from img{width:52px;height:52px}

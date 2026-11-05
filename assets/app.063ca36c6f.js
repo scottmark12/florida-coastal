@@ -1285,7 +1285,7 @@ function pfNext(w){
     const head=nl?"<b>Check your inbox.</b><span>The Move and Belong Guide is on its way, usually within a few minutes.</span>"
       :"<b>Your Shortlist is on its way.</b><span>Check your inbox in a few minutes. Questions? Just reply to that email.</span>";
     const order=pfKnowsBudget()?"0,1,3":"0,1,2,3";
-    return `<div class="sl-offer sent sl-thanks pf-wrap" role="status"><div class="pf-from"><img src="img/mark-betsy-sq.webp" alt="Mark and Betsy Scott" width="44" height="44"><div class="pf-hd">${head}</div></div><div class="sl-tl pf" data-ref="${window.__fcRef||""}" data-order="${order}" data-pos="0">${pfAll()}</div></div>`;
+    return `<div class="sl-offer sent sl-thanks pf-wrap" role="status"><div class="pf-from"><img src="img/mark-betsy-faces.webp" alt="Mark and Betsy Scott" width="44" height="44"><div class="pf-hd">${head}</div></div><div class="sl-tl pf" data-ref="${window.__fcRef||""}" data-order="${order}" data-pos="0">${pfAll()}</div></div>`;
   };
 })();
 document.addEventListener("click",function(e){
