@@ -162,7 +162,7 @@ function vmCard(s){
   const {k,n,nx}=vmNext(s);
   return `<article class="vm-card" aria-live="polite" aria-label="${s.name}"><div class="vm-cph">${art(s)}<button class="vm-x" data-vmclose="1" aria-label="Close and zoom back out">×</button></div><div class="vm-cb"><span class="cat">${vmReg(s)}</span><h3>${s.name}</h3><div class="smap-tags">${s.vibes.slice(0,3).map(vmTag).join("")}</div><p>${s.blurb}</p><div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore ${short(s).length>14?"this town":short(s)} →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div>${k>=0&&nx?`<p class="vm-of">${k+1} of ${n} · next up ${short(nx)}</p>`:""}</div></article>`;
 }
-function vmOutTxt(o,ph){return S.vibe?(ph?`All ${o[S.vibe]} towns`:`Zoom out to all ${o[S.vibe]} ${VSHORT[S.vibe]||VIBES[S.vibe]} towns`):(ph?"All of Florida":"Zoom out to all of Florida")}
+function vmOutTxt(o,ph){if(S.vibe&&needOn()){o=Object.assign({},o);o[S.vibe]=needCount()}return S.vibe?(ph?`All ${o[S.vibe]} towns`:`Zoom out to all ${o[S.vibe]} ${VSHORT[S.vibe]||VIBES[S.vibe]} towns`):(ph?"All of Florida":"Zoom out to all of Florida")}
 const VM_OUT_ICON='<svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M8 11h6"/></svg>';
 /* Desktop (1000px and up), map page only */
 function tmapDesk(f,a,s,o){
@@ -1236,9 +1236,9 @@ const NBUD=[[0,"Any price"],[350,"Under $350K"],[500,"Under $500K"],[750,"Under 
 S.need=S.need||{};
 /* the map's style lists (chips, tiles, counts) show only the 8 feelings; the other 4 keep their guides and town tags */
 VGROUPS.length=0;VGROUPS.push(["Feel",VFEEL.slice()]);
-function needOn(){return Object.keys(S.need).some(k=>S.need[k])}
+function needOn(){S.need=S.need||{};return Object.keys(S.need).some(k=>S.need[k])}
 function needOk(e){
-  const n=S.need;
+  const n=S.need||{};
   if(n.bud&&!(MED[e.id]&&MED[e.id]<=n.bud))return!1;
   if(n.flood&&!(null!=FLOODSC[e.id]&&FLOODSC[e.id]<=3.6))return!1;
   if(n.school&&!(eduScore(e)>=4))return!1;
@@ -1297,5 +1297,27 @@ document.addEventListener("click",function(e){
   if(e.target.closest(".nd-pane [data-need],.nd-pane [data-nbud],.nd-pane [data-nclear]"))setTimeout(ndPaneSync,0);
 },!0);
 document.addEventListener("keydown",e=>{"Escape"===e.key&&S.ndOpen&&(S.ndOpen=!1,ndPaneSync())});
+/* Nov 5: no dead end tiles, and a "why it fits" box on the town card */
+(function(){
+  const vt=vmTile;
+  vmTile=function(v,o){let h=vt.apply(this,arguments);
+    if(needOn()&&o&&0===o[v])h=h.replace('<button class="vm-tile"','<button class="vm-tile zero" disabled aria-disabled="true" title="No towns match your filters"').replace(/<small>[\s\S]*?<\/small>/,"<small>None with your filters</small>");
+    return h};
+  const vpw=vmPhone;
+  vmPhone=function(f,a,t){let h=vpw.apply(this,arguments);if(t&&h.indexOf('<p class="vm-bl">')>-1){const w=ndWhy(t,1);w&&(h=h.replace('<p class="vm-bl">',w+'<p class="vm-bl">'))}return h};
+  const vc=vmCard;
+  vmCard=function(s){let h=vc.apply(this,arguments);const w=ndWhy(s);if(w)h=h.replace("<p>",w+"<p>");return h};
+})();
+function ndWhy(e,ph){
+  const n=S.need||{},L=[];
+  S.vibe&&e.vibes.includes(S.vibe)&&L.push(`Your style: ${VSHORT[S.vibe]||VIBES[S.vibe]}`);
+  n.bud&&MED[e.id]&&L.push(`Median home about ${fmtK(MED[e.id])}, under ${fmtK(n.bud)}`);
+  n.flood&&null!=FLOODSC[e.id]&&L.push("Lower flood risk than most of the coast");
+  n.school&&L.push(`Public schools rated ${eduScore(e)} of 5`);
+  n.air&&L.push(`Close to ${(e.airport||"a major airport").split(" or ")[0]}`);
+  n.beach&&L.push("Some of the best beaches in Florida");
+  if(!L.length)return"";
+  return `<div class="nd-why${ph?" ph":""}"><b>Why it fits</b><ul>${L.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
+}
 /* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
 "sliders"===curRoute()&&slDesk()&&route();
