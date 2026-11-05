@@ -1236,12 +1236,17 @@ function vmIntro(){return `<article class="vm-card vm-intro" aria-live="polite">
 document.addEventListener("click",function(e){if(S.vmSeen||!e.target.closest)return;const t=e.target.closest(".vm-stage,.vm-left,.vm-bar");if(t&&"map"===curRoute()&&!e.target.closest(".vm-intro a")){S.vmSeen=!0;const c=document.querySelector(".vm-intro");c&&c.remove()}},!0);
 
 /* ===== Nov 4 2026 patch: town page "At a glance" strip, the deciding facts in the first screen ===== */
-function tgPrice(a){const m=MED[a.id];if(m)return m>=1000?"$"+(m/1000).toFixed(2).replace(/\.?0+$/,"")+"M":"$"+Math.round(m)+"K";const p=(a.price||"").match(/\$[\d.,]+[KM]/);return p?p[0]:null}
-function tgAir(a){const t=a.airport||"",c=t.match(/\(([A-Z]{3})\)/),d=t.match(/about ([^,.;)]*?(minutes?|hours?))/);return c?c[1]+(d?", about "+d[1]:""):null}
+function tgPrice(a){const r=(a.price||"").slice(0,70).match(/\$[\d.,]+[KM]?\s+to\s+\$[\d.,]+[KM]/);if(r)return r[0].replace(/\s+/g," ");const m=MED[a.id];if(m)return m>=1000?"$"+(m/1000).toFixed(2).replace(/\.?0+$/,"")+"M":"$"+Math.round(m)+"K";const p=(a.price||"").match(/\$[\d.,]+[KM]/);return p?p[0]:null}
+function tgAir(a){
+  const t=(a.airport||"").trim();if(!t)return null;
+  const first=t.replace(/\b(St|Ft|Pt)\. /g,"$1\u00a7 ").split(/;|,? or |\. /)[0].replace(/\u00a7/g,"."),TM=/about (an hour|[\d.]+(?: to [\d.]+)? (?:hours?|minutes?)(?: [\d]+ minutes)?)/;
+  const c=first.match(/\(([A-Z]{3})\)/),nm=first.replace(/\s*\([A-Z]{3}\).*$/,"").replace(/,.*$/,"").replace(/\s+about .*$/,"").trim(),tm=first.match(TM)||t.match(TM);
+  return nm?nm+(c?" ("+c[1]+")":"")+(tm?", about "+tm[1]:""):null;
+}
 function townGlance(a){
   const p=tgPrice(a),ap=tgAir(a),fl=FLOODSC[a.id],it=[];
   p&&it.push(`<div><span>Typical home</span><b>${p}</b></div>`);
-  ap&&it.push(`<div><span>Nearest airport</span><b>${ap}</b></div>`);
-  null!=fl&&it.push(`<div><span>Flood risk</span><b><a href="#article-flood-risk-rankings">${fl>=7?"High":fl>=4?"Moderate":"Lower"}, ${fl.toFixed(1)} of 10</a></b></div>`);
+  ap&&it.push(`<div><span>Airport</span><b>${ap}</b></div>`);
+  null!=fl&&it.push(`<div><span>Flood risk</span><b><a href="#article-flood-risk-rankings">${fl.toFixed(1)} of 10</a></b><small>10 is the highest risk</small></div>`);
   return it.length?`<div class="tglance" aria-label="At a glance">${it.join("")}<a class="btn btn-accent tg-ask" href="#contact-${a.id}">Ask a local about ${short(a)}</a></div>`:"";
 }

@@ -3774,3 +3774,4 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .agtag{font-size:13px!important}
 @media (max-width:359px){.vm-pan{top:27%}}
 .qzi .svtile .svt small,.qzi .svtile[style] .svt small{font-size:14px!important}
+.tglance small{font:400 14px/1.3 var(--ui);color:#566669}
