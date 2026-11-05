@@ -1271,7 +1271,7 @@ function pfNext(w){const i=+(w.dataset.step||0)+1;w.dataset.step=i;w.innerHTML=p
     const head=nl?"<b>Check your inbox.</b><span>The Move and Belong Guide is on its way, usually within a few minutes.</span>"
       :"<b>Your Shortlist is on its way.</b><span>Check your inbox in a few minutes. Questions? Just reply to that email.</span>";
     const w={dataset:{}};
-    return `<div class="sl-offer sent sl-thanks thanks pf-wrap" role="status">${head}<div class="sl-tl pf" data-ref="${window.__fcRef||""}" data-step="0">${pfStep(0,w)}</div></div>`;
+    return `<div class="sl-offer sent sl-thanks pf-wrap" role="status">${head}<div class="sl-tl pf" data-ref="${window.__fcRef||""}" data-step="0">${pfStep(0,w)}</div></div>`;
   };
 })();
 document.addEventListener("click",function(e){
