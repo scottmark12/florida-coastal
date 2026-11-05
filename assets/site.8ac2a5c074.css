@@ -3922,3 +3922,21 @@ body.nd-lock{overflow:hidden}
 .nd-why.ph ul{gap:3px}
 .nd-why.ph li{font-size:14.5px;padding-left:23px}
 .nd-why.ph li:before{width:16px;height:16px;background-size:16px}
+/* ===== Nov 5 2026 preview: slim What you need row on the desktop Vibe Map ===== */
+.nd.nd-slim{padding:0;border:0;background:none;box-shadow:none;margin:2px 24px 14px}
+.nd-slim .nd-hd{display:flex;align-items:center;justify-content:space-between;gap:12px;margin:0 0 10px}
+.nd-slim .nd-hd>b{font:700 12px 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#7a8a8d}
+.nd-slim .nd-row{display:flex;flex-wrap:wrap;gap:6px;margin:0}
+.nd-slim .nd-c{padding:7px 11px;font-size:14px;white-space:nowrap}
+.nd-sel{position:relative;display:inline-flex}
+.nd-sel select{appearance:none;-webkit-appearance:none;border:1.5px solid #E2D9C9;border-radius:999px;background:#fff;padding:6px 30px 6px 13px;font:500 14px 'DM Sans',sans-serif;color:#13282C;cursor:pointer}
+.nd-sel:after{content:"";position:absolute;right:13px;top:50%;width:6px;height:6px;border-right:2px solid #13282C;border-bottom:2px solid #13282C;transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.nd-sel.on select{background:#13282C;border-color:#13282C;color:#fff}
+.nd-sel.on:after{border-color:#fff}
+.nd-sel select:focus-visible{outline:3px solid #0F6E72;outline-offset:2px}
+.nd-fine{margin:8px 0 0;font:400 14px 'DM Sans',sans-serif;color:#566669}
+.nd-fine b{color:#C65213}
+.nd-slim .nd-clear{border:0;background:none;padding:0;font:700 14px 'DM Sans',sans-serif;color:#0F6E72;cursor:pointer}
+.vm-left .nd-slim+.nd-feel{margin-top:6px}
+.vm-bar>.slv-sub{flex:1;margin:0 12px}
+.vm-left .nd-feel{padding-left:0;padding-right:0}

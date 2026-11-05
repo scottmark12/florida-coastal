@@ -41,7 +41,7 @@ def flows():
     F.append(("dk-home-style", "index.html?hero=a", DESK, [("style", lambda pg: tap(pg, ".dk-map .vp-pc", 900))]))
     # Vibe Map with filters, a style, a town, list
     F.append(("dk-vibemap", "map.html", DESK, [
-        ("budget", lambda pg: tap(pg, "[data-nbud='500']")),
+        ("budget", lambda pg: pg.select_option("[data-nbudsel]", "500")),
         ("flood", lambda pg: tap(pg, "[data-need='flood']")),
         ("style", lambda pg: tap(pg, ".vm-tile[data-vibe='dock']", 1200)),
         ("town", lambda pg: tap(pg, "[data-vpick]", 2500)),

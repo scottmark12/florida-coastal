@@ -168,7 +168,7 @@ const VM_OUT_ICON='<svg aria-hidden="true" width="15" height="15" viewBox="0 0 2
 /* Desktop (1000px and up), map page only */
 function tmapDesk(f,a,s,o){
   vmSync(s,!1);
-  const bar=`<div class="vm-bar"><h1 class="vm-title">Vibe Map</h1>${vPhoneTop(o)}${pageToggle("map")}</div>`;
+  const bar=`<div class="vm-bar"><h1 class="vm-title">Vibe Map</h1>${vPhoneTop(o,!S.vibe)}${pageToggle("map")}</div>`;
   if(S.vlist){const L=smapOrder(),nm=S.vibe?(VSHORT[S.vibe]||VIBES[S.vibe]):null;return `${bar}<div class="wrap tmap-list"><p class="tml-head">${L.length} ${nm?nm+" towns":"beach towns"}, in coast order from the Panhandle around to the Keys.</p><div class="grid4">${L.map(tcard).join("")}</div></div>`}
   const W=vmW(),H=Math.max(520,window.innerHeight-(window.__vmHHu=vmHH())-VM.barH);vmWH=[W,window.innerHeight];const fr=vmFrame(!0,W,H,s),card=!!(S.vcard&&s),z=S.vmMan?S.vmMan.z:S.vmz||1;
   return `${bar}<div class="vm-stage" style="height:${H}px"><div class="vm-map mapbox">${vmSVG(f,fr)}</div>${vmLeft(o,s)}${card?vmCard(s):S.vmSeen?"":vmIntro()}<div class="vm-zoom"><button data-vmz="in" aria-label="Zoom in">+</button><button data-vmz="out" aria-label="Zoom out"${z<=1?" disabled":""}>−</button></div>${z>1||card?`<button class="vm-out" data-vmout="1" style="left:${fr.gx.toFixed(0)}px">${VM_OUT_ICON}${vmOutTxt(o)}</button>`:""}</div>`;
@@ -768,9 +768,9 @@ function vPanel(o,s){
   return `<aside class="vpanel" aria-label="Vibe Map panel">${body}${top}</aside>`;
 }
 function vCta(){return "map"===curRoute()?'<div class="vp-cta"><a class="btn btn-accent" href="#quiz">See your top 5 towns</a><p>'+SQ.length+' quick questions, matched to how you live</p></div>':""}
-function vPhoneTop(o){
+function vPhoneTop(o,nc){
   const V=vGroups().flatMap(g=>g[1]),ord=S.vibe?[S.vibe].concat(V.filter(v=>v!==S.vibe)):V,n=needOn()?needCount():S.vibe?o[S.vibe]:T.length;
-  return `<div class="vp-chips" role="group" aria-label="Pick a town style"><button class="vp-c${S.vibe?"":" on"}" data-vibe="">All</button>${ord.map(v=>`<button class="vp-c${S.vibe===v?" on":""}" data-vibe="${v}" style="--vc:${VCOL[v]}${"beaches"===v||"active"===v?";--vt:#1A2A2E":""}"><i style="background:${VCOL[v]}"></i>${VSHORT[v]||VIBES[v]}</button>`).join("")}</div><div class="vp-switch" role="group" aria-label="Show as"><button data-vlist="0" aria-pressed="${!S.vlist}">Map</button><button data-vlist="1" aria-pressed="${!!S.vlist}">List · ${n}</button></div>`;
+  return `${nc?`<p class="slv-sub">Every beach town, by what it feels like.</p>`:`<div class="vp-chips" role="group" aria-label="Pick a town style"><button class="vp-c${S.vibe?"":" on"}" data-vibe="">All</button>${ord.map(v=>`<button class="vp-c${S.vibe===v?" on":""}" data-vibe="${v}" style="--vc:${VCOL[v]}${"beaches"===v||"active"===v?";--vt:#1A2A2E":""}"><i style="background:${VCOL[v]}"></i>${VSHORT[v]||VIBES[v]}</button>`).join("")}</div>`}<div class="vp-switch" role="group" aria-label="Show as"><button data-vlist="0" aria-pressed="${!S.vlist}">Map</button><button data-vlist="1" aria-pressed="${!!S.vlist}">List · ${n}</button></div>`;
 }
 document.addEventListener("click",function(e){
   if(!e.target.closest)return;
@@ -1144,13 +1144,19 @@ function needN(){return Object.keys(S.need).filter(k=>S.need[k]).length}
 function ndBtn(){return `<button class="nd-open${needOn()?" on":""}" data-nopen="1">What you need${needOn()?` · ${needN()}`:""}</button>`}
 function ndChip(){if(!needOn())return"";const c=needCount(),k=needN();return `<div class="nd-mapchip${S.vibe||S.vcard?" low":""}"><button data-nopen="1">${k} filter${1===k?"":"s"} · <b>${c}</b> town${1===c?"":"s"}</button><button data-nclear="1" aria-label="Clear filters">Clear</button></div>`}
 function needCount(){return T.filter(e=>(!S.vibe||e.vibes.includes(S.vibe))&&needOk(e)).length}
-function needsHTML(ph){
+/* desktop panel: one slim row, a budget menu and three chips, so the style photos stay above the fold */
+const NSHORT={flood:"Low flood risk",school:"Good schools",air:"Near airport"};
+function needsHTML(){
   const n=S.need,c=needCount();
-  return `<div class="nd${ph?" nd-ph":""}" role="group" aria-label="What you need"><div class="nd-hd"><b>What you need</b>${needOn()?`<button class="nd-clear" data-nclear="1">Clear</button>`:`<span>Optional</span>`}</div>
-  <div class="nd-row">${NBUD.map(([v,l])=>`<button class="nd-c${(n.bud||0)===v?" on":""}" data-nbud="${v}" aria-pressed="${(n.bud||0)===v}">${l}</button>`).join("")}</div>
-  <div class="nd-row">${NEEDS.map(([k,l])=>`<button class="nd-c${n[k]?" on":""}" data-need="${k}" aria-pressed="${!!n[k]}">${n[k]?"✓ ":""}${l}</button>`).join("")}</div>
-  ${needOn()?`<p class="nd-n" aria-live="polite"><b>${c}</b> town${1===c?"":"s"} match${1===c?"es":""}${S.vibe?` in ${VSHORT[S.vibe]||VIBES[S.vibe]}`:""}.${n.flood?" Flood scores cover the 50 towns we've rated so far.":""}</p>`:""}</div>`;
+  return `<div class="nd nd-slim" role="group" aria-label="What you need"><div class="nd-hd"><b>What you need</b><label class="nd-sel${n.bud?" on":""}"><span class="sr-only">Budget</span><select data-nbudsel="1">${NBUD.map(([v,l])=>`<option value="${v}"${(n.bud||0)===v?" selected":""}>${l}</option>`).join("")}</select></label></div>
+  <div class="nd-row">${NEEDS.map(([k,l])=>`<button class="nd-c${n[k]?" on":""}" data-need="${k}" aria-pressed="${!!n[k]}" title="${l}">${NSHORT[k]||l}</button>`).join("")}</div>
+  ${needOn()?`<p class="nd-fine" aria-live="polite"><b>${c}</b> town${1===c?"":"s"} match${1===c?"es":""}${n.flood?", flood scored towns only":""} · <button class="nd-clear" data-nclear="1">Clear</button></p>`:""}</div>`;
 }
+document.addEventListener("change",function(e){
+  const t=e.target;if(!t.matches||!t.matches("[data-nbudsel]"))return;
+  S.need.bud=+t.value||0;S.vcard=!1;try{track("need_tap","bud "+(t.value||"0"))}catch(x){}
+  window.__vmCur=null;rerenderMap();
+});
 document.addEventListener("click",function(e){
   if(!e.target.closest)return;const b=e.target.closest("[data-need],[data-nbud],[data-nclear]");if(!b)return;
   e.preventDefault();e.stopPropagation();
