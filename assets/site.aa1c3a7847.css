@@ -3953,3 +3953,13 @@ body.nd-lock{overflow:hidden}
 .nd-fine{font-size:15px}
 .nd-fine,.nd-slim .nd-clear{font-size:15px}
 .vm-intro{width:400px}.vm-intro .vm-cb p a{white-space:nowrap}
+/* Nov 5: budget menu and both chips on one line */
+.nd-slim .nd-row{flex-wrap:nowrap;gap:6px}
+.nd-slim .nd-c{padding:8px 12px;font-size:15px}
+.nd-sel select{padding:8px 28px 8px 12px;font-size:15px}
+.nd-sel:after{right:12px}
+.nd-slim .nd-row{gap:5px}
+.nd-slim .nd-c{padding:8px 10px}
+.nd-sel select{padding:8px 26px 8px 11px}
+.nd-sel:after{right:11px}
+.nd-slim .nd-row{flex-wrap:wrap}

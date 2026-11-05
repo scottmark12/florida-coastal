@@ -1159,11 +1159,11 @@ function ndBtn(){return `<button class="nd-open${needOn()?" on":""}" data-nopen=
 function ndChip(){if(!needOn())return"";const c=needCount(),k=needN();return `<div class="nd-mapchip${S.vibe||S.vcard?" low":""}"><button data-nopen="1">${k} filter${1===k?"":"s"} · <b>${c}</b> town${1===c?"":"s"}</button><button data-nclear="1" aria-label="Clear filters">Clear</button></div>`}
 function needCount(){return T.filter(e=>(!S.vibe||e.vibes.includes(S.vibe))&&needOk(e)).length}
 /* desktop panel: one slim row, a budget menu and three chips, so the style photos stay above the fold */
-const NSHORT={school:"Good schools",air:"Near an airport"};
+const NSHORT={school:"Good schools",air:"Near airport"};
 function needsHTML(){
   const n=S.need,c=needCount();
-  return `<div class="nd nd-slim" role="group" aria-label="What you need"><div class="nd-hd"><b>What you need</b><label class="nd-sel${n.bud?" on":""}"><span class="sr-only">Budget</span><select data-nbudsel="1">${NBUD.map(([v,l])=>`<option value="${v}"${(n.bud||0)===v?" selected":""}>${l}</option>`).join("")}</select></label></div>
-  <div class="nd-row">${NEEDS.map(([k,l])=>`<button class="nd-c${n[k]?" on":""}" data-need="${k}" aria-pressed="${!!n[k]}" title="${l}">${NSHORT[k]||l}</button>`).join("")}</div>
+  return `<div class="nd nd-slim" role="group" aria-label="What you need"><div class="nd-hd"><b>What you need</b></div>
+  <div class="nd-row"><label class="nd-sel${n.bud?" on":""}"><span class="sr-only">Budget</span><select data-nbudsel="1">${NBUD.map(([v,l])=>`<option value="${v}"${(n.bud||0)===v?" selected":""}>${l}</option>`).join("")}</select></label>${NEEDS.map(([k,l])=>`<button class="nd-c${n[k]?" on":""}" data-need="${k}" aria-pressed="${!!n[k]}" title="${l}">${NSHORT[k]||l}</button>`).join("")}</div>
   ${needOn()?`<p class="nd-fine" aria-live="polite"><b>${c}</b> town${1===c?"":"s"} match${1===c?"es":""} · <button class="nd-clear" data-nclear="1">Clear</button></p>`:""}</div>`;
 }
 document.addEventListener("change",function(e){
