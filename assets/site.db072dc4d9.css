@@ -3807,3 +3807,7 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .pf-wrap .sl-tl p.pf-sig{font:italic 400 18px/1.2 'Libre Caslon Text',Georgia,serif!important;color:#C65213!important;margin:10px 0 16px!important}
 .pf-wrap .pf-hd span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .pf-wrap .pf-n{min-height:13px}
+/* Nov 5: lead question headline and questions in DM Sans ExtraLight (Caslon kept only for the signature) */
+.pf-wrap .pf-hd b{font:200 23px/1.2 'DM Sans',sans-serif!important;letter-spacing:-.01em}
+.pf-wrap .sl-tl p.pf-q{font:200 21px/1.3 'DM Sans',sans-serif!important;letter-spacing:-.01em}
+.pf-wrap .sl-tl p.sl-tl-done{font:200 19px/1.45 'DM Sans',sans-serif!important;letter-spacing:-.005em}
