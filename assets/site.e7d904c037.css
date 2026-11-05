@@ -3726,3 +3726,7 @@ h2.svq{border:0;padding:0}
 .prose .fc-q h2{font-size:13px!important}
 .ar-facts dt{font-size:13px;color:#566669}
 .ar-facts dd small{font-size:14px;color:#566669}
+
+/* ===== Nov 4 2026 patch: results header, empty Slider Map ===== */
+body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
+.sl-empty{margin:6px 0 4px;padding:14px 16px;border:1px dashed var(--line);border-radius:10px;font-size:15px;line-height:1.45;color:#3d4d50;background:rgba(255,253,249,.7)}
