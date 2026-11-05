@@ -1242,16 +1242,16 @@ document.addEventListener("click",function(e){if(S.vmSeen||!e.target.closest)ret
    Needs mail/migrations/2026-11-05-lead-profile.sql applied first. ===== */
 function fcRef(){let r=null;try{r=crypto.randomUUID()}catch(e){r="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,c=>{const v=Math.random()*16|0;return(c==="x"?v:(v&3|8)).toString(16)})}window.__fcRef=r;return r}
 const PF_STEPS=[
-  {k:"timeline",q:"We picked our own town in two weeks. What's your timeline looking like?",y:"So we know whether to send listings now, or the things worth knowing first.",o:["This year","In 1 to 2 years","Still exploring"]},
-  {k:"plan",q:"Plenty of folks rent a season first to test drive a town. What feels right for you?",y:"It changes which towns make sense, and what we send you.",o:["Buy","Rent first","Not sure yet"]},
-  {k:"budget",q:"Ballpark is fine. What price range are you thinking?",y:"We'll point out the towns in your range, and what flood and insurance costs look like there.",o:["Under $400K","$400K to $750K","$750K to $1.5M","$1.5M and up","Not sure yet"]},
+  {k:"timeline",q:"When are you thinking of moving?",y:"So we know whether to send listings now, or the things worth knowing first.",o:["This year","In 1 to 2 years","Still exploring"]},
+  {k:"plan",q:"Buying or renting?",y:"Plenty of folks rent a season first. It changes which towns make sense.",o:["Buy","Rent first","Not sure yet"]},
+  {k:"budget",q:"What's your budget?",y:"We'll point out the towns in your range, and what flood and insurance costs look like there.",o:["Under $400K","$400K to $750K","$750K to $1.5M","$1.5M and up","Not sure yet"]},
   {k:"contact"}];
 const PF_CONSENT='<p class="pf-fine">By sharing your number, you\'re OK with us or a local agent calling or texting you about your move.</p>';
 function pfSave(ref,body){if(!ref)return;try{fetch(LEAD_API.replace("fc_leads","rpc/fc_lead_profile"),{method:"POST",headers:{apikey:LEAD_KEY,"Content-Type":"application/json"},body:JSON.stringify(Object.assign({p_ref:ref},body)),keepalive:!0}).catch(()=>{})}catch(e){}}
 function pfKnowsBudget(){try{return null!=S.budget&&!!BUDGET[S.budget]}catch(e){return!1}}
 function pfStep(i,hot,last){
   const st=PF_STEPS[i],skip=i>0?'<button type="button" class="linkbtn pf-skip" data-pfskip="1">Skip</button>':"";
-  if("contact"===st.k)return `<span class="pf-n"></span><p class="pf-q">${hot?"Want to see it in person? Leave your name and number and we'll have a local who knows the area give you a call.":"Whenever you're ready, we can have a local who knows the area give you a call. Leave a name and number if you'd like."}</p><p class="pf-y">Someone who lives there, not a call center.</p>
+  if("contact"===st.k)return `<span class="pf-n"></span><p class="pf-q">${hot?"Want to see it in person?":"Want a local to call you?"}</p><p class="pf-y">${hot?"Leave a name and number. A local who knows the area will call you.":"Whenever you're ready. Someone who lives there, not a call center."}</p>
     <form class="pf-contact" style="display:grid;gap:8px"><div class="row2" style="display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))"><label class="sr-only" for="pf-n${i}">Name</label><input id="pf-n${i}" name="name" autocomplete="name" placeholder="Name"><label class="sr-only" for="pf-p${i}">Phone</label><input id="pf-p${i}" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Phone"></div>${PF_CONSENT}<div class="sl-tl-next"><button class="btn btn-accent" type="submit">Send</button>${skip}</div></form>`;
   return `<span class="pf-n"></span><p class="pf-q">${st.q}</p><p class="pf-y">${st.y}</p><div class="sl-tlb${st.o.length>3?" pf-2col":""}">${st.o.map(x=>`<button type="button" data-pf="${st.k}" data-v="${x}">${x}</button>`).join("")}</div>${skip}`;
 }
