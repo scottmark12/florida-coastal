@@ -5,7 +5,7 @@
 import { createClient } from "npm:@supabase/supabase-js@2";
 import * as PDF from "npm:pdf-lib@1.17.1";
 import fontkit from "npm:@pdf-lib/fontkit@1.1.1";
-import { render, buildGuideEmail, buildNoteEmail, buildWelcomeEmail, pickTowns } from "./render.js";
+import { render, buildGuideEmail, buildNoteEmail, buildWelcomeEmail, buildTownEmail, buildStoryEmail, buildHonestEmail, buildNextEmail, pickTowns } from "./render.js";
 
 const SITE = "https://www.floridacoastal.co";
 const sb = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!, { auth: { persistSession: false } });
@@ -39,7 +39,10 @@ async function upload(path: string, body: Uint8Array | string, type: string) {
 async function processRow(row: any, settings: any, dry: boolean) {
   const { data: lead, error } = await sb.from("fc_leads").select("*").eq("id", row.lead_id).single();
   if (error || !lead) throw new Error("lead not found");
-  const enabled = { top5: settings.top5_enabled, guide: settings.guide_enabled && !!settings.guide_url, welcome: settings.guide_enabled && !!settings.guide_url, note: settings.note_enabled }[row.step as "top5"];
+  /* Shortlist series (Nov 4 2026): town, story, honest, next run when series_enabled is on; story and note also need Dad's OK (note_enabled) */
+  const series = !!settings.series_enabled;
+  const enabled = { top5: settings.top5_enabled, guide: settings.guide_enabled && !!settings.guide_url, welcome: settings.guide_enabled && !!settings.guide_url, note: settings.note_enabled,
+    town: series, story: series && settings.note_enabled, honest: series, next: series }[row.step as "top5"];
   if (!enabled && !dry) return { status: "hold", error: "step turned off in fc_email_settings" };
   if (row.step !== "top5" && !["new", "test"].includes(lead.status)) return { status: "skipped", error: `lead status is ${lead.status}` };
 
@@ -58,7 +61,19 @@ async function processRow(row: any, settings: any, dry: boolean) {
     mail = buildWelcomeEmail(lead, settings.guide_url);
   } else {
     const picks = pickTowns(lead, a.towns);
-    mail = row.step === "guide" ? buildGuideEmail(lead, picks, settings.guide_url) : buildNoteEmail(lead, picks);
+    if (row.step === "next") {
+      /* timeline: the lead's own answer, or a one tap link from the top5 email (event "timeline", detail ends in L<lead id>) */
+      let tl = lead.timeline ? ({ "This year": "this-year", "In 1 to 2 years": "1-2-years", "Just dreaming": "dreaming" } as any)[lead.timeline] : null;
+      if (!tl) {
+        const { data: ev } = await sb.from("fc_events").select("detail").eq("event", "timeline").like("detail", `%L${lead.id}`).order("created_at", { ascending: false }).limit(1);
+        const d = ev && ev[0] && ev[0].detail || ""; tl = d.startsWith("this-year") ? "this-year" : d ? "later" : null;
+      }
+      mail = buildNextEmail(lead, picks, tl);
+    } else {
+      mail = { guide: () => buildGuideEmail(lead, picks, settings.guide_url), note: () => buildNoteEmail(lead, picks), town: () => buildTownEmail(lead, picks),
+        story: () => buildStoryEmail(lead, picks), honest: () => buildHonestEmail(lead, picks) }[row.step as "guide"]();
+    }
+    if (!mail) return { status: "skipped", error: "nothing to send for this lead" };
     // the guide itself goes out as a link in the top 5 email; day 3 is a short nudge with no attachment
   }
   const preview_url = await upload(`preview/${row.id}-${crypto.randomUUID()}.html`, mail.html, "text/html");

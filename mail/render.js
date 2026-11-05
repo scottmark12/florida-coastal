@@ -56,6 +56,21 @@ export function pickTowns(lead, towns, now = new Date()) {
 
 /* ---------------------------------------------------------------- EMAIL */
 
+/* One tap "when are you moving?" links. Each lands on their No. 1 town page; the site logs it as event
+   "timeline" with the lead id, so later emails can branch without a form. */
+const TL = [["this-year", "This year"], ["1-2-years", "In 1 to 2 years"], ["dreaming", "Just dreaming"]];
+function tlLink(lead, t, key) {
+  const base = (t && t.url) || SITE + "/find-your-mile.html";
+  return `${base}?utm_source=email&utm_campaign=top5&utm_content=tl-${key}-L${lead.id}`;
+}
+function timelineAsk(lead, t) {
+  const btn = ([k, label]) => `<td style="padding:0 8px 8px 0;"><a href="${tlLink(lead, t, k)}" style="display:inline-block;padding:11px 16px;border:1.5px solid ${C.line};border-radius:999px;font-family:${F_BODY};font-size:14.5px;font-weight:700;color:${C.ink};text-decoration:none;background:${C.white};">${label}</a></td>`;
+  return `<tr><td class="px" style="padding:24px 40px 0 40px;">
+    <p style="margin:0 0 10px 0;font-family:${F_BODY};font-size:15px;line-height:1.5;color:${C.ink};"><b>One tap, so we send the right things:</b> when are you thinking of moving?</p>
+    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>${TL.map(btn).join("")}</tr></table>
+  </td></tr>`;
+}
+
 const F_BODY = "'DM Sans','Helvetica Neue',Arial,sans-serif";
 const F_HEAD = "'Fraunces',Georgia,'Times New Roman',serif";
 
@@ -90,7 +105,7 @@ export function buildEmail(lead, picks, opts = {}) {
   const list = names.length > 1 ? names.slice(0, -1).join(", ") + " and " + names.at(-1) : names[0] || "";
   const hasPdf = opts.hasPdf !== false;
   const saved = isSaved(lead);
-  const subject = opts.subject || (saved ? "The Florida towns you saved" : "Your top 5 Florida towns");
+  const subject = opts.subject || (saved ? "The Florida towns you saved" : "Your Florida Shortlist is here");
   const html = `<!doctype html>
 <html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="x-apple-disable-message-reformatting"><meta name="color-scheme" content="light">
 <title>${esc(subject)}</title>
@@ -104,9 +119,10 @@ export function buildEmail(lead, picks, opts = {}) {
   <tr><td class="px" style="padding:0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td height="3" style="height:3px;line-height:3px;font-size:0;background:${C.rust};background-image:linear-gradient(90deg,${C.rust},${C.peach} 60%,${C.white});border-radius:2px;">&nbsp;</td></tr></table></td></tr>
   <tr><td class="px" style="padding:34px 40px 8px 40px;">
     <p style="margin:0 0 12px 0;font-family:${F_BODY};font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:${C.rust};">${saved ? "Saved from your visit" : "Find Your Mile &middot; Your results"}</p>
-    <h1 class="hero-h" style="margin:0;font-family:${F_HEAD};font-weight:400;font-size:46px;line-height:1.1;letter-spacing:-.01em;color:${C.ink};">${saved ? `Your saved<br>Florida towns` : `Your top ${picks.length}<br>Florida towns`}</h1>
+    <h1 class="hero-h" style="margin:0;font-family:${F_HEAD};font-weight:400;font-size:46px;line-height:1.1;letter-spacing:-.01em;color:${C.ink};">${saved ? `Your saved<br>Florida towns` : `Your Florida<br>Shortlist`}</h1>
     <p style="margin:18px 0 0 0;font-family:${F_BODY};font-size:17px;line-height:1.6;color:${C.muted};">${name ? `Hi ${esc(name)}, here` : "Here"} ${saved ? `are the ${picks.length === 1 ? "town" : picks.length + " towns"} you looked at, with the honest details on each.` : `are the ${picks.length === 5 ? "five" : picks.length} towns that fit how you want to live, with the honest details on each.`}${hasPdf ? ` Your personal Florida Shortlist is attached as a PDF${picks.length > 1 ? ", with " + (picks.length === 5 ? "all five" : "them") + " side by side" : ""}. It's a good one to print or share.` : ""}</p>
   </td></tr>
+  ${!saved && lead && lead.id ? timelineAsk(lead, picks[0]) : ""}
   ${opts.guideUrl ? `<tr><td class="px" style="padding:26px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.tint};border-radius:12px;"><tr>
     <td width="112" valign="top" style="padding:18px 0 18px 18px;"><a href="${opts.guideUrl}"><img src="${SITE}/img/guide/cover-thumb.jpg" width="94" alt="The Move and Belong Guide" style="display:block;width:94px;height:auto;border:0;"></a></td>
     <td valign="top" style="padding:18px 18px 18px 16px;font-family:${F_BODY};">
@@ -124,7 +140,7 @@ export function buildEmail(lead, picks, opts = {}) {
   <tr><td style="padding:40px 0 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.ink};"><tr><td class="px" align="center" style="padding:40px 40px 38px 40px;">
     <img src="${SITE}/img/mail/our-story.jpg" width="76" height="76" alt="Mark and Betsy Scott" style="display:block;width:76px;height:76px;border-radius:50%;border:3px solid ${C.white};margin:0 auto 18px auto;">
     <h2 style="margin:0;font-family:${F_HEAD};font-weight:400;font-size:28px;line-height:1.2;color:${C.white};">Questions about any of these?</h2>
-    <p style="margin:12px auto 24px auto;max-width:420px;font-family:${F_BODY};font-size:16px;line-height:1.6;color:${C.soft};">Just reply to this email. The Scott family reads every message, and we've lived on this coast for 20 years.</p>
+    <p style="margin:12px auto 24px auto;max-width:420px;font-family:${F_BODY};font-size:16px;line-height:1.6;color:${C.soft};">Just reply to this email. The Scott family reads every message, and we've lived on this coast for 20 years. Moving with someone? Forward this to them. It's easier to pick a town together.</p>
     <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="background:${C.rust};border-radius:999px;"><a href="mailto:hello@floridacoastal.co?subject=Question%20about%20my%20top%205" style="display:inline-block;padding:14px 30px;font-family:${F_BODY};font-size:15px;font-weight:700;letter-spacing:.02em;color:${C.white};text-decoration:none;">Ask a local</a></td></tr></table>
     <p style="margin:26px 0 0 0;font-family:${F_HEAD};font-style:italic;font-size:17px;color:${C.peach};">Mark and Betsy Scott</p>
   </td></tr></table></td></tr>
@@ -498,4 +514,136 @@ export function buildWelcomeEmail(lead, guideUrl) {
   <p style="margin:0;font-family:${F_BODY};font-size:15px;line-height:1.6;color:${C.muted};">After this, one short letter a month about the coast. Questions? Just reply.<br><span style="font-family:${F_HEAD};font-style:italic;color:${C.rustDark};">Mark and Betsy Scott</span></p></td></tr>`;
   const text = `${name ? `Hi ${name}, here` : "Here"}'s the Move and Belong Guide: ${url}\n\nStill picking your town? Take the free quiz: ${SITE}/find-your-mile.html\n\nAfter this, one short letter a month about the coast. Questions? Just reply.\nMark and Betsy Scott\nFlorida Coastal`;
   return { subject, html: shell(subject, "How to go from new in town to knowing people in your first 90 days.", rows), text };
+}
+
+/* ======================================================================
+   Nov 4 2026: the Shortlist series. One email at a time, each with one job.
+   Day 0  top5    Your Florida Shortlist (above): PDF, one tap timeline, reply ask, forward to partner
+   Day 1  town    A Saturday in your No. 1 town
+   Day 3  guide   Pick your three (Move and Belong)
+   Day 5  story   We had two weeks (Dad's story, plain text)
+   Day 7  note    Which one are you leaning toward? (plain text, reply)
+   Day 10 honest  Before you fall for your No. 1 town (the honest checklist)
+   Day 14 next    Branches on timeline: This year -> see it in person; otherwise -> test drive it
+   Then   letter  The Coast Report, once a month, same four parts every time
+   Every email: one link that matters, a reason to reply, signed by a person.
+   ====================================================================== */
+const U = (step) => `utm_source=email&utm_campaign=${step}`;
+const short = (t) => String((t && t.name) || "").replace(/\s*\(.*\)$/, "");
+const btn = (href, label) => `<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${C.rust};border-radius:999px;"><a href="${href}" style="display:inline-block;padding:14px 28px;font-family:${F_BODY};font-size:15px;font-weight:700;color:${C.white};text-decoration:none;">${label}</a></td></tr></table>`;
+const eyebrow = (t) => `<p style="margin:0 0 12px 0;font-family:${F_BODY};font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:${C.rust};">${t}</p>`;
+const h1 = (t) => `<h1 class="hero-h" style="margin:0 0 18px 0;font-family:${F_HEAD};font-weight:400;font-size:40px;line-height:1.12;color:${C.ink};">${t}</h1>`;
+const sign = (who = "Mark and Betsy Scott") => `<p style="margin:22px 0 0 0;font-family:${F_HEAD};font-style:italic;font-size:17px;color:${C.rustDark};">${who}</p>`;
+const LABEL = { nightlife: "nightlife", meet: "meeting people", quiet: "peace and quiet", walk: "walkability", water: "the water", beaches: "beaches", dining: "dining", outdoors: "the outdoors", afford: "price", airport: "the airport" };
+function strengths(t) {
+  return Object.entries(t.scores || {}).filter(([, v]) => v >= 4).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([k]) => LABEL[k]).filter(Boolean);
+}
+const and = (a) => a.length > 1 ? a.slice(0, -1).join(", ") + " and " + a.at(-1) : a[0] || "";
+
+/* plain text letters from a person (Basecamp, Superhuman style): no images, no buttons */
+function plain(subject, paras) {
+  const html = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(subject)}</title></head><body style="margin:0;padding:24px 16px;background:#FFFFFF;">
+<div style="max-width:560px;font-family:'DM Sans','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.65;color:${C.ink};">${paras.map((b) => `<p style="margin:0 0 16px 0;">${b}</p>`).join("")}
+<p style="margin:28px 0 0 0;font-size:12px;color:#7E8F92;">Florida Coastal &middot; <a href="${SITE}/?${U("letter")}" style="color:#7E8F92;">floridacoastal.co</a> &middot; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:#7E8F92;">Unsubscribe</a></p></div></body></html>`;
+  const text = paras.join("\n\n").replace(/<br>/g, "\n").replace(/<[^>]+>/g, "");
+  return { subject, html, text };
+}
+
+/* Day 1: A Saturday in your No. 1 town (Airbnb / Zillow: go deep on the one place they care about) */
+export function buildTownEmail(lead, picks) {
+  const t = picks[0]; if (!t) return null;
+  const name = firstName(lead.name), s = short(t), good = strengths(t), url = `${t.url}?${U("town")}`;
+  const subject = `A Saturday in ${s}`;
+  const picksHtml = (t.picks || []).map((p) => `<p style="margin:8px 0 0 0;font-family:${F_BODY};font-size:15px;line-height:1.5;color:${C.ink};"><b style="color:${C.rustDark};">${esc(p.name)}.</b> ${esc(p.note)}</p>`).join("");
+  const rows = `
+<tr><td class="px" style="padding:30px 40px 0 40px;"><a href="${url}"><img src="${t.mail_img}" width="520" alt="${esc(t.name)}" style="display:block;width:100%;max-width:520px;height:auto;border:0;border-radius:12px;"></a></td></tr>
+<tr><td class="px" style="padding:26px 40px 6px 40px;">
+  ${eyebrow(`Your No. 1 town &middot; ${esc(t.coast)}`)}
+  ${h1(`A Saturday in ${esc(s)}`)}
+  ${P(`${name ? `Hi ${esc(name)}. ` : ""}Of your five, ${esc(s)} came out on top. Here's what a regular Saturday there looks like, from people who've spent them on this coast.`)}
+  <p style="margin:0 0 18px 0;font-family:${F_HEAD};font-size:21px;line-height:1.45;color:${C.ink};">${esc(t.day || t.blurb)}</p>
+  ${picksHtml ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${C.tint};border-radius:10px;padding:14px 18px;"><p style="margin:0;font-family:${F_BODY};font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${C.rust};">Your first weekend</p>${picksHtml}</td></tr></table>` : ""}
+  ${P(`${good.length ? `It scored best for you on <b>${esc(and(good))}</b>. ` : ""}${t.season ? `The season: ${esc(t.season)}. ` : ""}${t.watch ? `The honest part: ${esc(t.watch)}.` : ""}`, "margin-top:18px;")}
+</td></tr>
+<tr><td class="px" style="padding:4px 40px 34px 40px;">${btn(url, `See all of ${esc(s)}`)}
+  ${P(`What would you want to know about ${esc(s)} that a website can't tell you? Hit reply. We answer every one.`, "margin-top:22px;color:" + C.muted + ";")}${sign()}</td></tr>`;
+  const text = `${name ? `Hi ${name}. ` : ""}Of your five, ${s} came out on top. A Saturday there:\n\n${t.day || t.blurb}\n\nThe season: ${t.season}. The honest part: ${t.watch}.\n\n${url}\n\nWhat would you want to know about ${s} that a website can't tell you? Hit reply.\nMark and Betsy Scott`;
+  return { subject, html: shell(subject, `What a regular Saturday in ${s} looks like.`, rows), text };
+}
+
+/* Day 5: our story (the founder letter: why we built this, told once, honestly). DAD TO APPROVE. */
+export function buildStoryEmail(lead, picks) {
+  const name = firstName(lead.name), s = short(picks[0]);
+  return plain("We had two weeks", [
+    `Hi${name ? " " + esc(name) : ""},`,
+    `In 2005 Betsy and I sold our business and had about two weeks to pick a Florida town. Three kids, a house in Atlanta to sell, and a lot of advice from people who had never lived where they were sending us.`,
+    `We picked Tallahassee because everyone said it was the best place in Florida to raise kids. They were right about that. What nobody told us is that the right town depends on the life you want once you get there, not the one in the brochure.`,
+    `Years later we found our own mile on 30A. Live music on the weekends, good fishing a couple of miles offshore, most days a sunset and a view. Not a ton going on, but enough. We've ridden out a few hurricanes there too, Michael in 2018 included: a week without power, streets closed, some trees down. It's part of the deal, and we'd rather you hear that from us.`,
+    `That's why we built Florida Coastal. So you get more than two weeks and a guess.`,
+    `${s ? `What's the one thing about ${esc(s)} you'd want to ask someone who lives nearby?` : "What's the one thing you'd want to ask someone who lives here?"} Hit reply. I read every one.`,
+    `Mark Scott<br>Florida Coastal`,
+  ]);
+}
+
+/* Day 10: the honest checklist (Wirecutter / Consumer Reports: tell them the downside, earn the trust) */
+export function buildHonestEmail(lead, picks) {
+  const t = picks[0]; if (!t) return null;
+  const name = firstName(lead.name), s = short(t);
+  const subject = `Before you fall for ${s}`;
+  const checks = [
+    ["Visit in August, not just February.", "The town you love in winter is the town you live in all summer. Go once in the heat.", `${SITE}/articles/february-vs-august.html?${U("honest")}`],
+    ["Check the flood risk for the town, then the address.", `We rank 50 beach towns on flood risk. Then look up the flood zone and evacuation zone for any address you're serious about.`, `${SITE}/articles/flood-risk-rankings.html?${U("honest")}`],
+    ["Get an insurance quote for a real address.", "Homeowners and flood both. It can change the math more than the price of the house.", `${SITE}/articles/insurance.html?${U("honest")}`],
+    ["Drive to the airport at rush hour.", `For ${s} that's ${esc(t.airport || "the nearest airport")}. Do it on a weekday at 5pm.`, null],
+  ].map(([a, b, l]) => `<tr><td valign="top" width="26" style="padding:4px 0 14px 0;font-family:${F_HEAD};font-size:20px;line-height:1.2;color:${C.rust};">&#9744;</td><td style="padding:4px 0 14px 0;font-family:${F_BODY};font-size:15.5px;line-height:1.55;color:${C.ink};"><b>${a}</b> ${b}${l ? ` <a href="${l}" style="color:${C.sea};font-weight:700;">Read more</a>` : ""}</td></tr>`).join("");
+  const watch = picks.filter((x) => x.watch).map((x) => `<tr><td style="padding:6px 0;border-top:1px solid ${C.line};font-family:${F_BODY};font-size:14.5px;line-height:1.5;color:${C.ink};"><b>${esc(short(x))}:</b> ${esc(x.watch)}</td></tr>`).join("");
+  const rows = `
+<tr><td class="px" style="padding:34px 40px 6px 40px;">
+  ${eyebrow("The honest part")}
+  ${h1(`Before you fall for ${esc(s)}`)}
+  ${P(`${name ? `Hi ${esc(name)}, every` : "Every"} town on your list has a catch. That's not a reason to cross one off, it's a reason to check before you sign. Here's what we'd do first.`)}
+</td></tr>
+<tr><td class="px" style="padding:6px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${checks}</table></td></tr>
+${watch ? `<tr><td class="px" style="padding:10px 40px 0 40px;">${eyebrow("The heads up on each of your five")}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${watch}</table></td></tr>` : ""}
+<tr><td class="px" style="padding:22px 40px 34px 40px;">${P("Stuck on one of these? Reply and tell us which. We'll point you to the right source.")}${sign()}</td></tr>`;
+  const text = `${name ? `Hi ${name}, every` : "Every"} town on your list has a catch. Before you fall for ${s}:\n\n1. Visit in August, not just February.\n2. Check the flood risk: ${SITE}/articles/flood-risk-rankings.html\n3. Get an insurance quote for a real address.\n4. Drive to ${t.airport || "the airport"} at rush hour.\n\nStuck on one? Reply and tell us which.\nMark and Betsy Scott`;
+  return { subject, html: shell(subject, "Four things we'd check before signing anything.", rows), text };
+}
+
+/* Day 14: the next step, by timeline (real estate nurture: hot leads get a person, everyone else gets time) */
+export function buildNextEmail(lead, picks, timeline) {
+  const t = picks[0]; if (!t) return null;
+  const name = firstName(lead.name), s = short(t), soon = timeline === "this-year";
+  if (soon) return plain(`Want to see ${s} in person?`, [
+    `Hi${name ? " " + esc(name) : ""},`,
+    `You said you're thinking of moving this year, so here's the honest shortcut: one weekend on the ground in ${esc(s)} will tell you more than another month of reading.`,
+    `If you want help planning it, reply with roughly when you could go. We'll point you to the parts of town worth seeing, and if we know a good local there, we'll introduce you. If you'd rather talk it through, we're happy to do a quick call.`,
+    `And if ${esc(s)} isn't the one anymore, tell me that too. Your list can change.`,
+    `Mark Scott<br>Florida Coastal`,
+  ]);
+  const url = `${t.url}?${U("next")}`;
+  return plain(`How to test drive ${s}`, [
+    `Hi${name ? " " + esc(name) : ""},`,
+    `When you're ready to get serious about ${esc(s)}, here's the best way we know to test a town before you buy in it:`,
+    `<b>Rent for a few weeks, twice.</b> Once in the busiest month and once in the quietest. Live like you live there: grocery runs, the drive to the doctor, the Saturday thing you'd actually do every week.`,
+    `<b>Go to one thing that meets every week.</b> A run club, a church, a pickleball night. If you'd go back, that's a good sign.`,
+    `From here on we'll send one letter a month about the coast: one town worth knowing, one number, one honest heads up. <a href="${url}">${esc(s)} is here</a> whenever you want to look again.`,
+    `Mark Scott<br>Florida Coastal`,
+  ]);
+}
+
+/* Monthly: The Coast Report (James Clear 3-2-1 style: the same four parts every month, so it's fast to read and easy to write).
+   issue = { month, gem:{town,text,url}, number:{big,text}, heads:{text}, question } . Mark approves each one before it sends. */
+export function buildLetterEmail(lead, issue) {
+  const name = firstName(lead.name);
+  const subject = `The Coast Report: ${issue.month}`;
+  const part = (k, body) => `<tr><td class="px" style="padding:0 40px 22px 40px;">${eyebrow(k)}${body}</td></tr>`;
+  const rows = `
+<tr><td class="px" style="padding:32px 40px 10px 40px;">${h1(`The Coast Report`)}${P(`${name ? `Hi ${esc(name)}, here's` : "Here's"} this month on the Florida coast. Four things, two minutes.`)}</td></tr>
+${part("One town worth knowing", `<p style="margin:0 0 6px 0;font-family:${F_HEAD};font-size:24px;color:${C.ink};">${esc(issue.gem.town)}</p>${P(esc(issue.gem.text))}${issue.gem.url ? `<a href="${issue.gem.url}?${U("letter")}" style="font-family:${F_BODY};font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:${C.sea};text-decoration:none;">See the town &rarr;</a>` : ""}`)}
+${part("One number", `<p style="margin:0 0 4px 0;font-family:${F_HEAD};font-size:44px;line-height:1;color:${C.rust};">${esc(issue.number.big)}</p>${P(esc(issue.number.text))}`)}
+${part("One honest heads up", P(esc(issue.heads.text)))}
+${part("One question for you", `${P(esc(issue.question))}${P("Hit reply. We read every one, and the best answers end up in next month's letter.", "color:" + C.muted + ";")}`)}
+<tr><td class="px" style="padding:0 40px 32px 40px;">${sign()}</td></tr>`;
+  return { subject, html: shell(subject, `${issue.gem.town}, ${issue.number.big} and one question.`, rows), text: `The Coast Report: ${issue.month}\n\n${issue.gem.town}: ${issue.gem.text}\n\n${issue.number.big}: ${issue.number.text}\n\nHeads up: ${issue.heads.text}\n\n${issue.question} Hit reply.\nMark and Betsy Scott` };
 }

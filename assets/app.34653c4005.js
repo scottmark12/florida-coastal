@@ -1219,5 +1219,11 @@ document.addEventListener("click",function(e){
   try{track("save_tap","sticky")}catch(x){}
   setTimeout(()=>{const i=f.querySelector("input[type=email]");i&&i.focus({preventScroll:!0})},450);
 },!0);
+/* Nov 4: one tap "when are you moving?" links from the Shortlist email land here as utm_content=tl-<answer>-L<lead id> */
+(function(){try{const c=new URLSearchParams(location.search).get("utm_content")||"",m=c.match(/^tl-(this-year|1-2-years|dreaming)-L(\d+)$/);if(!m)return;
+  track("timeline",m[1]+" L"+m[2]);
+  const k="fc-tl-"+m[2];if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,"1");
+  const d=document.createElement("div");d.className="tl-toast";d.setAttribute("role","status");d.textContent="Thanks, got it. We'll send you the right things.";document.body.appendChild(d);setTimeout(()=>d.classList.add("out"),4200);setTimeout(()=>d.remove(),4800);
+}catch(e){}})();
 /* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
 "sliders"===curRoute()&&slDesk()&&route();
