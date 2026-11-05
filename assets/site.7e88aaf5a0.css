@@ -3815,3 +3815,12 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .pf-wrap .sl-tlb button,.pf-wrap .sl-tlb.pf-2col button{font-weight:600!important;font-size:17px!important}
 .pf-wrap .sl-tlb button::after,.pf-wrap .sl-tlb.pf-2col button::after{color:#C65213!important;font-weight:400}
 .pf-wrap .pf-n{min-height:14px;line-height:14px!important}
+/* Nov 5: done screen hands them something useful */
+.pf-wrap .pf-read{display:block;margin:4px 0 12px;padding:14px 0;border-top:1px solid rgba(21,42,46,.16);border-bottom:1px solid rgba(21,42,46,.16);text-decoration:none;color:#152A2E}
+.pf-wrap .pf-read i{display:block;font:600 11px/1.2 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#56696C;font-style:normal}
+.pf-wrap .pf-read b{display:block;margin-top:6px;font:600 17px/1.3 'DM Sans',sans-serif;color:#152A2E}
+.pf-wrap .pf-read b::after{content:"\00a0→";color:#C65213;font-weight:400}
+.pf-wrap .pf-read span{display:block;margin-top:3px;font:400 14px/1.4 'DM Sans',sans-serif;color:#56696C}
+.pf-wrap .pf-read:hover b{text-decoration:underline;text-underline-offset:3px}
+.pf-wrap .pf-ig{font:500 13px 'DM Sans',sans-serif;color:#56696C;text-decoration:underline;text-underline-offset:3px}
+.pf-wrap .sl-tl p.pf-sig{margin:8px 0 14px!important}

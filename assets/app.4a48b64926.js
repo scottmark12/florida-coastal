@@ -1255,13 +1255,18 @@ function pfStep(i,hot,last){
     <form class="pf-contact" style="display:grid;gap:8px"><div class="row2" style="display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))"><label class="sr-only" for="pf-n${i}">Name</label><input id="pf-n${i}" name="name" autocomplete="name" placeholder="Name"><label class="sr-only" for="pf-p${i}">Phone</label><input id="pf-p${i}" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Phone"></div>${PF_CONSENT}<div class="sl-tl-next"><button class="btn btn-accent" type="submit">Send</button>${skip}</div></form>`;
   return `<span class="pf-n"></span><p class="pf-q">${st.q}</p><p class="pf-y">${st.y}</p><div class="sl-tlb${st.o.length>3?" pf-2col":""}">${st.o.map(x=>`<button type="button" data-pf="${st.k}" data-v="${x}">${x}</button>`).join("")}</div>${skip}`;
 }
+const PF_READS={
+  "test-drive":["How to test drive a beach town before you move","A vacation shows you the best week of the year. Here's how to see the rest."],
+  "affordable-beach-towns":["Florida's most affordable beach towns","Ten towns that score a 5 on affordability, and why each is priced that way."],
+  "first-90-days":["Your first 90 days in a new beach town","A simple plan for making a new town feel like home."],
+  "insurance":["What nobody tells you about Florida home insurance","It can change your budget more than the price of the house."],
+  "flood-risk-rankings":["Florida beach towns ranked by flood risk","All 50 towns, so you know before you fall for one."]};
+function pfRead(w){const d=w.dataset;return"Rent first"===d.plan?"test-drive":"Under $400K"===d.budget?"affordable-beach-towns":"This year"===d.pftl?"first-90-days":d.budget&&"Not sure yet"!==d.budget?"insurance":"flood-risk-rankings"}
 function pfDone(w){
-  const ig='<a class="btn btn-line" href="https://www.instagram.com/floridacoastalco/" target="_blank" rel="noopener">Follow @floridacoastalco</a>';
-  const onRes=!!document.querySelector(".res-panel");
-  if("This year"===w.dataset.pftl){
-    const t=onRes&&(rankedTowns()[0]||{}).id;
-    return `<p class="sl-tl-done"><b>Thank you.</b> We'll be in touch soon. If anything comes up before then, just reply to our email.</p><p class="pf-sig">Mark and Betsy</p><div class="sl-tl-next">${t?`<a class="btn btn-accent" href="#contact-${t}">Ask a local →</a>`:""}${ig}</div>`}
-  return `<p class="sl-tl-done"><b>Thanks, that helps.</b> We share a beach town or two every week on Instagram, the good and the honest.</p><p class="pf-sig">Mark and Betsy</p><div class="sl-tl-next">${ig}${onRes?'<button class="linkbtn" data-card="1">Share my result</button>':""}</div>`;
+  const k=pfRead(w),r=PF_READS[k],hot="This year"===w.dataset.pftl;
+  const card=`<a class="pf-read" href="/articles/${k}.html"><i>Worth a read while you wait</i><b>${r[0]}</b><span>${r[1]}</span></a>`;
+  const ig='<a class="pf-ig" href="https://www.instagram.com/floridacoastalco/" target="_blank" rel="noopener">Follow along on Instagram</a>';
+  return `<p class="sl-tl-done">${hot?"Thank you. We'll be in touch soon. If anything comes up before then, just reply to our email.":"Thanks, that helps. We'll use it to send you the right towns."}</p><p class="pf-sig">Mark and Betsy</p>${card}${ig}`;
 }
 /* every step sits in the same grid cell, so the box is always the size of the tallest step */
 function pfAll(){return PF_STEPS.map((st,i)=>`<div class="pf-s${i?"":" on"}" data-i="${i}"${i?' aria-hidden="true" inert':""}>${pfStep(i,!1,!0)}</div>`).join("")+'<div class="pf-s pf-end" data-i="end" aria-hidden="true" inert></div>'}
@@ -1274,7 +1279,7 @@ function pfShow(w,key){
 function pfNext(w){
   const o=pfOrder(w),pos=+(w.dataset.pos||0)+1;w.dataset.pos=pos;
   const hd=w.parentNode&&w.parentNode.querySelector(".pf-hd");
-  if(hd)hd.innerHTML='<i class="pf-eb">From Mark and Betsy</i>'+(pos>=o.length?"<b>That's everything.</b><span>Your email should be there by now.</span>":"<b>Thanks, just a couple more.</b><span>Skip anything you'd rather not answer.</span>");
+  if(hd)hd.innerHTML='<i class="pf-eb">From Mark and Betsy</i>'+(pos>=o.length?"<b>That's everything.</b><span>Check your inbox for your email from us.</span>":"<b>Thanks, just a couple more.</b><span>Skip anything you'd rather not answer.</span>");
   if(pos>=o.length){w.querySelector(':scope>.pf-s[data-i="end"]').innerHTML=pfDone(w);pfSave(w.dataset.ref,{p_done:!0});try{track("profile","done")}catch(x){}return pfShow(w,"end")}
   pfShow(w,o[pos]);
 }
@@ -1303,6 +1308,7 @@ document.addEventListener("click",function(e){
     w.querySelector(':scope>.pf-s[data-i="3"]').innerHTML=pfStep(3,hot,!hot);
     if(hot){const l=document.querySelector(".res-panel .sl-local");l&&l.remove()}
   }
+  ("plan"===k||"budget"===k)&&(w.dataset[k]=v);
   try{track("profile",k+" "+v)}catch(x){}
   pfSave(w.dataset.ref,{["p_"+k]:v});pfNext(w);
 },!0);
