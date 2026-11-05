@@ -3741,3 +3741,34 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 @media (max-width:999px){.vm-intro{display:none}}
 .sl2-where{min-width:0;max-width:100%}
 .sl2-where select,#sl-coast{width:100%;max-width:100%;min-width:0;text-overflow:ellipsis}
+
+/* ===== Nov 4 2026 patch: one Vibe Map (style chips in the slider panel) ===== */
+.mm-style{margin:14px 0 6px}
+.mm-lab{display:flex;justify-content:space-between;align-items:baseline;gap:10px;margin:0 0 8px;font:700 14px/1.2 var(--ui);letter-spacing:.12em;text-transform:uppercase;color:#13282C}
+.mm-lab2{margin:16px 0 4px;padding-top:14px;border-top:1px solid var(--line)}
+.mm-guide{font:700 14px var(--ui);letter-spacing:0;text-transform:none;color:#0F6E72;text-decoration:none;white-space:nowrap}
+.mm-chips{display:flex;flex-wrap:wrap;gap:6px}
+.mm-c{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:6px 11px;border:1px solid var(--line);border-radius:999px;background:#fff;font:600 14px var(--ui);color:#13282C;cursor:pointer}
+.mm-c i{width:9px;height:9px;border-radius:50%;background:var(--vc,#B4BFC1);flex:none}
+.mm-c.on{background:#13282C;border-color:#13282C;color:#fff}
+.mm-c.on i{box-shadow:0 0 0 2px #fff}
+.mm-c:focus-visible{outline:2px solid #0F6E72;outline-offset:2px}
+.mm-sc .mm-scph{height:132px;overflow:hidden}
+.mm-sc .mm-scph img{width:100%;height:100%;object-fit:cover;display:block}
+.mm-dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:6px;vertical-align:1px}
+.mm-guide2{display:inline-block;margin-top:8px;font:700 15px var(--ui);color:#0F6E72;text-decoration:none}
+.slc-empty .vm-cb p b{font-weight:700;color:#13282C}
+.sl-sel .mm-style{width:100%;margin:10px 0 4px}
+.sl-empty a{color:#0F6E72;font-weight:700}
+/* one Vibe Map on phones: style and area first, map stays in view while you pick */
+@media (max-width:999px){
+ .sl-page .sl-sel{display:flex;flex-direction:column;align-items:stretch}
+ .sl-page .sl-sel .sl-coast{order:1}
+ .sl-page .sl-sel .mm-style{order:2;margin-top:4px}
+ .sl-page .sl-sel .sl-grp{order:3;margin-top:10px}
+ .sl-page #slres{position:sticky;top:57px;z-index:6;background:var(--paper,#FDFCF8);padding:6px 0 8px;margin:0 -4px;box-shadow:0 8px 14px -12px rgba(21,42,46,.35)}
+ .sl-page #slres .sl-map{height:170px}
+ .sl-page #slres .sl-map svg{width:100%;height:100%}
+ .sl-page #slres .sl-empty{margin:6px 0 0;padding:8px 12px;font-size:14px;line-height:1.4}
+ .sl-page #slres .sl-toph{margin:6px 0 4px}
+}

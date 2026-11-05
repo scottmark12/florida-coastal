@@ -10,6 +10,11 @@
       ],
       "destination": "https://www.floridacoastal.co/$1",
       "permanent": true
+    },
+    {
+      "source": "/priorities.html",
+      "destination": "/map.html",
+      "permanent": true
     }
   ],
   "headers": [
