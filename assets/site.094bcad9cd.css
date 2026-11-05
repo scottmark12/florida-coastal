@@ -3749,3 +3749,14 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .pf-wrap .sl-tl p,.pf-wrap .sl-tl-done{font:500 15px/1.4 'DM Sans',sans-serif!important;color:#13282C}
 .pf-wrap .sl-tl-done b{font:600 15px 'DM Sans',sans-serif!important}
 .pf-wrap .sl-tlb button[data-v]:focus:not(:focus-visible){border-color:#E2D9C9;color:#13282C}
+/* Nov 5: answers use the Find Your Mile quiz rows (not pills), Skip uses the quiz's underlined text link */
+.pf-wrap .sl-tlb{display:grid;grid-template-columns:1fr;gap:8px}
+.pf-wrap .sl-tlb button{position:relative;display:flex;align-items:center;width:100%;min-height:48px;padding:9px 16px 9px 40px;text-align:left;border:1px solid transparent;border-radius:14px;background:#fff;font:600 16px/1.3 'DM Sans',sans-serif;color:#152A2E;transition:border-color .15s,box-shadow .15s}
+.pf-wrap .sl-tlb button::before{content:"";position:absolute;left:14px;top:50%;width:16px;height:16px;margin-top:-8px;border:2px solid #C9C0B0;border-radius:50%;background:#fff;box-sizing:border-box}
+.pf-wrap .sl-tlb button:hover{border-color:var(--ink);color:#152A2E;box-shadow:0 4px 12px rgba(20,40,55,.06)}
+.pf-wrap .sl-tlb button:active::before{border-color:var(--accent);background:radial-gradient(circle,var(--accent) 0 3px,#fff 4px)}
+.pf-wrap .sl-tlb button:focus-visible{outline:3px solid rgba(238,106,44,.35);outline-offset:2px}
+.pf-wrap .pf-skip{display:block;margin:4px auto 0;padding:6px;background:none;border:0;font:500 14px 'DM Sans',sans-serif;color:#3e5155;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.pf-wrap .sl-tl-next .pf-skip{display:inline-block;margin:0}
+.pf-wrap .pf-contact input{border-radius:6px;border:1px solid #D9D0C0}
+.pf-wrap .sl-tl-next .btn{border-radius:6px}

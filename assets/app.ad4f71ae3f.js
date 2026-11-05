@@ -1252,7 +1252,7 @@ function pfStep(i,w){
     const hot="This year"===w.dataset.pftl;
     return `<p>${hot?"Want a local to show you around? Leave a name and number and we'll set it up.":"Last one. Want a local to reach out when you're ready? Leave a name and number."}</p>
     <form class="pf-contact" style="display:grid;gap:8px"><div class="row2" style="display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))"><label class="sr-only" for="pf-n">Name</label><input id="pf-n" name="name" autocomplete="name" placeholder="Name"><label class="sr-only" for="pf-p">Phone</label><input id="pf-p" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Phone"></div><div class="sl-tl-next"><button class="btn btn-accent" type="submit">Send</button>${skip}</div></form>`}
-  return `<p>${st.q}</p><div class="sl-tlb">${st.o.map(x=>`<button type="button" data-pf="${st.k}" data-v="${x}">${x}</button>`).join("")}</div>${skip?`<div style="margin-top:6px">${skip}</div>`:""}`;
+  return `<p>${st.q}</p><div class="sl-tlb">${st.o.map(x=>`<button type="button" data-pf="${st.k}" data-v="${x}">${x}</button>`).join("")}</div>${skip?`${skip}`:""}`;
 }
 function pfDone(w){
   const ig='<a class="btn btn-line" href="https://www.instagram.com/floridacoastalco/" target="_blank" rel="noopener">Follow @floridacoastalco</a>';
