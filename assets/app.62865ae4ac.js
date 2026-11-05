@@ -1225,5 +1225,57 @@ document.addEventListener("click",function(e){
   const k="fc-tl-"+m[2];if(sessionStorage.getItem(k))return;sessionStorage.setItem(k,"1");
   const d=document.createElement("div");d.className="tl-toast";d.setAttribute("role","status");d.textContent="Thanks, got it. We'll send you the right things.";document.body.appendChild(d);setTimeout(()=>d.classList.add("out"),4200);setTimeout(()=>d.remove(),4800);
 }catch(e){}})();
+
+/* ===== Nov 5 2026 PREVIEW: Vibe Map, needs not people =====
+   The map asks what you need (features anyone can pick), never who you are. Everyone sees the same options.
+   Vibe tiles are the 8 feelings; the practical ones (price, beaches, airport...) moved to "What you need".
+   Data: MED (median home), FLOODSC (flood score, 50 towns scored, lower is safer), eduScore (FL DOE county grade), score(e,"airport"), score(e,"beach"). */
+const VFEEL=["oldfl","island","dock","sophcalm","sophhigh","social","active","walk"];
+const NEEDS=[["flood","Lower flood risk"],["school","Strong public schools"],["air","Airport within about 45 min"],["beach","Top beaches"]];
+const NBUD=[[0,"Any price"],[350,"Under $350K"],[500,"Under $500K"],[750,"Under $750K"]];
+S.need=S.need||{};
+/* the map's style lists (chips, tiles, counts) show only the 8 feelings; the other 4 keep their guides and town tags */
+VGROUPS.length=0;VGROUPS.push(["Feel",VFEEL.slice()]);
+function needOn(){return Object.keys(S.need).some(k=>S.need[k])}
+function needOk(e){
+  const n=S.need;
+  if(n.bud&&!(MED[e.id]&&MED[e.id]<=n.bud))return!1;
+  if(n.flood&&!(null!=FLOODSC[e.id]&&FLOODSC[e.id]<=3.6))return!1;
+  if(n.school&&!(eduScore(e)>=4))return!1;
+  if(n.air&&!(score(e,"airport")>=4))return!1;
+  if(n.beach&&!(score(e,"beach")>=5))return!1;
+  return!0;
+}
+function needCount(){return T.filter(e=>(!S.vibe||e.vibes.includes(S.vibe))&&needOk(e)).length}
+function needsHTML(ph){
+  const n=S.need,c=needCount();
+  return `<div class="nd${ph?" nd-ph":""}" role="group" aria-label="What you need"><div class="nd-hd"><b>What you need</b>${needOn()?`<button class="nd-clear" data-nclear="1">Clear</button>`:`<span>Optional</span>`}</div>
+  <div class="nd-row">${NBUD.map(([v,l])=>`<button class="nd-c${(n.bud||0)===v?" on":""}" data-nbud="${v}" aria-pressed="${(n.bud||0)===v}">${l}</button>`).join("")}</div>
+  <div class="nd-row">${NEEDS.map(([k,l])=>`<button class="nd-c${n[k]?" on":""}" data-need="${k}" aria-pressed="${!!n[k]}">${n[k]?"✓ ":""}${l}</button>`).join("")}</div>
+  ${needOn()?`<p class="nd-n" aria-live="polite"><b>${c}</b> town${1===c?"":"s"} match${1===c?"es":""}${S.vibe?` in ${VSHORT[S.vibe]||VIBES[S.vibe]}`:""}.${n.flood?" Flood scores cover the 50 towns we've rated so far.":""}</p>`:""}</div>`;
+}
+(function(){
+  /* towns that miss a need fade on the map and drop off the list */
+  const ms=mapSVG;mapSVG=function(f,o){if("map"===curRoute()&&needOn()){const g=f;f=e=>{if(!needOk(e))return{hot:!1,dim:!0,label:!1,col:"var(--dot-calm)",r:3};const o=g(e);return S.vibe||o.hot?o:Object.assign({},o,{dim:!1,col:"#C65213",r:6.5,sig:0})}}return ms.call(this,f,o)};
+  const so=smapOrder;smapOrder=function(){const L=so.apply(this,arguments);return needOn()?L.filter(needOk):L};
+  /* desktop panel: needs under the heading; only the 8 feeling tiles */
+  const vl=vmLeft;vmLeft=function(o,sel){let h=vl.apply(this,arguments);
+    if(!S.vibe){h=h.replace(/<div class="vm-tiles grid">[\s\S]*?<\/div><div class="vm-lf">/,`${needsHTML(0)}<div class="vm-eb vm-lt nd-feel">Pick the feel</div><div class="vm-tiles grid">${VFEEL.map(v=>vmTile(v,o)).join("")}</div><div class="vm-lf">`).replace("What should home feel like?","Find your stretch of coast").replace(/<p>Pick a style[^<]*<\/p>/,"<p>Tell us what you need, then pick the feel. Towns that fit light up on the map.</p>")}
+    else h=h.replace('<div class="vm-eb vm-lt">',needsHTML(0)+'<div class="vm-eb vm-lt">');
+    return h};
+  /* phones: needs row in the sheet */
+  const vp=vmPhone;vmPhone=function(){let h=vp.apply(this,arguments);
+    h=h.replace(/(<div class="vm-tiles (?:grid|row)">)([\s\S]*?)(<\/div><\/section>)/,(m,a,b,c)=>needsHTML(1)+a+VFEEL.map(v=>vmTile(v,(()=>{const o={};Object.keys(VIBES).forEach(k=>o[k]=T.filter(t=>t.vibes.includes(k)).length);return o})(),!0)).join("")+c);
+    h=h.replace('<p class="vm-sub">',needsHTML(1)+'<p class="vm-sub">').replace(">See all 12<",">See all 8<");
+    return h};
+})();
+document.addEventListener("click",function(e){
+  if(!e.target.closest)return;const b=e.target.closest("[data-need],[data-nbud],[data-nclear]");if(!b)return;
+  e.preventDefault();e.stopPropagation();
+  if(b.dataset.nclear)S.need={};else if(null!=b.dataset.nbud){const v=+b.dataset.nbud;S.need.bud=v||0}else{const k=b.dataset.need;S.need[k]=!S.need[k]}
+  S.vcard=!1;try{track("need_tap",b.dataset.need||("bud "+(b.dataset.nbud||"clear")))}catch(x){}
+  window.__vmCur=null;rerenderMap();
+},!0);
+"map"===curRoute()&&route();
 /* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
 "sliders"===curRoute()&&slDesk()&&route();

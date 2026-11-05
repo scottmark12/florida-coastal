@@ -3700,3 +3700,21 @@ html body .res-hd h1{margin:6px 0 6px!important;font:500 44px/1.02 'DM Sans',sys
 @media (max-width:899px){.sl-offer{grid-template-columns:96px minmax(0,1fr)!important}.sl-offer .sl-ob>span{font-size:14px!important;line-height:1.4!important}.sl-offer .sl-ob>b{font-size:18px!important}}
 .tl-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:300;padding:12px 18px;border-radius:999px;background:#13282C;color:#fff;font:500 15px 'DM Sans',sans-serif;box-shadow:0 10px 26px rgba(19,40,44,.3);transition:opacity .5s ease,transform .5s ease;max-width:calc(100% - 32px)}
 .tl-toast.out{opacity:0;transform:translateX(-50%) translateY(8px)}
+/* ===== Nov 5 2026 PREVIEW: Vibe Map "What you need" ===== */
+.nd{margin:0 24px 14px;padding:14px 14px 10px;border:1px solid var(--line);border-radius:14px;background:#fff}
+.nd-hd{display:flex;align-items:baseline;justify-content:space-between;margin:0 0 8px}
+.nd-hd b{font:600 15.5px 'DM Sans',sans-serif;color:#13282C}
+.nd-hd span{font:400 12.5px 'DM Sans',sans-serif;color:#7a8a8d}
+.nd-clear{border:0;background:none;padding:0;font:700 13px 'DM Sans',sans-serif;color:#0F6E72;cursor:pointer}
+.nd-row{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 8px}
+.nd-c{min-height:34px;padding:4px 12px;border:1.5px solid #E2D9C9;border-radius:999px;background:#FFFDF9;font:500 13.5px 'DM Sans',sans-serif;color:#13282C;cursor:pointer;white-space:nowrap}
+.nd-c:hover{border-color:#13282C}
+.nd-c.on{background:#13282C;border-color:#13282C;color:#fff}
+.nd-n{margin:2px 0 4px;font:400 13px/1.4 'DM Sans',sans-serif;color:#3e5155}
+.nd-n b{color:#C65213;font-weight:700}
+.nd-feel{margin:4px 24px 8px!important}
+.vm-sht~.nd,.vm-guide+.nd{margin-top:12px}
+.nd-ph{margin:0 0 10px;padding:10px 10px 4px}
+.nd-ph .nd-row{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin:0 -10px 6px;padding:0 10px}
+.nd-ph .nd-row::-webkit-scrollbar{display:none}
+.nd-ph .nd-c{min-height:36px;font-size:14px}
