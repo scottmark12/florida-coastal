@@ -3698,3 +3698,31 @@ html body .res-hd h1{margin:6px 0 6px!important;font:500 44px/1.02 'DM Sans',sys
 .sl-from span{display:block}
 @media (min-width:900px){.sl-offer .sl-row{flex-direction:row!important}.sl-offer .sl-row input{flex:1 1 auto!important;width:auto!important}.sl-offer .sl-row .btn{flex:0 0 auto!important;width:auto!important}}
 @media (max-width:899px){.sl-offer{grid-template-columns:96px minmax(0,1fr)!important}.sl-offer .sl-ob>span{font-size:14px!important;line-height:1.4!important}.sl-offer .sl-ob>b{font-size:18px!important}}
+
+/* ===== Nov 4 2026 patch: audit fixes (headings, contrast, text size, tap areas) ===== */
+.prose .fc-q h2{margin:0 0 6px!important;font:700 12px/1.2 var(--ui)!important;letter-spacing:.12em!important;text-transform:uppercase;color:#13282C;border:0!important;padding:0!important}
+h2.svq{border:0;padding:0}
+.hb-k,.vm-stepn,.vm-all,.cmp-v a,.prose .cmp-v a{color:#A8450F}
+.qzi-n0{color:#566669}
+.qzi .svtile .svt small,.sl-note,.sl-ctrls .sl-note,.sl-panel .sl-note{color:#566669!important}
+.crumbs a,.crumbs2 a{display:inline-block;padding:4px 0;min-height:24px}
+.ed-k,.cat,.gx .cat,.card .cat,.fs .cat{font-size:14px!important}
+.block>.label,section.wrap>.label,.boxed>.label,.rsec>.label,.tareas>.label{font-size:13px!important}
+.hp-hero .hp-trust,.hp-cue{font-size:13px!important}
+.hp-cue a{font-size:13px}
+.vm-tile small,.vm-left .vm-tile small,.vm-sheet.full .vm-tile small,.vm-ph.land .vm-tile small{font-size:14px!important}
+.sl-gl,.sl-panel .sl-gl{font-size:13px!important}
+.sl-top output{font-size:14px!important}
+.sl-note,.sl-ctrls .sl-note,.sl-panel .sl-note{font-size:14px!important}
+.cmp-lab{font-size:14px!important}
+.cmp-labsub{font-size:14px!important}
+.cmp-tog,.card .cmp-tog{font-size:14px!important}
+.savebox .sv-note{font-size:14px!important}
+.vm-stepn{font-size:13px!important}
+.vm-pan{font-size:14px!important}
+.hb-k,.hb-nh .hb-k{font-size:13px!important}
+.prose .fc-tdet dt{font-size:13px!important}
+.prose .fc-tdet small{font-size:14px!important}
+.prose .fc-q h2{font-size:13px!important}
+.ar-facts dt{font-size:13px;color:#566669}
+.ar-facts dd small{font-size:14px;color:#566669}
