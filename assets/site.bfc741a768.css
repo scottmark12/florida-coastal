@@ -3975,3 +3975,8 @@ body.nd-lock{overflow:hidden}
 .nd-slim .nd-row{grid-template-columns:134px minmax(0,1fr) minmax(0,1fr);gap:4px}
 .nd-sel select{padding:8px 22px 8px 10px}
 .nd-sel:after{right:10px}
+/* Nov 5: home Vibe Map, the town card sits bottom left over the Gulf, like the full Vibe Map */
+.dk-map .smap.vpan{position:relative}
+.dk-map .smap.vpan>.vm-card{left:24px;right:auto;bottom:24px;z-index:6}
+.dk-map .smap.vpan>.vm-card{width:300px;left:20px;bottom:20px}
+.dk-map .smap.vpan>.vm-card .vm-cph{height:120px}
