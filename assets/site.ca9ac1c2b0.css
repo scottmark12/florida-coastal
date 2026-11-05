@@ -3760,3 +3760,14 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .pf-wrap .sl-tl-next .pf-skip{display:inline-block;margin:0}
 .pf-wrap .pf-contact input{border-radius:6px;border:1px solid #D9D0C0}
 .pf-wrap .sl-tl-next .btn{border-radius:6px}
+/* Nov 5: lead question box keeps one size across every step */
+.pf-wrap .pf{display:grid}
+.pf-wrap .pf>.pf-s{grid-area:1/1;visibility:hidden;display:flex;flex-direction:column}
+.pf-wrap .pf>.pf-s.on{visibility:visible}
+.pf-wrap .pf-end{justify-content:center}
+.pf-wrap .sl-tlb.pf-2col{grid-template-columns:1fr 1fr}
+.pf-wrap .sl-tlb.pf-2col button:last-child{grid-column:1/-1}
+.pf-wrap .pf-s>.pf-skip{margin-top:auto;padding-top:8px}
+.pf-wrap .sl-tlb.pf-2col button{padding:9px 8px 9px 34px;font-size:15px;white-space:nowrap}
+.pf-wrap .sl-tlb.pf-2col button::before{left:11px}
+.pf-wrap .pf-end{justify-content:flex-start}

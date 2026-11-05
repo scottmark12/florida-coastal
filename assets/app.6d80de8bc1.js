@@ -1245,14 +1245,11 @@ const PF_STEPS=[
   {k:"budget",q:"Roughly what price range?",o:["Under $400K","$400K to $750K","$750K to $1.5M","$1.5M and up","Not sure yet"]},
   {k:"contact"}];
 function pfSave(ref,body){if(!ref)return;try{fetch(LEAD_API.replace("fc_leads","rpc/fc_lead_profile"),{method:"POST",headers:{apikey:LEAD_KEY,"Content-Type":"application/json"},body:JSON.stringify(Object.assign({p_ref:ref},body)),keepalive:!0}).catch(()=>{})}catch(e){}}
-function pfStep(i,w){
+function pfStep(i,hot){
   const st=PF_STEPS[i],skip=i>0?'<button type="button" class="linkbtn pf-skip" data-pfskip="1">Skip</button>':"";
-  if(!st)return pfDone(w);
-  if("contact"===st.k){
-    const hot="This year"===w.dataset.pftl;
-    return `<p>${hot?"Want a local to show you around? Leave a name and number and we'll set it up.":"Last one. Want a local to reach out when you're ready? Leave a name and number."}</p>
-    <form class="pf-contact" style="display:grid;gap:8px"><div class="row2" style="display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))"><label class="sr-only" for="pf-n">Name</label><input id="pf-n" name="name" autocomplete="name" placeholder="Name"><label class="sr-only" for="pf-p">Phone</label><input id="pf-p" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Phone"></div><div class="sl-tl-next"><button class="btn btn-accent" type="submit">Send</button>${skip}</div></form>`}
-  return `<p>${st.q}</p><div class="sl-tlb">${st.o.map(x=>`<button type="button" data-pf="${st.k}" data-v="${x}">${x}</button>`).join("")}</div>${skip?`${skip}`:""}`;
+  if("contact"===st.k)return `<p class="pf-q">${hot?"Want a local to show you around? Leave a name and number and we'll set it up.":"Last one. Want a local to reach out when you're ready? Leave a name and number."}</p>
+    <form class="pf-contact" style="display:grid;gap:8px"><div class="row2" style="display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))"><label class="sr-only" for="pf-n${i}">Name</label><input id="pf-n${i}" name="name" autocomplete="name" placeholder="Name"><label class="sr-only" for="pf-p${i}">Phone</label><input id="pf-p${i}" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Phone"></div><div class="sl-tl-next"><button class="btn btn-accent" type="submit">Send</button>${skip}</div></form>`;
+  return `<p class="pf-q">${st.q}</p><div class="sl-tlb${st.o.length>3?" pf-2col":""}">${st.o.map(x=>`<button type="button" data-pf="${st.k}" data-v="${x}">${x}</button>`).join("")}</div>${skip}`;
 }
 function pfDone(w){
   const ig='<a class="btn btn-line" href="https://www.instagram.com/floridacoastalco/" target="_blank" rel="noopener">Follow @floridacoastalco</a>';
@@ -1262,7 +1259,15 @@ function pfDone(w){
     return `<p class="sl-tl-done"><b>Thank you.</b> We'll be in touch soon. Questions before then? Just reply to our email.</p><div class="sl-tl-next">${t?`<a class="btn btn-accent" href="#contact-${t}">Ask a local →</a>`:""}${ig}</div>`}
   return `<p class="sl-tl-done"><b>Thanks, that helps.</b> We share a beach town or two every week on Instagram, the good and the honest.</p><div class="sl-tl-next">${ig}${onRes?'<button class="linkbtn" data-card="1">Share my result</button>':""}</div>`;
 }
-function pfNext(w){const i=+(w.dataset.step||0)+1;w.dataset.step=i;w.innerHTML=pfStep(i,w);const f=w.querySelector("button,input");f&&f.focus({preventScroll:!0})}
+/* every step sits in the same grid cell, so the box is always the size of the tallest step */
+function pfAll(){return PF_STEPS.map((st,i)=>`<div class="pf-s${i?"":" on"}"${i?' aria-hidden="true" inert':""}>${pfStep(i,!1)}</div>`).join("")+'<div class="pf-s pf-end" aria-hidden="true" inert></div>'}
+function pfNext(w){
+  const ss=[...w.querySelectorAll(":scope>.pf-s")],i=+(w.dataset.step||0)+1;w.dataset.step=i;
+  if(i===PF_STEPS.length-1&&"This year"===w.dataset.pftl){ss[i].innerHTML=pfStep(i,!0)}
+  if(i>=PF_STEPS.length)ss[ss.length-1].innerHTML=pfDone(w);
+  ss.forEach((x,j)=>{const on=j===Math.min(i,ss.length-1);x.classList.toggle("on",on);on?(x.removeAttribute("aria-hidden"),x.removeAttribute("inert")):(x.setAttribute("aria-hidden","true"),x.setAttribute("inert",""))});
+  const f=ss[Math.min(i,ss.length-1)].querySelector("button,input,a");f&&f.focus({preventScroll:!0});
+}
 (function(){
   const old=leadThanks;
   leadThanks=function(k,n){
@@ -1270,8 +1275,7 @@ function pfNext(w){const i=+(w.dataset.step||0)+1;w.dataset.step=i;w.innerHTML=p
     const nl="newsletter"===k;
     const head=nl?"<b>Check your inbox.</b><span>The Move and Belong Guide is on its way, usually within a few minutes.</span>"
       :"<b>Your Shortlist is on its way.</b><span>Check your inbox in a few minutes. Questions? Just reply to that email.</span>";
-    const w={dataset:{}};
-    return `<div class="sl-offer sent sl-thanks pf-wrap" role="status">${head}<div class="sl-tl pf" data-ref="${window.__fcRef||""}" data-step="0">${pfStep(0,w)}</div></div>`;
+    return `<div class="sl-offer sent sl-thanks pf-wrap" role="status">${head}<div class="sl-tl pf" data-ref="${window.__fcRef||""}" data-step="0">${pfAll()}</div></div>`;
   };
 })();
 document.addEventListener("click",function(e){
