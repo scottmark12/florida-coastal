@@ -763,12 +763,12 @@ function vPanel(o,s){
   if(S.vcard&&s&&"home"!==curRoute()){
     const back=S.vibe?`← Back to the ${o[S.vibe]} ${VSHORT[S.vibe]||VIBES[S.vibe]} towns`:"← Back to all styles";
     body=`<div class="vp-body vp-cardv" aria-live="polite"><button class="vp-back" data-vback="1">${back}</button><div class="vp-ph">${art(s)}</div><span class="cat">${(regionOf[s.id]||{}).map||s.region}</span><h3>${s.name}</h3><div class="smap-tags">${s.vibes.map(e=>`<span class="stag"><i style="background:${VCOL[e]}"></i>${VSHORT[e]||VIBES[e]}</span>`).join("")}</div><p class="vp-blurb">${s.blurb}</p>${scorecard(s,!0)}<a class="vp-ink" href="#town-${s.id}">Explore ${short(s)} →</a></div>`;
-  }else if(S.vibe){
+  }else if(S.vibe&&"home"!==curRoute()){
     const L=smapOrder();
     body=`<div class="vp-head" style="--vc:${VCOL[S.vibe]}"><button class="vp-back" data-vibe="">← All styles</button><h3><i style="background:${VCOL[S.vibe]}"></i>${VIBES[S.vibe]}</h3><p>${L.length} towns, coast order from the Panhandle around to the Keys. Tap one to open it.</p></div><div class="vp-body vp-list">${L.map(vRow).join("")}</div>`;
   }else{
     const V=vGroups().flatMap(g=>g[1]);
-    body=`<div class="vp-body vp-hook">${"home"===curRoute()?'<div class="dk-cue"><span>Choose a style</span><a href="map.html">Open the full map</a></div>':""}<h3>What should home feel like?</h3><p>Each colored dot is the town that sums up its style best. Pick a style to light up all its towns.</p><div class="vp-pgrid">${V.map(v=>`<button class="vp-v vp-pc" data-vibe="${v}" style="--vc:${VCOL[v]}"><img src="img/vibes/${v}.webp" alt="" loading="lazy" width="320" height="264"><em><i style="background:${VCOL[v]}"></i>${o[v]}</em><span><b>${VSHORT[v]||VIBES[v]}</b><small>${VSUB[v]||""}</small></span></button>`).join("")}</div><p class="vp-or">Or tap any dot to meet a town.</p></div>`;
+    body=`<div class="vp-body vp-hook">${"home"===curRoute()?'<div class="dk-cue"><span>Choose a style</span><a href="map.html">Open the full map</a></div>':""}<h3>What should home feel like?</h3>${S.vibe?`<p class="vp-picked"><i style="background:${VCOL[S.vibe]}"></i><span><b>${o[S.vibe]} ${VSHORT[S.vibe]||VIBES[S.vibe]} towns</b> are lit up. Tap any dot to meet one.</span></p>`:"<p>Each colored dot is the town that sums up its style best. Pick a style to light up all its towns.</p>"}<div class="vp-pgrid${S.vibe?" has-on":""}">${V.map(v=>`<button class="vp-v vp-pc${S.vibe===v?" on":""}" data-vibe="${S.vibe===v?"":v}" aria-pressed="${S.vibe===v}" style="--vc:${VCOL[v]}"><img src="img/vibes/${v}.webp" alt="" loading="lazy" width="320" height="264"><em><i style="background:${VCOL[v]}"></i>${o[v]}</em><span><b>${VSHORT[v]||VIBES[v]}</b><small>${VSUB[v]||""}</small></span></button>`).join("")}</div><p class="vp-or">Or tap any dot to meet a town.</p></div>`;
   }
   return `<aside class="vpanel" aria-label="Vibe Map panel">${body}${top}</aside>`;
 }

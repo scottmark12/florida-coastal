@@ -3980,3 +3980,12 @@ body.nd-lock{overflow:hidden}
 .dk-map .smap.vpan>.vm-card{left:24px;right:auto;bottom:24px;z-index:6}
 .dk-map .smap.vpan>.vm-card{width:300px;left:20px;bottom:20px}
 .dk-map .smap.vpan>.vm-card .vm-cph{height:120px}
+/* Nov 5: home Vibe Map keeps the style photos on the right; the picked style is outlined in its color */
+.vp-pc.on{border-color:var(--vc);box-shadow:0 0 0 2px var(--vc),0 8px 18px rgba(20,40,45,.18)}
+.vp-pgrid.has-on .vp-pc:not(.on){opacity:.62}
+.vp-pgrid.has-on .vp-pc:not(.on):hover{opacity:1}
+.vp-picked{display:flex;gap:10px;align-items:flex-start}
+.vp-picked i{flex:none;width:12px;height:12px;border-radius:50%;margin-top:6px}
+.vp-picked b{color:var(--ink)}
+.dk-map .vp-pc.on img{outline:3px solid var(--vc);outline-offset:3px;border-radius:6px}
+.dk-map .vp-pc.on b{color:var(--ink)}
