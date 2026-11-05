@@ -1242,18 +1242,18 @@ document.addEventListener("click",function(e){if(S.vmSeen||!e.target.closest)ret
    Needs mail/migrations/2026-11-05-lead-profile.sql applied first. ===== */
 function fcRef(){let r=null;try{r=crypto.randomUUID()}catch(e){r="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,c=>{const v=Math.random()*16|0;return(c==="x"?v:(v&3|8)).toString(16)})}window.__fcRef=r;return r}
 const PF_STEPS=[
-  {k:"timeline",q:"We picked our own town in two weeks. What's your timeline looking like?",o:["This year","In 1 to 2 years","Still exploring"]},
-  {k:"plan",q:"Plenty of folks rent a season first to test drive a town. What feels right for you?",o:["Buy","Rent first","Not sure yet"]},
-  {k:"budget",q:"Ballpark is fine. It just helps us send towns that fit.",o:["Under $400K","$400K to $750K","$750K to $1.5M","$1.5M and up","Not sure yet"]},
+  {k:"timeline",q:"We picked our own town in two weeks. What's your timeline looking like?",y:"So we know whether to send listings now, or the things worth knowing first.",o:["This year","In 1 to 2 years","Still exploring"]},
+  {k:"plan",q:"Plenty of folks rent a season first to test drive a town. What feels right for you?",y:"It changes which towns make sense, and what we send you.",o:["Buy","Rent first","Not sure yet"]},
+  {k:"budget",q:"Ballpark is fine. What price range are you thinking?",y:"We'll point out the towns in your range, and what flood and insurance costs look like there.",o:["Under $400K","$400K to $750K","$750K to $1.5M","$1.5M and up","Not sure yet"]},
   {k:"contact"}];
 const PF_CONSENT='<p class="pf-fine">By sharing your number, you\'re OK with us or a local agent calling or texting you about your move.</p>';
 function pfSave(ref,body){if(!ref)return;try{fetch(LEAD_API.replace("fc_leads","rpc/fc_lead_profile"),{method:"POST",headers:{apikey:LEAD_KEY,"Content-Type":"application/json"},body:JSON.stringify(Object.assign({p_ref:ref},body)),keepalive:!0}).catch(()=>{})}catch(e){}}
 function pfKnowsBudget(){try{return null!=S.budget&&!!BUDGET[S.budget]}catch(e){return!1}}
 function pfStep(i,hot,last){
   const st=PF_STEPS[i],skip=i>0?'<button type="button" class="linkbtn pf-skip" data-pfskip="1">Skip</button>':"";
-  if("contact"===st.k)return `<p class="pf-q">${hot?"Want to see it in person? Leave your name and number and we'll have a local who knows the area give you a call.":"Whenever you're ready, we can have a local who knows the area give you a call. Leave a name and number if you'd like."}</p>
+  if("contact"===st.k)return `<span class="pf-n"></span><p class="pf-q">${hot?"Want to see it in person? Leave your name and number and we'll have a local who knows the area give you a call.":"Whenever you're ready, we can have a local who knows the area give you a call. Leave a name and number if you'd like."}</p><p class="pf-y">Someone who lives there, not a call center.</p>
     <form class="pf-contact" style="display:grid;gap:8px"><div class="row2" style="display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))"><label class="sr-only" for="pf-n${i}">Name</label><input id="pf-n${i}" name="name" autocomplete="name" placeholder="Name"><label class="sr-only" for="pf-p${i}">Phone</label><input id="pf-p${i}" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Phone"></div>${PF_CONSENT}<div class="sl-tl-next"><button class="btn btn-accent" type="submit">Send</button>${skip}</div></form>`;
-  return `<p class="pf-q">${st.q}</p><div class="sl-tlb${st.o.length>3?" pf-2col":""}">${st.o.map(x=>`<button type="button" data-pf="${st.k}" data-v="${x}">${x}</button>`).join("")}</div>${skip}`;
+  return `<span class="pf-n"></span><p class="pf-q">${st.q}</p><p class="pf-y">${st.y}</p><div class="sl-tlb${st.o.length>3?" pf-2col":""}">${st.o.map(x=>`<button type="button" data-pf="${st.k}" data-v="${x}">${x}</button>`).join("")}</div>${skip}`;
 }
 function pfDone(w){
   const ig='<a class="btn btn-line" href="https://www.instagram.com/floridacoastalco/" target="_blank" rel="noopener">Follow @floridacoastalco</a>';
@@ -1267,13 +1267,14 @@ function pfDone(w){
 function pfAll(){return PF_STEPS.map((st,i)=>`<div class="pf-s${i?"":" on"}" data-i="${i}"${i?' aria-hidden="true" inert':""}>${pfStep(i,!1,!0)}</div>`).join("")+'<div class="pf-s pf-end" data-i="end" aria-hidden="true" inert></div>'}
 function pfOrder(w){return(w.dataset.order||"0,1,2,3").split(",")}
 function pfShow(w,key){
+  const o=pfOrder(w),ix=o.indexOf(key),n=w.querySelector(`:scope>.pf-s[data-i="${key}"] .pf-n`);n&&ix>=0&&(n.textContent=`Question ${ix+1} of ${o.length}`);
   w.querySelectorAll(":scope>.pf-s").forEach(x=>{const on=x.dataset.i===key;x.classList.toggle("on",on);on?(x.removeAttribute("aria-hidden"),x.removeAttribute("inert")):(x.setAttribute("aria-hidden","true"),x.setAttribute("inert",""))});
   const c=w.querySelector(`:scope>.pf-s[data-i="${key}"]`),f=c&&c.querySelector("button,input,a");f&&f.focus({preventScroll:!0});
 }
 function pfNext(w){
   const o=pfOrder(w),pos=+(w.dataset.pos||0)+1;w.dataset.pos=pos;
   const hd=w.parentNode&&w.parentNode.querySelector(".pf-hd");
-  if(hd)hd.innerHTML=pos>=o.length?"<b>That's everything.</b><span>Your email should be there by now.</span>":"<b>Thanks, just a couple more.</b><span>Skip anything you'd rather not answer.</span>";
+  if(hd)hd.innerHTML='<i class="pf-eb">From Mark and Betsy</i>'+(pos>=o.length?"<b>That's everything.</b><span>Your email should be there by now.</span>":"<b>Thanks, just a couple more.</b><span>Skip anything you'd rather not answer.</span>");
   if(pos>=o.length){w.querySelector(':scope>.pf-s[data-i="end"]').innerHTML=pfDone(w);pfSave(w.dataset.ref,{p_done:!0});try{track("profile","done")}catch(x){}return pfShow(w,"end")}
   pfShow(w,o[pos]);
 }
@@ -1282,10 +1283,11 @@ function pfNext(w){
   leadThanks=function(k,n){
     if(!["matches","saved","vibe","newsletter"].includes(k))return old.apply(this,arguments);
     const nl="newsletter"===k;
-    const head=nl?"<b>Check your inbox.</b><span>The Move and Belong Guide is on its way, usually within a few minutes.</span>"
+    const head=nl?"<b>Your guide is on its way.</b><span>In your inbox within a few minutes.</span>"
       :"<b>Your Shortlist is on its way.</b><span>Check your inbox in a few minutes. Questions? Just reply to that email.</span>";
     const order=pfKnowsBudget()?"0,1,3":"0,1,2,3";
-    return `<div class="sl-offer sent sl-thanks pf-wrap" role="status"><div class="pf-from"><img src="img/mark-betsy-faces.webp" alt="Mark and Betsy Scott" width="44" height="44"><div class="pf-hd">${head}</div></div><div class="sl-tl pf" data-ref="${window.__fcRef||""}" data-order="${order}" data-pos="0">${pfAll()}</div></div>`;
+    setTimeout(()=>document.querySelectorAll(".pf").forEach(w=>{const n=w.querySelector(':scope>.pf-s.on .pf-n');n&&!n.textContent&&(n.textContent="Question 1 of "+pfOrder(w).length)}),0);
+    return `<div class="sl-offer sent sl-thanks pf-wrap" role="status"><div class="pf-from"><img src="img/mark-betsy-faces.webp" alt="Mark and Betsy Scott" width="44" height="44"><div class="pf-hd"><i class="pf-eb">From Mark and Betsy</i>${head}</div></div><div class="sl-tl pf" data-ref="${window.__fcRef||""}" data-order="${order}" data-pos="0">${pfAll()}</div></div>`;
   };
 })();
 document.addEventListener("click",function(e){

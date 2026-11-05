@@ -3781,3 +3781,28 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .pf-wrap .sl-tl p.pf-sig{margin:6px 0 10px!important;font:italic 400 16px/1.2 var(--display,Georgia),serif!important;color:#C65213!important}
 .pf-wrap .pf-from{min-height:68px}
 .pf-wrap .pf-from img{width:52px;height:52px}
+/* ===== Nov 5 2026 patch: lead questions, editorial version (paper, hairlines, Caslon, one accent) ===== */
+.sl-offer.pf-wrap{background:var(--page,#FFFDF9)!important;border:1px solid rgba(21,42,46,.16)!important;border-radius:4px!important;padding:22px 22px 18px!important;box-shadow:0 1px 2px rgba(21,42,46,.04)!important}
+.pf-wrap .pf-from{min-height:0;align-items:flex-start;padding-bottom:16px;border-bottom:1px solid rgba(21,42,46,.16)}
+.pf-wrap .pf-from img{width:48px;height:48px}
+.pf-wrap .pf-eb,.pf-wrap .pf-n{display:block;font:600 11px/1.2 'DM Sans',sans-serif!important;letter-spacing:.14em;text-transform:uppercase;color:#56696C;font-style:normal}
+.pf-wrap .pf-hd b{margin-top:5px;font:400 21px/1.2 'Libre Caslon Text',Georgia,serif!important;color:#152A2E!important}
+.pf-wrap .pf-hd span{margin-top:4px;font:400 14px/1.4 'DM Sans',sans-serif;color:#56696C}
+.pf-wrap .sl-tl{border-top:0!important;margin-top:0!important;padding-top:18px!important}
+.pf-wrap .sl-tl p.pf-q{margin:8px 0 4px!important;font:400 19px/1.35 'Libre Caslon Text',Georgia,serif!important;color:#152A2E!important}
+.pf-wrap .sl-tl p.pf-y{margin:0 0 12px!important;font:400 14px/1.45 'DM Sans',sans-serif!important;color:#56696C!important}
+.pf-wrap .sl-tlb,.pf-wrap .sl-tlb.pf-2col{display:block;border-top:1px solid rgba(21,42,46,.16)}
+.pf-wrap .sl-tlb button,.pf-wrap .sl-tlb.pf-2col button{display:flex;justify-content:space-between;width:100%;min-height:46px;padding:12px 2px!important;border:0!important;border-bottom:1px solid rgba(21,42,46,.16)!important;border-radius:0!important;background:transparent!important;font:500 16px/1.3 'DM Sans',sans-serif!important;color:#152A2E;box-shadow:none!important;white-space:normal}
+.pf-wrap .sl-tlb button::before{content:none!important}
+.pf-wrap .sl-tlb button::after{content:"→";color:#A9B4B4;transition:transform .15s,color .15s}
+.pf-wrap .sl-tlb button:hover{color:#152A2E;background:transparent!important}
+.pf-wrap .sl-tlb button:hover::after{color:#152A2E;transform:translateX(3px)}
+.pf-wrap .pf-skip,.pf-wrap .pf-s>.pf-skip{margin:10px 0 0!important;padding:4px 0!important;text-align:left;font:500 13px 'DM Sans',sans-serif!important;color:#56696C!important;text-decoration:underline;text-underline-offset:3px;align-self:flex-start}
+.pf-wrap .pf-contact input{border:0!important;border-bottom:1px solid rgba(21,42,46,.3)!important;border-radius:0!important;background:transparent!important;padding:0 2px!important}
+.pf-wrap .pf-contact input:focus{outline:0;border-bottom-color:#152A2E!important}
+.pf-wrap .sl-tl-next .btn-accent{background:#152A2E!important;border-radius:4px!important}
+.pf-wrap .sl-tl-next .btn-line{border:1px solid rgba(21,42,46,.3)!important;border-radius:4px!important;background:transparent!important}
+.pf-wrap .sl-tl p.sl-tl-done{margin-top:8px!important;font:400 19px/1.4 'Libre Caslon Text',Georgia,serif!important}
+.pf-wrap .sl-tl p.sl-tl-done b{font:inherit!important}
+.pf-wrap .sl-tl p.pf-sig{font:italic 400 18px/1.2 'Libre Caslon Text',Georgia,serif!important;color:#C65213!important;margin:10px 0 16px!important}
+.pf-wrap .pf-hd span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
