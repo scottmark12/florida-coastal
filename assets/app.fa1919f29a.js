@@ -294,7 +294,7 @@ function smapOrder(){
 }
 function smapCats(o){
   const row=e=>`<button class="scat" data-vibe="${S.vibe===e?"":e}" aria-pressed="${S.vibe===e}"><i class="vdot" style="background:${VCOL[e]}"></i><span>${VIBES[e]}</span><small>${o[e]}</small></button>`;
-  return `<div class="smap-cats" role="group" aria-label="Filter by town style"><div class="sc-head"><b>Styles</b><button class="scat sc-all" data-vibe="" aria-pressed="${!S.vibe}"><span>All styles</span><small>${T.length}</small></button></div>${VGROUPS.map(g=>`<div class="sc-grp"><div class="sc-ttl">${g[0]}</div>${g[1].map(row).join("")}</div>`).join("")}<p class="sc-note">Tap a style to light it up on the map. Tap it again to clear it.</p></div>`;
+  return `<div class="smap-cats" role="group" aria-label="Filter by town style"><div class="sc-head"><b>Styles</b><button class="scat sc-all" data-vibe="" aria-pressed="${!S.vibe}"><span>All styles</span><small>${needOn()?T.filter(needOk).length:T.length}</small></button></div>${VGROUPS.map(g=>`<div class="sc-grp"><div class="sc-ttl">${g[0]}</div>${g[1].map(row).join("")}</div>`).join("")}<p class="sc-note">Tap a style to light it up on the map. Tap it again to clear it.</p></div>`;
 }
 function smapPhone(f,a,s,o){
   const L=smapOrder(),k=L.findIndex(e=>e.id===s.id),n=L.length,
@@ -767,7 +767,7 @@ function vPanel(o,s){
 }
 function vCta(){return "map"===curRoute()?'<div class="vp-cta"><a class="btn btn-accent" href="#quiz">See your top 5 towns</a><p>'+SQ.length+' quick questions, matched to how you live</p></div>':""}
 function vPhoneTop(o){
-  const V=VGROUPS.flatMap(g=>g[1]),ord=S.vibe?[S.vibe].concat(V.filter(v=>v!==S.vibe)):V,n=S.vibe?o[S.vibe]:T.length;
+  const V=VGROUPS.flatMap(g=>g[1]),ord=S.vibe?[S.vibe].concat(V.filter(v=>v!==S.vibe)):V,n=needOn()?needCount():S.vibe?o[S.vibe]:T.length;
   return `<div class="vp-chips" role="group" aria-label="Pick a town style"><button class="vp-c${S.vibe?"":" on"}" data-vibe="">All</button>${ord.map(v=>`<button class="vp-c${S.vibe===v?" on":""}" data-vibe="${v}" style="--vc:${VCOL[v]}${"beaches"===v||"active"===v?";--vt:#1A2A2E":""}"><i style="background:${VCOL[v]}"></i>${VSHORT[v]||VIBES[v]}</button>`).join("")}</div><div class="vp-switch" role="group" aria-label="Show as"><button data-vlist="0" aria-pressed="${!S.vlist}">Map</button><button data-vlist="1" aria-pressed="${!!S.vlist}">List · ${n}</button></div>`;
 }
 document.addEventListener("click",function(e){
@@ -1259,14 +1259,16 @@ function needsHTML(ph){
   const ms=mapSVG;mapSVG=function(f,o){if("map"===curRoute()&&needOn()){const g=f;f=e=>{if(!needOk(e))return{hot:!1,dim:!0,label:!1,col:"var(--dot-calm)",r:3};const o=g(e);return S.vibe||o.hot?o:Object.assign({},o,{dim:!1,col:"#C65213",r:6.5,sig:0})}}return ms.call(this,f,o)};
   const so=smapOrder;smapOrder=function(){const L=so.apply(this,arguments);return needOn()?L.filter(needOk):L};
   /* desktop panel: needs under the heading; only the 8 feeling tiles */
-  const vl=vmLeft;vmLeft=function(o,sel){let h=vl.apply(this,arguments);
+  const vl=vmLeft;vmLeft=function(o,sel){if(needOn()&&arguments[0]){const q={};Object.keys(VIBES).forEach(k=>q[k]=T.filter(t=>t.vibes.includes(k)&&needOk(t)).length);arguments[0]=q}let h=vl.apply(this,arguments);
     if(!S.vibe){h=h.replace(/<div class="vm-tiles grid">[\s\S]*?<\/div><div class="vm-lf">/,`${needsHTML(0)}<div class="vm-eb vm-lt nd-feel">Pick the feel</div><div class="vm-tiles grid">${VFEEL.map(v=>vmTile(v,o)).join("")}</div><div class="vm-lf">`).replace("What should home feel like?","Find your stretch of coast").replace(/<p>Pick a style[^<]*<\/p>/,"<p>Tell us what you need, then pick the feel. Towns that fit light up on the map.</p>")}
     else h=h.replace('<div class="vm-eb vm-lt">',needsHTML(0)+'<div class="vm-eb vm-lt">');
     return h};
   /* phones: needs row in the sheet */
-  const vp=vmPhone;vmPhone=function(){let h=vp.apply(this,arguments);
-    h=h.replace(/(<div class="vm-tiles (?:grid|row)">)([\s\S]*?)(<\/div><\/section>)/,(m,a,b,c)=>needsHTML(1)+a+VFEEL.map(v=>vmTile(v,(()=>{const o={};Object.keys(VIBES).forEach(k=>o[k]=T.filter(t=>t.vibes.includes(k)).length);return o})(),!0)).join("")+c);
-    h=h.replace('<p class="vm-sub">',needsHTML(1)+'<p class="vm-sub">').replace(">See all 12<",">See all 8<");
+  const vp=vmPhone;vmPhone=function(){if(needOn()&&arguments[3]){const q={};Object.keys(VIBES).forEach(k=>q[k]=T.filter(t=>t.vibes.includes(k)&&needOk(t)).length);arguments[3]=q}let h=vp.apply(this,arguments);
+    h=h.replace(/(<div class="vm-tiles (?:grid|row)">)([\s\S]*?)(<\/div><\/section>)/,(m,a,b,c)=>a+VFEEL.map(v=>vmTile(v,(()=>{const o={};Object.keys(VIBES).forEach(k=>o[k]=T.filter(t=>t.vibes.includes(k)&&needOk(t)).length);return o})(),!0)).join("")+c);
+    const nb=`<button class="nd-open${needOn()?" on":""}" data-nopen="1">What you need${needOn()?` · ${Object.keys(S.need).filter(k=>S.need[k]).length}`:""}</button>`;
+    h=h.replace(">See all 12<",">See all 8<").replace(/<span class="vm-swipe"[^>]*>[\s\S]*?<\/span>/,nb).replace('<span class="vm-acts">','<span class="vm-acts">'+nb);
+    if(needOn()){const c=needCount(),k=Object.keys(S.need).filter(x=>S.need[x]).length;h=h.replace('<div class="vm-map mapbox">',`<div class="nd-mapchip${S.vibe||S.vcard?" low":""}"><button data-nopen="1">${k} filter${1===k?"":"s"} · <b>${c}</b> town${1===c?"":"s"}</button><button data-nclear="1" aria-label="Clear filters">Clear</button></div><div class="vm-map mapbox">`)}
     return h};
 })();
 document.addEventListener("click",function(e){
@@ -1277,5 +1279,23 @@ document.addEventListener("click",function(e){
   window.__vmCur=null;rerenderMap();
 },!0);
 "map"===curRoute()&&route();
+/* phones: the "What you need" panel */
+function ndPane(){
+  const n=S.need,c=needCount();
+  return `<div class="nd-pane" role="dialog" aria-modal="true" aria-label="What you need"><div class="nd-pb">
+  <div class="nd-ph"><h2>What you need</h2><button class="nd-x" data-nclose="1" aria-label="Close">×</button></div>
+  <p class="nd-sub">Optional. Pick anything that matters and the map shows only the towns that fit.</p>
+  <div class="nd-lbl">Budget</div><div class="nd-bud">${NBUD.map(([v,l])=>`<button class="${(n.bud||0)===v?"on":""}" data-nbud="${v}" aria-pressed="${(n.bud||0)===v}">${l}</button>`).join("")}</div>
+  <div class="nd-lbl">Must haves</div><div class="nd-list">${NEEDS.map(([k,l])=>`<button class="${n[k]?"on":""}" data-need="${k}" aria-pressed="${!!n[k]}"><span>${l}${"flood"===k?"<small>Scored for 50 towns so far</small>":""}</span><i aria-hidden="true"></i></button>`).join("")}</div>
+  </div><div class="nd-pf">${needOn()?'<button class="nd-clr" data-nclear="1">Clear</button>':""}<button class="btn btn-accent nd-go" data-nclose="1">Show ${c} town${1===c?"":"s"}</button></div></div>`;
+}
+function ndPaneSync(){const o=document.querySelector(".nd-pane");if(!S.ndOpen){o&&o.remove();document.body.classList.remove("nd-lock");return}const d=document.createElement("div");d.innerHTML=ndPane();const nw=d.firstElementChild;if(o){const sc=o.querySelector(".nd-pb").scrollTop;o.replaceWith(nw);nw.querySelector(".nd-pb").scrollTop=sc}else document.body.appendChild(nw);document.body.classList.add("nd-lock")}
+document.addEventListener("click",function(e){
+  if(!e.target.closest)return;
+  if(e.target.closest("[data-nopen]")){e.preventDefault();e.stopPropagation();S.ndOpen=!0;ndPaneSync();try{track("need_open","phone")}catch(x){}return}
+  if(e.target.closest("[data-nclose]")){e.preventDefault();e.stopPropagation();S.ndOpen=!1;ndPaneSync();return}
+  if(e.target.closest(".nd-pane [data-need],.nd-pane [data-nbud],.nd-pane [data-nclear]"))setTimeout(ndPaneSync,0);
+},!0);
+document.addEventListener("keydown",e=>{"Escape"===e.key&&S.ndOpen&&(S.ndOpen=!1,ndPaneSync())});
 /* the sliders page first draws before these Nov 4 patches load, so redraw it once in the new layout (keep this at the very end) */
 "sliders"===curRoute()&&slDesk()&&route();
