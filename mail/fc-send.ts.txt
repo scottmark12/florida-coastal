@@ -5,7 +5,7 @@
 import { createClient } from "npm:@supabase/supabase-js@2";
 import * as PDF from "npm:pdf-lib@1.17.1";
 import fontkit from "npm:@pdf-lib/fontkit@1.1.1";
-import { render, buildGuideEmail, buildNoteEmail, buildWelcomeEmail, buildTownEmail, buildStoryEmail, buildHonestEmail, buildNextEmail, pickTowns } from "./render.js";
+import { render, buildGuideEmail, buildNoteEmail, buildWelcomeEmail, buildTownEmail, buildStoryEmail, buildHonestEmail, buildNextEmail, pickTowns, setAddress, addrText } from "./render.js";
 
 const SITE = "https://www.floridacoastal.co";
 const sb = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!, { auth: { persistSession: false } });
@@ -76,6 +76,7 @@ async function processRow(row: any, settings: any, dry: boolean) {
     if (!mail) return { status: "skipped", error: "nothing to send for this lead" };
     // the guide itself goes out as a link in the top 5 email; day 3 is a short nudge with no attachment
   }
+  if (mail && mail.text) mail.text += addrText();
   const preview_url = await upload(`preview/${row.id}-${crypto.randomUUID()}.html`, mail.html, "text/html");
 
   if (dry || !settings.send_hook) return { status: "ready", pdf_url: attachment_url, preview_url, error: dry ? "dry run" : "no send hook set" };
@@ -94,6 +95,7 @@ async function processRow(row: any, settings: any, dry: boolean) {
 
 Deno.serve(async (req) => {
   const { data: settings } = await sb.from("fc_email_settings").select("*").eq("id", 1).single();
+  setAddress(settings && settings.postal_address);
   const secret = settings && settings.call_secret;
   if (!secret || req.headers.get("x-fc-secret") !== secret) return new Response("unauthorized", { status: 401 });
   const body = await req.json().catch(() => ({}));

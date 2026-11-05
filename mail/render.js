@@ -8,6 +8,11 @@ const C = {
   sea: "#1B6E78", white: "#FFFFFF", soft: "#C9D4D3",
 };
 const SITE = "https://www.floridacoastal.co";
+// Mailing address for every email footer (CAN-SPAM). fc-send sets it from fc_email_settings.postal_address.
+let ADDRESS = "";
+export function setAddress(a) { ADDRESS = String(a || "").trim(); }
+const addrHtml = () => ADDRESS ? `<br>Florida Coastal &middot; ${esc(ADDRESS)}` : "";
+export const addrText = () => ADDRESS ? `\n\nFlorida Coastal, ${ADDRESS}\nTo unsubscribe, reply with "unsubscribe".` : `\n\nTo unsubscribe, reply with "unsubscribe".`;
 const UTM = "utm_source=email&utm_campaign=top5";
 
 const SCORE_LABELS = [
@@ -147,7 +152,7 @@ export function buildEmail(lead, picks, opts = {}) {
   <tr><td class="px" align="center" style="padding:24px 40px 28px 40px;background:${C.paper};">
     <img src="${SITE}/img/logo-mark.png" width="28" alt="" style="display:block;width:28px;height:auto;margin:0 auto 10px auto;border:0;">
     <p style="margin:0;font-family:${F_BODY};font-size:13px;line-height:1.6;color:${C.muted};">Florida is 1,350 miles of coastline. We'll help you find your mile.</p>
-    <p style="margin:8px 0 0 0;font-family:${F_BODY};font-size:12px;line-height:1.6;color:#7E8F92;"><a href="${SITE}/find-your-mile.html?${UTM}" style="color:${C.muted};">Retake the quiz</a> &nbsp;&middot;&nbsp; <a href="${SITE}/privacy.html" style="color:${C.muted};">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.muted};">Unsubscribe</a><br>You're getting this because you asked for your towns${opts.guideUrl ? " and the Move and Belong Guide" : ""} on floridacoastal.co. Town details are for information and should be confirmed locally.</p>
+    <p style="margin:8px 0 0 0;font-family:${F_BODY};font-size:12px;line-height:1.6;color:#7E8F92;"><a href="${SITE}/find-your-mile.html?${UTM}" style="color:${C.muted};">Retake the quiz</a> &nbsp;&middot;&nbsp; <a href="${SITE}/privacy.html" style="color:${C.muted};">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.muted};">Unsubscribe</a><br>You're getting this because you asked for your towns${opts.guideUrl ? " and the Move and Belong Guide" : ""} on floridacoastal.co. Town details are for information and should be confirmed locally.${addrHtml()}</p>
   </td></tr>
 </table></td></tr></table></body></html>`;
   const text = [`${name ? `Hi ${name}, here` : "Here"} are your top 5 Florida towns:`, "",
@@ -447,7 +452,7 @@ function shell(subject, preheader, rows) {
 <tr><td class="px" style="padding:26px 40px 20px 40px;"><a href="${SITE}/?${UTM}"><img src="${SITE}/img/logo.png" width="170" alt="Florida Coastal" style="display:block;width:170px;height:auto;border:0;"></a></td></tr>
 <tr><td class="px" style="padding:0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td height="3" style="height:3px;line-height:3px;font-size:0;background:${C.rust};background-image:linear-gradient(90deg,${C.rust},${C.peach} 60%,${C.white});">&nbsp;</td></tr></table></td></tr>
 ${rows}
-<tr><td class="px" align="center" style="padding:24px 40px 28px 40px;background:${C.paper};"><p style="margin:0;font-family:${F_BODY};font-size:12px;line-height:1.6;color:#7E8F92;"><a href="${SITE}/privacy.html" style="color:${C.muted};">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.muted};">Unsubscribe</a><br>Florida Coastal &middot; floridacoastal.co</p></td></tr>
+<tr><td class="px" align="center" style="padding:24px 40px 28px 40px;background:${C.paper};"><p style="margin:0;font-family:${F_BODY};font-size:12px;line-height:1.6;color:#7E8F92;"><a href="${SITE}/privacy.html" style="color:${C.muted};">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.muted};">Unsubscribe</a><br>Florida Coastal &middot; floridacoastal.co${ADDRESS ? " &middot; " + esc(ADDRESS) : ""}</p></td></tr>
 </table></td></tr></table></body></html>`;
 }
 const P = (t, extra = "") => `<p style="margin:0 0 16px 0;font-family:${F_BODY};font-size:16px;line-height:1.65;color:${C.ink};${extra}">${t}</p>`;
@@ -459,7 +464,7 @@ export function buildGuideEmail(lead, picks, guideUrl) {
   const url = guideUrl || SITE + "/articles/first-90-days.html";
   const items = [
     ["Serve something.", "Rotary, Kiwanis, the chamber, Habitat. You meet the people who run the town."],
-    ["Believe something.", "A church or synagogue, a small group. A weekly rhythm and real care for newcomers."],
+    ["Believe something.", "A congregation or small group. A weekly rhythm and real care for newcomers."],
     ["Play something.", "A pickleball league, a run club, a fishing or sailing club. The same faces every week."],
   ].map(([a, b]) => `<tr><td valign="top" width="22" style="padding:4px 0 12px 0;font-family:${F_HEAD};font-size:18px;color:${C.rust};">&bull;</td><td style="padding:4px 0 12px 0;font-family:${F_BODY};font-size:15px;line-height:1.55;color:${C.ink};"><b>${a}</b> ${b}</td></tr>`).join("");
   const rows = `
@@ -488,7 +493,7 @@ export function buildNoteEmail(lead, picks) {
   ];
   const html = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0;padding:24px 16px;background:#FFFFFF;">
 <div style="max-width:560px;font-family:'DM Sans','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;color:${C.ink};">${body.map((b) => `<p style="margin:0 0 16px 0;">${b}</p>`).join("")}
-<p style="margin:24px 0 0 0;font-size:12px;color:#7E8F92;"><a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:#7E8F92;">Unsubscribe</a></p></div></body></html>`;
+<p style="margin:24px 0 0 0;font-size:12px;color:#7E8F92;"><a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:#7E8F92;">Unsubscribe</a>${addrHtml()}</p></div></body></html>`;
   const text = body.join("\n\n").replace("<br>", "\n");
   return { subject, html, text };
 }
@@ -544,7 +549,7 @@ const and = (a) => a.length > 1 ? a.slice(0, -1).join(", ") + " and " + a.at(-1)
 function plain(subject, paras) {
   const html = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(subject)}</title></head><body style="margin:0;padding:24px 16px;background:#FFFFFF;">
 <div style="max-width:560px;font-family:'DM Sans','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.65;color:${C.ink};">${paras.map((b) => `<p style="margin:0 0 16px 0;">${b}</p>`).join("")}
-<p style="margin:28px 0 0 0;font-size:12px;color:#7E8F92;">Florida Coastal &middot; <a href="${SITE}/?${U("letter")}" style="color:#7E8F92;">floridacoastal.co</a> &middot; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:#7E8F92;">Unsubscribe</a></p></div></body></html>`;
+<p style="margin:28px 0 0 0;font-size:12px;color:#7E8F92;">Florida Coastal &middot; <a href="${SITE}/?${U("letter")}" style="color:#7E8F92;">floridacoastal.co</a> &middot; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:#7E8F92;">Unsubscribe</a>${ADDRESS ? "<br>" + esc(ADDRESS) : ""}</p></div></body></html>`;
   const text = paras.join("\n\n").replace(/<br>/g, "\n").replace(/<[^>]+>/g, "");
   return { subject, html, text };
 }
