@@ -3707,24 +3707,24 @@ h2.svq{border:0;padding:0}
 .qzi .svtile .svt small,.sl-note,.sl-ctrls .sl-note,.sl-panel .sl-note{color:#566669!important}
 .crumbs a,.crumbs2 a{display:inline-block;padding:4px 0;min-height:24px}
 .ed-k,.cat,.gx .cat,.card .cat,.fs .cat{font-size:14px!important}
-.block>.label,section.wrap>.label,.boxed>.label,.rsec>.label,.tareas>.label{font-size:13px!important}
-.hp-hero .hp-trust,.hp-cue{font-size:13px!important}
-.hp-cue a{font-size:13px}
+.block>.label,section.wrap>.label,.boxed>.label,.rsec>.label,.tareas>.label{font-size:14px!important}
+.hp-hero .hp-trust,.hp-cue{font-size:14px!important}
+.hp-cue a{font-size:14px}
 .vm-tile small,.vm-left .vm-tile small,.vm-sheet.full .vm-tile small,.vm-ph.land .vm-tile small{font-size:14px!important}
-.sl-gl,.sl-panel .sl-gl{font-size:13px!important}
+.sl-gl,.sl-panel .sl-gl{font-size:14px!important}
 .sl-top output{font-size:14px!important}
 .sl-note,.sl-ctrls .sl-note,.sl-panel .sl-note{font-size:14px!important}
 .cmp-lab{font-size:14px!important}
 .cmp-labsub{font-size:14px!important}
 .cmp-tog,.card .cmp-tog{font-size:14px!important}
 .savebox .sv-note{font-size:14px!important}
-.vm-stepn{font-size:13px!important}
+.vm-stepn{font-size:14px!important}
 .vm-pan{font-size:14px!important}
-.hb-k,.hb-nh .hb-k{font-size:13px!important}
-.prose .fc-tdet dt{font-size:13px!important}
+.hb-k,.hb-nh .hb-k{font-size:14px!important}
+.prose .fc-tdet dt{font-size:14px!important}
 .prose .fc-tdet small{font-size:14px!important}
-.prose .fc-q h2{font-size:13px!important}
-.ar-facts dt{font-size:13px;color:#566669}
+.prose .fc-q h2{font-size:14px!important}
+.ar-facts dt{font-size:14px;color:#566669}
 .ar-facts dd small{font-size:14px;color:#566669}
 
 /* ===== Nov 4 2026 patch: results header, empty Slider Map ===== */
@@ -3739,3 +3739,5 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .slc-empty .vm-cb p{font-size:15px;line-height:1.5}
 .slc-empty .slv-sep{margin-top:8px;color:#566669}
 @media (max-width:999px){.vm-intro{display:none}}
+.sl2-where{min-width:0;max-width:100%}
+.sl2-where select,#sl-coast{width:100%;max-width:100%;min-width:0;text-overflow:ellipsis}
