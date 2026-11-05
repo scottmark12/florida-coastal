@@ -86,6 +86,7 @@ def flows():
 
 def norm(html):
     html = re.sub(r"\s+", " ", html)
+    html = re.sub(r"(app|site)\.[0-9a-f]{10}\.(js|css)", r"\1.HASH.\2", html)
     html = re.sub(r'(transform|transition|animation)[^;"]*;?', "", html)  # mid animation values
     return html
 
@@ -148,7 +149,7 @@ async def run(mode, name):
             if not f.endswith(".html"): continue
             a = os.path.join(cmpdir, f)
             if not os.path.exists(a): print("NEW STEP", f); continue
-            x, y = open(a).read(), open(os.path.join(d, f)).read()
+            x, y = norm(open(a).read()), norm(open(os.path.join(d, f)).read())
             if x != y:
                 diffs += 1
                 sm = difflib.SequenceMatcher(None, x, y, autojunk=False)
