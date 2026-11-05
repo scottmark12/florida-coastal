@@ -1242,16 +1242,16 @@ document.addEventListener("click",function(e){if(S.vmSeen||!e.target.closest)ret
    Needs mail/migrations/2026-11-05-lead-profile.sql applied first. ===== */
 function fcRef(){let r=null;try{r=crypto.randomUUID()}catch(e){r="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx".replace(/[xy]/g,c=>{const v=Math.random()*16|0;return(c==="x"?v:(v&3|8)).toString(16)})}window.__fcRef=r;return r}
 const PF_STEPS=[
-  {k:"timeline",q:"One quick question, so we send the right things: when are you thinking of moving?",o:["This year","In 1 to 2 years","Still exploring"]},
-  {k:"plan",q:"Buying, or renting first to try a town out?",o:["Buy","Rent first","Not sure yet"]},
-  {k:"budget",q:"Roughly what price range?",o:["Under $400K","$400K to $750K","$750K to $1.5M","$1.5M and up","Not sure yet"]},
+  {k:"timeline",q:"We picked our own town in two weeks. What's your timeline looking like?",o:["This year","In 1 to 2 years","Still exploring"]},
+  {k:"plan",q:"Plenty of folks rent a season first to test drive a town. What feels right for you?",o:["Buy","Rent first","Not sure yet"]},
+  {k:"budget",q:"Ballpark is fine. It just helps us send towns that fit.",o:["Under $400K","$400K to $750K","$750K to $1.5M","$1.5M and up","Not sure yet"]},
   {k:"contact"}];
 const PF_CONSENT='<p class="pf-fine">By sharing your number, you\'re OK with us or a local agent calling or texting you about your move.</p>';
 function pfSave(ref,body){if(!ref)return;try{fetch(LEAD_API.replace("fc_leads","rpc/fc_lead_profile"),{method:"POST",headers:{apikey:LEAD_KEY,"Content-Type":"application/json"},body:JSON.stringify(Object.assign({p_ref:ref},body)),keepalive:!0}).catch(()=>{})}catch(e){}}
 function pfKnowsBudget(){try{return null!=S.budget&&!!BUDGET[S.budget]}catch(e){return!1}}
 function pfStep(i,hot,last){
   const st=PF_STEPS[i],skip=i>0?'<button type="button" class="linkbtn pf-skip" data-pfskip="1">Skip</button>':"";
-  if("contact"===st.k)return `<p class="pf-q">${hot?"Want a local to show you around? Leave a name and number and we'll set it up.":(last?"Last one. ":"")+"Want a local to reach out when you're ready? Leave a name and number."}</p>
+  if("contact"===st.k)return `<p class="pf-q">${hot?"Want to see it in person? Leave your name and number and we'll have a local who knows the area give you a call.":"Whenever you're ready, we can have a local who knows the area give you a call. Leave a name and number if you'd like."}</p>
     <form class="pf-contact" style="display:grid;gap:8px"><div class="row2" style="display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(140px,1fr))"><label class="sr-only" for="pf-n${i}">Name</label><input id="pf-n${i}" name="name" autocomplete="name" placeholder="Name"><label class="sr-only" for="pf-p${i}">Phone</label><input id="pf-p${i}" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="Phone"></div>${PF_CONSENT}<div class="sl-tl-next"><button class="btn btn-accent" type="submit">Send</button>${skip}</div></form>`;
   return `<p class="pf-q">${st.q}</p><div class="sl-tlb${st.o.length>3?" pf-2col":""}">${st.o.map(x=>`<button type="button" data-pf="${st.k}" data-v="${x}">${x}</button>`).join("")}</div>${skip}`;
 }
@@ -1260,8 +1260,8 @@ function pfDone(w){
   const onRes=!!document.querySelector(".res-panel");
   if("This year"===w.dataset.pftl){
     const t=onRes&&(rankedTowns()[0]||{}).id;
-    return `<p class="sl-tl-done"><b>Thank you.</b> We'll be in touch soon. Questions before then? Just reply to our email.</p><div class="sl-tl-next">${t?`<a class="btn btn-accent" href="#contact-${t}">Ask a local →</a>`:""}${ig}</div>`}
-  return `<p class="sl-tl-done"><b>Thanks, that helps.</b> We share a beach town or two every week on Instagram, the good and the honest.</p><div class="sl-tl-next">${ig}${onRes?'<button class="linkbtn" data-card="1">Share my result</button>':""}</div>`;
+    return `<p class="sl-tl-done"><b>Thank you.</b> We'll be in touch soon. If anything comes up before then, just reply to our email.</p><p class="pf-sig">Mark and Betsy</p><div class="sl-tl-next">${t?`<a class="btn btn-accent" href="#contact-${t}">Ask a local →</a>`:""}${ig}</div>`}
+  return `<p class="sl-tl-done"><b>Thanks, that helps.</b> We share a beach town or two every week on Instagram, the good and the honest.</p><p class="pf-sig">Mark and Betsy</p><div class="sl-tl-next">${ig}${onRes?'<button class="linkbtn" data-card="1">Share my result</button>':""}</div>`;
 }
 /* every step sits in the same grid cell, so the box is always the size of the tallest step */
 function pfAll(){return PF_STEPS.map((st,i)=>`<div class="pf-s${i?"":" on"}" data-i="${i}"${i?' aria-hidden="true" inert':""}>${pfStep(i,!1,!0)}</div>`).join("")+'<div class="pf-s pf-end" data-i="end" aria-hidden="true" inert></div>'}
@@ -1272,6 +1272,8 @@ function pfShow(w,key){
 }
 function pfNext(w){
   const o=pfOrder(w),pos=+(w.dataset.pos||0)+1;w.dataset.pos=pos;
+  const hd=w.parentNode&&w.parentNode.querySelector(".pf-hd");
+  if(hd)hd.innerHTML=pos>=o.length?"<b>That's everything.</b><span>Your email should be there by now.</span>":"<b>Thanks, just a couple more.</b><span>Skip anything you'd rather not answer.</span>";
   if(pos>=o.length){w.querySelector(':scope>.pf-s[data-i="end"]').innerHTML=pfDone(w);pfSave(w.dataset.ref,{p_done:!0});try{track("profile","done")}catch(x){}return pfShow(w,"end")}
   pfShow(w,o[pos]);
 }
@@ -1283,7 +1285,7 @@ function pfNext(w){
     const head=nl?"<b>Check your inbox.</b><span>The Move and Belong Guide is on its way, usually within a few minutes.</span>"
       :"<b>Your Shortlist is on its way.</b><span>Check your inbox in a few minutes. Questions? Just reply to that email.</span>";
     const order=pfKnowsBudget()?"0,1,3":"0,1,2,3";
-    return `<div class="sl-offer sent sl-thanks pf-wrap" role="status">${head}<div class="sl-tl pf" data-ref="${window.__fcRef||""}" data-order="${order}" data-pos="0">${pfAll()}</div></div>`;
+    return `<div class="sl-offer sent sl-thanks pf-wrap" role="status"><div class="pf-from"><img src="img/mark-betsy-sq.webp" alt="Mark and Betsy Scott" width="44" height="44"><div class="pf-hd">${head}</div></div><div class="sl-tl pf" data-ref="${window.__fcRef||""}" data-order="${order}" data-pos="0">${pfAll()}</div></div>`;
   };
 })();
 document.addEventListener("click",function(e){

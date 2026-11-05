@@ -3773,3 +3773,10 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .pf-wrap .pf-end{justify-content:flex-start}
 .pf-wrap .pf-fine{margin:0!important;font:400 12.5px/1.4 'DM Sans',sans-serif!important;color:#566669!important}
 .pf-wrap .sl-tl p.pf-fine{font:400 12.5px/1.4 'DM Sans',sans-serif!important;color:#566669!important;margin:0!important}
+/* Nov 5: lead questions feel like they come from Mark and Betsy */
+.pf-wrap .pf-from{display:flex;gap:12px;align-items:center}
+.pf-wrap .pf-from img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none}
+.pf-wrap .pf-hd b{display:block;font:600 17px 'DM Sans',sans-serif;color:#13282C}
+.pf-wrap .pf-hd span{display:block;margin-top:2px;font-size:14.5px;color:#3e5155}
+.pf-wrap .sl-tl p.pf-sig{margin:6px 0 10px!important;font:italic 400 16px/1.2 var(--display,Georgia),serif!important;color:#C65213!important}
+.pf-wrap .pf-from{min-height:68px}
