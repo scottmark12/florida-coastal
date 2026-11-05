@@ -3730,3 +3730,12 @@ h2.svq{border:0;padding:0}
 /* ===== Nov 4 2026 patch: results header, empty Slider Map ===== */
 body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .sl-empty{margin:6px 0 4px;padding:14px 16px;border:1px dashed var(--line);border-radius:10px;font-size:15px;line-height:1.45;color:#3d4d50;background:rgba(255,253,249,.7)}
+/* ===== Nov 4 2026 patch: map explainers ===== */
+.vm-intro{width:372px}
+.vm-intro .vm-cb{padding:18px 20px 20px}
+.vm-intro .vm-cb p{font-size:15px;line-height:1.5}
+.vm-intro-alt{margin-top:10px!important;color:#566669}
+.vm-intro-alt a{color:#0F6E72;font-weight:700}
+.slc-empty .vm-cb p{font-size:15px;line-height:1.5}
+.slc-empty .slv-sep{margin-top:8px;color:#566669}
+@media (max-width:999px){.vm-intro{display:none}}
