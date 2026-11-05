@@ -42,7 +42,7 @@ def flows():
     # Vibe Map with filters, a style, a town, list
     F.append(("dk-vibemap", "map.html", DESK, [
         ("budget", lambda pg: pg.select_option("[data-nbudsel]", "500")),
-        ("flood", lambda pg: tap(pg, "[data-need='flood']")),
+        ("school", lambda pg: tap(pg, "[data-need='school']")),
         ("style", lambda pg: tap(pg, ".vm-tile[data-vibe='dock']", 1200)),
         ("town", lambda pg: tap(pg, "[data-vpick]", 2500)),
         ("list", lambda pg: tap(pg, "[data-vlist='1']", 800)),

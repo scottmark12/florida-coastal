@@ -3941,3 +3941,15 @@ body.nd-lock{overflow:hidden}
 .vm-bar>.slv-sub{flex:1;margin:0 12px}
 .vm-left .nd-feel{padding-left:0;padding-right:0}
 .vm-bar>.vm-sp{flex:1}
+/* Nov 5: one line how it works card; bigger filter chips for easier reading */
+.vm-intro{width:340px}
+.vm-intro .vm-cb{padding:14px 18px 15px}
+.vm-intro .vm-cb .cat{margin-bottom:4px}
+.vm-intro .vm-cb p{margin:0;font-size:16px;line-height:1.45;color:#13282C}
+.vm-intro .vm-cb p a{color:#0F6E72;font-weight:700}
+.nd-slim .nd-c{padding:9px 15px;font-size:16px}
+.nd-sel select{padding:8px 34px 8px 15px;font-size:16px}
+.nd-sel:after{right:15px}
+.nd-fine{font-size:15px}
+.nd-fine,.nd-slim .nd-clear{font-size:15px}
+.vm-intro{width:400px}.vm-intro .vm-cb p a{white-space:nowrap}

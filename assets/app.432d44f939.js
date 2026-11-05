@@ -1123,7 +1123,7 @@ document.addEventListener("click",function(e){
    Vibe tiles are the 8 feelings; the practical ones (price, beaches, airport...) moved to "What you need".
    Data: MED (median home), FLOODSC (flood score, 50 towns scored, lower is safer), eduScore (FL DOE county grade), score(e,"airport"), score(e,"beach"). */
 const VFEEL=["beaches","oldfl","bluezone","island","dock","sophhigh","social","sophcalm","active","walk"];
-const NEEDS=[["flood","Lower flood risk"],["school","Strong public schools"],["air","Airport within about 45 min"]];
+const NEEDS=[["school","Strong public schools"],["air","Airport within about 45 min"]];
 const NBUD=[[0,"Any price"],[350,"Under $350K"],[500,"Under $500K"],[750,"Under $750K"]];
 S.need=S.need||{};
 /* the map's style lists (chips, tiles, counts) show only the 8 feelings; the other 4 keep their guides and town tags */
@@ -1132,7 +1132,6 @@ function needOn(){S.need=S.need||{};return Object.keys(S.need).some(k=>S.need[k]
 function needOk(e){
   const n=S.need||{};
   if(n.bud&&!(MED[e.id]&&MED[e.id]<=n.bud))return!1;
-  if(n.flood&&!(null!=FLOODSC[e.id]&&FLOODSC[e.id]<=3.6))return!1;
   if(n.school&&!(eduScore(e)>=4))return!1;
   if(n.air&&!(score(e,"airport")>=4))return!1;
   if(n.beach&&!(score(e,"beach")>=5))return!1;
@@ -1145,12 +1144,12 @@ function ndBtn(){return `<button class="nd-open${needOn()?" on":""}" data-nopen=
 function ndChip(){if(!needOn())return"";const c=needCount(),k=needN();return `<div class="nd-mapchip${S.vibe||S.vcard?" low":""}"><button data-nopen="1">${k} filter${1===k?"":"s"} · <b>${c}</b> town${1===c?"":"s"}</button><button data-nclear="1" aria-label="Clear filters">Clear</button></div>`}
 function needCount(){return T.filter(e=>(!S.vibe||e.vibes.includes(S.vibe))&&needOk(e)).length}
 /* desktop panel: one slim row, a budget menu and three chips, so the style photos stay above the fold */
-const NSHORT={flood:"Low flood risk",school:"Good schools",air:"Near airport"};
+const NSHORT={school:"Good schools",air:"Near an airport"};
 function needsHTML(){
   const n=S.need,c=needCount();
   return `<div class="nd nd-slim" role="group" aria-label="What you need"><div class="nd-hd"><b>What you need</b><label class="nd-sel${n.bud?" on":""}"><span class="sr-only">Budget</span><select data-nbudsel="1">${NBUD.map(([v,l])=>`<option value="${v}"${(n.bud||0)===v?" selected":""}>${l}</option>`).join("")}</select></label></div>
   <div class="nd-row">${NEEDS.map(([k,l])=>`<button class="nd-c${n[k]?" on":""}" data-need="${k}" aria-pressed="${!!n[k]}" title="${l}">${NSHORT[k]||l}</button>`).join("")}</div>
-  ${needOn()?`<p class="nd-fine" aria-live="polite"><b>${c}</b> town${1===c?"":"s"} match${1===c?"es":""}${n.flood?", flood scored towns only":""} · <button class="nd-clear" data-nclear="1">Clear</button></p>`:""}</div>`;
+  ${needOn()?`<p class="nd-fine" aria-live="polite"><b>${c}</b> town${1===c?"":"s"} match${1===c?"es":""} · <button class="nd-clear" data-nclear="1">Clear</button></p>`:""}</div>`;
 }
 document.addEventListener("change",function(e){
   const t=e.target;if(!t.matches||!t.matches("[data-nbudsel]"))return;
@@ -1171,7 +1170,7 @@ function ndPane(){
   <div class="nd-ph"><h2>What you need</h2><button class="nd-x" data-nclose="1" aria-label="Close">×</button></div>
   <p class="nd-sub">Optional. Pick anything that matters and the map shows only the towns that fit.</p>
   <div class="nd-lbl">Budget</div><div class="nd-bud">${NBUD.map(([v,l])=>`<button class="${(n.bud||0)===v?"on":""}" data-nbud="${v}" aria-pressed="${(n.bud||0)===v}">${l}</button>`).join("")}</div>
-  <div class="nd-lbl">Must haves</div><div class="nd-list">${NEEDS.map(([k,l])=>`<button class="${n[k]?"on":""}" data-need="${k}" aria-pressed="${!!n[k]}"><span>${l}${"flood"===k?"<small>Scored for 50 towns so far</small>":""}</span><i aria-hidden="true"></i></button>`).join("")}</div>
+  <div class="nd-lbl">Must haves</div><div class="nd-list">${NEEDS.map(([k,l])=>`<button class="${n[k]?"on":""}" data-need="${k}" aria-pressed="${!!n[k]}"><span>${l}</span><i aria-hidden="true"></i></button>`).join("")}</div>
   </div><div class="nd-pf">${needOn()?'<button class="nd-clr" data-nclear="1">Clear</button>':""}<button class="btn btn-accent nd-go" data-nclose="1">Show ${c} town${1===c?"":"s"}</button></div></div>`;
 }
 function ndPaneSync(){const o=document.querySelector(".nd-pane");if(!S.ndOpen){o&&o.remove();document.body.classList.remove("nd-lock");return}const d=document.createElement("div");d.innerHTML=ndPane();const nw=d.firstElementChild;if(o){const sc=o.querySelector(".nd-pb").scrollTop;o.replaceWith(nw);nw.querySelector(".nd-pb").scrollTop=sc}else document.body.appendChild(nw);document.body.classList.add("nd-lock")}
@@ -1186,7 +1185,6 @@ function ndWhy(e,ph){
   const n=S.need||{},L=[];
   S.vibe&&e.vibes.includes(S.vibe)&&L.push(`Your style: ${VSHORT[S.vibe]||VIBES[S.vibe]}`);
   n.bud&&MED[e.id]&&L.push(`Median home about ${fmtK(MED[e.id])}, under ${fmtK(n.bud)}`);
-  n.flood&&null!=FLOODSC[e.id]&&L.push("Lower flood risk than most of the coast");
   n.school&&L.push(`Public schools rated ${eduScore(e)} of 5`);
   n.air&&L.push(`Close to ${(e.airport||"a major airport").split(" or ")[0]}`);
   n.beach&&L.push("Some of the best beaches in Florida");
@@ -1195,7 +1193,7 @@ function ndWhy(e,ph){
 }
 
 /* ===== Nov 4 2026 patch: Vibe Map explainer, bottom left, until the first click ===== */
-function vmIntro(){return `<article class="vm-card vm-intro" aria-live="polite"><div class="vm-cb"><span class="cat">How the Vibe Map works</span><h3>Every beach town, by what it feels like</h3><p>We sorted all ${T.length} Florida beach towns into styles, like Old Florida fishing villages, island life or walkable downtowns. Pick a style on the right and its towns light up. Tap any dot to meet the town.</p><p class="vm-intro-alt">Know what matters to you? Try the <a href="#sliders">Slider Map</a>.</p></div></article>`}
+function vmIntro(){return `<article class="vm-card vm-intro" aria-live="polite"><div class="vm-cb"><span class="cat">How it works</span><p>Pick a style on the right, then tap any dot to meet the town. Or try the <a href="#sliders">Slider Map</a>.</p></div></article>`}
 document.addEventListener("click",function(e){if(S.vmSeen||!e.target.closest)return;const t=e.target.closest(".vm-stage,.vm-left,.vm-bar");if(t&&"map"===curRoute()&&!e.target.closest(".vm-intro a")){S.vmSeen=!0;const c=document.querySelector(".vm-intro");c&&c.remove()}},!0);
 
 /* ===== Nov 4 2026 patch: town page "At a glance" strip, the deciding facts in the first screen ===== */
