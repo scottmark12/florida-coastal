@@ -76,6 +76,20 @@ def flows():
         for k in [0, 0, 1, 0, 0, 0, 1, 1]:
             await pg.locator("[data-sv]").nth(k).click(); await pg.wait_for_timeout(300)
         await pg.wait_for_timeout(5500)
+    async def quick(pg):
+        for k in [0, 0, 1, 0, 0, 0, 1, 1]:
+            await pg.locator("[data-sv]").nth(k).click(); await pg.wait_for_timeout(300)
+        await pg.wait_for_timeout(1200)
+    async def email(pg):
+        f = pg.locator(".res-panel form[data-lead] input[type=email]").first
+        await f.fill("check@example.com"); await f.press("Enter"); await pg.wait_for_timeout(1500)
+    for dev, kw in (("dk", DESK), ("ph", PHONE)):
+        F.append((f"{dev}-quiz-scan", "find-your-mile.html", kw, [("scan", quick)]))
+        F.append((f"{dev}-quiz-email", "find-your-mile.html", kw, [
+            ("answers", answer),
+            ("results", lambda pg: tap(pg, '[data-rv="done"]', 1800)),
+            ("sent", email),
+        ]))
     for dev, kw in (("dk", DESK), ("ph", PHONE)):
         F.append((f"{dev}-quiz", "find-your-mile.html", kw, [
             ("answers", answer),
