@@ -3806,3 +3806,4 @@ body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
 .pf-wrap .sl-tl p.sl-tl-done b{font:inherit!important}
 .pf-wrap .sl-tl p.pf-sig{font:italic 400 18px/1.2 'Libre Caslon Text',Georgia,serif!important;color:#C65213!important;margin:10px 0 16px!important}
 .pf-wrap .pf-hd span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pf-wrap .pf-n{min-height:13px}
