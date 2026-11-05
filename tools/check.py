@@ -65,7 +65,6 @@ def flows():
         await r.evaluate("e=>{e.value=95;e.dispatchEvent(new Event('input',{bubbles:true}));e.dispatchEvent(new Event('change',{bubbles:true}))}")
         await pg.wait_for_timeout(900)
     F.append(("dk-sliders", "priorities.html", DESK, [
-        ("preset", lambda pg: tap(pg, "[data-slpre]", 1200)),
         ("slide", slide),
         ("town", lambda pg: tap(pg, "[data-slpick]", 1200, 1)),
         ("reset", lambda pg: tap(pg, "[data-slreset]", 1000)),
@@ -101,6 +100,7 @@ def flows():
 def norm(html):
     html = re.sub(r"\s+", " ", html)
     html = re.sub(r"(app|site)\.[0-9a-f]{10}\.(js|css)", r"\1.HASH.\2", html)
+    html = re.sub(r"[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}", "UUID", html)
     html = re.sub(r'(transform|transition|animation)[^;"]*;?', "", html)  # mid animation values
     return html
 

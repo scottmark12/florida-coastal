@@ -3698,7 +3698,166 @@ html body .res-hd h1{margin:6px 0 6px!important;font:500 44px/1.02 'DM Sans',sys
 .sl-from span{display:block}
 @media (min-width:900px){.sl-offer .sl-row{flex-direction:row!important}.sl-offer .sl-row input{flex:1 1 auto!important;width:auto!important}.sl-offer .sl-row .btn{flex:0 0 auto!important;width:auto!important}}
 @media (max-width:899px){.sl-offer{grid-template-columns:96px minmax(0,1fr)!important}.sl-offer .sl-ob>span{font-size:14px!important;line-height:1.4!important}.sl-offer .sl-ob>b{font-size:18px!important}}
-.tl-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:300;padding:12px 18px;border-radius:999px;background:#13282C;color:#fff;font:500 15px 'DM Sans',sans-serif;box-shadow:0 10px 26px rgba(19,40,44,.3);transition:opacity .5s ease,transform .5s ease;max-width:calc(100% - 32px)}
+
+/* ===== Nov 4 2026 patch: audit fixes (headings, contrast, text size, tap areas) ===== */
+.prose .fc-q h2{margin:0 0 6px!important;font:700 12px/1.2 var(--ui)!important;letter-spacing:.12em!important;text-transform:uppercase;color:#13282C;border:0!important;padding:0!important}
+h2.svq{border:0;padding:0}
+.hb-k,.vm-stepn,.vm-all,.cmp-v a,.prose .cmp-v a{color:#A8450F}
+.qzi-n0{color:#566669}
+.qzi .svtile .svt small,.sl-note,.sl-ctrls .sl-note,.sl-panel .sl-note{color:#566669!important}
+.crumbs a,.crumbs2 a{display:inline-block;padding:4px 0;min-height:24px}
+.ed-k,.cat,.gx .cat,.card .cat,.fs .cat{font-size:14px!important}
+.block>.label,section.wrap>.label,.boxed>.label,.rsec>.label,.tareas>.label{font-size:14px!important}
+.hp-hero .hp-trust,.hp-cue{font-size:14px!important}
+.hp-cue a{font-size:14px}
+.vm-tile small,.vm-left .vm-tile small,.vm-sheet.full .vm-tile small,.vm-ph.land .vm-tile small{font-size:14px!important}
+.sl-gl,.sl-panel .sl-gl{font-size:14px!important}
+.sl-top output{font-size:14px!important}
+.sl-note,.sl-ctrls .sl-note,.sl-panel .sl-note{font-size:14px!important}
+.cmp-lab{font-size:14px!important}
+.cmp-labsub{font-size:14px!important}
+.cmp-tog,.card .cmp-tog{font-size:14px!important}
+.savebox .sv-note{font-size:14px!important}
+.vm-stepn{font-size:14px!important}
+.vm-pan{font-size:14px!important}
+.hb-k,.hb-nh .hb-k{font-size:14px!important}
+.prose .fc-tdet dt{font-size:14px!important}
+.prose .fc-tdet small{font-size:14px!important}
+.prose .fc-q h2{font-size:14px!important}
+.ar-facts dt{font-size:14px;color:#566669}
+.ar-facts dd small{font-size:14px;color:#566669}
+
+/* ===== Nov 4 2026 patch: results header, empty Slider Map ===== */
+body:has(.fym-res) .navcta,body:has(.res-hd) .navcta{display:none!important}
+.sl-empty{margin:6px 0 4px;padding:14px 16px;border:1px dashed var(--line);border-radius:10px;font-size:15px;line-height:1.45;color:#3d4d50;background:rgba(255,253,249,.7)}
+/* ===== Nov 4 2026 patch: map explainers ===== */
+.vm-intro{width:372px}
+.vm-intro .vm-cb{padding:18px 20px 20px}
+.vm-intro .vm-cb p{font-size:15px;line-height:1.5}
+.vm-intro-alt{margin-top:10px!important;color:#566669}
+.vm-intro-alt a{color:#0F6E72;font-weight:700}
+.slc-empty .vm-cb p{font-size:15px;line-height:1.5}
+.slc-empty .slv-sep{margin-top:8px;color:#566669}
+@media (max-width:999px){.vm-intro{display:none}}
+.sl2-where{min-width:0;max-width:100%}
+.sl2-where select,#sl-coast{width:100%;max-width:100%;min-width:0;text-overflow:ellipsis}
+
+/* ===== Nov 4 2026 patch: town page At a glance strip ===== */
+.tglance{display:flex;flex-wrap:wrap;align-items:stretch;gap:10px 22px;margin:4px 0 26px;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:#fff}
+.tglance>div{display:flex;flex-direction:column;gap:2px;min-width:0}
+.tglance span{font:700 14px/1.2 var(--ui);letter-spacing:.06em;text-transform:uppercase;color:#566669}
+.tglance b{font:600 17px/1.3 var(--ui);color:#13282C}
+.tglance b a{color:#0F6E72;text-decoration:none;border-bottom:1px solid currentColor}
+.tglance .tg-ask{margin-left:auto;align-self:center;white-space:nowrap}
+@media (max-width:700px){.tglance{gap:10px 18px;padding:12px 14px}.tglance .tg-ask{margin-left:0;width:100%;text-align:center}}
+@media (min-width:701px){.tglance .tg-ask{display:none}}
+@media (max-width:700px){.tglance>div{flex:1 1 40%}}
+/* ===== Nov 5 2026 patch: mobile pass (small phones, text floor) ===== */
+@media (max-width:760px){
+ .twocol{grid-template-columns:minmax(0,1fr)!important}
+ .twocol>*,.town>div{min-width:0}
+ .news .grid{grid-template-columns:minmax(0,1fr)!important}
+ .news .grid>*{min-width:0}
+ .news input{max-width:100%;box-sizing:border-box}
+}
+.tglance .tg-ask{white-space:normal}
+@media (max-width:700px){.tglance>div{flex:1 1 120px}}
+.ed-flag{flex-wrap:wrap;row-gap:6px}
+.ed-flag h2,.hb-flag h2,.cmp-verdict h2{font-size:14px!important}
+.ed-flag a,.ed-flag span,.hb-flag a,.ed-lbl{font-size:14px!important}
+.hiw-a,.ww-link{font-size:14px!important}
+.svtile .svt small{font-size:14px!important}
+.cmp-tn span{font-size:14px!important}
+.cmp-best{font-size:13px!important}
+.hb-note span,.hb-note span a{font-size:14px!important}
+.byline .cat,.fc-search span{font-size:14px!important}
+.agtag{font-size:13px!important}
+@media (max-width:359px){.vm-pan{top:27%}}
+.qzi .svtile .svt small,.qzi .svtile[style] .svt small{font-size:14px!important}
+.tglance small{font:400 14px/1.3 var(--ui);color:#566669}
+/* ===== Nov 5 2026 patch: one tap questions after the email ===== */
+.pf-wrap>b{display:block}
+.pf-wrap>span{display:block}
+.pf .pf-contact input{min-height:44px;padding:0 12px;border:1.5px solid #E2D9C9;border-radius:10px;font:500 16px 'DM Sans',sans-serif;background:#fff;color:#13282C;width:100%;box-sizing:border-box}
+.pf .pf-skip{font-size:14px;color:#566669}
+.pf-wrap .sl-tl p,.pf-wrap .sl-tl-done{font:500 15px/1.4 'DM Sans',sans-serif!important;color:#13282C}
+.pf-wrap .sl-tl-done b{font:600 15px 'DM Sans',sans-serif!important}
+.pf-wrap .sl-tlb button[data-v]:focus:not(:focus-visible){border-color:#E2D9C9;color:#13282C}
+/* Nov 5: answers use the Find Your Mile quiz rows (not pills), Skip uses the quiz's underlined text link */
+.pf-wrap .sl-tlb{display:grid;grid-template-columns:1fr;gap:8px}
+.pf-wrap .sl-tlb button{position:relative;display:flex;align-items:center;width:100%;min-height:48px;padding:9px 16px 9px 40px;text-align:left;border:1px solid transparent;border-radius:14px;background:#fff;font:600 16px/1.3 'DM Sans',sans-serif;color:#152A2E;transition:border-color .15s,box-shadow .15s}
+.pf-wrap .sl-tlb button::before{content:"";position:absolute;left:14px;top:50%;width:16px;height:16px;margin-top:-8px;border:2px solid #C9C0B0;border-radius:50%;background:#fff;box-sizing:border-box}
+.pf-wrap .sl-tlb button:hover{border-color:var(--ink);color:#152A2E;box-shadow:0 4px 12px rgba(20,40,55,.06)}
+.pf-wrap .sl-tlb button:active::before{border-color:var(--accent);background:radial-gradient(circle,var(--accent) 0 3px,#fff 4px)}
+.pf-wrap .sl-tlb button:focus-visible{outline:3px solid rgba(238,106,44,.35);outline-offset:2px}
+.pf-wrap .pf-skip{display:block;margin:4px auto 0;padding:6px;background:none;border:0;font:500 14px 'DM Sans',sans-serif;color:#3e5155;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.pf-wrap .sl-tl-next .pf-skip{display:inline-block;margin:0}
+.pf-wrap .pf-contact input{border-radius:6px;border:1px solid #D9D0C0}
+.pf-wrap .sl-tl-next .btn{border-radius:6px}
+/* Nov 5: lead question box keeps one size across every step */
+.pf-wrap .pf{display:grid}
+.pf-wrap .pf>.pf-s{grid-area:1/1;visibility:hidden;display:flex;flex-direction:column}
+.pf-wrap .pf>.pf-s.on{visibility:visible}
+.pf-wrap .pf-end{justify-content:center}
+.pf-wrap .sl-tlb.pf-2col{grid-template-columns:1fr 1fr}
+.pf-wrap .sl-tlb.pf-2col button:last-child{grid-column:1/-1}
+.pf-wrap .pf-s>.pf-skip{margin-top:auto;padding-top:8px}
+.pf-wrap .sl-tlb.pf-2col button{padding:9px 8px 9px 34px;font-size:15px;white-space:nowrap}
+.pf-wrap .sl-tlb.pf-2col button::before{left:11px}
+.pf-wrap .pf-end{justify-content:flex-start}
+.pf-wrap .pf-fine{margin:0!important;font:400 12.5px/1.4 'DM Sans',sans-serif!important;color:#566669!important}
+.pf-wrap .sl-tl p.pf-fine{font:400 12.5px/1.4 'DM Sans',sans-serif!important;color:#566669!important;margin:0!important}
+/* Nov 5: lead questions feel like they come from Mark and Betsy */
+.pf-wrap .pf-from{display:flex;gap:12px;align-items:center}
+.pf-wrap .pf-from img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none}
+.pf-wrap .pf-hd b{display:block;font:600 17px 'DM Sans',sans-serif;color:#13282C}
+.pf-wrap .pf-hd span{display:block;margin-top:2px;font-size:14.5px;color:#3e5155}
+.pf-wrap .sl-tl p.pf-sig{margin:6px 0 10px!important;font:italic 400 16px/1.2 var(--display,Georgia),serif!important;color:#C65213!important}
+.pf-wrap .pf-from{min-height:68px}
+.pf-wrap .pf-from img{width:52px;height:52px}
+/* ===== Nov 5 2026 patch: lead questions, editorial version (paper, hairlines, Caslon, one accent) ===== */
+.sl-offer.pf-wrap{background:var(--page,#FFFDF9)!important;border:1px solid rgba(21,42,46,.16)!important;border-radius:4px!important;padding:22px 22px 18px!important;box-shadow:0 1px 2px rgba(21,42,46,.04)!important}
+.pf-wrap .pf-from{min-height:0;align-items:flex-start;padding-bottom:16px;border-bottom:1px solid rgba(21,42,46,.16)}
+.pf-wrap .pf-from img{width:48px;height:48px}
+.pf-wrap .pf-eb,.pf-wrap .pf-n{display:block;font:600 11px/1.2 'DM Sans',sans-serif!important;letter-spacing:.14em;text-transform:uppercase;color:#56696C;font-style:normal}
+.pf-wrap .pf-hd b{margin-top:5px;font:400 21px/1.2 'Libre Caslon Text',Georgia,serif!important;color:#152A2E!important}
+.pf-wrap .pf-hd span{margin-top:4px;font:400 14px/1.4 'DM Sans',sans-serif;color:#56696C}
+.pf-wrap .sl-tl{border-top:0!important;margin-top:0!important;padding-top:18px!important}
+.pf-wrap .sl-tl p.pf-q{margin:8px 0 4px!important;font:400 19px/1.35 'Libre Caslon Text',Georgia,serif!important;color:#152A2E!important}
+.pf-wrap .sl-tl p.pf-y{margin:0 0 12px!important;font:400 14px/1.45 'DM Sans',sans-serif!important;color:#56696C!important}
+.pf-wrap .sl-tlb,.pf-wrap .sl-tlb.pf-2col{display:block;border-top:1px solid rgba(21,42,46,.16)}
+.pf-wrap .sl-tlb button,.pf-wrap .sl-tlb.pf-2col button{display:flex;justify-content:space-between;width:100%;min-height:46px;padding:12px 2px!important;border:0!important;border-bottom:1px solid rgba(21,42,46,.16)!important;border-radius:0!important;background:transparent!important;font:500 16px/1.3 'DM Sans',sans-serif!important;color:#152A2E;box-shadow:none!important;white-space:normal}
+.pf-wrap .sl-tlb button::before{content:none!important}
+.pf-wrap .sl-tlb button::after{content:"→";color:#A9B4B4;transition:transform .15s,color .15s}
+.pf-wrap .sl-tlb button:hover{color:#152A2E;background:transparent!important}
+.pf-wrap .sl-tlb button:hover::after{color:#152A2E;transform:translateX(3px)}
+.pf-wrap .pf-skip,.pf-wrap .pf-s>.pf-skip{margin:10px 0 0!important;padding:4px 0!important;text-align:left;font:500 13px 'DM Sans',sans-serif!important;color:#56696C!important;text-decoration:underline;text-underline-offset:3px;align-self:flex-start}
+.pf-wrap .pf-contact input{border:0!important;border-bottom:1px solid rgba(21,42,46,.3)!important;border-radius:0!important;background:transparent!important;padding:0 2px!important}
+.pf-wrap .pf-contact input:focus{outline:0;border-bottom-color:#152A2E!important}
+.pf-wrap .sl-tl-next .btn-accent{background:#152A2E!important;border-radius:4px!important}
+.pf-wrap .sl-tl-next .btn-line{border:1px solid rgba(21,42,46,.3)!important;border-radius:4px!important;background:transparent!important}
+.pf-wrap .sl-tl p.sl-tl-done{margin-top:8px!important;font:400 19px/1.4 'Libre Caslon Text',Georgia,serif!important}
+.pf-wrap .sl-tl p.sl-tl-done b{font:inherit!important}
+.pf-wrap .sl-tl p.pf-sig{font:italic 400 18px/1.2 'Libre Caslon Text',Georgia,serif!important;color:#C65213!important;margin:10px 0 16px!important}
+.pf-wrap .pf-hd span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pf-wrap .pf-n{min-height:13px}
+/* Nov 5: lead question headline and questions in DM Sans ExtraLight (Caslon kept only for the signature) */
+.pf-wrap .pf-hd b{font:200 23px/1.2 'DM Sans',sans-serif!important;letter-spacing:-.01em}
+.pf-wrap .sl-tl p.pf-q{font:200 21px/1.3 'DM Sans',sans-serif!important;letter-spacing:-.01em}
+.pf-wrap .sl-tl p.sl-tl-done{font:200 19px/1.45 'DM Sans',sans-serif!important;letter-spacing:-.005em}
+/* Nov 5: answers in semibold with orange arrows (option B) */
+.pf-wrap .sl-tlb button,.pf-wrap .sl-tlb.pf-2col button{font-weight:600!important;font-size:17px!important}
+.pf-wrap .sl-tlb button::after,.pf-wrap .sl-tlb.pf-2col button::after{color:#C65213!important;font-weight:400}
+.pf-wrap .pf-n{min-height:14px;line-height:14px!important}
+/* Nov 5: done screen hands them something useful */
+.pf-wrap .pf-read{display:block;margin:4px 0 12px;padding:14px 0;border-top:1px solid rgba(21,42,46,.16);border-bottom:1px solid rgba(21,42,46,.16);text-decoration:none;color:#152A2E}
+.pf-wrap .pf-read i{display:block;font:600 11px/1.2 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#56696C;font-style:normal}
+.pf-wrap .pf-read b{display:block;margin-top:6px;font:600 17px/1.3 'DM Sans',sans-serif;color:#152A2E}
+.pf-wrap .pf-read b::after{content:"\00a0→";color:#C65213;font-weight:400}
+.pf-wrap .pf-read span{display:block;margin-top:3px;font:400 14px/1.4 'DM Sans',sans-serif;color:#56696C}
+.pf-wrap .pf-read:hover b{text-decoration:underline;text-underline-offset:3px}
+.pf-wrap .pf-ig{font:500 13px 'DM Sans',sans-serif;color:#56696C;text-decoration:underline;text-underline-offset:3px}
+.pf-wrap .sl-tl p.pf-sig{margin:8px 0 14px!important}.tl-toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:300;padding:12px 18px;border-radius:999px;background:#13282C;color:#fff;font:500 15px 'DM Sans',sans-serif;box-shadow:0 10px 26px rgba(19,40,44,.3);transition:opacity .5s ease,transform .5s ease;max-width:calc(100% - 32px)}
 .tl-toast.out{opacity:0;transform:translateX(-50%) translateY(8px)}
 /* ===== Nov 5 2026 PREVIEW: Vibe Map "What you need" ===== */
 .nd{margin:0 24px 14px;padding:14px 14px 10px;border:1px solid var(--line);border-radius:14px;background:#fff}
