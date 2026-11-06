@@ -1205,16 +1205,34 @@ document.addEventListener("click",function(e){
 },!0);
 document.addEventListener("keydown",e=>{"Escape"===e.key&&S.ndOpen&&(S.ndOpen=!1,ndPaneSync())});
 /* Nov 6 2026: phone town card facts row (typical home, airport, schools); a check marks each one that meets a filter */
-function vmFacts(e){
-  const n=S.need||{},p=tgPrice(e),ap=tgAir(e),ed=EDUC[e.id],L=[];
-  const air=ap?(()=>{const c=ap.match(/\(([A-Z]{3})\)/),t=ap.match(/about (.+)$/),tm=t?t[1].replace(/ minutes?/," min").replace(/an hour/,"1 hr").replace(/ hours?/," hr"):"";const nm=ap.replace(/\s*\([A-Z]{3}\).*$/,"").replace(/,.*$/,"");return tm?[tm,c?c[1]:nm]:[c?c[1]:nm,c?nm:""]})():null;
-  const pr=p&&/ to /.test(p)?p.replace(/^\$([\d.]+)([KM]) to \$([\d.]+)([KM])$/,(m,a,u,b,v)=>u===v?"$"+a+"–"+b+v:"$"+a+u+"–"+b+v):p;
-  const ck=x=>x?`<i class="vf-ck" aria-label="Meets your filter">✓</i>`:"";
-  p&&L.push(`<div><span>Homes</span><b${pr!==p?' class="rg"':""}>${pr}${ck(n.bud&&MED[e.id]&&MED[e.id]<=n.bud)}</b><small>${/ to /.test(p)?"typical range":"median"}</small></div>`);
-  air&&L.push(`<div><span>Airport</span><b>${air[0]}${ck(n.air)}</b><small>${air[1]}</small></div>`);
-  ed&&L.push(`<div><span>Schools</span><b>${ed[1]}${ck(n.school)}</b><small>county grade</small></div>`);
-  return L.length?`<div class="vm-facts">${L.join("")}</div>`:"";
+/* Nov 6 2026: phone town card = Homes + the town's best ranked strength + one local strength (its first pro).
+   Ranks use the fine scores across all towns. "#1" only when a town is alone at the top; "Top 10" only when ties still fit in 10. */
+const RK_CATS=[["beach","Florida's #1 beach town","beaches","best beaches"],["walk","Florida's most walkable town","most walkable","most walkable"],["water","Florida's #1 town for boating","for boating","best for boating"],["afford","Florida's most affordable beach town","most affordable","most affordable"],["outdoors","Florida's #1 town for the outdoors","for the outdoors","best for the outdoors"],["nightlife","Florida's #1 town for nightlife","for nightlife","best for nightlife"],["dining","Florida's #1 town for dining and the arts","for dining and the arts","best for dining and the arts"],["quiet","Florida's quietest beach town","quietest","quietest"],["airport","Florida's easiest airport access","for airport access","easiest airport access"]];
+let RK_CACHE=null;
+function rkWhere(e){return"atlantic"===e.coast?"on the Atlantic":"on the Gulf"}
+function rkCoast(e){return"atlantic"===e.coast?"atlantic":"keys"===e.coast?"keys":"gulf"}
+function vmRank(e){
+  RK_CACHE||(RK_CACHE={});
+  if(e.id in RK_CACHE)return RK_CACHE[e.id];
+  let best=null;
+  RK_CATS.forEach((c,ci)=>{
+    const k=c[0],v=fscore(e,k),cmp=L=>{let b=0,t=0;L.forEach(x=>{const w=fscore(x,k);w>v+1e-9?b++:Math.abs(w-v)<1e-9&&t++});return[b,b+t]};
+    const [b,w]=cmp(T);let txt=null,sc=99;
+    if(0===b&&1===w){txt=c[1];sc=0}
+    else if(w<=10){txt="Top 10 "+c[2]+" in Florida";sc=1}
+    else if(w<=25){txt="Among Florida's "+c[3];sc=2}
+    else if("keys"!==rkCoast(e)){const cw=cmp(T.filter(x=>rkCoast(x)===rkCoast(e)))[1];cw<=10?(txt="Top 10 "+c[2]+" "+rkWhere(e),sc=3):cw<=20&&(txt="Among the "+c[3]+" "+rkWhere(e),sc=4)}
+    txt&&(!best||sc<best.sc||sc===best.sc&&ci<best.ci)&&(best={txt:txt,sc:sc,ci:ci});
+  });
+  return RK_CACHE[e.id]=best?best.txt:null;
 }
+function vmFacts(e){
+  const n=S.need||{},p=tgPrice(e),pr=p&&/ to /.test(p)?p.replace(/^\$([\d.]+)([KM]) to \$([\d.]+)([KM])$/,(m,a,u,b,v)=>u===v?"$"+a+"–"+b+v:"$"+a+u+"–"+b+v):p,
+    rk=vmRank(e),lo=(e.pros||[])[0],ok=n.bud&&MED[e.id]&&MED[e.id]<=n.bud;
+  if(!pr&&!rk&&!lo)return"";
+  return `<div class="vm-facts2">${pr?`<div class="vf-home"><span>Homes</span><b${pr!==p?' class="rg"':""}>${pr}${ok?`<i class="vf-ck" aria-label="Under your budget">✓</i>`:""}</b><small>${/ to /.test(p)?"typical range":"median"}</small></div>`:""}<ul class="vf-str">${rk?`<li class="rk"><i aria-hidden="true">★</i>${rk}</li>`:""}${lo?`<li><i aria-hidden="true">✓</i>${lo}</li>`:""}</ul></div>`;
+}
+
 function ndWhy(e,ph){
   const n=S.need||{},L=[];
   S.vibe&&e.vibes.includes(S.vibe)&&L.push(`Your style: ${VSHORT[S.vibe]||VIBES[S.vibe]}`);

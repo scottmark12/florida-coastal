@@ -4024,3 +4024,15 @@ body.nd-lock{overflow:hidden}
 .vm-facts{grid-template-columns:1.3fr 1fr 1fr}
 .vm-facts b{overflow:hidden;text-overflow:ellipsis}
 .vm-facts b.rg{font-size:15px;letter-spacing:-.01em;padding-top:2px;padding-bottom:1px}
+/* Nov 6 2026: phone town card, Homes + strengths */
+.vm-facts2{display:grid;grid-template-columns:auto 1fr;gap:0;margin:4px 18px 10px;border:1px solid #E6DED0;border-radius:14px;background:#FBF8F2}
+.vm-facts2 .vf-home{padding:10px 14px;border-right:1px solid #E6DED0;min-width:96px}
+.vm-facts2 .vf-home span{display:block;font:600 11px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#6B7A7C}
+.vm-facts2 .vf-home b{display:block;margin-top:3px;font:700 19px/1.2 'DM Sans',sans-serif;color:#13282C;white-space:nowrap}
+.vm-facts2 .vf-home b.rg{font-size:15px}
+.vm-facts2 .vf-home small{display:block;font:500 12px/1.25 'DM Sans',sans-serif;color:#6B7A7C}
+.vf-str{list-style:none;margin:0;padding:8px 12px;display:flex;flex-direction:column;justify-content:center;gap:5px}
+.vf-str li{display:flex;gap:7px;align-items:flex-start;font:500 14px/1.3 'DM Sans',sans-serif;color:#13282C}
+.vf-str li i{font-style:normal;flex:none;width:18px;height:18px;border-radius:50%;background:#E6F4EC;color:#2E7D4F;font:700 11px/18px sans-serif;text-align:center;margin-top:1px}
+.vf-str li.rk{font-weight:700}
+.vf-str li.rk i{background:#FBE7D6;color:#C65213}
