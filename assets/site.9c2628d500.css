@@ -4151,3 +4151,7 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
  .news-art .prose .nyt-pull{font-size:23px}
  .news-art .nt-grid{grid-template-columns:1fr}
 }
+
+/* ===== Nov 6 2026 patch: calmer phone home top, results link into the Vibe Map ===== */
+@media (max-width:420px){.hp-ph .hp-cue{letter-spacing:.06em;white-space:nowrap;gap:12px}.hp-ph .hp-cue a{white-space:nowrap}}
+.res-map{display:block;margin:14px 0 4px;font:600 15px/1.4 'DM Sans',sans-serif;color:#0F6E72;text-decoration:underline;text-underline-offset:3px}
