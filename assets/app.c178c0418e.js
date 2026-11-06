@@ -185,7 +185,7 @@ function vmPhone(f,a,s,o){
   if(S.vlist)return `<div class="wrap"><div class="smap smap-ph">${vPhoneTop(o)}<div class="vp-list vp-plist">${smapOrder().map(vRow).join("")}</div>${vCta()}</div></div>`;
   const W=vmW(),land=vmLand(),tab=!land&&W>=600,H=Math.max(land?240:480,window.innerHeight-(window.__vmHHu=vmHH()));vmWH=[W,window.innerHeight];const card=!!(S.vcard&&s),full=!land&&!card&&"full"===S.vmSheet,pw=land?Math.min(360,Math.round(W*.42)):0,
     mini=full&&!tab,w3=(W-44)/3,c4=H-(4*w3+24+112)<190,th=Math.round(c4?(W-52)/4:w3),rows=c4?3:4,
-    sh=(window.__vmSh||{})[(card?"c":full?"f":"l")+W]||(card?300:mini?rows*th+(rows-1)*8+88:222),top=card?54:land?8:60,fr=vmFrame(!1,W,H,s,{top:top,sh:sh,pw:pw,tab:tab,mini:mini});
+    sh=(window.__vmSh||{})[(card?"c":full?"f":"l")+W]||(card?300:mini?rows*th+(rows-1)*8+88:222),top=land?8:60,fr=vmFrame(!1,W,H,s,{top:top,sh:sh,pw:pw,tab:tab,mini:mini});
   let sheet;
   if(card){
     const {k,n,nx}=vmNext(s);
@@ -194,7 +194,7 @@ function vmPhone(f,a,s,o){
     const V=vGroups().flatMap(g=>g[1]);
     sheet=`<section class="vm-sheet${full?" full":""}${mini?" pick"+(c4?" c4":""):""}" aria-label="Pick a style"${mini?` style="--th:${th}px;--cols:${c4?4:3}"`:""}><button class="vm-handle" data-vmsheet="1" aria-expanded="${full}" aria-label="${full?"Show fewer styles":"Show all styles"}"><span></span></button><div class="vm-shd"><h2>Pick the style that feels like home</h2>${S.vibe&&!full?`<a class="vm-all" href="${vguide(S.vibe)}">Guide →</a>`:`<button class="vm-all" data-vmsheet="1">${full?"Show map":"See all "+V.length}</button>`}</div><div class="vm-tiles ${full||land?"grid":"row"}${S.vibe?" has-on":""}">${V.map(v=>vmTile(v,o,!0)).join("")}</div></section>`;
   }
-  return `<div class="vm-stage vm-ph${full?" sheet-full":""}${land?" land":""}${tab?" tab":""}" style="height:${H}px${land?";--pw:"+pw+"px":""}">${full?"":ndChip()||(card?"":`<button class="nd-mapopen" data-nopen="1"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg>What you need</button>`)}<div class="vm-map mapbox">${vmSVG(f,fr)}</div>${card?vmChips(o):""}${!land&&!tab&&!mini&&!card&&!S.vibe?`<button class="vm-pan" data-vmpan="1" aria-label="${S.vmPan?"Show the peninsula":"Show the Panhandle"}">${S.vmPan?"Peninsula ›":"‹ Panhandle"}</button>`:""}${card||S.vmMan||(S.vmz||1)>1?`<button class="vm-out ph" data-vmout="1" style="bottom:${land?12:sh+12}px">${VM_OUT_ICON}${vmOutTxt(o,1)}</button>`:""}${card||full?"":`<a class="btn btn-accent vm-top5" href="#quiz" style="bottom:${land?12:sh+12}px">My top 5</a>`}${sheet}</div>`;
+  return `<div class="vm-stage vm-ph${full?" sheet-full":""}${land?" land":""}${tab?" tab":""}" style="height:${H}px${land?";--pw:"+pw+"px":""}">${full?"":ndChip()||`<button class="nd-mapopen" data-nopen="1"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg>What you need</button>`}<div class="vm-map mapbox">${vmSVG(f,fr)}</div>${!land&&!tab&&!mini&&!card&&!S.vibe?`<button class="vm-pan" data-vmpan="1" aria-label="${S.vmPan?"Show the peninsula":"Show the Panhandle"}">${S.vmPan?"Peninsula ›":"‹ Panhandle"}</button>`:""}${card||S.vmMan||(S.vmz||1)>1?`<button class="vm-out ph" data-vmout="1" style="bottom:${land?12:sh+12}px">${VM_OUT_ICON}${vmOutTxt(o,1)}</button>`:""}${card||full?"":`<a class="btn btn-accent vm-top5" href="#quiz" style="bottom:${land?12:sh+12}px">My top 5</a>`}${sheet}</div>`;
 }
 /* Signature town pulses while you hover or swipe its style */
 /* Drag and pinch: one finger (or the mouse) pans, two fingers pinch, a trackpad pinch zooms on desktop.
@@ -1164,7 +1164,7 @@ function needCounts(){const q={};Object.keys(VIBES).forEach(k=>q[k]=T.filter(t=>
 function needN(){return Object.keys(S.need).filter(k=>S.need[k]).length}
 /* phones: the "What you need" button, and the chip on the map once filters are on */
 function ndBtn(){return `<button class="nd-open${needOn()?" on":""}" data-nopen="1">What you need${needOn()?` · ${needN()}`:""}</button>`}
-function ndChip(){if(!needOn())return"";const c=needCount(),k=needN();return `<div class="nd-mapchip${S.vcard?" low":""}"><button data-nopen="1">${k} filter${1===k?"":"s"} · <b>${c}</b> town${1===c?"":"s"}</button><button data-nclear="1" aria-label="Clear filters">Clear</button></div>`}
+function ndChip(){if(!needOn())return"";const c=needCount(),k=needN();return `<div class="nd-mapchip"><button data-nopen="1">${k} filter${1===k?"":"s"} · <b>${c}</b> town${1===c?"":"s"}</button><button data-nclear="1" aria-label="Clear filters">Clear</button></div>`}
 function needCount(){return T.filter(e=>(!S.vibe||e.vibes.includes(S.vibe))&&needOk(e)).length}
 /* desktop panel: one slim row, a budget menu and three chips, so the style photos stay above the fold */
 const NSHORT={school:"Good schools",air:"Near airport"};
