@@ -4071,3 +4071,5 @@ body.nd-lock{overflow:hidden}
 .vm-ph:not(.land) .vm-sheet.crd{height:clamp(470px,62vh,550px)}
 .vm-ph:not(.land) .vm-sheet.crd>.vm-pcph2{min-height:96px}
 body:has(.vm-ph:not(.land)) > footer{display:none}
+.vm-ph:not(.land) .vm-sheet.crd{height:clamp(485px,65vh,575px)}
+.vm-ph:not(.land) .vm-sheet.crd>.vm-pcph2{min-height:104px}
