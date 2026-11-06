@@ -189,7 +189,7 @@ function vmPhone(f,a,s,o){
   let sheet;
   if(card){
     const {k,n,nx}=vmNext(s);
-    sheet=`<section class="vm-sheet crd" aria-live="polite" aria-label="${s.name}"><div class="vm-pcph2"><a href="#town-${s.id}" tabindex="-1" aria-hidden="true">${art(s)}</a><button class="vm-x" data-vmclose="1" aria-label="Close and zoom back out">×</button></div><div class="vm-pcb2"><span class="cat">${vmReg(s)}</span><h3>${s.name}</h3><div class="smap-tags">${s.vibes.slice(0,2).map(vmTag).join("")}</div></div>${ndWhy(s,1)}<p class="vm-bl">${vmBlurb(s.blurb,land?84:W<400?88:120)}</p><div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore ${short(s).length>14?"this town":short(s)} →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div>${k>=0&&nx?`<p class="vm-of"><span class="vm-swipe2" aria-hidden="true">‹ swipe ›</span> ${k+1} of ${n} · next up ${short(nx)}</p>`:""}</section>`;
+    sheet=`<section class="vm-sheet crd" aria-live="polite" aria-label="${s.name}"><div class="vm-pcph2"><a href="#town-${s.id}" tabindex="-1" aria-hidden="true">${art(s)}</a><button class="vm-x" data-vmclose="1" aria-label="Close and zoom back out">×</button></div><div class="vm-pcb2"><span class="cat">${vmReg(s)}</span><h3>${s.name}</h3><div class="smap-tags">${s.vibes.slice(0,2).map(vmTag).join("")}</div></div>${vmFacts(s)}<p class="vm-bl">${land?vmBlurb(s.blurb,84):s.blurb}</p><div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore ${short(s).length>14?"this town":short(s)} →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div>${k>=0&&nx?`<p class="vm-of"><span class="vm-swipe2" aria-hidden="true">‹ swipe ›</span> ${k+1} of ${n} · next up ${short(nx)}</p>`:""}</section>`;
   }else{
     const V=vGroups().flatMap(g=>g[1]);
     sheet=`<section class="vm-sheet${full?" full":""}${mini?" pick"+(c4?" c4":""):""}" aria-label="Pick a style"${mini?` style="--th:${th}px;--cols:${c4?4:3}"`:""}><button class="vm-handle" data-vmsheet="1" aria-expanded="${full}" aria-label="${full?"Show fewer styles":"Show all styles"}"><span></span></button><div class="vm-shd"><h2>Pick the style that feels like home</h2>${S.vibe&&!full?`<a class="vm-all" href="${vguide(S.vibe)}">Guide →</a>`:`<button class="vm-all" data-vmsheet="1">${full?"Show map":"See all "+V.length}</button>`}</div><div class="vm-tiles ${full||land?"grid":"row"}${S.vibe?" has-on":""}">${V.map(v=>vmTile(v,o,!0)).join("")}</div></section>`;
@@ -1199,6 +1199,17 @@ document.addEventListener("click",function(e){
   if(e.target.closest(".nd-pane [data-need],.nd-pane [data-nbud],.nd-pane [data-nclear]"))setTimeout(ndPaneSync,0);
 },!0);
 document.addEventListener("keydown",e=>{"Escape"===e.key&&S.ndOpen&&(S.ndOpen=!1,ndPaneSync())});
+/* Nov 6 2026: phone town card facts row (typical home, airport, schools); a check marks each one that meets a filter */
+function vmFacts(e){
+  const n=S.need||{},p=tgPrice(e),ap=tgAir(e),ed=EDUC[e.id],L=[];
+  const air=ap?(()=>{const c=ap.match(/\(([A-Z]{3})\)/),t=ap.match(/about (.+)$/),tm=t?t[1].replace(/ minutes?/," min").replace(/an hour/,"1 hr").replace(/ hours?/," hr"):"";const nm=ap.replace(/\s*\([A-Z]{3}\).*$/,"").replace(/,.*$/,"");return tm?[tm,c?c[1]:nm]:[c?c[1]:nm,c?nm:""]})():null;
+  const pr=p&&/ to /.test(p)?p.replace(/^\$([\d.]+)([KM]) to \$([\d.]+)([KM])$/,(m,a,u,b,v)=>u===v?"$"+a+"–"+b+v:"$"+a+u+"–"+b+v):p;
+  const ck=x=>x?`<i class="vf-ck" aria-label="Meets your filter">✓</i>`:"";
+  p&&L.push(`<div><span>Homes</span><b${pr!==p?' class="rg"':""}>${pr}${ck(n.bud&&MED[e.id]&&MED[e.id]<=n.bud)}</b><small>${/ to /.test(p)?"typical range":"median"}</small></div>`);
+  air&&L.push(`<div><span>Airport</span><b>${air[0]}${ck(n.air)}</b><small>${air[1]}</small></div>`);
+  ed&&L.push(`<div><span>Schools</span><b>${ed[1]}${ck(n.school)}</b><small>county grade</small></div>`);
+  return L.length?`<div class="vm-facts">${L.join("")}</div>`:"";
+}
 function ndWhy(e,ph){
   const n=S.need||{},L=[];
   S.vibe&&e.vibes.includes(S.vibe)&&L.push(`Your style: ${VSHORT[S.vibe]||VIBES[S.vibe]}`);

@@ -4012,3 +4012,15 @@ body.nd-lock{overflow:hidden}
 .vm-pcb2 .cat{display:block;line-height:1.35}
 .vm-pcb2 h3{margin:4px 0 8px;font-size:27px;line-height:1.1}
 .vm-ph .vm-sheet.crd>.nd-why,.vm-ph .vm-sheet.crd>.vm-bl,.vm-ph .vm-sheet.crd>.vm-nav,.vm-ph .vm-sheet.crd>.vm-of{margin-left:18px;margin-right:18px}
+.vm-facts{display:grid;grid-template-columns:repeat(3,1fr);margin:4px 18px 10px;border:1px solid #E6DED0;border-radius:14px;background:#FBF8F2}
+.vm-facts>div{padding:9px 10px;min-width:0}
+.vm-facts>div+div{border-left:1px solid #E6DED0}
+.vm-facts span{display:block;font:600 11px/1.2 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:#6B7A7C}
+.vm-facts b{display:block;margin-top:3px;font:700 16px/1.2 'DM Sans',sans-serif;color:#13282C}
+.vf-ck{display:inline-block;margin-left:4px;width:16px;height:16px;border-radius:50%;background:#2E9E57;color:#fff;font:700 10px/16px sans-serif;font-style:normal;text-align:center;vertical-align:2px}
+.vm-facts b{font-size:18px;white-space:nowrap}
+.vm-facts small{display:block;margin-top:1px;font:500 12px/1.25 'DM Sans',sans-serif;color:#6B7A7C;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.vm-ph .vm-sheet.crd>.vm-bl{display:block;-webkit-line-clamp:unset;line-clamp:unset;overflow:visible;max-height:none}
+.vm-facts{grid-template-columns:1.3fr 1fr 1fr}
+.vm-facts b{overflow:hidden;text-overflow:ellipsis}
+.vm-facts b.rg{font-size:15px;letter-spacing:-.01em;padding-top:2px;padding-bottom:1px}
