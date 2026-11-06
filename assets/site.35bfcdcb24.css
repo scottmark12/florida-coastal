@@ -4155,3 +4155,6 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
 /* ===== Nov 6 2026 patch: calmer phone home top, results link into the Vibe Map ===== */
 @media (max-width:420px){.hp-ph .hp-cue{letter-spacing:.06em;white-space:nowrap;gap:12px}.hp-ph .hp-cue a{white-space:nowrap}}
 .res-map{display:block;margin:14px 0 4px;font:600 15px/1.4 'DM Sans',sans-serif;color:#0F6E72;text-decoration:underline;text-underline-offset:3px}
+/* Nov 6 2026: phone Vibe Map sheet header, title no longer runs under "Guide →" once a style is picked */
+.vm-ph .vm-shd h2,.vm-ph .vm-sheet.pick .vm-shd h2{white-space:normal;text-wrap:balance;font-size:min(21px,calc((100vw - 120px) / 14))!important;line-height:1.15}
+.vm-ph .vm-shd{align-items:center}
