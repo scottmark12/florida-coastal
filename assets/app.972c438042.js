@@ -162,7 +162,7 @@ function vmLeft(o,s){
 function vmNext(s){const L=smapOrder(),k=L.findIndex(e=>e.id===s.id),n=L.length;return {k:k,n:n,nx:n>1&&k>=0?L[(k+1)%n]:null}}
 function vmCard(s){
   const {k,n,nx}=vmNext(s);
-  return `<article class="vm-card" aria-live="polite" aria-label="${s.name}"><div class="vm-cph">${art(s)}<button class="vm-x" data-vmclose="1" aria-label="Close and zoom back out">×</button></div><div class="vm-cb"><span class="cat">${vmReg(s)}</span><h3>${s.name}</h3><div class="smap-tags">${(S.vibe&&s.vibes.includes(S.vibe)?[S.vibe]:[]).concat(s.vibes.filter(v=>v!==S.vibe)).slice(0,3).map(vmTag).join("")}</div>${ndWhy(s)}<p>${s.blurb}</p><div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore ${short(s).length>14?"this town":short(s)} →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div>${k>=0&&nx?`<p class="vm-of">${k+1} of ${n} · next up ${short(nx)}</p>`:""}</div></article>`;
+  return `<article class="vm-card" aria-live="polite" aria-label="${s.name}"><div class="vm-cph">${art(s)}<button class="vm-x" data-vmclose="1" aria-label="Close and zoom back out">×</button></div><div class="vm-cb"><span class="cat">${vmReg(s)}</span><h3>${s.name}</h3><div class="smap-tags">${(S.vibe&&s.vibes.includes(S.vibe)?[S.vibe]:[]).concat(s.vibes.filter(v=>v!==S.vibe)).slice(0,3).map(vmTag).join("")}</div>${ndWhy(s)}<p>${s.blurb}</p><div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore this town →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div>${k>=0&&nx?`<p class="vm-of">${k+1} of ${n} · next up ${short(nx)}</p>`:""}</div></article>`;
 }
 function vmOutTxt(o,ph){if(S.vibe&&needOn()){o=Object.assign({},o);o[S.vibe]=needCount()}return S.vibe?(ph?`All ${o[S.vibe]} towns`:`Zoom out to all ${o[S.vibe]} ${VSHORT[S.vibe]||VIBES[S.vibe]} towns`):(ph?"All of Florida":"Zoom out to all of Florida")}
 const VM_OUT_ICON='<svg aria-hidden="true" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M8 11h6"/></svg>';
@@ -189,7 +189,7 @@ function vmPhone(f,a,s,o){
   let sheet;
   if(card){
     const {k,n,nx}=vmNext(s);
-    sheet=`<section class="vm-sheet crd" aria-live="polite" aria-label="${s.name}"><div class="vm-pcph2"><a href="#town-${s.id}" tabindex="-1" aria-hidden="true">${art(s)}</a><button class="vm-x" data-vmclose="1" aria-label="Close and zoom back out">×</button></div>${vmEd(s,land)}<div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore ${short(s).length>14?"this town":short(s)} →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div>${k>=0&&nx?`<p class="vm-of"><span class="vm-swipe2" aria-hidden="true">‹ swipe ›</span> ${k+1} of ${n} · next up ${short(nx)}</p>`:""}</section>`;
+    sheet=`<section class="vm-sheet crd" aria-live="polite" aria-label="${s.name}"><div class="vm-pcph2"><a href="#town-${s.id}" tabindex="-1" aria-hidden="true">${art(s)}</a><button class="vm-x" data-vmclose="1" aria-label="Close and zoom back out">×</button></div>${vmEd(s,land)}<div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore this town →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div></section>`;
   }else{
     const V=vGroups().flatMap(g=>g[1]);
     sheet=`<section class="vm-sheet${full?" full":""}${mini?" pick"+(c4?" c4":""):""}" aria-label="Pick a style"${mini?` style="--th:${th}px;--cols:${c4?4:3}"`:""}><button class="vm-handle" data-vmsheet="1" aria-expanded="${full}" aria-label="${full?"Show fewer styles":"Show all styles"}"><span></span></button><div class="vm-shd"><h2>Pick the style that feels like home</h2>${S.vibe&&!full?`<a class="vm-all" href="${vguide(S.vibe)}">Guide →</a>`:`<button class="vm-all" data-vmsheet="1">${full?"Show map":"See all "+V.length}</button>`}</div><div class="vm-tiles ${full||land?"grid":"row"}${S.vibe?" has-on":""}">${V.map(v=>vmTile(v,o,!0)).join("")}</div></section>`;
@@ -1222,15 +1222,15 @@ function vmRank(e){
     else if(w<=10){txt="Top 10 "+c[2]+" in Florida";sc=1}
     else if(w<=25){txt="Among Florida's "+c[3];sc=2}
     else if("keys"!==rkCoast(e)){const cw=cmp(T.filter(x=>rkCoast(x)===rkCoast(e)))[1];cw<=10?(txt="Top 10 "+c[2]+" "+rkWhere(e),sc=3):cw<=20&&(txt="Among the "+c[3]+" "+rkWhere(e),sc=4)}
-    txt&&(!best||sc<best.sc||sc===best.sc&&ci<best.ci)&&(best={txt:txt,sc:sc,ci:ci});
+    txt&&(!best||sc<best.sc||sc===best.sc&&ci<best.ci)&&(best={txt:txt,sc:sc,ci:ci,k:k});
   });
-  return RK_CACHE[e.id]=best?best.txt:null;
+  (RK_CACHE.k||(RK_CACHE.k={}))[e.id]=best?best.k:null;return RK_CACHE[e.id]=best?best.txt:null;
 }
 /* Nov 6 2026: editorial phone card body: orange kicker (best ranked strength, else the region), serif name and summary, byline, then a ruled strip with the median home and one local strength as a quote */
 function vmEd(e,land){
   const rk=vmRank(e),p=tgPrice(e),pr=p&&/ to /.test(p)?p.replace(/^\$([\d.]+)([KM]) to \$([\d.]+)([KM])$/,(m,a,u,b,v)=>u===v?"$"+a+"–"+b+v:"$"+a+u+"–"+b+v):p,
     lo=(e.pros||[])[0],n=S.need||{},ok=n.bud&&MED[e.id]&&MED[e.id]<=n.bud,
-    sty=e.vibes.filter(v=>VCOL[v]&&VFEEL.indexOf(v)>=0).slice(0,2).map(v=>`<span class="vby-s"><i style="background:${VCOL[v]}"></i>${VSHORT[v]||VIBES[v]}</span>`).join("");
+    rkV={beach:"beaches",walk:"walk",water:"dock",outdoors:"active",nightlife:"social"}[(RK_CACHE.k||{})[e.id]],sty=e.vibes.filter(v=>VCOL[v]&&VFEEL.indexOf(v)>=0&&v!==rkV).slice(0,2).map(v=>`<span class="vby-s"><i style="background:${VCOL[v]}"></i>${VSHORT[v]||VIBES[v]}</span>`).join("");
   return `<div class="vm-ed"><span class="vk${rk?"":" rg"}">${rk||vmReg(e)}</span><h3>${e.name}</h3><p class="vdek">${land?vmBlurb(e.blurb,84):e.blurb}</p><div class="vby">${rk?`<span class="vby-r">${vmReg(e)}</span>`:""}${sty}</div></div>${pr||lo?`<div class="vstrip">${pr?`<div class="vs-p"><span>${/ to /.test(p)?"Typical homes":"Median home"}</span><b>${pr}${ok?`<i class="vf-ck" aria-label="Under your budget">✓</i>`:""}</b></div>`:""}${lo?`<p class="vs-q">${lo}</p>`:""}</div>`:""}`;
 }
 function vmFacts(e){
