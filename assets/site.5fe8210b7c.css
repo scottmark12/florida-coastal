@@ -4067,3 +4067,7 @@ body.nd-lock{overflow:hidden}
 .vm-ph .vm-sheet.crd .vm-nav button{background:transparent;border:0;box-shadow:none;color:#5E6B6D;font-size:28px;width:44px;min-width:44px;height:48px;padding:0}
 .vm-ph .vm-sheet.crd .vm-nav button:disabled{opacity:.3}
 .vm-ph .vm-sheet.crd .vm-go{flex:1;border-radius:999px}
+/* Nov 6 2026: phone Vibe Map: shorter town card, and no footer (the map fills the screen, nothing to scroll to) */
+.vm-ph:not(.land) .vm-sheet.crd{height:clamp(470px,62vh,550px)}
+.vm-ph:not(.land) .vm-sheet.crd>.vm-pcph2{min-height:96px}
+body:has(.vm-ph:not(.land)) > footer{display:none}
