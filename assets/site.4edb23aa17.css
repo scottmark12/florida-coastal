@@ -4112,3 +4112,44 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
 }
 .vm-ph .vm-shd h2{font-size:max(15px,min(21px,calc((100vw - 124px) / 15.6)))}
 @media (max-width:359px){.vm-ph .vm-shd h2{white-space:normal}}
+
+/* ===== Nov 6 2026 patch: town page photo strip, homes and costs, first weekend ===== */
+.tov-ph{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:10px;margin:0 0 22px}
+.tov-ph figure{margin:0;min-width:0}
+.tov-ph picture,.tov-ph img{display:block;width:100%;height:230px;object-fit:cover;border-radius:10px}
+.tov-ph figcaption{font:400 14px/1.35 var(--ui);color:#566669;margin-top:7px}
+.tov-ph figcaption b{display:block;font:700 13px/1.2 var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-bottom:2px}
+.tov-ap{display:block;font:500 14px/1.35 var(--ui);color:#A8450F;margin-top:8px}
+.tov2 h2{font-size:28px;margin-bottom:6px}
+.tov2-note{font:400 15px/1.45 var(--ui);color:#566669;margin:0 0 18px}
+.tov2-h{font:600 18px/1.25 var(--ui);color:var(--ink);margin:28px 0 12px}
+.tov-bands{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.tov-bands>div{background:#fff;border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.tov-bands .tb-p{display:block;font:600 22px/1.15 var(--ui);letter-spacing:-.01em;color:#0F6E72;margin-bottom:8px}
+.tov-bands b{display:block;font:600 16px/1.35 var(--ui);color:var(--ink);margin-bottom:6px}
+.tov-bands p{font:400 15px/1.5 var(--ui);color:#33474A;margin:0}
+.tov-costs{margin:0;border-top:1px solid var(--ink)}
+.tov-costs>div{display:grid;grid-template-columns:200px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.tov-costs dt{font:600 16px/1.35 var(--ui);color:var(--ink)}
+.tov-costs dd{margin:0}
+.tov-costs dd b{display:block;font:600 17px/1.35 var(--ui);color:var(--ink);margin-bottom:3px}
+.tov-costs dd span{font:400 15px/1.5 var(--ui);color:#33474A}
+.tov-wk{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.tov-wk li{display:grid;grid-template-columns:170px minmax(0,1fr);gap:16px;padding:14px 0;border-bottom:1px solid var(--line)}
+.tov-wk b{font:600 16px/1.4 var(--ui);color:#A8450F}
+.tov-wk span{font-family:var(--read);font-size:18px;line-height:1.55;color:var(--ink)}
+.tov-next{display:flex;align-items:center;gap:20px;justify-content:space-between;margin-top:24px;padding:20px 22px;border-radius:14px;background:#13282C;color:#fff}
+.tov-next h3{font:600 20px/1.25 var(--ui);margin:0 0 6px;color:#fff}
+.tov-next p{font:400 16px/1.5 var(--ui);margin:0;color:#D7E2E1;max-width:34em}
+.tov-next .btn{flex:none;white-space:nowrap}
+@media (max-width:760px){
+ .tov-ph{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+ .tov-ph figure:first-child{grid-column:1/-1}
+ .tov-ph picture,.tov-ph img{height:170px}
+ .tov-ph figure:first-child picture,.tov-ph figure:first-child img{height:240px}
+ .tov-bands{grid-template-columns:minmax(0,1fr)}
+ .tov-costs>div,.tov-wk li{grid-template-columns:minmax(0,1fr);gap:4px}
+ .tov-next{flex-direction:column;align-items:stretch}
+ .tov-next .btn{white-space:normal;text-align:center}
+}
+.tov-chips .vchip{display:inline-flex;align-items:center;width:auto;flex:none;min-height:36px;padding:6px 12px;border:1px solid var(--line);border-radius:6px;background:var(--white);font-size:14px;font-weight:600;white-space:nowrap}
