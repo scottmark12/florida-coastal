@@ -48,12 +48,12 @@ def flows():
         ("list", lambda pg: tap(pg, "[data-vlist='1']", 800)),
     ]))
     F.append(("ph-vibemap", "map.html", PHONE, [
-        ("open", lambda pg: tap(pg, ".nd-open")),
+        ("open", lambda pg: tap(pg, "[data-nopen]")),
         ("pick", lambda pg: tap(pg, ".nd-pane [data-nbud='500']", 300)),
         ("show", lambda pg: tap(pg, ".nd-go", 700)),
         ("style", lambda pg: tap(pg, ".vm-tile[data-vibe='dock']", 1200)),
-        ("list", lambda pg: tap(pg, "[data-vlist='1']", 800)),
-        ("town", lambda pg: tap(pg, "[data-vpick]", 2500)),
+        ("town", lambda pg: pg.evaluate("""()=>{const d=[...document.querySelectorAll('.vm-map .dot:not(.dim)')].find(x=>{const r=x.getBoundingClientRect();return r.top>80&&r.top<500});d.dispatchEvent(new MouseEvent('click',{bubbles:true}))}""")),
+        ("clear", lambda pg: tap(pg, "[data-vmout]", 1200)),
     ]))
     F.append(("dk-vibemap-plain", "map.html", DESK, [
         ("style", lambda pg: tap(pg, ".vm-tile[data-vibe='island']", 1200)),

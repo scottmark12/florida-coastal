@@ -90,7 +90,7 @@ function vmMeasure(){
   const st=document.querySelector(".vm-stage.vm-ph"),sh=st&&st.querySelector(".vm-sheet");
   if(!sh||sh.classList.contains("full")&&!sh.classList.contains("pick")||st.classList.contains("land"))return !1;
   const key=(sh.classList.contains("crd")?"c":sh.classList.contains("sty")?"v":sh.classList.contains("pick")?"f":"l")+vmW(),h=Math.round(sh.getBoundingClientRect().height),m=window.__vmSh||(window.__vmSh={}),
-    est=key[0]==="c"?300:key[0]==="v"?304:key[0]==="f"?(sh.classList.contains("c4")?3:4)*(parseFloat(sh.style.getPropertyValue("--th"))+8)+104:222;
+    est=key[0]==="c"?300:key[0]==="f"?(sh.classList.contains("c4")?3:4)*(parseFloat(sh.style.getPropertyValue("--th"))+8)+88:222;
   if(Math.abs((m[key]||est)-h)>10&&m[key]!==h){m[key]=h;window.__vmCur=null;rerenderMap();return !0}
   return !1;
 }
@@ -124,6 +124,7 @@ function vmAfter(){
   const on=document.querySelector(".vm-list .vm-row.on");
   if(on){const l=on.closest(".vm-list");l&&(l.scrollTop=Math.max(0,on.parentNode.offsetTop-l.clientHeight/2+on.offsetHeight/2))}
   vmHints();
+  {const r=document.querySelector(".vm-ph .vm-tiles.row");if(r){window.__vmTx&&(r.scrollLeft=window.__vmTx);const t=r.querySelector(".vm-tile.on");if(t){const L=t.getBoundingClientRect().left-r.getBoundingClientRect().left+r.scrollLeft;(L<r.scrollLeft||L+t.offsetWidth>r.scrollLeft+r.clientWidth)&&(r.scrollLeft=L-(r.clientWidth-t.offsetWidth)/2)}}}
   if(!svg)return;
   const p=window.__vmPrev,c=window.__vmCur;window.__vmPrev=c;
   if(!p||!c||Math.abs(p.a-c.a)<1e-6&&Math.abs(p.bx-c.bx)<.5&&Math.abs(p.by-c.by)<.5)return;
@@ -147,7 +148,7 @@ function vmHints(){
   crd&&once("vm-h3",()=>{crd.classList.add("vm-nudge")});
 }
 const VSUB2={island:"Barefoot and slow",oldfl:"Bait shops, no hurry",dock:"Life on the water",sophcalm:"Polished and easy",sophhigh:"Polished with a pulse",afford:"More house for less",active:"Trails and paddling",walk:"Daily life on foot",bluezone:"Springs and long walks",remote:"Wifi and an airport",social:"Bars and events",beaches:"Top ranked sand"};
-function vmTile(v,o,sh){const z=needOn()&&o&&0===o[v];return `<button class="vm-tile${z?' zero" disabled aria-disabled="true" title="No towns match your filters':""}" data-vibe="${v}" data-vsig="${VSIG[v]||""}" style="--vc:${VCOL[v]}"><img src="img/vibes/${v}.webp" alt="" loading="lazy" width="320" height="264"><em><i></i>${o[v]}</em><span><b>${VSHORT[v]||VIBES[v]}</b><small>${z?"None with your filters":(sh?VSUB2[v]:VSUB[v])||""}</small></span></button>`}
+function vmTile(v,o,sh){const z=needOn()&&o&&0===o[v],on=sh&&S.vibe===v;return `<button class="vm-tile${on?" on":""}${z&&!on?' zero" disabled aria-disabled="true" title="No towns match your filters':""}" data-vibe="${on?"":v}"${sh?` aria-pressed="${on}"`:""} data-vsig="${VSIG[v]||""}" style="--vc:${VCOL[v]}"><img src="img/vibes/${v}.webp" alt="" loading="lazy" width="320" height="264">${on?`<i class="vm-tx" aria-hidden="true">×</i>`:""}<em><i></i>${o[v]}</em><span><b>${VSHORT[v]||VIBES[v]}</b><small>${z?"None with your filters":(sh?VSUB2[v]:VSUB[v])||""}</small></span></button>`}
 function vmBlurb(b,max){if(!b||b.length<=max)return b;const cut=b.slice(0,max),i=Math.max(cut.lastIndexOf(", "),cut.lastIndexOf("; "),cut.lastIndexOf(" where "),cut.lastIndexOf(" with "));if(i>=34)return b.slice(0,i).replace(/[,;]$/,"")+".";return cut.slice(0,cut.lastIndexOf(" "))+"…"}
 function vmReg(t){return (regionOf[t.id]||{}).map||t.region}
 function vmTag(e){return `<span class="stag"><i style="background:${VCOL[e]}"></i>${VSHORT[e]||VIBES[e]}</span>`}
@@ -182,21 +183,18 @@ function vmPhone(f,a,s,o){
   if(needOn()&&o)o=needCounts();
   vmSync(s,!0);
   if(S.vlist)return `<div class="wrap"><div class="smap smap-ph">${vPhoneTop(o)}<div class="vp-list vp-plist">${smapOrder().map(vRow).join("")}</div>${vCta()}</div></div>`;
-  const W=vmW(),land=vmLand(),tab=!land&&W>=600,H=Math.max(land?240:480,window.innerHeight-(window.__vmHHu=vmHH()));vmWH=[W,window.innerHeight];const card=!!(S.vcard&&s),full=!land&&!card&&!S.vibe&&"full"===S.vmSheet,pw=land?Math.min(360,Math.round(W*.42)):0,
+  const W=vmW(),land=vmLand(),tab=!land&&W>=600,H=Math.max(land?240:480,window.innerHeight-(window.__vmHHu=vmHH()));vmWH=[W,window.innerHeight];const card=!!(S.vcard&&s),full=!land&&!card&&"full"===S.vmSheet,pw=land?Math.min(360,Math.round(W*.42)):0,
     mini=full&&!tab,w3=(W-44)/3,c4=H-(4*w3+24+112)<190,th=Math.round(c4?(W-52)/4:w3),rows=c4?3:4,
-    sh=(window.__vmSh||{})[(card?"c":S.vibe?"v":full?"f":"l")+W]||(card?300:S.vibe?304:mini?rows*th+(rows-1)*8+112:222),top=S.vibe||card?54:8,fr=vmFrame(!1,W,H,s,{top:top,sh:sh,pw:pw,tab:tab,mini:mini});
+    sh=(window.__vmSh||{})[(card?"c":full?"f":"l")+W]||(card?300:mini?rows*th+(rows-1)*8+88:222),top=card?54:land?8:60,fr=vmFrame(!1,W,H,s,{top:top,sh:sh,pw:pw,tab:tab,mini:mini});
   let sheet;
   if(card){
     const {k,n,nx}=vmNext(s);
     sheet=`<section class="vm-sheet crd" aria-live="polite" aria-label="${s.name}"><span class="vm-grab" aria-hidden="true"></span><div class="vm-pc"><a class="vm-pcph" href="#town-${s.id}" tabindex="-1" aria-hidden="true">${art(s,!1)}</a><div class="vm-pcb"><span class="cat">${vmReg(s)}</span><h3>${s.name}</h3><div class="smap-tags">${s.vibes.slice(0,2).map(vmTag).join("")}</div></div></div>${ndWhy(s,1)}<p class="vm-bl">${vmBlurb(s.blurb,land?84:W<400?88:120)}</p><div class="vm-nav"><button data-step="-1" aria-label="Previous town"${n<2?" disabled":""}>‹</button><a class="btn vm-go" href="#town-${s.id}">Explore ${short(s).length>14?"this town":short(s)} →</a><button data-step="1" aria-label="Next town${nx?", "+short(nx):""}"${n<2?" disabled":""}>›</button></div>${k>=0&&nx?`<p class="vm-of"><span class="vm-swipe2" aria-hidden="true">‹ swipe ›</span> ${k+1} of ${n} · next up ${short(nx)}</p>`:""}</section>`;
-  }else if(S.vibe){
-    const L=smapOrder(),v=S.vibe;
-    sheet=`<section class="vm-sheet sty" aria-label="${VIBES[v]} towns"><span class="vm-grab" aria-hidden="true"></span><div class="vm-step"><span class="vm-stepn">Step 2 of 2</span><span class="vm-acts">${ndBtn()}<button class="vm-chg" data-vlist="1">List</button><button class="vm-chg" data-vmland="1">Change style</button></span></div><div class="vm-shd"><h2>Tap a town to fly there</h2></div><p class="vm-sub"><i style="background:${VCOL[v]}"></i>${L.length} ${VSHORT[v]||VIBES[v]} towns · <a class="vm-guide2" href="${vguide(v)}">Read the guide</a></p><div class="vm-towns">${L.map(t=>`<button class="vm-tt" data-vpick="${t.id}">${art(t,!1)}<b>${short(t)}</b></button>`).join("")}</div></section>`;
   }else{
     const V=vGroups().flatMap(g=>g[1]);
-    sheet=`<section class="vm-sheet${full?" full":""}${mini?" pick"+(c4?" c4":""):""}" aria-label="Pick a style"${mini?` style="--th:${th}px;--cols:${c4?4:3}"`:""}><button class="vm-handle" data-vmsheet="1" aria-expanded="${full}" aria-label="${full?"Show fewer styles":"Show all styles"}"><span></span></button><div class="vm-step"><span class="vm-stepn">Step 1 of 2</span>${full?"":ndBtn()}</div><div class="vm-shd"><h2>Pick the style that feels like home</h2><button class="vm-all" data-vmsheet="1">${full?"Show map":"See all "+V.length}</button></div><div class="vm-tiles ${full||land?"grid":"row"}">${V.map(v=>vmTile(v,o,!0)).join("")}</div></section>`;
+    sheet=`<section class="vm-sheet${full?" full":""}${mini?" pick"+(c4?" c4":""):""}" aria-label="Pick a style"${mini?` style="--th:${th}px;--cols:${c4?4:3}"`:""}><button class="vm-handle" data-vmsheet="1" aria-expanded="${full}" aria-label="${full?"Show fewer styles":"Show all styles"}"><span></span></button><div class="vm-shd"><h2>Pick the style that feels like home</h2>${S.vibe&&!full?`<a class="vm-all" href="${vguide(S.vibe)}">Guide →</a>`:`<button class="vm-all" data-vmsheet="1">${full?"Show map":"See all "+V.length}</button>`}</div><div class="vm-tiles ${full||land?"grid":"row"}${S.vibe?" has-on":""}">${V.map(v=>vmTile(v,o,!0)).join("")}</div></section>`;
   }
-  return `<div class="vm-stage vm-ph${full?" sheet-full":""}${land?" land":""}${tab?" tab":""}" style="height:${H}px${land?";--pw:"+pw+"px":""}">${ndChip()}<div class="vm-map mapbox">${vmSVG(f,fr)}</div>${S.vibe||card?vmChips(o):""}${!land&&!tab&&!mini&&!card&&!S.vibe?`<button class="vm-pan" data-vmpan="1" aria-label="${S.vmPan?"Show the peninsula":"Show the Panhandle"}">${S.vmPan?"Peninsula ›":"‹ Panhandle"}</button>`:""}${card||S.vmMan||(S.vmz||1)>1?`<button class="vm-out ph" data-vmout="1" style="bottom:${land?12:sh+12}px">${VM_OUT_ICON}${vmOutTxt(o,1)}</button>`:""}${card||full||S.vibe?"":`<a class="btn btn-accent vm-top5" href="#quiz" style="bottom:${land?12:sh+12}px">My top 5</a>`}${sheet}</div>`;
+  return `<div class="vm-stage vm-ph${full?" sheet-full":""}${land?" land":""}${tab?" tab":""}" style="height:${H}px${land?";--pw:"+pw+"px":""}">${full?"":ndChip()||(card?"":`<button class="nd-mapopen" data-nopen="1"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg>What you need</button>`)}<div class="vm-map mapbox">${vmSVG(f,fr)}</div>${card?vmChips(o):""}${!land&&!tab&&!mini&&!card&&!S.vibe?`<button class="vm-pan" data-vmpan="1" aria-label="${S.vmPan?"Show the peninsula":"Show the Panhandle"}">${S.vmPan?"Peninsula ›":"‹ Panhandle"}</button>`:""}${card||S.vmMan||(S.vmz||1)>1?`<button class="vm-out ph" data-vmout="1" style="bottom:${land?12:sh+12}px">${VM_OUT_ICON}${vmOutTxt(o,1)}</button>`:""}${card||full?"":`<a class="btn btn-accent vm-top5" href="#quiz" style="bottom:${land?12:sh+12}px">My top 5</a>`}${sheet}</div>`;
 }
 /* Signature town pulses while you hover or swipe its style */
 /* Drag and pinch: one finger (or the mouse) pans, two fingers pinch, a trackpad pinch zooms on desktop.
@@ -269,7 +267,7 @@ document.addEventListener("click",function(e){
   if(e.target.closest("[data-vmland]")){S.vibe=null;S.vmV=null;S.vcard=!1;S.vmz=1;S.vmOpen=null;S.vmMan=null;S.vlist=!1;S.vmSheet="";try{track("style_tap","change")}catch(x){}rerenderMap();return}
   if(e.target.closest("[data-vmsheet]")){S.vmSheet="full"===S.vmSheet?"":"full";rerenderMap();return}
 });
-document.addEventListener("pointerdown",function(e){const t=e.target.closest&&e.target.closest(".vm-tile");t&&vmPulse(t.dataset.vsig)},!0);
+document.addEventListener("pointerdown",function(e){const t=e.target.closest&&e.target.closest(".vm-tile");t&&vmPulse(t.dataset.vsig);t&&t.parentNode.classList.contains("row")&&(window.__vmTx=t.parentNode.scrollLeft)},!0);
 document.addEventListener("mouseover",function(e){const t=e.target.closest&&e.target.closest(".vm-tile");t&&vmPulse(t.dataset.vsig)},!0);
 document.addEventListener("mouseout",function(e){const t=e.target.closest&&e.target.closest(".vm-tile");t&&!t.contains(e.relatedTarget)&&vmPulse(null)},!0);
 let vmST=0;
@@ -1161,7 +1159,7 @@ function needCounts(){const q={};Object.keys(VIBES).forEach(k=>q[k]=T.filter(t=>
 function needN(){return Object.keys(S.need).filter(k=>S.need[k]).length}
 /* phones: the "What you need" button, and the chip on the map once filters are on */
 function ndBtn(){return `<button class="nd-open${needOn()?" on":""}" data-nopen="1">What you need${needOn()?` · ${needN()}`:""}</button>`}
-function ndChip(){if(!needOn())return"";const c=needCount(),k=needN();return `<div class="nd-mapchip${S.vibe||S.vcard?" low":""}"><button data-nopen="1">${k} filter${1===k?"":"s"} · <b>${c}</b> town${1===c?"":"s"}</button><button data-nclear="1" aria-label="Clear filters">Clear</button></div>`}
+function ndChip(){if(!needOn())return"";const c=needCount(),k=needN();return `<div class="nd-mapchip${S.vcard?" low":""}"><button data-nopen="1">${k} filter${1===k?"":"s"} · <b>${c}</b> town${1===c?"":"s"}</button><button data-nclear="1" aria-label="Clear filters">Clear</button></div>`}
 function needCount(){return T.filter(e=>(!S.vibe||e.vibes.includes(S.vibe))&&needOk(e)).length}
 /* desktop panel: one slim row, a budget menu and three chips, so the style photos stay above the fold */
 const NSHORT={school:"Good schools",air:"Near airport"};

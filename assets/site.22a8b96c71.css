@@ -3989,3 +3989,13 @@ body.nd-lock{overflow:hidden}
 .vp-picked b{color:var(--ink)}
 .dk-map .vp-pc.on img{outline:3px solid var(--vc);outline-offset:3px;border-radius:6px}
 .dk-map .vp-pc.on b{color:var(--ink)}
+/* ===== Nov 5 2026 patch: phone Vibe Map keeps the styles the whole time (no Step 1 of 2 / Step 2 of 2) ===== */
+.vm-ph .vm-shd{padding-top:4px;align-items:baseline}
+.vm-ph .vm-shd h2{flex:1;min-width:0}
+.vm-ph .vm-tile{transition:opacity .2s,filter .2s}
+.vm-ph .vm-tiles.has-on .vm-tile:not(.on){opacity:.5;filter:saturate(.55)}
+.vm-ph .vm-tile.on::before{content:"";position:absolute;inset:0;z-index:2;border:3px solid var(--vc);border-radius:inherit;pointer-events:none}
+.vm-tx{position:absolute;top:6px;right:6px;z-index:3;width:24px;height:24px;border-radius:50%;background:rgba(255,255,255,.94);color:#13282C;font:600 17px/24px 'DM Sans',sans-serif;font-style:normal;text-align:center}
+.nd-mapopen{position:absolute;left:12px;top:12px;z-index:6;display:inline-flex;align-items:center;gap:7px;min-height:42px;padding:0 16px 0 13px;border:0;border-radius:999px;background:#fff;box-shadow:0 4px 14px rgba(19,40,44,.18);font:600 15px 'DM Sans',sans-serif;color:#13282C;cursor:pointer}
+.nd-mapopen.low{top:60px}
+.vm-ph.land .nd-mapopen{top:10px}
