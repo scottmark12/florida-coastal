@@ -53,7 +53,7 @@ def flows():
         ("show", lambda pg: tap(pg, ".nd-go", 700)),
         ("style", lambda pg: tap(pg, ".vm-tile[data-vibe='dock']", 1200)),
         ("town", lambda pg: pg.evaluate("""()=>{const d=[...document.querySelectorAll('.vm-map .dot:not(.dim)')].find(x=>{const r=x.getBoundingClientRect();return r.top>80&&r.top<500});d.dispatchEvent(new MouseEvent('click',{bubbles:true}))}""")),
-        ("clear", lambda pg: tap(pg, "[data-vmout]", 1200)),
+        ("clear", lambda pg: tap(pg, "[data-vmclose]", 1200)),
     ]))
     F.append(("dk-vibemap-plain", "map.html", DESK, [
         ("style", lambda pg: tap(pg, ".vm-tile[data-vibe='island']", 1200)),
