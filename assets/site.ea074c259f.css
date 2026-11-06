@@ -4074,3 +4074,80 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
 .vm-ph:not(.land) .vm-sheet.crd{height:clamp(485px,65vh,575px)}
 .vm-ph:not(.land) .vm-sheet.crd>.vm-pcph2{min-height:104px}
 .vm-ph .vm-sheet.crd .vm-nav button{color:#13282C}
+
+/* ===== Nov 6 2026 patch: News Analysis article template (layout "news") ===== */
+.news-art{background:#fff}
+.news-art .nyt{max-width:680px;margin:0 auto;padding:0 22px}
+.news-art .nyt-head{padding:44px 0 26px}
+.news-art .nyt-head .crumbs{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--muted);margin-bottom:18px}
+.news-art .nyt-head .crumbs a{color:var(--muted)}
+.news-art .nyt-kick{font-family:'DM Sans',sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+.news-art .nyt-head h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;font-size:50px;line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin:0;font-variation-settings:"opsz" 40!important}
+.news-art .nyt-dek{font-family:'DM Sans',sans-serif;font-weight:300;font-size:21px;line-height:1.45;letter-spacing:-.005em;color:#3E4F52;margin:18px 0 0}
+.news-art .nyt-by{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-family:'DM Sans',sans-serif;font-size:14px;color:var(--muted)}
+.news-art .nyt-by b{font-weight:500;color:var(--ink)}
+.news-art .nyt-lead{max-width:1100px;margin:0 auto 34px;padding:0 22px}
+.news-art .nyt-lead img{display:block;width:100%;height:auto;max-height:620px;object-fit:cover;object-position:center 60%}
+.news-art .nyt-lead figcaption,.news-art .fc-photo figcaption{font-family:'DM Sans',sans-serif;font-weight:300;font-size:13.5px;line-height:1.5;color:var(--muted);margin-top:8px;max-width:680px}
+.news-art .fc-photo .cr{margin-left:6px;font-size:12px;color:#8A9A9C}
+.news-art .prose{max-width:none}
+.news-art .prose p{font-family:'DM Sans',sans-serif;font-weight:400;font-size:18.5px;line-height:1.7;color:var(--ink);margin:0 0 22px}
+.news-art .prose b,.news-art .prose strong{font-weight:600}
+.news-art .prose h2{font-family:'DM Sans',sans-serif!important;font-weight:500!important;font-size:25px;letter-spacing:-.025em;font-variation-settings:"opsz" 32!important;line-height:1.25;color:var(--ink);margin:46px 0 18px}
+.news-art .prose p a{color:var(--ink);text-decoration:underline;text-decoration-color:#9FB4B7;text-underline-offset:3px}
+.news-art .prose .fc-photo{margin:30px 0}
+.news-art .prose .fc-photo img{display:block;width:100%;height:auto;max-width:100%;border:0;border-radius:0;aspect-ratio:3/2;object-fit:cover}
+.news-art .prose .fc-photo figcaption{max-width:none;margin:8px 0 0;text-align:left}
+.news-art .prose .fc-chart{background:none;border:0;border-top:2px solid var(--ink);border-radius:0;padding:12px 0 0;margin:34px 0}
+.news-art .prose .fc-chart-h b{font-family:'DM Sans',sans-serif;font-weight:500;font-size:17px;letter-spacing:-.01em}
+.news-art .prose .fc-chart-h span{font-family:'DM Sans',sans-serif;font-weight:300;font-size:14px;color:var(--muted)}
+.news-art .prose .fc-scatter img{display:block;width:100%;height:auto;margin-top:12px;border:0}
+.news-art .prose .fc-src,.news-art .prose p.fc-src{font-family:'DM Sans',sans-serif;font-size:12.5px;color:var(--muted);margin:10px 0 0}
+.news-art .prose .fc-table-wrap{margin:34px 0;border-top:2px solid var(--ink);padding-top:12px}
+.news-art .prose .fc-table{font-family:'DM Sans',sans-serif;font-size:14.5px}
+.news-art .prose .fc-table caption{font-family:'DM Sans',sans-serif;font-weight:500;font-size:17px;letter-spacing:-.01em}
+.news-art .prose .fc-table th{border-bottom:1px solid var(--ink);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500;vertical-align:bottom}
+.news-art .prose .fc-table tr.fc-tr-hl td{font-weight:600;color:var(--ink)}
+.news-art .prose .fc-table.fc-num td:not(:first-child),.news-art .prose .fc-table.fc-num th:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}
+.news-art .prose .fc-table.fc-num td:first-child{color:var(--ink)}
+.news-art .prose .fc-tag.gop{background:#F6E4E1;color:#A23B31}
+.news-art .prose .fc-tag.dem{background:#E3EAF4;color:#2F5A8F}
+.news-art .prose .nyt-pull{margin:34px 0;padding:18px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);font-family:'DM Sans',sans-serif;font-weight:300;font-size:28px;line-height:1.3;letter-spacing:-.012em;color:var(--ink);quotes:none;border-left:0;font-style:normal}
+.news-art .prose .fc-kicker{font-family:'DM Sans',sans-serif!important;font-weight:300;font-size:24px;line-height:1.4;letter-spacing:-.01em;margin:30px 0}
+.news-art .prose .fc-box{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0;padding:20px 22px;margin:28px 0}
+.news-art .prose .fc-box h3{font-family:'DM Sans',sans-serif!important;font-weight:500!important;font-size:18px;margin:0 0 10px}
+.news-art .prose .fc-box li{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;margin-bottom:8px}
+.news-art .nyt-towns{margin:40px 0 10px;padding:20px 0 0;border-top:2px solid var(--ink)}
+.news-art .nyt-towns h3{font-family:'DM Sans',sans-serif!important;font-weight:500!important;font-size:17px;letter-spacing:-.01em;margin:0 0 14px;color:var(--ink)}
+.news-art .nt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 18px}
+.news-art .nt-grid a{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-family:'DM Sans',sans-serif}
+.news-art .nt-grid a b{font-weight:500;font-size:16px}
+.news-art .nt-grid a span{font-size:13px;color:var(--muted)}
+.news-art .nt-grid a:hover b{color:var(--accent)}
+.news-art .prose p.nt-more{font-size:15px;margin:14px 0 0}
+.news-art .prose p.nt-more a{color:var(--accent);font-weight:500;text-decoration:none}
+.news-art .nyt-more{margin:30px 0 0;border-top:1px solid var(--line);padding-top:12px}
+.news-art .nyt-more summary{cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:500;font-size:15px;color:var(--ink);list-style:none}
+.news-art .nyt-more summary::-webkit-details-marker{display:none}
+.news-art .nyt-more summary::before{content:"+ ";color:var(--accent);font-weight:700}
+.news-art .nyt-more[open] summary::before{content:"\2212  "}
+.news-art .nyt-note{margin:44px 0 10px;padding-top:16px;border-top:1px solid var(--line)}
+.news-art .nyt-note h3{font-family:'DM Sans',sans-serif!important;font-weight:600!important;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin:0 0 8px}
+.news-art .prose .nyt-note p{font-size:14px;line-height:1.6;color:var(--muted);margin:0 0 10px}
+.news-art .prose .nyt-src{margin:0 0 12px;padding-left:18px}
+.news-art .prose .nyt-src li{font-family:'DM Sans',sans-serif;font-size:13.5px;line-height:1.55;color:var(--muted);margin-bottom:4px}
+.news-art .prose .nyt-src a{color:var(--ink);text-decoration:underline;text-decoration-color:#9FB4B7;text-underline-offset:3px}
+.news-art .nyt-cta{margin:30px 0 56px}
+@media(max-width:700px){
+ .news-art .nyt{padding:0 18px}
+ .news-art .nyt-head{padding-top:26px}
+ .news-art .nyt-head h1{font-weight:300!important;font-size:34px;letter-spacing:.015em;line-height:1.18}
+ .news-art .nyt-dek{font-size:18.5px}
+ .news-art .nyt-lead{padding:0}
+ .news-art .nyt-lead figcaption{padding:0 18px}
+ .news-art .prose p{font-size:18px}
+ .news-art .prose .fc-photo{margin-left:-18px;margin-right:-18px}
+ .news-art .prose .fc-photo figcaption{padding:0 18px}
+ .news-art .prose .nyt-pull{font-size:23px}
+ .news-art .nt-grid{grid-template-columns:1fr}
+}

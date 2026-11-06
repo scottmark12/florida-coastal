@@ -14,7 +14,8 @@ article.json:
   "read": 4,                                 # minutes
   "towns": ["port-charlotte", "ruskin"],     # town ids featured (must exist in towns/)
   "body": "<p>…</p><h2>…</h2>…",             # HTML. Link towns as <a href=\"#town-ID\"> and guides as <a href=\"#article-ID\">
-  "faq": [["Question?", "Answer."], …]       # optional, added as FAQPage structured data
+  "faq": [["Question?", "Answer."], …],      # optional, added as FAQPage structured data
+  "layout": "news", "by": "…", "kicker": "…", "cap": "…", "alt": "…"   # optional, see OPTIONAL below
 }
 
 What it does:
@@ -32,6 +33,13 @@ BASE = "https://www.floridacoastal.co/"
 os.chdir(ROOT)
 sys.path.insert(0, os.path.join(ROOT, "tools"))
 import prerender  # noqa: E402
+
+
+# Optional fields. "layout": "news" uses the News Analysis template (one column,
+# title above a wide lead photo, byline with a name). "by" is the byline name,
+# "kicker" the small label above the headline, "cap" the lead photo caption,
+# "alt" the lead photo description. News layout articles stay off the home feed.
+OPTIONAL = ("layout", "by", "kicker", "cap", "alt")
 
 
 def die(msg):
@@ -74,6 +82,9 @@ def add_to_bundle(a):
     if f'{{id:"{a["id"]}"' in js or f'"id":"{a["id"]}"' in js:
         die("article id already in the bundle")
     fields = {k: a[k] for k in ("id", "date", "cat", "img", "title", "dek", "read", "towns", "body")}
+    for k in OPTIONAL:
+        if a.get(k):
+            fields[k] = a[k]
     entry = json.dumps(fields, ensure_ascii=False, separators=(",", ":")).replace("</", "<\\/")
     js = js.replace(marker, marker + entry + ",", 1)
     h = hashlib.sha1(js.encode()).hexdigest()[:10]
@@ -111,7 +122,7 @@ def make_page(a):
         {
             "@type": "Article", "headline": a["title"], "description": a["dek"], "image": BASE + a["img"],
             "datePublished": a["date"], "dateModified": a["date"],
-            "author": {"@id": BASE + "#org"}, "publisher": {"@id": BASE + "#org"}, "mainEntityOfPage": url,
+            "author": ({"@type": "Person", "name": a["by"]} if a.get("by") else {"@id": BASE + "#org"}), "publisher": {"@id": BASE + "#org"}, "mainEntityOfPage": url,
             "about": [{"@type": "Place", "name": t.replace("-", " ").title() + ", Florida", "url": f"{BASE}towns/{t}.html"} for t in a["towns"]],
         },
         {"@type": "BreadcrumbList", "itemListElement": [

@@ -1,0 +1,26 @@
+{
+  "_how_to_use": "Copy to drafts/articles/<id>.json, fill it in, delete the _ fields, then run python3 tools/add_article.py drafts/articles/<id>.json. Full guide: drafts/templates/NEWS-ANALYSIS.md",
+  "id": "lowercase-words-joined-by-hyphens",
+  "date": "YYYY-MM-DD",
+  "cat": "News Analysis",
+  "layout": "news",
+  "kicker": "News Analysis · <topic>",
+  "by": "Mark Scott",
+  "img": "img/<lead-photo>.jpg",
+  "alt": "<what the lead photo shows>",
+  "cap": "<one line caption tied to a fact in the story> <span class=\"cr\">Name / Source</span>",
+  "title": "<editorial headline: the expectation, then the twist>",
+  "dek": "<one or two sentences: the finding, then what it means for someone choosing where to live>",
+  "read": 6,
+  "towns": [
+    "town-id-1",
+    "town-id-2"
+  ],
+  "body": "<p>Scene opening: a real place, a checkable fact.</p><p>The twist in one line.</p><p>Why it matters to someone moving here.</p><figure class=\"fc-fig fc-photo\"><img src=\"img/<photo>.jpg\" width=\"1600\" height=\"1066\" alt=\"...\"><figcaption>Caption. <span class=\"cr\">Name / Unsplash</span></figcaption></figure><h2>Section heading</h2><p>Short paragraphs. Link sources inline: <a href=\"https://...\" target=\"_blank\" rel=\"noopener\">source</a>.</p><figure class=\"fc-chart fc-scatter\" role=\"group\" aria-label=\"Chart title\"><div class=\"fc-chart-h\"><b>Chart title</b><span>What the chart shows</span></div><img src=\"img/<chart>.jpg\" width=\"1400\" height=\"750\" alt=\"...\"><p class=\"fc-src\">Source: ...</p></figure><blockquote class=\"nyt-pull\">The one line people will screenshot.</blockquote><div class=\"fc-table-wrap\"><table class=\"fc-table\"><caption>Table title</caption><thead><tr><th>...</th></tr></thead><tbody><tr><td>...</td></tr></tbody></table><p class=\"fc-src\">Source: ...</p></div><h2>What this means if you're moving here</h2><p>...</p><div class=\"fc-box\"><h3>Before you choose a town</h3><ul><li><b>Lead in.</b> Step, with a link to one of our guides: <a href=\"#article-insurance\">our insurance guide</a>.</li></ul></div><div class=\"nyt-towns\"><h3>Towns in this story</h3><div class=\"nt-grid\"><a href=\"#town-<id>\"><b>Town</b><span>County</span></a></div><p class=\"nt-more\">Not sure where you fit? <a href=\"#quiz\">Answer 8 quick questions</a> and we'll match you with five towns.</p></div><details class=\"nyt-more\"><summary>See the full numbers</summary>...tables...</details><div class=\"nyt-note\"><h3>About this analysis</h3><p>Method, timing, stats notation.</p><h3>Sources</h3><ul class=\"nyt-src\"><li>...</li></ul><p class=\"nyt-credits\">Photo credits.</p></div>",
+  "faq": [
+    [
+      "Question people ask AI assistants?",
+      "Plain answer in two sentences."
+    ]
+  ]
+}
