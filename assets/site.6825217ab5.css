@@ -3999,3 +3999,16 @@ body.nd-lock{overflow:hidden}
 .nd-mapopen{position:absolute;left:12px;top:12px;z-index:6;display:inline-flex;align-items:center;gap:7px;min-height:42px;padding:0 16px 0 13px;border:0;border-radius:999px;background:#fff;box-shadow:0 4px 14px rgba(19,40,44,.18);font:600 15px 'DM Sans',sans-serif;color:#13282C;cursor:pointer}
 .nd-mapopen.low{top:60px}
 .vm-ph.land .nd-mapopen{top:10px}
+/* ===== Nov 6 2026 patch: phone title always one line; phone town card with a big photo and a clear X ===== */
+.vm-ph .vm-shd h2{white-space:nowrap;font-size:min(21px,calc((100vw - 124px) / 13.4))}
+.vm-ph .vm-shd .vm-all{flex:none;white-space:nowrap}
+.vm-x{width:44px;height:44px;top:12px;right:12px;background:#fff;color:#13282C;font:400 30px/1 'DM Sans',sans-serif;display:flex;align-items:center;justify-content:center;padding:0 0 3px;box-shadow:0 2px 12px rgba(10,30,34,.35);z-index:3}
+.vm-x:active{transform:scale(.94)}
+.vm-ph .vm-sheet.crd{left:10px;right:10px;bottom:10px;border-radius:22px;padding:0 0 12px;overflow:hidden;box-shadow:0 10px 34px rgba(10,30,34,.28)}
+.vm-pcph2{position:relative;height:clamp(150px,24vh,210px)}
+.vm-pcph2>a{display:block;height:100%}
+.vm-pcph2 img,.vm-pcph2 .fallback{width:100%;height:100%;object-fit:cover;display:block}
+.vm-pcb2{padding:14px 18px 2px}
+.vm-pcb2 .cat{display:block;line-height:1.35}
+.vm-pcb2 h3{margin:4px 0 8px;font-size:27px;line-height:1.1}
+.vm-ph .vm-sheet.crd>.nd-why,.vm-ph .vm-sheet.crd>.vm-bl,.vm-ph .vm-sheet.crd>.vm-nav,.vm-ph .vm-sheet.crd>.vm-of{margin-left:18px;margin-right:18px}
