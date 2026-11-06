@@ -1230,7 +1230,7 @@ function vmFacts(e){
   const n=S.need||{},p=tgPrice(e),pr=p&&/ to /.test(p)?p.replace(/^\$([\d.]+)([KM]) to \$([\d.]+)([KM])$/,(m,a,u,b,v)=>u===v?"$"+a+"–"+b+v:"$"+a+u+"–"+b+v):p,
     rk=vmRank(e),lo=(e.pros||[])[0],ok=n.bud&&MED[e.id]&&MED[e.id]<=n.bud;
   if(!pr&&!rk&&!lo)return"";
-  return `<div class="vm-facts2">${pr?`<div class="vf-home"><span>Homes</span><b${pr!==p?' class="rg"':""}>${pr}${ok?`<i class="vf-ck" aria-label="Under your budget">✓</i>`:""}</b><small>${/ to /.test(p)?"typical range":"median"}</small></div>`:""}<ul class="vf-str">${rk?`<li class="rk"><i aria-hidden="true">★</i>${rk}</li>`:""}${lo?`<li><i aria-hidden="true">✓</i>${lo}</li>`:""}</ul></div>`;
+  return `<div class="vm-facts2">${pr?`<div class="vf-home"><span>Homes</span><b${pr!==p?' class="rg"':""}>${pr}${ok?`<i class="vf-ck" aria-label="Under your budget">✓</i>`:""}</b><small>${/ to /.test(p)?"typical range":"median"}</small></div>`:""}<ul class="vf-str">${rk?`<li class="rk"><i aria-hidden="true">★</i><span>${rk}</span></li>`:""}${lo?`<li><i aria-hidden="true">✓</i><span>${lo}</span></li>`:""}</ul></div>`;
 }
 
 function ndWhy(e,ph){
