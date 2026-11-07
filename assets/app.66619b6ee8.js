@@ -438,7 +438,7 @@ function slidersPhone(){
   <div class="sl-grid"><div id="slres" class="sl-res" aria-live="polite">${slRes()}</div><div class="sl-ctrls" role="group" aria-label="Your priorities"><h2 class="sl-h">The basics</h2>${slSelects()}<div class="sl-hrow"><h2 class="sl-h">What matters to you</h2><button class="sl-reset" data-slreset="1"${SLC().every(c=>!slOn(c[0],S.sl[c[0]]??slDef(c[0])))&&!slAnySet()?" disabled":""}>↺ Reset</button></div><div class="sl-scale" aria-hidden="true"><span>← Doesn't matter</span><span>Must have →</span></div><div class="sl-list">${slCore().concat(slMore()).map(slRow).join("")}</div><p class="sl-note">Top school districts means an A rated county district where 85% or more of schools earn an A or B, from the Florida Department of Education grade for each county school district (${EDU_YEAR}). Check the official grade for any address.</p>${saveBox("sliders")}<div class="sl-acts">${q?'<a class="btn btn-accent" href="#quiz">See my top 5</a><button class="linkbtn" data-act="retake">Start the questions over</button>':'<a class="linkbtn" href="#quiz">Rather answer 8 quick questions? Start here</a>'}</div></div></div></section>`;
 }
 let slTick=0;
-function slRefresh(){slTick||(slTick=requestAnimationFrame(()=>{slTick=0;const r=document.getElementById("slres");r&&(r.innerHTML=srcsets(slRes()))}))}
+function slRefresh(){slTick||(slTick=requestAnimationFrame(()=>{slTick=0;const r=document.getElementById("slres");r&&(r.innerHTML=srcsets(slRes()));svLive()}))}
 function slSyncW(){
   if(!slQuiz())return;
   SLC().forEach(c=>{const r=slSnap(S.sl[c[0]]);r?S.w[c[0]]=r:delete S.w[c[0]]});
@@ -536,7 +536,7 @@ function homeView2(){
 let saveSeen={};
 function leadTop(){
   return "sliders"===curRoute()
-    ?T.filter(slIn).sort(slCmp).slice(0,5).map(e=>({e:e,f:Math.round(100*fitSl(e))}))
+    ?(slNone()?[]:T.filter(slIn).sort(slCmp).slice(0,5)).map(e=>({e:e,f:Math.round(100*fitSl(e))}))
     :rankedTowns().slice(0,5).map(e=>({e:e,f:pctOf(e)}));
 }
 /* Oct 28 2026: towns viewed this visit, and the save box on town pages */
@@ -553,10 +553,13 @@ function keepBox(a){
   return `<form class="savebox leadform keepbox" data-lead="matches" data-key="saved">${hpField}<div class="sv-hd"><b>${head}</b><span>${sub}</span></div><div class="sv-row"><label for="kb-e" class="sr-only">Your email</label><input id="kb-e" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required><button class="btn btn-accent" type="submit">${n>1?"Send them":"Send it"}</button></div><p class="sv-note">Unsubscribe anytime.</p></form>`;
 }
 
+/* "30A, Destin and Naples": the towns the save box will email. Nov 7 2026: the Slider Map keeps it live as you slide */
+function svTownList(){const n=leadTop().map(x=>short(x.e));return n.length>1?n.slice(0,-1).join(", ")+" and "+n[n.length-1]:n[0]||"Your top towns"}
+function svLive(){document.querySelectorAll(".savebox.leadform:not(.svwalk) .sv-hd span").forEach(x=>{x.textContent=svTownList()+", with prices, flood notes and the airport drive for each, plus our Move and Belong Guide."})}
 function saveBox(where){
   saveSeen[where||"inline"]||(saveSeen[where||"inline"]=1,track("popup_shown",where||"inline"));
   if(S.sent.matches)return `<div class="savebox sent" role="status"><b>Your towns and the guide are on the way.</b><span>Check your inbox in a few minutes. Questions? Just reply to that email.</span></div>`;
-  const _tn=leadTop().map(x=>short(x.e)),_tl=_tn.length>1?_tn.slice(0,-1).join(", ")+" and "+_tn[_tn.length-1]:_tn[0]||"your towns";
+  const _tl=svTownList(),_tn=leadTop();
   /* after the quiz the headline names their style: "Get your Island Life towns and the guide" */
   let _ys=null;if(S.done&&"sliders"!==where&&"sliders"!==curRoute())try{_ys=youStyle(rankedTowns().slice(0,5))}catch(e){}const _yh=_ys&&`Get your ${VIBES[_ys[0]]} towns and the guide`;
   if("walkend"===where)return `<form class="savebox leadform svwalk" data-lead="matches" data-key="matches">${hpField}<div class="sv-hd"><b>${_yh||`That's your ${_tn.length||5}. Get them and the guide.`}</b><span>Prices, flood notes and the airport drive for each, plus our Move and Belong Guide.</span></div><div class="sv-row"><label for="sv-e-walkend" class="sr-only">Your email</label><input id="sv-e-walkend" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com" required><button class="btn btn-accent" type="submit">Send them</button></div></form>`;
