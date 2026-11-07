@@ -12,12 +12,12 @@ Example: articles/florida-newcomers-2026-election.html (Nov 6, 2026).
 - All DM Sans: body regular 18.5px, subheads medium, captions light.
 - Charts and tables start with a 2px ink rule and a DM Sans title. No rounded cards.
 - Party colors are muted: Democrats soft blue, Republicans soft red. Rust is only for the kicker and buttons.
-- Ends with the top 5 button and the More guides band (other news analysis only).
+- Ends with the top 5 button and the More guides band.
 
 ## How it works
 - Set "layout": "news" in the draft. Optional fields: "by", "kicker", "cap", "alt". See drafts/templates/news-analysis.json.
 - The app's newsView() renders it. Styles are in site CSS under "Nov 6 2026 patch: News Analysis article template".
-- News layout articles stay off the home page feed and out of the More guides band on regular guides. They show on the Guides page under their category tab.
+- News layout articles show in the home page "From the coast" recents (byline uses "by"), stay out of the More guides band on regular guides, and show on the Guides page under their category tab.
 
 ## Writing rules
 - Open on a real place and a checkable fact, then the twist.

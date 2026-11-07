@@ -38,7 +38,7 @@ import prerender  # noqa: E402
 # Optional fields. "layout": "news" uses the News Analysis template (one column,
 # title above a wide lead photo, byline with a name). "by" is the byline name,
 # "kicker" the small label above the headline, "cap" the lead photo caption,
-# "alt" the lead photo description. News layout articles stay off the home feed.
+# "alt" the lead photo description. News layout articles show on the home feed with the "by" name.
 OPTIONAL = ("layout", "by", "kicker", "cap", "alt")
 
 
