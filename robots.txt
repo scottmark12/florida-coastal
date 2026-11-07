@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
 Disallow: /mail/
+Disallow: /team/
 
 Sitemap: https://www.floridacoastal.co/sitemap.xml

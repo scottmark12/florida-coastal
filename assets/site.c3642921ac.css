@@ -4296,3 +4296,15 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
 .tc-gal.n2{grid-template-columns:1fr 1fr;grid-template-rows:1fr;height:400px}
 .tc-gal.n1 .g1,.tc-gal.n2 .g1{grid-row:auto;grid-column:auto}
 @media (max-width:760px){.tc-gal.n1{grid-template-rows:260px;height:auto}.tc-gal.n2{grid-template-columns:1fr;grid-template-rows:240px 200px;height:auto}}
+
+/* ===== Nov 7 2026 patch: Slider Map, Quiet or lively (two sided) and the schools filter ===== */
+.sl-row.two input[type=range]::-webkit-slider-runnable-track{background:linear-gradient(90deg,var(--line) var(--lo,50%),var(--ink) var(--lo,50%),var(--ink) var(--hi,50%),var(--line) var(--hi,50%))!important}
+.sl-row.two input[type=range]::-moz-range-track{background:linear-gradient(90deg,var(--line) var(--lo,50%),var(--ink) var(--lo,50%),var(--ink) var(--hi,50%),var(--line) var(--hi,50%))!important}
+.sl-row.two input[type=range]{background:linear-gradient(var(--line),var(--line)) center/2px 11px no-repeat}
+.sl-row.two input[type=range]:not(.set)::-webkit-slider-thumb{border-color:var(--ink)}
+.sl-ends,.sl2-ends{display:flex;justify-content:space-between;font:600 11.5px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--muted,#5b6b6e)}
+.sl-ends{grid-column:1/-1;margin-top:-2px}
+.sl2-ends{margin:-4px 0 4px 202px}
+.sl2-edu{grid-template-columns:190px minmax(0,1fr)}
+.sl2-edu .slchip{justify-self:start;min-height:32px;padding:4px 12px;font-size:13.5px}
+.sl-sel .sl-gl{min-width:86px}
