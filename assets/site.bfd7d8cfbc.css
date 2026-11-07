@@ -4333,3 +4333,7 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
 .prose .fq-s,.fq-s{margin:8px 0 16px!important;font:400 16px/1.5 'DM Sans',sans-serif!important;color:#3e5155!important}
 .fq-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:999px;font-size:17px;text-decoration:none!important}
 @media (max-width:600px){.fq-btn{display:flex;width:100%}}
+
+.ec-card .pf-from>div,.ec-card .pf-hd{min-width:0}
+.ec-card .pf-hd span{display:block;overflow-wrap:anywhere}
+.ec-card .pf-hd span{white-space:normal!important;text-overflow:clip!important;overflow:visible!important}
