@@ -4151,3 +4151,8 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
  .news-art .prose .nyt-pull{font-size:23px}
  .news-art .nt-grid{grid-template-columns:1fr}
 }
+
+/* ===== Nov 6 2026 patch: flood rankings in the News Analysis layout (rank tool and boxes use DM Sans) ===== */
+.news-art .fc-rank,.news-art .fc-rank *,.news-art .fc-dl,.news-art .fc-box,.news-art .fc-box *,.news-art .fc-how{font-family:"DM Sans",system-ui,sans-serif}
+.news-art .prose .fc-rank p{font-size:14.5px;line-height:1.5;margin:10px 0 0}
+.news-art .prose .fc-rank p.fc-src{font-size:12.5px;color:var(--muted)}
