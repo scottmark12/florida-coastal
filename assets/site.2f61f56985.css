@@ -4308,3 +4308,28 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
 .sl2-edu{grid-template-columns:190px minmax(0,1fr)}
 .sl2-edu .slchip{justify-self:start;min-height:32px;padding:4px 12px;font-size:13.5px}
 .sl-sel .sl-gl{min-width:86px}
+
+
+/* ===== Nov 7 2026: end of walkthrough card ===== */
+.ec-card{max-width:460px;padding:30px 26px 18px}
+.ec-top{display:flex;gap:18px;align-items:center}
+.ec-stack{position:relative;width:96px;height:124px;flex:none;transform:scale(1.22);transform-origin:left center;margin-right:26px}
+.ec-eb{display:block;font:600 12px 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#A8440E}
+.ec-card h3{font:400 30px/1.12 'Libre Caslon Text',Georgia,serif!important;margin:6px 0 0;color:#13282C}
+.ec-sub{font:400 16px/1.5 'DM Sans',sans-serif;color:#3e5155;margin:20px 0 16px}
+.ec-form{display:grid;gap:8px}
+.ec-lbl{font:600 14px 'DM Sans',sans-serif;color:#13282C}
+.ec-form input[type=email]{height:54px;box-sizing:border-box;font:400 18px 'DM Sans',sans-serif;padding:0 16px;border:1px solid #cfc6b6;border-radius:12px;background:#fff;color:#13282C}
+.ec-form .btn{height:56px;font-size:17px;border-radius:999px;margin-top:4px}
+.ec-from{margin-top:14px}
+.ec-alt{margin-top:6px}
+.ec-no{display:block;width:100%;min-height:44px;font-size:15px!important;color:#3e5155}
+@media (max-width:600px){.ec-card{padding:26px 20px 14px}.ec-card h3{font-size:27px!important}}
+
+/* ===== Nov 7 2026: flood article quiz box ===== */
+.fq-box{margin:28px 0;padding:22px 22px 20px;border-radius:14px;background:#F4ECDF;border:1px solid #E6DBC8}
+.fq-eb{display:block;font:600 12px 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#A8440E}
+.prose .fq-h,.fq-h{margin:6px 0 0!important;font:400 24px/1.2 'Libre Caslon Text',Georgia,serif!important;color:#13282C!important}
+.prose .fq-s,.fq-s{margin:8px 0 16px!important;font:400 16px/1.5 'DM Sans',sans-serif!important;color:#3e5155!important}
+.fq-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:999px;font-size:17px;text-decoration:none!important}
+@media (max-width:600px){.fq-btn{display:flex;width:100%}}
