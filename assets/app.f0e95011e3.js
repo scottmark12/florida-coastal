@@ -331,7 +331,7 @@ const SL_WORDS={
   edu:["Not a factor","Schools matter a little","Either way","Good schools","Top rated schools"]};
 const slBand=v=>v<=0?0:v<35?1:v<65?2:v<85?3:4;
 /* Nov 7 2026: each slider labels its own two ends (left = its words at 0, right = its top words) */
-const SL_HOW=`<ol class="sl-how"><li><b>1</b>Push up what matters</li><li><b>2</b>Slide quiet or lively</li><li><b>3</b>Your top 5 light up on the map</li></ol>`;
+const SL_HOW=`<ol class="sl-how"><li><b>1</b>Push up what matters</li><li><b>2</b>Slide quiet or lively</li><li><b>3</b>Your top 5 light up on the map</li></ol><a class="sl-rank" href="#scoring">How we rank towns →</a>`;
 const slEnds=k=>{const w="pace"===k?PACE2_WORDS:SL_WORDS[k];return w?`<div class="sl-ends" aria-hidden="true"><span>${w[0]}</span><span>${w[4]}</span></div>`:""};
 const PACE2_WORDS=["As quiet as it gets","A quiet town","Either way","A lively town","Lots going on"];
 const slWord2=(k,v)=>"pace"===k?PACE2_WORDS[v<=15?0:v<45?1:v<=55?2:v<85?3:4]:(SL_WORDS[k]||["Doesn't matter","A little","Either way","Important","Must have"])[v<=0?0:v<40?1:v<75?3:4];
@@ -419,7 +419,7 @@ document.addEventListener("click",function(e){
 },!0);
 function slChip(el){
   const isP=null!=el.dataset.slpace,v=+(isP?el.dataset.slpace:el.dataset.slbud),cur=isP?S.slPace:S.slBud,nv=cur===v?null:v;
-  isP?S.slPace=nv:S.slBud=nv;
+  isP?S.slPace=nv:(S.slBud=nv,S.sl&&(S.sl.afford=((BUD_SET.find(x=>x[0]===nv)||[0,0])[1]||0)));
   el.parentNode.querySelectorAll(".slchip").forEach(b=>b.setAttribute("aria-pressed",String(nv!==null&&+(isP?b.dataset.slpace:b.dataset.slbud)===nv)));
   slSyncW();saveState();slSave();slRefresh();document.querySelectorAll("[data-slreset]").forEach(b=>b.disabled=!slAnySet()&&!S.slPc&&!S.slPr);
 }
@@ -449,8 +449,8 @@ function slWhy(e){
 function slidersPhone(){
   S.sl||(S.sl=slLoad());
   const q=slQuiz();
-  return `<section class="wrap sl-page">${pageToggle("sliders")}<div class="label">${q?"Your answers":"Set your priorities"}</div><div class="sl-head"><h1>${q?"Fine tune your answers.":"Slide what matters. Watch the coast change."}</h1><p class="lede">${q?"Your sliders start where your answers left them. Push up what you care about, pull down what you don't, and your top 5 updates live.":"Push up what matters to you and your best Florida beach towns light up on the map. Quiet or lively starts in the middle, slide it either way. It's separate from the 8 questions, so play all you want."}</p></div>
-  <div class="sl-grid"><div id="slres" class="sl-res" aria-live="polite">${slRes()}</div><div class="sl-ctrls" role="group" aria-label="Your priorities">${SL_HOW}<h2 class="sl-h">The basics</h2>${slSelects()}<div class="sl-hrow"><h2 class="sl-h">What matters to you</h2><button class="sl-reset" data-slreset="1"${SLC().every(c=>!slOn(c[0],S.sl[c[0]]??slDef(c[0])))&&!slAnySet()?" disabled":""}>↺ Reset</button></div><div class="sl-list">${slCore().map(slRow).join("")}<details class="sl-more"${slMore().some(c=>slOn(c[0],S.sl[c[0]]??slDef(c[0])))?" open":""}><summary>More priorities (${slMore().length})</summary>${slMore().map(slRow).join("")}</details></div><p class="sl-note">Public schools averages the Florida Department of Education grades (percent of points, ${EDU_YEAR}) of the nearest public elementary, middle and high schools to each town. Zoning lines vary, so check the assigned schools for any address.</p>${saveBox("sliders")}<div class="sl-acts">${q?'<a class="btn btn-accent" href="#quiz">See my top 5</a><button class="linkbtn" data-act="retake">Start the questions over</button>':'<a class="linkbtn" href="#quiz">Rather answer 8 quick questions? Start here</a>'}</div></div></div></section>`;
+  return `<section class="wrap sl-page">${pageToggle("sliders")}<div class="label">${q?"Your answers":"Set your priorities"}</div><div class="sl-head"><h1>${q?"Fine tune your answers.":"Slide what matters. Watch the coast change."}</h1>${q?'<p class="lede">Your sliders start where your answers left them. Push up what you care about, pull down what you don\'t, and your top 5 updates live.</p>':""}</div>
+  <div class="sl-grid"><div id="slres" class="sl-res" aria-live="polite">${slRes()}</div><div class="sl-ctrls" role="group" aria-label="Your priorities">${SL_HOW}<h2 class="sl-h">The basics</h2>${slSelects()}<div class="sl-hrow"><h2 class="sl-h">What matters to you</h2><button class="sl-reset" data-slreset="1"${SLC().every(c=>!slOn(c[0],S.sl[c[0]]??slDef(c[0])))&&!slAnySet()?" disabled":""}>↺ Reset</button></div><div class="sl-list">${slCore().filter(c=>c[0]!=="afford").map(slRow).join("")}<details class="sl-more"${slMore().some(c=>slOn(c[0],S.sl[c[0]]??slDef(c[0])))?" open":""}><summary>More priorities (${slMore().length})</summary>${slMore().map(slRow).join("")}</details></div><p class="sl-note">Public schools averages the Florida Department of Education grades (percent of points, ${EDU_YEAR}) of the nearest public elementary, middle and high schools to each town. Zoning lines vary, so check the assigned schools for any address.</p>${saveBox("sliders")}<div class="sl-acts">${q?'<a class="btn btn-accent" href="#quiz">See my top 5</a><button class="linkbtn" data-act="retake">Start the questions over</button>':'<a class="linkbtn" href="#quiz">Rather answer 8 quick questions? Start here</a>'}</div></div></div></section>`;
 }
 let slTick=0;
 function slRefresh(){slTick||(slTick=requestAnimationFrame(()=>{slTick=0;const r=document.getElementById("slres");r&&(r.innerHTML=srcsets(slRes()));svLive()}))}

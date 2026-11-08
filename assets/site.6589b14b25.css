@@ -4370,3 +4370,6 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
 .sl-row .sl-ends span:last-child,.sl2 .sl-ends span:last-child{text-align:right}
 .sl2 .sl-ends{font-size:11.5px;line-height:1.2;margin-top:2px}
 .sl2 .sl-ends span{max-width:48%}
+/* Nov 7 2026 night: Slider Map user fixes */
+.sl-rank{display:inline-block;font:600 13.5px 'DM Sans',sans-serif;color:var(--accent-dark,#b4532a);text-decoration:underline;text-underline-offset:3px;margin:2px 0 6px}
+.sl-res .sl-top5{-webkit-mask-image:linear-gradient(90deg,#000 82%,transparent);mask-image:linear-gradient(90deg,#000 82%,transparent);padding-right:40px}
