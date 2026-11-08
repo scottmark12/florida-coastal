@@ -1,0 +1,196 @@
+# Coastal charm rubric (Nov 8 2026), drafted by Claude for Mark and his dad to review.
+# Five parts, 0 to 2 each (max 10): H historic core (pre 1940 downtown, main street or historic district)
+# L local feel (independent shops and restaurants, not chains and strip malls)  S scale (low rise, no condo tower wall)
+# W waterfront character (working waterfront, fish houses, old docks or piers)  A intact feel (old architecture, not overrun by new build or resort sprawl)
+# id HLSWA
+30a 12212
+destin 00010
+pcb 00000
+apalachicola 22222
+cedarkey 22222
+dunedin 22212
+clearwaterbeach 00010
+gulfport 22212
+ami 12212
+longboat 01000
+captiva 12212
+matlacha 12222
+naples 21112
+keywest 21222
+islamorada 12221
+southbeach 21002
+ftl 11011
+delray 22202
+jupiter 11111
+fortpierce 21221
+cocoa 01110
+nsb 22112
+daytona 11010
+flagler 12212
+staug 22222
+jaxbeach 01100
+fernandina 22222
+carrabelle 12221
+st-george-island 02201
+st-teresa 12202
+st-marks 12220
+panama-city 11111
+pensacola 22112
+pensacola-beach 01000
+navarre-beach 01100
+perdido-key 01000
+gulf-breeze 01200
+port-st-joe 12211
+crystal-river 11211
+homosassa 12221
+ozello 02212
+steinhatchee 02222
+apollo-beach 00100
+clearwater 11000
+indian-rocks-beach 02101
+madeira-beach 01011
+new-port-richey 11201
+ruskin 01200
+safety-harbor 22212
+st-pete-beach 11011
+st-petersburg 22112
+sun-city-center 00200
+tampa 21011
+tarpon-springs 22222
+treasure-island 01101
+bradenton 11111
+bradenton-beach 12212
+cortez 22222
+englewood 12211
+sarasota 22011
+siesta-key 01101
+venice 22102
+bonita-springs 11101
+cape-coral 00200
+chokoloskee 12222
+everglades-city 22222
+fort-myers 21011
+fort-myers-beach 01111
+marco-island 01000
+port-charlotte 00100
+punta-gorda 22112
+sanibel-island 02202
+key-largo 01211
+bal-harbour 00000
+boca-raton 10002
+dania-beach 01210
+hallandale 00000
+highland-beach 01000
+hollywood 11001
+lauderdale-by-the-sea 02211
+lighthouse-point 01210
+north-miami-beach 00000
+north-palm-beach 01110
+palm-beach 22202
+palm-beach-gardens 00100
+riviera-beach 01110
+sunny-isles-beach 00000
+west-palm-beach 21011
+wilton-manors 12201
+jensen-beach 12212
+port-st-lucie 00200
+sebastian 12221
+stuart 22212
+vero-beach 12202
+indialantic 02201
+melbourne-beach 12211
+palm-bay 00200
+satellite-beach 01200
+titusville 11211
+west-melbourne 00200
+atlantic-beach 02201
+neptune-beach 02201
+ponte-vedra-beach 01201
+st-augustine-beach 01111
+daytona-beach-shores 00000
+ormond-beach 11211
+palm-coast 00200
+port-orange 00200
+south-daytona 00200
+navarre 00200
+mary-esther 00200
+fort-walton-beach 11101
+okaloosa-island 00000
+shalimar 01200
+niceville 01211
+valparaiso 01201
+miramar-beach 00000
+freeport 01200
+mexico-beach 02211
+keaton-beach 02221
+horseshoe-beach 02222
+suwannee 02222
+yankeetown 12212
+inglis 01201
+hernando-beach 01211
+weeki-wachee 11201
+aripeka 12212
+hudson 01210
+port-richey 01210
+holiday 00200
+palm-harbor 11201
+oldsmar 01200
+belleair-beach 01100
+tierra-verde 01100
+indian-shores 01000
+redington-shores 01000
+north-redington-beach 01000
+redington-beach 01100
+gibsonton 11201
+miami 21011
+jacksonville 21001
+indian-river-shores 01200
+hutchinson-island 01000
+sewalls-point 01201
+palm-city 01200
+port-salerno 12221
+hobe-sound 12202
+tequesta 01200
+juno-beach 01100
+lake-park 11201
+palm-beach-shores 02111
+lake-worth-beach 22202
+lantana 12211
+boynton-beach 11110
+vilano-beach 01211
+crescent-beach 02201
+beverly-beach 01201
+ormond-by-the-sea 01100
+holly-hill 00200
+ponce-inlet 12221
+edgewater 01210
+cape-canaveral 01110
+merritt-island 00200
+cocoa-village 22202
+rockledge 11201
+indian-harbour-beach 01200
+melbourne 22201
+# v2 (Nov 8): historic core counts double, waterfront counts half, towns with no real center (H=0) cap at 5.5 of 10.
+# Half point nudges to break ties among close calls (added to the 0 to 10 score):
+adj staug .5
+adj apalachicola .3
+adj keywest .3
+adj naples .5
+adj dunedin .3
+adj 30a .3
+adj venice .3
+adj pensacola .2
+adj tarpon-springs .2
+adj gulfport .2
+adj stuart .2
+adj delray .3
+adj fernandina .2
+adj cedarkey -.2
+adj southbeach 1.2
+# v3 (Nov 8): sixth part P "postcard pretty" (cottages, tree lined streets, design rules, no ugly strip), 0 to 2, weight 1.5.
+# Historic core back to weight 1. Big cities with tower skylines lose 1.5. Hamlets (no town center to live in) cap at 6.5.
+# P is 2 for the towns below, 0 for the ones listed as p0, and otherwise 1 when scale and intact feel are both 1 or more.
+p2 30a ami naples captiva sanibel-island staug fernandina apalachicola keywest venice vero-beach delray dunedin gulfport safety-harbor stuart cedarkey islamorada bradenton-beach hobe-sound
+p0 pcb destin clearwaterbeach daytona daytona-beach-shores sunny-isles-beach hallandale north-miami-beach bal-harbour okaloosa-island miramar-beach cape-coral port-charlotte palm-bay holiday gibsonton
+city tampa miami jacksonville st-petersburg ftl west-palm-beach sarasota fort-myers pensacola clearwater daytona
+hamlet ozello steinhatchee suwannee horseshoe-beach keaton-beach aripeka chokoloskee everglades-city cortez matlacha st-teresa st-marks yankeetown hernando-beach inglis homosassa
