@@ -4458,3 +4458,8 @@ body:has(.slp) .navcta{display:none!important}
 .slp-onmap{flex:none;min-height:40px;padding:0 12px;border:1px solid var(--line,#E8E1D6);border-radius:999px;background:#fff;font:700 13px 'DM Sans',sans-serif;color:var(--ink,#152A2E);cursor:pointer}
 .slp-tp .sl-top5 .pct{display:none!important}
 }
+/* Nov 8 2026: town page scores show each town's place on the coast, same ranks as the Slider Map */
+.scd summary b .rk{display:block;margin-top:1px;font:500 12px/1.2 'DM Sans',sans-serif;color:var(--muted,#5b6b6e);letter-spacing:0}
+.scd summary .n.nr{min-width:44px;text-align:right;font-variant-numeric:tabular-nums}
+.scd summary{grid-template-columns:28px minmax(0,1fr) 84px 44px}
+.scd summary .n.nr{min-width:0}
