@@ -4440,3 +4440,21 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
 .vm-ph>.pgtog{position:absolute;right:12px;top:12px;z-index:6;display:inline-flex;margin:0;padding:3px;background:#fff;border:0;box-shadow:0 4px 14px rgba(19,40,44,.18)}
 .vm-ph>.pgtog a{padding:0 11px;min-height:36px;display:inline-flex;align-items:center;font-size:13.5px;white-space:nowrap}
 }
+@media (max-width:999px){
+body:has(.slp) .navcta{display:none!important}
+.slp .slp-map{background:#C9E1E4!important;padding:52px 4px 50px!important}
+.slp-sub{text-wrap:pretty}
+.slp-need.on{background:var(--ink,#152A2E);color:#fff}
+.slp-need span{max-width:46vw;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.slp .dot{cursor:pointer}
+.slp-card{position:absolute;left:12px;right:12px;bottom:12px;z-index:5;display:flex;flex-direction:column;gap:3px;padding:14px 16px;background:#fff;border-radius:16px;box-shadow:0 10px 28px rgba(21,42,46,.22)}
+.slp-card small{font:700 12px 'DM Sans',sans-serif;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-dark,#A8440E)}
+.slp-card b{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:22px;line-height:1.15;color:var(--ink,#152A2E);padding-right:36px}
+.slp-card span{font-size:14px;color:var(--muted,#5b6b6e)}
+.slp-card .btn{margin-top:8px;min-height:44px;justify-content:center}
+.slp-cx{position:absolute;right:8px;top:8px;width:40px;height:40px;border:0;border-radius:50%;background:var(--sand,#f3efe6);font-size:22px;line-height:1;color:var(--ink,#152A2E);cursor:pointer}
+.slp-tp .sl-top5 li{display:flex;align-items:center;gap:8px;border-top:1px solid var(--line,#E8E1D6)}
+.slp-tp .sl-top5 li a{flex:1;min-width:0;border-top:0!important}
+.slp-onmap{flex:none;min-height:40px;padding:0 12px;border:1px solid var(--line,#E8E1D6);border-radius:999px;background:#fff;font:700 13px 'DM Sans',sans-serif;color:var(--ink,#152A2E);cursor:pointer}
+.slp-tp .sl-top5 .pct{display:none!important}
+}

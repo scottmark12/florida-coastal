@@ -398,19 +398,27 @@ function slResPhone(){
     F=q?(e=>fit(e)||0):fitSl,R=none?[]:T.filter(slIn),strong=new Set(none?[]:slPhRank().slice(5,15).map(e=>e.id)),
     f=none?(()=>({tier:"good",r:4})):(e=>{const k=ids.indexOf(e.id)+1;if(k)return{num:k,tier:"top",label:!0,r:11};if(!slIn(e))return{dim:!0,tier:"out",r:3};return strong.has(e.id)?{tier:"strong",r:6}:{tier:"good",dim:!0,r:3.5}}),
     t=slPhTop();
+  const P=S.slP&&T.find(e=>e.id===S.slP);if(S.slP&&!P)S.slP=null;
+  if(P){const k=ids.indexOf(P.id)+1;return `<div class="sl-map slp-map mapbox">${mapSVG(e=>e.id===P.id&&!k?{num:"•",tier:"top",label:!0,r:11}:f(e),{zoom:{z:3,lon:P.lon,lat:P.lat-.75},aria:"Map zoomed in on "+P.name})}</div><div class="slp-card" role="status"><button class="slp-cx" data-slpx="1" aria-label="Close and show all of Florida">×</button><small>${k?"No. "+k+" in your top 5":"Not in your top 5"}</small><b>${P.name}</b><span>${slWhy(P)}</span><a class="btn btn-accent" href="#town-${P.id}">Explore this town →</a></div>`}
   return `<div class="sl-map slp-map mapbox${none?" faded":""}">${mapSVG(f,{aria:"Map of your best matching towns"})}</div>${none?`<div class="slp-hint" role="status"><b>Your top 5 show up here</b><span>Push up any slider below to start.</span></div>`:t.length?`<button class="btn btn-accent slp-top5" data-sltop="1">My top 5 <span>· ${short(t[0])} first</span></button>`:`<div class="slp-hint" role="status"><b>No towns fit all of that</b><span>Try a wider budget or Anywhere in Florida.</span></div>`}`;
 }
 function slPhRank(){const q=slQuiz(),F=q?(e=>fit(e)||0):fitSl;return q?rankedTowns().filter(slIn):T.filter(slIn).sort((x,y)=>Math.round(100*F(y))-Math.round(100*F(x))||slTie(y)-slTie(x)||F(y)-F(x))}
 function slPhTop(){return !slQuiz()&&slNone()?[]:slPhRank().slice(0,5)}
 function slPhList(){
   const q=slQuiz(),F=q?(e=>fit(e)||0):fitSl,t=slPhTop();
-  return t.length?`<ol class="sl-top5 slp-list">${t.map((e,i)=>`<li><a href="#town-${e.id}"><span class="n">${i+1}</span><span class="nm"><b>${e.name}</b><small>${slWhy(e)}</small></span><span class="pct"><b>${slFitWord(F(e),F(t[0]),i)}</b></span></a></li>`).join("")}</ol>`:`<p class="sl-empty">Move a slider and your best fits show up here.</p>`;
+  return t.length?`<ol class="sl-top5 slp-list">${t.map((e,i)=>`<li><a href="#town-${e.id}"><span class="n">${i+1}</span><span class="nm"><b>${e.name}</b><small>${slWhy(e)}</small></span><span class="pct"><b>${slFitWord(F(e),F(t[0]),i)}</b></span></a><button class="slp-onmap" data-slmap="${e.id}" aria-label="Show ${e.name} on the map">Map</button></li>`).join("")}</ol>`:`<p class="sl-empty">Move a slider and your best fits show up here.</p>`;
 }
 function slPhNeed(){
   const b=null!=S.slBud&&SLB_CH[S.slBud]?SLB_CH[S.slBud]:"Any price",r=S.slPr&&REGIONS.find(x=>x.id===S.slPr),w=r?r.lab||r.map:S.slPc&&COASTS[S.slPc]?"The "+COASTS[S.slPc][0]:"All of Florida";
   return `<span>Budget: <b>${b}</b> · Where: <b>${w}</b></span><u>Change</u>`;
 }
+function slPhPill(){
+  const r=S.slPr&&REGIONS.find(x=>x.id===S.slPr),w=r?r.lab||r.map:S.slPc&&COASTS[S.slPc]?COASTS[S.slPc][0]:"",b=null!=S.slBud&&SLB_CH[S.slBud]?SLB_CH[S.slBud]:"",x=[b,w].filter(Boolean).join(" · ");
+  return `<svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg><span>${x||"What you need"}</span>`;
+}
+function slPhPick(id){S.slP=id||null;S.slTopOpen=!1;S.slNeedOpen=!1;const r=document.getElementById("slres");r&&(r.innerHTML=srcsets(slRes()));slPhOpen(null);try{id&&track("sl_phone_pin",id)}catch(x){}}
 function slPhSync(){
+  const pl=document.querySelector(".slp-need");pl&&(pl.innerHTML=slPhPill(),pl.classList.toggle("on",null!=S.slBud||!!S.slPc||!!S.slPr));
   const l=document.querySelector(".slp-tlist");l&&(l.innerHTML=slPhList());
   const n=document.querySelector(".slp-bud");n&&(n.innerHTML=slPhNeed());
   const p=document.querySelector(".slp");p&&p.classList.toggle("none",!slQuiz()&&slNone());
@@ -466,9 +474,9 @@ function slidersPhone(){
   S.sl||(S.sl=slLoad());
   const q=slQuiz(),hh=vmHH(),H=Math.max(560,window.innerHeight-hh),none=!q&&slNone(),more=slMore(),all=S.slAll||more.some(c=>slOn(c[0],S.sl[c[0]]??slDef(c[0]))),n=slCore().filter(c=>c[0]!=="afford").length+more.length;
   return `<div class="slp${none?" none":""}${S.slTopOpen?" top-open":""}${S.slNeedOpen?" need-open":""}" style="height:${H}px;max-height:calc(100dvh - ${Math.round(hh)}px)">
-  <div class="slp-bar"><button class="slp-need" data-slneed="1"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></svg>What you need</button>${pageToggle("sliders")}</div>
+  <div class="slp-bar"><button class="slp-need${null!=S.slBud||S.slPc||S.slPr?" on":""}" data-slneed="1">${slPhPill()}</button>${pageToggle("sliders")}</div>
   <div id="slres" class="slp-res" aria-live="polite">${slResPhone()}</div>
-  <section class="slp-sheet" aria-label="Your priorities"><div class="slp-hd"><h1>${q?"Fine tune your answers":"Slide what matters"}</h1><button class="sl-reset" data-slreset="1"${SLC().every(c=>!slOn(c[0],S.sl[c[0]]??slDef(c[0])))&&!slAnySet()?" disabled":""}>↺ Reset</button></div><p class="slp-sub">${q?"Your sliders start where your answers left them.":"Push up what matters. Your top 5 light up on the map."}</p><button class="slp-bud" data-slneed="1">${slPhNeed()}</button>
+  <section class="slp-sheet" aria-label="Your priorities"><div class="slp-hd"><h1>${q?"Fine tune your answers":"Slide what matters"}</h1><button class="sl-reset" data-slreset="1"${SLC().every(c=>!slOn(c[0],S.sl[c[0]]??slDef(c[0])))&&!slAnySet()?" disabled":""}>↺ Reset</button></div><p class="slp-sub">${q?"Your sliders start where your answers left them.":"Push up what matters. Watch your top 5 light up."}</p><button class="slp-bud" data-slneed="1">${slPhNeed()}</button>
   <div class="sl-list slp-sl${all?" all":""}">${slCore().filter(c=>c[0]!=="afford").map(slRow).join("")}<div class="slp-more">${more.map(slRow).join("")}</div><button class="slp-allbtn" data-slall="1" aria-expanded="${all}">${all?"Show fewer":"Show all "+n+" priorities"}</button></div>
   <p class="sl-note">Public schools averages the Florida Department of Education grades (percent of points, ${EDU_YEAR}) of the nearest public elementary, middle and high schools to each town. Zoning lines vary, so check the assigned schools for any address.</p><div class="sl-acts">${q?'<button class="linkbtn" data-act="retake">Start the questions over</button>':'<a class="linkbtn" href="#quiz">Rather answer 8 quick questions? Start here</a>'}</div></section>
   <section class="slp-pane slp-tp" aria-label="Your top 5"${S.slTopOpen?"":" hidden"}><div class="slp-phd"><h2>${slPhTop().length?"Your top 5":"No top 5 yet"}</h2><button class="slp-x" data-slclose="1">Back to sliders</button></div><div class="slp-tlist">${slPhList()}</div><div class="slp-save">${S.slTopOpen?saveBox("sliders"):""}</div><a class="sl-rank" href="#scoring">How we rank towns →</a></section>
@@ -487,12 +495,18 @@ function slPhOpen(w){
 }
 document.addEventListener("click",function(e){
   if(!e.target.closest||!document.querySelector(".slp"))return;
+  {const m=e.target.closest("[data-slmap]");if(m){e.preventDefault();e.stopPropagation();return void slPhPick(m.dataset.slmap)}}
+  if(e.target.closest("[data-slpx]")){e.preventDefault();e.stopPropagation();return void slPhPick(null)}
+  {const d=e.target.closest(".slp .dot");if(d&&d.dataset.id){e.preventDefault();e.stopPropagation();return void slPhPick(d.dataset.id)}}
+  if(e.target.closest(".slp [data-slbud]"))S.slP=null;
   if(e.target.closest("[data-sltop]")){e.preventDefault();return void slPhOpen("top")}
   if(e.target.closest("[data-slneed]")){e.preventDefault();return void slPhOpen("need")}
   if(e.target.closest("[data-slclose]")){e.preventDefault();return void slPhOpen(null)}
   const a=e.target.closest("[data-slall]");if(a){const l=document.querySelector(".slp-sl"),on=!l.classList.contains("all");S.slAll=on;l.classList.toggle("all",on);a.setAttribute("aria-expanded",on);a.textContent=on?"Show fewer":"Show all "+(l.querySelectorAll(".sl-row").length)+" priorities";return}
   if(e.target.closest(".slp-tp a[href^='#town-']"))S.slTopOpen=!1;
 },!0);
+document.addEventListener("input",function(e){e.target.closest&&e.target.closest(".slp")&&(S.slP=null)},!0);
+document.addEventListener("change",function(e){e.target.closest&&e.target.closest(".slp")&&(S.slP=null)},!0);
 document.addEventListener("keydown",function(e){"Escape"===e.key&&(S.slTopOpen||S.slNeedOpen)&&document.querySelector(".slp")&&slPhOpen(null)});
 let slTick=0;
 function slRefresh(){slTick||(slTick=requestAnimationFrame(()=>{slTick=0;const r=document.getElementById("slres");r&&(r.innerHTML=srcsets(slRes()));slPhSync();svLive()}))}
@@ -527,7 +541,7 @@ function slBar(){
   else{x=[...e.slice(0,4).map(c=>`${c[1]}: ${W_LABEL[S.w[c[0]]].toLowerCase()}`),...null!=S.pace&&PACE[S.pace]?[PACE[S.pace][0]]:[],...null!=S.budget&&BUDGET[S.budget]?["Budget "+BUDGET[S.budget][0]]:[]];more=Math.max(0,e.length-4)}
   return `${saveBox("results")}${(()=>{try{const t=leadTop()[0];return t?introAsk(t.e):""}catch(e){return""}})()}<div class="slbar"><div><span class="ttl">Your answers</span><span class="sum">${x.join(" · ")||"Nothing set yet"}${more?` · +${more} more`:""}</span></div><button class="btn btn-accent" data-act="svedit">Change my answers →</button><button class="linkbtn" data-act="retake">Start over</button></div>`;
 }
-function slReset(){S.sl={};SLC().forEach(c=>S.sl[c[0]]=slDef(c[0]));S.slPace=null;S.slBud=null;S.slEdu=!1;S.slPc=null;S.slPr=null;slSave();route()}
+function slReset(){S.slP=null;S.sl={};SLC().forEach(c=>S.sl[c[0]]=slDef(c[0]));S.slPace=null;S.slBud=null;S.slEdu=!1;S.slPc=null;S.slPr=null;slSave();route()}
 function slDropX(k){delete S.w[k];saveState();slSave();route()}
 
 /* Phone quiz results: map and the town you tapped pinned together, step through your matches */
