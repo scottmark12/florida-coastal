@@ -4337,3 +4337,22 @@ body:has(.vm-ph:not(.land)) > footer{display:none}
 .ec-card .pf-from>div,.ec-card .pf-hd{min-width:0}
 .ec-card .pf-hd span{display:block;overflow-wrap:anywhere}
 .ec-card .pf-hd span{white-space:normal!important;text-overflow:clip!important;overflow:visible!important}
+
+/* ===== Nov 7 2026 (b): end card polish ===== */
+.ec-top{display:flex;gap:16px;align-items:center}
+.ec-cov{position:relative;flex:none;width:132px;box-sizing:border-box;padding:9px 9px 12px;background:#fff;border-radius:4px;box-shadow:0 12px 28px rgba(19,40,44,.22),0 1px 3px rgba(19,40,44,.12);transform:rotate(-2deg);display:flex;flex-direction:column;gap:5px}
+.ec-cov-logo{font:600 8px 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#A8440E}
+.ec-cov-ph{display:block;height:62px;border-radius:2px;overflow:hidden;background:#E8E0D2}
+.ec-cov-ph img,.ec-cov-ph .fallback{width:100%;height:100%;object-fit:cover;display:block}
+.ec-cov-k{font:400 11.5px/1.15 'Libre Caslon Text',Georgia,serif;color:#13282C;margin-top:2px}
+.ec-cov-list{margin:0;padding:0 0 0 14px;font:500 10px/1.45 'DM Sans',sans-serif;color:#13282C}
+.ec-cov-list li::marker{color:#A8440E;font-weight:600}
+.ec-cov-pg{position:absolute;right:-8px;bottom:-10px;padding:4px 9px;border-radius:999px;background:#13282C;color:#fff;font:700 11px 'DM Sans',sans-serif}
+.ec-hd{min-width:0}
+.ec-card h3{font-size:28px!important}
+.ec-sub{margin:22px 0 16px}
+.ec-card:has(.pf-wrap) .ec-top,.ec-card:has(.pf-wrap) .ec-sub,.ec-card:has(.pf-wrap) .ec-from{display:none}
+.ec-card .pf-wrap{margin-top:8px}
+.pf-s:not(.on){display:none!important}
+@media (max-width:600px){.ec-card h3{font-size:26px!important}}
+.ec-card:has(.pf-wrap){padding-top:64px}
