@@ -359,7 +359,8 @@ body.quiz .qlogo img{height:28px!important;filter:drop-shadow(0 1px 4px rgba(0,0
 @media (min-width:901px){body.quiz .main{top:0!important}}
 @media (max-width:900px){body.quiz{padding-top:0}body.quiz .qlogo{height:70px!important;padding:16px 16px 0!important}}
 </style><style>@media (min-width:901px){body.quiz .qlogo{background:none!important}}@media (max-width:900px){body.quiz .qlogo{background:linear-gradient(180deg,rgba(20,21,21,.35),rgba(20,21,21,0))!important}}</style>
-<div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
+<style>body.quiz .qlogo img{filter:drop-shadow(0 0 6px rgba(0,0,0,.55)) drop-shadow(0 1px 2px rgba(0,0,0,.4))!important}.qx{text-shadow:0 0 8px rgba(0,0,0,.6),0 1px 2px rgba(0,0,0,.4)!important}</style>
+<style>@media (max-width:900px){body.quiz .qlogo{background:none!important}}</style><style>@media (max-width:900px){body.quiz .qlogo{background:linear-gradient(180deg,#1A1B1B 0,rgba(26,27,27,.85) 45%,rgba(26,27,27,0))!important;height:84px!important}}</style><div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
 <div class="f"><select id="sty"></select><select id="pmin" class="box"><option value="0">$ No min</option><option value="200">$200K</option><option value="300">$300K</option><option value="500">$500K</option><option value="1000">$1M</option></select><span class="dash">&ndash;</span><select id="pmax" class="box"><option value="99999">$ No max</option><option value="300">$300K</option><option value="500">$500K</option><option value="750">$750K</option><option value="1000">$1M</option></select></div>
 <div class="cnt"><span id="n"></span><label class="so">Sort: <select id="sort"><option value="coast">Along the coast</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option></select></label></div>
 <div class="seeall" id="seeall"></div><div class="tiles" id="tiles"></div><div class="sl" id="sl"></div><div class="grid" id="grid"></div></div></div>
@@ -631,9 +632,11 @@ function qBind(){$('qz').querySelectorAll('[data-id]').forEach(el=>{el.onmouseen
 // in the quiz, a pin tap points to the town in the card instead of opening a second card
 const _op=openPop;openPop=function(t,nopan){if(!document.body.classList.contains('quiz'))return _op(t,nopan);if(nopan||!t)return;S.hover=t.id;render();const el=$('qz').querySelector(`[data-id="${t.id}"]`);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('on');setTimeout(()=>el.classList.remove('on'),1600)}};
 window.QLEFT=()=>{return 0;const r=$('res').getBoundingClientRect(),m=document.querySelector('.mapw').getBoundingClientRect();return Math.max(0,r.right-m.left)};
-function qStart(){const[w,h]=size();if(w<901){const P=[-83.2,-79.9,24.9,30.9],v=fit(P,.0);v.__q=1;go(v,0);return}
- // zoomed in on the peninsula: Big Bend at the top, Florida Bay at the bottom, Atlantic coast near the right edge
- const k=(Y(25.0)-Y(30.15))/h;const v=[X(-80.03)-(w-60)*k,Y(30.15),w*k,h*k];v.__q=1;go(v,0)}
+function qStart(){const[w,h]=size();if(w<901){const v=fit([-87.6,-79.9,24.45,30.75],.03);const k=v[2]/w;v[1]-=40*k;v.__q=1;go(v,0);return}
+ // same framing as before (Panhandle across the top, peninsula right of the card), zoomed in a bit
+ const r=$('res').getBoundingClientRect(),m=document.querySelector('.map').getBoundingClientRect(),L=r.right-m.left+34,R=w-56;
+ let k=(X(-80.03)-X(-82.85))/(R-L);k=Math.max(k,(Y(24.45)-Y(30.95))/h)*0.88;const cy=Y(30.62)+h/2*k;
+ const v=[X(-80.03)-R*k,cy-h/2*k,w*k,h*k];v.__q=1;go(v,0)}
 // while answering, the map holds the whole state and only the pins change
 window.QLOCK=true;const _go=go;go=function(vb,ms){if(window.QLOCK&&!(vb&&vb.__q))return;return _go(vb,ms)};
 {const sea=new URLSearchParams(location.search).get('sea')||'ink';if(sea!=='light')document.body.classList.add('sea-'+sea)}
@@ -649,7 +652,7 @@ function qDots(){const ov=$('ov');if(!ov||Q.done)return;const[w]=size(),k=S.vb[2
  g+='</g>';const old=document.getElementById('qdots');if(old)old.remove();ov.insertAdjacentHTML('beforeend',g);qPrev=ts}
 function qEdge(){const f=document.getElementById('qfade');if(f)f.remove();const ov=$('ov');if(!ov)return;const o=document.getElementById('qland');if(o)o.remove();
  // the base map stops at 89W: continue the land west along the Mississippi coast so there is no hard or blurry edge
- ov.insertAdjacentHTML('afterbegin',`<g id="qland"><rect x="${X(-96)}" y="${Y(23)}" width="${X(-88.45)-X(-96)}" height="${Y(23)-Y(30.36)}" fill="var(--sea,#1A1B1B)" transform="translate(0,${Y(30.36)-Y(23)})"/><rect x="${X(-96)}" y="${Y(34)}" width="${X(-88.45)-X(-96)}" height="${Y(30.36)-Y(34)}" fill="#F3F1EC"/></g>`)}
+ ov.insertAdjacentHTML('afterbegin',`<g id="qland"><rect x="${X(-100)}" y="${Y(40)}" width="${X(-87.6)-X(-100)}" height="${Y(20)-Y(40)}" fill="var(--sea,#1A1B1B)"/></g>`)}
 // labels that sit over water turn white (dark ocean option)
 let _land=null;const _render=render;render=function(){const r=_render.apply(this,arguments);try{if(document.body.classList.contains('quiz')){qEdge();qDots()}}catch(e){}if(!/sea-/.test(document.body.className))return r;
  try{_land=_land||document.querySelector('#base path[fill="#F3F1EC"]');const base=$('base'),ov=$('ov');if(!_land||!ov)return r;
