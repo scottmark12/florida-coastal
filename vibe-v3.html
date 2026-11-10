@@ -180,7 +180,7 @@ body.sliders .mode button{padding:8px 13px;font-size:14.5px}
 </style><script src="assets/dm-titles.js"></script></head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
-<nav class="top"><a class="on" href="#">Map</a><a href="towns/index-v2.html">Beach Towns</a><a href="articles.html">Guides</a><a href="agents.html">Local Agents</a></nav>
+<nav class="top"><a href="towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="articles/index.html" data-nav="articles">Articles</a></nav>
 <a class="cta" href="quiz-photo.html">Take the quiz</a></header>
 <div class="main"><div class="mapw"><div class="bar" id="bar" style="display:none"></div>
 <div class="map" id="mapbox"><svg id="map"><g id="base"></g><g id="ov"></g></svg>
@@ -389,4 +389,4 @@ const r0=REG.find(r=>r[0]==(params.get('region')||'Southwest Gulf'));S.region=r0
 if(params.get('mode')=='vibes'){S.mode='vibes';document.body.classList.add('vibes');document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m=='vibes'));if(S.style){document.body.classList.add('pick');S.region='';tags();S.vb=fitStyle(S.style);S.gT0=performance.now()}else{S.region='';tags();S.vb=fit(ALL,.02)}render();list()}
 if(params.get('mode')=='sliders'){setMode('sliders');const pr=params.get('sv');if(pr){pr.split(',').forEach(x=>{const[a,b]=x.split(':');S.sv[a]=+b});slRender()}}
 if(params.get('open')){const t=T.find(t=>t.id==params.get('open'));if(t)openPop(t)}
-</script></body></html>
+</script><script>(function(){const m=new URLSearchParams(location.search).get("mode");document.querySelectorAll("nav.top a").forEach(a=>a.classList.toggle("on",(m==="vibes"&&a.dataset.nav==="vibes")||(m==="sliders"&&a.dataset.nav==="sliders")))})()</script></body></html>
