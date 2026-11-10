@@ -4,7 +4,7 @@
 // ?dm=4 town names only in Caslon, everything else (articles too) DM Sans
 (function(){
 var q=new URLSearchParams(location.search).get('dm'),mode='0';
-try{if(q!==null)sessionStorage.setItem('fcdm',q);mode=sessionStorage.getItem('fcdm')||'0'}catch(e){mode=q||'0'}
+try{if(q!==null)sessionStorage.setItem('fcdm',q);mode=sessionStorage.getItem('fcdm')||'3'}catch(e){mode=q||'3'}
 if(['1','2','3','4'].indexOf(mode)<0)return;
 var DMF="'DM Sans',system-ui,sans-serif";
 function setDM(el){el.style.setProperty('font-family',DMF,'important');el.style.setProperty('font-weight','500','important');el.style.setProperty('letter-spacing','-.02em','important')}
