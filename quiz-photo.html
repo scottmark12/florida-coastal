@@ -708,6 +708,23 @@ body.qphoto .qlogo{top:28px!important;bottom:auto!important}
 body.reveal #qmini{opacity:0}
 #qmini .md{transition:r .3s}
 @media (max-width:900px){body.qphoto .qlogo{top:16px!important}#qcap{position:fixed!important;left:16px!important;top:calc(40vh - 30px)!important;bottom:auto!important}#qmini{position:fixed;width:74px;padding:9px;border-radius:10px;right:14px;bottom:auto;top:calc(40vh - 112px)}}
+
+/* glass card */
+body.qphoto #res{background:rgba(18,20,20,.38)!important;backdrop-filter:blur(22px) saturate(1.15);-webkit-backdrop-filter:blur(22px) saturate(1.15);border:1px solid rgba(255,255,255,.16);box-shadow:0 20px 60px rgba(0,0,0,.28)!important;color:#fff}
+body.qphoto #res,body.qphoto #res h1,body.qphoto #res h2,body.qphoto #res .qq,body.qphoto #res b,body.qphoto #res .qo,body.qphoto #res .qalt,body.qphoto #res .qb,body.qphoto #res .qclose{color:#fff!important}
+body.qphoto #res small,body.qphoto #res .qhd p,body.qphoto #res .qn{color:rgba(255,255,255,.72)!important}
+body.qphoto #res .qn b{color:#F29A63!important}
+body.qphoto #res .qo{border-color:rgba(255,255,255,.2)!important;background:transparent!important}
+body.qphoto #res .qopts,body.qphoto #res .qopts>*{border-color:rgba(255,255,255,.2)!important}
+body.qphoto #res .qo:hover,body.qphoto #res .qo.on{background:rgba(255,255,255,.08)!important}
+body.qphoto #res .qbar i{background:rgba(255,255,255,.22)!important}
+body.qphoto #res .qbar i.done{background:#fff!important}
+body.qphoto #res .qbar i.cur{background:#F29A63!important}
+body.qphoto #res .qclose:hover{background:rgba(255,255,255,.12)!important}
+body.qphoto #res *{text-shadow:none}
+body.qphoto #res .qo::after{color:#fff!important}
+body.qphoto #res .qtop .qb{color:#fff!important}
+@media (max-width:900px){body.qphoto #res{background:rgba(18,20,20,.42)!important;border-left:0;border-right:0}body.qphoto #qph{height:100vh!important}body.qphoto,body.qphoto .main{background:#1A1B1B!important}}
 </style>
 <div id="qrv"><h2>Your top 5</h2><p>Lining up your shortlist</p></div>
 <script>
