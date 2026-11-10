@@ -647,10 +647,8 @@ function qBind(){$('qz').querySelectorAll('[data-id]').forEach(el=>{el.onmouseen
 const _op=openPop;openPop=function(t,nopan){if(!document.body.classList.contains('quiz'))return _op(t,nopan);if(nopan||!t)return;S.hover=t.id;render();const el=$('qz').querySelector(`[data-id="${t.id}"]`);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('on');setTimeout(()=>el.classList.remove('on'),1600)}};
 window.QLEFT=()=>{return 0;const r=$('res').getBoundingClientRect(),m=document.querySelector('.mapw').getBoundingClientRect();return Math.max(0,r.right-m.left)};
 function qStart(){const[w,h]=size();if(w<901){const v=fit([-87.6,-79.9,24.45,30.75],.03);const k=v[2]/w;v[1]-=40*k;v.__q=1;go(v,0);return}
- // same framing as before (Panhandle across the top, peninsula right of the card), zoomed in a bit
- const r=$('res').getBoundingClientRect(),m=document.querySelector('.map').getBoundingClientRect(),L=r.right-m.left+34,R=w-56;
- let k=(X(-80.03)-X(-82.85))/(R-L);k=Math.max(k,(Y(24.45)-Y(30.95))/h)*0.88;const cy=Y(30.62)+h/2*k;
- const v=[X(-80.03)-R*k,cy-h/2*k,w*k,h*k];v.__q=1;go(v,0)}
+ // Pensacola top left, Miami bottom right, centered with a little padding
+ const v=fit([-87.22,-80.19,25.77,30.42],.1);v.__q=1;go(v,0)}
 // while answering, the map holds the whole state and only the pins change
 window.QLOCK=true;const _go=go;go=function(vb,ms){if(window.QLOCK&&!(vb&&vb.__q))return;return _go(vb,ms)};
 {const sea=new URLSearchParams(location.search).get('sea')||'ink';if(sea!=='light')document.body.classList.add('sea-'+sea)}
