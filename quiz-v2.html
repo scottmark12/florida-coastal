@@ -302,7 +302,7 @@ body.quiz .res{left:max(40px,calc(50vw - 660px));top:50%;transform:translateY(-5
 </style>
 <style>
 /* Dark ocean option (Nov 10), quiz only */
-body.quiz.sea-ink{--sea:#13262B;--lake:#2A4148;--sealbl:#7F9AA2}
+body.quiz.sea-ink{--sea:#1A1B1B;--lake:#353636;--sealbl:#8C8C88}
 body.quiz.sea-blue{--sea:#1C3A52;--lake:#36536A;--sealbl:#8EAFC4}
 body.quiz[class*=sea-] .mapw,body.quiz[class*=sea-] .map{background:var(--sea)!important}
 body.quiz[class*=sea-] .lbl.onsea{fill:#fff!important;stroke:var(--sea)!important}body.quiz[class*=sea-] .lbl.sm.onsea{fill:#E8E4DC!important}
@@ -331,7 +331,7 @@ body.quiz #ov circle.dot[fill="#152A2E"]{fill:var(--or)}
 body.quiz #ov circle[stroke="#152A2E"]{stroke:var(--or)}
 body.quiz #ov circle.dot:not([fill="#152A2E"]){fill:#E9A57E}
 @media (max-width:900px){.qlogo{left:14px!important;top:14px!important;padding:8px 12px!important}.qlogo img{height:24px!important}body.quiz .mapw{height:40vh}}
-</style><div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
+</style><style>#qfade{position:absolute;left:0;top:0;bottom:0;pointer-events:none;z-index:2;background:linear-gradient(90deg,var(--sea,#1A1B1B) 0,var(--sea,#1A1B1B) calc(100% - 200px),transparent)}</style><div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
 <div class="f"><select id="sty"></select><select id="pmin" class="box"><option value="0">$ No min</option><option value="200">$200K</option><option value="300">$300K</option><option value="500">$500K</option><option value="1000">$1M</option></select><span class="dash">&ndash;</span><select id="pmax" class="box"><option value="99999">$ No max</option><option value="300">$300K</option><option value="500">$500K</option><option value="750">$750K</option><option value="1000">$1M</option></select></div>
 <div class="cnt"><span id="n"></span><label class="so">Sort: <select id="sort"><option value="coast">Along the coast</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option></select></label></div>
 <div class="seeall" id="seeall"></div><div class="tiles" id="tiles"></div><div class="sl" id="sl"></div><div class="grid" id="grid"></div></div></div>
@@ -593,7 +593,7 @@ function qRes(){const L=qRank(),L5=L.slice(0,5),k=qStyle(L5,L.slice(0,15)),t=L5[
 function qDraw(){$('qz').innerHTML=qHTML();document.body.classList.toggle('qhas',qAny());qBind();document.body.classList.toggle('qres',Q.done);$('res').scrollTop=0}
 function qGo(i){if(i<-1)return;Q.step=i;qDraw()}
 function qPick(i){Q.ans[Q.step]=i;qRank();qMap();qDraw();setTimeout(()=>{if(Q.step<SQ.length-1)qGo(Q.step+1);else qDone()},260)}
-function qDone(){qRank();qMap();const a=Q.ans.map(x=>x==null?'x':x).join('');setTimeout(()=>{location.href='quiz-results-v3.html?a='+a},700)}
+function qDone(){window.QLOCK=false;qRank();qMap();const a=Q.ans.map(x=>x==null?'x':x).join('');setTimeout(()=>{location.href='quiz-results-v3.html?a='+a},700)}
 function qOpen(id){const t=T.find(t=>t.id==id);S.pinned=id;openPop(t,true);document.querySelectorAll('.t5r').forEach(r=>r.classList.toggle('on',r.dataset.id==id))}
 function qRestart(){Q.ans.fill(undefined);Q.done=false;Q.step=0;closePop();S.sv={};SLK.forEach(([k])=>S.sv[k]=50);qDraw()}
 function qSend(){const e=$('qse').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){$('qse').style.borderColor='#B3261E';$('qse').focus();return}
@@ -603,12 +603,16 @@ function qBind(){$('qz').querySelectorAll('[data-id]').forEach(el=>{el.onmouseen
 // in the quiz, a pin tap points to the town in the card instead of opening a second card
 const _op=openPop;openPop=function(t,nopan){if(!document.body.classList.contains('quiz'))return _op(t,nopan);if(nopan||!t)return;S.hover=t.id;render();const el=$('qz').querySelector(`[data-id="${t.id}"]`);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('on');setTimeout(()=>el.classList.remove('on'),1600)}};
 window.QLEFT=()=>{return 0;const r=$('res').getBoundingClientRect(),m=document.querySelector('.mapw').getBoundingClientRect();return Math.max(0,r.right-m.left)};
-function qStart(){const[w,h]=size();if(w<901){go(fit(ALL,.02),0);return}
- // like the live quiz: zoomed in, peninsula to the right of the centered card
- const x0=X(-85.6),x1=X(-79.95),y0=Y(30.75),y1=Y(24.9);const k=(y1-y0)/h;const sx=w*.80-(x1-x0)/k/2,sy=h/2;go([(x0+x1)/2-sx*k,(y0+y1)/2-sy*k,w*k,h*k],0)}
+function qStart(){const[w,h]=size();if(w<901){const v=fit(ALL,.02);v.__q=1;go(v,0);return}
+ // whole state top to bottom, peninsula to the right of the centered card
+ const y0=Y(30.95),y1=Y(24.4);const k=(y1-y0)/(h-56);const sx=w*.80;const v=[X(-80.0)-sx*k,(y0+y1)/2-(h/2+2)*k,w*k,h*k];v.__q=1;go(v,0)}
+// while answering, the map holds the whole state and only the pins change
+window.QLOCK=true;const _go=go;go=function(vb,ms){if(window.QLOCK&&!(vb&&vb.__q))return;return _go(vb,ms)};
 {const sea=new URLSearchParams(location.search).get('sea')||'ink';if(sea!=='light')document.body.classList.add('sea-'+sea)}
+function qEdge(){let f=document.getElementById('qfade');if(!f){f=document.createElement('div');f.id='qfade';document.querySelector('.map').appendChild(f)}
+ const[w]=size(),px=(X(-89)-S.vb[0])/S.vb[2]*w;f.style.width=Math.max(0,px+140)+'px';f.style.display=px>-140?'block':'none'}
 // labels that sit over water turn white (dark ocean option)
-let _land=null;const _render=render;render=function(){const r=_render.apply(this,arguments);if(!/sea-/.test(document.body.className))return r;
+let _land=null;const _render=render;render=function(){const r=_render.apply(this,arguments);try{if(document.body.classList.contains('quiz'))qEdge()}catch(e){}if(!/sea-/.test(document.body.className))return r;
  try{_land=_land||document.querySelector('#base path[fill="#F3F1EC"]');const base=$('base'),ov=$('ov');if(!_land||!ov)return r;
  const M=base.getScreenCTM().inverse();ov.querySelectorAll('text.lbl').forEach(t=>{const b=t.getBoundingClientRect(),cx=b.left+b.width/2,cy=b.top+b.height/2;
   let n=0;[[cx,cy],[b.left+4,cy],[b.right-4,cy]].forEach(([x,y])=>{const p=new DOMPoint(x,y).matrixTransform(M);if(!_land.isPointInFill(p))n++});t.classList.toggle('onsea',n>=2)})}catch(e){}return r};
