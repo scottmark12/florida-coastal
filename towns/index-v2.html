@@ -146,7 +146,7 @@ const pr=t=>t.p||'';
 function sres(q){q=norm(q.trim());if(!q)return'';const out=[];
  const co=CO.filter(c=>norm(c[1]).includes(q));const ar=[...new Set(T.map(t=>t.c+'|'+area(t)))].filter(x=>norm(areaName(...x.split('|'))).includes(q)).slice(0,3);
  const tw=T.filter(t=>norm(t.n).includes(q)).sort((a,b)=>norm(a.n).indexOf(q)-norm(b.n).indexOf(q)||a.n.localeCompare(b.n)).concat(T.filter(t=>!norm(t.n).includes(q)&&norm(t.r).includes(q))).slice(0,7);
- if(tw.length)out.push('<div class="hd">Towns</div>'+tw.map(t=>`<a href="${t.id}.html"><i style="background-image:url('${t.img}')"></i><span><b>${t.n}</b><small>${t.r.replace(/ · /g,', ')}</small></span><span class="pr">${pr(t)}</span></a>`).join(''));
+ if(tw.length)out.push('<div class="hd">Towns</div>'+tw.map(t=>`<a href="${t.id}-v3.html"><i style="background-image:url('${t.img}')"></i><span><b>${t.n}</b><small>${t.r.replace(/ · /g,', ')}</small></span><span class="pr">${pr(t)}</span></a>`).join(''));
  if(co.length||ar.length)out.push('<div class="hd">Regions</div>'+co.map(c=>`<a href="#regions" data-c="${c[0]}"><i style="background-image:url('${c[3]}')"></i><span><b>${c[1]}</b><small>${T.filter(t=>t.c==c[0]).length} towns</small></span></a>`).join('')+ar.map(x=>{const[c,a]=x.split('|'),L=T.filter(t=>t.c==c&&area(t)==a);const im=(L.find(real)||L[0]).img;return `<a href="#regions" data-c="${c}" data-a="${a}"><i style="background-image:url('${im}')"></i><span><b>${areaName(c,a)}</b><small>${L.length} ${L.length==1?'town':'towns'}</small></span></a>`}).join(''));
  return out.join('')||'<div class="no">No towns match that. Try a nearby town or a region like Tampa Bay.</div>'}
 let kI=-1;
@@ -156,7 +156,7 @@ $('sb').onsubmit=()=>{const a=$('dd').querySelector('a');if(a)a.click();return f
 document.addEventListener('click',e=>{if(!e.target.closest('#sb'))$('sb').classList.remove('open')});
 $('dd').addEventListener('click',e=>{const a=e.target.closest('a[data-c]');if(!a)return;e.preventDefault();$('sb').classList.remove('open');pickC(a.dataset.c,a.dataset.a||'');$('regions').scrollIntoView({behavior:'smooth'})});
 /* explored */
-$('row').innerHTML=EXP.filter(([id])=>byId[id]).map(([id],i)=>{const t=byId[id];return `<a class="ex" href="${t.id}.html"><i style="background-image:url('${t.img}')"></i><span class="n">No. ${i+1}</span><span class="t"><b>${t.n}</b><small><span>${area(t)=='Panhandle'?'Panhandle':t.r.split(' · ').pop()}</span><span>${pr(t)}</span></small></span></a>`}).join('');
+$('row').innerHTML=EXP.filter(([id])=>byId[id]).map(([id],i)=>{const t=byId[id];return `<a class="ex" href="${t.id}-v3.html"><i style="background-image:url('${t.img}')"></i><span class="n">No. ${i+1}</span><span class="t"><b>${t.n}</b><small><span>${area(t)=='Panhandle'?'Panhandle':t.r.split(' · ').pop()}</span><span>${pr(t)}</span></small></span></a>`}).join('');
 const sc=d=>{const r=$('row');r.scrollBy({left:d*(r.firstElementChild.offsetWidth+20),behavior:'smooth'})};$('rp').onclick=()=>sc(-1);$('rn').onclick=()=>sc(1);
 /* regions */
 const R={c:'',a:''};
@@ -168,7 +168,7 @@ function pickC(c,a){R.c=c;R.a=a;const co=CO.find(x=>x[0]==c);const L=T.filter(t=
  $('arh').textContent=co[1];$('ars').textContent=co[2];
  $('ach').innerHTML=(areas.length>1?`<button data-a="" class="${a?'':'on'}">All <small>${L.length}</small></button>`:'')+(areas.length>1?areas.map(x=>`<button data-a="${x}" class="${x==a?'on':''}">${areaName(c,x)} <small>${L.filter(t=>area(t)==x).length}</small></button>`).join(''):'');
  const G=a?L.filter(t=>area(t)==a):L;
- $('grid').innerHTML=G.map(t=>`<a class="card" href="${t.id}.html"><div class="ph" style="background-image:url('${t.img}')">${t.g?'<span class="gt">Similar setting</span>':''}</div><h4>${t.n}</h4><div class="mt"><span>${areaName(c,area(t))}</span><b>${pr(t)}</b></div></a>`).join('');
+ $('grid').innerHTML=G.map(t=>`<a class="card" href="${t.id}-v3.html"><div class="ph" style="background-image:url('${t.img}')">${t.g?'<span class="gt">Similar setting</span>':''}</div><h4>${t.n}</h4><div class="mt"><span>${areaName(c,area(t))}</span><b>${pr(t)}</b></div></a>`).join('');
  $('ar').classList.add('show')}
 $('ach').onclick=e=>{const b=e.target.closest('button');if(b)pickC(R.c,b.dataset.a)};
 /* A to Z */
@@ -176,7 +176,7 @@ $('fs').innerHTML='<option value="">Any style</option>'+Object.entries(VIBES).ma
 function az(){const q=norm($('fq').value.trim()),s=$('fs').value,p=$('fp').value;let L=T.filter(t=>(!q||norm(t.n).includes(q))&&(!s||t.v.includes(s)));
  if(p){const[a,b]=p.split('-').map(Number);L=L.filter(t=>t.m&&t.m>=a&&t.m<b)}
  $('fc').innerHTML=`<b>${L.length}</b> of 167 towns`;
- const blk=([k,n])=>{const G=L.filter(t=>t.c==k).sort((a,b)=>a.n.localeCompare(b.n));return `<h5>${n}<span>${G.length}</span></h5>${G.length?G.map(t=>`<a href="${t.id}.html"><b>${t.n}</b><span>${pr(t)}</span></a>`).join(''):'<div class="none">None match</div>'}`};const C=k=>CO.find(c=>c[0]==k);
+ const blk=([k,n])=>{const G=L.filter(t=>t.c==k).sort((a,b)=>a.n.localeCompare(b.n));return `<h5>${n}<span>${G.length}</span></h5>${G.length?G.map(t=>`<a href="${t.id}-v3.html"><b>${t.n}</b><span>${pr(t)}</span></a>`).join(''):'<div class="none">None match</div>'}`};const C=k=>CO.find(c=>c[0]==k);
  $('cols').innerHTML=`<div>${blk(C('panhandle'))}<div style="height:36px"></div>${blk(C('keys'))}</div><div>${blk(C('gulf'))}</div><div>${blk(C('atlantic'))}</div>`}
 ['fq','fs','fp'].forEach(i=>$(i).addEventListener(i=='fq'?'input':'change',az));az();
 {const h=location.hash.slice(1);if(CO.some(c=>c[0]==h)){pickC(h,'');setTimeout(()=>$('regions').scrollIntoView(),50)}}
