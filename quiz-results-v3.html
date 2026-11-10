@@ -1,0 +1,69 @@
+<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Your top 5 · Florida Coastal</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Caslon+Display&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:'DM Sans',system-ui,sans-serif;color:#152A2E;background:#fff}
+header{height:72px;display:flex;align-items:center;padding:0 max(56px,calc(50vw - 640px));gap:26px;position:absolute;top:0;left:0;right:0;z-index:5;background:linear-gradient(180deg,rgba(12,22,24,.35),rgba(12,22,24,0))}
+header img{height:30px}header nav{margin-left:auto;display:flex;align-items:center;gap:26px;font-size:16px}header nav a{color:#fff;text-decoration:none;text-shadow:0 1px 8px rgba(0,0,0,.3)}header .cta{border:1px solid rgba(255,255,255,.75);border-radius:8px;padding:8px 14px;text-shadow:none!important}
+.wrap{position:relative;height:100vh;min-height:640px}
+.track{display:flex;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}.track::-webkit-scrollbar{display:none}
+.sl{flex:0 0 100%;height:100%;position:relative;scroll-snap-align:start;overflow:hidden}
+.sl .im{position:absolute;inset:0;background:center/cover}
+.sl .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,22,24,0) 38%,rgba(12,22,24,.6) 66%,rgba(12,22,24,.9) 100%),linear-gradient(90deg,rgba(12,22,24,.5) 0%,rgba(12,22,24,0) 60%)}
+.tx{position:absolute;left:max(56px,calc(50vw - 640px));bottom:64px;max-width:600px;color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.3)}
+.k{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.9}
+h1{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:76px;line-height:1;margin:10px 0 10px}
+.rg{font-size:16px;opacity:.9}.rg b{font-weight:600}
+.tx p{font-size:18.5px;line-height:1.5;margin:14px 0 14px}
+.why{font-size:15px;opacity:.9;padding-top:12px;border-top:1px solid rgba(255,255,255,.3)}.why span{display:block;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:.75;margin-bottom:4px}
+.bt{display:flex;gap:12px;margin-top:22px}.bt a{text-decoration:none;font-weight:600;font-size:16px;border-radius:8px;padding:14px 22px;text-shadow:none}
+.go{background:#fff;color:#152A2E}.gh{color:#fff;border:1px solid rgba(255,255,255,.7)}
+.nav{position:absolute;right:max(56px,calc(50vw - 640px));bottom:64px;z-index:3;display:flex;flex-direction:column;align-items:flex-end;gap:14px}
+.th{display:flex;gap:8px}.th button{width:74px;height:54px;border-radius:6px;border:2px solid transparent;background:center/cover;cursor:pointer;position:relative;opacity:.7;padding:0}
+.th button i{position:absolute;left:5px;top:4px;font-style:normal;font-size:11px;font-weight:700;color:#fff;background:rgba(21,42,46,.8);border-radius:10px;padding:1px 6px}
+.th button.on{border-color:#fff;opacity:1}
+.ar{display:flex;align-items:center;gap:14px;color:#fff;font-size:15px;font-weight:500}.ar a{color:#fff;text-underline-offset:4px;margin-right:10px}.ar button{width:46px;height:46px;border-radius:50%;border:1px solid rgba(255,255,255,.7);background:rgba(12,22,24,.25);color:#fff;font-size:22px;cursor:pointer}
+.dots{display:none}
+#short{background:#F2EFEA;padding:56px max(56px,calc(50vw - 640px));display:flex;gap:40px;align-items:center}
+#short img{width:120px;box-shadow:0 4px 16px rgba(0,0,0,.18);border-radius:3px}
+#short h2{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:34px;margin:0 0 6px}#short p{margin:0 0 16px;font-size:16.5px;color:#3C4A4D;max-width:520px}
+#short form{display:flex;gap:10px}#short input{width:320px;border:1px solid #CFCAC0;border-radius:8px;padding:14px;font:inherit;font-size:16px}#short button{border:0;background:#152A2E;color:#fff;border-radius:8px;padding:14px 22px;font:inherit;font-weight:600;font-size:16px}
+#short .sm{margin-top:14px;font-size:15px}#short .sm a{color:#152A2E;margin-right:18px}
+@media(max-width:800px){header nav a:not(.cta){display:none}header .cta{border:0}
+.wrap{height:100svh;min-height:600px}header{padding:0 20px}.tx{left:20px;right:20px;bottom:56px}h1{font-size:44px}.tx p{font-size:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.bt{flex-direction:column;gap:8px}.bt a{text-align:center;padding:13px}.why{font-size:14px}
+.nav{display:none}
+.dots{display:flex;gap:7px;position:absolute;left:0;right:0;bottom:22px;justify-content:center;z-index:3}.dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5)}.dots i.on{background:#fff;width:22px;border-radius:4px}
+#short{flex-direction:column;align-items:flex-start;padding:36px 20px;gap:18px}#short form{flex-direction:column;width:100%}#short input{width:100%}}
+</style></head><body>
+<header><a href="index.html"><img src="img/fc-logo-arch-line-white.png" alt="Florida Coastal"></a><nav><a href="vibe-v3.html">Map</a><a href="towns/index-v2.html">Beach Towns</a><a href="articles.html">Guides</a><a href="agents.html">Local Agents</a></nav></header>
+<div class="wrap"><div class="track" id="tr"><section class="sl"><div class="im" style="background-image:url(img/st-petersburg.jpg)"></div><div class="ov"></div>
+<div class="tx"><div class="k">Your #1 match &middot; 93% match</div><h1>St. Petersburg</h1>
+<div class="rg">Tampa Bay &middot; <b>$495K</b> typical home</div><p>A sunny waterfront city with a walkable downtown, the Dalí Museum, murals on every block and Gulf beaches 20 minutes away.</p>
+<div class="why"><span>Fits what you asked for</span>Good restaurants · A full calendar of clubs and events · Life on the water</div>
+<div class="bt"><a class="go" href="towns/st-petersburg.html">Explore St. Petersburg</a><a class="gh" href="#short">Email me all 5</a></div></div></section><section class="sl"><div class="im" style="background-image:url(img/west-palm-beach.jpg)"></div><div class="ov"></div>
+<div class="tx"><div class="k">#2 of 5 &middot; 92% match</div><h1>West Palm Beach</h1>
+<div class="rg">Southeast Atlantic &middot; <b>$404K</b> typical home</div><p>The downtown of Palm Beach County, with Clematis Street, a waterfront, the Norton Museum of Art and a Brightline train station.</p>
+<div class="why"><span>Fits what you asked for</span>Good restaurants · A full calendar of clubs and events · Life on the water</div>
+<div class="bt"><a class="go" href="towns/west-palm-beach.html">Explore West Palm Beach</a><a class="gh" href="#short">Email me all 5</a></div></div></section><section class="sl"><div class="im" style="background-image:url(img/sarasota.jpg)"></div><div class="ov"></div>
+<div class="tx"><div class="k">#3 of 5 &middot; 92% match</div><h1>Sarasota</h1>
+<div class="rg">Sarasota, Manatee &middot; <b>$530K</b> typical home</div><p>The arts capital of the Gulf coast, with an opera, a ballet, The Ringling museum, Lido Beach just over the bridge and Siesta Key's famous sand minutes away.</p>
+<div class="why"><span>Fits what you asked for</span>Good restaurants · A full calendar of clubs and events · Life on the water</div>
+<div class="bt"><a class="go" href="towns/sarasota.html">Explore Sarasota</a><a class="gh" href="#short">Email me all 5</a></div></div></section><section class="sl"><div class="im" style="background-image:url(img/miami.jpg)"></div><div class="ov"></div>
+<div class="tx"><div class="k">#4 of 5 &middot; 89% match</div><h1>Miami (Brickell and the Grove)</h1>
+<div class="rg">Southeast Atlantic &middot; <b>$588K</b> typical home</div><p>The mainland city on Biscayne Bay, from the towers of Brickell and Edgewater to the shady streets of Coconut Grove and the murals of Wynwood.</p>
+<div class="why"><span>Fits what you asked for</span>Good restaurants · A full calendar of clubs and events · Life on the water</div>
+<div class="bt"><a class="go" href="towns/miami.html">Explore Miami</a><a class="gh" href="#short">Email me all 5</a></div></div></section><section class="sl"><div class="im" style="background-image:url(img/fort-lauderdale.jpg)"></div><div class="ov"></div>
+<div class="tx"><div class="k">#5 of 5 &middot; 86% match</div><h1>Fort Lauderdale</h1>
+<div class="rg">Southeast Atlantic &middot; <b>$605K</b> typical home</div><p>A boating city of canals and marinas, where the boat goes out in the afternoon and dinner ends up on Las Olas.</p>
+<div class="why"><span>Fits what you asked for</span>Life on the water · Good restaurants · A full calendar of clubs and events</div>
+<div class="bt"><a class="go" href="towns/ftl.html">Explore Fort Lauderdale</a><a class="gh" href="#short">Email me all 5</a></div></div></section></div>
+<div class="nav"><div class="th" id="th"><button data-go="0" style="background-image:url(img/st-petersburg.jpg)"><i>1</i></button><button data-go="1" style="background-image:url(img/west-palm-beach.jpg)"><i>2</i></button><button data-go="2" style="background-image:url(img/sarasota.jpg)"><i>3</i></button><button data-go="3" style="background-image:url(img/miami.jpg)"><i>4</i></button><button data-go="4" style="background-image:url(img/fort-lauderdale.jpg)"><i>5</i></button></div><div class="ar"><a href="quiz-v2.html?a=12030237">View on map</a><span id="ct">1 / 5</span><button id="pv" aria-label="Previous">&lsaquo;</button><button id="nx" aria-label="Next">&rsaquo;</button></div></div>
+<div class="dots" id="dt"><i></i><i></i><i></i><i></i><i></i></div></div>
+<section id="short"><img src="img/shortlist-p8.webp" alt=""><div><h2>Get your Florida Shortlist</h2><p>A free 8 page PDF of these 5 towns: home prices, flood heads ups, the drive to the airport and a first weekend in each.</p><form onsubmit="return false"><input type="email" placeholder="you@example.com" aria-label="Your email"><button>Email me my Shortlist</button></form><div class="sm"><a href="quiz-v2.html">Retake the quiz</a><a href="quiz-v2.html?a=12030237">See all 5 on the map</a><a href="vibe-v3.html?mode=sliders">Fine tune with sliders</a></div></div></section>
+<script>
+const tr=document.getElementById('tr'),N=5;let cur=0;
+const go=i=>{i=Math.max(0,Math.min(N-1,i));tr.scrollTo({left:i*tr.clientWidth,behavior:'smooth'})};
+const upd=()=>{cur=Math.round(tr.scrollLeft/tr.clientWidth);document.getElementById('ct').textContent=(cur+1)+' / '+N;document.querySelectorAll('#th button').forEach((b,i)=>b.classList.toggle('on',i==cur));document.querySelectorAll('#dt i').forEach((b,i)=>b.classList.toggle('on',i==cur))};
+tr.addEventListener('scroll',()=>requestAnimationFrame(upd));document.getElementById('pv').onclick=()=>go(cur-1);document.getElementById('nx').onclick=()=>go(cur+1);
+document.querySelectorAll('#th button').forEach(b=>b.onclick=()=>go(+b.dataset.go));addEventListener('keydown',e=>{if(e.key=='ArrowRight')go(cur+1);if(e.key=='ArrowLeft')go(cur-1)});upd();
+</script></body></html>
