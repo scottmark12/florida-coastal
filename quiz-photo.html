@@ -730,7 +730,7 @@ body.qphoto #res .qtop .qb{color:#fff!important}
 @media (max-width:900px){body.qphoto:not(.qhas) #qmini{visibility:hidden}}
 body.qhas #res .qalt{display:none!important}
 @media (max-width:900px){
-body.qphoto #res{margin:0 14px!important;width:auto!important;border-radius:18px!important;border:1px solid rgba(255,255,255,.16)!important;padding:16px 18px 6px!important;min-height:440px!important;height:auto!important}
+body.qphoto #res{margin:0 14px!important;width:auto!important;border-radius:18px!important;border:1px solid rgba(255,255,255,.16)!important;padding:16px 18px 6px!important;min-height:452px!important;height:auto!important}
 body.qphoto .mapw{height:36vh!important}body.qphoto:not(.qhas):not(.reveal) .mapw{height:22vh!important}
 body.qphoto #res .qq{font-size:21px!important;line-height:1.2!important;margin:12px 0 8px!important}
 body.qphoto #res .qhd h1{font-size:24px!important}
@@ -751,6 +751,7 @@ body.qphoto #res .qhd p{color:rgba(255,255,255,.9)!important;text-shadow:0 1px 1
 @media (min-width:901px){html body.qphoto #res{min-height:522px!important;height:522px!important;max-height:none!important;overflow:visible!important;box-sizing:border-box}}
 body.qphoto:not(.qhas) #qph:after{background:linear-gradient(180deg,rgba(0,0,0,.25),rgba(0,0,0,.1) 30%,rgba(0,0,0,.35) 60%,rgba(0,0,0,.5))}
 body.qphoto #res .qhd h1{text-shadow:0 2px 24px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.35)!important}
+html body.qphoto #res{display:flex;flex-direction:column}html body.qphoto #res #qz{flex:1;display:flex;flex-direction:column;min-height:0}html body.qphoto #res .qopts{flex:1;display:flex;flex-direction:column}html body.qphoto #res .qo{flex:1;align-items:center}
 </style>
 <div id="qrv"><h2>Your top 5</h2><p>Lining up your shortlist</p></div>
 <script>
@@ -775,7 +776,9 @@ function miniDots(){const g=document.getElementById('mdots');if(!g)return;if(!qA
  top.forEach((id,i)=>{const t=T.find(x=>x.id==id);h+=`<circle cx="${X(t.lo)}" cy="${Y(t.la)}" r="${(i?4:5)*ku}" fill="#E07A3F" stroke="#fff" stroke-width="${1.3*ku}"/>`});
  g.innerHTML=h}
 const mob=()=>innerWidth<901;
-const d0=qDraw;qDraw=function(){d0();show(Math.min(Q.step,PH.length-1));miniDots()};if(mob()){const r=$('res');r.parentElement.insertBefore(mini,r.nextSibling)}show(Q.step);miniDots();
+const SUBS={3:['Sand and water right out front','Close enough to ride over with a towel','Easy to get to whenever I want'],4:{2:'People I know by name, and that is plenty'},5:['I want an airport close by','A decent drive to the airport is fine','I can make a day of getting there'],7:['Keeping costs low','A comfortable middle','Room to stretch','Open to the top end']};
+Object.entries(SUBS).forEach(([qi,m])=>Object.entries(m).forEach(([oi,t])=>{const o=SQ[qi]&&SQ[qi].o[oi];if(o&&!o[1])o[1]=t}));
+const d0=qDraw;qDraw=function(){d0();show(Math.min(Q.step,PH.length-1));miniDots()};if(mob()){const r=$('res');r.parentElement.insertBefore(mini,r.nextSibling)}show(Q.step);miniDots();qDraw();
 qDone=function(){window.QLOCK=false;qRank();
  document.body.classList.add('reveal');window.dispatchEvent(new Event('resize'));
  setTimeout(()=>{const[w]=size();let v;if(w<901){v=fit([-87.6,-79.9,24.45,30.75],.04);v[1]-=.17*v[3]}else v=fit([-87.6,-79.95,24.5,31.0],.05);v.__q=1;go(v,0)},60);qPrev=new Set();
