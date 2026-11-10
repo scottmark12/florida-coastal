@@ -49,10 +49,10 @@ select.set{border-color:var(--ink);font-weight:600}
 </style><script src="../assets/dm-titles.js"></script></head><body>
 <header><a class="logo" href="../home-v2.html"><img src="../img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
 <nav class="top"><a href="../vibe-v3.html">Map</a><a class="on" href="index-v2.html">Beach Towns</a><a href="../articles.html">Guides</a><a href="../agents.html">Local Agents</a></nav>
-<a class="cta" href="../quiz-v2.html">Take the quiz</a></header>
+<a class="cta" href="../quiz-photo.html">Take the quiz</a></header>
 <main>
 <div class="wrap hero"><div><h1>Beach towns</h1><p>All 167 towns on Florida's coast, Pensacola around to Fernandina. Search by name, or narrow by coast, style and price.</p></div>
-<div class="side"><a href="../vibe-v3.html">See them on the map</a><a href="../quiz-v2.html">Not sure? Take the quiz</a></div></div>
+<div class="side"><a href="../vibe-v3.html">See them on the map</a><a href="../quiz-photo.html">Not sure? Take the quiz</a></div></div>
 <div class="bar"><div class="wrap">
 <label class="q" id="qw"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="text" placeholder="Search a town or region" aria-label="Search towns" autocomplete="off"><button type="button" id="qx" aria-label="Clear search">&times;</button></label>
 <div class="chips" id="coast"></div>
@@ -60,14 +60,14 @@ select.set{border-color:var(--ink);font-weight:600}
 <select id="pr" aria-label="Price"><option value="">Any price</option><option value="0-350">Under $350K</option><option value="350-500">$350K to $500K</option><option value="500-750">$500K to $750K</option><option value="750-99999">$750K and up</option></select>
 </div></div>
 <div class="wrap"><div class="cnt"><span id="cnt"></span><label class="so">Sort <select id="so" aria-label="Sort"><option value="coast">Along the coast</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option><option value="az">A to Z</option></select></label></div><div id="out"></div></div>
-<section class="band"><div class="wrap"><div><h2>Not sure where to start?</h2><p>Eight quick questions and we'll rank all 167 towns for you.</p></div><a href="../quiz-v2.html">Take the quiz</a></div></section>
+<section class="band"><div class="wrap"><div><h2>Not sure where to start?</h2><p>Eight quick questions and we'll rank all 167 towns for you.</p></div><a href="../quiz-photo.html">Take the quiz</a></div></section>
 </main>
 <footer class="fx">
  
  <div class="fx-main">
   <div class="fx-brand"><img src="../img/fc-logo-arch-line2.png" alt="Florida Coastal"><p>167 beach towns, Pensacola to Fernandina.</p>
    <form class="fx-sign" onsubmit="return false"><input type="email" placeholder="Email for new guides" aria-label="Email for new guides"><button aria-label="Sign up">Sign up</button></form></div>
-  <nav><b>Explore</b><a href="../vibe-v3.html">Map</a><a href="index-v2.html">Beach Towns</a><a href="../quiz-v2.html">Take the quiz</a><a href="../articles/index.html">Guides</a></nav>
+  <nav><b>Explore</b><a href="../vibe-v3.html">Map</a><a href="index-v2.html">Beach Towns</a><a href="../quiz-photo.html">Take the quiz</a><a href="../articles/index.html">Guides</a></nav>
   <nav><b>The coast</b><a href="index-v2.html#panhandle">Panhandle</a><a href="index-v2.html#gulf">Gulf Coast</a><a href="index-v2.html#keys">Florida Keys</a><a href="index-v2.html#atlantic">Atlantic Coast</a></nav>
   <nav><b>Company</b><a href="../about.html">Our story</a><a href="../scoring.html">How we score</a><a href="../agents.html">For local agents</a><a href="https://instagram.com/FloridaCoastalCo">Instagram</a></nav>
  </div>
@@ -91,7 +91,7 @@ function draw(){
  const any=S.q||S.c||S.s||S.p;
  $('cnt').innerHTML=`<b>${L.length}</b> ${L.length==1?'town':'towns'}${any?'':' on the coast'}${any?' &nbsp;<button id="rs">Clear all</button>':''}`;
  if($('rs'))$('rs').onclick=()=>{Object.assign(S,{q:'',c:'',s:'',p:''});$('q').value='';$('sty').value='';$('pr').value='';sync();draw()};
- if(!L.length){$('out').innerHTML=`<div class="empty">No towns match that yet. <a href="#" id="rs2">Clear the filters</a> or <a href="../quiz-v2.html">take the quiz</a>.</div>`;$('rs2').onclick=e=>{e.preventDefault();$('rs').click()};return}
+ if(!L.length){$('out').innerHTML=`<div class="empty">No towns match that yet. <a href="#" id="rs2">Clear the filters</a> or <a href="../quiz-photo.html">take the quiz</a>.</div>`;$('rs2').onclick=e=>{e.preventDefault();$('rs').click()};return}
  if(S.o=='coast'){const byC=CO.filter(([k])=>L.some(t=>t.c==k));
   $('out').innerHTML=byC.map(([k,n,sub])=>{const G=L.filter(t=>t.c==k).sort((a,b)=>cOrd(a)-cOrd(b));return `<section class="sec" id="${k}"><h2>${n} <small>${G.length} ${G.length==1?'town':'towns'}</small></h2><p class="sub">${sub}</p><div class="grid">${G.map(card).join('')}</div></section>`}).join('')}
  else{const f={lo:(a,b)=>(a.m||1e9)-(b.m||1e9),hi:(a,b)=>(b.m||0)-(a.m||0),az:(a,b)=>a.n.localeCompare(b.n)}[S.o];$('out').innerHTML=`<div class="grid">${L.slice().sort(f).map(card).join('')}</div>`}}
