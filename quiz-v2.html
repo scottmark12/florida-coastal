@@ -253,7 +253,34 @@ body.quiz .rdd{display:none!important}body.quiz.sliders .qr h1,body.quiz .qr h1{
 }
 </style>
 <div id="qz"></div>
-<div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
+
+<style>
+/* Live quiz template, new design (Nov 10) */
+@media (min-width:901px){
+body.quiz .map{left:0}
+body.quiz .res{left:50%;top:50%;transform:translate(-50%,-50%);width:480px;padding:26px 24px 20px;border-radius:16px;max-height:calc(100% - 48px)}
+}
+.qhd{text-align:center;margin:2px 0 18px}.qhd h1{font-family:'DM Sans',sans-serif;font-weight:500;letter-spacing:-.02em;font-size:28px;line-height:1.15;margin:0 0 6px;color:var(--ink)}.qhd p{margin:0;color:#6B7678;font-size:15.5px}
+.qtop{gap:12px}.qtop .qb{font-size:20px;line-height:1;padding:2px 4px 2px 0}
+.qbar{display:flex;gap:5px;height:4px;background:none;overflow:visible}.qbar i{flex:1;height:4px;border-radius:2px;background:#E4E0D8;transition:background .25s;width:auto!important}
+.qbar i.done{background:#152A2E}.qbar i.cur{background:#6E97A8}
+.qn{font-size:14px;color:#4E5D60;white-space:nowrap}.qn b{color:var(--ink);font-weight:600}
+.qq{font-family:'DM Sans',sans-serif!important;font-weight:500!important;letter-spacing:-.02em;font-size:24px;line-height:1.2;text-align:center;margin:20px 0 14px}
+.qopts{display:flex;flex-direction:column;gap:8px;margin:0}
+.qo{flex-direction:row;align-items:center;gap:14px;padding:13px 16px;border-radius:10px;background:#F6F4F0;border:1px solid transparent}
+.qo:hover{background:#fff;border-color:#CFCAC0;box-shadow:none}
+.qo.on{background:#fff;border-color:#152A2E;box-shadow:0 0 0 1px #152A2E}
+.qo .rd{flex:0 0 18px;width:18px;height:18px;border-radius:50%;border:1.5px solid #B8B2A7;box-sizing:border-box;position:relative}
+.qo.on .rd{border-color:#152A2E}.qo.on .rd:after{content:"";position:absolute;inset:3px;border-radius:50%;background:#152A2E}
+.qo .tx{padding:0}.qo b{font-size:16px;font-weight:600}.qo small{display:block!important;font-size:14px;margin-top:2px}
+.qalt{display:block;text-align:center;margin-top:14px;font-size:14.5px;color:#4E5D60;text-underline-offset:3px}
+.qfit{display:none}
+@media (max-width:900px){
+ body.quiz .mapw{height:34vh}body.quiz .zoom{display:none!important}
+ body.quiz .res{border-radius:16px 16px 0 0;margin-top:-18px;position:relative;z-index:5;background:#fff;padding:22px 20px 26px;box-shadow:0 -6px 20px rgba(21,42,46,.12)}
+ .qhd h1{font-size:25px}.qq{font-size:22px}
+}
+</style><div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
 <div class="f"><select id="sty"></select><select id="pmin" class="box"><option value="0">$ No min</option><option value="200">$200K</option><option value="300">$300K</option><option value="500">$500K</option><option value="1000">$1M</option></select><span class="dash">&ndash;</span><select id="pmax" class="box"><option value="99999">$ No max</option><option value="300">$300K</option><option value="500">$500K</option><option value="750">$750K</option><option value="1000">$1M</option></select></div>
 <div class="cnt"><span id="n"></span><label class="so">Sort: <select id="sort"><option value="coast">Along the coast</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option></select></label></div>
 <div class="seeall" id="seeall"></div><div class="tiles" id="tiles"></div><div class="sl" id="sl"></div><div class="grid" id="grid"></div></div></div>
@@ -462,7 +489,7 @@ const SQ=[{"q":"Small town or city?","k":"pace","o":[["Right in the middle of it
 const WV=[0,1,3,9],MISS={1:.55,2:.75},MISS2={1:.8,2:.92},CATMULT={afford:1.5},
  PACE=[[1,2],[2,3],[3,4],[5,5]],PACE_MISS={2:.75,3:.55,4:.55},
  BUDGET=[["Under $350K",4],["$350K to $500K",3],["$500K to $750K",2],["$750K and up",1]],BUDGET_W=9,BUDGET_MISS={1:.7,2:.45,3:.3},BUDGET_TOP=[350,500,750,1100];
-const Q={step:-1,ans:new Array(SQ.length).fill(undefined),done:false};
+const Q={step:0,ans:new Array(SQ.length).fill(undefined),done:false};
 const qA=k=>{const i=SQ.findIndex(q=>q.k===k),a=Q.ans[i];return a!=null&&SQ[i].o[a]?SQ[i].o[a][3]:null};
 function qW(){const e={};let boat=false;Q.ans.forEach((a,i)=>{const q=SQ[i];if(a!=null&&!q.k&&q.o[a])Object.entries(q.o[a][3]).forEach(([k,v])=>{k==='boat'?boat=true:e[k]=Math.min(3,(e[k]||0)+v)})});const b=qA('budget');if(boat&&b!=null&&BUDGET[b][1]>1)e.afford=Math.max(e.afford||0,1);return e}
 function qFit(t,W,pace,bud){const d=QD[t.id];let a=0,s=0,o=1;
@@ -486,14 +513,14 @@ const qp=(t)=>Math.round(100*(t.qf||0));
 function qStrong(){return T.filter(t=>qp(t)>=70).length}
 function qHTML(){
  if(Q.done)return qRes();
- if(Q.step<0)return `<div class="qin"><div class="ey">The quiz</div><h1>Find your Florida beach town</h1><p>Eight quick questions about how you want to live. We rank all 167 towns on your answers and put your top 5 on the map.</p><button class="go" onclick="qGo(0)">Start the quiz</button><ul><li><b>2</b>About two minutes, one tap per question</li><li><b>167</b>Every beach town from Pensacola to Fernandina</li><li><b>5</b>Your top towns on the map, no email needed</li></ul></div>`;
- const q=SQ[Q.step],a=Q.ans[Q.step],ph=q.ph,odd=q.o.length%2;
- const opts=q.o.map((o,i)=>`<button class="qo${a===i?' on':''}${ph&&odd&&i===q.o.length-1?' wide':''}" aria-pressed="${a===i}" onclick="qPick(${i})">${ph&&ph[i]?`<span class="ph" style="background-image:url('img/${ph[i]}')"></span>`:''}<span class="tx"><b>${o[0]}</b>${o[1]?`<small>${o[1]}</small>`:''}</span></button>`).join('');
- const n=qStrong();
- return `<div class="qtop"><button class="qb" onclick="qGo(${Q.step-1})"${Q.step<0?' disabled':''}>&larr; Back</button><div class="qbar"><i style="width:${(Q.step+1)/SQ.length*100}%"></i></div><span>${Q.step+1} of ${SQ.length}</span></div>
- <h2 class="qq">${q.q}</h2>${q.note?`<p class="qnote">${q.note}</p>`:''}
- <div class="qopts${ph?'':' txt'}">${opts}</div>
- <div class="qfit">${qAny()?(n?`<b>${n} towns</b> are a strong match so far. They light up on the map as you go.`:`Keep going. Your matches sharpen with every answer.`):`Your matches light up on the map as you answer.`}</div>`}
+ const q=SQ[Q.step],a=Q.ans[Q.step],n=qStrong(),first=Q.step===0&&!qAny();
+ const bars=SQ.map((_,i)=>`<i class="${i<Q.step?'done':i===Q.step?'cur':''}"></i>`).join('');
+ const opts=q.o.map((o,i)=>`<button class="qo${a===i?' on':''}" aria-pressed="${a===i}" onclick="qPick(${i})"><span class="rd"></span><span class="tx"><b>${o[0]}</b>${o[1]?`<small>${o[1]}</small>`:''}</span></button>`).join('');
+ return `${first?`<div class="qhd"><h1>Your top 5 Florida beach towns in 2 minutes</h1><p>8 quick taps. Free.</p></div>`:''}
+ <div class="qtop">${Q.step>0?`<button class="qb" onclick="qGo(${Q.step-1})" aria-label="Back">&larr;</button>`:''}<div class="qbar">${bars}</div><span class="qn">${qAny()?`<b>${n}</b> towns fit`:`${Q.step+1} of ${SQ.length}`}</span></div>
+ <h2 class="qq">${q.q}</h2>
+ <div class="qopts">${opts}</div>
+ <a class="qalt" href="vibe-v3.html">Or browse the map instead</a>`}
 function qStyle(L5,L15){const c={};L15.forEach((t,i)=>t.v.forEach(v=>c[v]=(c[v]||0)+(i<5?2:1)));return Object.keys(c).sort((a,b)=>c[b]-c[a])[0]}
 const WHYP={walk:"Walk to coffee and dinner",beach:"A sandy beach close by",sand:"Clear, calm water to wade into",water:"Life on the water",dock:"Homes with their own dock",nightlife:"Plenty open late",dining:"Good restaurants",meet:"A full calendar of clubs and events",outdoors:"Paddling, trails and springs nearby",airport:"An easy drive to a big airport",condo:"Lots of condos and townhomes",house:"Neighborhoods of houses with yards"};
 function qWhy(t,n){const d=QD[t.id],W=qW(),out=[];
@@ -515,7 +542,7 @@ function qRes(){const L=qRank(),L5=L.slice(0,5),k=qStyle(L5,L.slice(0,15)),t=L5[
 function qDraw(){$('qz').innerHTML=qHTML();qBind();document.body.classList.toggle('qres',Q.done);$('res').scrollTop=0}
 function qGo(i){if(i<-1)return;Q.step=i;qDraw()}
 function qPick(i){Q.ans[Q.step]=i;qRank();qMap();qDraw();setTimeout(()=>{if(Q.step<SQ.length-1)qGo(Q.step+1);else qDone()},260)}
-function qDone(){Q.done=true;qRank();qMap();qDraw();requestAnimationFrame(()=>{render()})}
+function qDone(){qRank();qMap();const a=Q.ans.map(x=>x==null?'x':x).join('');setTimeout(()=>{location.href='quiz-results-v3.html?a='+a},700)}
 function qOpen(id){const t=T.find(t=>t.id==id);S.pinned=id;openPop(t,true);document.querySelectorAll('.t5r').forEach(r=>r.classList.toggle('on',r.dataset.id==id))}
 function qRestart(){Q.ans.fill(undefined);Q.done=false;Q.step=0;closePop();S.sv={};SLK.forEach(([k])=>S.sv[k]=50);qDraw()}
 function qSend(){const e=$('qse').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){$('qse').style.borderColor='#B3261E';$('qse').focus();return}
