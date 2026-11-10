@@ -695,11 +695,7 @@ body.reveal #qdots .qbig:nth-of-type(2){animation-delay:.45s!important}
 body.reveal #qdots .qbig:nth-of-type(3){animation-delay:.8s!important}
 body.reveal #qdots .qbig:nth-of-type(4){animation-delay:1.15s!important}
 body.reveal #qdots .qbig:nth-of-type(5){animation-delay:1.5s!important}
-#qrv{position:fixed;left:0;right:0;bottom:64px;z-index:30;text-align:center;color:#fff;opacity:0;transform:translateY(10px);transition:opacity .8s ease 1.9s,transform .8s ease 1.9s;pointer-events:none}
-body.reveal #qrv{opacity:1;transform:none}
-#qrv h2{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:44px;margin:0 0 6px}
-#qrv p{margin:0;font-size:15px;opacity:.8}
-@media (max-width:900px){#qph{position:fixed;height:46vh;bottom:auto}#qcap{position:fixed;top:calc(40vh - 34px);bottom:auto;right:16px;font-size:11px}#qrv{bottom:auto;top:68vh}#qrv h2{font-size:34px}body.reveal,body.reveal .main{background:#1A1B1B!important}body.reveal .mapw{height:64vh!important}body.reveal .qlogo{display:none!important}}
+@media (max-width:900px){#qph{position:fixed;height:46vh;bottom:auto}#qcap{position:fixed;top:calc(40vh - 34px);bottom:auto;right:16px;font-size:11px}body.reveal,body.reveal .main{background:#1A1B1B!important}body.reveal .qlogo{display:none!important}}
 
 body.qphoto .qlogo{top:28px!important;bottom:auto!important}
 #qcap{right:auto!important;left:32px;bottom:30px}
@@ -753,8 +749,24 @@ body.qphoto:not(.qhas) #qph:after{background:linear-gradient(180deg,rgba(0,0,0,.
 body.qphoto #res .qhd h1{text-shadow:0 2px 24px rgba(0,0,0,.55),0 1px 3px rgba(0,0,0,.35)!important}
 html body.qphoto #res{display:flex;flex-direction:column}html body.qphoto #res #qz{flex:1;display:flex;flex-direction:column;min-height:0}html body.qphoto #res .qopts{flex:1;display:flex;flex-direction:column}html body.qphoto #res .qo{flex:1;align-items:center}
 html body.qphoto #res .qhd,html body.qphoto #res .qalt{display:none!important}
+
+#qrv{position:fixed;inset:0;z-index:30;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:0 28px;background:radial-gradient(ellipse 70% 55% at 50% 45%,rgba(18,19,19,.78),rgba(18,19,19,.25) 100%);opacity:0;transform:none;transition:opacity .7s ease .5s;pointer-events:none;height:100vh;height:100dvh}
+body.reveal #qrv{opacity:1;pointer-events:auto}
+#qrv .ey{font-size:12px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#F29A63;margin-bottom:14px}
+#qrv h2{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500;font-size:40px;line-height:1.12;max-width:620px;margin:0 0 26px;color:#fff;letter-spacing:-.01em}
+#qrv .qrvbar{padding:0!important;border:0!important;flex:none!important;width:min(420px,80vw);height:4px;border-radius:4px;background:rgba(255,255,255,.18);overflow:hidden;margin-bottom:18px}
+#qrv .qrvbar i{display:block;height:100%;width:0;background:#E07A3F;border-radius:4px}
+body.reveal #qrv .qrvbar i{width:100%;transition:width 3.4s cubic-bezier(.4,0,.2,1) .7s}
+#qrv p{margin:0 0 18px;font-size:15px;color:rgba(255,255,255,.75)}
+#qrv .chips{display:flex;flex-wrap:wrap;justify-content:center;gap:10px;max-width:560px;min-height:90px}
+#qrv .chip{display:inline-flex;align-items:center;gap:8px;padding:9px 16px;border-radius:999px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);color:#fff;font-size:14.5px;font-weight:500;opacity:0;transform:translateY(8px);transition:opacity .4s,transform .4s}
+#qrv .chip.in{opacity:1;transform:none}
+#qrv .chip:before{content:"\2713";color:#F29A63;font-weight:700}
+#qrv .skip{margin-top:30px;color:#fff;font-weight:600;font-size:15px;text-decoration:none;opacity:.85}
+#qrv .skip:hover{opacity:1}
+@media (max-width:900px){#qrv{padding:0 22px}#qrv h2{font-size:30px}#qrv .chip{font-size:13.5px;padding:8px 13px}body.reveal .mapw{height:64vh!important}}
 </style>
-<div id="qrv"><h2>Your top 5</h2><p>Lining up your shortlist</p></div>
+<div id="qrv"><div class="ey">Find your mile</div><h2>Scoring <span id="qrvn">167</span> beach towns on how you want to live</h2><div class="qrvbar"><i></i></div><p>Weighing your answers</p><div class="chips" id="qrvc"></div><a class="skip" id="qrvs" href="#">Skip to my towns &rarr;</a></div>
 <script>
 (function(){
 const PH=[['img/g/30a.jpg','30A'],['img/g/sarasota-beach.jpg','Sarasota'],['img/g/apalachicola.jpg','Apalachicola'],['img/g/sanibel-island.jpg','Sanibel Island'],['img/g/st-augustine.jpg','St. Augustine'],['img/g/skyway-arrival.jpg','Sunshine Skyway'],['img/g/apalachicola-home.jpg','Apalachicola'],['img/g/water-dock-chairs.jpg','']];
@@ -784,8 +796,13 @@ qDone=function(){window.QLOCK=false;qRank();
  document.body.classList.add('reveal');window.dispatchEvent(new Event('resize'));
  setTimeout(()=>{const[w]=size();let v;if(w<901){v=fit([-87.6,-79.9,24.45,30.75],.04);v[1]-=.17*v[3]}else v=fit([-87.6,-79.95,24.5,31.0],.05);v.__q=1;go(v,0)},60);qPrev=new Set();
  setTimeout(()=>{qPrev=new Set();try{qDots()}catch(e){}},700);
- const a=Q.ans.map(x=>x==null?'x':x).join('');
- setTimeout(()=>{location.href='quiz-results-v3.html?a='+a},5200)};
+ const a=Q.ans.map(x=>x==null?'x':x).join(''),go2=()=>{location.href='quiz-results-v3.html?a='+a};
+ document.getElementById('qrvn').textContent=T.length;
+ const lab=Q.ans.map((x,i)=>x==null?null:SQ[i].o[x][0]).filter(t=>t&&!/^Not sure/.test(t));
+ const c=document.getElementById('qrvc');c.innerHTML=lab.slice(0,4).map(t=>`<span class="chip">${t}</span>`).join('')+(lab.length>4?`<span class="chip">+${lab.length-4} more</span>`:'');
+ [...c.children].forEach((e,i)=>setTimeout(()=>e.classList.add('in'),1000+i*420));
+ document.getElementById('qrvs').onclick=e=>{e.preventDefault();go2()};
+ setTimeout(go2,4800)};
 })();
 </script>
 </body></html>
