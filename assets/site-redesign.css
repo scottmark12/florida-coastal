@@ -4519,7 +4519,7 @@ html body .tov-by{font-family:'Libre Caslon Text',Georgia,serif!important;font-s
 /* Color only from photos: newsletter band goes white with a hairline */
 html body .news{background:#FFFDF9!important;border-top:1px solid #152A2E!important}
 /* ===== HERO PHOTO (stand in for a future video loop) ===== */
-html body .dk-hero{background:linear-gradient(90deg,rgba(255,253,249,.92) 0%,rgba(255,253,249,.78) 30%,rgba(255,253,249,0) 58%),url(/img/grayton-beach.jpg) center 62%/cover no-repeat!important;padding:0!important;min-height:620px;display:flex;align-items:center;border-bottom:0!important}
+html body .dk-hero{background:linear-gradient(90deg,rgba(255,253,249,.92) 0%,rgba(255,253,249,.78) 30%,rgba(255,253,249,0) 58%),url(/img/c/grayton-beach.jpg) center 62%/cover no-repeat!important;padding:0!important;min-height:620px;display:flex;align-items:center;border-bottom:0!important}
 html body .dk-hero .wrap{width:100%}
 html body .dk-hero .dk-l{max-width:620px;padding:96px 0 104px}
 html body .dk-hero .hero-note{color:#152A2E!important}
@@ -4546,7 +4546,7 @@ html body .hiw-n{color:#152A2E!important}
 html body .ed-flag{border-top:1px solid #E4E0D8!important}
 html body .ed-latest .ed-lbl{border-bottom-color:#E4E0D8!important}
 /* hero: Compass style, white serif centered on the photo */
-html body .dk-hero{background:linear-gradient(180deg,rgba(10,20,22,.18) 0%,rgba(10,20,22,.34) 55%,rgba(10,20,22,.42) 100%),url(/img/grayton-beach.jpg) center 62%/cover no-repeat!important;min-height:680px!important;text-align:center}
+html body .dk-hero{background:linear-gradient(180deg,rgba(10,20,22,.18) 0%,rgba(10,20,22,.34) 55%,rgba(10,20,22,.42) 100%),url(/img/c/grayton-beach.jpg) center 62%/cover no-repeat!important;min-height:680px!important;text-align:center}
 html body .dk-hero .dk-l{max-width:900px!important;margin:0 auto!important;padding:120px 0!important}
 html body .dk-hero .dk-eyebrow{color:rgba(255,255,255,.9)!important}
 html body .dk-hero h1{color:#fff!important;font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;font-size:clamp(48px,5vw,72px)!important;line-height:1.06!important;letter-spacing:0!important}
@@ -4614,7 +4614,7 @@ html body .cm-lbl,html body .ed-flag h2,html body .ed-lbl,html body .dk-cue span
 html body .cm-link,html body .ed-flag>a{font-size:15px!important;letter-spacing:.06em!important}
 html body .cm-pill{font-size:13px!important;letter-spacing:.06em!important}
 /* 4. Hero text holds up on any photo or video */
-html body .dk-hero{background:radial-gradient(ellipse 60% 55% at 50% 50%,rgba(10,20,22,.42),rgba(10,20,22,0) 75%),linear-gradient(180deg,rgba(10,20,22,.15),rgba(10,20,22,.35)),url(/img/grayton-beach.jpg) center 62%/cover no-repeat!important}
+html body .dk-hero{background:radial-gradient(ellipse 60% 55% at 50% 50%,rgba(10,20,22,.42),rgba(10,20,22,0) 75%),linear-gradient(180deg,rgba(10,20,22,.15),rgba(10,20,22,.35)),url(/img/c/grayton-beach.jpg) center 62%/cover no-repeat!important}
 html body .dk-hero h1,html body .dk-hero .dk-eyebrow,html body .dk-hero .hero-note{text-shadow:0 1px 18px rgba(0,0,0,.35)}
 html body .dk-hero .dk-eyebrow{font-size:14px!important;letter-spacing:.1em!important;color:#fff!important}
 /* 5. Email field looks like a field */
@@ -4638,7 +4638,7 @@ html body .news input[type=email],html body .news form input[type=email]{border:
 .st-go .btn{background:#152A2E!important;color:#fff!important;border-radius:999px!important;padding:16px 28px!important;font:500 16px/1 'DM Sans',sans-serif!important}
 .st-go span{font:400 16px/1.4 'DM Sans',sans-serif;color:#3E4F52}
 /* ===== Compass rhythm: story photo band + what we do (Nov 9) ===== */
-.sband{background:radial-gradient(ellipse 55% 60% at 50% 50%,rgba(10,20,22,.45),rgba(10,20,22,.1) 80%),linear-gradient(180deg,rgba(10,20,22,.1),rgba(10,20,22,.3)),url(/img/30a-beach.jpg) center 70%/cover no-repeat;min-height:640px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
+.sband{background:radial-gradient(ellipse 55% 60% at 50% 50%,rgba(10,20,22,.45),rgba(10,20,22,.1) 80%),linear-gradient(180deg,rgba(10,20,22,.1),rgba(10,20,22,.3)),url(/img/c/30a-beach.jpg) center 70%/cover no-repeat;min-height:640px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff}
 .sb-in{max-width:760px;padding:96px 24px}
 .sb-lbl{font:500 13.5px/1 'DM Sans',sans-serif;letter-spacing:.1em;text-transform:uppercase;margin-bottom:22px;text-shadow:0 1px 14px rgba(0,0,0,.35)}
 .sband h2{font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;font-size:60px!important;line-height:1.06!important;color:#fff!important;margin:0 0 24px!important;text-shadow:0 1px 18px rgba(0,0,0,.3)}
@@ -4808,7 +4808,7 @@ body[data-over] .dk-hero{min-height:760px!important;padding-top:90px!important}
 html body[data-over] header.top .navcta,html body[data-over] header.top a.btn.btn-accent.navcta{color:#fff!important;border:1.5px solid #fff!important;background:transparent!important}
 /* header over hero: no header gradient, fade lives in the hero photo */
 html body[data-over] header.top{background:transparent!important}
-html body[data-over] .dk-hero{background:linear-gradient(180deg,rgba(10,20,22,.34) 0px,rgba(10,20,22,.14) 120px,rgba(10,20,22,0) 220px),radial-gradient(ellipse 60% 55% at 50% 55%,rgba(10,20,22,.42),rgba(10,20,22,0) 75%),linear-gradient(180deg,rgba(10,20,22,.12),rgba(10,20,22,.35)),url(/img/grayton-beach.jpg) center 62%/cover no-repeat!important}
+html body[data-over] .dk-hero{background:linear-gradient(180deg,rgba(10,20,22,.34) 0px,rgba(10,20,22,.14) 120px,rgba(10,20,22,0) 220px),radial-gradient(ellipse 60% 55% at 50% 55%,rgba(10,20,22,.42),rgba(10,20,22,0) 75%),linear-gradient(180deg,rgba(10,20,22,.12),rgba(10,20,22,.35)),url(/img/c/grayton-beach.jpg) center 62%/cover no-repeat!important}
 html body[data-over] .navsearch{display:flex!important;align-items:center!important;height:44px}
 html body[data-over] .navsearch button{display:flex!important;align-items:center;justify-content:center;width:40px;height:40px;padding:0!important;margin:0!important}
 body[data-logo] .fc-foot[src*="stack-gray"]{height:68px}
@@ -4957,8 +4957,8 @@ html body[data-ph] footer.ft2{padding-bottom:90px!important}
 html body[data-ph] section.cstyles .cs-grid{margin-left:-20px!important;margin-right:-20px!important;padding-left:20px!important;padding-right:20px!important;scroll-padding-left:20px}
 }
 /* graded photo set (data-grade) */
-html body[data-grade] .dk-hero{background:linear-gradient(180deg,rgba(10,20,22,.34) 0px,rgba(10,20,22,.14) 120px,rgba(10,20,22,0) 220px),radial-gradient(ellipse 60% 55% at 50% 55%,rgba(10,20,22,.42),rgba(10,20,22,0) 75%),linear-gradient(180deg,rgba(10,20,22,.12),rgba(10,20,22,.35)),url(/img/g/grayton-beach.jpg) center 62%/cover no-repeat!important}
-html body[data-grade] .sband{background:radial-gradient(ellipse 55% 60% at 50% 50%,rgba(10,20,22,.45),rgba(10,20,22,.1) 80%),linear-gradient(180deg,rgba(10,20,22,.1),rgba(10,20,22,.3)),url(/img/g/30a-beach.jpg) center 70%/cover no-repeat!important}
+html body[data-grade] .dk-hero{background:linear-gradient(180deg,rgba(10,20,22,.34) 0px,rgba(10,20,22,.14) 120px,rgba(10,20,22,0) 220px),radial-gradient(ellipse 60% 55% at 50% 55%,rgba(10,20,22,.42),rgba(10,20,22,0) 75%),linear-gradient(180deg,rgba(10,20,22,.12),rgba(10,20,22,.35)),url(/img/c/grayton-beach.jpg) center 62%/cover no-repeat!important}
+html body[data-grade] .sband{background:radial-gradient(ellipse 55% 60% at 50% 50%,rgba(10,20,22,.45),rgba(10,20,22,.1) 80%),linear-gradient(180deg,rgba(10,20,22,.1),rgba(10,20,22,.3)),url(/img/c/30a-beach.jpg) center 70%/cover no-repeat!important}
 /* hero quiz (data-hq) */
 html body[data-hq] .hx-back{display:none!important}
 html body[data-hq].is-back .hx-new{display:none!important}
@@ -5050,21 +5050,21 @@ html body[data-short] .hp-guides .ed-latest li:nth-child(n+5){display:none!impor
 html body[data-short] .hp-guides .ed-row{display:none!important}
 }
 /* photo behind the guide card (data-newsph) */
-html body[data-newsph] .news{background:#F2EFEA url(/img/g/water-dock-chairs.jpg) center 55%/cover no-repeat!important;padding:120px 0!important;min-height:660px;display:flex;align-items:center}
+html body[data-newsph] .news{background:#F2EFEA url(/img/c/water-dock-chairs.jpg) center 55%/cover no-repeat!important;padding:120px 0!important;min-height:660px;display:flex;align-items:center}
 html body[data-newsph] .news .wrap.grid{width:560px!important;max-width:560px!important;margin:0 max(24px,calc((100vw - 1140px)/2)) 0 auto!important;grid-template-columns:1fr!important;gap:28px!important;padding:52px 56px!important;box-shadow:0 24px 60px rgba(10,20,22,.22)}
 html body[data-newsph] .news .note{margin:12px 0 0 0!important}
 html body[data-newsph] #newsform{display:flex!important;gap:10px}
 html body[data-newsph] #newsform input[type=email]{flex:1;min-width:0}
 @media (max-width:760px){
-html body[data-newsph] .news{background:#F2EFEA url(/img/g/water-dock-chairs.jpg) center top/100% auto no-repeat!important;padding:210px 0 48px!important;min-height:0;display:block}
+html body[data-newsph] .news{background:#F2EFEA url(/img/c/water-dock-chairs.jpg) center top/100% auto no-repeat!important;padding:210px 0 48px!important;min-height:0;display:block}
 html body[data-newsph] .news .wrap.grid{width:auto!important;max-width:none!important;margin:0 16px!important;padding:32px 24px!important}
 html body[data-newsph] #newsform{flex-direction:column}
 }
-@media (min-width:761px){html body[data-newsph] .news{background:#F2EFEA url(/img/g/water-dock-chairs.jpg) 100% 58%/135% auto no-repeat!important}}
+@media (min-width:761px){html body[data-newsph] .news{background:#F2EFEA url(/img/c/water-dock-chairs.jpg) 100% 58%/135% auto no-repeat!important}}
 /* Unsplash dock photo (data-newsph2): chairs bottom right, card on the left */
-html body[data-newsph2] .news{background:#F2EFEA url(/img/g/unsplash-dock-chairs.jpg) center 70%/cover no-repeat!important}
+html body[data-newsph2] .news{background:#F2EFEA url(/img/c/water-dock-chairs.jpg) center 70%/cover no-repeat!important}
 html body[data-newsph2] .news .wrap.grid{margin:0 auto 0 max(24px,calc((100vw - 1140px)/2))!important}
-@media (max-width:760px){html body[data-newsph2] .news{background:#F2EFEA url(/img/g/unsplash-dock-chairs.jpg) 80% top/auto 300px no-repeat!important;padding-top:230px!important}html body[data-newsph2] .news .wrap.grid{margin:0 16px!important}}
+@media (max-width:760px){html body[data-newsph2] .news{background:#F2EFEA url(/img/c/water-dock-chairs.jpg) 80% top/auto 300px no-repeat!important;padding-top:230px!important}html body[data-newsph2] .news .wrap.grid{margin:0 16px!important}}
 @media (max-width:760px){html body[data-newsph2] .news{background-position:78% top!important;background-size:auto 320px!important;padding-top:296px!important}}
 /* Vibe Map in the new brand (map-v2.html, body[data-v2]) */
 html body[data-v2] header.top .v2l{height:46px!important;width:auto!important}
