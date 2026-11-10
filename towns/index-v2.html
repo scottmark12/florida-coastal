@@ -46,13 +46,51 @@ select.set{border-color:var(--ink);font-weight:600}
 @media(max-width:700px){nav.top{display:none}.cta{margin-left:auto;border:0}.wrap{padding-left:20px;padding-right:20px}.hero{display:block;padding-top:32px;padding-bottom:20px}.hero h1{font-size:40px}.hero p{font-size:16.5px}.hero .side{margin-top:16px}
 .bar .wrap{gap:10px}.q{max-width:none;flex-basis:100%}.chips{overflow-x:auto;flex:1 1 100%;scrollbar-width:none;margin:0 -20px;padding:0 20px}.chips::-webkit-scrollbar{display:none}
 .bar .wrap{flex-wrap:wrap}.bar select{flex:1;min-width:0;width:auto!important;padding-right:28px;background-position:right 10px center}.cnt{flex-wrap:wrap;gap:10px}#so{width:180px}.grid{grid-template-columns:1fr;gap:32px}.sec h2{font-size:30px}.band .wrap{display:block}.band a{display:inline-block;margin-top:18px}}
-</style><script src="../assets/dm-titles.js"></script></head><body>
-<header><a class="logo" href="../home-v2.html"><img src="../img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
+</style><script src="../assets/dm-titles.js"></script><style>
+header.ov{position:absolute;left:0;right:0;top:0;background:none;border:0;color:#fff}
+header.ov nav.top a.on{box-shadow:inset 0 -2px #fff}header.ov .cta{border-color:rgba(255,255,255,.35);color:#fff}
+.bh{position:relative;min-height:min(86vh,820px);display:flex;flex-direction:column;justify-content:flex-end;color:#fff;overflow:hidden;background:#1A1B1B}
+.bh-ph{position:absolute;inset:0;background:center 60%/cover}
+.bh-sh{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.42) 0,rgba(0,0,0,.28) 35%,rgba(0,0,0,.3) 60%,rgba(10,12,12,.78) 100%)}.bh h1,.bh-sub,.bh-ey{text-shadow:0 2px 20px rgba(0,0,0,.25)}
+.bh-in{position:relative;width:100%;padding-top:140px}
+.bh-ey{font-size:13px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;margin:0 0 16px;opacity:.9}
+.bh h1{font-family:'DM Sans',sans-serif;font-weight:500;font-size:60px;line-height:1.04;letter-spacing:-.02em;margin:0;max-width:820px}
+.bh-sub{font-size:19px;line-height:1.5;margin:18px 0 0;max-width:580px;opacity:.92}
+.bh-btns{display:flex;gap:12px;margin-top:28px;flex-wrap:wrap}
+.bh-b1,.bh-b2{text-decoration:none;font-weight:600;font-size:16px;border-radius:999px;padding:15px 26px;white-space:nowrap}
+.bh-b1{background:#fff;color:#152A2E}.bh-b2{color:#fff;background:rgba(18,20,20,.32);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.bh-coasts{position:relative;width:100%;display:grid;grid-template-columns:repeat(4,1fr);gap:14px;padding-top:56px;padding-bottom:36px}
+.ct{position:relative;display:block;text-decoration:none;color:#fff;border-radius:14px;overflow:hidden;aspect-ratio:16/10;cursor:pointer;border:1px solid rgba(255,255,255,.18);background:#222;text-align:left;padding:0;font:inherit}
+.ct i{position:absolute;inset:0;background:center/cover;transition:transform .6s ease}.ct:hover i{transform:scale(1.04)}
+.ct:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 35%,rgba(0,0,0,.6))}
+.ct span{position:absolute;left:16px;right:16px;bottom:14px;z-index:1}
+.ct small{display:block;font-size:11.5px;letter-spacing:.1em;opacity:.8;margin-bottom:4px;font-variant-numeric:tabular-nums}
+.ct b{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:24px;display:block;line-height:1.1}
+.ct em{font-style:normal;font-size:13.5px;opacity:.85}
+.ct.on{outline:2px solid #fff;outline-offset:2px}
+.bar{background:rgba(255,255,255,.9)!important;backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.chip,select,.q{border-radius:999px!important}.q{height:42px!important}
+.sec{padding-top:56px!important}
+.sec .co{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--soft);font-weight:600;margin:0 0 10px;font-variant-numeric:tabular-nums}
+.sec h2{font-size:44px!important}
+.grid{gap:44px 28px!important}
+.card .ph{border-radius:14px!important;aspect-ratio:4/3.1}
+.card h3{font-size:28px!important}
+.band{background:#152A2E!important;color:#fff;position:relative;overflow:hidden}.band:before{content:"";position:absolute;inset:0;background:url('../img/g/stuart.jpg') center/cover;opacity:.35}
+.band .wrap{position:relative}.band p{color:rgba(255,255,255,.8)!important}.band a{background:#fff!important;color:#152A2E!important;border-radius:999px!important}
+@media(max-width:1000px){.bh-coasts{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:700px){.bh{min-height:0}.bh-in{padding-top:110px}.bh h1{font-size:38px}.bh-sub{font-size:16.5px}.bh-coasts{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:20px;margin:0;padding:36px 20px 26px!important;gap:10px;scrollbar-width:none}.bh-coasts::-webkit-scrollbar{display:none}.ct{flex:0 0 72%;scroll-snap-align:start}.sec h2{font-size:34px!important}}
+</style></head><body>
+<header class="ov"><a class="logo" href="../home-v2.html"><img src="../img/fc-logo-arch-line-white.png" alt="Florida Coastal"></a>
 <nav class="top"><a class="on" href="../towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="../vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="../vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="../articles/index.html" data-nav="articles">Articles</a></nav>
 <a class="cta" href="../quiz-photo.html">Take the quiz</a></header>
 <main>
-<div class="wrap hero"><div><h1>Beach towns</h1><p>All 167 towns on Florida's coast, Pensacola around to Fernandina. Search by name, or narrow by coast, style and price.</p></div>
-<div class="side"><a href="../vibe-v3.html">See them on the map</a><a href="../quiz-photo.html">Not sure? Take the quiz</a></div></div>
+<section class="bh"><div class="bh-ph" style="background-image:url('../img/g/grayton-beach.jpg')"></div><div class="bh-sh"></div>
+<div class="wrap bh-in"><p class="bh-ey">Beach Towns &middot; 167 towns &middot; 1,350 miles of coast</p>
+<h1>Every beach town in Florida, in one place.</h1>
+<p class="bh-sub">Pensacola around to Fernandina. Browse by coast, or tell us how you want to live and we'll rank them for you.</p>
+<div class="bh-btns"><a class="bh-b1" href="../quiz-photo.html">Take the quiz</a><a class="bh-b2" href="../vibe-v3.html">See them on the map</a></div></div>
+<div class="wrap bh-coasts" id="coasts"></div></section>
 <div class="bar"><div class="wrap">
 <label class="q" id="qw"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="q" type="text" placeholder="Search a town or region" aria-label="Search towns" autocomplete="off"><button type="button" id="qx" aria-label="Clear search">&times;</button></label>
 <div class="chips" id="coast"></div>
@@ -101,4 +139,12 @@ $('coast').onclick=e=>{const b=e.target.closest('.chip');if(!b)return;S.c=b.data
 $('sty').onchange=e=>{S.s=e.target.value;sync();draw()};$('pr').onchange=e=>{S.p=e.target.value;sync();draw()};$('so').onchange=e=>{S.o=e.target.value;draw()};
 {const h=location.hash.slice(1),pa=new URLSearchParams(location.search);if(pa.get('q')){S.q=pa.get('q');$('q').value=S.q}if(pa.get('style')){S.s=pa.get('style');$('sty').value=S.s}if(pa.get('price')){S.p=pa.get('price');$('pr').value=S.p}if(pa.get('sort')){S.o=pa.get('sort');$('so').value=S.o}
  sync();draw();if(h&&CO.some(c=>c[0]==h))setTimeout(()=>{const el=$(h);el&&el.scrollIntoView()},50)}
+</script><script>
+(function(){const IMG={panhandle:'../img/destin.jpg',gulf:'../img/g/sanibel-island.jpg',keys:'../img/keys-bridge.jpg',atlantic:'../img/g/st-augustine-aerial.jpg'};
+const fmt=(la,lo)=>`${Math.abs(la).toFixed(2)}° N &nbsp;${Math.abs(lo).toFixed(2)}° W`;
+const C={};CO.forEach(([k])=>{const L=T.filter(t=>t.c==k);C[k]=fmt(L.reduce((a,t)=>a+t.la,0)/L.length,L.reduce((a,t)=>a+t.lo,0)/L.length)});
+document.getElementById('coasts').innerHTML=CO.map(([k,n])=>`<button class="ct" data-k="${k}"><i style="background-image:url('${IMG[k]}')"></i><span><small>${C[k]}</small><b>${n}</b><em>${T.filter(t=>t.c==k).length} towns</em></span></button>`).join('');
+document.getElementById('coasts').onclick=e=>{const b=e.target.closest('.ct');if(!b)return;S.c=b.dataset.k;sync();draw();document.querySelector('.bar').scrollIntoView({behavior:'smooth'})};
+const d0=draw;draw=function(){d0();document.querySelectorAll('.sec').forEach(x=>{if(C[x.id]&&!x.querySelector('.co'))x.insertAdjacentHTML('afterbegin',`<p class="co">${C[x.id]}</p>`)});document.querySelectorAll('.ct').forEach(b=>b.classList.toggle('on',b.dataset.k==S.c))};draw();
+})();
 </script></body></html>
