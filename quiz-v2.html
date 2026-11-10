@@ -280,6 +280,25 @@ body.quiz .res{left:50%;top:50%;transform:translate(-50%,-50%);width:480px;paddi
  body.quiz .res{border-radius:16px 16px 0 0;margin-top:-18px;position:relative;z-index:5;background:#fff;padding:22px 20px 26px;box-shadow:0 -6px 20px rgba(21,42,46,.12)}
  .qhd h1{font-size:25px}.qq{font-size:22px}
 }
+</style>
+<style>
+/* Compass pass (Nov 10): card on the left over the Gulf, quiet rows */
+@media (min-width:901px){
+body.quiz .res{left:max(40px,calc(50vw - 660px));top:50%;transform:translateY(-50%);width:460px;padding:30px 30px 22px;border-radius:14px;box-shadow:0 12px 40px rgba(21,42,46,.16)}
+}
+
+.qhd{text-align:left;margin:0 0 22px}.qhd h1{font-size:30px;line-height:1.12;text-wrap:balance}.qhd p{font-size:16px}
+.qq{text-align:left;font-size:25px;margin:22px 0 16px;text-wrap:balance}
+.qbar i.cur{background:#152A2E;opacity:.35}
+.qopts{gap:0;border-top:1px solid #E4E0D8}
+.qo{background:#fff!important;border:0!important;border-bottom:1px solid #E4E0D8!important;border-radius:0;padding:15px 4px;box-shadow:none!important;gap:12px}
+.qo .rd{display:none}
+.qo::after{content:"\2192";margin-left:auto;font-size:18px;color:#152A2E;opacity:0;transform:translateX(-6px);transition:opacity .15s,transform .15s}
+.qo:hover::after,.qo.on::after{opacity:1;transform:none}
+.qo:hover b,.qo.on b{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+.qo b{font-size:17px}.qo small{font-size:14.5px;color:#6B7678}
+.qalt{text-align:left;margin-top:18px;color:#152A2E}
+@media (max-width:900px){.qhd h1{font-size:26px}.qq{font-size:22px}.qo{padding:14px 2px}}
 </style><div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
 <div class="f"><select id="sty"></select><select id="pmin" class="box"><option value="0">$ No min</option><option value="200">$200K</option><option value="300">$300K</option><option value="500">$500K</option><option value="1000">$1M</option></select><span class="dash">&ndash;</span><select id="pmax" class="box"><option value="99999">$ No max</option><option value="300">$300K</option><option value="500">$500K</option><option value="750">$750K</option><option value="1000">$1M</option></select></div>
 <div class="cnt"><span id="n"></span><label class="so">Sort: <select id="sort"><option value="coast">Along the coast</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option></select></label></div>
@@ -455,11 +474,11 @@ function score(first){const set=SLK.filter(([k])=>S.sv[k]!=50);
   if(nw){const b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))];go(fit([b[0]-1.3,b[1]+1.3,b[2]-.35,b[3]+.35],.04),first?0:500);return}
   const pe=$('pop'),cw=(pe.offsetWidth||320)+40,ch=(pe.offsetHeight||400)+40,KS=fit(ALL,0)[2]/w;
   const xs=P.map(t=>t.x),ys=P.map(t=>t.y),x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
-  const gl=P.some(t=>t.c!='atlantic')?195:30,ar=P.some(t=>t.c=='atlantic')?165:30,T0=62,B0=h-34;
+  const QL=window.QLEFT?QLEFT():0,gl=QL?QL+(P.some(t=>t.c!='atlantic')?150:40):(P.some(t=>t.c!='atlantic')?195:30),ar=P.some(t=>t.c=='atlantic')?165:30,T0=62,B0=h-34;
   let k=Math.max((x1-x0)/(w-gl-ar-40),(y1-y0)/(B0-T0),KS*.3),cx,cy,sx,sy,ok=false;
   for(let it=0;it<40&&!ok;it++){const bw=(x1-x0)/k,bh=(y1-y0)/k;
    sx=Math.max(gl+20+bw/2,w-ar-bw/2-10);sx=Math.min(sx,w-ar-bw/2);sy=(T0+B0)/2;cx=(x0+x1)/2;cy=(y0+y1)/2;
-   ok=P.every(t=>{const px=sx+(t.x-cx)/k,py=sy+(t.y-cy)/k;return !(px<cw+(t.c!='atlantic'?120:20)&&py>h-ch-20)});
+   ok=QL?true:P.every(t=>{const px=sx+(t.x-cx)/k,py=sy+(t.y-cy)/k;return !(px<cw+(t.c!='atlantic'?120:20)&&py>h-ch-20)});
    if(!ok){const up=P.every(t=>{const px=sx+(t.x-cx)/k,py=sy+(t.y-cy)/k-(sy-T0-bh/2);return !(px<cw+(t.c!='atlantic'?120:20)&&py>h-ch-20)});if(up){sy=T0+bh/2;ok=true;break}k*=1.07}}
   if(k>=KS){go(fit(ALL,.02),first?0:500);return}go([cx-sx*k,cy-sy*k,w*k,h*k],first?0:500)},first?0:250);if(size()[0]>=600){const t1=T.find(t=>t.id==S.top[0]);if(!S.pop||!S.top.includes(S.pop.id)||S.pop.id===S.auto||S.pop.id!==S.pinned)openPop(t1,true);S.pinned=t1.id;S.auto=t1.id}render()}
 $('sl').addEventListener('mouseover',e=>{const c=e.target.closest('.t5,.r15');const id=c?c.dataset.id:null;if(id!==S.hover){S.hover=id;if(id&&size()[0]>=600){S.pinned=id;openPop(T.find(t=>t.id==id),true)}render()}});
@@ -539,7 +558,7 @@ function qRes(){const L=qRank(),L5=L.slice(0,5),k=qStyle(L5,L.slice(0,15)),t=L5[
  <div class="qsl" id="qsl"><div style="display:flex;gap:18px;align-items:flex-start"><img src="img/shortlist-p8.webp" alt="" style="width:96px;border-radius:3px;box-shadow:0 3px 12px rgba(0,0,0,.18);flex:0 0 96px"><div><h3>Get your Florida Shortlist</h3><p>A free 8 page PDF of these 5 towns: home prices, flood heads ups, the drive to the airport and a first weekend in each.</p></div></div>
  <input id="qse" type="email" placeholder="you@example.com" autocomplete="email" aria-label="Your email"><button class="go" onclick="qSend()">Email me my Shortlist</button></div>
  <div class="qmore"><button onclick="qRestart()">Retake the quiz</button><a href="vibe-v3.html?mode=sliders&sv=${sv}">Fine tune with sliders</a></div></div>`}
-function qDraw(){$('qz').innerHTML=qHTML();qBind();document.body.classList.toggle('qres',Q.done);$('res').scrollTop=0}
+function qDraw(){$('qz').innerHTML=qHTML();document.body.classList.toggle('qhas',qAny());qBind();document.body.classList.toggle('qres',Q.done);$('res').scrollTop=0}
 function qGo(i){if(i<-1)return;Q.step=i;qDraw()}
 function qPick(i){Q.ans[Q.step]=i;qRank();qMap();qDraw();setTimeout(()=>{if(Q.step<SQ.length-1)qGo(Q.step+1);else qDone()},260)}
 function qDone(){qRank();qMap();const a=Q.ans.map(x=>x==null?'x':x).join('');setTimeout(()=>{location.href='quiz-results-v3.html?a='+a},700)}
@@ -551,8 +570,10 @@ function qSend(){const e=$('qse').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.
 function qBind(){$('qz').querySelectorAll('[data-id]').forEach(el=>{el.onmouseenter=()=>{S.hover=el.dataset.id;render()};el.onmouseleave=()=>{S.hover=null;render()}})}
 // in the quiz, a pin tap points to the town in the card instead of opening a second card
 const _op=openPop;openPop=function(t,nopan){if(!document.body.classList.contains('quiz'))return _op(t,nopan);if(nopan||!t)return;S.hover=t.id;render();const el=$('qz').querySelector(`[data-id="${t.id}"]`);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('on');setTimeout(()=>el.classList.remove('on'),1600)}};
+window.QLEFT=()=>{if(innerWidth<901)return 0;const r=$('res').getBoundingClientRect(),m=document.querySelector('.mapw').getBoundingClientRect();return Math.max(0,r.right-m.left)};
+function qStart(){const[w,h]=size(),QL=QLEFT();if(!QL){go(fit(ALL,.02),0);return}const x0=X(ALL[0]),x1=X(ALL[1]),y0=Y(ALL[3]),y1=Y(ALL[2]);const rw=w-QL-50,rh=h-60;const k=Math.max((x1-x0)/rw,(y1-y0)/rh);const sx=QL+20+rw/2,sy=h/2;go([(x0+x1)/2-sx*k,(y0+y1)/2-sy*k,w*k,h*k],0)}
 document.body.classList.add('quiz');
-{const pa=new URLSearchParams(location.search);const a=pa.get('a');if(a){a.split('').forEach((c,i)=>{if(c!=='x'&&i<SQ.length)Q.ans[i]=+c});if(pa.get('step')!=null){Q.step=+pa.get('step');qRank();qMap()}else qDone()}else{S.region='';tags();go(fit(ALL,.02),0)}}
+{const pa=new URLSearchParams(location.search);const a=pa.get('a');if(a){a.split('').forEach((c,i)=>{if(c!=='x'&&i<SQ.length)Q.ans[i]=+c});if(pa.get('step')!=null){Q.step=+pa.get('step');qRank();qMap()}else qDone()}else{S.region='';tags();requestAnimationFrame(qStart)}}
 qDraw();
 
 </script></body></html>
