@@ -707,7 +707,7 @@ body.qphoto .qlogo{top:28px!important;bottom:auto!important}
 #qmini svg{display:block;width:100%;height:auto;overflow:visible}
 body.reveal #qmini{opacity:0}
 #qmini .md{transition:r .3s}
-@media (max-width:900px){body.qphoto .qlogo{top:16px!important}#qcap{position:fixed!important;left:16px!important;top:calc(40vh - 30px)!important;bottom:auto!important}#qmini{position:fixed;width:70px;padding:0;right:14px;bottom:auto;top:calc(40vh - 112px)}}
+@media (max-width:900px){body.qphoto .qlogo{top:16px!important}#qcap{position:fixed!important;left:16px!important;top:calc(40vh - 30px)!important;bottom:auto!important}#qmini{position:static;width:64px;margin:14px auto 0;padding:0}}
 
 /* glass card */
 body.qphoto #res{background:rgba(18,20,20,.38)!important;backdrop-filter:blur(22px) saturate(1.15);-webkit-backdrop-filter:blur(22px) saturate(1.15);border:1px solid rgba(255,255,255,.16);box-shadow:0 20px 60px rgba(0,0,0,.28)!important;color:#fff}
@@ -726,6 +726,7 @@ body.qphoto #res .qo::after{color:#fff!important}
 body.bar-blue #res .qbar i.cur{background:#8CA8AF!important}body.bar-blue #res .qn b{color:#A9C3C9!important}
 body.qphoto #res .qtop .qb{color:#fff!important}
 @media (max-width:900px){body.qphoto #res{background:rgba(18,20,20,.42)!important;border-left:0;border-right:0}body.qphoto #qph{height:100vh!important}body.qphoto,body.qphoto .main{background:#1A1B1B!important}}
+#qcap{display:none!important}
 </style>
 <div id="qrv"><h2>Your top 5</h2><p>Lining up your shortlist</p></div>
 <script>
@@ -749,7 +750,8 @@ function miniDots(){const g=document.getElementById('mdots');if(!g)return;if(!qA
  T.forEach(t=>{if(ts.has(t.id)||qp(t)<70)return;h+=`<circle cx="${X(t.lo)}" cy="${Y(t.la)}" r="${2.4*ku}" fill="#E07A3F"/>`});
  top.forEach((id,i)=>{const t=T.find(x=>x.id==id);h+=`<circle cx="${X(t.lo)}" cy="${Y(t.la)}" r="${(i?4:5)*ku}" fill="#E07A3F" stroke="#fff" stroke-width="${1.3*ku}"/>`});
  g.innerHTML=h}
-const d0=qDraw;qDraw=function(){d0();show(Math.min(Q.step,PH.length-1));miniDots()};show(Q.step);miniDots();
+const mob=()=>innerWidth<901;
+const d0=qDraw;qDraw=function(){d0();if(mob())$('qz').appendChild(mini);show(Math.min(Q.step,PH.length-1));miniDots()};if(mob())$('qz').appendChild(mini);show(Q.step);miniDots();
 qDone=function(){window.QLOCK=false;qRank();
  document.body.classList.add('reveal');window.dispatchEvent(new Event('resize'));
  setTimeout(()=>{const[w]=size();let v;if(w<901){v=fit([-87.6,-79.9,24.45,30.75],.04);v[1]-=.17*v[3]}else v=fit([-87.6,-79.95,24.5,31.0],.05);v.__q=1;go(v,0)},60);qPrev=new Set();
