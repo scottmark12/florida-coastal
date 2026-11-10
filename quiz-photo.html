@@ -177,10 +177,10 @@ body.sliders .mode button{padding:8px 13px;font-size:14.5px}
  .ctl{display:none}.mode{width:100%}.mode button{flex:1;padding:8px 4px;font-size:14px}
  .pop{width:auto;left:10px!important;right:10px;bottom:10px!important;display:none;grid-template-columns:96px 1fr}.pop.on{display:grid}.pop .ph{height:100%;min-height:120px}.pop p{display:none}.pop h3{font-size:20px;padding-right:30px}.pop .bd{padding:10px 12px}.pop .go{padding:8px;margin-top:8px;font-size:14.5px}.pop .x{right:8px;top:8px;width:28px;height:28px}
 }
-</style><script src="assets/dm-titles.js"></script><style>@view-transition{navigation:auto}html{background:#1A1B1B}::view-transition-old(root),::view-transition-new(root){animation-duration:.45s}</style></head><body>
+</style><script src="assets/dm-titles.js"></script><style>@view-transition{navigation:auto}html{background:#1A1B1B}::view-transition-old(root),::view-transition-new(root){animation-duration:.45s}</style><script src="assets/fc-connect.js"></script></head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
-<nav class="top"><a href="vibe-v3.html">Map</a><a href="towns/index-v2.html">Beach Towns</a><a href="articles.html">Guides</a><a href="agents.html">Local Agents</a></nav>
+<nav class="top"><a href="vibe-v3.html">Map</a><a href="towns/index-v2.html">Beach Towns</a><a href="articles/index.html">Articles</a><a href="agents.html">Local Agents</a></nav>
 <a class="cta" href="quiz-photo.html">Take the quiz</a></header>
 <div class="main"><div class="mapw"><div class="bar" id="bar" style="display:none"></div>
 <div class="map" id="mapbox"><svg id="map"><g id="base"></g><g id="ov"></g></svg>
@@ -795,9 +795,11 @@ function miniDots(){const g=document.getElementById('mdots');if(!g)return;if(!qA
 const mob=()=>innerWidth<901;
 const SUBS={3:['Sand and water right out front','Close enough to ride over with a towel','Easy to get to whenever I want'],4:{2:'People I know by name, and that is plenty'},5:['I want an airport close by','A decent drive to the airport is fine','I can make a day of getting there'],7:['Keeping costs low','A comfortable middle','Room to stretch','Open to the top end']};
 Object.entries(SUBS).forEach(([qi,m])=>Object.entries(m).forEach(([oi,t])=>{const o=SQ[qi]&&SQ[qi].o[oi];if(o&&!o[1])o[1]=t}));
-const d0=qDraw;qDraw=function(){d0();show(Math.min(Q.step,PH.length-1));miniDots()};if(mob()){const r=$('res');r.parentElement.insertBefore(mini,r.nextSibling);const cen=()=>{mini.style.transform='none';const b=mini.getBoundingClientRect();mini.style.transform=`translateX(${innerWidth/2-(b.left+b.width/2)}px)`};requestAnimationFrame(cen);setTimeout(cen,400);addEventListener('resize',cen)}show(Q.step);miniDots();qDraw();
+const d0=qDraw;qDraw=function(){d0();show(Math.min(Q.step,PH.length-1));miniDots();if(qAny()&&!window.__qs){window.__qs=1;window.FC&&FC.track('quiz_start')}};if(mob()){const r=$('res');r.parentElement.insertBefore(mini,r.nextSibling);const cen=()=>{mini.style.transform='none';const b=mini.getBoundingClientRect();mini.style.transform=`translateX(${innerWidth/2-(b.left+b.width/2)}px)`};requestAnimationFrame(cen);setTimeout(cen,400);addEventListener('resize',cen)}show(Q.step);miniDots();qDraw();
 qDone=function(){window.QLOCK=false;qRank();miniDots();
- const a=Q.ans.map(x=>x==null?'x':x).join(''),go2=()=>{location.href='quiz-results-v3.html?a='+a};
+ const a=Q.ans.map(x=>x==null?'x':x).join(''),TOP=qRank().slice(0,5).map(t=>({id:t.id,fit:qp(t),name:t.n,why:qWhy(t,3)})),go2=()=>{location.href='quiz-results-v3.html?a='+a+'&t='+TOP.map(x=>x.id+'.'+x.fit).join(',')};
+ try{sessionStorage.setItem('fc-top5',JSON.stringify({a:a,top:TOP}))}catch(e){}
+ if(window.FC){FC.track('quiz_complete');FC.track('quiz_top5',a+'|'+TOP.map(x=>x.id+':'+x.fit).join(','))}
  document.getElementById('qrvn').textContent=T.length;
  const lab=Q.ans.map((x,i)=>x==null?null:SQ[i].o[x][0]).filter(t=>t&&!/^Not sure/.test(t));
  const c=document.getElementById('qrvc');c.innerHTML=lab.slice(0,4).map(t=>`<span class="chip">${t}</span>`).join('')+(lab.length>4?`<span class="chip">+${lab.length-4} more</span>`:'');

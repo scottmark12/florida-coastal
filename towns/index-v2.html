@@ -94,7 +94,7 @@ nav.top a.on{box-shadow:inset 0 -2px #fff;padding-bottom:20px;margin-bottom:-22p
 .row{grid-auto-columns:72%;gap:12px;margin-left:-20px;margin-right:-20px;padding:0 20px;scroll-padding-left:20px}
 .cg{grid-template-columns:repeat(2,1fr);gap:10px}.ct b{font-size:22px}.grid{grid-template-columns:repeat(2,1fr);gap:24px 14px}.card h4{font-size:19px}
 .cols{grid-template-columns:1fr;gap:30px}.fl input{flex:1 1 100%}.fl select{flex:1}.fl .c{flex:1 1 100%;margin:4px 0 0}.az{padding:64px 0 70px;margin-top:80px}}
-</style></head><body>
+</style><script src="../assets/fc-connect.js"></script></head><body>
 <header><a class="logo" href="../home-v2.html"><img src="../img/fc-logo-arch-line-white.png" alt="Florida Coastal"></a>
 <nav class="top"><a class="on" href="../towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="../vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="../vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="../articles/index.html" data-nav="articles">Articles</a></nav>
 <a class="cta" href="../quiz-photo.html">Take the quiz</a></header>
@@ -179,5 +179,6 @@ function az(){const q=norm($('fq').value.trim()),s=$('fs').value,p=$('fp').value
  const blk=([k,n])=>{const G=L.filter(t=>t.c==k).sort((a,b)=>a.n.localeCompare(b.n));return `<h5>${n}<span>${G.length}</span></h5>${G.length?G.map(t=>`<a href="${t.id}-v3.html"><b>${t.n}</b><span>${pr(t)}</span></a>`).join(''):'<div class="none">None match</div>'}`};const C=k=>CO.find(c=>c[0]==k);
  $('cols').innerHTML=`<div>${blk(C('panhandle'))}<div style="height:36px"></div>${blk(C('keys'))}</div><div>${blk(C('gulf'))}</div><div>${blk(C('atlantic'))}</div>`}
 ['fq','fs','fp'].forEach(i=>$(i).addEventListener(i=='fq'?'input':'change',az));az();
+{const q0=new URLSearchParams(location.search).get('q');if(q0){$('q').value=q0;$('q').dispatchEvent(new Event('input'));setTimeout(()=>$('q').focus(),50)}}
 {const h=location.hash.slice(1);if(CO.some(c=>c[0]==h)){pickC(h,'');setTimeout(()=>$('regions').scrollIntoView(),50)}}
 </script></body></html>

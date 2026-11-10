@@ -177,7 +177,7 @@ body.sliders .mode button{padding:8px 13px;font-size:14.5px}
  .ctl{display:none}.mode{width:100%}.mode button{flex:1;padding:8px 4px;font-size:14px}
  .pop{width:auto;left:10px!important;right:10px;bottom:10px!important;display:none;grid-template-columns:96px 1fr}.pop.on{display:grid}.pop .ph{height:100%;min-height:120px}.pop p{display:none}.pop h3{font-size:20px;padding-right:30px}.pop .bd{padding:10px 12px}.pop .go{padding:8px;margin-top:8px;font-size:14.5px}.pop .x{right:8px;top:8px;width:28px;height:28px}
 }
-</style><script src="assets/dm-titles.js"></script></head><body>
+</style><script src="assets/dm-titles.js"></script><script src="assets/fc-connect.js"></script></head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
 <nav class="top"><a href="towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="articles/index.html" data-nav="articles">Articles</a></nav>
@@ -379,8 +379,8 @@ document.querySelector('.save').onclick=()=>{$('svb').classList.remove('sent');$
 $('svx').onclick=()=>$('sv').classList.remove('on');$('sv').onclick=e=>{if(e.target.id=='sv')$('sv').classList.remove('on')};
 $('svc').onclick=()=>{$('svl').select();try{navigator.clipboard.writeText($('svl').value)}catch(e){}$('svc').textContent='Copied'};
 $('svgo').onclick=()=>{const e=$('sve').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){$('sve').style.borderColor='#B3261E';$('sve').focus();return}
- /* TODO dev build: POST {email, url:shareURL(), summary:sumText()} to the lead pipeline (same as quiz leads) */
- $('svdone').textContent=`We'll send the link to ${e}. Open it anytime to pick up right here.`;$('svb').classList.add('sent')};
+ const fin=m=>{$('svdone').textContent=m;$('svb').classList.add('sent')};let msg='Saved search';try{msg='Saved search: '+shareURL()+'\n'+sumText()}catch(x){}
+ FC.lead({kind:'matches',email:e,message:msg.slice(0,2000)}).then(r=>fin(r.preview?'Preview: saved as a test, no email sent.':`We'll send the link to ${e}. Open it anytime to pick up right here.`)).catch(()=>fin(FC.LIVE?"That didn't send. Check your connection and try again.":'Preview only: this works once the new site is live. Nothing was sent.'))};
 addEventListener('resize',()=>{render();list()});
 // start: zoomed in like Compass
 if(params.get('price')){S.price=params.get('price');const[a,b]=S.price.split('-');$('pmin').value=a;$('pmax').value=b}
