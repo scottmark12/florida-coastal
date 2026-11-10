@@ -703,11 +703,11 @@ body.reveal #qrv{opacity:1;transform:none}
 
 body.qphoto .qlogo{top:28px!important;bottom:auto!important}
 #qcap{right:auto!important;left:32px;bottom:30px}
-#qmini{position:absolute;right:28px;bottom:24px;z-index:6;width:140px;padding:12px;border-radius:12px;background:rgba(22,23,23,.42);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);pointer-events:none;transition:opacity .5s}
+#qmini{position:absolute;right:28px;bottom:24px;z-index:6;width:140px;padding:0;background:none;filter:drop-shadow(0 2px 8px rgba(0,0,0,.45));pointer-events:none;transition:opacity .5s}
 #qmini svg{display:block;width:100%;height:auto;overflow:visible}
 body.reveal #qmini{opacity:0}
 #qmini .md{transition:r .3s}
-@media (max-width:900px){body.qphoto .qlogo{top:16px!important}#qcap{position:fixed!important;left:16px!important;top:calc(40vh - 30px)!important;bottom:auto!important}#qmini{position:fixed;width:74px;padding:9px;border-radius:10px;right:14px;bottom:auto;top:calc(40vh - 112px)}}
+@media (max-width:900px){body.qphoto .qlogo{top:16px!important}#qcap{position:fixed!important;left:16px!important;top:calc(40vh - 30px)!important;bottom:auto!important}#qmini{position:fixed;width:70px;padding:0;right:14px;bottom:auto;top:calc(40vh - 112px)}}
 
 /* glass card */
 body.qphoto #res{background:rgba(18,20,20,.38)!important;backdrop-filter:blur(22px) saturate(1.15);-webkit-backdrop-filter:blur(22px) saturate(1.15);border:1px solid rgba(255,255,255,.16);box-shadow:0 20px 60px rgba(0,0,0,.28)!important;color:#fff}
@@ -742,7 +742,7 @@ let cur=-1;function show(n){if(n===cur)return;cur=n;box.querySelectorAll('.ph').
 const mini=document.createElement('div');mini.id='qmini';box.parentElement.insertBefore(mini,cap);
 const B=[-87.75,-79.7,24.35,31.15],mx0=X(B[0]),mx1=X(B[1]),my0=Y(B[3]),my1=Y(B[2]);
 const land=document.querySelector('#base path.mc').getAttribute('d');
-mini.innerHTML=`<svg viewBox="${mx0} ${my0} ${mx1-mx0} ${my1-my0}"><defs><clipPath id="mclip"><polygon points="${[[-87.6,31.0],[-85.0,31.0],[-84.86,30.7],[-82.2,30.57],[-82.02,30.4],[-81.9,30.55],[-81.4,30.72],[-79.0,30.72],[-79.0,24.0],[-87.6,24.0]].map(p=>X(p[0])+','+Y(p[1])).join(' ')}"/></clipPath></defs><path d="${land}" fill="#F3F1EC" fill-opacity=".92" clip-path="url(#mclip)"/><g id="mdots"></g></svg>`;
+mini.innerHTML=`<svg viewBox="${mx0} ${my0} ${mx1-mx0} ${my1-my0}"><defs><clipPath id="mclip"><polygon points="${[[-87.6,31.0],[-85.0,31.0],[-84.86,30.7],[-82.2,30.57],[-82.02,30.4],[-81.9,30.55],[-81.4,30.72],[-79.0,30.72],[-79.0,24.0],[-87.6,24.0]].map(p=>X(p[0])+','+Y(p[1])).join(' ')}"/></clipPath></defs><path d="${land}" fill="#fff" fill-opacity=".95" clip-path="url(#mclip)"/><g id="mdots"></g></svg>`;
 const ku=(mx1-mx0)/150;
 function miniDots(){const g=document.getElementById('mdots');if(!g)return;if(!qAny()){g.innerHTML='';return}
  const top=qRank().slice(0,5).map(t=>t.id),ts=new Set(top);let h='';
