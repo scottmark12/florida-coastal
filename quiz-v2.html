@@ -252,7 +252,7 @@ body.quiz .rdd{display:none!important}body.quiz.sliders .qr h1,body.quiz .qr h1{
  .qq{font-size:28px;margin-top:20px}.qin h1{font-size:32px}.qopts{gap:10px}.qo .tx{padding:10px 12px 12px}.qo b{font-size:15px}.qo small{display:none}.qopts.txt .qo small{display:block}
 }
 </style>
-<div id="qz"></div><a class="qlogo" href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
+<div id="qz"></div><div class="qlogo"><a href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a><a class="qx" href="home-v2.html">Exit quiz</a></div>
 
 <style>
 /* Live quiz template, new design (Nov 10) */
@@ -344,6 +344,13 @@ body.quiz:not(.qres) .terr .mr1,body.quiz:not(.qres) .terr .mr2,body.quiz:not(.q
 body.quiz:not(.qres) .city,body.quiz:not(.qres) .sea{display:none}
 body.quiz:not(.qres) .zoom,body.quiz:not(.qres) .ctl{display:none!important}
 #qfade{background:linear-gradient(90deg,var(--sea,#1A1B1B) 0,var(--sea,#1A1B1B) calc(100% - 230px),rgba(26,27,27,.85) calc(100% - 120px),rgba(26,27,27,0))!important}
+</style><style>
+/* 5: slim header bar instead of the floating logo pill */
+body.quiz .qlogo{left:0!important;right:0;top:0!important;border-radius:0!important;box-shadow:none!important;border-bottom:1px solid #E4E0D8;height:56px;padding:0 24px!important;display:flex!important;align-items:center;justify-content:space-between;box-sizing:border-box}
+.qlogo img{height:26px!important}
+.qx{font-size:15px;font-weight:500;color:#152A2E;text-decoration:none}.qx:hover{text-decoration:underline;text-underline-offset:4px}
+@media (min-width:901px){body.quiz .main{top:56px!important}}
+@media (max-width:900px){body.quiz .qlogo{position:fixed!important;height:52px;padding:0 16px!important}body.quiz{padding-top:52px}.qlogo img{height:22px!important}}
 </style><div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
 <div class="f"><select id="sty"></select><select id="pmin" class="box"><option value="0">$ No min</option><option value="200">$200K</option><option value="300">$300K</option><option value="500">$500K</option><option value="1000">$1M</option></select><span class="dash">&ndash;</span><select id="pmax" class="box"><option value="99999">$ No max</option><option value="300">$300K</option><option value="500">$500K</option><option value="750">$750K</option><option value="1000">$1M</option></select></div>
 <div class="cnt"><span id="n"></span><label class="so">Sort: <select id="sort"><option value="coast">Along the coast</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option></select></label></div>
@@ -636,14 +643,14 @@ function qDots(){const ov=$('ov');if(!ov||Q.done)return;const[w]=size(),k=S.vb[2
  g+='</g>';const old=document.getElementById('qdots');if(old)old.remove();ov.insertAdjacentHTML('beforeend',g);qPrev=ts}
 function qEdge(){const f=document.getElementById('qfade');if(f)f.remove();const ov=$('ov');if(!ov)return;const o=document.getElementById('qland');if(o)o.remove();
  // the base map stops at 89W: continue the land west along the Mississippi coast so there is no hard or blurry edge
- ov.insertAdjacentHTML('afterbegin',`<rect id="qland" x="${X(-96)}" y="${Y(34)}" width="${X(-88.99)-X(-96)}" height="${Y(30.37)-Y(34)}" fill="#F3F1EC"/>`)}
+ ov.insertAdjacentHTML('afterbegin',`<g id="qland"><rect x="${X(-96)}" y="${Y(23)}" width="${X(-88.45)-X(-96)}" height="${Y(23)-Y(30.36)}" fill="var(--sea,#1A1B1B)" transform="translate(0,${Y(30.36)-Y(23)})"/><rect x="${X(-96)}" y="${Y(34)}" width="${X(-88.45)-X(-96)}" height="${Y(30.36)-Y(34)}" fill="#F3F1EC"/></g>`)}
 // labels that sit over water turn white (dark ocean option)
 let _land=null;const _render=render;render=function(){const r=_render.apply(this,arguments);try{if(document.body.classList.contains('quiz')){qEdge();qDots()}}catch(e){}if(!/sea-/.test(document.body.className))return r;
  try{_land=_land||document.querySelector('#base path[fill="#F3F1EC"]');const base=$('base'),ov=$('ov');if(!_land||!ov)return r;
  const M=base.getScreenCTM().inverse();ov.querySelectorAll('text.lbl').forEach(t=>{const b=t.getBoundingClientRect(),cx=b.left+b.width/2,cy=b.top+b.height/2;
   let n=0;[[cx,cy],[b.left+4,cy],[b.right-4,cy]].forEach(([x,y])=>{const p=new DOMPoint(x,y).matrixTransform(M);if(!_land.isPointInFill(p))n++});t.classList.toggle('onsea',n>=2)})}catch(e){}return r};
 document.body.classList.add('quiz');if(new URLSearchParams(location.search).get('dot')==='blue')document.body.classList.add('dot-blue');{const l=document.querySelector('.qlogo');if(l)document.body.appendChild(l)}
-{const pa=new URLSearchParams(location.search);const a=pa.get('a');if(a){a.split('').forEach((c,i)=>{if(c!=='x'&&i<SQ.length)Q.ans[i]=+c});if(pa.get('step')!=null){Q.step=+pa.get('step');qRank();qMap()}else qDone()}else{S.region='';tags();requestAnimationFrame(qStart)}}
+{const pa=new URLSearchParams(location.search);const a=pa.get('a');if(a){a.split('').forEach((c,i)=>{if(c!=='x'&&i<SQ.length)Q.ans[i]=+c});if(pa.get('step')!=null){Q.step=+pa.get('step');qRank();qMap()}else qDone()}else{S.region='';tags();requestAnimationFrame(qStart);setTimeout(qStart,300);addEventListener('resize',()=>{if(!qAny())qStart()})}}
 qDraw();
 
 </script></body></html>
