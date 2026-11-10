@@ -723,6 +723,7 @@ body.qphoto #res .qbar i.cur{background:#F29A63!important}
 body.qphoto #res .qclose:hover{background:rgba(255,255,255,.12)!important}
 body.qphoto #res *{text-shadow:none}
 body.qphoto #res .qo::after{color:#fff!important}
+body.bar-blue #res .qbar i.cur{background:#8CA8AF!important}body.bar-blue #res .qn b{color:#A9C3C9!important}
 body.qphoto #res .qtop .qb{color:#fff!important}
 @media (max-width:900px){body.qphoto #res{background:rgba(18,20,20,.42)!important;border-left:0;border-right:0}body.qphoto #qph{height:100vh!important}body.qphoto,body.qphoto .main{background:#1A1B1B!important}}
 </style>
@@ -731,7 +732,7 @@ body.qphoto #res .qtop .qb{color:#fff!important}
 (function(){
 const PH=[['img/g/30a.jpg','30A'],['img/g/sarasota-beach.jpg','Sarasota'],['img/g/apalachicola.jpg','Apalachicola'],['img/g/sanibel-island.jpg','Sanibel Island'],['img/g/st-augustine.jpg','St. Augustine'],['img/g/skyway-arrival.jpg','Sunshine Skyway'],['img/g/apalachicola-home.jpg','Apalachicola'],['img/g/water-dock-chairs.jpg','']];
 PH.forEach(p=>{const i=new Image();i.src=p[0]});
-document.body.classList.add('qphoto');
+document.body.classList.add('qphoto');if(new URLSearchParams(location.search).get('bar')==='blue')document.body.classList.add('bar-blue');
 const mw=document.querySelector('.mapw'),box=document.createElement('div');box.id='qph';
 box.innerHTML=PH.map(p=>`<div class="ph" style="background-image:url('${p[0]}')"></div>`).join('');
 mw.parentElement.insertBefore(box,mw.nextSibling);
