@@ -360,7 +360,15 @@ body.quiz .qlogo img{height:28px!important;filter:drop-shadow(0 1px 4px rgba(0,0
 @media (max-width:900px){body.quiz{padding-top:0}body.quiz .qlogo{height:70px!important;padding:16px 16px 0!important}}
 </style><style>@media (min-width:901px){body.quiz .qlogo{background:none!important}}@media (max-width:900px){body.quiz .qlogo{background:linear-gradient(180deg,rgba(20,21,21,.35),rgba(20,21,21,0))!important}}</style>
 <style>body.quiz .qlogo img{filter:drop-shadow(0 0 6px rgba(0,0,0,.55)) drop-shadow(0 1px 2px rgba(0,0,0,.4))!important}.qx{text-shadow:0 0 8px rgba(0,0,0,.6),0 1px 2px rgba(0,0,0,.4)!important}</style>
-<style>@media (max-width:900px){body.quiz .qlogo{background:none!important}}</style><style>@media (max-width:900px){body.quiz .qlogo{background:linear-gradient(180deg,#1A1B1B 0,rgba(26,27,27,.85) 45%,rgba(26,27,27,0))!important;height:84px!important}}</style><div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
+<style>@media (max-width:900px){body.quiz .qlogo{background:none!important}}</style><style>@media (max-width:900px){body.quiz .qlogo{background:linear-gradient(180deg,#1A1B1B 0,rgba(26,27,27,.85) 45%,rgba(26,27,27,0))!important;height:84px!important}}</style><style>
+/* header lives in the card (Nov 10): map stays clean */
+body.quiz .qlogo{display:none!important}
+.qbrand{display:flex;align-items:center;justify-content:space-between;margin:-6px -6px 18px 0;padding-bottom:14px;border-bottom:1px solid #E4E0D8}
+.qbrand img{height:24px;display:block}
+.qclose{font-size:26px;line-height:1;color:#152A2E;text-decoration:none;width:32px;height:32px;display:grid;place-items:center;border-radius:50%}
+.qclose:hover{background:#F2EFEA}
+@media (max-width:900px){body.quiz{padding-top:0!important}.qbrand img{height:22px}}
+</style><div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
 <div class="f"><select id="sty"></select><select id="pmin" class="box"><option value="0">$ No min</option><option value="200">$200K</option><option value="300">$300K</option><option value="500">$500K</option><option value="1000">$1M</option></select><span class="dash">&ndash;</span><select id="pmax" class="box"><option value="99999">$ No max</option><option value="300">$300K</option><option value="500">$500K</option><option value="750">$750K</option><option value="1000">$1M</option></select></div>
 <div class="cnt"><span id="n"></span><label class="so">Sort: <select id="sort"><option value="coast">Along the coast</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option></select></label></div>
 <div class="seeall" id="seeall"></div><div class="tiles" id="tiles"></div><div class="sl" id="sl"></div><div class="grid" id="grid"></div></div></div>
@@ -596,7 +604,7 @@ function qHTML(){
  const q=SQ[Q.step],a=Q.ans[Q.step],n=qStrong(),first=Q.step===0&&!qAny();
  const bars=SQ.map((_,i)=>`<i class="${i<Q.step?'done':i===Q.step?'cur':''}"></i>`).join('');
  const opts=q.o.map((o,i)=>`<button class="qo${a===i?' on':''}" aria-pressed="${a===i}" onclick="qPick(${i})"><span class="rd"></span><span class="tx"><b>${o[0]}</b>${o[1]?`<small>${o[1]}</small>`:''}</span></button>`).join('');
- return `${first?`<div class="qhd"><h1>Your top 5 Florida beach towns in 2 minutes</h1><p>8 quick taps. Free.</p></div>`:''}
+ return `<div class="qbrand"><a href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a><a class="qclose" href="home-v2.html" aria-label="Exit quiz">&times;</a></div>${first?`<div class="qhd"><h1>Your top 5 Florida beach towns in 2 minutes</h1><p>8 quick taps. Free.</p></div>`:''}
  <div class="qtop">${Q.step>0?`<button class="qb" onclick="qGo(${Q.step-1})" aria-label="Back">&larr;</button>`:''}<div class="qbar">${bars}</div><span class="qn">${qAny()?`<b>${n}</b> towns fit`:`${Q.step+1} of ${SQ.length}`}</span></div>
  <h2 class="qq">${q.q}</h2>
  <div class="qopts">${opts}</div>
@@ -647,8 +655,8 @@ function qDots(){const ov=$('ov');if(!ov||Q.done)return;const[w]=size(),k=S.vb[2
  let g='<g id="qdots">';
  if(any)T.forEach(t=>{if(ts.has(t.id)||qp(t)<70)return;
   g+=`<circle cx="${t.x}" cy="${t.y}" r="${4.6*k}" fill="var(--qdot)" fill-opacity=".9" stroke="#fff" stroke-width="${1.6*k}"/>`});
- top.forEach(id=>{const t=T.find(x=>x.id==id),nw=!qPrev.has(id);
-  g+=`<g class="qbig${nw?' qpopin':''}" style="transform-origin:${t.x}px ${t.y}px"><circle cx="${t.x}" cy="${t.y}" r="${15*k}" fill="#fff" style="filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))"/><circle cx="${t.x}" cy="${t.y}" r="${10.5*k}" fill="var(--qtop)"/></g>`});
+ top.forEach((id,i)=>{const t=T.find(x=>x.id==id),nw=!qPrev.has(id),one=i===0;
+  g+=`<g class="qbig${nw?' qpopin':''}" style="transform-origin:${t.x}px ${t.y}px">${one?`<circle cx="${t.x}" cy="${t.y}" r="${24*k}" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width="${1.6*k}"/>`:''}<circle cx="${t.x}" cy="${t.y}" r="${(one?18:15)*k}" fill="#fff" style="filter:drop-shadow(0 2px 6px rgba(0,0,0,.4))"/><circle cx="${t.x}" cy="${t.y}" r="${(one?13:10.5)*k}" fill="var(--qtop)"/></g>`});
  g+='</g>';const old=document.getElementById('qdots');if(old)old.remove();ov.insertAdjacentHTML('beforeend',g);qPrev=ts}
 function qEdge(){const f=document.getElementById('qfade');if(f)f.remove();const ov=$('ov');if(!ov)return;const o=document.getElementById('qland');if(o)o.remove();
  // the base map stops at 89W: continue the land west along the Mississippi coast so there is no hard or blurry edge
