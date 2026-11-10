@@ -5286,3 +5286,6 @@ html body[data-hyb] .vm-map circle.dot.hot{r:7px;opacity:1!important;fill:#152A2
 .terr .mr1{stroke-width:calc(var(--k)*3.2px)}.terr .mr2{stroke-width:calc(var(--k)*1.8px)}
 html body[data-hyb] .vm-map svg{will-change:auto!important}
 .terr .mc{stroke:#86A3B3!important;stroke-width:calc(var(--k)*.9px)}.terr .mr1{stroke:#D9D2C5!important;stroke-width:calc(var(--k)*2.6px)}.terr .mr2{stroke-width:calc(var(--k)*1.4px)}.terr .mv{stroke-width:calc(var(--k)*1.2px)}
+
+/* ===== Nov 10 2026 patch: newsletter photo spans the full width on every phone and small tablet size ===== */
+@media (max-width:760px){html body[data-newsph2] .news{background-position:center top!important;background-size:100% auto!important;padding-top:calc(75vw - 24px)!important}}
