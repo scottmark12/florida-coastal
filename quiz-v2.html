@@ -299,6 +299,19 @@ body.quiz .res{left:max(40px,calc(50vw - 660px));top:50%;transform:translateY(-5
 .qo b{font-size:17px}.qo small{font-size:14.5px;color:#6B7678}
 .qalt{text-align:left;margin-top:18px;color:#152A2E}
 @media (max-width:900px){.qhd h1{font-size:26px}.qq{font-size:22px}.qo{padding:14px 2px}}
+</style>
+<style>
+/* Dark ocean option (Nov 10), quiz only */
+body.quiz.sea-ink{--sea:#13262B;--lake:#2A4148;--sealbl:#7F9AA2}
+body.quiz.sea-blue{--sea:#1C3A52;--lake:#36536A;--sealbl:#8EAFC4}
+body.quiz[class*=sea-] .mapw,body.quiz[class*=sea-] .map{background:var(--sea)!important}
+body.quiz[class*=sea-] .lbl.onsea{fill:#fff!important;stroke:var(--sea)!important}body.quiz[class*=sea-] .lbl.sm.onsea{fill:#E8E4DC!important}
+body.quiz[class*=sea-] .city{stroke:none}
+body.quiz[class*=sea-] .terr rect[fill="#A9C7D6"]{fill:var(--sea)}
+body.quiz[class*=sea-] .terr [fill="#BFD6E2"]{fill:var(--lake)}
+body.quiz[class*=sea-] .terr .mc{stroke:#F3F1EC;stroke-width:calc(var(--k)*.6px)}
+body.quiz[class*=sea-] .sea{fill:var(--sealbl)}
+body.quiz[class*=sea-] .res{box-shadow:0 18px 50px rgba(0,0,0,.35)}
 </style><div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
 <div class="f"><select id="sty"></select><select id="pmin" class="box"><option value="0">$ No min</option><option value="200">$200K</option><option value="300">$300K</option><option value="500">$500K</option><option value="1000">$1M</option></select><span class="dash">&ndash;</span><select id="pmax" class="box"><option value="99999">$ No max</option><option value="300">$300K</option><option value="500">$500K</option><option value="750">$750K</option><option value="1000">$1M</option></select></div>
 <div class="cnt"><span id="n"></span><label class="so">Sort: <select id="sort"><option value="coast">Along the coast</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option></select></label></div>
@@ -571,7 +584,15 @@ function qBind(){$('qz').querySelectorAll('[data-id]').forEach(el=>{el.onmouseen
 // in the quiz, a pin tap points to the town in the card instead of opening a second card
 const _op=openPop;openPop=function(t,nopan){if(!document.body.classList.contains('quiz'))return _op(t,nopan);if(nopan||!t)return;S.hover=t.id;render();const el=$('qz').querySelector(`[data-id="${t.id}"]`);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('on');setTimeout(()=>el.classList.remove('on'),1600)}};
 window.QLEFT=()=>{if(innerWidth<901)return 0;const r=$('res').getBoundingClientRect(),m=document.querySelector('.mapw').getBoundingClientRect();return Math.max(0,r.right-m.left)};
-function qStart(){const[w,h]=size(),QL=QLEFT();if(!QL){go(fit(ALL,.02),0);return}const x0=X(ALL[0]),x1=X(ALL[1]),y0=Y(ALL[3]),y1=Y(ALL[2]);const rw=w-QL-50,rh=h-60;const k=Math.max((x1-x0)/rw,(y1-y0)/rh);const sx=QL+20+rw/2,sy=h/2;go([(x0+x1)/2-sx*k,(y0+y1)/2-sy*k,w*k,h*k],0)}
+function qStart(){const[w,h]=size(),QL=QLEFT();if(!QL){go(fit(ALL,.02),0);return}
+ // zoomed in: Florida fills the height, east coast near the right edge, the far west panhandle runs under the card
+ const x0=X(-87.35),x1=X(-79.95),y0=Y(30.95),y1=Y(24.45);const k=(y1-y0)/(h-24);const sx=w-40-(x1-x0)/k/2,sy=h/2+4;go([(x0+x1)/2-sx*k,(y0+y1)/2-sy*k,w*k,h*k],0)}
+{const sea=new URLSearchParams(location.search).get('sea')||'ink';if(sea!=='light')document.body.classList.add('sea-'+sea)}
+// labels that sit over water turn white (dark ocean option)
+let _land=null;const _render=render;render=function(){const r=_render.apply(this,arguments);if(!/sea-/.test(document.body.className))return r;
+ try{_land=_land||document.querySelector('#base path[fill="#F3F1EC"]');const base=$('base'),ov=$('ov');if(!_land||!ov)return r;
+ const M=base.getScreenCTM().inverse();ov.querySelectorAll('text.lbl').forEach(t=>{const b=t.getBoundingClientRect(),cx=b.left+b.width/2,cy=b.top+b.height/2;
+  let n=0;[[cx,cy],[b.left+4,cy],[b.right-4,cy]].forEach(([x,y])=>{const p=new DOMPoint(x,y).matrixTransform(M);if(!_land.isPointInFill(p))n++});t.classList.toggle('onsea',n>=2)})}catch(e){}return r};
 document.body.classList.add('quiz');
 {const pa=new URLSearchParams(location.search);const a=pa.get('a');if(a){a.split('').forEach((c,i)=>{if(c!=='x'&&i<SQ.length)Q.ans[i]=+c});if(pa.get('step')!=null){Q.step=+pa.get('step');qRank();qMap()}else qDone()}else{S.region='';tags();requestAnimationFrame(qStart)}}
 qDraw();
