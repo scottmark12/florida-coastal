@@ -740,7 +740,7 @@ body.qphoto #res .qo small{font-size:12.5px!important}
 body.qphoto #res .qn{font-size:13px!important}
 body.qphoto #res .qbrand{margin:-6px -6px 0 0!important}
 body.qphoto #res .qopts>*:last-child{border-bottom:0!important}
-#qmini{width:64px!important;margin:0 auto 30px!important;top:26px;transform:translateX(7px)}
+#qmini{width:64px!important;margin:0 auto 30px!important;top:14px}
 }
 body.qphoto #res .qalt{position:absolute;left:0;right:0;top:calc(100% + 16px);text-align:center;color:#fff!important;text-shadow:0 1px 8px rgba(0,0,0,.45);margin:0!important}
 body.qphoto #res .qopts>*:last-child{border-bottom:0!important}
@@ -767,7 +767,7 @@ const cap=document.createElement('div');cap.id='qcap';mw.parentElement.insertBef
 let cur=-1;function show(n){if(n===cur)return;cur=n;box.querySelectorAll('.ph').forEach((e,i)=>e.classList.toggle('on',i===n));cap.textContent=PH[n]?PH[n][1]:''}
 
 const mini=document.createElement('div');mini.id='qmini';box.parentElement.insertBefore(mini,cap);
-const B=[-87.75,-79.7,24.35,31.15],mx0=X(B[0]),mx1=X(B[1]),my0=Y(B[3]),my1=Y(B[2]);
+const B=[-87.62,-79.97,24.48,31.02],mx0=X(B[0]),mx1=X(B[1]),my0=Y(B[3]),my1=Y(B[2]);
 const land=document.querySelector('#base path.mc').getAttribute('d');
 mini.innerHTML=`<svg viewBox="${mx0} ${my0} ${mx1-mx0} ${my1-my0}"><defs><clipPath id="mclip"><polygon points="${[[-87.6,31.0],[-85.0,31.0],[-84.86,30.7],[-82.2,30.57],[-82.02,30.4],[-81.9,30.55],[-81.4,30.72],[-79.0,30.72],[-79.0,24.0],[-87.6,24.0]].map(p=>X(p[0])+','+Y(p[1])).join(' ')}"/></clipPath></defs><path d="${land}" fill="#fff" fill-opacity=".95" clip-path="url(#mclip)"/><g id="mdots"></g></svg>`;
 const ku=(mx1-mx0)/150;
@@ -779,7 +779,7 @@ function miniDots(){const g=document.getElementById('mdots');if(!g)return;if(!qA
 const mob=()=>innerWidth<901;
 const SUBS={3:['Sand and water right out front','Close enough to ride over with a towel','Easy to get to whenever I want'],4:{2:'People I know by name, and that is plenty'},5:['I want an airport close by','A decent drive to the airport is fine','I can make a day of getting there'],7:['Keeping costs low','A comfortable middle','Room to stretch','Open to the top end']};
 Object.entries(SUBS).forEach(([qi,m])=>Object.entries(m).forEach(([oi,t])=>{const o=SQ[qi]&&SQ[qi].o[oi];if(o&&!o[1])o[1]=t}));
-const d0=qDraw;qDraw=function(){d0();show(Math.min(Q.step,PH.length-1));miniDots()};if(mob()){const r=$('res');r.parentElement.insertBefore(mini,r.nextSibling)}show(Q.step);miniDots();qDraw();
+const d0=qDraw;qDraw=function(){d0();show(Math.min(Q.step,PH.length-1));miniDots()};if(mob()){const r=$('res');r.parentElement.insertBefore(mini,r.nextSibling);const cen=()=>{mini.style.transform='none';const b=mini.getBoundingClientRect();mini.style.transform=`translateX(${innerWidth/2-(b.left+b.width/2)}px)`};requestAnimationFrame(cen);setTimeout(cen,400);addEventListener('resize',cen)}show(Q.step);miniDots();qDraw();
 qDone=function(){window.QLOCK=false;qRank();
  document.body.classList.add('reveal');window.dispatchEvent(new Event('resize'));
  setTimeout(()=>{const[w]=size();let v;if(w<901){v=fit([-87.6,-79.9,24.45,30.75],.04);v[1]-=.17*v[3]}else v=fit([-87.6,-79.95,24.5,31.0],.05);v.__q=1;go(v,0)},60);qPrev=new Set();
