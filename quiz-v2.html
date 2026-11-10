@@ -252,7 +252,7 @@ body.quiz .rdd{display:none!important}body.quiz.sliders .qr h1,body.quiz .qr h1{
  .qq{font-size:28px;margin-top:20px}.qin h1{font-size:32px}.qopts{gap:10px}.qo .tx{padding:10px 12px 12px}.qo b{font-size:15px}.qo small{display:none}.qopts.txt .qo small{display:block}
 }
 </style>
-<div id="qz"></div><div class="qlogo"><a href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a><a class="qx" href="home-v2.html">Exit quiz</a></div>
+<div id="qz"></div><div class="qlogo"><a href="home-v2.html"><img src="img/fc-logo-arch-line-white.png" alt="Florida Coastal"></a><a class="qx" href="home-v2.html">Exit quiz</a></div>
 
 <style>
 /* Live quiz template, new design (Nov 10) */
@@ -351,7 +351,15 @@ body.quiz .qlogo{left:0!important;right:0;top:0!important;border-radius:0!import
 .qx{font-size:15px;font-weight:500;color:#152A2E;text-decoration:none}.qx:hover{text-decoration:underline;text-underline-offset:4px}
 @media (min-width:901px){body.quiz .main{top:56px!important}}
 @media (max-width:900px){body.quiz .qlogo{position:fixed!important;height:52px;padding:0 16px!important}body.quiz{padding-top:52px}.qlogo img{height:22px!important}}
-</style><div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
+</style><style>
+/* clear banner (Nov 10): no bar, white logo and Exit over a soft fade, like the home page header */
+body.quiz .qlogo{background:linear-gradient(180deg,rgba(20,21,21,.62),rgba(20,21,21,0))!important;border:0!important;height:96px!important;align-items:flex-start!important;padding:22px 28px 0!important}
+.qx{color:#fff!important;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+body.quiz .qlogo img{height:28px!important;filter:drop-shadow(0 1px 4px rgba(0,0,0,.35))}
+@media (min-width:901px){body.quiz .main{top:0!important}}
+@media (max-width:900px){body.quiz{padding-top:0}body.quiz .qlogo{height:70px!important;padding:16px 16px 0!important}}
+</style><style>@media (min-width:901px){body.quiz .qlogo{background:none!important}}@media (max-width:900px){body.quiz .qlogo{background:linear-gradient(180deg,rgba(20,21,21,.35),rgba(20,21,21,0))!important}}</style>
+<div class="mode" id="mode"><button data-m="explore" class="on" title="See every beach town on the map">Browse</button><button data-m="vibes" title="Pick the feel you want and see where it lives">By style</button><button data-m="sliders" title="Tell us what matters and we rank all 167 towns">Rank for me</button></div><div class="mhint" id="mhint"></div><button class="back" id="back">&larr; All styles</button><div class="hrow"><div><h1 id="h"></h1><div class="sub" id="sub"></div></div><button class="save">Save search</button></div>
 <div class="f"><select id="sty"></select><select id="pmin" class="box"><option value="0">$ No min</option><option value="200">$200K</option><option value="300">$300K</option><option value="500">$500K</option><option value="1000">$1M</option></select><span class="dash">&ndash;</span><select id="pmax" class="box"><option value="99999">$ No max</option><option value="300">$300K</option><option value="500">$500K</option><option value="750">$750K</option><option value="1000">$1M</option></select></div>
 <div class="cnt"><span id="n"></span><label class="so">Sort: <select id="sort"><option value="coast">Along the coast</option><option value="lo">Price, low to high</option><option value="hi">Price, high to low</option></select></label></div>
 <div class="seeall" id="seeall"></div><div class="tiles" id="tiles"></div><div class="sl" id="sl"></div><div class="grid" id="grid"></div></div></div>
@@ -623,11 +631,9 @@ function qBind(){$('qz').querySelectorAll('[data-id]').forEach(el=>{el.onmouseen
 // in the quiz, a pin tap points to the town in the card instead of opening a second card
 const _op=openPop;openPop=function(t,nopan){if(!document.body.classList.contains('quiz'))return _op(t,nopan);if(nopan||!t)return;S.hover=t.id;render();const el=$('qz').querySelector(`[data-id="${t.id}"]`);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('on');setTimeout(()=>el.classList.remove('on'),1600)}};
 window.QLEFT=()=>{return 0;const r=$('res').getBoundingClientRect(),m=document.querySelector('.mapw').getBoundingClientRect();return Math.max(0,r.right-m.left)};
-function qStart(){const[w,h]=size();if(w<901){const v=fit(ALL,.02);v.__q=1;go(v,0);return}
- // peninsula fills the space right of the card: Gulf coast just past the card, Atlantic coast near the right edge
- const r=$('res').getBoundingClientRect(),m=document.querySelector('.map').getBoundingClientRect(),L=r.right-m.left+34,R=w-56;
- let k=(X(-80.03)-X(-82.85))/(R-L);k=Math.max(k,(Y(24.45)-Y(30.95))/h);const cy=(Y(30.95)+Y(24.45))/2;
- const v=[X(-82.85)-L*k,cy-h/2*k,w*k,h*k];v.__q=1;go(v,0)}
+function qStart(){const[w,h]=size();if(w<901){const P=[-83.2,-79.9,24.9,30.9],v=fit(P,.0);v.__q=1;go(v,0);return}
+ // zoomed in on the peninsula: Big Bend at the top, Florida Bay at the bottom, Atlantic coast near the right edge
+ const k=(Y(25.0)-Y(30.15))/h;const v=[X(-80.03)-(w-60)*k,Y(30.15),w*k,h*k];v.__q=1;go(v,0)}
 // while answering, the map holds the whole state and only the pins change
 window.QLOCK=true;const _go=go;go=function(vb,ms){if(window.QLOCK&&!(vb&&vb.__q))return;return _go(vb,ms)};
 {const sea=new URLSearchParams(location.search).get('sea')||'ink';if(sea!=='light')document.body.classList.add('sea-'+sea)}
