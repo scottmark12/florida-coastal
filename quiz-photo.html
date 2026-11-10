@@ -769,11 +769,12 @@ body.reveal2 #qrv .qrvbar i{width:100%;transition:width 2.6s cubic-bezier(.4,0,.
 #qrv .skip{margin-top:30px;color:#fff;font-weight:600;font-size:15px;text-decoration:none;opacity:.85}
 #qrv .skip:hover{opacity:1}
 @media (max-width:900px){#qrv{padding:0 22px}#qrv h2{font-size:30px}#qrv .chip{font-size:13.5px;padding:8px 13px}body.reveal .mapw{height:64vh!important}}
+html body #qph:after{background:linear-gradient(180deg,rgba(0,0,0,.22),rgba(0,0,0,.02) 22%,rgba(0,0,0,.02) 70%,rgba(0,0,0,.28))!important}html body.qphoto #res{background:rgba(16,22,24,.5)!important;backdrop-filter:blur(26px) saturate(1.2)!important;-webkit-backdrop-filter:blur(26px) saturate(1.2)!important}
 </style>
 <div id="qrv"><div id="qrvmap" style="width:96px;margin-bottom:18px"></div><div class="ey">Find your mile</div><h2>Scoring <span id="qrvn">167</span> beach towns on how you want to live</h2><div class="qrvbar"><i></i></div><p>Weighing your answers</p><div class="chips" id="qrvc"></div><a class="skip" id="qrvs" href="#">Skip to my towns &rarr;</a></div>
 <script>
 (function(){
-const PH=[['img/c/30a.jpg','30A'],['img/c/sarasota-beach.jpg','Sarasota'],['img/c/apalachicola.jpg','Apalachicola'],['img/c/sanibel-island.jpg','Sanibel Island'],['img/c/st-augustine.jpg','St. Augustine'],['img/c/skyway-arrival.jpg','Sunshine Skyway'],['img/c/apalachicola-home.jpg','Apalachicola'],['img/c/water-dock-chairs.jpg',''],['img/c/stuart.jpg','']];
+const PH=[['img/c/st-augustine-aerial.jpg','St. Augustine'],['img/c/ormond-beach.jpg','Ormond Beach'],['img/c/key-west.jpg','Key West'],['img/c/bradenton-beach.jpg','Bradenton Beach'],['img/c/keywest-street.jpg','Key West'],['img/c/skyway-arrival.jpg','Sunshine Skyway'],['img/c/north-palm-beach.jpg','North Palm Beach'],['img/c/destin.jpg','Destin'],['img/c/stuart.jpg','']];
 PH.forEach(p=>{const i=new Image();i.src=p[0]});
 document.body.classList.add('qphoto');if(new URLSearchParams(location.search).get('bar')==='blue')document.body.classList.add('bar-blue');
 const mw=document.querySelector('.mapw'),box=document.createElement('div');box.id='qph';

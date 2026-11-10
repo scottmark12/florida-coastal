@@ -16,6 +16,7 @@
     var css=document.createElement('style');
     css.textContent=
     '.fcm-btn{display:none}'+
+    '@media (min-width:761px){html body header a.fcq.fcq:not(#fcx){display:inline-flex!important;align-items:center;background:#152A2E!important;color:#fff!important;border:0!important;border-radius:999px!important;padding:10px 20px!important;font-weight:600!important;font-size:15px!important;letter-spacing:0!important;line-height:1.2!important;text-decoration:none!important;box-shadow:none!important;transition:background .2s}html body header a.fcq.fcq:not(#fcx):hover{background:#0B1C1F!important}html body header.fcq-dark a.fcq.fcq:not(#fcx){background:#fff!important;color:#152A2E!important}html body header.fcq-dark a.fcq.fcq:not(#fcx):hover{background:rgba(255,255,255,.88)!important}header a.fcq:before,header a.fcq:after{display:none!important}}'+
     '@media '+MQ+'{'+
       'header #navtoggle{display:none!important}'+
       '.fcm-btn{display:flex;position:absolute;right:14px;top:50%;transform:translateY(-50%);z-index:60;width:42px;height:42px;border-radius:50%;border:0;align-items:center;justify-content:center;background:rgba(255,255,255,.92);color:#16282c;box-shadow:0 2px 10px rgba(0,0,0,.12);cursor:pointer;-webkit-tap-highlight-color:transparent}'+
@@ -42,6 +43,9 @@
     document.head.appendChild(css);
 
     if(getComputedStyle(hdr).position=='static')hdr.style.position='relative';
+    hdr.querySelectorAll('a[href*="quiz-photo"]').forEach(function(q){q.classList.add('fcq')});
+    function tone(){var c=getComputedStyle(hdr).backgroundColor,m=c.match(/[\d.]+/g)||[0,0,0,0],al=m.length>3?+m[3]:1,l=(+m[0]*.3+ +m[1]*.59+ +m[2]*.11);hdr.classList.toggle('fcq-dark',al<.35||l<90)}
+    tone();addEventListener('scroll',tone,{passive:true});setTimeout(tone,400);
     hdr.classList.add('fcm-hasbtn');
 
     var ICON_MENU='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
