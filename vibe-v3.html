@@ -346,6 +346,22 @@ html body.sliders .mapw:not(#x):not(#y):not(#z){height:min(calc(100svh - 66px),c
 html body.sliders #slpill.on.dn:not(#x){top:74px!important}
 }
 header .logo img{height:30px!important}</style>
+<style id="sheet-css">.sh-grab{display:none}
+@media(max-width:760px){
+html:has(body.sheet){scroll-snap-type:none!important;overflow:hidden!important;height:100%}
+html body.sheet:not(#x){overflow:hidden!important;height:100svh;background:#E8EEF0}
+html body.sheet .mapw:not(#x):not(#y):not(#z){position:fixed!important;inset:0!important;height:100svh!important;min-height:0!important;z-index:0}
+html body.sheet #res.res:not(#x){position:fixed!important;left:0;right:0;top:0;height:calc(100svh - 60px);z-index:40;overflow:hidden;overscroll-behavior:contain;border-radius:24px 24px 0 0;padding:0 18px calc(40px + env(safe-area-inset-bottom))!important;background:rgba(255,255,255,.9)!important;-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);border-top:1px solid rgba(255,255,255,.95);box-shadow:0 -8px 30px rgba(21,42,46,.16);will-change:transform;touch-action:pan-x}
+html body.sheet #res.res.sh-full:not(#x){overflow-y:auto;touch-action:pan-y}
+html body.sheet .sh-grab{display:block;width:100%;height:26px;border:0;background:none;padding:0;margin:0 0 4px;cursor:pointer;position:relative}
+html body.sheet .sh-grab::after{content:"";position:absolute;left:50%;top:10px;width:40px;height:5px;margin-left:-20px;border-radius:3px;background:rgba(21,42,46,.22)}
+html body.sheet #slpill{display:none!important}
+html body.sheet #mapbox #pop.pop.on:not(#x):not(#y):not(#z){bottom:144px!important;background:rgba(255,255,255,.9)!important;-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);border:1px solid rgba(255,255,255,.95)!important;box-shadow:0 10px 30px rgba(21,42,46,.18)!important;transition:opacity .2s}
+html body.sheet #mapbox #pop .bd:not(#x):not(#y):not(#z){background:transparent!important}
+html body.sheet .res .mode:not(#x){margin-top:0!important}
+}
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){html body.sheet #res.res:not(#x),html body.sheet #mapbox #pop.pop.on:not(#x):not(#y):not(#z){background:#fff!important}}
+</style>
 <style id="clu-css">@media(max-width:760px){html body .zpill.on:not(#x){top:78px!important}}</style>
 <style id="ph-card">@media(max-width:760px){
 .map{touch-action:pan-y!important;cursor:default!important}
@@ -568,7 +584,7 @@ function openPop(t,nopan){S.pop=t;const p=$('pop');const L=popList(),ki=L.findIn
  p.querySelectorAll('[data-st]').forEach(bn=>bn.onclick=e=>{e.stopPropagation();const j=(ki+(+bn.dataset.st)+n)%n;flyTo(L[j])});
  p.classList.remove('full');p.onclick=ev=>{if(!ev.target.closest('.x,.go'))p.classList.add('full')};p.classList.add('on');p.querySelector('.x').onclick=e=>{e.stopPropagation();closePop()};render();placePop();
  const [w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k,pw=p.offsetWidth+32,ph=p.offsetHeight+32;
- if(PH()){p.onclick=ev=>{if(!ev.target.closest('.x,.go,[data-st]'))location.href=`towns/${t.id}-v3.html`};const avail=h-p.offsetHeight-10-14;if(sy<70+HDR()||sy>avail||sx<30||sx>w-30)go([t.x-w/2*k,t.y-Math.max(90+HDR(),(70+HDR()+avail)/2)*k,v[2],v[3]],420);return}if(FIXED())return;if(nopan){const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;if(w>=600&&(sx<380||sx>w-60||sy<60||sy>h-40)){const cx=(380+w)/2;go([t.x-cx*k,t.y-h/2*k,v[2],v[3]],400)}return}const nar=w<600,under=nar?sy>h-ph:(sx<pw&&sy>h-ph),out=sx<40||sx>w-40||sy<40||sy>h-40;
+ if(PH()){p.onclick=ev=>{if(!ev.target.closest('.x,.go,[data-st]'))location.href=`towns/${t.id}-v3.html`};if(SHON()&&SHEET.st!='peek'&&!nopan)shSet('peek',true);const avail=SHON()?h-SHRES()-6:h-p.offsetHeight-10-14;if(sy<70+HDR()||sy>avail||sx<30||sx>w-30)go([t.x-w/2*k,t.y-Math.max(90+HDR(),(70+HDR()+avail)/2)*k,v[2],v[3]],420);return}if(FIXED())return;if(nopan){const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;if(w>=600&&(sx<380||sx>w-60||sy<60||sy>h-40)){const cx=(380+w)/2;go([t.x-cx*k,t.y-h/2*k,v[2],v[3]],400)}return}const nar=w<600,under=nar?sy>h-ph:(sx<pw&&sy>h-ph),out=sx<40||sx>w-40||sy<40||sy>h-40;
  if(under||out){const cx=nar?w/2:(pw+w)/2,cy=nar?(h-ph)/2:h/2;go([t.x-cx*k,t.y-cy*k,v[2],v[3]])}}
 function closePop(){S.pop=null;rowOn();$('pop').classList.remove('on');render();if(S.mode=='vibes'){document.querySelectorAll('.vm-row.on').forEach(r=>r.classList.remove('on'))}}
 function tags(){chips();const tg=$('tag');const r=S.region;tg.textContent=r?r+' ✕':'';tg.classList.toggle('on',!!r)}
@@ -639,7 +655,7 @@ const RCOPY={"daytona-flagler": {"h": "Daytona, New Smyrna and Flagler", "tag": 
 LK.REGIONS.forEach(r=>{const k='r:'+r.id;VIBES[k]=RCOPY[r.id]?RCOPY[r.id].h:r.map;VCOL[k]=RCOL;VSUB[k]=RCOPY[r.id]?RCOPY[r.id].tag:''});
 T.forEach(t=>{const g=LD[t.id]&&LD[t.id].reg;if(g&&!t.v.includes('r:'+g))t.v.push('r:'+g)});
 S.sub='styles';
-function setMode(m){S.hover=null;setTimeout(()=>{slPill();if(m!='sliders')slCar([])},60);if(m=='regions'||m=='explore'){m='vibes';if(S.sub!='regions'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='regions'}else if(m=='vibes'){if(S.sub!='styles'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='styles'}else if(m=='sliders'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.mode=m;if(m!='explore')setTimeout(()=>{S.zoomedTo=null;home()},40);setTimeout(()=>{render();if(m!='sliders')list()},30);$('mhint').textContent=S.sub=='regions'&&m=='vibes'?'Pick a stretch of coast and tap a town.':{explore:'See every beach town on the map and narrow by style or price.',vibes:'Pick the feel you want and see where it lives.',sliders:'Tell us what matters and we rank all 167 towns for you.'}[m];document.body.classList.toggle('vibes',m=='vibes');document.body.classList.toggle('sliders',m=='sliders');if(m=='sliders'){requestAnimationFrame(()=>{render()});document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));closePop();S.region='';tags();slRender();if(!S.top.length)go(fit(ALL,.02));return}document.body.classList.toggle('pick',m=='vibes'&&!!S.style);document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==(m=='vibes'&&S.sub=='regions'?'regions':m)));
+function setMode(m){S.hover=null;setTimeout(()=>{shSync();slPill();if(m!='sliders')slCar([])},60);if(m=='regions'||m=='explore'){m='vibes';if(S.sub!='regions'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='regions'}else if(m=='vibes'){if(S.sub!='styles'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='styles'}else if(m=='sliders'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.mode=m;if(m!='explore')setTimeout(()=>{S.zoomedTo=null;home()},40);setTimeout(()=>{render();if(m!='sliders')list()},30);$('mhint').textContent=S.sub=='regions'&&m=='vibes'?'Pick a stretch of coast and tap a town.':{explore:'See every beach town on the map and narrow by style or price.',vibes:'Pick the feel you want and see where it lives.',sliders:'Tell us what matters and we rank all 167 towns for you.'}[m];document.body.classList.toggle('vibes',m=='vibes');document.body.classList.toggle('sliders',m=='sliders');if(m=='sliders'){requestAnimationFrame(()=>{render()});document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));closePop();S.region='';tags();slRender();if(!S.top.length)go(fit(ALL,.02));return}document.body.classList.toggle('pick',m=='vibes'&&!!S.style);document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==(m=='vibes'&&S.sub=='regions'?'regions':m)));
  if(m=='vibes'&&!S.style){S.region='';tags();closePop();go(fit(ALL,.02))}list();if(S.booted&&m=='vibes'&&S.sub=='regions'&&!S.style){const r=rGet();if(r&&VIBES['r:'+r])setTimeout(()=>pickStyle('r:'+r),60)}}
 function fitStyle(k){const L=T.filter(t=>t.v.includes(k));const b=[Math.min(...L.map(t=>t.lo)),Math.max(...L.map(t=>t.lo)),Math.min(...L.map(t=>t.la)),Math.max(...L.map(t=>t.la))];if(isR(k)){const p=.15,f=fit([b[0]-p,b[1]+p,b[2]-p,b[3]+p],.1),[w,h]=size();if(w<600)return f;const L0=Math.min(470,w*.42),nw=f[2]*w/(w-L0),nh=nw*h/w;return [f[0]+f[2]-nw,f[1]+f[3]/2-nh/2,nw,nh]}const pad=.35;return fit([b[0]-1.1,b[1]+1.1,b[2]-pad,b[3]+pad],.04)}
 $('tiles').innerHTML='';[].map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('img/vibes/${k}.webp')"><i><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>${T.filter(t=>t.v.includes(k)).length} towns</i></div><b>${VIBES[k]}</b><small>${VSUB2[k]}</small></button>`).join('');
@@ -675,10 +691,33 @@ function slCar(L){const c=$('slcar');if(!c)return;if(true){c.innerHTML='';c.clas
  c.classList.add('on');c.scrollLeft=0;S.hover=L[0].id;
  if(!c.dataset.w){c.dataset.w=1;let tm;c.addEventListener('scroll',()=>{clearTimeout(tm);tm=setTimeout(()=>{const cs=[...c.children];if(!cs.length)return;const mid=c.scrollLeft+c.clientWidth/2;let best=cs[0],bd=1e9;cs.forEach(e=>{const d=Math.abs(e.offsetLeft+e.offsetWidth/2-mid);if(d<bd){bd=d;best=e}});if(S.hover!==best.dataset.id){S.hover=best.dataset.id;slPanTo(T.find(t=>t.id==S.hover))}},110)},{passive:true})}}
 function slCarTo(id,smooth){const c=$('slcar'),e=c&&c.querySelector(`[data-id="${id}"]`);if(!e)return;S.hover=id;c.scrollTo({left:e.offsetLeft-(c.clientWidth-e.offsetWidth)/2,behavior:smooth?'smooth':'auto'});render()}
-function slFit(P){const[w,h]=size(),T0=64+HDR(),pe=$('pop'),B0=pe&&pe.classList.contains('on')?pe.offsetHeight+24:40,b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))],f0=fit([b[0]-.3,b[1]+.3,b[2]-.18,b[3]+.18],.04),q=h/Math.max(200,h-T0-B0),nw=f0[2]*q,nh=f0[3]*q,kk=nh/h;return [f0[0]-(nw-f0[2])/2,f0[1]+f0[3]/2-(T0+(h-T0-B0)/2)*kk,nw,nh]}
+function slFit(P){const[w,h]=size(),SH=SHON(),T0=SH?70:64+HDR(),pe=$('pop'),B0=SH?SHRES():(pe&&pe.classList.contains('on')?pe.offsetHeight+24:40),b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))],f0=fit([b[0]-.3,b[1]+.3,b[2]-.18,b[3]+.18],.04),q=h/Math.max(200,h-T0-B0),nw=f0[2]*q,nh=f0[3]*q,kk=nh/h;return [f0[0]-(nw-f0[2])/2,f0[1]+f0[3]/2-(T0+(h-T0-B0)/2)*kk,nw,nh]}
 function slPanTo(t){if(!t)return;const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;if(sx<50||sx>w-50||sy<50||sy>h-170)go([t.x-w/2*k,t.y-(h-150)/2*k,v[2],v[3]],450);else render()}
+// Phone Slider Map: Compass style sheet over a fixed map (peek, half, full)
+const SHEET={st:'peek',y:0};
+const SHON=()=>document.body.classList.contains('sheet');
+function shStops(){const vh=innerHeight;return {peek:vh-132,half:Math.round(vh*.44),full:60}}
+function SHRES(){const vh=innerHeight,pe=$('pop');if(SHEET.st=='peek')return 132+(pe&&pe.classList.contains('on')?pe.offsetHeight+12:0)+14;return vh-shStops()[SHEET.st]+14}
+function shApply(y,anim){const r=$('res');SHEET.y=y;r.style.transition=anim?'transform .32s cubic-bezier(.2,.8,.2,1)':'none';r.style.transform=`translate3d(0,${y}px,0)`;
+ const st=shStops(),pe=$('pop');if(pe){const o=Math.max(0,Math.min(1,(y-st.half)/(st.peek-st.half-40)));pe.style.opacity=o;pe.style.pointerEvents=o<.5?'none':''}}
+function shSet(name,noFit){const st=shStops();SHEET.st=name;shApply(st[name],true);const r=$('res');r.classList.toggle('sh-full',name=='full');if(name!='full')r.scrollTop=0;
+ if(!noFit&&name!='full'&&S.top&&S.top.length){const L=S.top.slice(0,5).map(id=>T.find(t=>t.id==id));setTimeout(()=>go(slFit(L),450),40)}}
+function shSync(){const on=S.mode=='sliders'&&PH();const r=$('res');if(!r)return;if(on&&!SHON()){document.body.classList.add('sheet');shSet('peek',true);setTimeout(()=>{render();if(S.top.length)go(slFit(S.top.slice(0,5).map(id=>T.find(t=>t.id==id))),0);else go(fit(ALL,.02),0)},30)}
+ else if(!on&&SHON()){document.body.classList.remove('sheet');r.style.transform='';r.style.transition='';const pe=$('pop');if(pe){pe.style.opacity='';pe.style.pointerEvents=''}}}
+(function(){const r=$('res');let d=null;
+ const skip=t=>t.closest('input,select,textarea');
+ r.addEventListener('touchstart',e=>{if(!SHON()||skip(e.target))return;const t=e.touches[0];d={y0:t.clientY,s0:SHEET.y,t0:performance.now(),own:false,last:t.clientY,lt:performance.now(),v:0}},{passive:true});
+ r.addEventListener('touchmove',e=>{if(!d)return;const t=e.touches[0],dy=t.clientY-d.y0;
+  if(!d.own){if(Math.abs(dy)<6)return;if(SHEET.st=='full'&&(r.scrollTop>0||dy<0)){d=null;return}d.own=true}
+  e.preventDefault();const st=shStops();let y=d.s0+dy;if(y<st.full)y=st.full-(st.full-y)*.3;if(y>st.peek)y=st.peek+(y-st.peek)*.3;shApply(y,false);
+  const now=performance.now();d.v=(t.clientY-d.last)/Math.max(1,now-d.lt);d.last=t.clientY;d.lt=now},{passive:false});
+ r.addEventListener('touchend',()=>{if(!d)return;const own=d.own,v=d.v;d=null;if(!own)return;const st=shStops(),y=SHEET.y;let n;
+  if(v<-.5)n=y>st.half?'half':'full';else if(v>.5)n=y<st.half?'half':'peek';else n=['peek','half','full'].sort((a,b)=>Math.abs(st[a]-y)-Math.abs(st[b]-y))[0];shSet(n)});
+ const g=document.createElement('button');g.className='sh-grab';g.type='button';g.setAttribute('aria-label','Show more');r.prepend(g);
+ g.addEventListener('click',()=>{if(!SHON())return;shSet(SHEET.st=='peek'?'half':SHEET.st=='half'?'full':'peek')});
+ addEventListener('resize',()=>{if(SHON())shSet(SHEET.st,true)});})();
 function slPill(){let p=$('slpill');if(!p){p=document.createElement('button');p.id='slpill';p.className='slpill';document.body.appendChild(p);p.onclick=()=>{const sl=$('sl');if(!sl)return;const y=sl.getBoundingClientRect().top+scrollY-12;scrollTo({top:p.classList.contains('dn')?y:0,behavior:'smooth'})};addEventListener('scroll',()=>slPill(),{passive:true})}
- const sl=$('sl');if(!sl||!SLM()){p.classList.remove('on');return}const y=sl.getBoundingClientRect().top+scrollY-12,dn=scrollY<y/2;p.classList.add('on');p.classList.toggle('dn',dn);
+ const sl=$('sl');if(!sl||!SLM()||SHON()){p.classList.remove('on');return}const y=sl.getBoundingClientRect().top+scrollY-12,dn=scrollY<y/2;p.classList.add('on');p.classList.toggle('dn',dn);
  const ic='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>';
  p.innerHTML=dn?`${ic} Set your priorities`:(S.top.length?'See your top 5 on the map ↑':'Back to the map ↑')}
 function slFitWord(v,best,i){return S.tie?'':i===0?'Best fit':best-v<=.01?'':best-v<=.04?'Great fit':'Good fit'}
