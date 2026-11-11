@@ -12,7 +12,7 @@
     var quizHref=quiz?quiz.href:new URL('/quiz-photo.html',location.href).href;
     var townsHref=links[0].href.split('?')[0];
     var logo=hdr.querySelector('img');
-    var logoSrc=new URL('/img/fc-logo-blue.png',location.href).href;
+    var logoSrc=new URL('/img/fc-logo-black.png',location.href).href;
 
     var css=document.createElement('style');
     css.textContent=
