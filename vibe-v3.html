@@ -346,8 +346,28 @@ html body .vp .tiles.vt:not(#x) .tile .ph i{top:7px!important;left:7px!important
 html body .vp .tiles.vt:not(#x) .tile .ph i span{width:8px!important;height:8px!important;margin-right:5px!important}
 html body .vp.vt-open .tiles.vt:not(#x){display:grid!important;grid-template-columns:repeat(3,1fr)!important;overflow:visible;margin:0!important;padding:0 0 8px!important}
 html body .vp.vt-open .tiles.vt:not(#x) .tile{width:auto!important}
+html body .vp .tiles.vt:not(#x) .tile.on .ph{box-shadow:0 0 0 3px #fff,0 0 0 5px #152A2E!important}
+html body.pick .vp .tiles.vt:not(#x) .tile:not(.on) .ph{filter:saturate(.55) brightness(.9)}
+html body .vp .tiles.vt:not(#x){padding-top:6px!important}
 }
 @media (min-width:761px){.vp .vm-all{display:none}}
+</style><style id="vm-pop">
+@media (max-width:760px){
+html body.vibes #pop.pop.on:not(#x),html body.vibes #pop.pop.on.full:not(#x){position:fixed!important;display:block!important;left:10px!important;right:10px!important;top:auto!important;bottom:calc(10px + env(safe-area-inset-bottom))!important;width:auto!important;max-width:none!important;max-height:calc(100svh - 90px);overflow:auto;z-index:60;border-radius:22px!important;background:#FBFAF7!important;box-shadow:0 18px 50px rgba(21,42,46,.28)!important;grid-template-columns:none!important;animation:vpUp .32s cubic-bezier(.2,.8,.2,1)}
+@keyframes vpUp{from{transform:translateY(30px);opacity:0}to{transform:none;opacity:1}}
+html body.vibes #pop .ph:not(#x){height:170px!important;min-height:0!important;width:auto!important;border-radius:0!important}
+html body.vibes #pop .x:not(#x){width:42px!important;height:42px!important;right:12px!important;top:12px!important;font-size:24px!important;background:#fff!important;border-radius:50%!important;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+html body.vibes #pop .bd:not(#x){padding:18px 22px 18px!important}
+html body.vibes #pop .eb:not(#x){font-size:12px!important;letter-spacing:.16em!important;line-height:1.35}
+html body.vibes #pop h3:not(#x){font-size:34px!important;line-height:1.05!important;padding-right:0!important;margin-top:6px!important}
+html body.vibes #pop p:not(#x){display:block!important;font-family:'Libre Caslon Text',serif;font-size:17px!important;line-height:1.4!important;color:#2F3F42;margin:10px 0 0!important}
+html body.vibes #pop .tags:not(#x){margin-top:12px!important}
+html body.vibes #pop .why2:not(#x){display:none}
+html body.vibes #pop .pnav:not(#x){margin-top:18px;align-items:center}
+html body.vibes #pop .pnav button:not(#x){border:0!important;background:none!important;width:40px!important;font-size:26px!important}
+html body.vibes #pop .go:not(#x){padding:14px!important;font-size:16px!important;margin-top:0!important}
+html body.vibes #pop .of:not(#x){margin-top:8px!important;font-size:13px!important}
+}
 </style></head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
@@ -517,14 +537,14 @@ function vOrder(){const R=LK.REGIONS.map(r=>r.id),pos=t=>t.c=='panhandle'?t.lo:t
  return T.filter(t=>(!S.style||t.v.includes(S.style))&&needOk(t)).sort((x,y)=>R.indexOf(LD[x.id].reg)-R.indexOf(LD[y.id].reg)||pos(x)-pos(y))}
 function needsHTML(){const n=S.need,c=T.filter(t=>(!S.style||t.v.includes(S.style))&&needOk(t)).length;
  return `<div class="nd"><div class="vm-eb">What you need</div><div class="nd-row"><label class="nd-sel${n.bud?' on':''}"><select id="ndbud" aria-label="Budget">${LK.NBUD.map(([v,l])=>`<option value="${v}"${(n.bud||0)==v?' selected':''}>${l}</option>`).join('')}</select></label><button class="nd-c${n.school?' on':''}" data-need="school" aria-pressed="${!!n.school}">Good schools</button><button class="nd-c${n.air?' on':''}" data-need="air" aria-pressed="${!!n.air}">Near airport</button></div>${needOn()?`<p class="nd-fine"><b>${c}</b> town${c==1?'':'s'} match · <button class="nd-clear" id="ndclr">Clear</button></p>`:''}</div>`}
-function vRender(){const v=S.style;let h;
- if(!v){const cnt=k=>T.filter(t=>t.v.includes(k)&&needOk(t)).length;
+function vRender(){const _r=document.querySelector('#vp .tiles.vt'),_sl=_r?_r.scrollLeft:0;setTimeout(()=>{const r=document.querySelector('#vp .tiles.vt');if(r&&_sl)r.scrollLeft=_sl},0);const v=S.style;let h;const MOB=matchMedia('(max-width:760px)').matches;
+ if(!v||MOB){const cnt=k=>T.filter(t=>t.v.includes(k)&&needOk(t)).length;
   h=`<div class="vm-lh"><div class="vm-eb">${T.length} beach towns · ${LK.VFEEL.length} styles</div><h2>Find your stretch of coast</h2><button type="button" class="vm-all" onclick="this.closest('.vp').classList.toggle('vt-open');this.textContent=this.closest('.vp').classList.contains('vt-open')?'Show less':'See all ${LK.VFEEL.length}'">See all ${LK.VFEEL.length}</button></div><div class="tiles vt">${LK.VFEEL.map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('img/vibes/${k}.webp')"><i><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>${cnt(k)}</i><span class="tt"><b>${VIBES[k]}</b><small>${LK.VSUBL[k]||VSUB[k]}</small></span></div></button>`).join('')}</div>`}
  else{const L=vOrder();
   h=`<div class="vm-sh" style="background-image:url('img/vibes/${v}.webp')"><button class="vm-back" id="vback">← All styles</button><div class="vm-sht"><h2><i style="background:${VCOL[v]}"></i>${VIBES[v]}</h2><p>${L.length} towns · ${LK.VSUBL[v]||VSUB[v]}</p></div></div>${LK.VGUIDE[v]?`<a class="vm-guide" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="vm-eb vm-lt">Panhandle around to the Keys</div><ol class="vm-list">${L.map((t,i)=>`<li><button class="vm-row${S.pop&&S.pop.id==t.id?' on':''}" data-vpick="${t.id}" style="--vc:${VCOL[v]}"><span class="vm-n">${i+1}</span><span class="vm-rt"><b>${t.n}</b><small>${LD[t.id].rn}</small></span></button></li>`).join('')}</ol>`}
  h+=`<div class="vm-lf"><a href="quiz-photo.html">See your top 5 towns</a><p>8 quick questions, matched to how you live</p></div>`;
  $('vp').innerHTML=h;
- $('vp').querySelectorAll('.tile').forEach(b=>b.onclick=()=>pickStyle(b.dataset.k));
+ $('vp').querySelectorAll('.tile').forEach(b=>{b.classList.toggle('on',b.dataset.k==S.style);b.onclick=()=>{if(S.style==b.dataset.k){$('back').onclick();return}const sl=$('vp').querySelector('.tiles.vt').scrollLeft;pickStyle(b.dataset.k);const r=$('vp').querySelector('.tiles.vt');if(r)r.scrollLeft=sl}});
  $('vp').querySelectorAll('[data-vpick]').forEach(b=>{b.onclick=()=>flyTo(T.find(t=>t.id==b.dataset.vpick));b.onmouseenter=()=>{S.hover=b.dataset.vpick;render()};b.onmouseleave=()=>{S.hover=null;render()}});
  $('vp').querySelectorAll('[data-need]').forEach(b=>b.onclick=()=>{const k=b.dataset.need;S.need[k]=!S.need[k];needChange()});
  $('ndbud')&&($('ndbud').onchange=e=>{S.need.bud=+e.target.value||0;needChange()});
