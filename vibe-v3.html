@@ -321,13 +321,32 @@ html body .zoom:not(#x) button{width:40px!important;height:40px!important;border
 html body .ctl:not(#x){border-radius:999px!important;background:rgba(255,255,255,.8)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(21,42,46,.12)!important;box-shadow:0 4px 14px rgba(21,42,46,.12)!important;font:500 14px 'DM Sans',sans-serif!important;color:#152A2E!important}
 html body .res .back:not(#x),html body .res .save:not(#x){background:none!important;border:0!important;box-shadow:none!important;font:500 14px 'DM Sans',sans-serif!important;color:#152A2E!important;text-decoration:underline;text-underline-offset:3px;padding:0!important}
 html body .sl-quiz:not(#x) a{border-radius:999px!important}
-</style><style id="sl-fit">@media(max-width:760px){
+</style><style id="sl-car">.slcar{display:none}#slpill{display:none}
+@media(max-width:760px){
+html body.sliders .slcar.on:not(#x){display:flex;position:absolute;left:0;right:0;bottom:12px;z-index:6;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.slcar::-webkit-scrollbar{display:none}
+.slcar .sc{flex:0 0 84%;scroll-snap-align:center;display:flex;background:#fff;border-radius:16px;overflow:hidden;box-shadow:0 6px 22px rgba(21,42,46,.18);text-decoration:none;color:#152A2E;height:112px}
+.slcar .sc .ph{flex:0 0 104px;background:#dfe5e5 center/cover}
+.slcar .sc .bd{flex:1;min-width:0;padding:11px 14px;display:flex;flex-direction:column;gap:3px}
+.slcar .sc .hd{display:flex;align-items:center;gap:8px;min-width:0}
+.slcar .sc i{flex:0 0 22px;height:22px;border-radius:50%;background:#152A2E;color:#fff;font:600 12px/22px 'DM Sans',sans-serif;text-align:center;font-style:normal}
+.slcar .sc b{font:500 17px/1.2 'DM Sans',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.slcar .sc small{font:13px/1.3 'DM Sans',sans-serif;color:#6B7678;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.slcar .sc .go{margin-top:auto;font:600 13px 'DM Sans',sans-serif;color:#152A2E}
+html body.sliders #pop:not(#x){display:none!important}
+html body.sliders #sltop:not(#x){display:none!important}
+html body.sliders #slpill.on:not(#x){display:inline-flex;align-items:center;gap:8px;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom));z-index:40;background:#152A2E;color:#fff;border:0;border-radius:999px;padding:12px 20px;font:600 15px 'DM Sans',sans-serif;box-shadow:0 6px 20px rgba(21,42,46,.28);white-space:nowrap}
+html body.sliders #slpill.on.dn:not(#x){top:78px;bottom:auto;background:#fff;color:#152A2E;padding:10px 16px;font-size:14px;box-shadow:0 3px 14px rgba(21,42,46,.18)}
+html body.sliders .sl2 .sl-ends:not(#x){display:none!important}html body.sliders .slh .slh-eb:not(#x){margin-bottom:0!important}html body.sliders .slh h2:not(#x){font-size:25px!important;margin:2px 0 6px!important}
+html body.sliders .sl-mail:not(#x){margin-top:70px}
+}</style>
+<style id="sl-fit">@media(max-width:760px){
 html body.sliders .mapw:not(#x){height:calc(100svh - 64px - 66px)!important;min-height:340px}
 html body.sliders #res .mode:not(#x){margin-top:12px!important;margin-bottom:6px!important}
 html body.sliders .slh h2:not(#x){font-size:27px!important;margin:4px 0 8px!important;line-height:1.1}
 html body.sliders .slh .sl-how:not(#x){display:none!important}
 html body.sliders .sl2-where:not(#x){margin:2px 0 4px!important}
-html body.sliders .sl2:not(#x){padding:7px 0!important;grid-template-columns:1fr 50%!important;align-items:center}
+html body.sliders .sl2:not(#x){padding:4px 0!important;grid-template-columns:58% 1fr!important;align-items:center}
 html body.sliders .sl2 label b:not(#x){font-size:15px!important;line-height:1.2}
 html body.sliders .sl2 output:not(#x){font-size:12.5px!important;line-height:1.25}
 }</style>
@@ -387,7 +406,7 @@ html body.vibes #pop .of:not(#x){margin-top:8px!important;font-size:13px!importa
 <nav class="top"><a href="towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="articles/index.html" data-nav="articles">Articles</a></nav>
 <a class="cta" href="quiz-photo.html">Take the quiz</a></header>
 <div class="main"><div class="mapw"><div class="bar" id="bar" style="display:none"></div>
-<div class="map" id="mapbox"><svg id="map"><g id="base"></g><g id="ov"></g></svg>
+<div class="map" id="mapbox"><svg id="map"><g id="base"></g><g id="ov"></g></svg><div class="slcar" id="slcar" aria-label="Your top 5"></div>
 <div class="rdd" id="rdd"><button id="rbtn"><span style="font-weight:400;color:#6B7678">Region:</span> <span id="rname">All of Florida</span></button><div class="rmenu" id="rmenu"></div></div><button class="ctl" id="all">Show all of Florida</button>
 <div class="zoom"><button id="zin" aria-label="Zoom in">+</button><button id="zout" aria-label="Zoom out">&minus;</button></div>
 <div class="pop" id="pop"></div></div></div>
@@ -505,10 +524,11 @@ function ndWhy(t){const n=S.need,L=[],d=LD[t.id];S.style&&!isR(S.style)&&t.v.inc
  return L.length?`<div class="why2"><b>Why it fits</b><ul>${L.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}
 const fK=k=>k>=1000?'$'+(k/1000).toFixed(k>=10000?0:2).replace(/\.?0+$/,'')+'M':'$'+Math.round(k)+'K';
 function popList(){if(S.mode=='sliders')return S.top.slice(0,5).map(id=>T.find(t=>t.id==id));if(S.mode=='vibes'&&S.style)return vOrder();return []}
-function openPop(t,nopan){S.pop=t;const p=$('pop');const L=popList(),ki=L.findIndex(x=>x.id==t.id),n=L.length,nx=n>1&&ki>=0?L[(ki+1)%n]:null,sh=x=>x.n.replace(/ \(.*\)$/,'');
+function openPop(t,nopan){if(SLM()&&S.top.slice(0,5).includes(t.id)){slCarTo(t.id,true);return}
+S.pop=t;const p=$('pop');const L=popList(),ki=L.findIndex(x=>x.id==t.id),n=L.length,nx=n>1&&ki>=0?L[(ki+1)%n]:null,sh=x=>x.n.replace(/ \(.*\)$/,'');
  const d=LD[t.id],tags=(S.style&&!isR(S.style)&&t.v.includes(S.style)?[S.style]:[]).concat(t.v.filter(v=>v!==S.style&&LK.VFEEL.includes(v))).slice(0,3).map(vTag).join('');
  let eb=d.rn,mid='';
- if(S.mode=='sliders'&&ki>=0){eb=`${d.rn} · <b>${slFitWord(fitSl(t),S.best,ki)}</b>`;mid=`<div class="why1">${slWhy(t)}</div>`}
+ if(S.mode=='sliders'&&ki>=0){{const fw=slFitWord(fitSl(t),S.best,ki),wy=slWhy(t);eb=fw?`${d.rn} · <b>${fw}</b>`:d.rn;mid=wy?`<div class="why1">${wy}</div>`:''}}
  else if(S.mode=='vibes')mid=ndWhy(t);
  const nav=ki>=0&&n>1;
  p.innerHTML=`<div class="ph" style="background-image:url('${t.img}')">${S.mode=='sliders'&&ki>=0?`<span class="rkb">${ki+1}</span>`:''}</div><button class="x" aria-label="Close">&times;</button><div class="bd"><div class="eb">${eb}</div><h3>${t.n}</h3>${tags?`<div class="tags">${tags}</div>`:''}${S.mode=='explore'?(t.p?`<div class="pr">${t.p}<small>typical home</small></div>`:''):''}${mid}<p>${t.b}</p>${nav?`<div class="pnav"><button data-st="-1" aria-label="Previous town">‹</button><a class="go" href="towns/${t.id}-v3.html">Explore ${sh(t)} →</a><button data-st="1" aria-label="Next town">›</button></div><div class="of">${ki+1} of ${S.mode=='sliders'?'your top 5':n} · next up ${sh(nx)}</div>`:`<a class="go" href="towns/${t.id}-v3.html">Explore this town →</a>`}</div>`;
@@ -580,7 +600,7 @@ const RCOPY={"daytona-flagler": {"h": "Daytona, New Smyrna and Flagler", "tag": 
 LK.REGIONS.forEach(r=>{const k='r:'+r.id;VIBES[k]=RCOPY[r.id]?RCOPY[r.id].h:r.map;VCOL[k]=RCOL;VSUB[k]=RCOPY[r.id]?RCOPY[r.id].tag:''});
 T.forEach(t=>{const g=LD[t.id]&&LD[t.id].reg;if(g&&!t.v.includes('r:'+g))t.v.push('r:'+g)});
 S.sub='styles';
-function setMode(m){if(m=='regions'||m=='explore'){m='vibes';if(S.sub!='regions'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='regions'}else if(m=='vibes'){if(S.sub!='styles'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='styles'}else if(m=='sliders'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.mode=m;if(m!='explore')setTimeout(()=>{S.zoomedTo=null;home()},40);setTimeout(()=>{render();if(m!='sliders')list()},30);$('mhint').textContent=S.sub=='regions'&&m=='vibes'?'Pick a stretch of coast and tap a town.':{explore:'See every beach town on the map and narrow by style or price.',vibes:'Pick the feel you want and see where it lives.',sliders:'Tell us what matters and we rank all 167 towns for you.'}[m];document.body.classList.toggle('vibes',m=='vibes');document.body.classList.toggle('sliders',m=='sliders');if(m=='sliders'){requestAnimationFrame(()=>{render()});document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));closePop();S.region='';tags();slRender();if(!S.top.length)go(fit(ALL,.02));return}document.body.classList.toggle('pick',m=='vibes'&&!!S.style);document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==(m=='vibes'&&S.sub=='regions'?'regions':m)));
+function setMode(m){setTimeout(()=>{slPill();if(m!='sliders')slCar([])},60);if(m=='regions'||m=='explore'){m='vibes';if(S.sub!='regions'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='regions'}else if(m=='vibes'){if(S.sub!='styles'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='styles'}else if(m=='sliders'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.mode=m;if(m!='explore')setTimeout(()=>{S.zoomedTo=null;home()},40);setTimeout(()=>{render();if(m!='sliders')list()},30);$('mhint').textContent=S.sub=='regions'&&m=='vibes'?'Pick a stretch of coast and tap a town.':{explore:'See every beach town on the map and narrow by style or price.',vibes:'Pick the feel you want and see where it lives.',sliders:'Tell us what matters and we rank all 167 towns for you.'}[m];document.body.classList.toggle('vibes',m=='vibes');document.body.classList.toggle('sliders',m=='sliders');if(m=='sliders'){requestAnimationFrame(()=>{render()});document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));closePop();S.region='';tags();slRender();if(!S.top.length)go(fit(ALL,.02));return}document.body.classList.toggle('pick',m=='vibes'&&!!S.style);document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==(m=='vibes'&&S.sub=='regions'?'regions':m)));
  if(m=='vibes'&&!S.style){S.region='';tags();closePop();go(fit(ALL,.02))}list()}
 function fitStyle(k){const L=T.filter(t=>t.v.includes(k));const b=[Math.min(...L.map(t=>t.lo)),Math.max(...L.map(t=>t.lo)),Math.min(...L.map(t=>t.la)),Math.max(...L.map(t=>t.la))];if(isR(k)){const p=.15,f=fit([b[0]-p,b[1]+p,b[2]-p,b[3]+p],.1),[w,h]=size();if(w<600)return f;const L0=Math.min(470,w*.42),nw=f[2]*w/(w-L0),nh=nw*h/w;return [f[0]+f[2]-nw,f[1]+f[3]/2-nh/2,nw,nh]}const pad=.35;return fit([b[0]-1.1,b[1]+1.1,b[2]-pad,b[3]+pad],.04)}
 $('tiles').innerHTML='';[].map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('img/vibes/${k}.webp')"><i><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>${T.filter(t=>t.v.includes(k)).length} towns</i></div><b>${VIBES[k]}</b><small>${VSUB2[k]}</small></button>`).join('');
@@ -609,10 +629,21 @@ function fitSl(t){let a=0,w=0,o=1;
 function slPri(){return SLC.map(([c])=>slAim(c,S.sl[c])).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]).map(x=>x[0])}
 function slTie(t){return slPri().slice(0,3).reduce((s,k,i)=>s+(LK.RANK_N-rkk(t,k))*(3-i),0)}
 function slRank(){const F=fitSl;return T.filter(slIn).sort((x,y)=>Math.round(100*F(y))-Math.round(100*F(x))||slTie(y)-slTie(x)||F(y)-F(x))}
-function slFitWord(v,best,i){return i===0?'Best fit':best-v<=.01?'Just as good':best-v<=.04?'Great fit':'Good fit'}
+const SLM=()=>S.mode=='sliders'&&matchMedia('(max-width:760px)').matches;
+function slCar(L){const c=$('slcar');if(!c)return;if(!SLM()||!L.length){c.innerHTML='';c.classList.remove('on');if(S.mode=='sliders')S.hover=null;return}
+ c.innerHTML=L.map((t,i)=>{const wy=slWhy(t);return `<a class="sc" href="towns/${t.id}-v3.html" data-id="${t.id}"><span class="ph" style="background-image:url('${t.img}')"></span><span class="bd"><span class="hd"><i>${i+1}</i><b>${t.n}</b></span><small>${wy||LD[t.id].rn}</small><span class="go">Explore →</span></span></a>`}).join('');
+ c.classList.add('on');c.scrollLeft=0;S.hover=L[0].id;
+ if(!c.dataset.w){c.dataset.w=1;let tm;c.addEventListener('scroll',()=>{clearTimeout(tm);tm=setTimeout(()=>{const cs=[...c.children];if(!cs.length)return;const mid=c.scrollLeft+c.clientWidth/2;let best=cs[0],bd=1e9;cs.forEach(e=>{const d=Math.abs(e.offsetLeft+e.offsetWidth/2-mid);if(d<bd){bd=d;best=e}});if(S.hover!==best.dataset.id){S.hover=best.dataset.id;slPanTo(T.find(t=>t.id==S.hover))}},110)},{passive:true})}}
+function slCarTo(id,smooth){const c=$('slcar'),e=c&&c.querySelector(`[data-id="${id}"]`);if(!e)return;S.hover=id;c.scrollTo({left:e.offsetLeft-(c.clientWidth-e.offsetWidth)/2,behavior:smooth?'smooth':'auto'});render()}
+function slPanTo(t){if(!t)return;const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;if(sx<50||sx>w-50||sy<50||sy>h-170)go([t.x-w/2*k,t.y-(h-150)/2*k,v[2],v[3]],450);else render()}
+function slPill(){let p=$('slpill');if(!p){p=document.createElement('button');p.id='slpill';p.className='slpill';document.body.appendChild(p);p.onclick=()=>{const sl=$('sl');if(!sl)return;const y=sl.getBoundingClientRect().top+scrollY-12;scrollTo({top:p.classList.contains('dn')?y:0,behavior:'smooth'})};addEventListener('scroll',()=>slPill(),{passive:true})}
+ const sl=$('sl');if(!sl||!SLM()){p.classList.remove('on');return}const y=sl.getBoundingClientRect().top+scrollY-12,dn=scrollY<y/2;p.classList.add('on');p.classList.toggle('dn',dn);
+ const ic='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></svg>';
+ p.innerHTML=dn?`${ic} Set your priorities`:(S.top.length?'See your top 5 on the map ↑':'Back to the map ↑')}
+function slFitWord(v,best,i){return S.tie?'':i===0?'Best fit':best-v<=.01?'':best-v<=.04?'Great fit':'Good fit'}
 function slWhy(t){const P=slPri(),best=P.filter(k=>rkk(t,k)<=40).sort((x,y)=>rkk(t,x)-rkk(t,y)),weak=P.filter(k=>rkk(t,k)>110),
  extra=LK.CATS.filter(k=>P.indexOf(k)<0&&rkk(t,k)<=10).sort((x,y)=>rkk(t,x)-rkk(t,y)),no=k=>'#'+rkk(t,k)+' for '+LK.WHY[k];
- let s=best.length?best.slice(0,2).map(no).join(', '):extra.length?'Known for '+LK.WHY[extra[0]]+' (#'+rkk(t,extra[0])+')':'A good all around fit';
+ let s=best.length?best.slice(0,2).map(no).join(', '):extra.length?'Known for '+LK.WHY[extra[0]]+' (#'+rkk(t,extra[0])+')':'';
  best.length&&extra.length&&best.length<2&&(s+=', plus '+LK.WHY[extra[0]]);weak.length&&(s+='. Lower on '+LK.WHY[weak[0]]);return s}
 function whyOf(t){return slWhy(t)}
 const slEnds=k=>{const w=k=='pace'?LK.PACE2:LK.SL_WORDS[k];return w?`<div class="sl-ends" aria-hidden="true"><span>${w[0]}</span><span>${w[4]}</span></div>`:''};
@@ -641,11 +672,11 @@ function slRender(){
  score(true)}
 function slReset(){SLC.forEach(([k])=>S.sl[k]=slDef(k));S.slBud=null;S.slPc=null;S.slPr=null;closePop();slRender();go(fit(ALL,.02))}
 function score(first){
- if(slNone()){S.top=[];closePop();$('sltop')&&($('sltop').innerHTML='');render();return}
- const R=slRank(),L=R.slice(0,5);S.top=R.slice(0,15).map(t=>t.id);S.F=fitSl;S.best=R.length?fitSl(R[0]):1;
- $('sltop')&&($('sltop').innerHTML=`<div class="vm-eb">Your top 5</div><ol>${L.map((t,i)=>`<li><a href="towns/${t.id}-v3.html"><span class="n">${i+1}</span><span class="nm"><b>${t.n}</b><small>${slWhy(t)}</small></span><span class="fw">${slFitWord(fitSl(t),S.best,i)}</span></a></li>`).join('')}</ol>`);
+ if(slNone()){S.top=[];closePop();$('sltop')&&($('sltop').innerHTML='');slCar([]);slPill();render();return}
+ const R=slRank(),L=R.slice(0,5);S.top=R.slice(0,15).map(t=>t.id);S.F=fitSl;S.best=R.length?fitSl(R[0]):1;S.tie=L.length>1&&S.best-fitSl(L[1])<=.01;slCar(L);setTimeout(slPill,0);
+ $('sltop')&&($('sltop').innerHTML=`<div class="vm-eb">Your top 5</div><ol>${L.map((t,i)=>`<li><a href="towns/${t.id}-v3.html"><span class="n">${i+1}</span><span class="nm"><b>${t.n}</b>${slWhy(t)?`<small>${slWhy(t)}</small>`:''}</span><span class="fw">${slFitWord(fitSl(t),S.best,i)}</span></a></li>`).join('')}</ol>`);
  clearTimeout(S.ft);if(FIXED()){home()}else S.ft=setTimeout(()=>{const P=L;const[w,h]=size(),nw=w<600;
-  if(nw){const b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))];go(fit([b[0]-1.3,b[1]+1.3,b[2]-.35,b[3]+.35],.04),first?0:500);return}
+  if(nw){const b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))];let f=fit([b[0]-1.3,b[1]+1.3,b[2]-.35,b[3]+.35],.04);if(SLM()){const q=h/Math.max(200,h-150),nw=f[2]*q,nh=f[3]*q;f=[f[0]-(nw-f[2])/2,f[1]-(nh-f[3])*.15,nw,nh]}go(f,first?0:500);return}
   const pe=$('pop'),cw=(pe.offsetWidth||320)+40,ch=(pe.offsetHeight||400)+40,KS=fit(ALL,0)[2]/w;
   const xs=P.map(t=>t.x),ys=P.map(t=>t.y),x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
   const gl=P.some(t=>t.c!='atlantic')?195:30,ar=P.some(t=>t.c=='atlantic')?165:30,T0=62,B0=h-34;
