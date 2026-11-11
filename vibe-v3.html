@@ -273,7 +273,57 @@ body.sliders .main{grid-template-columns:minmax(0,1fr) 420px}
 .tiles.vt .tt{left:11px;right:10px;bottom:10px}.tiles.vt .tt b{font-size:15.5px;font-weight:500;letter-spacing:-.015em;line-height:1.2}.tiles.vt .tt small{font-size:14px;line-height:1.3;color:#fff}
 .tiles.vt .tile:hover .ph{filter:brightness(1.06)}
 @media (min-width:761px){body.vibes .main{grid-template-columns:minmax(0,1fr) 420px}body.vibes .res{padding:18px 22px 30px}body.vibes .mode button{padding:8px 13px;font-size:14.5px}body.vibes .vm-sh{margin:-4px -22px 0}body.vibes .vm-sht{padding:0 22px 16px}}
-</style><script src="assets/dm-titles.js?v=3"></script><script src="assets/fc-connect.js"></script></head><body>
+</style><script src="assets/dm-titles.js?v=3"></script><script src="assets/fc-connect.js"></script><style id="vm-polish">
+/* map labels: Caslon names places */
+html body svg text.lbl{font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;letter-spacing:0!important;paint-order:stroke;stroke:#F3F1EC;stroke-width:3px;stroke-linejoin:round}
+html body svg text.sea{font-family:'Libre Caslon Display',Georgia,serif!important;font-style:italic;font-weight:400!important;letter-spacing:.02em!important}
+html body svg text.city{font-family:'DM Sans',sans-serif!important;letter-spacing:.14em!important;font-weight:500!important}
+/* mode switch like our tab rows */
+html body .res .mode:not(#x){display:flex!important;gap:8px!important;background:none!important;padding:0!important;border:0!important;box-shadow:none!important;border-radius:0!important}
+html body .res .mode:not(#x) button{flex:none!important;height:36px!important;padding:0 15px!important;border-radius:999px!important;border:1px solid #D9D4CB!important;background:#fff!important;color:#152A2E!important;font:500 14px 'DM Sans',sans-serif!important;box-shadow:none!important}
+html body .res .mode:not(#x) button.on{background:#152A2E!important;border-color:#152A2E!important;color:#fff!important}
+html body .res .mhint:not(#x){font:400 14px/1.45 'DM Sans',sans-serif!important;color:#6B7A7C!important}
+/* eyebrows and headlines */
+html body .vm-eb:not(#x),html body .slh-eb:not(#x) span{font:500 12px/1 'DM Sans',sans-serif!important;letter-spacing:.14em!important;text-transform:uppercase!important;color:#5A6B6E!important}
+html body .vp h2:not(#x),html body .sl .slh h2:not(#x){font-size:32px!important;line-height:1.08!important;color:#152A2E!important;margin:8px 0 16px!important}
+html body .sl-reset:not(#x){background:none!important;border:0!important;font:500 13px 'DM Sans',sans-serif!important;color:#152A2E!important;text-decoration:underline;text-underline-offset:3px;padding:0!important}
+html body .sl-reset:not(#x):disabled{opacity:.35;text-decoration:none}
+/* style tiles like the region tiles */
+html body .tile:not(#x) .ph{border-radius:12px!important;overflow:hidden;position:relative}
+html body .tile:not(#x) .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(8,16,18,.38) 0%,rgba(8,16,18,0) 24%),linear-gradient(to top,rgba(8,16,18,.74) 0%,rgba(8,16,18,.28) 42%,rgba(8,16,18,0) 68%)!important;pointer-events:none}
+html body .tile:not(#x) .ph i{background:none!important;box-shadow:none!important;color:#fff!important;font:600 12px/1 'DM Sans',sans-serif!important;padding:0!important;text-shadow:0 1px 6px rgba(0,0,0,.45);z-index:2}
+html body .tile:not(#x) .ph i span{width:7px!important;height:7px!important;margin-right:5px!important;box-shadow:0 0 0 1.5px rgba(255,255,255,.85)}
+html body .tile:not(#x) .tt{z-index:2;position:absolute}
+html body .tile:not(#x) .tt b{font:500 17px/1.15 'DM Sans',sans-serif!important;letter-spacing:-.01em;color:#fff!important}
+html body .tile:not(#x) .tt small{font:400 13px/1.35 'DM Sans',sans-serif!important;color:rgba(255,255,255,.88)!important;margin-top:3px}
+html body .tile.on:not(#x) .ph{box-shadow:0 0 0 2px #fff,0 0 0 4px #152A2E}
+/* sliders: thin dark tracks */
+html body .sl:not(#x) .sl2 input[type=range]{-webkit-appearance:none;appearance:none;height:3px!important;border-radius:2px!important;background:linear-gradient(90deg,#152A2E var(--p),#E4E0D8 var(--p))!important}
+html body .sl:not(#x) .sl2 input#sl-pace{background:linear-gradient(90deg,#E4E0D8 var(--lo),#152A2E var(--lo),#152A2E var(--hi),#E4E0D8 var(--hi))!important}
+html body .sl:not(#x) .sl2 input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px!important;height:20px!important;border-radius:50%!important;background:#fff!important;border:1.5px solid #152A2E!important;box-shadow:0 2px 6px rgba(21,42,46,.18)!important}
+html body .sl:not(#x) .sl2 input[type=range]::-moz-range-thumb{width:18px;height:18px;border-radius:50%;background:#fff;border:1.5px solid #152A2E;box-shadow:0 2px 6px rgba(21,42,46,.18)}
+html body .sl:not(#x) .sl2{padding:13px 0!important;border-color:#EEEAE3!important}
+html body .sl:not(#x) .sl2 label b{font:500 15.5px/1.25 'DM Sans',sans-serif!important;color:#152A2E!important}
+html body .sl:not(#x) .sl2 label output{font:400 13px/1.3 'DM Sans',sans-serif!important;color:#6B7A7C!important}
+/* how to: one quiet line */
+html body .sl:not(#x) ol.sl-how{display:block!important;margin:0 0 14px!important;padding:0!important;list-style:none!important;font:400 14px/1.5 'DM Sans',sans-serif!important;color:#6B7A7C!important}
+html body .sl:not(#x) ol.sl-how li{display:inline!important;margin:0!important;padding:0!important;background:none!important}
+html body .sl:not(#x) ol.sl-how li b{display:none!important}
+html body .sl:not(#x) ol.sl-how li+li::before{content:" · "}
+html body .sl2-where:not(#x) select,html body .res .f:not(#x) select{border:0!important;background-color:#F2EFEA!important;border-radius:11px!important;height:42px!important;font:400 15px 'DM Sans',sans-serif!important;color:#152A2E!important;box-shadow:none!important}
+html body .sl2-where:not(#x) > span{font:500 12px 'DM Sans',sans-serif!important;letter-spacing:.12em!important;text-transform:uppercase;color:#5A6B6E!important}
+/* email like the guide signup */
+html body .sl-mail:not(#x){background:#F7F5F1!important;border:0!important;border-radius:14px!important;padding:20px!important;margin-top:20px!important}
+html body .sl-mail:not(#x) b{font:500 18px/1.2 'DM Sans',sans-serif!important;color:#152A2E!important}
+html body .sl-mail:not(#x) input{height:46px!important;border:0!important;border-radius:999px!important;background:#fff!important;padding:0 18px!important;font:400 15.5px 'DM Sans',sans-serif!important}
+html body .sl-mail:not(#x) button{height:46px!important;border-radius:999px!important;background:#152A2E!important;color:#fff!important;border:0!important;padding:0 22px!important;font:600 15px 'DM Sans',sans-serif!important}
+/* zoom and map controls as glass */
+html body .zoom:not(#x){background:none!important;box-shadow:none!important;border:0!important;display:flex;flex-direction:column;gap:8px;overflow:visible!important}
+html body .zoom:not(#x) button{width:40px!important;height:40px!important;border-radius:50%!important;border:1px solid rgba(21,42,46,.12)!important;background:rgba(255,255,255,.72)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 4px 14px rgba(21,42,46,.12)!important;color:#152A2E!important;font:400 22px/1 'DM Sans',sans-serif!important}
+html body .ctl:not(#x){border-radius:999px!important;background:rgba(255,255,255,.8)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(21,42,46,.12)!important;box-shadow:0 4px 14px rgba(21,42,46,.12)!important;font:500 14px 'DM Sans',sans-serif!important;color:#152A2E!important}
+html body .res .back:not(#x),html body .res .save:not(#x){background:none!important;border:0!important;box-shadow:none!important;font:500 14px 'DM Sans',sans-serif!important;color:#152A2E!important;text-decoration:underline;text-underline-offset:3px;padding:0!important}
+html body .sl-quiz:not(#x) a{border-radius:999px!important}
+</style></head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
 <nav class="top"><a href="towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="articles/index.html" data-nav="articles">Articles</a></nav>
