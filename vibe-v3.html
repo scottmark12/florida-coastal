@@ -346,6 +346,7 @@ html body.sliders .mapw:not(#x):not(#y):not(#z){height:min(calc(100svh - 66px),c
 html body.sliders #slpill.on.dn:not(#x){top:74px!important}
 }
 header .logo img{height:30px!important}</style>
+<style id="clu-css">@media(max-width:760px){html body header .fcm-btn:not(#x){background:rgba(16,22,24,.42)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2)!important;backdrop-filter:blur(18px) saturate(1.2)!important;border:1px solid rgba(255,255,255,.45)!important;color:#fff!important;box-shadow:0 2px 10px rgba(0,0,0,.12)!important}html body header .fcm-btn:not(#x) *{color:#fff!important;stroke:#fff!important}html body .zpill.on:not(#x){top:78px!important}}</style>
 <style id="ph-card">@media(max-width:760px){
 .map{touch-action:pan-y!important;cursor:default!important}
 .map .zoom{display:none!important}
@@ -501,20 +502,22 @@ function render(fast){
  const vis=T.filter(t=>inView(t,-20*k));
  const pin=t=>S.pop&&S.pop.id==t.id||S.hover==t.id;
  const slTop=S.mode=='sliders'&&S.top.length,dflt=!S.style&&!S.price&&!slTop;
- vis.forEach(t=>{const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&((!zoomed&&dflt&&!sg)||slTop))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
+ const CL=S.mode=='vibes'&&S.style?mkClu(vis.filter(t=>match(t)&&!pin(t)),v,k):[],inClu=new Set();CL.forEach(c=>c.forEach(t=>inClu.add(t.id)));
+ vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&((!zoomed&&dflt&&!sg)||slTop))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
   let r=any?(m?6:3):(sg?6.5:(zoomed?5:3.4));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.7));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#7F8B8D');
   if(pin(t))r=7;
   const vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:null;
   if(vc){const rr=pin(t)?7.5:(isR(S.style)?5:6);s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${rr*k}" fill="${vc}" stroke="#fff" stroke-width="${2.2*k}" style="filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.25))"/>`}
   else s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(S.mode=='vibes'&&S.style&&!m?(sg?4.5:3.2):r)*k}" fill="${S.mode=='vibes'&&S.style&&!m?'#152A2E':fill}" ${S.mode=='vibes'&&S.style&&!m?'fill-opacity=".55"':''} opacity="${op}" stroke="#fff" stroke-width="${(r>3?2:1)*k}"/>`});
+ CL.forEach(c=>{const L=c[0],n=c.length,bx=(L.x-v[0])/k,by=(L.y-v[1])/k;boxes.push([bx-16,by-16,32,32]);s+=`<g class="clu" data-ids="${c.map(t=>t.id).join(',')}" style="cursor:pointer"><circle cx="${L.x}" cy="${L.y}" r="${13*k}" fill="${VCOL[S.style]||'#152A2E'}" stroke="#fff" stroke-width="${2.4*k}" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,.3))"/><text x="${L.x}" y="${L.y+4.6*k}" text-anchor="middle" font-size="${13*k}" font-weight="600" fill="#fff" style="font-family:var(--mapf);pointer-events:none">${n}</text></g>`});
  // labels: pinned first, then matched sig, then matched zoomed
- const want=[];vis.forEach(t=>{const m=match(t),sg=SIG.includes(t.id);if(pin(t))want.push([t,0]);else if(m&&(S.style||S.price)){if(sg)want.push([t,1]);else if(zoomed||(S.mode=='vibes'&&isR(S.style)))want.push([t,2])}else if(sg&&!S.style&&!S.price)want.push([t,2]);else if(zoomed&&m)want.push([t,3])});
- if(S.mode=='vibes'&&isR(S.style)){const cap=w<600?5:8,ok=new Set(T.filter(t=>t.v.includes(S.style)).map(t=>[t,-t.v.filter(v=>!isR(v)).length,Math.min(...['beach','walk','charm','meet','water'].map(k=>LD[t.id].rk[k]||999))]).sort((a,b)=>a[1]-b[1]||a[2]-b[2]).map(x=>x[0]).slice(0,cap).map(t=>t.id));for(let i=want.length-1;i>=0;i--)if(want[i][1]>0&&!ok.has(want[i][0].id))want.splice(i,1)}
+ const want=[];CL.forEach(c=>want.push([Object.assign({},c[0],{n:c[0].n.replace(/ \(.*\)$/,'')+' +'+(c.length-1),_clu:1,_off:20}),1]));vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);if(pin(t))want.push([t,0]);else if(m&&(S.style||S.price)){if(sg)want.push([t,1]);else if(zoomed||(S.mode=='vibes'&&isR(S.style)))want.push([t,2])}else if(sg&&!S.style&&!S.price)want.push([t,2]);else if(zoomed&&m)want.push([t,3])});
+ if(S.mode=='vibes'&&isR(S.style)){const cap=w<600?5:8,ok=new Set(T.filter(t=>t.v.includes(S.style)).map(t=>[t,-t.v.filter(v=>!isR(v)).length,Math.min(...['beach','walk','charm','meet','water'].map(k=>LD[t.id].rk[k]||999))]).sort((a,b)=>a[1]-b[1]||a[2]-b[2]).map(x=>x[0]).slice(0,cap).map(t=>t.id));for(let i=want.length-1;i>=0;i--)if(want[i][1]>0&&!want[i][0]._clu&&!ok.has(want[i][0].id))want.splice(i,1)}
  want.sort((a,b)=>a[1]-b[1]);if(!zoomed&&(S.style||S.price)){let c=0;const keep=[];want.forEach(w=>{if(w[1]==0||c<6){keep.push(w);if(w[1]>0)c++}});want.length=0;keep.forEach(w=>want.push(w))}
  let lab='';const placed=new Set();
  want.forEach(([t,pr])=>{const fs=(pr==3?13:15),cw=fs*.56,tw=t.n.length*cw+4,th=fs+4;
   const left=t.c=='gulf'||t.c=='panhandle'&&false;const sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;
-  const opts=t.c=='atlantic'?[[12,1],[-12,-1]]:[[-12,-1],[12,1]];
+  const o0=t._off||12,opts=t.c=='atlantic'?[[o0,1],[-o0,-1]]:[[-o0,-1],[o0,1]];
   for(const [dx,dir] of opts){const bx=dir>0?sx+dx:sx+dx-tw;if(pr>0&&hit(bx,sy-th/2,tw,th))continue;placed.add(t.id);if(pr==0)boxes.push([bx,sy-th/2,tw,th]);
    if(pr==0)lab+=`<rect x="${v[0]+(bx-8)*k}" y="${v[1]+(sy-15)*k}" width="${(tw+16)*k}" height="${30*k}" rx="${15*k}" fill="#152A2E"/><text class="lbl" x="${v[0]+(bx+tw/2)*k}" y="${v[1]+(sy+5.5)*k}" text-anchor="middle" font-size="${fs*k}" fill="#fff" style="fill:#fff;stroke:none">${t.n}</text>`;
    else lab+=`<text class="lbl ${pr==3?'sm':''}" x="${v[0]+(dir>0?bx:bx+tw)*k}" y="${v[1]+(sy+fs*.35)*k}" text-anchor="${dir>0?'start':'end'}" font-size="${fs*k}" stroke-width="${2.4*k}">${t.n}</text>`;break}});
@@ -584,7 +587,7 @@ const hint=document.createElement('div');hint.className='whint';hint.textContent
 box.addEventListener('wheel',e=>{if(PH())return;if(!(mapActive||e.ctrlKey||e.metaKey)){hint.classList.add('on');clearTimeout(ht);ht=setTimeout(()=>hint.classList.remove('on'),1400);return}e.preventDefault();const r=box.getBoundingClientRect();S.vb=zoomAt(Math.exp(e.deltaY*.0015),e.clientX-r.left,e.clientY-r.top);S.region&&(S.region='',tags());render();clearTimeout(wt);wt=setTimeout(list,180)},{passive:false});
 let dr=null;box.addEventListener('pointerdown',e=>{if(e.target.closest('.pop,.ctl,.zoom,.rdd'))return;dr={x:e.clientX,y:e.clientY,vb:S.vb.slice(),moved:false,t:e.target};if(!PH())box.setPointerCapture(e.pointerId)});
 box.addEventListener('pointercancel',()=>{dr=null;box.classList.remove('drag')});box.addEventListener('pointermove',e=>{if(!dr||PH())return;const dx=e.clientX-dr.x,dy=e.clientY-dr.y;if(Math.abs(dx)+Math.abs(dy)>4){dr.moved=true;box.classList.add('drag')}if(!dr.moved)return;const[w]=size(),k=dr.vb[2]/w;S.vb=[dr.vb[0]-dx*k,dr.vb[1]-dy*k,dr.vb[2],dr.vb[3]];render()});
-box.addEventListener('pointerup',e=>{if(!dr)return;box.classList.remove('drag');if(dr.moved){if(S.region){S.region='';tags()}list()}else{const el=document.elementFromPoint(e.clientX,e.clientY);const c=el&&el.closest('circle.dot');if(c){openPop(T.find(t=>t.id==c.dataset.id))}else if(!el.closest('.pop'))closePop()}dr=null});
+box.addEventListener('pointerup',e=>{if(!dr)return;box.classList.remove('drag');if(dr.moved){if(S.region){S.region='';tags()}list()}else{const el=document.elementFromPoint(e.clientX,e.clientY);const cg=el&&el.closest('.clu');if(cg){cluZoom(cg.dataset.ids.split(','))}else{const c=el&&el.closest('circle.dot');if(c){openPop(T.find(t=>t.id==c.dataset.id))}else if(!el.closest('.pop'))closePop()}}dr=null});
 $('grid').addEventListener('mouseover',e=>{const c=e.target.closest('.card');const id=c?c.dataset.id:null;if(id!==S.hover){S.hover=id;render()}});
 $('grid').addEventListener('mouseleave',()=>{S.hover=null;render()});
 $('q').addEventListener('keydown',e=>{if(e.key!='Enter')return;const q=e.target.value.trim().toLowerCase();if(!q)return;
@@ -594,6 +597,11 @@ $('q').addEventListener('keydown',e=>{if(e.key!='Enter')return;const q=e.target.
 
 // vibes mode: built like the live Vibe Map
 S.need={};
+function cluPrio(t){return [-t.v.filter(v=>!isR(v)).length,Math.min(...['beach','walk','charm','meet','water'].map(q=>LD[t.id].rk[q]||999))]}
+function mkClu(L,v,k){const R=40,P=L.map(t=>[t,cluPrio(t)]).sort((a,b)=>a[1][0]-b[1][0]||a[1][1]-b[1][1]).map(x=>x[0]),cs=[];
+ P.forEach(t=>{const sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;const c=cs.find(c=>Math.hypot((c[0].x-v[0])/k-sx,(c[0].y-v[1])/k-sy)<R);if(c)c.push(t);else cs.push([t])});return cs.filter(c=>c.length>1)}
+function cluZoom(ids){const M=ids.map(id=>T.find(t=>t.id==id));if(S.vb[2]<=MINW*1.08){closePop();openPop(M[0]);S.mode=='vibes'&&vRender();return}
+ const lo=M.map(t=>t.lo),la=M.map(t=>t.la);closePop();S.zoomedTo='clu';go(fit([Math.min(...lo)-.04,Math.max(...lo)+.04,Math.min(...la)-.03,Math.max(...la)+.03],.2),520);setTimeout(zoomPill,60)}
 function needOk(t){const n=S.need,d=LD[t.id];if(n.bud&&!(d.med&&d.med<=n.bud))return false;if(n.school&&!d.sc)return false;if(n.air&&!d.air)return false;return true}
 const needOn=()=>Object.keys(S.need).some(k=>S.need[k]);
 function vOrder(){const R=LK.REGIONS.map(r=>r.id),pos=t=>t.c=='panhandle'?t.lo:t.c=='gulf'?-t.la:t.c=='keys'?-t.lo:t.la;
