@@ -195,5 +195,5 @@ function az(){const q=norm($('fq').value.trim()),s=$('fs').value,p=$('fp').value
  $('cols').innerHTML=`<div>${blk(C('panhandle'))}<div style="height:36px"></div>${blk(C('keys'))}</div><div>${blk(C('gulf'))}</div><div>${blk(C('atlantic'))}</div>`}
 ['fq','fs','fp'].forEach(i=>$(i).addEventListener(i=='fq'?'input':'change',az));az();
 {const q0=new URLSearchParams(location.search).get('q');if(q0){$('q').value=q0;$('q').dispatchEvent(new Event('input'));setTimeout(()=>$('q').focus(),50)}}
-{const h=location.hash.slice(1);if(CO.some(c=>c[0]==h)){pickC(h,'');setTimeout(()=>$('regions').scrollIntoView(),50)}}
+{const[h,ar]=location.hash.slice(1).split('/');if(CO.some(c=>c[0]==h)){pickC(h,ar&&AR[ar]?ar:'');setTimeout(()=>$('regions').scrollIntoView(),50)}}
 </script></body></html>

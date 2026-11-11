@@ -2,6 +2,7 @@
    Reads the header's own links (a[data-nav]) so paths stay right on every page. */
 (function(){
   if(window.__fcMenu)return;window.__fcMenu=1;
+  (function(){if(document.querySelector('script[src*="fc-search.js"]'))return;var me=document.currentScript&&document.currentScript.src,sc=document.createElement('script');sc.src=me?me.replace('fc-menu.js','fc-search.js'):'/assets/fc-search.js';sc.defer=true;document.head.appendChild(sc)})();
   var MQ='(max-width:760px)';
   function ready(f){document.readyState!='loading'?f():document.addEventListener('DOMContentLoaded',f)}
   ready(function(){
@@ -74,6 +75,7 @@
     m.querySelector('.fcm-x').addEventListener('click',close);
     document.addEventListener('keydown',function(e){if(e.key=='Escape')close()});
     m.querySelector('form').addEventListener('submit',function(e){e.preventDefault();var q=m.querySelector('input').value.trim();location.href=townsHref+(q?'?q='+encodeURIComponent(q):'')});
+    var mi=m.querySelector('form input');mi.addEventListener('focus',function(){if(window.FCS){mi.blur();close();FCS.open(mi.value)}});
     window.matchMedia(MQ).addEventListener&&window.matchMedia(MQ).addEventListener('change',function(e){if(!e.matches)close()});
   });
 })();
