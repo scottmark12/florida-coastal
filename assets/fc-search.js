@@ -86,7 +86,7 @@
   });
   function recent(){try{return JSON.parse(localStorage.getItem('fc-recent')||'[]')}catch(e){return[]}}
   function remember(id){try{var a=recent().filter(function(x){return x!==id});a.unshift(id);localStorage.setItem('fc-recent',JSON.stringify(a.slice(0,6)))}catch(e){}}
-  (function(){var m=location.pathname.match(/towns\/([a-z0-9-]+)-v3\.html/);if(m)remember(m[1])})();
+  (function(){var m=location.pathname.match(/towns\/([a-z0-9-]+)(?:-v3)?\.html/);if(m)remember(m[1])})();
   window.FCS={open:open,close:close};
 
   /* header: turn old search forms into the icon, and add the icon where a header has none */
