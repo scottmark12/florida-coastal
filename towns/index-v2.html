@@ -133,11 +133,70 @@ html body section.az:not(#x) #cols h5{position:sticky;top:0;z-index:3;background
 html body section.az:not(#x) #cols a{padding:13px 0!important}
 html body section.az:not(#x) #cols a b{font-size:17px!important;font-weight:500!important}
 html body section.az:not(#x) #cols a span{font-size:15px!important;color:#6B7A7C!important}
+
+html body section.s#regions:not(#x) #cg .ct small{display:none!important}
+html.sheet-open,html.sheet-open body{overflow:hidden!important;scroll-snap-type:none!important}
+html body #ar.show.sheet:not(#x){position:fixed;left:0;right:0;bottom:0;top:calc(var(--gt,0px) + 10px);z-index:9000;margin:0!important;padding:0 0 calc(var(--gb,0px) + 40px)!important;background:#fff;border-radius:18px 18px 0 0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;box-shadow:0 -10px 40px rgba(0,0,0,.25);animation:shUp .32s cubic-bezier(.2,.8,.2,1)}
+@keyframes shUp{from{transform:translateY(100%)}to{transform:none}}
+.sh-scrim{position:fixed;inset:0;background:rgba(10,18,20,.45);z-index:8999;animation:shF .3s}
+@keyframes shF{from{opacity:0}}
+#ar.sheet #arh,#ar.sheet #ars{display:none!important}
+.sh-top{position:relative;height:250px;background:#cfd8da center/cover no-repeat;border-radius:18px 18px 0 0;overflow:hidden}
+.sh-top::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,16,18,.72),rgba(8,16,18,0) 60%)}
+.sh-top h3{position:absolute;left:20px;bottom:40px;z-index:2;margin:0;color:#fff;font:400 36px/1 'Libre Caslon Display',Georgia,serif}
+.sh-top p{position:absolute;left:20px;bottom:16px;z-index:2;margin:0;color:rgba(255,255,255,.9);font:400 14px/1 'DM Sans',sans-serif}
+.sh-x{position:absolute;top:12px;right:12px;z-index:3;width:36px;height:36px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(16,22,24,.35);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:#fff;font:400 22px/1 'DM Sans',sans-serif;display:flex;align-items:center;justify-content:center;padding:0}
+.sh-grab{position:absolute;top:8px;left:50%;width:38px;height:5px;margin-left:-19px;border-radius:3px;background:rgba(255,255,255,.7);z-index:3}
+#ar.sheet #ach{display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;gap:8px!important;padding:16px 20px 4px!important;margin:0!important;scrollbar-width:none;position:sticky;top:0;z-index:4;background:#fff}
+#ar.sheet #ach::-webkit-scrollbar{display:none}
+#ar.sheet #ach button{flex:none;white-space:nowrap;height:36px;padding:0 14px!important;border-radius:999px;font-size:14px!important;border:1px solid #D9D4CB!important;background:#fff!important;color:#152A2E!important}
+#ar.sheet #ach button.on{background:#152A2E!important;border-color:#152A2E!important;color:#fff!important}
+#ar.sheet #ach button small{opacity:.6;margin-left:4px}
+#ar.sheet #ax{padding:6px 20px 0!important;margin:0!important}
+#ar.sheet .axi{border:0!important;padding:14px 0 6px!important;background:none!important;box-shadow:none!important}
+#ar.sheet .axi h4{font:400 26px/1.1 'Libre Caslon Display',Georgia,serif!important;margin:0 0 6px!important}
+#ar.sheet .axi .axt{font:600 15px/1.35 'DM Sans',sans-serif!important;margin:0 0 4px!important;color:#152A2E}
+#ar.sheet .axi .axm{font-size:13px!important;text-transform:none!important;letter-spacing:0!important;color:#6B7A7C!important;margin:0 0 10px!important;order:-1}
+#ar.sheet .axi p:last-of-type{font-size:15.5px!important;line-height:1.55!important;color:#3E4F52;margin:6px 0 0!important}
+#ar.sheet .axi.clamp p:last-of-type{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ax-more{background:none;border:0;padding:6px 0 0;font:600 14px 'DM Sans',sans-serif;color:#152A2E;text-decoration:underline;text-underline-offset:3px}
+#ar.sheet .axl{display:block!important}
+#ar.sheet .axl button{display:block!important;width:100%;text-align:left;border:0!important;border-bottom:1px solid #EEEAE3!important;border-radius:0!important;background:none!important;padding:16px 28px 16px 0!important;margin:0!important;position:relative;box-shadow:none!important}
+#ar.sheet .axl button::after{content:"›";position:absolute;right:2px;top:50%;transform:translateY(-50%);font-size:26px;color:#9AA6A8}
+#ar.sheet .axl b{display:block;font:400 22px/1.15 'Libre Caslon Display',Georgia,serif!important;margin:0 0 4px}
+#ar.sheet .axl span{display:block;font:600 14px/1.35 'DM Sans',sans-serif!important;color:#152A2E}
+#ar.sheet .axl small{display:block;font-size:13px!important;color:#6B7A7C;margin-top:4px}
+#ar.sheet .axl p{display:none!important}
+#ar.sheet #grid{display:block!important;padding:8px 20px 0!important;margin:0!important}
+#ar.sheet #grid .card{display:grid!important;grid-template-columns:64px 1fr auto;align-items:center;column-gap:14px;padding:10px 0!important;border:0!important;border-bottom:1px solid #EEEAE3!important;border-radius:0!important;background:none!important;box-shadow:none!important;margin:0!important;text-decoration:none}
+#ar.sheet #grid .card .ph{width:64px!important;height:64px!important;aspect-ratio:auto!important;border-radius:10px!important;margin:0!important;grid-row:1/3}
+#ar.sheet #grid .card h4{font:400 19px/1.15 'Libre Caslon Display',Georgia,serif!important;margin:0!important;color:#152A2E;align-self:end}
+#ar.sheet #grid .card .mt{display:contents!important}
+#ar.sheet #grid .card .mt span{grid-column:2;font-size:13px!important;color:#6B7A7C;align-self:start;margin-top:3px}
+#ar.sheet #grid .card .mt b{grid-column:3;grid-row:1/3;font-size:14.5px!important;font-weight:500!important;color:#152A2E}
+.sh-lh{padding:22px 20px 0;font:500 12px/1 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#6B7A7C}
 html body section.az:not(#x){scroll-snap-align:start;scroll-margin-top:calc(-1 * var(--gt,0px));padding-top:calc(var(--gt,0px) + 40px)!important;margin-top:0!important}
 }
 </style><script id="t-snap-js">(function(){if(innerWidth>760)return;var r=document.documentElement;
 if(/iPhone|iPod/.test(navigator.userAgent)){var gap=screen.height-innerHeight;if(gap>=90&&gap<=260){var t=Math.min(84,Math.round(gap*.48)+4);r.style.setProperty('--gt',t+'px');r.style.setProperty('--gb',(gap-t+44)+'px')}}
 function f(){var az=document.querySelector('section.az');if(!az)return;var on=scrollY<az.offsetTop-2;r.classList.toggle('tsnap',on)}
+
+function SH(){var ar=document.getElementById('ar');if(ar&&innerWidth<=760){var scrim=null,top=null,lh=null,more=null;
+function K(t){var m=/\$([\d.]+)\s*([KM])/.exec(t);if(!m)return null;return parseFloat(m[1])*(m[2]=='M'?1000:1)}
+function F(v){return v>=1000?'$'+(v/1000).toFixed(2).replace(/\.?0+$/,'')+'M':'$'+Math.round(v)+'K'}
+function dress(){if(!ar.classList.contains('show'))return;var on=document.querySelector('#cg .ct.on');
+if(!ar.classList.contains('sheet')){ar.classList.add('sheet');r.classList.add('sheet-open');scrim=document.createElement('div');scrim.className='sh-scrim';scrim.onclick=close;document.body.appendChild(scrim);ar.scrollTop=0}
+if(!top){top=document.createElement('div');top.className='sh-top';top.innerHTML='<span class="sh-grab"></span><button class="sh-x" aria-label="Close">×</button><h3></h3><p></p>';ar.insertBefore(top,ar.firstChild);top.querySelector('.sh-x').onclick=close}
+if(on){var i=on.querySelector('i');top.style.backgroundImage=i?i.style.backgroundImage:'';top.querySelector('h3').textContent=on.querySelector('b').textContent}
+var v=[].map.call(document.querySelectorAll('#grid .card .mt b'),function(b){return b.textContent}).join(' ').match(/\$[\d.]+\s*[KM]/g)||[];v=v.map(K).filter(Boolean).sort(function(a,b){return a-b});
+var n=document.querySelectorAll('#grid .card').length;top.querySelector('p').textContent=n+' towns'+(v.length?' · '+F(v[0])+' to '+F(v[v.length-1]):'');
+if(!lh){lh=document.createElement('div');lh.className='sh-lh'}var g=document.getElementById('grid');if(lh.nextSibling!==g)ar.insertBefore(lh,g);lh.textContent='Towns';
+var axi=ar.querySelector('.axi');if(axi&&!axi.dataset.c){axi.dataset.c=1;var p=axi.querySelector('p:last-of-type');if(p&&p.textContent.length>170){axi.classList.add('clamp');var b=document.createElement('button');b.className='ax-more';b.textContent='More';b.onclick=function(e){e.stopPropagation();axi.classList.remove('clamp');b.remove()};axi.appendChild(b)}}}
+function close(){ar.classList.remove('show','sheet');r.classList.remove('sheet-open');if(scrim){scrim.remove();scrim=null}document.querySelectorAll('#cg .ct.on').forEach(function(b){b.classList.remove('on')});document.getElementById('cg').classList.remove('any');var sec=document.getElementById('regions');scrollTo(0,sec.offsetTop)}
+new MutationObserver(function(){setTimeout(dress,0)}).observe(ar,{attributes:true,childList:true,subtree:true});
+addEventListener('keydown',function(e){if(e.key==='Escape'&&ar.classList.contains('sheet'))close()});
+var y0=null;ar.addEventListener('touchstart',function(e){y0=ar.scrollTop<=0?e.touches[0].clientY:null},{passive:true});ar.addEventListener('touchend',function(e){if(y0!==null&&e.changedTouches[0].clientY-y0>110)close();y0=null},{passive:true})}}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',SH);else SH();
 r.classList.add('tsnap');addEventListener('scroll',f,{passive:true});addEventListener('load',f);f()})();</script></head><body>
 <header><a class="logo" href="../home-v2.html"><img src="../img/fc-logo-arch-line-white.png" alt="Florida Coastal"></a>
 <nav class="top"><a class="on" href="../towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="../vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="../vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="../articles/index.html" data-nav="articles">Articles</a></nav>
