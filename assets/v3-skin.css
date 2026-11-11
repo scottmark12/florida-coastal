@@ -12,3 +12,6 @@ html body main .hb-k,html body main [class$="-k"],html body main .k{color:#5A6B6
 html body main .crumbs a,html body main nav[aria-label*="read"] a,html body main .bc a{color:inherit!important}
 html body main a:not(.btn):not([class*="tile"]):not([class*="card"]){color:inherit}
 html body main span,html body main small,html body main em,html body main div,html body main label,html body main input,html body main button{font-family:'DM Sans',system-ui,sans-serif}html body main p{font-family:'DM Sans',system-ui,sans-serif!important}
+html:root{--display:'DM Sans',system-ui,sans-serif!important;--read:'DM Sans',system-ui,sans-serif!important}
+html body main p:not(#z),html body main time:not(#z),html body main .label:not(#z),html body main h2:not(#z),html body main h1:not(#z){font-family:'DM Sans',system-ui,sans-serif!important}
+html body main h1:not(#z),html body main h2:not(#z){font-weight:500!important;letter-spacing:-.02em!important}
