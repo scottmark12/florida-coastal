@@ -393,7 +393,7 @@ function render(fast){
  // dots
  const vis=T.filter(t=>inView(t,-20*k));
  const pin=t=>S.pop&&S.pop.id==t.id||S.hover==t.id;
- vis.forEach(t=>{const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;
+ vis.forEach(t=>{const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
   let r=any?(m?6:3):(sg?6.5:(zoomed?5:3.4));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.7));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#7F8B8D');
   if(pin(t))r=7;
   const vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:null;
