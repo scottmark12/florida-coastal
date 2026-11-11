@@ -111,6 +111,28 @@ html.tsnap:not(#x){scroll-snap-type:y mandatory;overflow:visible!important;overf
 html body:not(#x){overflow:visible!important;overflow-x:clip!important}
 html body>main>section.hs:not(#x),html body section.hs:not(#x){height:calc(100svh + var(--gb,0px))!important;min-height:0!important;scroll-snap-align:start;scroll-snap-stop:always}
 html body section.s:not(#x){min-height:calc(100svh + var(--gt,0px) + var(--gb,0px));box-sizing:border-box;display:flex!important;flex-direction:column;justify-content:center;padding-top:calc(var(--gt,0px) + 40px)!important;padding-bottom:calc(var(--gb,0px) + 40px)!important;margin:0!important;scroll-snap-align:start;scroll-snap-stop:always;scroll-margin-top:calc(-1 * var(--gt,0px))}
+
+html body section.s#regions:not(#x){justify-content:flex-start}
+html body section.s#regions:not(#x) .wrap{display:flex;flex-direction:column;flex:1 1 auto;width:100%;box-sizing:border-box}
+html body section.s#regions:not(#x) h2{font-size:36px!important;line-height:1.05!important;letter-spacing:-.02em!important;margin:6px 0 10px!important}
+html body section.s#regions:not(#x) .lede{font-size:16px!important;line-height:1.5!important;margin:0 0 24px!important;max-width:30em}
+html body section.s#regions:not(#x) #cg{flex:1 1 auto;min-height:340px;grid-template-rows:1fr 1fr;gap:10px!important;margin:0!important}
+html body section.s#regions:not(#x) #cg .ct{height:auto!important;aspect-ratio:auto!important;position:relative;overflow:hidden;border-radius:14px!important}
+html body section.s#regions:not(#x) #cg .ct::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,16,18,.62) 0%,rgba(8,16,18,.12) 45%,rgba(8,16,18,0) 70%);pointer-events:none}
+html body section.s#regions:not(#x) #cg .ct span{position:absolute!important;left:14px!important;right:12px!important;bottom:14px!important;top:auto!important;z-index:2;text-align:left}
+html body section.s#regions:not(#x) #cg .ct small{font-size:10px!important;letter-spacing:.08em;opacity:.8;display:block;margin-bottom:4px}
+html body section.s#regions:not(#x) #cg .ct b{font-size:23px!important;line-height:1.05!important;display:block}
+html body section.s#regions:not(#x) #cg .ct em{font-size:13px!important;font-style:normal;opacity:.9;display:block;margin-top:4px}
+html body section.az:not(#x) .ey{margin-bottom:6px!important}
+html body section.az:not(#x) h2{font-size:44px!important;line-height:1!important;letter-spacing:-.01em}
+html body section.az:not(#x) .fl{display:grid!important;grid-template-columns:1fr 1fr;gap:8px!important;margin:22px 0 8px!important}
+html body section.az:not(#x) .fl #fq{grid-column:1/-1}
+html body section.az:not(#x) .fl input,html body section.az:not(#x) .fl select{height:46px!important;border-radius:12px!important;font-size:15.5px!important;padding:0 14px!important;width:100%!important;margin:0!important;box-sizing:border-box;background-color:#fff}
+html body section.az:not(#x) .fl .c{grid-column:1/-1;font-size:13px!important;margin:6px 0 0!important;color:#6B7A7C}
+html body section.az:not(#x) #cols h5{position:sticky;top:0;z-index:3;background:#F2EFEA;margin:0!important;padding:22px 0 10px!important;font-size:12px!important;letter-spacing:.14em!important}
+html body section.az:not(#x) #cols a{padding:13px 0!important}
+html body section.az:not(#x) #cols a b{font-size:17px!important;font-weight:500!important}
+html body section.az:not(#x) #cols a span{font-size:15px!important;color:#6B7A7C!important}
 html body section.az:not(#x){scroll-snap-align:start;scroll-margin-top:calc(-1 * var(--gt,0px));padding-top:calc(var(--gt,0px) + 40px)!important;margin-top:0!important}
 }
 </style><script id="t-snap-js">(function(){if(innerWidth>760)return;var r=document.documentElement;
