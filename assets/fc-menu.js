@@ -56,10 +56,12 @@
     hdr.appendChild(btn);
 
     var here=location.pathname+location.search;
-    var items=links.map(function(a){
+    var homeHref=new URL('/home-v2.html',location.href).href,hp=new URL(homeHref).pathname;
+    var extra=function(href,label,isCur){return '<a href="'+href+'"'+(isCur?' class="cur" aria-current="page"':'')+'>'+label+'<span>→</span></a>'};
+    var items=extra(homeHref,'Home',location.pathname==hp||location.pathname=='/'||/\/index\.html$/.test(location.pathname))+links.map(function(a){
       var u=new URL(a.href),cur=a.classList.contains('on')||a.getAttribute('aria-current')=='page'||(u.pathname+u.search)==here;
       return '<a href="'+a.href+'"'+(cur?' class="cur" aria-current="page"':'')+'>'+a.textContent.trim()+'<span>→</span></a>';
-    }).join('');
+    }).join('')+extra(quizHref,'Quiz',/quiz-photo/.test(location.pathname));
 
     var m=document.createElement('div');
     m.className='fcm';m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');m.setAttribute('aria-label','Menu');
