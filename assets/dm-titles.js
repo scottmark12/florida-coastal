@@ -31,6 +31,12 @@ function fix(){
   setDM(el)})}
 if(mode==='1'){var s=document.createElement('style');s.textContent=".recv b,h1,h2,h3,h4,.qq{font-family:"+DMF+"!important;font-weight:500!important;letter-spacing:-.02em!important}";(document.head||document.documentElement).appendChild(s);
  fix=function(){document.querySelectorAll('body *').forEach(function(el){if(/Caslon Display/i.test(getComputedStyle(el).fontFamily))setDM(el)})}}
-if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',function(){fix();setTimeout(fix,600)});else{fix();setTimeout(fix,600)}
-setInterval(fix,1500);
+// Nov 11 2026: no font flash. Keep the page hidden until titles have their final font, then catch anything drawn later right away.
+var root=document.documentElement,shown=false;
+function show(){if(shown)return;shown=true;root.classList.remove('dmw')}
+var hs=document.createElement('style');hs.textContent='html.dmw body{visibility:hidden}';(document.head||root).appendChild(hs);root.classList.add('dmw');
+setTimeout(show,1200);
+var pend=false;function soon(){if(pend)return;pend=true;requestAnimationFrame(function(){pend=false;fix()})}
+function start(){fix();show();try{new MutationObserver(soon).observe(document.body,{childList:true,subtree:true})}catch(e){setInterval(fix,1500)}}
+if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();
