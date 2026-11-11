@@ -283,14 +283,23 @@ html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) .cg-he
 @media (max-width:760px){
 html.glass body main>section:not(.dk-hero),html.glass body footer{scroll-margin-top:calc(-1 * var(--gt))}
 html.glass body main>section.dk-hero:not(#x):not(#y):not(#z){height:calc(100svh + var(--gb))!important}
-html.glass body main>section.cmap:not(#a):not(#b):not(#c),html.glass body main>section.swhat:not(#a):not(#b):not(#c),html.glass body main>section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i),html.glass body main>section.news:not(#a):not(#b):not(#c){height:calc(100svh + var(--gt) + var(--gb))!important}
+html.glass body main>section.cmap:not(#a):not(#b):not(#c),html.glass body main>section.swhat:not(#a):not(#b):not(#c),html.glass body main>section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i),html.glass body main>section.news:not(#a):not(#b):not(#c){height:calc(100svh + var(--gt) + var(--gb) + 30px)!important}
 html body main>section.cmap:not(#x):not(#y):not(#z){padding-top:calc(44px + var(--gt,0px))!important;padding-bottom:calc(var(--gb,0px) + 12px)!important}
 html body main>section.cguides.wrap:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i){padding-top:calc(18px + var(--gt,0px))!important;padding-bottom:calc(var(--gb,0px) + 14px)!important}
 html body main>section.dk-hero:not(#x) .wrap,html body section.swhat:not(#x) .sw-tx:not(#y):not(#z){padding-bottom:calc(var(--gb,0px) + 36px)!important}
 html body main>section.news:not(#x):not(#y):not(#z){padding-bottom:calc(var(--gb,0px) + 20px)!important}
 }
 </style>
-<script id="glass-fit">(function(){var ios=/iPhone|iPod/.test(navigator.userAgent);function fit(){if(!ios||innerWidth>760)return;var gap=screen.height-innerHeight;if(gap<90||gap>260)return;var t=Math.min(62,Math.round(gap*.39)),bt=gap-t;var r=document.documentElement;r.style.setProperty('--gt',t+'px');r.style.setProperty('--gb',bt+'px');r.classList.add('glass')}fit();addEventListener('load',fit);addEventListener('orientationchange',function(){setTimeout(fit,300)})})();</script></head>
+<script id="glass-fit">(function(){var ios=/iPhone|iPod/.test(navigator.userAgent);function fit(){if(!ios||innerWidth>760)return;var gap=screen.height-innerHeight;if(gap<90||gap>260)return;var t=Math.min(80,Math.round(gap*.48)),bt=gap-t;var r=document.documentElement;r.style.setProperty('--gt',t+'px');r.style.setProperty('--gb',bt+'px');r.classList.add('glass')}fit();addEventListener('load',fit);addEventListener('orientationchange',function(){setTimeout(fit,300)})})();</script><style id="m-guides-rhythm">
+@media (max-width:760px){
+html body main>section.cguides.wrap:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i):not(#j){padding-top:calc(var(--gt,0px) + 24px)!important;padding-bottom:calc(var(--gb,0px) - 8px + 30px)!important}
+html:not(.glass) body main>section.cguides.wrap:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i):not(#j){padding-bottom:28px!important}
+html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) .cg-head{margin-bottom:28px!important}
+html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) .cg-lb{padding-top:14px!important}
+html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) .cg-row{margin-top:28px!important;gap:16px!important}
+html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) a.cg-c b{margin-top:10px!important}
+}
+</style></head>
 <body data-v="min" data-voice="1" data-logo="1" data-capsnav="1" data-over="1" data-tight="1" data-bleed="1" data-ft="1" data-steps="1" data-pipe="1" data-ph="1" data-hq="1" data-hqgo="1" data-names="1" data-more="1" data-sticky="1" data-short="1" data-newsph="1" data-newsph2="1" data-grade="1"><header class="top">
   <div class="wrap">
     <a class="brand" href="home-v2.html" aria-label="Florida Coastal home">
