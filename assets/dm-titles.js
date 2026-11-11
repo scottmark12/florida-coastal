@@ -17,10 +17,10 @@ function isTown(el){
  // town page title: the first h1 on a town page
  if(/\/towns\/(?!index)[a-z0-9-]+-v\d\.html/.test(location.pathname)&&el.tagName==='H1')return true;
  return false}
-function fix(){
+function fix(scope){var ALL=function(sel){return scope?[scope].concat([].slice.call(scope.querySelectorAll(sel==='body *'?'*':sel))).filter(function(e){return e.matches&&(sel==='body *'||e.matches(sel))}):document.querySelectorAll(sel)};
  if(mode==='2'){document.querySelectorAll(TOOLS.join(',')).forEach(setDM);document.querySelectorAll('h2').forEach(function(h){var t=h.textContent.trim();if(HOME_TOOL.some(function(p){return t.indexOf(p)===0}))setDM(h)});return}
  var keep=function(el){return isTown(el)||(mode==='3'&&ART.some(function(s){return el.matches(s)}))};
- document.querySelectorAll('body *').forEach(function(el){
+ ALL('body *').forEach(function(el){
   if(!el.firstChild)return;
   var f=getComputedStyle(el).fontFamily;if(!/Caslon/i.test(f))return;
   if(/italic/.test(getComputedStyle(el).fontStyle))return; // bylines and captions stay
@@ -30,13 +30,14 @@ function fix(){
   if(/Caslon Text/i.test(f)&&!/^(H[1-6]|B|STRONG)$/.test(el.tagName)&&!el.matches('.recv b,.pop h3'))return;
   setDM(el)})}
 if(mode==='1'){var s=document.createElement('style');s.textContent=".recv b,h1,h2,h3,h4,.qq{font-family:"+DMF+"!important;font-weight:500!important;letter-spacing:-.02em!important}";(document.head||document.documentElement).appendChild(s);
- fix=function(){document.querySelectorAll('body *').forEach(function(el){if(/Caslon Display/i.test(getComputedStyle(el).fontFamily))setDM(el)})}}
+ fix=function(scope){(scope?[scope].concat([].slice.call(scope.querySelectorAll('*'))):document.querySelectorAll('body *')).forEach(function(el){if(/Caslon Display/i.test(getComputedStyle(el).fontFamily))setDM(el)})}}
 // Nov 11 2026: no font flash. Keep the page hidden until titles have their final font, then catch anything drawn later right away.
 var root=document.documentElement,shown=false;
 function show(){if(shown)return;shown=true;root.classList.remove('dmw')}
-var hs=document.createElement('style');hs.textContent='html.dmw body{visibility:hidden}';(document.head||root).appendChild(hs);root.classList.add('dmw');
-setTimeout(show,1200);
-var pend=false;function soon(){if(pend)return;pend=true;requestAnimationFrame(function(){pend=false;fix()})}
+// titles now get their font from assets/fonts.css, so the page is never hidden; this only catches anything new
+
+var Q=[],pend=false;
+function soon(ms){ms.forEach(function(m){m.addedNodes.forEach(function(n){if(n.nodeType===1&&!(n.closest&&n.closest('svg'))&&n.tagName!=='SCRIPT'&&n.tagName!=='STYLE')Q.push(n)})});if(pend||!Q.length)return;pend=true;requestAnimationFrame(function(){pend=false;var q=Q;Q=[];q.forEach(function(n){if(n.isConnected)fix(n)})})}
 function start(){fix();show();try{new MutationObserver(soon).observe(document.body,{childList:true,subtree:true})}catch(e){setInterval(fix,1500)}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',start);else start();
 })();

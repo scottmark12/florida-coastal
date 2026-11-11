@@ -1,7 +1,9 @@
 /* Self hosted fonts (Nov 11 2026). Preloaded in each page head so text renders in the right font the first time. */
-@font-face{font-family:'DM Sans';font-style:normal;font-weight:100 1000;font-display:block;src:url(/assets/fonts/dm-sans.woff2) format('woff2')}
+@font-face{font-family:'DM Sans';font-style:normal;font-weight:100 1000;font-display:swap;src:url(/assets/fonts/dm-sans.woff2) format('woff2')}
 @font-face{font-family:'DM Sans';font-style:italic;font-weight:100 1000;font-display:swap;src:url(/assets/fonts/dm-sans-italic.woff2) format('woff2')}
 @font-face{font-family:'Libre Caslon Display';font-style:normal;font-weight:400;font-display:block;src:url(/assets/fonts/caslon-display.woff2) format('woff2')}
 @font-face{font-family:'Libre Caslon Text';font-style:normal;font-weight:400;font-display:block;src:url(/assets/fonts/caslon-text-400-normal.woff2) format('woff2')}
 @font-face{font-family:'Libre Caslon Text';font-style:italic;font-weight:400;font-display:swap;src:url(/assets/fonts/caslon-text-400-italic.woff2) format('woff2')}
 @font-face{font-family:'Libre Caslon Text';font-style:normal;font-weight:700;font-display:swap;src:url(/assets/fonts/caslon-text-700-normal.woff2) format('woff2')}
+/* Titles that use DM Sans instead of Caslon (was switched in by dm-titles.js after load, which caused a flash) */
+html body a.cs-t b:not(#fz1):not(#fz2),html body .dk-l h1.hx-back:not(#fz1):not(#fz2),html body .dk-l h1.hx-new:not(#fz1):not(#fz2),html body .cm-l h2:not(#fz1):not(#fz2),html body .sw-tx h2:not(#fz1):not(#fz2),html body section.news .wrap>div>h2:not(#fz1):not(#fz2),html body section#short>div>h2:not(#fz1):not(#fz2),html body .slh h2:not(#fz1):not(#fz2),html body .vm-lh h2:not(#fz1):not(#fz2),html body aside .card h3:not(#fz1):not(#fz2),html body button.tile b:not(#fz1):not(#fz2){font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.02em!important}
