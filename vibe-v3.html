@@ -333,12 +333,22 @@ html body.sliders .slcar.on:not(#x){display:flex;position:absolute;left:0;right:
 .slcar .sc b{font:500 17px/1.2 'DM Sans',sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .slcar .sc small{font:13px/1.3 'DM Sans',sans-serif;color:#6B7678;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
 .slcar .sc .go{margin-top:auto;font:600 13px 'DM Sans',sans-serif;color:#152A2E}
-html body.sliders #pop:not(#x){display:none!important}
 html body.sliders #sltop:not(#x){display:none!important}
 html body.sliders #slpill.on:not(#x){display:inline-flex;align-items:center;gap:8px;position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom));z-index:40;background:#152A2E;color:#fff;border:0;border-radius:999px;padding:12px 20px;font:600 15px 'DM Sans',sans-serif;box-shadow:0 6px 20px rgba(21,42,46,.28);white-space:nowrap}
 html body.sliders #slpill.on.dn:not(#x){top:78px;bottom:auto;background:#fff;color:#152A2E;padding:10px 16px;font-size:14px;box-shadow:0 3px 14px rgba(21,42,46,.18)}
 html body.sliders .sl2 .sl-ends:not(#x){display:none!important}html body.sliders .slh .slh-eb:not(#x){margin-bottom:0!important}html body.sliders .slh h2:not(#x){font-size:25px!important;margin:2px 0 6px!important}
 html body.sliders .sl-mail:not(#x){margin-top:70px}
+}</style>
+<style id="sl-pop">@media(max-width:760px){
+html body.sliders #pop .ph:not(#x):not(#y){height:118px!important}
+html body.sliders #pop .bd:not(#x):not(#y){padding:12px 18px 10px!important}
+html body.sliders #pop h3:not(#x):not(#y){font-size:27px!important;margin-top:4px!important}
+html body.sliders #pop .tags:not(#x):not(#y){margin-top:8px!important}
+html body.sliders #pop .why1:not(#x):not(#y){margin-top:8px;font-size:13.5px;line-height:1.3}
+html body.sliders #pop p:not(#x):not(#y){font-size:15.5px!important;margin-top:6px!important;display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+html body.sliders #pop .pnav:not(#x):not(#y){margin-top:10px}
+html body.sliders #pop .go:not(#x):not(#y){padding:12px!important}
+html body.sliders #pop .of:not(#x):not(#y){margin-top:4px!important}
 }</style>
 <style id="sl-fit">@media(max-width:760px){
 html body.sliders .mapw:not(#x){height:calc(100svh - 64px - 66px)!important;min-height:340px}
@@ -385,20 +395,20 @@ html body .vp .tiles.vt:not(#x){padding-top:6px!important}
 @media (min-width:761px){.vp .vm-all{display:none}}
 </style><style id="vm-pop">
 @media (max-width:760px){
-html body.vibes #pop.pop.on:not(#x),html body.vibes #pop.pop.on.full:not(#x){position:fixed!important;display:block!important;left:10px!important;right:10px!important;top:auto!important;bottom:calc(10px + env(safe-area-inset-bottom))!important;width:auto!important;max-width:none!important;max-height:calc(100svh - 90px);overflow:auto;z-index:60;border-radius:22px!important;background:#FBFAF7!important;box-shadow:0 18px 50px rgba(21,42,46,.28)!important;grid-template-columns:none!important;animation:vpUp .32s cubic-bezier(.2,.8,.2,1)}
+html body:is(.vibes,.sliders) #pop.pop.on:not(#x),html body:is(.vibes,.sliders) #pop.pop.on.full:not(#x){position:fixed!important;display:block!important;left:10px!important;right:10px!important;top:auto!important;bottom:calc(10px + env(safe-area-inset-bottom))!important;width:auto!important;max-width:none!important;max-height:calc(100svh - 90px);overflow:auto;z-index:60;border-radius:22px!important;background:#FBFAF7!important;box-shadow:0 18px 50px rgba(21,42,46,.28)!important;grid-template-columns:none!important;animation:vpUp .32s cubic-bezier(.2,.8,.2,1)}
 @keyframes vpUp{from{transform:translateY(30px);opacity:0}to{transform:none;opacity:1}}
-html body.vibes #pop .ph:not(#x){height:170px!important;min-height:0!important;width:auto!important;border-radius:0!important}
-html body.vibes #pop .x:not(#x){width:42px!important;height:42px!important;right:12px!important;top:12px!important;font-size:24px!important;background:#fff!important;border-radius:50%!important;box-shadow:0 2px 8px rgba(0,0,0,.18)}
-html body.vibes #pop .bd:not(#x){padding:18px 22px 18px!important}
-html body.vibes #pop .eb:not(#x){font-size:12px!important;letter-spacing:.16em!important;line-height:1.35}
-html body.vibes #pop h3:not(#x){font-size:34px!important;line-height:1.05!important;padding-right:0!important;margin-top:6px!important}
-html body.vibes #pop p:not(#x){display:block!important;font-family:'Libre Caslon Text',serif;font-size:17px!important;line-height:1.4!important;color:#2F3F42;margin:10px 0 0!important}
-html body.vibes #pop .tags:not(#x){margin-top:12px!important}
-html body.vibes #pop .why2:not(#x){display:none}
-html body.vibes #pop .pnav:not(#x){margin-top:18px;align-items:center}
-html body.vibes #pop .pnav button:not(#x){border:0!important;background:none!important;width:40px!important;font-size:26px!important}
-html body.vibes #pop .go:not(#x){padding:14px!important;font-size:16px!important;margin-top:0!important}
-html body.vibes #pop .of:not(#x){margin-top:8px!important;font-size:13px!important}
+html body:is(.vibes,.sliders) #pop .ph:not(#x){height:170px!important;min-height:0!important;width:auto!important;border-radius:0!important}
+html body:is(.vibes,.sliders) #pop .x:not(#x){width:42px!important;height:42px!important;right:12px!important;top:12px!important;font-size:24px!important;background:#fff!important;border-radius:50%!important;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+html body:is(.vibes,.sliders) #pop .bd:not(#x){padding:18px 22px 18px!important}
+html body:is(.vibes,.sliders) #pop .eb:not(#x){font-size:12px!important;letter-spacing:.16em!important;line-height:1.35}
+html body:is(.vibes,.sliders) #pop h3:not(#x){font-size:34px!important;line-height:1.05!important;padding-right:0!important;margin-top:6px!important}
+html body:is(.vibes,.sliders) #pop p:not(#x){display:block!important;font-family:'Libre Caslon Text',serif;font-size:17px!important;line-height:1.4!important;color:#2F3F42;margin:10px 0 0!important}
+html body:is(.vibes,.sliders) #pop .tags:not(#x){margin-top:12px!important}
+html body:is(.vibes,.sliders) #pop .why2:not(#x){display:none}
+html body:is(.vibes,.sliders) #pop .pnav:not(#x){margin-top:18px;align-items:center}
+html body:is(.vibes,.sliders) #pop .pnav button:not(#x){border:0!important;background:none!important;width:40px!important;font-size:26px!important}
+html body:is(.vibes,.sliders) #pop .go:not(#x){padding:14px!important;font-size:16px!important;margin-top:0!important}
+html body:is(.vibes,.sliders) #pop .of:not(#x){margin-top:8px!important;font-size:13px!important}
 }
 </style><script src="assets/fc-aka.js"></script></head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
@@ -526,8 +536,7 @@ function ndWhy(t){const n=S.need,L=[],d=LD[t.id];S.style&&!isR(S.style)&&t.v.inc
  return L.length?`<div class="why2"><b>Why it fits</b><ul>${L.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}
 const fK=k=>k>=1000?'$'+(k/1000).toFixed(k>=10000?0:2).replace(/\.?0+$/,'')+'M':'$'+Math.round(k)+'K';
 function popList(){if(S.mode=='sliders')return S.top.slice(0,5).map(id=>T.find(t=>t.id==id));if(S.mode=='vibes'&&S.style)return vOrder();return []}
-function openPop(t,nopan){if(SLM()&&S.top.slice(0,5).includes(t.id)){slCarTo(t.id,true);return}
-S.pop=t;const p=$('pop');const L=popList(),ki=L.findIndex(x=>x.id==t.id),n=L.length,nx=n>1&&ki>=0?L[(ki+1)%n]:null,sh=x=>x.n.replace(/ \(.*\)$/,'');
+function openPop(t,nopan){S.pop=t;const p=$('pop');const L=popList(),ki=L.findIndex(x=>x.id==t.id),n=L.length,nx=n>1&&ki>=0?L[(ki+1)%n]:null,sh=x=>x.n.replace(/ \(.*\)$/,'');
  const d=LD[t.id],tags=(S.style&&!isR(S.style)&&t.v.includes(S.style)?[S.style]:[]).concat(t.v.filter(v=>v!==S.style&&LK.VFEEL.includes(v))).slice(0,3).map(vTag).join('');
  let eb=d.rn,mid='';
  if(S.mode=='sliders'&&ki>=0){{const fw=slFitWord(fitSl(t),S.best,ki),wy=slWhy(t);eb=fw?`${d.rn} · <b>${fw}</b>`:d.rn;mid=wy?`<div class="why1">${wy}</div>`:''}}
@@ -537,7 +546,7 @@ S.pop=t;const p=$('pop');const L=popList(),ki=L.findIndex(x=>x.id==t.id),n=L.len
  p.querySelectorAll('[data-st]').forEach(bn=>bn.onclick=e=>{e.stopPropagation();const j=(ki+(+bn.dataset.st)+n)%n;flyTo(L[j])});
  p.classList.remove('full');p.onclick=ev=>{if(!ev.target.closest('.x,.go'))p.classList.add('full')};p.classList.add('on');p.querySelector('.x').onclick=e=>{e.stopPropagation();closePop()};render();placePop();
  const [w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k,pw=p.offsetWidth+32,ph=p.offsetHeight+32;
- if(FIXED())return;if(nopan){const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;if(w>=600&&(sx<380||sx>w-60||sy<60||sy>h-40)){const cx=(380+w)/2;go([t.x-cx*k,t.y-h/2*k,v[2],v[3]],400)}return}const nar=w<600,under=nar?sy>h-ph:(sx<pw&&sy>h-ph),out=sx<40||sx>w-40||sy<40||sy>h-40;
+ if(SLM()){const pr=p.getBoundingClientRect(),mb=box.getBoundingClientRect(),avail=pr.top-mb.top-12;if(sy<70||sy>avail||sx<30||sx>w-30)go([t.x-w/2*k,t.y-Math.max(90,(70+avail)/2)*k,v[2],v[3]],420);return}if(FIXED())return;if(nopan){const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;if(w>=600&&(sx<380||sx>w-60||sy<60||sy>h-40)){const cx=(380+w)/2;go([t.x-cx*k,t.y-h/2*k,v[2],v[3]],400)}return}const nar=w<600,under=nar?sy>h-ph:(sx<pw&&sy>h-ph),out=sx<40||sx>w-40||sy<40||sy>h-40;
  if(under||out){const cx=nar?w/2:(pw+w)/2,cy=nar?(h-ph)/2:h/2;go([t.x-cx*k,t.y-cy*k,v[2],v[3]])}}
 function closePop(){S.pop=null;rowOn();$('pop').classList.remove('on');render();if(S.mode=='vibes'){document.querySelectorAll('.vm-row.on').forEach(r=>r.classList.remove('on'))}}
 function tags(){chips();const tg=$('tag');const r=S.region;tg.textContent=r?r+' ✕':'';tg.classList.toggle('on',!!r)}
@@ -602,7 +611,7 @@ const RCOPY={"daytona-flagler": {"h": "Daytona, New Smyrna and Flagler", "tag": 
 LK.REGIONS.forEach(r=>{const k='r:'+r.id;VIBES[k]=RCOPY[r.id]?RCOPY[r.id].h:r.map;VCOL[k]=RCOL;VSUB[k]=RCOPY[r.id]?RCOPY[r.id].tag:''});
 T.forEach(t=>{const g=LD[t.id]&&LD[t.id].reg;if(g&&!t.v.includes('r:'+g))t.v.push('r:'+g)});
 S.sub='styles';
-function setMode(m){setTimeout(()=>{slPill();if(m!='sliders')slCar([])},60);if(m=='regions'||m=='explore'){m='vibes';if(S.sub!='regions'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='regions'}else if(m=='vibes'){if(S.sub!='styles'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='styles'}else if(m=='sliders'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.mode=m;if(m!='explore')setTimeout(()=>{S.zoomedTo=null;home()},40);setTimeout(()=>{render();if(m!='sliders')list()},30);$('mhint').textContent=S.sub=='regions'&&m=='vibes'?'Pick a stretch of coast and tap a town.':{explore:'See every beach town on the map and narrow by style or price.',vibes:'Pick the feel you want and see where it lives.',sliders:'Tell us what matters and we rank all 167 towns for you.'}[m];document.body.classList.toggle('vibes',m=='vibes');document.body.classList.toggle('sliders',m=='sliders');if(m=='sliders'){requestAnimationFrame(()=>{render()});document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));closePop();S.region='';tags();slRender();if(!S.top.length)go(fit(ALL,.02));return}document.body.classList.toggle('pick',m=='vibes'&&!!S.style);document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==(m=='vibes'&&S.sub=='regions'?'regions':m)));
+function setMode(m){S.hover=null;setTimeout(()=>{slPill();if(m!='sliders')slCar([])},60);if(m=='regions'||m=='explore'){m='vibes';if(S.sub!='regions'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='regions'}else if(m=='vibes'){if(S.sub!='styles'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='styles'}else if(m=='sliders'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.mode=m;if(m!='explore')setTimeout(()=>{S.zoomedTo=null;home()},40);setTimeout(()=>{render();if(m!='sliders')list()},30);$('mhint').textContent=S.sub=='regions'&&m=='vibes'?'Pick a stretch of coast and tap a town.':{explore:'See every beach town on the map and narrow by style or price.',vibes:'Pick the feel you want and see where it lives.',sliders:'Tell us what matters and we rank all 167 towns for you.'}[m];document.body.classList.toggle('vibes',m=='vibes');document.body.classList.toggle('sliders',m=='sliders');if(m=='sliders'){requestAnimationFrame(()=>{render()});document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));closePop();S.region='';tags();slRender();if(!S.top.length)go(fit(ALL,.02));return}document.body.classList.toggle('pick',m=='vibes'&&!!S.style);document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==(m=='vibes'&&S.sub=='regions'?'regions':m)));
  if(m=='vibes'&&!S.style){S.region='';tags();closePop();go(fit(ALL,.02))}list()}
 function fitStyle(k){const L=T.filter(t=>t.v.includes(k));const b=[Math.min(...L.map(t=>t.lo)),Math.max(...L.map(t=>t.lo)),Math.min(...L.map(t=>t.la)),Math.max(...L.map(t=>t.la))];if(isR(k)){const p=.15,f=fit([b[0]-p,b[1]+p,b[2]-p,b[3]+p],.1),[w,h]=size();if(w<600)return f;const L0=Math.min(470,w*.42),nw=f[2]*w/(w-L0),nh=nw*h/w;return [f[0]+f[2]-nw,f[1]+f[3]/2-nh/2,nw,nh]}const pad=.35;return fit([b[0]-1.1,b[1]+1.1,b[2]-pad,b[3]+pad],.04)}
 $('tiles').innerHTML='';[].map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('img/vibes/${k}.webp')"><i><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>${T.filter(t=>t.v.includes(k)).length} towns</i></div><b>${VIBES[k]}</b><small>${VSUB2[k]}</small></button>`).join('');
@@ -632,12 +641,12 @@ function slPri(){return SLC.map(([c])=>slAim(c,S.sl[c])).filter(x=>x[1]>0).sort(
 function slTie(t){return slPri().slice(0,3).reduce((s,k,i)=>s+(LK.RANK_N-rkk(t,k))*(3-i),0)}
 function slRank(){const F=fitSl;return T.filter(slIn).sort((x,y)=>Math.round(100*F(y))-Math.round(100*F(x))||slTie(y)-slTie(x)||F(y)-F(x))}
 const SLM=()=>S.mode=='sliders'&&matchMedia('(max-width:760px)').matches;
-function slCar(L){const c=$('slcar');if(!c)return;if(!SLM()||!L.length){c.innerHTML='';c.classList.remove('on');if(S.mode=='sliders')S.hover=null;return}
+function slCar(L){const c=$('slcar');if(!c)return;if(true){c.innerHTML='';c.classList.remove('on');if(S.mode=='sliders')S.hover=null;return}
  c.innerHTML=L.map((t,i)=>{const wy=slWhy(t);return `<a class="sc" href="towns/${t.id}-v3.html" data-id="${t.id}"><span class="ph" style="background-image:url('${t.img}')"></span><span class="bd"><span class="hd"><i>${i+1}</i><b>${t.n}</b></span><small>${wy||LD[t.id].rn}</small><span class="go">Explore →</span></span></a>`}).join('');
  c.classList.add('on');c.scrollLeft=0;S.hover=L[0].id;
  if(!c.dataset.w){c.dataset.w=1;let tm;c.addEventListener('scroll',()=>{clearTimeout(tm);tm=setTimeout(()=>{const cs=[...c.children];if(!cs.length)return;const mid=c.scrollLeft+c.clientWidth/2;let best=cs[0],bd=1e9;cs.forEach(e=>{const d=Math.abs(e.offsetLeft+e.offsetWidth/2-mid);if(d<bd){bd=d;best=e}});if(S.hover!==best.dataset.id){S.hover=best.dataset.id;slPanTo(T.find(t=>t.id==S.hover))}},110)},{passive:true})}}
 function slCarTo(id,smooth){const c=$('slcar'),e=c&&c.querySelector(`[data-id="${id}"]`);if(!e)return;S.hover=id;c.scrollTo({left:e.offsetLeft-(c.clientWidth-e.offsetWidth)/2,behavior:smooth?'smooth':'auto'});render()}
-function slFit(P){const[w,h]=size(),T0=64,B0=160,b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))],f0=fit([b[0]-.3,b[1]+.3,b[2]-.18,b[3]+.18],.04),q=h/Math.max(200,h-T0-B0),nw=f0[2]*q,nh=f0[3]*q,kk=nh/h;return [f0[0]-(nw-f0[2])/2,f0[1]+f0[3]/2-(T0+(h-T0-B0)/2)*kk,nw,nh]}
+function slFit(P){const[w,h]=size(),T0=64,pe=$('pop'),B0=pe&&pe.classList.contains('on')?Math.max(160,pe.getBoundingClientRect().top>0?box.getBoundingClientRect().bottom-pe.getBoundingClientRect().top+16:160):40,b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))],f0=fit([b[0]-.3,b[1]+.3,b[2]-.18,b[3]+.18],.04),q=h/Math.max(200,h-T0-B0),nw=f0[2]*q,nh=f0[3]*q,kk=nh/h;return [f0[0]-(nw-f0[2])/2,f0[1]+f0[3]/2-(T0+(h-T0-B0)/2)*kk,nw,nh]}
 function slPanTo(t){if(!t)return;const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;if(sx<50||sx>w-50||sy<50||sy>h-170)go([t.x-w/2*k,t.y-(h-150)/2*k,v[2],v[3]],450);else render()}
 function slPill(){let p=$('slpill');if(!p){p=document.createElement('button');p.id='slpill';p.className='slpill';document.body.appendChild(p);p.onclick=()=>{const sl=$('sl');if(!sl)return;const y=sl.getBoundingClientRect().top+scrollY-12;scrollTo({top:p.classList.contains('dn')?y:0,behavior:'smooth'})};addEventListener('scroll',()=>slPill(),{passive:true})}
  const sl=$('sl');if(!sl||!SLM()){p.classList.remove('on');return}const y=sl.getBoundingClientRect().top+scrollY-12,dn=scrollY<y/2;p.classList.add('on');p.classList.toggle('dn',dn);
@@ -678,7 +687,7 @@ function score(first){
  if(slNone()){S.top=[];closePop();$('sltop')&&($('sltop').innerHTML='');slCar([]);slPill();render();return}
  const R=slRank(),L=R.slice(0,5);S.top=R.slice(0,15).map(t=>t.id);S.F=fitSl;S.best=R.length?fitSl(R[0]):1;S.tie=L.length>1&&S.best-fitSl(L[1])<=.01;slCar(L);setTimeout(slPill,0);
  $('sltop')&&($('sltop').innerHTML=`<div class="vm-eb">Your top 5</div><ol>${L.map((t,i)=>`<li><a href="towns/${t.id}-v3.html"><span class="n">${i+1}</span><span class="nm"><b>${t.n}</b>${slWhy(t)?`<small>${slWhy(t)}</small>`:''}</span><span class="fw">${slFitWord(fitSl(t),S.best,i)}</span></a></li>`).join('')}</ol>`);
- clearTimeout(S.ft);if(SLM()&&L.length){S.ft=setTimeout(()=>go(slFit(L),first?0:550),first?0:200)}else if(FIXED()){home()}else S.ft=setTimeout(()=>{const P=L;const[w,h]=size(),nw=w<600;
+ clearTimeout(S.ft);if(SLM()&&L.length){S.ft=setTimeout(()=>{if(!S.pop||!S.top.slice(0,5).includes(S.pop.id)||S.pop.id===S.auto)openPop(L[0],true);S.auto=L[0].id;go(slFit(L),first?0:550)},first?0:200)}else if(FIXED()){home()}else S.ft=setTimeout(()=>{const P=L;const[w,h]=size(),nw=w<600;
   if(nw){const b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))];let f=fit([b[0]-1.3,b[1]+1.3,b[2]-.35,b[3]+.35],.04);if(SLM()){const T0=64,B0=160,f0=fit([b[0]-.3,b[1]+.3,b[2]-.18,b[3]+.18],.04),q=h/Math.max(200,h-T0-B0),nw=f0[2]*q,nh=f0[3]*q,kk=nh/h;f=[f0[0]-(nw-f0[2])/2,f0[1]-T0*kk,nw,nh]}go(f,first?0:500);return}
   const pe=$('pop'),cw=(pe.offsetWidth||320)+40,ch=(pe.offsetHeight||400)+40,KS=fit(ALL,0)[2]/w;
   const xs=P.map(t=>t.x),ys=P.map(t=>t.y),x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
