@@ -274,10 +274,8 @@ body.sliders .main{grid-template-columns:minmax(0,1fr) 420px}
 .tiles.vt .tile:hover .ph{filter:brightness(1.06)}
 @media (min-width:761px){body.vibes .main{grid-template-columns:minmax(0,1fr) 420px}body.vibes .res{padding:18px 22px 30px}body.vibes .mode button{padding:8px 13px;font-size:14.5px}body.vibes .vm-sh{margin:-4px -22px 0}body.vibes .vm-sht{padding:0 22px 16px}}
 </style><script src="assets/dm-titles.js?v=3"></script><script src="assets/fc-connect.js"></script><style id="vm-polish">
-/* map labels: Caslon names places */
-html body svg text.lbl{font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;letter-spacing:0!important;paint-order:stroke;stroke:#F3F1EC;stroke-width:3px;stroke-linejoin:round}
-html body svg text.sea{font-family:'Libre Caslon Display',Georgia,serif!important;font-style:italic;font-weight:400!important;letter-spacing:.02em!important}
-html body svg text.city{font-family:'DM Sans',sans-serif!important;letter-spacing:.14em!important;font-weight:500!important}
+/* map labels like the live map */
+html body svg text.sea{font-family:'DM Sans',sans-serif!important;font-style:normal;font-weight:500!important;letter-spacing:.2em!important;text-transform:uppercase}
 /* mode switch like our tab rows */
 html body .res .mode:not(#x){display:flex!important;gap:8px!important;background:none!important;padding:0!important;border:0!important;box-shadow:none!important;border-radius:0!important}
 html body .res .mode:not(#x) button{flex:none!important;height:36px!important;padding:0 15px!important;border-radius:999px!important;border:1px solid #D9D4CB!important;background:#fff!important;color:#152A2E!important;font:500 14px 'DM Sans',sans-serif!important;box-shadow:none!important}
@@ -285,7 +283,7 @@ html body .res .mode:not(#x) button.on{background:#152A2E!important;border-color
 html body .res .mhint:not(#x){font:400 14px/1.45 'DM Sans',sans-serif!important;color:#6B7A7C!important}
 /* eyebrows and headlines */
 html body .vm-eb:not(#x),html body .slh-eb:not(#x) span{font:500 12px/1 'DM Sans',sans-serif!important;letter-spacing:.14em!important;text-transform:uppercase!important;color:#5A6B6E!important}
-html body .vp h2:not(#x),html body .sl .slh h2:not(#x){font-size:32px!important;line-height:1.08!important;color:#152A2E!important;margin:8px 0 16px!important}
+html body .vp .vm-lh h2:not(#x),html body .sl .slh h2:not(#x){font-size:32px!important;line-height:1.08!important;color:#152A2E!important;margin:8px 0 16px!important}
 html body .sl-reset:not(#x){background:none!important;border:0!important;font:500 13px 'DM Sans',sans-serif!important;color:#152A2E!important;text-decoration:underline;text-underline-offset:3px;padding:0!important}
 html body .sl-reset:not(#x):disabled{opacity:.35;text-decoration:none}
 /* style tiles like the region tiles */
