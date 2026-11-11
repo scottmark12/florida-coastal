@@ -48,8 +48,8 @@
   var PIN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
   var BOOK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4zM20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg>';
   function town(t,q){return '<a class="fcs-it" href="'+U('towns/'+t.i+'-v3.html')+'"><i style="background-image:url(\''+U(t.img)+'\')"></i><span><b>'+hi(t.n,q)+'</b><small>'+esc(t.r)+'</small></span>'+'</a>'}
-  function region(r,q){return '<a class="fcs-it" href="'+U('towns/index-v2.html#'+r.c+'/'+r.i)+'"><i class="dot">'+PIN+'</i><span><b>'+hi(r.n,q)+'</b><small>'+r.k+' beach towns</small></span></a>'}
-  function art(a,q){return '<a class="fcs-it" href="'+U(a.u)+'"><i class="dot">'+BOOK+'</i><span><b>'+hi(a.n,q)+'</b><small>Guide</small></span></a>'}
+  function region(r,q){return '<a class="fcs-it" href="'+U('towns/index-v2.html#'+r.c+'/'+r.i)+'"><i style="background-image:url(\''+U(r.img)+'\')"></i><span><b>'+hi(r.n,q)+'</b><small>Region · '+r.k+' beach towns</small></span></a>'}
+  function art(a,q){return '<a class="fcs-it" href="'+U(a.u)+'"><i style="background-image:url(\''+U(a.img)+'\')"></i><span><b>'+hi(a.n,q)+'</b><small>Guide</small></span></a>'}
   function score(name,q){var n=norm(name);if(n===q)return 0;if(n.indexOf(q)===0)return 1;if((' '+n).indexOf(' '+q)>=0)return 2;if(n.indexOf(q)>=0)return 3;return 9}
   function render(){
     var q=norm(inp.value),h='';
@@ -59,14 +59,14 @@
       var P=IDX.pop.filter(function(i){return rs.indexOf(i)<0}).map(function(i){return IDX.t.find(function(t){return t.i===i})}).filter(Boolean);
       h=(RC.length?'<div class="fcs-h">Recently viewed</div>'+RC.map(function(t){return town(t,'')}).join(''):'')+'<div class="fcs-h">Most explored this month</div>'+P.map(function(t){return town(t,'')}).join('');
     }else{
-      var T=IDX.t.map(function(t){return [score(t.n,q),t]}).filter(function(x){return x[0]<9}).sort(function(a,b){return a[0]-b[0]||a[1].n.localeCompare(b[1].n)}).slice(0,6).map(function(x){return x[1]});
+      var T=IDX.t.map(function(t){var sr=score(t.r.split(' · ')[0],q);return [Math.min(score(t.n,q),t.r.indexOf(' · ')>0&&sr<9?sr+1:9),t]}).filter(function(x){return x[0]<9}).sort(function(a,b){return a[0]-b[0]||a[1].n.localeCompare(b[1].n)}).slice(0,6).map(function(x){return x[1]});
       var R=IDX.r.map(function(r){return [Math.min(score(r.n,q),score(r.n.replace(/^The /,''),q)),r]}).filter(function(x){return x[0]<9}).sort(function(a,b){return a[0]-b[0]}).slice(0,3).map(function(x){return x[1]});
       if(!T.length)T=IDX.t.filter(function(t){return norm(t.r).indexOf(q)>=0}).slice(0,4);
       var A=IDX.a.map(function(a){return [score(a.n,q),a]}).filter(function(x){return x[0]<9}).sort(function(a,b){return a[0]-b[0]}).slice(0,3).map(function(x){return x[1]});
       if(T.length)h+='<div class="fcs-h">Towns</div>'+T.map(function(t){return town(t,q)}).join('');
       if(R.length)h+='<div class="fcs-h">Regions</div>'+R.map(function(r){return region(r,q)}).join('');
       if(A.length)h+='<div class="fcs-h">Guides</div>'+A.map(function(a){return art(a,q)}).join('');
-      if(!h)h='<p class="fcs-none">No town, region or guide matches “'+esc(inp.value.trim())+'”.</p><a class="fcs-it" href="'+U('towns/index-v2.html')+'"><i class="dot">'+PIN+'</i><span><b>See all 167 beach towns</b><small>Browse by region or A to Z</small></span></a>';
+      if(!h)h='<p class="fcs-none">No town, region or guide matches “'+esc(inp.value.trim())+'”.</p><a class="fcs-it" href="'+U('towns/index-v2.html')+'"><i style="background-image:url(\''+U('img/c/destin.jpg')+'\')"></i><span><b>See all 167 beach towns</b><small>Browse by region or A to Z</small></span></a>';
     }
     res.innerHTML=h;items=[].slice.call(res.querySelectorAll('.fcs-it'));sel=0;mark();
   }
