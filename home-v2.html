@@ -281,13 +281,16 @@ html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) .cg-he
 }
 </style><style id="m-fullglass">
 @media (max-width:760px){
-html body main>section,html body footer{scroll-margin-top:calc(-1 * env(safe-area-inset-top))}
-html body main>section.cmap:not(#x):not(#y){padding-top:calc(44px + env(safe-area-inset-top))!important;padding-bottom:calc(100lvh - 100svh + 12px)!important}
-html body main>section.cguides.wrap:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s){padding-top:calc(18px + env(safe-area-inset-top))!important;padding-bottom:calc(100lvh - 100svh + 14px)!important}
-html body main>section.dk-hero:not(#x) .wrap,html body section.swhat:not(#x) .sw-tx:not(#y):not(#z){padding-bottom:calc(100lvh - 100svh + 36px)!important}
-html body main>section.news:not(#x):not(#y){padding-bottom:calc(100lvh - 100svh + 20px)!important}
+html.glass body main>section:not(.dk-hero),html.glass body footer{scroll-margin-top:calc(-1 * var(--gt))}
+html.glass body main>section.dk-hero:not(#x):not(#y):not(#z){height:calc(100svh + var(--gb))!important}
+html.glass body main>section.cmap:not(#a):not(#b):not(#c),html.glass body main>section.swhat:not(#a):not(#b):not(#c),html.glass body main>section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i),html.glass body main>section.news:not(#a):not(#b):not(#c){height:calc(100svh + var(--gt) + var(--gb))!important}
+html body main>section.cmap:not(#x):not(#y):not(#z){padding-top:calc(44px + var(--gt,0px))!important;padding-bottom:calc(var(--gb,0px) + 12px)!important}
+html body main>section.cguides.wrap:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i){padding-top:calc(18px + var(--gt,0px))!important;padding-bottom:calc(var(--gb,0px) + 14px)!important}
+html body main>section.dk-hero:not(#x) .wrap,html body section.swhat:not(#x) .sw-tx:not(#y):not(#z){padding-bottom:calc(var(--gb,0px) + 36px)!important}
+html body main>section.news:not(#x):not(#y):not(#z){padding-bottom:calc(var(--gb,0px) + 20px)!important}
 }
-</style></head>
+</style>
+<script id="glass-fit">(function(){var ios=/iPhone|iPod/.test(navigator.userAgent);function fit(){if(!ios||innerWidth>760)return;var gap=screen.height-innerHeight;if(gap<90||gap>260)return;var t=Math.min(62,Math.round(gap*.39)),bt=gap-t;var r=document.documentElement;r.style.setProperty('--gt',t+'px');r.style.setProperty('--gb',bt+'px');r.classList.add('glass')}fit();addEventListener('load',fit);addEventListener('orientationchange',function(){setTimeout(fit,300)})})();</script></head>
 <body data-v="min" data-voice="1" data-logo="1" data-capsnav="1" data-over="1" data-tight="1" data-bleed="1" data-ft="1" data-steps="1" data-pipe="1" data-ph="1" data-hq="1" data-hqgo="1" data-names="1" data-more="1" data-sticky="1" data-short="1" data-newsph="1" data-newsph2="1" data-grade="1"><header class="top">
   <div class="wrap">
     <a class="brand" href="home-v2.html" aria-label="Florida Coastal home">
@@ -335,11 +338,4 @@ h+=sl+lb+'<circle cx="'+cx+'" cy="'+cy+'" r="'+11*k+'" fill="#152A2E" opacity=".
 svg.innerHTML=h}
 var C=[["apalachicola", "Apalachicola", "img/c/apalachicola-home.jpg", "Old Florida", "Forgotten Coast", "Brick storefronts, shrimp boats on the river and no hurry at all.", "$300K to $385K", "#2", "Coastal charm", "1.5 hr", "TLH airport"], ["cedarkey", "Cedar Key", "img/c/spring-nature-coast.jpg", "Island Life", "Nature Coast", "A tiny island town of clam farms, backwater keys and Gulf sunsets.", "$320K", "#5", "Coastal charm", "1 hr 15", "GNV airport"], ["dunedin", "Dunedin", "img/c/dunedin-honeymoon.jpg", "Walkable", "Tampa Bay", "A busy Main Street on the Pinellas Trail, with island beaches up the causeway.", "$450K", "#3", "Walkability", "TPA", "Airport"], ["siesta-key", "Siesta Key", "img/c/siesta-key.jpg", "Best Beaches", "Sarasota", "Quartz white sand that stays cool underfoot and a lively village at the north end.", "$1.1M", "#1", "Beaches", "25 min", "SRQ airport"]],i=1,card=document.querySelector('.cmap .cm-card');
 function show(n){var c=C[n];draw(c[0]);if(!card)return;card.classList.add('fade');setTimeout(function(){card.href='towns/'+c[0]+'-v3.html';var im=card.querySelector('img');im.src=c[2];im.alt=c[1];var p=card.querySelectorAll('.cm-pill');p[0].textContent=c[3];p[1].textContent=c[4];var q=function(x){return card.querySelector(x)};q('.cm-bd b').textContent=c[1];q('.cm-bd p').textContent=c[5];q('.s1').textContent=c[6];q('.s2').textContent=c[7]+' of 167';q('.s2l').textContent=c[8];q('.s3').textContent=c[9];q('.s3l').textContent=c[10];q('.cm-go').textContent='Explore '+c[1]+' →';card.classList.remove('fade')},250)}
-C.forEach(function(c){var im=new Image();im.src=c[2]});show(1);var tm=setInterval(function(){i=(i+1)%C.length;show(i)},4500);card&&card.addEventListener('mouseenter',function(){clearInterval(tm)});})()</script><script id="vp-debug">
-(function(){if(location.hash!=='#vp')return;function m(css){var d=document.createElement('div');d.style.cssText='position:fixed;left:0;width:1px;visibility:hidden;'+css;document.body.appendChild(d);return d}
-function run(){var a=m('top:0;height:100svh'),b=m('top:0;height:100lvh'),c=m('top:0;height:100dvh'),t=m('top:0;height:0;padding-top:env(safe-area-inset-top)'),bb=m('top:0;height:0;padding-top:env(safe-area-inset-bottom)'),f=m('bottom:0;height:1px');
-var vv=window.visualViewport||{};var o=document.createElement('div');o.style.cssText='position:fixed;left:12px;right:12px;top:40%;z-index:99999;background:#111;color:#fff;font:600 15px/1.5 system-ui;padding:14px;border-radius:10px;white-space:pre';
-o.textContent='svh '+a.offsetHeight+'  lvh '+b.offsetHeight+'  dvh '+c.offsetHeight+'\ninnerH '+innerHeight+'  clientH '+document.documentElement.clientHeight+'\nvvH '+Math.round(vv.height||0)+'  vvTop '+Math.round(vv.offsetTop||0)+'\nsafeTop '+t.offsetHeight+'  safeBot '+bb.offsetHeight+'\nfixedBottom '+Math.round(f.getBoundingClientRect().bottom)+'  scrY '+Math.round(scrollY)+'\nscreen '+screen.height;
-document.body.appendChild(o)}
-setTimeout(run,800)})();
-</script></body></html>
+C.forEach(function(c){var im=new Image();im.src=c[2]});show(1);var tm=setInterval(function(){i=(i+1)%C.length;show(i)},4500);card&&card.addEventListener('mouseenter',function(){clearInterval(tm)});})()</script></body></html>
