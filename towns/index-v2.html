@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex">
 <title>Beach Towns · Florida Coastal</title>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="../assets/footer-v2.css"><style>footer.fx{margin-top:0!important}</style>
@@ -105,7 +105,18 @@ nav.top a.on{box-shadow:inset 0 -2px #fff;padding-bottom:20px;margin-bottom:-22p
 .row{grid-auto-columns:72%;gap:12px;margin-left:-20px;margin-right:-20px;padding:0 20px;scroll-padding-left:20px}
 .cg{grid-template-columns:repeat(2,1fr);gap:10px}.ct b{font-size:22px}.grid{grid-template-columns:repeat(2,1fr);gap:24px 14px}.card h4{font-size:19px}
 .cols{grid-template-columns:1fr;gap:30px}.fl input{flex:1 1 100%}.fl select{flex:1}.fl .c{flex:1 1 100%;margin:4px 0 0}.az{padding:64px 0 70px;margin-top:80px}}
-</style><script src="../assets/fc-connect.js"></script><script src="/assets/fc-menu.js" defer></script></head><body>
+</style><script src="../assets/fc-connect.js"></script><script src="/assets/fc-menu.js" defer></script><style id="t-snap">
+@media (max-width:760px){
+html.tsnap:not(#x){scroll-snap-type:y mandatory;overflow:visible!important;overflow-x:clip!important}
+html body:not(#x){overflow:visible!important;overflow-x:clip!important}
+html body>main>section.hs:not(#x),html body section.hs:not(#x){height:calc(100svh + var(--gb,0px))!important;min-height:0!important;scroll-snap-align:start;scroll-snap-stop:always}
+html body section.s:not(#x){min-height:calc(100svh + var(--gt,0px) + var(--gb,0px));box-sizing:border-box;display:flex!important;flex-direction:column;justify-content:center;padding-top:calc(var(--gt,0px) + 40px)!important;padding-bottom:calc(var(--gb,0px) + 40px)!important;margin:0!important;scroll-snap-align:start;scroll-snap-stop:always;scroll-margin-top:calc(-1 * var(--gt,0px))}
+html body section.az:not(#x){scroll-snap-align:start;scroll-margin-top:calc(-1 * var(--gt,0px));padding-top:calc(var(--gt,0px) + 40px)!important;margin-top:0!important}
+}
+</style><script id="t-snap-js">(function(){if(innerWidth>760)return;var r=document.documentElement;
+if(/iPhone|iPod/.test(navigator.userAgent)){var gap=screen.height-innerHeight;if(gap>=90&&gap<=260){var t=Math.min(84,Math.round(gap*.48)+4);r.style.setProperty('--gt',t+'px');r.style.setProperty('--gb',(gap-t+44)+'px')}}
+function f(){var az=document.querySelector('section.az');if(!az)return;var on=scrollY<az.offsetTop-2;r.classList.toggle('tsnap',on)}
+r.classList.add('tsnap');addEventListener('scroll',f,{passive:true});addEventListener('load',f);f()})();</script></head><body>
 <header><a class="logo" href="../home-v2.html"><img src="../img/fc-logo-arch-line-white.png" alt="Florida Coastal"></a>
 <nav class="top"><a class="on" href="../towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="../vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="../vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="../articles/index.html" data-nav="articles">Articles</a></nav>
 <a class="cta" href="../quiz-photo.html">Take the quiz</a></header>
