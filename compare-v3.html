@@ -62,6 +62,23 @@ html body .cx h1,html body .cx h2{font-family:'DM Sans',system-ui,sans-serif!imp
 .th b{font-size:20px}.th span{font-size:12.5px}.th .x{width:28px;height:28px;font-size:16px;right:6px;top:6px}.c{font-size:14.5px}
 .bar i{width:9px;height:5px}.sc{flex-wrap:wrap;gap:4px 6px}.vg{grid-template-columns:1fr;gap:18px}.verdict{padding:22px 18px}.ask{padding:9px 12px;font-size:13.5px}
 .stick{top:64px}.stick .grid{padding:10px 16px}.stick em{display:none}.stick span{font-size:15px}.add{padding:12px}}
+.c .sm{display:none}.more{display:none}
+.c b{font-weight:600}.c small{display:block;font-size:13.5px;color:#5A6B6E;margin-top:2px;line-height:1.35}
+.stick span{display:flex;align-items:center;gap:10px}.stick span i{width:34px;height:26px;border-radius:6px;background:#ddd center/cover;flex:none}
+.ask.ol{background:#fff;color:#152A2E;box-shadow:inset 0 0 0 1.5px #152A2E}
+@media (hover:hover) and (min-width:761px){.th .x{opacity:0;transition:opacity .15s}.th:hover .x,.th .x:focus-visible{opacity:1}}
+@media (max-width:760px){
+ .c .lg{display:none}.c .sm{display:block}.c{font-size:14px;line-height:1.4}.c b{font-size:15px}.c small{font-size:12px}
+ .txt .c{display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;overflow:hidden;font-size:13.5px}
+ .txt.open .c{display:block;-webkit-line-clamp:none}
+ .more{display:block;grid-column:1/-1;justify-self:start;margin-top:10px;border:0;background:none;padding:0;font:inherit;font-size:13.5px;font-weight:600;letter-spacing:0;text-transform:none;color:#152A2E;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+ .row{padding:14px 0 16px}.lab{font-size:12px;margin-bottom:8px}
+ .bar{display:flex;width:100%}.bar i{flex:1;width:auto}.sc{display:grid;grid-template-columns:1fr auto;gap:6px 8px}.sc .bar{grid-column:1/-1}.cxbest{font-size:10.5px}
+ .th .ph{aspect-ratio:1/1;border-radius:12px}.th b{font-size:19px;margin-top:8px}
+ .ask{display:block;text-align:center;padding:9px 6px;font-size:13px;line-height:1.25}
+ .stick span{gap:6px;font-size:14px}.stick span i{width:24px;height:24px;border-radius:50%}
+ .vg b{font-size:21px}.vg p{font-size:15px}
+}
 </style><style>html body header.fch{position:sticky;top:0;z-index:50;height:64px;display:flex;align-items:center;gap:22px;padding:0 24px;background:#fff;border-bottom:1px solid #E4E0D8;font-family:"DM Sans",system-ui,sans-serif;margin:0;box-shadow:none}html body header.fch img{height:30px;width:auto;display:block}html body header.fch nav{margin-left:auto;display:flex;gap:26px;font-size:16px;font-weight:500}html body header.fch nav a{color:#152A2E;text-decoration:none;font-weight:500}html body header.fch .quiz{font-size:16px;font-weight:500;color:#152A2E;text-decoration:none;padding-left:22px;border-left:1px solid #E4E0D8;height:28px;display:flex;align-items:center}@media (max-width:760px){html body header.fch nav{display:none}}</style></head>
 <body><header class="fch"><a class="fchl" href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a><nav><a href="towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="articles/index.html" data-nav="articles">Articles</a></nav><a class="quiz" href="quiz-photo.html">Take the quiz</a></header><main id="app" class="cx"><p class="ey">Compare</p><h1>Compare towns side by side</h1><p class="lede">Prices, the nearest ER, the airport and every score for up to three towns.</p>
 <div id="cmp"></div>
@@ -81,19 +98,25 @@ function verdict(ts){if(ts.length<2)return'';const ks=D.CATS.map(c=>c[0]).concat
  const list=a=>{a=a.map(x=>x[0]);return a.length<2?a.join(''):a.slice(0,-1).join(', ')+' and '+a[a.length-1]};
  return '<div class="verdict"><h2>The short version</h2><div class="vg" style="--n:'+ts.length+'">'+ts.map(id=>{const t=TW[id],l=lead[id].sort((x,y)=>y[1]-x[1]).slice(0,3);
   return '<div><b>'+esc(t.s)+'</b><p>'+(l.length?'Best of these for '+list(l)+'.':'Doesn’t come out on top here in any score, but see where it ranks below.')+'</p><a href="towns/'+id+'-v3.html#ask">Ask a local in '+esc(t.s)+'&nbsp;→</a></div>'}).join('')+'</div></div>'}
+const pairs=(lg,sm)=>'<span class="lg">'+lg+'</span><span class="sm">'+sm+'</span>';
+const apC=a=>{const c=(a.match(/\(([A-Z]{3})\)/)||[])[1],t=(a.match(/about ([^,;.]+?(?:minutes?|hours?(?: \d+ minutes)?|an hour))/)||[])[1];return c?('<b>'+c+'</b>'+(t?'<small>'+esc(t.replace(' minutes',' min').replace(' hours',' hr').replace(' hour',' hr'))+'</small>':'')):esc(a)};
+const hC=h=>{const m=h.match(/^(.*?), about ([\d.]+) mi/);return m?'<b>'+m[2]+' mi</b><small>'+esc(m[1])+'</small>':h};
+const prC=p=>esc(p.replace(' median',''));
 function render(){const ts=ids.slice(),n=ts.length,open=n<MAX,cols=n+(open?1:0);
  const sp='<div class="sp"></div>',pad=open?'<div></div>':'';
- const row=(lab,fn,cls)=>'<div class="grid row '+(cls||'')+'" style="--n:'+cols+'"><div class="lab">'+lab+'</div>'+ts.map(id=>'<div class="c">'+fn(TW[id],id)+'</div>').join('')+pad+'</div>';
+ const row=(lab,fn,cls)=>'<div class="grid row '+(cls||'')+'" style="--n:'+cols+'"><div class="lab">'+lab+'</div>'+ts.map(id=>'<div class="c">'+fn(TW[id],id)+'</div>').join('')+pad+(cls==='txt'?'<button class="more" type="button">Read more</button>':'')+'</div>';
  const heads='<div class="grid heads" style="--n:'+cols+'">'+sp+ts.map(id=>{const t=TW[id];return '<div class="th"><a class="ph" href="towns/'+id+'-v3.html" style="background-image:url(\''+t.img+'\')"></a><button class="x" data-rm="'+id+'" aria-label="Remove '+esc(t.s)+'">&times;</button><b><a href="towns/'+id+'-v3.html">'+esc(t.s)+'</a></b><span>'+esc(t.rg)+'</span></div>'}).join('')+
   (open?'<div class="add"><b>'+(n<2?'Add a town':'Add a third town')+'</b><div class="srch"><input id="q" type="search" placeholder="Search any beach town" autocomplete="off" aria-label="Search for a town to add"><div class="res" id="res"></div></div><div class="sim"><div class="l">Or a similar town</div>'+similar(3).map(x=>'<button data-add="'+x+'"><i style="background-image:url(\''+TW[x].img+'\')"></i><span>'+esc(TW[x].s)+'<small>'+esc(TW[x].rg)+'</small></span><em>+ Add</em></button>').join('')+'</div></div>':'')+'</div>';
  const all=D.CATS.concat([['edu','Public school district']]),sr=[];
  all.forEach(([k,l])=>{const best=ts.slice().sort((x,y)=>TW[x].rk[k]-TW[y].rk[k])[0];
   sr.push('<div class="grid row" style="--n:'+cols+'"><div class="lab">'+l+'<button class="inf" data-k="'+k+'" aria-label="How we rank '+esc(l)+'">i</button></div>'+ts.map(id=>{const t=TW[id],win=n>1&&id===best;return '<div class="c"><div class="sc'+(win?' win':'')+'">'+bar(t.sc[k])+'<span class="n">'+t.sc[k]+'</span>'+(win?'<span class="cxbest">Best</span>':'')+'</div></div>'}).join('')+pad+'</div>')});
  $('cmp').innerHTML=heads+verdict(ts)+
-  '<div class="sec"><h2>The basics</h2>'+row('Home prices',t=>esc(t.pr))+row('Nearest hospital with an ER<small>Straight line miles, so the drive is longer</small>',t=>t.h)+row('Airport',t=>esc(t.a))+row('Season',t=>esc(t.se))+row('Heads up',t=>esc(t.w))+'</div>'+
+  '<div class="sec"><h2>The basics</h2>'+row('Home prices',t=>pairs(esc(t.pr),prC(t.pr)))+row('Nearest hospital with an ER<small>Straight line miles, so the drive is longer</small>',t=>pairs(t.h,hC(t.h)))+row('Airport',t=>pairs(esc(t.a),apC(t.a)))+row('Season',t=>esc(t.se),'txt')+row('Heads up',t=>esc(t.w),'txt')+'</div>'+
   '<div class="sec"><h2>The scorecard</h2><p class="note">Scores run 1 to 5. The best in each row is in teal. Tap <b class="ii">i</b> to see how we rank it and where each town sits out of '+D.N+'.</p>'+sr.join('')+'</div>'+
-  '<div class="sec"><h2>In their words</h2>'+row('A day in town',t=>esc(t.d),'read')+row('Why people love it',t=>esc(t.pros.join('. ')+'.'))+row('Know before you go',t=>esc(t.cons.join('. ')+'.'))+row('Next step',(t,id)=>'<a class="ask" href="towns/'+id+'-v3.html#ask">Ask a local in '+esc(t.s)+'&nbsp;→</a>')+'</div>';
- $('stick').innerHTML='<div class="grid" style="--n:'+cols+'"><em>Comparing</em>'+ts.map(id=>'<span>'+esc(TW[id].s)+'</span>').join('')+(open?'<span></span>':'')+'</div>';
+  '<div class="sec"><h2>In their words</h2>'+row('A day in town',t=>esc(t.d),'txt')+row('Why people love it',t=>esc(t.pros.join('. ')+'.'),'txt')+row('Know before you go',t=>esc(t.cons.join('. ')+'.'),'txt')+row('Next step',(t,id)=>'<a class="ask'+(id===ts[0]?'':' ol')+'" href="towns/'+id+'-v3.html#ask">Ask a local in '+esc(t.s)+'&nbsp;→</a>')+'</div>';
+ $('stick').innerHTML='<div class="grid" style="--n:'+cols+'"><em>Comparing</em>'+ts.map(id=>'<span><i style="background-image:url(\''+TW[id].img+'\')"></i>'+esc(TW[id].s)+'</span>').join('')+(open?'<span></span>':'')+'</div>';
+ document.querySelectorAll('.txt').forEach(r=>{const m=r.querySelector('.more');if(m&&![...r.querySelectorAll('.c')].some(c=>c.scrollHeight>c.clientHeight+2))m.remove()});
+ document.querySelectorAll('.more').forEach(b=>b.onclick=()=>{const r=b.closest('.row');r.classList.toggle('open');b.textContent=r.classList.contains('open')?'Show less':'Read more'});
  document.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>{ids=ids.filter(x=>x!==b.dataset.rm);save();render()});
  document.querySelectorAll('[data-add]').forEach(b=>b.onclick=()=>add(b.dataset.add));
  const q=$('q');if(q){q.oninput=()=>{const s=q.value.trim().toLowerCase(),r=$('res');if(!s){r.classList.remove('on');return}const m=Object.entries(TW).filter(([id,t])=>!ids.includes(id)&&(t.s.toLowerCase().includes(s)||t.rg.toLowerCase().includes(s))).slice(0,6);
@@ -113,7 +136,7 @@ save();render();
 </script><script src="assets/fc-connect.js"></script><footer>
   <div class="wrap">
     <div><b>Florida Coastal</b><p>Florida is 1,350 miles of coastline. We'll help you find your mile.</p><p style="margin-top:12px">Town details are for information and should be confirmed locally. We follow federal, state and local fair housing laws. Equal Housing Opportunity.</p></div>
-    <div><b>Explore</b><a href="towns/index.html">Beach Towns</a><a href="quiz-photo.html">Find Your Mile</a><a href="priorities.html">Slider Map</a><a href="compare-v3.html">Compare Towns</a><a href="map.html">Vibe Map</a><a href="articles/index.html">Coastal Guides</a></div>
+    <div><b>Explore</b><a href="towns/index.html">Beach Towns</a><a href="quiz-photo.html">Take the quiz</a><a href="priorities.html">Slider Map</a><a href="compare-v3.html">Compare Towns</a><a href="map.html">Vibe Map</a><a href="articles/index.html">Coastal Guides</a></div>
     <div><b>Company</b><a href="about.html">Our story</a><a href="scoring.html">How we score</a><a href="agents.html">For local agents</a><a href="privacy.html">Privacy</a></div>
   </div>
 </footer>
