@@ -23,15 +23,15 @@
   '.fcs-top input::-webkit-search-cancel-button{display:none}.fcs-top input{flex:1;min-width:0;border:0;outline:0;font:inherit;font-size:19px;background:transparent;color:#152A2E}'+
   '.fcs-x{border:0;background:transparent;border-radius:50%;width:36px;height:36px;display:grid;place-items:center;padding:0;color:#5A6B6E;cursor:pointer;flex:none}.fcs-x:hover{background:#F2EFEA;color:#152A2E}.fcs-x svg{width:20px;height:20px;opacity:1}.fcs-x span{display:none}'+
   '.fcs-res{overflow:auto;padding:8px 8px 14px}'+
-  '.fcs-h{font-size:12.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#5A6B6E;margin:14px 12px 6px}'+
-  '.fcs-it{display:flex;align-items:center;gap:14px;padding:9px 12px;border-radius:12px;color:#152A2E;text-decoration:none}'+
-  '.fcs-it:hover,.fcs-it.on{background:#F2EFEA}'+
-  '.fcs-it i{width:52px;height:40px;border-radius:8px;background:#E9E6E0 center/cover;flex:none}'+
+  '.fcs-h{font-size:12px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:#8A9496;margin:20px 12px 6px}'+
+  '.fcs-it{display:flex;align-items:center;gap:16px;padding:10px 12px;border-radius:12px;color:#152A2E;text-decoration:none}'+
+  '.fcs-it:hover,.fcs.kb .fcs-it.on{background:#F7F5F1}'+
+  '.fcs-it i{width:44px;height:44px;border-radius:10px;background:#E9E6E0 center/cover;flex:none}'+
   '.fcs-it i.dot{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-style:normal;background:#EEF4F2;color:#1F7A6A}.fcs-it i.dot svg{width:18px;height:18px}'+
-  '.fcs-it span{flex:1;min-width:0}.fcs-it b{display:block;font-size:16px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}'+
-  '.fcs-it small{display:block;font-size:13.5px;color:#5A6B6E;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}'+
+  '.fcs-it span{flex:1;min-width:0}.fcs-it b{display:block;font-size:16.5px;font-weight:500;letter-spacing:-.005em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}'+
+  '.fcs-it small{display:block;font-size:13.5px;color:#7A8688;margin-top:2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}'+
   '.fcs-it em{font-style:normal;font-size:14px;font-weight:600;color:#3E4F52;flex:none}'+
-  '.fcs-it mark{background:none;color:inherit;text-decoration:underline;text-decoration-color:#1F7A6A;text-underline-offset:3px}'+
+  '.fcs-it mark{background:none;color:inherit;font-weight:700}'+
   '.fcs-none{padding:18px 12px 4px;font-size:15.5px;color:#3E4F52}'+
   '.fcs-foot{border-top:1px solid #EEEBE6;padding:12px 20px;font-size:13px;color:#5A6B6E;display:flex;justify-content:space-between}'+
   '@media (max-width:760px){.fcs-x{width:auto;height:auto;border-radius:0;font:inherit;font-size:16px;font-weight:500;color:#152A2E}.fcs-x:hover{background:none}.fcs-x svg{display:none}.fcs-x span{display:inline}.fcs-box{margin:0;border-radius:0;max-height:none;height:100%}.fcs-foot{display:none}.fcs-top input{font-size:17px}}'+
@@ -47,7 +47,7 @@
   function hi(text,q){if(!q)return esc(text);var t=String(text),i=norm(t).indexOf(q);if(i<0)return esc(t);return esc(t.slice(0,i))+'<mark>'+esc(t.slice(i,i+q.length))+'</mark>'+esc(t.slice(i+q.length))}
   var PIN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
   var BOOK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4zM20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg>';
-  function town(t,q){return '<a class="fcs-it" href="'+U('towns/'+t.i+'-v3.html')+'"><i style="background-image:url(\''+U(t.img)+'\')"></i><span><b>'+hi(t.n,q)+'</b><small>'+esc(t.r)+'</small></span>'+(t.p?'<em>'+esc(t.p)+'</em>':'')+'</a>'}
+  function town(t,q){return '<a class="fcs-it" href="'+U('towns/'+t.i+'-v3.html')+'"><i style="background-image:url(\''+U(t.img)+'\')"></i><span><b>'+hi(t.n,q)+'</b><small>'+esc(t.r)+'</small></span>'+'</a>'}
   function region(r,q){return '<a class="fcs-it" href="'+U('towns/index-v2.html#'+r.c+'/'+r.i)+'"><i class="dot">'+PIN+'</i><span><b>'+hi(r.n,q)+'</b><small>'+r.k+' beach towns</small></span></a>'}
   function art(a,q){return '<a class="fcs-it" href="'+U(a.u)+'"><i class="dot">'+BOOK+'</i><span><b>'+hi(a.n,q)+'</b><small>Guide</small></span></a>'}
   function score(name,q){var n=norm(name);if(n===q)return 0;if(n.indexOf(q)===0)return 1;if((' '+n).indexOf(' '+q)>=0)return 2;if(n.indexOf(q)>=0)return 3;return 9}
@@ -73,11 +73,11 @@
   function mark(){items.forEach(function(a,i){a.classList.toggle('on',i===sel)});var a=items[sel];a&&a.scrollIntoView({block:'nearest'})}
   inp.addEventListener('input',render);
   inp.addEventListener('keydown',function(e){
-    if(e.key==='ArrowDown'){e.preventDefault();sel=Math.min(items.length-1,sel+1);mark()}
+    if(/Arrow/.test(e.key))el.classList.add('kb');if(e.key==='ArrowDown'){e.preventDefault();sel=Math.min(items.length-1,sel+1);mark()}
     else if(e.key==='ArrowUp'){e.preventDefault();sel=Math.max(0,sel-1);mark()}
     else if(e.key==='Enter'){e.preventDefault();var a=items[sel];if(a){try{window.FC&&FC.track&&FC.track('search',inp.value.trim().slice(0,80))}catch(x){}location.href=a.href}}
   });
-  function open(q){el.classList.add('on');document.documentElement.classList.add('fcs-lock');inp.value=q||'';load().then(render);render();setTimeout(function(){inp.focus()},30)}
+  function open(q){el.classList.remove('kb');el.classList.add('on');document.documentElement.classList.add('fcs-lock');inp.value=q||'';load().then(render);render();setTimeout(function(){inp.focus()},30)}
   function close(){el.classList.remove('on');document.documentElement.classList.remove('fcs-lock')}
   el.querySelector('.fcs-bg').onclick=close;el.querySelector('.fcs-x').onclick=close;
   document.addEventListener('keydown',function(e){
