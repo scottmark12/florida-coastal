@@ -30,7 +30,7 @@ nav.top a.on{box-shadow:inset 0 -2px var(--ink);padding-bottom:20px;margin-botto
 .terr .ms{stroke-width:calc(var(--k)*1px);stroke-dasharray:calc(var(--k)*4px) calc(var(--k)*4px)}
 .terr .mr1{stroke:#D9D2C5;stroke-width:calc(var(--k)*2.6px)}.terr .mr2{stroke-width:calc(var(--k)*1.3px)}.terr .mh1{stroke-width:calc(var(--k)*3.4px)}.terr .mh2{stroke-width:calc(var(--k)*2.2px)}
 .dot{cursor:pointer}
-.lbl{font-family:var(--mapf);font-weight:500;letter-spacing:-.005em;fill:#1D2B2E;stroke:#F3F1EC;stroke-opacity:.82;paint-order:stroke;stroke-linejoin:round;pointer-events:none}
+.lbl{font-family:var(--mapf);font-weight:500;letter-spacing:.005em;fill:#24353A;stroke:#F3F1EC;stroke-opacity:.82;paint-order:stroke;stroke-linejoin:round;pointer-events:none}
 .lbl.sm{font-weight:500;fill:#46555A}
 .city{font-family:var(--mapf);font-weight:500;text-transform:uppercase;letter-spacing:.09em;fill:#6B7678;stroke:#F3F1EC;paint-order:stroke;pointer-events:none}
 .sea{font-family:var(--mapf);font-style:italic;font-weight:500;letter-spacing:.06em;fill:#35617D;pointer-events:none}
@@ -504,10 +504,10 @@ function render(fast){
  const slTop=S.mode=='sliders'&&S.top.length,dflt=!S.style&&!S.price&&!slTop;
  const CL=S.mode=='vibes'&&S.style?mkClu(vis.filter(t=>match(t)&&!pin(t)),v,k):[],inClu=new Set();CL.forEach(c=>c.forEach(t=>inClu.add(t.id)));
  vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&((!zoomed&&dflt&&!sg)||slTop))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
-  let r=any?(m?6:3):(sg?6.5:(zoomed?5:3.4));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.7));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#7F8B8D');
+  let r=any?(m?5.5:3):(sg?5:(zoomed?4.5:3.4));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.7));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#7F8B8D');
   if(pin(t))r=7;
   const vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:null;
-  if(vc){const rr=pin(t)?7.5:(isR(S.style)?5:6);s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${rr*k}" fill="${vc}" stroke="#fff" stroke-width="${2.2*k}" style="filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.25))"/>`}
+  if(vc){const rr=pin(t)?7:5;s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${rr*k}" fill="${vc}" stroke="#fff" stroke-width="${2.2*k}" style="filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.25))"/>`}
   else s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(S.mode=='vibes'&&S.style&&!m?(sg?4.5:3.2):r)*k}" fill="${S.mode=='vibes'&&S.style&&!m?'#152A2E':fill}" ${S.mode=='vibes'&&S.style&&!m?'fill-opacity=".55"':''} opacity="${op}" stroke="#fff" stroke-width="${(r>3?2:1)*k}"/>`});
  CL.forEach(c=>{const L=c[0],n=c.length,bx=(L.x-v[0])/k,by=(L.y-v[1])/k;boxes.push([bx-16,by-16,32,32]);s+=`<g class="clu" data-ids="${c.map(t=>t.id).join(',')}" style="cursor:pointer"><circle cx="${L.x}" cy="${L.y}" r="${13*k}" fill="${VCOL[S.style]||'#152A2E'}" stroke="#fff" stroke-width="${2.4*k}" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,.3))"/><text x="${L.x}" y="${L.y+4.6*k}" text-anchor="middle" font-size="${13*k}" font-weight="600" fill="#fff" style="font-family:var(--mapf);pointer-events:none">${n}</text></g>`});
  // labels: pinned first, then matched sig, then matched zoomed
@@ -515,9 +515,9 @@ function render(fast){
  if(S.mode=='vibes'&&isR(S.style)){const cap=w<600?5:8,ok=new Set(T.filter(t=>t.v.includes(S.style)).map(t=>[t,-t.v.filter(v=>!isR(v)).length,Math.min(...['beach','walk','charm','meet','water'].map(k=>LD[t.id].rk[k]||999))]).sort((a,b)=>a[1]-b[1]||a[2]-b[2]).map(x=>x[0]).slice(0,cap).map(t=>t.id));for(let i=want.length-1;i>=0;i--)if(want[i][1]>0&&!want[i][0]._clu&&!ok.has(want[i][0].id))want.splice(i,1)}
  want.sort((a,b)=>a[1]-b[1]);if(!zoomed&&(S.style||S.price)){let c=0;const keep=[];want.forEach(w=>{if(w[1]==0||c<6){keep.push(w);if(w[1]>0)c++}});want.length=0;keep.forEach(w=>want.push(w))}
  let lab='';const placed=new Set();
- want.forEach(([t,pr])=>{const fs=(pr==3?13:15),cw=fs*.56,tw=t.n.length*cw+4,th=fs+4;
+ want.forEach(([t0,pr])=>{const t=t0._clu?t0:Object.assign({},t0,{n:t0.n.replace(/ \(.*\)$/,'')}),fs=(pr==3?12:13.5),cw=fs*.57,tw=t.n.length*cw+4,th=fs+4;
   const left=t.c=='gulf'||t.c=='panhandle'&&false;const sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;
-  const o0=t._off||12,opts=t.c=='atlantic'?[[o0,1],[-o0,-1]]:[[-o0,-1],[o0,1]];
+  const o0=t._off||10,opts=t.c=='atlantic'?[[o0,1],[-o0,-1]]:[[-o0,-1],[o0,1]];
   for(const [dx,dir] of opts){const bx=dir>0?sx+dx:sx+dx-tw;if(pr>0&&hit(bx,sy-th/2,tw,th))continue;placed.add(t.id);if(pr==0)boxes.push([bx,sy-th/2,tw,th]);
    if(pr==0)lab+=`<rect x="${v[0]+(bx-8)*k}" y="${v[1]+(sy-15)*k}" width="${(tw+16)*k}" height="${30*k}" rx="${15*k}" fill="#152A2E"/><text class="lbl" x="${v[0]+(bx+tw/2)*k}" y="${v[1]+(sy+5.5)*k}" text-anchor="middle" font-size="${fs*k}" fill="#fff" style="fill:#fff;stroke:none">${t.n}</text>`;
    else lab+=`<text class="lbl ${pr==3?'sm':''}" x="${v[0]+(dir>0?bx:bx+tw)*k}" y="${v[1]+(sy+fs*.35)*k}" text-anchor="${dir>0?'start':'end'}" font-size="${fs*k}" stroke-width="${2.4*k}">${t.n}</text>`;break}});
