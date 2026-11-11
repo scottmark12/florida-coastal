@@ -321,6 +321,33 @@ html body .zoom:not(#x) button{width:40px!important;height:40px!important;border
 html body .ctl:not(#x){border-radius:999px!important;background:rgba(255,255,255,.8)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(21,42,46,.12)!important;box-shadow:0 4px 14px rgba(21,42,46,.12)!important;font:500 14px 'DM Sans',sans-serif!important;color:#152A2E!important}
 html body .res .back:not(#x),html body .res .save:not(#x){background:none!important;border:0!important;box-shadow:none!important;font:500 14px 'DM Sans',sans-serif!important;color:#152A2E!important;text-decoration:underline;text-underline-offset:3px;padding:0!important}
 html body .sl-quiz:not(#x) a{border-radius:999px!important}
+</style><style id="vm-row">
+@media (max-width:760px){
+html body .vp .vm-lh:not(#x){display:flex;align-items:baseline;justify-content:space-between;margin:4px 0 12px!important}
+html body .vp .vm-lh:not(#x) .vm-eb{display:none!important}
+html body .vp .vm-lh:not(#x) h2{font-size:24px!important;margin:0!important}
+html body .vp .tiles.vt:not(#x){display:flex!important;flex-wrap:nowrap!important;overflow-x:auto;gap:10px!important;margin:0 -16px!important;padding:0 16px 6px!important;scroll-snap-type:x mandatory;scrollbar-width:none;grid-template-columns:none!important}
+html body .vp .tiles.vt:not(#x)::-webkit-scrollbar{display:none}
+html body .vp .tiles.vt:not(#x) .tile{flex:0 0 27%!important;width:27%!important;min-width:0!important;scroll-snap-align:start;padding:0!important;margin:0!important}
+html body .vp .tiles.vt:not(#x) .tile .ph{height:auto!important;aspect-ratio:4/5!important;border-radius:10px!important}
+html body .vp .tiles.vt:not(#x) .tile .tt{left:8px!important;right:6px!important;bottom:8px!important}
+html body .vp .tiles.vt:not(#x) .tile .tt b{font-size:13px!important;line-height:1.15!important}
+html body .vp .tiles.vt:not(#x) .tile .tt small{display:none!important}
+html body .vp .tiles.vt:not(#x) .tile .ph i{top:7px!important;left:8px!important;font-size:11px!important}
+html body .vp .vm-lh:not(#x){align-items:flex-end!important;margin:6px 0 14px!important}
+html body .vp .vm-lh:not(#x) h2{font-family:'Libre Caslon Text',serif!important;font-weight:400!important;font-size:29px!important;line-height:1.08!important;letter-spacing:-.01em;max-width:66%}
+html body .vp .vm-lh .vm-all{display:block;background:none;border:0;padding:0 0 4px;font:600 16px 'DM Sans',sans-serif;color:#B4532A;white-space:nowrap}
+html body .vp .tiles.vt:not(#x){gap:8px!important;padding:0 16px 8px 8px!important;margin:0 -16px 0 -8px!important;scroll-padding-left:8px}
+html body .vp .tiles.vt:not(#x) .tile{flex:0 0 28.5%!important;width:28.5%!important}
+html body .vp .tiles.vt:not(#x) .tile .ph{aspect-ratio:1/1.03!important;border-radius:12px!important}
+html body .vp .tiles.vt:not(#x) .tile .tt{left:9px!important;bottom:10px!important}
+html body .vp .tiles.vt:not(#x) .tile .tt b{font-size:15px!important;font-weight:500!important;letter-spacing:-.01em}
+html body .vp .tiles.vt:not(#x) .tile .ph i{top:7px!important;left:7px!important;background:rgba(255,255,255,.92)!important;color:#152A2E!important;border-radius:999px!important;padding:3px 8px 3px 7px!important;font:600 13px 'DM Sans',sans-serif!important;font-style:normal!important;display:inline-flex!important;align-items:center;box-shadow:none!important;backdrop-filter:none!important}
+html body .vp .tiles.vt:not(#x) .tile .ph i span{width:8px!important;height:8px!important;margin-right:5px!important}
+html body .vp.vt-open .tiles.vt:not(#x){display:grid!important;grid-template-columns:repeat(3,1fr)!important;overflow:visible;margin:0!important;padding:0 0 8px!important}
+html body .vp.vt-open .tiles.vt:not(#x) .tile{width:auto!important}
+}
+@media (min-width:761px){.vp .vm-all{display:none}}
 </style></head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
@@ -492,7 +519,7 @@ function needsHTML(){const n=S.need,c=T.filter(t=>(!S.style||t.v.includes(S.styl
  return `<div class="nd"><div class="vm-eb">What you need</div><div class="nd-row"><label class="nd-sel${n.bud?' on':''}"><select id="ndbud" aria-label="Budget">${LK.NBUD.map(([v,l])=>`<option value="${v}"${(n.bud||0)==v?' selected':''}>${l}</option>`).join('')}</select></label><button class="nd-c${n.school?' on':''}" data-need="school" aria-pressed="${!!n.school}">Good schools</button><button class="nd-c${n.air?' on':''}" data-need="air" aria-pressed="${!!n.air}">Near airport</button></div>${needOn()?`<p class="nd-fine"><b>${c}</b> town${c==1?'':'s'} match · <button class="nd-clear" id="ndclr">Clear</button></p>`:''}</div>`}
 function vRender(){const v=S.style;let h;
  if(!v){const cnt=k=>T.filter(t=>t.v.includes(k)&&needOk(t)).length;
-  h=`<div class="vm-lh"><div class="vm-eb">${T.length} beach towns · ${LK.VFEEL.length} styles</div><h2>Find your stretch of coast</h2></div><div class="tiles vt">${LK.VFEEL.map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('img/vibes/${k}.webp')"><i><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>${cnt(k)}</i><span class="tt"><b>${VIBES[k]}</b><small>${LK.VSUBL[k]||VSUB[k]}</small></span></div></button>`).join('')}</div>`}
+  h=`<div class="vm-lh"><div class="vm-eb">${T.length} beach towns · ${LK.VFEEL.length} styles</div><h2>Find your stretch of coast</h2><button type="button" class="vm-all" onclick="this.closest('.vp').classList.toggle('vt-open');this.textContent=this.closest('.vp').classList.contains('vt-open')?'Show less':'See all ${LK.VFEEL.length}'">See all ${LK.VFEEL.length}</button></div><div class="tiles vt">${LK.VFEEL.map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('img/vibes/${k}.webp')"><i><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>${cnt(k)}</i><span class="tt"><b>${VIBES[k]}</b><small>${LK.VSUBL[k]||VSUB[k]}</small></span></div></button>`).join('')}</div>`}
  else{const L=vOrder();
   h=`<div class="vm-sh" style="background-image:url('img/vibes/${v}.webp')"><button class="vm-back" id="vback">← All styles</button><div class="vm-sht"><h2><i style="background:${VCOL[v]}"></i>${VIBES[v]}</h2><p>${L.length} towns · ${LK.VSUBL[v]||VSUB[v]}</p></div></div>${LK.VGUIDE[v]?`<a class="vm-guide" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="vm-eb vm-lt">Panhandle around to the Keys</div><ol class="vm-list">${L.map((t,i)=>`<li><button class="vm-row${S.pop&&S.pop.id==t.id?' on':''}" data-vpick="${t.id}" style="--vc:${VCOL[v]}"><span class="vm-n">${i+1}</span><span class="vm-rt"><b>${t.n}</b><small>${LD[t.id].rn}</small></span></button></li>`).join('')}</ol>`}
  h+=`<div class="vm-lf"><a href="quiz-photo.html">See your top 5 towns</a><p>8 quick questions, matched to how you live</p></div>`;
