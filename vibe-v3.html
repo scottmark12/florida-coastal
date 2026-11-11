@@ -368,7 +368,7 @@ html body.vibes #pop .pnav button:not(#x){border:0!important;background:none!imp
 html body.vibes #pop .go:not(#x){padding:14px!important;font-size:16px!important;margin-top:0!important}
 html body.vibes #pop .of:not(#x){margin-top:8px!important;font-size:13px!important}
 }
-</style></head><body>
+</style><script src="assets/fc-aka.js"></script></head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-arch-line2.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
 <nav class="top"><a href="towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="articles/index.html" data-nav="articles">Articles</a></nav>
@@ -525,7 +525,7 @@ box.addEventListener('pointerup',e=>{if(!dr)return;box.classList.remove('drag');
 $('grid').addEventListener('mouseover',e=>{const c=e.target.closest('.card');const id=c?c.dataset.id:null;if(id!==S.hover){S.hover=id;render()}});
 $('grid').addEventListener('mouseleave',()=>{S.hover=null;render()});
 $('q').addEventListener('keydown',e=>{if(e.key!='Enter')return;const q=e.target.value.trim().toLowerCase();if(!q)return;
- const r=REG.find(r=>r[0].toLowerCase().includes(q));const t=T.find(t=>t.n.toLowerCase().startsWith(q));const st=Object.keys(VIBES).find(k=>VIBES[k].toLowerCase().includes(q));
+ const r=REG.find(r=>r[0].toLowerCase().includes(q));const t=T.find(t=>t.n.toLowerCase().startsWith(q))||T.find(t=>((window.FCAKA||{})[t.id]||'').toLowerCase().includes(q));const st=Object.keys(VIBES).find(k=>VIBES[k].toLowerCase().includes(q));
  if(t){go([t.x-MINW/2,t.y-MINW/2*S.vb[3]/S.vb[2],MINW,MINW*S.vb[3]/S.vb[2]]);setTimeout(()=>openPop(t),460)}else if(r){S.region=r[0];tags();go(fit(r.slice(1)))}else if(st){$('sty').value=st;$('sty').dispatchEvent(new Event('change'))}e.target.value=''});
 
 

@@ -226,7 +226,7 @@ new MutationObserver(function(){setTimeout(dress,0)}).observe(ar,{attributes:tru
 addEventListener('keydown',function(e){if(e.key==='Escape'&&ar.classList.contains('sheet'))close()});
 var y0=null;ar.addEventListener('touchstart',function(e){y0=ar.scrollTop<=0?e.touches[0].clientY:null},{passive:true});ar.addEventListener('touchend',function(e){if(y0!==null&&e.changedTouches[0].clientY-y0>110)close();y0=null},{passive:true})}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',SH);else SH();
-if(MOB){r.classList.add('tsnap');addEventListener('scroll',f,{passive:true});addEventListener('load',f);f()}})();</script></head><body>
+if(MOB){r.classList.add('tsnap');addEventListener('scroll',f,{passive:true});addEventListener('load',f);f()}})();</script><script src="../assets/fc-aka.js"></script></head><body>
 <header><a class="logo" href="../home-v2.html"><img src="../img/fc-logo-arch-line-white.png" alt="Florida Coastal"></a>
 <nav class="top"><a class="on" href="../towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="../vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="../vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="../articles/index.html" data-nav="articles">Articles</a></nav>
 <a class="cta" href="../quiz-photo.html">Take the quiz</a></header>
@@ -277,7 +277,7 @@ const pr=t=>t.p||'';
 /* search */
 function sres(q){q=norm(q.trim());if(!q)return'';const out=[];
  const co=CO.filter(c=>norm(c[1]).includes(q));const ar=[...new Set(T.map(t=>t.c+'|'+area(t)))].filter(x=>norm(areaName(...x.split('|'))).includes(q)).slice(0,3);
- const tw=T.filter(t=>norm(t.n).includes(q)).sort((a,b)=>norm(a.n).indexOf(q)-norm(b.n).indexOf(q)||a.n.localeCompare(b.n)).concat(T.filter(t=>!norm(t.n).includes(q)&&norm(t.r).includes(q))).slice(0,7);
+ const tw=T.filter(t=>norm(t.n+' '+((window.FCAKA||{})[t.id]||'')).includes(q)).sort((a,b)=>norm(a.n).indexOf(q)-norm(b.n).indexOf(q)||a.n.localeCompare(b.n)).concat(T.filter(t=>!norm(t.n+' '+((window.FCAKA||{})[t.id]||'')).includes(q)&&norm(t.r).includes(q))).slice(0,7);
  if(tw.length)out.push('<div class="hd">Towns</div>'+tw.map(t=>`<a href="${t.id}-v3.html"><i style="background-image:url('${t.img}')"></i><span><b>${t.n}</b><small>${t.r.replace(/ · /g,', ')}</small></span><span class="pr">${pr(t)}</span></a>`).join(''));
  if(co.length||ar.length)out.push('<div class="hd">Regions</div>'+co.map(c=>`<a href="#regions" data-c="${c[0]}"><i style="background-image:url('${c[3]}')"></i><span><b>${c[1]}</b><small>${T.filter(t=>t.c==c[0]).length} towns</small></span></a>`).join('')+ar.map(x=>{const[c,a]=x.split('|'),L=T.filter(t=>t.c==c&&area(t)==a);const im=(L.find(real)||L[0]).img;return `<a href="#regions" data-c="${c}" data-a="${a}"><i style="background-image:url('${im}')"></i><span><b>${areaName(c,a)}</b><small>${L.length} ${L.length==1?'town':'towns'}</small></span></a>`}).join(''));
  return out.join('')||'<div class="no">No towns match that. Try a nearby town or a region like Tampa Bay.</div>'}
@@ -309,7 +309,7 @@ $('ach').onclick=e=>{const b=e.target.closest('button');if(b)pickC(R.c,b.dataset
 $('ax').onclick=e=>{const b=e.target.closest('button[data-a]');if(b){pickC(R.c,b.dataset.a);$('ach').scrollIntoView({behavior:'smooth',block:'start'})}};
 /* A to Z */
 $('fs').innerHTML='<option value="">Any style</option>'+Object.entries(VIBES).map(([k,v])=>`<option value="${k}">${v}</option>`).join('');
-function az(){const q=norm($('fq').value.trim()),s=$('fs').value,p=$('fp').value;let L=T.filter(t=>(!q||norm(t.n).includes(q))&&(!s||t.v.includes(s)));
+function az(){const q=norm($('fq').value.trim()),s=$('fs').value,p=$('fp').value;let L=T.filter(t=>(!q||norm(t.n+' '+((window.FCAKA||{})[t.id]||'')).includes(q))&&(!s||t.v.includes(s)));
  if(p){const[a,b]=p.split('-').map(Number);L=L.filter(t=>t.m&&t.m>=a&&t.m<b)}
  $('fc').innerHTML=`<b>${L.length}</b> of 167 towns`;
  const blk=([k,n])=>{const G=L.filter(t=>t.c==k).sort((a,b)=>a.n.localeCompare(b.n));return `<h5>${n}<span>${G.length}</span></h5>${G.length?G.map(t=>`<a href="${t.id}-v3.html"><b>${t.n}</b><span>${pr(t)}</span></a>`).join(''):'<div class="none">None match</div>'}`};const C=k=>CO.find(c=>c[0]==k);
