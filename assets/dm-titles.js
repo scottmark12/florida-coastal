@@ -11,7 +11,7 @@ function setDM(el){el.style.setProperty('font-family',DMF,'important');el.style.
 var TOWN=['.mt-tx b','.cm-bd b','.hb-t b','.tx h1','.qhero h2','.grid .card h3','.pop h3','.nb-c b','.near b','.pn h1','main > h1','.tv-h h1','.thero h1','body.town h1'];
 var ART=['.ed-lead h3','.ed-latest b','.ed-card h3','.art h3','.cguides .cg-lb b','.cguides .cg-c b'];
 var TOOLS=['.qq','.qin h1','.qr h1','.qsl h3','#short h2','.hero h1','.sec h2','.band h2','.recv b','#h','aside .card h3','.hx-new','.hx-back','.news h2'];
-var HOME_TOOL=['Not ready to move yet','Then get to know','What should home feel like','See the towns others'];
+var HOME_TOOL=['Not ready to move yet','Then get to know','Find your stretch','What should home feel like','See the towns others'];
 function isTown(el){
  if(TOWN.some(function(s){return el.matches(s)}))return true;
  // town page title: the first h1 on a town page
