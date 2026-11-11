@@ -16,3 +16,5 @@
 .fx-base a{color:#6B7678}
 @media(max-width:900px){.fx-photo{height:220px}.fx-photo figcaption{left:16px}.fx-main{grid-template-columns:1fr 1fr;padding:36px 20px 28px;gap:28px}.fx-brand{grid-column:1/-1}.fx-base{padding:16px 20px 28px}}
 html body footer.fx,html body footer.fx *{font-family:'DM Sans',system-ui,sans-serif!important}html body footer.fx b,html body footer.fx h3,html body footer.fx h4{font-weight:600!important;font-style:normal!important}
+html body footer.fx.fx{margin-top:0!important;padding-top:0!important}html body footer.fx nav a{font-size:15px!important;line-height:normal!important;padding-top:0!important;padding-bottom:0!important}html body footer.fx .fx-links a{font-size:13.5px!important;line-height:normal!important;padding:0!important}html body footer.fx .fx-legal,html body footer.fx .fx-legal *{font-size:13.5px!important;line-height:1.55!important}html body footer.fx p,html body footer.fx b,html body footer.fx button{line-height:normal!important}
+html body footer.fx .fx-links span,html body footer.fx .fx-sign button{line-height:normal!important;padding-top:0!important;padding-bottom:0!important}
