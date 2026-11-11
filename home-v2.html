@@ -125,7 +125,8 @@ html body .hero-btn:not(#x):not(.tk-btn) *,html body .mob-cta:not(#x) *,html bod
 html body .mob-cta:not(#x){background:rgba(16,22,24,.6)!important}
 </style><style id="m-snap">
 @media (max-width:760px){
-html{scroll-snap-type:y mandatory}
+html:not(#x){scroll-snap-type:y mandatory!important;overflow:visible!important;overflow-x:clip!important}
+html body:not(#x){overflow:visible!important;overflow-x:clip!important}
 html body main>section,html body .swhat .sw-tx,html body .cguides .cg-row,html body footer{scroll-snap-align:start;scroll-snap-stop:always}
 html body footer{scroll-snap-align:end}
 /* hero */
