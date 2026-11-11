@@ -321,7 +321,17 @@ html body .zoom:not(#x) button{width:40px!important;height:40px!important;border
 html body .ctl:not(#x){border-radius:999px!important;background:rgba(255,255,255,.8)!important;-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border:1px solid rgba(21,42,46,.12)!important;box-shadow:0 4px 14px rgba(21,42,46,.12)!important;font:500 14px 'DM Sans',sans-serif!important;color:#152A2E!important}
 html body .res .back:not(#x),html body .res .save:not(#x){background:none!important;border:0!important;box-shadow:none!important;font:500 14px 'DM Sans',sans-serif!important;color:#152A2E!important;text-decoration:underline;text-underline-offset:3px;padding:0!important}
 html body .sl-quiz:not(#x) a{border-radius:999px!important}
-</style><style id="sl-snap">@media(max-width:760px){html:has(body.sliders){scroll-snap-type:y mandatory}body.sliders #mapbox{scroll-snap-align:start;scroll-margin-top:64px}body.sliders #sl{scroll-snap-align:start;scroll-margin-top:12px}}</style>
+</style><style id="sl-fit">@media(max-width:760px){
+html body.sliders .mapw:not(#x){height:calc(100svh - 64px - 66px)!important;min-height:340px}
+html body.sliders #res .mode:not(#x){margin-top:12px!important;margin-bottom:6px!important}
+html body.sliders .slh h2:not(#x){font-size:27px!important;margin:4px 0 8px!important;line-height:1.1}
+html body.sliders .slh .sl-how:not(#x){display:none!important}
+html body.sliders .sl2-where:not(#x){margin:2px 0 4px!important}
+html body.sliders .sl2:not(#x){padding:7px 0!important;grid-template-columns:1fr 50%!important;align-items:center}
+html body.sliders .sl2 label b:not(#x){font-size:15px!important;line-height:1.2}
+html body.sliders .sl2 output:not(#x){font-size:12.5px!important;line-height:1.25}
+}</style>
+<style id="sl-snap">@media(max-width:760px){html:has(body.sliders){scroll-snap-type:y mandatory}body.sliders #mapbox{scroll-snap-align:start;scroll-margin-top:64px}body.sliders #sl{scroll-snap-align:start;scroll-margin-top:12px}}</style>
 <style id="vm-rg">html body .vp p.vm-ri:not(#x){font-family:'Caslon Text',Georgia,serif;font-size:16px;line-height:1.5;color:#3A4A4D;margin:0 0 14px}@media(max-width:760px){html body .vp p.vm-ri:not(#x){display:none}}</style>
 <style id="vm-gt">html body .vp a.vm-guide-t:not(#x){display:inline-block;margin:2px 0 14px!important}</style>
 <style id="vm-row">
