@@ -48,6 +48,10 @@
     function tone(){var c=getComputedStyle(hdr).backgroundColor,m=c.match(/[\d.]+/g)||[0,0,0,0],al=m.length>3?+m[3]:1,l=(+m[0]*.3+ +m[1]*.59+ +m[2]*.11);hdr.classList.toggle('fcq-dark',al<.35||l<90)}
     tone();addEventListener('scroll',tone,{passive:true});setTimeout(tone,400);
     hdr.classList.add('fcm-hasbtn');
+    if(hdr.querySelector('img[src*="fc-logo-white"]')&&!hdr.classList.contains('top')){hdr.classList.add('fc-onphoto');var g=document.createElement('style');g.textContent=
+      'header.fc-onphoto img[src*="fc-logo-white"]{height:42px!important;width:auto!important}'+
+      '@media '+MQ+'{header.fc-onphoto img[src*="fc-logo-white"]{height:40px!important}'+
+      'html body header.fc-onphoto .fcm-btn{background:rgba(16,22,24,.28)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.35)!important;color:#fff!important;box-shadow:none!important}}';document.head.appendChild(g)}
 
     var ICON_MENU='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
     var ICON_X='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
