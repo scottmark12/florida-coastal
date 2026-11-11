@@ -21,7 +21,7 @@
   '.fcs-top{display:flex;align-items:center;gap:12px;padding:16px 18px;border-bottom:1px solid #EEEBE6}'+
   '.fcs-top svg{width:22px;height:22px;flex:none;opacity:.6}'+
   '.fcs-top input::-webkit-search-cancel-button{display:none}.fcs-top input{flex:1;min-width:0;border:0;outline:0;font:inherit;font-size:19px;background:transparent;color:#152A2E}'+
-  '.fcs-x{border:0;background:#F2EFEA;border-radius:999px;padding:7px 12px;font:inherit;font-size:14px;font-weight:600;color:#152A2E;cursor:pointer}'+
+  '.fcs-x{border:0;background:transparent;border-radius:50%;width:36px;height:36px;display:grid;place-items:center;padding:0;color:#5A6B6E;cursor:pointer;flex:none}.fcs-x:hover{background:#F2EFEA;color:#152A2E}.fcs-x svg{width:20px;height:20px;opacity:1}.fcs-x span{display:none}'+
   '.fcs-res{overflow:auto;padding:8px 8px 14px}'+
   '.fcs-h{font-size:12.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:#5A6B6E;margin:14px 12px 6px}'+
   '.fcs-it{display:flex;align-items:center;gap:14px;padding:9px 12px;border-radius:12px;color:#152A2E;text-decoration:none}'+
@@ -34,12 +34,12 @@
   '.fcs-it mark{background:none;color:inherit;text-decoration:underline;text-decoration-color:#1F7A6A;text-underline-offset:3px}'+
   '.fcs-none{padding:18px 12px 4px;font-size:15.5px;color:#3E4F52}'+
   '.fcs-foot{border-top:1px solid #EEEBE6;padding:12px 20px;font-size:13px;color:#5A6B6E;display:flex;justify-content:space-between}'+
-  '@media (max-width:760px){.fcs-box{margin:0;border-radius:0;max-height:none;height:100%}.fcs-foot{display:none}.fcs-top input{font-size:17px}}'+
+  '@media (max-width:760px){.fcs-x{width:auto;height:auto;border-radius:0;font:inherit;font-size:16px;font-weight:500;color:#152A2E}.fcs-x:hover{background:none}.fcs-x svg{display:none}.fcs-x span{display:inline}.fcs-box{margin:0;border-radius:0;max-height:none;height:100%}.fcs-foot{display:none}.fcs-top input{font-size:17px}}'+
   'html.fcs-lock,html.fcs-lock body{overflow:hidden!important}';
   document.head.appendChild(css);
 
   var el=document.createElement('div');el.className='fcs';el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');el.setAttribute('aria-label','Search');
-  el.innerHTML='<div class="fcs-bg"></div><div class="fcs-box"><div class="fcs-top">'+SVG+'<input type="search" placeholder="Search a town, region or guide" aria-label="Search towns, regions and guides" autocomplete="off" spellcheck="false"><button class="fcs-x" type="button">Close</button></div><div class="fcs-res" role="listbox"></div><div class="fcs-foot"><span>↑ ↓ to move · Enter to open</span><span>Esc to close</span></div></div>';
+  el.innerHTML='<div class="fcs-bg"></div><div class="fcs-box"><div class="fcs-top">'+SVG+'<input type="search" placeholder="Search a town, region or guide" aria-label="Search towns, regions and guides" autocomplete="off" spellcheck="false"><button class="fcs-x" type="button" aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Cancel</span></button></div><div class="fcs-res" role="listbox"></div></div>';
   var inp=el.querySelector('input'),res=el.querySelector('.fcs-res'),sel=0,items=[];
   function ready(f){document.body?f():document.addEventListener('DOMContentLoaded',f)}
   ready(function(){document.body.appendChild(el)});
@@ -55,9 +55,9 @@
     var q=norm(inp.value),h='';
     if(!IDX){res.innerHTML='<p class="fcs-none">Loading…</p>';return}
     if(q.length<2){
-      var P=IDX.pop.map(function(i){return IDX.t.find(function(t){return t.i===i})}).filter(Boolean);
-      h='<div class="fcs-h">Most explored this month</div>'+P.map(function(t){return town(t,'')}).join('')+
-        '<div class="fcs-h">Not sure where to start?</div><a class="fcs-it" href="'+U('quiz-photo.html')+'"><i class="dot">'+PIN+'</i><span><b>Take the quiz</b><small>8 quick questions, your top 5 towns</small></span></a>';
+      var RC=recent().map(function(i){return IDX.t.find(function(t){return t.i===i})}).filter(Boolean).slice(0,3),rs=RC.map(function(t){return t.i});
+      var P=IDX.pop.filter(function(i){return rs.indexOf(i)<0}).map(function(i){return IDX.t.find(function(t){return t.i===i})}).filter(Boolean);
+      h=(RC.length?'<div class="fcs-h">Recently viewed</div>'+RC.map(function(t){return town(t,'')}).join(''):'')+'<div class="fcs-h">Most explored this month</div>'+P.map(function(t){return town(t,'')}).join('');
     }else{
       var T=IDX.t.map(function(t){return [score(t.n,q),t]}).filter(function(x){return x[0]<9}).sort(function(a,b){return a[0]-b[0]||a[1].n.localeCompare(b[1].n)}).slice(0,6).map(function(x){return x[1]});
       var R=IDX.r.map(function(r){return [Math.min(score(r.n,q),score(r.n.replace(/^The /,''),q)),r]}).filter(function(x){return x[0]<9}).sort(function(a,b){return a[0]-b[0]}).slice(0,3).map(function(x){return x[1]});
@@ -84,6 +84,9 @@
     if(e.key==='Escape'&&el.classList.contains('on'))close();
     else if((e.key==='/'&&!/INPUT|TEXTAREA|SELECT/.test((document.activeElement||{}).tagName))||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==='k')){e.preventDefault();open('')}
   });
+  function recent(){try{return JSON.parse(localStorage.getItem('fc-recent')||'[]')}catch(e){return[]}}
+  function remember(id){try{var a=recent().filter(function(x){return x!==id});a.unshift(id);localStorage.setItem('fc-recent',JSON.stringify(a.slice(0,6)))}catch(e){}}
+  (function(){var m=location.pathname.match(/towns\/([a-z0-9-]+)-v3\.html/);if(m)remember(m[1])})();
   window.FCS={open:open,close:close};
 
   /* header: turn old search forms into the icon, and add the icon where a header has none */
