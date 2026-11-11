@@ -118,11 +118,50 @@ html body .cguides .cg-lb b{font-size:30px!important;line-height:1.15!important;
 html body .cguides .cg-c b{font-size:23px!important;line-height:1.2!important;margin:18px 0 0!important}
 @media (max-width:760px){html body .cguides .cg-lb b{font-size:27px!important;margin-bottom:0}html body .cguides .cg-c b{font-size:21px!important}}
 </style><style id="glass">
-html body .hero-btn:not(#x),html body .mob-cta:not(#x),html body .cs-t .cs-n:not(#x),html body .cm-card .cm-pill:not(#x),html body .cmap .cm-more:not(#x){background:rgba(16,22,24,.42)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2)!important;backdrop-filter:blur(18px) saturate(1.2)!important;border:1px solid rgba(255,255,255,.22)!important;color:#fff!important;box-shadow:0 10px 30px rgba(0,0,0,.18)!important}
+html body .hero-btn:not(#x):not(.tk-btn),html body .mob-cta:not(#x),html body .cs-t .cs-n:not(#x),html body .cm-card .cm-pill:not(#x),html body .cmap .cm-more:not(#x){background:rgba(16,22,24,.42)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2)!important;backdrop-filter:blur(18px) saturate(1.2)!important;border:1px solid rgba(255,255,255,.22)!important;color:#fff!important;box-shadow:0 10px 30px rgba(0,0,0,.18)!important}
 html body .cs-t .cs-n:not(#x),html body .cm-card .cm-pill:not(#x){box-shadow:none!important;background:rgba(16,22,24,.34)!important}
-html body .hero-btn:not(#x):hover,html body .mob-cta:not(#x):hover,html body .cmap .cm-more:not(#x):hover{background:rgba(16,22,24,.58)!important}
-html body .hero-btn:not(#x) *,html body .mob-cta:not(#x) *,html body .cmap .cm-more:not(#x) *{color:#fff!important}
+html body .hero-btn:not(#x):not(.tk-btn):hover,html body .mob-cta:not(#x):hover,html body .cmap .cm-more:not(#x):hover{background:rgba(16,22,24,.58)!important}
+html body .hero-btn:not(#x):not(.tk-btn) *,html body .mob-cta:not(#x) *,html body .cmap .cm-more:not(#x) *{color:#fff!important}
 html body .mob-cta:not(#x){background:rgba(16,22,24,.6)!important}
+</style><style id="m-snap">
+@media (max-width:760px){
+html{scroll-snap-type:y mandatory}
+html body main>section,html body .swhat .sw-tx,html body .cguides .cg-row,html body footer{scroll-snap-align:start;scroll-snap-stop:always}
+html body footer{scroll-snap-align:end}
+/* hero */
+html body main>section.dk-hero:not(#x){height:100svh!important;min-height:0!important}
+/* map */
+html body main>section.cmap:not(#x){height:100svh!important;display:flex!important;gap:0!important;flex-direction:column;padding:44px 20px 20px!important;box-sizing:border-box;margin:0!important}
+html body section.cmap:not(#x) .cm-l:not(#x){flex:none;margin:0!important;padding:0!important}
+html body section.cmap:not(#x) .cm-r:not(#x):not(#y){flex:1;min-height:0;padding:0!important;margin:20px 0 0!important;position:relative}
+html body section.cmap:not(#x) .cm-frame:not(#x){margin-top:0!important;height:calc(100% - 70px)!important;margin-left:14%!important}
+html body section.cmap:not(#x) .cm-card:not(#x){top:auto!important;bottom:0!important;left:0!important}
+@media (max-height:720px){html body section.cmap:not(#x) .cm-card .cm-bd p{display:none!important}html body section.cmap:not(#x) .cm-frame:not(#x){height:calc(100% - 20px)!important}}
+/* styles: bigger photos, centered on the screen */
+html body main>section.cstyles:not(#x){height:100svh!important;display:flex!important;flex-direction:column;justify-content:center;padding:40px 20px 90px!important;box-sizing:border-box;margin:0!important}
+html body section.cstyles:not(#x) .cs-t{flex:0 0 64%!important;width:64%!important}
+html body section.cstyles:not(#x) .cs-t img{height:auto!important;aspect-ratio:4/5!important;width:100%!important;object-fit:cover}
+/* story: screen one is the photo with the headline on it, screen two is the words */
+html body main>section.swhat:not(#x){position:relative;padding:0!important;margin:0!important}
+html body section.swhat:not(#x) .sw-ph{height:100svh!important;margin:0!important;scroll-snap-align:start;scroll-snap-stop:always}
+html body section.swhat:not(#x) .sw-ph img{height:100%!important;object-fit:cover}
+html body section.swhat:not(#x) .sw-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,18,20,.72) 0%,rgba(10,18,20,.25) 38%,rgba(10,18,20,0) 60%);pointer-events:none}
+html body section.swhat:not(#x) .sw-tx>.cm-lbl,html body section.swhat:not(#x) .sw-tx>h2{position:absolute;left:20px;right:20px;color:#fff!important;z-index:2}
+html body section.swhat:not(#x) .sw-tx>.cm-lbl{top:calc(100svh - 196px)}
+html body section.swhat:not(#x) .sw-tx>h2{top:calc(100svh - 170px);font-size:33px!important;line-height:1.08!important;margin:0!important}
+html body section.swhat:not(#x) .sw-tx{min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:40px 20px!important;box-sizing:border-box}
+html body section.swhat:not(#x) .sw-p{font-size:16.5px!important;line-height:1.6!important}
+/* guides: screen one is the lead story, screen two the list */
+html body main>section.cguides.wrap:not(#x){padding:44px 20px 0!important;margin:0!important}
+html body section.cguides:not(#x) .cg-head{scroll-snap-align:start;scroll-snap-stop:always;scroll-margin-top:44px}
+html body section.cguides:not(#x) .cg-lead .cg-ph{aspect-ratio:auto!important;height:max(180px,calc(100svh - 410px))}
+html body section.cguides:not(#x) .cg-lb{min-height:96px}
+html body section.cguides:not(#x) .cg-row{min-height:100svh;display:flex!important;flex-direction:column;justify-content:center;margin:0!important;padding:24px 0 84px;box-sizing:border-box}
+html body section.cguides:not(#x) .cg-c{padding:12px 0!important;grid-template-columns:92px 1fr!important}
+html body section.cguides:not(#x) .cg-c .cg-ph{width:92px;height:92px}
+/* signup fills its screen */
+html body main>section.news:not(#x){height:100svh!important;display:flex!important;flex-direction:column;justify-content:flex-end;padding:0 0 20px!important;box-sizing:border-box;margin:0!important}
+}
 </style></head>
 <body data-v="min" data-voice="1" data-logo="1" data-capsnav="1" data-over="1" data-tight="1" data-bleed="1" data-ft="1" data-steps="1" data-pipe="1" data-ph="1" data-hq="1" data-hqgo="1" data-names="1" data-more="1" data-sticky="1" data-short="1" data-newsph="1" data-newsph2="1" data-grade="1"><header class="top">
   <div class="wrap">
