@@ -473,7 +473,7 @@ function render(fast){
  const vis=T.filter(t=>inView(t,-20*k));
  const pin=t=>S.pop&&S.pop.id==t.id||S.hover==t.id;
  const slTop=S.mode=='sliders'&&S.top.length,dflt=!S.style&&!S.price&&!slTop;
- vis.forEach(t=>{const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!zoomed&&!pin(t)&&((dflt&&!sg)||slTop))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
+ vis.forEach(t=>{const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&((!zoomed&&dflt&&!sg)||slTop))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
   let r=any?(m?6:3):(sg?6.5:(zoomed?5:3.4));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.7));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#7F8B8D');
   if(pin(t))r=7;
   const vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:null;
@@ -490,7 +490,7 @@ function render(fast){
    if(pr==0)lab+=`<rect x="${v[0]+(bx-8)*k}" y="${v[1]+(sy-15)*k}" width="${(tw+16)*k}" height="${30*k}" rx="${15*k}" fill="#152A2E"/><text class="lbl" x="${v[0]+(bx+tw/2)*k}" y="${v[1]+(sy+5.5)*k}" text-anchor="middle" font-size="${fs*k}" fill="#fff" style="fill:#fff;stroke:none">${t.n}</text>`;
    else lab+=`<text class="lbl ${pr==3?'sm':''}" x="${v[0]+(dir>0?bx:bx+tw)*k}" y="${v[1]+(sy+fs*.35)*k}" text-anchor="${dir>0?'start':'end'}" font-size="${fs*k}" stroke-width="${2.4*k}">${t.n}</text>`;break}});
  if(dflt&&!zoomed)SIG.forEach(id=>{if(!placed.has(id)&&!(S.pop&&S.pop.id==id))s=s.replace(new RegExp('<circle class="dot" data-id="'+id+'"[^>]*/>'),'')});
- vis.forEach(t=>{const sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;boxes.push([sx-6,sy-6,12,12])});
+ vis.forEach(t=>{if(!pin(t)&&((!zoomed&&dflt&&!SIG.includes(t.id))||(slTop&&!S.top.includes(t.id))))return;const sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;boxes.push([sx-6,sy-6,12,12])});
  // cities last, only where free
  let cs='';if(!(S.mode=='sliders'&&S.top.length&&w<600))CITIES.forEach(([n,la,lo])=>{const x=X(lo),y=Y(la);if(x<v[0]||x>v[0]+v[2]||y<v[1]||y>v[1]+v[3])return;if(T.some(t=>t.n.startsWith(n)))return;const sx=(x-v[0])/k,sy=(y-v[1])/k,fs=12.5,tw=n.length*fs*.72;if(vis.some(t=>Math.hypot((t.x-x)/k,(t.y-y)/k)<(S.mode=='sliders'&&S.top.slice(0,5).includes(t.id)?90:S.mode=='sliders'&&S.top.includes(t.id)?50:26)))return;if(hit(sx+6,sy-9,tw+4,18))return;cs+=`<circle cx="${x}" cy="${y}" r="${3.6*k}" fill="#fff" stroke="#9AA3A5" stroke-width="${1.4*k}"/><text class="city" x="${x+9*k}" y="${y+5*k}" font-size="${fs*k}" stroke-width="${3.5*k}">${n}</text>`});
  if(S.mode=='sliders'&&S.top.length){let tp='',tl='',tpB='',tpS='';const order=S.top.map((id,i)=>[id,i]);const big=order.slice(0,5),sm=order.slice(5).reverse();
@@ -500,7 +500,7 @@ function render(fast){
   const t=Object.assign({},t0,{x:px,y:py});const r=(B?16:9.5)*k,fs=B?16.5:13;const hv=S.hover==id;
   const tw=t.n.length*(B?9.2:7.2),sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;let side=t.c=='atlantic'?1:-1,dy=0;const off=B?22:15;
   const tryb=(sd,yy)=>{const bx=sd>0?sx+off:sx-off-tw;return hit(bx,sy+yy-10,tw,20)};
-  let show=true;if(tryb(side,0)){const c=[[-side,0],[side,-20],[side,20],[-side,-20],[-side,20],[side,-40],[-side,40]].find(([a,b])=>!tryb(a,b));if(c){side=c[0];dy=c[1]}else{show=hv||B;const bx=side>0?sx+off:sx-off-tw;if(bx<4||bx+tw>w-4)side=-side}}
+  let show=B||hv||!SLM();if(show&&tryb(side,0)){const c=[[-side,0],[side,-20],[side,20],[-side,-20],[-side,20],[side,-40],[-side,40]].find(([a,b])=>!tryb(a,b));if(c){side=c[0];dy=c[1]}else{show=hv||(B&&!SLM());const bx=side>0?sx+off:sx-off-tw;if(bx<4||bx+tw>w-4)side=-side}}
   const c1=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${r}" fill="${i==0?'#152A2E':(B||hv?'#152A2E':'#fff')}" stroke="${B||hv?'#fff':'#5E6B6D'}" stroke-width="${(B?3:1.6)*k}" ${B?'style="filter:drop-shadow(0 1px 2px rgba(0,0,0,.3))"':''}/><text x="${t.x}" y="${t.y+(B?5.8:4.4)*k}" text-anchor="middle" style="font-family:var(--mapf)" font-weight="${B?700:600}" font-size="${(B?15.5:11.5)*k}" fill="${B||hv?'#fff':'#3A4A4D'}" pointer-events="none">${i+1}</text>`;if(B)tpB=c1+tpB;else tpS+=c1;
   if(show)tl+=`<text class="lbl ${B?'':'sm'}" x="${t.x+side*off*k}" y="${t.y+(fs*.35+dy)*k}" text-anchor="${side>0?'start':'end'}" font-size="${fs*k}" stroke-width="${2.4*k}" ${B?'style="font-weight:600"':'style="font-weight:500;fill:#5E6B6D"'}>${t.n}</text>`};
  big.forEach(x=>one(x,true));sm.forEach(x=>one(x,false));
@@ -637,6 +637,7 @@ function slCar(L){const c=$('slcar');if(!c)return;if(!SLM()||!L.length){c.innerH
  c.classList.add('on');c.scrollLeft=0;S.hover=L[0].id;
  if(!c.dataset.w){c.dataset.w=1;let tm;c.addEventListener('scroll',()=>{clearTimeout(tm);tm=setTimeout(()=>{const cs=[...c.children];if(!cs.length)return;const mid=c.scrollLeft+c.clientWidth/2;let best=cs[0],bd=1e9;cs.forEach(e=>{const d=Math.abs(e.offsetLeft+e.offsetWidth/2-mid);if(d<bd){bd=d;best=e}});if(S.hover!==best.dataset.id){S.hover=best.dataset.id;slPanTo(T.find(t=>t.id==S.hover))}},110)},{passive:true})}}
 function slCarTo(id,smooth){const c=$('slcar'),e=c&&c.querySelector(`[data-id="${id}"]`);if(!e)return;S.hover=id;c.scrollTo({left:e.offsetLeft-(c.clientWidth-e.offsetWidth)/2,behavior:smooth?'smooth':'auto'});render()}
+function slFit(P){const[w,h]=size(),T0=64,B0=160,b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))],f0=fit([b[0]-.3,b[1]+.3,b[2]-.18,b[3]+.18],.04),q=h/Math.max(200,h-T0-B0),nw=f0[2]*q,nh=f0[3]*q,kk=nh/h;return [f0[0]-(nw-f0[2])/2,f0[1]+f0[3]/2-(T0+(h-T0-B0)/2)*kk,nw,nh]}
 function slPanTo(t){if(!t)return;const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;if(sx<50||sx>w-50||sy<50||sy>h-170)go([t.x-w/2*k,t.y-(h-150)/2*k,v[2],v[3]],450);else render()}
 function slPill(){let p=$('slpill');if(!p){p=document.createElement('button');p.id='slpill';p.className='slpill';document.body.appendChild(p);p.onclick=()=>{const sl=$('sl');if(!sl)return;const y=sl.getBoundingClientRect().top+scrollY-12;scrollTo({top:p.classList.contains('dn')?y:0,behavior:'smooth'})};addEventListener('scroll',()=>slPill(),{passive:true})}
  const sl=$('sl');if(!sl||!SLM()){p.classList.remove('on');return}const y=sl.getBoundingClientRect().top+scrollY-12,dn=scrollY<y/2;p.classList.add('on');p.classList.toggle('dn',dn);
@@ -677,8 +678,8 @@ function score(first){
  if(slNone()){S.top=[];closePop();$('sltop')&&($('sltop').innerHTML='');slCar([]);slPill();render();return}
  const R=slRank(),L=R.slice(0,5);S.top=R.slice(0,15).map(t=>t.id);S.F=fitSl;S.best=R.length?fitSl(R[0]):1;S.tie=L.length>1&&S.best-fitSl(L[1])<=.01;slCar(L);setTimeout(slPill,0);
  $('sltop')&&($('sltop').innerHTML=`<div class="vm-eb">Your top 5</div><ol>${L.map((t,i)=>`<li><a href="towns/${t.id}-v3.html"><span class="n">${i+1}</span><span class="nm"><b>${t.n}</b>${slWhy(t)?`<small>${slWhy(t)}</small>`:''}</span><span class="fw">${slFitWord(fitSl(t),S.best,i)}</span></a></li>`).join('')}</ol>`);
- clearTimeout(S.ft);if(FIXED()){home()}else S.ft=setTimeout(()=>{const P=L;const[w,h]=size(),nw=w<600;
-  if(nw){const b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))];let f=fit([b[0]-1.3,b[1]+1.3,b[2]-.35,b[3]+.35],.04);if(SLM()){const q=h/Math.max(200,h-150),nw=f[2]*q,nh=f[3]*q;f=[f[0]-(nw-f[2])/2,f[1]-(nh-f[3])*.15,nw,nh]}go(f,first?0:500);return}
+ clearTimeout(S.ft);if(SLM()&&L.length){S.ft=setTimeout(()=>go(slFit(L),first?0:550),first?0:200)}else if(FIXED()){home()}else S.ft=setTimeout(()=>{const P=L;const[w,h]=size(),nw=w<600;
+  if(nw){const b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))];let f=fit([b[0]-1.3,b[1]+1.3,b[2]-.35,b[3]+.35],.04);if(SLM()){const T0=64,B0=160,f0=fit([b[0]-.3,b[1]+.3,b[2]-.18,b[3]+.18],.04),q=h/Math.max(200,h-T0-B0),nw=f0[2]*q,nh=f0[3]*q,kk=nh/h;f=[f0[0]-(nw-f0[2])/2,f0[1]-T0*kk,nw,nh]}go(f,first?0:500);return}
   const pe=$('pop'),cw=(pe.offsetWidth||320)+40,ch=(pe.offsetHeight||400)+40,KS=fit(ALL,0)[2]/w;
   const xs=P.map(t=>t.x),ys=P.map(t=>t.y),x0=Math.min(...xs),x1=Math.max(...xs),y0=Math.min(...ys),y1=Math.max(...ys);
   const gl=P.some(t=>t.c!='atlantic')?195:30,ar=P.some(t=>t.c=='atlantic')?165:30,T0=62,B0=h-34;
