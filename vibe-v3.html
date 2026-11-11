@@ -356,7 +356,7 @@ html body.sheet #res.res.sh-full:not(#x){overflow-y:auto;touch-action:pan-y}
 html body.sheet .sh-grab{display:block;width:100%;height:26px;border:0;background:none;padding:0;margin:0 0 4px;cursor:pointer;position:relative}
 html body.sheet .sh-grab::after{content:"";position:absolute;left:50%;top:10px;width:40px;height:5px;margin-left:-20px;border-radius:3px;background:rgba(21,42,46,.22)}
 html body.sheet #slpill{display:none!important}
-html body.sheet #mapbox #pop.pop.on:not(#x):not(#y):not(#z){bottom:144px!important;background:rgba(255,255,255,.9)!important;-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);border:1px solid rgba(255,255,255,.95)!important;box-shadow:0 10px 30px rgba(21,42,46,.18)!important;transition:opacity .2s}
+html body.sheet #mapbox #pop.pop.on:not(#x):not(#y):not(#z){bottom:calc(var(--pk,132px) + 12px)!important;background:rgba(255,255,255,.9)!important;-webkit-backdrop-filter:blur(14px) saturate(1.2);backdrop-filter:blur(14px) saturate(1.2);border:1px solid rgba(255,255,255,.95)!important;box-shadow:0 10px 30px rgba(21,42,46,.18)!important;transition:opacity .2s}
 html body.sheet #mapbox #pop .bd:not(#x):not(#y):not(#z){background:transparent!important}
 html body.sheet .res .mode:not(#x){margin-top:0!important}
 html body select:not(#x),html body input:not([type=range]):not(#x),html body textarea:not(#x){font-size:16px!important}html body #sl select#slwhere:not(#x):not(#y),html body #res select:not(#x):not(#y){font-size:16px!important}
@@ -494,14 +494,16 @@ function chips(){const cur=curReg();$('rname').textContent=cur>=0?REG[cur][0]:'A
 chips();
 function size(){const r=box.getBoundingClientRect();return [r.width,r.height]}
 const HDR=()=>matchMedia('(max-width:760px)').matches?64:0;
-function fit(b,pad=.08){const [w,h0]=size(),hd=HDR(),h=h0-hd;const r0=fit0(b,pad,w,h);const kk=r0[2]/w;return [r0[0],r0[1]-hd*kk,r0[2],r0[3]+hd*kk]}
+function fit(b,pad=.08,raw){const [w,h0]=size(),hd=HDR(),bt=(!raw&&typeof SHON=='function'&&SHON())?PK()+10:0,h=Math.max(160,h0-hd-bt);const r0=fit0(b,pad,w,h);const kk=r0[2]/w;return [r0[0],r0[1]-hd*kk,r0[2],r0[3]+(h0-h-hd+hd)*kk]}
 function fit0(b,pad,w,h){const x0=X(b[0]),x1=X(b[1]),y0=Y(b[3]),y1=Y(b[2]);let bw=(x1-x0)*(1+pad*2),bh=(y1-y0)*(1+pad*2);const ar=w/h;if(bw/bh<ar)bw=bh*ar;else bh=bw/ar;if(bw<MINW){bh*=MINW/bw;bw=MINW}return [(x0+x1)/2-bw/2,(y0+y1)/2-bh/2,bw,bh]}
 const ALL=[-87.75,-79.75,24.4,31.1];const MINW=150;
 let anim=null;
-function go(vb,ms=450){cancelAnimationFrame(anim);const a=S.vb.slice(),t0=performance.now();const step=n=>{let p=Math.min(1,(n-t0)/ms);p=1-Math.pow(1-p,3);S.vb=a.map((v,i)=>v+(vb[i]-v)*p);render(p<1);if(p<1)anim=requestAnimationFrame(step);else{render();list()}};anim=requestAnimationFrame(step)}
+function vbOk(vb){return vb&&vb.length==4&&vb.every(Number.isFinite)&&vb[2]>=MINW*.85&&vb[3]>=60&&vb[2]<6000}
+function go(vb,ms=450){if(!vbOk(vb)){const[w,h]=size();vb=(w>20&&h>20)?fit0(ALL,.02,w,h):S.vb}if(!vbOk(S.vb))S.vb=vb.slice();cancelAnimationFrame(anim);const a=S.vb.slice(),t0=performance.now();const step=n=>{let p=Math.min(1,(n-t0)/ms);p=1-Math.pow(1-p,3);S.vb=a.map((v,i)=>v+(vb[i]-v)*p);render(p<1);if(p<1)anim=requestAnimationFrame(step);else{render();list()}};anim=requestAnimationFrame(step)}
 function match(t){if(S.style&&!t.v.includes(S.style))return false;if(S.mode=="vibes"&&!needOk(t))return false;if(S.price){const[a,b]=S.price.split('-').map(Number);if(t.pv==null||t.pv<a||t.pv>=b)return false}return true}
 function inView(t,m=0){const v=S.vb;return t.x>v[0]+m&&t.x<v[0]+v[2]-m&&t.y>v[1]+m&&t.y<v[1]+v[3]-m}
 function render(fast){
+ if(!vbOk(S.vb)){const[w0,h0]=size();if(w0>20&&h0>20)S.vb=fit0(ALL,.02,w0,h0)}
  const [w,h]=size(),v=S.vb,k=v[2]/w;svg.setAttribute('viewBox',v.join(' '));base.style.setProperty('--k',k);
  const zoomed=v[2]<330,deep=v[2]<200;
  let s='';const boxes=[];
@@ -643,7 +645,7 @@ function vRender(){const _r=document.querySelector('#vp .tiles.vt'),_sl=_r?_r.sc
  zoomPill()}
 function needChange(){if(S.pop&&!needOk(S.pop))closePop();render();vRender()}
 const RKEY='fcRegion',rGet=()=>{try{return localStorage.getItem(RKEY)}catch(e){return null}},rSet=v=>{try{localStorage.setItem(RKEY,v)}catch(e){}};
-function pickStyle(k){if(isR(k))rSet(k.slice(2));S.style=k;S.gHover=null;S.gT0=performance.now()+450;$('sty').value=k;S.region='';tags();document.body.classList.add('pick');closePop();if(isR(k)){S.zoomedTo=null;go(fitStyle(k),500)}else home();vRender();$('res').scrollTop=0}
+function pickStyle(k){if(SHON()&&SHEET.st!='peek'){const vp=$('vp');vp&&vp.classList.remove('vt-open');setTimeout(()=>shSet('peek',true),0)}if(isR(k))rSet(k.slice(2));S.style=k;S.gHover=null;S.gT0=performance.now()+450;$('sty').value=k;S.region='';tags();document.body.classList.add('pick');closePop();if(isR(k)){S.zoomedTo=null;go(fitStyle(k),500)}else home();vRender();$('res').scrollTop=0}
 const FIXED=()=>S.mode=='vibes'||S.mode=='sliders';
 function home(){const h=fit(ALL,.02);if(!S.vb||S.vb.some((v,i)=>Math.abs(v-h[i])>1))go(h,350)}
 function flyTo(t){if(FIXED()){openPop(t,true);S.mode=='vibes'&&vRender();return}const[w,h]=size(),nw=w<600,W=nw?MINW*1.6:Math.max(MINW,170),H=W*h/w,cx=nw?w/2:(Math.min(460,w*.45)+w)/2,k=W/w;S.zoomedTo=t.id;go([t.x-cx*k,t.y-h/2*k,W,H],520);setTimeout(()=>{openPop(t,true);S.mode=='vibes'&&vRender()},20)}
@@ -693,28 +695,31 @@ function slCar(L){const c=$('slcar');if(!c)return;if(true){c.innerHTML='';c.clas
  c.classList.add('on');c.scrollLeft=0;S.hover=L[0].id;
  if(!c.dataset.w){c.dataset.w=1;let tm;c.addEventListener('scroll',()=>{clearTimeout(tm);tm=setTimeout(()=>{const cs=[...c.children];if(!cs.length)return;const mid=c.scrollLeft+c.clientWidth/2;let best=cs[0],bd=1e9;cs.forEach(e=>{const d=Math.abs(e.offsetLeft+e.offsetWidth/2-mid);if(d<bd){bd=d;best=e}});if(S.hover!==best.dataset.id){S.hover=best.dataset.id;slPanTo(T.find(t=>t.id==S.hover))}},110)},{passive:true})}}
 function slCarTo(id,smooth){const c=$('slcar'),e=c&&c.querySelector(`[data-id="${id}"]`);if(!e)return;S.hover=id;c.scrollTo({left:e.offsetLeft-(c.clientWidth-e.offsetWidth)/2,behavior:smooth?'smooth':'auto'});render()}
-function slFit(P){const[w,h]=size(),SH=SHON(),T0=SH?70:64+HDR(),pe=$('pop'),B0=SH?SHRES():(pe&&pe.classList.contains('on')?pe.offsetHeight+24:40),b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))],f0=fit([b[0]-.3,b[1]+.3,b[2]-.18,b[3]+.18],.04),q=h/Math.max(200,h-T0-B0),nw=f0[2]*q,nh=f0[3]*q,kk=nh/h;return [f0[0]-(nw-f0[2])/2,f0[1]+f0[3]/2-(T0+(h-T0-B0)/2)*kk,nw,nh]}
+function slFit(P){const[w,h]=size(),SH=SHON(),T0=SH?70:64+HDR(),pe=$('pop'),B0=SH?SHRES():(pe&&pe.classList.contains('on')?pe.offsetHeight+24:40),b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))],f0=fit([b[0]-.3,b[1]+.3,b[2]-.18,b[3]+.18],.04,true),q=h/Math.max(200,h-T0-B0),nw=f0[2]*q,nh=f0[3]*q,kk=nh/h;return [f0[0]-(nw-f0[2])/2,f0[1]+f0[3]/2-(T0+(h-T0-B0)/2)*kk,nw,nh]}
 function slPanTo(t){if(!t)return;const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;if(sx<50||sx>w-50||sy<50||sy>h-170)go([t.x-w/2*k,t.y-(h-150)/2*k,v[2],v[3]],450);else render()}
 // Phone Slider Map: Compass style sheet over a fixed map (peek, half, full)
 const SHEET={st:'peek',y:0};
 const SHON=()=>document.body.classList.contains('sheet');
-function shStops(){const vh=innerHeight;return {peek:vh-132,half:Math.round(vh*.44),full:60}}
-function SHRES(){const vh=innerHeight,pe=$('pop');if(SHEET.st=='peek')return 132+(pe&&pe.classList.contains('on')?pe.offsetHeight+12:0)+14;return vh-shStops()[SHEET.st]+14}
+function PK(){if(S.mode!='vibes')return 132;const r=$('res'),tl=$('vp')&&$('vp').querySelector('.tiles.vt');if(!r||!tl)return 300;const pr=r.getBoundingClientRect(),tb=tl.getBoundingClientRect();return Math.min(380,Math.round(tb.top-pr.top+Math.min(tb.height,140)+16))}
+function shStops(){const vh=innerHeight;return {peek:vh-PK(),half:Math.round(vh*.44),full:60}}
+function SHRES(){const vh=innerHeight,pe=$('pop');if(SHEET.st=='peek')return PK()+(pe&&pe.classList.contains('on')?pe.offsetHeight+12:0)+14;return vh-shStops()[SHEET.st]+14}
 function shApply(y,anim){const r=$('res');SHEET.y=y;r.style.transition=anim?'transform .32s cubic-bezier(.2,.8,.2,1)':'none';r.style.transform=`translate3d(0,${y}px,0)`;
  const st=shStops(),pe=$('pop');if(pe){const o=Math.max(0,Math.min(1,(y-st.half)/(st.peek-st.half-40)));pe.style.opacity=o;pe.style.pointerEvents=o<.5?'none':''}}
-function shSet(name,noFit){const st=shStops();SHEET.st=name;shApply(st[name],true);const r=$('res');r.classList.toggle('sh-full',name=='full');if(name!='full')r.scrollTop=0;
- if(!noFit&&name!='full'&&S.top&&S.top.length){const L=S.top.slice(0,5).map(id=>T.find(t=>t.id==id));setTimeout(()=>go(slFit(L),450),40)}}
-function shSync(){const on=S.mode=='sliders'&&PH();const r=$('res');if(!r)return;if(on&&!SHON()){document.body.classList.add('sheet');shSet('peek',true);setTimeout(()=>{render();if(S.top.length)go(slFit(S.top.slice(0,5).map(id=>T.find(t=>t.id==id))),0);else go(fit(ALL,.02),0)},30)}
+function shSet(name,noFit){document.body.style.setProperty('--pk',PK()+'px');const st=shStops();SHEET.st=name;shApply(st[name],true);const r=$('res');r.classList.toggle('sh-full',name=='full');if(name!='full')r.scrollTop=0;
+ if(!noFit&&name!='full')setTimeout(shRefit,40)}
+function shRefit(){if(S.mode=='sliders'){if(S.top&&S.top.length)go(slFit(S.top.slice(0,5).map(id=>T.find(t=>t.id==id))),450);else go(fit(ALL,.02),450)}else if(S.mode=='vibes'){if(S.pop)return;if(S.style&&isR(S.style))go(fitStyle(S.style),450);else go(fit(ALL,.02),450)}}
+function shSync(){const on=(S.mode=='sliders'||S.mode=='vibes')&&PH();const r=$('res');if(!r)return;if(on){const was=SHON();document.body.classList.add('sheet');setTimeout(()=>{shSet('peek',true);render();shRefit()},was?60:30)}
  else if(!on&&SHON()){document.body.classList.remove('sheet');r.style.transform='';r.style.transition='';const pe=$('pop');if(pe){pe.style.opacity='';pe.style.pointerEvents=''}}}
 (function(){const r=$('res');let d=null;
- const skip=t=>t.closest('input,select,textarea');
- r.addEventListener('touchstart',e=>{if(!SHON()||skip(e.target))return;const t=e.touches[0];d={y0:t.clientY,s0:SHEET.y,t0:performance.now(),own:false,last:t.clientY,lt:performance.now(),v:0}},{passive:true});
+ $('vp')&&$('vp').addEventListener('click',e=>{const a=e.target.closest('.vm-all');if(!a||!SHON())return;setTimeout(()=>shSet($('vp').classList.contains('vt-open')?'full':'peek'),0)});
+ const skip=t=>t.closest('select,textarea,input:not([type=range])');
+ r.addEventListener('touchstart',e=>{if(!SHON()||skip(e.target))return;const t=e.touches[0];d={x0:t.clientX,y0:t.clientY,s0:SHEET.y,t0:performance.now(),own:false,last:t.clientY,lt:performance.now(),v:0}},{passive:true});
  r.addEventListener('touchmove',e=>{if(!d)return;const t=e.touches[0],dy=t.clientY-d.y0;
-  if(!d.own){if(Math.abs(dy)<6)return;if(SHEET.st=='full'&&(r.scrollTop>0||dy<0)){d=null;return}d.own=true}
+  if(!d.own){const dx=t.clientX-d.x0;if(Math.abs(dy)<6&&Math.abs(dx)<6)return;if(Math.abs(dx)>Math.abs(dy)){d=null;return}if(SHEET.st=='full'&&(r.scrollTop>0||dy<0)){d=null;return}d.own=true}
   e.preventDefault();const st=shStops();let y=d.s0+dy;if(y<st.full)y=st.full-(st.full-y)*.3;if(y>st.peek)y=st.peek+(y-st.peek)*.3;shApply(y,false);
   const now=performance.now();d.v=(t.clientY-d.last)/Math.max(1,now-d.lt);d.last=t.clientY;d.lt=now},{passive:false});
  r.addEventListener('touchend',()=>{if(!d)return;const own=d.own,v=d.v;d=null;if(!own)return;const st=shStops(),y=SHEET.y;let n;
-  if(v<-.5)n=y>st.half?'half':'full';else if(v>.5)n=y<st.half?'half':'peek';else n=['peek','half','full'].sort((a,b)=>Math.abs(st[a]-y)-Math.abs(st[b]-y))[0];shSet(n)});
+  const tg=y+Math.max(-1.5,Math.min(1.5,v))*260;n=['peek','half','full'].sort((a,b)=>Math.abs(st[a]-tg)-Math.abs(st[b]-tg))[0];shSet(n)});
  const g=document.createElement('button');g.className='sh-grab';g.type='button';g.setAttribute('aria-label','Show more');r.prepend(g);
  g.addEventListener('click',()=>{if(!SHON())return;shSet(SHEET.st=='peek'?'half':SHEET.st=='half'?'full':'peek')});
  addEventListener('resize',()=>{if(SHON())shSet(SHEET.st,true)});})();
