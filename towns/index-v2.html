@@ -117,12 +117,6 @@ html body section.s#regions:not(#x) .wrap{display:flex;flex-direction:column;fle
 html body section.s#regions:not(#x) h2{font-size:36px!important;line-height:1.05!important;letter-spacing:-.02em!important;margin:6px 0 10px!important}
 html body section.s#regions:not(#x) .lede{font-size:16px!important;line-height:1.5!important;margin:0 0 24px!important;max-width:30em}
 html body section.s#regions:not(#x) #cg{flex:1 1 auto;min-height:340px;grid-template-rows:1fr 1fr;gap:10px!important;margin:0!important}
-html body section.s#regions:not(#x) #cg .ct{height:auto!important;aspect-ratio:auto!important;position:relative;overflow:hidden;border-radius:14px!important}
-html body section.s#regions:not(#x) #cg .ct::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,16,18,.62) 0%,rgba(8,16,18,.12) 45%,rgba(8,16,18,0) 70%);pointer-events:none}
-html body section.s#regions:not(#x) #cg .ct span{position:absolute!important;left:14px!important;right:12px!important;bottom:14px!important;top:auto!important;z-index:2;text-align:left}
-html body section.s#regions:not(#x) #cg .ct small{font-size:10px!important;letter-spacing:.08em;opacity:.8;display:block;margin-bottom:4px}
-html body section.s#regions:not(#x) #cg .ct b{font-size:23px!important;line-height:1.05!important;display:block}
-html body section.s#regions:not(#x) #cg .ct em{font-size:13px!important;font-style:normal;opacity:.9;display:block;margin-top:4px}
 html body section.az:not(#x) .ey{margin-bottom:6px!important}
 html body section.az:not(#x) h2{font-size:44px!important;line-height:1!important;letter-spacing:-.01em}
 html body section.az:not(#x) .fl{display:grid!important;grid-template-columns:1fr 1fr;gap:8px!important;margin:22px 0 8px!important}
@@ -133,7 +127,14 @@ html body section.az:not(#x) #cols h5{position:sticky;top:0;z-index:3;background
 html body section.az:not(#x) #cols a{padding:13px 0!important}
 html body section.az:not(#x) #cols a b{font-size:17px!important;font-weight:500!important}
 html body section.az:not(#x) #cols a span{font-size:15px!important;color:#6B7A7C!important}
-
+html body section.az:not(#x){scroll-snap-align:start;scroll-margin-top:calc(-1 * var(--gt,0px));padding-top:calc(var(--gt,0px) + 40px)!important;margin-top:0!important}
+}
+html body section.s#regions:not(#x) #cg .ct{height:auto!important;aspect-ratio:auto!important;position:relative;overflow:hidden;border-radius:14px!important}
+html body section.s#regions:not(#x) #cg .ct::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,16,18,.62) 0%,rgba(8,16,18,.12) 45%,rgba(8,16,18,0) 70%);pointer-events:none}
+html body section.s#regions:not(#x) #cg .ct span{position:absolute!important;left:14px!important;right:12px!important;bottom:14px!important;top:auto!important;z-index:2;text-align:left}
+html body section.s#regions:not(#x) #cg .ct small{font-size:10px!important;letter-spacing:.08em;opacity:.8;display:block;margin-bottom:4px}
+html body section.s#regions:not(#x) #cg .ct b{font-size:23px!important;line-height:1.05!important;display:block}
+html body section.s#regions:not(#x) #cg .ct em{font-size:13px!important;font-style:normal;opacity:.9;display:block;margin-top:4px}
 html body section.s#regions:not(#x) #cg .ct small{display:none!important}
 html.sheet-open,html.sheet-open body{overflow:hidden!important;scroll-snap-type:none!important}
 html body #ar.show.sheet:not(#x){position:fixed;left:0;right:0;bottom:0;top:calc(var(--gt,0px) + 10px);z-index:9000;margin:0!important;padding:0 0 calc(var(--gb,0px) + 40px)!important;background:#fff;border-radius:18px 18px 0 0;overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;box-shadow:0 -10px 40px rgba(0,0,0,.25);animation:shUp .32s cubic-bezier(.2,.8,.2,1)}
@@ -184,13 +185,32 @@ html body section.az:not(#x):not(#y) #cols h5{background:#fff!important;color:#6
 html body section.az:not(#x):not(#y) #cols a{border-color:#EEEAE3!important}
 html body section.az:not(#x):not(#y) #cols a b{font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;font-size:19px!important}
 html body section.az:not(#x):not(#y) #cols a span{font-size:14.5px!important;color:#152A2E!important;font-weight:500}
-html body section.az:not(#x){scroll-snap-align:start;scroll-margin-top:calc(-1 * var(--gt,0px));padding-top:calc(var(--gt,0px) + 40px)!important;margin-top:0!important}
+@media (min-width:761px){
+html body section.s#regions:not(#x) #cg{gap:20px!important}
+html body section.s#regions:not(#x) #cg .ct{height:auto!important;aspect-ratio:4/5!important}
+html body section.s#regions:not(#x) #cg .ct b{font-size:30px!important}
+html body section.s#regions:not(#x) #cg .ct em{font-size:14px!important}
+html body section.s#regions:not(#x) #cg .ct span{left:20px!important;bottom:20px!important}
+html body #ar.show.sheet:not(#x):not(#y){top:0;bottom:0;left:auto;right:0;width:min(560px,92vw);border-radius:0;padding-bottom:48px!important;animation:shIn .32s cubic-bezier(.2,.8,.2,1)}
+@keyframes shIn{from{transform:translateX(100%)}to{transform:none}}
+.sh-top{border-radius:0!important;height:300px!important}
+.sh-grab{display:none}
+.sh-top h3{left:32px!important;font-size:44px!important;bottom:46px!important}.sh-top p{left:32px!important;bottom:20px!important;font-size:15px!important}
+#ar.sheet #ach{padding:18px 32px 6px!important}#ar.sheet #ax{padding:6px 32px 0!important}#ar.sheet #grid{padding:8px 32px 0!important}.sh-lh{padding:24px 32px 0!important}
+#ar.sheet #grid .card:hover h4{text-decoration:underline;text-underline-offset:3px}
+#ar.sheet .axl button:hover b{text-decoration:underline;text-underline-offset:3px}
+html body section.az:not(#x):not(#y){padding-top:24px!important;padding-bottom:96px!important}
+html body section.az:not(#x):not(#y) h2{font-size:52px!important}
+html body section.az:not(#x):not(#y) .fl input,html body section.az:not(#x):not(#y) .fl select{height:46px!important;border-radius:12px!important;font-size:15.5px!important;padding:0 14px!important}
+html body section.az:not(#x):not(#y) #cols h5{position:sticky;top:64px;z-index:3;padding:22px 0 10px!important;margin:0!important;font-size:12px!important;letter-spacing:.14em!important}
+html body section.az:not(#x):not(#y) #cols a{padding:9px 0!important}
+html body section.az:not(#x):not(#y) #cols a:hover b{text-decoration:underline;text-underline-offset:3px}
 }
-</style><script id="t-snap-js">(function(){if(innerWidth>760)return;var r=document.documentElement;
+</style><script id="t-snap-js">(function(){var MOB=innerWidth<=760;var r=document.documentElement;
 if(/iPhone|iPod/.test(navigator.userAgent)){var gap=screen.height-innerHeight;if(gap>=90&&gap<=260){var t=Math.min(84,Math.round(gap*.48)+4);r.style.setProperty('--gt',t+'px');r.style.setProperty('--gb',(gap-t+44)+'px')}}
 function f(){var az=document.querySelector('section.az');if(!az)return;var on=scrollY<az.offsetTop-2;r.classList.toggle('tsnap',on)}
 
-function SH(){var ar=document.getElementById('ar');if(ar&&innerWidth<=760){var scrim=null,top=null,lh=null,more=null;
+function SH(){var ar=document.getElementById('ar');if(ar){var scrim=null,top=null,lh=null,more=null;
 function K(t){var m=/\$([\d.]+)\s*([KM])/.exec(t);if(!m)return null;return parseFloat(m[1])*(m[2]=='M'?1000:1)}
 function F(v){return v>=1000?'$'+(v/1000).toFixed(2).replace(/\.?0+$/,'')+'M':'$'+Math.round(v)+'K'}
 function dress(){if(!ar.classList.contains('show'))return;var on=document.querySelector('#cg .ct.on');
@@ -206,7 +226,7 @@ new MutationObserver(function(){setTimeout(dress,0)}).observe(ar,{attributes:tru
 addEventListener('keydown',function(e){if(e.key==='Escape'&&ar.classList.contains('sheet'))close()});
 var y0=null;ar.addEventListener('touchstart',function(e){y0=ar.scrollTop<=0?e.touches[0].clientY:null},{passive:true});ar.addEventListener('touchend',function(e){if(y0!==null&&e.changedTouches[0].clientY-y0>110)close();y0=null},{passive:true})}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',SH);else SH();
-r.classList.add('tsnap');addEventListener('scroll',f,{passive:true});addEventListener('load',f);f()})();</script></head><body>
+if(MOB){r.classList.add('tsnap');addEventListener('scroll',f,{passive:true});addEventListener('load',f);f()}})();</script></head><body>
 <header><a class="logo" href="../home-v2.html"><img src="../img/fc-logo-arch-line-white.png" alt="Florida Coastal"></a>
 <nav class="top"><a class="on" href="../towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="../vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="../vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="../articles/index.html" data-nav="articles">Articles</a></nav>
 <a class="cta" href="../quiz-photo.html">Take the quiz</a></header>
