@@ -472,6 +472,22 @@ html body.sheet .msearch:not(#x){top:calc(11px + env(safe-area-inset-top))!impor
 html body.sheet .fcm-btn:not(#x){top:calc(32px + env(safe-area-inset-top))!important}
 html body.sheet .zpill.on:not(#x):not(#y){top:calc(78px + env(safe-area-inset-top))!important}
 }</style>
+<style id="sl-long">
+html body .sl:not(#x) .sl2:not(#y),html body.sliders .sl2:not(#x):not(#y){display:block!important;padding:10px 0 8px!important}
+html body .sl:not(#x) .sl2 label:not(#y){display:flex!important;align-items:center;gap:8px}
+html body .sl:not(#x) .sl2 label output:not(#y){margin-left:auto!important;text-align:right;white-space:nowrap}
+html body .sl:not(#x) .sl2 input[type=range]:not(#y){width:100%!important;height:4px!important;margin:16px 0 10px!important;touch-action:pan-y}
+html body .sl:not(#x) .sl2 input[type=range]::-webkit-slider-thumb{width:28px!important;height:28px!important}
+html body .sl:not(#x) .sl2 input[type=range]::-moz-range-thumb{width:26px;height:26px}
+.sl-i{flex:none;width:20px;height:20px;border-radius:50%;border:1.3px solid #9AA6A8;background:transparent;color:#5E6B6D;font:italic 600 12px/1 Georgia,serif;display:inline-flex;align-items:center;justify-content:center;padding:0;cursor:pointer;position:relative}
+.sl-i::after{content:"";position:absolute;inset:-12px}
+.sl2.inf .sl-i{background:#152A2E;border-color:#152A2E;color:#fff}
+.sl-inf{display:none;font:400 13.5px/1.45 'DM Sans',sans-serif;color:#4A5A5D;background:#F2EFEA;border-radius:12px;padding:11px 13px;margin:2px 0 6px}
+.sl-inf span{color:#6B7A7C}
+.sl-inf a{color:#152A2E;font-weight:600;white-space:nowrap}
+.sl2.inf .sl-inf{display:block}
+html body .vm-lh:not(#x) .vm-all{margin-left:auto!important}
+</style>
 </head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-black.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
@@ -669,7 +685,7 @@ function needsHTML(){const n=S.need,c=T.filter(t=>(!S.style||t.v.includes(S.styl
 function vRender(){const _r=document.querySelector('#vp .tiles.vt'),_sl=_r?_r.scrollLeft:0;setTimeout(()=>{const r=document.querySelector('#vp .tiles.vt');if(r&&_sl)r.scrollLeft=_sl},0);const v=S.style;let h;const MOB=matchMedia('(max-width:760px)').matches;
  if(true){const cnt=k=>T.filter(t=>t.v.includes(k)&&needOk(t)).length;
   const RG=S.sub=='regions',KS=RG?LK.REGIONS.map(r=>'r:'+r.id):LK.VFEEL,img=k=>RG?(T.find(t=>t.id==RPH[k.slice(2)])||T.find(t=>t.v.includes(k))).img:`img/vibes/${k}.webp`,ri=v&&RG?RCOPY[v.slice(2)]:null;
-  h=`<div class="vm-lh"><div class="vm-eb">${ri?`Region · ${cnt(v)} beach towns`:`${T.length} beach towns · ${KS.length} ${RG?'regions':'styles'}`}</div><h2>${ri?VIBES[v]:RG?'Explore the coast':'Find your stretch of coast'}</h2><button type="button" class="vm-all" onclick="this.closest('.vp').classList.toggle('vt-open');this.textContent=this.closest('.vp').classList.contains('vt-open')?'Show less':'See all ${KS.length}'">See all ${KS.length}</button></div>${ri?`<p class="vm-ri">${ri.intro}</p>`:''}${v&&LK.VGUIDE[v]?`<a class="vm-guide vm-guide-t" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="tiles vt${RG?' rg':''}">${KS.map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('${img(k)}')"><i>${RG?'':`<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>`}${cnt(k)}</i><span class="tt"><b>${VIBES[k]}</b><small>${LK.VSUBL[k]||VSUB[k]}</small></span></div></button>`).join('')}</div>`}
+  h=`<div class="vm-lh"><div class="vm-eb">${ri?`Region · ${cnt(v)} beach towns`:`${T.length} beach towns · ${KS.length} ${RG?'regions':'styles'}`}</div>${ri?`<h2>${VIBES[v]}</h2>`:''}<button type="button" class="vm-all" onclick="this.closest('.vp').classList.toggle('vt-open');this.textContent=this.closest('.vp').classList.contains('vt-open')?'Show less':'See all ${KS.length}'">See all ${KS.length}</button></div>${ri?`<p class="vm-ri">${ri.intro}</p>`:''}${v&&LK.VGUIDE[v]?`<a class="vm-guide vm-guide-t" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="tiles vt${RG?' rg':''}">${KS.map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('${img(k)}')"><i>${RG?'':`<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>`}${cnt(k)}</i><span class="tt"><b>${VIBES[k]}</b><small>${LK.VSUBL[k]||VSUB[k]}</small></span></div></button>`).join('')}</div>`}
  else{const L=vOrder();
   h=`<div class="vm-sh" style="background-image:url('img/vibes/${v}.webp')"><button class="vm-back" id="vback">← All styles</button><div class="vm-sht"><h2><i style="background:${VCOL[v]}"></i>${VIBES[v]}</h2><p>${L.length} towns · ${LK.VSUBL[v]||VSUB[v]}</p></div></div>${LK.VGUIDE[v]?`<a class="vm-guide" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="vm-eb vm-lt">Panhandle around to the Keys</div><ol class="vm-list">${L.map((t,i)=>`<li><button class="vm-row${S.pop&&S.pop.id==t.id?' on':''}" data-vpick="${t.id}" style="--vc:${VCOL[v]}"><span class="vm-n">${i+1}</span><span class="vm-rt"><b>${t.n}</b><small>${LD[t.id].rn}</small></span></button></li>`).join('')}</ol>`}
  h+=`<div class="vm-lf"><a href="quiz-photo.html">See your top 5 towns</a><p>8 quick questions, matched to how you live</p></div>`;
@@ -707,7 +723,7 @@ $('back').onclick=()=>{if(S.sub=='regions')rSet('');S.zoomedTo=null;S.style='';s
 $('mode').onclick=e=>{const b=e.target.closest('button');if(!b)return;setMode(b.dataset.m)};
 
 // sliders mode: same sliders, same scoring as the live Slider Map (fitSl, Nov 2026)
-const SLC=[['pace','Quiet or lively'],['meet','Restaurants and community'],['walk','Walkability'],['water','On the water'],['beach','Beaches'],['outdoors','Active outdoors'],['afford','Affordability'],['airport','Airport access'],['charm','Coastal charm'],['edu','Public schools']];
+const SLC=[['pace','Quiet or lively'],['meet','Social scene'],['walk','Walkability'],['water','On the water'],['beach','Beaches'],['outdoors','Active outdoors'],['afford','Affordability'],['airport','Airport access'],['charm','Coastal charm'],['edu','Public schools']];
 const SL_CORE=['beach','charm','water'],SL_MORE=['meet','walk','outdoors','airport','edu'];
 const slDef=k=>k=='pace'?50:0,slOn=(k,v)=>v!==slDef(k);
 const slW=v=>v<=0?0:4*Math.pow(v/100,1.5);
@@ -774,7 +790,18 @@ function slWhy(t){const P=slPri(),best=P.filter(k=>rkk(t,k)<=40).sort((x,y)=>rkk
 function whyOf(t){return slWhy(t)}
 const slEnds=k=>{const w=k=='pace'?LK.PACE2:LK.SL_WORDS[k];return w?`<div class="sl-ends" aria-hidden="true"><span>${w[0]}</span><span>${w[4]}</span></div>`:''};
 const SNAP=[0,33,67,100],SNAPI=v=>Math.max(0,Math.min(3,Math.round(v*3/100)));
-function slRow(id,key,lab,word,v,min,max,step,set,ends){return `<div class="sl2${set?' set':''}"><label for="${id}"><b>${lab}</b><output>${word}</output></label><div class="sl2c"><input id="${id}" type="range" min="${min}" max="${max}" step="${step}" value="${v}" data-slk="${key}" aria-valuetext="${word}" style="--p:${(v-min)/(max-min)*100}%;--lo:${Math.min(50,v)}%;--hi:${Math.max(50,v)}%">${ends||''}</div></div>`}
+const SLINFO={pace:"Ranks towns on traffic, visitor crowds and noise, with 2020 Census population breaking ties. Slide left for the quietest towns, right for the most going on.",
+bud:"We match your range to typical home prices in each town. Towns inside your range get full credit and lose ground for every step pricier. It's a guide to what's typical, not a search of homes for sale.",
+beach:"Public beach access, sand and water quality, and national beach rankings, which also break ties.",
+charm:"Our local call, scored the same way for every town: a real historic downtown, local spots instead of chains, no wall of condo towers, an old waterfront, older buildings still standing and well kept streets. National Register listings and map data break ties.",
+water:"Counts marinas, boat ramps and docks nearby. Towns with residential canals, a dock out back, are top tier.",
+meet:"Counts the restaurants, cafes, bars, gyms, studios, courts and community centers within a mile of downtown, how walkable the center is, and whether the town is the size where you keep running into people, roughly 8,000 to 80,000.",
+walk:"How many daily needs are within a short walk of the center of town.",
+outdoors:"Paddling launches, blueways and springs, a real surf break, trails and bike paths, nature preserves close by, and outfitters and clubs.",
+airport:"Drive time to the nearest major airport.",
+edu:"Averages the official Florida grades of the nearest public elementary, middle and high schools. Check the official school grades for a specific address."};
+const SLFOOT=k=>k=='pace'||k=='bud'?'':'Every town is ranked 1 to 167. Push it up and it counts in your ranking. All the way up makes it a must have.';
+function slRow(id,key,lab,word,v,min,max,step,set,ends){const inf=SLINFO[key];return `<div class="sl2${set?' set':''}"><label for="${id}"><b>${lab}</b>${inf?`<button type="button" class="sl-i" aria-label="How we rank ${lab}" aria-expanded="false" onclick="event.preventDefault();const r=this.closest('.sl2'),o=r.classList.toggle('inf');this.setAttribute('aria-expanded',o)">i</button>`:''}<output>${word}</output></label><div class="sl2c"><input id="${id}" type="range" min="${min}" max="${max}" step="${step}" value="${v}" data-slk="${key}" aria-valuetext="${word}" style="--p:${(v-min)/(max-min)*100}%;--lo:${Math.min(50,v)}%;--hi:${Math.max(50,v)}%">${ends||''}</div>${inf?`<div class="sl-inf">${inf}${SLFOOT(key)?` <span>${SLFOOT(key)}</span>`:''} <a href="scoring.html">How we score</a></div>`:''}</div>`}
 function slWhere(){const G=Object.entries(LK.COASTS).map(([c,a])=>{const R=LK.REGIONS.filter(r=>r.coast===c);return R.length>1?`<optgroup label="${a[0]}"><option value="${c}"${S.slPc===c&&!S.slPr?' selected':''}>All of the ${a[0]}</option>${R.map(r=>`<option value="r:${r.id}"${S.slPr===r.id?' selected':''}>${r.map}</option>`).join('')}</optgroup>`:`<option value="${c}"${S.slPc===c?' selected':''}>${a[0]}</option>`}).join('');
  return `<label class="sl2-where"><span>Where</span><select id="slwhere"><option value="">Anywhere in Florida</option>${G}</select></label>`}
 function slRender(){
