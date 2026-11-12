@@ -637,7 +637,23 @@ html body #mode .fcgq:not(#x){display:inline-flex!important;position:static!impo
 html body #mode:not(#x){display:flex;align-items:center}
 .cm-hole{position:fixed;z-index:80;border-radius:16px;pointer-events:none;opacity:0;transition:opacity .2s}
 .cm-hole.on{opacity:1;box-shadow:0 0 0 9999px rgba(10,22,24,.5),0 0 0 3px #fff}
-.cm-tip{position:fixed;z-index:81;background:#152A2E;color:#fff;border-radius:14px;padding:14px 16px 12px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:500 14.5px/1.4 'DM Sans',system-ui,sans-serif;opacity:0;pointer-events:none;transform:translateY(6px);transition:opacity .2s,transform .2s}
+
 .cm-tip.on{opacity:1;pointer-events:auto;transform:none}
-.cm-tip p{margin:0}.cm-tip b{font-weight:700}
-.cm-tip .cm-skip{display:block;margin:8px 0 0 auto;background:none;border:0;padding:4px 0;color:rgba(255,255,255,.7);font:600 12.5px 'DM Sans',sans-serif;text-decoration:underline;cursor:pointer;-webkit-appearance:none}
+
+
+/* Nov 12 v7: region names in the water (tap to open), town card CTA fills the row */
+html body #map .sea.rgn{pointer-events:auto;cursor:pointer;fill:#5F8099;letter-spacing:.16em!important;font-weight:600!important;transition:fill .3s}
+html body #map .sea.rgn.on,html body #map .sea.rgn:hover{fill:#152A2E}
+html body #mapbox #pop .pnav:not(#x){display:flex!important;align-items:center;gap:6px}
+html body #mapbox #pop .pnav .go:not(#x){flex:1 1 auto!important;min-width:0!important;justify-content:center;text-align:center}
+
+/* tour cards: frosted like the town cards */
+.cm-tip{position:fixed;z-index:81;background:rgba(250,251,251,.86);-webkit-backdrop-filter:blur(22px) saturate(1.3);backdrop-filter:blur(22px) saturate(1.3);color:#152A2E;border:1px solid rgba(255,255,255,.7);border-radius:18px;padding:15px 17px 11px;box-shadow:0 12px 34px rgba(10,22,24,.22);font:400 14px/1.4 'DM Sans',system-ui,sans-serif;opacity:0;pointer-events:none;transform:translateY(6px);transition:opacity .2s,transform .2s}
+.cm-tip h4{margin:0 0 4px;font:400 21px/1.15 'Libre Caslon Text',Georgia,serif;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
+.cm-tip h4 i{width:10px;height:10px;border-radius:50%;flex:none}
+.cm-tip p{margin:0;color:#3A4A4D}
+.cm-tip p.do{margin-top:8px;font-weight:600;color:#152A2E}
+.cm-tip .cm-skip{display:block;margin:6px 0 0 auto;background:none;border:0;padding:4px 0;color:#6B7678;font:500 12.5px 'DM Sans',sans-serif;text-decoration:underline;text-underline-offset:2px;cursor:pointer;-webkit-appearance:none}
+.cm-tip .cm-ar{display:none;position:absolute;width:14px;height:14px;background:inherit;border:inherit;transform:translateX(-50%) rotate(45deg);-webkit-backdrop-filter:none;backdrop-filter:none}
+.cm-tip.ar .cm-ar{display:block;bottom:-8px;border-top:0;border-left:0;background:rgba(250,251,251,.95)}
+.cm-tip.ar.dn .cm-ar{bottom:auto;top:-8px;border:1px solid rgba(255,255,255,.7);border-bottom:0;border-right:0}
