@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Vibe Map · Florida Coastal</title>
 <link rel="preload" href="/assets/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/caslon-display.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/caslon-text-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/fonts.css?v=3">
 <style>
@@ -466,7 +466,13 @@ html body:is(.vibes,.sliders) #pop .pnav button:not(#x){border:0!important;backg
 html body:is(.vibes,.sliders) #pop .go:not(#x){padding:14px!important;font-size:16px!important;margin-top:0!important}
 html body:is(.vibes,.sliders) #pop .of:not(#x){margin-top:8px!important;font-size:13px!important}
 }
-</style><script src="assets/fc-aka.js"></script></head><body>
+</style><script src="assets/fc-aka.js"></script><style id="safe-top">@media (max-width:760px){
+html body.sheet header:not(#x){height:calc(64px + env(safe-area-inset-top))!important}
+html body.sheet .msearch:not(#x){top:calc(11px + env(safe-area-inset-top))!important}
+html body.sheet .fcm-btn:not(#x){top:calc(32px + env(safe-area-inset-top))!important}
+html body.sheet .zpill.on:not(#x):not(#y){top:calc(78px + env(safe-area-inset-top))!important}
+}</style>
+</head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-black.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
 <nav class="top"><a href="towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="articles/index.html" data-nav="articles">Articles</a></nav>
@@ -514,7 +520,8 @@ function chips(){const cur=curReg();$('rname').textContent=cur>=0?REG[cur][0]:'A
  $('rmenu').innerHTML=`<button data-r="all" class="${cur<0?'on':''}">All of Florida</button>`+G.map(([g,ix])=>`<h6>${g}</h6>`+ix.map(i=>`<button data-r="${i}" class="${i==cur?'on':''}">${REG[i][0]}</button>`).join('')).join('')}
 chips();
 function size(){const r=box.getBoundingClientRect();return [r.width,r.height]}
-const HDR=()=>matchMedia('(max-width:760px)').matches?64:0;
+const SAT=(()=>{let v=0;const f=()=>{const d=document.createElement('div');d.style.cssText='position:fixed;top:0;height:env(safe-area-inset-top);visibility:hidden';document.body.appendChild(d);v=d.offsetHeight||0;d.remove()};if(document.body)f();else addEventListener('DOMContentLoaded',f);return()=>v})();
+const HDR=()=>matchMedia('(max-width:760px)').matches?64+SAT():0;
 function fit(b,pad=.08,raw){const [w,h0]=size(),hd=HDR(),bt=(!raw&&typeof SHON=='function'&&SHON())?PK()+10:0,h=Math.max(160,h0-hd-bt);const r0=fit0(b,pad,w,h);const kk=r0[2]/w;return [r0[0],r0[1]-hd*kk,r0[2],r0[3]+(h0-h-hd+hd)*kk]}
 function fit0(b,pad,w,h){const x0=X(b[0]),x1=X(b[1]),y0=Y(b[3]),y1=Y(b[2]);let bw=(x1-x0)*(1+pad*2),bh=(y1-y0)*(1+pad*2);const ar=w/h;if(bw/bh<ar)bw=bh*ar;else bh=bw/ar;if(bw<MINW){bh*=MINW/bw;bw=MINW}return [(x0+x1)/2-bw/2,(y0+y1)/2-bh/2,bw,bh]}
 const ALL=[-87.75,-79.75,24.4,31.1];const MINW=150;
@@ -733,7 +740,7 @@ function slPanTo(t){if(!t)return;const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])
 const SHEET={st:'peek',y:0};
 const SHON=()=>document.body.classList.contains('sheet');
 function PK(){if(S.mode!='vibes')return 132;const r=$('res'),tl=$('vp')&&$('vp').querySelector('.tiles.vt');if(!r||!tl)return 300;const pr=r.getBoundingClientRect(),tb=tl.getBoundingClientRect();return Math.min(380,Math.round(tb.top-pr.top+Math.min(tb.height,140)+16))}
-function shStops(){const vh=innerHeight;return {peek:vh-PK(),half:Math.round(vh*.44),full:60}}
+function shStops(){const vh=innerHeight;return {peek:vh-PK(),half:Math.round(vh*.44),full:60+SAT()}}
 function SHRES(){const vh=innerHeight,pe=$('pop');if(SHEET.st=='peek')return PK()+(pe&&pe.classList.contains('on')?pe.offsetHeight+12:0)+14;return vh-shStops()[SHEET.st]+14}
 function shApply(y,anim){const r=$('res');SHEET.y=y;r.style.transition=anim?'transform .32s cubic-bezier(.2,.8,.2,1)':'none';r.style.transform=`translate3d(0,${y}px,0)`;
  const st=shStops(),pe=$('pop');if(pe){const o=Math.max(0,Math.min(1,(y-st.half)/(st.peek-st.half-40)));pe.style.opacity=o;pe.style.pointerEvents=o<.5?'none':''}}
