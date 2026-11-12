@@ -659,3 +659,6 @@ html body #mapbox #pop .pnav .go:not(#x){flex:1 1 auto!important;min-width:0!imp
 .cm-tip.ar.dn .cm-ar{bottom:auto;top:-8px;border:1px solid rgba(255,255,255,.7);border-bottom:0;border-right:0}
 /* pulled up sheet: the X gets its own row above the tabs (no overlap with ?) */
 html body.sheet #res.sh-up .mode:not(#x):not(#y){margin-top:30px!important}
+/* Nov 12: quieter roads, the way Compass keeps the base map in the background */
+html body #map:not(.zin) .terr .mr1:not(#x){stroke:#ECE7DE!important;opacity:.55}
+html body #map:not(.zin) .terr .mr2:not(#x){stroke:#fff!important;opacity:.6;stroke-width:calc(var(--k)*1px)!important}
