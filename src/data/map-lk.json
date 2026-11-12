@@ -1,0 +1,336 @@
+{
+ "SL_WORDS": {
+  "afford": [
+   "Price is no issue",
+   "Price matters a little",
+   "Either way",
+   "Want good value",
+   "Most house for the money"
+  ],
+  "beach": [
+   "Any beach is fine",
+   "Some sand nearby",
+   "Either way",
+   "A real sandy beach nearby",
+   "Nationally ranked beaches"
+  ],
+  "quiet": [
+   "Doesn't matter",
+   "A little quieter",
+   "Either way",
+   "A quiet town",
+   "As quiet as it gets"
+  ],
+  "walk": [
+   "Happy to drive",
+   "A few things on foot",
+   "Either way",
+   "Walk to coffee and dinner",
+   "Walk everywhere"
+  ],
+  "water": [
+   "Not a boater",
+   "Water nearby is nice",
+   "Either way",
+   "Want to be on the water",
+   "Live right on the water"
+  ],
+  "airport": [
+   "Don't fly much",
+   "An airport within reach",
+   "Either way",
+   "I fly often",
+   "Airport close by"
+  ],
+  "nightlife": [
+   "Early nights",
+   "A night out now and then",
+   "Either way",
+   "Out most weekends",
+   "Lots of nightlife"
+  ],
+  "meet": [
+   "Happy on my own",
+   "A few good spots",
+   "Either way",
+   "Good food, easy to meet people",
+   "Always something going on"
+  ],
+  "charm": [
+   "Doesn't matter",
+   "A little character",
+   "Either way",
+   "A charming town",
+   "Full of charm"
+  ],
+  "dining": [
+   "Simple is fine",
+   "A few good spots",
+   "Either way",
+   "Good restaurants",
+   "Great food and arts"
+  ],
+  "outdoors": [
+   "Not a priority",
+   "Some trails and paddling",
+   "Either way",
+   "Outside a lot",
+   "Paddle, surf or ride every day"
+  ],
+  "edu": [
+   "Not a factor",
+   "Schools matter a little",
+   "Either way",
+   "Good schools",
+   "Top rated schools"
+  ]
+ },
+ "PACE2": [
+  "As quiet as it gets",
+  "A quiet town",
+  "Either way",
+  "A lively town",
+  "Lots going on"
+ ],
+ "BUDW": [
+  "Any price",
+  "$1.5M and up",
+  "$750K to $1.5M",
+  "$500K to $750K",
+  "$350K to $500K",
+  "Under $350K"
+ ],
+ "BUDSET": [
+  [
+   null,
+   0
+  ],
+  [
+   4,
+   0
+  ],
+  [
+   3,
+   30
+  ],
+  [
+   2,
+   50
+  ],
+  [
+   1,
+   70
+  ],
+  [
+   0,
+   90
+  ]
+ ],
+ "CATMULT": {
+  "afford": 1.5
+ },
+ "RANK_N": 167,
+ "BUDGET_W": 9,
+ "BUDGET_MISS": {
+  "1": 0.7,
+  "2": 0.45,
+  "3": 0.3
+ },
+ "SLX": 0.4444444444444444,
+ "WHY": {
+  "lively": "things going on",
+  "edu": "schools",
+  "nightlife": "nightlife",
+  "meet": "restaurants and community",
+  "charm": "coastal charm",
+  "quiet": "peace and quiet",
+  "walk": "walkability",
+  "water": "the water",
+  "beach": "beaches",
+  "dining": "dining",
+  "outdoors": "active outdoors",
+  "afford": "price",
+  "airport": "the airport"
+ },
+ "REGIONS": [
+  {
+   "id": "emerald-coast",
+   "coast": "panhandle",
+   "map": "Pensacola and the Emerald Coast"
+  },
+  {
+   "id": "forgotten-coast",
+   "coast": "panhandle",
+   "map": "The Forgotten Coast"
+  },
+  {
+   "id": "nature-coast",
+   "coast": "gulf",
+   "map": "The Nature Coast and Big Bend"
+  },
+  {
+   "id": "st-pete-clearwater",
+   "coast": "gulf",
+   "map": "St. Pete and the Clearwater Beaches"
+  },
+  {
+   "id": "tampa-south-shore",
+   "coast": "gulf",
+   "map": "Tampa and the South Shore"
+  },
+  {
+   "id": "sarasota-bradenton",
+   "coast": "gulf",
+   "map": "Sarasota, Bradenton and Venice"
+  },
+  {
+   "id": "fort-myers-sanibel",
+   "coast": "gulf",
+   "map": "Fort Myers, Sanibel and Charlotte Harbor"
+  },
+  {
+   "id": "naples-marco",
+   "coast": "gulf",
+   "map": "Naples, Marco Island and the Everglades"
+  },
+  {
+   "id": "florida-keys",
+   "coast": "keys",
+   "map": "The Florida Keys"
+  },
+  {
+   "id": "miami-fort-lauderdale",
+   "coast": "atlantic",
+   "map": "Miami and Fort Lauderdale"
+  },
+  {
+   "id": "palm-beaches",
+   "coast": "atlantic",
+   "map": "The Palm Beaches"
+  },
+  {
+   "id": "treasure-coast",
+   "coast": "atlantic",
+   "map": "The Treasure Coast"
+  },
+  {
+   "id": "space-coast",
+   "coast": "atlantic",
+   "map": "The Space Coast"
+  },
+  {
+   "id": "daytona-flagler",
+   "coast": "atlantic",
+   "map": "Daytona, New Smyrna and Flagler"
+  },
+  {
+   "id": "first-coast",
+   "coast": "atlantic",
+   "map": "The First Coast"
+  }
+ ],
+ "COASTS": {
+  "panhandle": [
+   "Panhandle",
+   "--pan"
+  ],
+  "gulf": [
+   "Gulf Coast",
+   "--gulf"
+  ],
+  "atlantic": [
+   "Atlantic Coast",
+   "--atl"
+  ],
+  "keys": [
+   "Florida Keys",
+   "--keys"
+  ]
+ },
+ "VSHORT": {
+  "oldfl": "Old Florida",
+  "dock": "Dock of the Bay",
+  "island": "Island Life",
+  "sophcalm": "Sophisticated Laid Back",
+  "sophhigh": "High Energy",
+  "social": "Social Scene",
+  "active": "Active Outdoors",
+  "bluezone": "Healthy Living",
+  "walk": "Walkable",
+  "remote": "Remote Work",
+  "beaches": "Best Beaches",
+  "afford": "Affordable"
+ },
+ "VFEEL": [
+  "beaches",
+  "oldfl",
+  "bluezone",
+  "island",
+  "dock",
+  "sophhigh",
+  "social",
+  "sophcalm",
+  "active",
+  "walk",
+  "afford",
+  "remote"
+ ],
+ "VGUIDE": {
+  "social": "a-social-scene",
+  "active": "active-outdoors",
+  "afford": "affordable-homes",
+  "dock": "dock-life",
+  "bluezone": "healthy-living",
+  "island": "island-life",
+  "oldfl": "old-florida-charm",
+  "sophcalm": "quiet-luxury",
+  "remote": "remote-work",
+  "beaches": "top-rated-beaches",
+  "sophhigh": "upscale-city-energy",
+  "walk": "walkability"
+ },
+ "NBUD": [
+  [
+   0,
+   "Any price"
+  ],
+  [
+   350,
+   "Under $350K"
+  ],
+  [
+   500,
+   "Under $500K"
+  ],
+  [
+   750,
+   "Under $750K"
+  ]
+ ],
+ "CATS": [
+  "nightlife",
+  "meet",
+  "quiet",
+  "walk",
+  "water",
+  "beach",
+  "dining",
+  "outdoors",
+  "afford",
+  "airport"
+ ],
+ "VSUBL": {
+  "oldfl": "Fish houses, bait shops and no hurry",
+  "dock": "Life on and around the water",
+  "island": "Barefoot, small and slow",
+  "sophcalm": "Polished, peaceful and easy",
+  "sophhigh": "Polished with a pulse",
+  "social": "Bars, events and a crowd",
+  "active": "Trails, paddling and bikes",
+  "bluezone": "Long walks, time outside, friendly faces",
+  "walk": "Daily life on foot",
+  "remote": "Pretty towns near an airport, without the city",
+  "beaches": "Nationally ranked sand",
+  "afford": "More house for the money"
+ }
+}

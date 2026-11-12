@@ -1,0 +1,115 @@
+{
+ "data": {
+  "t-d8ec905c": {
+   "name": "T",
+   "kind": "const",
+   "format": "json",
+   "file": "towns.json",
+   "pages": [
+    "map",
+    "quiz"
+   ]
+  },
+  "ld-c286bea7": {
+   "name": "LD",
+   "kind": "const",
+   "format": "json",
+   "file": "map-ld.json",
+   "pages": [
+    "map"
+   ]
+  },
+  "lk-bd08ed5d": {
+   "name": "LK",
+   "kind": "const",
+   "format": "json",
+   "file": "map-lk.json",
+   "pages": [
+    "map"
+   ]
+  },
+  "rcopy-b260f9e8": {
+   "name": "RCOPY",
+   "kind": "const",
+   "format": "json",
+   "file": "map-rcopy.json",
+   "pages": [
+    "map"
+   ]
+  },
+  "sq-c718ecc1": {
+   "name": "SQ",
+   "kind": "const",
+   "format": "json",
+   "file": "quiz-sq.json",
+   "pages": [
+    "quiz"
+   ]
+  },
+  "qd-bad25108": {
+   "name": "QD",
+   "kind": "const",
+   "format": "json",
+   "file": "quiz-qd.json",
+   "pages": [
+    "quiz"
+   ]
+  },
+  "td-ef36a1f7": {
+   "name": "TD",
+   "kind": "const",
+   "format": "json",
+   "file": "results-td.json",
+   "pages": [
+    "results"
+   ]
+  },
+  "d-74936a84": {
+   "name": "D",
+   "kind": "const",
+   "format": "json",
+   "file": "compare-d.json",
+   "pages": [
+    "compare"
+   ]
+  },
+  "t-e30b662f": {
+   "name": "T",
+   "kind": "const",
+   "format": "json",
+   "file": "beach-towns-t.json",
+   "pages": [
+    "beach-towns"
+   ]
+  },
+  "ar-95f204d0": {
+   "name": "AR",
+   "kind": "const",
+   "format": "json",
+   "file": "beach-towns-ar.json",
+   "pages": [
+    "beach-towns"
+   ]
+  },
+  "ta-96ae302a": {
+   "name": "TA",
+   "kind": "const",
+   "format": "json",
+   "file": "beach-towns-ta.json",
+   "pages": [
+    "beach-towns"
+   ]
+  }
+ },
+ "assets": [
+  "/assets/dm-titles.js?v=6",
+  "/assets/fc-aka.js",
+  "/assets/fc-connect.js",
+  "/assets/fc-menu.js?v=6",
+  "/assets/footer-v2.css",
+  "/assets/site-redesign.css",
+  "/assets/site.ba170a6c57.css",
+  "/assets/town-m.css?v=1",
+  "/img/map/fl-compass-noband.js?v=4"
+ ]
+}

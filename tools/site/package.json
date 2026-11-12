@@ -1,0 +1,15 @@
+{
+  "name": "florida-coastal-site-build",
+  "private": true,
+  "description": "Builds the redesign pages from src/. Run from this folder: npm install, then npm run site.",
+  "scripts": {
+    "extract": "node extract.js",
+    "site": "node build.js",
+    "check": "cd ../.. && python3 tools/visual_check.py snap after && python3 tools/visual_check.py diff before after"
+  },
+  "devDependencies": {
+    "acorn": "^8.14.0",
+    "csso": "^5.0.5",
+    "terser": "^5.36.0"
+  }
+}

@@ -75,6 +75,7 @@ async def snap(label, port, only):
                 pg.on('requestfinished', lambda r: inflight.discard(r))
                 pg.on('requestfailed', lambda r: inflight.discard(r))
                 await pg.clock.install(time=1794470400000)
+                await pg.clock.pause_at(1794470401000)
                 e = []
                 pg.on('pageerror', lambda x: e.append('pageerror: ' + str(x)[:200]))
                 pg.on('console', lambda m: e.append('console: ' + m.text[:200]) if m.type == 'error' else None)
