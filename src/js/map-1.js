@@ -513,19 +513,20 @@ PK0=function(){const r=$('res'),m=r&&r.querySelector('.mode');if(!r||!m||!SHON()
  function tHide(){if(TT.dim){TT.dim.classList.remove('on','pl','ring');TT.tip.classList.remove('on','mv','st2')}}
  function tEnd(skip){TT.k=null;TT.step=0;tHide();try{sessionStorage.setItem(KEY(G.k||kindNow()),'1')}catch(_){}const q=qBtn();q.classList.toggle('on',!S.pop);later()}
  function tour(k){TT.k=k;TT.step=1;const p=$('pop');p.dataset.intro='';p.classList.remove('on');if(SHON()&&SHEET.st!='peek')shSet('peek',true);
-  setTimeout(()=>{if(k=='sliders'){const el=PH()?$('res'):$('sl');tPlace(el,tHTML(1,'What matters most?',PH()?'Pull this panel up. Each slider is one priority.':'Each slider is one priority.','Move one ↓'))}
+  setTimeout(()=>{if(k=='sliders'){const el=PH()?$('res'):$('sl');tPlace(el,tHTML(1,'What matters most?','Each slider is one priority.',PH()?'Pull up and move one ↑':'Move one →'))}
    else{const el=document.querySelector('#vp .tiles.vt');tPlace(el,k=='regions'?tHTML(1,'Florida has seven coasts.','Each stretch has its own water, towns and pace.','Pick one below ↓'):tHTML(1,'Find your kind of coast.','Every town is tagged with the feel it has.','Pick one below ↓'))}},SHON()?380:60)}
  function tStep2(){if(!TT.k||TT.step!=1)return;TT.step=2;const sl=TT.k=='sliders';
-  setTimeout(()=>{const el=tDot(sl);tPlace(el,tHTML(2,'Now pick a town.',sl?'Tap the number for a closer look.':'Tap this town for a closer look.',''),!el,!!el)},SHON()?620:360)}
+  setTimeout(()=>{if(sl&&S.pop)closePop();const el=tDot(sl);tPlace(el,sl?tHTML(2,'Your #1 for what you picked.','Tap it for a closer look.',''):tHTML(2,'Now pick a town.','Tap this town for a closer look.',''),!el,!!el)},SHON()?620:360)}
  function tDot(sl){const pe=$('pop'),pt=pe&&pe.classList.contains('on')?pe.getBoundingClientRect().top:innerHeight,ok=e=>{const r=e.getBoundingClientRect();return r.width&&r.top>120&&r.bottom<pt-20&&r.left>30&&r.right<innerWidth-30};
   if(sl){const id=S.top&&S.top[0];const e=id&&document.querySelector(`#ov .pp[data-id="${id}"] circle`);return e&&ok(e)?e:null}
   const L=vOrder();for(const t of L){const e=document.querySelector(`#ov circle.dot[data-id="${t.id}"]`);if(e&&ok(e))return e}return null}
- window.addEventListener('input',e=>{if(TT.k=='sliders'&&TT.step==1&&e.target.closest&&e.target.closest('#sl')){clearTimeout(TT.tm);TT.tm=setTimeout(tStep2,500)}},true);
+ window.addEventListener('input',e=>{if(TT.k=='sliders'&&TT.step==1&&e.target.closest&&e.target.closest('#sl')){tHide();if(!SHON()){clearTimeout(TT.tm);TT.tm=setTimeout(tStep2,900)}}},true);
  // tap the dimmed area to skip; Esc skips on desktop
- document.addEventListener('pointerdown',e=>{if(!TT.k||TT.step!=1)return;const t=e.target;if(t.closest&&(t.closest('.cm-tip')))return;
+ document.addEventListener('pointerdown',e=>{if(!TT.k||TT.step!=1)return;const t=e.target;if(t.closest&&(t.closest('.cm-tip')||t.closest('.sl-see')))return;
   if(TT.k=='sliders'&&PH()&&t.closest&&t.closest('#res')){tHide();return}
   const r=TT.dim&&TT.dim.getBoundingClientRect();if(r&&e.clientX>=r.left&&e.clientX<=r.right&&e.clientY>=r.top&&e.clientY<=r.bottom)return;tEnd(true)},true);
  addEventListener('keydown',e=>{if(e.key=='Escape'&&TT.k)tEnd(true)});
+ addEventListener('fc-sl-see',()=>{if(TT.k=='sliders'&&TT.step==1)setTimeout(tStep2,200)});
  addEventListener('resize',()=>{if(TT.k)tHide()});
  // Region and style card: what you picked, in the town card spot
  const RTAG={'panhandle':'Sugar white sand and the quiet Forgotten Coast','nature-coast-r':'Springs, scallops and fishing villages','tampa-bay':'Beaches, a big city and bayside downtowns','southwest':'Sunset beaches, islands and the Everglades','south-keys':'Big city beaches, Palm Beach and the Keys','treasure-space':'Quiet beach towns and rocket launches','northeast':'Old St. Augustine, wide beaches and Daytona'};
@@ -558,3 +559,8 @@ PK0=function(){const r=$('res'),m=r&&r.querySelector('.mode');if(!r||!m||!SHON()
  const sm2=window.setMode;window.setMode=setMode=function(){if(TT.k){TT.k=null;TT.step=0;tHide()}return sm2.apply(this,arguments)};
  setTimeout(show,900);
 })();
+
+// Nov 12: phone Slider Map, Apple filter style. Once a slider moves, "See your top 5 →" pins to the bottom; it drops the panel and shows the map
+(function(){const b=document.createElement('button');b.type='button';b.className='sl-see';b.innerHTML='See your top 5 <span>→</span>';document.body.appendChild(b);
+ b.onclick=()=>{shSet('peek');window.dispatchEvent(new CustomEvent('fc-sl-see'))};
+ const up=()=>{const on=SHON()&&S.mode=='sliders'&&SHEET.st!='peek'&&slAnySet();b.classList.toggle('on',on)};setInterval(up,300);up()})();
