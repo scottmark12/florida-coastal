@@ -621,5 +621,5 @@ html body #mapbox #pop .bintro .eb .how:not(#x):not(#y){position:static!importan
 html body #mapbox #pop .bintro .go:not(#x){white-space:nowrap}
 .fcgq{position:absolute;z-index:30;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.94);box-shadow:0 2px 10px rgba(0,0,0,.14);color:#152A2E;font:600 18px 'DM Sans',sans-serif;cursor:pointer;display:none;align-items:center;justify-content:center}
 .fcgq.on{display:flex}
-@media (max-width:760px){.fcgq{position:fixed;right:16px;top:calc(env(safe-area-inset-top,0px) + 140px)}}
+@media (max-width:760px){.fcgq{position:fixed;right:14px;top:calc(env(safe-area-inset-top,0px) + 236px)}html body .map .zoom:not(#x):not(#y){top:calc(env(safe-area-inset-top,0px) + 124px)!important}}
 @media (min-width:761px){.fcgq{left:16px;bottom:16px}}

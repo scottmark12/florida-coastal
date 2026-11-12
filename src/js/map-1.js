@@ -263,7 +263,7 @@ function slPanTo(t){if(!t)return;const[w,h]=size(),v=S.vb,k=v[2]/w,sx=(t.x-v[0])
 const SHEET={st:'peek',y:0};
 const SHON=()=>document.body.classList.contains('sheet');
 const IOSB=()=>(/iPhone|iPod/.test(navigator.userAgent)&&!navigator.standalone&&matchMedia('(max-width:760px)').matches)?72:0;
-function PK(){return PK0()+IOSB()}
+function PK(){return PK0()+(IOSB()?8:0)}/* Nov 12: iOS Safari's floating bar no longer eats the layout viewport, so the old 72px pad left a blank band */
 function PK0(){return 132;const r=$('res'),tl=$('vp')&&$('vp').querySelector('.tiles.vt');if(!r||!tl)return 300;const pr=r.getBoundingClientRect(),tb=tl.getBoundingClientRect();return Math.min(380,Math.round(tb.top-pr.top+Math.min(tb.height,140)+16))}
 function shStops(){const vh=innerHeight;return {peek:vh-PK(),half:Math.round(vh*.44),full:60+SAT()}}
 function SHRES(){const vh=innerHeight,pe=$('pop');if(SHEET.st=='peek')return PK()+(pe&&pe.classList.contains('on')?pe.offsetHeight+12:0)+14;return vh-shStops()[SHEET.st]+14}
