@@ -503,8 +503,10 @@ html body .vm-lf:not(#x):not(#y) p{display:none}
 .vdemo b{font-weight:600}
 .vdemo span{color:#6B7678}
 html body #vp .tile.demo:not(#x){box-shadow:0 0 0 3px var(--dc)!important}
-#map .dd{animation:ddin .5s ease-out}
-@keyframes ddin{from{opacity:0}to{opacity:1}}
+#map .dd{transform-box:fill-box;transform-origin:center;animation:ddpop .55s cubic-bezier(.3,1.7,.5,1) both}
+@keyframes ddpop{0%{opacity:0;transform:scale(.2)}100%{opacity:1;transform:scale(1)}}
+#map .ddh{transform-box:fill-box;transform-origin:center;pointer-events:none;opacity:0;animation:ddh 1.4s ease-out infinite}
+@keyframes ddh{0%{opacity:.55;transform:scale(.35)}100%{opacity:0;transform:scale(1.5)}}
 @media (max-width:760px){.vdemo{top:calc(72px + env(safe-area-inset-top));left:50%;transform:translate(-50%,-4px)}.vdemo.on{transform:translate(-50%,0)}}
 </style>
 </head><body>
@@ -590,7 +592,7 @@ function render(fast){
   let r=any?(m?5.5:3):(sg?5:(zoomed?4.5:3));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.8));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#6B7678');
   if(pin(t))r=7;
   const dm=S.mode=='vibes'&&!S.style&&S.demo&&t.v.includes(S.demo),vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:dm?VCOL[S.demo]:null;
-  if(vc){const rr=pin(t)?7:5;s+=`<circle class="dot${dm?' dd':''}" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${rr*k}" fill="${vc}" stroke="#fff" stroke-width="${2.2*k}" style="filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.25))"/>`}
+  if(vc){const rr=pin(t)?7:dm?6:5;if(dm)s+=`<circle class="ddh" cx="${t.x}" cy="${t.y}" r="${13*k}" fill="${vc}" style="animation-delay:${((t.o||t.x|0)*137)%1400}ms"/>`;s+=`<circle class="dot${dm?' dd':''}" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${rr*k}" fill="${vc}" stroke="#fff" stroke-width="${2.2*k}" style="filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.25))"/>`}
   else s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(S.mode=='vibes'&&S.style&&!m?(sg?4.5:3.2):r)*k}" fill="${S.mode=='vibes'&&S.style&&!m?'#152A2E':fill}" ${S.mode=='vibes'&&S.style&&!m?'fill-opacity=".55"':''} opacity="${op}" stroke="#fff" stroke-width="${(r>3?2:1)*k}"/>`});
  CL.forEach(c=>{const L=c[0],n=c.length,bx=(L.x-v[0])/k,by=(L.y-v[1])/k;boxes.push([bx-16,by-16,32,32]);s+=`<g class="clu" data-ids="${c.map(t=>t.id).join(',')}" style="cursor:pointer"><circle cx="${L.x}" cy="${L.y}" r="${13*k}" fill="${VCOL[S.style]||'#152A2E'}" stroke="#fff" stroke-width="${2.4*k}" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,.3))"/><text x="${L.x}" y="${L.y+4.6*k}" text-anchor="middle" font-size="${13*k}" font-weight="600" fill="#fff" style="font-family:var(--mapf);pointer-events:none">${n}</text></g>`});
  // labels: pinned first, then matched sig, then matched zoomed
@@ -913,14 +915,13 @@ setTimeout(()=>{S.navReady=1;const q=new URLSearchParams(location.search);if(q.g
 S.booted=1;
 if(params.get('open')){const t=T.find(t=>t.id==params.get('open'));if(t)setTimeout(()=>{S.restoring=1;openPop(t);setTimeout(()=>{S.restoring=0},300)},450)}
 
-// ---- Nov 11: the Vibe Map landing cycles through each style, lighting its towns, until the visitor touches anything ----
-(function(){const RM=matchMedia('(prefers-reduced-motion: reduce)').matches,box=$('mapbox');if(!box)return;const cap=document.createElement('div');cap.className='vdemo';cap.setAttribute('aria-hidden','true');box.appendChild(cap);
- let i=0,stop=false,tm=null;const on=()=>S.mode=='vibes'&&S.sub=='styles'&&!S.style&&!S.pop&&!stop&&!document.hidden;
+// ---- Nov 11: the Vibe Map landing cycles through each style, twinkling its towns in its color. Keeps going until a style or town is picked; a touch only pauses it for a few seconds ----
+(function(){const box=$('mapbox');if(!box)return;const cap=document.createElement('div');cap.className='vdemo';cap.setAttribute('aria-hidden','true');box.appendChild(cap);
+ let i=0,hold=0,over=false;const on=()=>S.mode=='vibes'&&S.sub=='styles'&&!S.style&&!S.pop&&!document.hidden;
  const show=k=>{S.demo=k;const n=k?T.filter(t=>t.v.includes(k)).length:0;if(k)cap.innerHTML=`<i style="background:${VCOL[k]}"></i><b>${VIBES[k]}</b><span>${n} towns</span>`;cap.classList.toggle('on',!!k);
-  document.querySelectorAll('#vp .tile').forEach(b=>{const m=!!k&&b.dataset.k==k;b.classList.toggle('demo',m);if(m){b.style.setProperty('--dc',VCOL[k]);const r=b.parentElement;if(matchMedia('(max-width:760px)').matches&&r)r.scrollTo({left:b.offsetLeft-16,behavior:'smooth'})}});render()};
- const tick=()=>{if(!on()){if(S.demo)show(null);return}const K=LK.VFEEL;show(K[i%K.length]);i++};
- const end=()=>{if(stop)return;stop=true;clearInterval(tm);if(S.demo)show(null)};
- if(!RM)setTimeout(()=>{if(stop)return;tick();tm=setInterval(tick,2800)},1200);
- ['pointerdown','wheel','keydown','touchstart'].forEach(ev=>addEventListener(ev,end,{passive:true,capture:true}));
- $('vp')&&$('vp').addEventListener('mouseover',e=>{if(e.target.closest('.tile'))end()})})();
+  document.querySelectorAll('#vp .tile').forEach(b=>{const m=!!k&&b.dataset.k==k;b.classList.toggle('demo',m);if(m){b.style.setProperty('--dc',VCOL[k]);const r=b.parentElement;if(matchMedia('(max-width:760px)').matches&&r&&performance.now()>hold)r.scrollTo({left:b.offsetLeft-16,behavior:'smooth'})}});render()};
+ const tick=()=>{if(!on()){if(S.demo)show(null);return}if(over||performance.now()<hold)return;const K=LK.VFEEL;show(K[i%K.length]);i++};
+ setTimeout(tick,500);setInterval(tick,2200);
+ ['pointerdown','wheel','touchstart'].forEach(ev=>addEventListener(ev,()=>{hold=performance.now()+5000},{passive:true,capture:true}));
+ const vp=$('vp');if(vp){vp.addEventListener('mouseover',e=>{over=!!e.target.closest('.tile')});vp.addEventListener('mouseleave',()=>{over=false})}})();
 </script><script>(function(){const m=new URLSearchParams(location.search).get("mode");document.querySelectorAll("nav.top a").forEach(a=>a.classList.toggle("on",(m==="vibes"&&a.dataset.nav==="vibes")||(m==="sliders"&&a.dataset.nav==="sliders")))})()</script><script src="/assets/fc-menu.js?v=6" defer></script></body></html>
