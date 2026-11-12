@@ -13,6 +13,7 @@ const SRC = path.join(ROOT, 'src');
 const OUT = path.join(ROOT, 'assets', 'v3');
 const { PAGES } = require('./pages');
 const images = require('./images');
+const towns = require('./towns');
 
 const h10 = s => crypto.createHash('sha1').update(s).digest('hex').slice(0, 10);
 const write = (p, s) => { fs.mkdirSync(path.dirname(p), { recursive: true }); fs.writeFileSync(p, s); };
@@ -85,7 +86,8 @@ async function main() {
   };
   let n = 0;
   for (const rel of Object.keys(PAGES)) { write(path.join(ROOT, rel), await fill(read(path.join(SRC, 'pages', rel)), rel)); n++; }
-  for (const f of fs.readdirSync(path.join(SRC, 'towns')).sort()) { write(path.join(ROOT, 'towns', f), await fill(read(path.join(SRC, 'towns', f)), f)); n++; }
+  const townTpl = read(path.join(SRC, 'templates', 'town.html'));
+  for (const f of fs.readdirSync(path.join(SRC, 'towns')).sort()) { write(path.join(ROOT, 'towns', f), await fill(towns.render(path.join(SRC, 'towns', f), townTpl), f)); n++; }
   console.log(`built ${n} pages, ${Object.keys(url).length} assets into /assets/v3`);
 }
 main().catch(e => { console.error(e); process.exit(1); });

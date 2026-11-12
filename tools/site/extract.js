@@ -66,9 +66,21 @@ function splitData(code) {
 const TOKEN = /<style\b([^>]*)>([\s\S]*?)<\/style>|<script\b([^>]*)>([\s\S]*?)<\/script>|<link\b([^>]*)>/gi;
 const attr = (a, n) => { const m = new RegExp(`\\b${n}\\s*=\\s*("([^"]*)"|'([^']*)'|([^\\s>]+))`, 'i').exec(a || ''); return m ? (m[2] ?? m[3] ?? m[4]) : null; };
 
+// Pages are read from a git commit (default: the branch tip), never from the working folder,
+// so running extract after a build still reads the original inline pages.
+//   node tools/site/extract.js --from origin/redesign-preview
+const FROM = process.argv.includes('--from') ? process.argv[process.argv.indexOf('--from') + 1] : null;
+function readOriginal(rel) {
+  if (!FROM) return fs.readFileSync(path.join(ROOT, rel), 'utf8');
+  return require('child_process').execFileSync('git', ['show', `${FROM}:${rel}`], { cwd: ROOT, encoding: 'utf8', maxBuffer: 64 << 20 });
+}
+function listTowns() {
+  if (!FROM) return fs.readdirSync(path.join(ROOT, 'towns'));
+  return require('child_process').execFileSync('git', ['ls-tree', '--name-only', `${FROM}:towns`], { cwd: ROOT, encoding: 'utf8' }).split('\n');
+}
+
 function extractPage(rel, key, shared) {
-  const file = path.join(ROOT, rel);
-  let html = fs.readFileSync(file, 'utf8');
+  let html = readOriginal(rel);
   if (html.includes('/assets/v3/')) throw new Error(`${rel} is already a built page. Extract only runs on pages with inline styles and code (git checkout the page first).`);
   const baseHref = (/<base\s+href="([^"]*)"/i.exec(html) || [])[1];
   const docDir = new URL(baseHref || '', new URL(rel, 'http://site/')).href;
@@ -140,6 +152,7 @@ function main() {
   fs.rmSync(path.join(SRC, 'css'), { recursive: true, force: true });
   fs.rmSync(path.join(SRC, 'js'), { recursive: true, force: true });
   fs.rmSync(path.join(SRC, 'data'), { recursive: true, force: true });
+  fs.rmSync(path.join(SRC, 'towns'), { recursive: true, force: true });
   const shared = { assets: new Set(), data: {}, cssRuns: [], townJs: {} };
   for (const [rel, key] of Object.entries(PAGES)) {
     shared.townCss = false; shared.cssRuns = [];
@@ -148,7 +161,7 @@ function main() {
     for (const r of shared.cssRuns) write(path.join(SRC, 'css', r.name + '.css'), r.css.join('\n'));
   }
   // Town pages share one stylesheet; check every page really has the same one.
-  const towns = fs.readdirSync(path.join(ROOT, 'towns')).filter(isTownPage).sort();
+  const towns = listTowns().filter(isTownPage).sort();
   let townCss = null;
   for (const f of towns) {
     shared.townCss = true; shared.cssRuns = [];
@@ -158,6 +171,7 @@ function main() {
     write(path.join(SRC, 'towns', f), html);
   }
   write(path.join(SRC, 'css', 'town.css'), townCss);
+  require('./towns').split();
   for (const [k, d] of Object.entries(shared.data)) {
     const pages = [...new Set(d.pages)];
     const base = pages.length > 1 ? (d.name === 'T' ? 'towns' : d.name.toLowerCase()) : `${pages[0]}-${d.name.toLowerCase()}`;
