@@ -598,3 +598,28 @@ html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .go{padding:0 12px!importa
 html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .pnav button{width:32px!important;height:38px!important;flex:none;padding:0!important}
 html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .x{width:30px!important;height:30px!important;top:8px!important;right:8px!important;font-size:18px!important}
 html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .rkb{transform:scale(.85);transform-origin:top left}}
+/* ---- Nov 12 (v4): closed sheet shows one row of square photo tiles (Vibe Map and Regions), X on half and full, guide card ---- */
+html body.sheet.vibes #res:not(.sh-up) .vp .vchips:not(#x){display:none!important}
+html body.sheet.vibes #res:not(.sh-up) .vp>*:not(.tiles):not(#x){display:none!important}
+html body.sheet.vibes #res:not(.sh-up) .vp>.tiles.vt:not(#x){visibility:visible!important;margin:4px -20px 0!important;padding:4px 20px 4px!important;gap:10px!important;scroll-padding:0 20px}
+html body.sheet.vibes #res:not(.sh-up) .vp .tiles.vt:not(#x) .tile{flex:0 0 92px!important;width:92px!important}
+html body.sheet.vibes #res:not(.sh-up) .vp .tiles.vt:not(#x) .tile .ph{aspect-ratio:1/1!important;height:92px!important;border-radius:12px!important}
+html body.sheet.vibes #res:not(.sh-up) .vp .tiles.vt:not(#x) .tile .tt{left:7px!important;right:6px!important;bottom:7px!important}
+html body.sheet.vibes #res:not(.sh-up) .vp .tiles.vt:not(#x) .tile .tt b{font-size:12.5px!important;line-height:1.12!important;font-weight:600!important;display:block}
+html body.sheet.vibes #res:not(.sh-up) .vp .tiles.vt:not(#x) .tile .ph i{top:5px!important;left:5px!important;font-size:11px!important;padding:2px 6px 2px 5px!important}
+html body.sheet.vibes #res:not(.sh-up) .vp .tiles.vt:not(#x) .tile .ph i span{width:7px!important;height:7px!important;margin-right:4px!important}
+html body.sheet.vibes #res:not(.sh-up) .vp .tiles.vt:not(#x) .tile.on .ph{box-shadow:0 0 0 2px #fff,0 0 0 4px #152A2E!important}
+html body.sheet #res .vp .tiles.vt .tile .ph::after{content:'';position:absolute;inset:0;border-radius:inherit;background:linear-gradient(180deg,transparent 45%,rgba(0,0,0,.55));pointer-events:none}
+html body.sheet #res .vp .tiles.vt .tile .ph{position:relative}
+html body.sheet #res .vp .tiles.vt .tile .tt,html body.sheet #res .vp .tiles.vt .tile .ph i{z-index:1}
+/* X whenever the sheet is pulled up (half or full) */
+html body.sheet #res.sh-up .shx:not(#x){display:flex;position:sticky;top:10px;margin:0 0 -36px auto;z-index:6;width:36px;height:36px;border-radius:50%;border:0;align-items:center;justify-content:center;background:rgba(21,42,46,.08);color:#152A2E;font-size:22px;line-height:1;cursor:pointer;float:right}
+/* guide card */
+#pop .bintro .pnav{display:flex;align-items:center;gap:14px}
+html body #mapbox #pop .bintro .eb .how:not(#x):not(#y){position:static!important;display:inline!important;background:none!important;border:0!important;padding:0!important;margin:0!important;font:inherit!important;letter-spacing:inherit!important;text-transform:inherit!important;color:#B4532A!important;text-decoration:underline;text-underline-offset:2px;cursor:pointer;width:auto!important;height:auto!important;border-radius:0!important;box-shadow:none!important}
+#pop .bintro .stp{font:600 11px 'DM Sans',sans-serif;letter-spacing:.08em;text-transform:uppercase;color:#6B7678}
+html body #mapbox #pop .bintro .go:not(#x){white-space:nowrap}
+.fcgq{position:absolute;z-index:30;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.94);box-shadow:0 2px 10px rgba(0,0,0,.14);color:#152A2E;font:600 18px 'DM Sans',sans-serif;cursor:pointer;display:none;align-items:center;justify-content:center}
+.fcgq.on{display:flex}
+@media (max-width:760px){.fcgq{position:fixed;right:16px;top:calc(env(safe-area-inset-top,0px) + 140px)}}
+@media (min-width:761px){.fcgq{left:16px;bottom:16px}}

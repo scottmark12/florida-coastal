@@ -426,7 +426,7 @@ function ensurePick(){if(S.mode!='vibes'||S.style||S.restoring)return;let k;if(S
  let on=null,tm=null;
  const hide=()=>{clearTimeout(tm);if(on){const b=on.b;b.classList.remove('in');setTimeout(()=>b.remove(),250);on=null}};
  const finish=id=>{mark(id);if(on&&on.id==id)hide();setTimeout(next,900)};
- function next(){if(on||document.hidden)return;try{if(sessionStorage.getItem('fc-tip-v'))return}catch(e){}const t=TIPS.find(t=>!done(t.id)&&t.when());if(!t)return;
+ function next(){return;/* Nov 12 v4: the guide card teaches each map now */if(on||document.hidden)return;try{if(sessionStorage.getItem('fc-tip-v'))return}catch(e){}const t=TIPS.find(t=>!done(t.id)&&t.when());if(!t)return;
   const b=document.createElement('div');b.className='ftip';b.setAttribute('role','status');b.innerHTML=`<span>${t.txt()}</span><i class="ft-arr"></i>`;document.body.appendChild(b);
   const el=t.el(),w=Math.min(280,innerWidth-32);let x=(innerWidth-w)/2,y=Math.round(innerHeight*.42),arr=false;
   if(el){const r=el.getBoundingClientRect();if(r.width){const top=el===$('res')?r.top:r.top;x=Math.max(16,Math.min(innerWidth-w-16,r.left+r.width/2-w/2));y=top-b.offsetHeight-12;arr=true}}
@@ -450,3 +450,52 @@ function ensurePick(){if(S.mode!='vibes'||S.style||S.restoring)return;let k;if(S
  el.onclick=()=>{try{localStorage.setItem('fc-shint','1')}catch(e){}shSet('half')};
  const up=()=>{if(SHON()&&SHEET.st!='peek'){try{localStorage.setItem('fc-shint','1')}catch(e){}}const on=SHON()&&SHEET.st=='peek'&&S.mode=='vibes';el.classList.toggle('on',on)};
  setInterval(up,400);up()})();
+
+// ---- Nov 12 (v4): closed sheet sized to what it holds (no clipping on any phone height), maps fit the towns above the sheet,
+// half height pans instead of zooming out past the map, and a guide card that teaches each map by doing the first step ----
+PK0=function(){const r=$('res'),m=r&&r.querySelector('.mode');if(!r||!m||!SHON())return 200;const t=m.getBoundingClientRect().top-r.getBoundingClientRect().top;return Math.max(196,Math.round(t+m.offsetHeight+14+92+18))};
+(function(){const rf=shRefit;
+ const tgt=()=>{if(S.mode=='sliders')return S.top&&S.top.length?slFit(S.top.slice(0,5).map(id=>T.find(t=>t.id==id))):fit(ALL,.02);if(S.mode=='vibes'&&!S.pop)return S.style?fitStyle(S.style):fit(ALL,.02);return null};
+ shRefit=function(){if(!SHON())return rf();if(S.mode=='vibes'&&S.pop)return;const v=tgt();if(!v)return;
+  if(SHEET.st=='half'&&S.vb){const[w,h]=size(),top=HDR(),bot=h-SHRES(),mid=(top+Math.max(top+60,bot))/2,kt=v[2]/w,kc=S.vb[2]/w,px=v[0]+w/2*kt,py=v[1]+mid*kt;go([px-w/2*kc,py-mid*kc,S.vb[2],S.vb[3]],400);return}
+  go(v,450)};
+ const ps=window.pickStyle;window.pickStyle=pickStyle=function(k){const r=ps.apply(this,arguments);if(SHON()&&!isR(k)&&S.mode=='vibes')setTimeout(()=>go(fitStyle(k),500),20);return r};
+})();
+(function(){
+ const KEY=k=>'fc-guide-x-'+k,shut=k=>{try{return !!sessionStorage.getItem(KEY(k))}catch(e){return false}};
+ const kindNow=()=>S.mode=='sliders'?'sliders':S.mode=='vibes'?(S.sub=='regions'?'regions':'vibes'):null;
+ const G={k:null,ph:0,step:-1};
+ const cnt=k=>T.filter(t=>t.v.includes(k)).length;
+ const RIMG=r=>(T.find(t=>t.id==RPH[r])||{}).img;
+ const STEPS={
+  vibes:['Pick a style from the photo tiles.','The towns that fit light up. Tap any dot to meet one.','Swipe a town card to step through the list, or pull the panel up to see every style.'],
+  regions:['Pick a region from the photo tiles.','Its towns light up on the map. Tap any dot to meet one.','Swipe a town card to step through every town in the region.'],
+  sliders:[()=>PH()?'Pull the panel up to see the 10 sliders.':'The 10 sliders are on the left.','Move the ones that matter most to you.','The top 5 update on the map as you go. Tap a number to meet the town.']};
+ const DEMO={vibes:'beaches',regions:'south-keys'};
+ function view(){const k=G.k,f0=(S.top&&T.find(t=>t.id==S.top[0]))||{};
+  const st=S.style||'',rn=isR(st)?st.slice(2):'';
+  const base={vibes:{eb:'Vibe Map',img:`img/vibes/${S.style&&!isR(S.style)?S.style:'beaches'}.webp`},regions:{eb:'Regions',img:RIMG(rn||'south-keys')},sliders:{eb:'Slider Map',img:f0.img}}[k];
+  if(G.step>=0){const s=STEPS[k][G.step];return {...base,stp:`How it works · ${G.step+1} of 3`,tx:typeof s=='function'?s():s,btn:G.step<2?'Next':'Got it',act:()=>{G.step=G.step<2?G.step+1:-1;show()},how:false}}
+  if(k=='vibes'){if(!G.ph)return {...base,h3:'Find towns by feel',tx:'Each style lights up the towns that fit it. Try one and see.',btn:'Show me Best Beaches',act:()=>{G.ph=1;pickStyle(DEMO.vibes)},how:true};
+   const L=LK.VFEEL,nx=L[(Math.max(0,L.indexOf(st))+1)%L.length];return {...base,h3:`${VIBES[st]||'Best Beaches'} is on`,tx:`${cnt(st)} towns light up. Tap a style below to switch, or tap a dot to meet a town.`,btn:`Show me ${VIBES[nx]}`,act:()=>pickStyle(nx),how:true}}
+  if(k=='regions'){if(!G.ph)return {...base,h3:'Browse the coast',tx:'Seven stretches of coast. Pick one to see every town in it.',btn:'Show me the Keys',act:()=>{G.ph=1;pickStyle('r:'+DEMO.regions)},how:true};
+   const L=R7.map(r=>r[0]),nx=L[(Math.max(0,L.indexOf(rn))+1)%L.length];return {...base,h3:VIBES[st]||'South Florida and the Keys',tx:`${cnt(st)} towns. Swipe the tiles for other regions, or tap a dot to meet a town.`,btn:`Show me ${VIBES['r:'+nx].replace(/^The /,'')}`,act:()=>pickStyle('r:'+nx),how:true}}
+  if(!G.ph)return {...base,h3:'Rank towns',tx:'Every priority starts equal. Move a slider and the top 5 reorder.',btn:'Try it',act:demoSl,how:true};
+  return {...base,h3:'Beaches count more',tx:PH()?'The top 5 just reordered. Pull the panel up to move any slider.':'The top 5 just reordered. Move any slider on the left.',btn:PH()?'Open the sliders':'Got it',act:()=>{if(PH()&&SHON())shSet('half');else{G.ph=2;show()}},how:true}}
+ function demoSl(){G.ph=1;const i=document.querySelector('#sl input[type=range][data-slk="beach"]');if(i){i.value=i.max;i.dispatchEvent(new Event('input',{bubbles:true}));i.dispatchEvent(new Event('change',{bubbles:true}))}setTimeout(()=>{if(S.pop&&kindNow()=='sliders')closePop();show()},1100)}
+ function show(){const k=kindNow(),p=$('pop'),q=qBtn();if(!p)return;if(k!==G.k){G.k=k;G.ph=0;G.step=-1}
+  if(!k||shut(k)){if(p.dataset.intro){p.dataset.intro='';p.classList.remove('on')}q.classList.toggle('on',!!k&&!S.pop);return}
+  q.classList.remove('on');if(S.pop)return;if(k=='sliders'&&G.ph==2){p.dataset.intro='';p.classList.remove('on');q.classList.add('on');return}
+  const v=view();
+  p.innerHTML=`<div class="ph" style="background-image:url('${v.img||''}')"></div><button class="x" aria-label="Close guide">&times;</button><div class="bd bintro">${v.stp?`<div class="stp">${v.stp}</div>`:`<div class="eb">${v.eb}${v.how?' · <button type="button" class="how">How it works</button>':''}</div><h3>${v.h3}</h3>`}<p>${v.tx}</p><div class="pnav"><a class="go" href="#">${v.btn}</a></div></div>`;
+  p.querySelector('.go').onclick=e=>{e.preventDefault();e.stopPropagation();v.act()};
+  const hw=p.querySelector('.how');hw&&(hw.onclick=e=>{e.stopPropagation();G.step=0;show()});
+  p.querySelector('.x').onclick=e=>{e.stopPropagation();try{sessionStorage.setItem(KEY(k),'1')}catch(_){}p.dataset.intro='';p.classList.remove('on');qBtn().classList.add('on')};
+  p.onclick=null;p.dataset.intro=k;p.classList.remove('full');p.classList.add('on');placePop()}
+ function qBtn(){let q=document.querySelector('.fcgq');if(!q){q=document.createElement('button');q.type='button';q.className='fcgq';q.setAttribute('aria-label','How this map works');q.textContent='?';(PH()?document.body:($('mapbox')||document.body)).appendChild(q);q.onclick=e=>{e.stopPropagation();try{sessionStorage.removeItem(KEY(G.k||kindNow()))}catch(_){}G.step=-1;q.classList.remove('on');if(S.pop)closePop();show()}}return q}
+ const later=()=>setTimeout(show,60);
+ mapIntro=function(){later()};
+ ['closePop','pickStyle','setMode'].forEach(n=>{const o=window[n];window[n]=function(){const r=o.apply(this,arguments);later();return r}});
+ const op=window.openPop;window.openPop=openPop=function(){const r=op.apply(this,arguments);qBtn().classList.remove('on');return r};
+ setTimeout(show,900);
+})();
