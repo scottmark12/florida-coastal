@@ -662,3 +662,5 @@ html body.sheet #res.sh-up .mode:not(#x):not(#y){margin-top:30px!important}
 /* Nov 12: quieter roads, the way Compass keeps the base map in the background */
 html body #map:not(.zin) .terr .mr1:not(#x){stroke:#ECE7DE!important;opacity:.55}
 html body #map:not(.zin) .terr .mr2:not(#x){stroke:#fff!important;opacity:.6;stroke-width:calc(var(--k)*1px)!important}
+/* guide cards (how to) use DM Sans only; town cards keep the serif */
+html body #mapbox #pop.pop[data-intro]:not([data-intro=""]):not(#x):not(#y):not(#z) .bintro h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:600!important;font-size:19px!important;letter-spacing:-.015em!important;line-height:1.2!important}
