@@ -562,3 +562,10 @@ html body.sliders .map .zoom:not(#x):not(#y){display:none!important}}
 .shint.on{opacity:1;pointer-events:auto}
 .shint.on svg{animation:shBob 1.6s ease-in-out .8s 4}
 @keyframes shBob{0%,100%{transform:none}50%{transform:translateY(-3px)}}}
+/* Nov 12: one closed sheet height on every map; the region title only shows once the sheet is pulled up */
+@media (max-width:760px){html body.sheet #res:not(.sh-up) .vp .vm-lh h2{display:none!important}
+/* every card on the map is the same height, intro or town */
+html body #pop.on:not(.full){height:136px!important;max-height:136px!important;overflow:hidden}
+html body #pop .bintro p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}
+@media (max-width:760px){html body #pop .bintro p:not(#x){display:-webkit-box!important}}
+html body #mapbox #pop .bintro p:not(#x):not(#y):not(#z){display:-webkit-box!important}
