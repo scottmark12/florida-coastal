@@ -178,7 +178,7 @@ function vRender(){const _r=document.querySelector('#vp .tiles.vt'),_sl=_r?_r.sc
   h=`<div class="vm-sh" style="background-image:url('img/vibes/${v}.webp')"><button class="vm-back" id="vback">← All styles</button><div class="vm-sht"><h2><i style="background:${VCOL[v]}"></i>${VIBES[v]}</h2><p>${L.length} towns · ${LK.VSUBL[v]||VSUB[v]}</p></div></div>${LK.VGUIDE[v]?`<a class="vm-guide" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="vm-eb vm-lt">Panhandle around to the Keys</div><ol class="vm-list">${L.map((t,i)=>`<li><button class="vm-row${S.pop&&S.pop.id==t.id?' on':''}" data-vpick="${t.id}" style="--vc:${VCOL[v]}"><span class="vm-n">${i+1}</span><span class="vm-rt"><b>${t.n}</b><small>${LD[t.id].rn}</small></span></button></li>`).join('')}</ol>`}
  h+=`<div class="vm-lf"><a href="quiz-photo.html">See your top 5 towns</a><p>8 quick questions, matched to how you live</p></div>`;
  $('vp').innerHTML=h;
- $('vp').querySelectorAll('.tile').forEach(b=>{b.classList.toggle('on',b.dataset.k==S.style);b.onclick=()=>{if(S.style==b.dataset.k){$('back').onclick();return}const sl=$('vp').querySelector('.tiles.vt').scrollLeft;pickStyle(b.dataset.k);const r=$('vp').querySelector('.tiles.vt');if(r)r.scrollLeft=sl}});
+ $('vp').querySelectorAll('.tile').forEach(b=>{b.classList.toggle('on',b.dataset.k==S.style);b.onclick=()=>{if(S.style==b.dataset.k)return;const sl=$('vp').querySelector('.tiles.vt').scrollLeft;pickStyle(b.dataset.k);const r=$('vp').querySelector('.tiles.vt');if(r)r.scrollLeft=sl}});
  $('vp').querySelectorAll('[data-vpick]').forEach(b=>{b.onclick=()=>flyTo(T.find(t=>t.id==b.dataset.vpick));b.onmouseenter=()=>{S.hover=b.dataset.vpick;render()};b.onmouseleave=()=>{S.hover=null;render()}});
  $('vp').querySelectorAll('[data-need]').forEach(b=>b.onclick=()=>{const k=b.dataset.need;S.need[k]=!S.need[k];needChange()});
  $('ndbud')&&($('ndbud').onchange=e=>{S.need.bud=+e.target.value||0;needChange()});
@@ -187,7 +187,7 @@ function vRender(){const _r=document.querySelector('#vp .tiles.vt'),_sl=_r?_r.sc
  zoomPill()}
 function needChange(){if(S.pop&&!needOk(S.pop))closePop();render();vRender()}
 const RKEY='fcRegion',rGet=()=>{try{return localStorage.getItem(RKEY)}catch(e){return null}},rSet=v=>{try{localStorage.setItem(RKEY,v)}catch(e){}};
-function pickStyle(k){if(SHON()&&SHEET.st!='peek'){const vp=$('vp');vp&&vp.classList.remove('vt-open');setTimeout(()=>shSet('peek',true),0)}if(isR(k))rSet(k.slice(2));S.style=k;S.gHover=null;S.gT0=performance.now()+450;$('sty').value=k;S.region='';tags();document.body.classList.add('pick');closePop();if(isR(k)){S.zoomedTo=null;go(fitStyle(k),500)}else home();vRender();$('res').scrollTop=0}
+function pickStyle(k){if(!S.auto)S.touchedPick=1;if(SHON()&&SHEET.st!='peek'){const vp=$('vp');vp&&vp.classList.remove('vt-open');setTimeout(()=>shSet('peek',true),0)}if(isR(k)&&!S.auto)rSet(k.slice(2));S.style=k;S.gHover=null;S.gT0=performance.now()+450;$('sty').value=k;S.region='';tags();document.body.classList.add('pick');closePop();if(isR(k)){S.zoomedTo=null;go(fitStyle(k),500)}else home();vRender();$('res').scrollTop=0}
 const FIXED=()=>S.mode=='vibes'||S.mode=='sliders';
 function home(){const h=fit(ALL,.02);if(!S.vb||S.vb.some((v,i)=>Math.abs(v-h[i])>1))go(h,350)}
 function flyTo(t){if(FIXED()){openPop(t,true);S.mode=='vibes'&&vRender();return}const[w,h]=size(),nw=w<600,W=nw?MINW*1.6:Math.max(MINW,170),H=W*h/w,cx=nw?w/2:(Math.min(460,w*.45)+w)/2,k=W/w;S.zoomedTo=t.id;go([t.x-cx*k,t.y-h/2*k,W,H],520);setTimeout(()=>{openPop(t,true);S.mode=='vibes'&&vRender()},20)}
@@ -210,12 +210,12 @@ const r7of=x=>x&&R7M[x]?x:(x&&R7OF[x])||x;
 
 S.sub='styles';
 function setMode(m){S.hover=null;{const k0=S.mode=='vibes'?S.sub:S.mode;S.mem=S.mem||{};if(S.booted&&k0)S.mem[k0]={st:S.style||'',op:S.pop&&S.pop.id||null,vb:S.vb&&S.vb.slice()}}setTimeout(()=>{shSync();slPill();if(m!='sliders')slCar([])},60);if(m=='regions'||m=='explore'){m='vibes';if(S.sub!='regions'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='regions'}else if(m=='vibes'){if(S.sub!='styles'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.sub='styles'}else if(m=='sliders'){S.style='';S.zoomedTo=null;document.body.classList.remove('pick')}S.mode=m;zoomPill();if(m!='explore')setTimeout(()=>{S.zoomedTo=null;home()},40);setTimeout(()=>{render();if(m!='sliders')list()},30);$('mhint').textContent=S.sub=='regions'&&m=='vibes'?'Pick a stretch of coast and tap a town.':{explore:'See every beach town on the map and narrow by style or price.',vibes:'Pick the feel you want and see where it lives.',sliders:'Tell us what matters and we rank all 167 towns for you.'}[m];document.body.classList.toggle('vibes',m=='vibes');document.body.classList.toggle('sliders',m=='sliders');if(m=='sliders'){requestAnimationFrame(()=>{render()});document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));closePop();S.region='';tags();slRender();if(!S.top.length)go(fit(ALL,.02));return}document.body.classList.toggle('pick',m=='vibes'&&!!S.style);document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==(m=='vibes'&&S.sub=='regions'?'regions':m)));
- if(m=='vibes'&&!S.style){S.region='';tags();closePop();go(fit(ALL,.02))}list();const mm=m=='vibes'&&S.mem&&S.mem[S.sub];if(S.booted&&!S.restoring&&mm&&mm.st&&VIBES[mm.st]){setTimeout(()=>{pickStyle(mm.st);setTimeout(()=>{const t=mm.op&&T.find(x=>x.id==mm.op);if(t)openPop(t,true);if(mm.vb&&vbOk(mm.vb))go(mm.vb,300)},140)},70)}else if(S.booted&&!S.restoring&&m=='vibes'&&S.sub=='regions'&&!S.style){const r=r7of(rGet());if(r&&VIBES['r:'+r])setTimeout(()=>pickStyle('r:'+r),60)}}
+ if(m=='vibes'&&!S.style){S.region='';tags();closePop();go(fit(ALL,.02))}list();const mm=m=='vibes'&&S.mem&&S.mem[S.sub];if(S.booted&&!S.restoring&&mm&&mm.st&&VIBES[mm.st]){setTimeout(()=>{pickStyle(mm.st);setTimeout(()=>{const t=mm.op&&T.find(x=>x.id==mm.op);if(t)openPop(t,true);if(mm.vb&&vbOk(mm.vb))go(mm.vb,300)},140)},70)}else if(S.booted&&!S.restoring&&m=='vibes'&&S.sub=='regions'&&!S.style){const r=r7of(rGet());if(r&&VIBES['r:'+r])setTimeout(()=>pickStyle('r:'+r),60);else setTimeout(ensurePick,90)}else if(m=='vibes')setTimeout(ensurePick,120)}
 function fitStyle(k){const L=T.filter(t=>t.v.includes(k));const b=[Math.min(...L.map(t=>t.lo)),Math.max(...L.map(t=>t.lo)),Math.min(...L.map(t=>t.la)),Math.max(...L.map(t=>t.la))];if(isR(k)){const p=.15,f=fit([b[0]-p,b[1]+p,b[2]-p,b[3]+p],.1),[w,h]=size();if(w<600)return f;const L0=Math.min(470,w*.42),nw=f[2]*w/(w-L0),nh=nw*h/w;return [f[0]+f[2]-nw,f[1]+f[3]/2-nh/2,nw,nh]}const pad=.35;return fit([b[0]-1.1,b[1]+1.1,b[2]-pad,b[3]+pad],.04)}
 $('tiles').innerHTML='';[].map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('img/vibes/${k}.webp')"><i><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>${T.filter(t=>t.v.includes(k)).length} towns</i></div><b>${VIBES[k]}</b><small>${VSUB2[k]}</small></button>`).join('');
-$('tiles').onclick=e=>{const b=e.target.closest('.tile');if(!b)return;const k=b.dataset.k;if(S.style==k){$('back').onclick();return}S.style=k;S.gHover=null;S.gT0=performance.now()+450;$('sty').value=k;$('sty').classList.add('on');S.region='';tags();document.body.classList.add('pick');closePop();home();$('res').scrollTop=0};
+$('tiles').onclick=e=>{const b=e.target.closest('.tile');if(!b)return;const k=b.dataset.k;if(S.style==k)return;S.style=k;S.gHover=null;S.gT0=performance.now()+450;$('sty').value=k;$('sty').classList.add('on');S.region='';tags();document.body.classList.add('pick');closePop();home();$('res').scrollTop=0};
 $('tiles').addEventListener('mouseover',e=>{const b=e.target.closest('.tile');const k=b?b.dataset.k:null;if(k!==S.gHover){S.gHover=k;render()}});$('tiles').addEventListener('mouseleave',()=>{S.gHover=null;render()});
-$('back').onclick=()=>{if(S.sub=='regions')rSet('');S.zoomedTo=null;S.style='';setTimeout(vRender,0);$('sty').value='';$('sty').classList.remove('on');document.body.classList.remove('pick');closePop();go(fit(ALL,.02))};
+$('back').onclick=()=>{if(S.mode=='vibes'&&S.style){S.zoomedTo=null;closePop();go(fitStyle(S.style),400);return}if(S.sub=='regions')rSet('');S.zoomedTo=null;S.style='';setTimeout(vRender,0);$('sty').value='';$('sty').classList.remove('on');document.body.classList.remove('pick');closePop();go(fit(ALL,.02))};
 $('mode').onclick=e=>{const b=e.target.closest('button');if(!b)return;setMode(b.dataset.m)};
 
 // sliders mode: same sliders, same scoring as the live Slider Map (fitSl, Nov 2026)
@@ -259,7 +259,7 @@ function shStops(){const vh=innerHeight;return {peek:vh-PK(),half:Math.round(vh*
 function SHRES(){const vh=innerHeight,pe=$('pop');if(SHEET.st=='peek')return PK()+(pe&&pe.classList.contains('on')?pe.offsetHeight+12:0)+14;return vh-shStops()[SHEET.st]+14}
 function shApply(y,anim){const r=$('res');SHEET.y=y;r.style.transition=anim?'transform .32s cubic-bezier(.2,.8,.2,1)':'none';r.style.transform=`translate3d(0,${y}px,0)`;
  const st=shStops(),pe=$('pop');if(pe){const o=Math.max(0,Math.min(1,(y-st.half)/(st.peek-st.half-40)));pe.style.opacity=o;pe.style.pointerEvents=o<.5?'none':''}}
-function shSet(name,noFit){document.body.style.setProperty('--pk',PK()+'px');const st=shStops();SHEET.st=name;shApply(st[name],true);const r=$('res');r.classList.toggle('sh-full',name=='full');if(name!='full')r.scrollTop=0;
+function shSet(name,noFit){document.body.style.setProperty('--pk',PK()+'px');const st=shStops();SHEET.st=name;shApply(st[name],true);const r=$('res');r.classList.toggle('sh-full',name=='full');r.classList.toggle('sh-up',name!='peek');if(name!='full')r.scrollTop=0;
  if(!noFit&&name!='full')setTimeout(shRefit,40)}
 function shRefit(){if(S.mode=='sliders'){if(S.top&&S.top.length)go(slFit(S.top.slice(0,5).map(id=>T.find(t=>t.id==id))),450);else go(fit(ALL,.02),450)}else if(S.mode=='vibes'){if(S.pop)return;if(S.style&&isR(S.style))go(fitStyle(S.style),450);else go(fit(ALL,.02),450)}}
 function shSync(){const on=(S.mode=='sliders'||S.mode=='vibes')&&PH();const r=$('res');if(!r)return;if(on){const was=SHON();document.body.classList.add('sheet');setTimeout(()=>{shSet('peek',true);render();shRefit()},was?60:30)}
@@ -363,7 +363,7 @@ function navURL(){const q=new URLSearchParams();const m=S.mode=='sliders'?'slide
  if(S.pop)q.set('open',S.pop.id);if(S.listOn)q.set('view','list');return location.pathname+'?'+q.toString()}
 let navT=null;function navSync(){clearTimeout(navT);navT=setTimeout(()=>{if(S.restoring)return;const u=navURL(),cur=location.pathname+location.search;if(u==cur)return;
  const prevOpen=new URLSearchParams(location.search).get('open'),nowOpen=S.pop&&S.pop.id,swap=prevOpen&&nowOpen&&prevOpen!=nowOpen;
- if(S.navReady&&!swap)history.pushState({fc:1},'',u);else history.replaceState({fc:1},'',u)},120)}
+ if(S.navReady&&!swap&&!S.auto)history.pushState({fc:1},'',u);else history.replaceState({fc:1},'',u)},120)}
 [['setMode'],['pickStyle'],['openPop'],['closePop']].forEach(([n])=>{const f=window[n];window[n]=function(){const r=f.apply(this,arguments);navSync();return r}});
 {const b0=$('back').onclick;$('back').onclick=function(){b0.apply(this,arguments);navSync()}}
 addEventListener('popstate',()=>{const q=new URLSearchParams(location.search),m=q.get('mode')||'regions';S.restoring=1;
@@ -378,49 +378,44 @@ function listTowns(){if(S.mode=='sliders'&&S.top&&S.top.length)return [S.top.sli
 function listShow(on,quiet){let el=$('mlist');if(!el){el=document.createElement('div');el.id='mlist';el.className='mlist';document.body.appendChild(el)}
  S.listOn=!!on;document.body.classList.toggle('list-on',S.listOn);if(!on){if(!quiet)navSync();return}
  const [L,title]=listTowns();el.innerHTML=`<div class="ml-hd"><button type="button" class="ml-map" onclick="listShow(false)">‹ Map</button><b>${title}</b><span>${L.length} towns</span></div><div class="ml-list">${L.map((t,i)=>`<a class="ml-row" href="towns/${t.id}-v3.html"><span class="ph" style="background-image:url('${t.img}')">${S.mode=='sliders'&&S.top.length?`<i>${i+1}</i>`:''}</span><span class="tx"><small>${LD[t.id].rn}</small><b>${t.n}</b><em>${t.b||''}</em></span></a>`).join('')}</div>`;el.scrollTop=0;if(!quiet)navSync()}
-(function(){const r=$('res');if(!r)return;const lb=document.createElement('button');lb.type='button';lb.className='sh-list';lb.innerHTML='<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M8 6h13M8 12h13M8 18h13M3.5 6h.01M3.5 12h.01M3.5 18h.01"/></svg> List';lb.onclick=e=>{e.stopPropagation();listShow(true)};r.prepend(lb);
+(function(){const r=$('res');if(!r)return;/* Nov 12: List button removed, the full sheet is the list */
  const hd=document.querySelector('body > header');if(hd){const sb=document.createElement('button');sb.type='button';sb.className='msearch';sb.innerHTML='<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span>Search a town or region</span>';sb.onclick=()=>{if(window.FCS)FCS.open('');else location.href='towns/index-v2.html'};hd.appendChild(sb)}})();
 setTimeout(()=>{S.navReady=1;const q=new URLSearchParams(location.search);if(q.get('view')=='list')listShow(true,true);history.replaceState({fc:1},'',navURL())},1500);
 S.booted=1;
 if(params.get('open')){const t=T.find(t=>t.id==params.get('open'));if(t)setTimeout(()=>{S.restoring=1;openPop(t);setTimeout(()=>{S.restoring=0},300)},450)}
 
-// ---- Nov 11: the Vibe Map landing cycles through each style, twinkling its towns in its color. Keeps going until a style or town is picked; a touch only pauses it for a few seconds ----
-(function(){const box=$('mapbox');if(!box)return;const cap=document.createElement('div');cap.className='vdemo';cap.setAttribute('aria-hidden','true');box.appendChild(cap);
- let i=0,hold=0,over=false;const on=()=>S.mode=='vibes'&&(S.sub=='styles'||S.sub=='regions')&&!S.style&&!S.pop&&!document.hidden;
- const show=k=>{S.demo=k;const n=k?T.filter(t=>t.v.includes(k)).length:0;if(k)cap.innerHTML=`<i style="background:${VCOL[k]}"></i><b>${VIBES[k]}</b><span>${n} towns</span>`;cap.classList.toggle('on',!!k);
-  document.querySelectorAll('#vp .tile').forEach(b=>{const m=!!k&&b.dataset.k==k;b.classList.toggle('demo',m);if(m){b.style.setProperty('--dc',VCOL[k])}});render()};
- const tick=()=>{if(!on()){if(S.demo)show(null);return}if(over||performance.now()<hold)return;const K=S.sub=='regions'?R7.map(r=>'r:'+r[0]):LK.VFEEL;show(K[i%K.length]);i++};
- setTimeout(tick,500);setInterval(tick,2200);
- ['pointerdown','wheel','touchstart'].forEach(ev=>addEventListener(ev,()=>{hold=performance.now()+5000},{passive:true,capture:true}));
- const vp=$('vp');if(vp){vp.addEventListener('mouseover',e=>{over=!!e.target.closest('.tile')});vp.addEventListener('mouseleave',()=>{over=false})}})();
+// ---- Nov 12: the maps never sit empty. They always show a real pick; on a first visit they step through real picks until the first touch, then stop for good ----
+const VDEF={regions:'r:panhandle',styles:'beaches'};
+function ensurePick(){if(S.mode!='vibes'||S.style||S.restoring)return;let k;if(S.sub=='regions'){const r=r7of(rGet());k=r&&VIBES['r:'+r]?'r:'+r:VDEF.regions}else{const m=S.mem&&S.mem.styles&&S.mem.styles.st;k=m&&VIBES[m]?m:VDEF.styles}S.auto=1;pickStyle(k);setTimeout(()=>{S.auto=0},400)}
+(function(){let touched=false;const stop=()=>{touched=true};['pointerdown','keydown','wheel','touchstart'].forEach(ev=>addEventListener(ev,stop,{passive:true,capture:true}));
+ const fresh=()=>S.sub=='regions'?rGet()===null:!(S.mem&&S.mem.styles&&S.mem.styles.st);
+ const tick=()=>{if(touched||S.touchedPick||document.hidden||S.mode!='vibes'||S.pop||!fresh())return;const K=S.sub=='regions'?R7.map(r=>'r:'+r[0]):LK.VFEEL;const i=Math.max(0,K.indexOf(S.style));S.auto=1;pickStyle(K[(i+1)%K.length]);setTimeout(()=>{S.auto=0},400)};
+ setTimeout(ensurePick,700);setInterval(tick,3200)})();
 
-// ---- Nov 12: first visit hints. Two or three small glass notes point at the real controls, once per map; the ? next to the tabs plays them again ----
+// ---- Nov 12 (v2): Apple style tips. One small tip at a time, it goes away the moment you do what it says (and never comes back), or fades on its own after a few seconds ----
 (function(){
- const KEY=k=>'fc-hint-'+k;const seen=k=>{try{return !!localStorage.getItem(KEY(k))}catch(e){return true}};const mark=k=>{try{localStorage.setItem(KEY(k),'1')}catch(e){}};
- const cur=()=>S.mode=='sliders'?'sliders':S.sub=='regions'?'regions':'styles';
- const firstDot=()=>{const d=[...document.querySelectorAll('#ov .dot')].map(e=>[e,e.getBoundingClientRect()]).filter(([e,r])=>r.width>0&&r.top>90&&r.bottom<(SHON()?innerHeight-PK()-20:innerHeight-40));return d.length?d[Math.floor(d.length/2)][0]:$('mapbox')};
- const handle=()=>SHON()?$('res'):null;
- const STEPS={
-  regions:[['#vp .tiles.vt','Pick a region to see every beach town in it.'],[firstDot,'Tap any dot to meet that town.'],[handle,'Drag this panel up for the full list.']],
-  styles:[['#vp .tiles.vt','Pick a style that feels like home.'],[firstDot,'Tap any dot to meet that town.'],[handle,'Drag this panel up for every town in the style.']],
-  sliders:[[handle,'Drag this panel up and slide what matters to you. Tap any i to see how we rank it.'],[()=>$('mapbox'),'Your top 5 light up on the map as you slide.'],[()=>document.querySelector('#mapbox #pop.on')||null,'This is your #1. Use the arrows for the rest, or tap any numbered pin.']]};
- let on=null;
- function close(k,done){if(on){on.remove();on=null}if(done)mark(k)}
- function show(k,i){const L=STEPS[k].filter(s=>{const t=typeof s[0]=='function'?s[0]():document.querySelector(s[0]);return t&&t.getBoundingClientRect().width>0});if(i>=L.length){close(k,true);return}
-  const [sel,txt]=L[i],t=typeof sel=='function'?sel():document.querySelector(sel),r=t.getBoundingClientRect();
-  close(k,false);const b=document.createElement('div');b.className='fhint';b.setAttribute('role','dialog');b.setAttribute('aria-label','How the map works');
-  b.innerHTML=`<p>${txt}</p><div class="fh-row"><span>${i+1} of ${L.length}</span><button type="button" class="fh-skip">Skip</button><button type="button" class="fh-next">${i+1<L.length?'Next':'Got it'}</button></div><i class="fh-arr"></i>`;
-  document.body.appendChild(b);on=b;
-  const w=Math.min(300,innerWidth-32),bh=b.offsetHeight,big=r.height>innerHeight*.5||t===$('mapbox')||t===$('res');
-  let x=Math.max(16,Math.min(innerWidth-w-16,r.left+r.width/2-w/2)),y,up;
-  if(t===$('res')){y=r.top-bh-14;up=false;x=(innerWidth-w)/2}else if(big){y=Math.max(90,r.top+r.height*.3);up=null}else if(r.top-bh-16>70){y=r.top-bh-14;up=false}else{y=r.bottom+14;up=true}
-  Object.assign(b.style,{left:x+'px',top:Math.max(12,y)+'px',width:w+'px'});
-  const a=b.querySelector('.fh-arr');if(up===null)a.style.display='none';else{a.classList.toggle('up',up);a.style.left=Math.max(18,Math.min(w-30,r.left+r.width/2-x-6))+'px'}
-  b.querySelector('.fh-skip').onclick=()=>close(k,true);b.querySelector('.fh-next').onclick=()=>show(k,i+1);
-  requestAnimationFrame(()=>b.classList.add('in'))}
- window.fcHints=(force)=>{const k=cur();if(!force&&seen(k))return;show(k,0)};
- const tabs=$('mode');if(tabs){const q=document.createElement('button');q.type='button';q.className='fh-q';q.setAttribute('aria-label','How this map works');q.textContent='?';q.onclick=e=>{e.stopPropagation();fcHints(true)};tabs.appendChild(q)}
- let tm=null;const later=()=>{clearTimeout(tm);close(cur(),false);tm=setTimeout(()=>{if(!S.pop||S.mode=='sliders')fcHints(false)},1600)};
- later();const sm=setMode;window.setMode=setMode=function(m){sm(m);later()};
- addEventListener('resize',()=>{if(on){on.remove();on=null}});
+ const done=id=>{try{return !!localStorage.getItem('fc-tip-'+id)}catch(e){return true}},mark=id=>{try{localStorage.setItem('fc-tip-'+id,'1')}catch(e){}};
+ const TIPS=[
+  {id:'pick',when:()=>S.mode=='vibes',el:()=>document.querySelector('#vp .tiles.vt'),txt:()=>S.sub=='regions'?'Pick a region to see its towns.':'Pick a style that feels like home.'},
+  {id:'dot',when:()=>S.mode=='vibes'&&done('pick'),el:()=>null,txt:()=>'Tap any dot to meet that town.'},
+  {id:'drag',when:()=>SHON()&&done('pick')&&done('dot'),el:()=>$('res'),txt:()=>'Drag up to see more.'},
+  {id:'slide',when:()=>S.mode=='sliders',el:()=>$('res'),txt:()=>'Drag up and slide what matters to you.'}];
+ let on=null,tm=null;
+ const hide=()=>{clearTimeout(tm);if(on){const b=on.b;b.classList.remove('in');setTimeout(()=>b.remove(),250);on=null}};
+ const finish=id=>{mark(id);if(on&&on.id==id)hide();setTimeout(next,900)};
+ function next(){if(on||document.hidden)return;const t=TIPS.find(t=>!done(t.id)&&t.when());if(!t)return;
+  const b=document.createElement('div');b.className='ftip';b.setAttribute('role','status');b.innerHTML=`<span>${t.txt()}</span><i class="ft-arr"></i>`;document.body.appendChild(b);
+  const el=t.el(),w=Math.min(280,innerWidth-32);let x=(innerWidth-w)/2,y=Math.round(innerHeight*.42),arr=false;
+  if(el){const r=el.getBoundingClientRect();if(r.width){const top=el===$('res')?r.top:r.top;x=Math.max(16,Math.min(innerWidth-w-16,r.left+r.width/2-w/2));y=top-b.offsetHeight-12;arr=true}}
+  Object.assign(b.style,{left:x+'px',top:Math.max(80,y)+'px',width:w+'px'});b.querySelector('.ft-arr').style.display=arr?'':'none';
+  b.onclick=()=>finish(t.id);on={id:t.id,b};requestAnimationFrame(()=>b.classList.add('in'));
+  tm=setTimeout(()=>{if(on&&on.id==t.id){hide()}},6500)}
+ // the actions that complete each tip
+ const wrap=(n,f)=>{const o=window[n];window[n]=function(){const r=o.apply(this,arguments);try{f.apply(this,arguments)}catch(e){}return r}};
+ wrap('pickStyle',()=>{if(!S.auto&&!S.restoring)finish('pick')});
+ wrap('openPop',()=>{if(!S.restoring)finish('dot')});
+ document.addEventListener('pointerdown',e=>{if(e.target.closest&&e.target.closest('#res')&&SHON())setTimeout(()=>{if(SHEET.st!='peek'){finish('drag');if(S.mode=='sliders')finish('slide')}},700)},true);
+ document.addEventListener('input',e=>{if(e.target.closest&&e.target.closest('#sl'))finish('slide')},true);
+ addEventListener('resize',hide);
+ setTimeout(next,2200);const sm=window.setMode;window.setMode=setMode=function(m){hide();sm.apply(this,arguments);setTimeout(next,1800)};
 })();

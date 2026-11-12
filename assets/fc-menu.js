@@ -58,6 +58,12 @@
     var btn=document.createElement('button');
     btn.className='fcm-btn';btn.type='button';btn.setAttribute('aria-label','Open menu');btn.setAttribute('aria-expanded','false');btn.innerHTML=ICON_MENU;
     hdr.appendChild(btn);
+    // Nov 12: on phone the menu button follows you down the page (fixed glass circle, dark icon once past the header)
+    (function(){var g=document.createElement('style');g.textContent='@media '+MQ+'{html body .fcm-btn.fcm-follow:not(#x){position:fixed!important;top:calc(10px + env(safe-area-inset-top,0px))!important;right:14px!important;transform:none!important;z-index:75!important;background:rgba(255,255,255,.72)!important;-webkit-backdrop-filter:blur(18px) saturate(1.3);backdrop-filter:blur(18px) saturate(1.3);border:1px solid rgba(255,255,255,.8)!important;color:#16282c!important;box-shadow:0 4px 16px rgba(10,20,22,.14)!important;animation:fcmIn .22s ease}@keyframes fcmIn{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}}';document.head.appendChild(g);
+     var mq=matchMedia(MQ),pos=getComputedStyle(hdr).position,stuck=pos=='fixed'||pos=='sticky',on=false,raf=0;
+     function upd(){raf=0;if(btn.classList.contains('fcm-float'))return;var want=mq.matches&&!stuck&&hdr.getBoundingClientRect().bottom<4;if(want==on)return;on=want;
+      if(on){document.body.appendChild(btn);btn.classList.add('fcm-follow')}else{btn.classList.remove('fcm-follow');hdr.appendChild(btn)}}
+     addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd()})();
 
     var here=location.pathname+location.search;
     var homeHref=new URL('/home-v2.html',location.href).href,hp=new URL(homeHref).pathname;

@@ -26,7 +26,7 @@ for pat, ext in (("assets/app.*.js", "js"), ("assets/site.*.css", "css")):
 
 n = 0
 if renames:
-    for f in glob.glob("**/*.html", recursive=True):
+    for f in glob.glob("**/*.html", recursive=True) + ["src/manifest.json"]:
         s = open(f, encoding="utf-8").read()
         t = s
         for a, b in renames.items():

@@ -530,15 +530,11 @@ html body #vp .tile.demo:not(#x){box-shadow:0 0 0 3px var(--dc)!important}
 #map .ddh{transform-box:fill-box;transform-origin:center;pointer-events:none;opacity:0;animation:ddh 1.4s ease-out infinite}
 @keyframes ddh{0%{opacity:.55;transform:scale(.35)}100%{opacity:0;transform:scale(1.5)}}
 @media (max-width:760px){.vdemo{top:calc(72px + env(safe-area-inset-top));left:50%;transform:translate(-50%,-4px)}.vdemo.on{transform:translate(-50%,0)}}
-/* Nov 12: first visit hints */
-.fhint{position:fixed;z-index:200;background:rgba(255,255,255,.86);-webkit-backdrop-filter:blur(18px) saturate(1.25);backdrop-filter:blur(18px) saturate(1.25);border:1px solid rgba(255,255,255,.7);border-radius:18px;box-shadow:0 14px 36px rgba(10,20,22,.22);padding:14px 16px 12px;color:#152A2E;font-family:'DM Sans',system-ui,sans-serif;opacity:0;transform:translateY(6px);transition:opacity .25s ease,transform .25s ease}
-.fhint.in{opacity:1;transform:none}
-.fhint p{margin:0 0 10px;font-size:15px;line-height:1.4;font-weight:500}
-.fhint .fh-row{display:flex;align-items:center;gap:8px}
-.fhint .fh-row span{font-size:12.5px;color:#5E6B6D;margin-right:auto}
-.fhint button{font:inherit;font-size:14px;border-radius:999px;cursor:pointer;min-height:36px;padding:0 14px}
-.fhint .fh-skip{background:none;border:0;color:#5E6B6D}
-.fhint .fh-next{background:#152A2E;color:#fff;border:0;font-weight:600}
-.fhint .fh-arr{position:absolute;width:12px;height:12px;background:inherit;border-right:1px solid rgba(255,255,255,.7);border-bottom:1px solid rgba(255,255,255,.7);transform:rotate(45deg);bottom:-7px}
-.fhint .fh-arr.up{bottom:auto;top:-7px;transform:rotate(225deg)}
-#mode .fh-q{flex:none;width:34px;height:34px;min-width:34px;border-radius:50%!important;padding:0!important;margin-left:auto;font-weight:600;font-size:15px}
+/* Nov 12 (v2): one small tip at a time */
+.ftip{position:fixed;z-index:200;background:rgba(21,42,46,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:#fff;border-radius:14px;padding:11px 14px;font:500 14.5px/1.35 'DM Sans',system-ui,sans-serif;box-shadow:0 10px 28px rgba(10,20,22,.25);opacity:0;transform:translateY(6px);transition:opacity .25s ease,transform .25s ease;text-align:center;cursor:pointer}
+.ftip.in{opacity:1;transform:none}
+.ftip .ft-arr{position:absolute;left:50%;bottom:-6px;width:12px;height:12px;margin-left:-6px;background:inherit;transform:rotate(45deg);border-radius:2px}
+/* Nov 12: no See all; tiles reflow into a grid when the sheet is pulled up */
+html body .vp .vm-all:not(#x){display:none!important}
+html body.sheet #res.sh-up .vp .tiles.vt:not(#x){display:grid!important;grid-template-columns:repeat(3,1fr)!important;overflow:visible;margin:0!important;padding:0 0 8px!important}
+html body.sheet #res.sh-up .vp .tiles.vt:not(#x) .tile{width:auto!important}
