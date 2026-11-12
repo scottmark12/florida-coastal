@@ -538,3 +538,20 @@ html body #vp .tile.demo:not(#x){box-shadow:0 0 0 3px var(--dc)!important}
 html body .vp .vm-all:not(#x){display:none!important}
 html body.sheet #res.sh-up .vp .tiles.vt:not(#x){display:grid!important;grid-template-columns:repeat(3,1fr)!important;overflow:visible;margin:0!important;padding:0 0 8px!important}
 html body.sheet #res.sh-up .vp .tiles.vt:not(#x) .tile{width:auto!important}
+/* Nov 12: pairs and trios name every town, each tappable */
+html body svg .lbl.clul:not(#x){pointer-events:auto;cursor:pointer}
+/* Nov 12: towns that never split open a small list */
+.clist{position:absolute;left:50%;top:50%;z-index:40;width:min(320px,calc(100% - 32px));transform:translate(-50%,-46%) scale(.97);opacity:0;pointer-events:none;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(20px) saturate(1.3);backdrop-filter:blur(20px) saturate(1.3);border:1px solid rgba(255,255,255,.8);border-radius:18px;box-shadow:0 14px 40px rgba(10,20,22,.22);padding:6px 6px 8px;transition:opacity .18s ease,transform .18s ease;font-family:'DM Sans',system-ui,sans-serif}
+.clist.on{opacity:1;pointer-events:auto;transform:translate(-50%,-50%)}
+.clist .cl-hd{display:flex;align-items:center;justify-content:space-between;padding:8px 8px 6px 12px;color:#152A2E;font-size:15px}
+.clist .cl-x{width:36px;height:36px;border:0;border-radius:50%;background:rgba(21,42,46,.07);font-size:22px;line-height:1;color:#152A2E;cursor:pointer}
+.clist .cl-r{display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:12px;width:100%;padding:8px;border:0;border-radius:12px;background:none;text-align:left;cursor:pointer;color:#152A2E;font:inherit}
+.clist .cl-r:hover,.clist .cl-r:focus-visible{background:rgba(21,42,46,.06)}
+.clist .cl-r i{width:52px;height:52px;border-radius:10px;background-size:cover;background-position:center}
+.clist .cl-r b{display:block;font-size:16px;font-weight:600}
+.clist .cl-r small{display:block;font-size:13px;color:#5E6B6D;margin-top:2px}
+.clist .cl-r em{font-style:normal;font-size:14px;font-weight:600}
+/* Nov 12: zoom buttons visible on phone too, under the zoom pill on the right */
+@media (max-width:760px){html body .map .zoom:not(#x):not(#y){display:flex!important;position:absolute!important;right:14px!important;left:auto!important;bottom:auto!important;top:calc(env(safe-area-inset-top,0px) + 196px)!important;z-index:30}
+html body .map .zoom:not(#x):not(#y) button{width:44px!important;height:44px!important}
+html body.sliders .map .zoom:not(#x):not(#y){display:none!important}}

@@ -21,7 +21,7 @@
     '@media '+MQ+'{'+
       'header #navtoggle{display:none!important}'+
       '.fcm-btn{display:flex;position:absolute;right:14px;top:50%;transform:translateY(-50%);z-index:60;width:42px;height:42px;border-radius:50%;border:0;align-items:center;justify-content:center;background:rgba(255,255,255,.55);-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.7);color:#16282c;box-shadow:0 2px 10px rgba(0,0,0,.08);cursor:pointer;-webkit-tap-highlight-color:transparent}'+
-      '.fcm-btn svg{width:20px;height:20px}'+
+      '.fcm-btn svg{width:20px;height:20px}'+'.fcm-btn::after{content:"";position:absolute;inset:-3px;border-radius:50%}'+
       '.fcm-hasbtn a[href*="quiz-photo"]:not(.fcm a){display:none!important}'+
     '}'+
     '.fcm{position:fixed;inset:0;z-index:9999;background:#fff;color:#16282c;display:flex;flex-direction:column;padding:16px 22px 28px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .22s,transform .22s,visibility 0s .22s;font-family:inherit;overflow:auto}'+

@@ -55,7 +55,7 @@ function render(fast){
  const pin=t=>S.pop&&S.pop.id==t.id||S.hover==t.id;
  const slTop=S.mode=='sliders'&&S.top.length,dflt=!S.style&&!S.price&&!slTop;
  const CL=S.mode=='vibes'&&S.style?mkClu(vis.filter(t=>match(t)&&!pin(t)),v,k):[],inClu=new Set();CL.forEach(c=>c.forEach(t=>inClu.add(t.id)));
- vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&slTop)return;if(!pin(t)&&S.mode=='vibes'&&!S.style&&S.demo&&!t.v.includes(S.demo))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
+ vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&slTop){if(!S.top.includes(t.id))s+=`<circle class="dot sg" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${3*k}" fill="#A7B0B2" stroke="#fff" stroke-width="${1*k}"/>`;return}if(!pin(t)&&S.mode=='vibes'&&!S.style&&S.demo&&!t.v.includes(S.demo))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
   let r=any?(m?5.5:3):(sg?5:(zoomed?4.5:3));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.8));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#6B7678');
   if(pin(t))r=7;
   const dm=S.mode=='vibes'&&!S.style&&S.demo&&t.v.includes(S.demo),vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:dm?VCOL[S.demo]:null;
@@ -63,21 +63,22 @@ function render(fast){
   else s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(S.mode=='vibes'&&S.style&&!m?(sg?4.5:3.2):r)*k}" fill="${S.mode=='vibes'&&S.style&&!m?'#152A2E':fill}" ${S.mode=='vibes'&&S.style&&!m?'fill-opacity=".55"':''} opacity="${op}" stroke="#fff" stroke-width="${(r>3?2:1)*k}"/>`});
  CL.forEach(c=>{const L=c[0],n=c.length,bx=(L.x-v[0])/k,by=(L.y-v[1])/k;boxes.push([bx-16,by-16,32,32]);s+=`<g class="clu" data-ids="${c.map(t=>t.id).join(',')}" style="cursor:pointer"><circle cx="${L.x}" cy="${L.y}" r="${13*k}" fill="${VCOL[S.style]||'#152A2E'}" stroke="#fff" stroke-width="${2.4*k}" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,.3))"/><text x="${L.x}" y="${L.y+4.6*k}" text-anchor="middle" font-size="${13*k}" font-weight="600" fill="#fff" style="font-family:var(--mapf);pointer-events:none">${n}</text></g>`});
  // labels: pinned first, then matched sig, then matched zoomed
- const want=[];CL.forEach(c=>want.push([Object.assign({},c[0],{n:c[0].n.replace(/ \(.*\)$/,'')+' +'+(c.length-1),_clu:1,_off:20}),1]));vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);if(pin(t))want.push([t,0]);else if(m&&(S.style||S.price)){if(sg)want.push([t,1]);else if(zoomed||(S.mode=='vibes'&&isR(S.style)))want.push([t,2])}else if(sg&&!S.style&&!S.price&&!(S.mode=='vibes'&&S.demo&&!t.v.includes(S.demo)))want.push([t,2]);else if(zoomed&&m)want.push([t,3])});
+ const want=[];CL.forEach(c=>want.push([Object.assign({},c[0],c.length<=3?{n:c.map(t=>t.n.replace(/ \(.*\)$/,'')).sort((p,q)=>q.length-p.length)[0],_names:c.slice().sort((p,q)=>p.y-q.y).map(t=>[t.id,t.n.replace(/ \(.*\)$/,'')]),_clu:1,_off:20}:{n:c[0].n.replace(/ \(.*\)$/,'')+' +'+(c.length-1),_clu:1,_off:20}),c.length<=3?0.5:1]));vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);if(pin(t))want.push([t,0]);else if(m&&(S.style||S.price)){if(sg)want.push([t,1]);else if(zoomed||(S.mode=='vibes'&&isR(S.style)))want.push([t,2])}else if(sg&&!S.style&&!S.price&&!(S.mode=='vibes'&&S.demo&&!t.v.includes(S.demo)))want.push([t,2]);else if(zoomed&&m)want.push([t,3])});
  if(S.mode=='vibes'&&isR(S.style)){const cap=w<600?5:8,ok=new Set(T.filter(t=>t.v.includes(S.style)).map(t=>[t,-t.v.filter(v=>!isR(v)).length,Math.min(...['beach','walk','charm','meet','water'].map(k=>LD[t.id].rk[k]||999))]).sort((a,b)=>a[1]-b[1]||a[2]-b[2]).map(x=>x[0]).slice(0,cap).map(t=>t.id));for(let i=want.length-1;i>=0;i--)if(want[i][1]>0&&!want[i][0]._clu&&!ok.has(want[i][0].id))want.splice(i,1)}
  want.sort((a,b)=>a[1]-b[1]);if(!zoomed&&(S.style||S.price)){let c=0;const keep=[];want.forEach(w=>{if(w[1]==0||c<6){keep.push(w);if(w[1]>0)c++}});want.length=0;keep.forEach(w=>want.push(w))}
  let lab='';const placed=new Set();
- want.forEach(([t0,pr])=>{const t=t0._clu?t0:Object.assign({},t0,{n:t0.n.replace(/ \(.*\)$/,'')}),fs=(pr==3?12:13.5),cw=fs*.57,tw=t.n.length*cw+4,th=fs+4;
+ want.forEach(([t0,pr])=>{const t=t0._clu?t0:Object.assign({},t0,{n:t0.n.replace(/ \(.*\)$/,'')}),fs=(pr==3?12:13.5),cw=fs*.57,tw=t.n.length*cw+4,nl=t._names?t._names.length:1,th=(fs+4)*nl;
   const left=t.c=='gulf'||t.c=='panhandle'&&false;const sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;
   const o0=t._off||10,opts=t.c=='atlantic'?[[o0,1],[-o0,-1]]:[[-o0,-1],[o0,1]];
   for(const [dx,dir] of opts){const bx=dir>0?sx+dx:sx+dx-tw;if(pr>0&&hit(bx,sy-th/2,tw,th))continue;placed.add(t.id);if(pr==0)boxes.push([bx,sy-th/2,tw,th]);
    if(pr==0)lab+=`<rect x="${v[0]+(bx-8)*k}" y="${v[1]+(sy-15)*k}" width="${(tw+16)*k}" height="${30*k}" rx="${15*k}" fill="#152A2E"/><text class="lbl" x="${v[0]+(bx+tw/2)*k}" y="${v[1]+(sy+5.5)*k}" text-anchor="middle" font-size="${fs*k}" fill="#fff" style="fill:#fff;stroke:none">${t.n}</text>`;
+   else if(t._names){boxes.push([bx,sy-th/2,tw,th]);t._names.forEach(([id,nm],i)=>{lab+=`<text class="lbl clul" data-id="${id}" x="${v[0]+(dir>0?bx:bx+tw)*k}" y="${v[1]+(sy-th/2+(fs+4)*i+fs*.9)*k}" text-anchor="${dir>0?'start':'end'}" font-size="${fs*k}" stroke-width="${2.4*k}">${nm}</text>`})}
    else lab+=`<text class="lbl ${pr==3?'sm':''}" x="${v[0]+(dir>0?bx:bx+tw)*k}" y="${v[1]+(sy+fs*.35)*k}" text-anchor="${dir>0?'start':'end'}" font-size="${fs*k}" stroke-width="${2.4*k}">${t.n}</text>`;break}});
  if(dflt&&!zoomed)SIG.forEach(id=>{if(!placed.has(id)&&!(S.pop&&S.pop.id==id))s=s.replace(new RegExp('<circle class="dot" data-id="'+id+'"[^>]*/>'),'')});
  vis.forEach(t=>{if(!pin(t)&&((!zoomed&&dflt&&!SIG.includes(t.id))||(slTop&&!S.top.includes(t.id))))return;const sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;boxes.push([sx-6,sy-6,12,12])});
  // cities last, only where free
  let cs='';if(!(S.mode=='sliders'&&S.top.length&&w<600))CITIES.forEach(([n,la,lo])=>{const x=X(lo),y=Y(la);if(x<v[0]||x>v[0]+v[2]||y<v[1]||y>v[1]+v[3])return;if(T.some(t=>t.n.startsWith(n)))return;const sx=(x-v[0])/k,sy=(y-v[1])/k,fs=12.5,tw=n.length*fs*.72;if(vis.some(t=>Math.hypot((t.x-x)/k,(t.y-y)/k)<(S.mode=='sliders'&&S.top.slice(0,5).includes(t.id)?90:S.mode=='sliders'&&S.top.includes(t.id)?50:26)))return;if(hit(sx+6,sy-9,tw+4,18))return;cs+=`<circle cx="${x}" cy="${y}" r="${3.6*k}" fill="#fff" stroke="#9AA3A5" stroke-width="${1.4*k}"/><text class="city" x="${x+9*k}" y="${y+5*k}" font-size="${fs*k}" stroke-width="${3.5*k}">${n}</text>`});
- if(S.mode=='sliders'&&S.top.length){let tp='',tl='',tpB='',tpS='';const order=S.top.map((id,i)=>[id,i]);const big=order.slice(0,5),sm=order.slice(5).reverse();
+ if(S.mode=='sliders'&&S.top.length){let tp='',tl='',tpB='',tpS='';const order=S.top.map((id,i)=>[id,i]);const big=order.slice(0,5),sm=order.slice(5,25).reverse();
  {boxes.length=0;big.forEach(([id])=>{const t=T.find(x=>x.id==id);boxes.push([(t.x-v[0])/k-17,(t.y-v[1])/k-17,34,34])})}const TB=[];const own=(bx,by,bw,bh,px,py)=>{if(bx<4||bx+bw>w-4||by<2||by+bh>h-2)return true;for(const q of boxes){if(px>=q[0]&&px<=q[0]+q[2]&&py>=q[1]&&py<=q[1]+q[3])continue;if(bx<q[0]+q[2]&&bx+bw>q[0]&&by<q[1]+q[3]&&by+bh>q[1])return true}return false};
  const one=([id,i],B)=>{const t=T.find(x=>x.id==id);if(!inView(t,-40*k))return;const hv=S.hover==id||(S.pop&&S.pop.id==id),sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;
   if(B){const nm=t.n.replace(/ \(.*\)$/,''),fs=14,tw=nm.length*fs*.6,R=16,ext=tw+14;let side=0;
@@ -88,7 +89,7 @@ function render(fast){
    else{boxes.push([sx-R-2,sy-R-2,2*R+4,2*R+4]);g+=`<circle cx="${t.x}" cy="${t.y}" r="${R*k}" fill="#152A2E" stroke="#fff" stroke-width="${2.6*k}" style="filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))"/>`}
    g+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(side?12:R)*k}" fill="${side?'#fff':'#152A2E'}" stroke="none"/><text x="${t.x}" y="${t.y+5.2*k}" text-anchor="middle" style="font-family:var(--mapf);pointer-events:none" font-weight="700" font-size="${14.5*k}" fill="${side?'#152A2E':'#fff'}">${i+1}</text>`;
    if(side)g=`<g class="pp" data-id="${t.id}">`+g.replace('<rect ',`<rect class="dot" data-id="${t.id}" `)+'</g>';tpB=tpB+'';TB.unshift(g);return}
-  const r=9.5*k;tpS+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${r}" fill="${hv?'#152A2E':'#fff'}" stroke="${hv?'#fff':'#5E6B6D'}" stroke-width="${1.6*k}"/><text x="${t.x}" y="${t.y+4.4*k}" text-anchor="middle" style="font-family:var(--mapf)" font-weight="600" font-size="${11.5*k}" fill="${hv?'#fff':'#3A4A4D'}" pointer-events="none">${i+1}</text>`;
+  /* Nov 12: next best towns as small black dots (Regions map size), no numbers */tpS+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(hv?6:4.6)*k}" fill="#152A2E" stroke="#fff" stroke-width="${1.6*k}"/>`;
   if(hv){const nm=t.n.replace(/ \(.*\)$/,''),sd=t.c=='atlantic'?1:-1;tl+=`<text class="lbl sm" x="${t.x+sd*15*k}" y="${t.y+4.6*k}" text-anchor="${sd>0?'start':'end'}" font-size="${13*k}" stroke-width="${2.4*k}" style="font-weight:600">${nm}</text>`}};
  big.forEach(x=>one(x,true));sm.forEach(x=>one(x,false));
  tp=tpS+TB.join('');ov.innerHTML=s.replace(/<circle class="dot"([^>]*)r="[^"]*" fill="#152A2E"/g,'<circle class="dot"$1r="'+(2.6*k)+'" fill="#8C9799"')+cs+tp+tl;if(S.pop)placePop();return}
@@ -149,7 +150,7 @@ box.addEventListener('pointermove',e=>{if(!PTR.has(e.pointerId))return;PTR.set(e
 const ptrEnd=e=>{PTR.delete(e.pointerId);if(PTR.size<2&&pinch){pinch=null;if(dr){const p0=[...PTR.values()][0];if(p0){dr.x=p0[0];dr.y=p0[1];dr.vb=S.vb.slice()}}render()}};
 box.addEventListener('pointerup',ptrEnd);box.addEventListener('pointercancel',ptrEnd);
 box.addEventListener('pointercancel',()=>{dr=null;box.classList.remove('drag')});box.addEventListener('pointermove',e=>{if(!dr||pinch)return;const dx=e.clientX-dr.x,dy=e.clientY-dr.y;if(Math.abs(dx)+Math.abs(dy)>6){dr.moved=true;box.classList.add('drag')}if(!dr.moved)return;const[w]=size(),k=dr.vb[2]/w;S.vb=clampVb([dr.vb[0]-dx*k,dr.vb[1]-dy*k,dr.vb[2],dr.vb[3]]);S.userMoved=1;render(true)});
-box.addEventListener('pointerup',e=>{if(!dr||PTR.size)return;box.classList.remove('drag');if(dr.moved){if(S.region){S.region='';tags()}list()}else{const el=document.elementFromPoint(e.clientX,e.clientY);const cg=el&&el.closest('.clu');if(cg){cluZoom(cg.dataset.ids.split(','))}else{const c=el&&el.closest('circle.dot');if(c){openPop(T.find(t=>t.id==c.dataset.id))}else if(!el.closest('.pop'))closePop()}}dr=null});
+box.addEventListener('pointerup',e=>{if(!dr||PTR.size)return;box.classList.remove('drag');if(dr.moved){if(S.region){S.region='';tags()}list()}else{const el=document.elementFromPoint(e.clientX,e.clientY);const nl=el&&el.closest('.clul');const cg=el&&el.closest('.clu');if(nl){const t=T.find(x=>x.id==nl.dataset.id);t&&flyTo(t)}else if(cg){cluZoom(cg.dataset.ids.split(','))}else{const c=el&&el.closest('circle.dot');if(c){openPop(T.find(t=>t.id==c.dataset.id))}else if(!el.closest('.pop'))closePop()}}dr=null});
 $('grid').addEventListener('mouseover',e=>{const c=e.target.closest('.card');const id=c?c.dataset.id:null;if(id!==S.hover){S.hover=id;render()}});
 $('grid').addEventListener('mouseleave',()=>{S.hover=null;render()});
 $('q').addEventListener('keydown',e=>{if(e.key!='Enter')return;const q=e.target.value.trim().toLowerCase();if(!q)return;
@@ -162,8 +163,14 @@ S.need={};
 function cluPrio(t){return [-t.v.filter(v=>!isR(v)).length,Math.min(...['beach','walk','charm','meet','water'].map(q=>LD[t.id].rk[q]||999))]}
 function mkClu(L,v,k){const R=40,P=L.map(t=>[t,cluPrio(t)]).sort((a,b)=>a[1][0]-b[1][0]||a[1][1]-b[1][1]).map(x=>x[0]),cs=[];
  P.forEach(t=>{const sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;const c=cs.find(c=>Math.hypot((c[0].x-v[0])/k-sx,(c[0].y-v[1])/k-sy)<R);if(c)c.push(t);else cs.push([t])});return cs.filter(c=>c.length>1)}
-function cluZoom(ids){const M=ids.map(id=>T.find(t=>t.id==id));if(S.vb[2]<=MINW*1.08){closePop();openPop(M[0]);S.mode=='vibes'&&vRender();return}
- const lo=M.map(t=>t.lo),la=M.map(t=>t.la);closePop();S.zoomedTo='clu';go(fit([Math.min(...lo)-.04,Math.max(...lo)+.04,Math.min(...la)-.03,Math.max(...la)+.03],.2),520);setTimeout(zoomPill,60)}
+function cluZoom(ids){const M=ids.map(id=>T.find(t=>t.id==id)).filter(Boolean);if(S.vb[2]<=MINW*1.08){cluList(M);return}
+ const lo=M.map(t=>t.lo),la=M.map(t=>t.la),to=fit([Math.min(...lo)-.04,Math.max(...lo)+.04,Math.min(...la)-.03,Math.max(...la)+.03],.2);closePop();S.zoomedTo='clu';go(to,520);setTimeout(zoomPill,60);
+ // towns that sit nearly on top of each other never split, so the list opens as soon as the zoom lands
+ if(to[2]<=MINW*1.08)setTimeout(()=>cluList(M),560)}
+function cluList(M){closePop();{const cx=M.reduce((s,t)=>s+t.x,0)/M.length,cy=M.reduce((s,t)=>s+t.y,0)/M.length,v=S.vb;go([cx-v[2]/2,cy-v[3]*.3,v[2],v[3]],380)}let el=$('clist');if(!el){el=document.createElement('div');el.id='clist';el.className='clist';el.setAttribute('role','dialog');el.setAttribute('aria-label','Towns here');box.appendChild(el);document.addEventListener('pointerdown',e=>{if(el.classList.contains('on')&&!e.target.closest('#clist'))el.classList.remove('on')},true)}
+ el.innerHTML=`<div class="cl-hd"><b>${M.length} towns here</b><button type="button" class="cl-x" aria-label="Close">&times;</button></div>`+M.map(t=>`<button type="button" class="cl-r" data-id="${t.id}"><i style="background-image:url('${t.img}')"></i><span><b>${t.n.replace(/ \(.*\)$/,'')}</b><small>${(t.r||'').split(' · ').pop()}</small></span><em>${t.p||''}</em></button>`).join('');
+ el.querySelector('.cl-x').onclick=()=>el.classList.remove('on');el.querySelectorAll('.cl-r').forEach(b=>b.onclick=()=>{el.classList.remove('on');const t=T.find(x=>x.id==b.dataset.id);openPop(t);S.mode=='vibes'&&vRender()});
+ requestAnimationFrame(()=>el.classList.add('on'))}
 function needOk(t){const n=S.need,d=LD[t.id];if(n.bud&&!(d.med&&d.med<=n.bud))return false;if(n.school&&!d.sc)return false;if(n.air&&!d.air)return false;return true}
 const needOn=()=>Object.keys(S.need).some(k=>S.need[k]);
 function vOrder(){const R=LK.REGIONS.map(r=>r.id),pos=t=>t.c=='panhandle'?t.lo:t.c=='gulf'?-t.la:t.c=='keys'?-t.lo:t.la;
@@ -176,7 +183,7 @@ function vRender(){const _r=document.querySelector('#vp .tiles.vt'),_sl=_r?_r.sc
   h=`<div class="vm-lh"><div class="vm-eb">${ri?`Region · ${cnt(v)} beach towns`:`${T.length} beach towns · ${KS.length} ${RG?'regions':'styles'}`}</div>${ri?`<h2>${VIBES[v]}</h2>`:''}<button type="button" class="vm-all" onclick="this.closest('.vp').classList.toggle('vt-open');this.textContent=this.closest('.vp').classList.contains('vt-open')?'Show less':'See all ${KS.length}'">See all ${KS.length}</button></div>${ri?`<p class="vm-ri">${ri.intro}</p>`:''}${v&&LK.VGUIDE[v]?`<a class="vm-guide vm-guide-t" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="tiles vt${RG?' rg':''}">${KS.map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('${img(k)}')"><i>${RG?'':`<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>`}${cnt(k)}</i><span class="tt"><b>${VIBES[k]}</b><small>${LK.VSUBL[k]||VSUB[k]}</small></span></div></button>`).join('')}</div>`}
  else{const L=vOrder();
   h=`<div class="vm-sh" style="background-image:url('img/vibes/${v}.webp')"><button class="vm-back" id="vback">← All styles</button><div class="vm-sht"><h2><i style="background:${VCOL[v]}"></i>${VIBES[v]}</h2><p>${L.length} towns · ${LK.VSUBL[v]||VSUB[v]}</p></div></div>${LK.VGUIDE[v]?`<a class="vm-guide" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="vm-eb vm-lt">Panhandle around to the Keys</div><ol class="vm-list">${L.map((t,i)=>`<li><button class="vm-row${S.pop&&S.pop.id==t.id?' on':''}" data-vpick="${t.id}" style="--vc:${VCOL[v]}"><span class="vm-n">${i+1}</span><span class="vm-rt"><b>${t.n}</b><small>${LD[t.id].rn}</small></span></button></li>`).join('')}</ol>`}
- h+=`<div class="vm-lf"><a href="quiz-photo.html">See your top 5 towns</a><p>8 quick questions, matched to how you live</p></div>`;
+ /* Nov 12: no See your top 5 button on Vibe and Regions sheets (Mark: it gets in the way when you swipe up) */
  $('vp').innerHTML=h;
  $('vp').querySelectorAll('.tile').forEach(b=>{b.classList.toggle('on',b.dataset.k==S.style);b.onclick=()=>{if(S.style==b.dataset.k)return;const sl=$('vp').querySelector('.tiles.vt').scrollLeft;pickStyle(b.dataset.k);const r=$('vp').querySelector('.tiles.vt');if(r)r.scrollLeft=sl}});
  $('vp').querySelectorAll('[data-vpick]').forEach(b=>{b.onclick=()=>flyTo(T.find(t=>t.id==b.dataset.vpick));b.onmouseenter=()=>{S.hover=b.dataset.vpick;render()};b.onmouseleave=()=>{S.hover=null;render()}});
@@ -399,17 +406,19 @@ function ensurePick(){if(S.mode!='vibes'||S.style||S.restoring)return;let k;if(S
   {id:'pick',when:()=>S.mode=='vibes',el:()=>document.querySelector('#vp .tiles.vt'),txt:()=>S.sub=='regions'?'Pick a region to see its towns.':'Pick a style that feels like home.'},
   {id:'dot',when:()=>S.mode=='vibes'&&done('pick'),el:()=>null,txt:()=>'Tap any dot to meet that town.'},
   {id:'drag',when:()=>SHON()&&done('pick')&&done('dot'),el:()=>$('res'),txt:()=>'Drag up to see more.'},
-  {id:'slide',when:()=>S.mode=='sliders',el:()=>$('res'),txt:()=>'Drag up and slide what matters to you.'}];
+  {id:'slide',when:()=>S.mode=='sliders'&&SHON(),el:()=>$('res'),txt:()=>'Drag up and slide what matters to you.'}];
  let on=null,tm=null;
  const hide=()=>{clearTimeout(tm);if(on){const b=on.b;b.classList.remove('in');setTimeout(()=>b.remove(),250);on=null}};
  const finish=id=>{mark(id);if(on&&on.id==id)hide();setTimeout(next,900)};
- function next(){if(on||document.hidden)return;const t=TIPS.find(t=>!done(t.id)&&t.when());if(!t)return;
+ function next(){if(on||document.hidden)return;try{if(sessionStorage.getItem('fc-tip-v'))return}catch(e){}const t=TIPS.find(t=>!done(t.id)&&t.when());if(!t)return;
   const b=document.createElement('div');b.className='ftip';b.setAttribute('role','status');b.innerHTML=`<span>${t.txt()}</span><i class="ft-arr"></i>`;document.body.appendChild(b);
   const el=t.el(),w=Math.min(280,innerWidth-32);let x=(innerWidth-w)/2,y=Math.round(innerHeight*.42),arr=false;
   if(el){const r=el.getBoundingClientRect();if(r.width){const top=el===$('res')?r.top:r.top;x=Math.max(16,Math.min(innerWidth-w-16,r.left+r.width/2-w/2));y=top-b.offsetHeight-12;arr=true}}
   Object.assign(b.style,{left:x+'px',top:Math.max(80,y)+'px',width:w+'px'});b.querySelector('.ft-arr').style.display=arr?'':'none';
-  b.onclick=()=>finish(t.id);on={id:t.id,b};requestAnimationFrame(()=>b.classList.add('in'));
-  tm=setTimeout(()=>{if(on&&on.id==t.id){hide()}},6500)}
+  b.onclick=()=>finish(t.id);on={id:t.id,b};try{sessionStorage.setItem('fc-tip-v','1')}catch(e){}requestAnimationFrame(()=>b.classList.add('in'));
+  tm=setTimeout(()=>{if(on&&on.id==t.id){hide()}},3000)}
+ // any touch, scroll, drag or key anywhere kills the tip right away (and it never comes back)
+ ['pointerdown','touchstart','wheel','keydown'].forEach(ev=>addEventListener(ev,()=>{if(on){const id=on.id;mark(id);clearTimeout(tm);const b=on.b;b.remove();on=null}},{passive:true,capture:true}));
  // the actions that complete each tip
  const wrap=(n,f)=>{const o=window[n];window[n]=function(){const r=o.apply(this,arguments);try{f.apply(this,arguments)}catch(e){}return r}};
  wrap('pickStyle',()=>{if(!S.auto&&!S.restoring)finish('pick')});

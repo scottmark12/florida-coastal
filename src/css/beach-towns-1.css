@@ -263,3 +263,10 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-dots{disp
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-dots i{width:7px;height:7px;border-radius:50%;background:rgba(21,42,46,.22);cursor:pointer;transition:background .2s,width .2s}
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-dots i.on{background:#152A2E;width:18px;border-radius:4px}
 @media (min-width:761px){html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-frame{height:440px}html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-row{margin:0 -6px;padding:6px;scroll-padding:0 6px}html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx{flex-basis:300px!important;height:170px!important}}
+
+/* Nov 12: region map labels */
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-l{opacity:0;transition:opacity .3s ease;pointer-events:none}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-l.in{opacity:1}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-tl{font-family:'DM Sans',system-ui,sans-serif;font-weight:600;fill:#152A2E;stroke:#F3F1EC;stroke-opacity:.9;paint-order:stroke;stroke-linejoin:round}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-pl{font-family:'DM Sans',system-ui,sans-serif;font-weight:600;fill:#fff}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-d a.lb circle{r:calc(var(--k)*6px)}
