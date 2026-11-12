@@ -26,12 +26,14 @@ chips();
 function size(){const r=box.getBoundingClientRect();return [r.width,r.height]}
 const SAT=(()=>{let v=0;const f=()=>{const d=document.createElement('div');d.style.cssText='position:fixed;top:0;height:env(safe-area-inset-top);visibility:hidden';document.body.appendChild(d);v=d.offsetHeight||0;d.remove()};if(document.body)f();else addEventListener('DOMContentLoaded',f);return()=>v})();
 const HDR=()=>matchMedia('(max-width:760px)').matches?64+SAT():0;
-function fit(b,pad=.08,raw){const [w,h0]=size(),hd=HDR(),bt=(!raw&&typeof SHON=='function'&&SHON())?Math.max(PK()+10+((typeof SHEET=='undefined'||SHEET.st=='peek')&&$('pop')&&$('pop').classList.contains('on')&&!$('pop').classList.contains('full')?$('pop').offsetHeight+14+((document.querySelector('.cm-tip.on.st2')||{}).offsetHeight+14||0):0),(typeof SHEET!='undefined'&&SHEET.st=='half')?SHRES()-4:0):0,h=Math.max(160,h0-hd-bt);const r0=fit0(b,pad,w,h);const kk=r0[2]/w;return [r0[0],r0[1]-hd*kk,r0[2],r0[3]+(h0-h-hd+hd)*kk]}
+function fit(b,pad=.08,raw){const [w,h0]=size(),hd=HDR(),bt=(!raw&&typeof SHON=='function'&&SHON())?Math.max(PK()+10+((typeof SHEET=='undefined'||SHEET.st=='peek')&&$('pop')&&$('pop').classList.contains('on')&&!$('pop').classList.contains('full')?$('pop').offsetHeight+14+((document.querySelector('.cm-tip.on.st2')||{}).offsetHeight+14||0):0),(typeof SHEET!='undefined'&&SHEET.st=='half')?SHRES()-4:0):0,h=Math.max(160,h0-hd-bt);const r0=fit0(b,pad,w,h);const kk=r0[2]/w;
+ if(w<600&&!raw&&typeof PHMAX=='function'&&r0[2]>PHMAX()){/* phone: never wider than the Florida footprint; center the towns above the panel and let cards sit over the bottom */const W=PHMAX(),k2=W/w,h2=Math.max(160,h0-hd-(SHON()?PK()+10:0)),cx=(X(b[0])+X(b[1]))/2,cy=(Y(b[3])+Y(b[2]))/2;return [cx-w/2*k2,cy-(hd+h2/2)*k2,W,h0*k2]}
+ return [r0[0],r0[1]-hd*kk,r0[2],r0[3]+(h0-h-hd+hd)*kk]}
 function fit0(b,pad,w,h){const x0=X(b[0]),x1=X(b[1]),y0=Y(b[3]),y1=Y(b[2]);let bw=(x1-x0)*(1+pad*2),bh=(y1-y0)*(1+pad*2);const ar=w/h;if(bw/bh<ar)bw=bh*ar;else bh=bw/ar;if(bw<MINW){bh*=MINW/bw;bw=MINW}return [(x0+x1)/2-bw/2,(y0+y1)/2-bh/2,bw,bh]}
 const ALL=[-87.75,-79.75,24.4,31.1];const MINW=150;
 let anim=null;
 function vbOk(vb){return vb&&vb.length==4&&vb.every(Number.isFinite)&&vb[2]>=MINW*.85&&vb[3]>=60&&vb[2]<6000}
-function go(vb,ms=450){if(!vbOk(vb)){const[w,h]=size();vb=(w>20&&h>20)?fit0(ALL,.02,w,h):S.vb}if(!vbOk(S.vb))S.vb=vb.slice();cancelAnimationFrame(anim);const a=S.vb.slice(),t0=performance.now();const step=n=>{let p=Math.min(1,(n-t0)/ms);p=1-Math.pow(1-p,3);S.vb=a.map((v,i)=>v+(vb[i]-v)*p);render(p<1);if(p<1)anim=requestAnimationFrame(step);else{render();list()}};anim=requestAnimationFrame(step)}
+function go(vb,ms=450){if(!vbOk(vb)){const[w,h]=size();vb=(w>20&&h>20)?fit0(ALL,.02,w,h):S.vb}{const[w0]=size();if(w0>20&&w0<600&&vb[2]>PHMAX()){const f=PHMAX()/vb[2],cx=vb[0]+vb[2]/2,cy=vb[1]+vb[3]/2;vb=[cx-vb[2]*f/2,cy-vb[3]*f/2,vb[2]*f,vb[3]*f]}}if(!vbOk(S.vb))S.vb=vb.slice();cancelAnimationFrame(anim);const a=S.vb.slice(),t0=performance.now();const step=n=>{let p=Math.min(1,(n-t0)/ms);p=1-Math.pow(1-p,3);S.vb=a.map((v,i)=>v+(vb[i]-v)*p);render(p<1);if(p<1)anim=requestAnimationFrame(step);else{render();list()}};anim=requestAnimationFrame(step)}
 function match(t){if(S.style&&!t.v.includes(S.style))return false;if(S.mode=="vibes"&&!needOk(t))return false;if(S.price){const[a,b]=S.price.split('-').map(Number);if(t.pv==null||t.pv<a||t.pv>=b)return false}return true}
 function inView(t,m=0){const v=S.vb;return t.x>v[0]+m&&t.x<v[0]+v[2]-m&&t.y>v[1]+m&&t.y<v[1]+v[3]-m}
 const RA=()=>S.mode=='vibes'&&S.sub=='regions'&&!S.style;
@@ -39,6 +41,7 @@ const RLAB=[['panhandle','The Panhandle',29.42,-86.3],['nature-coast-r','Nature 
 function rSweep(){try{if(sessionStorage.getItem('fc-rsweep'))return;sessionStorage.setItem('fc-rsweep','1')}catch(e){}let i=0;const step=()=>{if(!RA()){S.rHL=null;render();return}S.rHL=i<R7.length?R7[i][0]:null;render();if(i++<R7.length)setTimeout(step,1000)};setTimeout(step,700)}
 function render(fast){
  if(!vbOk(S.vb)){const[w0,h0]=size();if(w0>20&&h0>20)S.vb=fit0(ALL,.02,w0,h0)}
+ {const[w0]=size();if(w0>20&&w0<600&&S.vb&&S.vb[2]>PHMAX()*1.001){const f=PHMAX()/S.vb[2],c=[S.vb[0]+S.vb[2]/2,S.vb[1]+S.vb[3]/2];S.vb=[c[0]-S.vb[2]*f/2,c[1]-S.vb[3]*f/2,S.vb[2]*f,S.vb[3]*f]}}
  const [w,h]=size(),v=S.vb,k=v[2]/w;svg.setAttribute('viewBox',v.join(' '));base.style.setProperty('--k',k);
  const zoomed=v[2]<330,deep=v[2]<200;svg.classList.toggle('zin',k<.6);
  let s='';const boxes=[];
@@ -149,7 +152,9 @@ $('zin').onclick=()=>{const[w,h]=size();go(zoomAt(.6,w/2,h/2),300)};$('zout').on
 let wt;let mapActive=false;box.addEventListener('pointerdown',()=>{mapActive=true});document.addEventListener('pointerdown',e=>{if(!e.target.closest('#mapbox'))mapActive=false});
 const hint=document.createElement('div');hint.className='whint';hint.textContent='Click the map or hold Ctrl to zoom with your mouse';box.appendChild(hint);let ht;
 box.addEventListener('wheel',e=>{if(PH())return;if(!(mapActive||e.ctrlKey||e.metaKey)){hint.classList.add('on');clearTimeout(ht);ht=setTimeout(()=>hint.classList.remove('on'),1400);return}e.preventDefault();const r=box.getBoundingClientRect();S.vb=zoomAt(Math.exp(e.deltaY*.0015),e.clientX-r.left,e.clientY-r.top);S.region&&(S.region='',tags());render();clearTimeout(wt);wt=setTimeout(list,180)},{passive:false});
-function clampVb(v){const[w,h]=size();if(w<20||h<20)return v;const full=fit0(ALL,.02,w,h),mx=w<600?Math.min(full[2]*1.25,FLW()*1.08):full[2]*1.25,mn=MINW*.9;let nw=Math.min(mx,Math.max(mn,v[2])),q=nw/v[2],nh=v[3]*q;let cx=v[0]+v[2]/2,cy=v[1]+v[3]/2;cx=Math.min(X(ALL[1]),Math.max(X(ALL[0]),cx));cy=Math.min(Y(ALL[2]),Math.max(Y(ALL[3]),cy));return [cx-nw/2,cy-nh/2,nw,nh]}
+/* Nov 12: on phones the map never zooms out past the Florida footprint (you can always zoom in) */
+const PHMAX=()=>{try{return FLW()*.82}catch(e){return 1e9}};
+function clampVb(v){const[w,h]=size();if(w<20||h<20)return v;const full=fit0(ALL,.02,w,h),mx=w<600?PHMAX():full[2]*1.25,mn=MINW*.9;let nw=Math.min(mx,Math.max(mn,v[2])),q=nw/v[2],nh=v[3]*q;let cx=v[0]+v[2]/2,cy=v[1]+v[3]/2;cx=Math.min(X(ALL[1]),Math.max(X(ALL[0]),cx));cy=Math.min(Y(ALL[2]),Math.max(Y(ALL[3]),cy));return [cx-nw/2,cy-nh/2,nw,nh]}
 const PTR=new Map();let pinch=null;
 let dr=null;box.addEventListener('pointerdown',e=>{if(e.target.closest('.pop,.ctl,.zoom,.rdd'))return;PTR.set(e.pointerId,[e.clientX,e.clientY]);try{box.setPointerCapture(e.pointerId)}catch(x){}
  if(PTR.size==2){const[a,b]=[...PTR.values()],r=box.getBoundingClientRect();pinch={d0:Math.hypot(a[0]-b[0],a[1]-b[1]),vb:S.vb.slice(),mx:(a[0]+b[0])/2-r.left,my:(a[1]+b[1])/2-r.top};if(dr)dr.moved=true;return}
@@ -496,22 +501,25 @@ PK0=function(){const r=$('res'),m=r&&r.querySelector('.mode');if(!r||!m||!SHON()
  const RM=matchMedia('(prefers-reduced-motion: reduce)');
  function tEl(){if(!TT.dim){TT.dim=document.createElement('div');TT.dim.className='cm-hole';document.body.appendChild(TT.dim);TT.tip=document.createElement('div');TT.tip.className='cm-tip';TT.tip.setAttribute('role','dialog');document.body.appendChild(TT.tip)}}
  function tHTML(n,h,p,act){return `<div class="cm-top"><span class="cm-pg"><i class="${n==1?'on':''}"></i><i class="${n==2?'on':''}"></i>${n} of 2</span><button type="button" class="cm-skip">Skip</button></div><h4>${h}</h4><p>${p}</p><p class="do">${act}</p><i class="cm-ar"></i>`}
- function tPlace(el,html,under){tEl();const d=TT.dim,b=TT.tip,was=b.classList.contains('on');b.innerHTML=html;b.querySelector('.cm-skip').onclick=e=>{e.stopPropagation();tEnd(true)};
+ function tPlace(el,html,under,ring){tEl();const d=TT.dim,b=TT.tip,was=b.classList.contains('on');b.innerHTML=html;b.querySelector('.cm-skip').onclick=e=>{e.stopPropagation();tEnd(true)};
   const W=Math.min(290,innerWidth-32);b.style.width=W+'px';b.classList.toggle('mv',was&&!RM.matches);
   let x,y,ax=null,dn=false;const bh=b.offsetHeight;
-  if(el){const r=el.getBoundingClientRect(),pad=6;Object.assign(d.style,{left:r.left-pad+'px',top:r.top-pad+'px',width:r.width+pad*2+'px',height:r.height+pad*2+'px'});d.classList.add('on');d.classList.remove('pl');void d.offsetWidth;RM.matches||d.classList.add('pl');
+  if(el){const r=el.getBoundingClientRect(),pad=ring?7:6;d.classList.toggle('ring',!!ring);Object.assign(d.style,{left:r.left-pad+'px',top:r.top-pad+'px',width:r.width+pad*2+'px',height:r.height+pad*2+'px'});d.classList.add('on');d.classList.remove('pl');void d.offsetWidth;RM.matches||d.classList.add('pl');
    x=Math.max(16,Math.min(innerWidth-W-16,r.left+r.width/2-W/2));const above=r.top-bh-16>70;y=above?r.top-bh-16:Math.min(innerHeight-bh-16,r.bottom+16);dn=!above;ax=Math.max(22,Math.min(W-22,r.left+r.width/2-x))}
-  else{d.classList.remove('on','pl');x=(innerWidth-W)/2;const pe=$('pop'),pr=pe&&pe.classList.contains('on')?pe.getBoundingClientRect():null;
+  else{d.classList.remove('on','pl','ring');x=(innerWidth-W)/2;const pe=$('pop'),pr=pe&&pe.classList.contains('on')?pe.getBoundingClientRect():null;
    if(under&&pr){y=pr.top-bh-14;x=Math.max(16,Math.min(innerWidth-W-16,pr.left+pr.width/2-W/2));ax=W/2;dn=false}else{y=PH()?84:96}}
   Object.assign(b.style,{left:x+'px',top:Math.max(70,y)+'px'});b.classList.toggle('dn',dn);b.classList.toggle('ar',ax!=null);if(ax!=null)b.querySelector('.cm-ar').style.left=ax+'px';
   b.style.transformOrigin=ax!=null?`${ax}px ${dn?'0':'100%'}`:'50% 0';if(!was){b.classList.remove('on');void b.offsetWidth}b.classList.add('on')}
- function tHide(){if(TT.dim){TT.dim.classList.remove('on','pl');TT.tip.classList.remove('on','mv','st2')}}
+ function tHide(){if(TT.dim){TT.dim.classList.remove('on','pl','ring');TT.tip.classList.remove('on','mv','st2')}}
  function tEnd(skip){TT.k=null;TT.step=0;tHide();try{sessionStorage.setItem(KEY(G.k||kindNow()),'1')}catch(_){}const q=qBtn();q.classList.toggle('on',!S.pop);later()}
  function tour(k){TT.k=k;TT.step=1;const p=$('pop');p.dataset.intro='';p.classList.remove('on');if(SHON()&&SHEET.st!='peek')shSet('peek',true);
   setTimeout(()=>{if(k=='sliders'){const el=PH()?$('res'):$('sl');tPlace(el,tHTML(1,'What matters most?',PH()?'Pull this panel up. Each slider is one priority.':'Each slider is one priority.','Move one ↓'))}
    else{const el=document.querySelector('#vp .tiles.vt');tPlace(el,k=='regions'?tHTML(1,'Florida has seven coasts.','Each stretch has its own water, towns and pace.','Pick one below ↓'):tHTML(1,'Find your kind of coast.','Every town is tagged with the feel it has.','Pick one below ↓'))}},SHON()?380:60)}
  function tStep2(){if(!TT.k||TT.step!=1)return;TT.step=2;const sl=TT.k=='sliders';
-  setTimeout(()=>{tPlace(null,tHTML(2,'Now pick a town.',sl?'Tap any number for a closer look.':'Tap any dot for a closer look.',''),true);TT.tip.classList.add('st2');if(!sl&&SHON()&&S.style&&!S.pop)go(fitStyle(S.style),420)},SHON()?520:260)}
+  setTimeout(()=>{const el=tDot(sl);tPlace(el,tHTML(2,'Now pick a town.',sl?'Tap the number for a closer look.':'Tap this town for a closer look.',''),!el,!!el)},SHON()?620:360)}
+ function tDot(sl){const pe=$('pop'),pt=pe&&pe.classList.contains('on')?pe.getBoundingClientRect().top:innerHeight,ok=e=>{const r=e.getBoundingClientRect();return r.width&&r.top>120&&r.bottom<pt-20&&r.left>30&&r.right<innerWidth-30};
+  if(sl){const id=S.top&&S.top[0];const e=id&&document.querySelector(`#ov .pp[data-id="${id}"] circle`);return e&&ok(e)?e:null}
+  const L=vOrder();for(const t of L){const e=document.querySelector(`#ov circle.dot[data-id="${t.id}"]`);if(e&&ok(e))return e}return null}
  window.addEventListener('input',e=>{if(TT.k=='sliders'&&TT.step==1&&e.target.closest&&e.target.closest('#sl')){clearTimeout(TT.tm);TT.tm=setTimeout(tStep2,500)}},true);
  // tap the dimmed area to skip; Esc skips on desktop
  document.addEventListener('pointerdown',e=>{if(!TT.k||TT.step!=1)return;const t=e.target;if(t.closest&&(t.closest('.cm-tip')))return;
