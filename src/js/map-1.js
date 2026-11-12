@@ -329,7 +329,7 @@ function slRender(){
  const bv=S.slBud==null?0:5-S.slBud,lab=k=>SLC.find(c=>c[0]==k)[1].replace('Public schools','Public schools');
  const r2=k=>slRow('sl-'+k,k,lab(k),slWord2(k,S.sl[k]),SNAPI(S.sl[k]),0,3,1,slOn(k,S.sl[k]),slEnds(k));
  const moreOn=SL_MORE.some(k=>slOn(k,S.sl[k]));
- $('sl').innerHTML=`<div class="slh"><div class="slh-eb"><span>${T.length} beach towns · ${SLC.length} priorities</span><button class="sl-reset" id="slreset"${slAnySet()||S.slPc?'':' disabled'}>↺ Reset</button></div><h2>What matters to you?</h2><ol class="sl-how"><li><b>1</b>Push up what matters</li><li><b>2</b>Slide quiet or lively</li><li><b>3</b>Your top 5 light up on the map</li></ol></div>
+ $('sl').innerHTML=`<div class="slh"><div class="slh-eb"><span>${T.length} beach towns · ${SLC.length} priorities</span><button class="sl-reset" id="slreset"${slAnySet()||S.slPc?'':' disabled'}>↺ Reset</button></div><h2>What matters to you?</h2></div>
  <div id="sltop"></div>${slWhere()}<div class="sl2-grp">${slRow('sl-pace','pace','Quiet or lively',slWord2('pace',S.sl.pace),S.sl.pace,0,100,25,S.sl.pace!==50,slEnds('pace'))}${slRow('sl-bud','bud','Budget',LK.BUDW[bv],bv,0,5,1,bv>0,'')}</div>
  <div class="sl2-list">${SL_CORE.concat(SL_MORE).map(r2).join('')}</div>
  <div class="sl-mail"${(()=>{try{return localStorage.getItem('fc-mail')?' style="display:none"':''}catch(e){return ''}})()}><b>Email me these 5 towns</b><div><input id="slmail" type="email" placeholder="you@example.com" autocomplete="email"><button id="slsend">Send them</button></div><p id="slmsg"></p></div>
@@ -518,10 +518,13 @@ PK0=function(){const r=$('res'),m=r&&r.querySelector('.mode');if(!r||!m||!SHON()
    else{const el=document.querySelector('#vp .tiles.vt');tPlace(el,k=='regions'?tHTML(1,'Florida has seven coasts.','Each stretch has its own water, towns and pace.','Pick one below ↓'):tHTML(1,'Find your kind of coast.','Every town is tagged with the feel it has.','Pick one below ↓'))}},SHON()?380:60)}
  function tStep2(){if(!TT.k||TT.step!=1)return;TT.step=2;const sl=TT.k=='sliders';
   setTimeout(()=>{if(sl&&S.pop)closePop();const el=tDot(sl);tPlace(el,sl?tHTML(2,'Your #1 for what you picked.','Tap it for a closer look.',''):tHTML(2,'Now pick a town.','Tap this town for a closer look.',''),!el,!!el)},SHON()?620:360)}
- function tDot(sl){const pe=$('pop'),pt=pe&&pe.classList.contains('on')?pe.getBoundingClientRect().top:innerHeight,ok=e=>{const r=e.getBoundingClientRect();return r.width&&r.top>120&&r.bottom<pt-20&&r.left>30&&r.right<innerWidth-30};
+ function tDot(sl){const pe=$('pop'),pr=pe&&pe.classList.contains('on')?pe.getBoundingClientRect():null,rs=$('res'),rr=DFL()&&rs?rs.getBoundingClientRect():null,hit=(r,q)=>q&&r.right>q.left-16&&r.left<q.right+16&&r.bottom>q.top-16&&r.top<q.bottom+16,ok=e=>{const r=e.getBoundingClientRect();return r.width&&r.top>120&&r.bottom<innerHeight-20&&r.left>30&&r.right<innerWidth-30&&!hit(r,pr)&&!hit(r,rr)&&!(SHON()&&r.bottom>innerHeight-SHB()-20)};
   if(sl){const id=S.top&&S.top[0];const e=id&&document.querySelector(`#ov .pp[data-id="${id}"] circle`);return e&&ok(e)?e:null}
   const L=vOrder();for(const t of L){const e=document.querySelector(`#ov circle.dot[data-id="${t.id}"]`);if(e&&ok(e))return e}return null}
  window.addEventListener('input',e=>{if(TT.k=='sliders'&&TT.step==1&&e.target.closest&&e.target.closest('#sl')){tHide();if(!SHON()){clearTimeout(TT.tm);TT.tm=setTimeout(tStep2,900)}}},true);
+ // step 2 ring follows whoever is #1 now: fade while sliding, re-ring after a short pause
+ window.addEventListener('input',e=>{if(TT.k=='sliders'&&TT.step==2&&e.target.closest&&e.target.closest('#sl')){TT.dim&&TT.dim.classList.remove('on','pl');TT.tip&&TT.tip.classList.remove('on');clearTimeout(TT.tm);TT.tm=setTimeout(()=>{if(TT.k!='sliders'||TT.step!=2||(SHON()&&SHEET.st!='peek'&&SHEET.st!='low'))return;const el=tDot(true);if(el)tPlace(el,tHTML(2,'Your #1 for what you picked.','Tap it for a closer look.',''),false,true)},550)}},true);
+ addEventListener('fc-sl-see',()=>{if(TT.k=='sliders'&&TT.step==2)setTimeout(()=>{const el=tDot(true);if(el)tPlace(el,tHTML(2,'Your #1 for what you picked.','Tap it for a closer look.',''),false,true)},700)});
  // tap the dimmed area to skip; Esc skips on desktop
  document.addEventListener('pointerdown',e=>{if(!TT.k||TT.step!=1)return;const t=e.target;if(t.closest&&(t.closest('.cm-tip')||t.closest('.sl-see')))return;
   if(TT.k=='sliders'&&PH()&&t.closest&&t.closest('#res')){tHide();return}
@@ -555,7 +558,8 @@ PK0=function(){const r=$('res'),m=r&&r.querySelector('.mode');if(!r||!m||!SHON()
  const later=()=>setTimeout(show,60);
  mapIntro=function(){later()};
  ['closePop','pickStyle','setMode'].forEach(n=>{const o=window[n];window[n]=function(){const r=o.apply(this,arguments);later();return r}});
- const op=window.openPop;window.openPop=openPop=function(){const r=op.apply(this,arguments);qBtn().classList.remove('on');if(TT.k&&TT.step==2)tEnd();return r};
+ const op=window.openPop;window.openPop=openPop=function(){const r=op.apply(this,arguments);qBtn().classList.remove('on');if(TT.k&&TT.step==2&&performance.now()-(TT.tap||0)<900)tEnd();return r};
+ document.addEventListener('pointerdown',e=>{if(e.target.closest&&(e.target.closest('#mapbox')||e.target.closest('#slcar')))TT.tap=performance.now()},true);
  const ps2=window.pickStyle;window.pickStyle=pickStyle=function(){if(!S.auto){G.picked=1;G.sx=null}const r=ps2.apply(this,arguments);if(TT.k&&TT.k!='sliders'&&!S.auto)tStep2();return r};
  const sm2=window.setMode;window.setMode=setMode=function(){if(TT.k){TT.k=null;TT.step=0;tHide()}return sm2.apply(this,arguments)};
  setTimeout(show,900);
