@@ -555,13 +555,26 @@ html body svg .lbl.clul:not(#x){pointer-events:auto;cursor:pointer}
 @media (max-width:760px){html body .map .zoom:not(#x):not(#y){display:flex!important;position:absolute!important;right:14px!important;left:auto!important;bottom:auto!important;top:calc(env(safe-area-inset-top,0px) + 196px)!important;z-index:30}
 html body .map .zoom:not(#x):not(#y) button{width:44px!important;height:44px!important}
 html body.sliders .map .zoom:not(#x):not(#y){display:none!important}}
-/* Nov 12: swipe up hint, a soft fade at the foot of the closed sheet */
-.shint{display:none}
-@media (max-width:760px){.shint{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;justify-content:center;align-items:flex-end;gap:6px;padding:26px 0 calc(env(safe-area-inset-bottom,0px) + 12px);border:0;background:linear-gradient(180deg,rgba(246,248,249,0),rgba(246,248,249,.94) 46%,#F6F8F9);color:#152A2E;font:600 13.5px/1 'DM Sans',system-ui,sans-serif;opacity:0;pointer-events:none;transition:opacity .25s ease}
-.shint svg{margin-bottom:1px}
-.shint.on{opacity:1;pointer-events:auto}
+/* Nov 12 (v3): closed sheet 132px on every map. Vibe and Regions show a slim chip row; the photo tiles come with the pulled up sheet */
+.vchips,.shint,.shx{display:none}
+@media (max-width:760px){
+html body.sheet.vibes #res:not(.sh-up) .vp .vchips:not(#x){display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:2px -20px 0;padding:0 20px 2px;scroll-padding:0 20px}
+html body.sheet.vibes #res:not(.sh-up) .vp .vchips::-webkit-scrollbar{display:none}
+.vchip{flex:none;display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 14px;border-radius:999px;border:1px solid rgba(21,42,46,.14);background:#fff;color:#152A2E;font:500 14.5px/1 'DM Sans',system-ui,sans-serif;cursor:pointer;white-space:nowrap}
+.vchip i{width:9px;height:9px;border-radius:50%;flex:none}
+.vchip span{color:#6B7678;font-weight:500}
+.vchip.on{background:#152A2E;border-color:#152A2E;color:#fff}.vchip.on span{color:rgba(255,255,255,.7)}
+html body.sheet.vibes #res:not(.sh-up) .vp>*:not(.vchips){visibility:hidden}
+/* swipe hint sits right under the grab bar */
+html body.sheet.vibes #res .shint{display:flex;position:absolute;left:0;right:0;top:18px;z-index:5;justify-content:center;align-items:center;gap:4px;padding:0;margin:0;border:0;background:none;color:#5E6B6D;font:600 11.5px/1 'DM Sans',system-ui,sans-serif;letter-spacing:.02em;opacity:0;pointer-events:none;transition:opacity .2s}
+html body.sheet.vibes #res .shint.on{opacity:1;pointer-events:auto}
+html body.sheet.vibes #res:not(.sh-up) .mode{margin-top:17px!important}
 .shint.on svg{animation:shBob 1.6s ease-in-out .8s 4}
-@keyframes shBob{0%,100%{transform:none}50%{transform:translateY(-3px)}}}
+@keyframes shBob{0%,100%{transform:none}50%{transform:translateY(-3px)}}
+/* a clear way back from the full list */
+html body.sheet #res.sh-full .shx{display:flex;position:sticky;top:10px;margin:0 0 -36px auto;z-index:6;width:36px;height:36px;border-radius:50%;border:0;align-items:center;justify-content:center;background:rgba(21,42,46,.08);color:#152A2E;font-size:22px;line-height:1;cursor:pointer;float:right}
+}
+}
 /* Nov 12: one closed sheet height on every map; the region title only shows once the sheet is pulled up */
 @media (max-width:760px){html body.sheet #res:not(.sh-up) .vp .vm-lh h2{display:none!important}
 /* every card on the map is the same height, intro or town */
@@ -569,3 +582,19 @@ html body #pop.on:not(.full){height:136px!important;max-height:136px!important;o
 html body #pop .bintro p{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}}
 @media (max-width:760px){html body #pop .bintro p:not(#x){display:-webkit-box!important}}
 html body #mapbox #pop .bintro p:not(#x):not(#y):not(#z){display:-webkit-box!important}
+/* Nov 12 (v2): one roomy card on every phone map, 168px, nothing cut off */
+@media (max-width:760px){
+html body #mapbox #pop.pop.on:not(.full):not(#x):not(#y){height:168px!important;max-height:168px!important;display:grid!important;grid-template-columns:34% minmax(0,1fr)!important;padding:0!important;overflow:hidden!important;border-radius:18px!important}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .ph{height:100%!important;min-height:0!important;width:auto!important;border-radius:0!important;margin:0!important}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .bd{display:flex!important;flex-direction:column!important;gap:3px!important;padding:12px 14px 12px 14px!important;min-width:0!important;overflow:hidden!important}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .eb{font:600 10.5px/1.3 'DM Sans',system-ui,sans-serif!important;letter-spacing:.09em!important;text-transform:uppercase;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;padding-right:30px!important;margin:0!important;color:#5E6B6D}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) h3{font-size:21px!important;line-height:1.15!important;margin:0!important;white-space:nowrap!important;overflow:hidden!important;text-overflow:ellipsis!important;padding-right:24px!important}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .tags,html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .of,html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .pr{display:none!important}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) p,html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .why1{display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden!important;font:400 13.5px/1.35 'DM Sans',system-ui,sans-serif!important;margin:2px 0 0!important;color:#3A4A4D}
+html body.sliders #mapbox #pop.pop:not(.full):not(#x):not(#y) .why1+p{display:none!important}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .pnav,html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .bd>.go{margin-top:auto!important}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .pnav{display:flex!important;align-items:center;gap:6px}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .go{padding:0 12px!important;height:38px!important;display:flex!important;align-items:center;justify-content:center;font-size:14px!important;flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .pnav button{width:32px!important;height:38px!important;flex:none;padding:0!important}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .x{width:30px!important;height:30px!important;top:8px!important;right:8px!important;font-size:18px!important}
+html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .rkb{transform:scale(.85);transform-origin:top left}}
