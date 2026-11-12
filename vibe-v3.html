@@ -487,6 +487,14 @@ html body .sl:not(#x) .sl2 input[type=range]::-moz-range-thumb{width:26px;height
 .sl-inf a{color:#152A2E;font-weight:600;white-space:nowrap}
 .sl2.inf .sl-inf{display:block}
 html body .vm-lh:not(#x) .vm-all{margin-left:auto!important}
+
+/* ===== Nov 11 2026 patch: audit fixes. Phone header shows the Florida Coastal wordmark, the quiz button stays on screen, See all gets a 44px tap area ===== */
+@media (max-width:760px){
+html body > header .logo:not(#x):not(#y):not(#z){width:150px;border-radius:21px;background-image:url(img/fc-logo-black.png);background-size:118px auto}
+html body .vp .vm-lh .vm-all:not(#x):not(#y){padding:10px 0 10px 16px;margin:-10px 0 -6px}
+html body .vm-lf:not(#x):not(#y){position:sticky;bottom:0;padding:10px 0 calc(10px + env(safe-area-inset-bottom));margin-top:8px;z-index:4}
+html body .vm-lf:not(#x):not(#y) p{display:none}
+}
 </style>
 </head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-black.png" alt="Florida Coastal"></a>
@@ -567,8 +575,8 @@ function render(fast){
  const pin=t=>S.pop&&S.pop.id==t.id||S.hover==t.id;
  const slTop=S.mode=='sliders'&&S.top.length,dflt=!S.style&&!S.price&&!slTop;
  const CL=S.mode=='vibes'&&S.style?mkClu(vis.filter(t=>match(t)&&!pin(t)),v,k):[],inClu=new Set();CL.forEach(c=>c.forEach(t=>inClu.add(t.id)));
- vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&((!zoomed&&dflt&&!sg)||slTop))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
-  let r=any?(m?5.5:3):(sg?5:(zoomed?4.5:3.4));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.7));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#7F8B8D');
+ vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&slTop)return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
+  let r=any?(m?5.5:3):(sg?5:(zoomed?4.5:2.4));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.7));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#7F8B8D');
   if(pin(t))r=7;
   const vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:null;
   if(vc){const rr=pin(t)?7:5;s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${rr*k}" fill="${vc}" stroke="#fff" stroke-width="${2.2*k}" style="filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.25))"/>`}
@@ -734,6 +742,7 @@ $('mode').onclick=e=>{const b=e.target.closest('button');if(!b)return;setMode(b.
 const SLC=[['pace','Quiet or lively'],['meet','Social scene'],['walk','Walkability'],['water','On the water'],['beach','Beaches'],['outdoors','Active outdoors'],['afford','Affordability'],['airport','Airport access'],['charm','Coastal charm'],['edu','Public schools']];
 const SL_CORE=['beach','charm','water'],SL_MORE=['meet','walk','outdoors','airport','edu'];
 const slDef=k=>k=='pace'?50:0,slOn=(k,v)=>v!==slDef(k);
+const slEv=c=>c!='pace'&&!slAnySet()?33:S.sl[c];
 const slW=v=>v<=0?0:4*Math.pow(v/100,1.5);
 const slAim=(k,v)=>k!='pace'?[k,v]:v<50?['quiet',2*(50-v)]:v>50?['lively',2*(v-50)]:[k,0];
 const rkk=(t,k)=>(LD[t.id].rk[k])||LK.RANK_N,slVal=(t,k)=>LD[t.id].sv[k]||0;
@@ -744,10 +753,10 @@ const slIn=t=>S.slPr?LD[t.id].reg===S.slPr:!S.slPc||((typeof R7M!='undefined'&&R
 function slAnySet(){return SLC.some(([k])=>slOn(k,S.sl[k]))||S.slBud!=null}
 function slNone(){return !slAnySet()&&!S.slPc&&!S.slPr}
 function fitSl(t){let a=0,w=0,o=1;
- SLC.forEach(([c])=>{const [k,v]=slAim(c,S.sl[c]),x=slW(v)*(LK.CATMULT[k]||1);if(!x)return;a+=x*slVal(t,k);w+=x;const r=rkk(t,k);v>=90&&r>60&&(o*=r>110?.55:.8)});
+ SLC.forEach(([c])=>{const [k,v]=slAim(c,slEv(c)),x=slW(v)*(LK.CATMULT[k]||1);if(!x)return;a+=x*slVal(t,k);w+=x;const r=rkk(t,k);v>=90&&r>60&&(o*=r>110?.55:.8)});
  if(slBudOn()){const n=LD[t.id].bg[S.slBud],r=Math.max(1,5-1.5*n);a+=LK.BUDGET_W*LK.SLX*Math.pow(r/5,1.5);w+=LK.BUDGET_W*LK.SLX;n&&(o*=LK.BUDGET_MISS[Math.min(3,n)])}
  return w?o*a/w:0}
-function slPri(){return SLC.map(([c])=>slAim(c,S.sl[c])).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]).map(x=>x[0])}
+function slPri(){return SLC.map(([c])=>slAim(c,slEv(c))).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]).map(x=>x[0])}
 function slTie(t){return slPri().slice(0,3).reduce((s,k,i)=>s+(LK.RANK_N-rkk(t,k))*(3-i),0)}
 function slRank(){const F=fitSl;return T.filter(slIn).sort((x,y)=>Math.round(100*F(y))-Math.round(100*F(x))||slTie(y)-slTie(x)||F(y)-F(x))}
 const PH=()=>matchMedia('(max-width:760px)').matches;
@@ -831,11 +840,10 @@ function slRender(){
   FC.lead({kind:'matches',email:e,matches:top.map((t,i)=>({id:t.id,name:t.n,rank:i+1})),message:('Slider Map top 5: '+top.map(t=>t.n).join(', ')+'\n'+shareURL()).slice(0,2000)})
    .then(r=>{$('slmsg').textContent=r&&r.preview?'Preview: saved as a test, no email sent.':`On its way to ${e}.`}).catch(()=>{$('slmsg').textContent=FC.LIVE?"That didn't send. Check your connection and try again.":'Preview only: this works once the new site is live. Nothing was sent.'})};
  score(true)}
-function slReset(){SLC.forEach(([k])=>S.sl[k]=slDef(k));S.slBud=null;S.slPc=null;S.slPr=null;closePop();slRender();go(fit(ALL,.02))}
+function slReset(){SLC.forEach(([k])=>S.sl[k]=slDef(k));S.slBud=null;S.slPc=null;S.slPr=null;closePop();slRender()}
 function score(first){
- if(slNone()){S.top=[];closePop();$('sltop')&&($('sltop').innerHTML='');slCar([]);slPill();render();return}
  const R=slRank(),L=R.slice(0,5);S.top=R.slice(0,15).map(t=>t.id);S.F=fitSl;S.best=R.length?fitSl(R[0]):1;S.tie=L.length>1&&S.best-fitSl(L[1])<=.01;slCar(L);setTimeout(slPill,0);
- $('sltop')&&($('sltop').innerHTML=`<div class="vm-eb">Your top 5</div><ol>${L.map((t,i)=>`<li><a href="towns/${t.id}-v3.html"><span class="n">${i+1}</span><span class="nm"><b>${t.n}</b>${slWhy(t)?`<small>${slWhy(t)}</small>`:''}</span><span class="fw">${slFitWord(fitSl(t),S.best,i)}</span></a></li>`).join('')}</ol>`);
+ $('sltop')&&($('sltop').innerHTML=`<div class="vm-eb">${slAnySet()?'Your top 5':'Best all around · move a slider to make it yours'}</div><ol>${L.map((t,i)=>`<li><a href="towns/${t.id}-v3.html"><span class="n">${i+1}</span><span class="nm"><b>${t.n}</b>${slWhy(t)?`<small>${slWhy(t)}</small>`:''}</span><span class="fw">${slFitWord(fitSl(t),S.best,i)}</span></a></li>`).join('')}</ol>`);
  clearTimeout(S.ft);if(SLM()&&L.length&&SHON()&&SHEET.st=='full'){S.refit=1}else if(SLM()&&L.length){S.ft=setTimeout(()=>{if(!S.pop||!S.top.slice(0,5).includes(S.pop.id)||S.pop.id===S.auto)openPop(L[0],true);S.auto=L[0].id;go(slFit(L),first?0:550)},first?0:200)}else if(FIXED()){home()}else S.ft=setTimeout(()=>{const P=L;const[w,h]=size(),nw=w<600;
   if(nw){const b=[Math.min(...P.map(t=>t.lo)),Math.max(...P.map(t=>t.lo)),Math.min(...P.map(t=>t.la)),Math.max(...P.map(t=>t.la))];let f=fit([b[0]-1.3,b[1]+1.3,b[2]-.35,b[3]+.35],.04);if(SLM()){const T0=64,B0=160,f0=fit([b[0]-.3,b[1]+.3,b[2]-.18,b[3]+.18],.04),q=h/Math.max(200,h-T0-B0),nw=f0[2]*q,nh=f0[3]*q,kk=nh/h;f=[f0[0]-(nw-f0[2])/2,f0[1]-T0*kk,nw,nh]}go(f,first?0:500);return}
   const pe=$('pop'),cw=(pe.offsetWidth||320)+40,ch=(pe.offsetHeight||400)+40,KS=fit(ALL,0)[2]/w;
@@ -866,7 +874,7 @@ const st0=params.get('style')||'';if(st0){S.style=st0;$('sty').value=st0;$('sty'
 const r0=REG.find(r=>r[0]==params.get('region'))||REG.find(r=>r[0]=='Southwest Gulf');S.region=r0[0];S.vb=fit(r0.slice(1));tags();render();list();
 if(params.get('mode')=='vibes'){S.mode='vibes';document.body.classList.add('vibes');document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m=='vibes'));if(S.style){document.body.classList.add('pick');S.region='';tags();S.vb=fit(ALL,.02);S.gT0=performance.now()}else{S.region='';tags();S.vb=fit(ALL,.02)}render();list()}
 if(params.get('mode')=='sliders'){setMode('sliders');const pr=params.get('sv');if(pr)pr.split(',').forEach(x=>{const[a,b]=x.split(':');if(a in S.sl)S.sl[a]=+b});if(params.get('bud')!=null){S.slBud=+params.get('bud');S.sl.afford=LK.BUDSET[5-S.slBud][1]}const wh=params.get('where');if(wh){if(wh.startsWith('r:')){const r=LK.REGIONS.find(r=>r.id==wh.slice(2));if(r){S.slPr=r.id;S.slPc=R7OF[r.id]}}else S.slPc=wh}if(pr||wh||params.get('bud')!=null)slRender()}
-if(!['vibes','sliders'].includes(params.get('mode'))){S.region='';tags();S.vb=fit(ALL,.02);setMode('regions');const rs=rGet(),rq=r7of(params.get('region')||(rs===null?'panhandle':rs));if(VIBES['r:'+rq])setTimeout(()=>pickStyle('r:'+rq),80)}
+if(!['vibes','sliders'].includes(params.get('mode'))){S.region='';tags();S.vb=fit(ALL,.02);setMode('regions');const rs=rGet(),rq0=params.get('region')||rs,rq=rq0?r7of(rq0):null;if(rq&&VIBES['r:'+rq])setTimeout(()=>pickStyle('r:'+rq),80)}
 // ---- Navigation (Nov 11): Back button works through map states, list view, search bar ----
 function navURL(){const q=new URLSearchParams();const m=S.mode=='sliders'?'sliders':(S.sub=='regions'?'regions':'vibes');q.set('mode',m);
  if(m=='regions'&&isR(S.style))q.set('region',S.style.slice(2));if(m=='vibes'&&S.style&&!isR(S.style))q.set('style',S.style);
