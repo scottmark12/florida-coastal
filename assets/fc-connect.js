@@ -35,6 +35,7 @@
     return post('fc_leads', b).then(function (r) {
       if (!r.ok) throw new Error(r.status);
       track('lead', o.kind);
+      try { if (o.email) localStorage.setItem('fc-mail', '1'); } catch (e) {}
       return { ok: true, preview: !LIVE };
     });
   }

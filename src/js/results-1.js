@@ -10,4 +10,6 @@ ${x.why&&x.why.length?`<div class="why"><span>Fits what you asked for</span>${x.
 <div class="bt"><a class="go" href="towns/${x.id}-v3.html">Explore ${E(t.n.replace(/ \(.*\)$/,''))}</a><a class="gh" href="#short">Email me all ${top.length}</a></div></div></section>`}).join('');
 document.getElementById('dt').innerHTML=top.map(()=>'<i></i>').join('');
 document.querySelectorAll('a[href^="quiz-photo.html?a="]').forEach(l=>l.href='vibe-v3.html?mode=sliders');
-window.TOP5=top;window.ANS=a;})();
+window.TOP5=top;window.ANS=a;
+try{if(localStorage.getItem('fc-mail')){const sh=document.getElementById('short');if(sh)sh.style.display='none';const cmp='compare-v3.html?t='+top.slice(0,3).map(x=>x.id).join(',');document.querySelectorAll('.bt a.gh[href="#short"]').forEach(l=>{l.href=cmp;l.textContent='Compare my top 3'})}}catch(e){}
+})();

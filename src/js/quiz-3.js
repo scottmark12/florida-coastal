@@ -46,6 +46,31 @@ qDone=function(){window.QLOCK=false;qRank();miniDots();
   Object.assign(mini.style,{left:t.left+'px',top:t.top+'px',width:t.width+'px'});
   document.body.classList.add('reveal2');
   [...c.children].forEach((e,i)=>setTimeout(()=>e.classList.add('in'),500+i*280));
-  setTimeout(go2,3200);
+  setTimeout(()=>qAsk(go2,TOP,a),3000);
  },2100)};
 })();
+
+/* Nov 12: while the top 5 builds, offer to send it. Email gets the 5 towns side by side; an optional phone adds the personal town guide. Never blocks the results, and stops asking once we have an email. */
+function qAsk(go2,TOP,a){
+ let had=null;try{had=localStorage.getItem('fc-mail')}catch(e){}
+ if(had){go2();return}
+ const box=document.getElementById('qrv');if(!box){go2();return}
+ const one=TOP[0]&&TOP[0].name?TOP[0].name.replace(/ \(.*\)$/,''):'your #1 town';
+ const card=document.createElement('div');card.className='qa-card';
+ const step1=()=>{card.innerHTML=`<b>Want it sent to you?</b><p>We'll email your five towns with a side by side comparison you can come back to.</p><form class="qa-f" novalidate><input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email"><button type="submit">Send them</button></form><a href="#" class="qa-skip">Just show me</a>`;
+  const f=card.querySelector('form'),em=f.querySelector('input');setTimeout(()=>em.focus({preventScroll:true}),350);
+  card.querySelector('.qa-skip').onclick=e=>{e.preventDefault();go2()};
+  f.onsubmit=e=>{e.preventDefault();const v=em.value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){em.style.borderColor='#B3261E';em.focus();return}
+   const btn=f.querySelector('button');btn.disabled=true;btn.textContent='Sending...';
+   try{localStorage.setItem('fc-mail','1')}catch(x){}
+   const send=window.FC?FC.lead({kind:'matches',email:v,matches:TOP.map((t,i)=>({id:t.id,name:t.name,rank:i+1,fit:t.fit})),answers:a.split(''),message:('Quiz top 5: '+TOP.map(t=>t.name).join(', ')).slice(0,2000)}).catch(()=>null):Promise.resolve(null);
+   send.then(()=>step2(v))}};
+ const step2=email=>{card.innerHTML=`<b>On its way.</b><p>Want one more thing? Add your number and we'll send your personal guide, <i>Your first 90 days in ${one}</i>.</p><form class="qa-f" novalidate><input type="tel" autocomplete="tel" placeholder="Phone number" aria-label="Phone number, optional"><button type="submit">Send my guide</button></form><a href="#" class="qa-skip">Skip, show my towns</a><small>Optional. Adding a number means a local may call or text you about your move.</small>`;
+  const f=card.querySelector('form'),ph=f.querySelector('input');
+  card.querySelector('.qa-skip').onclick=e=>{e.preventDefault();go2()};
+  f.onsubmit=e=>{e.preventDefault();const v=ph.value.replace(/[^0-9+]/g,'');if(v.length<10){ph.style.borderColor='#B3261E';ph.focus();return}
+   const btn=f.querySelector('button');btn.disabled=true;btn.textContent='Sending...';
+   const send=window.FC?FC.lead({kind:'guide',email:email,phone:ph.value.trim().slice(0,40),town:one,message:'Wants the personal town guide: Your first 90 days in '+one}).catch(()=>null):Promise.resolve(null);
+   send.then(()=>{card.innerHTML=`<b>Perfect.</b><p>Your guide to ${one} is on the way. Here are your towns.</p>`;setTimeout(go2,1100)})}};
+ box.classList.add('ask');document.body.classList.add('qask');const h2=box.querySelector('h2');if(h2)h2.textContent='Your top 5 is ready.';step1();box.appendChild(card);requestAnimationFrame(()=>card.classList.add('in'));
+}

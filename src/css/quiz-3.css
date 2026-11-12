@@ -324,3 +324,20 @@ html body.qphoto #res:not(#x) .qbar i{background:rgba(21,42,46,.14)!important}
 html body.qphoto #res:not(#x) .qbar i.done{background:#152A2E!important}
 html body.qphoto #res:not(#x) .qbar i.cur{background:#E07A3F!important}
 html body.qphoto #res:not(#x) .qclose:hover{background:rgba(21,42,46,.06)!important}
+
+/* Nov 12: send my top 5 card on the scoring screen (light glass, same family as the quiz card) */
+#qrv.ask .skip,#qrv.ask>p,#qrv.ask .qrvbar{display:none!important}
+#qrv.ask .chips{min-height:0;margin-bottom:18px}
+#qrv .qa-card{width:min(420px,100%);text-align:left;text-shadow:none;background:rgba(255,255,255,.78);-webkit-backdrop-filter:blur(18px) saturate(1.25);backdrop-filter:blur(18px) saturate(1.25);border:1px solid rgba(255,255,255,.6);border-radius:24px;padding:22px 20px 18px;box-shadow:0 18px 44px rgba(10,20,22,.25);color:#152A2E;opacity:0;transform:translateY(12px);transition:opacity .45s ease,transform .45s ease}
+#qrv .qa-card.in{opacity:1;transform:none}
+#qrv .qa-card b{display:block;font-size:21px;font-weight:600;letter-spacing:-.01em;margin:0 0 6px}
+#qrv .qa-card p{margin:0 0 14px;font-size:15px;line-height:1.45;color:#3E4E51}
+#qrv .qa-card i{font-style:normal;font-weight:600;color:#152A2E}
+#qrv .qa-f{display:flex;flex-direction:column;gap:10px}
+#qrv .qa-f input{height:50px;border-radius:999px;border:1px solid rgba(21,42,46,.16);background:rgba(255,255,255,.9);padding:0 18px;font:inherit;font-size:16px;color:#152A2E}
+#qrv .qa-f button{height:50px;border-radius:999px;border:0;background:#152A2E;color:#fff;font:inherit;font-size:16px;font-weight:600;cursor:pointer}
+#qrv .qa-f button[disabled]{opacity:.7}
+#qrv .qa-skip{display:block;text-align:center;margin:12px 0 2px;color:#152A2E;font-weight:600;font-size:15px;text-decoration:underline;text-underline-offset:3px}
+#qrv .qa-card small{display:block;text-align:center;margin-top:8px;font-size:12px;line-height:1.4;color:#5E6B6D}
+@media (max-width:760px){#qrv.ask{justify-content:flex-end;padding-bottom:calc(24px + env(safe-area-inset-bottom))}#qrv.ask h2{font-size:26px;margin-bottom:14px}#qrv.ask .ey{margin-bottom:8px}}
+body.qask .fly{opacity:0!important;transition:opacity .35s ease!important}
