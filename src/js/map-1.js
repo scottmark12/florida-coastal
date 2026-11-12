@@ -476,14 +476,36 @@ PK0=function(){const r=$('res'),m=r&&r.querySelector('.mode');if(!r||!m||!SHON()
   const st=S.style||'',rn=isR(st)?st.slice(2):'';
   const base={vibes:{eb:'Vibe Map',img:`img/vibes/${S.style&&!isR(S.style)?S.style:'beaches'}.webp`},regions:{eb:'Regions',img:RIMG(rn||'south-keys')},sliders:{eb:'Slider Map',img:f0.img}}[k];
   if(G.step>=0){const s=STEPS[k][G.step];return {...base,stp:`How it works · ${G.step+1} of 3`,tx:typeof s=='function'?s():s,btn:G.step<2?'Next':'Got it',act:()=>{G.step=G.step<2?G.step+1:-1;show()},how:false}}
-  if(k=='vibes'){if(!G.ph)return {...base,h3:'Explore like a local',tx:'Pick a feel, like Old Florida or Island Life, and see every town that has it.',btn:'Show me how',act:()=>{G.ph=1;pickStyle(DEMO.vibes)},how:false};
+  if(k=='vibes'){if(!G.ph)return {...base,h3:'Explore like a local',tx:'Pick a feel, like Old Florida or Island Life, and see every town that has it.',btn:'Show me how',act:()=>tour('vibes'),how:false};
    const L=LK.VFEEL,nx=L[(Math.max(0,L.indexOf(st))+1)%L.length];return {...base,h3:`${VIBES[st]||'Best Beaches'} is on`,tx:st=='beaches'?`These ${cnt(st)} towns have the best sand. Tap any style below to switch, or a dot to meet a town.`:`${cnt(st)} towns light up. Tap any style below to switch, or a dot to meet a town.`,btn:`Show me ${VIBES[nx]}`,act:()=>pickStyle(nx),how:false}}
-  if(k=='regions'){if(!G.ph)return {...base,h3:'Know the coast',tx:"Florida's coast in seven stretches. Pick one to see every town in it.",btn:'Show me how',act:()=>{G.ph=1;pickStyle('r:'+DEMO.regions)},how:false};
+  if(k=='regions'){if(!G.ph)return {...base,h3:'Know the coast',tx:"Florida's coast in seven stretches. Pick one to see every town in it.",btn:'Show me how',act:()=>tour('regions'),how:false};
    const L=R7.map(r=>r[0]),nx=L[(Math.max(0,L.indexOf(rn))+1)%L.length];return {...base,h3:VIBES[st]||'South Florida and the Keys',tx:`${cnt(st)} towns. Swipe the tiles for other regions, or tap a dot to meet a town.`,btn:`Show me ${VIBES['r:'+nx].replace(/^The /,'')}`,act:()=>pickStyle('r:'+nx),how:false}}
-  if(!G.ph)return {...base,h3:'Rank towns your way',tx:"Tell us what matters most and we'll rank all 167 towns for you.",btn:'Show me how',act:demoSl,how:false};
+  if(!G.ph)return {...base,h3:'Rank towns your way',tx:"Tell us what matters most and we'll rank all 167 towns for you.",btn:'Show me how',act:()=>tour('sliders'),how:false};
   return {...base,h3:'Beaches count more',tx:PH()?'The top 5 just reordered. Pull the panel up to move any slider.':'The top 5 just reordered. Move any slider on the left.',btn:PH()?'Open the sliders':'Got it',act:()=>{if(PH()&&SHON())shSet('half');else{G.ph=2;show()}},how:false}}
  function demoSl(){G.ph=1;const i=document.querySelector('#sl input[type=range][data-slk="beach"]');if(i){i.value=i.max;i.dispatchEvent(new Event('input',{bubbles:true}));i.dispatchEvent(new Event('change',{bubbles:true}))}setTimeout(()=>{if(S.pop&&kindNow()=='sliders')closePop();show()},1100)}
- function show(){const k=kindNow(),p=$('pop'),q=qBtn();if(!p)return;if(k!==G.k){G.k=k;G.ph=0;G.step=-1}
+
+ // Spotlight tour (Nov 12 v6): dim the screen, light the one thing to tap, and move on the moment they tap it
+ const TT={k:null,step:0,dim:null,tip:null,tm:null};
+ function tEl(){if(!TT.dim){TT.dim=document.createElement('div');TT.dim.className='cm-hole';document.body.appendChild(TT.dim);TT.tip=document.createElement('div');TT.tip.className='cm-tip';TT.tip.setAttribute('role','dialog');document.body.appendChild(TT.tip)}}
+ function tPlace(el,txt,where){tEl();const d=TT.dim,b=TT.tip;b.innerHTML=`<p>${txt}</p><button type="button" class="cm-skip">Skip</button>`;b.querySelector('.cm-skip').onclick=e=>{e.stopPropagation();tEnd(true)};
+  const W=Math.min(300,innerWidth-32);b.style.width=W+'px';
+  if(el){const r=el.getBoundingClientRect(),pad=6;Object.assign(d.style,{left:r.left-pad+'px',top:r.top-pad+'px',width:r.width+pad*2+'px',height:r.height+pad*2+'px'});d.classList.add('on','cut');
+   const x=Math.max(16,Math.min(innerWidth-W-16,r.left+r.width/2-W/2));b.style.left=x+'px';b.classList.add('on');const bh=b.offsetHeight;const above=r.top-bh-18>70;b.style.top=(above?r.top-bh-18:Math.min(innerHeight-bh-16,r.bottom+18))+'px';b.classList.toggle('dn',!above)}
+  else{d.classList.remove('on','cut');b.style.left=(innerWidth-W)/2+'px';b.style.top=(PH()?84:96)+'px';b.classList.add('on');b.classList.remove('dn')}}
+ function tHide(){if(TT.dim){TT.dim.classList.remove('on','cut');TT.tip.classList.remove('on')}}
+ function tEnd(skip){TT.k=null;TT.step=0;tHide();try{sessionStorage.setItem(KEY(G.k||kindNow()),'1')}catch(_){}const q=qBtn();q.classList.toggle('on',!S.pop)}
+ function tour(k){TT.k=k;TT.step=1;const p=$('pop');p.dataset.intro='';p.classList.remove('on');if(SHON()&&SHEET.st!='peek')shSet('peek',true);
+  setTimeout(()=>{if(k=='sliders'){const el=PH()?$('res'):$('sl');tPlace(el,PH()?'Pull this panel up and move the sliders for what matters most to you.':'Move the sliders for what matters most to you.')}
+   else{const el=document.querySelector('#vp .tiles.vt');tPlace(el,k=='regions'?"We split Florida's coast into 7 regions, each with its own kind of coastline. Tap one.":'Every town is tagged with the styles that fit it, like Old Florida or Island Life. Tap one that feels like home.')}},SHON()?380:60)}
+ function tStep2(){if(!TT.k||TT.step!=1)return;TT.step=2;const k=TT.k,st=S.style||'';let txt;
+  if(k=='regions'){const id=st.slice(2),rc=RCOPY[id]||{},n=T.filter(t=>t.v.includes(st)).length,intro=(rc.intro||rc.tag||'').split(/(?<=\.)\s/).slice(0,1).join(' ');txt=`<b>${VIBES[st]||''}</b> · ${n} towns. ${intro} Now tap any town to meet it.`}
+  else if(k=='vibes'){const n=T.filter(t=>t.v.includes(st)).length;txt=`<b>${VIBES[st]||''}</b> · ${n} towns. ${(LK.VSUBL[st]||VSUB[st]||'')}. Now tap any town to meet it.`}
+  else txt='Your top 5 just reordered on the map. Tap a number to meet the town.';
+  setTimeout(()=>tPlace(null,txt),SHON()?420:120)}
+ window.addEventListener('input',e=>{if(TT.k=='sliders'&&TT.step==1&&e.target.closest&&e.target.closest('#sl')){clearTimeout(TT.tm);TT.tm=setTimeout(tStep2,500)}},true);
+ document.addEventListener('pointerdown',e=>{if(TT.k=='sliders'&&TT.step==1&&PH()&&e.target.closest&&e.target.closest('#res'))tHide()},true);
+ addEventListener('resize',()=>{if(TT.k)tHide()});
+ function show(){const k=kindNow(),p=$('pop'),q=qBtn();if(!p)return;if(TT.k){q.classList.remove('on');return}if(k!==G.k){G.k=k;G.ph=0;G.step=-1}
   if(!k||shut(k)){if(p.dataset.intro){p.dataset.intro='';p.classList.remove('on')}q.classList.toggle('on',!!k&&!S.pop);return}
   q.classList.remove('on');if(S.pop)return;if(k=='sliders'&&G.ph==2){p.dataset.intro='';p.classList.remove('on');q.classList.add('on');return}
   const v=view();
@@ -492,10 +514,12 @@ PK0=function(){const r=$('res'),m=r&&r.querySelector('.mode');if(!r||!m||!SHON()
   const hw=p.querySelector('.how');hw&&(hw.onclick=e=>{e.stopPropagation();G.step=0;show()});
   p.querySelector('.x').onclick=e=>{e.stopPropagation();try{sessionStorage.setItem(KEY(k),'1')}catch(_){}p.dataset.intro='';p.classList.remove('on');qBtn().classList.add('on')};
   p.onclick=null;p.dataset.intro=k;p.classList.remove('full');p.classList.add('on');placePop()}
- function qBtn(){let q=document.querySelector('.fcgq');if(!q){q=document.createElement('button');q.type='button';q.className='fcgq';q.setAttribute('aria-label','How this map works');q.textContent='?';(PH()?document.body:($('mapbox')||document.body)).appendChild(q);q.onclick=e=>{e.stopPropagation();try{sessionStorage.removeItem(KEY(G.k||kindNow()))}catch(_){}G.step=-1;q.classList.remove('on');if(S.pop)closePop();show()}}return q}
+ function qBtn(){let q=document.querySelector('.fcgq');if(!q){q=document.createElement('button');q.type='button';q.className='fcgq';q.setAttribute('aria-label','How this map works');q.textContent='?';($('mode')||document.body).appendChild(q);q.onclick=e=>{e.stopPropagation();try{sessionStorage.removeItem(KEY(G.k||kindNow()))}catch(_){}G.step=-1;q.classList.remove('on');if(S.pop)closePop();show()}}return q}
  const later=()=>setTimeout(show,60);
  mapIntro=function(){later()};
  ['closePop','pickStyle','setMode'].forEach(n=>{const o=window[n];window[n]=function(){const r=o.apply(this,arguments);later();return r}});
- const op=window.openPop;window.openPop=openPop=function(){const r=op.apply(this,arguments);qBtn().classList.remove('on');return r};
+ const op=window.openPop;window.openPop=openPop=function(){const r=op.apply(this,arguments);qBtn().classList.remove('on');if(TT.k&&TT.step==2)tEnd();return r};
+ const ps2=window.pickStyle;window.pickStyle=pickStyle=function(){const r=ps2.apply(this,arguments);if(TT.k&&TT.k!='sliders'&&!S.auto)tStep2();return r};
+ const sm2=window.setMode;window.setMode=setMode=function(){if(TT.k){TT.k=null;TT.step=0;tHide()}return sm2.apply(this,arguments)};
  setTimeout(show,900);
 })();

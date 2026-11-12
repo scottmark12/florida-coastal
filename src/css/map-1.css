@@ -632,3 +632,12 @@ html body #mapbox #pop.pop[data-intro]:not([data-intro=""]):not(.full):not(#x):n
 }
 /* iOS paints bare buttons blue: card X is always black */
 html body #mapbox #pop .x:not(#x),html body #res .shx:not(#x){color:#152A2E!important;-webkit-appearance:none;appearance:none}
+/* Nov 12 v6: help button at the end of the tab row, spotlight tour */
+html body #mode .fcgq:not(#x){display:inline-flex!important;position:static!important;flex:none;width:36px!important;height:36px!important;min-width:0!important;padding:0!important;margin:0 0 0 auto!important;border-radius:50%!important;border:1px solid rgba(21,42,46,.22)!important;background:#fff!important;color:#152A2E!important;box-shadow:none!important;font:600 16px/1 'DM Sans',system-ui,sans-serif!important;align-items:center;justify-content:center;align-self:center;-webkit-appearance:none}
+html body #mode:not(#x){display:flex;align-items:center}
+.cm-hole{position:fixed;z-index:80;border-radius:16px;pointer-events:none;opacity:0;transition:opacity .2s}
+.cm-hole.on{opacity:1;box-shadow:0 0 0 9999px rgba(10,22,24,.5),0 0 0 3px #fff}
+.cm-tip{position:fixed;z-index:81;background:#152A2E;color:#fff;border-radius:14px;padding:14px 16px 12px;box-shadow:0 10px 30px rgba(0,0,0,.25);font:500 14.5px/1.4 'DM Sans',system-ui,sans-serif;opacity:0;pointer-events:none;transform:translateY(6px);transition:opacity .2s,transform .2s}
+.cm-tip.on{opacity:1;pointer-events:auto;transform:none}
+.cm-tip p{margin:0}.cm-tip b{font-weight:700}
+.cm-tip .cm-skip{display:block;margin:8px 0 0 auto;background:none;border:0;padding:4px 0;color:rgba(255,255,255,.7);font:600 12.5px 'DM Sans',sans-serif;text-decoration:underline;cursor:pointer;-webkit-appearance:none}
