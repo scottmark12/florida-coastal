@@ -288,12 +288,13 @@ function shSync(){const on=(S.mode=='sliders'||S.mode=='vibes')&&PH();const r=$(
 (function(){const r=$('res');let d=null;
  $('vp')&&$('vp').addEventListener('click',e=>{const a=e.target.closest('.vm-all');if(!a||!SHON())return;setTimeout(()=>shSet($('vp').classList.contains('vt-open')?'full':'peek'),0)});
  const skip=t=>t.closest('select,textarea,input:not([type=range])');
- r.addEventListener('touchstart',e=>{if(!SHON()||skip(e.target))return;const t=e.touches[0];d={x0:t.clientX,y0:t.clientY,s0:SHEET.y,t0:performance.now(),own:false,last:t.clientY,lt:performance.now(),v:0}},{passive:true});
+ r.addEventListener('touchstart',e=>{if(!SHON()||skip(e.target))return;const t=e.touches[0];d={st0:SHEET.st,x0:t.clientX,y0:t.clientY,s0:SHEET.y,t0:performance.now(),own:false,last:t.clientY,lt:performance.now(),v:0}},{passive:true});
  r.addEventListener('touchmove',e=>{if(!d)return;const t=e.touches[0],dy=t.clientY-d.y0;
   if(!d.own){const dx=t.clientX-d.x0;if(Math.abs(dy)<6&&Math.abs(dx)<6)return;if(Math.abs(dx)>Math.abs(dy)){d=null;return}if(SHEET.st=='full'&&(r.scrollTop>0||dy<0)){d=null;return}d.own=true}
   e.preventDefault();const st=shStops();let y=d.s0+dy;if(y<st.full)y=st.full-(st.full-y)*.3;const yl=st.low||st.peek;if(y>yl)y=yl+(y-yl)*.3;shApply(y,false);
   const now=performance.now();d.v=(t.clientY-d.last)/Math.max(1,now-d.lt);d.last=t.clientY;d.lt=now},{passive:false});
- r.addEventListener('touchend',()=>{if(!d)return;const own=d.own,v=d.v;d=null;if(!own)return;const st=shStops(),y=SHEET.y;let n;
+ r.addEventListener('touchend',()=>{if(!d)return;const own=d.own,v=d.v,st0=d.st0,dy=SHEET.y-d.s0;d=null;if(!own)return;const st=shStops(),y=SHEET.y;let n;
+  {const O=['low','peek','half','full'],i=O.indexOf(st0);if(i>=0&&Math.abs(dy)>36){shSet(O[Math.max(0,Math.min(3,i+(dy<0?1:-1)))]);return}}
   const tg=y+Math.max(-1.5,Math.min(1.5,v))*260;n=['low','peek','half','full'].sort((a,b)=>Math.abs(st[a]-tg)-Math.abs(st[b]-tg))[0];shSet(n)});
  const g=document.createElement('button');g.className='sh-grab';g.type='button';g.setAttribute('aria-label','Show more');r.prepend(g);
  g.addEventListener('click',()=>{if(!SHON())return;shSet(SHEET.st=='low'?'peek':SHEET.st=='peek'?'half':SHEET.st=='half'?'full':'peek')});

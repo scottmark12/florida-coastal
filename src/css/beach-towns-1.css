@@ -282,3 +282,4 @@ html body .sb.full .sbx svg{opacity:.7}
 html body .sb.full .sb-x{display:block;flex:none;border:0;background:none;color:#152A2E;font:600 16px 'DM Sans',system-ui,sans-serif;padding:0 10px;height:44px;cursor:pointer;-webkit-appearance:none}
 html body .sb.full .dd:not(#x){display:block!important;position:static;box-shadow:none;border-radius:0;max-height:none;flex:1;overflow:auto;-webkit-overflow-scrolling:touch;padding:10px 0 40px;margin:0;background:#fff}
 }
+html.kb:not(#x):not(#y):not(#z){scroll-snap-type:none!important}

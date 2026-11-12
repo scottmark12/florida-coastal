@@ -333,3 +333,28 @@ html body[data-newsph2] main>section.news:not(#a){position:relative;overflow:hid
 html body[data-newsph2] main>section.news:not(#a)::before{content:'';position:absolute;top:0;bottom:0;right:0;height:100%;aspect-ratio:1800/920;background:url(/img/c/keys-chair.webp) center/cover no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent,#000 18%);mask-image:linear-gradient(90deg,transparent,#000 18%);z-index:0;pointer-events:none}
 html body[data-newsph2] main>section.news:not(#a)>*{position:relative;z-index:1}
 }
+/* Nov 12: articles section fits its content on phones (the dates made it taller than one screen); All articles sits under the title, clear of the menu button */
+@media (max-width:760px){
+html body main>section.cguides:not(#a):not(#b):not(#c){height:auto!important;min-height:100svh!important;overflow:visible!important}
+html body section.cguides:not(#a):not(#b):not(#c) .cg-lead{height:auto!important}
+html body section.cguides:not(#a):not(#b):not(#c) .cg-head{flex-direction:column!important;align-items:flex-start!important;gap:10px}
+html body section.cguides:not(#a):not(#b):not(#c) .cg-all{order:2;margin:0!important}
+}
+/* Nov 12: desktop hero is full screen and drops the dark cover, like the phone */
+@media (min-width:761px){
+html body main>section.dk-hero:not(#x):not(#y):not(#z){height:100vh!important;min-height:620px!important;background-image:linear-gradient(rgba(10,20,22,.32) 0,rgba(10,20,22,0) 170px),url(/img/c/grayton-beach.webp)!important;background-size:auto,cover!important;background-position:0 0,50% 62%!important}
+html body section.dk-hero:not(#x) h1,html body section.dk-hero:not(#x) .dk-eyebrow,html body section.dk-hero:not(#x) .hero-note{text-shadow:0 2px 22px rgba(10,20,22,.32),0 1px 3px rgba(10,20,22,.25)!important}
+html body section.dk-hero:not(#x):not(#y) .hero-btn.hq-start{background:rgba(255,255,255,.18)!important;border:1px solid rgba(255,255,255,.5)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);box-shadow:0 6px 20px rgba(10,20,22,.18)!important}
+}
+/* Nov 12: desktop hero matches the phone: no full cover, text lower left over a soft fade from the bottom */
+@media (min-width:761px){
+html body main>section.dk-hero:not(#x):not(#y):not(#z):not(#w){background-image:linear-gradient(rgba(10,20,22,.30) 0,rgba(10,20,22,0) 170px),linear-gradient(to top,rgba(10,20,22,.58) 0%,rgba(10,20,22,.30) 30%,rgba(10,20,22,0) 55%),url(/img/c/grayton-beach.webp)!important;background-size:auto,auto,cover!important}
+html body section.dk-hero:not(#x):not(#y) .wrap{height:100%!important;max-width:none!important;display:flex!important;flex-direction:column!important;justify-content:flex-end!important;align-items:flex-start!important;padding:0 64px 72px!important;box-sizing:border-box}
+html body section.dk-hero:not(#x):not(#y) .dk-l{text-align:left!important;align-items:flex-start!important;margin:0!important;max-width:780px!important}
+html body section.dk-hero:not(#x):not(#y) h1{text-align:left!important;margin-left:0!important}
+html body section.dk-hero:not(#x):not(#y) .hq-go{justify-content:flex-start!important;align-items:center!important;flex-direction:row!important;gap:20px}
+html body section.dk-hero:not(#x):not(#y) .hero-note,html body section.dk-hero:not(#x):not(#y) .dk-eyebrow{text-align:left!important}
+}
+@media (min-width:761px){html body section.dk-hero:not(#x):not(#y):not(#z):not(#w) .wrap{padding-bottom:84px!important}}
+@media (min-width:761px){html body section.dk-hero:not(#x):not(#y):not(#z):not(#w) .dk-l{padding:0!important}}
+html.kb:not(#x):not(#y):not(#z){scroll-snap-type:none!important}
