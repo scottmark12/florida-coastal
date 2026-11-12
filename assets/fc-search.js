@@ -5,7 +5,7 @@
   var ROOT=me?me.replace(/assets\/fc-search\.js.*$/,''):new URL('/',location.href).href;
   var U=function(p){return new URL(p,ROOT).href};
   var IDX=null,loading=null;
-  function load(){if(IDX)return Promise.resolve(IDX);if(loading)return loading;loading=fetch(U('assets/search-index.json')).then(function(r){return r.json()}).then(function(d){IDX=d;return d});return loading}
+  function load(){if(IDX)return Promise.resolve(IDX);if(loading)return loading;loading=fetch(U('assets/search-index.json?v=2')).then(function(r){return r.json()}).then(function(d){IDX=d;return d});return loading}
   var esc=function(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')};
   var norm=function(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim()};
   var SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>';
@@ -49,7 +49,7 @@
   var BOOK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4zM20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg>';
   function via(t,q){if(!q||score(t.n,q)<9)return '';var k=(t.k||[]).find(function(x){return score(x,q)<9});return k?'Covers '+k+' · ':''}
   function town(t,q){return '<a class="fcs-it" href="'+U('towns/'+t.i+'-v3.html')+'"><i style="background-image:url(\''+U(t.img)+'\')"></i><span><b>'+hi(t.n,q)+'</b><small>'+esc(via(t,q)+t.r)+'</small></span>'+'</a>'}
-  function region(r,q){return '<a class="fcs-it" href="'+U('towns/index-v2.html#'+r.c+'/'+r.i)+'"><i style="background-image:url(\''+U(r.img)+'\')"></i><span><b>'+hi(r.n,q)+'</b><small>Region · '+r.k+' beach towns</small></span></a>'}
+  function region(r,q){return '<a class="fcs-it" href="'+U('towns/index-v2.html#'+(r.top?r.i:r.c+'/'+r.i))+'"><i style="background-image:url(\''+U(r.img)+'\')"></i><span><b>'+hi(r.n,q)+'</b><small>'+(r.top?'Region':'Area')+' · '+r.k+' beach towns</small></span></a>'}
   function art(a,q){return '<a class="fcs-it" href="'+U(a.u)+'"><i style="background-image:url(\''+U(a.img)+'\')"></i><span><b>'+hi(a.n,q)+'</b><small>Guide</small></span></a>'}
   function score(name,q){var n=norm(name);if(n===q)return 0;if(n.indexOf(q)===0)return 1;if((' '+n).indexOf(' '+q)>=0)return 2;if(n.indexOf(q)>=0)return 3;return 9}
   function render(){

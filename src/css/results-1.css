@@ -9,7 +9,7 @@ header img{height:30px}header nav{margin-left:auto;display:flex;align-items:cent
 .sl .ov{position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,22,24,0) 38%,rgba(12,22,24,.6) 66%,rgba(12,22,24,.9) 100%),linear-gradient(90deg,rgba(12,22,24,.5) 0%,rgba(12,22,24,0) 60%)}
 .tx{position:absolute;left:max(56px,calc(50vw - 640px));bottom:64px;max-width:600px;color:#fff;text-shadow:0 1px 12px rgba(0,0,0,.3)}
 .k{font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;opacity:.9}
-h1{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:76px;line-height:1;margin:10px 0 10px}
+h1,h2.rt{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:76px;line-height:1;margin:10px 0 10px}
 .rg{font-size:16px;opacity:.9}.rg b{font-weight:600}
 .tx p{font-size:18.5px;line-height:1.5;margin:14px 0 14px}
 .why{font-size:15px;opacity:.9;padding-top:12px;border-top:1px solid rgba(255,255,255,.3)}.why span{display:block;font-size:11.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;opacity:.75;margin-bottom:4px}
@@ -27,7 +27,7 @@ h1{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:76
 #short form{display:flex;gap:10px}#short input{width:320px;border:1px solid #CFCAC0;border-radius:8px;padding:14px;font:inherit;font-size:16px}#short button{border:0;background:#152A2E;color:#fff;border-radius:8px;padding:14px 22px;font:inherit;font-weight:600;font-size:16px}
 #short .sm{margin-top:14px;font-size:15px}#short .sm a{color:#152A2E;margin-right:18px}
 @media(max-width:800px){header nav a:not(.cta){display:none}header .cta{border:0}
-.wrap{height:100svh;min-height:600px}header{padding:0 20px}.tx{left:20px;right:20px;bottom:56px}h1{font-size:44px}.tx p{font-size:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.wrap{height:100svh;min-height:600px}header{padding:0 20px}.tx{left:20px;right:20px;bottom:56px}h1,h2.rt{font-size:44px}.tx p{font-size:16px;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 .bt{flex-direction:column;gap:8px}.bt a{text-align:center;padding:13px}.why{font-size:14px}
 .nav{display:none}
 .dots{display:flex;gap:7px;position:absolute;left:0;right:0;bottom:22px;justify-content:center;z-index:3}.dots i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.5)}.dots i.on{background:#fff;width:22px;border-radius:4px}
@@ -35,3 +35,5 @@ h1{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:76
 
 /* style */
 .th{display:none!important}@media (min-width:901px){.nav .dots{display:flex!important;position:static!important;gap:8px}.nav .dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.5)}.nav .dots i.on{background:#fff;width:24px;border-radius:4px}}
+
+html body h2.rt{font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;letter-spacing:normal!important;text-transform:none!important}

@@ -8,7 +8,7 @@ try{if(q!==null)sessionStorage.setItem('fcdm',q);mode=sessionStorage.getItem('fc
 if(['1','2','3','4'].indexOf(mode)<0)return;
 var DMF="'DM Sans',system-ui,sans-serif";
 function setDM(el){el.style.setProperty('font-family',DMF,'important');el.style.setProperty('font-weight','500','important');el.style.setProperty('letter-spacing','-.02em','important')}
-var TOWN=['.mt-tx b','.cm-bd b','.hb-t b','.tx h1','.qhero h2','.grid .card h3','.pop h3','.nb-c b','.near b','.pn h1','main > h1','.tv-h h1','.thero h1','body.town h1'];
+var TOWN=['.mt-tx b','.cm-bd b','.hb-t b','.tx h1','.tx h2.rt','.qhero h2','.grid .card h3','.pop h3','.nb-c b','.near b','.pn h1','main > h1','.tv-h h1','.thero h1','body.town h1'];
 var ART=['.ed-lead h3','.ed-latest b','.ed-card h3','.art h3','.cguides .cg-lb b','.cguides .cg-c b'];
 var TOOLS=['.qq','.qin h1','.qr h1','.qsl h3','#short h2','.hero h1','.sec h2','.band h2','.recv b','#h','aside .card h3','.hx-new','.hx-back','.news h2'];
 var HOME_TOOL=['Not ready to move yet','Then get to know','Find your stretch','What should home feel like','See the towns others'];

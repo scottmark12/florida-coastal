@@ -2,7 +2,7 @@
  {
   "id": "30a",
   "n": "30A (Santa Rosa Beach)",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.37,
   "lo": -86.15,
@@ -33,7 +33,7 @@
  {
   "id": "destin",
   "n": "Destin",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.39,
   "lo": -86.5,
@@ -88,7 +88,7 @@
  {
   "id": "apalachicola",
   "n": "Apalachicola",
-  "r": "Forgotten Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 29.73,
   "lo": -84.98,
@@ -228,7 +228,7 @@
  {
   "id": "ami",
   "n": "Anna Maria Island",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 27.53,
   "lo": -82.73,
@@ -258,7 +258,7 @@
  {
   "id": "longboat",
   "n": "Longboat Key",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 27.41,
   "lo": -82.66,
@@ -286,7 +286,7 @@
  {
   "id": "captiva",
   "n": "Captiva Island",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.52,
   "lo": -82.19,
@@ -316,7 +316,7 @@
  {
   "id": "matlacha",
   "n": "Matlacha",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.63,
   "lo": -82.07,
@@ -343,7 +343,7 @@
  {
   "id": "naples",
   "n": "Naples",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.14,
   "lo": -81.79,
@@ -374,7 +374,7 @@
  {
   "id": "keywest",
   "n": "Key West",
-  "r": "Florida Keys",
+  "r": "South Florida and the Keys",
   "c": "keys",
   "la": 24.56,
   "lo": -81.78,
@@ -405,7 +405,7 @@
  {
   "id": "islamorada",
   "n": "Islamorada",
-  "r": "Florida Keys",
+  "r": "South Florida and the Keys",
   "c": "keys",
   "la": 24.92,
   "lo": -80.63,
@@ -434,7 +434,7 @@
  {
   "id": "southbeach",
   "n": "Miami (South Beach)",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 25.79,
   "lo": -80.13,
@@ -463,7 +463,7 @@
  {
   "id": "ftl",
   "n": "Fort Lauderdale",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.12,
   "lo": -80.14,
@@ -492,7 +492,7 @@
  {
   "id": "delray",
   "n": "Delray Beach",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.46,
   "lo": -80.07,
@@ -522,7 +522,7 @@
  {
   "id": "jupiter",
   "n": "Jupiter",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.93,
   "lo": -80.09,
@@ -552,7 +552,7 @@
  {
   "id": "fortpierce",
   "n": "Fort Pierce",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.45,
   "lo": -80.33,
@@ -579,7 +579,7 @@
  {
   "id": "cocoa",
   "n": "Cocoa Beach",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.32,
   "lo": -80.61,
@@ -606,7 +606,7 @@
  {
   "id": "nsb",
   "n": "New Smyrna Beach",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.03,
   "lo": -80.93,
@@ -635,7 +635,7 @@
  {
   "id": "daytona",
   "n": "Daytona Beach",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.21,
   "lo": -81.02,
@@ -662,7 +662,7 @@
  {
   "id": "flagler",
   "n": "Flagler Beach",
-  "r": "Northeast Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.47,
   "lo": -81.13,
@@ -688,7 +688,7 @@
  {
   "id": "staug",
   "n": "St. Augustine",
-  "r": "Northeast Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.89,
   "lo": -81.31,
@@ -716,7 +716,7 @@
  {
   "id": "jaxbeach",
   "n": "Jacksonville Beach",
-  "r": "Northeast Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 30.29,
   "lo": -81.39,
@@ -744,7 +744,7 @@
  {
   "id": "fernandina",
   "n": "Fernandina Beach",
-  "r": "Amelia Island",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 30.67,
   "lo": -81.46,
@@ -771,7 +771,7 @@
  {
   "id": "carrabelle",
   "n": "Carrabelle",
-  "r": "Forgotten Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 29.853,
   "lo": -84.664,
@@ -798,7 +798,7 @@
  {
   "id": "st-george-island",
   "n": "St. George Island",
-  "r": "Forgotten Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 29.663,
   "lo": -84.863,
@@ -825,7 +825,7 @@
  {
   "id": "st-teresa",
   "n": "St. Teresa",
-  "r": "Forgotten Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 29.931,
   "lo": -84.454,
@@ -850,7 +850,7 @@
  {
   "id": "st-marks",
   "n": "St. Marks",
-  "r": "Big Bend · Apalachee Bay",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.166,
   "lo": -84.208,
@@ -959,7 +959,7 @@
  {
   "id": "navarre-beach",
   "n": "Navarre Beach",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.379,
   "lo": -86.864,
@@ -1039,7 +1039,7 @@
  {
   "id": "port-st-joe",
   "n": "Port St. Joe",
-  "r": "Forgotten Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 29.812,
   "lo": -85.304,
@@ -1145,7 +1145,7 @@
  {
   "id": "steinhatchee",
   "n": "Steinhatchee",
-  "r": "Big Bend",
+  "r": "Nature Coast",
   "c": "gulf",
   "la": 29.671,
   "lo": -83.389,
@@ -1517,7 +1517,7 @@
  {
   "id": "bradenton",
   "n": "Bradenton",
-  "r": "Sarasota · Manatee",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 27.499,
   "lo": -82.575,
@@ -1544,7 +1544,7 @@
  {
   "id": "bradenton-beach",
   "n": "Bradenton Beach",
-  "r": "Anna Maria Island",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 27.47,
   "lo": -82.699,
@@ -1572,7 +1572,7 @@
  {
   "id": "cortez",
   "n": "Cortez",
-  "r": "Sarasota · Manatee",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 27.467,
   "lo": -82.673,
@@ -1599,7 +1599,7 @@
  {
   "id": "englewood",
   "n": "Englewood",
-  "r": "Sarasota · Charlotte",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.962,
   "lo": -82.353,
@@ -1625,7 +1625,7 @@
  {
   "id": "sarasota",
   "n": "Sarasota",
-  "r": "Sarasota · Manatee",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 27.336,
   "lo": -82.531,
@@ -1655,7 +1655,7 @@
  {
   "id": "siesta-key",
   "n": "Siesta Key",
-  "r": "Sarasota · Manatee",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 27.266,
   "lo": -82.553,
@@ -1682,7 +1682,7 @@
  {
   "id": "venice",
   "n": "Venice",
-  "r": "Sarasota · Manatee",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 27.097,
   "lo": -82.458,
@@ -1709,7 +1709,7 @@
  {
   "id": "bonita-springs",
   "n": "Bonita Springs",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.34,
   "lo": -81.779,
@@ -1737,7 +1737,7 @@
  {
   "id": "cape-coral",
   "n": "Cape Coral",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.563,
   "lo": -81.95,
@@ -1763,7 +1763,7 @@
  {
   "id": "chokoloskee",
   "n": "Chokoloskee",
-  "r": "Everglades",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 25.808,
   "lo": -81.361,
@@ -1789,7 +1789,7 @@
  {
   "id": "everglades-city",
   "n": "Everglades City",
-  "r": "Everglades",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 25.858,
   "lo": -81.385,
@@ -1815,7 +1815,7 @@
  {
   "id": "fort-myers",
   "n": "Fort Myers",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.641,
   "lo": -81.872,
@@ -1843,7 +1843,7 @@
  {
   "id": "fort-myers-beach",
   "n": "Fort Myers Beach",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.452,
   "lo": -81.95,
@@ -1870,7 +1870,7 @@
  {
   "id": "marco-island",
   "n": "Marco Island",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 25.94,
   "lo": -81.719,
@@ -1898,7 +1898,7 @@
  {
   "id": "port-charlotte",
   "n": "Port Charlotte",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.976,
   "lo": -82.091,
@@ -1924,7 +1924,7 @@
  {
   "id": "punta-gorda",
   "n": "Punta Gorda",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.93,
   "lo": -82.045,
@@ -1950,7 +1950,7 @@
  {
   "id": "sanibel-island",
   "n": "Sanibel Island",
-  "r": "Southwest Gulf",
+  "r": "Southwest Florida",
   "c": "gulf",
   "la": 26.449,
   "lo": -82.097,
@@ -1981,7 +1981,7 @@
  {
   "id": "key-largo",
   "n": "Key Largo",
-  "r": "Florida Keys",
+  "r": "South Florida and the Keys",
   "c": "keys",
   "la": 25.087,
   "lo": -80.447,
@@ -2008,7 +2008,7 @@
  {
   "id": "bal-harbour",
   "n": "Bal Harbour",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 25.892,
   "lo": -80.126,
@@ -2034,7 +2034,7 @@
  {
   "id": "boca-raton",
   "n": "Boca Raton",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.368,
   "lo": -80.129,
@@ -2062,7 +2062,7 @@
  {
   "id": "dania-beach",
   "n": "Dania Beach",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.052,
   "lo": -80.144,
@@ -2086,7 +2086,7 @@
  {
   "id": "hallandale",
   "n": "Hallandale Beach",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 25.981,
   "lo": -80.148,
@@ -2112,7 +2112,7 @@
  {
   "id": "highland-beach",
   "n": "Highland Beach",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.4,
   "lo": -80.066,
@@ -2138,7 +2138,7 @@
  {
   "id": "hollywood",
   "n": "Hollywood",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.011,
   "lo": -80.15,
@@ -2166,7 +2166,7 @@
  {
   "id": "lauderdale-by-the-sea",
   "n": "Lauderdale by the Sea",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.192,
   "lo": -80.096,
@@ -2195,7 +2195,7 @@
  {
   "id": "lighthouse-point",
   "n": "Lighthouse Point",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.276,
   "lo": -80.088,
@@ -2221,7 +2221,7 @@
  {
   "id": "north-miami-beach",
   "n": "North Miami Beach",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 25.933,
   "lo": -80.162,
@@ -2245,7 +2245,7 @@
  {
   "id": "north-palm-beach",
   "n": "North Palm Beach",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.818,
   "lo": -80.053,
@@ -2271,7 +2271,7 @@
  {
   "id": "palm-beach",
   "n": "Palm Beach",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.706,
   "lo": -80.036,
@@ -2299,7 +2299,7 @@
  {
   "id": "palm-beach-gardens",
   "n": "Palm Beach Gardens",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.823,
   "lo": -80.139,
@@ -2325,7 +2325,7 @@
  {
   "id": "riviera-beach",
   "n": "Riviera Beach",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.775,
   "lo": -80.058,
@@ -2351,7 +2351,7 @@
  {
   "id": "sunny-isles-beach",
   "n": "Sunny Isles Beach",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 25.951,
   "lo": -80.123,
@@ -2377,7 +2377,7 @@
  {
   "id": "west-palm-beach",
   "n": "West Palm Beach",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.715,
   "lo": -80.053,
@@ -2404,7 +2404,7 @@
  {
   "id": "wilton-manors",
   "n": "Wilton Manors",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.16,
   "lo": -80.139,
@@ -2432,7 +2432,7 @@
  {
   "id": "jensen-beach",
   "n": "Jensen Beach",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.255,
   "lo": -80.231,
@@ -2458,7 +2458,7 @@
  {
   "id": "port-st-lucie",
   "n": "Port St. Lucie",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.294,
   "lo": -80.35,
@@ -2482,7 +2482,7 @@
  {
   "id": "sebastian",
   "n": "Sebastian",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.817,
   "lo": -80.471,
@@ -2510,7 +2510,7 @@
  {
   "id": "stuart",
   "n": "Stuart",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.197,
   "lo": -80.253,
@@ -2537,7 +2537,7 @@
  {
   "id": "vero-beach",
   "n": "Vero Beach",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.639,
   "lo": -80.397,
@@ -2564,7 +2564,7 @@
  {
   "id": "indialantic",
   "n": "Indialantic",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.09,
   "lo": -80.565,
@@ -2590,7 +2590,7 @@
  {
   "id": "melbourne-beach",
   "n": "Melbourne Beach",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.069,
   "lo": -80.562,
@@ -2616,7 +2616,7 @@
  {
   "id": "palm-bay",
   "n": "Palm Bay",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.035,
   "lo": -80.589,
@@ -2642,7 +2642,7 @@
  {
   "id": "satellite-beach",
   "n": "Satellite Beach",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.176,
   "lo": -80.59,
@@ -2668,7 +2668,7 @@
  {
   "id": "titusville",
   "n": "Titusville",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.612,
   "lo": -80.808,
@@ -2694,7 +2694,7 @@
  {
   "id": "west-melbourne",
   "n": "West Melbourne",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.072,
   "lo": -80.654,
@@ -2718,7 +2718,7 @@
  {
   "id": "atlantic-beach",
   "n": "Atlantic Beach",
-  "r": "Northeast Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 30.334,
   "lo": -81.398,
@@ -2746,7 +2746,7 @@
  {
   "id": "neptune-beach",
   "n": "Neptune Beach",
-  "r": "Northeast Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 30.314,
   "lo": -81.398,
@@ -2775,7 +2775,7 @@
  {
   "id": "ponte-vedra-beach",
   "n": "Ponte Vedra Beach",
-  "r": "Northeast Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 30.233,
   "lo": -81.386,
@@ -2803,7 +2803,7 @@
  {
   "id": "st-augustine-beach",
   "n": "St. Augustine Beach",
-  "r": "Northeast Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.84,
   "lo": -81.27,
@@ -2832,7 +2832,7 @@
  {
   "id": "daytona-beach-shores",
   "n": "Daytona Beach Shores",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.176,
   "lo": -80.978,
@@ -2858,7 +2858,7 @@
  {
   "id": "ormond-beach",
   "n": "Ormond Beach",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.286,
   "lo": -81.056,
@@ -2884,7 +2884,7 @@
  {
   "id": "palm-coast",
   "n": "Palm Coast",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.584,
   "lo": -81.208,
@@ -2911,7 +2911,7 @@
  {
   "id": "port-orange",
   "n": "Port Orange",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.138,
   "lo": -81.006,
@@ -2937,7 +2937,7 @@
  {
   "id": "south-daytona",
   "n": "South Daytona",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.166,
   "lo": -81.005,
@@ -2963,7 +2963,7 @@
  {
   "id": "navarre",
   "n": "Navarre",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.4,
   "lo": -86.864,
@@ -2989,7 +2989,7 @@
  {
   "id": "mary-esther",
   "n": "Mary Esther",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.411,
   "lo": -86.666,
@@ -3015,7 +3015,7 @@
  {
   "id": "fort-walton-beach",
   "n": "Fort Walton Beach",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.403,
   "lo": -86.607,
@@ -3042,7 +3042,7 @@
  {
   "id": "okaloosa-island",
   "n": "Okaloosa Island",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.393,
   "lo": -86.593,
@@ -3067,7 +3067,7 @@
  {
   "id": "shalimar",
   "n": "Shalimar",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.433,
   "lo": -86.575,
@@ -3093,7 +3093,7 @@
  {
   "id": "niceville",
   "n": "Niceville",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.519,
   "lo": -86.488,
@@ -3119,7 +3119,7 @@
  {
   "id": "valparaiso",
   "n": "Valparaiso",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.508,
   "lo": -86.488,
@@ -3143,7 +3143,7 @@
  {
   "id": "miramar-beach",
   "n": "Miramar Beach",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.378,
   "lo": -86.388,
@@ -3169,7 +3169,7 @@
  {
   "id": "freeport",
   "n": "Freeport",
-  "r": "Panhandle · Emerald Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 30.501,
   "lo": -86.138,
@@ -3193,7 +3193,7 @@
  {
   "id": "mexico-beach",
   "n": "Mexico Beach",
-  "r": "Forgotten Coast",
+  "r": "Panhandle",
   "c": "panhandle",
   "la": 29.952,
   "lo": -85.424,
@@ -3219,7 +3219,7 @@
  {
   "id": "keaton-beach",
   "n": "Keaton Beach",
-  "r": "Big Bend",
+  "r": "Nature Coast",
   "c": "gulf",
   "la": 29.819,
   "lo": -83.594,
@@ -3244,7 +3244,7 @@
  {
   "id": "horseshoe-beach",
   "n": "Horseshoe Beach",
-  "r": "Big Bend",
+  "r": "Nature Coast",
   "c": "gulf",
   "la": 29.44,
   "lo": -83.293,
@@ -3712,7 +3712,7 @@
  {
   "id": "gibsonton",
   "n": "Gibsonton",
-  "r": "Tampa Bay · South Shore",
+  "r": "Tampa Bay",
   "c": "gulf",
   "la": 27.861,
   "lo": -82.386,
@@ -3736,7 +3736,7 @@
  {
   "id": "miami",
   "n": "Miami (Brickell and the Grove)",
-  "r": "Southeast Atlantic",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 25.776,
   "lo": -80.186,
@@ -3764,7 +3764,7 @@
  {
   "id": "jacksonville",
   "n": "Jacksonville",
-  "r": "First Coast",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 30.32,
   "lo": -81.66,
@@ -3791,7 +3791,7 @@
  {
   "id": "indian-river-shores",
   "n": "Indian River Shores",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.712,
   "lo": -80.378,
@@ -3817,7 +3817,7 @@
  {
   "id": "hutchinson-island",
   "n": "Hutchinson Island",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.256,
   "lo": -80.197,
@@ -3844,7 +3844,7 @@
  {
   "id": "sewalls-point",
   "n": "Sewall's Point",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.199,
   "lo": -80.202,
@@ -3871,7 +3871,7 @@
  {
   "id": "palm-city",
   "n": "Palm City",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.18,
   "lo": -80.274,
@@ -3895,7 +3895,7 @@
  {
   "id": "port-salerno",
   "n": "Port Salerno",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.15,
   "lo": -80.195,
@@ -3921,7 +3921,7 @@
  {
   "id": "hobe-sound",
   "n": "Hobe Sound",
-  "r": "Treasure Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 27.062,
   "lo": -80.129,
@@ -3947,7 +3947,7 @@
  {
   "id": "tequesta",
   "n": "Tequesta",
-  "r": "Palm Beaches",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.96,
   "lo": -80.096,
@@ -3973,7 +3973,7 @@
  {
   "id": "juno-beach",
   "n": "Juno Beach",
-  "r": "Palm Beaches",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.893,
   "lo": -80.056,
@@ -3999,7 +3999,7 @@
  {
   "id": "lake-park",
   "n": "Lake Park",
-  "r": "Palm Beaches",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.798,
   "lo": -80.053,
@@ -4025,7 +4025,7 @@
  {
   "id": "palm-beach-shores",
   "n": "Palm Beach Shores",
-  "r": "Palm Beaches",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.778,
   "lo": -80.036,
@@ -4053,7 +4053,7 @@
  {
   "id": "lake-worth-beach",
   "n": "Lake Worth Beach",
-  "r": "Palm Beaches",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.614,
   "lo": -80.048,
@@ -4081,7 +4081,7 @@
  {
   "id": "lantana",
   "n": "Lantana",
-  "r": "Palm Beaches",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.584,
   "lo": -80.049,
@@ -4105,7 +4105,7 @@
  {
   "id": "boynton-beach",
   "n": "Boynton Beach",
-  "r": "Palm Beaches",
+  "r": "South Florida and the Keys",
   "c": "atlantic",
   "la": 26.527,
   "lo": -80.056,
@@ -4132,7 +4132,7 @@
  {
   "id": "vilano-beach",
   "n": "Vilano Beach",
-  "r": "First Coast",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.917,
   "lo": -81.299,
@@ -4158,7 +4158,7 @@
  {
   "id": "crescent-beach",
   "n": "Crescent Beach",
-  "r": "First Coast",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.769,
   "lo": -81.253,
@@ -4184,7 +4184,7 @@
  {
   "id": "beverly-beach",
   "n": "Beverly Beach",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.515,
   "lo": -81.145,
@@ -4210,7 +4210,7 @@
  {
   "id": "ormond-by-the-sea",
   "n": "Ormond by the Sea",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.331,
   "lo": -81.058,
@@ -4236,7 +4236,7 @@
  {
   "id": "holly-hill",
   "n": "Holly Hill",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.231,
   "lo": -81.028,
@@ -4262,7 +4262,7 @@
  {
   "id": "ponce-inlet",
   "n": "Ponce Inlet",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 29.081,
   "lo": -80.928,
@@ -4289,7 +4289,7 @@
  {
   "id": "edgewater",
   "n": "Edgewater",
-  "r": "Central Atlantic",
+  "r": "Northeast Florida",
   "c": "atlantic",
   "la": 28.993,
   "lo": -80.904,
@@ -4315,7 +4315,7 @@
  {
   "id": "cape-canaveral",
   "n": "Cape Canaveral",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.407,
   "lo": -80.594,
@@ -4339,7 +4339,7 @@
  {
   "id": "merritt-island",
   "n": "Merritt Island",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.361,
   "lo": -80.677,
@@ -4365,7 +4365,7 @@
  {
   "id": "cocoa-village",
   "n": "Cocoa Village",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.354,
   "lo": -80.725,
@@ -4392,7 +4392,7 @@
  {
   "id": "rockledge",
   "n": "Rockledge",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.326,
   "lo": -80.712,
@@ -4418,7 +4418,7 @@
  {
   "id": "indian-harbour-beach",
   "n": "Indian Harbour Beach",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.144,
   "lo": -80.596,
@@ -4445,7 +4445,7 @@
  {
   "id": "melbourne",
   "n": "Melbourne",
-  "r": "Space Coast",
+  "r": "Treasure and Space Coast",
   "c": "atlantic",
   "la": 28.079,
   "lo": -80.6,
