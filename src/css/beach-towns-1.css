@@ -235,3 +235,31 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w) .rg-map{position:stick
 html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr{grid-template-columns:76px 1fr 18px;padding:14px 4px!important}
 html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr i{width:76px;height:76px}
 }
+
+/* Nov 12: Browse by region, home Vibe Map card style */
+.terr .mc{stroke:#86A3B3;stroke-width:calc(var(--k)*.9px)}.terr .mv{stroke-width:calc(var(--k)*1.2px)}.terr .ms{stroke-width:calc(var(--k)*1px);stroke-dasharray:calc(var(--k)*4px) calc(var(--k)*4px)}.terr .mr1{stroke:#D9D2C5;stroke-width:calc(var(--k)*2.6px)}.terr .mr2{stroke-width:calc(var(--k)*1.3px)}.terr .mh1{stroke-width:calc(var(--k)*3.4px)}.terr .mh2{stroke-width:calc(var(--k)*2.2px)}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg.cg{display:block!important;min-height:0!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx{display:flex;flex-direction:column;gap:14px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-frame{position:relative;border-radius:20px;overflow:hidden;background:#8DBCD9;height:min(420px,48svh);box-shadow:0 1px 0 rgba(21,42,46,.06)}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-frame svg{display:block;width:100%;height:100%}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-d circle{fill:#152A2E;stroke:#fff;stroke-width:calc(var(--k)*1.6px);r:calc(var(--k)*4.6px);opacity:0;transition:opacity .35s ease}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-d a.on circle{opacity:1}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-d a:not(.on){pointer-events:none}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-pill{position:absolute;left:12px;top:12px;display:flex;align-items:baseline;gap:8px;padding:9px 14px;border-radius:999px;background:rgba(255,255,255,.78);-webkit-backdrop-filter:blur(16px) saturate(1.2);backdrop-filter:blur(16px) saturate(1.2);color:#152A2E;font:500 13px/1 'DM Sans',system-ui,sans-serif;box-shadow:0 2px 10px rgba(10,20,22,.08)}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-pill b{font-weight:600;font-size:15px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-pill span{opacity:.7}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-row{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;margin:0 -20px;padding:6px 20px 6px;scroll-padding:0 20px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-row::-webkit-scrollbar{display:none}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx{all:unset;box-sizing:border-box;flex:0 0 78%!important;max-width:340px!important;width:auto!important;height:150px!important;aspect-ratio:auto!important;display:block!important;scroll-snap-align:start;position:relative!important;border-radius:16px;overflow:hidden;cursor:pointer;color:#fff;outline-offset:3px;transition:transform .25s ease,box-shadow .25s ease}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx i{position:absolute;inset:0;background-size:cover;background-position:center}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(8,16,18,.72) 0%,rgba(8,16,18,.2) 55%,rgba(8,16,18,0) 80%)}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx span{position:absolute;left:16px;right:14px;bottom:14px;z-index:2;display:block;text-align:left}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx small{display:block!important;font:600 12px/1 'DM Sans',system-ui,sans-serif;letter-spacing:.02em;opacity:.9;margin:0 0 6px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx b{display:block;font:600 21px/1.1 'DM Sans',system-ui,sans-serif!important;letter-spacing:-.01em}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx em{display:block;font:400 13px/1.35 'DM Sans',system-ui,sans-serif!important;font-style:normal;opacity:.88;margin-top:4px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx.on{box-shadow:0 0 0 2.5px #fff,0 0 0 4.5px #152A2E}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx:focus-visible{outline:2px solid #152A2E}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-dots{display:flex;justify-content:center;gap:8px;margin-top:-2px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-dots i{width:7px;height:7px;border-radius:50%;background:rgba(21,42,46,.22);cursor:pointer;transition:background .2s,width .2s}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-dots i.on{background:#152A2E;width:18px;border-radius:4px}
+@media (min-width:761px){html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-frame{height:440px}html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-row{margin:0 -6px;padding:6px;scroll-padding:0 6px}html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx{flex-basis:300px!important;height:170px!important}}

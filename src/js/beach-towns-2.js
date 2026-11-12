@@ -29,14 +29,30 @@ $('row').innerHTML=EXP.filter(([id])=>byId[id]).map(([id],i)=>{const t=byId[id];
 const sc=d=>{const r=$('row');r.scrollBy({left:d*(r.firstElementChild.offsetWidth+20),behavior:'smooth'})};$('rp').onclick=()=>sc(-1);$('rn').onclick=()=>sc(1);
 /* regions */
 const R={c:'',a:''};
-$('cg').innerHTML=(()=>{const PX=lo=>(lo+89)*88.3,PY=la=>(36.8-la)*100,vb=[95,555,745,705];
- const dots=CO.map(([k])=>T.filter(t=>inC(t,k)).map(t=>`<circle data-c="${k}" cx="${PX(t.lo).toFixed(1)}" cy="${PY(t.la).toFixed(1)}" r="6"/>`).join('')).join('');
- const map=`<div class="rg-map"><svg viewBox="${vb.join(' ')}" role="img" aria-label="Map of Florida's seven beach town regions"><image href="../img/map/fl-outline.svg" x="0" y="0" width="1192" height="1380"/><g class="rg-dots">${dots}</g></svg></div>`;
- const rows=CO.map(([k,n,d,im])=>{const L=T.filter(t=>inC(t,k));return `<button class="ct rr" data-c="${k}"><i style="background-image:url('${im}')"></i><span><b>${n}</b><small>${L.length} towns · ${d}</small></span><svg class="ra" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M9 6l6 6-6 6"/></svg></button>`}).join('');
- return map+`<div class="rg-rows">${rows}</div>`})();
-(function(){const g=$('cg');const hl=c=>{g.querySelectorAll('.rg-dots circle').forEach(e=>e.classList.toggle('hl',!!c&&e.dataset.c==c));g.classList.toggle('hov',!!c)};
- g.addEventListener('pointerover',e=>{const b=e.target.closest('.rr');hl(b?b.dataset.c:(R.c||''))});g.addEventListener('pointerleave',()=>hl(R.c||''));
- g.addEventListener('click',e=>{const c=e.target.closest('circle[data-c]');if(c)pickC(c.dataset.c,'')});window.rgHL=hl})();
+/* Nov 12: Browse by region, modeled on the home Vibe Map card. A real basemap zoomed into one region at a time, with a swipe row of region cards that glides the map */
+$('cg').innerHTML=(()=>{
+ const cards=CO.map(([k,n,d,im],i)=>{const L=T.filter(t=>inC(t,k));return `<button type="button" class="ct rx${i?'':' on'}" data-c="${k}" aria-label="${n}, ${L.length} towns"><i style="background-image:url('${im}')"></i><span><small>${L.length} towns</small><b>${n}</b><em>${d}</em></span></button>`}).join('');
+ return `<div class="rgx"><div class="rgx-frame"><svg id="rgsvg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of the selected Florida region"></svg><div class="rgx-pill" id="rgpill"></div></div><div class="rgx-row" id="rgrow">${cards}</div><div class="rgx-dots" id="rgdots">${CO.map((c,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div></div>`})();
+(function(){const svg=$('rgsvg'),row=$('rgrow');if(!svg||!window.FLMAP)return;
+ const PX=lo=>(lo+89)*88.3,PY=la=>(36.8-la)*100;
+ const dots=CO.map(([k])=>T.filter(t=>inC(t,k)).map(t=>`<a href="${t.id}-v3.html" data-c="${k}"><title>${t.n}</title><circle cx="${PX(t.lo).toFixed(1)}" cy="${PY(t.la).toFixed(1)}" r="5"/></a>`).join('')).join('');
+ svg.innerHTML=`<g class="terr" id="rgterr">${FLMAP}</g><g class="rgx-d" id="rgd">${dots}</g>`;
+ const box=k=>{const L=T.filter(t=>inC(t,k));let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;L.forEach(t=>{const x=PX(t.lo),y=PY(t.la);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)});
+  const r=svg.getBoundingClientRect(),asp=(r.width||360)/(r.height||300);let w=Math.max(x1-x0,60)*1.3,h=Math.max(y1-y0,60)*1.3;if(w/h<asp)w=h*asp;else h=w/asp;const cx=(x0+x1)/2,cy=(y0+y1)/2;return [cx-w/2,cy-h/2,w,h]};
+ let cur=null,anim=0,act='';
+ const set=v=>{svg.setAttribute('viewBox',v.map(n=>n.toFixed(1)).join(' '));const r=svg.getBoundingClientRect(),k=v[2]/(r.width||360);svg.style.setProperty('--k',k);$('rgterr').style.setProperty('--k',k)};
+ const glide=to=>{cancelAnimationFrame(anim);if(!cur||matchMedia('(prefers-reduced-motion: reduce)').matches){cur=to;set(to);return}const fr=cur.slice(),t0=performance.now(),D=650;
+  const st=n=>{const p=Math.min(1,(n-t0)/D),e=p<.5?4*p*p*p:1-Math.pow(-2*p+2,3)/2;cur=fr.map((a,i)=>a+(to[i]-a)*e);set(cur);if(p<1)anim=requestAnimationFrame(st)};anim=requestAnimationFrame(st)};
+ const show=k=>{if(!k||k==act)return;act=k;const c=CO.find(x=>x[0]==k),n=T.filter(t=>inC(t,k)).length;$('rgpill').innerHTML=`<b>${c[1]}</b><span>${n} towns</span>`;
+  svg.querySelectorAll('#rgd a').forEach(a=>a.classList.toggle('on',a.dataset.c==k));row.querySelectorAll('.rx').forEach(b=>b.classList.toggle('on',b.dataset.c==k));
+  $('rgdots').querySelectorAll('i').forEach((d,i)=>d.classList.toggle('on',CO[i][0]==k));glide(box(k))};
+ // swipe the row and the map follows the card in the middle
+ let sT=0,lock=0;row.addEventListener('scroll',()=>{if(lock)return;clearTimeout(sT);sT=setTimeout(()=>{const r=row.getBoundingClientRect(),mid=r.left+Math.min(r.width/2,190);let best=null,bd=1e9;row.querySelectorAll('.rx').forEach(b=>{const q=b.getBoundingClientRect(),d=Math.abs(q.left+q.width/2-mid);if(q.left<=mid&&q.right>=mid){best=b;bd=0}else if(d<bd&&bd){bd=d;best=b}});best&&show(best.dataset.c)},90)},{passive:true});
+ const into=k=>{const b=row.querySelector(`.rx[data-c="${k}"]`);if(!b)return;lock=1;row.scrollTo({left:b.offsetLeft-row.offsetLeft-(innerWidth>760?0:20),behavior:'smooth'});setTimeout(()=>{lock=0},600)};
+ window.rgHL=k=>{if(k){show(k);into(k)}};
+ $('rgdots').onclick=e=>{const d=e.target.closest('i');if(!d)return;const i=[...$('rgdots').children].indexOf(d);show(CO[i][0]);into(CO[i][0])};
+ addEventListener('resize',()=>{if(act){const k=act;act='';show(k)}});
+ const go0=()=>{act='';show(R.c||CO[0][0])};if(svg.getBoundingClientRect().width)go0();else requestAnimationFrame(go0)})();
 $('cg').onclick=e=>{const b=e.target.closest('.ct');if(b)pickC(b.dataset.c,'')};
 function pickC(c,a){R.c=c;R.a=a;const co=CO.find(x=>x[0]==c);const L=T.filter(t=>inC(t,c)).sort((x,y)=>cOrd(x)-cOrd(y));
  const areas=[];L.forEach(t=>{const a=area(t);if(!areas.includes(a))areas.push(a)});
