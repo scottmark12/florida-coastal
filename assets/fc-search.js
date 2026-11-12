@@ -5,7 +5,7 @@
   var ROOT=me?me.replace(/assets\/fc-search\.js.*$/,''):new URL('/',location.href).href;
   var U=function(p){return new URL(p,ROOT).href};
   var IDX=null,loading=null;
-  function load(){if(IDX)return Promise.resolve(IDX);if(loading)return loading;loading=fetch(U('assets/search-index.json?v=2')).then(function(r){return r.json()}).then(function(d){IDX=d;return d});return loading}
+  function load(){if(IDX)return Promise.resolve(IDX);if(loading)return loading;loading=fetch(U('assets/search-index.json?v=3')).then(function(r){return r.json()}).then(function(d){IDX=d;return d});return loading}
   var esc=function(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')};
   var norm=function(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim()};
   var SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>';
