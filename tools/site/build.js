@@ -35,6 +35,9 @@ async function minJs(code, name) {
 async function main() {
   fs.rmSync(OUT, { recursive: true, force: true });
   const man = JSON.parse(read(path.join(SRC, 'manifest.json')));
+  const walk = d => fs.readdirSync(d, { withFileTypes: true }).flatMap(e => e.isDirectory() ? walk(path.join(d, e.name)) : [path.join(d, e.name)]);
+  images.ensure([...walk(SRC), ...man.assets.map(q => path.join(ROOT, q.split('?')[0]))]);
+  const upgrade = `<script>${await minJs(images.UPGRADE, 'photo upgrade')}</script>`;
   const url = {};   // marker -> served path
 
   // Shared files, one versioned folder for all of them.
@@ -54,13 +57,13 @@ async function main() {
   if (new Set(names).size !== names.length) throw new Error('two shared files have the same name');
   const sdir = 's-' + h10(Object.keys(shared).sort().map(p => p + shared[p]).join('\n'));
   for (const [p, body] of Object.entries(shared)) {
-    write(path.join(OUT, sdir, path.basename(p)), images.rewrite(body));
+    write(path.join(OUT, sdir, path.basename(p)), images.rewrite(body, { css: p.endsWith('.css') }));
     for (const q of man.assets) if (q.split('?')[0] === p) url['asset:' + q] = `/assets/v3/${sdir}/${path.basename(p)}`;
   }
 
   // Page styles and code.
   for (const f of fs.readdirSync(path.join(SRC, 'css'))) {
-    const name = f.replace(/\.css$/, ''), body = images.rewrite(minCss(read(path.join(SRC, 'css', f))));
+    const name = f.replace(/\.css$/, ''), body = images.rewrite(minCss(read(path.join(SRC, 'css', f))), { css: true });
     const out = `${name}.${h10(body)}.css`; write(path.join(OUT, out), body); url['css:' + name] = '/assets/v3/' + out;
   }
   for (const f of fs.readdirSync(path.join(SRC, 'js'))) {
@@ -82,7 +85,7 @@ async function main() {
     const re = /\{\{inline-js\}\}([\s\S]*?)\{\{\/inline-js\}\}/g; let m, last = 0;
     while ((m = re.exec(html))) { parts.push(html.slice(last, m.index), images.rewrite(await minJs(m[1], where))); last = re.lastIndex; }
     parts.push(html.slice(last));
-    return images.rewrite(parts.join('').replace(/\{\{([a-z]+:[^}]+)\}\}/g, (x, k) => { if (!url[k]) throw new Error(`${where}: nothing built for ${k}`); return url[k]; }));
+    return images.imgTags(images.rewrite(parts.join('').replace(/<head>/, '<head>' + upgrade).replace(/\{\{([a-z]+:[^}]+)\}\}/g, (x, k) => { if (!url[k]) throw new Error(`${where}: nothing built for ${k}`); return url[k]; })));
   };
   let n = 0;
   for (const rel of Object.keys(PAGES)) { write(path.join(ROOT, rel), await fill(read(path.join(SRC, 'pages', rel)), rel)); n++; }
