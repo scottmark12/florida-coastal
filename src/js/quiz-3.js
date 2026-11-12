@@ -1,9 +1,10 @@
 (function(){
-const PH=[['img/c/st-augustine-aerial.webp','St. Augustine'],['img/c/ormond-beach.webp','Ormond Beach'],['img/c/key-west.webp','Key West'],['img/c/bradenton-beach.webp','Bradenton Beach'],['img/c/keywest-street.webp','Key West'],['img/c/skyway-arrival.webp','Sunshine Skyway'],['img/c/north-palm-beach.webp','North Palm Beach'],['img/c/destin.webp','Destin'],['img/c/stuart.webp','']];
+/* Nov 12: quiz photos picked for the Adirondack layout (sharp landscape photo on top, blurred copy below); third value = horizontal focus */
+const PH=[['img/c/st-augustine-aerial.webp','St. Augustine','50%'],['img/c/marsh-sunset.webp','Nature Coast','50%'],['img/c/water-sound-docks.webp','','40%'],['img/c/dunedin-honeymoon.webp','Dunedin','50%'],['img/c/cocoa-village.webp','Cocoa Village','50%'],['img/c/keys-bridge.webp','Seven Mile Bridge','50%'],['img/c/naples-home.webp','Naples','55%'],['img/c/30a-home.webp','30A','50%'],['img/c/stuart.webp','']];
 PH.forEach(p=>{const i=new Image();i.src=p[0]});
 document.body.classList.add('qphoto');if(new URLSearchParams(location.search).get('bar')==='blue')document.body.classList.add('bar-blue');
 const mw=document.querySelector('.mapw'),box=document.createElement('div');box.id='qph';
-box.innerHTML=PH.map(p=>`<div class="ph" style="background-image:url('${p[0]}')"></div>`).join('');
+box.innerHTML=PH.map(p=>`<div class="ph" style="background-image:url('${p[0]}');--fx:${p[2]||'50%'}"></div>`).join('');
 mw.parentElement.insertBefore(box,mw.nextSibling);
 const cap=document.createElement('div');cap.id='qcap';mw.parentElement.insertBefore(cap,box.nextSibling);
 let cur=-1;function show(n){if(n===cur)return;cur=n;box.querySelectorAll('.ph').forEach((e,i)=>e.classList.toggle('on',i===n));cap.textContent=PH[n]?PH[n][1]:''}

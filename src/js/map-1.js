@@ -55,7 +55,7 @@ function render(fast){
  const pin=t=>S.pop&&S.pop.id==t.id||S.hover==t.id;
  const slTop=S.mode=='sliders'&&S.top.length,dflt=!S.style&&!S.price&&!slTop;
  const CL=S.mode=='vibes'&&S.style?mkClu(vis.filter(t=>match(t)&&!pin(t)),v,k):[],inClu=new Set();CL.forEach(c=>c.forEach(t=>inClu.add(t.id)));
- vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&slTop){if(!S.top.includes(t.id))s+=`<circle class="dot sg" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${3*k}" fill="#A7B0B2" stroke="#fff" stroke-width="${1*k}"/>`;return}if(!pin(t)&&S.mode=='vibes'&&!S.style&&S.demo&&!t.v.includes(S.demo))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
+ vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&slTop)return;if(!pin(t)&&S.mode=='vibes'&&!S.style&&S.demo&&!t.v.includes(S.demo))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
   let r=any?(m?5.5:3):(sg?5:(zoomed?4.5:3));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.8));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#6B7678');
   if(pin(t))r=7;
   const dm=S.mode=='vibes'&&!S.style&&S.demo&&t.v.includes(S.demo),vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:dm?VCOL[S.demo]:null;
@@ -81,14 +81,14 @@ function render(fast){
  if(S.mode=='sliders'&&S.top.length){let tp='',tl='',tpB='',tpS='';const order=S.top.map((id,i)=>[id,i]);const big=order.slice(0,5),sm=order.slice(5,25).reverse();
  {boxes.length=0;big.forEach(([id])=>{const t=T.find(x=>x.id==id);boxes.push([(t.x-v[0])/k-17,(t.y-v[1])/k-17,34,34])})}const TB=[];const own=(bx,by,bw,bh,px,py)=>{if(bx<4||bx+bw>w-4||by<2||by+bh>h-2)return true;for(const q of boxes){if(px>=q[0]&&px<=q[0]+q[2]&&py>=q[1]&&py<=q[1]+q[3])continue;if(bx<q[0]+q[2]&&bx+bw>q[0]&&by<q[1]+q[3]&&by+bh>q[1])return true}return false};
  const one=([id,i],B)=>{const t=T.find(x=>x.id==id);if(!inView(t,-40*k))return;const hv=S.hover==id||(S.pop&&S.pop.id==id),sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;
-  if(B){const nm=t.n.replace(/ \(.*\)$/,''),fs=14,tw=nm.length*fs*.6,R=16,ext=tw+14;let side=0;
+  if(B){/* Nov 12 (option C): black numbered circle plus the name in the map label style */const nm=t.n.replace(/ \(.*\)$/,''),fs=14,tw=nm.length*fs*.58,R=11,ext=tw+8;let side=0;
    const tryS=sd=>{const bx=sd>0?sx-R:sx-R-ext,bw=2*R+ext;return own(bx,sy-R-2,bw,2*R+4,sx,sy)?null:[bx,bw]};
    const pref=t.c=='atlantic'?1:-1;let r=tryS(pref);if(r)side=pref;else{r=tryS(-pref);if(r)side=-pref}
    if(!side&&hv){side=pref;r=[pref>0?sx-R:sx-R-ext,2*R+ext]}
-   let g='';if(side){boxes.push([r[0],sy-R-2,r[1],2*R+4]);g+=`<rect x="${v[0]+r[0]*k}" y="${v[1]+(sy-R)*k}" width="${r[1]*k}" height="${2*R*k}" rx="${R*k}" fill="#152A2E" stroke="#fff" stroke-width="${2.2*k}" style="filter:drop-shadow(0 2px 4px rgba(0,0,0,.28))"/><text class="pnm" x="${v[0]+(side>0?sx+R+4:sx-R-4)*k}" y="${v[1]+(sy+fs*.36)*k}" text-anchor="${side>0?'start':'end'}" font-size="${fs*k}" font-weight="600" fill="#fff" style="font-family:var(--mapf);fill:#fff;stroke:none;pointer-events:none">${nm}</text>`}
-   else{boxes.push([sx-R-2,sy-R-2,2*R+4,2*R+4]);g+=`<circle cx="${t.x}" cy="${t.y}" r="${R*k}" fill="#152A2E" stroke="#fff" stroke-width="${2.6*k}" style="filter:drop-shadow(0 1px 3px rgba(0,0,0,.3))"/>`}
-   g+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(side?12:R)*k}" fill="${side?'#fff':'#152A2E'}" stroke="none"/><text x="${t.x}" y="${t.y+5.2*k}" text-anchor="middle" style="font-family:var(--mapf);pointer-events:none" font-weight="700" font-size="${14.5*k}" fill="${side?'#152A2E':'#fff'}">${i+1}</text>`;
-   if(side)g=`<g class="pp" data-id="${t.id}">`+g.replace('<rect ',`<rect class="dot" data-id="${t.id}" `)+'</g>';tpB=tpB+'';TB.unshift(g);return}
+   boxes.push(side?[r[0],sy-R-2,r[1],2*R+4]:[sx-R-2,sy-R-2,2*R+4,2*R+4]);
+   let g=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(hv?R+2:R)*k}" fill="#152A2E" stroke="#fff" stroke-width="${2*k}" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,.28))"/><text x="${t.x}" y="${t.y+4.4*k}" text-anchor="middle" style="font-family:var(--mapf);pointer-events:none" font-weight="700" font-size="${12.5*k}" fill="#fff">${i+1}</text>`;
+   if(side)g+=`<text class="lbl pnm2" data-id="${t.id}" x="${t.x+side*(R+6)*k}" y="${t.y+fs*.36*k}" text-anchor="${side>0?'start':'end'}" font-size="${fs*k}" stroke-width="${2.6*k}" style="font-weight:600">${nm}</text>`;
+   TB.unshift(`<g class="pp" data-id="${t.id}">${g}</g>`);return}
   /* Nov 12: next best towns as small black dots (Regions map size), no numbers */tpS+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(hv?6:4.6)*k}" fill="#152A2E" stroke="#fff" stroke-width="${1.6*k}"/>`;
   if(hv){const nm=t.n.replace(/ \(.*\)$/,''),sd=t.c=='atlantic'?1:-1;tl+=`<text class="lbl sm" x="${t.x+sd*15*k}" y="${t.y+4.6*k}" text-anchor="${sd>0?'start':'end'}" font-size="${13*k}" stroke-width="${2.4*k}" style="font-weight:600">${nm}</text>`}};
  big.forEach(x=>one(x,true));sm.forEach(x=>one(x,false));
