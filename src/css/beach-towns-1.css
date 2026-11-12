@@ -211,3 +211,27 @@ html body section.az:not(#x):not(#y) #cols a:hover b{text-decoration:underline;t
 @media (max-width:760px){html body section.s#regions:not(#x):not(#y) #cg{grid-template-rows:repeat(4,1fr)!important;min-height:min(560px,64svh)}
 html body section.s#regions:not(#x):not(#y) #cg .ct:last-child{grid-column:1/-1}
 html body section.s#regions:not(#x):not(#y) #cg .ct b{font-size:20px!important}}
+
+/* Nov 12: regions as a quiet map plus clean rows (Compass area guide pattern) */
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg.cg{display:grid!important;grid-template-columns:minmax(0,1fr)!important;grid-template-rows:auto!important;grid-auto-rows:auto!important;gap:18px!important;min-height:0!important;height:auto!important;aspect-ratio:auto!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) .rg-map{background:#E6EFF5;border-radius:20px;overflow:hidden;height:auto!important;aspect-ratio:auto!important;grid-column:auto!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) .rg-map svg{display:block;width:100%;height:auto}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) .rg-dots circle{fill:#9AA8AB;opacity:.55;transition:fill .2s,opacity .2s,r .2s;cursor:pointer}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg.hov .rg-dots circle{opacity:.28}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .rg-dots circle.hl{fill:#152A2E;opacity:1;r:8}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) .rg-rows{display:flex;flex-direction:column;border-top:1px solid rgba(21,42,46,.12)}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr{all:unset;box-sizing:border-box;display:grid!important;grid-template-columns:64px 1fr 18px;align-items:center;gap:14px;padding:12px 2px!important;border-bottom:1px solid rgba(21,42,46,.12);cursor:pointer;color:#152A2E;aspect-ratio:auto!important;min-height:0!important;grid-column:auto!important;background:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr i{display:block;position:static!important;width:64px;height:64px;border-radius:12px;background-size:cover;background-position:center;inset:auto!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr::after,html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr i::after{display:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr span{position:static!important;display:flex;flex-direction:column;gap:3px;padding:0!important;background:none!important;color:#152A2E!important;text-shadow:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr b{font-family:'DM Sans',system-ui,sans-serif!important;font-size:18px!important;font-weight:600!important;letter-spacing:-.01em;line-height:1.2;color:#152A2E!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr small{display:block!important;visibility:visible!important;font-size:13.5px!important;line-height:1.35;color:#5E6B6D!important;letter-spacing:0!important;text-transform:none!important;font-weight:400!important;opacity:1!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr .ra{color:#9AA8AB}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr:hover b,html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr.on b{text-decoration:underline;text-underline-offset:3px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr.on .ra{color:#152A2E}
+@media (min-width:761px){
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg.cg{grid-template-columns:minmax(0,1.05fr) minmax(0,1fr)!important;gap:40px!important;align-items:start}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) .rg-map{position:sticky;top:90px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr{grid-template-columns:76px 1fr 18px;padding:14px 4px!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w) #cg .ct.rr i{width:76px;height:76px}
+}
