@@ -1,0 +1,15 @@
+/* Shared site header (Nov 12 2026, redesign pages). Desktop only: one logo size, one left edge, readable over photos. */
+@media (min-width:761px){
+html body header:not(.nyt-head):not(#x) img[src*="fc-logo"]:not(.logo-mark){height:36px!important;width:auto!important;max-height:none!important;max-width:none!important}
+html body header.top:not(#x)>.wrap{max-width:none!important;margin:0!important;padding-left:24px!important;padding-right:24px!important}
+html body header.rsh:not(#x){padding-left:24px!important;padding-right:24px!important}
+html body header.top:not(#x) nav a,html body header.rsh:not(#x) nav a,html body.bt2 header:not(.nyt-head):not(#x) nav a{text-shadow:0 1px 10px rgba(0,0,0,.28)}
+html body header.top:not(#x) img.fcl,html body header.rsh:not(#x) img,html body.bt2 header:not(.nyt-head):not(#x) img[src*="fc-logo-white"]{filter:drop-shadow(0 1px 6px rgba(0,0,0,.25))}
+html body header.rsh:not(#x) nav{opacity:1!important}
+html body header.rsh:not(#x) nav a{color:#fff!important;opacity:1!important}
+}
+html body header.rsh:not(#x){display:flex;align-items:center}
+html body header.rsh:not(#x) nav{margin-left:auto}
+html body header.rsh:not(#x) .rsh-cta{margin-left:28px;display:inline-flex;align-items:center;height:40px;padding:0 20px!important;border:0!important;border-radius:999px!important;background:#fff!important;color:#152A2E!important;font:600 15px 'DM Sans',system-ui,sans-serif;text-decoration:none;text-shadow:none!important;white-space:nowrap}
+@media (max-width:760px){html body header.rsh .rsh-cta{display:none!important}}
+@media (min-width:761px){html body header.rsh:not(#x){background:linear-gradient(180deg,rgba(10,22,24,.42),rgba(10,22,24,.12) 70%,rgba(10,22,24,0))!important}}
