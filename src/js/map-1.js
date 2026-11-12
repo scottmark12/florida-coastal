@@ -54,13 +54,14 @@ function render(fast){
  const vis=T.filter(t=>inView(t,-20*k));
  const pin=t=>S.pop&&S.pop.id==t.id||S.hover==t.id;
  const slTop=S.mode=='sliders'&&S.top.length,dflt=!S.style&&!S.price&&!slTop;
- const CL=S.mode=='vibes'&&S.style?mkClu(vis.filter(t=>match(t)&&!pin(t)),v,k):[],inClu=new Set();CL.forEach(c=>c.forEach(t=>inClu.add(t.id)));
- vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&slTop)return;if(!pin(t)&&S.mode=='vibes'&&!S.style&&S.demo&&!t.v.includes(S.demo))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
+ /* Nov 12: no clusters (Mark: every town is a dot, like the live map) */const CL=[],inClu=new Set();const s0=s.length;let sg0='';CL.forEach(c=>c.forEach(t=>inClu.add(t.id)));
+ vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&slTop)return;if(!pin(t)&&S.mode=='vibes'&&!S.style&&S.demo&&!t.v.includes(S.demo))return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t)){sg0+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${3.2*k}" fill="#A7B0B2" stroke="#fff" stroke-width="${1.1*k}"/>`;return}
   let r=any?(m?5.5:3):(sg?5:(zoomed?4.5:3));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.8));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#6B7678');
   if(pin(t))r=7;
   const dm=S.mode=='vibes'&&!S.style&&S.demo&&t.v.includes(S.demo),vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:dm?VCOL[S.demo]:null;
   if(vc){const rr=pin(t)?7:dm?6:5;if(dm)s+=`<circle class="ddh" cx="${t.x}" cy="${t.y}" r="${13*k}" fill="${vc}" style="animation-delay:${((t.o||t.x|0)*137)%1400}ms"/>`;s+=`<circle class="dot${dm?' dd':''}" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${rr*k}" fill="${vc}" stroke="#fff" stroke-width="${2.2*k}" style="filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.25))"/>`}
   else s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(S.mode=='vibes'&&S.style&&!m?(sg?4.5:3.2):r)*k}" fill="${S.mode=='vibes'&&S.style&&!m?'#152A2E':fill}" ${S.mode=='vibes'&&S.style&&!m?'fill-opacity=".55"':''} opacity="${op}" stroke="#fff" stroke-width="${(r>3?2:1)*k}"/>`});
+ s=s.slice(0,s0)+sg0+s.slice(s0);
  CL.forEach(c=>{const L=c[0],n=c.length,bx=(L.x-v[0])/k,by=(L.y-v[1])/k;boxes.push([bx-16,by-16,32,32]);s+=`<g class="clu" data-ids="${c.map(t=>t.id).join(',')}" style="cursor:pointer"><circle cx="${L.x}" cy="${L.y}" r="${13*k}" fill="${VCOL[S.style]||'#152A2E'}" stroke="#fff" stroke-width="${2.4*k}" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,.3))"/><text x="${L.x}" y="${L.y+4.6*k}" text-anchor="middle" font-size="${13*k}" font-weight="600" fill="#fff" style="font-family:var(--mapf);pointer-events:none">${n}</text></g>`});
  // labels: pinned first, then matched sig, then matched zoomed
  const want=[];CL.forEach(c=>want.push([Object.assign({},c[0],c.length<=3?{n:c.map(t=>t.n.replace(/ \(.*\)$/,'')).sort((p,q)=>q.length-p.length)[0],_names:c.slice().sort((p,q)=>p.y-q.y).map(t=>[t.id,t.n.replace(/ \(.*\)$/,'')]),_clu:1,_off:20}:{n:c[0].n.replace(/ \(.*\)$/,'')+' +'+(c.length-1),_clu:1,_off:20}),c.length<=3?0.5:1]));vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);if(pin(t))want.push([t,0]);else if(m&&(S.style||S.price)){if(sg)want.push([t,1]);else if(zoomed||(S.mode=='vibes'&&isR(S.style)))want.push([t,2])}else if(sg&&!S.style&&!S.price&&!(S.mode=='vibes'&&S.demo&&!t.v.includes(S.demo)))want.push([t,2]);else if(zoomed&&m)want.push([t,3])});
@@ -116,7 +117,7 @@ const fK=k=>k>=1000?'$'+(k/1000).toFixed(k>=10000?0:2).replace(/\.?0+$/,'')+'M':
 function popList(){if(S.mode=='sliders')return S.top.slice(0,5).map(id=>T.find(t=>t.id==id));if(S.mode=='vibes'&&S.style)return vOrder();return []}
 function openPop(t,nopan){S.pop=t;const p=$('pop');const L=popList(),ki=L.findIndex(x=>x.id==t.id),n=L.length,nx=n>1&&ki>=0?L[(ki+1)%n]:null,sh=x=>x.n.replace(/ \(.*\)$/,'');
  const d=LD[t.id],tags=(S.style&&!isR(S.style)&&t.v.includes(S.style)?[S.style]:[]).concat(t.v.filter(v=>v!==S.style&&LK.VFEEL.includes(v))).slice(0,3).map(vTag).join('');
- let eb=d.rn,mid='';
+ let eb=S.mode=='vibes'&&S.style=='best'&&t.bestRk?`#${t.bestRk} best overall · ${d.rn}`:d.rn,mid='';
  if(S.mode=='sliders'&&ki>=0){{const fw=slFitWord(fitSl(t),S.best,ki),wy=slWhy(t);eb=fw?`${d.rn} · <b>${fw}</b>`:d.rn;mid=wy?`<div class="why1">${wy}</div>`:''}}
  else if(S.mode=='vibes')mid=ndWhy(t);
  const nav=ki>=0&&n>1;
@@ -173,7 +174,7 @@ function cluList(M){closePop();{const cx=M.reduce((s,t)=>s+t.x,0)/M.length,cy=M.
  requestAnimationFrame(()=>el.classList.add('on'))}
 function needOk(t){const n=S.need,d=LD[t.id];if(n.bud&&!(d.med&&d.med<=n.bud))return false;if(n.school&&!d.sc)return false;if(n.air&&!d.air)return false;return true}
 const needOn=()=>Object.keys(S.need).some(k=>S.need[k]);
-function vOrder(){const R=LK.REGIONS.map(r=>r.id),pos=t=>t.c=='panhandle'?t.lo:t.c=='gulf'?-t.la:t.c=='keys'?-t.lo:t.la;
+function vOrder(){if(S.style=='best')return T.filter(t=>t.v.includes('best')&&needOk(t)).sort((a,b)=>a.bestRk-b.bestRk);const R=LK.REGIONS.map(r=>r.id),pos=t=>t.c=='panhandle'?t.lo:t.c=='gulf'?-t.la:t.c=='keys'?-t.lo:t.la;
  return T.filter(t=>(!S.style||t.v.includes(S.style))&&needOk(t)).sort((x,y)=>R.indexOf(LD[x.id].reg)-R.indexOf(LD[y.id].reg)||pos(x)-pos(y))}
 function needsHTML(){const n=S.need,c=T.filter(t=>(!S.style||t.v.includes(S.style))&&needOk(t)).length;
  return `<div class="nd"><div class="vm-eb">What you need</div><div class="nd-row"><label class="nd-sel${n.bud?' on':''}"><select id="ndbud" aria-label="Budget">${LK.NBUD.map(([v,l])=>`<option value="${v}"${(n.bud||0)==v?' selected':''}>${l}</option>`).join('')}</select></label><button class="nd-c${n.school?' on':''}" data-need="school" aria-pressed="${!!n.school}">Good schools</button><button class="nd-c${n.air?' on':''}" data-need="air" aria-pressed="${!!n.air}">Near airport</button></div>${needOn()?`<p class="nd-fine"><b>${c}</b> town${c==1?'':'s'} match · <button class="nd-clear" id="ndclr">Clear</button></p>`:''}</div>`}
@@ -392,11 +393,20 @@ S.booted=1;
 if(params.get('open')){const t=T.find(t=>t.id==params.get('open'));if(t)setTimeout(()=>{S.restoring=1;openPop(t);setTimeout(()=>{S.restoring=0},300)},450)}
 
 // ---- Nov 12: the maps never sit empty. They always show a real pick; on a first visit they step through real picks until the first touch, then stop for good ----
-const VDEF={regions:'r:panhandle',styles:'beaches'};
-function ensurePick(){if(S.mode!='vibes'||S.style||S.restoring)return;let k;if(S.sub=='regions'){const r=r7of(rGet());k=r&&VIBES['r:'+r]?'r:'+r:VDEF.regions}else{const m=S.mem&&S.mem.styles&&S.mem.styles.st;k=m&&VIBES[m]?m:VDEF.styles}S.auto=1;pickStyle(k);setTimeout(()=>{S.auto=0},400)}
+/* Nov 12: Best overall. Our top 15 on the Slider Map's Best all around scoring becomes the first Vibe Map style, and the page opens on it */
+(function(){const R=T.slice().sort((a,b)=>fitSl(b)-fitSl(a)).slice(0,15);R.forEach((t,i)=>{if(!t.v.includes('best'))t.v.push('best');t.bestRk=i+1});
+ VIBES.best='Best overall';VCOL.best='#152A2E';VSUB.best='Our top ranked towns';if(LK.VSUBL)LK.VSUBL.best='Our top 15, ranked on all 10 priorities';if(LK.VSHORT)LK.VSHORT.best='Best overall';if(!LK.VFEEL.includes('best'))LK.VFEEL.unshift('best')})();
+function bestIntro(){if(S.mode!='vibes'||S.style!='best'||S.pop)return;const L=vOrder(),f=L[0];if(!f)return;const p=$('pop'),sh=x=>x.n.replace(/ \(.*\)$/,'');
+ p.innerHTML=`<div class="ph" style="background-image:url('img/vibes/best.webp')"></div><button class="x" aria-label="Close">&times;</button><div class="bd bintro"><div class="eb">Best overall</div><h3>Our top ${L.length} towns</h3><p>Ranked on all 10 things we score, from beaches and water to walkability and price. ${PH()?'Swipe to meet #1.':'Start with #1.'}</p><div class="pnav"><a class="go" href="#" data-first="1">Meet #1, ${sh(f)} →</a><button data-st="1" aria-label="Next town">›</button></div></div>`;
+ const go1=e=>{e&&e.preventDefault();e&&e.stopPropagation();flyTo(f)};p.querySelector('[data-first]').onclick=go1;p.querySelector('[data-st]').onclick=go1;p.querySelector('.x').onclick=e=>{e.stopPropagation();p.classList.remove('on')};p.onclick=null;p.dataset.intro='1';p.classList.remove('full');p.classList.add('on');placePop()}
+// swipe a town card left or right to step through the list (the intro card swipes to #1)
+(function(){const p=$('pop');if(!p)return;let x0=null,y0=0;p.addEventListener('touchstart',e=>{const t=e.touches[0];x0=t.clientX;y0=t.clientY},{passive:true});
+ p.addEventListener('touchend',e=>{if(x0==null)return;const t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;if(Math.abs(dx)<44||Math.abs(dx)<Math.abs(dy)*1.3)return;const b=p.querySelector(`[data-st="${dx<0?1:-1}"]`)||(dx<0&&p.querySelector('[data-st="1"]'));b&&b.click()},{passive:true})})();
+const VDEF={regions:'r:panhandle',styles:'best'};
+function ensurePick(){if(S.mode!='vibes'||S.style||S.restoring)return;let k;if(S.sub=='regions'){const r=r7of(rGet());k=r&&VIBES['r:'+r]?'r:'+r:VDEF.regions}else{const m=S.mem&&S.mem.styles&&S.mem.styles.st;k=m&&VIBES[m]?m:VDEF.styles}S.auto=1;pickStyle(k);setTimeout(()=>{S.auto=0},400);if(k=='best')setTimeout(bestIntro,650)}
 (function(){let touched=false;const stop=()=>{touched=true};['pointerdown','keydown','wheel','touchstart'].forEach(ev=>addEventListener(ev,stop,{passive:true,capture:true}));
  const fresh=()=>S.sub=='regions'?rGet()===null:!(S.mem&&S.mem.styles&&S.mem.styles.st);
- const tick=()=>{if(touched||S.touchedPick||document.hidden||S.mode!='vibes'||S.pop||!fresh())return;const K=S.sub=='regions'?R7.map(r=>'r:'+r[0]):LK.VFEEL;const i=Math.max(0,K.indexOf(S.style));S.auto=1;pickStyle(K[(i+1)%K.length]);setTimeout(()=>{S.auto=0},400)};
+ const tick=()=>{if(S.sub!='regions')return;if(touched||S.touchedPick||document.hidden||S.mode!='vibes'||S.pop||!fresh())return;const K=S.sub=='regions'?R7.map(r=>'r:'+r[0]):LK.VFEEL;const i=Math.max(0,K.indexOf(S.style));S.auto=1;pickStyle(K[(i+1)%K.length]);setTimeout(()=>{S.auto=0},400)};
  setTimeout(ensurePick,700);setInterval(tick,3200)})();
 
 // ---- Nov 12 (v2): Apple style tips. One small tip at a time, it goes away the moment you do what it says (and never comes back), or fades on its own after a few seconds ----
@@ -428,3 +438,9 @@ function ensurePick(){if(S.mode!='vibes'||S.style||S.restoring)return;let k;if(S
  addEventListener('resize',hide);
  setTimeout(next,2200);const sm=window.setMode;window.setMode=setMode=function(m){hide();sm.apply(this,arguments);setTimeout(next,1800)};
 })();
+// ---- Nov 12: phone hint that the sheet pulls up. Shows on the closed sheet until the first pull, then never again ----
+(function(){if(!$('res'))return;const el=document.createElement('button');el.type='button';el.className='shint';el.setAttribute('aria-label','Swipe up for all towns');el.innerHTML='<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg><span>Swipe up for all towns</span>';document.body.appendChild(el);
+ const seen=()=>{try{return !!localStorage.getItem('fc-shint')}catch(e){return false}};
+ el.onclick=()=>{try{localStorage.setItem('fc-shint','1')}catch(e){}shSet('half')};
+ const up=()=>{if(SHON()&&SHEET.st!='peek'){try{localStorage.setItem('fc-shint','1')}catch(e){}}const on=SHON()&&SHEET.st=='peek'&&!seen()&&(S.mode=='vibes'||S.mode=='sliders');el.classList.toggle('on',on)};
+ setInterval(up,400);up()})();

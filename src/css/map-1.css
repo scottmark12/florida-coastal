@@ -555,3 +555,10 @@ html body svg .lbl.clul:not(#x){pointer-events:auto;cursor:pointer}
 @media (max-width:760px){html body .map .zoom:not(#x):not(#y){display:flex!important;position:absolute!important;right:14px!important;left:auto!important;bottom:auto!important;top:calc(env(safe-area-inset-top,0px) + 196px)!important;z-index:30}
 html body .map .zoom:not(#x):not(#y) button{width:44px!important;height:44px!important}
 html body.sliders .map .zoom:not(#x):not(#y){display:none!important}}
+/* Nov 12: swipe up hint, a soft fade at the foot of the closed sheet */
+.shint{display:none}
+@media (max-width:760px){.shint{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;justify-content:center;align-items:flex-end;gap:6px;padding:26px 0 calc(env(safe-area-inset-bottom,0px) + 12px);border:0;background:linear-gradient(180deg,rgba(246,248,249,0),rgba(246,248,249,.94) 46%,#F6F8F9);color:#152A2E;font:600 13.5px/1 'DM Sans',system-ui,sans-serif;opacity:0;pointer-events:none;transition:opacity .25s ease}
+.shint svg{margin-bottom:1px}
+.shint.on{opacity:1;pointer-events:auto}
+.shint.on svg{animation:shBob 1.6s ease-in-out .8s 4}
+@keyframes shBob{0%,100%{transform:none}50%{transform:translateY(-3px)}}}
