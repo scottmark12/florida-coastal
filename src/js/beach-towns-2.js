@@ -89,3 +89,14 @@ function az(){const q=norm($('fq').value.trim()),s=$('fs').value,p=$('fp').value
 ['fq','fs','fp'].forEach(i=>$(i).addEventListener(i=='fq'?'input':'change',az));az();
 {const q0=new URLSearchParams(location.search).get('q');if(q0){$('q').value=q0;$('q').dispatchEvent(new Event('input'));setTimeout(()=>$('q').focus(),50)}}
 {let[h,ar]=location.hash.slice(1).split('/');h=OLDC[h]||h;if(CO.some(c=>c[0]==h)){pickC(h,ar&&AR[ar]?ar:'');setTimeout(()=>$('regions').scrollIntoView(),50)}}
+
+// Nov 12: phone search opens as its own full screen view (the Compass and Zillow pattern). The page used to fight
+// the keyboard: iOS scrolled to the box, then the page's snap scrolling yanked it back, so the box jumped around.
+(function(){const sb=$('sb'),q=$('q');if(!sb||!q)return;const PHN=()=>matchMedia('(max-width:760px)').matches,H=document.documentElement;
+ const x=document.createElement('button');x.type='button';x.className='sb-x';x.textContent='Cancel';sb.querySelector('.sbx').appendChild(x);
+ let ph=null;const open=()=>{if(!PHN()||sb.classList.contains('full'))return;ph=document.createElement('div');ph.style.height=sb.offsetHeight+'px';sb.parentNode.insertBefore(ph,sb);H.classList.remove('tsnap');H.classList.add('sb-lock');sb.classList.add('full');if(q.value)q.oninput()};
+ const close=()=>{if(!sb.classList.contains('full'))return;sb.classList.remove('full','open');H.classList.remove('sb-lock');if(PHN())H.classList.add('tsnap');ph&&ph.remove();ph=null;q.blur()};
+ q.addEventListener('focus',open);x.addEventListener('click',e=>{e.preventDefault();q.value='';$('dd').innerHTML='';close()});
+ $('dd').addEventListener('click',e=>{if(e.target.closest('a[data-c]'))close()},true);
+ q.addEventListener('keydown',e=>{if(e.key=='Escape')close()});
+ document.addEventListener('click',e=>{if(sb.classList.contains('full')&&!e.target.closest('#sb'))close()})})();

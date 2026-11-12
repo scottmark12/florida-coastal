@@ -26,8 +26,8 @@ chips();
 function size(){const r=box.getBoundingClientRect();return [r.width,r.height]}
 const SAT=(()=>{let v=0;const f=()=>{const d=document.createElement('div');d.style.cssText='position:fixed;top:0;height:env(safe-area-inset-top);visibility:hidden';document.body.appendChild(d);v=d.offsetHeight||0;d.remove()};if(document.body)f();else addEventListener('DOMContentLoaded',f);return()=>v})();
 const HDR=()=>matchMedia('(max-width:760px)').matches?64+SAT():0;
-function fit(b,pad=.08,raw){const [w,h0]=size(),hd=HDR(),bt=(!raw&&typeof SHON=='function'&&SHON())?Math.max(PK()+10+((typeof SHEET=='undefined'||SHEET.st=='peek')&&$('pop')&&$('pop').classList.contains('on')&&!$('pop').classList.contains('full')?$('pop').offsetHeight+14+((document.querySelector('.cm-tip.on.st2')||{}).offsetHeight+14||0):0),(typeof SHEET!='undefined'&&SHEET.st=='half')?SHRES()-4:0):0,h=Math.max(160,h0-hd-bt);const r0=fit0(b,pad,w,h);const kk=r0[2]/w;
- if(w<600&&!raw&&typeof PHMAX=='function'&&r0[2]>PHMAX()){/* phone: never wider than the Florida footprint; center the towns above the panel and let cards sit over the bottom */const W=PHMAX(),k2=W/w,h2=Math.max(160,h0-hd-(SHON()?PK()+10:0)),cx=(X(b[0])+X(b[1]))/2,cy=(Y(b[3])+Y(b[2]))/2;return [cx-w/2*k2,cy-(hd+h2/2)*k2,W,h0*k2]}
+function fit(b,pad=.08,raw){const [w,h0]=size(),hd=HDR(),bt=(!raw&&typeof SHON=='function'&&SHON())?Math.max(SHB()+10+((typeof SHEET=='undefined'||SHEET.st=='peek')&&$('pop')&&$('pop').classList.contains('on')&&!$('pop').classList.contains('full')?$('pop').offsetHeight+14+((document.querySelector('.cm-tip.on.st2')||{}).offsetHeight+14||0):0),(typeof SHEET!='undefined'&&SHEET.st=='half')?SHRES()-4:0):0,h=Math.max(160,h0-hd-bt);const r0=fit0(b,pad,w,h);const kk=r0[2]/w;
+ if(w<600&&!raw&&typeof PHMAX=='function'&&r0[2]>PHMAX()){/* phone: never wider than the Florida footprint; center the towns above the panel and let cards sit over the bottom */const W=PHMAX(),k2=W/w,h2=Math.max(160,h0-hd-(SHON()?SHB()+10:0)),cx=(X(b[0])+X(b[1]))/2,cy=(Y(b[3])+Y(b[2]))/2;return [cx-w/2*k2,cy-(hd+h2/2)*k2,W,h0*k2]}
  return [r0[0],r0[1]-hd*kk,r0[2],r0[3]+(h0-h-hd+hd)*kk]}
 function fit0(b,pad,w,h){const x0=X(b[0]),x1=X(b[1]),y0=Y(b[3]),y1=Y(b[2]);let bw=(x1-x0)*(1+pad*2),bh=(y1-y0)*(1+pad*2);const ar=w/h;if(bw/bh<ar)bw=bh*ar;else bh=bw/ar;if(bw<MINW){bh*=MINW/bw;bw=MINW}return [(x0+x1)/2-bw/2,(y0+y1)/2-bh/2,bw,bh]}
 const ALL=[-87.75,-79.75,24.4,31.1];const MINW=150;
@@ -208,7 +208,7 @@ function vRender(){const _r=document.querySelector('#vp .tiles.vt'),_sl=_r?_r.sc
  zoomPill()}
 function needChange(){if(S.pop&&!needOk(S.pop))closePop();render();vRender()}
 const RKEY='fcRegion',rGet=()=>{try{return localStorage.getItem(RKEY)}catch(e){return null}},rSet=v=>{try{localStorage.setItem(RKEY,v)}catch(e){}};
-function pickStyle(k){if(!S.auto)S.touchedPick=1;if(SHON()&&SHEET.st!='peek'){const vp=$('vp');vp&&vp.classList.remove('vt-open');setTimeout(()=>shSet('peek',true),0)}if(isR(k)&&!S.auto)rSet(k.slice(2));S.style=k;S.gHover=null;S.gT0=performance.now()+450;$('sty').value=k;S.region='';tags();document.body.classList.add('pick');closePop();if(isR(k)){S.zoomedTo=null;go(fitStyle(k),500)}else home();vRender();$('res').scrollTop=0}
+function pickStyle(k){if(!S.auto)S.touchedPick=1;if(SHON()&&SHEET.st!='peek'&&SHEET.st!='low'){const vp=$('vp');vp&&vp.classList.remove('vt-open');setTimeout(()=>shSet('peek',true),0)}if(isR(k)&&!S.auto)rSet(k.slice(2));S.style=k;S.gHover=null;S.gT0=performance.now()+450;$('sty').value=k;S.region='';tags();document.body.classList.add('pick');closePop();if(isR(k)){S.zoomedTo=null;go(fitStyle(k),500)}else home();vRender();$('res').scrollTop=0}
 const FIXED=()=>S.mode=='vibes'||S.mode=='sliders';
 function home(){const h=fit(ALL,.02);if(!S.vb||S.vb.some((v,i)=>Math.abs(v-h[i])>1))go(h,350)}
 function flyTo(t){if(FIXED()){openPop(t,true);S.mode=='vibes'&&vRender();return}const[w,h]=size(),nw=w<600,W=nw?MINW*1.6:Math.max(MINW,170),H=W*h/w,cx=nw?w/2:(Math.min(460,w*.45)+w)/2,k=W/w;S.zoomedTo=t.id;go([t.x-cx*k,t.y-h/2*k,W,H],520);setTimeout(()=>{openPop(t,true);S.mode=='vibes'&&vRender()},20)}
@@ -277,9 +277,9 @@ const IOSB=()=>(/iPhone|iPod/.test(navigator.userAgent)&&!navigator.standalone&&
 function PK(){return PK0()+(IOSB()?8:0)}/* Nov 12: iOS Safari's floating bar no longer eats the layout viewport, so the old 72px pad left a blank band */
 function PK0(){return 132;const r=$('res'),tl=$('vp')&&$('vp').querySelector('.tiles.vt');if(!r||!tl)return 300;const pr=r.getBoundingClientRect(),tb=tl.getBoundingClientRect();return Math.min(380,Math.round(tb.top-pr.top+Math.min(tb.height,140)+16))}
 function shStops(){const vh=innerHeight;return {peek:vh-PK(),half:Math.round(vh*.44),full:60+SAT()}}
-function SHRES(){const vh=innerHeight,pe=$('pop');if(SHEET.st=='peek')return PK()+(pe&&pe.classList.contains('on')?pe.offsetHeight+12:0)+14;return vh-shStops()[SHEET.st]+14}
+function SHRES(){const vh=innerHeight,pe=$('pop');if(SHEET.st=='peek'||SHEET.st=='low')return SHB()+(pe&&pe.classList.contains('on')?pe.offsetHeight+12:0)+14;return vh-shStops()[SHEET.st]+14}
 function shApply(y,anim){const r=$('res');SHEET.y=y;r.style.transition=anim?'transform .32s cubic-bezier(.2,.8,.2,1)':'none';r.style.transform=`translate3d(0,${y}px,0)`;
- const st=shStops(),pe=$('pop');if(pe){const o=Math.max(0,Math.min(1,(y-st.half)/(st.peek-st.half-40)));pe.style.opacity=o;pe.style.pointerEvents=o<.5?'none':''}}
+ const st=shStops(),pe=$('pop');if(pe){const o=Math.max(0,Math.min(1,(Math.min(y,st.peek)-st.half)/(st.peek-st.half-40)));pe.style.opacity=o;pe.style.pointerEvents=o<.5?'none':''}}
 function shSet(name,noFit){document.body.style.setProperty('--pk',PK()+'px');const st=shStops();SHEET.st=name;shApply(st[name],true);const r=$('res');r.classList.toggle('sh-full',name=='full');r.classList.toggle('sh-up',name!='peek');if(name!='full')r.scrollTop=0;
  if(!noFit&&name!='full')setTimeout(shRefit,40)}
 function shRefit(){if(S.mode=='sliders'){if(S.top&&S.top.length)go(slFit(S.top.slice(0,5).map(id=>T.find(t=>t.id==id))),450);else go(fit(ALL,.02),450)}else if(S.mode=='vibes'){if(S.pop)return;if(S.style&&isR(S.style))go(fitStyle(S.style),450);else go(fit(ALL,.02),450)}}
@@ -291,12 +291,12 @@ function shSync(){const on=(S.mode=='sliders'||S.mode=='vibes')&&PH();const r=$(
  r.addEventListener('touchstart',e=>{if(!SHON()||skip(e.target))return;const t=e.touches[0];d={x0:t.clientX,y0:t.clientY,s0:SHEET.y,t0:performance.now(),own:false,last:t.clientY,lt:performance.now(),v:0}},{passive:true});
  r.addEventListener('touchmove',e=>{if(!d)return;const t=e.touches[0],dy=t.clientY-d.y0;
   if(!d.own){const dx=t.clientX-d.x0;if(Math.abs(dy)<6&&Math.abs(dx)<6)return;if(Math.abs(dx)>Math.abs(dy)){d=null;return}if(SHEET.st=='full'&&(r.scrollTop>0||dy<0)){d=null;return}d.own=true}
-  e.preventDefault();const st=shStops();let y=d.s0+dy;if(y<st.full)y=st.full-(st.full-y)*.3;if(y>st.peek)y=st.peek+(y-st.peek)*.3;shApply(y,false);
+  e.preventDefault();const st=shStops();let y=d.s0+dy;if(y<st.full)y=st.full-(st.full-y)*.3;const yl=st.low||st.peek;if(y>yl)y=yl+(y-yl)*.3;shApply(y,false);
   const now=performance.now();d.v=(t.clientY-d.last)/Math.max(1,now-d.lt);d.last=t.clientY;d.lt=now},{passive:false});
  r.addEventListener('touchend',()=>{if(!d)return;const own=d.own,v=d.v;d=null;if(!own)return;const st=shStops(),y=SHEET.y;let n;
-  const tg=y+Math.max(-1.5,Math.min(1.5,v))*260;n=['peek','half','full'].sort((a,b)=>Math.abs(st[a]-tg)-Math.abs(st[b]-tg))[0];shSet(n)});
+  const tg=y+Math.max(-1.5,Math.min(1.5,v))*260;n=['low','peek','half','full'].sort((a,b)=>Math.abs(st[a]-tg)-Math.abs(st[b]-tg))[0];shSet(n)});
  const g=document.createElement('button');g.className='sh-grab';g.type='button';g.setAttribute('aria-label','Show more');r.prepend(g);
- g.addEventListener('click',()=>{if(!SHON())return;shSet(SHEET.st=='peek'?'half':SHEET.st=='half'?'full':'peek')});
+ g.addEventListener('click',()=>{if(!SHON())return;shSet(SHEET.st=='low'?'peek':SHEET.st=='peek'?'half':SHEET.st=='half'?'full':'peek')});
  addEventListener('resize',()=>{if(SHON())shSet(SHEET.st,true)});})();
 function slPill(){let p=$('slpill');if(!p){p=document.createElement('button');p.id='slpill';p.className='slpill';document.body.appendChild(p);p.onclick=()=>{const sl=$('sl');if(!sl)return;const y=sl.getBoundingClientRect().top+scrollY-12;scrollTo({top:p.classList.contains('dn')?y:0,behavior:'smooth'})};addEventListener('scroll',()=>slPill(),{passive:true})}
  const sl=$('sl');if(!sl||!SLM()||SHON()){p.classList.remove('on');return}const y=sl.getBoundingClientRect().top+scrollY-12,dn=scrollY<y/2;p.classList.add('on');p.classList.toggle('dn',dn);
@@ -459,7 +459,7 @@ function ensurePick(){if(S.mode!='vibes'||S.style||S.restoring)return;let k;if(S
 (function(){if(!$('res'))return;{const x=document.createElement('button');x.type='button';x.className='shx';x.setAttribute('aria-label','Back to the map');x.innerHTML='&times;';x.onclick=e=>{e.stopPropagation();shSet('peek')};$('res').prepend(x)}const el=document.createElement('button');el.type='button';el.className='shint';el.setAttribute('aria-label','Swipe up for all towns');el.innerHTML='<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg><span>Swipe up for all towns</span>';$('res').appendChild(el);
  const seen=()=>{try{return !!localStorage.getItem('fc-shint')}catch(e){return false}};
  el.onclick=()=>{try{localStorage.setItem('fc-shint','1')}catch(e){}shSet('half')};
- const up=()=>{if(SHON()&&SHEET.st!='peek'){try{localStorage.setItem('fc-shint','1')}catch(e){}}const on=SHON()&&SHEET.st=='peek'&&S.mode=='vibes';el.classList.toggle('on',on)};
+ const up=()=>{if(SHON()&&SHEET.st!='peek'){try{localStorage.setItem('fc-shint','1')}catch(e){}}const on=SHON()&&SHEET.st=='peek'&&(S.mode=='vibes'||S.mode=='sliders');el.classList.toggle('on',on);if(on){const tx=S.mode=='sliders'?'Swipe up for the sliders':S.sub=='regions'?'Swipe up for all 7 regions':'Swipe up for all styles',sp=el.querySelector('span');if(sp.textContent!=tx){sp.textContent=tx;el.setAttribute('aria-label',tx)}}};
  setInterval(up,400);up()})();
 
 // ---- Nov 12 (v4): closed sheet sized to what it holds (no clipping on any phone height), maps fit the towns above the sheet,
@@ -562,5 +562,19 @@ PK0=function(){const r=$('res'),m=r&&r.querySelector('.mode');if(!r||!m||!SHON()
 
 // Nov 12: phone Slider Map, Apple filter style. Once a slider moves, "See your top 5 →" pins to the bottom; it drops the panel and shows the map
 (function(){const b=document.createElement('button');b.type='button';b.className='sl-see';b.innerHTML='See your top 5 <span>→</span>';document.body.appendChild(b);
- b.onclick=()=>{shSet('peek');window.dispatchEvent(new CustomEvent('fc-sl-see'))};
+ b.onclick=()=>{shSet('low');window.dispatchEvent(new CustomEvent('fc-sl-see'))};
  const up=()=>{const on=SHON()&&S.mode=='sliders'&&SHEET.st!='peek'&&slAnySet();b.classList.toggle('on',on)};setInterval(up,300);up()})();
+
+// Nov 12 v9: a lower resting spot. Vibe and Regions keep only the photo tiles; the Slider Map keeps only its title and Reset
+function LH(){const r=$('res');if(!r)return PK();const had=r.classList.contains('sh-low');r.classList.add('sh-low');const rt=r.getBoundingClientRect().top;let b;
+ if(S.mode=='sliders'){const h=r.querySelector('.slh');b=h?h.getBoundingClientRect().bottom-rt+12:90}else{const tl=r.querySelector('.vp .tiles.vt');b=tl?tl.getBoundingClientRect().bottom-rt+14:PK()}
+ if(!had)r.classList.remove('sh-low');return Math.round(Math.min(PK()-20,b)+(IOSB()?8:0))}
+function SHB(){return typeof SHEET!='undefined'&&SHEET.st=='low'?LH():PK()}
+(function(){const st0=shStops;shStops=function(){const o=st0();o.low=innerHeight-(SHON()?LH():PK());return o};
+ const ss=shSet;shSet=function(name,noFit){const r=$('res');if(r)r.classList.toggle('sh-low',name=='low');const out=ss.apply(this,arguments);if(r){r.classList.toggle('sh-up',name=='half'||name=='full')}document.body.style.setProperty('--pk',(name=='low'?LH():PK())+'px');return out};
+ // auto open the sliders once per visit so they are easy to find; any tap on the map drops them back down
+ let auto=false;const tryOpen=()=>{if(!SHON()||S.mode!='sliders'||slAnySet()||SHEET.st!='peek')return;try{if(sessionStorage.getItem('fc-slopen'))return;sessionStorage.setItem('fc-slopen','1')}catch(e){}auto=true;shSet('half')};
+ const sm=window.setMode;window.setMode=setMode=function(m){const o=sm.apply(this,arguments);if(m=='sliders')setTimeout(tryOpen,1400);return o};
+ setTimeout(()=>{if(S.mode=='sliders')tryOpen()},1800);
+ $('mapbox')&&$('mapbox').addEventListener('pointerdown',()=>{if(auto&&SHON()&&SHEET.st=='half'){auto=false;shSet('peek')}},true);
+ document.addEventListener('pointerdown',e=>{if(e.target.closest&&e.target.closest('#res'))auto=false},true)})();
