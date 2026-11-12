@@ -707,3 +707,9 @@ html body:not(#x) #res.res{position:fixed!important;top:84px!important;right:16p
 html body:not(#x) .map .zoom:not(#y){right:452px!important;left:auto!important;bottom:24px!important;top:auto!important}
 html body:not(#x) #mapbox #pop.pop.on:not(.full){bottom:16px!important}
 }
+/* Nov 12: desktop map header is one strip of light frosted glass (black logo, hairline under it) */
+@media (min-width:1000px){
+html body:not(#x):not(#y) > header{background:rgba(250,251,251,.72)!important;-webkit-backdrop-filter:blur(22px) saturate(1.4)!important;backdrop-filter:blur(22px) saturate(1.4)!important;border-bottom:1px solid rgba(21,42,46,.10)!important;height:68px!important;padding-bottom:0!important;box-shadow:0 1px 0 rgba(255,255,255,.6) inset!important}
+html body:not(#x):not(#y) > header nav a{text-shadow:none!important}
+html body:not(#x):not(#y) #res.res{top:84px!important}
+}

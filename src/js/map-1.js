@@ -25,7 +25,7 @@ function chips(){const cur=curReg();$('rname').textContent=cur>=0?REG[cur][0]:'A
 chips();
 function size(){const r=box.getBoundingClientRect();return [r.width,r.height]}
 const SAT=(()=>{let v=0;const f=()=>{const d=document.createElement('div');d.style.cssText='position:fixed;top:0;height:env(safe-area-inset-top);visibility:hidden';document.body.appendChild(d);v=d.offsetHeight||0;d.remove()};if(document.body)f();else addEventListener('DOMContentLoaded',f);return()=>v})();
-const HDR=()=>matchMedia('(max-width:760px)').matches?64+SAT():DFL()?76:0;const DFL=()=>matchMedia('(min-width:1000px)').matches,DPW=()=>DFL()?452:0;
+const HDR=()=>matchMedia('(max-width:760px)').matches?64+SAT():DFL()?68:0;const DFL=()=>matchMedia('(min-width:1000px)').matches,DPW=()=>DFL()?452:0;
 function fit(b,pad=.08,raw){const [w,h0]=size(),hd=HDR(),bt=(!raw&&typeof SHON=='function'&&SHON())?Math.max(SHB()+10+((typeof SHEET=='undefined'||SHEET.st=='peek')&&$('pop')&&$('pop').classList.contains('on')&&!$('pop').classList.contains('full')?$('pop').offsetHeight+14+((document.querySelector('.cm-tip.on.st2')||{}).offsetHeight+14||0):0),(typeof SHEET!='undefined'&&SHEET.st=='half')?SHRES()-4:0):0,h=Math.max(160,h0-hd-bt);const pw=raw?0:DPW();if(pw){const w2=w-pw,r=fit0(b,pad,w2,h),kk2=r[2]/w2;return [r[0],r[1]-hd*kk2,w*kk2,h0*kk2]}const r0=fit0(b,pad,w,h);const kk=r0[2]/w;
  if(w<600&&!raw&&typeof PHMAX=='function'&&r0[2]>PHMAX()){/* phone: never wider than the Florida footprint; center the towns above the panel and let cards sit over the bottom */const W=PHMAX(),k2=W/w,h2=Math.max(160,h0-hd-(SHON()?SHB()+10:0)),cx=(X(b[0])+X(b[1]))/2,cy=(Y(b[3])+Y(b[2]))/2;return [cx-w/2*k2,cy-(hd+h2/2)*k2,W,h0*k2]}
  return [r0[0],r0[1]-hd*kk,r0[2],r0[3]+(h0-h-hd+hd)*kk]}
