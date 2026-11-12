@@ -3592,7 +3592,7 @@ html body .res-hd h1{margin:6px 0 6px!important;font:500 44px/1.02 'DM Sans',sys
  html body .res-hd h1{font-size:36px!important}
  .sl-offer{grid-template-columns:72px minmax(0,1fr);gap:12px;padding:14px!important}
  .sl-sheet{width:72px;height:94px;padding:7px 6px}
- .sl-sheet i{font-size:5.5px}.sl-sheet>b{font-size:7px}
+ .sl-sheet i{font-size:8px}.sl-sheet>b{font-size:8px}
  .sl-row{flex-direction:column}.sl-row .btn{width:100%}
  .sl-local{flex-direction:column;align-items:stretch}.sl-local .btn{text-align:center}
 }
@@ -3610,7 +3610,7 @@ html body .res-hd h1{margin:6px 0 6px!important;font:500 44px/1.02 'DM Sans',sys
  .res-panel .fs-row .nm b{font-size:17px!important}
  .res-panel .fs-row .nm small{font-size:13px!important}
  .res-panel .fs-row .n{width:26px!important;height:26px!important;font-size:12px!important}
- .sl-sheet i{font-size:5px!important;gap:3px}.sl-sheet i em{width:7px;height:7px;font-size:4.5px}
+ .sl-sheet i{font-size:8px!important;gap:3px}.sl-sheet i em{width:7px;height:7px;font-size:8px}
 }
 /* email field full width, button under it; tighter rows so the offer shows on a laptop without scrolling */
 .sl-row{flex-direction:column!important;gap:8px!important}
@@ -5289,3 +5289,6 @@ html body[data-hyb] .vm-map svg{will-change:auto!important}
 
 /* ===== Nov 10 2026 patch: newsletter photo spans the full width on every phone and small tablet size ===== */
 @media (max-width:760px){html body[data-newsph2] .news{background-position:center top!important;background-size:100% auto!important;padding-top:calc(75vw - 24px)!important}}
+
+/* ===== Nov 11 2026 patch: no text under 6pt (8px) anywhere. The mini Shortlist cover drops its unreadable lines ===== */
+.slc-logo,.slc-k,.sl-cover i{display:none!important}.sl-cover>b{font-size:8px!important}.sl-sheet .sl-sh-k,.sl-sheet i,.sl-sheet i em,.sl-sheet>b{font-size:8px!important}
