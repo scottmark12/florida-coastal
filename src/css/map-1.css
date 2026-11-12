@@ -630,3 +630,5 @@ html body #mapbox #pop.pop[data-intro]:not([data-intro=""]):not(.full):not(#x):n
 html body #mapbox #pop.pop[data-intro]:not([data-intro=""]):not(.full):not(#x):not(#y):not(#z) .bintro p{-webkit-line-clamp:3!important;font-size:13px!important;line-height:1.32!important}
 html body #mapbox #pop.pop[data-intro]:not([data-intro=""]):not(.full):not(#x):not(#y):not(#z) .bintro h3{font-size:19.5px!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;display:block!important;-webkit-line-clamp:unset!important;padding-right:30px}
 }
+/* iOS paints bare buttons blue: card X is always black */
+html body #mapbox #pop .x:not(#x),html body #res .shx:not(#x){color:#152A2E!important;-webkit-appearance:none;appearance:none}
