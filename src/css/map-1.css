@@ -657,3 +657,5 @@ html body #mapbox #pop .pnav .go:not(#x){flex:1 1 auto!important;min-width:0!imp
 .cm-tip .cm-ar{display:none;position:absolute;width:14px;height:14px;background:inherit;border:inherit;transform:translateX(-50%) rotate(45deg);-webkit-backdrop-filter:none;backdrop-filter:none}
 .cm-tip.ar .cm-ar{display:block;bottom:-8px;border-top:0;border-left:0;background:rgba(250,251,251,.95)}
 .cm-tip.ar.dn .cm-ar{bottom:auto;top:-8px;border:1px solid rgba(255,255,255,.7);border-bottom:0;border-right:0}
+/* pulled up sheet: the X gets its own row above the tabs (no overlap with ?) */
+html body.sheet #res.sh-up .mode:not(#x):not(#y){margin-top:30px!important}
