@@ -1,6 +1,6 @@
 (function(){
 /* Nov 12: quiz photos picked for the Adirondack layout (sharp landscape photo on top, blurred copy below); third value = horizontal focus */
-const PH=[['img/c/st-augustine-aerial.webp','St. Augustine','50%'],['img/c/marsh-sunset.webp','Nature Coast','50%'],['img/c/water-sound-docks.webp','','40%'],['img/c/dunedin-honeymoon.webp','Dunedin','50%'],['img/c/cocoa-village.webp','Cocoa Village','50%'],['img/c/keys-bridge.webp','Seven Mile Bridge','50%'],['img/c/naples-home.webp','Naples','55%'],['img/c/30a-home.webp','30A','50%'],['img/c/stuart.webp','']];
+const PH=[['img/c/st-augustine-aerial.webp','St. Augustine','50%'],['img/c/quiz-evening.webp','','50%'],['img/c/quiz-boat.webp','Ponce Inlet','50%'],['img/c/sanibel-island.webp','Sanibel Island','50%'],['img/c/quiz-community.webp','St. Petersburg','50%'],['img/c/quiz-fly.webp','','50%'],['img/c/naples-home.webp','Naples','55%'],['img/c/30a-home.webp','30A','50%'],['img/c/stuart.webp','']];
 PH.forEach(p=>{const i=new Image();i.src=p[0]});
 document.body.classList.add('qphoto');if(new URLSearchParams(location.search).get('bar')==='blue')document.body.classList.add('bar-blue');
 const mw=document.querySelector('.mapw'),box=document.createElement('div');box.id='qph';
@@ -56,6 +56,8 @@ function qAsk(go2,TOP,a){
  let had=null;try{had=localStorage.getItem('fc-mail')}catch(e){}
  if(had){go2();return}
  const box=document.getElementById('qrv');if(!box){go2();return}
+ /* Nov 12: the reveal can fire twice, so only ever show one ask */
+ if(box.querySelector('.qa-card')||window.__qAsked)return;window.__qAsked=1;
  const one=TOP[0]&&TOP[0].name?TOP[0].name.replace(/ \(.*\)$/,''):'your #1 town';
  const card=document.createElement('div');card.className='qa-card';
  const step1=()=>{card.innerHTML=`<b>Want it sent to you?</b><p>We'll email your five towns with a side by side comparison you can come back to.</p><form class="qa-f" novalidate><input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email"><button type="submit">Send them</button></form><a href="#" class="qa-skip">Just show me</a>`;
