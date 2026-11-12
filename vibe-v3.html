@@ -495,6 +495,17 @@ html body .vp .vm-lh .vm-all:not(#x):not(#y){padding:10px 0 10px 16px;margin:-10
 html body .vm-lf:not(#x):not(#y){position:sticky;bottom:0;padding:10px 0 calc(10px + env(safe-area-inset-bottom));margin-top:8px;z-index:4}
 html body .vm-lf:not(#x):not(#y) p{display:none}
 }
+
+/* ===== Nov 11 2026 patch: Vibe Map landing rotates through the styles ===== */
+.vdemo{position:absolute;left:16px;top:16px;z-index:4;display:flex;align-items:center;gap:8px;background:#fff;border-radius:999px;padding:9px 16px;box-shadow:0 2px 12px rgba(21,42,46,.14);font:500 14.5px 'DM Sans',sans-serif;color:#152A2E;white-space:nowrap;opacity:0;transform:translateY(-4px);transition:opacity .35s,transform .35s;pointer-events:none}
+.vdemo.on{opacity:1;transform:none}
+.vdemo i{width:10px;height:10px;border-radius:50%;flex:none}
+.vdemo b{font-weight:600}
+.vdemo span{color:#6B7678}
+html body #vp .tile.demo:not(#x){box-shadow:0 0 0 3px var(--dc)!important}
+#map .dd{animation:ddin .5s ease-out}
+@keyframes ddin{from{opacity:0}to{opacity:1}}
+@media (max-width:760px){.vdemo{top:calc(72px + env(safe-area-inset-top));left:50%;transform:translate(-50%,-4px)}.vdemo.on{transform:translate(-50%,0)}}
 </style>
 </head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-black.png" alt="Florida Coastal"></a>
@@ -578,8 +589,8 @@ function render(fast){
  vis.forEach(t=>{if(inClu.has(t.id))return;const m=match(t),sg=SIG.includes(t.id);const any=S.style||S.price;if(!pin(t)&&slTop)return;if(S.mode=='vibes'&&S.style&&!m&&!pin(t))return;
   let r=any?(m?5.5:3):(sg?5:(zoomed?4.5:3));const op=any&&!m?(S.mode=='vibes'?1:.45):(sg||any?1:(zoomed?.85:.8));const fill=any&&!m?'#8C9799':(sg||any?'#152A2E':'#6B7678');
   if(pin(t))r=7;
-  const vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:null;
-  if(vc){const rr=pin(t)?7:5;s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${rr*k}" fill="${vc}" stroke="#fff" stroke-width="${2.2*k}" style="filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.25))"/>`}
+  const dm=S.mode=='vibes'&&!S.style&&S.demo&&t.v.includes(S.demo),vc=S.mode=='vibes'&&S.style&&m?VCOL[S.style]:dm?VCOL[S.demo]:null;
+  if(vc){const rr=pin(t)?7:5;s+=`<circle class="dot${dm?' dd':''}" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${rr*k}" fill="${vc}" stroke="#fff" stroke-width="${2.2*k}" style="filter:drop-shadow(0 1px 1.5px rgba(0,0,0,.25))"/>`}
   else s+=`<circle class="dot" data-id="${t.id}" cx="${t.x}" cy="${t.y}" r="${(S.mode=='vibes'&&S.style&&!m?(sg?4.5:3.2):r)*k}" fill="${S.mode=='vibes'&&S.style&&!m?'#152A2E':fill}" ${S.mode=='vibes'&&S.style&&!m?'fill-opacity=".55"':''} opacity="${op}" stroke="#fff" stroke-width="${(r>3?2:1)*k}"/>`});
  CL.forEach(c=>{const L=c[0],n=c.length,bx=(L.x-v[0])/k,by=(L.y-v[1])/k;boxes.push([bx-16,by-16,32,32]);s+=`<g class="clu" data-ids="${c.map(t=>t.id).join(',')}" style="cursor:pointer"><circle cx="${L.x}" cy="${L.y}" r="${13*k}" fill="${VCOL[S.style]||'#152A2E'}" stroke="#fff" stroke-width="${2.4*k}" style="filter:drop-shadow(0 1px 2px rgba(0,0,0,.3))"/><text x="${L.x}" y="${L.y+4.6*k}" text-anchor="middle" font-size="${13*k}" font-weight="600" fill="#fff" style="font-family:var(--mapf);pointer-events:none">${n}</text></g>`});
  // labels: pinned first, then matched sig, then matched zoomed
@@ -874,7 +885,7 @@ const st0=params.get('style')||'';if(st0){S.style=st0;$('sty').value=st0;$('sty'
 const r0=REG.find(r=>r[0]==params.get('region'))||REG.find(r=>r[0]=='Southwest Gulf');S.region=r0[0];S.vb=fit(r0.slice(1));tags();render();list();
 if(params.get('mode')=='vibes'){S.mode='vibes';document.body.classList.add('vibes');document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m=='vibes'));if(S.style){document.body.classList.add('pick');S.region='';tags();S.vb=fit(ALL,.02);S.gT0=performance.now()}else{S.region='';tags();S.vb=fit(ALL,.02)}render();list()}
 if(params.get('mode')=='sliders'){setMode('sliders');const pr=params.get('sv');if(pr)pr.split(',').forEach(x=>{const[a,b]=x.split(':');if(a in S.sl)S.sl[a]=+b});if(params.get('bud')!=null){S.slBud=+params.get('bud');S.sl.afford=LK.BUDSET[5-S.slBud][1]}const wh=params.get('where');if(wh){if(wh.startsWith('r:')){const r=LK.REGIONS.find(r=>r.id==wh.slice(2));if(r){S.slPr=r.id;S.slPc=R7OF[r.id]}}else S.slPc=wh}if(pr||wh||params.get('bud')!=null)slRender()}
-if(!['vibes','sliders'].includes(params.get('mode'))){S.region='';tags();S.vb=fit(ALL,.02);setMode('regions');const rs=rGet(),rq0=params.get('region')||rs,rq=rq0?r7of(rq0):null;if(rq&&VIBES['r:'+rq])setTimeout(()=>pickStyle('r:'+rq),80)}
+if(!['vibes','sliders'].includes(params.get('mode'))){S.region='';tags();S.vb=fit(ALL,.02);setMode('regions');const rs=rGet(),rq0=params.get('region')||(rs===null?'panhandle':rs),rq=rq0?r7of(rq0):null;if(rq&&VIBES['r:'+rq])setTimeout(()=>pickStyle('r:'+rq),80)}
 // ---- Navigation (Nov 11): Back button works through map states, list view, search bar ----
 function navURL(){const q=new URLSearchParams();const m=S.mode=='sliders'?'sliders':(S.sub=='regions'?'regions':'vibes');q.set('mode',m);
  if(m=='regions'&&isR(S.style))q.set('region',S.style.slice(2));if(m=='vibes'&&S.style&&!isR(S.style))q.set('style',S.style);
@@ -901,4 +912,15 @@ function listShow(on,quiet){let el=$('mlist');if(!el){el=document.createElement(
 setTimeout(()=>{S.navReady=1;const q=new URLSearchParams(location.search);if(q.get('view')=='list')listShow(true,true);history.replaceState({fc:1},'',navURL())},1500);
 S.booted=1;
 if(params.get('open')){const t=T.find(t=>t.id==params.get('open'));if(t)setTimeout(()=>{S.restoring=1;openPop(t);setTimeout(()=>{S.restoring=0},300)},450)}
+
+// ---- Nov 11: the Vibe Map landing cycles through each style, lighting its towns, until the visitor touches anything ----
+(function(){const RM=matchMedia('(prefers-reduced-motion: reduce)').matches,box=$('mapbox');if(!box)return;const cap=document.createElement('div');cap.className='vdemo';cap.setAttribute('aria-hidden','true');box.appendChild(cap);
+ let i=0,stop=false,tm=null;const on=()=>S.mode=='vibes'&&S.sub=='styles'&&!S.style&&!S.pop&&!stop&&!document.hidden;
+ const show=k=>{S.demo=k;const n=k?T.filter(t=>t.v.includes(k)).length:0;if(k)cap.innerHTML=`<i style="background:${VCOL[k]}"></i><b>${VIBES[k]}</b><span>${n} towns</span>`;cap.classList.toggle('on',!!k);
+  document.querySelectorAll('#vp .tile').forEach(b=>{const m=!!k&&b.dataset.k==k;b.classList.toggle('demo',m);if(m){b.style.setProperty('--dc',VCOL[k]);const r=b.parentElement;if(matchMedia('(max-width:760px)').matches&&r)r.scrollTo({left:b.offsetLeft-16,behavior:'smooth'})}});render()};
+ const tick=()=>{if(!on()){if(S.demo)show(null);return}const K=LK.VFEEL;show(K[i%K.length]);i++};
+ const end=()=>{if(stop)return;stop=true;clearInterval(tm);if(S.demo)show(null)};
+ if(!RM)setTimeout(()=>{if(stop)return;tick();tm=setInterval(tick,2800)},1200);
+ ['pointerdown','wheel','keydown','touchstart'].forEach(ev=>addEventListener(ev,end,{passive:true,capture:true}));
+ $('vp')&&$('vp').addEventListener('mouseover',e=>{if(e.target.closest('.tile'))end()})})();
 </script><script>(function(){const m=new URLSearchParams(location.search).get("mode");document.querySelectorAll("nav.top a").forEach(a=>a.classList.toggle("on",(m==="vibes"&&a.dataset.nav==="vibes")||(m==="sliders"&&a.dataset.nav==="sliders")))})()</script><script src="/assets/fc-menu.js?v=6" defer></script></body></html>
