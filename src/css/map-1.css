@@ -623,3 +623,10 @@ html body #mapbox #pop .bintro .go:not(#x){white-space:nowrap}
 .fcgq.on{display:flex}
 @media (max-width:760px){.fcgq{position:fixed;right:14px;top:calc(env(safe-area-inset-top,0px) + 236px)}html body .map .zoom:not(#x):not(#y){top:calc(env(safe-area-inset-top,0px) + 124px)!important}}
 @media (min-width:761px){.fcgq{left:16px;bottom:16px}}
+/* guide card copy (Nov 12 v5): three line body, title fits */
+@media (max-width:760px){
+html body #mapbox #pop.pop.on[data-intro]:not([data-intro=""]):not(.full):not(#x):not(#y){height:auto!important;min-height:168px!important}
+html body #mapbox #pop.pop[data-intro]:not([data-intro=""]):not(.full):not(#x):not(#y) .bintro .pnav{margin-top:10px!important}
+html body #mapbox #pop.pop[data-intro]:not([data-intro=""]):not(.full):not(#x):not(#y):not(#z) .bintro p{-webkit-line-clamp:3!important;font-size:13px!important;line-height:1.32!important}
+html body #mapbox #pop.pop[data-intro]:not([data-intro=""]):not(.full):not(#x):not(#y):not(#z) .bintro h3{font-size:19.5px!important;white-space:normal!important;overflow:visible!important;text-overflow:clip!important;display:block!important;-webkit-line-clamp:unset!important;padding-right:30px}
+}
