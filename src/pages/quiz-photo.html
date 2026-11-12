@@ -2,10 +2,11 @@
 <title>Find your top 5 beach towns · Florida Coastal</title>
 <meta name="description" content="Eight quick questions, about two minutes, free. Get your top 5 Florida beach towns matched to how you want to live.">
 <link rel="preload" href="/assets/fonts/dm-sans.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/caslon-display.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/assets/fonts/caslon-text-400-normal.woff2" as="font" type="font/woff2" crossorigin><link rel="stylesheet" href="/assets/fonts.css?v=3">
-<link rel="stylesheet" href="{{css:quiz-2}}"><script src="{{asset:/assets/dm-titles.js?v=6}}"></script><script src="{{asset:/assets/fc-connect.js}}"></script></head><body>
+<link rel="stylesheet" href="{{css:quiz-2}}"><script src="{{asset:/assets/dm-titles.js?v=6}}"></script><script src="{{asset:/assets/fc-connect.js}}"></script><script src="{{asset:/assets/fc-menu.js?v=7}}" defer></script>
+</head><body>
 <header><a class="logo" href="home-v2.html"><img src="img/fc-logo-black.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
-<nav class="top"><a href="vibe-v3.html">Map</a><a href="towns/index-v2.html">Beach Towns</a><a href="articles/index.html">Articles</a><a href="agents.html">Local Agents</a></nav>
+<nav class="top"><a href="towns/index-v2.html" data-nav="towns">Beach Towns</a><a href="vibe-v3.html?mode=vibes" data-nav="vibes">Vibe Map</a><a href="vibe-v3.html?mode=sliders" data-nav="sliders">Slider Map</a><a href="articles/index.html" data-nav="articles">Articles</a></nav>
 <a class="cta" href="quiz-photo.html">Take the quiz</a></header>
 <div class="main"><div class="mapw"><div class="bar" id="bar" style="display:none"></div>
 <div class="map" id="mapbox"><svg id="map"><g id="base"></g><g id="ov"></g></svg>
@@ -34,4 +35,5 @@
 <script src="{{data:sq-c718ecc1}}"></script><script src="{{data:qd-bad25108}}"></script><script src="{{js:quiz-2}}"></script>
 <div id="qrv"><div id="qrvmap" style="width:96px;margin-bottom:18px"></div><div class="ey">Find your mile</div><h2>Scoring <span id="qrvn">167</span> beach towns on how you want to live</h2><div class="qrvbar"><i></i></div><p>Weighing your answers</p><div class="chips" id="qrvc"></div><a class="skip" id="qrvs" href="#">Skip to my towns &rarr;</a></div>
 <script src="{{js:quiz-3}}"></script>
+<script>(function(){function f(n){var b=document.querySelector(".fcm-btn");if(b){document.body.appendChild(b);b.classList.add("fcm-float");return}if(n<40)setTimeout(function(){f(n+1)},100)}if(document.readyState!="loading")f(0);else document.addEventListener("DOMContentLoaded",function(){f(0)})})();</script>
 </body></html>

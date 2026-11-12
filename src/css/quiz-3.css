@@ -301,3 +301,26 @@ body.reveal2 #qrv .qrvbar i{width:100%;transition:width 2.6s cubic-bezier(.4,0,.
 #qrv .skip:hover{opacity:1}
 @media (max-width:900px){#qrv{padding:0 22px}#qrv h2{font-size:30px}#qrv .chip{font-size:13.5px;padding:8px 13px}body.reveal .mapw{height:64vh!important}}
 html body #qph:after{background:linear-gradient(180deg,rgba(0,0,0,.22),rgba(0,0,0,.02) 22%,rgba(0,0,0,.02) 70%,rgba(0,0,0,.28))!important}html body.qphoto #res{background:rgba(16,22,24,.5)!important;backdrop-filter:blur(26px) saturate(1.2)!important;-webkit-backdrop-filter:blur(26px) saturate(1.2)!important}
+
+/* Nov 12: header matches the rest of the site (same white logo size and spot as Home and Beach Towns) plus the same glass menu button */
+html body.quiz .qlogo:not(#x):not(#y){top:14px!important;left:20px!important;bottom:auto!important;right:auto!important}
+html body.quiz .qlogo:not(#x):not(#y) img{height:40px!important;opacity:1!important}
+html body .fcm-btn.fcm-float{display:flex!important;position:fixed!important;top:13px!important;right:14px!important;z-index:70!important;transform:none!important;width:42px!important;height:42px!important;border-radius:50%!important;align-items:center;justify-content:center;padding:0;cursor:pointer;background:rgba(255,255,255,.16)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.4)!important;color:#fff!important;box-shadow:none!important}
+html body .fcm-btn.fcm-float svg{width:20px;height:20px}
+@media (min-width:761px){
+html body.quiz .qlogo:not(#x):not(#y){top:11px!important;left:24px!important}
+html body.quiz .qlogo:not(#x):not(#y) img{height:42px!important}
+html body .fcm-btn.fcm-float{top:11px!important;right:24px!important}
+}
+
+/* Nov 12: light frosted glass card, same family as the map sheet and the home guide card. Photo stays visible above it */
+html body.qphoto #res:not(#x){background:rgba(255,255,255,.72)!important;-webkit-backdrop-filter:blur(18px) saturate(1.25);backdrop-filter:blur(18px) saturate(1.25);border:1px solid rgba(255,255,255,.6)!important;box-shadow:0 18px 44px rgba(10,20,22,.22)!important;border-radius:24px!important}
+html body.qphoto #res:not(#x),html body.qphoto #res:not(#x) h1,html body.qphoto #res:not(#x) h2,html body.qphoto #res:not(#x) .qq,html body.qphoto #res:not(#x) b,html body.qphoto #res:not(#x) .qo,html body.qphoto #res:not(#x) .qb,html body.qphoto #res:not(#x) .qclose,html body.qphoto #res:not(#x) .qtop .qb,html body.qphoto #res:not(#x) .qo::after{color:#152A2E!important}
+html body.qphoto #res:not(#x) small,html body.qphoto #res:not(#x) .qn{color:#4E5E61!important}
+html body.qphoto #res:not(#x) .qn b{color:#C4622D!important}
+html body.qphoto #res:not(#x) .qo,html body.qphoto #res:not(#x) .qopts,html body.qphoto #res:not(#x) .qopts>*{border-color:rgba(21,42,46,.1)!important}
+html body.qphoto #res:not(#x) .qo:hover,html body.qphoto #res:not(#x) .qo.on{background:rgba(21,42,46,.05)!important}
+html body.qphoto #res:not(#x) .qbar i{background:rgba(21,42,46,.14)!important}
+html body.qphoto #res:not(#x) .qbar i.done{background:#152A2E!important}
+html body.qphoto #res:not(#x) .qbar i.cur{background:#E07A3F!important}
+html body.qphoto #res:not(#x) .qclose:hover{background:rgba(21,42,46,.06)!important}
