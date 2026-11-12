@@ -3,13 +3,13 @@
   "h": "Daytona, New Smyrna and Flagler",
   "intro": "Wide, hard packed beaches run from New Smyrna Beach up through Daytona to Flagler Beach. Surf towns, race week crowds and some of the most affordable oceanfront in Florida share this stretch.",
   "tag": "Classic beach towns and New Smyrna surf",
-  "meta": "13 towns · $247K to $745K"
+  "meta": "11 towns · $318K to $745K"
  },
  "emerald-coast": {
   "h": "Pensacola and the Emerald Coast",
   "intro": "The western Panhandle runs from historic Pensacola east to Panama City Beach. In between are Destin's harbor and the small beach towns of 30A, all on sugar white sand and clear green water.",
   "tag": "Sugar white sand, Destin’s harbor and 30A",
-  "meta": "18 towns · $270K to $915K"
+  "meta": "16 towns · $270K to $915K"
  },
  "first-coast": {
   "h": "The First Coast",
@@ -21,7 +21,7 @@
   "h": "The Florida Keys",
   "intro": "A chain of islands strung along one highway for more than 100 miles, from Key Largo to Key West. Everything here revolves around the water: diving, fishing, sailing and sunsets.",
   "tag": "Islands on one road",
-  "meta": "3 towns · $985K to $1.1M"
+  "meta": "5 towns · $715K to $1.1M"
  },
  "forgotten-coast": {
   "h": "The Forgotten Coast",
@@ -33,13 +33,13 @@
   "h": "Fort Myers, Sanibel and Charlotte Harbor",
   "intro": "Charlotte Harbor, the Caloosahatchee River and the barrier islands of Sanibel and Captiva make this boating and shelling country. Much of it was hit hard by Hurricane Ian in 2022 and has been rebuilding since.",
   "tag": "Shelling, boating and Charlotte Harbor",
-  "meta": "9 towns · $310K to $1.2M"
+  "meta": "10 towns · $310K to $2.42M"
  },
  "miami-fort-lauderdale": {
   "h": "Miami and Fort Lauderdale",
   "intro": "The most urban stretch of the Florida coast, from the Art Deco blocks of South Beach north through Hollywood to the canals of Fort Lauderdale. Two major airports, late nights and beaches with a city right behind them.",
   "tag": "Big city energy and boating canals",
-  "meta": "12 towns · $265K to $1.28M"
+  "meta": "15 towns · $265K to $1.49M"
  },
  "naples-marco": {
   "h": "Naples, Marco Island and the Everglades",
@@ -75,7 +75,7 @@
   "h": "St. Pete and the Clearwater Beaches",
   "intro": "A narrow peninsula between the Gulf and Tampa Bay that packs in a walkable waterfront city, a string of barrier island beach towns and a few small bayside downtowns. Tampa's airport is close to all of it.",
   "tag": "Barrier island beaches and a walkable city",
-  "meta": "22 towns · $222K to $886K"
+  "meta": "20 towns · $222K to $850K"
  },
  "tampa-south-shore": {
   "h": "Tampa and the South Shore",

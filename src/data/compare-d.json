@@ -50,10 +50,10 @@
     "walk": 13,
     "water": 143,
     "beach": 2,
-    "dining": 37,
+    "dining": 36,
     "outdoors": 2,
-    "afford": 156,
-    "airport": 124,
+    "afford": 154,
+    "airport": 122,
     "edu": 3
    }
   },
@@ -88,7 +88,7 @@
     "Busy traffic on 98"
    ],
    "sim": [
-    "okaloosa-island",
+    "fort-walton-beach",
     "pcb",
     "jupiter",
     "st-pete-beach",
@@ -100,16 +100,16 @@
    "img": "img/c/destin.webp",
    "rk": {
     "nightlife": 32,
-    "meet": 63,
-    "quiet": 146,
-    "walk": 127,
+    "meet": 62,
+    "quiet": 145,
+    "walk": 126,
     "water": 8,
-    "beach": 6,
-    "dining": 68,
-    "outdoors": 44,
-    "afford": 114,
-    "airport": 76,
-    "edu": 32
+    "beach": 7,
+    "dining": 70,
+    "outdoors": 48,
+    "afford": 113,
+    "airport": 77,
+    "edu": 29
    }
   },
   "pcb": {
@@ -147,7 +147,6 @@
     "st-pete-beach",
     "miramar-beach",
     "ftl",
-    "okaloosa-island",
     "clearwaterbeach",
     "jaxbeach"
    ],
@@ -156,14 +155,14 @@
     "nightlife": 9,
     "meet": 36,
     "quiet": 163,
-    "walk": 88,
+    "walk": 90,
     "water": 149,
     "beach": 3,
     "dining": 31,
-    "outdoors": 43,
-    "afford": 92,
-    "airport": 88,
-    "edu": 81
+    "outdoors": 47,
+    "afford": 91,
+    "airport": 87,
+    "edu": 79
    }
   },
   "apalachicola": {
@@ -208,15 +207,15 @@
    ],
    "img": "img/c/apalachicola.webp",
    "rk": {
-    "nightlife": 146,
-    "meet": 66,
+    "nightlife": 147,
+    "meet": 65,
     "quiet": 21,
     "walk": 18,
-    "water": 65,
-    "beach": 100,
+    "water": 67,
+    "beach": 103,
     "dining": 95,
-    "outdoors": 38,
-    "afford": 40,
+    "outdoors": 42,
+    "afford": 38,
     "airport": 162,
     "edu": 156
    }
@@ -264,14 +263,14 @@
    "img": "img/c/spring-nature-coast.webp",
    "rk": {
     "nightlife": 158,
-    "meet": 113,
+    "meet": 114,
     "quiet": 10,
     "walk": 19,
-    "water": 75,
+    "water": 78,
     "beach": 138,
-    "dining": 119,
-    "outdoors": 62,
-    "afford": 32,
+    "dining": 120,
+    "outdoors": 65,
+    "afford": 30,
     "airport": 157,
     "edu": 1
    }
@@ -321,13 +320,13 @@
     "meet": 29,
     "quiet": 119,
     "walk": 3,
-    "water": 81,
-    "beach": 14,
+    "water": 84,
+    "beach": 15,
     "dining": 30,
     "outdoors": 16,
-    "afford": 87,
-    "airport": 32,
-    "edu": 26
+    "afford": 86,
+    "airport": 35,
+    "edu": 25
    }
   },
   "clearwaterbeach": {
@@ -373,14 +372,14 @@
    "rk": {
     "nightlife": 19,
     "meet": 23,
-    "quiet": 142,
+    "quiet": 141,
     "walk": 16,
-    "water": 88,
-    "beach": 5,
-    "dining": 41,
-    "outdoors": 114,
-    "afford": 101,
-    "airport": 37,
+    "water": 91,
+    "beach": 6,
+    "dining": 40,
+    "outdoors": 119,
+    "afford": 100,
+    "airport": 40,
     "edu": 14
    }
   },
@@ -424,16 +423,16 @@
    ],
    "img": "img/c/bay-mangroves.webp",
    "rk": {
-    "nightlife": 49,
+    "nightlife": 50,
     "meet": 41,
     "quiet": 101,
     "walk": 14,
-    "water": 80,
+    "water": 83,
     "beach": 135,
-    "dining": 62,
-    "outdoors": 73,
-    "afford": 73,
-    "airport": 13,
+    "dining": 65,
+    "outdoors": 76,
+    "afford": 72,
+    "airport": 14,
     "edu": 132
    }
   },
@@ -479,16 +478,16 @@
    ],
    "img": "img/c/anna-maria-island.webp",
    "rk": {
-    "nightlife": 108,
-    "meet": 58,
+    "nightlife": 109,
+    "meet": 57,
     "quiet": 90,
-    "walk": 43,
-    "water": 64,
-    "beach": 7,
-    "dining": 71,
-    "outdoors": 89,
-    "afford": 162,
-    "airport": 65,
+    "walk": 45,
+    "water": 66,
+    "beach": 8,
+    "dining": 73,
+    "outdoors": 92,
+    "afford": 160,
+    "airport": 66,
     "edu": 108
    }
   },
@@ -535,15 +534,15 @@
    "img": "img/c/longboat-key.webp",
    "rk": {
     "nightlife": 130,
-    "meet": 111,
+    "meet": 112,
     "quiet": 27,
-    "walk": 129,
-    "water": 78,
-    "beach": 19,
-    "dining": 144,
-    "outdoors": 110,
-    "afford": 154,
-    "airport": 77,
+    "walk": 128,
+    "water": 81,
+    "beach": 20,
+    "dining": 143,
+    "outdoors": 115,
+    "afford": 152,
+    "airport": 78,
     "edu": 166
    }
   },
@@ -591,14 +590,14 @@
     "nightlife": 163,
     "meet": 147,
     "quiet": 5,
-    "walk": 132,
+    "walk": 131,
     "water": 15,
-    "beach": 20,
+    "beach": 21,
     "dining": 111,
-    "outdoors": 36,
+    "outdoors": 40,
     "afford": 167,
-    "airport": 104,
-    "edu": 28
+    "airport": 102,
+    "edu": 27
    }
   },
   "matlacha": {
@@ -641,17 +640,17 @@
    ],
    "img": "img/c/matlacha.webp",
    "rk": {
-    "nightlife": 111,
+    "nightlife": 112,
     "meet": 137,
     "quiet": 30,
-    "walk": 45,
-    "water": 70,
+    "walk": 47,
+    "water": 73,
     "beach": 161,
     "dining": 113,
-    "outdoors": 39,
-    "afford": 63,
-    "airport": 95,
-    "edu": 92
+    "outdoors": 43,
+    "afford": 61,
+    "airport": 93,
+    "edu": 90
    }
   },
   "naples": {
@@ -700,14 +699,14 @@
    "rk": {
     "nightlife": 29,
     "meet": 5,
-    "quiet": 111,
+    "quiet": 109,
     "walk": 24,
     "water": 10,
-    "beach": 4,
+    "beach": 5,
     "dining": 6,
-    "outdoors": 33,
-    "afford": 131,
-    "airport": 82,
+    "outdoors": 34,
+    "afford": 130,
+    "airport": 81,
     "edu": 10
    }
   },
@@ -758,11 +757,11 @@
     "quiet": 164,
     "walk": 4,
     "water": 4,
-    "beach": 110,
+    "beach": 113,
     "dining": 8,
-    "outdoors": 61,
-    "afford": 158,
-    "airport": 113,
+    "outdoors": 64,
+    "afford": 156,
+    "airport": 111,
     "edu": 155
    }
   },
@@ -807,15 +806,15 @@
    ],
    "img": "img/c/keys-bridge.webp",
    "rk": {
-    "nightlife": 106,
-    "meet": 114,
-    "quiet": 55,
+    "nightlife": 107,
+    "meet": 115,
+    "quiet": 53,
     "walk": 153,
-    "water": 37,
-    "beach": 119,
-    "dining": 72,
-    "outdoors": 30,
-    "afford": 161,
+    "water": 38,
+    "beach": 121,
+    "dining": 74,
+    "outdoors": 31,
+    "afford": 159,
     "airport": 161,
     "edu": 105
    }
@@ -866,11 +865,11 @@
     "meet": 1,
     "quiet": 165,
     "walk": 1,
-    "water": 55,
-    "beach": 37,
+    "water": 56,
+    "beach": 40,
     "dining": 2,
-    "outdoors": 76,
-    "afford": 140,
+    "outdoors": 79,
+    "afford": 138,
     "airport": 5,
     "edu": 7
    }
@@ -919,14 +918,14 @@
     "nightlife": 5,
     "meet": 17,
     "quiet": 161,
-    "walk": 36,
-    "water": 24,
-    "beach": 24,
+    "walk": 38,
+    "water": 23,
+    "beach": 25,
     "dining": 10,
-    "outdoors": 75,
-    "afford": 118,
+    "outdoors": 78,
+    "afford": 117,
     "airport": 3,
-    "edu": 82
+    "edu": 81
    }
   },
   "delray": {
@@ -976,11 +975,11 @@
     "quiet": 155,
     "walk": 2,
     "water": 164,
-    "beach": 8,
+    "beach": 9,
     "dining": 7,
-    "outdoors": 77,
-    "afford": 137,
-    "airport": 58,
+    "outdoors": 80,
+    "afford": 135,
+    "airport": 59,
     "edu": 127
    }
   },
@@ -1027,14 +1026,14 @@
     "nightlife": 24,
     "meet": 31,
     "quiet": 130,
-    "walk": 82,
-    "water": 22,
-    "beach": 23,
-    "dining": 74,
+    "walk": 84,
+    "water": 21,
+    "beach": 24,
+    "dining": 76,
     "outdoors": 1,
-    "afford": 132,
-    "airport": 59,
-    "edu": 60
+    "afford": 131,
+    "airport": 60,
+    "edu": 58
    }
   },
   "fortpierce": {
@@ -1077,17 +1076,17 @@
    ],
    "img": "img/c/fort-pierce.webp",
    "rk": {
-    "nightlife": 95,
-    "meet": 89,
+    "nightlife": 96,
+    "meet": 91,
     "quiet": 124,
-    "walk": 53,
-    "water": 39,
-    "beach": 85,
-    "dining": 118,
+    "walk": 55,
+    "water": 40,
+    "beach": 87,
+    "dining": 119,
     "outdoors": 13,
-    "afford": 24,
-    "airport": 146,
-    "edu": 101
+    "afford": 22,
+    "airport": 143,
+    "edu": 99
    }
   },
   "cocoa": {
@@ -1134,13 +1133,13 @@
     "nightlife": 18,
     "meet": 27,
     "quiet": 100,
-    "walk": 58,
-    "water": 68,
-    "beach": 45,
-    "dining": 53,
+    "walk": 60,
+    "water": 70,
+    "beach": 48,
+    "dining": 52,
     "outdoors": 6,
-    "afford": 86,
-    "airport": 84,
+    "afford": 85,
+    "airport": 83,
     "edu": 5
    }
   },
@@ -1189,13 +1188,13 @@
     "meet": 40,
     "quiet": 117,
     "walk": 21,
-    "water": 101,
-    "beach": 17,
-    "dining": 40,
+    "water": 104,
+    "beach": 18,
+    "dining": 39,
     "outdoors": 3,
-    "afford": 76,
-    "airport": 86,
-    "edu": 70
+    "afford": 75,
+    "airport": 85,
+    "edu": 68
    }
   },
   "daytona": {
@@ -1233,7 +1232,6 @@
     "fort-walton-beach",
     "fortpierce",
     "cocoa",
-    "holly-hill",
     "hallandale"
    ],
    "img": "img/c/daytona-beach.webp",
@@ -1241,13 +1239,13 @@
     "nightlife": 13,
     "meet": 43,
     "quiet": 156,
-    "walk": 118,
-    "water": 127,
-    "beach": 38,
-    "dining": 48,
-    "outdoors": 79,
-    "afford": 13,
-    "airport": 89,
+    "walk": 117,
+    "water": 128,
+    "beach": 41,
+    "dining": 47,
+    "outdoors": 82,
+    "afford": 11,
+    "airport": 88,
     "edu": 104
    }
   },
@@ -1283,7 +1281,7 @@
     "fortpierce",
     "indialantic",
     "cape-canaveral",
-    "holly-hill",
+    "daytona",
     "edgewater",
     "jensen-beach",
     "satellite-beach",
@@ -1291,17 +1289,17 @@
    ],
    "img": "img/c/flagler-beach.webp",
    "rk": {
-    "nightlife": 107,
+    "nightlife": 108,
     "meet": 52,
-    "quiet": 51,
-    "walk": 64,
-    "water": 123,
-    "beach": 82,
-    "dining": 69,
+    "quiet": 49,
+    "walk": 67,
+    "water": 124,
+    "beach": 84,
+    "dining": 71,
     "outdoors": 12,
-    "afford": 47,
-    "airport": 139,
-    "edu": 68
+    "afford": 45,
+    "airport": 136,
+    "edu": 66
    }
   },
   "staug": {
@@ -1347,15 +1345,15 @@
    "rk": {
     "nightlife": 31,
     "meet": 4,
-    "quiet": 147,
+    "quiet": 146,
     "walk": 8,
-    "water": 100,
-    "beach": 60,
+    "water": 103,
+    "beach": 63,
     "dining": 5,
     "outdoors": 14,
-    "afford": 88,
-    "airport": 138,
-    "edu": 48
+    "afford": 87,
+    "airport": 135,
+    "edu": 46
    }
   },
   "jaxbeach": {
@@ -1401,14 +1399,14 @@
    "rk": {
     "nightlife": 11,
     "meet": 21,
-    "quiet": 150,
+    "quiet": 149,
     "walk": 22,
-    "water": 128,
-    "beach": 41,
-    "dining": 46,
-    "outdoors": 29,
-    "afford": 111,
-    "airport": 68,
+    "water": 129,
+    "beach": 44,
+    "dining": 45,
+    "outdoors": 30,
+    "afford": 110,
+    "airport": 69,
     "edu": 16
    }
   },
@@ -1452,16 +1450,16 @@
    ],
    "img": "img/c/fernandina-beach.webp",
    "rk": {
-    "nightlife": 105,
+    "nightlife": 106,
     "meet": 8,
     "quiet": 63,
     "walk": 6,
-    "water": 71,
-    "beach": 62,
+    "water": 74,
+    "beach": 65,
     "dining": 20,
     "outdoors": 11,
-    "afford": 120,
-    "airport": 61,
+    "afford": 119,
+    "airport": 62,
     "edu": 13
    }
   },
@@ -1507,16 +1505,16 @@
    ],
    "img": "img/c/carrabelle.webp",
    "rk": {
-    "nightlife": 145,
+    "nightlife": 146,
     "meet": 128,
     "quiet": 22,
-    "walk": 131,
-    "water": 45,
-    "beach": 99,
-    "dining": 128,
-    "outdoors": 60,
-    "afford": 5,
-    "airport": 151,
+    "walk": 130,
+    "water": 46,
+    "beach": 102,
+    "dining": 127,
+    "outdoors": 63,
+    "afford": 4,
+    "airport": 150,
     "edu": 157
    }
   },
@@ -1564,13 +1562,13 @@
    ],
    "img": "img/c/st-george-island.webp",
    "rk": {
-    "nightlife": 89,
+    "nightlife": 90,
     "meet": 130,
     "quiet": 32,
-    "walk": 74,
-    "water": 115,
-    "beach": 12,
-    "dining": 126,
+    "walk": 75,
+    "water": 117,
+    "beach": 13,
+    "dining": 125,
     "outdoors": 20,
     "afford": 166,
     "airport": 163,
@@ -1626,11 +1624,11 @@
     "quiet": 3,
     "walk": 166,
     "water": 160,
-    "beach": 94,
+    "beach": 97,
     "dining": 167,
-    "outdoors": 111,
-    "afford": 96,
-    "airport": 148,
+    "outdoors": 116,
+    "afford": 95,
+    "airport": 147,
     "edu": 159
    }
   },
@@ -1670,7 +1668,6 @@
     "matlacha",
     "niceville",
     "edgewater",
-    "valparaiso",
     "new-port-richey",
     "bradenton",
     "titusville",
@@ -1678,17 +1675,17 @@
    ],
    "img": "img/c/st-marks.webp",
    "rk": {
-    "nightlife": 91,
+    "nightlife": 92,
     "meet": 154,
     "quiet": 28,
-    "walk": 77,
-    "water": 121,
+    "walk": 78,
+    "water": 122,
     "beach": 167,
-    "dining": 151,
-    "outdoors": 58,
-    "afford": 17,
-    "airport": 97,
-    "edu": 63
+    "dining": 150,
+    "outdoors": 61,
+    "afford": 15,
+    "airport": 95,
+    "edu": 61
    }
   },
   "panama-city": {
@@ -1728,21 +1725,20 @@
     "jacksonville",
     "melbourne",
     "cape-coral",
-    "valparaiso",
     "hudson"
    ],
    "img": "img/c/panama-city.webp",
    "rk": {
     "nightlife": 27,
-    "meet": 68,
+    "meet": 67,
     "quiet": 118,
-    "walk": 85,
-    "water": 107,
-    "beach": 108,
-    "dining": 65,
-    "outdoors": 95,
-    "afford": 21,
-    "airport": 94,
+    "walk": 87,
+    "water": 109,
+    "beach": 111,
+    "dining": 67,
+    "outdoors": 98,
+    "afford": 19,
+    "airport": 92,
     "edu": 163
    }
   },
@@ -1791,14 +1787,14 @@
     "nightlife": 15,
     "meet": 14,
     "quiet": 126,
-    "walk": 52,
-    "water": 36,
-    "beach": 130,
+    "walk": 54,
+    "water": 37,
+    "beach": 131,
     "dining": 13,
-    "outdoors": 50,
-    "afford": 46,
-    "airport": 100,
-    "edu": 65
+    "outdoors": 53,
+    "afford": 44,
+    "airport": 98,
+    "edu": 63
    }
   },
   "pensacola-beach": {
@@ -1832,7 +1828,7 @@
     "Island storm exposure"
    ],
    "sim": [
-    "okaloosa-island",
+    "fort-walton-beach",
     "fort-myers-beach",
     "destin",
     "gulf-breeze",
@@ -1843,17 +1839,17 @@
    ],
    "img": "img/c/pensacola-beach.webp",
    "rk": {
-    "nightlife": 44,
-    "meet": 97,
+    "nightlife": 45,
+    "meet": 98,
     "quiet": 86,
-    "walk": 69,
-    "water": 96,
-    "beach": 33,
+    "walk": 72,
+    "water": 99,
+    "beach": 35,
     "dining": 104,
     "outdoors": 21,
-    "afford": 139,
-    "airport": 106,
-    "edu": 45
+    "afford": 137,
+    "airport": 104,
+    "edu": 42
    }
   },
   "navarre-beach": {
@@ -1900,15 +1896,15 @@
    "rk": {
     "nightlife": 152,
     "meet": 145,
-    "quiet": 15,
-    "walk": 112,
+    "quiet": 16,
+    "walk": 111,
     "water": 139,
-    "beach": 35,
-    "dining": 141,
+    "beach": 36,
+    "dining": 140,
     "outdoors": 17,
-    "afford": 147,
-    "airport": 114,
-    "edu": 54
+    "afford": 145,
+    "airport": 112,
+    "edu": 52
    }
   },
   "perdido-key": {
@@ -1953,16 +1949,16 @@
    ],
    "img": "img/c/perdido-key.webp",
    "rk": {
-    "nightlife": 43,
+    "nightlife": 44,
     "meet": 152,
-    "quiet": 44,
+    "quiet": 43,
     "walk": 157,
-    "water": 114,
-    "beach": 31,
+    "water": 116,
+    "beach": 32,
     "dining": 159,
-    "outdoors": 40,
-    "afford": 108,
-    "airport": 110,
+    "outdoors": 44,
+    "afford": 107,
+    "airport": 108,
     "edu": 135
    }
   },
@@ -2008,17 +2004,17 @@
    ],
    "img": "img/c/gulf-breeze.webp",
    "rk": {
-    "nightlife": 76,
+    "nightlife": 78,
     "meet": 54,
-    "quiet": 53,
-    "walk": 63,
-    "water": 94,
-    "beach": 69,
-    "dining": 78,
-    "outdoors": 65,
-    "afford": 91,
-    "airport": 103,
-    "edu": 44
+    "quiet": 51,
+    "walk": 66,
+    "water": 97,
+    "beach": 73,
+    "dining": 79,
+    "outdoors": 68,
+    "afford": 90,
+    "airport": 101,
+    "edu": 41
    }
   },
   "port-st-joe": {
@@ -2063,17 +2059,17 @@
    ],
    "img": "img/c/port-st-joe.webp",
    "rk": {
-    "nightlife": 143,
-    "meet": 87,
+    "nightlife": 144,
+    "meet": 89,
     "quiet": 24,
-    "walk": 66,
-    "water": 97,
-    "beach": 9,
+    "walk": 69,
+    "water": 100,
+    "beach": 10,
     "dining": 92,
-    "outdoors": 32,
-    "afford": 57,
+    "outdoors": 33,
+    "afford": 54,
     "airport": 154,
-    "edu": 89
+    "edu": 87
    }
   },
   "crystal-river": {
@@ -2118,15 +2114,15 @@
    ],
    "img": "img/c/crystal-river.webp",
    "rk": {
-    "nightlife": 142,
-    "meet": 81,
-    "quiet": 43,
-    "walk": 130,
-    "water": 48,
+    "nightlife": 143,
+    "meet": 83,
+    "quiet": 42,
+    "walk": 129,
+    "water": 49,
     "beach": 137,
-    "dining": 86,
-    "outdoors": 31,
-    "afford": 22,
+    "dining": 87,
+    "outdoors": 32,
+    "afford": 20,
     "airport": 153,
     "edu": 152
    }
@@ -2173,16 +2169,16 @@
    ],
    "img": "img/c/homosassa.webp",
    "rk": {
-    "nightlife": 147,
+    "nightlife": 148,
     "meet": 150,
     "quiet": 20,
     "walk": 159,
-    "water": 67,
+    "water": 69,
     "beach": 156,
-    "dining": 131,
-    "outdoors": 82,
-    "afford": 44,
-    "airport": 147,
+    "dining": 130,
+    "outdoors": 85,
+    "afford": 42,
+    "airport": 146,
     "edu": 153
    }
   },
@@ -2232,11 +2228,11 @@
     "meet": 163,
     "quiet": 11,
     "walk": 162,
-    "water": 125,
+    "water": 126,
     "beach": 160,
     "dining": 166,
-    "outdoors": 85,
-    "afford": 16,
+    "outdoors": 88,
+    "afford": 14,
     "airport": 160,
     "edu": 148
    }
@@ -2285,15 +2281,15 @@
    "rk": {
     "nightlife": 153,
     "meet": 159,
-    "quiet": 14,
-    "walk": 137,
-    "water": 56,
+    "quiet": 15,
+    "walk": 135,
+    "water": 57,
     "beach": 159,
     "dining": 164,
-    "outdoors": 83,
-    "afford": 9,
+    "outdoors": 86,
+    "afford": 7,
     "airport": 167,
-    "edu": 39
+    "edu": 36
    }
   },
   "apollo-beach": {
@@ -2338,16 +2334,16 @@
    ],
    "img": "img/c/apollo-beach.webp",
    "rk": {
-    "nightlife": 99,
+    "nightlife": 100,
     "meet": 140,
     "quiet": 115,
-    "walk": 147,
-    "water": 43,
-    "beach": 132,
-    "dining": 157,
-    "outdoors": 155,
-    "afford": 77,
-    "airport": 34,
+    "walk": 146,
+    "water": 44,
+    "beach": 133,
+    "dining": 156,
+    "outdoors": 159,
+    "afford": 76,
+    "airport": 37,
     "edu": 161
    }
   },
@@ -2393,17 +2389,17 @@
    ],
    "img": "img/c/clearwater.webp",
    "rk": {
-    "nightlife": 53,
-    "meet": 71,
+    "nightlife": 54,
+    "meet": 70,
     "quiet": 158,
-    "walk": 78,
-    "water": 133,
-    "beach": 95,
-    "dining": 52,
-    "outdoors": 100,
-    "afford": 56,
+    "walk": 79,
+    "water": 134,
+    "beach": 98,
+    "dining": 51,
+    "outdoors": 105,
+    "afford": 53,
     "airport": 12,
-    "edu": 25
+    "edu": 24
    }
   },
   "indian-rocks-beach": {
@@ -2437,28 +2433,26 @@
     "Island flood risk"
    ],
    "sim": [
-    "north-redington-beach",
+    "redington-shores",
     "treasure-island",
     "indian-shores",
-    "redington-shores",
-    "redington-beach",
     "indialantic",
     "belleair-beach",
     "madeira-beach"
    ],
    "img": "img/c/indian-rocks-beach.webp",
    "rk": {
-    "nightlife": 109,
-    "meet": 65,
-    "quiet": 48,
-    "walk": 65,
+    "nightlife": 110,
+    "meet": 64,
+    "quiet": 47,
+    "walk": 68,
     "water": 142,
-    "beach": 48,
+    "beach": 51,
     "dining": 107,
-    "outdoors": 124,
-    "afford": 136,
-    "airport": 40,
-    "edu": 75
+    "outdoors": 129,
+    "afford": 134,
+    "airport": 43,
+    "edu": 73
    }
   },
   "madeira-beach": {
@@ -2503,17 +2497,17 @@
    ],
    "img": "img/c/madeira-beach.webp",
    "rk": {
-    "nightlife": 42,
-    "meet": 75,
+    "nightlife": 43,
+    "meet": 74,
     "quiet": 88,
-    "walk": 44,
+    "walk": 46,
     "water": 14,
-    "beach": 49,
-    "dining": 60,
-    "outdoors": 125,
-    "afford": 84,
-    "airport": 43,
-    "edu": 67
+    "beach": 52,
+    "dining": 59,
+    "outdoors": 130,
+    "afford": 83,
+    "airport": 46,
+    "edu": 65
    }
   },
   "new-port-richey": {
@@ -2550,25 +2544,24 @@
     "port-richey",
     "bradenton",
     "hudson",
-    "holly-hill",
+    "daytona",
     "port-orange",
     "oldsmar",
-    "panama-city",
-    "south-daytona"
+    "panama-city"
    ],
    "img": "img/c/new-port-richey.webp",
    "rk": {
-    "nightlife": 63,
+    "nightlife": 64,
     "meet": 37,
-    "quiet": 107,
-    "walk": 55,
+    "quiet": 105,
+    "walk": 57,
     "water": 150,
     "beach": 151,
-    "dining": 73,
-    "outdoors": 97,
+    "dining": 75,
+    "outdoors": 100,
     "afford": 2,
-    "airport": 51,
-    "edu": 115
+    "airport": 52,
+    "edu": 114
    }
   },
   "ruskin": {
@@ -2606,23 +2599,23 @@
     "port-richey",
     "port-charlotte",
     "palm-bay",
-    "south-daytona",
+    "daytona",
     "hudson",
     "port-orange",
     "gibsonton"
    ],
    "img": "img/c/ruskin.webp",
    "rk": {
-    "nightlife": 119,
+    "nightlife": 120,
     "meet": 136,
     "quiet": 116,
-    "walk": 146,
-    "water": 103,
+    "walk": 145,
+    "water": 106,
     "beach": 145,
-    "dining": 155,
-    "outdoors": 157,
-    "afford": 14,
-    "airport": 38,
+    "dining": 154,
+    "outdoors": 161,
+    "afford": 12,
+    "airport": 41,
     "edu": 167
    }
   },
@@ -2668,17 +2661,17 @@
    ],
    "img": "img/c/safety-harbor.webp",
    "rk": {
-    "nightlife": 103,
+    "nightlife": 104,
     "meet": 25,
     "quiet": 71,
     "walk": 26,
     "water": 159,
     "beach": 150,
     "dining": 29,
-    "outdoors": 70,
-    "afford": 104,
+    "outdoors": 73,
+    "afford": 103,
     "airport": 8,
-    "edu": 61
+    "edu": 59
    }
   },
   "st-pete-beach": {
@@ -2723,16 +2716,16 @@
    ],
    "img": "img/c/st-pete-beach.webp",
    "rk": {
-    "nightlife": 35,
+    "nightlife": 36,
     "meet": 11,
-    "quiet": 144,
-    "walk": 38,
+    "quiet": 143,
+    "walk": 40,
     "water": 9,
-    "beach": 10,
+    "beach": 11,
     "dining": 24,
-    "outdoors": 115,
-    "afford": 119,
-    "airport": 50,
+    "outdoors": 120,
+    "afford": 118,
+    "airport": 51,
     "edu": 110
    }
   },
@@ -2782,13 +2775,13 @@
     "meet": 9,
     "quiet": 162,
     "walk": 9,
-    "water": 54,
-    "beach": 104,
+    "water": 55,
+    "beach": 107,
     "dining": 4,
-    "outdoors": 35,
-    "afford": 80,
+    "outdoors": 39,
+    "afford": 79,
     "airport": 11,
-    "edu": 97
+    "edu": 95
    }
   },
   "sun-city-center": {
@@ -2827,22 +2820,22 @@
     "new-port-richey",
     "west-melbourne",
     "safety-harbor",
-    "holly-hill",
+    "daytona",
     "port-st-lucie",
     "palm-beach-gardens"
    ],
    "img": "img/c/sun-city-center.webp",
    "rk": {
-    "nightlife": 118,
-    "meet": 94,
+    "nightlife": 119,
+    "meet": 96,
     "quiet": 80,
-    "walk": 86,
+    "walk": 88,
     "water": 167,
     "beach": 144,
-    "dining": 154,
+    "dining": 153,
     "outdoors": 166,
-    "afford": 23,
-    "airport": 45,
+    "afford": 21,
+    "airport": 47,
     "edu": 165
    }
   },
@@ -2891,14 +2884,14 @@
     "nightlife": 3,
     "meet": 34,
     "quiet": 166,
-    "walk": 46,
+    "walk": 48,
     "water": 148,
     "beach": 139,
     "dining": 1,
-    "outdoors": 116,
-    "afford": 89,
+    "outdoors": 121,
+    "afford": 88,
     "airport": 2,
-    "edu": 119
+    "edu": 120
    }
   },
   "tarpon-springs": {
@@ -2943,17 +2936,17 @@
    ],
    "img": "img/c/tarpon-springs.webp",
    "rk": {
-    "nightlife": 101,
+    "nightlife": 102,
     "meet": 12,
     "quiet": 113,
     "walk": 12,
-    "water": 62,
-    "beach": 96,
+    "water": 64,
+    "beach": 99,
     "dining": 21,
-    "outdoors": 72,
-    "afford": 67,
-    "airport": 36,
-    "edu": 120
+    "outdoors": 75,
+    "afford": 65,
+    "airport": 39,
+    "edu": 121
    }
   },
   "treasure-island": {
@@ -2991,24 +2984,24 @@
     "indian-rocks-beach",
     "madeira-beach",
     "st-pete-beach",
-    "north-redington-beach",
+    "redington-shores",
     "bradenton-beach",
     "siesta-key",
     "clearwaterbeach"
    ],
    "img": "img/c/treasure-island.webp",
    "rk": {
-    "nightlife": 38,
-    "meet": 64,
+    "nightlife": 39,
+    "meet": 63,
     "quiet": 94,
-    "walk": 40,
+    "walk": 42,
     "water": 12,
-    "beach": 11,
-    "dining": 81,
-    "outdoors": 123,
-    "afford": 129,
-    "airport": 42,
-    "edu": 73
+    "beach": 12,
+    "dining": 82,
+    "outdoors": 128,
+    "afford": 128,
+    "airport": 45,
+    "edu": 71
    }
   },
   "bradenton": {
@@ -3053,16 +3046,16 @@
    ],
    "img": "img/c/bradenton.webp",
    "rk": {
-    "nightlife": 57,
-    "meet": 98,
+    "nightlife": 58,
+    "meet": 99,
     "quiet": 127,
-    "walk": 51,
-    "water": 53,
-    "beach": 106,
-    "dining": 88,
-    "outdoors": 119,
-    "afford": 25,
-    "airport": 64,
+    "walk": 53,
+    "water": 54,
+    "beach": 109,
+    "dining": 89,
+    "outdoors": 124,
+    "afford": 23,
+    "airport": 65,
     "edu": 164
    }
   },
@@ -3108,16 +3101,16 @@
    ],
    "img": "img/c/bradenton-beach.webp",
    "rk": {
-    "nightlife": 50,
-    "meet": 82,
+    "nightlife": 51,
+    "meet": 84,
     "quiet": 85,
     "walk": 29,
-    "water": 40,
-    "beach": 26,
-    "dining": 58,
-    "outdoors": 93,
-    "afford": 145,
-    "airport": 71,
+    "water": 41,
+    "beach": 27,
+    "dining": 57,
+    "outdoors": 96,
+    "afford": 143,
+    "airport": 72,
     "edu": 146
    }
   },
@@ -3155,7 +3148,7 @@
     "shalimar",
     "apollo-beach",
     "hernando-beach",
-    "valparaiso",
+    "niceville",
     "port-orange",
     "lantana",
     "bradenton",
@@ -3163,16 +3156,16 @@
    ],
    "img": "img/c/cortez.webp",
    "rk": {
-    "nightlife": 139,
-    "meet": 109,
-    "quiet": 47,
-    "walk": 79,
+    "nightlife": 138,
+    "meet": 110,
+    "quiet": 46,
+    "walk": 81,
     "water": 2,
     "beach": 136,
-    "dining": 139,
-    "outdoors": 109,
-    "afford": 93,
-    "airport": 70,
+    "dining": 138,
+    "outdoors": 114,
+    "afford": 92,
+    "airport": 71,
     "edu": 147
    }
   },
@@ -3218,17 +3211,17 @@
    ],
    "img": "img/c/englewood.webp",
    "rk": {
-    "nightlife": 124,
-    "meet": 110,
+    "nightlife": 125,
+    "meet": 111,
     "quiet": 73,
-    "walk": 126,
-    "water": 59,
-    "beach": 59,
-    "dining": 129,
-    "outdoors": 64,
-    "afford": 36,
-    "airport": 136,
-    "edu": 23
+    "walk": 125,
+    "water": 61,
+    "beach": 62,
+    "dining": 128,
+    "outdoors": 67,
+    "afford": 34,
+    "airport": 133,
+    "edu": 22
    }
   },
   "sarasota": {
@@ -3279,13 +3272,13 @@
     "meet": 18,
     "quiet": 154,
     "walk": 20,
-    "water": 60,
-    "beach": 39,
+    "water": 62,
+    "beach": 42,
     "dining": 16,
-    "outdoors": 34,
-    "afford": 79,
-    "airport": 74,
-    "edu": 66
+    "outdoors": 35,
+    "afford": 78,
+    "airport": 75,
+    "edu": 64
    }
   },
   "siesta-key": {
@@ -3330,17 +3323,17 @@
    ],
    "img": "img/c/siesta-key.webp",
    "rk": {
-    "nightlife": 41,
+    "nightlife": 42,
     "meet": 51,
-    "quiet": 140,
-    "walk": 42,
-    "water": 77,
+    "quiet": 139,
+    "walk": 44,
+    "water": 80,
     "beach": 1,
-    "dining": 85,
-    "outdoors": 68,
-    "afford": 152,
-    "airport": 83,
-    "edu": 19
+    "dining": 86,
+    "outdoors": 71,
+    "afford": 150,
+    "airport": 82,
+    "edu": 18
    }
   },
   "venice": {
@@ -3388,16 +3381,16 @@
    ],
    "img": "img/c/venice.webp",
    "rk": {
-    "nightlife": 100,
+    "nightlife": 101,
     "meet": 35,
     "quiet": 76,
     "walk": 5,
-    "water": 31,
-    "beach": 40,
-    "dining": 55,
-    "outdoors": 37,
-    "afford": 66,
-    "airport": 120,
+    "water": 32,
+    "beach": 43,
+    "dining": 54,
+    "outdoors": 41,
+    "afford": 64,
+    "airport": 118,
     "edu": 4
    }
   },
@@ -3445,17 +3438,17 @@
    ],
    "img": "img/c/bonita-beach.webp",
    "rk": {
-    "nightlife": 94,
-    "meet": 103,
+    "nightlife": 95,
+    "meet": 104,
     "quiet": 125,
-    "walk": 119,
-    "water": 49,
-    "beach": 15,
-    "dining": 75,
-    "outdoors": 59,
-    "afford": 115,
-    "airport": 25,
-    "edu": 43
+    "walk": 118,
+    "water": 50,
+    "beach": 16,
+    "dining": 77,
+    "outdoors": 62,
+    "afford": 114,
+    "airport": 27,
+    "edu": 40
    }
   },
   "cape-coral": {
@@ -3500,17 +3493,17 @@
    ],
    "img": "img/c/canal-swfl.webp",
    "rk": {
-    "nightlife": 93,
-    "meet": 70,
+    "nightlife": 94,
+    "meet": 69,
     "quiet": 136,
-    "walk": 139,
+    "walk": 138,
     "water": 1,
     "beach": 140,
     "dining": 22,
-    "outdoors": 96,
-    "afford": 49,
-    "airport": 56,
-    "edu": 96
+    "outdoors": 99,
+    "afford": 47,
+    "airport": 57,
+    "edu": 94
    }
   },
   "chokoloskee": {
@@ -3559,13 +3552,13 @@
     "meet": 162,
     "quiet": 7,
     "walk": 163,
-    "water": 73,
+    "water": 76,
     "beach": 164,
     "dining": 162,
-    "outdoors": 81,
-    "afford": 28,
+    "outdoors": 84,
+    "afford": 26,
     "airport": 159,
-    "edu": 51
+    "edu": 49
    }
   },
   "everglades-city": {
@@ -3612,17 +3605,17 @@
    ],
    "img": "img/c/everglades-city.webp",
    "rk": {
-    "nightlife": 90,
+    "nightlife": 91,
     "meet": 133,
     "quiet": 29,
-    "walk": 76,
-    "water": 89,
+    "walk": 77,
+    "water": 92,
     "beach": 163,
     "dining": 112,
-    "outdoors": 87,
-    "afford": 35,
+    "outdoors": 90,
+    "afford": 33,
     "airport": 158,
-    "edu": 52
+    "edu": 50
    }
   },
   "fort-myers": {
@@ -3670,13 +3663,13 @@
     "nightlife": 22,
     "meet": 26,
     "quiet": 157,
-    "walk": 48,
-    "water": 85,
+    "walk": 50,
+    "water": 88,
     "beach": 142,
     "dining": 18,
-    "outdoors": 121,
-    "afford": 33,
-    "airport": 23,
+    "outdoors": 126,
+    "afford": 31,
+    "airport": 25,
     "edu": 149
    }
   },
@@ -3713,7 +3706,7 @@
    "sim": [
     "st-pete-beach",
     "treasure-island",
-    "okaloosa-island",
+    "fort-walton-beach",
     "siesta-key",
     "clearwaterbeach",
     "bradenton-beach",
@@ -3722,17 +3715,17 @@
    ],
    "img": "img/c/fort-myers-beach.webp",
    "rk": {
-    "nightlife": 40,
-    "meet": 69,
-    "quiet": 141,
-    "walk": 41,
-    "water": 19,
-    "beach": 25,
+    "nightlife": 41,
+    "meet": 68,
+    "quiet": 140,
+    "walk": 43,
+    "water": 18,
+    "beach": 26,
     "dining": 98,
-    "outdoors": 92,
-    "afford": 112,
-    "airport": 57,
-    "edu": 118
+    "outdoors": 95,
+    "afford": 111,
+    "airport": 58,
+    "edu": 117
    }
   },
   "marco-island": {
@@ -3777,17 +3770,17 @@
    ],
    "img": "img/c/marco-island.webp",
    "rk": {
-    "nightlife": 65,
+    "nightlife": 66,
     "meet": 30,
     "quiet": 68,
-    "walk": 90,
-    "water": 34,
-    "beach": 28,
-    "dining": 54,
-    "outdoors": 63,
-    "afford": 159,
-    "airport": 133,
-    "edu": 21
+    "walk": 92,
+    "water": 35,
+    "beach": 29,
+    "dining": 53,
+    "outdoors": 66,
+    "afford": 157,
+    "airport": 130,
+    "edu": 20
    }
   },
   "port-charlotte": {
@@ -3832,16 +3825,16 @@
    ],
    "img": "img/c/port-charlotte.webp",
    "rk": {
-    "nightlife": 115,
-    "meet": 108,
+    "nightlife": 116,
+    "meet": 109,
     "quiet": 129,
-    "walk": 142,
-    "water": 63,
+    "walk": 141,
+    "water": 65,
     "beach": 143,
     "dining": 93,
-    "outdoors": 156,
-    "afford": 12,
-    "airport": 119,
+    "outdoors": 160,
+    "afford": 10,
+    "airport": 117,
     "edu": 142
    }
   },
@@ -3887,17 +3880,17 @@
    ],
    "img": "img/c/punta-gorda.webp",
    "rk": {
-    "nightlife": 102,
+    "nightlife": 103,
     "meet": 7,
     "quiet": 72,
     "walk": 23,
-    "water": 35,
+    "water": 36,
     "beach": 148,
     "dining": 25,
-    "outdoors": 69,
-    "afford": 58,
-    "airport": 108,
-    "edu": 93
+    "outdoors": 72,
+    "afford": 56,
+    "airport": 106,
+    "edu": 91
    }
   },
   "sanibel-island": {
@@ -3944,15 +3937,15 @@
    "rk": {
     "nightlife": 132,
     "meet": 116,
-    "quiet": 54,
-    "walk": 35,
-    "water": 105,
-    "beach": 22,
-    "dining": 120,
+    "quiet": 52,
+    "walk": 37,
+    "water": 107,
+    "beach": 23,
+    "dining": 121,
     "outdoors": 15,
-    "afford": 155,
-    "airport": 98,
-    "edu": 29
+    "afford": 153,
+    "airport": 96,
+    "edu": 28
    }
   },
   "key-largo": {
@@ -3998,16 +3991,16 @@
    "img": "img/c/key-largo.webp",
    "rk": {
     "nightlife": 70,
-    "meet": 86,
+    "meet": 88,
     "quiet": 102,
-    "walk": 152,
-    "water": 25,
-    "beach": 116,
-    "dining": 59,
-    "outdoors": 56,
-    "afford": 151,
+    "walk": 151,
+    "water": 24,
+    "beach": 118,
+    "dining": 58,
+    "outdoors": 59,
+    "afford": 149,
     "airport": 152,
-    "edu": 95
+    "edu": 93
    }
   },
   "bal-harbour": {
@@ -4052,17 +4045,17 @@
    ],
    "img": "img/c/bal-harbour.webp",
    "rk": {
-    "nightlife": 52,
+    "nightlife": 53,
     "meet": 50,
-    "quiet": 41,
+    "quiet": 40,
     "walk": 28,
-    "water": 28,
-    "beach": 50,
-    "dining": 43,
-    "outdoors": 129,
+    "water": 30,
+    "beach": 53,
+    "dining": 42,
+    "outdoors": 134,
     "afford": 164,
-    "airport": 29,
-    "edu": 76
+    "airport": 31,
+    "edu": 74
    }
   },
   "boca-raton": {
@@ -4110,13 +4103,13 @@
     "nightlife": 21,
     "meet": 19,
     "quiet": 134,
-    "walk": 47,
-    "water": 84,
-    "beach": 51,
+    "walk": 49,
+    "water": 87,
+    "beach": 54,
     "dining": 33,
-    "outdoors": 103,
-    "afford": 122,
-    "airport": 41,
+    "outdoors": 108,
+    "afford": 121,
+    "airport": 44,
     "edu": 2
    }
   },
@@ -4162,15 +4155,15 @@
    ],
    "img": "img/c/dania-beach.webp",
    "rk": {
-    "nightlife": 60,
-    "meet": 85,
-    "quiet": 151,
-    "walk": 124,
-    "water": 74,
-    "beach": 87,
-    "dining": 80,
-    "outdoors": 128,
-    "afford": 62,
+    "nightlife": 61,
+    "meet": 87,
+    "quiet": 150,
+    "walk": 123,
+    "water": 77,
+    "beach": 89,
+    "dining": 81,
+    "outdoors": 133,
+    "afford": 60,
     "airport": 7,
     "edu": 129
    }
@@ -4220,12 +4213,12 @@
     "nightlife": 26,
     "meet": 45,
     "quiet": 152,
-    "walk": 84,
-    "water": 118,
-    "beach": 86,
+    "walk": 86,
+    "water": 119,
+    "beach": 88,
     "dining": 32,
-    "outdoors": 145,
-    "afford": 54,
+    "outdoors": 150,
+    "afford": 52,
     "airport": 6,
     "edu": 106
    }
@@ -4261,28 +4254,27 @@
     "Expensive"
    ],
    "sim": [
-    "redington-beach",
+    "redington-shores",
     "indian-river-shores",
     "sewalls-point",
     "indian-rocks-beach",
-    "north-redington-beach",
     "belleair-beach",
     "indian-harbour-beach",
     "indian-shores"
    ],
    "img": "img/c/highland-beach.webp",
    "rk": {
-    "nightlife": 137,
+    "nightlife": 136,
     "meet": 127,
     "quiet": 26,
     "walk": 156,
     "water": 154,
-    "beach": 47,
-    "dining": 152,
-    "outdoors": 144,
-    "afford": 157,
-    "airport": 53,
-    "edu": 47
+    "beach": 50,
+    "dining": 151,
+    "outdoors": 149,
+    "afford": 155,
+    "airport": 54,
+    "edu": 44
    }
   },
   "hollywood": {
@@ -4331,11 +4323,11 @@
     "meet": 38,
     "quiet": 160,
     "walk": 10,
-    "water": 32,
-    "beach": 16,
-    "dining": 38,
-    "outdoors": 102,
-    "afford": 97,
+    "water": 33,
+    "beach": 17,
+    "dining": 37,
+    "outdoors": 107,
+    "afford": 96,
     "airport": 4,
     "edu": 139
    }
@@ -4382,17 +4374,17 @@
    ],
    "img": "img/c/lauderdale-by-the-sea.webp",
    "rk": {
-    "nightlife": 39,
+    "nightlife": 40,
     "meet": 28,
     "quiet": 93,
     "walk": 7,
     "water": 161,
-    "beach": 18,
-    "dining": 35,
-    "outdoors": 126,
-    "afford": 124,
-    "airport": 28,
-    "edu": 53
+    "beach": 19,
+    "dining": 34,
+    "outdoors": 131,
+    "afford": 123,
+    "airport": 30,
+    "edu": 51
    }
   },
   "lighthouse-point": {
@@ -4438,16 +4430,16 @@
    "img": "img/c/lighthouse-point.webp",
    "rk": {
     "nightlife": 128,
-    "meet": 95,
+    "meet": 97,
     "quiet": 59,
-    "walk": 136,
-    "water": 26,
+    "walk": 134,
+    "water": 28,
     "beach": 154,
-    "dining": 146,
-    "outdoors": 162,
-    "afford": 153,
-    "airport": 33,
-    "edu": 114
+    "dining": 145,
+    "outdoors": 164,
+    "afford": 151,
+    "airport": 36,
+    "edu": 113
    }
   },
   "north-miami-beach": {
@@ -4492,17 +4484,17 @@
    ],
    "img": "img/c/north-miami-beach.webp",
    "rk": {
-    "nightlife": 58,
+    "nightlife": 59,
     "meet": 44,
     "quiet": 153,
-    "walk": 121,
-    "water": 129,
-    "beach": 131,
+    "walk": 120,
+    "water": 130,
+    "beach": 132,
     "dining": 19,
-    "outdoors": 159,
-    "afford": 64,
-    "airport": 26,
-    "edu": 100
+    "outdoors": 163,
+    "afford": 62,
+    "airport": 28,
+    "edu": 98
    }
   },
   "north-palm-beach": {
@@ -4547,17 +4539,17 @@
    ],
    "img": "img/c/north-palm-beach.webp",
    "rk": {
-    "nightlife": 125,
-    "meet": 104,
+    "nightlife": 126,
+    "meet": 105,
     "quiet": 64,
-    "walk": 128,
+    "walk": 127,
     "water": 13,
-    "beach": 98,
-    "dining": 136,
-    "outdoors": 45,
-    "afford": 110,
-    "airport": 21,
-    "edu": 58
+    "beach": 101,
+    "dining": 135,
+    "outdoors": 49,
+    "afford": 109,
+    "airport": 23,
+    "edu": 56
    }
   },
   "palm-beach": {
@@ -4602,16 +4594,16 @@
    ],
    "img": "img/c/palm-beach.webp",
    "rk": {
-    "nightlife": 73,
+    "nightlife": 75,
     "meet": 20,
     "quiet": 58,
-    "walk": 33,
-    "water": 82,
-    "beach": 66,
+    "walk": 34,
+    "water": 85,
+    "beach": 70,
     "dining": 17,
-    "outdoors": 104,
-    "afford": 160,
-    "airport": 17,
+    "outdoors": 109,
+    "afford": 158,
+    "airport": 19,
     "edu": 131
    }
   },
@@ -4657,16 +4649,16 @@
    ],
    "img": "img/c/palm-beach-gardens.webp",
    "rk": {
-    "nightlife": 56,
-    "meet": 59,
+    "nightlife": 57,
+    "meet": 58,
     "quiet": 128,
-    "walk": 83,
+    "walk": 85,
     "water": 165,
-    "beach": 129,
+    "beach": 130,
     "dining": 99,
-    "outdoors": 142,
-    "afford": 135,
-    "airport": 22,
+    "outdoors": 147,
+    "afford": 132,
+    "airport": 24,
     "edu": 109
    }
   },
@@ -4712,17 +4704,17 @@
    ],
    "img": "img/c/riviera-beach.webp",
    "rk": {
-    "nightlife": 97,
+    "nightlife": 98,
     "meet": 122,
     "quiet": 120,
-    "walk": 123,
+    "walk": 122,
     "water": 16,
-    "beach": 56,
-    "dining": 138,
-    "outdoors": 127,
-    "afford": 78,
-    "airport": 16,
-    "edu": 74
+    "beach": 59,
+    "dining": 137,
+    "outdoors": 132,
+    "afford": 77,
+    "airport": 18,
+    "edu": 72
    }
   },
   "sunny-isles-beach": {
@@ -4767,17 +4759,17 @@
    ],
    "img": "img/c/sunny-isles-beach.webp",
    "rk": {
-    "nightlife": 51,
+    "nightlife": 52,
     "meet": 16,
-    "quiet": 149,
-    "walk": 37,
-    "water": 126,
-    "beach": 42,
+    "quiet": 148,
+    "walk": 39,
+    "water": 127,
+    "beach": 45,
     "dining": 15,
-    "outdoors": 143,
-    "afford": 150,
-    "airport": 27,
-    "edu": 62
+    "outdoors": 148,
+    "afford": 148,
+    "airport": 29,
+    "edu": 60
    }
   },
   "west-palm-beach": {
@@ -4826,12 +4818,12 @@
     "meet": 10,
     "quiet": 159,
     "walk": 11,
-    "water": 113,
-    "beach": 127,
+    "water": 115,
+    "beach": 128,
     "dining": 11,
-    "outdoors": 78,
-    "afford": 107,
-    "airport": 14,
+    "outdoors": 81,
+    "afford": 106,
+    "airport": 16,
     "edu": 140
    }
   },
@@ -4879,15 +4871,15 @@
    "rk": {
     "nightlife": 10,
     "meet": 6,
-    "quiet": 145,
+    "quiet": 144,
     "walk": 15,
     "water": 158,
     "beach": 153,
     "dining": 9,
-    "outdoors": 140,
-    "afford": 127,
+    "outdoors": 145,
+    "afford": 126,
     "airport": 10,
-    "edu": 98
+    "edu": 96
    }
   },
   "jensen-beach": {
@@ -4932,17 +4924,17 @@
    ],
    "img": "img/c/jensen-beach.webp",
    "rk": {
-    "nightlife": 33,
-    "meet": 76,
+    "nightlife": 34,
+    "meet": 75,
     "quiet": 62,
-    "walk": 57,
-    "water": 79,
-    "beach": 63,
-    "dining": 61,
-    "outdoors": 49,
-    "afford": 70,
-    "airport": 129,
-    "edu": 80
+    "walk": 59,
+    "water": 82,
+    "beach": 66,
+    "dining": 64,
+    "outdoors": 52,
+    "afford": 68,
+    "airport": 126,
+    "edu": 78
    }
   },
   "port-st-lucie": {
@@ -4976,7 +4968,7 @@
     "Not on the ocean"
    ],
    "sim": [
-    "holly-hill",
+    "daytona",
     "freeport",
     "palm-city",
     "palm-bay",
@@ -4987,16 +4979,16 @@
    ],
    "img": "img/c/port-st-lucie.webp",
    "rk": {
-    "nightlife": 92,
+    "nightlife": 93,
     "meet": 155,
     "quiet": 137,
-    "walk": 138,
+    "walk": 137,
     "water": 155,
-    "beach": 126,
-    "dining": 149,
-    "outdoors": 137,
-    "afford": 52,
-    "airport": 135,
+    "beach": 127,
+    "dining": 148,
+    "outdoors": 142,
+    "afford": 50,
+    "airport": 132,
     "edu": 134
    }
   },
@@ -5042,17 +5034,17 @@
    ],
    "img": "img/c/sebastian.webp",
    "rk": {
-    "nightlife": 110,
+    "nightlife": 111,
     "meet": 55,
     "quiet": 75,
-    "walk": 125,
+    "walk": 124,
     "water": 17,
-    "beach": 97,
-    "dining": 56,
+    "beach": 100,
+    "dining": 55,
     "outdoors": 8,
-    "afford": 45,
-    "airport": 140,
-    "edu": 34
+    "afford": 43,
+    "airport": 137,
+    "edu": 31
    }
   },
   "stuart": {
@@ -5099,15 +5091,15 @@
    "rk": {
     "nightlife": 47,
     "meet": 33,
-    "quiet": 108,
+    "quiet": 106,
     "walk": 25,
     "water": 3,
-    "beach": 88,
+    "beach": 90,
     "dining": 23,
     "outdoors": 22,
-    "afford": 65,
-    "airport": 121,
-    "edu": 42
+    "afford": 63,
+    "airport": 119,
+    "edu": 39
    }
   },
   "vero-beach": {
@@ -5152,17 +5144,17 @@
    ],
    "img": "img/c/vero-beach.webp",
    "rk": {
-    "nightlife": 104,
+    "nightlife": 105,
     "meet": 13,
     "quiet": 70,
-    "walk": 56,
-    "water": 90,
-    "beach": 43,
+    "walk": 58,
+    "water": 93,
+    "beach": 46,
     "dining": 12,
     "outdoors": 10,
-    "afford": 68,
-    "airport": 142,
-    "edu": 56
+    "afford": 66,
+    "airport": 139,
+    "edu": 54
    }
   },
   "indialantic": {
@@ -5207,17 +5199,17 @@
    ],
    "img": "img/c/indialantic.webp",
    "rk": {
-    "nightlife": 81,
-    "meet": 83,
-    "quiet": 40,
-    "walk": 68,
-    "water": 124,
-    "beach": 73,
-    "dining": 82,
-    "outdoors": 54,
-    "afford": 116,
-    "airport": 131,
-    "edu": 27
+    "nightlife": 83,
+    "meet": 85,
+    "quiet": 39,
+    "walk": 71,
+    "water": 125,
+    "beach": 77,
+    "dining": 83,
+    "outdoors": 57,
+    "afford": 115,
+    "airport": 128,
+    "edu": 26
    }
   },
   "melbourne-beach": {
@@ -5262,17 +5254,17 @@
    ],
    "img": "img/c/melbourne-beach.webp",
    "rk": {
-    "nightlife": 144,
+    "nightlife": 145,
     "meet": 124,
     "quiet": 23,
-    "walk": 67,
-    "water": 76,
-    "beach": 72,
-    "dining": 133,
+    "walk": 70,
+    "water": 79,
+    "beach": 76,
+    "dining": 132,
     "outdoors": 26,
-    "afford": 128,
-    "airport": 130,
-    "edu": 77
+    "afford": 127,
+    "airport": 127,
+    "edu": 75
    }
   },
   "palm-bay": {
@@ -5309,24 +5301,23 @@
     "port-st-lucie",
     "ruskin",
     "holiday",
-    "south-daytona",
-    "holly-hill",
+    "daytona",
     "west-melbourne",
     "freeport",
     "port-richey"
    ],
    "img": "img/c/palm-bay.webp",
    "rk": {
-    "nightlife": 112,
+    "nightlife": 113,
     "meet": 131,
     "quiet": 135,
-    "walk": 140,
-    "water": 130,
+    "walk": 139,
+    "water": 131,
     "beach": 141,
-    "dining": 137,
-    "outdoors": 138,
-    "afford": 15,
-    "airport": 127,
+    "dining": 136,
+    "outdoors": 143,
+    "afford": 13,
+    "airport": 125,
     "edu": 107
    }
   },
@@ -5373,15 +5364,15 @@
    "img": "img/c/satellite-beach.webp",
    "rk": {
     "nightlife": 127,
-    "meet": 73,
+    "meet": 72,
     "quiet": 60,
-    "walk": 96,
+    "walk": 97,
     "water": 7,
-    "beach": 64,
-    "dining": 121,
-    "outdoors": 51,
-    "afford": 105,
-    "airport": 117,
+    "beach": 67,
+    "dining": 122,
+    "outdoors": 54,
+    "afford": 104,
+    "airport": 115,
     "edu": 8
    }
   },
@@ -5427,16 +5418,16 @@
    ],
    "img": "img/c/titusville.webp",
    "rk": {
-    "nightlife": 116,
-    "meet": 101,
+    "nightlife": 117,
+    "meet": 102,
     "quiet": 82,
-    "walk": 120,
-    "water": 87,
-    "beach": 101,
+    "walk": 119,
+    "water": 90,
+    "beach": 104,
     "dining": 96,
     "outdoors": 18,
-    "afford": 7,
-    "airport": 60,
+    "afford": 5,
+    "airport": 61,
     "edu": 133
    }
   },
@@ -5473,8 +5464,7 @@
    "sim": [
     "palm-bay",
     "port-st-lucie",
-    "south-daytona",
-    "holly-hill",
+    "daytona",
     "gibsonton",
     "rockledge",
     "mary-esther",
@@ -5482,17 +5472,17 @@
    ],
    "img": "img/c/west-melbourne.webp",
    "rk": {
-    "nightlife": 121,
-    "meet": 72,
+    "nightlife": 122,
+    "meet": 71,
     "quiet": 114,
-    "walk": 148,
+    "walk": 147,
     "water": 166,
     "beach": 146,
-    "dining": 57,
-    "outdoors": 164,
-    "afford": 53,
-    "airport": 115,
-    "edu": 86
+    "dining": 56,
+    "outdoors": 165,
+    "afford": 51,
+    "airport": 113,
+    "edu": 85
    }
   },
   "atlantic-beach": {
@@ -5539,15 +5529,15 @@
    "rk": {
     "nightlife": 17,
     "meet": 24,
-    "quiet": 106,
+    "quiet": 104,
     "walk": 27,
     "water": 140,
-    "beach": 44,
-    "dining": 36,
+    "beach": 47,
+    "dining": 35,
     "outdoors": 5,
-    "afford": 123,
-    "airport": 63,
-    "edu": 38
+    "afford": 122,
+    "airport": 64,
+    "edu": 35
    }
   },
   "neptune-beach": {
@@ -5592,17 +5582,17 @@
    ],
    "img": "img/c/neptune-beach.webp",
    "rk": {
-    "nightlife": 37,
+    "nightlife": 38,
     "meet": 15,
     "quiet": 96,
     "walk": 17,
     "water": 147,
-    "beach": 46,
+    "beach": 49,
     "dining": 26,
     "outdoors": 28,
-    "afford": 141,
-    "airport": 67,
-    "edu": 46
+    "afford": 139,
+    "airport": 68,
+    "edu": 43
    }
   },
   "ponte-vedra-beach": {
@@ -5647,16 +5637,16 @@
    ],
    "img": "img/c/ponte-vedra-beach.webp",
    "rk": {
-    "nightlife": 98,
-    "meet": 102,
+    "nightlife": 99,
+    "meet": 103,
     "quiet": 79,
-    "walk": 145,
+    "walk": 144,
     "water": 163,
-    "beach": 57,
+    "beach": 60,
     "dining": 94,
     "outdoors": 7,
-    "afford": 149,
-    "airport": 73,
+    "afford": 147,
+    "airport": 74,
     "edu": 12
    }
   },
@@ -5702,17 +5692,17 @@
    ],
    "img": "img/c/atlantic-aerial.webp",
    "rk": {
-    "nightlife": 75,
-    "meet": 60,
+    "nightlife": 77,
+    "meet": 59,
     "quiet": 95,
-    "walk": 39,
+    "walk": 41,
     "water": 144,
-    "beach": 21,
-    "dining": 47,
+    "beach": 22,
+    "dining": 46,
     "outdoors": 4,
-    "afford": 109,
-    "airport": 144,
-    "edu": 49
+    "afford": 108,
+    "airport": 141,
+    "edu": 47
    }
   },
   "daytona-beach-shores": {
@@ -5746,11 +5736,9 @@
     "Condo fees and assessments"
    ],
    "sim": [
-    "south-daytona",
+    "daytona",
     "mary-esther",
     "cape-canaveral",
-    "daytona",
-    "holly-hill",
     "flagler",
     "ormond-beach",
     "port-orange"
@@ -5758,15 +5746,15 @@
    "img": "img/c/daytona-beach-shores.webp",
    "rk": {
     "nightlife": 135,
-    "meet": 99,
+    "meet": 100,
     "quiet": 91,
-    "walk": 100,
-    "water": 122,
-    "beach": 70,
-    "dining": 83,
-    "outdoors": 107,
-    "afford": 27,
-    "airport": 92,
+    "walk": 101,
+    "water": 123,
+    "beach": 74,
+    "dining": 84,
+    "outdoors": 112,
+    "afford": 25,
+    "airport": 90,
     "edu": 111
    }
   },
@@ -5812,17 +5800,17 @@
    ],
    "img": "img/c/ormond-beach.webp",
    "rk": {
-    "nightlife": 96,
-    "meet": 62,
+    "nightlife": 97,
+    "meet": 61,
     "quiet": 123,
-    "walk": 122,
-    "water": 98,
-    "beach": 53,
-    "dining": 44,
-    "outdoors": 47,
-    "afford": 50,
-    "airport": 93,
-    "edu": 35
+    "walk": 121,
+    "water": 101,
+    "beach": 56,
+    "dining": 43,
+    "outdoors": 50,
+    "afford": 48,
+    "airport": 91,
+    "edu": 32
    }
   },
   "palm-coast": {
@@ -5867,17 +5855,17 @@
    ],
    "img": "img/c/palm-coast.webp",
    "rk": {
-    "nightlife": 113,
+    "nightlife": 114,
     "meet": 139,
     "quiet": 84,
-    "walk": 141,
-    "water": 21,
-    "beach": 83,
-    "dining": 127,
+    "walk": 140,
+    "water": 20,
+    "beach": 85,
+    "dining": 126,
     "outdoors": 19,
-    "afford": 41,
-    "airport": 145,
-    "edu": 85
+    "afford": 39,
+    "airport": 142,
+    "edu": 84
    }
   },
   "port-orange": {
@@ -5911,83 +5899,28 @@
     "Event traffic"
    ],
    "sim": [
-    "valparaiso",
+    "niceville",
     "edgewater",
     "rockledge",
     "fortpierce",
     "port-st-lucie",
     "bradenton",
     "palm-coast",
-    "south-daytona"
+    "daytona"
    ],
    "img": "img/c/port-orange.webp",
    "rk": {
-    "nightlife": 114,
-    "meet": 61,
+    "nightlife": 115,
+    "meet": 60,
     "quiet": 131,
-    "walk": 133,
-    "water": 99,
-    "beach": 128,
-    "dining": 63,
-    "outdoors": 120,
-    "afford": 43,
-    "airport": 90,
-    "edu": 102
-   }
-  },
-  "south-daytona": {
-   "s": "South Daytona",
-   "rg": "Daytona, New Smyrna and Flagler",
-   "pr": "$265K median",
-   "h": "Halifax Health Medical Center of Port Orange, about 3 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 4 mi</small>",
-   "a": "Daytona Beach (DAB), about 10 minutes",
-   "se": "Steady year round",
-   "w": "River flooding, event traffic",
-   "sc": {
-    "nightlife": 1,
-    "meet": 2,
-    "quiet": 3,
-    "walk": 2,
-    "water": 3,
-    "beach": 2,
-    "dining": 1,
-    "outdoors": 1,
-    "afford": 5,
-    "airport": 4,
-    "edu": 5
-   },
-   "d": "You walk the riverfront park at sunrise and are on the beach before your coffee gets cold.",
-   "pros": [
-    "Among the most affordable spots near the ocean",
-    "Close to everything in Daytona"
-   ],
-   "cons": [
-    "Small, with few restaurants",
-    "Not on the beach"
-   ],
-   "sim": [
-    "holly-hill",
-    "daytona-beach-shores",
-    "port-orange",
-    "palm-bay",
-    "ruskin",
-    "mary-esther",
-    "port-richey",
-    "port-st-lucie"
-   ],
-   "img": "img/c/south-daytona.webp",
-   "rk": {
-    "nightlife": 126,
-    "meet": 78,
-    "quiet": 103,
-    "walk": 135,
-    "water": 138,
-    "beach": 134,
-    "dining": 77,
-    "outdoors": 163,
-    "afford": 6,
-    "airport": 91,
-    "edu": 121
+    "walk": 132,
+    "water": 102,
+    "beach": 129,
+    "dining": 66,
+    "outdoors": 125,
+    "afford": 41,
+    "airport": 89,
+    "edu": 100
    }
   },
   "navarre": {
@@ -6032,17 +5965,17 @@
    ],
    "img": "img/c/navarre.webp",
    "rk": {
-    "nightlife": 59,
-    "meet": 105,
+    "nightlife": 60,
+    "meet": 106,
     "quiet": 121,
-    "walk": 143,
-    "water": 132,
-    "beach": 55,
-    "dining": 76,
-    "outdoors": 48,
-    "afford": 74,
-    "airport": 112,
-    "edu": 55
+    "walk": 142,
+    "water": 133,
+    "beach": 58,
+    "dining": 78,
+    "outdoors": 51,
+    "afford": 73,
+    "airport": 110,
+    "edu": 53
    }
   },
   "mary-esther": {
@@ -6078,7 +6011,7 @@
    "sim": [
     "freeport",
     "shalimar",
-    "valparaiso",
+    "niceville",
     "fortpierce",
     "flagler",
     "port-st-lucie",
@@ -6087,16 +6020,16 @@
    ],
    "img": "img/atlas/mary-esther-close.webp",
    "rk": {
-    "nightlife": 140,
+    "nightlife": 139,
     "meet": 117,
     "quiet": 89,
     "walk": 103,
     "water": 146,
-    "beach": 91,
-    "dining": 117,
-    "outdoors": 117,
-    "afford": 34,
-    "airport": 105,
+    "beach": 94,
+    "dining": 118,
+    "outdoors": 122,
+    "afford": 32,
+    "airport": 103,
     "edu": 126
    }
   },
@@ -6144,70 +6077,15 @@
    "rk": {
     "nightlife": 28,
     "meet": 46,
-    "quiet": 148,
-    "walk": 54,
-    "water": 106,
-    "beach": 58,
-    "dining": 39,
-    "outdoors": 94,
-    "afford": 31,
+    "quiet": 147,
+    "walk": 56,
+    "water": 108,
+    "beach": 61,
+    "dining": 38,
+    "outdoors": 97,
+    "afford": 29,
     "airport": 80,
     "edu": 112
-   }
-  },
-  "okaloosa-island": {
-   "s": "Okaloosa Island",
-   "rg": "Pensacola and the Emerald Coast",
-   "pr": "About $771K median for island sales (Momentum, Nov 2026)",
-   "h": "HCA Florida Fort Walton-Destin Hospital, about 5 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
-   "a": "Destin Fort Walton Beach (VPS), about 20 to 25 minutes",
-   "se": "Very busy March through summer, quiet in winter",
-   "w": "Barrier island hurricane exposure, Brooks Bridge construction, summer crowds, check land lease and condo association details",
-   "sc": {
-    "nightlife": 3,
-    "meet": 2,
-    "quiet": 2,
-    "walk": 3,
-    "water": 4,
-    "beach": 5,
-    "dining": 2,
-    "outdoors": 4,
-    "afford": 2,
-    "airport": 4,
-    "edu": 5
-   },
-   "d": "You fish the pier at sunrise, spend the day on the white sand, and end with live music and a sunset on the Boardwalk.",
-   "pros": [
-    "White sand Gulf beach out your door",
-    "Pier, Boardwalk and Gulfarium all close together"
-   ],
-   "cons": [
-    "Busy and touristy in season",
-    "Island storm exposure and higher insurance"
-   ],
-   "sim": [
-    "pensacola-beach",
-    "fort-myers-beach",
-    "destin",
-    "st-pete-beach",
-    "siesta-key",
-    "clearwaterbeach",
-    "ami",
-    "cocoa"
-   ],
-   "img": "img/c/okaloosa-island.webp",
-   "rk": {
-    "nightlife": 45,
-    "meet": 96,
-    "quiet": 139,
-    "walk": 72,
-    "water": 104,
-    "beach": 34,
-    "dining": 64,
-    "outdoors": 46,
-    "afford": 133,
-    "airport": 81,
-    "edu": 113
    }
   },
   "shalimar": {
@@ -6241,7 +6119,7 @@
     "Tiny town with few shops of its own"
    ],
    "sim": [
-    "valparaiso",
+    "niceville",
     "cortez",
     "rockledge",
     "port-orange",
@@ -6255,12 +6133,12 @@
     "nightlife": 157,
     "meet": 144,
     "quiet": 31,
-    "walk": 114,
-    "water": 110,
-    "beach": 123,
-    "dining": 123,
-    "outdoors": 154,
-    "afford": 100,
+    "walk": 113,
+    "water": 113,
+    "beach": 124,
+    "dining": 124,
+    "outdoors": 158,
+    "afford": 99,
     "airport": 79,
     "edu": 128
    }
@@ -6298,7 +6176,6 @@
    "sim": [
     "palm-harbor",
     "panama-city",
-    "valparaiso",
     "palm-city",
     "st-marks",
     "pensacola",
@@ -6307,72 +6184,17 @@
    ],
    "img": "img/c/niceville.webp",
    "rk": {
-    "nightlife": 64,
+    "nightlife": 65,
     "meet": 49,
     "quiet": 69,
-    "walk": 89,
-    "water": 117,
-    "beach": 113,
-    "dining": 45,
-    "outdoors": 67,
-    "afford": 81,
-    "airport": 75,
+    "walk": 91,
+    "water": 118,
+    "beach": 116,
+    "dining": 44,
+    "outdoors": 70,
+    "afford": 80,
+    "airport": 76,
     "edu": 17
-   }
-  },
-  "valparaiso": {
-   "s": "Valparaiso",
-   "rg": "Pensacola and the Emerald Coast",
-   "pr": "$435K median",
-   "h": "HCA Florida Twin Cities Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Fort Walton-Destin Hospital (Level II), about 9 mi</small>",
-   "a": "Destin Fort Walton Beach (VPS), about 10 minutes",
-   "se": "Steady all year, little tourist swing",
-   "w": "Low lying bayou streets can flood in storms, Eglin jet noise, very little room to grow so few homes come up for sale, Gulf beaches are about 30 minutes away",
-   "sc": {
-    "nightlife": 1,
-    "meet": 3,
-    "quiet": 4,
-    "walk": 2,
-    "water": 4,
-    "beach": 2,
-    "dining": 2,
-    "outdoors": 1,
-    "afford": 4,
-    "airport": 4,
-    "edu": 5
-   },
-   "d": "You launch the boat at Lincoln Park before breakfast, fish the bayou all morning and are back on the porch by the time the afternoon storms roll in.",
-   "pros": [
-    "Quiet bayou streets and easy boat launches",
-    "Minutes from the airport"
-   ],
-   "cons": [
-    "Very little dining or nightlife in town",
-    "Few homes come up for sale"
-   ],
-   "sim": [
-    "shalimar",
-    "port-orange",
-    "edgewater",
-    "rockledge",
-    "cortez",
-    "mary-esther",
-    "niceville",
-    "freeport"
-   ],
-   "img": "img/atlas/valparaiso-close.webp",
-   "rk": {
-    "nightlife": 136,
-    "meet": 115,
-    "quiet": 49,
-    "walk": 101,
-    "water": 116,
-    "beach": 121,
-    "dining": 89,
-    "outdoors": 153,
-    "afford": 55,
-    "airport": 78,
-    "edu": 18
    }
   },
   "miramar-beach": {
@@ -6413,20 +6235,20 @@
     "boca-raton",
     "naples",
     "pensacola-beach",
-    "okaloosa-island"
+    "fort-walton-beach"
    ],
    "img": "img/c/miramar-beach.webp",
    "rk": {
-    "nightlife": 36,
-    "meet": 67,
-    "quiet": 143,
-    "walk": 62,
+    "nightlife": 37,
+    "meet": 66,
+    "quiet": 142,
+    "walk": 65,
     "water": 153,
-    "beach": 29,
+    "beach": 30,
     "dining": 101,
-    "outdoors": 71,
-    "afford": 138,
-    "airport": 107,
+    "outdoors": 74,
+    "afford": 136,
+    "airport": 105,
     "edu": 15
    }
   },
@@ -6464,7 +6286,7 @@
     "port-st-lucie",
     "mary-esther",
     "palm-coast",
-    "valparaiso",
+    "niceville",
     "edgewater",
     "palm-bay",
     "port-orange",
@@ -6477,11 +6299,11 @@
     "quiet": 92,
     "walk": 154,
     "water": 162,
-    "beach": 120,
-    "dining": 153,
-    "outdoors": 113,
-    "afford": 51,
-    "airport": 123,
+    "beach": 122,
+    "dining": 152,
+    "outdoors": 118,
+    "afford": 49,
+    "airport": 121,
     "edu": 6
    }
   },
@@ -6530,13 +6352,13 @@
     "nightlife": 154,
     "meet": 141,
     "quiet": 13,
-    "walk": 75,
-    "water": 131,
-    "beach": 81,
-    "dining": 135,
-    "outdoors": 66,
-    "afford": 103,
-    "airport": 149,
+    "walk": 76,
+    "water": 132,
+    "beach": 83,
+    "dining": 134,
+    "outdoors": 69,
+    "afford": 102,
+    "airport": 148,
     "edu": 145
    }
   },
@@ -6586,11 +6408,11 @@
     "meet": 164,
     "quiet": 1,
     "walk": 167,
-    "water": 72,
-    "beach": 125,
+    "water": 75,
+    "beach": 126,
     "dining": 161,
-    "outdoors": 132,
-    "afford": 48,
+    "outdoors": 137,
+    "afford": 46,
     "airport": 164,
     "edu": 154
    }
@@ -6640,12 +6462,12 @@
     "nightlife": 166,
     "meet": 161,
     "quiet": 2,
-    "walk": 117,
-    "water": 92,
-    "beach": 124,
+    "walk": 116,
+    "water": 95,
+    "beach": 125,
     "dining": 165,
-    "outdoors": 131,
-    "afford": 18,
+    "outdoors": 136,
+    "afford": 16,
     "airport": 166,
     "edu": 122
    }
@@ -6696,11 +6518,11 @@
     "meet": 167,
     "quiet": 4,
     "walk": 165,
-    "water": 83,
+    "water": 86,
     "beach": 166,
-    "dining": 158,
-    "outdoors": 88,
-    "afford": 20,
+    "dining": 157,
+    "outdoors": 91,
+    "afford": 18,
     "airport": 165,
     "edu": 123
    }
@@ -6750,12 +6572,12 @@
     "nightlife": 159,
     "meet": 160,
     "quiet": 9,
-    "walk": 115,
-    "water": 95,
+    "walk": 114,
+    "water": 98,
     "beach": 162,
-    "dining": 156,
-    "outdoors": 86,
-    "afford": 19,
+    "dining": 155,
+    "outdoors": 89,
+    "afford": 17,
     "airport": 156,
     "edu": 136
    }
@@ -6802,15 +6624,15 @@
    ],
    "img": "img/atlas/inglis-close.webp",
    "rk": {
-    "nightlife": 149,
+    "nightlife": 150,
     "meet": 158,
     "quiet": 17,
     "walk": 160,
-    "water": 135,
+    "water": 136,
     "beach": 157,
     "dining": 160,
-    "outdoors": 134,
-    "afford": 11,
+    "outdoors": 139,
+    "afford": 9,
     "airport": 155,
     "edu": 137
    }
@@ -6857,16 +6679,16 @@
    ],
    "img": "img/c/hernando-beach.webp",
    "rk": {
-    "nightlife": 83,
+    "nightlife": 85,
     "meet": 156,
-    "quiet": 38,
+    "quiet": 37,
     "walk": 158,
-    "water": 58,
-    "beach": 122,
-    "dining": 147,
-    "outdoors": 130,
-    "afford": 94,
-    "airport": 99,
+    "water": 60,
+    "beach": 123,
+    "dining": 146,
+    "outdoors": 135,
+    "afford": 93,
+    "airport": 97,
     "edu": 160
    }
   },
@@ -6916,13 +6738,13 @@
     "meet": 153,
     "quiet": 33,
     "walk": 161,
-    "water": 134,
+    "water": 135,
     "beach": 158,
-    "dining": 116,
-    "outdoors": 57,
-    "afford": 38,
-    "airport": 102,
-    "edu": 117
+    "dining": 117,
+    "outdoors": 60,
+    "afford": 36,
+    "airport": 100,
+    "edu": 116
    }
   },
   "aripeka": {
@@ -6974,9 +6796,9 @@
     "water": 145,
     "beach": 165,
     "dining": 163,
-    "outdoors": 91,
-    "afford": 95,
-    "airport": 96,
+    "outdoors": 94,
+    "afford": 94,
+    "airport": 94,
     "edu": 150
    }
   },
@@ -7012,7 +6834,7 @@
    ],
    "sim": [
     "port-richey",
-    "holly-hill",
+    "daytona",
     "new-port-richey",
     "bradenton",
     "port-charlotte",
@@ -7023,15 +6845,15 @@
    "img": "img/c/hudson.webp",
    "rk": {
     "nightlife": 69,
-    "meet": 88,
-    "quiet": 104,
-    "walk": 94,
-    "water": 61,
-    "beach": 115,
+    "meet": 90,
+    "quiet": 103,
+    "walk": 95,
+    "water": 63,
+    "beach": 117,
     "dining": 103,
-    "outdoors": 151,
-    "afford": 10,
-    "airport": 87,
+    "outdoors": 156,
+    "afford": 8,
+    "airport": 86,
     "edu": 151
    }
   },
@@ -7077,17 +6899,17 @@
    ],
    "img": "img/c/port-richey.webp",
    "rk": {
-    "nightlife": 80,
+    "nightlife": 82,
     "meet": 129,
     "quiet": 87,
     "walk": 107,
-    "water": 47,
+    "water": 48,
     "beach": 155,
     "dining": 106,
-    "outdoors": 158,
-    "afford": 4,
-    "airport": 54,
-    "edu": 116
+    "outdoors": 162,
+    "afford": 3,
+    "airport": 55,
+    "edu": 115
    }
   },
   "holiday": {
@@ -7132,16 +6954,16 @@
    ],
    "img": "img/c/holiday.webp",
    "rk": {
-    "nightlife": 122,
+    "nightlife": 123,
     "meet": 125,
     "quiet": 112,
-    "walk": 150,
-    "water": 108,
+    "walk": 149,
+    "water": 110,
     "beach": 147,
-    "dining": 145,
-    "outdoors": 133,
+    "dining": 144,
+    "outdoors": 138,
     "afford": 1,
-    "airport": 46,
+    "airport": 48,
     "edu": 124
    }
   },
@@ -7187,17 +7009,17 @@
    ],
    "img": "img/atlas/palm-harbor-close.webp",
    "rk": {
-    "nightlife": 55,
+    "nightlife": 56,
     "meet": 42,
     "quiet": 83,
-    "walk": 50,
-    "water": 120,
-    "beach": 84,
-    "dining": 49,
-    "outdoors": 99,
-    "afford": 61,
-    "airport": 35,
-    "edu": 20
+    "walk": 52,
+    "water": 121,
+    "beach": 86,
+    "dining": 48,
+    "outdoors": 104,
+    "afford": 59,
+    "airport": 38,
+    "edu": 19
    }
   },
   "oldsmar": {
@@ -7236,23 +7058,23 @@
     "safety-harbor",
     "new-port-richey",
     "shalimar",
-    "valparaiso",
+    "niceville",
     "bradenton",
     "port-orange"
    ],
    "img": "img/atlas/oldsmar-close.webp",
    "rk": {
-    "nightlife": 66,
-    "meet": 79,
+    "nightlife": 67,
+    "meet": 77,
     "quiet": 67,
-    "walk": 91,
+    "walk": 93,
     "water": 156,
     "beach": 152,
-    "dining": 84,
-    "outdoors": 122,
-    "afford": 60,
+    "dining": 85,
+    "outdoors": 127,
+    "afford": 58,
     "airport": 9,
-    "edu": 57
+    "edu": 55
    }
   },
   "belleair-beach": {
@@ -7297,17 +7119,17 @@
    ],
    "img": "img/atlas/belleair-beach-close.webp",
    "rk": {
-    "nightlife": 85,
+    "nightlife": 87,
     "meet": 151,
     "quiet": 18,
     "walk": 109,
-    "water": 50,
-    "beach": 76,
-    "dining": 143,
-    "outdoors": 147,
-    "afford": 144,
-    "airport": 39,
-    "edu": 78
+    "water": 51,
+    "beach": 80,
+    "dining": 142,
+    "outdoors": 152,
+    "afford": 142,
+    "airport": 42,
+    "edu": 76
    }
   },
   "tierra-verde": {
@@ -7352,17 +7174,17 @@
    ],
    "img": "img/c/tierra-verde.webp",
    "rk": {
-    "nightlife": 78,
+    "nightlife": 80,
     "meet": 132,
-    "quiet": 45,
+    "quiet": 44,
     "walk": 105,
     "water": 11,
-    "beach": 13,
+    "beach": 14,
     "dining": 109,
-    "outdoors": 84,
-    "afford": 143,
-    "airport": 52,
-    "edu": 90
+    "outdoors": 87,
+    "afford": 141,
+    "airport": 53,
+    "edu": 88
    }
   },
   "indian-shores": {
@@ -7399,7 +7221,6 @@
     "redington-shores",
     "belleair-beach",
     "indian-rocks-beach",
-    "north-redington-beach",
     "bonita-springs",
     "tierra-verde",
     "longboat",
@@ -7407,17 +7228,17 @@
    ],
    "img": "img/atlas/indian-shores-close.webp",
    "rk": {
-    "nightlife": 88,
+    "nightlife": 89,
     "meet": 126,
     "quiet": 34,
-    "walk": 111,
-    "water": 119,
-    "beach": 80,
-    "dining": 79,
-    "outdoors": 148,
-    "afford": 126,
-    "airport": 49,
-    "edu": 69
+    "walk": 110,
+    "water": 120,
+    "beach": 82,
+    "dining": 80,
+    "outdoors": 153,
+    "afford": 125,
+    "airport": 50,
+    "edu": 67
    }
   },
   "redington-shores": {
@@ -7454,7 +7275,6 @@
     "indian-shores",
     "indian-rocks-beach",
     "palm-harbor",
-    "north-redington-beach",
     "ami",
     "bonita-springs",
     "gulf-breeze",
@@ -7462,127 +7282,17 @@
    ],
    "img": "img/c/redington-shores.webp",
    "rk": {
-    "nightlife": 84,
-    "meet": 107,
-    "quiet": 37,
-    "walk": 71,
-    "water": 23,
-    "beach": 75,
-    "dining": 70,
-    "outdoors": 146,
-    "afford": 121,
-    "airport": 47,
-    "edu": 24
-   }
-  },
-  "north-redington-beach": {
-   "s": "North Redington Beach",
-   "rg": "St. Pete and the Clearwater Beaches",
-   "pr": "$886K median",
-   "h": "HCA Florida Largo West Hospital, about 6 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 12 mi</small>",
-   "a": "St. Pete Clearwater (PIE), about 25 minutes; Tampa (TPA), about 40 minutes",
-   "se": "Busy late winter through spring and on summer weekends",
-   "w": "2024 Helene and Milton flooding; low lying bay side streets, storm surge risk, high flood insurance and rebuild costs",
-   "sc": {
-    "nightlife": 2,
-    "meet": 2,
-    "quiet": 4,
-    "walk": 3,
-    "water": 3,
-    "beach": 4,
-    "dining": 2,
-    "outdoors": 1,
-    "afford": 2,
-    "airport": 4,
-    "edu": 5
-   },
-   "d": "You walk out to the Gulf for a morning swim, play tennis at a town park, and watch the sunset from a beach bar at one of the resorts.",
-   "pros": [
-    "Calm, well kept streets close to the beach",
-    "Resort beach bars and restaurants within walking distance"
-   ],
-   "cons": [
-    "Highest prices in this stretch of beach towns",
-    "Very few everyday shops in town"
-   ],
-   "sim": [
-    "indian-rocks-beach",
-    "treasure-island",
-    "indian-shores",
-    "redington-shores",
-    "redington-beach",
-    "indialantic",
-    "belleair-beach",
-    "madeira-beach"
-   ],
-   "img": "img/atlas/north-redington-beach-close.webp",
-   "rk": {
     "nightlife": 86,
-    "meet": 121,
+    "meet": 108,
     "quiet": 36,
-    "walk": 73,
-    "water": 30,
-    "beach": 77,
-    "dining": 124,
-    "outdoors": 160,
-    "afford": 148,
-    "airport": 48,
-    "edu": 30
-   }
-  },
-  "redington-beach": {
-   "s": "Redington Beach",
-   "rg": "St. Pete and the Clearwater Beaches",
-   "pr": "$722K median",
-   "h": "HCA Florida St. Petersburg Hospital, about 5 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 11 mi</small>",
-   "a": "St. Pete Clearwater (PIE), about 25 minutes; Tampa (TPA), about 40 minutes",
-   "se": "Steady most of the year, a bit busier in spring",
-   "w": "Many homes flooded by Helene and Milton in 2024, some still unpermitted or vacant; storm surge risk, high flood insurance",
-   "sc": {
-    "nightlife": 1,
-    "meet": 2,
-    "quiet": 5,
-    "walk": 2,
-    "water": 3,
-    "beach": 4,
-    "dining": 1,
-    "outdoors": 1,
-    "afford": 2,
-    "airport": 4,
-    "edu": 5
-   },
-   "d": "You bike a few blocks to the beach in the morning, wave to neighbors rebuilding down the street, and grill out on the back porch as the light fades over the bay.",
-   "pros": [
-    "Very quiet residential streets",
-    "Gulf beach steps away"
-   ],
-   "cons": [
-    "Almost no restaurants or shops in town",
-    "Uneven storm recovery block to block"
-   ],
-   "sim": [
-    "indian-rocks-beach",
-    "highland-beach",
-    "north-redington-beach",
-    "belleair-beach",
-    "indian-shores",
-    "indian-river-shores",
-    "indialantic",
-    "indian-harbour-beach"
-   ],
-   "img": "img/atlas/redington-beach-close.webp",
-   "rk": {
-    "nightlife": 150,
-    "meet": 120,
-    "quiet": 16,
-    "walk": 110,
-    "water": 18,
-    "beach": 78,
-    "dining": 125,
-    "outdoors": 161,
-    "afford": 134,
-    "airport": 44,
-    "edu": 31
+    "walk": 74,
+    "water": 22,
+    "beach": 79,
+    "dining": 72,
+    "outdoors": 151,
+    "afford": 120,
+    "airport": 49,
+    "edu": 23
    }
   },
   "gibsonton": {
@@ -7627,16 +7337,16 @@
    ],
    "img": "img/atlas/gibsonton-close.webp",
    "rk": {
-    "nightlife": 62,
+    "nightlife": 63,
     "meet": 143,
-    "quiet": 109,
-    "walk": 151,
+    "quiet": 107,
+    "walk": 150,
     "water": 157,
     "beach": 149,
-    "dining": 150,
+    "dining": 149,
     "outdoors": 167,
-    "afford": 75,
-    "airport": 31,
+    "afford": 74,
+    "airport": 33,
     "edu": 138
    }
   },
@@ -7686,13 +7396,13 @@
     "meet": 32,
     "quiet": 167,
     "walk": 30,
-    "water": 29,
-    "beach": 103,
+    "water": 31,
+    "beach": 106,
     "dining": 3,
-    "outdoors": 118,
-    "afford": 117,
+    "outdoors": 123,
+    "afford": 116,
     "airport": 1,
-    "edu": 22
+    "edu": 21
    }
   },
   "jacksonville": {
@@ -7740,13 +7450,13 @@
     "nightlife": 20,
     "meet": 56,
     "quiet": 138,
-    "walk": 80,
-    "water": 69,
-    "beach": 102,
+    "walk": 82,
+    "water": 72,
+    "beach": 105,
     "dining": 14,
-    "outdoors": 112,
-    "afford": 8,
-    "airport": 55,
+    "outdoors": 117,
+    "afford": 6,
+    "airport": 56,
     "edu": 125
    }
   },
@@ -7792,17 +7502,17 @@
    ],
    "img": "img/atlas/indian-river-shores-close.webp",
    "rk": {
-    "nightlife": 138,
+    "nightlife": 137,
     "meet": 142,
     "quiet": 25,
     "walk": 102,
-    "water": 136,
-    "beach": 71,
-    "dining": 148,
-    "outdoors": 74,
+    "water": 137,
+    "beach": 75,
+    "dining": 147,
+    "outdoors": 77,
     "afford": 163,
-    "airport": 143,
-    "edu": 64
+    "airport": 140,
+    "edu": 62
    }
   },
   "hutchinson-island": {
@@ -7847,17 +7557,17 @@
    ],
    "img": "img/c/hutchinson-island.webp",
    "rk": {
-    "nightlife": 77,
+    "nightlife": 79,
     "meet": 138,
-    "quiet": 50,
+    "quiet": 48,
     "walk": 155,
-    "water": 86,
-    "beach": 27,
-    "dining": 140,
+    "water": 89,
+    "beach": 28,
+    "dining": 139,
     "outdoors": 24,
-    "afford": 102,
-    "airport": 126,
-    "edu": 59
+    "afford": 101,
+    "airport": 124,
+    "edu": 57
    }
   },
   "sewalls-point": {
@@ -7902,17 +7612,17 @@
    ],
    "img": "img/atlas/sewalls-point-close.webp",
    "rk": {
-    "nightlife": 148,
+    "nightlife": 149,
     "meet": 148,
     "quiet": 19,
     "walk": 108,
     "water": 5,
-    "beach": 92,
-    "dining": 134,
-    "outdoors": 135,
+    "beach": 95,
+    "dining": 133,
+    "outdoors": 140,
     "afford": 165,
-    "airport": 118,
-    "edu": 99
+    "airport": 116,
+    "edu": 97
    }
   },
   "palm-city": {
@@ -7957,17 +7667,17 @@
    ],
    "img": "img/atlas/palm-city-close.webp",
    "rk": {
-    "nightlife": 61,
+    "nightlife": 62,
     "meet": 134,
     "quiet": 77,
-    "walk": 149,
-    "water": 66,
-    "beach": 111,
-    "dining": 66,
-    "outdoors": 150,
-    "afford": 106,
-    "airport": 116,
-    "edu": 33
+    "walk": 148,
+    "water": 68,
+    "beach": 114,
+    "dining": 68,
+    "outdoors": 155,
+    "afford": 105,
+    "airport": 114,
+    "edu": 30
    }
   },
   "port-salerno": {
@@ -8012,16 +7722,16 @@
    ],
    "img": "img/atlas/port-salerno-close.webp",
    "rk": {
-    "nightlife": 34,
-    "meet": 84,
+    "nightlife": 35,
+    "meet": 86,
     "quiet": 99,
-    "walk": 59,
-    "water": 20,
-    "beach": 117,
-    "dining": 67,
-    "outdoors": 108,
-    "afford": 69,
-    "airport": 109,
+    "walk": 61,
+    "water": 19,
+    "beach": 119,
+    "dining": 69,
+    "outdoors": 113,
+    "afford": 67,
+    "airport": 107,
     "edu": 144
    }
   },
@@ -8067,16 +7777,16 @@
    ],
    "img": "img/c/hobe-sound.webp",
    "rk": {
-    "nightlife": 67,
-    "meet": 92,
+    "nightlife": 68,
+    "meet": 94,
     "quiet": 65,
-    "walk": 92,
+    "walk": 94,
     "water": 151,
-    "beach": 61,
+    "beach": 64,
     "dining": 114,
-    "outdoors": 41,
-    "afford": 98,
-    "airport": 101,
+    "outdoors": 45,
+    "afford": 97,
+    "airport": 99,
     "edu": 130
    }
   },
@@ -8123,16 +7833,16 @@
    "img": "img/atlas/tequesta-close.webp",
    "rk": {
     "nightlife": 133,
-    "meet": 93,
-    "quiet": 52,
-    "walk": 99,
-    "water": 44,
-    "beach": 90,
+    "meet": 95,
+    "quiet": 50,
+    "walk": 100,
+    "water": 45,
+    "beach": 93,
     "dining": 108,
-    "outdoors": 42,
-    "afford": 125,
-    "airport": 62,
-    "edu": 40
+    "outdoors": 46,
+    "afford": 124,
+    "airport": 63,
+    "edu": 37
    }
   },
   "juno-beach": {
@@ -8177,17 +7887,17 @@
    ],
    "img": "img/c/juno-beach.webp",
    "rk": {
-    "nightlife": 141,
-    "meet": 100,
-    "quiet": 46,
+    "nightlife": 142,
+    "meet": 101,
+    "quiet": 45,
     "walk": 104,
-    "water": 111,
-    "beach": 30,
+    "water": 114,
+    "beach": 31,
     "dining": 102,
     "outdoors": 25,
-    "afford": 142,
-    "airport": 30,
-    "edu": 41
+    "afford": 140,
+    "airport": 32,
+    "edu": 38
    }
   },
   "lake-park": {
@@ -8232,17 +7942,17 @@
    ],
    "img": "img/atlas/lake-park-close.webp",
    "rk": {
-    "nightlife": 74,
-    "meet": 91,
+    "nightlife": 76,
+    "meet": 93,
     "quiet": 97,
-    "walk": 61,
-    "water": 33,
-    "beach": 118,
+    "walk": 64,
+    "water": 34,
+    "beach": 120,
     "dining": 105,
-    "outdoors": 152,
-    "afford": 90,
-    "airport": 20,
-    "edu": 72
+    "outdoors": 157,
+    "afford": 89,
+    "airport": 22,
+    "edu": 70
    }
   },
   "palm-beach-shores": {
@@ -8287,16 +7997,16 @@
    ],
    "img": "img/c/palm-beach-shores.webp",
    "rk": {
-    "nightlife": 87,
-    "meet": 80,
+    "nightlife": 88,
+    "meet": 82,
     "quiet": 35,
-    "walk": 34,
-    "water": 38,
-    "beach": 79,
+    "walk": 35,
+    "water": 39,
+    "beach": 81,
     "dining": 91,
-    "outdoors": 98,
-    "afford": 146,
-    "airport": 19,
+    "outdoors": 103,
+    "afford": 144,
+    "airport": 21,
     "edu": 103
    }
   },
@@ -8346,12 +8056,12 @@
     "meet": 22,
     "quiet": 122,
     "walk": 31,
-    "water": 109,
-    "beach": 54,
+    "water": 112,
+    "beach": 57,
     "dining": 27,
-    "outdoors": 80,
-    "afford": 83,
-    "airport": 15,
+    "outdoors": 83,
+    "afford": 82,
+    "airport": 17,
     "edu": 143
    }
   },
@@ -8398,15 +8108,15 @@
    "img": "img/c/lantana.webp",
    "rk": {
     "nightlife": 71,
-    "meet": 74,
+    "meet": 73,
     "quiet": 61,
-    "walk": 95,
-    "water": 93,
-    "beach": 89,
+    "walk": 96,
+    "water": 96,
+    "beach": 92,
     "dining": 110,
-    "outdoors": 141,
-    "afford": 59,
-    "airport": 18,
+    "outdoors": 146,
+    "afford": 57,
+    "airport": 20,
     "edu": 162
    }
   },
@@ -8452,16 +8162,16 @@
    ],
    "img": "img/c/boynton-beach.webp",
    "rk": {
-    "nightlife": 54,
-    "meet": 77,
+    "nightlife": 55,
+    "meet": 76,
     "quiet": 132,
-    "walk": 81,
-    "water": 51,
-    "beach": 52,
+    "walk": 83,
+    "water": 52,
+    "beach": 55,
     "dining": 90,
-    "outdoors": 101,
-    "afford": 37,
-    "airport": 24,
+    "outdoors": 106,
+    "afford": 35,
+    "airport": 26,
     "edu": 141
    }
   },
@@ -8507,17 +8217,17 @@
    ],
    "img": "img/c/vilano-beach.webp",
    "rk": {
-    "nightlife": 82,
-    "meet": 112,
-    "quiet": 39,
-    "walk": 70,
-    "water": 27,
-    "beach": 74,
+    "nightlife": 84,
+    "meet": 113,
+    "quiet": 38,
+    "walk": 73,
+    "water": 29,
+    "beach": 78,
     "dining": 28,
     "outdoors": 27,
-    "afford": 130,
-    "airport": 137,
-    "edu": 50
+    "afford": 129,
+    "airport": 134,
+    "edu": 48
    }
   },
   "crescent-beach": {
@@ -8565,14 +8275,14 @@
     "nightlife": 155,
     "meet": 146,
     "quiet": 12,
-    "walk": 113,
+    "walk": 112,
     "water": 141,
-    "beach": 36,
-    "dining": 122,
+    "beach": 37,
+    "dining": 123,
     "outdoors": 23,
-    "afford": 82,
-    "airport": 150,
-    "edu": 83
+    "afford": 81,
+    "airport": 149,
+    "edu": 82
    }
   },
   "beverly-beach": {
@@ -8620,14 +8330,14 @@
     "nightlife": 160,
     "meet": 157,
     "quiet": 8,
-    "walk": 116,
-    "water": 57,
-    "beach": 93,
-    "dining": 142,
-    "outdoors": 106,
-    "afford": 113,
-    "airport": 141,
-    "edu": 87
+    "walk": 115,
+    "water": 58,
+    "beach": 96,
+    "dining": 141,
+    "outdoors": 111,
+    "afford": 112,
+    "airport": 138,
+    "edu": 86
    }
   },
   "ormond-by-the-sea": {
@@ -8673,71 +8383,16 @@
    "img": "img/c/ormond-by-the-sea.webp",
    "rk": {
     "nightlife": 131,
-    "meet": 119,
-    "quiet": 56,
-    "walk": 98,
-    "water": 52,
-    "beach": 68,
-    "dining": 132,
-    "outdoors": 105,
-    "afford": 39,
-    "airport": 134,
-    "edu": 36
-   }
-  },
-  "holly-hill": {
-   "s": "Holly Hill",
-   "rg": "Daytona, New Smyrna and Flagler",
-   "pr": "$247K median",
-   "h": "Halifax Health Medical Center of Daytona Beach, about 3 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
-   "a": "Daytona Beach (DAB), about 15 minutes",
-   "se": "Steady year round, busier during Daytona event weeks",
-   "w": "Hurricane and river flooding in low areas, event week traffic, an older housing stock in places",
-   "sc": {
-    "nightlife": 2,
-    "meet": 3,
-    "quiet": 3,
-    "walk": 2,
-    "water": 3,
-    "beach": 2,
-    "dining": 2,
-    "outdoors": 1,
-    "afford": 5,
-    "airport": 3,
-    "edu": 5
-   },
-   "d": "You grab coffee at Marina Grande, walk Riverside Drive along the Halifax, and cross the bridge for an afternoon on the beach.",
-   "pros": [
-    "Some of the lowest home prices near the beach",
-    "Riverfront living with Daytona and Ormond Beach on either side"
-   ],
-   "cons": [
-    "No beach in town, so you cross the river",
-    "Mostly a working city, with limited dining and nightlife of its own"
-   ],
-   "sim": [
-    "port-st-lucie",
-    "south-daytona",
-    "hudson",
-    "flagler",
-    "port-orange",
-    "fortpierce",
-    "palm-bay",
-    "new-port-richey"
-   ],
-   "img": "img/atlas/holly-hill-close.webp",
-   "rk": {
-    "nightlife": 68,
-    "meet": 57,
-    "quiet": 105,
-    "walk": 93,
-    "water": 112,
-    "beach": 114,
-    "dining": 34,
-    "outdoors": 165,
-    "afford": 3,
-    "airport": 128,
-    "edu": 88
+    "meet": 121,
+    "quiet": 54,
+    "walk": 99,
+    "water": 53,
+    "beach": 72,
+    "dining": 131,
+    "outdoors": 110,
+    "afford": 37,
+    "airport": 131,
+    "edu": 33
    }
   },
   "ponce-inlet": {
@@ -8782,17 +8437,17 @@
    ],
    "img": "img/c/ponce-inlet.webp",
    "rk": {
-    "nightlife": 79,
+    "nightlife": 81,
     "meet": 135,
-    "quiet": 42,
+    "quiet": 41,
     "walk": 106,
-    "water": 42,
-    "beach": 32,
+    "water": 43,
+    "beach": 34,
     "dining": 97,
     "outdoors": 9,
-    "afford": 99,
-    "airport": 132,
-    "edu": 79
+    "afford": 98,
+    "airport": 129,
+    "edu": 77
    }
   },
   "edgewater": {
@@ -8829,7 +8484,7 @@
     "palm-coast",
     "port-orange",
     "sebastian",
-    "valparaiso",
+    "niceville",
     "beverly-beach",
     "titusville",
     "rockledge",
@@ -8837,17 +8492,17 @@
    ],
    "img": "img/atlas/edgewater-close.webp",
    "rk": {
-    "nightlife": 123,
+    "nightlife": 124,
     "meet": 123,
     "quiet": 74,
-    "walk": 134,
-    "water": 46,
-    "beach": 133,
-    "dining": 115,
-    "outdoors": 90,
-    "afford": 30,
-    "airport": 111,
-    "edu": 71
+    "walk": 133,
+    "water": 47,
+    "beach": 134,
+    "dining": 116,
+    "outdoors": 93,
+    "afford": 28,
+    "airport": 109,
+    "edu": 69
    }
   },
   "cape-canaveral": {
@@ -8893,15 +8548,15 @@
    "img": "img/c/cape-canaveral.webp",
    "rk": {
     "nightlife": 72,
-    "meet": 90,
+    "meet": 92,
     "quiet": 98,
-    "walk": 60,
-    "water": 102,
-    "beach": 65,
+    "walk": 62,
+    "water": 105,
+    "beach": 68,
     "dining": 100,
-    "outdoors": 52,
-    "afford": 29,
-    "airport": 85,
+    "outdoors": 55,
+    "afford": 27,
+    "airport": 84,
     "edu": 9
    }
   },
@@ -8947,17 +8602,17 @@
    ],
    "img": "img/atlas/merritt-island-close.webp",
    "rk": {
-    "nightlife": 117,
-    "meet": 106,
+    "nightlife": 118,
+    "meet": 107,
     "quiet": 81,
-    "walk": 144,
-    "water": 41,
-    "beach": 107,
-    "dining": 87,
-    "outdoors": 55,
-    "afford": 72,
-    "airport": 72,
-    "edu": 37
+    "walk": 143,
+    "water": 42,
+    "beach": 110,
+    "dining": 88,
+    "outdoors": 58,
+    "afford": 71,
+    "airport": 73,
+    "edu": 34
    }
   },
   "cocoa-village": {
@@ -9004,15 +8659,15 @@
    "rk": {
     "nightlife": 30,
     "meet": 47,
-    "quiet": 110,
+    "quiet": 108,
     "walk": 32,
     "water": 152,
-    "beach": 112,
-    "dining": 50,
-    "outdoors": 139,
-    "afford": 26,
-    "airport": 66,
-    "edu": 84
+    "beach": 115,
+    "dining": 49,
+    "outdoors": 144,
+    "afford": 24,
+    "airport": 67,
+    "edu": 83
    }
   },
   "rockledge": {
@@ -9048,7 +8703,7 @@
    "sim": [
     "port-orange",
     "shalimar",
-    "valparaiso",
+    "niceville",
     "edgewater",
     "oldsmar",
     "flagler",
@@ -9057,17 +8712,17 @@
    ],
    "img": "img/c/rockledge.webp",
    "rk": {
-    "nightlife": 120,
+    "nightlife": 121,
     "meet": 118,
     "quiet": 78,
-    "walk": 87,
-    "water": 137,
-    "beach": 109,
-    "dining": 130,
-    "outdoors": 149,
-    "afford": 71,
-    "airport": 69,
-    "edu": 91
+    "walk": 89,
+    "water": 138,
+    "beach": 112,
+    "dining": 129,
+    "outdoors": 154,
+    "afford": 69,
+    "airport": 70,
+    "edu": 89
    }
   },
   "indian-harbour-beach": {
@@ -9115,13 +8770,13 @@
     "nightlife": 129,
     "meet": 48,
     "quiet": 57,
-    "walk": 97,
+    "walk": 98,
     "water": 6,
-    "beach": 67,
-    "dining": 51,
-    "outdoors": 53,
-    "afford": 85,
-    "airport": 122,
+    "beach": 71,
+    "dining": 50,
+    "outdoors": 56,
+    "afford": 84,
+    "airport": 120,
     "edu": 11
    }
   },
@@ -9170,14 +8825,344 @@
     "nightlife": 23,
     "meet": 53,
     "quiet": 133,
-    "walk": 49,
-    "water": 91,
-    "beach": 105,
-    "dining": 42,
-    "outdoors": 136,
-    "afford": 42,
-    "airport": 125,
-    "edu": 94
+    "walk": 51,
+    "water": 94,
+    "beach": 108,
+    "dining": 41,
+    "outdoors": 141,
+    "afford": 40,
+    "airport": 123,
+    "edu": 92
+   }
+  },
+  "marathon": {
+   "s": "Marathon",
+   "rg": "The Florida Keys",
+   "pr": "$715K median",
+   "h": "Fishermen's Community Hospital, in town",
+   "a": "Key West (EYW), about 1 hour",
+   "se": "Busy winters",
+   "w": "A long evacuation drive, high insurance",
+   "sc": {
+    "nightlife": 2,
+    "meet": 3,
+    "quiet": 3,
+    "walk": 2,
+    "water": 5,
+    "beach": 3,
+    "dining": 3,
+    "outdoors": 4,
+    "afford": 2,
+    "airport": 2,
+    "edu": 5
+   },
+   "d": "You're out on the reef or the flats by morning and swimming at Sombrero Beach by afternoon.",
+   "pros": [
+    "Water life every day",
+    "A hospital in town"
+   ],
+   "cons": [
+    "Expensive insurance",
+    "Far from a major airport"
+   ],
+   "sim": [
+    "key-largo",
+    "islamorada",
+    "vilano-beach",
+    "navarre",
+    "tequesta",
+    "hobe-sound",
+    "marco-island",
+    "ponce-inlet"
+   ],
+   "img": "img/c/marathon.webp",
+   "rk": {
+    "nightlife": 73,
+    "meet": 78,
+    "quiet": 110,
+    "walk": 136,
+    "water": 25,
+    "beach": 91,
+    "dining": 60,
+    "outdoors": 36,
+    "afford": 133,
+    "airport": 151,
+    "edu": 118
+   }
+  },
+  "big-pine-key": {
+   "s": "Big Pine Key",
+   "rg": "The Florida Keys",
+   "pr": "$740K median",
+   "h": "Fishermen's Community Hospital in Marathon, about 24 mi<small class=\"cmp-sub\">Lower Keys Medical Center in Key West is about 36 mi</small>",
+   "a": "Key West (EYW), about 30 to 40 minutes",
+   "se": "Busy winters",
+   "w": "A long evacuation drive, high insurance",
+   "sc": {
+    "nightlife": 1,
+    "meet": 2,
+    "quiet": 5,
+    "walk": 1,
+    "water": 5,
+    "beach": 4,
+    "dining": 1,
+    "outdoors": 4,
+    "afford": 2,
+    "airport": 3,
+    "edu": 5
+   },
+   "d": "You snorkel Looe Key, spend the afternoon at Bahia Honda and look up at dark night skies.",
+   "pros": [
+    "Quiet and natural",
+    "Bahia Honda close by"
+   ],
+   "cons": [
+    "Few restaurants and shops",
+    "Expensive insurance"
+   ],
+   "sim": [
+    "navarre-beach",
+    "indian-river-shores",
+    "melbourne-beach",
+    "beverly-beach",
+    "captiva",
+    "crescent-beach",
+    "hutchinson-island",
+    "tequesta"
+   ],
+   "img": "img/c/big-pine-key.webp",
+   "rk": {
+    "nightlife": 140,
+    "meet": 119,
+    "quiet": 14,
+    "walk": 152,
+    "water": 26,
+    "beach": 69,
+    "dining": 158,
+    "outdoors": 37,
+    "afford": 146,
+    "airport": 144,
+    "edu": 119
+   }
+  },
+  "key-biscayne": {
+   "s": "Key Biscayne",
+   "rg": "Miami and Fort Lauderdale",
+   "pr": "$1.49M median",
+   "h": "Mercy Hospital in Coconut Grove, across the bay<small class=\"cmp-sub\">Trauma center: Jackson Memorial Ryder Trauma Center (Level I)</small>",
+   "a": "Miami (MIA), about 25 minutes",
+   "se": "Busy winters and weekends",
+   "w": "Very high prices, one causeway on and off",
+   "sc": {
+    "nightlife": 2,
+    "meet": 3,
+    "quiet": 4,
+    "walk": 4,
+    "water": 4,
+    "beach": 5,
+    "dining": 3,
+    "outdoors": 4,
+    "afford": 1,
+    "airport": 5,
+    "edu": 5
+   },
+   "d": "You swim at Crandon Park in the morning and bike out to the Cape Florida Lighthouse before dinner.",
+   "pros": [
+    "Two big beach parks",
+    "Miami close by"
+   ],
+   "cons": [
+    "Among the priciest places in Florida",
+    "Causeway traffic"
+   ],
+   "sim": [
+    "sanibel-island",
+    "ami",
+    "30a",
+    "bradenton-beach",
+    "palm-beach-shores",
+    "fernandina",
+    "juno-beach",
+    "siesta-key"
+   ],
+   "img": "img/c/key-biscayne.webp",
+   "rk": {
+    "nightlife": 74,
+    "meet": 79,
+    "quiet": 55,
+    "walk": 33,
+    "water": 59,
+    "beach": 4,
+    "dining": 61,
+    "outdoors": 29,
+    "afford": 161,
+    "airport": 15,
+    "edu": 45
+   }
+  },
+  "boca-grande": {
+   "s": "Boca Grande",
+   "rg": "Fort Myers, Sanibel and Charlotte Harbor",
+   "pr": "$2.4M median",
+   "h": "No hospital on the island. Island ambulances go to mainland hospitals such as HCA Florida Englewood",
+   "a": "Punta Gorda (PGD), about 1 hour",
+   "se": "Busy winter and spring",
+   "w": "A toll causeway is the only road, storm exposure, very high prices",
+   "sc": {
+    "nightlife": 1,
+    "meet": 2,
+    "quiet": 4,
+    "walk": 4,
+    "water": 5,
+    "beach": 5,
+    "dining": 2,
+    "outdoors": 4,
+    "afford": 1,
+    "airport": 2,
+    "edu": 3
+   },
+   "d": "You ride the golf cart to the beach, fish for tarpon in the pass and walk the village at dusk.",
+   "pros": [
+    "Old Florida village feel",
+    "Golf carts get you around"
+   ],
+   "cons": [
+    "Among the priciest places in Florida",
+    "Far from a hospital"
+   ],
+   "sim": [
+    "sanibel-island",
+    "melbourne-beach",
+    "vilano-beach",
+    "captiva",
+    "navarre-beach",
+    "marco-island",
+    "st-george-island",
+    "mexico-beach"
+   ],
+   "img": "img/c/boca-grande.webp",
+   "rk": {
+    "nightlife": 141,
+    "meet": 120,
+    "quiet": 56,
+    "walk": 36,
+    "water": 27,
+    "beach": 33,
+    "dining": 115,
+    "outdoors": 38,
+    "afford": 162,
+    "airport": 145,
+    "edu": 80
+   }
+  },
+  "pompano-beach": {
+   "s": "Pompano Beach",
+   "rg": "Miami and Fort Lauderdale",
+   "pr": "$395K median",
+   "h": "Broward Health North, next door in Deerfield Beach<small class=\"cmp-sub\">Also a Level II trauma center</small>",
+   "a": "Fort Lauderdale (FLL), about 20 minutes",
+   "se": "Busy winters",
+   "w": "Flood zones vary, high insurance",
+   "sc": {
+    "nightlife": 3,
+    "meet": 3,
+    "quiet": 2,
+    "walk": 3,
+    "water": 5,
+    "beach": 4,
+    "dining": 3,
+    "outdoors": 3,
+    "afford": 3,
+    "airport": 5,
+    "edu": 5
+   },
+   "d": "You walk the pier in the morning and grab lunch at the Fishing Village a few steps from the sand.",
+   "pros": [
+    "Wide beaches",
+    "Close to the airport"
+   ],
+   "cons": [
+    "Busy roads",
+    "High insurance"
+   ],
+   "sim": [
+    "deerfield-beach",
+    "st-pete-beach",
+    "madeira-beach",
+    "clearwaterbeach",
+    "fort-myers-beach",
+    "destin",
+    "fort-walton-beach",
+    "bonita-springs"
+   ],
+   "img": "img/c/pompano-beach.webp",
+   "rk": {
+    "nightlife": 33,
+    "meet": 80,
+    "quiet": 151,
+    "walk": 80,
+    "water": 71,
+    "beach": 38,
+    "dining": 62,
+    "outdoors": 101,
+    "afford": 70,
+    "airport": 13,
+    "edu": 101
+   }
+  },
+  "deerfield-beach": {
+   "s": "Deerfield Beach",
+   "rg": "Miami and Fort Lauderdale",
+   "pr": "$330K median",
+   "h": "Broward Health North, in town<small class=\"cmp-sub\">Also a Level II trauma center</small>",
+   "a": "Fort Lauderdale (FLL), about 30 minutes",
+   "se": "Busy winters",
+   "w": "Flood zones vary, high insurance",
+   "sc": {
+    "nightlife": 3,
+    "meet": 3,
+    "quiet": 3,
+    "walk": 3,
+    "water": 4,
+    "beach": 4,
+    "dining": 3,
+    "outdoors": 3,
+    "afford": 4,
+    "airport": 4,
+    "edu": 5
+   },
+   "d": "You walk the broadwalk at sunrise, fish off the pier and are home in a few minutes.",
+   "pros": [
+    "Lifeguarded beach and a fishing pier",
+    "More affordable for Broward"
+   ],
+   "cons": [
+    "Many lower priced sales are inland condos",
+    "High insurance"
+   ],
+   "sim": [
+    "pompano-beach",
+    "fort-walton-beach",
+    "clearwaterbeach",
+    "cape-canaveral",
+    "st-pete-beach",
+    "bonita-springs",
+    "lake-worth-beach",
+    "madeira-beach"
+   ],
+   "img": "img/c/deerfield-beach.webp",
+   "rk": {
+    "nightlife": 49,
+    "meet": 81,
+    "quiet": 111,
+    "walk": 63,
+    "water": 111,
+    "beach": 39,
+    "dining": 63,
+    "outdoors": 102,
+    "afford": 55,
+    "airport": 34,
+    "edu": 102
    }
   }
  },

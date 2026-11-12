@@ -755,13 +755,6 @@
   "b": "A suburb on the Halifax River just south of Daytona, with parks, a riverfront and the beach over the bridge.",
   "img": "img/c/port-orange.webp"
  },
- "south-daytona": {
-  "n": "South Daytona",
-  "r": "Northeast Florida",
-  "p": "$260K",
-  "b": "A small riverfront city tucked between Daytona Beach and Port Orange, with low prices and the beach ten minutes away.",
-  "img": "img/c/south-daytona.webp"
- },
  "navarre": {
   "n": "Navarre",
   "r": "Panhandle",
@@ -783,13 +776,6 @@
   "b": "An unpretentious waterfront city on Santa Rosa Sound with a walkable old downtown, a calendar full of local events and Okaloosa Island's beaches just over the bridge.",
   "img": "img/c/fort-walton-beach.webp"
  },
- "okaloosa-island": {
-  "n": "Okaloosa Island",
-  "r": "Panhandle",
-  "p": "$771K",
-  "b": "A short barrier island strip across the bridge from Fort Walton Beach, with a Gulf pier, a beachfront boardwalk, the Gulfarium and undeveloped land running east toward Destin.",
-  "img": "img/c/okaloosa-island.webp"
- },
  "shalimar": {
   "n": "Shalimar",
   "r": "Panhandle",
@@ -803,13 +789,6 @@
   "p": "$520K",
   "b": "A bayside town on Choctawhatchee Bay where boats tie up on the bayous and the Gulf beaches are a short drive away.",
   "img": "img/c/niceville.webp"
- },
- "valparaiso": {
-  "n": "Valparaiso",
-  "r": "Panhandle",
-  "p": "$371K",
-  "b": "A small, older bayou town tucked between Eglin Air Force Base and Boggy Bayou, right next door to Niceville.",
-  "img": "img/c/generic/dock-sunset.webp"
  },
  "miramar-beach": {
   "n": "Miramar Beach",
@@ -951,20 +930,6 @@
   "b": "A small barrier island town with a big public beach park, bay side canal streets full of boat lifts, and a hometown calendar of picnics and holiday parades.",
   "img": "img/c/redington-shores.webp"
  },
- "north-redington-beach": {
-  "n": "North Redington Beach",
-  "r": "Tampa Bay",
-  "p": "$1.08M",
-  "b": "A tidy little beach town where resorts and condo towers line the Gulf and quiet single family streets reach out into the bay on narrow fingers of land.",
-  "img": "img/c/generic/sea-oats-path.webp"
- },
- "redington-beach": {
-  "n": "Redington Beach",
-  "r": "Tampa Bay",
-  "p": "$815K",
-  "b": "A small, almost entirely residential beach town of single family homes, where the streets are quiet and the Gulf is at the end of the block.",
-  "img": "img/c/generic/beach-pier.webp"
- },
  "gibsonton": {
   "n": "Gibsonton",
   "r": "Tampa Bay",
@@ -1105,13 +1070,6 @@
   "b": "A quiet beach community on the barrier island north of Ormond Beach, with small streets of beach cottages between the ocean and the Halifax River and miles of state parks just to the north.",
   "img": "img/c/ormond-by-the-sea.webp"
  },
- "holly-hill": {
-  "n": "Holly Hill",
-  "r": "Northeast Florida",
-  "p": "$247K",
-  "b": "A small, affordable city on the mainland bank of the Halifax River, wedged between Daytona Beach and Ormond Beach, with a riverfront drive, a waterfront park and the beach a bridge away.",
-  "img": "img/c/generic/beach-chairs.webp"
- },
  "ponce-inlet": {
   "n": "Ponce Inlet",
   "r": "Northeast Florida",
@@ -1167,5 +1125,47 @@
   "p": "$350K",
   "b": "The Space Coast's main mainland city on the Indian River, with two walkable old downtowns, an arts district, its own airport and the beach 15 minutes away.",
   "img": "img/c/melbourne.webp"
+ },
+ "marathon": {
+  "n": "Marathon",
+  "r": "South Florida and the Keys",
+  "p": "$715K",
+  "b": "The Middle Keys hub at the start of the Seven Mile Bridge, with Sombrero Beach, busy marinas and a hospital in town.",
+  "img": "img/c/marathon.webp"
+ },
+ "big-pine-key": {
+  "n": "Big Pine Key",
+  "r": "South Florida and the Keys",
+  "p": "$740K",
+  "b": "The quiet center of the Lower Keys, home to the National Key Deer Refuge and about five minutes from Bahia Honda State Park.",
+  "img": "img/c/big-pine-key.webp"
+ },
+ "key-biscayne": {
+  "n": "Key Biscayne",
+  "r": "South Florida and the Keys",
+  "p": "$1.49M",
+  "b": "An island village across the Rickenbacker Causeway from Miami, with Crandon Park and the Cape Florida Lighthouse at Bill Baggs State Park.",
+  "img": "img/c/key-biscayne.webp"
+ },
+ "boca-grande": {
+  "n": "Boca Grande",
+  "r": "Southwest Florida",
+  "p": "$2.4M",
+  "b": "An old Florida village on Gasparilla Island, reached by a toll causeway, where golf carts get you around and tarpon fishing is the big draw.",
+  "img": "img/c/boca-grande.webp"
+ },
+ "pompano-beach": {
+  "n": "Pompano Beach",
+  "r": "South Florida and the Keys",
+  "p": "$395K",
+  "b": "A Broward beach city with wide sand, a rebuilt pier and the Fishing Village on the beachfront, just south of the Hillsboro Inlet.",
+  "img": "img/c/pompano-beach.webp"
+ },
+ "deerfield-beach": {
+  "n": "Deerfield Beach",
+  "r": "South Florida and the Keys",
+  "p": "$330K",
+  "b": "The north end of Broward, with a fishing pier, a beachfront broadwalk and lifeguarded sand.",
+  "img": "img/c/deerfield-beach.webp"
  }
 }

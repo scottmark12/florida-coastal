@@ -2935,32 +2935,6 @@
   }
  },
  {
-  "id": "south-daytona",
-  "n": "South Daytona",
-  "r": "Northeast Florida",
-  "c": "atlantic",
-  "la": 29.166,
-  "lo": -81.005,
-  "t": 1,
-  "v": [
-   "afford"
-  ],
-  "b": "A small riverfront city tucked between Daytona Beach and Port Orange, with low prices and the beach ten minutes away.",
-  "img": "img/c/south-daytona.webp",
-  "real": true,
-  "p": "$260K",
-  "pg": true,
-  "f": {
-   "airport": 3.39,
-   "afford": 4.93,
-   "beach": 1.44,
-   "walk": 1.8,
-   "water": 2.85,
-   "outdoors": 1.85,
-   "nightlife": 1
-  }
- },
- {
   "id": "navarre",
   "n": "Navarre",
   "r": "Panhandle",
@@ -3040,31 +3014,6 @@
   }
  },
  {
-  "id": "okaloosa-island",
-  "n": "Okaloosa Island",
-  "r": "Panhandle",
-  "c": "panhandle",
-  "la": 30.393,
-  "lo": -86.593,
-  "t": 3,
-  "v": [
-   "active"
-  ],
-  "b": "A short barrier island strip across the bridge from Fort Walton Beach, with a Gulf pier, a beachfront boardwalk, the Gulfarium and undeveloped land running east toward Destin.",
-  "img": "img/c/okaloosa-island.webp",
-  "real": true,
-  "p": "$771K",
-  "pg": true,
-  "f": {
-   "airport": 3.71,
-   "beach": 4.5,
-   "walk": 2.9,
-   "water": 3.9,
-   "outdoors": 3.9,
-   "nightlife": 2.9
-  }
- },
- {
   "id": "shalimar",
   "n": "Shalimar",
   "r": "Panhandle",
@@ -3114,30 +3063,6 @@
    "water": 3.9,
    "outdoors": 3.9,
    "nightlife": 1.9
-  }
- },
- {
-  "id": "valparaiso",
-  "n": "Valparaiso",
-  "r": "Panhandle",
-  "c": "panhandle",
-  "la": 30.508,
-  "lo": -86.488,
-  "t": 2,
-  "v": [],
-  "b": "A small, older bayou town tucked between Eglin Air Force Base and Boggy Bayou, right next door to Niceville.",
-  "img": "img/atlas/valparaiso-close.webp",
-  "real": false,
-  "p": "$371K",
-  "pg": true,
-  "f": {
-   "airport": 3.72,
-   "afford": 3.74,
-   "beach": 1.5,
-   "walk": 1.9,
-   "water": 3.9,
-   "outdoors": 2.9,
-   "nightlife": 1
   }
  },
  {
@@ -3655,58 +3580,6 @@
    "water": 3.9,
    "outdoors": 2.9,
    "nightlife": 1.9
-  }
- },
- {
-  "id": "north-redington-beach",
-  "n": "North Redington Beach",
-  "r": "Tampa Bay",
-  "c": "gulf",
-  "la": 27.816,
-  "lo": -82.822,
-  "t": 3,
-  "v": [
-   "sophcalm"
-  ],
-  "b": "A tidy little beach town where resorts and condo towers line the Gulf and quiet single family streets reach out into the bay on narrow fingers of land.",
-  "img": "img/atlas/north-redington-beach-close.webp",
-  "real": false,
-  "p": "$1.08M",
-  "pg": true,
-  "f": {
-   "airport": 4.2,
-   "afford": 1.61,
-   "beach": 3.5,
-   "walk": 2.9,
-   "water": 2.9,
-   "outdoors": 1.9,
-   "nightlife": 1.9
-  }
- },
- {
-  "id": "redington-beach",
-  "n": "Redington Beach",
-  "r": "Tampa Bay",
-  "c": "gulf",
-  "la": 27.809,
-  "lo": -82.812,
-  "t": 3,
-  "v": [
-   "sophcalm"
-  ],
-  "b": "A small, almost entirely residential beach town of single family homes, where the streets are quiet and the Gulf is at the end of the block.",
-  "img": "img/atlas/redington-beach-close.webp",
-  "real": false,
-  "p": "$815K",
-  "pg": true,
-  "f": {
-   "airport": 4.21,
-   "afford": 1.95,
-   "beach": 3.5,
-   "walk": 1.9,
-   "water": 2.9,
-   "outdoors": 1.9,
-   "nightlife": 1
   }
  },
  {
@@ -4234,32 +4107,6 @@
   }
  },
  {
-  "id": "holly-hill",
-  "n": "Holly Hill",
-  "r": "Northeast Florida",
-  "c": "atlantic",
-  "la": 29.231,
-  "lo": -81.028,
-  "t": 1,
-  "v": [
-   "afford"
-  ],
-  "b": "A small, affordable city on the mainland bank of the Halifax River, wedged between Daytona Beach and Ormond Beach, with a riverfront drive, a waterfront park and the beach a bridge away.",
-  "img": "img/atlas/holly-hill-close.webp",
-  "real": false,
-  "p": "$247K",
-  "pg": true,
-  "f": {
-   "airport": 2.89,
-   "afford": 5,
-   "beach": 1.5,
-   "walk": 1.9,
-   "water": 2.9,
-   "outdoors": 1.9,
-   "nightlife": 1.9
-  }
- },
- {
   "id": "ponce-inlet",
   "n": "Ponce Inlet",
   "r": "Northeast Florida",
@@ -4468,6 +4315,172 @@
    "water": 3.9,
    "outdoors": 2.9,
    "nightlife": 2.9
+  }
+ },
+ {
+  "id": "marathon",
+  "n": "Marathon",
+  "r": "South Florida and the Keys",
+  "c": "keys",
+  "la": 24.713,
+  "lo": -81.09,
+  "t": 3,
+  "v": [
+   "dock",
+   "island",
+   "active"
+  ],
+  "b": "The Middle Keys hub at the start of the Seven Mile Bridge, with Sombrero Beach, busy marinas and a hospital in town.",
+  "img": "img/c/marathon.webp",
+  "real": true,
+  "p": "$715K",
+  "pg": true,
+  "f": {
+   "airport": 2,
+   "afford": 1.9,
+   "beach": 2.5,
+   "walk": 1.5,
+   "water": 5,
+   "outdoors": 5,
+   "nightlife": 2
+  }
+ },
+ {
+  "id": "big-pine-key",
+  "n": "Big Pine Key",
+  "r": "South Florida and the Keys",
+  "c": "keys",
+  "la": 24.67,
+  "lo": -81.36,
+  "t": 3,
+  "v": [
+   "island",
+   "active",
+   "oldfl"
+  ],
+  "b": "The quiet center of the Lower Keys, home to the National Key Deer Refuge and about five minutes from Bahia Honda State Park.",
+  "img": "img/c/big-pine-key.webp",
+  "real": true,
+  "p": "$740K",
+  "pg": true,
+  "f": {
+   "airport": 2.5,
+   "afford": 1.6,
+   "beach": 3.5,
+   "walk": 1,
+   "water": 5,
+   "outdoors": 5,
+   "nightlife": 1
+  }
+ },
+ {
+  "id": "key-biscayne",
+  "n": "Key Biscayne",
+  "r": "South Florida and the Keys",
+  "c": "atlantic",
+  "la": 25.69,
+  "lo": -80.163,
+  "t": 4,
+  "v": [
+   "sophcalm",
+   "beaches"
+  ],
+  "b": "An island village across the Rickenbacker Causeway from Miami, with Crandon Park and the Cape Florida Lighthouse at Bill Baggs State Park.",
+  "img": "img/c/key-biscayne.webp",
+  "real": true,
+  "p": "$1.49M",
+  "pg": true,
+  "f": {
+   "airport": 4.7,
+   "afford": 1,
+   "beach": 5,
+   "walk": 3.9,
+   "water": 4,
+   "outdoors": 4,
+   "nightlife": 2
+  }
+ },
+ {
+  "id": "boca-grande",
+  "n": "Boca Grande",
+  "r": "Southwest Florida",
+  "c": "gulf",
+  "la": 26.75,
+  "lo": -82.263,
+  "t": 4,
+  "v": [
+   "oldfl",
+   "sophcalm",
+   "dock",
+   "island"
+  ],
+  "b": "An old Florida village on Gasparilla Island, reached by a toll causeway, where golf carts get you around and tarpon fishing is the big draw.",
+  "img": "img/c/boca-grande.webp",
+  "real": true,
+  "p": "$2.4M",
+  "pg": true,
+  "f": {
+   "airport": 2.2,
+   "afford": 1,
+   "beach": 4.5,
+   "walk": 3.5,
+   "water": 5,
+   "outdoors": 4,
+   "nightlife": 1
+  }
+ },
+ {
+  "id": "pompano-beach",
+  "n": "Pompano Beach",
+  "r": "South Florida and the Keys",
+  "c": "atlantic",
+  "la": 26.234,
+  "lo": -80.093,
+  "t": 2,
+  "v": [
+   "beaches",
+   "afford"
+  ],
+  "b": "A Broward beach city with wide sand, a rebuilt pier and the Fishing Village on the beachfront, just south of the Hillsboro Inlet.",
+  "img": "img/c/pompano-beach.webp",
+  "real": true,
+  "p": "$395K",
+  "pg": true,
+  "f": {
+   "airport": 4.8,
+   "afford": 3.4,
+   "beach": 4.3,
+   "walk": 2.5,
+   "water": 4.5,
+   "outdoors": 3,
+   "nightlife": 2.9
+  }
+ },
+ {
+  "id": "deerfield-beach",
+  "n": "Deerfield Beach",
+  "r": "South Florida and the Keys",
+  "c": "atlantic",
+  "la": 26.317,
+  "lo": -80.075,
+  "t": 1,
+  "v": [
+   "beaches",
+   "afford"
+  ],
+  "b": "The north end of Broward, with a fishing pier, a beachfront broadwalk and lifeguarded sand.",
+  "img": "img/c/deerfield-beach.webp",
+  "real": true,
+  "p": "$330K",
+  "pg": true,
+  "f": {
+   "airport": 4.4,
+   "afford": 3.7,
+   "beach": 4.3,
+   "walk": 2.9,
+   "water": 3.5,
+   "outdoors": 3,
+   "nightlife": 2.5
   }
  }
 ]
