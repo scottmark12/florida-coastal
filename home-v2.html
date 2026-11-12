@@ -377,4 +377,20 @@ svg.querySelectorAll('text').forEach(function(t){var pr=t.previousElementSibling
 var out=b.left<R.left+2||b.right>R.right-2||b.top<R.top||b.bottom>R.bottom;
 var hit=C&&C.width&&b.right>C.left&&b.left<C.right&&b.bottom>C.top&&b.top<C.bottom;
 if(out||hit){t.style.visibility='hidden';if(pill)pill.style.visibility='hidden'}})})}
-new MutationObserver(tidy).observe(svg,{childList:true,subtree:true});addEventListener('resize',tidy);addEventListener('load',tidy);setTimeout(tidy,500)})();</script></body></html>
+new MutationObserver(tidy).observe(svg,{childList:true,subtree:true});addEventListener('resize',tidy);addEventListener('load',tidy);setTimeout(tidy,500)})();</script><style id="foot-snap">@media (max-width:760px){html body footer:not(#x):not(#y),html.glass body footer:not(#x):not(#y){scroll-snap-align:start!important;scroll-snap-stop:normal!important;scroll-margin-top:0!important}}</style><style id="foot-tight">@media (max-width:760px){
+html body footer.fx:not(#x){padding:22px 20px calc(18px + env(safe-area-inset-bottom))!important}
+html body footer.fx:not(#x) .fx-main{display:grid!important;grid-template-columns:1fr 1fr 1fr!important;gap:18px 12px!important;padding:0!important;margin:0!important}
+html body footer.fx:not(#x) .fx-brand{grid-column:1/-1!important;margin:0!important;padding:0!important}
+html body footer.fx:not(#x) .fx-brand img{height:24px!important;width:auto!important}
+html body footer.fx:not(#x) .fx-brand p{font-size:13px!important;margin:6px 0 10px!important}
+html body footer.fx:not(#x) .fx-sign{margin:0!important}
+html body footer.fx:not(#x) .fx-sign input,html body footer.fx:not(#x) .fx-sign button{font-size:16px!important}
+html body footer.fx:not(#x) nav{display:flex!important;flex-direction:column!important;gap:9px!important;margin:0!important;padding:0!important;min-width:0}
+html body footer.fx:not(#x) nav b{font-size:13px!important;margin:0 0 2px!important}
+html body footer.fx:not(#x) nav a{font-size:14px!important;line-height:1.25!important;padding:0!important;margin:0!important}
+html body footer.fx:not(#x) .fx-base{margin-top:18px!important;padding-top:14px!important}
+html body footer.fx:not(#x) .fx-links{display:flex!important;flex-wrap:wrap!important;gap:6px 16px!important;font-size:13px!important}
+html body footer.fx:not(#x) .fx-links a[href="scoring.html"]{display:none!important}
+html body footer.fx:not(#x) .fx-legal{font-size:11.5px!important;line-height:1.45!important;margin-top:12px!important}
+html body footer.fx:not(#x) .fx-legal svg{width:18px!important;height:18px!important;flex:none}
+}</style></body></html>
