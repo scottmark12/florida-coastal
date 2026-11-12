@@ -696,3 +696,14 @@ html body.sheet.sliders #res:not(.sh-up):not(.sh-low) .mode{margin-top:17px!impo
 html body.sheet #res.sh-low .mode:not(#x):not(#y),html body.sheet #res.sh-low .shint:not(#x){display:none!important}
 html body.sheet #res.sh-low .fcgq{display:none!important}
 html body.sheet.vibes #res.sh-low .vp>.tiles.vt:not(#x){margin-top:2px!important}
+/* Nov 12: desktop map fills the screen; clear header floats over it; the panel is a floating frosted card */
+@media (min-width:1000px){
+html body.vibes:not(#x),html body.sliders:not(#x){overflow:hidden}
+html body:not(#x) > header{position:fixed!important;top:0;left:0;right:0;z-index:40;background:linear-gradient(180deg,rgba(247,248,247,.92) 0,rgba(247,248,247,.72) 55%,rgba(247,248,247,0) 100%)!important;border:0!important;box-shadow:none!important;height:76px!important;padding-bottom:12px;-webkit-backdrop-filter:none;backdrop-filter:none}
+html body:not(#x) > header nav a{text-shadow:0 0 12px rgba(247,248,247,.9)}
+html body:not(#x) .main{position:fixed!important;inset:0!important;display:block!important;height:auto!important}
+html body:not(#x) .mapw,html body:not(#x) #mapbox{position:absolute!important;inset:0!important;width:auto!important;height:auto!important}
+html body:not(#x) #res.res{position:fixed!important;top:84px!important;right:16px!important;bottom:16px!important;width:420px!important;max-width:none!important;z-index:30;overflow-y:auto!important;background:rgba(250,251,251,.86)!important;-webkit-backdrop-filter:blur(24px) saturate(1.3);backdrop-filter:blur(24px) saturate(1.3);border:1px solid rgba(255,255,255,.75);border-radius:22px;box-shadow:0 18px 50px rgba(10,22,24,.16),0 2px 6px rgba(10,22,24,.06);padding:20px 22px 28px!important;scrollbar-width:thin}
+html body:not(#x) .map .zoom:not(#y){right:452px!important;left:auto!important;bottom:24px!important;top:auto!important}
+html body:not(#x) #mapbox #pop.pop.on:not(.full){bottom:16px!important}
+}
