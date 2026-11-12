@@ -393,3 +393,34 @@ if(params.get('open')){const t=T.find(t=>t.id==params.get('open'));if(t)setTimeo
  setTimeout(tick,500);setInterval(tick,2200);
  ['pointerdown','wheel','touchstart'].forEach(ev=>addEventListener(ev,()=>{hold=performance.now()+5000},{passive:true,capture:true}));
  const vp=$('vp');if(vp){vp.addEventListener('mouseover',e=>{over=!!e.target.closest('.tile')});vp.addEventListener('mouseleave',()=>{over=false})}})();
+
+// ---- Nov 12: first visit hints. Two or three small glass notes point at the real controls, once per map; the ? next to the tabs plays them again ----
+(function(){
+ const KEY=k=>'fc-hint-'+k;const seen=k=>{try{return !!localStorage.getItem(KEY(k))}catch(e){return true}};const mark=k=>{try{localStorage.setItem(KEY(k),'1')}catch(e){}};
+ const cur=()=>S.mode=='sliders'?'sliders':S.sub=='regions'?'regions':'styles';
+ const firstDot=()=>{const d=[...document.querySelectorAll('#ov .dot')].map(e=>[e,e.getBoundingClientRect()]).filter(([e,r])=>r.width>0&&r.top>90&&r.bottom<(SHON()?innerHeight-PK()-20:innerHeight-40));return d.length?d[Math.floor(d.length/2)][0]:$('mapbox')};
+ const handle=()=>SHON()?$('res'):null;
+ const STEPS={
+  regions:[['#vp .tiles.vt','Pick a region to see every beach town in it.'],[firstDot,'Tap any dot to meet that town.'],[handle,'Drag this panel up for the full list.']],
+  styles:[['#vp .tiles.vt','Pick a style that feels like home.'],[firstDot,'Tap any dot to meet that town.'],[handle,'Drag this panel up for every town in the style.']],
+  sliders:[[handle,'Drag this panel up and slide what matters to you. Tap any i to see how we rank it.'],[()=>$('mapbox'),'Your top 5 light up on the map as you slide.'],[()=>document.querySelector('#mapbox #pop.on')||null,'This is your #1. Use the arrows for the rest, or tap any numbered pin.']]};
+ let on=null;
+ function close(k,done){if(on){on.remove();on=null}if(done)mark(k)}
+ function show(k,i){const L=STEPS[k].filter(s=>{const t=typeof s[0]=='function'?s[0]():document.querySelector(s[0]);return t&&t.getBoundingClientRect().width>0});if(i>=L.length){close(k,true);return}
+  const [sel,txt]=L[i],t=typeof sel=='function'?sel():document.querySelector(sel),r=t.getBoundingClientRect();
+  close(k,false);const b=document.createElement('div');b.className='fhint';b.setAttribute('role','dialog');b.setAttribute('aria-label','How the map works');
+  b.innerHTML=`<p>${txt}</p><div class="fh-row"><span>${i+1} of ${L.length}</span><button type="button" class="fh-skip">Skip</button><button type="button" class="fh-next">${i+1<L.length?'Next':'Got it'}</button></div><i class="fh-arr"></i>`;
+  document.body.appendChild(b);on=b;
+  const w=Math.min(300,innerWidth-32),bh=b.offsetHeight,big=r.height>innerHeight*.5||t===$('mapbox')||t===$('res');
+  let x=Math.max(16,Math.min(innerWidth-w-16,r.left+r.width/2-w/2)),y,up;
+  if(t===$('res')){y=r.top-bh-14;up=false;x=(innerWidth-w)/2}else if(big){y=Math.max(90,r.top+r.height*.3);up=null}else if(r.top-bh-16>70){y=r.top-bh-14;up=false}else{y=r.bottom+14;up=true}
+  Object.assign(b.style,{left:x+'px',top:Math.max(12,y)+'px',width:w+'px'});
+  const a=b.querySelector('.fh-arr');if(up===null)a.style.display='none';else{a.classList.toggle('up',up);a.style.left=Math.max(18,Math.min(w-30,r.left+r.width/2-x-6))+'px'}
+  b.querySelector('.fh-skip').onclick=()=>close(k,true);b.querySelector('.fh-next').onclick=()=>show(k,i+1);
+  requestAnimationFrame(()=>b.classList.add('in'))}
+ window.fcHints=(force)=>{const k=cur();if(!force&&seen(k))return;show(k,0)};
+ const tabs=$('mode');if(tabs){const q=document.createElement('button');q.type='button';q.className='fh-q';q.setAttribute('aria-label','How this map works');q.textContent='?';q.onclick=e=>{e.stopPropagation();fcHints(true)};tabs.appendChild(q)}
+ let tm=null;const later=()=>{clearTimeout(tm);close(cur(),false);tm=setTimeout(()=>{if(!S.pop||S.mode=='sliders')fcHints(false)},1600)};
+ later();const sm=setMode;window.setMode=setMode=function(m){sm(m);later()};
+ addEventListener('resize',()=>{if(on){on.remove();on=null}});
+})();
