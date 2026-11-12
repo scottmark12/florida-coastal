@@ -65,7 +65,7 @@ html body main .cmap .cm-card:not(#a):not(#b) .cm-st{grid-template-columns:auto 
 
 /* #h-polish */
 .nb{display:none!important}
-html body[data-newsph2] .news:not(#a){background:#F2EFEA url(/img/c/florida-chair.webp) 0% 62%/107% auto no-repeat!important}
+html body[data-newsph2] .news:not(#a){background:#9DB9DA url(/img/c/keys-chair.webp) center 55%/cover no-repeat!important}
 @media (max-width:760px){html body[data-newsph2] .news:not(#a){background:#F2EFEA url(/img/c/water-dock-chairs.webp) center top/100% auto no-repeat!important}}
 
 /* #cguides-css */
@@ -326,4 +326,10 @@ html body .mob-cta:not(#x):not(#y){display:none!important}
 @media (max-width:760px){
 html body main>section.dk-hero:not(#x):not(#y){background-image:linear-gradient(rgba(10,20,22,.30) 0,rgba(10,20,22,.10) 22%,rgba(10,20,22,.20) 42%,rgba(10,20,22,.22) 55%,rgba(10,20,22,0) 72%),linear-gradient(to top,rgba(10,20,22,.18) 0,rgba(10,20,22,0) 22%),url(/img/c/grayton-beach.webp)!important;background-size:auto,auto,cover!important}
 html body section.dk-hero:not(#x):not(#y) .wrap{justify-content:flex-end!important;padding-bottom:calc(var(--gb,0px) + 34svh)!important}html body section.dk-hero:not(#x):not(#y) .hero-note{color:rgba(255,255,255,.92)!important}
+}
+/* Nov 12: desktop newsletter photo (Keys chair). The sharp photo sits on the right at full height and fades into a blurred copy on wide screens */
+@media (min-width:761px){
+html body[data-newsph2] main>section.news:not(#a){position:relative;overflow:hidden;background:#9DB9DA url(/img/c/keys-chair-blur.webp) center/cover no-repeat!important}
+html body[data-newsph2] main>section.news:not(#a)::before{content:'';position:absolute;top:0;bottom:0;right:0;height:100%;aspect-ratio:1800/920;background:url(/img/c/keys-chair.webp) center/cover no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent,#000 18%);mask-image:linear-gradient(90deg,transparent,#000 18%);z-index:0;pointer-events:none}
+html body[data-newsph2] main>section.news:not(#a)>*{position:relative;z-index:1}
 }
