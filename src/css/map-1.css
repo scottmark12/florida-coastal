@@ -636,7 +636,7 @@ html body #mapbox #pop .x:not(#x),html body #res .shx:not(#x){color:#152A2E!impo
 html body #mode .fcgq:not(#x){display:inline-flex!important;position:static!important;flex:none;width:36px!important;height:36px!important;min-width:0!important;padding:0!important;margin:0 0 0 auto!important;border-radius:50%!important;border:1px solid rgba(21,42,46,.22)!important;background:#fff!important;color:#152A2E!important;box-shadow:none!important;font:600 16px/1 'DM Sans',system-ui,sans-serif!important;align-items:center;justify-content:center;align-self:center;-webkit-appearance:none}
 html body #mode:not(#x){display:flex;align-items:center}
 .cm-hole{position:fixed;z-index:80;border-radius:16px;pointer-events:none;opacity:0;transition:opacity .2s}
-.cm-hole.on{opacity:1;box-shadow:0 0 0 9999px rgba(10,22,24,.5),0 0 0 3px #fff}
+
 
 .cm-tip.on{opacity:1;pointer-events:auto;transform:none}
 
@@ -647,16 +647,30 @@ html body #map .sea.rgn.on,html body #map .sea.rgn:hover{fill:#152A2E}
 html body #mapbox #pop .pnav:not(#x){display:flex!important;align-items:center;gap:6px}
 html body #mapbox #pop .pnav .go:not(#x){flex:1 1 auto!important;min-width:0!important;justify-content:center;text-align:center}
 
-/* tour cards: frosted like the town cards */
-.cm-tip{position:fixed;z-index:81;background:rgba(250,251,251,.86);-webkit-backdrop-filter:blur(22px) saturate(1.3);backdrop-filter:blur(22px) saturate(1.3);color:#152A2E;border:1px solid rgba(255,255,255,.7);border-radius:18px;padding:15px 17px 11px;box-shadow:0 12px 34px rgba(10,22,24,.22);font:400 14px/1.4 'DM Sans',system-ui,sans-serif;opacity:0;pointer-events:none;transform:translateY(6px);transition:opacity .2s,transform .2s}
-.cm-tip h4{margin:0 0 4px;font:600 17px/1.2 'DM Sans',system-ui,sans-serif;letter-spacing:-.01em;display:flex;align-items:center;gap:8px}
-.cm-tip h4 i{width:10px;height:10px;border-radius:50%;flex:none}
-.cm-tip p{margin:0;color:#3A4A4D}
-.cm-tip p.do{margin-top:8px;font-weight:600;color:#152A2E}
-.cm-tip .cm-skip{display:block;margin:6px 0 0 auto;background:none;border:0;padding:4px 0;color:#6B7678;font:500 12.5px 'DM Sans',sans-serif;text-decoration:underline;text-underline-offset:2px;cursor:pointer;-webkit-appearance:none}
-.cm-tip .cm-ar{display:none;position:absolute;width:14px;height:14px;background:inherit;border:inherit;transform:translateX(-50%) rotate(45deg);-webkit-backdrop-filter:none;backdrop-filter:none}
-.cm-tip.ar .cm-ar{display:block;bottom:-8px;border-top:0;border-left:0;background:rgba(250,251,251,.95)}
-.cm-tip.ar.dn .cm-ar{bottom:auto;top:-8px;border:1px solid rgba(255,255,255,.7);border-bottom:0;border-right:0}
+
+/* Walkthrough cards (Nov 12 v8): white, tight, two steps */
+.cm-hole.on{opacity:1;box-shadow:0 0 0 9999px rgba(10,22,24,.4),0 0 0 3px #fff}
+.cm-hole{border-radius:16px}
+.cm-hole.pl{animation:cmGlow 1.1s ease-out .15s 1}
+@keyframes cmGlow{0%{box-shadow:0 0 0 9999px rgba(10,22,24,.4),0 0 0 3px #fff,0 0 0 3px rgba(255,255,255,.7)}100%{box-shadow:0 0 0 9999px rgba(10,22,24,.4),0 0 0 3px #fff,0 0 0 16px rgba(255,255,255,0)}}
+.cm-tip{position:fixed;z-index:81;background:#fff;color:#152A2E;border-radius:16px;padding:12px 16px 14px;box-shadow:0 14px 40px rgba(10,22,24,.24),0 1px 3px rgba(10,22,24,.08);font:400 14px/1.4 'DM Sans',system-ui,sans-serif;opacity:0;pointer-events:none;transform:scale(.94);transition:opacity .2s ease,transform .26s cubic-bezier(.2,.8,.2,1)}
+.cm-tip.on{opacity:1;pointer-events:auto;transform:none}
+.cm-tip.mv{transition:opacity .2s ease,transform .26s cubic-bezier(.2,.8,.2,1),left .38s cubic-bezier(.2,.8,.2,1),top .38s cubic-bezier(.2,.8,.2,1)}
+.cm-tip .cm-top{display:flex;align-items:center;justify-content:space-between;margin:0 0 8px}
+.cm-tip .cm-pg{display:inline-flex;align-items:center;gap:5px;font:600 10.5px/1 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#8A9496}
+.cm-tip .cm-pg i{width:6px;height:6px;border-radius:50%;background:#D5DADB}.cm-tip .cm-pg i.on{background:#152A2E}.cm-tip .cm-pg i:nth-child(2){margin-right:4px}
+.cm-tip .cm-skip{background:none;border:0;padding:4px 0;margin:0;color:#8A9496;font:500 12.5px 'DM Sans',sans-serif;cursor:pointer;-webkit-appearance:none;text-decoration:none}
+.cm-tip h4{margin:0 0 3px;font:600 17px/1.22 'DM Sans',system-ui,sans-serif;letter-spacing:-.015em;color:#152A2E}
+.cm-tip p{margin:0;color:#4A5759}
+.cm-tip p.do{margin-top:8px;font-weight:600;color:#B4532A}.cm-tip p.do:empty{display:none}
+.cm-tip .cm-ar{display:none;position:absolute;width:14px;height:14px;background:#fff;transform:translateX(-50%) rotate(45deg);border-radius:2px}
+.cm-tip.ar .cm-ar{display:block;bottom:-6px}
+.cm-tip.ar.dn .cm-ar{bottom:auto;top:-6px}
+@media (prefers-reduced-motion:reduce){.cm-tip,.cm-tip.mv{transition:opacity .2s ease;transform:none}.cm-hole.pl{animation:none}}
+/* region and style card */
+#pop .bstyle .eb{display:flex;align-items:center;gap:6px}
+#pop .bstyle .sdot{width:8px;height:8px;border-radius:50%;flex:none;display:inline-block}
+html body #mapbox #pop.pop[data-intro^="style"]:not(.full):not(#x):not(#y):not(#z) .bstyle p{-webkit-line-clamp:2!important}
 /* pulled up sheet: the X gets its own row above the tabs (no overlap with ?) */
 html body.sheet #res.sh-up .mode:not(#x):not(#y){margin-top:30px!important}
 /* Nov 12: quieter roads, the way Compass keeps the base map in the background */
@@ -664,3 +678,4 @@ html body #map:not(.zin) .terr .mr1:not(#x){stroke:#ECE7DE!important;opacity:.55
 html body #map:not(.zin) .terr .mr2:not(#x){stroke:#fff!important;opacity:.6;stroke-width:calc(var(--k)*1px)!important}
 /* guide cards (how to) use DM Sans only; town cards keep the serif */
 html body #mapbox #pop.pop[data-intro]:not([data-intro=""]):not(#x):not(#y):not(#z) .bintro h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:600!important;font-size:19px!important;letter-spacing:-.015em!important;line-height:1.2!important}
+
