@@ -40,7 +40,7 @@ html body h2.rt{font-family:'Libre Caslon Display',Georgia,serif!important;font-
 /* Nov 13: match % chip and fits pills keep the old desktop look */
 .k .mc{font-style:normal}.k .mc:before{content:"\00b7";margin:0 .45em 0 0}
 .why .wp{font-style:normal}.why .wp+.wp:before{content:"\00b7";margin:0 .4em}
-.pd,.ex{display:none}
+.pd,.ex,.exf{display:none}
 /* Nov 13: phone results. Floating smoked glass card (same shape as the home page guide card) with white text, so the photo color comes through and text stays readable on bright skies. Same info as desktop. Your 5 photo tiles sit above. Caslon only on the town name */
 @media(max-width:800px){
 html body .sl .ov{background:linear-gradient(rgba(10,20,22,.34) 0,rgba(10,20,22,0) 140px)!important}
@@ -61,8 +61,10 @@ html body .tx .bt a.gh{flex:1;background:rgba(255,255,255,.08)!important;color:#
 html body .dots{display:none!important}
 html body .sl{background:var(--bc,#0c181b);transition:background .3s ease}
 html body .sl .im{bottom:calc(var(--sh,300px) - 22px + env(safe-area-inset-bottom))}
-html body .sl .ex{display:block;position:absolute;left:0;right:0;bottom:0;top:calc(100% - var(--sh,300px) + 22px - env(safe-area-inset-bottom) - 16px);background-repeat:no-repeat;filter:blur(4px);z-index:0}
-html body .sl .im{z-index:1;-webkit-mask-image:linear-gradient(#000 calc(100% - 14px),transparent);mask-image:linear-gradient(#000 calc(100% - 14px),transparent)}html body .sl .tx{z-index:2}
+html body .sl .ex{display:block;position:absolute;left:0;right:0;bottom:0;top:calc(100% - var(--sh,300px) + 22px - env(safe-area-inset-bottom) - 44px);background-repeat:no-repeat;filter:blur(22px) saturate(1.1);transform:scale(1.12);transform-origin:50% 0;z-index:0}
+html body .sl .ex+.ex{display:none}
+html body .sl .exf{position:absolute;left:0;right:0;bottom:0;top:calc(100% - var(--sh,300px) + 22px - env(safe-area-inset-bottom));background:linear-gradient(rgba(0,0,0,0) 0,var(--bc,#0c181b) 75%);z-index:0;pointer-events:none}
+html body .sl .im{z-index:1;-webkit-mask-image:linear-gradient(#000 calc(100% - 44px),transparent);mask-image:linear-gradient(#000 calc(100% - 44px),transparent)}html body .sl .tx{z-index:2}
 html body .pd{display:flex;align-items:center;justify-content:center;gap:7px;position:absolute;left:0;right:0;bottom:calc(var(--sh,300px) + 30px + env(safe-area-inset-bottom));z-index:3;pointer-events:none;transition:bottom .3s ease}
 html body .pd i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.55);box-shadow:0 1px 4px rgba(0,0,0,.3);transition:width .25s ease}
 html body .pd i.on{background:#fff;width:22px;border-radius:4px}
