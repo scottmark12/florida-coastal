@@ -32,4 +32,4 @@ v.querySelector('.gv-x').onclick=()=>{v.hidden=true;document.body.style.overflow
 addEventListener('keydown',e=>{if(v.hidden)return;if(e.key=='Escape')v.querySelector('.gv-x').click();if(e.key=='ArrowRight')go(1);if(e.key=='ArrowLeft')go(-1)})}
 v.hidden=false;document.body.style.overflow='hidden';const r=v.querySelector('.gv-row');requestAnimationFrame(()=>{r.scrollLeft=i*r.clientWidth;r.dispatchEvent(new Event('scroll'))});v.querySelector('.gv-x').focus()};
 ph.forEach((d,i)=>d.addEventListener('click',()=>open(i)));const b=g.querySelector('.gall');b&&b.addEventListener('click',e=>{e.stopPropagation();open(0)})})();</script>
-</body></html>
+<script>/* Nov 13: Compare link moves into the sticky Ask card on desktop */(function(){if(innerWidth<901)return;var l=document.querySelector("aside > a.cmpl"),c=document.querySelector("aside .card");if(l&&c)c.appendChild(l)})();</script></body></html>

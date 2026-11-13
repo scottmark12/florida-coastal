@@ -89,3 +89,5 @@ aside .alt a.on{text-decoration:underline}
 .gv-a{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.14);color:#fff;font-size:22px;cursor:pointer}
 .gv-a.p{left:16px}.gv-a.nx{right:16px}
 @media(max-width:900px){.gv-a{display:none}}
+/* Nov 13: the Compare link rides inside the sticky Ask card on desktop so the card never slides over it */
+@media (min-width:901px){aside .card .cmpl{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--hair)}}
