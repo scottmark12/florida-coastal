@@ -37,3 +37,30 @@ h1,h2.rt{font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-s
 .th{display:none!important}@media (min-width:901px){.nav .dots{display:flex!important;position:static!important;gap:8px}.nav .dots i{width:8px;height:8px;border-radius:50%;background:rgba(255,255,255,.5)}.nav .dots i.on{background:#fff;width:24px;border-radius:4px}}
 
 html body h2.rt{font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;letter-spacing:normal!important;text-transform:none!important}
+/* Nov 13: match % chip and fits pills keep the old desktop look */
+.k .mc{font-style:normal}.k .mc:before{content:"\00b7";margin:0 .45em 0 0}
+.why .wp{font-style:normal}.why .wp+.wp:before{content:"\00b7";margin:0 .4em}
+.five{display:none}
+/* Nov 13: phone results. Floating smoked glass card (same shape as the home page guide card) with white text, so the photo color comes through and text stays readable on bright skies. Same info as desktop. Your 5 photo tiles sit above. Caslon only on the town name */
+@media(max-width:800px){
+html body .sl .ov{background:linear-gradient(rgba(10,20,22,.34) 0,rgba(10,20,22,0) 140px)!important}
+html body .tx{left:14px!important;right:14px!important;bottom:calc(14px + env(safe-area-inset-bottom))!important;max-width:none!important;color:#fff!important;text-shadow:0 1px 2px rgba(0,0,0,.25)!important;background:rgba(12,24,27,.42);-webkit-backdrop-filter:blur(22px) saturate(1.3);backdrop-filter:blur(22px) saturate(1.3);border-radius:28px;border:1px solid rgba(255,255,255,.22);padding:22px 20px 20px;box-shadow:0 12px 40px rgba(0,0,0,.22)}
+html body .tx .k{font-size:11.5px;letter-spacing:.14em;color:rgba(255,255,255,.82);opacity:1;display:flex;align-items:center;gap:8px;margin:0}
+html body .tx .k .mc{color:#152A2E;background:#fff;border-radius:999px;padding:3px 9px;letter-spacing:.02em;text-transform:none;font-size:12px;font-weight:600;text-shadow:none}
+html body .tx .k .mc:before{content:none}
+html body .tx h2.rt{font-size:34px!important;line-height:1.04;margin:8px 0 4px;color:#fff}
+html body .tx .rg{font-size:14px;color:rgba(255,255,255,.85);opacity:1;margin:0}html body .tx .rg b{color:#fff}
+html body .tx p{display:-webkit-box!important;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;font-size:15px;line-height:1.4;margin:10px 0 0;color:#fff;opacity:1}
+html body .tx .why{border-top:1px solid rgba(255,255,255,.22);padding:10px 0 0;margin-top:12px;opacity:1;font-size:13.5px;line-height:1.45;color:#fff}
+html body .tx .why span{display:block;font-size:10.5px;letter-spacing:.14em;color:rgba(255,255,255,.72);opacity:1;margin:0 0 3px}
+html body .tx .bt{flex-direction:row!important;gap:8px;margin-top:14px}
+html body .tx .bt a{border-radius:999px!important;padding:13px 14px!important;font-size:15px;white-space:nowrap;text-align:center;justify-content:center;min-width:0;text-shadow:none}
+html body .tx .bt a .gn{display:none}
+html body .tx .bt a.go{flex:1.15;background:#fff!important;color:#152A2E!important;border:0!important}
+html body .tx .bt a.gh{flex:1;background:rgba(255,255,255,.08)!important;color:#fff!important;border:1px solid rgba(255,255,255,.6)!important}
+html body .dots{display:none!important}
+html body .five{display:flex;position:absolute;left:16px;right:16px;bottom:calc(var(--sh,300px) + 26px + env(safe-area-inset-bottom));z-index:3;gap:8px;transition:bottom .3s ease}
+html body .five button{position:relative;width:50px;height:50px;padding:0;border-radius:14px;background:center/cover;border:1.5px solid rgba(255,255,255,.55);box-shadow:0 4px 14px rgba(0,0,0,.2);cursor:pointer;transition:transform .2s ease}
+html body .five button.on{border:2.5px solid #fff;transform:translateY(-3px)}
+html body .five b{position:absolute;left:5px;top:3px;font-size:11px;font-weight:600;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+}
