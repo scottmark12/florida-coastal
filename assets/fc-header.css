@@ -15,3 +15,6 @@ html body header.rsh:not(#x) .rsh-cta{margin-left:28px;display:inline-flex;align
 @media (min-width:761px){html body header.rsh:not(#x){background:linear-gradient(180deg,rgba(10,22,24,.42),rgba(10,22,24,.12) 70%,rgba(10,22,24,0))!important}}
 /* one quiz button size on every desktop header (the home page one) */
 @media (min-width:761px){html body header:not(.nyt-head):not(#x) a.fcq,html body header:not(.nyt-head):not(#x) a.cta,html body header.rsh:not(#x) .rsh-cta{display:inline-flex!important;align-items:center!important;justify-content:center;height:42px!important;padding:0 22px!important;line-height:1!important;border-radius:999px!important;font-size:15px!important;font-weight:600!important;box-sizing:border-box}}
+/* Nov 13: nav links never wrap to two lines on narrow laptops and tablets */
+#navlinks a,.navlinks a{white-space:nowrap}
+@media (min-width:761px) and (max-width:900px){#navlinks a,.navlinks a{font-size:14px!important;padding-left:6px!important;padding-right:6px!important}#navlinks,.navlinks{gap:4px!important}}
