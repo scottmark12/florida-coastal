@@ -531,9 +531,6 @@ html body #vp .tile.demo:not(#x){box-shadow:0 0 0 3px var(--dc)!important}
 @keyframes ddh{0%{opacity:.55;transform:scale(.35)}100%{opacity:0;transform:scale(1.5)}}
 @media (max-width:760px){.vdemo{top:calc(72px + env(safe-area-inset-top));left:50%;transform:translate(-50%,-4px)}.vdemo.on{transform:translate(-50%,0)}}
 /* Nov 12 (v2): one small tip at a time */
-.ftip{position:fixed;z-index:200;background:rgba(21,42,46,.86);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);color:#fff;border-radius:14px;padding:11px 14px;font:500 14.5px/1.35 'DM Sans',system-ui,sans-serif;box-shadow:0 10px 28px rgba(10,20,22,.25);opacity:0;transform:translateY(6px);transition:opacity .25s ease,transform .25s ease;text-align:center;cursor:pointer}
-.ftip.in{opacity:1;transform:none}
-.ftip .ft-arr{position:absolute;left:50%;bottom:-6px;width:12px;height:12px;margin-left:-6px;background:inherit;transform:rotate(45deg);border-radius:2px}
 /* Nov 12: no See all; tiles reflow into a grid when the sheet is pulled up */
 html body .vp .vm-all:not(#x){display:none!important}
 html body.sheet #res.sh-up .vp .tiles.vt:not(#x){display:grid!important;grid-template-columns:repeat(3,1fr)!important;overflow:visible;margin:0!important;padding:0 0 8px!important}
@@ -541,30 +538,13 @@ html body.sheet #res.sh-up .vp .tiles.vt:not(#x) .tile{width:auto!important}
 /* Nov 12: pairs and trios name every town, each tappable */
 html body svg .lbl.clul:not(#x){pointer-events:auto;cursor:pointer}
 /* Nov 12: towns that never split open a small list */
-.clist{position:absolute;left:50%;top:50%;z-index:40;width:min(320px,calc(100% - 32px));transform:translate(-50%,-46%) scale(.97);opacity:0;pointer-events:none;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(20px) saturate(1.3);backdrop-filter:blur(20px) saturate(1.3);border:1px solid rgba(255,255,255,.8);border-radius:18px;box-shadow:0 14px 40px rgba(10,20,22,.22);padding:6px 6px 8px;transition:opacity .18s ease,transform .18s ease;font-family:'DM Sans',system-ui,sans-serif}
-.clist.on{opacity:1;pointer-events:auto;transform:translate(-50%,-50%)}
-.clist .cl-hd{display:flex;align-items:center;justify-content:space-between;padding:8px 8px 6px 12px;color:#152A2E;font-size:15px}
-.clist .cl-x{width:36px;height:36px;border:0;border-radius:50%;background:rgba(21,42,46,.07);font-size:22px;line-height:1;color:#152A2E;cursor:pointer}
-.clist .cl-r{display:grid;grid-template-columns:52px 1fr auto;align-items:center;gap:12px;width:100%;padding:8px;border:0;border-radius:12px;background:none;text-align:left;cursor:pointer;color:#152A2E;font:inherit}
-.clist .cl-r:hover,.clist .cl-r:focus-visible{background:rgba(21,42,46,.06)}
-.clist .cl-r i{width:52px;height:52px;border-radius:10px;background-size:cover;background-position:center}
-.clist .cl-r b{display:block;font-size:16px;font-weight:600}
-.clist .cl-r small{display:block;font-size:13px;color:#5E6B6D;margin-top:2px}
-.clist .cl-r em{font-style:normal;font-size:14px;font-weight:600}
 /* Nov 12: zoom buttons visible on phone too, under the zoom pill on the right */
 @media (max-width:760px){html body .map .zoom:not(#x):not(#y){display:flex!important;position:absolute!important;right:14px!important;left:auto!important;bottom:auto!important;top:calc(env(safe-area-inset-top,0px) + 196px)!important;z-index:30}
 html body .map .zoom:not(#x):not(#y) button{width:44px!important;height:44px!important}
 html body.sliders .map .zoom:not(#x):not(#y){display:none!important}}
 /* Nov 12 (v3): closed sheet 132px on every map. Vibe and Regions show a slim chip row; the photo tiles come with the pulled up sheet */
-.vchips,.shint,.shx{display:none}
+.shint,.shx{display:none}
 @media (max-width:760px){
-html body.sheet.vibes #res:not(.sh-up) .vp .vchips:not(#x){display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;margin:2px -20px 0;padding:0 20px 2px;scroll-padding:0 20px}
-html body.sheet.vibes #res:not(.sh-up) .vp .vchips::-webkit-scrollbar{display:none}
-.vchip{flex:none;display:inline-flex;align-items:center;gap:7px;height:38px;padding:0 14px;border-radius:999px;border:1px solid rgba(21,42,46,.14);background:#fff;color:#152A2E;font:500 14.5px/1 'DM Sans',system-ui,sans-serif;cursor:pointer;white-space:nowrap}
-.vchip i{width:9px;height:9px;border-radius:50%;flex:none}
-.vchip span{color:#6B7678;font-weight:500}
-.vchip.on{background:#152A2E;border-color:#152A2E;color:#fff}.vchip.on span{color:rgba(255,255,255,.7)}
-html body.sheet.vibes #res:not(.sh-up) .vp>*:not(.vchips){visibility:hidden}
 /* swipe hint sits right under the grab bar */
 html body.sheet.vibes #res .shint{display:flex;position:absolute;left:0;right:0;top:18px;z-index:5;justify-content:center;align-items:center;gap:4px;padding:0;margin:0;border:0;background:none;color:#5E6B6D;font:600 11.5px/1 'DM Sans',system-ui,sans-serif;letter-spacing:.02em;opacity:0;pointer-events:none;transition:opacity .2s}
 html body.sheet.vibes #res .shint.on{opacity:1;pointer-events:auto}
@@ -599,7 +579,6 @@ html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .pnav button{width:32px!im
 html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .x{width:30px!important;height:30px!important;top:8px!important;right:8px!important;font-size:18px!important}
 html body #mapbox #pop.pop:not(.full):not(#x):not(#y) .rkb{transform:scale(.85);transform-origin:top left}}
 /* ---- Nov 12 (v4): closed sheet shows one row of square photo tiles (Vibe Map and Regions), X on half and full, guide card ---- */
-html body.sheet.vibes #res:not(.sh-up) .vp .vchips:not(#x){display:none!important}
 html body.sheet.vibes #res:not(.sh-up) .vp>*:not(.tiles):not(#x){display:none!important}
 html body.sheet.vibes #res:not(.sh-up) .vp>.tiles.vt:not(#x){visibility:visible!important;margin:4px -20px 0!important;padding:4px 20px 4px!important;gap:10px!important;scroll-padding:0 20px}
 html body.sheet.vibes #res:not(.sh-up) .vp .tiles.vt:not(#x) .tile{flex:0 0 92px!important;width:92px!important}

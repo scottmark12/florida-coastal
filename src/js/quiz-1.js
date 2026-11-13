@@ -29,6 +29,7 @@ function go(vb,ms=450){cancelAnimationFrame(anim);const a=S.vb.slice(),t0=perfor
 function match(t){if(S.style&&!t.v.includes(S.style))return false;if(S.price){const[a,b]=S.price.split('-').map(Number);if(t.pv==null||t.pv<a||t.pv>=b)return false}return true}
 function inView(t,m=0){const v=S.vb;return t.x>v[0]+m&&t.x<v[0]+v[2]-m&&t.y>v[1]+m&&t.y<v[1]+v[3]-m}
 function render(fast){
+ {const[w0,h0]=size();if(w0<20||h0<20||!S.vb||!S.vb.every(isFinite))return}/* the quiz map is hidden until results; drawing at zero size made NaN view boxes */
  const [w,h]=size(),v=S.vb,k=v[2]/w;svg.setAttribute('viewBox',v.join(' '));base.style.setProperty('--k',k);
  const zoomed=v[2]<330,deep=v[2]<200;
  let s='';const boxes=[];

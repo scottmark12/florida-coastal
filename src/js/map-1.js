@@ -163,7 +163,7 @@ box.addEventListener('pointermove',e=>{if(!PTR.has(e.pointerId))return;PTR.set(e
 const ptrEnd=e=>{PTR.delete(e.pointerId);if(PTR.size<2&&pinch){pinch=null;if(dr){const p0=[...PTR.values()][0];if(p0){dr.x=p0[0];dr.y=p0[1];dr.vb=S.vb.slice()}}render()}};
 box.addEventListener('pointerup',ptrEnd);box.addEventListener('pointercancel',ptrEnd);
 box.addEventListener('pointercancel',()=>{dr=null;box.classList.remove('drag')});box.addEventListener('pointermove',e=>{if(!dr||pinch)return;const dx=e.clientX-dr.x,dy=e.clientY-dr.y;if(Math.abs(dx)+Math.abs(dy)>6){dr.moved=true;box.classList.add('drag')}if(!dr.moved)return;const[w]=size(),k=dr.vb[2]/w;S.vb=clampVb([dr.vb[0]-dx*k,dr.vb[1]-dy*k,dr.vb[2],dr.vb[3]]);S.userMoved=1;render(true)});
-box.addEventListener('pointerup',e=>{if(!dr||PTR.size)return;box.classList.remove('drag');if(dr.moved){if(S.region){S.region='';tags()}list()}else{const el=document.elementFromPoint(e.clientX,e.clientY);const rg=el&&el.closest&&el.closest('.rgn');if(rg){pickStyle('r:'+rg.dataset.r);dr=null;return}const nl=el&&el.closest('.clul');const cg=el&&el.closest('.clu');if(nl){const t=T.find(x=>x.id==nl.dataset.id);t&&flyTo(t)}else if(cg){cluZoom(cg.dataset.ids.split(','))}else{const c=el&&el.closest('circle.dot');if(c){openPop(T.find(t=>t.id==c.dataset.id))}else if(!el.closest('.pop'))closePop()}}dr=null});
+box.addEventListener('pointerup',e=>{if(!dr||PTR.size)return;box.classList.remove('drag');if(dr.moved){if(S.region){S.region='';tags()}list()}else{const el=document.elementFromPoint(e.clientX,e.clientY);const rg=el&&el.closest&&el.closest('.rgn');if(rg){pickStyle('r:'+rg.dataset.r);dr=null;return}const nl=el&&el.closest('.clul');if(nl){const t=T.find(x=>x.id==nl.dataset.id);t&&flyTo(t)}else{const c=el&&el.closest('circle.dot');if(c){openPop(T.find(t=>t.id==c.dataset.id))}else if(!el.closest('.pop'))closePop()}}dr=null});
 $('grid').addEventListener('mouseover',e=>{const c=e.target.closest('.card');const id=c?c.dataset.id:null;if(id!==S.hover){S.hover=id;render()}});
 $('grid').addEventListener('mouseleave',()=>{S.hover=null;render()});
 $('q').addEventListener('keydown',e=>{if(e.key!='Enter')return;const q=e.target.value.trim().toLowerCase();if(!q)return;
@@ -176,14 +176,6 @@ S.need={};
 function cluPrio(t){return [-t.v.filter(v=>!isR(v)).length,Math.min(...['beach','walk','charm','meet','water'].map(q=>LD[t.id].rk[q]||999))]}
 function mkClu(L,v,k){const R=40,P=L.map(t=>[t,cluPrio(t)]).sort((a,b)=>a[1][0]-b[1][0]||a[1][1]-b[1][1]).map(x=>x[0]),cs=[];
  P.forEach(t=>{const sx=(t.x-v[0])/k,sy=(t.y-v[1])/k;const c=cs.find(c=>Math.hypot((c[0].x-v[0])/k-sx,(c[0].y-v[1])/k-sy)<R);if(c)c.push(t);else cs.push([t])});return cs.filter(c=>c.length>1)}
-function cluZoom(ids){const M=ids.map(id=>T.find(t=>t.id==id)).filter(Boolean);if(S.vb[2]<=MINW*1.08){cluList(M);return}
- const lo=M.map(t=>t.lo),la=M.map(t=>t.la),to=fit([Math.min(...lo)-.04,Math.max(...lo)+.04,Math.min(...la)-.03,Math.max(...la)+.03],.2);closePop();S.zoomedTo='clu';go(to,520);setTimeout(zoomPill,60);
- // towns that sit nearly on top of each other never split, so the list opens as soon as the zoom lands
- if(to[2]<=MINW*1.08)setTimeout(()=>cluList(M),560)}
-function cluList(M){closePop();{const cx=M.reduce((s,t)=>s+t.x,0)/M.length,cy=M.reduce((s,t)=>s+t.y,0)/M.length,v=S.vb;go([cx-v[2]/2,cy-v[3]*.3,v[2],v[3]],380)}let el=$('clist');if(!el){el=document.createElement('div');el.id='clist';el.className='clist';el.setAttribute('role','dialog');el.setAttribute('aria-label','Towns here');box.appendChild(el);document.addEventListener('pointerdown',e=>{if(el.classList.contains('on')&&!e.target.closest('#clist'))el.classList.remove('on')},true)}
- el.innerHTML=`<div class="cl-hd"><b>${M.length} towns here</b><button type="button" class="cl-x" aria-label="Close">&times;</button></div>`+M.map(t=>`<button type="button" class="cl-r" data-id="${t.id}"><i style="background-image:url('${t.img}')"></i><span><b>${t.n.replace(/ \(.*\)$/,'')}</b><small>${(t.r||'').split(' · ').pop()}</small></span><em>${t.p||''}</em></button>`).join('');
- el.querySelector('.cl-x').onclick=()=>el.classList.remove('on');el.querySelectorAll('.cl-r').forEach(b=>b.onclick=()=>{el.classList.remove('on');const t=T.find(x=>x.id==b.dataset.id);openPop(t);S.mode=='vibes'&&vRender()});
- requestAnimationFrame(()=>el.classList.add('on'))}
 function needOk(t){const n=S.need,d=LD[t.id];if(n.bud&&!(d.med&&d.med<=n.bud))return false;if(n.school&&!d.sc)return false;if(n.air&&!d.air)return false;return true}
 const needOn=()=>Object.keys(S.need).some(k=>S.need[k]);
 function vOrder(){if(S.style=='best')return T.filter(t=>t.v.includes('best')&&needOk(t)).sort((a,b)=>a.bestRk-b.bestRk);const R=LK.REGIONS.map(r=>r.id),pos=t=>t.c=='panhandle'?t.lo:t.c=='gulf'?-t.la:t.c=='keys'?-t.lo:t.la;
@@ -193,13 +185,13 @@ function needsHTML(){const n=S.need,c=T.filter(t=>(!S.style||t.v.includes(S.styl
 function vRender(){const _r=document.querySelector('#vp .tiles.vt'),_sl=_r?_r.scrollLeft:0;setTimeout(()=>{const r=document.querySelector('#vp .tiles.vt');if(r&&_sl)r.scrollLeft=_sl},0);const v=S.style;let h;const MOB=matchMedia('(max-width:760px)').matches;
  if(true){const cnt=k=>T.filter(t=>t.v.includes(k)&&needOk(t)).length;
   const RG=S.sub=='regions',KS=RG?R7.map(r=>'r:'+r[0]):LK.VFEEL,img=k=>RG?(T.find(t=>t.id==RPH[k.slice(2)])||T.find(t=>t.v.includes(k))).img:`img/vibes/${k}.webp`,ri=v&&RG?RCOPY[v.slice(2)]:null;
-  h=`<div class="vchips">${KS.map(k=>`<button type="button" class="vchip${k==v?' on':''}" data-k="${k}">${RG?'':`<i style="background:${VCOL[k]}"></i>`}<b>${VIBES[k]}</b><span>${cnt(k)}</span></button>`).join('')}</div><div class="vm-lh"><div class="vm-eb">${ri?`Region · ${cnt(v)} beach towns`:`${T.length} beach towns · ${KS.length} ${RG?'regions':'styles'}`}</div>${ri?`<h2>${VIBES[v]}</h2>`:''}<button type="button" class="vm-all" onclick="this.closest('.vp').classList.toggle('vt-open');this.textContent=this.closest('.vp').classList.contains('vt-open')?'Show less':'See all ${KS.length}'">See all ${KS.length}</button></div>${ri?`<p class="vm-ri">${ri.intro}</p>`:''}${v&&LK.VGUIDE[v]?`<a class="vm-guide vm-guide-t" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="tiles vt${RG?' rg':''}">${KS.map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('${img(k)}')"><i>${RG?'':`<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>`}${cnt(k)}</i><span class="tt"><b>${VIBES[k]}</b><small>${LK.VSUBL[k]||VSUB[k]}</small></span></div></button>`).join('')}</div>`}
+  h=`<div class="vm-lh"><div class="vm-eb">${ri?`Region · ${cnt(v)} beach towns`:`${T.length} beach towns · ${KS.length} ${RG?'regions':'styles'}`}</div>${ri?`<h2>${VIBES[v]}</h2>`:''}<button type="button" class="vm-all" onclick="this.closest('.vp').classList.toggle('vt-open');this.textContent=this.closest('.vp').classList.contains('vt-open')?'Show less':'See all ${KS.length}'">See all ${KS.length}</button></div>${ri?`<p class="vm-ri">${ri.intro}</p>`:''}${v&&LK.VGUIDE[v]?`<a class="vm-guide vm-guide-t" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="tiles vt${RG?' rg':''}">${KS.map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('${img(k)}')"><i>${RG?'':`<span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>`}${cnt(k)}</i><span class="tt"><b>${VIBES[k]}</b><small>${LK.VSUBL[k]||VSUB[k]}</small></span></div></button>`).join('')}</div>`}
  else{const L=vOrder();
   h=`<div class="vm-sh" style="background-image:url('img/vibes/${v}.webp')"><button class="vm-back" id="vback">← All styles</button><div class="vm-sht"><h2><i style="background:${VCOL[v]}"></i>${VIBES[v]}</h2><p>${L.length} towns · ${LK.VSUBL[v]||VSUB[v]}</p></div></div>${LK.VGUIDE[v]?`<a class="vm-guide" href="articles/best-florida-beach-towns-for-${LK.VGUIDE[v]}.html">Read the ${LK.VSHORT[v]||VIBES[v]} guide →</a>`:''}<div class="vm-eb vm-lt">Panhandle around to the Keys</div><ol class="vm-list">${L.map((t,i)=>`<li><button class="vm-row${S.pop&&S.pop.id==t.id?' on':''}" data-vpick="${t.id}" style="--vc:${VCOL[v]}"><span class="vm-n">${i+1}</span><span class="vm-rt"><b>${t.n}</b><small>${LD[t.id].rn}</small></span></button></li>`).join('')}</ol>`}
  /* Nov 12: no See your top 5 button on Vibe and Regions sheets (Mark: it gets in the way when you swipe up) */
  $('vp').innerHTML=h;
  $('vp').querySelectorAll('.tile').forEach(b=>{b.classList.toggle('on',b.dataset.k==S.style);b.onclick=()=>{if(S.style==b.dataset.k)return;const sl=$('vp').querySelector('.tiles.vt').scrollLeft;pickStyle(b.dataset.k);const r=$('vp').querySelector('.tiles.vt');if(r)r.scrollLeft=sl}});
- {const cr=$('vp').querySelector('.vchips');if(cr){cr.scrollLeft=S.chipX||0;cr.onscroll=()=>{S.chipX=cr.scrollLeft};cr.querySelectorAll('.vchip').forEach(b=>b.onclick=()=>{if(S.style==b.dataset.k)return;S.chipX=cr.scrollLeft;pickStyle(b.dataset.k)});const on=cr.querySelector('.vchip.on');if(on&&(on.offsetLeft<cr.scrollLeft||on.offsetLeft+on.offsetWidth>cr.scrollLeft+cr.clientWidth))cr.scrollLeft=S.chipX=Math.max(0,on.offsetLeft-20)}}
+ 
  $('vp').querySelectorAll('[data-vpick]').forEach(b=>{b.onclick=()=>flyTo(T.find(t=>t.id==b.dataset.vpick));b.onmouseenter=()=>{S.hover=b.dataset.vpick;render()};b.onmouseleave=()=>{S.hover=null;render()}});
  $('vp').querySelectorAll('[data-need]').forEach(b=>b.onclick=()=>{const k=b.dataset.need;S.need[k]=!S.need[k];needChange()});
  $('ndbud')&&($('ndbud').onchange=e=>{S.need.bud=+e.target.value||0;needChange()});
@@ -275,7 +267,7 @@ const SHEET={st:'peek',y:0};
 const SHON=()=>document.body.classList.contains('sheet');
 const IOSB=()=>(/iPhone|iPod/.test(navigator.userAgent)&&!navigator.standalone&&matchMedia('(max-width:760px)').matches)?72:0;
 function PK(){return PK0()+(IOSB()?8:0)}/* Nov 12: iOS Safari's floating bar no longer eats the layout viewport, so the old 72px pad left a blank band */
-function PK0(){return 132;const r=$('res'),tl=$('vp')&&$('vp').querySelector('.tiles.vt');if(!r||!tl)return 300;const pr=r.getBoundingClientRect(),tb=tl.getBoundingClientRect();return Math.min(380,Math.round(tb.top-pr.top+Math.min(tb.height,140)+16))}
+function PK0(){return 132}
 function shStops(){const vh=innerHeight;return {peek:vh-PK(),half:Math.round(vh*.44),full:60+SAT()}}
 function SHRES(){const vh=innerHeight,pe=$('pop');if(SHEET.st=='peek'||SHEET.st=='low')return SHB()+(pe&&pe.classList.contains('on')?pe.offsetHeight+12:0)+14;return vh-shStops()[SHEET.st]+14}
 function shApply(y,anim){const r=$('res');SHEET.y=y;r.style.transition=anim?'transform .32s cubic-bezier(.2,.8,.2,1)':'none';r.style.transform=`translate3d(0,${y}px,0)`;
@@ -410,52 +402,16 @@ if(params.get('open')){const t=T.find(t=>t.id==params.get('open'));if(t)setTimeo
 /* Nov 12: Best overall. Our top 15 on the Slider Map's Best all around scoring becomes the first Vibe Map style, and the page opens on it */
 (function(){const R=T.slice().sort((a,b)=>fitSl(b)-fitSl(a)).slice(0,15);R.forEach((t,i)=>{if(!t.v.includes('best'))t.v.push('best');t.bestRk=i+1});
  VIBES.best='Well rounded';VCOL.best='#1F3A6E';VSUB.best='Strong on everything';if(LK.VSUBL)LK.VSUBL.best='Our top 15, strong on all 10 priorities';if(LK.VSHORT)LK.VSHORT.best='Well rounded';if(!LK.VFEEL.includes('best'))LK.VFEEL.push('best')})();
-function mapIntro(kind){const p=$('pop');if(!p||S.pop)return;let f,eb,h3,tx,img;const sh=x=>x.n.replace(/ \(.*\)$/,'');
- if(kind=='sliders'){f=T.find(t=>t.id==S.top[0]);eb='The Slider Map';h3='Best all around';tx='All 10 priorities count the same. Move a slider to make it yours.';img=f&&f.img}
- else if(kind=='regions'){f=vOrder()[0];eb='The Regions Map';h3='Seven regions';tx='Pick a stretch of coast and see every town in it.';img=(T.find(t=>t.id==RPH[(S.style||'').slice(2)])||f||{}).img}
- else{f=vOrder()[0];eb='The Vibe Map';h3='Find your feel';tx='Pick a style and the towns that have it light up.';img='img/vibes/best.webp'}
- if(!f)return;p.innerHTML=`<div class="ph" style="background-image:url('${img}')"></div><button class="x" aria-label="Close">&times;</button><div class="bd bintro"><div class="eb">${eb}</div><h3>${h3}</h3><p>${tx}</p><div class="pnav"><a class="go" href="#" data-first="1">Meet ${kind=='regions'?'':'#1, '}${sh(f)} →</a><button data-st="1" aria-label="Next town">›</button></div></div>`;
- const go1=e=>{e&&e.preventDefault();e&&e.stopPropagation();p.dataset.intro='';S.introDone=1;if(kind=='sliders')openPop(f,true);else flyTo(f)};p.querySelector('[data-first]').onclick=go1;p.querySelector('[data-st]').onclick=go1;p.querySelector('.x').onclick=e=>{e.stopPropagation();S.introDone=1;p.classList.remove('on')};p.onclick=null;p.dataset.intro=kind;p.classList.remove('full');p.classList.add('on');placePop()}
+function mapIntro(){}/* replaced by the guide card below */
 function bestIntro(){if(S.mode=='vibes'&&S.style=='best')mapIntro('vibes')}
 // swipe a town card left or right to step through the list (the intro card swipes to #1)
 (function(){const p=$('pop');if(!p)return;let x0=null,y0=0;p.addEventListener('touchstart',e=>{const t=e.touches[0];x0=t.clientX;y0=t.clientY},{passive:true});
  p.addEventListener('touchend',e=>{if(x0==null)return;const t=e.changedTouches[0],dx=t.clientX-x0,dy=t.clientY-y0;x0=null;if(Math.abs(dx)<44||Math.abs(dx)<Math.abs(dy)*1.3)return;const b=p.querySelector(`[data-st="${dx<0?1:-1}"]`)||(dx<0&&p.querySelector('[data-st="1"]'));b&&b.click()},{passive:true})})();
 const VDEF={regions:'r:panhandle',styles:'best'};
 function ensurePick(){if(S.mode!='vibes'||S.style||S.restoring)return;let k;if(S.sub=='regions'){render();rSweep();return}else{const m=S.mem&&S.mem.styles&&S.mem.styles.st;k=m&&VIBES[m]?m:VDEF.styles}S.auto=1;pickStyle(k);setTimeout(()=>{S.auto=0},400);if(k=='best')setTimeout(bestIntro,650);else if(S.sub=='regions'&&!S.introR){S.introR=1;setTimeout(()=>{if(S.mode=='vibes'&&S.sub=='regions')mapIntro('regions')},650)}}
-(function(){let touched=false;const stop=()=>{touched=true};['pointerdown','keydown','wheel','touchstart'].forEach(ev=>addEventListener(ev,stop,{passive:true,capture:true}));
- const fresh=()=>S.sub=='regions'?rGet()===null:!(S.mem&&S.mem.styles&&S.mem.styles.st);
- const tick=()=>{if(true||S.sub!='regions'||$('pop').classList.contains('on'))return;if(touched||S.touchedPick||document.hidden||S.mode!='vibes'||S.pop||!fresh())return;const K=S.sub=='regions'?R7.map(r=>'r:'+r[0]):LK.VFEEL;const i=Math.max(0,K.indexOf(S.style));S.auto=1;pickStyle(K[(i+1)%K.length]);setTimeout(()=>{S.auto=0},400)};
- setTimeout(ensurePick,700);setInterval(tick,3200)})();
+setTimeout(ensurePick,700);
 
-// ---- Nov 12 (v2): Apple style tips. One small tip at a time, it goes away the moment you do what it says (and never comes back), or fades on its own after a few seconds ----
-(function(){
- const done=id=>{try{return !!localStorage.getItem('fc-tip-'+id)}catch(e){return true}},mark=id=>{try{localStorage.setItem('fc-tip-'+id,'1')}catch(e){}};
- const TIPS=[
-  {id:'pick',when:()=>S.mode=='vibes',el:()=>document.querySelector('#vp .tiles.vt'),txt:()=>S.sub=='regions'?'Pick a region to see its towns.':'Pick a style that feels like home.'},
-  {id:'dot',when:()=>S.mode=='vibes'&&done('pick'),el:()=>null,txt:()=>'Tap any dot to meet that town.'},
-  {id:'drag',when:()=>SHON()&&done('pick')&&done('dot'),el:()=>$('res'),txt:()=>'Drag up to see more.'},
-  {id:'slide',when:()=>S.mode=='sliders'&&SHON(),el:()=>$('res'),txt:()=>'Drag up and slide what matters to you.'}];
- let on=null,tm=null;
- const hide=()=>{clearTimeout(tm);if(on){const b=on.b;b.classList.remove('in');setTimeout(()=>b.remove(),250);on=null}};
- const finish=id=>{mark(id);if(on&&on.id==id)hide();setTimeout(next,900)};
- function next(){return;/* Nov 12 v4: the guide card teaches each map now */if(on||document.hidden)return;try{if(sessionStorage.getItem('fc-tip-v'))return}catch(e){}const t=TIPS.find(t=>!done(t.id)&&t.when());if(!t)return;
-  const b=document.createElement('div');b.className='ftip';b.setAttribute('role','status');b.innerHTML=`<span>${t.txt()}</span><i class="ft-arr"></i>`;document.body.appendChild(b);
-  const el=t.el(),w=Math.min(280,innerWidth-32);let x=(innerWidth-w)/2,y=Math.round(innerHeight*.42),arr=false;
-  if(el){const r=el.getBoundingClientRect();if(r.width){const top=el===$('res')?r.top:r.top;x=Math.max(16,Math.min(innerWidth-w-16,r.left+r.width/2-w/2));y=top-b.offsetHeight-12;arr=true}}
-  Object.assign(b.style,{left:x+'px',top:Math.max(80,y)+'px',width:w+'px'});b.querySelector('.ft-arr').style.display=arr?'':'none';
-  b.onclick=()=>finish(t.id);on={id:t.id,b};try{sessionStorage.setItem('fc-tip-v','1')}catch(e){}requestAnimationFrame(()=>b.classList.add('in'));
-  tm=setTimeout(()=>{if(on&&on.id==t.id){hide()}},3000)}
- // any touch, scroll, drag or key anywhere kills the tip right away (and it never comes back)
- ['pointerdown','touchstart','wheel','keydown'].forEach(ev=>addEventListener(ev,()=>{if(on){const id=on.id;mark(id);clearTimeout(tm);const b=on.b;b.remove();on=null}},{passive:true,capture:true}));
- // the actions that complete each tip
- const wrap=(n,f)=>{const o=window[n];window[n]=function(){const r=o.apply(this,arguments);try{f.apply(this,arguments)}catch(e){}return r}};
- wrap('pickStyle',()=>{if(!S.auto&&!S.restoring)finish('pick')});
- wrap('openPop',()=>{if(!S.restoring)finish('dot')});
- document.addEventListener('pointerdown',e=>{if(e.target.closest&&e.target.closest('#res')&&SHON())setTimeout(()=>{if(SHEET.st!='peek'){finish('drag');if(S.mode=='sliders')finish('slide')}},700)},true);
- document.addEventListener('input',e=>{if(e.target.closest&&e.target.closest('#sl'))finish('slide')},true);
- addEventListener('resize',hide);
- setTimeout(next,2200);const sm=window.setMode;window.setMode=setMode=function(m){hide();sm.apply(this,arguments);setTimeout(next,1800)};
-})();
+
 // ---- Nov 12: phone hint that the sheet pulls up. Shows on the closed sheet until the first pull, then never again ----
 (function(){if(!$('res'))return;{const x=document.createElement('button');x.type='button';x.className='shx';x.setAttribute('aria-label','Back to the map');x.innerHTML='&times;';x.onclick=e=>{e.stopPropagation();shSet('peek')};$('res').prepend(x)}const el=document.createElement('button');el.type='button';el.className='shint';el.setAttribute('aria-label','Swipe up for all towns');el.innerHTML='<svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 15l6-6 6 6"/></svg><span>Swipe up for all towns</span>';$('res').appendChild(el);
  const seen=()=>{try{return !!localStorage.getItem('fc-shint')}catch(e){return false}};
@@ -578,7 +534,7 @@ function SHB(){return typeof SHEET!='undefined'&&SHEET.st=='low'?LH():PK()}
 (function(){const st0=shStops;shStops=function(){const o=st0();o.low=innerHeight-(SHON()?LH():PK());return o};
  const ss=shSet;shSet=function(name,noFit){const r=$('res');if(r)r.classList.toggle('sh-low',name=='low');const out=ss.apply(this,arguments);if(r){r.classList.toggle('sh-up',name=='half'||name=='full')}document.body.style.setProperty('--pk',(name=='low'?LH():PK())+'px');return out};
  // auto open the sliders once per visit so they are easy to find; any tap on the map drops them back down
- let auto=false;const tryOpen=()=>{if(!SHON()||S.mode!='sliders'||slAnySet()||SHEET.st!='peek')return;try{if(sessionStorage.getItem('fc-slopen'))return;sessionStorage.setItem('fc-slopen','1')}catch(e){}auto=true;shSet('half')};
+ let auto=false;const tryOpen=()=>{const pe=$('pop');if(!SHON()||S.mode!='sliders'||slAnySet()||SHEET.st!='peek'||(pe&&pe.classList.contains('on')&&pe.dataset.intro))return;/* the guide card already points at the sliders */try{if(sessionStorage.getItem('fc-slopen'))return;sessionStorage.setItem('fc-slopen','1')}catch(e){}auto=true;shSet('half')};
  const sm=window.setMode;window.setMode=setMode=function(m){const o=sm.apply(this,arguments);if(m=='sliders')setTimeout(tryOpen,1400);return o};
  setTimeout(()=>{if(S.mode=='sliders')tryOpen()},1800);
  $('mapbox')&&$('mapbox').addEventListener('pointerdown',()=>{if(auto&&SHON()&&SHEET.st=='half'){auto=false;shSet('peek')}},true);
