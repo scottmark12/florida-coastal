@@ -6,6 +6,7 @@
   var U=function(p){return new URL(p,ROOT).href};
   var IDX=null,loading=null;
   function load(){if(IDX)return Promise.resolve(IDX);if(loading)return loading;loading=fetch(U('assets/search-index.json?v=3')).then(function(r){return r.json()}).then(function(d){IDX=d;return d});return loading}
+  var ZIP=null,zl=null;function loadZip(){if(ZIP)return Promise.resolve(ZIP);if(zl)return zl;zl=fetch(U('assets/search-zip.json?v=1')).then(function(r){return r.json()}).then(function(d){ZIP=d;return d});return zl}
   var esc=function(s){return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;')};
   var norm=function(s){return String(s||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim()};
   var SVG='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>';
@@ -39,7 +40,7 @@
   document.head.appendChild(css);
 
   var el=document.createElement('div');el.className='fcs';el.setAttribute('role','dialog');el.setAttribute('aria-modal','true');el.setAttribute('aria-label','Search');
-  el.innerHTML='<div class="fcs-bg"></div><div class="fcs-box"><div class="fcs-top">'+SVG+'<input type="search" placeholder="Search a town, region or guide" aria-label="Search towns, regions and guides" autocomplete="off" spellcheck="false"><button class="fcs-x" type="button" aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Cancel</span></button></div><div class="fcs-res" role="listbox"></div></div>';
+  el.innerHTML='<div class="fcs-bg"></div><div class="fcs-box"><div class="fcs-top">'+SVG+'<input type="search" placeholder="Search a town, ZIP, region or guide" aria-label="Search towns, ZIP codes, regions and guides" autocomplete="off" spellcheck="false"><button class="fcs-x" type="button" aria-label="Close search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg><span>Cancel</span></button></div><div class="fcs-res" role="listbox"></div></div>';
   var inp=el.querySelector('input'),res=el.querySelector('.fcs-res'),sel=0,items=[];
   function ready(f){document.body?f():document.addEventListener('DOMContentLoaded',f)}
   ready(function(){document.body.appendChild(el)});
@@ -55,6 +56,14 @@
   function render(){
     var q=norm(inp.value),h='';
     if(!IDX){res.innerHTML='<p class="fcs-none">Loading…</p>';return}
+    var qd=inp.value.replace(/\s/g,'');
+    if(/^\d{3,5}$/.test(qd)){
+      if(!ZIP){res.innerHTML='<p class="fcs-none">Looking up that ZIP…</p>';loadZip().then(render);return}
+      var seen={},Zs=Object.keys(ZIP).filter(function(z){return z.indexOf(qd)===0}).sort().filter(function(z){var id=ZIP[z][0];if(seen[id])return false;seen[id]=1;return true}).slice(0,6);
+      h=Zs.length?'<div class="fcs-h">ZIP codes</div>'+Zs.map(function(z){var m=ZIP[z],t=IDX.t.find(function(x){return x.i===m[0]});if(!t)return '';return '<a class="fcs-it" href="'+U('towns/'+t.i+'-v3.html')+'"><i style="background-image:url(\''+U(t.img)+'\')"></i><span><b>'+esc(t.n)+'</b><small>'+esc((m[1]?'Closest town to '+z+' '+m[2]+', about '+m[1]+' mi':'ZIP '+z+' · '+m[2])+' · '+t.r.split(' · ').pop())+'</small></span></a>'}).join('')
+        :(qd.length==5?'<p class="fcs-none">ZIP '+esc(qd)+' isn’t near one of our 167 beach towns.</p><a class="fcs-it" href="'+U('towns/index-v2.html')+'"><i style="background-image:url(\''+U('img/c/destin.jpg')+'\')"></i><span><b>See all 167 beach towns</b><small>Browse by region or A to Z</small></span></a>':'<p class="fcs-none">Keep typing the ZIP…</p>');
+      res.innerHTML=h;items=[].slice.call(res.querySelectorAll('.fcs-it'));sel=0;mark();return
+    }
     if(q.length<2){
       var RC=recent().map(function(i){return IDX.t.find(function(t){return t.i===i})}).filter(Boolean).slice(0,3),rs=RC.map(function(t){return t.i});
       var P=IDX.pop.filter(function(i){return rs.indexOf(i)<0}).map(function(i){return IDX.t.find(function(t){return t.i===i})}).filter(Boolean);

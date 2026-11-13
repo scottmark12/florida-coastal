@@ -2,7 +2,7 @@
 // ---- Nov 12: the maps never sit empty. They always show a real pick; on a first visit they step through real picks until the first touch, then stop for good ----
 /* Nov 12: Best overall. Our top 15 on the Slider Map's Best all around scoring becomes the first Vibe Map style, and the page opens on it */
 (function(){const R=T.slice().sort((a,b)=>fitSl(b)-fitSl(a)).slice(0,15);R.forEach((t,i)=>{if(!t.v.includes('best'))t.v.push('best');t.bestRk=i+1});
- VIBES.best='Well rounded';VCOL.best='#1F3A6E';VSUB.best='Strong on everything';if(LK.VSUBL)LK.VSUBL.best='Our top 15, strong on all 10 priorities';if(LK.VSHORT)LK.VSHORT.best='Well rounded';if(!LK.VFEEL.includes('best'))LK.VFEEL.push('best')})();
+ VIBES.best='Best quality of life';VCOL.best='#1F3A6E';VSUB.best='Strong on everything';if(LK.VSUBL)LK.VSUBL.best='Our top 15, strong on all 10 priorities';if(LK.VSHORT)LK.VSHORT.best='Well rounded';if(!LK.VFEEL.includes('best'))LK.VFEEL.push('best')})();
 function mapIntro(){}/* replaced by the guide card below */
 function bestIntro(){if(S.mode=='vibes'&&S.style=='best')mapIntro('vibes')}
 // swipe a town card left or right to step through the list (the intro card swipes to #1)
