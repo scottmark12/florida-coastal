@@ -40,10 +40,25 @@
     '.fcm .fcm-cta{margin-top:auto;padding-top:28px}'+
     '.fcm .fcm-cta a{display:block;text-align:center;background:#16282c;color:#fff;text-decoration:none;border-radius:999px;padding:16px;font-size:16px;font-weight:600}'+
     '.fcm .fcm-cta p{text-align:center;font-size:13px;color:#6b7473;margin:10px 0 0}'+
-    'html.fcm-lock,html.fcm-lock body{overflow:hidden!important}';
+    'html.fcm-lock,html.fcm-lock body{overflow:hidden!important}'+
+    /* Nov 13: Maps dropdown (Regions, Vibe Map, Slider Map) */
+    'header .fcmaps{position:relative;display:inline-flex;align-items:center}'+
+    'html body header .fcmaps>a[data-nav=maps]:not(#x){display:inline-flex;align-items:center}'+
+    'header .fcmaps>a[data-nav=maps] .fcmaps-c{display:inline-block;width:6px;height:6px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:translateY(-2px) rotate(45deg);margin-left:7px;transition:transform .18s}'+
+    'header .fcmaps:hover .fcmaps-c,header .fcmaps:focus-within .fcmaps-c{transform:translateY(1px) rotate(-135deg)}'+
+    'html body header .fcmaps .fcmaps-dd:not(#x){position:absolute;top:100%;left:50%;margin-top:10px;transform:translate(-50%,6px);min-width:190px;background:#fff;border-radius:14px;box-shadow:0 18px 44px rgba(10,20,22,.18),0 0 0 1px rgba(10,20,22,.05);padding:6px;display:flex;flex-direction:column;opacity:0;visibility:hidden;transition:opacity .16s,transform .16s,visibility 0s .16s;z-index:90}'+
+    'header .fcmaps .fcmaps-dd::before{content:"";position:absolute;left:0;right:0;top:-16px;height:16px}'+
+    'html body header .fcmaps:hover .fcmaps-dd:not(#x),html body header .fcmaps:focus-within .fcmaps-dd:not(#x){opacity:1;visibility:visible;transform:translate(-50%,0);transition:opacity .16s,transform .16s}'+
+    'html body header .fcmaps .fcmaps-dd a.fcmaps-i:not(#x):not(#y){display:block!important;position:static!important;padding:11px 14px!important;margin:0!important;border:0!important;border-radius:10px!important;background:none!important;box-shadow:none!important;color:#152A2E!important;font-family:"DM Sans",system-ui,sans-serif!important;font-size:15px!important;font-weight:500!important;line-height:1.25!important;letter-spacing:0!important;text-transform:none!important;text-decoration:none!important;white-space:nowrap;opacity:1!important}'+
+    'html body header .fcmaps .fcmaps-dd a.fcmaps-i:not(#x):not(#y)::before,html body header .fcmaps .fcmaps-dd a.fcmaps-i:not(#x):not(#y)::after{display:none!important}'+
+    'html body header .fcmaps .fcmaps-dd a.fcmaps-i:not(#x):not(#y):hover,html body header .fcmaps .fcmaps-dd a.fcmaps-i:not(#x):not(#y):focus-visible{background:#F2EFEA!important}'+
+    '@media '+MQ+'{header .fcmaps-dd{display:none!important}}'+
+    '.fcm nav .fcm-gl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#6b7473;padding:20px 2px 2px}'+
+    '.fcm nav a.fcm-sub{font-size:19px;padding:13px 2px 13px 14px}';
     document.head.appendChild(css);
 
     if(getComputedStyle(hdr).position=='static')hdr.style.position='relative';
+    hdr.querySelectorAll('.fcmaps>a[data-nav=maps]').forEach(function(a){if(!a.querySelector('.fcmaps-c')){var c=document.createElement('i');c.className='fcmaps-c';c.setAttribute('aria-hidden','true');a.appendChild(c)}});
     hdr.querySelectorAll('a[href*="quiz-photo"]').forEach(function(q){q.classList.add('fcq')});
     function tone(){var c=getComputedStyle(hdr).backgroundColor,m=c.match(/[\d.]+/g)||[0,0,0,0],al=m.length>3?+m[3]:1,l=(+m[0]*.3+ +m[1]*.59+ +m[2]*.11);hdr.classList.toggle('fcq-dark',al<.35||l<90)}
     tone();addEventListener('scroll',tone,{passive:true});setTimeout(tone,400);
@@ -69,6 +84,8 @@
     var homeHref=new URL('/home-v2.html',location.href).href,hp=new URL(homeHref).pathname;
     var extra=function(href,label,isCur){return '<a href="'+href+'"'+(isCur?' class="cur" aria-current="page"':'')+'>'+label+'<span>→</span></a>'};
     var items=extra(homeHref,'Home',location.pathname==hp||location.pathname=='/'||/\/index\.html$/.test(location.pathname))+links.map(function(a){
+      if(a.dataset.nav=='maps'){var mode=new URLSearchParams(location.search).get('mode')||'regions',onMap=/vibe-v3/.test(location.pathname);
+        return '<div class="fcm-gl">Maps</div>'+[].slice.call(a.parentNode.querySelectorAll('a.fcmaps-i')).map(function(x){var c=onMap&&x.dataset.sub==mode;return '<a class="fcm-sub'+(c?' cur" aria-current="page':'')+'" href="'+x.href+'">'+x.textContent.trim()+'<span>→</span></a>'}).join('')}
       var u=new URL(a.href),cur=a.classList.contains('on')||a.getAttribute('aria-current')=='page'||(u.pathname+u.search)==here;
       return '<a href="'+a.href+'"'+(cur?' class="cur" aria-current="page"':'')+'>'+a.textContent.trim()+'<span>→</span></a>';
     }).join('')+extra(quizHref,'Quiz',/quiz-photo/.test(location.pathname));
