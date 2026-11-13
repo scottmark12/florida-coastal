@@ -58,3 +58,8 @@ html body section.news:not(#a):not(#b):not(#c) #newsform{flex-direction:column!i
 html body section.news:not(#a):not(#b):not(#c) #newsform input[type=email],html body section.news:not(#a):not(#b):not(#c) #newsform button{width:100%!important;flex:none!important}
 }
 html body section.dk-hero:not(#a):not(#b):not(#c) .dk-eyebrow{font-weight:600!important;letter-spacing:.14em!important}
+/* Nov 12: bigger desktop hero headline so it owns the photo */
+@media (min-width:1001px){
+html body section.dk-hero:not(#a):not(#b):not(#c):not(#d) .dk-l{max-width:min(1000px,72vw)!important}
+html body section.dk-hero:not(#a):not(#b):not(#c):not(#d) h1{font-size:clamp(60px,6.2vw,100px)!important;line-height:1.04!important;letter-spacing:-.025em!important;max-width:none!important}
+}
