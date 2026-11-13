@@ -49,8 +49,8 @@
   var PIN='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.2 7-11.5A7 7 0 0 0 5 9.5C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg>';
   var BOOK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5h6a2 2 0 0 1 2 2v12a2 2 0 0 0-2-2H4zM20 5h-6a2 2 0 0 0-2 2v12a2 2 0 0 1 2-2h6z"/></svg>';
   function via(t,q){if(!q||score(t.n,q)<9)return '';var k=(t.k||[]).find(function(x){return score(x,q)<9});return k?'Covers '+k+' · ':''}
-  function town(t,q){return '<a class="fcs-it" href="'+U('towns/'+t.i+'-v3.html')+'"><i style="background-image:url(\''+U(t.img)+'\')"></i><span><b>'+hi(t.n,q)+'</b><small>'+esc(via(t,q)+t.r)+'</small></span>'+'</a>'}
-  function region(r,q){return '<a class="fcs-it" href="'+U('towns/index-v2.html#'+(r.top?r.i:r.c+'/'+r.i))+'"><i style="background-image:url(\''+U(r.img)+'\')"></i><span><b>'+hi(r.n,q)+'</b><small>'+(r.top?'Region':'Area')+' · '+r.k+' beach towns</small></span></a>'}
+  function town(t,q){return '<a class="fcs-it" href="'+U('towns/'+t.i+'.html')+'"><i style="background-image:url(\''+U(t.img)+'\')"></i><span><b>'+hi(t.n,q)+'</b><small>'+esc(via(t,q)+t.r)+'</small></span>'+'</a>'}
+  function region(r,q){return '<a class="fcs-it" href="'+U('towns/index.html#'+(r.top?r.i:r.c+'/'+r.i))+'"><i style="background-image:url(\''+U(r.img)+'\')"></i><span><b>'+hi(r.n,q)+'</b><small>'+(r.top?'Region':'Area')+' · '+r.k+' beach towns</small></span></a>'}
   function art(a,q){return '<a class="fcs-it" href="'+U(a.u)+'"><i style="background-image:url(\''+U(a.img)+'\')"></i><span><b>'+hi(a.n,q)+'</b><small>Guide</small></span></a>'}
   function score(name,q){var n=norm(name);if(n===q)return 0;if(n.indexOf(q)===0)return 1;if((' '+n).indexOf(' '+q)>=0)return 2;if(n.indexOf(q)>=0)return 3;return 9}
   function render(){
@@ -60,8 +60,8 @@
     if(/^\d{3,5}$/.test(qd)){
       if(!ZIP){res.innerHTML='<p class="fcs-none">Looking up that ZIP…</p>';loadZip().then(render);return}
       var seen={},Zs=Object.keys(ZIP).filter(function(z){return z.indexOf(qd)===0}).sort().filter(function(z){var id=ZIP[z][0];if(seen[id])return false;seen[id]=1;return true}).slice(0,6);
-      h=Zs.length?'<div class="fcs-h">ZIP codes</div>'+Zs.map(function(z){var m=ZIP[z],t=IDX.t.find(function(x){return x.i===m[0]});if(!t)return '';return '<a class="fcs-it" href="'+U('towns/'+t.i+'-v3.html')+'"><i style="background-image:url(\''+U(t.img)+'\')"></i><span><b>'+esc(t.n)+'</b><small>'+esc((m[1]?'Closest town to '+z+' '+m[2]+', about '+m[1]+' mi':'ZIP '+z+' · '+m[2])+' · '+t.r.split(' · ').pop())+'</small></span></a>'}).join('')
-        :(qd.length==5?'<p class="fcs-none">ZIP '+esc(qd)+' isn’t near one of our 167 beach towns.</p><a class="fcs-it" href="'+U('towns/index-v2.html')+'"><i style="background-image:url(\''+U('img/c/destin.jpg')+'\')"></i><span><b>See all 167 beach towns</b><small>Browse by region or A to Z</small></span></a>':'<p class="fcs-none">Keep typing the ZIP…</p>');
+      h=Zs.length?'<div class="fcs-h">ZIP codes</div>'+Zs.map(function(z){var m=ZIP[z],t=IDX.t.find(function(x){return x.i===m[0]});if(!t)return '';return '<a class="fcs-it" href="'+U('towns/'+t.i+'.html')+'"><i style="background-image:url(\''+U(t.img)+'\')"></i><span><b>'+esc(t.n)+'</b><small>'+esc((m[1]?'Closest town to '+z+' '+m[2]+', about '+m[1]+' mi':'ZIP '+z+' · '+m[2])+' · '+t.r.split(' · ').pop())+'</small></span></a>'}).join('')
+        :(qd.length==5?'<p class="fcs-none">ZIP '+esc(qd)+' isn’t near one of our 167 beach towns.</p><a class="fcs-it" href="'+U('towns/index.html')+'"><i style="background-image:url(\''+U('img/c/destin.jpg')+'\')"></i><span><b>See all 167 beach towns</b><small>Browse by region or A to Z</small></span></a>':'<p class="fcs-none">Keep typing the ZIP…</p>');
       res.innerHTML=h;items=[].slice.call(res.querySelectorAll('.fcs-it'));sel=0;mark();return
     }
     if(q.length<2){
@@ -76,7 +76,7 @@
       if(T.length)h+='<div class="fcs-h">Towns</div>'+T.map(function(t){return town(t,q)}).join('');
       if(R.length)h+='<div class="fcs-h">Regions</div>'+R.map(function(r){return region(r,q)}).join('');
       if(A.length)h+='<div class="fcs-h">Guides</div>'+A.map(function(a){return art(a,q)}).join('');
-      if(!h)h='<p class="fcs-none">No town, region or guide matches “'+esc(inp.value.trim())+'”.</p><a class="fcs-it" href="'+U('towns/index-v2.html')+'"><i style="background-image:url(\''+U('img/c/destin.jpg')+'\')"></i><span><b>See all 167 beach towns</b><small>Browse by region or A to Z</small></span></a>';
+      if(!h)h='<p class="fcs-none">No town, region or guide matches “'+esc(inp.value.trim())+'”.</p><a class="fcs-it" href="'+U('towns/index.html')+'"><i style="background-image:url(\''+U('img/c/destin.jpg')+'\')"></i><span><b>See all 167 beach towns</b><small>Browse by region or A to Z</small></span></a>';
     }
     res.innerHTML=h;items=[].slice.call(res.querySelectorAll('.fcs-it'));sel=0;mark();
   }
@@ -105,8 +105,8 @@
     var mk=function(){var b=document.createElement('button');b.type='button';b.className='fcs-ic';b.setAttribute('aria-label','Search towns, regions and guides');b.innerHTML=SVG;b.onclick=function(){open('')};return b};
     var f=hdr.querySelector('#navSearch,form.navsearch');
     if(f)f.remove();
-    var q=hdr.querySelector('a[href*="quiz-photo"]'),b=mk();if(q&&q.parentNode)q.parentNode.insertBefore(b,q);else hdr.appendChild(b);
-    var ref=hdr.querySelector('nav a:not([href*="quiz-photo"])'),tint=function(){if(ref)b.style.color=getComputedStyle(ref).color};tint();addEventListener('scroll',tint,{passive:true});setTimeout(tint,500);
+    var q=hdr.querySelector('a:is([href*="quiz-photo"],[href*="find-your-mile"])'),b=mk();if(q&&q.parentNode)q.parentNode.insertBefore(b,q);else hdr.appendChild(b);
+    var ref=hdr.querySelector('nav a:not([href*="quiz-photo"]):not([href*="find-your-mile"])'),tint=function(){if(ref)b.style.color=getComputedStyle(ref).color};tint();addEventListener('scroll',tint,{passive:true});setTimeout(tint,500);
     load();
   });
 })();

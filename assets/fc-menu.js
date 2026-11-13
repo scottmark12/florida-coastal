@@ -8,8 +8,8 @@
   ready(function(){
     var hdr=document.querySelector('header');if(!hdr)return;
     var links=[].slice.call(hdr.querySelectorAll('a[data-nav]'));if(!links.length)return;
-    var quiz=hdr.querySelector('a[href*="quiz-photo"]');
-    var quizHref=quiz?quiz.href:new URL('/quiz-photo.html',location.href).href;
+    var quiz=hdr.querySelector('a:is([href*="quiz-photo"],[href*="find-your-mile"])');
+    var quizHref=quiz?quiz.href:new URL('/find-your-mile.html',location.href).href;
     var townsHref=links[0].href.split('?')[0];
     var logo=hdr.querySelector('img');
     var logoSrc=new URL('/img/fc-logo-black.png',location.href).href;
@@ -22,7 +22,7 @@
       'header #navtoggle{display:none!important}'+
       '.fcm-btn{display:flex;position:absolute;right:14px;top:50%;transform:translateY(-50%);z-index:60;width:42px;height:42px;border-radius:50%;border:0;align-items:center;justify-content:center;background:rgba(255,255,255,.55);-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.7);color:#16282c;box-shadow:0 2px 10px rgba(0,0,0,.08);cursor:pointer;-webkit-tap-highlight-color:transparent}'+
       '.fcm-btn svg{width:20px;height:20px}'+'.fcm-btn::after{content:"";position:absolute;inset:-3px;border-radius:50%}'+
-      '.fcm-hasbtn a[href*="quiz-photo"]:not(.fcm a){display:none!important}'+
+      '.fcm-hasbtn a:is([href*="quiz-photo"],[href*="find-your-mile"]):not(.fcm a){display:none!important}'+
     '}'+
     '.fcm{position:fixed;inset:0;z-index:9999;background:#fff;color:#16282c;display:flex;flex-direction:column;padding:16px 22px 28px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .22s,transform .22s,visibility 0s .22s;font-family:inherit;overflow:auto}'+
     '.fcm.on{opacity:1;visibility:visible;transform:none;transition:opacity .22s,transform .22s}'+
@@ -59,7 +59,7 @@
 
     if(getComputedStyle(hdr).position=='static')hdr.style.position='relative';
     hdr.querySelectorAll('.fcmaps>a[data-nav=maps]').forEach(function(a){if(!a.querySelector('.fcmaps-c')){var c=document.createElement('i');c.className='fcmaps-c';c.setAttribute('aria-hidden','true');a.appendChild(c)}});
-    hdr.querySelectorAll('a[href*="quiz-photo"]').forEach(function(q){q.classList.add('fcq')});
+    hdr.querySelectorAll('a:is([href*="quiz-photo"],[href*="find-your-mile"])').forEach(function(q){q.classList.add('fcq')});
     function tone(){var c=getComputedStyle(hdr).backgroundColor,m=c.match(/[\d.]+/g)||[0,0,0,0],al=m.length>3?+m[3]:1,l=(+m[0]*.3+ +m[1]*.59+ +m[2]*.11);hdr.classList.toggle('fcq-dark',al<.35||l<90)}
     tone();addEventListener('scroll',tone,{passive:true});setTimeout(tone,400);
     hdr.classList.add('fcm-hasbtn');
@@ -81,10 +81,10 @@
      addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd()})();
 
     var here=location.pathname+location.search;
-    var homeHref=new URL('/home-v2.html',location.href).href,hp=new URL(homeHref).pathname;
+    var homeHref=new URL('/index.html',location.href).href,hp=new URL(homeHref).pathname;
     var extra=function(href,label,isCur){return '<a href="'+href+'"'+(isCur?' class="cur" aria-current="page"':'')+'>'+label+'<span>→</span></a>'};
     var items=extra(homeHref,'Home',location.pathname==hp||location.pathname=='/'||/\/index\.html$/.test(location.pathname))+links.map(function(a){
-      if(a.dataset.nav=='maps'){var mode=new URLSearchParams(location.search).get('mode')||'regions',onMap=/vibe-v3/.test(location.pathname);
+      if(a.dataset.nav=='maps'){var mode=new URLSearchParams(location.search).get('mode')||'regions',onMap=/vibe-v3|\/map\.html/.test(location.pathname);
         return '<div class="fcm-gl">Maps</div>'+[].slice.call(a.parentNode.querySelectorAll('a.fcmaps-i')).map(function(x){var c=onMap&&x.dataset.sub==mode;return '<a class="fcm-sub'+(c?' cur" aria-current="page':'')+'" href="'+x.href+'">'+x.textContent.trim()+'<span>→</span></a>'}).join('')}
       var u=new URL(a.href),cur=a.classList.contains('on')||a.getAttribute('aria-current')=='page'||(u.pathname+u.search)==here;
       return '<a href="'+a.href+'"'+(cur?' class="cur" aria-current="page"':'')+'>'+a.textContent.trim()+'<span>→</span></a>';
@@ -92,7 +92,7 @@
 
     var m=document.createElement('div');
     m.className='fcm';m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');m.setAttribute('aria-label','Menu');
-    m.innerHTML='<div class="fcm-top"><a href="'+new URL('/home-v2.html',location.href).href+'"><img src="'+logoSrc+'" alt="Florida Coastal"></a><button class="fcm-x" type="button" aria-label="Close menu">'+ICON_X+'</button></div>'+
+    m.innerHTML='<div class="fcm-top"><a href="'+new URL('/index.html',location.href).href+'"><img src="'+logoSrc+'" alt="Florida Coastal"></a><button class="fcm-x" type="button" aria-label="Close menu">'+ICON_X+'</button></div>'+
       '<form role="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input type="search" placeholder="Search a town, region or ZIP" aria-label="Search towns" autocomplete="off"></form>'+
       '<nav aria-label="Main">'+items+'</nav>'+
       '<div class="fcm-cta"><a href="'+quizHref+'">Take the quiz</a><p>8 quick questions. Your top 5 towns.</p></div>';

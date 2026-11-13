@@ -30,11 +30,11 @@ function qHTML(){
  const q=SQ[Q.step],a=Q.ans[Q.step],n=qStrong(),first=Q.step===0&&!qAny();
  const bars=SQ.map((_,i)=>`<i class="${i<Q.step?'done':i===Q.step?'cur':''}"></i>`).join('');
  const opts=q.o.map((o,i)=>`<button class="qo${a===i?' on':''}" aria-pressed="${a===i}" onclick="qPick(${i})"><span class="rd"></span><span class="tx"><b>${o[0]}</b>${o[1]?`<small>${o[1]}</small>`:''}</span></button>`).join('');
- return `<div class="qbrand"><a class="qclose" href="home-v2.html" aria-label="Exit quiz">&times;</a></div>${first?`<div class="qhd"><h1>Your top 5 Florida beach towns in 2 minutes</h1><p>8 quick taps. Free.</p></div>`:''}
+ return `<div class="qbrand"><a class="qclose" href="index.html" aria-label="Exit quiz">&times;</a></div>${first?`<div class="qhd"><h1>Your top 5 Florida beach towns in 2 minutes</h1><p>8 quick taps. Free.</p></div>`:''}
  <div class="qtop">${Q.step>0?`<button class="qb" onclick="qGo(${Q.step-1})" aria-label="Back">&larr;</button>`:''}<div class="qbar">${bars}</div><span class="qn">${qAny()?`<b>${n}</b> towns fit`:`${Q.step+1} of ${SQ.length}`}</span></div>
  <h2 class="qq">${q.q}</h2>
  <div class="qopts">${opts}</div>
- <a class="qalt" href="vibe-v3.html">Or browse the map instead</a>`}
+ <a class="qalt" href="map.html">Or browse the map instead</a>`}
 function qStyle(L5,L15){const c={};L15.forEach((t,i)=>t.v.forEach(v=>c[v]=(c[v]||0)+(i<5?2:1)));return Object.keys(c).sort((a,b)=>c[b]-c[a])[0]}
 const WHYP={walk:"Walk to coffee and dinner",beach:"A sandy beach close by",sand:"Clear, calm water to wade into",water:"Life on the water",dock:"Homes with their own dock",nightlife:"Plenty open late",dining:"Good restaurants",meet:"A full calendar of clubs and events",outdoors:"Paddling, trails and springs nearby",airport:"An easy drive to a big airport",condo:"Lots of condos and townhomes",house:"Neighborhoods of houses with yards"};
 function qWhy(t,n){const d=QD[t.id],W=qW(),out=[];
@@ -46,17 +46,17 @@ function qRes(){const L=qRank(),L5=L.slice(0,5),k=qStyle(L5,L.slice(0,15)),t=L5[
  const n=k?L5.filter(t=>t.v.includes(k)).length:0,tot=k?T.filter(x=>x.v.includes(k)).length:0,w=qWhy(t,3);
  return `<div class="qr"><div class="ey">Your results</div><h1>Your top 5</h1><p class="sub" style="margin:0">Ranked from all 167 beach towns on your 8 answers.</p>
  <div class="qhero t5r0" data-id="${t.id}"><div class="ph" style="background-image:url('${t.img}')"><i>#1 &middot; ${qp(t)}% match</i></div><h2>${t.n}</h2><div class="meta">${t.r.replace(/ · /g,', ')}${t.p?` &middot; <b>${t.p}</b> typical home`:''}</div>
- ${w.length?`<ul class="qwhy">${w.map(x=>`<li>${x}</li>`).join('')}</ul>`:'<div style="height:14px"></div>'}<a class="go" href="towns/${t.id}-v3.html">Explore ${t.n.replace(/ \(.*\)/,'')}</a></div>
+ ${w.length?`<ul class="qwhy">${w.map(x=>`<li>${x}</li>`).join('')}</ul>`:'<div style="height:14px"></div>'}<a class="go" href="towns/${t.id}.html">Explore ${t.n.replace(/ \(.*\)/,'')}</a></div>
  <h4>Also on your list</h4>
- ${L5.slice(1).map((t,i)=>`<a class="t5r" data-id="${t.id}" href="towns/${t.id}-v3.html"><i>${i+2}</i><span class="ph" style="background-image:url('${t.img}')"></span><span><b>${t.n}</b><small>${t.r.replace(/ · /g,', ')}${t.p?' &middot; '+t.p:''}</small>${(qWhy(t,1)[0]?`<small class="y">${qWhy(t,1)[0]}</small>`:'')}</span></a>`).join('')}
- ${k?`<div class="qsty"><span class="ph" style="background-image:url('img/vibes/${k}.webp')"></span><span><small style="margin:0 0 2px">Your style</small><b>${VIBES[k]}</b><small>${n==5?'All 5 of your towns fit it.':n+' of your 5 towns fit it.'}</small><a href="vibe-v3.html?mode=vibes&style=${k}">See all ${tot} ${VIBES[k]} towns &rarr;</a></span></div>`:''}
+ ${L5.slice(1).map((t,i)=>`<a class="t5r" data-id="${t.id}" href="towns/${t.id}.html"><i>${i+2}</i><span class="ph" style="background-image:url('${t.img}')"></span><span><b>${t.n}</b><small>${t.r.replace(/ · /g,', ')}${t.p?' &middot; '+t.p:''}</small>${(qWhy(t,1)[0]?`<small class="y">${qWhy(t,1)[0]}</small>`:'')}</span></a>`).join('')}
+ ${k?`<div class="qsty"><span class="ph" style="background-image:url('img/vibes/${k}.webp')"></span><span><small style="margin:0 0 2px">Your style</small><b>${VIBES[k]}</b><small>${n==5?'All 5 of your towns fit it.':n+' of your 5 towns fit it.'}</small><a href="map.html?mode=vibes&style=${k}">See all ${tot} ${VIBES[k]} towns &rarr;</a></span></div>`:''}
  <div class="qsl" id="qsl"><div style="display:flex;gap:18px;align-items:flex-start"><img src="img/shortlist-p8.webp" alt="" style="width:96px;border-radius:3px;box-shadow:0 3px 12px rgba(0,0,0,.18);flex:0 0 96px"><div><h3>Get your Florida Shortlist</h3><p>A free 8 page PDF of these 5 towns: home prices, flood heads ups, the drive to the airport and a first weekend in each.</p></div></div>
  <input id="qse" type="email" placeholder="you@example.com" autocomplete="email" aria-label="Your email"><button class="go" onclick="qSend()">Email me my Shortlist</button></div>
- <div class="qmore"><button onclick="qRestart()">Retake the quiz</button><a href="vibe-v3.html?mode=sliders&sv=${sv}">Fine tune with sliders</a></div></div>`}
+ <div class="qmore"><button onclick="qRestart()">Retake the quiz</button><a href="map.html?mode=sliders&sv=${sv}">Fine tune with sliders</a></div></div>`}
 function qDraw(){$('qz').innerHTML=qHTML();document.body.classList.toggle('qhas',qAny());qBind();document.body.classList.toggle('qres',Q.done);$('res').scrollTop=0}
 function qGo(i){if(i<-1)return;Q.step=i;qDraw()}
 function qPick(i){Q.ans[Q.step]=i;qRank();qMap();qDraw();setTimeout(()=>{if(Q.step<SQ.length-1)qGo(Q.step+1);else qDone()},260)}
-function qDone(){window.QLOCK=false;qRank();qMap();const a=Q.ans.map(x=>x==null?'x':x).join('');setTimeout(()=>{location.href='quiz-results-v3.html?a='+a},700)}
+function qDone(){window.QLOCK=false;qRank();qMap();const a=Q.ans.map(x=>x==null?'x':x).join('');setTimeout(()=>{location.href='quiz-results.html?a='+a},700)}
 function qOpen(id){const t=T.find(t=>t.id==id);S.pinned=id;openPop(t,true);document.querySelectorAll('.t5r').forEach(r=>r.classList.toggle('on',r.dataset.id==id))}
 function qRestart(){Q.ans.fill(undefined);Q.done=false;Q.step=0;closePop();S.sv={};SLK.forEach(([k])=>S.sv[k]=50);qDraw()}
 function qSend(){const e=$('qse').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){$('qse').style.borderColor='#B3261E';$('qse').focus();return}

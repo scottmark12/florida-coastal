@@ -2,7 +2,7 @@
 """Fill out the 6 new town pages (Nov 12 2026) so they match the other 161.
 
 Reads /home/claude/fig/newtowns_fill.json (research, with sources) on top of newtowns_pages.json and
-patches src/towns/<id>-v3.html in place:
+patches src/towns/<id>.html in place:
 - adds "Where to live and what it costs" and "A week here" after About (skipped if already there)
 - swaps the generic "About in the middle of our 167 towns." scorecard lines for local takes
 - rebuilds the 8 standard questions (page and FAQPage data) in the same order as the other towns
@@ -33,7 +33,7 @@ def week(F):
 
 
 for i in NEW:
-    p = f'src/towns/{i}-v3.html'; s = open(p).read()
+    p = f'src/towns/{i}.html'; s = open(p).read()
     P, F, nm = PG[i], FL[i], T[i]['n']
     N = {**P['notes'], **F['notes']}
 

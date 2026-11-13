@@ -24,7 +24,7 @@ const SUBS={3:['Sand and water right out front','Close enough to ride over with 
 Object.entries(SUBS).forEach(([qi,m])=>Object.entries(m).forEach(([oi,t])=>{const o=SQ[qi]&&SQ[qi].o[oi];if(o&&!o[1])o[1]=t}));
 const d0=qDraw;qDraw=function(){d0();show(Math.min(Q.step,PH.length-1));miniDots();if(qAny()&&!window.__qs){window.__qs=1;window.FC&&FC.track('quiz_start')}};if(mob()){const r=$('res');r.parentElement.insertBefore(mini,r.nextSibling);const cen=()=>{mini.style.transform='none';const b=mini.getBoundingClientRect();mini.style.transform=`translateX(${innerWidth/2-(b.left+b.width/2)}px)`};requestAnimationFrame(cen);setTimeout(cen,400);addEventListener('resize',cen)}show(Q.step);miniDots();qDraw();
 qDone=function(){window.QLOCK=false;qRank();miniDots();
- const a=Q.ans.map(x=>x==null?'x':x).join(''),TOP=qRank().slice(0,5).map(t=>({id:t.id,fit:qp(t),name:t.n,why:qWhy(t,3)})),go2=()=>{location.href='quiz-results-v3.html?a='+a+'&t='+TOP.map(x=>x.id+'.'+x.fit).join(',')};
+ const a=Q.ans.map(x=>x==null?'x':x).join(''),TOP=qRank().slice(0,5).map(t=>({id:t.id,fit:qp(t),name:t.n,why:qWhy(t,3)})),go2=()=>{location.href='quiz-results.html?a='+a+'&t='+TOP.map(x=>x.id+'.'+x.fit).join(',')};
  try{sessionStorage.setItem('fc-top5',JSON.stringify({a:a,top:TOP}))}catch(e){}
  if(window.FC){FC.track('quiz_complete');FC.track('quiz_top5',a+'|'+TOP.map(x=>x.id+':'+x.fit).join(','))}
  document.getElementById('qrvn').textContent=T.length;

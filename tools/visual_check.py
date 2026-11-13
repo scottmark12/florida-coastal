@@ -20,26 +20,26 @@ def core_scenarios():
     def add(name, url, steps=None, full=False, vps=('d', 'p')):
         S.append(dict(name=name, url=url, steps=steps or [], full=full, vps=vps))
     add('home', 'home-v2.html', full=True)
-    add('map-regions', 'vibe-v3.html')
-    add('map-region-sw', 'vibe-v3.html?mode=regions&region=southwest')
-    add('map-vibes', 'vibe-v3.html?mode=vibes', steps=[('run', 1300)])
-    add('map-vibes-rot', 'vibe-v3.html?mode=vibes', steps=[('run', 6000)])
-    add('map-style', 'vibe-v3.html?mode=vibes&style=oldfl')
-    add('map-town', 'vibe-v3.html?mode=vibes&style=dock&open=apalachicola')
-    add('map-sliders', 'vibe-v3.html?mode=sliders')
-    add('map-sliders-set', 'vibe-v3.html?mode=sliders', steps=[('js', "(()=>{const r=[...document.querySelectorAll('#sl input[type=range]')];[2,4,6].forEach(i=>{const x=r[i];x.value=x.max;x.dispatchEvent(new Event('input',{bubbles:true}))})})()"), ('run', 2500)])
-    add('map-list', 'vibe-v3.html?mode=vibes&style=beaches&view=list')
+    add('map-regions', 'vibe.html')
+    add('map-region-sw', 'vibe.html?mode=regions&region=southwest')
+    add('map-vibes', 'vibe.html?mode=vibes', steps=[('run', 1300)])
+    add('map-vibes-rot', 'vibe.html?mode=vibes', steps=[('run', 6000)])
+    add('map-style', 'vibe.html?mode=vibes&style=oldfl')
+    add('map-town', 'vibe.html?mode=vibes&style=dock&open=apalachicola')
+    add('map-sliders', 'vibe.html?mode=sliders')
+    add('map-sliders-set', 'vibe.html?mode=sliders', steps=[('js', "(()=>{const r=[...document.querySelectorAll('#sl input[type=range]')];[2,4,6].forEach(i=>{const x=r[i];x.value=x.max;x.dispatchEvent(new Event('input',{bubbles:true}))})})()"), ('run', 2500)])
+    add('map-list', 'vibe.html?mode=vibes&style=beaches&view=list')
     add('quiz', 'quiz-photo.html')
     add('quiz-step3', 'quiz-photo.html', steps=[('js', 'qPick(1)'), ('run', 600), ('js', 'qPick(2)'), ('run', 600), ('js', 'qPick(0)'), ('run', 800)])
-    add('results', 'quiz-results-v3.html?t=naples.92,destin.88,stuart.85,sarasota.84,vero-beach.80', full=True)
-    add('compare', 'compare-v3.html?t=destin,sarasota,naples', full=True)
+    add('results', 'quiz-results.html?t=naples.92,destin.88,stuart.85,sarasota.84,vero-beach.80', full=True)
+    add('compare', 'compare.html?t=destin,sarasota,naples', full=True)
     add('beach-towns', 'towns/index-v2.html', full=True)
     add('beach-towns-q', 'towns/index-v2.html?q=key', full=True)
     return S
 
 def town_scenarios():
     S = []
-    for f in sorted(glob.glob(os.path.join(ROOT, 'towns', '*-v3.html'))):
+    for f in sorted(glob.glob(os.path.join(ROOT, 'towns', '*.html'))):
         n = os.path.basename(f)[:-8]
         S.append(dict(name='town-' + n, url='towns/' + os.path.basename(f), steps=[], full=True, vps=('d', 'p')))
     return S

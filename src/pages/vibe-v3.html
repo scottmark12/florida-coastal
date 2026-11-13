@@ -15,10 +15,10 @@
 <script src="{{asset:/assets/fc-aka.js}}"></script>
 
 <link rel="stylesheet" href="{{asset:/assets/fc-header.css}}"><link rel="icon" type="image/svg+xml" href="/img/fc-favicon.svg"><link rel="icon" type="image/png" href="/img/fc-favicon.png"><link rel="apple-touch-icon" href="/img/fc-favicon-180.png"></head><body>
-<header><a class="logo" href="home-v2.html"><img src="img/fc-logo-black.png" alt="Florida Coastal"></a>
+<header><a class="logo" href="index.html"><img src="img/fc-logo-black.png" alt="Florida Coastal"></a>
 <div class="search" style="display:none"><span class="tag" id="tag"></span><input id="q"></div>
-<nav class="top"><a href="towns/index-v2.html" data-nav="towns">Beach Towns</a><span class="fcmaps"><a href="vibe-v3.html" class="on" data-nav="maps" aria-haspopup="true">Maps</a><span class="fcmaps-dd"><a class="fcmaps-i" href="vibe-v3.html" data-sub="regions">Regions</a><a class="fcmaps-i" href="vibe-v3.html?mode=vibes" data-sub="vibes">Vibe Map</a><a class="fcmaps-i" href="vibe-v3.html?mode=sliders" data-sub="sliders">Slider Map</a></span></span><a href="articles/index.html" data-nav="articles">Articles</a><a href="about.html" data-nav="about">About</a></nav>
-<a class="cta" href="quiz-photo.html">Take the quiz</a></header>
+<nav class="top"><a href="towns/index.html" data-nav="towns">Beach Towns</a><span class="fcmaps"><a href="map.html" class="on" data-nav="maps" aria-haspopup="true">Maps</a><span class="fcmaps-dd"><a class="fcmaps-i" href="map.html" data-sub="regions">Regions</a><a class="fcmaps-i" href="map.html?mode=vibes" data-sub="vibes">Vibe Map</a><a class="fcmaps-i" href="map.html?mode=sliders" data-sub="sliders">Slider Map</a></span></span><a href="articles/index.html" data-nav="articles">Articles</a><a href="about.html" data-nav="about">About</a></nav>
+<a class="cta" href="find-your-mile.html">Take the quiz</a></header>
 <div class="main"><div class="mapw"><div class="bar" id="bar" style="display:none"></div>
 <div class="map" id="mapbox"><svg id="map"><g id="base"></g><g id="ov"></g></svg><div class="slcar" id="slcar" aria-label="Your top 5"></div>
 <div class="rdd" id="rdd"><button id="rbtn"><span style="font-weight:400;color:#6B7678">Region:</span> <span id="rname">All of Florida</span></button><div class="rmenu" id="rmenu"></div></div><button class="ctl" id="all">Show all of Florida</button>
@@ -34,4 +34,4 @@
 <div class="done"><h3>Saved</h3><p id="svdone"></p></div>
 <div class="lk"><input id="svl" readonly><button id="svc">Copy link</button></div></div></div>
 <script src="{{asset:/img/map/fl-compass-noband.js?v=4}}"></script>
-<script src="{{data:t-d8ec905c}}"></script><script src="{{data:ld-c286bea7}}"></script><script src="{{data:lk-bd08ed5d}}"></script><script src="{{data:rcopy-b260f9e8}}"></script><script src="{{js:map-1}}"></script><script>{{inline-js}}(function(){const m=new URLSearchParams(location.search).get("mode");document.querySelectorAll(".fcmaps-dd a").forEach(a=>a.toggleAttribute("aria-current",a.dataset.sub===(m==="vibes"||m==="sliders"?m:"regions")))})(){{/inline-js}}</script><script src="{{asset:/assets/fc-menu.js?v=13}}" defer></script></body></html>
+<script src="{{data:t-d8ec905c}}"></script><script src="{{data:ld-c286bea7}}"></script><script src="{{data:lk-bd08ed5d}}"></script><script src="{{data:rcopy-b260f9e8}}"></script><script src="{{js:map-1}}"></script><script>{{inline-js}}(function(){const m=new URLSearchParams(location.search).get("mode");document.querySelectorAll(".fcmaps-dd a").forEach(a=>a.toggleAttribute("aria-current",a.dataset.sub===(m==="vibes"||m==="sliders"?m:"regions")))})(){{/inline-js}}</script><script src="{{asset:/assets/fc-menu.js?v=14}}" defer></script></body></html>

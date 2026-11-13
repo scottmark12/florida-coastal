@@ -2,12 +2,12 @@
 // articles, area pages, about/scoring/terms) is left exactly as it is.
 module.exports = {
   PAGES: {
-    'home-v2.html': 'home',
-    'vibe-v3.html': 'map',
-    'quiz-photo.html': 'quiz',
-    'quiz-results-v3.html': 'results',
-    'compare-v3.html': 'compare',
-    'towns/index-v2.html': 'beach-towns',
+    'index.html': 'home',
+    'map.html': 'map',
+    'find-your-mile.html': 'quiz',
+    'quiz-results.html': 'results',
+    'compare.html': 'compare',
+    'towns/index.html': 'beach-towns',
   },
   isTownPage: f => /-v3\.html$/.test(f),
 };

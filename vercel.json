@@ -13,33 +13,73 @@
     },
     {
       "source": "/towns/north-redington-beach-v3.html",
-      "destination": "/towns/redington-shores-v3.html",
+      "destination": "/towns/redington-shores.html",
       "permanent": false
     },
     {
       "source": "/towns/redington-beach-v3.html",
-      "destination": "/towns/redington-shores-v3.html",
+      "destination": "/towns/redington-shores.html",
       "permanent": false
     },
     {
       "source": "/towns/valparaiso-v3.html",
-      "destination": "/towns/niceville-v3.html",
+      "destination": "/towns/niceville.html",
       "permanent": false
     },
     {
       "source": "/towns/okaloosa-island-v3.html",
-      "destination": "/towns/fort-walton-beach-v3.html",
+      "destination": "/towns/fort-walton-beach.html",
       "permanent": false
     },
     {
       "source": "/towns/holly-hill-v3.html",
-      "destination": "/towns/daytona-v3.html",
+      "destination": "/towns/daytona.html",
       "permanent": false
     },
     {
       "source": "/towns/south-daytona-v3.html",
-      "destination": "/towns/daytona-v3.html",
+      "destination": "/towns/daytona.html",
       "permanent": false
+    },
+    {
+      "source": "/home-v2.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/compare-v3.html",
+      "destination": "/compare.html",
+      "permanent": true
+    },
+    {
+      "source": "/vibe-v3.html",
+      "destination": "/map.html",
+      "permanent": true
+    },
+    {
+      "source": "/quiz-photo.html",
+      "destination": "/find-your-mile.html",
+      "permanent": true
+    },
+    {
+      "source": "/quiz-results-v3.html",
+      "destination": "/quiz-results.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/index-v2.html",
+      "destination": "/towns/",
+      "permanent": true
+    },
+    {
+      "source": "/towns/:t-v3.html",
+      "destination": "/towns/:t.html",
+      "permanent": true
+    },
+    {
+      "source": "/priorities.html",
+      "destination": "/map.html?mode=sliders",
+      "permanent": true
     }
   ],
   "headers": [

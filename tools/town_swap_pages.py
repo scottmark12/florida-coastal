@@ -54,7 +54,7 @@ def trunc(b, n=92):
 
 def card(me, t):
     img = t['img'] if t['img'].startswith('img/c/') else 'img/c/generic/harbor-boats.webp'
-    return ('<a href="towns/%s-v3.html"><div class="ph" style="background-image:url(\'%s\')"></div><div><b>%s</b>'
+    return ('<a href="towns/%s.html"><div class="ph" style="background-image:url(\'%s\')"></div><div><b>%s</b>'
             '<small>%d miles away</small><span>%s</span></div></a>') % (t['id'], img, e(t['n']), round(mi(me, t)), e(trunc(t['b'])))
 
 def head(s):
@@ -67,7 +67,7 @@ def mt(t): return {'n': t['n'], 'la': t['la'], 'lo': t['lo'], 'id': t['id']}
 
 # ---------------------------------------------------------------- existing pages
 log = []
-for f in sorted(glob.glob('src/towns/*-v3.html')):
+for f in sorted(glob.glob('src/towns/*.html')):
     s0 = s = open(f).read(); j, _ = head(s); i = j['id']
     if i in MERGE: continue
     rk = LD[i]['rk']
@@ -80,7 +80,7 @@ for f in sorted(glob.glob('src/towns/*-v3.html')):
     s = re.sub(r'<span class="l">([^<]*)</span><span class="bar"><i style="width:\d+%"></i></span><span class="r">[^<]*</span>', rowfix, s)
     # links to merged pages go to the host
     for k, h in MERGE.items():
-        s = s.replace('href="towns/%s-v3.html"' % k, 'href="towns/%s-v3.html"' % h)
+        s = s.replace('href="towns/%s.html"' % k, 'href="towns/%s.html"' % h)
     # nearby list
     me = TD[i]
     near = [MERGE.get(x, x) for x in j['near']]
@@ -116,7 +116,7 @@ for f in sorted(glob.glob('src/towns/*-v3.html')):
         open(f, 'w').write(s); log.append(i)
 
 # ---------------------------------------------------------------- new pages
-TPL = open('src/towns/islamorada-v3.html').read()
+TPL = open('src/towns/islamorada.html').read()
 ASK = re.search(r'<aside id="ask">.*</aside></div>', TPL, re.S).group(0)
 GENERIC = 'About in the middle of our 167 towns.'
 
@@ -124,7 +124,7 @@ def page(i):
     t = TD[i]; d = LD[i]; P = PG[i]; R = B[i]; rk = d['rk']; nm = t['n']
     near = [x['id'] for x in sorted([x for x in T if x['id'] != i], key=lambda x: mi(t, x))[:3]]
     mts = [mt(x) for x in T if x['id'] in [y['id'] for y in sorted(T, key=lambda y: mi(t, y))[:6]]]
-    j = {'page': f'towns/{i}-v3.html', 'id': i, 'name': nm, 'near': near, 'center': {'la': t['la'], 'lo': t['lo']}, 'mapTowns': mts}
+    j = {'page': f'towns/{i}.html', 'id': i, 'name': nm, 'near': near, 'center': {'la': t['la'], 'lo': t['lo']}, 'mapTowns': mts}
     url = f'https://www.floridacoastal.co/towns/{i}.html'; img = f'https://www.floridacoastal.co/img/c/{i}.jpg'
     desc = P['tag'] + f' See how {nm} scores on beaches, boating, walkability, nightlife and cost.'
     rows = sorted(LAB.values(), key=lambda k: rk[k])
@@ -148,7 +148,7 @@ def page(i):
              f'<div><b>#{rk[best2[0]]}</b><span>For {KL[best2[0]].lower()}, of 167</span></div>'
              f'<div><b>{P["air_short"][0]}</b><span>{P["air_short"][1]}</span></div>'
              f'<div><b>#{rk[best2[1]]}</b><span>For {KL[best2[1]].lower()}, of 167</span></div></div>')
-    chips = '<div class="chips">' + ''.join(f'<a href="vibe-v3.html?mode=vibes&style={v}">{VIBE[v]}</a>' for v in t['v']) + '</div>'
+    chips = '<div class="chips">' + ''.join(f'<a href="vibe.html?mode=vibes&style={v}">{VIBE[v]}</a>' for v in t['v']) + '</div>'
     about = ''.join(f'<p>{e(x)}</p>' for x in P['about'])
     cm = ''.join(f'<span>{e(x)}</span>' for x in P['cm'])
     todo = ''.join(f'<div><b>{e(a)}</b><span>{e(b)}</span></div>' for a, b in P['todo'])
@@ -197,17 +197,17 @@ def page(i):
     return ('<!-- town ' + json.dumps(j, ensure_ascii=False, separators=(',', ':')) + ' -->\n<!-- seo -->\n' + seo + '\n\n<!-- content -->\n' + content + '\n')
 
 for i in NEW:
-    open(f'src/towns/{i}-v3.html', 'w').write(page(i))
+    open(f'src/towns/{i}.html', 'w').write(page(i))
 
 # ---------------------------------------------------------------- remove merged pages, forward them
 for k in MERGE:
-    for p in (f'src/towns/{k}-v3.html', f'towns/{k}-v3.html'):
+    for p in (f'src/towns/{k}.html', f'towns/{k}.html'):
         if os.path.exists(p): os.remove(p)
 V = json.load(open('vercel.json'))
 have = {r['source'] for r in V['redirects']}
 for k, h in MERGE.items():
-    src = f'/towns/{k}-v3.html'
+    src = f'/towns/{k}.html'
     if src not in have:
-        V['redirects'].append({'source': src, 'destination': f'/towns/{h}-v3.html', 'permanent': False})
+        V['redirects'].append({'source': src, 'destination': f'/towns/{h}.html', 'permanent': False})
 json.dump(V, open('vercel.json', 'w'), indent=2, ensure_ascii=False); open('vercel.json', 'a').write('\n')
 print('updated', len(log), 'pages; new', NEW)
