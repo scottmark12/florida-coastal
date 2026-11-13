@@ -294,6 +294,8 @@ html body .hs-l a{font-size:16px!important;color:#fff!important;text-shadow:0 1p
 @media (max-width:760px){
 html body .row{grid-auto-columns:86%!important}
 html body .ex{border-radius:18px}
+html body #row .ex{aspect-ratio:auto!important;height:clamp(340px,calc(100svh - 400px),520px)!important}
+html body section.hs+section.s:not(#x):not(#y){padding-top:calc(var(--gt,0px) + 64px)!important}
 html body .ex b{font-size:40px!important}
 html body .ex small{font-size:15px!important}
 html body .ex .t{left:20px;right:20px;bottom:20px}
@@ -330,4 +332,8 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .c
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw .rxst{display:flex!important}
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw .rxst small,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw .rxst strong{white-space:nowrap}
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-row,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rxs{background:transparent!important;height:auto!important;align-items:flex-start}
+}
+@media (max-width:760px){
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-row{overflow:hidden!important;scroll-snap-type:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-frame,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx{touch-action:pan-y}
 }

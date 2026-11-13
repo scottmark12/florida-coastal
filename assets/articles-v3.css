@@ -80,3 +80,30 @@ html body.axon .ax .ax-sh{border-bottom-color:#E3E1DC}
 html body.axon .ax .ax-sec{margin-bottom:88px}
 html body.axon .ax .ax-mast{padding-bottom:20px}
 @media (max-width:760px){html body.axon .ax .ax-r{grid-template-columns:110px minmax(0,1fr);gap:16px}html body.axon .ax .ax-r h3{font-size:19px!important}html body.axon .ax .ax-nav{padding:0 20px 14px;margin-bottom:28px}}
+
+/* Nov 12: photo banner, in the Beach Towns hero style */
+html body.axon .ax .ax-ban{position:relative;width:100vw;margin:0 0 0 calc(50% - 50vw);height:min(62vh,560px);min-height:440px;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;background:#1A1B1B;overflow:hidden}
+.ax-bimg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 62%}
+.ax-bsh{position:absolute;inset:0;background:radial-gradient(ellipse 70% 60% at 50% 48%,rgba(10,14,16,.40),rgba(10,14,16,.10) 75%),linear-gradient(180deg,rgba(0,0,0,.28),rgba(0,0,0,0) 26%,rgba(0,0,0,0) 70%,rgba(0,0,0,.30))}
+.ax-bin{position:relative;width:min(720px,92vw)}
+html body.axon .ax .ax-ban .ax-ey{color:#fff;opacity:.92;margin:0 0 14px;font-size:13px;text-shadow:0 1px 8px rgba(0,0,0,.3)}
+html body.axon .ax .ax-ban h1{margin:0;font:500 64px/1.02 'DM Sans',system-ui,sans-serif;letter-spacing:-.02em;color:#fff;text-shadow:0 2px 24px rgba(0,0,0,.25)}
+html body.axon .ax .ax-ban .ax-sub{color:#fff;opacity:.95;margin:14px auto 28px;max-width:30em;font-size:18px;text-shadow:0 1px 10px rgba(0,0,0,.35)}
+.ax-bq{display:flex;align-items:center;gap:14px;height:60px;max-width:560px;margin:0 auto;padding:0 24px;border-radius:999px;background:rgba(18,20,20,.38);backdrop-filter:blur(22px) saturate(1.15);-webkit-backdrop-filter:blur(22px) saturate(1.15);border:1px solid rgba(255,255,255,.28);box-shadow:0 20px 60px rgba(0,0,0,.25);color:#fff;cursor:text}
+.ax-bq svg{flex:0 0 20px;opacity:.9}
+.ax-bq input{flex:1;min-width:0;border:0;outline:0;background:none;color:#fff;font:inherit;font-size:18px;-webkit-appearance:none;appearance:none}
+.ax-bq input::placeholder{color:rgba(255,255,255,.78)}
+.ax-bq input::-webkit-search-cancel-button{filter:invert(1)}
+html body.axon .ax .ax-nav{margin-top:0;border-top:0}
+@media (max-width:760px){
+html body.axon .ax .ax-ban{height:auto;min-height:0;aspect-ratio:auto;padding:64px 0 48px}
+html body.axon .ax .ax-ban h1{font-size:44px}
+html body.axon .ax .ax-ban .ax-sub{font-size:16px;margin:12px auto 24px;max-width:22em}
+.ax-bin{width:calc(100vw - 40px)}
+.ax-bq{height:54px;padding:0 20px}
+.ax-bq input{font-size:16px}
+}
+html body.axon .ax .ax-ban h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;color:#fff!important}
+.ax-bimg{object-position:center 18%}
+@media (max-width:760px){.ax-bimg{object-position:center 30%}}
+@media (max-width:760px){html body.axon .ax .ax-ban{height:min(560px,72svh)!important;padding:56px 0 0!important;align-items:flex-start!important}.ax-bimg{object-position:center bottom}}

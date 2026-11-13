@@ -28,8 +28,10 @@ function shSync(){const on=(S.mode=='sliders'||S.mode=='vibes')&&PH();const r=$(
   e.preventDefault();const st=shStops();let y=d.s0+dy;if(y<st.full)y=st.full-(st.full-y)*.3;const yl=st.low||st.peek;if(y>yl)y=yl+(y-yl)*.3;shApply(y,false);
   const now=performance.now();d.v=(t.clientY-d.last)/Math.max(1,now-d.lt);d.last=t.clientY;d.lt=now},{passive:false});
  r.addEventListener('touchend',()=>{if(!d)return;const own=d.own,v=d.v,st0=d.st0,dy=SHEET.y-d.s0;d=null;if(!own)return;const st=shStops(),y=SHEET.y;let n;
-  {const O=['low','peek','half','full'],i=O.indexOf(st0);if(i>=0&&Math.abs(dy)>36){shSet(O[Math.max(0,Math.min(3,i+(dy<0?1:-1)))]);return}}
-  const tg=y+Math.max(-1.5,Math.min(1.5,v))*260;n=['low','peek','half','full'].sort((a,b)=>Math.abs(st[a]-tg)-Math.abs(st[b]-tg))[0];shSet(n)});
+  /* Nov 12: land where the swipe was headed (how far plus how fast), so a long drag or a hard flick goes straight to full; a short swipe still moves one stop */
+  const O=['low','peek','half','full'].filter(k=>st[k]!=null),i=O.indexOf(st0),tg=y+Math.max(-2,Math.min(2,v))*300;n=O.slice().sort((a,b)=>Math.abs(st[a]-tg)-Math.abs(st[b]-tg))[0];
+  if(i>=0&&Math.abs(dy)>36){const j=O.indexOf(n);if(dy<0&&j<=i)n=O[Math.min(O.length-1,i+1)];if(dy>0&&j>=i)n=O[Math.max(0,i-1)]}
+  shSet(n)});
  const g=document.createElement('button');g.className='sh-grab';g.type='button';g.setAttribute('aria-label','Show more');r.prepend(g);
  g.addEventListener('click',()=>{if(!SHON())return;shSet(SHEET.st=='low'?'peek':SHEET.st=='peek'?'half':SHEET.st=='half'?'full':'peek')});
  addEventListener('resize',()=>{if(SHON())shSet(SHEET.st,true)});})();

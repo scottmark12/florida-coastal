@@ -53,10 +53,11 @@ $('cg').innerHTML=(()=>{
   /* Nov 12: one label style for all three (Mark: no pills, no overall rank text) */[...pop,top].filter(Boolean).forEach(t=>{const txt=nm(t),w=txt.length*7.6+4,b=place(t,w,18);if(b)h+=`<text x="${cur[0]+b[0]*k}" y="${cur[1]+(b[1]+14)*k}" font-size="${13.5*k}" stroke-width="${3.4*k}" class="rgx-tl">${txt}</text>`});
   svg.querySelectorAll('#rgd a').forEach(a=>{const id=a.getAttribute('href').replace('-v3.html','');a.classList.toggle('lb',(top&&top.id==id)||pop.some(t=>t.id==id))});
   g.innerHTML=h;g.classList.remove('in');requestAnimationFrame(()=>g.classList.add('in'))};
- const PH=()=>innerWidth<=760,CT=()=>{const c=row.querySelector('.rx.on')||row.querySelector('.rx'),f=svg.getBoundingClientRect(),q=c.getBoundingClientRect();return Math.max(120,q.top-f.top)},CW=()=>{const c=row.querySelector('.rx.on')||row.querySelector('.rx'),f=svg.getBoundingClientRect(),q=c.getBoundingClientRect();return Math.max(0,q.right-f.left)};
+ /* Nov 12: the card always sits in the same spot (215px down the map, 188px in), so each region gets a fixed place: wide ones above the card, tall ones beside it */
+ const PH=()=>innerWidth<=760,CT=()=>215,CW=()=>188,PL={'panhandle':'top','nature-coast-r':'right','tampa-bay':'right','southwest':'right','south-keys':'top','treasure-space':'right','northeast':'right'};
  const boxP=k=>{const L=T.filter(t=>inC(t,k));let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;L.forEach(t=>{const x=PX(t.lo),y=PY(t.la);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)});
   const r=svg.getBoundingClientRect(),W=r.width||300,H=r.height||460,tp=56,ct=CT(),cw=CW(),w=Math.max(x1-x0,50)*1.18,h=Math.max(y1-y0,50)*1.18,cx=(x0+x1)/2,cy=(y0+y1)/2;
-  const R=[[12,tp,W-24,ct-tp-10],[cw+10,tp,W-cw-22,H-tp-14]].filter(q=>q[2]>40&&q[3]>40).map(q=>[...q,Math.min(q[2]/w,q[3]/h)]).sort((a,b)=>b[4]-a[4])[0]||[0,0,W,H,Math.min(W/w,H/h)];
+  const A={top:[14,tp,W-28,ct-tp-14],right:[cw+12,tp,W-cw-24,H-tp-16]},q=A[PL[k]]||A.top,R=[...q,Math.min(q[2]/w,q[3]/h)];
   const kk=1/R[4];return [cx-(R[0]+R[2]/2)*kk,cy-(R[1]+R[3]/2)*kk,W*kk,H*kk]};
  const RGOV=118;const box=k=>{if(PH())return boxP(k);const L=T.filter(t=>inC(t,k));let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;L.forEach(t=>{const x=PX(t.lo),y=PY(t.la);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)});
   const r=svg.getBoundingClientRect(),H=r.height||300,ph=innerWidth<=760,ov=ph?RGOV:0,tp=ph?46:0,av=H-ov-tp,asp=(r.width||360)/av;let w=Math.max(x1-x0,60)*1.2,h=Math.max(y1-y0,60)*1.2;if(w/h<asp)w=h*asp;else h=w/asp;const cx=(x0+x1)/2,cy=(y0+y1)/2,sc=h/av;return [cx-w/2,cy-h/2-tp*sc,w,H*sc]};
@@ -72,6 +73,9 @@ $('cg').innerHTML=(()=>{
  let sT=0,lock=0;row.addEventListener('scroll',()=>{if(lock)return;clearTimeout(sT);sT=setTimeout(()=>{const r=row.getBoundingClientRect(),mid=r.left+Math.min(r.width/2,190);let best=null,bd=1e9;row.querySelectorAll('.rx').forEach(b=>{const q=b.getBoundingClientRect(),d=Math.abs(q.left+q.width/2-mid);if(q.left<=mid&&q.right>=mid){best=b;bd=0}else if(d<bd&&bd){bd=d;best=b}});best&&show(best.dataset.c)},90)},{passive:true});
  const into=k=>{const b=row.querySelector(`.rx[data-c="${k}"]`);if(!b)return;lock=1;const el=PH()?b.parentElement:b,left=PH()?row.scrollLeft+el.getBoundingClientRect().left-row.getBoundingClientRect().left-20:b.offsetLeft-row.offsetLeft;row.scrollTo({left,behavior:'smooth'});setTimeout(()=>{lock=0},600)};
  window.rgHL=k=>{if(k){show(k);into(k)}};
+ /* Nov 12: on phone, swipe left or right anywhere on the map or the card to change region */
+ {let sx=0,sy=0,on=0;const g=svg.closest('.rgx');g.addEventListener('touchstart',e=>{if(!PH())return;const t=e.touches[0];sx=t.clientX;sy=t.clientY;on=1},{passive:true});
+  g.addEventListener('touchend',e=>{if(!on||!PH())return;on=0;const t=e.changedTouches[0],dx=t.clientX-sx,dy=t.clientY-sy;if(Math.abs(dx)<40||Math.abs(dx)<Math.abs(dy)*1.2)return;const i=CO.findIndex(c=>c[0]==act),j=Math.max(0,Math.min(CO.length-1,i+(dx<0?1:-1)));if(j!=i){show(CO[j][0]);into(CO[j][0])}},{passive:true});}
  $('rgdots').onclick=e=>{const d=e.target.closest('i');if(!d)return;const i=[...$('rgdots').children].indexOf(d);show(CO[i][0]);into(CO[i][0])};
  addEventListener('resize',()=>{if(act){const k=act;act='';show(k)}});
  /* Nov 12: a bigger, invisible tap area around each town dot (the dot itself stays small) */
