@@ -297,7 +297,37 @@ html body .ex{border-radius:18px}
 html body .ex b{font-size:40px!important}
 html body .ex small{font-size:15px!important}
 html body .ex .t{left:20px;right:20px;bottom:20px}
-html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-frame{height:min(470px,62svh)!important}
-html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-row{position:relative;z-index:2;margin-top:-118px!important}
-html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx{box-shadow:0 10px 26px rgba(10,25,30,.28)}
+}
+
+/* Nov 12: Browse by region on phone is built like the home page map: map inset on the left, one white card hanging off its lower left */
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rxs{display:contents}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rxw,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-more{display:none}
+@media (max-width:760px){
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx{position:relative}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-frame{margin-left:49px!important;height:462px!important;border-radius:28px!important;box-shadow:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-pill{display:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-more{display:block;position:absolute;top:10px;right:10px;z-index:3;font-size:14px;font-weight:500;line-height:1;padding:10px 13px;border-radius:999px;text-decoration:none;color:#fff!important;background:rgba(16,22,24,.42);-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.22);box-shadow:0 10px 30px rgba(0,0,0,.18);white-space:nowrap}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-row{position:relative;z-index:2;margin:-247px -20px 0!important;padding:0 20px 0!important;gap:20px!important;scroll-padding:0 20px!important;pointer-events:none}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rxs{display:block;flex:0 0 100%;scroll-snap-align:start;pointer-events:none}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx{all:unset;box-sizing:border-box;display:block!important;width:217px!important;height:auto!important;flex:none!important;max-width:none!important;aspect-ratio:auto!important;background:#fff!important;border-radius:14px!important;overflow:hidden!important;box-shadow:0 8px 24px rgba(0,0,0,.18)!important;color:#152A2E!important;cursor:pointer;pointer-events:auto;text-align:left;outline:none!important;transform:none!important;position:relative!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx:focus-visible{outline:2px solid #152A2E!important;outline-offset:3px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx>i{position:relative!important;inset:auto!important;display:block!important;height:104px!important;width:100%!important;background-size:cover!important;background-position:center!important;transform:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx>i::after,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx::after,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx::before{display:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxo{display:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw{display:block!important;position:static!important;padding:10px 12px 12px!important;background:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxe{position:absolute;left:8px;top:8px;font-size:9.5px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;line-height:1;color:#fff;padding:4px 7px;border-radius:999px;background:rgba(16,22,24,.42);-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px);border:1px solid rgba(255,255,255,.22)}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw b{display:block;font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;font-size:19px!important;line-height:1.1!important;color:#152A2E!important;margin:0!important;text-shadow:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxd{display:block;font-size:12.5px;line-height:1.35;color:#3E4F52;margin-top:4px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxst{display:flex;gap:16px;margin-top:10px;padding-top:9px;border-top:1px solid #EEEBE6}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxst small{display:block;font-size:9.5px;letter-spacing:.08em;text-transform:uppercase;color:#7A8688;white-space:nowrap}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxst strong{display:block;font-size:13px;font-weight:600;color:#152A2E;margin-top:3px;white-space:nowrap}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxgo{display:block;margin-top:10px;font-size:12.5px;font-weight:600;line-height:20px;color:#152A2E;text-decoration:underline;text-underline-offset:3px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-dots{position:relative;z-index:3;justify-content:flex-end!important;margin:-30px 0 0 237px!important;padding:0!important;height:30px;align-items:center}
+}
+@media (max-width:760px){
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw span,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw small,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw strong,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw b{position:static!important;inset:auto!important;transform:none!important;opacity:1!important;text-shadow:none!important;background:none!important;width:auto!important;height:auto!important;max-width:none!important;overflow:visible!important;white-space:normal}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw .rxe{position:absolute!important;left:8px!important;top:8px!important;background:rgba(16,22,24,.42)!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw .rxst{display:flex!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw .rxst small,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx .rxw .rxst strong{white-space:nowrap}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-row,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rxs{background:transparent!important;height:auto!important;align-items:flex-start}
 }
