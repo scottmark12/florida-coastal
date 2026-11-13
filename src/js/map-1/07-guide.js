@@ -65,7 +65,7 @@
  function styleCard(p,k){const st=S.style,R=isR(st),id=R?st.slice(2):st,L=vOrder(),n=T.filter(t=>t.v.includes(st)).length,f=L[0];if(!f)return false;
   const img=R?RIMG(id):`img/vibes/${id}.webp`,tag=R?(RTAG[id]||VSUB[st]||''):(LK.VSUBL[st]||VSUB[st]||'');
   p.innerHTML=`<div class="ph" style="background-image:url('${img}')"></div><button class="x" aria-label="Close">&times;</button><div class="bd bstyle"><div class="eb">${R?'':`<i class="sdot" style="background:${VCOL[st]}"></i>`}${R?'Region':'Style'} · ${n} towns</div><h3>${VIBES[st]}</h3><p>${tag}.</p><div class="pnav"><a class="go" href="#" data-first="1">Meet the towns →</a><button data-st="1" aria-label="First town">›</button></div></div>`;
-  const go=e=>{e&&e.preventDefault();e&&e.stopPropagation();flyTo(f)};p.querySelector('[data-first]').onclick=go;p.querySelector('[data-st]').onclick=go;
+  const go=e=>{e&&e.preventDefault();e&&e.stopPropagation();G.sx=st;flyTo(f)};p.querySelector('[data-first]').onclick=go;p.querySelector('[data-st]').onclick=go;
   p.querySelector('.x').onclick=e=>{e.stopPropagation();G.sx=st;p.dataset.intro='';p.classList.remove('on')};
   p.onclick=null;const fresh=p.dataset.intro!='style:'+st;p.dataset.intro='style:'+st;p.classList.remove('full');p.classList.add('on');placePop();
   if(fresh&&SHON())setTimeout(()=>{if(S.style==st&&!S.pop)go0(fitStyle(st))},40);return true}
@@ -79,7 +79,7 @@
   p.innerHTML=`<div class="ph" style="background-image:url('${v.img||''}')"></div><button class="x" aria-label="Close guide">&times;</button><div class="bd bintro">${v.stp?`<div class="stp">${v.stp}</div>`:`<div class="eb">${v.eb}${v.how?' · <button type="button" class="how">How it works</button>':''}</div><h3>${v.h3}</h3>`}<p>${v.tx}</p><div class="pnav"><a class="go" href="#">${v.btn}</a></div></div>`;
   p.querySelector('.go').onclick=e=>{e.preventDefault();e.stopPropagation();v.act()};
   const hw=p.querySelector('.how');hw&&(hw.onclick=e=>{e.stopPropagation();G.step=0;show()});
-  p.querySelector('.x').onclick=e=>{e.stopPropagation();try{sessionStorage.setItem(KEY(k),'1')}catch(_){}p.dataset.intro='';p.classList.remove('on');qBtn().classList.add('on');later()};
+  p.querySelector('.x').onclick=e=>{e.stopPropagation();try{sessionStorage.setItem(KEY(k),'1')}catch(_){}G.sx=S.style;p.dataset.intro='';p.classList.remove('on');qBtn().classList.add('on');later()};
   p.onclick=null;p.dataset.intro=k;p.classList.remove('full');p.classList.add('on');placePop()}
 
  function qBtn(){let q=document.querySelector('.fcgq');if(!q){q=document.createElement('button');q.type='button';q.className='fcgq';q.setAttribute('aria-label','How this map works');q.textContent='?';($('mode')||document.body).appendChild(q);q.onclick=e=>{e.stopPropagation();try{sessionStorage.removeItem(KEY(G.k||kindNow()))}catch(_){}G.step=-1;q.classList.remove('on');if(S.pop)closePop();show()}}return q}

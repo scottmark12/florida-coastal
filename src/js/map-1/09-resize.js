@@ -10,3 +10,7 @@
   if(ph!==lastPh||d!==lastD){try{shSync()}catch(e){}}
   if(ph!==lastPh||d!==lastD||bw){setTimeout(()=>{refit();const p=$('pop');p&&p.classList.contains('on')&&placePop();render()},ph!==lastPh?120:0)}
   lastPh=ph;lastD=d;lastW=innerWidth},160)})})();
+/* Nov 13: town dots grow as you zoom in (up to 1.6x at the closest zoom) so they're easier to tap; labels stay the same */
+(function(){if(typeof render!='function')return;let base=0;const o=render;
+ const grow=()=>{if(!S.vb)return;base=Math.max(base,S.vb[2]);const z=base/S.vb[2],f=1+Math.max(0,Math.min(.6,(z-2)/6));if(f<=1.01)return;document.querySelectorAll('#mapbox circle.dot,#mapbox circle.ddh').forEach(c=>{if(c.dataset.g)return;c.dataset.g=1;const r=+c.getAttribute('r');if(r)c.setAttribute('r',r*f)})};
+ window.render=render=function(){const out=o.apply(this,arguments);try{grow()}catch(e){}return out}})();
