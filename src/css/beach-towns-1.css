@@ -272,3 +272,21 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-pl{font-f
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-d a.lb circle{r:calc(var(--k)*6px)}
 @media (max-width:760px){html body .sb .dd:not(#x){overscroll-behavior:contain}}
 html.kb:not(#x):not(#y):not(#z){scroll-snap-type:none!important}
+
+/* Nov 12 audit pass: bigger tap areas on the region map, A to Z regions fold on phone, price label, hero links */
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-d circle.hit{fill:transparent!important;stroke:none!important;opacity:1!important;r:calc(var(--k)*15px)!important;transition:none}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-d a:not(.on) circle.hit{display:none}
+html body section.az:not(#x):not(#y) .fl .c .pl{color:#6B7A7C;font-weight:400}
+@media (max-width:760px){
+html body section.az:not(#x):not(#y) #cols h5{cursor:pointer;display:flex;align-items:center;gap:10px;padding:18px 0 14px!important;font-size:13px!important;color:#152A2E!important;-webkit-tap-highlight-color:transparent}
+html body section.az:not(#x):not(#y) #cols h5 span{margin-left:auto}
+html body section.az:not(#x):not(#y) #cols h5::after{content:'';width:8px;height:8px;border-right:1.6px solid #152A2E;border-bottom:1.6px solid #152A2E;transform:rotate(45deg);margin:-4px 2px 0 4px;transition:transform .2s}
+html body section.az:not(#x):not(#y) #cols .rg.open h5::after,html body section.az:not(#x):not(#y) #cols.fo h5::after{transform:rotate(-135deg);margin-top:4px}
+html body section.az:not(#x):not(#y) #cols:not(.fo) .rg:not(.open) .rgl{display:none}
+html body section.az:not(#x):not(#y) #cols>div>div[style*="height:36px"]{height:0!important}
+html body .hs-l{gap:22px!important}
+html body .hs-l a{font-size:15px!important;padding:12px 0;color:#fff!important;text-shadow:0 1px 2px rgba(10,20,22,.45),0 2px 12px rgba(10,20,22,.5)!important}
+}
+@media (min-width:761px){
+html body .hs-l a{font-size:16px!important;color:#fff!important;text-shadow:0 1px 2px rgba(10,20,22,.4),0 2px 14px rgba(10,20,22,.45)!important}
+}

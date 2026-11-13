@@ -99,6 +99,15 @@
    "pages": [
     "beach-towns"
    ]
+  },
+  "vw-beach-towns": {
+   "name": "VW",
+   "kind": "const",
+   "format": "json",
+   "file": "beach-towns-views.json",
+   "pages": [
+    "beach-towns"
+   ]
   }
  },
  "assets": [

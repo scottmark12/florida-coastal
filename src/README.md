@@ -64,3 +64,8 @@ changes someone made directly to the served pages, then build and run the visual
 - `assets/articles-v3.js` and `assets/articles-v3.css`: the magazine layout of `articles/index.html`. They draw from the same `ARTICLES` list as the app, so a new article (tools/add_article.py) shows up without edits.
 - `img/fc-favicon.svg` (white mark on dark tab bars, logo blue on light), `img/fc-favicon.png`, `img/fc-favicon-180.png`.
 - `tools/town_swap.py` and `tools/town_swap_pages.py` were the one time Nov 12 town list change (6 added, 6 merged). Kept for the record; do not rerun.
+
+## Popular right now (Beach Towns)
+`src/data/beach-towns-views.json` holds different visitors per town over the last 30 days, with the dates
+the page prints under the cards. To refresh: run `tools/explored.sql` (read only) against Supabase, save the
+JSON it returns, then `python3 tools/explored.py <file>` and build. The same numbers label the region map.
