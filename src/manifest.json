@@ -108,15 +108,6 @@
    "pages": [
     "beach-towns"
    ]
-  },
-  "gr-beach-towns": {
-   "name": "GR",
-   "kind": "const",
-   "format": "json",
-   "file": "beach-towns-growth.json",
-   "pages": [
-    "beach-towns"
-   ]
   }
  },
  "assets": [

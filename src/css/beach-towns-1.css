@@ -372,22 +372,17 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) .rgx-more{background:rgba(255,255,255,.78)!important;color:#152A2E!important;border:1px solid rgba(255,255,255,.9)!important;font-size:13px!important;padding:8px 12px!important;box-shadow:0 6px 18px rgba(0,0,0,.10)!important}
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r){padding-bottom:calc(var(--gb,0px) + 24px)!important}
 }
-/* Nov 13: Where people are moving. Four photo tiles, big % on top, county in Caslon, frosted towns pill like the home buttons. Only a light shade at the top, no bottom fade */
+/* Nov 13: Best quality of life. Four photo tiles, big No. 1 to 4 on top, town in Caslon, frosted See town pill like the home buttons. Only a light shade at the top, no bottom fade */
 .mg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
 .mt{position:relative;display:block;height:380px;border-radius:24px;background:#ccc center/cover;overflow:hidden;color:#fff;text-decoration:none}
 .mt:after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(10,20,22,.26) 0,rgba(10,20,22,0) 96px);pointer-events:none}
-.mt .p{position:absolute;z-index:1;top:16px;left:18px;font-size:56px;font-weight:500;letter-spacing:-.035em;line-height:1;font-variant-numeric:tabular-nums}.mt .p i{font-style:normal;font-size:28px;margin-left:1px}
+.mt .p{position:absolute;z-index:1;top:16px;left:18px;font-size:56px;font-weight:500;letter-spacing:-.035em;line-height:1;font-variant-numeric:tabular-nums}.mt .p i{font-style:normal;font-size:22px;letter-spacing:0;margin-right:4px;vertical-align:18px}.mt b{white-space:nowrap}.mt.lg b{font-size:28px}
 .mt .p,.mt b{text-shadow:0 1px 10px rgba(10,20,22,.25)}
 .mt .b{position:absolute;z-index:1;left:18px;right:14px;bottom:18px}
 .mt b{display:block;font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:34px;line-height:1.05;margin-bottom:10px}
 .mt small{display:inline-block;font-size:13px;font-weight:500;padding:7px 12px;border-radius:99px;background:rgba(16,22,24,.32);-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.22)}
 .mt:hover{transform:translateY(-2px)}.mt{transition:transform .25s}
 #mgn{margin-top:16px}
-.mga{display:inline-block;margin-top:12px;background:none;border:0;padding:0;font:600 15px 'DM Sans',sans-serif;color:var(--ink);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
-.mgl{list-style:none;margin:18px 0 0;padding:0;columns:2;column-gap:40px}
-.mgl li{break-inside:avoid}.mgl a{display:flex;align-items:baseline;gap:10px;padding:11px 0;border-top:1px solid var(--line);color:var(--ink);text-decoration:none}
-.mgl b{font-weight:600;font-size:15px}.mgl span{flex:1;font-size:13px;color:#6B7678}.mgl em{font-style:normal;font-weight:600;font-variant-numeric:tabular-nums}
-#fc .cz{margin-left:8px;border:1px solid var(--line);background:#fff;border-radius:99px;padding:4px 10px;font:500 13px 'DM Sans',sans-serif;color:var(--ink);cursor:pointer}
+.mga{display:inline-block;margin-top:12px;font:600 15px 'DM Sans',sans-serif;color:var(--ink);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
 @media(max-width:760px){.mg{grid-template-columns:1fr 1fr;gap:10px;margin-top:22px}.mt{height:clamp(200px,calc((100svh - 330px)/2),260px)}
- .mt .p{top:14px;left:16px;font-size:46px}.mt .p i{font-size:24px}.mt .b{left:14px;right:12px;bottom:14px}.mt b{font-size:28px;margin-bottom:8px}.mt small{font-size:12.5px;padding:6px 11px}
- .mgl{columns:1}}
+ .mt .p{top:14px;left:16px;font-size:46px}.mt .p i{font-size:20px;vertical-align:14px}.mt.lg b{font-size:21px}.mt .b{left:14px;right:12px;bottom:14px}.mt b{font-size:28px;margin-bottom:8px}.mt small{font-size:12.5px;padding:6px 11px}}
