@@ -25,9 +25,13 @@ $('sb').onsubmit=()=>{const a=$('dd').querySelector('a');if(a)a.click();return f
 document.addEventListener('click',e=>{if(!e.target.closest('#sb'))$('sb').classList.remove('open')});
 $('dd').addEventListener('click',e=>{const a=e.target.closest('a[data-c]');if(!a)return;e.preventDefault();$('sb').classList.remove('open');pickC(a.dataset.c,a.dataset.a||'');$('regions').scrollIntoView({behavior:'smooth'})});
 /* explored */
-$('row').innerHTML=EXP.filter(([id])=>byId[id]).map(([id],i)=>{const t=byId[id];return `<a class="ex" href="${t.id}-v3.html"><i style="background-image:url('${t.img}')"></i><span class="n">No. ${i+1}</span><span class="t"><b>${t.n}</b><small><span>${(CO.find(c=>c[0]==AOF[area(t)])||[0,t.r.split(' · ')[0]])[1]}</span><span>${pr(t)}</span></small></span></a>`}).join('');
-const sc=d=>{const r=$('row');r.scrollBy({left:d*(r.firstElementChild.offsetWidth+20),behavior:'smooth'})};{const f=d=>new Date(d+'T12:00').toLocaleDateString('en-US',{month:'short',day:'numeric'}),y=VW.to.slice(0,4);$('exn').textContent=`Based on how many different visitors opened each town on Florida Coastal, ${f(VW.from)} to ${f(VW.to)}, ${y}.`}
-$('rp').onclick=()=>sc(-1);$('rn').onclick=()=>sc(1);
+/* Nov 13: Where people are moving. GR = Census net migration by county (tools: /tmp growth pull, see src/data/beach-towns-growth.json). Tap a tile to filter the A to Z to that county's towns */
+let AZC=null;{const fx=n=>(n>0?'+':n<0?'−':'')+Math.abs(n).toFixed(0);
+$('mg').innerHTML=GR.counties.slice(0,4).map((c,i)=>`<a class="mt" href="#all" data-i="${i}" style="background-image:url('../${c.img}');background-position:${c.pos}"><span class="p">${fx(c.pct)}<i>%</i></span><span class="b"><b>${c.c}</b><small>${c.ids.length} towns &rarr;</small></span></a>`).join('');
+$('mgl').innerHTML=GR.counties.map((c,i)=>`<li><a href="#all" data-i="${i}"><b>${c.c}</b><span>${c.ids.length} town${c.ids.length>1?'s':''}</span><em>${fx(c.pct)}%</em></a></li>`).join('');
+const go=e=>{const a=e.target.closest('a[data-i]');if(!a)return;e.preventDefault();const c=GR.counties[+a.dataset.i];AZC=c;$('fq').value='';$('fs').value='';$('fp').value='';az();$('all').scrollIntoView({behavior:'smooth'})};
+$('mg').onclick=go;$('mgl').onclick=go;$('mga').onclick=()=>{const o=$('mgl').hidden;$('mgl').hidden=!o;$('mga').setAttribute('aria-expanded',o);$('mga').innerHTML=o?'Show fewer':'See all 34 coastal counties &rarr;'};
+$('fc').addEventListener('click',e=>{if(e.target.closest('.cz')){AZC=null;az()}})}
 /* regions */
 const R={c:'',a:''};
 /* Nov 12: region map labels. VIEWS = different visitors who opened each town on Florida Coastal, Oct 13 to Nov 12 2026 (read only pull from fc_events). BEST = Slider Map Best all around order */
@@ -105,9 +109,9 @@ $('ach').onclick=e=>{const b=e.target.closest('button');if(b)pickC(R.c,b.dataset
 $('ax').onclick=e=>{const b=e.target.closest('button[data-a]');if(b){pickC(R.c,b.dataset.a);$('ach').scrollIntoView({behavior:'smooth',block:'start'})}};
 /* A to Z */
 $('fs').innerHTML='<option value="">Any style</option>'+Object.entries(VIBES).map(([k,v])=>`<option value="${k}">${v}</option>`).join('');
-function az(){const q=norm($('fq').value.trim()),s=$('fs').value,p=$('fp').value;let L=T.filter(t=>(!q||norm(t.n+' '+((window.FCAKA||{})[t.id]||'')).includes(q))&&(!s||t.v.includes(s)));
+function az(){const q=norm($('fq').value.trim()),s=$('fs').value,p=$('fp').value;let L=T.filter(t=>(!AZC||AZC.ids.includes(t.id))&&(!q||norm(t.n+' '+((window.FCAKA||{})[t.id]||'')).includes(q))&&(!s||t.v.includes(s)));
  if(p){const[a,b]=p.split('-').map(Number);L=L.filter(t=>t.m&&t.m>=a&&t.m<b)}
- $('fc').innerHTML=`<b>${L.length}</b> of 167 towns <span class="pl">· Prices are typical home values</span>`;$('cols').classList.toggle('fo',!!(q||s||p));
+ $('fc').innerHTML=`<b>${L.length}</b> of 167 towns${AZC?` <button class="cz" type="button">${AZC.c} County ×</button>`:''} <span class="pl">· Prices are typical home values</span>`;$('cols').classList.toggle('fo',!!(q||s||p||AZC));
  const blk=([k,n])=>{const G=L.filter(t=>inC(t,k)).sort((a,b)=>a.n.localeCompare(b.n));return `<div class="rg${AZO.has(k)?' open':''}" data-k="${k}"><h5 role="button" tabindex="0" aria-expanded="${AZO.has(k)}">${n}<span>${G.length}</span></h5><div class="rgl">${G.length?G.map(t=>`<a href="${t.id}-v3.html"><b>${t.n}</b><span>${pr(t)}</span></a>`).join(''):'<div class="none">None match</div>'}</div></div>`};const C=k=>CO.find(c=>c[0]==k);
  $('cols').innerHTML=`<div>${blk(C('panhandle'))}<div style="height:36px"></div>${blk(C('nature-coast-r'))}<div style="height:36px"></div>${blk(C('tampa-bay'))}</div><div>${blk(C('southwest'))}<div style="height:36px"></div>${blk(C('south-keys'))}</div><div>${blk(C('treasure-space'))}<div style="height:36px"></div>${blk(C('northeast'))}</div>`}
 /* Nov 12: on phone each region folds; tap its name to open it. A filter opens them all */
