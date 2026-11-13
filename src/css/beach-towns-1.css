@@ -337,3 +337,18 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-r
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-row{overflow:hidden!important;scroll-snap-type:none!important}
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) .rgx-frame,html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u) #cg .ct.rx{touch-action:pan-y}
 }
+/* Nov 13: map labels open their town; region cards on phone become full photo cards, same size and spot */
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-l.in .rgx-tl{pointer-events:auto;cursor:pointer}
+@media (max-width:760px){
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx{height:272px!important;background:#1A1B1B!important;box-shadow:0 12px 30px rgba(0,0,0,.24)!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx>i{position:absolute!important;inset:0!important;height:100%!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx .rxw{position:absolute!important;left:0;right:0;bottom:0;padding:70px 14px 14px!important;background:linear-gradient(180deg,rgba(8,12,14,0) 0%,rgba(8,12,14,.55) 38%,rgba(8,12,14,.86) 100%)!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx .rxw b{color:#fff!important;font-size:23px!important;text-shadow:0 1px 12px rgba(0,0,0,.35)!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx .rxw .rxd{color:rgba(255,255,255,.9)!important;font-size:12.5px!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx .rxw .rxst{border-top:0!important;padding-top:0!important;margin-top:8px!important;gap:0!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx .rxw .rxst small{display:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx .rxw .rxst strong{color:#fff!important;font-size:12.5px!important;font-weight:600!important;margin:0!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx .rxw .rxst span+span strong::before{content:'·';margin:0 6px;opacity:.75}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx .rxw .rxst span:first-child strong::after{content:' towns'}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx .rxw .rxgo{color:#fff!important;margin-top:8px!important}
+}
