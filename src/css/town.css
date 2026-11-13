@@ -62,3 +62,30 @@ aside .tlc button{border:1px solid #CFC9BE;background:#F7F5F1;color:var(--ink);b
 aside .tlc button.on{background:var(--ink);border-color:var(--ink);color:#fff}
 aside .fine{font-size:12.5px;line-height:1.45;color:var(--mute);margin:10px 0 0}
 aside .alt a.on{text-decoration:underline}
+/* Nov 13: photo galleries with 4+ photos (Fort Lauderdale first). Desktop: hero big on the left, four in a 2 by 2 grid, frosted See all pill. Phone: the hero swipes through every photo with a frosted 1 / N pill. Tapping opens the full screen viewer */
+.gal[data-n]{grid-template-columns:2fr 1fr 1fr!important;grid-template-rows:230px 230px!important}
+.gal[data-n]>.b{grid-row:1/3!important;grid-column:1!important}
+.gal[data-n]>div:nth-child(n+6){display:none}
+.gal[data-n]>div{cursor:zoom-in}
+.gal .gall{background:rgba(16,22,24,.38)!important;color:#fff;-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.28)!important;box-shadow:none!important;cursor:pointer}
+.gal .gcnt{display:none}
+@media(max-width:900px){
+.gal[data-n]{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:0!important;height:300px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+.gal[data-n]::-webkit-scrollbar{display:none}
+.gal[data-n]>div{flex:0 0 100%;display:block!important;scroll-snap-align:start;height:100%}
+.gal[data-n] .gall{display:none}
+.gal[data-n] .gcnt{display:block;position:absolute;right:14px;bottom:14px;font-size:13px;font-weight:500;color:#fff;padding:6px 11px;border-radius:999px;background:rgba(16,22,24,.38);-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.22);pointer-events:none}
+}
+.gv{position:fixed;inset:0;z-index:200;background:rgba(10,16,18,.96);display:flex;flex-direction:column}
+.gv[hidden]{display:none}
+.gv-row{flex:1;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none}
+.gv-row::-webkit-scrollbar{display:none}
+.gv-row figure{flex:0 0 100%;margin:0;scroll-snap-align:start;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:56px 16px 20px;box-sizing:border-box}
+.gv-row img{width:100%;height:calc(100vh - 150px);object-fit:contain}
+.gv-row figcaption{color:rgba(255,255,255,.75);font-size:14px;margin-top:12px;text-align:center}
+.gv-x,.gv-n{position:absolute;top:14px;color:#fff;font:500 14px 'DM Sans',system-ui,sans-serif;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);border-radius:999px;-webkit-backdrop-filter:blur(18px);backdrop-filter:blur(18px)}
+.gv-x{right:14px;width:40px;height:40px;cursor:pointer;font-size:20px;line-height:1}
+.gv-n{left:14px;padding:10px 13px}
+.gv-a{position:absolute;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.14);color:#fff;font-size:22px;cursor:pointer}
+.gv-a.p{left:16px}.gv-a.nx{right:16px}
+@media(max-width:900px){.gv-a{display:none}}
