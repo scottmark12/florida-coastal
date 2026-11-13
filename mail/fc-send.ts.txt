@@ -18,13 +18,13 @@ async function bytes(url: string): Promise<Uint8Array> {
 let cache: any = null;
 async function assets() {
   if (cache && Date.now() - cache.at < 10 * 60 * 1000) return cache;
-  const [towns, fr, fs, dr, db, logo, mark] = await Promise.all([
+  const [towns, cd, dr, dm, logo] = await Promise.all([
     fetch(`${SITE}/mail/towns.json`).then((r) => r.json()),
-    bytes(`${SITE}/mail/fonts/Fraunces-Regular.ttf`), bytes(`${SITE}/mail/fonts/Fraunces-SemiBold.ttf`),
-    bytes(`${SITE}/mail/fonts/DMSans-Regular.ttf`), bytes(`${SITE}/mail/fonts/DMSans-Bold.ttf`),
-    bytes(`${SITE}/img/logo.png`), bytes(`${SITE}/img/logo-mark.png`),
+    bytes(`${SITE}/mail/fonts/LibreCaslonDisplay-Regular.ttf`),
+    bytes(`${SITE}/mail/fonts/DMSans-Regular-2.ttf`), bytes(`${SITE}/mail/fonts/DMSans-Medium.ttf`),
+    bytes(`${SITE}/img/fc-logo-arch-line-ink.png`),
   ]);
-  cache = { at: Date.now(), towns, fonts: { frauncesRegular: fr, frauncesSemiBold: fs, dmRegular: dr, dmBold: db }, logo, mark };
+  cache = { at: Date.now(), towns, fonts: { caslonDisplay: cd, dmRegular: dr, dmMedium: dm }, logo };
   return cache;
 }
 
@@ -51,7 +51,7 @@ async function processRow(row: any, settings: any, dry: boolean) {
   if (row.step === "top5") {
     const out = await render(lead, a.towns, {
       PDFDocument: PDF.PDFDocument, rgb: PDF.rgb, fontkit, ops: PDF,
-      fonts: a.fonts, logoPng: a.logo, markPng: a.mark, loadImage: bytes,
+      fonts: a.fonts, logoPng: a.logo, loadImage: bytes,
       guideUrl: settings.guide_enabled && settings.guide_url ? settings.guide_url : null,
     });
     mail = out;
