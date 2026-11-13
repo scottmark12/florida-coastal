@@ -36,7 +36,7 @@ const VIEWS=VW.views,BEST=["dunedin","naples","venice","fernandina","stuart","st
 $('cg').innerHTML=(()=>{
  const fm=v=>v>=1000?'$'+(v/1000).toFixed(v%1000?2:1).replace(/0$/,'')+'M':'$'+v+'K';
  /* Nov 12: on phone each region card is the home page map card (white, photo strip, serif name, two numbers, one link) */
- const cards=CO.map(([k,n,d,im],i)=>{const L=T.filter(t=>inC(t,k)),m=L.map(t=>t.m).filter(Boolean).sort((a,b)=>a-b),rg=m.length?fm(m[0])+' to '+fm(m[m.length-1]):'';return `<div class="rxs" data-c="${k}"><button type="button" class="ct rx${i?'':' on'}" data-c="${k}" aria-label="${n}, ${L.length} towns"><i style="background-image:url('${im}')"></i><span class="rxo"><small>${L.length} towns</small><b>${n}</b><em>${d}</em></span><span class="rxw"><span class="rxe">Region ${i+1} of 7</span><b>${n}</b><span class="rxd">${d}</span><span class="rxst"><span><small>Towns</small><strong>${L.length}</strong></span>${rg?`<span><small>Typical home</small><strong>${rg}</strong></span>`:''}</span><span class="rxgo">Tap to see ${L.length} towns</span></span></button></div>`}).join('');
+ const cards=CO.map(([k,n,d,im],i)=>{const L=T.filter(t=>inC(t,k)),m=L.map(t=>t.m).filter(Boolean).sort((a,b)=>a-b),rg=m.length?fm(m[0])+' to '+fm(m[m.length-1]):'';return `<div class="rxs" data-c="${k}"><button type="button" class="ct rx${i?'':' on'}" data-c="${k}" aria-label="${n}, ${L.length} towns"><i style="background-image:url('${im}')"></i><span class="rxo"><small>${L.length} towns</small><b>${n}</b><em>${d}</em></span><span class="rxw"><span class="rxe">Region ${i+1} of 7</span><b>${n}</b><span class="rxd">${d}</span><span class="rxst"><span><small>Towns</small><strong>${L.length}</strong></span>${rg?`<span><small>Typical home</small><strong>${rg}</strong></span>`:''}</span><span class="rxgo">${L.length} towns →</span></span></button></div>`}).join('');
  return `<div class="rgx"><div class="rgx-frame"><svg id="rgsvg" preserveAspectRatio="xMidYMid meet" role="img" aria-label="Map of the selected Florida region"></svg><div class="rgx-pill" id="rgpill"></div><a class="rgx-more" id="rgmore" href="../vibe-v3.html?mode=regions">Explore the region map →</a></div><div class="rgx-row" id="rgrow">${cards}</div><div class="rgx-dots" id="rgdots">${CO.map((c,i)=>`<i class="${i?'':'on'}"></i>`).join('')}</div></div>`})();
 (function(){const svg=$('rgsvg'),row=$('rgrow');if(!svg||!window.FLMAP)return;
  const PX=lo=>(lo+89)*88.3,PY=la=>(36.8-la)*100;
@@ -54,10 +54,10 @@ $('cg').innerHTML=(()=>{
   svg.querySelectorAll('#rgd a').forEach(a=>{const id=a.getAttribute('href').replace('-v3.html','');a.classList.toggle('lb',(top&&top.id==id)||pop.some(t=>t.id==id))});
   g.innerHTML=h;g.classList.remove('in');requestAnimationFrame(()=>g.classList.add('in'))};
  /* Nov 12: the card always sits in the same spot (215px down the map, 188px in), so each region gets a fixed place: wide ones above the card, tall ones beside it */
- const PH=()=>innerWidth<=760,CT=()=>215,CW=()=>188,PL={'panhandle':'top','nature-coast-r':'right','tampa-bay':'right','southwest':'right','south-keys':'top','treasure-space':'right','northeast':'right'};
+ const PH=()=>innerWidth<=760,CT=()=>352,CW=()=>188,PL={'panhandle':'top','nature-coast-r':'right','tampa-bay':'right','southwest':'right','south-keys':'top','treasure-space':'right','northeast':'right'};
  const boxP=k=>{const L=T.filter(t=>inC(t,k));let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;L.forEach(t=>{const x=PX(t.lo),y=PY(t.la);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)});
-  const r=svg.getBoundingClientRect(),W=r.width||300,H=r.height||460,tp=56,ct=CT(),cw=CW(),w=Math.max(x1-x0,50)*1.18,h=Math.max(y1-y0,50)*1.18,cx=(x0+x1)/2,cy=(y0+y1)/2;
-  const A={top:[14,tp,W-28,ct-tp-14],right:[cw+12,tp,W-cw-24,H-tp-16]},q=A[PL[k]]||A.top,R=[...q,Math.min(q[2]/w,q[3]/h)];
+  const r=svg.getBoundingClientRect(),W=r.width||300,H=r.height||460,tp=56,ct=CT(),cw=CW(),w=Math.max(x1-x0,40)*1.12,h=Math.max(y1-y0,40)*1.12,cx=(x0+x1)/2,cy=(y0+y1)/2;
+  const A={top:[14,tp,W-28,ct-tp-14],right:[cw+12,tp,W-cw-24,H-tp-16]},q=A.top,R=[...q,Math.min(q[2]/w,q[3]/h)];
   const kk=1/R[4];return [cx-(R[0]+R[2]/2)*kk,cy-(R[1]+R[3]/2)*kk,W*kk,H*kk]};
  const RGOV=118;const box=k=>{if(PH())return boxP(k);const L=T.filter(t=>inC(t,k));let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;L.forEach(t=>{const x=PX(t.lo),y=PY(t.la);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)});
   const r=svg.getBoundingClientRect(),H=r.height||300,ph=innerWidth<=760,ov=ph?RGOV:0,tp=ph?46:0,av=H-ov-tp,asp=(r.width||360)/av;let w=Math.max(x1-x0,60)*1.2,h=Math.max(y1-y0,60)*1.2;if(w/h<asp)w=h*asp;else h=w/asp;const cx=(x0+x1)/2,cy=(y0+y1)/2,sc=h/av;return [cx-w/2,cy-h/2-tp*sc,w,H*sc]};
@@ -89,7 +89,7 @@ $('cg').innerHTML=(()=>{
  /* Nov 12: a bigger, invisible tap area around each town dot (the dot itself stays small) */
  svg.querySelectorAll('#rgd a').forEach(a=>{const c=a.querySelector('circle');if(!c||a.querySelector('.hit'))return;const h=document.createElementNS('http://www.w3.org/2000/svg','circle');h.setAttribute('class','hit');h.setAttribute('cx',c.getAttribute('cx'));h.setAttribute('cy',c.getAttribute('cy'));a.insertBefore(h,c)});
  const go0=()=>{act='';show(R.c||CO[0][0])};if(svg.getBoundingClientRect().width)go0();else requestAnimationFrame(go0)})();
-$('cg').onclick=e=>{const b=e.target.closest('.ct');if(b)pickC(b.dataset.c,'')};
+$('cg').onclick=e=>{const b=e.target.closest('.ct');if(!b)return;/* Nov 13: on phone, tapping the next card peeking in moves to it; tapping the current card opens its towns */if(innerWidth<=760&&b.classList.contains('rx')&&!b.classList.contains('on')){rgHL(b.dataset.c);return}pickC(b.dataset.c,'')};
 function pickC(c,a){R.c=c;R.a=a;const co=CO.find(x=>x[0]==c);const L=T.filter(t=>inC(t,c)).sort((x,y)=>cOrd(x)-cOrd(y));
  const areas=[];L.forEach(t=>{const a=area(t);if(!areas.includes(a))areas.push(a)});
  $('cg').classList.add('any');document.querySelectorAll('.ct').forEach(b=>b.classList.toggle('on',b.dataset.c==c));window.rgHL&&rgHL(c);

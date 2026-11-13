@@ -359,3 +359,16 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s) #cg .ct.rx .rxw b{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:600!important;font-size:22px!important;line-height:1.15!important;letter-spacing:-.01em}
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s) #cg .ct.rx .rxw .rxgo{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;font-size:14px!important;text-decoration:none!important;margin-top:6px!important;opacity:.92}
 }
+/* Nov 13, Compass pass on phone: map zoomed into the region above a row of short caption cards; the next card peeks in; no dots */
+@media (max-width:760px){
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) .rgx-frame{height:432px!important;border-radius:24px!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) .rgx-row{margin:-80px -20px 0!important;gap:24px!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) .rxs{flex:0 0 217px!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) #cg .ct.rx{height:150px!important;border-radius:18px!important;box-shadow:0 10px 26px rgba(0,0,0,.22)!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) #cg .ct.rx .rxw{left:0!important;right:0!important;bottom:0!important;top:auto!important;padding:44px 14px 13px!important;background:linear-gradient(180deg,rgba(8,12,14,0),rgba(8,12,14,.62) 55%,rgba(8,12,14,.78))!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) #cg .ct.rx .rxw b{font-size:19px!important;line-height:1.15!important;white-space:normal}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) #cg .ct.rx .rxw .rxgo{font-size:13.5px!important;margin-top:3px!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) .rgx-dots{display:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) .rgx-more{background:rgba(255,255,255,.78)!important;color:#152A2E!important;border:1px solid rgba(255,255,255,.9)!important;font-size:13px!important;padding:8px 12px!important;box-shadow:0 6px 18px rgba(0,0,0,.10)!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r){padding-bottom:calc(var(--gb,0px) + 24px)!important}
+}
