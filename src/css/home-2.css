@@ -351,3 +351,5 @@ html body section.dk-hero:not(#x):not(#y) .hero-note,html body section.dk-hero:n
 @media (min-width:761px){html body section.dk-hero:not(#x):not(#y):not(#z):not(#w) .wrap{padding-bottom:84px!important}}
 @media (min-width:761px){html body section.dk-hero:not(#x):not(#y):not(#z):not(#w) .dk-l{padding:0!important}}
 html.kb:not(#x):not(#y):not(#z){scroll-snap-type:none!important}
+/* phone: All articles sits under the title, clear of the floating menu button */
+@media (max-width:760px){html body section.cguides:not(#a):not(#b):not(#c):not(#d) .cg-head{flex-direction:column!important;align-items:flex-start!important;gap:10px}html body section.cguides:not(#a):not(#b):not(#c):not(#d) .cg-all{order:2;margin:0!important}}
