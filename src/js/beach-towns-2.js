@@ -50,8 +50,9 @@ $('cg').innerHTML=(()=>{
   /* Nov 12: one label style for all three (Mark: no pills, no overall rank text) */[...pop,top].filter(Boolean).forEach(t=>{const txt=nm(t),w=txt.length*7.6+4,b=place(t,w,18);if(b)h+=`<text x="${cur[0]+b[0]*k}" y="${cur[1]+(b[1]+14)*k}" font-size="${13.5*k}" stroke-width="${3.4*k}" class="rgx-tl">${txt}</text>`});
   svg.querySelectorAll('#rgd a').forEach(a=>{const id=a.getAttribute('href').replace('-v3.html','');a.classList.toggle('lb',(top&&top.id==id)||pop.some(t=>t.id==id))});
   g.innerHTML=h;g.classList.remove('in');requestAnimationFrame(()=>g.classList.add('in'))};
- const box=k=>{const L=T.filter(t=>inC(t,k));let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;L.forEach(t=>{const x=PX(t.lo),y=PY(t.la);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)});
-  const r=svg.getBoundingClientRect(),asp=(r.width||360)/(r.height||300);let w=Math.max(x1-x0,60)*1.3,h=Math.max(y1-y0,60)*1.3;if(w/h<asp)w=h*asp;else h=w/asp;const cx=(x0+x1)/2,cy=(y0+y1)/2;return [cx-w/2,cy-h/2,w,h]};
+ const RGOV=118;const box=k=>{const L=T.filter(t=>inC(t,k));let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;L.forEach(t=>{const x=PX(t.lo),y=PY(t.la);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)});
+  const r=svg.getBoundingClientRect(),H=r.height||300,ph=innerWidth<=760,ov=ph?RGOV:0,tp=ph?46:0,av=H-ov-tp,asp=(r.width||360)/av;let w=Math.max(x1-x0,60)*1.2,h=Math.max(y1-y0,60)*1.2;if(w/h<asp)w=h*asp;else h=w/asp;const cx=(x0+x1)/2,cy=(y0+y1)/2,sc=h/av;return [cx-w/2,cy-h/2-tp*sc,w,H*sc]};
+ /* Nov 12: on phone the region cards sit over the bottom of the map, so fit each region into the part above them */
  let cur=null,anim=0,act='';
  const set=v=>{svg.setAttribute('viewBox',v.map(n=>n.toFixed(1)).join(' '));const r=svg.getBoundingClientRect(),k=v[2]/(r.width||360);svg.style.setProperty('--k',k);$('rgterr').style.setProperty('--k',k)};
  const glide=to=>{cancelAnimationFrame(anim);$('rglb')&&($('rglb').innerHTML='');if(!cur||matchMedia('(prefers-reduced-motion: reduce)').matches){cur=to;set(to);labels();return}const fr=cur.slice(),t0=performance.now(),D=650;

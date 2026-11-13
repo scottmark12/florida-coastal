@@ -290,3 +290,14 @@ html body .hs-l a{font-size:15px!important;padding:12px 0;color:#fff!important;t
 @media (min-width:761px){
 html body .hs-l a{font-size:16px!important;color:#fff!important;text-shadow:0 1px 2px rgba(10,20,22,.4),0 2px 14px rgba(10,20,22,.45)!important}
 }
+/* Nov 12: phone, bigger Popular cards; region cards overlap the bottom of the map */
+@media (max-width:760px){
+html body .row{grid-auto-columns:86%!important}
+html body .ex{border-radius:18px}
+html body .ex b{font-size:40px!important}
+html body .ex small{font-size:15px!important}
+html body .ex .t{left:20px;right:20px;bottom:20px}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-frame{height:min(470px,62svh)!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) .rgx-row{position:relative;z-index:2;margin-top:-118px!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v) #cg .ct.rx{box-shadow:0 10px 26px rgba(10,25,30,.28)}
+}
