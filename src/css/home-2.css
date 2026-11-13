@@ -333,13 +333,6 @@ html body[data-newsph2] main>section.news:not(#a){position:relative;overflow:hid
 html body[data-newsph2] main>section.news:not(#a)::before{content:'';position:absolute;top:0;bottom:0;right:0;height:100%;aspect-ratio:1800/920;background:url(/img/c/keys-chair.webp) center/cover no-repeat;-webkit-mask-image:linear-gradient(90deg,transparent,#000 18%);mask-image:linear-gradient(90deg,transparent,#000 18%);z-index:0;pointer-events:none}
 html body[data-newsph2] main>section.news:not(#a)>*{position:relative;z-index:1}
 }
-/* Nov 12: articles section fits its content on phones (the dates made it taller than one screen); All articles sits under the title, clear of the menu button */
-@media (max-width:760px){
-html body main>section.cguides:not(#a):not(#b):not(#c){height:auto!important;min-height:100svh!important;overflow:visible!important}
-html body section.cguides:not(#a):not(#b):not(#c) .cg-lead{height:auto!important}
-html body section.cguides:not(#a):not(#b):not(#c) .cg-head{flex-direction:column!important;align-items:flex-start!important;gap:10px}
-html body section.cguides:not(#a):not(#b):not(#c) .cg-all{order:2;margin:0!important}
-}
 /* Nov 12: desktop hero is full screen and drops the dark cover, like the phone */
 @media (min-width:761px){
 html body main>section.dk-hero:not(#x):not(#y):not(#z){height:100vh!important;min-height:620px!important;background-image:linear-gradient(rgba(10,20,22,.32) 0,rgba(10,20,22,0) 170px),url(/img/c/grayton-beach.webp)!important;background-size:auto,cover!important;background-position:0 0,50% 62%!important}
