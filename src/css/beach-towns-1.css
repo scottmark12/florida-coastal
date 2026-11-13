@@ -294,7 +294,7 @@ html body .hs-l a{font-size:16px!important;color:#fff!important;text-shadow:0 1p
 @media (max-width:760px){
 html body .row{grid-auto-columns:86%!important}
 html body .ex{border-radius:18px}
-html body #row .ex{aspect-ratio:auto!important;height:clamp(340px,calc(100svh - 400px),520px)!important}
+html body #row .ex{aspect-ratio:auto!important;height:clamp(260px,calc(100svh - 410px),520px)!important}
 html body section.hs+section.s:not(#x):not(#y){padding-top:calc(var(--gt,0px) + 64px)!important}
 html body .ex b{font-size:40px!important}
 html body .ex small{font-size:15px!important}
@@ -361,7 +361,7 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t
 }
 /* Nov 13, Compass pass on phone: map zoomed into the region above a row of short caption cards; the next card peeks in; no dots */
 @media (max-width:760px){
-html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) .rgx-frame{height:432px!important;border-radius:24px!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) .rgx-frame{height:clamp(300px,calc(100svh - 380px),432px)!important;border-radius:24px!important}/* Nov 13: the whole section fits one screen, so the page has one place to stop here */
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) .rgx-row{margin:-80px -20px 0!important;gap:24px!important}
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) .rxs{flex:0 0 217px!important}
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t):not(#s):not(#r) #cg .ct.rx{height:150px!important;border-radius:18px!important;box-shadow:0 10px 26px rgba(0,0,0,.22)!important}

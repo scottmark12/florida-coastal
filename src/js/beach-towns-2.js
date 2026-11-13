@@ -54,7 +54,7 @@ $('cg').innerHTML=(()=>{
   svg.querySelectorAll('#rgd a').forEach(a=>{const id=a.getAttribute('href').replace('-v3.html','');a.classList.toggle('lb',(top&&top.id==id)||pop.some(t=>t.id==id))});
   g.innerHTML=h;g.classList.remove('in');requestAnimationFrame(()=>g.classList.add('in'))};
  /* Nov 12: the card always sits in the same spot (215px down the map, 188px in), so each region gets a fixed place: wide ones above the card, tall ones beside it */
- const PH=()=>innerWidth<=760,CT=()=>352,CW=()=>188,PL={'panhandle':'top','nature-coast-r':'right','tampa-bay':'right','southwest':'right','south-keys':'top','treasure-space':'right','northeast':'right'};
+ const PH=()=>innerWidth<=760,CT=()=>(svg.getBoundingClientRect().height||432)-80,CW=()=>188,PL={'panhandle':'top','nature-coast-r':'right','tampa-bay':'right','southwest':'right','south-keys':'top','treasure-space':'right','northeast':'right'};
  const boxP=k=>{const L=T.filter(t=>inC(t,k));let x0=1e9,y0=1e9,x1=-1e9,y1=-1e9;L.forEach(t=>{const x=PX(t.lo),y=PY(t.la);x0=Math.min(x0,x);x1=Math.max(x1,x);y0=Math.min(y0,y);y1=Math.max(y1,y)});
   const r=svg.getBoundingClientRect(),W=r.width||300,H=r.height||460,tp=56,ct=CT(),cw=CW(),w=Math.max(x1-x0,40)*1.12,h=Math.max(y1-y0,40)*1.12,cx=(x0+x1)/2,cy=(y0+y1)/2;
   const A={top:[14,tp,W-28,ct-tp-14],right:[cw+12,tp,W-cw-24,H-tp-16]},q=A.top,R=[...q,Math.min(q[2]/w,q[3]/h)];
