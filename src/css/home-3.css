@@ -41,3 +41,20 @@ html body[data-newsph2] section.news:not(#a) h2{font-size:27px!important}
 html body[data-newsph2] section.news:not(#a) h2+p{font-size:15px!important;margin-bottom:14px!important}
 html body[data-newsph2] section.news:not(#a) input[type=email],html body[data-newsph2] section.news:not(#a) button[type=submit]{height:48px!important}
 }
+
+/* Nov 12 grade pass: hero small text readable on the sky, featured article reads as one block,
+   even gap above Why we built this, desktop guide form stacked */
+html body section.dk-hero:not(#a):not(#b):not(#c) .hero-note,html body section.dk-hero:not(#a):not(#b):not(#c) .dk-eyebrow{color:#fff!important;text-shadow:0 1px 2px rgba(10,20,22,.35),0 2px 14px rgba(10,20,22,.45)!important}
+@media (min-width:1001px){
+html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i) a.cg-lead{align-items:center!important}
+html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i) .cg-lb{display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:flex-start!important;align-self:center!important;height:auto!important;min-height:0!important;padding:0!important}
+html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i) .cg-lb .cg-dt{order:-1;position:static!important;margin:0 0 14px!important}
+html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i) .cg-lb b{margin:0 0 20px!important}
+html body section.cguides:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g):not(#h):not(#i) .cg-lb .cg-go{display:inline-block!important;margin:0!important;position:static!important}
+}
+@media (min-width:761px){
+html body main>section.cstyles:not(#a):not(#b):not(#c){padding-bottom:0!important}
+html body section.news:not(#a):not(#b):not(#c) #newsform{flex-direction:column!important;align-items:stretch!important;gap:10px!important}
+html body section.news:not(#a):not(#b):not(#c) #newsform input[type=email],html body section.news:not(#a):not(#b):not(#c) #newsform button{width:100%!important;flex:none!important}
+}
+html body section.dk-hero:not(#a):not(#b):not(#c) .dk-eyebrow{font-weight:600!important;letter-spacing:.14em!important}
