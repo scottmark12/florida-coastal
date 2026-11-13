@@ -38,7 +38,30 @@ function listShow(on,quiet){let el=$('mlist');if(!el){el=document.createElement(
  S.listOn=!!on;document.body.classList.toggle('list-on',S.listOn);if(!on){if(!quiet)navSync();return}
  const [L,title]=listTowns();el.innerHTML=`<div class="ml-hd"><button type="button" class="ml-map" onclick="listShow(false)">‹ Map</button><b>${title}</b><span>${L.length} towns</span></div><div class="ml-list">${L.map((t,i)=>`<a class="ml-row" href="towns/${t.id}-v3.html"><span class="ph" style="background-image:url('${t.img}')">${S.mode=='sliders'&&S.top.length?`<i>${i+1}</i>`:''}</span><span class="tx"><small>${LD[t.id].rn}</small><b>${t.n}</b><em>${t.b||''}</em></span></a>`).join('')}</div>`;el.scrollTop=0;if(!quiet)navSync()}
 (function(){const r=$('res');if(!r)return;/* Nov 12: List button removed, the full sheet is the list */
- const hd=document.querySelector('body > header');if(hd){const sb=document.createElement('button');sb.type='button';sb.className='msearch';sb.innerHTML='<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><span>Search a town, region or ZIP</span>';sb.onclick=()=>{if(window.FCS)FCS.open('');else location.href='towns/index-v2.html'};hd.appendChild(sb)}})();
+ const hd=document.querySelector('body > header');if(hd){/* Nov 13: the map's search bar is a real glass search with its own dropdown (towns, regions, ZIP codes). Picking a town flies the map to it */
+  const sb=document.createElement('form');sb.className='msearch';sb.setAttribute('role','search');sb.innerHTML='<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input type="search" placeholder="Search a town, region or ZIP" aria-label="Search a town, region or ZIP" autocomplete="off" spellcheck="false" enterkeyhint="search"><button type="button" class="mx" aria-label="Clear">&times;</button>';
+  const dd=document.createElement('div');dd.className='mdd';hd.appendChild(sb);hd.appendChild(dd);const inp=sb.querySelector('input');
+  const nm=x=>String(x||'').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g,'').replace(/[^a-z0-9 ]/g,' ').replace(/\s+/g,' ').trim();
+  let ZIPD=null,zl=null,L=[],kI=-1;const it=(img,b,sm,act)=>{L.push(act);return `<a href="#" data-i="${L.length-1}"><i style="background-image:url('${img}')"></i><span><b>${b}</b><small>${sm}</small></span></a>`};
+  const close=()=>{dd.classList.remove('on');sb.classList.remove('on');kI=-1};
+  const draw=()=>{const raw=inp.value.trim(),zv=raw.replace(/\s/g,''),q=nm(raw);L=[];let h='';sb.classList.toggle('has',!!raw);
+   if(!raw){close();return}
+   if(/^\d{1,5}$/.test(zv)){if(zv.length<3)h='<div class="no">Keep typing the ZIP…</div>';else if(!ZIPD){zl=zl||fetch('assets/search-zip.json?v=1').then(r=>r.json()).then(d=>{ZIPD=d});zl.then(draw);h='<div class="no">Looking up that ZIP…</div>'}else{const seen={},Z=Object.keys(ZIPD).filter(z=>z.indexOf(zv)===0).sort().filter(z=>{const id=ZIPD[z][0];if(seen[id])return false;seen[id]=1;return true}).slice(0,6);
+     h=Z.length?'<div class="hd">ZIP codes</div>'+Z.map(z=>{const m=ZIPD[z],t=T.find(x=>x.id==m[0]);return t?it(t.img,t.n,m[1]?`Closest town to ${z} ${m[2]}, about ${m[1]} mi`:`ZIP ${z}, ${m[2]}`,()=>flyTo(t)):''}).join(''):(zv.length==5?`<div class="no">ZIP ${zv} isn’t near one of our 167 beach towns.</div>`:'<div class="no">Keep typing the ZIP…</div>')}}
+   else if(q.length>=2){const ak=window.FCAKA||{},sc=t=>{const n=nm(t.n);return n.indexOf(q)===0?0:(' '+n).indexOf(' '+q)>=0?1:n.indexOf(q)>=0?2:nm(ak[t.id]).indexOf(q)>=0?3:nm(LD[t.id]&&LD[t.id].rn).indexOf(q)>=0?4:9};
+    const tw=T.map(t=>[sc(t),t]).filter(x=>x[0]<9).sort((a,b)=>a[0]-b[0]||a[1].n.localeCompare(b[1].n)).slice(0,6).map(x=>x[1]);
+    const rg=Object.keys(VIBES).filter(k=>k.indexOf('r:')===0&&nm(VIBES[k]).indexOf(q)>=0).slice(0,3);
+    if(tw.length)h+='<div class="hd">Towns</div>'+tw.map(t=>it(t.img,t.n,(LD[t.id]&&LD[t.id].rn)||'',()=>flyTo(t))).join('');
+    if(rg.length)h+='<div class="hd">Regions</div>'+rg.map(k=>{const n=T.filter(t=>t.v.includes(k)),f=n.find(t=>t.real)||n[0];return it(f?f.img:'',VIBES[k],`${n.length} towns`,()=>{if(S.mode!='vibes')setMode('vibes');pickStyle(k)})}).join('');
+    if(!h)h='<div class="no">No town or region matches that. Try a nearby town or a ZIP.</div>'}
+   else h='<div class="no">Keep typing…</div>';
+   dd.innerHTML=h;dd.classList.add('on');sb.classList.add('on');kI=-1};
+  inp.addEventListener('input',draw);inp.addEventListener('focus',()=>{if(inp.value.trim())draw()});
+  inp.addEventListener('keydown',e=>{const A=[...dd.querySelectorAll('a')];if(e.key=='Escape'){inp.blur();close();return}if(!A.length)return;if(e.key=='ArrowDown'||e.key=='ArrowUp'){e.preventDefault();kI=(kI+(e.key=='ArrowDown'?1:-1)+A.length)%A.length;A.forEach((a,i)=>a.classList.toggle('k',i==kI))}});
+  sb.onsubmit=e=>{e.preventDefault();const a=dd.querySelectorAll('a')[Math.max(0,kI)];a&&a.click()};
+  dd.addEventListener('click',e=>{const a=e.target.closest('a[data-i]');if(!a)return;e.preventDefault();const f=L[+a.dataset.i];inp.blur();close();inp.value='';sb.classList.remove('has');f&&f()});
+  sb.querySelector('.mx').onclick=()=>{inp.value='';sb.classList.remove('has');close();inp.focus()};
+  document.addEventListener('pointerdown',e=>{if(!e.target.closest('.msearch,.mdd'))close()},true)}})();
 setTimeout(()=>{S.navReady=1;const q=new URLSearchParams(location.search);if(q.get('view')=='list')listShow(true,true);history.replaceState({fc:1},'',navURL())},1500);
 S.booted=1;
 if(params.get('open')){const t=T.find(t=>t.id==params.get('open'));if(t)setTimeout(()=>{S.restoring=1;openPop(t);setTimeout(()=>{S.restoring=0},300)},450)}

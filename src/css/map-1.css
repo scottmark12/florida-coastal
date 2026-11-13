@@ -694,3 +694,22 @@ html body:not(#x):not(#y) #res.res{top:84px!important}
 }
 /* panel runs full height on desktop, attached to the right edge under the header */
 @media (min-width:1000px){html body:not(#x):not(#y):not(#z) #res.res{top:68px!important;right:0!important;bottom:0!important;border-radius:0!important;border:0!important;border-left:1px solid rgba(21,42,46,.10)!important;box-shadow:none!important;width:440px!important}}
+/* Nov 13: no zoom buttons on phone (pinch to zoom); they sat on the east coast towns */
+@media (max-width:760px){html body .map .zoom:not(#x):not(#y):not(#z){display:none!important}}
+/* Nov 13: map search bar is a real input with a glass dropdown (phone) */
+.mdd{display:none}
+@media (max-width:760px){
+html body .msearch input{flex:1;min-width:0;border:0;outline:0;background:transparent;font:inherit;font-size:16px;color:#152A2E;padding:0;-webkit-appearance:none;appearance:none}
+html body .msearch input::placeholder{color:#5E6B6D;opacity:1}html body .msearch input::-webkit-search-cancel-button{display:none}
+html body .msearch .mx{display:none;border:0;background:rgba(21,42,46,.08);color:#152A2E;width:26px;height:26px;border-radius:50%;font-size:17px;line-height:1;padding:0;cursor:pointer;flex:none}html body .msearch.has .mx{display:block}
+html body .msearch.on{background:rgba(255,255,255,.94)}
+html body .mdd.on{display:block;position:fixed;left:14px;right:14px;top:calc(62px + env(safe-area-inset-top));z-index:60;max-height:min(62vh,520px);overflow:auto;padding:8px;border-radius:22px;background:rgba(255,255,255,.9);-webkit-backdrop-filter:blur(22px) saturate(1.2);backdrop-filter:blur(22px) saturate(1.2);border:1px solid rgba(255,255,255,.7);box-shadow:0 18px 44px rgba(10,20,22,.22);font-family:"DM Sans",system-ui,sans-serif}
+html body .mdd .hd{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:#6B7678;padding:10px 10px 6px}
+html body .mdd a{display:flex;align-items:center;gap:12px;padding:8px 10px;border-radius:14px;text-decoration:none;color:#152A2E}
+html body .mdd a.k,html body .mdd a:active{background:rgba(21,42,46,.06)}
+html body .mdd a i{width:44px;height:44px;border-radius:10px;background:#E4E0D8 center/cover;flex:none}
+html body .mdd a b{display:block;font-weight:500;font-size:15.5px}html body .mdd a small{display:block;font-size:13px;color:#5E6B6D;margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:62vw}
+html body .mdd .no{padding:14px 12px;font-size:14.5px;color:#4E5D60}
+}
+/* Nov 13: intro and style cards on desktop are about half as tall (short photo strip) so they don't cover towns */
+@media (min-width:761px){html body #pop[data-intro]:not([data-intro=""]) .ph{height:110px!important;min-height:0!important}html body #pop[data-intro]:not([data-intro=""]) .bd{padding-top:16px!important;padding-bottom:18px!important}html body #pop[data-intro]:not([data-intro=""]) .bd p{margin-bottom:12px!important}}

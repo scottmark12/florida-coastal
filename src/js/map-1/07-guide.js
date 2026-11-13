@@ -62,6 +62,10 @@
  addEventListener('resize',()=>{if(TT.k)tHide()});
  // Region and style card: what you picked, in the town card spot
  const RTAG={'panhandle':'Sugar white sand and the quiet Forgotten Coast','nature-coast-r':'Springs, scallops and fishing villages','tampa-bay':'Beaches, a big city and bayside downtowns','southwest':'Sunset beaches, islands and the Everglades','south-keys':'Big city beaches, Palm Beach and the Keys','treasure-space':'Quiet beach towns and rocket launches','northeast':'Old St. Augustine, wide beaches and Daytona'};
+ /* Nov 13: region tiles use the short one line tag instead of the long list of sub areas */
+ Object.keys(RTAG).forEach(id=>{if(VIBES['r:'+id])VSUB['r:'+id]=RTAG[id]});
+ /* Nov 13: on Regions, tapping a town picks its region first (map fits the region), then opens the town card with arrows and the count */
+ (function(){const op=window.openPop;window.openPop=openPop=function(t,nopan){if(t&&S.mode=='vibes'&&S.sub=='regions'&&!S.restoring){const rv=(t.v||[]).filter(v=>v.indexOf('r:')===0),rk=rv.find(v=>RTAG[v.slice(2)])||rv[0];if(rk&&S.style!==rk&&VIBES[rk]){G.sx=rk;S.auto=1;pickStyle(rk);S.auto=0;G.sx=rk;setTimeout(()=>op.call(this,t,true),480);return}}return op.apply(this,arguments)}})();
  function styleCard(p,k){const st=S.style,R=isR(st),id=R?st.slice(2):st,L=vOrder(),n=T.filter(t=>t.v.includes(st)).length,f=L[0];if(!f)return false;
   const img=R?RIMG(id):`img/vibes/${id}.webp`,tag=R?(RTAG[id]||VSUB[st]||''):(LK.VSUBL[st]||VSUB[st]||'');
   p.innerHTML=`<div class="ph" style="background-image:url('${img}')"></div><button class="x" aria-label="Close">&times;</button><div class="bd bstyle"><div class="eb">${R?'':`<i class="sdot" style="background:${VCOL[st]}"></i>`}${R?'Region':'Style'} · ${n} towns</div><h3>${VIBES[st]}</h3><p>${tag}.</p><div class="pnav"><a class="go" href="#" data-first="1">Meet the towns →</a><button data-st="1" aria-label="First town">›</button></div></div>`;
@@ -92,3 +96,4 @@
  const sm2=window.setMode;window.setMode=setMode=function(){if(TT.k){TT.k=null;TT.step=0;tHide()}return sm2.apply(this,arguments)};
  setTimeout(show,900);
 })();
+
