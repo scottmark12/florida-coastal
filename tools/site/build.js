@@ -66,8 +66,10 @@ async function main() {
     const name = f.replace(/\.css$/, ''), body = images.rewrite(minCss(read(path.join(SRC, 'css', f))), { css: true });
     const out = `${name}.${h10(body)}.css`; write(path.join(OUT, out), body); url['css:' + name] = '/assets/v3/' + out;
   }
+  // A folder src/js/<name>/ is one page script split into parts: its files are joined in name order.
+  const jsSrc = f => { const p = path.join(SRC, 'js', f); return fs.statSync(p).isDirectory() ? fs.readdirSync(p).filter(x => x.endsWith('.js')).sort().map(x => read(path.join(p, x))).join('\n') : read(p) };
   for (const f of fs.readdirSync(path.join(SRC, 'js'))) {
-    const name = f.replace(/\.js$/, ''), body = images.rewrite(await minJs(read(path.join(SRC, 'js', f)), f));
+    const name = f.replace(/\.js$/, ''), body = images.rewrite(await minJs(jsSrc(f), f));
     const out = `${name}.${h10(body)}.js`; write(path.join(OUT, out), body); url['js:' + name] = '/assets/v3/' + out;
   }
   // Data: each file declares one global, exactly as the page script used to.

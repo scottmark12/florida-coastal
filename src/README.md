@@ -29,7 +29,7 @@ cd ../.. && python3 tools/visual_check.py snap after && python3 tools/visual_che
 - `css/` Page stylesheets, one per run of styles in the original page, in the original order.
   Each block keeps a `/* #id */` comment naming the `<style id>` it came from, so dated patches
   are still easy to find. `town.css` is shared by all 167 town pages.
-- `js/` Page code. `map-1.js` is the whole map app; `quiz-*.js` the quiz; `home-1.js` the home
+- `js/` Page code. `map-1/` is the map app, split into numbered parts the build joins in order (01 core, 02 vibes, 03 sliders, 04 phone panel, 05 app start, 06 picks, 07 guide, 08 panel extras, 09 resize; a folder of .js files under `js/` always builds as one script); `quiz-*.js` the quiz; `home-1.js` the home
   page map and carousel; `beach-towns-*.js`, `compare-1.js`, `results-1.js` the rest.
 - `data/` Town data as plain JSON. `towns.json` is the town list shared by the map and the quiz;
   `map-ld.json` holds the scores and ranks behind the Slider Map; `compare-d.json`,
