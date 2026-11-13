@@ -70,3 +70,5 @@ html body .pd i{position:relative;width:7px;height:7px;border-radius:50%;backgro
 html body .pd i.on{background:#fff;width:22px;border-radius:4px}
 html body .pd span{margin-left:8px;font-size:13px;font-weight:500;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.6),0 0 14px rgba(0,0,0,.45);background:rgba(10,20,22,.32);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);padding:4px 10px;border-radius:999px}
 }
+/* Nov 13: the Maps dropdown link stays hidden on phone with the other header links */
+@media (max-width:800px){html body header nav .fcmaps{display:none!important}}

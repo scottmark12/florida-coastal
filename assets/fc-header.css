@@ -18,3 +18,5 @@ html body header.rsh:not(#x) .rsh-cta{margin-left:28px;display:inline-flex;align
 /* Nov 13: nav links never wrap to two lines on narrow laptops and tablets */
 #navlinks a,.navlinks a{white-space:nowrap}
 @media (min-width:761px) and (max-width:900px){#navlinks a,.navlinks a{font-size:14px!important;padding-left:6px!important;padding-right:6px!important}#navlinks,.navlinks{gap:4px!important}}
+/* Nov 13: Maps link in the header never takes the old rust color; it underlines like the others */
+header .fcmaps>a,header .fcmaps>a:hover,header .fcmaps:hover>a,header .fcmaps:focus-within>a{color:inherit!important}

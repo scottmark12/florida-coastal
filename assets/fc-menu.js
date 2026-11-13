@@ -88,12 +88,12 @@
         return '<div class="fcm-gl">Maps</div>'+[].slice.call(a.parentNode.querySelectorAll('a.fcmaps-i')).map(function(x){var c=onMap&&x.dataset.sub==mode;return '<a class="fcm-sub'+(c?' cur" aria-current="page':'')+'" href="'+x.href+'">'+x.textContent.trim()+'<span>→</span></a>'}).join('')}
       var u=new URL(a.href),cur=a.classList.contains('on')||a.getAttribute('aria-current')=='page'||(u.pathname+u.search)==here;
       return '<a href="'+a.href+'"'+(cur?' class="cur" aria-current="page"':'')+'>'+a.textContent.trim()+'<span>→</span></a>';
-    }).join('')+extra(quizHref,'Quiz',/quiz-photo/.test(location.pathname));
+    }).join('');/* Nov 13: no separate Quiz row; the Take the quiz button below covers it */
 
     var m=document.createElement('div');
     m.className='fcm';m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');m.setAttribute('aria-label','Menu');
     m.innerHTML='<div class="fcm-top"><a href="'+new URL('/home-v2.html',location.href).href+'"><img src="'+logoSrc+'" alt="Florida Coastal"></a><button class="fcm-x" type="button" aria-label="Close menu">'+ICON_X+'</button></div>'+
-      '<form role="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input type="search" placeholder="Search a town or region" aria-label="Search towns" autocomplete="off"></form>'+
+      '<form role="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input type="search" placeholder="Search a town, region or ZIP" aria-label="Search towns" autocomplete="off"></form>'+
       '<nav aria-label="Main">'+items+'</nav>'+
       '<div class="fcm-cta"><a href="'+quizHref+'">Take the quiz</a><p>8 quick questions. Your top 5 towns.</p></div>';
     document.body.appendChild(m);
@@ -108,3 +108,8 @@
     window.matchMedia(MQ).addEventListener&&window.matchMedia(MQ).addEventListener('change',function(e){if(!e.matches)close()});
   });
 })();
+/* Nov 13: the Maps dropdown link takes the same color as the other header links (white over photos, ink on white), never the old rust hover */
+(function(){function sync(){document.querySelectorAll('header .fcmaps').forEach(function(sp){var nav=sp.parentElement,sib=null;if(!nav)return;[].some.call(nav.children,function(c){if(c!==sp&&c.tagName=='A'&&!/cta|btn/.test(c.className)&&c.offsetParent){sib=c;return true}});if(sib){sp.style.color='';var c=getComputedStyle(sib).color;sp.style.color=c}})}
+ var t=0;function later(){clearTimeout(t);t=setTimeout(sync,60)}
+ if(document.readyState!='loading')setTimeout(sync,50);else document.addEventListener('DOMContentLoaded',function(){setTimeout(sync,50)});
+ addEventListener('load',later);addEventListener('scroll',later,{passive:true});addEventListener('resize',later)})();
