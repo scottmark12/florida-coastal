@@ -29,7 +29,7 @@ function shSync(){const on=(S.mode=='sliders'||S.mode=='vibes')&&PH();const r=$(
   const now=performance.now();d.v=(t.clientY-d.last)/Math.max(1,now-d.lt);d.last=t.clientY;d.lt=now},{passive:false});
  r.addEventListener('touchend',()=>{if(!d)return;const own=d.own,v=d.v,st0=d.st0,dy=SHEET.y-d.s0;d=null;if(!own)return;const st=shStops(),y=SHEET.y;let n;
   /* Nov 12: land where the swipe was headed (how far plus how fast), so a long drag or a hard flick goes straight to full; a short swipe still moves one stop */
-  const O=['low','peek','half','full'].filter(k=>st[k]!=null&&!(k=='low'&&st0!='low'&&st.low-st.peek<80)),i=O.indexOf(st0),tg=y+Math.max(-2,Math.min(2,v))*300;n=O.slice().sort((a,b)=>Math.abs(st[a]-tg)-Math.abs(st[b]-tg))[0];
+  const O=['low','peek','half','full'].filter(k=>st[k]!=null),i=O.indexOf(st0),tg=y+Math.max(-2,Math.min(2,v))*300;n=O.slice().sort((a,b)=>Math.abs(st[a]-tg)-Math.abs(st[b]-tg))[0];
   if(i>=0&&Math.abs(dy)>36){const j=O.indexOf(n);if(dy<0&&j<=i)n=O[Math.min(O.length-1,i+1)];if(dy>0&&j>=i)n=O[Math.max(0,i-1)]}
   shSet(n)});
  const g=document.createElement('button');g.className='sh-grab';g.type='button';g.setAttribute('aria-label','Show more');r.prepend(g);
