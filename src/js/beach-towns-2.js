@@ -97,7 +97,7 @@ $('cg').innerHTML=(()=>{
  /* Nov 12: a bigger, invisible tap area around each town dot (the dot itself stays small) */
  svg.querySelectorAll('#rgd a').forEach(a=>{const c=a.querySelector('circle');if(!c||a.querySelector('.hit'))return;const h=document.createElementNS('http://www.w3.org/2000/svg','circle');h.setAttribute('class','hit');h.setAttribute('cx',c.getAttribute('cx'));h.setAttribute('cy',c.getAttribute('cy'));a.insertBefore(h,c)});
  const go0=()=>{act='';show(R.c||CO[0][0])};if(svg.getBoundingClientRect().width)go0();else requestAnimationFrame(go0)})();
-$('cg').onclick=e=>{const b=e.target.closest('.ct');if(!b)return;/* Nov 13: on phone, tapping the next card peeking in moves to it; tapping the current card opens its towns */if(innerWidth<=760&&b.classList.contains('rx')&&!b.classList.contains('on')){rgHL(b.dataset.c);return}pickC(b.dataset.c,'')};
+$('cg').onclick=e=>{const b=e.target.closest('.ct');if(!b)return;/* Nov 13: on phone, tapping the next card peeking in moves to it; tapping the current card opens its towns *//* Nov 13: same on laptop now that all 7 cards show: first click moves the map, a click on the selected card opens its towns */if(b.classList.contains('rx')&&!b.classList.contains('on')){rgHL(b.dataset.c);return}pickC(b.dataset.c,'')};
 function pickC(c,a){R.c=c;R.a=a;const co=CO.find(x=>x[0]==c);const L=T.filter(t=>inC(t,c)).sort((x,y)=>cOrd(x)-cOrd(y));
  const areas=[];L.forEach(t=>{const a=area(t);if(!areas.includes(a))areas.push(a)});
  $('cg').classList.add('any');document.querySelectorAll('.ct').forEach(b=>b.classList.toggle('on',b.dataset.c==c));window.rgHL&&rgHL(c);

@@ -388,3 +388,16 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t
  .mt .p{top:14px;left:16px;font-size:46px}.mt .p i{font-size:20px;vertical-align:14px}.mt.lg b{font-size:21px}.mt .b{left:14px;right:12px;bottom:14px}.mt b{font-size:28px;margin-bottom:8px}.mt small{font-size:12.5px;padding:6px 11px}}
 /* Nov 13: desktop showed the phone caption layer (.rxw) on top of the desktop text, because the older "every span in the card is absolute" rule outranked the hide rule. Hide it on desktop with a stronger selector */
 @media (min-width:761px){html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx .rxw{display:none!important}}
+/* Nov 13: laptop and desktop, Browse by region reads close to full screen. The heading stays on the page grid, the map and cards stretch to 48px from the screen edges, the map is shorter so map and cards fit one screen, and all 7 region cards sit in one row (no carousel, no dots). Town count top left, region name bottom left, so every card lines up */
+@media (min-width:761px){
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) .rgx{width:calc(100vw - 96px);max-width:1760px;margin-left:calc(50% - min(50vw - 48px, 880px));margin-right:0}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) .rgx-frame{height:clamp(380px,calc(100vh - 330px),480px)!important;border-radius:20px!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) .rgx-row{overflow:visible!important;display:grid!important;grid-template-columns:repeat(7,minmax(0,1fr))!important;gap:12px!important;margin:14px 0 0!important;padding:0!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx{flex:none!important;max-width:none!important;width:auto!important;height:120px!important;border-radius:16px!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx>span:not(.rxw){top:11px!important;left:13px!important;right:10px!important;bottom:12px!important;display:flex!important;flex-direction:column;justify-content:space-between}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx b{font-size:15.5px!important;line-height:1.18!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx em{display:none!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx small{font-size:11.5px!important;margin:0!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx::after{background:linear-gradient(to top,rgba(8,16,18,.7) 0%,rgba(8,16,18,.12) 55%,rgba(8,16,18,.35) 100%)!important}
+html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) .rgx-dots{display:none!important}
+}
