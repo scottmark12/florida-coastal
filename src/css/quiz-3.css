@@ -133,7 +133,7 @@ body.quiz .res{left:50%!important;top:50%;transform:translate(-50%,-50%)!importa
 body.quiz .qhd{text-align:center}.qhd h1{text-wrap:balance}
 body.quiz .qq{text-align:center}
 }
-:root{--or:#E07A3F}
+:root{--or:#5F8FA3}
 .qbar i.cur{background:var(--or)!important;opacity:1!important}
 .qn b{color:var(--or)}
 body.quiz #ov circle.dot[fill="#152A2E"]{fill:var(--or)}
@@ -314,15 +314,15 @@ html body .fcm-btn.fcm-float{top:11px!important;right:24px!important}
 }
 
 /* Nov 12: light frosted glass card, same family as the map sheet and the home guide card. Photo stays visible above it */
-html body.qphoto #res:not(#x){background:rgba(255,255,255,.72)!important;-webkit-backdrop-filter:blur(18px) saturate(1.25);backdrop-filter:blur(18px) saturate(1.25);border:1px solid rgba(255,255,255,.6)!important;box-shadow:0 18px 44px rgba(10,20,22,.22)!important;border-radius:24px!important}
+html body.qphoto #res:not(#x){background:rgba(250,249,246,.88)!important;-webkit-backdrop-filter:blur(22px) saturate(.9);backdrop-filter:blur(22px) saturate(.9);border:1px solid rgba(255,255,255,.6)!important;box-shadow:0 18px 44px rgba(10,20,22,.22)!important;border-radius:24px!important}
 html body.qphoto #res:not(#x),html body.qphoto #res:not(#x) h1,html body.qphoto #res:not(#x) h2,html body.qphoto #res:not(#x) .qq,html body.qphoto #res:not(#x) b,html body.qphoto #res:not(#x) .qo,html body.qphoto #res:not(#x) .qb,html body.qphoto #res:not(#x) .qclose,html body.qphoto #res:not(#x) .qtop .qb,html body.qphoto #res:not(#x) .qo::after{color:#152A2E!important}
 html body.qphoto #res:not(#x) small,html body.qphoto #res:not(#x) .qn{color:#4E5E61!important}
-html body.qphoto #res:not(#x) .qn b{color:#C4622D!important}
+html body.qphoto #res:not(#x) .qn b{color:#5F8FA3!important}
 html body.qphoto #res:not(#x) .qo,html body.qphoto #res:not(#x) .qopts,html body.qphoto #res:not(#x) .qopts>*{border-color:rgba(21,42,46,.1)!important}
 html body.qphoto #res:not(#x) .qo:hover,html body.qphoto #res:not(#x) .qo.on{background:rgba(21,42,46,.05)!important}
 html body.qphoto #res:not(#x) .qbar i{background:rgba(21,42,46,.14)!important}
 html body.qphoto #res:not(#x) .qbar i.done{background:#152A2E!important}
-html body.qphoto #res:not(#x) .qbar i.cur{background:#E07A3F!important}
+html body.qphoto #res:not(#x) .qbar i.cur{background:#5F8FA3!important}
 html body.qphoto #res:not(#x) .qclose:hover{background:rgba(21,42,46,.06)!important}
 
 /* Nov 12: send my top 5 card on the scoring screen (light glass, same family as the quiz card) */
