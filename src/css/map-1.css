@@ -428,8 +428,6 @@ html body.sliders .sl2 label b:not(#x){font-size:15px!important;line-height:1.2}
 html body.sliders .sl2 output:not(#x){font-size:12.5px!important;line-height:1.25}
 }
 
-/* #sl-snap */
-@media(max-width:760px){html:has(body.sliders){scroll-snap-type:y mandatory}body.sliders #mapbox{scroll-snap-align:start;scroll-margin-top:0}body.sliders #sl{scroll-snap-align:start;scroll-margin-top:12px}}
 
 /* #vm-rg */
 html body .vp p.vm-ri:not(#x){font-family:'Caslon Text',Georgia,serif;font-size:16px;line-height:1.5;color:#3A4A4D;margin:0 0 14px}@media(max-width:760px){html body .vp p.vm-ri:not(#x){display:none}}

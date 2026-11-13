@@ -105,12 +105,12 @@ nav.top a.on{box-shadow:inset 0 -2px #fff;padding-bottom:20px;margin-bottom:-22p
 .cg{grid-template-columns:repeat(2,1fr);gap:10px}.ct b{font-size:22px}.grid{grid-template-columns:repeat(2,1fr);gap:24px 14px}.card h4{font-size:19px}
 .cols{grid-template-columns:1fr;gap:30px}.fl input{flex:1 1 100%}.fl select{flex:1}.fl .c{flex:1 1 100%;margin:4px 0 0}.az{padding:64px 0 70px;margin-top:80px}}
 
-/* #t-snap */
+/* #t-snap  Nov 13: soft snapping, on for the whole page */
 @media (max-width:760px){
-html.tsnap:not(#x){scroll-snap-type:y mandatory;overflow:visible!important;overflow-x:clip!important}
+html.tsnap:not(#x){scroll-snap-type:y proximity;overflow:visible!important;overflow-x:clip!important}
 html body:not(#x){overflow:visible!important;overflow-x:clip!important}
-html body>main>section.hs:not(#x),html body section.hs:not(#x){height:calc(100svh + var(--gb,0px))!important;min-height:0!important;scroll-snap-align:start;scroll-snap-stop:always}
-html body section.s:not(#x){min-height:calc(100svh + var(--gt,0px) + var(--gb,0px));box-sizing:border-box;display:flex!important;flex-direction:column;justify-content:center;padding-top:calc(var(--gt,0px) + 40px)!important;padding-bottom:calc(var(--gb,0px) + 40px)!important;margin:0!important;scroll-snap-align:start;scroll-snap-stop:always;scroll-margin-top:calc(-1 * var(--gt,0px))}
+html body>main>section.hs:not(#x),html body section.hs:not(#x){height:calc(100svh + var(--gb,0px))!important;min-height:0!important;scroll-snap-align:start}
+html body section.s:not(#x){min-height:calc(100svh + var(--gt,0px) + var(--gb,0px));box-sizing:border-box;display:flex!important;flex-direction:column;justify-content:center;padding-top:calc(var(--gt,0px) + 40px)!important;padding-bottom:calc(var(--gb,0px) + 40px)!important;margin:0!important;scroll-snap-align:start;scroll-margin-top:calc(-1 * var(--gt,0px))}
 
 html body section.s#regions:not(#x){justify-content:flex-start}
 html body section.s#regions:not(#x) .wrap{display:flex;flex-direction:column;flex:1 1 auto;width:100%;box-sizing:border-box}

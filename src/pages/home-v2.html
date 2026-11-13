@@ -65,5 +65,5 @@ var out=b.left<R.left+2||b.right>R.right-2||b.top<R.top||b.bottom>R.bottom;
 var hit=C&&C.width&&b.right>C.left&&b.left<C.right&&b.bottom>C.top&&b.top<C.bottom;
 if(out||hit){t.style.visibility='hidden';if(pill)pill.style.visibility='hidden'}})})}
 new MutationObserver(tidy).observe(svg,{childList:true,subtree:true});addEventListener('resize',tidy);addEventListener('load',tidy);setTimeout(tidy,500)})();{{/inline-js}}</script><link rel="stylesheet" href="{{css:home-3}}">
-<script id="foot-free">{{inline-js}}(function(){var f=document.querySelector('footer');if(!f||!('IntersectionObserver' in window))return;new IntersectionObserver(function(e){document.documentElement.classList.toggle('fc-nosnap',e[0].intersectionRatio>0.02)},{threshold:[0,0.02,0.05,0.1]}).observe(f)})();{{/inline-js}}</script>
+
 </body></html>

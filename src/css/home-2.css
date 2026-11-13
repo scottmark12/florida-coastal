@@ -108,11 +108,11 @@ html body .hero-btn:not(#x):not(.tk-btn):hover,html body .mob-cta:not(#x):hover,
 html body .hero-btn:not(#x):not(.tk-btn) *,html body .mob-cta:not(#x) *,html body .cmap .cm-more:not(#x) *{color:#fff!important}
 html body .mob-cta:not(#x){background:rgba(16,22,24,.6)!important}
 
-/* #m-snap */
+/* #m-snap  Nov 13: soft snapping. Sections settle only when you stop close to one, a flick carries through */
 @media (max-width:760px){
-html:not(#x){scroll-snap-type:y mandatory!important;overflow:visible!important;overflow-x:clip!important}
+html:not(#x){scroll-snap-type:y proximity!important;overflow:visible!important;overflow-x:clip!important}
 html body:not(#x){overflow:visible!important;overflow-x:clip!important}
-html body main>section,html body .swhat .sw-tx,html body .cguides .cg-row,html body footer{scroll-snap-align:start;scroll-snap-stop:always}
+html body main>section,html body footer{scroll-snap-align:start}
 html body footer{scroll-snap-align:end}
 /* hero */
 html body main>section.dk-hero:not(#x){height:100lvh!important;min-height:0!important}
@@ -129,7 +129,7 @@ html body section.cstyles:not(#x) .cs-t{flex:0 0 64%!important;width:64%!importa
 html body section.cstyles:not(#x) .cs-t img{height:auto!important;aspect-ratio:4/5!important;width:100%!important;object-fit:cover}
 /* story: screen one is the photo with the headline on it, screen two is the words */
 html body main>section.swhat:not(#x){position:relative;padding:0!important;margin:0!important}
-html body section.swhat:not(#x) .sw-ph{height:100lvh!important;margin:0!important;scroll-snap-align:start;scroll-snap-stop:always}
+html body section.swhat:not(#x) .sw-ph{height:100lvh!important;margin:0!important}
 html body section.swhat:not(#x) .sw-ph img{height:100%!important;object-fit:cover}
 html body section.swhat:not(#x) .sw-ph::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(10,18,20,.72) 0%,rgba(10,18,20,.25) 38%,rgba(10,18,20,0) 60%);pointer-events:none}
 html body section.swhat:not(#x) .sw-tx>.cm-lbl,html body section.swhat:not(#x) .sw-tx>h2{position:absolute;left:20px;right:20px;color:#fff!important;z-index:2}
@@ -139,7 +139,6 @@ html body section.swhat:not(#x) .sw-tx{min-height:100lvh;display:flex;flex-direc
 html body section.swhat:not(#x) .sw-p{font-size:16.5px!important;line-height:1.6!important}
 /* guides: screen one is the lead story, screen two the list */
 html body main>section.cguides.wrap:not(#x){padding:44px 20px 0!important;margin:0!important}
-html body section.cguides:not(#x) .cg-head{scroll-snap-align:start;scroll-snap-stop:always;scroll-margin-top:44px}
 html body section.cguides:not(#x) .cg-lead .cg-ph{aspect-ratio:auto!important;height:max(180px,calc(100lvh - 410px))}
 html body section.cguides:not(#x) .cg-lb{min-height:96px}
 html body section.cguides:not(#x) .cg-row{min-height:100lvh;display:flex!important;flex-direction:column;justify-content:center;margin:0!important;padding:24px 0 84px;box-sizing:border-box}
@@ -200,7 +199,7 @@ html body section.swhat:not(#x) .tk-story{order:1;display:inline-flex!important;
 
 /* #m-guides-one */
 @media (max-width:760px){
-html body main>section.cguides.wrap:not(#x):not(#y){height:100lvh!important;display:flex!important;flex-direction:column;padding:36px 20px 24px!important;box-sizing:border-box;overflow:hidden;scroll-snap-align:start!important;scroll-snap-stop:always}
+html body main>section.cguides.wrap:not(#x):not(#y){height:100lvh!important;display:flex!important;flex-direction:column;padding:36px 20px 24px!important;box-sizing:border-box;overflow:hidden;scroll-snap-align:start!important}
 html body section.cguides:not(#x):not(#y) .cg-head{scroll-snap-align:none!important;margin:0 0 16px!important;display:flex!important;align-items:baseline;justify-content:space-between;gap:12px}
 html body section.cguides:not(#x):not(#y) .cg-head h2{font-size:28px!important;line-height:1.08!important}
 html body section.cguides:not(#x):not(#y) .cg-head .cm-lbl{margin-bottom:8px!important}

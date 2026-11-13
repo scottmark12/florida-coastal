@@ -1,6 +1,5 @@
 /* #foot-snap */
 @media (max-width:760px){html body footer:not(#x):not(#y),html.glass body footer:not(#x):not(#y){scroll-snap-align:end!important;scroll-snap-stop:normal!important}/* Nov 12: the bottom of the page is a stop too, so the last swipe lands on the footer instead of springing back */
-html.fc-nosnap:not(#x):not(#y){scroll-snap-type:none!important}
 html body footer.fx:not(#x):not(#y){padding-bottom:calc(max(var(--gb,0px),env(safe-area-inset-bottom)) + 18px)!important}}
 
 /* #foot-tight */

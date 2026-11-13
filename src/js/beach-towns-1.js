@@ -1,6 +1,6 @@
 (function(){var MOB=innerWidth<=760;var r=document.documentElement;
 if(/iPhone|iPod/.test(navigator.userAgent)){var gap=screen.height-innerHeight;if(gap>=90&&gap<=260){var t=Math.min(84,Math.round(gap*.48)+4);r.style.setProperty('--gt',t+'px');r.style.setProperty('--gb',(gap-t+44)+'px')}}
-function f(){var az=document.querySelector('section.az');if(!az)return;var on=scrollY<az.offsetTop-2;r.classList.toggle('tsnap',on)}
+
 
 function SH(){var ar=document.getElementById('ar');if(ar){var scrim=null,top=null,lh=null,more=null;
 function K(t){var m=/\$([\d.]+)\s*([KM])/.exec(t);if(!m)return null;return parseFloat(m[1])*(m[2]=='M'?1000:1)}
@@ -18,4 +18,4 @@ new MutationObserver(function(){setTimeout(dress,0)}).observe(ar,{attributes:tru
 addEventListener('keydown',function(e){if(e.key==='Escape'&&ar.classList.contains('sheet'))close()});
 var y0=null;ar.addEventListener('touchstart',function(e){y0=ar.scrollTop<=0?e.touches[0].clientY:null},{passive:true});ar.addEventListener('touchend',function(e){if(y0!==null&&e.changedTouches[0].clientY-y0>110)close();y0=null},{passive:true})}}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',SH);else SH();
-if(MOB){r.classList.add('tsnap');addEventListener('scroll',f,{passive:true});addEventListener('load',f);f()}})();
+if(MOB)r.classList.add('tsnap')})();
