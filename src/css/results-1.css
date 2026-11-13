@@ -40,7 +40,7 @@ html body h2.rt{font-family:'Libre Caslon Display',Georgia,serif!important;font-
 /* Nov 13: match % chip and fits pills keep the old desktop look */
 .k .mc{font-style:normal}.k .mc:before{content:"\00b7";margin:0 .45em 0 0}
 .why .wp{font-style:normal}.why .wp+.wp:before{content:"\00b7";margin:0 .4em}
-.five{display:none}
+.pd{display:none}
 /* Nov 13: phone results. Floating smoked glass card (same shape as the home page guide card) with white text, so the photo color comes through and text stays readable on bright skies. Same info as desktop. Your 5 photo tiles sit above. Caslon only on the town name */
 @media(max-width:800px){
 html body .sl .ov{background:linear-gradient(rgba(10,20,22,.34) 0,rgba(10,20,22,0) 140px)!important}
@@ -59,8 +59,11 @@ html body .tx .bt a .gn{display:none}
 html body .tx .bt a.go{flex:1.15;background:#fff!important;color:#152A2E!important;border:0!important}
 html body .tx .bt a.gh{flex:1;background:rgba(255,255,255,.08)!important;color:#fff!important;border:1px solid rgba(255,255,255,.6)!important}
 html body .dots{display:none!important}
-html body .five{display:flex;position:absolute;left:16px;right:16px;bottom:calc(var(--sh,300px) + 26px + env(safe-area-inset-bottom));z-index:3;gap:8px;transition:bottom .3s ease}
-html body .five button{position:relative;width:50px;height:50px;padding:0;border-radius:14px;background:center/cover;border:1.5px solid rgba(255,255,255,.55);box-shadow:0 4px 14px rgba(0,0,0,.2);cursor:pointer;transition:transform .2s ease}
-html body .five button.on{border:2.5px solid #fff;transform:translateY(-3px)}
-html body .five b{position:absolute;left:5px;top:3px;font-size:11px;font-weight:600;color:#fff;text-shadow:0 1px 4px rgba(0,0,0,.6)}
+html body .sl{background:#0c181b}
+html body .sl .im{bottom:calc(var(--sh,300px) - 22px + env(safe-area-inset-bottom))}
+html body .sl .im:after{content:"";position:absolute;left:0;right:0;bottom:0;height:44px;background:linear-gradient(rgba(12,24,27,0),#0c181b)}
+html body .pd{display:flex;align-items:center;justify-content:center;gap:7px;position:absolute;left:0;right:0;bottom:calc(var(--sh,300px) + 30px + env(safe-area-inset-bottom));z-index:3;pointer-events:none;transition:bottom .3s ease}
+html body .pd i{width:7px;height:7px;border-radius:50%;background:rgba(255,255,255,.55);box-shadow:0 1px 4px rgba(0,0,0,.3);transition:width .25s ease}
+html body .pd i.on{background:#fff;width:22px;border-radius:4px}
+html body .pd span{margin-left:8px;font-size:13px;font-weight:500;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.5)}
 }

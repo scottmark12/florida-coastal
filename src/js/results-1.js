@@ -19,8 +19,8 @@ tr.querySelectorAll('.k').forEach(k=>{k.innerHTML=k.innerHTML.replace(/\s*(?:&mi
 tr.querySelectorAll('.why').forEach(w=>{const s=w.querySelector('span');const items=[...w.childNodes].filter(n=>n.nodeType==3).map(n=>n.textContent).join('').split(' · ').map(x=>x.trim()).filter(Boolean);w.innerHTML='';w.appendChild(s);items.forEach(x=>{const e=document.createElement('em');e.className='wp';e.textContent=x;w.appendChild(e)})});
 tr.querySelectorAll('.bt a.go').forEach(a=>{const m=a.textContent.match(/^Explore (.+)$/);if(m){a.textContent='Explore';const g=document.createElement('span');g.className='gn';g.textContent=' '+m[1];a.appendChild(g)}});
 tr.querySelectorAll('.bt a.gh').forEach(a=>{if(/^Email me all 5$/.test(a.textContent.trim()))a.innerHTML='Email<span class="gn"> me</span> all 5'});
-const wrap=tr.parentElement,f=document.createElement('div');f.className='five';f.setAttribute('aria-label','Your 5 towns');
-f.innerHTML=T.map((x,i)=>`<button type="button" data-go="${i}" aria-label="#${i+1} ${String(TD[x.id].n).replace(/"/g,'')}" style="background-image:url('${TD[x.id].img}')"><b>${i+1}</b></button>`).join('');wrap.appendChild(f);
-const sync=()=>{const i=Math.round(tr.scrollLeft/(tr.clientWidth||1)),tx=tr.children[i]&&tr.children[i].querySelector('.tx');if(tx)wrap.style.setProperty('--sh',tx.offsetHeight+'px');f.querySelectorAll('button').forEach((b,j)=>b.classList.toggle('on',j==i))};
-f.addEventListener('click',e=>{const b=e.target.closest('button');if(b)tr.scrollTo({left:+b.dataset.go*tr.clientWidth,behavior:'smooth'})});
+const wrap=tr.parentElement,f=document.createElement('div');f.className='pd';f.setAttribute('aria-hidden','true');
+let seen=0;try{seen=sessionStorage.getItem('fc-swiped')}catch(x){}
+f.innerHTML=T.map(()=>'<i></i>').join('')+(seen?'':'<span>Swipe for all '+T.length+' &rarr;</span>');wrap.appendChild(f);
+const sync=()=>{const i=Math.round(tr.scrollLeft/(tr.clientWidth||1)),tx=tr.children[i]&&tr.children[i].querySelector('.tx');if(tx)wrap.style.setProperty('--sh',tx.offsetHeight+'px');f.querySelectorAll('i').forEach((b,j)=>b.classList.toggle('on',j==i));if(i>0){const h=f.querySelector('span');if(h){h.remove();try{sessionStorage.setItem('fc-swiped','1')}catch(x){}}}};
 tr.addEventListener('scroll',()=>requestAnimationFrame(sync),{passive:true});addEventListener('resize',sync);setTimeout(sync,60);sync()})();
