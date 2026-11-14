@@ -38,6 +38,7 @@
   function track(e, d) {
     if (TEAM || navigator.webdriver || BOT.test(navigator.userAgent || '')) return;
     if (!LIVE && PREVIEW_EVENTS.indexOf(e) < 0) return;
+    if (LIVE && window.FCGA) window.FCGA.event(e, d);
     try {
       post('fc_events', { sid: SID, event: e, detail: d == null ? null : String(d).slice(0, 500), path: PATH(), referrer: (ss('fc-ref') || '').slice(0, 300) || null, utm: UTM(), device: innerWidth < 700 ? 'phone' : 'desktop', ua: (navigator.userAgent || '').slice(0, 300), screen: (screen.width + 'x' + screen.height).slice(0, 20), lang: (navigator.language || '').slice(0, 20) }).then(function(r){if(!r.ok) console.warn('Florida Coastal analytics event rejected:',e,r.status);}).catch(function () {});
     } catch (x) {}
