@@ -16,7 +16,7 @@
   var A=(typeof ARTICLES!='undefined'?ARTICLES:[]).slice().sort(function(x,y){return (y.date||'').localeCompare(x.date||'')});if(!A.length)return '';
   var styles=A.filter(isStyle),rest=A.filter(function(a){return !isStyle(a)}),F=rest.slice(0,3),used={};F.forEach(function(a){used[a.id]=1});
   var h='<section class="ax"><div class="ax-mast"><p class="ax-ey">Read up before you move</p><h1>Articles</h1><p class="ax-sub">Guides, honest advice and hidden spots from up and down the Florida coast.</p></div>';
-  h+='<nav class="ax-nav" aria-label="Article sections">'+SEC.map(function(s){return '<a href="#ax-'+s[0]+'" data-j="ax-'+s[0]+'">'+s[1]+'</a>'}).join('')+'<a href="#ax-styles" data-j="ax-styles">Style guides</a><label class="ax-q"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="axq" type="search" placeholder="Search articles" aria-label="Search articles" autocomplete="off"></label></nav>';
+  h+='<nav class="ax-nav" aria-label="Article sections">'+SEC.map(function(s){return '<a href="articles/index.html#ax-'+s[0]+'" data-j="ax-'+s[0]+'">'+s[1]+'</a>'}).join('')+'<a href="articles/index.html#ax-styles" data-j="ax-styles">Style guides</a><label class="ax-q"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg><input id="axq" type="search" placeholder="Search articles" aria-label="Search articles" autocomplete="off"></label></nav>';
   h+='<div class="ax-res" hidden></div><div class="ax-main">';
   if(F.length)h+='<div class="ax-feat"><div class="ax-side">'+F.slice(1).map(function(a){return feat(a,false)}).join('')+'</div>'+feat(F[0],true)+'</div>';
   if(styles.length)h+='<section class="ax-sec" id="ax-styles"><div class="ax-sh"><h2>Style guides</h2><span class="ax-note">The best towns for each way of living</span></div><div class="ax-shelf">'+styles.map(tile).join('')+'</div></section>';
@@ -34,5 +34,5 @@
  function swap(){var app=document.getElementById('app');if(!app)return;var pre=app.querySelector('.ax');if(pre){var N=typeof ARTICLES!='undefined'?String(ARTICLES.length):'';if(N&&pre.dataset.n&&N!==pre.dataset.n){var fh=build();if(fh){var dd=document.createElement('div');dd.innerHTML=fh;var nn=dd.firstChild;nn.dataset.n=N;nn.dataset.w=1;pre.replaceWith(nn);wire(nn)}return}if(!pre.dataset.w){pre.dataset.w=1;wire(pre)}return}var old=app.querySelector('#aq');if(!old)return;var html=build();if(!html)return;
   var ph=app.querySelector('.phero');ph&&ph.remove();var sec=old.closest('section');var d=document.createElement('div');d.innerHTML=html;var n=d.firstChild;sec.replaceWith(n);n.dataset.w=1;wire(n);document.body.classList.add('axon')}
  new MutationObserver(swap).observe(document.documentElement,{childList:true,subtree:true});
- if(document.readyState!='loading')swap();else document.addEventListener('DOMContentLoaded',swap);addEventListener('load',swap);
+ swap();document.addEventListener('DOMContentLoaded',swap);addEventListener('load',swap);
 })();
