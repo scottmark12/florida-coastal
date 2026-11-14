@@ -1,4 +1,5 @@
--- Shortlist series (Nov 4 2026). NOT APPLIED YET: needs Mark's OK.
+-- Shortlist series (Nov 4 2026). APPLIED Nov 13 2026 (Mark: "these need to be sent"), with the changes in
+-- 2026-11-13-series-on.sql: series_enabled is on, fc_sends allows the new steps, and day 1 only goes to full top 5 lists.
 -- 1) a switch for the new emails (off until Mark and his dad approve the copy)
 alter table public.fc_email_settings add column if not exists series_enabled boolean not null default false;
 
