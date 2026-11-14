@@ -1,14 +1,19 @@
 (function(){const P=new URLSearchParams(location.search),a=P.get('a')||'';let top=null;
 try{const s=JSON.parse(sessionStorage.getItem('fc-top5')||'null');if(s&&s.a===a&&s.top&&s.top.length)top=s.top}catch(e){}
 if(!top&&P.get('t'))top=P.get('t').split(',').map(x=>{const i=x.lastIndexOf('.');return{id:x.slice(0,i),fit:+x.slice(i+1),why:[]}}).filter(x=>TD[x.id]);
-if(!top||!top.length)return;top=top.filter(x=>TD[x.id]).slice(0,5);try{document.getElementById('cmp3').href='compare.html?t='+top.slice(0,3).map(x=>x.id).join(',')}catch(e){};
+/* no quiz answers: show the sample five that ship in the page (their photos wait in data-bg so they don't download when real results replace them) */
+if(!top||!top.length){document.querySelectorAll('#tr .im[data-bg]').forEach(e=>{e.style.backgroundImage=`url('${e.dataset.bg}')`;delete e.dataset.bg});return}top=top.filter(x=>TD[x.id]).slice(0,5);try{document.getElementById('cmp3').href='compare.html?t='+top.slice(0,3).map(x=>x.id).join(',')}catch(e){};
+/* the #1 photo fills the screen, so it skips the size picker and loads the full photo straight away */
+const FULL=u=>u.replace(/\/[tms]\/([^/]+)$/,'/$1');
 const E=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-document.getElementById('tr').innerHTML=top.map((x,i)=>{const t=TD[x.id];return `<section class="sl"><div class="im" style="background-image:url('${t.img}')"></div><div class="ov"></div>
+document.getElementById('tr').innerHTML=top.map((x,i)=>{const t=TD[x.id];return `<section class="sl"><div class="im" ${i?`data-bg="${t.img}"`:`style="background-image:url('${FULL(t.img)}')"`}></div><div class="ov"></div>
 <div class="tx"><div class="k">${i?`#${i+1} of ${top.length}`:'Your #1 match'} &middot; ${x.fit}% match</div><h2 class="rt">${E(t.n)}</h2>
 <div class="rg">${E(t.r.replace(/ · /g,', '))}${t.p?` &middot; <b>${E(t.p)}</b> typical home`:''}</div><p>${E(t.b)}</p>
 ${x.why&&x.why.length?`<div class="why"><span>Fits what you asked for</span>${x.why.map(E).join(' · ')}</div>`:''}
 <div class="bt"><a class="go" href="towns/${x.id}.html">Explore ${E(t.n.replace(/ \(.*\)$/,''))}</a><a class="gh" href="#short">Email me all ${top.length}</a></div></div></section>`}).join('');
 document.getElementById('dt').innerHTML=top.map(()=>'<i></i>').join('');
+/* Nov 13: only the #1 photo loads with the page; the other four follow once it's in (or as soon as you swipe), so the first photo shows up seconds sooner on phones */
+(()=>{const L=[...document.querySelectorAll('#tr .im[data-bg]')];if(!L.length)return;const go=()=>L.forEach(e=>{if(e.dataset.bg){e.style.backgroundImage=`url('${e.dataset.bg}')`;delete e.dataset.bg}});const f=new Image();f.onload=f.onerror=()=>setTimeout(go,150);f.src=FULL(TD[top[0].id].img);document.getElementById('tr').addEventListener('scroll',go,{once:true,passive:true});setTimeout(go,5000)})();
 document.querySelectorAll('a[href^="find-your-mile.html?a="]').forEach(l=>l.href='map.html?mode=sliders');
 window.TOP5=top;window.ANS=a;
 try{if(localStorage.getItem('fc-mail')){const sh=document.getElementById('short');if(sh)sh.style.display='none';const cmp='compare.html?t='+top.slice(0,3).map(x=>x.id).join(',');document.querySelectorAll('.bt a.gh[href="#short"]').forEach(l=>{l.href=cmp;l.textContent='Compare my top 3'})}}catch(e){}

@@ -87,7 +87,8 @@ async function main() {
     const re = /\{\{inline-js\}\}([\s\S]*?)\{\{\/inline-js\}\}/g; let m, last = 0;
     while ((m = re.exec(html))) { parts.push(html.slice(last, m.index), images.rewrite(await minJs(m[1], where))); last = re.lastIndex; }
     parts.push(html.slice(last));
-    return images.imgTags(images.rewrite(parts.join('').replace(/<head>/, '<head>' + upgrade).replace(/\{\{([a-z]+:[^}]+)\}\}/g, (x, k) => { if (!url[k]) throw new Error(`${where}: nothing built for ${k}`); return url[k]; })));
+    const out = images.imgTags(images.rewrite(parts.join('').replace(/<head>/, '<head>' + upgrade).replace(/\{\{([a-z]+:[^}]+)\}\}/g, (x, k) => { if (!url[k]) throw new Error(`${where}: nothing built for ${k}`); return url[k]; })));
+    return /(^|\/)towns\/[^/]+\.html$/.test(where) || /town/.test(where) ? images.heroFirst(out) : out;
   };
   let n = 0;
   for (const rel of Object.keys(PAGES)) { write(path.join(ROOT, rel), await fill(read(path.join(SRC, 'pages', rel)), rel)); n++; }
