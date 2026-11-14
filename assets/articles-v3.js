@@ -1,16 +1,18 @@
+/* Nov 13 (later): photos use the small copies (img/c/s, 480px) with a srcset up to img/c/m (960px), so each screen downloads the size it shows; every img/c photo has both. */
 /* Nov 13: the page ships with this layout already in the HTML (no jump while the app loads); if the article count changed since, it rebuilds once. */
 /* Articles page, Nov 12 2026: magazine layout (feature block, style guide shelf, sections by topic).
    Built from the same ARTICLES list the app uses, so new articles show up here on their own. */
 (function(){
  var SEC=[['towns','Picking a town'],['costs','Costs and risks'],['moving','Moving tips'],['news','Florida news']];
  function esc(t){return String(t||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
- function img(a){var f=(a.img||'').split('/').pop().replace(/\.(jpe?g|png)$/,'');return 'img/c/'+f+'.webp'}
+ function img(a){var f=(a.img||'').split('/').pop().replace(/\.(jpe?g|png)$/,'');return 'img/c/s/'+f+'.webp'}
+ function ss(a,big){var f=(a.img||'').split('/').pop().replace(/\.(jpe?g|png)$/,'');return ' srcset="img/c/s/'+f+'.webp 480w, img/c/m/'+f+'.webp 960w'+(big?', img/c/'+f+'.webp 1400w':'')+'" sizes="'+(big?'(max-width:700px) 92vw, 640px':'(max-width:700px) 92vw, 320px')+'"'}
  function dt(a){var d=new Date((a.date||'')+'T12:00:00');if(isNaN(d))return '';return d.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'})}
  function url(a){return 'articles/'+a.id+'.html'}
  function isStyle(a){return /^best-florida-beach-towns-for-/.test(a.id)}
  function kick(a){return a.kick||a.kicker||a.cat||''}
- function feat(a,big){return '<a class="ax-f'+(big?' big':'')+'" href="'+url(a)+'"><div class="ax-ph"><img src="'+img(a)+'" alt="" '+(big?'fetchpriority="high"':'loading="lazy"')+' decoding="async"></div><time class="ax-dt">'+esc(dt(a))+'</time><h3>'+esc(a.title)+'</h3>'+(big&&a.dek?'<p>'+esc(a.dek)+'</p>':'')+'</a>'}
- function row(a){return '<a class="ax-r" href="'+url(a)+'"><div class="ax-ph"><img src="'+img(a)+'" alt="" loading="lazy" decoding="async"></div><div class="ax-rb"><h3>'+esc(a.title)+'</h3><time class="ax-dt">'+esc(dt(a))+'</time><span class="ax-more">Read more</span></div></a>'}
+ function feat(a,big){return '<a class="ax-f'+(big?' big':'')+'" href="'+url(a)+'"><div class="ax-ph"><img src="'+img(a)+'"'+ss(a,big)+' alt="" '+(big?'fetchpriority="high"':'loading="lazy"')+' decoding="async"></div><time class="ax-dt">'+esc(dt(a))+'</time><h3>'+esc(a.title)+'</h3>'+(big&&a.dek?'<p>'+esc(a.dek)+'</p>':'')+'</a>'}
+ function row(a){return '<a class="ax-r" href="'+url(a)+'"><div class="ax-ph"><img src="'+img(a)+'"'+ss(a,false)+' alt="" loading="lazy" decoding="async"></div><div class="ax-rb"><h3>'+esc(a.title)+'</h3><time class="ax-dt">'+esc(dt(a))+'</time><span class="ax-more">Read more</span></div></a>'}
  function tile(a){return '<a class="ax-t" href="'+url(a)+'"><div class="ax-tp" style="background-image:url(\''+img(a)+'\')"></div><b>'+esc(kick(a))+'</b></a>'}
  function build(){
   var A=(typeof ARTICLES!='undefined'?ARTICLES:[]).slice().sort(function(x,y){return (y.date||'').localeCompare(x.date||'')});if(!A.length)return '';
