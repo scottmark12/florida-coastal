@@ -401,3 +401,6 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) #cg .ct.rx::after{background:linear-gradient(to top,rgba(8,16,18,.7) 0%,rgba(8,16,18,.12) 55%,rgba(8,16,18,.35) 100%)!important}
 html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t) .rgx-dots{display:none!important}
 }
+
+/* Nov 14 (Mark): full screen hero on desktop, like the home hero */
+@media (min-width:761px){html body section.hs:not(#x):not(#y){height:100vh!important;min-height:620px!important}}
