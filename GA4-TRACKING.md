@@ -17,7 +17,7 @@ All served HTML pages use one synchronous, content-addressed GA bootstrap. It lo
 
 No email, phone, name, free-form message, quiz answers, or database/session identifiers are passed as custom GA event parameters. Failed submissions and preview submissions do not create GA conversions. The custom admin engagement timer remains separate from Google's own engagement measurement.
 
-GA4 still needs `quiz_complete` and `generate_lead` marked as key events in Admin → Events. The OpenSEO connector exposes read access only. Verify that setting in GA4 rather than assuming a website event automatically becomes a key event.
+Confirmed in GA4 Admin → Events on November 14, 2026: `quiz_complete` and `generate_lead` are both marked as key events, counted once per event, with no default monetary value. The website already sends these coded events; no URL-based derived event rule was created. Existing key-event definitions were retained. The OpenSEO connector exposes read access only; settings were applied in the authenticated Analytics UI.
 
 ## Reporting baseline and provisional target
 
