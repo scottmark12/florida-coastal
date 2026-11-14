@@ -75,8 +75,10 @@ async function processRow(row: any, settings: any, dry: boolean) {
         story: () => buildStoryEmail(lead, picks), honest: () => buildHonestEmail(lead, picks) }[row.step as "guide"]();
     }
     if (!mail) return { status: "skipped", error: "nothing to send for this lead" };
-    // the guide itself goes out as a link in the top 5 email; day 3 is a short nudge with no attachment
   }
+  // Nov 13 2026: the welcome, day 3 guide and day 10 honest emails carry one of our PDFs (mail.attach: { url, name })
+  if (!attachment_url && mail && mail.attach && mail.attach.url) { attachment_url = mail.attach.url; attachment_name = mail.attach.name; }
+
   if (mail && mail.text) mail.text += addrText();
   const preview_url = await upload(`preview/${row.id}-${crypto.randomUUID()}.html`, mail.html, "text/html");
 

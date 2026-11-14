@@ -1,12 +1,9 @@
-// Florida Coastal: builds the top 5 email (HTML) and the personal Shortlist PDF.
+// Florida Coastal: builds the lead emails (HTML, in the website style) and the personal Shortlist PDF.
 // Runs in Node (for testing) and in Supabase Edge Functions (Deno).
 // The caller passes in pdf-lib, fontkit, font/logo bytes and an image loader.
 
-const C = {
-  ink: "#152A2E", rust: "#C65213", rustDark: "#A8440E", peach: "#E3A66D",
-  tint: "#FBEEE5", muted: "#56696C", line: "#DFE6E5", paper: "#F3F6F5",
-  sea: "#1B6E78", white: "#FFFFFF", soft: "#C9D4D3",
-};
+// Email palette: the website's (Nov 13 2026 redesign). Ink, muted text, warm greige panels, hairlines.
+const C = { ink: "#152A2E", white: "#FFFFFF", gray: "#3E4F52", soft: "#6B7678", band: "#F2EFEA", hair: "#E4E0D8", chip: "#D9D6CF" };
 const SITE = "https://www.floridacoastal.co";
 // Mailing address for every email footer (CAN-SPAM). fc-send sets it from fc_email_settings.postal_address.
 let ADDRESS = "";
@@ -60,6 +57,11 @@ export function pickTowns(lead, towns, now = new Date()) {
 }
 
 /* ---------------------------------------------------------------- EMAIL */
+/* Nov 13 2026: emails use the WEBSITE's style (Mark: "use our website style not pdf style").
+   Like floridacoastal.co: DM Sans headlines in sentence case with tight tracking, Libre Caslon only for town names
+   and article titles, small caps labels, rounded photos and cards, warm greige panels, ink pill buttons with an
+   arrow, small caps links with an arrow, the site's footer line. The PDFs keep their own print style.
+   Gmail doesn't load web fonts, so the serif falls back to Georgia and DM Sans to Helvetica/Arial. */
 
 /* One tap "when are you moving?" links. Each lands on their No. 1 town page; the site logs it as event
    "timeline" with the lead id, so later emails can branch without a form. */
@@ -68,41 +70,80 @@ function tlLink(lead, t, key) {
   const base = (t && t.url) || SITE + "/find-your-mile.html";
   return `${base}?utm_source=email&utm_campaign=top5&utm_content=tl-${key}-L${lead.id}`;
 }
-function timelineAsk(lead, t) {
-  const btn = ([k, label]) => `<td style="padding:0 8px 8px 0;"><a href="${tlLink(lead, t, k)}" style="display:inline-block;padding:11px 16px;border:1.5px solid ${C.line};border-radius:999px;font-family:${F_BODY};font-size:14.5px;font-weight:700;color:${C.ink};text-decoration:none;background:${C.white};">${label}</a></td>`;
-  return `<tr><td class="px" style="padding:24px 40px 0 40px;">
-    <p style="margin:0 0 10px 0;font-family:${F_BODY};font-size:15px;line-height:1.5;color:${C.ink};"><b>One tap, so we send the right things:</b> when are you thinking of moving?</p>
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr>${TL.map(btn).join("")}</tr></table>
-  </td></tr>`;
-}
 
 const F_BODY = "'DM Sans','Helvetica Neue',Arial,sans-serif";
-const F_HEAD = "'Fraunces',Georgia,'Times New Roman',serif";
+const F_HEAD = "'Libre Caslon Display','Libre Caslon Text',Georgia,'Times New Roman',serif";
+const F_TEXT = "'Libre Caslon Text',Georgia,'Times New Roman',serif";
+const FONTS = `<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Libre+Caslon+Display&family=Libre+Caslon+Text:ital@0;1&display=swap" rel="stylesheet">`;
+const LOGO = `${SITE}/img/fc-logo-arch-line-ink.png`;
 
-function townBlock(t, i) {
-  const picks = (t.picks || []).map((p) =>
-    `<p style="margin:6px 0 0 0;font-family:${F_BODY};font-size:15px;line-height:1.5;color:${C.ink};"><b style="color:${C.rustDark};">${esc(p.name)}.</b> ${esc(p.note)}</p>`).join("");
-  const cell = (label, val, big, pad) => `<td class="stack" width="33%" valign="top" style="padding:${pad};font-family:${F_BODY};"><p style="margin:0;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${C.muted};">${label}</p><p style="margin:4px 0 0 0;${big ? `font-family:${F_HEAD};font-size:22px;` : "font-size:15px;line-height:1.4;"}color:${C.ink};">${esc(val)}</p></td>`;
-  return `
-  <tr><td class="px" style="padding:${i ? 38 : 30}px 40px 0 40px;">
-    <a href="${link(t)}"><img src="${t.mail_img}" width="520" height="292" alt="${esc(t.name)}" style="display:block;width:100%;max-width:520px;height:auto;border:0;border-radius:12px;"></a>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:18px;"><tr>
-      <td width="58" valign="top" style="font-family:${F_HEAD};font-weight:600;font-size:46px;line-height:1;color:${C.rust};">${i + 1}</td>
-      <td valign="top">
-        <p style="margin:0 0 4px 0;font-family:${F_BODY};font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${C.muted};">${esc(t.coast)} &middot; ${esc(t.area)}</p>
-        <h2 class="town-h" style="margin:0;font-family:${F_HEAD};font-weight:400;font-size:32px;line-height:1.15;color:${C.ink};">${esc(t.name)}</h2>
-      </td></tr></table>
-    <p style="margin:12px 0 18px 0;font-family:${F_BODY};font-size:16px;line-height:1.6;color:${C.ink};">${esc(t.blurb)}</p>
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="border-top:1px solid ${C.line};border-bottom:1px solid ${C.line};"><tr>
-      ${cell("Median home", t.price || "Ask us", true, "14px 10px 14px 0")}
-      ${cell("Airport", t.airport, false, "14px 10px")}
-      ${cell("Heads up", t.watch, false, "14px 0 14px 10px")}
-    </tr></table>
-    ${picks ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="margin-top:14px;"><tr><td style="background:${C.tint};border-radius:10px;padding:14px 18px;">
-      <p style="margin:0;font-family:${F_BODY};font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${C.rust};">Your first weekend</p>${picks}</td></tr></table>` : ""}
-    <p style="margin:14px 0 0 0;"><a href="${link(t)}" style="font-family:${F_BODY};font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:${C.sea};text-decoration:none;">Explore ${esc(t.name)} &rarr;</a></p>
-  </td></tr>`;
+/* building blocks (inline styles, table layout, so Outlook and Gmail keep them) */
+const PX = "40px";
+const R16 = "16px";
+const row = (inner, pad = `0 ${PX}`) => `<tr><td class="px" style="padding:${pad};">${inner}</td></tr>`;
+const P = (t, extra = "") => `<p style="margin:0 0 16px 0;font-family:${F_BODY};font-size:16px;line-height:1.65;color:${C.ink};${extra}">${t}</p>`;
+const label = (t, extra = "") => `<p style="margin:0 0 10px 0;font-family:${F_BODY};font-size:11.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:${C.gray};${extra}">${t}</p>`;
+// headlines read like the site's: DM Sans 500, sentence case, tight tracking
+const h1 = (t) => `<h1 class="hero-h" style="margin:0;font-family:${F_BODY};font-weight:500;font-size:36px;line-height:1.08;letter-spacing:-.025em;color:${C.ink};">${t}</h1>`;
+const h2 = (t) => `<h2 style="margin:0 0 10px 0;font-family:${F_BODY};font-weight:500;font-size:24px;line-height:1.15;letter-spacing:-.02em;color:${C.ink};">${t}</h2>`;
+const townName = (t, size = 26) => `<span style="font-family:${F_HEAD};font-weight:400;font-size:${size}px;line-height:1.1;color:${C.ink};">${t}</span>`;
+const deck = (t, extra = "") => `<p style="margin:14px 0 0 0;font-family:${F_BODY};font-size:17px;line-height:1.6;color:${C.gray};${extra}">${t}</p>`;
+const sign = (who = "Mark and Betsy Scott") => `<p style="margin:20px 0 0 0;font-family:${F_TEXT};font-style:italic;font-size:17px;color:${C.ink};">${who}</p>`;
+const btn = (href, text, dark = true) => `<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${dark ? C.ink : C.white};border-radius:999px;"><a href="${href}" style="display:inline-block;padding:13px 26px;font-family:${F_BODY};font-size:15px;font-weight:500;color:${dark ? C.white : C.ink};text-decoration:none;">${text} &rarr;</a></td></tr></table>`;
+const more = (href, text) => `<a href="${href}" style="font-family:${F_BODY};font-size:12.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:${C.ink};text-decoration:underline;text-underline-offset:3px;">${text} &rarr;</a>`;
+const rule = (pad = `0 ${PX}`, color = C.hair) => `<tr><td class="px" style="padding:${pad};"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td height="1" style="height:1px;line-height:1px;font-size:0;background:${color};">&nbsp;</td></tr></table></td></tr>`;
+// photos sit inside the margins with rounded corners, like the site's cards
+const photo = (src, href, alt, cap) => `<tr><td class="px" style="padding:0 ${PX};">${href ? `<a href="${href}">` : ""}<img src="${src}" width="520" alt="${esc(alt)}" style="display:block;width:100%;max-width:520px;height:auto;border:0;border-radius:${R16};">${href ? "</a>" : ""}</td></tr>
+  ${cap ? `<tr><td class="px" style="padding:8px ${PX} 0 ${PX};font-family:${F_BODY};font-size:13px;line-height:1.4;color:${C.soft};">${cap}</td></tr>` : ""}`;
+// a greige panel, like the site's price and guide cards
+const panel = (inner, pad = "20px 22px") => `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${C.band};border-radius:${R16};padding:${pad};">${inner}</td></tr></table>`;
+const section = (lab, inner) => panel(`${label(lab)}${inner}`);
+
+function masthead(lab, utm) {
+  return `<tr><td class="px" style="padding:28px ${PX} 0 ${PX};"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td valign="middle"><a href="${SITE}/?${utm}"><img src="${LOGO}" width="150" alt="Florida Coastal" style="display:block;width:150px;height:auto;border:0;"></a></td>
+    <td valign="middle" align="right"><a href="${SITE}/find-your-mile.html?${utm}" style="display:inline-block;padding:8px 16px;background:${C.ink};border-radius:999px;font-family:${F_BODY};font-size:13px;font-weight:500;color:${C.white};text-decoration:none;">Take the quiz</a></td>
+  </tr></table></td></tr>
+  ${lab ? row(label(lab, "margin:0;"), `30px ${PX} 10px ${PX}`) : `<tr><td style="padding:30px 0 0 0;"></td></tr>`}`;
 }
+function footer(why, utm) {
+  return `<tr><td class="px" style="padding:44px ${PX} 34px ${PX};"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid ${C.hair};padding:22px 0 0 0;">
+    <img src="${LOGO}" width="120" alt="Florida Coastal" style="display:block;width:120px;height:auto;border:0;margin:0 0 8px 0;">
+    <p style="margin:0 0 14px 0;font-family:${F_BODY};font-size:13px;line-height:1.5;color:${C.gray};">167 beach towns, Pensacola to Fernandina.</p>
+    <p style="margin:0;font-family:${F_BODY};font-size:12px;line-height:1.7;color:${C.soft};"><a href="${SITE}/towns/?${utm}" style="color:${C.gray};">Beach Towns</a> &nbsp;&middot;&nbsp; <a href="${SITE}/find-your-mile.html?${utm}" style="color:${C.gray};">Take the quiz</a> &nbsp;&middot;&nbsp; <a href="${SITE}/privacy.html" style="color:${C.gray};">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.gray};">Unsubscribe</a>${why ? `<br>${why}` : ""}<br>Florida Coastal &middot; floridacoastal.co${ADDRESS ? " &middot; " + esc(ADDRESS) : ""}</p>
+  </td></tr></table></td></tr>`;
+}
+function page(subject, preheader, rows) {
+  return `<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="x-apple-disable-message-reformatting"><meta name="color-scheme" content="light"><meta name="supported-color-schemes" content="light">
+<title>${esc(subject)}</title>
+${FONTS}
+<style>body{margin:0;padding:0;background:${C.white}}a{color:${C.ink}}@media (max-width:620px){.container{width:100%!important}.px{padding-left:22px!important;padding-right:22px!important}.hero-h{font-size:30px!important}.stack{display:block!important;width:100%!important;padding:0 0 14px 0!important;border-left:0!important}}</style>
+</head><body style="margin:0;padding:0;background:${C.white};">
+<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:${C.white};">${esc(preheader)}</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.white};"><tr><td align="center" style="padding:0;">
+<table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:600px;background:${C.white};">
+${rows}
+</table></td></tr></table></body></html>`;
+}
+
+function timelineAsk(lead, t) {
+  const pill = ([k, text]) => `<td style="padding:0 8px 8px 0;"><a href="${tlLink(lead, t, k)}" style="display:inline-block;padding:9px 16px;border:1px solid ${C.chip};border-radius:999px;font-family:${F_BODY};font-size:14px;font-weight:500;white-space:nowrap;color:${C.ink};text-decoration:none;background:${C.white};">${text}</a></td>`;
+  return row(`${label("One tap, so we send the right things")}${h2("When are you thinking of moving?")}
+     <table role="presentation" cellpadding="0" cellspacing="0" border="0" style="margin-top:4px;"><tr>${TL.map(pill).join("")}</tr></table>`, `30px ${PX} 0 ${PX}`);
+}
+
+/* Nov 13 2026 (Mark): "the emails should send a pdf that we built attached, on one page". The email is a short
+   cover letter for the PDF: the details live in the attachment, not in the email. */
+const PDFS = {
+  guide: { url: SITE + "/guides/move-and-belong-guide.pdf", name: "Move-and-Belong-Guide.pdf" },
+  flood: { url: SITE + "/downloads/florida-beach-towns-flood-risk.pdf", name: "Florida-Beach-Towns-Flood-Risk.pdf" },
+};
+// "attached" card: a greige panel with a small PDF mark, the file name and what's inside
+const attached = (name, inside) => panel(`<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr>
+    <td valign="top" width="48"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="32" height="40" align="center" valign="middle" style="width:32px;height:40px;background:${C.white};border:1px solid ${C.chip};border-radius:6px;font-family:${F_BODY};font-size:9px;font-weight:600;letter-spacing:.06em;color:${C.ink};">PDF</td></tr></table></td>
+    <td valign="top" style="font-family:${F_BODY};"><p style="margin:0 0 4px 0;font-size:11.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:${C.gray};">Attached</p><p style="margin:0 0 6px 0;font-size:17px;font-weight:500;letter-spacing:-.01em;color:${C.ink};">${esc(name)}</p><p style="margin:0;font-size:14.5px;line-height:1.55;color:${C.gray};">${inside}</p></td>
+  </tr></table>`);
 
 export function buildEmail(lead, picks, opts = {}) {
   const name = firstName(lead.name);
@@ -111,55 +152,56 @@ export function buildEmail(lead, picks, opts = {}) {
   const hasPdf = opts.hasPdf !== false;
   const saved = isSaved(lead);
   const subject = opts.subject || (saved ? "The Florida towns you saved" : "Your Florida Shortlist is here");
-  const html = `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="x-apple-disable-message-reformatting"><meta name="color-scheme" content="light">
-<title>${esc(subject)}</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
-<style>body{margin:0;padding:0;background:${C.paper}}a{color:${C.sea}}@media (max-width:620px){.container{width:100%!important}.px{padding-left:22px!important;padding-right:22px!important}.hero-h{font-size:38px!important}.town-h{font-size:28px!important}.stack{display:block!important;width:100%!important;padding:0 0 14px 0!important}}</style>
-</head><body style="margin:0;padding:0;background:${C.paper};">
-<div style="display:none;max-height:0;overflow:hidden;opacity:0;color:${C.paper};">${esc(list)}, with the honest details on each.</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.paper};"><tr><td align="center" style="padding:28px 12px;">
-<table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:600px;background:${C.white};border-radius:14px;overflow:hidden;">
-  <tr><td class="px" style="padding:26px 40px 20px 40px;"><a href="${SITE}/?${UTM}"><img src="${SITE}/img/logo.png" width="190" alt="Florida Coastal" style="display:block;width:190px;height:auto;border:0;"></a></td></tr>
-  <tr><td class="px" style="padding:0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td height="3" style="height:3px;line-height:3px;font-size:0;background:${C.rust};background-image:linear-gradient(90deg,${C.rust},${C.peach} 60%,${C.white});border-radius:2px;">&nbsp;</td></tr></table></td></tr>
-  <tr><td class="px" style="padding:34px 40px 8px 40px;">
-    <p style="margin:0 0 12px 0;font-family:${F_BODY};font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:${C.rust};">${saved ? "Saved from your visit" : "Find Your Mile &middot; Your results"}</p>
-    <h1 class="hero-h" style="margin:0;font-family:${F_HEAD};font-weight:400;font-size:46px;line-height:1.1;letter-spacing:-.01em;color:${C.ink};">${saved ? `Your saved<br>Florida towns` : `Your Florida<br>Shortlist`}</h1>
-    <p style="margin:18px 0 0 0;font-family:${F_BODY};font-size:17px;line-height:1.6;color:${C.muted};">${name ? `Hi ${esc(name)}, here` : "Here"} ${saved ? `are the ${picks.length === 1 ? "town" : picks.length + " towns"} you looked at, with the honest details on each.` : `are the ${picks.length === 5 ? "five" : picks.length} towns that fit how you want to live, with the honest details on each.`}${hasPdf ? ` Your personal Florida Shortlist is attached as a PDF${picks.length > 1 ? ", with " + (picks.length === 5 ? "all five" : "them") + " side by side" : ""}. It's a good one to print or share.` : ""}</p>
-  </td></tr>
-  ${!saved && lead && lead.id ? timelineAsk(lead, picks[0]) : ""}
-  ${opts.guideUrl ? `<tr><td class="px" style="padding:26px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.tint};border-radius:12px;"><tr>
-    <td width="112" valign="top" style="padding:18px 0 18px 18px;"><a href="${opts.guideUrl}"><img src="${SITE}/img/guide/cover-thumb.jpg" width="94" alt="The Move and Belong Guide" style="display:block;width:94px;height:auto;border:0;"></a></td>
-    <td valign="top" style="padding:18px 18px 18px 16px;font-family:${F_BODY};">
-      <p style="margin:0 0 4px 0;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${C.rust};">Your free guide</p>
-      <p style="margin:0 0 6px 0;font-family:${F_HEAD};font-size:22px;line-height:1.2;color:${C.ink};">The Move and Belong Guide</p>
-      <p style="margin:0 0 10px 0;font-size:14.5px;line-height:1.5;color:${C.ink};">Finding the town is the easy part. This is how to go from new in town to knowing people in your first 90 days.</p>
-      <a href="${opts.guideUrl}" style="font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:${C.sea};text-decoration:none;">Read the guide &rarr;</a>
-    </td></tr></table></td></tr>` : ""}
-  ${picks.map(townBlock).join("")}
-  <tr><td class="px" style="padding:40px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-left:3px solid ${C.rust};padding:4px 0 4px 18px;">
-    <p style="margin:0 0 6px 0;font-family:${F_BODY};font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${C.rust};">The honest part</p>
-    <p style="margin:0;font-family:${F_HEAD};font-size:19px;line-height:1.45;color:${C.ink};">Florida homeowners insurance averages about $10,384 a year for $250K of coverage. Get a quote and check the flood zone before you fall for any address.</p>
-    <p style="margin:10px 0 0 0;"><a href="${SITE}/articles/insurance.html?${UTM}" style="font-family:${F_BODY};font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:${C.sea};text-decoration:none;">What nobody tells you about it &rarr;</a></p>
-  </td></tr></table></td></tr>
-  <tr><td style="padding:40px 0 0 0;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.ink};"><tr><td class="px" align="center" style="padding:40px 40px 38px 40px;">
-    <img src="${SITE}/img/mail/our-story.jpg" width="76" height="76" alt="Mark and Betsy Scott" style="display:block;width:76px;height:76px;border-radius:50%;border:3px solid ${C.white};margin:0 auto 18px auto;">
-    <h2 style="margin:0;font-family:${F_HEAD};font-weight:400;font-size:28px;line-height:1.2;color:${C.white};">Questions about any of these?</h2>
-    <p style="margin:12px auto 24px auto;max-width:420px;font-family:${F_BODY};font-size:16px;line-height:1.6;color:${C.soft};">Just reply to this email. The Scott family reads every message, and we've lived on this coast for 20 years. Moving with someone? Forward this to them. It's easier to pick a town together.</p>
-    <table role="presentation" cellpadding="0" cellspacing="0" border="0" align="center"><tr><td style="background:${C.rust};border-radius:999px;"><a href="mailto:hello@floridacoastal.co?subject=Question%20about%20my%20top%205" style="display:inline-block;padding:14px 30px;font-family:${F_BODY};font-size:15px;font-weight:700;letter-spacing:.02em;color:${C.white};text-decoration:none;">Ask a local</a></td></tr></table>
-    <p style="margin:26px 0 0 0;font-family:${F_HEAD};font-style:italic;font-size:17px;color:${C.peach};">Mark and Betsy Scott</p>
-  </td></tr></table></td></tr>
-  <tr><td class="px" align="center" style="padding:24px 40px 28px 40px;background:${C.paper};">
-    <img src="${SITE}/img/logo-mark.png" width="28" alt="" style="display:block;width:28px;height:auto;margin:0 auto 10px auto;border:0;">
-    <p style="margin:0;font-family:${F_BODY};font-size:13px;line-height:1.6;color:${C.muted};">Florida is 1,350 miles of coastline. We'll help you find your mile.</p>
-    <p style="margin:8px 0 0 0;font-family:${F_BODY};font-size:12px;line-height:1.6;color:#7E8F92;"><a href="${SITE}/find-your-mile.html?${UTM}" style="color:${C.muted};">Retake the quiz</a> &nbsp;&middot;&nbsp; <a href="${SITE}/privacy.html" style="color:${C.muted};">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.muted};">Unsubscribe</a><br>You're getting this because you asked for your towns${opts.guideUrl ? " and the Move and Belong Guide" : ""} on floridacoastal.co. Town details are for information and should be confirmed locally.${addrHtml()}</p>
-  </td></tr>
-</table></td></tr></table></body></html>`;
-  const text = [`${name ? `Hi ${name}, here` : "Here"} are your top 5 Florida towns:`, "",
-    ...picks.map((t, i) => `${i + 1}. ${t.name} (${t.coast}, ${t.area})\n${t.blurb}\nMedian home: ${t.price || "ask us"} | Airport: ${t.airport} | Heads up: ${t.watch}\n${link(t)}\n`),
+  const n = picks.length === 5 ? "five" : picks.length;
+  const t1 = picks[0];
+  const intro = `${name ? `Hi ${esc(name)}, here` : "Here"} ${saved ? `are the ${picks.length === 1 ? "town" : picks.length + " towns"} you saved` : `are the ${n} towns that fit how you want to live`}. Everything we know about each one is in the PDF.`;
+  const rowsList = picks.map((t, i) => `<tr><td width="34" valign="baseline" style="padding:11px 0;border-top:1px solid ${C.hair};font-family:${F_BODY};font-size:15px;font-weight:500;line-height:1;color:${C.soft};">${i + 1}</td><td valign="baseline" style="padding:11px 0;border-top:1px solid ${C.hair};"><a href="${link(t)}" style="text-decoration:none;">${townName(esc(t.name), 21)}</a></td><td align="right" valign="baseline" style="padding:11px 0;border-top:1px solid ${C.hair};font-family:${F_BODY};font-size:13.5px;color:${C.gray};">${esc(t.coast)}</td></tr>`).join("");
+  const rows = `
+  ${masthead(saved ? "Saved from your visit" : "Your Florida Shortlist", UTM)}
+  ${row(`${h1(saved ? "Your saved Florida towns" : "Your Florida Shortlist")}${deck(intro)}`, `30px ${PX} 24px ${PX}`)}
+  ${t1 ? photo(t1.mail_img, link(t1), t1.name, `Your No. 1, ${esc(t1.name)}.`) : ""}
+  ${row(`<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${rowsList}</table>`, `22px ${PX} 0 ${PX}`)}
+  ${hasPdf ? row(attached(`${name ? name + "'s " : "Your "}Florida Shortlist`, `A page for each town: home prices, the airport drive, the season, the honest heads up and your first weekend. Then ${picks.length > 1 ? (picks.length === 5 ? "all five" : "all of them") + " side by side" : "a checklist before you visit"}. Good to print or forward to whoever's moving with you.`), `22px ${PX} 0 ${PX}`) : ""}
+  ${!saved && lead && lead.id ? timelineAsk(lead, t1) : ""}
+  ${row(`${P(`Questions about any of these? Just reply. We read every message${opts.guideUrl ? `, and our free guide to your first 90 days in a new town is <a href="${opts.guideUrl}" style="color:${C.ink};">here</a>` : ""}.`, "margin-bottom:0;")}${sign()}`, `26px ${PX} 0 ${PX}`)}
+  ${footer(`You're getting this because you asked for your towns on floridacoastal.co. Town details are for information and should be confirmed locally.`, UTM)}`;
+  const html = page(subject, `${list}. Your Shortlist PDF is attached.`, rows);
+  const text = [`${name ? `Hi ${name}, here` : "Here"} are your top Florida towns. Everything we know about each one is in the attached PDF.`, "",
+    ...picks.map((t, i) => `${i + 1}. ${t.name} (${t.coast})  ${link(t)}`), "",
     ...(opts.guideUrl ? [`Your free Move and Belong Guide: ${opts.guideUrl}`, ""] : []),
     "Questions? Just reply. We read every message.", "", "Mark and Betsy Scott", "Florida Coastal", SITE].join("\n");
   return { subject, html, text };
+}
+
+
+/* Nov 13 2026 (Mark): "for 30a it's not visit the airport during rush hour, it's spend a week during high season".
+   Towns with a busy season get "spend a week in high season"; towns that are steady all year keep the airport drive. */
+function highSeason(t) {
+  const s = String((t && t.season) || "").toLowerCase();
+  if (!/bus|lively|packed/.test(s) || /year round|all year|most of the year/.test(s)) return null;
+  if (/november through april|winter/.test(s)) return /summer/.test(s) && /winter/.test(s) && s.indexOf("summer") < s.indexOf("winter") ? "summer" : "winter";
+  if (/april through october|summer/.test(s)) return "summer";
+  if (/spring/.test(s)) return "spring";
+  if (/scallop/.test(s)) return "scallop season";
+  return null;
+}
+function seasonCheck(t, html = true) {
+  const s = String((t && t.name) || "").replace(/\s*\(.*\)$/, "");
+  const hs = highSeason(t);
+  const e = html ? esc : (x) => x;
+  if (hs) return ["Spend a week there in high season.", `For ${e(s)} that's ${hs}: the traffic, the busy beaches and the wait for a table. If you still love it then, that's a good sign.`];
+  return ["Drive to the airport at rush hour.", `For ${e(s)} that's ${e((t && t.airport) || "the nearest airport")}. Do it on a weekday at 5pm.`];
+}
+// Each town's own "before you fall for it" checklist: t.honest, built by tools/mail/honest.py from the town page
+// (season, insurance, flood score, HOA, airport, know before you go). Falls back to a generic list.
+function honestChecks(t) {
+  if (t && Array.isArray(t.honest) && t.honest.length) return t.honest;
+  return [
+    ["Visit in August, not just February.", "Summer is hot everywhere on this coast, so go once in the heat."],
+    ["Get an insurance quote for a real address.", "Homeowners and flood both. It can change the math more than the price of the house."],
+    ["Check the flood zone before you make an offer.", "Look up the flood zone and evacuation zone for the exact address."],
+    seasonCheck(t, false),
+  ];
 }
 
 /* ------------------------------------------------------------------ PDF */
@@ -458,84 +500,68 @@ export async function render(lead, towns, deps) {
 
 /* ------------------------------------------------------- FOLLOW UPS */
 
-function shell(subject, preheader, rows) {
-  return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>${esc(subject)}</title>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Fraunces:opsz,wght@9..144,400;9..144,600&display=swap" rel="stylesheet">
-<style>body{margin:0;padding:0;background:${C.paper}}a{color:${C.sea}}@media (max-width:620px){.container{width:100%!important}.px{padding-left:22px!important;padding-right:22px!important}.hero-h{font-size:34px!important}}</style></head>
-<body style="margin:0;padding:0;background:${C.paper};"><div style="display:none;max-height:0;overflow:hidden;opacity:0;">${esc(preheader)}</div>
-<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:${C.paper};"><tr><td align="center" style="padding:28px 12px;">
-<table role="presentation" class="container" width="600" cellpadding="0" cellspacing="0" border="0" style="width:600px;max-width:600px;background:${C.white};border-radius:14px;overflow:hidden;">
-<tr><td class="px" style="padding:26px 40px 20px 40px;"><a href="${SITE}/?${UTM}"><img src="${SITE}/img/logo.png" width="170" alt="Florida Coastal" style="display:block;width:170px;height:auto;border:0;"></a></td></tr>
-<tr><td class="px" style="padding:0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td height="3" style="height:3px;line-height:3px;font-size:0;background:${C.rust};background-image:linear-gradient(90deg,${C.rust},${C.peach} 60%,${C.white});">&nbsp;</td></tr></table></td></tr>
-${rows}
-<tr><td class="px" align="center" style="padding:24px 40px 28px 40px;background:${C.paper};"><p style="margin:0;font-family:${F_BODY};font-size:12px;line-height:1.6;color:#7E8F92;"><a href="${SITE}/privacy.html" style="color:${C.muted};">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.muted};">Unsubscribe</a><br>Florida Coastal &middot; floridacoastal.co${ADDRESS ? " &middot; " + esc(ADDRESS) : ""}</p></td></tr>
-</table></td></tr></table></body></html>`;
+/* designed emails: masthead, rows, footer (the house style, same as the top 5 email) */
+function shell(subject, preheader, rows, lab = "Florida Coastal", utm = UTM) {
+  return page(subject, preheader, `${masthead(lab, utm)}${rows}${footer("", utm)}`);
 }
-const P = (t, extra = "") => `<p style="margin:0 0 16px 0;font-family:${F_BODY};font-size:16px;line-height:1.65;color:${C.ink};${extra}">${t}</p>`;
+const bullets = (items) => `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${items.map(([a, b], i) =>
+  `<tr><td valign="top" width="34" style="padding:13px 0 12px 0;border-top:1px solid ${C.hair};font-family:${F_BODY};font-size:15px;font-weight:500;line-height:1.5;color:${C.soft};">${i + 1}</td><td style="padding:12px 0 12px 0;border-top:1px solid ${C.hair};font-family:${F_BODY};font-size:15.5px;line-height:1.55;color:${C.ink};"><b style="font-weight:600;">${a}</b> ${b}</td></tr>`).join("")}</table>`;
 
 export function buildGuideEmail(lead, picks, guideUrl) {
   const name = firstName(lead.name);
   const subject = "Have you picked your three yet?";
-  const top = picks[0] ? esc(picks[0].name) : "";
-  const url = guideUrl || SITE + "/articles/first-90-days.html";
-  const items = [
-    ["Serve something.", "Rotary, Kiwanis, the chamber, Habitat. You meet the people who run the town."],
-    ["Believe something.", "A congregation or small group. A weekly rhythm and real care for newcomers."],
-    ["Play something.", "A pickleball league, a run club, a fishing or sailing club. The same faces every week."],
-  ].map(([a, b]) => `<tr><td valign="top" width="22" style="padding:4px 0 12px 0;font-family:${F_HEAD};font-size:18px;color:${C.rust};">&bull;</td><td style="padding:4px 0 12px 0;font-family:${F_BODY};font-size:15px;line-height:1.55;color:${C.ink};"><b>${a}</b> ${b}</td></tr>`).join("");
+  const top = picks[0] ? esc(short(picks[0])) : "";
   const rows = `
-<tr><td class="px" style="padding:34px 40px 6px 40px;">
-  <p style="margin:0 0 12px 0;font-family:${F_BODY};font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:${C.rust};">From the Move and Belong Guide</p>
-  <h1 class="hero-h" style="margin:0 0 18px 0;font-family:${F_HEAD};font-weight:400;font-size:40px;line-height:1.12;color:${C.ink};">Pick your three.</h1>
-  ${P(`${name ? `Hi ${esc(name)}, a` : "A"} few days ago you found your five${top ? `, with ${top} at the top` : ""}. If you only do one thing from the guide, do this: pick three groups that meet in person on a schedule, from three different parts of life. You can even look them up before you move.`)}
-</td></tr>
-<tr><td class="px" style="padding:6px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${items}</table></td></tr>
-<tr><td class="px" align="left" style="padding:14px 40px 34px 40px;">${P("Search your town plus the thing plus \"club\" or \"league\". Then go to the next meeting, alone if you have to.")}<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${C.rust};border-radius:999px;"><a href="${url}" style="display:inline-block;padding:14px 30px;font-family:${F_BODY};font-size:15px;font-weight:700;color:${C.white};text-decoration:none;">Open the guide</a></td></tr></table>
-  <p style="margin:22px 0 0 0;font-family:${F_BODY};font-size:15px;line-height:1.6;color:${C.muted};">Want help finding the groups in your town? Just reply.<br><span style="font-family:${F_HEAD};font-style:italic;color:${C.rustDark};">Mark and Betsy Scott</span></p></td></tr>`;
-  const text = `${name ? `Hi ${name}, a` : "A"} few days ago you found your five. If you only do one thing from the Move and Belong Guide, pick three groups that meet in person on a schedule: serve something, believe something, play something.\n\nThe guide: ${url}\n\nWant help finding the groups in your town? Just reply.\nMark and Betsy Scott\nFlorida Coastal`;
-  return { subject, html: shell(subject, "The one thing from the guide we'd do this week.", rows), text };
+${row(`${h1("Pick your three")}${deck(`${name ? `Hi ${esc(name)}, a` : "A"} few days ago you found your towns${top ? `, with ${top} at the top` : ""}. If you only do one thing from our guide, do this.`)}`, `30px ${PX} 0 ${PX}`)}
+${row(bullets([
+    ["Serve something.", "Rotary, Kiwanis, the chamber, Habitat."],
+    ["Believe something.", "A congregation or a small group."],
+    ["Play something.", "A pickleball league, a run club, a fishing or sailing club."],
+  ]), `20px ${PX} 0 ${PX}`)}
+${row(`${P(`Three groups that meet in person on a schedule, from three parts of life. Look them up before you move, then go to the next meeting, <i style="font-family:${F_TEXT};">alone if you have to.</i>`)}
+  ${attached("The Move and Belong Guide", "Our 14 page guide to your first 90 days in a new town: the five rules, the dip, Florida's seasons and storms, a 90 day plan and a page for your people.")}
+  ${P("Want help finding the groups in your town? Just reply.", "margin-top:22px;margin-bottom:0;")}${sign()}`, `20px ${PX} 0 ${PX}`)}`;
+  const text = `${name ? `Hi ${name}, a` : "A"} few days ago you found your towns. If you only do one thing from our guide: pick three groups that meet in person on a schedule. Serve something, believe something, play something.\n\nThe Move and Belong Guide is attached.\n\nWant help finding the groups in your town? Just reply.\nMark and Betsy Scott\nFlorida Coastal`;
+  return { subject, html: shell(subject, "The one thing from our guide we'd do this week. The guide is attached.", rows, "From the Move and Belong Guide", U("guide")), text, attach: { url: guideUrl || PDFS.guide.url, name: PDFS.guide.name } };
+}
+
+/* plain letters from a person (Basecamp, Superhuman style): no images, no buttons, just a note.
+   Same ink and type as everything else, and a signature in italic serif. */
+function plain(subject, paras, who) {
+  const sig = paras.at(-1);
+  const body = paras.slice(0, -1);
+  const html = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>${esc(subject)}</title>${FONTS}</head><body style="margin:0;padding:24px 18px;background:#FFFFFF;">
+<div style="max-width:560px;font-family:${F_BODY};font-size:16px;line-height:1.65;color:${C.ink};">${body.map((b) => `<p style="margin:0 0 16px 0;">${b}</p>`).join("")}
+<p style="margin:22px 0 0 0;font-family:${F_TEXT};font-style:italic;font-size:18px;line-height:1.4;color:${C.ink};">${sig.replace(/<br>.*$/, "")}</p><p style="margin:2px 0 0 0;font-size:13px;color:${C.gray};">Florida Coastal</p>
+<p style="margin:30px 0 0 0;padding-top:12px;border-top:1px solid ${C.hair};font-size:12px;line-height:1.6;color:${C.gray};"><a href="${SITE}/?${U("letter")}" style="color:${C.gray};">floridacoastal.co</a> &middot; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.gray};">Unsubscribe</a>${ADDRESS ? "<br>" + esc(ADDRESS) : ""}</p></div></body></html>`;
+  const text = paras.join("\n\n").replace(/<br>/g, "\n").replace(/<[^>]+>/g, "");
+  return { subject, html, text };
 }
 
 export function buildNoteEmail(lead, picks) {
   const name = firstName(lead.name);
   const names = picks.map((t) => t.name);
   const list = names.length > 1 ? names.slice(0, -1).join(", ") + " and " + names.at(-1) : names[0] || "your towns";
-  const subject = "Which one are you leaning toward?";
-  const body = [
-    `Hi${name ? " " + name : ""},`,
-    `It's been about a week since you found your towns on Florida Coastal: ${list}.`,
+  return plain("Which one are you leaning toward?", [
+    `Hi${name ? " " + esc(name) : ""},`,
+    `It's been about a week since you found your towns on Florida Coastal: ${esc(list)}.`,
     `I'm curious which one you're leaning toward, and what's still giving you pause. Hit reply and tell me. I read every one, and I'm happy to hop on a quick call if that's easier.`,
     `Mark Scott<br>Florida Coastal`,
-  ];
-  const html = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"></head><body style="margin:0;padding:24px 16px;background:#FFFFFF;">
-<div style="max-width:560px;font-family:'DM Sans','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.6;color:${C.ink};">${body.map((b) => `<p style="margin:0 0 16px 0;">${b}</p>`).join("")}
-<p style="margin:24px 0 0 0;font-size:12px;color:#7E8F92;"><a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:#7E8F92;">Unsubscribe</a>${addrHtml()}</p></div></body></html>`;
-  const text = body.join("\n\n").replace("<br>", "\n");
-  return { subject, html, text };
+  ]);
 }
 
 export function buildWelcomeEmail(lead, guideUrl) {
   const name = firstName(lead.name);
   const subject = "Your Move and Belong Guide";
-  const url = guideUrl || SITE + "/articles/first-90-days.html";
-  const items = [
-    ["Plan to be exhausted for 90 days.", "Put the work in up front, so you can enjoy the friendships for years."],
-    ["Join three communities.", "Serve something, believe something, play something. Then get involved."],
-    ["Be the host.", "Don't wait for an invite. People remember who had them over first."],
-  ].map(([a, b]) => `<tr><td valign="top" width="22" style="padding:4px 0 12px 0;font-family:${F_HEAD};font-size:18px;color:${C.rust};">&bull;</td><td style="padding:4px 0 12px 0;font-family:${F_BODY};font-size:15px;line-height:1.55;color:${C.ink};"><b>${a}</b> ${b}</td></tr>`).join("");
   const rows = `
-<tr><td class="px" style="padding:34px 40px 6px 40px;">
-  <p style="margin:0 0 12px 0;font-family:${F_BODY};font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:${C.rust};">Your free guide</p>
-  <h1 class="hero-h" style="margin:0 0 18px 0;font-family:${F_HEAD};font-weight:400;font-size:40px;line-height:1.12;color:${C.ink};">The boxes are the easy part.</h1>
-  ${P(`${name ? `Hi ${esc(name)}, here` : "Here"}'s the Move and Belong Guide. It's what we'd tell a friend who just signed the papers on a Florida town: how to go from new in town to knowing people in your first 90 days.`)}
-</td></tr>
-<tr><td class="px" style="padding:6px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${items}</table></td></tr>
-<tr><td class="px" align="left" style="padding:14px 40px 30px 40px;"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${C.rust};border-radius:999px;"><a href="${url}" style="display:inline-block;padding:14px 30px;font-family:${F_BODY};font-size:15px;font-weight:700;color:${C.white};text-decoration:none;">Read the guide</a></td></tr></table>
-  ${P(`Still picking your town? Our free quiz matches you to the Florida beach towns that fit how you want to live. <a href="${SITE}/find-your-mile.html?${UTM.replace("top5", "welcome")}" style="color:${C.sea};font-weight:700;">Find your top 5</a>`, "margin-top:22px;")}
-  <p style="margin:0;font-family:${F_BODY};font-size:15px;line-height:1.6;color:${C.muted};">After this, one short letter a month about the coast. Questions? Just reply.<br><span style="font-family:${F_HEAD};font-style:italic;color:${C.rustDark};">Mark and Betsy Scott</span></p></td></tr>`;
-  const text = `${name ? `Hi ${name}, here` : "Here"}'s the Move and Belong Guide: ${url}\n\nStill picking your town? Take the free quiz: ${SITE}/find-your-mile.html\n\nAfter this, one short letter a month about the coast. Questions? Just reply.\nMark and Betsy Scott\nFlorida Coastal`;
-  return { subject, html: shell(subject, "How to go from new in town to knowing people in your first 90 days.", rows), text };
+<tr><td style="padding:24px 0 0 0;"></td></tr>
+${photo(`${SITE}/img/guide/cover-wide.jpg`, "", "Two people walking over the dunes to the beach at sunset", "")}
+${row(`${h1("The boxes are the easy part")}${deck(`${name ? `Hi ${esc(name)}, here` : "Here"}'s the Move and Belong Guide. It's what we'd tell a friend who just signed the papers on a Florida town.`)}`, `30px ${PX} 0 ${PX}`)}
+${row(`${attached("The Move and Belong Guide", "14 pages on going from new in town to knowing people in your first 90 days. Print it, check it off, fill in your people.")}
+  ${P(`Still picking your town? Our free quiz matches you to the Florida beach towns that fit how you want to live. ${more(`${SITE}/find-your-mile.html?${U("welcome")}`, "See your top 5 towns")}`, "margin-top:22px;")}
+  ${P("After this, one short letter a month about the coast. Questions? Just reply.", "margin-bottom:0;")}${sign()}`, `22px ${PX} 0 ${PX}`)}`;
+  const text = `${name ? `Hi ${name}, here` : "Here"}'s the Move and Belong Guide. It's attached.\n\nStill picking your town? Take the free quiz: ${SITE}/find-your-mile.html\n\nAfter this, one short letter a month about the coast. Questions? Just reply.\nMark and Betsy Scott\nFlorida Coastal`;
+  return { subject, html: shell(subject, "Your guide to your first 90 days in a new town is attached.", rows, "Your free guide", U("welcome")), text, attach: { url: guideUrl || PDFS.guide.url, name: PDFS.guide.name } };
 }
 
 /* ======================================================================
@@ -552,45 +578,28 @@ export function buildWelcomeEmail(lead, guideUrl) {
    ====================================================================== */
 const U = (step) => `utm_source=email&utm_campaign=${step}`;
 const short = (t) => String((t && t.name) || "").replace(/\s*\(.*\)$/, "");
-const btn = (href, label) => `<table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${C.rust};border-radius:999px;"><a href="${href}" style="display:inline-block;padding:14px 28px;font-family:${F_BODY};font-size:15px;font-weight:700;color:${C.white};text-decoration:none;">${label}</a></td></tr></table>`;
-const eyebrow = (t) => `<p style="margin:0 0 12px 0;font-family:${F_BODY};font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:${C.rust};">${t}</p>`;
-const h1 = (t) => `<h1 class="hero-h" style="margin:0 0 18px 0;font-family:${F_HEAD};font-weight:400;font-size:40px;line-height:1.12;color:${C.ink};">${t}</h1>`;
-const sign = (who = "Mark and Betsy Scott") => `<p style="margin:22px 0 0 0;font-family:${F_HEAD};font-style:italic;font-size:17px;color:${C.rustDark};">${who}</p>`;
 const LABEL = { nightlife: "nightlife", meet: "meeting people", quiet: "peace and quiet", walk: "walkability", water: "the water", beaches: "beaches", dining: "dining", outdoors: "the outdoors", afford: "price", airport: "the airport" };
 function strengths(t) {
   return Object.entries(t.scores || {}).filter(([, v]) => v >= 4).sort((a, b) => b[1] - a[1]).slice(0, 3).map(([k]) => LABEL[k]).filter(Boolean);
 }
 const and = (a) => a.length > 1 ? a.slice(0, -1).join(", ") + " and " + a.at(-1) : a[0] || "";
 
-/* plain text letters from a person (Basecamp, Superhuman style): no images, no buttons */
-function plain(subject, paras) {
-  const html = `<!doctype html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(subject)}</title></head><body style="margin:0;padding:24px 16px;background:#FFFFFF;">
-<div style="max-width:560px;font-family:'DM Sans','Helvetica Neue',Arial,sans-serif;font-size:16px;line-height:1.65;color:${C.ink};">${paras.map((b) => `<p style="margin:0 0 16px 0;">${b}</p>`).join("")}
-<p style="margin:28px 0 0 0;font-size:12px;color:#7E8F92;">Florida Coastal &middot; <a href="${SITE}/?${U("letter")}" style="color:#7E8F92;">floridacoastal.co</a> &middot; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:#7E8F92;">Unsubscribe</a>${ADDRESS ? "<br>" + esc(ADDRESS) : ""}</p></div></body></html>`;
-  const text = paras.join("\n\n").replace(/<br>/g, "\n").replace(/<[^>]+>/g, "");
-  return { subject, html, text };
-}
-
 /* Day 1: A Saturday in your No. 1 town (Airbnb / Zillow: go deep on the one place they care about) */
 export function buildTownEmail(lead, picks) {
   const t = picks[0]; if (!t) return null;
   const name = firstName(lead.name), s = short(t), good = strengths(t), url = `${t.url}?${U("town")}`;
   const subject = `A Saturday in ${s}`;
-  const picksHtml = (t.picks || []).map((p) => `<p style="margin:8px 0 0 0;font-family:${F_BODY};font-size:15px;line-height:1.5;color:${C.ink};"><b style="color:${C.rustDark};">${esc(p.name)}.</b> ${esc(p.note)}</p>`).join("");
+  const picksHtml = (t.picks || []).map((p) => `<p style="margin:0 0 8px 0;font-family:${F_BODY};font-size:15px;line-height:1.55;color:${C.ink};"><b style="font-weight:600;">${esc(p.name)}.</b> ${esc(p.note)}</p>`).join("");
   const rows = `
-<tr><td class="px" style="padding:30px 40px 0 40px;"><a href="${url}"><img src="${t.mail_img}" width="520" alt="${esc(t.name)}" style="display:block;width:100%;max-width:520px;height:auto;border:0;border-radius:12px;"></a></td></tr>
-<tr><td class="px" style="padding:26px 40px 6px 40px;">
-  ${eyebrow(`Your No. 1 town &middot; ${esc(t.coast)}`)}
-  ${h1(`A Saturday in ${esc(s)}`)}
-  ${P(`${name ? `Hi ${esc(name)}. ` : ""}Of your five, ${esc(s)} came out on top. Here's what a regular Saturday there looks like, from people who've spent them on this coast.`)}
-  <p style="margin:0 0 18px 0;font-family:${F_HEAD};font-size:21px;line-height:1.45;color:${C.ink};">${esc(t.day || t.blurb)}</p>
-  ${picksHtml ? `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:${C.tint};border-radius:10px;padding:14px 18px;"><p style="margin:0;font-family:${F_BODY};font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:${C.rust};">Your first weekend</p>${picksHtml}</td></tr></table>` : ""}
-  ${P(`${good.length ? `It scored best for you on <b>${esc(and(good))}</b>. ` : ""}${t.season ? `The season: ${esc(t.season)}. ` : ""}${t.watch ? `The honest part: ${esc(t.watch)}.` : ""}`, "margin-top:18px;")}
-</td></tr>
-<tr><td class="px" style="padding:4px 40px 34px 40px;">${btn(url, `See all of ${esc(s)}`)}
-  ${P(`What would you want to know about ${esc(s)} that a website can't tell you? Hit reply. We answer every one.`, "margin-top:22px;color:" + C.muted + ";")}${sign()}</td></tr>`;
+${row(`${h1(`A Saturday in ${esc(s)}`)}${deck(`${name ? `Hi ${esc(name)}. ` : ""}Of your five, ${esc(s)} came out on top. Here's what a regular Saturday there looks like.`)}`, `30px ${PX} 26px ${PX}`)}
+${photo(t.mail_img, url, t.name, `${esc(t.coast)}, ${esc(t.area)}`)}
+${row(`<p style="margin:0 0 22px 0;font-family:${F_BODY};font-size:20px;line-height:1.5;letter-spacing:-.01em;color:${C.ink};">${esc(t.day || t.blurb)}</p>
+  ${picksHtml ? section("Your first weekend", picksHtml) : ""}
+  ${P(`${good.length ? `It scored best for you on <b style="font-weight:600;">${esc(and(good))}</b>. ` : ""}${t.season ? `The season: ${esc(t.season)}. ` : ""}${t.watch ? `The honest part: ${esc(t.watch)}.` : ""}`, "margin-top:14px;")}`, `22px ${PX} 0 ${PX}`)}
+${row(`${btn(url, `See all of ${esc(s)}`)}
+  ${P(`What would you want to know about ${esc(s)} that a website can't tell you? Hit reply. We answer every one.`, "margin-top:22px;margin-bottom:0;")}${sign()}`, `6px ${PX} 0 ${PX}`)}`;
   const text = `${name ? `Hi ${name}. ` : ""}Of your five, ${s} came out on top. A Saturday there:\n\n${t.day || t.blurb}\n\nThe season: ${t.season}. The honest part: ${t.watch}.\n\n${url}\n\nWhat would you want to know about ${s} that a website can't tell you? Hit reply.\nMark and Betsy Scott`;
-  return { subject, html: shell(subject, `What a regular Saturday in ${s} looks like.`, rows), text };
+  return { subject, html: shell(subject, `What a regular Saturday in ${s} looks like.`, rows, "Your No. 1 town", U("town")), text };
 }
 
 /* Day 5: our story (the founder letter: why we built this, told once, honestly). DAD TO APPROVE. */
@@ -612,24 +621,14 @@ export function buildHonestEmail(lead, picks) {
   const t = picks[0]; if (!t) return null;
   const name = firstName(lead.name), s = short(t);
   const subject = `Before you fall for ${s}`;
-  const checks = [
-    ["Visit in August, not just February.", "The town you love in winter is the town you live in all summer. Go once in the heat.", `${SITE}/articles/february-vs-august.html?${U("honest")}`],
-    ["Check the flood risk for the town, then the address.", `We rank 50 beach towns on flood risk. Then look up the flood zone and evacuation zone for any address you're serious about.`, `${SITE}/articles/flood-risk-rankings.html?${U("honest")}`],
-    ["Get an insurance quote for a real address.", "Homeowners and flood both. It can change the math more than the price of the house.", `${SITE}/articles/insurance.html?${U("honest")}`],
-    ["Drive to the airport at rush hour.", `For ${s} that's ${esc(t.airport || "the nearest airport")}. Do it on a weekday at 5pm.`, null],
-  ].map(([a, b, l]) => `<tr><td valign="top" width="26" style="padding:4px 0 14px 0;font-family:${F_HEAD};font-size:20px;line-height:1.2;color:${C.rust};">&#9744;</td><td style="padding:4px 0 14px 0;font-family:${F_BODY};font-size:15.5px;line-height:1.55;color:${C.ink};"><b>${a}</b> ${b}${l ? ` <a href="${l}" style="color:${C.sea};font-weight:700;">Read more</a>` : ""}</td></tr>`).join("");
-  const watch = picks.filter((x) => x.watch).map((x) => `<tr><td style="padding:6px 0;border-top:1px solid ${C.line};font-family:${F_BODY};font-size:14.5px;line-height:1.5;color:${C.ink};"><b>${esc(short(x))}:</b> ${esc(x.watch)}</td></tr>`).join("");
+  const checks = honestChecks(t).map(([a, b], i) => `<tr><td valign="top" width="30" style="padding:13px 0;border-top:1px solid ${C.hair};"><table role="presentation" cellpadding="0" cellspacing="0" border="0"><tr><td width="12" height="12" style="width:12px;height:12px;border:1.5px solid ${C.ink};border-radius:3px;font-size:0;line-height:0;">&nbsp;</td></tr></table></td><td style="padding:11px 0;border-top:1px solid ${C.hair};font-family:${F_BODY};font-size:15.5px;line-height:1.5;color:${C.ink};"><b style="font-weight:600;">${esc(a)}</b> ${esc(b)}</td></tr>`).join("");
   const rows = `
-<tr><td class="px" style="padding:34px 40px 6px 40px;">
-  ${eyebrow("The honest part")}
-  ${h1(`Before you fall for ${esc(s)}`)}
-  ${P(`${name ? `Hi ${esc(name)}, every` : "Every"} town on your list has a catch. That's not a reason to cross one off, it's a reason to check before you sign. Here's what we'd do first.`)}
-</td></tr>
-<tr><td class="px" style="padding:6px 40px 0 40px;"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${checks}</table></td></tr>
-${watch ? `<tr><td class="px" style="padding:10px 40px 0 40px;">${eyebrow("The heads up on each of your five")}<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${watch}</table></td></tr>` : ""}
-<tr><td class="px" style="padding:22px 40px 34px 40px;">${P("Stuck on one of these? Reply and tell us which. We'll point you to the right source.")}${sign()}</td></tr>`;
-  const text = `${name ? `Hi ${name}, every` : "Every"} town on your list has a catch. Before you fall for ${s}:\n\n1. Visit in August, not just February.\n2. Check the flood risk: ${SITE}/articles/flood-risk-rankings.html\n3. Get an insurance quote for a real address.\n4. Drive to ${t.airport || "the airport"} at rush hour.\n\nStuck on one? Reply and tell us which.\nMark and Betsy Scott`;
-  return { subject, html: shell(subject, "Four things we'd check before signing anything.", rows), text };
+${row(`${h1(`Before you fall for ${esc(s)}`)}${deck(`${name ? `Hi ${esc(name)}, every` : "Every"} town on your list has a catch. That's not a reason to cross one off, it's a reason to check before you sign.`)}`, `30px ${PX} 0 ${PX}`)}
+${row(`<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${checks}</table>`, `20px ${PX} 0 ${PX}`)}
+${row(`${attached("Florida Beach Towns Ranked by Flood Risk", "Our report on 50 beach towns: how much land floods at high tide, how much sits in FEMA's high risk zone, one score for each, and the floods people remember.")}
+  ${P("Stuck on one of these? Reply and tell us which. We'll point you to the right source.", "margin-top:22px;margin-bottom:0;")}${sign()}`, `20px ${PX} 0 ${PX}`)}`;
+  const text = `${name ? `Hi ${name}, every` : "Every"} town on your list has a catch. Before you fall for ${s}:\n\n${honestChecks(t).map(([a, b], i) => `${i + 1}. ${a} ${b}`).join("\n")}\n\nOur flood report is attached.\n\nStuck on one? Reply and tell us which.\nMark and Betsy Scott`;
+  return { subject, html: shell(subject, "Four things we'd check before signing anything. Our flood report is attached.", rows, "The honest part", U("honest")), text, attach: PDFS.flood };
 }
 
 /* Day 14: the next step, by timeline (real estate nurture: hot leads get a person, everyone else gets time) */
@@ -649,23 +648,22 @@ export function buildNextEmail(lead, picks, timeline) {
     `When you're ready to get serious about ${esc(s)}, here's the best way we know to test a town before you buy in it:`,
     `<b>Rent for a few weeks, twice.</b> Once in the busiest month and once in the quietest. Live like you live there: grocery runs, the drive to the doctor, the Saturday thing you'd actually do every week.`,
     `<b>Go to one thing that meets every week.</b> A run club, a church, a pickleball night. If you'd go back, that's a good sign.`,
-    `From here on we'll send one letter a month about the coast: one town worth knowing, one number, one honest heads up. <a href="${url}">${esc(s)} is here</a> whenever you want to look again.`,
+    `From here on we'll send one letter a month about the coast: one town worth knowing, one number, one honest heads up. <a href="${url}" style="color:${C.ink};">${esc(s)} is here</a> whenever you want to look again.`,
     `Mark Scott<br>Florida Coastal`,
   ]);
 }
 
 /* Monthly: The Coast Report (James Clear 3-2-1 style: the same four parts every month, so it's fast to read and easy to write).
-   issue = { month, gem:{town,text,url}, number:{big,text}, heads:{text}, question } . Mark approves each one before it sends. */
+   issue = { month, gem:{town,text,url,img?}, number:{big,text}, heads:{text}, question } . Mark approves each one before it sends. */
 export function buildLetterEmail(lead, issue) {
   const name = firstName(lead.name);
   const subject = `The Coast Report: ${issue.month}`;
-  const part = (k, body) => `<tr><td class="px" style="padding:0 40px 22px 40px;">${eyebrow(k)}${body}</td></tr>`;
+  const part = (k, body, first) => row(section(k, body), `${first ? 30 : 34}px ${PX} 0 ${PX}`);
   const rows = `
-<tr><td class="px" style="padding:32px 40px 10px 40px;">${h1(`The Coast Report`)}${P(`${name ? `Hi ${esc(name)}, here's` : "Here's"} this month on the Florida coast. Four things, two minutes.`)}</td></tr>
-${part("One town worth knowing", `<p style="margin:0 0 6px 0;font-family:${F_HEAD};font-size:24px;color:${C.ink};">${esc(issue.gem.town)}</p>${P(esc(issue.gem.text))}${issue.gem.url ? `<a href="${issue.gem.url}?${U("letter")}" style="font-family:${F_BODY};font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:${C.sea};text-decoration:none;">See the town &rarr;</a>` : ""}`)}
-${part("One number", `<p style="margin:0 0 4px 0;font-family:${F_HEAD};font-size:44px;line-height:1;color:${C.rust};">${esc(issue.number.big)}</p>${P(esc(issue.number.text))}`)}
+${row(`${h1("The Coast Report")}${deck(`${name ? `Hi ${esc(name)}, here's` : "Here's"} this month on the Florida coast. Four things, two minutes.`)}`, `30px ${PX} 0 ${PX}`)}
+${part("One town worth knowing", `<p style="margin:0 0 10px 0;">${townName(esc(issue.gem.town), 28)}</p>${issue.gem.img ? `<img src="${issue.gem.img}" width="476" alt="${esc(issue.gem.town)}" style="display:block;width:100%;max-width:476px;height:auto;border:0;border-radius:12px;margin:0 0 12px 0;">` : ""}${P(esc(issue.gem.text))}${issue.gem.url ? more(`${issue.gem.url}?${U("letter")}`, "See the town") : ""}`, true)}
+${part("One number", `<p style="margin:0 0 8px 0;font-family:${F_BODY};font-weight:500;font-size:48px;line-height:1;letter-spacing:-.03em;color:${C.ink};">${esc(issue.number.big)}</p>${P(esc(issue.number.text))}`)}
 ${part("One honest heads up", P(esc(issue.heads.text)))}
-${part("One question for you", `${P(esc(issue.question))}${P("Hit reply. We read every one, and the best answers end up in next month's letter.", "color:" + C.muted + ";")}`)}
-<tr><td class="px" style="padding:0 40px 32px 40px;">${sign()}</td></tr>`;
-  return { subject, html: shell(subject, `${issue.gem.town}, ${issue.number.big} and one question.`, rows), text: `The Coast Report: ${issue.month}\n\n${issue.gem.town}: ${issue.gem.text}\n\n${issue.number.big}: ${issue.number.text}\n\nHeads up: ${issue.heads.text}\n\n${issue.question} Hit reply.\nMark and Betsy Scott` };
+${part("One question for you", `<p style="margin:0 0 12px 0;font-family:${F_TEXT};font-style:italic;font-size:20px;line-height:1.4;color:${C.ink};">${esc(issue.question)}</p>${P("Hit reply. We read every one, and the best answers end up in next month's letter.", "margin-bottom:0;")}${sign()}`)}`;
+  return { subject, html: shell(subject, `${issue.gem.town}, ${issue.number.big} and one question.`, rows, issue.month, U("letter")), text: `The Coast Report: ${issue.month}\n\n${issue.gem.town}: ${issue.gem.text}\n\n${issue.number.big}: ${issue.number.text}\n\nHeads up: ${issue.heads.text}\n\n${issue.question} Hit reply.\nMark and Betsy Scott` };
 }
