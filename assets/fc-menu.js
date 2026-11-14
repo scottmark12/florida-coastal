@@ -8,7 +8,7 @@
   ready(function(){
     var hdr=document.querySelector('header');if(!hdr)return;
     var links=[].slice.call(hdr.querySelectorAll('a[data-nav]'));if(!links.length)return;
-    var quiz=hdr.querySelector('a:is([href*="quiz-photo"],[href*="find-your-mile"])');
+    var quiz=hdr.querySelector('a:is([href*="quiz-photo"],[href*="find-your-mile"],[href="/quiz"])');
     var quizHref=quiz?quiz.href:new URL('/quiz',location.href).href;
     var townsHref=links[0].href.split('?')[0];
     var logo=hdr.querySelector('img');
@@ -22,7 +22,7 @@
       'header #navtoggle{display:none!important}'+
       '.fcm-btn{display:flex;position:absolute;right:14px;top:50%;transform:translateY(-50%);z-index:60;width:42px;height:42px;border-radius:50%;border:0;align-items:center;justify-content:center;background:rgba(255,255,255,.55);-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.7);color:#16282c;box-shadow:0 2px 10px rgba(0,0,0,.08);cursor:pointer;-webkit-tap-highlight-color:transparent}'+
       '.fcm-btn svg{width:20px;height:20px}'+'.fcm-btn::after{content:"";position:absolute;inset:-3px;border-radius:50%}'+
-      '.fcm-hasbtn a:is([href*="quiz-photo"],[href*="find-your-mile"]):not(.fcm a){display:none!important}'+
+      '.fcm-hasbtn a:is([href*="quiz-photo"],[href*="find-your-mile"],[href="/quiz"]):not(.fcm a){display:none!important}'+
     '}'+
     '.fcm{position:fixed;inset:0;z-index:9999;background:#fff;color:#16282c;display:flex;flex-direction:column;padding:16px 22px 28px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:opacity .22s,transform .22s,visibility 0s .22s;font-family:inherit;overflow:auto}'+
     '.fcm.on{opacity:1;visibility:visible;transform:none;transition:opacity .22s,transform .22s}'+
@@ -59,7 +59,7 @@
 
     if(getComputedStyle(hdr).position=='static')hdr.style.position='relative';
     hdr.querySelectorAll('.fcmaps>a[data-nav=maps]').forEach(function(a){if(!a.querySelector('.fcmaps-c')){var c=document.createElement('i');c.className='fcmaps-c';c.setAttribute('aria-hidden','true');a.appendChild(c)}});
-    hdr.querySelectorAll('a:is([href*="quiz-photo"],[href*="find-your-mile"])').forEach(function(q){q.classList.add('fcq')});
+    hdr.querySelectorAll('a:is([href*="quiz-photo"],[href*="find-your-mile"],[href="/quiz"])').forEach(function(q){q.classList.add('fcq')});
     function tone(){var c=getComputedStyle(hdr).backgroundColor,m=c.match(/[\d.]+/g)||[0,0,0,0],al=m.length>3?+m[3]:1,l=(+m[0]*.3+ +m[1]*.59+ +m[2]*.11);hdr.classList.toggle('fcq-dark',al<.35||l<90)}
     tone();addEventListener('scroll',tone,{passive:true});setTimeout(tone,400);
     hdr.classList.add('fcm-hasbtn');
