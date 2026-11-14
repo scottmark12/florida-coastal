@@ -163,42 +163,43 @@ export function buildEmail(lead, picks, opts = {}) {
 }
 
 /* ------------------------------------------------------------------ PDF */
-/* Nov 13 2026 restyle to match the redesign (home-v2, towns/*-v3, quiz-results-v3):
-   Libre Caslon Display only for town names, DM Sans 400 for text and 500 for labels,
-   ink on white with a greige band, hairlines, pill chips, sky blue for small details only. */
+/* Nov 13 2026, v2: matches Mark's sample (Shortlist-sample-Sarah_2.pdf). Editorial: full bleed cover
+   photo with the title in white caps, Libre Caslon Display caps for titles and numbers, Libre Caslon
+   Text italic for the softer lines, DM Sans for everything you read, ink hairlines, bars for scores. */
 
 const PC = {
-  ink: "#152A2E", white: "#FFFFFF", band: "#F2EFEA", line: "#E4E0D8", muted: "#4E5D60",
-  sky: "#5F8FA3", dotOff: "#DAD5CB",
+  ink: "#152A2E", white: "#FFFFFF", muted: "#6B6E73", line: "#E3E6E8", off: "#E6E7E9", mid: "#B9BCC0",
 };
 
 export async function buildPdf(lead, picks, deps) {
-  const { PDFDocument, rgb, fontkit, fonts, logoPng, loadImage, now = new Date() } = deps;
+  const { PDFDocument, rgb, fontkit, fonts, loadImage, now = new Date() } = deps;
   const ops = deps.ops; // the pdf-lib module: graphics operators, PDFName, PDFString
   const hex = (h) => { const n = parseInt(h.slice(1), 16); return rgb(((n >> 16) & 255) / 255, ((n >> 8) & 255) / 255, (n & 255) / 255); };
   const K = Object.fromEntries(Object.entries(PC).map(([k, v]) => [k, hex(v)]));
 
   const doc = await PDFDocument.create();
   doc.registerFontkit(fontkit);
+  const emb = (b) => doc.embedFont(b, { subset: true });
   const f = {
-    town: await doc.embedFont(fonts.caslonDisplay, { subset: true }), // town names only
-    body: await doc.embedFont(fonts.dmRegular, { subset: true }),
-    med: await doc.embedFont(fonts.dmMedium, { subset: true }),
+    disp: await emb(fonts.caslonDisplay), // titles, town names, numbers
+    text: await emb(fonts.caslonText), // the family note
+    ital: await emb(fonts.caslonItalic), // the softer lines
+    body: await emb(fonts.dmRegular),
+    med: await emb(fonts.dmMedium),
+    semi: await emb(fonts.dmSemiBold),
   };
-  const logo = await doc.embedPng(logoPng);
+  const logo = deps.logoWhitePng ? await doc.embedPng(deps.logoWhitePng) : null;
   const jpg = async (url) => { try { return url ? await doc.embedJpg(await loadImage(url)) : null; } catch (_) { return null; } };
-  const coverImg = await jpg(deps.coverUrl);
+  const coverImg = (await jpg(deps.coverUrl));
   const photos = [];
   for (const t of picks) photos.push(await jpg(t.mail_img));
-  const family = await jpg(`${SITE}/img/mail/our-story.jpg`);
   const name = firstName(lead.name);
   const saved = isSaved(lead);
   doc.setTitle(name ? `${name}'s Florida Shortlist` : "Your Florida Shortlist");
   doc.setAuthor("Florida Coastal");
   doc.setSubject("Your top 5 Florida beach towns");
 
-  const W = 612, H = 792, M = 54, PW = W - 2 * M, R = 8;
-  const total = picks.length + 3;
+  const W = 612, H = 792, M = 45, R = W - M, PW = R - M;
 
   /* ---- drawing helpers ---- */
   const wrap = (text, font, size, width) => {
@@ -206,52 +207,32 @@ export async function buildPdf(lead, picks, deps) {
     for (const w of words) { const t = cur ? cur + " " + w : w; if (font.widthOfTextAtSize(t, size) > width && cur) { lines.push(cur); cur = w; } else cur = t; }
     if (cur) lines.push(cur); return lines;
   };
+  // draws wrapped text from baseline y; returns the last baseline
   const para = (pg, text, x, y, o) => {
-    const lines = wrap(text, o.font, o.size, o.width); const lh = o.lh || o.size * 1.5;
-    lines.forEach((l, i) => pg.drawText(l, { x, y: y - i * lh, size: o.size, font: o.font, color: o.color || K.ink }));
-    return y - lines.length * lh;
+    const lines = wrap(text, o.font, o.size, o.width);
+    lines.forEach((l, i) => pg.drawText(l, { x, y: y - i * o.lh, size: o.size, font: o.font, color: o.color || K.ink }));
+    return y - (Math.max(1, lines.length) - 1) * o.lh;
   };
-  const caps = (pg, text, x, y, size, color, font = f.med, spacing = size * 0.14) => {
-    let cx = x; for (const ch of String(text).toUpperCase()) { pg.drawText(ch, { x: cx, y, size, font, color }); cx += font.widthOfTextAtSize(ch, size) + spacing; }
+  const SP = 0.16; // letter spacing for small caps labels, in em
+  const capsW = (text, size, font = f.med) => [...String(text).toUpperCase()].reduce((a, ch) => a + font.widthOfTextAtSize(ch, size) + size * SP, 0);
+  const caps = (pg, text, x, y, size, color = K.ink, font = f.med) => {
+    let cx = x; for (const ch of String(text).toUpperCase()) { pg.drawText(ch, { x: cx, y, size, font, color }); cx += font.widthOfTextAtSize(ch, size) + size * SP; }
     return cx;
   };
-  const rule = (pg, x1, x2, y, color = K.line, t = 0.6) => pg.drawLine({ start: { x: x1, y }, end: { x: x2, y }, thickness: t, color });
-  // rounded rectangle path (x, y = bottom left)
-  const rrPath = (x, y, w, h, r) => {
-    r = Math.min(r, w / 2, h / 2); const k = r * 0.5523;
-    return [
-      ops.moveTo(x + r, y), ops.lineTo(x + w - r, y), ops.appendBezierCurve(x + w - r + k, y, x + w, y + r - k, x + w, y + r),
-      ops.lineTo(x + w, y + h - r), ops.appendBezierCurve(x + w, y + h - r + k, x + w - r + k, y + h, x + w - r, y + h),
-      ops.lineTo(x + r, y + h), ops.appendBezierCurve(x + r - k, y + h, x, y + h - r + k, x, y + h - r),
-      ops.lineTo(x, y + r), ops.appendBezierCurve(x, y + r - k, x + r - k, y, x + r, y), ops.closePath(),
-    ];
-  };
-  const rgbOf = (c) => [c.red, c.green, c.blue];
-  const roundRect = (pg, x, y, w, h, r, { fill, stroke, width = 0.8 } = {}) => {
-    const o = [ops.pushGraphicsState()];
-    if (fill) o.push(ops.setFillingRgbColor(...rgbOf(fill)));
-    if (stroke) o.push(ops.setStrokingRgbColor(...rgbOf(stroke)), ops.setLineWidth(width));
-    o.push(...rrPath(x, y, w, h, r), fill && stroke ? ops.fillAndStroke() : fill ? ops.fill() : ops.stroke(), ops.popGraphicsState());
-    pg.pushOperators(...o);
-  };
-  // draw an image filling a box, cropped to it (CSS object-fit: cover), with rounded corners
-  const cover = (pg, img, x, y, w, h, { r = R, focusY = 0.5 } = {}) => {
+  const capsRight = (pg, text, y, size, color = K.ink) => caps(pg, text, R - capsW(text, size), y, size, color);
+  const right = (pg, text, xr, y, size, font, color = K.ink) => pg.drawText(text, { x: xr - font.widthOfTextAtSize(text, size), y, size, font, color });
+  const rule = (pg, y, { x1 = M, x2 = R, color = K.ink, t = 1 } = {}) => pg.drawLine({ start: { x: x1, y }, end: { x: x2, y }, thickness: t, color });
+  const hair = (pg, y, x1 = M) => rule(pg, y, { x1, color: K.line, t: 0.6 });
+  // an image filling a box, cropped to it (CSS object-fit: cover)
+  const cover = (pg, img, x, y, w, h, focusY = 0.5) => {
     const s = Math.max(w / img.width, h / img.height), iw = img.width * s, ih = img.height * s;
-    pg.pushOperators(ops.pushGraphicsState(), ...(r ? rrPath(x, y, w, h, r) : [ops.rectangle(x, y, w, h)]), ops.clip(), ops.endPath());
+    pg.pushOperators(ops.pushGraphicsState(), ops.rectangle(x, y, w, h), ops.clip(), ops.endPath());
     pg.drawImage(img, { x: x - (iw - w) / 2, y: y - (ih - h) * (1 - focusY), width: iw, height: ih });
     pg.pushOperators(ops.popGraphicsState());
   };
-  // pill chip; returns its width
-  const chip = (pg, text, x, y, { filled = false, size = 8.5 } = {}) => {
-    const tw = f.med.widthOfTextAtSize(text, size), w = tw + 20, h = size + 11;
-    roundRect(pg, x, y, w, h, h / 2, filled ? { fill: K.ink } : { stroke: K.line, width: 0.9 });
-    pg.drawText(text, { x: x + 10, y: y + (h - size * 0.72) / 2, size, font: f.med, color: filled ? K.white : K.ink });
-    return w;
-  };
-  const dots = (pg, x, y, n, r = 2.8, gap = 9) => { for (let i = 0; i < 5; i++) pg.drawCircle({ x: x + i * gap, y, size: r, color: i < n ? K.ink : K.dotOff }); };
   // a clickable area (link annotation); skipped quietly if the runtime lacks the low level pdf-lib exports
   const linkTo = (pg, x, y, w, h, url) => {
-    if (!ops.PDFName || !ops.PDFString) return;
+    if (!ops.PDFName || !ops.PDFString || !pg.node || !doc.context) return;
     try {
       const a = doc.context.obj({ Type: "Annot", Subtype: "Link", Rect: [x, y, x + w, y + h], Border: [0, 0, 0],
         A: { Type: "Action", S: "URI", URI: ops.PDFString.of(url) } });
@@ -259,217 +240,182 @@ export async function buildPdf(lead, picks, deps) {
     } catch (_) {}
   };
   const townUrl = (t) => `${t.url || SITE + "/towns/" + t.id + ".html"}?utm_source=pdf&utm_campaign=top5`;
-  // the arch mark, cut from the full logo so no separate file is needed
-  const LOGO_MARK = 305 / 2198;
-  const markAt = (pg, x, y, h) => {
-    const lw = h * logo.width / logo.height;
-    pg.pushOperators(ops.pushGraphicsState(), ops.rectangle(x, y, lw * LOGO_MARK, h), ops.clip(), ops.endPath());
-    pg.drawImage(logo, { x, y, width: lw, height: h });
-    pg.pushOperators(ops.popGraphicsState());
+  let pageNo = 1;
+  const header = (pg, label) => capsRight(pg, label, 758, 6.75, K.muted);
+  const footer = (pg, note) => {
+    if (note) pg.drawText(note, { x: M, y: 50, size: 8, font: f.ital, color: K.muted });
+    const l = "YOUR FLORIDA SHORTLIST  ·  FLORIDACOASTAL.CO";
+    caps(pg, l, M, 30, 6.75);
+    linkTo(pg, M, 26, capsW(l, 6.75), 12, `${SITE}/?utm_source=pdf&utm_campaign=top5`);
+    right(pg, String(pageNo), R, 29, 11, f.disp);
   };
-  const header = (pg, n, label) => {
-    markAt(pg, M, H - 62, 16);
-    caps(pg, label, M + 22, H - 56.5, 7.5, K.ink);
-    const r = `${n} of ${total}`; pg.drawText(r, { x: W - M - f.body.widthOfTextAtSize(r, 8.5), y: H - 56.5, size: 8.5, font: f.body, color: K.muted });
-    rule(pg, M, W - M, H - 74);
+  // bars for a 1 to 5 score
+  const bars = (pg, x, y, n, { w = 13, h = 4.5, gap = 2.5, on = K.ink } = {}) => {
+    for (let i = 0; i < 5; i++) pg.drawRectangle({ x: x + i * (w + gap), y, width: w, height: h, color: i < n ? on : K.off });
   };
-  const footer = (pg, text, url) => {
-    rule(pg, M, W - M, 50);
-    pg.drawText(text, { x: M, y: 34, size: 8, font: f.body, color: K.muted });
-    const r = "floridacoastal.co", rw = f.med.widthOfTextAtSize(r, 8);
-    pg.drawText(r, { x: W - M - rw, y: 34, size: 8, font: f.med, color: K.sky });
-    linkTo(pg, W - M - rw, 30, rw, 14, `${SITE}/?utm_source=pdf&utm_campaign=top5`);
-    if (url) linkTo(pg, M, 30, f.body.widthOfTextAtSize(text, 8), 14, url);
-  };
+  const fitSize = (text, font, size, width, min) => { let s = size; while (s > min && font.widthOfTextAtSize(text, s) > width) s -= 0.5; return s; };
   const nWords = ["", "One town", "Two towns", "Three towns", "Four towns", "Five towns"];
 
-  /* --- cover --- */
+  /* --- cover: full bleed photo, title in white --- */
   {
     const pg = doc.addPage([W, H]);
-    const lh = 22; pg.drawImage(logo, { x: M, y: H - 40 - lh, width: lh * logo.width / logo.height, height: lh });
-    const when = monthYear(now), ww = f.body.widthOfTextAtSize(when, 8.5);
-    pg.drawText(when, { x: W - M - ww, y: H - 54, size: 8.5, font: f.body, color: K.muted });
-    const ph = Math.min(440, 300 + Math.max(0, 5 - picks.length) * 34 + (saved ? 36 : 0)), py = H - 84 - ph;
     const cimg = coverImg || photos[0];
-    if (cimg) cover(pg, cimg, M, py, PW, ph);
-    else roundRect(pg, M, py, PW, ph, R, { fill: K.band });
-
-    let y = py - 40;
-    caps(pg, saved ? "Saved from your visit" : "Your Florida Shortlist", M, y, 8, K.muted);
-    y -= 36;
-    const nWord = nWords[picks.length] || "Your towns";
-    const head = saved ? [`${nWord} you saved.`] : [`${nWord} that fit`, "how you want to live."];
-    head.forEach((l, i) => pg.drawText(l, { x: M, y: y - i * 36, size: 31, font: f.med, color: K.ink }));
-    y -= (head.length - 1) * 36 + 26;
-    pg.drawText(name ? `Prepared for ${name}` : "Prepared for you", { x: M, y, size: 10.5, font: f.body, color: K.muted });
-    y -= 26;
-
-    // the list: one row per town, hairlines between, the town name in Caslon
-    const rowH = Math.min(34, (y - 66) / Math.max(1, picks.length));
-    rule(pg, M, W - M, y);
-    picks.forEach((t, i) => {
-      const top = y - i * rowH, base = top - rowH / 2 - 5;
-      const num = String(i + 1), nw = f.med.widthOfTextAtSize(num, 9);
-      pg.drawCircle({ x: M + 9, y: base + 3.3, size: 9, borderColor: K.line, borderWidth: 0.9 });
-      pg.drawText(num, { x: M + 9 - nw / 2, y: base, size: 9, font: f.med, color: K.ink });
-      pg.drawText(t.name, { x: M + 30, y: base - 1, size: 17, font: f.town, color: K.ink });
-      const meta = `${t.coast}  ·  ${t.area}`;
-      const mw = f.body.widthOfTextAtSize(meta, 8.5);
-      pg.drawText(meta, { x: W - M - mw, y: base + 1, size: 8.5, font: f.body, color: K.muted });
-      rule(pg, M, W - M, top - rowH);
-      linkTo(pg, M, top - rowH, PW, rowH, townUrl(t));
-    });
-    footer(pg, saved ? "Saved from your visit to floridacoastal.co" : "Matched from your answers on Find Your Mile");
+    if (cimg) cover(pg, cimg, 0, 0, W, H);
+    pg.drawRectangle({ x: 0, y: 0, width: W, height: H, color: rgb(0, 0, 0), opacity: cimg ? 0.3 : 1 });
+    if (logo) pg.drawImage(logo, { x: M, y: 740, width: 112, height: 112 * logo.height / logo.width });
+    capsRight(pg, saved ? "Saved from your visit" : "Your Florida Shortlist", 744, 7, K.white);
+    rule(pg, 734, { color: K.white });
+    const nWord = (nWords[picks.length] || "Your towns").toUpperCase();
+    const head = saved ? [nWord, "YOU SAVED"] : [nWord, picks.length === 1 ? "THAT FITS YOU" : "THAT FIT YOU"];
+    const hs = Math.min(...head.map((l) => fitSize(l, f.disp, 66, PW, 40)));
+    head.forEach((l, i) => pg.drawText(l, { x: M, y: 664 - i * hs * 0.9, size: hs, font: f.disp, color: K.white }));
+    const when = monthYear(now);
+    const sub = `Prepared for ${name || "you"}, ${when}. The honest details on each town${picks.length > 1 ? ", and all of them side by side" : ""}.`;
+    para(pg, sub, M, 664 - (head.length - 1) * hs * 0.9 - 34, { font: f.ital, size: 13.5, width: 290, lh: 18.5, color: K.white });
+    pg.drawText("Mark and Betsy Scott", { x: M, y: 36, size: 11, font: f.ital, color: K.white });
+    caps(pg, "floridacoastal.co", R - capsW("floridacoastal.co", 6.75), 37, 6.75, K.white);
+    linkTo(pg, R - capsW("floridacoastal.co", 6.75), 33, capsW("floridacoastal.co", 6.75), 12, `${SITE}/?utm_source=pdf&utm_campaign=top5`);
   }
 
   /* --- one page per town --- */
-  const NOOP = { drawText() {}, drawRectangle() {}, drawLine() {}, drawCircle() {}, drawImage() {}, pushOperators() {}, node: { addAnnot() {} } };
+  const NOOP = { drawText() {}, drawRectangle() {}, drawLine() {}, drawImage() {}, pushOperators() {} };
   picks.forEach((t, i) => {
-    // measure first, then pick the tallest photo that still fits above the footer
-    let ph = 250;
-    while (ph > 130 && townPage(NOOP, t, i, ph) < 64) ph -= 10;
-    const pg = doc.addPage([W, H]);
-    townPage(pg, t, i, ph);
+    // measure first; if the page runs long, trim the photo until it fits above the footer
+    let ph = 240;
+    while (ph > 150 && townPage(NOOP, t, i, ph) < 64) ph -= 10;
+    pageNo = i + 2;
+    townPage(doc.addPage([W, H]), t, i, ph);
   });
   function townPage(pg, t, i, ph) {
     const real = pg !== NOOP;
-    header(pg, i + 2, "The Shortlist");
-    const py = H - 92 - ph;
-    if (photos[i]) cover(pg, photos[i], M, py, PW, ph);
-    else roundRect(pg, M, py, PW, ph, R, { fill: K.band });
+    header(pg, `Town No. ${i + 1}`);
+    const top = 742, py = top - ph;
+    if (photos[i]) cover(pg, photos[i], 0, py, W, ph);
+    else pg.drawRectangle({ x: 0, y: py, width: W, height: ph, color: K.off });
+    const lift = 240 - ph; // everything below moves up when the photo is trimmed
+    const Y = (y) => y + lift;
+    pg.drawText([t.coast, t.area].filter(Boolean).join(", "), { x: M, y: Y(489), size: 8, font: f.ital, color: K.muted });
 
-    // chips: rank, then the coast
-    let y = py - 32;
-    const cw = chip(pg, `No. ${i + 1}`, M, y, { filled: true });
-    chip(pg, t.coast, M + cw + 6, y);
-    y -= 38;
-    const nameSize = f.town.widthOfTextAtSize(t.name, 36) > PW ? 30 : 36;
-    pg.drawText(t.name, { x: M, y, size: nameSize, font: f.town, color: K.ink });
-    y -= 18;
-    pg.drawText(t.area, { x: M, y, size: 9.5, font: f.body, color: K.muted });
-    y -= 22;
-    y = para(pg, t.blurb, M, y, { font: f.body, size: 12, width: PW, color: K.ink, lh: 17 });
-    if (t.day) { y -= 4; y = para(pg, t.day, M, y, { font: f.body, size: 10, width: PW, color: K.muted, lh: 14.5 }); }
+    // the rank, then the name in caps
+    const num = String(i + 1);
+    pg.drawText(num, { x: 43, y: Y(436), size: 60, font: f.disp, color: K.ink });
+    const nx = 43 + f.disp.widthOfTextAtSize(num, 60) + 14;
+    const nm = String(t.name).toUpperCase();
+    pg.drawText(nm, { x: nx, y: Y(438), size: fitSize(nm, f.disp, 30, R - nx, 18), font: f.disp, color: K.ink });
+    rule(pg, Y(426));
 
-    // stat row, like the town page: four cells split by hairlines
-    y -= 10;
-    rule(pg, M, W - M, y);
+    let y = para(pg, t.blurb, M, Y(406), { font: f.body, size: 12, width: PW, lh: 16.5 });
+    if (t.day) y = para(pg, t.day, M, y - 20.5, { font: f.ital, size: 10.5, width: PW, lh: 14.5 });
+
+    // the four facts
+    const lab = y - 41.5;
+    rule(pg, lab + 15);
+    const colX = [45, 179.5, 314, 448.5];
     const facts = [["Median home", t.price || "Ask us for current prices"], ["Airport", t.airport], ["Season", t.season], ["Heads up", t.watch]];
-    const cellW = PW / 4, top = y; let low = y;
-    facts.forEach(([lab, val], k) => {
-      const x = M + k * cellW + (k ? 12 : 0), w = cellW - (k ? 22 : 12);
-      caps(pg, lab, x, top - 18, 6.8, K.muted);
-      let end;
-      if (k === 0 && t.price && t.price.length < 12) { pg.drawText(t.price, { x, y: top - 40, size: 19, font: f.med, color: K.ink }); end = top - 46; }
-      else end = para(pg, val || "", x, top - 33, { font: f.body, size: 9.2, width: w, color: K.ink, lh: 12.5 });
-      low = Math.min(low, end);
+    let low = lab;
+    facts.forEach(([l, v], k) => {
+      caps(pg, l, colX[k], lab, 6.75);
+      if (k === 0 && t.price && t.price.length < 10) { pg.drawText(t.price, { x: 44, y: lab - 27, size: 26, font: f.disp, color: K.ink }); low = Math.min(low, lab - 32.8); }
+      else low = Math.min(low, para(pg, v || "", colX[k], lab - 14, { font: f.body, size: 9, width: 118, lh: 12.2 }));
     });
-    const bottom = low - 6;
-    for (let k = 1; k < 4; k++) pg.drawLine({ start: { x: M + k * cellW, y: top }, end: { x: M + k * cellW, y: bottom }, thickness: 0.6, color: K.line });
-    y = bottom;
-    rule(pg, M, W - M, y);
+    hair(pg, low - 20.2);
 
-    // scorecard
-    y -= 26;
-    pg.drawText("How it scores", { x: M, y, size: 12, font: f.med, color: K.ink });
-    const key = "Out of 5", kw = f.body.widthOfTextAtSize(key, 8);
-    pg.drawText(key, { x: W - M - kw, y: y + 1, size: 8, font: f.body, color: K.muted });
-    y -= 20;
-    const sc = t.scores || {}, half = (PW - 28) / 2;
-    SCORE_LABELS.forEach(([k, lab], j) => {
-      const col = j % 2, row = Math.floor(j / 2);
-      const x = M + col * (half + 28), yy = y - row * 17;
-      pg.drawText(lab, { x, y: yy, size: 9.5, font: f.body, color: K.ink });
-      dots(pg, x + half - 40, yy + 3.2, sc[k] || 0);
+    // how it scores, two columns
+    y = low - 40.2;
+    caps(pg, "How it scores", M, y, 6.75);
+    right(pg, "out of 5", R, y, 8.5, f.ital, K.muted);
+    y -= 17;
+    const sc = t.scores || {};
+    SCORE_LABELS.forEach(([k, label], j) => {
+      const x = j % 2 ? 321 : M, xr = j % 2 ? R : 291, yy = y - Math.floor(j / 2) * 16.5, v = sc[k] || 0;
+      pg.drawText(label, { x, y: yy, size: 9.25, font: f.body, color: K.ink });
+      bars(pg, xr - 96, yy + 1, v);
+      right(pg, String(v), xr, yy - 0.5, 11, f.disp);
     });
-    y -= 4 * 17 + 14;
+    y -= 4 * 16.5;
 
-    // first weekend, on the greige band
+    // your first weekend
     if (t.picks && t.picks.length) {
-      const inner = PW - 40;
-      const blocks = t.picks.map((p) => wrap(`${p.name}. ${p.note}`, f.body, 9.8, inner));
-      const bh = 40 + blocks.reduce((a, b) => a + b.length * 13.5 + 5, 0);
-      const by = y - bh;
-      roundRect(pg, M, by, PW, bh, R, { fill: K.band });
-      let yy = by + bh - 22;
-      caps(pg, "Your first weekend", M + 20, yy, 7, K.muted);
-      yy -= 18;
+      rule(pg, y - 14);
+      y -= 32;
+      caps(pg, "Your first weekend", M, y, 6.75);
+      const tx = 175, tw = 378;
       t.picks.forEach((p, k) => {
-        blocks[k].forEach((l, li) => {
-          const nm = p.name + ".";
+        // wrap the whole line as plain text, then set the name in semibold
+        const nm = `${p.name}.`, lines = wrap(`${nm} ${p.note || ""}`, f.body, 9.75, tw);
+        lines.forEach((l, li) => {
           if (li === 0 && l.startsWith(nm)) {
-            pg.drawText(nm, { x: M + 20, y: yy, size: 9.8, font: f.med, color: K.ink });
-            pg.drawText(l.slice(nm.length), { x: M + 20 + f.med.widthOfTextAtSize(nm, 9.8), y: yy, size: 9.8, font: f.body, color: K.ink });
-          } else pg.drawText(l, { x: M + 20, y: yy, size: 9.8, font: f.body, color: K.ink });
-          yy -= 13.5;
+            pg.drawText(nm, { x: tx, y, size: 9.75, font: f.semi, color: K.ink });
+            pg.drawText(l.slice(nm.length).trimStart(), { x: tx + f.semi.widthOfTextAtSize(nm + " ", 9.75), y, size: 9.75, font: f.body, color: K.ink });
+          } else pg.drawText(l, { x: tx, y, size: 9.75, font: f.body, color: K.ink });
+          if (li < lines.length - 1) y -= 13.5;
         });
-        yy -= 5;
+        if (k < t.picks.length - 1) y -= 18.5;
       });
-      y = by;
     }
-    if (real) linkTo(pg, M, py, PW, ph, townUrl(t));
-    footer(pg, `Full town guide: floridacoastal.co/towns/${t.id}`, townUrl(t));
+    if (real) { linkTo(pg, 0, py, W, ph, townUrl(t)); footer(pg); }
     return y;
   }
 
   /* --- side by side --- */
   {
+    pageNo = picks.length + 2;
     const pg = doc.addPage([W, H]);
-    header(pg, picks.length + 2, "Side by side");
-    let y = H - 116;
-    pg.drawText(picks.length === 5 ? "Your five, side by side" : "Side by side", { x: M, y, size: 24, font: f.med, color: K.ink });
-    y -= 22;
-    para(pg, "Scores run 1 to 5 and rate what each town offers. The best in each row is marked in blue.", M, y, { font: f.body, size: 10, width: PW, color: K.muted });
-    y -= 28;
-    const labW = 112, cw = (PW - labW) / Math.max(1, picks.length), gut = 8;
-    // column heads: a small photo, the rank and the name
-    const th = 52;
+    header(pg, "Side by side");
+    const title = picks.length === 5 ? "YOUR FIVE, SIDE BY SIDE" : picks.length === 1 ? "YOUR TOWN, AT A GLANCE" : "SIDE BY SIDE";
+    pg.drawText(title, { x: M, y: 700, size: fitSize(title, f.disp, 36, PW, 24), font: f.disp, color: K.ink });
+    rule(pg, 686);
+    pg.drawText("Scores run 1 to 5 and rate what each town offers. The best in each row is in bold.", { x: M, y: 666, size: 10.5, font: f.ital, color: K.ink });
+    const x0 = 169, cw = (R - x0) / 5; // same column width whatever the count, so it reads like a table
+    const colX = (i) => x0 + i * cw;
+    let lines = 1;
     picks.forEach((t, i) => {
-      const x = M + labW + i * cw;
-      if (photos[i]) cover(pg, photos[i], x, y - th, cw - gut, th, { r: 6 });
-      else roundRect(pg, x, y - th, cw - gut, th, 6, { fill: K.band });
-      caps(pg, `No. ${i + 1}`, x, y - th - 14, 6.5, K.muted);
-      wrap(t.name, f.town, 12, cw - gut).slice(0, 2).forEach((l, k) => pg.drawText(l, { x, y: y - th - 29 - k * 13, size: 12, font: f.town, color: K.ink }));
-      linkTo(pg, x, y - th - 46, cw - gut, th + 46, townUrl(t));
+      pg.drawText(String(i + 1), { x: colX(i), y: 626, size: 22, font: f.disp, color: K.ink });
+      const nl = wrap(t.name, f.med, 9.5, cw - 8).slice(0, 3);
+      nl.forEach((l, k) => pg.drawText(l, { x: colX(i), y: 610 - k * 12, size: 9.5, font: f.med, color: K.ink }));
+      lines = Math.max(lines, nl.length);
+      linkTo(pg, colX(i), 594, cw - 8, 44, townUrl(t));
     });
-    const nameLines = Math.max(...picks.map((t) => Math.min(2, wrap(t.name, f.town, 12, cw - gut).length)));
-    y -= th + 29 + (nameLines - 1) * 13 + 24;
-    rule(pg, M, W - M, y + 14, K.ink, 0.8);
-    const rows = [["Median home", (t) => t.price || "Ask us"], ...SCORE_LABELS.map(([k, l]) => [l, k])];
-    rows.forEach(([lab, key], r) => {
-      const rh = r === 0 ? 30 : 24;
-      pg.drawText(lab, { x: M, y: y + 2 - (r === 0 ? 4 : 0), size: 9.3, font: f.med, color: K.ink });
-      if (typeof key === "function") {
-        picks.forEach((t, i) => para(pg, key(t), M + labW + i * cw, y - 2, { font: f.med, size: 11, width: cw - gut, color: K.ink, lh: 12 }));
-      } else {
-        const vals = picks.map((t) => (t.scores || {})[key] || 0); const best = Math.max(...vals);
-        picks.forEach((t, i) => {
-          const v = vals[i], x = M + labW + i * cw;
-          dots(pg, x + 3, y + 5, v, 2.6, 8);
-          pg.drawText(String(v), { x: x + 47, y: y + 2, size: 9.3, font: v === best ? f.med : f.body, color: v === best ? K.sky : K.muted });
-        });
-      }
-      y -= rh;
-      rule(pg, M, W - M, y + 14);
+    let y = 610 - (lines - 1) * 12 - 4; // 594 for two line names
+    rule(pg, y);
+    pg.drawText("Median home", { x: M, y: y - 23, size: 9.25, font: f.body, color: K.ink });
+    picks.forEach((t, i) => pg.drawText(t.price || "Ask us", { x: colX(i), y: y - 25, size: t.price ? 16 : 9.5, font: t.price ? f.disp : f.body, color: K.ink }));
+    y -= 42;
+    hair(pg, y);
+    SCORE_LABELS.forEach(([k, label]) => {
+      const vals = picks.map((t) => (t.scores || {})[k] || 0), best = Math.max(...vals);
+      pg.drawText(label, { x: M, y: y - 15, size: 9.25, font: f.body, color: K.ink });
+      picks.forEach((t, i) => {
+        const v = vals[i], top = v === best;
+        pg.drawText(String(v), { x: colX(i), y: y - 16, size: 10.5, font: top ? f.semi : f.body, color: top ? K.ink : K.muted });
+        bars(pg, colX(i) + 14, y - 14, v, { w: 6, h: 4, gap: 2, on: top ? K.ink : K.mid });
+      });
+      y -= 26;
+      hair(pg, y);
     });
-    y -= 22;
-    caps(pg, "The airport drive", M, y, 7, K.muted);
-    y -= 17;
+    y -= 32;
+    rule(pg, y);
+    y -= 18;
+    caps(pg, "The airport drive", M, y, 6.75);
+    y -= 18;
     picks.forEach((t, i) => {
-      const lead = `${i + 1}.  ${t.name}`;
-      pg.drawText(lead, { x: M, y, size: 9.3, font: f.med, color: K.ink });
-      y = para(pg, t.airport, M + 150, y, { font: f.body, size: 9.3, width: PW - 150, color: K.ink, lh: 12.5 }) - 4;
+      pg.drawText(String(i + 1), { x: M, y: y - 1, size: 12, font: f.disp, color: K.ink });
+      const nl = wrap(t.name, f.med, 9.5, 100);
+      nl.forEach((l, k) => pg.drawText(l, { x: 63, y: y - k * 13, size: 9.5, font: f.med, color: K.ink }));
+      const end = para(pg, t.airport || "", x0, y, { font: f.body, size: 9.5, width: R - x0, lh: 13 });
+      y = Math.min(y - (nl.length - 1) * 13, end) - 21;
     });
     footer(pg, "Scores last checked October 2026. Details should be confirmed locally.");
   }
 
-  /* --- before you visit + note --- */
+  /* --- before you visit + the family note --- */
   {
+    pageNo = picks.length + 3;
     const pg = doc.addPage([W, H]);
-    header(pg, total, "Before you visit");
-    let y = H - 116;
-    pg.drawText("Before you fall for an address", { x: M, y, size: 24, font: f.med, color: K.ink });
-    y -= 34;
+    header(pg, "Before you visit");
+    pg.drawText("BEFORE YOU FALL", { x: M, y: 700, size: 40, font: f.disp, color: K.ink });
+    pg.drawText("FOR AN ADDRESS", { x: M, y: 662.8, size: 40, font: f.disp, color: K.ink });
+    rule(pg, 648.8);
     const items = [
       ["Visit in August, not just February.", "The town you love in winter is the town you live in all summer. Go once in the heat."],
       ["Get an insurance quote for a real address.", "Homeowners and flood both. It can change the math more than the price of the house."],
@@ -478,44 +424,22 @@ export async function buildPdf(lead, picks, deps) {
       ["Spend a Saturday morning at the market.", "It's the fastest way to see who lives there and how the town feels when it isn't on vacation."],
       ["Ask a local.", "Reply to your email with any question. We'll give you the honest answer."],
     ];
-    rule(pg, M, W - M, y + 18);
-    items.forEach(([a, b]) => {
-      roundRect(pg, M, y - 3, 12, 12, 3, { stroke: K.ink, width: 0.9 });
-      pg.drawText(a, { x: M + 26, y, size: 11, font: f.med, color: K.ink });
-      y = para(pg, b, M + 26, y - 15, { font: f.body, size: 9.8, width: PW - 26, color: K.muted, lh: 13.5 });
-      y -= 6;
-      rule(pg, M, W - M, y + 6);
-      y -= 14;
+    let y = 622.8;
+    items.forEach(([a, b], k) => {
+      pg.drawRectangle({ x: M, y: y - 2, width: 10, height: 10, borderColor: K.ink, borderWidth: 0.9 });
+      pg.drawText(a, { x: 69, y, size: 11.5, font: f.med, color: K.ink });
+      const end = para(pg, b, 69, y - 16, { font: f.body, size: 9.75, width: R - 69, color: K.muted, lh: 13.5 });
+      if (k < items.length - 1) { hair(pg, end - 19.5, 69); y = end - 35.5; }
     });
 
-    // the note from the family, on the greige band, with their photo
-    const bh = 196, by = Math.max(70, y - 14 - bh);
-    roundRect(pg, M, by, PW, bh, R, { fill: K.band });
-    const pr = 34, px = M + 28, tx = px + pr * 2 + 22, tw = W - M - 28 - tx;
-    let ny = by + bh - 34;
-    caps(pg, "From our family", tx, ny, 7, K.muted);
-    if (family) {
-      const cx = px + pr, cy = ny - pr + 6;
-      const k = pr * 0.5523;
-      pg.pushOperators(ops.pushGraphicsState(),
-        ops.moveTo(cx + pr, cy), ops.appendBezierCurve(cx + pr, cy + k, cx + k, cy + pr, cx, cy + pr),
-        ops.appendBezierCurve(cx - k, cy + pr, cx - pr, cy + k, cx - pr, cy), ops.appendBezierCurve(cx - pr, cy - k, cx - k, cy - pr, cx, cy - pr),
-        ops.appendBezierCurve(cx + k, cy - pr, cx + pr, cy - k, cx + pr, cy), ops.closePath(), ops.clip(), ops.endPath());
-      pg.drawImage(family, { x: cx - pr, y: cy - pr, width: pr * 2, height: pr * 2 });
-      pg.pushOperators(ops.popGraphicsState());
-    }
-    ny -= 26;
-    ny = para(pg, "In 2005 we had two weeks to pick a Florida town to retire and raise three kids. We built Florida Coastal so you can make this choice with more than two weeks and a guess.", tx, ny,
-      { font: f.body, size: 13, width: tw, color: K.ink, lh: 19 });
-    ny -= 8;
-    pg.drawText("Mark and Betsy Scott", { x: tx, y: ny, size: 10.5, font: f.med, color: K.ink });
-    ny -= 15;
-    pg.drawText("Coming to this coast for more than 20 years", { x: tx, y: ny, size: 9, font: f.body, color: K.muted });
-    // pill button
-    const bt = "hello@floridacoastal.co", bw = f.med.widthOfTextAtSize(bt, 9.5) + 32, bhh = 26, bx = tx, byy = by + 22;
-    roundRect(pg, bx, byy, bw, bhh, bhh / 2, { fill: K.ink });
-    pg.drawText(bt, { x: bx + 16, y: byy + 9, size: 9.5, font: f.med, color: K.white });
-    linkTo(pg, bx, byy, bw, bhh, "mailto:hello@floridacoastal.co?subject=Question%20about%20my%20Shortlist");
+    rule(pg, 250);
+    caps(pg, "From our family", M, 230, 6.75);
+    let ny = para(pg, "In 2005 we had two weeks to pick a Florida town to retire and raise three kids. We built Florida Coastal so you can make this choice with more than two weeks and a guess.", M, 200,
+      { font: f.text, size: 17, width: 475, lh: 23 });
+    pg.drawText("Mark and Betsy Scott", { x: M, y: ny - 33, size: 12, font: f.ital, color: K.ink });
+    const contact = "Coming to this coast for more than 20 years  ·  ", mail = "hello@floridacoastal.co";
+    pg.drawText(contact + mail, { x: M, y: ny - 49, size: 9, font: f.body, color: K.muted });
+    linkTo(pg, M + f.body.widthOfTextAtSize(contact, 9), ny - 52, f.body.widthOfTextAtSize(mail, 9), 12, "mailto:hello@floridacoastal.co?subject=Question%20about%20my%20Shortlist");
     footer(pg, "Rules and rates change. Confirm the details for any address with the source.");
   }
 
