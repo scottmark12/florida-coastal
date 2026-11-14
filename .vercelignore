@@ -3,3 +3,6 @@ drafts/
 SOURCE.md
 mail/fc-send.ts.txt
 mail/render.js
+
+tests/
+supabase/
