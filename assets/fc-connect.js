@@ -6,10 +6,21 @@
 (function () {
   var API = 'https://npryrsprxlulqialxbap.supabase.co/rest/v1/',
     KEY = 'sb_publishable_2E5Ec9fdnr_aoTZkeMyG4Q_GwTxtrK0',
-    BOT = /bot\b|bot\/|crawl|spider|slurp|headless|lighthouse|pagespeed|facebookexternalhit/i,
+    BOT = /bot\b|bot\/|crawl|spider|slurp|preview|headless|lighthouse|pagespeed|facebookexternalhit|facebookcatalog|meta-externalagent|embedly|whatsapp|telegram|discord|skypeuripreview|pinterest|google-inspectiontool|googleother|mediapartners|yandex|baidu|semrush|ahrefs|petal|bytespider|chatgpt-user|oai-searchbot|claude|anthropic|perplexity|uptime|pingdom|monitor|python|curl|wget|go-http|java\/|node-fetch|axios|okhttp|phantom|puppeteer|playwright|electron/i,
     LIVE = /(^|\.)floridacoastal\.co$/.test(location.hostname) && !navigator.webdriver && !BOT.test(navigator.userAgent || ''),
     PREVIEW_EVENTS = ['quiz_top5'];
   function ss(k) { try { return sessionStorage.getItem(k); } catch (e) { return null; } }
+  function teamDevice() {
+    var q = new URLSearchParams(location.search).get('team');
+    try {
+      if(q === '1') localStorage.setItem('fc-team','1');
+      if(q === '0') localStorage.removeItem('fc-team');
+    } catch(e) {}
+    if(q === '1' || q === '0') document.cookie = 'fc_team='+(q === '1'?'1':'0')+'; domain=.floridacoastal.co; path=/; SameSite=Lax; max-age='+(q === '1'?'31536000':'0')+'; Secure';
+    try { return q === '1' || (q !== '0' && (localStorage.getItem('fc-team') === '1' || /(^|; )fc_team=1/.test(document.cookie))); }
+    catch(e) { return q === '1' || /(^|; )fc_team=1/.test(document.cookie); }
+  }
+  var TEAM = teamDevice();
   var SID = (function () {
     try { var s = sessionStorage.getItem('fc-sid'); if (!s) { s = Math.random().toString(36).slice(2, 10) + Date.now().toString(36); sessionStorage.setItem('fc-sid', s); } return s; }
     catch (e) { return 'nostore' + Math.random().toString(36).slice(2, 8); }
@@ -25,9 +36,10 @@
     return fetch(API + t, { method: 'POST', keepalive: true, headers: { apikey: KEY, 'Content-Type': 'application/json', Prefer: 'return=minimal' }, body: JSON.stringify(b) });
   }
   function track(e, d) {
+    if (TEAM || navigator.webdriver || BOT.test(navigator.userAgent || '')) return;
     if (!LIVE && PREVIEW_EVENTS.indexOf(e) < 0) return;
     try {
-      post('fc_events', { sid: SID, event: e, detail: d == null ? null : String(d).slice(0, 500), path: PATH(), referrer: (ss('fc-ref') || '').slice(0, 300) || null, utm: UTM(), device: innerWidth < 700 ? 'phone' : 'desktop', ua: (navigator.userAgent || '').slice(0, 300), screen: (screen.width + 'x' + screen.height).slice(0, 20), lang: (navigator.language || '').slice(0, 20) }).catch(function () {});
+      post('fc_events', { sid: SID, event: e, detail: d == null ? null : String(d).slice(0, 500), path: PATH(), referrer: (ss('fc-ref') || '').slice(0, 300) || null, utm: UTM(), device: innerWidth < 700 ? 'phone' : 'desktop', ua: (navigator.userAgent || '').slice(0, 300), screen: (screen.width + 'x' + screen.height).slice(0, 20), lang: (navigator.language || '').slice(0, 20) }).then(function(r){if(!r.ok) console.warn('Florida Coastal analytics event rejected:',e,r.status);}).catch(function () {});
     } catch (x) {}
   }
   function lead(o) {
