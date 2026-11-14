@@ -65,3 +65,19 @@ test('failed signup does not emit a conversion',async()=>{
  await assert.rejects(b.c.FC.lead({kind:'newsletter',email:'fixture@example.invalid'}));
  assert.equal(b.c.dataLayer.map(x=>Array.from(x)).filter(x=>x[0]==='event').length,0);
 });
+test('question funnel deduplicates redraws and revisits; reset creates another attempt',()=>{
+ const b=browser();const events=[];b.c.FC={track:(event,detail)=>events.push({event,detail:JSON.parse(detail)})};b.load('assets/fc-quiz-tracking.js');
+ b.c.FCQuiz.view(0,8);b.c.FCQuiz.view(0,8);b.c.FCQuiz.answer(0,8);b.c.FCQuiz.answer(0,8);b.c.FCQuiz.view(1,8);
+ assert.equal(events.length,3);assert.equal(events[0].detail.question,1);assert.equal(events[2].detail.question,2);
+ const first=events[0].detail.attempt;b.c.FCQuiz.reset();b.c.FCQuiz.view(0,8);assert.notEqual(events.at(-1).detail.attempt,first);
+});
+test('top five records preserve rank and fit, with one completion per attempt',()=>{
+ const b=browser();const events=[];b.c.FC={track:(event,detail)=>events.push({event,detail:JSON.parse(detail)})};b.load('assets/fc-quiz-tracking.js');
+ const top=Array.from({length:5},(_,i)=>({id:'town'+i,fit:99-i,name:'Not captured',why:'Not captured'}));
+ b.c.FCQuiz.complete(top);b.c.FCQuiz.complete(top);assert.equal(events.length,2);assert.equal(events[1].event,'quiz_top5');
+ assert.deepEqual(events[1].detail.top,top.map(t=>({id:t.id,fit:t.fit})));assert.ok(!JSON.stringify(events).includes('Not captured'));
+});
+test('GA question events exclude attempt identifiers and answers',()=>{
+ const b=browser();ga(b);b.c.FCGA.event('quiz_question_answer',JSON.stringify({v:2,attempt:'private-session',question:3,total:8,answer:'not sent'}));
+ const e=Array.from(b.c.dataLayer.at(-1));assert.equal(e[1],'quiz_question_answer');assert.equal(e[2].question_number,3);assert.ok(!JSON.stringify(e).includes('private-session'));assert.ok(!JSON.stringify(e).includes('not sent'));
+});

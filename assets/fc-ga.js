@@ -18,6 +18,10 @@
     var event,params={send_to:primary};
     if(name==='quiz_start'||name==='quiz_complete'){
       event=name;params.quiz_name='town_match';
+    }else if(name==='quiz_question_view'||name==='quiz_question_answer'){
+      var d;try{d=JSON.parse(kind);}catch(e){return;}
+      if(!Number.isInteger(d.question)||d.question<1||d.question>8)return;
+      event=name;params.quiz_name='town_match';params.question_number=d.question;params.question_total=8;
     }else if(name==='lead'){
       event='generate_lead';
       params.lead_kind=['newsletter','quiz','top5','local','agent','guide','ask'].indexOf(kind)>=0?kind:'other';
