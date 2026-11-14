@@ -1,7 +1,7 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><link rel="preload" as="image" href="/img/map/fl-preview.webp" fetchpriority="high"><style id="mveil-css">/* Nov 13: phone first paint. Until the map code is ready, show a calm shell of the finished layout instead of the raw page rebuilding itself */
 #mveil{display:none}
 @media (max-width:760px){
-html.mload body>header,html.mload body>.main{visibility:hidden}
+html.mload body>header,html.mload body>.main{visibility:hidden}html.mload #grid,html.mload #res .ph{display:none!important}
 #mveil{display:block;position:fixed;inset:0;z-index:90;background:#8DBCD9;pointer-events:none;transition:opacity .3s ease;font-family:"DM Sans",system-ui,sans-serif}
 html:not(.mload) #mveil{opacity:0}
 #mveil .mv-map{display:none;position:absolute;left:var(--mvx);top:var(--mvy);width:var(--mvw);height:var(--mvh);max-width:none}html.mv-pre #mveil .mv-map{display:block}html.mv-ios #mveil .mv-s{height:calc(212px + env(safe-area-inset-bottom))}#mveil .mv-q{position:absolute;left:14px;top:calc(11px + env(safe-area-inset-top));width:calc(100% - 82px);height:44px;border-radius:22px;background:rgba(255,255,255,.94);box-shadow:0 2px 12px rgba(21,42,46,.1);display:flex;align-items:center;gap:12px;padding:0 18px;box-sizing:border-box;color:#6B7678;font-size:16px;white-space:nowrap;overflow:hidden}

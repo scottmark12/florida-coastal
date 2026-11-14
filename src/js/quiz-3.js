@@ -1,7 +1,8 @@
 (function(){
 /* Nov 12: quiz photos picked for the Adirondack layout (sharp landscape photo on top, blurred copy below); third value = horizontal focus */
 const PH=[['img/c/st-augustine-aerial.webp','St. Augustine','50%'],['img/c/quiz-evening.webp','','50%'],['img/c/quiz-boat.webp','Ponce Inlet','50%'],['img/c/sanibel-island.webp','Sanibel Island','50%'],['img/c/quiz-community.webp','St. Petersburg','50%'],['img/c/quiz-fly.webp','','50%'],['img/c/naples-home.webp','Naples','55%'],['img/c/30a-home.webp','30A','50%'],['img/c/stuart.webp','']];
-PH.forEach(p=>{const i=new Image();i.src=p[0]});
+/* Nov 13: the first photos right away, the rest once the page has loaded, so they don't compete with the first paint */
+PH.forEach((p,k)=>{const go=()=>{const i=new Image();i.src=p[0]};k<6?go():document.readyState=="complete"?setTimeout(go,300+120*k):addEventListener("load",()=>setTimeout(go,300+120*k))});
 document.body.classList.add('qphoto');if(new URLSearchParams(location.search).get('bar')==='blue')document.body.classList.add('bar-blue');
 const mw=document.querySelector('.mapw'),box=document.createElement('div');box.id='qph';
 box.innerHTML=PH.map(p=>`<div class="ph" style="background-image:url('${p[0]}');--fx:${p[2]||'50%'}"></div>`).join('');
