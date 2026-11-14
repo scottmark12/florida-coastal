@@ -1,63 +1,108 @@
 {
   "redirects": [
     {
+      "source": "/find-your-mile",
+      "destination": "/quiz",
+      "permanent": true
+    },
+    {
+      "source": "/find-your-mile.html",
+      "destination": "/quiz",
+      "permanent": true
+    },
+    {
+      "source": "/quiz-photo",
+      "destination": "/quiz",
+      "permanent": true
+    },
+    {
+      "source": "/articles/index",
+      "destination": "/articles",
+      "permanent": true
+    },
+    {
+      "source": "/articles/index.html",
+      "destination": "/articles",
+      "permanent": true
+    },
+    {
+      "source": "/towns/index",
+      "destination": "/towns",
+      "permanent": true
+    },
+    {
+      "source": "/towns/index.html",
+      "destination": "/towns",
+      "permanent": true
+    },
+    {
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/index",
+      "destination": "/",
+      "permanent": true
+    },
+    {
       "source": "/towns/north-redington-beach.html",
-      "destination": "/towns/redington-shores.html",
+      "destination": "/towns/redington-shores",
       "permanent": true
     },
     {
       "source": "/towns/redington-beach.html",
-      "destination": "/towns/redington-shores.html",
+      "destination": "/towns/redington-shores",
       "permanent": true
     },
     {
       "source": "/towns/valparaiso.html",
-      "destination": "/towns/niceville.html",
+      "destination": "/towns/niceville",
       "permanent": true
     },
     {
       "source": "/towns/okaloosa-island.html",
-      "destination": "/towns/fort-walton-beach.html",
+      "destination": "/towns/fort-walton-beach",
       "permanent": true
     },
     {
       "source": "/towns/holly-hill.html",
-      "destination": "/towns/daytona.html",
+      "destination": "/towns/daytona",
       "permanent": true
     },
     {
       "source": "/towns/south-daytona.html",
-      "destination": "/towns/daytona.html",
+      "destination": "/towns/daytona",
       "permanent": true
     },
     {
       "source": "/towns/north-redington-beach",
-      "destination": "/towns/redington-shores.html",
+      "destination": "/towns/redington-shores",
       "permanent": true
     },
     {
       "source": "/towns/redington-beach",
-      "destination": "/towns/redington-shores.html",
+      "destination": "/towns/redington-shores",
       "permanent": true
     },
     {
       "source": "/towns/valparaiso",
-      "destination": "/towns/niceville.html",
+      "destination": "/towns/niceville",
       "permanent": true
     },
     {
       "source": "/towns/okaloosa-island",
-      "destination": "/towns/fort-walton-beach.html",
+      "destination": "/towns/fort-walton-beach",
       "permanent": true
     },
     {
       "source": "/towns/holly-hill",
-      "destination": "/towns/daytona.html",
+      "destination": "/towns/daytona",
       "permanent": true
     },
     {
       "source": "/towns/south-daytona",
-      "destination": "/towns/daytona.html",
+      "destination": "/towns/daytona",
       "permanent": true
     },
     {
@@ -73,32 +118,32 @@
     },
     {
       "source": "/towns/north-redington-beach-v3.html",
-      "destination": "/towns/redington-shores.html",
+      "destination": "/towns/redington-shores",
       "permanent": false
     },
     {
       "source": "/towns/redington-beach-v3.html",
-      "destination": "/towns/redington-shores.html",
+      "destination": "/towns/redington-shores",
       "permanent": false
     },
     {
       "source": "/towns/valparaiso-v3.html",
-      "destination": "/towns/niceville.html",
+      "destination": "/towns/niceville",
       "permanent": false
     },
     {
       "source": "/towns/okaloosa-island-v3.html",
-      "destination": "/towns/fort-walton-beach.html",
+      "destination": "/towns/fort-walton-beach",
       "permanent": false
     },
     {
       "source": "/towns/holly-hill-v3.html",
-      "destination": "/towns/daytona.html",
+      "destination": "/towns/daytona",
       "permanent": false
     },
     {
       "source": "/towns/south-daytona-v3.html",
-      "destination": "/towns/daytona.html",
+      "destination": "/towns/daytona",
       "permanent": false
     },
     {
@@ -108,22 +153,22 @@
     },
     {
       "source": "/compare-v3.html",
-      "destination": "/compare.html",
+      "destination": "/compare",
       "permanent": true
     },
     {
       "source": "/vibe-v3.html",
-      "destination": "/map.html",
+      "destination": "/map",
       "permanent": true
     },
     {
       "source": "/quiz-photo.html",
-      "destination": "/find-your-mile.html",
+      "destination": "/quiz",
       "permanent": true
     },
     {
       "source": "/quiz-results-v3.html",
-      "destination": "/quiz-results.html",
+      "destination": "/quiz-results",
       "permanent": true
     },
     {
@@ -133,12 +178,12 @@
     },
     {
       "source": "/towns/:t-v3.html",
-      "destination": "/towns/:t.html",
+      "destination": "/towns/:t",
       "permanent": true
     },
     {
       "source": "/priorities.html",
-      "destination": "/map.html?mode=sliders",
+      "destination": "/map?mode=sliders",
       "permanent": true
     }
   ],
@@ -169,6 +214,14 @@
           "value": "public, max-age=3600"
         }
       ]
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false,
+  "rewrites": [
+    {
+      "source": "/quiz",
+      "destination": "/find-your-mile"
     }
   ]
 }

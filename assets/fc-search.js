@@ -3,7 +3,7 @@
   if(window.FCS)return;
   var me=document.currentScript&&document.currentScript.src||'';
   var ROOT=me?me.replace(/assets\/fc-search\.js.*$/,''):new URL('/',location.href).href;
-  var U=function(p){return new URL(p,ROOT).href};
+  var U=function(p){var u=new URL(p,ROOT);u.pathname=u.pathname.replace(/\/index\.html$/, '').replace(/\.html$/, '')||'/';if(u.pathname==='/find-your-mile')u.pathname='/quiz';return u.href};
   var IDX=null,loading=null;
   function load(){if(IDX)return Promise.resolve(IDX);if(loading)return loading;loading=fetch(U('assets/search-index.json?v=3')).then(function(r){return r.json()}).then(function(d){IDX=d;return d});return loading}
   var ZIP=null,zl=null;function loadZip(){if(ZIP)return Promise.resolve(ZIP);if(zl)return zl;zl=fetch(U('assets/search-zip.json?v=1')).then(function(r){return r.json()}).then(function(d){ZIP=d;return d});return zl}
@@ -96,7 +96,7 @@
   });
   function recent(){try{return JSON.parse(localStorage.getItem('fc-recent')||'[]')}catch(e){return[]}}
   function remember(id){try{var a=recent().filter(function(x){return x!==id});a.unshift(id);localStorage.setItem('fc-recent',JSON.stringify(a.slice(0,6)))}catch(e){}}
-  (function(){var m=location.pathname.match(/towns\/([a-z0-9-]+)(?:-v3)?\.html/);if(m)remember(m[1])})();
+  (function(){var m=location.pathname.match(/towns\/([a-z0-9-]+?)(?:-v3)?(?:\.html)?$/);if(m)remember(m[1])})();
   window.FCS={open:open,close:close};
 
   /* header: turn old search forms into the icon, and add the icon where a header has none */

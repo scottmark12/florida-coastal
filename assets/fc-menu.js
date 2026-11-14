@@ -9,7 +9,7 @@
     var hdr=document.querySelector('header');if(!hdr)return;
     var links=[].slice.call(hdr.querySelectorAll('a[data-nav]'));if(!links.length)return;
     var quiz=hdr.querySelector('a:is([href*="quiz-photo"],[href*="find-your-mile"])');
-    var quizHref=quiz?quiz.href:new URL('/find-your-mile.html',location.href).href;
+    var quizHref=quiz?quiz.href:new URL('/quiz',location.href).href;
     var townsHref=links[0].href.split('?')[0];
     var logo=hdr.querySelector('img');
     var logoSrc=new URL('/img/fc-logo-black.png',location.href).href;
@@ -81,10 +81,10 @@
      addEventListener('scroll',function(){if(!raf)raf=requestAnimationFrame(upd)},{passive:true});addEventListener('resize',upd);upd()})();
 
     var here=location.pathname+location.search;
-    var homeHref=new URL('/index.html',location.href).href,hp=new URL(homeHref).pathname;
+    var homeHref=new URL('/',location.href).href,hp=new URL(homeHref).pathname;
     var extra=function(href,label,isCur){return '<a href="'+href+'"'+(isCur?' class="cur" aria-current="page"':'')+'>'+label+'<span>→</span></a>'};
     var items=extra(homeHref,'Home',location.pathname==hp||location.pathname=='/'||/\/index\.html$/.test(location.pathname))+links.map(function(a){
-      if(a.dataset.nav=='maps'){var mode=new URLSearchParams(location.search).get('mode')||'regions',onMap=/vibe-v3|\/map\.html/.test(location.pathname);
+      if(a.dataset.nav=='maps'){var mode=new URLSearchParams(location.search).get('mode')||'regions',onMap=/vibe-v3|\/map(?:\.html)?$/.test(location.pathname);
         return '<div class="fcm-gl">Maps</div>'+[].slice.call(a.parentNode.querySelectorAll('a.fcmaps-i')).map(function(x){var c=onMap&&x.dataset.sub==mode;return '<a class="fcm-sub'+(c?' cur" aria-current="page':'')+'" href="'+x.href+'">'+x.textContent.trim()+'<span>→</span></a>'}).join('')}
       var u=new URL(a.href),cur=a.classList.contains('on')||a.getAttribute('aria-current')=='page'||(u.pathname+u.search)==here;
       return '<a href="'+a.href+'"'+(cur?' class="cur" aria-current="page"':'')+'>'+a.textContent.trim()+'<span>→</span></a>';
@@ -92,7 +92,7 @@
 
     var m=document.createElement('div');
     m.className='fcm';m.setAttribute('role','dialog');m.setAttribute('aria-modal','true');m.setAttribute('aria-label','Menu');
-    m.innerHTML='<div class="fcm-top"><a href="'+new URL('/index.html',location.href).href+'"><img src="'+logoSrc+'" alt="Florida Coastal"></a><button class="fcm-x" type="button" aria-label="Close menu">'+ICON_X+'</button></div>'+
+    m.innerHTML='<div class="fcm-top"><a href="'+new URL('/',location.href).href+'"><img src="'+logoSrc+'" alt="Florida Coastal"></a><button class="fcm-x" type="button" aria-label="Close menu">'+ICON_X+'</button></div>'+
       '<form role="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg><input type="search" placeholder="Search a town, region or ZIP" aria-label="Search towns" autocomplete="off"></form>'+
       '<nav aria-label="Main">'+items+'</nav>'+
       '<div class="fcm-cta"><a href="'+quizHref+'">Take the quiz</a><p>8 quick questions. Your top 5 towns.</p></div>';
