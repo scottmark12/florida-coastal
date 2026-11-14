@@ -1,3 +1,4 @@
+/* Nov 13: the page ships with this layout already in the HTML (no jump while the app loads); if the article count changed since, it rebuilds once. */
 /* Articles page, Nov 12 2026: magazine layout (feature block, style guide shelf, sections by topic).
    Built from the same ARTICLES list the app uses, so new articles show up here on their own. */
 (function(){
@@ -30,8 +31,8 @@
   q.oninput=function(){var w=norm(q.value).trim().split(/\s+/).filter(Boolean);if(!w.length){res.hidden=true;main.hidden=false;return}
    var L=(typeof ARTICLES!='undefined'?ARTICLES:[]).filter(function(a){var t=norm([a.title,a.dek,a.kick,a.kicker,a.cat,a.body].join(' '));return w.every(function(x){return t.indexOf(x)>-1})});
    res.innerHTML='<p class="ax-cnt">'+L.length+(L.length==1?' article':' articles')+' for “'+esc(q.value.trim())+'”</p>'+(L.length?'<div class="ax-rows">'+L.map(row).join('')+'</div>':'<p class="ax-none">Nothing matches that yet. Try a town name or a word like insurance.</p>');res.hidden=false;main.hidden=true}}
- function swap(){var app=document.getElementById('app');if(!app||app.querySelector('.ax'))return;var old=app.querySelector('#aq');if(!old)return;var html=build();if(!html)return;
-  var ph=app.querySelector('.phero');ph&&ph.remove();var sec=old.closest('section');var d=document.createElement('div');d.innerHTML=html;var n=d.firstChild;sec.replaceWith(n);wire(n);document.body.classList.add('axon')}
+ function swap(){var app=document.getElementById('app');if(!app)return;var pre=app.querySelector('.ax');if(pre){var N=typeof ARTICLES!='undefined'?String(ARTICLES.length):'';if(N&&pre.dataset.n&&N!==pre.dataset.n){var fh=build();if(fh){var dd=document.createElement('div');dd.innerHTML=fh;var nn=dd.firstChild;nn.dataset.n=N;nn.dataset.w=1;pre.replaceWith(nn);wire(nn)}return}if(!pre.dataset.w){pre.dataset.w=1;wire(pre)}return}var old=app.querySelector('#aq');if(!old)return;var html=build();if(!html)return;
+  var ph=app.querySelector('.phero');ph&&ph.remove();var sec=old.closest('section');var d=document.createElement('div');d.innerHTML=html;var n=d.firstChild;sec.replaceWith(n);n.dataset.w=1;wire(n);document.body.classList.add('axon')}
  new MutationObserver(swap).observe(document.documentElement,{childList:true,subtree:true});
- if(document.readyState!='loading')swap();else document.addEventListener('DOMContentLoaded',swap);
+ if(document.readyState!='loading')swap();else document.addEventListener('DOMContentLoaded',swap);addEventListener('load',swap);
 })();
