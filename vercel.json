@@ -1,6 +1,66 @@
 {
   "redirects": [
     {
+      "source": "/towns/north-redington-beach.html",
+      "destination": "/towns/redington-shores.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/redington-beach.html",
+      "destination": "/towns/redington-shores.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/valparaiso.html",
+      "destination": "/towns/niceville.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/okaloosa-island.html",
+      "destination": "/towns/fort-walton-beach.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/holly-hill.html",
+      "destination": "/towns/daytona.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/south-daytona.html",
+      "destination": "/towns/daytona.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/north-redington-beach",
+      "destination": "/towns/redington-shores.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/redington-beach",
+      "destination": "/towns/redington-shores.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/valparaiso",
+      "destination": "/towns/niceville.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/okaloosa-island",
+      "destination": "/towns/fort-walton-beach.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/holly-hill",
+      "destination": "/towns/daytona.html",
+      "permanent": true
+    },
+    {
+      "source": "/towns/south-daytona",
+      "destination": "/towns/daytona.html",
+      "permanent": true
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
