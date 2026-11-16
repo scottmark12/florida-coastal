@@ -20,6 +20,17 @@ def sub1(pat, rep, s, flags=re.S):
 out = sub1(r'<section class="vhero-b dk-hero">.*?</section>', hero.html(), out)
 # 2. the old "02 The Vibe Map" section is now the hero itself
 # Nov 16: the Vibe Map section (map + town card) stays, right under the hero; its scripts load when it nears the screen
+old_l = re.search(r'<div class="cm-l">.*?</div>(?=<div class="cm-r">)', out, re.S).group(0)
+new_l = ('<div class="cm-l"><div class="cm-lbl">How it works</div>'
+ '<h2>Three steps to your stretch of coast.</h2>'
+ '<ol class="cm-steps">'
+ '<li><b>Pick a feel.</b> <span>Tap a style and every beach town that has it lights up on the map.</span></li>'
+ '<li><b>Get your top 5.</b> <span>Eight questions, about two minutes. Every town scored the same way, no signup necessary.</span></li>'
+ '<li><b>Get to know them.</b> <span>Open any town for home prices, flood risk, the airport drive and a local\'s take.</span></li>'
+ '</ol>'
+ '<div class="cm-ctas"><a class="cm-link" href="map.html?mode=vibes" data-fh="cm_vibe">Open the Vibe Map →</a><a class="cm-link" href="/quiz" data-fh="cm_top5">See my top 5 →</a></div>'
+ '<p class="cm-alt">Rather weigh it yourself? <a href="map.html?mode=sliders">Try the Slider Map →</a></p></div>')
+out = out.replace(old_l, new_l, 1)
 out = out.replace('<span class="nb">03 · </span>', '').replace('<span class="nb">04 · </span>', '')
 # 3. scripts for the old map section
 fc_src = re.search(r'<script src="(/assets/v3/data/fl-compass\.[0-9a-f]+\.js)"></script>', out).group(1)
@@ -31,6 +42,7 @@ for pat in [r'<script src="/assets/v3/data/fl-compass\.[0-9a-f]+\.js"></script>'
             ]:
     out = sub1(pat, '', out)
 CMAP_JS = ('<script id="cmap-lazy">!function(){var s=document.querySelector(".cmap");if(!s)return;var go=!1;'
+ 's.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a");if(!a||!window.FC)return;var k=a.dataset.fh||(a.classList.contains("cm-card")?"cm_card":a.classList.contains("cm-more")?"cm_more":/sliders/.test(a.href)?"cm_sliders":"");k&&FC.track("home_"+k,(a.querySelector&&a.querySelector(".cm-bd b")||{}).textContent||"")});'
  'function ld(u,cb){var e=document.createElement("script");e.src=u;e.onload=cb;document.body.appendChild(e)}'
  'function run(){if(go)return;go=!0;ld(%s,function(){ld(%s,function(){%s})})}'
  'if("IntersectionObserver"in window){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){o.disconnect();run()}},{rootMargin:"300px 0px"});o.observe(s)}else run();'
