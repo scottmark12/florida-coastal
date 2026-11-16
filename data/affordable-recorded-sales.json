@@ -1,0 +1,234 @@
+{
+  "window": {
+    "start": "2026-01",
+    "end": "2026-06"
+  },
+  "reviewed_on": "2026-11-16",
+  "sources": {
+    "sale_and_parcel_records": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+    "boundaries": "https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2024&layergroup=Places"
+  },
+  "method": "Florida DOR sale and parcel records mapped to 2024 Census place boundaries. Qualified improved sales; single-family and condominium use codes separately. Excludes duplicate, flagged multi-parcel and changed-property transactions. Only samples passing count, parcel match coverage and boundary sensitivity checks were ranked. Historical sample, not current asking prices or ownership cost.",
+  "rankings": {
+    "houses": {
+      "towns_with_passing_samples": 106,
+      "lowest_ten": [
+        {
+          "id": "new-port-richey",
+          "town": "New Port Richey",
+          "place": "New Port Richey city",
+          "median": 240000.0,
+          "sales": 124
+        },
+        {
+          "id": "fortpierce",
+          "town": "Fort Pierce",
+          "place": "Fort Pierce city",
+          "median": 262700,
+          "sales": 197
+        },
+        {
+          "id": "port-charlotte",
+          "town": "Port Charlotte",
+          "place": "Port Charlotte CDP",
+          "median": 275000.0,
+          "sales": 700
+        },
+        {
+          "id": "titusville",
+          "town": "Titusville",
+          "place": "Titusville city",
+          "median": 282000,
+          "sales": 393
+        },
+        {
+          "id": "panama-city",
+          "town": "Panama City",
+          "place": "Panama City city",
+          "median": 285000,
+          "sales": 297
+        },
+        {
+          "id": "jacksonville",
+          "town": "Jacksonville",
+          "place": "Jacksonville city",
+          "median": 290000,
+          "sales": 5495
+        },
+        {
+          "id": "edgewater",
+          "town": "Edgewater",
+          "place": "Edgewater city",
+          "median": 300000,
+          "sales": 213
+        },
+        {
+          "id": "hudson",
+          "town": "Hudson",
+          "place": "Hudson CDP",
+          "median": 300000.0,
+          "sales": 164
+        },
+        {
+          "id": "palm-bay",
+          "town": "Palm Bay",
+          "place": "Palm Bay city",
+          "median": 310000,
+          "sales": 1197
+        },
+        {
+          "id": "melbourne",
+          "town": "Melbourne",
+          "place": "Melbourne city",
+          "median": 315000,
+          "sales": 555
+        }
+      ]
+    },
+    "condos": {
+      "towns_with_passing_samples": 55,
+      "lowest_ten": [
+        {
+          "id": "port-charlotte",
+          "town": "Port Charlotte",
+          "place": "Port Charlotte CDP",
+          "median": 122000.0,
+          "sales": 52
+        },
+        {
+          "id": "palm-bay",
+          "town": "Palm Bay",
+          "place": "Palm Bay city",
+          "median": 132500.0,
+          "sales": 32
+        },
+        {
+          "id": "daytona",
+          "town": "Daytona Beach",
+          "place": "Daytona Beach city",
+          "median": 140000.0,
+          "sales": 176
+        },
+        {
+          "id": "titusville",
+          "town": "Titusville",
+          "place": "Titusville city",
+          "median": 151500.0,
+          "sales": 48
+        },
+        {
+          "id": "melbourne",
+          "town": "Melbourne",
+          "place": "Melbourne city",
+          "median": 165000,
+          "sales": 93
+        },
+        {
+          "id": "sun-city-center",
+          "town": "Sun City Center",
+          "place": "Sun City Center CDP",
+          "median": 165000.0,
+          "sales": 188
+        },
+        {
+          "id": "lighthouse-point",
+          "town": "Lighthouse Point",
+          "place": "Lighthouse Point city",
+          "median": 168050.0,
+          "sales": 38
+        },
+        {
+          "id": "pensacola",
+          "town": "Pensacola",
+          "place": "Pensacola city",
+          "median": 169000,
+          "sales": 41
+        },
+        {
+          "id": "port-st-lucie",
+          "town": "Port St. Lucie",
+          "place": "Port St. Lucie city",
+          "median": 170000,
+          "sales": 73
+        },
+        {
+          "id": "jacksonville",
+          "town": "Jacksonville",
+          "place": "Jacksonville city",
+          "median": 170500.0,
+          "sales": 568
+        }
+      ]
+    }
+  },
+  "town_details": {
+    "daytona": {
+      "town": "Daytona Beach",
+      "place": "Daytona Beach city",
+      "cohorts": {
+        "houses": {
+          "n": 434,
+          "median": 348000.0,
+          "without_boundary_margin_n": 434,
+          "without_boundary_margin_median": 348000.0,
+          "july2025_june2026_county_type_gis_coverage": {
+            "Volusia": 0.9980741454020221
+          },
+          "original_boundary_median": 347000,
+          "original_boundary_count": 435,
+          "outcome": "Dated county sample passed",
+          "hold_reasons": [],
+          "months_with_sales": 6
+        },
+        "condos": {
+          "n": 176,
+          "median": 140000.0,
+          "without_boundary_margin_n": 170,
+          "without_boundary_margin_median": 139300.0,
+          "july2025_june2026_county_type_gis_coverage": {
+            "Volusia": 0.9919354838709677
+          },
+          "original_boundary_median": 140000.0,
+          "original_boundary_count": 176,
+          "outcome": "Dated county sample passed",
+          "hold_reasons": [],
+          "months_with_sales": 6
+        }
+      }
+    },
+    "port-charlotte": {
+      "town": "Port Charlotte",
+      "place": "Port Charlotte CDP",
+      "cohorts": {
+        "houses": {
+          "n": 700,
+          "median": 275000.0,
+          "without_boundary_margin_n": 700,
+          "without_boundary_margin_median": 275000.0,
+          "july2025_june2026_county_type_gis_coverage": {
+            "Charlotte": 0.9998383707774365
+          },
+          "original_boundary_median": 275000.0,
+          "original_boundary_count": 700,
+          "outcome": "Dated county sample passed",
+          "hold_reasons": [],
+          "months_with_sales": 6
+        },
+        "condos": {
+          "n": 52,
+          "median": 122000.0,
+          "without_boundary_margin_n": 52,
+          "without_boundary_margin_median": 122000.0,
+          "july2025_june2026_county_type_gis_coverage": {
+            "Charlotte": 0.9992163009404389
+          },
+          "original_boundary_median": 122000.0,
+          "original_boundary_count": 52,
+          "outcome": "Dated county sample passed",
+          "hold_reasons": [],
+          "months_with_sales": 6
+        }
+      }
+    }
+  }
+}

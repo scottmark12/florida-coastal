@@ -1270,7 +1270,8 @@
         "airport": 88,
         "edu": 104
       },
-      "priceContext": "About $211K median sale over the past year, condos included (Momentum, Nov 2026)"
+      "priceContext": "January–June 2026 recorded-sale sample: $348K median for single-family houses (434 sales) and $140K for condos (176 sales). Excludes Holly Hill and South Daytona. Previous provider snapshot: About $211K median sale over the past year, condos included (Momentum, Nov 2026)",
+      "recordedSaleLabel": "$348K house / $140K condo"
     },
     "flagler": {
       "s": "Flagler Beach",
@@ -3906,7 +3907,8 @@
         "airport": 117,
         "edu": 142
       },
-      "priceContext": "About $290K average price (Redfin, 2026). Charlotte County's median sale was about $339K (Redfin, Jun 2026)"
+      "priceContext": "January–June 2026 recorded-sale sample: $275K median for single-family houses (700 sales) and $122K for condos (52 sales). Covers the Census-defined Port Charlotte community; includes inland and waterfront sales. Previous provider snapshot: About $290K average price (Redfin, 2026). Charlotte County's median sale was about $339K (Redfin, Jun 2026)",
+      "recordedSaleLabel": "$275K house / $122K condo"
     },
     "punta-gorda": {
       "s": "Punta Gorda",
@@ -7036,7 +7038,7 @@
         "airport": 55,
         "edu": 115
       },
-      "priceContext": "About $236K median sale (Momentum, Nov 2026)"
+      "priceContext": "About $236K median sale in Momentum’s market area, trailing 12 months (November 2026 snapshot)."
     },
     "holiday": {
       "s": "Holiday",
@@ -7092,7 +7094,7 @@
         "airport": 48,
         "edu": 124
       },
-      "priceContext": "About $220K median sale (Momentum, Nov 2026)"
+      "priceContext": "About $220K median sale in Momentum’s market area, trailing 12 months (November 2026 snapshot)."
     },
     "palm-harbor": {
       "s": "Palm Harbor",
