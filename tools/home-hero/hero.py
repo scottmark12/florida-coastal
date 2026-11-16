@@ -89,7 +89,7 @@ def css():
 }
 
 @media (max-width:760px){
-.fh{--fw:min(370px,calc(100vw - 40px));--fhh:calc(var(--fw) * .9644);--fl:calc(100vw - var(--fw) - 20px);--ft:clamp(78px,calc(var(--hh) - 620px),140px)}
+.fh{--fw:calc(100vw + 2px);--fhh:calc(var(--fw) * .9644);--fl:calc(100vw - var(--fw) + 18px);--ft:clamp(84px,calc(var(--hh) - 620px),140px)}
 .fh .fh-np{display:none}
 .fh-alt{margin-top:14px;min-height:0}
 .fh-alt{display:none}
