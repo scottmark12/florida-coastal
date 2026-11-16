@@ -1,0 +1,77 @@
+/* ===== Nov 16 2026: one page start everywhere (photo, then title on white, like the town pages) + white pages =====
+   Linked last on articles, about, scoring, agents, privacy, terms, accessibility, 404, areas and compare.
+   CSS only, so prerendered markup can change without breaking it.
+   Order on every page: breadcrumb, photo (site width, never text on it), then kicker / title / dek on white. */
+
+html body{--page:#fff;--paper:#F2EFEA;--accent-tint:#F2EFEA;background:#fff!important}
+/* Boxes and bands: the same light warm grey the town pages use (#F2EFEA), never cream */
+html body section.news:not(#z),html body .fq-box:not(#z),html body .hb-askin:not(#z),html body .short:not(#z),html body .verdict:not(#z),html body .news-art .prose .fc-box:not(.pk-start):not(#z){background:#F2EFEA!important}
+
+html body section.band:not(#z){background:#fff!important;border-top:1px solid #E3E6E5}
+
+/* ---------- Articles and About (news layout) ---------- */
+.news-art{display:flex;flex-direction:column}
+.news-art>*{order:3;min-width:0}
+.news-art>.nyt{width:100%;box-sizing:border-box}
+.news-art>.nyt:first-child,.news-art .nyt-head{display:contents}
+.news-art .nyt-head>*{order:2;box-sizing:border-box;width:100%;max-width:680px;margin-left:auto;margin-right:auto;padding-left:22px;padding-right:22px}
+.news-art .nyt-head>.crumbs{order:0;max-width:636px;width:calc(100% - 44px);padding:0;margin:24px auto 12px}
+.news-art .nyt-head>.crumbs+*{margin-top:34px}
+html body main .news-art .nyt-head>h1:not(#z){margin-left:auto;margin-right:auto}
+.news-art .nyt-head>.nyt-by{margin-bottom:34px;padding-left:0;padding-right:0;max-width:636px}
+/* photo starts on the text's left edge and runs to the site's right margin */
+.news-art .nyt-lead{order:1;max-width:none;width:auto;padding:0;position:relative;margin:0 max(22px,calc((100% - 1140px)/2)) 0 max(22px,calc((100% - 636px)/2))}
+.news-art .nyt-lead img{width:100%;height:clamp(260px,34vw,470px);max-height:none;object-fit:cover}
+/* caption sits in the photo's corner so photo flows straight into the title */
+html body .news-art .nyt-lead figcaption:not(#z){position:absolute;left:10px;bottom:10px;max-width:calc(100% - 20px);margin:0;padding:3px 8px;border-radius:3px;background:rgba(10,25,35,.55);color:#fff;font:400 12px/1.4 'DM Sans',sans-serif}
+
+/* Article titles are names of stories, so Caslon (the Nov 10 rule). About keeps DM Sans. */
+html:has(link[rel=canonical][href*="/articles/"]) body main .news-art .nyt-head h1:not(#z){font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;font-size:46px!important;line-height:1.1!important;letter-spacing:-.005em!important;font-variation-settings:normal!important}
+
+/* ---------- How we score, For Agents (photo hero) ---------- */
+.phero{display:flex;flex-direction:column;color:inherit;overflow:visible}
+.phero>.wrap,.phero .inner{display:contents}
+.phero .crumbs{order:0;width:calc(100% - 40px);max-width:1140px;margin:24px auto 12px;font-size:13px;color:var(--muted)}
+.phero .ph{order:1;min-height:0;overflow:hidden;position:relative;inset:auto;width:calc(100% - 40px);max-width:1140px;margin:0 auto;height:clamp(200px,24vw,320px)}
+.phero .ph::after{display:none}
+.phero .ph picture{display:block;height:100%}
+.phero .ph img,.ar-hero .hb3-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.phero h1,.phero .inner>p{order:2;width:calc(100% - 40px);max-width:1140px;margin-left:auto;margin-right:auto;color:var(--ink)}
+.phero h1{margin-top:34px}
+.phero .inner>p{margin-top:12px;margin-bottom:8px;opacity:1}
+.phero .inner>p:last-child{padding-right:calc(max(0px,(100% - 40px) - 40em))}
+
+/* ---------- Area pages ---------- */
+.ar-hero{display:flex;flex-direction:column;align-items:stretch;min-height:0!important;overflow:visible;padding-top:0!important;padding-bottom:8px!important}
+.ar-hero .hb3-hw,.ar-hero .hb3-panel{display:contents}
+.ar-hero .crumbs2{order:0;width:calc(100% - 40px);max-width:1140px;margin:24px auto 12px;font-size:13px}
+.ar-hero .hb3-ph{order:1;min-height:0;overflow:hidden;position:relative;inset:auto;width:calc(100% - 40px);max-width:1140px;margin:0 auto;height:clamp(240px,36vw,468px)}
+.ar-hero .hb3-panel>*:not(.crumbs2){order:2;box-sizing:border-box;width:calc(100% - 40px);max-width:1140px;margin-left:auto;margin-right:auto}
+.ar-hero .hb3-panel>.hb-k{margin-top:34px}
+.ar-hero .hb3-panel>p{padding-right:calc(max(0px,(100% - 40px) - 40em));margin-bottom:8px}
+/* Area names are places, so Caslon like the town pages */
+html body main .ar-hero .hb3-panel h1:not(#z){font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;font-size:52px!important;line-height:1.08!important;letter-spacing:-.005em!important;margin:8px auto 12px}
+.hb3-bar{background:#fff}
+.hb3-bar::after{background:linear-gradient(90deg,rgba(255,255,255,0),#fff 70%)!important}
+
+/* ---------- Phones: photo edge to edge, like the town pages ---------- */
+@media (max-width:700px){
+  .news-art .nyt-head>.crumbs{width:calc(100% - 36px);margin:14px auto 10px}
+  .phero .crumbs,.ar-hero .crumbs2{width:calc(100% - 40px);margin:14px auto 10px}
+  .news-art .nyt-lead,.phero .ph,.ar-hero .hb3-ph{width:100%;max-width:none}
+  .news-art .nyt-lead{margin:0}
+  .news-art .nyt-lead img,.ar-hero .hb3-ph{height:auto;aspect-ratio:4/3}
+  .phero .ph{height:auto;aspect-ratio:16/9}
+  .news-art .nyt-lead img{height:auto}
+  .news-art .nyt-head>*{padding-left:18px;padding-right:18px}
+  .news-art .nyt-head>.crumbs+*,.phero h1,.ar-hero .hb3-panel>.hb-k{margin-top:24px}
+  .news-art .nyt-head>.nyt-by{padding-left:0;padding-right:0;width:calc(100% - 36px);margin-bottom:26px}
+  .phero h1,.phero .inner>p,.ar-hero .hb3-panel>*:not(.crumbs2){width:calc(100% - 40px)}
+  .phero .inner>p:last-child,.ar-hero .hb3-panel>p{padding-right:0}
+  html:has(link[rel=canonical][href*="/articles/"]) body main .news-art .nyt-head h1:not(#z){font-size:36px!important;line-height:1.12!important}
+  html body main .ar-hero .hb3-panel h1:not(#z){font-size:36px!important}
+}
+/* More guides cards: article titles are Caslon everywhere */
+html body section.band .card h3:not(#z){font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;letter-spacing:0!important;font-size:21px!important;line-height:1.2!important}
+/* About: keep the hat in the frame */
+.news-art .nyt-lead img[src*="our-story"]{object-position:center 12%!important}
