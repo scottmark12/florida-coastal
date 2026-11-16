@@ -1,0 +1,1696 @@
+{
+  "reviewed_on": "2026-11-16",
+  "dynamic_price_sources": [
+    "towns.json",
+    "beach-towns-t.json",
+    "results-td.json",
+    "compare-d.json"
+  ],
+  "display_changes": [
+    {
+      "town": "30a",
+      "surface": "comparison",
+      "before": "$915K median",
+      "after": "$915K"
+    },
+    {
+      "town": "destin",
+      "surface": "comparison",
+      "before": "$540K median",
+      "after": "$540K"
+    },
+    {
+      "town": "pcb",
+      "surface": "comparison",
+      "before": "$485K median",
+      "after": "$425K"
+    },
+    {
+      "town": "apalachicola",
+      "surface": "comparison",
+      "before": "$342K median",
+      "after": "$300K to $385K"
+    },
+    {
+      "town": "cedarkey",
+      "surface": "comparison",
+      "before": "$322K median",
+      "after": "$320K"
+    },
+    {
+      "town": "dunedin",
+      "surface": "comparison",
+      "before": "$475K median",
+      "after": "$450K"
+    },
+    {
+      "town": "clearwaterbeach",
+      "surface": "comparison",
+      "before": "$525K median",
+      "after": "$650K to $800K"
+    },
+    {
+      "town": "gulfport",
+      "surface": "comparison",
+      "before": "$400K median",
+      "after": "$385K"
+    },
+    {
+      "town": "ami",
+      "surface": "comparison",
+      "before": "$1.15M median",
+      "after": "$1.3M to $1.65M"
+    },
+    {
+      "town": "longboat",
+      "surface": "comparison",
+      "before": "$878K median",
+      "after": "$732K"
+    },
+    {
+      "town": "captiva",
+      "surface": "comparison",
+      "before": "$1.2M median",
+      "after": "$560K"
+    },
+    {
+      "town": "matlacha",
+      "surface": "comparison",
+      "before": "$495K median",
+      "after": "$494K"
+    },
+    {
+      "town": "naples",
+      "surface": "comparison",
+      "before": "$685K median",
+      "after": "$685K"
+    },
+    {
+      "town": "keywest",
+      "surface": "comparison",
+      "before": "$1.05M median",
+      "after": "$1.05M"
+    },
+    {
+      "town": "islamorada",
+      "surface": "comparison",
+      "before": "$1.1M median",
+      "after": "$1.44M"
+    },
+    {
+      "town": "southbeach",
+      "surface": "comparison",
+      "before": "$600K median",
+      "after": "$524K"
+    },
+    {
+      "town": "ftl",
+      "surface": "comparison",
+      "before": "$605K median",
+      "after": "$605K"
+    },
+    {
+      "town": "delray",
+      "surface": "comparison",
+      "before": "$768K median",
+      "after": "$546K"
+    },
+    {
+      "town": "jupiter",
+      "surface": "comparison",
+      "before": "$700K median",
+      "after": "$720K"
+    },
+    {
+      "town": "fortpierce",
+      "surface": "comparison",
+      "before": "$280K median",
+      "after": "$278K"
+    },
+    {
+      "town": "cocoa",
+      "surface": "comparison",
+      "before": "$469K median",
+      "after": "$450K"
+    },
+    {
+      "town": "nsb",
+      "surface": "comparison",
+      "before": "$421K median",
+      "after": "$450K"
+    },
+    {
+      "town": "daytona",
+      "surface": "comparison",
+      "before": "$322K median",
+      "after": "$211K"
+    },
+    {
+      "town": "flagler",
+      "surface": "comparison",
+      "before": "$375K median",
+      "after": "$450K"
+    },
+    {
+      "town": "staug",
+      "surface": "comparison",
+      "before": "$477K median",
+      "after": "$422K"
+    },
+    {
+      "town": "jaxbeach",
+      "surface": "comparison",
+      "before": "$660K median",
+      "after": "$720K"
+    },
+    {
+      "town": "fernandina",
+      "surface": "comparison",
+      "before": "$611K median",
+      "after": "$581K"
+    },
+    {
+      "town": "carrabelle",
+      "surface": "comparison",
+      "before": "$260K median",
+      "after": "$260K"
+    },
+    {
+      "town": "st-george-island",
+      "surface": "comparison",
+      "before": "$1.1M median",
+      "after": "$1.25M"
+    },
+    {
+      "town": "st-teresa",
+      "surface": "comparison",
+      "before": "Too few sales for a median",
+      "after": "Ask for current sales"
+    },
+    {
+      "town": "st-marks",
+      "surface": "comparison",
+      "before": "$219K median",
+      "after": "Ask for current sales"
+    },
+    {
+      "town": "panama-city",
+      "surface": "comparison",
+      "before": "$270K median",
+      "after": "$284K"
+    },
+    {
+      "town": "pensacola",
+      "surface": "comparison",
+      "before": "$367K median",
+      "after": "$267K"
+    },
+    {
+      "town": "pensacola-beach",
+      "surface": "comparison",
+      "before": "$775K median",
+      "after": "$738K"
+    },
+    {
+      "town": "navarre-beach",
+      "surface": "comparison",
+      "before": "$880K median",
+      "after": "$765K"
+    },
+    {
+      "town": "perdido-key",
+      "surface": "comparison",
+      "before": "$591K median",
+      "after": "$735K"
+    },
+    {
+      "town": "gulf-breeze",
+      "surface": "comparison",
+      "before": "$479K median",
+      "after": "$479K"
+    },
+    {
+      "town": "port-st-joe",
+      "surface": "comparison",
+      "before": "$440K median",
+      "after": "$460K"
+    },
+    {
+      "town": "crystal-river",
+      "surface": "comparison",
+      "before": "$272K median",
+      "after": "$335K"
+    },
+    {
+      "town": "homosassa",
+      "surface": "comparison",
+      "before": "$355K median",
+      "after": "$330K"
+    },
+    {
+      "town": "ozello",
+      "surface": "comparison",
+      "before": "$231K median",
+      "after": "$231K"
+    },
+    {
+      "town": "steinhatchee",
+      "surface": "comparison",
+      "before": "$285K median",
+      "after": "$279K"
+    },
+    {
+      "town": "apollo-beach",
+      "surface": "comparison",
+      "before": "$420K median",
+      "after": "$525K"
+    },
+    {
+      "town": "clearwater",
+      "surface": "comparison",
+      "before": "$313K median",
+      "after": "$360K"
+    },
+    {
+      "town": "indian-rocks-beach",
+      "surface": "comparison",
+      "before": "$747K median",
+      "after": "$575K"
+    },
+    {
+      "town": "madeira-beach",
+      "surface": "comparison",
+      "before": "$450K median",
+      "after": "$604K"
+    },
+    {
+      "town": "new-port-richey",
+      "surface": "comparison",
+      "before": "$235K median",
+      "after": "$228K"
+    },
+    {
+      "town": "ruskin",
+      "surface": "comparison",
+      "before": "$322K median",
+      "after": "$322K"
+    },
+    {
+      "town": "safety-harbor",
+      "surface": "comparison",
+      "before": "$577K median",
+      "after": "$550K"
+    },
+    {
+      "town": "st-pete-beach",
+      "surface": "comparison",
+      "before": "$606K median",
+      "after": "$577K"
+    },
+    {
+      "town": "st-petersburg",
+      "surface": "comparison",
+      "before": "$430K median",
+      "after": "$495K"
+    },
+    {
+      "town": "sun-city-center",
+      "surface": "comparison",
+      "before": "$275K median",
+      "after": "$250K"
+    },
+    {
+      "town": "tampa",
+      "surface": "comparison",
+      "before": "$479K median",
+      "after": "$479K"
+    },
+    {
+      "town": "tarpon-springs",
+      "surface": "comparison",
+      "before": "$390K median",
+      "after": "$390K"
+    },
+    {
+      "town": "treasure-island",
+      "surface": "comparison",
+      "before": "$662K median",
+      "after": "$825K"
+    },
+    {
+      "town": "bradenton",
+      "surface": "comparison",
+      "before": "$283K median",
+      "after": "$470K"
+    },
+    {
+      "town": "bradenton-beach",
+      "surface": "comparison",
+      "before": "$638K median",
+      "after": "$860K"
+    },
+    {
+      "town": "cortez",
+      "surface": "comparison",
+      "before": "$490K median",
+      "after": "$490K"
+    },
+    {
+      "town": "englewood",
+      "surface": "comparison",
+      "before": "$329K median",
+      "after": "$339K"
+    },
+    {
+      "town": "sarasota",
+      "surface": "comparison",
+      "before": "$428K median",
+      "after": "$530K"
+    },
+    {
+      "town": "siesta-key",
+      "surface": "comparison",
+      "before": "$809K median",
+      "after": "$1.1M"
+    },
+    {
+      "town": "venice",
+      "surface": "comparison",
+      "before": "$384K median",
+      "after": "$385K"
+    },
+    {
+      "town": "bonita-springs",
+      "surface": "comparison",
+      "before": "$545K median",
+      "after": "$476K"
+    },
+    {
+      "town": "cape-coral",
+      "surface": "comparison",
+      "before": "$380K median",
+      "after": "$369K"
+    },
+    {
+      "town": "chokoloskee",
+      "surface": "comparison",
+      "before": "$310K median",
+      "after": "$310K"
+    },
+    {
+      "town": "everglades-city",
+      "surface": "comparison",
+      "before": "$325K median",
+      "after": "$250K"
+    },
+    {
+      "town": "fort-myers",
+      "surface": "comparison",
+      "before": "$325K median",
+      "after": "$310K"
+    },
+    {
+      "town": "fort-myers-beach",
+      "surface": "comparison",
+      "before": "$492K median",
+      "after": "$492K"
+    },
+    {
+      "town": "marco-island",
+      "surface": "comparison",
+      "before": "$1.38M median",
+      "after": "$1.01M"
+    },
+    {
+      "town": "port-charlotte",
+      "surface": "comparison",
+      "before": "$310K median",
+      "after": "$290K"
+    },
+    {
+      "town": "punta-gorda",
+      "surface": "comparison",
+      "before": "$322K median",
+      "after": "$333K"
+    },
+    {
+      "town": "sanibel-island",
+      "surface": "comparison",
+      "before": "$910K median",
+      "after": "$910K"
+    },
+    {
+      "town": "key-largo",
+      "surface": "comparison",
+      "before": "$985K median",
+      "after": "$809K"
+    },
+    {
+      "town": "bal-harbour",
+      "surface": "comparison",
+      "before": "$1.28M median",
+      "after": "$1.55M"
+    },
+    {
+      "town": "boca-raton",
+      "surface": "comparison",
+      "before": "$630K median",
+      "after": "$584K"
+    },
+    {
+      "town": "dania-beach",
+      "surface": "comparison",
+      "before": "$370K median",
+      "after": "$370K"
+    },
+    {
+      "town": "hallandale",
+      "surface": "comparison",
+      "before": "$265K median",
+      "after": "$245K"
+    },
+    {
+      "town": "highland-beach",
+      "surface": "comparison",
+      "before": "$930K median",
+      "after": "$1.0M"
+    },
+    {
+      "town": "hollywood",
+      "surface": "comparison",
+      "before": "$502K median",
+      "after": "$478K"
+    },
+    {
+      "town": "lauderdale-by-the-sea",
+      "surface": "comparison",
+      "before": "$629K median",
+      "after": "$528K"
+    },
+    {
+      "town": "lighthouse-point",
+      "surface": "comparison",
+      "before": "$825K median",
+      "after": "$873K"
+    },
+    {
+      "town": "north-miami-beach",
+      "surface": "comparison",
+      "before": "$380K median",
+      "after": "$475K"
+    },
+    {
+      "town": "north-palm-beach",
+      "surface": "comparison",
+      "before": "$445K median",
+      "after": "$628K"
+    },
+    {
+      "town": "palm-beach",
+      "surface": "comparison",
+      "before": "$2.69M median",
+      "after": "$1.85M"
+    },
+    {
+      "town": "palm-beach-gardens",
+      "surface": "comparison",
+      "before": "$730K median",
+      "after": "$810K"
+    },
+    {
+      "town": "riviera-beach",
+      "surface": "comparison",
+      "before": "$424K median",
+      "after": "$398K"
+    },
+    {
+      "town": "sunny-isles-beach",
+      "surface": "comparison",
+      "before": "$680K median",
+      "after": "$2.06M"
+    },
+    {
+      "town": "west-palm-beach",
+      "surface": "comparison",
+      "before": "$405K median",
+      "after": "$404K"
+    },
+    {
+      "town": "wilton-manors",
+      "surface": "comparison",
+      "before": "$653K median",
+      "after": "$693K"
+    },
+    {
+      "town": "jensen-beach",
+      "surface": "comparison",
+      "before": "$395K median",
+      "after": "$475K"
+    },
+    {
+      "town": "port-st-lucie",
+      "surface": "comparison",
+      "before": "$395K median",
+      "after": "$395K"
+    },
+    {
+      "town": "sebastian",
+      "surface": "comparison",
+      "before": "$358K median",
+      "after": "$399K"
+    },
+    {
+      "town": "stuart",
+      "surface": "comparison",
+      "before": "$380K median",
+      "after": "$580K"
+    },
+    {
+      "town": "vero-beach",
+      "surface": "comparison",
+      "before": "$390K median",
+      "after": "$377K"
+    },
+    {
+      "town": "indialantic",
+      "surface": "comparison",
+      "before": "$763K median",
+      "after": "$763K"
+    },
+    {
+      "town": "melbourne-beach",
+      "surface": "comparison",
+      "before": "$659K median",
+      "after": "$560K"
+    },
+    {
+      "town": "palm-bay",
+      "surface": "comparison",
+      "before": "$330K median",
+      "after": "$330K"
+    },
+    {
+      "town": "satellite-beach",
+      "surface": "comparison",
+      "before": "$575K median",
+      "after": "$516K"
+    },
+    {
+      "town": "titusville",
+      "surface": "comparison",
+      "before": "$283K median",
+      "after": "$292K"
+    },
+    {
+      "town": "west-melbourne",
+      "surface": "comparison",
+      "before": "$420K median",
+      "after": "$380K"
+    },
+    {
+      "town": "atlantic-beach",
+      "surface": "comparison",
+      "before": "$630K median",
+      "after": "$640K"
+    },
+    {
+      "town": "neptune-beach",
+      "surface": "comparison",
+      "before": "$825K median",
+      "after": "$790K"
+    },
+    {
+      "town": "ponte-vedra-beach",
+      "surface": "comparison",
+      "before": "$670K median",
+      "after": "$1.43M"
+    },
+    {
+      "town": "st-augustine-beach",
+      "surface": "comparison",
+      "before": "$604K median",
+      "after": "$621K"
+    },
+    {
+      "town": "daytona-beach-shores",
+      "surface": "comparison",
+      "before": "$435K median",
+      "after": "$380K"
+    },
+    {
+      "town": "ormond-beach",
+      "surface": "comparison",
+      "before": "$380K median",
+      "after": "$383K"
+    },
+    {
+      "town": "palm-coast",
+      "surface": "comparison",
+      "before": "$350K median",
+      "after": "$356K"
+    },
+    {
+      "town": "port-orange",
+      "surface": "comparison",
+      "before": "$353K median",
+      "after": "$355K"
+    },
+    {
+      "town": "navarre",
+      "surface": "comparison",
+      "before": "$417K median",
+      "after": "$415K"
+    },
+    {
+      "town": "mary-esther",
+      "surface": "comparison",
+      "before": "$324K median",
+      "after": "$325K"
+    },
+    {
+      "town": "fort-walton-beach",
+      "surface": "comparison",
+      "before": "$319K median",
+      "after": "$358K"
+    },
+    {
+      "town": "shalimar",
+      "surface": "comparison",
+      "before": "$522K median",
+      "after": "$449K"
+    },
+    {
+      "town": "niceville",
+      "surface": "comparison",
+      "before": "$435K median",
+      "after": "$520K"
+    },
+    {
+      "town": "miramar-beach",
+      "surface": "comparison",
+      "before": "$778K median",
+      "after": "$735K"
+    },
+    {
+      "town": "freeport",
+      "surface": "comparison",
+      "before": "$389K median",
+      "after": "$385K"
+    },
+    {
+      "town": "mexico-beach",
+      "surface": "comparison",
+      "before": "$550K median",
+      "after": "$497K"
+    },
+    {
+      "town": "keaton-beach",
+      "surface": "comparison",
+      "before": "Too few sales for a town median",
+      "after": "Ask for current sales"
+    },
+    {
+      "town": "horseshoe-beach",
+      "surface": "comparison",
+      "before": "$216K median",
+      "after": "$216K"
+    },
+    {
+      "town": "suwannee",
+      "surface": "comparison",
+      "before": "$261K median",
+      "after": "$261K"
+    },
+    {
+      "town": "yankeetown",
+      "surface": "comparison",
+      "before": "$254K median",
+      "after": "$192K"
+    },
+    {
+      "town": "inglis",
+      "surface": "comparison",
+      "before": "$292K median",
+      "after": "$237K"
+    },
+    {
+      "town": "hernando-beach",
+      "surface": "comparison",
+      "before": "$488K median",
+      "after": "$542K"
+    },
+    {
+      "town": "weeki-wachee",
+      "surface": "comparison",
+      "before": "$341K median",
+      "after": "$375K"
+    },
+    {
+      "town": "aripeka",
+      "surface": "comparison",
+      "before": "$500K median",
+      "after": "$251K"
+    },
+    {
+      "town": "hudson",
+      "surface": "comparison",
+      "before": "$286K median",
+      "after": "$274K"
+    },
+    {
+      "town": "port-richey",
+      "surface": "comparison",
+      "before": "$222K median",
+      "after": "$236K"
+    },
+    {
+      "town": "holiday",
+      "surface": "comparison",
+      "before": "$229K median",
+      "after": "$220K"
+    },
+    {
+      "town": "palm-harbor",
+      "surface": "comparison",
+      "before": "$365K median",
+      "after": "$485K"
+    },
+    {
+      "town": "oldsmar",
+      "surface": "comparison",
+      "before": "$361K median",
+      "after": "$399K"
+    },
+    {
+      "town": "belleair-beach",
+      "surface": "comparison",
+      "before": "$850K median",
+      "after": "$825K"
+    },
+    {
+      "town": "tierra-verde",
+      "surface": "comparison",
+      "before": "$840K median",
+      "after": "$640K"
+    },
+    {
+      "town": "indian-shores",
+      "surface": "comparison",
+      "before": "$650K median",
+      "after": "$575K"
+    },
+    {
+      "town": "redington-shores",
+      "surface": "comparison",
+      "before": "$625K median",
+      "after": "$650K"
+    },
+    {
+      "town": "gibsonton",
+      "surface": "comparison",
+      "before": "$415K median",
+      "after": "$320K"
+    },
+    {
+      "town": "miami",
+      "surface": "comparison",
+      "before": "$570K median",
+      "after": "$588K"
+    },
+    {
+      "town": "jacksonville",
+      "surface": "comparison",
+      "before": "$285K median",
+      "after": "$285K"
+    },
+    {
+      "town": "indian-river-shores",
+      "surface": "comparison",
+      "before": "$1.38M median",
+      "after": "$1.42M"
+    },
+    {
+      "town": "hutchinson-island",
+      "surface": "comparison",
+      "before": "$537K median",
+      "after": "$400K to $490K"
+    },
+    {
+      "town": "sewalls-point",
+      "surface": "comparison",
+      "before": "$2.2M median",
+      "after": "$2.2M"
+    },
+    {
+      "town": "palm-city",
+      "surface": "comparison",
+      "before": "$585K median",
+      "after": "$597K"
+    },
+    {
+      "town": "port-salerno",
+      "surface": "comparison",
+      "before": "$392K median",
+      "after": "$392K"
+    },
+    {
+      "town": "hobe-sound",
+      "surface": "comparison",
+      "before": "$515K median",
+      "after": "$515K"
+    },
+    {
+      "town": "tequesta",
+      "surface": "comparison",
+      "before": "$652K median",
+      "after": "$640K"
+    },
+    {
+      "town": "juno-beach",
+      "surface": "comparison",
+      "before": "$831K median",
+      "after": "$800K"
+    },
+    {
+      "town": "lake-park",
+      "surface": "comparison",
+      "before": "$480K median",
+      "after": "$480K"
+    },
+    {
+      "town": "palm-beach-shores",
+      "surface": "comparison",
+      "before": "$879K median",
+      "after": "$1.18M"
+    },
+    {
+      "town": "lake-worth-beach",
+      "surface": "comparison",
+      "before": "$442K median",
+      "after": "$445K"
+    },
+    {
+      "town": "lantana",
+      "surface": "comparison",
+      "before": "$350K median",
+      "after": "$423K"
+    },
+    {
+      "town": "boynton-beach",
+      "surface": "comparison",
+      "before": "$337K median",
+      "after": "$400K"
+    },
+    {
+      "town": "vilano-beach",
+      "surface": "comparison",
+      "before": "$667K median",
+      "after": "$790K"
+    },
+    {
+      "town": "crescent-beach",
+      "surface": "comparison",
+      "before": "$440K median",
+      "after": "$440K"
+    },
+    {
+      "town": "beverly-beach",
+      "surface": "comparison",
+      "before": "$745K median",
+      "after": "$975K"
+    },
+    {
+      "town": "ormond-by-the-sea",
+      "surface": "comparison",
+      "before": "$343K median",
+      "after": "$343K"
+    },
+    {
+      "town": "ponce-inlet",
+      "surface": "comparison",
+      "before": "$521K median",
+      "after": "$521K"
+    },
+    {
+      "town": "edgewater",
+      "surface": "comparison",
+      "before": "$318K median",
+      "after": "$259K"
+    },
+    {
+      "town": "cape-canaveral",
+      "surface": "comparison",
+      "before": "$315K median",
+      "after": "$288K"
+    },
+    {
+      "town": "merritt-island",
+      "surface": "comparison",
+      "before": "$400K median",
+      "after": "$460K"
+    },
+    {
+      "town": "cocoa-village",
+      "surface": "comparison",
+      "before": "$290K median",
+      "after": "$290K"
+    },
+    {
+      "town": "rockledge",
+      "surface": "comparison",
+      "before": "$397K median",
+      "after": "$397K"
+    },
+    {
+      "town": "indian-harbour-beach",
+      "surface": "comparison",
+      "before": "$454K median",
+      "after": "$454K"
+    },
+    {
+      "town": "melbourne",
+      "surface": "comparison",
+      "before": "$350K median",
+      "after": "$350K"
+    },
+    {
+      "town": "marathon",
+      "surface": "comparison",
+      "before": "$715K median",
+      "after": "$715K"
+    },
+    {
+      "town": "big-pine-key",
+      "surface": "comparison",
+      "before": "$740K median",
+      "after": "$740K"
+    },
+    {
+      "town": "key-biscayne",
+      "surface": "comparison",
+      "before": "$1.49M median",
+      "after": "$1.49M"
+    },
+    {
+      "town": "boca-grande",
+      "surface": "comparison",
+      "before": "$2.4M median",
+      "after": "$2.4M"
+    },
+    {
+      "town": "pompano-beach",
+      "surface": "comparison",
+      "before": "$395K median",
+      "after": "$395K"
+    },
+    {
+      "town": "deerfield-beach",
+      "surface": "comparison",
+      "before": "$330K median",
+      "after": "$330K"
+    },
+    {
+      "town": "hudson",
+      "surface": "neighborhood",
+      "before": "Hudson Beach Estates: about $386K, on just 2 sales (Redfin, Jan 2026)",
+      "after": "Hudson Beach Estates: $342K median across 36 recorded single-family sales, May–Oct 2026 (Pasco County sample, HUBE)"
+    },
+    {
+      "town": "hudson",
+      "surface": "neighborhood",
+      "before": "Sea Pines: about $345K median sale (Redfin, Jun 2026)",
+      "after": "Sea Pines: $285K median across 23 recorded single-family sales, May–Oct 2026 (Pasco County sample, SEPN)"
+    },
+    {
+      "town": "hudson",
+      "surface": "neighborhood",
+      "before": "Beacon Woods East: about $260K (Momentum, Jun 2026)",
+      "after": "Beacon Woods East: $341K median across 54 recorded single-family sales, May–Oct 2026 (Pasco County sample, BCWE)"
+    }
+  ],
+  "budget_filter_corrections": [
+    {
+      "town": "pcb",
+      "old_budget_thousands": 485,
+      "new_lower_bound_thousands": 425.0
+    },
+    {
+      "town": "apalachicola",
+      "old_budget_thousands": 342,
+      "new_lower_bound_thousands": 300.0
+    },
+    {
+      "town": "cedarkey",
+      "old_budget_thousands": 322,
+      "new_lower_bound_thousands": 320.0
+    },
+    {
+      "town": "dunedin",
+      "old_budget_thousands": 475,
+      "new_lower_bound_thousands": 450.0
+    },
+    {
+      "town": "clearwaterbeach",
+      "old_budget_thousands": 525,
+      "new_lower_bound_thousands": 650.0
+    },
+    {
+      "town": "gulfport",
+      "old_budget_thousands": 400,
+      "new_lower_bound_thousands": 385.0
+    },
+    {
+      "town": "ami",
+      "old_budget_thousands": 1150,
+      "new_lower_bound_thousands": 1300.0
+    },
+    {
+      "town": "longboat",
+      "old_budget_thousands": 878,
+      "new_lower_bound_thousands": 732.0
+    },
+    {
+      "town": "captiva",
+      "old_budget_thousands": 1195,
+      "new_lower_bound_thousands": 560.0
+    },
+    {
+      "town": "matlacha",
+      "old_budget_thousands": 495,
+      "new_lower_bound_thousands": 494.0
+    },
+    {
+      "town": "islamorada",
+      "old_budget_thousands": 1100,
+      "new_lower_bound_thousands": 1440.0
+    },
+    {
+      "town": "southbeach",
+      "old_budget_thousands": 600,
+      "new_lower_bound_thousands": 524.0
+    },
+    {
+      "town": "delray",
+      "old_budget_thousands": 768,
+      "new_lower_bound_thousands": 546.0
+    },
+    {
+      "town": "jupiter",
+      "old_budget_thousands": 700,
+      "new_lower_bound_thousands": 720.0
+    },
+    {
+      "town": "fortpierce",
+      "old_budget_thousands": 280,
+      "new_lower_bound_thousands": 278.0
+    },
+    {
+      "town": "cocoa",
+      "old_budget_thousands": 469,
+      "new_lower_bound_thousands": 450.0
+    },
+    {
+      "town": "nsb",
+      "old_budget_thousands": 421,
+      "new_lower_bound_thousands": 450.0
+    },
+    {
+      "town": "daytona",
+      "old_budget_thousands": 322,
+      "new_lower_bound_thousands": 211.0
+    },
+    {
+      "town": "flagler",
+      "old_budget_thousands": 375,
+      "new_lower_bound_thousands": 450.0
+    },
+    {
+      "town": "staug",
+      "old_budget_thousands": 477,
+      "new_lower_bound_thousands": 422.0
+    },
+    {
+      "town": "jaxbeach",
+      "old_budget_thousands": 660,
+      "new_lower_bound_thousands": 720.0
+    },
+    {
+      "town": "fernandina",
+      "old_budget_thousands": 611,
+      "new_lower_bound_thousands": 581.0
+    },
+    {
+      "town": "st-george-island",
+      "old_budget_thousands": 1100,
+      "new_lower_bound_thousands": 1250.0
+    },
+    {
+      "town": "st-teresa",
+      "old_budget_thousands": 408,
+      "new_lower_bound_thousands": null
+    },
+    {
+      "town": "st-marks",
+      "old_budget_thousands": 219,
+      "new_lower_bound_thousands": null
+    },
+    {
+      "town": "panama-city",
+      "old_budget_thousands": 270,
+      "new_lower_bound_thousands": 284.0
+    },
+    {
+      "town": "pensacola",
+      "old_budget_thousands": 367,
+      "new_lower_bound_thousands": 267.0
+    },
+    {
+      "town": "pensacola-beach",
+      "old_budget_thousands": 775,
+      "new_lower_bound_thousands": 738.0
+    },
+    {
+      "town": "navarre-beach",
+      "old_budget_thousands": 880,
+      "new_lower_bound_thousands": 765.0
+    },
+    {
+      "town": "perdido-key",
+      "old_budget_thousands": 591,
+      "new_lower_bound_thousands": 735.0
+    },
+    {
+      "town": "port-st-joe",
+      "old_budget_thousands": 440,
+      "new_lower_bound_thousands": 460.0
+    },
+    {
+      "town": "crystal-river",
+      "old_budget_thousands": 272,
+      "new_lower_bound_thousands": 335.0
+    },
+    {
+      "town": "homosassa",
+      "old_budget_thousands": 355,
+      "new_lower_bound_thousands": 330.0
+    },
+    {
+      "town": "steinhatchee",
+      "old_budget_thousands": 285,
+      "new_lower_bound_thousands": 279.0
+    },
+    {
+      "town": "apollo-beach",
+      "old_budget_thousands": 420,
+      "new_lower_bound_thousands": 525.0
+    },
+    {
+      "town": "clearwater",
+      "old_budget_thousands": 313,
+      "new_lower_bound_thousands": 360.0
+    },
+    {
+      "town": "indian-rocks-beach",
+      "old_budget_thousands": 747,
+      "new_lower_bound_thousands": 575.0
+    },
+    {
+      "town": "madeira-beach",
+      "old_budget_thousands": 450,
+      "new_lower_bound_thousands": 604.0
+    },
+    {
+      "town": "new-port-richey",
+      "old_budget_thousands": 235,
+      "new_lower_bound_thousands": 228.0
+    },
+    {
+      "town": "safety-harbor",
+      "old_budget_thousands": 577,
+      "new_lower_bound_thousands": 550.0
+    },
+    {
+      "town": "st-pete-beach",
+      "old_budget_thousands": 606,
+      "new_lower_bound_thousands": 577.0
+    },
+    {
+      "town": "st-petersburg",
+      "old_budget_thousands": 430,
+      "new_lower_bound_thousands": 495.0
+    },
+    {
+      "town": "sun-city-center",
+      "old_budget_thousands": 275,
+      "new_lower_bound_thousands": 250.0
+    },
+    {
+      "town": "treasure-island",
+      "old_budget_thousands": 662,
+      "new_lower_bound_thousands": 825.0
+    },
+    {
+      "town": "bradenton",
+      "old_budget_thousands": 283,
+      "new_lower_bound_thousands": 470.0
+    },
+    {
+      "town": "bradenton-beach",
+      "old_budget_thousands": 638,
+      "new_lower_bound_thousands": 860.0
+    },
+    {
+      "town": "englewood",
+      "old_budget_thousands": 329,
+      "new_lower_bound_thousands": 339.0
+    },
+    {
+      "town": "sarasota",
+      "old_budget_thousands": 428,
+      "new_lower_bound_thousands": 530.0
+    },
+    {
+      "town": "siesta-key",
+      "old_budget_thousands": 809,
+      "new_lower_bound_thousands": 1100.0
+    },
+    {
+      "town": "venice",
+      "old_budget_thousands": 384,
+      "new_lower_bound_thousands": 385.0
+    },
+    {
+      "town": "bonita-springs",
+      "old_budget_thousands": 545,
+      "new_lower_bound_thousands": 476.0
+    },
+    {
+      "town": "cape-coral",
+      "old_budget_thousands": 380,
+      "new_lower_bound_thousands": 369.0
+    },
+    {
+      "town": "everglades-city",
+      "old_budget_thousands": 325,
+      "new_lower_bound_thousands": 250.0
+    },
+    {
+      "town": "fort-myers",
+      "old_budget_thousands": 325,
+      "new_lower_bound_thousands": 310.0
+    },
+    {
+      "town": "marco-island",
+      "old_budget_thousands": 1375,
+      "new_lower_bound_thousands": 1010.0
+    },
+    {
+      "town": "port-charlotte",
+      "old_budget_thousands": 310,
+      "new_lower_bound_thousands": 290.0
+    },
+    {
+      "town": "punta-gorda",
+      "old_budget_thousands": 322,
+      "new_lower_bound_thousands": 333.0
+    },
+    {
+      "town": "key-largo",
+      "old_budget_thousands": 985,
+      "new_lower_bound_thousands": 809.0
+    },
+    {
+      "town": "bal-harbour",
+      "old_budget_thousands": 1280,
+      "new_lower_bound_thousands": 1550.0
+    },
+    {
+      "town": "boca-raton",
+      "old_budget_thousands": 630,
+      "new_lower_bound_thousands": 584.0
+    },
+    {
+      "town": "hallandale",
+      "old_budget_thousands": 265,
+      "new_lower_bound_thousands": 245.0
+    },
+    {
+      "town": "highland-beach",
+      "old_budget_thousands": 930,
+      "new_lower_bound_thousands": 1000.0
+    },
+    {
+      "town": "hollywood",
+      "old_budget_thousands": 502,
+      "new_lower_bound_thousands": 478.0
+    },
+    {
+      "town": "lauderdale-by-the-sea",
+      "old_budget_thousands": 629,
+      "new_lower_bound_thousands": 528.0
+    },
+    {
+      "town": "lighthouse-point",
+      "old_budget_thousands": 825,
+      "new_lower_bound_thousands": 873.0
+    },
+    {
+      "town": "north-miami-beach",
+      "old_budget_thousands": 380,
+      "new_lower_bound_thousands": 475.0
+    },
+    {
+      "town": "north-palm-beach",
+      "old_budget_thousands": 445,
+      "new_lower_bound_thousands": 628.0
+    },
+    {
+      "town": "palm-beach",
+      "old_budget_thousands": 2686,
+      "new_lower_bound_thousands": 1850.0
+    },
+    {
+      "town": "palm-beach-gardens",
+      "old_budget_thousands": 730,
+      "new_lower_bound_thousands": 810.0
+    },
+    {
+      "town": "riviera-beach",
+      "old_budget_thousands": 424,
+      "new_lower_bound_thousands": 398.0
+    },
+    {
+      "town": "sunny-isles-beach",
+      "old_budget_thousands": 680,
+      "new_lower_bound_thousands": 2060.0
+    },
+    {
+      "town": "west-palm-beach",
+      "old_budget_thousands": 405,
+      "new_lower_bound_thousands": 404.0
+    },
+    {
+      "town": "wilton-manors",
+      "old_budget_thousands": 653,
+      "new_lower_bound_thousands": 693.0
+    },
+    {
+      "town": "jensen-beach",
+      "old_budget_thousands": 395,
+      "new_lower_bound_thousands": 475.0
+    },
+    {
+      "town": "sebastian",
+      "old_budget_thousands": 358,
+      "new_lower_bound_thousands": 399.0
+    },
+    {
+      "town": "stuart",
+      "old_budget_thousands": 380,
+      "new_lower_bound_thousands": 580.0
+    },
+    {
+      "town": "vero-beach",
+      "old_budget_thousands": 390,
+      "new_lower_bound_thousands": 377.0
+    },
+    {
+      "town": "melbourne-beach",
+      "old_budget_thousands": 659,
+      "new_lower_bound_thousands": 560.0
+    },
+    {
+      "town": "satellite-beach",
+      "old_budget_thousands": 575,
+      "new_lower_bound_thousands": 516.0
+    },
+    {
+      "town": "titusville",
+      "old_budget_thousands": 283,
+      "new_lower_bound_thousands": 292.0
+    },
+    {
+      "town": "west-melbourne",
+      "old_budget_thousands": 420,
+      "new_lower_bound_thousands": 380.0
+    },
+    {
+      "town": "atlantic-beach",
+      "old_budget_thousands": 630,
+      "new_lower_bound_thousands": 640.0
+    },
+    {
+      "town": "neptune-beach",
+      "old_budget_thousands": 825,
+      "new_lower_bound_thousands": 790.0
+    },
+    {
+      "town": "ponte-vedra-beach",
+      "old_budget_thousands": 670,
+      "new_lower_bound_thousands": 1430.0
+    },
+    {
+      "town": "st-augustine-beach",
+      "old_budget_thousands": 604,
+      "new_lower_bound_thousands": 621.0
+    },
+    {
+      "town": "daytona-beach-shores",
+      "old_budget_thousands": 435,
+      "new_lower_bound_thousands": 380.0
+    },
+    {
+      "town": "ormond-beach",
+      "old_budget_thousands": 380,
+      "new_lower_bound_thousands": 383.0
+    },
+    {
+      "town": "palm-coast",
+      "old_budget_thousands": 350,
+      "new_lower_bound_thousands": 356.0
+    },
+    {
+      "town": "port-orange",
+      "old_budget_thousands": 353,
+      "new_lower_bound_thousands": 355.0
+    },
+    {
+      "town": "navarre",
+      "old_budget_thousands": 417,
+      "new_lower_bound_thousands": 415.0
+    },
+    {
+      "town": "mary-esther",
+      "old_budget_thousands": 324,
+      "new_lower_bound_thousands": 325.0
+    },
+    {
+      "town": "fort-walton-beach",
+      "old_budget_thousands": 319,
+      "new_lower_bound_thousands": 358.0
+    },
+    {
+      "town": "shalimar",
+      "old_budget_thousands": 522,
+      "new_lower_bound_thousands": 449.0
+    },
+    {
+      "town": "niceville",
+      "old_budget_thousands": 435,
+      "new_lower_bound_thousands": 520.0
+    },
+    {
+      "town": "miramar-beach",
+      "old_budget_thousands": 778,
+      "new_lower_bound_thousands": 735.0
+    },
+    {
+      "town": "freeport",
+      "old_budget_thousands": 389,
+      "new_lower_bound_thousands": 385.0
+    },
+    {
+      "town": "mexico-beach",
+      "old_budget_thousands": 550,
+      "new_lower_bound_thousands": 497.0
+    },
+    {
+      "town": "keaton-beach",
+      "old_budget_thousands": 389,
+      "new_lower_bound_thousands": null
+    },
+    {
+      "town": "yankeetown",
+      "old_budget_thousands": 254,
+      "new_lower_bound_thousands": 192.0
+    },
+    {
+      "town": "inglis",
+      "old_budget_thousands": 292,
+      "new_lower_bound_thousands": 237.0
+    },
+    {
+      "town": "hernando-beach",
+      "old_budget_thousands": 488,
+      "new_lower_bound_thousands": 542.0
+    },
+    {
+      "town": "weeki-wachee",
+      "old_budget_thousands": 341,
+      "new_lower_bound_thousands": 375.0
+    },
+    {
+      "town": "aripeka",
+      "old_budget_thousands": 500,
+      "new_lower_bound_thousands": 251.0
+    },
+    {
+      "town": "hudson",
+      "old_budget_thousands": 286,
+      "new_lower_bound_thousands": 274.0
+    },
+    {
+      "town": "port-richey",
+      "old_budget_thousands": 222,
+      "new_lower_bound_thousands": 236.0
+    },
+    {
+      "town": "holiday",
+      "old_budget_thousands": 229,
+      "new_lower_bound_thousands": 220.0
+    },
+    {
+      "town": "palm-harbor",
+      "old_budget_thousands": 365,
+      "new_lower_bound_thousands": 485.0
+    },
+    {
+      "town": "oldsmar",
+      "old_budget_thousands": 361,
+      "new_lower_bound_thousands": 399.0
+    },
+    {
+      "town": "belleair-beach",
+      "old_budget_thousands": 850,
+      "new_lower_bound_thousands": 825.0
+    },
+    {
+      "town": "tierra-verde",
+      "old_budget_thousands": 840,
+      "new_lower_bound_thousands": 640.0
+    },
+    {
+      "town": "indian-shores",
+      "old_budget_thousands": 650,
+      "new_lower_bound_thousands": 575.0
+    },
+    {
+      "town": "redington-shores",
+      "old_budget_thousands": 625,
+      "new_lower_bound_thousands": 650.0
+    },
+    {
+      "town": "gibsonton",
+      "old_budget_thousands": 415,
+      "new_lower_bound_thousands": 320.0
+    },
+    {
+      "town": "miami",
+      "old_budget_thousands": 570,
+      "new_lower_bound_thousands": 588.0
+    },
+    {
+      "town": "indian-river-shores",
+      "old_budget_thousands": 1380,
+      "new_lower_bound_thousands": 1420.0
+    },
+    {
+      "town": "hutchinson-island",
+      "old_budget_thousands": 537,
+      "new_lower_bound_thousands": 400.0
+    },
+    {
+      "town": "palm-city",
+      "old_budget_thousands": 585,
+      "new_lower_bound_thousands": 597.0
+    },
+    {
+      "town": "tequesta",
+      "old_budget_thousands": 652,
+      "new_lower_bound_thousands": 640.0
+    },
+    {
+      "town": "juno-beach",
+      "old_budget_thousands": 831,
+      "new_lower_bound_thousands": 800.0
+    },
+    {
+      "town": "palm-beach-shores",
+      "old_budget_thousands": 879,
+      "new_lower_bound_thousands": 1180.0
+    },
+    {
+      "town": "lake-worth-beach",
+      "old_budget_thousands": 442,
+      "new_lower_bound_thousands": 445.0
+    },
+    {
+      "town": "lantana",
+      "old_budget_thousands": 350,
+      "new_lower_bound_thousands": 423.0
+    },
+    {
+      "town": "boynton-beach",
+      "old_budget_thousands": 337,
+      "new_lower_bound_thousands": 400.0
+    },
+    {
+      "town": "vilano-beach",
+      "old_budget_thousands": 667,
+      "new_lower_bound_thousands": 790.0
+    },
+    {
+      "town": "beverly-beach",
+      "old_budget_thousands": 745,
+      "new_lower_bound_thousands": 975.0
+    },
+    {
+      "town": "edgewater",
+      "old_budget_thousands": 318,
+      "new_lower_bound_thousands": 259.0
+    },
+    {
+      "town": "cape-canaveral",
+      "old_budget_thousands": 315,
+      "new_lower_bound_thousands": 288.0
+    },
+    {
+      "town": "merritt-island",
+      "old_budget_thousands": 400,
+      "new_lower_bound_thousands": 460.0
+    },
+    {
+      "town": "boca-grande",
+      "old_budget_thousands": 2425,
+      "new_lower_bound_thousands": 2400.0
+    }
+  ],
+  "broker_guidance_labels_added": 18,
+  "pdfs": [
+    {
+      "file": "guides/move-and-belong-guide.pdf",
+      "pages": 14,
+      "text_characters": 14956,
+      "amounts": [],
+      "sha256": "38ef5ca32341804e7ab444a932ba13c50d47df1d452a0aa43a451736fe7bcda3"
+    },
+    {
+      "file": "downloads/florida-beach-towns-flood-risk.pdf",
+      "pages": 9,
+      "text_characters": 12458,
+      "amounts": [],
+      "sha256": "60f16e557bdd75a51994206500b79b3f8cf984cadefd146cae1dd3ee2f2f011b"
+    }
+  ],
+  "independent_numeric_certification": "Only the three explicitly defined Hudson recorded-sale samples were recalculated. Other existing published prices are synchronized and labeled, not independently certified."
+}

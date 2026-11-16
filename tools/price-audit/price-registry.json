@@ -1,0 +1,1004 @@
+{
+  "30a": {
+    "display_price": "$915K",
+    "source_context": "About $915K median in Santa Rosa Beach (Redfin, Aug 2026). Close to the beach, $2M and up.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "destin": {
+    "display_price": "$540K",
+    "source_context": "About $540K median, all home types. Close to the Gulf, $900K and up.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "pcb": {
+    "display_price": "$425K",
+    "source_context": "About $425K median sale over the last 12 months (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "apalachicola": {
+    "display_price": "$300K to $385K",
+    "source_context": "About $300K to $385K in town (Zillow and Redfin, Aug 2026). St. George Island about $1.2M.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "cedarkey": {
+    "display_price": "$320K",
+    "source_context": "About $320K typical home value (Zillow, Sept 2026). About $391K median list price (Momentum, Nov 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "dunedin": {
+    "display_price": "$450K",
+    "source_context": "About $450K median (Momentum, Jun 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "clearwaterbeach": {
+    "display_price": "$650K to $800K",
+    "source_context": "About $650K to $800K median sale, mostly condos (2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "gulfport": {
+    "display_price": "$385K",
+    "source_context": "About $385K median sale (Momentum, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "ami": {
+    "display_price": "$1.3M to $1.65M",
+    "source_context": "About $1.3M to $1.65M median, depending on the city (2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "longboat": {
+    "display_price": "$732K",
+    "source_context": "About $732K median sale (Momentum, Nov 2026). Zillow's typical value is about $951K (Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "captiva": {
+    "display_price": "$560K",
+    "source_context": "About $560K median sale, mostly condos (Momentum, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "matlacha": {
+    "display_price": "$494K",
+    "source_context": "About $494K median sale (Momentum, Nov 2026), based on a small number of sales",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "naples": {
+    "display_price": "$685K",
+    "source_context": "About $685K median. Collier County about $615K (June 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "keywest": {
+    "display_price": "$1.05M",
+    "source_context": "About $1.05M median (Redfin, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "islamorada": {
+    "display_price": "$1.44M",
+    "source_context": "About $1.44M median sale (Broker One, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "southbeach": {
+    "display_price": "$524K",
+    "source_context": "About $524K typical value across Miami Beach (Zillow, May 2026). South Beach sales run higher.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "ftl": {
+    "display_price": "$605K",
+    "source_context": "About $605K median, all home types (fall 2026). Condos citywide about $380K.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "delray": {
+    "display_price": "$546K",
+    "source_context": "About $546K median across Delray's communities (Momentum, Jun 2026). Downtown and by the water, much more.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "jupiter": {
+    "display_price": "$720K",
+    "source_context": "About $720K median sale (Horizon Palm Realty, Apr 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "fortpierce": {
+    "display_price": "$278K",
+    "source_context": "About $278K typical home value (Zillow, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "cocoa": {
+    "display_price": "$450K",
+    "source_context": "About $450K median sale (Resideline, Sep 2026). Houses run about $815K to $875K (Max Life Realty, Feb 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "nsb": {
+    "display_price": "$450K",
+    "source_context": "About $450K median sale (Resideline, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "daytona": {
+    "display_price": "$211K",
+    "source_context": "About $211K median sale over the past year, condos included (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "flagler": {
+    "display_price": "$450K",
+    "source_context": "About $450K median sale (Redfin, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "staug": {
+    "display_price": "$422K",
+    "source_context": "About $422K median (Momentum, Jun 2026). Near downtown, more.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "jaxbeach": {
+    "display_price": "$720K",
+    "source_context": "About $720K median sale (Momentum, Q2 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "fernandina": {
+    "display_price": "$581K",
+    "source_context": "About $581K median sale (Resideline, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "carrabelle": {
+    "display_price": "$260K",
+    "source_context": "About $260K median sale (Redfin, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "st-george-island": {
+    "display_price": "$1.25M",
+    "source_context": "About $1.25M median sale (Redfin, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "st-teresa": {
+    "display_price": null,
+    "source_context": "Too few sales for a median. Recent SummerCamp sales ran about $385K to $430K (Momentum, 2024)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "st-marks": {
+    "display_price": null,
+    "source_context": "Too few sales for a solid median. Typical value in Wakulla County is about $286K (Zillow, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "panama-city": {
+    "display_price": "$284K",
+    "source_context": "About $284K typical home value (Zillow via Stacker, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "pensacola": {
+    "display_price": "$267K",
+    "source_context": "About $267K typical home value citywide (Zillow via Stacker, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "pensacola-beach": {
+    "display_price": "$738K",
+    "source_context": "About $738K median sale on the island (Redfin, Nov 2025)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "navarre-beach": {
+    "display_price": "$765K",
+    "source_context": "About $765K median sale (Rocket Homes, Jun 2025). Mostly condos.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "perdido-key": {
+    "display_price": "$735K",
+    "source_context": "About $735K median sale on the island (Momentum, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "gulf-breeze": {
+    "display_price": "$479K",
+    "source_context": "About $479K typical home value (Zillow via Stacker, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "port-st-joe": {
+    "display_price": "$460K",
+    "source_context": "About $460K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "crystal-river": {
+    "display_price": "$335K",
+    "source_context": "About $335K median sale (Resideline, Oct 2026). About $312K in August alone (Redfin, Aug 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "homosassa": {
+    "display_price": "$330K",
+    "source_context": "About $330K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "ozello": {
+    "display_price": "$231K",
+    "source_context": "About $231K median sale in the Crystal River ZIP that includes Ozello (Redfin, Jun 2026). Island homes vary a lot.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "steinhatchee": {
+    "display_price": "$279K",
+    "source_context": "About $279K typical value (Zillow, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "apollo-beach": {
+    "display_price": "$525K",
+    "source_context": "About $525K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "clearwater": {
+    "display_price": "$360K",
+    "source_context": "About $360K median sale (Broker One, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "indian-rocks-beach": {
+    "display_price": "$575K",
+    "source_context": "About $575K median sale (Momentum, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "madeira-beach": {
+    "display_price": "$604K",
+    "source_context": "About $604K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "new-port-richey": {
+    "display_price": "$228K",
+    "source_context": "About $228K median sale (Resideline, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "ruskin": {
+    "display_price": "$322K",
+    "source_context": "About $322K median sale over the past year (Momentum, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "safety-harbor": {
+    "display_price": "$550K",
+    "source_context": "About $550K median sale over the past year (Homes.com, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "st-pete-beach": {
+    "display_price": "$577K",
+    "source_context": "About $577K median sale (Redfin, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "st-petersburg": {
+    "display_price": "$495K",
+    "source_context": "About $495K median sale (Gulf Coast RE Group, Mar 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "sun-city-center": {
+    "display_price": "$250K",
+    "source_context": "About $250K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "tampa": {
+    "display_price": "$479K",
+    "source_context": "About $479K median (Redfin, summer 2026). The wider metro is about $378K (Homes.com, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "tarpon-springs": {
+    "display_price": "$390K",
+    "source_context": "About $390K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "treasure-island": {
+    "display_price": "$825K",
+    "source_context": "About $825K median sale (Momentum, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "bradenton": {
+    "display_price": "$470K",
+    "source_context": "About $470K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "bradenton-beach": {
+    "display_price": "$860K",
+    "source_context": "About $860K median sale over the past year (Homes.com, 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "cortez": {
+    "display_price": "$490K",
+    "source_context": "About $490K median sale (Redfin, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "englewood": {
+    "display_price": "$339K",
+    "source_context": "About $339K median sale over the last year (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "sarasota": {
+    "display_price": "$530K",
+    "source_context": "About $530K median citywide (AreaVibes, 2026). Near downtown and the bay, much more.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "siesta-key": {
+    "display_price": "$1.1M",
+    "source_context": "About $1.1M median sale (Feb 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "venice": {
+    "display_price": "$385K",
+    "source_context": "About $385K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "bonita-springs": {
+    "display_price": "$476K",
+    "source_context": "About $476K median sale (Momentum, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "cape-coral": {
+    "display_price": "$369K",
+    "source_context": "About $369K median single family sale (Royal Palm Coast Realtor Association, via Lifestyle and Luxury Living, Jul 2026). Condos about $230K.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "chokoloskee": {
+    "display_price": "$310K",
+    "source_context": "About $310K typical home value (Zillow, Sept 2026). Only a handful sell each year.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "everglades-city": {
+    "display_price": "$250K",
+    "source_context": "About $250K median sale (Homes.com, 2026). About $250K median on just 3 sales (Broker One, Nov 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "fort-myers": {
+    "display_price": "$310K",
+    "source_context": "About $310K typical home value (Zillow, May 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "fort-myers-beach": {
+    "display_price": "$492K",
+    "source_context": "About $492K median sale (Redfin, Sep 2026), down from a year earlier",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "marco-island": {
+    "display_price": "$1.01M",
+    "source_context": "About $1.01M median sale (Redfin, Nov 2025). Single family homes ran about $1.58M (Momentum, Sep 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "port-charlotte": {
+    "display_price": "$290K",
+    "source_context": "About $290K average price (Redfin, 2026). Charlotte County's median sale was about $339K (Redfin, Jun 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "punta-gorda": {
+    "display_price": "$333K",
+    "source_context": "About $333K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "sanibel-island": {
+    "display_price": "$910K",
+    "source_context": "About $910K median sale (Momentum, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "key-largo": {
+    "display_price": "$809K",
+    "source_context": "About $809K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "bal-harbour": {
+    "display_price": "$1.55M",
+    "source_context": "About $1.55M median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "boca-raton": {
+    "display_price": "$584K",
+    "source_context": "About $584K median sold price, all home types (Koolik, Jul 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "dania-beach": {
+    "display_price": "$370K",
+    "source_context": "About $370K median sale (Redfin, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "hallandale": {
+    "display_price": "$245K",
+    "source_context": "About $245K median sale, mostly condos (Horizon Palm Realty, Jun 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "highland-beach": {
+    "display_price": "$1.0M",
+    "source_context": "About $1.0M median sale over the last 12 months (Horizon Palm Realty, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "hollywood": {
+    "display_price": "$478K",
+    "source_context": "About $478K median sale over the last 12 months (Horizon Palm Realty, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "lauderdale-by-the-sea": {
+    "display_price": "$528K",
+    "source_context": "About $528K median sale over the last 12 months (Horizon Palm Realty, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "lighthouse-point": {
+    "display_price": "$873K",
+    "source_context": "About $873K median sale over the last 12 months (Horizon Palm Realty, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "north-miami-beach": {
+    "display_price": "$475K",
+    "source_context": "About $475K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "north-palm-beach": {
+    "display_price": "$628K",
+    "source_context": "About $628K median sale over the last 12 months (Horizon Palm Realty, Nov 2026). Zillow puts the typical value near $633K (Zillow, Sep 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "palm-beach": {
+    "display_price": "$1.85M",
+    "source_context": "About $1.85M median condo and $12.9M median single family sale (Elliman/Miller Samuel, Q2 2025)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "palm-beach-gardens": {
+    "display_price": "$810K",
+    "source_context": "About $810K median sale over the past year, $740K in October (Horizon Palm Realty, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "riviera-beach": {
+    "display_price": "$398K",
+    "source_context": "About $398K median sale (Resideline, Nov 2026). Singer Island about $799K (Redfin, Sep 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "sunny-isles-beach": {
+    "display_price": "$2.06M",
+    "source_context": "About $2.06M median recorded sale over the past 12 months (Josh Stein Realtor, Oct 2026). Older condos sell for far less.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "west-palm-beach": {
+    "display_price": "$404K",
+    "source_context": "About $404K median sale over the past year, $385K in October (Horizon Palm Realty, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "wilton-manors": {
+    "display_price": "$693K",
+    "source_context": "About $693K median sale (Resideline, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "jensen-beach": {
+    "display_price": "$475K",
+    "source_context": "About $475K median sale (Redfin, Sep 2026). About $450K across communities (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "port-st-lucie": {
+    "display_price": "$395K",
+    "source_context": "About $395K median sale over the past year (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "sebastian": {
+    "display_price": "$399K",
+    "source_context": "About $399K median sale (Redfin via Stacker, Jan to Mar 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "stuart": {
+    "display_price": "$580K",
+    "source_context": "About $580K median single family sale, 2026 to March (BeachesMLS via Treasure Coast Living). About $340K median for all home types (Redfin, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "vero-beach": {
+    "display_price": "$377K",
+    "source_context": "About $377K median sale (Redfin, Sept 2026). Resideline puts it at about $420K (Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "indialantic": {
+    "display_price": "$763K",
+    "source_context": "About $763K median sale (Redfin, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "melbourne-beach": {
+    "display_price": "$560K",
+    "source_context": "About $560K median sale (Redfin, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "palm-bay": {
+    "display_price": "$330K",
+    "source_context": "About $330K median sale (Redfin, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "satellite-beach": {
+    "display_price": "$516K",
+    "source_context": "About $516K median sale (Resideline, Oct 2026). About $575K over the past year (Momentum, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "titusville": {
+    "display_price": "$292K",
+    "source_context": "About $292K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "west-melbourne": {
+    "display_price": "$380K",
+    "source_context": "About $380K median sale over the past year (Momentum, Aug 2026). About $419K for recent closings (Resideline, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "atlantic-beach": {
+    "display_price": "$640K",
+    "source_context": "About $640K median sale (Momentum, Q2 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "neptune-beach": {
+    "display_price": "$790K",
+    "source_context": "About $790K median sale (Momentum, Q2 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "ponte-vedra-beach": {
+    "display_price": "$1.43M",
+    "source_context": "About $1.43M median in the 32082 ZIP (Jax Daily Record, Jun 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "st-augustine-beach": {
+    "display_price": "$621K",
+    "source_context": "About $621K median on the beach side (Momentum, 2026). St. Augustine overall about $463K.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "daytona-beach-shores": {
+    "display_price": "$380K",
+    "source_context": "About $380K median sale (Redfin, May 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "ormond-beach": {
+    "display_price": "$383K",
+    "source_context": "About $383K median sale over the last six months (Resideline, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "palm-coast": {
+    "display_price": "$356K",
+    "source_context": "About $356K median sale (Redfin, May 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "port-orange": {
+    "display_price": "$355K",
+    "source_context": "About $355K median sale (Redfin, May 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "navarre": {
+    "display_price": "$415K",
+    "source_context": "About $415K median sale (Resideline, Nov 2026). About $409K (Redfin, Nov 2025).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "mary-esther": {
+    "display_price": "$325K",
+    "source_context": "About $325K median sale (Momentum, Nov 2026). About $340K (Redfin, Aug 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "fort-walton-beach": {
+    "display_price": "$358K",
+    "source_context": "About $358K median sale (Momentum, Nov 2026). About $330K over six months (Resideline, Nov 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "shalimar": {
+    "display_price": "$449K",
+    "source_context": "About $449K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "niceville": {
+    "display_price": "$520K",
+    "source_context": "About $520K median sale (Momentum, Nov 2026). About $530K (Redfin, Jun 2026).",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "miramar-beach": {
+    "display_price": "$735K",
+    "source_context": "About $735K median sale (Resideline, Oct 2026). Half of sales closed between about $461K and $1.14M.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "freeport": {
+    "display_price": "$385K",
+    "source_context": "About $385K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "mexico-beach": {
+    "display_price": "$497K",
+    "source_context": "About $497K typical home value (Zillow via Stacker, Sep 2026). Recent sales run lower, about $275K median, because many are new townhomes (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "keaton-beach": {
+    "display_price": null,
+    "source_context": "Too few sales for a town median. Listed houses run about $289K to $489K (Coldwell Banker, Nov 2026). The Taylor County median was about $166K (Redfin, Nov 2025)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "horseshoe-beach": {
+    "display_price": "$216K",
+    "source_context": "About $216K typical home value (Zillow, Sept 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "suwannee": {
+    "display_price": "$261K",
+    "source_context": "About $261K typical home value (Zillow, Sept 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "yankeetown": {
+    "display_price": "$192K",
+    "source_context": "About $192K median estimated value (RealtyTrac, Oct 2026). Sold prices swing a lot with so few sales.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "inglis": {
+    "display_price": "$237K",
+    "source_context": "About $237K median sold price (RealtyTrac, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "hernando-beach": {
+    "display_price": "$542K",
+    "source_context": "About $542K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "weeki-wachee": {
+    "display_price": "$375K",
+    "source_context": "About $375K median sale (Momentum, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "aripeka": {
+    "display_price": "$251K",
+    "source_context": "About $251K median sale, on just 2 sales (Broker One, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "hudson": {
+    "display_price": "$274K",
+    "source_context": "About $274K median sale (Broker One, Nov 2026). Houses list for a median of about $325K.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "port-richey": {
+    "display_price": "$236K",
+    "source_context": "About $236K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "holiday": {
+    "display_price": "$220K",
+    "source_context": "About $220K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "palm-harbor": {
+    "display_price": "$485K",
+    "source_context": "About $485K median across Palm Harbor communities (Momentum, Jun 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "oldsmar": {
+    "display_price": "$399K",
+    "source_context": "About $399K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "belleair-beach": {
+    "display_price": "$825K",
+    "source_context": "About $825K median sale on few sales (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "tierra-verde": {
+    "display_price": "$640K",
+    "source_context": "About $640K median sale (Momentum, Nov 2026). Single family canal homes run much higher.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "indian-shores": {
+    "display_price": "$575K",
+    "source_context": "About $575K median sale (Momentum, Oct 2026). About 77% of sales are condos.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "redington-shores": {
+    "display_price": "$650K",
+    "source_context": "About $650K median sale (Momentum, Nov 2026). About 56% of sales are condos.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "gibsonton": {
+    "display_price": "$320K",
+    "source_context": "About $320K median sale over the last year (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "miami": {
+    "display_price": "$588K",
+    "source_context": "About $588K median sale (Zillow, Jun 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "jacksonville": {
+    "display_price": "$285K",
+    "source_context": "About $285K typical home value (Zillow, Sept 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "indian-river-shores": {
+    "display_price": "$1.42M",
+    "source_context": "About $1.42M median sale (Redfin, Sept 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "hutchinson-island": {
+    "display_price": "$400K to $490K",
+    "source_context": "About $400K to $490K median sale on the St. Lucie County side (Redfin, Jun and Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "sewalls-point": {
+    "display_price": "$2.2M",
+    "source_context": "About $2.2M median sale (Redfin, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "palm-city": {
+    "display_price": "$597K",
+    "source_context": "About $597K median sale (Resideline, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "port-salerno": {
+    "display_price": "$392K",
+    "source_context": "About $392K median sale (Redfin, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "hobe-sound": {
+    "display_price": "$515K",
+    "source_context": "About $515K median sale (Redfin, Sep 2026). Houses list around $797K (Broker One, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "tequesta": {
+    "display_price": "$640K",
+    "source_context": "About $640K median sale over the past year, with 46 of 168 sales over $1M (Horizon Palm Realty, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "juno-beach": {
+    "display_price": "$800K",
+    "source_context": "About $800K median sale over the past year (Horizon Palm Realty, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "lake-park": {
+    "display_price": "$480K",
+    "source_context": "About $480K median sale (Redfin, Sep 2026). Horizon Palm Realty puts the 12 month median at about $406K.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "palm-beach-shores": {
+    "display_price": "$1.18M",
+    "source_context": "About $1.18M median sale (Horizon Palm Realty, Nov 2026). Zillow's typical value is about $879K.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "lake-worth-beach": {
+    "display_price": "$445K",
+    "source_context": "About $445K median sale (Redfin, Sep 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "lantana": {
+    "display_price": "$423K",
+    "source_context": "About $423K median sale (Horizon Palm Realty, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "boynton-beach": {
+    "display_price": "$400K",
+    "source_context": "About $400K median sale over the past year (Horizon Palm Realty, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "vilano-beach": {
+    "display_price": "$790K",
+    "source_context": "About $790K median sale (Redfin, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "crescent-beach": {
+    "display_price": "$440K",
+    "source_context": "About $440K median sale (Redfin, June 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "beverly-beach": {
+    "display_price": "$975K",
+    "source_context": "About $975K median sale, from only 3 sales (Redfin, Sept 2026). Prices swing a lot by home type.",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "ormond-by-the-sea": {
+    "display_price": "$343K",
+    "source_context": "About $343K median sale (Redfin, Sept 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "ponce-inlet": {
+    "display_price": "$521K",
+    "source_context": "About $521K typical home value (Zillow, Aug 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "edgewater": {
+    "display_price": "$259K",
+    "source_context": "About $259K across the neighborhoods Momentum tracks (Momentum, Jun 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "cape-canaveral": {
+    "display_price": "$288K",
+    "source_context": "About $288K median sale over the past year (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "merritt-island": {
+    "display_price": "$460K",
+    "source_context": "About $460K median sale (Redfin, Nov 2025)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "cocoa-village": {
+    "display_price": "$290K",
+    "source_context": "About $290K typical home value for the city of Cocoa (Zillow, Jan 2026). About $329K median sale (Momentum, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "rockledge": {
+    "display_price": "$397K",
+    "source_context": "About $397K typical home value (Zillow, Sept 2026). About $379K median sale (Momentum, Nov 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "indian-harbour-beach": {
+    "display_price": "$454K",
+    "source_context": "About $454K typical home value (Zillow, Sept 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "melbourne": {
+    "display_price": "$350K",
+    "source_context": "About $350K typical home value (Zillow, Dec 2025)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "marathon": {
+    "display_price": "$715K",
+    "source_context": "About $715K median sale, last 12 months (Momentum Realty, 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "big-pine-key": {
+    "display_price": "$740K",
+    "source_context": "About $600K to $880K, with thin sales (Broker One, June 2026; Momentum, 12 months 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "key-biscayne": {
+    "display_price": "$1.49M",
+    "source_context": "About $1.49M median sale, last 12 months (Momentum Realty, 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "boca-grande": {
+    "display_price": "$2.4M",
+    "source_context": "About $2.4M median sale (Broker One, June 2026, ZIP 33921)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "pompano-beach": {
+    "display_price": "$395K",
+    "source_context": "About $395K median sale, last 12 months (Momentum Realty, Oct 2026)",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  },
+  "deerfield-beach": {
+    "display_price": "$330K",
+    "source_context": "About $330K median sale, all home types (Broker One, June 2026). Houses run higher; many sales are inland condos",
+    "verification": "Existing published figure; no independent numerical certification",
+    "reviewed_on": "2026-11-16"
+  }
+}
