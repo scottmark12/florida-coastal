@@ -73,3 +73,5 @@ html body main .ar-hero .hb3-panel h1:not(#z){font-family:'Libre Caslon Display'
 }
 /* More guides cards: article titles are Caslon everywhere */
 html body section.band .card h3:not(#z){font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important;letter-spacing:0!important;font-size:21px!important;line-height:1.2!important}
+/* About: keep the hat in the frame */
+.news-art .nyt-lead img[src*="our-story"]{object-position:center 12%!important}
