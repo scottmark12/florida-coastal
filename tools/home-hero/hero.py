@@ -46,9 +46,6 @@ def css():
 .fh-alt{margin-top:18px;min-height:22px;display:flex;align-items:baseline;flex-wrap:wrap;gap:6px 14px}
 .fh-a{font-size:15px;font-weight:500;color:#fff!important;text-decoration:underline;text-decoration-color:rgba(255,255,255,.45);text-decoration-thickness:1px;text-underline-offset:5px}
 .fh-a:hover{text-decoration-color:#fff}
-.fh-pk{font-size:15px;font-weight:600;color:#fff}
-.fh-clr{border:0;background:none;padding:0;font:inherit;font-size:14px;color:rgba(255,255,255,.86);text-decoration:underline;text-underline-offset:4px;cursor:pointer}
-.fh[data-pick] .fh-np,.fh:not([data-pick]) .fh-yp{display:none}
 .fh-st{position:absolute;z-index:3;left:0;right:0;bottom:18px;display:flex;flex-direction:column;gap:12px}
 .fh-sh{padding:0 20px;display:flex;justify-content:space-between;align-items:baseline;gap:16px}
 .fh-sh p{display:flex;align-items:center;gap:10px}.fh-sh p,.fh-sh a{margin:0;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#fff;text-decoration:none}
@@ -94,7 +91,7 @@ def css():
 @media (max-width:760px){
 .fh .fh-np{display:none}
 .fh-alt{margin-top:14px;min-height:0}
-.fh:not([data-pick]) .fh-alt{display:none}
+.fh-alt{display:none}
 .fh h1{margin-top:0!important}
 .fh-sub{max-width:250px}
 .fh-cta{margin-top:18px}
@@ -142,8 +139,8 @@ def html():
 <div class="fh-tx">
 <h1>Moving to the Florida coast? Start here.</h1>
 <p class="fh-sub"><span class="fh-ph1">Scored honestly by a family who made the move.</span><span class="fh-d2">Find the beach town that fits your life. 167 towns, scored honestly by a family who made the move.</span></p>
-<div class="fh-cta"><a class="fh-btn" href="/quiz" data-fh="top5">See my top 5<span class="fh-dk">&nbsp;towns</span>&nbsp;→</a><p class="fh-meta"><span class="fh-mb">8 questions · 2 min</span><span class="fh-dk">8 questions · about 2 minutes</span><br>No signup necessary</p></div>
-<div class="fh-alt"><a class="fh-a fh-np" href="map.html?mode=vibes" data-fh="vibe">Or start with our Vibe Map →</a><span class="fh-pk fh-yp"></span><a class="fh-a fh-yp fh-all" href="map.html?mode=vibes" data-fh="all">See them all →</a><button type="button" class="fh-clr fh-yp">Clear</button></div>
+<div class="fh-cta"><a class="fh-btn" href="/quiz" data-fh="top5">See my top 5<span class="fh-dk">&nbsp;towns</span>&nbsp;→</a><p class="fh-meta">Free · 8 questions<br>About 2 minutes</p></div>
+<div class="fh-alt"><a class="fh-a fh-np" href="map.html?mode=vibes" data-fh="vibe">Or start with our Vibe Map →</a></div>
 </div>
 <div class="fh-st">
 <div class="fh-sh"><p><button type="button" class="fh-pz" aria-label="Pause the map" aria-pressed="false"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1h2v8H2zM6 1h2v8H6z" fill="currentColor"/></svg></button>Choose a style</p><i aria-hidden="true"></i><a href="map.html?mode=vibes" data-fh="map"><span class="fh-mb">Full map →</span><span class="fh-dk">Open the full map →</span></a></div>
@@ -157,13 +154,13 @@ def js():
     towns = [t[2] for t in D['towns']]
     sty = [[k, NAME[k], CNT[k]] for k in ORDER]
     return """!function(){var h=document.querySelector(".fh");if(!h)return;
-var V=%s,S=%s,dots=h.querySelectorAll(".fh-d"),tiles=h.querySelectorAll(".fh-t"),row=h.querySelector(".fh-row"),pk=h.querySelector(".fh-pk"),all=h.querySelector(".fh-all"),pzs=h.querySelectorAll(".fh-pz"),
+var V=%s,S=%s,dots=h.querySelectorAll(".fh-d"),tiles=h.querySelectorAll(".fh-t"),row=h.querySelector(".fh-row"),pzs=h.querySelectorAll(".fh-pz"),
 rm=matchMedia("(prefers-reduced-motion: reduce)").matches,i=0,pick=null,stop=rm,hold=0,vis=!0,seen=0;
 function T(e,d){var f=function(){window.FC&&FC.track(e,d)};window.FC?f():addEventListener("DOMContentLoaded",f)}
 function show(k){var s;for(var j=0;j<S.length;j++)if(S[j][0]==k)s=S[j];if(!s)return;
 for(var n=0;n<dots.length;n++)dots[n].classList.toggle("on",(" "+V[n]+" ").indexOf(" "+k+" ")>=0);
 var at;for(var t=0;t<tiles.length;t++){var on=tiles[t].dataset.k==k;tiles[t].classList.toggle("on",on);if(on)at=tiles[t];tiles[t].setAttribute("aria-pressed",pick&&on?"true":"false")}if(at&&!pick&&!rm&&hold<Date.now()){var rr=row.getBoundingClientRect(),tr=at.getBoundingClientRect();if(tr.left<rr.left||tr.right>rr.right)row.scrollTo({left:at.offsetLeft-row.offsetLeft-(parseFloat(getComputedStyle(row).paddingLeft)||0),behavior:"smooth"})}
-if(pick){pk.textContent=s[1]+": "+s[2]+" towns lit up";all.href="map.html?mode=vibes&style="+k}}
+}
 function tick(){if(stop||pick||hold>Date.now()||!vis||document.hidden)return;i=(i+1)%%S.length;show(S[i][0])}
 show(S[0][0]);setInterval(tick,2200);
 function pause(ms){hold=Date.now()+ms}
@@ -175,7 +172,7 @@ setStop(stop);for(var q=0;q<pzs.length;q++)pzs[q].onclick=function(){setStop(!st
 for(var t=0;t<tiles.length;t++)tiles[t].onclick=function(){var k=this.dataset.k;
 if(pick==k){T("hero_style_open",k);location.href="map.html?mode=vibes&style="+k;return}
 pick=k;h.setAttribute("data-pick",k);for(var j=0;j<S.length;j++)if(S[j][0]==k)i=j;show(k);T("hero_style",k)};
-h.querySelector(".fh-clr").onclick=function(){T("hero_clear",pick);pick=null;h.removeAttribute("data-pick");show(S[i][0])};
+
 h.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[data-fh]");if(!a)return;var w=a.dataset.fh;
 T("hero_"+w,pick||"");if(w=="top5"&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey&&window.qExpand){e.preventDefault();qExpand(a)}});
 row.addEventListener("touchstart",function(){pause(8e3);if(seen&1)return;seen|=1;T("hero_tiles_scroll","")},{passive:!0});row.addEventListener("wheel",function(){pause(8e3)},{passive:!0});
