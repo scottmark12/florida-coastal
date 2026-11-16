@@ -34,9 +34,9 @@ def css():
 .fh-d.on{background:#152A2E;box-shadow:0 0 0 .7px rgba(255,255,255,.95);transform:scale(1.9);z-index:2}
 .fh-tx{position:absolute;z-index:3;left:20px;bottom:206px;width:340px;max-width:calc(100%% - 40px);display:flex;flex-direction:column;align-items:flex-start}
 .fh-eb{margin:0;display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.86)}
-.fh-pz{width:24px;height:24px;margin:-10px -4px -10px -6px;padding:0;border:0;background:none;color:inherit;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;opacity:.75}
+.fh-pz{width:28px;height:28px;margin:-10px -6px -10px -8px;padding:0;border:0;background:none;color:inherit;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;opacity:.75}
 .fh-pz:hover,.fh-pz:focus-visible{opacity:1}.fh-pz svg{width:10px;height:10px}
-.fh h1{margin:12px 0 0!important;max-width:214px!important;font-size:32px!important;line-height:1.08!important;font-weight:500!important;letter-spacing:-.02em!important;color:#fff!important;text-shadow:0 1px 14px rgba(0,0,0,.25)!important;text-align:left!important;font-family:'DM Sans',system-ui,sans-serif!important}
+.fh h1{margin:0!important;max-width:214px!important;font-size:32px!important;line-height:1.08!important;font-weight:500!important;letter-spacing:-.02em!important;color:#fff!important;text-shadow:0 1px 14px rgba(0,0,0,.25)!important;text-align:left!important;font-family:'DM Sans',system-ui,sans-serif!important}
 .fh-sub{margin:12px 0 0;max-width:236px;font-size:14.5px;line-height:1.45;color:rgba(255,255,255,.92)}
 .fh-d2,.fh-dk{display:none}
 .fh-cta{margin-top:22px;display:flex;align-items:center;gap:14px}
@@ -51,14 +51,16 @@ def css():
 .fh[data-pick] .fh-np,.fh:not([data-pick]) .fh-yp{display:none}
 .fh-st{position:absolute;z-index:3;left:0;right:0;bottom:18px;display:flex;flex-direction:column;gap:12px}
 .fh-sh{padding:0 20px;display:flex;justify-content:space-between;align-items:baseline;gap:16px}
-.fh-sh p,.fh-sh a{margin:0;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#fff;text-decoration:none}
+.fh-sh p{display:flex;align-items:center;gap:10px}.fh-sh p,.fh-sh a{margin:0;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:#fff;text-decoration:none}
 .fh-sh a{color:rgba(255,255,255,.86)!important}
 .fh-sh i{display:none}
 .fh-row{display:flex;gap:12px;overflow-x:auto;padding:0 20px 6px;scrollbar-width:none}
 .fh-row::-webkit-scrollbar{display:none}
 .fh-t{flex:none;width:108px;display:flex;flex-direction:column;gap:8px;padding:0;border:0;background:none;text-align:left;font:inherit;color:#fff;cursor:pointer}
 .fh-t img{width:100%%;height:104px;object-fit:cover;display:block;border-radius:6px;box-shadow:0 12px 28px rgba(0,0,0,.35);background:#2a4a5a}
-.fh-t[aria-pressed=true] img{box-shadow:0 0 0 2px #fff,0 12px 28px rgba(0,0,0,.4)}
+.fh-t img{transition:box-shadow .35s ease,transform .35s ease}.fh-t span{transition:opacity .35s ease}
+.fh-t.on img,.fh-t[aria-pressed=true] img{box-shadow:0 0 0 2px #fff,0 12px 28px rgba(0,0,0,.4)}
+.fh:not([data-pick]) .fh-t:not(.on) span{opacity:.82}
 .fh-t span{font-size:13px;font-weight:500;line-height:1.25;text-shadow:0 1px 8px rgba(0,0,0,.45)}
 .fh-t:focus-visible{outline:2px solid #fff;outline-offset:3px;border-radius:6px}
 @media (max-width:760px) and (max-height:780px){.fh{--ft:108px;--fhh:min(304px,calc(var(--hh) - 396px));--fl:calc(100vw - var(--fw) + 10px)}.fh h1{font-size:28px!important;max-width:210px!important}.fh-sub{font-size:13.5px;max-width:226px}}
@@ -74,7 +76,7 @@ def css():
 .fh-d.on{transform:scale(2.6);box-shadow:0 0 0 1.5px #fff}
 .fh-tx{left:clamp(24px,4.44vw,80px);bottom:285px;width:min(620px,46vw);max-width:none}
 .fh-eb{font-size:12px}
-.fh h1{margin-top:16px!important;max-width:none!important;font-size:clamp(40px,4.3vw,62px)!important;line-height:1.04!important;letter-spacing:-.025em!important;text-shadow:0 1px 18px rgba(0,0,0,.2)!important}
+.fh h1{margin-top:0!important;max-width:none!important;font-size:clamp(40px,4.3vw,62px)!important;line-height:1.04!important;letter-spacing:-.025em!important;text-shadow:0 1px 18px rgba(0,0,0,.2)!important}
 .fh-sub{margin-top:20px;max-width:470px;font-size:18px;line-height:1.5}
 .fh-ph1,.fh-mb{display:none}.fh-d2,.fh-dk{display:inline}
 .fh-cta{margin-top:34px;gap:20px}
@@ -90,8 +92,6 @@ def css():
 }
 
 @media (max-width:760px){
-.fh .fh-tx>.fh-eb{display:none}
-.fh-mcap{position:absolute;z-index:3;left:20px;top:calc(var(--ft) + var(--fhh) * .34);margin:0}
 .fh .fh-np{display:none}
 .fh-alt{margin-top:14px;min-height:0}
 .fh:not([data-pick]) .fh-alt{display:none}
@@ -100,8 +100,8 @@ def css():
 .fh-cta{margin-top:18px}
 .fh-tx{bottom:214px}
 }
-@media (min-width:761px){.fh-mcap{display:none}}
-@media (max-width:760px) and (max-height:620px){.fh{--ft:68px;--fhh:calc(var(--hh) - 400px)}.fh-mcap{display:none}}
+
+@media (max-width:760px) and (max-height:620px){.fh{--ft:68px;--fhh:calc(var(--hh) - 400px)}}
 @media (prefers-reduced-motion:reduce){.fh-d{transition:none}}
 """.replace('%(m)s', m).replace('%(r)s', str(r)).replace('%%', '%')
     import re as _re
@@ -139,16 +139,14 @@ def html():
 <div class="fh-dim"></div><div class="fh-scr"></div>
 <img class="fh-win" src="/img/c/grayton-beach.webp" alt="" width="1400" height="934" decoding="async" aria-hidden="true"><div class="fh-bot"></div>
 <div class="fh-map" aria-hidden="true"><svg viewBox="0 0 %(W)s %(H)s" preserveAspectRatio="none"><path d="%(DO)s"/></svg>%(dots)s</div>
-<p class="fh-eb fh-mcap"><button type="button" class="fh-pz" aria-label="Pause the map" aria-pressed="false"><svg viewBox="0 0 10 10" aria-hidden="true"><path class="fh-pzp" d="M2 1h2v8H2zM6 1h2v8H6z" fill="currentColor"/></svg></button><span class="fh-cap">%(cap)s</span></p>
 <div class="fh-tx">
-<p class="fh-eb"><button type="button" class="fh-pz" aria-label="Pause the map" aria-pressed="false"><svg viewBox="0 0 10 10" aria-hidden="true"><path class="fh-pzp" d="M2 1h2v8H2zM6 1h2v8H6z" fill="currentColor"/></svg></button><span class="fh-cap" aria-live="polite">%(cap)s</span></p>
 <h1>Moving to the Florida coast? Start here.</h1>
 <p class="fh-sub"><span class="fh-ph1">Scored honestly by a family who made the move.</span><span class="fh-d2">Find the beach town that fits your life. 167 towns, scored honestly by a family who made the move.</span></p>
 <div class="fh-cta"><a class="fh-btn" href="/quiz" data-fh="top5">See my top 5<span class="fh-dk">&nbsp;towns</span>&nbsp;→</a><p class="fh-meta"><span class="fh-mb">8 questions · 2 min</span><span class="fh-dk">8 questions · about 2 minutes</span><br>No signup necessary</p></div>
 <div class="fh-alt"><a class="fh-a fh-np" href="map.html?mode=vibes" data-fh="vibe">Or start with our Vibe Map →</a><span class="fh-pk fh-yp"></span><a class="fh-a fh-yp fh-all" href="map.html?mode=vibes" data-fh="all">See them all →</a><button type="button" class="fh-clr fh-yp">Clear</button></div>
 </div>
 <div class="fh-st">
-<div class="fh-sh"><p>Choose a style</p><i aria-hidden="true"></i><a href="map.html?mode=vibes" data-fh="map"><span class="fh-mb">Full map →</span><span class="fh-dk">Open the full map →</span></a></div>
+<div class="fh-sh"><p><button type="button" class="fh-pz" aria-label="Pause the map" aria-pressed="false"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M2 1h2v8H2zM6 1h2v8H6z" fill="currentColor"/></svg></button>Choose a style</p><i aria-hidden="true"></i><a href="map.html?mode=vibes" data-fh="map"><span class="fh-mb">Full map →</span><span class="fh-dk">Open the full map →</span></a></div>
 <div class="fh-row" role="group" aria-label="Styles">%(tiles)s</div>
 </div>
 </section>""" % {'W': W, 'H': H, 'DO': DO, 'dots': dots, 'tiles': ''.join(tiles),
@@ -159,12 +157,12 @@ def js():
     towns = [t[2] for t in D['towns']]
     sty = [[k, NAME[k], CNT[k]] for k in ORDER]
     return """!function(){var h=document.querySelector(".fh");if(!h)return;
-var V=%s,S=%s,dots=h.querySelectorAll(".fh-d"),tiles=h.querySelectorAll(".fh-t"),caps=h.querySelectorAll(".fh-cap"),pk=h.querySelector(".fh-pk"),all=h.querySelector(".fh-all"),pzs=h.querySelectorAll(".fh-pz"),
+var V=%s,S=%s,dots=h.querySelectorAll(".fh-d"),tiles=h.querySelectorAll(".fh-t"),row=h.querySelector(".fh-row"),pk=h.querySelector(".fh-pk"),all=h.querySelector(".fh-all"),pzs=h.querySelectorAll(".fh-pz"),
 rm=matchMedia("(prefers-reduced-motion: reduce)").matches,i=0,pick=null,stop=rm,hold=0,vis=!0,seen=0;
 function T(e,d){var f=function(){window.FC&&FC.track(e,d)};window.FC?f():addEventListener("DOMContentLoaded",f)}
 function show(k){var s;for(var j=0;j<S.length;j++)if(S[j][0]==k)s=S[j];if(!s)return;
 for(var n=0;n<dots.length;n++)dots[n].classList.toggle("on",(" "+V[n]+" ").indexOf(" "+k+" ")>=0);
-for(var c=0;c<caps.length;c++)caps[c].textContent=s[1]+" · "+s[2]+" towns";for(var t=0;t<tiles.length;t++)tiles[t].setAttribute("aria-pressed",pick&&tiles[t].dataset.k==k?"true":"false");
+var at;for(var t=0;t<tiles.length;t++){var on=tiles[t].dataset.k==k;tiles[t].classList.toggle("on",on);if(on)at=tiles[t];tiles[t].setAttribute("aria-pressed",pick&&on?"true":"false")}if(at&&!pick&&!rm&&hold<Date.now()){var rr=row.getBoundingClientRect(),tr=at.getBoundingClientRect();if(tr.left<rr.left||tr.right>rr.right)row.scrollTo({left:at.offsetLeft-row.offsetLeft-(parseFloat(getComputedStyle(row).paddingLeft)||0),behavior:"smooth"})}
 if(pick){pk.textContent=s[1]+": "+s[2]+" towns lit up";all.href="map.html?mode=vibes&style="+k}}
 function tick(){if(stop||pick||hold>Date.now()||!vis||document.hidden)return;i=(i+1)%%S.length;show(S[i][0])}
 show(S[0][0]);setInterval(tick,2200);
@@ -180,6 +178,6 @@ pick=k;h.setAttribute("data-pick",k);for(var j=0;j<S.length;j++)if(S[j][0]==k)i=
 h.querySelector(".fh-clr").onclick=function(){T("hero_clear",pick);pick=null;h.removeAttribute("data-pick");show(S[i][0])};
 h.addEventListener("click",function(e){var a=e.target.closest&&e.target.closest("a[data-fh]");if(!a)return;var w=a.dataset.fh;
 T("hero_"+w,pick||"");if(w=="top5"&&!e.ctrlKey&&!e.metaKey&&!e.shiftKey&&!e.altKey&&window.qExpand){e.preventDefault();qExpand(a)}});
-var row=h.querySelector(".fh-row");row.addEventListener("scroll",function(){if(seen&1)return;seen|=1;T("hero_tiles_scroll","")},{passive:!0});
+row.addEventListener("touchstart",function(){pause(8e3);if(seen&1)return;seen|=1;T("hero_tiles_scroll","")},{passive:!0});row.addEventListener("wheel",function(){pause(8e3)},{passive:!0});
 addEventListener("load",function(){var r=row.getBoundingClientRect();T("hero_seen","fl-map-1|tiles:"+(r.top<innerHeight-40?1:0)+"|h:"+innerHeight)});
 }();""" % (json.dumps(towns, separators=(',', ':')), json.dumps(sty, separators=(',', ':')))
