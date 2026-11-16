@@ -58,7 +58,7 @@ SKIP = {'edu': {'cedarkey'}}
 
 
 # "Where to start": the pick that ranks best in each category, plus the lowest priced pick.
-START = [('walk', 'Walk to dinner, coffee and the beach'), ('beach', 'The best beach out your door'),
+START = [('walk', 'Walk everywhere'), ('beach', 'The best beach'),
          ('water', 'Life on a boat'), ('edu', 'Raising kids'), ('meet', 'Making friends fast'),
          ('charm', 'History and charm'), ('airport', 'Flying out often')]
 cheap = min(PICKS, key=kprice)
@@ -105,7 +105,7 @@ def body():
     p.append(quizbox('top'))
     p.append('<h2>Where to start</h2>')
     lis = ''.join('<li><span>%s</span><a href="towns/%s.html">%s</a></li>' % (e(lab), LEADS[k], e(nm(LEADS[k]))) for k, lab in START)
-    lis += '<li><span>Getting the most house for the money</span><a href="towns/%s.html">%s</a></li>' % (cheap, e(nm(cheap)))
+    lis += '<li><span>More house for less</span><a href="towns/%s.html">%s</a></li>' % (cheap, e(nm(cheap)))
     p.append('<div class="fc-box pk-start"><h3>If you want…</h3><ul>%s</ul>'
              '<p>Each one ranks near the top of all %d towns we cover for it.</p></div>' % (lis, N))
     for c, label, key in GROUPS:
@@ -138,11 +138,11 @@ PK_CSS = ('<style id="pk-css">'
           '.pk-k{font:600 12.5px/1.4 "DM Sans",sans-serif;color:#0F6E72;margin-top:4px}'
           '.pk-cnt{font:600 13px "DM Sans",sans-serif;color:#5b6b6e;margin-left:8px;letter-spacing:.02em}'
           '.pk-start ul{list-style:none;padding:0;margin:0}'
-          '.pk-start li{display:flex;justify-content:space-between;gap:16px;padding:9px 0;border-bottom:1px solid #DFE6E5}'
+          '.pk-start li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:9px 0;border-bottom:1px solid #DFE6E5}'
           '.pk-start li:last-child{border-bottom:0}.pk-start li a{font-weight:600;white-space:nowrap}'
           '.fc-box.pk-start p{font-size:13.5px;line-height:1.5;color:#5b6b6e;margin:12px 0 0}'
           '@media(max-width:700px){.pk-c{grid-template-columns:34% 1fr;gap:12px;padding:10px}.pk-n{font-size:19px}.pk-t{font-size:14.5px}'
-          '.pk-start li{flex-wrap:wrap;gap:2px 12px;padding:8px 0}.pk-n{font-size:18px}}'
+          '.pk-start li{flex-wrap:nowrap;align-items:center;gap:12px;padding:7px 0;font-size:15px}.pk-start li span{flex:1;min-width:0}.pk-n{font-size:18px}}'
           '</style>')
 
 src = open('articles/flood-risk-rankings.html').read()
