@@ -16,16 +16,11 @@ for _ in range(2):
     css_m=re.sub(r'([^{}@]+)\{([^{}]*)\}',keep,css_m)
     css_m=re.sub(r'@media[^{]*\{\s*\}','',css_m)
 print('dead rules removed',before,'->',len(css_m))
-css_m+=('html body .cmap .cm-steps{list-style:none;margin:22px 0 0;padding:0;counter-reset:s;display:flex;flex-direction:column;gap:16px;max-width:400px}'
- 'html body .cmap .cm-steps li{counter-increment:s;position:relative;padding-left:40px;font-size:16px;line-height:1.5;color:#3E4F52}'
- 'html body .cmap .cm-steps li::before{content:"0" counter(s);position:absolute;left:0;top:2px;font-size:12px;letter-spacing:.14em;font-weight:600;color:#152A2E}'
- 'html body .cmap .cm-steps b{display:block;font-weight:500;font-size:18px;color:#152A2E;margin-bottom:2px}'
- 'html body .cmap .cm-ctas{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:26px}'
- 'html body .cmap .cm-ctas .cm-link{margin:0!important}'
- 'html body .cmap .cm-alt{margin-top:18px!important}'
- '@media (max-width:760px){html body .cmap h2{font-size:30px!important}html body .cmap .cm-steps{margin-top:14px;gap:9px}html body .cmap .cm-steps li{font-size:14px;line-height:1.4;padding-left:30px}html body .cmap .cm-steps li::before{top:1px;font-size:11px}html body .cmap .cm-steps b{display:inline;font-size:15.5px;margin:0 4px 0 0}html body .cmap .cm-ctas{margin-top:16px}}'
- '@media (max-width:760px) and (max-height:760px){html body .cmap .cm-lbl{margin-bottom:-4px}html body .cmap h2{font-size:26px!important}html body .cmap .cm-steps{margin-top:10px;gap:6px}html body .cmap .cm-steps li{font-size:13px;line-height:1.35}html body .cmap .cm-steps b{font-size:14.5px}html body .cmap .cm-ctas{margin-top:10px}html body .cmap .cm-ctas a+a{display:none}}'
- '@media (max-width:760px) and (max-height:620px){html body .cmap .cm-steps li span{display:none}html body .cmap .cm-steps{gap:4px}html body .cmap .cm-ctas{display:none}}')
+css_m+=('html body .cmap .cm-sub{margin:18px 0 0;font-size:18px;line-height:1.5;color:#3E4F52;max-width:380px}'
+ 'html body .cmap .cm-l .cm-link{margin-top:26px!important;display:inline-block}'
+ 'html body .cmap .cm-vb span:nth-child(n+3){display:none!important}'
+ '@media (max-width:760px){html body .cmap .cm-sub{font-size:16px;margin-top:14px}html body .cmap .cm-l .cm-link{margin-top:18px!important}'
+ 'html body .cmap .cm-more{display:none!important}html body .cmap .cm-st>div:nth-child(2){display:none!important}}')
 css_m+='html body.pl main>section.news:not(#a):not(#b):not(#c):not(#d):not(#e){background-image:none!important}'
 style='<style id="fc-home">'+css_m+'</style>'
 anchor='<script type="application/ld+json">'

@@ -21,15 +21,10 @@ out = sub1(r'<section class="vhero-b dk-hero">.*?</section>', hero.html(), out)
 # 2. the old "02 The Vibe Map" section is now the hero itself
 # Nov 16: the Vibe Map section (map + town card) stays, right under the hero; its scripts load when it nears the screen
 old_l = re.search(r'<div class="cm-l">.*?</div>(?=<div class="cm-r">)', out, re.S).group(0)
-new_l = ('<div class="cm-l"><div class="cm-lbl">How it works</div>'
- '<h2>Three steps to your stretch of coast.</h2>'
- '<ol class="cm-steps">'
- '<li><b>Pick a feel.</b> <span>Tap a style and every beach town that has it lights up on the map.</span></li>'
- '<li><b>Get your top 5.</b> <span>Eight questions, about two minutes. Every town scored the same way, no signup necessary.</span></li>'
- '<li><b>Get to know them.</b> <span>Open any town for home prices, flood risk, the airport drive and a local\'s take.</span></li>'
- '</ol>'
- '<div class="cm-ctas"><a class="cm-link" href="map.html?mode=vibes" data-fh="cm_vibe">Open the Vibe Map →</a><a class="cm-link" href="/quiz" data-fh="cm_top5">See my top 5 →</a></div>'
- '<p class="cm-alt">Rather weigh it yourself? <a href="map.html?mode=sliders">Try the Slider Map →</a></p></div>')
+new_l = ('<div class="cm-l">'
+ '<h2>Get to know the towns.</h2>'
+ '<p class="cm-sub">See typical home prices, flood risk, airport drive times, and a local\'s take.</p>'
+ '<a class="cm-link" href="map.html?mode=vibes" data-fh="cm_vibe">Open the Vibe Map →</a></div>')
 out = out.replace(old_l, new_l, 1)
 out = out.replace('<span class="nb">03 · </span>', '').replace('<span class="nb">04 · </span>', '')
 # 3. scripts for the old map section
