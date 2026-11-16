@@ -19,16 +19,25 @@ def sub1(pat, rep, s, flags=re.S):
 # 1. hero
 out = sub1(r'<section class="vhero-b dk-hero">.*?</section>', hero.html(), out)
 # 2. the old "02 The Vibe Map" section is now the hero itself
-out = sub1(r'<section class="wrap cmap simple">.*?</section>', '', out)
+# Nov 16: the Vibe Map section (map + town card) stays, right under the hero; its scripts load when it nears the screen
 out = out.replace('<span class="nb">03 · </span>', '').replace('<span class="nb">04 · </span>', '')
 # 3. scripts for the old map section
+fc_src = re.search(r'<script src="(/assets/v3/data/fl-compass\.[0-9a-f]+\.js)"></script>', out).group(1)
+h1_src = re.search(r'<script src="(/assets/v3/home-1\.[0-9a-f]+\.js)"></script>', out).group(1)
+clip = re.search(r'<script id="hmap-clip">(.*?)</script>', out, re.S).group(1)
 for pat in [r'<script src="/assets/v3/data/fl-compass\.[0-9a-f]+\.js"></script>',
             r'<script src="/assets/v3/home-1\.[0-9a-f]+\.js"></script>',
             r'<script id="hmap-clip">.*?</script>',
             ]:
     out = sub1(pat, '', out)
+CMAP_JS = ('<script id="cmap-lazy">!function(){var s=document.querySelector(".cmap");if(!s)return;var go=!1;'
+ 'function ld(u,cb){var e=document.createElement("script");e.src=u;e.onload=cb;document.body.appendChild(e)}'
+ 'function run(){if(go)return;go=!0;ld(%s,function(){ld(%s,function(){%s})})}'
+ 'if("IntersectionObserver"in window){var o=new IntersectionObserver(function(e){if(e[0].isIntersecting){o.disconnect();run()}},{rootMargin:"300px 0px"});o.observe(s)}else run();'
+ 'addEventListener("load",function(){setTimeout(run,2500)})}();</script>') % (json.dumps(fc_src), json.dumps(h1_src), clip)
+open('/home/claude/perf/cmap_js.html','w').write(CMAP_JS)
 out = out.replace('querySelector(".dk-hero")', 'querySelector(".fh")')
-out = out.replace('querySelectorAll(".dk-hero,.cmap,.tk-acts,.news,.hq")', 'querySelectorAll(".fh,.tk-acts,.news")')
+out = out.replace('querySelectorAll(".dk-hero,.cmap,.tk-acts,.news,.hq")', 'querySelectorAll(".fh,.cmap,.tk-acts,.news")')
 assert '.dk-hero"' not in out.split('<style')[0] or True
 # keep the header legibility rules from the Nov 13 hero-legible block, drop the old hero ones
 m = re.search(r'(<style id="hero-legible">)(.*?)(</style>)', out, re.S)

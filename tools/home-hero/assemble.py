@@ -6,7 +6,7 @@ open('all.css','w').write(css)
 mini=subprocess.run(['node','-e',"const C=require('clean-css');const fs=require('fs');const r=new C({level:1}).minify(fs.readFileSync('all.css','utf8'));if(r.errors.length)console.error(r.errors);process.stdout.write(r.styles)"],capture_output=True,text=True,cwd='/home/claude/perf')
 assert mini.returncode==0, mini.stderr
 css_m=mini.stdout
-dead=re.compile(r'dk-hero|\.cmap|\.cm-(?!lbl)|vhero|\.hq|\.hb-|\.hn-|hero-note|dk-l\b|dk-eyebrow|hmap')
+dead=re.compile(r'dk-hero|vhero|\.hq|\.hb-|\.hn-|hero-note|dk-l\b|dk-eyebrow')
 def keep(m):
     sels=m.group(1)
     parts=[x for x in sels.split(',') if not dead.search(x)]
@@ -21,7 +21,7 @@ style='<style id="fc-home">'+css_m+'</style>'
 anchor='<script type="application/ld+json">'
 assert out.count(anchor)==1
 out=out.replace(anchor,style+anchor)
-js='<script id="fh-js">'+hero.js()+'</script>'+open('pre_js.html').read()
+js='<script id="fh-js">'+hero.js()+'</script>'+open('cmap_js.html').read()+open('pre_js.html').read()
 assert out.count('</body>')==1
 out=out.replace('</body>',js+'\n</body>')
 assert out.count('<body data-v=')==1
