@@ -61,7 +61,7 @@ def css():
 .fh-t[aria-pressed=true] img{box-shadow:0 0 0 2px #fff,0 12px 28px rgba(0,0,0,.4)}
 .fh-t span{font-size:13px;font-weight:500;line-height:1.25;text-shadow:0 1px 8px rgba(0,0,0,.45)}
 .fh-t:focus-visible{outline:2px solid #fff;outline-offset:3px;border-radius:6px}
-@media (max-width:760px) and (max-height:780px){.fh{--ft:66px;--fhh:min(275px,calc(var(--hh) - 390px));--fl:calc(100vw - var(--fw) - 8px)}.fh h1{font-size:28px!important;max-width:210px!important}.fh-sub{font-size:13.5px;max-width:226px}}
+@media (max-width:760px) and (max-height:780px){.fh{--ft:100px;--fhh:min(258px,calc(var(--hh) - 418px));--fl:calc(100vw - var(--fw) - 8px)}.fh h1{font-size:28px!important;max-width:210px!important}.fh-sub{font-size:13.5px;max-width:226px}}
 @media (min-width:761px){
 .fh{--hh:clamp(640px,100svh,980px);--ft:100px;--fw:70vw;--fhh:calc(70vw * %(r)s);--fl:32.64vw}
 .fh-ph,.fh-win{object-position:0 55%%}
@@ -88,6 +88,20 @@ def css():
 .fh-row{gap:16px;padding:0 clamp(24px,4.44vw,80px) 8px}
 .fh-t{width:150px}.fh-t img{height:104px}.fh-t span{font-size:14px}
 }
+
+@media (max-width:760px){
+.fh .fh-tx>.fh-eb{display:none}
+.fh-mcap{position:absolute;z-index:3;left:20px;top:calc(var(--ft) + var(--fhh) * .52);margin:0}
+.fh .fh-np{display:none}
+.fh-alt{margin-top:14px;min-height:0}
+.fh:not([data-pick]) .fh-alt{display:none}
+.fh h1{margin-top:0!important}
+.fh-sub{max-width:250px}
+.fh-cta{margin-top:18px}
+.fh-tx{bottom:214px}
+}
+@media (min-width:761px){.fh-mcap{display:none}}
+@media (max-width:760px) and (max-height:620px){.fh{--ft:68px;--fhh:calc(var(--hh) - 400px)}.fh-mcap{display:none}}
 @media (prefers-reduced-motion:reduce){.fh-d{transition:none}}
 """.replace('%(m)s', m).replace('%(r)s', str(r)).replace('%%', '%')
     import re as _re
@@ -125,10 +139,11 @@ def html():
 <div class="fh-dim"></div><div class="fh-scr"></div>
 <img class="fh-win" src="/img/c/grayton-beach.webp" alt="" width="1400" height="934" decoding="async" aria-hidden="true"><div class="fh-bot"></div>
 <div class="fh-map" aria-hidden="true"><svg viewBox="0 0 %(W)s %(H)s" preserveAspectRatio="none"><path d="%(DO)s"/></svg>%(dots)s</div>
+<p class="fh-eb fh-mcap"><button type="button" class="fh-pz" aria-label="Pause the map" aria-pressed="false"><svg viewBox="0 0 10 10" aria-hidden="true"><path class="fh-pzp" d="M2 1h2v8H2zM6 1h2v8H6z" fill="currentColor"/></svg></button><span class="fh-cap">%(cap)s</span></p>
 <div class="fh-tx">
 <p class="fh-eb"><button type="button" class="fh-pz" aria-label="Pause the map" aria-pressed="false"><svg viewBox="0 0 10 10" aria-hidden="true"><path class="fh-pzp" d="M2 1h2v8H2zM6 1h2v8H6z" fill="currentColor"/></svg></button><span class="fh-cap" aria-live="polite">%(cap)s</span></p>
 <h1>Moving to the Florida coast? Start here.</h1>
-<p class="fh-sub"><span class="fh-ph1">Find the beach town that fits your life, scored honestly by a family who made the move.</span><span class="fh-d2">Find the beach town that fits your life. 167 towns, scored honestly by a family who made the move.</span></p>
+<p class="fh-sub"><span class="fh-ph1">Scored honestly by a family who made the move.</span><span class="fh-d2">Find the beach town that fits your life. 167 towns, scored honestly by a family who made the move.</span></p>
 <div class="fh-cta"><a class="fh-btn" href="/quiz" data-fh="top5">See my top 5<span class="fh-dk">&nbsp;towns</span>&nbsp;→</a><p class="fh-meta"><span class="fh-mb">8 questions · 2 min</span><span class="fh-dk">8 questions · about 2 minutes</span><br>No signup necessary</p></div>
 <div class="fh-alt"><a class="fh-a fh-np" href="map.html?mode=vibes" data-fh="vibe">Or start with our Vibe Map →</a><span class="fh-pk fh-yp"></span><a class="fh-a fh-yp fh-all" href="map.html?mode=vibes" data-fh="all">See them all →</a><button type="button" class="fh-clr fh-yp">Clear</button></div>
 </div>
@@ -144,12 +159,12 @@ def js():
     towns = [t[2] for t in D['towns']]
     sty = [[k, NAME[k], CNT[k]] for k in ORDER]
     return """!function(){var h=document.querySelector(".fh");if(!h)return;
-var V=%s,S=%s,dots=h.querySelectorAll(".fh-d"),tiles=h.querySelectorAll(".fh-t"),cap=h.querySelector(".fh-cap"),pk=h.querySelector(".fh-pk"),all=h.querySelector(".fh-all"),pz=h.querySelector(".fh-pz"),
+var V=%s,S=%s,dots=h.querySelectorAll(".fh-d"),tiles=h.querySelectorAll(".fh-t"),caps=h.querySelectorAll(".fh-cap"),pk=h.querySelector(".fh-pk"),all=h.querySelector(".fh-all"),pzs=h.querySelectorAll(".fh-pz"),
 rm=matchMedia("(prefers-reduced-motion: reduce)").matches,i=0,pick=null,stop=rm,hold=0,vis=!0,seen=0;
 function T(e,d){var f=function(){window.FC&&FC.track(e,d)};window.FC?f():addEventListener("DOMContentLoaded",f)}
 function show(k){var s;for(var j=0;j<S.length;j++)if(S[j][0]==k)s=S[j];if(!s)return;
 for(var n=0;n<dots.length;n++)dots[n].classList.toggle("on",(" "+V[n]+" ").indexOf(" "+k+" ")>=0);
-cap.textContent=s[1]+" · "+s[2]+" towns";for(var t=0;t<tiles.length;t++)tiles[t].setAttribute("aria-pressed",pick&&tiles[t].dataset.k==k?"true":"false");
+for(var c=0;c<caps.length;c++)caps[c].textContent=s[1]+" · "+s[2]+" towns";for(var t=0;t<tiles.length;t++)tiles[t].setAttribute("aria-pressed",pick&&tiles[t].dataset.k==k?"true":"false");
 if(pick){pk.textContent=s[1]+": "+s[2]+" towns lit up";all.href="map.html?mode=vibes&style="+k}}
 function tick(){if(stop||pick||hold>Date.now()||!vis||document.hidden)return;i=(i+1)%%S.length;show(S[i][0])}
 show(S[0][0]);setInterval(tick,2200);
@@ -157,8 +172,8 @@ function pause(ms){hold=Date.now()+ms}
 h.addEventListener("pointerenter",function(){pause(864e5)});h.addEventListener("pointerleave",function(){hold=0});
 h.addEventListener("touchstart",function(){pause(5e3)},{passive:!0});
 if("IntersectionObserver"in window)new IntersectionObserver(function(e){vis=e[0].isIntersecting}).observe(h);
-function setStop(v){stop=v;pz.setAttribute("aria-pressed",v?"true":"false");pz.setAttribute("aria-label",v?"Play the map":"Pause the map");pz.querySelector("path").setAttribute("d",v?"M2 1l7 4-7 4z":"M2 1h2v8H2zM6 1h2v8H6z")}
-setStop(stop);pz.onclick=function(){setStop(!stop);T("hero_pause",stop?"pause":"play")};
+function setStop(v){stop=v;for(var q=0;q<pzs.length;q++){var pz=pzs[q];pz.setAttribute("aria-pressed",v?"true":"false");pz.setAttribute("aria-label",v?"Play the map":"Pause the map");pz.querySelector("path").setAttribute("d",v?"M2 1l7 4-7 4z":"M2 1h2v8H2zM6 1h2v8H6z")}}
+setStop(stop);for(var q=0;q<pzs.length;q++)pzs[q].onclick=function(){setStop(!stop);T("hero_pause",stop?"pause":"play")};
 for(var t=0;t<tiles.length;t++)tiles[t].onclick=function(){var k=this.dataset.k;
 if(pick==k){T("hero_style_open",k);location.href="map.html?mode=vibes&style="+k;return}
 pick=k;h.setAttribute("data-pick",k);for(var j=0;j<S.length;j++)if(S[j][0]==k)i=j;show(k);T("hero_style",k)};
