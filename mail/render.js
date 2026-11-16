@@ -109,7 +109,7 @@ function masthead(lab, utm) {
 function footer(why, utm) {
   return `<tr><td class="px" style="padding:44px ${PX} 34px ${PX};"><table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="border-top:1px solid ${C.hair};padding:22px 0 0 0;">
     <img src="${LOGO}" width="120" alt="Florida Coastal" style="display:block;width:120px;height:auto;border:0;margin:0 0 8px 0;">
-    <p style="margin:0 0 14px 0;font-family:${F_BODY};font-size:13px;line-height:1.5;color:${C.gray};">167 beach towns, Pensacola to Fernandina.</p>
+    <p style="margin:0 0 14px 0;font-family:${F_BODY};font-size:13px;line-height:1.5;color:${C.gray};">167 coastal towns, Pensacola to Fernandina.</p>
     <p style="margin:0;font-family:${F_BODY};font-size:12px;line-height:1.7;color:${C.soft};"><a href="${SITE}/towns/?${utm}" style="color:${C.gray};">Beach Towns</a> &nbsp;&middot;&nbsp; <a href="${SITE}/find-your-mile.html?${utm}" style="color:${C.gray};">Take the quiz</a> &nbsp;&middot;&nbsp; <a href="${SITE}/privacy.html" style="color:${C.gray};">Privacy</a> &nbsp;&middot;&nbsp; <a href="mailto:hello@floridacoastal.co?subject=Unsubscribe" style="color:${C.gray};">Unsubscribe</a>${why ? `<br>${why}` : ""}<br>Florida Coastal &middot; floridacoastal.co${ADDRESS ? " &middot; " + esc(ADDRESS) : ""}</p>
   </td></tr></table></td></tr>`;
 }

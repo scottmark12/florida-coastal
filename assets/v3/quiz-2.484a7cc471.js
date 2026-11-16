@@ -44,7 +44,7 @@ function qWhy(t,n){const d=QD[t.id],W=qW(),out=[];
  const seen=new Set();return out.sort((x,y)=>y[0]-x[0]).map(x=>x[1]).filter(x=>!seen.has(x)&&seen.add(x)).slice(0,n)}
 function qRes(){const L=qRank(),L5=L.slice(0,5),k=qStyle(L5,L.slice(0,15)),t=L5[0];const sv=Object.entries(S.sv).filter(([,v])=>v!=50).map(([a,b])=>a+':'+b).join(',');
  const n=k?L5.filter(t=>t.v.includes(k)).length:0,tot=k?T.filter(x=>x.v.includes(k)).length:0,w=qWhy(t,3);
- return `<div class="qr"><div class="ey">Your results</div><h1>Your top 5</h1><p class="sub" style="margin:0">Ranked from all 167 beach towns on your 8 answers.</p>
+ return `<div class="qr"><div class="ey">Your results</div><h1>Your top 5</h1><p class="sub" style="margin:0">Ranked from all 167 coastal towns on your 8 answers.</p>
  <div class="qhero t5r0" data-id="${t.id}"><div class="ph" style="background-image:url('${t.img}')"><i>#1 &middot; ${qp(t)}% match</i></div><h2>${t.n}</h2><div class="meta">${t.r.replace(/ · /g,', ')}${t.p?` &middot; <b>${t.p}</b> typical home`:''}</div>
  ${w.length?`<ul class="qwhy">${w.map(x=>`<li>${x}</li>`).join('')}</ul>`:'<div style="height:14px"></div>'}<a class="go" href="towns/${t.id}.html">Explore ${t.n.replace(/ \(.*\)/,'')}</a></div>
  <h4>Also on your list</h4>

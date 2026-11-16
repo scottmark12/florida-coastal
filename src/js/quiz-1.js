@@ -82,7 +82,7 @@ function render(fast){
  if(S.pop)placePop();
 }
 function title(){const ci=curReg(),r=ci>=0?REG[ci][0]:'All of Florida';$('h').textContent=r;const n=T.filter(t=>match(t)&&inView(t)).length;$('sub').textContent=`${n} ${S.style?VIBES[S.style]:'beach'} town${n==1?'':'s'}`+(S.style?` · ${VSUB[S.style]}`:'')}
-function list(){chips();if(S.mode=='sliders')return;title();document.querySelectorAll('.tile').forEach(x=>x.classList.toggle('on',x.dataset.k==S.style));if(S.mode=='vibes'){$('h').textContent='Find towns by style';$('sub').textContent='12 styles across 167 beach towns. Pick one to see where it lives.';if(S.style){const n=T.filter(t=>t.v.includes(S.style)).length;$('seeall').innerHTML=`<span><b>${VIBES[S.style]}</b> &nbsp;${n} towns lit up on the map</span><button id="sa">See the towns</button>`;$('sa').onclick=()=>setMode('explore')}return}
+function list(){chips();if(S.mode=='sliders')return;title();document.querySelectorAll('.tile').forEach(x=>x.classList.toggle('on',x.dataset.k==S.style));if(S.mode=='vibes'){$('h').textContent='Find towns by style';$('sub').textContent='12 styles across 167 coastal towns. Pick one to see where it lives.';if(S.style){const n=T.filter(t=>t.v.includes(S.style)).length;$('seeall').innerHTML=`<span><b>${VIBES[S.style]}</b> &nbsp;${n} towns lit up on the map</span><button id="sa">See the towns</button>`;$('sa').onclick=()=>setMode('explore')}return}
  let L=T.filter(t=>match(t)&&(S.mode=='vibes'||inView(t)));
  if(S.sort=='lo')L.sort((a,b)=>(a.pv??1e9)-(b.pv??1e9));else if(S.sort=='hi')L.sort((a,b)=>(b.pv??-1)-(a.pv??-1));
  $('n').textContent='';

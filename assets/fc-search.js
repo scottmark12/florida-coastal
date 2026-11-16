@@ -61,7 +61,7 @@
       if(!ZIP){res.innerHTML='<p class="fcs-none">Looking up that ZIP…</p>';loadZip().then(render);return}
       var seen={},Zs=Object.keys(ZIP).filter(function(z){return z.indexOf(qd)===0}).sort().filter(function(z){var id=ZIP[z][0];if(seen[id])return false;seen[id]=1;return true}).slice(0,6);
       h=Zs.length?'<div class="fcs-h">ZIP codes</div>'+Zs.map(function(z){var m=ZIP[z],t=IDX.t.find(function(x){return x.i===m[0]});if(!t)return '';return '<a class="fcs-it" href="'+U('towns/'+t.i+'.html')+'"><i style="background-image:url(\''+U(t.img)+'\')"></i><span><b>'+esc(t.n)+'</b><small>'+esc((m[1]?'Closest town to '+z+' '+m[2]+', about '+m[1]+' mi':'ZIP '+z+' · '+m[2])+' · '+t.r.split(' · ').pop())+'</small></span></a>'}).join('')
-        :(qd.length==5?'<p class="fcs-none">ZIP '+esc(qd)+' isn’t near one of our 167 beach towns.</p><a class="fcs-it" href="'+U('towns/index.html')+'"><i style="background-image:url(\''+U('img/c/destin.jpg')+'\')"></i><span><b>See all 167 beach towns</b><small>Browse by region or A to Z</small></span></a>':'<p class="fcs-none">Keep typing the ZIP…</p>');
+        :(qd.length==5?'<p class="fcs-none">ZIP '+esc(qd)+' isn’t near one of our 167 coastal towns.</p><a class="fcs-it" href="'+U('towns/index.html')+'"><i style="background-image:url(\''+U('img/c/destin.jpg')+'\')"></i><span><b>See all 167 coastal towns</b><small>Browse by region or A to Z</small></span></a>':'<p class="fcs-none">Keep typing the ZIP…</p>');
       res.innerHTML=h;items=[].slice.call(res.querySelectorAll('.fcs-it'));sel=0;mark();return
     }
     if(q.length<2){
@@ -76,7 +76,7 @@
       if(T.length)h+='<div class="fcs-h">Towns</div>'+T.map(function(t){return town(t,q)}).join('');
       if(R.length)h+='<div class="fcs-h">Regions</div>'+R.map(function(r){return region(r,q)}).join('');
       if(A.length)h+='<div class="fcs-h">Guides</div>'+A.map(function(a){return art(a,q)}).join('');
-      if(!h)h='<p class="fcs-none">No town, region or guide matches “'+esc(inp.value.trim())+'”.</p><a class="fcs-it" href="'+U('towns/index.html')+'"><i style="background-image:url(\''+U('img/c/destin.jpg')+'\')"></i><span><b>See all 167 beach towns</b><small>Browse by region or A to Z</small></span></a>';
+      if(!h)h='<p class="fcs-none">No town, region or guide matches “'+esc(inp.value.trim())+'”.</p><a class="fcs-it" href="'+U('towns/index.html')+'"><i style="background-image:url(\''+U('img/c/destin.jpg')+'\')"></i><span><b>See all 167 coastal towns</b><small>Browse by region or A to Z</small></span></a>';
     }
     res.innerHTML=h;items=[].slice.call(res.querySelectorAll('.fcs-it'));sel=0;mark();
   }
