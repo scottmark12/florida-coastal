@@ -19,8 +19,9 @@ html body section.band:not(#z){background:#fff!important;border-top:1px solid #E
 .news-art .nyt-head>.crumbs+*{margin-top:34px}
 html body main .news-art .nyt-head>h1:not(#z){margin-left:auto;margin-right:auto}
 .news-art .nyt-head>.nyt-by{margin-bottom:34px;padding-left:0;padding-right:0;max-width:636px}
-.news-art .nyt-lead{order:1;max-width:636px;width:calc(100% - 44px);padding:0;margin:0 auto;position:relative}
-.news-art .nyt-lead img{width:100%;height:clamp(240px,30vw,400px);max-height:none;object-fit:cover}
+/* photo starts on the text's left edge and runs to the site's right margin */
+.news-art .nyt-lead{order:1;max-width:none;width:auto;padding:0;position:relative;margin:0 max(22px,calc((100% - 1140px)/2)) 0 max(22px,calc((100% - 636px)/2))}
+.news-art .nyt-lead img{width:100%;height:clamp(260px,34vw,470px);max-height:none;object-fit:cover}
 /* caption sits in the photo's corner so photo flows straight into the title */
 html body .news-art .nyt-lead figcaption:not(#z){position:absolute;left:10px;bottom:10px;max-width:calc(100% - 20px);margin:0;padding:3px 8px;border-radius:3px;background:rgba(10,25,35,.55);color:#fff;font:400 12px/1.4 'DM Sans',sans-serif}
 
@@ -58,6 +59,7 @@ html body main .ar-hero .hb3-panel h1:not(#z){font-family:'Libre Caslon Display'
   .news-art .nyt-head>.crumbs{width:calc(100% - 36px);margin:14px auto 10px}
   .phero .crumbs,.ar-hero .crumbs2{width:calc(100% - 40px);margin:14px auto 10px}
   .news-art .nyt-lead,.phero .ph,.ar-hero .hb3-ph{width:100%;max-width:none}
+  .news-art .nyt-lead{margin:0}
   .news-art .nyt-lead img,.ar-hero .hb3-ph{height:auto;aspect-ratio:4/3}
   .phero .ph{height:auto;aspect-ratio:16/9}
   .news-art .nyt-lead img{height:auto}
