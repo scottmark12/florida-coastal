@@ -30,8 +30,8 @@ def css():
 .fh-map{position:absolute;left:var(--fl);top:var(--ft);width:var(--fw);height:var(--fhh)}
 .fh-map svg{position:absolute;inset:0;width:100%%;height:100%%;overflow:visible}
 .fh-map path{fill:none;stroke:#fff;stroke-width:1.5;vector-effect:non-scaling-stroke;stroke-linejoin:round}
-.fh-d{position:absolute;width:3px;height:3px;margin:-1.5px 0 0 -1.5px;border-radius:50%%;background:rgba(21,42,46,.16);transition:transform .45s ease,background-color .45s ease,box-shadow .45s ease}
-.fh-d.on{background:#152A2E;box-shadow:0 0 0 1.5px #fff;transform:scale(3);z-index:2}
+.fh-d{position:absolute;width:3px;height:3px;margin:-1.5px 0 0 -1.5px;border-radius:50%%;background:rgba(21,42,46,.22);transition:transform .45s ease,background-color .45s ease,box-shadow .45s ease}
+.fh-d.on{background:#152A2E;box-shadow:0 0 0 .7px rgba(255,255,255,.95);transform:scale(1.9);z-index:2}
 .fh-tx{position:absolute;z-index:3;left:20px;bottom:206px;width:340px;max-width:calc(100%% - 40px);display:flex;flex-direction:column;align-items:flex-start}
 .fh-eb{margin:0;display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:rgba(255,255,255,.86)}
 .fh-pz{width:24px;height:24px;margin:-10px -4px -10px -6px;padding:0;border:0;background:none;color:inherit;display:inline-flex;align-items:center;justify-content:center;cursor:pointer;opacity:.75}
@@ -71,7 +71,7 @@ def css():
 .fh-map{clip-path:inset(0 0 calc(var(--fhh) - var(--hh) + 296px) 0)}
 .fh-map path{stroke-width:2.25}
 .fh-d{width:5px;height:5px;margin:-2.5px 0 0 -2.5px;background:rgba(21,42,46,.28)}
-.fh-d.on{transform:scale(2.6)}
+.fh-d.on{transform:scale(2.6);box-shadow:0 0 0 1.5px #fff}
 .fh-tx{left:clamp(24px,4.44vw,80px);bottom:285px;width:min(620px,46vw);max-width:none}
 .fh-eb{font-size:12px}
 .fh h1{margin-top:16px!important;max-width:none!important;font-size:clamp(40px,4.3vw,62px)!important;line-height:1.04!important;letter-spacing:-.025em!important;text-shadow:0 1px 18px rgba(0,0,0,.2)!important}
