@@ -61,7 +61,7 @@ def css():
 .fh-t[aria-pressed=true] img{box-shadow:0 0 0 2px #fff,0 12px 28px rgba(0,0,0,.4)}
 .fh-t span{font-size:13px;font-weight:500;line-height:1.25;text-shadow:0 1px 8px rgba(0,0,0,.45)}
 .fh-t:focus-visible{outline:2px solid #fff;outline-offset:3px;border-radius:6px}
-@media (max-width:760px) and (max-height:780px){.fh{--ft:100px;--fhh:min(258px,calc(var(--hh) - 418px));--fl:calc(100vw - var(--fw) - 8px)}.fh h1{font-size:28px!important;max-width:210px!important}.fh-sub{font-size:13.5px;max-width:226px}}
+@media (max-width:760px) and (max-height:780px){.fh{--ft:108px;--fhh:min(304px,calc(var(--hh) - 396px));--fl:calc(100vw - var(--fw) + 10px)}.fh h1{font-size:28px!important;max-width:210px!important}.fh-sub{font-size:13.5px;max-width:226px}}
 @media (min-width:761px){
 .fh{--hh:clamp(640px,100svh,980px);--ft:100px;--fw:70vw;--fhh:calc(70vw * %(r)s);--fl:32.64vw}
 .fh-ph,.fh-win{object-position:0 55%%}
@@ -91,7 +91,7 @@ def css():
 
 @media (max-width:760px){
 .fh .fh-tx>.fh-eb{display:none}
-.fh-mcap{position:absolute;z-index:3;left:20px;top:calc(var(--ft) + var(--fhh) * .52);margin:0}
+.fh-mcap{position:absolute;z-index:3;left:20px;top:calc(var(--ft) + var(--fhh) * .34);margin:0}
 .fh .fh-np{display:none}
 .fh-alt{margin-top:14px;min-height:0}
 .fh:not([data-pick]) .fh-alt{display:none}
