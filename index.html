@@ -40,6 +40,24 @@ html body section.dk-hero.vhero-b:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f
 html body section.dk-hero.vhero-b:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f) .hero-btn.hq-start:hover{background:#EEF3F4!important}
 @media (max-width:760px){.dk-hero .dk-l{position:relative;top:min(170px,calc(84px + 30vw))}.dk-hero .fl-tag{font-size:11px;padding:7px 13px 7px 12px}.dk-hero .fl-tag small{font-size:11.5px}.dk-hero .fl-dot{width:14px;height:14px}.dk-hero .fl-pin{transform:translate(-7px,-7px)}.dk-hero .fl-tag{top:-34px;left:12px}.dk-hero .fl-sub{font-size:17px;margin-top:12px}}
 @media (max-width:1299px){.dk-hero .fl-tag small{display:none}.dk-hero .fl-tag{top:-40px;left:16px}}@media (prefers-reduced-motion:reduce){.dk-hero .fl-dot::after{animation:none}}
+</style><style id="fl-cohesive">/* Nov 16 preview pass: words and Florida each get their own zone, the frame reads clearly, Florida is only a frame (pin label on hover), one quiz call */
+html body section.dk-hero.vhero-b:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f){background-image:linear-gradient(180deg,rgba(10,20,22,.2) 0,rgba(10,20,22,0) 170px),linear-gradient(90deg,rgba(10,20,22,.56) 0%,rgba(10,20,22,.48) 45%,rgba(10,20,22,.42) 100%),url(/img/c/grayton-beach.webp)!important}
+html body .dk-hero::before{display:none}
+.dk-hero .dk-eyebrow{display:none!important}
+.dk-hero .fl-box path{stroke-width:2}
+.dk-hero .fl-dot{width:16px;height:16px;background:#fff;border:0;box-shadow:0 0 0 4px rgba(10,20,22,.55),0 2px 10px rgba(10,20,22,.4)}
+.dk-hero .fl-dot::after{border-color:rgba(255,255,255,.85)}
+.dk-hero .fl-pin{transform:translate(-8px,-8px)}
+.dk-hero .fl-tag{opacity:0;transform:translateY(4px);transition:opacity .2s,transform .2s;pointer-events:none}
+.dk-hero .fl-pin:hover .fl-tag,.dk-hero .fl-pin:focus-visible .fl-tag{opacity:1;transform:none}
+@media (min-width:761px){
+ html body main > section.dk-hero:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) .dk-l{width:calc(var(--fl-l) - 4vw - 90px)!important;max-width:640px!important;min-width:300px!important}
+ html body main > section.dk-hero:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) h1.hx-new{font-size:clamp(40px,min(4.3vw,8.4vh),78px)!important;line-height:1.03!important;letter-spacing:-.028em!important;max-width:none!important}
+ html body main > section.dk-hero:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) .fl-sub{font-size:clamp(16px,1.3vw,21px);max-width:none;text-wrap:pretty}
+ html body main > section.dk-hero:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) .dk-l{position:relative;top:clamp(0px,6vh,60px)}
+ html body main > section.dk-hero:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) .hq-start,html body main > section.dk-hero:not(#a):not(#b):not(#c):not(#d):not(#e):not(#f):not(#g) .hero-note{white-space:nowrap}
+}
+@media (max-width:760px){.dk-hero .fl-tag{opacity:1;transform:none}}
 </style></head>
 <body data-v="min" data-voice="1" data-logo="1" data-capsnav="1" data-over="1" data-tight="1" data-bleed="1" data-ft="1" data-steps="1" data-pipe="1" data-ph="1" data-hq="1" data-hqgo="1" data-names="1" data-more="1" data-sticky="1" data-short="1" data-newsph="1" data-newsph2="1" data-grade="1"><header class="top">
   <div class="wrap">
