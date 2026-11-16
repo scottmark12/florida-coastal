@@ -1,0 +1,3295 @@
+{
+  "reviewed_on": "2026-11-16",
+  "scope": "Dated median prices from qualified county sales or attributed provider market data. The time period, property types and market footprint vary. Subdivision and ZIP samples describe only the area named. Small samples are easily moved by one sale. These are not the affordability score inputs.",
+  "county_sources": {
+    "sales": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+    "boundaries": "https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2024&layergroup=Places"
+  },
+  "towns": {
+    "30a": {
+      "town": "30A (Santa Rosa Beach)",
+      "sale_samples": [
+        {
+          "median": 1965000,
+          "type": "House",
+          "period": "September 2026",
+          "sales": 85,
+          "area": "30A East and 30A West MLS areas",
+          "source": "SellFL local MLS market report",
+          "source_url": "https://sellfl.net/blog/october-2026-panama-city-beach-30a-real-estate-market-update",
+          "basis": "provider market"
+        },
+        {
+          "median": 1100000,
+          "type": "Condo",
+          "period": "September 2026",
+          "sales": 29,
+          "area": "30A East and 30A West MLS areas",
+          "source": "SellFL local MLS market report",
+          "source_url": "https://sellfl.net/blog/october-2026-panama-city-beach-30a-real-estate-market-update",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "destin": {
+      "town": "Destin",
+      "sale_samples": [
+        {
+          "median": 573950,
+          "type": "All-home",
+          "period": "September 2026",
+          "sales": null,
+          "area": "Destin market",
+          "source": "Zillow",
+          "source_url": "https://www.zillow.com/home-values/11102/destin-fl/",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "pcb": {
+      "town": "Panama City Beach",
+      "sale_samples": [
+        {
+          "median": 386500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 194,
+          "area": "Panama City Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 345000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 373,
+          "area": "Panama City Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "apalachicola": {
+      "town": "Apalachicola",
+      "sale_samples": [
+        {
+          "median": 350000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 21,
+          "area": "Apalachicola city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "cedarkey": {
+      "town": "Cedar Key",
+      "sale_samples": [
+        {
+          "median": 375000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 43,
+          "area": "Cedar Key city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        },
+        {
+          "median": 275000.0,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 30,
+          "area": "Cedar Key city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "dunedin": {
+      "town": "Dunedin",
+      "sale_samples": [
+        {
+          "median": 550000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 255,
+          "area": "Dunedin city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 195000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 190,
+          "area": "Dunedin city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "clearwaterbeach": {
+      "town": "Clearwater Beach",
+      "sale_samples": [
+        {
+          "median": 832000,
+          "type": "All-home",
+          "period": "3 months ending September 2026",
+          "sales": null,
+          "area": "Redfin Clearwater Beach neighborhood",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/neighborhood/74056/FL/Clearwater/Clearwater-Beach/housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "gulfport": {
+      "town": "Gulfport",
+      "sale_samples": [
+        {
+          "median": 450000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 114,
+          "area": "Gulfport city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 245000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 53,
+          "area": "Gulfport city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "ami": {
+      "town": "Anna Maria Island",
+      "sale_samples": [
+        {
+          "median": 1137500,
+          "type": "All-home",
+          "period": "October 2026",
+          "sales": 17,
+          "area": "Anna Maria Island",
+          "source": "Compass market report, Stellar MLS",
+          "source_url": "https://janellemertins.com/market-report/anna-maria-island/",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "longboat": {
+      "town": "Longboat Key",
+      "sale_samples": [
+        {
+          "median": 2100000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 163,
+          "area": "Longboat Key town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        },
+        {
+          "median": 850000.0,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 504,
+          "area": "Longboat Key town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "captiva": {
+      "town": "Captiva Island",
+      "sale_samples": [
+        {
+          "median": 2275000,
+          "type": "House",
+          "period": "Oct 2025–Sep 2026",
+          "sales": 11,
+          "area": "Captiva Island fire and erosion taxing district",
+          "source": "McGreevy and Comisar, from Lee County records",
+          "source_url": "https://mcgreevyandcomisar.com/buy-a-home-in-sanibel-captiva",
+          "basis": "provider market"
+        },
+        {
+          "median": 642000,
+          "type": "Condo",
+          "period": "Oct 2025–Sep 2026",
+          "sales": 30,
+          "area": "Captiva Island fire and erosion taxing district",
+          "source": "McGreevy and Comisar, from Lee County records",
+          "source_url": "https://mcgreevyandcomisar.com/buy-a-home-in-sanibel-captiva",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "matlacha": {
+      "town": "Matlacha",
+      "sale_samples": [
+        {
+          "median": 455000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 21,
+          "area": "Matlacha CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "naples": {
+      "town": "Naples",
+      "sale_samples": [
+        {
+          "median": 5025000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 148,
+          "area": "Naples city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "keywest": {
+      "town": "Key West",
+      "sale_samples": [
+        {
+          "median": 1600000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 157,
+          "area": "Key West city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 690000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 43,
+          "area": "Key West city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "islamorada": {
+      "town": "Islamorada",
+      "sale_samples": [
+        {
+          "median": 1797500,
+          "type": "House",
+          "period": "September 2026",
+          "sales": 12,
+          "area": "Islamorada, Village of Islands",
+          "source": "Jim Signor market report, Florida Realtors SunStats",
+          "source_url": "https://www.keyslistings.com/blog/islamorada-real-estate-market-september-2026/",
+          "basis": "provider market"
+        },
+        {
+          "median": 490000,
+          "type": "Condo or townhome",
+          "period": "September 2026",
+          "sales": 5,
+          "area": "Islamorada, Village of Islands",
+          "source": "Jim Signor market report, Florida Realtors SunStats",
+          "source_url": "https://www.keyslistings.com/blog/islamorada-real-estate-market-september-2026/",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "southbeach": {
+      "town": "Miami (South Beach)",
+      "sale_samples": [
+        {
+          "median": 400000,
+          "type": "All-home",
+          "period": "6 months ending Nov 14, 2026",
+          "sales": 285,
+          "area": "South Beach, Miami Beach",
+          "source": "BreakThru Realty, BeachesMLS",
+          "source_url": "https://www.breakthrurealty.com/miami-beach-real-estate/south-beach-recently-sold",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "ftl": {
+      "town": "Fort Lauderdale",
+      "sale_samples": [
+        {
+          "median": 735000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 1005,
+          "area": "Fort Lauderdale city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 460000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 780,
+          "area": "Fort Lauderdale city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "delray": {
+      "town": "Delray Beach",
+      "sale_samples": [
+        {
+          "median": 775000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 434,
+          "area": "Delray Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "jupiter": {
+      "town": "Jupiter",
+      "sale_samples": [
+        {
+          "median": 1100000,
+          "type": "House",
+          "period": "90 days ending Oct 25, 2026",
+          "sales": 213,
+          "area": "Jupiter market",
+          "source": "BreakThru Realty, BeachesMLS",
+          "source_url": "https://www.breakthrurealty.com/jupiter-fl-housing-market",
+          "basis": "provider market"
+        },
+        {
+          "median": 440000,
+          "type": "Condo or townhome",
+          "period": "90 days ending Oct 25, 2026",
+          "sales": 159,
+          "area": "Jupiter market",
+          "source": "BreakThru Realty, BeachesMLS",
+          "source_url": "https://www.breakthrurealty.com/jupiter-fl-housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "fortpierce": {
+      "town": "Fort Pierce",
+      "sale_samples": [
+        {
+          "median": 262700,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 197,
+          "area": "Fort Pierce city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 199000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 133,
+          "area": "Fort Pierce city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "cocoa": {
+      "town": "Cocoa Beach",
+      "sale_samples": [
+        {
+          "median": 770000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 63,
+          "area": "Cocoa Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 350000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 141,
+          "area": "Cocoa Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "nsb": {
+      "town": "New Smyrna Beach",
+      "sale_samples": [
+        {
+          "median": 460000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 357,
+          "area": "New Smyrna Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 425000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 163,
+          "area": "New Smyrna Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "daytona": {
+      "town": "Daytona Beach",
+      "sale_samples": [
+        {
+          "median": 348000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 434,
+          "area": "Daytona Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 140000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 176,
+          "area": "Daytona Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "flagler": {
+      "town": "Flagler Beach",
+      "sale_samples": [
+        {
+          "median": 503500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 60,
+          "area": "Flagler Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 285000,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 49,
+          "area": "Flagler Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "staug": {
+      "town": "St. Augustine",
+      "sale_samples": [
+        {
+          "median": 517140,
+          "type": "All-home",
+          "period": "3 months ending October 2026",
+          "sales": null,
+          "area": "Redfin St. Augustine market",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/city/16053/FL/St-Augustine/housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "jaxbeach": {
+      "town": "Jacksonville Beach",
+      "sale_samples": [
+        {
+          "median": 655000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 187,
+          "area": "Jacksonville Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 485000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 68,
+          "area": "Jacksonville Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "fernandina": {
+      "town": "Fernandina Beach",
+      "sale_samples": [
+        {
+          "median": 657500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 156,
+          "area": "Fernandina Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "carrabelle": {
+      "town": "Carrabelle",
+      "sale_samples": [
+        {
+          "median": 254000,
+          "type": "All-home",
+          "period": "3 months ending September 2026",
+          "sales": null,
+          "area": "Redfin Carrabelle market",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/city/2761/FL/Carrabelle/housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "st-george-island": {
+      "town": "St. George Island",
+      "sale_samples": [
+        {
+          "median": 1025000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 45,
+          "area": "St. George Island CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "st-teresa": {
+      "town": "St. Teresa",
+      "sale_samples": [
+        {
+          "median": 850000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 3,
+          "area": "Summer Camp West subdivision, St. Teresa",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "named subdivision sample"
+        }
+      ]
+    },
+    "st-marks": {
+      "town": "St. Marks",
+      "sale_samples": [
+        {
+          "median": 310000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 15,
+          "area": "St. Marks city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "panama-city": {
+      "town": "Panama City",
+      "sale_samples": [
+        {
+          "median": 285000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 297,
+          "area": "Panama City city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 185000,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 37,
+          "area": "Panama City city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "pensacola": {
+      "town": "Pensacola",
+      "sale_samples": [
+        {
+          "median": 345000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 431,
+          "area": "Pensacola city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 169000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 41,
+          "area": "Pensacola city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "pensacola-beach": {
+      "town": "Pensacola Beach",
+      "sale_samples": [
+        {
+          "median": 777500,
+          "type": "All-home",
+          "period": "12 months ending Nov 7, 2026",
+          "sales": 164,
+          "area": "Pensacola Beach",
+          "source": "Pelican Realty, Pensacola MLS",
+          "source_url": "https://yourpelicanrealty.com/communities/pensacola-beach",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "navarre-beach": {
+      "town": "Navarre Beach",
+      "sale_samples": [
+        {
+          "median": 779000,
+          "type": "All-home",
+          "period": "3 months ending September 2026",
+          "sales": null,
+          "area": "Redfin Navarre Beach market",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/city/33788/FL/Navarre-Beach/housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "perdido-key": {
+      "town": "Perdido Key",
+      "sale_samples": [
+        {
+          "median": 537495,
+          "type": "All-home",
+          "period": "12 months ending November 2026",
+          "sales": null,
+          "area": "Pelican Realty Perdido Key market",
+          "source": "Pelican Realty, Pensacola MLS",
+          "source_url": "https://yourpelicanrealty.com/communities/perdido-key",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "gulf-breeze": {
+      "town": "Gulf Breeze",
+      "sale_samples": [
+        {
+          "median": 852500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 56,
+          "area": "Gulf Breeze city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 272500.0,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 22,
+          "area": "Gulf Breeze city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "port-st-joe": {
+      "town": "Port St. Joe",
+      "sale_samples": [
+        {
+          "median": 425000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 83,
+          "area": "Port St. Joe city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "crystal-river": {
+      "town": "Crystal River",
+      "sale_samples": [
+        {
+          "median": 483750.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 34,
+          "area": "Crystal River city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "homosassa": {
+      "town": "Homosassa",
+      "sale_samples": [
+        {
+          "median": 442600.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 34,
+          "area": "Homosassa CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "ozello": {
+      "town": "Ozello",
+      "sale_samples": [
+        {
+          "median": 445000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 2,
+          "area": "Parcels in the recorded Ozello subdivision",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "named subdivision sample"
+        }
+      ]
+    },
+    "steinhatchee": {
+      "town": "Steinhatchee",
+      "sale_samples": [
+        {
+          "median": 350000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 21,
+          "area": "Steinhatchee CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "apollo-beach": {
+      "town": "Apollo Beach",
+      "sale_samples": [
+        {
+          "median": 459000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 386,
+          "area": "Apollo Beach CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "clearwater": {
+      "town": "Clearwater",
+      "sale_samples": [
+        {
+          "median": 440000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 475,
+          "area": "Clearwater city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "indian-rocks-beach": {
+      "town": "Indian Rocks Beach",
+      "sale_samples": [
+        {
+          "median": 823600.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 42,
+          "area": "Indian Rocks Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 615000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 27,
+          "area": "Indian Rocks Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "madeira-beach": {
+      "town": "Madeira Beach",
+      "sale_samples": [
+        {
+          "median": 678750.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 34,
+          "area": "Madeira Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 708500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 54,
+          "area": "Madeira Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "new-port-richey": {
+      "town": "New Port Richey",
+      "sale_samples": [
+        {
+          "median": 240000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 124,
+          "area": "New Port Richey city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "ruskin": {
+      "town": "Ruskin",
+      "sale_samples": [
+        {
+          "median": 315000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 197,
+          "area": "Ruskin CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "safety-harbor": {
+      "town": "Safety Harbor",
+      "sale_samples": [
+        {
+          "median": 252500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 20,
+          "area": "Safety Harbor city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "st-pete-beach": {
+      "town": "St. Pete Beach",
+      "sale_samples": [
+        {
+          "median": 812500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 82,
+          "area": "St. Pete Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 490000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 82,
+          "area": "St. Pete Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "st-petersburg": {
+      "town": "St. Petersburg",
+      "sale_samples": [
+        {
+          "median": 420000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 1892,
+          "area": "St. Petersburg city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 305000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 520,
+          "area": "St. Petersburg city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "sun-city-center": {
+      "town": "Sun City Center",
+      "sale_samples": [
+        {
+          "median": 319000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 355,
+          "area": "Sun City Center CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 165000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 188,
+          "area": "Sun City Center CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "tampa": {
+      "town": "Tampa",
+      "sale_samples": [
+        {
+          "median": 450000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 2313,
+          "area": "Tampa city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 397500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 556,
+          "area": "Tampa city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "tarpon-springs": {
+      "town": "Tarpon Springs",
+      "sale_samples": [
+        {
+          "median": 447750.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 206,
+          "area": "Tarpon Springs city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 199000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 57,
+          "area": "Tarpon Springs city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "treasure-island": {
+      "town": "Treasure Island",
+      "sale_samples": [
+        {
+          "median": 975000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 65,
+          "area": "Treasure Island city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 379500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 52,
+          "area": "Treasure Island city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "bradenton": {
+      "town": "Bradenton",
+      "sale_samples": [
+        {
+          "median": 349000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 352,
+          "area": "Bradenton city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 250000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 217,
+          "area": "Bradenton city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "bradenton-beach": {
+      "town": "Bradenton Beach",
+      "sale_samples": [
+        {
+          "median": 492500.0,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 42,
+          "area": "Bradenton Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "cortez": {
+      "town": "Cortez",
+      "sale_samples": [
+        {
+          "median": 799900,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 35,
+          "area": "Cortez CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 310000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 31,
+          "area": "Cortez CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "englewood": {
+      "town": "Englewood",
+      "sale_samples": [
+        {
+          "median": 375000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 306,
+          "area": "Englewood CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 190000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 45,
+          "area": "Englewood CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "sarasota": {
+      "town": "Sarasota",
+      "sale_samples": [
+        {
+          "median": 655000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 301,
+          "area": "Sarasota city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 547500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 308,
+          "area": "Sarasota city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "siesta-key": {
+      "town": "Siesta Key",
+      "sale_samples": [
+        {
+          "median": 1530000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 68,
+          "area": "Siesta Key CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 735000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 139,
+          "area": "Siesta Key CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "venice": {
+      "town": "Venice",
+      "sale_samples": [
+        {
+          "median": 495000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 308,
+          "area": "Venice city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 254000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 230,
+          "area": "Venice city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "bonita-springs": {
+      "town": "Bonita Springs",
+      "sale_samples": [
+        {
+          "median": 700000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 607,
+          "area": "Bonita Springs city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "cape-coral": {
+      "town": "Cape Coral",
+      "sale_samples": [
+        {
+          "median": 379300,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 2753,
+          "area": "Cape Coral city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "chokoloskee": {
+      "town": "Chokoloskee",
+      "sale_samples": [
+        {
+          "median": 360000,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 2,
+          "area": "Chokoloskee census area",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "small county sample"
+        }
+      ]
+    },
+    "everglades-city": {
+      "town": "Everglades City",
+      "sale_samples": [
+        {
+          "median": 250000,
+          "type": "All-home",
+          "period": "Trailing year, 2026 provider snapshot",
+          "sales": 11,
+          "area": "Homes.com Everglades City market",
+          "source": "Homes.com",
+          "source_url": "https://www.homes.com/local-guide/everglades-city-fl/",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "fort-myers": {
+      "town": "Fort Myers",
+      "sale_samples": [
+        {
+          "median": 410000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 560,
+          "area": "Fort Myers city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "fort-myers-beach": {
+      "town": "Fort Myers Beach",
+      "sale_samples": [
+        {
+          "median": 1075000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 64,
+          "area": "Fort Myers Beach town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "marco-island": {
+      "town": "Marco Island",
+      "sale_samples": [
+        {
+          "median": 1510000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 216,
+          "area": "Marco Island city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "port-charlotte": {
+      "town": "Port Charlotte",
+      "sale_samples": [
+        {
+          "median": 275000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 700,
+          "area": "Port Charlotte CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 122000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 52,
+          "area": "Port Charlotte CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "punta-gorda": {
+      "town": "Punta Gorda",
+      "sale_samples": [
+        {
+          "median": 588000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 321,
+          "area": "Punta Gorda city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 272000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 166,
+          "area": "Punta Gorda city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "sanibel-island": {
+      "town": "Sanibel Island",
+      "sale_samples": [
+        {
+          "median": 1080000,
+          "type": "House",
+          "period": "Oct 2025–Sep 2026",
+          "sales": 243,
+          "area": "Sanibel, ZIP 33957",
+          "source": "McGreevy and Comisar, from Lee County records",
+          "source_url": "https://mcgreevyandcomisar.com/buy-a-home-in-sanibel-captiva",
+          "basis": "ZIP market"
+        },
+        {
+          "median": 725000,
+          "type": "Condo",
+          "period": "Oct 2025–Sep 2026",
+          "sales": 145,
+          "area": "Sanibel, ZIP 33957",
+          "source": "McGreevy and Comisar, from Lee County records",
+          "source_url": "https://mcgreevyandcomisar.com/buy-a-home-in-sanibel-captiva",
+          "basis": "ZIP market"
+        }
+      ]
+    },
+    "key-largo": {
+      "town": "Key Largo",
+      "sale_samples": [
+        {
+          "median": 997500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 132,
+          "area": "Key Largo CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "bal-harbour": {
+      "town": "Bal Harbour",
+      "sale_samples": [
+        {
+          "median": 18581250.0,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 8,
+          "area": "Bal Harbour village",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "boca-raton": {
+      "town": "Boca Raton",
+      "sale_samples": [
+        {
+          "median": 1200000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 613,
+          "area": "Boca Raton city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "dania-beach": {
+      "town": "Dania Beach",
+      "sale_samples": [
+        {
+          "median": 542500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 128,
+          "area": "Dania Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 247500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 70,
+          "area": "Dania Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "hallandale": {
+      "town": "Hallandale Beach",
+      "sale_samples": [
+        {
+          "median": 550000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 47,
+          "area": "Hallandale Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 245000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 323,
+          "area": "Hallandale Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "highland-beach": {
+      "town": "Highland Beach",
+      "sale_samples": [
+        {
+          "median": 3050000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 27,
+          "area": "Highland Beach town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        },
+        {
+          "median": 975000.0,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 240,
+          "area": "Highland Beach town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "hollywood": {
+      "town": "Hollywood",
+      "sale_samples": [
+        {
+          "median": 550000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 686,
+          "area": "Hollywood city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 270000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 446,
+          "area": "Hollywood city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "lauderdale-by-the-sea": {
+      "town": "Lauderdale by the Sea",
+      "sale_samples": [
+        {
+          "median": 435000.0,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 190,
+          "area": "Lauderdale-by-the-Sea town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "lighthouse-point": {
+      "town": "Lighthouse Point",
+      "sale_samples": [
+        {
+          "median": 1327500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 116,
+          "area": "Lighthouse Point city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 168050.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 38,
+          "area": "Lighthouse Point city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "north-miami-beach": {
+      "town": "North Miami Beach",
+      "sale_samples": [
+        {
+          "median": 505000,
+          "type": "House",
+          "period": "90 days ending Nov 15, 2026",
+          "sales": null,
+          "area": "North Miami Beach",
+          "source": "BreakThru Realty, BeachesMLS",
+          "source_url": "https://www.breakthrurealty.com/north-miami-beach-housing-market",
+          "basis": "provider market"
+        },
+        {
+          "median": 242000,
+          "type": "Condo or townhome",
+          "period": "90 days ending Nov 15, 2026",
+          "sales": null,
+          "area": "North Miami Beach",
+          "source": "BreakThru Realty, BeachesMLS",
+          "source_url": "https://www.breakthrurealty.com/north-miami-beach-housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "north-palm-beach": {
+      "town": "North Palm Beach",
+      "sale_samples": [
+        {
+          "median": 1142500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 58,
+          "area": "North Palm Beach village",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "palm-beach": {
+      "town": "Palm Beach",
+      "sale_samples": [
+        {
+          "median": 13500000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 75,
+          "area": "Palm Beach town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "palm-beach-gardens": {
+      "town": "Palm Beach Gardens",
+      "sale_samples": [
+        {
+          "median": 900000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 739,
+          "area": "Palm Beach Gardens city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "riviera-beach": {
+      "town": "Riviera Beach",
+      "sale_samples": [
+        {
+          "median": 360500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 172,
+          "area": "Riviera Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "sunny-isles-beach": {
+      "town": "Sunny Isles Beach",
+      "sale_samples": [
+        {
+          "median": 2250000.0,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 20,
+          "area": "Sunny Isles Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "west-palm-beach": {
+      "town": "West Palm Beach",
+      "sale_samples": [
+        {
+          "median": 602000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 641,
+          "area": "West Palm Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "wilton-manors": {
+      "town": "Wilton Manors",
+      "sale_samples": [
+        {
+          "median": 794500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 102,
+          "area": "Wilton Manors city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 276250.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 64,
+          "area": "Wilton Manors city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "jensen-beach": {
+      "town": "Jensen Beach",
+      "sale_samples": [
+        {
+          "median": 433000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 125,
+          "area": "Jensen Beach CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 168000,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 21,
+          "area": "Jensen Beach CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "port-st-lucie": {
+      "town": "Port St. Lucie",
+      "sale_samples": [
+        {
+          "median": 399900,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 2363,
+          "area": "Port St. Lucie city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 170000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 73,
+          "area": "Port St. Lucie city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "sebastian": {
+      "town": "Sebastian",
+      "sale_samples": [
+        {
+          "median": 352000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 271,
+          "area": "Sebastian city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "stuart": {
+      "town": "Stuart",
+      "sale_samples": [
+        {
+          "median": 452500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 82,
+          "area": "Stuart city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 184250.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 134,
+          "area": "Stuart city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "vero-beach": {
+      "town": "Vero Beach",
+      "sale_samples": [
+        {
+          "median": 605000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 129,
+          "area": "Vero Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 267450.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 100,
+          "area": "Vero Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "indialantic": {
+      "town": "Indialantic",
+      "sale_samples": [
+        {
+          "median": 691000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 22,
+          "area": "Indialantic town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "melbourne-beach": {
+      "town": "Melbourne Beach",
+      "sale_samples": [
+        {
+          "median": 849000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 28,
+          "area": "Melbourne Beach town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "palm-bay": {
+      "town": "Palm Bay",
+      "sale_samples": [
+        {
+          "median": 310000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 1197,
+          "area": "Palm Bay city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 132500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 32,
+          "area": "Palm Bay city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "satellite-beach": {
+      "town": "Satellite Beach",
+      "sale_samples": [
+        {
+          "median": 522500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 86,
+          "area": "Satellite Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 510000,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 35,
+          "area": "Satellite Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "titusville": {
+      "town": "Titusville",
+      "sale_samples": [
+        {
+          "median": 282000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 393,
+          "area": "Titusville city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 151500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 48,
+          "area": "Titusville city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "west-melbourne": {
+      "town": "West Melbourne",
+      "sale_samples": [
+        {
+          "median": 400000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 190,
+          "area": "West Melbourne city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 191000.0,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 50,
+          "area": "West Melbourne city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "atlantic-beach": {
+      "town": "Atlantic Beach",
+      "sale_samples": [
+        {
+          "median": 725000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 103,
+          "area": "Atlantic Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 470000.0,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 24,
+          "area": "Atlantic Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "neptune-beach": {
+      "town": "Neptune Beach",
+      "sale_samples": [
+        {
+          "median": 779900,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 39,
+          "area": "Neptune Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "ponte-vedra-beach": {
+      "town": "Ponte Vedra Beach",
+      "sale_samples": [
+        {
+          "median": 1560000,
+          "type": "All-home",
+          "period": "August 2026",
+          "sales": 36,
+          "area": "Ponte Vedra Beach ZIP 32082",
+          "source": "Elevate in Ponte Vedra market report",
+          "source_url": "https://elevateinpontevedra.com/post/ponte-vedra-beach-housing-market-update-august-2026",
+          "basis": "ZIP market"
+        }
+      ]
+    },
+    "st-augustine-beach": {
+      "town": "St. Augustine Beach",
+      "sale_samples": [
+        {
+          "median": 624703,
+          "type": "All-home",
+          "period": "3 months ending September 2026",
+          "sales": null,
+          "area": "Redfin St. Augustine Beach market",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/city/16061/FL/St-Augustine-Beach/housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "daytona-beach-shores": {
+      "town": "Daytona Beach Shores",
+      "sale_samples": [
+        {
+          "median": 375000,
+          "type": "All-home",
+          "period": "3 months ending October 2026",
+          "sales": null,
+          "area": "Redfin Daytona Beach Shores market",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/city/4313/FL/Daytona-Beach-Shores/housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "ormond-beach": {
+      "town": "Ormond Beach",
+      "sale_samples": [
+        {
+          "median": 396000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 345,
+          "area": "Ormond Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 259500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 28,
+          "area": "Ormond Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "palm-coast": {
+      "town": "Palm Coast",
+      "sale_samples": [
+        {
+          "median": 353500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 1282,
+          "area": "Palm Coast city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 232500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 58,
+          "area": "Palm Coast city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "port-orange": {
+      "town": "Port Orange",
+      "sale_samples": [
+        {
+          "median": 349400.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 400,
+          "area": "Port Orange city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 175000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 21,
+          "area": "Port Orange city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "navarre": {
+      "town": "Navarre",
+      "sale_samples": [
+        {
+          "median": 430000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 415,
+          "area": "Navarre CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "mary-esther": {
+      "town": "Mary Esther",
+      "sale_samples": [
+        {
+          "median": 107400.0,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 12,
+          "area": "Mary Esther city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "fort-walton-beach": {
+      "town": "Fort Walton Beach",
+      "sale_samples": [
+        {
+          "median": 349950.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 148,
+          "area": "Fort Walton Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 183000,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 41,
+          "area": "Fort Walton Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "shalimar": {
+      "town": "Shalimar",
+      "sale_samples": [
+        {
+          "median": 525000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 11,
+          "area": "Shalimar town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "niceville": {
+      "town": "Niceville",
+      "sale_samples": [
+        {
+          "median": 435000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 143,
+          "area": "Niceville city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "miramar-beach": {
+      "town": "Miramar Beach",
+      "sale_samples": [
+        {
+          "median": 1060000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 219,
+          "area": "Miramar Beach CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 551250.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 170,
+          "area": "Miramar Beach CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "freeport": {
+      "town": "Freeport",
+      "sale_samples": [
+        {
+          "median": 355000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 200,
+          "area": "Freeport city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "mexico-beach": {
+      "town": "Mexico Beach",
+      "sale_samples": [
+        {
+          "median": 460000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 49,
+          "area": "Mexico Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 400000,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 23,
+          "area": "Mexico Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "keaton-beach": {
+      "town": "Keaton Beach",
+      "sale_samples": [
+        {
+          "median": 414500,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 4,
+          "area": "Keaton Beach Drive",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "street sample"
+        }
+      ]
+    },
+    "horseshoe-beach": {
+      "town": "Horseshoe Beach",
+      "sale_samples": [
+        {
+          "median": 247500.0,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 4,
+          "area": "Horseshoe Beach town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        },
+        {
+          "median": 209000.0,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 6,
+          "area": "Horseshoe Beach town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "suwannee": {
+      "town": "Suwannee",
+      "sale_samples": [
+        {
+          "median": 184250.0,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 4,
+          "area": "Suwannee Cove condominium, Suwannee",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "named subdivision sample"
+        }
+      ]
+    },
+    "yankeetown": {
+      "town": "Yankeetown",
+      "sale_samples": [
+        {
+          "median": 285000,
+          "type": "House",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 25,
+          "area": "Yankeetown town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "inglis": {
+      "town": "Inglis",
+      "sale_samples": [
+        {
+          "median": 275000.0,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 28,
+          "area": "Inglis town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "hernando-beach": {
+      "town": "Hernando Beach",
+      "sale_samples": [
+        {
+          "median": 546900,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 53,
+          "area": "Hernando Beach CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "weeki-wachee": {
+      "town": "Weeki Wachee",
+      "sale_samples": [
+        {
+          "median": 362375,
+          "type": "All-home",
+          "period": "12 months ending Nov 15, 2026",
+          "sales": 532,
+          "area": "Momentum Weeki Wachee market area",
+          "source": "Momentum Realty",
+          "source_url": "https://movewithmomentum.com/market/weeki-wachee/",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "aripeka": {
+      "town": "Aripeka",
+      "sale_samples": [
+        {
+          "median": 130000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 13,
+          "area": "Aripeka CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "hudson": {
+      "town": "Hudson",
+      "sale_samples": [
+        {
+          "median": 300000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 164,
+          "area": "Hudson CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 215000,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 23,
+          "area": "Hudson CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "port-richey": {
+      "town": "Port Richey",
+      "sale_samples": [
+        {
+          "median": 235000,
+          "type": "All-home",
+          "period": "12 months ending Nov 14, 2026",
+          "sales": 793,
+          "area": "Momentum Port Richey market area",
+          "source": "Momentum Realty",
+          "source_url": "https://movewithmomentum.com/homes-for-sale/port-richey-fl/",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "holiday": {
+      "town": "Holiday",
+      "sale_samples": [
+        {
+          "median": 221000,
+          "type": "All-home",
+          "period": "12 months ending Nov 15, 2026",
+          "sales": 651,
+          "area": "Momentum Holiday market area",
+          "source": "Momentum Realty",
+          "source_url": "https://movewithmomentum.com/homes-for-sale/holiday-fl/",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "palm-harbor": {
+      "town": "Palm Harbor",
+      "sale_samples": [
+        {
+          "median": 450000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 470,
+          "area": "Palm Harbor CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 193750.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 146,
+          "area": "Palm Harbor CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "oldsmar": {
+      "town": "Oldsmar",
+      "sale_samples": [
+        {
+          "median": 422450.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 100,
+          "area": "Oldsmar city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "belleair-beach": {
+      "town": "Belleair Beach",
+      "sale_samples": [
+        {
+          "median": 900950.0,
+          "type": "House",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 44,
+          "area": "Belleair Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "tierra-verde": {
+      "town": "Tierra Verde",
+      "sale_samples": [
+        {
+          "median": 990500.0,
+          "type": "House",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 56,
+          "area": "Tierra Verde CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 675000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 35,
+          "area": "Tierra Verde CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "indian-shores": {
+      "town": "Indian Shores",
+      "sale_samples": [
+        {
+          "median": 670000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 55,
+          "area": "Indian Shores town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "redington-shores": {
+      "town": "Redington Shores",
+      "sale_samples": [
+        {
+          "median": 650000,
+          "type": "House",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 35,
+          "area": "Redington Shores town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 730000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 27,
+          "area": "Redington Shores town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "gibsonton": {
+      "town": "Gibsonton",
+      "sale_samples": [
+        {
+          "median": 325000.0,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 254,
+          "area": "Gibsonton CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "miami": {
+      "town": "Miami (Brickell and the Grove)",
+      "sale_samples": [
+        {
+          "median": 625000,
+          "type": "Condo",
+          "period": "12 months ending Sep 30, 2026",
+          "sales": null,
+          "area": "Brickell",
+          "source": "Julian Acosta market report, MIAMI REALTORS MLS",
+          "source_url": "https://julianacostarealtor.com/en/market-reports/brickell",
+          "basis": "neighborhood sample"
+        },
+        {
+          "median": 1471095,
+          "type": "Condo",
+          "period": "12 months ending Sep 30, 2026",
+          "sales": null,
+          "area": "Coconut Grove",
+          "source": "Julian Acosta market report, MIAMI REALTORS MLS",
+          "source_url": "https://julianacostarealtor.com/en/market-reports/brickell",
+          "basis": "neighborhood sample"
+        }
+      ]
+    },
+    "jacksonville": {
+      "town": "Jacksonville",
+      "sale_samples": [
+        {
+          "median": 290000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 5495,
+          "area": "Jacksonville city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 170500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 568,
+          "area": "Jacksonville city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "indian-river-shores": {
+      "town": "Indian River Shores",
+      "sale_samples": [
+        {
+          "median": 1979500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 66,
+          "area": "Indian River Shores town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 525000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 66,
+          "area": "Indian River Shores town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "hutchinson-island": {
+      "town": "Hutchinson Island",
+      "sale_samples": [
+        {
+          "median": 492000,
+          "type": "All-home",
+          "period": "3 months ending August 2026",
+          "sales": null,
+          "area": "Hutchinson Island South",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/neighborhood/392857/FL/Hutchinson-Island-South/Hutchinson-Island-South/housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "sewalls-point": {
+      "town": "Sewall's Point",
+      "sale_samples": [
+        {
+          "median": 1500000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 22,
+          "area": "Sewall's Point town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "palm-city": {
+      "town": "Palm City",
+      "sale_samples": [
+        {
+          "median": 577500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 258,
+          "area": "Palm City CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "port-salerno": {
+      "town": "Port Salerno",
+      "sale_samples": [
+        {
+          "median": 394000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 90,
+          "area": "Port Salerno CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "hobe-sound": {
+      "town": "Hobe Sound",
+      "sale_samples": [
+        {
+          "median": 525000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 124,
+          "area": "Hobe Sound CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 240000.0,
+          "type": "Condo",
+          "period": "Jul 2025–Jun 2026",
+          "sales": 30,
+          "area": "Hobe Sound CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "tequesta": {
+      "town": "Tequesta",
+      "sale_samples": [
+        {
+          "median": 340250.0,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 96,
+          "area": "Tequesta village",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "juno-beach": {
+      "town": "Juno Beach",
+      "sale_samples": [
+        {
+          "median": 650000,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 107,
+          "area": "Juno Beach town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "lake-park": {
+      "town": "Lake Park",
+      "sale_samples": [
+        {
+          "median": 450000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 33,
+          "area": "Lake Park town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "palm-beach-shores": {
+      "town": "Palm Beach Shores",
+      "sale_samples": [
+        {
+          "median": 1371250.0,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 24,
+          "area": "Palm Beach Shores town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "lake-worth-beach": {
+      "town": "Lake Worth Beach",
+      "sale_samples": [
+        {
+          "median": 465000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 204,
+          "area": "Lake Worth Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "lantana": {
+      "town": "Lantana",
+      "sale_samples": [
+        {
+          "median": 515000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 43,
+          "area": "Lantana town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "boynton-beach": {
+      "town": "Boynton Beach",
+      "sale_samples": [
+        {
+          "median": 435000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 355,
+          "area": "Boynton Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "vilano-beach": {
+      "town": "Vilano Beach",
+      "sale_samples": [
+        {
+          "median": 700916,
+          "type": "All-home",
+          "period": "3 months ending September 2026",
+          "sales": null,
+          "area": "Redfin Vilano Beach market",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/city/37639/FL/Vilano-Beach/housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "crescent-beach": {
+      "town": "Crescent Beach",
+      "sale_samples": [
+        {
+          "median": 535000,
+          "type": "All-home",
+          "period": "3 months ending September 2026",
+          "sales": null,
+          "area": "Redfin Crescent Beach market, St. Johns County",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/city/22076/FL/Crescent-Beach/housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "beverly-beach": {
+      "town": "Beverly Beach",
+      "sale_samples": [
+        {
+          "median": 904500.0,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 6,
+          "area": "Beverly Beach town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        },
+        {
+          "median": 685000,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 3,
+          "area": "Beverly Beach town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "ormond-by-the-sea": {
+      "town": "Ormond by the Sea",
+      "sale_samples": [
+        {
+          "median": 394500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 94,
+          "area": "Ormond-by-the-Sea CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 276000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 45,
+          "area": "Ormond-by-the-Sea CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "ponce-inlet": {
+      "town": "Ponce Inlet",
+      "sale_samples": [
+        {
+          "median": 955000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 29,
+          "area": "Ponce Inlet town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 480000.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 58,
+          "area": "Ponce Inlet town",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "edgewater": {
+      "town": "Edgewater",
+      "sale_samples": [
+        {
+          "median": 300000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 213,
+          "area": "Edgewater city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "cape-canaveral": {
+      "town": "Cape Canaveral",
+      "sale_samples": [
+        {
+          "median": 385000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 87,
+          "area": "Cape Canaveral city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        },
+        {
+          "median": 287000,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 305,
+          "area": "Cape Canaveral city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    },
+    "merritt-island": {
+      "town": "Merritt Island",
+      "sale_samples": [
+        {
+          "median": 470500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 278,
+          "area": "Merritt Island CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 175000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 45,
+          "area": "Merritt Island CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "cocoa-village": {
+      "town": "Cocoa Village",
+      "sale_samples": [
+        {
+          "median": 551000.0,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 12,
+          "area": "Oleander Pointe condominium, Cocoa Village",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "named subdivision sample"
+        }
+      ]
+    },
+    "rockledge": {
+      "town": "Rockledge",
+      "sale_samples": [
+        {
+          "median": 360000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 211,
+          "area": "Rockledge city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 198500.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 46,
+          "area": "Rockledge city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "indian-harbour-beach": {
+      "town": "Indian Harbour Beach",
+      "sale_samples": [
+        {
+          "median": 495750.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 78,
+          "area": "Indian Harbour Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 323750.0,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 36,
+          "area": "Indian Harbour Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "melbourne": {
+      "town": "Melbourne",
+      "sale_samples": [
+        {
+          "median": 315000,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 555,
+          "area": "Melbourne city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 165000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 93,
+          "area": "Melbourne city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "marathon": {
+      "town": "Marathon",
+      "sale_samples": [
+        {
+          "median": 979534,
+          "type": "All-home",
+          "period": "3 months ending September 2026",
+          "sales": null,
+          "area": "Redfin Marathon market",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/city/10942/FL/Marathon/housing-market",
+          "basis": "provider market"
+        }
+      ]
+    },
+    "big-pine-key": {
+      "town": "Big Pine Key",
+      "sale_samples": [
+        {
+          "median": 794500.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 50,
+          "area": "Big Pine Key CDP",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "key-biscayne": {
+      "town": "Key Biscayne",
+      "sale_samples": [
+        {
+          "median": 3910000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 26,
+          "area": "Key Biscayne village",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "boca-grande": {
+      "town": "Boca Grande",
+      "sale_samples": [
+        {
+          "median": 3700000,
+          "type": "All-home",
+          "period": "3 months ending September 2026",
+          "sales": null,
+          "area": "Boca Grande ZIP 33921",
+          "source": "Redfin",
+          "source_url": "https://www.redfin.com/zipcode/33921/housing-market",
+          "basis": "ZIP market"
+        }
+      ]
+    },
+    "pompano-beach": {
+      "town": "Pompano Beach",
+      "sale_samples": [
+        {
+          "median": 500000.0,
+          "type": "House",
+          "period": "Jan–Jun 2026",
+          "sales": 416,
+          "area": "Pompano Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        },
+        {
+          "median": 258000,
+          "type": "Condo",
+          "period": "Jan–Jun 2026",
+          "sales": 557,
+          "area": "Pompano Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "verified county sample"
+        }
+      ]
+    },
+    "deerfield-beach": {
+      "town": "Deerfield Beach",
+      "sale_samples": [
+        {
+          "median": 455000,
+          "type": "House",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 891,
+          "area": "Deerfield Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        },
+        {
+          "median": 155000,
+          "type": "Condo",
+          "period": "Jan 2025–Jun 2026",
+          "sales": 1193,
+          "area": "Deerfield Beach city",
+          "source": "Florida DOR county records",
+          "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+          "basis": "longer-window county sample"
+        }
+      ]
+    }
+  }
+}
