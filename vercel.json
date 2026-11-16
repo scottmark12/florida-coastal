@@ -1,6 +1,17 @@
 {
   "redirects": [
     {
+      "source": "/:path*",
+      "has": [
+        {
+          "type": "host",
+          "value": "family.floridacoastal.co"
+        }
+      ],
+      "destination": "https://www.floridacoastal.co/?team=1",
+      "permanent": false
+    },
+    {
       "source": "/(.*)",
       "has": [
         {
