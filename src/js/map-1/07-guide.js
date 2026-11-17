@@ -16,7 +16,7 @@
   const st=S.style||'',rn=isR(st)?st.slice(2):'';
   const base={vibes:{eb:'Vibe Map',img:`img/vibes/${S.style&&!isR(S.style)?S.style:'beaches'}.webp`},regions:{eb:'Regions',img:RIMG(rn||'south-keys')},sliders:{eb:'Slider Map',img:f0.img}}[k];
   if(G.step>=0){const s=STEPS[k][G.step];return {...base,stp:`How it works · ${G.step+1} of 3`,tx:typeof s=='function'?s():s,btn:G.step<2?'Next':'Got it',act:()=>{G.step=G.step<2?G.step+1:-1;show()},how:false}}
-  if(k=='vibes'){if(!G.ph)return {...base,h3:'Explore like a local',tx:'Pick a feel, like Old Florida or Island Life, and see every town that has it.',btn:'Show me how',act:()=>tour('vibes'),how:false};
+  if(k=='vibes'){if(!G.ph)return {...base,h3:'Explore like a local',tx:'Pick a feel, like Old Florida or Island Vibes, and see every town that has it.',btn:'Show me how',act:()=>tour('vibes'),how:false};
    const L=LK.VFEEL,nx=L[(Math.max(0,L.indexOf(st))+1)%L.length];return {...base,h3:`${VIBES[st]||'Best Beaches'} is on`,tx:st=='beaches'?`These ${cnt(st)} towns have the best sand. Tap any style below to switch, or a dot to meet a town.`:`${cnt(st)} towns light up. Tap any style below to switch, or a dot to meet a town.`,btn:`Show me ${VIBES[nx]}`,act:()=>pickStyle(nx),how:false}}
   if(k=='regions'){if(!G.ph)return {...base,h3:'Know the coast',tx:"Florida's coast in seven stretches. Pick one to see every town in it.",btn:'Show me how',act:()=>tour('regions'),how:false};
    const L=R7.map(r=>r[0]),nx=L[(Math.max(0,L.indexOf(rn))+1)%L.length];return {...base,h3:VIBES[st]||'South Florida and the Keys',tx:`${cnt(st)} towns. Swipe the tiles for other regions, or tap a dot to meet a town.`,btn:`Show me ${VIBES['r:'+nx].replace(/^The /,'')}`,act:()=>pickStyle('r:'+nx),how:false}}

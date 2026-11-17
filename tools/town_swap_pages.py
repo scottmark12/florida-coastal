@@ -19,8 +19,8 @@ LAB = {'Active outdoors': 'outdoors', 'Affordability': 'afford', 'Airport access
        'Coastal charm': 'charm', 'Dining and arts': 'dining', 'Meet people': 'meet', 'Nightlife': 'nightlife',
        'On the water': 'water', 'Peace and quiet': 'quiet', 'Walkability': 'walk'}
 KL = {v: k for k, v in LAB.items()}
-VIBE = {'active': 'Active Outdoors', 'afford': 'Affordable', 'beaches': 'Best Beaches', 'bluezone': 'Healthy Living',
-        'dock': 'Dock of the Bay', 'island': 'Island Life', 'oldfl': 'Old Florida', 'remote': 'Remote Work',
+VIBE = {'active': 'Active Lifestyle', 'afford': 'Affordable', 'beaches': 'Best Beaches', 'bluezone': 'Healthy Living',
+        'dock': 'Dock Life', 'island': 'Island Vibes', 'oldfl': 'Old Florida', 'remote': 'Remote Work',
         'social': 'Social Scene', 'sophcalm': 'Sophisticated Laid Back', 'sophhigh': 'High Energy', 'walk': 'Walkable'}
 ANCH = {'South Florida and the Keys': 'south-keys', 'Southwest Florida': 'southwest'}
 INS = {

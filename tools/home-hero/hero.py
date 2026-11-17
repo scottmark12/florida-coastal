@@ -3,8 +3,8 @@ import json
 
 D = json.load(open('/home/claude/perf/hero-data.json'))
 
-NAME = {"oldfl": "Old Florida", "dock": "Dock of the Bay", "island": "Island Life", "sophcalm": "Sophisticated Laid Back",
-        "sophhigh": "High Energy", "social": "Social Scene", "active": "Active Outdoors", "bluezone": "Healthy Living",
+NAME = {"oldfl": "Old Florida", "dock": "Dock Life", "island": "Island Vibes", "sophcalm": "Sophisticated Laid Back",
+        "sophhigh": "High Energy", "social": "Social Scene", "active": "Active Lifestyle", "bluezone": "Healthy Living",
         "walk": "Walkable", "remote": "Remote Work", "beaches": "Best Beaches", "afford": "Affordable"}
 CNT = {}
 for t in D['towns']:

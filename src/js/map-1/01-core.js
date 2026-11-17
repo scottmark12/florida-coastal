@@ -1,5 +1,5 @@
 /* Map core: projection, drawing the map and labels, town cards, pan and zoom, search */
-const VIBES={beaches:"Best Beaches",oldfl:"Old Florida",bluezone:"Healthy Living",island:"Island Life",dock:"Dock of the Bay",sophhigh:"High Energy",social:"Social Scene",sophcalm:"Sophisticated Laid Back",active:"Active Outdoors",walk:"Walkable",remote:"Remote Work",afford:"Affordable"};
+const VIBES={beaches:"Best Beaches",oldfl:"Old Florida",bluezone:"Healthy Living",island:"Island Vibes",dock:"Dock Life",sophhigh:"High Energy",social:"Social Scene",sophcalm:"Sophisticated Laid Back",active:"Active Lifestyle",walk:"Walkable",remote:"Remote Work",afford:"Affordable"};
 const VCOL={oldfl:'#2F9460',dock:'#3A62C8',island:'#1FA39A',sophcalm:'#7B62D8',sophhigh:'#C8407F',social:'#E0604F',active:'#6FA53E',bluezone:'#2A93CF',walk:'#B055C0',remote:'#DB8430',beaches:'#D2A52A',afford:'#B5643F'};
 
 
