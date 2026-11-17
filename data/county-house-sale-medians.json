@@ -1,0 +1,1918 @@
+{
+  "reviewed_on": "2026-11-17",
+  "sources": {
+    "sale_and_parcel_records": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
+    "boundaries": "https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2024&layergroup=Places",
+    "coastlines": "https://www.census.gov/cgi-bin/geo/shapefiles/index.php?year=2024&layergroup=Area+Water",
+    "miami_neighborhoods": "https://gisstg.miami.gov/gis/rest/services/Maps/Neighborhoods/MapServer"
+  },
+  "method": "Qualified improved single-family transactions (DOR use 001). We excluded recorded duplicates, multi-parcel sales and flagged changes to the property. Established Census samples retain their previously verified periods. Other areas use the shortest of 6 or 12 months with at least 20 sales, or use up to 18 months. Mapped local areas and recorded street or subdivision samples cover the locations named in each row. Island screens for Pensacola Beach and Perdido Key use Census area water to separate barrier-island parcels from mainland parcels.",
+  "towns": [
+    {
+      "id": "30a",
+      "town": "30A (Santa Rosa Beach)",
+      "median": 1200000,
+      "sales": 615,
+      "start": "2026-01",
+      "area": "South Walton coastal rectangle, Dune Allen to Inlet Beach",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "Walton": 0.9978
+      },
+      "screening_rectangles_wgs84": [
+        [
+          -86.277,
+          30.29,
+          -86.002,
+          30.39
+        ]
+      ],
+      "end": "2026-06"
+    },
+    {
+      "id": "ami",
+      "town": "Anna Maria Island",
+      "median": 1800000,
+      "sales": 129,
+      "start": "2026-01",
+      "area": "Anna Maria, Holmes Beach and Bradenton Beach Census places",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "Manatee": 0.9985
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "apalachicola",
+      "town": "Apalachicola",
+      "median": 350000,
+      "sales": 21,
+      "start": "2026-01",
+      "area": "Apalachicola city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "apollo-beach",
+      "town": "Apollo Beach",
+      "median": 459000.0,
+      "sales": 386,
+      "start": "2026-01",
+      "area": "Apollo Beach CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "aripeka",
+      "town": "Aripeka",
+      "median": 130000,
+      "sales": 13,
+      "start": "2025-01",
+      "area": "Aripeka CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Hernando": 0.9973,
+        "Pasco": 0.9992
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "atlantic-beach",
+      "town": "Atlantic Beach",
+      "median": 725000,
+      "sales": 103,
+      "start": "2026-01",
+      "area": "Atlantic Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "bal-harbour",
+      "town": "Bal Harbour",
+      "median": 18581250.0,
+      "sales": 8,
+      "start": "2025-01",
+      "area": "Bal Harbour village",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Miami-Dade": 0.9992
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "belleair-beach",
+      "town": "Belleair Beach",
+      "median": 900950.0,
+      "sales": 44,
+      "start": "2025-07",
+      "area": "Belleair Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "beverly-beach",
+      "town": "Beverly Beach",
+      "median": 904500.0,
+      "sales": 6,
+      "start": "2025-01",
+      "area": "Beverly Beach town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Flagler": 0.9996
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "big-pine-key",
+      "town": "Big Pine Key",
+      "median": 794500.0,
+      "sales": 50,
+      "start": "2026-01",
+      "area": "Big Pine Key CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "boca-grande",
+      "town": "Boca Grande",
+      "median": 3032500.0,
+      "sales": 28,
+      "start": "2026-01",
+      "area": "Boca Grande and Gasparilla Island rectangle",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "Lee": 0.9999
+      },
+      "screening_rectangles_wgs84": [
+        [
+          -82.282,
+          26.71,
+          -82.244,
+          26.791
+        ]
+      ],
+      "end": "2026-06"
+    },
+    {
+      "id": "boca-raton",
+      "town": "Boca Raton",
+      "median": 1200000,
+      "sales": 613,
+      "start": "2026-01",
+      "area": "Boca Raton city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "bonita-springs",
+      "town": "Bonita Springs",
+      "median": 700000,
+      "sales": 607,
+      "start": "2026-01",
+      "area": "Bonita Springs city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "boynton-beach",
+      "town": "Boynton Beach",
+      "median": 435000,
+      "sales": 355,
+      "start": "2026-01",
+      "area": "Boynton Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "bradenton",
+      "town": "Bradenton",
+      "median": 349000.0,
+      "sales": 352,
+      "start": "2026-01",
+      "area": "Bradenton city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "bradenton-beach",
+      "town": "Bradenton Beach",
+      "median": 2050000.0,
+      "sales": 22,
+      "start": "2025-01",
+      "area": "Bradenton Beach city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Manatee": 0.9985
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "cape-canaveral",
+      "town": "Cape Canaveral",
+      "median": 431850.0,
+      "sales": 30,
+      "start": "2026-01",
+      "area": "Cape Canaveral city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Brevard": 0.9991
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "cape-coral",
+      "town": "Cape Coral",
+      "median": 379300,
+      "sales": 2753,
+      "start": "2026-01",
+      "area": "Cape Coral city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "captiva",
+      "town": "Captiva Island",
+      "median": 1525000.0,
+      "sales": 18,
+      "start": "2025-01",
+      "area": "Captiva CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Lee": 0.9999
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "carrabelle",
+      "town": "Carrabelle",
+      "median": 217500.0,
+      "sales": 24,
+      "start": "2025-07",
+      "area": "Carrabelle city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Franklin": 0.9928
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "cedarkey",
+      "town": "Cedar Key",
+      "median": 327500.0,
+      "sales": 20,
+      "start": "2026-01",
+      "area": "Cedar Key city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Levy": 0.9928
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "chokoloskee",
+      "town": "Chokoloskee",
+      "median": 677500,
+      "sales": 1,
+      "start": "2025-01",
+      "area": "Chokoloskee CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Collier": 0.9986
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "clearwater",
+      "town": "Clearwater",
+      "median": 440000,
+      "sales": 475,
+      "start": "2026-01",
+      "area": "Clearwater city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "clearwaterbeach",
+      "town": "Clearwater Beach",
+      "median": 1025000.0,
+      "sales": 38,
+      "start": "2026-01",
+      "area": "Clearwater Beach barrier-island rectangle, Clearwater Pass to the north beach",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "Pinellas": 0.9995
+      },
+      "screening_rectangles_wgs84": [
+        [
+          -82.835,
+          27.968,
+          -82.814,
+          28.016
+        ]
+      ],
+      "end": "2026-06"
+    },
+    {
+      "id": "cocoa",
+      "town": "Cocoa Beach",
+      "median": 770000,
+      "sales": 63,
+      "start": "2026-01",
+      "area": "Cocoa Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "cocoa-village",
+      "town": "Cocoa Village",
+      "median": 347500.0,
+      "sales": 18,
+      "start": "2025-01",
+      "area": "Cocoa Village riverfront and adjacent blocks rectangle",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "Brevard": 0.9991
+      },
+      "screening_rectangles_wgs84": [
+        [
+          -80.735,
+          28.343,
+          -80.718,
+          28.367
+        ]
+      ],
+      "end": "2026-06"
+    },
+    {
+      "id": "cortez",
+      "town": "Cortez",
+      "median": 799900,
+      "sales": 35,
+      "start": "2026-01",
+      "area": "Cortez CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "crescent-beach",
+      "town": "Crescent Beach",
+      "median": 1600000,
+      "sales": 13,
+      "start": "2025-01",
+      "area": "Crescent Beach CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "St. Johns": 0.9433
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "crystal-river",
+      "town": "Crystal River",
+      "median": 483750.0,
+      "sales": 34,
+      "start": "2026-01",
+      "area": "Crystal River city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "dania-beach",
+      "town": "Dania Beach",
+      "median": 542500.0,
+      "sales": 128,
+      "start": "2026-01",
+      "area": "Dania Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "daytona",
+      "town": "Daytona Beach",
+      "median": 348000.0,
+      "sales": 434,
+      "start": "2026-01",
+      "area": "Daytona Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "daytona-beach-shores",
+      "town": "Daytona Beach Shores",
+      "median": 437500.0,
+      "sales": 26,
+      "start": "2025-01",
+      "area": "Daytona Beach Shores city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Volusia": 0.9987
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "deerfield-beach",
+      "town": "Deerfield Beach",
+      "median": 430000.0,
+      "sales": 316,
+      "start": "2026-01",
+      "area": "Deerfield Beach city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Broward": 0.9974
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "delray",
+      "town": "Delray Beach",
+      "median": 775000.0,
+      "sales": 434,
+      "start": "2026-01",
+      "area": "Delray Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "destin",
+      "town": "Destin",
+      "median": 675000,
+      "sales": 149,
+      "start": "2026-01",
+      "area": "Destin city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Okaloosa": 0.9992
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "dunedin",
+      "town": "Dunedin",
+      "median": 550000,
+      "sales": 255,
+      "start": "2026-01",
+      "area": "Dunedin city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "edgewater",
+      "town": "Edgewater",
+      "median": 300000,
+      "sales": 213,
+      "start": "2026-01",
+      "area": "Edgewater city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "englewood",
+      "town": "Englewood",
+      "median": 375000.0,
+      "sales": 306,
+      "start": "2026-01",
+      "area": "Englewood CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "everglades-city",
+      "town": "Everglades City",
+      "median": 550000,
+      "sales": 7,
+      "start": "2025-01",
+      "area": "Everglades city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Collier": 0.9986
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "fernandina",
+      "town": "Fernandina Beach",
+      "median": 657500.0,
+      "sales": 156,
+      "start": "2026-01",
+      "area": "Fernandina Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "flagler",
+      "town": "Flagler Beach",
+      "median": 503500.0,
+      "sales": 60,
+      "start": "2026-01",
+      "area": "Flagler Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "ftl",
+      "town": "Fort Lauderdale",
+      "median": 735000,
+      "sales": 1005,
+      "start": "2026-01",
+      "area": "Fort Lauderdale city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "fort-myers",
+      "town": "Fort Myers",
+      "median": 410000.0,
+      "sales": 560,
+      "start": "2026-01",
+      "area": "Fort Myers city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "fort-myers-beach",
+      "town": "Fort Myers Beach",
+      "median": 1075000.0,
+      "sales": 64,
+      "start": "2026-01",
+      "area": "Fort Myers Beach town",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "fortpierce",
+      "town": "Fort Pierce",
+      "median": 262700,
+      "sales": 197,
+      "start": "2026-01",
+      "area": "Fort Pierce city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "fort-walton-beach",
+      "town": "Fort Walton Beach",
+      "median": 349950.0,
+      "sales": 148,
+      "start": "2026-01",
+      "area": "Fort Walton Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "freeport",
+      "town": "Freeport",
+      "median": 355000.0,
+      "sales": 200,
+      "start": "2026-01",
+      "area": "Freeport city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "gibsonton",
+      "town": "Gibsonton",
+      "median": 308000,
+      "sales": 99,
+      "start": "2026-01",
+      "area": "Gibsonton CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Hillsborough": 0.9986
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "gulf-breeze",
+      "town": "Gulf Breeze",
+      "median": 852500.0,
+      "sales": 56,
+      "start": "2026-01",
+      "area": "Gulf Breeze city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "gulfport",
+      "town": "Gulfport",
+      "median": 450000.0,
+      "sales": 114,
+      "start": "2026-01",
+      "area": "Gulfport city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "hallandale",
+      "town": "Hallandale Beach",
+      "median": 550000,
+      "sales": 47,
+      "start": "2026-01",
+      "area": "Hallandale Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "hernando-beach",
+      "town": "Hernando Beach",
+      "median": 546900,
+      "sales": 53,
+      "start": "2026-01",
+      "area": "Hernando Beach CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "highland-beach",
+      "town": "Highland Beach",
+      "median": 3050000,
+      "sales": 27,
+      "start": "2025-01",
+      "area": "Highland Beach town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Palm Beach": 0.9951
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "hobe-sound",
+      "town": "Hobe Sound",
+      "median": 525000.0,
+      "sales": 124,
+      "start": "2026-01",
+      "area": "Hobe Sound CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "holiday",
+      "town": "Holiday",
+      "median": 217400.0,
+      "sales": 240,
+      "start": "2026-01",
+      "area": "Holiday CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Pasco": 0.9992
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "hollywood",
+      "town": "Hollywood",
+      "median": 550000.0,
+      "sales": 686,
+      "start": "2026-01",
+      "area": "Hollywood city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "homosassa",
+      "town": "Homosassa",
+      "median": 442600.0,
+      "sales": 34,
+      "start": "2026-01",
+      "area": "Homosassa CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "horseshoe-beach",
+      "town": "Horseshoe Beach",
+      "median": 247500.0,
+      "sales": 4,
+      "start": "2025-01",
+      "area": "Horseshoe Beach town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Dixie": 1.0
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "hudson",
+      "town": "Hudson",
+      "median": 300000.0,
+      "sales": 164,
+      "start": "2026-01",
+      "area": "Hudson CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "hutchinson-island",
+      "town": "Hutchinson Island",
+      "median": 496000.0,
+      "sales": 32,
+      "start": "2026-01",
+      "area": "Hutchinson Island South CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "St. Lucie": 0.9996
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "indialantic",
+      "town": "Indialantic",
+      "median": 691000.0,
+      "sales": 22,
+      "start": "2026-01",
+      "area": "Indialantic town",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "indian-harbour-beach",
+      "town": "Indian Harbour Beach",
+      "median": 495750.0,
+      "sales": 78,
+      "start": "2026-01",
+      "area": "Indian Harbour Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "indian-river-shores",
+      "town": "Indian River Shores",
+      "median": 1979500.0,
+      "sales": 66,
+      "start": "2026-01",
+      "area": "Indian River Shores town",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "indian-rocks-beach",
+      "town": "Indian Rocks Beach",
+      "median": 823600.0,
+      "sales": 42,
+      "start": "2026-01",
+      "area": "Indian Rocks Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "indian-shores",
+      "town": "Indian Shores",
+      "median": 990000,
+      "sales": 19,
+      "start": "2025-01",
+      "area": "Indian Shores town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Pinellas": 0.9995
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "inglis",
+      "town": "Inglis",
+      "median": 275000,
+      "sales": 21,
+      "start": "2025-07",
+      "area": "Inglis town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Levy": 0.9928
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "islamorada",
+      "town": "Islamorada",
+      "median": 1850000,
+      "sales": 87,
+      "start": "2026-01",
+      "area": "Islamorada, Village of Islands",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Monroe": 0.9974
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "jacksonville",
+      "town": "Jacksonville",
+      "median": 290000,
+      "sales": 5495,
+      "start": "2026-01",
+      "area": "Jacksonville city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "jaxbeach",
+      "town": "Jacksonville Beach",
+      "median": 655000,
+      "sales": 187,
+      "start": "2026-01",
+      "area": "Jacksonville Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "jensen-beach",
+      "town": "Jensen Beach",
+      "median": 433000,
+      "sales": 125,
+      "start": "2026-01",
+      "area": "Jensen Beach CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "juno-beach",
+      "town": "Juno Beach",
+      "median": 1772500.0,
+      "sales": 24,
+      "start": "2026-01",
+      "area": "Juno Beach town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Palm Beach": 0.9951
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "jupiter",
+      "town": "Jupiter",
+      "median": 775000.0,
+      "sales": 518,
+      "start": "2026-01",
+      "area": "Jupiter town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Palm Beach": 0.9951
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "keaton-beach",
+      "town": "Keaton Beach",
+      "median": 414500,
+      "sales": 4,
+      "start": "2025-01",
+      "area": "Keaton Beach Drive",
+      "scope": "Recorded street or subdivision",
+      "end": "2026-06"
+    },
+    {
+      "id": "key-biscayne",
+      "town": "Key Biscayne",
+      "median": 3910000.0,
+      "sales": 26,
+      "start": "2026-01",
+      "area": "Key Biscayne village",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "key-largo",
+      "town": "Key Largo",
+      "median": 997500.0,
+      "sales": 132,
+      "start": "2026-01",
+      "area": "Key Largo CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "keywest",
+      "town": "Key West",
+      "median": 1600000,
+      "sales": 157,
+      "start": "2026-01",
+      "area": "Key West city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "lake-park",
+      "town": "Lake Park",
+      "median": 450000,
+      "sales": 33,
+      "start": "2026-01",
+      "area": "Lake Park town",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "lake-worth-beach",
+      "town": "Lake Worth Beach",
+      "median": 465000.0,
+      "sales": 204,
+      "start": "2026-01",
+      "area": "Lake Worth Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "lantana",
+      "town": "Lantana",
+      "median": 515000,
+      "sales": 43,
+      "start": "2026-01",
+      "area": "Lantana town",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "lauderdale-by-the-sea",
+      "town": "Lauderdale by the Sea",
+      "median": 1425000,
+      "sales": 21,
+      "start": "2026-01",
+      "area": "Lauderdale-by-the-Sea town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Broward": 0.9974
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "lighthouse-point",
+      "town": "Lighthouse Point",
+      "median": 1327500.0,
+      "sales": 116,
+      "start": "2026-01",
+      "area": "Lighthouse Point city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "longboat",
+      "town": "Longboat Key",
+      "median": 2225000.0,
+      "sales": 78,
+      "start": "2026-01",
+      "area": "Longboat Key town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Manatee": 0.9985,
+        "Sarasota": 1.0
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "madeira-beach",
+      "town": "Madeira Beach",
+      "median": 678750.0,
+      "sales": 34,
+      "start": "2026-01",
+      "area": "Madeira Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "marathon",
+      "town": "Marathon",
+      "median": 1380000.0,
+      "sales": 84,
+      "start": "2026-01",
+      "area": "Marathon city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Monroe": 0.9974
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "marco-island",
+      "town": "Marco Island",
+      "median": 1510000.0,
+      "sales": 216,
+      "start": "2026-01",
+      "area": "Marco Island city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "mary-esther",
+      "town": "Mary Esther",
+      "median": 354700.0,
+      "sales": 36,
+      "start": "2026-01",
+      "area": "Mary Esther city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Okaloosa": 0.9992
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "matlacha",
+      "town": "Matlacha",
+      "median": 455000,
+      "sales": 21,
+      "start": "2025-01",
+      "area": "Matlacha CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Lee": 0.9999
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "melbourne",
+      "town": "Melbourne",
+      "median": 315000,
+      "sales": 555,
+      "start": "2026-01",
+      "area": "Melbourne city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "melbourne-beach",
+      "town": "Melbourne Beach",
+      "median": 849000.0,
+      "sales": 28,
+      "start": "2026-01",
+      "area": "Melbourne Beach town",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "merritt-island",
+      "town": "Merritt Island",
+      "median": 470500.0,
+      "sales": 278,
+      "start": "2026-01",
+      "area": "Merritt Island CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "mexico-beach",
+      "town": "Mexico Beach",
+      "median": 460000,
+      "sales": 49,
+      "start": "2026-01",
+      "area": "Mexico Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "miami",
+      "town": "Miami (Brickell and the Grove)",
+      "median": 2775000.0,
+      "sales": 102,
+      "start": "2026-01",
+      "area": "Brickell and Coconut Grove city-mapped districts, pooled",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "Miami-Dade": 0.9992
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "southbeach",
+      "town": "Miami (South Beach)",
+      "median": 4500000,
+      "sales": 33,
+      "start": "2026-01",
+      "area": "South Beach rectangle, south of Dade Boulevard latitude",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "Miami-Dade": 0.9992
+      },
+      "screening_rectangles_wgs84": [
+        [
+          -80.15,
+          25.754,
+          -80.123,
+          25.805
+        ]
+      ],
+      "end": "2026-06"
+    },
+    {
+      "id": "miramar-beach",
+      "town": "Miramar Beach",
+      "median": 1060000,
+      "sales": 219,
+      "start": "2026-01",
+      "area": "Miramar Beach CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "naples",
+      "town": "Naples",
+      "median": 5025000.0,
+      "sales": 148,
+      "start": "2026-01",
+      "area": "Naples city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "navarre",
+      "town": "Navarre",
+      "median": 430000,
+      "sales": 415,
+      "start": "2026-01",
+      "area": "Navarre CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "navarre-beach",
+      "town": "Navarre Beach",
+      "median": 950000,
+      "sales": 29,
+      "start": "2026-01",
+      "area": "Navarre Beach CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Santa Rosa": 0.9987
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "neptune-beach",
+      "town": "Neptune Beach",
+      "median": 779900,
+      "sales": 39,
+      "start": "2026-01",
+      "area": "Neptune Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "new-port-richey",
+      "town": "New Port Richey",
+      "median": 240000.0,
+      "sales": 124,
+      "start": "2026-01",
+      "area": "New Port Richey city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "nsb",
+      "town": "New Smyrna Beach",
+      "median": 460000,
+      "sales": 357,
+      "start": "2026-01",
+      "area": "New Smyrna Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "niceville",
+      "town": "Niceville",
+      "median": 435000,
+      "sales": 143,
+      "start": "2026-01",
+      "area": "Niceville city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "north-miami-beach",
+      "town": "North Miami Beach",
+      "median": 500000.0,
+      "sales": 112,
+      "start": "2026-01",
+      "area": "North Miami Beach city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Miami-Dade": 0.9992
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "north-palm-beach",
+      "town": "North Palm Beach",
+      "median": 1142500.0,
+      "sales": 58,
+      "start": "2026-01",
+      "area": "North Palm Beach village",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "oldsmar",
+      "town": "Oldsmar",
+      "median": 422450.0,
+      "sales": 100,
+      "start": "2026-01",
+      "area": "Oldsmar city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "ormond-beach",
+      "town": "Ormond Beach",
+      "median": 396000,
+      "sales": 345,
+      "start": "2026-01",
+      "area": "Ormond Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "ormond-by-the-sea",
+      "town": "Ormond by the Sea",
+      "median": 394500.0,
+      "sales": 94,
+      "start": "2026-01",
+      "area": "Ormond-by-the-Sea CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "ozello",
+      "town": "Ozello",
+      "median": 445000,
+      "sales": 2,
+      "start": "2025-01",
+      "area": "Parcels in the recorded Ozello subdivision",
+      "scope": "Recorded street or subdivision",
+      "end": "2026-06"
+    },
+    {
+      "id": "palm-bay",
+      "town": "Palm Bay",
+      "median": 310000,
+      "sales": 1197,
+      "start": "2026-01",
+      "area": "Palm Bay city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "palm-beach",
+      "town": "Palm Beach",
+      "median": 13500000,
+      "sales": 75,
+      "start": "2026-01",
+      "area": "Palm Beach town",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "palm-beach-gardens",
+      "town": "Palm Beach Gardens",
+      "median": 900000,
+      "sales": 739,
+      "start": "2026-01",
+      "area": "Palm Beach Gardens city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "palm-beach-shores",
+      "town": "Palm Beach Shores",
+      "median": 1371250.0,
+      "sales": 24,
+      "start": "2025-01",
+      "area": "Palm Beach Shores town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Palm Beach": 0.9951
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "palm-city",
+      "town": "Palm City",
+      "median": 577500.0,
+      "sales": 258,
+      "start": "2026-01",
+      "area": "Palm City CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "palm-coast",
+      "town": "Palm Coast",
+      "median": 353500.0,
+      "sales": 1282,
+      "start": "2026-01",
+      "area": "Palm Coast city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "palm-harbor",
+      "town": "Palm Harbor",
+      "median": 450000.0,
+      "sales": 470,
+      "start": "2026-01",
+      "area": "Palm Harbor CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "panama-city",
+      "town": "Panama City",
+      "median": 285000,
+      "sales": 297,
+      "start": "2026-01",
+      "area": "Panama City city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "pcb",
+      "town": "Panama City Beach",
+      "median": 386500.0,
+      "sales": 194,
+      "start": "2026-01",
+      "area": "Panama City Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "pensacola",
+      "town": "Pensacola",
+      "median": 345000,
+      "sales": 431,
+      "start": "2026-01",
+      "area": "Pensacola city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "pensacola-beach",
+      "town": "Pensacola Beach",
+      "median": 990000,
+      "sales": 43,
+      "start": "2026-01",
+      "area": "Mapped Pensacola Beach barrier-island sample",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "Escambia": 0.995
+      },
+      "screening_rectangles_wgs84": [
+        [
+          -87.188,
+          30.319,
+          -87.057,
+          30.365
+        ]
+      ],
+      "end": "2026-06"
+    },
+    {
+      "id": "perdido-key",
+      "town": "Perdido Key",
+      "median": 590000,
+      "sales": 39,
+      "start": "2026-01",
+      "area": "Mapped Perdido Key barrier-island sample",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "Escambia": 0.995
+      },
+      "screening_rectangles_wgs84": [
+        [
+          -87.52,
+          30.272,
+          -87.367,
+          30.321
+        ]
+      ],
+      "end": "2026-06"
+    },
+    {
+      "id": "pompano-beach",
+      "town": "Pompano Beach",
+      "median": 500000.0,
+      "sales": 416,
+      "start": "2026-01",
+      "area": "Pompano Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "ponce-inlet",
+      "town": "Ponce Inlet",
+      "median": 955000,
+      "sales": 29,
+      "start": "2026-01",
+      "area": "Ponce Inlet town",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "ponte-vedra-beach",
+      "town": "Ponte Vedra Beach",
+      "median": 1150000,
+      "sales": 245,
+      "start": "2026-01",
+      "area": "Ponte Vedra Beach coastal rectangle, south of Duval County",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "St. Johns": 0.9433
+      },
+      "screening_rectangles_wgs84": [
+        [
+          -81.413,
+          30.135,
+          -81.345,
+          30.262
+        ]
+      ],
+      "end": "2026-06"
+    },
+    {
+      "id": "port-charlotte",
+      "town": "Port Charlotte",
+      "median": 275000.0,
+      "sales": 700,
+      "start": "2026-01",
+      "area": "Port Charlotte CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "port-orange",
+      "town": "Port Orange",
+      "median": 349400.0,
+      "sales": 400,
+      "start": "2026-01",
+      "area": "Port Orange city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "port-richey",
+      "town": "Port Richey",
+      "median": 365000,
+      "sales": 23,
+      "start": "2026-01",
+      "area": "Port Richey city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Pasco": 0.9992
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "port-salerno",
+      "town": "Port Salerno",
+      "median": 394000.0,
+      "sales": 90,
+      "start": "2026-01",
+      "area": "Port Salerno CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "port-st-joe",
+      "town": "Port St. Joe",
+      "median": 425000,
+      "sales": 83,
+      "start": "2026-01",
+      "area": "Port St. Joe city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "port-st-lucie",
+      "town": "Port St. Lucie",
+      "median": 399900,
+      "sales": 2363,
+      "start": "2026-01",
+      "area": "Port St. Lucie city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "punta-gorda",
+      "town": "Punta Gorda",
+      "median": 588000,
+      "sales": 321,
+      "start": "2026-01",
+      "area": "Punta Gorda city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "redington-shores",
+      "town": "Redington Shores",
+      "median": 650000,
+      "sales": 35,
+      "start": "2025-07",
+      "area": "Redington Shores town",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "riviera-beach",
+      "town": "Riviera Beach",
+      "median": 360500.0,
+      "sales": 172,
+      "start": "2026-01",
+      "area": "Riviera Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "rockledge",
+      "town": "Rockledge",
+      "median": 360000,
+      "sales": 211,
+      "start": "2026-01",
+      "area": "Rockledge city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "ruskin",
+      "town": "Ruskin",
+      "median": 315000,
+      "sales": 197,
+      "start": "2026-01",
+      "area": "Ruskin CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "safety-harbor",
+      "town": "Safety Harbor",
+      "median": 579900,
+      "sales": 103,
+      "start": "2026-01",
+      "area": "Safety Harbor city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Pinellas": 0.9995
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "sanibel-island",
+      "town": "Sanibel Island",
+      "median": 1162500.0,
+      "sales": 164,
+      "start": "2026-01",
+      "area": "Sanibel city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Lee": 0.9999
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "sarasota",
+      "town": "Sarasota",
+      "median": 655000,
+      "sales": 301,
+      "start": "2026-01",
+      "area": "Sarasota city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "satellite-beach",
+      "town": "Satellite Beach",
+      "median": 522500.0,
+      "sales": 86,
+      "start": "2026-01",
+      "area": "Satellite Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "sebastian",
+      "town": "Sebastian",
+      "median": 352000,
+      "sales": 271,
+      "start": "2026-01",
+      "area": "Sebastian city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "sewalls-point",
+      "town": "Sewall's Point",
+      "median": 1500000.0,
+      "sales": 22,
+      "start": "2026-01",
+      "area": "Sewall's Point town",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "shalimar",
+      "town": "Shalimar",
+      "median": 525000,
+      "sales": 11,
+      "start": "2025-01",
+      "area": "Shalimar town",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Okaloosa": 0.9992
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "siesta-key",
+      "town": "Siesta Key",
+      "median": 1530000.0,
+      "sales": 68,
+      "start": "2026-01",
+      "area": "Siesta Key CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "staug",
+      "town": "St. Augustine",
+      "median": 430000.0,
+      "sales": 108,
+      "start": "2026-01",
+      "area": "St. Augustine city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "St. Johns": 0.9433
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "st-augustine-beach",
+      "town": "St. Augustine Beach",
+      "median": 771300,
+      "sales": 59,
+      "start": "2026-01",
+      "area": "St. Augustine Beach city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "St. Johns": 0.9433
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "st-george-island",
+      "town": "St. George Island",
+      "median": 1025000,
+      "sales": 45,
+      "start": "2026-01",
+      "area": "St. George Island CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "st-marks",
+      "town": "St. Marks",
+      "median": 310000,
+      "sales": 15,
+      "start": "2025-01",
+      "area": "St. Marks city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Wakulla": 1.0
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "st-pete-beach",
+      "town": "St. Pete Beach",
+      "median": 812500.0,
+      "sales": 82,
+      "start": "2026-01",
+      "area": "St. Pete Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "st-petersburg",
+      "town": "St. Petersburg",
+      "median": 420000.0,
+      "sales": 1892,
+      "start": "2026-01",
+      "area": "St. Petersburg city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "st-teresa",
+      "town": "St. Teresa",
+      "median": 850000,
+      "sales": 3,
+      "start": "2025-01",
+      "area": "Summer Camp West subdivision, St. Teresa",
+      "scope": "Recorded street or subdivision",
+      "end": "2026-06"
+    },
+    {
+      "id": "steinhatchee",
+      "town": "Steinhatchee",
+      "median": 350000,
+      "sales": 21,
+      "start": "2026-01",
+      "area": "Steinhatchee CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "stuart",
+      "town": "Stuart",
+      "median": 452500.0,
+      "sales": 82,
+      "start": "2026-01",
+      "area": "Stuart city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "sun-city-center",
+      "town": "Sun City Center",
+      "median": 319000,
+      "sales": 355,
+      "start": "2026-01",
+      "area": "Sun City Center CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "sunny-isles-beach",
+      "town": "Sunny Isles Beach",
+      "median": 2250000.0,
+      "sales": 20,
+      "start": "2025-01",
+      "area": "Sunny Isles Beach city",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Miami-Dade": 0.9992
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "suwannee",
+      "town": "Suwannee",
+      "median": 325000,
+      "sales": 17,
+      "start": "2025-01",
+      "area": "Suwannee river-mouth settlement rectangle",
+      "scope": "Mapped local area",
+      "county_parcel_match": {
+        "Dixie": 1.0
+      },
+      "screening_rectangles_wgs84": [
+        [
+          -83.161,
+          29.31,
+          -83.126,
+          29.344
+        ]
+      ],
+      "end": "2026-06"
+    },
+    {
+      "id": "tampa",
+      "town": "Tampa",
+      "median": 450000,
+      "sales": 2313,
+      "start": "2026-01",
+      "area": "Tampa city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "tarpon-springs",
+      "town": "Tarpon Springs",
+      "median": 447750.0,
+      "sales": 206,
+      "start": "2026-01",
+      "area": "Tarpon Springs city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "tequesta",
+      "town": "Tequesta",
+      "median": 805950.0,
+      "sales": 46,
+      "start": "2026-01",
+      "area": "Tequesta village",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Palm Beach": 0.9951
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "tierra-verde",
+      "town": "Tierra Verde",
+      "median": 990500.0,
+      "sales": 56,
+      "start": "2025-07",
+      "area": "Tierra Verde CDP",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "titusville",
+      "town": "Titusville",
+      "median": 282000,
+      "sales": 393,
+      "start": "2026-01",
+      "area": "Titusville city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "treasure-island",
+      "town": "Treasure Island",
+      "median": 975000,
+      "sales": 65,
+      "start": "2026-01",
+      "area": "Treasure Island city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "venice",
+      "town": "Venice",
+      "median": 495000.0,
+      "sales": 308,
+      "start": "2026-01",
+      "area": "Venice city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "vero-beach",
+      "town": "Vero Beach",
+      "median": 605000,
+      "sales": 129,
+      "start": "2026-01",
+      "area": "Vero Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "vilano-beach",
+      "town": "Vilano Beach",
+      "median": 675000,
+      "sales": 25,
+      "start": "2026-01",
+      "area": "Vilano Beach CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "St. Johns": 0.9433
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "weeki-wachee",
+      "town": "Weeki Wachee",
+      "median": 388500.0,
+      "sales": 36,
+      "start": "2025-07",
+      "area": "Weeki Wachee Gardens CDP",
+      "scope": "Census place",
+      "county_parcel_match": {
+        "Hernando": 0.9973
+      },
+      "end": "2026-06"
+    },
+    {
+      "id": "west-melbourne",
+      "town": "West Melbourne",
+      "median": 400000.0,
+      "sales": 190,
+      "start": "2026-01",
+      "area": "West Melbourne city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "west-palm-beach",
+      "town": "West Palm Beach",
+      "median": 602000,
+      "sales": 641,
+      "start": "2026-01",
+      "area": "West Palm Beach city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "wilton-manors",
+      "town": "Wilton Manors",
+      "median": 794500.0,
+      "sales": 102,
+      "start": "2026-01",
+      "area": "Wilton Manors city",
+      "scope": "Census place",
+      "end": "2026-06"
+    },
+    {
+      "id": "yankeetown",
+      "town": "Yankeetown",
+      "median": 285000,
+      "sales": 25,
+      "start": "2025-07",
+      "area": "Yankeetown town",
+      "scope": "Census place",
+      "end": "2026-06"
+    }
+  ]
+}
