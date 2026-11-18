@@ -38,16 +38,16 @@ def dist(a, b):
 
 
 def why(a, b):
+    """A short tag: shared vibes first, else shared strengths, else what they're closest on."""
     shared = [v for v in towns[a]['v'] if v in towns[b]['v']]
     if shared:
-        names = [VS[v] for v in shared[:2]]
-        return 'Both ' + ' and '.join(names)
+        return ' · '.join(VS[v] for v in shared[:2])
     both = sorted([c for c in CATS if ld[a]['rk'][c] <= 50 and ld[b]['rk'][c] <= 50],
                   key=lambda c: ld[a]['rk'][c] + ld[b]['rk'][c])
     if both:
-        return 'Both strong on ' + ' and '.join(WORD[c] for c in both[:2])
+        return ' · '.join(WORD[c].capitalize() for c in both[:2])
     close = sorted(CATS, key=lambda c: abs(P[a][c] - P[b][c]))
-    return 'Similar on ' + ' and '.join(WORD[c] for c in close[:2])
+    return 'Similar ' + ' and '.join(WORD[c] for c in close[:2])
 
 
 def small_img(p):
@@ -79,16 +79,17 @@ for tid in ld:
     ranked = sorted((o for o in ld if o != tid and o not in near), key=lambda o: dist(tid, o))
     top3 = ranked[:3]
     name = towns[tid]['n']
+    def region(o):
+        return html.escape(towns[o]['r'])
     cards = ''.join(
-        f'<div class="lkc"><a class="lkc-a" href="towns/{o}.html"><div class="ph" style="background-image:url(\'{small_img(towns[o]["img"])}\')"></div>'
-        f'<div><b>{html.escape(towns[o]["n"])}</b><small>{html.escape(why(tid, o))}</small>'
-        f'<span>{html.escape(short(towns[o]["b"]))}</span></div></a>'
-        f'<a class="lkx" href="compare.html?t={tid},{o}">Compare with {html.escape(cmp["towns"][tid]["s"])}</a></div>' for o in top3)
-    block = (f'{START}<section class="lk"><h2>More like {html.escape(name)}</h2>'
-             f'<p class="lkp">The towns that score closest to {html.escape(name)} across our categories, '
-             f'anywhere on the coast.</p><div class="lkl">{cards}</div>'
-             f'<a class="cmpr" href="compare.html?t={",".join([tid] + top3)}">Compare {html.escape(cmp["towns"][tid]["s"])} with all three</a>'
-             f'</section>{END}')
+        f'<a class="lkc" href="towns/{o}.html"><span class="lkc-ph" style="background-image:url(\'{small_img(towns[o]["img"])}\')"></span>'
+        f'<b>{html.escape(towns[o]["n"].split(" (")[0])}</b>'
+        f'<span class="lkc-m">{region(o)}{(" · " + html.escape(towns[o]["p"])) if towns[o].get("p") else ""}</span>'
+        f'<span class="lkc-t">{html.escape(why(tid, o))}</span></a>' for o in top3)
+    block = (f'{START}<section class="lk"><div class="lkh"><h2>More like {html.escape(name)}</h2>'
+             f'<a class="lka" href="compare.html?t={",".join([tid] + top3)}">Compare all four</a></div>'
+             f'<p class="lkp">The towns that score closest to {html.escape(name)}, anywhere on the coast.</p>'
+             f'<div class="lkl">{cards}</div></section>{END}')
     if START in s:
         s = re.sub(re.escape(START) + '.*?' + re.escape(END), lambda m: block, s, count=1, flags=re.S)
     else:

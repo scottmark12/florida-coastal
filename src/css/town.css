@@ -91,22 +91,19 @@ aside .alt a.on{text-decoration:underline}
 @media(max-width:900px){.gv-a{display:none}}
 /* Nov 13: the Compare link rides inside the sticky Ask card on desktop so the card never slides over it */
 @media (min-width:901px){aside .card .cmpl{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--hair)}}
-/* #most-like (Nov 18 2026) */
-.lkp{margin:-8px 0 18px;color:var(--mute);font-size:15.5px;line-height:1.45}
-.lkl{max-width:640px}
-.lkc{padding:12px 0;border-top:1px solid var(--hair)}
-.lkc:first-child{border-top:0;padding-top:0}
-.lkc-a{display:grid;grid-template-columns:96px 1fr;gap:14px;text-decoration:none;color:inherit}
-.lkc-a .ph{height:72px;border-radius:8px;background:#ddd center/cover}
-.lkc-a b{font-size:17px}
-.lkc-a small{display:block;color:var(--mute);font-size:14px}
-.lkc-a span{display:block;font-size:14.5px;color:#2F3F42;margin-top:2px;line-height:1.4}
-.lkc-a:hover b{text-decoration:underline;text-underline-offset:3px}
-.lkx{display:inline-block;margin:8px 0 0 110px;font-size:14px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:rgba(21,42,46,.3);text-underline-offset:3px}
-.lkx:hover{text-decoration-color:var(--ink)}
-.lkx::after{content:" \2192"}
-.cmpr{display:inline-flex;align-items:center;gap:8px;min-height:46px;margin-top:18px;padding:0 24px;border-radius:999px;background:var(--ink);color:#fff;font-weight:500;font-size:15.5px;text-decoration:none}
-.cmpr::after{content:"\2192";transition:transform .2s}
-.cmpr:hover{background:#0E1E21}
-.cmpr:hover::after{transform:translateX(3px)}
-@media(max-width:560px){.cmpr{display:flex;justify-content:center;width:100%;box-sizing:border-box}}
+/* #most-like (Nov 18 2026): photo cards, one action in the header */
+.lkh{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.lkh h2{margin-bottom:6px}
+.lka{flex:none;font-size:15px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:rgba(21,42,46,.3);text-underline-offset:4px;white-space:nowrap}
+.lka:hover{text-decoration-color:var(--ink)}
+.lka::after{content:" \2192"}
+.lkp{margin:0 0 20px;color:var(--mute);font-size:15.5px;line-height:1.45}
+.lkl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.lkc{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);min-width:0}
+.lkc-ph{display:block;aspect-ratio:4/3;border-radius:12px;background:#ddd center/cover;margin-bottom:12px;transition:opacity .2s}
+.lkc:hover .lkc-ph{opacity:.9}
+.lkc b{font-size:17px;font-weight:500;line-height:1.25}
+.lkc:hover b{text-decoration:underline;text-underline-offset:3px}
+.lkc-m{margin-top:3px;font-size:14px;color:var(--mute)}
+.lkc-t{margin-top:2px;font-size:13.5px;color:var(--mute)}
+@media(max-width:700px){.lkh{flex-direction:column;align-items:flex-start;gap:0}.lkh h2{margin-bottom:4px}.lka{order:2;margin:2px 0 6px}.lkl{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:6px;scrollbar-width:none}.lkl::-webkit-scrollbar{display:none}.lkc{flex:0 0 74%;scroll-snap-align:start}}
