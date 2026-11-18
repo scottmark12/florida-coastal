@@ -120,7 +120,7 @@ var V=["sophcalm beaches active remote","dock beaches active","beaches social ac
 rm=matchMedia("(prefers-reduced-motion: reduce)").matches,i=0,pick=null,stop=rm,hold=0,vis=!0,seen=0;
 function T(e,d){var f=function(){window.FC&&FC.track(e,d)};window.FC?f():addEventListener("DOMContentLoaded",f)}
 function show(k){var s;for(var j=0;j<S.length;j++)if(S[j][0]==k)s=S[j];if(!s)return;
-h.style.setProperty("--vc",C[k]||"#152a2e");var lb=h.querySelector(".fh-now");if(lb)lb.innerHTML="Showing <i></i>"+s[1]+" · "+s[2]+" towns";for(var n=0;n<dots.length;n++)dots[n].classList.toggle("on",(" "+V[n]+" ").indexOf(" "+k+" ")>=0);
+h.style.setProperty("--vc",C[k]||"#152a2e");var lb=h.querySelector(".fh-now");if(lb)lb.innerHTML="Showing <i></i>"+s[1]+'<span class="fh-dk"> · '+s[2]+" towns</span>";for(var n=0;n<dots.length;n++)dots[n].classList.toggle("on",(" "+V[n]+" ").indexOf(" "+k+" ")>=0);
 var at;for(var t=0;t<tiles.length;t++){var on=tiles[t].dataset.k==k;tiles[t].classList.toggle("on",on);if(on)at=tiles[t];tiles[t].setAttribute("aria-pressed",pick&&on?"true":"false")}if(at&&!pick&&!rm&&hold<Date.now()){var rr=row.getBoundingClientRect(),tr=at.getBoundingClientRect();if(tr.left<rr.left||tr.right>rr.right)row.scrollTo({left:at.offsetLeft-row.offsetLeft-(parseFloat(getComputedStyle(row).paddingLeft)||0),behavior:"smooth"})}
 }
 function tick(){if(stop||pick||hold>Date.now()||!vis||document.hidden)return;i=(i+1)%S.length;show(S[i][0])}
