@@ -55,7 +55,8 @@ function qRes(){const L=qRank(),L5=L.slice(0,5),k=qStyle(L5,L.slice(0,15)),t=L5[
  <div class="qmore"><button onclick="qRestart()">Retake the quiz</button><a href="map.html?mode=sliders&sv=${sv}">Fine tune with sliders</a></div></div>`}
 function qDraw(){$('qz').innerHTML=qHTML();document.body.classList.toggle('qhas',qAny());qBind();document.body.classList.toggle('qres',Q.done);$('res').scrollTop=0}
 function qGo(i){if(i<-1)return;Q.step=i;qDraw()}
-function qPick(i){Q.ans[Q.step]=i;if(window.FCQuiz)window.FCQuiz.answer(Q.step,SQ.length);qRank();qMap();qDraw();setTimeout(()=>{if(Q.step<SQ.length-1)qGo(Q.step+1);else qDone()},260)}
+function qAnsInfo(st,i){const q=SQ[st]||{},o=(q.o||[])[i];return {k:q.k||('q'+(st+1)),a:Number.isInteger(i)?i:null,label:o?o[0]:null}}
+function qPick(i){Q.ans[Q.step]=i;if(window.FCQuiz)window.FCQuiz.answer(Q.step,SQ.length,qAnsInfo(Q.step,i));qRank();qMap();qDraw();setTimeout(()=>{if(Q.step<SQ.length-1)qGo(Q.step+1);else qDone()},260)}
 function qDone(){window.QLOCK=false;qRank();qMap();const a=Q.ans.map(x=>x==null?'x':x).join('');setTimeout(()=>{location.href='quiz-results.html?a='+a},700)}
 function qOpen(id){const t=T.find(t=>t.id==id);S.pinned=id;openPop(t,true);document.querySelectorAll('.t5r').forEach(r=>r.classList.toggle('on',r.dataset.id==id))}
 function qRestart(){if(window.FCQuiz)window.FCQuiz.reset();Q.ans.fill(undefined);Q.done=false;Q.step=0;closePop();S.sv={};SLK.forEach(([k])=>S.sv[k]=50);qDraw()}

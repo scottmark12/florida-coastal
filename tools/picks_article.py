@@ -12,14 +12,13 @@ town data changes:
 """
 import json, re, html, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from qol_score import scores, WEIGHTS, TOP, LABEL, WORD, PEOPLE, PICKS_MADE, BEST_N
+from qol_score import picks, PINNED, WEIGHTS, TOP, LABEL, WORD, PEOPLE, PICKS_MADE, BEST_N
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 ld = json.load(open('src/data/map-ld.json'))
 T = {t['id']: t for t in json.load(open('src/data/beach-towns-t.json'))}
-QOL, ORDER, BEST = scores(ld)
-PICKS = ORDER[:TOP]
+PICKS, QOL, ORDER, BEST = picks(ld)
 RANK = {t: i + 1 for i, t in enumerate(ORDER)}
 assert len(PICKS) == TOP and all(t in T and t in ld for t in PICKS)
 N = len(ld)
@@ -131,8 +130,12 @@ def body():
     lis += '<li><span>More house for less</span><a href="towns/%s.html">%s</a></li>' % (cheap, e(nm(cheap)))
     p.append('<div class="fc-box pk-start"><h3>If you want…</h3><ul>%s</ul>'
              '<p>Each one ranks near the top of all %d towns we cover for it.</p></div>' % (lis, N))
-    p.append('<h2>The top %d, ranked</h2>' % len(PICKS))
-    p.append('<div class="pk-list">%s</div>' % ''.join(card(t) for t in PICKS))
+    p.append('<h2>Our top four</h2>')
+    p.append('<p>If we could only send a friend to four towns, it would be these. Each one is near the top of the score, '
+             'and each one is a place we\'d happily live.</p>')
+    p.append('<div class="pk-list">%s</div>' % ''.join(card(t) for t in PINNED))
+    p.append('<h2>%d more we recommend, ranked</h2>' % (len(PICKS) - len(PINNED)))
+    p.append('<div class="pk-list">%s</div>' % ''.join(card(t) for t in PICKS[len(PINNED):]))
     p.append('<blockquote class="nyt-pull">Great places to visit aren\'t always great places to live. These are both.</blockquote>')
     p.append('<div class="fc-box"><h3>Before you pick one</h3><ul>'
              '<li><b>Go in August, not just February.</b> A town has to feel right in the heat, not only in season.</li>'

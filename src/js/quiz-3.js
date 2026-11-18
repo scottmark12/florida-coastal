@@ -29,7 +29,7 @@ const d0=qDraw;qDraw=function(){d0();if(window.FCQuiz&&!Q.done)window.FCQuiz.vie
 qDone=function(){window.QLOCK=false;qRank();miniDots();
  const a=Q.ans.map(x=>x==null?'x':x).join(''),TOP=qRank().slice(0,5).map(t=>({id:t.id,fit:qp(t),name:t.n,why:qWhy(t,3)})),go2=()=>{location.href='quiz-results.html?a='+a+'&t='+TOP.map(x=>x.id+'.'+x.fit).join(',')};
  try{sessionStorage.setItem('fc-top5',JSON.stringify({a:a,top:TOP}))}catch(e){}
- if(window.FCQuiz)window.FCQuiz.complete(TOP)
+ if(window.FCQuiz)window.FCQuiz.complete(TOP,SQ.map((_,st)=>qAnsInfo(st,Q.ans[st])))
  document.getElementById('qrvn').textContent=T.length;
  const lab=Q.ans.map((x,i)=>x==null?null:SQ[i].o[x][0]).filter(t=>t&&!/^Not sure/.test(t));
  const c=document.getElementById('qrvc');c.innerHTML=lab.slice(0,4).map(t=>`<span class="chip">${t}</span>`).join('')+(lab.length>4?`<span class="chip">+${lab.length-4} more</span>`:'');

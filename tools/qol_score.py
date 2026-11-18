@@ -30,6 +30,8 @@ WORD = {k: v.lower() for k, v in LABEL.items()}
 WORD['outdoors'] = 'the outdoors'
 BEST_N = 4
 TOP = 30
+# Mark Nov 18: keep these four up top (the Beach Towns tiles he liked), then the rest by score.
+PINNED = ['dunedin', 'naples', 'venice', 'fernandina']
 
 
 def weights():
@@ -58,3 +60,10 @@ def scores(ld=None):
         best[i] = [k for _, k in c]
     order = sorted(s, key=lambda i: (-s[i], i))
     return {i: round(s[i]) for i in s}, order, best
+
+
+def picks(ld=None):
+    """The towns we recommend most: our four pinned picks, then the next best by score up to TOP."""
+    q, order, best = scores(ld)
+    rest = [i for i in order if i not in PINNED][:TOP - len(PINNED)]
+    return PINNED + rest, q, order, best
