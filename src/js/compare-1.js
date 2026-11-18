@@ -1,8 +1,8 @@
 // photos as written: the Ask a local photo use the full photo
-const TW=D.towns,MAX=3;
+const TW=D.towns,MAX=4;
 /* Nov 18: right size photos (m = 960px for the column heads and the Ask a local photo, t = 320px for the little icons) */const PSZ=(u,k)=>String(u).replace(/^(\/?img\/c)\/(?![tsm]\/)/,'$1/'+k+'/');
 const $=id=>document.getElementById(id),esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
-let ids=(()=>{const p=new URLSearchParams(location.search).get('t');let t=p?p.split(',').filter(i=>TW[i]):null;if(t&&t.length===1)t=t.concat(TW[t[0]].sim.filter(x=>TW[x]).slice(0,2));
+let ids=(()=>{const p=new URLSearchParams(location.search).get('t');let t=p?p.split(',').filter(i=>TW[i]):null;if(t&&t.length===1)t=t.concat(TW[t[0]].sim.filter(x=>TW[x]).slice(0,3));
  if(!t||!t.length){try{t=JSON.parse(localStorage.getItem('fc-cmp')||'null')}catch(e){}t=Array.isArray(t)?t.filter(i=>TW[i]):null}
  return (t&&t.length?t:['destin','sarasota','naples']).slice(0,MAX)})();
 function save(){try{localStorage.setItem('fc-cmp',JSON.stringify(ids))}catch(e){}const u=new URL(location.href);u.searchParams.set('t',ids.join(','));history.replaceState(null,'',u)}
@@ -21,7 +21,7 @@ function render(){const ts=ids.slice(),n=ts.length,open=n<MAX,cols=n+(open?1:0);
  const sp='<div class="sp"></div>',pad=open?'<div></div>':'';
  const row=(lab,fn,cls)=>'<div class="grid row '+(cls||'')+'" style="--n:'+cols+'"><div class="lab">'+lab+'</div>'+ts.map(id=>'<div class="c">'+fn(TW[id],id)+'</div>').join('')+pad+(cls==='txt'?'<button class="more" type="button">Read more</button>':'')+'</div>';
  const heads='<div class="grid heads" style="--n:'+cols+'">'+sp+ts.map(id=>{const t=TW[id];return '<div class="th"><a class="ph" href="towns/'+id+'.html" style="background-image:url(\''+PSZ(t.img,'m')+'\')"></a><button class="x" data-rm="'+id+'" aria-label="Remove '+esc(t.s)+'">&times;</button><b><a href="towns/'+id+'.html">'+esc(t.s)+'</a></b><span>'+esc(t.rg)+'</span><button class="swap" data-swap="'+id+'">Swap town</button></div>'}).join('')+
-  (open?'<div class="add"><b>'+(n<2?'Add a town':'Add a third town')+'</b><div class="srch"><input id="q" type="search" placeholder="Search any beach town" autocomplete="off" aria-label="Search for a town to add"><div class="res" id="res"></div></div><div class="sim"><div class="l">Or a similar town</div>'+similar(3).map(x=>'<button data-add="'+x+'"><i style="background-image:url(\''+TW[x].img+'\')"></i><span>'+esc(TW[x].s)+'<small>'+esc(TW[x].rg)+'</small></span><em>+ Add</em></button>').join('')+'</div></div>':'')+'</div>';
+  (open?'<div class="add"><b>'+(n<2?'Add a town':n<3?'Add a third town':'Add a fourth town')+'</b><div class="srch"><input id="q" type="search" placeholder="Search any beach town" autocomplete="off" aria-label="Search for a town to add"><div class="res" id="res"></div></div><div class="sim"><div class="l">Or a similar town</div>'+similar(3).map(x=>'<button data-add="'+x+'"><i style="background-image:url(\''+TW[x].img+'\')"></i><span>'+esc(TW[x].s)+'<small>'+esc(TW[x].rg)+'</small></span><em>+ Add</em></button>').join('')+'</div></div>':'')+'</div>';
  const all=D.CATS.concat([['edu','Public school district']]),sr=[];
  all.forEach(([k,l])=>{const best=ts.slice().sort((x,y)=>TW[x].rk[k]-TW[y].rk[k])[0];
   sr.push('<div class="grid row" style="--n:'+cols+'"><div class="lab">'+l+'<button class="inf" data-k="'+k+'" aria-label="How we rank '+esc(l)+'">i</button></div>'+ts.map(id=>{const t=TW[id],win=n>1&&id===best;return '<div class="c"><div class="sc'+(win?' win':'')+'">'+bar(t.sc[k])+'<span class="n">'+t.sc[k]+'</span>'+(win?'<span class="cxbest">Best</span>':'')+'</div></div>'}).join('')+pad+'</div>')});

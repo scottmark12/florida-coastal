@@ -87,3 +87,5 @@ html body header.fch{position:sticky;top:0;z-index:50;height:64px;display:flex;a
 .mf .tlc button.on{background:#152A2E;border-color:#152A2E;color:#fff}
 .mf .fine{font-size:12.5px;line-height:1.45;color:#5E6B6D;margin:10px 0 0}
 .mf label .opt:not(#x){display:inline;border:0!important;background:none!important;padding:0!important;margin:0 0 0 4px!important;box-shadow:none!important;position:static!important;text-transform:none;letter-spacing:0;font-size:12.5px;color:#5E6B6D}
+/* #stick-4 (Nov 18 2026): up to four towns; on phones the floating name bar stacks photo over name so four fit */
+@media(max-width:700px){html body .stick span{flex-direction:column;align-items:center;gap:4px;font-size:12.5px;line-height:1.2;text-align:center;min-width:0;overflow-wrap:anywhere}html body .stick span i{width:30px;height:30px}}

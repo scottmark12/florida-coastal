@@ -56,13 +56,17 @@ def small_img(p):
     return s if os.path.exists(s) else p
 
 
-def short(b, n=95):
-    if len(b) <= n:
-        return b
-    words = b[:n].rsplit(' ', 1)[0].split(' ')
-    while words and (words[-1].endswith('.') or words[-1].lower() in ('the', 'a', 'an', 'and', 'of', 'on', 'to', 'with', 'in')):
-        words.pop()
-    return ' '.join(words).rstrip(',;:') + '…'
+def short(b, n=118):
+    """A full thought, never cut mid phrase: the first sentence if it fits, else up to the last
+    comma that fits, ended with a period."""
+    first = re.split(r'(?<!\bSt)(?<!\bFt)(?<!\bMt)(?<!\bDr)\.\s+(?=[A-Z])', b)[0].rstrip('.')
+    if len(first) <= n:
+        return first + '.'
+    cut = first[:n]
+    k = max(cut.rfind(', '), cut.rfind(' with '), cut.rfind(' where '))
+    if k > 25:
+        return cut[:k].rstrip(',') + '.'
+    return cut.rsplit(' ', 1)[0].rstrip(',;:') + '…'
 
 
 START, END = '<!-- similar -->', '<!-- /similar -->'
@@ -76,18 +80,15 @@ for tid in ld:
     top3 = ranked[:3]
     name = towns[tid]['n']
     cards = ''.join(
-        f'<a href="towns/{o}.html"><div class="ph" style="background-image:url(\'{small_img(towns[o]["img"])}\')"></div>'
+        f'<div class="lkc"><a class="lkc-a" href="towns/{o}.html"><div class="ph" style="background-image:url(\'{small_img(towns[o]["img"])}\')"></div>'
         f'<div><b>{html.escape(towns[o]["n"])}</b><small>{html.escape(why(tid, o))}</small>'
-        f'<span>{html.escape(short(towns[o]["b"]))}</span></div></a>' for o in top3)
-    sn = lambda o: html.escape(cmp['towns'][o]['s'])
-    trio = [tid, top3[0], top3[1]]
-    faces = ''.join('<i style="background-image:url(\'%s\')"></i>' % small_img(towns[o]['img']) for o in trio)
+        f'<span>{html.escape(short(towns[o]["b"]))}</span></div></a>'
+        f'<a class="lkx" href="compare.html?t={tid},{o}">Compare with {html.escape(cmp["towns"][tid]["s"])}</a></div>' for o in top3)
     block = (f'{START}<section class="lk"><h2>More like {html.escape(name)}</h2>'
              f'<p class="lkp">The towns that score closest to {html.escape(name)} across our categories, '
-             f'anywhere on the coast.</p><div class="nt">{cards}</div>'
-             f'<a class="cmpr" href="compare.html?t={",".join(trio)}"><span class="cmpr-f" aria-hidden="true">{faces}</span>'
-             f'<span class="cmpr-t"><small>Side by side</small><b>{sn(tid)}, {sn(top3[0])} and {sn(top3[1])}</b></span>'
-             f'<span class="cmpr-b">Compare</span></a></section>{END}')
+             f'anywhere on the coast.</p><div class="lkl">{cards}</div>'
+             f'<a class="cmpr" href="compare.html?t={",".join([tid] + top3)}">Compare {html.escape(cmp["towns"][tid]["s"])} with all three</a>'
+             f'</section>{END}')
     if START in s:
         s = re.sub(re.escape(START) + '.*?' + re.escape(END), lambda m: block, s, count=1, flags=re.S)
     else:
