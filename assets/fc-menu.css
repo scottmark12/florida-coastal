@@ -11,8 +11,6 @@ html body #zin:not(#fa):not(#fb),html body #zout:not(#fa):not(#fb),html body for
 html body #res:not(#fa):not(#fb){background-color:#fbfaf8!important}
 html body[data-newsph2] main>section.news>.wrap:not(#fa):not(#fb):not(#fc):not(#fd):not(#fe){background:#fff!important}
 html body .cm-more:not(#fa):not(#fb):not(#fc),html body .cm-pill.dark:not(#fa):not(#fb):not(#fc),html body label.sbx:not(#fa):not(#fb):not(#fc){background-color:rgba(16,22,24,.62)!important}
-/* photos: a quiet tint holds the spot until the photo arrives, instead of a white hole */
-main img:is([src*=".webp"],[src*=".jpg"],[src*=".jpeg"]){background-color:#e6ebea}
 
 /* search icon styles here too, so the icon is in place on first paint (fc-search.js) */
 .fcs-ic{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;border:0;background:transparent;color:inherit;cursor:pointer;padding:0;flex:none}.fcs-ic svg{width:20px;height:20px}.fcs-ic:hover{background:rgba(127,127,127,.12)}@media (max-width:760px){.fcs-ic{display:none!important}}
