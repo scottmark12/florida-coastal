@@ -13,7 +13,7 @@ for old in glob.glob('assets/fc-page.*.css'):
         os.remove(old)
 shutil.copy(src, 'assets/' + name)
 pages = (glob.glob('articles/*.html') + glob.glob('areas/*.html') +
-         ['about.html', 'scoring.html', 'agents.html', 'privacy.html', 'terms.html', 'accessibility.html', '404.html', 'compare.html'])
+         ['about.html', 'scoring.html', 'agents.html', 'privacy.html', 'terms.html', 'accessibility.html', '404.html'])  # compare.html: the build links fc-page.css itself (src/pages/compare.html)
 pages = [p for p in pages if p != 'articles/index.html']
 tag = '<link rel="stylesheet" href="/assets/%s">' % name
 n = 0

@@ -7,6 +7,8 @@
 // JPG/PNG references are pointed at their webp twin when one exists.
 //
 //   node tools/site/images.js       make any missing 960px copies (build runs this too)
+// Copies are only made when missing (a fresh git clone gives every file a new date, so dates can't
+// tell an old copy from a new one). After replacing a photo, delete its m/, s/ and t/ copies.
 'use strict';
 const fs = require('fs'), path = require('path'), { execFileSync } = require('child_process');
 const ROOT = path.resolve(__dirname, '../..');
@@ -30,9 +32,10 @@ function ensure(files) {
     if (!file.endsWith('.webp') || !fs.existsSync(src)) continue;
     const out = path.join(ROOT, 'img', dir, 'm', file);
     const small = out.replace('/m/', '/s/'), tiny = out.replace('/m/', '/t/');
-    if (fs.existsSync(out) && fs.existsSync(small) && fs.existsSync(tiny) && fs.statSync(out).mtimeMs >= fs.statSync(src).mtimeMs) { variants.add(dir + '/' + file.replace(/\.webp$/, '')); continue; }
+    if (fs.existsSync(out) && fs.existsSync(small) && fs.existsSync(tiny)) { variants.add(dir + '/' + file.replace(/\.webp$/, '')); continue; }
     todo.push([src, out, dir + '/' + file.replace(/\.webp$/, '')]);
   }
+  if (todo.length && process.env.VERCEL) throw new Error('photo copies missing (run the build on your machine and commit the new img m/, s/ and t/ files): ' + todo.map(x => x[2]).slice(0, 10).join(', '));
   if (todo.length) {
     const py = `
 import sys,json,os

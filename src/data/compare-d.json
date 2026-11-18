@@ -17,7 +17,7 @@
         "beach": 5,
         "dining": 4,
         "outdoors": 5,
-        "afford": 1,
+        "afford": 2,
         "airport": 3,
         "edu": 5
       },
@@ -49,12 +49,12 @@
         "quiet": 66,
         "walk": 13,
         "water": 143,
-        "beach": 2,
+        "beach": 1,
         "dining": 36,
-        "outdoors": 2,
-        "afford": 154,
+        "outdoors": 1,
+        "afford": 141,
         "airport": 122,
-        "edu": 3
+        "edu": 1
       },
       "priceContext": "30A East and 30A West MLS areas: $1,965,000 house sale median (September 2026; 85 sales; SellFL local MLS market report). 30A East and 30A West MLS areas: $1,100,000 condo sale median (September 2026; 29 sales; SellFL local MLS market report).",
       "recordedSaleLabel": "$1.97M / $1.1M house / condo (September 2026)"
@@ -75,8 +75,8 @@
         "water": 5,
         "beach": 5,
         "dining": 3,
-        "outdoors": 4,
-        "afford": 2,
+        "outdoors": 5,
+        "afford": 3,
         "airport": 4,
         "edu": 5
       },
@@ -106,12 +106,12 @@
         "quiet": 145,
         "walk": 126,
         "water": 8,
-        "beach": 7,
+        "beach": 3,
         "dining": 70,
-        "outdoors": 48,
-        "afford": 113,
+        "outdoors": 10,
+        "afford": 103,
         "airport": 77,
-        "edu": 29
+        "edu": 45
       },
       "priceContext": "Destin market: $573,950 all-home sale median (September 2026; Zillow).",
       "recordedSaleLabel": "$574K all-home (September 2026)"
@@ -133,7 +133,7 @@
         "beach": 5,
         "dining": 3,
         "outdoors": 4,
-        "afford": 3,
+        "afford": 4,
         "airport": 4,
         "edu": 3
       },
@@ -161,12 +161,12 @@
         "quiet": 163,
         "walk": 90,
         "water": 149,
-        "beach": 3,
+        "beach": 16,
         "dining": 31,
-        "outdoors": 47,
-        "afford": 91,
+        "outdoors": 22,
+        "afford": 41,
         "airport": 87,
-        "edu": 79
+        "edu": 136
       },
       "priceContext": "Panama City Beach city: $386,500 house sale median (Jan–Jun 2026; 194 sales; Florida DOR county records). Panama City Beach city: $345,000 condo sale median (Jan–Jun 2026; 373 sales; Florida DOR county records).",
       "recordedSaleLabel": "$386K / $345K house / condo (Jan–Jun 2026)"
@@ -187,7 +187,7 @@
         "water": 4,
         "beach": 3,
         "dining": 2,
-        "outdoors": 4,
+        "outdoors": 3,
         "afford": 4,
         "airport": 1,
         "edu": 3
@@ -220,10 +220,10 @@
         "water": 67,
         "beach": 103,
         "dining": 95,
-        "outdoors": 42,
-        "afford": 38,
+        "outdoors": 102,
+        "afford": 30,
         "airport": 162,
-        "edu": 156
+        "edu": 164
       },
       "priceContext": "Apalachicola city: $350,000 house sale median (Jan–Jun 2026; 21 sales; Florida DOR county records).",
       "recordedSaleLabel": "$350K house (Jan–Jun 2026)"
@@ -244,7 +244,7 @@
         "water": 4,
         "beach": 2,
         "dining": 2,
-        "outdoors": 3,
+        "outdoors": 2,
         "afford": 4,
         "airport": 2,
         "edu": 3
@@ -277,10 +277,10 @@
         "water": 78,
         "beach": 138,
         "dining": 120,
-        "outdoors": 65,
-        "afford": 30,
+        "outdoors": 122,
+        "afford": 18,
         "airport": 157,
-        "edu": 1
+        "edu": 159
       },
       "priceContext": "Cedar Key city: $375,000 house sale median (Jan 2025–Jun 2026; 43 sales; Florida DOR county records). Cedar Key city: $275,000 condo sale median (Jan 2025–Jun 2026; 30 sales; Florida DOR county records).",
       "recordedSaleLabel": "$375K / $275K house / condo (Jan 2025–Jun 2026)"
@@ -299,7 +299,7 @@
         "quiet": 3,
         "walk": 5,
         "water": 4,
-        "beach": 3,
+        "beach": 5,
         "dining": 4,
         "outdoors": 4,
         "afford": 3,
@@ -331,12 +331,12 @@
         "quiet": 119,
         "walk": 3,
         "water": 84,
-        "beach": 15,
+        "beach": 17,
         "dining": 30,
-        "outdoors": 16,
-        "afford": 86,
+        "outdoors": 33,
+        "afford": 87,
         "airport": 35,
-        "edu": 25
+        "edu": 29
       },
       "priceContext": "Dunedin city: $550,000 house sale median (Jan–Jun 2026; 255 sales; Florida DOR county records). Dunedin city: $195,000 condo sale median (Jan–Jun 2026; 190 sales; Florida DOR county records).",
       "recordedSaleLabel": "$550K / $195K house / condo (Jan–Jun 2026)"
@@ -358,7 +358,7 @@
         "beach": 5,
         "dining": 3,
         "outdoors": 2,
-        "afford": 3,
+        "afford": 2,
         "airport": 4,
         "edu": 5
       },
@@ -387,12 +387,12 @@
         "quiet": 141,
         "walk": 16,
         "water": 91,
-        "beach": 6,
+        "beach": 22,
         "dining": 40,
         "outdoors": 119,
-        "afford": 100,
+        "afford": 133,
         "airport": 40,
-        "edu": 14
+        "edu": 25
       },
       "priceContext": "Redfin Clearwater Beach neighborhood: $832,000 all-home sale median (3 months ending September 2026; Redfin).",
       "recordedSaleLabel": "$832K all-home (3 months ending September 2026)"
@@ -444,10 +444,10 @@
         "water": 83,
         "beach": 135,
         "dining": 65,
-        "outdoors": 76,
-        "afford": 72,
+        "outdoors": 86,
+        "afford": 65,
         "airport": 14,
-        "edu": 132
+        "edu": 41
       },
       "priceContext": "Gulfport city: $450,000 house sale median (Jan–Jun 2026; 114 sales; Florida DOR county records). Gulfport city: $245,000 condo sale median (Jan–Jun 2026; 53 sales; Florida DOR county records).",
       "recordedSaleLabel": "$450K / $245K house / condo (Jan–Jun 2026)"
@@ -468,7 +468,7 @@
         "water": 4,
         "beach": 5,
         "dining": 3,
-        "outdoors": 3,
+        "outdoors": 4,
         "afford": 1,
         "airport": 4,
         "edu": 3
@@ -499,12 +499,12 @@
         "quiet": 90,
         "walk": 45,
         "water": 66,
-        "beach": 8,
+        "beach": 13,
         "dining": 73,
-        "outdoors": 92,
-        "afford": 160,
+        "outdoors": 45,
+        "afford": 154,
         "airport": 66,
-        "edu": 108
+        "edu": 137
       },
       "priceContext": "Anna Maria Island: $1,137,500 all-home sale median (October 2026; 17 sales; Compass market report, Stellar MLS).",
       "recordedSaleLabel": "$1.14M all-home (October 2026)"
@@ -525,7 +525,7 @@
         "water": 4,
         "beach": 5,
         "dining": 3,
-        "outdoors": 2,
+        "outdoors": 3,
         "afford": 1,
         "airport": 4,
         "edu": 5
@@ -556,12 +556,12 @@
         "quiet": 27,
         "walk": 128,
         "water": 81,
-        "beach": 20,
+        "beach": 14,
         "dining": 143,
-        "outdoors": 115,
-        "afford": 152,
+        "outdoors": 87,
+        "afford": 158,
         "airport": 78,
-        "edu": 166
+        "edu": 24
       },
       "priceContext": "Longboat Key town: $2,100,000 house sale median (Jan 2025–Jun 2026; 163 sales; Florida DOR county records). Longboat Key town: $850,000 condo sale median (Jan 2025–Jun 2026; 504 sales; Florida DOR county records).",
       "recordedSaleLabel": "$2.1M / $850K house / condo (Jan 2025–Jun 2026)"
@@ -580,9 +580,9 @@
         "quiet": 5,
         "walk": 2,
         "water": 5,
-        "beach": 5,
+        "beach": 4,
         "dining": 3,
-        "outdoors": 4,
+        "outdoors": 3,
         "afford": 1,
         "airport": 3,
         "edu": 3
@@ -612,12 +612,12 @@
         "quiet": 5,
         "walk": 131,
         "water": 15,
-        "beach": 21,
+        "beach": 36,
         "dining": 111,
-        "outdoors": 40,
-        "afford": 167,
+        "outdoors": 79,
+        "afford": 148,
         "airport": 102,
-        "edu": 27
+        "edu": 143
       },
       "priceContext": "Captiva Island fire and erosion taxing district: $2,275,000 house sale median (Oct 2025–Sep 2026; 11 sales; McGreevy and Comisar, from Lee County records). Captiva Island fire and erosion taxing district: $642,000 condo sale median (Oct 2025–Sep 2026; 30 sales; McGreevy and Comisar, from Lee County records).",
       "recordedSaleLabel": "$2.27M / $642K house / condo (Oct 2025–Sep 2026)"
@@ -639,7 +639,7 @@
         "beach": 1,
         "dining": 3,
         "outdoors": 4,
-        "afford": 4,
+        "afford": 3,
         "airport": 3,
         "edu": 3
       },
@@ -669,10 +669,10 @@
         "water": 73,
         "beach": 161,
         "dining": 113,
-        "outdoors": 43,
-        "afford": 61,
+        "outdoors": 42,
+        "afford": 71,
         "airport": 93,
-        "edu": 90
+        "edu": 146
       },
       "priceContext": "Matlacha CDP: $455,000 house sale median (Jan 2025–Jun 2026; 21 sales; Florida DOR county records).",
       "recordedSaleLabel": "$455K house (Jan 2025–Jun 2026)"
@@ -691,10 +691,10 @@
         "quiet": 3,
         "walk": 4,
         "water": 4,
-        "beach": 5,
+        "beach": 4,
         "dining": 5,
-        "outdoors": 4,
-        "afford": 2,
+        "outdoors": 5,
+        "afford": 1,
         "airport": 4,
         "edu": 5
       },
@@ -726,12 +726,12 @@
         "quiet": 109,
         "walk": 24,
         "water": 10,
-        "beach": 5,
+        "beach": 31,
         "dining": 6,
-        "outdoors": 34,
-        "afford": 130,
+        "outdoors": 4,
+        "afford": 165,
         "airport": 81,
-        "edu": 10
+        "edu": 13
       },
       "priceContext": "Naples city: $5,025,000 house sale median (Jan–Jun 2026; 148 sales; Florida DOR county records).",
       "recordedSaleLabel": "$5.03M house (Jan–Jun 2026)"
@@ -752,7 +752,7 @@
         "water": 5,
         "beach": 2,
         "dining": 4,
-        "outdoors": 3,
+        "outdoors": 4,
         "afford": 1,
         "airport": 3,
         "edu": 5
@@ -785,10 +785,10 @@
         "water": 4,
         "beach": 113,
         "dining": 8,
-        "outdoors": 64,
-        "afford": 156,
+        "outdoors": 39,
+        "afford": 152,
         "airport": 111,
-        "edu": 155
+        "edu": 64
       },
       "priceContext": "Key West city: $1,600,000 house sale median (Jan–Jun 2026; 157 sales; Florida DOR county records). Key West city: $690,000 condo sale median (Jan–Jun 2026; 43 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.6M / $690K house / condo (Jan–Jun 2026)"
@@ -841,10 +841,10 @@
         "water": 38,
         "beach": 121,
         "dining": 74,
-        "outdoors": 31,
-        "afford": 159,
+        "outdoors": 47,
+        "afford": 155,
         "airport": 161,
-        "edu": 105
+        "edu": 66
       },
       "priceContext": "Islamorada, Village of Islands: $1,797,500 house sale median (September 2026; 12 sales; Jim Signor market report, Florida Realtors SunStats). Islamorada, Village of Islands: $490,000 condo or townhome sale median (September 2026; 5 sales; Jim Signor market report, Florida Realtors SunStats).",
       "recordedSaleLabel": "$1.8M / $490K house / condo or townhome (September 2026)"
@@ -896,12 +896,12 @@
         "quiet": 165,
         "walk": 1,
         "water": 56,
-        "beach": 40,
+        "beach": 29,
         "dining": 2,
-        "outdoors": 79,
-        "afford": 138,
+        "outdoors": 84,
+        "afford": 164,
         "airport": 5,
-        "edu": 7
+        "edu": 57
       },
       "priceContext": "South Beach, Miami Beach: $400,000 all-home sale median (6 months ending Nov 14, 2026; 285 sales; BreakThru Realty, BeachesMLS).",
       "recordedSaleLabel": "$400K all-home (6 months ending Nov 14, 2026)"
@@ -952,12 +952,12 @@
         "quiet": 161,
         "walk": 38,
         "water": 23,
-        "beach": 25,
+        "beach": 39,
         "dining": 10,
-        "outdoors": 78,
-        "afford": 117,
+        "outdoors": 77,
+        "afford": 112,
         "airport": 3,
-        "edu": 81
+        "edu": 70
       },
       "priceContext": "Fort Lauderdale city: $735,000 house sale median (Jan–Jun 2026; 1,005 sales; Florida DOR county records). Fort Lauderdale city: $460,000 condo sale median (Jan–Jun 2026; 780 sales; Florida DOR county records).",
       "recordedSaleLabel": "$735K / $460K house / condo (Jan–Jun 2026)"
@@ -1009,12 +1009,12 @@
         "quiet": 155,
         "walk": 2,
         "water": 164,
-        "beach": 9,
+        "beach": 32,
         "dining": 7,
-        "outdoors": 80,
-        "afford": 135,
+        "outdoors": 66,
+        "afford": 115,
         "airport": 59,
-        "edu": 127
+        "edu": 88
       },
       "priceContext": "Delray Beach city: $775,000 house sale median (Jan–Jun 2026; 434 sales; Florida DOR county records).",
       "recordedSaleLabel": "$775K house (Jan–Jun 2026)"
@@ -1064,12 +1064,12 @@
         "quiet": 130,
         "walk": 84,
         "water": 21,
-        "beach": 24,
+        "beach": 38,
         "dining": 76,
-        "outdoors": 1,
-        "afford": 131,
+        "outdoors": 11,
+        "afford": 114,
         "airport": 60,
-        "edu": 58
+        "edu": 83
       },
       "priceContext": "Jupiter market: $1,100,000 house sale median (90 days ending Oct 25, 2026; 213 sales; BreakThru Realty, BeachesMLS). Jupiter market: $440,000 condo or townhome sale median (90 days ending Oct 25, 2026; 159 sales; BreakThru Realty, BeachesMLS).",
       "recordedSaleLabel": "$1.1M / $440K house / condo or townhome (90 days ending Oct 25, 2026)"
@@ -1090,8 +1090,8 @@
         "water": 4,
         "beach": 3,
         "dining": 2,
-        "outdoors": 5,
-        "afford": 4,
+        "outdoors": 4,
+        "afford": 5,
         "airport": 3,
         "edu": 5
       },
@@ -1121,10 +1121,10 @@
         "water": 40,
         "beach": 87,
         "dining": 119,
-        "outdoors": 13,
-        "afford": 22,
+        "outdoors": 20,
+        "afford": 4,
         "airport": 143,
-        "edu": 99
+        "edu": 117
       },
       "priceContext": "Fort Pierce city: $262,700 house sale median (Jan–Jun 2026; 197 sales; Florida DOR county records). Fort Pierce city: $199,000 condo sale median (Jan–Jun 2026; 133 sales; Florida DOR county records).",
       "recordedSaleLabel": "$263K / $199K house / condo (Jan–Jun 2026)"
@@ -1177,10 +1177,10 @@
         "water": 70,
         "beach": 48,
         "dining": 52,
-        "outdoors": 6,
-        "afford": 85,
+        "outdoors": 7,
+        "afford": 110,
         "airport": 83,
-        "edu": 5
+        "edu": 94
       },
       "priceContext": "Cocoa Beach city: $770,000 house sale median (Jan–Jun 2026; 63 sales; Florida DOR county records). Cocoa Beach city: $350,000 condo sale median (Jan–Jun 2026; 141 sales; Florida DOR county records).",
       "recordedSaleLabel": "$770K / $350K house / condo (Jan–Jun 2026)"
@@ -1231,12 +1231,12 @@
         "quiet": 117,
         "walk": 21,
         "water": 104,
-        "beach": 18,
+        "beach": 9,
         "dining": 39,
         "outdoors": 3,
-        "afford": 75,
+        "afford": 61,
         "airport": 85,
-        "edu": 68
+        "edu": 48
       },
       "priceContext": "New Smyrna Beach city: $460,000 house sale median (Jan–Jun 2026; 357 sales; Florida DOR county records). New Smyrna Beach city: $425,000 condo sale median (Jan–Jun 2026; 163 sales; Florida DOR county records).",
       "recordedSaleLabel": "$460K / $425K house / condo (Jan–Jun 2026)"
@@ -1258,7 +1258,7 @@
         "beach": 4,
         "dining": 2,
         "outdoors": 3,
-        "afford": 5,
+        "afford": 4,
         "airport": 4,
         "edu": 5
       },
@@ -1285,12 +1285,12 @@
         "quiet": 156,
         "walk": 117,
         "water": 128,
-        "beach": 41,
+        "beach": 43,
         "dining": 47,
-        "outdoors": 82,
-        "afford": 11,
+        "outdoors": 76,
+        "afford": 21,
         "airport": 88,
-        "edu": 104
+        "edu": 52
       },
       "priceContext": "Daytona Beach city: $348,000 house sale median (Jan–Jun 2026; 434 sales; Florida DOR county records). Daytona Beach city: $140,000 condo sale median (Jan–Jun 2026; 176 sales; Florida DOR county records).",
       "recordedSaleLabel": "$348K / $140K house / condo (Jan–Jun 2026)"
@@ -1312,7 +1312,7 @@
         "beach": 3,
         "dining": 2,
         "outdoors": 5,
-        "afford": 4,
+        "afford": 3,
         "airport": 3,
         "edu": 5
       },
@@ -1342,10 +1342,10 @@
         "water": 124,
         "beach": 84,
         "dining": 71,
-        "outdoors": 12,
-        "afford": 45,
+        "outdoors": 13,
+        "afford": 75,
         "airport": 136,
-        "edu": 66
+        "edu": 5
       },
       "priceContext": "Flagler Beach city: $503,500 house sale median (Jan–Jun 2026; 60 sales; Florida DOR county records). Flagler Beach city: $285,000 condo sale median (Jul 2025–Jun 2026; 49 sales; Florida DOR county records).",
       "recordedSaleLabel": "$504K / $285K house / condo (periods below)"
@@ -1366,8 +1366,8 @@
         "water": 3,
         "beach": 4,
         "dining": 5,
-        "outdoors": 5,
-        "afford": 3,
+        "outdoors": 4,
+        "afford": 4,
         "airport": 3,
         "edu": 5
       },
@@ -1398,10 +1398,10 @@
         "water": 103,
         "beach": 63,
         "dining": 5,
-        "outdoors": 14,
-        "afford": 87,
+        "outdoors": 32,
+        "afford": 51,
         "airport": 135,
-        "edu": 46
+        "edu": 9
       },
       "priceContext": "Redfin St. Augustine market: $517,140 all-home sale median (3 months ending October 2026; Redfin).",
       "recordedSaleLabel": "$517K all-home (3 months ending October 2026)"
@@ -1454,10 +1454,10 @@
         "water": 129,
         "beach": 44,
         "dining": 45,
-        "outdoors": 30,
-        "afford": 110,
+        "outdoors": 18,
+        "afford": 98,
         "airport": 69,
-        "edu": 16
+        "edu": 131
       },
       "priceContext": "Jacksonville Beach city: $655,000 house sale median (Jan–Jun 2026; 187 sales; Florida DOR county records). Jacksonville Beach city: $485,000 condo sale median (Jan–Jun 2026; 68 sales; Florida DOR county records).",
       "recordedSaleLabel": "$655K / $485K house / condo (Jan–Jun 2026)"
@@ -1478,8 +1478,8 @@
         "water": 4,
         "beach": 4,
         "dining": 4,
-        "outdoors": 5,
-        "afford": 2,
+        "outdoors": 4,
+        "afford": 3,
         "airport": 4,
         "edu": 5
       },
@@ -1509,10 +1509,10 @@
         "water": 74,
         "beach": 65,
         "dining": 20,
-        "outdoors": 11,
-        "afford": 119,
+        "outdoors": 31,
+        "afford": 99,
         "airport": 62,
-        "edu": 13
+        "edu": 3
       },
       "priceContext": "Fernandina Beach city: $657,500 house sale median (Jan–Jun 2026; 156 sales; Florida DOR county records).",
       "recordedSaleLabel": "$658K house (Jan–Jun 2026)"
@@ -1566,10 +1566,10 @@
         "water": 46,
         "beach": 102,
         "dining": 127,
-        "outdoors": 63,
-        "afford": 4,
+        "outdoors": 82,
+        "afford": 3,
         "airport": 150,
-        "edu": 157
+        "edu": 165
       },
       "priceContext": "Redfin Carrabelle market: $254,000 all-home sale median (3 months ending September 2026; Redfin).",
       "recordedSaleLabel": "$254K all-home (3 months ending September 2026)"
@@ -1588,10 +1588,10 @@
         "quiet": 4,
         "walk": 3,
         "water": 3,
-        "beach": 5,
+        "beach": 4,
         "dining": 2,
-        "outdoors": 4,
-        "afford": 1,
+        "outdoors": 3,
+        "afford": 2,
         "airport": 1,
         "edu": 3
       },
@@ -1623,12 +1623,12 @@
         "quiet": 32,
         "walk": 75,
         "water": 117,
-        "beach": 13,
+        "beach": 30,
         "dining": 125,
-        "outdoors": 20,
-        "afford": 166,
+        "outdoors": 75,
+        "afford": 134,
         "airport": 163,
-        "edu": 158
+        "edu": 166
       },
       "priceContext": "St. George Island CDP: $1,025,000 house sale median (Jan–Jun 2026; 45 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.02M house (Jan–Jun 2026)"
@@ -1649,8 +1649,8 @@
         "water": 3,
         "beach": 3,
         "dining": 1,
-        "outdoors": 2,
-        "afford": 3,
+        "outdoors": 1,
+        "afford": 2,
         "airport": 2,
         "edu": 3
       },
@@ -1684,10 +1684,10 @@
         "water": 160,
         "beach": 97,
         "dining": 167,
-        "outdoors": 116,
-        "afford": 95,
+        "outdoors": 156,
+        "afford": 117,
         "airport": 147,
-        "edu": 159
+        "edu": 167
       },
       "priceContext": "Summer Camp West subdivision, St. Teresa: $850,000 house sale median (Jan 2025–Jun 2026; 3 sales; Florida DOR county records).",
       "recordedSaleLabel": "$850K house (Jan 2025–Jun 2026)"
@@ -1742,10 +1742,10 @@
         "water": 122,
         "beach": 167,
         "dining": 150,
-        "outdoors": 61,
-        "afford": 15,
+        "outdoors": 107,
+        "afford": 37,
         "airport": 95,
-        "edu": 61
+        "edu": 60
       },
       "priceContext": "St. Marks city: $310,000 house sale median (Jan 2025–Jun 2026; 15 sales; Florida DOR county records).",
       "recordedSaleLabel": "$310K house (Jan 2025–Jun 2026)"
@@ -1767,7 +1767,7 @@
         "beach": 2,
         "dining": 3,
         "outdoors": 3,
-        "afford": 4,
+        "afford": 5,
         "airport": 4,
         "edu": 3
       },
@@ -1798,10 +1798,10 @@
         "water": 109,
         "beach": 111,
         "dining": 67,
-        "outdoors": 98,
-        "afford": 19,
+        "outdoors": 92,
+        "afford": 9,
         "airport": 92,
-        "edu": 163
+        "edu": 140
       },
       "priceContext": "Panama City city: $285,000 house sale median (Jan–Jun 2026; 297 sales; Florida DOR county records). Panama City city: $185,000 condo sale median (Jul 2025–Jun 2026; 37 sales; Florida DOR county records).",
       "recordedSaleLabel": "$285K / $185K house / condo (periods below)"
@@ -1855,10 +1855,10 @@
         "water": 37,
         "beach": 131,
         "dining": 13,
-        "outdoors": 53,
-        "afford": 44,
+        "outdoors": 55,
+        "afford": 22,
         "airport": 98,
-        "edu": 63
+        "edu": 124
       },
       "priceContext": "Pensacola city: $345,000 house sale median (Jan–Jun 2026; 431 sales; Florida DOR county records). Pensacola city: $169,000 condo sale median (Jan–Jun 2026; 41 sales; Florida DOR county records).",
       "recordedSaleLabel": "$345K / $169K house / condo (Jan–Jun 2026)"
@@ -1879,7 +1879,7 @@
         "water": 4,
         "beach": 5,
         "dining": 2,
-        "outdoors": 4,
+        "outdoors": 5,
         "afford": 2,
         "airport": 3,
         "edu": 4
@@ -1910,12 +1910,12 @@
         "quiet": 86,
         "walk": 72,
         "water": 99,
-        "beach": 35,
+        "beach": 5,
         "dining": 104,
-        "outdoors": 21,
-        "afford": 137,
+        "outdoors": 6,
+        "afford": 130,
         "airport": 104,
-        "edu": 42
+        "edu": 123
       },
       "priceContext": "Pensacola Beach: $777,500 all-home sale median (12 months ending Nov 7, 2026; 164 sales; Pelican Realty, Pensacola MLS).",
       "recordedSaleLabel": "$778K all-home (12 months ending Nov 7, 2026)"
@@ -1936,7 +1936,7 @@
         "water": 4,
         "beach": 5,
         "dining": 2,
-        "outdoors": 4,
+        "outdoors": 3,
         "afford": 2,
         "airport": 3,
         "edu": 5
@@ -1967,12 +1967,12 @@
         "quiet": 16,
         "walk": 111,
         "water": 139,
-        "beach": 36,
+        "beach": 2,
         "dining": 140,
-        "outdoors": 17,
-        "afford": 145,
+        "outdoors": 71,
+        "afford": 128,
         "airport": 112,
-        "edu": 52
+        "edu": 108
       },
       "priceContext": "Redfin Navarre Beach market: $779,000 all-home sale median (3 months ending September 2026; Redfin).",
       "recordedSaleLabel": "$779K all-home (3 months ending September 2026)"
@@ -1993,7 +1993,7 @@
         "water": 4,
         "beach": 5,
         "dining": 2,
-        "outdoors": 4,
+        "outdoors": 3,
         "afford": 3,
         "airport": 3,
         "edu": 4
@@ -2024,12 +2024,12 @@
         "quiet": 43,
         "walk": 157,
         "water": 116,
-        "beach": 32,
+        "beach": 12,
         "dining": 159,
-        "outdoors": 44,
-        "afford": 107,
+        "outdoors": 60,
+        "afford": 94,
         "airport": 108,
-        "edu": 135
+        "edu": 125
       },
       "priceContext": "Pelican Realty Perdido Key market: $537,495 all-home sale median (12 months ending November 2026; Pelican Realty, Pensacola MLS).",
       "recordedSaleLabel": "$537K all-home (12 months ending November 2026)"
@@ -2050,8 +2050,8 @@
         "water": 4,
         "beach": 4,
         "dining": 3,
-        "outdoors": 3,
-        "afford": 3,
+        "outdoors": 4,
+        "afford": 2,
         "airport": 3,
         "edu": 5
       },
@@ -2083,10 +2083,10 @@
         "water": 97,
         "beach": 73,
         "dining": 79,
-        "outdoors": 68,
-        "afford": 90,
+        "outdoors": 37,
+        "afford": 122,
         "airport": 101,
-        "edu": 41
+        "edu": 107
       },
       "priceContext": "Gulf Breeze city: $852,500 house sale median (Jan–Jun 2026; 56 sales; Florida DOR county records). Gulf Breeze city: $272,500 condo sale median (Jul 2025–Jun 2026; 22 sales; Florida DOR county records).",
       "recordedSaleLabel": "$852K / $272K house / condo (periods below)"
@@ -2105,7 +2105,7 @@
         "quiet": 5,
         "walk": 3,
         "water": 4,
-        "beach": 4,
+        "beach": 5,
         "dining": 2,
         "outdoors": 4,
         "afford": 4,
@@ -2138,12 +2138,12 @@
         "quiet": 24,
         "walk": 69,
         "water": 100,
-        "beach": 10,
+        "beach": 6,
         "dining": 92,
-        "outdoors": 33,
+        "outdoors": 44,
         "afford": 54,
         "airport": 154,
-        "edu": 87
+        "edu": 135
       },
       "priceContext": "Port St. Joe city: $425,000 house sale median (Jan–Jun 2026; 83 sales; Florida DOR county records).",
       "recordedSaleLabel": "$425K house (Jan–Jun 2026)"
@@ -2165,7 +2165,7 @@
         "beach": 2,
         "dining": 2,
         "outdoors": 4,
-        "afford": 4,
+        "afford": 3,
         "airport": 2,
         "edu": 3
       },
@@ -2197,10 +2197,10 @@
         "water": 49,
         "beach": 137,
         "dining": 87,
-        "outdoors": 32,
-        "afford": 20,
+        "outdoors": 16,
+        "afford": 74,
         "airport": 153,
-        "edu": 152
+        "edu": 155
       },
       "priceContext": "Crystal River city: $483,750 house sale median (Jan–Jun 2026; 34 sales; Florida DOR county records).",
       "recordedSaleLabel": "$484K house (Jan–Jun 2026)"
@@ -2222,7 +2222,7 @@
         "beach": 1,
         "dining": 2,
         "outdoors": 3,
-        "afford": 4,
+        "afford": 3,
         "airport": 2,
         "edu": 3
       },
@@ -2254,10 +2254,10 @@
         "water": 69,
         "beach": 156,
         "dining": 130,
-        "outdoors": 85,
-        "afford": 42,
+        "outdoors": 100,
+        "afford": 57,
         "airport": 146,
-        "edu": 153
+        "edu": 156
       },
       "priceContext": "Homosassa CDP: $442,600 house sale median (Jan–Jun 2026; 34 sales; Florida DOR county records).",
       "recordedSaleLabel": "$443K house (Jan–Jun 2026)"
@@ -2279,7 +2279,7 @@
         "beach": 1,
         "dining": 1,
         "outdoors": 3,
-        "afford": 4,
+        "afford": 3,
         "airport": 1,
         "edu": 3
       },
@@ -2311,10 +2311,10 @@
         "water": 126,
         "beach": 160,
         "dining": 166,
-        "outdoors": 88,
-        "afford": 14,
+        "outdoors": 70,
+        "afford": 58,
         "airport": 160,
-        "edu": 148
+        "edu": 154
       },
       "priceContext": "Parcels in the recorded Ozello subdivision: $445,000 house sale median (Jan 2025–Jun 2026; 2 sales; Florida DOR county records).",
       "recordedSaleLabel": "$445K house (Jan 2025–Jun 2026)"
@@ -2335,8 +2335,8 @@
         "water": 5,
         "beach": 1,
         "dining": 1,
-        "outdoors": 3,
-        "afford": 5,
+        "outdoors": 2,
+        "afford": 4,
         "airport": 1,
         "edu": 3
       },
@@ -2368,10 +2368,10 @@
         "water": 57,
         "beach": 159,
         "dining": 164,
-        "outdoors": 86,
-        "afford": 7,
+        "outdoors": 141,
+        "afford": 24,
         "airport": 167,
-        "edu": 36
+        "edu": 160
       },
       "priceContext": "Steinhatchee CDP: $350,000 house sale median (Jan–Jun 2026; 21 sales; Florida DOR county records).",
       "recordedSaleLabel": "$350K house (Jan–Jun 2026)"
@@ -2425,10 +2425,10 @@
         "water": 44,
         "beach": 133,
         "dining": 156,
-        "outdoors": 159,
-        "afford": 76,
+        "outdoors": 153,
+        "afford": 67,
         "airport": 37,
-        "edu": 161
+        "edu": 128
       },
       "priceContext": "Apollo Beach CDP: $459,000 house sale median (Jan–Jun 2026; 386 sales; Florida DOR county records).",
       "recordedSaleLabel": "$459K house (Jan–Jun 2026)"
@@ -2482,10 +2482,10 @@
         "water": 134,
         "beach": 98,
         "dining": 51,
-        "outdoors": 105,
-        "afford": 53,
+        "outdoors": 108,
+        "afford": 59,
         "airport": 12,
-        "edu": 24
+        "edu": 28
       },
       "priceContext": "Clearwater city: $440,000 house sale median (Jan–Jun 2026; 475 sales; Florida DOR county records).",
       "recordedSaleLabel": "$440K house (Jan–Jun 2026)"
@@ -2537,10 +2537,10 @@
         "water": 142,
         "beach": 51,
         "dining": 107,
-        "outdoors": 129,
-        "afford": 134,
+        "outdoors": 127,
+        "afford": 120,
         "airport": 43,
-        "edu": 73
+        "edu": 35
       },
       "priceContext": "Indian Rocks Beach city: $823,600 house sale median (Jan–Jun 2026; 42 sales; Florida DOR county records). Indian Rocks Beach city: $615,000 condo sale median (Jan–Jun 2026; 27 sales; Florida DOR county records).",
       "recordedSaleLabel": "$824K / $615K house / condo (Jan–Jun 2026)"
@@ -2561,7 +2561,7 @@
         "water": 5,
         "beach": 4,
         "dining": 3,
-        "outdoors": 2,
+        "outdoors": 3,
         "afford": 3,
         "airport": 4,
         "edu": 5
@@ -2594,10 +2594,10 @@
         "water": 14,
         "beach": 52,
         "dining": 59,
-        "outdoors": 130,
-        "afford": 83,
+        "outdoors": 105,
+        "afford": 105,
         "airport": 46,
-        "edu": 65
+        "edu": 32
       },
       "priceContext": "Madeira Beach city: $678,750 house sale median (Jan–Jun 2026; 34 sales; Florida DOR county records). Madeira Beach city: $708,500 condo sale median (Jan–Jun 2026; 54 sales; Florida DOR county records).",
       "recordedSaleLabel": "$679K / $708K house / condo (Jan–Jun 2026)"
@@ -2618,7 +2618,7 @@
         "water": 3,
         "beach": 1,
         "dining": 2,
-        "outdoors": 3,
+        "outdoors": 2,
         "afford": 5,
         "airport": 4,
         "edu": 4
@@ -2650,10 +2650,10 @@
         "water": 150,
         "beach": 151,
         "dining": 75,
-        "outdoors": 100,
+        "outdoors": 111,
         "afford": 2,
         "airport": 52,
-        "edu": 114
+        "edu": 119
       },
       "priceContext": "New Port Richey city: $240,000 house sale median (Jan–Jun 2026; 124 sales; Florida DOR county records).",
       "recordedSaleLabel": "$240K house (Jan–Jun 2026)"
@@ -2675,7 +2675,7 @@
         "beach": 1,
         "dining": 1,
         "outdoors": 1,
-        "afford": 5,
+        "afford": 4,
         "airport": 4,
         "edu": 4
       },
@@ -2707,10 +2707,10 @@
         "water": 106,
         "beach": 145,
         "dining": 154,
-        "outdoors": 161,
-        "afford": 12,
+        "outdoors": 149,
+        "afford": 17,
         "airport": 41,
-        "edu": 167
+        "edu": 130
       },
       "priceContext": "Ruskin CDP: $315,000 house sale median (Jan–Jun 2026; 197 sales; Florida DOR county records).",
       "recordedSaleLabel": "$315K house (Jan–Jun 2026)"
@@ -2764,10 +2764,10 @@
         "water": 159,
         "beach": 150,
         "dining": 29,
-        "outdoors": 73,
-        "afford": 103,
+        "outdoors": 63,
+        "afford": 89,
         "airport": 8,
-        "edu": 59
+        "edu": 31
       },
       "priceContext": "Safety Harbor city: $252,500 condo sale median (Jan–Jun 2026; 20 sales; Florida DOR county records).",
       "recordedSaleLabel": "$252K condo (Jan–Jun 2026)"
@@ -2788,7 +2788,7 @@
         "water": 4,
         "beach": 5,
         "dining": 3,
-        "outdoors": 2,
+        "outdoors": 3,
         "afford": 2,
         "airport": 4,
         "edu": 5
@@ -2819,12 +2819,12 @@
         "quiet": 143,
         "walk": 40,
         "water": 9,
-        "beach": 11,
+        "beach": 20,
         "dining": 24,
-        "outdoors": 120,
-        "afford": 118,
+        "outdoors": 91,
+        "afford": 116,
         "airport": 51,
-        "edu": 110
+        "edu": 39
       },
       "priceContext": "St. Pete Beach city: $812,500 house sale median (Jan–Jun 2026; 82 sales; Florida DOR county records). St. Pete Beach city: $490,000 condo sale median (Jan–Jun 2026; 82 sales; Florida DOR county records).",
       "recordedSaleLabel": "$812K / $490K house / condo (Jan–Jun 2026)"
@@ -2845,8 +2845,8 @@
         "water": 4,
         "beach": 2,
         "dining": 5,
-        "outdoors": 4,
-        "afford": 3,
+        "outdoors": 3,
+        "afford": 4,
         "airport": 5,
         "edu": 5
       },
@@ -2878,10 +2878,10 @@
         "water": 55,
         "beach": 107,
         "dining": 4,
-        "outdoors": 39,
-        "afford": 79,
+        "outdoors": 68,
+        "afford": 53,
         "airport": 11,
-        "edu": 95
+        "edu": 38
       },
       "priceContext": "St. Petersburg city: $420,000 house sale median (Jan–Jun 2026; 1,892 sales; Florida DOR county records). St. Petersburg city: $305,000 condo sale median (Jan–Jun 2026; 520 sales; Florida DOR county records).",
       "recordedSaleLabel": "$420K / $305K house / condo (Jan–Jun 2026)"
@@ -2935,10 +2935,10 @@
         "water": 167,
         "beach": 144,
         "dining": 153,
-        "outdoors": 166,
-        "afford": 21,
+        "outdoors": 157,
+        "afford": 16,
         "airport": 47,
-        "edu": 165
+        "edu": 129
       },
       "priceContext": "Sun City Center CDP: $319,000 house sale median (Jan–Jun 2026; 355 sales; Florida DOR county records). Sun City Center CDP: $165,000 condo sale median (Jan–Jun 2026; 188 sales; Florida DOR county records).",
       "recordedSaleLabel": "$319K / $165K house / condo (Jan–Jun 2026)"
@@ -2959,7 +2959,7 @@
         "water": 3,
         "beach": 1,
         "dining": 5,
-        "outdoors": 2,
+        "outdoors": 3,
         "afford": 3,
         "airport": 5,
         "edu": 4
@@ -2992,10 +2992,10 @@
         "water": 148,
         "beach": 139,
         "dining": 1,
-        "outdoors": 121,
-        "afford": 88,
+        "outdoors": 97,
+        "afford": 60,
         "airport": 2,
-        "edu": 120
+        "edu": 126
       },
       "priceContext": "Tampa city: $450,000 house sale median (Jan–Jun 2026; 2,313 sales; Florida DOR county records). Tampa city: $397,500 condo sale median (Jan–Jun 2026; 556 sales; Florida DOR county records).",
       "recordedSaleLabel": "$450K / $398K house / condo (Jan–Jun 2026)"
@@ -3049,10 +3049,10 @@
         "water": 64,
         "beach": 99,
         "dining": 21,
-        "outdoors": 75,
-        "afford": 65,
+        "outdoors": 81,
+        "afford": 63,
         "airport": 39,
-        "edu": 121
+        "edu": 40
       },
       "priceContext": "Tarpon Springs city: $447,750 house sale median (Jan–Jun 2026; 206 sales; Florida DOR county records). Tarpon Springs city: $199,000 condo sale median (Jan–Jun 2026; 57 sales; Florida DOR county records).",
       "recordedSaleLabel": "$448K / $199K house / condo (Jan–Jun 2026)"
@@ -3104,12 +3104,12 @@
         "quiet": 94,
         "walk": 42,
         "water": 12,
-        "beach": 12,
+        "beach": 21,
         "dining": 82,
-        "outdoors": 128,
-        "afford": 128,
+        "outdoors": 121,
+        "afford": 129,
         "airport": 45,
-        "edu": 71
+        "edu": 34
       },
       "priceContext": "Treasure Island city: $975,000 house sale median (Jan–Jun 2026; 65 sales; Florida DOR county records). Treasure Island city: $379,500 condo sale median (Jan–Jun 2026; 52 sales; Florida DOR county records).",
       "recordedSaleLabel": "$975K / $380K house / condo (Jan–Jun 2026)"
@@ -3130,7 +3130,7 @@
         "water": 4,
         "beach": 2,
         "dining": 3,
-        "outdoors": 2,
+        "outdoors": 3,
         "afford": 4,
         "airport": 4,
         "edu": 3
@@ -3163,10 +3163,10 @@
         "water": 54,
         "beach": 109,
         "dining": 89,
-        "outdoors": 124,
+        "outdoors": 106,
         "afford": 23,
         "airport": 65,
-        "edu": 164
+        "edu": 141
       },
       "priceContext": "Bradenton city: $349,000 house sale median (Jan–Jun 2026; 352 sales; Florida DOR county records). Bradenton city: $250,000 condo sale median (Jan–Jun 2026; 217 sales; Florida DOR county records).",
       "recordedSaleLabel": "$349K / $250K house / condo (Jan–Jun 2026)"
@@ -3218,12 +3218,12 @@
         "quiet": 85,
         "walk": 29,
         "water": 41,
-        "beach": 27,
+        "beach": 8,
         "dining": 57,
-        "outdoors": 96,
-        "afford": 143,
+        "outdoors": 65,
+        "afford": 157,
         "airport": 72,
-        "edu": 146
+        "edu": 138
       },
       "priceContext": "Bradenton Beach city: $492,500 condo sale median (Jul 2025–Jun 2026; 42 sales; Florida DOR county records).",
       "recordedSaleLabel": "$492K condo (Jul 2025–Jun 2026)"
@@ -3244,8 +3244,8 @@
         "water": 5,
         "beach": 2,
         "dining": 2,
-        "outdoors": 2,
-        "afford": 3,
+        "outdoors": 3,
+        "afford": 2,
         "airport": 4,
         "edu": 3
       },
@@ -3277,10 +3277,10 @@
         "water": 2,
         "beach": 136,
         "dining": 138,
-        "outdoors": 114,
-        "afford": 92,
+        "outdoors": 85,
+        "afford": 113,
         "airport": 71,
-        "edu": 147
+        "edu": 139
       },
       "priceContext": "Cortez CDP: $799,900 house sale median (Jan–Jun 2026; 35 sales; Florida DOR county records). Cortez CDP: $310,000 condo sale median (Jan–Jun 2026; 31 sales; Florida DOR county records).",
       "recordedSaleLabel": "$800K / $310K house / condo (Jan–Jun 2026)"
@@ -3301,7 +3301,7 @@
         "water": 4,
         "beach": 4,
         "dining": 2,
-        "outdoors": 3,
+        "outdoors": 4,
         "afford": 4,
         "airport": 3,
         "edu": 5
@@ -3334,8 +3334,8 @@
         "water": 61,
         "beach": 62,
         "dining": 128,
-        "outdoors": 67,
-        "afford": 34,
+        "outdoors": 36,
+        "afford": 31,
         "airport": 133,
         "edu": 22
       },
@@ -3356,7 +3356,7 @@
         "quiet": 2,
         "walk": 4,
         "water": 4,
-        "beach": 4,
+        "beach": 5,
         "dining": 5,
         "outdoors": 4,
         "afford": 3,
@@ -3391,12 +3391,12 @@
         "quiet": 154,
         "walk": 20,
         "water": 62,
-        "beach": 42,
+        "beach": 23,
         "dining": 16,
-        "outdoors": 35,
-        "afford": 78,
+        "outdoors": 34,
+        "afford": 100,
         "airport": 75,
-        "edu": 64
+        "edu": 23
       },
       "priceContext": "Sarasota city: $655,000 house sale median (Jan–Jun 2026; 301 sales; Florida DOR county records). Sarasota city: $547,500 condo sale median (Jan–Jun 2026; 308 sales; Florida DOR county records).",
       "recordedSaleLabel": "$655K / $548K house / condo (Jan–Jun 2026)"
@@ -3448,12 +3448,12 @@
         "quiet": 139,
         "walk": 44,
         "water": 80,
-        "beach": 1,
+        "beach": 10,
         "dining": 86,
-        "outdoors": 71,
-        "afford": 150,
+        "outdoors": 64,
+        "afford": 149,
         "airport": 82,
-        "edu": 18
+        "edu": 21
       },
       "priceContext": "Siesta Key CDP: $1,530,000 house sale median (Jan–Jun 2026; 68 sales; Florida DOR county records). Siesta Key CDP: $735,000 condo sale median (Jan–Jun 2026; 139 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.53M / $735K house / condo (Jan–Jun 2026)"
@@ -3472,9 +3472,9 @@
         "quiet": 4,
         "walk": 5,
         "water": 3,
-        "beach": 4,
+        "beach": 5,
         "dining": 3,
-        "outdoors": 4,
+        "outdoors": 5,
         "afford": 3,
         "airport": 3,
         "edu": 5
@@ -3508,12 +3508,12 @@
         "quiet": 76,
         "walk": 5,
         "water": 32,
-        "beach": 43,
+        "beach": 26,
         "dining": 54,
-        "outdoors": 41,
-        "afford": 64,
+        "outdoors": 9,
+        "afford": 76,
         "airport": 118,
-        "edu": 4
+        "edu": 20
       },
       "priceContext": "Venice city: $495,000 house sale median (Jan–Jun 2026; 308 sales; Florida DOR county records). Venice city: $254,000 condo sale median (Jan–Jun 2026; 230 sales; Florida DOR county records).",
       "recordedSaleLabel": "$495K / $254K house / condo (Jan–Jun 2026)"
@@ -3535,7 +3535,7 @@
         "beach": 4,
         "dining": 3,
         "outdoors": 3,
-        "afford": 2,
+        "afford": 3,
         "airport": 5,
         "edu": 3
       },
@@ -3567,12 +3567,12 @@
         "quiet": 125,
         "walk": 118,
         "water": 50,
-        "beach": 16,
+        "beach": 33,
         "dining": 77,
-        "outdoors": 62,
-        "afford": 114,
+        "outdoors": 69,
+        "afford": 106,
         "airport": 27,
-        "edu": 40
+        "edu": 145
       },
       "priceContext": "Bonita Springs city: $700,000 house sale median (Jan–Jun 2026; 607 sales; Florida DOR county records).",
       "recordedSaleLabel": "$700K house (Jan–Jun 2026)"
@@ -3593,7 +3593,7 @@
         "water": 5,
         "beach": 1,
         "dining": 3,
-        "outdoors": 3,
+        "outdoors": 2,
         "afford": 4,
         "airport": 4,
         "edu": 3
@@ -3626,10 +3626,10 @@
         "water": 1,
         "beach": 140,
         "dining": 22,
-        "outdoors": 99,
-        "afford": 47,
+        "outdoors": 114,
+        "afford": 34,
         "airport": 57,
-        "edu": 94
+        "edu": 147
       },
       "priceContext": "Cape Coral city: $379,300 house sale median (Jan–Jun 2026; 2,753 sales; Florida DOR county records).",
       "recordedSaleLabel": "$379K house (Jan–Jun 2026)"
@@ -3650,8 +3650,8 @@
         "water": 5,
         "beach": 1,
         "dining": 1,
-        "outdoors": 3,
-        "afford": 4,
+        "outdoors": 2,
+        "afford": 3,
         "airport": 1,
         "edu": 5
       },
@@ -3683,10 +3683,10 @@
         "water": 76,
         "beach": 164,
         "dining": 162,
-        "outdoors": 84,
-        "afford": 26,
+        "outdoors": 139,
+        "afford": 108,
         "airport": 159,
-        "edu": 49
+        "edu": 15
       },
       "priceContext": "Chokoloskee census area: $360,000 condo sale median (Jan 2025–Jun 2026; 2 sales; Florida DOR county records).",
       "recordedSaleLabel": "$360K condo (Jan 2025–Jun 2026)"
@@ -3707,8 +3707,8 @@
         "water": 5,
         "beach": 1,
         "dining": 2,
-        "outdoors": 3,
-        "afford": 4,
+        "outdoors": 2,
+        "afford": 3,
         "airport": 1,
         "edu": 5
       },
@@ -3742,10 +3742,10 @@
         "water": 92,
         "beach": 163,
         "dining": 112,
-        "outdoors": 90,
-        "afford": 33,
+        "outdoors": 145,
+        "afford": 91,
         "airport": 158,
-        "edu": 50
+        "edu": 16
       },
       "priceContext": "Homes.com Everglades City market: $250,000 all-home sale median (Trailing year, 2026 provider snapshot; 11 sales; Homes.com).",
       "recordedSaleLabel": "$250K all-home (Trailing year, 2026 provider snapshot)"
@@ -3799,8 +3799,8 @@
         "water": 88,
         "beach": 142,
         "dining": 18,
-        "outdoors": 126,
-        "afford": 31,
+        "outdoors": 118,
+        "afford": 46,
         "airport": 25,
         "edu": 149
       },
@@ -3854,12 +3854,12 @@
         "quiet": 140,
         "walk": 43,
         "water": 18,
-        "beach": 26,
+        "beach": 24,
         "dining": 98,
-        "outdoors": 95,
-        "afford": 111,
+        "outdoors": 59,
+        "afford": 137,
         "airport": 58,
-        "edu": 117
+        "edu": 148
       },
       "priceContext": "Fort Myers Beach town: $1,075,000 house sale median (Jan–Jun 2026; 64 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.07M house (Jan–Jun 2026)"
@@ -3880,7 +3880,7 @@
         "water": 5,
         "beach": 5,
         "dining": 3,
-        "outdoors": 3,
+        "outdoors": 4,
         "afford": 1,
         "airport": 3,
         "edu": 5
@@ -3911,12 +3911,12 @@
         "quiet": 68,
         "walk": 92,
         "water": 35,
-        "beach": 29,
+        "beach": 15,
         "dining": 53,
-        "outdoors": 66,
-        "afford": 157,
+        "outdoors": 38,
+        "afford": 150,
         "airport": 130,
-        "edu": 20
+        "edu": 14
       },
       "priceContext": "Marco Island city: $1,510,000 house sale median (Jan–Jun 2026; 216 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.51M house (Jan–Jun 2026)"
@@ -3937,7 +3937,7 @@
         "water": 5,
         "beach": 1,
         "dining": 2,
-        "outdoors": 1,
+        "outdoors": 2,
         "afford": 5,
         "airport": 3,
         "edu": 5
@@ -3970,10 +3970,10 @@
         "water": 65,
         "beach": 143,
         "dining": 93,
-        "outdoors": 160,
-        "afford": 10,
+        "outdoors": 144,
+        "afford": 6,
         "airport": 117,
-        "edu": 142
+        "edu": 43
       },
       "priceContext": "Port Charlotte CDP: $275,000 house sale median (Jan–Jun 2026; 700 sales; Florida DOR county records). Port Charlotte CDP: $122,000 condo sale median (Jan–Jun 2026; 52 sales; Florida DOR county records).",
       "recordedSaleLabel": "$275K / $122K house / condo (Jan–Jun 2026)"
@@ -3994,7 +3994,7 @@
         "water": 5,
         "beach": 1,
         "dining": 3,
-        "outdoors": 3,
+        "outdoors": 4,
         "afford": 3,
         "airport": 3,
         "edu": 5
@@ -4027,10 +4027,10 @@
         "water": 36,
         "beach": 148,
         "dining": 25,
-        "outdoors": 72,
-        "afford": 56,
+        "outdoors": 49,
+        "afford": 93,
         "airport": 106,
-        "edu": 91
+        "edu": 42
       },
       "priceContext": "Punta Gorda city: $588,000 house sale median (Jan–Jun 2026; 321 sales; Florida DOR county records). Punta Gorda city: $272,000 condo sale median (Jan–Jun 2026; 166 sales; Florida DOR county records).",
       "recordedSaleLabel": "$588K / $272K house / condo (Jan–Jun 2026)"
@@ -4051,8 +4051,8 @@
         "water": 4,
         "beach": 5,
         "dining": 3,
-        "outdoors": 4,
-        "afford": 1,
+        "outdoors": 5,
+        "afford": 2,
         "airport": 3,
         "edu": 3
       },
@@ -4082,12 +4082,12 @@
         "quiet": 52,
         "walk": 37,
         "water": 107,
-        "beach": 23,
+        "beach": 27,
         "dining": 121,
-        "outdoors": 15,
-        "afford": 153,
+        "outdoors": 2,
+        "afford": 139,
         "airport": 96,
-        "edu": 28
+        "edu": 144
       },
       "priceContext": "Sanibel, ZIP 33957: $1,080,000 house sale median (Oct 2025–Sep 2026; 243 sales; McGreevy and Comisar, from Lee County records). Sanibel, ZIP 33957: $725,000 condo sale median (Oct 2025–Sep 2026; 145 sales; McGreevy and Comisar, from Lee County records).",
       "recordedSaleLabel": "$1.08M / $725K house / condo (Oct 2025–Sep 2026)"
@@ -4108,7 +4108,7 @@
         "water": 5,
         "beach": 2,
         "dining": 3,
-        "outdoors": 3,
+        "outdoors": 4,
         "afford": 2,
         "airport": 2,
         "edu": 5
@@ -4141,10 +4141,10 @@
         "water": 24,
         "beach": 118,
         "dining": 58,
-        "outdoors": 59,
-        "afford": 149,
+        "outdoors": 23,
+        "afford": 135,
         "airport": 152,
-        "edu": 93
+        "edu": 62
       },
       "priceContext": "Key Largo CDP: $997,500 house sale median (Jan–Jun 2026; 132 sales; Florida DOR county records).",
       "recordedSaleLabel": "$998K house (Jan–Jun 2026)"
@@ -4198,10 +4198,10 @@
         "water": 30,
         "beach": 53,
         "dining": 42,
-        "outdoors": 134,
-        "afford": 164,
+        "outdoors": 142,
+        "afford": 167,
         "airport": 31,
-        "edu": 74
+        "edu": 61
       },
       "priceContext": "Bal Harbour village: $18,581,250 house sale median (Jan 2025–Jun 2026; 8 sales; Florida DOR county records).",
       "recordedSaleLabel": "$18.58M house (Jan 2025–Jun 2026)"
@@ -4255,10 +4255,10 @@
         "water": 87,
         "beach": 54,
         "dining": 33,
-        "outdoors": 108,
-        "afford": 121,
+        "outdoors": 73,
+        "afford": 142,
         "airport": 44,
-        "edu": 2
+        "edu": 78
       },
       "priceContext": "Boca Raton city: $1,200,000 house sale median (Jan–Jun 2026; 613 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.2M house (Jan–Jun 2026)"
@@ -4312,10 +4312,10 @@
         "water": 77,
         "beach": 89,
         "dining": 81,
-        "outdoors": 133,
-        "afford": 60,
+        "outdoors": 131,
+        "afford": 88,
         "airport": 7,
-        "edu": 129
+        "edu": 74
       },
       "priceContext": "Dania Beach city: $542,500 house sale median (Jan–Jun 2026; 128 sales; Florida DOR county records). Dania Beach city: $247,500 condo sale median (Jan–Jun 2026; 70 sales; Florida DOR county records).",
       "recordedSaleLabel": "$542K / $248K house / condo (Jan–Jun 2026)"
@@ -4369,10 +4369,10 @@
         "water": 119,
         "beach": 88,
         "dining": 32,
-        "outdoors": 150,
-        "afford": 52,
+        "outdoors": 162,
+        "afford": 92,
         "airport": 6,
-        "edu": 106
+        "edu": 72
       },
       "priceContext": "Hallandale Beach city: $550,000 house sale median (Jan–Jun 2026; 47 sales; Florida DOR county records). Hallandale Beach city: $245,000 condo sale median (Jan–Jun 2026; 323 sales; Florida DOR county records).",
       "recordedSaleLabel": "$550K / $245K house / condo (Jan–Jun 2026)"
@@ -4393,7 +4393,7 @@
         "water": 3,
         "beach": 4,
         "dining": 1,
-        "outdoors": 1,
+        "outdoors": 3,
         "afford": 1,
         "airport": 4,
         "edu": 5
@@ -4425,10 +4425,10 @@
         "water": 154,
         "beach": 50,
         "dining": 151,
-        "outdoors": 149,
-        "afford": 155,
+        "outdoors": 96,
+        "afford": 162,
         "airport": 54,
-        "edu": 44
+        "edu": 81
       },
       "priceContext": "Highland Beach town: $3,050,000 house sale median (Jan 2025–Jun 2026; 27 sales; Florida DOR county records). Highland Beach town: $975,000 condo sale median (Jan 2025–Jun 2026; 240 sales; Florida DOR county records).",
       "recordedSaleLabel": "$3.05M / $975K house / condo (Jan 2025–Jun 2026)"
@@ -4449,7 +4449,7 @@
         "water": 3,
         "beach": 4,
         "dining": 3,
-        "outdoors": 3,
+        "outdoors": 2,
         "afford": 3,
         "airport": 5,
         "edu": 5
@@ -4480,12 +4480,12 @@
         "quiet": 160,
         "walk": 10,
         "water": 33,
-        "beach": 17,
+        "beach": 34,
         "dining": 37,
-        "outdoors": 107,
-        "afford": 96,
+        "outdoors": 116,
+        "afford": 90,
         "airport": 4,
-        "edu": 139
+        "edu": 75
       },
       "priceContext": "Hollywood city: $550,000 house sale median (Jan–Jun 2026; 686 sales; Florida DOR county records). Hollywood city: $270,000 condo sale median (Jan–Jun 2026; 446 sales; Florida DOR county records).",
       "recordedSaleLabel": "$550K / $270K house / condo (Jan–Jun 2026)"
@@ -4507,7 +4507,7 @@
         "beach": 4,
         "dining": 3,
         "outdoors": 2,
-        "afford": 2,
+        "afford": 1,
         "airport": 4,
         "edu": 5
       },
@@ -4537,12 +4537,12 @@
         "quiet": 93,
         "walk": 7,
         "water": 161,
-        "beach": 19,
+        "beach": 35,
         "dining": 34,
-        "outdoors": 131,
-        "afford": 123,
+        "outdoors": 126,
+        "afford": 146,
         "airport": 30,
-        "edu": 51
+        "edu": 69
       },
       "priceContext": "Lauderdale-by-the-Sea town: $435,000 condo sale median (Jul 2025–Jun 2026; 190 sales; Florida DOR county records).",
       "recordedSaleLabel": "$435K condo (Jul 2025–Jun 2026)"
@@ -4564,7 +4564,7 @@
         "beach": 1,
         "dining": 2,
         "outdoors": 1,
-        "afford": 1,
+        "afford": 2,
         "airport": 4,
         "edu": 5
       },
@@ -4596,10 +4596,10 @@
         "water": 28,
         "beach": 154,
         "dining": 145,
-        "outdoors": 164,
-        "afford": 151,
+        "outdoors": 155,
+        "afford": 143,
         "airport": 36,
-        "edu": 113
+        "edu": 73
       },
       "priceContext": "Lighthouse Point city: $1,327,500 house sale median (Jan–Jun 2026; 116 sales; Florida DOR county records). Lighthouse Point city: $168,050 condo sale median (Jan–Jun 2026; 38 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.33M / $168K house / condo (Jan–Jun 2026)"
@@ -4653,10 +4653,10 @@
         "water": 130,
         "beach": 132,
         "dining": 19,
-        "outdoors": 163,
-        "afford": 62,
+        "outdoors": 166,
+        "afford": 81,
         "airport": 28,
-        "edu": 98
+        "edu": 63
       },
       "priceContext": "North Miami Beach: $505,000 house sale median (90 days ending Nov 15, 2026; BreakThru Realty, BeachesMLS). North Miami Beach: $242,000 condo or townhome sale median (90 days ending Nov 15, 2026; BreakThru Realty, BeachesMLS).",
       "recordedSaleLabel": "$505K / $242K house / condo or townhome (90 days ending Nov 15, 2026)"
@@ -4677,7 +4677,7 @@
         "water": 5,
         "beach": 3,
         "dining": 2,
-        "outdoors": 4,
+        "outdoors": 3,
         "afford": 2,
         "airport": 5,
         "edu": 5
@@ -4710,10 +4710,10 @@
         "water": 13,
         "beach": 101,
         "dining": 135,
-        "outdoors": 49,
-        "afford": 109,
+        "outdoors": 61,
+        "afford": 140,
         "airport": 23,
-        "edu": 56
+        "edu": 82
       },
       "priceContext": "North Palm Beach village: $1,142,500 house sale median (Jan–Jun 2026; 58 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.14M house (Jan–Jun 2026)"
@@ -4734,7 +4734,7 @@
         "water": 4,
         "beach": 4,
         "dining": 5,
-        "outdoors": 3,
+        "outdoors": 2,
         "afford": 1,
         "airport": 5,
         "edu": 5
@@ -4767,10 +4767,10 @@
         "water": 85,
         "beach": 70,
         "dining": 17,
-        "outdoors": 109,
-        "afford": 158,
+        "outdoors": 110,
+        "afford": 166,
         "airport": 19,
-        "edu": 131
+        "edu": 89
       },
       "priceContext": "Palm Beach town: $13,500,000 house sale median (Jan–Jun 2026; 75 sales; Florida DOR county records).",
       "recordedSaleLabel": "$13.5M house (Jan–Jun 2026)"
@@ -4791,7 +4791,7 @@
         "water": 2,
         "beach": 2,
         "dining": 4,
-        "outdoors": 1,
+        "outdoors": 2,
         "afford": 2,
         "airport": 5,
         "edu": 5
@@ -4824,10 +4824,10 @@
         "water": 165,
         "beach": 130,
         "dining": 99,
-        "outdoors": 147,
-        "afford": 132,
+        "outdoors": 129,
+        "afford": 126,
         "airport": 24,
-        "edu": 109
+        "edu": 87
       },
       "priceContext": "Palm Beach Gardens city: $900,000 house sale median (Jan–Jun 2026; 739 sales; Florida DOR county records).",
       "recordedSaleLabel": "$900K house (Jan–Jun 2026)"
@@ -4849,7 +4849,7 @@
         "beach": 4,
         "dining": 2,
         "outdoors": 2,
-        "afford": 3,
+        "afford": 4,
         "airport": 5,
         "edu": 5
       },
@@ -4882,9 +4882,9 @@
         "beach": 59,
         "dining": 137,
         "outdoors": 132,
-        "afford": 77,
+        "afford": 43,
         "airport": 18,
-        "edu": 72
+        "edu": 85
       },
       "priceContext": "Riviera Beach city: $360,500 house sale median (Jan–Jun 2026; 172 sales; Florida DOR county records).",
       "recordedSaleLabel": "$360K house (Jan–Jun 2026)"
@@ -4938,10 +4938,10 @@
         "water": 127,
         "beach": 45,
         "dining": 15,
-        "outdoors": 148,
-        "afford": 148,
+        "outdoors": 159,
+        "afford": 159,
         "airport": 29,
-        "edu": 60
+        "edu": 59
       },
       "priceContext": "Sunny Isles Beach city: $2,250,000 house sale median (Jan 2025–Jun 2026; 20 sales; Florida DOR county records).",
       "recordedSaleLabel": "$2.25M house (Jan 2025–Jun 2026)"
@@ -4963,7 +4963,7 @@
         "beach": 2,
         "dining": 5,
         "outdoors": 3,
-        "afford": 2,
+        "afford": 3,
         "airport": 5,
         "edu": 5
       },
@@ -4995,10 +4995,10 @@
         "water": 115,
         "beach": 128,
         "dining": 11,
-        "outdoors": 81,
-        "afford": 106,
+        "outdoors": 80,
+        "afford": 97,
         "airport": 16,
-        "edu": 140
+        "edu": 90
       },
       "priceContext": "West Palm Beach city: $602,000 house sale median (Jan–Jun 2026; 641 sales; Florida DOR county records).",
       "recordedSaleLabel": "$602K house (Jan–Jun 2026)"
@@ -5019,7 +5019,7 @@
         "water": 3,
         "beach": 1,
         "dining": 4,
-        "outdoors": 2,
+        "outdoors": 1,
         "afford": 2,
         "airport": 5,
         "edu": 5
@@ -5052,10 +5052,10 @@
         "water": 158,
         "beach": 153,
         "dining": 9,
-        "outdoors": 145,
-        "afford": 126,
+        "outdoors": 148,
+        "afford": 119,
         "airport": 10,
-        "edu": 96
+        "edu": 71
       },
       "priceContext": "Wilton Manors city: $794,500 house sale median (Jan–Jun 2026; 102 sales; Florida DOR county records). Wilton Manors city: $276,250 condo sale median (Jan–Jun 2026; 64 sales; Florida DOR county records).",
       "recordedSaleLabel": "$794K / $276K house / condo (Jan–Jun 2026)"
@@ -5109,10 +5109,10 @@
         "water": 82,
         "beach": 66,
         "dining": 64,
-        "outdoors": 52,
-        "afford": 68,
+        "outdoors": 30,
+        "afford": 66,
         "airport": 126,
-        "edu": 78
+        "edu": 112
       },
       "priceContext": "Jensen Beach CDP: $433,000 house sale median (Jan–Jun 2026; 125 sales; Florida DOR county records). Jensen Beach CDP: $168,000 condo sale median (Jul 2025–Jun 2026; 21 sales; Florida DOR county records).",
       "recordedSaleLabel": "$433K / $168K house / condo (periods below)"
@@ -5133,7 +5133,7 @@
         "water": 3,
         "beach": 2,
         "dining": 2,
-        "outdoors": 2,
+        "outdoors": 1,
         "afford": 4,
         "airport": 3,
         "edu": 5
@@ -5166,10 +5166,10 @@
         "water": 155,
         "beach": 127,
         "dining": 148,
-        "outdoors": 142,
-        "afford": 50,
+        "outdoors": 151,
+        "afford": 44,
         "airport": 132,
-        "edu": 134
+        "edu": 118
       },
       "priceContext": "Port St. Lucie city: $399,900 house sale median (Jan–Jun 2026; 2,363 sales; Florida DOR county records). Port St. Lucie city: $170,000 condo sale median (Jan–Jun 2026; 73 sales; Florida DOR county records).",
       "recordedSaleLabel": "$400K / $170K house / condo (Jan–Jun 2026)"
@@ -5190,7 +5190,7 @@
         "water": 5,
         "beach": 3,
         "dining": 2,
-        "outdoors": 5,
+        "outdoors": 4,
         "afford": 4,
         "airport": 3,
         "edu": 5
@@ -5223,10 +5223,10 @@
         "water": 17,
         "beach": 100,
         "dining": 55,
-        "outdoors": 8,
-        "afford": 43,
+        "outdoors": 19,
+        "afford": 28,
         "airport": 137,
-        "edu": 31
+        "edu": 17
       },
       "priceContext": "Sebastian city: $352,000 house sale median (Jan–Jun 2026; 271 sales; Florida DOR county records).",
       "recordedSaleLabel": "$352K house (Jan–Jun 2026)"
@@ -5280,10 +5280,10 @@
         "water": 3,
         "beach": 90,
         "dining": 23,
-        "outdoors": 22,
-        "afford": 63,
+        "outdoors": 17,
+        "afford": 72,
         "airport": 119,
-        "edu": 39
+        "edu": 111
       },
       "priceContext": "Stuart city: $452,500 house sale median (Jan–Jun 2026; 82 sales; Florida DOR county records). Stuart city: $184,250 condo sale median (Jan–Jun 2026; 134 sales; Florida DOR county records).",
       "recordedSaleLabel": "$452K / $184K house / condo (Jan–Jun 2026)"
@@ -5337,10 +5337,10 @@
         "water": 93,
         "beach": 46,
         "dining": 12,
-        "outdoors": 10,
-        "afford": 66,
+        "outdoors": 8,
+        "afford": 96,
         "airport": 139,
-        "edu": 54
+        "edu": 18
       },
       "priceContext": "Vero Beach city: $605,000 house sale median (Jan–Jun 2026; 129 sales; Florida DOR county records). Vero Beach city: $267,450 condo sale median (Jan–Jun 2026; 100 sales; Florida DOR county records).",
       "recordedSaleLabel": "$605K / $267K house / condo (Jan–Jun 2026)"
@@ -5361,7 +5361,7 @@
         "water": 3,
         "beach": 4,
         "dining": 2,
-        "outdoors": 4,
+        "outdoors": 3,
         "afford": 3,
         "airport": 3,
         "edu": 5
@@ -5394,10 +5394,10 @@
         "water": 125,
         "beach": 77,
         "dining": 83,
-        "outdoors": 57,
-        "afford": 115,
+        "outdoors": 58,
+        "afford": 104,
         "airport": 128,
-        "edu": 26
+        "edu": 98
       },
       "priceContext": "Indialantic town: $691,000 house sale median (Jan–Jun 2026; 22 sales; Florida DOR county records).",
       "recordedSaleLabel": "$691K house (Jan–Jun 2026)"
@@ -5452,9 +5452,9 @@
         "beach": 76,
         "dining": 132,
         "outdoors": 26,
-        "afford": 127,
+        "afford": 121,
         "airport": 127,
-        "edu": 75
+        "edu": 100
       },
       "priceContext": "Melbourne Beach town: $849,000 house sale median (Jan–Jun 2026; 28 sales; Florida DOR county records).",
       "recordedSaleLabel": "$849K house (Jan–Jun 2026)"
@@ -5507,10 +5507,10 @@
         "water": 131,
         "beach": 141,
         "dining": 136,
-        "outdoors": 143,
+        "outdoors": 136,
         "afford": 13,
         "airport": 125,
-        "edu": 107
+        "edu": 105
       },
       "priceContext": "Palm Bay city: $310,000 house sale median (Jan–Jun 2026; 1,197 sales; Florida DOR county records). Palm Bay city: $132,500 condo sale median (Jan–Jun 2026; 32 sales; Florida DOR county records).",
       "recordedSaleLabel": "$310K / $132K house / condo (Jan–Jun 2026)"
@@ -5564,10 +5564,10 @@
         "water": 7,
         "beach": 67,
         "dining": 122,
-        "outdoors": 54,
-        "afford": 104,
+        "outdoors": 53,
+        "afford": 80,
         "airport": 115,
-        "edu": 8
+        "edu": 95
       },
       "priceContext": "Satellite Beach city: $522,500 house sale median (Jan–Jun 2026; 86 sales; Florida DOR county records). Satellite Beach city: $510,000 condo sale median (Jul 2025–Jun 2026; 35 sales; Florida DOR county records).",
       "recordedSaleLabel": "$522K / $510K house / condo (periods below)"
@@ -5621,10 +5621,10 @@
         "water": 90,
         "beach": 104,
         "dining": 96,
-        "outdoors": 18,
-        "afford": 5,
+        "outdoors": 29,
+        "afford": 8,
         "airport": 61,
-        "edu": 133
+        "edu": 106
       },
       "priceContext": "Titusville city: $282,000 house sale median (Jan–Jun 2026; 393 sales; Florida DOR county records). Titusville city: $151,500 condo sale median (Jan–Jun 2026; 48 sales; Florida DOR county records).",
       "recordedSaleLabel": "$282K / $152K house / condo (Jan–Jun 2026)"
@@ -5677,10 +5677,10 @@
         "water": 166,
         "beach": 146,
         "dining": 56,
-        "outdoors": 165,
-        "afford": 51,
+        "outdoors": 154,
+        "afford": 45,
         "airport": 113,
-        "edu": 85
+        "edu": 102
       },
       "priceContext": "West Melbourne city: $400,000 house sale median (Jan–Jun 2026; 190 sales; Florida DOR county records). West Melbourne city: $191,000 condo sale median (Jul 2025–Jun 2026; 50 sales; Florida DOR county records).",
       "recordedSaleLabel": "$400K / $191K house / condo (periods below)"
@@ -5701,8 +5701,8 @@
         "water": 3,
         "beach": 4,
         "dining": 3,
-        "outdoors": 5,
-        "afford": 2,
+        "outdoors": 4,
+        "afford": 3,
         "airport": 4,
         "edu": 4
       },
@@ -5734,10 +5734,10 @@
         "water": 140,
         "beach": 47,
         "dining": 35,
-        "outdoors": 5,
-        "afford": 122,
+        "outdoors": 25,
+        "afford": 107,
         "airport": 64,
-        "edu": 35
+        "edu": 132
       },
       "priceContext": "Atlantic Beach city: $725,000 house sale median (Jan–Jun 2026; 103 sales; Florida DOR county records). Atlantic Beach city: $470,000 condo sale median (Jul 2025–Jun 2026; 24 sales; Florida DOR county records).",
       "recordedSaleLabel": "$725K / $470K house / condo (periods below)"
@@ -5791,10 +5791,10 @@
         "water": 147,
         "beach": 49,
         "dining": 26,
-        "outdoors": 28,
-        "afford": 139,
+        "outdoors": 40,
+        "afford": 111,
         "airport": 68,
-        "edu": 43
+        "edu": 133
       },
       "priceContext": "Neptune Beach city: $779,900 house sale median (Jan–Jun 2026; 39 sales; Florida DOR county records).",
       "recordedSaleLabel": "$780K house (Jan–Jun 2026)"
@@ -5815,8 +5815,8 @@
         "water": 3,
         "beach": 4,
         "dining": 3,
-        "outdoors": 5,
-        "afford": 1,
+        "outdoors": 4,
+        "afford": 2,
         "airport": 4,
         "edu": 5
       },
@@ -5848,10 +5848,10 @@
         "water": 163,
         "beach": 60,
         "dining": 94,
-        "outdoors": 7,
-        "afford": 147,
+        "outdoors": 21,
+        "afford": 138,
         "airport": 74,
-        "edu": 12
+        "edu": 8
       },
       "priceContext": "Ponte Vedra Beach ZIP 32082: $1,560,000 all-home sale median (August 2026; 36 sales; Elevate in Ponte Vedra market report).",
       "recordedSaleLabel": "$1.56M all-home (August 2026)"
@@ -5872,7 +5872,7 @@
         "water": 3,
         "beach": 4,
         "dining": 3,
-        "outdoors": 5,
+        "outdoors": 4,
         "afford": 3,
         "airport": 3,
         "edu": 5
@@ -5903,12 +5903,12 @@
         "quiet": 95,
         "walk": 41,
         "water": 144,
-        "beach": 22,
+        "beach": 37,
         "dining": 46,
-        "outdoors": 4,
-        "afford": 108,
+        "outdoors": 28,
+        "afford": 109,
         "airport": 141,
-        "edu": 47
+        "edu": 10
       },
       "priceContext": "Redfin St. Augustine Beach market: $624,703 all-home sale median (3 months ending September 2026; Redfin).",
       "recordedSaleLabel": "$625K all-home (3 months ending September 2026)"
@@ -5929,8 +5929,8 @@
         "water": 3,
         "beach": 4,
         "dining": 2,
-        "outdoors": 2,
-        "afford": 5,
+        "outdoors": 3,
+        "afford": 4,
         "airport": 4,
         "edu": 5
       },
@@ -5960,10 +5960,10 @@
         "water": 123,
         "beach": 74,
         "dining": 84,
-        "outdoors": 112,
-        "afford": 25,
+        "outdoors": 104,
+        "afford": 49,
         "airport": 90,
-        "edu": 111
+        "edu": 53
       },
       "priceContext": "Redfin Daytona Beach Shores market: $375,000 all-home sale median (3 months ending October 2026; Redfin).",
       "recordedSaleLabel": "$375K all-home (3 months ending October 2026)"
@@ -5984,7 +5984,7 @@
         "water": 3,
         "beach": 4,
         "dining": 3,
-        "outdoors": 4,
+        "outdoors": 3,
         "afford": 4,
         "airport": 4,
         "edu": 5
@@ -6017,10 +6017,10 @@
         "water": 101,
         "beach": 56,
         "dining": 43,
-        "outdoors": 50,
-        "afford": 48,
+        "outdoors": 67,
+        "afford": 40,
         "airport": 91,
-        "edu": 32
+        "edu": 46
       },
       "priceContext": "Ormond Beach city: $396,000 house sale median (Jan–Jun 2026; 345 sales; Florida DOR county records). Ormond Beach city: $259,500 condo sale median (Jan–Jun 2026; 28 sales; Florida DOR county records).",
       "recordedSaleLabel": "$396K / $260K house / condo (Jan–Jun 2026)"
@@ -6041,7 +6041,7 @@
         "water": 4,
         "beach": 3,
         "dining": 2,
-        "outdoors": 4,
+        "outdoors": 5,
         "afford": 4,
         "airport": 3,
         "edu": 5
@@ -6074,10 +6074,10 @@
         "water": 20,
         "beach": 85,
         "dining": 126,
-        "outdoors": 19,
-        "afford": 39,
+        "outdoors": 12,
+        "afford": 19,
         "airport": 142,
-        "edu": 84
+        "edu": 6
       },
       "priceContext": "Palm Coast city: $353,500 house sale median (Jan–Jun 2026; 1,282 sales; Florida DOR county records). Palm Coast city: $232,500 condo sale median (Jan–Jun 2026; 58 sales; Florida DOR county records).",
       "recordedSaleLabel": "$354K / $232K house / condo (Jan–Jun 2026)"
@@ -6131,10 +6131,10 @@
         "water": 102,
         "beach": 129,
         "dining": 66,
-        "outdoors": 125,
-        "afford": 41,
+        "outdoors": 117,
+        "afford": 20,
         "airport": 89,
-        "edu": 100
+        "edu": 51
       },
       "priceContext": "Port Orange city: $349,400 house sale median (Jan–Jun 2026; 400 sales; Florida DOR county records). Port Orange city: $175,000 condo sale median (Jan–Jun 2026; 21 sales; Florida DOR county records).",
       "recordedSaleLabel": "$349K / $175K house / condo (Jan–Jun 2026)"
@@ -6155,8 +6155,8 @@
         "water": 4,
         "beach": 4,
         "dining": 2,
-        "outdoors": 4,
-        "afford": 3,
+        "outdoors": 3,
+        "afford": 4,
         "airport": 3,
         "edu": 5
       },
@@ -6188,10 +6188,10 @@
         "water": 133,
         "beach": 58,
         "dining": 78,
-        "outdoors": 51,
-        "afford": 73,
+        "outdoors": 78,
+        "afford": 50,
         "airport": 110,
-        "edu": 53
+        "edu": 109
       },
       "priceContext": "Navarre CDP: $430,000 house sale median (Jan–Jun 2026; 415 sales; Florida DOR county records).",
       "recordedSaleLabel": "$430K house (Jan–Jun 2026)"
@@ -6245,10 +6245,10 @@
         "water": 146,
         "beach": 94,
         "dining": 118,
-        "outdoors": 122,
-        "afford": 32,
+        "outdoors": 124,
+        "afford": 26,
         "airport": 103,
-        "edu": 126
+        "edu": 55
       },
       "priceContext": "Mary Esther city: $107,400 condo sale median (Jan 2025–Jun 2026; 12 sales; Florida DOR county records).",
       "recordedSaleLabel": "$107K condo (Jan 2025–Jun 2026)"
@@ -6302,10 +6302,10 @@
         "water": 108,
         "beach": 61,
         "dining": 38,
-        "outdoors": 97,
-        "afford": 29,
+        "outdoors": 93,
+        "afford": 25,
         "airport": 80,
-        "edu": 112
+        "edu": 54
       },
       "priceContext": "Fort Walton Beach city: $349,950 house sale median (Jan–Jun 2026; 148 sales; Florida DOR county records). Fort Walton Beach city: $183,000 condo sale median (Jul 2025–Jun 2026; 41 sales; Florida DOR county records).",
       "recordedSaleLabel": "$350K / $183K house / condo (periods below)"
@@ -6326,7 +6326,7 @@
         "water": 4,
         "beach": 2,
         "dining": 2,
-        "outdoors": 1,
+        "outdoors": 2,
         "afford": 3,
         "airport": 4,
         "edu": 5
@@ -6359,10 +6359,10 @@
         "water": 113,
         "beach": 124,
         "dining": 124,
-        "outdoors": 158,
-        "afford": 99,
+        "outdoors": 146,
+        "afford": 83,
         "airport": 79,
-        "edu": 128
+        "edu": 56
       },
       "priceContext": "Shalimar town: $525,000 house sale median (Jan 2025–Jun 2026; 11 sales; Florida DOR county records).",
       "recordedSaleLabel": "$525K house (Jan 2025–Jun 2026)"
@@ -6383,7 +6383,7 @@
         "water": 4,
         "beach": 2,
         "dining": 3,
-        "outdoors": 3,
+        "outdoors": 4,
         "afford": 3,
         "airport": 4,
         "edu": 5
@@ -6415,10 +6415,10 @@
         "water": 118,
         "beach": 116,
         "dining": 44,
-        "outdoors": 70,
-        "afford": 80,
+        "outdoors": 41,
+        "afford": 55,
         "airport": 76,
-        "edu": 17
+        "edu": 44
       },
       "priceContext": "Niceville city: $435,000 house sale median (Jan–Jun 2026; 143 sales; Florida DOR county records).",
       "recordedSaleLabel": "$435K house (Jan–Jun 2026)"
@@ -6439,7 +6439,7 @@
         "water": 4,
         "beach": 5,
         "dining": 4,
-        "outdoors": 3,
+        "outdoors": 4,
         "afford": 2,
         "airport": 3,
         "edu": 5
@@ -6470,12 +6470,12 @@
         "quiet": 142,
         "walk": 65,
         "water": 153,
-        "beach": 30,
+        "beach": 4,
         "dining": 101,
-        "outdoors": 74,
+        "outdoors": 35,
         "afford": 136,
         "airport": 105,
-        "edu": 15
+        "edu": 4
       },
       "priceContext": "Miramar Beach CDP: $1,060,000 house sale median (Jan–Jun 2026; 219 sales; Florida DOR county records). Miramar Beach CDP: $551,250 condo sale median (Jan–Jun 2026; 170 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.06M / $551K house / condo (Jan–Jun 2026)"
@@ -6496,7 +6496,7 @@
         "water": 3,
         "beach": 2,
         "dining": 2,
-        "outdoors": 2,
+        "outdoors": 3,
         "afford": 4,
         "airport": 3,
         "edu": 5
@@ -6529,10 +6529,10 @@
         "water": 162,
         "beach": 122,
         "dining": 152,
-        "outdoors": 118,
-        "afford": 49,
+        "outdoors": 101,
+        "afford": 32,
         "airport": 121,
-        "edu": 6
+        "edu": 2
       },
       "priceContext": "Freeport city: $355,000 house sale median (Jan–Jun 2026; 200 sales; Florida DOR county records).",
       "recordedSaleLabel": "$355K house (Jan–Jun 2026)"
@@ -6551,7 +6551,7 @@
         "quiet": 5,
         "walk": 3,
         "water": 4,
-        "beach": 4,
+        "beach": 3,
         "dining": 2,
         "outdoors": 3,
         "afford": 3,
@@ -6586,10 +6586,10 @@
         "water": 132,
         "beach": 83,
         "dining": 134,
-        "outdoors": 69,
-        "afford": 102,
+        "outdoors": 98,
+        "afford": 64,
         "airport": 148,
-        "edu": 145
+        "edu": 142
       },
       "priceContext": "Mexico Beach city: $460,000 house sale median (Jan–Jun 2026; 49 sales; Florida DOR county records). Mexico Beach city: $400,000 condo sale median (Jul 2025–Jun 2026; 23 sales; Florida DOR county records).",
       "recordedSaleLabel": "$460K / $400K house / condo (periods below)"
@@ -6610,7 +6610,7 @@
         "water": 5,
         "beach": 2,
         "dining": 1,
-        "outdoors": 2,
+        "outdoors": 1,
         "afford": 4,
         "airport": 1,
         "edu": 3
@@ -6643,10 +6643,10 @@
         "water": 75,
         "beach": 126,
         "dining": 161,
-        "outdoors": 137,
-        "afford": 46,
+        "outdoors": 164,
+        "afford": 47,
         "airport": 164,
-        "edu": 154
+        "edu": 163
       },
       "priceContext": "Keaton Beach Drive: $414,500 house sale median (Jan 2025–Jun 2026; 4 sales; Florida DOR county records).",
       "recordedSaleLabel": "$414K house (Jan 2025–Jun 2026)"
@@ -6667,7 +6667,7 @@
         "water": 5,
         "beach": 2,
         "dining": 1,
-        "outdoors": 2,
+        "outdoors": 1,
         "afford": 4,
         "airport": 1,
         "edu": 3
@@ -6700,10 +6700,10 @@
         "water": 95,
         "beach": 125,
         "dining": 165,
-        "outdoors": 136,
-        "afford": 16,
+        "outdoors": 167,
+        "afford": 36,
         "airport": 166,
-        "edu": 122
+        "edu": 161
       },
       "priceContext": "Horseshoe Beach town: $247,500 house sale median (Jan 2025–Jun 2026; 4 sales; Florida DOR county records). Horseshoe Beach town: $209,000 condo sale median (Jan 2025–Jun 2026; 6 sales; Florida DOR county records).",
       "recordedSaleLabel": "$248K / $209K house / condo (Jan 2025–Jun 2026)"
@@ -6724,7 +6724,7 @@
         "water": 5,
         "beach": 1,
         "dining": 2,
-        "outdoors": 3,
+        "outdoors": 2,
         "afford": 4,
         "airport": 1,
         "edu": 3
@@ -6757,10 +6757,10 @@
         "water": 86,
         "beach": 166,
         "dining": 157,
-        "outdoors": 91,
-        "afford": 18,
+        "outdoors": 133,
+        "afford": 38,
         "airport": 165,
-        "edu": 123
+        "edu": 162
       },
       "priceContext": "Suwannee Cove condominium, Suwannee: $184,250 condo sale median (Jan 2025–Jun 2026; 4 sales; Florida DOR county records).",
       "recordedSaleLabel": "$184K condo (Jan 2025–Jun 2026)"
@@ -6781,8 +6781,8 @@
         "water": 5,
         "beach": 1,
         "dining": 2,
-        "outdoors": 3,
-        "afford": 4,
+        "outdoors": 2,
+        "afford": 5,
         "airport": 2,
         "edu": 3
       },
@@ -6814,10 +6814,10 @@
         "water": 98,
         "beach": 162,
         "dining": 155,
-        "outdoors": 89,
-        "afford": 17,
+        "outdoors": 143,
+        "afford": 11,
         "airport": 156,
-        "edu": 136
+        "edu": 157
       },
       "priceContext": "Yankeetown town: $285,000 house sale median (Jul 2025–Jun 2026; 25 sales; Florida DOR county records).",
       "recordedSaleLabel": "$285K house (Jul 2025–Jun 2026)"
@@ -6838,7 +6838,7 @@
         "water": 4,
         "beach": 1,
         "dining": 1,
-        "outdoors": 2,
+        "outdoors": 1,
         "afford": 5,
         "airport": 2,
         "edu": 3
@@ -6871,10 +6871,10 @@
         "water": 136,
         "beach": 157,
         "dining": 160,
-        "outdoors": 139,
-        "afford": 9,
+        "outdoors": 160,
+        "afford": 5,
         "airport": 155,
-        "edu": 137
+        "edu": 158
       },
       "priceContext": "Inglis town: $275,000 house sale median (Jan 2025–Jun 2026; 28 sales; Florida DOR county records).",
       "recordedSaleLabel": "$275K house (Jan 2025–Jun 2026)"
@@ -6895,7 +6895,7 @@
         "water": 5,
         "beach": 2,
         "dining": 2,
-        "outdoors": 2,
+        "outdoors": 1,
         "afford": 3,
         "airport": 3,
         "edu": 3
@@ -6928,10 +6928,10 @@
         "water": 60,
         "beach": 123,
         "dining": 146,
-        "outdoors": 135,
-        "afford": 93,
+        "outdoors": 161,
+        "afford": 84,
         "airport": 97,
-        "edu": 160
+        "edu": 153
       },
       "priceContext": "Hernando Beach CDP: $546,900 house sale median (Jan–Jun 2026; 53 sales; Florida DOR county records).",
       "recordedSaleLabel": "$547K house (Jan–Jun 2026)"
@@ -6985,10 +6985,10 @@
         "water": 135,
         "beach": 158,
         "dining": 117,
-        "outdoors": 60,
-        "afford": 36,
+        "outdoors": 103,
+        "afford": 42,
         "airport": 100,
-        "edu": 116
+        "edu": 151
       },
       "priceContext": "Momentum Weeki Wachee market area: $362,375 all-home sale median (12 months ending Nov 15, 2026; 532 sales; Momentum Realty).",
       "recordedSaleLabel": "$362K all-home (12 months ending Nov 15, 2026)"
@@ -7009,8 +7009,8 @@
         "water": 4,
         "beach": 1,
         "dining": 1,
-        "outdoors": 3,
-        "afford": 3,
+        "outdoors": 2,
+        "afford": 4,
         "airport": 3,
         "edu": 3
       },
@@ -7042,10 +7042,10 @@
         "water": 145,
         "beach": 165,
         "dining": 163,
-        "outdoors": 94,
-        "afford": 94,
+        "outdoors": 112,
+        "afford": 35,
         "airport": 94,
-        "edu": 150
+        "edu": 152
       },
       "priceContext": "Aripeka CDP: $130,000 house sale median (Jan 2025–Jun 2026; 13 sales; Florida DOR county records).",
       "recordedSaleLabel": "$130K house (Jan 2025–Jun 2026)"
@@ -7099,10 +7099,10 @@
         "water": 63,
         "beach": 117,
         "dining": 103,
-        "outdoors": 156,
-        "afford": 8,
+        "outdoors": 150,
+        "afford": 12,
         "airport": 86,
-        "edu": 151
+        "edu": 122
       },
       "priceContext": "Hudson CDP: $300,000 house sale median (Jan–Jun 2026; 164 sales; Florida DOR county records). Hudson CDP: $215,000 condo sale median (Jul 2025–Jun 2026; 23 sales; Florida DOR county records).",
       "recordedSaleLabel": "$300K / $215K house / condo (periods below)"
@@ -7124,7 +7124,7 @@
         "beach": 1,
         "dining": 2,
         "outdoors": 1,
-        "afford": 5,
+        "afford": 4,
         "airport": 4,
         "edu": 4
       },
@@ -7156,10 +7156,10 @@
         "water": 48,
         "beach": 155,
         "dining": 106,
-        "outdoors": 162,
-        "afford": 3,
+        "outdoors": 163,
+        "afford": 29,
         "airport": 55,
-        "edu": 115
+        "edu": 120
       },
       "priceContext": "Momentum Port Richey market area: $235,000 all-home sale median (12 months ending Nov 14, 2026; 793 sales; Momentum Realty).",
       "recordedSaleLabel": "$235K all-home (12 months ending Nov 14, 2026)"
@@ -7213,10 +7213,10 @@
         "water": 110,
         "beach": 147,
         "dining": 144,
-        "outdoors": 138,
+        "outdoors": 135,
         "afford": 1,
         "airport": 48,
-        "edu": 124
+        "edu": 121
       },
       "priceContext": "Momentum Holiday market area: $221,000 all-home sale median (12 months ending Nov 15, 2026; 651 sales; Momentum Realty).",
       "recordedSaleLabel": "$221K all-home (12 months ending Nov 15, 2026)"
@@ -7270,10 +7270,10 @@
         "water": 121,
         "beach": 86,
         "dining": 48,
-        "outdoors": 104,
-        "afford": 59,
+        "outdoors": 109,
+        "afford": 62,
         "airport": 38,
-        "edu": 19
+        "edu": 26
       },
       "priceContext": "Palm Harbor CDP: $450,000 house sale median (Jan–Jun 2026; 470 sales; Florida DOR county records). Palm Harbor CDP: $193,750 condo sale median (Jan–Jun 2026; 146 sales; Florida DOR county records).",
       "recordedSaleLabel": "$450K / $194K house / condo (Jan–Jun 2026)"
@@ -7327,10 +7327,10 @@
         "water": 156,
         "beach": 152,
         "dining": 85,
-        "outdoors": 127,
-        "afford": 58,
+        "outdoors": 113,
+        "afford": 56,
         "airport": 9,
-        "edu": 55
+        "edu": 30
       },
       "priceContext": "Oldsmar city: $422,450 house sale median (Jan–Jun 2026; 100 sales; Florida DOR county records).",
       "recordedSaleLabel": "$422K house (Jan–Jun 2026)"
@@ -7384,10 +7384,10 @@
         "water": 51,
         "beach": 80,
         "dining": 142,
-        "outdoors": 152,
-        "afford": 142,
+        "outdoors": 147,
+        "afford": 125,
         "airport": 42,
-        "edu": 76
+        "edu": 36
       },
       "priceContext": "Belleair Beach city: $900,950 house sale median (Jul 2025–Jun 2026; 44 sales; Florida DOR county records).",
       "recordedSaleLabel": "$901K house (Jul 2025–Jun 2026)"
@@ -7406,7 +7406,7 @@
         "quiet": 4,
         "walk": 2,
         "water": 5,
-        "beach": 4,
+        "beach": 5,
         "dining": 3,
         "outdoors": 3,
         "afford": 2,
@@ -7439,12 +7439,12 @@
         "quiet": 44,
         "walk": 105,
         "water": 11,
-        "beach": 14,
+        "beach": 11,
         "dining": 109,
-        "outdoors": 87,
-        "afford": 141,
+        "outdoors": 83,
+        "afford": 132,
         "airport": 53,
-        "edu": 88
+        "edu": 37
       },
       "priceContext": "Tierra Verde CDP: $990,500 house sale median (Jul 2025–Jun 2026; 56 sales; Florida DOR county records). Tierra Verde CDP: $675,000 condo sale median (Jan–Jun 2026; 35 sales; Florida DOR county records).",
       "recordedSaleLabel": "$990K / $675K house / condo (periods below)"
@@ -7465,7 +7465,7 @@
         "water": 4,
         "beach": 4,
         "dining": 3,
-        "outdoors": 1,
+        "outdoors": 2,
         "afford": 2,
         "airport": 4,
         "edu": 5
@@ -7497,10 +7497,10 @@
         "water": 120,
         "beach": 82,
         "dining": 80,
-        "outdoors": 153,
-        "afford": 125,
+        "outdoors": 140,
+        "afford": 131,
         "airport": 50,
-        "edu": 67
+        "edu": 33
       },
       "priceContext": "Indian Shores town: $670,000 condo sale median (Jan–Jun 2026; 55 sales; Florida DOR county records).",
       "recordedSaleLabel": "$670K condo (Jan–Jun 2026)"
@@ -7521,8 +7521,8 @@
         "water": 4,
         "beach": 4,
         "dining": 3,
-        "outdoors": 1,
-        "afford": 2,
+        "outdoors": 2,
+        "afford": 3,
         "airport": 4,
         "edu": 5
       },
@@ -7553,10 +7553,10 @@
         "water": 22,
         "beach": 79,
         "dining": 72,
-        "outdoors": 151,
-        "afford": 120,
+        "outdoors": 137,
+        "afford": 101,
         "airport": 49,
-        "edu": 23
+        "edu": 27
       },
       "priceContext": "Redington Shores town: $650,000 house sale median (Jul 2025–Jun 2026; 35 sales; Florida DOR county records). Redington Shores town: $730,000 condo sale median (Jan–Jun 2026; 27 sales; Florida DOR county records).",
       "recordedSaleLabel": "$650K / $730K house / condo (periods below)"
@@ -7578,7 +7578,7 @@
         "beach": 1,
         "dining": 2,
         "outdoors": 1,
-        "afford": 3,
+        "afford": 5,
         "airport": 4,
         "edu": 4
       },
@@ -7610,10 +7610,10 @@
         "water": 157,
         "beach": 149,
         "dining": 149,
-        "outdoors": 167,
-        "afford": 74,
+        "outdoors": 165,
+        "afford": 14,
         "airport": 33,
-        "edu": 138
+        "edu": 127
       },
       "priceContext": "Gibsonton CDP: $325,000 house sale median (Jan 2025–Jun 2026; 254 sales; Florida DOR county records).",
       "recordedSaleLabel": "$325K house (Jan 2025–Jun 2026)"
@@ -7635,7 +7635,7 @@
         "beach": 2,
         "dining": 5,
         "outdoors": 2,
-        "afford": 2,
+        "afford": 1,
         "airport": 5,
         "edu": 5
       },
@@ -7667,10 +7667,10 @@
         "water": 31,
         "beach": 106,
         "dining": 3,
-        "outdoors": 123,
-        "afford": 116,
+        "outdoors": 130,
+        "afford": 160,
         "airport": 1,
-        "edu": 21
+        "edu": 58
       },
       "priceContext": "Brickell: $625,000 condo sale median (12 months ending Sep 30, 2026; Julian Acosta market report, MIAMI REALTORS MLS). Coconut Grove: $1,471,095 condo sale median (12 months ending Sep 30, 2026; Julian Acosta market report, MIAMI REALTORS MLS).",
       "recordedSaleLabel": "$625K / $1.47M condo / condo (12 months ending Sep 30, 2026)"
@@ -7724,10 +7724,10 @@
         "water": 72,
         "beach": 105,
         "dining": 14,
-        "outdoors": 117,
-        "afford": 6,
+        "outdoors": 134,
+        "afford": 7,
         "airport": 56,
-        "edu": 125
+        "edu": 134
       },
       "priceContext": "Jacksonville city: $290,000 house sale median (Jan–Jun 2026; 5,495 sales; Florida DOR county records). Jacksonville city: $170,500 condo sale median (Jan–Jun 2026; 568 sales; Florida DOR county records).",
       "recordedSaleLabel": "$290K / $170K house / condo (Jan–Jun 2026)"
@@ -7781,10 +7781,10 @@
         "water": 137,
         "beach": 75,
         "dining": 147,
-        "outdoors": 77,
-        "afford": 163,
+        "outdoors": 72,
+        "afford": 156,
         "airport": 140,
-        "edu": 62
+        "edu": 19
       },
       "priceContext": "Indian River Shores town: $1,979,500 house sale median (Jan–Jun 2026; 66 sales; Florida DOR county records). Indian River Shores town: $525,000 condo sale median (Jan–Jun 2026; 66 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.98M / $525K house / condo (Jan–Jun 2026)"
@@ -7836,12 +7836,12 @@
         "quiet": 48,
         "walk": 155,
         "water": 89,
-        "beach": 28,
+        "beach": 19,
         "dining": 139,
-        "outdoors": 24,
-        "afford": 101,
+        "outdoors": 48,
+        "afford": 78,
         "airport": 124,
-        "edu": 57
+        "edu": 116
       },
       "priceContext": "Hutchinson Island South: $492,000 all-home sale median (3 months ending August 2026; Redfin).",
       "recordedSaleLabel": "$492K all-home (3 months ending August 2026)"
@@ -7895,10 +7895,10 @@
         "water": 5,
         "beach": 95,
         "dining": 133,
-        "outdoors": 140,
-        "afford": 165,
+        "outdoors": 120,
+        "afford": 147,
         "airport": 116,
-        "edu": 97
+        "edu": 113
       },
       "priceContext": "Sewall's Point town: $1,500,000 house sale median (Jan–Jun 2026; 22 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.5M house (Jan–Jun 2026)"
@@ -7919,7 +7919,7 @@
         "water": 4,
         "beach": 2,
         "dining": 3,
-        "outdoors": 1,
+        "outdoors": 2,
         "afford": 3,
         "airport": 3,
         "edu": 5
@@ -7952,10 +7952,10 @@
         "water": 68,
         "beach": 114,
         "dining": 68,
-        "outdoors": 155,
-        "afford": 105,
+        "outdoors": 128,
+        "afford": 95,
         "airport": 114,
-        "edu": 30
+        "edu": 110
       },
       "priceContext": "Palm City CDP: $577,500 house sale median (Jan–Jun 2026; 258 sales; Florida DOR county records).",
       "recordedSaleLabel": "$578K house (Jan–Jun 2026)"
@@ -7976,8 +7976,8 @@
         "water": 5,
         "beach": 2,
         "dining": 3,
-        "outdoors": 2,
-        "afford": 3,
+        "outdoors": 3,
+        "afford": 4,
         "airport": 3,
         "edu": 5
       },
@@ -8009,10 +8009,10 @@
         "water": 19,
         "beach": 119,
         "dining": 69,
-        "outdoors": 113,
-        "afford": 67,
+        "outdoors": 89,
+        "afford": 48,
         "airport": 107,
-        "edu": 144
+        "edu": 115
       },
       "priceContext": "Port Salerno CDP: $394,000 house sale median (Jan–Jun 2026; 90 sales; Florida DOR county records).",
       "recordedSaleLabel": "$394K house (Jan–Jun 2026)"
@@ -8066,10 +8066,10 @@
         "water": 151,
         "beach": 64,
         "dining": 114,
-        "outdoors": 45,
-        "afford": 97,
+        "outdoors": 46,
+        "afford": 85,
         "airport": 99,
-        "edu": 130
+        "edu": 114
       },
       "priceContext": "Hobe Sound CDP: $525,000 house sale median (Jan–Jun 2026; 124 sales; Florida DOR county records). Hobe Sound CDP: $240,000 condo sale median (Jul 2025–Jun 2026; 30 sales; Florida DOR county records).",
       "recordedSaleLabel": "$525K / $240K house / condo (periods below)"
@@ -8123,10 +8123,10 @@
         "water": 45,
         "beach": 93,
         "dining": 108,
-        "outdoors": 46,
-        "afford": 124,
+        "outdoors": 50,
+        "afford": 118,
         "airport": 63,
-        "edu": 37
+        "edu": 79
       },
       "priceContext": "Tequesta village: $340,250 condo sale median (Jan 2025–Jun 2026; 96 sales; Florida DOR county records).",
       "recordedSaleLabel": "$340K condo (Jan 2025–Jun 2026)"
@@ -8145,10 +8145,10 @@
         "quiet": 4,
         "walk": 2,
         "water": 4,
-        "beach": 5,
+        "beach": 4,
         "dining": 2,
         "outdoors": 4,
-        "afford": 2,
+        "afford": 1,
         "airport": 5,
         "edu": 5
       },
@@ -8178,12 +8178,12 @@
         "quiet": 45,
         "walk": 104,
         "water": 114,
-        "beach": 31,
+        "beach": 28,
         "dining": 102,
-        "outdoors": 25,
-        "afford": 140,
+        "outdoors": 43,
+        "afford": 153,
         "airport": 32,
-        "edu": 38
+        "edu": 80
       },
       "priceContext": "Juno Beach town: $650,000 condo sale median (Jan 2025–Jun 2026; 107 sales; Florida DOR county records).",
       "recordedSaleLabel": "$650K condo (Jan 2025–Jun 2026)"
@@ -8237,10 +8237,10 @@
         "water": 34,
         "beach": 120,
         "dining": 105,
-        "outdoors": 157,
-        "afford": 89,
+        "outdoors": 152,
+        "afford": 73,
         "airport": 22,
-        "edu": 70
+        "edu": 84
       },
       "priceContext": "Lake Park town: $450,000 house sale median (Jan–Jun 2026; 33 sales; Florida DOR county records).",
       "recordedSaleLabel": "$450K house (Jan–Jun 2026)"
@@ -8261,7 +8261,7 @@
         "water": 5,
         "beach": 4,
         "dining": 2,
-        "outdoors": 3,
+        "outdoors": 2,
         "afford": 2,
         "airport": 5,
         "edu": 5
@@ -8294,10 +8294,10 @@
         "water": 39,
         "beach": 81,
         "dining": 91,
-        "outdoors": 103,
+        "outdoors": 125,
         "afford": 144,
         "airport": 21,
-        "edu": 103
+        "edu": 86
       },
       "priceContext": "Palm Beach Shores town: $1,371,250 house sale median (Jan 2025–Jun 2026; 24 sales; Florida DOR county records).",
       "recordedSaleLabel": "$1.37M house (Jan 2025–Jun 2026)"
@@ -8351,10 +8351,10 @@
         "water": 112,
         "beach": 57,
         "dining": 27,
-        "outdoors": 83,
-        "afford": 82,
+        "outdoors": 90,
+        "afford": 79,
         "airport": 17,
-        "edu": 143
+        "edu": 92
       },
       "priceContext": "Lake Worth Beach city: $465,000 house sale median (Jan–Jun 2026; 204 sales; Florida DOR county records).",
       "recordedSaleLabel": "$465K house (Jan–Jun 2026)"
@@ -8375,7 +8375,7 @@
         "water": 4,
         "beach": 3,
         "dining": 2,
-        "outdoors": 2,
+        "outdoors": 1,
         "afford": 3,
         "airport": 5,
         "edu": 5
@@ -8408,10 +8408,10 @@
         "water": 96,
         "beach": 92,
         "dining": 110,
-        "outdoors": 146,
-        "afford": 57,
+        "outdoors": 158,
+        "afford": 86,
         "airport": 20,
-        "edu": 162
+        "edu": 93
       },
       "priceContext": "Lantana town: $515,000 house sale median (Jan–Jun 2026; 43 sales; Florida DOR county records).",
       "recordedSaleLabel": "$515K house (Jan–Jun 2026)"
@@ -8433,7 +8433,7 @@
         "beach": 4,
         "dining": 3,
         "outdoors": 3,
-        "afford": 4,
+        "afford": 3,
         "airport": 5,
         "edu": 5
       },
@@ -8465,10 +8465,10 @@
         "water": 52,
         "beach": 55,
         "dining": 90,
-        "outdoors": 106,
-        "afford": 35,
+        "outdoors": 99,
+        "afford": 70,
         "airport": 26,
-        "edu": 141
+        "edu": 91
       },
       "priceContext": "Boynton Beach city: $435,000 house sale median (Jan–Jun 2026; 355 sales; Florida DOR county records).",
       "recordedSaleLabel": "$435K house (Jan–Jun 2026)"
@@ -8490,7 +8490,7 @@
         "beach": 4,
         "dining": 3,
         "outdoors": 4,
-        "afford": 2,
+        "afford": 3,
         "airport": 3,
         "edu": 5
       },
@@ -8522,10 +8522,10 @@
         "water": 29,
         "beach": 78,
         "dining": 28,
-        "outdoors": 27,
-        "afford": 129,
+        "outdoors": 24,
+        "afford": 102,
         "airport": 134,
-        "edu": 48
+        "edu": 11
       },
       "priceContext": "Redfin Vilano Beach market: $700,916 all-home sale median (3 months ending September 2026; Redfin).",
       "recordedSaleLabel": "$701K all-home (3 months ending September 2026)"
@@ -8547,7 +8547,7 @@
         "beach": 5,
         "dining": 2,
         "outdoors": 4,
-        "afford": 3,
+        "afford": 1,
         "airport": 2,
         "edu": 5
       },
@@ -8577,12 +8577,12 @@
         "quiet": 12,
         "walk": 112,
         "water": 141,
-        "beach": 37,
+        "beach": 18,
         "dining": 123,
-        "outdoors": 23,
-        "afford": 81,
+        "outdoors": 56,
+        "afford": 151,
         "airport": 149,
-        "edu": 82
+        "edu": 12
       },
       "priceContext": "Redfin Crescent Beach market, St. Johns County: $535,000 all-home sale median (3 months ending September 2026; Redfin).",
       "recordedSaleLabel": "$535K all-home (3 months ending September 2026)"
@@ -8603,8 +8603,8 @@
         "water": 4,
         "beach": 3,
         "dining": 2,
-        "outdoors": 2,
-        "afford": 3,
+        "outdoors": 3,
+        "afford": 2,
         "airport": 3,
         "edu": 5
       },
@@ -8636,10 +8636,10 @@
         "water": 58,
         "beach": 96,
         "dining": 141,
-        "outdoors": 111,
-        "afford": 112,
+        "outdoors": 74,
+        "afford": 124,
         "airport": 138,
-        "edu": 86
+        "edu": 7
       },
       "priceContext": "Beverly Beach town: $904,500 house sale median (Jan 2025–Jun 2026; 6 sales; Florida DOR county records). Beverly Beach town: $685,000 condo sale median (Jan 2025–Jun 2026; 3 sales; Florida DOR county records).",
       "recordedSaleLabel": "$904K / $685K house / condo (Jan 2025–Jun 2026)"
@@ -8660,7 +8660,7 @@
         "water": 4,
         "beach": 4,
         "dining": 2,
-        "outdoors": 2,
+        "outdoors": 3,
         "afford": 4,
         "airport": 3,
         "edu": 5
@@ -8693,10 +8693,10 @@
         "water": 53,
         "beach": 72,
         "dining": 131,
-        "outdoors": 110,
-        "afford": 37,
+        "outdoors": 95,
+        "afford": 33,
         "airport": 131,
-        "edu": 33
+        "edu": 47
       },
       "priceContext": "Ormond-by-the-Sea CDP: $394,500 house sale median (Jan–Jun 2026; 94 sales; Florida DOR county records). Ormond-by-the-Sea CDP: $276,000 condo sale median (Jan–Jun 2026; 45 sales; Florida DOR county records).",
       "recordedSaleLabel": "$394K / $276K house / condo (Jan–Jun 2026)"
@@ -8718,7 +8718,7 @@
         "beach": 5,
         "dining": 3,
         "outdoors": 5,
-        "afford": 3,
+        "afford": 2,
         "airport": 3,
         "edu": 5
       },
@@ -8748,12 +8748,12 @@
         "quiet": 41,
         "walk": 106,
         "water": 43,
-        "beach": 34,
+        "beach": 7,
         "dining": 97,
-        "outdoors": 9,
-        "afford": 98,
+        "outdoors": 14,
+        "afford": 127,
         "airport": 129,
-        "edu": 77
+        "edu": 50
       },
       "priceContext": "Ponce Inlet town: $955,000 house sale median (Jan–Jun 2026; 29 sales; Florida DOR county records). Ponce Inlet town: $480,000 condo sale median (Jan–Jun 2026; 58 sales; Florida DOR county records).",
       "recordedSaleLabel": "$955K / $480K house / condo (Jan–Jun 2026)"
@@ -8775,7 +8775,7 @@
         "beach": 2,
         "dining": 2,
         "outdoors": 3,
-        "afford": 4,
+        "afford": 5,
         "airport": 3,
         "edu": 5
       },
@@ -8807,10 +8807,10 @@
         "water": 47,
         "beach": 134,
         "dining": 116,
-        "outdoors": 93,
-        "afford": 28,
+        "outdoors": 62,
+        "afford": 10,
         "airport": 109,
-        "edu": 69
+        "edu": 49
       },
       "priceContext": "Edgewater city: $300,000 house sale median (Jan–Jun 2026; 213 sales; Florida DOR county records).",
       "recordedSaleLabel": "$300K house (Jan–Jun 2026)"
@@ -8864,10 +8864,10 @@
         "water": 105,
         "beach": 68,
         "dining": 100,
-        "outdoors": 55,
-        "afford": 27,
+        "outdoors": 27,
+        "afford": 52,
         "airport": 84,
-        "edu": 9
+        "edu": 96
       },
       "priceContext": "Cape Canaveral city: $385,000 house sale median (Jan 2025–Jun 2026; 87 sales; Florida DOR county records). Cape Canaveral city: $287,000 condo sale median (Jan 2025–Jun 2026; 305 sales; Florida DOR county records).",
       "recordedSaleLabel": "$385K / $287K house / condo (Jan 2025–Jun 2026)"
@@ -8888,7 +8888,7 @@
         "water": 5,
         "beach": 2,
         "dining": 2,
-        "outdoors": 3,
+        "outdoors": 4,
         "afford": 3,
         "airport": 4,
         "edu": 5
@@ -8921,10 +8921,10 @@
         "water": 42,
         "beach": 110,
         "dining": 88,
-        "outdoors": 58,
-        "afford": 71,
+        "outdoors": 52,
+        "afford": 69,
         "airport": 73,
-        "edu": 34
+        "edu": 99
       },
       "priceContext": "Merritt Island CDP: $470,500 house sale median (Jan–Jun 2026; 278 sales; Florida DOR county records). Merritt Island CDP: $175,000 condo sale median (Jan–Jun 2026; 45 sales; Florida DOR county records).",
       "recordedSaleLabel": "$470K / $175K house / condo (Jan–Jun 2026)"
@@ -8978,10 +8978,10 @@
         "water": 152,
         "beach": 115,
         "dining": 49,
-        "outdoors": 144,
-        "afford": 24,
+        "outdoors": 123,
+        "afford": 39,
         "airport": 67,
-        "edu": 83
+        "edu": 101
       },
       "priceContext": "Oleander Pointe condominium, Cocoa Village: $551,000 condo sale median (Jan 2025–Jun 2026; 12 sales; Florida DOR county records).",
       "recordedSaleLabel": "$551K condo (Jan 2025–Jun 2026)"
@@ -9002,8 +9002,8 @@
         "water": 3,
         "beach": 2,
         "dining": 2,
-        "outdoors": 1,
-        "afford": 3,
+        "outdoors": 2,
+        "afford": 4,
         "airport": 4,
         "edu": 5
       },
@@ -9035,10 +9035,10 @@
         "water": 138,
         "beach": 112,
         "dining": 129,
-        "outdoors": 154,
-        "afford": 69,
+        "outdoors": 138,
+        "afford": 27,
         "airport": 70,
-        "edu": 89
+        "edu": 103
       },
       "priceContext": "Rockledge city: $360,000 house sale median (Jan–Jun 2026; 211 sales; Florida DOR county records). Rockledge city: $198,500 condo sale median (Jan–Jun 2026; 46 sales; Florida DOR county records).",
       "recordedSaleLabel": "$360K / $198K house / condo (Jan–Jun 2026)"
@@ -9092,10 +9092,10 @@
         "water": 6,
         "beach": 71,
         "dining": 50,
-        "outdoors": 56,
-        "afford": 84,
+        "outdoors": 51,
+        "afford": 77,
         "airport": 120,
-        "edu": 11
+        "edu": 97
       },
       "priceContext": "Indian Harbour Beach city: $495,750 house sale median (Jan–Jun 2026; 78 sales; Florida DOR county records). Indian Harbour Beach city: $323,750 condo sale median (Jan–Jun 2026; 36 sales; Florida DOR county records).",
       "recordedSaleLabel": "$496K / $324K house / condo (Jan–Jun 2026)"
@@ -9149,10 +9149,10 @@
         "water": 94,
         "beach": 108,
         "dining": 41,
-        "outdoors": 141,
-        "afford": 40,
+        "outdoors": 115,
+        "afford": 15,
         "airport": 123,
-        "edu": 92
+        "edu": 104
       },
       "priceContext": "Melbourne city: $315,000 house sale median (Jan–Jun 2026; 555 sales; Florida DOR county records). Melbourne city: $165,000 condo sale median (Jan–Jun 2026; 93 sales; Florida DOR county records).",
       "recordedSaleLabel": "$315K / $165K house / condo (Jan–Jun 2026)"
@@ -9173,7 +9173,7 @@
         "water": 5,
         "beach": 3,
         "dining": 3,
-        "outdoors": 4,
+        "outdoors": 5,
         "afford": 2,
         "airport": 2,
         "edu": 5
@@ -9206,10 +9206,10 @@
         "water": 25,
         "beach": 91,
         "dining": 60,
-        "outdoors": 36,
-        "afford": 133,
+        "outdoors": 5,
+        "afford": 145,
         "airport": 151,
-        "edu": 118
+        "edu": 67
       },
       "priceContext": "Redfin Marathon market: $979,534 all-home sale median (3 months ending September 2026; Redfin).",
       "recordedSaleLabel": "$980K all-home (3 months ending September 2026)"
@@ -9263,10 +9263,10 @@
         "water": 26,
         "beach": 69,
         "dining": 158,
-        "outdoors": 37,
-        "afford": 146,
+        "outdoors": 54,
+        "afford": 123,
         "airport": 144,
-        "edu": 119
+        "edu": 68
       },
       "priceContext": "Big Pine Key CDP: $794,500 house sale median (Jan–Jun 2026; 50 sales; Florida DOR county records).",
       "recordedSaleLabel": "$794K house (Jan–Jun 2026)"
@@ -9318,12 +9318,12 @@
         "quiet": 55,
         "walk": 33,
         "water": 59,
-        "beach": 4,
+        "beach": 25,
         "dining": 61,
-        "outdoors": 29,
-        "afford": 161,
+        "outdoors": 15,
+        "afford": 163,
         "airport": 15,
-        "edu": 45
+        "edu": 65
       },
       "priceContext": "Key Biscayne village: $3,910,000 house sale median (Jan–Jun 2026; 26 sales; Florida DOR county records).",
       "recordedSaleLabel": "$3.91M house (Jan–Jun 2026)"
@@ -9342,7 +9342,7 @@
         "quiet": 4,
         "walk": 4,
         "water": 5,
-        "beach": 5,
+        "beach": 4,
         "dining": 2,
         "outdoors": 4,
         "afford": 1,
@@ -9375,12 +9375,12 @@
         "quiet": 56,
         "walk": 36,
         "water": 27,
-        "beach": 33,
+        "beach": 40,
         "dining": 115,
-        "outdoors": 38,
-        "afford": 162,
+        "outdoors": 57,
+        "afford": 161,
         "airport": 145,
-        "edu": 80
+        "edu": 150
       },
       "priceContext": "Boca Grande ZIP 33921: $3,700,000 all-home sale median (3 months ending September 2026; Redfin).",
       "recordedSaleLabel": "$3.7M all-home (3 months ending September 2026)"
@@ -9432,12 +9432,12 @@
         "quiet": 151,
         "walk": 80,
         "water": 71,
-        "beach": 38,
+        "beach": 41,
         "dining": 62,
-        "outdoors": 101,
-        "afford": 70,
+        "outdoors": 94,
+        "afford": 82,
         "airport": 13,
-        "edu": 101
+        "edu": 76
       },
       "priceContext": "Pompano Beach city: $500,000 house sale median (Jan–Jun 2026; 416 sales; Florida DOR county records). Pompano Beach city: $258,000 condo sale median (Jan–Jun 2026; 557 sales; Florida DOR county records).",
       "recordedSaleLabel": "$500K / $258K house / condo (Jan–Jun 2026)"
@@ -9459,7 +9459,7 @@
         "beach": 4,
         "dining": 3,
         "outdoors": 3,
-        "afford": 4,
+        "afford": 3,
         "airport": 4,
         "edu": 5
       },
@@ -9489,12 +9489,12 @@
         "quiet": 111,
         "walk": 63,
         "water": 111,
-        "beach": 39,
+        "beach": 42,
         "dining": 63,
-        "outdoors": 102,
-        "afford": 55,
+        "outdoors": 88,
+        "afford": 68,
         "airport": 34,
-        "edu": 102
+        "edu": 77
       },
       "priceContext": "Deerfield Beach city: $455,000 house sale median (Jan 2025–Jun 2026; 891 sales; Florida DOR county records). Deerfield Beach city: $155,000 condo sale median (Jan 2025–Jun 2026; 1,193 sales; Florida DOR county records).",
       "recordedSaleLabel": "$455K / $155K house / condo (Jan 2025–Jun 2026)"

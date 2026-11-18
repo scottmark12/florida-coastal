@@ -2,3 +2,15 @@
 __pycache__/
 .vercel
 .env*
+
+# Made by the build (node tools/site/build.js) from src/. Never edit or commit these:
+# Vercel builds them on every push. Run the build to get them locally.
+/index.html
+/map.html
+/find-your-mile.html
+/quiz-results.html
+/compare.html
+/towns/*.html
+/assets/v3/
+/dist/
+tools/site/node_modules/

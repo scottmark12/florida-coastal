@@ -10,12 +10,13 @@
       "sophcalm",
       "beaches",
       "active",
-      "bluezone"
+      "remote",
+      "schools"
     ],
     "b": "Sugar white sand, rare coastal dune lakes and small beach towns strung along Scenic Highway 30A.",
     "img": "../img/c/30a.webp",
     "p": "$915K",
-    "m": 915.0
+    "m": 915
   },
   {
     "id": "destin",
@@ -26,12 +27,13 @@
     "lo": -86.5,
     "v": [
       "dock",
-      "beaches"
+      "beaches",
+      "active"
     ],
     "b": "A harbor town where the charter boats leave at dawn and the emerald water starts right off the Destin Harbor boardwalk.",
     "img": "../img/c/destin.webp",
     "p": "$540K",
-    "m": 540.0
+    "m": 540
   },
   {
     "id": "pcb",
@@ -41,14 +43,14 @@
     "la": 30.18,
     "lo": -85.8,
     "v": [
-      "sophhigh",
       "beaches",
-      "social"
+      "social",
+      "active"
     ],
     "b": "Wide white sand, live music near the pier after dark, and the jetties at St. Andrews State Park when you want it quiet.",
     "img": "../img/c/pcb.webp",
     "p": "$425K",
-    "m": 425.0
+    "m": 425
   },
   {
     "id": "apalachicola",
@@ -59,13 +61,14 @@
     "lo": -84.98,
     "v": [
       "oldfl",
-      "dock",
-      "walk"
+      "walk",
+      "bluezone",
+      "afford"
     ],
     "b": "Brick storefronts from the cotton and oyster days, shrimp boats on the river and St. George Island just across the bridge.",
     "img": "../img/c/apalachicola.webp",
     "p": "$300K to $385K",
-    "m": 300.0
+    "m": 300
   },
   {
     "id": "cedarkey",
@@ -77,13 +80,13 @@
     "v": [
       "island",
       "oldfl",
-      "dock",
-      "walk"
+      "walk",
+      "afford"
     ],
     "b": "A tiny island town of clam farms and backwater keys, where dinner happens on Dock Street as the sun goes down over the Gulf.",
     "img": "../img/c/spring-nature-coast.webp",
     "p": "$320K",
-    "m": 320.0
+    "m": 320
   },
   {
     "id": "dunedin",
@@ -95,12 +98,13 @@
     "v": [
       "walk",
       "remote",
-      "beaches"
+      "beaches",
+      "bluezone"
     ],
     "b": "A walkable downtown right on the Pinellas Trail, with the ferry to Caladesi Island's beach a short ride away.",
     "img": "../img/c/dunedin-honeymoon.webp",
     "p": "$450K",
-    "m": 450.0
+    "m": 450
   },
   {
     "id": "clearwaterbeach",
@@ -111,12 +115,14 @@
     "lo": -82.83,
     "v": [
       "beaches",
-      "walk"
+      "walk",
+      "social",
+      "remote"
     ],
     "b": "Soft white sand, a walkable beach strip and nightly sunset gatherings at Pier 60.",
     "img": "../img/c/clearwater-beach.webp",
     "p": "$650K to $800K",
-    "m": 650.0
+    "m": 650
   },
   {
     "id": "gulfport",
@@ -126,12 +132,15 @@
     "la": 27.75,
     "lo": -82.7,
     "v": [
-      "walk"
+      "walk",
+      "social",
+      "remote",
+      "bluezone"
     ],
     "b": "Galleries and cafes run down Beach Boulevard to the water, and the pace never picks up much.",
     "img": "../img/c/bay-mangroves.webp",
     "p": "$385K",
-    "m": 385.0
+    "m": 385
   },
   {
     "id": "ami",
@@ -144,12 +153,12 @@
       "sophcalm",
       "island",
       "beaches",
-      "bluezone"
+      "remote"
     ],
     "b": "Old Florida on a small island, with no high rises and a free trolley.",
     "img": "../img/c/anna-maria-island.webp",
     "p": "$1.3M to $1.65M",
-    "m": 1300.0
+    "m": 1300
   },
   {
     "id": "longboat",
@@ -161,12 +170,13 @@
     "v": [
       "sophcalm",
       "beaches",
-      "bluezone"
+      "dock",
+      "schools"
     ],
     "b": "A quiet barrier island with uncrowded beaches, and St. Armands Circle and Sarasota's theaters a short drive away.",
     "img": "../img/c/longboat-key.webp",
     "p": "$732K",
-    "m": 732.0
+    "m": 732
   },
   {
     "id": "captiva",
@@ -177,15 +187,12 @@
     "lo": -82.19,
     "v": [
       "sophcalm",
-      "dock",
-      "beaches",
-      "bluezone",
       "island"
     ],
     "b": "A lush little island next to Sanibel, with some of the best shelling in the country and banyan shaded bike rides to the sunset.",
     "img": "../img/c/captiva.webp",
     "p": "$560K",
-    "m": 560.0
+    "m": 560
   },
   {
     "id": "matlacha",
@@ -195,14 +202,14 @@
     "la": 26.63,
     "lo": -82.07,
     "v": [
-      "island",
       "oldfl",
+      "island",
       "dock"
     ],
     "b": "Brightly painted galleries, bait shops and a fishing bridge on Matlacha Pass, with mangroves to kayak on either side.",
     "img": "../img/c/matlacha.webp",
     "p": "$494K",
-    "m": 494.0
+    "m": 494
   },
   {
     "id": "naples",
@@ -213,14 +220,15 @@
     "lo": -81.79,
     "v": [
       "sophcalm",
-      "beaches",
+      "remote",
       "active",
-      "bluezone"
+      "dock",
+      "schools"
     ],
     "b": "Polished and peaceful, with golf, boating, a walkable downtown and calm Gulf beaches from the pier north to Vanderbilt Beach.",
     "img": "../img/c/naples-beach.webp",
     "p": "$685K",
-    "m": 685.0
+    "m": 685
   },
   {
     "id": "keywest",
@@ -232,7 +240,6 @@
     "v": [
       "sophhigh",
       "island",
-      "dock",
       "social",
       "walk",
       "remote"
@@ -240,7 +247,7 @@
     "b": "The end of the road, where you bike everywhere, spend the afternoon on the water and walk to Mallory Square for the sunset.",
     "img": "../img/c/key-west.webp",
     "p": "$1.05M",
-    "m": 1050.0
+    "m": 1050
   },
   {
     "id": "islamorada",
@@ -252,13 +259,13 @@
     "v": [
       "oldfl",
       "dock",
-      "active",
-      "island"
+      "island",
+      "sophcalm"
     ],
     "b": "The sport fishing capital of the Keys, with bonefish and tarpon on the backcountry flats and fish houses right on the water.",
     "img": "../img/c/keys-bridge.webp",
     "p": "$1.44M",
-    "m": 1440.0
+    "m": 1440
   },
   {
     "id": "southbeach",
@@ -269,16 +276,14 @@
     "lo": -80.13,
     "v": [
       "sophhigh",
-      "sophcalm",
       "social",
-      "active",
       "walk",
-      "remote"
+      "beaches"
     ],
     "b": "Art deco along Ocean Drive, a beachwalk for sunrise runs and dinners that start late.",
     "img": "../img/c/southbeach-street.webp",
     "p": "$524K",
-    "m": 524.0
+    "m": 524
   },
   {
     "id": "ftl",
@@ -290,15 +295,12 @@
     "v": [
       "sophhigh",
       "dock",
-      "social",
-      "active",
-      "remote",
-      "beaches"
+      "social"
     ],
     "b": "A boating city of canals and marinas, where the boat goes out in the afternoon and dinner ends up on Las Olas.",
     "img": "../img/c/fort-lauderdale-beach.webp",
     "p": "$605K",
-    "m": 605.0
+    "m": 605
   },
   {
     "id": "delray",
@@ -311,13 +313,12 @@
       "sophhigh",
       "walk",
       "remote",
-      "social",
-      "beaches"
+      "bluezone"
     ],
     "b": "Atlantic Avenue runs from downtown straight to the ocean, so breakfast, the beach and live music are all on one street.",
     "img": "../img/c/delray-beach.webp",
     "p": "$546K",
-    "m": 546.0
+    "m": 546
   },
   {
     "id": "jupiter",
@@ -327,16 +328,13 @@
     "la": 26.93,
     "lo": -80.09,
     "v": [
-      "sophcalm",
-      "dock",
       "active",
-      "bluezone",
-      "beaches"
+      "social"
     ],
     "b": "Clear inlet water to snorkel, the red Jupiter Inlet Lighthouse, and the Loxahatchee River to paddle in the morning.",
     "img": "../img/c/jupiter.webp",
     "p": "$720K",
-    "m": 720.0
+    "m": 720
   },
   {
     "id": "fortpierce",
@@ -347,12 +345,12 @@
     "lo": -80.33,
     "v": [
       "afford",
-      "dock"
+      "active"
     ],
     "b": "A working waterfront with fishing at the inlet, a big Saturday farmers market downtown and prices that stay down to earth.",
     "img": "../img/c/fort-pierce.webp",
     "p": "$278K",
-    "m": 278.0
+    "m": 278
   },
   {
     "id": "cocoa",
@@ -362,12 +360,14 @@
     "la": 28.32,
     "lo": -80.61,
     "v": [
-      "active"
+      "active",
+      "social",
+      "dock"
     ],
     "b": "A classic surf town with a pier to surf by in the morning and rocket launches to watch from the sand at night.",
     "img": "../img/c/cocoa-beach.webp",
     "p": "$450K",
-    "m": 450.0
+    "m": 450
   },
   {
     "id": "nsb",
@@ -378,12 +378,14 @@
     "lo": -80.93,
     "v": [
       "beaches",
-      "active"
+      "active",
+      "remote",
+      "bluezone"
     ],
     "b": "A surf town about an hour from Orlando, with Flagler Avenue's walkable beach strip for tacos when the waves go flat.",
     "img": "../img/c/new-smyrna-beach.webp",
     "p": "$450K",
-    "m": 450.0
+    "m": 450
   },
   {
     "id": "daytona",
@@ -393,12 +395,13 @@
     "la": 29.21,
     "lo": -81.02,
     "v": [
-      "afford"
+      "afford",
+      "social"
     ],
     "b": "Wide, hard packed beaches you can drive onto, and some of the most affordable coastal homes in Florida.",
     "img": "../img/c/daytona-beach.webp",
     "p": "$211K",
-    "m": 211.0
+    "m": 211
   },
   {
     "id": "flagler",
@@ -408,12 +411,14 @@
     "la": 29.47,
     "lo": -81.13,
     "v": [
-      "active"
+      "active",
+      "bluezone",
+      "schools"
     ],
     "b": "A small, unhurried town along A1A, with ocean view lunches and a longer pier due in early 2027.",
     "img": "../img/c/flagler-beach.webp",
     "p": "$450K",
-    "m": 450.0
+    "m": 450
   },
   {
     "id": "staug",
@@ -423,12 +428,16 @@
     "la": 29.89,
     "lo": -81.31,
     "v": [
-      "walk"
+      "walk",
+      "social",
+      "remote",
+      "bluezone",
+      "schools"
     ],
     "b": "The oldest city in the country, with the Castillo de San Marcos, brick streets for morning coffee and the beach a bridge away.",
     "img": "../img/c/st-augustine-aerial.webp",
     "p": "$422K",
-    "m": 422.0
+    "m": 422
   },
   {
     "id": "jaxbeach",
@@ -439,12 +448,14 @@
     "lo": -81.39,
     "v": [
       "social",
-      "active"
+      "active",
+      "remote",
+      "bluezone"
     ],
     "b": "A surf town built around its pier, with patios a block from the sand and Jacksonville right next door.",
     "img": "../img/c/jacksonville-beach.webp",
     "p": "$720K",
-    "m": 720.0
+    "m": 720
   },
   {
     "id": "fernandina",
@@ -454,12 +465,16 @@
     "la": 30.67,
     "lo": -81.46,
     "v": [
-      "walk"
+      "remote",
+      "sophcalm",
+      "bluezone",
+      "oldfl",
+      "schools"
     ],
     "b": "A walkable Victorian downtown on Centre Street, shrimp boats at the docks and uncrowded beaches near the Georgia line.",
     "img": "../img/c/fernandina-beach.webp",
     "p": "$581K",
-    "m": 581.0
+    "m": 581
   },
   {
     "id": "carrabelle",
@@ -475,7 +490,7 @@
     "b": "A small fishing town on the Forgotten Coast with a working harbor and a slow, friendly pace.",
     "img": "../img/c/carrabelle.webp",
     "p": "$260K",
-    "m": 260.0
+    "m": 260
   },
   {
     "id": "st-george-island",
@@ -486,12 +501,13 @@
     "lo": -84.863,
     "v": [
       "beaches",
-      "island"
+      "island",
+      "sophcalm"
     ],
     "b": "A barrier island with no high rises, a lighthouse at its center and nine miles of state park beach at the east end.",
     "img": "../img/c/st-george-island.webp",
     "p": "$1.25M",
-    "m": 1250.0
+    "m": 1250
   },
   {
     "id": "st-teresa",
@@ -500,10 +516,7 @@
     "c": "panhandle",
     "la": 29.931,
     "lo": -84.454,
-    "v": [
-      "oldfl",
-      "active"
-    ],
+    "v": [],
     "b": "A quiet line of beach houses on US 98 east of Carrabelle, beside the FSU Coastal and Marine Lab. There are no stores here, and that is the point.",
     "img": "../img/c/st-teresa.webp",
     "p": null,
@@ -517,10 +530,7 @@
     "la": 30.166,
     "lo": -84.208,
     "v": [
-      "oldfl",
-      "dock",
-      "afford",
-      "active"
+      "oldfl"
     ],
     "b": "A tiny river town where the road ends at the water, half an hour south of Tallahassee, with a Spanish fort site, a rail trail and a huge wildlife refuge next door.",
     "img": "../img/c/st-marks.webp",
@@ -535,13 +545,13 @@
     "la": 30.159,
     "lo": -85.66,
     "v": [
-      "dock",
-      "afford"
+      "afford",
+      "social"
     ],
     "b": "A bayfront city on St. Andrews Bay with a reviving downtown and the Gulf beaches a bridge away.",
     "img": "../img/c/panama-city.webp",
     "p": "$284K",
-    "m": 284.0
+    "m": 284
   },
   {
     "id": "pensacola",
@@ -552,13 +562,13 @@
     "lo": -87.217,
     "v": [
       "social",
-      "walk",
-      "afford"
+      "afford",
+      "sophhigh"
     ],
     "b": "Florida's westernmost city, with more than 450 years of history, a lively downtown and white sand beaches across the bay.",
     "img": "../img/c/pensacola.webp",
     "p": "$267K",
-    "m": 267.0
+    "m": 267
   },
   {
     "id": "pensacola-beach",
@@ -568,14 +578,13 @@
     "la": 30.334,
     "lo": -87.143,
     "v": [
-      "island",
       "active",
       "beaches"
     ],
     "b": "A barrier island town on Santa Rosa Island, with sugar white sand and miles of protected national seashore on both sides.",
     "img": "../img/c/pensacola-beach.webp",
     "p": "$738K",
-    "m": 738.0
+    "m": 738
   },
   {
     "id": "navarre-beach",
@@ -585,14 +594,13 @@
     "la": 30.379,
     "lo": -86.864,
     "v": [
-      "island",
-      "active",
-      "beaches"
+      "beaches",
+      "sophcalm"
     ],
     "b": "The quiet stretch of the Emerald Coast, with a long Gulf pier, a sea turtle center and miles of open dunes between Pensacola Beach and Destin.",
     "img": "../img/c/navarre-beach.webp",
     "p": "$765K",
-    "m": 765.0
+    "m": 765
   },
   {
     "id": "perdido-key",
@@ -602,13 +610,12 @@
     "la": 30.3,
     "lo": -87.414,
     "v": [
-      "island",
-      "active"
+      "beaches"
     ],
     "b": "A skinny barrier island on the Alabama line, with Gulf front condos, protected dunes on both ends and the Flora-Bama in the middle of it all.",
     "img": "../img/c/perdido-key.webp",
     "p": "$735K",
-    "m": 735.0
+    "m": 735
   },
   {
     "id": "gulf-breeze",
@@ -617,14 +624,11 @@
     "c": "panhandle",
     "la": 30.357,
     "lo": -87.163,
-    "v": [
-      "dock",
-      "sophcalm"
-    ],
+    "v": [],
     "b": "A leafy peninsula between downtown Pensacola and Pensacola Beach, with quiet tree lined streets and the water at the end of every one.",
     "img": "../img/c/gulf-breeze.webp",
     "p": "$479K",
-    "m": 479.0
+    "m": 479
   },
   {
     "id": "port-st-joe",
@@ -634,14 +638,14 @@
     "la": 29.812,
     "lo": -85.304,
     "v": [
-      "afford",
-      "oldfl",
-      "beaches"
+      "beaches",
+      "island",
+      "bluezone"
     ],
     "b": "A small town on St. Joseph Bay, known for calm clear water, bay sunsets and the beaches of Cape San Blas.",
     "img": "../img/c/port-st-joe.webp",
     "p": "$460K",
-    "m": 460.0
+    "m": 460
   },
   {
     "id": "crystal-river",
@@ -651,13 +655,12 @@
     "la": 28.9,
     "lo": -82.591,
     "v": [
-      "dock",
       "active"
     ],
     "b": "A spring fed town on Kings Bay where hundreds of manatees spend the winter.",
     "img": "../img/c/crystal-river.webp",
     "p": "$335K",
-    "m": 335.0
+    "m": 335
   },
   {
     "id": "homosassa",
@@ -667,12 +670,13 @@
     "la": 28.781,
     "lo": -82.615,
     "v": [
+      "oldfl",
       "dock"
     ],
     "b": "An Old Florida river town known for manatees, scalloping and waterfront spots you can pull up to by boat.",
     "img": "../img/c/homosassa.webp",
     "p": "$330K",
-    "m": 330.0
+    "m": 330
   },
   {
     "id": "ozello",
@@ -681,14 +685,11 @@
     "c": "gulf",
     "la": 28.864,
     "lo": -82.634,
-    "v": [
-      "oldfl",
-      "active"
-    ],
+    "v": [],
     "b": "A handful of homes on marsh islands at the end of a nine mile winding road. About as remote as the Gulf coast gets.",
     "img": "../img/c/ozello.webp",
     "p": "$231K",
-    "m": 231.0
+    "m": 231
   },
   {
     "id": "steinhatchee",
@@ -699,13 +700,12 @@
     "lo": -83.389,
     "v": [
       "afford",
-      "oldfl",
-      "dock"
+      "oldfl"
     ],
     "b": "A river fishing village on the Big Bend where summer means scallops and the nearest stoplight is a long way off.",
     "img": "../img/c/steinhatchee.webp",
     "p": "$279K",
-    "m": 279.0
+    "m": 279
   },
   {
     "id": "apollo-beach",
@@ -720,7 +720,7 @@
     "b": "A canal community on Tampa Bay where a lot of back yards have a boat lift.",
     "img": "../img/c/apollo-beach.webp",
     "p": "$525K",
-    "m": 525.0
+    "m": 525
   },
   {
     "id": "clearwater",
@@ -729,14 +729,11 @@
     "c": "gulf",
     "la": 27.966,
     "lo": -82.8,
-    "v": [
-      "dock",
-      "remote"
-    ],
+    "v": [],
     "b": "The mainland city behind Clearwater Beach, with a rebuilt downtown waterfront and the sand a bridge away.",
     "img": "../img/c/clearwater.webp",
     "p": "$360K",
-    "m": 360.0
+    "m": 360
   },
   {
     "id": "indian-rocks-beach",
@@ -746,12 +743,12 @@
     "la": 27.889,
     "lo": -82.848,
     "v": [
-      "active"
+      "sophcalm"
     ],
     "b": "A low key beach town of cottages and small condos, with public beach access at the end of nearly every street.",
     "img": "../img/c/indian-rocks-beach.webp",
     "p": "$575K",
-    "m": 575.0
+    "m": 575
   },
   {
     "id": "madeira-beach",
@@ -761,12 +758,13 @@
     "la": 27.799,
     "lo": -82.798,
     "v": [
-      "dock"
+      "dock",
+      "social"
     ],
     "b": "Locals call it Mad Beach: a casual Gulf town built around the fishing boats and boardwalk at John's Pass.",
     "img": "../img/c/madeira-beach.webp",
     "p": "$604K",
-    "m": 604.0
+    "m": 604
   },
   {
     "id": "new-port-richey",
@@ -776,13 +774,12 @@
     "la": 28.244,
     "lo": -82.719,
     "v": [
-      "afford",
-      "walk"
+      "afford"
     ],
     "b": "A small river town with a 1920s downtown that has been adding breweries, restaurants and a restored theater.",
     "img": "../img/c/new-port-richey.webp",
     "p": "$228K",
-    "m": 228.0
+    "m": 228
   },
   {
     "id": "ruskin",
@@ -797,7 +794,7 @@
     "b": "A fast growing bayside community on the Little Manatee River, with some of the lowest prices near Tampa Bay.",
     "img": "../img/c/ruskin.webp",
     "p": "$322K",
-    "m": 322.0
+    "m": 322
   },
   {
     "id": "safety-harbor",
@@ -812,7 +809,7 @@
     "b": "A small town on Old Tampa Bay with oak shaded streets, a historic spa and a Main Street full of local shops.",
     "img": "../img/c/safety-harbor.webp",
     "p": "$550K",
-    "m": 550.0
+    "m": 550
   },
   {
     "id": "st-pete-beach",
@@ -822,12 +819,15 @@
     "la": 27.725,
     "lo": -82.741,
     "v": [
-      "beaches"
+      "beaches",
+      "remote",
+      "sophcalm",
+      "island"
     ],
     "b": "A wide Gulf beach anchored by the pink Don CeSar hotel, with the old fishing village of Pass-a-Grille at its tip.",
     "img": "../img/c/st-pete-beach.webp",
     "p": "$577K",
-    "m": 577.0
+    "m": 577
   },
   {
     "id": "st-petersburg",
@@ -838,15 +838,14 @@
     "lo": -82.64,
     "v": [
       "sophhigh",
-      "dock",
-      "active",
       "walk",
-      "remote"
+      "social",
+      "dock"
     ],
     "b": "A sunny waterfront city with a walkable downtown, the Dalí Museum, murals on every block and Gulf beaches 20 minutes away.",
     "img": "../img/c/st-petersburg.webp",
     "p": "$495K",
-    "m": 495.0
+    "m": 495
   },
   {
     "id": "sun-city-center",
@@ -861,7 +860,7 @@
     "b": "A golf cart community inland from Tampa Bay with more than 100 clubs. Most homes here are age restricted to 55 and over.",
     "img": "../img/c/sun-city-center.webp",
     "p": "$250K",
-    "m": 250.0
+    "m": 250
   },
   {
     "id": "tampa",
@@ -872,12 +871,12 @@
     "lo": -82.457,
     "v": [
       "sophhigh",
-      "remote"
+      "social"
     ],
     "b": "The big city of the Gulf coast: a downtown riverwalk, historic Ybor City, pro sports and a major airport.",
     "img": "../img/c/tampa.webp",
     "p": "$479K",
-    "m": 479.0
+    "m": 479
   },
   {
     "id": "tarpon-springs",
@@ -888,13 +887,14 @@
     "lo": -82.757,
     "v": [
       "oldfl",
-      "dock",
-      "walk"
+      "walk",
+      "remote",
+      "bluezone"
     ],
     "b": "A working sponge port with Greek bakeries and restaurants along the docks and bayous winding through town.",
     "img": "../img/c/tarpon-springs.webp",
     "p": "$390K",
-    "m": 390.0
+    "m": 390
   },
   {
     "id": "treasure-island",
@@ -904,12 +904,15 @@
     "la": 27.77,
     "lo": -82.769,
     "v": [
-      "beaches"
+      "beaches",
+      "social",
+      "remote",
+      "island"
     ],
     "b": "One of the widest beaches on the Gulf, a mile long trail along the dunes and a Sunday drum circle at sunset.",
     "img": "../img/c/treasure-island.webp",
     "p": "$825K",
-    "m": 825.0
+    "m": 825
   },
   {
     "id": "bradenton",
@@ -919,13 +922,12 @@
     "la": 27.499,
     "lo": -82.575,
     "v": [
-      "afford",
-      "walk"
+      "afford"
     ],
     "b": "A river city with a long Riverwalk, spring training baseball and the Anna Maria Island beaches 20 minutes west.",
     "img": "../img/c/bradenton.webp",
     "p": "$470K",
-    "m": 470.0
+    "m": 470
   },
   {
     "id": "bradenton-beach",
@@ -936,12 +938,14 @@
     "lo": -82.699,
     "v": [
       "island",
-      "walk"
+      "remote",
+      "sophcalm",
+      "beaches"
     ],
     "b": "The south end of Anna Maria Island, with a historic fishing pier, a walkable Bridge Street and water on both sides.",
     "img": "../img/c/bradenton-beach.webp",
     "p": "$860K",
-    "m": 860.0
+    "m": 860
   },
   {
     "id": "cortez",
@@ -957,7 +961,7 @@
     "b": "One of the last working fishing villages in Florida, with fish houses on the bay that date back to the 1880s.",
     "img": "../img/c/cortez.webp",
     "p": "$490K",
-    "m": 490.0
+    "m": 490
   },
   {
     "id": "englewood",
@@ -968,12 +972,12 @@
     "lo": -82.353,
     "v": [
       "afford",
-      "dock"
+      "schools"
     ],
     "b": "A laid back Gulf town with a small old downtown and beaches on Manasota Key, known for shark teeth.",
     "img": "../img/c/englewood.webp",
     "p": "$339K",
-    "m": 339.0
+    "m": 339
   },
   {
     "id": "sarasota",
@@ -983,15 +987,16 @@
     "la": 27.336,
     "lo": -82.531,
     "v": [
-      "sophcalm",
-      "active",
       "remote",
-      "bluezone"
+      "social",
+      "sophhigh",
+      "beaches",
+      "schools"
     ],
     "b": "The arts capital of the Gulf coast, with an opera, a ballet, The Ringling museum, Lido Beach just over the bridge and Siesta Key's famous sand minutes away.",
     "img": "../img/c/sarasota.webp",
     "p": "$530K",
-    "m": 530.0
+    "m": 530
   },
   {
     "id": "siesta-key",
@@ -1001,12 +1006,16 @@
     "la": 27.266,
     "lo": -82.553,
     "v": [
-      "beaches"
+      "beaches",
+      "remote",
+      "island",
+      "bluezone",
+      "schools"
     ],
     "b": "An island of quartz white sand so fine it stays cool underfoot, with a small, lively village at the north end.",
     "img": "../img/c/siesta-key.webp",
     "p": "$1.1M",
-    "m": 1100.0
+    "m": 1100
   },
   {
     "id": "venice",
@@ -1016,12 +1025,16 @@
     "la": 27.097,
     "lo": -82.458,
     "v": [
-      "walk"
+      "walk",
+      "remote",
+      "active",
+      "beaches",
+      "schools"
     ],
     "b": "A 1920s planned town of palm lined avenues you can walk from downtown to the Gulf, with newer mainland neighborhoods and the Legacy Trail just over the bridge.",
     "img": "../img/c/venice.webp",
     "p": "$385K",
-    "m": 385.0
+    "m": 385
   },
   {
     "id": "bonita-springs",
@@ -1030,15 +1043,11 @@
     "c": "gulf",
     "la": 26.34,
     "lo": -81.779,
-    "v": [
-      "sophcalm",
-      "bluezone",
-      "beaches"
-    ],
+    "v": [],
     "b": "A city between Naples and Fort Myers with a small historic downtown, golf communities and a quiet Gulf beach on Little Hickory Island, next to Lovers Key.",
     "img": "../img/c/bonita-beach.webp",
     "p": "$476K",
-    "m": 476.0
+    "m": 476
   },
   {
     "id": "cape-coral",
@@ -1048,12 +1057,13 @@
     "la": 26.563,
     "lo": -81.95,
     "v": [
-      "dock"
+      "dock",
+      "afford"
     ],
     "b": "A city of more than 400 miles of canals, where a boat in the back yard is normal and waterfront is still within reach.",
     "img": "../img/c/canal-swfl.webp",
     "p": "$369K",
-    "m": 369.0
+    "m": 369
   },
   {
     "id": "chokoloskee",
@@ -1064,13 +1074,13 @@
     "lo": -81.361,
     "v": [
       "oldfl",
-      "dock",
-      "active"
+      "island",
+      "schools"
     ],
     "b": "A tiny shell mound island at the edge of Everglades National Park, the last stop before the Ten Thousand Islands.",
     "img": "../img/c/chokoloskee.webp",
     "p": "$310K",
-    "m": 310.0
+    "m": 310
   },
   {
     "id": "everglades-city",
@@ -1081,13 +1091,12 @@
     "lo": -81.385,
     "v": [
       "oldfl",
-      "dock",
-      "active"
+      "schools"
     ],
     "b": "A small fishing town on the Barron River at the edge of Everglades National Park, known for stone crab and as the way into the Ten Thousand Islands.",
     "img": "../img/c/everglades-city.webp",
     "p": "$250K",
-    "m": 250.0
+    "m": 250
   },
   {
     "id": "fort-myers",
@@ -1097,14 +1106,12 @@
     "la": 26.641,
     "lo": -81.872,
     "v": [
-      "social",
-      "walk",
-      "bluezone"
+      "social"
     ],
     "b": "The City of Palms, with a brick street River District downtown and the winter homes of Edison and Ford on the river.",
     "img": "../img/c/fort-myers.webp",
     "p": "$310K",
-    "m": 310.0
+    "m": 310
   },
   {
     "id": "fort-myers-beach",
@@ -1114,12 +1121,15 @@
     "la": 26.452,
     "lo": -81.95,
     "v": [
-      "island"
+      "island",
+      "remote",
+      "beaches",
+      "dock"
     ],
     "b": "Seven miles of soft sand on Estero Island, rebuilding after Hurricane Ian with its beach town spirit intact.",
     "img": "../img/c/fort-myers-beach.webp",
     "p": "$492K",
-    "m": 492.0
+    "m": 492
   },
   {
     "id": "marco-island",
@@ -1130,13 +1140,15 @@
     "lo": -81.719,
     "v": [
       "sophcalm",
+      "island",
+      "beaches",
       "dock",
-      "bluezone"
+      "schools"
     ],
     "b": "The largest of the Ten Thousand Islands, with a wide crescent beach on one side and wild mangrove country on the other.",
     "img": "../img/c/marco-island.webp",
     "p": "$1.01M",
-    "m": 1010.0
+    "m": 1010
   },
   {
     "id": "port-charlotte",
@@ -1146,12 +1158,13 @@
     "la": 26.976,
     "lo": -82.091,
     "v": [
-      "afford"
+      "afford",
+      "dock"
     ],
     "b": "A canal community on Charlotte Harbor with some of the most affordable waterfront homes in Southwest Florida.",
     "img": "../img/c/port-charlotte.webp",
     "p": "$290K",
-    "m": 290.0
+    "m": 290
   },
   {
     "id": "punta-gorda",
@@ -1161,12 +1174,14 @@
     "la": 26.93,
     "lo": -82.045,
     "v": [
-      "dock"
+      "dock",
+      "bluezone",
+      "walk"
     ],
     "b": "A small harbor town with brick streets, a waterfront Harborwalk and sailboat canals that lead to the Gulf.",
     "img": "../img/c/punta-gorda.webp",
     "p": "$333K",
-    "m": 333.0
+    "m": 333
   },
   {
     "id": "sanibel-island",
@@ -1176,16 +1191,15 @@
     "la": 26.449,
     "lo": -82.097,
     "v": [
-      "sophcalm",
       "active",
-      "walk",
-      "bluezone",
-      "beaches"
+      "beaches",
+      "remote",
+      "island"
     ],
     "b": "A barrier island famous for shells, with 25 miles of bike paths, no traffic lights and more than half the island preserved.",
     "img": "../img/c/sanibel-island.webp",
     "p": "$910K",
-    "m": 910.0
+    "m": 910
   },
   {
     "id": "key-largo",
@@ -1196,12 +1210,13 @@
     "lo": -80.447,
     "v": [
       "active",
-      "dock"
+      "dock",
+      "island"
     ],
     "b": "The first Key off the mainland and the dive capital of the country, with a coral reef state park offshore.",
     "img": "../img/c/key-largo.webp",
     "p": "$809K",
-    "m": 809.0
+    "m": 809
   },
   {
     "id": "bal-harbour",
@@ -1212,12 +1227,12 @@
     "lo": -80.126,
     "v": [
       "sophcalm",
-      "remote"
+      "walk"
     ],
     "b": "A tiny oceanfront village at the north tip of Miami Beach, known for a luxury shopping center and a quiet beach path.",
     "img": "../img/c/bal-harbour.webp",
     "p": "$1.55M",
-    "m": 1550.0
+    "m": 1550
   },
   {
     "id": "boca-raton",
@@ -1227,13 +1242,13 @@
     "la": 26.368,
     "lo": -80.129,
     "v": [
-      "sophcalm",
-      "remote"
+      "remote",
+      "social"
     ],
     "b": "A polished city of pink Mediterranean buildings, big parks and beaches kept natural behind a line of dunes.",
     "img": "../img/c/boca-raton.webp",
     "p": "$584K",
-    "m": 584.0
+    "m": 584
   },
   {
     "id": "dania-beach",
@@ -1242,13 +1257,11 @@
     "c": "atlantic",
     "la": 26.052,
     "lo": -80.144,
-    "v": [
-      "afford"
-    ],
+    "v": [],
     "b": "A small, unflashy beach city right next to the Fort Lauderdale airport, with a fishing pier and a quiet beach.",
     "img": "../img/c/dania-beach.webp",
     "p": "$370K",
-    "m": 370.0
+    "m": 370
   },
   {
     "id": "hallandale",
@@ -1258,12 +1271,12 @@
     "la": 25.981,
     "lo": -80.148,
     "v": [
-      "sophhigh"
+      "social"
     ],
     "b": "A city of oceanfront condo towers between Fort Lauderdale and Miami, home to Gulfstream Park.",
     "img": "../img/c/hallandale-beach.webp",
     "p": "$245K",
-    "m": 245.0
+    "m": 245
   },
   {
     "id": "highland-beach",
@@ -1272,13 +1285,11 @@
     "c": "atlantic",
     "la": 26.4,
     "lo": -80.066,
-    "v": [
-      "sophcalm"
-    ],
+    "v": [],
     "b": "A three mile strip of oceanfront condos and homes between Boca Raton and Delray Beach, with no shops and no crowds.",
     "img": "../img/c/highland-beach.webp",
     "p": "$1.0M",
-    "m": 1000.0
+    "m": 1000
   },
   {
     "id": "hollywood",
@@ -1288,14 +1299,13 @@
     "la": 26.011,
     "lo": -80.15,
     "v": [
-      "active",
       "walk",
-      "beaches"
+      "social"
     ],
     "b": "A beach city with a 2.5 mile oceanfront Broadwalk for walking and biking, plus a downtown full of murals.",
     "img": "../img/c/hollywood.webp",
     "p": "$478K",
-    "m": 478.0
+    "m": 478
   },
   {
     "id": "lauderdale-by-the-sea",
@@ -1305,13 +1315,14 @@
     "la": 26.192,
     "lo": -80.096,
     "v": [
-      "beaches",
-      "walk"
+      "walk",
+      "remote",
+      "sophcalm"
     ],
     "b": "A low rise beach village where a coral reef sits close enough to shore that you can snorkel it from the sand.",
     "img": "../img/c/lauderdale-by-the-sea.webp",
     "p": "$528K",
-    "m": 528.0
+    "m": 528
   },
   {
     "id": "lighthouse-point",
@@ -1326,7 +1337,7 @@
     "b": "A boating town of deep water canals near Hillsboro Inlet, where most streets end at the water.",
     "img": "../img/c/lighthouse-point.webp",
     "p": "$873K",
-    "m": 873.0
+    "m": 873
   },
   {
     "id": "north-miami-beach",
@@ -1335,13 +1346,11 @@
     "c": "atlantic",
     "la": 25.933,
     "lo": -80.162,
-    "v": [
-      "social"
-    ],
+    "v": [],
     "b": "A mainland city in north Miami-Dade with restaurants from all over the world and Oleta River State Park next door.",
     "img": "../img/c/north-miami-beach.webp",
     "p": "$475K",
-    "m": 475.0
+    "m": 475
   },
   {
     "id": "north-palm-beach",
@@ -1356,7 +1365,7 @@
     "b": "A village wrapped in water, between the Intracoastal and Lake Worth, with a state park beach across the bridge.",
     "img": "../img/c/north-palm-beach.webp",
     "p": "$628K",
-    "m": 628.0
+    "m": 628
   },
   {
     "id": "palm-beach",
@@ -1367,12 +1376,13 @@
     "lo": -80.036,
     "v": [
       "sophcalm",
+      "remote",
       "walk"
     ],
     "b": "A barrier island of clipped hedges, grand estates and Worth Avenue, with a bike trail along the lake.",
     "img": "../img/c/palm-beach.webp",
     "p": "$1.85M",
-    "m": 1850.0
+    "m": 1850
   },
   {
     "id": "palm-beach-gardens",
@@ -1381,14 +1391,11 @@
     "c": "atlantic",
     "la": 26.823,
     "lo": -80.139,
-    "v": [
-      "sophcalm",
-      "active"
-    ],
+    "v": [],
     "b": "A green, golf centered city a few miles inland, home to PGA National and a lot of shopping and dining.",
     "img": "../img/c/palm-beach-gardens.webp",
     "p": "$810K",
-    "m": 810.0
+    "m": 810
   },
   {
     "id": "riviera-beach",
@@ -1397,13 +1404,11 @@
     "c": "atlantic",
     "la": 26.775,
     "lo": -80.058,
-    "v": [
-      "dock"
-    ],
+    "v": [],
     "b": "A working port city with a big public marina, Peanut Island offshore and the beaches of Singer Island across the bridge.",
     "img": "../img/c/riviera-beach.webp",
     "p": "$398K",
-    "m": 398.0
+    "m": 398
   },
   {
     "id": "sunny-isles-beach",
@@ -1418,7 +1423,7 @@
     "b": "A two mile line of luxury condo towers on the ocean between Miami Beach and Fort Lauderdale.",
     "img": "../img/c/sunny-isles-beach.webp",
     "p": "$2.06M",
-    "m": 2060.0
+    "m": 2060
   },
   {
     "id": "west-palm-beach",
@@ -1428,12 +1433,14 @@
     "la": 26.715,
     "lo": -80.053,
     "v": [
-      "walk"
+      "walk",
+      "social",
+      "sophhigh"
     ],
     "b": "The downtown of Palm Beach County, with Clematis Street, a waterfront, the Norton Museum of Art and a Brightline train station.",
     "img": "../img/c/west-palm-beach.webp",
     "p": "$404K",
-    "m": 404.0
+    "m": 404
   },
   {
     "id": "wilton-manors",
@@ -1443,12 +1450,15 @@
     "la": 26.16,
     "lo": -80.139,
     "v": [
-      "walk"
+      "walk",
+      "social",
+      "remote",
+      "sophhigh"
     ],
     "b": "A small island city ringed by the Middle River, built around the restaurants, bars and shops of Wilton Drive.",
     "img": "../img/c/wilton-manors.webp",
     "p": "$693K",
-    "m": 693.0
+    "m": 693
   },
   {
     "id": "jensen-beach",
@@ -1458,12 +1468,14 @@
     "la": 27.255,
     "lo": -80.231,
     "v": [
-      "dock"
+      "social",
+      "active",
+      "bluezone"
     ],
     "b": "A small, colorful river town with a Caribbean streak and uncrowded Hutchinson Island beaches across the causeway.",
     "img": "../img/c/jensen-beach.webp",
     "p": "$475K",
-    "m": 475.0
+    "m": 475
   },
   {
     "id": "port-st-lucie",
@@ -1472,13 +1484,11 @@
     "c": "atlantic",
     "la": 27.294,
     "lo": -80.35,
-    "v": [
-      "afford"
-    ],
+    "v": [],
     "b": "One of the fastest growing cities in Florida: newer homes, golf, Mets spring training and beaches 20 minutes east.",
     "img": "../img/c/port-st-lucie.webp",
     "p": "$395K",
-    "m": 395.0
+    "m": 395
   },
   {
     "id": "sebastian",
@@ -1490,12 +1500,13 @@
     "v": [
       "afford",
       "oldfl",
-      "dock"
+      "active",
+      "schools"
     ],
     "b": "A riverfront fishing town on the Indian River Lagoon, near the country's first wildlife refuge and a famous surf inlet.",
     "img": "../img/c/sebastian.webp",
     "p": "$399K",
-    "m": 399.0
+    "m": 399
   },
   {
     "id": "stuart",
@@ -1505,12 +1516,14 @@
     "la": 27.197,
     "lo": -80.253,
     "v": [
-      "dock"
+      "remote",
+      "bluezone",
+      "active"
     ],
     "b": "The Sailfish Capital of the World, with a small historic downtown and a riverwalk on the St. Lucie River.",
     "img": "../img/c/stuart.webp",
     "p": "$580K",
-    "m": 580.0
+    "m": 580
   },
   {
     "id": "vero-beach",
@@ -1520,12 +1533,15 @@
     "la": 27.639,
     "lo": -80.397,
     "v": [
-      "sophcalm"
+      "remote",
+      "bluezone",
+      "active",
+      "schools"
     ],
     "b": "A quietly polished town with strict height limits, an oceanside village of shops and a serious arts scene.",
     "img": "../img/c/vero-beach.webp",
     "p": "$377K",
-    "m": 377.0
+    "m": 377
   },
   {
     "id": "indialantic",
@@ -1535,12 +1551,13 @@
     "la": 28.09,
     "lo": -80.565,
     "v": [
-      "active"
+      "sophcalm",
+      "bluezone"
     ],
     "b": "A small oceanside town with a boardwalk, a couple of surf shops and rocket launches you can watch from the sand.",
     "img": "../img/c/indialantic.webp",
     "p": "$763K",
-    "m": 763.0
+    "m": 763
   },
   {
     "id": "melbourne-beach",
@@ -1555,7 +1572,7 @@
     "b": "One of the oldest beach towns on the Space Coast, a few quiet streets between the ocean and the Indian River.",
     "img": "../img/c/melbourne-beach.webp",
     "p": "$560K",
-    "m": 560.0
+    "m": 560
   },
   {
     "id": "palm-bay",
@@ -1570,7 +1587,7 @@
     "b": "The biggest city on the Space Coast, with lots of land, newer homes and some of the lowest prices near the beach.",
     "img": "../img/c/palm-bay.webp",
     "p": "$330K",
-    "m": 330.0
+    "m": 330
   },
   {
     "id": "satellite-beach",
@@ -1579,13 +1596,11 @@
     "c": "atlantic",
     "la": 28.176,
     "lo": -80.59,
-    "v": [
-      "active"
-    ],
+    "v": [],
     "b": "A residential beach town between the ocean and the Banana River, with surf breaks, parks and front row launch views.",
     "img": "../img/c/satellite-beach.webp",
     "p": "$516K",
-    "m": 516.0
+    "m": 516
   },
   {
     "id": "titusville",
@@ -1595,12 +1610,13 @@
     "la": 28.612,
     "lo": -80.808,
     "v": [
-      "afford"
+      "afford",
+      "active"
     ],
     "b": "The town across the river from the launch pads, with the best rocket views anywhere and a huge wildlife refuge next door.",
     "img": "../img/c/titusville.webp",
     "p": "$292K",
-    "m": 292.0
+    "m": 292
   },
   {
     "id": "west-melbourne",
@@ -1609,13 +1625,11 @@
     "c": "atlantic",
     "la": 28.072,
     "lo": -80.654,
-    "v": [
-      "afford"
-    ],
+    "v": [],
     "b": "A fast growing inland city with newer neighborhoods and big box shopping, 20 minutes from the beach.",
     "img": "../img/c/west-melbourne.webp",
     "p": "$380K",
-    "m": 380.0
+    "m": 380
   },
   {
     "id": "atlantic-beach",
@@ -1625,12 +1639,15 @@
     "la": 30.334,
     "lo": -81.398,
     "v": [
-      "active"
+      "active",
+      "social",
+      "remote",
+      "walk"
     ],
     "b": "A leafy beach town with a walkable town center it shares with Neptune Beach, and the trails of Hanna Park to the north.",
     "img": "../img/c/atlantic-beach.webp",
     "p": "$640K",
-    "m": 640.0
+    "m": 640
   },
   {
     "id": "neptune-beach",
@@ -1640,13 +1657,15 @@
     "la": 30.314,
     "lo": -81.398,
     "v": [
-      "active",
+      "remote",
+      "sophcalm",
+      "bluezone",
       "walk"
     ],
     "b": "A small beach town that shares Beaches Town Center, with its restaurants and bookstore a block from the sand.",
     "img": "../img/c/neptune-beach.webp",
     "p": "$790K",
-    "m": 790.0
+    "m": 790
   },
   {
     "id": "ponte-vedra-beach",
@@ -1658,12 +1677,12 @@
     "v": [
       "sophcalm",
       "active",
-      "bluezone"
+      "schools"
     ],
     "b": "A golf town on the ocean, home to TPC Sawgrass and The Players Championship, with tall dunes and a huge coastal preserve.",
     "img": "../img/c/ponte-vedra-beach.webp",
     "p": "$1.43M",
-    "m": 1430.0
+    "m": 1430
   },
   {
     "id": "st-augustine-beach",
@@ -1674,13 +1693,14 @@
     "lo": -81.27,
     "v": [
       "active",
-      "bluezone",
-      "beaches"
+      "remote",
+      "sophcalm",
+      "schools"
     ],
     "b": "A relaxed beach town on Anastasia Island, ten minutes from the oldest city in the country.",
     "img": "../img/c/atlantic-aerial.webp",
     "p": "$621K",
-    "m": 621.0
+    "m": 621
   },
   {
     "id": "daytona-beach-shores",
@@ -1689,13 +1709,11 @@
     "c": "atlantic",
     "la": 29.176,
     "lo": -80.978,
-    "v": [
-      "afford"
-    ],
+    "v": [],
     "b": "A quiet strip of oceanfront condos just south of Daytona Beach, with the river a block behind you.",
     "img": "../img/c/daytona-beach-shores.webp",
     "p": "$380K",
-    "m": 380.0
+    "m": 380
   },
   {
     "id": "ormond-beach",
@@ -1704,14 +1722,11 @@
     "c": "atlantic",
     "la": 29.286,
     "lo": -81.056,
-    "v": [
-      "active",
-      "afford"
-    ],
+    "v": [],
     "b": "Daytona's quieter neighbor to the north, with oak canopy roads, a small downtown and the same hard packed beach.",
     "img": "../img/c/ormond-beach.webp",
     "p": "$383K",
-    "m": 383.0
+    "m": 383
   },
   {
     "id": "palm-coast",
@@ -1722,12 +1737,13 @@
     "lo": -81.208,
     "v": [
       "active",
-      "afford"
+      "afford",
+      "schools"
     ],
     "b": "A planned city of saltwater canals and more than 130 miles of trails, between St. Augustine and Daytona.",
     "img": "../img/c/palm-coast.webp",
     "p": "$356K",
-    "m": 356.0
+    "m": 356
   },
   {
     "id": "port-orange",
@@ -1737,13 +1753,12 @@
     "la": 29.138,
     "lo": -81.006,
     "v": [
-      "afford",
-      "dock"
+      "afford"
     ],
     "b": "A suburb on the Halifax River just south of Daytona, with parks, a riverfront and the beach over the bridge.",
     "img": "../img/c/port-orange.webp",
     "p": "$355K",
-    "m": 355.0
+    "m": 355
   },
   {
     "id": "navarre",
@@ -1752,14 +1767,11 @@
     "c": "panhandle",
     "la": 30.4,
     "lo": -86.864,
-    "v": [
-      "dock",
-      "active"
-    ],
+    "v": [],
     "b": "The mainland side of Navarre, a growing stretch of neighborhoods along Santa Rosa Sound with Navarre Beach a short causeway drive away.",
     "img": "../img/c/navarre.webp",
     "p": "$415K",
-    "m": 415.0
+    "m": 415
   },
   {
     "id": "mary-esther",
@@ -1769,13 +1781,12 @@
     "la": 30.411,
     "lo": -86.666,
     "v": [
-      "afford",
-      "dock"
+      "afford"
     ],
     "b": "A small, settled city on Santa Rosa Sound between Fort Walton Beach and Hurlburt Field, with sound front streets and some of the most approachable prices in the area.",
     "img": "../img/c/generic/white-dunes.webp",
     "p": "$325K",
-    "m": 325.0,
+    "m": 325,
     "g": 1
   },
   {
@@ -1792,7 +1803,7 @@
     "b": "An unpretentious waterfront city on Santa Rosa Sound with a walkable old downtown, a calendar full of local events and Okaloosa Island's beaches just over the bridge.",
     "img": "../img/c/fort-walton-beach.webp",
     "p": "$358K",
-    "m": 358.0
+    "m": 358
   },
   {
     "id": "shalimar",
@@ -1801,14 +1812,11 @@
     "c": "panhandle",
     "la": 30.433,
     "lo": -86.575,
-    "v": [
-      "dock",
-      "sophcalm"
-    ],
+    "v": [],
     "b": "A tiny, leafy town on Choctawhatchee Bay and its bayous, just north of Fort Walton Beach, with shady streets, docks and a waterfront golf course.",
     "img": "../img/c/generic/canal-dock.webp",
     "p": "$449K",
-    "m": 449.0,
+    "m": 449,
     "g": 1
   },
   {
@@ -1818,15 +1826,11 @@
     "c": "panhandle",
     "la": 30.519,
     "lo": -86.488,
-    "v": [
-      "dock",
-      "sophcalm",
-      "active"
-    ],
+    "v": [],
     "b": "A bayside town on Choctawhatchee Bay where boats tie up on the bayous and the Gulf beaches are a short drive away.",
     "img": "../img/c/niceville.webp",
     "p": "$520K",
-    "m": 520.0
+    "m": 520
   },
   {
     "id": "miramar-beach",
@@ -1836,13 +1840,14 @@
     "la": 30.378,
     "lo": -86.388,
     "v": [
-      "social",
-      "sophhigh"
+      "bluezone",
+      "beaches",
+      "schools"
     ],
     "b": "The stretch of Gulf front between Destin and 30A, with sugar white beaches, Sandestin's shops and a lot going on all year.",
     "img": "../img/c/miramar-beach.webp",
     "p": "$735K",
-    "m": 735.0
+    "m": 735
   },
   {
     "id": "freeport",
@@ -1853,12 +1858,12 @@
     "lo": -86.138,
     "v": [
       "afford",
-      "active"
+      "schools"
     ],
     "b": "A fast growing inland town on the bay side of Walton County, where newer neighborhoods sit a short drive from the 30A beaches.",
     "img": "../img/c/generic/harbor-boats.webp",
     "p": "$385K",
-    "m": 385.0,
+    "m": 385,
     "g": 1
   },
   {
@@ -1868,14 +1873,11 @@
     "c": "panhandle",
     "la": 29.952,
     "lo": -85.424,
-    "v": [
-      "remote",
-      "dock"
-    ],
+    "v": [],
     "b": "A small, quiet Gulf town on the Forgotten Coast that was nearly wiped out by Hurricane Michael and has steadily rebuilt around its wide, uncrowded beach.",
     "img": "../img/c/mexico-beach.webp",
     "p": "$497K",
-    "m": 497.0
+    "m": 497
   },
   {
     "id": "keaton-beach",
@@ -1885,9 +1887,7 @@
     "la": 29.819,
     "lo": -83.594,
     "v": [
-      "oldfl",
-      "dock",
-      "remote"
+      "oldfl"
     ],
     "b": "A small canal and fishing community on the Taylor County coast, where the boat ramp and the flats matter more than anything on land.",
     "img": "../img/c/keaton-beach.webp",
@@ -1902,14 +1902,12 @@
     "la": 29.44,
     "lo": -83.293,
     "v": [
-      "oldfl",
-      "dock",
-      "remote"
+      "oldfl"
     ],
     "b": "A tiny fishing town at the end of the road in Dixie County, built around canals, a little Main Street and open Gulf flats.",
     "img": "../img/c/generic/gulf-calm.webp",
     "p": "$216K",
-    "m": 216.0,
+    "m": 216,
     "g": 1
   },
   {
@@ -1920,14 +1918,12 @@
     "la": 29.327,
     "lo": -83.144,
     "v": [
-      "dock",
-      "remote",
       "oldfl"
     ],
     "b": "A canal town at the mouth of the Suwannee River, wrapped in a national wildlife refuge, where nearly every street ends at a dock.",
     "img": "../img/c/generic/canal-dock.webp",
     "p": "$261K",
-    "m": 261.0,
+    "m": 261,
     "g": 1
   },
   {
@@ -1938,14 +1934,12 @@
     "la": 29.03,
     "lo": -82.716,
     "v": [
-      "oldfl",
-      "dock",
       "afford"
     ],
     "b": "An old river town on the Withlacoochee a few miles from the Gulf, with live oaks, fish camps and a big nature preserve at the end of the road.",
     "img": "../img/c/yankeetown.webp",
     "p": "$192K",
-    "m": 192.0
+    "m": 192
   },
   {
     "id": "inglis",
@@ -1955,14 +1949,12 @@
     "la": 29.025,
     "lo": -82.669,
     "v": [
-      "remote",
-      "afford",
-      "active"
+      "afford"
     ],
     "b": "A small river town where the Withlacoochee, Lake Rousseau and the old barge canal meet, a few miles in from the Gulf.",
     "img": "../img/c/generic/dock-sunset.webp",
     "p": "$237K",
-    "m": 237.0,
+    "m": 237,
     "g": 1
   },
   {
@@ -1978,7 +1970,7 @@
     "b": "A canal community on the Hernando County coast where most homes have a dock and a short run to the shallow Gulf flats.",
     "img": "../img/c/hernando-beach.webp",
     "p": "$542K",
-    "m": 542.0
+    "m": 542
   },
   {
     "id": "weeki-wachee",
@@ -1987,14 +1979,11 @@
     "c": "gulf",
     "la": 28.517,
     "lo": -82.575,
-    "v": [
-      "active",
-      "afford"
-    ],
+    "v": [],
     "b": "A spring fed river corridor on the Nature Coast, best known for its mermaid shows and a clear blue river that runs a few miles to the Gulf.",
     "img": "../img/c/weeki-wachee.webp",
     "p": "$375K",
-    "m": 375.0
+    "m": 375
   },
   {
     "id": "aripeka",
@@ -2003,15 +1992,11 @@
     "c": "gulf",
     "la": 28.433,
     "lo": -82.667,
-    "v": [
-      "oldfl",
-      "remote",
-      "dock"
-    ],
+    "v": [],
     "b": "A tiny old fishing village on Hammock Creek, straddling the Pasco and Hernando line, with stilt homes, marsh views and no stoplights.",
     "img": "../img/c/generic/harbor-boats.webp",
     "p": "$251K",
-    "m": 251.0,
+    "m": 251,
     "g": 1
   },
   {
@@ -2022,13 +2007,12 @@
     "la": 28.362,
     "lo": -82.711,
     "v": [
-      "afford",
-      "dock"
+      "afford"
     ],
     "b": "A laid back Pasco County coast town with canal homes, a small beach strip of bars and seafood spots, and Tampa within an hour.",
     "img": "../img/c/hudson.webp",
     "p": "$274K",
-    "m": 274.0
+    "m": 274
   },
   {
     "id": "port-richey",
@@ -2038,13 +2022,12 @@
     "la": 28.275,
     "lo": -82.725,
     "v": [
-      "dock",
       "afford"
     ],
     "b": "A small, unfussy river town where the Pithlachascotee meets the Gulf, built around canals, docks and fishing boats.",
     "img": "../img/c/port-richey.webp",
     "p": "$236K",
-    "m": 236.0
+    "m": 236
   },
   {
     "id": "holiday",
@@ -2054,13 +2037,12 @@
     "la": 28.175,
     "lo": -82.787,
     "v": [
-      "afford",
-      "dock"
+      "afford"
     ],
     "b": "A modest, affordable stretch of Pasco coast where canal neighborhoods run out to the Anclote River and the Gulf.",
     "img": "../img/c/holiday.webp",
     "p": "$220K",
-    "m": 220.0
+    "m": 220
   },
   {
     "id": "palm-harbor",
@@ -2069,15 +2051,11 @@
     "c": "gulf",
     "la": 28.079,
     "lo": -82.771,
-    "v": [
-      "active",
-      "sophcalm",
-      "social"
-    ],
+    "v": [],
     "b": "A leafy, established town in north Pinellas with an old downtown on the Pinellas Trail and quiet waterfront villages on St. Joseph Sound.",
     "img": "../img/c/generic/dock-umbrella.webp",
     "p": "$485K",
-    "m": 485.0,
+    "m": 485,
     "g": 1
   },
   {
@@ -2087,14 +2065,11 @@
     "c": "gulf",
     "la": 28.032,
     "lo": -82.669,
-    "v": [
-      "afford",
-      "active"
-    ],
+    "v": [],
     "b": "A small, tidy city at the top of Old Tampa Bay, with bayfront parks and the fastest airport run in Pinellas.",
     "img": "../img/c/generic/dock-sunset.webp",
     "p": "$399K",
-    "m": 399.0,
+    "m": 399,
     "g": 1
   },
   {
@@ -2104,13 +2079,11 @@
     "c": "gulf",
     "la": 27.916,
     "lo": -82.841,
-    "v": [
-      "sophcalm"
-    ],
+    "v": [],
     "b": "A small, residential barrier island town on Sand Key, with the Gulf on one side and docks on the Intracoastal on the other.",
     "img": "../img/c/generic/atlantic-aerial.webp",
     "p": "$825K",
-    "m": 825.0,
+    "m": 825,
     "g": 1
   },
   {
@@ -2122,12 +2095,14 @@
     "lo": -82.719,
     "v": [
       "dock",
-      "beaches"
+      "beaches",
+      "sophcalm",
+      "island"
     ],
     "b": "A cluster of canal islands at the mouth of Tampa Bay, between St. Pete Beach and Fort De Soto, made for people who live on their boats.",
     "img": "../img/c/tierra-verde.webp",
     "p": "$640K",
-    "m": 640.0
+    "m": 640
   },
   {
     "id": "indian-shores",
@@ -2142,7 +2117,7 @@
     "b": "A narrow strip of Gulf front condos and beach cottages in the middle of the Pinellas barrier islands, with the Intracoastal on one side and the Gulf a short walk away on the other.",
     "img": "../img/c/generic/beach-chairs.webp",
     "p": "$575K",
-    "m": 575.0,
+    "m": 575,
     "g": 1
   },
   {
@@ -2153,12 +2128,12 @@
     "la": 27.834,
     "lo": -82.835,
     "v": [
-      "dock"
+      "sophcalm"
     ],
     "b": "A small barrier island town with a big public beach park, bay side canal streets full of boat lifts, and a hometown calendar of picnics and holiday parades.",
     "img": "../img/c/redington-shores.webp",
     "p": "$650K",
-    "m": 650.0
+    "m": 650
   },
   {
     "id": "gibsonton",
@@ -2168,13 +2143,12 @@
     "la": 27.861,
     "lo": -82.386,
     "v": [
-      "dock",
       "afford"
     ],
     "b": "An old river town on the Alafia where carnival and circus families once wintered, now a growing and affordable South Shore suburb with water close by.",
     "img": "../img/c/generic/harbor-boats.webp",
     "p": "$320K",
-    "m": 320.0,
+    "m": 320,
     "g": 1
   },
   {
@@ -2192,7 +2166,7 @@
     "b": "The mainland city on Biscayne Bay, from the towers of Brickell and Edgewater to the shady streets of Coconut Grove and the murals of Wynwood.",
     "img": "../img/c/miami.webp",
     "p": "$588K",
-    "m": 588.0
+    "m": 588
   },
   {
     "id": "jacksonville",
@@ -2203,13 +2177,12 @@
     "lo": -81.66,
     "v": [
       "afford",
-      "dock",
       "social"
     ],
     "b": "A big, spread out river city where old oak lined neighborhoods like Riverside, Avondale and San Marco sit right on the St. Johns.",
     "img": "../img/c/jacksonville.webp",
     "p": "$285K",
-    "m": 285.0
+    "m": 285
   },
   {
     "id": "indian-river-shores",
@@ -2219,12 +2192,13 @@
     "la": 27.712,
     "lo": -80.378,
     "v": [
-      "sophcalm"
+      "bluezone",
+      "schools"
     ],
     "b": "A quiet barrier island town north of Vero Beach, with low rise oceanfront living, big private clubs and the lagoon on the other side.",
     "img": "../img/c/generic/beach-houses.webp",
     "p": "$1.42M",
-    "m": 1420.0,
+    "m": 1420,
     "g": 1
   },
   {
@@ -2235,13 +2209,13 @@
     "la": 27.256,
     "lo": -80.197,
     "v": [
-      "island",
-      "beaches"
+      "beaches",
+      "island"
     ],
     "b": "The long barrier island off Stuart, Jensen Beach and Fort Pierce, with free beach parking, low rise condos and miles of quiet sand.",
     "img": "../img/c/hutchinson-island.webp",
     "p": "$400K to $490K",
-    "m": 400.0
+    "m": 400
   },
   {
     "id": "sewalls-point",
@@ -2251,13 +2225,12 @@
     "la": 27.199,
     "lo": -80.202,
     "v": [
-      "sophcalm",
-      "dock"
+      "sophcalm"
     ],
     "b": "A small, leafy peninsula town between the St. Lucie and Indian rivers, with deep water lots, quiet streets and the beach one bridge away.",
     "img": "../img/c/generic/canal-dock.webp",
     "p": "$2.2M",
-    "m": 2200.0,
+    "m": 2200,
     "g": 1
   },
   {
@@ -2268,13 +2241,12 @@
     "la": 27.18,
     "lo": -80.274,
     "v": [
-      "dock",
-      "active"
+      "dock"
     ],
     "b": "A green, spread out community across the St. Lucie River from Stuart, with canal homes, golf, big sports parks and easy highway access.",
     "img": "../img/c/generic/dock-sunset.webp",
     "p": "$597K",
-    "m": 597.0,
+    "m": 597,
     "g": 1
   },
   {
@@ -2285,12 +2257,12 @@
     "la": 27.15,
     "lo": -80.195,
     "v": [
-      "dock"
+      "social"
     ],
     "b": "An old fishing village on the Manatee Pocket near the St. Lucie Inlet, with working docks, an artists' district and a waterfront boardwalk.",
     "img": "../img/c/generic/harbor-boats.webp",
     "p": "$392K",
-    "m": 392.0,
+    "m": 392,
     "g": 1
   },
   {
@@ -2300,13 +2272,11 @@
     "c": "atlantic",
     "la": 27.062,
     "lo": -80.129,
-    "v": [
-      "active"
-    ],
+    "v": [],
     "b": "A low key village between Stuart and Jupiter, surrounded by a big state park, a wildlife refuge and some of the prettiest beaches on the coast.",
     "img": "../img/c/hobe-sound.webp",
     "p": "$515K",
-    "m": 515.0
+    "m": 515
   },
   {
     "id": "tequesta",
@@ -2315,15 +2285,11 @@
     "c": "atlantic",
     "la": 26.96,
     "lo": -80.096,
-    "v": [
-      "dock",
-      "active",
-      "sophcalm"
-    ],
+    "v": [],
     "b": "A small riverfront village at the top of Palm Beach County, where the Loxahatchee River meets the Intracoastal and the beach is a short bridge away.",
     "img": "../img/c/generic/pier-sunrise.webp",
     "p": "$640K",
-    "m": 640.0,
+    "m": 640,
     "g": 1
   },
   {
@@ -2334,13 +2300,12 @@
     "la": 26.893,
     "lo": -80.056,
     "v": [
-      "active",
-      "sophcalm"
+      "beaches"
     ],
     "b": "A small, low key oceanfront town known for its long fishing pier, wide sandy beach and the sea turtles that nest there every summer.",
     "img": "../img/c/juno-beach.webp",
     "p": "$800K",
-    "m": 800.0
+    "m": 800
   },
   {
     "id": "lake-park",
@@ -2349,14 +2314,11 @@
     "c": "atlantic",
     "la": 26.798,
     "lo": -80.053,
-    "v": [
-      "dock",
-      "afford"
-    ],
+    "v": [],
     "b": "A compact, older town on the Intracoastal with a busy public marina, a small downtown on Park Avenue and the inlet just to the south.",
     "img": "../img/c/generic/bay-dock.webp",
     "p": "$480K",
-    "m": 480.0,
+    "m": 480,
     "g": 1
   },
   {
@@ -2367,14 +2329,13 @@
     "la": 26.778,
     "lo": -80.036,
     "v": [
-      "island",
-      "dock",
+      "sophcalm",
       "walk"
     ],
     "b": "An eleven block town at the south tip of Singer Island, wrapped by the ocean, the Palm Beach Inlet and the Intracoastal, with a 1950s beach town feel.",
     "img": "../img/c/palm-beach-shores.webp",
     "p": "$1.18M",
-    "m": 1180.0
+    "m": 1180
   },
   {
     "id": "lake-worth-beach",
@@ -2386,12 +2347,12 @@
     "v": [
       "social",
       "walk",
-      "afford"
+      "remote"
     ],
     "b": "An artsy little city with a lively downtown of bungalows and storefronts, a bridge over the lagoon to a classic public beach and pier.",
     "img": "../img/c/lake-worth-beach.webp",
     "p": "$445K",
-    "m": 445.0
+    "m": 445
   },
   {
     "id": "lantana",
@@ -2400,14 +2361,11 @@
     "c": "atlantic",
     "la": 26.584,
     "lo": -80.049,
-    "v": [
-      "dock",
-      "afford"
-    ],
+    "v": [],
     "b": "A small, old Florida town on the Intracoastal with a little public beach across the bridge and the state's oldest waterfront restaurant.",
     "img": "../img/c/lantana.webp",
     "p": "$423K",
-    "m": 423.0
+    "m": 423
   },
   {
     "id": "boynton-beach",
@@ -2417,14 +2375,12 @@
     "la": 26.527,
     "lo": -80.056,
     "v": [
-      "dock",
-      "active",
-      "afford"
+      "dock"
     ],
     "b": "A big, easygoing city with a busy harbor marina at the inlet, a growing downtown on Ocean Avenue and wetlands to the west.",
     "img": "../img/c/boynton-beach.webp",
     "p": "$400K",
-    "m": 400.0
+    "m": 400
   },
   {
     "id": "vilano-beach",
@@ -2434,12 +2390,15 @@
     "la": 29.917,
     "lo": -81.299,
     "v": [
-      "dock"
+      "sophcalm",
+      "active",
+      "bluezone",
+      "schools"
     ],
     "b": "A small beach community on the north side of the St. Augustine Inlet, with a retro little main street, a fishing pier on the river and downtown St. Augustine just over the bridge.",
     "img": "../img/c/vilano-beach.webp",
     "p": "$790K",
-    "m": 790.0
+    "m": 790
   },
   {
     "id": "crescent-beach",
@@ -2449,12 +2408,13 @@
     "la": 29.769,
     "lo": -81.253,
     "v": [
-      "active"
+      "beaches",
+      "schools"
     ],
     "b": "A quiet strip of beach houses and condos south of St. Augustine Beach, between the ocean and the Matanzas River, with one of the widest, calmest beaches on the First Coast.",
     "img": "../img/c/generic/white-dunes.webp",
     "p": "$440K",
-    "m": 440.0,
+    "m": 440,
     "g": 1
   },
   {
@@ -2465,12 +2425,12 @@
     "la": 29.515,
     "lo": -81.145,
     "v": [
-      "island"
+      "schools"
     ],
     "b": "One of Florida's tiniest towns, a few blocks wide between the ocean and the Intracoastal just north of Flagler Beach, with an RV resort, beach cottages and homes on canals.",
     "img": "../img/c/generic/boardwalk.webp",
     "p": "$975K",
-    "m": 975.0,
+    "m": 975,
     "g": 1
   },
   {
@@ -2481,13 +2441,12 @@
     "la": 29.331,
     "lo": -81.058,
     "v": [
-      "afford",
-      "active"
+      "afford"
     ],
     "b": "A quiet beach community on the barrier island north of Ormond Beach, with small streets of beach cottages between the ocean and the Halifax River and miles of state parks just to the north.",
     "img": "../img/c/ormond-by-the-sea.webp",
     "p": "$343K",
-    "m": 343.0
+    "m": 343
   },
   {
     "id": "ponce-inlet",
@@ -2497,13 +2456,14 @@
     "la": 29.081,
     "lo": -80.928,
     "v": [
-      "dock",
-      "sophcalm"
+      "active",
+      "beaches",
+      "oldfl"
     ],
     "b": "A small town at the southern tip of the Daytona peninsula, built around a tall red lighthouse, a working fishing harbor and a wide beach that wraps around the inlet.",
     "img": "../img/c/ponce-inlet.webp",
     "p": "$521K",
-    "m": 521.0
+    "m": 521
   },
   {
     "id": "edgewater",
@@ -2513,13 +2473,12 @@
     "la": 28.993,
     "lo": -80.904,
     "v": [
-      "afford",
-      "dock"
+      "afford"
     ],
     "b": "A riverfront city on the Indian River Lagoon just south of New Smyrna Beach, with mangrove paddling trails, a long river walk and more house for the money than the beach towns.",
     "img": "../img/c/generic/dock-umbrella.webp",
     "p": "$259K",
-    "m": 259.0,
+    "m": 259,
     "g": 1
   },
   {
@@ -2530,12 +2489,13 @@
     "la": 28.407,
     "lo": -80.594,
     "v": [
-      "dock"
+      "active",
+      "bluezone"
     ],
     "b": "A small, low key beach city at the north end of the barrier island, between the cruise port and Cocoa Beach, with a quiet beach and launch views from the jetty.",
     "img": "../img/c/cape-canaveral.webp",
     "p": "$288K",
-    "m": 288.0
+    "m": 288
   },
   {
     "id": "merritt-island",
@@ -2545,13 +2505,12 @@
     "la": 28.361,
     "lo": -80.677,
     "v": [
-      "dock",
-      "sophcalm"
+      "dock"
     ],
     "b": "A big, leafy island between the Indian and Banana Rivers, full of canal homes and boat docks, with the space center and a huge wildlife refuge at its north end.",
     "img": "../img/c/generic/beach-house.webp",
     "p": "$460K",
-    "m": 460.0,
+    "m": 460,
     "g": 1
   },
   {
@@ -2568,7 +2527,7 @@
     "b": "The old brick downtown of Cocoa on the Indian River, with shady streets, pubs, a historic playhouse and a riverfront park that hosts concerts.",
     "img": "../img/c/cocoa-village.webp",
     "p": "$290K",
-    "m": 290.0
+    "m": 290
   },
   {
     "id": "rockledge",
@@ -2578,12 +2537,12 @@
     "la": 28.326,
     "lo": -80.712,
     "v": [
-      "sophcalm"
+      "afford"
     ],
     "b": "A quiet river city just south of Cocoa, known for the oak shaded historic homes along Rockledge Drive and newer neighborhoods toward Viera.",
     "img": "../img/c/rockledge.webp",
     "p": "$397K",
-    "m": 397.0
+    "m": 397
   },
   {
     "id": "indian-harbour-beach",
@@ -2592,14 +2551,11 @@
     "c": "atlantic",
     "la": 28.144,
     "lo": -80.596,
-    "v": [
-      "sophcalm",
-      "dock"
-    ],
+    "v": [],
     "b": "A small, settled beach town between Satellite Beach and Indialantic, with ocean access on one side, Banana River canals on the other and a big park in the middle.",
     "img": "../img/c/indian-harbour-beach.webp",
     "p": "$454K",
-    "m": 454.0
+    "m": 454
   },
   {
     "id": "melbourne",
@@ -2610,13 +2566,12 @@
     "lo": -80.6,
     "v": [
       "social",
-      "walk",
       "afford"
     ],
     "b": "The Space Coast's main mainland city on the Indian River, with two walkable old downtowns, an arts district, its own airport and the beach 15 minutes away.",
     "img": "../img/c/melbourne.webp",
     "p": "$350K",
-    "m": 350.0
+    "m": 350
   },
   {
     "id": "marathon",
@@ -2633,7 +2588,7 @@
     "b": "The Middle Keys hub at the start of the Seven Mile Bridge, with Sombrero Beach, busy marinas and a hospital in town.",
     "img": "../img/c/marathon.webp",
     "p": "$715K",
-    "m": 715.0
+    "m": 715
   },
   {
     "id": "big-pine-key",
@@ -2643,14 +2598,12 @@
     "la": 24.67,
     "lo": -81.36,
     "v": [
-      "island",
-      "active",
-      "oldfl"
+      "island"
     ],
     "b": "The quiet center of the Lower Keys, home to the National Key Deer Refuge and about five minutes from Bahia Honda State Park.",
     "img": "../img/c/big-pine-key.webp",
     "p": "$740K",
-    "m": 740.0
+    "m": 740
   },
   {
     "id": "key-biscayne",
@@ -2661,12 +2614,14 @@
     "lo": -80.163,
     "v": [
       "sophcalm",
-      "beaches"
+      "beaches",
+      "island",
+      "active"
     ],
     "b": "An island village across the Rickenbacker Causeway from Miami, with Crandon Park and the Cape Florida Lighthouse at Bill Baggs State Park.",
     "img": "../img/c/key-biscayne.webp",
     "p": "$1.49M",
-    "m": 1490.0
+    "m": 1490
   },
   {
     "id": "boca-grande",
@@ -2676,15 +2631,14 @@
     "la": 26.75,
     "lo": -82.263,
     "v": [
-      "oldfl",
       "sophcalm",
       "dock",
-      "island"
+      "walk"
     ],
     "b": "An old Florida village on Gasparilla Island, reached by a toll causeway, where golf carts get you around and tarpon fishing is the big draw.",
     "img": "../img/c/boca-grande.webp",
     "p": "$2.4M",
-    "m": 2400.0
+    "m": 2400
   },
   {
     "id": "pompano-beach",
@@ -2694,13 +2648,12 @@
     "la": 26.234,
     "lo": -80.093,
     "v": [
-      "beaches",
-      "afford"
+      "dock"
     ],
     "b": "A Broward beach city with wide sand, a rebuilt pier and the Fishing Village on the beachfront, just south of the Hillsboro Inlet.",
     "img": "../img/c/pompano-beach.webp",
     "p": "$395K",
-    "m": 395.0
+    "m": 395
   },
   {
     "id": "deerfield-beach",
@@ -2709,13 +2662,10 @@
     "c": "atlantic",
     "la": 26.317,
     "lo": -80.075,
-    "v": [
-      "beaches",
-      "afford"
-    ],
+    "v": [],
     "b": "The north end of Broward, with a fishing pier, a beach walk and lifeguarded sand.",
     "img": "../img/c/deerfield-beach.webp",
     "p": "$330K",
-    "m": 330.0
+    "m": 330
   }
 ]

@@ -19,28 +19,28 @@ def core_scenarios():
     S = []
     def add(name, url, steps=None, full=False, vps=('d', 'p')):
         S.append(dict(name=name, url=url, steps=steps or [], full=full, vps=vps))
-    add('home', 'home-v2.html', full=True)
-    add('map-regions', 'vibe.html')
-    add('map-region-sw', 'vibe.html?mode=regions&region=southwest')
-    add('map-vibes', 'vibe.html?mode=vibes', steps=[('run', 1300)])
-    add('map-vibes-rot', 'vibe.html?mode=vibes', steps=[('run', 6000)])
-    add('map-style', 'vibe.html?mode=vibes&style=oldfl')
-    add('map-town', 'vibe.html?mode=vibes&style=dock&open=apalachicola')
-    add('map-sliders', 'vibe.html?mode=sliders')
-    add('map-sliders-set', 'vibe.html?mode=sliders', steps=[('js', "(()=>{const r=[...document.querySelectorAll('#sl input[type=range]')];[2,4,6].forEach(i=>{const x=r[i];x.value=x.max;x.dispatchEvent(new Event('input',{bubbles:true}))})})()"), ('run', 2500)])
-    add('map-list', 'vibe.html?mode=vibes&style=beaches&view=list')
-    add('quiz', 'quiz-photo.html')
-    add('quiz-step3', 'quiz-photo.html', steps=[('js', 'qPick(1)'), ('run', 600), ('js', 'qPick(2)'), ('run', 600), ('js', 'qPick(0)'), ('run', 800)])
+    add('home', 'index.html', full=True)
+    add('map-regions', 'map.html')
+    add('map-region-sw', 'map.html?mode=regions&region=southwest')
+    add('map-vibes', 'map.html?mode=vibes', steps=[('run', 1300)])
+    add('map-vibes-rot', 'map.html?mode=vibes', steps=[('run', 6000)])
+    add('map-style', 'map.html?mode=vibes&style=oldfl')
+    add('map-town', 'map.html?mode=vibes&style=dock&open=apalachicola')
+    add('map-sliders', 'map.html?mode=sliders')
+    add('map-sliders-set', 'map.html?mode=sliders', steps=[('js', "(()=>{const r=[...document.querySelectorAll('#sl input[type=range]')];[2,4,6].forEach(i=>{const x=r[i];x.value=x.max;x.dispatchEvent(new Event('input',{bubbles:true}))})})()"), ('run', 2500)])
+    add('map-list', 'map.html?mode=vibes&style=beaches&view=list')
+    add('quiz', 'find-your-mile.html')
+    add('quiz-step3', 'find-your-mile.html', steps=[('js', 'qPick(1)'), ('run', 600), ('js', 'qPick(2)'), ('run', 600), ('js', 'qPick(0)'), ('run', 800)])
     add('results', 'quiz-results.html?t=naples.92,destin.88,stuart.85,sarasota.84,vero-beach.80', full=True)
     add('compare', 'compare.html?t=destin,sarasota,naples', full=True)
-    add('beach-towns', 'towns/index-v2.html', full=True)
-    add('beach-towns-q', 'towns/index-v2.html?q=key', full=True)
+    add('beach-towns', 'towns/index.html', full=True)
+    add('beach-towns-q', 'towns/index.html?q=key', full=True)
     return S
 
 def town_scenarios():
     S = []
-    for f in sorted(glob.glob(os.path.join(ROOT, 'towns', '*.html'))):
-        n = os.path.basename(f)[:-8]
+    for f in sorted(glob.glob(os.path.join(ROOT, 'src', 'towns', '*.html'))):
+        n = os.path.basename(f)[:-5]
         S.append(dict(name='town-' + n, url='towns/' + os.path.basename(f), steps=[], full=True, vps=('d', 'p')))
     return S
 

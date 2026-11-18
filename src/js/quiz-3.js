@@ -1,3 +1,4 @@
+// photos as written: full screen quiz backgrounds use the full photo
 (function(){
 /* Nov 12: quiz photos picked for the Adirondack layout (sharp landscape photo on top, blurred copy below); third value = horizontal focus */
 const PH=[['img/c/st-augustine-aerial.webp','St. Augustine','50%'],['img/c/quiz-evening.webp','','50%'],['img/c/quiz-boat.webp','Ponce Inlet','50%'],['img/c/sanibel-island.webp','Sanibel Island','50%'],['img/c/quiz-community.webp','St. Petersburg','50%'],['img/c/quiz-fly.webp','','50%'],['img/c/naples-home.webp','Naples','55%'],['img/c/30a-home.webp','30A','50%'],['img/c/stuart.webp','']];

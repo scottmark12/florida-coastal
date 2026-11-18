@@ -1,3 +1,4 @@
+// photos as written: the Ask a local photo use the full photo
 const TW=D.towns,MAX=3;
 const $=id=>document.getElementById(id),esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;');
 let ids=(()=>{const p=new URLSearchParams(location.search).get('t');let t=p?p.split(',').filter(i=>TW[i]):null;if(t&&t.length===1)t=t.concat(TW[t[0]].sim.filter(x=>TW[x]).slice(0,2));

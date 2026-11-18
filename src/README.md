@@ -1,31 +1,42 @@
-# Redesign site source
+# Site source
 
-This folder is the source for the redesign pages (the ones that replace the live site at launch):
+This folder is the source for the tool pages and the town pages. The build turns it into the served
+pages; Vercel runs the build on every push, and the built files are not in git.
 
 | Page | Source | Served file |
 |---|---|---|
-| Home | `pages/home-v2.html` | `home-v2.html` |
-| Map (Regions, Vibe Map, Slider Map) | `pages/vibe-v3.html` | `vibe-v3.html` |
-| Quiz | `pages/quiz-photo.html` | `quiz-photo.html` |
-| Quiz results | `pages/quiz-results-v3.html` | `quiz-results-v3.html` |
-| Compare | `pages/compare-v3.html` | `compare-v3.html` |
-| Beach Towns | `pages/towns/index-v2.html` | `towns/index-v2.html` |
-| 167 town pages | `templates/town.html` + `towns/<id>-v3.html` | `towns/<id>-v3.html` |
+| Home | `pages/index.html` | `index.html` |
+| Map (Regions, Vibe Map, Slider Map) | `pages/map.html` | `map.html` |
+| Quiz | `pages/find-your-mile.html` | `find-your-mile.html` |
+| Quiz results | `pages/quiz-results.html` | `quiz-results.html` |
+| Compare | `pages/compare.html` | `compare.html` |
+| Beach Towns | `pages/towns/index.html` | `towns/index.html` |
+| 167 town pages | `templates/town.html` + `towns/<id>.html` | `towns/<id>.html` |
 
-**Edit the files here, then build.** The served pages and everything in `/assets/v3/` are generated;
-changes made to them directly are overwritten by the next build.
+**Edit the files here, then build.** Never edit a served page or anything in `/assets/v3/`.
 
 ```
 cd tools/site && npm install      # once
-npm run site                      # builds every page (about 40 seconds)
+npm run site                      # builds every page into the repo for local testing
 cd ../.. && python3 tools/visual_check.py snap after && python3 tools/visual_check.py diff before after
 ```
+
+Nov 18 2026: this folder had fallen weeks behind the live site (edits went straight into the served
+files after launch). It was brought back in line from the live files and checked page by page: the
+built pages match what was live, and the screenshots match pixel for pixel apart from photo
+compression. Since then the served files are build output only.
 
 ## What's where
 
 - `pages/` Page HTML. Placeholders like `{{css:map-1}}`, `{{js:map-1}}`, `{{data:...}}` and
-  `{{asset:/assets/fc-connect.js}}` become real file paths at build time. Small scripts stay in
-  the page between `{{inline-js}}` markers and are minified.
+  `{{asset:...}}` become real file paths at build time. `{{static:/assets/fc-ga.js}}` (also
+  fc-connect.js, fc-page.css) points at a content hashed copy of that file, and
+  `{{static:/img/map/fl-compass-noband.js}}` at the map outline in `/assets/v3/data/`.
+  `{{include:/assets/fc-ga.js}}` pastes a file in. Small scripts stay in the page between
+  `{{inline-js}}` markers and styles between `{{inline-css}}` markers; both are minified.
+- `pages/index.html` (the homepage) keeps all its styles and scripts inline for speed, one block per
+  original patch, in order. It starts with `<!-- photos as written -->`, so the build leaves its
+  hand picked photo sizes alone.
 - `css/` Page stylesheets, one per run of styles in the original page, in the original order.
   Each block keeps a `/* #id */` comment naming the `<style id>` it came from, so dated patches
   are still easy to find. `town.css` is shared by all 167 town pages.
@@ -37,9 +48,11 @@ cd ../.. && python3 tools/visual_check.py snap after && python3 tools/visual_che
   that declares the same global the page always used (`T`, `LD`, `D`, ...).
 - `templates/town.html` The shared shell of every town page: head, header, footer, mini map and
   contact form scripts. `{{town:...}}` slots are filled from each town's file.
-- `towns/<id>-v3.html` One per town: a JSON line with what the mini map and form need (id, name,
+- `towns/<id>.html` One per town: a JSON line with what the mini map and form need (id, name,
   nearby towns), the town's SEO block, then its page content.
-- `manifest.json` Written by extract: which data files and shared files the pages use.
+- `manifest.json` Which data files the pages use. Shared files come from the `{{asset:...}}` markers.
+- `js/quiz-3.js` and `js/compare-1.js` start with `// photos as written` (full photos for the quiz
+  backgrounds and the Ask a local photo). Data files keep their photo addresses as written too.
 
 ## How the build makes the site fast
 
@@ -53,11 +66,10 @@ cd ../.. && python3 tools/visual_check.py snap after && python3 tools/visual_che
   minified into one versioned folder `/assets/v3/s-<hash>/`. `fc-menu.js` and `fc-search.js`
   stay at `/assets/` because they locate the site, and each other, from their own address.
 
-## Starting over from pages with inline code
+## Old tools
 
-`node tools/site/extract.js --from <git ref>` reads the redesign pages as they were at that commit
-(with their styles, code and data inline) and rewrites this folder from them. Use it to fold in
-changes someone made directly to the served pages, then build and run the visual check.
+`tools/site/extract.js` made this folder from the pre-launch pages with inline code. It can't read
+built pages and is kept for the record only.
 
 ## Shared files outside src (Nov 12 2026)
 - `assets/fc-header.css`: the desktop header style every redesign page shares (logo size, left edge, quiz button). Listed in `manifest.json`, so the build versions it.

@@ -1,4 +1,7 @@
 {
+  "installCommand": "npm ci --prefix tools/site",
+  "buildCommand": "node tools/site/build.js --dist dist",
+  "outputDirectory": "dist",
   "redirects": [
     {
       "source": "/find-your-mile",

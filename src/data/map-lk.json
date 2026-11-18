@@ -259,10 +259,12 @@
   "walk": "Walkable",
   "remote": "Remote Work",
   "beaches": "Best Beaches",
+  "schools": "Best Schools",
   "afford": "Affordable"
  },
  "VFEEL": [
   "beaches",
+  "schools",
   "oldfl",
   "bluezone",
   "island",
@@ -287,7 +289,8 @@
   "remote": "remote-work",
   "beaches": "top-rated-beaches",
   "sophhigh": "upscale-city-energy",
-  "walk": "walkability"
+  "walk": "walkability",
+  "schools": "top-rated-schools"
  },
  "NBUD": [
   [
@@ -331,6 +334,7 @@
   "walk": "Daily life on foot",
   "remote": "Pretty towns near an airport, without the city",
   "beaches": "Nationally ranked sand",
+  "schools": "Top rated public school districts",
   "afford": "More house for the money"
  }
 }

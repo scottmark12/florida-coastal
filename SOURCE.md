@@ -2,9 +2,9 @@
 
 **This repo is the source of truth for floridacoastal.co.** Vercel deploys whatever is on `main`.
 
-> **Redesign pages are built from `src/`** (home-v2, vibe-v3, quiz-photo, quiz-results-v3, compare-v3,
-> towns/index-v2 and the 167 towns/<id>-v3 pages). See `src/README.md` and `CLAUDE.md`. Everything
-> below is about the current live site.
+> **The tool pages and the 167 town pages are built from `src/` by Vercel on every push and are not in
+> git.** Read `CLAUDE.md` first. This file covers the pages still edited in place: articles, area
+> pages, About, Scoring, Privacy and the other static pages, and the old app bundle they no longer load.
 
 The site was first generated from a single file, `site.html`, by `build.js`. That file is retired as of Oct 29, 2026. Every change since Oct 21 was made here directly, so `site.html` is weeks behind. **Never rebuild the site from `site.html` or any old `build.js` / `build_site.js`.** It would wipe out the live design, copy, photos, email capture and town page changes.
 
