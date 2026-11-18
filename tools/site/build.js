@@ -21,7 +21,11 @@ const OUTARG = arg('--out') || DIST;
 // Never served: sources, tools and work files (keep in step with .vercelignore).
 const PRIVATE = new Set(['.git', '.github', 'node_modules', 'src', 'tools', 'drafts', 'tests', 'supabase', 'dist', 'SOURCE.md', 'CLAUDE.md', '.vercel', '.vercelignore', '.gitignore']);
 function copyPublic(to) {
-  fs.cpSync(ROOT, to, { recursive: true, filter: f => { const rel = path.relative(ROOT, f); if (!rel) return true; const top = rel.split(path.sep)[0]; return !PRIVATE.has(top) && !/^mail\/(fc-send\.ts\.txt|render\.js)$/.test(rel.split(path.sep).join('/')) && !rel.endsWith('.DS_Store'); } });
+  fs.mkdirSync(to, { recursive: true });
+  for (const top of fs.readdirSync(ROOT)) {
+    if (PRIVATE.has(top)) continue;
+    fs.cpSync(path.join(ROOT, top), path.join(to, top), { recursive: true, filter: f => { const rel = path.relative(ROOT, f).split(path.sep).join('/'); return !/^mail\/(fc-send\.ts\.txt|render\.js)$/.test(rel) && !rel.endsWith('.DS_Store'); } });
+  }
 }
 const DEST = OUTARG || fs.mkdtempSync(path.join(require('os').tmpdir(), 'fc-build-'));
 const OUT = path.join(DEST, 'assets', 'v3');
