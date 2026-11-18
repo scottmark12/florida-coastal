@@ -33,14 +33,14 @@
         "Limited year round jobs"
       ],
       "sim": [
+        "st-augustine-beach",
+        "venice",
+        "nsb",
         "naples",
-        "ami",
-        "sanibel-island",
-        "pensacola-beach",
-        "gulf-breeze",
-        "vilano-beach",
+        "vero-beach",
         "bradenton-beach",
-        "marco-island"
+        "neptune-beach",
+        "atlantic-beach"
       ],
       "img": "img/c/30a.webp",
       "rk": {
@@ -90,14 +90,14 @@
         "Busy traffic on 98"
       ],
       "sim": [
-        "fort-walton-beach",
-        "pcb",
         "jupiter",
-        "st-pete-beach",
-        "miramar-beach",
+        "fort-myers-beach",
+        "cocoa",
         "pensacola-beach",
-        "siesta-key",
-        "ami"
+        "marco-island",
+        "pcb",
+        "marathon",
+        "pompano-beach"
       ],
       "img": "img/c/destin.webp",
       "rk": {
@@ -146,13 +146,14 @@
         "Very busy in season"
       ],
       "sim": [
-        "destin",
-        "fort-walton-beach",
-        "st-pete-beach",
+        "daytona",
+        "jaxbeach",
+        "sarasota",
+        "nsb",
         "miramar-beach",
-        "ftl",
-        "clearwaterbeach",
-        "jaxbeach"
+        "atlantic-beach",
+        "cocoa",
+        "destin"
       ],
       "img": "img/c/pcb.webp",
       "rk": {
@@ -203,13 +204,13 @@
       ],
       "sim": [
         "cedarkey",
-        "port-st-joe",
-        "mexico-beach",
-        "carrabelle",
-        "horseshoe-beach",
-        "crystal-river",
-        "beverly-beach",
-        "gulf-breeze"
+        "tarpon-springs",
+        "sebastian",
+        "steinhatchee",
+        "homosassa",
+        "flagler",
+        "yankeetown",
+        "boca-grande"
       ],
       "img": "img/c/apalachicola.webp",
       "rk": {
@@ -260,13 +261,13 @@
       ],
       "sim": [
         "apalachicola",
-        "crystal-river",
-        "horseshoe-beach",
-        "port-st-joe",
-        "mexico-beach",
-        "yankeetown",
+        "carrabelle",
+        "steinhatchee",
         "matlacha",
-        "everglades-city"
+        "homosassa",
+        "everglades-city",
+        "horseshoe-beach",
+        "chokoloskee"
       ],
       "img": "img/c/spring-nature-coast.webp",
       "rk": {
@@ -315,14 +316,14 @@
         "Busy winter season"
       ],
       "sim": [
-        "gulfport",
+        "nsb",
         "tarpon-springs",
-        "sarasota",
-        "stuart",
         "lake-worth-beach",
-        "venice",
-        "jaxbeach",
-        "st-petersburg"
+        "neptune-beach",
+        "gulfport",
+        "staug",
+        "fernandina",
+        "delray"
       ],
       "img": "img/c/dunedin-honeymoon.webp",
       "rk": {
@@ -371,14 +372,14 @@
         "Tourist heavy"
       ],
       "sim": [
+        "boca-raton",
+        "sarasota",
+        "hollywood",
         "st-pete-beach",
-        "fort-myers-beach",
-        "siesta-key",
-        "nsb",
-        "jaxbeach",
-        "madeira-beach",
         "treasure-island",
-        "hollywood"
+        "jaxbeach",
+        "southbeach",
+        "lake-worth-beach"
       ],
       "img": "img/c/clearwater-beach.webp",
       "rk": {
@@ -426,14 +427,14 @@
         "Low lying and flood prone"
       ],
       "sim": [
-        "dunedin",
         "tarpon-springs",
-        "fort-myers",
-        "safety-harbor",
-        "st-petersburg",
-        "clearwater",
         "lake-worth-beach",
-        "bradenton"
+        "dunedin",
+        "cocoa-village",
+        "staug",
+        "safety-harbor",
+        "palm-beach",
+        "stuart"
       ],
       "img": "img/c/bay-mangroves.webp",
       "rk": {
@@ -484,13 +485,13 @@
       ],
       "sim": [
         "siesta-key",
-        "bradenton-beach",
-        "st-pete-beach",
-        "bonita-springs",
-        "marco-island",
+        "fort-myers-beach",
         "sanibel-island",
-        "redington-shores",
-        "fort-myers-beach"
+        "treasure-island",
+        "key-biscayne",
+        "fernandina",
+        "venice",
+        "30a"
       ],
       "img": "img/c/anna-maria-island.webp",
       "rk": {
@@ -540,14 +541,14 @@
         "Barrier island exposure"
       ],
       "sim": [
-        "captiva",
-        "marco-island",
-        "sanibel-island",
-        "indian-shores",
-        "navarre-beach",
-        "belleair-beach",
         "tierra-verde",
-        "ami"
+        "navarre-beach",
+        "highland-beach",
+        "juno-beach",
+        "indian-river-shores",
+        "hutchinson-island",
+        "marco-island",
+        "crescent-beach"
       ],
       "img": "img/c/longboat-key.webp",
       "rk": {
@@ -596,14 +597,14 @@
         "Very limited inventory"
       ],
       "sim": [
-        "longboat",
-        "marco-island",
-        "sanibel-island",
-        "navarre-beach",
-        "belleair-beach",
+        "sewalls-point",
+        "boca-grande",
+        "big-pine-key",
         "tierra-verde",
-        "melbourne-beach",
-        "indian-river-shores"
+        "islamorada",
+        "beverly-beach",
+        "st-george-island",
+        "crescent-beach"
       ],
       "img": "img/c/captiva.webp",
       "rk": {
@@ -651,14 +652,14 @@
         "Storm exposure"
       ],
       "sim": [
-        "punta-gorda",
-        "bradenton",
-        "st-marks",
-        "port-salerno",
+        "homosassa",
         "everglades-city",
-        "yankeetown",
-        "cape-coral",
-        "edgewater"
+        "cortez",
+        "st-marks",
+        "cedarkey",
+        "islamorada",
+        "melbourne-beach",
+        "sanibel-island"
       ],
       "img": "img/c/matlacha.webp",
       "rk": {
@@ -711,13 +712,13 @@
       ],
       "sim": [
         "30a",
-        "boca-raton",
-        "miramar-beach",
-        "clearwaterbeach",
-        "ami",
-        "st-pete-beach",
+        "stuart",
+        "venice",
         "bradenton-beach",
-        "sarasota"
+        "nsb",
+        "sarasota",
+        "fernandina",
+        "keywest"
       ],
       "img": "img/c/naples-beach.webp",
       "rk": {
@@ -767,14 +768,14 @@
         "Far from the mainland"
       ],
       "sim": [
-        "miami",
-        "west-palm-beach",
-        "southbeach",
+        "staug",
         "st-petersburg",
-        "dunedin",
-        "stuart",
         "delray",
-        "sarasota"
+        "southbeach",
+        "sarasota",
+        "naples",
+        "stuart",
+        "miami"
       ],
       "img": "img/c/key-west.webp",
       "rk": {
@@ -823,14 +824,14 @@
         "Storm exposure"
       ],
       "sim": [
-        "key-largo",
-        "hernando-beach",
-        "tequesta",
-        "palm-city",
-        "merritt-island",
-        "tierra-verde",
-        "sewalls-point",
-        "vilano-beach"
+        "boca-grande",
+        "matlacha",
+        "ponce-inlet",
+        "captiva",
+        "crystal-river",
+        "cortez",
+        "sebastian",
+        "homosassa"
       ],
       "img": "img/c/keys-bridge.webp",
       "rk": {
@@ -880,14 +881,14 @@
         "Flooding and traffic"
       ],
       "sim": [
-        "delray",
-        "miami",
-        "west-palm-beach",
-        "ftl",
-        "keywest",
         "st-petersburg",
         "sarasota",
-        "staug"
+        "ftl",
+        "hollywood",
+        "west-palm-beach",
+        "clearwaterbeach",
+        "delray",
+        "keywest"
       ],
       "img": "img/c/southbeach-street.webp",
       "rk": {
@@ -936,14 +937,14 @@
         "Busy and pricey"
       ],
       "sim": [
-        "boca-raton",
-        "lake-worth-beach",
-        "jupiter",
-        "destin",
-        "pcb",
-        "st-pete-beach",
+        "miami",
+        "southbeach",
+        "st-petersburg",
+        "hollywood",
         "sarasota",
-        "hollywood"
+        "west-palm-beach",
+        "boca-raton",
+        "st-pete-beach"
       ],
       "img": "img/c/fort-lauderdale-beach.webp",
       "rk": {
@@ -993,14 +994,14 @@
         "Busy season crowds"
       ],
       "sim": [
+        "neptune-beach",
+        "dunedin",
         "staug",
-        "lake-worth-beach",
-        "southbeach",
+        "wilton-manors",
+        "atlantic-beach",
         "sarasota",
-        "boca-raton",
-        "west-palm-beach",
-        "jaxbeach",
-        "hollywood"
+        "lake-worth-beach",
+        "southbeach"
       ],
       "img": "img/c/delray-beach.webp",
       "rk": {
@@ -1048,14 +1049,14 @@
         "Pricey"
       ],
       "sim": [
+        "cocoa",
+        "atlantic-beach",
         "destin",
-        "tierra-verde",
-        "vilano-beach",
-        "bonita-springs",
-        "hobe-sound",
-        "ponce-inlet",
-        "tequesta",
-        "ftl"
+        "jaxbeach",
+        "fort-myers-beach",
+        "sarasota",
+        "treasure-island",
+        "boca-raton"
       ],
       "img": "img/c/jupiter.webp",
       "rk": {
@@ -1103,14 +1104,14 @@
         "Fewer upscale amenities"
       ],
       "sim": [
+        "sebastian",
+        "englewood",
+        "palm-coast",
+        "titusville",
+        "bradenton",
         "flagler",
         "cape-canaveral",
-        "sebastian",
-        "port-orange",
-        "melbourne",
-        "bradenton",
-        "jensen-beach",
-        "hudson"
+        "carrabelle"
       ],
       "img": "img/c/fort-pierce.webp",
       "rk": {
@@ -1159,13 +1160,13 @@
         "Tourist traffic"
       ],
       "sim": [
-        "st-augustine-beach",
-        "cape-canaveral",
-        "nsb",
+        "jupiter",
         "jaxbeach",
         "atlantic-beach",
-        "ormond-beach",
-        "indialantic",
+        "boca-raton",
+        "sarasota",
+        "madeira-beach",
+        "destin",
         "jensen-beach"
       ],
       "img": "img/c/cocoa-beach.webp",
@@ -1215,14 +1216,14 @@
         "Summer crowds"
       ],
       "sim": [
+        "dunedin",
+        "30a",
         "jaxbeach",
         "atlantic-beach",
-        "cocoa",
-        "hollywood",
-        "neptune-beach",
-        "st-augustine-beach",
-        "lake-worth-beach",
-        "clearwaterbeach"
+        "venice",
+        "stuart",
+        "sarasota",
+        "staug"
       ],
       "img": "img/c/new-smyrna-beach.webp",
       "rk": {
@@ -1270,12 +1271,13 @@
         "Busy event weekends"
       ],
       "sim": [
-        "ormond-beach",
-        "cape-canaveral",
-        "daytona-beach-shores",
         "fort-walton-beach",
-        "fortpierce",
-        "cocoa",
+        "pcb",
+        "panama-city",
+        "jacksonville",
+        "jaxbeach",
+        "navarre",
+        "melbourne",
         "hallandale"
       ],
       "img": "img/c/daytona-beach.webp",
@@ -1324,14 +1326,14 @@
         "Few big city services"
       ],
       "sim": [
-        "fortpierce",
-        "indialantic",
-        "cape-canaveral",
-        "daytona",
-        "edgewater",
+        "vero-beach",
         "jensen-beach",
-        "satellite-beach",
-        "st-augustine-beach"
+        "indialantic",
+        "vilano-beach",
+        "sebastian",
+        "venice",
+        "st-augustine-beach",
+        "port-st-joe"
       ],
       "img": "img/c/flagler-beach.webp",
       "rk": {
@@ -1380,13 +1382,13 @@
         "Flooding downtown"
       ],
       "sim": [
-        "delray",
-        "jaxbeach",
-        "sarasota",
         "dunedin",
-        "stuart",
+        "delray",
         "lake-worth-beach",
-        "atlantic-beach",
+        "fernandina",
+        "vero-beach",
+        "keywest",
+        "sarasota",
         "nsb"
       ],
       "img": "img/c/st-augustine-aerial.webp",
@@ -1436,14 +1438,14 @@
         "Busy summer weekends"
       ],
       "sim": [
-        "atlantic-beach",
-        "nsb",
-        "hollywood",
+        "sarasota",
         "cocoa",
-        "neptune-beach",
-        "st-augustine-beach",
-        "lake-worth-beach",
-        "clearwaterbeach"
+        "nsb",
+        "boca-raton",
+        "pcb",
+        "clearwaterbeach",
+        "delray",
+        "jupiter"
       ],
       "img": "img/c/jacksonville-beach.webp",
       "rk": {
@@ -1491,14 +1493,14 @@
         "Island storm exposure"
       ],
       "sim": [
-        "bal-harbour",
-        "palm-beach",
         "tarpon-springs",
-        "lake-worth-beach",
-        "atlantic-beach",
-        "redington-shores",
-        "boca-raton",
-        "lauderdale-by-the-sea"
+        "vero-beach",
+        "dunedin",
+        "venice",
+        "staug",
+        "punta-gorda",
+        "palm-beach",
+        "ami"
       ],
       "img": "img/c/fernandina-beach.webp",
       "rk": {
@@ -1548,14 +1550,14 @@
         "Very limited shopping and dining"
       ],
       "sim": [
-        "port-st-joe",
-        "horseshoe-beach",
-        "apalachicola",
-        "st-teresa",
-        "mexico-beach",
-        "keaton-beach",
-        "inglis",
-        "crystal-river"
+        "steinhatchee",
+        "homosassa",
+        "englewood",
+        "yankeetown",
+        "edgewater",
+        "cedarkey",
+        "ormond-by-the-sea",
+        "sebastian"
       ],
       "img": "img/c/carrabelle.webp",
       "rk": {
@@ -1607,14 +1609,14 @@
         "No marina on the island"
       ],
       "sim": [
-        "pensacola-beach",
-        "mexico-beach",
-        "navarre-beach",
-        "sanibel-island",
-        "melbourne-beach",
-        "indialantic",
         "crescent-beach",
-        "gulf-breeze"
+        "indialantic",
+        "sanibel-island",
+        "navarre-beach",
+        "tierra-verde",
+        "ponce-inlet",
+        "hutchinson-island",
+        "indian-river-shores"
       ],
       "img": "img/c/st-george-island.webp",
       "rk": {
@@ -1666,14 +1668,14 @@
         "Storm surge exposure"
       ],
       "sim": [
-        "carrabelle",
-        "beverly-beach",
-        "mexico-beach",
-        "aripeka",
-        "port-st-joe",
-        "ozello",
+        "chokoloskee",
         "keaton-beach",
-        "mary-esther"
+        "horseshoe-beach",
+        "aripeka",
+        "suwannee",
+        "ozello",
+        "inglis",
+        "mexico-beach"
       ],
       "img": "img/c/st-teresa.webp",
       "rk": {
@@ -1725,13 +1727,14 @@
         "The nearest supermarket is 16 minutes away"
       ],
       "sim": [
+        "weeki-wachee",
+        "everglades-city",
         "matlacha",
-        "niceville",
-        "edgewater",
-        "new-port-richey",
-        "bradenton",
-        "titusville",
-        "weeki-wachee"
+        "yankeetown",
+        "aripeka",
+        "homosassa",
+        "rockledge",
+        "mexico-beach"
       ],
       "img": "img/c/st-marks.webp",
       "rk": {
@@ -1781,13 +1784,14 @@
         "Hurricane risk"
       ],
       "sim": [
-        "pensacola",
-        "bradenton",
-        "niceville",
-        "jacksonville",
+        "fort-walton-beach",
         "melbourne",
-        "cape-coral",
-        "hudson"
+        "jacksonville",
+        "bradenton",
+        "hudson",
+        "port-salerno",
+        "new-port-richey",
+        "port-orange"
       ],
       "img": "img/c/panama-city.webp",
       "rk": {
@@ -1838,13 +1842,13 @@
       ],
       "sim": [
         "melbourne",
-        "panama-city",
-        "bradenton",
-        "stuart",
+        "st-petersburg",
         "fort-walton-beach",
-        "niceville",
+        "panama-city",
         "jacksonville",
-        "port-salerno"
+        "port-salerno",
+        "keywest",
+        "sarasota"
       ],
       "img": "img/c/pensacola.webp",
       "rk": {
@@ -1894,14 +1898,14 @@
         "Island storm exposure"
       ],
       "sim": [
-        "fort-walton-beach",
-        "fort-myers-beach",
+        "miramar-beach",
+        "cape-canaveral",
+        "sanibel-island",
         "destin",
-        "gulf-breeze",
-        "ami",
+        "key-biscayne",
+        "ponce-inlet",
         "cocoa",
-        "perdido-key",
-        "st-pete-beach"
+        "siesta-key"
       ],
       "img": "img/c/pensacola-beach.webp",
       "rk": {
@@ -1952,12 +1956,12 @@
       ],
       "sim": [
         "crescent-beach",
-        "melbourne-beach",
-        "mexico-beach",
         "longboat",
-        "captiva",
+        "indian-river-shores",
+        "st-george-island",
         "perdido-key",
-        "sanibel-island",
+        "tierra-verde",
+        "juno-beach",
         "hutchinson-island"
       ],
       "img": "img/c/navarre-beach.webp",
@@ -2009,13 +2013,13 @@
       ],
       "sim": [
         "hutchinson-island",
-        "navarre",
-        "hobe-sound",
-        "pensacola-beach",
         "navarre-beach",
-        "ponce-inlet",
-        "gulf-breeze",
-        "tierra-verde"
+        "longboat",
+        "tierra-verde",
+        "st-george-island",
+        "navarre",
+        "highland-beach",
+        "crescent-beach"
       ],
       "img": "img/c/perdido-key.webp",
       "rk": {
@@ -2065,14 +2069,14 @@
         "Not much going on at night"
       ],
       "sim": [
-        "jensen-beach",
+        "indialantic",
+        "cape-canaveral",
+        "flagler",
         "st-augustine-beach",
-        "vilano-beach",
-        "vero-beach",
-        "palm-harbor",
-        "redington-shores",
-        "hobe-sound",
-        "ponce-inlet"
+        "niceville",
+        "jensen-beach",
+        "tequesta",
+        "cocoa"
       ],
       "img": "img/c/gulf-breeze.webp",
       "rk": {
@@ -2122,14 +2126,14 @@
         "Storm exposure"
       ],
       "sim": [
-        "mexico-beach",
-        "apalachicola",
-        "carrabelle",
+        "sanibel-island",
+        "flagler",
+        "indialantic",
+        "melbourne-beach",
+        "jensen-beach",
         "crescent-beach",
-        "ormond-by-the-sea",
-        "englewood",
-        "beverly-beach",
-        "navarre-beach"
+        "ponce-inlet",
+        "ami"
       ],
       "img": "img/c/port-st-joe.webp",
       "rk": {
@@ -2179,14 +2183,14 @@
         "Flood risk in storms"
       ],
       "sim": [
-        "homosassa",
-        "yankeetown",
-        "horseshoe-beach",
-        "suwannee",
-        "weeki-wachee",
-        "steinhatchee",
-        "keaton-beach",
-        "hernando-beach"
+        "sebastian",
+        "key-largo",
+        "flagler",
+        "titusville",
+        "islamorada",
+        "vilano-beach",
+        "melbourne-beach",
+        "carrabelle"
       ],
       "img": "img/c/crystal-river.webp",
       "rk": {
@@ -2237,13 +2241,13 @@
       ],
       "sim": [
         "suwannee",
-        "yankeetown",
-        "crystal-river",
-        "weeki-wachee",
-        "chokoloskee",
-        "ozello",
         "steinhatchee",
-        "keaton-beach"
+        "chokoloskee",
+        "carrabelle",
+        "keaton-beach",
+        "weeki-wachee",
+        "yankeetown",
+        "matlacha"
       ],
       "img": "img/c/homosassa.webp",
       "rk": {
@@ -2293,14 +2297,14 @@
         "High flood risk"
       ],
       "sim": [
-        "chokoloskee",
         "suwannee",
-        "homosassa",
+        "aripeka",
+        "chokoloskee",
+        "yankeetown",
+        "weeki-wachee",
         "steinhatchee",
         "keaton-beach",
-        "inglis",
-        "horseshoe-beach",
-        "aripeka"
+        "horseshoe-beach"
       ],
       "img": "img/c/ozello.webp",
       "rk": {
@@ -2350,14 +2354,14 @@
         "Major hurricane damage in recent years"
       ],
       "sim": [
-        "horseshoe-beach",
-        "suwannee",
+        "yankeetown",
         "chokoloskee",
         "homosassa",
+        "inglis",
+        "carrabelle",
+        "cedarkey",
         "ozello",
-        "keaton-beach",
-        "yankeetown",
-        "inglis"
+        "aripeka"
       ],
       "img": "img/c/steinhatchee.webp",
       "rk": {
@@ -2407,14 +2411,14 @@
         "Mostly a drive to everything"
       ],
       "sim": [
-        "cape-coral",
-        "cortez",
+        "holiday",
         "hernando-beach",
-        "port-orange",
-        "gibsonton",
-        "palm-city",
-        "panama-city",
-        "shalimar"
+        "port-charlotte",
+        "riviera-beach",
+        "lighthouse-point",
+        "merritt-island",
+        "port-richey",
+        "belleair-beach"
       ],
       "img": "img/c/apollo-beach.webp",
       "rk": {
@@ -2464,14 +2468,14 @@
         "Downtown is still coming back"
       ],
       "sim": [
-        "tarpon-springs",
-        "bradenton",
-        "dania-beach",
-        "bonita-springs",
-        "gulfport",
         "hallandale",
-        "lake-park",
-        "clearwaterbeach"
+        "pompano-beach",
+        "north-miami-beach",
+        "deerfield-beach",
+        "palm-beach-gardens",
+        "palm-harbor",
+        "dania-beach",
+        "oldsmar"
       ],
       "img": "img/c/clearwater.webp",
       "rk": {
@@ -2521,12 +2525,14 @@
         "Island flood risk"
       ],
       "sim": [
-        "redington-shores",
-        "treasure-island",
-        "indian-shores",
+        "palm-beach-shores",
         "indialantic",
-        "belleair-beach",
-        "madeira-beach"
+        "ponte-vedra-beach",
+        "gulf-breeze",
+        "lantana",
+        "st-george-island",
+        "lauderdale-by-the-sea",
+        "juno-beach"
       ],
       "img": "img/c/indian-rocks-beach.webp",
       "rk": {
@@ -2576,14 +2582,14 @@
         "Flood risk"
       ],
       "sim": [
-        "treasure-island",
-        "clearwaterbeach",
-        "st-pete-beach",
-        "indian-shores",
-        "redington-shores",
+        "boynton-beach",
+        "cocoa",
         "fort-myers-beach",
-        "clearwater",
-        "tarpon-springs"
+        "pompano-beach",
+        "deerfield-beach",
+        "ftl",
+        "boca-raton",
+        "st-pete-beach"
       ],
       "img": "img/c/madeira-beach.webp",
       "rk": {
@@ -2633,13 +2639,14 @@
         "Traffic on US 19"
       ],
       "sim": [
-        "port-richey",
+        "panama-city",
         "bradenton",
-        "hudson",
-        "daytona",
-        "port-orange",
+        "palm-harbor",
+        "cocoa-village",
         "oldsmar",
-        "panama-city"
+        "fort-walton-beach",
+        "melbourne",
+        "hudson"
       ],
       "img": "img/c/new-port-richey.webp",
       "rk": {
@@ -2690,13 +2697,13 @@
       ],
       "sim": [
         "holiday",
-        "port-richey",
-        "port-charlotte",
         "palm-bay",
-        "daytona",
-        "hudson",
+        "port-richey",
+        "freeport",
+        "port-charlotte",
+        "rockledge",
         "port-orange",
-        "gibsonton"
+        "hudson"
       ],
       "img": "img/c/ruskin.webp",
       "rk": {
@@ -2746,14 +2753,14 @@
         "Small, so homes go fast"
       ],
       "sim": [
-        "gulfport",
-        "oldsmar",
-        "bradenton",
-        "palm-harbor",
-        "cocoa-village",
         "punta-gorda",
-        "new-port-richey",
-        "tarpon-springs"
+        "gulfport",
+        "tarpon-springs",
+        "lake-worth-beach",
+        "palm-beach",
+        "wilton-manors",
+        "fernandina",
+        "cocoa-village"
       ],
       "img": "img/c/safety-harbor.webp",
       "rk": {
@@ -2803,14 +2810,14 @@
         "Flood risk"
       ],
       "sim": [
+        "fort-myers-beach",
+        "sarasota",
         "siesta-key",
         "clearwaterbeach",
-        "fort-myers-beach",
-        "treasure-island",
-        "miramar-beach",
-        "ami",
+        "boca-raton",
         "bradenton-beach",
-        "destin"
+        "ftl",
+        "naples"
       ],
       "img": "img/c/st-pete-beach.webp",
       "rk": {
@@ -2861,13 +2868,13 @@
       ],
       "sim": [
         "west-palm-beach",
-        "gulfport",
-        "tampa",
-        "sarasota",
-        "dunedin",
+        "southbeach",
+        "ftl",
         "miami",
-        "fort-myers",
-        "wilton-manors"
+        "pensacola",
+        "wilton-manors",
+        "keywest",
+        "tampa"
       ],
       "img": "img/c/st-petersburg.webp",
       "rk": {
@@ -2917,14 +2924,14 @@
         "Age restrictions limit who can buy"
       ],
       "sim": [
-        "oldsmar",
+        "holiday",
         "rockledge",
-        "new-port-richey",
-        "west-melbourne",
-        "safety-harbor",
-        "daytona",
-        "port-st-lucie",
-        "palm-beach-gardens"
+        "mary-esther",
+        "palm-bay",
+        "port-richey",
+        "freeport",
+        "hudson",
+        "oldsmar"
       ],
       "img": "img/c/sun-city-center.webp",
       "rk": {
@@ -2974,14 +2981,14 @@
         "Traffic and summer heat"
       ],
       "sim": [
-        "st-petersburg",
-        "fort-myers",
         "west-palm-beach",
+        "fort-myers",
+        "st-petersburg",
         "wilton-manors",
         "miami",
-        "gulfport",
-        "north-miami-beach",
-        "sarasota"
+        "ftl",
+        "hallandale",
+        "clearwater"
       ],
       "img": "img/c/tampa.webp",
       "rk": {
@@ -3031,14 +3038,14 @@
         "Flood risk near the water"
       ],
       "sim": [
-        "dunedin",
-        "gulfport",
-        "clearwater",
-        "bradenton",
-        "palm-harbor",
-        "redington-shores",
         "fernandina",
-        "stuart"
+        "gulfport",
+        "dunedin",
+        "lake-worth-beach",
+        "punta-gorda",
+        "staug",
+        "stuart",
+        "palm-beach"
       ],
       "img": "img/c/tarpon-springs.webp",
       "rk": {
@@ -3089,13 +3096,13 @@
       ],
       "sim": [
         "fort-myers-beach",
-        "indian-rocks-beach",
-        "madeira-beach",
-        "st-pete-beach",
-        "redington-shores",
-        "bradenton-beach",
         "siesta-key",
-        "clearwaterbeach"
+        "bradenton-beach",
+        "clearwaterbeach",
+        "ami",
+        "tierra-verde",
+        "boca-raton",
+        "sarasota"
       ],
       "img": "img/c/treasure-island.webp",
       "rk": {
@@ -3145,14 +3152,14 @@
         "Not on the Gulf itself"
       ],
       "sim": [
-        "panama-city",
-        "clearwater",
-        "new-port-richey",
-        "tarpon-springs",
         "hudson",
-        "fortpierce",
-        "port-orange",
-        "melbourne"
+        "panama-city",
+        "boynton-beach",
+        "fort-walton-beach",
+        "new-port-richey",
+        "melbourne",
+        "lake-park",
+        "port-richey"
       ],
       "img": "img/c/bradenton.webp",
       "rk": {
@@ -3203,13 +3210,13 @@
       ],
       "sim": [
         "siesta-key",
-        "ami",
-        "st-pete-beach",
-        "treasure-island",
         "fort-myers-beach",
-        "clearwaterbeach",
-        "redington-shores",
-        "pensacola-beach"
+        "treasure-island",
+        "30a",
+        "st-pete-beach",
+        "key-biscayne",
+        "naples",
+        "marco-island"
       ],
       "img": "img/c/bradenton-beach.webp",
       "rk": {
@@ -3259,14 +3266,14 @@
         "Flood risk"
       ],
       "sim": [
-        "shalimar",
-        "apollo-beach",
-        "hernando-beach",
-        "niceville",
-        "port-orange",
-        "lantana",
-        "bradenton",
-        "north-palm-beach"
+        "matlacha",
+        "north-palm-beach",
+        "tequesta",
+        "lighthouse-point",
+        "homosassa",
+        "islamorada",
+        "sewalls-point",
+        "melbourne-beach"
       ],
       "img": "img/c/cortez.webp",
       "rk": {
@@ -3316,14 +3323,14 @@
         "Hurricane exposure"
       ],
       "sim": [
-        "satellite-beach",
-        "palm-coast",
-        "ormond-by-the-sea",
-        "indian-harbour-beach",
         "sebastian",
-        "hobe-sound",
-        "gulf-breeze",
-        "titusville"
+        "palm-coast",
+        "carrabelle",
+        "ormond-by-the-sea",
+        "edgewater",
+        "titusville",
+        "fortpierce",
+        "melbourne-beach"
       ],
       "img": "img/c/englewood.webp",
       "rk": {
@@ -3375,14 +3382,14 @@
         "Bridge traffic to the beach in season"
       ],
       "sim": [
-        "dunedin",
-        "st-petersburg",
-        "staug",
-        "lake-worth-beach",
-        "naples",
-        "delray",
         "jaxbeach",
-        "boca-raton"
+        "st-pete-beach",
+        "southbeach",
+        "atlantic-beach",
+        "clearwaterbeach",
+        "boca-raton",
+        "ftl",
+        "dunedin"
       ],
       "img": "img/c/sarasota.webp",
       "rk": {
@@ -3432,14 +3439,14 @@
         "Expensive"
       ],
       "sim": [
-        "st-pete-beach",
-        "ami",
-        "bradenton-beach",
         "fort-myers-beach",
-        "miramar-beach",
-        "clearwaterbeach",
         "treasure-island",
-        "destin"
+        "ami",
+        "miramar-beach",
+        "bradenton-beach",
+        "st-pete-beach",
+        "boca-raton",
+        "marco-island"
       ],
       "img": "img/c/siesta-key.webp",
       "rk": {
@@ -3492,14 +3499,14 @@
         "From mainland neighborhoods you drive to the beach"
       ],
       "sim": [
-        "dunedin",
+        "vero-beach",
+        "30a",
+        "stuart",
         "nsb",
-        "atlantic-beach",
-        "palm-harbor",
+        "dunedin",
         "fernandina",
-        "gulf-breeze",
-        "st-augustine-beach",
-        "tarpon-springs"
+        "naples",
+        "flagler"
       ],
       "img": "img/c/venice.webp",
       "rk": {
@@ -3551,14 +3558,14 @@
         "The beach was hit hard by Hurricane Ian"
       ],
       "sim": [
-        "ami",
-        "indian-shores",
-        "redington-shores",
-        "clearwater",
-        "tierra-verde",
+        "boynton-beach",
+        "dania-beach",
+        "ormond-beach",
         "jupiter",
-        "juno-beach",
-        "st-pete-beach"
+        "pompano-beach",
+        "riviera-beach",
+        "deerfield-beach",
+        "tequesta"
       ],
       "img": "img/c/bonita-beach.webp",
       "rk": {
@@ -3608,14 +3615,14 @@
         "No real Gulf beach in town"
       ],
       "sim": [
-        "apollo-beach",
+        "port-orange",
         "port-charlotte",
+        "jacksonville",
         "port-richey",
-        "panama-city",
+        "merritt-island",
         "bradenton",
         "hudson",
-        "holiday",
-        "matlacha"
+        "apollo-beach"
       ],
       "img": "img/c/canal-swfl.webp",
       "rk": {
@@ -3665,14 +3672,14 @@
         "Mosquitoes and storm risk"
       ],
       "sim": [
-        "ozello",
         "suwannee",
-        "homosassa",
-        "steinhatchee",
         "keaton-beach",
+        "steinhatchee",
+        "homosassa",
+        "yankeetown",
         "horseshoe-beach",
-        "inglis",
-        "crystal-river"
+        "ozello",
+        "st-teresa"
       ],
       "img": "img/c/chokoloskee.webp",
       "rk": {
@@ -3724,14 +3731,14 @@
         "Very quiet and very hot in summer"
       ],
       "sim": [
-        "yankeetown",
-        "crystal-river",
         "matlacha",
+        "st-marks",
+        "yankeetown",
+        "homosassa",
         "steinhatchee",
-        "horseshoe-beach",
-        "suwannee",
         "cedarkey",
-        "homosassa"
+        "suwannee",
+        "horseshoe-beach"
       ],
       "img": "img/c/everglades-city.webp",
       "rk": {
@@ -3781,14 +3788,14 @@
         "Summer heat and storms"
       ],
       "sim": [
-        "gulfport",
         "tampa",
-        "bradenton",
+        "west-palm-beach",
+        "jacksonville",
         "st-petersburg",
-        "panama-city",
-        "pensacola",
-        "clearwater",
-        "north-miami-beach"
+        "boca-raton",
+        "fort-walton-beach",
+        "miami",
+        "hallandale"
       ],
       "img": "img/c/fort-myers.webp",
       "rk": {
@@ -3838,14 +3845,14 @@
         "One road on and off the island"
       ],
       "sim": [
-        "st-pete-beach",
-        "treasure-island",
-        "fort-walton-beach",
         "siesta-key",
-        "clearwaterbeach",
+        "treasure-island",
+        "st-pete-beach",
         "bradenton-beach",
-        "pensacola-beach",
-        "ami"
+        "ami",
+        "tierra-verde",
+        "madeira-beach",
+        "sarasota"
       ],
       "img": "img/c/fort-myers-beach.webp",
       "rk": {
@@ -3895,14 +3902,14 @@
         "Far from everything else"
       ],
       "sim": [
-        "captiva",
-        "ami",
-        "sanibel-island",
-        "vilano-beach",
-        "longboat",
         "tierra-verde",
-        "ponce-inlet",
-        "indian-shores"
+        "key-biscayne",
+        "siesta-key",
+        "bradenton-beach",
+        "marathon",
+        "ami",
+        "fort-myers-beach",
+        "longboat"
       ],
       "img": "img/c/marco-island.webp",
       "rk": {
@@ -3952,14 +3959,14 @@
         "Beaches are a drive"
       ],
       "sim": [
-        "cape-coral",
-        "ruskin",
-        "hudson",
-        "holiday",
-        "port-richey",
         "palm-bay",
         "port-orange",
-        "apollo-beach"
+        "holiday",
+        "hudson",
+        "edgewater",
+        "ruskin",
+        "cape-coral",
+        "west-melbourne"
       ],
       "img": "img/c/port-charlotte.webp",
       "rk": {
@@ -4009,14 +4016,14 @@
         "Quiet nightlife"
       ],
       "sim": [
-        "matlacha",
-        "bradenton",
-        "port-salerno",
-        "melbourne",
+        "tarpon-springs",
+        "fernandina",
         "safety-harbor",
-        "palm-harbor",
-        "pensacola",
-        "stuart"
+        "venice",
+        "stuart",
+        "vero-beach",
+        "gulfport",
+        "neptune-beach"
       ],
       "img": "img/c/punta-gorda.webp",
       "rk": {
@@ -4067,13 +4074,13 @@
       ],
       "sim": [
         "ami",
-        "marco-island",
-        "captiva",
-        "longboat",
-        "navarre-beach",
-        "vilano-beach",
-        "tierra-verde",
-        "30a"
+        "melbourne-beach",
+        "st-george-island",
+        "ponce-inlet",
+        "30a",
+        "port-st-joe",
+        "pensacola-beach",
+        "venice"
       ],
       "img": "img/c/sanibel-island.webp",
       "rk": {
@@ -4123,14 +4130,14 @@
         "Spread out along one highway"
       ],
       "sim": [
-        "islamorada",
-        "hernando-beach",
-        "palm-city",
-        "port-salerno",
-        "merritt-island",
+        "vilano-beach",
         "crystal-river",
-        "navarre",
-        "tequesta"
+        "sebastian",
+        "marco-island",
+        "palm-city",
+        "merritt-island",
+        "big-pine-key",
+        "ponte-vedra-beach"
       ],
       "img": "img/c/key-largo.webp",
       "rk": {
@@ -4180,14 +4187,14 @@
         "Small, with little nightlife"
       ],
       "sim": [
+        "palm-beach-shores",
+        "key-biscayne",
         "palm-beach",
-        "sunny-isles-beach",
-        "fernandina",
-        "neptune-beach",
-        "indian-rocks-beach",
-        "bradenton-beach",
+        "redington-shores",
+        "clearwaterbeach",
+        "madeira-beach",
         "lauderdale-by-the-sea",
-        "redington-shores"
+        "treasure-island"
       ],
       "img": "img/c/bal-harbour.webp",
       "rk": {
@@ -4237,14 +4244,14 @@
         "Spread out and car dependent"
       ],
       "sim": [
+        "clearwaterbeach",
+        "jaxbeach",
+        "sarasota",
         "lake-worth-beach",
-        "vero-beach",
         "atlantic-beach",
-        "ftl",
-        "jensen-beach",
-        "stuart",
         "st-pete-beach",
-        "miramar-beach"
+        "cocoa",
+        "siesta-key"
       ],
       "img": "img/c/boca-raton.webp",
       "rk": {
@@ -4294,14 +4301,14 @@
         "Fewer restaurants and shops in town"
       ],
       "sim": [
-        "riviera-beach",
-        "lantana",
+        "boynton-beach",
+        "pompano-beach",
+        "bonita-springs",
         "clearwater",
-        "hallandale",
+        "lantana",
         "lake-park",
-        "port-orange",
-        "cape-canaveral",
-        "apollo-beach"
+        "palm-city",
+        "hudson"
       ],
       "img": "img/c/dania-beach.webp",
       "rk": {
@@ -4351,14 +4358,14 @@
         "Not much of a walkable center"
       ],
       "sim": [
-        "dania-beach",
-        "north-miami-beach",
         "clearwater",
-        "hollywood",
-        "panama-city",
-        "daytona",
-        "palm-beach-gardens",
-        "fort-walton-beach"
+        "jacksonville",
+        "fort-myers",
+        "pompano-beach",
+        "clearwaterbeach",
+        "west-palm-beach",
+        "tampa",
+        "dania-beach"
       ],
       "img": "img/c/hallandale-beach.webp",
       "rk": {
@@ -4408,13 +4415,14 @@
         "Expensive"
       ],
       "sim": [
-        "redington-shores",
+        "longboat",
         "indian-river-shores",
-        "sewalls-point",
-        "indian-rocks-beach",
+        "navarre-beach",
+        "indian-shores",
+        "juno-beach",
+        "perdido-key",
         "belleair-beach",
-        "indian-harbour-beach",
-        "indian-shores"
+        "ponte-vedra-beach"
       ],
       "img": "img/c/highland-beach.webp",
       "rk": {
@@ -4464,14 +4472,14 @@
         "Parking is tight"
       ],
       "sim": [
-        "jaxbeach",
-        "lake-worth-beach",
-        "nsb",
-        "atlantic-beach",
-        "neptune-beach",
+        "miami",
+        "ftl",
         "clearwaterbeach",
-        "lauderdale-by-the-sea",
-        "fort-walton-beach"
+        "southbeach",
+        "st-petersburg",
+        "west-palm-beach",
+        "sarasota",
+        "lake-worth-beach"
       ],
       "img": "img/c/hollywood.webp",
       "rk": {
@@ -4522,13 +4530,13 @@
       ],
       "sim": [
         "neptune-beach",
+        "palm-beach",
         "atlantic-beach",
-        "hollywood",
-        "nsb",
-        "jaxbeach",
-        "fernandina",
-        "bal-harbour",
-        "delray"
+        "clearwaterbeach",
+        "lake-worth-beach",
+        "delray",
+        "dunedin",
+        "30a"
       ],
       "img": "img/c/lauderdale-by-the-sea.webp",
       "rk": {
@@ -4578,14 +4586,14 @@
         "No beach in town"
       ],
       "sim": [
-        "sewalls-point",
-        "cortez",
-        "shalimar",
         "north-palm-beach",
-        "lake-park",
-        "rockledge",
         "apollo-beach",
-        "palm-city"
+        "cortez",
+        "hernando-beach",
+        "tequesta",
+        "port-richey",
+        "belleair-beach",
+        "ruskin"
       ],
       "img": "img/c/lighthouse-point.webp",
       "rk": {
@@ -4635,14 +4643,14 @@
         "Heavy traffic"
       ],
       "sim": [
-        "hallandale",
-        "palm-beach-gardens",
-        "panama-city",
         "clearwater",
-        "bradenton",
+        "palm-beach-gardens",
+        "fort-myers",
         "dania-beach",
-        "port-st-lucie",
-        "ormond-beach"
+        "tampa",
+        "jacksonville",
+        "west-palm-beach",
+        "daytona"
       ],
       "img": "img/c/north-miami-beach.webp",
       "rk": {
@@ -4692,14 +4700,14 @@
         "Quiet at night"
       ],
       "sim": [
+        "lighthouse-point",
         "tequesta",
-        "juno-beach",
-        "lantana",
         "merritt-island",
-        "riviera-beach",
-        "lake-park",
-        "palm-beach-shores",
-        "cortez"
+        "tierra-verde",
+        "cortez",
+        "longboat",
+        "satellite-beach",
+        "juno-beach"
       ],
       "img": "img/c/north-palm-beach.webp",
       "rk": {
@@ -4749,14 +4757,14 @@
         "Very quiet in summer"
       ],
       "sim": [
-        "bal-harbour",
-        "fernandina",
-        "boca-raton",
+        "lauderdale-by-the-sea",
         "lake-worth-beach",
-        "sunny-isles-beach",
-        "redington-shores",
-        "naples",
-        "tarpon-springs"
+        "fernandina",
+        "tarpon-springs",
+        "neptune-beach",
+        "bal-harbour",
+        "gulfport",
+        "ami"
       ],
       "img": "img/c/palm-beach.webp",
       "rk": {
@@ -4806,14 +4814,14 @@
         "Mostly gated and car dependent"
       ],
       "sim": [
+        "clearwater",
+        "oldsmar",
         "north-miami-beach",
         "hallandale",
-        "rockledge",
-        "safety-harbor",
-        "boca-raton",
-        "niceville",
-        "oldsmar",
-        "ponte-vedra-beach"
+        "dania-beach",
+        "indian-rocks-beach",
+        "boynton-beach",
+        "indian-shores"
       ],
       "img": "img/c/palm-beach-gardens.webp",
       "rk": {
@@ -4863,14 +4871,14 @@
         "An industrial port area"
       ],
       "sim": [
-        "lantana",
-        "dania-beach",
-        "cape-canaveral",
-        "north-palm-beach",
-        "lake-park",
-        "madeira-beach",
+        "apollo-beach",
+        "boynton-beach",
         "bonita-springs",
-        "indian-shores"
+        "dania-beach",
+        "port-richey",
+        "ruskin",
+        "holiday",
+        "ormond-by-the-sea"
       ],
       "img": "img/c/riviera-beach.webp",
       "rk": {
@@ -4920,14 +4928,14 @@
         "Expensive"
       ],
       "sim": [
-        "bal-harbour",
-        "siesta-key",
-        "neptune-beach",
-        "st-pete-beach",
-        "bradenton-beach",
-        "miramar-beach",
+        "clearwaterbeach",
+        "lauderdale-by-the-sea",
         "boca-raton",
-        "palm-beach"
+        "st-pete-beach",
+        "palm-beach",
+        "ftl",
+        "miami",
+        "neptune-beach"
       ],
       "img": "img/c/sunny-isles-beach.webp",
       "rk": {
@@ -4977,14 +4985,14 @@
         "Prices are rising fast"
       ],
       "sim": [
-        "miami",
         "st-petersburg",
-        "wilton-manors",
-        "gulfport",
         "tampa",
-        "delray",
-        "lake-worth-beach",
-        "southbeach"
+        "wilton-manors",
+        "miami",
+        "southbeach",
+        "ftl",
+        "fort-myers",
+        "lake-worth-beach"
       ],
       "img": "img/c/west-palm-beach.webp",
       "rk": {
@@ -5035,13 +5043,13 @@
       ],
       "sim": [
         "west-palm-beach",
-        "tampa",
-        "gulfport",
-        "miami",
+        "delray",
         "st-petersburg",
-        "cocoa-village",
-        "fort-myers",
-        "palm-beach-gardens"
+        "tampa",
+        "lake-worth-beach",
+        "miami",
+        "southbeach",
+        "gulfport"
       ],
       "img": "img/c/wilton-manors.webp",
       "rk": {
@@ -5091,14 +5099,14 @@
         "A small downtown"
       ],
       "sim": [
+        "flagler",
         "vero-beach",
-        "gulf-breeze",
-        "indialantic",
-        "st-augustine-beach",
+        "cape-canaveral",
         "vilano-beach",
-        "fortpierce",
-        "redington-shores",
-        "cocoa"
+        "indialantic",
+        "nsb",
+        "port-salerno",
+        "staug"
       ],
       "img": "img/c/jensen-beach.webp",
       "rk": {
@@ -5148,14 +5156,14 @@
         "Not on the ocean"
       ],
       "sim": [
-        "daytona",
-        "freeport",
-        "palm-city",
         "palm-bay",
-        "port-orange",
-        "hudson",
-        "palm-coast",
-        "edgewater"
+        "freeport",
+        "west-melbourne",
+        "gibsonton",
+        "ruskin",
+        "holiday",
+        "port-charlotte",
+        "apollo-beach"
       ],
       "img": "img/c/port-st-lucie.webp",
       "rk": {
@@ -5205,14 +5213,14 @@
         "Beaches are across the lagoon"
       ],
       "sim": [
-        "palm-coast",
-        "edgewater",
-        "fortpierce",
-        "hobe-sound",
         "englewood",
+        "palm-coast",
+        "flagler",
+        "fortpierce",
         "titusville",
-        "beverly-beach",
-        "ormond-by-the-sea"
+        "venice",
+        "crystal-river",
+        "vilano-beach"
       ],
       "img": "img/c/sebastian.webp",
       "rk": {
@@ -5262,14 +5270,14 @@
         "Far from a major airport"
       ],
       "sim": [
+        "venice",
+        "nsb",
+        "naples",
         "vero-beach",
-        "port-salerno",
-        "boca-raton",
-        "melbourne",
+        "staug",
         "dunedin",
-        "pensacola",
         "tarpon-springs",
-        "jensen-beach"
+        "fernandina"
       ],
       "img": "img/c/stuart.webp",
       "rk": {
@@ -5319,14 +5327,14 @@
         "Far from a major airport"
       ],
       "sim": [
-        "jensen-beach",
-        "boca-raton",
-        "gulf-breeze",
-        "stuart",
+        "fernandina",
+        "flagler",
+        "venice",
         "st-augustine-beach",
-        "vilano-beach",
-        "palm-harbor",
-        "redington-shores"
+        "30a",
+        "staug",
+        "jensen-beach",
+        "stuart"
       ],
       "img": "img/c/vero-beach.webp",
       "rk": {
@@ -5376,14 +5384,14 @@
         "Island storm exposure"
       ],
       "sim": [
+        "vilano-beach",
         "flagler",
-        "satellite-beach",
-        "indian-harbour-beach",
+        "st-george-island",
+        "gulf-breeze",
         "jensen-beach",
         "st-augustine-beach",
-        "cocoa",
-        "indian-rocks-beach",
-        "melbourne-beach"
+        "hobe-sound",
+        "port-st-joe"
       ],
       "img": "img/c/indialantic.webp",
       "rk": {
@@ -5433,14 +5441,14 @@
         "Limited homes for sale"
       ],
       "sim": [
+        "sanibel-island",
+        "ponce-inlet",
+        "vilano-beach",
         "beverly-beach",
+        "big-pine-key",
         "mexico-beach",
-        "indian-river-shores",
-        "navarre-beach",
-        "indialantic",
-        "satellite-beach",
-        "indian-harbour-beach",
-        "sewalls-point"
+        "flagler",
+        "port-st-joe"
       ],
       "img": "img/c/melbourne-beach.webp",
       "rk": {
@@ -5490,13 +5498,14 @@
         "No downtown or beach of its own"
       ],
       "sim": [
-        "port-st-lucie",
-        "ruskin",
         "holiday",
-        "daytona",
-        "west-melbourne",
+        "port-charlotte",
+        "ruskin",
+        "port-st-lucie",
         "freeport",
-        "port-richey"
+        "port-orange",
+        "mary-esther",
+        "gibsonton"
       ],
       "img": "img/c/palm-bay.webp",
       "rk": {
@@ -5546,14 +5555,14 @@
         "A narrow, eroding beach in spots"
       ],
       "sim": [
-        "indian-harbour-beach",
-        "hobe-sound",
+        "tequesta",
+        "ormond-by-the-sea",
+        "north-palm-beach",
+        "merritt-island",
         "englewood",
-        "indialantic",
-        "st-augustine-beach",
-        "palm-coast",
-        "beverly-beach",
-        "ormond-by-the-sea"
+        "edgewater",
+        "gulf-breeze",
+        "big-pine-key"
       ],
       "img": "img/c/satellite-beach.webp",
       "rk": {
@@ -5603,14 +5612,14 @@
         "The beach is a 20 minute drive"
       ],
       "sim": [
-        "palm-coast",
-        "ormond-by-the-sea",
-        "edgewater",
         "sebastian",
         "englewood",
-        "merritt-island",
-        "ormond-beach",
-        "port-orange"
+        "edgewater",
+        "rockledge",
+        "fortpierce",
+        "palm-coast",
+        "bradenton",
+        "hudson"
       ],
       "img": "img/c/titusville.webp",
       "rk": {
@@ -5660,12 +5669,13 @@
         "Suburban, with no downtown"
       ],
       "sim": [
-        "palm-bay",
+        "port-orange",
+        "port-charlotte",
         "port-st-lucie",
-        "daytona",
-        "gibsonton",
-        "rockledge",
+        "sun-city-center",
         "mary-esther",
+        "holiday",
+        "navarre",
         "freeport"
       ],
       "img": "img/c/west-melbourne.webp",
@@ -5716,14 +5726,14 @@
         "Cooler winters than South Florida"
       ],
       "sim": [
-        "jaxbeach",
-        "nsb",
-        "neptune-beach",
+        "lake-worth-beach",
         "cocoa",
+        "sarasota",
+        "st-augustine-beach",
+        "nsb",
         "boca-raton",
-        "hollywood",
         "lauderdale-by-the-sea",
-        "st-augustine-beach"
+        "dunedin"
       ],
       "img": "img/c/atlantic-beach.webp",
       "rk": {
@@ -5774,13 +5784,13 @@
       ],
       "sim": [
         "lauderdale-by-the-sea",
-        "atlantic-beach",
-        "jaxbeach",
-        "cocoa",
-        "nsb",
-        "hollywood",
+        "delray",
+        "dunedin",
+        "fernandina",
         "st-augustine-beach",
-        "bal-harbour"
+        "lake-worth-beach",
+        "staug",
+        "30a"
       ],
       "img": "img/c/neptune-beach.webp",
       "rk": {
@@ -5830,14 +5840,14 @@
         "Little public beach parking and no real downtown"
       ],
       "sim": [
-        "bonita-springs",
-        "indian-river-shores",
-        "juno-beach",
-        "satellite-beach",
-        "ami",
-        "marco-island",
-        "indian-shores",
-        "redington-shores"
+        "st-augustine-beach",
+        "titusville",
+        "cape-canaveral",
+        "vilano-beach",
+        "indian-rocks-beach",
+        "indialantic",
+        "hobe-sound",
+        "pensacola-beach"
       ],
       "img": "img/c/ponte-vedra-beach.webp",
       "rk": {
@@ -5887,14 +5897,14 @@
         "An hour to a major airport"
       ],
       "sim": [
-        "cocoa",
-        "ormond-beach",
-        "gulf-breeze",
-        "jensen-beach",
-        "indialantic",
-        "satellite-beach",
-        "jaxbeach",
-        "atlantic-beach"
+        "30a",
+        "atlantic-beach",
+        "neptune-beach",
+        "vero-beach",
+        "flagler",
+        "ponte-vedra-beach",
+        "venice",
+        "jaxbeach"
       ],
       "img": "img/c/atlantic-aerial.webp",
       "rk": {
@@ -5944,12 +5954,14 @@
         "Condo fees and assessments"
       ],
       "sim": [
-        "daytona",
         "mary-esther",
+        "navarre",
+        "ormond-by-the-sea",
         "cape-canaveral",
-        "flagler",
-        "ormond-beach",
-        "port-orange"
+        "merritt-island",
+        "indian-shores",
+        "rockledge",
+        "west-melbourne"
       ],
       "img": "img/c/daytona-beach-shores.webp",
       "rk": {
@@ -5999,14 +6011,14 @@
         "Limited nightlife"
       ],
       "sim": [
-        "st-augustine-beach",
-        "cocoa",
-        "cape-canaveral",
-        "daytona",
-        "satellite-beach",
-        "flagler",
-        "fortpierce",
-        "hobe-sound"
+        "fort-walton-beach",
+        "panama-city",
+        "port-orange",
+        "niceville",
+        "navarre",
+        "bonita-springs",
+        "titusville",
+        "cape-canaveral"
       ],
       "img": "img/c/ormond-beach.webp",
       "rk": {
@@ -6056,14 +6068,14 @@
         "You drive to the beach"
       ],
       "sim": [
-        "edgewater",
         "sebastian",
         "englewood",
-        "beverly-beach",
+        "edgewater",
         "ormond-by-the-sea",
-        "satellite-beach",
+        "fortpierce",
         "titusville",
-        "indian-harbour-beach"
+        "merritt-island",
+        "carrabelle"
       ],
       "img": "img/c/palm-coast.webp",
       "rk": {
@@ -6113,14 +6125,14 @@
         "Event traffic"
       ],
       "sim": [
-        "niceville",
-        "edgewater",
-        "rockledge",
-        "fortpierce",
-        "port-st-lucie",
-        "bradenton",
-        "palm-coast",
-        "daytona"
+        "port-charlotte",
+        "cape-coral",
+        "palm-bay",
+        "panama-city",
+        "west-melbourne",
+        "hudson",
+        "holiday",
+        "ruskin"
       ],
       "img": "img/c/port-orange.webp",
       "rk": {
@@ -6170,14 +6182,14 @@
         "Spread out, so you drive for almost everything"
       ],
       "sim": [
-        "perdido-key",
-        "hutchinson-island",
-        "hobe-sound",
-        "gulf-breeze",
-        "englewood",
-        "satellite-beach",
-        "palm-coast",
-        "indian-harbour-beach"
+        "daytona-beach-shores",
+        "cape-canaveral",
+        "daytona",
+        "ormond-beach",
+        "deerfield-beach",
+        "port-orange",
+        "west-melbourne",
+        "merritt-island"
       ],
       "img": "img/c/navarre.webp",
       "rk": {
@@ -6227,14 +6239,14 @@
         "Highway 98 traffic and jet noise from the base"
       ],
       "sim": [
-        "freeport",
-        "shalimar",
-        "niceville",
-        "fortpierce",
-        "flagler",
-        "port-st-lucie",
+        "rockledge",
         "daytona-beach-shores",
-        "port-orange"
+        "ormond-by-the-sea",
+        "freeport",
+        "palm-bay",
+        "sun-city-center",
+        "holiday",
+        "port-charlotte"
       ],
       "img": "img/atlas/mary-esther-close.webp",
       "rk": {
@@ -6284,14 +6296,14 @@
         "Older housing stock and patchy neighborhoods"
       ],
       "sim": [
-        "pcb",
-        "clearwaterbeach",
-        "jaxbeach",
-        "hollywood",
-        "cape-canaveral",
-        "daytona",
         "panama-city",
-        "pensacola"
+        "melbourne",
+        "daytona",
+        "jacksonville",
+        "pensacola",
+        "lake-worth-beach",
+        "cocoa-village",
+        "boca-raton"
       ],
       "img": "img/c/fort-walton-beach.webp",
       "rk": {
@@ -6341,14 +6353,14 @@
         "Tiny town with few shops of its own"
       ],
       "sim": [
-        "niceville",
-        "cortez",
+        "hernando-beach",
+        "weeki-wachee",
         "rockledge",
-        "port-orange",
-        "mary-esther",
-        "lantana",
-        "beverly-beach",
-        "edgewater"
+        "indian-shores",
+        "mexico-beach",
+        "sewalls-point",
+        "st-marks",
+        "belleair-beach"
       ],
       "img": "img/atlas/shalimar-close.webp",
       "rk": {
@@ -6400,11 +6412,12 @@
       "sim": [
         "palm-harbor",
         "panama-city",
-        "palm-city",
-        "st-marks",
-        "pensacola",
+        "ormond-beach",
         "gulf-breeze",
-        "bradenton"
+        "cape-canaveral",
+        "flagler",
+        "indialantic",
+        "jensen-beach"
       ],
       "img": "img/c/niceville.webp",
       "rk": {
@@ -6454,14 +6467,14 @@
         "Pricey, with a lot of condo and resort living"
       ],
       "sim": [
-        "st-pete-beach",
-        "destin",
         "siesta-key",
-        "clearwaterbeach",
-        "boca-raton",
-        "naples",
         "pensacola-beach",
-        "fort-walton-beach"
+        "pcb",
+        "fort-myers-beach",
+        "marco-island",
+        "st-augustine-beach",
+        "jaxbeach",
+        "cape-canaveral"
       ],
       "img": "img/c/miramar-beach.webp",
       "rk": {
@@ -6511,14 +6524,14 @@
         "Few restaurants and no beach in town"
       ],
       "sim": [
-        "port-st-lucie",
-        "mary-esther",
-        "palm-coast",
-        "niceville",
-        "edgewater",
         "palm-bay",
-        "port-orange",
-        "navarre"
+        "mary-esther",
+        "port-st-lucie",
+        "ruskin",
+        "weeki-wachee",
+        "holiday",
+        "gibsonton",
+        "rockledge"
       ],
       "img": "img/atlas/freeport-close.webp",
       "rk": {
@@ -6568,14 +6581,14 @@
         "Limited dining, shopping and services"
       ],
       "sim": [
-        "port-st-joe",
-        "apalachicola",
-        "melbourne-beach",
+        "indian-river-shores",
         "crescent-beach",
+        "homosassa",
+        "melbourne-beach",
         "beverly-beach",
-        "navarre-beach",
-        "gulf-breeze",
-        "carrabelle"
+        "ozello",
+        "st-george-island",
+        "weeki-wachee"
       ],
       "img": "img/c/mexico-beach.webp",
       "rk": {
@@ -6625,14 +6638,14 @@
         "Groceries, doctors and most errands are in Perry, about 30 minutes away"
       ],
       "sim": [
-        "horseshoe-beach",
-        "suwannee",
         "chokoloskee",
+        "yankeetown",
         "homosassa",
-        "ozello",
-        "steinhatchee",
         "inglis",
-        "crystal-river"
+        "st-teresa",
+        "ozello",
+        "aripeka",
+        "hernando-beach"
       ],
       "img": "img/c/keaton-beach.webp",
       "rk": {
@@ -6683,13 +6696,13 @@
       ],
       "sim": [
         "keaton-beach",
-        "steinhatchee",
-        "crystal-river",
-        "suwannee",
+        "yankeetown",
         "chokoloskee",
         "homosassa",
+        "inglis",
         "ozello",
-        "yankeetown"
+        "st-teresa",
+        "aripeka"
       ],
       "img": "img/atlas/horseshoe-beach-close.webp",
       "rk": {
@@ -6739,14 +6752,14 @@
         "Long drive for groceries, doctors and an airport"
       ],
       "sim": [
-        "homosassa",
-        "chokoloskee",
-        "ozello",
-        "steinhatchee",
         "keaton-beach",
+        "chokoloskee",
         "yankeetown",
-        "crystal-river",
-        "horseshoe-beach"
+        "homosassa",
+        "ozello",
+        "aripeka",
+        "inglis",
+        "weeki-wachee"
       ],
       "img": "img/atlas/suwannee-close.webp",
       "rk": {
@@ -6796,14 +6809,14 @@
         "Very little dining or nightlife in town"
       ],
       "sim": [
-        "homosassa",
-        "crystal-river",
-        "suwannee",
         "steinhatchee",
-        "everglades-city",
         "horseshoe-beach",
-        "weeki-wachee",
-        "keaton-beach"
+        "suwannee",
+        "chokoloskee",
+        "keaton-beach",
+        "cedarkey",
+        "homosassa",
+        "carrabelle"
       ],
       "img": "img/c/yankeetown.webp",
       "rk": {
@@ -6853,13 +6866,13 @@
         "Far from a major airport and hospital"
       ],
       "sim": [
-        "homosassa",
-        "ozello",
         "steinhatchee",
-        "keaton-beach",
-        "horseshoe-beach",
         "suwannee",
+        "keaton-beach",
+        "aripeka",
         "weeki-wachee",
+        "horseshoe-beach",
+        "freeport",
         "chokoloskee"
       ],
       "img": "img/atlas/inglis-close.webp",
@@ -6910,14 +6923,14 @@
         "Limited shopping and dining without driving to Spring Hill"
       ],
       "sim": [
+        "palm-city",
         "apollo-beach",
-        "cortez",
-        "crystal-river",
-        "weeki-wachee",
         "homosassa",
-        "sebastian",
-        "aripeka",
-        "palm-city"
+        "shalimar",
+        "lighthouse-point",
+        "belleair-beach",
+        "keaton-beach",
+        "st-marks"
       ],
       "img": "img/c/hernando-beach.webp",
       "rk": {
@@ -6968,13 +6981,13 @@
       ],
       "sim": [
         "homosassa",
-        "crystal-river",
-        "holiday",
-        "yankeetown",
+        "ozello",
+        "st-marks",
         "inglis",
-        "hernando-beach",
-        "aripeka",
-        "suwannee"
+        "freeport",
+        "suwannee",
+        "shalimar",
+        "mexico-beach"
       ],
       "img": "img/c/weeki-wachee.webp",
       "rk": {
@@ -7024,14 +7037,14 @@
         "High storm surge risk"
       ],
       "sim": [
-        "weeki-wachee",
-        "homosassa",
+        "suwannee",
         "ozello",
         "inglis",
-        "hernando-beach",
+        "yankeetown",
         "chokoloskee",
-        "st-teresa",
-        "keaton-beach"
+        "homosassa",
+        "steinhatchee",
+        "st-marks"
       ],
       "img": "img/atlas/aripeka-close.webp",
       "rk": {
@@ -7081,14 +7094,14 @@
         "US 19 sprawl takes away from the charm"
       ],
       "sim": [
-        "port-richey",
-        "daytona",
-        "new-port-richey",
         "bradenton",
         "port-charlotte",
-        "fortpierce",
-        "port-st-lucie",
-        "port-orange"
+        "panama-city",
+        "lake-park",
+        "rockledge",
+        "port-orange",
+        "edgewater",
+        "jacksonville"
       ],
       "img": "img/c/hudson.webp",
       "rk": {
@@ -7138,14 +7151,14 @@
         "No real swimming beach and a car dependent layout"
       ],
       "sim": [
-        "new-port-richey",
-        "holiday",
         "ruskin",
-        "hudson",
+        "edgewater",
+        "gibsonton",
+        "rockledge",
         "bradenton",
-        "cape-coral",
+        "lake-park",
         "port-charlotte",
-        "palm-bay"
+        "sun-city-center"
       ],
       "img": "img/c/port-richey.webp",
       "rk": {
@@ -7196,13 +7209,13 @@
       ],
       "sim": [
         "ruskin",
-        "port-richey",
-        "port-charlotte",
-        "weeki-wachee",
         "palm-bay",
-        "cape-coral",
-        "hudson",
-        "port-orange"
+        "sun-city-center",
+        "port-charlotte",
+        "gibsonton",
+        "port-orange",
+        "apollo-beach",
+        "mary-esther"
       ],
       "img": "img/c/holiday.webp",
       "rk": {
@@ -7253,13 +7266,13 @@
       ],
       "sim": [
         "niceville",
-        "redington-shores",
-        "gulf-breeze",
-        "tarpon-springs",
-        "bradenton",
-        "vero-beach",
-        "bonita-springs",
-        "dunedin"
+        "cocoa-village",
+        "new-port-richey",
+        "deerfield-beach",
+        "fort-walton-beach",
+        "lake-worth-beach",
+        "gulfport",
+        "clearwater"
       ],
       "img": "img/atlas/palm-harbor-close.webp",
       "rk": {
@@ -7309,14 +7322,14 @@
         "Busy commuter roads through town"
       ],
       "sim": [
-        "gibsonton",
-        "rockledge",
-        "safety-harbor",
         "new-port-richey",
-        "shalimar",
+        "palm-beach-gardens",
+        "clearwater",
+        "lantana",
+        "sun-city-center",
         "niceville",
-        "bradenton",
-        "port-orange"
+        "dania-beach",
+        "deerfield-beach"
       ],
       "img": "img/atlas/oldsmar-close.webp",
       "rk": {
@@ -7369,11 +7382,11 @@
         "indian-shores",
         "redington-shores",
         "tierra-verde",
+        "hernando-beach",
+        "apollo-beach",
         "sewalls-point",
-        "longboat",
-        "captiva",
-        "indian-rocks-beach",
-        "melbourne-beach"
+        "shalimar",
+        "lighthouse-point"
       ],
       "img": "img/atlas/belleair-beach-close.webp",
       "rk": {
@@ -7423,14 +7436,14 @@
         "Pricey, with a toll road and one way off the islands"
       ],
       "sim": [
-        "jupiter",
-        "indian-shores",
-        "bonita-springs",
+        "longboat",
         "marco-island",
-        "belleair-beach",
-        "tequesta",
-        "vilano-beach",
-        "longboat"
+        "fort-myers-beach",
+        "st-george-island",
+        "redington-shores",
+        "north-palm-beach",
+        "hutchinson-island",
+        "ponce-inlet"
       ],
       "img": "img/c/tierra-verde.webp",
       "rk": {
@@ -7480,13 +7493,14 @@
         "Few shops and errands without driving off the island"
       ],
       "sim": [
-        "redington-shores",
-        "belleair-beach",
-        "indian-rocks-beach",
-        "bonita-springs",
         "tierra-verde",
+        "palm-beach-shores",
         "longboat",
-        "madeira-beach"
+        "shalimar",
+        "highland-beach",
+        "daytona-beach-shores",
+        "indialantic",
+        "juno-beach"
       ],
       "img": "img/atlas/indian-shores-close.webp",
       "rk": {
@@ -7536,13 +7550,14 @@
         "Limited shopping on the island"
       ],
       "sim": [
-        "indian-shores",
-        "indian-rocks-beach",
-        "palm-harbor",
-        "ami",
-        "bonita-springs",
-        "gulf-breeze",
-        "tarpon-springs"
+        "palm-beach-shores",
+        "tierra-verde",
+        "belleair-beach",
+        "bal-harbour",
+        "vilano-beach",
+        "lake-park",
+        "tequesta",
+        "indialantic"
       ],
       "img": "img/c/redington-shores.webp",
       "rk": {
@@ -7592,14 +7607,14 @@
         "Busy highways and patchy walkability"
       ],
       "sim": [
-        "oldsmar",
-        "apollo-beach",
-        "port-st-lucie",
+        "holiday",
+        "sun-city-center",
         "port-richey",
-        "ruskin",
-        "shalimar",
+        "palm-bay",
+        "freeport",
+        "port-st-lucie",
         "rockledge",
-        "cape-coral"
+        "hudson"
       ],
       "img": "img/atlas/gibsonton-close.webp",
       "rk": {
@@ -7650,13 +7665,13 @@
       ],
       "sim": [
         "west-palm-beach",
-        "st-petersburg",
-        "southbeach",
-        "wilton-manors",
         "ftl",
+        "hollywood",
+        "st-petersburg",
         "tampa",
-        "keywest",
-        "delray"
+        "wilton-manors",
+        "clearwaterbeach",
+        "keywest"
       ],
       "img": "img/c/miami.webp",
       "rk": {
@@ -7706,14 +7721,14 @@
         "Spread out, so you drive almost everywhere"
       ],
       "sim": [
-        "melbourne",
         "panama-city",
+        "melbourne",
+        "fort-walton-beach",
+        "fort-myers",
         "pensacola",
-        "bradenton",
-        "hudson",
-        "niceville",
-        "fortpierce",
-        "port-st-lucie"
+        "daytona",
+        "cape-coral",
+        "hudson"
       ],
       "img": "img/c/jacksonville.webp",
       "rk": {
@@ -7763,14 +7778,14 @@
         "Little nightlife or dining in town itself"
       ],
       "sim": [
-        "sewalls-point",
-        "melbourne-beach",
-        "indian-harbour-beach",
-        "highland-beach",
+        "crescent-beach",
+        "beverly-beach",
+        "navarre-beach",
         "longboat",
-        "captiva",
-        "belleair-beach",
-        "satellite-beach"
+        "mexico-beach",
+        "highland-beach",
+        "st-george-island",
+        "sewalls-point"
       ],
       "img": "img/atlas/indian-river-shores-close.webp",
       "rk": {
@@ -7821,13 +7836,13 @@
       ],
       "sim": [
         "perdido-key",
-        "hobe-sound",
+        "tierra-verde",
+        "longboat",
+        "st-george-island",
+        "navarre-beach",
         "ponce-inlet",
-        "navarre",
-        "satellite-beach",
-        "crescent-beach",
-        "ormond-by-the-sea",
-        "indian-harbour-beach"
+        "pensacola-beach",
+        "marco-island"
       ],
       "img": "img/c/hutchinson-island.webp",
       "rk": {
@@ -7877,14 +7892,14 @@
         "No shops or restaurants in town"
       ],
       "sim": [
-        "indian-river-shores",
-        "melbourne-beach",
-        "belleair-beach",
         "beverly-beach",
         "captiva",
-        "lighthouse-point",
-        "north-palm-beach",
-        "tequesta"
+        "big-pine-key",
+        "indian-river-shores",
+        "navarre-beach",
+        "cortez",
+        "belleair-beach",
+        "shalimar"
       ],
       "img": "img/atlas/sewalls-point-close.webp",
       "rk": {
@@ -7934,14 +7949,14 @@
         "Ocean beaches are about 25 minutes away"
       ],
       "sim": [
-        "port-st-lucie",
-        "palm-coast",
-        "edgewater",
-        "rockledge",
+        "hernando-beach",
+        "merritt-island",
+        "port-charlotte",
+        "key-largo",
+        "hudson",
+        "dania-beach",
         "apollo-beach",
-        "sebastian",
-        "niceville",
-        "hernando-beach"
+        "navarre"
       ],
       "img": "img/atlas/palm-city-close.webp",
       "rk": {
@@ -7991,14 +8006,14 @@
         "Ocean beaches are a drive"
       ],
       "sim": [
-        "melbourne",
-        "stuart",
-        "matlacha",
-        "fortpierce",
-        "sebastian",
         "panama-city",
+        "jensen-beach",
+        "melbourne",
         "pensacola",
-        "bradenton"
+        "bradenton",
+        "cocoa-village",
+        "gulfport",
+        "madeira-beach"
       ],
       "img": "img/atlas/port-salerno-close.webp",
       "rk": {
@@ -8048,14 +8063,14 @@
         "Few shops and restaurants"
       ],
       "sim": [
-        "satellite-beach",
-        "ormond-by-the-sea",
-        "sebastian",
-        "hutchinson-island",
-        "ponce-inlet",
+        "indialantic",
+        "jensen-beach",
+        "flagler",
+        "cape-canaveral",
+        "ponte-vedra-beach",
+        "niceville",
         "gulf-breeze",
-        "englewood",
-        "navarre"
+        "lantana"
       ],
       "img": "img/c/hobe-sound.webp",
       "rk": {
@@ -8106,13 +8121,13 @@
       ],
       "sim": [
         "north-palm-beach",
+        "satellite-beach",
         "merritt-island",
-        "hobe-sound",
+        "cortez",
+        "indian-harbour-beach",
+        "gulf-breeze",
         "tierra-verde",
-        "vilano-beach",
-        "beverly-beach",
-        "jupiter",
-        "juno-beach"
+        "ormond-by-the-sea"
       ],
       "img": "img/atlas/tequesta-close.webp",
       "rk": {
@@ -8162,14 +8177,14 @@
         "Expensive, with oceanfront condo costs to plan for"
       ],
       "sim": [
-        "north-palm-beach",
-        "bonita-springs",
         "longboat",
-        "riviera-beach",
-        "tequesta",
-        "palm-beach-shores",
-        "satellite-beach",
-        "indian-harbour-beach"
+        "tierra-verde",
+        "navarre-beach",
+        "sanibel-island",
+        "crescent-beach",
+        "key-biscayne",
+        "pensacola-beach",
+        "highland-beach"
       ],
       "img": "img/c/juno-beach.webp",
       "rk": {
@@ -8219,14 +8234,14 @@
         "Small downtown with limited dining and nightlife"
       ],
       "sim": [
+        "hudson",
         "lantana",
-        "dania-beach",
-        "port-orange",
-        "clearwater",
         "bradenton",
-        "north-palm-beach",
-        "riviera-beach",
-        "apollo-beach"
+        "port-richey",
+        "boynton-beach",
+        "dania-beach",
+        "port-salerno",
+        "redington-shores"
       ],
       "img": "img/atlas/lake-park-close.webp",
       "rk": {
@@ -8276,14 +8291,14 @@
         "Island storm exposure and a short list of restaurants"
       ],
       "sim": [
-        "north-palm-beach",
-        "vilano-beach",
+        "bal-harbour",
         "redington-shores",
-        "juno-beach",
-        "riviera-beach",
-        "tequesta",
-        "lake-park",
-        "fernandina"
+        "palm-beach",
+        "indian-rocks-beach",
+        "treasure-island",
+        "indian-shores",
+        "key-biscayne",
+        "indialantic"
       ],
       "img": "img/c/palm-beach-shores.webp",
       "rk": {
@@ -8333,14 +8348,14 @@
         "Older housing and storm exposure"
       ],
       "sim": [
-        "boca-raton",
-        "hollywood",
-        "nsb",
-        "jaxbeach",
+        "gulfport",
         "atlantic-beach",
         "dunedin",
-        "gulfport",
-        "tarpon-springs"
+        "tarpon-springs",
+        "boca-raton",
+        "staug",
+        "neptune-beach",
+        "cocoa-village"
       ],
       "img": "img/c/lake-worth-beach.webp",
       "rk": {
@@ -8390,14 +8405,14 @@
         "Older homes and mostly car dependent errands"
       ],
       "sim": [
-        "riviera-beach",
-        "dania-beach",
-        "north-palm-beach",
-        "shalimar",
         "lake-park",
-        "rockledge",
-        "cortez",
-        "indian-shores"
+        "dania-beach",
+        "indian-rocks-beach",
+        "palm-harbor",
+        "oldsmar",
+        "hobe-sound",
+        "palm-beach-shores",
+        "hudson"
       ],
       "img": "img/c/lantana.webp",
       "rk": {
@@ -8447,14 +8462,14 @@
         "Traffic, and parking fees at the beach"
       ],
       "sim": [
-        "ormond-beach",
-        "cape-canaveral",
-        "riviera-beach",
-        "jupiter",
+        "pompano-beach",
+        "deerfield-beach",
+        "madeira-beach",
+        "dania-beach",
         "bonita-springs",
-        "fort-walton-beach",
-        "palm-harbor",
-        "sebastian"
+        "bradenton",
+        "fort-myers-beach",
+        "lake-park"
       ],
       "img": "img/c/boynton-beach.webp",
       "rk": {
@@ -8504,14 +8519,14 @@
         "Small selection of shops and restaurants on this side of the bridge"
       ],
       "sim": [
-        "ponce-inlet",
-        "gulf-breeze",
-        "jensen-beach",
-        "marco-island",
-        "redington-shores",
-        "jupiter",
+        "indialantic",
+        "flagler",
         "vero-beach",
-        "melbourne-beach"
+        "jensen-beach",
+        "ponce-inlet",
+        "sebastian",
+        "melbourne-beach",
+        "key-largo"
       ],
       "img": "img/c/vilano-beach.webp",
       "rk": {
@@ -8562,13 +8577,13 @@
       ],
       "sim": [
         "navarre-beach",
-        "ormond-by-the-sea",
-        "port-st-joe",
+        "indian-river-shores",
+        "st-george-island",
+        "beverly-beach",
+        "longboat",
         "mexico-beach",
-        "melbourne-beach",
-        "hutchinson-island",
-        "hobe-sound",
-        "satellite-beach"
+        "port-st-joe",
+        "juno-beach"
       ],
       "img": "img/atlas/crescent-beach-close.webp",
       "rk": {
@@ -8618,14 +8633,14 @@
         "Almost nothing in town, so you drive for errands"
       ],
       "sim": [
+        "indian-river-shores",
+        "sewalls-point",
+        "big-pine-key",
+        "crescent-beach",
+        "chokoloskee",
         "melbourne-beach",
-        "palm-coast",
-        "ormond-by-the-sea",
-        "edgewater",
-        "satellite-beach",
-        "indian-harbour-beach",
         "mexico-beach",
-        "sebastian"
+        "navarre-beach"
       ],
       "img": "img/atlas/beverly-beach-close.webp",
       "rk": {
@@ -8675,14 +8690,14 @@
         "A1A has washed out in past storms"
       ],
       "sim": [
-        "hobe-sound",
+        "mary-esther",
         "englewood",
+        "edgewater",
         "palm-coast",
-        "beverly-beach",
+        "carrabelle",
         "satellite-beach",
-        "titusville",
-        "crescent-beach",
-        "port-st-joe"
+        "daytona-beach-shores",
+        "freeport"
       ],
       "img": "img/c/ormond-by-the-sea.webp",
       "rk": {
@@ -8732,14 +8747,14 @@
         "Only one road on and off the peninsula"
       ],
       "sim": [
+        "sanibel-island",
+        "melbourne-beach",
         "vilano-beach",
-        "hutchinson-island",
-        "hobe-sound",
-        "gulf-breeze",
-        "jensen-beach",
-        "indian-harbour-beach",
-        "marco-island",
-        "jupiter"
+        "tierra-verde",
+        "st-george-island",
+        "pensacola-beach",
+        "islamorada",
+        "venice"
       ],
       "img": "img/c/ponce-inlet.webp",
       "rk": {
@@ -8789,14 +8804,14 @@
         "Limited dining and no beach of its own"
       ],
       "sim": [
+        "englewood",
+        "carrabelle",
         "palm-coast",
-        "port-orange",
-        "sebastian",
-        "niceville",
-        "beverly-beach",
         "titusville",
-        "rockledge",
-        "flagler"
+        "ormond-by-the-sea",
+        "port-charlotte",
+        "merritt-island",
+        "port-richey"
       ],
       "img": "img/atlas/edgewater-close.webp",
       "rk": {
@@ -8846,14 +8861,14 @@
         "Cruise and tourist traffic on the main road"
       ],
       "sim": [
-        "fortpierce",
-        "cocoa",
-        "flagler",
-        "ormond-beach",
+        "jensen-beach",
+        "pensacola-beach",
+        "gulf-breeze",
+        "deerfield-beach",
         "indialantic",
-        "indian-harbour-beach",
-        "daytona",
-        "riviera-beach"
+        "titusville",
+        "flagler",
+        "st-augustine-beach"
       ],
       "img": "img/c/cape-canaveral.webp",
       "rk": {
@@ -8903,14 +8918,14 @@
         "No ocean beach of its own and some low lying flood areas"
       ],
       "sim": [
-        "tequesta",
         "north-palm-beach",
-        "palm-coast",
+        "tequesta",
         "edgewater",
-        "hernando-beach",
-        "sebastian",
+        "palm-city",
         "titusville",
-        "weeki-wachee"
+        "port-charlotte",
+        "apollo-beach",
+        "palm-coast"
       ],
       "img": "img/atlas/merritt-island-close.webp",
       "rk": {
@@ -8962,12 +8977,12 @@
       "sim": [
         "melbourne",
         "gulfport",
-        "pensacola",
-        "bradenton",
-        "safety-harbor",
-        "fortpierce",
-        "flagler",
-        "hollywood"
+        "lake-worth-beach",
+        "panama-city",
+        "fort-walton-beach",
+        "palm-harbor",
+        "new-port-richey",
+        "atlantic-beach"
       ],
       "img": "img/c/cocoa-village.webp",
       "rk": {
@@ -9017,14 +9032,14 @@
         "Little nightlife of its own"
       ],
       "sim": [
-        "port-orange",
-        "shalimar",
-        "niceville",
-        "edgewater",
-        "oldsmar",
-        "flagler",
-        "port-st-lucie",
-        "palm-city"
+        "mary-esther",
+        "sun-city-center",
+        "titusville",
+        "ruskin",
+        "hudson",
+        "holiday",
+        "palm-bay",
+        "port-richey"
       ],
       "img": "img/c/rockledge.webp",
       "rk": {
@@ -9074,14 +9089,14 @@
         "Island storm exposure"
       ],
       "sim": [
-        "satellite-beach",
-        "englewood",
-        "indialantic",
-        "palm-coast",
-        "beverly-beach",
-        "melbourne-beach",
-        "cape-canaveral",
-        "fortpierce"
+        "tequesta",
+        "sebastian",
+        "gulf-breeze",
+        "vilano-beach",
+        "marco-island",
+        "merritt-island",
+        "ormond-by-the-sea",
+        "flagler"
       ],
       "img": "img/c/indian-harbour-beach.webp",
       "rk": {
@@ -9131,14 +9146,14 @@
         "Not on the ocean itself"
       ],
       "sim": [
-        "pensacola",
-        "cocoa-village",
-        "fortpierce",
-        "jacksonville",
-        "port-salerno",
         "panama-city",
+        "fort-walton-beach",
+        "pensacola",
+        "jacksonville",
+        "cocoa-village",
+        "port-salerno",
         "bradenton",
-        "stuart"
+        "fort-myers"
       ],
       "img": "img/c/melbourne.webp",
       "rk": {
@@ -9189,13 +9204,13 @@
       ],
       "sim": [
         "key-largo",
-        "islamorada",
-        "vilano-beach",
-        "navarre",
-        "tequesta",
-        "hobe-sound",
         "marco-island",
-        "ponce-inlet"
+        "vilano-beach",
+        "destin",
+        "sebastian",
+        "cocoa",
+        "crystal-river",
+        "palm-coast"
       ],
       "img": "img/c/marathon.webp",
       "rk": {
@@ -9245,14 +9260,14 @@
         "Expensive insurance"
       ],
       "sim": [
-        "navarre-beach",
-        "indian-river-shores",
-        "melbourne-beach",
         "beverly-beach",
         "captiva",
-        "crescent-beach",
-        "hutchinson-island",
-        "tequesta"
+        "melbourne-beach",
+        "sewalls-point",
+        "indian-river-shores",
+        "carrabelle",
+        "chokoloskee",
+        "crescent-beach"
       ],
       "img": "img/c/big-pine-key.webp",
       "rk": {
@@ -9302,14 +9317,14 @@
         "Causeway traffic"
       ],
       "sim": [
-        "sanibel-island",
-        "ami",
-        "30a",
+        "marco-island",
         "bradenton-beach",
-        "palm-beach-shores",
-        "fernandina",
-        "juno-beach",
-        "siesta-key"
+        "ami",
+        "tierra-verde",
+        "pensacola-beach",
+        "fort-myers-beach",
+        "sanibel-island",
+        "juno-beach"
       ],
       "img": "img/c/key-biscayne.webp",
       "rk": {
@@ -9359,14 +9374,14 @@
         "Far from a hospital"
       ],
       "sim": [
+        "islamorada",
         "sanibel-island",
-        "melbourne-beach",
-        "vilano-beach",
-        "captiva",
-        "navarre-beach",
-        "marco-island",
         "st-george-island",
-        "mexico-beach"
+        "ami",
+        "melbourne-beach",
+        "bradenton-beach",
+        "big-pine-key",
+        "cortez"
       ],
       "img": "img/c/boca-grande.webp",
       "rk": {
@@ -9416,14 +9431,14 @@
         "High insurance"
       ],
       "sim": [
-        "deerfield-beach",
-        "st-pete-beach",
+        "boynton-beach",
+        "clearwater",
         "madeira-beach",
-        "clearwaterbeach",
-        "fort-myers-beach",
-        "destin",
-        "fort-walton-beach",
-        "bonita-springs"
+        "dania-beach",
+        "ftl",
+        "hallandale",
+        "hollywood",
+        "destin"
       ],
       "img": "img/c/pompano-beach.webp",
       "rk": {
@@ -9474,13 +9489,13 @@
       ],
       "sim": [
         "pompano-beach",
-        "fort-walton-beach",
-        "clearwaterbeach",
+        "boynton-beach",
+        "madeira-beach",
+        "palm-harbor",
         "cape-canaveral",
-        "st-pete-beach",
-        "bonita-springs",
-        "lake-worth-beach",
-        "madeira-beach"
+        "clearwater",
+        "fort-walton-beach",
+        "navarre"
       ],
       "img": "img/c/deerfield-beach.webp",
       "rk": {

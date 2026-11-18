@@ -91,3 +91,8 @@ aside .alt a.on{text-decoration:underline}
 @media(max-width:900px){.gv-a{display:none}}
 /* Nov 13: the Compare link rides inside the sticky Ask card on desktop so the card never slides over it */
 @media (min-width:901px){aside .card .cmpl{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--hair)}}
+/* #most-like (Nov 18 2026) */
+.lkp{margin:-8px 0 18px;color:var(--mute);font-size:15.5px;line-height:1.45}
+.lk .nt{max-width:640px}
+.cmpb{display:inline-flex;align-items:center;min-height:44px;margin-top:18px;padding:12px 22px;border-radius:999px;background:var(--ink);color:#fff;font-weight:500;font-size:15.5px;line-height:1.3;text-decoration:none}
+.cmpb:hover{background:#0E1E21}

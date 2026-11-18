@@ -1,23 +1,26 @@
-"""Builds articles/towns-we-recommend.html (Nov 16 2026).
+"""Builds articles/towns-we-recommend.html (Nov 16 2026, reworked Nov 18 2026).
 
-Our picks, not a data ranking: the 31 towns we built Florida Coastal around (the original 27
-plus St. George Island, St. Teresa, St. Marks and Everglades City, which Mark added next).
+Nov 18: the picks are now the top 30 towns by our quality of life score (tools/qol_score.py),
+ranked 1 to 30, each card showing its score, with a box explaining the weights. Mark approved
+"top 30 by the score". (Nov 16 version: the 31 towns we built the site around, by coast.)
 Uses articles/flood-risk-rankings.html as the page template (head, header, news layout,
 More guides band, newsletter, footer). Town facts (name, region, price, blurb, photo) come from
 src/data/beach-towns-t.json and category ranks from src/data/map-ld.json, so rerun after
 town data changes:
     python3 tools/picks_article.py
 """
-import json, re, html, os
+import json, re, html, os, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from qol_score import scores, WEIGHTS, TOP
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 ld = json.load(open('src/data/map-ld.json'))
 T = {t['id']: t for t in json.load(open('src/data/beach-towns-t.json'))}
-PICKS = ('30a destin pcb apalachicola cedarkey dunedin clearwaterbeach gulfport ami longboat captiva matlacha naples '
-         'keywest islamorada southbeach ftl delray jupiter fortpierce cocoa nsb daytona flagler staug jaxbeach fernandina '
-         'st-george-island st-teresa st-marks everglades-city').split()
-assert len(PICKS) == len(set(PICKS)) == 31 and all(t in T and t in ld for t in PICKS)
+QOL, ORDER = scores(ld)
+PICKS = ORDER[:TOP]
+RANK = {t: i + 1 for i, t in enumerate(ORDER)}
+assert len(PICKS) == TOP and all(t in T and t in ld for t in PICKS)
 N = len(ld)
 K = {'walk': 'walkability', 'beach': 'beaches', 'water': 'boating and the water', 'outdoors': 'the outdoors',
      'meet': 'social scene', 'charm': 'coastal charm', 'edu': 'public schools', 'airport': 'airport access',
@@ -30,7 +33,7 @@ GROUPS = [('panhandle', 'The Panhandle', lambda t: T[t]['lo']),
           ('gulf', 'The Gulf Coast', lambda t: -T[t]['la']),
           ('keys', 'The Florida Keys', lambda t: -T[t]['lo']),
           ('atlantic', 'The Atlantic Coast', lambda t: T[t]['la'])]
-assert {T[t]['c'] for t in PICKS} == {g[0] for g in GROUPS}
+
 
 
 def nm(t):
@@ -62,17 +65,17 @@ START = [('walk', 'Walk everywhere'), ('beach', 'The best beach'),
          ('water', 'Life on a boat'), ('edu', 'Raising kids'), ('meet', 'Making friends fast'),
          ('charm', 'History and charm'), ('airport', 'Flying out often')]
 cheap = min(PICKS, key=kprice)
-assert cheap == 'daytona'
 LEADS, used = {}, {cheap}
 for k, _ in START:  # best ranked pick in each category, each town used once
     LEADS[k] = min((t for t in PICKS if t not in used and t not in SKIP.get(k, ())), key=lambda t: (ld[t]['rk'].get(k, N), t))
     used.add(LEADS[k])
-assert all(ld[LEADS[k]]['rk'][k] <= 5 for k in LEADS)
+assert all(ld[LEADS[k]]['rk'][k] <= 40 for k in LEADS), {k: ld[LEADS[k]]['rk'][k] for k in LEADS}
 
 TITLE = 'The Florida Beach Towns We Recommend Most'
-DEK = ('Out of the 167 towns we cover, these are the 31 we\'d send a friend to first. '
-       'They\'re picked for what daily life feels like there, not for who tops a spreadsheet.')
+DEK = ('Our top 30 of the 167 towns on the Florida coast, ranked by one quality of life score: '
+       'beaches, walkability, the outdoors, peace and quiet, food, people and charm, weighed the way we weigh them.')
 DATE, DATE_H = '2026-11-16', 'Nov 16, 2026'
+MOD, MOD_H = '2026-11-18', 'Updated Nov 18, 2026'
 URL = 'https://www.floridacoastal.co/articles/towns-we-recommend'
 LEAD = 'grayton-beach'
 
@@ -89,29 +92,38 @@ def card(t):
     s = img(t)
     return ('<a class="pk-c" href="towns/%s.html"><span class="pk-ph"><img src="img/c/s/%s.webp" '
             'srcset="img/c/s/%s.webp 480w, img/c/m/%s.webp 960w" sizes="(max-width:700px) 34vw, 200px" alt="" loading="lazy" decoding="async"></span>'
-            '<span class="pk-b"><b class="pk-n">%s</b><span class="pk-r">%s · Typical home %s</span><span class="pk-t">%s</span>'
-            '%s</span></a>') % (t, s, s, s, e(nm(t)), e(x['r']), e(x['p']), e(x.get('b', '')), ('<span class="pk-k">%s</span>' % e(best_at(t))) if best_at(t) else '')
+            '<span class="pk-b"><span class="pk-q"><b>%d</b> quality of life · No. %d of %d</span>'
+            '<b class="pk-n">%s</b><span class="pk-r">%s · Typical home %s</span><span class="pk-t">%s</span>'
+            '%s</span></a>') % (t, s, s, s, QOL[t], RANK[t], N, e(nm(t)), e(x['r']), e(x['p']), e(x.get('b', '')),
+                                ('<span class="pk-k">%s</span>' % e(best_at(t))) if best_at(t) else '')
+
+
+def method_box():
+    rows = ''.join('<li><span>%s</span><b>%d%%</b></li>' % (e(lab), w) for _, w, lab in WEIGHTS)
+    return ('<div class="fc-box pk-how"><h3>How we score quality of life</h3>'
+            '<p>Every one of the 167 towns gets one score out of 100. We start from where the town ranks in each '
+            'category below, out of all 167, and weigh them like this:</p><ul>%s</ul>'
+            '<p>We left out nightlife and boating on purpose. They matter a lot to some people and not at all to others, '
+            'so they live on the <a href="map.html?mode=vibes">Vibe Map</a> instead. Every category is explained on '
+            '<a href="scoring.html">how we score</a>.</p></div>') % rows
 
 
 def body():
     p = []
-    p.append('<p>Most lists like this rank towns on a formula and call the winner the best. We have a formula too, and it scores all 167 towns we cover. '
-             'This isn\'t that list.</p>')
-    p.append('<p>These are the towns we\'d actually tell a friend to look at first. They\'re the %d we built Florida Coastal around, before we added the rest. '
-             'Every one of them gives you something you can\'t get just anywhere: a downtown you can walk, a beach worth the move, a harbor full of boats, '
-             'or a pace slow enough to notice the sunset.</p>' % len(PICKS))
-    p.append('<p>None of them is perfect. Some cost more than they should, some are far from an airport, and a few are quiet enough that you\'ll '
-             'drive for a good dinner. We\'ve noted what each one does best, and the town pages cover the rest.</p>')
+    p.append('<p>When we say a town has a good quality of life, we mean something specific: you can get to a good beach, walk to coffee '
+             'and dinner, get outside every day, sleep without a party next door, find a good meal, meet people and feel like you live '
+             'somewhere with a real sense of place. We turned that into one score out of 100 and ran it on all 167 towns.</p>')
+    p.append('<p>These are the top %d. None of them is perfect. Some cost more than they should, some are far from an airport, and a few are '
+             'quiet enough that you\'ll drive for a good dinner. We\'ve noted what each one does best, and the town pages cover the rest.</p>' % len(PICKS))
+    p.append(method_box())
     p.append(quizbox('top'))
     p.append('<h2>Where to start</h2>')
     lis = ''.join('<li><span>%s</span><a href="towns/%s.html">%s</a></li>' % (e(lab), LEADS[k], e(nm(LEADS[k]))) for k, lab in START)
     lis += '<li><span>More house for less</span><a href="towns/%s.html">%s</a></li>' % (cheap, e(nm(cheap)))
     p.append('<div class="fc-box pk-start"><h3>If you want…</h3><ul>%s</ul>'
              '<p>Each one ranks near the top of all %d towns we cover for it.</p></div>' % (lis, N))
-    for c, label, key in GROUPS:
-        ts = sorted([t for t in PICKS if T[t]['c'] == c], key=key)
-        p.append('<h2>%s <small class="pk-cnt">%d towns</small></h2>' % (label, len(ts)))
-        p.append('<div class="pk-list">%s</div>' % ''.join(card(t) for t in ts))
+    p.append('<h2>The top %d, ranked</h2>' % len(PICKS))
+    p.append('<div class="pk-list">%s</div>' % ''.join(card(t) for t in PICKS))
     p.append('<blockquote class="nyt-pull">Great places to visit aren\'t always great places to live. These are both.</blockquote>')
     p.append('<div class="fc-box"><h3>Before you pick one</h3><ul>'
              '<li><b>Go in August, not just February.</b> A town has to feel right in the heat, not only in season.</li>'
@@ -136,6 +148,12 @@ PK_CSS = ('<style id="pk-css">'
           '.pk-r{font:600 12.5px/1.4 "DM Sans",sans-serif;color:#5b6b6e;letter-spacing:.02em}'
           '.pk-t{font-size:15.5px;line-height:1.5;color:#2b3a3d;margin-top:2px}'
           '.pk-k{font:600 12.5px/1.4 "DM Sans",sans-serif;color:#0F6E72;margin-top:4px}'
+          '.pk-q{font:600 12.5px/1.4 "DM Sans",sans-serif;color:#5b6b6e;letter-spacing:.02em}'
+          '.pk-q b{display:inline-block;min-width:34px;padding:2px 7px;margin-right:6px;border-radius:999px;background:#152A2E;color:#fff;text-align:center;font-size:13px}'
+          '.pk-how ul{list-style:none;padding:0;margin:10px 0}'
+          '.pk-how li{display:flex;justify-content:space-between;gap:16px;padding:7px 0;border-bottom:1px solid #DFE6E5;font-size:15px}'
+          '.pk-how li:last-child{border-bottom:0}'
+          '.fc-box.pk-how{background:#fff!important}.fc-box.pk-how p{font-size:15px;line-height:1.55}'
           '.pk-cnt{font:600 13px "DM Sans",sans-serif;color:#5b6b6e;margin-left:8px;letter-spacing:.02em}'
           '.fc-box.pk-start{background:#fff!important}.pk-start ul{list-style:none;padding:0;margin:0}'
           '.pk-start li{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:9px 0;border-bottom:1px solid #DFE6E5}'
@@ -157,12 +175,12 @@ out = out.replace('imagesrcset="img/w/m/flood-siesta-key-lead.webp 800w, img/w/f
                   'imagesrcset="img/w/m/%s.webp 800w, img/w/%s.webp 1400w"' % (LEAD, LEAD))
 graph = {"@context": "https://schema.org", "@graph": [
     {"@type": "Article", "headline": TITLE, "description": DEK, "image": "https://www.floridacoastal.co/img/c/%s.jpg" % LEAD,
-     "datePublished": DATE, "dateModified": DATE, "author": {"@type": "Person", "name": "Mark and Betsy Scott"},
+     "datePublished": DATE, "dateModified": MOD, "author": {"@type": "Person", "name": "Mark and Betsy Scott"},
      "publisher": {"@id": "https://www.floridacoastal.co/#org"}, "mainEntityOfPage": URL},
     {"@type": "ItemList", "name": "The Florida beach towns we recommend most", "numberOfItems": len(PICKS),
      "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": nm(t) + ', Florida',
                           "url": "https://www.floridacoastal.co/towns/" + t}
-                         for i, t in enumerate(t for c, _, k in GROUPS for t in sorted([t for t in PICKS if T[t]['c'] == c], key=k))]},
+                         for i, t in enumerate(PICKS)]},
     {"@type": "BreadcrumbList", "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.floridacoastal.co/"},
         {"@type": "ListItem", "position": 2, "name": "Articles", "item": "https://www.floridacoastal.co/articles/"},
@@ -176,7 +194,7 @@ hd = ('<div class="news-art"><div class="nyt"><header class="nyt-head"><div clas
       '<figure class="nyt-lead"><picture><source type="image/webp" srcset="img/w/m/%s.webp 800w, img/w/%s.webp 1400w" sizes="100vw">'
       '<img src="img/c/%s.jpg" alt="Grayton Beach on 30A, where the dune lake meets the Gulf" fetchpriority="high" decoding="async"></picture>'
       '<figcaption>Grayton Beach, on 30A.</figcaption></figure><div class="nyt"><article class="prose">%s') % (
-          e(TITLE), e(DEK), DATE, DATE_H, LEAD, LEAD, LEAD, body())
+          e(TITLE), e(DEK), MOD, MOD_H, LEAD, LEAD, LEAD, body())
 i = out.index('<div class="news-art">')
 j = out.index('</article><div class="nyt-cta">')
 out = out[:i] + hd + out[j:]

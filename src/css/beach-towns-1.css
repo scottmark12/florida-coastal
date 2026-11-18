@@ -404,3 +404,7 @@ html body section#regions:not(#x):not(#y):not(#z):not(#w):not(#v):not(#u):not(#t
 
 /* Nov 14 (Mark): full screen hero on desktop, like the home hero */
 @media (min-width:761px){html body section.hs:not(#x):not(#y){height:100vh!important;min-height:620px!important}}
+/* #hs-sub (Nov 18 2026): one plain line on what the page is for, above the search bar */
+.hs h1{margin-bottom:14px}
+.hs-sub{max-width:560px;margin:0 auto 26px;font-size:18px;line-height:1.45;opacity:.95;text-wrap:balance;text-shadow:0 1px 2px rgba(10,20,22,.35),0 2px 14px rgba(10,20,22,.4)}
+@media(max-width:700px){.hs-sub{font-size:16px;margin-bottom:22px}}
