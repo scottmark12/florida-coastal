@@ -8,19 +8,42 @@ Run once after tools/similar_towns.py, then build. Safe to rerun.
 """
 import glob, html, json, re
 
+
+def short_price(p):
+    """$1.01M -> $1M, $1.24M -> $1.2M, ranges kept; K values unchanged."""
+    def one(m):
+        v = float(m.group(1))
+        r = round(v, 1)
+        return '$%sM' % (('%d' % r) if r == int(r) else ('%.1f' % r))
+    return re.sub(r'\$(\d+(?:\.\d+)?)M', one, p) if p else p
+
 towns = {t['id']: t for t in json.load(open('src/data/towns.json'))}
 OLD = re.compile(r'<section><h2>Nearby</h2><div class="mapw"><svg id="mm" viewBox="0 0 10 10"></svg><div class="nt">(.*?)</div></div></section>', re.S)
 CARD = re.compile(r'<a href="towns/([^"]+)\.html"><div class="ph" style="background-image:url\(\'([^\']+)\'\)"></div><div><b>([^<]+)</b><small>([^<]+)</small>')
+NEW = re.compile(r'<a class="lkc" href="towns/([^"]+)\.html"><span class="lkc-ph" style="background-image:url\(\'([^\']+)\'\)"></span><b>([^<]+)</b><span class="lkc-m">([^<·]+?)(?: · [^<]*)?</span></a>')
 CMPL = re.compile(r'<a class="cmpl" href="compare\.html\?t=[^"]+">[^<]*</a>')
 n = 0
 for f in sorted(glob.glob('src/towns/*.html')):
     s = open(f).read()
     m = OLD.search(s)
+    if not m:
+        m2 = re.search(r'<section class="nb">.*?</section>', s, re.S)
+        if m2:
+            cards = ''
+            found = NEW.findall(m2.group(0))
+            assert len(found) == 3, (f, len(found))
+            for tid, img, name, dist in found:
+                p = towns[tid].get('p')
+                meta = html.escape(dist.strip()) + (' · ' + html.escape(short_price(p)) if p else '')
+                cards += (f'<a class="lkc" href="towns/{tid}.html"><span class="lkc-ph" style="background-image:url(\'{img}\')"></span>'
+                          f'<b>{name}</b><span class="lkc-m">{meta}</span></a>')
+            s = s[:m2.start()] + ('<section class="nb"><h2>Nearby</h2><svg id="mm" viewBox="0 0 10 10"></svg>'
+                                  f'<div class="lkl">{cards}</div></section>') + s[m2.end():]
     if m:
         cards = ''
         for tid, img, name, dist in CARD.findall(m.group(1)):
             p = towns[tid].get('p')
-            meta = html.escape(dist) + (' · ' + html.escape(p) if p else '')
+            meta = html.escape(dist) + (' · ' + html.escape(short_price(p)) if p else '')
             cards += (f'<a class="lkc" href="towns/{tid}.html"><span class="lkc-ph" style="background-image:url(\'{img}\')"></span>'
                       f'<b>{name}</b><span class="lkc-m">{meta}</span></a>')
         s = s[:m.start()] + ('<section class="nb"><h2>Nearby</h2><svg id="mm" viewBox="0 0 10 10"></svg>'

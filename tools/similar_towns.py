@@ -13,6 +13,15 @@ section is replaced, not added twice. Then build.
 """
 import json, re, html, os
 
+
+def short_price(p):
+    """$1.01M -> $1M, $1.24M -> $1.2M, ranges kept; K values unchanged."""
+    def one(m):
+        v = float(m.group(1))
+        r = round(v, 1)
+        return '$%sM' % (('%d' % r) if r == int(r) else ('%.1f' % r))
+    return re.sub(r'\$(\d+(?:\.\d+)?)M', one, p) if p else p
+
 CATS = ['nightlife', 'meet', 'quiet', 'walk', 'water', 'beach', 'dining', 'outdoors', 'afford',
         'airport', 'charm']
 WORD = {'nightlife': 'nightlife', 'meet': 'meeting people', 'quiet': 'peace and quiet',
@@ -84,7 +93,7 @@ for tid in ld:
     cards = ''.join(
         f'<a class="lkc" href="towns/{o}.html"><span class="lkc-ph" style="background-image:url(\'{small_img(towns[o]["img"])}\')"></span>'
         f'<b>{html.escape(towns[o]["n"].split(" (")[0])}</b>'
-        f'<span class="lkc-m">{region(o)}{(" · " + html.escape(towns[o]["p"])) if towns[o].get("p") else ""}</span>'
+        f'<span class="lkc-m">{region(o)}{(" · " + html.escape(short_price(towns[o]["p"]))) if towns[o].get("p") else ""}</span>'
         f'<span class="lkc-t">{html.escape(why(tid, o))}</span></a>' for o in top3)
     block = (f'{START}<section class="lk"><div class="lkh"><h2>More like {html.escape(name)}</h2>'
              f'<a class="lka" href="compare.html?t={",".join([tid] + top3)}">Compare all four</a></div>'
