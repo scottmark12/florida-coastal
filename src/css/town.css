@@ -94,14 +94,15 @@ aside .alt a.on{text-decoration:underline}
 /* #most-like (Nov 18 2026) */
 .lkp{margin:-8px 0 18px;color:var(--mute);font-size:15.5px;line-height:1.45}
 .lk .nt{max-width:640px}
-.cmpr{display:flex;align-items:center;gap:16px;max-width:640px;margin-top:24px;padding:16px 16px 16px 18px;border:1px solid var(--hair);border-radius:18px;background:#fff;box-shadow:0 2px 14px rgba(0,0,0,.05);text-decoration:none;color:var(--ink);transition:border-color .15s,box-shadow .15s}
-.cmpr:hover{border-color:#CFC9BE;box-shadow:0 4px 18px rgba(21,42,46,.09)}
-.cmpr-f{display:flex;gap:6px;flex:none}
-.cmpr-f i{width:52px;height:52px;border-radius:8px;background:#ddd center/cover}
-.cmpr-t{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
-.cmpr-t small{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc)}
-.cmpr-t b{font-size:16px;font-weight:500;line-height:1.3;color:var(--ink)}
-.cmpr-b{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;padding:0 22px;border-radius:999px;background:var(--ink);color:#fff;font-weight:500;font-size:15px;transition:background .15s}
-.cmpr-b::after{content:"\2192"}
-.cmpr:hover .cmpr-b{background:#0E1E21}
-@media(max-width:560px){.cmpr{flex-wrap:wrap;gap:12px;padding:14px}.cmpr-f i{width:44px;height:44px}.cmpr-t{flex-basis:calc(100% - 160px)}.cmpr-b{width:100%}}
+.cmpr{display:flex;align-items:center;gap:18px;max-width:640px;margin-top:26px;padding:16px 16px 16px 16px;border-radius:14px;background:var(--g);text-decoration:none;color:var(--ink);transition:background .2s}
+.cmpr:hover{background:#ECE8E1}
+.cmpr-f{display:flex;flex:none}
+.cmpr-f i{width:52px;height:52px;border-radius:10px;background:#ddd center/cover;box-shadow:0 0 0 2px var(--g);margin-left:-10px}
+.cmpr-f i:first-child{margin-left:0}
+.cmpr-t{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
+.cmpr-t small{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.cmpr-t b{font-size:16.5px;font-weight:500;line-height:1.3;color:var(--ink)}
+.cmpr-b{flex:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 24px;border-radius:999px;background:var(--ink);color:#fff;font-weight:500;font-size:15.5px}
+.cmpr-b::after{content:"\2192";transition:transform .2s}
+.cmpr:hover .cmpr-b::after{transform:translateX(3px)}
+@media(max-width:560px){.cmpr{flex-wrap:wrap;gap:14px;padding:14px}.cmpr-f i{width:46px;height:46px}.cmpr-t{flex-basis:calc(100% - 140px)}.cmpr-b{width:100%}}
