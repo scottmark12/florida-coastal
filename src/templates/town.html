@@ -17,7 +17,7 @@
 <script src="{{static:/img/map/fl-compass-noband.js}}"></script>
 <script>{{inline-js}}
 {{town:map-data}}
-const COS=.883,X=l=>(l+89)*100*COS,Y=l=>(36.8-l)*100;const w=86,h=62,vb=[X(C.lo)-w/2,Y(C.la)-h/2,w,h];const m=document.getElementById('mm');m.setAttribute('viewBox',vb.join(' '));const k=w/440;
+const COS=.883,X=l=>(l+89)*100*COS,Y=l=>(36.8-l)*100;const NB={{town:near}},G=P.filter(t=>t.id=="{{town:id}}"||NB.includes(t.id)),xs=G.map(t=>X(t.lo)).concat([X(C.lo)]),ys=G.map(t=>Y(t.la)).concat([Y(C.la)]),cx=(Math.min(...xs)+Math.max(...xs))/2,cy=(Math.min(...ys)+Math.max(...ys))/2,h=Math.max(56,(Math.max(...ys)-Math.min(...ys))+22),w=Math.max(150,h*2.68,(Math.max(...xs)-Math.min(...xs))+40),vb=[cx-w/2,cy-h/2,w,h];const m=document.getElementById('mm');m.setAttribute('viewBox',vb.join(' '));const k=w/Math.max(300,m.getBoundingClientRect().width||440);
 let s=`<svg class="terr" x="0" y="0" width="1192" height="1380" viewBox="0 0 1192 1380" overflow="visible" style="--k:${k}">${window.FLMAP||''}</svg>`;
 s+=`<style>.terr .mc{stroke:#86A3B3;stroke-width:${k*.9}px}.terr .mr1{stroke:#D9D2C5;stroke-width:${k*2.4}px}.terr .mr2{stroke-width:${k*1.3}px}.terr .mv{stroke-width:${k*1.2}px}.terr .ms{stroke-width:${k}px}</style>`;
 const near={{town:near}};

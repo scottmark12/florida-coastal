@@ -91,19 +91,21 @@ aside .alt a.on{text-decoration:underline}
 @media(max-width:900px){.gv-a{display:none}}
 /* Nov 13: the Compare link rides inside the sticky Ask card on desktop so the card never slides over it */
 @media (min-width:901px){aside .card .cmpl{margin:16px 0 0;padding-top:14px;border-top:1px solid var(--hair)}}
-/* #most-like (Nov 18 2026): photo cards, one action in the header */
+/* #most-like (Nov 18 2026): Nearby and More like share one photo card style */
+.nb #mm{display:block;width:100%;height:auto;border-radius:14px;background:#8DBCD9;margin-bottom:20px}
 .lkh{display:flex;align-items:baseline;justify-content:space-between;gap:16px}
 .lkh h2{margin-bottom:6px}
 .lka{flex:none;font-size:15px;font-weight:600;color:var(--ink);text-decoration:underline;text-decoration-color:rgba(21,42,46,.3);text-underline-offset:4px;white-space:nowrap}
 .lka:hover{text-decoration-color:var(--ink)}
 .lka::after{content:" \2192"}
+.lka-m{display:none}
 .lkp{margin:0 0 20px;color:var(--mute);font-size:15.5px;line-height:1.45}
 .lkl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
 .lkc{display:flex;flex-direction:column;text-decoration:none;color:var(--ink);min-width:0}
 .lkc-ph{display:block;aspect-ratio:4/3;border-radius:12px;background:#ddd center/cover;margin-bottom:12px;transition:opacity .2s}
 .lkc:hover .lkc-ph{opacity:.9}
-.lkc b{font-size:17px;font-weight:500;line-height:1.25}
+.lkc b{font-size:17px;font-weight:600;line-height:1.25}
 .lkc:hover b{text-decoration:underline;text-underline-offset:3px}
 .lkc-m{margin-top:3px;font-size:14px;color:var(--mute)}
-.lkc-t{margin-top:2px;font-size:13.5px;color:var(--mute)}
-@media(max-width:700px){.lkh{flex-direction:column;align-items:flex-start;gap:0}.lkh h2{margin-bottom:4px}.lka{order:2;margin:2px 0 6px}.lkl{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:6px;scrollbar-width:none}.lkl::-webkit-scrollbar{display:none}.lkc{flex:0 0 74%;scroll-snap-align:start}}
+.lkc-t{margin-top:3px;font-size:13.5px;font-weight:500;color:var(--ink)}
+@media(max-width:700px){.lkh .lka{display:none}.lka-m{display:inline-block;margin:-8px 0 16px}.lkl{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;padding-bottom:6px;scrollbar-width:none}.lkl::-webkit-scrollbar{display:none}.lkc{flex:0 0 74%;scroll-snap-align:start}.nb #mm{margin-bottom:16px}}

@@ -41,13 +41,13 @@ def why(a, b):
     """A short tag: shared vibes first, else shared strengths, else what they're closest on."""
     shared = [v for v in towns[a]['v'] if v in towns[b]['v']]
     if shared:
-        return ' · '.join(VS[v] for v in shared[:2])
+        return VS[shared[0]]
     both = sorted([c for c in CATS if ld[a]['rk'][c] <= 50 and ld[b]['rk'][c] <= 50],
                   key=lambda c: ld[a]['rk'][c] + ld[b]['rk'][c])
     if both:
-        return ' · '.join(WORD[c].capitalize() for c in both[:2])
+        return 'Strong on ' + WORD[both[0]]
     close = sorted(CATS, key=lambda c: abs(P[a][c] - P[b][c]))
-    return 'Similar ' + ' and '.join(WORD[c] for c in close[:2])
+    return 'Similar ' + WORD[close[0]]
 
 
 def small_img(p):
@@ -89,6 +89,7 @@ for tid in ld:
     block = (f'{START}<section class="lk"><div class="lkh"><h2>More like {html.escape(name)}</h2>'
              f'<a class="lka" href="compare.html?t={",".join([tid] + top3)}">Compare all four</a></div>'
              f'<p class="lkp">The towns that score closest to {html.escape(name)}, anywhere on the coast.</p>'
+             f'<a class="lka lka-m" href="compare.html?t={",".join([tid] + top3)}">Compare all four</a>'
              f'<div class="lkl">{cards}</div></section>{END}')
     if START in s:
         s = re.sub(re.escape(START) + '.*?' + re.escape(END), lambda m: block, s, count=1, flags=re.S)
