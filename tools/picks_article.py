@@ -1,8 +1,9 @@
 """Builds articles/towns-we-recommend.html (Nov 16 2026, reworked Nov 18 2026).
 
-Nov 18: the picks are now the top 30 towns by our quality of life score (tools/qol_score.py),
-ranked 1 to 30, each card showing its score, with a box explaining the weights. Mark approved
-"top 30 by the score". (Nov 16 version: the 31 towns we built the site around, by coast.)
+Nov 18: the picks are now the top 30 by our most recommended score (tools/qol_score.py): what
+people want (style taps on the site) times what each town is best at. Ranked 1 to 30, score and
+"best for" on each card, method box. Mark: "most recommended, a mix of what it's good for while
+weighting what people want." (Nov 16 version: the 31 towns we built the site around, by coast.)
 Uses articles/flood-risk-rankings.html as the page template (head, header, news layout,
 More guides band, newsletter, footer). Town facts (name, region, price, blurb, photo) come from
 src/data/beach-towns-t.json and category ranks from src/data/map-ld.json, so rerun after
@@ -11,13 +12,13 @@ town data changes:
 """
 import json, re, html, os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from qol_score import scores, WEIGHTS, TOP
+from qol_score import scores, WEIGHTS, TOP, LABEL, WORD, PEOPLE, PICKS_MADE, BEST_N
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 os.chdir(ROOT)
 ld = json.load(open('src/data/map-ld.json'))
 T = {t['id']: t for t in json.load(open('src/data/beach-towns-t.json'))}
-QOL, ORDER = scores(ld)
+QOL, ORDER, BEST = scores(ld)
 PICKS = ORDER[:TOP]
 RANK = {t: i + 1 for i, t in enumerate(ORDER)}
 assert len(PICKS) == TOP and all(t in T and t in ld for t in PICKS)
@@ -62,7 +63,7 @@ SKIP = {'edu': {'cedarkey'}}
 
 # "Where to start": the pick that ranks best in each category, plus the lowest priced pick.
 START = [('walk', 'Walk everywhere'), ('beach', 'The best beach'),
-         ('water', 'Life on a boat'), ('edu', 'Raising kids'), ('meet', 'Making friends fast'),
+         ('water', 'Life on a boat'), ('edu', 'Top public schools'), ('meet', 'Making friends fast'),
          ('charm', 'History and charm'), ('airport', 'Flying out often')]
 cheap = min(PICKS, key=kprice)
 LEADS, used = {}, {cheap}
@@ -72,8 +73,8 @@ for k, _ in START:  # best ranked pick in each category, each town used once
 assert all(ld[LEADS[k]]['rk'][k] <= 40 for k in LEADS), {k: ld[LEADS[k]]['rk'][k] for k in LEADS}
 
 TITLE = 'The Florida Beach Towns We Recommend Most'
-DEK = ('Our top 30 of the 167 towns on the Florida coast, ranked by one quality of life score: '
-       'beaches, walkability, the outdoors, peace and quiet, food, people and charm, weighed the way we weigh them.')
+DEK = ('The 30 towns we recommend most out of the 167 on the Florida coast: the places that are best at '
+       'what people moving here want most, starting with beaches, peace and quiet and a walkable town.')
 DATE, DATE_H = '2026-11-16', 'Nov 16, 2026'
 MOD, MOD_H = '2026-11-18', 'Updated Nov 18, 2026'
 URL = 'https://www.floridacoastal.co/articles/towns-we-recommend'
@@ -89,30 +90,38 @@ def quizbox(where):
 
 def card(t):
     x = T[t]
-    s = img(t)
-    return ('<a class="pk-c" href="towns/%s.html"><span class="pk-ph"><img src="img/c/s/%s.webp" '
-            'srcset="img/c/s/%s.webp 480w, img/c/m/%s.webp 960w" sizes="(max-width:700px) 34vw, 200px" alt="" loading="lazy" decoding="async"></span>'
-            '<span class="pk-b"><span class="pk-q"><b>%d</b> quality of life · No. %d of %d</span>'
+    d, f = ('img/c/' + img(t)).rsplit('/', 1)
+    ph = ('<img src="%s/s/%s.webp" srcset="%s/s/%s.webp 480w, %s/m/%s.webp 960w" sizes="(max-width:700px) 34vw, 200px" '
+          'alt="" loading="lazy" decoding="async">') % (d, f, d, f, d, f)
+    return ('<a class="pk-c" href="towns/%s.html"><span class="pk-ph">%s</span>'
+            '<span class="pk-b"><span class="pk-q"><b>%d</b> out of 100 · No. %d of %d</span>'
             '<b class="pk-n">%s</b><span class="pk-r">%s · Typical home %s</span><span class="pk-t">%s</span>'
-            '%s</span></a>') % (t, s, s, s, QOL[t], RANK[t], N, e(nm(t)), e(x['r']), e(x['p']), e(x.get('b', '')),
-                                ('<span class="pk-k">%s</span>' % e(best_at(t))) if best_at(t) else '')
+            '<span class="pk-k">Best for %s</span></span></a>') % (t, ph, QOL[t], RANK[t], N, e(nm(t)), e(x['r']), e(x['p']),
+                                                                    e(x.get('b', '')), e(andjoin([WORD[k] for k in BEST[t][:3]])))
+
+
+def andjoin(xs):
+    return xs[0] if len(xs) == 1 else ', '.join(xs[:-1]) + ' and ' + xs[-1]
 
 
 def method_box():
-    rows = ''.join('<li><span>%s</span><b>%d%%</b></li>' % (e(lab), w) for _, w, lab in WEIGHTS)
-    return ('<div class="fc-box pk-how"><h3>How we score quality of life</h3>'
-            '<p>Every one of the 167 towns gets one score out of 100. We start from where the town ranks in each '
-            'category below, out of all 167, and weigh them like this:</p><ul>%s</ul>'
-            '<p>We left out nightlife and boating on purpose. They matter a lot to some people and not at all to others, '
-            'so they live on the <a href="map.html?mode=vibes">Vibe Map</a> instead. Every category is explained on '
-            '<a href="scoring.html">how we score</a>.</p></div>') % rows
+    rows = ''.join('<li><span>%s</span><b>%d%%</b></li>' % (e(LABEL[k]), round(w * 100)) for k, w in WEIGHTS.items())
+    return ('<div class="fc-box pk-how"><h3>How we pick the towns we recommend most</h3>'
+            '<p><b>What people want.</b> %d people exploring Florida Coastal made %d picks between them on our '
+            '<a href="map.html?mode=vibes">Vibe Map</a> and homepage, choosing styles like Old Florida, Island Vibes and Dock Life. '
+            'We turned those picks into how much each thing matters:</p><ul>%s</ul>'
+            '<p><b>What each town is good for.</b> Every one of the 167 towns is ranked in each of these categories. '
+            'A town is scored on its %d best, weighed by how much people want them, so it gets credit for what it does best '
+            'and isn\'t marked down for what it isn\'t. 100 would mean the very top in the four things people want most.</p>'
+            '<p>As more people use the site, these weights will move with them. Every category is explained on '
+            '<a href="scoring.html">how we score</a>.</p></div>') % (PEOPLE, PICKS_MADE, rows, BEST_N)
 
 
 def body():
     p = []
-    p.append('<p>When we say a town has a good quality of life, we mean something specific: you can get to a good beach, walk to coffee '
-             'and dinner, get outside every day, sleep without a party next door, find a good meal, meet people and feel like you live '
-             'somewhere with a real sense of place. We turned that into one score out of 100 and ran it on all 167 towns.</p>')
+    p.append('<p>We could have ranked towns on what we like. Instead we started with what the people using Florida Coastal keep asking for: '
+             'a real beach, peace and quiet, a town you can walk, time outside and a place with some charm. Then we looked for the towns that '
+             'are best at those things. That mix is what we mean by most recommended.</p>')
     p.append('<p>These are the top %d. None of them is perfect. Some cost more than they should, some are far from an airport, and a few are '
              'quiet enough that you\'ll drive for a good dinner. We\'ve noted what each one does best, and the town pages cover the rest.</p>' % len(PICKS))
     p.append(method_box())
