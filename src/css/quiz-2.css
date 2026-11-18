@@ -176,4 +176,4 @@ body.sliders .mode button{padding:8px 13px;font-size:14.5px}
 }
 
 /* style */
-@view-transition{navigation:auto}html{background:#1A1B1B}::view-transition-old(root),::view-transition-new(root){animation-duration:.45s}
+html{background:#1A1B1B}::view-transition-old(root),::view-transition-new(root){animation-duration:.45s}

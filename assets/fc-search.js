@@ -105,7 +105,7 @@
     var mk=function(){var b=document.createElement('button');b.type='button';b.className='fcs-ic';b.setAttribute('aria-label','Search towns, regions and guides');b.innerHTML=SVG;b.onclick=function(){open('')};return b};
     var f=hdr.querySelector('#navSearch,form.navsearch');
     if(f)f.remove();
-    var q=hdr.querySelector('a:is([href*="quiz-photo"],[href*="find-your-mile"],[href="/quiz"])'),b=mk();if(q&&q.parentNode)q.parentNode.insertBefore(b,q);else hdr.appendChild(b);
+    var b=hdr.querySelector('button.fcs-ic');if(b){b.onclick=function(){open('')}}else{var q=hdr.querySelector('a:is([href*="quiz-photo"],[href*="find-your-mile"],[href="/quiz"])');b=mk();if(q&&q.parentNode)q.parentNode.insertBefore(b,q);else hdr.appendChild(b)}
     var ref=hdr.querySelector('nav a:not([href*="quiz-photo"]):not([href*="find-your-mile"])'),tint=function(){if(ref)b.style.color=getComputedStyle(ref).color};tint();addEventListener('scroll',tint,{passive:true});setTimeout(tint,500);
     load();
   });
