@@ -86,7 +86,7 @@ for tid in ld:
              f'<p class="lkp">The towns that score closest to {html.escape(name)} across our categories, '
              f'anywhere on the coast.</p><div class="nt">{cards}</div>'
              f'<a class="cmpr" href="compare.html?t={",".join(trio)}"><span class="cmpr-f" aria-hidden="true">{faces}</span>'
-             f'<span class="cmpr-t"><small>Compare side by side</small><b>{sn(tid)}, {sn(top3[0])} and {sn(top3[1])}</b></span>'
+             f'<span class="cmpr-t"><small>Side by side</small><b>{sn(tid)}, {sn(top3[0])} and {sn(top3[1])}</b></span>'
              f'<span class="cmpr-b">Compare</span></a></section>{END}')
     if START in s:
         s = re.sub(re.escape(START) + '.*?' + re.escape(END), lambda m: block, s, count=1, flags=re.S)
