@@ -94,10 +94,10 @@ aside .alt a.on{text-decoration:underline}
 /* #most-like (Nov 18 2026) */
 .lkp{margin:-8px 0 18px;color:var(--mute);font-size:15.5px;line-height:1.45}
 .lk .nt{max-width:640px}
-.cmpr{display:flex;align-items:center;gap:18px;max-width:640px;margin-top:26px;padding:16px 16px 16px 16px;border-radius:14px;background:var(--g);text-decoration:none;color:var(--ink);transition:background .2s}
-.cmpr:hover{background:#ECE8E1}
+.cmpr{display:flex;align-items:center;gap:18px;max-width:640px;margin-top:26px;padding:16px;border:1px solid rgba(21,42,46,.14);border-radius:14px;background:#fff;text-decoration:none;color:var(--ink);transition:border-color .2s,box-shadow .2s}
+.cmpr:hover{border-color:rgba(21,42,46,.32);box-shadow:0 4px 16px rgba(21,42,46,.08)}
 .cmpr-f{display:flex;flex:none}
-.cmpr-f i{width:52px;height:52px;border-radius:10px;background:#ddd center/cover;box-shadow:0 0 0 2px var(--g);margin-left:-10px}
+.cmpr-f i{width:52px;height:52px;border-radius:10px;background:#ddd center/cover;box-shadow:0 0 0 2px #fff;margin-left:-10px}
 .cmpr-f i:first-child{margin-left:0}
 .cmpr-t{flex:1;min-width:0;display:flex;flex-direction:column;gap:4px}
 .cmpr-t small{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
