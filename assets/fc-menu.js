@@ -14,6 +14,7 @@
     var logo=hdr.querySelector('img');
     var logoSrc=new URL('/img/fc-logo-black.png',location.href).href;
 
+    var HASCSS=!!document.querySelector('link[href*="fc-menu.css"]');
     var css=document.createElement('style');
     css.textContent=
     '.fcm-btn{display:none}'+
@@ -55,7 +56,7 @@
     '@media '+MQ+'{header .fcmaps-dd{display:none!important}}'+
     '.fcm nav .fcm-gl{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#6b7473;padding:20px 2px 2px}'+
     '.fcm nav a.fcm-sub{font-size:19px;padding:13px 2px 13px 14px}';
-    document.head.appendChild(css);
+    if(!HASCSS)document.head.appendChild(css);
 
     if(getComputedStyle(hdr).position=='static')hdr.style.position='relative';
     hdr.querySelectorAll('.fcmaps>a[data-nav=maps]').forEach(function(a){if(!a.querySelector('.fcmaps-c')){var c=document.createElement('i');c.className='fcmaps-c';c.setAttribute('aria-hidden','true');a.appendChild(c)}});
@@ -66,15 +67,15 @@
     if(hdr.querySelector('img[src*="fc-logo-white"]')&&!hdr.classList.contains('top')){hdr.classList.add('fc-onphoto');var g=document.createElement('style');g.textContent=
       'header.fc-onphoto img[src*="fc-logo-white"]{height:42px!important;width:auto!important}'+
       '@media '+MQ+'{header.fc-onphoto img[src*="fc-logo-white"]{height:40px!important}'+
-      'html body header.fc-onphoto .fcm-btn{background:rgba(255,255,255,.16)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.4)!important;color:#fff!important;box-shadow:none!important}}';document.head.appendChild(g)}
+      'html body header.fc-onphoto .fcm-btn{background:rgba(255,255,255,.16)!important;-webkit-backdrop-filter:blur(18px) saturate(1.2);backdrop-filter:blur(18px) saturate(1.2);border:1px solid rgba(255,255,255,.4)!important;color:#fff!important;box-shadow:none!important}}';if(!HASCSS)document.head.appendChild(g)}
 
     var ICON_MENU='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';
     var ICON_X='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>';
-    var btn=document.createElement('button');
+    var btn=hdr.querySelector('button.fcm-btn');if(!btn){btn=document.createElement('button');
     btn.className='fcm-btn';btn.type='button';btn.setAttribute('aria-label','Open menu');btn.setAttribute('aria-expanded','false');btn.innerHTML=ICON_MENU;
-    hdr.appendChild(btn);
+    hdr.appendChild(btn);}
     // Nov 12: on phone the menu button follows you down the page (fixed glass circle, dark icon once past the header)
-    (function(){var g=document.createElement('style');g.textContent='@media '+MQ+'{html body .fcm-btn.fcm-follow:not(#x){position:fixed!important;top:calc(10px + env(safe-area-inset-top,0px))!important;right:14px!important;transform:none!important;z-index:75!important;background:rgba(255,255,255,.72)!important;-webkit-backdrop-filter:blur(18px) saturate(1.3);backdrop-filter:blur(18px) saturate(1.3);border:1px solid rgba(255,255,255,.8)!important;color:#16282c!important;box-shadow:0 4px 16px rgba(10,20,22,.14)!important;animation:fcmIn .22s ease}@keyframes fcmIn{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}}';document.head.appendChild(g);
+    (function(){var g=document.createElement('style');g.textContent='@media '+MQ+'{html body .fcm-btn.fcm-follow:not(#x){position:fixed!important;top:calc(10px + env(safe-area-inset-top,0px))!important;right:14px!important;transform:none!important;z-index:75!important;background:rgba(255,255,255,.72)!important;-webkit-backdrop-filter:blur(18px) saturate(1.3);backdrop-filter:blur(18px) saturate(1.3);border:1px solid rgba(255,255,255,.8)!important;color:#16282c!important;box-shadow:0 4px 16px rgba(10,20,22,.14)!important;animation:fcmIn .22s ease}@keyframes fcmIn{from{opacity:0;transform:scale(.85)}to{opacity:1;transform:none}}}';if(!HASCSS)document.head.appendChild(g);
      var mq=matchMedia(MQ),pos=getComputedStyle(hdr).position,stuck=pos=='fixed'||pos=='sticky',on=false,raf=0;
      function upd(){raf=0;if(btn.classList.contains('fcm-float'))return;var want=mq.matches&&!stuck&&hdr.getBoundingClientRect().bottom<4;if(want==on)return;on=want;
       if(on){document.body.appendChild(btn);btn.classList.add('fcm-follow')}else{btn.classList.remove('fcm-follow');hdr.appendChild(btn)}}
