@@ -94,5 +94,13 @@ aside .alt a.on{text-decoration:underline}
 /* #most-like (Nov 18 2026) */
 .lkp{margin:-8px 0 18px;color:var(--mute);font-size:15.5px;line-height:1.45}
 .lk .nt{max-width:640px}
-.cmpb{display:inline-flex;align-items:center;min-height:44px;margin-top:18px;padding:12px 22px;border-radius:999px;background:var(--ink);color:#fff;font-weight:500;font-size:15.5px;line-height:1.3;text-decoration:none}
-.cmpb:hover{background:#0E1E21}
+.cmpr{display:flex;align-items:center;gap:16px;max-width:640px;margin-top:20px;padding:14px 14px 14px 16px;border:1px solid var(--hair);border-radius:16px;background:var(--g);text-decoration:none;color:var(--ink);transition:border-color .15s,box-shadow .15s}
+.cmpr:hover{border-color:#B9B2A6;box-shadow:0 2px 12px rgba(21,42,46,.08)}
+.cmpr-f{display:flex;flex:none}
+.cmpr-f i{width:44px;height:44px;border-radius:50%;background:#ddd center/cover;border:2px solid var(--g);margin-left:-12px}
+.cmpr-f i:first-child{margin-left:0}
+.cmpr-t{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}
+.cmpr-t b{font-size:16px;font-weight:600;line-height:1.3}
+.cmpr-t small{font-size:14px;color:var(--mute);line-height:1.35}
+.cmpr-b{flex:none;display:inline-flex;align-items:center;gap:6px;min-height:42px;padding:0 18px;border-radius:999px;background:var(--ink);color:#fff;font-weight:500;font-size:15px}
+@media(max-width:560px){.cmpr{flex-wrap:wrap;gap:12px}.cmpr-t{flex-basis:calc(100% - 130px)}.cmpr-b{width:100%;justify-content:center}}

@@ -79,12 +79,16 @@ for tid in ld:
         f'<a href="towns/{o}.html"><div class="ph" style="background-image:url(\'{small_img(towns[o]["img"])}\')"></div>'
         f'<div><b>{html.escape(towns[o]["n"])}</b><small>{html.escape(why(tid, o))}</small>'
         f'<span>{html.escape(short(towns[o]["b"]))}</span></div></a>' for o in top3)
-    a, b = cmp['towns'][top3[0]]['s'], cmp['towns'][top3[1]]['s']
-    block = (f'{START}<section class="lk"><h2>Most like {html.escape(name)}</h2>'
+    sn = lambda o: html.escape(cmp['towns'][o]['s'])
+    trio = [tid, top3[0], top3[1]]
+    faces = ''.join('<i style="background-image:url(\'%s\')"></i>' % small_img(towns[o]['img']) for o in trio)
+    block = (f'{START}<section class="lk"><h2>More like {html.escape(name)}</h2>'
              f'<p class="lkp">The towns that score closest to {html.escape(name)} across our categories, '
              f'anywhere on the coast.</p><div class="nt">{cards}</div>'
-             f'<a class="cmpb" href="compare.html?t={tid},{top3[0]},{top3[1]}">'
-             f'Compare {html.escape(cmp["towns"][tid]["s"])} with {html.escape(a)} and {html.escape(b)} →</a></section>{END}')
+             f'<a class="cmpr" href="compare.html?t={",".join(trio)}"><span class="cmpr-f" aria-hidden="true">{faces}</span>'
+             f'<span class="cmpr-t"><b>{sn(tid)} vs {sn(top3[0])} vs {sn(top3[1])}</b>'
+             f'<small>Price, beaches, walkability and more, side by side</small></span>'
+             f'<span class="cmpr-b">Compare <span aria-hidden="true">→</span></span></a></section>{END}')
     if START in s:
         s = re.sub(re.escape(START) + '.*?' + re.escape(END), lambda m: block, s, count=1, flags=re.S)
     else:
