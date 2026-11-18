@@ -1,0 +1,1086 @@
+:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}
+:root{
+--white:#FFFFFF; --paper:#F3F6F5; --ink:#152A2E; --muted:#56696C; --line:#DFE6E5;
+--accent:#C65213; --accent-dark:#A8440E; --accent-tint:#FBEEE5; --accent-2:#E3A66D; --sea:#1B6E78; --deep:#152A2E;
+--gulf:#C65213; --atl:#3A56B0; --pan:#2B8C6E; --keys:#D39A22;
+--fit-top:#863207; --fit-strong:#C65213; --fit-good:#DE9258; --fit-out:#7E8F92;
+--display:'Fraunces', Georgia, 'Times New Roman', serif;
+--body:'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+--ui:'DM Sans', 'Helvetica Neue', Arial, sans-serif;
+color-scheme:light;
+}
+*{box-sizing:border-box}
+picture{display:contents}
+body{background:var(--white);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;margin:0}
+a{color:var(--sea)} a:hover{color:var(--accent)}
+h1,h2,h3{font-family:var(--display);font-weight:400;font-optical-sizing:auto;font-synthesis-weight:none;line-height:1.14;letter-spacing:-.01em;font-variant-numeric:lining-nums;text-wrap:balance;margin:0;color:var(--ink)}
+p{margin:0}
+button,input{font:inherit;color:inherit}
+.wrap{max-width:1180px;margin:0 auto;padding-inline:20px}
+.label{font-family:var(--display);font-weight:400;font-size:15px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink);padding-bottom:10px;position:relative;margin-bottom:26px}
+.label::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;border-radius:2px;background:linear-gradient(90deg,var(--accent),var(--accent-2) 60%,transparent)}
+.cat{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+.more{font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--sea);text-decoration:none;display:inline-flex;gap:6px;align-items:center}
+.more::after{content:"→";color:var(--sea)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border:0;border-radius:999px;padding:14px 28px;font-weight:700;cursor:pointer;text-decoration:none;min-height:48px;font-family:var(--body);letter-spacing:.02em}
+.btn-accent{background:var(--accent);color:var(--white)} .btn-accent:hover{background:var(--accent-dark);color:var(--white)}
+.btn-line{background:var(--white);color:var(--ink);border:1.5px solid var(--line)} .btn-line:hover{border-color:var(--accent);color:var(--accent)}
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--white);border-bottom:3px solid transparent;border-image:linear-gradient(90deg,var(--accent),var(--accent-2)) 1}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:70px;flex-wrap:wrap;padding-block:8px}
+nav.main{display:flex;gap:4px;flex-wrap:wrap;align-items:center}
+nav.main a{text-decoration:none;color:var(--ink);font-weight:700;font-size:15px;padding:9px 12px;border-radius:8px}
+nav.main a:hover{color:var(--accent)}
+nav.main a[aria-current="page"]{color:var(--accent)}
+nav.main a.btn{color:var(--white);padding:10px 18px;margin-left:6px;min-height:42px}
+nav.main a.btn{order:2} .navtoggle{order:3}
+.navtoggle{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:8px;background:var(--white);color:var(--ink);cursor:pointer;align-items:center;justify-content:center;padding:0}
+.navtoggle svg{width:22px;height:22px} .navtoggle:focus-visible{outline:2px solid var(--ink);outline-offset:2px}
+@media (max-width:760px){
+.top .wrap{min-height:56px;flex-wrap:nowrap;padding-block:6px;gap:10px}
+nav.main{flex-wrap:nowrap;gap:8px;flex:none}
+.navtoggle{display:inline-flex}
+nav.main a.btn{padding:9px 12px!important;font-size:13.5px!important;margin-left:0;min-height:40px;white-space:nowrap}
+}
+@media (max-width:370px){ nav.main a.btn{padding:8px 10px!important;font-size:12.5px!important} .navtoggle{width:40px;height:40px} }
+.search{display:flex;align-items:center;gap:8px;max-width:640px;margin:34px auto 0;background:rgba(15,25,35,.72);border:1.5px solid var(--accent);border-radius:999px;padding:6px 6px 6px 22px}
+.search input{flex:1;min-width:0;border:0;background:transparent;color:var(--white);font-size:16px;padding:10px 0}
+.search input::placeholder{color:rgba(255,255,255,.75)}
+.search button{border:0;background:var(--accent);color:var(--white);border-radius:999px;padding:11px 20px;font-weight:700;cursor:pointer;min-height:44px}
+section{padding-block:60px}
+.band{background:var(--paper)}
+.lede{color:var(--muted);max-width:40em;margin-top:10px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.card{display:flex;flex-direction:column;background:var(--white);border-radius:6px;overflow:hidden;box-shadow:0 1px 3px rgba(20,40,55,.08),0 8px 24px rgba(20,40,55,.06);text-decoration:none;color:var(--ink);min-width:0;transition:box-shadow .2s,transform .2s}
+.card:hover{box-shadow:0 2px 6px rgba(20,40,55,.1),0 16px 36px rgba(20,40,55,.12);transform:translateY(-2px);color:var(--ink)}
+.card .ph{aspect-ratio:16/10;overflow:hidden;background:var(--paper)}
+.card .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.card:hover .ph img{transform:scale(1.03)}
+.card .bd{padding:18px 20px 22px;display:flex;flex-direction:column;gap:8px;flex:1}
+.card h3{font-size:21px}
+.card p{color:var(--muted);font-size:15px}
+.card .foot{margin-top:auto;padding-top:8px}
+.coast{position:relative;border-radius:6px;overflow:hidden;min-height:280px;display:flex;align-items:flex-end;text-decoration:none;color:var(--white)}
+.coast img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .4s}
+.coast:hover img{transform:scale(1.04)}
+.coast::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 35%,rgba(10,25,35,.75))}
+.coast .t{position:relative;z-index:1;padding:20px}
+.coast h3{color:var(--white);font-size:24px}
+.coast p{font-size:15px;opacity:.92;margin-top:4px}
+.coast:hover{color:var(--white)}
+.quiz{background:var(--white);border-radius:8px;padding:30px;box-shadow:0 1px 3px rgba(20,40,55,.08),0 12px 32px rgba(20,40,55,.08)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.opt{text-align:left;background:var(--white);border:1.5px solid var(--line);border-radius:8px;padding:15px 16px;cursor:pointer;min-height:56px;font-weight:700;color:var(--ink)}
+.opt:hover{border-color:var(--accent)}
+.opt[aria-pressed="true"]{border-color:var(--accent);background:var(--accent-tint)}
+.linkbtn{background:none;border:0;color:var(--sea);font-weight:700;cursor:pointer;padding:10px 0}
+.story{font-size:18px;margin-top:10px}
+.facts{background:var(--paper);border-radius:6px;padding:16px 18px;margin-top:16px}
+.also a{display:flex;justify-content:space-between;gap:12px;text-decoration:none;color:var(--ink);padding:12px 0;border-top:1px solid var(--line)}
+.lake{fill:#CFE6EA;stroke:#B9D9DE;stroke-width:1}
+.sand{fill:none;stroke:#F8EDD3;stroke-width:4;stroke-linejoin:round}
+.park{fill:#CAD6AE;opacity:.75}.tree{fill:#9DB27C;opacity:.8}
+.parks{pointer-events:none}
+.shore{fill:none;stroke:#F4FBFC;stroke-width:10;stroke-opacity:.85;stroke-linejoin:round}
+.lake{fill:#BFE6EC;stroke:#8FCBD4;stroke-width:1}
+.river{fill:none;stroke:#8FCBD4;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.road{fill:none;stroke:#E2CFA6;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.city{fill:#93A3A4}
+.dot{cursor:pointer;stroke:var(--white);stroke-width:1.5;transition:opacity .15s}
+.dot.hot{stroke:var(--ink);stroke-width:2.5}
+.lead{stroke:var(--ink);stroke-opacity:.5;stroke-width:1;pointer-events:none}
+.leadform{display:grid;gap:10px}.leadform .row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.leadform .btn{justify-self:start}.leadform .fine{font-size:13px;color:var(--muted);margin:0}
+.leaderr{color:var(--accent-dark);font-size:14px;font-weight:700;margin:0}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.thanks{font-size:17px}.thanks b{display:block;font-family:var(--display);font-weight:400;font-size:24px;margin-bottom:4px}
+.news .thanks b{color:var(--white)}
+@media (max-width:600px){.leadform .row2{grid-template-columns:1fr}.leadform .btn{justify-self:stretch}}
+.best{display:grid;grid-template-columns:240px minmax(0,1fr) auto;gap:24px;align-items:center;background:var(--white);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:0 0 18px;box-shadow:0 1px 3px rgba(20,40,55,.06),0 10px 26px rgba(20,40,55,.06)}
+.best .ph{position:relative;align-self:stretch;min-height:150px;background:var(--paper)}
+.best .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover} .best h3{font-size:clamp(24px,2.6vw,30px);margin:4px 0 6px}
+@media (max-width:820px){.best{grid-template-columns:1fr;gap:0}.best .ph{min-height:170px}}
+.phero{position:relative;color:var(--white);overflow:hidden}
+.phero .ph{position:absolute;inset:0} .phero .ph img{width:100%;height:100%;object-fit:cover}
+.phero .ph::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,25,35,.15),rgba(10,25,35,.65))}
+.phero .inner{position:relative;padding-block:120px 44px}
+.phero h1{color:var(--white);font-size:clamp(36px,5.5vw,60px)}
+.phero p{font-size:19px;margin-top:10px;max-width:40em;opacity:.95}
+.crumbs{font-size:14px;margin-bottom:14px} .crumbs a{color:var(--white);text-decoration:none;font-weight:700;opacity:.9}
+.twocol{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:48px;align-items:start}
+.block+.block{margin-top:44px}
+:root{--hh:73px} @media (max-width:760px){:root{--hh:59px}}
+.twocol.town .block{scroll-margin-top:calc(var(--hh) + 64px)}
+.twocol.town .side{top:calc(var(--hh) + 68px)}
+.block h2{font-size:28px;margin-bottom:12px}
+.side{position:sticky;top:96px;display:grid;gap:18px}
+.boxed{border:1px solid var(--line);border-radius:8px;padding:22px}
+.prose{font-size:18.5px;line-height:1.75;max-width:40em}
+.prose p+p,.prose p+h2,.prose ul+p,.prose p+ul,.prose h2+p{margin-top:18px}
+.prose h2{font-size:26px;margin-top:34px}
+.prose h3{font-size:21px} .prose p+h3{margin-top:26px} .prose h3+p{margin-top:8px} .prose h2+h3{margin-top:14px}
+.prose ul{padding-left:22px} .prose li+li{margin-top:8px}
+.vs{display:grid;gap:9px;margin-top:18px;font-size:15px;line-height:1.3}
+.vs .vrow{display:grid;grid-template-columns:150px 1fr 1fr;gap:18px;align-items:center}
+.vs .vrow>span:first-child{font-weight:600}
+.vs .vhead a{font-family:var(--ui);font-weight:800;color:var(--ink);text-decoration:none;border-bottom:2px solid var(--accent);padding-bottom:4px;justify-self:start}
+.vs .vc{display:grid;grid-template-columns:1fr 18px;gap:10px;align-items:center}
+.vs .vc b{font-family:var(--ui);font-weight:800;font-variant-numeric:tabular-nums;text-align:right}
+@media (max-width:620px){.vs{font-size:13.5px}.vs .vrow{grid-template-columns:92px 1fr 1fr;gap:10px}.vs .vc{gap:6px;grid-template-columns:1fr 12px}}
+.filters{display:flex;gap:10px;flex-wrap:wrap;align-items:end;margin-bottom:26px}
+.field{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:700;color:var(--muted);min-width:0}
+.field input{border:1.5px solid var(--line);background:var(--white);border-radius:8px;padding:11px 13px;min-height:46px;min-width:0}
+.tab{border:1.5px solid var(--line);background:var(--white);border-radius:999px;padding:8px 16px;cursor:pointer;font-weight:700;font-size:14px;min-height:40px}
+.tab[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--white)}
+.sc{display:grid;gap:10px}
+.sc .row{display:grid;grid-template-columns:170px 1fr 28px;gap:12px;align-items:center;font-size:15px}
+.sc .row span:first-child{font-weight:600}
+.bar{display:grid;grid-template-columns:repeat(5,1fr);gap:4px}
+.bar i{height:9px;border-radius:5px;background:var(--line)}
+.bar i.on{background:var(--accent)}
+.sc .n{font-family:var(--ui);font-weight:800;font-variant-numeric:tabular-nums;text-align:right}
+.method{width:100%;border-collapse:collapse;font-size:15px}
+.method th,.method td{text-align:left;padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.method th{font-family:var(--ui);font-weight:700;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.tablewrap{overflow-x:auto}
+@media (max-width:620px){ .sc .row{grid-template-columns:120px 1fr 24px} }
+.meet{display:grid}
+.meet div{display:grid;grid-template-columns:minmax(0,230px) minmax(0,1fr);gap:4px 20px;padding:13px 0;border-top:1px solid var(--line)}
+.meet div:first-child{border-top:0}
+.meet b{font-family:var(--ui);font-weight:700;font-size:17px}
+.meet span{color:var(--muted);font-size:15.5px}
+@media (max-width:620px){.meet div{grid-template-columns:1fr}}
+.crumbs2{font-size:14px;margin-bottom:10px;color:var(--muted)} .crumbs2 a{color:var(--sea);text-decoration:none;font-weight:700}
+.fchip{display:flex;align-items:center;gap:8px;background:var(--white);border:1.5px solid var(--line);border-radius:999px;padding:5px 12px;font-size:14px;font-weight:700}
+.fchip input[type=range]{width:78px;accent-color:var(--accent)}
+.fchip small{color:var(--accent);font-size:12px;min-width:78px}
+.why{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.why h3{font-size:21px;margin:14px 0 8px}
+.why p{color:var(--muted)}
+.news{background:var(--deep);color:var(--white)}
+.news .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center}
+.news h2{color:var(--white);font-size:clamp(28px,3.4vw,38px)}
+.news p{opacity:.85;margin-top:8px}
+.news form{display:flex;gap:10px;flex-wrap:wrap}
+.news input{flex:1 1 220px;min-width:0;border:0;border-radius:999px;padding:14px 20px;background:var(--white);color:var(--ink);min-height:50px}
+.note{font-size:14px;margin-top:10px;opacity:.8}
+footer{background:var(--deep);color:#B7C6C5;padding-block:44px;font-size:14px}
+footer .wrap{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:30px}
+footer b{display:block;font-family:var(--display);font-weight:400;font-size:19px;letter-spacing:.02em;color:var(--white);margin-bottom:10px}
+footer a{color:#B7C6C5;text-decoration:none;display:block;padding:3px 0} footer a:hover{color:var(--white)}
+@media (max-width:1000px){ .side{position:static}
+}
+@media (max-width:820px){
+.grid3,.why{grid-template-columns:1fr}
+.twocol,.news .grid{grid-template-columns:1fr}
+.opts{grid-template-columns:1fr}
+footer .wrap{grid-template-columns:1fr}
+section{padding-block:44px}
+}
+@media (max-width:620px){ nav.main a{padding:8px 8px;font-size:14px} nav.main a.btn{padding:9px 14px;margin-left:0} }
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+body:has(.fs){overflow:hidden}
+.who{display:flex;gap:10px;align-items:flex-start;margin-top:4px}.who p{margin:0;font-size:13px;line-height:1.45;color:var(--muted)}.who b{color:var(--ink);font-weight:600}
+
+/* ===== Oct 23 2026 patch ===== */
+/* Phone Style Map: map and the town you're on stay pinned together, styles listed underneath */
+
+/* Phone walkthrough: map (or photo) on top, the town underneath, both at once */
+
+/* Priority sliders page */
+
+/* Quiz on phones: question first, no scrolling between answers */
+
+/* Home: value first */
+
+/* Inline "keep your 5 towns" email box */
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+/* ===== Oct 28 2026 patch: save boxes ===== */
+
+/* ===== Oct 28 2026 patch: style/priorities toggle ===== */
+
+/* ===== Oct 28 2026 patch: hero A/B test, variant B (live Vibe Map hero) ===== */
+
+/* ===== Oct 28 2026 patch: photo credits ===== */
+.pcred{font-size:14.5px;line-height:1.5;padding-left:18px}.pcred li{margin:4px 0}
+
+/* ===== Oct 29 2026 patch: guide offer, stack save boxes on phones ===== */
+
+/* ===== Oct 29 2026 patch: calmer, editorial style (color rules, no template tells, quiet save boxes) ===== */
+/* 1. color: ink and white do the work, orange only on the primary button */
+.label::after{background:var(--ink);height:1px;border-radius:0;opacity:.85}
+.top{border-bottom:1px solid var(--line);border-image:none}
+.cat{color:var(--muted);font-weight:600;letter-spacing:.08em}
+.more{color:var(--ink);font-weight:600;letter-spacing:.06em}
+.bar i.on{background:var(--ink)}
+nav.main a[aria-current="page"]{color:var(--ink);text-decoration:underline;text-underline-offset:6px;text-decoration-thickness:1.5px}
+.opt:hover{border-color:var(--ink)}
+.opt[aria-pressed="true"]{border-color:var(--ink);background:var(--paper)}
+.search{border-color:rgba(255,255,255,.6)}
+.btn-line:hover{border-color:var(--ink);color:var(--ink)}
+/* 2. no template tells: square-ish buttons, flat cards, plain numbers */
+.btn{border-radius:6px;font-weight:600;letter-spacing:0}
+.search,.search button{border-radius:6px}
+.card{border-radius:4px;box-shadow:none;border:1px solid var(--line)}
+.card:hover{box-shadow:none;border-color:var(--ink);transform:none}
+.boxed{border-radius:4px}
+/* 3. quiet save boxes */
+
+/* ===== Oct 29 2026 patch: readable hero, home trust section, compact town scorecard ===== */
+
+/* ===== Oct 29 2026 patch: reading type borrowed from the Move and Belong Guide ===== */
+:root{--read:'Newsreader',Georgia,'Times New Roman',serif;--muted:#3E4F52}
+.prose{font-family:var(--read);font-size:19.5px;line-height:1.62;max-width:34em;color:var(--ink);letter-spacing:-.003em}
+.prose b,.prose strong{font-weight:500}
+.prose li{padding-left:2px}
+.prose h2,.prose h3{font-family:var(--display);letter-spacing:-.01em}
+.block .prose{max-width:36em!important}
+.meet span{color:var(--ink)}
+.lede{color:var(--ink)}
+@media (max-width:700px){.prose{font-size:18.5px}}
+
+/* ===== Oct 29 2026 patch: phone article text, bigger and a touch heavier ===== */
+@media (max-width:700px){.prose{font-size:20.5px;line-height:1.6;-webkit-text-stroke:.25px currentColor}.prose b,.prose strong{font-weight:600}}
+
+/* ===== Oct 29 2026 patch: phone articles back to the original sans (Mark preferred it) ===== */
+@media (max-width:700px){article .prose{font-family:var(--sans,'DM Sans'),system-ui,sans-serif;font-size:18.5px;line-height:1.7;-webkit-text-stroke:0;letter-spacing:0}article .prose b,article .prose strong{font-weight:700}}
+
+/* ===== Oct 29 2026 patch: community and social scene, tap to open rows ===== */
+
+/* ===== Oct 29 2026 patch: compare towns page ===== */
+.cmp{--n:3}
+
+/* ===== Oct 29 2026 patch: warm sand palette (Mark picked it over the cool gray) ===== */
+:root{--paper:#F6F1E9;--line:#E6DDD0;--gulf:#2E93A3;--accent-tint:#F8EBDD;--page:#FFFDF9}
+body,header.top{background:var(--page)}
+
+/* ===== Oct 29 2026 patch: UI audit fixes (shorter home, one orange, one shape, calmer details, sticky ask box) ===== */
+/* 1. Home: smaller coast cards, two by two on phones; the vibe list stays on the map page */
+/* 2. Orange only for the main action: page toggle is ink */
+/* 3. One shape: 6px corners on controls, 4px on tags and counters */
+.news input,.news button,.news .btn,.search,.search button{border-radius:6px}
+/* 4. The honest details: regular weight answers so they scan */
+/* 5. Town page sidebar: the ask box follows you on desktop; the mini map goes */
+@media (min-width:1001px) and (min-height:760px){.town .side{position:sticky;top:calc(var(--hh) + 64px)}}
+/* Map town cards: ink button, so the only orange on the map page is "See your top 5 towns" */
+
+/* ===== Oct 29 2026 patch: second UI audit (calm Priorities page, last round pills, article byline, About page call to action) ===== */
+/* 1. Priorities: ink sliders, neutral tags; orange stays on the one main button */
+.fchip input[type=range]{accent-color:var(--ink)}
+/* 2. Last round pills: 6px controls, 4px tags */
+.tab{border-radius:6px}
+/* 3. Article byline flows on phones instead of four skinny columns */
+/* 4. About page call to action */
+.about-cta{padding-top:8px;padding-bottom:48px;max-width:760px}
+.about-cta h2{font-size:clamp(26px,3.4vw,36px);margin:8px 0 10px}
+.about-cta p{font-family:var(--read);font-size:18.5px;line-height:1.55;color:var(--ink);max-width:34em;margin:0 0 20px}
+.about-acts{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+
+/* ===== Oct 29 2026 patch: one map language (calm gray default, ink for fit, ink results pins) ===== */
+:root{--dot-calm:#A9B4B4;--fit-top:#152A2E;--fit-strong:#2E5A60;--fit-good:#8FAEAE;--fit-out:#C8CFCD}
+.dot.hot{stroke:#fff}
+
+/* ===== Oct 29 2026 patch: Priorities rework (neutral scale, 6 core sliders, live top 5 beside the sliders, why lines) ===== */
+
+/* ===== Oct 29 2026 patch: Vibe Map side panel (desktop), vibes first and Map/List on phones ===== */
+/* phones */
+
+/* ===== Oct 29 2026 patch: Priorities polish (light untouched sliders, section headings, fit words, clearer map) ===== */
+:root{--fit-good:#7FA3A5;--fit-strong:#2E5A60}
+
+/* ===== Oct 29 2026 patch: the picked vibe wears its own color (phone button, desktop panel header) ===== */
+
+/* Oct 29 2026: green terrain base map */
+.dot{stroke-width:2}
+
+/* Oct 29 2026: Vibe Map photo picker (desktop panel) */
+.pcred+h3,ul.pcred+h3{margin-top:22px}
+
+/* Oct 29 2026: obvious Compare */
+.card .ph{position:relative}
+
+/* Oct 29 2026: compare page search + suggestions */
+
+/* ===== Oct 29 2026 patch: third UI audit (Compare dots, desktop top 5 button) ===== */
+/* The compare suggestion cards were renamed .cmp-sug so their styles stop hitting the score dots (.cmp-sc). */
+@media (min-width:1180px){nav.main{flex-wrap:nowrap}}
+
+/* ===== Oct 29 2026 patch: B pages to A minus (areas, Find Your Mile, scoring, guides, agents, privacy) ===== */
+/* Area overview */
+/* Illustrated town tiles read as deliberate */
+.card .ph:has(img.illus)::after{content:"Illustrated map";position:absolute;left:10px;bottom:10px;font:600 11px var(--ui);letter-spacing:.06em;text-transform:uppercase;color:var(--ink);background:rgba(255,253,249,.92);border-radius:4px;padding:4px 7px;pointer-events:none}
+.card .ph img.illus{filter:saturate(.9) contrast(1.02)}
+
+/* Find Your Mile, desktop: questions on the left, the live map on the right */
+/* One signal per answer: the check only appears once picked */
+
+/* How we score */
+.wts{display:grid;gap:8px;margin:6px 0 18px;max-width:520px}
+.wt{display:grid;grid-template-columns:110px 1fr 36px;align-items:center;gap:12px;font:500 14px var(--ui);color:var(--ink)}
+.wt i{display:block;height:10px;border-radius:3px;background:var(--ink)}
+.wt b{font:600 14px var(--ui);text-align:right}
+.bfit{border-collapse:collapse;width:100%;max-width:520px;margin:6px 0 18px;font:400 15px var(--ui)}
+.bfit th{text-align:left;font:600 12px var(--ui);letter-spacing:.08em;text-transform:uppercase;color:var(--muted);padding:8px 0;border-bottom:1px solid var(--ink)}
+.bfit td{padding:10px 0;border-bottom:1px solid var(--line);color:var(--ink)}
+.bfit td:first-child{font-weight:600;width:44%}
+.scrules ul{margin:0;padding-left:18px;font:400 14.5px/1.5 var(--ui);color:var(--ink)}
+.scrules li+li{margin-top:6px}
+
+/* Coastal Guides: one lead story, read times */
+.card .foot{display:flex;align-items:center;gap:10px}
+.card .foot .rt{margin-left:auto;font:500 13px var(--ui);color:var(--muted)}
+
+/* For Agents */
+.agstats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--line);margin-top:40px}
+.agstats>div{padding:18px 0;display:grid;gap:2px}
+.agstats b{font:400 30px/1.1 var(--display);color:var(--ink)}
+.agstats span{font:500 13.5px var(--ui);color:var(--muted)}
+.agmain{padding-top:40px}
+.agsteps{list-style:none;counter-reset:ag;margin:0 0 30px;padding:0;display:grid;gap:0}
+.agsteps li{counter-increment:ag;display:grid;grid-template-columns:44px 1fr;column-gap:14px;padding:16px 0;border-bottom:1px solid var(--line)}
+.agsteps li::before{content:counter(ag);grid-row:1/3;width:32px;height:32px;border-radius:6px;background:var(--ink);color:#fff;font:600 15px var(--ui);display:grid;place-items:center}
+.agsteps b{font:600 17px var(--ui);color:var(--ink)}
+.agsteps span{font:400 15.5px/1.5 var(--ui);color:var(--ink);margin-top:3px}
+.aggive{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.aggive .label{margin-bottom:12px}
+.aggive ul{margin:0;padding-left:18px;font:400 15.5px/1.5 var(--ui);color:var(--ink)}
+.aggive li+li{margin-top:6px}
+.agex{position:relative;display:grid;grid-template-columns:200px 1fr;border:1px solid var(--line);border-radius:8px;overflow:hidden;background:var(--white)}
+.agex .agph{position:relative;min-height:170px}
+.agex .agph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.agex .agbd{padding:18px 20px}
+.agex p{font:400 14.5px/1.5 var(--ui);color:var(--ink);margin:10px 0 0}
+.agtag{position:absolute;top:10px;right:10px;font:600 11px var(--ui);letter-spacing:.08em;text-transform:uppercase;border:1px dashed var(--muted);color:var(--muted);border-radius:4px;padding:3px 7px;background:var(--white);z-index:1}
+.agwho{display:flex;align-items:center;gap:12px;margin-top:10px}
+.agav{width:44px;height:44px;border-radius:50%;background:var(--paper);border:1px solid var(--line);display:grid;place-items:center;font:600 14px var(--ui);color:var(--ink)}
+.agwho b{display:block;font:600 16px var(--ui)}
+.agwho small{font:400 13px var(--ui);color:var(--muted)}
+.agfine{font:400 13.5px var(--ui);color:var(--muted);margin:14px 0 0}
+.agform{position:sticky;top:96px}
+@media (max-width:760px){.agstats{grid-template-columns:1fr 1fr}.aggive{grid-template-columns:1fr;gap:18px}.agex{grid-template-columns:1fr}.agex .agph{min-height:150px}.agform{position:static}}
+
+/* Privacy */
+.pv-upd{font:400 14px var(--ui);color:var(--muted);margin:0 0 22px}
+.pv-short{border-top:1px solid var(--ink);border-bottom:1px solid var(--line);padding:18px 0 16px;margin-bottom:26px}
+.pv-short .label{margin-bottom:10px}
+.pv-short ul{margin:0;padding-left:18px;font:400 16px/1.55 var(--ui);color:var(--ink)}
+.pv-short li+li{margin-top:8px}
+.pv-cred{margin-top:30px;border-top:1px solid var(--line);padding-top:14px}
+.pv-cred summary{cursor:pointer;font:600 16px var(--ui);color:var(--ink);list-style:none}
+.pv-cred summary::before{content:"+ ";font-weight:600}
+.pv-cred[open] summary::before{content:"− "}
+@media (min-width:1001px){.side.scside{position:sticky;top:96px}}
+.agtop{padding-top:36px;padding-bottom:0}
+.agtop .agstats{margin-top:0}
+.agjump{display:none}
+@media (max-width:760px){.agjump{display:flex;width:100%;justify-content:center;margin-top:18px}.agtop{padding-top:24px}}
+
+/* ===== Oct 29 2026 patch: fourth UI audit (B and C pages) ===== */
+/* Results overlay: a way out to the full results page */
+/* Reveal header: the logo sits on a white chip so the map never washes it out */
+/* Header: keep "See your top 5" at every desktop width; the header search folds away between 761 and 1179px (Beach Towns has its own search) */
+@media (min-width:761px) and (max-width:1179px){nav.main{flex-wrap:nowrap}}
+/* Home map hero: the main ask under the headline, so the panel's own button isn't needed there */
+/* Vibe tiles: bigger, easier to read descriptions */
+/* Town pages on phones: the Compare button no longer covers the section tabs (the scorecard has its own Compare link) */
+
+/* ===== Oct 29 2026 late patch: audit fixes 1 to 5, full screen Town Map, Beach Towns towns first ===== */
+/* Home hero B: the "See your top 5 towns" button shows on phones too */
+/* Returning visitors: results overlay shows at once instead of crossfading over the page */
+/* Town Map page: full width, map fills the screen, Map / List switch */
+/* Beach Towns: search sits right under the title, towns lead, areas follow */
+
+/* ===== Oct 30 2026 patch: Priorities page, every slider showing, compact two column sliders, reset at the top ===== */
+/* ===== Oct 30 2026 patch: Vibe Map signature towns ===== */
+
+/* ===== Oct 30 2026 patch: brighter style colors ===== */
+/* ===== Oct 30 2026 patch: full screen Vibe Map page (map.html) ===== */
+/* desktop panels */
+/* phone and tablet */
+/* Oct 30 2026: Vibe Map desktop weighted like before: map is the hero, styles docked on the right in big two column tiles, town card floats lower left */
+/* Oct 30 2026: phone Vibe Map guides you: step 1 pick a style, step 2 tap a town, then swipe between towns */
+/* Oct 30 2026: phone Vibe Map opens on the full style picker */
+/* Oct 30 2026: mobile Vibe Map audit fixes */
+/* Oct 30 2026: phone turned sideways: the sheet becomes a panel on the right, the map fills the rest */
+/* Oct 30 2026: drag and pinch, List link, tablet layout */
+/* Oct 30 2026: one screen style picker on phones: all 12 in three columns, whole state map above */
+/* Oct 30 2026: picker tiles are squares (3 across when there's room, 4 across on shorter phones) */
+/* Oct 30 2026: audit round 3 polish */
+/* ===== Oct 30 2026 patch: phone homepage ===== */
+
+/* ===== Oct 30 2026 patch: phone hero (headline + trust line above the Vibe Map, style tap lights the map) ===== */
+
+/* ===== Nov 3 2026 patch: phone hero high end look (sand to sea wash, edge to edge map, cover style tiles) ===== */
+
+/* ===== Nov 3 2026 patch: desktop hero matches the phone (sand to sea wash, edge to edge map, cover style tiles up beside the headline) ===== */
+/* phone hero order: trust eyebrow, headline, quiz link */
+/* Nov 3 2026: wider home hero on big screens */
+/* ===== Nov 3 2026 patch: homepage sections and Find Your Mile, photo led ===== */
+/* who we are: full bleed split */
+/* photo cards: popular towns */
+/* coasts */
+/* guides: one big, two stacked, all photo led */
+/* Find Your Mile */
+main#app:has(.svband){background:linear-gradient(180deg,#FBF6EE 0,#F4ECDF 260px,#DCEBEA 560px,#C3DFE3 760px,#E9EFEC 1000px,var(--white) 1200px)}
+/* ===== Nov 3 2026 patch: homepage hierarchy (towns lead, story and guides support, coasts compact) ===== */
+/* 1. popular towns lead right after the hero */
+/* 2. who we are: contained, quieter */
+/* 3. coasts: compact row */
+/* 4. guides: standard cards, photo on top, text below */
+/* ===== Nov 3 2026 patch: one big about picture, coasts removed, editorial guides ===== */
+/* guides: editorial */
+
+/* ===== Nov 3 2026 patch: Who we are, magazine style (photo, caption, big caps headline, byline, intro) ===== */
+/* Nov 3 2026: Who we are type back in line with the site (sentence case serif, italic sea green accent, small caps label) */
+
+/* ===== Nov 3 2026 patch: article figures, native charts, tables, kicker and box (florida-floods-two-ways) ===== */
+.prose .fc-fig{margin:30px 0;padding:0}
+.prose .fc-fig img{display:block;width:100%;max-width:420px;height:auto;margin:0 auto;border-radius:10px;border:1px solid var(--line)}
+.prose .fc-fig figcaption{max-width:420px;margin:10px auto 0;font-size:14.5px;line-height:1.5;color:var(--muted)}
+.prose .fc-chart{margin:30px 0;padding:20px 22px 16px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.prose .fc-chart-h b{display:block;font-family:var(--display);font-size:19px;line-height:1.3;font-weight:600;color:var(--ink)}
+.prose .fc-chart-h span{display:block;margin-top:4px;font-size:14px;line-height:1.45;color:var(--muted)}
+.prose .fc-legend{display:flex;gap:16px;flex-wrap:wrap;margin-top:12px;font-size:13px;color:var(--muted)}
+.prose .fc-legend span{display:inline-flex;align-items:center;gap:6px}
+.prose .fc-legend i{display:inline-block;width:12px;height:12px;border-radius:3px}
+.prose .fc-rows{margin-top:14px}
+.prose .fc-row{display:grid;grid-template-columns:minmax(96px,30%) 1fr 58px;align-items:center;gap:10px;padding:5px 0;border-radius:6px;cursor:default}
+.prose .fc-row:hover{background:var(--paper)}
+.prose .fc-lab{font-size:14.5px;line-height:1.25;color:var(--ink)}
+.prose .fc-row.hl .fc-lab{font-weight:700}
+.prose .fc-track{display:flex;gap:2px;height:16px;align-items:stretch}
+.prose .fc-seg{display:block;height:100%;min-width:0}
+.prose .fc-seg:last-child{min-width:3px}
+.prose .fc-seg:last-child{border-radius:0 4px 4px 0}
+.prose .fc-val{white-space:nowrap;font-size:14px;font-variant-numeric:tabular-nums;color:var(--ink);text-align:right}
+.prose .fc-seg.t1,.prose .fc-legend i.t1{background:#8DC3E3}
+.prose .fc-seg.t2,.prose .fc-legend i.t2{background:#3C86BF}
+.prose .fc-seg.t3,.prose .fc-legend i.t3{background:#1E4F86}
+.prose .fc-seg.r1{background:#1E4F86}
+.prose .fc-seg.ref{background:#C9CFCF}
+.prose .fc-seg.e0{background:#9FB4B7}
+.prose .fc-seg.e1{background:var(--accent)}
+.prose .fc-src{margin-top:12px!important;font-size:12.5px;line-height:1.45;color:var(--muted)}
+.prose .fc-table-wrap{margin:26px 0;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.prose .fc-table{width:100%;border-collapse:collapse;font-size:15.5px;line-height:1.4}
+.prose .fc-table caption{text-align:left;font-family:var(--display);font-size:19px;font-weight:600;color:var(--ink);padding-bottom:10px}
+.prose .fc-table th{text-align:left;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:8px 10px;border-bottom:2px solid var(--ink)}
+.prose .fc-table td{padding:10px;border-bottom:1px solid var(--line);vertical-align:top}
+.prose .fc-table td:first-child{white-space:nowrap;color:var(--muted)}
+.prose .fc-tag{display:inline-block;padding:2px 9px;border-radius:99px;font-size:12.5px;font-weight:600;white-space:nowrap}
+.prose .fc-tag.ocean{background:#E2EEF0;color:var(--sea)}
+.prose .fc-tag.rain{background:var(--accent-tint);color:var(--accent-dark)}
+.prose .fc-kicker{margin-top:26px;font-family:var(--display);font-size:22px;line-height:1.4;color:var(--ink)}
+.prose .fc-box{margin-top:34px;padding:22px 24px;background:var(--paper);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:10px}
+.prose .fc-box h3{margin:0 0 10px;font-size:20px}
+.prose .fc-box ul{margin:0}
+.prose .fc-box li{font-size:16.5px}
+@media (max-width:600px){.prose .fc-chart{padding:16px 14px 12px}.prose .fc-row{grid-template-columns:92px 1fr 56px;gap:8px}.prose .fc-lab{font-size:13.5px}.prose .fc-box{padding:18px 16px}.prose .fc-table{font-size:14.5px}.prose .fc-table th,.prose .fc-table td{padding:8px 6px}}
+.prose .fc-sources{margin-top:30px;padding-top:16px;border-top:1px solid var(--line)}
+.prose .fc-sources h3{font-size:15px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 8px}
+.prose .fc-sources ul{margin:0}
+.prose .fc-sources li{font-size:13.5px;line-height:1.5;color:var(--muted)}
+.prose .fc-sources li+li{margin-top:4px}
+/* flood risk rankings */
+.prose .fc-rank{margin:30px 0;padding:20px 22px 16px;background:#fff;border:1px solid var(--line);border-radius:12px}
+.prose .fc-rank>input[type=radio]{position:absolute;opacity:0;pointer-events:none}
+.prose .fc-search{display:block;margin-bottom:14px}
+.prose .fc-search span{display:block;font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:600;margin-bottom:6px}
+.prose .fc-search input{width:100%;box-sizing:border-box;font:inherit;font-size:16px;padding:10px 14px;border:1px solid var(--line);border-radius:8px;background:var(--paper);color:var(--ink)}
+.prose .fc-search input:focus{outline:2px solid var(--sea);outline-offset:1px}
+.prose .fc-tabs{display:flex;gap:6px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-bottom:16px}
+.prose .fc-tabs label{cursor:pointer;font-size:14.5px;font-weight:600;padding:8px 12px;margin-bottom:-1px;border-bottom:2px solid transparent;color:var(--muted)}
+.prose .fc-tabs label:hover{color:var(--ink)}
+.prose .fc-panel{display:none}
+.prose #fcv1:checked~.fc-panels .p1,.prose #fcv2:checked~.fc-panels .p2,.prose #fcv3:checked~.fc-panels .p3{display:block}
+.prose #fcv1:checked~.fc-tabs label[for=fcv1],.prose #fcv2:checked~.fc-tabs label[for=fcv2],.prose #fcv3:checked~.fc-tabs label[for=fcv3]{color:var(--ink);border-bottom-color:var(--accent)}
+.prose #fcv1:focus-visible~.fc-tabs label[for=fcv1],.prose #fcv2:focus-visible~.fc-tabs label[for=fcv2],.prose #fcv3:focus-visible~.fc-tabs label[for=fcv3]{outline:2px solid var(--sea)}
+.prose .fc-r,.prose .fc-trow>summary{grid-template-columns:26px minmax(96px,30%) 1fr 52px}
+.prose .fc-rk{font-size:12.5px;color:var(--muted);font-variant-numeric:tabular-nums;text-align:right}
+.prose .fc-lab a{color:inherit;text-decoration:none;border-bottom:1px solid var(--line)}
+.prose .fc-lab a:hover{border-bottom-color:currentColor}
+.prose .fc-trow{border-radius:6px}
+.prose .fc-trow>summary{display:grid;align-items:center;gap:10px;padding:5px 0;cursor:pointer;list-style:none;border-radius:6px}
+.prose .fc-trow>summary::-webkit-details-marker{display:none}
+.prose .fc-trow>summary:hover{background:var(--paper)}
+.prose .fc-trow>summary .fc-lab::after{content:"+";margin-left:6px;color:var(--muted);font-weight:400}
+.prose .fc-trow[open]>summary .fc-lab::after{content:"\2212"}
+.prose .fc-trow[open]{background:var(--paper)}
+.prose .fc-tdet{padding:6px 12px 14px 36px}
+.prose .fc-tdet dl{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px 18px;margin:0}
+.prose .fc-tdet dt{font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.prose .fc-tdet dd{margin:2px 0 0;font-size:15px;color:var(--ink)}
+.prose .fc-tdet small{display:block;font-size:12.5px;color:var(--muted)}
+.prose .fc-hist,.prose .fc-more{margin-top:10px!important;font-size:14.5px;line-height:1.5}
+.prose .fc-seg.c1{background:#2F4A4E}
+.prose .fc-seg.f1{background:#B5652B}
+.prose .fc-box-sea{border-left-color:var(--sea)}
+.prose .fc-box p{font-size:16.5px;margin:0}
+.prose [hidden]{display:none!important}
+@media (max-width:600px){.prose .fc-rank{padding:16px 12px 12px}.prose .fc-r,.prose .fc-trow>summary{grid-template-columns:22px 92px 1fr 46px;gap:7px}.prose .fc-tdet{padding:6px 8px 12px 10px}.prose .fc-tabs label{padding:8px 8px;font-size:13.5px}}
+.prose .fc-tabs{flex-wrap:nowrap;overflow-x:auto}.prose .fc-tabs label{white-space:nowrap}@media (max-width:600px){.prose .fc-tabs{gap:2px}.prose .fc-tabs label{padding:8px 7px;font-size:13px}}
+
+/* ===== Nov 3 2026 patch: editorial "From the coast" section on the home page ===== */
+
+/* ===== Nov 3 2026 patch: home page Popular beach towns and Who we are restyled to match the editorial guides section ===== */
+
+/* ===== Nov 3 2026 patch: desktop hero style tiles fit the map height (no half row cut off at the bottom) ===== */
+
+/* ===== Nov 3 2026 patch: hero button under the headline; flat style tiles (no photo overlays) on the home page ===== */
+/* desktop tiles: photo on top, name and line underneath in ink */
+/* phone tiles */
+
+/* ===== Nov 3 2026 patch: How it works row on the home page; Latest list trimmed to 3 on phones ===== */
+
+/* ===== Nov 3 2026 patch: audit fixes (WCAG AA contrast, 24px tap targets) ===== */
+
+/* ===== Nov 3 2026 patch: mission line in the hero, local intro ask on results, How it works step 3 link ===== */
+
+/* ===== Nov 3 2026 patch: light editorial newsletter band and footer (replaces the dark teal) ===== */
+.news{background:#F4ECDF!important;color:#13282C!important}
+.news h2{color:#13282C!important}
+.news p{opacity:1!important;color:#2C3E41}
+.news .note{color:#4A5B5E!important;opacity:1!important}
+.news input{background:#FFFDF9!important;border:1px solid rgba(21,42,46,.28)!important;color:#13282C!important}
+.news input:focus{outline:2px solid #1B6E78;outline-offset:1px}
+.news .thanks,.news .thanks b{color:#13282C!important}
+.news .btn-accent{background:#B84C11!important}
+.news .btn-accent:hover{background:#A8440E!important}
+footer{background:#FDFCF8!important;color:#4A5B5E!important;border-top:3px solid #13282C}
+footer b{color:#13282C!important}
+footer p{color:#4A5B5E}
+footer a{color:#2C3E41!important}
+footer a:hover{color:#13282C!important;text-decoration:underline;text-underline-offset:3px}
+footer a:focus-visible{outline:2px solid #1B6E78;outline-offset:2px}
+
+/* ===== Nov 3 2026 patch: style guides wired into the Vibe Map, results and town pages ===== */
+
+/* ===== Nov 3 2026 patch: readability (Surfing World lessons). Two typefaces: Fraunces for reading and headlines (real italics now loaded), DM Sans for buttons, forms, map and navigation. Newsreader dropped. ===== */
+:root{--read:'Fraunces',Georgia,'Times New Roman',serif;--text:#17191A}
+/* reading text: one serif, near black, comfortable size and line length */
+.prose{font-family:var(--read)!important;font-size:19px!important;line-height:1.6!important;color:var(--text)!important;max-width:34em!important;font-variation-settings:"opsz" 18;letter-spacing:0!important;-webkit-text-stroke:0!important}
+.prose p,.prose li{color:var(--text)}
+.prose b,.prose strong{font-weight:600!important}
+.prose h2,.prose h3{color:var(--text)}
+.about-cta p,.lede{font-family:var(--read);color:var(--text)}
+.phero p{font-family:var(--read)}
+/* fewer tiny caps: kickers a bit bigger and calmer; bylines in italic serif like a magazine */
+.cat,.card .cat{font-size:12.5px!important;letter-spacing:.08em!important}
+.prose .fc-src,.fc-fig figcaption{font-size:14px}
+/* reading weight: lighter Fraunces with display optical size, like a magazine; data tables stay in the UI sans */
+.prose{font-weight:320!important;font-variation-settings:"opsz" 48!important}
+.prose b,.prose strong{font-weight:600!important}
+.prose table,.prose table *{font-family:var(--ui)!important;font-size:15.5px!important;line-height:1.45!important;font-variation-settings:normal!important}
+.prose td{font-weight:400}.prose th{font-weight:600}
+.about-cta p,.lede,.phero p{font-weight:350;font-variation-settings:"opsz" 36}
+/* more negative space in reading pages */
+.prose{line-height:1.68!important;max-width:33em!important}
+.prose p+p,.prose ul+p,.prose p+ul,.prose ol+p,.prose p+ol{margin-top:1.15em!important}
+.prose h2{margin-top:2.6em!important;margin-bottom:.15em}
+.prose h2+p,.prose h2+ul,.prose h2+div{margin-top:.75em!important}
+.prose p+h3,.prose ul+h3{margin-top:1.9em!important}
+.prose h3+p{margin-top:.55em!important}
+.prose li+li{margin-top:.6em!important}
+.prose .fc-chart,.prose .fc-fig,.prose .fc-table-wrap,.prose table,.prose .fc-box,.prose .fc-rank{margin-top:2.4em!important;margin-bottom:2.4em!important}
+section.wrap.twocol{padding-top:56px;padding-bottom:72px}
+@media (min-width:901px){.twocol{gap:72px!important}}
+@media (max-width:900px){section.wrap.twocol{padding-top:36px;padding-bottom:56px}.prose h2{margin-top:2.2em!important}}
+
+/* ===== Nov 3 2026 patch (preview): home page reading text in the same serif; UI stays sans ===== */
+.news p:not(.note){font-family:var(--read)!important;font-weight:330;font-variation-settings:"opsz" 36;color:var(--text,#17191A)!important;letter-spacing:0}
+.news p:not(.note){font-size:18px;line-height:1.6}
+
+/* ===== Nov 3 2026 patch: desktop style tiles even (photo fills its space, one line name, one line description) ===== */
+
+/* ===== Nov 4 2026 patch: compare page, short version box, Best tags, ask a local per town ===== */
+
+/* ===== Nov 4 2026 patch: compare layout, slim sticky names, suggestions in the empty column, muted non winners ===== */
+
+/* ===== Nov 4 2026 patch: compare, search in the third column, row labels on the left (desktop), tidy header ===== */
+@media (min-width:701px){
+  .cmp{--labw:190px}
+}
+
+/* ===== Nov 4 2026 patch: phone compare, two full width towns, add a third town strip ===== */
+
+/* ===== Nov 4 2026 patch: phone compare, small + Add a town opens a bottom sheet ===== */
+
+/* ===== Nov 4 2026 patch: compare, same for all line, stacked text on phones, + tile, sticky bar label ===== */
+
+/* ===== Nov 4 2026 patch: Start the quiz button in How it works, even gap above Popular towns ===== */
+
+/* ===== Nov 4 2026 patch: type split. Libre Caslon for headlines and reading, DM Sans for tools. No italics, no faked bold. ===== */
+:root{--display:'Libre Caslon Text',Georgia,'Times New Roman',serif!important;--read:'Libre Caslon Text',Georgia,'Times New Roman',serif!important}
+/* Display cut only for big headlines, it is drawn for large sizes */
+h1,.bd>h2,.news h2{font-family:'Libre Caslon Display',Georgia,serif!important;font-weight:400!important}
+html{font-synthesis:none}
+h1,h2,h3{font-variation-settings:normal!important}
+.hl{font-style:normal!important}
+/* reading text in Caslon Text runs wide, so a touch smaller and no light weights */
+.prose{font-size:18px!important;font-weight:400!important;font-variation-settings:normal!important;line-height:1.7!important}
+.news p:not(.note),.lede{font-weight:400!important;font-variation-settings:normal!important}
+/* tool pages: DM Sans medium headlines */
+.quiz h1,.quiz h2,.results h1,.find h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.02em!important}
+
+/* ===== Nov 4 2026 patch: home page headers in DM Sans medium; home article titles DM Sans light (desktop) / regular (phone). Reading text stays Caslon. ===== */
+.news h2{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.025em!important;font-variation-settings:"opsz" 40!important}
+
+/* ===== Nov 4 2026 patch: article page titles match the home page article titles (DM Sans light desktop, regular phone) ===== */
+.phero:has(.crumbs a[href$="articles"]) h1,.phero:has(.crumbs a[href$="articles/index.html"]) h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:300!important;letter-spacing:-.012em!important;line-height:1.1!important;font-variation-settings:"opsz" 40!important}
+@media (max-width:700px){.phero:has(.crumbs a[href$="articles"]) h1,.phero:has(.crumbs a[href$="articles/index.html"]) h1{font-weight:400!important;letter-spacing:-.005em!important;line-height:1.15!important;font-variation-settings:"opsz" 14!important}}
+
+/* ===== Nov 4 2026 patch: section headings inside articles in DM Sans medium to match the title; reading text stays Caslon ===== */
+.prose h2,.prose h3,.fc-box h3,.fc-sources h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.015em!important;font-variation-settings:"opsz" 32!important}
+
+/* ===== Nov 4 2026 patch: town page section headings and small section labels in DM Sans, matching articles ===== */
+.block>h2,.boxed>h3,.boxed h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.015em!important;font-variation-settings:"opsz" 32!important}
+.block>.label,section.wrap>.label,.boxed>.label{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:700!important;font-size:12px!important;letter-spacing:.14em!important;text-transform:uppercase}
+
+/* ===== Nov 4 2026 patch: flood rankings, PDF download at top, how to read it, top 5 / bottom 5 ===== */
+.fc-dl{display:flex;align-items:center;justify-content:space-between;gap:16px 24px;flex-wrap:wrap;margin:0 0 26px;padding:16px 18px;border:1px solid #13282C;border-radius:10px;background:#fff}
+.fc-dl b{display:block;font:600 16px/1.3 var(--ui);color:#13282C}
+.fc-dl span{display:block;font:400 14px/1.45 var(--ui);color:#4A5B5E;margin-top:2px;max-width:30em}
+.prose .fc-dlbtn,.fc-dlbtn{display:inline-flex;align-items:center;min-height:46px;padding:11px 18px;border-radius:6px;background:#C65213;color:#fff!important;font:700 15px var(--ui);text-decoration:none!important;white-space:nowrap}
+.fc-dlbtn:hover{background:#B84C11}
+.prose p.fc-how{font-size:inherit}
+.fc-quick{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:22px 0 26px}
+.fc-q{padding:14px 16px 10px;border-radius:10px;border:1px solid var(--line);background:#fff}
+.fc-q.hi{border-top:4px solid #B84C11}.fc-q.lo{border-top:4px solid #1B6E78}
+.prose .fc-q h3{margin:0 0 6px!important;font:700 12px/1.2 var(--ui)!important;letter-spacing:.12em!important;text-transform:uppercase;color:#13282C}
+.prose .fc-q ol{margin:0;padding:0;list-style:none;counter-reset:q}
+.prose .fc-q li{display:flex;justify-content:space-between;gap:10px;margin:0;padding:7px 0;border-top:1px solid var(--line);font:400 15.5px/1.3 var(--ui)}
+.prose .fc-q li:first-child{border-top:0}
+.fc-q li b{font-weight:700;font-variant-numeric:tabular-nums}
+.fc-q.hi li b{color:#B84C11}.fc-q.lo li b{color:#1B6E78}
+@media (max-width:700px){.fc-quick{grid-template-columns:1fr}.fc-dlbtn{width:100%;justify-content:center}}
+
+/* ===== Nov 4 2026 patch: Beach Towns and other list pages, headings and town names in DM Sans medium to match the home page; article cards DM Sans light like the home page ===== */
+a.card[href^="towns/"] h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;letter-spacing:-.02em!important;font-variation-settings:"opsz" 40!important}
+a.card[href^="towns/"] h3{letter-spacing:-.015em!important}
+a.card[href^="articles/"] h3{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:300!important;letter-spacing:-.012em!important;line-height:1.15!important;font-variation-settings:"opsz" 40!important}
+@media (max-width:700px){a.card[href^="articles/"] h3{font-weight:400!important;letter-spacing:-.005em!important;font-variation-settings:"opsz" 14!important}}
+
+/* ===== Nov 4 2026: Beach Towns hub ===== */
+.hb-flag{display:flex;align-items:baseline;justify-content:space-between;gap:16px;border-top:3px solid #13282C;padding-top:12px;margin-bottom:20px}
+.hb-flag h2{margin:0;font:700 12px/1.2 var(--ui)!important;letter-spacing:.14em!important;text-transform:uppercase;color:#13282C}
+.hb-flag a{font:700 12px var(--ui);letter-spacing:.12em;text-transform:uppercase;color:#13282C;text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:2px}
+.hb-k{display:block;font:700 12px/1.2 var(--ui);letter-spacing:.14em;text-transform:uppercase;color:#B84C11;margin-bottom:8px}
+.hb-tile{display:flex;flex-direction:column;gap:5px;color:#13282C;text-decoration:none}
+.hb-tile .ph{display:block;aspect-ratio:16/10;border-radius:6px;overflow:hidden;background:var(--line);margin-bottom:8px}
+.hb-tile .ph img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease}
+.hb-tile:hover .ph img{transform:scale(1.03)}
+.hb-tile b{font:500 20px/1.2 var(--ui);letter-spacing:-.015em}
+.hb-tile .tg{font-family:var(--read);font-size:16px;line-height:1.4;color:var(--text)}
+.hb-tile .mt{font:400 13.5px var(--ui);color:#66777A}
+.hb-tile:hover b{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+@media (max-width:700px){
+  .hb-tile b{font-size:16px}.hb-tile .tg{font-size:14px}.hb-tile .mt{font-size:12.5px}
+}
+
+/* ===== Nov 4 2026: Beach Towns hub v2. Split hero with no overlay, chapter numbers, notes from the Scotts, lead tiles ===== */
+.hb-tile.lead{grid-column:span 2;grid-row:span 2}
+.hb-tile.lead .ph{aspect-ratio:auto;flex:1;min-height:340px}
+.hb-tile.lead b{font-size:26px}
+.hb-tile .cap{font-family:var(--read);font-size:15.5px;line-height:1.5;color:#4A5B5E;max-width:44em}
+@media (max-width:700px){
+  .hb-tile.lead{grid-column:1/-1;grid-row:auto}.hb-tile.lead .ph{min-height:0;aspect-ratio:16/10}
+  .hb-tile.lead b{font-size:20px}.hb-tile .cap{font-size:14.5px}
+}
+
+/* ===== Nov 4 2026: Beach Towns hub v3. Full width photo hero with a cream panel (no overlay), sticky chapter bar, typeset coast table, 4 across tiles ===== */
+.hb3-hero{position:relative;min-height:600px;display:flex;align-items:flex-end;overflow:hidden}
+.hb3-ph{position:absolute;inset:0}.hb3-ph img,.hb3-ph picture{width:100%;height:100%;object-fit:cover;display:block}
+.hb3-hw{position:relative;width:100%;padding-bottom:40px;padding-top:120px}
+.hb3-panel{max-width:560px;background:#FFFDF9;padding:30px 32px 24px;border-radius:4px;box-shadow:0 18px 50px rgba(10,25,35,.22)}
+.hb3-panel h1{margin:8px 0 10px;font:500 clamp(34px,3.6vw,48px)/1.04 var(--ui)!important;letter-spacing:-.03em!important;color:#13282C}
+.hb3-panel>p{margin:0;font-family:var(--read);font-size:17.5px;line-height:1.55;color:var(--text)}
+.hb3-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px 20px}
+.hb3-grid .hb-tile .ph{aspect-ratio:4/3}
+.hb3-grid .hb-tile b{font-size:18px}.hb3-grid .hb-tile .tg{font-size:15px}
+@media (max-width:1000px){.hb3-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:700px){
+  .hb3-hero{min-height:0;display:block}
+  .hb3-ph{position:relative;inset:auto;height:220px}
+  .hb3-hw{padding:0 0 8px}
+  .hb3-panel{margin-top:-40px;position:relative;padding:22px 18px 18px;box-shadow:0 10px 30px rgba(10,25,35,.16)}
+  .hb3-panel h1{font-size:32px!important}.hb3-panel>p{font-size:16px}
+  .hb3-grid{grid-template-columns:1fr 1fr;gap:20px 12px}
+  .hb3-grid .hb-tile b{font-size:16px}.hb3-grid .hb-tile .tg{font-size:14px}
+}
+/* ===== Nov 4 2026: hub v3 fixes. Chapter bar only after the hero, short regions fill the row, shorter hero ===== */
+.hb3-hero{min-height:520px}.hb3-hw{padding-top:72px}
+@media (max-width:700px){.hb3-hero{min-height:0}.hb3-hw{padding-top:0}}
+
+/* ===== Nov 4 2026: rotating hub hero, area pages in the hub style ===== */
+.ar-hero{min-height:480px}
+.ar-hero .hb3-panel h1{font-size:clamp(32px,3.2vw,44px)!important}
+.ar-hero .hb-k{margin:10px 0 0}
+.ar-facts{padding-top:32px}
+.ar-facts dl{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));margin:0;border-top:3px solid #13282C;border-bottom:1px solid var(--line)}
+.ar-facts dl>div{padding:14px 16px 14px 0}.ar-facts dl>div+div{padding-left:16px;border-left:1px solid var(--line)}
+.ar-facts dt{font:700 11px var(--ui);letter-spacing:.12em;text-transform:uppercase;color:#66777A;margin-bottom:5px}
+.ar-facts dd{margin:0;font:500 16px/1.35 var(--ui);color:#13282C;font-variant-numeric:tabular-nums}
+.ar-facts dd small{display:block;font:400 12.5px var(--ui);color:#66777A;margin-top:2px}
+.ar-towns{padding-top:48px}.ar-more{padding-top:64px;padding-bottom:40px}
+.ar-grid .hb-tile .tg{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.ar-help{margin:22px 0 0;font-family:var(--read);font-size:17px;color:var(--text)}.ar-help a{color:#13282C;text-decoration:underline;text-underline-offset:3px}
+@media (max-width:900px){.ar-facts dl{grid-template-columns:repeat(2,minmax(0,1fr))}.ar-facts dl>div{border-left:0!important;padding-left:0!important;border-top:1px solid var(--line)}.ar-facts dl>div:nth-child(-n+2){border-top:0}.ar-facts dl>div:nth-child(even){padding-left:14px!important;border-left:1px solid var(--line)!important}}
+@media (max-width:700px){.ar-hero .hb3-panel h1{font-size:28px!important}.ar-towns{padding-top:36px}.ar-towns .hb-flag a{display:none}.ar-help{font-size:16px}}
+@media (max-width:900px){.ar-facts dl>div:last-child:nth-child(odd){grid-column:1/-1;border-left:0!important;padding-left:0!important}}
+/* ===== Nov 4 2026: hub polish. Lighter chapter heads, search results as photo tiles ===== */
+
+/* ===== Nov 4 2026: UX review fixes. Ask a local blocks, inline search results, flood risk labels, no cut off text, larger small text, phone fixes ===== */
+.hb-tile .tg{display:block!important;-webkit-line-clamp:unset!important;overflow:visible!important}
+.hb-tile .mt{font-size:14px!important;color:#4A5B5E!important}
+.ar-facts dd small a{color:#13282C;text-decoration:underline;text-underline-offset:2px}
+.hb-ask{padding-top:72px}.ar-ask{padding-top:56px}
+.hb-askin{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,2fr);gap:32px;align-items:center;padding:30px 32px;background:#F4ECDF;border-radius:6px}
+.hb-ask h2{margin:0 0 8px;font:500 clamp(24px,2.4vw,30px)/1.15 var(--ui)!important;letter-spacing:-.02em!important;color:#13282C}
+.hb-ask p{margin:0;font-family:var(--read);font-size:17px;line-height:1.55;color:var(--text)}
+.hb-askb{display:flex;flex-direction:column;align-items:stretch;gap:10px}
+.hb-askb .btn{min-height:48px;display:inline-flex;align-items:center;justify-content:center;text-align:center}
+@media (max-width:700px){
+  .hb3-hero{padding-top:0!important}
+  .hb-askin{grid-template-columns:1fr;gap:18px;padding:22px 18px}
+  .hb-tile .mt{font-size:13.5px!important}
+}
+/* ===== Nov 4 2026: hero panel at in between widths ===== */
+@media (max-width:700px){.hb3-panel{max-width:none}.hb3-ph{height:clamp(200px,42vw,300px)}}
+@media (min-width:701px) and (max-width:1000px){.hb3-hero{min-height:0;display:block}.hb3-ph{position:relative;inset:auto;height:clamp(280px,40vw,400px)}.hb3-hw{padding:0 0 8px}.hb3-panel{max-width:none;margin-top:-80px;position:relative}}
+@media (min-width:701px) and (max-width:1000px){.hb3-hero{padding-top:0!important}}
+
+/* ===== Nov 4 2026 patch: home Vibe Map bar (replaces the hero text once someone uses the home map) ===== */
+
+/* ===== Nov 4 2026 patch: home map side panel type. Style header DM Sans regular, town names DM Sans light ===== */
+
+/* ===== Nov 4 2026 patch: Match by priorities desktop layout, same frame as the Vibe Map ===== */
+/* Nov 4: compact panel so the basics and every slider fit without scrolling. Each slider is one line: name, bar, setting */
+/* Nov 4: simpler panel. Where on top, Pace and Budget as sliders, every slider says its setting in plain words */
+/* Nov 4: Pace fills from the middle; untouched sliders look ready, not switched off; top 5 rows show why */
+/* Nov 4: easier to read panel (bigger type), email save in the pinned footer, school note behind an i button */
+/* Nov 4: tapped town slides up into the priorities card */
+@media (min-width:1000px){
+}
+/* Nov 4: nothing set yet, so no towns to email */
+/* Nov 4: Slider Map uses the same card and panel header as the Vibe Map */
+/* Nov 4: Slider Map starting points in the empty card; on tall screens the sliders breathe instead of leaving a gap */
+/* ===== Nov 4 2026 patch: phone quiz, live map on top and every answer on one screen ===== */
+@media (max-width:759px){
+}
+@media (max-width:759px){
+}
+/* ===== Nov 4 2026 PREVIEW: "You're ___" result screen ===== */
+/* ===== Nov 4 2026 PREVIEW: inviting quiz landing ===== */
+@media (min-width:1000px){
+}
+@media (min-width:1000px){
+ section.wrap:has(>.qz-stage){max-width:none!important;padding:0!important;margin:0!important}
+}
+/* ===== Nov 4 2026 PREVIEW: immersive quiz ===== */
+section.wrap:has(>.qzi){max-width:none!important;padding:0!important;margin:0!important}
+/* Nov 4 PREVIEW: quiz answers are text only (the map is the picture) */
+/* ===== Nov 4 2026 PREVIEW: quiz polish pass ===== */
+/* card: fewer layers of text, top row with back, dots and the live count */
+/* answers: soft tiles instead of form boxes */
+/* map: whole state on desktop, card sits left of it; smaller, tighter glow */
+/* scoring: stays light, the map comes into focus instead of a dark screen */
+/* style screen: on desktop one centered card over a full photo */
+/* polish fixes: plain tiles get the same padding as the rest; sea color runs edge to edge behind the map */
+/* ===== Nov 4 2026: Florida style lands at the end of the scoring screen ===== */
+/* Nov 4: quiz card centered on desktop, Florida centered behind it */
+/* Nov 4: card centered, Florida back to its spot on the right */
+/* Nov 4: desktop quiz background matches the scoring screen (whole Florida, crisp and light) and a smaller card */
+/* Nov 4: the quiz is immersive, no site header; the logo top left goes home */
+/* ===== Nov 4 2026: town reveal and results match the new quiz ===== */
+/* phone quiz: Florida sits in a band at the top so it shows from question 1, the card below it */
+/* ===== Nov 4 2026: results panel, one ask ===== */
+/* the Shortlist offer: the one big ask */
+.sl-offer{display:grid!important;grid-template-columns:96px minmax(0,1fr);gap:16px;align-items:start;margin:0 0 14px!important;padding:18px!important;border-radius:16px!important;background:#FFF4EC!important;border:1.5px solid #F2C9AE!important;box-shadow:none!important}
+.sl-offer .hp{position:absolute;left:-9999px}
+.sl-offer.sent{display:block!important}
+.sl-offer.sent b{display:block;font:600 17px 'DM Sans',sans-serif;color:#13282C}
+.sl-offer.sent span{display:block;margin-top:4px;font-size:14.5px;color:#3e5155}
+/* the local: a clear but quieter second step */
+@media (max-width:899px){
+ .sl-offer{grid-template-columns:72px minmax(0,1fr);gap:12px;padding:14px!important}
+}
+@media (min-width:900px){.sl-offer{grid-template-columns:84px minmax(0,1fr);gap:14px}}
+/* email field full width, button under it; tighter rows so the offer shows on a laptop without scrolling */
+@media (min-width:900px){
+ .sl-offer{padding:16px!important}
+}
+/* Nov 4: Shortlist preview built from the real PDF (cover with their towns, the real checklist page behind) */
+.sl-offer{grid-template-columns:104px minmax(0,1fr)!important}
+/* thank you: one optional question, then the next step */
+.sl-thanks{display:block!important}
+.sl-tl{margin-top:14px;padding-top:14px;border-top:1px solid #F2C9AE}
+.sl-tl p{margin:0 0 10px;font:500 15px/1.4 'DM Sans',sans-serif;color:#13282C}
+.sl-tlb{display:flex;flex-wrap:wrap;gap:8px}
+.sl-tlb button{min-height:44px;padding:0 14px;border:1.5px solid #E2D9C9;border-radius:999px;background:#fff;font:600 15px 'DM Sans',sans-serif;color:#13282C;cursor:pointer}
+.sl-tlb button:hover{border-color:#C65213;color:#C65213}
+.sl-tl-done{font-weight:400!important}
+.sl-tl-done b{display:inline!important;font-size:15px!important}
+.sl-tl-next{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.sl-tl-next .btn{min-height:44px;padding:0 14px;font-size:15px}
+/* short laptops: keep the whole offer, button included, on the first screen */
+@media (min-width:900px) and (max-height:820px){
+ .sl-offer{padding:12px 14px!important;gap:12px!important}
+}
+/* Nov 4: Shortlist from Mark and Betsy, and the pinned phone bar */
+/* offer layout: Shortlist preview beside the title and line, then the email field and the note from Mark and Betsy full width */
+.sl-offer{grid-template-columns:104px minmax(0,1fr)!important;grid-template-areas:"sheet title" "sheet line" "form form" "from from";row-gap:0!important}
+@media (max-width:899px){.sl-offer{grid-template-columns:96px minmax(0,1fr)!important}}
+
+/* ===== Nov 4 2026 patch: audit fixes (headings, contrast, text size, tap areas) ===== */
+.prose .fc-q h2{margin:0 0 6px!important;font:700 12px/1.2 var(--ui)!important;letter-spacing:.12em!important;text-transform:uppercase;color:#13282C;border:0!important;padding:0!important}
+.hb-k{color:#A8450F}
+.crumbs a,.crumbs2 a{display:inline-block;padding:4px 0;min-height:24px}
+.cat,.card .cat{font-size:14px!important}
+.block>.label,section.wrap>.label,.boxed>.label{font-size:14px!important}
+.hb-k{font-size:14px!important}
+.prose .fc-tdet dt{font-size:14px!important}
+.prose .fc-tdet small{font-size:14px!important}
+.prose .fc-q h2{font-size:14px!important}
+.ar-facts dt{font-size:14px;color:#566669}
+.ar-facts dd small{font-size:14px;color:#566669}
+
+/* ===== Nov 4 2026 patch: results header, empty Slider Map ===== */
+/* ===== Nov 4 2026 patch: map explainers ===== */
+
+/* ===== Nov 4 2026 patch: town page At a glance strip ===== */
+/* ===== Nov 5 2026 patch: mobile pass (small phones, text floor) ===== */
+@media (max-width:760px){
+ .twocol{grid-template-columns:minmax(0,1fr)!important}
+ .twocol>*,.town>div{min-width:0}
+ .news .grid{grid-template-columns:minmax(0,1fr)!important}
+ .news .grid>*{min-width:0}
+ .news input{max-width:100%;box-sizing:border-box}
+}
+.hb-flag h2{font-size:14px!important}
+.hb-flag a{font-size:14px!important}
+.fc-search span{font-size:14px!important}
+.agtag{font-size:13px!important}
+/* ===== Nov 5 2026 patch: one tap questions after the email ===== */
+.pf-wrap>b{display:block}
+.pf-wrap>span{display:block}
+.pf .pf-contact input{min-height:44px;padding:0 12px;border:1.5px solid #E2D9C9;border-radius:10px;font:500 16px 'DM Sans',sans-serif;background:#fff;color:#13282C;width:100%;box-sizing:border-box}
+.pf .pf-skip{font-size:14px;color:#566669}
+.pf-wrap .sl-tl p,.pf-wrap .sl-tl-done{font:500 15px/1.4 'DM Sans',sans-serif!important;color:#13282C}
+.pf-wrap .sl-tl-done b{font:600 15px 'DM Sans',sans-serif!important}
+.pf-wrap .sl-tlb button[data-v]:focus:not(:focus-visible){border-color:#E2D9C9;color:#13282C}
+/* Nov 5: answers use the Find Your Mile quiz rows (not pills), Skip uses the quiz's underlined text link */
+.pf-wrap .sl-tlb{display:grid;grid-template-columns:1fr;gap:8px}
+.pf-wrap .sl-tlb button{position:relative;display:flex;align-items:center;width:100%;min-height:48px;padding:9px 16px 9px 40px;text-align:left;border:1px solid transparent;border-radius:14px;background:#fff;font:600 16px/1.3 'DM Sans',sans-serif;color:#152A2E;transition:border-color .15s,box-shadow .15s}
+.pf-wrap .sl-tlb button::before{content:"";position:absolute;left:14px;top:50%;width:16px;height:16px;margin-top:-8px;border:2px solid #C9C0B0;border-radius:50%;background:#fff;box-sizing:border-box}
+.pf-wrap .sl-tlb button:hover{border-color:var(--ink);color:#152A2E;box-shadow:0 4px 12px rgba(20,40,55,.06)}
+.pf-wrap .sl-tlb button:active::before{border-color:var(--accent);background:radial-gradient(circle,var(--accent) 0 3px,#fff 4px)}
+.pf-wrap .sl-tlb button:focus-visible{outline:3px solid rgba(238,106,44,.35);outline-offset:2px}
+.pf-wrap .pf-skip{display:block;margin:4px auto 0;padding:6px;background:none;border:0;font:500 14px 'DM Sans',sans-serif;color:#3e5155;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+.pf-wrap .sl-tl-next .pf-skip{display:inline-block;margin:0}
+.pf-wrap .pf-contact input{border-radius:6px;border:1px solid #D9D0C0}
+.pf-wrap .sl-tl-next .btn{border-radius:6px}
+/* Nov 5: lead question box keeps one size across every step */
+.pf-wrap .pf{display:grid}
+.pf-wrap .pf>.pf-s{grid-area:1/1;visibility:hidden;display:flex;flex-direction:column}
+.pf-wrap .pf>.pf-s.on{visibility:visible}
+.pf-wrap .pf-end{justify-content:center}
+.pf-wrap .sl-tlb.pf-2col{grid-template-columns:1fr 1fr}
+.pf-wrap .sl-tlb.pf-2col button:last-child{grid-column:1/-1}
+.pf-wrap .pf-s>.pf-skip{margin-top:auto;padding-top:8px}
+.pf-wrap .sl-tlb.pf-2col button{padding:9px 8px 9px 34px;font-size:15px;white-space:nowrap}
+.pf-wrap .sl-tlb.pf-2col button::before{left:11px}
+.pf-wrap .pf-end{justify-content:flex-start}
+.pf-wrap .pf-fine{margin:0!important;font:400 12.5px/1.4 'DM Sans',sans-serif!important;color:#566669!important}
+.pf-wrap .sl-tl p.pf-fine{font:400 12.5px/1.4 'DM Sans',sans-serif!important;color:#566669!important;margin:0!important}
+/* Nov 5: lead questions feel like they come from Mark and Betsy */
+.pf-wrap .pf-from{display:flex;gap:12px;align-items:center}
+.pf-wrap .pf-from img{width:44px;height:44px;border-radius:50%;object-fit:cover;flex:none}
+.pf-wrap .pf-hd b{display:block;font:600 17px 'DM Sans',sans-serif;color:#13282C}
+.pf-wrap .pf-hd span{display:block;margin-top:2px;font-size:14.5px;color:#3e5155}
+.pf-wrap .sl-tl p.pf-sig{margin:6px 0 10px!important;font:italic 400 16px/1.2 var(--display,Georgia),serif!important;color:#C65213!important}
+.pf-wrap .pf-from{min-height:68px}
+.pf-wrap .pf-from img{width:52px;height:52px}
+/* ===== Nov 5 2026 patch: lead questions, editorial version (paper, hairlines, Caslon, one accent) ===== */
+.sl-offer.pf-wrap{background:var(--page,#FFFDF9)!important;border:1px solid rgba(21,42,46,.16)!important;border-radius:4px!important;padding:22px 22px 18px!important;box-shadow:0 1px 2px rgba(21,42,46,.04)!important}
+.pf-wrap .pf-from{min-height:0;align-items:flex-start;padding-bottom:16px;border-bottom:1px solid rgba(21,42,46,.16)}
+.pf-wrap .pf-from img{width:48px;height:48px}
+.pf-wrap .pf-eb,.pf-wrap .pf-n{display:block;font:600 11px/1.2 'DM Sans',sans-serif!important;letter-spacing:.14em;text-transform:uppercase;color:#56696C;font-style:normal}
+.pf-wrap .pf-hd b{margin-top:5px;font:400 21px/1.2 'Libre Caslon Text',Georgia,serif!important;color:#152A2E!important}
+.pf-wrap .pf-hd span{margin-top:4px;font:400 14px/1.4 'DM Sans',sans-serif;color:#56696C}
+.pf-wrap .sl-tl{border-top:0!important;margin-top:0!important;padding-top:18px!important}
+.pf-wrap .sl-tl p.pf-q{margin:8px 0 4px!important;font:400 19px/1.35 'Libre Caslon Text',Georgia,serif!important;color:#152A2E!important}
+.pf-wrap .sl-tl p.pf-y{margin:0 0 12px!important;font:400 14px/1.45 'DM Sans',sans-serif!important;color:#56696C!important}
+.pf-wrap .sl-tlb,.pf-wrap .sl-tlb.pf-2col{display:block;border-top:1px solid rgba(21,42,46,.16)}
+.pf-wrap .sl-tlb button,.pf-wrap .sl-tlb.pf-2col button{display:flex;justify-content:space-between;width:100%;min-height:46px;padding:12px 2px!important;border:0!important;border-bottom:1px solid rgba(21,42,46,.16)!important;border-radius:0!important;background:transparent!important;font:500 16px/1.3 'DM Sans',sans-serif!important;color:#152A2E;box-shadow:none!important;white-space:normal}
+.pf-wrap .sl-tlb button::before{content:none!important}
+.pf-wrap .sl-tlb button::after{content:"→";color:#A9B4B4;transition:transform .15s,color .15s}
+.pf-wrap .sl-tlb button:hover{color:#152A2E;background:transparent!important}
+.pf-wrap .sl-tlb button:hover::after{color:#152A2E;transform:translateX(3px)}
+.pf-wrap .pf-skip,.pf-wrap .pf-s>.pf-skip{margin:10px 0 0!important;padding:4px 0!important;text-align:left;font:500 13px 'DM Sans',sans-serif!important;color:#56696C!important;text-decoration:underline;text-underline-offset:3px;align-self:flex-start}
+.pf-wrap .pf-contact input{border:0!important;border-bottom:1px solid rgba(21,42,46,.3)!important;border-radius:0!important;background:transparent!important;padding:0 2px!important}
+.pf-wrap .pf-contact input:focus{outline:0;border-bottom-color:#152A2E!important}
+.pf-wrap .sl-tl-next .btn-accent{background:#152A2E!important;border-radius:4px!important}
+.pf-wrap .sl-tl-next .btn-line{border:1px solid rgba(21,42,46,.3)!important;border-radius:4px!important;background:transparent!important}
+.pf-wrap .sl-tl p.sl-tl-done{margin-top:8px!important;font:400 19px/1.4 'Libre Caslon Text',Georgia,serif!important}
+.pf-wrap .sl-tl p.sl-tl-done b{font:inherit!important}
+.pf-wrap .sl-tl p.pf-sig{font:italic 400 18px/1.2 'Libre Caslon Text',Georgia,serif!important;color:#C65213!important;margin:10px 0 16px!important}
+.pf-wrap .pf-hd span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pf-wrap .pf-n{min-height:13px}
+/* Nov 5: lead question headline and questions in DM Sans ExtraLight (Caslon kept only for the signature) */
+.pf-wrap .pf-hd b{font:200 23px/1.2 'DM Sans',sans-serif!important;letter-spacing:-.01em}
+.pf-wrap .sl-tl p.pf-q{font:200 21px/1.3 'DM Sans',sans-serif!important;letter-spacing:-.01em}
+.pf-wrap .sl-tl p.sl-tl-done{font:200 19px/1.45 'DM Sans',sans-serif!important;letter-spacing:-.005em}
+/* Nov 5: answers in semibold with orange arrows (option B) */
+.pf-wrap .sl-tlb button,.pf-wrap .sl-tlb.pf-2col button{font-weight:600!important;font-size:17px!important}
+.pf-wrap .sl-tlb button::after,.pf-wrap .sl-tlb.pf-2col button::after{color:#C65213!important;font-weight:400}
+.pf-wrap .pf-n{min-height:14px;line-height:14px!important}
+/* Nov 5: done screen hands them something useful */
+.pf-wrap .pf-read{display:block;margin:4px 0 12px;padding:14px 0;border-top:1px solid rgba(21,42,46,.16);border-bottom:1px solid rgba(21,42,46,.16);text-decoration:none;color:#152A2E}
+.pf-wrap .pf-read i{display:block;font:600 11px/1.2 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#56696C;font-style:normal}
+.pf-wrap .pf-read b{display:block;margin-top:6px;font:600 17px/1.3 'DM Sans',sans-serif;color:#152A2E}
+.pf-wrap .pf-read b::after{content:"\00a0→";color:#C65213;font-weight:400}
+.pf-wrap .pf-read span{display:block;margin-top:3px;font:400 14px/1.4 'DM Sans',sans-serif;color:#56696C}
+.pf-wrap .pf-read:hover b{text-decoration:underline;text-underline-offset:3px}
+.pf-wrap .pf-ig{font:500 13px 'DM Sans',sans-serif;color:#56696C;text-decoration:underline;text-underline-offset:3px}
+.pf-wrap .sl-tl p.pf-sig{margin:8px 0 14px!important}
+/* ===== Nov 5 2026 PREVIEW: Vibe Map "What you need" ===== */
+/* Nov 5: phones, What you need behind one button */
+/* Nov 5: zero tiles and why it fits */
+/* ===== Nov 5 2026 preview: slim What you need row on the desktop Vibe Map ===== */
+/* Nov 5: one line how it works card; bigger filter chips for easier reading */
+/* Nov 5: budget menu and both chips on one line */
+/* Nov 5: the What you need row is three columns that share the width, so it never wraps (Safari draws text a bit wider) */
+/* Nov 5: home Vibe Map, the town card sits bottom left over the Gulf, like the full Vibe Map */
+/* Nov 5: home Vibe Map keeps the style photos on the right; the picked style is outlined in its color */
+/* ===== Nov 5 2026 patch: phone Vibe Map keeps the styles the whole time (no Step 1 of 2 / Step 2 of 2) ===== */
+/* ===== Nov 6 2026 patch: phone title always one line; phone town card with a big photo and a clear X ===== */
+/* Nov 6 2026: phone town card, Homes + strengths */
+/* Nov 6 2026: phone town cards are all the same height; the photo flexes and long text is trimmed */
+/* Nov 6 2026: editorial phone town card */
+/* Nov 6 2026: quieter card nav on phones */
+/* Nov 6 2026: phone Vibe Map: shorter town card, and no footer (the map fills the screen, nothing to scroll to) */
+body:has(.vm-ph:not(.land)) > footer{display:none}
+
+/* ===== Nov 6 2026 patch: News Analysis article template (layout "news") ===== */
+.news-art{background:#fff}
+.news-art .nyt{max-width:680px;margin:0 auto;padding:0 22px}
+.news-art .nyt-head{padding:44px 0 26px}
+.news-art .nyt-head .crumbs{font-family:'DM Sans',sans-serif;font-size:13px;color:var(--muted);margin-bottom:18px}
+.news-art .nyt-head .crumbs a{color:var(--muted)}
+.news-art .nyt-kick{font-family:'DM Sans',sans-serif;font-weight:700;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);margin:0 0 16px}
+.news-art .nyt-head h1{font-family:'DM Sans',system-ui,sans-serif!important;font-weight:500!important;font-size:50px;line-height:1.1;letter-spacing:-.02em;color:var(--ink);margin:0;font-variation-settings:"opsz" 40!important}
+.news-art .nyt-dek{font-family:'DM Sans',sans-serif;font-weight:300;font-size:21px;line-height:1.45;letter-spacing:-.005em;color:#3E4F52;margin:18px 0 0}
+.news-art .nyt-by{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:baseline;margin-top:24px;padding-top:16px;border-top:1px solid var(--line);font-family:'DM Sans',sans-serif;font-size:14px;color:var(--muted)}
+.news-art .nyt-by b{font-weight:500;color:var(--ink)}
+.news-art .nyt-lead{max-width:1100px;margin:0 auto 34px;padding:0 22px}
+.news-art .nyt-lead img{display:block;width:100%;height:auto;max-height:620px;object-fit:cover;object-position:center 60%}
+.news-art .nyt-lead figcaption,.news-art .fc-photo figcaption{font-family:'DM Sans',sans-serif;font-weight:300;font-size:13.5px;line-height:1.5;color:var(--muted);margin-top:8px;max-width:680px}
+.news-art .fc-photo .cr{margin-left:6px;font-size:12px;color:#8A9A9C}
+.news-art .prose{max-width:none}
+.news-art .prose p{font-family:'DM Sans',sans-serif;font-weight:400;font-size:18.5px;line-height:1.7;color:var(--ink);margin:0 0 22px}
+.news-art .prose b,.news-art .prose strong{font-weight:600}
+.news-art .prose h2{font-family:'DM Sans',sans-serif!important;font-weight:500!important;font-size:25px;letter-spacing:-.025em;font-variation-settings:"opsz" 32!important;line-height:1.25;color:var(--ink);margin:46px 0 18px}
+.news-art .prose p a{color:var(--ink);text-decoration:underline;text-decoration-color:#9FB4B7;text-underline-offset:3px}
+.news-art .prose .fc-photo{margin:30px 0}
+.news-art .prose .fc-photo img{display:block;width:100%;height:auto;max-width:100%;border:0;border-radius:0;aspect-ratio:3/2;object-fit:cover}
+.news-art .prose .fc-photo figcaption{max-width:none;margin:8px 0 0;text-align:left}
+.news-art .prose .fc-chart{background:none;border:0;border-top:2px solid var(--ink);border-radius:0;padding:12px 0 0;margin:34px 0}
+.news-art .prose .fc-chart-h b{font-family:'DM Sans',sans-serif;font-weight:500;font-size:17px;letter-spacing:-.01em}
+.news-art .prose .fc-chart-h span{font-family:'DM Sans',sans-serif;font-weight:300;font-size:14px;color:var(--muted)}
+.news-art .prose .fc-scatter img{display:block;width:100%;height:auto;margin-top:12px;border:0}
+.news-art .prose .fc-src,.news-art .prose p.fc-src{font-family:'DM Sans',sans-serif;font-size:12.5px;color:var(--muted);margin:10px 0 0}
+.news-art .prose .fc-table-wrap{margin:34px 0;border-top:2px solid var(--ink);padding-top:12px}
+.news-art .prose .fc-table{font-family:'DM Sans',sans-serif;font-size:14.5px}
+.news-art .prose .fc-table caption{font-family:'DM Sans',sans-serif;font-weight:500;font-size:17px;letter-spacing:-.01em}
+.news-art .prose .fc-table th{border-bottom:1px solid var(--ink);text-transform:none;letter-spacing:0;font-size:13px;font-weight:500;vertical-align:bottom}
+.news-art .prose .fc-table tr.fc-tr-hl td{font-weight:600;color:var(--ink)}
+.news-art .prose .fc-table.fc-num td:not(:first-child),.news-art .prose .fc-table.fc-num th:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}
+.news-art .prose .fc-table.fc-num td:first-child{color:var(--ink)}
+.news-art .prose .fc-tag.gop{background:#F6E4E1;color:#A23B31}
+.news-art .prose .fc-tag.dem{background:#E3EAF4;color:#2F5A8F}
+.news-art .prose .nyt-pull{margin:34px 0;padding:18px 0;border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);font-family:'DM Sans',sans-serif;font-weight:300;font-size:28px;line-height:1.3;letter-spacing:-.012em;color:var(--ink);quotes:none;border-left:0;font-style:normal}
+.news-art .prose .fc-kicker{font-family:'DM Sans',sans-serif!important;font-weight:300;font-size:24px;line-height:1.4;letter-spacing:-.01em;margin:30px 0}
+.news-art .prose .fc-box{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--accent);border-radius:0;padding:20px 22px;margin:28px 0}
+.news-art .prose .fc-box h3{font-family:'DM Sans',sans-serif!important;font-weight:500!important;font-size:18px;margin:0 0 10px}
+.news-art .prose .fc-box li{font-family:'DM Sans',sans-serif;font-size:16px;line-height:1.6;margin-bottom:8px}
+.news-art .nyt-towns{margin:40px 0 10px;padding:20px 0 0;border-top:2px solid var(--ink)}
+.news-art .nyt-towns h3{font-family:'DM Sans',sans-serif!important;font-weight:500!important;font-size:17px;letter-spacing:-.01em;margin:0 0 14px;color:var(--ink)}
+.news-art .nt-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px 18px}
+.news-art .nt-grid a{display:flex;justify-content:space-between;align-items:baseline;gap:10px;padding:10px 0;border-bottom:1px solid var(--line);text-decoration:none;color:var(--ink);font-family:'DM Sans',sans-serif}
+.news-art .nt-grid a b{font-weight:500;font-size:16px}
+.news-art .nt-grid a span{font-size:13px;color:var(--muted)}
+.news-art .nt-grid a:hover b{color:var(--accent)}
+.news-art .prose p.nt-more{font-size:15px;margin:14px 0 0}
+.news-art .prose p.nt-more a{color:var(--accent);font-weight:500;text-decoration:none}
+.news-art .nyt-more{margin:30px 0 0;border-top:1px solid var(--line);padding-top:12px}
+.news-art .nyt-more summary{cursor:pointer;font-family:'DM Sans',sans-serif;font-weight:500;font-size:15px;color:var(--ink);list-style:none}
+.news-art .nyt-more summary::-webkit-details-marker{display:none}
+.news-art .nyt-more summary::before{content:"+ ";color:var(--accent);font-weight:700}
+.news-art .nyt-more[open] summary::before{content:"\2212  "}
+.news-art .nyt-note{margin:44px 0 10px;padding-top:16px;border-top:1px solid var(--line)}
+.news-art .nyt-note h3{font-family:'DM Sans',sans-serif!important;font-weight:600!important;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink);margin:0 0 8px}
+.news-art .prose .nyt-note p{font-size:14px;line-height:1.6;color:var(--muted);margin:0 0 10px}
+.news-art .prose .nyt-src{margin:0 0 12px;padding-left:18px}
+.news-art .prose .nyt-src li{font-family:'DM Sans',sans-serif;font-size:13.5px;line-height:1.55;color:var(--muted);margin-bottom:4px}
+.news-art .prose .nyt-src a{color:var(--ink);text-decoration:underline;text-decoration-color:#9FB4B7;text-underline-offset:3px}
+.news-art .nyt-cta{margin:30px 0 56px}
+@media(max-width:700px){
+ .news-art .nyt{padding:0 18px}
+ .news-art .nyt-head{padding-top:26px}
+ .news-art .nyt-head h1{font-weight:300!important;font-size:34px;letter-spacing:.015em;line-height:1.18}
+ .news-art .nyt-dek{font-size:18.5px}
+ .news-art .nyt-lead{padding:0}
+ .news-art .nyt-lead figcaption{padding:0 18px}
+ .news-art .prose p{font-size:18px}
+ .news-art .prose .fc-photo{margin-left:-18px;margin-right:-18px}
+ .news-art .prose .fc-photo figcaption{padding:0 18px}
+ .news-art .prose .nyt-pull{font-size:23px}
+ .news-art .nt-grid{grid-template-columns:1fr}
+}
+
+/* ===== Nov 6 2026 patch: calmer phone home top, results link into the Vibe Map ===== */
+/* Nov 6 2026: phone Vibe Map sheet header, title no longer runs under "Guide →" once a style is picked */
+
+/* ===== Nov 6 2026 patch: flood rankings in the News Analysis layout (rank tool and boxes use DM Sans) ===== */
+.news-art .fc-rank,.news-art .fc-rank *,.news-art .fc-dl,.news-art .fc-box,.news-art .fc-box *,.news-art .fc-how{font-family:"DM Sans",system-ui,sans-serif}
+.news-art .prose .fc-rank p{font-size:14.5px;line-height:1.5;margin:10px 0 0}
+.news-art .prose .fc-rank p.fc-src{font-size:12.5px;color:var(--muted)}
+/* ===== Nov 6 2026 patch: town page overview + Vibe Map sheet title fit ===== */
+
+/* ===== Nov 6 2026 patch: town page photo strip, homes and costs, first weekend ===== */
+
+/* ===== Nov 6 2026 patch: curated town page (30A, Fort Lauderdale) ===== */
+
+/* Nov 6 2026: curated gallery with 1 or 2 real photos */
+
+/* ===== Nov 7 2026 patch: Slider Map, Quiet or lively (two sided) and the schools filter ===== */
+
+
+/* ===== Nov 7 2026: end of walkthrough card ===== */
+
+/* ===== Nov 7 2026: flood article quiz box ===== */
+.fq-box{margin:28px 0;padding:22px 22px 20px;border-radius:14px;background:#F4ECDF;border:1px solid #E6DBC8}
+.fq-eb{display:block;font:600 12px 'DM Sans',sans-serif;letter-spacing:.12em;text-transform:uppercase;color:#A8440E}
+.prose .fq-h,.fq-h{margin:6px 0 0!important;font:400 24px/1.2 'Libre Caslon Text',Georgia,serif!important;color:#13282C!important}
+.prose .fq-s,.fq-s{margin:8px 0 16px!important;font:400 16px/1.5 'DM Sans',sans-serif!important;color:#3e5155!important}
+.fq-btn{display:inline-flex;align-items:center;justify-content:center;min-height:52px;padding:0 24px;border-radius:999px;font-size:17px;text-decoration:none!important}
+@media (max-width:600px){.fq-btn{display:flex;width:100%}}
+
+/* ===== Nov 7 2026 (b): end card polish ===== */
+.pf-s:not(.on){display:none!important}
+/* ===== Nov 7 2026 night: Slider Map how to, end labels, more priorities ===== */
+/* Nov 7 2026 night: Slider Map user fixes */
+
+/* ===== Nov 7 2026: phone Slider Map, built like the Vibe Map ===== */
+/* Nov 8 2026: town page scores show each town's place on the coast, same ranks as the Slider Map */
+
+/* ===== Nov 11 2026 patch: no text under 6pt (8px) anywhere. The mini Shortlist cover drops its unreadable lines ===== */
+
+/* ===== Nov 12 2026 patch: every article and About use the editorial (news) template; towns in this article as a clean list ===== */
+.nyt-towns{margin:40px 0 0;border-top:1px solid var(--line,#E4E0D8);padding-top:18px}
+.nyt-towns .label{margin-bottom:10px}
+.nyt-towns a{display:flex;gap:14px;align-items:center;padding:10px 0;border-bottom:1px solid var(--line,#E4E0D8);text-decoration:none;color:var(--ink,#152A2E)}
+.nyt-towns .nt-ph{width:64px;height:48px;border-radius:8px;overflow:hidden;flex:none;display:block}
+.nyt-towns .nt-ph img,.nyt-towns .nt-ph svg{width:100%;height:100%;object-fit:cover;display:block}
+.nyt-towns b{display:block;font-weight:600;font-size:16px}
+.nyt-towns small{display:block;font-size:13.5px;color:var(--muted,#5E6B6D)}
