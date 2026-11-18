@@ -110,7 +110,11 @@ function heroFirst(html) {
   const s = /^img\/(c\/vibes|c|atlas|g)\/[tms]\/([\w.-]+\.webp)$/.exec(url);
   if (s && fs.existsSync(path.join(ROOT, 'img', s[1], s[2]))) url = `img/${s[1]}/${s[2]}`;
   html = html.slice(0, m.index) + m[0].replace(m[2], url) + html.slice(m.index + m[0].length);
-  const pre = `<link rel="preload" as="image" href="/${url}" fetchpriority="high">`;
+  const mm = /^img\/(c\/vibes|c|atlas|g)\/([\w.-]+\.webp)$/.exec(url);
+  const mob = mm && fs.existsSync(path.join(ROOT, 'img', mm[1], 'm', mm[2])) ? `img/${mm[1]}/m/${mm[2]}` : null;
+  // Nov 18: phones show the hero about 400px wide, so they get the 960px copy; desktop keeps the full photo
+  const pre = mob ? `<link rel="preload" as="image" href="/${url}" imagesrcset="/${mob} 960w, /${url} 2000w" imagesizes="(max-width:760px) 320px, 100vw" fetchpriority="high"><style>@media (max-width:760px){.gal .b:first-child{background-image:url('/${mob}')!important}}</style>`
+    : `<link rel="preload" as="image" href="/${url}" fetchpriority="high">`;
   return html.includes(pre) ? html : html.replace(/<meta charset="utf-8">/, '$&' + pre);
 }
 
