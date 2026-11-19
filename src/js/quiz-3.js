@@ -27,7 +27,7 @@ const SUBS={3:['Sand and water right out front','Close enough to ride over with 
 Object.entries(SUBS).forEach(([qi,m])=>Object.entries(m).forEach(([oi,t])=>{const o=SQ[qi]&&SQ[qi].o[oi];if(o&&!o[1])o[1]=t}));
 const d0=qDraw;qDraw=function(){d0();if(window.FCQuiz&&!Q.done)window.FCQuiz.view(Q.step,SQ.length);show(Math.min(Q.step,PH.length-1));miniDots();if(qAny()&&!window.__qs){window.__qs=1;window.FC&&FC.track('quiz_start')}};if(mob()){const r=$('res');r.parentElement.insertBefore(mini,r.nextSibling);const cen=()=>{mini.style.transform='none';const b=mini.getBoundingClientRect();mini.style.transform=`translateX(${innerWidth/2-(b.left+b.width/2)}px)`};requestAnimationFrame(cen);setTimeout(cen,400);addEventListener('resize',cen)}show(Q.step);miniDots();qDraw();
 qDone=function(){window.QLOCK=false;qRank();miniDots();
- const a=Q.ans.map(x=>x==null?'x':x).join(''),TOP=qRank().slice(0,5).map(t=>({id:t.id,fit:qp(t),name:t.n,why:qWhy(t,3)})),VB=qVibe(TOP),go2=()=>{location.href=go2.url()};go2.url=()=>'quiz-results.html?a='+a+'&t='+TOP.map(x=>x.id+'.'+x.fit).join(',')+(VB.length?'&v='+VB.join(','):'');
+ const a=Q.ans.map(x=>x==null?'x':x).join(''),TOP=qRank().slice(0,5).map(t=>({id:t.id,fit:qp(t),name:t.n,why:qWhy(t,3)})),VB=qVibe(TOP),go2=()=>{location.href=go2.url()};SLQ=qSliders(),go2.url=()=>'quiz-results.html?a='+a+'&t='+TOP.map(x=>x.id+'.'+x.fit).join(',')+(VB.length?'&v='+VB.join(','):'')+SLQ;
  try{sessionStorage.setItem('fc-top5',JSON.stringify({a:a,top:TOP,vibes:VB}))}catch(e){}
  try{localStorage.setItem('fc-vibe',JSON.stringify({all:VB,off:[],from:'quiz'}))}catch(e){}
  window.FC&&FC.track('quiz_vibe',VB.join(','));
@@ -67,6 +67,15 @@ function qVibe(TOP){const LIFE=['island','oldfl','dock','sophcalm','sophhigh','s
  (Q.ans||[]).forEach((a,q)=>{const h=H[q]&&H[q][a];if(h)for(const k in h)hi[k]=(hi[k]||0)+h[k]});
  const pick=ks=>{ks=ks.filter(k=>sc[k]);if(!ks.length)return[];const ms=Math.max(...ks.map(k=>sc[k])),mh=Math.max(1,...ks.map(k=>hi[k]||0)),f={};ks.forEach(k=>f[k]=.5*sc[k]/ms+.5*(hi[k]||0)/mh);ks.sort((a,b)=>f[b]-f[a]);return ks.filter((k,i)=>i==0||f[k]>=f[ks[0]]*.55).slice(0,3)};
  const L=pick(LIFE);return L.length?L:pick(Object.keys(sc)).slice(0,2)}
+/* Nov 19: the quiz answers as Slider Map settings, so "View on map" opens the sliders already set the way you answered.
+   Quiz weights 1 to 3 become A little, Important, Must have; evenings and dining count toward Social scene; boat and dock toward On the water;
+   budget carries over except "$750K and up", which the quiz doesn't filter on either. */
+function qSliders(){const W=qW(),pace=qA('pace'),bud=qA('budget'),L=[0,30,60,85],v={};
+ const mx=(k,...f)=>{const r=Math.max(0,...f.map(x=>W[x]||0));if(r)v[k]=L[r]};
+ mx('beach','beach','sand');mx('water','water','dock');mx('meet','meet','nightlife','dining');mx('walk','walk');mx('outdoors','outdoors');mx('airport','airport');
+ if(Number.isInteger(pace))v.pace=[90,70,30,10][pace];
+ const sv=Object.entries(v).map(([k,x])=>k+':'+x).join(',');
+ return (sv?'&sv='+sv:'')+(Number.isInteger(bud)&&bud<3?'&bud='+bud:'')}
 function qVibeOn(){try{const v=JSON.parse(localStorage.getItem('fc-vibe')||'null');return v?v.all.filter(k=>!v.off.includes(k)):[]}catch(e){return[]}}
 function qVibeBlock(box){
  let v=null;try{v=JSON.parse(localStorage.getItem('fc-vibe')||'null')}catch(e){}if(!v||!v.all.length)return;
