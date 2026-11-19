@@ -16,7 +16,8 @@ document.getElementById('dt').innerHTML=top.map(()=>'<i></i>').join('');
 (()=>{const L=[...document.querySelectorAll('#tr .im[data-bg]')];if(!L.length)return;const go=()=>L.forEach(e=>{if(e.dataset.bg){e.style.backgroundImage=`url('${e.dataset.bg}')`;delete e.dataset.bg}});const f=new Image();f.onload=f.onerror=()=>setTimeout(go,150);f.src=FULL(TD[top[0].id].img);document.getElementById('tr').addEventListener('scroll',go,{once:true,passive:true});setTimeout(go,5000)})();
 /* Nov 19: the map links open the Slider Map set to your quiz answers (sv and bud come from the quiz) */
 const SLQ=(P.get('sv')?'&sv='+encodeURIComponent(P.get('sv')).replace(/%2C/g,',').replace(/%3A/g,':'):'')+(P.get('bud')!=null&&/^\d$/.test(P.get('bud'))?'&bud='+P.get('bud'):'');
-document.querySelectorAll('a[href^="find-your-mile.html?a="],a[href="map.html?mode=sliders"]').forEach(l=>l.href='map.html?mode=sliders'+SLQ);
+const PIN='&pin='+top.map(x=>x.id).join(',');
+document.querySelectorAll('a[href^="find-your-mile.html?a="],a[href="map.html?mode=sliders"]').forEach(l=>l.href='map.html?mode=sliders'+SLQ+PIN);
 window.TOP5=top;window.ANS=a;
 try{if(localStorage.getItem('fc-mail')){const sh=document.getElementById('short');if(sh)sh.style.display='none';const cmp='compare.html?t='+top.slice(0,3).map(x=>x.id).join(',');document.querySelectorAll('.bt a.gh[href="#short"]').forEach(l=>{l.href=cmp;l.textContent='Compare my top 3'})}}catch(e){}
 })();
