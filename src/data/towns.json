@@ -40,8 +40,7 @@
   "v": [
    "dock",
    "beaches",
-   "active",
-   "schools"
+   "active"
   ],
   "b": "A harbor town where the charter boats leave at dawn and the emerald water starts right off the Destin Harbor boardwalk.",
   "img": "img/c/destin.webp",
@@ -841,9 +840,7 @@
   "la": 29.931,
   "lo": -84.454,
   "t": 1,
-  "v": [
-   "schools"
-  ],
+  "v": [],
   "b": "A quiet line of beach houses on US 98 east of Carrabelle, beside the FSU Coastal and Marine Lab. There are no stores here, and that is the point.",
   "img": "img/c/st-teresa.webp",
   "real": true,
@@ -950,8 +947,7 @@
   "t": 3,
   "v": [
    "active",
-   "beaches",
-   "schools"
+   "beaches"
   ],
   "b": "A barrier island town on Santa Rosa Island, with sugar white sand and miles of protected national seashore on both sides.",
   "img": "img/c/pensacola-beach.webp",
@@ -1213,7 +1209,9 @@
   "la": 27.966,
   "lo": -82.8,
   "t": 2,
-  "v": [],
+  "v": [
+   "schools"
+  ],
   "b": "The mainland city behind Clearwater Beach, with a rebuilt downtown waterfront and the sand a bridge away.",
   "img": "img/c/clearwater.webp",
   "real": true,

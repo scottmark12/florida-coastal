@@ -1,4 +1,4 @@
-"""Nov 18 2026: Best Schools on each town's own schools (Mark: "All 43, cap waived").
+"""Nov 18 2026: Best Schools on each town's own schools (Mark: "All 43, cap waived"; zone follow up Nov 18 makes it 39).
 
 Data: Codex schools_parks_by_town.json (FLDOE 2025-26 school grades joined to NCES 2024-25
 locations; county zone maps where published, else nearest traditional public school), trimmed
@@ -27,7 +27,7 @@ if len(sys.argv) > 2 and sys.argv[1] == '--import':
         k = {'id': t['id'], 'district': t['district_name'], 'population': t.get('population')}
         for lv in LV:
             s = t[lv]
-            k[lv] = {x: s.get(x) for x in ('name', 'grade', 'method', 'distance_mi', 'state_school_id')}
+            k[lv] = {x: s.get(x) for x in ('name', 'grade', 'method', 'distance_mi', 'state_school_id', 'split_zone')}
         keep.append(k)
     json.dump(keep, open(SRC, 'w'), indent=1)
     print('imported', len(keep))
@@ -56,7 +56,7 @@ def pts(i):
 
 
 SCHOOLS = sorted(i for i in S if all_a(i))
-assert len(SCHOOLS) == 41, len(SCHOOLS)
+assert len(SCHOOLS) == 39, len(SCHOOLS)  # Nov 18 zone follow up: Destin, St. Teresa, Pensacola Beach out; Clearwater in
 
 
 def nice(name):
@@ -69,7 +69,8 @@ def nice(name):
 
 
 def short_name(name):
-    return re.sub(r'\s+(School|Sch)$', '', nice(name))
+    n = nice(name)
+    return n if n.endswith('County School') else re.sub(r'\s+(School|Sch)$', '', n)
 
 
 # 1. vibe tags
@@ -130,6 +131,8 @@ open(p, 'w').write(s[:st] + out + s[st + end:])
 
 # 4. town pages: Best Schools chip and the Schools row
 CHIP = '<a href="map.html?mode=vibes&style=schools">Best Schools</a>'
+NOTE = {'freeport': ' Freeport Elementary covers K to 4, and grade 5 is at Freeport Middle.',
+        'fernandina': ' Southside Elementary covers K to 2 and has no state grade of its own, then Emma Love Hardee covers 3 to 5.'}
 ROW = re.compile(r'<tr><th>Schools</th><td>.*?</td></tr>', re.S)
 for i in S:
     path = f'src/towns/{i}.html'
@@ -148,11 +151,12 @@ for i in S:
             plist.append(f'{html.escape(nm)} ({S[i][lv]["grade"] or "not graded"}'
                          + (', by application' if by_app(i, lv) else '') + ')')
     parts = ', '.join(plist)
-    lead = 'Zoned for most of town' if zoned else 'Nearest public schools'
+    split = zoned and any(S[i][lv].get('split_zone') for lv in LV)
+    lead = ('Zoned for the biggest part of town' if split else 'Zoned for most of town') if zoned else 'Nearest public schools'
     tail = (' A school marked by application doesn\'t take students by address, so confirm the zoned school with the '
             'county district before you buy.' if any(by_app(i, lv) for lv in LV) else
             ' Schools are assigned by address, so confirm with the county district before you buy.')
-    td = f'<tr><th>Schools</th><td>{lead}: {parts}. State grades for 2025 to 2026.{tail}</td></tr>'
+    td = f'<tr><th>Schools</th><td>{lead}: {parts}. State grades for 2025 to 2026.{NOTE.get(i, "")}{tail}</td></tr>'
     assert len(ROW.findall(s)) == 1, path
     s = ROW.sub(lambda _: td, s)
     open(path, 'w').write(s)
