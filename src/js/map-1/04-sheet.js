@@ -65,7 +65,7 @@ function slRender(){
  const bv=S.slBud==null?0:5-S.slBud,lab=k=>SLC.find(c=>c[0]==k)[1].replace('Public schools','Public schools');
  const r2=k=>slRow('sl-'+k,k,lab(k),slWord2(k,S.sl[k]),SNAPI(S.sl[k]),0,3,1,slOn(k,S.sl[k]),slEnds(k));
  const moreOn=SL_MORE.some(k=>slOn(k,S.sl[k]));
- $('sl').innerHTML=`<div class="slh"><div class="slh-eb"><span>${T.length} beach towns · ${SLC.length} priorities</span><button class="sl-reset" id="slreset"${slAnySet()||S.slPc?'':' disabled'}>↺ Reset</button></div><h2>What matters to you?</h2></div>
+ $('sl').innerHTML=`<div class="slh"><div class="slh-eb"><span>${T.length} beach towns · ${SLC.length} priorities</span><span class="sl-rb">${S.pinState?`<button class="sl-reset" id="slquiz"${slAtQuiz()?' disabled':''}>↺ My quiz answers</button>`:''}<button class="sl-reset" id="slreset"${slAnySet()||S.slPc?'':' disabled'}>${S.pinState?'Clear':'↺ Reset'}</button></span></div><h2>What matters to you?</h2></div>
  <div id="sltop"></div>${slWhere()}<div class="sl2-grp">${slRow('sl-pace','pace','Quiet or lively',slWord2('pace',S.sl.pace),S.sl.pace,0,100,25,S.sl.pace!==50,slEnds('pace'))}${slRow('sl-bud','bud','Budget',LK.BUDW[bv],bv,0,5,1,bv>0,'')}</div>
  <div class="sl2-list">${SL_CORE.concat(SL_MORE).map(r2).join('')}</div>
  <div class="sl-mail"${(()=>{try{return localStorage.getItem('fc-mail')?' style="display:none"':''}catch(e){return ''}})()}><b>Email me these 5 towns</b><div><input id="slmail" type="email" placeholder="you@example.com" autocomplete="email"><button id="slsend">Send them</button></div><p id="slmsg"></p></div>
@@ -74,7 +74,7 @@ function slRender(){
   if(k=='bud'){S.slBud=v==0?null:5-v;S.sl.afford=LK.BUDSET[v][1];w=LK.BUDW[v];on=v>0}else{S.sl[k]=v;w=slWord2(k,v);on=slOn(k,v)}
   const row=i.closest('.sl2');row.classList.toggle('set',on);row.querySelector('output').textContent=w;i.setAttribute('aria-valuetext',w);$('slreset').disabled=!(slAnySet()||S.slPc);score()});
  $('slwhere').onchange=e=>{const v=e.target.value;if(v.startsWith('r:')){const r=LK.REGIONS.find(r=>r.id==v.slice(2));S.slPr=r.id;S.slPc=R7OF[r.id]}else{S.slPc=v||null;S.slPr=null}$('slreset').disabled=!(slAnySet()||S.slPc);score()};
- $('slreset').onclick=slReset;
+ $('slreset').onclick=slReset;if($('slquiz'))$('slquiz').onclick=slQuiz;
  $('slsend').onclick=()=>{const e=$('slmail').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){$('slmail').style.borderColor='#B3261E';$('slmail').focus();return}
   const top=S.top.slice(0,5).map(id=>T.find(t=>t.id==id));
   FC.lead({kind:'matches',email:e,matches:top.map((t,i)=>({id:t.id,name:t.n,rank:i+1})),message:('Slider Map top 5: '+top.map(t=>t.n).join(', ')+'\n'+shareURL()).slice(0,2000)})

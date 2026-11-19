@@ -21,9 +21,14 @@ function slPri(){return SLC.map(([c])=>slAim(c,slEv(c))).filter(x=>x[1]>0).sort(
 function slTie(t){return slPri().slice(0,3).reduce((s,k,i)=>s+(LK.RANK_N-rkk(t,k))*(3-i),0)}
 /* Nov 19: arriving from the quiz (?pin=), your quiz top 5 stay pinned as the top 5 until you move a slider */
 const slSig=()=>JSON.stringify([S.sl,S.slBud,S.slPc,S.slPr]);
+/* the quiz settings are remembered: slide back to them (or tap "My quiz answers") and the same 5 come back */
+function slAtQuiz(){return !!(S.pin&&S.pinSig===slSig())}
+function slQuizBtn(){const b=$('slquiz');if(b)b.disabled=slAtQuiz()}
+function slQuiz(){const q=S.pinState;if(!q)return;Object.assign(S.sl,q.sl);S.slBud=q.bud;S.slPc=q.pc;S.slPr=q.pr;closePop();slRender()}
 function slRank(){const F=fitSl,L=T.filter(slIn).sort((x,y)=>Math.round(100*F(y))-Math.round(100*F(x))||slTie(y)-slTie(x)||F(y)-F(x));
- if(S.pin&&S.pinSig===slSig()){const P=S.pin.map(id=>L.find(t=>t.id==id)).filter(Boolean);return P.concat(L.filter(t=>!P.includes(t)))}
- S.pin=null;return L}
+ slQuizBtn();
+ if(slAtQuiz()){const P=S.pin.map(id=>L.find(t=>t.id==id)).filter(Boolean);return P.concat(L.filter(t=>!P.includes(t)))}
+ return L}
 const PH=()=>matchMedia('(max-width:760px)').matches;
 const SLM=()=>S.mode=='sliders'&&matchMedia('(max-width:760px)').matches;
 /* the old top 5 photo strip is retired; this just clears it */

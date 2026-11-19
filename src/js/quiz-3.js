@@ -68,12 +68,12 @@ function qVibe(TOP){const LIFE=['island','oldfl','dock','sophcalm','sophhigh','s
  const pick=ks=>{ks=ks.filter(k=>sc[k]);if(!ks.length)return[];const ms=Math.max(...ks.map(k=>sc[k])),mh=Math.max(1,...ks.map(k=>hi[k]||0)),f={};ks.forEach(k=>f[k]=.5*sc[k]/ms+.5*(hi[k]||0)/mh);ks.sort((a,b)=>f[b]-f[a]);return ks.filter((k,i)=>i==0||f[k]>=f[ks[0]]*.55).slice(0,3)};
  const L=pick(LIFE);return L.length?L:pick(Object.keys(sc)).slice(0,2)}
 /* Nov 19: the quiz answers as Slider Map settings, so "View on map" opens the sliders already set the way you answered.
-   Quiz weights 1 to 3 become A little, Important, Must have; evenings and dining count toward Social scene; boat and dock toward On the water;
+   Quiz weights 1 to 3 land on the slider stops (33, 67, 100) and pace on its stops, so sliding back lands on exactly the same settings; evenings and dining count toward Social scene; boat and dock toward On the water;
    budget carries over except "$750K and up", which the quiz doesn't filter on either. */
-function qSliders(){const W=qW(),pace=qA('pace'),bud=qA('budget'),L=[0,30,60,85],v={};
+function qSliders(){const W=qW(),pace=qA('pace'),bud=qA('budget'),L=[0,33,67,100],v={};
  const mx=(k,...f)=>{const r=Math.max(0,...f.map(x=>W[x]||0));if(r)v[k]=L[r]};
  mx('beach','beach','sand');mx('water','water','dock');mx('meet','meet','nightlife','dining');mx('walk','walk');mx('outdoors','outdoors');mx('airport','airport');
- if(Number.isInteger(pace))v.pace=[90,70,30,10][pace];
+ if(Number.isInteger(pace))v.pace=[100,75,25,0][pace];
  const sv=Object.entries(v).map(([k,x])=>k+':'+x).join(',');
  return (sv?'&sv='+sv:'')+(Number.isInteger(bud)&&bud<3?'&bud='+bud:'')}
 function qVibeOn(){try{const v=JSON.parse(localStorage.getItem('fc-vibe')||'null');return v?v.all.filter(k=>!v.off.includes(k)):[]}catch(e){return[]}}

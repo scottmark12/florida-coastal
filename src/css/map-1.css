@@ -711,3 +711,4 @@ html body .mdd .no{padding:14px 12px;font-size:14.5px;color:#4E5D60}
 }
 /* Nov 13: intro and style cards on desktop are about half as tall (short photo strip) so they don't cover towns */
 @media (min-width:761px){html body #pop[data-intro]:not([data-intro=""]) .ph{height:110px!important;min-height:0!important}html body #pop[data-intro]:not([data-intro=""]) .bd{padding-top:16px!important;padding-bottom:18px!important}html body #pop[data-intro]:not([data-intro=""]) .bd p{margin-bottom:12px!important}}
+.sl-rb{display:inline-flex;align-items:center;gap:14px;flex:none}.sl-rb .sl-reset{white-space:nowrap}
