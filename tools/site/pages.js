@@ -7,6 +7,7 @@ module.exports = {
     'find-your-mile.html': 'quiz',
     'quiz-results.html': 'results',
     'compare.html': 'compare',
+    'shortlist.html': 'shortlist',
     'towns/index.html': 'beach-towns',
   },
   isTownPage: f => /-v3\.html$/.test(f),
