@@ -82,7 +82,7 @@
       });
       h += '</div></div><button type="button" class="sl-all">' + (showAll ? 'Show fewer scores' : 'Show all ' + P.length + ' scores') + '</button>';
     }
-    if (!viewShared && !FCS.followed()) h += '<div class="sl-fc"><img src="/img/g/m/mark-betsy.webp" alt=""><div><b>Follow ' + (n === 1 ? 'this town' : 'these ' + n + ' towns') + '</b><p>Your Shortlist by email now, then a short note when prices move or something new happens there. From Mark and Betsy.</p></div><button type="button" class="sl-fb">Follow</button></div>';
+    if (!viewShared && !FCS.followed()) h += '<div class="sl-fc"><img src="/img/g/m/mark-betsy.webp" alt=""><div><b>Follow ' + (n === 1 ? 'this town' : 'these ' + n + ' towns') + '</b><p>Your Shortlist by email now, then a few notes from Mark and Betsy over the next two weeks.</p></div><button type="button" class="sl-fb">Follow</button></div>';
     grid.innerHTML = h;
     grid.querySelectorAll('[data-unsave]').forEach(function (b) { b.onclick = function () { FCS.confirmRemove(town(b.dataset.unsave)); }; });
     var fb = grid.querySelector('.sl-fb'); if (fb) fb.onclick = function () { FCS.ask('shortlist page'); };

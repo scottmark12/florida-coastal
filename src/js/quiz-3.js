@@ -83,7 +83,7 @@ function qAsk(go2,TOP,a){
  if(box.querySelector('.qa-card')||window.__qAsked)return;window.__qAsked=1;
  const one=TOP[0]&&TOP[0].name?TOP[0].name.replace(/ \(.*\)$/,''):'your #1 town';
  const card=document.createElement('div');card.className='qa-card';
- const step1=()=>{card.innerHTML=`<b>Follow your 5 towns</b><p>We'll send your Shortlist now, then a short note when prices move or something new happens there.</p><form class="qa-f" novalidate><input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email"><button type="submit">Follow these towns</button></form><a href="#" class="qa-skip">Just show me</a>`;
+ const step1=()=>{card.innerHTML=`<b>Follow your 5 towns</b><p>Your Shortlist by email now, then a few notes from Mark and Betsy over the next two weeks.</p><form class="qa-f" novalidate><input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email"><button type="submit">Follow these towns</button></form><a href="#" class="qa-skip">Just show me</a>`;
   const f=card.querySelector('form'),em=f.querySelector('input');setTimeout(()=>em.focus({preventScroll:true}),350);
   card.querySelector('.qa-skip').onclick=e=>{e.preventDefault();go2()};
   f.onsubmit=e=>{e.preventDefault();const v=em.value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){em.style.borderColor='#B3261E';em.focus();return}
