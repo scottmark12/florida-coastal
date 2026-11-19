@@ -5,7 +5,7 @@
 import { createClient } from "npm:@supabase/supabase-js@2";
 import * as PDF from "npm:pdf-lib@1.17.1";
 import fontkit from "npm:@pdf-lib/fontkit@1.1.1";
-import { render, buildGuideEmail, buildNoteEmail, buildWelcomeEmail, buildTownEmail, buildStoryEmail, buildHonestEmail, buildNextEmail, pickTowns, setAddress, addrText } from "./render.js";
+import { render, buildGuideEmail, buildNoteEmail, buildWelcomeEmail, buildTownEmail, buildStoryEmail, buildHonestEmail, buildNextEmail, pickTowns, setAddress, addrText, setLead } from "./render.js";
 
 const SITE = "https://www.floridacoastal.co";
 const sb = createClient(Deno.env.get("SUPABASE_URL")!, Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!, { auth: { persistSession: false } });
@@ -48,6 +48,7 @@ async function processRow(row: any, settings: any, dry: boolean) {
   if (row.step !== "top5" && !["new", "test"].includes(lead.status)) return { status: "skipped", error: `lead status is ${lead.status}` };
 
   const a = await assets();
+  setLead(lead, row.step); // Nov 19: the See your Shortlist button and town vibe line need the lead and step
   let mail: any, attachment_url: string | null = null, attachment_name: string | null = null;
   if (row.step === "top5") {
     const out = await render(lead, a.towns, {
