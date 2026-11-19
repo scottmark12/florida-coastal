@@ -82,10 +82,15 @@
       });
       h += '</div></div><button type="button" class="sl-all">' + (showAll ? 'Show fewer scores' : 'Show all ' + P.length + ' scores') + '</button>';
     }
-    if (!viewShared && !FCS.followed()) h += '<div class="sl-fc"><img src="/img/g/m/mark-betsy.webp" alt=""><div><b>Follow ' + (n === 1 ? 'this town' : 'these ' + n + ' towns') + '</b><p>Your Shortlist by email now, then a few notes from Mark and Betsy over the next two weeks.</p></div><button type="button" class="sl-fb">Follow</button></div>';
+    /* one card, never two: 3+ towns gets the hand raise (Ask a local); fewer gets Save */
+    if (!viewShared) {
+      var many = n >= 3;
+      if (many && !FCS.askedLocal()) h += '<div class="sl-fc"><img src="/img/g/m/mark-betsy.webp" alt=""><div><b>Want a local\'s take on these ' + n + ' towns?</b><p>Ask Mark and Betsy, or a local who knows them. You\'ll hear back, usually within a day.</p></div><button type="button" class="sl-fb" data-act="local">Ask a local</button></div>';
+      else if (!many && !FCS.saved()) h += '<div class="sl-fc"><img src="/img/g/m/mark-betsy.webp" alt=""><div><b>Save your Shortlist</b><p>We\'ll email it so you can pick up where you left off, on any device.</p></div><button type="button" class="sl-fb" data-act="save">Save it</button></div>';
+    }
     grid.innerHTML = h;
     grid.querySelectorAll('[data-unsave]').forEach(function (b) { b.onclick = function () { FCS.confirmRemove(town(b.dataset.unsave)); }; });
-    var fb = grid.querySelector('.sl-fb'); if (fb) fb.onclick = function () { FCS.ask('shortlist page'); };
+    var fb = grid.querySelector('.sl-fb'); if (fb) fb.onclick = function () { if (fb.dataset.act === 'local') FCS.askLocal('shortlist page'); else FCS.ask('shortlist page'); };
     var al = grid.querySelector('.sl-all'); if (al) al.onclick = function () { showAll = !showAll; draw(); };
     grid.querySelectorAll('[data-save]').forEach(function (b) { b.onclick = function () { var t = town(b.dataset.save); FCS.toggle({ id: t.id, name: t.name, img: small(t.img) }, 'shared link'); draw(); }; });
     grid.querySelectorAll('[data-menu]').forEach(function (b) { b.onclick = function () { var t = town(b.dataset.menu); var cur = FCS.list().filter(function (x) { return x.id === t.id; })[0]; FCS.townMenu(t, !!(cur && cur.react === 'love')); }; });

@@ -3,7 +3,7 @@
    - FCS API: add, remove, toggle, has, list, react, onChange, share, ask
    - Header heart with a count, linking to /shortlist
    - A short toast on save
-   - The "Follow these towns" ask on the second save, then 3 one tap questions (fc_lead_profile)
+   - Save your Shortlist (email) on the second save; Ask a local (the hand raise, kind local) once there are 3+ towns
    - On town pages: Share and Save in the line above the photos, and a heart on the main photo
    Leads go in as kind "matches" with the saved towns, so they ride the existing email sequence.
    On the Vercel preview fc-connect saves them with status "preview": nothing is sent. */
@@ -21,7 +21,8 @@
   function track(e, d) { if (window.FC) FC.track(e, d); }
   function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
   function plural(n) { return n === 1 ? '1 town' : n + ' towns'; }
-  function followed() { return !!(ls('fc-mail') || ls('fc-sl-followed')); }
+  function saved() { return !!(ls('fc-mail') || ls('fc-sl-saved') || ls('fc-sl-followed')); }
+  function askedLocal() { return !!ls('fc-sl-asked-local'); }
 
   function add(t, from) {
     var l = list();
@@ -98,6 +99,7 @@
       '.fcs-q button.on{background:#152A2E;border-color:#152A2E;color:#fff}' +
       '.fcs-mh::before{content:"";position:absolute;inset:-5px;border-radius:50%}.fcs-mh{position:absolute;top:10px;right:10px;z-index:4;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.94);box-shadow:0 1px 6px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;cursor:pointer;color:#152A2E}.fcs-mh svg{width:21px;height:21px}.fcs-mh path{fill:none;stroke:currentColor;stroke-width:2}.fcs-mh.on path{fill:#C2873A;stroke:#C2873A}.fcs-mh.card{width:34px;height:34px;top:8px;right:8px}.fcs-mh.pop{left:auto;top:auto;right:8px;bottom:8px}.fcs-mh.pop svg{width:18px;height:18px}#pop .ph,#grid .card .ph{position:relative}#pop .fcs-mh:not(#x):not(#y),#grid .fcs-mh:not(#x):not(#y){width:34px!important;height:34px!important;min-width:0!important;max-width:34px!important;border-radius:50%!important;margin:0!important;padding:0!important;display:flex!important;align-items:center!important;justify-content:center!important}#pop .fcs-mh:not(#x):not(#y) svg,#grid .fcs-mh:not(#x):not(#y) svg{position:static!important;display:block!important;width:19px!important;height:19px!important;margin:0!important;transform:none!important}.fcs-mh.card svg{width:18px;height:18px}' +
       '.fcs-lk{display:flex;flex-direction:column;gap:10px}.fcs-lk input{border:1.5px solid #CFC8BC;border-radius:12px;padding:14px;font:15px "DM Sans",system-ui,sans-serif;color:#152A2E;background:#FBFAF7;width:100%;box-sizing:border-box}' +
+      '.fcs-sheet textarea{border:1.5px solid #CFC8BC;border-radius:12px;padding:12px 14px;font:16px/1.4 "DM Sans",system-ui,sans-serif;color:#152A2E;background:#FBFAF7;resize:vertical}.fcs-al-f .fcs-q{margin:4px 0 2px}.fcs-fine{font-size:13px!important;color:#6A7B7E!important;margin:10px 0 0!important}@media(max-height:760px){.fcs-sheet{max-height:92vh;overflow:auto}}' +
       '.fcs-err{color:#B3261E;font-size:14px;margin:4px 0 0}.fcs-hp{position:absolute;left:-9999px}' +
       /* town page */
       '.crumbs.fcs-row{display:flex;align-items:center;justify-content:space-between;gap:12px}' +
@@ -161,11 +163,11 @@
   function afterSave(l, t) {
     drawHeader(true);
     var n = l.length;
-    if (n >= 2 && !followed() && !ss('fc-sl-asked')) { ss('fc-sl-asked', '1'); setTimeout(function () { ask('second save'); }, 450); }
+    if (n >= 2 && !saved() && !ss('fc-sl-asked')) { ss('fc-sl-asked', '1'); setTimeout(function () { ask('second save'); }, 450); }
     else toast('Saved · ' + plural(n), 'View Shortlist', '/shortlist');
   }
 
-  /* ---------- the ask: follow these towns, then 3 questions ---------- */
+  /* ---------- sheets ---------- */
   var sheet, scrim, lastFocus;
   function close() {
     if (!sheet) return; sheet.classList.remove('in'); scrim.classList.remove('in');
@@ -197,85 +199,111 @@
     return sheet;
   }
   function body(html) { if (sheet) { sheet.querySelector('.fcs-in').innerHTML = html; var h3 = sheet.querySelector('h3'); if (h3) h3.id = 'fcs-t'; } return sheet; }
+  var WHO_ASK = '<div class="fcs-who"><img src="/img/g/m/mark-betsy.webp" alt=""><span>Mark and Betsy Scott read every message. 20 years on this coast.</span></div>';
   var WHO = '<div class="fcs-who"><img src="/img/g/m/mark-betsy.webp" alt=""><span>Mark and Betsy Scott send every Shortlist. 20 years on this coast.</span></div>';
+
+  /* Two asks, kept apart (Nov 19, after the Ramsey review):
+     1. Save: email only, cheap. "Save your Shortlist" sends it to their inbox and rides the existing emails (kind matches).
+     2. Ask a local: the hand raise. Only offered once there is real intent (3+ towns), always on a tap, never a popup.
+        Same kind as the town page and home page "Ask a local" forms (kind local), so it is one pipeline. */
+  function sorted() {
+    var l2 = list(), order = { love: 0, maybe: 1 };
+    return l2.slice().sort(function (a, c) { return (order[a.react] != null ? order[a.react] : 2) - (order[c.react] != null ? order[c.react] : 2); }).filter(function (t) { return t.react !== 'no'; });
+  }
+  function thumbsHtml(l) { return '<div class="fcs-th">' + l.slice(0, 5).map(function (t) { return '<i style="background-image:url(\'/' + esc(t.img) + '\')"></i>'; }).join('') + '</div>'; }
+  function emailBox(btn) {
+    return '<form novalidate><label class="fcs-hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>' +
+      '<input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email" value="' + esc(ls('fc-em') || '') + '"><button class="fcs-go" type="submit">' + btn + '</button></form>';
+  }
+  function failed(f, b, label) { b.disabled = false; b.textContent = label; var er = f.querySelector('.fcs-err') || document.createElement('p'); er.className = 'fcs-err'; er.textContent = "That didn't send. Check your connection and try again."; f.appendChild(er); }
+  function okEmail(em) { var v = em.value.trim(); if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)) { em.style.borderColor = '#B3261E'; em.focus(); return null; } ls('fc-em', v); return v; }
 
   function ask(from) {
     var l = list(), n = l.length; if (!n) return;
     track('shortlist_ask_shown', from + ' · ' + n);
-    var thumbs = '<div class="fcs-th">' + l.slice(0, 5).map(function (t) { return '<i style="background-image:url(\'/' + esc(t.img) + '\')"></i>'; }).join('') + '</div>';
-    open(thumbs +
-      '<h3>Follow your ' + (n === 1 ? 'town' : n + ' towns') + '</h3>' +
-      '<p>Your Shortlist by email now, then a few notes from Mark and Betsy over the next two weeks.</p>' +
-      '<form novalidate><label class="fcs-hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>' +
-      '<input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email"><button class="fcs-go" type="submit">Follow these towns</button></form>' +
+    open(thumbsHtml(l) +
+      '<h3>Save your Shortlist</h3>' +
+      '<p>We\'ll email your ' + plural(n) + ' so you can pick up where you left off, on any device.</p>' +
+      emailBox('Save my Shortlist') +
       '<button type="button" class="fcs-no">Not now</button>' + WHO);
     var f = sheet.querySelector('form'), em = f.querySelector('input[type=email]');
     sheet.querySelector('.fcs-no').onclick = function () { track('shortlist_ask_skip', from); close(); };
-    setTimeout(function () { em.focus({ preventScroll: true }); }, 360);
     f.onsubmit = function (e) {
       e.preventDefault();
       if (f.querySelector('input[name=website]').value) return;
-      var v = em.value.trim();
-      if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)) { em.style.borderColor = '#B3261E'; em.focus(); return; }
-      var b = f.querySelector('button'); b.disabled = true; b.textContent = 'Sending...';
-      var l2 = list(), order = { love: 0, maybe: 1 }, srt = l2.slice().sort(function (a, c) { return (order[a.react] != null ? order[a.react] : 2) - (order[c.react] != null ? order[c.react] : 2); }).filter(function (t) { return t.react !== 'no'; });
-      var fromQuiz = l2.every(function (t) { return t.from === 'quiz'; });
-      var ref = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
-      var p = window.FC ? FC.lead({ kind: 'matches', email: v, ref: ref,
+      var v = okEmail(em); if (!v) return;
+      var b = f.querySelector('button'); b.disabled = true; b.textContent = 'Saving...';
+      var l2 = list(), srt = sorted(), fromQuiz = l2.every(function (t) { return t.from === 'quiz'; });
+      var p = window.FC ? FC.lead({ kind: 'matches', email: v, ref: (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null,
         matches: srt.map(function (t, i) { return { id: t.id, name: t.name, rank: i + 1, saved: !fromQuiz, react: t.react || null }; }),
-        answers: { source: fromQuiz ? 'quiz' : 'town_page', from: from, vibes: vibes(), reactions: l2.filter(function (t) { return t.react; }).map(function (t) { return t.id + ':' + t.react; }) },
+        answers: { source: fromQuiz ? 'quiz' : 'shortlist', from: from, vibes: vibes(), reactions: l2.filter(function (t) { return t.react; }).map(function (t) { return t.id + ':' + t.react; }) },
         town: srt[0] ? srt[0].name.slice(0, 80) : null,
         message: ('Shortlist: ' + srt.map(function (t) { return t.name; }).join(', ')).slice(0, 2000) }) : Promise.reject();
-      p.then(function (r) {
-        ls('fc-sl-followed', '1'); if (ref) ls('fc-sl-ref', ref);
-        questions(ref, !!(r && r.preview));
-      }, function () { b.disabled = false; b.textContent = 'Follow these towns'; var er = f.querySelector('.fcs-err') || document.createElement('p'); er.className = 'fcs-err'; er.textContent = "That didn't send. Check your connection and try again."; f.appendChild(er); });
+      var PV = function () { if (window.FC && !FC.LIVE) return { preview: true }; throw 0; };
+      p.catch(PV).then(function (r) {
+        ls('fc-sl-saved', '1'); fire();
+        var big = list().length >= 3;
+        body('<h3>Saved.</h3><p>' + (r && r.preview ? 'Preview: saved as a test, no email sent. ' : 'Check your inbox. ') + 'Keep hearting towns and your Shortlist keeps up.</p>' +
+          (big ? '<p style="margin-top:18px"><b>Want a local\'s take on these towns?</b></p><button type="button" class="fcs-go fcs-al">Ask a local</button><button type="button" class="fcs-no">Not now</button>'
+               : '<button type="button" class="fcs-go fcs-dn">Done</button>') + WHO);
+        var al = sheet.querySelector('.fcs-al'); if (al) al.onclick = function () { askLocal(from + ' after save'); };
+        var x = sheet.querySelector('.fcs-no,.fcs-dn'); if (x) x.onclick = close;
+      }).catch(function () { failed(f, b, 'Save my Shortlist'); });
     };
   }
 
+  /* ---------- Ask a local: the hand raise ---------- */
+  var TL = ['Within 3 months', 'This year', 'Just looking'];
   var BUD = ['Under $400K', '$400K to $750K', '$750K to $1.5M', '$1.5M and up', 'Not sure yet'];
-  function questions(ref, preview) {
-    var ans = {};
-    function q(key, label, opts) { return '<div class="fcs-q" data-k="' + key + '"><b>' + label + '</b><div>' + opts.map(function (o) { return '<button type="button" data-v="' + esc(o[0]) + '">' + esc(o[1]) + '</button>'; }).join('') + '</div></div>'; }
-    body('<h3>You\'re following these towns</h3><p>' + (preview ? 'Preview: saved as a test, no email sent. ' : 'Check your inbox. ') + 'Three quick taps help us tune your Shortlist.</p>' +
-      q('timeline', 'When are you thinking?', [['This year', 'This year'], ['In 1 to 2 years', 'In 1 to 2 years'], ['Still exploring', 'Still exploring']]) +
-      q('plan', 'Buy or rent first?', [['Buy', 'Buy'], ['Rent first', 'Rent first'], ['Not sure yet', 'Not sure']]) +
-      q('budget', 'Budget for a home?', BUD.map(function (b) { return [b, b]; })) +
-      '<button type="button" class="fcs-go">Done</button><button type="button" class="fcs-no">Skip</button>');
+  function askLocal(from, towns) {
+    var l = towns || sorted(); if (!l.length) return;
+    var names = l.map(function (t) { return t.name.replace(/ \(.*\)$/, ''); });
+    var title = l.length === 1 ? 'Ask a local about ' + names[0] : 'Ask a local about your ' + l.length + ' towns';
+    track('ask_local_shown', from + ' · ' + l.length);
+    var ans = { timeline: 'Just looking' };
+    function chips(key, label, opts, on) { return '<div class="fcs-q" data-k="' + key + '"><b>' + label + '</b><div>' + opts.map(function (o) { return '<button type="button" data-v="' + esc(o) + '"' + (o === on ? ' class="on" aria-pressed="true"' : '') + '>' + esc(o) + '</button>'; }).join('') + '</div></div>'; }
+    var html = thumbsHtml(l) + '<h3>' + esc(title) + '</h3>' +
+      '<p>Mark and Betsy, or a local who knows ' + (l.length === 1 ? 'the town' : 'these towns') + ', will get back to you, usually within a day.</p>' +
+      '<form novalidate class="fcs-al-f"><label class="fcs-hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>' +
+      '<textarea rows="2" aria-label="Your question, optional" placeholder="Your question (optional): flood zones, schools, what summer is really like"></textarea>' +
+      chips('timeline', 'When are you thinking?', TL, 'Just looking') +
+      chips('budget', 'Budget for a home', BUD) +
+      '<input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email" value="' + esc(ls('fc-em') || '') + '">' +
+      '<input type="tel" autocomplete="tel" placeholder="Phone (optional) for a quick call or text" aria-label="Phone, optional">' +
+      '<button class="fcs-go" type="submit">Ask a local</button></form>' +
+      '<p class="fcs-fine">Adding a number means we or a local may call or text you.</p>' + WHO_ASK;
+    if (sheet) body(html); else open(html);
     sheet.querySelectorAll('.fcs-q').forEach(function (g) {
       g.querySelectorAll('button').forEach(function (b) {
         b.onclick = function () {
-          g.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
-          ans[g.dataset.k] = b.dataset.v; track('profile_answer', g.dataset.k + ' ' + b.dataset.v);
-          if (g.dataset.k === 'budget') ls('fc-sl-budget', b.dataset.v);
-          save(ref, ans, false);
+          var was = b.classList.contains('on');
+          g.querySelectorAll('button').forEach(function (x) { var on = x === b && !(was && g.dataset.k === 'budget'); x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); });
+          ans[g.dataset.k] = b.classList.contains('on') ? b.dataset.v : null;
         };
       });
     });
-    sheet.querySelector('.fcs-go').onclick = function () { save(ref, ans, true); phone(ref, preview); };
-    sheet.querySelector('.fcs-no').onclick = function () { close(); toast('You\'re following ' + plural(list().length), 'View Shortlist', '/shortlist'); };
-  }
-  function openQuestions(ref, preview) { open(''); questions(ref, preview); }
-  function save(ref, ans, done) {
-    if (!ref) return;
-    try {
-      fetch(API + 'rpc/fc_lead_profile', { method: 'POST', keepalive: true, headers: { apikey: AKEY, 'Content-Type': 'application/json' },
-        body: JSON.stringify({ p_ref: ref, p_timeline: ans.timeline || null, p_plan: ans.plan || null, p_budget: ans.budget || null, p_phone: ans.phone || null, p_done: !!done }) }).catch(function () {});
-    } catch (e) {}
-  }
-  function phone(ref, preview) {
-    body('<h3>Want to talk it through?</h3><p>Add your number and Mark or Betsy will call or text you about your towns. Totally optional.</p>' +
-      '<form novalidate><input type="tel" autocomplete="tel" placeholder="Phone number" aria-label="Phone number, optional"><button class="fcs-go" type="submit">Call me</button></form>' +
-      '<button type="button" class="fcs-no">No thanks, show my Shortlist</button>' + WHO);
-    var f = sheet.querySelector('form'), ph = f.querySelector('input');
-    setTimeout(function () { ph.focus({ preventScroll: true }); }, 50);
+    var f = sheet.querySelector('form'), em = f.querySelector('input[type=email]'), tel = f.querySelector('input[type=tel]'), qa = f.querySelector('textarea');
+    if (innerWidth > 700) setTimeout(function () { (em.value ? qa : em).focus({ preventScroll: true }); }, 380);
     f.onsubmit = function (e) {
-      e.preventDefault(); var v = ph.value.replace(/[^0-9+]/g, '');
-      if (v.length < 10) { ph.style.borderColor = '#B3261E'; ph.focus(); return; }
-      save(ref, { phone: ph.value.trim().slice(0, 40) }, true); track('profile_answer', 'phone');
-      body('<h3>Talk soon.</h3><p>' + (preview ? 'Preview: nothing was sent. ' : '') + 'Mark or Betsy will reach out, usually within a day.</p><a class="fcs-go" style="display:block;text-align:center;text-decoration:none" href="/shortlist">See my Shortlist</a>' + WHO);
+      e.preventDefault();
+      if (f.querySelector('input[name=website]').value) return;
+      var v = okEmail(em); if (!v) return;
+      var b = f.querySelector('.fcs-go'); b.disabled = true; b.textContent = 'Sending...';
+      var q = qa.value.trim();
+      var p = window.FC ? FC.lead({ kind: 'local', email: v, phone: tel.value.trim().slice(0, 40) || null, timeline: ans.timeline || null, budget: ans.budget || null,
+        town: names[0].slice(0, 80),
+        matches: l.map(function (t, i) { return { id: t.id, name: t.name, rank: i + 1, react: t.react || null }; }),
+        answers: { source: 'ask_local', from: from, vibes: vibes() },
+        message: ((q ? q + '\n\n' : '') + (l.length > 1 ? 'Shortlist: ' + names.join(', ') : '')).slice(0, 2000) || null }) : Promise.reject();
+      p.catch(function () { if (window.FC && !FC.LIVE) return { preview: true }; throw 0; }).then(function (r) {
+        track('ask_local_sent', from + ' · ' + l.length);
+        if (ans.budget) ls('fc-sl-budget', ans.budget);
+        ls('fc-sl-saved', '1'); ls('fc-sl-asked-local', '1'); fire();
+        body('<h3>Talk soon.</h3><p>' + (r && r.preview ? 'Preview: saved as a test, nothing was sent. ' : '') + 'Mark or Betsy will get back to you, usually within a day.</p>' +
+          (/\/shortlist/.test(location.pathname) ? '<button type="button" class="fcs-go fcs-dn">Done</button>' : '<a class="fcs-go" style="display:block;text-align:center;text-decoration:none" href="/shortlist">See my Shortlist</a>') + WHO);
+        var d = sheet.querySelector('.fcs-dn'); if (d) d.onclick = close;
+      }).catch(function () { failed(f, b, 'Ask a local'); });
     };
-    sheet.querySelector('.fcs-no').onclick = function () { close(); if (!/\/shortlist/.test(location.pathname)) location.href = '/shortlist'; };
   }
 
   /* ---------- town pages ---------- */
@@ -312,10 +340,6 @@
       track('town_share', id);
       shareLink(location.origin + location.pathname, name + ' · Florida Coastal', name + ' on Florida Coastal');
     };
-    /* The old "Save this town" link in the Ask a local card now saves for real */
-    document.querySelectorAll('aside .alt a').forEach(function (a) {
-      if (/save/i.test(a.textContent)) a.addEventListener('click', function (ev) { ev.preventDefault(); ev.stopImmediatePropagation(); if (!has(id)) tap('ask card'); else toast('Already on your Shortlist', 'View', '/shortlist'); }, true);
-    });
     onChange(draw); draw();
   }
 
@@ -394,7 +418,7 @@
     if (next.map(function (t) { return t.id; }).join(',') !== cur) { store(next); track('shortlist_quiz', String(q.length)); }
   }
 
-  window.FCS = { list: list, add: add, remove: remove, toggle: toggle, has: has, react: react, onChange: onChange, share: share, shareLink: shareLink, shareUrl: shareUrl, ask: ask, toast: toast, followed: followed, esc: esc, plural: plural, HEART: HEART, SHARE: SHARE, VIBES: VIBES, VCOL: VCOL, VSUB: VSUB, vibes: vibes, vibeChips: vibeChips, setQuiz: setQuiz, questions: openQuestions, vibeLine: vibeLine, vibeEdit: vibeEdit, confirmRemove: confirmRemove, townMenu: townMenu };
+  window.FCS = { list: list, add: add, remove: remove, toggle: toggle, has: has, react: react, onChange: onChange, share: share, shareLink: shareLink, shareUrl: shareUrl, ask: ask, toast: toast, saved: saved, askedLocal: askedLocal, askLocal: askLocal, esc: esc, plural: plural, HEART: HEART, SHARE: SHARE, VIBES: VIBES, VCOL: VCOL, VSUB: VSUB, vibes: vibes, vibeChips: vibeChips, setQuiz: setQuiz, vibeLine: vibeLine, vibeEdit: vibeEdit, confirmRemove: confirmRemove, townMenu: townMenu };
   /* Vibe Map and Slider Map: a heart on the town popup's photo and on the list cards. The map redraws them, so watch and re-add. */
   function mapHearts() {
     var pop = document.getElementById('pop'), grid = document.getElementById('grid');

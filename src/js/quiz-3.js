@@ -89,9 +89,9 @@ function qAsk(go2,TOP,a){
   f.onsubmit=e=>{e.preventDefault();const v=em.value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){em.style.borderColor='#B3261E';em.focus();return}
    const btn=f.querySelector('button');btn.disabled=true;btn.textContent='Sending...';
    const ref=(window.crypto&&crypto.randomUUID)?crypto.randomUUID():null;
-   try{localStorage.setItem('fc-mail','1');localStorage.setItem('fc-sl-followed','1');if(ref)localStorage.setItem('fc-sl-ref',ref)}catch(x){}
+   try{localStorage.setItem('fc-mail','1');localStorage.setItem('fc-sl-saved','1');localStorage.setItem('fc-em',v)}catch(x){}
    const send=window.FC?FC.lead({kind:'matches',email:v,ref:ref,matches:TOP.map((t,i)=>({id:t.id,name:t.name,rank:i+1,fit:t.fit})),answers:a.split(''),message:('Quiz top 5: '+TOP.map(t=>t.name).join(', ')+(qVibeOn().length?' · Vibe: '+qVibeOn().map(k=>VIBES[k]||k).join(', '):'')).slice(0,2000)}).catch(()=>null):Promise.resolve(null);
-   /* Nov 19: no more phone step promising a town guide; the results page asks the 3 quick questions */
-   send.then(()=>{location.href=go2.url()+'&ask=1'})}};
+   /* Nov 19: no phone step; the results page offers Ask a local, on a tap, never a popup */
+   send.then(()=>{location.href=go2.url()})}};
  box.classList.add('ask');document.body.classList.add('qask');const h2=box.querySelector('h2');if(h2)h2.textContent='Your top 5 is ready.';step1();box.appendChild(card);requestAnimationFrame(()=>card.classList.add('in'));
 }
