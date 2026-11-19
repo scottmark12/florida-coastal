@@ -24,7 +24,7 @@ ld as (select l.* from fc_leads l, b where l.status = 'new' and l.created_at >= 
 lt as (select m->>'id' town from ld, jsonb_array_elements(case when jsonb_typeof(ld.matches) = 'array' then ld.matches else '[]'::jsonb end) m),
 hr as (
   select case
-      when answers->>'source' = 'ask_local' then coalesce(nullif(split_part(answers->>'from', ' · ', 1), ''), 'shortlist')
+      when answers->>'ask' = 'local' then coalesce(nullif(split_part(answers->>'from', ' · ', 1), ''), 'shortlist')
       when page like '%/towns/%' then 'town page'
       when page like '%compare%' then 'compare'
       when page = '/' or page like '/index.html%' or page like '/#%' then 'home'

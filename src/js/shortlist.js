@@ -97,9 +97,12 @@
       '.fcs-q{margin:0 0 14px}.fcs-q b{display:block;font-size:15px;margin:0 0 8px}.fcs-q div{display:flex;flex-wrap:wrap;gap:8px}' +
       '.fcs-q button{border:1.5px solid #CFC8BC;background:#fff;border-radius:999px;padding:10px 14px;font:500 15px "DM Sans",system-ui,sans-serif;color:#152A2E;cursor:pointer}' +
       '.fcs-q button.on{background:#152A2E;border-color:#152A2E;color:#fff}' +
-      '.fcs-mh::before{content:"";position:absolute;inset:-5px;border-radius:50%}.fcs-mh{position:absolute;top:10px;right:10px;z-index:4;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.94);box-shadow:0 1px 6px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;cursor:pointer;color:#152A2E}.fcs-mh svg{width:21px;height:21px}.fcs-mh path{fill:none;stroke:currentColor;stroke-width:2}.fcs-mh.on path{fill:#C2873A;stroke:#C2873A}.fcs-mh.card{width:34px;height:34px;top:8px;right:8px}.fcs-mh.pop{left:auto;top:auto;right:8px;bottom:8px}.fcs-mh.pop svg{width:18px;height:18px}#pop .ph,#grid .card .ph{position:relative}#pop .fcs-mh:not(#x):not(#y),#grid .fcs-mh:not(#x):not(#y){width:34px!important;height:34px!important;min-width:0!important;max-width:34px!important;border-radius:50%!important;margin:0!important;padding:0!important;display:flex!important;align-items:center!important;justify-content:center!important}#pop .fcs-mh:not(#x):not(#y) svg,#grid .fcs-mh:not(#x):not(#y) svg{position:static!important;display:block!important;width:19px!important;height:19px!important;margin:0!important;transform:none!important}.fcs-mh.card svg{width:18px;height:18px}' +
+      '.fcs-mh::before{content:"";position:absolute;inset:-5px;border-radius:50%}.fcs-mh{position:absolute;top:10px;right:10px;z-index:4;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.94);box-shadow:0 1px 6px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;cursor:pointer;color:#152A2E}.fcs-mh svg{width:21px;height:21px}.fcs-mh path{fill:none;stroke:currentColor;stroke-width:2}.fcs-mh.on path{fill:#C2873A;stroke:#C2873A}.fcs-mh.card{width:34px;height:34px;top:8px;right:8px}.fcs-mh.pop{left:14px;top:14px;right:auto;bottom:auto}#pop .ph .rkb{left:62px}.fcs-mh.pop svg{width:18px;height:18px}#pop .ph,#grid .card .ph{position:relative}#pop .fcs-mh:not(#x):not(#y){width:40px!important;height:40px!important;min-width:0!important;max-width:40px!important}#grid .fcs-mh:not(#x):not(#y){width:34px!important;height:34px!important;min-width:0!important;max-width:34px!important}#pop .fcs-mh:not(#x):not(#y),#grid .fcs-mh:not(#x):not(#y){border-radius:50%!important;margin:0!important;padding:0!important;display:flex!important;align-items:center!important;justify-content:center!important}#pop .fcs-mh:not(#x):not(#y) svg,#grid .fcs-mh:not(#x):not(#y) svg{position:static!important;display:block!important;width:19px!important;height:19px!important;margin:0!important;transform:none!important}.fcs-mh.card svg{width:18px;height:18px}' +
       '.fcs-lk{display:flex;flex-direction:column;gap:10px}.fcs-lk input{border:1.5px solid #CFC8BC;border-radius:12px;padding:14px;font:15px "DM Sans",system-ui,sans-serif;color:#152A2E;background:#FBFAF7;width:100%;box-sizing:border-box}' +
       '.fcs-sheet textarea{border:1.5px solid #CFC8BC;border-radius:12px;padding:12px 14px;font:16px/1.4 "DM Sans",system-ui,sans-serif;color:#152A2E;background:#FBFAF7;resize:vertical}.fcs-al-f .fcs-q{margin:4px 0 2px}.fcs-fine{font-size:13px!important;color:#6A7B7E!important;margin:10px 0 0!important}@media(max-height:760px){.fcs-sheet{max-height:92vh;overflow:auto}}' +
+      '.bdg-t{display:block;border:0;background:none;padding:2px 0;margin:0 0 10px;font:600 15px "DM Sans",system-ui,sans-serif;color:#152A2E;text-decoration:underline;text-decoration-color:#C2873A;text-underline-offset:4px;cursor:pointer;text-align:left}.bdg-t::before{content:"+ "}.bdg-t[aria-expanded=true]::before{content:"\\2212 "}.bdg-t .opt{font-weight:400;color:#6A7B7E;font-size:13px;margin-left:4px;text-decoration:none;display:inline-block}' +
+      '.bdc{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 14px}.bdc[hidden]{display:none}.bdc button{border:1.5px solid #CFC8BC;background:#fff;border-radius:999px;padding:9px 13px;font:500 14.5px "DM Sans",system-ui,sans-serif;color:#152A2E;cursor:pointer;min-height:40px}.bdc button.on{background:#152A2E;border-color:#152A2E;color:#fff}' +
+      '.fcs-sheet input[type=text]{border:1.5px solid #CFC8BC;border-radius:12px;padding:15px 14px;font:17px "DM Sans",system-ui,sans-serif;color:#152A2E;background:#FBFAF7}' +
       '.fcs-err{color:#B3261E;font-size:14px;margin:4px 0 0}.fcs-hp{position:absolute;left:-9999px}' +
       /* town page */
       '.crumbs.fcs-row{display:flex;align-items:center;justify-content:space-between;gap:12px}' +
@@ -156,14 +159,18 @@
   var tEl, tTimer;
   function toast(msg, link, href) {
     if (!tEl) { tEl = document.createElement('div'); tEl.className = 'fcs-toast'; tEl.setAttribute('role', 'status'); document.body.appendChild(tEl); }
-    tEl.innerHTML = '<span>' + esc(msg) + '</span>' + (link ? '<a href="' + esc(href) + '">' + esc(link) + '</a>' : '');
-    tEl.classList.add('in'); clearTimeout(tTimer); tTimer = setTimeout(function () { tEl.classList.remove('in'); }, 3800);
+    var fn = typeof href === 'function';
+    tEl.innerHTML = '<span>' + esc(msg) + '</span>' + (link ? '<a href="' + (fn ? '#' : esc(href)) + '">' + esc(link) + '</a>' : '');
+    if (fn) tEl.querySelector('a').onclick = function (e) { e.preventDefault(); tEl.classList.remove('in'); href(); };
+    tEl.classList.add('in'); clearTimeout(tTimer); tTimer = setTimeout(function () { tEl.classList.remove('in'); }, fn ? 7000 : 3800);
   }
 
   function afterSave(l, t) {
     drawHeader(true);
     var n = l.length;
-    if (n >= 2 && !saved() && !ss('fc-sl-asked')) { ss('fc-sl-asked', '1'); setTimeout(function () { ask('second save'); }, 450); }
+    /* no popups: the next step rides in the toast. 3+ towns: Ask a local. 2 and not saved yet: Email it to me */
+    if (n >= 3 && !askedLocal()) toast('Saved · ' + plural(n), 'Ask a local about these ' + n, function () { askLocal('heart toast'); });
+    else if (n >= 2 && !saved()) toast('Saved · ' + plural(n), 'Email it to me', function () { ask('second save'); });
     else toast('Saved · ' + plural(n), 'View Shortlist', '/shortlist');
   }
 
@@ -236,7 +243,7 @@
       var l2 = list(), srt = sorted(), fromQuiz = l2.every(function (t) { return t.from === 'quiz'; });
       var p = window.FC ? FC.lead({ kind: 'matches', email: v, ref: (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null,
         matches: srt.map(function (t, i) { return { id: t.id, name: t.name, rank: i + 1, saved: !fromQuiz, react: t.react || null }; }),
-        answers: { source: fromQuiz ? 'quiz' : 'shortlist', from: from, vibes: vibes(), reactions: l2.filter(function (t) { return t.react; }).map(function (t) { return t.id + ':' + t.react; }) },
+        answers: { source: fromQuiz ? 'quiz' : 'town_page', from: from, vibes: vibes(), reactions: l2.filter(function (t) { return t.react; }).map(function (t) { return t.id + ':' + t.react; }) },
         town: srt[0] ? srt[0].name.slice(0, 80) : null,
         message: ('Shortlist: ' + srt.map(function (t) { return t.name; }).join(', ')).slice(0, 2000) }) : Promise.reject();
       var PV = function () { if (window.FC && !FC.LIVE) return { preview: true }; throw 0; };
@@ -255,6 +262,15 @@
   /* ---------- Ask a local: the hand raise ---------- */
   var TL = ['Within 3 months', 'This year', 'Just looking'];
   var BUD = ['Under $400K', '$400K to $750K', '$750K to $1.5M', '$1.5M and up', 'Not sure yet'];
+  /* every Ask a local form has the same fields: name, email, optional phone, timeline, and budget behind "Add budget" */
+  var BUDGET = '<button type="button" class="bdg-t" aria-expanded="false">Add budget <span class="opt">optional</span></button><div class="bdc" role="group" aria-label="Budget for a home" hidden>' + BUD.map(function (b) { return '<button type="button" data-v="' + esc(b) + '">' + esc(b) + '</button>'; }).join('') + '</div>';
+  document.addEventListener('click', function (e) {
+    var t = e.target.closest && e.target.closest('.bdg-t,.bdc button'); if (!t) return;
+    e.preventDefault();
+    if (t.classList.contains('bdg-t')) { var g = t.nextElementSibling; if (g) { g.hidden = !g.hidden; t.setAttribute('aria-expanded', !g.hidden); if (!g.hidden) { var f = g.querySelector('button'); if (f) f.focus({ preventScroll: true }); } } return; }
+    var was = t.classList.contains('on');
+    [].forEach.call(t.parentNode.children, function (x) { var on = x === t && !was; x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); });
+  });
   function askLocal(from, towns) {
     var l = towns || sorted(); if (!l.length) return;
     var names = l.map(function (t) { return t.name.replace(/ \(.*\)$/, ''); });
@@ -266,19 +282,18 @@
       '<p>Mark and Betsy, or a local who knows ' + (l.length === 1 ? 'the town' : 'these towns') + ', will get back to you, usually within a day.</p>' +
       '<form novalidate class="fcs-al-f"><label class="fcs-hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>' +
       '<textarea rows="2" aria-label="Your question, optional" placeholder="Your question (optional): flood zones, schools, what summer is really like"></textarea>' +
-      chips('timeline', 'When are you thinking?', TL, 'Just looking') +
-      chips('budget', 'Budget for a home', BUD) +
+      '<input type="text" name="name" autocomplete="given-name" placeholder="First name" aria-label="First name" value="' + esc(ls('fc-nm') || '') + '">' +
       '<input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email" value="' + esc(ls('fc-em') || '') + '">' +
       '<input type="tel" autocomplete="tel" placeholder="Phone (optional) for a quick call or text" aria-label="Phone, optional">' +
+      chips('timeline', 'When are you thinking?', TL, 'Just looking') + BUDGET +
       '<button class="fcs-go" type="submit">Ask a local</button></form>' +
       '<p class="fcs-fine">Adding a number means we or a local may call or text you.</p>' + WHO_ASK;
     if (sheet) body(html); else open(html);
     sheet.querySelectorAll('.fcs-q').forEach(function (g) {
       g.querySelectorAll('button').forEach(function (b) {
         b.onclick = function () {
-          var was = b.classList.contains('on');
-          g.querySelectorAll('button').forEach(function (x) { var on = x === b && !(was && g.dataset.k === 'budget'); x.classList.toggle('on', on); x.setAttribute('aria-pressed', on); });
-          ans[g.dataset.k] = b.classList.contains('on') ? b.dataset.v : null;
+          g.querySelectorAll('button').forEach(function (x) { x.classList.toggle('on', x === b); x.setAttribute('aria-pressed', x === b); });
+          ans[g.dataset.k] = b.dataset.v;
         };
       });
     });
@@ -289,15 +304,17 @@
       if (f.querySelector('input[name=website]').value) return;
       var v = okEmail(em); if (!v) return;
       var b = f.querySelector('.fcs-go'); b.disabled = true; b.textContent = 'Sending...';
-      var q = qa.value.trim();
-      var p = window.FC ? FC.lead({ kind: 'local', email: v, phone: tel.value.trim().slice(0, 40) || null, timeline: ans.timeline || null, budget: ans.budget || null,
+      var q = qa.value.trim(), nm = f.querySelector('input[name=name]').value.trim().slice(0, 120), bud = ((f.querySelector('.bdc button.on') || {}).dataset || {}).v || null;
+      if (nm) ls('fc-nm', nm);
+      var fromQuiz = /^quiz/.test(from) || l.every(function (t) { return t.from === 'quiz'; });
+      var p = window.FC ? FC.lead({ kind: 'local', email: v, phone: tel.value.trim().slice(0, 40) || null, name: nm || null, timeline: ans.timeline || null, budget: bud,
         town: names[0].slice(0, 80),
         matches: l.map(function (t, i) { return { id: t.id, name: t.name, rank: i + 1, react: t.react || null }; }),
-        answers: { source: 'ask_local', from: from, vibes: vibes() },
+        answers: { source: fromQuiz ? 'quiz' : 'town_page', ask: 'local', from: from, vibes: vibes() },
         message: ((q ? q + '\n\n' : '') + (l.length > 1 ? 'Shortlist: ' + names.join(', ') : '')).slice(0, 2000) || null }) : Promise.reject();
       p.catch(function () { if (window.FC && !FC.LIVE) return { preview: true }; throw 0; }).then(function (r) {
         track('ask_local_sent', from + ' · ' + l.length);
-        if (ans.budget) ls('fc-sl-budget', ans.budget);
+        if (bud) ls('fc-sl-budget', bud);
         ls('fc-sl-saved', '1'); ls('fc-sl-asked-local', '1'); fire();
         body('<h3>Talk soon.</h3><p>' + (r && r.preview ? 'Preview: saved as a test, nothing was sent. ' : '') + 'Mark or Betsy will get back to you, usually within a day.</p>' +
           (/\/shortlist/.test(location.pathname) ? '<button type="button" class="fcs-go fcs-dn">Done</button>' : '<a class="fcs-go" style="display:block;text-align:center;text-decoration:none" href="/shortlist">See my Shortlist</a>') + WHO);
