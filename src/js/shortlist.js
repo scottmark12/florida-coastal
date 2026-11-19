@@ -305,7 +305,7 @@
       '<input type="tel" autocomplete="tel" placeholder="Phone (optional) for a quick call or text" aria-label="Phone, optional">' +
       chips('timeline', 'When are you thinking?', TL, 'Just looking') + BUDGET +
       '<button class="fcs-go" type="submit">Ask a local</button></form>' +
-      '<p class="fcs-fine">Adding a number means we or a local may call or text you.</p>' + WHO_ASK;
+      '<p class="fcs-fine">Adding a number means Florida Coastal and our partner agents for these towns may call or text you about your move, including automated texts. Msg and data rates may apply. You don\'t have to agree to buy anything.</p><p class="fcs-fine">Partner agents pay a flat monthly fee to be featured and don\'t work for us. <a href="/disclosures.html">How we work with agents</a></p>' + WHO_ASK;
     if (sheet) body(html); else open(html);
     sheet.querySelectorAll('.fcs-q').forEach(function (g) {
       g.querySelectorAll('button').forEach(function (b) {
