@@ -71,7 +71,7 @@ function qVibeOn(){try{const v=JSON.parse(localStorage.getItem('fc-vibe')||'null
 function qVibeBlock(box){
  let v=null;try{v=JSON.parse(localStorage.getItem('fc-vibe')||'null')}catch(e){}if(!v||!v.all.length)return;
  let el=box.querySelector('.qv');if(!el){el=document.createElement('div');el.className='qv';const c=box.querySelector('#qrvc');c.replaceWith(el)}
- const draw=()=>{el.innerHTML=`<div class="qv-k">Your town vibe</div><div class="qv-c">${v.all.map(k=>`<span class="qv-v"><i style="background:${VCOL[k]||'#C2873A'}"></i><b>${VIBES[k]||k}</b></span>`).join('')}</div><p class="qv-s">From your five towns and how you answered.</p>`};
+ const draw=()=>{el.innerHTML=`<p class="qv-l">Your town vibe: ${v.all.map(k=>`<span><i style="background:${VCOL[k]||'#C2873A'}"></i>${VIBES[k]||k}</span>`).join(', ')}</p>`};
  const save=()=>{try{localStorage.setItem('fc-vibe',JSON.stringify(v))}catch(e){}};
  draw();requestAnimationFrame(()=>el.classList.add('in'))}
 function qAsk(go2,TOP,a){
@@ -83,7 +83,7 @@ function qAsk(go2,TOP,a){
  if(box.querySelector('.qa-card')||window.__qAsked)return;window.__qAsked=1;
  const one=TOP[0]&&TOP[0].name?TOP[0].name.replace(/ \(.*\)$/,''):'your #1 town';
  const card=document.createElement('div');card.className='qa-card';
- const step1=()=>{card.innerHTML=`<b>Follow your 5 towns</b><p>Your Shortlist by email now, then a few notes from Mark and Betsy over the next two weeks.</p><form class="qa-f" novalidate><input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email"><button type="submit">Follow these towns</button></form><a href="#" class="qa-skip">Just show me</a>`;
+ const step1=()=>{card.innerHTML=`<b>Want it sent to you?</b><p>We'll email your five towns with a side by side comparison you can come back to.</p><form class="qa-f" novalidate><input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email"><button type="submit">Send them</button></form><a href="#" class="qa-skip">Just show me</a>`;
   const f=card.querySelector('form'),em=f.querySelector('input');setTimeout(()=>em.focus({preventScroll:true}),350);
   card.querySelector('.qa-skip').onclick=e=>{e.preventDefault();go2()};
   f.onsubmit=e=>{e.preventDefault();const v=em.value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){em.style.borderColor='#B3261E';em.focus();return}
@@ -93,5 +93,5 @@ function qAsk(go2,TOP,a){
    const send=window.FC?FC.lead({kind:'matches',email:v,ref:ref,matches:TOP.map((t,i)=>({id:t.id,name:t.name,rank:i+1,fit:t.fit})),answers:a.split(''),message:('Quiz top 5: '+TOP.map(t=>t.name).join(', ')+(qVibeOn().length?' · Vibe: '+qVibeOn().map(k=>VIBES[k]||k).join(', '):'')).slice(0,2000)}).catch(()=>null):Promise.resolve(null);
    /* Nov 19: no more phone step promising a town guide; the results page asks the 3 quick questions */
    send.then(()=>{location.href=go2.url()+'&ask=1'})}};
- box.classList.add('ask');document.body.classList.add('qask');const h2=box.querySelector('h2');if(h2)h2.textContent='Your top 5 is ready.';const hasV=!!box.querySelector('.qv');setTimeout(()=>{step1();box.appendChild(card);requestAnimationFrame(()=>card.classList.add('in'))},hasV?1800:0);
+ box.classList.add('ask');document.body.classList.add('qask');const h2=box.querySelector('h2');if(h2)h2.textContent='Your top 5 is ready.';step1();box.appendChild(card);requestAnimationFrame(()=>card.classList.add('in'));
 }

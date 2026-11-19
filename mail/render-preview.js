@@ -190,7 +190,7 @@ export function buildEmail(lead, picks, opts = {}) {
   ${vibeP(lead) ? row(vibeP(lead), `18px ${PX} 0 ${PX}`) : ""}
   ${slBlock(lead, "top5")}
   ${hasPdf ? row(attached(`${name ? name + "'s " : "Your "}Florida Shortlist`, `A page for each town: home prices, the airport drive, the season, the honest heads up and your first weekend. Then ${picks.length > 1 ? (picks.length === 5 ? "all five" : "all of them") + " side by side" : "a checklist before you visit"}. Good to print or forward to whoever's moving with you.`), `22px ${PX} 0 ${PX}`) : ""}
-  ${!saved && lead && lead.id ? timelineAsk(lead, t1) : ""}
+  ${!saved && lead && lead.id && !lead.timeline ? timelineAsk(lead, t1) : ""}
   ${row(`${P(`Questions about any of these? Just reply. We read every message${opts.guideUrl ? `, and our free guide to your first 90 days in a new town is <a href="${opts.guideUrl}" style="color:${C.ink};">here</a>` : ""}.`, "margin-bottom:0;")}${sign()}`, `26px ${PX} 0 ${PX}`)}
   ${footer(`You're getting this because you asked for your towns on floridacoastal.co. Town details are for information and should be confirmed locally.`, UTM)}`;
   const html = page(subject, `${list}. Your Shortlist PDF is attached.`, rows);

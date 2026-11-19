@@ -50,8 +50,6 @@ function qRes(){const L=qRank(),L5=L.slice(0,5),k=qStyle(L5,L.slice(0,15)),t=L5[
  <h4>Also on your list</h4>
  ${L5.slice(1).map((t,i)=>`<a class="t5r" data-id="${t.id}" href="towns/${t.id}.html"><i>${i+2}</i><span class="ph" style="background-image:url('${(u=>u.replace(/^img\/c\/(?!s\/|m\/|t\/)/,'img/c/s/'))(t.img)}')"></span><span><b>${t.n}</b><small>${t.r.replace(/ · /g,', ')}${t.p?' &middot; '+t.p:''}</small>${(qWhy(t,1)[0]?`<small class="y">${qWhy(t,1)[0]}</small>`:'')}</span></a>`).join('')}
  ${k?`<div class="qsty"><span class="ph" style="background-image:url('img/vibes/${k}.webp')"></span><span><small style="margin:0 0 2px">Your style</small><b>${VIBES[k]}</b><small>${n==5?'All 5 of your towns fit it.':n+' of your 5 towns fit it.'}</small><a href="map.html?mode=vibes&style=${k}">See all ${tot} ${VIBES[k]} towns &rarr;</a></span></div>`:''}
- <div class="qsl" id="qsl"><div style="display:flex;gap:18px;align-items:flex-start"><img src="img/shortlist-p8.webp" alt="" style="width:96px;border-radius:3px;box-shadow:0 3px 12px rgba(0,0,0,.18);flex:0 0 96px"><div><h3>Follow your 5 towns</h3><p>A free 8 page PDF of these 5 towns: home prices, flood heads ups, the drive to the airport and a first weekend in each.</p></div></div>
- <input id="qse" type="email" placeholder="you@example.com" autocomplete="email" aria-label="Your email"><button class="go" onclick="qSend()">Follow these towns</button></div>
  <div class="qmore"><button onclick="qRestart()">Retake the quiz</button><a href="map.html?mode=sliders&sv=${sv}">Fine tune with sliders</a></div></div>`}
 function qDraw(){$('qz').innerHTML=qHTML();document.body.classList.toggle('qhas',qAny());qBind();document.body.classList.toggle('qres',Q.done);$('res').scrollTop=0}
 function qGo(i){if(i<-1)return;Q.step=i;qDraw()}
@@ -60,9 +58,6 @@ function qPick(i){Q.ans[Q.step]=i;if(window.FCQuiz)window.FCQuiz.answer(Q.step,S
 function qDone(){window.QLOCK=false;qRank();qMap();const a=Q.ans.map(x=>x==null?'x':x).join('');setTimeout(()=>{location.href='quiz-results.html?a='+a},700)}
 function qOpen(id){const t=T.find(t=>t.id==id);S.pinned=id;openPop(t,true);document.querySelectorAll('.t5r').forEach(r=>r.classList.toggle('on',r.dataset.id==id))}
 function qRestart(){if(window.FCQuiz)window.FCQuiz.reset();Q.ans.fill(undefined);Q.done=false;Q.step=0;closePop();S.sv={};SLK.forEach(([k])=>S.sv[k]=50);qDraw()}
-function qSend(){const e=$('qse').value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e)){$('qse').style.borderColor='#B3261E';$('qse').focus();return}
- /* TODO dev build: POST {email, answers:Q.ans, top5} to the same lead pipeline the live quiz uses (data-lead="matches") */
- $('qsl').innerHTML=`<h3>Your Shortlist is on its way</h3><p style="margin:0">Check ${e} in a few minutes, and your spam folder just in case. Questions? Just reply to that email.</p>`}
 function qBind(){$('qz').querySelectorAll('[data-id]').forEach(el=>{el.onmouseenter=()=>{S.hover=el.dataset.id;render()};el.onmouseleave=()=>{S.hover=null;render()}})}
 // in the quiz, a pin tap points to the town in the card instead of opening a second card
 const _op=openPop;openPop=function(t,nopan){if(!document.body.classList.contains('quiz'))return _op(t,nopan);if(nopan||!t)return;S.hover=t.id;render();const el=$('qz').querySelector(`[data-id="${t.id}"]`);if(el){el.scrollIntoView({behavior:'smooth',block:'center'});el.classList.add('on');setTimeout(()=>el.classList.remove('on'),1600)}};

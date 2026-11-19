@@ -367,3 +367,9 @@ html body.qphoto #qph .ph::after{content:"";position:absolute;left:0;right:0;top
 @media(max-width:700px){#qrv .qv-v em{display:none}#qrv .qv-v b{font-size:15px}}
 
 #qrv.ask .qv~.ey,#qrv.ask>.ey{display:none}
+
+/* Nov 19: the vibe is one quiet line above the proven email ask */
+#qrv .qv{margin:0 0 16px}
+#qrv .qv-l{margin:0!important;font-size:15.5px!important;line-height:1.5;color:rgba(255,255,255,.92)!important;display:block!important}
+#qrv .qv-l span{white-space:nowrap;font-weight:600;color:#fff}
+#qrv .qv-l i{display:inline-block;width:9px;height:9px;border-radius:50%;margin:0 6px 1px 4px;vertical-align:middle;box-shadow:0 0 0 1.5px rgba(255,255,255,.75)}

@@ -74,6 +74,7 @@
       '.fcs-hd.on path{fill:#C2873A;stroke:#C2873A}' +
       '.fcs-hd b{position:absolute;top:2px;right:0;min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:#152A2E;color:#fff;font:700 11px/17px "DM Sans",system-ui,sans-serif;text-align:center;box-sizing:border-box}' +
       'header.fc-onphoto .fcs-hd,header.fcq-dark .fcs-hd{color:#fff}header.fc-onphoto .fcs-hd b,header.fcq-dark .fcs-hd b{background:#fff;color:#152A2E}' +
+      'form.msearch .fcs-hd.fcs-in{flex:none;width:36px;height:36px;margin:0 -6px 0 2px;color:#152A2E}form.msearch .fcs-hd.fcs-in svg{width:20px;height:20px}form.msearch .fcs-hd.fcs-in b{top:-1px;right:-3px;background:#152A2E!important;color:#fff!important}form.msearch .fcs-hd.fcs-in:not(#x){color:#152A2E!important}' +
       'header.solid .fcs-hd{color:#152A2E}header.solid .fcs-hd b{background:#152A2E;color:#fff}' +
       '.fcs-hd.bump svg{animation:fcsb .4s ease}@keyframes fcsb{40%{transform:scale(1.3)}}' +
       '.fcs-toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));z-index:80;transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:.25s;background:#152A2E;color:#fff;border-radius:999px;padding:11px 12px 11px 18px;display:flex;align-items:center;gap:14px;font:500 15px/1.3 "DM Sans",system-ui,sans-serif;box-shadow:0 10px 30px rgba(21,42,46,.28);max-width:calc(100% - 28px)}' +
@@ -129,7 +130,7 @@
     var h = document.querySelector('header'); if (!h || h.querySelector('.fcs-hd')) return;
     hd = document.createElement('a'); hd.className = 'fcs-hd'; hd.href = '/shortlist';
     var mob = innerWidth < 901, mb = h.querySelector('.fcm-btn'), ms = h.querySelector('form.msearch');
-    if (mob && ms) { hd = null; return; }   /* map on phones: the search bar fills the header */
+    if (mob && ms) { hd.classList.add('fcs-in'); ms.appendChild(hd); drawHeader(); return; }   /* map on phones: the search bar fills the header, so the heart sits at its right end */
     if (mob && mb && getComputedStyle(mb).position === 'absolute') {
       /* phone headers whose menu button floats: sit just left of it */
       h.appendChild(hd);
@@ -202,7 +203,6 @@
     var l = list(), n = l.length; if (!n) return;
     track('shortlist_ask_shown', from + ' · ' + n);
     var thumbs = '<div class="fcs-th">' + l.slice(0, 5).map(function (t) { return '<i style="background-image:url(\'/' + esc(t.img) + '\')"></i>'; }).join('') + '</div>';
-    var names = l.slice(0, 3).map(function (t) { return t.name.replace(/ \(.*\)$/, ''); }).join(', ') + (n > 3 ? ' and ' + (n - 3) + ' more' : '');
     open(thumbs +
       '<h3>Follow your ' + (n === 1 ? 'town' : n + ' towns') + '</h3>' +
       '<p>Your Shortlist by email now, then a few notes from Mark and Betsy over the next two weeks.</p>' +
