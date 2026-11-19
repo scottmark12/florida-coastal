@@ -6,8 +6,8 @@ Inputs
   nearest DEP public beach access with parking (OSRM, no traffic).
 - data/county-house-sale-medians.json: recorded median house sale and sale count.
 - Flood share in FEMA high risk zones: read from the live Affordable table (the Nov 17 flood file is
-  not in the repo). Weeki Wachee is 100% (Nov 17 notes). Panama City Beach is not in that table;
-  pass --pcb-flood 0.NN once we have it. From the old ranking it is between 4% and 32%, and at
+  not in the repo). Weeki Wachee is 100% (Nov 17 notes). Panama City Beach is not in that table:
+  29 of 194 sales (Codex, Nov 18). From the old ranking it is between 4% and 32%, and at
   either end it lands at #32, so the list does not depend on it.
 
 Rule: yearly cost to own = mortgage (5.91% of the median) + county millage on (median - $50K)
@@ -20,7 +20,7 @@ the Affordable guide table and copy, and scoring.html. Run on a clean tree, then
 """
 import json, re, sys, glob, html as H
 
-PCB_FLOOD = None
+PCB_FLOOD = 29 / 194  # Codex Nov 18: 29 of 194 mapped house sales in A or V zones (Nov 17 flood file)
 if '--pcb-flood' in sys.argv:
     PCB_FLOOD = float(sys.argv[sys.argv.index('--pcb-flood') + 1])
 
