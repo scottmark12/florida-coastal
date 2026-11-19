@@ -71,10 +71,7 @@ function qVibeOn(){try{const v=JSON.parse(localStorage.getItem('fc-vibe')||'null
 function qVibeBlock(box){
  let v=null;try{v=JSON.parse(localStorage.getItem('fc-vibe')||'null')}catch(e){}if(!v||!v.all.length)return;
  let el=box.querySelector('.qv');if(!el){el=document.createElement('div');el.className='qv';const c=box.querySelector('#qrvc');c.replaceWith(el)}
- const draw=()=>{const on=v.all.filter(k=>!v.off.includes(k)),off=v.all.filter(k=>v.off.includes(k));
-  el.innerHTML=`<div class="qv-k">Your town vibe</div><div class="qv-c">${on.map(k=>`<span class="qv-v"><i style="background:${VCOL[k]||'#C2873A'}"></i><b>${VIBES[k]||k}</b><em>${VSUB[k]||''}</em><button type="button" data-k="${k}" aria-label="Not me, remove ${VIBES[k]||k}">&times;</button></span>`).join('')||'<span class="qv-none">No label, no problem. Your towns still fit how you answered.</span>'}</div><p class="qv-s">${on.length?'From your five towns. Not you? Tap &times; to drop it.':''}${off.length?` <a href="#" class="qv-u">Bring back ${off.map(k=>VIBES[k]||k).join(', ')}</a>`:''}</p>`;
-  el.querySelectorAll('button[data-k]').forEach(b=>b.onclick=()=>{v.off.push(b.dataset.k);save();window.FC&&FC.track('vibe_remove',b.dataset.k);draw()});
-  const u=el.querySelector('.qv-u');if(u)u.onclick=e=>{e.preventDefault();v.off=[];save();draw()}};
+ const draw=()=>{el.innerHTML=`<div class="qv-k">Your town vibe</div><div class="qv-c">${v.all.map(k=>`<span class="qv-v"><i style="background:${VCOL[k]||'#C2873A'}"></i><b>${VIBES[k]||k}</b></span>`).join('')}</div><p class="qv-s">From your five towns and how you answered.</p>`};
  const save=()=>{try{localStorage.setItem('fc-vibe',JSON.stringify(v))}catch(e){}};
  draw();requestAnimationFrame(()=>el.classList.add('in'))}
 function qAsk(go2,TOP,a){
@@ -96,5 +93,5 @@ function qAsk(go2,TOP,a){
    const send=window.FC?FC.lead({kind:'matches',email:v,ref:ref,matches:TOP.map((t,i)=>({id:t.id,name:t.name,rank:i+1,fit:t.fit})),answers:a.split(''),message:('Quiz top 5: '+TOP.map(t=>t.name).join(', ')+(qVibeOn().length?' · Vibe: '+qVibeOn().map(k=>VIBES[k]||k).join(', '):'')).slice(0,2000)}).catch(()=>null):Promise.resolve(null);
    /* Nov 19: no more phone step promising a town guide; the results page asks the 3 quick questions */
    send.then(()=>{location.href=go2.url()+'&ask=1'})}};
- box.classList.add('ask');document.body.classList.add('qask');const h2=box.querySelector('h2');if(h2)h2.textContent='Your top 5 is ready.';step1();box.appendChild(card);requestAnimationFrame(()=>card.classList.add('in'));
+ box.classList.add('ask');document.body.classList.add('qask');const h2=box.querySelector('h2');if(h2)h2.textContent='Your top 5 is ready.';const hasV=!!box.querySelector('.qv');setTimeout(()=>{step1();box.appendChild(card);requestAnimationFrame(()=>card.classList.add('in'))},hasV?1800:0);
 }

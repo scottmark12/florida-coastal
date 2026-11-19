@@ -88,6 +88,11 @@
       '.fcs-acts .on path{fill:#C2873A;stroke:#C2873A}' +
       '.fcs-ph{position:absolute;top:14px;right:14px;z-index:3;width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.94);box-shadow:0 2px 10px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;cursor:pointer;color:#152A2E}' +
       '.fcs-ph svg{width:24px;height:24px}.fcs-ph path{fill:none;stroke:currentColor;stroke-width:2}.fcs-ph.on path{fill:#C2873A;stroke:#C2873A}.fcs-ph.pop svg{animation:fcsb .4s ease}' +
+      '.fvl{font:15px/1.5 "DM Sans",system-ui,sans-serif;color:#3E5357}.fvl[hidden]{display:none}.fvl-k{font-weight:700;color:#152A2E;margin-right:2px}.fvl-v{white-space:nowrap}.fvl-v i{display:inline-block;width:8px;height:8px;border-radius:50%;margin:0 6px 1px 2px;vertical-align:middle}.fvl-sep{margin-right:2px}' +
+      '.fvl-e{border:0;background:none;padding:0 0 0 6px;font:600 15px "DM Sans",system-ui,sans-serif;color:#8A6A3D;text-decoration:underline;text-underline-offset:3px;cursor:pointer}' +
+      '.fve{display:flex;flex-direction:column;gap:8px;margin:0 0 16px}.fve-r{display:flex;align-items:center;gap:12px;text-align:left;border:1.5px solid #E4DED3;background:#fff;border-radius:14px;padding:12px 14px;cursor:pointer;font-family:inherit;color:#152A2E}' +
+      '.fve-r i{width:12px;height:12px;border-radius:50%;flex:none}.fve-r span{flex:1}.fve-r b{display:block;font-size:16px}.fve-r small{display:block;font-size:13.5px;color:#6A7B7E;margin-top:2px}' +
+      '.fve-r em{width:24px;height:24px;border-radius:50%;border:1.5px solid #CFC8BC;flex:none;box-sizing:border-box}.fve-r.on{border-color:#152A2E}.fve-r.on em{background:#152A2E url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 24 24%27%3E%3Cpath d=%27M6 12.5l4 4 8-9%27 fill=%27none%27 stroke=%27white%27 stroke-width=%272.6%27 stroke-linecap=%27round%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E") center/16px no-repeat;border-color:#152A2E}.fve-r:not(.on){opacity:.6}' +
       '.fv{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:"DM Sans",system-ui,sans-serif}.fv[hidden]{display:none}' +
       '.fv-k{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#8A6A3D;margin-right:4px}' +
       '.fv-v{display:inline-flex;align-items:center;gap:8px;padding:6px 6px 6px 12px;border-radius:999px;background:#F3F1EC;border:1px solid #E4DED3}' +
@@ -95,7 +100,7 @@
       '.fv-v button{border:0;background:#fff;width:24px;height:24px;border-radius:50%;font-size:16px;line-height:1;color:#3E5357;cursor:pointer}' +
       '.fv-u{border:0;background:none;color:#3E5357;font:600 14px "DM Sans",system-ui,sans-serif;text-decoration:underline;cursor:pointer;padding:4px}.fv-none{font-size:14.5px;color:#3E5357}' +
       '.fv-light .fv-k{color:#F2B27C}.fv-light .fv-v{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}.fv-light .fv-v a{color:#fff}.fv-light .fv-v button{background:rgba(255,255,255,.22);color:#fff}.fv-light .fv-u,.fv-light .fv-none{color:#fff}' +
-      '@media(max-width:700px){.fcs-acts span{display:none}.fcs-acts button{padding:6px 8px}.crumbs.fcs-row>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fcs-hd{margin-left:auto;margin-right:46px}}';
+      '@media(max-width:700px){.fcs-acts .fcs-sv{display:none}.fcs-acts span{display:none}.fcs-acts button{padding:6px 8px}.crumbs.fcs-row>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fcs-hd{margin-left:auto;margin-right:46px}}';
     document.head.appendChild(s);
   }
   var HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.6-4.7-7.6-10.4A4.4 4.4 0 0 1 12 7.4a4.4 4.4 0 0 1 7.6 2.5c0 5.7-7.6 10.4-7.6 10.4z"/></svg>';
@@ -304,6 +309,40 @@
     }
     el.classList.add('fv'); if (opts.light) el.classList.add('fv-light'); onChange(draw); draw();
   }
+  /* One quiet line: "Your vibe: Walkable, Social Scene · Edit". Editing happens in a small sheet. */
+  function vibeLine(el) {
+    function draw() {
+      var v = vibeGet();
+      if (!v || !v.all.length) { el.hidden = true; el.innerHTML = ''; return; }
+      el.hidden = false;
+      var on = vibes();
+      el.innerHTML = '<span class="fvl-k">Your vibe</span> ' + (on.length ? on.map(function (k) { return '<span class="fvl-v"><i style="background:' + (VCOL[k] || '#C2873A') + '"></i>' + esc(VIBES[k] || k) + '</span>'; }).join('<span class="fvl-sep">, </span>') : '<span class="fvl-v">None picked</span>') + ' <button type="button" class="fvl-e">Edit</button>';
+      el.querySelector('.fvl-e').onclick = vibeEdit;
+    }
+    el.classList.add('fvl'); onChange(draw); draw();
+  }
+  function vibeEdit() {
+    var v = vibeGet(); if (!v) return;
+    track('vibe_edit_open', '');
+    function rows() {
+      return v.all.map(function (k) {
+        var on = v.off.indexOf(k) < 0;
+        return '<button type="button" class="fve-r' + (on ? ' on' : '') + '" data-k="' + k + '" aria-pressed="' + on + '"><i style="background:' + (VCOL[k] || '#C2873A') + '"></i><span><b>' + esc(VIBES[k] || k) + '</b><small>' + esc(VSUB[k] || '') + '</small></span><em aria-hidden="true"></em></button>';
+      }).join('');
+    }
+    open('<h3>Your town vibe</h3><p>From your towns and your answers. Keep what sounds like you.</p><div class="fve">' + rows() + '</div><button type="button" class="fcs-go">Done</button>');
+    function wire() {
+      sheet.querySelectorAll('.fve-r').forEach(function (b) {
+        b.onclick = function () { var k = b.dataset.k, i = v.off.indexOf(k); if (i < 0) { v.off.push(k); track('vibe_remove', k); } else { v.off.splice(i, 1); track('vibe_restore', k); } vibeSet(v); sheet.querySelector('.fve').innerHTML = rows(); wire(); };
+      });
+    }
+    wire(); sheet.querySelector('.fcs-go').onclick = close;
+  }
+  function confirmRemove(t) {
+    open('<h3>' + esc(String(t.name).replace(/ \(.*\)$/, '')) + '</h3><p>Take it off your Shortlist? You can save it again from its page anytime.</p><button type="button" class="fcs-go">Remove from Shortlist</button><button type="button" class="fcs-no">Keep it</button>');
+    sheet.querySelector('.fcs-go').onclick = function () { remove(t.id); close(); toast('Removed from your Shortlist'); };
+    sheet.querySelector('.fcs-no').onclick = close;
+  }
   /* The quiz's five towns go in (from: quiz), replacing older quiz towns; towns saved by hand stay. */
   function setQuiz(towns) {
     var keep = list().filter(function (t) { return t.from !== 'quiz'; }), ids = keep.map(function (t) { return t.id; });
@@ -312,7 +351,7 @@
     if (next.map(function (t) { return t.id; }).join(',') !== cur) { store(next); track('shortlist_quiz', String(q.length)); }
   }
 
-  window.FCS = { list: list, add: add, remove: remove, toggle: toggle, has: has, react: react, onChange: onChange, share: share, shareUrl: shareUrl, ask: ask, toast: toast, followed: followed, esc: esc, plural: plural, HEART: HEART, SHARE: SHARE, VIBES: VIBES, VCOL: VCOL, VSUB: VSUB, vibes: vibes, vibeChips: vibeChips, setQuiz: setQuiz, questions: openQuestions };
+  window.FCS = { list: list, add: add, remove: remove, toggle: toggle, has: has, react: react, onChange: onChange, share: share, shareUrl: shareUrl, ask: ask, toast: toast, followed: followed, esc: esc, plural: plural, HEART: HEART, SHARE: SHARE, VIBES: VIBES, VCOL: VCOL, VSUB: VSUB, vibes: vibes, vibeChips: vibeChips, setQuiz: setQuiz, questions: openQuestions, vibeLine: vibeLine, vibeEdit: vibeEdit, confirmRemove: confirmRemove };
   function init() { css(); header(); townPage(); onChange(function () { drawHeader(); }); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();

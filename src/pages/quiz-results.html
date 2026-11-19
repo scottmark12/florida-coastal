@@ -36,12 +36,10 @@ const upd=()=>{cur=Math.round(tr.scrollLeft/tr.clientWidth);document.getElementB
 tr.addEventListener('scroll',()=>requestAnimationFrame(upd));document.getElementById('pv').onclick=()=>go(cur-1);document.getElementById('nx').onclick=()=>go(cur+1);
 document.querySelectorAll('#th button').forEach(b=>b.onclick=()=>go(+b.dataset.go));addEventListener('keydown',e=>{if(e.key=='ArrowRight')go(cur+1);if(e.key=='ArrowLeft')go(cur-1)});upd();
 {{/inline-js}}</script><script>{{inline-js}}FC.bind(document.getElementById('shortf'),{kind:'matches',thanks:'Your Shortlist is on its way.',after:()=>{try{localStorage.setItem('fc-sl-followed','1')}catch(e){}},extra:()=>{const t=window.TOP5||[];return{matches:t.length?t.map(x=>({id:x.id,fit:x.fit,name:TD[x.id].n})):null,answers:window.ANS?window.ANS.split('').map(c=>c==='x'?null:+c):null,town:t[0]?TD[t[0].id].n.slice(0,80):null}}}){{/inline-js}}</script><script src="{{asset:/assets/fc-menu.js?v=18}}" defer></script><p class="src" style="max-width:1100px;margin:20px auto;padding:0 20px;font-size:13px;line-height:1.5">Price guides use different dates and measures, including sale prices, asking prices and estimated values. Check each town’s source and period before comparing. Budget filters use the lower end where a range is shown.</p><style>
-.rs-vibe{position:absolute;z-index:6;left:56px;top:84px;max-width:calc(100% - 112px)}
-.rs-vibe .fv-v{padding:7px 7px 7px 13px}.rs-vibe .fv-v a{font-size:15.5px}
-.rs-h{display:inline-flex;align-items:center;gap:6px;margin-left:10px;vertical-align:middle;border:1px solid rgba(255,255,255,.55);background:rgba(255,255,255,.12);color:#fff;border-radius:999px;padding:5px 11px 5px 9px;font:600 13px/1 "DM Sans",system-ui,sans-serif;letter-spacing:0;text-transform:none;cursor:pointer;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.rs-h{display:inline-flex;align-items:center;justify-content:center;margin-left:10px;vertical-align:middle;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.12);color:#fff;border-radius:50%;width:30px;height:30px;padding:0;font:600 13px/1 "DM Sans",system-ui,sans-serif;letter-spacing:0;text-transform:none;cursor:pointer;-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
 .rs-h svg{width:15px;height:15px}.rs-h path{fill:none;stroke:currentColor;stroke-width:2}.rs-h.on path{fill:#E9B877;stroke:#E9B877}
 header.fc-onphoto .fcs-hd,header.fcq-dark .fcs-hd{color:#fff}header.fc-onphoto .fcs-hd:hover{background:rgba(255,255,255,.15)}header.fc-onphoto .fcs-hd b{background:#fff;color:#152A2E}
-@media(max-width:700px){.rs-vibe{left:16px;right:16px;top:96px;max-width:none}.rs-vibe .fv-k{flex-basis:100%}.rs-h{margin-left:6px;padding:5px 9px 5px 8px}}
+@media(max-width:700px){.rs-h{margin-left:6px}}
 </style><script src="{{js:shortlist}}" defer></script><script>{{inline-js}}/* Nov 19: the quiz fills the Shortlist, each town gets a heart, and "your town vibe" shows with an x to drop it */
 document.addEventListener('DOMContentLoaded',function(){if(!window.FCS||!window.TOP5)return;
  var own=false;try{var s=JSON.parse(sessionStorage.getItem('fc-top5')||'null');own=!!(s&&s.a===window.ANS)}catch(e){}
@@ -51,13 +49,8 @@ document.addEventListener('DOMContentLoaded',function(){if(!window.FCS||!window.
  if(own)FCS.setQuiz(T5);
  /* hearts */
  function hearts(){document.querySelectorAll('#tr .sl').forEach(function(sl,i){var t=T5[i];if(!t)return;var k=sl.querySelector('.k');if(!k)return;var b=k.querySelector('.rs-h');if(!b){b=document.createElement('button');b.type='button';b.className='rs-h';k.appendChild(b);b.onclick=function(){var on=FCS.has(t.id);FCS.toggle(t,'quiz results');if(on)FCS.toast(t.name.replace(/ \(.*\)$/,'')+' removed from your Shortlist')}}
-  var on=FCS.has(t.id);b.classList.toggle('on',on);b.innerHTML=FCS.HEART+'<span>'+(on?'Saved':'Save')+'</span>';b.setAttribute('aria-pressed',on)})}
+  var on=FCS.has(t.id);b.classList.toggle('on',on);b.innerHTML=FCS.HEART;b.setAttribute('aria-pressed',on);b.setAttribute('aria-label',(on?'Saved to your Shortlist: ':'Save ')+t.name)})}
  hearts();FCS.onChange(hearts);
  /* just followed in the quiz: the 3 quick questions */
  if(P.get('ask')==='1'){var rf=null;try{rf=localStorage.getItem('fc-sl-ref')}catch(e){}history.replaceState(null,'',location.pathname+location.search.replace(/&ask=1/,''));if(rf)setTimeout(function(){FCS.questions(rf,!FC.LIVE)},700)}
- /* your town vibe */
- if(!own&&!vp.length)return;
- var v=document.createElement('div');v.className='rs-vibe';document.body.appendChild(v);
- if(own)FCS.vibeChips(v,{light:true});
- else{v.className='rs-vibe fv fv-light';v.innerHTML='<span class="fv-k">Town vibe</span>'+vp.map(function(k){return '<span class="fv-v"><i style="background:'+FCS.VCOL[k]+'"></i><a href="map.html?mode=vibes&style='+k+'">'+FCS.VIBES[k]+'</a></span>'}).join('')}
 });{{/inline-js}}</script></body></html>
