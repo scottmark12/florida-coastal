@@ -79,7 +79,9 @@
       'header.solid .fcs-hd{color:#152A2E}header.solid .fcs-hd b{background:#152A2E;color:#fff}' +
       '.fcs-hd.bump svg{animation:fcsb .4s ease}@keyframes fcsb{40%{transform:scale(1.3)}}' +
       '.fcs-toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));z-index:80;transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:.25s;background:#152A2E;color:#fff;border-radius:999px;padding:11px 12px 11px 18px;display:flex;align-items:center;gap:14px;font:500 15px/1.3 "DM Sans",system-ui,sans-serif;box-shadow:0 10px 30px rgba(21,42,46,.28);max-width:calc(100% - 28px)}' +
+      '.fcs-tx{border:0;background:rgba(255,255,255,.14);color:#fff;width:28px;height:28px;border-radius:50%;font-size:18px;line-height:1;cursor:pointer;flex:none;margin-left:-6px}.fcs-tx:hover{background:rgba(255,255,255,.26)}' +
       '.fcs-toast span{white-space:nowrap}.fcs-toast.in{opacity:1;transform:translate(-50%,0);pointer-events:auto}.fcs-toast a{color:#E9B877;font-weight:700;text-decoration:none;white-space:nowrap;padding:2px 6px}' +
+      '.fcs-hint{position:fixed;z-index:85;background:#152A2E;color:#fff;font:600 14px/1.2 "DM Sans",system-ui,sans-serif;padding:9px 13px;border-radius:10px;box-shadow:0 8px 24px rgba(21,42,46,.25);opacity:0;transform:translateY(-4px);transition:.25s;pointer-events:none;white-space:nowrap}.fcs-hint.in{opacity:1;transform:none}.fcs-hint::before{content:"";position:absolute;top:-6px;left:calc(var(--ax) - 6px);border:6px solid transparent;border-top:0;border-bottom-color:#152A2E}' +
       '.fcs-scrim{position:fixed;inset:0;z-index:90;background:rgba(21,42,46,.45);opacity:0;transition:opacity .25s}.fcs-scrim.in{opacity:1}' +
       '.fcs-sheet{position:fixed;z-index:91;left:50%;bottom:0;width:min(460px,100%);transform:translate(-50%,105%);transition:transform .32s cubic-bezier(.2,.8,.2,1);background:#fff;border-radius:22px 22px 0 0;padding:22px 22px calc(22px + env(safe-area-inset-bottom));box-shadow:0 -10px 40px rgba(21,42,46,.25);font-family:"DM Sans",system-ui,sans-serif;color:#152A2E;box-sizing:border-box}' +
       '@media(min-width:701px){.fcs-sheet{bottom:50%;border-radius:22px;transform:translate(-50%,calc(50% + 40px));opacity:0;transition:.28s}.fcs-sheet.in{transform:translate(-50%,50%)!important;opacity:1}}' +
@@ -123,7 +125,7 @@
       '.fv-v button{border:0;background:#fff;width:24px;height:24px;border-radius:50%;font-size:16px;line-height:1;color:#3E5357;cursor:pointer}' +
       '.fv-u{border:0;background:none;color:#3E5357;font:600 14px "DM Sans",system-ui,sans-serif;text-decoration:underline;cursor:pointer;padding:4px}.fv-none{font-size:14.5px;color:#3E5357}' +
       '.fv-light .fv-k{color:#F2B27C}.fv-light .fv-v{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}.fv-light .fv-v a{color:#fff}.fv-light .fv-v button{background:rgba(255,255,255,.22);color:#fff}.fv-light .fv-u,.fv-light .fv-none{color:#fff}' +
-      '@media(max-width:700px){.fcs-acts .fcs-sv{display:none}.fcs-acts span{display:none}.fcs-acts button{padding:6px 8px}.crumbs.fcs-row>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}';
+      '.fcs-acts .fcs-sv{display:none}@media(max-width:700px){.fcs-acts span{display:none}.fcs-acts button{padding:6px 8px}.crumbs.fcs-row>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}';
     document.head.appendChild(s);
   }
   var HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.6-4.7-7.6-10.4A4.4 4.4 0 0 1 12 7.4a4.4 4.4 0 0 1 7.6 2.5c0 5.7-7.6 10.4-7.6 10.4z"/></svg>';
@@ -150,7 +152,7 @@
   function drawHeader(bump) {
     if (!hd) return; var n = list().length;
     hd.classList.toggle('on', n > 0);
-    hd.setAttribute('aria-label', n ? 'Your Shortlist, ' + plural(n) : 'Your Shortlist');
+    hd.setAttribute('aria-label', n ? 'Your Shortlist, ' + plural(n) : 'Your Shortlist'); hd.title = n ? 'Your Shortlist (' + plural(n) + ')' : 'Your Shortlist: heart towns to save them here';
     hd.innerHTML = HEART + (n ? '<b>' + n + '</b>' : '');
     if (bump) { hd.classList.remove('bump'); void hd.offsetWidth; hd.classList.add('bump'); }
   }
@@ -159,15 +161,30 @@
   var tEl, tTimer;
   function toast(msg, link, href) {
     if (!tEl) { tEl = document.createElement('div'); tEl.className = 'fcs-toast'; tEl.setAttribute('role', 'status'); document.body.appendChild(tEl); }
+    /* a toast with a next step (Email it to me, Ask a local) stays until it's tapped or closed */
     var fn = typeof href === 'function';
-    tEl.innerHTML = '<span>' + esc(msg) + '</span>' + (link ? '<a href="' + (fn ? '#' : esc(href)) + '">' + esc(link) + '</a>' : '');
-    if (fn) tEl.querySelector('a').onclick = function (e) { e.preventDefault(); tEl.classList.remove('in'); href(); };
-    tEl.classList.add('in'); clearTimeout(tTimer); tTimer = setTimeout(function () { tEl.classList.remove('in'); }, fn ? 7000 : 3800);
+    tEl.innerHTML = '<span>' + esc(msg) + '</span>' + (link ? '<a href="' + (fn ? '#' : esc(href)) + '">' + esc(link) + '</a>' : '') + (fn ? '<button type="button" class="fcs-tx" aria-label="Dismiss">&times;</button>' : '');
+    if (fn) {
+      tEl.querySelector('a').onclick = function (e) { e.preventDefault(); tEl.classList.remove('in'); href(); };
+      tEl.querySelector('.fcs-tx').onclick = function () { tEl.classList.remove('in'); track('toast_dismiss', link); };
+    }
+    tEl.classList.add('in'); clearTimeout(tTimer); if (!fn) tTimer = setTimeout(function () { tEl.classList.remove('in'); }, 3800);
   }
 
+  function hint() {
+    if (ls('fc-sl-hint') || !hd || !hd.offsetParent) return; ls('fc-sl-hint', '1');
+    var r = hd.getBoundingClientRect(); if (r.bottom < 0 || r.top > innerHeight) return;
+    var b = document.createElement('div'); b.className = 'fcs-hint'; b.setAttribute('role', 'status'); b.textContent = 'Your Shortlist lives here';
+    document.body.appendChild(b);
+    var w = b.offsetWidth, x = Math.max(10, Math.min(innerWidth - w - 10, r.left + r.width / 2 - w / 2));
+    b.style.left = x + 'px'; b.style.top = (r.bottom + 10) + 'px'; b.style.setProperty('--ax', (r.left + r.width / 2 - x) + 'px');
+    requestAnimationFrame(function () { b.classList.add('in'); });
+    setTimeout(function () { b.classList.remove('in'); setTimeout(function () { b.remove(); }, 300); }, 4200);
+  }
   function afterSave(l, t) {
     drawHeader(true);
     var n = l.length;
+    if (n === 1) hint();
     /* no popups: the next step rides in the toast. 3+ towns: Ask a local. 2 and not saved yet: Email it to me */
     if (n >= 3 && !askedLocal()) toast('Saved · ' + plural(n), 'Ask a local about these ' + n, function () { askLocal('heart toast'); });
     else if (n >= 2 && !saved()) toast('Saved · ' + plural(n), 'Email it to me', function () { ask('second save'); });

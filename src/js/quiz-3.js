@@ -70,7 +70,13 @@ function qVibe(TOP){const LIFE=['island','oldfl','dock','sophcalm','sophhigh','s
 function qVibeOn(){try{const v=JSON.parse(localStorage.getItem('fc-vibe')||'null');return v?v.all.filter(k=>!v.off.includes(k)):[]}catch(e){return[]}}
 function qVibeBlock(box){
  let v=null;try{v=JSON.parse(localStorage.getItem('fc-vibe')||'null')}catch(e){}if(!v||!v.all.length)return;
- let el=box.querySelector('.qv');if(!el){el=document.createElement('div');el.className='qv';const c=box.querySelector('#qrvc');c.replaceWith(el)}
+ let el=box.querySelector('.qv');if(!el){el=document.createElement('div');el.className='qv';const c=box.querySelector('#qrvc');c.parentNode.insertBefore(el,c);
+  /* keep a few of their own answers under the vibe ("we heard you"), the rest folded into +N more */
+  const ch=[...c.children],more=ch.find(x=>/\+\s*\d+\s*more/.test(x.textContent)),real=ch.filter(x=>x!==more);
+  if(real.length>3){const n=real.length-3+(more?+(more.textContent.match(/\d+/)||[0])[0]:0);real.slice(3).forEach(x=>x.remove());
+   if(more){const w=document.createTreeWalker(more,NodeFilter.SHOW_TEXT);let t;while(t=w.nextNode())if(/\d+/.test(t.nodeValue))t.nodeValue=t.nodeValue.replace(/\d+/,n)}
+   else{const m=real[0].cloneNode(true);const w=document.createTreeWalker(m,NodeFilter.SHOW_TEXT);let t,f=0;while(t=w.nextNode())if(t.nodeValue.trim()){t.nodeValue=f?'':'+'+n+' more';f=1}c.appendChild(m)}}
+  c.classList.add('qv-ch')}
  const draw=()=>{el.innerHTML=`<p class="qv-l">Your town vibe: ${v.all.map(k=>`<span><i style="background:${VCOL[k]||'#C2873A'}"></i>${VIBES[k]||k}</span>`).join(', ')}</p>`};
  const save=()=>{try{localStorage.setItem('fc-vibe',JSON.stringify(v))}catch(e){}};
  draw();requestAnimationFrame(()=>el.classList.add('in'))}
