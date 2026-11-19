@@ -383,7 +383,7 @@ export async function buildPdf(lead, picks, deps) {
     const lab = y - 41.5;
     rule(pg, lab + 15);
     const colX = [45, 179.5, 314, 448.5];
-    const facts = [["Median home", t.price || "Ask us for current prices"], ["Airport", t.airport], ["Season", t.season], ["Heads up", t.watch]];
+    const facts = [[t.price ? "Median " + (t.priceKind || "home") : "Median home", t.price || "Ask us for current prices"], ["Airport", t.airport], ["Season", t.season], ["Heads up", t.watch]];
     let low = lab;
     facts.forEach(([l, v], k) => {
       caps(pg, l, colX[k], lab, 6.75);

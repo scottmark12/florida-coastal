@@ -55,3 +55,4 @@
 .sl-fb{flex:none;border:0;background:#152A2E;color:#fff;border-radius:999px;padding:13px 24px;font:600 16px "DM Sans",system-ui,sans-serif;cursor:pointer}
 @media(max-width:700px){.sl-fc{flex-wrap:wrap;padding:16px}.sl-fc div{flex-basis:calc(100% - 72px)}.sl-fb{width:100%;padding:14px}}
 .sl-lab,.sl-c{line-height:22px;min-height:46px;box-sizing:border-box}.sl-top em{line-height:1;vertical-align:1px}
+.sl-pr small{display:block;font-size:13.5px;color:#5B6E72;margin-top:2px;font-weight:500}

@@ -6,12 +6,15 @@ const WV=[0,1,3,9],MISS={1:.55,2:.75},MISS2={1:.8,2:.92},CATMULT={afford:1.5},
 const Q={step:0,ans:new Array(SQ.length).fill(undefined),done:false};
 const qA=k=>{const i=SQ.findIndex(q=>q.k===k),a=Q.ans[i];return a!=null&&SQ[i].o[a]?SQ[i].o[a][3]:null};
 function qW(){const e={};let boat=false;Q.ans.forEach((a,i)=>{const q=SQ[i];if(a!=null&&!q.k&&q.o[a])Object.entries(q.o[a][3]).forEach(([k,v])=>{k==='boat'?boat=true:e[k]=Math.min(3,(e[k]||0)+v)})});const b=qA('budget');if(boat&&b!=null&&BUDGET[b][1]>1)e.afford=Math.max(e.afford||0,1);return e}
-function qFit(t,W,pace,bud){const d=QD[t.id];let a=0,s=0,o=1;
+/* Nov 19: budget matches recorded sales, on the kind of home they picture (house or dock: houses; condo: condos; otherwise the cheaper) */
+function qHT(W){W=W||qW();return (W.house||W.dock)?'h':W.condo?'c':''}
+function qMP(d,ht){return ht=='h'&&d.mh?[d.mh,'Houses']:ht=='c'&&d.mc?[d.mc,'Condos']:[d.m,d.mk=='house'?'Houses':d.mk=='condo'?'Condos':'Homes']}
+function qFit(t,W,pace,bud){const d=QD[t.id];let a=0,s=0,o=1;const dm=qMP(d,W.__ht!=null?W.__ht:qHT(W))[0];
  Object.entries(W).forEach(([k,r])=>{if(!r||d.s[k]==null)return;const sc=d.s[k],i=WV[r]*(CATMULT[k]||1);a+=i*Math.pow(d.f[k]/5,1.5);s+=i;if(r===3&&MISS[sc])o*=MISS[sc];if(r===2&&MISS2[sc])o*=MISS2[sc]});
  if(Number.isInteger(pace)){const q=d.s.quiet,p=PACE[pace],g=q<p[0]?p[0]-q:q>p[1]?q-p[1]:0,r=Math.max(1,5-1.5*g);a+=9*Math.pow(r/5,1.5);s+=9;if(PACE_MISS[g])o*=PACE_MISS[g]}
- if(Number.isInteger(bud)&&BUDGET[bud][1]>1){let g=0;if(d.m){for(let x=bud;x<3;x++)if(d.m>1.05*BUDGET_TOP[x])g++;g=Math.min(3,g)}else g=Math.max(0,BUDGET[bud][1]-d.s.afford);const r=Math.max(1,5-1.5*g);a+=BUDGET_W*Math.pow(r/5,1.5);s+=BUDGET_W;if(g)o*=BUDGET_MISS[Math.min(3,g)]}
+ if(Number.isInteger(bud)&&BUDGET[bud][1]>1){let g=0;if(dm){for(let x=bud;x<3;x++)if(dm>1.05*BUDGET_TOP[x])g++;g=Math.min(3,g)}else g=Math.max(0,BUDGET[bud][1]-d.s.afford);const r=Math.max(1,5-1.5*g);a+=BUDGET_W*Math.pow(r/5,1.5);s+=BUDGET_W;if(g)o*=BUDGET_MISS[Math.min(3,g)]}
  return s?o*a/s:null}
-function qRank(){const W=qW(),pace=qA('pace'),bud=qA('budget');T.forEach(t=>t.qf=qFit(t,W,pace,bud)||0);
+function qRank(){const W=qW();Object.defineProperty(W,'__ht',{value:qHT(W),enumerable:false});const pace=qA('pace'),bud=qA('budget');T.forEach(t=>t.qf=qFit(t,W,pace,bud)||0);
  const L=T.slice().sort((a,b)=>b.qf-a.qf),top=[],per={},rest=[];
  for(const t of L){const g=QD[t.id].g;top.length<5&&(per[g]||0)<2?(top.push(t),per[g]=(per[g]||0)+1):rest.push(t)}
  while(top.length<5&&rest.length)top.push(rest.shift());return[...top,...rest]}
@@ -40,12 +43,12 @@ const WHYP={walk:"Walk to coffee and dinner",beach:"A sandy beach close by",sand
 function qWhy(t,n){const d=QD[t.id],W=qW(),out=[];
  const p=qA('pace');if(p===0&&d.s.quiet<=2)out.push([3.5,"Busy streets and late hours"]);if(p===1&&d.s.quiet>=2&&d.s.quiet<=3)out.push([3.5,"A real downtown, calm at home"]);if(p>=2&&d.s.quiet>=4)out.push([3.5,p==3?"About as quiet as it gets":"A quiet town with a little going on"]);
  Object.entries(W).forEach(([k,w])=>{if(d.s[k]>=4&&WHYP[k])out.push([w+d.f[k]/5,WHYP[k]])});
- const b=qA('budget');if(b!=null&&d.m&&d.m<=BUDGET_TOP[b])out.push([3.2,`Typical home ${t.p||''} fits your budget`.replace('  ',' ')]);
+ const b=qA('budget'),mp=qMP(d,qHT());if(b!=null&&mp[0]&&mp[0]<=BUDGET_TOP[b])out.push([3.2,`${mp[1]} around $${mp[0]>=1000?(mp[0]/1000).toFixed(2).replace(/\.?0+$/,'')+'M':mp[0]+'K'} fit your budget`]);
  const seen=new Set();return out.sort((x,y)=>y[0]-x[0]).map(x=>x[1]).filter(x=>!seen.has(x)&&seen.add(x)).slice(0,n)}
 function qRes(){const L=qRank(),L5=L.slice(0,5),k=qStyle(L5,L.slice(0,15)),t=L5[0];const sv=Object.entries(S.sv).filter(([,v])=>v!=50).map(([a,b])=>a+':'+b).join(',');
  const n=k?L5.filter(t=>t.v.includes(k)).length:0,tot=k?T.filter(x=>x.v.includes(k)).length:0,w=qWhy(t,3);
  return `<div class="qr"><div class="ey">Your results</div><h1>Your top 5</h1><p class="sub" style="margin:0">Ranked from all 167 coastal towns on your 8 answers.</p>
- <div class="qhero t5r0" data-id="${t.id}"><div class="ph" style="background-image:url('${(u=>u.replace(/^img\/c\/(?!s\/|m\/|t\/)/,'img/c/m/'))(t.img)}')"><i>#1 &middot; ${qp(t)}% match</i></div><h2>${t.n}</h2><div class="meta">${t.r.replace(/ · /g,', ')}${t.p?` &middot; <b>${t.p}</b> typical home`:''}</div>
+ <div class="qhero t5r0" data-id="${t.id}"><div class="ph" style="background-image:url('${(u=>u.replace(/^img\/c\/(?!s\/|m\/|t\/)/,'img/c/m/'))(t.img)}')"><i>#1 &middot; ${qp(t)}% match</i></div><h2>${t.n}</h2><div class="meta">${t.r.replace(/ · /g,', ')}${t.p?` &middot; <b>${t.p}</b> median ${t.pk=='home'?'sale':t.pk||'house'}${t.pc?` &middot; ${t.pc} condo`:''}`:''}</div>
  ${w.length?`<ul class="qwhy">${w.map(x=>`<li>${x}</li>`).join('')}</ul>`:'<div style="height:14px"></div>'}<a class="go" href="towns/${t.id}.html">Explore ${t.n.replace(/ \(.*\)/,'')}</a></div>
  <h4>Also on your list</h4>
  ${L5.slice(1).map((t,i)=>`<a class="t5r" data-id="${t.id}" href="towns/${t.id}.html"><i>${i+2}</i><span class="ph" style="background-image:url('${(u=>u.replace(/^img\/c\/(?!s\/|m\/|t\/)/,'img/c/s/'))(t.img)}')"></span><span><b>${t.n}</b><small>${t.r.replace(/ · /g,', ')}${t.p?' &middot; '+t.p:''}</small>${(qWhy(t,1)[0]?`<small class="y">${qWhy(t,1)[0]}</small>`:'')}</span></a>`).join('')}

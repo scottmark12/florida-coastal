@@ -8,7 +8,7 @@ const FULL=u=>u.replace(/\/[tms]\/([^/]+)$/,'/$1');
 const E=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 document.getElementById('tr').innerHTML=top.map((x,i)=>{const t=TD[x.id];return `<section class="sl"><div class="im" ${i?`data-bg="${t.img}"`:`style="background-image:url('${FULL(t.img)}')"`}></div><div class="ov"></div>
 <div class="tx"><div class="k">${i?`#${i+1} of ${top.length}`:'Your #1 match'} &middot; ${x.fit}% match</div><h2 class="rt">${E(t.n)}</h2>
-<div class="rg">${E(t.r.replace(/ · /g,', '))}${t.p?` &middot; <b>${E(t.p)}</b> typical home`:''}</div><p>${E(t.b)}</p>
+<div class="rg">${E(t.r.replace(/ · /g,', '))}${t.p?` &middot; <b>${E(t.p)}</b> median ${t.pk=='home'?'sale':t.pk||'house'}${t.pc?` &middot; ${E(t.pc)} condo`:''}${t.pf?' (few sales)':''}`:''}</div><p>${E(t.b)}</p>
 ${x.why&&x.why.length?`<div class="why"><span>Fits what you asked for</span>${x.why.map(E).join(' · ')}</div>`:''}
 <div class="bt"><a class="go" href="towns/${x.id}.html">Explore ${E(t.n.replace(/ \(.*\)$/,''))}</a><a class="gh" href="#short">Email me all ${top.length}</a></div></div></section>`}).join('');
 document.getElementById('dt').innerHTML=top.map(()=>'<i></i>').join('');

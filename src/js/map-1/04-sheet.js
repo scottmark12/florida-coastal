@@ -48,7 +48,7 @@ function whyOf(t){return slWhy(t)}
 const slEnds=k=>{const w=k=='pace'?LK.PACE2:LK.SL_WORDS[k];return w?`<div class="sl-ends" aria-hidden="true"><span>${w[0]}</span><span>${w[4]}</span></div>`:''};
 const SNAP=[0,33,67,100],SNAPI=v=>Math.max(0,Math.min(3,Math.round(v*3/100)));
 const SLINFO={pace:"Ranks towns on traffic, visitor crowds and noise, with 2020 Census population breaking ties. Slide left for the quietest towns, right for the most going on.",
-bud:"We match your range to typical home prices in each town. Towns inside your range get full credit and lose ground for every step pricier. It's a guide to what's typical, not a search of homes for sale.",
+bud:"We match your range to recorded sale prices in each town (houses, or condos where they cost less). Towns inside your range get full credit and lose ground for every step pricier. It's a guide to what's typical, not a search of homes for sale.",
 beach:"Our Best Beaches score ranks the top 30: sand whiteness, water clarity, beach weather, crowds and shore snorkeling, from satellite and NOAA data. The rest follow on public beach access and sand and water quality.",
 charm:"Our local call, scored the same way for every town: a real historic downtown, local spots instead of chains, no wall of condo towers, an old waterfront, older buildings still standing and well kept streets. National Register listings and map data break ties.",
 water:"Counts marinas, boat ramps and docks nearby. Towns with residential canals, a dock out back, are top tier.",

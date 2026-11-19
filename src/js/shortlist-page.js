@@ -1,6 +1,6 @@
 /* /shortlist: the saved towns (Nov 19 2026, preview, calm pass).
    Phones: swipeable town cards. Desktop: a side by side table.
-   One price per town (typical home), a heart for "love", remove behind a small menu.
+   One price per town (median recorded sale: house, with condos beside it when known), a heart for "love", remove behind a small menu.
    Reads this browser's Shortlist (FCS) and, when the link has ?t=id:l,id, the towns someone shared.
    Uses T (towns.json) and D (compare-d.json). */
 (function () {
@@ -53,7 +53,7 @@
       document.getElementById('sl-more').innerHTML = ''; return;
     }
     var budget = null; try { budget = BUD[localStorage.getItem('fc-sl-budget')] || null; } catch (e) {}
-    function fits(t) { var v = k(t.d.pr); return budget && v != null && v >= budget[0] && v < budget[1]; }
+    function fits(t) { var v = Math.min.apply(null, (String(t.d.pr || '').match(/\$[\d.]+\s*[KM]/gi) || []).map(k).concat([Infinity])); if (v === Infinity) v = null; return budget && v != null && v >= budget[0] && v < budget[1]; }
     function heart(t) {
       var on = viewShared ? FCS.has(t.id) : true;
       return '<button type="button" class="sl-hb' + (on ? ' on' : '') + '" ' + (viewShared ? 'data-save' : 'data-unsave') + '="' + esc(t.id) + '" aria-pressed="' + on + '" aria-label="' + (on ? 'Saved: ' : 'Save ') + esc(short(t.name)) + '">' + HEART + '</button>';
@@ -74,8 +74,8 @@
       P.forEach(function (r) { var m = Infinity; items.forEach(function (t) { var v = t.d.rk && t.d.rk[r[0]]; if (v != null && v < m) m = v; }); bestRow[r[0]] = m; });
       h = '<div class="sl-scroll"><div class="sl-t" style="--n:' + n + '"><div class="sl-lab sl-corner"></div>';
       items.forEach(function (t) { h += '<div class="sl-c sl-head"><div class="sl-pw">' + photo(t) + '</div><div class="sl-nr"><a class="sl-n" href="towns/' + esc(t.id) + '.html">' + esc(short(t.name)) + '</a>' + menu(t) + '</div><span class="sl-rg">' + esc(t.region) + '</span></div>'; });
-      h += '<div class="sl-lab">Typical home</div>';
-      items.forEach(function (t) { h += '<div class="sl-c sl-pr"><b>' + esc(t.d.pr || '·') + '</b></div>'; });
+      h += '<div class="sl-lab">Median sale</div>';
+      items.forEach(function (t) { var pp = String(t.d.pr || '·').split(' · '); h += '<div class="sl-c sl-pr"><b>' + esc(pp[0]) + '</b>' + (pp[1] ? '<small>' + esc(pp[1]) + '</small>' : '') + '</div>'; });
       (showAll ? P : P.slice(0, 4)).forEach(function (r) {
         h += '<div class="sl-lab">' + r[1] + '</div>';
         items.forEach(function (t) { var v = t.d.rk && t.d.rk[r[0]], top = v != null && v === bestRow[r[0]] && n > 1 && v <= BESTMAX; h += '<div class="sl-c' + (top ? ' sl-top' : '') + '">' + (v != null ? '#' + v + '<small> of ' + N + '</small>' + (top ? '<em>Best</em>' : '') : '·') + '</div>'; });

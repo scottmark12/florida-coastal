@@ -32,8 +32,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 915,
-  "g": "emerald-coast"
+  "m": 1100,
+  "g": "emerald-coast",
+  "mk": "condo",
+  "mh": 1965,
+  "mc": 1100
  },
  "destin": {
   "s": {
@@ -68,8 +71,9 @@
    "house": 3,
    "dock": 3
   },
-  "m": 540,
-  "g": "emerald-coast"
+  "m": 574,
+  "g": "emerald-coast",
+  "mk": "home"
  },
  "pcb": {
   "s": {
@@ -104,8 +108,11 @@
    "house": 3,
    "dock": 2
   },
-  "m": 485,
-  "g": "emerald-coast"
+  "m": 345,
+  "g": "emerald-coast",
+  "mk": "condo",
+  "mh": 386,
+  "mc": 345
  },
  "apalachicola": {
   "s": {
@@ -140,8 +147,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 342,
-  "g": "forgotten-coast"
+  "m": 350,
+  "g": "forgotten-coast",
+  "mk": "house",
+  "mh": 350
  },
  "cedarkey": {
   "s": {
@@ -176,8 +185,11 @@
    "house": 3,
    "dock": 2
   },
-  "m": 322,
-  "g": "nature-coast"
+  "m": 275,
+  "g": "nature-coast",
+  "mk": "condo",
+  "mh": 375,
+  "mc": 275
  },
  "dunedin": {
   "s": {
@@ -212,8 +224,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 475,
-  "g": "st-pete-clearwater"
+  "m": 195,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mh": 550,
+  "mc": 195
  },
  "clearwaterbeach": {
   "s": {
@@ -248,8 +263,9 @@
    "house": 2,
    "dock": 3
   },
-  "m": 525,
-  "g": "st-pete-clearwater"
+  "m": 832,
+  "g": "st-pete-clearwater",
+  "mk": "home"
  },
  "gulfport": {
   "s": {
@@ -284,8 +300,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 400,
-  "g": "st-pete-clearwater"
+  "m": 245,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mh": 450,
+  "mc": 245
  },
  "ami": {
   "s": {
@@ -320,8 +339,9 @@
    "house": 4,
    "dock": 4
   },
-  "m": 1150,
-  "g": "sarasota-bradenton"
+  "m": 1138,
+  "g": "sarasota-bradenton",
+  "mk": "home"
  },
  "longboat": {
   "s": {
@@ -356,8 +376,11 @@
    "house": 2,
    "dock": 3
   },
-  "m": 878,
-  "g": "sarasota-bradenton"
+  "m": 850,
+  "g": "sarasota-bradenton",
+  "mk": "condo",
+  "mh": 2100,
+  "mc": 850
  },
  "captiva": {
   "s": {
@@ -392,8 +415,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 1195,
-  "g": "fort-myers-sanibel"
+  "m": 642,
+  "g": "fort-myers-sanibel",
+  "mk": "condo",
+  "mh": 2275,
+  "mc": 642
  },
  "matlacha": {
   "s": {
@@ -428,8 +454,10 @@
    "house": 3,
    "dock": 5
   },
-  "m": 495,
-  "g": "fort-myers-sanibel"
+  "m": 455,
+  "g": "fort-myers-sanibel",
+  "mk": "house",
+  "mh": 455
  },
  "naples": {
   "s": {
@@ -464,8 +492,10 @@
    "house": 4,
    "dock": 3
   },
-  "m": 685,
-  "g": "naples-marco"
+  "m": 5025,
+  "g": "naples-marco",
+  "mk": "house",
+  "mh": 5025
  },
  "keywest": {
   "s": {
@@ -500,8 +530,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 1050,
-  "g": "florida-keys"
+  "m": 690,
+  "g": "florida-keys",
+  "mk": "condo",
+  "mh": 1600,
+  "mc": 690
  },
  "islamorada": {
   "s": {
@@ -536,8 +569,11 @@
    "house": 4,
    "dock": 4
   },
-  "m": 1100,
-  "g": "florida-keys"
+  "m": 490,
+  "g": "florida-keys",
+  "mk": "condo",
+  "mh": 1798,
+  "mc": 490
  },
  "southbeach": {
   "s": {
@@ -572,8 +608,9 @@
    "house": 1,
    "dock": 1
   },
-  "m": 600,
-  "g": "miami-fort-lauderdale"
+  "m": 400,
+  "g": "miami-fort-lauderdale",
+  "mk": "home"
  },
  "ftl": {
   "s": {
@@ -608,8 +645,11 @@
    "house": 4,
    "dock": 4
   },
-  "m": 605,
-  "g": "miami-fort-lauderdale"
+  "m": 460,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mh": 735,
+  "mc": 460
  },
  "delray": {
   "s": {
@@ -644,8 +684,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 768,
-  "g": "palm-beaches"
+  "m": 775,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 775
  },
  "jupiter": {
   "s": {
@@ -680,8 +722,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 700,
-  "g": "palm-beaches"
+  "m": 440,
+  "g": "palm-beaches",
+  "mk": "condo",
+  "mh": 1100,
+  "mc": 440
  },
  "fortpierce": {
   "s": {
@@ -716,8 +761,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 280,
-  "g": "treasure-coast"
+  "m": 199,
+  "g": "treasure-coast",
+  "mk": "condo",
+  "mh": 263,
+  "mc": 199
  },
  "cocoa": {
   "s": {
@@ -752,8 +800,11 @@
    "house": 3,
    "dock": 3
   },
-  "m": 469,
-  "g": "space-coast"
+  "m": 350,
+  "g": "space-coast",
+  "mk": "condo",
+  "mh": 770,
+  "mc": 350
  },
  "nsb": {
   "s": {
@@ -788,8 +839,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 421,
-  "g": "daytona-flagler"
+  "m": 425,
+  "g": "daytona-flagler",
+  "mk": "condo",
+  "mh": 460,
+  "mc": 425
  },
  "daytona": {
   "s": {
@@ -824,8 +878,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 322,
-  "g": "daytona-flagler"
+  "m": 140,
+  "g": "daytona-flagler",
+  "mk": "condo",
+  "mh": 348,
+  "mc": 140
  },
  "flagler": {
   "s": {
@@ -860,8 +917,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 375,
-  "g": "daytona-flagler"
+  "m": 285,
+  "g": "daytona-flagler",
+  "mk": "condo",
+  "mh": 504,
+  "mc": 285
  },
  "staug": {
   "s": {
@@ -896,8 +956,9 @@
    "house": 4,
    "dock": 2
   },
-  "m": 477,
-  "g": "first-coast"
+  "m": 517,
+  "g": "first-coast",
+  "mk": "home"
  },
  "jaxbeach": {
   "s": {
@@ -932,8 +993,11 @@
    "house": 4,
    "dock": 1
   },
-  "m": 660,
-  "g": "first-coast"
+  "m": 485,
+  "g": "first-coast",
+  "mk": "condo",
+  "mh": 655,
+  "mc": 485
  },
  "fernandina": {
   "s": {
@@ -968,8 +1032,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 611,
-  "g": "first-coast"
+  "m": 658,
+  "g": "first-coast",
+  "mk": "house",
+  "mh": 658
  },
  "carrabelle": {
   "s": {
@@ -1004,8 +1070,9 @@
    "house": 4,
    "dock": 2
   },
-  "m": 260,
-  "g": "forgotten-coast"
+  "m": 254,
+  "g": "forgotten-coast",
+  "mk": "home"
  },
  "st-george-island": {
   "s": {
@@ -1040,8 +1107,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 1100,
-  "g": "forgotten-coast"
+  "m": 1025,
+  "g": "forgotten-coast",
+  "mk": "house",
+  "mh": 1025
  },
  "st-teresa": {
   "s": {
@@ -1076,8 +1145,10 @@
    "house": 4,
    "dock": 1
   },
-  "m": null,
-  "g": "forgotten-coast"
+  "m": 850,
+  "g": "forgotten-coast",
+  "mk": "house",
+  "mh": 850
  },
  "st-marks": {
   "s": {
@@ -1112,8 +1183,10 @@
    "house": 4,
    "dock": 3
   },
-  "m": 219,
-  "g": "forgotten-coast"
+  "m": 310,
+  "g": "forgotten-coast",
+  "mk": "house",
+  "mh": 310
  },
  "panama-city": {
   "s": {
@@ -1148,8 +1221,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 270,
-  "g": "emerald-coast"
+  "m": 185,
+  "g": "emerald-coast",
+  "mk": "condo",
+  "mh": 285,
+  "mc": 185
  },
  "pensacola": {
   "s": {
@@ -1184,8 +1260,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 367,
-  "g": "emerald-coast"
+  "m": 169,
+  "g": "emerald-coast",
+  "mk": "condo",
+  "mh": 345,
+  "mc": 169
  },
  "pensacola-beach": {
   "s": {
@@ -1220,8 +1299,9 @@
    "house": 3,
    "dock": 3
   },
-  "m": 775,
-  "g": "emerald-coast"
+  "m": 778,
+  "g": "emerald-coast",
+  "mk": "home"
  },
  "navarre-beach": {
   "s": {
@@ -1256,8 +1336,9 @@
    "house": 2,
    "dock": 2
   },
-  "m": 880,
-  "g": "emerald-coast"
+  "m": 779,
+  "g": "emerald-coast",
+  "mk": "home"
  },
  "perdido-key": {
   "s": {
@@ -1292,8 +1373,9 @@
    "house": 2,
    "dock": 2
   },
-  "m": 591,
-  "g": "emerald-coast"
+  "m": 537,
+  "g": "emerald-coast",
+  "mk": "home"
  },
  "gulf-breeze": {
   "s": {
@@ -1328,8 +1410,11 @@
    "house": 5,
    "dock": 3
   },
-  "m": 479,
-  "g": "emerald-coast"
+  "m": 272,
+  "g": "emerald-coast",
+  "mk": "condo",
+  "mh": 852,
+  "mc": 272
  },
  "port-st-joe": {
   "s": {
@@ -1364,8 +1449,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 440,
-  "g": "forgotten-coast"
+  "m": 425,
+  "g": "forgotten-coast",
+  "mk": "house",
+  "mh": 425
  },
  "crystal-river": {
   "s": {
@@ -1400,8 +1487,10 @@
    "house": 4,
    "dock": 4
   },
-  "m": 272,
-  "g": "nature-coast"
+  "m": 484,
+  "g": "nature-coast",
+  "mk": "house",
+  "mh": 484
  },
  "homosassa": {
   "s": {
@@ -1436,8 +1525,10 @@
    "house": 4,
    "dock": 4
   },
-  "m": 355,
-  "g": "nature-coast"
+  "m": 443,
+  "g": "nature-coast",
+  "mk": "house",
+  "mh": 443
  },
  "ozello": {
   "s": {
@@ -1472,8 +1563,10 @@
    "house": 3,
    "dock": 4
   },
-  "m": 231,
-  "g": "nature-coast"
+  "m": 445,
+  "g": "nature-coast",
+  "mk": "house",
+  "mh": 445
  },
  "steinhatchee": {
   "s": {
@@ -1508,8 +1601,10 @@
    "house": 4,
    "dock": 3
   },
-  "m": 285,
-  "g": "nature-coast"
+  "m": 350,
+  "g": "nature-coast",
+  "mk": "house",
+  "mh": 350
  },
  "apollo-beach": {
   "s": {
@@ -1544,8 +1639,10 @@
    "house": 4,
    "dock": 4
   },
-  "m": 420,
-  "g": "tampa-south-shore"
+  "m": 459,
+  "g": "tampa-south-shore",
+  "mk": "house",
+  "mh": 459
  },
  "clearwater": {
   "s": {
@@ -1580,8 +1677,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 313,
-  "g": "st-pete-clearwater"
+  "m": 440,
+  "g": "st-pete-clearwater",
+  "mk": "house",
+  "mh": 440
  },
  "indian-rocks-beach": {
   "s": {
@@ -1616,8 +1715,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 747,
-  "g": "st-pete-clearwater"
+  "m": 615,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mh": 824,
+  "mc": 615
  },
  "madeira-beach": {
   "s": {
@@ -1652,8 +1754,11 @@
    "house": 3,
    "dock": 4
   },
-  "m": 450,
-  "g": "st-pete-clearwater"
+  "m": 679,
+  "g": "st-pete-clearwater",
+  "mk": "house",
+  "mh": 679,
+  "mc": 708
  },
  "new-port-richey": {
   "s": {
@@ -1688,8 +1793,10 @@
    "house": 5,
    "dock": 2
   },
-  "m": 235,
-  "g": "st-pete-clearwater"
+  "m": 240,
+  "g": "st-pete-clearwater",
+  "mk": "house",
+  "mh": 240
  },
  "ruskin": {
   "s": {
@@ -1724,8 +1831,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 322,
-  "g": "tampa-south-shore"
+  "m": 315,
+  "g": "tampa-south-shore",
+  "mk": "house",
+  "mh": 315
  },
  "safety-harbor": {
   "s": {
@@ -1760,8 +1869,10 @@
    "house": 5,
    "dock": 1
   },
-  "m": 577,
-  "g": "st-pete-clearwater"
+  "m": 252,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mc": 252
  },
  "st-pete-beach": {
   "s": {
@@ -1796,8 +1907,11 @@
    "house": 3,
    "dock": 4
   },
-  "m": 606,
-  "g": "st-pete-clearwater"
+  "m": 490,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mh": 812,
+  "mc": 490
  },
  "st-petersburg": {
   "s": {
@@ -1832,8 +1946,11 @@
    "house": 5,
    "dock": 3
   },
-  "m": 430,
-  "g": "st-pete-clearwater"
+  "m": 305,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mh": 420,
+  "mc": 305
  },
  "sun-city-center": {
   "s": {
@@ -1868,8 +1985,11 @@
    "house": 4,
    "dock": 1
   },
-  "m": 275,
-  "g": "tampa-south-shore"
+  "m": 165,
+  "g": "tampa-south-shore",
+  "mk": "condo",
+  "mh": 319,
+  "mc": 165
  },
  "tampa": {
   "s": {
@@ -1904,8 +2024,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 479,
-  "g": "tampa-south-shore"
+  "m": 398,
+  "g": "tampa-south-shore",
+  "mk": "condo",
+  "mh": 450,
+  "mc": 398
  },
  "tarpon-springs": {
   "s": {
@@ -1940,8 +2063,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 390,
-  "g": "st-pete-clearwater"
+  "m": 199,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mh": 448,
+  "mc": 199
  },
  "treasure-island": {
   "s": {
@@ -1976,8 +2102,11 @@
    "house": 3,
    "dock": 4
   },
-  "m": 662,
-  "g": "st-pete-clearwater"
+  "m": 380,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mh": 975,
+  "mc": 380
  },
  "bradenton": {
   "s": {
@@ -2012,8 +2141,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 283,
-  "g": "sarasota-bradenton"
+  "m": 250,
+  "g": "sarasota-bradenton",
+  "mk": "condo",
+  "mh": 349,
+  "mc": 250
  },
  "bradenton-beach": {
   "s": {
@@ -2048,8 +2180,10 @@
    "house": 3,
    "dock": 3
   },
-  "m": 638,
-  "g": "sarasota-bradenton"
+  "m": 492,
+  "g": "sarasota-bradenton",
+  "mk": "condo",
+  "mc": 492
  },
  "cortez": {
   "s": {
@@ -2084,8 +2218,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 490,
-  "g": "sarasota-bradenton"
+  "m": 310,
+  "g": "sarasota-bradenton",
+  "mk": "condo",
+  "mh": 800,
+  "mc": 310
  },
  "englewood": {
   "s": {
@@ -2120,8 +2257,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 329,
-  "g": "sarasota-bradenton"
+  "m": 190,
+  "g": "sarasota-bradenton",
+  "mk": "condo",
+  "mh": 375,
+  "mc": 190
  },
  "sarasota": {
   "s": {
@@ -2156,8 +2296,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 428,
-  "g": "sarasota-bradenton"
+  "m": 548,
+  "g": "sarasota-bradenton",
+  "mk": "condo",
+  "mh": 655,
+  "mc": 548
  },
  "siesta-key": {
   "s": {
@@ -2192,8 +2335,11 @@
    "house": 3,
    "dock": 4
   },
-  "m": 809,
-  "g": "sarasota-bradenton"
+  "m": 735,
+  "g": "sarasota-bradenton",
+  "mk": "condo",
+  "mh": 1530,
+  "mc": 735
  },
  "venice": {
   "s": {
@@ -2228,8 +2374,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 384,
-  "g": "sarasota-bradenton"
+  "m": 254,
+  "g": "sarasota-bradenton",
+  "mk": "condo",
+  "mh": 495,
+  "mc": 254
  },
  "bonita-springs": {
   "s": {
@@ -2264,8 +2413,10 @@
    "house": 4,
    "dock": 3
   },
-  "m": 545,
-  "g": "fort-myers-sanibel"
+  "m": 700,
+  "g": "fort-myers-sanibel",
+  "mk": "house",
+  "mh": 700
  },
  "cape-coral": {
   "s": {
@@ -2300,8 +2451,10 @@
    "house": 5,
    "dock": 5
   },
-  "m": 380,
-  "g": "fort-myers-sanibel"
+  "m": 379,
+  "g": "fort-myers-sanibel",
+  "mk": "house",
+  "mh": 379
  },
  "chokoloskee": {
   "s": {
@@ -2336,8 +2489,10 @@
    "house": 3,
    "dock": 4
   },
-  "m": 310,
-  "g": "naples-marco"
+  "m": 360,
+  "g": "naples-marco",
+  "mk": "condo",
+  "mc": 360
  },
  "everglades-city": {
   "s": {
@@ -2372,8 +2527,9 @@
    "house": 3,
    "dock": 4
   },
-  "m": 325,
-  "g": "naples-marco"
+  "m": 250,
+  "g": "naples-marco",
+  "mk": "home"
  },
  "fort-myers": {
   "s": {
@@ -2408,8 +2564,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 325,
-  "g": "fort-myers-sanibel"
+  "m": 410,
+  "g": "fort-myers-sanibel",
+  "mk": "house",
+  "mh": 410
  },
  "fort-myers-beach": {
   "s": {
@@ -2444,8 +2602,10 @@
    "house": 3,
    "dock": 4
   },
-  "m": 492,
-  "g": "fort-myers-sanibel"
+  "m": 1075,
+  "g": "fort-myers-sanibel",
+  "mk": "house",
+  "mh": 1075
  },
  "marco-island": {
   "s": {
@@ -2480,8 +2640,10 @@
    "house": 4,
    "dock": 5
   },
-  "m": 1375,
-  "g": "naples-marco"
+  "m": 1510,
+  "g": "naples-marco",
+  "mk": "house",
+  "mh": 1510
  },
  "port-charlotte": {
   "s": {
@@ -2516,8 +2678,11 @@
    "house": 5,
    "dock": 5
   },
-  "m": 310,
-  "g": "fort-myers-sanibel"
+  "m": 122,
+  "g": "fort-myers-sanibel",
+  "mk": "condo",
+  "mh": 275,
+  "mc": 122
  },
  "punta-gorda": {
   "s": {
@@ -2552,8 +2717,11 @@
    "house": 5,
    "dock": 4
   },
-  "m": 322,
-  "g": "fort-myers-sanibel"
+  "m": 272,
+  "g": "fort-myers-sanibel",
+  "mk": "condo",
+  "mh": 588,
+  "mc": 272
  },
  "sanibel-island": {
   "s": {
@@ -2588,8 +2756,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 910,
-  "g": "fort-myers-sanibel"
+  "m": 725,
+  "g": "fort-myers-sanibel",
+  "mk": "condo",
+  "mh": 1080,
+  "mc": 725
  },
  "key-largo": {
   "s": {
@@ -2624,8 +2795,10 @@
    "house": 4,
    "dock": 4
   },
-  "m": 985,
-  "g": "florida-keys"
+  "m": 998,
+  "g": "florida-keys",
+  "mk": "house",
+  "mh": 998
  },
  "bal-harbour": {
   "s": {
@@ -2660,8 +2833,10 @@
    "house": 1,
    "dock": 2
   },
-  "m": 1280,
-  "g": "miami-fort-lauderdale"
+  "m": 18581,
+  "g": "miami-fort-lauderdale",
+  "mk": "house",
+  "mh": 18581
  },
  "boca-raton": {
   "s": {
@@ -2696,8 +2871,10 @@
    "house": 4,
    "dock": 3
   },
-  "m": 630,
-  "g": "palm-beaches"
+  "m": 1200,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 1200
  },
  "dania-beach": {
   "s": {
@@ -2732,8 +2909,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 370,
-  "g": "miami-fort-lauderdale"
+  "m": 248,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mh": 542,
+  "mc": 248
  },
  "hallandale": {
   "s": {
@@ -2768,8 +2948,11 @@
    "house": 2,
    "dock": 2
   },
-  "m": 265,
-  "g": "miami-fort-lauderdale"
+  "m": 245,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mh": 550,
+  "mc": 245
  },
  "highland-beach": {
   "s": {
@@ -2804,8 +2987,11 @@
    "house": 2,
    "dock": 2
   },
-  "m": 930,
-  "g": "palm-beaches"
+  "m": 975,
+  "g": "palm-beaches",
+  "mk": "condo",
+  "mh": 3050,
+  "mc": 975
  },
  "hollywood": {
   "s": {
@@ -2840,8 +3026,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 502,
-  "g": "miami-fort-lauderdale"
+  "m": 270,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mh": 550,
+  "mc": 270
  },
  "lauderdale-by-the-sea": {
   "s": {
@@ -2876,8 +3065,10 @@
    "house": 3,
    "dock": 3
   },
-  "m": 629,
-  "g": "miami-fort-lauderdale"
+  "m": 435,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mc": 435
  },
  "lighthouse-point": {
   "s": {
@@ -2912,8 +3103,11 @@
    "house": 5,
    "dock": 5
   },
-  "m": 825,
-  "g": "miami-fort-lauderdale"
+  "m": 168,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mh": 1328,
+  "mc": 168
  },
  "north-miami-beach": {
   "s": {
@@ -2948,8 +3142,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 380,
-  "g": "miami-fort-lauderdale"
+  "m": 242,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mh": 505,
+  "mc": 242
  },
  "north-palm-beach": {
   "s": {
@@ -2984,8 +3181,10 @@
    "house": 4,
    "dock": 4
   },
-  "m": 445,
-  "g": "palm-beaches"
+  "m": 1142,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 1142
  },
  "palm-beach": {
   "s": {
@@ -3020,8 +3219,10 @@
    "house": 3,
    "dock": 2
   },
-  "m": 2686,
-  "g": "palm-beaches"
+  "m": 13500,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 13500
  },
  "palm-beach-gardens": {
   "s": {
@@ -3056,8 +3257,10 @@
    "house": 5,
    "dock": 2
   },
-  "m": 730,
-  "g": "palm-beaches"
+  "m": 900,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 900
  },
  "riviera-beach": {
   "s": {
@@ -3092,8 +3295,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 424,
-  "g": "palm-beaches"
+  "m": 360,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 360
  },
  "sunny-isles-beach": {
   "s": {
@@ -3128,8 +3333,10 @@
    "house": 1,
    "dock": 1
   },
-  "m": 680,
-  "g": "miami-fort-lauderdale"
+  "m": 2250,
+  "g": "miami-fort-lauderdale",
+  "mk": "house",
+  "mh": 2250
  },
  "west-palm-beach": {
   "s": {
@@ -3164,8 +3371,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 405,
-  "g": "palm-beaches"
+  "m": 602,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 602
  },
  "wilton-manors": {
   "s": {
@@ -3200,8 +3409,11 @@
    "house": 5,
    "dock": 3
   },
-  "m": 653,
-  "g": "miami-fort-lauderdale"
+  "m": 276,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mh": 794,
+  "mc": 276
  },
  "jensen-beach": {
   "s": {
@@ -3236,8 +3448,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 395,
-  "g": "treasure-coast"
+  "m": 168,
+  "g": "treasure-coast",
+  "mk": "condo",
+  "mh": 433,
+  "mc": 168
  },
  "port-st-lucie": {
   "s": {
@@ -3272,8 +3487,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 395,
-  "g": "treasure-coast"
+  "m": 170,
+  "g": "treasure-coast",
+  "mk": "condo",
+  "mh": 400,
+  "mc": 170
  },
  "sebastian": {
   "s": {
@@ -3308,8 +3526,10 @@
    "house": 5,
    "dock": 2
   },
-  "m": 358,
-  "g": "treasure-coast"
+  "m": 352,
+  "g": "treasure-coast",
+  "mk": "house",
+  "mh": 352
  },
  "stuart": {
   "s": {
@@ -3344,8 +3564,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 380,
-  "g": "treasure-coast"
+  "m": 184,
+  "g": "treasure-coast",
+  "mk": "condo",
+  "mh": 452,
+  "mc": 184
  },
  "vero-beach": {
   "s": {
@@ -3380,8 +3603,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 390,
-  "g": "treasure-coast"
+  "m": 267,
+  "g": "treasure-coast",
+  "mk": "condo",
+  "mh": 605,
+  "mc": 267
  },
  "indialantic": {
   "s": {
@@ -3416,8 +3642,10 @@
    "house": 5,
    "dock": 1
   },
-  "m": 763,
-  "g": "space-coast"
+  "m": 691,
+  "g": "space-coast",
+  "mk": "house",
+  "mh": 691
  },
  "melbourne-beach": {
   "s": {
@@ -3452,8 +3680,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 659,
-  "g": "space-coast"
+  "m": 849,
+  "g": "space-coast",
+  "mk": "house",
+  "mh": 849
  },
  "palm-bay": {
   "s": {
@@ -3488,8 +3718,11 @@
    "house": 5,
    "dock": 1
   },
-  "m": 330,
-  "g": "space-coast"
+  "m": 132,
+  "g": "space-coast",
+  "mk": "condo",
+  "mh": 310,
+  "mc": 132
  },
  "satellite-beach": {
   "s": {
@@ -3524,8 +3757,11 @@
    "house": 5,
    "dock": 3
   },
-  "m": 575,
-  "g": "space-coast"
+  "m": 510,
+  "g": "space-coast",
+  "mk": "condo",
+  "mh": 522,
+  "mc": 510
  },
  "titusville": {
   "s": {
@@ -3560,8 +3796,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 283,
-  "g": "space-coast"
+  "m": 152,
+  "g": "space-coast",
+  "mk": "condo",
+  "mh": 282,
+  "mc": 152
  },
  "west-melbourne": {
   "s": {
@@ -3596,8 +3835,11 @@
    "house": 5,
    "dock": 1
   },
-  "m": 420,
-  "g": "space-coast"
+  "m": 191,
+  "g": "space-coast",
+  "mk": "condo",
+  "mh": 400,
+  "mc": 191
  },
  "atlantic-beach": {
   "s": {
@@ -3632,8 +3874,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 630,
-  "g": "first-coast"
+  "m": 470,
+  "g": "first-coast",
+  "mk": "condo",
+  "mh": 725,
+  "mc": 470
  },
  "neptune-beach": {
   "s": {
@@ -3668,8 +3913,10 @@
    "house": 5,
    "dock": 1
   },
-  "m": 825,
-  "g": "first-coast"
+  "m": 780,
+  "g": "first-coast",
+  "mk": "house",
+  "mh": 780
  },
  "ponte-vedra-beach": {
   "s": {
@@ -3704,8 +3951,9 @@
    "house": 5,
    "dock": 2
   },
-  "m": 670,
-  "g": "first-coast"
+  "m": 1560,
+  "g": "first-coast",
+  "mk": "home"
  },
  "st-augustine-beach": {
   "s": {
@@ -3740,8 +3988,9 @@
    "house": 4,
    "dock": 1
   },
-  "m": 604,
-  "g": "first-coast"
+  "m": 625,
+  "g": "first-coast",
+  "mk": "home"
  },
  "daytona-beach-shores": {
   "s": {
@@ -3776,8 +4025,9 @@
    "house": 2,
    "dock": 2
   },
-  "m": 435,
-  "g": "daytona-flagler"
+  "m": 375,
+  "g": "daytona-flagler",
+  "mk": "home"
  },
  "ormond-beach": {
   "s": {
@@ -3812,8 +4062,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 380,
-  "g": "daytona-flagler"
+  "m": 260,
+  "g": "daytona-flagler",
+  "mk": "condo",
+  "mh": 396,
+  "mc": 260
  },
  "palm-coast": {
   "s": {
@@ -3848,8 +4101,11 @@
    "house": 5,
    "dock": 3
   },
-  "m": 350,
-  "g": "daytona-flagler"
+  "m": 232,
+  "g": "daytona-flagler",
+  "mk": "condo",
+  "mh": 354,
+  "mc": 232
  },
  "port-orange": {
   "s": {
@@ -3884,8 +4140,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 353,
-  "g": "daytona-flagler"
+  "m": 175,
+  "g": "daytona-flagler",
+  "mk": "condo",
+  "mh": 349,
+  "mc": 175
  },
  "navarre": {
   "s": {
@@ -3920,8 +4179,10 @@
    "house": 5,
    "dock": 2
   },
-  "m": 417,
-  "g": "emerald-coast"
+  "m": 430,
+  "g": "emerald-coast",
+  "mk": "house",
+  "mh": 430
  },
  "mary-esther": {
   "s": {
@@ -3956,8 +4217,10 @@
    "house": 5,
    "dock": 2
   },
-  "m": 324,
-  "g": "emerald-coast"
+  "m": 107,
+  "g": "emerald-coast",
+  "mk": "condo",
+  "mc": 107
  },
  "fort-walton-beach": {
   "s": {
@@ -3992,8 +4255,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 319,
-  "g": "emerald-coast"
+  "m": 183,
+  "g": "emerald-coast",
+  "mk": "condo",
+  "mh": 350,
+  "mc": 183
  },
  "shalimar": {
   "s": {
@@ -4028,8 +4294,10 @@
    "house": 4,
    "dock": 3
   },
-  "m": 522,
-  "g": "emerald-coast"
+  "m": 525,
+  "g": "emerald-coast",
+  "mk": "house",
+  "mh": 525
  },
  "niceville": {
   "s": {
@@ -4065,7 +4333,9 @@
    "dock": 3
   },
   "m": 435,
-  "g": "emerald-coast"
+  "g": "emerald-coast",
+  "mk": "house",
+  "mh": 435
  },
  "miramar-beach": {
   "s": {
@@ -4100,8 +4370,11 @@
    "house": 3,
    "dock": 2
   },
-  "m": 778,
-  "g": "emerald-coast"
+  "m": 551,
+  "g": "emerald-coast",
+  "mk": "condo",
+  "mh": 1060,
+  "mc": 551
  },
  "freeport": {
   "s": {
@@ -4136,8 +4409,10 @@
    "house": 5,
    "dock": 2
   },
-  "m": 389,
-  "g": "emerald-coast"
+  "m": 355,
+  "g": "emerald-coast",
+  "mk": "house",
+  "mh": 355
  },
  "mexico-beach": {
   "s": {
@@ -4172,8 +4447,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 550,
-  "g": "forgotten-coast"
+  "m": 400,
+  "g": "forgotten-coast",
+  "mk": "condo",
+  "mh": 460,
+  "mc": 400
  },
  "keaton-beach": {
   "s": {
@@ -4208,8 +4486,10 @@
    "house": 3,
    "dock": 4
   },
-  "m": null,
-  "g": "nature-coast"
+  "m": 414,
+  "g": "nature-coast",
+  "mk": "house",
+  "mh": 414
  },
  "horseshoe-beach": {
   "s": {
@@ -4244,8 +4524,11 @@
    "house": 3,
    "dock": 4
   },
-  "m": 216,
-  "g": "nature-coast"
+  "m": 209,
+  "g": "nature-coast",
+  "mk": "condo",
+  "mh": 248,
+  "mc": 209
  },
  "suwannee": {
   "s": {
@@ -4280,8 +4563,10 @@
    "house": 3,
    "dock": 5
   },
-  "m": 261,
-  "g": "nature-coast"
+  "m": 184,
+  "g": "nature-coast",
+  "mk": "condo",
+  "mc": 184
  },
  "yankeetown": {
   "s": {
@@ -4316,8 +4601,10 @@
    "house": 4,
    "dock": 3
   },
-  "m": 254,
-  "g": "nature-coast"
+  "m": 285,
+  "g": "nature-coast",
+  "mk": "house",
+  "mh": 285
  },
  "inglis": {
   "s": {
@@ -4352,8 +4639,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 292,
-  "g": "nature-coast"
+  "m": 275,
+  "g": "nature-coast",
+  "mk": "house",
+  "mh": 275
  },
  "hernando-beach": {
   "s": {
@@ -4388,8 +4677,10 @@
    "house": 4,
    "dock": 5
   },
-  "m": 488,
-  "g": "nature-coast"
+  "m": 547,
+  "g": "nature-coast",
+  "mk": "house",
+  "mh": 547
  },
  "weeki-wachee": {
   "s": {
@@ -4424,8 +4715,9 @@
    "house": 5,
    "dock": 2
   },
-  "m": 341,
-  "g": "nature-coast"
+  "m": 362,
+  "g": "nature-coast",
+  "mk": "home"
  },
  "aripeka": {
   "s": {
@@ -4460,8 +4752,10 @@
    "house": 3,
    "dock": 3
   },
-  "m": 500,
-  "g": "nature-coast"
+  "m": 130,
+  "g": "nature-coast",
+  "mk": "house",
+  "mh": 130
  },
  "hudson": {
   "s": {
@@ -4496,8 +4790,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 286,
-  "g": "nature-coast"
+  "m": 215,
+  "g": "nature-coast",
+  "mk": "condo",
+  "mh": 300,
+  "mc": 215
  },
  "port-richey": {
   "s": {
@@ -4532,8 +4829,9 @@
    "house": 4,
    "dock": 3
   },
-  "m": 222,
-  "g": "st-pete-clearwater"
+  "m": 235,
+  "g": "st-pete-clearwater",
+  "mk": "home"
  },
  "holiday": {
   "s": {
@@ -4568,8 +4866,9 @@
    "house": 5,
    "dock": 2
   },
-  "m": 229,
-  "g": "st-pete-clearwater"
+  "m": 221,
+  "g": "st-pete-clearwater",
+  "mk": "home"
  },
  "palm-harbor": {
   "s": {
@@ -4604,8 +4903,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 365,
-  "g": "st-pete-clearwater"
+  "m": 194,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mh": 450,
+  "mc": 194
  },
  "oldsmar": {
   "s": {
@@ -4640,8 +4942,10 @@
    "house": 5,
    "dock": 1
   },
-  "m": 361,
-  "g": "st-pete-clearwater"
+  "m": 422,
+  "g": "st-pete-clearwater",
+  "mk": "house",
+  "mh": 422
  },
  "belleair-beach": {
   "s": {
@@ -4676,8 +4980,10 @@
    "house": 5,
    "dock": 4
   },
-  "m": 850,
-  "g": "st-pete-clearwater"
+  "m": 901,
+  "g": "st-pete-clearwater",
+  "mk": "house",
+  "mh": 901
  },
  "tierra-verde": {
   "s": {
@@ -4712,8 +5018,11 @@
    "house": 4,
    "dock": 5
   },
-  "m": 840,
-  "g": "st-pete-clearwater"
+  "m": 675,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mh": 990,
+  "mc": 675
  },
  "indian-shores": {
   "s": {
@@ -4748,8 +5057,10 @@
    "house": 2,
    "dock": 3
   },
-  "m": 650,
-  "g": "st-pete-clearwater"
+  "m": 670,
+  "g": "st-pete-clearwater",
+  "mk": "condo",
+  "mc": 670
  },
  "redington-shores": {
   "s": {
@@ -4784,8 +5095,11 @@
    "house": 3,
    "dock": 3
   },
-  "m": 625,
-  "g": "st-pete-clearwater"
+  "m": 650,
+  "g": "st-pete-clearwater",
+  "mk": "house",
+  "mh": 650,
+  "mc": 730
  },
  "gibsonton": {
   "s": {
@@ -4820,8 +5134,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 415,
-  "g": "tampa-south-shore"
+  "m": 325,
+  "g": "tampa-south-shore",
+  "mk": "house",
+  "mh": 325
  },
  "miami": {
   "s": {
@@ -4856,8 +5172,10 @@
    "house": 3,
    "dock": 2
   },
-  "m": 570,
-  "g": "miami-fort-lauderdale"
+  "m": 625,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mc": 625
  },
  "jacksonville": {
   "s": {
@@ -4892,8 +5210,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 285,
-  "g": "first-coast"
+  "m": 170,
+  "g": "first-coast",
+  "mk": "condo",
+  "mh": 290,
+  "mc": 170
  },
  "indian-river-shores": {
   "s": {
@@ -4928,8 +5249,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 1380,
-  "g": "treasure-coast"
+  "m": 525,
+  "g": "treasure-coast",
+  "mk": "condo",
+  "mh": 1980,
+  "mc": 525
  },
  "hutchinson-island": {
   "s": {
@@ -4964,8 +5288,9 @@
    "house": 2,
    "dock": 2
   },
-  "m": 537,
-  "g": "treasure-coast"
+  "m": 492,
+  "g": "treasure-coast",
+  "mk": "home"
  },
  "sewalls-point": {
   "s": {
@@ -5000,8 +5325,10 @@
    "house": 4,
    "dock": 4
   },
-  "m": 2200,
-  "g": "treasure-coast"
+  "m": 1500,
+  "g": "treasure-coast",
+  "mk": "house",
+  "mh": 1500
  },
  "palm-city": {
   "s": {
@@ -5036,8 +5363,10 @@
    "house": 5,
    "dock": 3
   },
-  "m": 585,
-  "g": "treasure-coast"
+  "m": 578,
+  "g": "treasure-coast",
+  "mk": "house",
+  "mh": 578
  },
  "port-salerno": {
   "s": {
@@ -5072,8 +5401,10 @@
    "house": 4,
    "dock": 3
   },
-  "m": 392,
-  "g": "treasure-coast"
+  "m": 394,
+  "g": "treasure-coast",
+  "mk": "house",
+  "mh": 394
  },
  "hobe-sound": {
   "s": {
@@ -5108,8 +5439,11 @@
    "house": 4,
    "dock": 2
   },
-  "m": 515,
-  "g": "treasure-coast"
+  "m": 240,
+  "g": "treasure-coast",
+  "mk": "condo",
+  "mh": 525,
+  "mc": 240
  },
  "tequesta": {
   "s": {
@@ -5144,8 +5478,10 @@
    "house": 4,
    "dock": 3
   },
-  "m": 652,
-  "g": "palm-beaches"
+  "m": 340,
+  "g": "palm-beaches",
+  "mk": "condo",
+  "mc": 340
  },
  "juno-beach": {
   "s": {
@@ -5180,8 +5516,10 @@
    "house": 3,
    "dock": 1
   },
-  "m": 831,
-  "g": "palm-beaches"
+  "m": 650,
+  "g": "palm-beaches",
+  "mk": "condo",
+  "mc": 650
  },
  "lake-park": {
   "s": {
@@ -5216,8 +5554,10 @@
    "house": 4,
    "dock": 1
   },
-  "m": 480,
-  "g": "palm-beaches"
+  "m": 450,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 450
  },
  "palm-beach-shores": {
   "s": {
@@ -5252,8 +5592,10 @@
    "house": 2,
    "dock": 3
   },
-  "m": 879,
-  "g": "palm-beaches"
+  "m": 1371,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 1371
  },
  "lake-worth-beach": {
   "s": {
@@ -5288,8 +5630,10 @@
    "house": 5,
    "dock": 1
   },
-  "m": 442,
-  "g": "palm-beaches"
+  "m": 465,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 465
  },
  "lantana": {
   "s": {
@@ -5324,8 +5668,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 350,
-  "g": "palm-beaches"
+  "m": 515,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 515
  },
  "boynton-beach": {
   "s": {
@@ -5360,8 +5706,10 @@
    "house": 4,
    "dock": 2
   },
-  "m": 337,
-  "g": "palm-beaches"
+  "m": 435,
+  "g": "palm-beaches",
+  "mk": "house",
+  "mh": 435
  },
  "vilano-beach": {
   "s": {
@@ -5396,8 +5744,9 @@
    "house": 4,
    "dock": 2
   },
-  "m": 667,
-  "g": "first-coast"
+  "m": 701,
+  "g": "first-coast",
+  "mk": "home"
  },
  "crescent-beach": {
   "s": {
@@ -5432,8 +5781,9 @@
    "house": 4,
    "dock": 2
   },
-  "m": 440,
-  "g": "first-coast"
+  "m": 535,
+  "g": "first-coast",
+  "mk": "home"
  },
  "beverly-beach": {
   "s": {
@@ -5468,8 +5818,11 @@
    "house": 3,
    "dock": 3
   },
-  "m": 745,
-  "g": "daytona-flagler"
+  "m": 685,
+  "g": "daytona-flagler",
+  "mk": "condo",
+  "mh": 904,
+  "mc": 685
  },
  "ormond-by-the-sea": {
   "s": {
@@ -5504,8 +5857,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 343,
-  "g": "daytona-flagler"
+  "m": 276,
+  "g": "daytona-flagler",
+  "mk": "condo",
+  "mh": 394,
+  "mc": 276
  },
  "ponce-inlet": {
   "s": {
@@ -5540,8 +5896,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 521,
-  "g": "daytona-flagler"
+  "m": 480,
+  "g": "daytona-flagler",
+  "mk": "condo",
+  "mh": 955,
+  "mc": 480
  },
  "edgewater": {
   "s": {
@@ -5576,8 +5935,10 @@
    "house": 5,
    "dock": 2
   },
-  "m": 318,
-  "g": "daytona-flagler"
+  "m": 300,
+  "g": "daytona-flagler",
+  "mk": "house",
+  "mh": 300
  },
  "cape-canaveral": {
   "s": {
@@ -5612,8 +5973,11 @@
    "house": 2,
    "dock": 1
   },
-  "m": 315,
-  "g": "space-coast"
+  "m": 287,
+  "g": "space-coast",
+  "mk": "condo",
+  "mh": 385,
+  "mc": 287
  },
  "merritt-island": {
   "s": {
@@ -5648,8 +6012,11 @@
    "house": 5,
    "dock": 4
   },
-  "m": 400,
-  "g": "space-coast"
+  "m": 175,
+  "g": "space-coast",
+  "mk": "condo",
+  "mh": 470,
+  "mc": 175
  },
  "cocoa-village": {
   "s": {
@@ -5684,8 +6051,10 @@
    "house": 4,
    "dock": 1
   },
-  "m": 290,
-  "g": "space-coast"
+  "m": 551,
+  "g": "space-coast",
+  "mk": "condo",
+  "mc": 551
  },
  "rockledge": {
   "s": {
@@ -5720,8 +6089,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 397,
-  "g": "space-coast"
+  "m": 198,
+  "g": "space-coast",
+  "mk": "condo",
+  "mh": 360,
+  "mc": 198
  },
  "indian-harbour-beach": {
   "s": {
@@ -5756,8 +6128,11 @@
    "house": 5,
    "dock": 3
   },
-  "m": 454,
-  "g": "space-coast"
+  "m": 324,
+  "g": "space-coast",
+  "mk": "condo",
+  "mh": 496,
+  "mc": 324
  },
  "melbourne": {
   "s": {
@@ -5792,8 +6167,11 @@
    "house": 5,
    "dock": 2
   },
-  "m": 350,
-  "g": "space-coast"
+  "m": 165,
+  "g": "space-coast",
+  "mk": "condo",
+  "mh": 315,
+  "mc": 165
  },
  "marathon": {
   "s": {
@@ -5828,8 +6206,9 @@
    "house": 4,
    "dock": 4
   },
-  "m": 715,
-  "g": "florida-keys"
+  "m": 980,
+  "g": "florida-keys",
+  "mk": "home"
  },
  "big-pine-key": {
   "s": {
@@ -5864,8 +6243,10 @@
    "house": 4,
    "dock": 4
   },
-  "m": 740,
-  "g": "florida-keys"
+  "m": 794,
+  "g": "florida-keys",
+  "mk": "house",
+  "mh": 794
  },
  "key-biscayne": {
   "s": {
@@ -5900,8 +6281,10 @@
    "house": 1,
    "dock": 2
   },
-  "m": 1490,
-  "g": "miami-fort-lauderdale"
+  "m": 3910,
+  "g": "miami-fort-lauderdale",
+  "mk": "house",
+  "mh": 3910
  },
  "boca-grande": {
   "s": {
@@ -5936,8 +6319,9 @@
    "house": 4,
    "dock": 3
   },
-  "m": 2425,
-  "g": "fort-myers-sanibel"
+  "m": 3700,
+  "g": "fort-myers-sanibel",
+  "mk": "home"
  },
  "pompano-beach": {
   "s": {
@@ -5972,8 +6356,11 @@
    "house": 3,
    "dock": 3
   },
-  "m": 395,
-  "g": "miami-fort-lauderdale"
+  "m": 258,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mh": 500,
+  "mc": 258
  },
  "deerfield-beach": {
   "s": {
@@ -6008,7 +6395,10 @@
    "house": 4,
    "dock": 3
   },
-  "m": 330,
-  "g": "miami-fort-lauderdale"
+  "m": 155,
+  "g": "miami-fort-lauderdale",
+  "mk": "condo",
+  "mh": 455,
+  "mc": 155
  }
 }

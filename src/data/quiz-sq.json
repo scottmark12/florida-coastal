@@ -292,7 +292,7 @@
  {
   "q": "Last one. What's your budget for a home?",
   "k": "budget",
-  "note": "We match it to typical home prices in each town.",
+  "note": "We match it to recorded sale prices in each town, on the kind of home you picture.",
   "o": [
    [
     "Under $350K",

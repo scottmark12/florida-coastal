@@ -34,7 +34,7 @@
    1,
    0
   ],
-  "med": 915,
+  "med": 1100,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": true,
@@ -86,7 +86,7 @@
    0,
    0
   ],
-  "med": 540,
+  "med": 574,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": true,
@@ -131,12 +131,12 @@
    "dining": 31
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 485,
+  "med": 345,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": false,
@@ -187,7 +187,7 @@
    0,
    0
   ],
-  "med": 342,
+  "med": 350,
   "reg": "forgotten-coast",
   "rn": "The Forgotten Coast",
   "te": false,
@@ -238,7 +238,7 @@
    0,
    0
   ],
-  "med": 322,
+  "med": 275,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -285,12 +285,12 @@
    "dining": 30
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 475,
+  "med": 195,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -337,12 +337,12 @@
    "dining": 40
   },
   "bg": [
+   3,
+   2,
    1,
-   0,
-   0,
    0
   ],
-  "med": 525,
+  "med": 832,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -388,12 +388,12 @@
    "dining": 65
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 400,
+  "med": 245,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -444,7 +444,7 @@
    1,
    0
   ],
-  "med": 1150,
+  "med": 1138,
   "reg": "sarasota-bradenton",
   "rn": "Sarasota, Bradenton and Venice",
   "te": false,
@@ -495,7 +495,7 @@
    1,
    0
   ],
-  "med": 878,
+  "med": 850,
   "reg": "sarasota-bradenton",
   "rn": "Sarasota, Bradenton and Venice",
   "te": true,
@@ -540,12 +540,12 @@
    "dining": 111
   },
   "bg": [
-   3,
    2,
    1,
+   0,
    0
   ],
-  "med": 1195,
+  "med": 642,
   "reg": "fort-myers-sanibel",
   "rn": "Fort Myers, Sanibel and Charlotte Harbor",
   "te": false,
@@ -594,7 +594,7 @@
    0,
    0
   ],
-  "med": 495,
+  "med": 455,
   "reg": "fort-myers-sanibel",
   "rn": "Fort Myers, Sanibel and Charlotte Harbor",
   "te": false,
@@ -639,12 +639,12 @@
    "dining": 6
   },
   "bg": [
+   3,
    2,
    1,
-   0,
    0
   ],
-  "med": 685,
+  "med": 5025,
   "reg": "naples-marco",
   "rn": "Naples, Marco Island and the Everglades",
   "te": true,
@@ -691,12 +691,12 @@
    "dining": 8
   },
   "bg": [
-   3,
    2,
    1,
+   0,
    0
   ],
-  "med": 1050,
+  "med": 690,
   "reg": "florida-keys",
   "rn": "The Florida Keys",
   "te": true,
@@ -743,12 +743,12 @@
    "dining": 74
   },
   "bg": [
-   3,
-   2,
    1,
+   0,
+   0,
    0
   ],
-  "med": 1100,
+  "med": 490,
   "reg": "florida-keys",
   "rn": "The Florida Keys",
   "te": true,
@@ -794,12 +794,12 @@
    "dining": 2
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 600,
+  "med": 400,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -845,12 +845,12 @@
    "dining": 10
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 605,
+  "med": 460,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -900,7 +900,7 @@
    0,
    0
   ],
-  "med": 768,
+  "med": 775,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -946,12 +946,12 @@
    "dining": 76
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 700,
+  "med": 440,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -1001,7 +1001,7 @@
    0,
    0
   ],
-  "med": 280,
+  "med": 199,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": false,
@@ -1045,12 +1045,12 @@
    "dining": 52
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 469,
+  "med": 350,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -1101,7 +1101,7 @@
    0,
    0
   ],
-  "med": 421,
+  "med": 425,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -1152,7 +1152,7 @@
    0,
    0
   ],
-  "med": 322,
+  "med": 140,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -1196,12 +1196,12 @@
    "dining": 71
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 375,
+  "med": 285,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -1251,7 +1251,7 @@
    0,
    0
   ],
-  "med": 477,
+  "med": 517,
   "reg": "first-coast",
   "rn": "The First Coast",
   "te": true,
@@ -1298,12 +1298,12 @@
    "dining": 45
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 660,
+  "med": 485,
   "reg": "first-coast",
   "rn": "The First Coast",
   "te": false,
@@ -1355,7 +1355,7 @@
    0,
    0
   ],
-  "med": 611,
+  "med": 658,
   "reg": "first-coast",
   "rn": "The First Coast",
   "te": true,
@@ -1407,7 +1407,7 @@
    0,
    0
   ],
-  "med": 260,
+  "med": 254,
   "reg": "forgotten-coast",
   "rn": "The Forgotten Coast",
   "te": false,
@@ -1456,7 +1456,7 @@
    1,
    0
   ],
-  "med": 1100,
+  "med": 1025,
   "reg": "forgotten-coast",
   "rn": "The Forgotten Coast",
   "te": false,
@@ -1501,12 +1501,12 @@
    "dining": 167
   },
   "bg": [
+   3,
+   2,
    1,
-   0,
-   0,
    0
   ],
-  "med": null,
+  "med": 850,
   "reg": "forgotten-coast",
   "rn": "The Forgotten Coast",
   "te": false,
@@ -1552,7 +1552,7 @@
    0,
    0
   ],
-  "med": 219,
+  "med": 310,
   "reg": "forgotten-coast",
   "rn": "The Forgotten Coast",
   "te": true,
@@ -1601,7 +1601,7 @@
    0,
    0
   ],
-  "med": 270,
+  "med": 185,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": false,
@@ -1650,7 +1650,7 @@
    0,
    0
   ],
-  "med": 367,
+  "med": 169,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": false,
@@ -1700,7 +1700,7 @@
    0,
    0
   ],
-  "med": 775,
+  "med": 778,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": false,
@@ -1745,12 +1745,12 @@
    "dining": 140
   },
   "bg": [
-   3,
    2,
    1,
+   0,
    0
   ],
-  "med": 880,
+  "med": 779,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": false,
@@ -1799,7 +1799,7 @@
    0,
    0
   ],
-  "med": 591,
+  "med": 537,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": false,
@@ -1842,12 +1842,12 @@
    "dining": 79
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 479,
+  "med": 272,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": false,
@@ -1895,7 +1895,7 @@
    0,
    0
   ],
-  "med": 440,
+  "med": 425,
   "reg": "forgotten-coast",
   "rn": "The Forgotten Coast",
   "te": false,
@@ -1940,12 +1940,12 @@
    "dining": 87
   },
   "bg": [
-   0,
+   1,
    0,
    0,
    0
   ],
-  "med": 272,
+  "med": 484,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -1988,12 +1988,12 @@
    "dining": 130
   },
   "bg": [
-   0,
+   1,
    0,
    0,
    0
   ],
-  "med": 355,
+  "med": 443,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -2037,12 +2037,12 @@
    "dining": 166
   },
   "bg": [
-   0,
+   1,
    0,
    0,
    0
   ],
-  "med": 231,
+  "med": 445,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -2088,7 +2088,7 @@
    0,
    0
   ],
-  "med": 285,
+  "med": 350,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -2137,7 +2137,7 @@
    0,
    0
   ],
-  "med": 420,
+  "med": 459,
   "reg": "tampa-south-shore",
   "rn": "Tampa and the South Shore",
   "te": false,
@@ -2180,12 +2180,12 @@
    "dining": 51
   },
   "bg": [
-   0,
+   1,
    0,
    0,
    0
   ],
-  "med": 313,
+  "med": 440,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -2233,7 +2233,7 @@
    0,
    0
   ],
-  "med": 747,
+  "med": 615,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -2276,12 +2276,12 @@
    "dining": 59
   },
   "bg": [
+   2,
    1,
-   0,
    0,
    0
   ],
-  "med": 450,
+  "med": 679,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -2330,7 +2330,7 @@
    0,
    0
   ],
-  "med": 235,
+  "med": 240,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": false,
@@ -2378,7 +2378,7 @@
    0,
    0
   ],
-  "med": 322,
+  "med": 315,
   "reg": "tampa-south-shore",
   "rn": "Tampa and the South Shore",
   "te": false,
@@ -2421,12 +2421,12 @@
    "dining": 29
   },
   "bg": [
-   2,
-   1,
+   0,
+   0,
    0,
    0
   ],
-  "med": 577,
+  "med": 252,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -2470,12 +2470,12 @@
    "dining": 24
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 606,
+  "med": 490,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -2521,12 +2521,12 @@
    "dining": 4
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 430,
+  "med": 305,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -2577,7 +2577,7 @@
    0,
    0
   ],
-  "med": 275,
+  "med": 165,
   "reg": "tampa-south-shore",
   "rn": "Tampa and the South Shore",
   "te": false,
@@ -2625,7 +2625,7 @@
    0,
    0
   ],
-  "med": 479,
+  "med": 398,
   "reg": "tampa-south-shore",
   "rn": "Tampa and the South Shore",
   "te": false,
@@ -2669,12 +2669,12 @@
    "dining": 21
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 390,
+  "med": 199,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -2720,12 +2720,12 @@
    "dining": 82
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 662,
+  "med": 380,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -2776,7 +2776,7 @@
    0,
    0
   ],
-  "med": 283,
+  "med": 250,
   "reg": "sarasota-bradenton",
   "rn": "Sarasota, Bradenton and Venice",
   "te": false,
@@ -2819,12 +2819,12 @@
    "dining": 57
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 638,
+  "med": 492,
   "reg": "sarasota-bradenton",
   "rn": "Sarasota, Bradenton and Venice",
   "te": false,
@@ -2870,12 +2870,12 @@
    "dining": 138
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 490,
+  "med": 310,
   "reg": "sarasota-bradenton",
   "rn": "Sarasota, Bradenton and Venice",
   "te": false,
@@ -2924,7 +2924,7 @@
    0,
    0
   ],
-  "med": 329,
+  "med": 190,
   "reg": "sarasota-bradenton",
   "rn": "Sarasota, Bradenton and Venice",
   "te": true,
@@ -2967,12 +2967,12 @@
    "dining": 16
   },
   "bg": [
+   2,
    1,
-   0,
    0,
    0
   ],
-  "med": 428,
+  "med": 548,
   "reg": "sarasota-bradenton",
   "rn": "Sarasota, Bradenton and Venice",
   "te": true,
@@ -3018,12 +3018,12 @@
    "dining": 86
   },
   "bg": [
-   3,
    2,
    1,
+   0,
    0
   ],
-  "med": 809,
+  "med": 735,
   "reg": "sarasota-bradenton",
   "rn": "Sarasota, Bradenton and Venice",
   "te": true,
@@ -3070,12 +3070,12 @@
    "dining": 54
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 384,
+  "med": 254,
   "reg": "sarasota-bradenton",
   "rn": "Sarasota, Bradenton and Venice",
   "te": true,
@@ -3127,7 +3127,7 @@
    0,
    0
   ],
-  "med": 545,
+  "med": 700,
   "reg": "fort-myers-sanibel",
   "rn": "Fort Myers, Sanibel and Charlotte Harbor",
   "te": false,
@@ -3173,7 +3173,7 @@
    0,
    0
   ],
-  "med": 380,
+  "med": 379,
   "reg": "fort-myers-sanibel",
   "rn": "Fort Myers, Sanibel and Charlotte Harbor",
   "te": false,
@@ -3222,7 +3222,7 @@
    0,
    0
   ],
-  "med": 310,
+  "med": 360,
   "reg": "naples-marco",
   "rn": "Naples, Marco Island and the Everglades",
   "te": true,
@@ -3272,7 +3272,7 @@
    0,
    0
   ],
-  "med": 325,
+  "med": 250,
   "reg": "naples-marco",
   "rn": "Naples, Marco Island and the Everglades",
   "te": true,
@@ -3316,12 +3316,12 @@
    "dining": 18
   },
   "bg": [
-   0,
+   1,
    0,
    0,
    0
   ],
-  "med": 325,
+  "med": 410,
   "reg": "fort-myers-sanibel",
   "rn": "Fort Myers, Sanibel and Charlotte Harbor",
   "te": false,
@@ -3364,12 +3364,12 @@
    "dining": 98
   },
   "bg": [
+   3,
+   2,
    1,
-   0,
-   0,
    0
   ],
-  "med": 492,
+  "med": 1075,
   "reg": "fort-myers-sanibel",
   "rn": "Fort Myers, Sanibel and Charlotte Harbor",
   "te": false,
@@ -3420,7 +3420,7 @@
    1,
    0
   ],
-  "med": 1375,
+  "med": 1510,
   "reg": "naples-marco",
   "rn": "Naples, Marco Island and the Everglades",
   "te": true,
@@ -3471,7 +3471,7 @@
    0,
    0
   ],
-  "med": 310,
+  "med": 122,
   "reg": "fort-myers-sanibel",
   "rn": "Fort Myers, Sanibel and Charlotte Harbor",
   "te": true,
@@ -3520,7 +3520,7 @@
    0,
    0
   ],
-  "med": 322,
+  "med": 272,
   "reg": "fort-myers-sanibel",
   "rn": "Fort Myers, Sanibel and Charlotte Harbor",
   "te": true,
@@ -3565,12 +3565,12 @@
    "dining": 121
   },
   "bg": [
-   3,
    2,
    1,
+   0,
    0
   ],
-  "med": 910,
+  "med": 725,
   "reg": "fort-myers-sanibel",
   "rn": "Fort Myers, Sanibel and Charlotte Harbor",
   "te": false,
@@ -3621,7 +3621,7 @@
    1,
    0
   ],
-  "med": 985,
+  "med": 998,
   "reg": "florida-keys",
   "rn": "The Florida Keys",
   "te": true,
@@ -3671,7 +3671,7 @@
    1,
    0
   ],
-  "med": 1280,
+  "med": 18581,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -3715,12 +3715,12 @@
    "dining": 33
   },
   "bg": [
+   3,
    2,
    1,
-   0,
    0
   ],
-  "med": 630,
+  "med": 1200,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -3764,12 +3764,12 @@
    "dining": 81
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 370,
+  "med": 248,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -3815,7 +3815,7 @@
    0,
    0
   ],
-  "med": 265,
+  "med": 245,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -3863,7 +3863,7 @@
    1,
    0
   ],
-  "med": 930,
+  "med": 975,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -3904,12 +3904,12 @@
    "dining": 37
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 502,
+  "med": 270,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -3953,12 +3953,12 @@
    "dining": 34
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 629,
+  "med": 435,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -4003,12 +4003,12 @@
    "dining": 145
   },
   "bg": [
-   3,
-   2,
-   1,
+   0,
+   0,
+   0,
    0
   ],
-  "med": 825,
+  "med": 168,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -4051,12 +4051,12 @@
    "dining": 19
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 380,
+  "med": 242,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -4097,12 +4097,12 @@
    "dining": 135
   },
   "bg": [
+   3,
+   2,
    1,
-   0,
-   0,
    0
   ],
-  "med": 445,
+  "med": 1142,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -4146,11 +4146,11 @@
   },
   "bg": [
    3,
-   3,
    2,
-   1
+   1,
+   0
   ],
-  "med": 2686,
+  "med": 13500,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -4195,12 +4195,12 @@
    "dining": 99
   },
   "bg": [
+   3,
    2,
    1,
-   0,
    0
   ],
-  "med": 730,
+  "med": 900,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -4241,12 +4241,12 @@
    "dining": 137
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 424,
+  "med": 360,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -4287,12 +4287,12 @@
    "dining": 15
   },
   "bg": [
+   3,
    2,
    1,
-   0,
    0
   ],
-  "med": 680,
+  "med": 2250,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -4335,12 +4335,12 @@
    "dining": 11
   },
   "bg": [
+   2,
    1,
-   0,
    0,
    0
   ],
-  "med": 405,
+  "med": 602,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -4385,12 +4385,12 @@
    "dining": 9
   },
   "bg": [
-   2,
-   1,
+   0,
+   0,
    0,
    0
   ],
-  "med": 653,
+  "med": 276,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -4436,12 +4436,12 @@
    "dining": 64
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 395,
+  "med": 168,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": false,
@@ -4487,12 +4487,12 @@
    "dining": 148
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 395,
+  "med": 170,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": false,
@@ -4538,7 +4538,7 @@
    0,
    0
   ],
-  "med": 358,
+  "med": 352,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": true,
@@ -4584,12 +4584,12 @@
    "dining": 23
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 380,
+  "med": 184,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": false,
@@ -4634,12 +4634,12 @@
    "dining": 12
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 390,
+  "med": 267,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": true,
@@ -4690,7 +4690,7 @@
    0,
    0
   ],
-  "med": 763,
+  "med": 691,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -4735,12 +4735,12 @@
    "dining": 132
   },
   "bg": [
+   3,
    2,
    1,
-   0,
    0
   ],
-  "med": 659,
+  "med": 849,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -4789,7 +4789,7 @@
    0,
    0
   ],
-  "med": 330,
+  "med": 132,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -4832,12 +4832,12 @@
    "dining": 122
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 575,
+  "med": 510,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -4885,7 +4885,7 @@
    0,
    0
   ],
-  "med": 283,
+  "med": 152,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -4929,12 +4929,12 @@
    "dining": 56
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 420,
+  "med": 191,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -4975,12 +4975,12 @@
    "dining": 35
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 630,
+  "med": 470,
   "reg": "first-coast",
   "rn": "The First Coast",
   "te": false,
@@ -5027,12 +5027,12 @@
    "dining": 26
   },
   "bg": [
-   3,
    2,
    1,
+   0,
    0
   ],
-  "med": 825,
+  "med": 780,
   "reg": "first-coast",
   "rn": "The First Coast",
   "te": false,
@@ -5079,12 +5079,12 @@
    "dining": 94
   },
   "bg": [
+   3,
    2,
    1,
-   0,
    0
   ],
-  "med": 670,
+  "med": 1560,
   "reg": "first-coast",
   "rn": "The First Coast",
   "te": true,
@@ -5134,7 +5134,7 @@
    0,
    0
   ],
-  "med": 604,
+  "med": 625,
   "reg": "first-coast",
   "rn": "The First Coast",
   "te": true,
@@ -5185,7 +5185,7 @@
    0,
    0
   ],
-  "med": 435,
+  "med": 375,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -5226,12 +5226,12 @@
    "dining": 43
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 380,
+  "med": 260,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -5277,7 +5277,7 @@
    0,
    0
   ],
-  "med": 350,
+  "med": 232,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -5326,7 +5326,7 @@
    0,
    0
   ],
-  "med": 353,
+  "med": 175,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -5374,7 +5374,7 @@
    0,
    0
   ],
-  "med": 417,
+  "med": 430,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": false,
@@ -5420,7 +5420,7 @@
    0,
    0
   ],
-  "med": 324,
+  "med": 107,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": true,
@@ -5468,7 +5468,7 @@
    0,
    0
   ],
-  "med": 319,
+  "med": 183,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": true,
@@ -5517,7 +5517,7 @@
    0,
    0
   ],
-  "med": 522,
+  "med": 525,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": true,
@@ -5611,7 +5611,7 @@
    0,
    0
   ],
-  "med": 778,
+  "med": 551,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": true,
@@ -5656,12 +5656,12 @@
    "dining": 152
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 389,
+  "med": 355,
   "reg": "emerald-coast",
   "rn": "Pensacola and the Emerald Coast",
   "te": true,
@@ -5705,12 +5705,12 @@
    "dining": 134
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 550,
+  "med": 400,
   "reg": "forgotten-coast",
   "rn": "The Forgotten Coast",
   "te": false,
@@ -5751,12 +5751,12 @@
    "dining": 161
   },
   "bg": [
-   0,
+   1,
    0,
    0,
    0
   ],
-  "med": null,
+  "med": 414,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -5804,7 +5804,7 @@
    0,
    0
   ],
-  "med": 216,
+  "med": 209,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -5852,7 +5852,7 @@
    0,
    0
   ],
-  "med": 261,
+  "med": 184,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -5900,7 +5900,7 @@
    0,
    0
   ],
-  "med": 254,
+  "med": 285,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -5949,7 +5949,7 @@
    0,
    0
   ],
-  "med": 292,
+  "med": 275,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -5992,12 +5992,12 @@
    "dining": 146
   },
   "bg": [
+   2,
    1,
-   0,
    0,
    0
   ],
-  "med": 488,
+  "med": 547,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -6045,7 +6045,7 @@
    0,
    0
   ],
-  "med": 341,
+  "med": 362,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -6086,12 +6086,12 @@
    "dining": 163
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 500,
+  "med": 130,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -6137,7 +6137,7 @@
    0,
    0
   ],
-  "med": 286,
+  "med": 215,
   "reg": "nature-coast",
   "rn": "The Nature Coast and Big Bend",
   "te": false,
@@ -6185,7 +6185,7 @@
    0,
    0
   ],
-  "med": 222,
+  "med": 235,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": false,
@@ -6233,7 +6233,7 @@
    0,
    0
   ],
-  "med": 229,
+  "med": 221,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": false,
@@ -6281,7 +6281,7 @@
    0,
    0
   ],
-  "med": 365,
+  "med": 194,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -6324,12 +6324,12 @@
    "dining": 85
   },
   "bg": [
-   0,
+   1,
    0,
    0,
    0
   ],
-  "med": 361,
+  "med": 422,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -6377,7 +6377,7 @@
    1,
    0
   ],
-  "med": 850,
+  "med": 901,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -6418,12 +6418,12 @@
    "dining": 109
   },
   "bg": [
-   3,
    2,
    1,
+   0,
    0
   ],
-  "med": 840,
+  "med": 675,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -6475,7 +6475,7 @@
    0,
    0
   ],
-  "med": 650,
+  "med": 670,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -6523,7 +6523,7 @@
    0,
    0
   ],
-  "med": 625,
+  "med": 650,
   "reg": "st-pete-clearwater",
   "rn": "St. Pete and the Clearwater Beaches",
   "te": true,
@@ -6566,12 +6566,12 @@
    "dining": 149
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 415,
+  "med": 325,
   "reg": "tampa-south-shore",
   "rn": "Tampa and the South Shore",
   "te": false,
@@ -6619,7 +6619,7 @@
    0,
    0
   ],
-  "med": 570,
+  "med": 625,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -6669,7 +6669,7 @@
    0,
    0
   ],
-  "med": 285,
+  "med": 170,
   "reg": "first-coast",
   "rn": "The First Coast",
   "te": false,
@@ -6713,12 +6713,12 @@
    "dining": 147
   },
   "bg": [
-   3,
-   2,
    1,
+   0,
+   0,
    0
   ],
-  "med": 1380,
+  "med": 525,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": true,
@@ -6762,12 +6762,12 @@
    "dining": 139
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 537,
+  "med": 492,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": false,
@@ -6812,11 +6812,11 @@
   },
   "bg": [
    3,
-   3,
    2,
-   1
+   1,
+   0
   ],
-  "med": 2200,
+  "med": 1500,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": false,
@@ -6864,7 +6864,7 @@
    0,
    0
   ],
-  "med": 585,
+  "med": 578,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": false,
@@ -6912,7 +6912,7 @@
    0,
    0
   ],
-  "med": 392,
+  "med": 394,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": false,
@@ -6955,12 +6955,12 @@
    "dining": 114
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 515,
+  "med": 240,
   "reg": "treasure-coast",
   "rn": "The Treasure Coast",
   "te": false,
@@ -7001,12 +7001,12 @@
    "dining": 108
   },
   "bg": [
-   2,
-   1,
+   0,
+   0,
    0,
    0
   ],
-  "med": 652,
+  "med": 340,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -7049,12 +7049,12 @@
    "dining": 102
   },
   "bg": [
-   3,
    2,
    1,
+   0,
    0
   ],
-  "med": 831,
+  "med": 650,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -7102,7 +7102,7 @@
    0,
    0
   ],
-  "med": 480,
+  "med": 450,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -7148,7 +7148,7 @@
    1,
    0
   ],
-  "med": 879,
+  "med": 1371,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -7197,7 +7197,7 @@
    0,
    0
   ],
-  "med": 442,
+  "med": 465,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -7242,12 +7242,12 @@
    "dining": 110
   },
   "bg": [
-   0,
+   1,
    0,
    0,
    0
   ],
-  "med": 350,
+  "med": 515,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -7288,12 +7288,12 @@
    "dining": 90
   },
   "bg": [
-   0,
+   1,
    0,
    0,
    0
   ],
-  "med": 337,
+  "med": 435,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -7341,7 +7341,7 @@
    0,
    0
   ],
-  "med": 667,
+  "med": 701,
   "reg": "first-coast",
   "rn": "The First Coast",
   "te": true,
@@ -7387,12 +7387,12 @@
    "dining": 123
   },
   "bg": [
+   2,
    1,
-   0,
    0,
    0
   ],
-  "med": 440,
+  "med": 535,
   "reg": "first-coast",
   "rn": "The First Coast",
   "te": true,
@@ -7440,7 +7440,7 @@
    0,
    0
   ],
-  "med": 745,
+  "med": 685,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -7488,7 +7488,7 @@
    0,
    0
   ],
-  "med": 343,
+  "med": 276,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -7536,7 +7536,7 @@
    0,
    0
   ],
-  "med": 521,
+  "med": 480,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -7586,7 +7586,7 @@
    0,
    0
   ],
-  "med": 318,
+  "med": 300,
   "reg": "daytona-flagler",
   "rn": "Daytona, New Smyrna and Flagler",
   "te": true,
@@ -7634,7 +7634,7 @@
    0,
    0
   ],
-  "med": 315,
+  "med": 287,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -7678,12 +7678,12 @@
    "dining": 88
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 400,
+  "med": 175,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -7726,12 +7726,12 @@
    "dining": 49
   },
   "bg": [
-   0,
-   0,
+   2,
+   1,
    0,
    0
   ],
-  "med": 290,
+  "med": 551,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -7775,12 +7775,12 @@
    "dining": 129
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 397,
+  "med": 198,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -7823,12 +7823,12 @@
    "dining": 50
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 454,
+  "med": 324,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -7876,7 +7876,7 @@
    0,
    0
   ],
-  "med": 350,
+  "med": 165,
   "reg": "space-coast",
   "rn": "The Space Coast",
   "te": false,
@@ -7920,12 +7920,12 @@
    "dining": 60
   },
   "bg": [
+   3,
    2,
    1,
-   0,
    0
   ],
-  "med": 715,
+  "med": 980,
   "reg": "florida-keys",
   "rn": "The Florida Keys",
   "te": true,
@@ -7970,12 +7970,12 @@
    "dining": 158
   },
   "bg": [
+   3,
    2,
    1,
-   0,
    0
   ],
-  "med": 740,
+  "med": 794,
   "reg": "florida-keys",
   "rn": "The Florida Keys",
   "te": true,
@@ -8023,7 +8023,7 @@
    1,
    0
   ],
-  "med": 1490,
+  "med": 3910,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -8074,7 +8074,7 @@
    1,
    0
   ],
-  "med": 2425,
+  "med": 3700,
   "reg": "fort-myers-sanibel",
   "rn": "Fort Myers, Sanibel and Charlotte Harbor",
   "te": false,
@@ -8119,12 +8119,12 @@
    "dining": 62
   },
   "bg": [
-   1,
+   0,
    0,
    0,
    0
   ],
-  "med": 395,
+  "med": 258,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -8172,7 +8172,7 @@
    0,
    0
   ],
-  "med": 330,
+  "med": 155,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
