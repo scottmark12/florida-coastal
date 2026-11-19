@@ -27,8 +27,10 @@ const SUBS={3:['Sand and water right out front','Close enough to ride over with 
 Object.entries(SUBS).forEach(([qi,m])=>Object.entries(m).forEach(([oi,t])=>{const o=SQ[qi]&&SQ[qi].o[oi];if(o&&!o[1])o[1]=t}));
 const d0=qDraw;qDraw=function(){d0();if(window.FCQuiz&&!Q.done)window.FCQuiz.view(Q.step,SQ.length);show(Math.min(Q.step,PH.length-1));miniDots();if(qAny()&&!window.__qs){window.__qs=1;window.FC&&FC.track('quiz_start')}};if(mob()){const r=$('res');r.parentElement.insertBefore(mini,r.nextSibling);const cen=()=>{mini.style.transform='none';const b=mini.getBoundingClientRect();mini.style.transform=`translateX(${innerWidth/2-(b.left+b.width/2)}px)`};requestAnimationFrame(cen);setTimeout(cen,400);addEventListener('resize',cen)}show(Q.step);miniDots();qDraw();
 qDone=function(){window.QLOCK=false;qRank();miniDots();
- const a=Q.ans.map(x=>x==null?'x':x).join(''),TOP=qRank().slice(0,5).map(t=>({id:t.id,fit:qp(t),name:t.n,why:qWhy(t,3)})),go2=()=>{location.href='quiz-results.html?a='+a+'&t='+TOP.map(x=>x.id+'.'+x.fit).join(',')};
- try{sessionStorage.setItem('fc-top5',JSON.stringify({a:a,top:TOP}))}catch(e){}
+ const a=Q.ans.map(x=>x==null?'x':x).join(''),TOP=qRank().slice(0,5).map(t=>({id:t.id,fit:qp(t),name:t.n,why:qWhy(t,3)})),VB=qVibe(TOP),go2=()=>{location.href=go2.url()};SLQ=qSliders(),go2.url=()=>'quiz-results.html?a='+a+'&t='+TOP.map(x=>x.id+'.'+x.fit).join(',')+(VB.length?'&v='+VB.join(','):'')+SLQ;
+ try{sessionStorage.setItem('fc-top5',JSON.stringify({a:a,top:TOP,vibes:VB}))}catch(e){}
+ try{localStorage.setItem('fc-vibe',JSON.stringify({all:VB,off:[],from:'quiz'}))}catch(e){}
+ window.FC&&FC.track('quiz_vibe',VB.join(','));
  if(window.FCQuiz)window.FCQuiz.complete(TOP,SQ.map((_,st)=>qAnsInfo(st,Q.ans[st])))
  document.getElementById('qrvn').textContent=T.length;
  const lab=Q.ans.map((x,i)=>x==null?null:SQ[i].o[x][0]).filter(t=>t&&!/^Not sure/.test(t));
@@ -55,9 +57,42 @@ qDone=function(){window.QLOCK=false;qRank();miniDots();
 })();
 
 /* Nov 12: while the top 5 builds, offer to send it. Email gets the 5 towns side by side; an optional phone adds the personal town guide. Never blocks the results, and stops asking once we have an email. */
+/* Nov 19: "your town vibe": the vibes your five towns share, weighted by rank. Lifestyle vibes come first;
+   Best Beaches, Best Schools and Affordable only when nothing else fits. People can drop any vibe that isn't them. */
+function qVibe(TOP){const LIFE=['island','oldfl','dock','sophcalm','sophhigh','social','active','bluezone','walk','remote'],sc={},hi={};
+ /* what the five towns share, weighted by rank */
+ TOP.forEach((x,i)=>{const t=T.find(y=>y.id==x.id);if(!t||!t.v)return;t.v.forEach((v,j)=>{sc[v]=(sc[v]||0)+(5-i)*(1-.12*j)})});
+ /* what the answers point to (question, answer) -> vibe hints */
+ const H=[[{sophhigh:1,social:.5},{walk:1,social:1},{sophcalm:1,oldfl:.5},{oldfl:1,island:1}],[{social:1,sophhigh:1},{social:.5},{sophcalm:1},{oldfl:1,island:1}],[{dock:1},{active:1},{island:.5},{sophcalm:.5,oldfl:.5}],[{island:.5},{walk:.5,active:.5}],[{social:1,bluezone:.5},{walk:1,bluezone:1},{sophcalm:.5},{oldfl:.5}],[{remote:1},{remote:.5}],[{},{},{dock:1}]];
+ (Q.ans||[]).forEach((a,q)=>{const h=H[q]&&H[q][a];if(h)for(const k in h)hi[k]=(hi[k]||0)+h[k]});
+ const pick=ks=>{ks=ks.filter(k=>sc[k]);if(!ks.length)return[];const ms=Math.max(...ks.map(k=>sc[k])),mh=Math.max(1,...ks.map(k=>hi[k]||0)),f={};ks.forEach(k=>f[k]=.5*sc[k]/ms+.5*(hi[k]||0)/mh);ks.sort((a,b)=>f[b]-f[a]);return ks.filter((k,i)=>i==0||f[k]>=f[ks[0]]*.55).slice(0,3)};
+ const L=pick(LIFE);return L.length?L:pick(Object.keys(sc)).slice(0,2)}
+/* Nov 19: the quiz answers as Slider Map settings, so "View on map" opens the sliders already set the way you answered.
+   Quiz weights 1 to 3 land on the slider stops (33, 67, 100) and pace on its stops, so sliding back lands on exactly the same settings; evenings and dining count toward Social scene; boat and dock toward On the water;
+   budget carries over except "$750K and up", which the quiz doesn't filter on either. */
+function qSliders(){const W=qW(),pace=qA('pace'),bud=qA('budget'),L=[0,33,67,100],v={};
+ const mx=(k,...f)=>{const r=Math.max(0,...f.map(x=>W[x]||0));if(r)v[k]=L[r]};
+ mx('beach','beach','sand');mx('water','water','dock');mx('meet','meet','nightlife','dining');mx('walk','walk');mx('outdoors','outdoors');mx('airport','airport');
+ if(Number.isInteger(pace))v.pace=[100,75,25,0][pace];
+ const sv=Object.entries(v).map(([k,x])=>k+':'+x).join(',');
+ return (sv?'&sv='+sv:'')+(Number.isInteger(bud)&&bud<3?'&bud='+bud:'')}
+function qVibeOn(){try{const v=JSON.parse(localStorage.getItem('fc-vibe')||'null');return v?v.all.filter(k=>!v.off.includes(k)):[]}catch(e){return[]}}
+function qVibeBlock(box){
+ let v=null;try{v=JSON.parse(localStorage.getItem('fc-vibe')||'null')}catch(e){}if(!v||!v.all.length)return;
+ let el=box.querySelector('.qv');if(!el){el=document.createElement('div');el.className='qv';const c=box.querySelector('#qrvc');c.parentNode.insertBefore(el,c);
+  /* keep a few of their own answers under the vibe ("we heard you"), the rest folded into +N more */
+  const ch=[...c.children],more=ch.find(x=>/\+\s*\d+\s*more/.test(x.textContent)),real=ch.filter(x=>x!==more);
+  if(real.length>3){const n=real.length-3+(more?+(more.textContent.match(/\d+/)||[0])[0]:0);real.slice(3).forEach(x=>x.remove());
+   if(more){const w=document.createTreeWalker(more,NodeFilter.SHOW_TEXT);let t;while(t=w.nextNode())if(/\d+/.test(t.nodeValue))t.nodeValue=t.nodeValue.replace(/\d+/,n)}
+   else{const m=real[0].cloneNode(true);const w=document.createTreeWalker(m,NodeFilter.SHOW_TEXT);let t,f=0;while(t=w.nextNode())if(t.nodeValue.trim()){t.nodeValue=f?'':'+'+n+' more';f=1}c.appendChild(m)}}
+  c.classList.add('qv-ch')}
+ const draw=()=>{el.innerHTML=`<p class="qv-l">Your town vibe: ${v.all.map(k=>`<span><i style="background:${VCOL[k]||'#C2873A'}"></i>${VIBES[k]||k}</span>`).join(', ')}</p>`};
+ const save=()=>{try{localStorage.setItem('fc-vibe',JSON.stringify(v))}catch(e){}};
+ draw();requestAnimationFrame(()=>el.classList.add('in'))}
 function qAsk(go2,TOP,a){
  let had=null;try{had=localStorage.getItem('fc-mail')}catch(e){}
- if(had){go2();return}
+ const box0=document.getElementById('qrv');if(box0)qVibeBlock(box0);
+ if(had){const b=box0;if(!b){go2();return}b.classList.add('ask');document.body.classList.add('qask');const h=b.querySelector('h2');if(h)h.textContent='Your top 5 is ready.';const g=document.createElement('a');g.href='#';g.className='qv-go';g.textContent='See my 5 towns \u2192';g.onclick=e=>{e.preventDefault();go2()};b.appendChild(g);return}
  const box=document.getElementById('qrv');if(!box){go2();return}
  /* Nov 12: the reveal can fire twice, so only ever show one ask */
  if(box.querySelector('.qa-card')||window.__qAsked)return;window.__qAsked=1;
@@ -68,15 +103,10 @@ function qAsk(go2,TOP,a){
   card.querySelector('.qa-skip').onclick=e=>{e.preventDefault();go2()};
   f.onsubmit=e=>{e.preventDefault();const v=em.value.trim();if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)){em.style.borderColor='#B3261E';em.focus();return}
    const btn=f.querySelector('button');btn.disabled=true;btn.textContent='Sending...';
-   try{localStorage.setItem('fc-mail','1')}catch(x){}
-   const send=window.FC?FC.lead({kind:'matches',email:v,matches:TOP.map((t,i)=>({id:t.id,name:t.name,rank:i+1,fit:t.fit})),answers:a.split(''),message:('Quiz top 5: '+TOP.map(t=>t.name).join(', ')).slice(0,2000)}).catch(()=>null):Promise.resolve(null);
-   send.then(()=>step2(v))}};
- const step2=email=>{card.innerHTML=`<b>On its way.</b><p>Want one more thing? Add your number and we'll send your personal guide, <i>Your first 90 days in ${one}</i>.</p><form class="qa-f" novalidate><input type="tel" autocomplete="tel" placeholder="Phone number" aria-label="Phone number, optional"><button type="submit">Send my guide</button></form><a href="#" class="qa-skip">Skip, show my towns</a><small>Optional. Adding a number means a local may call or text you about your move.</small>`;
-  const f=card.querySelector('form'),ph=f.querySelector('input');
-  card.querySelector('.qa-skip').onclick=e=>{e.preventDefault();go2()};
-  f.onsubmit=e=>{e.preventDefault();const v=ph.value.replace(/[^0-9+]/g,'');if(v.length<10){ph.style.borderColor='#B3261E';ph.focus();return}
-   const btn=f.querySelector('button');btn.disabled=true;btn.textContent='Sending...';
-   const send=window.FC?FC.lead({kind:'guide',email:email,phone:ph.value.trim().slice(0,40),town:one,message:'Wants the personal town guide: Your first 90 days in '+one}).catch(()=>null):Promise.resolve(null);
-   send.then(()=>{card.innerHTML=`<b>Perfect.</b><p>Your guide to ${one} is on the way. Here are your towns.</p>`;setTimeout(go2,1100)})}};
+   const ref=(window.crypto&&crypto.randomUUID)?crypto.randomUUID():null;
+   try{localStorage.setItem('fc-mail','1');localStorage.setItem('fc-sl-saved','1');localStorage.setItem('fc-em',v)}catch(x){}
+   const send=window.FC?FC.lead({kind:'matches',email:v,ref:ref,matches:TOP.map((t,i)=>({id:t.id,name:t.name,rank:i+1,fit:t.fit})),answers:a.split(''),message:('Quiz top 5: '+TOP.map(t=>t.name).join(', ')+(qVibeOn().length?' · Vibe: '+qVibeOn().map(k=>VIBES[k]||k).join(', '):'')).slice(0,2000)}).catch(()=>null):Promise.resolve(null);
+   /* Nov 19: no phone step; the results page offers Ask a local, on a tap, never a popup */
+   send.then(()=>{location.href=go2.url()})}};
  box.classList.add('ask');document.body.classList.add('qask');const h2=box.querySelector('h2');if(h2)h2.textContent='Your top 5 is ready.';step1();box.appendChild(card);requestAnimationFrame(()=>card.classList.add('in'));
 }

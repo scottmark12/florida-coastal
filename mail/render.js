@@ -29,6 +29,31 @@ const monthYear = (d) => d.toLocaleDateString("en-US", { month: "long", year: "n
 const link = (t) => `${t.url}?${UTM}`;
 const isSaved = (lead) => !!(lead && lead.answers && !Array.isArray(lead.answers) && lead.answers.source === "town_page");
 
+/* Nov 19 2026 (preview): every Shortlist email links back to the live Shortlist page, and the top email names their town vibe. */
+const VIBE_NAMES = { beaches: "Best Beaches", schools: "Best Schools", oldfl: "Old Florida", bluezone: "Healthy Living", island: "Island Vibes", dock: "Dock Life", sophhigh: "High Energy", social: "Social Scene", sophcalm: "Sophisticated Laid Back", active: "Active Lifestyle", walk: "Walkable", remote: "Remote Work", afford: "Affordable" };
+function leadVibes(lead) {
+  const a = lead && lead.answers;
+  if (a && !Array.isArray(a) && Array.isArray(a.vibes)) return a.vibes.map((k) => VIBE_NAMES[k]).filter(Boolean);
+  const m = String((lead && lead.message) || "").match(/Vibe: ([^·\n]+)/);
+  return m ? m[1].split(",").map((x) => x.trim()).filter((x) => Object.values(VIBE_NAMES).includes(x)) : [];
+}
+export function shortlistUrl(lead, step = "top5") {
+  const list = Array.isArray(lead && lead.matches) ? lead.matches : [];
+  if (!list.length) return null;
+  const t = list.slice(0, 10).map((m) => String(m.id) + (m.react === "love" ? ":l" : "")).join(",");
+  return `${SITE}/shortlist?t=${encodeURIComponent(t).replace(/%2C/g, ",").replace(/%3A/g, ":")}&utm_source=email&utm_campaign=${step}&utm_content=shortlist`;
+}
+const vibeP = (lead) => {
+  const v = leadVibes(lead);
+  return v.length ? `<p style="margin:0 0 14px 0;font-family:${F_BODY};font-size:15px;line-height:1.5;color:${C.gray};">Your town vibe: <span style="color:${C.ink};font-weight:500;">${esc(v.join(", "))}</span></p>` : "";
+};
+let CUR = { lead: null, step: "" };
+export function setLead(lead, step) { CUR = { lead, step }; }
+const slBlock = (lead, step) => {
+  const u = shortlistUrl(lead, step);
+  return u ? row(`${btn(u, "See your Shortlist")}<p style="margin:10px 0 0 0;font-family:${F_BODY};font-size:13.5px;line-height:1.5;color:${C.soft};">Side by side, with your top picks. Share it with whoever you're moving with.</p>`, `26px ${PX} 0 ${PX}`) : "";
+};
+
 // Skip anything whose dates have all passed ("July 4, 2026", "October 2025")
 const MONTHS = ["january","february","march","april","may","june","july","august","september","october","november","december"];
 function isStale(note, now) {
@@ -161,13 +186,17 @@ export function buildEmail(lead, picks, opts = {}) {
   ${row(`${h1(saved ? "Your saved Florida towns" : "Your Florida Shortlist")}${deck(intro)}`, `30px ${PX} 24px ${PX}`)}
   ${t1 ? photo(t1.mail_img, link(t1), t1.name, `Your No. 1, ${esc(t1.name)}.`) : ""}
   ${row(`<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${rowsList}</table>`, `22px ${PX} 0 ${PX}`)}
+  ${vibeP(lead) ? row(vibeP(lead), `18px ${PX} 0 ${PX}`) : ""}
+  ${slBlock(lead, "top5")}
   ${hasPdf ? row(attached(`${name ? name + "'s " : "Your "}Florida Shortlist`, `A page for each town: home prices, the airport drive, the season, the honest heads up and your first weekend. Then ${picks.length > 1 ? (picks.length === 5 ? "all five" : "all of them") + " side by side" : "a checklist before you visit"}. Good to print or forward to whoever's moving with you.`), `22px ${PX} 0 ${PX}`) : ""}
-  ${!saved && lead && lead.id ? timelineAsk(lead, t1) : ""}
+  ${!saved && lead && lead.id && !lead.timeline ? timelineAsk(lead, t1) : ""}
   ${row(`${P(`Questions about any of these? Just reply. We read every message${opts.guideUrl ? `, and our free guide to your first 90 days in a new town is <a href="${opts.guideUrl}" style="color:${C.ink};">here</a>` : ""}.`, "margin-bottom:0;")}${sign()}`, `26px ${PX} 0 ${PX}`)}
   ${footer(`You're getting this because you asked for your towns on floridacoastal.co. Town details are for information and should be confirmed locally.`, UTM)}`;
   const html = page(subject, `${list}. Your Shortlist PDF is attached.`, rows);
   const text = [`${name ? `Hi ${name}, here` : "Here"} are your top Florida towns. Everything we know about each one is in the attached PDF.`, "",
     ...picks.map((t, i) => `${i + 1}. ${t.name} (${t.coast})  ${link(t)}`), "",
+    ...(leadVibes(lead).length ? [`Your town vibe: ${leadVibes(lead).join(", ")}`, ""] : []),
+    ...(shortlistUrl(lead) ? [`See your Shortlist: ${shortlistUrl(lead)}`, ""] : []),
     ...(opts.guideUrl ? [`Your free Move and Belong Guide: ${opts.guideUrl}`, ""] : []),
     "Questions? Just reply. We read every message.", "", "Mark and Betsy Scott", "Florida Coastal", SITE].join("\n");
   return { subject, html, text };
@@ -353,7 +382,7 @@ export async function buildPdf(lead, picks, deps) {
     const lab = y - 41.5;
     rule(pg, lab + 15);
     const colX = [45, 179.5, 314, 448.5];
-    const facts = [["Median home", t.price || "Ask us for current prices"], ["Airport", t.airport], ["Season", t.season], ["Heads up", t.watch]];
+    const facts = [[t.price ? "Median " + (t.priceKind || "home") : "Median home", t.price || "Ask us for current prices"], ["Airport", t.airport], ["Season", t.season], ["Heads up", t.watch]];
     let low = lab;
     facts.forEach(([l, v], k) => {
       caps(pg, l, colX[k], lab, 6.75);
@@ -502,7 +531,8 @@ export async function render(lead, towns, deps) {
 
 /* designed emails: masthead, rows, footer (the house style, same as the top 5 email) */
 function shell(subject, preheader, rows, lab = "Florida Coastal", utm = UTM) {
-  return page(subject, preheader, `${masthead(lab, utm)}${rows}${footer("", utm)}`);
+  const sl = CUR.lead && CUR.step !== "welcome" ? slBlock(CUR.lead, CUR.step) : "";
+  return page(subject, preheader, `${masthead(lab, utm)}${rows}${sl}${footer("", utm)}`);
 }
 const bullets = (items) => `<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">${items.map(([a, b], i) =>
   `<tr><td valign="top" width="34" style="padding:13px 0 12px 0;border-top:1px solid ${C.hair};font-family:${F_BODY};font-size:15px;font-weight:500;line-height:1.5;color:${C.soft};">${i + 1}</td><td style="padding:12px 0 12px 0;border-top:1px solid ${C.hair};font-family:${F_BODY};font-size:15.5px;line-height:1.55;color:${C.ink};"><b style="font-weight:600;">${a}</b> ${b}</td></tr>`).join("")}</table>`;

@@ -1,0 +1,58 @@
+/* /shortlist page (Nov 19 2026, preview, calm pass) */
+.slp{max-width:1240px;margin:0 auto;padding:34px 24px 44px;font-family:"DM Sans",system-ui,sans-serif;color:#152A2E}
+.sl-hd{display:flex;align-items:center;justify-content:space-between;gap:16px}
+.slp h1{font-family:"Libre Caslon Display",Georgia,serif;font-weight:400;font-size:46px;line-height:1.05;margin:0}
+.slp h1 small{margin-left:10px;font-family:"DM Sans",system-ui,sans-serif;font-size:17px;color:#6A7B7E;letter-spacing:0;vertical-align:middle}
+.sl-ic{flex:none;width:44px;height:44px;border-radius:50%;border:1.5px solid #E4DED3;background:#fff;color:#152A2E;display:flex;align-items:center;justify-content:center;cursor:pointer}
+.sl-ic svg{width:20px;height:20px}.sl-ic path{fill:none;stroke:currentColor;stroke-width:1.9}.sl-ic[hidden]{display:none}
+#sl-vibe{margin:10px 0 0}
+#sl-grid{margin-top:26px}
+.sl-banner{display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:#F3F1EC;border-radius:14px;padding:12px 14px;margin:18px 0 0;font-size:15px}
+.sl-banner span{flex:1;min-width:180px}.sl-banner button{border:0;background:#152A2E;color:#fff;border-radius:999px;padding:10px 16px;font:600 15px "DM Sans",system-ui,sans-serif;cursor:pointer}
+.sl-b{display:inline-flex;align-items:center;gap:8px;border:1.5px solid #152A2E;background:#fff;color:#152A2E;border-radius:999px;padding:12px 18px;font:600 16px/1 "DM Sans",system-ui,sans-serif;text-decoration:none}.sl-b.sl-dark{background:#152A2E;color:#fff}
+/* photo + heart */
+.sl-pw{position:relative}
+.sl-ph{display:block;aspect-ratio:4/3;border-radius:14px;background:#D9D2C5 center/cover;position:relative}
+.sl-hb{position:absolute;top:10px;right:10px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.94);box-shadow:0 1px 6px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;cursor:pointer;color:#152A2E}
+.sl-hb svg{width:21px;height:21px}.sl-hb path{fill:none;stroke:currentColor;stroke-width:2}.sl-hb.on path{fill:#152A2E;stroke:#152A2E}
+.sl-fit,.sl-tag{position:absolute;left:10px;bottom:10px;font-size:12.5px;font-weight:700;border-radius:999px;padding:5px 9px}
+.sl-fit{color:#2F6B4F;background:#E6F1EA}.sl-tag{color:#fff;background:#C2873A;bottom:auto;top:10px}
+.sl-nr{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-top:12px}
+.sl-n{font-family:"Libre Caslon Display",Georgia,serif;font-size:25px;line-height:1.1;color:#152A2E;text-decoration:none}
+.sl-mn{flex:none;width:44px;height:44px;margin-right:-8px;border-radius:50%;border:0;background:none;color:#6A7B7E;cursor:pointer;display:flex;align-items:center;justify-content:center}
+.sl-mn:hover{background:#F3F1EC}.sl-mn svg{width:18px;height:18px;fill:currentColor}
+.sl-rg{display:block;font-size:14px;color:#6A7B7E;margin-top:2px}
+/* desktop table */
+.sl-scroll{overflow-x:auto;margin:0 -24px;padding:0 24px 6px}
+.sl-t{display:grid;grid-template-columns:150px repeat(var(--n),minmax(158px,1fr));min-width:min-content}
+.sl-lab,.sl-c{padding:12px 14px;border-bottom:1px solid #EFEAE2;font-size:15px}
+.sl-lab{color:#6A7B7E;position:sticky;left:0;background:#fff;z-index:1}.sl-corner{border-bottom:0}
+.sl-head{padding:0 8px 16px;border-bottom:1.5px solid #152A2E}
+.sl-pr b{font-size:19px}
+.sl-c{font-weight:600;display:block;background:none;box-shadow:none}.sl-top{color:#8A6A3D}.sl-top em{font-style:normal;font-size:11px;letter-spacing:.08em;text-transform:uppercase;margin-left:8px;font-weight:700}
+/* phone cards */
+.sl-cards{display:flex;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -16px;padding:0 16px 4px;scrollbar-width:none}
+.sl-cards::-webkit-scrollbar{display:none}
+.sl-card{flex:0 0 84%;scroll-snap-align:center}
+.sl-cb{padding:0 2px}
+.sl-meta{font-size:15px;color:#6A7B7E;margin-top:3px}.sl-meta b{color:#152A2E}
+.sl-best{list-style:none;margin:12px 0 0;padding:12px 0 0;border-top:1px solid #EFEAE2;display:flex;flex-direction:column;gap:7px;font-size:15px;color:#3E5357}
+.sl-best li{display:flex;justify-content:space-between;gap:10px}.sl-best b{color:#152A2E}.sl-best small,.sl-c small{font-weight:400;color:#56676A;font-size:13px}
+.sl-dots{display:flex;justify-content:center;gap:6px;margin-top:16px}.sl-dots i{width:6px;height:6px;border-radius:3px;background:#D9D2C5;transition:.2s}.sl-dots i.on{width:18px;background:#152A2E}
+.sl-next{display:flex;gap:22px;flex-wrap:wrap;margin:28px 0 0}.sl-next a{color:#152A2E;font-weight:600;text-decoration:none;border-bottom:1.5px solid #C2873A;padding-bottom:2px}
+.sl-empty{text-align:center;padding:56px 20px;border:1.5px dashed #CFC8BC;border-radius:18px}
+.sl-empty svg{width:38px;height:38px}.sl-empty path{fill:none;stroke:#152A2E;stroke-width:1.6}
+.sl-empty h2{font-family:"Libre Caslon Display",Georgia,serif;font-weight:400;font-size:30px;margin:10px 0 8px}.sl-empty p{color:#3E5357;font-size:16.5px;max-width:420px;margin:0 auto 20px;line-height:1.5}
+.sl-empty div{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.slp .foot{font-size:13px;color:#5E6E71;line-height:1.5;margin-top:34px;max-width:700px}.slp .foot a{color:inherit}
+@media(max-width:700px){.slp{padding:22px 16px 30px}.slp h1{font-size:34px}.slp h1 small{display:block;font-size:15px;margin:4px 0 0}.sl-hd{align-items:flex-start}#sl-grid{margin-top:20px}.sl-n{font-size:24px}}
+
+.sl-c small{margin-left:1px}
+.sl-all{margin:14px 0 0;border:0;background:none;padding:0;font:600 15px "DM Sans",system-ui,sans-serif;color:#152A2E;text-decoration:underline;text-decoration-color:#C2873A;text-underline-offset:4px;cursor:pointer}
+.sl-fc{display:flex;align-items:center;gap:16px;margin:30px 0 0;padding:18px;border:1px solid #E4DED3;border-radius:18px;background:#FBFAF7}
+.sl-fc img{width:56px;height:56px;border-radius:50%;object-fit:cover;object-position:50% 25%;flex:none}
+.sl-fc div{flex:1}.sl-fc b{display:block;font-size:18px}.sl-fc p{margin:4px 0 0;font-size:15px;line-height:1.45;color:#3E5357}
+.sl-fb{flex:none;border:0;background:#152A2E;color:#fff;border-radius:999px;padding:13px 24px;font:600 16px "DM Sans",system-ui,sans-serif;cursor:pointer}
+@media(max-width:700px){.sl-fc{flex-wrap:wrap;padding:16px}.sl-fc div{flex-basis:calc(100% - 72px)}.sl-fb{width:100%;padding:14px}}
+.sl-lab,.sl-c{line-height:22px;min-height:46px;box-sizing:border-box}.sl-top em{line-height:1;vertical-align:1px}
+.sl-pr small{display:block;font-size:13.5px;color:#5B6E72;margin-top:2px;font-weight:500}

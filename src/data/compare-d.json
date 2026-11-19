@@ -3,7 +3,7 @@
     "30a": {
       "s": "30A",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$915K",
+      "pr": "$1.97M house · $1.1M condo",
       "h": "Ascension Sacred Heart Emerald Coast, about 9 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Fort Walton-Destin Hospital (Level II), about 29 mi</small>",
       "a": "Northwest Florida Beaches (ECP) or Destin Fort Walton (VPS)",
       "se": "Busy summers, quiet winters",
@@ -62,7 +62,7 @@
     "destin": {
       "s": "Destin",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$540K",
+      "pr": "$574K home",
       "h": "HCA Florida Fort Walton-Destin Hospital, about 9 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Destin Fort Walton (VPS)",
       "se": "Very busy summers",
@@ -119,7 +119,7 @@
     "pcb": {
       "s": "Panama City Beach",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$425K",
+      "pr": "$386K house · $345K condo",
       "h": "HCA Florida Gulf Coast Hospital, about 8 mi<small class=\"cmp-sub\">Trauma center: Ascension Sacred Heart Bay (Level II), about 9 mi</small>",
       "a": "Northwest Florida Beaches (ECP)",
       "se": "Busy spring and summer",
@@ -175,7 +175,7 @@
     "apalachicola": {
       "s": "Apalachicola",
       "rg": "The Forgotten Coast",
-      "pr": "$300K to $385K",
+      "pr": "$350K house",
       "h": "George E. Weems Memorial Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: Ascension Sacred Heart Bay (Level II), about 50 mi</small>",
       "a": "Tallahassee (TLH), about 1.5 hours",
       "se": "Quiet year round",
@@ -232,7 +232,7 @@
     "cedarkey": {
       "s": "Cedar Key",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$320K",
+      "pr": "$375K house · $275K condo",
       "h": "Tampa General Hospital Crystal River, about 28 mi<small class=\"cmp-sub\">Trauma center: UF Health Shands Hospital (Level I), about 54 mi</small>",
       "a": "Gainesville (GNV), about 1 hour 15 minutes",
       "se": "Quiet year round",
@@ -289,7 +289,7 @@
     "dunedin": {
       "s": "Dunedin",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$450K",
+      "pr": "$550K house · $195K condo",
       "h": "Mease Dunedin Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: St. Joseph's Hospital (Level II), about 17 mi</small>",
       "a": "Tampa (TPA) or St. Pete Clearwater (PIE)",
       "se": "Busier in winter",
@@ -345,7 +345,7 @@
     "clearwaterbeach": {
       "s": "Clearwater Beach",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$650K to $800K",
+      "pr": "$832K home",
       "h": "Morton Plant Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 19 mi</small>",
       "a": "Tampa (TPA) or St. Pete Clearwater (PIE)",
       "se": "Busy most of the year",
@@ -401,7 +401,7 @@
     "gulfport": {
       "s": "Gulfport",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$385K",
+      "pr": "$450K house · $245K condo",
       "h": "HCA Florida Pasadena Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 4 mi</small>",
       "a": "St. Pete Clearwater (PIE) or Tampa (TPA)",
       "se": "Easygoing year round",
@@ -456,7 +456,7 @@
     "ami": {
       "s": "Anna Maria Island",
       "rg": "Sarasota, Bradenton and Venice",
-      "pr": "$1.3M to $1.65M",
+      "pr": "$1.14M home",
       "h": "HCA Florida Blake Hospital, about 7 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Sarasota Bradenton (SRQ), about 35 minutes",
       "se": "Busy winters and weekends",
@@ -513,7 +513,7 @@
     "longboat": {
       "s": "Longboat Key",
       "rg": "Sarasota, Bradenton and Venice",
-      "pr": "$732K",
+      "pr": "$2.1M house · $850K condo",
       "h": "HCA Florida Blake Hospital, about 5 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Sarasota Bradenton (SRQ)",
       "se": "Busy winters",
@@ -570,7 +570,7 @@
     "captiva": {
       "s": "Captiva Island",
       "rg": "Fort Myers, Sanibel and Charlotte Harbor",
-      "pr": "$560K",
+      "pr": "$2.27M house · $642K condo",
       "h": "HealthPark Medical Center, about 17 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 21 mi</small>",
       "a": "Southwest Florida (RSW)",
       "se": "Busy winters",
@@ -626,7 +626,7 @@
     "matlacha": {
       "s": "Matlacha",
       "rg": "Fort Myers, Sanibel and Charlotte Harbor",
-      "pr": "$494K",
+      "pr": "$455K house",
       "h": "Cape Coral Hospital, about 8 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 15 mi</small>",
       "a": "Southwest Florida (RSW)",
       "se": "Busier in winter",
@@ -681,7 +681,7 @@
     "naples": {
       "s": "Naples",
       "rg": "Naples, Marco Island and the Everglades",
-      "pr": "$685K",
+      "pr": "$5.03M house",
       "h": "NCH Baker Hospital Downtown, about 1 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 28 mi</small>",
       "a": "Southwest Florida (RSW), about 40 minutes",
       "se": "Busy winters, sleepy summers",
@@ -740,7 +740,7 @@
     "keywest": {
       "s": "Key West",
       "rg": "The Florida Keys",
-      "pr": "$1.05M",
+      "pr": "$1.6M house · $690K condo",
       "h": "Lower Keys Medical Center, about 3 mi<small class=\"cmp-sub\">Trauma center: Jackson South Medical Center (Level II), about 116 mi</small>",
       "a": "Key West (EYW)",
       "se": "Visitors year round",
@@ -797,7 +797,7 @@
     "islamorada": {
       "s": "Islamorada",
       "rg": "The Florida Keys",
-      "pr": "$1.44M",
+      "pr": "$1.8M house · $490K condo",
       "h": "Baptist Health Mariners Hospital, about 9 mi<small class=\"cmp-sub\">Trauma center: Jackson South Medical Center (Level II), about 52 mi</small>",
       "a": "Miami (MIA), about 1.5 hours",
       "se": "Busy winters",
@@ -853,7 +853,7 @@
     "southbeach": {
       "s": "South Beach",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$524K",
+      "pr": "$400K home",
       "h": "Mount Sinai Medical Center, about 2 mi<small class=\"cmp-sub\">Trauma center: Jackson Memorial Hospital (Level I), about 5 mi</small>",
       "a": "Miami (MIA)",
       "se": "Busy year round",
@@ -910,7 +910,7 @@
     "ftl": {
       "s": "Fort Lauderdale",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$605K",
+      "pr": "$735K house · $460K condo",
       "h": "Broward Health Medical Center, about 1 mi<small class=\"cmp-sub\">Also a Level I trauma center</small>",
       "a": "Fort Lauderdale (FLL)",
       "se": "Busy winters",
@@ -966,7 +966,7 @@
     "delray": {
       "s": "Delray Beach",
       "rg": "The Palm Beaches",
-      "pr": "$546K",
+      "pr": "$775K house",
       "h": "Baptist Health Bethesda Hospital East, about 3 mi<small class=\"cmp-sub\">Trauma center: Delray Medical Center (Level I), about 4 mi</small>",
       "a": "Palm Beach airport or Fort Lauderdale (FLL)",
       "se": "Busy winters",
@@ -1023,7 +1023,7 @@
     "jupiter": {
       "s": "Jupiter",
       "rg": "The Palm Beaches",
-      "pr": "$720K",
+      "pr": "$1.1M house · $440K condo",
       "h": "Jupiter Medical Center, about 1 mi<small class=\"cmp-sub\">Trauma center: St. Mary's Medical Center (Level I), about 12 mi</small>",
       "a": "Palm Beach airport",
       "se": "Busier in winter",
@@ -1078,7 +1078,7 @@
     "fortpierce": {
       "s": "Fort Pierce",
       "rg": "The Treasure Coast",
-      "pr": "$278K",
+      "pr": "$263K house · $199K condo",
       "h": "HCA Florida Lawnwood Hospital, about 2 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Palm Beach airport or Melbourne (MLB)",
       "se": "Easygoing year round",
@@ -1133,7 +1133,7 @@
     "cocoa": {
       "s": "Cocoa Beach",
       "rg": "The Space Coast",
-      "pr": "$450K",
+      "pr": "$770K house · $350K condo",
       "h": "Cape Canaveral Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: Holmes Regional Medical Center (Level II), about 16 mi</small>",
       "a": "Orlando (MCO), about 50 minutes, or Melbourne (MLB), about 40",
       "se": "Busy spring and summer",
@@ -1189,7 +1189,7 @@
     "nsb": {
       "s": "New Smyrna Beach",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$450K",
+      "pr": "$460K house · $425K condo",
       "h": "AdventHealth New Smyrna Beach, about 1 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 14 mi</small>",
       "a": "Daytona Beach (DAB) or Orlando (MCO)",
       "se": "Busy summer weekends",
@@ -1245,7 +1245,7 @@
     "daytona": {
       "s": "Daytona Beach",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$211K",
+      "pr": "$348K house · $140K condo",
       "h": "Halifax Health Medical Center of Daytona Beach, about 2 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Daytona Beach (DAB)",
       "se": "Event weekends get busy",
@@ -1300,7 +1300,7 @@
     "flagler": {
       "s": "Flagler Beach",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$450K",
+      "pr": "$504K house · $285K condo",
       "h": "AdventHealth Palm Coast, about 4 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 19 mi</small>",
       "a": "Daytona Beach (DAB)",
       "se": "Quiet most of the year",
@@ -1355,7 +1355,7 @@
     "staug": {
       "s": "St. Augustine",
       "rg": "The First Coast",
-      "pr": "$422K",
+      "pr": "$517K home",
       "h": "UF Health Flagler Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Orange Park Hospital (Level II), about 32 mi</small>",
       "a": "Jacksonville (JAX), about an hour",
       "se": "Busy with visitors downtown",
@@ -1411,7 +1411,7 @@
     "jaxbeach": {
       "s": "Jacksonville Beach",
       "rg": "The First Coast",
-      "pr": "$720K",
+      "pr": "$655K house · $485K condo",
       "h": "Baptist Medical Center Beaches, about 1 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Memorial Hospital (Level II), about 13 mi</small>",
       "a": "Jacksonville (JAX), about 40 minutes",
       "se": "Busy summers",
@@ -1467,7 +1467,7 @@
     "fernandina": {
       "s": "Fernandina Beach",
       "rg": "The First Coast",
-      "pr": "$581K",
+      "pr": "$658K house",
       "h": "Baptist Medical Center Nassau, about 1 mi<small class=\"cmp-sub\">Trauma center: UF Health Jacksonville (Level I), about 25 mi</small>",
       "a": "Jacksonville (JAX), about 40 minutes",
       "se": "Quiet small town feel",
@@ -1522,7 +1522,7 @@
     "carrabelle": {
       "s": "Carrabelle",
       "rg": "The Forgotten Coast",
-      "pr": "$260K",
+      "pr": "$254K home",
       "h": "George E. Weems Memorial Hospital, about 22 mi<small class=\"cmp-sub\">Trauma center: Tallahassee Memorial HealthCare (Level II), about 48 mi</small>",
       "a": "Tallahassee (TLH), about 1 hour 15 minutes",
       "se": "Quiet year round",
@@ -1579,7 +1579,7 @@
     "st-george-island": {
       "s": "St. George Island",
       "rg": "The Forgotten Coast",
-      "pr": "$1.25M",
+      "pr": "$1.02M house",
       "h": "George E. Weems Memorial Hospital, about 9 mi<small class=\"cmp-sub\">Trauma center: Ascension Sacred Heart Bay (Level II), about 58 mi</small>",
       "a": "Tallahassee (TLH), about 1 hour 40 minutes",
       "se": "Busy summers and spring break, quiet winters",
@@ -1638,7 +1638,7 @@
     "st-teresa": {
       "s": "St. Teresa",
       "rg": "The Forgotten Coast",
-      "pr": "Ask for current sales",
+      "pr": "$850K house",
       "h": "George E. Weems Memorial Hospital, about 35 mi<small class=\"cmp-sub\">Trauma center: Tallahassee Memorial HealthCare (Level II), about 38 mi</small>",
       "a": "Tallahassee (TLH), about 1 hour",
       "se": "Quiet year round",
@@ -1697,7 +1697,7 @@
     "st-marks": {
       "s": "St. Marks",
       "rg": "The Forgotten Coast",
-      "pr": "Ask for current sales",
+      "pr": "$310K house",
       "h": "Tallahassee Memorial HealthCare, about 20 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Tallahassee (TLH), about 30 minutes",
       "se": "Quiet weekdays, busier weekends",
@@ -1756,7 +1756,7 @@
     "panama-city": {
       "s": "Panama City",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$284K",
+      "pr": "$285K house · $185K condo",
       "h": "Ascension Sacred Heart Bay, about 1 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Northwest Florida Beaches (ECP), about 30 minutes",
       "se": "Steady year round",
@@ -1813,7 +1813,7 @@
     "pensacola": {
       "s": "Pensacola",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$267K",
+      "pr": "$345K house · $169K condo",
       "h": "Baptist Hospital, about 1 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Pensacola (PNS), about 15 minutes",
       "se": "Busy summers",
@@ -1870,7 +1870,7 @@
     "pensacola-beach": {
       "s": "Pensacola Beach",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$738K",
+      "pr": "$778K home",
       "h": "Gulf Breeze Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: Baptist Hospital (Level II), about 8 mi</small>",
       "a": "Pensacola (PNS), about 30 minutes",
       "se": "Very busy summers",
@@ -1927,7 +1927,7 @@
     "navarre-beach": {
       "s": "Navarre Beach",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$765K",
+      "pr": "$779K home",
       "h": "HCA Florida Fort Walton-Destin Hospital, about 15 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Destin Fort Walton Beach (VPS), about 30 minutes. Pensacola (PNS) about 50",
       "se": "Busy April through October, calm in winter",
@@ -1984,7 +1984,7 @@
     "perdido-key": {
       "s": "Perdido Key",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$735K",
+      "pr": "$537K home",
       "h": "Baptist Hospital, about 14 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Pensacola (PNS), about 30 minutes",
       "se": "Busy summers and a packed Mullet Toss weekend in April",
@@ -2041,7 +2041,7 @@
     "gulf-breeze": {
       "s": "Gulf Breeze",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$479K",
+      "pr": "$852K house · $272K condo",
       "h": "Gulf Breeze Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: Baptist Hospital (Level II), about 6 mi</small>",
       "a": "Pensacola (PNS), about 20 to 25 minutes",
       "se": "Year round residents, busy bridge traffic on summer weekends",
@@ -2098,7 +2098,7 @@
     "port-st-joe": {
       "s": "Port St. Joe",
       "rg": "The Forgotten Coast",
-      "pr": "$460K",
+      "pr": "$425K house",
       "h": "Ascension Sacred Heart Gulf, about 3 mi<small class=\"cmp-sub\">Trauma center: Ascension Sacred Heart Bay (Level II), about 32 mi</small>",
       "a": "Northwest Florida Beaches (ECP), about 1 hour",
       "se": "Quiet year round, busier in summer",
@@ -2155,7 +2155,7 @@
     "crystal-river": {
       "s": "Crystal River",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$335K",
+      "pr": "$484K house",
       "h": "Tampa General Hospital Crystal River, about 4 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Ocala Hospital (Level II), about 33 mi</small>",
       "a": "Tampa (TPA), about 1.5 hours",
       "se": "Busiest in winter manatee season",
@@ -2212,7 +2212,7 @@
     "homosassa": {
       "s": "Homosassa",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$330K",
+      "pr": "$443K house",
       "h": "Tampa General Hospital Crystal River, about 12 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Bayonet Point Hospital (Level II), about 29 mi</small>",
       "a": "Tampa (TPA), about 1 hour 20 minutes",
       "se": "Quiet, busier in scallop season",
@@ -2269,7 +2269,7 @@
     "ozello": {
       "s": "Ozello",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$231K",
+      "pr": "$445K house",
       "h": "Tampa General Hospital Crystal River, about 6 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Bayonet Point Hospital (Level II), about 35 mi</small>",
       "a": "Tampa (TPA), about 1.5 hours",
       "se": "Quiet year round",
@@ -2326,7 +2326,7 @@
     "steinhatchee": {
       "s": "Steinhatchee",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$279K",
+      "pr": "$350K house",
       "h": "Doctors' Memorial Hospital, about 33 mi<small class=\"cmp-sub\">Trauma center: UF Health Shands Hospital (Level I), about 63 mi</small>",
       "a": "Gainesville (GNV), about 1.5 hours",
       "se": "Busy in summer scallop season",
@@ -2383,7 +2383,7 @@
     "apollo-beach": {
       "s": "Apollo Beach",
       "rg": "Tampa and the South Shore",
-      "pr": "$525K",
+      "pr": "$459K house",
       "h": "St. Joseph's Hospital-South, about 4 mi<small class=\"cmp-sub\">Trauma center: Tampa General Hospital (Level I), about 12 mi</small>",
       "a": "Tampa (TPA), about 35 to 45 minutes",
       "se": "Steady year round",
@@ -2440,7 +2440,7 @@
     "clearwater": {
       "s": "Clearwater",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$360K",
+      "pr": "$440K house",
       "h": "Morton Plant Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 17 mi</small>",
       "a": "Tampa (TPA), about 30 minutes, or St. Pete Clearwater (PIE)",
       "se": "Busy most of the year",
@@ -2497,7 +2497,7 @@
     "indian-rocks-beach": {
       "s": "Indian Rocks Beach",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$575K",
+      "pr": "$824K house · $615K condo",
       "h": "HCA Florida Largo West Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 15 mi</small>",
       "a": "St. Pete Clearwater (PIE) or Tampa (TPA), about 40 minutes",
       "se": "Busier in winter and spring",
@@ -2554,7 +2554,7 @@
     "madeira-beach": {
       "s": "Madeira Beach",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$604K",
+      "pr": "$679K house · $708K condo",
       "h": "HCA Florida St. Petersburg Hospital, about 4 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 10 mi</small>",
       "a": "St. Pete Clearwater (PIE) or Tampa (TPA), about 40 minutes",
       "se": "Busy winter and spring",
@@ -2611,7 +2611,7 @@
     "new-port-richey": {
       "s": "New Port Richey",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$228K",
+      "pr": "$240K house",
       "h": "Morton Plant North Bay Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Bayonet Point Hospital (Level II), about 8 mi</small>",
       "a": "Tampa (TPA), about 45 minutes",
       "se": "Easygoing year round",
@@ -2668,7 +2668,7 @@
     "ruskin": {
       "s": "Ruskin",
       "rg": "Tampa and the South Shore",
-      "pr": "$322K",
+      "pr": "$315K house",
       "h": "HCA Florida South Shore Hospital, about 4 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 13 mi</small>",
       "a": "Tampa (TPA), about 40 minutes",
       "se": "Steady year round",
@@ -2725,7 +2725,7 @@
     "safety-harbor": {
       "s": "Safety Harbor",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$550K",
+      "pr": "$252K condo",
       "h": "Mease Countryside Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: St. Joseph's Hospital (Level II), about 12 mi</small>",
       "a": "Tampa (TPA), about 25 minutes",
       "se": "Easygoing year round",
@@ -2782,7 +2782,7 @@
     "st-pete-beach": {
       "s": "St. Pete Beach",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$577K",
+      "pr": "$812K house · $490K condo",
       "h": "HCA Florida Pasadena Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 7 mi</small>",
       "a": "Tampa (TPA) or St. Pete Clearwater (PIE), about 35 minutes",
       "se": "Busy winter and spring",
@@ -2839,7 +2839,7 @@
     "st-petersburg": {
       "s": "St. Petersburg",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$495K",
+      "pr": "$420K house · $305K condo",
       "h": "Orlando Health Bayfront Hospital, about 1 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Tampa (TPA), about 25 to 35 minutes, or St. Pete Clearwater (PIE)",
       "se": "Lively all year",
@@ -2896,7 +2896,7 @@
     "sun-city-center": {
       "s": "Sun City Center",
       "rg": "Tampa and the South Shore",
-      "pr": "$250K",
+      "pr": "$319K house · $165K condo",
       "h": "HCA Florida South Shore Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: Tampa General Hospital (Level I), about 16 mi</small>",
       "a": "Tampa (TPA), about 40 minutes",
       "se": "Busier in winter",
@@ -2953,7 +2953,7 @@
     "tampa": {
       "s": "Tampa",
       "rg": "Tampa and the South Shore",
-      "pr": "$479K",
+      "pr": "$450K house · $398K condo",
       "h": "Tampa General Hospital, about 1 mi<small class=\"cmp-sub\">Also a Level I trauma center</small>",
       "a": "Tampa (TPA), about 15 minutes",
       "se": "Busy year round",
@@ -3010,7 +3010,7 @@
     "tarpon-springs": {
       "s": "Tarpon Springs",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$390K",
+      "pr": "$448K house · $199K condo",
       "h": "AdventHealth North Pinellas, about 1 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Bayonet Point Hospital (Level II), about 15 mi</small>",
       "a": "Tampa (TPA), about 40 minutes",
       "se": "Busier in winter",
@@ -3067,7 +3067,7 @@
     "treasure-island": {
       "s": "Treasure Island",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$825K",
+      "pr": "$975K house · $380K condo",
       "h": "HCA Florida Pasadena Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 8 mi</small>",
       "a": "Tampa (TPA) or St. Pete Clearwater (PIE), about 35 minutes",
       "se": "Busy winter and spring",
@@ -3124,7 +3124,7 @@
     "bradenton": {
       "s": "Bradenton",
       "rg": "Sarasota, Bradenton and Venice",
-      "pr": "$470K",
+      "pr": "$349K house · $250K condo",
       "h": "Manatee Memorial Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Blake Hospital (Level II), about 3 mi</small>",
       "a": "Sarasota Bradenton (SRQ), about 20 minutes",
       "se": "Busier in winter",
@@ -3181,7 +3181,7 @@
     "bradenton-beach": {
       "s": "Bradenton Beach",
       "rg": "Sarasota, Bradenton and Venice",
-      "pr": "$860K",
+      "pr": "$492K condo",
       "h": "HCA Florida Blake Hospital, about 5 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Sarasota Bradenton (SRQ), about 30 minutes",
       "se": "Busy winters and weekends",
@@ -3238,7 +3238,7 @@
     "cortez": {
       "s": "Cortez",
       "rg": "Sarasota, Bradenton and Venice",
-      "pr": "$490K",
+      "pr": "$800K house · $310K condo",
       "h": "HCA Florida Blake Hospital, about 3 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Sarasota Bradenton (SRQ), about 25 minutes",
       "se": "Quiet, except festival weekend",
@@ -3295,7 +3295,7 @@
     "englewood": {
       "s": "Englewood",
       "rg": "Sarasota, Bradenton and Venice",
-      "pr": "$339K",
+      "pr": "$375K house · $190K condo",
       "h": "HCA Florida Englewood Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: Sarasota Memorial Hospital (Level II), about 27 mi</small>",
       "a": "Punta Gorda (PGD), about 40 minutes",
       "se": "Busier in winter",
@@ -3352,7 +3352,7 @@
     "sarasota": {
       "s": "Sarasota",
       "rg": "Sarasota, Bradenton and Venice",
-      "pr": "$530K",
+      "pr": "$655K house · $548K condo",
       "h": "Sarasota Memorial Hospital, about 1 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Sarasota Bradenton (SRQ), about 15 minutes",
       "se": "Busy winters",
@@ -3411,7 +3411,7 @@
     "siesta-key": {
       "s": "Siesta Key",
       "rg": "Sarasota, Bradenton and Venice",
-      "pr": "$1.1M",
+      "pr": "$1.53M house · $735K condo",
       "h": "Sarasota Memorial Hospital, about 4 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Sarasota Bradenton (SRQ), about 25 minutes",
       "se": "Very busy winter and spring",
@@ -3468,7 +3468,7 @@
     "venice": {
       "s": "Venice",
       "rg": "Sarasota, Bradenton and Venice",
-      "pr": "$385K",
+      "pr": "$495K house · $254K condo",
       "h": "Sarasota Memorial Hospital-Venice, about 4 mi<small class=\"cmp-sub\">Trauma center: Sarasota Memorial Hospital (Level II), about 16 mi</small>",
       "a": "Sarasota Bradenton (SRQ), about 35 to 40 minutes",
       "se": "Busy winters",
@@ -3528,7 +3528,7 @@
     "bonita-springs": {
       "s": "Bonita Springs",
       "rg": "Fort Myers, Sanibel and Charlotte Harbor",
-      "pr": "$476K",
+      "pr": "$700K house",
       "h": "NCH North Naples Hospital, about 5 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 15 mi</small>",
       "a": "Southwest Florida (RSW), about 25 minutes",
       "se": "Busy winters",
@@ -3587,7 +3587,7 @@
     "cape-coral": {
       "s": "Cape Coral",
       "rg": "Fort Myers, Sanibel and Charlotte Harbor",
-      "pr": "$369K",
+      "pr": "$379K house",
       "h": "HealthPark Medical Center, about 4 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 6 mi</small>",
       "a": "Southwest Florida (RSW), about 35 minutes",
       "se": "Busier in winter",
@@ -3644,7 +3644,7 @@
     "chokoloskee": {
       "s": "Chokoloskee",
       "rg": "Naples, Marco Island and the Everglades",
-      "pr": "$310K",
+      "pr": "$360K condo",
       "h": "Physicians Regional Medical Center Collier Boulevard, about 29 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 59 mi</small>",
       "a": "Southwest Florida (RSW), about 1.5 hours",
       "se": "Quiet. Winter is prime fishing season",
@@ -3701,7 +3701,7 @@
     "everglades-city": {
       "s": "Everglades City",
       "rg": "Naples, Marco Island and the Everglades",
-      "pr": "$250K",
+      "pr": "$250K home",
       "h": "Physicians Regional Medical Center Collier Boulevard, about 25 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 55 mi</small>",
       "a": "Southwest Florida (RSW), about 1.5 hours",
       "se": "Busy November through April, very quiet in summer",
@@ -3760,7 +3760,7 @@
     "fort-myers": {
       "s": "Fort Myers",
       "rg": "Fort Myers, Sanibel and Charlotte Harbor",
-      "pr": "$310K",
+      "pr": "$410K house",
       "h": "Lee Memorial Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 7 mi</small>",
       "a": "Southwest Florida (RSW), about 20 minutes",
       "se": "Busy winters",
@@ -3817,7 +3817,7 @@
     "fort-myers-beach": {
       "s": "Fort Myers Beach",
       "rg": "Fort Myers, Sanibel and Charlotte Harbor",
-      "pr": "$492K",
+      "pr": "$1.07M house",
       "h": "HealthPark Medical Center, about 4 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 9 mi</small>",
       "a": "Southwest Florida (RSW), about 40 minutes",
       "se": "Busy winter and spring",
@@ -3874,7 +3874,7 @@
     "marco-island": {
       "s": "Marco Island",
       "rg": "Naples, Marco Island and the Everglades",
-      "pr": "$1.01M",
+      "pr": "$1.51M house",
       "h": "Physicians Regional Medical Center Collier Boulevard, about 12 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 43 mi</small>",
       "a": "Southwest Florida (RSW), about 50 minutes",
       "se": "Busy winters",
@@ -3931,7 +3931,7 @@
     "port-charlotte": {
       "s": "Port Charlotte",
       "rg": "Fort Myers, Sanibel and Charlotte Harbor",
-      "pr": "$290K",
+      "pr": "$275K house · $122K condo",
       "h": "HCA Florida Fawcett Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 33 mi</small>",
       "a": "Punta Gorda (PGD), about 15 minutes",
       "se": "Busier in winter",
@@ -3988,7 +3988,7 @@
     "punta-gorda": {
       "s": "Punta Gorda",
       "rg": "Fort Myers, Sanibel and Charlotte Harbor",
-      "pr": "$333K",
+      "pr": "$588K house · $272K condo",
       "h": "HCA Florida Fawcett Hospital, about 5 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 29 mi</small>",
       "a": "Punta Gorda (PGD), about 10 minutes",
       "se": "Busier in winter",
@@ -4045,7 +4045,7 @@
     "sanibel-island": {
       "s": "Sanibel Island",
       "rg": "Fort Myers, Sanibel and Charlotte Harbor",
-      "pr": "$910K",
+      "pr": "$1.08M house · $725K condo",
       "h": "HealthPark Medical Center, about 12 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 17 mi</small>",
       "a": "Southwest Florida (RSW), about 45 minutes",
       "se": "Busy winters",
@@ -4102,7 +4102,7 @@
     "key-largo": {
       "s": "Key Largo",
       "rg": "The Florida Keys",
-      "pr": "$809K",
+      "pr": "$998K house",
       "h": "Baptist Health Mariners Hospital, about 7 mi<small class=\"cmp-sub\">Trauma center: Jackson South Medical Center (Level II), about 38 mi</small>",
       "a": "Miami (MIA), about 1 hour 15 minutes",
       "se": "Busy winters and weekends",
@@ -4159,7 +4159,7 @@
     "bal-harbour": {
       "s": "Bal Harbour",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$1.55M",
+      "pr": "$18.58M house",
       "h": "Jackson North Medical Center, about 5 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Aventura Hospital (Level II), about 5 mi</small>",
       "a": "Miami (MIA) or Fort Lauderdale (FLL), about 35 minutes",
       "se": "Busy winters",
@@ -4216,7 +4216,7 @@
     "boca-raton": {
       "s": "Boca Raton",
       "rg": "The Palm Beaches",
-      "pr": "$584K",
+      "pr": "$1.2M house",
       "h": "Baptist Health Boca Raton Regional Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: Delray Medical Center (Level I), about 5 mi</small>",
       "a": "Palm Beach airport or Fort Lauderdale (FLL), about 30 minutes",
       "se": "Busy winters",
@@ -4273,7 +4273,7 @@
     "dania-beach": {
       "s": "Dania Beach",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$370K",
+      "pr": "$542K house · $248K condo",
       "h": "Memorial Regional Hospital, about 3 mi<small class=\"cmp-sub\">Also a Level I trauma center</small>",
       "a": "Fort Lauderdale (FLL), about 10 minutes",
       "se": "Busy winters",
@@ -4330,7 +4330,7 @@
     "hallandale": {
       "s": "Hallandale Beach",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$245K",
+      "pr": "$550K house · $245K condo",
       "h": "HCA Florida Aventura Hospital, about 1 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Fort Lauderdale (FLL), about 20 minutes",
       "se": "Busy winters",
@@ -4387,7 +4387,7 @@
     "highland-beach": {
       "s": "Highland Beach",
       "rg": "The Palm Beaches",
-      "pr": "$1.0M",
+      "pr": "$3.05M house · $975K condo",
       "h": "Baptist Health Boca Raton Regional Hospital, about 4 mi<small class=\"cmp-sub\">Trauma center: Delray Medical Center (Level I), about 5 mi</small>",
       "a": "Palm Beach airport, about 30 minutes",
       "se": "Quiet year round",
@@ -4444,7 +4444,7 @@
     "hollywood": {
       "s": "Hollywood",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$478K",
+      "pr": "$550K house · $270K condo",
       "h": "Memorial Regional Hospital, about 2 mi<small class=\"cmp-sub\">Also a Level I trauma center</small>",
       "a": "Fort Lauderdale (FLL), about 15 minutes",
       "se": "Busy winters",
@@ -4501,7 +4501,7 @@
     "lauderdale-by-the-sea": {
       "s": "Lauderdale by the Sea",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$528K",
+      "pr": "$435K condo",
       "h": "Broward Health Imperial Point, about 1 mi<small class=\"cmp-sub\">Trauma center: Broward Health North (Level II), about 6 mi</small>",
       "a": "Fort Lauderdale (FLL), about 25 minutes",
       "se": "Busy winters",
@@ -4558,7 +4558,7 @@
     "lighthouse-point": {
       "s": "Lighthouse Point",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$873K",
+      "pr": "$1.33M house · $168K condo",
       "h": "Broward Health North, about 2 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Fort Lauderdale (FLL), about 25 minutes",
       "se": "Steady year round",
@@ -4615,7 +4615,7 @@
     "north-miami-beach": {
       "s": "North Miami Beach",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$475K",
+      "pr": "$505K house · $242K condo",
       "h": "Jackson North Medical Center, about 3 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Aventura Hospital (Level II), about 3 mi</small>",
       "a": "Miami (MIA) or Fort Lauderdale (FLL), about 30 minutes",
       "se": "Busy year round",
@@ -4672,7 +4672,7 @@
     "north-palm-beach": {
       "s": "North Palm Beach",
       "rg": "The Palm Beaches",
-      "pr": "$628K",
+      "pr": "$1.14M house",
       "h": "Palm Beach Gardens Medical Center, about 2 mi<small class=\"cmp-sub\">Trauma center: St. Mary's Medical Center (Level I), about 5 mi</small>",
       "a": "Palm Beach airport, about 20 minutes",
       "se": "Busier in winter",
@@ -4729,7 +4729,7 @@
     "palm-beach": {
       "s": "Palm Beach",
       "rg": "The Palm Beaches",
-      "pr": "$1.85M",
+      "pr": "$13.5M house",
       "h": "Good Samaritan Medical Center, about 2 mi<small class=\"cmp-sub\">Trauma center: St. Mary's Medical Center (Level I), about 4 mi</small>",
       "a": "Palm Beach airport, about 15 minutes",
       "se": "Busy winters",
@@ -4786,7 +4786,7 @@
     "palm-beach-gardens": {
       "s": "Palm Beach Gardens",
       "rg": "The Palm Beaches",
-      "pr": "$810K",
+      "pr": "$900K house",
       "h": "Palm Beach Gardens Medical Center, about 3 mi<small class=\"cmp-sub\">Trauma center: St. Mary's Medical Center (Level I), about 7 mi</small>",
       "a": "Palm Beach airport, about 20 minutes",
       "se": "Busier in winter",
@@ -4843,7 +4843,7 @@
     "riviera-beach": {
       "s": "Riviera Beach",
       "rg": "The Palm Beaches",
-      "pr": "$398K",
+      "pr": "$360K house",
       "h": "St. Mary's Medical Center, about 1 mi<small class=\"cmp-sub\">Also a Level I trauma center</small>",
       "a": "Palm Beach airport, about 15 minutes",
       "se": "Busier in winter",
@@ -4900,7 +4900,7 @@
     "sunny-isles-beach": {
       "s": "Sunny Isles Beach",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$2.06M",
+      "pr": "$2.25M house",
       "h": "HCA Florida Aventura Hospital, about 2 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Fort Lauderdale (FLL) or Miami (MIA), about 30 minutes",
       "se": "Busy year round",
@@ -4957,7 +4957,7 @@
     "west-palm-beach": {
       "s": "West Palm Beach",
       "rg": "The Palm Beaches",
-      "pr": "$404K",
+      "pr": "$602K house",
       "h": "Good Samaritan Medical Center, about 1 mi<small class=\"cmp-sub\">Trauma center: St. Mary's Medical Center (Level I), about 3 mi</small>",
       "a": "Palm Beach airport, about 10 minutes",
       "se": "Busy winters",
@@ -5014,7 +5014,7 @@
     "wilton-manors": {
       "s": "Wilton Manors",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$693K",
+      "pr": "$794K house · $276K condo",
       "h": "Holy Cross Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: Broward Health Medical Center (Level I), about 4 mi</small>",
       "a": "Fort Lauderdale (FLL), about 20 minutes",
       "se": "Lively year round",
@@ -5071,7 +5071,7 @@
     "jensen-beach": {
       "s": "Jensen Beach",
       "rg": "The Treasure Coast",
-      "pr": "$475K",
+      "pr": "$433K house · $168K condo",
       "h": "Cleveland Clinic Martin North Hospital, about 4 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Lawnwood Hospital (Level II), about 14 mi</small>",
       "a": "Palm Beach airport, about 50 minutes",
       "se": "Easygoing year round",
@@ -5128,7 +5128,7 @@
     "port-st-lucie": {
       "s": "Port St. Lucie",
       "rg": "The Treasure Coast",
-      "pr": "$395K",
+      "pr": "$400K house · $170K condo",
       "h": "HCA Florida St. Lucie Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Lawnwood Hospital (Level II), about 10 mi</small>",
       "a": "Palm Beach airport, about 50 minutes",
       "se": "Steady year round",
@@ -5185,7 +5185,7 @@
     "sebastian": {
       "s": "Sebastian",
       "rg": "The Treasure Coast",
-      "pr": "$399K",
+      "pr": "$352K house",
       "h": "Orlando Health Sebastian River Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: Holmes Regional Medical Center (Level II), about 21 mi</small>",
       "a": "Melbourne (MLB), about 35 minutes, or Vero Beach, about 25",
       "se": "Quiet year round",
@@ -5242,7 +5242,7 @@
     "stuart": {
       "s": "Stuart",
       "rg": "The Treasure Coast",
-      "pr": "$580K",
+      "pr": "$452K house · $184K condo",
       "h": "Cleveland Clinic Martin North Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Lawnwood Hospital (Level II), about 17 mi</small>",
       "a": "Palm Beach airport, about 45 minutes",
       "se": "Busier in winter",
@@ -5299,7 +5299,7 @@
     "vero-beach": {
       "s": "Vero Beach",
       "rg": "The Treasure Coast",
-      "pr": "$377K",
+      "pr": "$605K house · $267K condo",
       "h": "Cleveland Clinic Indian River Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Lawnwood Hospital (Level II), about 15 mi</small>",
       "a": "Melbourne (MLB), about 45 minutes. Vero's own airport has a few airline flights",
       "se": "Busy winters",
@@ -5356,7 +5356,7 @@
     "indialantic": {
       "s": "Indialantic",
       "rg": "The Space Coast",
-      "pr": "$763K",
+      "pr": "$691K house",
       "h": "Holmes Regional Medical Center, about 3 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Melbourne (MLB), about 15 minutes",
       "se": "Easygoing year round",
@@ -5413,7 +5413,7 @@
     "melbourne-beach": {
       "s": "Melbourne Beach",
       "rg": "The Space Coast",
-      "pr": "$560K",
+      "pr": "$849K house",
       "h": "Holmes Regional Medical Center, about 3 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Melbourne (MLB), about 20 minutes",
       "se": "Quiet year round",
@@ -5470,7 +5470,7 @@
     "palm-bay": {
       "s": "Palm Bay",
       "rg": "The Space Coast",
-      "pr": "$330K",
+      "pr": "$310K house · $132K condo",
       "h": "Palm Bay Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: Holmes Regional Medical Center (Level II), about 4 mi</small>",
       "a": "Melbourne (MLB), about 15 minutes",
       "se": "Steady year round",
@@ -5527,7 +5527,7 @@
     "satellite-beach": {
       "s": "Satellite Beach",
       "rg": "The Space Coast",
-      "pr": "$516K",
+      "pr": "$522K house · $510K condo",
       "h": "Holmes Regional Medical Center, about 6 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Melbourne (MLB), about 20 minutes",
       "se": "Easygoing year round",
@@ -5584,7 +5584,7 @@
     "titusville": {
       "s": "Titusville",
       "rg": "The Space Coast",
-      "pr": "$292K",
+      "pr": "$282K house · $152K condo",
       "h": "Parrish Medical Center, about 2 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Lake Monroe Hospital (Level II), about 32 mi</small>",
       "a": "Orlando (MCO), about 45 minutes",
       "se": "Busy on launch days",
@@ -5641,7 +5641,7 @@
     "west-melbourne": {
       "s": "West Melbourne",
       "rg": "The Space Coast",
-      "pr": "$380K",
+      "pr": "$400K house · $191K condo",
       "h": "Holmes Regional Medical Center, about 3 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Melbourne (MLB), about 10 minutes",
       "se": "Steady year round",
@@ -5698,7 +5698,7 @@
     "atlantic-beach": {
       "s": "Atlantic Beach",
       "rg": "The First Coast",
-      "pr": "$640K",
+      "pr": "$725K house · $470K condo",
       "h": "Baptist Medical Center Beaches, about 4 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Memorial Hospital (Level II), about 13 mi</small>",
       "a": "Jacksonville (JAX), about 35 minutes",
       "se": "Busy summers",
@@ -5755,7 +5755,7 @@
     "neptune-beach": {
       "s": "Neptune Beach",
       "rg": "The First Coast",
-      "pr": "$790K",
+      "pr": "$780K house",
       "h": "Baptist Medical Center Beaches, about 3 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Memorial Hospital (Level II), about 12 mi</small>",
       "a": "Jacksonville (JAX), about 35 minutes",
       "se": "Busy summers",
@@ -5812,7 +5812,7 @@
     "ponte-vedra-beach": {
       "s": "Ponte Vedra Beach",
       "rg": "The First Coast",
-      "pr": "$1.43M",
+      "pr": "$1.56M home",
       "h": "Baptist Medical Center Beaches, about 3 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Memorial Hospital (Level II), about 13 mi</small>",
       "a": "Jacksonville (JAX), about 40 minutes",
       "se": "Busy during The Players in March",
@@ -5869,7 +5869,7 @@
     "st-augustine-beach": {
       "s": "St. Augustine Beach",
       "rg": "The First Coast",
-      "pr": "$621K",
+      "pr": "$625K home",
       "h": "UF Health Flagler Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Orange Park Hospital (Level II), about 36 mi</small>",
       "a": "Jacksonville (JAX), about 1 hour",
       "se": "Busy summers",
@@ -5926,7 +5926,7 @@
     "daytona-beach-shores": {
       "s": "Daytona Beach Shores",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$380K",
+      "pr": "$375K home",
       "h": "Halifax Health Medical Center of Port Orange, about 4 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 5 mi</small>",
       "a": "Daytona Beach (DAB), about 15 minutes",
       "se": "Busy during event weeks",
@@ -5983,7 +5983,7 @@
     "ormond-beach": {
       "s": "Ormond Beach",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$383K",
+      "pr": "$396K house · $260K condo",
       "h": "AdventHealth Daytona Beach, about 4 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 6 mi</small>",
       "a": "Daytona Beach (DAB), about 20 minutes",
       "se": "Busy during event weeks",
@@ -6040,7 +6040,7 @@
     "palm-coast": {
       "s": "Palm Coast",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$356K",
+      "pr": "$354K house · $232K condo",
       "h": "AdventHealth Palm Coast Parkway, about 3 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 28 mi</small>",
       "a": "Daytona Beach (DAB), about 35 minutes",
       "se": "Steady year round",
@@ -6097,7 +6097,7 @@
     "port-orange": {
       "s": "Port Orange",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$355K",
+      "pr": "$349K house · $175K condo",
       "h": "Halifax Health Medical Center of Port Orange, about 1 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 5 mi</small>",
       "a": "Daytona Beach (DAB), about 15 minutes",
       "se": "Steady year round",
@@ -6154,7 +6154,7 @@
     "navarre": {
       "s": "Navarre",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$415K",
+      "pr": "$430K house",
       "h": "HCA Florida Fort Walton-Destin Hospital, about 14 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Pensacola (PNS) about 45 minutes, Destin Fort Walton Beach (VPS) about 45 to 60",
       "se": "Busy summer traffic on Highway 98, calm in winter",
@@ -6211,7 +6211,7 @@
     "mary-esther": {
       "s": "Mary Esther",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$325K",
+      "pr": "$107K condo",
       "h": "HCA Florida Fort Walton-Destin Hospital, about 4 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Destin Fort Walton Beach (VPS), about 30 minutes",
       "se": "Steady year round, Highway 98 busier in summer",
@@ -6268,7 +6268,7 @@
     "fort-walton-beach": {
       "s": "Fort Walton Beach",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$358K",
+      "pr": "$350K house · $183K condo",
       "h": "HCA Florida Fort Walton-Destin Hospital, about 4 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Destin Fort Walton Beach (VPS), about 20 minutes",
       "se": "Busy summers, lively spring festival season",
@@ -6325,7 +6325,7 @@
     "shalimar": {
       "s": "Shalimar",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$449K",
+      "pr": "$525K house",
       "h": "HCA Florida Fort Walton-Destin Hospital, about 4 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Destin Fort Walton Beach (VPS), about 10 to 15 minutes",
       "se": "Steady year round",
@@ -6382,7 +6382,7 @@
     "niceville": {
       "s": "Niceville",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$520K",
+      "pr": "$435K house",
       "h": "HCA Florida Twin Cities Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Fort Walton-Destin Hospital (Level II), about 10 mi</small>",
       "a": "Destin Fort Walton Beach (VPS), about 15 minutes",
       "se": "Steady all year, light tourist swing",
@@ -6439,7 +6439,7 @@
     "miramar-beach": {
       "s": "Miramar Beach",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$735K",
+      "pr": "$1.06M house · $551K condo",
       "h": "Ascension Sacred Heart Emerald Coast, about 5 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Fort Walton-Destin Hospital (Level II), about 16 mi</small>",
       "a": "Destin Fort Walton Beach (VPS), about 30 minutes",
       "se": "Very busy summers and spring break",
@@ -6496,7 +6496,7 @@
     "freeport": {
       "s": "Freeport",
       "rg": "Pensacola and the Emerald Coast",
-      "pr": "$385K",
+      "pr": "$355K house",
       "h": "North Walton Doctors Hospital, about 11 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Fort Walton-Destin Hospital (Level II), about 30 mi</small>",
       "a": "Northwest Florida Beaches (ECP) or Destin Fort Walton Beach (VPS), about 45 minutes",
       "se": "Steady all year, beach traffic on US 331 in summer",
@@ -6553,7 +6553,7 @@
     "mexico-beach": {
       "s": "Mexico Beach",
       "rg": "The Forgotten Coast",
-      "pr": "$497K",
+      "pr": "$460K house · $400K condo",
       "h": "Ascension Sacred Heart Gulf, about 14 mi<small class=\"cmp-sub\">Trauma center: Ascension Sacred Heart Bay (Level II), about 20 mi</small>",
       "a": "Northwest Florida Beaches (ECP), about 50 minutes",
       "se": "Busy summers, very quiet winters",
@@ -6610,7 +6610,7 @@
     "keaton-beach": {
       "s": "Keaton Beach",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "Ask for current sales",
+      "pr": "$414K house",
       "h": "Doctors' Memorial Hospital, about 21 mi<small class=\"cmp-sub\">Trauma center: Tallahassee Memorial HealthCare (Level II), about 59 mi</small>",
       "a": "Tallahassee (TLH), about 1 hour 30 minutes",
       "se": "Busiest in summer scallop season, very quiet the rest of the year",
@@ -6667,7 +6667,7 @@
     "horseshoe-beach": {
       "s": "Horseshoe Beach",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$216K",
+      "pr": "$248K house · $209K condo",
       "h": "Doctors' Memorial Hospital, about 50 mi<small class=\"cmp-sub\">Trauma center: UF Health Shands Hospital (Level I), about 59 mi</small>",
       "a": "Gainesville (GNV), about 1 hour 30 minutes",
       "se": "Busiest in summer scallop and fishing season",
@@ -6724,7 +6724,7 @@
     "suwannee": {
       "s": "Suwannee",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$261K",
+      "pr": "$184K condo",
       "h": "Tampa General Hospital Crystal River, about 41 mi<small class=\"cmp-sub\">Trauma center: UF Health Shands Hospital (Level I), about 53 mi</small>",
       "a": "Gainesville (GNV), about 1 hour 30 minutes",
       "se": "Busiest in spring and summer fishing season, quiet in winter",
@@ -6781,7 +6781,7 @@
     "yankeetown": {
       "s": "Yankeetown",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$192K",
+      "pr": "$285K house",
       "h": "Tampa General Hospital Crystal River, about 8 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Ocala Hospital (Level II), about 36 mi</small>",
       "a": "Gainesville (GNV), about 1 hour 15 minutes; Tampa (TPA), about 1 hour 45 minutes",
       "se": "Quiet year round, busiest around the November seafood festival and in fishing season",
@@ -6838,7 +6838,7 @@
     "inglis": {
       "s": "Inglis",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$237K",
+      "pr": "$275K house",
       "h": "Tampa General Hospital Crystal River, about 6 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Ocala Hospital (Level II), about 34 mi</small>",
       "a": "Gainesville (GNV), about 1 hour 15 minutes; Tampa (TPA), about 1 hour 45 minutes",
       "se": "Quiet most of the year, a little busier with anglers and paddlers in spring and fall",
@@ -6895,7 +6895,7 @@
     "hernando-beach": {
       "s": "Hernando Beach",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$542K",
+      "pr": "$547K house",
       "h": "HCA Florida Oak Hill Hospital, about 8 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Bayonet Point Hospital (Level II), about 10 mi</small>",
       "a": "Tampa (TPA), about 1 hour",
       "se": "Busiest in scallop season and on summer weekends at Pine Island",
@@ -6952,7 +6952,7 @@
     "weeki-wachee": {
       "s": "Weeki Wachee",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$375K",
+      "pr": "$362K home",
       "h": "HCA Florida Oak Hill Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Bayonet Point Hospital (Level II), about 13 mi</small>",
       "a": "Tampa (TPA), about 55 minutes",
       "se": "Busy summer weekends at the springs and river, quieter in winter when manatees come in",
@@ -7009,7 +7009,7 @@
     "aripeka": {
       "s": "Aripeka",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$251K",
+      "pr": "$130K house",
       "h": "HCA Florida Bayonet Point Hospital, about 5 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Tampa (TPA), about 50 minutes",
       "se": "Quiet all year, a few more anglers and day trippers on spring and summer weekends",
@@ -7066,7 +7066,7 @@
     "hudson": {
       "s": "Hudson",
       "rg": "The Nature Coast and Big Bend",
-      "pr": "$274K",
+      "pr": "$300K house · $215K condo",
       "h": "HCA Florida Bayonet Point Hospital, about 1 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Tampa (TPA), about 50 minutes; St. Pete Clearwater (PIE), about 45 minutes",
       "se": "Busier in winter and on summer weekends at SunWest Park",
@@ -7123,7 +7123,7 @@
     "port-richey": {
       "s": "Port Richey",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$236K",
+      "pr": "$235K home",
       "h": "Morton Plant North Bay Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Bayonet Point Hospital (Level II), about 6 mi</small>",
       "a": "Tampa (TPA), about 45 minutes",
       "se": "Busier in winter, quiet and steamy in summer",
@@ -7180,7 +7180,7 @@
     "holiday": {
       "s": "Holiday",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$220K",
+      "pr": "$221K home",
       "h": "AdventHealth North Pinellas, about 3 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Bayonet Point Hospital (Level II), about 14 mi</small>",
       "a": "Tampa (TPA), about 40 minutes",
       "se": "Mild winters bring more boaters and anglers; summers are hot and quiet",
@@ -7237,7 +7237,7 @@
     "palm-harbor": {
       "s": "Palm Harbor",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$485K",
+      "pr": "$450K house · $194K condo",
       "h": "AdventHealth North Pinellas, about 4 mi<small class=\"cmp-sub\">Trauma center: St. Joseph's Hospital (Level II), about 18 mi</small>",
       "a": "Tampa (TPA), about 30 minutes",
       "se": "Year round community; busiest in March for golf and winter visitors",
@@ -7294,7 +7294,7 @@
     "oldsmar": {
       "s": "Oldsmar",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$399K",
+      "pr": "$422K house",
       "h": "Mease Countryside Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: St. Joseph's Hospital (Level II), about 11 mi</small>",
       "a": "Tampa (TPA), about 15 to 20 minutes",
       "se": "Year round; spring festivals and winter racing at Tampa Bay Downs",
@@ -7351,7 +7351,7 @@
     "belleair-beach": {
       "s": "Belleair Beach",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$825K",
+      "pr": "$901K house",
       "h": "HCA Florida Largo West Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 16 mi</small>",
       "a": "St. Pete Clearwater (PIE), about 25 minutes; Tampa (TPA), about 40 minutes",
       "se": "Quiet most of the year; more visitors on nearby beaches in spring",
@@ -7408,7 +7408,7 @@
     "tierra-verde": {
       "s": "Tierra Verde",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$640K",
+      "pr": "$990K house · $675K condo",
       "h": "HCA Florida Pasadena Hospital, about 4 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 7 mi</small>",
       "a": "Tampa (TPA) or St. Pete Clearwater (PIE), about 35 to 40 minutes",
       "se": "Busy beach and boat traffic on spring and summer weekends; calm on weekdays",
@@ -7465,7 +7465,7 @@
     "indian-shores": {
       "s": "Indian Shores",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$575K",
+      "pr": "$670K condo",
       "h": "HCA Florida Largo West Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 14 mi</small>",
       "a": "St. Pete Clearwater (PIE), about 25 minutes; Tampa (TPA), about 40 minutes",
       "se": "Busy late winter through spring and on summer weekends",
@@ -7522,7 +7522,7 @@
     "redington-shores": {
       "s": "Redington Shores",
       "rg": "St. Pete and the Clearwater Beaches",
-      "pr": "$650K",
+      "pr": "$650K house · $730K condo",
       "h": "HCA Florida Largo West Hospital, about 4 mi<small class=\"cmp-sub\">Trauma center: Orlando Health Bayfront Hospital (Level II), about 13 mi</small>",
       "a": "St. Pete Clearwater (PIE), about 25 minutes; Tampa (TPA), about 40 minutes",
       "se": "Busy late winter through spring and on summer weekends",
@@ -7579,7 +7579,7 @@
     "gibsonton": {
       "s": "Gibsonton",
       "rg": "Tampa and the South Shore",
-      "pr": "$320K",
+      "pr": "$325K house",
       "h": "AdventHealth Riverview, about 4 mi<small class=\"cmp-sub\">Trauma center: Tampa General Hospital (Level I), about 7 mi</small>",
       "a": "Tampa (TPA), about 30 minutes",
       "se": "Year round, warmer and quieter in summer",
@@ -7636,7 +7636,7 @@
     "miami": {
       "s": "Miami",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$588K",
+      "pr": "$625K condo",
       "h": "Jackson Memorial Hospital, about 2 mi<small class=\"cmp-sub\">Also a Level I trauma center</small>",
       "a": "Miami International (MIA), about 15 to 25 minutes from Brickell",
       "se": "Busiest December through April, hot and stormy summers",
@@ -7693,7 +7693,7 @@
     "jacksonville": {
       "s": "Jacksonville",
       "rg": "The First Coast",
-      "pr": "$285K",
+      "pr": "$290K house · $170K condo",
       "h": "Baptist Medical Center Jacksonville, about 1 mi<small class=\"cmp-sub\">Trauma center: UF Health Jacksonville (Level I), about 2 mi</small>",
       "a": "Jacksonville (JAX), about 20 minutes from downtown",
       "se": "Mild winters, hot humid summers, busy on game days",
@@ -7750,7 +7750,7 @@
     "indian-river-shores": {
       "s": "Indian River Shores",
       "rg": "The Treasure Coast",
-      "pr": "$1.42M",
+      "pr": "$1.98M house · $525K condo",
       "h": "Cleveland Clinic Indian River Hospital, about 4 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Lawnwood Hospital (Level II), about 19 mi</small>",
       "a": "Melbourne (MLB), about 40 minutes. Vero Beach's airport, about 15 minutes, has a few airline flights",
       "se": "Busy winters, very quiet summers",
@@ -7807,7 +7807,7 @@
     "hutchinson-island": {
       "s": "Hutchinson Island",
       "rg": "The Treasure Coast",
-      "pr": "$400K to $490K",
+      "pr": "$492K home",
       "h": "Cleveland Clinic Martin North Hospital, about 5 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Lawnwood Hospital (Level II), about 15 mi</small>",
       "a": "West Palm Beach (DJT), about 50 minutes from the Stuart end",
       "se": "Busier in winter, turtle nesting in summer",
@@ -7864,7 +7864,7 @@
     "sewalls-point": {
       "s": "Sewall's Point",
       "rg": "The Treasure Coast",
-      "pr": "$2.2M",
+      "pr": "$1.5M house",
       "h": "Cleveland Clinic Martin North Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Lawnwood Hospital (Level II), about 18 mi</small>",
       "a": "West Palm Beach (DJT), about 45 minutes",
       "se": "Busier in winter",
@@ -7921,7 +7921,7 @@
     "palm-city": {
       "s": "Palm City",
       "rg": "The Treasure Coast",
-      "pr": "$597K",
+      "pr": "$578K house",
       "h": "Cleveland Clinic Martin North Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Lawnwood Hospital (Level II), about 18 mi</small>",
       "a": "West Palm Beach (DJT), about 40 minutes via the Turnpike or Interstate 95",
       "se": "Steady year round",
@@ -7978,7 +7978,7 @@
     "port-salerno": {
       "s": "Port Salerno",
       "rg": "The Treasure Coast",
-      "pr": "$392K",
+      "pr": "$394K house",
       "h": "Cleveland Clinic Martin South Hospital, about 2 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Lawnwood Hospital (Level II), about 22 mi</small>",
       "a": "West Palm Beach (DJT), about 40 minutes",
       "se": "Busier in winter",
@@ -8035,7 +8035,7 @@
     "hobe-sound": {
       "s": "Hobe Sound",
       "rg": "The Treasure Coast",
-      "pr": "$515K",
+      "pr": "$525K house · $240K condo",
       "h": "Cleveland Clinic Martin South Hospital, about 8 mi<small class=\"cmp-sub\">Trauma center: St. Mary's Medical Center (Level I), about 22 mi</small>",
       "a": "West Palm Beach (DJT), about 35 minutes",
       "se": "Busier in winter",
@@ -8092,7 +8092,7 @@
     "tequesta": {
       "s": "Tequesta",
       "rg": "The Palm Beaches",
-      "pr": "$640K",
+      "pr": "$340K condo",
       "h": "Jupiter Medical Center, about 3 mi<small class=\"cmp-sub\">Trauma center: St. Mary's Medical Center (Level I), about 14 mi</small>",
       "a": "West Palm Beach (DJT), about 30 minutes",
       "se": "Busier in winter, quiet summers",
@@ -8149,7 +8149,7 @@
     "juno-beach": {
       "s": "Juno Beach",
       "rg": "The Palm Beaches",
-      "pr": "$800K",
+      "pr": "$650K condo",
       "h": "Jupiter Medical Center, about 3 mi<small class=\"cmp-sub\">Trauma center: St. Mary's Medical Center (Level I), about 10 mi</small>",
       "a": "West Palm Beach (DJT), about 25 minutes",
       "se": "Busier in winter, turtle season March through October",
@@ -8206,7 +8206,7 @@
     "lake-park": {
       "s": "Lake Park",
       "rg": "The Palm Beaches",
-      "pr": "$480K",
+      "pr": "$450K house",
       "h": "St. Mary's Medical Center, about 3 mi<small class=\"cmp-sub\">Also a Level I trauma center</small>",
       "a": "West Palm Beach (DJT), about 15 minutes",
       "se": "Busier in winter",
@@ -8263,7 +8263,7 @@
     "palm-beach-shores": {
       "s": "Palm Beach Shores",
       "rg": "The Palm Beaches",
-      "pr": "$1.18M",
+      "pr": "$1.37M house",
       "h": "St. Mary's Medical Center, about 2 mi<small class=\"cmp-sub\">Also a Level I trauma center</small>",
       "a": "West Palm Beach (DJT), about 20 minutes",
       "se": "Busier in winter",
@@ -8320,7 +8320,7 @@
     "lake-worth-beach": {
       "s": "Lake Worth Beach",
       "rg": "The Palm Beaches",
-      "pr": "$445K",
+      "pr": "$465K house",
       "h": "HCA Florida JFK Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: St. Mary's Medical Center (Level I), about 10 mi</small>",
       "a": "West Palm Beach (DJT), about 15 minutes",
       "se": "Busiest in winter, festival season February and March",
@@ -8377,7 +8377,7 @@
     "lantana": {
       "s": "Lantana",
       "rg": "The Palm Beaches",
-      "pr": "$423K",
+      "pr": "$515K house",
       "h": "HCA Florida JFK Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: Delray Medical Center (Level I), about 11 mi</small>",
       "a": "West Palm Beach (DJT), about 15 minutes",
       "se": "Busier in winter",
@@ -8434,7 +8434,7 @@
     "boynton-beach": {
       "s": "Boynton Beach",
       "rg": "The Palm Beaches",
-      "pr": "$400K",
+      "pr": "$435K house",
       "h": "Baptist Health Bethesda Hospital East, about 2 mi<small class=\"cmp-sub\">Trauma center: Delray Medical Center (Level I), about 8 mi</small>",
       "a": "West Palm Beach (DJT), about 20 to 25 minutes, or Fort Lauderdale (FLL), about 40 minutes",
       "se": "Busy winters",
@@ -8491,7 +8491,7 @@
     "vilano-beach": {
       "s": "Vilano Beach",
       "rg": "The First Coast",
-      "pr": "$790K",
+      "pr": "$701K home",
       "h": "UF Health Flagler Hospital, about 4 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Orange Park Hospital (Level II), about 31 mi</small>",
       "a": "Jacksonville (JAX), about 50 minutes",
       "se": "Busy summer weekends, easy the rest of the year",
@@ -8548,7 +8548,7 @@
     "crescent-beach": {
       "s": "Crescent Beach",
       "rg": "The First Coast",
-      "pr": "$440K",
+      "pr": "$535K home",
       "h": "UF Health Flagler Hospital, about 8 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Orange Park Hospital (Level II), about 40 mi</small>",
       "a": "Jacksonville (JAX), about 1 hour 10 minutes, or Daytona Beach (DAB), about 1 hour",
       "se": "Quiet most of the year, busier on summer weekends",
@@ -8605,7 +8605,7 @@
     "beverly-beach": {
       "s": "Beverly Beach",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$975K",
+      "pr": "$904K house · $685K condo",
       "h": "AdventHealth Palm Coast, about 4 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 22 mi</small>",
       "a": "Daytona Beach (DAB), about 40 minutes",
       "se": "Quiet most of the year",
@@ -8662,7 +8662,7 @@
     "ormond-by-the-sea": {
       "s": "Ormond by the Sea",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$343K",
+      "pr": "$394K house · $276K condo",
       "h": "AdventHealth Daytona Beach, about 7 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 9 mi</small>",
       "a": "Daytona Beach (DAB), about 25 minutes",
       "se": "Quiet most of the year, busier during Daytona event weeks",
@@ -8719,7 +8719,7 @@
     "ponce-inlet": {
       "s": "Ponce Inlet",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$521K",
+      "pr": "$955K house · $480K condo",
       "h": "AdventHealth New Smyrna Beach, about 4 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 11 mi</small>",
       "a": "Daytona Beach (DAB), about 25 minutes",
       "se": "Busy summer weekends and Daytona event weeks, quiet otherwise",
@@ -8776,7 +8776,7 @@
     "edgewater": {
       "s": "Edgewater",
       "rg": "Daytona, New Smyrna and Flagler",
-      "pr": "$259K",
+      "pr": "$300K house",
       "h": "AdventHealth New Smyrna Beach, about 2 mi<small class=\"cmp-sub\">Trauma center: Halifax Health Medical Center of Daytona Beach (Level II), about 17 mi</small>",
       "a": "Daytona Beach (DAB), about 30 minutes, or Orlando (MCO), about 1 hour",
       "se": "Steady year round",
@@ -8833,7 +8833,7 @@
     "cape-canaveral": {
       "s": "Cape Canaveral",
       "rg": "The Space Coast",
-      "pr": "$288K",
+      "pr": "$385K house · $287K condo",
       "h": "Cape Canaveral Hospital, about 4 mi<small class=\"cmp-sub\">Trauma center: Holmes Regional Medical Center (Level II), about 22 mi</small>",
       "a": "Orlando (MCO), about 45 minutes, or Melbourne (MLB), about 40",
       "se": "Busy on cruise days and launch days, calmer than Cocoa Beach year round",
@@ -8890,7 +8890,7 @@
     "merritt-island": {
       "s": "Merritt Island",
       "rg": "The Space Coast",
-      "pr": "$460K",
+      "pr": "$470K house · $175K condo",
       "h": "Cape Canaveral Hospital, about 3 mi<small class=\"cmp-sub\">Trauma center: Holmes Regional Medical Center (Level II), about 19 mi</small>",
       "a": "Orlando (MCO), about 45 minutes, or Melbourne (MLB), about 35",
       "se": "Steady year round, busier around big launches",
@@ -8947,7 +8947,7 @@
     "cocoa-village": {
       "s": "Cocoa Village",
       "rg": "The Space Coast",
-      "pr": "$290K",
+      "pr": "$551K condo",
       "h": "Cape Canaveral Hospital, about 6 mi<small class=\"cmp-sub\">Trauma center: Holmes Regional Medical Center (Level II), about 20 mi</small>",
       "a": "Orlando (MCO), about 40 minutes, or Melbourne (MLB), about 30",
       "se": "Busy on festival weekends, steady the rest of the year",
@@ -9004,7 +9004,7 @@
     "rockledge": {
       "s": "Rockledge",
       "rg": "The Space Coast",
-      "pr": "$397K",
+      "pr": "$360K house · $198K condo",
       "h": "Cape Canaveral Hospital, about 6 mi<small class=\"cmp-sub\">Trauma center: Holmes Regional Medical Center (Level II), about 18 mi</small>",
       "a": "Orlando (MCO), about 45 minutes, or Melbourne (MLB), about 25",
       "se": "Steady year round",
@@ -9061,7 +9061,7 @@
     "indian-harbour-beach": {
       "s": "Indian Harbour Beach",
       "rg": "The Space Coast",
-      "pr": "$454K",
+      "pr": "$496K house · $324K condo",
       "h": "Holmes Regional Medical Center, about 4 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Melbourne (MLB), about 15 minutes, or Orlando (MCO), about 1 hour",
       "se": "Easygoing year round",
@@ -9118,7 +9118,7 @@
     "melbourne": {
       "s": "Melbourne",
       "rg": "The Space Coast",
-      "pr": "$350K",
+      "pr": "$315K house · $165K condo",
       "h": "Holmes Regional Medical Center, about 1 mi<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Melbourne (MLB), about 10 minutes, or Orlando (MCO), about 1 hour",
       "se": "Steady year round",
@@ -9175,7 +9175,7 @@
     "marathon": {
       "s": "Marathon",
       "rg": "The Florida Keys",
-      "pr": "$715K",
+      "pr": "$980K home",
       "h": "Fishermen's Community Hospital, in town",
       "a": "Key West (EYW), about 1 hour",
       "se": "Busy winters",
@@ -9232,7 +9232,7 @@
     "big-pine-key": {
       "s": "Big Pine Key",
       "rg": "The Florida Keys",
-      "pr": "$740K",
+      "pr": "$794K house",
       "h": "Fishermen's Community Hospital in Marathon, about 24 mi<small class=\"cmp-sub\">Lower Keys Medical Center in Key West is about 36 mi</small>",
       "a": "Key West (EYW), about 30 to 40 minutes",
       "se": "Busy winters",
@@ -9289,7 +9289,7 @@
     "key-biscayne": {
       "s": "Key Biscayne",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$1.49M",
+      "pr": "$3.91M house",
       "h": "Mercy Hospital in Coconut Grove, across the bay<small class=\"cmp-sub\">Trauma center: Jackson Memorial Ryder Trauma Center (Level I)</small>",
       "a": "Miami (MIA), about 25 minutes",
       "se": "Busy winters and weekends",
@@ -9346,7 +9346,7 @@
     "boca-grande": {
       "s": "Boca Grande",
       "rg": "Fort Myers, Sanibel and Charlotte Harbor",
-      "pr": "$2.4M",
+      "pr": "$3.7M home",
       "h": "No hospital on the island. Island ambulances go to mainland hospitals such as HCA Florida Englewood",
       "a": "Punta Gorda (PGD), about 1 hour",
       "se": "Busy winter and spring",
@@ -9403,7 +9403,7 @@
     "pompano-beach": {
       "s": "Pompano Beach",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$395K",
+      "pr": "$500K house · $258K condo",
       "h": "Broward Health North, next door in Deerfield Beach<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Fort Lauderdale (FLL), about 20 minutes",
       "se": "Busy winters",
@@ -9460,7 +9460,7 @@
     "deerfield-beach": {
       "s": "Deerfield Beach",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$330K",
+      "pr": "$455K house · $155K condo",
       "h": "Broward Health North, in town<small class=\"cmp-sub\">Also a Level II trauma center</small>",
       "a": "Fort Lauderdale (FLL), about 30 minutes",
       "se": "Busy winters",

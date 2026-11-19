@@ -8,13 +8,16 @@ const FULL=u=>u.replace(/\/[tms]\/([^/]+)$/,'/$1');
 const E=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 document.getElementById('tr').innerHTML=top.map((x,i)=>{const t=TD[x.id];return `<section class="sl"><div class="im" ${i?`data-bg="${t.img}"`:`style="background-image:url('${FULL(t.img)}')"`}></div><div class="ov"></div>
 <div class="tx"><div class="k">${i?`#${i+1} of ${top.length}`:'Your #1 match'} &middot; ${x.fit}% match</div><h2 class="rt">${E(t.n)}</h2>
-<div class="rg">${E(t.r.replace(/ · /g,', '))}${t.p?` &middot; <b>${E(t.p)}</b> typical home`:''}</div><p>${E(t.b)}</p>
+<div class="rg">${E(t.r.replace(/ · /g,', '))}${t.p?` &middot; <b>${E(t.p)}</b> median ${t.pk=='home'?'sale':t.pk||'house'}${t.pc?` &middot; ${E(t.pc)} condo`:''}${t.pf?' (few sales)':''}`:''}</div><p>${E(t.b)}</p>
 ${x.why&&x.why.length?`<div class="why"><span>Fits what you asked for</span>${x.why.map(E).join(' · ')}</div>`:''}
 <div class="bt"><a class="go" href="towns/${x.id}.html">Explore ${E(t.n.replace(/ \(.*\)$/,''))}</a><a class="gh" href="#short">Email me all ${top.length}</a></div></div></section>`}).join('');
 document.getElementById('dt').innerHTML=top.map(()=>'<i></i>').join('');
 /* Nov 13: only the #1 photo loads with the page; the other four follow once it's in (or as soon as you swipe), so the first photo shows up seconds sooner on phones */
 (()=>{const L=[...document.querySelectorAll('#tr .im[data-bg]')];if(!L.length)return;const go=()=>L.forEach(e=>{if(e.dataset.bg){e.style.backgroundImage=`url('${e.dataset.bg}')`;delete e.dataset.bg}});const f=new Image();f.onload=f.onerror=()=>setTimeout(go,150);f.src=FULL(TD[top[0].id].img);document.getElementById('tr').addEventListener('scroll',go,{once:true,passive:true});setTimeout(go,5000)})();
-document.querySelectorAll('a[href^="find-your-mile.html?a="]').forEach(l=>l.href='map.html?mode=sliders');
+/* Nov 19: the map links open the Slider Map set to your quiz answers (sv and bud come from the quiz) */
+const SLQ=(P.get('sv')?'&sv='+encodeURIComponent(P.get('sv')).replace(/%2C/g,',').replace(/%3A/g,':'):'')+(P.get('bud')!=null&&/^\d$/.test(P.get('bud'))?'&bud='+P.get('bud'):'');
+const PIN='&pin='+top.map(x=>x.id).join(',');
+document.querySelectorAll('a[href^="find-your-mile.html?a="],a[href="map.html?mode=sliders"]').forEach(l=>l.href='map.html?mode=sliders'+SLQ+PIN);
 window.TOP5=top;window.ANS=a;
 try{if(localStorage.getItem('fc-mail')){const sh=document.getElementById('short');if(sh)sh.style.display='none';const cmp='compare.html?t='+top.slice(0,3).map(x=>x.id).join(',');document.querySelectorAll('.bt a.gh[href="#short"]').forEach(l=>{l.href=cmp;l.textContent='Compare my top 3'})}}catch(e){}
 })();

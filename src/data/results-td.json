@@ -2,1170 +2,1431 @@
   "30a": {
     "n": "30A (Santa Rosa Beach)",
     "r": "Panhandle",
-    "p": "$915K",
+    "p": "$1.97M",
     "b": "Sugar white sand, rare coastal dune lakes and small beach towns strung along Scenic Highway 30A.",
-    "img": "img/c/30a.webp"
+    "img": "img/c/30a.webp",
+    "pk": "house",
+    "pc": "$1.1M"
   },
   "destin": {
     "n": "Destin",
     "r": "Panhandle",
-    "p": "$540K",
+    "p": "$574K",
     "b": "A harbor town where the charter boats leave at dawn and the emerald water starts right off the Destin Harbor boardwalk.",
-    "img": "img/c/destin.webp"
+    "img": "img/c/destin.webp",
+    "pk": "home"
   },
   "pcb": {
     "n": "Panama City Beach",
     "r": "Panhandle",
-    "p": "$425K",
+    "p": "$386K",
     "b": "Wide white sand, live music near the pier after dark, and the jetties at St. Andrews State Park when you want it quiet.",
-    "img": "img/c/pcb.webp"
+    "img": "img/c/pcb.webp",
+    "pk": "house",
+    "pc": "$345K"
   },
   "apalachicola": {
     "n": "Apalachicola",
     "r": "Panhandle",
-    "p": "$300K to $385K",
+    "p": "$350K",
     "b": "Brick storefronts from the cotton and oyster days, shrimp boats on the river and St. George Island just across the bridge.",
-    "img": "img/c/apalachicola.webp"
+    "img": "img/c/apalachicola.webp",
+    "pk": "house"
   },
   "cedarkey": {
     "n": "Cedar Key",
     "r": "Nature Coast",
-    "p": "$320K",
+    "p": "$375K",
     "b": "A tiny island town of clam farms and backwater keys, where dinner happens on Dock Street as the sun goes down over the Gulf.",
-    "img": "img/c/spring-nature-coast.webp"
+    "img": "img/c/spring-nature-coast.webp",
+    "pk": "house",
+    "pc": "$275K"
   },
   "dunedin": {
     "n": "Dunedin",
     "r": "Tampa Bay",
-    "p": "$450K",
+    "p": "$550K",
     "b": "A walkable downtown right on the Pinellas Trail, with the ferry to Caladesi Island's beach a short ride away.",
-    "img": "img/c/dunedin-honeymoon.webp"
+    "img": "img/c/dunedin-honeymoon.webp",
+    "pk": "house",
+    "pc": "$195K"
   },
   "clearwaterbeach": {
     "n": "Clearwater Beach",
     "r": "Tampa Bay",
-    "p": "$650K to $800K",
+    "p": "$832K",
     "b": "Soft white sand, a walkable beach strip and nightly sunset gatherings at Pier 60.",
-    "img": "img/c/clearwater-beach.webp"
+    "img": "img/c/clearwater-beach.webp",
+    "pk": "home"
   },
   "gulfport": {
     "n": "Gulfport",
     "r": "Tampa Bay",
-    "p": "$385K",
+    "p": "$450K",
     "b": "Galleries and cafes run down Beach Boulevard to the water, and the pace never picks up much.",
-    "img": "img/c/bay-mangroves.webp"
+    "img": "img/c/bay-mangroves.webp",
+    "pk": "house",
+    "pc": "$245K"
   },
   "ami": {
     "n": "Anna Maria Island",
     "r": "Southwest Florida",
-    "p": "$1.3M to $1.65M",
+    "p": "$1.14M",
     "b": "Old Florida on a small island, with no high rises and a free trolley.",
-    "img": "img/c/anna-maria-island.webp"
+    "img": "img/c/anna-maria-island.webp",
+    "pk": "home",
+    "pf": true
   },
   "longboat": {
     "n": "Longboat Key",
     "r": "Southwest Florida",
-    "p": "$732K",
+    "p": "$2.1M",
     "b": "A quiet barrier island with uncrowded beaches, and St. Armands Circle and Sarasota's theaters a short drive away.",
-    "img": "img/c/longboat-key.webp"
+    "img": "img/c/longboat-key.webp",
+    "pk": "house",
+    "pc": "$850K"
   },
   "captiva": {
     "n": "Captiva Island",
     "r": "Southwest Florida",
-    "p": "$560K",
+    "p": "$2.27M",
     "b": "A lush little island next to Sanibel, with some of the best shelling in the country and banyan shaded bike rides to the sunset.",
-    "img": "img/c/captiva.webp"
+    "img": "img/c/captiva.webp",
+    "pk": "house",
+    "pc": "$642K",
+    "pf": true
   },
   "matlacha": {
     "n": "Matlacha",
     "r": "Southwest Florida",
-    "p": "$494K",
+    "p": "$455K",
     "b": "Brightly painted galleries, bait shops and a fishing bridge on Matlacha Pass, with mangroves to kayak on either side.",
-    "img": "img/c/matlacha.webp"
+    "img": "img/c/matlacha.webp",
+    "pk": "house"
   },
   "naples": {
     "n": "Naples",
     "r": "Southwest Florida",
-    "p": "$685K",
+    "p": "$5.03M",
     "b": "Polished and peaceful, with golf, boating, a walkable downtown and calm Gulf beaches from the pier north to Vanderbilt Beach.",
-    "img": "img/c/naples-beach.webp"
+    "img": "img/c/naples-beach.webp",
+    "pk": "house"
   },
   "keywest": {
     "n": "Key West",
     "r": "South Florida and the Keys",
-    "p": "$1.05M",
+    "p": "$1.6M",
     "b": "The end of the road, where you bike everywhere, spend the afternoon on the water and walk to Mallory Square for the sunset.",
-    "img": "img/c/key-west.webp"
+    "img": "img/c/key-west.webp",
+    "pk": "house",
+    "pc": "$690K"
   },
   "islamorada": {
     "n": "Islamorada",
     "r": "South Florida and the Keys",
-    "p": "$1.44M",
+    "p": "$1.8M",
     "b": "The sport fishing capital of the Keys, with bonefish and tarpon on the backcountry flats and fish houses right on the water.",
-    "img": "img/c/keys-bridge.webp"
+    "img": "img/c/keys-bridge.webp",
+    "pk": "house",
+    "pc": "$490K",
+    "pf": true
   },
   "southbeach": {
     "n": "Miami (South Beach)",
     "r": "South Florida and the Keys",
-    "p": "$524K",
+    "p": "$400K",
     "b": "Art deco along Ocean Drive, a beachwalk for sunrise runs and dinners that start late.",
-    "img": "img/c/southbeach-street.webp"
+    "img": "img/c/southbeach-street.webp",
+    "pk": "home"
   },
   "ftl": {
     "n": "Fort Lauderdale",
     "r": "South Florida and the Keys",
-    "p": "$605K",
+    "p": "$735K",
     "b": "A boating city of canals and marinas, where the boat goes out in the afternoon and dinner ends up on Las Olas.",
-    "img": "img/c/fort-lauderdale-beach.webp"
+    "img": "img/c/fort-lauderdale-beach.webp",
+    "pk": "house",
+    "pc": "$460K"
   },
   "delray": {
     "n": "Delray Beach",
     "r": "South Florida and the Keys",
-    "p": "$546K",
+    "p": "$775K",
     "b": "Atlantic Avenue runs from downtown straight to the ocean, so breakfast, the beach and live music are all on one street.",
-    "img": "img/c/delray-beach.webp"
+    "img": "img/c/delray-beach.webp",
+    "pk": "house"
   },
   "jupiter": {
     "n": "Jupiter",
     "r": "South Florida and the Keys",
-    "p": "$720K",
+    "p": "$1.1M",
     "b": "Clear inlet water to snorkel, the red Jupiter Inlet Lighthouse, and the Loxahatchee River to paddle in the morning.",
-    "img": "img/c/jupiter.webp"
+    "img": "img/c/jupiter.webp",
+    "pk": "house",
+    "pc": "$440K"
   },
   "fortpierce": {
     "n": "Fort Pierce",
     "r": "Treasure and Space Coast",
-    "p": "$278K",
+    "p": "$263K",
     "b": "A working waterfront with fishing at the inlet, a big Saturday farmers market downtown and prices that stay down to earth.",
-    "img": "img/c/fort-pierce.webp"
+    "img": "img/c/fort-pierce.webp",
+    "pk": "house",
+    "pc": "$199K"
   },
   "cocoa": {
     "n": "Cocoa Beach",
     "r": "Treasure and Space Coast",
-    "p": "$450K",
+    "p": "$770K",
     "b": "A classic surf town with a pier to surf by in the morning and rocket launches to watch from the sand at night.",
-    "img": "img/c/cocoa-beach.webp"
+    "img": "img/c/cocoa-beach.webp",
+    "pk": "house",
+    "pc": "$350K"
   },
   "nsb": {
     "n": "New Smyrna Beach",
     "r": "Northeast Florida",
-    "p": "$450K",
+    "p": "$460K",
     "b": "A surf town about an hour from Orlando, with Flagler Avenue's walkable beach strip for tacos when the waves go flat.",
-    "img": "img/c/new-smyrna-beach.webp"
+    "img": "img/c/new-smyrna-beach.webp",
+    "pk": "house",
+    "pc": "$425K"
   },
   "daytona": {
     "n": "Daytona Beach",
     "r": "Northeast Florida",
-    "p": "$211K",
+    "p": "$348K",
     "b": "Wide, hard packed beaches you can drive onto, and some of the most affordable coastal homes in Florida.",
-    "img": "img/c/daytona-beach.webp"
+    "img": "img/c/daytona-beach.webp",
+    "pk": "house",
+    "pc": "$140K"
   },
   "flagler": {
     "n": "Flagler Beach",
     "r": "Northeast Florida",
-    "p": "$450K",
+    "p": "$504K",
     "b": "A small, unhurried town along A1A, with ocean view lunches and a longer pier due in early 2027.",
-    "img": "img/c/flagler-beach.webp"
+    "img": "img/c/flagler-beach.webp",
+    "pk": "house",
+    "pc": "$285K"
   },
   "staug": {
     "n": "St. Augustine",
     "r": "Northeast Florida",
-    "p": "$422K",
+    "p": "$517K",
     "b": "The oldest city in the country, with the Castillo de San Marcos, brick streets for morning coffee and the beach a bridge away.",
-    "img": "img/c/st-augustine-aerial.webp"
+    "img": "img/c/st-augustine-aerial.webp",
+    "pk": "home"
   },
   "jaxbeach": {
     "n": "Jacksonville Beach",
     "r": "Northeast Florida",
-    "p": "$720K",
+    "p": "$655K",
     "b": "A surf town built around its pier, with patios a block from the sand and Jacksonville right next door.",
-    "img": "img/c/jacksonville-beach.webp"
+    "img": "img/c/jacksonville-beach.webp",
+    "pk": "house",
+    "pc": "$485K"
   },
   "fernandina": {
     "n": "Fernandina Beach",
     "r": "Northeast Florida",
-    "p": "$581K",
+    "p": "$658K",
     "b": "A walkable Victorian downtown on Centre Street, shrimp boats at the docks and uncrowded beaches near the Georgia line.",
-    "img": "img/c/fernandina-beach.webp"
+    "img": "img/c/fernandina-beach.webp",
+    "pk": "house"
   },
   "carrabelle": {
     "n": "Carrabelle",
     "r": "Panhandle",
-    "p": "$260K",
+    "p": "$254K",
     "b": "A small fishing town on the Forgotten Coast with a working harbor and a slow, friendly pace.",
-    "img": "img/c/carrabelle.webp"
+    "img": "img/c/carrabelle.webp",
+    "pk": "home"
   },
   "st-george-island": {
     "n": "St. George Island",
     "r": "Panhandle",
-    "p": "$1.25M",
+    "p": "$1.02M",
     "b": "A barrier island with no high rises, a lighthouse at its center and nine miles of state park beach at the east end.",
-    "img": "img/c/st-george-island.webp"
+    "img": "img/c/st-george-island.webp",
+    "pk": "house"
   },
   "st-teresa": {
     "n": "St. Teresa",
     "r": "Panhandle",
-    "p": null,
+    "p": "$850K",
     "b": "A quiet line of beach houses on US 98 east of Carrabelle, beside the FSU Coastal and Marine Lab. There are no stores here, and that is the point.",
-    "img": "img/c/st-teresa.webp"
+    "img": "img/c/st-teresa.webp",
+    "pk": "house",
+    "pf": true
   },
   "st-marks": {
     "n": "St. Marks",
     "r": "Panhandle",
-    "p": null,
+    "p": "$310K",
     "b": "A tiny river town where the road ends at the water, half an hour south of Tallahassee, with a Spanish fort site, a rail trail and a huge wildlife refuge next door.",
-    "img": "img/c/st-marks.webp"
+    "img": "img/c/st-marks.webp",
+    "pk": "house",
+    "pf": true
   },
   "panama-city": {
     "n": "Panama City",
     "r": "Panhandle",
-    "p": "$284K",
+    "p": "$285K",
     "b": "A bayfront city on St. Andrews Bay with a reviving downtown and the Gulf beaches a bridge away.",
-    "img": "img/c/panama-city.webp"
+    "img": "img/c/panama-city.webp",
+    "pk": "house",
+    "pc": "$185K"
   },
   "pensacola": {
     "n": "Pensacola",
     "r": "Panhandle",
-    "p": "$267K",
+    "p": "$345K",
     "b": "Florida's westernmost city, with more than 450 years of history, a lively downtown and white sand beaches across the bay.",
-    "img": "img/c/pensacola.webp"
+    "img": "img/c/pensacola.webp",
+    "pk": "house",
+    "pc": "$169K"
   },
   "pensacola-beach": {
     "n": "Pensacola Beach",
     "r": "Panhandle",
-    "p": "$738K",
+    "p": "$778K",
     "b": "A barrier island town on Santa Rosa Island, with sugar white sand and miles of protected national seashore on both sides.",
-    "img": "img/c/pensacola-beach.webp"
+    "img": "img/c/pensacola-beach.webp",
+    "pk": "home"
   },
   "navarre-beach": {
     "n": "Navarre Beach",
     "r": "Panhandle",
-    "p": "$765K",
+    "p": "$779K",
     "b": "The quiet stretch of the Emerald Coast, with a long Gulf pier, a sea turtle center and miles of open dunes between Pensacola Beach and Destin.",
-    "img": "img/c/navarre-beach.webp"
+    "img": "img/c/navarre-beach.webp",
+    "pk": "home"
   },
   "perdido-key": {
     "n": "Perdido Key",
     "r": "Panhandle",
-    "p": "$735K",
+    "p": "$537K",
     "b": "A skinny barrier island on the Alabama line, with Gulf front condos, protected dunes on both ends and the Flora-Bama in the middle of it all.",
-    "img": "img/c/perdido-key.webp"
+    "img": "img/c/perdido-key.webp",
+    "pk": "home"
   },
   "gulf-breeze": {
     "n": "Gulf Breeze",
     "r": "Panhandle",
-    "p": "$479K",
+    "p": "$852K",
     "b": "A leafy peninsula between downtown Pensacola and Pensacola Beach, with quiet tree lined streets and the water at the end of every one.",
-    "img": "img/c/gulf-breeze.webp"
+    "img": "img/c/gulf-breeze.webp",
+    "pk": "house",
+    "pc": "$272K"
   },
   "port-st-joe": {
     "n": "Port St. Joe",
     "r": "Panhandle",
-    "p": "$460K",
+    "p": "$425K",
     "b": "A small town on St. Joseph Bay, known for calm clear water, bay sunsets and the beaches of Cape San Blas.",
-    "img": "img/c/port-st-joe.webp"
+    "img": "img/c/port-st-joe.webp",
+    "pk": "house"
   },
   "crystal-river": {
     "n": "Crystal River",
     "r": "Nature Coast",
-    "p": "$335K",
+    "p": "$484K",
     "b": "A spring fed town on Kings Bay where hundreds of manatees spend the winter.",
-    "img": "img/c/crystal-river.webp"
+    "img": "img/c/crystal-river.webp",
+    "pk": "house"
   },
   "homosassa": {
     "n": "Homosassa",
     "r": "Nature Coast",
-    "p": "$330K",
+    "p": "$443K",
     "b": "An Old Florida river town known for manatees, scalloping and waterfront spots you can pull up to by boat.",
-    "img": "img/c/homosassa.webp"
+    "img": "img/c/homosassa.webp",
+    "pk": "house"
   },
   "ozello": {
     "n": "Ozello",
     "r": "Nature Coast",
-    "p": "$231K",
+    "p": "$445K",
     "b": "A handful of homes on marsh islands at the end of a nine mile winding road. About as remote as the Gulf coast gets.",
-    "img": "img/c/ozello.webp"
+    "img": "img/c/ozello.webp",
+    "pk": "house",
+    "pf": true
   },
   "steinhatchee": {
     "n": "Steinhatchee",
     "r": "Nature Coast",
-    "p": "$279K",
+    "p": "$350K",
     "b": "A river fishing village on the Big Bend where summer means scallops and the nearest stoplight is a long way off.",
-    "img": "img/c/steinhatchee.webp"
+    "img": "img/c/steinhatchee.webp",
+    "pk": "house"
   },
   "apollo-beach": {
     "n": "Apollo Beach",
     "r": "Tampa Bay",
-    "p": "$525K",
+    "p": "$459K",
     "b": "A canal community on Tampa Bay where a lot of back yards have a boat lift.",
-    "img": "img/c/apollo-beach.webp"
+    "img": "img/c/apollo-beach.webp",
+    "pk": "house"
   },
   "clearwater": {
     "n": "Clearwater",
     "r": "Tampa Bay",
-    "p": "$360K",
+    "p": "$440K",
     "b": "The mainland city behind Clearwater Beach, with a rebuilt downtown waterfront and the sand a bridge away.",
-    "img": "img/c/clearwater.webp"
+    "img": "img/c/clearwater.webp",
+    "pk": "house"
   },
   "indian-rocks-beach": {
     "n": "Indian Rocks Beach",
     "r": "Tampa Bay",
-    "p": "$575K",
+    "p": "$824K",
     "b": "A low key beach town of cottages and small condos, with public beach access at the end of nearly every street.",
-    "img": "img/c/indian-rocks-beach.webp"
+    "img": "img/c/indian-rocks-beach.webp",
+    "pk": "house",
+    "pc": "$615K"
   },
   "madeira-beach": {
     "n": "Madeira Beach",
     "r": "Tampa Bay",
-    "p": "$604K",
+    "p": "$679K",
     "b": "Locals call it Mad Beach: a casual Gulf town built around the fishing boats and boardwalk at John's Pass.",
-    "img": "img/c/madeira-beach.webp"
+    "img": "img/c/madeira-beach.webp",
+    "pk": "house",
+    "pc": "$708K"
   },
   "new-port-richey": {
     "n": "New Port Richey",
     "r": "Tampa Bay",
-    "p": "$228K",
+    "p": "$240K",
     "b": "A small river town with a 1920s downtown that has been adding breweries, restaurants and a restored theater.",
-    "img": "img/c/new-port-richey.webp"
+    "img": "img/c/new-port-richey.webp",
+    "pk": "house"
   },
   "ruskin": {
     "n": "Ruskin",
     "r": "Tampa Bay",
-    "p": "$322K",
+    "p": "$315K",
     "b": "A fast growing bayside community on the Little Manatee River, with some of the lowest prices near Tampa Bay.",
-    "img": "img/c/ruskin.webp"
+    "img": "img/c/ruskin.webp",
+    "pk": "house"
   },
   "safety-harbor": {
     "n": "Safety Harbor",
     "r": "Tampa Bay",
-    "p": "$550K",
+    "p": "$252K",
     "b": "A small town on Old Tampa Bay with oak shaded streets, a historic spa and a Main Street full of local shops.",
-    "img": "img/c/safety-harbor.webp"
+    "img": "img/c/safety-harbor.webp",
+    "pk": "condo"
   },
   "st-pete-beach": {
     "n": "St. Pete Beach",
     "r": "Tampa Bay",
-    "p": "$577K",
+    "p": "$812K",
     "b": "A wide Gulf beach anchored by the pink Don CeSar hotel, with the old fishing village of Pass-a-Grille at its tip.",
-    "img": "img/c/st-pete-beach.webp"
+    "img": "img/c/st-pete-beach.webp",
+    "pk": "house",
+    "pc": "$490K"
   },
   "st-petersburg": {
     "n": "St. Petersburg",
     "r": "Tampa Bay",
-    "p": "$495K",
+    "p": "$420K",
     "b": "A sunny waterfront city with a walkable downtown, the Dalí Museum, murals on every block and Gulf beaches 20 minutes away.",
-    "img": "img/c/st-petersburg.webp"
+    "img": "img/c/st-petersburg.webp",
+    "pk": "house",
+    "pc": "$305K"
   },
   "sun-city-center": {
     "n": "Sun City Center",
     "r": "Tampa Bay",
-    "p": "$250K",
+    "p": "$319K",
     "b": "A golf cart community inland from Tampa Bay with more than 100 clubs. Most homes here are age restricted to 55 and over.",
-    "img": "img/c/sun-city-center.webp"
+    "img": "img/c/sun-city-center.webp",
+    "pk": "house",
+    "pc": "$165K"
   },
   "tampa": {
     "n": "Tampa",
     "r": "Tampa Bay",
-    "p": "$479K",
+    "p": "$450K",
     "b": "The big city of the Gulf coast: a downtown riverwalk, historic Ybor City, pro sports and a major airport.",
-    "img": "img/c/tampa.webp"
+    "img": "img/c/tampa.webp",
+    "pk": "house",
+    "pc": "$398K"
   },
   "tarpon-springs": {
     "n": "Tarpon Springs",
     "r": "Tampa Bay",
-    "p": "$390K",
+    "p": "$448K",
     "b": "A working sponge port with Greek bakeries and restaurants along the docks and bayous winding through town.",
-    "img": "img/c/tarpon-springs.webp"
+    "img": "img/c/tarpon-springs.webp",
+    "pk": "house",
+    "pc": "$199K"
   },
   "treasure-island": {
     "n": "Treasure Island",
     "r": "Tampa Bay",
-    "p": "$825K",
+    "p": "$975K",
     "b": "One of the widest beaches on the Gulf, a mile long trail along the dunes and a Sunday drum circle at sunset.",
-    "img": "img/c/treasure-island.webp"
+    "img": "img/c/treasure-island.webp",
+    "pk": "house",
+    "pc": "$380K"
   },
   "bradenton": {
     "n": "Bradenton",
     "r": "Southwest Florida",
-    "p": "$470K",
+    "p": "$349K",
     "b": "A river city with a long Riverwalk, spring training baseball and the Anna Maria Island beaches 20 minutes west.",
-    "img": "img/c/bradenton.webp"
+    "img": "img/c/bradenton.webp",
+    "pk": "house",
+    "pc": "$250K"
   },
   "bradenton-beach": {
     "n": "Bradenton Beach",
     "r": "Southwest Florida",
-    "p": "$860K",
+    "p": "$492K",
     "b": "The south end of Anna Maria Island, with a historic fishing pier, a walkable Bridge Street and water on both sides.",
-    "img": "img/c/bradenton-beach.webp"
+    "img": "img/c/bradenton-beach.webp",
+    "pk": "condo"
   },
   "cortez": {
     "n": "Cortez",
     "r": "Southwest Florida",
-    "p": "$490K",
+    "p": "$800K",
     "b": "One of the last working fishing villages in Florida, with fish houses on the bay that date back to the 1880s.",
-    "img": "img/c/cortez.webp"
+    "img": "img/c/cortez.webp",
+    "pk": "house",
+    "pc": "$310K"
   },
   "englewood": {
     "n": "Englewood",
     "r": "Southwest Florida",
-    "p": "$339K",
+    "p": "$375K",
     "b": "A laid back Gulf town with a small old downtown and beaches on Manasota Key, known for shark teeth.",
-    "img": "img/c/englewood.webp"
+    "img": "img/c/englewood.webp",
+    "pk": "house",
+    "pc": "$190K"
   },
   "sarasota": {
     "n": "Sarasota",
     "r": "Southwest Florida",
-    "p": "$530K",
+    "p": "$655K",
     "b": "The arts capital of the Gulf coast, with an opera, a ballet, The Ringling museum, Lido Beach just over the bridge and Siesta Key's famous sand minutes away.",
-    "img": "img/c/sarasota.webp"
+    "img": "img/c/sarasota.webp",
+    "pk": "house",
+    "pc": "$548K"
   },
   "siesta-key": {
     "n": "Siesta Key",
     "r": "Southwest Florida",
-    "p": "$1.1M",
+    "p": "$1.53M",
     "b": "An island of quartz white sand so fine it stays cool underfoot, with a small, lively village at the north end.",
-    "img": "img/c/siesta-key.webp"
+    "img": "img/c/siesta-key.webp",
+    "pk": "house",
+    "pc": "$735K"
   },
   "venice": {
     "n": "Venice",
     "r": "Southwest Florida",
-    "p": "$385K",
+    "p": "$495K",
     "b": "A 1920s planned town of palm lined avenues you can walk from downtown to the Gulf, with newer mainland neighborhoods and the Legacy Trail just over the bridge.",
-    "img": "img/c/venice.webp"
+    "img": "img/c/venice.webp",
+    "pk": "house",
+    "pc": "$254K"
   },
   "bonita-springs": {
     "n": "Bonita Springs",
     "r": "Southwest Florida",
-    "p": "$476K",
+    "p": "$700K",
     "b": "A city between Naples and Fort Myers with a small historic downtown, golf communities and a quiet Gulf beach on Little Hickory Island, next to Lovers Key.",
-    "img": "img/c/bonita-beach.webp"
+    "img": "img/c/bonita-beach.webp",
+    "pk": "house"
   },
   "cape-coral": {
     "n": "Cape Coral",
     "r": "Southwest Florida",
-    "p": "$369K",
+    "p": "$379K",
     "b": "A city of more than 400 miles of canals, where a boat in the back yard is normal and waterfront is still within reach.",
-    "img": "img/c/canal-swfl.webp"
+    "img": "img/c/canal-swfl.webp",
+    "pk": "house"
   },
   "chokoloskee": {
     "n": "Chokoloskee",
     "r": "Southwest Florida",
-    "p": "$310K",
+    "p": "$360K",
     "b": "A tiny shell mound island at the edge of Everglades National Park, the last stop before the Ten Thousand Islands.",
-    "img": "img/c/chokoloskee.webp"
+    "img": "img/c/chokoloskee.webp",
+    "pk": "condo",
+    "pf": true
   },
   "everglades-city": {
     "n": "Everglades City",
     "r": "Southwest Florida",
     "p": "$250K",
     "b": "A small fishing town on the Barron River at the edge of Everglades National Park, known for stone crab and as the way into the Ten Thousand Islands.",
-    "img": "img/c/everglades-city.webp"
+    "img": "img/c/everglades-city.webp",
+    "pk": "home",
+    "pf": true
   },
   "fort-myers": {
     "n": "Fort Myers",
     "r": "Southwest Florida",
-    "p": "$310K",
+    "p": "$410K",
     "b": "The City of Palms, with a brick street River District downtown and the winter homes of Edison and Ford on the river.",
-    "img": "img/c/fort-myers.webp"
+    "img": "img/c/fort-myers.webp",
+    "pk": "house"
   },
   "fort-myers-beach": {
     "n": "Fort Myers Beach",
     "r": "Southwest Florida",
-    "p": "$492K",
+    "p": "$1.07M",
     "b": "Seven miles of soft sand on Estero Island, rebuilding after Hurricane Ian with its beach town spirit intact.",
-    "img": "img/c/fort-myers-beach.webp"
+    "img": "img/c/fort-myers-beach.webp",
+    "pk": "house"
   },
   "marco-island": {
     "n": "Marco Island",
     "r": "Southwest Florida",
-    "p": "$1.01M",
+    "p": "$1.51M",
     "b": "The largest of the Ten Thousand Islands, with a wide crescent beach on one side and wild mangrove country on the other.",
-    "img": "img/c/marco-island.webp"
+    "img": "img/c/marco-island.webp",
+    "pk": "house"
   },
   "port-charlotte": {
     "n": "Port Charlotte",
     "r": "Southwest Florida",
-    "p": "$290K",
+    "p": "$275K",
     "b": "A canal community on Charlotte Harbor with some of the most affordable waterfront homes in Southwest Florida.",
-    "img": "img/c/port-charlotte.webp"
+    "img": "img/c/port-charlotte.webp",
+    "pk": "house",
+    "pc": "$122K"
   },
   "punta-gorda": {
     "n": "Punta Gorda",
     "r": "Southwest Florida",
-    "p": "$333K",
+    "p": "$588K",
     "b": "A small harbor town with brick streets, a waterfront Harborwalk and sailboat canals that lead to the Gulf.",
-    "img": "img/c/punta-gorda.webp"
+    "img": "img/c/punta-gorda.webp",
+    "pk": "house",
+    "pc": "$272K"
   },
   "sanibel-island": {
     "n": "Sanibel Island",
     "r": "Southwest Florida",
-    "p": "$910K",
+    "p": "$1.08M",
     "b": "A barrier island famous for shells, with 25 miles of bike paths, no traffic lights and more than half the island preserved.",
-    "img": "img/c/sanibel-island.webp"
+    "img": "img/c/sanibel-island.webp",
+    "pk": "house",
+    "pc": "$725K"
   },
   "key-largo": {
     "n": "Key Largo",
     "r": "South Florida and the Keys",
-    "p": "$809K",
+    "p": "$998K",
     "b": "The first Key off the mainland and the dive capital of the country, with a coral reef state park offshore.",
-    "img": "img/c/key-largo.webp"
+    "img": "img/c/key-largo.webp",
+    "pk": "house"
   },
   "bal-harbour": {
     "n": "Bal Harbour",
     "r": "South Florida and the Keys",
-    "p": "$1.55M",
+    "p": "$18.58M",
     "b": "A tiny oceanfront village at the north tip of Miami Beach, known for a luxury shopping center and a quiet beach path.",
-    "img": "img/c/bal-harbour.webp"
+    "img": "img/c/bal-harbour.webp",
+    "pk": "house",
+    "pf": true
   },
   "boca-raton": {
     "n": "Boca Raton",
     "r": "South Florida and the Keys",
-    "p": "$584K",
+    "p": "$1.2M",
     "b": "A polished city of pink Mediterranean buildings, big parks and beaches kept natural behind a line of dunes.",
-    "img": "img/c/boca-raton.webp"
+    "img": "img/c/boca-raton.webp",
+    "pk": "house"
   },
   "dania-beach": {
     "n": "Dania Beach",
     "r": "South Florida and the Keys",
-    "p": "$370K",
+    "p": "$542K",
     "b": "A small, unflashy beach city right next to the Fort Lauderdale airport, with a fishing pier and a quiet beach.",
-    "img": "img/c/dania-beach.webp"
+    "img": "img/c/dania-beach.webp",
+    "pk": "house",
+    "pc": "$248K"
   },
   "hallandale": {
     "n": "Hallandale Beach",
     "r": "South Florida and the Keys",
-    "p": "$245K",
+    "p": "$550K",
     "b": "A city of oceanfront condo towers between Fort Lauderdale and Miami, home to Gulfstream Park.",
-    "img": "img/c/hallandale-beach.webp"
+    "img": "img/c/hallandale-beach.webp",
+    "pk": "house",
+    "pc": "$245K"
   },
   "highland-beach": {
     "n": "Highland Beach",
     "r": "South Florida and the Keys",
-    "p": "$1.0M",
+    "p": "$3.05M",
     "b": "A three mile strip of oceanfront condos and homes between Boca Raton and Delray Beach, with no shops and no crowds.",
-    "img": "img/c/highland-beach.webp"
+    "img": "img/c/highland-beach.webp",
+    "pk": "house",
+    "pc": "$975K"
   },
   "hollywood": {
     "n": "Hollywood",
     "r": "South Florida and the Keys",
-    "p": "$478K",
+    "p": "$550K",
     "b": "A beach city with a 2.5 mile oceanfront Broadwalk for walking and biking, plus a downtown full of murals.",
-    "img": "img/c/hollywood.webp"
+    "img": "img/c/hollywood.webp",
+    "pk": "house",
+    "pc": "$270K"
   },
   "lauderdale-by-the-sea": {
     "n": "Lauderdale by the Sea",
     "r": "South Florida and the Keys",
-    "p": "$528K",
+    "p": "$435K",
     "b": "A low rise beach village where a coral reef sits close enough to shore that you can snorkel it from the sand.",
-    "img": "img/c/lauderdale-by-the-sea.webp"
+    "img": "img/c/lauderdale-by-the-sea.webp",
+    "pk": "condo"
   },
   "lighthouse-point": {
     "n": "Lighthouse Point",
     "r": "South Florida and the Keys",
-    "p": "$873K",
+    "p": "$1.33M",
     "b": "A boating town of deep water canals near Hillsboro Inlet, where most streets end at the water.",
-    "img": "img/c/lighthouse-point.webp"
+    "img": "img/c/lighthouse-point.webp",
+    "pk": "house",
+    "pc": "$168K"
   },
   "north-miami-beach": {
     "n": "North Miami Beach",
     "r": "South Florida and the Keys",
-    "p": "$475K",
+    "p": "$505K",
     "b": "A mainland city in north Miami-Dade with restaurants from all over the world and Oleta River State Park next door.",
-    "img": "img/c/north-miami-beach.webp"
+    "img": "img/c/north-miami-beach.webp",
+    "pk": "house",
+    "pc": "$242K"
   },
   "north-palm-beach": {
     "n": "North Palm Beach",
     "r": "South Florida and the Keys",
-    "p": "$628K",
+    "p": "$1.14M",
     "b": "A village wrapped in water, between the Intracoastal and Lake Worth, with a state park beach across the bridge.",
-    "img": "img/c/north-palm-beach.webp"
+    "img": "img/c/north-palm-beach.webp",
+    "pk": "house"
   },
   "palm-beach": {
     "n": "Palm Beach",
     "r": "South Florida and the Keys",
-    "p": "$1.85M",
+    "p": "$13.5M",
     "b": "A barrier island of clipped hedges, grand estates and Worth Avenue, with a bike trail along the lake.",
-    "img": "img/c/palm-beach.webp"
+    "img": "img/c/palm-beach.webp",
+    "pk": "house"
   },
   "palm-beach-gardens": {
     "n": "Palm Beach Gardens",
     "r": "South Florida and the Keys",
-    "p": "$810K",
+    "p": "$900K",
     "b": "A green, golf centered city a few miles inland, home to PGA National and a lot of shopping and dining.",
-    "img": "img/c/palm-beach-gardens.webp"
+    "img": "img/c/palm-beach-gardens.webp",
+    "pk": "house"
   },
   "riviera-beach": {
     "n": "Riviera Beach",
     "r": "South Florida and the Keys",
-    "p": "$398K",
+    "p": "$360K",
     "b": "A working port city with a big public marina, Peanut Island offshore and the beaches of Singer Island across the bridge.",
-    "img": "img/c/riviera-beach.webp"
+    "img": "img/c/riviera-beach.webp",
+    "pk": "house"
   },
   "sunny-isles-beach": {
     "n": "Sunny Isles Beach",
     "r": "South Florida and the Keys",
-    "p": "$2.06M",
+    "p": "$2.25M",
     "b": "A two mile line of luxury condo towers on the ocean between Miami Beach and Fort Lauderdale.",
-    "img": "img/c/sunny-isles-beach.webp"
+    "img": "img/c/sunny-isles-beach.webp",
+    "pk": "house"
   },
   "west-palm-beach": {
     "n": "West Palm Beach",
     "r": "South Florida and the Keys",
-    "p": "$404K",
+    "p": "$602K",
     "b": "The downtown of Palm Beach County, with Clematis Street, a waterfront, the Norton Museum of Art and a Brightline train station.",
-    "img": "img/c/west-palm-beach.webp"
+    "img": "img/c/west-palm-beach.webp",
+    "pk": "house"
   },
   "wilton-manors": {
     "n": "Wilton Manors",
     "r": "South Florida and the Keys",
-    "p": "$693K",
+    "p": "$794K",
     "b": "A small island city ringed by the Middle River, built around the restaurants, bars and shops of Wilton Drive.",
-    "img": "img/c/wilton-manors.webp"
+    "img": "img/c/wilton-manors.webp",
+    "pk": "house",
+    "pc": "$276K"
   },
   "jensen-beach": {
     "n": "Jensen Beach",
     "r": "Treasure and Space Coast",
-    "p": "$475K",
+    "p": "$433K",
     "b": "A small, colorful river town with an island feel and uncrowded Hutchinson Island beaches across the causeway.",
-    "img": "img/c/jensen-beach.webp"
+    "img": "img/c/jensen-beach.webp",
+    "pk": "house",
+    "pc": "$168K"
   },
   "port-st-lucie": {
     "n": "Port St. Lucie",
     "r": "Treasure and Space Coast",
-    "p": "$395K",
+    "p": "$400K",
     "b": "One of the fastest growing cities in Florida: newer homes, golf, Mets spring training and beaches 20 minutes east.",
-    "img": "img/c/port-st-lucie.webp"
+    "img": "img/c/port-st-lucie.webp",
+    "pk": "house",
+    "pc": "$170K"
   },
   "sebastian": {
     "n": "Sebastian",
     "r": "Treasure and Space Coast",
-    "p": "$399K",
+    "p": "$352K",
     "b": "A riverfront fishing town on the Indian River Lagoon, near the country's first wildlife refuge and a famous surf inlet.",
-    "img": "img/c/sebastian.webp"
+    "img": "img/c/sebastian.webp",
+    "pk": "house"
   },
   "stuart": {
     "n": "Stuart",
     "r": "Treasure and Space Coast",
-    "p": "$580K",
+    "p": "$452K",
     "b": "The Sailfish Capital of the World, with a small historic downtown and a riverwalk on the St. Lucie River.",
-    "img": "img/c/stuart.webp"
+    "img": "img/c/stuart.webp",
+    "pk": "house",
+    "pc": "$184K"
   },
   "vero-beach": {
     "n": "Vero Beach",
     "r": "Treasure and Space Coast",
-    "p": "$377K",
+    "p": "$605K",
     "b": "A quietly polished town with strict height limits, an oceanside village of shops and a serious arts scene.",
-    "img": "img/c/vero-beach.webp"
+    "img": "img/c/vero-beach.webp",
+    "pk": "house",
+    "pc": "$267K"
   },
   "indialantic": {
     "n": "Indialantic",
     "r": "Treasure and Space Coast",
-    "p": "$763K",
+    "p": "$691K",
     "b": "A small oceanside town with a boardwalk, a couple of surf shops and rocket launches you can watch from the sand.",
-    "img": "img/c/indialantic.webp"
+    "img": "img/c/indialantic.webp",
+    "pk": "house"
   },
   "melbourne-beach": {
     "n": "Melbourne Beach",
     "r": "Treasure and Space Coast",
-    "p": "$560K",
+    "p": "$849K",
     "b": "One of the oldest beach towns on the Space Coast, a few quiet streets between the ocean and the Indian River.",
-    "img": "img/c/melbourne-beach.webp"
+    "img": "img/c/melbourne-beach.webp",
+    "pk": "house"
   },
   "palm-bay": {
     "n": "Palm Bay",
     "r": "Treasure and Space Coast",
-    "p": "$330K",
+    "p": "$310K",
     "b": "The biggest city on the Space Coast, with lots of land, newer homes and some of the lowest prices near the beach.",
-    "img": "img/c/palm-bay.webp"
+    "img": "img/c/palm-bay.webp",
+    "pk": "house",
+    "pc": "$132K"
   },
   "satellite-beach": {
     "n": "Satellite Beach",
     "r": "Treasure and Space Coast",
-    "p": "$516K",
+    "p": "$522K",
     "b": "A residential beach town between the ocean and the Banana River, with surf breaks, parks and front row launch views.",
-    "img": "img/c/satellite-beach.webp"
+    "img": "img/c/satellite-beach.webp",
+    "pk": "house",
+    "pc": "$510K"
   },
   "titusville": {
     "n": "Titusville",
     "r": "Treasure and Space Coast",
-    "p": "$292K",
+    "p": "$282K",
     "b": "The town across the river from the launch pads, with the best rocket views anywhere and a huge wildlife refuge next door.",
-    "img": "img/c/titusville.webp"
+    "img": "img/c/titusville.webp",
+    "pk": "house",
+    "pc": "$152K"
   },
   "west-melbourne": {
     "n": "West Melbourne",
     "r": "Treasure and Space Coast",
-    "p": "$380K",
+    "p": "$400K",
     "b": "A fast growing inland city with newer neighborhoods and big box shopping, 20 minutes from the beach.",
-    "img": "img/c/west-melbourne.webp"
+    "img": "img/c/west-melbourne.webp",
+    "pk": "house",
+    "pc": "$191K"
   },
   "atlantic-beach": {
     "n": "Atlantic Beach",
     "r": "Northeast Florida",
-    "p": "$640K",
+    "p": "$725K",
     "b": "A leafy beach town with a walkable town center it shares with Neptune Beach, and the trails of Hanna Park to the north.",
-    "img": "img/c/atlantic-beach.webp"
+    "img": "img/c/atlantic-beach.webp",
+    "pk": "house",
+    "pc": "$470K"
   },
   "neptune-beach": {
     "n": "Neptune Beach",
     "r": "Northeast Florida",
-    "p": "$790K",
+    "p": "$780K",
     "b": "A small beach town that shares Beaches Town Center, with its restaurants and bookstore a block from the sand.",
-    "img": "img/c/neptune-beach.webp"
+    "img": "img/c/neptune-beach.webp",
+    "pk": "house"
   },
   "ponte-vedra-beach": {
     "n": "Ponte Vedra Beach",
     "r": "Northeast Florida",
-    "p": "$1.43M",
+    "p": "$1.56M",
     "b": "A golf town on the ocean, home to TPC Sawgrass and The Players Championship, with tall dunes and a huge coastal preserve.",
-    "img": "img/c/ponte-vedra-beach.webp"
+    "img": "img/c/ponte-vedra-beach.webp",
+    "pk": "home"
   },
   "st-augustine-beach": {
     "n": "St. Augustine Beach",
     "r": "Northeast Florida",
-    "p": "$621K",
+    "p": "$625K",
     "b": "A relaxed beach town on Anastasia Island, ten minutes from the oldest city in the country.",
-    "img": "img/c/atlantic-aerial.webp"
+    "img": "img/c/atlantic-aerial.webp",
+    "pk": "home"
   },
   "daytona-beach-shores": {
     "n": "Daytona Beach Shores",
     "r": "Northeast Florida",
-    "p": "$380K",
+    "p": "$375K",
     "b": "A quiet strip of oceanfront condos just south of Daytona Beach, with the river a block behind you.",
-    "img": "img/c/daytona-beach-shores.webp"
+    "img": "img/c/daytona-beach-shores.webp",
+    "pk": "home"
   },
   "ormond-beach": {
     "n": "Ormond Beach",
     "r": "Northeast Florida",
-    "p": "$383K",
+    "p": "$396K",
     "b": "Daytona's quieter neighbor to the north, with oak canopy roads, a small downtown and the same hard packed beach.",
-    "img": "img/c/ormond-beach.webp"
+    "img": "img/c/ormond-beach.webp",
+    "pk": "house",
+    "pc": "$260K"
   },
   "palm-coast": {
     "n": "Palm Coast",
     "r": "Northeast Florida",
-    "p": "$356K",
+    "p": "$354K",
     "b": "A planned city of saltwater canals and more than 130 miles of trails, between St. Augustine and Daytona.",
-    "img": "img/c/palm-coast.webp"
+    "img": "img/c/palm-coast.webp",
+    "pk": "house",
+    "pc": "$232K"
   },
   "port-orange": {
     "n": "Port Orange",
     "r": "Northeast Florida",
-    "p": "$355K",
+    "p": "$349K",
     "b": "A suburb on the Halifax River just south of Daytona, with parks, a riverfront and the beach over the bridge.",
-    "img": "img/c/port-orange.webp"
+    "img": "img/c/port-orange.webp",
+    "pk": "house",
+    "pc": "$175K"
   },
   "navarre": {
     "n": "Navarre",
     "r": "Panhandle",
-    "p": "$415K",
+    "p": "$430K",
     "b": "The mainland side of Navarre, a growing stretch of neighborhoods along Santa Rosa Sound with Navarre Beach a short causeway drive away.",
-    "img": "img/c/navarre.webp"
+    "img": "img/c/navarre.webp",
+    "pk": "house"
   },
   "mary-esther": {
     "n": "Mary Esther",
     "r": "Panhandle",
-    "p": "$325K",
+    "p": "$107K",
     "b": "A small, settled city on Santa Rosa Sound between Fort Walton Beach and Hurlburt Field, with sound front streets and some of the most approachable prices in the area.",
-    "img": "img/c/generic/white-dunes.webp"
+    "img": "img/c/generic/white-dunes.webp",
+    "pk": "condo",
+    "pf": true
   },
   "fort-walton-beach": {
     "n": "Fort Walton Beach",
     "r": "Panhandle",
-    "p": "$358K",
+    "p": "$350K",
     "b": "An unpretentious waterfront city on Santa Rosa Sound with a walkable old downtown, a calendar full of local events and Okaloosa Island's beaches just over the bridge.",
-    "img": "img/c/fort-walton-beach.webp"
+    "img": "img/c/fort-walton-beach.webp",
+    "pk": "house",
+    "pc": "$183K"
   },
   "shalimar": {
     "n": "Shalimar",
     "r": "Panhandle",
-    "p": "$449K",
+    "p": "$525K",
     "b": "A tiny, leafy town on Choctawhatchee Bay and its bayous, just north of Fort Walton Beach, with shady streets, docks and a waterfront golf course.",
-    "img": "img/c/generic/canal-dock.webp"
+    "img": "img/c/generic/canal-dock.webp",
+    "pk": "house",
+    "pf": true
   },
   "niceville": {
     "n": "Niceville",
     "r": "Panhandle",
-    "p": "$520K",
+    "p": "$435K",
     "b": "A bayside town on Choctawhatchee Bay where boats tie up on the bayous and the Gulf beaches are a short drive away.",
-    "img": "img/c/niceville.webp"
+    "img": "img/c/niceville.webp",
+    "pk": "house"
   },
   "miramar-beach": {
     "n": "Miramar Beach",
     "r": "Panhandle",
-    "p": "$735K",
+    "p": "$1.06M",
     "b": "The stretch of Gulf front between Destin and 30A, with sugar white beaches, Sandestin's shops and a lot going on all year.",
-    "img": "img/c/miramar-beach.webp"
+    "img": "img/c/miramar-beach.webp",
+    "pk": "house",
+    "pc": "$551K"
   },
   "freeport": {
     "n": "Freeport",
     "r": "Panhandle",
-    "p": "$385K",
+    "p": "$355K",
     "b": "A fast growing inland town on the bay side of Walton County, where newer neighborhoods sit a short drive from the 30A beaches.",
-    "img": "img/c/generic/harbor-boats.webp"
+    "img": "img/c/generic/harbor-boats.webp",
+    "pk": "house"
   },
   "mexico-beach": {
     "n": "Mexico Beach",
     "r": "Panhandle",
-    "p": "$497K",
+    "p": "$460K",
     "b": "A small, quiet Gulf town on the Forgotten Coast that was nearly wiped out by Hurricane Michael and has steadily rebuilt around its wide, uncrowded beach.",
-    "img": "img/c/mexico-beach.webp"
+    "img": "img/c/mexico-beach.webp",
+    "pk": "house",
+    "pc": "$400K"
   },
   "keaton-beach": {
     "n": "Keaton Beach",
     "r": "Nature Coast",
-    "p": null,
+    "p": "$414K",
     "b": "A small canal and fishing community on the Taylor County coast, where the boat ramp and the flats matter more than anything on land.",
-    "img": "img/c/keaton-beach.webp"
+    "img": "img/c/keaton-beach.webp",
+    "pk": "house",
+    "pf": true
   },
   "horseshoe-beach": {
     "n": "Horseshoe Beach",
     "r": "Nature Coast",
-    "p": "$216K",
+    "p": "$248K",
     "b": "A tiny fishing town at the end of the road in Dixie County, built around canals, a little Main Street and open Gulf flats.",
-    "img": "img/c/generic/gulf-calm.webp"
+    "img": "img/c/generic/gulf-calm.webp",
+    "pk": "house",
+    "pc": "$209K",
+    "pf": true
   },
   "suwannee": {
     "n": "Suwannee",
     "r": "Nature Coast",
-    "p": "$261K",
+    "p": "$184K",
     "b": "A canal town at the mouth of the Suwannee River, wrapped in a national wildlife refuge, where nearly every street ends at a dock.",
-    "img": "img/c/generic/canal-dock.webp"
+    "img": "img/c/generic/canal-dock.webp",
+    "pk": "condo",
+    "pf": true
   },
   "yankeetown": {
     "n": "Yankeetown",
     "r": "Nature Coast",
-    "p": "$192K",
+    "p": "$285K",
     "b": "An old river town on the Withlacoochee a few miles from the Gulf, with live oaks, fish camps and a big nature preserve at the end of the road.",
-    "img": "img/c/yankeetown.webp"
+    "img": "img/c/yankeetown.webp",
+    "pk": "house"
   },
   "inglis": {
     "n": "Inglis",
     "r": "Nature Coast",
-    "p": "$237K",
+    "p": "$275K",
     "b": "A small river town where the Withlacoochee, Lake Rousseau and the old barge canal meet, a few miles in from the Gulf.",
-    "img": "img/c/generic/dock-sunset.webp"
+    "img": "img/c/generic/dock-sunset.webp",
+    "pk": "house"
   },
   "hernando-beach": {
     "n": "Hernando Beach",
     "r": "Nature Coast",
-    "p": "$542K",
+    "p": "$547K",
     "b": "A canal community on the Hernando County coast where most homes have a dock and a short run to the shallow Gulf flats.",
-    "img": "img/c/hernando-beach.webp"
+    "img": "img/c/hernando-beach.webp",
+    "pk": "house"
   },
   "weeki-wachee": {
     "n": "Weeki Wachee",
     "r": "Nature Coast",
-    "p": "$375K",
+    "p": "$362K",
     "b": "A spring fed river corridor on the Nature Coast, best known for its mermaid shows and a clear blue river that runs a few miles to the Gulf.",
-    "img": "img/c/weeki-wachee.webp"
+    "img": "img/c/weeki-wachee.webp",
+    "pk": "home"
   },
   "aripeka": {
     "n": "Aripeka",
     "r": "Nature Coast",
-    "p": "$251K",
+    "p": "$130K",
     "b": "A tiny old fishing village on Hammock Creek, straddling the Pasco and Hernando line, with stilt homes, marsh views and no stoplights.",
-    "img": "img/c/generic/harbor-boats.webp"
+    "img": "img/c/generic/harbor-boats.webp",
+    "pk": "house",
+    "pf": true
   },
   "hudson": {
     "n": "Hudson",
     "r": "Nature Coast",
-    "p": "$274K",
+    "p": "$300K",
     "b": "A laid back Pasco County coast town with canal homes, a small beach strip of bars and seafood spots, and Tampa within an hour.",
-    "img": "img/c/hudson.webp"
+    "img": "img/c/hudson.webp",
+    "pk": "house",
+    "pc": "$215K"
   },
   "port-richey": {
     "n": "Port Richey",
     "r": "Tampa Bay",
-    "p": "$236K",
+    "p": "$235K",
     "b": "A small, unfussy river town where the Pithlachascotee meets the Gulf, built around canals, docks and fishing boats.",
-    "img": "img/c/port-richey.webp"
+    "img": "img/c/port-richey.webp",
+    "pk": "home"
   },
   "holiday": {
     "n": "Holiday",
     "r": "Tampa Bay",
-    "p": "$220K",
+    "p": "$221K",
     "b": "A modest, affordable stretch of Pasco coast where canal neighborhoods run out to the Anclote River and the Gulf.",
-    "img": "img/c/holiday.webp"
+    "img": "img/c/holiday.webp",
+    "pk": "home"
   },
   "palm-harbor": {
     "n": "Palm Harbor",
     "r": "Tampa Bay",
-    "p": "$485K",
+    "p": "$450K",
     "b": "A leafy, established town in north Pinellas with an old downtown on the Pinellas Trail and quiet waterfront villages on St. Joseph Sound.",
-    "img": "img/c/generic/dock-umbrella.webp"
+    "img": "img/c/generic/dock-umbrella.webp",
+    "pk": "house",
+    "pc": "$194K"
   },
   "oldsmar": {
     "n": "Oldsmar",
     "r": "Tampa Bay",
-    "p": "$399K",
+    "p": "$422K",
     "b": "A small, tidy city at the top of Old Tampa Bay, with bayfront parks and the fastest airport run in Pinellas.",
-    "img": "img/c/generic/dock-sunset.webp"
+    "img": "img/c/generic/dock-sunset.webp",
+    "pk": "house"
   },
   "belleair-beach": {
     "n": "Belleair Beach",
     "r": "Tampa Bay",
-    "p": "$825K",
+    "p": "$901K",
     "b": "A small, residential barrier island town on Sand Key, with the Gulf on one side and docks on the Intracoastal on the other.",
-    "img": "img/c/generic/atlantic-aerial.webp"
+    "img": "img/c/generic/atlantic-aerial.webp",
+    "pk": "house"
   },
   "tierra-verde": {
     "n": "Tierra Verde",
     "r": "Tampa Bay",
-    "p": "$640K",
+    "p": "$990K",
     "b": "A cluster of canal islands at the mouth of Tampa Bay, between St. Pete Beach and Fort De Soto, made for people who live on their boats.",
-    "img": "img/c/tierra-verde.webp"
+    "img": "img/c/tierra-verde.webp",
+    "pk": "house",
+    "pc": "$675K"
   },
   "indian-shores": {
     "n": "Indian Shores",
     "r": "Tampa Bay",
-    "p": "$575K",
+    "p": "$670K",
     "b": "A narrow strip of Gulf front condos and beach cottages in the middle of the Pinellas barrier islands, with the Intracoastal on one side and the Gulf a short walk away on the other.",
-    "img": "img/c/generic/beach-chairs.webp"
+    "img": "img/c/generic/beach-chairs.webp",
+    "pk": "condo"
   },
   "redington-shores": {
     "n": "Redington Shores",
     "r": "Tampa Bay",
     "p": "$650K",
     "b": "A small barrier island town with a big public beach park, bay side canal streets full of boat lifts, and a hometown calendar of picnics and holiday parades.",
-    "img": "img/c/redington-shores.webp"
+    "img": "img/c/redington-shores.webp",
+    "pk": "house",
+    "pc": "$730K"
   },
   "gibsonton": {
     "n": "Gibsonton",
     "r": "Tampa Bay",
-    "p": "$320K",
+    "p": "$325K",
     "b": "An old river town on the Alafia where carnival and circus families once wintered, now a growing and affordable South Shore suburb with water close by.",
-    "img": "img/c/generic/harbor-boats.webp"
+    "img": "img/c/generic/harbor-boats.webp",
+    "pk": "house"
   },
   "miami": {
     "n": "Miami (Brickell and the Grove)",
     "r": "South Florida and the Keys",
-    "p": "$588K",
+    "p": "$625K",
     "b": "The mainland city on Biscayne Bay, from the towers of Brickell and Edgewater to the shady streets of Coconut Grove and the murals of Wynwood.",
-    "img": "img/c/miami.webp"
+    "img": "img/c/miami.webp",
+    "pk": "condo"
   },
   "jacksonville": {
     "n": "Jacksonville",
     "r": "Northeast Florida",
-    "p": "$285K",
+    "p": "$290K",
     "b": "A big, spread out river city where old oak lined neighborhoods like Riverside, Avondale and San Marco sit right on the St. Johns.",
-    "img": "img/c/jacksonville.webp"
+    "img": "img/c/jacksonville.webp",
+    "pk": "house",
+    "pc": "$170K"
   },
   "indian-river-shores": {
     "n": "Indian River Shores",
     "r": "Treasure and Space Coast",
-    "p": "$1.42M",
+    "p": "$1.98M",
     "b": "A quiet barrier island town north of Vero Beach, with low rise oceanfront living, big private clubs and the lagoon on the other side.",
-    "img": "img/c/generic/beach-houses.webp"
+    "img": "img/c/generic/beach-houses.webp",
+    "pk": "house",
+    "pc": "$525K"
   },
   "hutchinson-island": {
     "n": "Hutchinson Island",
     "r": "Treasure and Space Coast",
-    "p": "$400K to $490K",
+    "p": "$492K",
     "b": "The long barrier island off Stuart, Jensen Beach and Fort Pierce, with free beach parking, low rise condos and miles of quiet sand.",
-    "img": "img/c/hutchinson-island.webp"
+    "img": "img/c/hutchinson-island.webp",
+    "pk": "home"
   },
   "sewalls-point": {
     "n": "Sewall's Point",
     "r": "Treasure and Space Coast",
-    "p": "$2.2M",
+    "p": "$1.5M",
     "b": "A small, leafy peninsula town between the St. Lucie and Indian rivers, with deep water lots, quiet streets and the beach one bridge away.",
-    "img": "img/c/generic/canal-dock.webp"
+    "img": "img/c/generic/canal-dock.webp",
+    "pk": "house"
   },
   "palm-city": {
     "n": "Palm City",
     "r": "Treasure and Space Coast",
-    "p": "$597K",
+    "p": "$578K",
     "b": "A green, spread out community across the St. Lucie River from Stuart, with canal homes, golf, big sports parks and easy highway access.",
-    "img": "img/c/generic/dock-sunset.webp"
+    "img": "img/c/generic/dock-sunset.webp",
+    "pk": "house"
   },
   "port-salerno": {
     "n": "Port Salerno",
     "r": "Treasure and Space Coast",
-    "p": "$392K",
+    "p": "$394K",
     "b": "An old fishing village on the Manatee Pocket near the St. Lucie Inlet, with working docks, an artists' district and a waterfront boardwalk.",
-    "img": "img/c/generic/harbor-boats.webp"
+    "img": "img/c/generic/harbor-boats.webp",
+    "pk": "house"
   },
   "hobe-sound": {
     "n": "Hobe Sound",
     "r": "Treasure and Space Coast",
-    "p": "$515K",
+    "p": "$525K",
     "b": "A low key village between Stuart and Jupiter, surrounded by a big state park, a wildlife refuge and some of the prettiest beaches on the coast.",
-    "img": "img/c/hobe-sound.webp"
+    "img": "img/c/hobe-sound.webp",
+    "pk": "house",
+    "pc": "$240K"
   },
   "tequesta": {
     "n": "Tequesta",
     "r": "South Florida and the Keys",
-    "p": "$640K",
+    "p": "$340K",
     "b": "A small riverfront village at the top of Palm Beach County, where the Loxahatchee River meets the Intracoastal and the beach is a short bridge away.",
-    "img": "img/c/generic/pier-sunrise.webp"
+    "img": "img/c/generic/pier-sunrise.webp",
+    "pk": "condo"
   },
   "juno-beach": {
     "n": "Juno Beach",
     "r": "South Florida and the Keys",
-    "p": "$800K",
+    "p": "$650K",
     "b": "A small, low key oceanfront town known for its long fishing pier, wide sandy beach and the sea turtles that nest there every summer.",
-    "img": "img/c/juno-beach.webp"
+    "img": "img/c/juno-beach.webp",
+    "pk": "condo"
   },
   "lake-park": {
     "n": "Lake Park",
     "r": "South Florida and the Keys",
-    "p": "$480K",
+    "p": "$450K",
     "b": "A compact, older town on the Intracoastal with a busy public marina, a small downtown on Park Avenue and the inlet just to the south.",
-    "img": "img/c/generic/bay-dock.webp"
+    "img": "img/c/generic/bay-dock.webp",
+    "pk": "house"
   },
   "palm-beach-shores": {
     "n": "Palm Beach Shores",
     "r": "South Florida and the Keys",
-    "p": "$1.18M",
+    "p": "$1.37M",
     "b": "An eleven block town at the south tip of Singer Island, wrapped by the ocean, the Palm Beach Inlet and the Intracoastal, with a 1950s beach town feel.",
-    "img": "img/c/palm-beach-shores.webp"
+    "img": "img/c/palm-beach-shores.webp",
+    "pk": "house"
   },
   "lake-worth-beach": {
     "n": "Lake Worth Beach",
     "r": "South Florida and the Keys",
-    "p": "$445K",
+    "p": "$465K",
     "b": "An artsy little city with a lively downtown of bungalows and storefronts, a bridge over the lagoon to a classic public beach and pier.",
-    "img": "img/c/lake-worth-beach.webp"
+    "img": "img/c/lake-worth-beach.webp",
+    "pk": "house"
   },
   "lantana": {
     "n": "Lantana",
     "r": "South Florida and the Keys",
-    "p": "$423K",
+    "p": "$515K",
     "b": "A small, old Florida town on the Intracoastal with a little public beach across the bridge and the state's oldest waterfront restaurant.",
-    "img": "img/c/lantana.webp"
+    "img": "img/c/lantana.webp",
+    "pk": "house"
   },
   "boynton-beach": {
     "n": "Boynton Beach",
     "r": "South Florida and the Keys",
-    "p": "$400K",
+    "p": "$435K",
     "b": "A big, easygoing city with a busy harbor marina at the inlet, a growing downtown on Ocean Avenue and wetlands to the west.",
-    "img": "img/c/boynton-beach.webp"
+    "img": "img/c/boynton-beach.webp",
+    "pk": "house"
   },
   "vilano-beach": {
     "n": "Vilano Beach",
     "r": "Northeast Florida",
-    "p": "$790K",
+    "p": "$701K",
     "b": "A small beach community on the north side of the St. Augustine Inlet, with a retro little main street, a fishing pier on the river and downtown St. Augustine just over the bridge.",
-    "img": "img/c/vilano-beach.webp"
+    "img": "img/c/vilano-beach.webp",
+    "pk": "home"
   },
   "crescent-beach": {
     "n": "Crescent Beach",
     "r": "Northeast Florida",
-    "p": "$440K",
+    "p": "$535K",
     "b": "A quiet strip of beach houses and condos south of St. Augustine Beach, between the ocean and the Matanzas River, with one of the widest, calmest beaches on the First Coast.",
-    "img": "img/c/generic/white-dunes.webp"
+    "img": "img/c/generic/white-dunes.webp",
+    "pk": "home"
   },
   "beverly-beach": {
     "n": "Beverly Beach",
     "r": "Northeast Florida",
-    "p": "$975K",
+    "p": "$904K",
     "b": "One of Florida's tiniest towns, a few blocks wide between the ocean and the Intracoastal just north of Flagler Beach, with an RV resort, beach cottages and homes on canals.",
-    "img": "img/c/generic/boardwalk.webp"
+    "img": "img/c/generic/boardwalk.webp",
+    "pk": "house",
+    "pc": "$685K",
+    "pf": true
   },
   "ormond-by-the-sea": {
     "n": "Ormond by the Sea",
     "r": "Northeast Florida",
-    "p": "$343K",
+    "p": "$394K",
     "b": "A quiet beach community on the barrier island north of Ormond Beach, with small streets of beach cottages between the ocean and the Halifax River and miles of state parks just to the north.",
-    "img": "img/c/ormond-by-the-sea.webp"
+    "img": "img/c/ormond-by-the-sea.webp",
+    "pk": "house",
+    "pc": "$276K"
   },
   "ponce-inlet": {
     "n": "Ponce Inlet",
     "r": "Northeast Florida",
-    "p": "$521K",
+    "p": "$955K",
     "b": "A small town at the southern tip of the Daytona peninsula, built around a tall red lighthouse, a working fishing harbor and a wide beach that wraps around the inlet.",
-    "img": "img/c/ponce-inlet.webp"
+    "img": "img/c/ponce-inlet.webp",
+    "pk": "house",
+    "pc": "$480K"
   },
   "edgewater": {
     "n": "Edgewater",
     "r": "Northeast Florida",
-    "p": "$259K",
+    "p": "$300K",
     "b": "A riverfront city on the Indian River Lagoon just south of New Smyrna Beach, with mangrove paddling trails, a long river walk and more house for the money than the beach towns.",
-    "img": "img/c/generic/dock-umbrella.webp"
+    "img": "img/c/generic/dock-umbrella.webp",
+    "pk": "house"
   },
   "cape-canaveral": {
     "n": "Cape Canaveral",
     "r": "Treasure and Space Coast",
-    "p": "$288K",
+    "p": "$385K",
     "b": "A small, low key beach city at the north end of the barrier island, between the cruise port and Cocoa Beach, with a quiet beach and launch views from the jetty.",
-    "img": "img/c/cape-canaveral.webp"
+    "img": "img/c/cape-canaveral.webp",
+    "pk": "house",
+    "pc": "$287K"
   },
   "merritt-island": {
     "n": "Merritt Island",
     "r": "Treasure and Space Coast",
-    "p": "$460K",
+    "p": "$470K",
     "b": "A big, leafy island between the Indian and Banana Rivers, full of canal homes and boat docks, with the space center and a huge wildlife refuge at its north end.",
-    "img": "img/c/generic/beach-house.webp"
+    "img": "img/c/generic/beach-house.webp",
+    "pk": "house",
+    "pc": "$175K"
   },
   "cocoa-village": {
     "n": "Cocoa Village",
     "r": "Treasure and Space Coast",
-    "p": "$290K",
+    "p": "$551K",
     "b": "The old brick downtown of Cocoa on the Indian River, with shady streets, pubs, a historic playhouse and a riverfront park that hosts concerts.",
-    "img": "img/c/cocoa-village.webp"
+    "img": "img/c/cocoa-village.webp",
+    "pk": "condo",
+    "pf": true
   },
   "rockledge": {
     "n": "Rockledge",
     "r": "Treasure and Space Coast",
-    "p": "$397K",
+    "p": "$360K",
     "b": "A quiet river city just south of Cocoa, known for the oak shaded historic homes along Rockledge Drive and newer neighborhoods toward Viera.",
-    "img": "img/c/rockledge.webp"
+    "img": "img/c/rockledge.webp",
+    "pk": "house",
+    "pc": "$198K"
   },
   "indian-harbour-beach": {
     "n": "Indian Harbour Beach",
     "r": "Treasure and Space Coast",
-    "p": "$454K",
+    "p": "$496K",
     "b": "A small, settled beach town between Satellite Beach and Indialantic, with ocean access on one side, Banana River canals on the other and a big park in the middle.",
-    "img": "img/c/indian-harbour-beach.webp"
+    "img": "img/c/indian-harbour-beach.webp",
+    "pk": "house",
+    "pc": "$324K"
   },
   "melbourne": {
     "n": "Melbourne",
     "r": "Treasure and Space Coast",
-    "p": "$350K",
+    "p": "$315K",
     "b": "The Space Coast's main mainland city on the Indian River, with two walkable old downtowns, an arts district, its own airport and the beach 15 minutes away.",
-    "img": "img/c/melbourne.webp"
+    "img": "img/c/melbourne.webp",
+    "pk": "house",
+    "pc": "$165K"
   },
   "marathon": {
     "n": "Marathon",
     "r": "South Florida and the Keys",
-    "p": "$715K",
+    "p": "$980K",
     "b": "The Middle Keys hub at the start of the Seven Mile Bridge, with Sombrero Beach, busy marinas and a hospital in town.",
-    "img": "img/c/marathon.webp"
+    "img": "img/c/marathon.webp",
+    "pk": "home"
   },
   "big-pine-key": {
     "n": "Big Pine Key",
     "r": "South Florida and the Keys",
-    "p": "$740K",
+    "p": "$794K",
     "b": "The quiet center of the Lower Keys, home to the National Key Deer Refuge and about five minutes from Bahia Honda State Park.",
-    "img": "img/c/big-pine-key.webp"
+    "img": "img/c/big-pine-key.webp",
+    "pk": "house"
   },
   "key-biscayne": {
     "n": "Key Biscayne",
     "r": "South Florida and the Keys",
-    "p": "$1.49M",
+    "p": "$3.91M",
     "b": "An island village across the Rickenbacker Causeway from Miami, with Crandon Park and the Cape Florida Lighthouse at Bill Baggs State Park.",
-    "img": "img/c/key-biscayne.webp"
+    "img": "img/c/key-biscayne.webp",
+    "pk": "house"
   },
   "boca-grande": {
     "n": "Boca Grande",
     "r": "Southwest Florida",
-    "p": "$2.4M",
+    "p": "$3.7M",
     "b": "An old Florida village on Gasparilla Island, reached by a toll causeway, where golf carts get you around and tarpon fishing is the big draw.",
-    "img": "img/c/boca-grande.webp"
+    "img": "img/c/boca-grande.webp",
+    "pk": "home"
   },
   "pompano-beach": {
     "n": "Pompano Beach",
     "r": "South Florida and the Keys",
-    "p": "$395K",
+    "p": "$500K",
     "b": "A Broward beach city with wide sand, a rebuilt pier and the Fishing Village on the beachfront, just south of the Hillsboro Inlet.",
-    "img": "img/c/pompano-beach.webp"
+    "img": "img/c/pompano-beach.webp",
+    "pk": "house",
+    "pc": "$258K"
   },
   "deerfield-beach": {
     "n": "Deerfield Beach",
     "r": "South Florida and the Keys",
-    "p": "$330K",
+    "p": "$455K",
     "b": "The north end of Broward, with a fishing pier, a beach walk and lifeguarded sand.",
-    "img": "img/c/deerfield-beach.webp"
+    "img": "img/c/deerfield-beach.webp",
+    "pk": "house",
+    "pc": "$155K"
   }
 }
