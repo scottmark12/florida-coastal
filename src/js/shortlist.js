@@ -100,7 +100,7 @@
       '.fv-v button{border:0;background:#fff;width:24px;height:24px;border-radius:50%;font-size:16px;line-height:1;color:#3E5357;cursor:pointer}' +
       '.fv-u{border:0;background:none;color:#3E5357;font:600 14px "DM Sans",system-ui,sans-serif;text-decoration:underline;cursor:pointer;padding:4px}.fv-none{font-size:14.5px;color:#3E5357}' +
       '.fv-light .fv-k{color:#F2B27C}.fv-light .fv-v{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}.fv-light .fv-v a{color:#fff}.fv-light .fv-v button{background:rgba(255,255,255,.22);color:#fff}.fv-light .fv-u,.fv-light .fv-none{color:#fff}' +
-      '@media(max-width:700px){.fcs-acts .fcs-sv{display:none}.fcs-acts span{display:none}.fcs-acts button{padding:6px 8px}.crumbs.fcs-row>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fcs-hd{margin-left:auto;margin-right:46px}}';
+      '@media(max-width:700px){.fcs-acts .fcs-sv{display:none}.fcs-acts span{display:none}.fcs-acts button{padding:6px 8px}.crumbs.fcs-row>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}}';
     document.head.appendChild(s);
   }
   var HEART = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20.3s-7.6-4.7-7.6-10.4A4.4 4.4 0 0 1 12 7.4a4.4 4.4 0 0 1 7.6 2.5c0 5.7-7.6 10.4-7.6 10.4z"/></svg>';
@@ -111,8 +111,17 @@
   function header() {
     var h = document.querySelector('header'); if (!h || h.querySelector('.fcs-hd')) return;
     hd = document.createElement('a'); hd.className = 'fcs-hd'; hd.href = '/shortlist';
-    var before = h.querySelector('.fcm-btn') && innerWidth < 901 ? h.querySelector('.fcm-btn') : (h.querySelector('.fcq') || h.querySelector('.fcm-btn'));
-    if (before) before.parentNode.insertBefore(hd, before); else h.appendChild(hd);
+    var mob = innerWidth < 901, mb = h.querySelector('.fcm-btn'), ms = h.querySelector('form.msearch');
+    if (mob && ms) { hd = null; return; }   /* map on phones: the search bar fills the header */
+    if (mob && mb && getComputedStyle(mb).position === 'absolute') {
+      /* phone headers whose menu button floats: sit just left of it */
+      h.appendChild(hd);
+      var place = function () { var hr = h.getBoundingClientRect(), br = mb.getBoundingClientRect(); if (!br.width) return; hd.style.cssText = 'position:absolute;margin:0;z-index:5;top:' + Math.round(br.top - hr.top + (br.height - 40) / 2) + 'px;right:' + Math.round(hr.right - br.left + 6) + 'px'; };
+      place(); addEventListener('load', place); addEventListener('resize', place);
+    } else {
+      var before = h.querySelector('.fcq') || mb;
+      if (before) before.parentNode.insertBefore(hd, before); else h.appendChild(hd);
+    }
     drawHeader();
   }
   function drawHeader(bump) {
@@ -168,7 +177,7 @@
     var names = l.slice(0, 3).map(function (t) { return t.name.replace(/ \(.*\)$/, ''); }).join(', ') + (n > 3 ? ' and ' + (n - 3) + ' more' : '');
     open(thumbs +
       '<h3>Follow your ' + (n === 1 ? 'town' : n + ' towns') + '</h3>' +
-      '<p>We\'ll send your Shortlist now (' + esc(names) + ') with prices, flood risk and a first weekend in each. Then a short note when prices move or something new happens there.</p>' +
+      '<p>Your Shortlist by email now, then a short note when prices move or something new happens there.</p>' +
       '<form novalidate><label class="fcs-hp" aria-hidden="true">Leave this empty<input name="website" tabindex="-1" autocomplete="off"></label>' +
       '<input type="email" autocomplete="email" placeholder="you@example.com" aria-label="Email"><button class="fcs-go" type="submit">Follow these towns</button></form>' +
       '<button type="button" class="fcs-no">Not now</button>' + WHO);
@@ -256,6 +265,8 @@
     var acts = document.createElement('div'); acts.className = 'fcs-acts';
     acts.innerHTML = '<button type="button" class="fcs-sh">' + SHARE + '<span class="fcs-tl">Share</span></button><button type="button" class="fcs-sv"></button>';
     if (cr) { cr.classList.add('fcs-row'); var w = document.createElement('span'); while (cr.firstChild) w.appendChild(cr.firstChild); cr.appendChild(w); cr.appendChild(acts); }
+    /* phones: the town's own name is the page title, so the breadcrumb stops at the region */
+    if (cr && innerWidth < 701) { var tn = cr.querySelector('span').lastChild; if (tn && tn.nodeType === 3) tn.textContent = tn.textContent.replace(/\s*\/\s*[^/]*$/, ''); }
     var ph = document.createElement('button'); ph.type = 'button'; ph.className = 'fcs-ph'; ph.innerHTML = HEART; gal.appendChild(ph);
     gal.addEventListener('scroll', function () { ph.style.transform = 'translateX(' + gal.scrollLeft + 'px)'; }, { passive: true });
     var sv = acts.querySelector('.fcs-sv');
