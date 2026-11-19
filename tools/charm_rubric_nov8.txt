@@ -125,7 +125,8 @@ mexico-beach 02211
 keaton-beach 02221
 horseshoe-beach 02222
 suwannee 02222
-yankeetown 12212
+# W fixed Nov 19 2026: two marinas, ramps and fish camps on the Withlacoochee (map data had almost nothing)
+yankeetown 12222
 inglis 01201
 hernando-beach 01211
 weeki-wachee 11201
