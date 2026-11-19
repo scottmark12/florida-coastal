@@ -69,7 +69,8 @@
   "v": [
    "beaches",
    "social",
-   "active"
+   "active",
+   "afford"
   ],
   "b": "Wide white sand, live music near the pier after dark, and the jetties at St. Andrews State Park when you want it quiet.",
   "img": "img/c/pcb.webp",
@@ -78,7 +79,7 @@
   "pg": true,
   "f": {
    "airport": 3.42,
-   "afford": 3.05,
+   "afford": 3.94,
    "beach": 4.62,
    "walk": 1.9,
    "water": 3.9,
@@ -107,7 +108,7 @@
   "pg": true,
   "f": {
    "airport": 1.27,
-   "afford": 4.11,
+   "afford": 5,
    "beach": 2.44,
    "walk": 4,
    "water": 4,
@@ -137,7 +138,7 @@
   "pg": true,
   "f": {
    "airport": 1.71,
-   "afford": 4.19,
+   "afford": 4.38,
    "beach": 1.38,
    "walk": 4,
    "water": 4,
@@ -567,7 +568,7 @@
   "pg": true,
   "f": {
    "airport": 2.59,
-   "afford": 4.36,
+   "afford": 4.85,
    "beach": 2.5,
    "walk": 2.9,
    "water": 4,
@@ -652,7 +653,7 @@
   "pg": true,
   "f": {
    "airport": 3.39,
-   "afford": 4.69,
+   "afford": 4.2,
    "beach": 3.56,
    "walk": 1.85,
    "water": 2.85,
@@ -797,7 +798,7 @@
   "pg": true,
   "f": {
    "airport": 2.01,
-   "afford": 4.95,
+   "afford": 5,
    "beach": 2.44,
    "walk": 1.85,
    "water": 3.95,
@@ -877,7 +878,7 @@
   "pg": true,
   "f": {
    "airport": 3.34,
-   "afford": 4.5,
+   "afford": 4.45,
    "beach": 1,
    "walk": 2.9,
    "water": 3.9,
@@ -904,7 +905,7 @@
   "pg": true,
   "f": {
    "airport": 3.37,
-   "afford": 4.41,
+   "afford": 4.81,
    "beach": 1.5,
    "walk": 1.9,
    "water": 3.9,
@@ -932,7 +933,7 @@
   "pg": true,
   "f": {
    "airport": 3.22,
-   "afford": 4.03,
+   "afford": 4.09,
    "beach": 1.44,
    "walk": 2.9,
    "water": 3.95,
@@ -1171,7 +1172,7 @@
   "pg": true,
   "f": {
    "airport": 1.13,
-   "afford": 4.84,
+   "afford": 4.18,
    "beach": 1,
    "walk": 1.8,
    "water": 5,
@@ -1300,7 +1301,7 @@
   "pg": true,
   "f": {
    "airport": 4.17,
-   "afford": 5,
+   "afford": 4.95,
    "beach": 1,
    "walk": 2.9,
    "water": 2.9,
@@ -1326,7 +1327,7 @@
   "pg": true,
   "f": {
    "airport": 4.27,
-   "afford": 4.69,
+   "afford": 4.19,
    "beach": 1,
    "walk": 1,
    "water": 3.95,
@@ -1437,7 +1438,7 @@
   "pg": true,
   "f": {
    "airport": 4.2,
-   "afford": 4.38,
+   "afford": 4.69,
    "beach": 1,
    "walk": 1.9,
    "water": 1,
@@ -1548,7 +1549,7 @@
   "pg": true,
   "f": {
    "airport": 3.84,
-   "afford": 4.35,
+   "afford": 4.69,
    "beach": 1.5,
    "walk": 2.9,
    "water": 3.9,
@@ -2521,7 +2522,7 @@
   "pg": true,
   "f": {
    "airport": 2.7,
-   "afford": 4.06,
+   "afford": 4.11,
    "beach": 2.44,
    "walk": 1.85,
    "water": 5,
@@ -2659,7 +2660,7 @@
   "pg": true,
   "f": {
    "airport": 2.89,
-   "afford": 4.66,
+   "afford": 4.83,
    "beach": 1,
    "walk": 1,
    "water": 2.85,
@@ -2712,7 +2713,7 @@
   "pg": true,
   "f": {
    "airport": 3.92,
-   "afford": 4.85,
+   "afford": 4.36,
    "beach": 2.38,
    "walk": 1.85,
    "water": 3.95,
@@ -2901,7 +2902,7 @@
   "pg": true,
   "f": {
    "airport": 3.38,
-   "afford": 3.98,
+   "afford": 3.05,
    "beach": 3.5,
    "walk": 1.85,
    "water": 2.9,
@@ -2928,7 +2929,7 @@
   "pg": true,
   "f": {
    "airport": 2.61,
-   "afford": 4.09,
+   "afford": 4.03,
    "beach": 2.5,
    "walk": 1,
    "water": 3.85,
@@ -2954,7 +2955,7 @@
   "pg": true,
   "f": {
    "airport": 3.39,
-   "afford": 4.07,
+   "afford": 4.84,
    "beach": 1.44,
    "walk": 1.8,
    "water": 3.9,
@@ -3004,7 +3005,7 @@
   "pg": true,
   "f": {
    "airport": 3.17,
-   "afford": 4.18,
+   "afford": 4.35,
    "beach": 2.5,
    "walk": 1.9,
    "water": 2.9,
@@ -3031,7 +3032,7 @@
   "pg": true,
   "f": {
    "airport": 3.71,
-   "afford": 4.2,
+   "afford": 4.07,
    "beach": 3.5,
    "walk": 2.9,
    "water": 3.9,
@@ -3136,7 +3137,7 @@
   "pg": true,
   "f": {
    "airport": 2.95,
-   "afford": 3.94,
+   "afford": 4.06,
    "beach": 1.5,
    "walk": 1,
    "water": 2.9,
@@ -3237,7 +3238,7 @@
   "pg": true,
   "f": {
    "airport": 1.23,
-   "afford": 4.45,
+   "afford": 4.32,
    "beach": 1,
    "walk": 1,
    "water": 4.9,
@@ -3264,7 +3265,7 @@
   "pg": true,
   "f": {
    "airport": 1.78,
-   "afford": 4.48,
+   "afford": 4.2,
    "beach": 1,
    "walk": 1.9,
    "water": 4.9,
@@ -3290,7 +3291,7 @@
   "pg": true,
   "f": {
    "airport": 1.79,
-   "afford": 4.81,
+   "afford": 4.84,
    "beach": 1,
    "walk": 1,
    "water": 3.9,
@@ -3364,7 +3365,7 @@
   "pg": true,
   "f": {
    "airport": 3.35,
-   "afford": 3,
+   "afford": 4.5,
    "beach": 1,
    "walk": 1,
    "water": 3.9,
@@ -3390,7 +3391,7 @@
   "pg": true,
   "f": {
    "airport": 3.46,
-   "afford": 4.83,
+   "afford": 4.66,
    "beach": 1.5,
    "walk": 1.9,
    "water": 3.9,
@@ -3416,7 +3417,7 @@
   "pg": true,
   "f": {
    "airport": 4.12,
-   "afford": 5,
+   "afford": 4.11,
    "beach": 1,
    "walk": 1.9,
    "water": 3.9,
@@ -3626,7 +3627,7 @@
   "pg": true,
   "f": {
    "airport": 4.46,
-   "afford": 3.32,
+   "afford": 4.09,
    "beach": 1,
    "walk": 1,
    "water": 2.9,
@@ -3681,7 +3682,7 @@
   "pg": true,
   "f": {
    "airport": 4.04,
-   "afford": 4.84,
+   "afford": 4.41,
    "beach": 1.5,
    "walk": 1.9,
    "water": 3.9,
@@ -4125,7 +4126,7 @@
   "pg": true,
   "f": {
    "airport": 2.84,
-   "afford": 4.11,
+   "afford": 3,
    "beach": 3.5,
    "walk": 1.9,
    "water": 3.9,
@@ -4179,7 +4180,7 @@
   "pg": true,
   "f": {
    "airport": 3.01,
-   "afford": 4.2,
+   "afford": 4.48,
    "beach": 1.44,
    "walk": 1.8,
    "water": 3.95,
@@ -4259,7 +4260,7 @@
   "pg": true,
   "f": {
    "airport": 3.83,
-   "afford": 4.32,
+   "afford": 3.98,
    "beach": 1.5,
    "walk": 3.9,
    "water": 2.9,
@@ -4338,7 +4339,7 @@
   "pg": true,
   "f": {
    "airport": 2.91,
-   "afford": 4.09,
+   "afford": 3.32,
    "beach": 1.5,
    "walk": 2.9,
    "water": 3.9,

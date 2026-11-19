@@ -1,0 +1,4210 @@
+{
+ "source": "Codex affordability_tax_beach_by_town.json, prepared 2026-11-18. Tax: Florida DOR millage_taxes_levied.xlsx, 2025 county aggregate millage. Beach: DEP public beach access with parking, OSRM drive, no traffic.",
+ "towns": [
+  {
+   "id": "30a",
+   "county": "Walton",
+   "millage": 9.1512,
+   "county_tax_rates": [
+    {
+     "county": "Walton",
+     "population_share": 1.0,
+     "total_aggregate_millage": 9.1512
+    }
+   ],
+   "beach": {
+    "drive_minutes": 4.65,
+    "display_minutes": 5,
+    "beach_or_city_name": "Blue Mountain Beach",
+    "access_name": "Old Blue Mountain Road (CR 83)",
+    "access_address": "Old Blue Mountain Road (CR 83) & CR 30A",
+    "destination": {
+     "lat": 30.338009,
+     "lon": -86.200896
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/941542655"
+   }
+  },
+  {
+   "id": "destin",
+   "county": "Okaloosa",
+   "millage": 12.2773,
+   "county_tax_rates": [
+    {
+     "county": "Okaloosa",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.2773
+    }
+   ],
+   "beach": {
+    "drive_minutes": 5.04,
+    "display_minutes": 6,
+    "beach_or_city_name": "Destin",
+    "access_name": "June White Decker Beach Access",
+    "access_address": "Scenic Hwy 98 & S end of Restaurant Rd.",
+    "destination": {
+     "lat": 30.38411111,
+     "lon": -86.45677778
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1140748468"
+   }
+  },
+  {
+   "id": "pcb",
+   "county": "Bay",
+   "millage": 12.6966,
+   "county_tax_rates": [
+    {
+     "county": "Bay",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.6966
+    }
+   ],
+   "beach": {
+    "drive_minutes": 5.64,
+    "display_minutes": 6,
+    "beach_or_city_name": "Panama City Beach, Laguna Beach",
+    "access_name": "Dan Russell City Pier Beach Park",
+    "access_address": "Pier Park Dr. & Front Beach Road",
+    "destination": {
+     "lat": 30.215747999999998,
+     "lon": -85.87709199999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/492866945"
+   }
+  },
+  {
+   "id": "apalachicola",
+   "county": "Franklin",
+   "millage": 10.6003,
+   "county_tax_rates": [
+    {
+     "county": "Franklin",
+     "population_share": 1.0,
+     "total_aggregate_millage": 10.6003
+    }
+   ],
+   "beach": {
+    "drive_minutes": 21.14,
+    "display_minutes": 22,
+    "beach_or_city_name": "St. George Island",
+    "access_name": "St. George Island Public Beach",
+    "access_address": "The beach is at the south end of Hwy 300.",
+    "destination": {
+     "lat": 29.662848,
+     "lon": -84.862534
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1121108568"
+   }
+  },
+  {
+   "id": "cedarkey",
+   "county": "Levy",
+   "millage": 16.0399,
+   "county_tax_rates": [
+    {
+     "county": "Levy",
+     "population_share": 1.0,
+     "total_aggregate_millage": 16.0399
+    }
+   ],
+   "beach": {
+    "drive_minutes": 3.07,
+    "display_minutes": 4,
+    "beach_or_city_name": "Cedar Key",
+    "access_name": "Sand Spit Park",
+    "access_address": "G Street & 1st Street",
+    "destination": {
+     "lat": 29.13443072,
+     "lon": -83.03587416
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1167283196"
+   }
+  },
+  {
+   "id": "dunedin",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 14.49,
+    "display_minutes": 15,
+    "beach_or_city_name": "Dunedin",
+    "access_name": "Honeymoon Island State Park",
+    "access_address": "West end Causeway Blvd (Hwy 586)",
+    "destination": {
+     "lat": 28.060318,
+     "lon": -82.81978699999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.floridastateparks.org/honeymoonisland"
+   }
+  },
+  {
+   "id": "clearwaterbeach",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.47,
+    "display_minutes": 2,
+    "beach_or_city_name": "Clearwater Beach",
+    "access_name": "Beach Walk",
+    "access_address": "W of S Gulfview Blvd",
+    "destination": {
+     "lat": 27.97402778,
+     "lon": -82.82956944
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/4239233"
+   }
+  },
+  {
+   "id": "gulfport",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 10.05,
+    "display_minutes": 11,
+    "beach_or_city_name": "St. Pete Beach",
+    "access_name": "Inlet lot",
+    "access_address": "40 ft SW of West terminus of 73rd St",
+    "destination": {
+     "lat": 27.73920556,
+     "lon": -82.75331944
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/193761305"
+   }
+  },
+  {
+   "id": "ami",
+   "county": "Manatee",
+   "millage": 14.5524,
+   "county_tax_rates": [
+    {
+     "county": "Manatee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.5524
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.07,
+    "display_minutes": 2,
+    "beach_or_city_name": "Holmes Beach",
+    "access_name": "Gulf Drive",
+    "access_address": "South of 54th St., on Gulf Drive",
+    "destination": {
+     "lat": 27.505822,
+     "lon": -82.71719499999999
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/relation/1670605"
+   }
+  },
+  {
+   "id": "longboat",
+   "county": "Sarasota",
+   "millage": 12.7527,
+   "county_tax_rates": [
+    {
+     "county": "Sarasota",
+     "population_share": 0.63411059,
+     "total_aggregate_millage": 12.7527
+    },
+    {
+     "county": "Manatee",
+     "population_share": 0.36588941,
+     "total_aggregate_millage": 14.5524
+    }
+   ],
+   "beach": {
+    "drive_minutes": 5.13,
+    "display_minutes": 6,
+    "beach_or_city_name": "Longboat Key",
+    "access_name": "Neptune Ave.",
+    "access_address": "Neptune Ave. & Gulf of Mexico Dr.",
+    "destination": {
+     "lat": 27.368177,
+     "lon": -82.627399
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/206924105"
+   }
+  },
+  {
+   "id": "captiva",
+   "county": "Lee",
+   "millage": 13.9967,
+   "county_tax_rates": [
+    {
+     "county": "Lee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9967
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.79,
+    "display_minutes": 2,
+    "beach_or_city_name": "Captiva",
+    "access_name": "Andy Rosse Lane",
+    "access_address": "West end Andy Rosse Lane",
+    "destination": {
+     "lat": 26.52214167,
+     "lon": -82.19316111
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/207517050"
+   }
+  },
+  {
+   "id": "matlacha",
+   "county": "Lee",
+   "millage": 13.9967,
+   "county_tax_rates": [
+    {
+     "county": "Lee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9967
+    }
+   ],
+   "beach": {
+    "drive_minutes": 42.32,
+    "display_minutes": 43,
+    "beach_or_city_name": "San Carlos Bay",
+    "access_name": "Bunche Beach Preserve",
+    "access_address": "18201 John Morris Road Fort Myers, FL 33908",
+    "destination": {
+     "lat": 26.476315999999997,
+     "lon": -81.967281
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/6378359"
+   }
+  },
+  {
+   "id": "naples",
+   "county": "Collier",
+   "millage": 9.8185,
+   "county_tax_rates": [
+    {
+     "county": "Collier",
+     "population_share": 1.0,
+     "total_aggregate_millage": 9.8185
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.98,
+    "display_minutes": 3,
+    "beach_or_city_name": "Naples",
+    "access_name": "Lowdermilk Public Park",
+    "access_address": "Banyan Blvd. & Gulf Shore Blvd. N",
+    "destination": {
+     "lat": 26.16293599,
+     "lon": -81.81022465
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/43860036"
+   }
+  },
+  {
+   "id": "keywest",
+   "county": "Monroe",
+   "millage": 8.2361,
+   "county_tax_rates": [
+    {
+     "county": "Monroe",
+     "population_share": 1.0,
+     "total_aggregate_millage": 8.2361
+    }
+   ],
+   "beach": {
+    "drive_minutes": 4.32,
+    "display_minutes": 5,
+    "beach_or_city_name": "Key West",
+    "access_name": "Smathers Beach",
+    "access_address": "South of Roosevelt Blvd.; East of Bertha St.",
+    "destination": {
+     "lat": 24.551572999999998,
+     "lon": -81.770907
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/336594688"
+   }
+  },
+  {
+   "id": "islamorada",
+   "county": "Monroe",
+   "millage": 8.2361,
+   "county_tax_rates": [
+    {
+     "county": "Monroe",
+     "population_share": 1.0,
+     "total_aggregate_millage": 8.2361
+    }
+   ],
+   "beach": {
+    "drive_minutes": 9.77,
+    "display_minutes": 10,
+    "beach_or_city_name": "Islamorada",
+    "access_name": "Upper Matecumbe County Park",
+    "access_address": "Overseas Hwy. & Johnston Rd., (Mile marker 81.5)",
+    "destination": {
+     "lat": 24.918031,
+     "lon": -80.637146
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://islamorada.fl.us/260/Parks-Beaches"
+   }
+  },
+  {
+   "id": "southbeach",
+   "county": "Dade",
+   "millage": 18.4893,
+   "county_tax_rates": [
+    {
+     "county": "Dade",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4893
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.6,
+    "display_minutes": 3,
+    "beach_or_city_name": "Miami Beach",
+    "access_name": "11th St.",
+    "access_address": "11th St. & Ocean Dr.",
+    "destination": {
+     "lat": 25.78156952,
+     "lon": -80.13029246
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/23986683"
+   }
+  },
+  {
+   "id": "ftl",
+   "county": "Broward",
+   "millage": 19.8638,
+   "county_tax_rates": [
+    {
+     "county": "Broward",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8638
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.48,
+    "display_minutes": 8,
+    "beach_or_city_name": "Fort Lauderdale",
+    "access_name": "NE 9th St.",
+    "access_address": "NE 9th St. & N Atlantic Blvd.",
+    "destination": {
+     "lat": 26.13685395,
+     "lon": -80.1029789
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/572618114"
+   }
+  },
+  {
+   "id": "delray",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 5.97,
+    "display_minutes": 6,
+    "beach_or_city_name": "Delray Beach",
+    "access_name": "Atlantic Dunes Park",
+    "access_address": "1605 South Ocean Blvd.",
+    "destination": {
+     "lat": 26.44216361,
+     "lon": -80.06223446
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.delraybeachfl.gov/government/city-departments/parks-and-recreation/frequently-asked-questions"
+   }
+  },
+  {
+   "id": "jupiter",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 9.45,
+    "display_minutes": 10,
+    "beach_or_city_name": "Jupiter",
+    "access_name": "Access #60",
+    "access_address": "0.25 miles south of Carlin Park on Ocean Blvd.",
+    "destination": {
+     "lat": 26.92743083,
+     "lon": -80.06811806
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/289941845"
+   }
+  },
+  {
+   "id": "fortpierce",
+   "county": "Saint Lucie",
+   "millage": 21.557,
+   "county_tax_rates": [
+    {
+     "county": "Saint Lucie",
+     "population_share": 1.0,
+     "total_aggregate_millage": 21.557
+    }
+   ],
+   "beach": {
+    "drive_minutes": 10.9,
+    "display_minutes": 11,
+    "beach_or_city_name": "Fort Pierce",
+    "access_name": "St Lucie Ct.",
+    "access_address": "St Lucie Ct. & S Ocean Dr.",
+    "destination": {
+     "lat": 27.46796037,
+     "lon": -80.29105347
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/986830924"
+   }
+  },
+  {
+   "id": "cocoa",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.31,
+    "display_minutes": 3,
+    "beach_or_city_name": "Cocoa Beach",
+    "access_name": "4th St. N",
+    "access_address": "4th St. N & N Atlantic Ave.",
+    "destination": {
+     "lat": 28.32565154,
+     "lon": -80.60790959
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1235985238"
+   }
+  },
+  {
+   "id": "nsb",
+   "county": "Volusia",
+   "millage": 17.4169,
+   "county_tax_rates": [
+    {
+     "county": "Volusia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4169
+    }
+   ],
+   "beach": {
+    "drive_minutes": 10.55,
+    "display_minutes": 11,
+    "beach_or_city_name": "New Smyrna Beach",
+    "access_name": "E 4th Ave.",
+    "access_address": "E 4th Ave. & Hill St.",
+    "destination": {
+     "lat": 29.02884678,
+     "lon": -80.89048138
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/relation/13893447"
+   }
+  },
+  {
+   "id": "daytona",
+   "county": "Volusia",
+   "millage": 17.4169,
+   "county_tax_rates": [
+    {
+     "county": "Volusia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4169
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.31,
+    "display_minutes": 8,
+    "beach_or_city_name": "Daytona Beach",
+    "access_name": "International Speedway Blvd.",
+    "access_address": "E International Speedway Blvd. & S Atlantic Ave.",
+    "destination": {
+     "lat": 29.22216066,
+     "lon": -81.00502188
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/21778073"
+   }
+  },
+  {
+   "id": "flagler",
+   "county": "Flagler",
+   "millage": 17.1551,
+   "county_tax_rates": [
+    {
+     "county": "Flagler",
+     "population_share": 0.98604651,
+     "total_aggregate_millage": 17.1551
+    },
+    {
+     "county": "Volusia",
+     "population_share": 0.01395349,
+     "total_aggregate_millage": 17.4169
+    }
+   ],
+   "beach": {
+    "drive_minutes": 0.94,
+    "display_minutes": 1,
+    "beach_or_city_name": "Flagler Beach",
+    "access_name": "S 14th St.",
+    "access_address": "S 14th St. & S Oceanshore Blvd.",
+    "destination": {
+     "lat": 29.47063848,
+     "lon": -81.12228782
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/133634822"
+   }
+  },
+  {
+   "id": "staug",
+   "county": "Saint Johns",
+   "millage": 13.9738,
+   "county_tax_rates": [
+    {
+     "county": "Saint Johns",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9738
+    }
+   ],
+   "beach": {
+    "drive_minutes": 10.33,
+    "display_minutes": 11,
+    "beach_or_city_name": "St. Augustine Beach",
+    "access_name": "Pope Rd.",
+    "access_address": "Pope Rd. & Old A1A",
+    "destination": {
+     "lat": 29.85940489,
+     "lon": -81.26629201
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/16060618"
+   }
+  },
+  {
+   "id": "jaxbeach",
+   "county": "Duval",
+   "millage": 17.891,
+   "county_tax_rates": [
+    {
+     "county": "Duval",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.891
+    }
+   ],
+   "beach": {
+    "drive_minutes": 3.23,
+    "display_minutes": 4,
+    "beach_or_city_name": "Jacksonville Beach",
+    "access_name": "7th Ave. S",
+    "access_address": "7th Ave. S. & 1st St. S",
+    "destination": {
+     "lat": 30.28206723,
+     "lon": -81.38760368
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/6756422"
+   }
+  },
+  {
+   "id": "fernandina",
+   "county": "Nassau",
+   "millage": 16.0559,
+   "county_tax_rates": [
+    {
+     "county": "Nassau",
+     "population_share": 1.0,
+     "total_aggregate_millage": 16.0559
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.99,
+    "display_minutes": 3,
+    "beach_or_city_name": "Fernandina Beach",
+    "access_name": "9",
+    "access_address": "Jasmine St. & S Fletcher Ave.",
+    "destination": {
+     "lat": 30.6554412,
+     "lon": -81.43315745
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/922205230"
+   }
+  },
+  {
+   "id": "carrabelle",
+   "county": "Franklin",
+   "millage": 10.6003,
+   "county_tax_rates": [
+    {
+     "county": "Franklin",
+     "population_share": 1.0,
+     "total_aggregate_millage": 10.6003
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.14,
+    "display_minutes": 8,
+    "beach_or_city_name": "Carabelle",
+    "access_name": "East of Carabelle",
+    "access_address": null,
+    "destination": {
+     "lat": 29.85374,
+     "lon": -84.6359
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1121108553"
+   }
+  },
+  {
+   "id": "st-george-island",
+   "county": "Franklin",
+   "millage": 10.6003,
+   "county_tax_rates": [
+    {
+     "county": "Franklin",
+     "population_share": 1.0,
+     "total_aggregate_millage": 10.6003
+    }
+   ],
+   "beach": {
+    "drive_minutes": 3.65,
+    "display_minutes": 4,
+    "beach_or_city_name": "St. George Island",
+    "access_name": "St. George Island Public Beach",
+    "access_address": "The beach is at the south end of Hwy 300.",
+    "destination": {
+     "lat": 29.662848,
+     "lon": -84.862534
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1121108568"
+   }
+  },
+  {
+   "id": "st-teresa",
+   "county": "Franklin",
+   "millage": 10.6003,
+   "county_tax_rates": [
+    {
+     "county": "Franklin",
+     "population_share": 1.0,
+     "total_aggregate_millage": 10.6003
+    }
+   ],
+   "beach": {
+    "drive_minutes": 12.67,
+    "display_minutes": 13,
+    "beach_or_city_name": "St Teresa",
+    "access_name": "Leonard's Landing",
+    "access_address": "This access is 2.25 miles west of intersection of Hwy 370 and Hwy 98",
+    "destination": {
+     "lat": 29.92374414,
+     "lon": -84.41397559
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1121108537"
+   }
+  },
+  {
+   "id": "st-marks",
+   "county": "Wakulla",
+   "millage": 13.4421,
+   "county_tax_rates": [
+    {
+     "county": "Wakulla",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.4421
+    }
+   ],
+   "beach": {
+    "drive_minutes": 29.23,
+    "display_minutes": 30,
+    "beach_or_city_name": "Shell Point",
+    "access_name": "Shell Point Beach",
+    "access_address": "South end of Shell Point Road, CR 367",
+    "destination": {
+     "lat": 30.05797762,
+     "lon": -84.29053888
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/943422238"
+   }
+  },
+  {
+   "id": "panama-city",
+   "county": "Bay",
+   "millage": 12.6966,
+   "county_tax_rates": [
+    {
+     "county": "Bay",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.6966
+    }
+   ],
+   "beach": {
+    "drive_minutes": 18.05,
+    "display_minutes": 19,
+    "beach_or_city_name": "Gulf Lagoon Beach",
+    "access_name": "South Rick Seltzer Park",
+    "access_address": "south end of Xavier Street; south of Thomas Street",
+    "destination": {
+     "lat": 30.159938,
+     "lon": -85.77788699999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/492866945"
+   }
+  },
+  {
+   "id": "pensacola",
+   "county": "Escambia",
+   "millage": 14.1316,
+   "county_tax_rates": [
+    {
+     "county": "Escambia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.1316
+    }
+   ],
+   "beach": {
+    "drive_minutes": 22.6,
+    "display_minutes": 23,
+    "beach_or_city_name": "Pensacola Beach",
+    "access_name": "Santa Rosa Island Authority, James P. Morgan Park",
+    "access_address": "Pensacola Beach Boulevard southeast of the Toll Gate Plaza (Bay side)",
+    "destination": {
+     "lat": 30.340286,
+     "lon": -87.14718099999999
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1157310110"
+   }
+  },
+  {
+   "id": "pensacola-beach",
+   "county": "Escambia",
+   "millage": 14.1316,
+   "county_tax_rates": [
+    {
+     "county": "Escambia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.1316
+    }
+   ],
+   "beach": {
+    "drive_minutes": 3.48,
+    "display_minutes": 4,
+    "beach_or_city_name": "Santa Rosa Island",
+    "access_name": "Santa Rosa Island Beach Authority East 8",
+    "access_address": "15-17 Calle Hermosa Gulf Islands National Seashore, Pensacola Beach, FL 32561",
+    "destination": {
+     "lat": 30.341061999999997,
+     "lon": -87.08995
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1157337120"
+   }
+  },
+  {
+   "id": "navarre-beach",
+   "county": "Santa Rosa",
+   "millage": 11.7171,
+   "county_tax_rates": [
+    {
+     "county": "Santa Rosa",
+     "population_share": 1.0,
+     "total_aggregate_millage": 11.7171
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.07,
+    "display_minutes": 2,
+    "beach_or_city_name": "Navarre Beach",
+    "access_name": "Indiana Street",
+    "access_address": "Just north of Indiana St. & Gulf Blvd.",
+    "destination": {
+     "lat": 30.37620263,
+     "lon": -86.8904612
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1151315553"
+   }
+  },
+  {
+   "id": "perdido-key",
+   "county": "Escambia",
+   "millage": 14.1316,
+   "county_tax_rates": [
+    {
+     "county": "Escambia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.1316
+    }
+   ],
+   "beach": {
+    "drive_minutes": 18.41,
+    "display_minutes": 19,
+    "beach_or_city_name": "Big Lagoon State Park",
+    "access_name": "Big Lagoon State Park",
+    "access_address": "12301 Gulf Beach Highway",
+    "destination": {
+     "lat": 30.31173941,
+     "lon": -87.42191179
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1157336863"
+   }
+  },
+  {
+   "id": "gulf-breeze",
+   "county": "Santa Rosa",
+   "millage": 11.7171,
+   "county_tax_rates": [
+    {
+     "county": "Santa Rosa",
+     "population_share": 1.0,
+     "total_aggregate_millage": 11.7171
+    }
+   ],
+   "beach": {
+    "drive_minutes": 6.77,
+    "display_minutes": 7,
+    "beach_or_city_name": "Pensacola Beach",
+    "access_name": "Santa Rosa Island Authority, James P. Morgan Park",
+    "access_address": "Pensacola Beach Boulevard southeast of the Toll Gate Plaza (Bay side)",
+    "destination": {
+     "lat": 30.340286,
+     "lon": -87.14718099999999
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1157310110"
+   }
+  },
+  {
+   "id": "port-st-joe",
+   "county": "Gulf",
+   "millage": 12.2198,
+   "county_tax_rates": [
+    {
+     "county": "Gulf",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.2198
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.56,
+    "display_minutes": 3,
+    "beach_or_city_name": "Port St. Joe",
+    "access_name": "Frank Pate Park",
+    "access_address": "Access is between 5th (Cecil G. Costin State Route 71) and 6th Street; southwest of CR 30.",
+    "destination": {
+     "lat": 29.811121,
+     "lon": -85.30512499999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1132115227"
+   }
+  },
+  {
+   "id": "crystal-river",
+   "county": "Citrus",
+   "millage": 15.4758,
+   "county_tax_rates": [
+    {
+     "county": "Citrus",
+     "population_share": 1.0,
+     "total_aggregate_millage": 15.4758
+    }
+   ],
+   "beach": {
+    "drive_minutes": 26.59,
+    "display_minutes": 27,
+    "beach_or_city_name": "Crystal River",
+    "access_name": "Fort Island Beach",
+    "access_address": "16000 W. Fort Island Trail, West terminus of CR 44",
+    "destination": {
+     "lat": 28.90785833,
+     "lon": -82.69089444
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/147499385"
+   }
+  },
+  {
+   "id": "homosassa",
+   "county": "Citrus",
+   "millage": 15.4758,
+   "county_tax_rates": [
+    {
+     "county": "Citrus",
+     "population_share": 1.0,
+     "total_aggregate_millage": 15.4758
+    }
+   ],
+   "beach": {
+    "drive_minutes": 40.7,
+    "display_minutes": 41,
+    "beach_or_city_name": "Crystal River",
+    "access_name": "Fort Island Beach",
+    "access_address": "16000 W. Fort Island Trail, West terminus of CR 44",
+    "destination": {
+     "lat": 28.90785833,
+     "lon": -82.69089444
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/147499385"
+   }
+  },
+  {
+   "id": "ozello",
+   "county": "Citrus",
+   "millage": 15.4758,
+   "county_tax_rates": [
+    {
+     "county": "Citrus",
+     "population_share": 1.0,
+     "total_aggregate_millage": 15.4758
+    }
+   ],
+   "beach": {
+    "drive_minutes": 27.26,
+    "display_minutes": 28,
+    "beach_or_city_name": "Crystal River",
+    "access_name": "Fort Island Beach",
+    "access_address": "16000 W. Fort Island Trail, West terminus of CR 44",
+    "destination": {
+     "lat": 28.90785833,
+     "lon": -82.69089444
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/147499385"
+   }
+  },
+  {
+   "id": "steinhatchee",
+   "county": "Taylor",
+   "millage": 15.4326,
+   "county_tax_rates": [
+    {
+     "county": "Taylor",
+     "population_share": 1.0,
+     "total_aggregate_millage": 15.4326
+    }
+   ],
+   "beach": {
+    "drive_minutes": 36.32,
+    "display_minutes": 37,
+    "beach_or_city_name": "Hagin Cove",
+    "access_name": "Hagin Cove Road",
+    "access_address": "west end of Hagin Cove Road; off of CR 361",
+    "destination": {
+     "lat": 29.772383519999998,
+     "lon": -83.58000082
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1091986825"
+   }
+  },
+  {
+   "id": "apollo-beach",
+   "county": "Hillsborough",
+   "millage": 18.8553,
+   "county_tax_rates": [
+    {
+     "county": "Hillsborough",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.8553
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.52,
+    "display_minutes": 9,
+    "beach_or_city_name": "Apollo Beach",
+    "access_name": "Apollo Beach Nature Park",
+    "access_address": "6767 Surfside Blvd. Apollo Beach",
+    "destination": {
+     "lat": 27.79205175,
+     "lon": -82.41945264
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/264802276"
+   }
+  },
+  {
+   "id": "clearwater",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 13.74,
+    "display_minutes": 14,
+    "beach_or_city_name": "Clearwater Beach",
+    "access_name": "Papaya Street",
+    "access_address": "Papaya Street & Mandalay Ave.",
+    "destination": {
+     "lat": 27.979920999999997,
+     "lon": -82.827743
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/relation/4239233"
+   }
+  },
+  {
+   "id": "indian-rocks-beach",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 0.9,
+    "display_minutes": 1,
+    "beach_or_city_name": "Indian Rocks Beach",
+    "access_name": "12th Avenue",
+    "access_address": "12th Avenue & Gulf Blvd.",
+    "destination": {
+     "lat": 27.895021999999997,
+     "lon": -82.849053
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/195228722"
+   }
+  },
+  {
+   "id": "madeira-beach",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.28,
+    "display_minutes": 2,
+    "beach_or_city_name": "Madeira Beach",
+    "access_name": "Tom & Kitty Stuart Park",
+    "access_address": "14000 Gulf Blvd (141st Ave.)",
+    "destination": {
+     "lat": 27.794942,
+     "lon": -82.793925
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/195228722"
+   }
+  },
+  {
+   "id": "new-port-richey",
+   "county": "Pasco",
+   "millage": 17.2168,
+   "county_tax_rates": [
+    {
+     "county": "Pasco",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.2168
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.2,
+    "display_minutes": 8,
+    "beach_or_city_name": "New Port Richey",
+    "access_name": "Robert K Rees Park",
+    "access_address": "4835 Green Key Rd; New Pt. Richey",
+    "destination": {
+     "lat": 28.25382778,
+     "lon": -82.75696667
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/194248544"
+   }
+  },
+  {
+   "id": "ruskin",
+   "county": "Hillsborough",
+   "millage": 18.8553,
+   "county_tax_rates": [
+    {
+     "county": "Hillsborough",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.8553
+    }
+   ],
+   "beach": {
+    "drive_minutes": 15.68,
+    "display_minutes": 16,
+    "beach_or_city_name": " ",
+    "access_name": "E.G. Simmons Park",
+    "access_address": "2401 19th Street SW Ruskin",
+    "destination": {
+     "lat": 27.74786466,
+     "lon": -82.47239009
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/359653483"
+   }
+  },
+  {
+   "id": "safety-harbor",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 22.91,
+    "display_minutes": 23,
+    "beach_or_city_name": "Dunedin",
+    "access_name": "Honeymoon Island State Park",
+    "access_address": "West end Causeway Blvd (Hwy 586)",
+    "destination": {
+     "lat": 28.060318,
+     "lon": -82.81978699999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.floridastateparks.org/honeymoonisland"
+   }
+  },
+  {
+   "id": "st-pete-beach",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 0.98,
+    "display_minutes": 1,
+    "beach_or_city_name": "St. Pete Beach",
+    "access_name": "51st Avenue",
+    "access_address": "51st Avenue & Gulf Blvd.",
+    "destination": {
+     "lat": 27.725206999999997,
+     "lon": -82.741731
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/node/358713570"
+   }
+  },
+  {
+   "id": "st-petersburg",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 17.01,
+    "display_minutes": 18,
+    "beach_or_city_name": "Treasure Island",
+    "access_name": "Beach Park",
+    "access_address": "104th Ave. & Gulf Blvd.",
+    "destination": {
+     "lat": 27.76641389,
+     "lon": -82.76856667
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/4077766"
+   }
+  },
+  {
+   "id": "sun-city-center",
+   "county": "Hillsborough",
+   "millage": 18.8553,
+   "county_tax_rates": [
+    {
+     "county": "Hillsborough",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.8553
+    }
+   ],
+   "beach": {
+    "drive_minutes": 22.97,
+    "display_minutes": 23,
+    "beach_or_city_name": " ",
+    "access_name": "E.G. Simmons Park",
+    "access_address": "2401 19th Street SW Ruskin",
+    "destination": {
+     "lat": 27.74786466,
+     "lon": -82.47239009
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/359653483"
+   }
+  },
+  {
+   "id": "tampa",
+   "county": "Hillsborough",
+   "millage": 18.8553,
+   "county_tax_rates": [
+    {
+     "county": "Hillsborough",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.8553
+    }
+   ],
+   "beach": {
+    "drive_minutes": 36.01,
+    "display_minutes": 37,
+    "beach_or_city_name": "Apollo Beach",
+    "access_name": "Apollo Beach Nature Park",
+    "access_address": "6767 Surfside Blvd. Apollo Beach",
+    "destination": {
+     "lat": 27.79205175,
+     "lon": -82.41945264
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/264802276"
+   }
+  },
+  {
+   "id": "tarpon-springs",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 0.99896895,
+     "total_aggregate_millage": 18.4941
+    },
+    {
+     "county": "Pasco",
+     "population_share": 0.00103105,
+     "total_aggregate_millage": 17.2168
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.92,
+    "display_minutes": 9,
+    "beach_or_city_name": "Tarpon Springs",
+    "access_name": "Sunset Beach",
+    "access_address": "West end Gulf Rd",
+    "destination": {
+     "lat": 28.14446,
+     "lon": -82.79007
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/194250907"
+   }
+  },
+  {
+   "id": "treasure-island",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.48,
+    "display_minutes": 2,
+    "beach_or_city_name": "Treasure Island",
+    "access_name": "Beach Park",
+    "access_address": "104th Ave. & Gulf Blvd.",
+    "destination": {
+     "lat": 27.76641389,
+     "lon": -82.76856667
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/4077766"
+   }
+  },
+  {
+   "id": "bradenton",
+   "county": "Manatee",
+   "millage": 14.5524,
+   "county_tax_rates": [
+    {
+     "county": "Manatee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.5524
+    }
+   ],
+   "beach": {
+    "drive_minutes": 18.36,
+    "display_minutes": 19,
+    "beach_or_city_name": "Holmes Beach",
+    "access_name": "35th St.",
+    "access_address": "35th St. & 4th Ave.",
+    "destination": {
+     "lat": 27.493644,
+     "lon": -82.71014799999999
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/relation/1670605"
+   }
+  },
+  {
+   "id": "bradenton-beach",
+   "county": "Manatee",
+   "millage": 14.5524,
+   "county_tax_rates": [
+    {
+     "county": "Manatee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.5524
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.55,
+    "display_minutes": 2,
+    "beach_or_city_name": "Bradenton Beach",
+    "access_name": "23rd St.",
+    "access_address": "23rd St. & Gulf Dr. N",
+    "destination": {
+     "lat": 27.479001999999998,
+     "lon": -82.704019
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/relation/1670605"
+   }
+  },
+  {
+   "id": "cortez",
+   "county": "Manatee",
+   "millage": 14.5524,
+   "county_tax_rates": [
+    {
+     "county": "Manatee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.5524
+    }
+   ],
+   "beach": {
+    "drive_minutes": 5.14,
+    "display_minutes": 6,
+    "beach_or_city_name": "Bradenton Beach",
+    "access_name": "Bridge St.",
+    "access_address": "Bridge St. & Gulf Dr. N",
+    "destination": {
+     "lat": 27.464954,
+     "lon": -82.69860299999999
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/relation/1670605"
+   }
+  },
+  {
+   "id": "englewood",
+   "county": "Sarasota",
+   "millage": 12.7527,
+   "county_tax_rates": [
+    {
+     "county": "Charlotte",
+     "population_share": 0.26028846,
+     "total_aggregate_millage": 15.6763
+    },
+    {
+     "county": "Sarasota",
+     "population_share": 0.73971154,
+     "total_aggregate_millage": 12.7527
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.59,
+    "display_minutes": 8,
+    "beach_or_city_name": "Englewood",
+    "access_name": "Englewood Beach Park",
+    "access_address": "2100 N  Beach Rd",
+    "destination": {
+     "lat": 26.92512577,
+     "lon": -82.36092461
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/207373318"
+   }
+  },
+  {
+   "id": "sarasota",
+   "county": "Sarasota",
+   "millage": 12.7527,
+   "county_tax_rates": [
+    {
+     "county": "Sarasota",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.7527
+    }
+   ],
+   "beach": {
+    "drive_minutes": 9.96,
+    "display_minutes": 10,
+    "beach_or_city_name": "Lido Key",
+    "access_name": "Lido Beach",
+    "access_address": "between Bryant Dr and Garfield Dr on Ben Franklin Drive",
+    "destination": {
+     "lat": 27.31223713,
+     "lon": -82.57704816
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/125730911"
+   }
+  },
+  {
+   "id": "siesta-key",
+   "county": "Sarasota",
+   "millage": 12.7527,
+   "county_tax_rates": [
+    {
+     "county": "Sarasota",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.7527
+    }
+   ],
+   "beach": {
+    "drive_minutes": 4.98,
+    "display_minutes": 5,
+    "beach_or_city_name": "Siesta Key",
+    "access_name": "Siesta Key Beach",
+    "access_address": "948 Beach Rd.",
+    "destination": {
+     "lat": 27.26660035,
+     "lon": -82.55137875
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/375950982"
+   }
+  },
+  {
+   "id": "venice",
+   "county": "Sarasota",
+   "millage": 12.7527,
+   "county_tax_rates": [
+    {
+     "county": "Sarasota",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.7527
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.98,
+    "display_minutes": 9,
+    "beach_or_city_name": "Venice",
+    "access_name": "Venice Municipal Beach Park",
+    "access_address": "The Esplande N  & W Venice Ave.",
+    "destination": {
+     "lat": 27.09999752,
+     "lon": -82.45959292
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/207129854"
+   }
+  },
+  {
+   "id": "bonita-springs",
+   "county": "Lee",
+   "millage": 13.9967,
+   "county_tax_rates": [
+    {
+     "county": "Lee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9967
+    }
+   ],
+   "beach": {
+    "drive_minutes": 10.87,
+    "display_minutes": 11,
+    "beach_or_city_name": "Bonita Beach",
+    "access_name": "Bonita Beach Access #1",
+    "access_address": "Hickory Blvd. & Forrester Ln.",
+    "destination": {
+     "lat": 26.33215556,
+     "lon": -81.84616667
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/208495588"
+   }
+  },
+  {
+   "id": "cape-coral",
+   "county": "Lee",
+   "millage": 13.9967,
+   "county_tax_rates": [
+    {
+     "county": "Lee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9967
+    }
+   ],
+   "beach": {
+    "drive_minutes": 30.82,
+    "display_minutes": 31,
+    "beach_or_city_name": "San Carlos Bay",
+    "access_name": "Bunche Beach Preserve",
+    "access_address": "18201 John Morris Road Fort Myers, FL 33908",
+    "destination": {
+     "lat": 26.476315999999997,
+     "lon": -81.967281
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/6378359"
+   }
+  },
+  {
+   "id": "chokoloskee",
+   "county": "Collier",
+   "millage": 9.8185,
+   "county_tax_rates": [
+    {
+     "county": "Collier",
+     "population_share": 1.0,
+     "total_aggregate_millage": 9.8185
+    }
+   ],
+   "beach": {
+    "drive_minutes": 56.82,
+    "display_minutes": 57,
+    "beach_or_city_name": "Marco Island",
+    "access_name": "Swallow Ave. Walkway",
+    "access_address": "Swallow Ave. & S Collier Blvd.",
+    "destination": {
+     "lat": 25.91238711,
+     "lon": -81.72702065
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/131096545"
+   }
+  },
+  {
+   "id": "everglades-city",
+   "county": "Collier",
+   "millage": 9.8185,
+   "county_tax_rates": [
+    {
+     "county": "Collier",
+     "population_share": 1.0,
+     "total_aggregate_millage": 9.8185
+    }
+   ],
+   "beach": {
+    "drive_minutes": 50.31,
+    "display_minutes": 51,
+    "beach_or_city_name": "Marco Island",
+    "access_name": "Swallow Ave. Walkway",
+    "access_address": "Swallow Ave. & S Collier Blvd.",
+    "destination": {
+     "lat": 25.91238711,
+     "lon": -81.72702065
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/131096545"
+   }
+  },
+  {
+   "id": "fort-myers",
+   "county": "Lee",
+   "millage": 13.9967,
+   "county_tax_rates": [
+    {
+     "county": "Lee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9967
+    }
+   ],
+   "beach": {
+    "drive_minutes": 29.63,
+    "display_minutes": 30,
+    "beach_or_city_name": "San Carlos Bay",
+    "access_name": "Bunche Beach Preserve",
+    "access_address": "18201 John Morris Road Fort Myers, FL 33908",
+    "destination": {
+     "lat": 26.476315999999997,
+     "lon": -81.967281
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/6378359"
+   }
+  },
+  {
+   "id": "fort-myers-beach",
+   "county": "Lee",
+   "millage": 13.9967,
+   "county_tax_rates": [
+    {
+     "county": "Lee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9967
+    }
+   ],
+   "beach": {
+    "drive_minutes": 0.63,
+    "display_minutes": 1,
+    "beach_or_city_name": "Ft. Meyers Beach",
+    "access_name": "Dakota Ave., Beach Access 16",
+    "access_address": "Dakota Ave. & Estero Blvd.",
+    "destination": {
+     "lat": 26.43129722,
+     "lon": -81.91475
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/125728570"
+   }
+  },
+  {
+   "id": "marco-island",
+   "county": "Collier",
+   "millage": 9.8185,
+   "county_tax_rates": [
+    {
+     "county": "Collier",
+     "population_share": 1.0,
+     "total_aggregate_millage": 9.8185
+    }
+   ],
+   "beach": {
+    "drive_minutes": 6.76,
+    "display_minutes": 7,
+    "beach_or_city_name": "Marco Island",
+    "access_name": "Swallow Ave. Walkway",
+    "access_address": "Swallow Ave. & S Collier Blvd.",
+    "destination": {
+     "lat": 25.91238711,
+     "lon": -81.72702065
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/131096545"
+   }
+  },
+  {
+   "id": "port-charlotte",
+   "county": "Charlotte",
+   "millage": 15.6763,
+   "county_tax_rates": [
+    {
+     "county": "Charlotte",
+     "population_share": 1.0,
+     "total_aggregate_millage": 15.6763
+    }
+   ],
+   "beach": {
+    "drive_minutes": 34.94,
+    "display_minutes": 35,
+    "beach_or_city_name": "Englewood",
+    "access_name": "Englewood Beach Park",
+    "access_address": "2100 N  Beach Rd",
+    "destination": {
+     "lat": 26.92512577,
+     "lon": -82.36092461
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/207373318"
+   }
+  },
+  {
+   "id": "punta-gorda",
+   "county": "Charlotte",
+   "millage": 15.6763,
+   "county_tax_rates": [
+    {
+     "county": "Charlotte",
+     "population_share": 1.0,
+     "total_aggregate_millage": 15.6763
+    }
+   ],
+   "beach": {
+    "drive_minutes": 57.02,
+    "display_minutes": 58,
+    "beach_or_city_name": "Boca Grande",
+    "access_name": "17th St.",
+    "access_address": "17th Street; West of Gasparilla Rd.",
+    "destination": {
+     "lat": 26.76180833,
+     "lon": -82.26551389
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1234055949"
+   }
+  },
+  {
+   "id": "sanibel-island",
+   "county": "Lee",
+   "millage": 13.9967,
+   "county_tax_rates": [
+    {
+     "county": "Lee",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9967
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.41,
+    "display_minutes": 8,
+    "beach_or_city_name": "Sanibel",
+    "access_name": "Gulfside City Park",
+    "access_address": "End of Algiers Lane",
+    "destination": {
+     "lat": 26.42548868,
+     "lon": -82.06605494
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/207519636"
+   }
+  },
+  {
+   "id": "key-largo",
+   "county": "Monroe",
+   "millage": 8.2361,
+   "county_tax_rates": [
+    {
+     "county": "Monroe",
+     "population_share": 1.0,
+     "total_aggregate_millage": 8.2361
+    }
+   ],
+   "beach": {
+    "drive_minutes": 6.46,
+    "display_minutes": 7,
+    "beach_or_city_name": "Key Largo",
+    "access_name": "Pennekamp Coral Reef State Park lots",
+    "access_address": "South end of Old Rd. (Mile marker 102..5)",
+    "destination": {
+     "lat": 25.124319999999997,
+     "lon": -80.40717599999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/973246504"
+   }
+  },
+  {
+   "id": "bal-harbour",
+   "county": "Dade",
+   "millage": 18.4893,
+   "county_tax_rates": [
+    {
+     "county": "Dade",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4893
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.2,
+    "display_minutes": 2,
+    "beach_or_city_name": "Bal Harbour",
+    "access_name": "Bal Harbour Access",
+    "access_address": "North end of Bal Harbour Blvd. before the bridge",
+    "destination": {
+     "lat": 25.89925786,
+     "lon": -80.12438322
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/24004740"
+   }
+  },
+  {
+   "id": "boca-raton",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 9.21,
+    "display_minutes": 10,
+    "beach_or_city_name": "Boca Raton",
+    "access_name": "South Beach Pavillion",
+    "access_address": "E Palmetto Park Rd. & N Ocean Blvd.",
+    "destination": {
+     "lat": 26.35075138,
+     "lon": -80.06982663
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/328540611"
+   }
+  },
+  {
+   "id": "dania-beach",
+   "county": "Broward",
+   "millage": 19.8638,
+   "county_tax_rates": [
+    {
+     "county": "Broward",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8638
+    }
+   ],
+   "beach": {
+    "drive_minutes": 10.83,
+    "display_minutes": 11,
+    "beach_or_city_name": "Dania Beach",
+    "access_name": "Frank C. Adler Park",
+    "access_address": "Dania Beach Access Rd. & N Beach Rd.",
+    "destination": {
+     "lat": 26.05572058,
+     "lon": -80.11220815
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/24078453"
+   }
+  },
+  {
+   "id": "hallandale",
+   "county": "Broward",
+   "millage": 19.8638,
+   "county_tax_rates": [
+    {
+     "county": "Broward",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8638
+    }
+   ],
+   "beach": {
+    "drive_minutes": 4.65,
+    "display_minutes": 5,
+    "beach_or_city_name": "Hallandale",
+    "access_name": "E Hallendale Beach Blvd.",
+    "access_address": "East end of E Hallendale Beach Blvd.",
+    "destination": {
+     "lat": 25.986123,
+     "lon": -80.118084
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/24040800"
+   }
+  },
+  {
+   "id": "highland-beach",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 4.3,
+    "display_minutes": 5,
+    "beach_or_city_name": "Boca Raton",
+    "access_name": "NE Spanish River Blvd.",
+    "access_address": "NE Spanish River Blvd. & N Ocean Blvd.",
+    "destination": {
+     "lat": 26.38635107,
+     "lon": -80.06716513
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/328540611"
+   }
+  },
+  {
+   "id": "hollywood",
+   "county": "Broward",
+   "millage": 19.8638,
+   "county_tax_rates": [
+    {
+     "county": "Broward",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8638
+    }
+   ],
+   "beach": {
+    "drive_minutes": 12.7,
+    "display_minutes": 13,
+    "beach_or_city_name": "Hollywood",
+    "access_name": "Taylor St.",
+    "access_address": "Taylor St. & N Surf Rd.",
+    "destination": {
+     "lat": 26.01500407,
+     "lon": -80.11566246
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/24078453"
+   }
+  },
+  {
+   "id": "lauderdale-by-the-sea",
+   "county": "Broward",
+   "millage": 19.8638,
+   "county_tax_rates": [
+    {
+     "county": "Broward",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8638
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.11,
+    "display_minutes": 3,
+    "beach_or_city_name": "Lauderdale-by-the-Sea",
+    "access_name": "Washington Ave.",
+    "access_address": "Washington Ave. & El Mar Dr.",
+    "destination": {
+     "lat": 26.19494625,
+     "lon": -80.09511766
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/572071787"
+   }
+  },
+  {
+   "id": "lighthouse-point",
+   "county": "Broward",
+   "millage": 19.8638,
+   "county_tax_rates": [
+    {
+     "county": "Broward",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8638
+    }
+   ],
+   "beach": {
+    "drive_minutes": 9.3,
+    "display_minutes": 10,
+    "beach_or_city_name": "Deerfield Beach",
+    "access_name": "Melrose Park - E Hillsboro Blvd.",
+    "access_address": "E Hillsboro Blvd. & N Ocean Way",
+    "destination": {
+     "lat": 26.31459362,
+     "lon": -80.07570789
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/443707170"
+   }
+  },
+  {
+   "id": "north-miami-beach",
+   "county": "Dade",
+   "millage": 18.4893,
+   "county_tax_rates": [
+    {
+     "county": "Dade",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4893
+    }
+   ],
+   "beach": {
+    "drive_minutes": 9.01,
+    "display_minutes": 10,
+    "beach_or_city_name": "Sunny Isles Beach",
+    "access_name": "Ellen M Wynne Beach Access",
+    "access_address": "19333 Coll ins Ave",
+    "destination": {
+     "lat": 25.95488581,
+     "lon": -80.12025555
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/24040800"
+   }
+  },
+  {
+   "id": "north-palm-beach",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 11.52,
+    "display_minutes": 12,
+    "beach_or_city_name": "Riviera Beach",
+    "access_name": "Riviera Beach Municipal Park",
+    "access_address": "Beach Rd. & S Ocean Ave.",
+    "destination": {
+     "lat": 26.78319099,
+     "lon": -80.03385619
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/234177865"
+   }
+  },
+  {
+   "id": "palm-beach",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 3.06,
+    "display_minutes": 4,
+    "beach_or_city_name": "Palm Beach",
+    "access_name": "Chilian Ave.",
+    "access_address": "Chilian Ave. & S Ocean Blvd.",
+    "destination": {
+     "lat": 26.70239272,
+     "lon": -80.03313106
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/170241325"
+   }
+  },
+  {
+   "id": "palm-beach-gardens",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 13.7,
+    "display_minutes": 14,
+    "beach_or_city_name": "North Palm Beach",
+    "access_name": "John D. MacArthur State Park",
+    "access_address": "10900 Jack Nicklaus Drive",
+    "destination": {
+     "lat": 26.82536158,
+     "lon": -80.04306181
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.floridastateparks.org/parks-and-trails/macarthur-beach-state-park"
+   }
+  },
+  {
+   "id": "riviera-beach",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.75,
+    "display_minutes": 8,
+    "beach_or_city_name": "Riviera Beach",
+    "access_name": "Riviera Beach Municipal Park",
+    "access_address": "Beach Rd. & S Ocean Ave.",
+    "destination": {
+     "lat": 26.78319099,
+     "lon": -80.03385619
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/234177865"
+   }
+  },
+  {
+   "id": "sunny-isles-beach",
+   "county": "Dade",
+   "millage": 18.4893,
+   "county_tax_rates": [
+    {
+     "county": "Dade",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4893
+    }
+   ],
+   "beach": {
+    "drive_minutes": 4.14,
+    "display_minutes": 5,
+    "beach_or_city_name": "Sunny Isles Beach",
+    "access_name": "Ellen M Wynne Beach Access",
+    "access_address": "19333 Coll ins Ave",
+    "destination": {
+     "lat": 25.95488581,
+     "lon": -80.12025555
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/24040800"
+   }
+  },
+  {
+   "id": "west-palm-beach",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 11.41,
+    "display_minutes": 12,
+    "beach_or_city_name": "Palm Beach",
+    "access_name": "Brazilian Ave.",
+    "access_address": "Brazilian Ave. & S Ocean Blvd.",
+    "destination": {
+     "lat": 26.70423544,
+     "lon": -80.03316597
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/170241325"
+   }
+  },
+  {
+   "id": "wilton-manors",
+   "county": "Broward",
+   "millage": 19.8638,
+   "county_tax_rates": [
+    {
+     "county": "Broward",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8638
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.32,
+    "display_minutes": 9,
+    "beach_or_city_name": "Fort Lauderdale",
+    "access_name": "Vista Park",
+    "access_address": "Vista Park & N Atlantic Blvd.",
+    "destination": {
+     "lat": 26.16346816,
+     "lon": -80.09906812
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/43793751"
+   }
+  },
+  {
+   "id": "jensen-beach",
+   "county": "Martin",
+   "millage": 16.0598,
+   "county_tax_rates": [
+    {
+     "county": "Martin",
+     "population_share": 1.0,
+     "total_aggregate_millage": 16.0598
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.98,
+    "display_minutes": 8,
+    "beach_or_city_name": "Jensen Beach",
+    "access_name": "Jensen Beach Park",
+    "access_address": "Jensen Beach Causeway & NE Ocean Blvd.",
+    "destination": {
+     "lat": 27.25565944,
+     "lon": -80.19726094
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/986831832"
+   }
+  },
+  {
+   "id": "port-st-lucie",
+   "county": "Saint Lucie",
+   "millage": 21.557,
+   "county_tax_rates": [
+    {
+     "county": "Saint Lucie",
+     "population_share": 1.0,
+     "total_aggregate_millage": 21.557
+    }
+   ],
+   "beach": {
+    "drive_minutes": 24.21,
+    "display_minutes": 25,
+    "beach_or_city_name": "Jensen Beach",
+    "access_name": "Jensen Beach Park",
+    "access_address": "Jensen Beach Causeway & NE Ocean Blvd.",
+    "destination": {
+     "lat": 27.25565944,
+     "lon": -80.19726094
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/986831832"
+   }
+  },
+  {
+   "id": "sebastian",
+   "county": "Indian River",
+   "millage": 14.1659,
+   "county_tax_rates": [
+    {
+     "county": "Indian River",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.1659
+    }
+   ],
+   "beach": {
+    "drive_minutes": 17.06,
+    "display_minutes": 18,
+    "beach_or_city_name": "Wabasso Beach",
+    "access_name": "Wabasso Beach",
+    "access_address": "1820 WABASSO BEACH RD, VERO BEACH",
+    "destination": {
+     "lat": 27.76343086,
+     "lon": -80.39732641
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/988717001"
+   }
+  },
+  {
+   "id": "stuart",
+   "county": "Martin",
+   "millage": 16.0598,
+   "county_tax_rates": [
+    {
+     "county": "Martin",
+     "population_share": 1.0,
+     "total_aggregate_millage": 16.0598
+    }
+   ],
+   "beach": {
+    "drive_minutes": 11.32,
+    "display_minutes": 12,
+    "beach_or_city_name": "Stuart",
+    "access_name": "Tiger Shores",
+    "access_address": "Near 1186 NE Ocean Blvd.",
+    "destination": {
+     "lat": 27.22106956,
+     "lon": -80.17844348
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1233381102"
+   }
+  },
+  {
+   "id": "vero-beach",
+   "county": "Indian River",
+   "millage": 14.1659,
+   "county_tax_rates": [
+    {
+     "county": "Indian River",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.1659
+    }
+   ],
+   "beach": {
+    "drive_minutes": 6.3,
+    "display_minutes": 7,
+    "beach_or_city_name": "Vero Beach",
+    "access_name": "South Beach Park",
+    "access_address": "E Causeway Blvd. & Ocean Dr.",
+    "destination": {
+     "lat": 27.63274346,
+     "lon": -80.3522651
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/987742953"
+   }
+  },
+  {
+   "id": "indialantic",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.7,
+    "display_minutes": 2,
+    "beach_or_city_name": "Indialantic",
+    "access_name": "#6 Wavecrest Ave.",
+    "access_address": "5th Ave. & Wavecrest Ave.",
+    "destination": {
+     "lat": 28.09178314,
+     "lon": -80.56588441
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/380424048"
+   }
+  },
+  {
+   "id": "melbourne-beach",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.09,
+    "display_minutes": 2,
+    "beach_or_city_name": "Melbourne Beach",
+    "access_name": "1st Ave.",
+    "access_address": "1st Ave. & Atlantic St.",
+    "destination": {
+     "lat": 28.06734192,
+     "lon": -80.55637001
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1235985249"
+   }
+  },
+  {
+   "id": "palm-bay",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 27.31,
+    "display_minutes": 28,
+    "beach_or_city_name": "Melbourne Beach",
+    "access_name": "Avenue B",
+    "access_address": "Avenue B & Atlantic St.",
+    "destination": {
+     "lat": 28.07046258,
+     "lon": -80.55766325
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1235985249"
+   }
+  },
+  {
+   "id": "satellite-beach",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 3.19,
+    "display_minutes": 4,
+    "beach_or_city_name": "Satellite Beach",
+    "access_name": "Pelican Beach Park",
+    "access_address": "Royal Palm Blvd. & A1A",
+    "destination": {
+     "lat": 28.16915874,
+     "lon": -80.58823435
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/380116628"
+   }
+  },
+  {
+   "id": "titusville",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 30.78,
+    "display_minutes": 31,
+    "beach_or_city_name": "Playalinda",
+    "access_name": "#1",
+    "access_address": "Canaveral National Seashore. Playalinda Beach Rd.",
+    "destination": {
+     "lat": 28.6552557,
+     "lon": -80.63224584
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1235985603"
+   }
+  },
+  {
+   "id": "west-melbourne",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 17.09,
+    "display_minutes": 18,
+    "beach_or_city_name": "Indialantic",
+    "access_name": "#6 Wavecrest Ave.",
+    "access_address": "5th Ave. & Wavecrest Ave.",
+    "destination": {
+     "lat": 28.09178314,
+     "lon": -80.56588441
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/380424048"
+   }
+  },
+  {
+   "id": "atlantic-beach",
+   "county": "Duval",
+   "millage": 17.891,
+   "county_tax_rates": [
+    {
+     "county": "Duval",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.891
+    }
+   ],
+   "beach": {
+    "drive_minutes": 3.23,
+    "display_minutes": 4,
+    "beach_or_city_name": "Atlantic Beach",
+    "access_name": "11th St.",
+    "access_address": "Beach Ave. & 11th St.",
+    "destination": {
+     "lat": 30.33633112,
+     "lon": -81.39614094
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/relation/6756422"
+   }
+  },
+  {
+   "id": "neptune-beach",
+   "county": "Duval",
+   "millage": 17.891,
+   "county_tax_rates": [
+    {
+     "county": "Duval",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.891
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.54,
+    "display_minutes": 3,
+    "beach_or_city_name": "Neptune Beach",
+    "access_name": "Florida Blvd.",
+    "access_address": "Florida Blvd. & Ocean Front",
+    "destination": {
+     "lat": 30.31443527,
+     "lon": -81.39363871
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/relation/6756422"
+   }
+  },
+  {
+   "id": "ponte-vedra-beach",
+   "county": "Saint Johns",
+   "millage": 13.9738,
+   "county_tax_rates": [
+    {
+     "county": "Saint Johns",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9738
+    }
+   ],
+   "beach": {
+    "drive_minutes": 5.76,
+    "display_minutes": 6,
+    "beach_or_city_name": "Ponte Vedra Beach",
+    "access_name": "Micklers Landing",
+    "access_address": "Micklers Rd. & CR203",
+    "destination": {
+     "lat": 30.16201204,
+     "lon": -81.35715008
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/20055917"
+   }
+  },
+  {
+   "id": "st-augustine-beach",
+   "county": "Saint Johns",
+   "millage": 13.9738,
+   "county_tax_rates": [
+    {
+     "county": "Saint Johns",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9738
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.89,
+    "display_minutes": 2,
+    "beach_or_city_name": "St. Augustine Beach",
+    "access_name": "4th St.",
+    "access_address": "4th St. & A1A Beach Blvd.",
+    "destination": {
+     "lat": 29.84736143,
+     "lon": -81.26544042
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1187762056"
+   }
+  },
+  {
+   "id": "daytona-beach-shores",
+   "county": "Volusia",
+   "millage": 17.4169,
+   "county_tax_rates": [
+    {
+     "county": "Volusia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4169
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.42,
+    "display_minutes": 2,
+    "beach_or_city_name": "Daytona Beach Shores",
+    "access_name": "Van Ave. Park",
+    "access_address": "Van Ave. & S Atlantic Ave.",
+    "destination": {
+     "lat": 29.164662999999997,
+     "lon": -80.97617199999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/984866796"
+   }
+  },
+  {
+   "id": "ormond-beach",
+   "county": "Volusia",
+   "millage": 17.4169,
+   "county_tax_rates": [
+    {
+     "county": "Volusia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4169
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.73,
+    "display_minutes": 9,
+    "beach_or_city_name": "Ormond Beach",
+    "access_name": "E Granada Blvd.",
+    "access_address": "SR 40 (E Granada Blvd.) & S Atlantic Ave.",
+    "destination": {
+     "lat": 29.29209935,
+     "lon": -81.03947955
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1232916834"
+   }
+  },
+  {
+   "id": "palm-coast",
+   "county": "Flagler",
+   "millage": 17.1551,
+   "county_tax_rates": [
+    {
+     "county": "Flagler",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.1551
+    }
+   ],
+   "beach": {
+    "drive_minutes": 13.24,
+    "display_minutes": 14,
+    "beach_or_city_name": "Palm Coast",
+    "access_name": "Jungle Hut Park",
+    "access_address": "East end of Jungle Hut Rd.",
+    "destination": {
+     "lat": 29.58441631,
+     "lon": -81.17742049
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/133752711"
+   }
+  },
+  {
+   "id": "port-orange",
+   "county": "Volusia",
+   "millage": 17.4169,
+   "county_tax_rates": [
+    {
+     "county": "Volusia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4169
+    }
+   ],
+   "beach": {
+    "drive_minutes": 9.72,
+    "display_minutes": 10,
+    "beach_or_city_name": "Daytona Beach Shores",
+    "access_name": "Dahlia Ave.",
+    "access_address": "Dahlia Ave. & S Atlantic Ave.",
+    "destination": {
+     "lat": 29.14766214,
+     "lon": -80.96703672
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/984866796"
+   }
+  },
+  {
+   "id": "navarre",
+   "county": "Santa Rosa",
+   "millage": 11.7171,
+   "county_tax_rates": [
+    {
+     "county": "Santa Rosa",
+     "population_share": 1.0,
+     "total_aggregate_millage": 11.7171
+    }
+   ],
+   "beach": {
+    "drive_minutes": 10.4,
+    "display_minutes": 11,
+    "beach_or_city_name": "Navarre Beach",
+    "access_name": "Navarre Park",
+    "access_address": "Northwest corner of Navarre Beach Causeway; 8513 Navarre Pkwy; located on Hwy 98 at the foot of the Navarre Beach toll bridge",
+    "destination": {
+     "lat": 30.382768,
+     "lon": -86.862267
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1151315555"
+   }
+  },
+  {
+   "id": "mary-esther",
+   "county": "Okaloosa",
+   "millage": 12.2773,
+   "county_tax_rates": [
+    {
+     "county": "Okaloosa",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.2773
+    }
+   ],
+   "beach": {
+    "drive_minutes": 11.48,
+    "display_minutes": 12,
+    "beach_or_city_name": "Fort Walton Beach",
+    "access_name": "Okaloosa Island Fishing Pier",
+    "access_address": "300 Pier Road",
+    "destination": {
+     "lat": 30.394727,
+     "lon": -86.592717
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1140724655"
+   }
+  },
+  {
+   "id": "fort-walton-beach",
+   "county": "Okaloosa",
+   "millage": 12.2773,
+   "county_tax_rates": [
+    {
+     "county": "Okaloosa",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.2773
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.97,
+    "display_minutes": 9,
+    "beach_or_city_name": "Fort Walton Beach",
+    "access_name": "Okaloosa Island Fishing Pier",
+    "access_address": "300 Pier Road",
+    "destination": {
+     "lat": 30.394727,
+     "lon": -86.592717
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1140724655"
+   }
+  },
+  {
+   "id": "shalimar",
+   "county": "Okaloosa",
+   "millage": 12.2773,
+   "county_tax_rates": [
+    {
+     "county": "Okaloosa",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.2773
+    }
+   ],
+   "beach": {
+    "drive_minutes": 12.43,
+    "display_minutes": 13,
+    "beach_or_city_name": "Fort Walton Beach",
+    "access_name": "Okaloosa Island Fishing Pier",
+    "access_address": "300 Pier Road",
+    "destination": {
+     "lat": 30.394727,
+     "lon": -86.592717
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1140724655"
+   }
+  },
+  {
+   "id": "niceville",
+   "county": "Okaloosa",
+   "millage": 12.2773,
+   "county_tax_rates": [
+    {
+     "county": "Okaloosa",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.2773
+    }
+   ],
+   "beach": {
+    "drive_minutes": 20.55,
+    "display_minutes": 21,
+    "beach_or_city_name": "Destin",
+    "access_name": "Hutchinson Street",
+    "access_address": "Hutchinson St. & Highway 98 E",
+    "destination": {
+     "lat": 30.38265278,
+     "lon": -86.42611111
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1140748467"
+   }
+  },
+  {
+   "id": "miramar-beach",
+   "county": "Walton",
+   "millage": 9.1512,
+   "county_tax_rates": [
+    {
+     "county": "Walton",
+     "population_share": 1.0,
+     "total_aggregate_millage": 9.1512
+    }
+   ],
+   "beach": {
+    "drive_minutes": 6.25,
+    "display_minutes": 7,
+    "beach_or_city_name": "Miramar Beach",
+    "access_name": "Seascape",
+    "access_address": "1500 Old Hwy 98  (approx)",
+    "destination": {
+     "lat": 30.375881,
+     "lon": -86.370516
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/928894972"
+   }
+  },
+  {
+   "id": "freeport",
+   "county": "Walton",
+   "millage": 9.1512,
+   "county_tax_rates": [
+    {
+     "county": "Walton",
+     "population_share": 1.0,
+     "total_aggregate_millage": 9.1512
+    }
+   ],
+   "beach": {
+    "drive_minutes": 35.42,
+    "display_minutes": 36,
+    "beach_or_city_name": "Blue Mountain Beach",
+    "access_name": "Old Blue Mountain Road (CR 83)",
+    "access_address": "Old Blue Mountain Road (CR 83) & CR 30A",
+    "destination": {
+     "lat": 30.338009,
+     "lon": -86.200896
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/941542655"
+   }
+  },
+  {
+   "id": "mexico-beach",
+   "county": "Bay",
+   "millage": 12.6966,
+   "county_tax_rates": [
+    {
+     "county": "Bay",
+     "population_share": 1.0,
+     "total_aggregate_millage": 12.6966
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.22,
+    "display_minutes": 3,
+    "beach_or_city_name": "Mexico Beach",
+    "access_name": "Mexico Beach Sunset Park",
+    "access_address": "east of 19th Street on US 98",
+    "destination": {
+     "lat": 29.942691999999997,
+     "lon": -85.41065499999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1136084185"
+   }
+  },
+  {
+   "id": "keaton-beach",
+   "county": "Taylor",
+   "millage": 15.4326,
+   "county_tax_rates": [
+    {
+     "county": "Taylor",
+     "population_share": 1.0,
+     "total_aggregate_millage": 15.4326
+    }
+   ],
+   "beach": {
+    "drive_minutes": 43.39,
+    "display_minutes": 44,
+    "beach_or_city_name": "Keaton Beach",
+    "access_name": "Keaton Beach Drive",
+    "access_address": "south end of Keaton Beach Drive",
+    "destination": {
+     "lat": 29.81864445,
+     "lon": -83.59373056
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/353272151"
+   }
+  },
+  {
+   "id": "horseshoe-beach",
+   "county": "Dixie",
+   "millage": 19.8732,
+   "county_tax_rates": [
+    {
+     "county": "Dixie",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8732
+    }
+   ],
+   "beach": {
+    "drive_minutes": 46.86,
+    "display_minutes": 47,
+    "beach_or_city_name": "Shired Island",
+    "access_name": "Shired Island Boat Ramp",
+    "access_address": "County Road 357 Approx. 0.13mi from Boat Ramp",
+    "destination": {
+     "lat": 29.398391,
+     "lon": -83.20829599999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1112374240"
+   }
+  },
+  {
+   "id": "suwannee",
+   "county": "Dixie",
+   "millage": 19.8732,
+   "county_tax_rates": [
+    {
+     "county": "Dixie",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8732
+    }
+   ],
+   "beach": {
+    "drive_minutes": 94.52,
+    "display_minutes": 95,
+    "beach_or_city_name": "Shired Island",
+    "access_name": "Shired Island Boat Ramp",
+    "access_address": "County Road 357 Approx. 0.13mi from Boat Ramp",
+    "destination": {
+     "lat": 29.398391,
+     "lon": -83.20829599999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1112374240"
+   }
+  },
+  {
+   "id": "yankeetown",
+   "county": "Levy",
+   "millage": 16.0399,
+   "county_tax_rates": [
+    {
+     "county": "Levy",
+     "population_share": 1.0,
+     "total_aggregate_millage": 16.0399
+    }
+   ],
+   "beach": {
+    "drive_minutes": 48.89,
+    "display_minutes": 49,
+    "beach_or_city_name": "Crystal River",
+    "access_name": "Fort Island Beach",
+    "access_address": "16000 W. Fort Island Trail, West terminus of CR 44",
+    "destination": {
+     "lat": 28.90785833,
+     "lon": -82.69089444
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/147499385"
+   }
+  },
+  {
+   "id": "inglis",
+   "county": "Levy",
+   "millage": 16.0399,
+   "county_tax_rates": [
+    {
+     "county": "Levy",
+     "population_share": 1.0,
+     "total_aggregate_millage": 16.0399
+    }
+   ],
+   "beach": {
+    "drive_minutes": 42.51,
+    "display_minutes": 43,
+    "beach_or_city_name": "Crystal River",
+    "access_name": "Fort Island Beach",
+    "access_address": "16000 W. Fort Island Trail, West terminus of CR 44",
+    "destination": {
+     "lat": 28.90785833,
+     "lon": -82.69089444
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/147499385"
+   }
+  },
+  {
+   "id": "hernando-beach",
+   "county": "Hernando",
+   "millage": 14.5695,
+   "county_tax_rates": [
+    {
+     "county": "Hernando",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.5695
+    }
+   ],
+   "beach": {
+    "drive_minutes": 24.49,
+    "display_minutes": 25,
+    "beach_or_city_name": "Pine Island",
+    "access_name": "Alfred McKeathan Pine Island Park",
+    "access_address": "10840 Pine Island Drive; Spring Hill",
+    "destination": {
+     "lat": 28.56837222,
+     "lon": -82.65596944
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/487495320"
+   }
+  },
+  {
+   "id": "weeki-wachee",
+   "county": "Hernando",
+   "millage": 14.5695,
+   "county_tax_rates": [
+    {
+     "county": "Hernando",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.5695
+    }
+   ],
+   "beach": {
+    "drive_minutes": 29.79,
+    "display_minutes": 30,
+    "beach_or_city_name": "Pine Island",
+    "access_name": "Alfred McKeathan Pine Island Park",
+    "access_address": "10840 Pine Island Drive; Spring Hill",
+    "destination": {
+     "lat": 28.56837222,
+     "lon": -82.65596944
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/487495320"
+   }
+  },
+  {
+   "id": "aripeka",
+   "county": "Pasco",
+   "millage": 17.2168,
+   "county_tax_rates": [
+    {
+     "county": "Pasco",
+     "population_share": 0.853125,
+     "total_aggregate_millage": 17.2168
+    },
+    {
+     "county": "Hernando",
+     "population_share": 0.146875,
+     "total_aggregate_millage": 14.5695
+    }
+   ],
+   "beach": {
+    "drive_minutes": 29.48,
+    "display_minutes": 30,
+    "beach_or_city_name": "New Port Richey",
+    "access_name": "Robert K Rees Park",
+    "access_address": "4835 Green Key Rd; New Pt. Richey",
+    "destination": {
+     "lat": 28.25382778,
+     "lon": -82.75696667
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/194248544"
+   }
+  },
+  {
+   "id": "hudson",
+   "county": "Pasco",
+   "millage": 17.2168,
+   "county_tax_rates": [
+    {
+     "county": "Pasco",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.2168
+    }
+   ],
+   "beach": {
+    "drive_minutes": 21.05,
+    "display_minutes": 22,
+    "beach_or_city_name": "New Port Richey",
+    "access_name": "Robert K Rees Park",
+    "access_address": "4835 Green Key Rd; New Pt. Richey",
+    "destination": {
+     "lat": 28.25382778,
+     "lon": -82.75696667
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/194248544"
+   }
+  },
+  {
+   "id": "port-richey",
+   "county": "Pasco",
+   "millage": 17.2168,
+   "county_tax_rates": [
+    {
+     "county": "Pasco",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.2168
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.65,
+    "display_minutes": 9,
+    "beach_or_city_name": "New Port Richey",
+    "access_name": "Robert K Rees Park",
+    "access_address": "4835 Green Key Rd; New Pt. Richey",
+    "destination": {
+     "lat": 28.25382778,
+     "lon": -82.75696667
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/194248544"
+   }
+  },
+  {
+   "id": "holiday",
+   "county": "Pasco",
+   "millage": 17.2168,
+   "county_tax_rates": [
+    {
+     "county": "Pasco",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.2168
+    }
+   ],
+   "beach": {
+    "drive_minutes": 13.97,
+    "display_minutes": 14,
+    "beach_or_city_name": "New Port Richey",
+    "access_name": "Robert K Rees Park",
+    "access_address": "4835 Green Key Rd; New Pt. Richey",
+    "destination": {
+     "lat": 28.25382778,
+     "lon": -82.75696667
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/194248544"
+   }
+  },
+  {
+   "id": "palm-harbor",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 14.15,
+    "display_minutes": 15,
+    "beach_or_city_name": "Dunedin",
+    "access_name": "Honeymoon Island State Park",
+    "access_address": "West end Causeway Blvd (Hwy 586)",
+    "destination": {
+     "lat": 28.060318,
+     "lon": -82.81978699999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.floridastateparks.org/honeymoonisland"
+   }
+  },
+  {
+   "id": "oldsmar",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 18.85,
+    "display_minutes": 19,
+    "beach_or_city_name": "Dunedin",
+    "access_name": "Honeymoon Island State Park",
+    "access_address": "West end Causeway Blvd (Hwy 586)",
+    "destination": {
+     "lat": 28.060318,
+     "lon": -82.81978699999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.floridastateparks.org/honeymoonisland"
+   }
+  },
+  {
+   "id": "belleair-beach",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.41,
+    "display_minutes": 2,
+    "beach_or_city_name": "Belleair Beach",
+    "access_name": "Morgan Park",
+    "access_address": "Gulf Blvd. & Morgan Drive",
+    "destination": {
+     "lat": 27.929947,
+     "lon": -82.841996
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/195228722"
+   }
+  },
+  {
+   "id": "tierra-verde",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.97,
+    "display_minutes": 9,
+    "beach_or_city_name": "St. Pete Beach",
+    "access_name": "St. Pete Beach County Park",
+    "access_address": "46th Ave. & Gulf Blvd.",
+    "destination": {
+     "lat": 27.721449,
+     "lon": -82.74056399999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/193761305"
+   }
+  },
+  {
+   "id": "indian-shores",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 0.71,
+    "display_minutes": 1,
+    "beach_or_city_name": "Indian Shores",
+    "access_name": "Tiki Gardens",
+    "access_address": "19601 Gulf Blvd.",
+    "destination": {
+     "lat": 27.854097,
+     "lon": -82.845652
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/195228722"
+   }
+  },
+  {
+   "id": "redington-shores",
+   "county": "Pinellas",
+   "millage": 18.4941,
+   "county_tax_rates": [
+    {
+     "county": "Pinellas",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4941
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.1,
+    "display_minutes": 3,
+    "beach_or_city_name": "Redington Shores",
+    "access_name": "Redington Shores County Park",
+    "access_address": "on Gulf Blvd. (between 182nd Ave. and 181st Ave.)",
+    "destination": {
+     "lat": 27.832884999999997,
+     "lon": -82.83370699999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/195228722"
+   }
+  },
+  {
+   "id": "gibsonton",
+   "county": "Hillsborough",
+   "millage": 18.8553,
+   "county_tax_rates": [
+    {
+     "county": "Hillsborough",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.8553
+    }
+   ],
+   "beach": {
+    "drive_minutes": 17.07,
+    "display_minutes": 18,
+    "beach_or_city_name": "Apollo Beach",
+    "access_name": "Apollo Beach Nature Park",
+    "access_address": "6767 Surfside Blvd. Apollo Beach",
+    "destination": {
+     "lat": 27.79205175,
+     "lon": -82.41945264
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/264802276"
+   }
+  },
+  {
+   "id": "miami",
+   "county": "Dade",
+   "millage": 18.4893,
+   "county_tax_rates": [
+    {
+     "county": "Dade",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4893
+    }
+   ],
+   "beach": {
+    "drive_minutes": 5.8,
+    "display_minutes": 6,
+    "beach_or_city_name": "Miami",
+    "access_name": "Hobie Island Beach Park",
+    "access_address": "West end of the  Rickenbacker Causeway",
+    "destination": {
+     "lat": 25.7459169,
+     "lon": -80.19200328
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/808935349"
+   }
+  },
+  {
+   "id": "jacksonville",
+   "county": "Duval",
+   "millage": 17.891,
+   "county_tax_rates": [
+    {
+     "county": "Duval",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.891
+    }
+   ],
+   "beach": {
+    "drive_minutes": 28.93,
+    "display_minutes": 29,
+    "beach_or_city_name": "Atlantic Beach",
+    "access_name": "Town Center",
+    "access_address": "East end of Atlantic Blvd.",
+    "destination": {
+     "lat": 30.32462485,
+     "lon": -81.39531537
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/relation/6756422"
+   }
+  },
+  {
+   "id": "indian-river-shores",
+   "county": "Indian River",
+   "millage": 14.1659,
+   "county_tax_rates": [
+    {
+     "county": "Indian River",
+     "population_share": 1.0,
+     "total_aggregate_millage": 14.1659
+    }
+   ],
+   "beach": {
+    "drive_minutes": 4.96,
+    "display_minutes": 5,
+    "beach_or_city_name": "Indian River Shores",
+    "access_name": "Turtle Trail",
+    "access_address": "8102 North A1A",
+    "destination": {
+     "lat": 27.73394938,
+     "lon": -80.38191832
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1235125266"
+   }
+  },
+  {
+   "id": "hutchinson-island",
+   "county": "Saint Lucie",
+   "millage": 21.557,
+   "county_tax_rates": [
+    {
+     "county": "Saint Lucie",
+     "population_share": 1.0,
+     "total_aggregate_millage": 21.557
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.16,
+    "display_minutes": 3,
+    "beach_or_city_name": "Jensen Beach",
+    "access_name": "Dollman Park Beachside",
+    "access_address": "9200 South Ocean Drive",
+    "destination": {
+     "lat": 27.2972087,
+     "lon": -80.21670861
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1234825323"
+   }
+  },
+  {
+   "id": "sewalls-point",
+   "county": "Martin",
+   "millage": 16.0598,
+   "county_tax_rates": [
+    {
+     "county": "Martin",
+     "population_share": 1.0,
+     "total_aggregate_millage": 16.0598
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.01,
+    "display_minutes": 8,
+    "beach_or_city_name": "Stuart",
+    "access_name": "Tiger Shores",
+    "access_address": "Near 1186 NE Ocean Blvd.",
+    "destination": {
+     "lat": 27.22106956,
+     "lon": -80.17844348
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1233381102"
+   }
+  },
+  {
+   "id": "palm-city",
+   "county": "Martin",
+   "millage": 16.0598,
+   "county_tax_rates": [
+    {
+     "county": "Martin",
+     "population_share": 1.0,
+     "total_aggregate_millage": 16.0598
+    }
+   ],
+   "beach": {
+    "drive_minutes": 18.12,
+    "display_minutes": 19,
+    "beach_or_city_name": "Stuart",
+    "access_name": "Tiger Shores",
+    "access_address": "Near 1186 NE Ocean Blvd.",
+    "destination": {
+     "lat": 27.22106956,
+     "lon": -80.17844348
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1233381102"
+   }
+  },
+  {
+   "id": "port-salerno",
+   "county": "Martin",
+   "millage": 16.0598,
+   "county_tax_rates": [
+    {
+     "county": "Martin",
+     "population_share": 1.0,
+     "total_aggregate_millage": 16.0598
+    }
+   ],
+   "beach": {
+    "drive_minutes": 16.62,
+    "display_minutes": 17,
+    "beach_or_city_name": "Jupiter Island",
+    "access_name": "Hobe Sound Beach Park",
+    "access_address": "SE Bridge Rd. & S Beach Rd.",
+    "destination": {
+     "lat": 27.06639935,
+     "lon": -80.11565553
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1233381110"
+   }
+  },
+  {
+   "id": "hobe-sound",
+   "county": "Martin",
+   "millage": 16.0598,
+   "county_tax_rates": [
+    {
+     "county": "Martin",
+     "population_share": 1.0,
+     "total_aggregate_millage": 16.0598
+    }
+   ],
+   "beach": {
+    "drive_minutes": 6.34,
+    "display_minutes": 7,
+    "beach_or_city_name": "Jupiter Island",
+    "access_name": "Hobe Sound Beach Park",
+    "access_address": "SE Bridge Rd. & S Beach Rd.",
+    "destination": {
+     "lat": 27.06639935,
+     "lon": -80.11565553
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1233381110"
+   }
+  },
+  {
+   "id": "tequesta",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.19,
+    "display_minutes": 8,
+    "beach_or_city_name": "Jupiter Island",
+    "access_name": "Coral Cove South (Access #73)",
+    "access_address": "0.45 miles south of Coral Cove Park on Beach Rd.",
+    "destination": {
+     "lat": 26.95806725,
+     "lon": -80.07757998
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/583942074"
+   }
+  },
+  {
+   "id": "juno-beach",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 5.4,
+    "display_minutes": 6,
+    "beach_or_city_name": "Jupiter",
+    "access_name": "Access #26",
+    "access_address": "250 feet north of Marcinski Rd. & Ocean Blvd.",
+    "destination": {
+     "lat": 26.897005880000002,
+     "lon": -80.05830921
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/522971923"
+   }
+  },
+  {
+   "id": "lake-park",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.26,
+    "display_minutes": 9,
+    "beach_or_city_name": "Riviera Beach",
+    "access_name": "Riviera Beach Municipal Park",
+    "access_address": "Beach Rd. & S Ocean Ave.",
+    "destination": {
+     "lat": 26.78319099,
+     "lon": -80.03385619
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/234177865"
+   }
+  },
+  {
+   "id": "palm-beach-shores",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.53,
+    "display_minutes": 2,
+    "beach_or_city_name": "Riviera Beach",
+    "access_name": "Riviera Beach Municipal Park",
+    "access_address": "Beach Rd. & S Ocean Ave.",
+    "destination": {
+     "lat": 26.78319099,
+     "lon": -80.03385619
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/234177865"
+   }
+  },
+  {
+   "id": "lake-worth-beach",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 5.3,
+    "display_minutes": 6,
+    "beach_or_city_name": "Lake Worth",
+    "access_name": "Richard G. Kreusler Memorial Park",
+    "access_address": "Lake Ave. & S Ocean Blvd.",
+    "destination": {
+     "lat": 26.61580374,
+     "lon": -80.03743853
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/170241325"
+   }
+  },
+  {
+   "id": "lantana",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 4.05,
+    "display_minutes": 5,
+    "beach_or_city_name": "Lantana",
+    "access_name": "Lantana Municipal Beach",
+    "access_address": "E Ocean Ave. & A1A",
+    "destination": {
+     "lat": 26.58459806,
+     "lon": -80.03830311
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/170241325"
+   }
+  },
+  {
+   "id": "boynton-beach",
+   "county": "Palm Beach",
+   "millage": 17.4918,
+   "county_tax_rates": [
+    {
+     "county": "Palm Beach",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4918
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.04,
+    "display_minutes": 9,
+    "beach_or_city_name": "Ocean Ridge",
+    "access_name": "Ocean Ridge Hammock Park",
+    "access_address": "6620 N Ocean Blvd.",
+    "destination": {
+     "lat": 26.53383612,
+     "lon": -80.04776895
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/528975278"
+   }
+  },
+  {
+   "id": "vilano-beach",
+   "county": "Saint Johns",
+   "millage": 13.9738,
+   "county_tax_rates": [
+    {
+     "county": "Saint Johns",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9738
+    }
+   ],
+   "beach": {
+    "drive_minutes": 6.61,
+    "display_minutes": 7,
+    "beach_or_city_name": "South Ponte Vedra Beach",
+    "access_name": "South Ponte Vedra Park",
+    "access_address": "North of 3001 A1A",
+    "destination": {
+     "lat": 29.99052291,
+     "lon": -81.31509008
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1069019608"
+   }
+  },
+  {
+   "id": "crescent-beach",
+   "county": "Saint Johns",
+   "millage": 13.9738,
+   "county_tax_rates": [
+    {
+     "county": "Saint Johns",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.9738
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.52,
+    "display_minutes": 3,
+    "beach_or_city_name": "Crescent Beach",
+    "access_name": "Splyglass",
+    "access_address": "Spyglass & A1A S",
+    "destination": {
+     "lat": 29.73199021,
+     "lon": -81.23874189
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/134665666"
+   }
+  },
+  {
+   "id": "beverly-beach",
+   "county": "Flagler",
+   "millage": 17.1551,
+   "county_tax_rates": [
+    {
+     "county": "Flagler",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.1551
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.77,
+    "display_minutes": 2,
+    "beach_or_city_name": "Beverly Beach",
+    "access_name": "North Ocean Shore Blvd 0.23 miles south of Osprey Dr.",
+    "access_address": "N Oceanshore Blvd. (.15 miles south of Osprey Dr.)",
+    "destination": {
+     "lat": 29.51360621,
+     "lon": -81.14341032
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/602688107"
+   }
+  },
+  {
+   "id": "ormond-by-the-sea",
+   "county": "Volusia",
+   "millage": 17.4169,
+   "county_tax_rates": [
+    {
+     "county": "Volusia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4169
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.43,
+    "display_minutes": 2,
+    "beach_or_city_name": "Ormond Beach",
+    "access_name": "Rivocean Dr.",
+    "access_address": "Rivocean Dr. & Ocean Shore Blvd.",
+    "destination": {
+     "lat": 29.33797667,
+     "lon": -81.06099899
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1101746915"
+   }
+  },
+  {
+   "id": "ponce-inlet",
+   "county": "Volusia",
+   "millage": 17.4169,
+   "county_tax_rates": [
+    {
+     "county": "Volusia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4169
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.59,
+    "display_minutes": 2,
+    "beach_or_city_name": "Ponce Inlet",
+    "access_name": "Oceanview Ave.",
+    "access_address": "Oceanview Ave. & S Atlantic Ave.",
+    "destination": {
+     "lat": 29.09715493,
+     "lon": -80.93532119
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1232916828"
+   }
+  },
+  {
+   "id": "edgewater",
+   "county": "Volusia",
+   "millage": 17.4169,
+   "county_tax_rates": [
+    {
+     "county": "Volusia",
+     "population_share": 1.0,
+     "total_aggregate_millage": 17.4169
+    }
+   ],
+   "beach": {
+    "drive_minutes": 15.79,
+    "display_minutes": 16,
+    "beach_or_city_name": "New Smyrna Beach",
+    "access_name": "E 8th Ave.",
+    "access_address": "E 8th Ave. & Hill St.",
+    "destination": {
+     "lat": 29.02542871,
+     "lon": -80.88850193
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/relation/13893447"
+   }
+  },
+  {
+   "id": "cape-canaveral",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 1.2,
+    "display_minutes": 2,
+    "beach_or_city_name": "Cape Canaveral",
+    "access_name": "Washington Ave.",
+    "access_address": "Washington Ave. & Presidential Ct.",
+    "destination": {
+     "lat": 28.39143899,
+     "lon": -80.59667321
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1235985231"
+   }
+  },
+  {
+   "id": "merritt-island",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.99,
+    "display_minutes": 9,
+    "beach_or_city_name": "Cocoa Beach",
+    "access_name": "Alan Shepard Park",
+    "access_address": "Cocoa Beach Causeway E & Ocean Beach Blvd.",
+    "destination": {
+     "lat": 28.35782245,
+     "lon": -80.60478905
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/335104425"
+   }
+  },
+  {
+   "id": "cocoa-village",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 18.3,
+    "display_minutes": 19,
+    "beach_or_city_name": "Cocoa Beach",
+    "access_name": "Alan Shepard Park",
+    "access_address": "Cocoa Beach Causeway E & Ocean Beach Blvd.",
+    "destination": {
+     "lat": 28.35782245,
+     "lon": -80.60478905
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/335104425"
+   }
+  },
+  {
+   "id": "rockledge",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 26.31,
+    "display_minutes": 27,
+    "beach_or_city_name": "Cocoa Beach",
+    "access_name": "Lori Wilson Park - Southern Lot",
+    "access_address": "1400 N Atlantic Ave",
+    "destination": {
+     "lat": 28.335541,
+     "lon": -80.608351
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/349173583"
+   }
+  },
+  {
+   "id": "indian-harbour-beach",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 2.92,
+    "display_minutes": 3,
+    "beach_or_city_name": "Indian Harbour Beach",
+    "access_name": "Bicentennial Beach Park",
+    "access_address": "Ocean Dunes Dr. & A1A",
+    "destination": {
+     "lat": 28.15363133,
+     "lon": -80.58424161
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/380010857"
+   }
+  },
+  {
+   "id": "melbourne",
+   "county": "Brevard",
+   "millage": 13.7669,
+   "county_tax_rates": [
+    {
+     "county": "Brevard",
+     "population_share": 1.0,
+     "total_aggregate_millage": 13.7669
+    }
+   ],
+   "beach": {
+    "drive_minutes": 10.53,
+    "display_minutes": 11,
+    "beach_or_city_name": "Indian Harbour Beach",
+    "access_name": "Canova Beach Park",
+    "access_address": "Eau Gallie Blvd. E & A1A",
+    "destination": {
+     "lat": 28.13822404,
+     "lon": -80.58034106
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/1235985247"
+   }
+  },
+  {
+   "id": "marathon",
+   "county": "Monroe",
+   "millage": 8.2361,
+   "county_tax_rates": [
+    {
+     "county": "Monroe",
+     "population_share": 1.0,
+     "total_aggregate_millage": 8.2361
+    }
+   ],
+   "beach": {
+    "drive_minutes": 7.41,
+    "display_minutes": 8,
+    "beach_or_city_name": "Marathon MM50",
+    "access_name": "Sombrero Beach",
+    "access_address": "Sombrero Beach Rd. & Corte Chica",
+    "destination": {
+     "lat": 24.69239612,
+     "lon": -81.08478319
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/189595647"
+   }
+  },
+  {
+   "id": "big-pine-key",
+   "county": "Monroe",
+   "millage": 8.2361,
+   "county_tax_rates": [
+    {
+     "county": "Monroe",
+     "population_share": 1.0,
+     "total_aggregate_millage": 8.2361
+    }
+   ],
+   "beach": {
+    "drive_minutes": 19.83,
+    "display_minutes": 20,
+    "beach_or_city_name": "Little Duck Key",
+    "access_name": "Veterans Memorial Park",
+    "access_address": "South end of seven mile bridge (Mile marker 39)",
+    "destination": {
+     "lat": 24.681103999999998,
+     "lon": -81.23061299999999
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/493474338"
+   }
+  },
+  {
+   "id": "key-biscayne",
+   "county": "Dade",
+   "millage": 18.4893,
+   "county_tax_rates": [
+    {
+     "county": "Dade",
+     "population_share": 1.0,
+     "total_aggregate_millage": 18.4893
+    }
+   ],
+   "beach": {
+    "drive_minutes": 4.93,
+    "display_minutes": 5,
+    "beach_or_city_name": "Key Biscayne",
+    "access_name": "Crandon Park - South Beach",
+    "access_address": "6747 Crandon Blvd.",
+    "destination": {
+     "lat": 25.70803375,
+     "lon": -80.15479314
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/300186528"
+   }
+  },
+  {
+   "id": "boca-grande",
+   "county": "Lee",
+   "millage": 13.9967,
+   "county_tax_rates": [
+    {
+     "county": "Lee",
+     "population_share": 0.7583788,
+     "total_aggregate_millage": 13.9967
+    },
+    {
+     "county": "Charlotte",
+     "population_share": 0.2416212,
+     "total_aggregate_millage": 15.6763
+    }
+   ],
+   "beach": {
+    "drive_minutes": 0.0,
+    "display_minutes": 1,
+    "beach_or_city_name": "Boca Grande",
+    "access_name": "17th St.",
+    "access_address": "17th Street; West of Gasparilla Rd.",
+    "destination": {
+     "lat": 26.76180833,
+     "lon": -82.26551389
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/1234055949"
+   }
+  },
+  {
+   "id": "pompano-beach",
+   "county": "Broward",
+   "millage": 19.8638,
+   "county_tax_rates": [
+    {
+     "county": "Broward",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8638
+    }
+   ],
+   "beach": {
+    "drive_minutes": 13.65,
+    "display_minutes": 14,
+    "beach_or_city_name": "Lauderdale-by-the-Sea",
+    "access_name": "Washington Ave.",
+    "access_address": "Washington Ave. & El Mar Dr.",
+    "destination": {
+     "lat": 26.19494625,
+     "lon": -80.09511766
+    },
+    "access_status": "Full Access",
+    "verification_source": "https://www.openstreetmap.org/way/572071787"
+   }
+  },
+  {
+   "id": "deerfield-beach",
+   "county": "Broward",
+   "millage": 19.8638,
+   "county_tax_rates": [
+    {
+     "county": "Broward",
+     "population_share": 1.0,
+     "total_aggregate_millage": 19.8638
+    }
+   ],
+   "beach": {
+    "drive_minutes": 8.99,
+    "display_minutes": 9,
+    "beach_or_city_name": "Deerfield Beach",
+    "access_name": "Melrose Park - E Hillsboro Blvd.",
+    "access_address": "E Hillsboro Blvd. & N Ocean Way",
+    "destination": {
+     "lat": 26.31459362,
+     "lon": -80.07570789
+    },
+    "access_status": "Full Access With Parking",
+    "verification_source": "https://www.openstreetmap.org/way/443707170"
+   }
+  }
+ ]
+}
