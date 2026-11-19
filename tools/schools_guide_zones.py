@@ -6,6 +6,9 @@ import collections, html, json, re
 
 e = html.escape
 S = {t['id']: t for t in json.load(open('tools/schools_by_town_nov18.json'))}
+S['pensacola-beach']['middle'] = {'name': 'GULF BREEZE MIDDLE SCHOOL', 'grade': 'A', 'method': 'option'}
+S['pensacola-beach']['high'] = {'name': 'GULF BREEZE HIGH SCHOOL', 'grade': 'A', 'method': 'option'}
+S['pensacola-beach']['elementary']['method'] = 'option'
 LV = ['elementary', 'middle', 'high']
 T = {t['id']: t for t in json.load(open('src/data/towns.json'))}
 BT = {t['id']: t for t in json.load(open('src/data/beach-towns-t.json'))}
@@ -34,7 +37,7 @@ for c in order:
         zoned = all(S[i][lv]['method'] == 'zone' for lv in LV)
         names = ', '.join(e(n) for n in dict.fromkeys(nice(S[i][lv]['name']) for lv in LV))
         cards += (f'<a href="towns/{i}.html"><b>{e(T[i]["n"])}</b><span>{("About " + e(p)) if p else ""}</span>'
-                  f'<small class="sg-s">{"Zoned" if zoned else "Nearest"}: {names}</small></a>')
+                  f'<small class="sg-s">{"Zoned" if zoned else ("District options" if S[i]["high"]["method"] == "option" else "Nearest")}: {names}</small></a>')
     n = len(by[c])
     sections += (f'<section class="fcr-item"><h2 class="fcr-h">{e(c)}</h2><div class="fcr-scores">'
                  f'<span class="fcr-chip fcr-rank">{n} town{"s" if n > 1 else ""}</span>'

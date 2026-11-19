@@ -35,6 +35,17 @@ if len(sys.argv) > 2 and sys.argv[1] == '--import':
 S = {t['id']: t for t in json.load(open(SRC))}
 assert len(S) == 167
 
+# Nov 19 2026 (Mark): Pensacola Beach uses the options Escambia publishes for it
+# (escambiaschools.org/fs/pages/12622): Suter Elementary, plus cross district Gulf Breeze Middle and High.
+OPTION = {'pensacola-beach': {
+    'middle': {'name': 'GULF BREEZE MIDDLE SCHOOL', 'grade': 'A', 'method': 'option', 'distance_mi': None,
+               'state_school_id': 'FL-57-0102', 'split_zone': None},
+    'high': {'name': 'GULF BREEZE HIGH SCHOOL', 'grade': 'A', 'method': 'option', 'distance_mi': None,
+             'state_school_id': 'FL-57-0103', 'split_zone': None}}}
+for _i, _o in OPTION.items():
+    S[_i].update(_o)
+    S[_i]['elementary']['method'] = 'option'
+
 
 # Schools that take students by application (Pinellas fundamental schools, technical high schools,
 # magnets). When the nearest school is one of these we don't know the zoned school, so the town
@@ -56,7 +67,7 @@ def pts(i):
 
 
 SCHOOLS = sorted(i for i in S if all_a(i))
-assert len(SCHOOLS) == 39, len(SCHOOLS)  # Nov 18 zone follow up: Destin, St. Teresa, Pensacola Beach out; Clearwater in
+assert len(SCHOOLS) == 40, len(SCHOOLS)  # Nov 18 zone follow up: Destin, St. Teresa out; Clearwater in. Nov 19: Pensacola Beach in on district options
 
 
 def nice(name):
@@ -132,6 +143,7 @@ open(p, 'w').write(s[:st] + out + s[st + end:])
 # 4. town pages: Best Schools chip and the Schools row
 CHIP = '<a href="map.html?mode=vibes&style=schools">Best Schools</a>'
 NOTE = {'freeport': ' Freeport Elementary covers K to 4, and grade 5 is at Freeport Middle.',
+        'pensacola-beach': ' Gulf Breeze Middle and High are across the bridge in Santa Rosa County; the in county choices are Workman Middle (B) and Pensacola High (C).',
         'fernandina': ' Southside Elementary covers K to 2 and has no state grade of its own, then Emma Love Hardee covers 3 to 5.'}
 ROW = re.compile(r'<tr><th>Schools</th><td>.*?</td></tr>', re.S)
 for i in S:
@@ -153,6 +165,8 @@ for i in S:
     parts = ', '.join(plist)
     split = zoned and any(S[i][lv].get('split_zone') for lv in LV)
     lead = ('Zoned for the biggest part of town' if split else 'Zoned for most of town') if zoned else 'Nearest public schools'
+    if i in OPTION:
+        lead = 'Options Escambia lists for Pensacola Beach'
     tail = (' A school marked by application doesn\'t take students by address, so confirm the zoned school with the '
             'county district before you buy.' if any(by_app(i, lv) for lv in LV) else
             ' Schools are assigned by address, so confirm with the county district before you buy.')
