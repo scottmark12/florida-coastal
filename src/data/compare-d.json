@@ -7593,7 +7593,7 @@
         "beach": 1,
         "dining": 2,
         "outdoors": 1,
-        "afford": 5,
+        "afford": 4,
         "airport": 4,
         "edu": 3
       },
@@ -9132,7 +9132,7 @@
         "beach": 2,
         "dining": 3,
         "outdoors": 2,
-        "afford": 4,
+        "afford": 5,
         "airport": 3,
         "edu": 5
       },
