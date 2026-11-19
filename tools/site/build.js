@@ -142,7 +142,7 @@ async function main() {
   let n = 0;
   for (const rel of Object.keys(PAGES)) { write(path.join(DEST, rel), await fill(read(path.join(SRC, 'pages', rel)), rel)); n++; }
   const townTpl = read(path.join(SRC, 'templates', 'town.html'));
-  for (const f of fs.readdirSync(path.join(SRC, 'towns')).sort()) { write(path.join(DEST, 'towns', f), await fill(towns.render(path.join(SRC, 'towns', f), townTpl), 'towns/' + f)); n++; }
+  for (const f of fs.readdirSync(path.join(SRC, 'towns')).sort()) { write(path.join(DEST, 'towns', f), await fill(towns.partner(towns.render(path.join(SRC, 'towns', f), townTpl), f.replace(/\.html$/, '')), 'towns/' + f)); n++; }
   if (n !== Object.keys(PAGES).length + 167) throw new Error(`built ${n} pages, expected ${Object.keys(PAGES).length + 167}`);
   if (OUTARG) { console.log(`built ${n} pages into ${DEST}${DIST ? ' with the rest of the public site' : ''} (repo not touched)`); return; }
   // Swap: new assets/v3 in, then every page. Nothing in the site was touched before this point.
