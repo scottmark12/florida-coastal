@@ -98,5 +98,6 @@
       '<a href="map.html?mode=vibes">Find more towns on the Vibe Map →</a><a href="find-your-mile.html">Retake the quiz →</a></div>';
   }
   function plural(n) { return FCS.plural(n); }
+  var vb = document.getElementById('sl-vibe'); if (vb && !shared) FCS.vibeChips(vb); else if (vb) vb.hidden = true;
   FCS.onChange(draw); draw();
 })();

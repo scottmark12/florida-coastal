@@ -59,6 +59,7 @@
       '.fcs-hd:hover{background:#F3F1EC}.fcs-hd svg{width:22px;height:22px}.fcs-hd path{fill:none;stroke:currentColor;stroke-width:1.9}' +
       '.fcs-hd.on path{fill:#C2873A;stroke:#C2873A}' +
       '.fcs-hd b{position:absolute;top:2px;right:0;min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:#152A2E;color:#fff;font:700 11px/17px "DM Sans",system-ui,sans-serif;text-align:center;box-sizing:border-box}' +
+      'header.fc-onphoto .fcs-hd,header.fcq-dark .fcs-hd{color:#fff}header.fc-onphoto .fcs-hd b,header.fcq-dark .fcs-hd b{background:#fff;color:#152A2E}' +
       '.fcs-hd.bump svg{animation:fcsb .4s ease}@keyframes fcsb{40%{transform:scale(1.3)}}' +
       '.fcs-toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));z-index:80;transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:.25s;background:#152A2E;color:#fff;border-radius:999px;padding:11px 12px 11px 18px;display:flex;align-items:center;gap:14px;font:500 15px/1.3 "DM Sans",system-ui,sans-serif;box-shadow:0 10px 30px rgba(21,42,46,.28);max-width:calc(100% - 28px)}' +
       '.fcs-toast span{white-space:nowrap}.fcs-toast.in{opacity:1;transform:translate(-50%,0);pointer-events:auto}.fcs-toast a{color:#E9B877;font-weight:700;text-decoration:none;white-space:nowrap;padding:2px 6px}' +
@@ -87,6 +88,13 @@
       '.fcs-acts .on path{fill:#C2873A;stroke:#C2873A}' +
       '.fcs-ph{position:absolute;top:14px;right:14px;z-index:3;width:46px;height:46px;border-radius:50%;border:0;background:rgba(255,255,255,.94);box-shadow:0 2px 10px rgba(0,0,0,.18);display:flex;align-items:center;justify-content:center;cursor:pointer;color:#152A2E}' +
       '.fcs-ph svg{width:24px;height:24px}.fcs-ph path{fill:none;stroke:currentColor;stroke-width:2}.fcs-ph.on path{fill:#C2873A;stroke:#C2873A}.fcs-ph.pop svg{animation:fcsb .4s ease}' +
+      '.fv{display:flex;flex-wrap:wrap;align-items:center;gap:8px;font-family:"DM Sans",system-ui,sans-serif}.fv[hidden]{display:none}' +
+      '.fv-k{font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:700;color:#8A6A3D;margin-right:4px}' +
+      '.fv-v{display:inline-flex;align-items:center;gap:8px;padding:6px 6px 6px 12px;border-radius:999px;background:#F3F1EC;border:1px solid #E4DED3}' +
+      '.fv-v i{width:10px;height:10px;border-radius:50%;flex:none}.fv-v a{color:#152A2E;font-weight:600;font-size:15px;text-decoration:none}' +
+      '.fv-v button{border:0;background:#fff;width:24px;height:24px;border-radius:50%;font-size:16px;line-height:1;color:#3E5357;cursor:pointer}' +
+      '.fv-u{border:0;background:none;color:#3E5357;font:600 14px "DM Sans",system-ui,sans-serif;text-decoration:underline;cursor:pointer;padding:4px}.fv-none{font-size:14.5px;color:#3E5357}' +
+      '.fv-light .fv-k{color:#F2B27C}.fv-light .fv-v{background:rgba(255,255,255,.16);border-color:rgba(255,255,255,.3);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}.fv-light .fv-v a{color:#fff}.fv-light .fv-v button{background:rgba(255,255,255,.22);color:#fff}.fv-light .fv-u,.fv-light .fv-none{color:#fff}' +
       '@media(max-width:700px){.fcs-acts span{display:none}.fcs-acts button{padding:6px 8px}.crumbs.fcs-row>span{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.fcs-hd{margin-left:auto;margin-right:46px}}';
     document.head.appendChild(s);
   }
@@ -173,7 +181,7 @@
       var ref = (window.crypto && crypto.randomUUID) ? crypto.randomUUID() : null;
       var p = window.FC ? FC.lead({ kind: 'matches', email: v, ref: ref,
         matches: srt.map(function (t, i) { return { id: t.id, name: t.name, rank: i + 1, saved: !fromQuiz, react: t.react || null }; }),
-        answers: { source: fromQuiz ? 'quiz' : 'town_page', from: from, reactions: l2.filter(function (t) { return t.react; }).map(function (t) { return t.id + ':' + t.react; }) },
+        answers: { source: fromQuiz ? 'quiz' : 'town_page', from: from, vibes: vibes(), reactions: l2.filter(function (t) { return t.react; }).map(function (t) { return t.id + ':' + t.react; }) },
         town: srt[0] ? srt[0].name.slice(0, 80) : null,
         message: ('Shortlist: ' + srt.map(function (t) { return t.name; }).join(', ')).slice(0, 2000) }) : Promise.reject();
       p.then(function (r) {
@@ -205,6 +213,7 @@
     sheet.querySelector('.fcs-go').onclick = function () { save(ref, ans, true); phone(ref, preview); };
     sheet.querySelector('.fcs-no').onclick = function () { close(); toast('You\'re following ' + plural(list().length), 'View Shortlist', '/shortlist'); };
   }
+  function openQuestions(ref, preview) { open(''); questions(ref, preview); }
   function save(ref, ans, done) {
     if (!ref) return;
     try {
@@ -268,7 +277,42 @@
     onChange(draw); draw();
   }
 
-  window.FCS = { list: list, add: add, remove: remove, toggle: toggle, has: has, react: react, onChange: onChange, share: share, shareUrl: shareUrl, ask: ask, toast: toast, followed: followed, esc: esc, plural: plural, HEART: HEART, SHARE: SHARE };
+  /* ---------- your town vibe (set by the quiz, editable anywhere) ---------- */
+  var VIBES = { beaches: 'Best Beaches', schools: 'Best Schools', oldfl: 'Old Florida', bluezone: 'Healthy Living', island: 'Island Vibes', dock: 'Dock Life', sophhigh: 'High Energy', social: 'Social Scene', sophcalm: 'Sophisticated Laid Back', active: 'Active Lifestyle', walk: 'Walkable', remote: 'Remote Work', afford: 'Affordable' };
+  var VCOL = { oldfl: '#2F9460', dock: '#3A62C8', island: '#1FA39A', sophcalm: '#7B62D8', sophhigh: '#C8407F', social: '#E0604F', active: '#6FA53E', bluezone: '#2A93CF', walk: '#B055C0', remote: '#DB8430', beaches: '#D2A52A', schools: '#9A3A52', afford: '#B5643F' };
+  var VSUB = { island: 'Barefoot, small and slow', oldfl: 'Fish houses, bait shops and no hurry', dock: 'Life on and around the water', sophcalm: 'Polished and easy', sophhigh: 'Polished with a pulse', afford: 'More house for less', active: 'Trails, paddling and the outdoors', walk: 'Daily life on foot', bluezone: 'Long walks, time outside, friendly faces', remote: 'Pretty, with an easy airport', social: 'Bars, events and people', beaches: 'Nationally ranked sand', schools: 'Top state school grades' };
+  function vibeGet() { try { var v = JSON.parse(ls('fc-vibe') || 'null'); if (v && v.all) { v.off = v.off || []; return v; } } catch (e) {} return null; }
+  function vibeSet(v) { ls('fc-vibe', JSON.stringify(v)); fire(); }
+  function vibes() { var v = vibeGet(); return v ? v.all.filter(function (k) { return v.off.indexOf(k) < 0; }) : []; }
+  /* Draws the editable vibe chips into el. light: true for dark photo backgrounds. */
+  function vibeChips(el, opts) {
+    opts = opts || {};
+    function draw() {
+      var v = vibeGet();
+      if (!v || !v.all.length) { el.innerHTML = ''; el.hidden = true; return; }
+      el.hidden = false;
+      var on = v.all.filter(function (k) { return v.off.indexOf(k) < 0; }), off = v.all.filter(function (k) { return v.off.indexOf(k) >= 0; });
+      el.innerHTML = '<span class="fv-k">' + (opts.label || 'Your town vibe') + '</span>' +
+        (on.length ? on.map(function (k) {
+          return '<span class="fv-v"><i style="background:' + (VCOL[k] || '#C2873A') + '"></i><a href="map.html?mode=vibes&style=' + k + '" title="' + esc(VSUB[k] || '') + '">' + esc(VIBES[k] || k) + '</a><button type="button" data-k="' + k + '" aria-label="Not me, remove ' + esc(VIBES[k] || k) + '">&times;</button></span>';
+        }).join('') : '<span class="fv-none">No label, and that\'s fine</span>') +
+        (off.length ? '<button type="button" class="fv-u">Bring back ' + esc(off.map(function (k) { return VIBES[k] || k; }).join(', ')) + '</button>' : '');
+      el.querySelectorAll('button[data-k]').forEach(function (b) {
+        b.onclick = function () { var v2 = vibeGet(); v2.off.push(b.dataset.k); vibeSet(v2); track('vibe_remove', b.dataset.k); toast((VIBES[b.dataset.k] || 'Vibe') + ' removed'); };
+      });
+      var u = el.querySelector('.fv-u'); if (u) u.onclick = function () { var v2 = vibeGet(); v2.off = []; vibeSet(v2); track('vibe_restore', ''); };
+    }
+    el.classList.add('fv'); if (opts.light) el.classList.add('fv-light'); onChange(draw); draw();
+  }
+  /* The quiz's five towns go in (from: quiz), replacing older quiz towns; towns saved by hand stay. */
+  function setQuiz(towns) {
+    var keep = list().filter(function (t) { return t.from !== 'quiz'; }), ids = keep.map(function (t) { return t.id; });
+    var q = towns.filter(function (t) { return ids.indexOf(t.id) < 0; }).map(function (t) { return { id: t.id, name: t.name, img: t.img || '', from: 'quiz', react: null }; });
+    var next = q.concat(keep).slice(0, MAX), cur = list().map(function (t) { return t.id; }).join(',');
+    if (next.map(function (t) { return t.id; }).join(',') !== cur) { store(next); track('shortlist_quiz', String(q.length)); }
+  }
+
+  window.FCS = { list: list, add: add, remove: remove, toggle: toggle, has: has, react: react, onChange: onChange, share: share, shareUrl: shareUrl, ask: ask, toast: toast, followed: followed, esc: esc, plural: plural, HEART: HEART, SHARE: SHARE, VIBES: VIBES, VCOL: VCOL, VSUB: VSUB, vibes: vibes, vibeChips: vibeChips, setQuiz: setQuiz, questions: openQuestions };
   function init() { css(); header(); townPage(); onChange(function () { drawHeader(); }); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
