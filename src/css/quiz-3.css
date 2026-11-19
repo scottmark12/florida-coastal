@@ -365,3 +365,5 @@ html body.qphoto #qph .ph::after{content:"";position:absolute;left:0;right:0;top
 #qrv .qv-none{font-size:15px;color:rgba(255,255,255,.9)}
 #qrv .qv-go{display:inline-block;margin-top:10px;background:#fff;color:#152A2E;text-shadow:none;font-weight:600;font-size:16px;padding:14px 22px;border-radius:999px;text-decoration:none}
 @media(max-width:700px){#qrv .qv-v em{display:none}#qrv .qv-v b{font-size:15px}}
+
+#qrv.ask .qv~.ey,#qrv.ask>.ey{display:none}

@@ -338,6 +338,12 @@
     }
     wire(); sheet.querySelector('.fcs-go').onclick = close;
   }
+  function townMenu(t, isTop) {
+    var nm = esc(String(t.name).replace(/ \(.*\)$/, ''));
+    open('<h3>' + nm + '</h3><p>' + (isTop ? 'One of your top picks.' : 'Mark your favorites so they stay first, and so whoever you share with sees them.') + '</p><button type="button" class="fcs-go fcs-tp">' + (isTop ? 'Not a top pick' : 'Mark as top pick') + '</button><button type="button" class="fcs-no fcs-rm">Remove from Shortlist</button>');
+    sheet.querySelector('.fcs-tp').onclick = function () { react(t.id, 'love'); close(); toast(isTop ? nm.replace(/&amp;/g, '&') + ' is no longer a top pick' : 'Marked as a top pick'); };
+    sheet.querySelector('.fcs-rm').onclick = function () { remove(t.id); close(); toast('Removed from your Shortlist'); };
+  }
   function confirmRemove(t) {
     open('<h3>' + esc(String(t.name).replace(/ \(.*\)$/, '')) + '</h3><p>Take it off your Shortlist? You can save it again from its page anytime.</p><button type="button" class="fcs-go">Remove from Shortlist</button><button type="button" class="fcs-no">Keep it</button>');
     sheet.querySelector('.fcs-go').onclick = function () { remove(t.id); close(); toast('Removed from your Shortlist'); };
@@ -351,7 +357,7 @@
     if (next.map(function (t) { return t.id; }).join(',') !== cur) { store(next); track('shortlist_quiz', String(q.length)); }
   }
 
-  window.FCS = { list: list, add: add, remove: remove, toggle: toggle, has: has, react: react, onChange: onChange, share: share, shareUrl: shareUrl, ask: ask, toast: toast, followed: followed, esc: esc, plural: plural, HEART: HEART, SHARE: SHARE, VIBES: VIBES, VCOL: VCOL, VSUB: VSUB, vibes: vibes, vibeChips: vibeChips, setQuiz: setQuiz, questions: openQuestions, vibeLine: vibeLine, vibeEdit: vibeEdit, confirmRemove: confirmRemove };
+  window.FCS = { list: list, add: add, remove: remove, toggle: toggle, has: has, react: react, onChange: onChange, share: share, shareUrl: shareUrl, ask: ask, toast: toast, followed: followed, esc: esc, plural: plural, HEART: HEART, SHARE: SHARE, VIBES: VIBES, VCOL: VCOL, VSUB: VSUB, vibes: vibes, vibeChips: vibeChips, setQuiz: setQuiz, questions: openQuestions, vibeLine: vibeLine, vibeEdit: vibeEdit, confirmRemove: confirmRemove, townMenu: townMenu };
   function init() { css(); header(); townPage(); onChange(function () { drawHeader(); }); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
