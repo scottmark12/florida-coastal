@@ -45,9 +45,23 @@
   function share(l, label) {
     var url = shareUrl(l), n = (l || list()).length;
     track('shortlist_share', String(n));
-    var data = { title: 'Our Florida Shortlist', text: label || ('The ' + plural(n) + ' on our Florida Shortlist'), url: url };
-    if (navigator.share && matchMedia('(pointer:coarse)').matches) { navigator.share(data).catch(function () {}); return; }
-    (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { toast('Link copied. Send it to whoever you\'re moving with.'); }, function () { prompt('Copy this link', url); });
+    shareLink(url, 'Our Florida Shortlist', label || ('The ' + plural(n) + ' on our Florida Shortlist'));
+  }
+  /* Native share menu when the browser has one; otherwise (desktop, Instagram and Facebook in app browsers) a sheet with the link and a Copy button. */
+  function shareLink(url, title, text) {
+    if (navigator.share) { navigator.share({ title: title, text: text, url: url }).catch(function (e) { if (e && e.name !== 'AbortError') linkSheet(url); }); return; }
+    linkSheet(url);
+  }
+  function linkSheet(url) {
+    open('<h3>Share this link</h3><p>Send it to whoever you\'re moving with. They\'ll see the same towns.</p><div class="fcs-lk"><input type="text" readonly value="' + esc(url) + '" aria-label="Link to share"><button type="button" class="fcs-go fcs-cp">Copy link</button></div>');
+    var inp = sheet.querySelector('input'), b = sheet.querySelector('.fcs-cp');
+    setTimeout(function () { inp.focus(); inp.select(); }, 60);
+    b.onclick = function () {
+      inp.select(); inp.setSelectionRange(0, 9999);
+      var ok = function () { b.textContent = 'Copied'; track('share_copy', ''); setTimeout(close, 900); };
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(url).then(ok, function () { try { document.execCommand('copy') ? ok() : (b.textContent = 'Press and hold the link to copy'); } catch (e) { b.textContent = 'Press and hold the link to copy'; } });
+      else { try { document.execCommand('copy') ? ok() : (b.textContent = 'Press and hold the link to copy'); } catch (e) { b.textContent = 'Press and hold the link to copy'; } }
+    };
   }
 
   /* ---------- styles ---------- */
@@ -60,6 +74,7 @@
       '.fcs-hd.on path{fill:#C2873A;stroke:#C2873A}' +
       '.fcs-hd b{position:absolute;top:2px;right:0;min-width:17px;height:17px;padding:0 4px;border-radius:9px;background:#152A2E;color:#fff;font:700 11px/17px "DM Sans",system-ui,sans-serif;text-align:center;box-sizing:border-box}' +
       'header.fc-onphoto .fcs-hd,header.fcq-dark .fcs-hd{color:#fff}header.fc-onphoto .fcs-hd b,header.fcq-dark .fcs-hd b{background:#fff;color:#152A2E}' +
+      'header.solid .fcs-hd{color:#152A2E}header.solid .fcs-hd b{background:#152A2E;color:#fff}' +
       '.fcs-hd.bump svg{animation:fcsb .4s ease}@keyframes fcsb{40%{transform:scale(1.3)}}' +
       '.fcs-toast{position:fixed;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));z-index:80;transform:translate(-50%,20px);opacity:0;pointer-events:none;transition:.25s;background:#152A2E;color:#fff;border-radius:999px;padding:11px 12px 11px 18px;display:flex;align-items:center;gap:14px;font:500 15px/1.3 "DM Sans",system-ui,sans-serif;box-shadow:0 10px 30px rgba(21,42,46,.28);max-width:calc(100% - 28px)}' +
       '.fcs-toast span{white-space:nowrap}.fcs-toast.in{opacity:1;transform:translate(-50%,0);pointer-events:auto}.fcs-toast a{color:#E9B877;font-weight:700;text-decoration:none;white-space:nowrap;padding:2px 6px}' +
@@ -80,6 +95,8 @@
       '.fcs-q{margin:0 0 14px}.fcs-q b{display:block;font-size:15px;margin:0 0 8px}.fcs-q div{display:flex;flex-wrap:wrap;gap:8px}' +
       '.fcs-q button{border:1.5px solid #CFC8BC;background:#fff;border-radius:999px;padding:10px 14px;font:500 15px "DM Sans",system-ui,sans-serif;color:#152A2E;cursor:pointer}' +
       '.fcs-q button.on{background:#152A2E;border-color:#152A2E;color:#fff}' +
+      '.fcs-mh{position:absolute;top:10px;right:10px;z-index:4;width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.94);box-shadow:0 1px 6px rgba(0,0,0,.2);display:flex;align-items:center;justify-content:center;cursor:pointer;color:#152A2E}.fcs-mh svg{width:21px;height:21px}.fcs-mh path{fill:none;stroke:currentColor;stroke-width:2}.fcs-mh.on path{fill:#C2873A;stroke:#C2873A}.fcs-mh.card{width:34px;height:34px;top:8px;right:8px}.fcs-mh.pop{right:auto;left:8px;top:8px;width:34px;height:34px}.fcs-mh.pop svg{width:18px;height:18px}#pop .ph,#grid .card .ph{position:relative}#pop .fcs-mh:not(#x),#grid .fcs-mh:not(#x){padding:0!important;display:flex!important;align-items:center!important;justify-content:center!important}#pop .fcs-mh:not(#x) svg,#grid .fcs-mh:not(#x) svg{position:static!important;display:block!important;width:19px!important;height:19px!important;margin:0!important;transform:none!important}.fcs-mh.card svg{width:18px;height:18px}' +
+      '.fcs-lk{display:flex;flex-direction:column;gap:10px}.fcs-lk input{border:1.5px solid #CFC8BC;border-radius:12px;padding:14px;font:15px "DM Sans",system-ui,sans-serif;color:#152A2E;background:#FBFAF7;width:100%;box-sizing:border-box}' +
       '.fcs-err{color:#B3261E;font-size:14px;margin:4px 0 0}.fcs-hp{position:absolute;left:-9999px}' +
       /* town page */
       '.crumbs.fcs-row{display:flex;align-items:center;justify-content:space-between;gap:12px}' +
@@ -154,20 +171,31 @@
     var s = sheet, c = scrim; sheet = scrim = null; setTimeout(function () { s.remove(); c.remove(); }, 320);
     document.removeEventListener('keydown', keys); if (lastFocus) try { lastFocus.focus(); } catch (e) {}
   }
-  function keys(e) { if (e.key === 'Escape') close(); }
+  function keys(e) {
+    if (e.key === 'Escape') { close(); return; }
+    if (e.key !== 'Tab' || !sheet) return;
+    var f = [].filter.call(sheet.querySelectorAll('button,a[href],input:not([tabindex="-1"]),textarea,select'), function (x) { return !x.disabled && x.offsetParent !== null; });
+    if (!f.length) return;
+    var first = f[0], last = f[f.length - 1];
+    if (!sheet.contains(document.activeElement)) { e.preventDefault(); first.focus(); }
+    else if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+  }
   function open(html) {
     if (sheet) close();
     lastFocus = document.activeElement;
     scrim = document.createElement('div'); scrim.className = 'fcs-scrim'; scrim.onclick = close;
     sheet = document.createElement('div'); sheet.className = 'fcs-sheet'; sheet.setAttribute('role', 'dialog'); sheet.setAttribute('aria-modal', 'true');
     sheet.innerHTML = '<button type="button" class="fcs-x" aria-label="Close">&times;</button><div class="fcs-in">' + html + '</div>';
+    sheet.setAttribute('aria-labelledby', 'fcs-t'); var h3 = sheet.querySelector('h3'); if (h3) h3.id = 'fcs-t';
+    setTimeout(function () { if (sheet && !sheet.contains(document.activeElement)) { var x = sheet.querySelector('input,button.fcs-go') || sheet.querySelector('.fcs-x'); if (x) x.focus({ preventScroll: true }); } }, 380);
     document.body.appendChild(scrim); document.body.appendChild(sheet);
     sheet.querySelector('.fcs-x').onclick = close;
     document.addEventListener('keydown', keys);
     requestAnimationFrame(function () { scrim.classList.add('in'); sheet.classList.add('in'); });
     return sheet;
   }
-  function body(html) { if (sheet) sheet.querySelector('.fcs-in').innerHTML = html; return sheet; }
+  function body(html) { if (sheet) { sheet.querySelector('.fcs-in').innerHTML = html; var h3 = sheet.querySelector('h3'); if (h3) h3.id = 'fcs-t'; } return sheet; }
   var WHO = '<div class="fcs-who"><img src="/img/g/m/mark-betsy.webp" alt=""><span>Mark and Betsy Scott send every Shortlist. 20 years on this coast.</span></div>';
 
   function ask(from) {
@@ -282,9 +310,7 @@
     ph.onclick = function (e) { e.stopPropagation(); tap('town photo'); };
     acts.querySelector('.fcs-sh').onclick = function () {
       track('town_share', id);
-      var url = location.origin + location.pathname;
-      if (navigator.share && matchMedia('(pointer:coarse)').matches) navigator.share({ title: name + ' · Florida Coastal', url: url }).catch(function () {});
-      else (navigator.clipboard ? navigator.clipboard.writeText(url) : Promise.reject()).then(function () { toast('Link to ' + name + ' copied'); }, function () { prompt('Copy this link', url); });
+      shareLink(location.origin + location.pathname, name + ' · Florida Coastal', name + ' on Florida Coastal');
     };
     /* The old "Save this town" link in the Ask a local card now saves for real */
     document.querySelectorAll('aside .alt a').forEach(function (a) {
@@ -368,7 +394,34 @@
     if (next.map(function (t) { return t.id; }).join(',') !== cur) { store(next); track('shortlist_quiz', String(q.length)); }
   }
 
-  window.FCS = { list: list, add: add, remove: remove, toggle: toggle, has: has, react: react, onChange: onChange, share: share, shareUrl: shareUrl, ask: ask, toast: toast, followed: followed, esc: esc, plural: plural, HEART: HEART, SHARE: SHARE, VIBES: VIBES, VCOL: VCOL, VSUB: VSUB, vibes: vibes, vibeChips: vibeChips, setQuiz: setQuiz, questions: openQuestions, vibeLine: vibeLine, vibeEdit: vibeEdit, confirmRemove: confirmRemove, townMenu: townMenu };
-  function init() { css(); header(); townPage(); onChange(function () { drawHeader(); }); }
+  window.FCS = { list: list, add: add, remove: remove, toggle: toggle, has: has, react: react, onChange: onChange, share: share, shareLink: shareLink, shareUrl: shareUrl, ask: ask, toast: toast, followed: followed, esc: esc, plural: plural, HEART: HEART, SHARE: SHARE, VIBES: VIBES, VCOL: VCOL, VSUB: VSUB, vibes: vibes, vibeChips: vibeChips, setQuiz: setQuiz, questions: openQuestions, vibeLine: vibeLine, vibeEdit: vibeEdit, confirmRemove: confirmRemove, townMenu: townMenu };
+  /* Vibe Map and Slider Map: a heart on the town popup's photo and on the list cards. The map redraws them, so watch and re-add. */
+  function mapHearts() {
+    var pop = document.getElementById('pop'), grid = document.getElementById('grid');
+    if (!pop && !grid) return;
+    var TT = function (id) { try { return (typeof T !== 'undefined' ? T : []).filter(function (t) { return t.id === id; })[0]; } catch (e) { return null; } };
+    function info(id) { var t = TT(id); return t ? { id: t.id, name: t.n, img: String(t.img || '').replace(/^img\/c\/(?:[tsmf]\/)?/, 'img/c/s/') } : null; }
+    function btn(id, cls) {
+      var b = document.createElement('button'); b.type = 'button'; b.className = 'fcs-mh ' + cls; b.dataset.id = id;
+      b.onclick = function (e) { e.preventDefault(); e.stopPropagation(); var t = info(id); if (!t) return; var added = toggle(t, cls === 'pop' ? 'map card' : 'map list'); if (!added && !has(id)) toast('Removed from your Shortlist'); paint(); };
+      return b;
+    }
+    function paint() {
+      document.querySelectorAll('.fcs-mh').forEach(function (b) { var on = has(b.dataset.id); b.classList.toggle('on', on); b.innerHTML = HEART; b.setAttribute('aria-pressed', on); b.setAttribute('aria-label', on ? 'Saved to your Shortlist' : 'Save to your Shortlist'); });
+    }
+    function scan() {
+      if (pop) {
+        var cur = null; try { cur = typeof S !== 'undefined' && S.pop ? S.pop.id : null; } catch (e) {}
+        var ph = pop.querySelector('.ph');
+        if (cur && ph) { var b0 = ph.querySelector('.fcs-mh'); if (!b0 || b0.dataset.id !== cur) { if (b0) b0.remove(); ph.appendChild(btn(cur, 'pop')); } }
+      }
+      if (grid) grid.querySelectorAll('a.card[data-id] .ph').forEach(function (ph) { if (!ph.querySelector('.fcs-mh')) ph.appendChild(btn(ph.parentNode.dataset.id, 'card')); });
+      paint();
+    }
+    var busy = 0, mo = new MutationObserver(function () { if (busy) return; busy = 1; requestAnimationFrame(function () { busy = 0; mo.disconnect(); scan(); watch(); }); });
+    function watch() { if (pop) mo.observe(pop, { childList: true, subtree: true }); if (grid) mo.observe(grid, { childList: true }); }
+    scan(); watch(); onChange(paint);
+  }
+  function init() { css(); header(); townPage(); mapHearts(); onChange(function () { drawHeader(); }); }
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init); else init();
 })();
