@@ -2731,7 +2731,7 @@
   "v": [],
   "b": "A fast growing inland city with newer neighborhoods and big box shopping, 20 minutes from the beach.",
   "img": "img/c/west-melbourne.webp",
-  "real": true,
+  "real": false,
   "p": "$380K",
   "pg": true,
   "f": {
