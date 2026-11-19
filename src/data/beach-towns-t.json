@@ -28,7 +28,8 @@
     "v": [
       "dock",
       "beaches",
-      "active"
+      "active",
+      "schools"
     ],
     "b": "A harbor town where the charter boats leave at dawn and the emerald water starts right off the Destin Harbor boardwalk.",
     "img": "../img/c/destin.webp",
@@ -81,7 +82,8 @@
       "island",
       "oldfl",
       "walk",
-      "afford"
+      "afford",
+      "schools"
     ],
     "b": "A tiny island town of clam farms and backwater keys, where dinner happens on Dock Street as the sun goes down over the Gulf.",
     "img": "../img/c/spring-nature-coast.webp",
@@ -99,7 +101,8 @@
       "walk",
       "remote",
       "beaches",
-      "bluezone"
+      "bluezone",
+      "schools"
     ],
     "b": "A walkable downtown right on the Pinellas Trail, with the ferry to Caladesi Island's beach a short ride away.",
     "img": "../img/c/dunedin-honeymoon.webp",
@@ -170,8 +173,7 @@
     "v": [
       "sophcalm",
       "beaches",
-      "dock",
-      "schools"
+      "dock"
     ],
     "b": "A quiet barrier island with uncrowded beaches, and St. Armands Circle and Sarasota's theaters a short drive away.",
     "img": "../img/c/longboat-key.webp",
@@ -329,7 +331,8 @@
     "lo": -80.09,
     "v": [
       "active",
-      "social"
+      "social",
+      "schools"
     ],
     "b": "Clear inlet water to snorkel, the red Jupiter Inlet Lighthouse, and the Loxahatchee River to paddle in the morning.",
     "img": "../img/c/jupiter.webp",
@@ -362,7 +365,8 @@
     "v": [
       "active",
       "social",
-      "dock"
+      "dock",
+      "schools"
     ],
     "b": "A classic surf town with a pier to surf by in the morning and rocket launches to watch from the sand at night.",
     "img": "../img/c/cocoa-beach.webp",
@@ -450,7 +454,8 @@
       "social",
       "active",
       "remote",
-      "bluezone"
+      "bluezone",
+      "schools"
     ],
     "b": "A surf town built around its pier, with patios a block from the sand and Jacksonville right next door.",
     "img": "../img/c/jacksonville-beach.webp",
@@ -516,7 +521,9 @@
     "c": "panhandle",
     "la": 29.931,
     "lo": -84.454,
-    "v": [],
+    "v": [
+      "schools"
+    ],
     "b": "A quiet line of beach houses on US 98 east of Carrabelle, beside the FSU Coastal and Marine Lab. There are no stores here, and that is the point.",
     "img": "../img/c/st-teresa.webp",
     "p": null,
@@ -530,7 +537,8 @@
     "la": 30.166,
     "lo": -84.208,
     "v": [
-      "oldfl"
+      "oldfl",
+      "schools"
     ],
     "b": "A tiny river town where the road ends at the water, half an hour south of Tallahassee, with a Spanish fort site, a rail trail and a huge wildlife refuge next door.",
     "img": "../img/c/st-marks.webp",
@@ -579,7 +587,8 @@
     "lo": -87.143,
     "v": [
       "active",
-      "beaches"
+      "beaches",
+      "schools"
     ],
     "b": "A barrier island town on Santa Rosa Island, with sugar white sand and miles of protected national seashore on both sides.",
     "img": "../img/c/pensacola-beach.webp",
@@ -624,7 +633,9 @@
     "c": "panhandle",
     "la": 30.357,
     "lo": -87.163,
-    "v": [],
+    "v": [
+      "schools"
+    ],
     "b": "A leafy peninsula between downtown Pensacola and Pensacola Beach, with quiet tree lined streets and the water at the end of every one.",
     "img": "../img/c/gulf-breeze.webp",
     "p": "$479K",
@@ -804,7 +815,8 @@
     "la": 28.003,
     "lo": -82.693,
     "v": [
-      "walk"
+      "walk",
+      "schools"
     ],
     "b": "A small town on Old Tampa Bay with oak shaded streets, a historic spa and a Main Street full of local shops.",
     "img": "../img/c/safety-harbor.webp",
@@ -971,8 +983,7 @@
     "la": 26.962,
     "lo": -82.353,
     "v": [
-      "afford",
-      "schools"
+      "afford"
     ],
     "b": "A laid back Gulf town with a small old downtown and beaches on Manasota Key, known for shark teeth.",
     "img": "../img/c/englewood.webp",
@@ -990,8 +1001,7 @@
       "remote",
       "social",
       "sophhigh",
-      "beaches",
-      "schools"
+      "beaches"
     ],
     "b": "The arts capital of the Gulf coast, with an opera, a ballet, The Ringling museum, Lido Beach just over the bridge and Siesta Key's famous sand minutes away.",
     "img": "../img/c/sarasota.webp",
@@ -1142,8 +1152,7 @@
       "sophcalm",
       "island",
       "beaches",
-      "dock",
-      "schools"
+      "dock"
     ],
     "b": "The largest of the Ten Thousand Islands, with a wide crescent beach on one side and wild mangrove country on the other.",
     "img": "../img/c/marco-island.webp",
@@ -1470,7 +1479,8 @@
     "v": [
       "social",
       "active",
-      "bluezone"
+      "bluezone",
+      "schools"
     ],
     "b": "A small, colorful river town with a Caribbean streak and uncrowded Hutchinson Island beaches across the causeway.",
     "img": "../img/c/jensen-beach.webp",
@@ -1552,7 +1562,8 @@
     "lo": -80.565,
     "v": [
       "sophcalm",
-      "bluezone"
+      "bluezone",
+      "schools"
     ],
     "b": "A small oceanside town with a boardwalk, a couple of surf shops and rocket launches you can watch from the sand.",
     "img": "../img/c/indialantic.webp",
@@ -1567,7 +1578,8 @@
     "la": 28.069,
     "lo": -80.562,
     "v": [
-      "active"
+      "active",
+      "schools"
     ],
     "b": "One of the oldest beach towns on the Space Coast, a few quiet streets between the ocean and the Indian River.",
     "img": "../img/c/melbourne-beach.webp",
@@ -1596,7 +1608,9 @@
     "c": "atlantic",
     "la": 28.176,
     "lo": -80.59,
-    "v": [],
+    "v": [
+      "schools"
+    ],
     "b": "A residential beach town between the ocean and the Banana River, with surf breaks, parks and front row launch views.",
     "img": "../img/c/satellite-beach.webp",
     "p": "$516K",
@@ -1642,7 +1656,8 @@
       "active",
       "social",
       "remote",
-      "walk"
+      "walk",
+      "schools"
     ],
     "b": "A leafy beach town with a walkable town center it shares with Neptune Beach, and the trails of Hanna Park to the north.",
     "img": "../img/c/atlantic-beach.webp",
@@ -1660,7 +1675,8 @@
       "remote",
       "sophcalm",
       "bluezone",
-      "walk"
+      "walk",
+      "schools"
     ],
     "b": "A small beach town that shares Beaches Town Center, with its restaurants and bookstore a block from the sand.",
     "img": "../img/c/neptune-beach.webp",
@@ -1737,8 +1753,7 @@
     "lo": -81.208,
     "v": [
       "active",
-      "afford",
-      "schools"
+      "afford"
     ],
     "b": "A planned city of saltwater canals and more than 130 miles of trails, between St. Augustine and Daytona.",
     "img": "../img/c/palm-coast.webp",
@@ -1826,7 +1841,9 @@
     "c": "panhandle",
     "la": 30.519,
     "lo": -86.488,
-    "v": [],
+    "v": [
+      "schools"
+    ],
     "b": "A bayside town on Choctawhatchee Bay where boats tie up on the bayous and the Gulf beaches are a short drive away.",
     "img": "../img/c/niceville.webp",
     "p": "$520K",
@@ -2052,7 +2069,9 @@
     "c": "gulf",
     "la": 28.079,
     "lo": -82.771,
-    "v": [],
+    "v": [
+      "schools"
+    ],
     "b": "A leafy, established town in north Pinellas with an old downtown on the Pinellas Trail and quiet waterfront villages on St. Joseph Sound.",
     "img": "../img/c/generic/dock-umbrella.webp",
     "p": "$485K",
@@ -2066,7 +2085,9 @@
     "c": "gulf",
     "la": 28.032,
     "lo": -82.669,
-    "v": [],
+    "v": [
+      "schools"
+    ],
     "b": "A small, tidy city at the top of Old Tampa Bay, with bayfront parks and the fastest airport run in Pinellas.",
     "img": "../img/c/generic/dock-sunset.webp",
     "p": "$399K",
@@ -2098,7 +2119,8 @@
       "dock",
       "beaches",
       "sophcalm",
-      "island"
+      "island",
+      "schools"
     ],
     "b": "A cluster of canal islands at the mouth of Tampa Bay, between St. Pete Beach and Fort De Soto, made for people who live on their boats.",
     "img": "../img/c/tierra-verde.webp",
@@ -2286,7 +2308,9 @@
     "c": "atlantic",
     "la": 26.96,
     "lo": -80.096,
-    "v": [],
+    "v": [
+      "schools"
+    ],
     "b": "A small riverfront village at the top of Palm Beach County, where the Loxahatchee River meets the Intracoastal and the beach is a short bridge away.",
     "img": "../img/c/generic/pier-sunrise.webp",
     "p": "$640K",
@@ -2409,8 +2433,7 @@
     "la": 29.769,
     "lo": -81.253,
     "v": [
-      "beaches",
-      "schools"
+      "beaches"
     ],
     "b": "A quiet strip of beach houses and condos south of St. Augustine Beach, between the ocean and the Matanzas River, with one of the widest, calmest beaches on the First Coast.",
     "img": "../img/c/generic/white-dunes.webp",
@@ -2552,7 +2575,9 @@
     "c": "atlantic",
     "la": 28.144,
     "lo": -80.596,
-    "v": [],
+    "v": [
+      "schools"
+    ],
     "b": "A small, settled beach town between Satellite Beach and Indialantic, with ocean access on one side, Banana River canals on the other and a big park in the middle.",
     "img": "../img/c/indian-harbour-beach.webp",
     "p": "$454K",

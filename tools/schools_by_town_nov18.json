@@ -1,0 +1,4344 @@
+[
+ {
+  "id": "30a",
+  "district": "WALTON",
+  "population": 23445,
+  "elementary": {
+   "name": "VAN R. BUTLER ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.908,
+   "state_school_id": "FL-66-0151"
+  },
+  "middle": {
+   "name": "EMERALD COAST MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 4.896,
+   "state_school_id": "FL-66-0152"
+  },
+  "high": {
+   "name": "SOUTH WALTON HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.454,
+   "state_school_id": "FL-66-0153"
+  }
+ },
+ {
+  "id": "destin",
+  "district": "OKALOOSA",
+  "population": 13931,
+  "elementary": {
+   "name": "DESTIN ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.079,
+   "state_school_id": "FL-46-0131"
+  },
+  "middle": {
+   "name": "DESTIN MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.967,
+   "state_school_id": "FL-46-0771"
+  },
+  "high": {
+   "name": "NICEVILLE SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 8.522,
+   "state_school_id": "FL-46-0211"
+  }
+ },
+ {
+  "id": "pcb",
+  "district": "BAY",
+  "population": 18094,
+  "elementary": {
+   "name": "HUTCHISON BEACH ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.167,
+   "state_school_id": "FL-03-0081"
+  },
+  "middle": {
+   "name": "SURFSIDE MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.18,
+   "state_school_id": "FL-03-0201"
+  },
+  "high": {
+   "name": "J.R. ARNOLD HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 2.325,
+   "state_school_id": "FL-03-0551"
+  }
+ },
+ {
+  "id": "apalachicola",
+  "district": "FRANKLIN",
+  "population": 2341,
+  "elementary": {
+   "name": "FRANKLIN COUNTY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 11.145,
+   "state_school_id": "FL-19-0091"
+  },
+  "middle": {
+   "name": "FRANKLIN COUNTY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 11.145,
+   "state_school_id": "FL-19-0091"
+  },
+  "high": {
+   "name": "FRANKLIN COUNTY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 11.145,
+   "state_school_id": "FL-19-0091"
+  }
+ },
+ {
+  "id": "cedarkey",
+  "district": "LEVY",
+  "population": 688,
+  "elementary": {
+   "name": "CEDAR KEY HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.155,
+   "state_school_id": "FL-38-0041"
+  },
+  "middle": {
+   "name": "CEDAR KEY HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.155,
+   "state_school_id": "FL-38-0041"
+  },
+  "high": {
+   "name": "CEDAR KEY HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.155,
+   "state_school_id": "FL-38-0041"
+  }
+ },
+ {
+  "id": "dunedin",
+  "district": "PINELLAS",
+  "population": 36173,
+  "elementary": {
+   "name": "SAN JOSE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.75,
+   "state_school_id": "FL-52-3851"
+  },
+  "middle": {
+   "name": "DUNEDIN HIGHLAND MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.696,
+   "state_school_id": "FL-52-1091"
+  },
+  "high": {
+   "name": "DUNEDIN HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.31,
+   "state_school_id": "FL-52-1081"
+  }
+ },
+ {
+  "id": "clearwaterbeach",
+  "district": "PINELLAS",
+  "population": 8462,
+  "elementary": {
+   "name": "BELLEAIR ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.677,
+   "state_school_id": "FL-52-0371"
+  },
+  "middle": {
+   "name": "DUNEDIN HIGHLAND MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.554,
+   "state_school_id": "FL-52-1091"
+  },
+  "high": {
+   "name": "CLEARWATER HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 4.327,
+   "state_school_id": "FL-52-0711"
+  }
+ },
+ {
+  "id": "gulfport",
+  "district": "PINELLAS",
+  "population": 11783,
+  "elementary": {
+   "name": "GULFPORT MONTESSORI ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.46,
+   "state_school_id": "FL-52-1691"
+  },
+  "middle": {
+   "name": "THURGOOD MARSHALL FUNDAMENTAL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.453,
+   "state_school_id": "FL-52-4631"
+  },
+  "high": {
+   "name": "BOCA CIEGA HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.81,
+   "state_school_id": "FL-52-0431"
+  }
+ },
+ {
+  "id": "ami",
+  "district": "MANATEE",
+  "population": 4886,
+  "elementary": {
+   "name": "ANNA MARIA ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.488,
+   "state_school_id": "FL-41-0031"
+  },
+  "middle": {
+   "name": "MARTHA B. KING MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 4.817,
+   "state_school_id": "FL-41-0611"
+  },
+  "high": {
+   "name": "MANATEE HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 7.572,
+   "state_school_id": "FL-41-0181"
+  }
+ },
+ {
+  "id": "longboat",
+  "district": "SARASOTA",
+  "population": 7505,
+  "elementary": {
+   "name": "BAY HAVEN SCHOOL OF BASICS PLUS",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 5.07,
+   "state_school_id": "FL-58-0071"
+  },
+  "middle": {
+   "name": "BOOKER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 6.709,
+   "state_school_id": "FL-58-0084"
+  },
+  "high": {
+   "name": "BOOKER HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 5.803,
+   "state_school_id": "FL-58-0085"
+  }
+ },
+ {
+  "id": "captiva",
+  "district": "LEE",
+  "population": 318,
+  "elementary": {
+   "name": "THE SANIBEL SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 6.886,
+   "state_school_id": "FL-36-0361"
+  },
+  "middle": {
+   "name": "THE SANIBEL SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 6.886,
+   "state_school_id": "FL-36-0361"
+  },
+  "high": {
+   "name": "IDA S. BAKER HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 11.711,
+   "state_school_id": "FL-36-0861"
+  }
+ },
+ {
+  "id": "matlacha",
+  "district": "LEE",
+  "population": 598,
+  "elementary": {
+   "name": "PINE ISLAND ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.767,
+   "state_school_id": "FL-36-0341"
+  },
+  "middle": {
+   "name": "TRAFALGAR MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.615,
+   "state_school_id": "FL-36-0761"
+  },
+  "high": {
+   "name": "IDA S. BAKER HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 4.747,
+   "state_school_id": "FL-36-0861"
+  }
+ },
+ {
+  "id": "naples",
+  "district": "COLLIER",
+  "population": 19115,
+  "elementary": {
+   "name": "LAKE PARK ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.473,
+   "state_school_id": "FL-11-0121"
+  },
+  "middle": {
+   "name": "GULFVIEW MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.468,
+   "state_school_id": "FL-11-0061"
+  },
+  "high": {
+   "name": "NAPLES HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.566,
+   "state_school_id": "FL-11-0151"
+  }
+ },
+ {
+  "id": "keywest",
+  "district": "MONROE",
+  "population": 26444,
+  "elementary": {
+   "name": "HORACE O'BRYANT SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.652,
+   "state_school_id": "FL-44-0111"
+  },
+  "middle": {
+   "name": "HORACE O'BRYANT SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.652,
+   "state_school_id": "FL-44-0111"
+  },
+  "high": {
+   "name": "KEY WEST HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.453,
+   "state_school_id": "FL-44-0101"
+  }
+ },
+ {
+  "id": "islamorada",
+  "district": "MONROE",
+  "population": 7107,
+  "elementary": {
+   "name": "PLANTATION KEY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.77,
+   "state_school_id": "FL-44-0321"
+  },
+  "middle": {
+   "name": "PLANTATION KEY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.77,
+   "state_school_id": "FL-44-0321"
+  },
+  "high": {
+   "name": "CORAL SHORES HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 4.066,
+   "state_school_id": "FL-44-0041"
+  }
+ },
+ {
+  "id": "southbeach",
+  "district": "MIAMI-DADE",
+  "population": 36286,
+  "elementary": {
+   "name": "MIAMI BEACH FEINBERG/FISHER K-8",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.494,
+   "state_school_id": "FL-13-0761"
+  },
+  "middle": {
+   "name": "MIAMI BEACH NAUTILUS MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.226,
+   "state_school_id": "FL-13-6541"
+  },
+  "high": {
+   "name": "MIAMI BEACH SENIOR HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 1.184,
+   "state_school_id": "FL-13-7201"
+  }
+ },
+ {
+  "id": "ftl",
+  "district": "BROWARD",
+  "population": 182760,
+  "elementary": {
+   "name": "NORTH SIDE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.164,
+   "state_school_id": "FL-06-0041"
+  },
+  "middle": {
+   "name": "SUNRISE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.448,
+   "state_school_id": "FL-06-0251"
+  },
+  "high": {
+   "name": "DILLARD 6-12",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.921,
+   "state_school_id": "FL-06-0371"
+  }
+ },
+ {
+  "id": "delray",
+  "district": "PALM BEACH",
+  "population": 66851,
+  "elementary": {
+   "name": "ORCHARD VIEW ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 1.985,
+   "state_school_id": "FL-50-2351"
+  },
+  "middle": {
+   "name": "CARVER MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 1.482,
+   "state_school_id": "FL-50-2041"
+  },
+  "high": {
+   "name": "ATLANTIC HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.734,
+   "state_school_id": "FL-50-0862"
+  }
+ },
+ {
+  "id": "jupiter",
+  "district": "PALM BEACH",
+  "population": 61047,
+  "elementary": {
+   "name": "JERRY THOMAS ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.047,
+   "state_school_id": "FL-50-1651"
+  },
+  "middle": {
+   "name": "INDEPENDENCE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.563,
+   "state_school_id": "FL-50-2621"
+  },
+  "high": {
+   "name": "JUPITER HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.734,
+   "state_school_id": "FL-50-0081"
+  }
+ },
+ {
+  "id": "fortpierce",
+  "district": "ST. LUCIE",
+  "population": 47457,
+  "elementary": {
+   "name": "ST. LUCIE ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.479,
+   "state_school_id": "FL-56-0071"
+  },
+  "middle": {
+   "name": "DAN MCCARTY MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.078,
+   "state_school_id": "FL-56-0072"
+  },
+  "high": {
+   "name": "LINCOLN PARK ACADEMY",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.767,
+   "state_school_id": "FL-56-0121"
+  }
+ },
+ {
+  "id": "cocoa",
+  "district": "BREVARD",
+  "population": 11354,
+  "elementary": {
+   "name": "THEODORE ROOSEVELT ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.326,
+   "state_school_id": "FL-05-5012"
+  },
+  "middle": {
+   "name": "COCOA BEACH JUNIOR/SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.459,
+   "state_school_id": "FL-05-5011"
+  },
+  "high": {
+   "name": "COCOA BEACH JUNIOR/SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.459,
+   "state_school_id": "FL-05-5011"
+  }
+ },
+ {
+  "id": "nsb",
+  "district": "VOLUSIA",
+  "population": 30251,
+  "elementary": {
+   "name": "CHISHOLM ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.931,
+   "state_school_id": "FL-64-0949"
+  },
+  "middle": {
+   "name": "NEW SMYRNA BEACH MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.33,
+   "state_school_id": "FL-64-3931"
+  },
+  "high": {
+   "name": "NEW SMYRNA BEACH HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.188,
+   "state_school_id": "FL-64-3839"
+  }
+ },
+ {
+  "id": "daytona",
+  "district": "VOLUSIA",
+  "population": 72646,
+  "elementary": {
+   "name": "TURIE T. SMALL ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.089,
+   "state_school_id": "FL-64-6144"
+  },
+  "middle": {
+   "name": "CAMPBELL MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.179,
+   "state_school_id": "FL-64-0745"
+  },
+  "high": {
+   "name": "MAINLAND HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.419,
+   "state_school_id": "FL-64-3436"
+  }
+ },
+ {
+  "id": "flagler",
+  "district": "FLAGLER",
+  "population": 5160,
+  "elementary": {
+   "name": "OLD KINGS ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.929,
+   "state_school_id": "FL-18-0201"
+  },
+  "middle": {
+   "name": "BUDDY TAYLOR MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 7.177,
+   "state_school_id": "FL-18-0011"
+  },
+  "high": {
+   "name": "FLAGLER-PALM COAST HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 4.979,
+   "state_school_id": "FL-18-0091"
+  }
+ },
+ {
+  "id": "staug",
+  "district": "ST. JOHNS",
+  "population": 14329,
+  "elementary": {
+   "name": "KETTERLINUS ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.262,
+   "state_school_id": "FL-55-0091"
+  },
+  "middle": {
+   "name": "SEBASTIAN MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.038,
+   "state_school_id": "FL-55-0301"
+  },
+  "high": {
+   "name": "ST. AUGUSTINE HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.625,
+   "state_school_id": "FL-55-0181"
+  }
+ },
+ {
+  "id": "jaxbeach",
+  "district": "DUVAL",
+  "population": 23830,
+  "elementary": {
+   "name": "JACKSONVILLE BEACH ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.216,
+   "state_school_id": "FL-16-1441"
+  },
+  "middle": {
+   "name": "DUNCAN U. FLETCHER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.762,
+   "state_school_id": "FL-16-0631"
+  },
+  "high": {
+   "name": "DUNCAN U. FLETCHER HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.905,
+   "state_school_id": "FL-16-2231"
+  }
+ },
+ {
+  "id": "fernandina",
+  "district": "NASSAU",
+  "population": 13052,
+  "elementary": {
+   "name": "EMMA LOVE HARDEE ELEMENTARY",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.131,
+   "state_school_id": "FL-45-0081"
+  },
+  "middle": {
+   "name": "FERNANDINA BEACH MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.811,
+   "state_school_id": "FL-45-0031"
+  },
+  "high": {
+   "name": "FERNANDINA BEACH HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.569,
+   "state_school_id": "FL-45-0291"
+  }
+ },
+ {
+  "id": "carrabelle",
+  "district": "FRANKLIN",
+  "population": 2606,
+  "elementary": {
+   "name": "FRANKLIN COUNTY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 11.769,
+   "state_school_id": "FL-19-0091"
+  },
+  "middle": {
+   "name": "FRANKLIN COUNTY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 11.769,
+   "state_school_id": "FL-19-0091"
+  },
+  "high": {
+   "name": "FRANKLIN COUNTY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 11.769,
+   "state_school_id": "FL-19-0091"
+  }
+ },
+ {
+  "id": "st-george-island",
+  "district": "FRANKLIN",
+  "population": 990,
+  "elementary": {
+   "name": "FRANKLIN COUNTY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 8.609,
+   "state_school_id": "FL-19-0091"
+  },
+  "middle": {
+   "name": "FRANKLIN COUNTY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 8.609,
+   "state_school_id": "FL-19-0091"
+  },
+  "high": {
+   "name": "FRANKLIN COUNTY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 8.609,
+   "state_school_id": "FL-19-0091"
+  }
+ },
+ {
+  "id": "st-teresa",
+  "district": "WAKULLA",
+  "population": 2185,
+  "elementary": {
+   "name": "MEDART ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 7.241,
+   "state_school_id": "FL-65-0011"
+  },
+  "middle": {
+   "name": "WAKULLA MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 9.253,
+   "state_school_id": "FL-65-0081"
+  },
+  "high": {
+   "name": "WAKULLA HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 8.482,
+   "state_school_id": "FL-65-0071"
+  }
+ },
+ {
+  "id": "st-marks",
+  "district": "WAKULLA",
+  "population": 274,
+  "elementary": {
+   "name": "SHADEVILLE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 7.46,
+   "state_school_id": "FL-65-0091"
+  },
+  "middle": {
+   "name": "RIVERSPRINGS MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 7.565,
+   "state_school_id": "FL-65-0012"
+  },
+  "high": {
+   "name": "WAKULLA HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 10.664,
+   "state_school_id": "FL-65-0071"
+  }
+ },
+ {
+  "id": "panama-city",
+  "district": "BAY",
+  "population": 33264,
+  "elementary": {
+   "name": "NORTHSIDE ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.594,
+   "state_school_id": "FL-03-0471"
+  },
+  "middle": {
+   "name": "JINKS MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.705,
+   "state_school_id": "FL-03-0161"
+  },
+  "high": {
+   "name": "BAY HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.923,
+   "state_school_id": "FL-03-0061"
+  }
+ },
+ {
+  "id": "pensacola",
+  "district": "ESCAMBIA",
+  "population": 54312,
+  "elementary": {
+   "name": "O. J. SEMMES ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.443,
+   "state_school_id": "FL-17-0471"
+  },
+  "middle": {
+   "name": "J. H. WORKMAN MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.375,
+   "state_school_id": "FL-17-0601"
+  },
+  "high": {
+   "name": "PENSACOLA HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.92,
+   "state_school_id": "FL-17-0411"
+  }
+ },
+ {
+  "id": "pensacola-beach",
+  "district": "SANTA ROSA",
+  "population": 9241,
+  "elementary": {
+   "name": "GULF BREEZE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.894,
+   "state_school_id": "FL-57-0101"
+  },
+  "middle": {
+   "name": "GULF BREEZE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.805,
+   "state_school_id": "FL-57-0102"
+  },
+  "high": {
+   "name": "GULF BREEZE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.696,
+   "state_school_id": "FL-57-0103"
+  }
+ },
+ {
+  "id": "navarre-beach",
+  "district": "SANTA ROSA",
+  "population": 1123,
+  "elementary": {
+   "name": "HOLLEY-NAVARRE INTERMEDIATE",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.822,
+   "state_school_id": "FL-57-0271"
+  },
+  "middle": {
+   "name": "HOLLEY-NAVARRE MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.965,
+   "state_school_id": "FL-57-0272"
+  },
+  "high": {
+   "name": "NAVARRE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.515,
+   "state_school_id": "FL-57-0351"
+  }
+ },
+ {
+  "id": "perdido-key",
+  "district": "ESCAMBIA",
+  "population": 31215,
+  "elementary": {
+   "name": "PLEASANT GROVE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.93,
+   "state_school_id": "FL-17-0451"
+  },
+  "middle": {
+   "name": "JIM C. BAILEY MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 4.376,
+   "state_school_id": "FL-17-1221"
+  },
+  "high": {
+   "name": "ESCAMBIA HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 4.881,
+   "state_school_id": "FL-17-0281"
+  }
+ },
+ {
+  "id": "gulf-breeze",
+  "district": "SANTA ROSA",
+  "population": 6302,
+  "elementary": {
+   "name": "GULF BREEZE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.47,
+   "state_school_id": "FL-57-0101"
+  },
+  "middle": {
+   "name": "GULF BREEZE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.516,
+   "state_school_id": "FL-57-0102"
+  },
+  "high": {
+   "name": "GULF BREEZE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.616,
+   "state_school_id": "FL-57-0103"
+  }
+ },
+ {
+  "id": "port-st-joe",
+  "district": "GULF",
+  "population": 3357,
+  "elementary": {
+   "name": "PORT ST. JOE ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.039,
+   "state_school_id": "FL-23-0051"
+  },
+  "middle": {
+   "name": "PORT ST. JOE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.427,
+   "state_school_id": "FL-23-0061"
+  },
+  "high": {
+   "name": "PORT ST. JOE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.427,
+   "state_school_id": "FL-23-0061"
+  }
+ },
+ {
+  "id": "crystal-river",
+  "district": "CITRUS",
+  "population": 3551,
+  "elementary": {
+   "name": "CRYSTAL RIVER PRIMARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.78,
+   "state_school_id": "FL-09-0102"
+  },
+  "middle": {
+   "name": "CRYSTAL RIVER MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.383,
+   "state_school_id": "FL-09-0083"
+  },
+  "high": {
+   "name": "CRYSTAL RIVER HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.92,
+   "state_school_id": "FL-09-0121"
+  }
+ },
+ {
+  "id": "homosassa",
+  "district": "CITRUS",
+  "population": 2299,
+  "elementary": {
+   "name": "HOMOSASSA ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.313,
+   "state_school_id": "FL-09-0071"
+  },
+  "middle": {
+   "name": "LECANTO MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 7.509,
+   "state_school_id": "FL-09-0162"
+  },
+  "high": {
+   "name": "LECANTO HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 7.4,
+   "state_school_id": "FL-09-0163"
+  }
+ },
+ {
+  "id": "ozello",
+  "district": "CITRUS",
+  "population": 8837,
+  "elementary": {
+   "name": "CRYSTAL RIVER PRIMARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.607,
+   "state_school_id": "FL-09-0102"
+  },
+  "middle": {
+   "name": "CRYSTAL RIVER MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.961,
+   "state_school_id": "FL-09-0083"
+  },
+  "high": {
+   "name": "CRYSTAL RIVER HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.022,
+   "state_school_id": "FL-09-0121"
+  }
+ },
+ {
+  "id": "steinhatchee",
+  "district": "TAYLOR",
+  "population": 1233,
+  "elementary": {
+   "name": "STEINHATCHEE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.479,
+   "state_school_id": "FL-62-0111"
+  },
+  "middle": {
+   "name": "TAYLOR COUNTY MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 32.579,
+   "state_school_id": "FL-62-0031"
+  },
+  "high": {
+   "name": "TAYLOR COUNTY HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 32.865,
+   "state_school_id": "FL-62-0161"
+  }
+ },
+ {
+  "id": "apollo-beach",
+  "district": "HILLSBOROUGH",
+  "population": 26035,
+  "elementary": {
+   "name": "APOLLO BEACH K-8 SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.819,
+   "state_school_id": "FL-29-0141"
+  },
+  "middle": {
+   "name": "APOLLO BEACH K-8 SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.819,
+   "state_school_id": "FL-29-0141"
+  },
+  "high": {
+   "name": "EAST BAY HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.441,
+   "state_school_id": "FL-29-1322"
+  }
+ },
+ {
+  "id": "clearwater",
+  "district": "PINELLAS",
+  "population": 117400,
+  "elementary": {
+   "name": "SKYCREST ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.723,
+   "state_school_id": "FL-52-4121"
+  },
+  "middle": {
+   "name": "CLEARWATER FUNDAMENTAL MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.558,
+   "state_school_id": "FL-52-0731"
+  },
+  "high": {
+   "name": "CLEARWATER HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.2,
+   "state_school_id": "FL-52-0711"
+  }
+ },
+ {
+  "id": "indian-rocks-beach",
+  "district": "PINELLAS",
+  "population": 3673,
+  "elementary": {
+   "name": "ANONA ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.126,
+   "state_school_id": "FL-52-0051"
+  },
+  "middle": {
+   "name": "SEMINOLE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.43,
+   "state_school_id": "FL-52-3931"
+  },
+  "high": {
+   "name": "RICHARD O JACOBSON TECHNICAL HIGH SCHOOL AT SEMINOLE",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.554,
+   "state_school_id": "FL-52-3371"
+  }
+ },
+ {
+  "id": "madeira-beach",
+  "district": "PINELLAS",
+  "population": 3895,
+  "elementary": {
+   "name": "MADEIRA BEACH FUNDAMENTAL K-8",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.847,
+   "state_school_id": "FL-52-2261"
+  },
+  "middle": {
+   "name": "MADEIRA BEACH FUNDAMENTAL K-8",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.847,
+   "state_school_id": "FL-52-2261"
+  },
+  "high": {
+   "name": "SEMINOLE HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 3.978,
+   "state_school_id": "FL-52-3921"
+  }
+ },
+ {
+  "id": "new-port-richey",
+  "district": "PASCO",
+  "population": 16728,
+  "elementary": {
+   "name": "RICHEY ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.78,
+   "state_school_id": "FL-51-0271"
+  },
+  "middle": {
+   "name": "GULF MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.474,
+   "state_school_id": "FL-51-0261"
+  },
+  "high": {
+   "name": "GULF HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.888,
+   "state_school_id": "FL-51-0331"
+  }
+ },
+ {
+  "id": "ruskin",
+  "district": "HILLSBOROUGH",
+  "population": 28587,
+  "elementary": {
+   "name": "RUSKIN ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.451,
+   "state_school_id": "FL-29-3841"
+  },
+  "middle": {
+   "name": "SHIELDS MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 3.856,
+   "state_school_id": "FL-29-0055"
+  },
+  "high": {
+   "name": "LENNARD HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.397,
+   "state_school_id": "FL-29-0073"
+  }
+ },
+ {
+  "id": "safety-harbor",
+  "district": "PINELLAS",
+  "population": 17080,
+  "elementary": {
+   "name": "SAFETY HARBOR ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.987,
+   "state_school_id": "FL-52-3731"
+  },
+  "middle": {
+   "name": "SAFETY HARBOR MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.756,
+   "state_school_id": "FL-52-3741"
+  },
+  "high": {
+   "name": "COUNTRYSIDE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.372,
+   "state_school_id": "FL-52-0751"
+  }
+ },
+ {
+  "id": "st-pete-beach",
+  "district": "PINELLAS",
+  "population": 8879,
+  "elementary": {
+   "name": "GULF BEACHES ELEMENTARY MAGNET SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.712,
+   "state_school_id": "FL-52-6311"
+  },
+  "middle": {
+   "name": "THURGOOD MARSHALL FUNDAMENTAL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.777,
+   "state_school_id": "FL-52-4631"
+  },
+  "high": {
+   "name": "BOCA CIEGA HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 3.025,
+   "state_school_id": "FL-52-0431"
+  }
+ },
+ {
+  "id": "st-petersburg",
+  "district": "PINELLAS",
+  "population": 258305,
+  "elementary": {
+   "name": "WOODLAWN ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.559,
+   "state_school_id": "FL-52-4931"
+  },
+  "middle": {
+   "name": "JOHN HOPKINS MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.734,
+   "state_school_id": "FL-52-4061"
+  },
+  "high": {
+   "name": "ST. PETERSBURG HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.643,
+   "state_school_id": "FL-52-3781"
+  }
+ },
+ {
+  "id": "sun-city-center",
+  "district": "HILLSBOROUGH",
+  "population": 30952,
+  "elementary": {
+   "name": "CYPRESS CREEK ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.544,
+   "state_school_id": "FL-29-1051"
+  },
+  "middle": {
+   "name": "SHIELDS MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.589,
+   "state_school_id": "FL-29-0055"
+  },
+  "high": {
+   "name": "LENNARD HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.832,
+   "state_school_id": "FL-29-0073"
+  }
+ },
+ {
+  "id": "tampa",
+  "district": "HILLSBOROUGH",
+  "population": 385257,
+  "elementary": {
+   "name": "EDISON ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.7,
+   "state_school_id": "FL-29-1361"
+  },
+  "middle": {
+   "name": "MEMORIAL MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.331,
+   "state_school_id": "FL-29-2882"
+  },
+  "high": {
+   "name": "HILLSBOROUGH HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.224,
+   "state_school_id": "FL-29-1881"
+  }
+ },
+ {
+  "id": "tarpon-springs",
+  "district": "PINELLAS",
+  "population": 25217,
+  "elementary": {
+   "name": "TARPON SPRINGS ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.702,
+   "state_school_id": "FL-52-4491"
+  },
+  "middle": {
+   "name": "TARPON SPRINGS MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.331,
+   "state_school_id": "FL-52-4581"
+  },
+  "high": {
+   "name": "TARPON SPRINGS HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.22,
+   "state_school_id": "FL-52-4521"
+  }
+ },
+ {
+  "id": "treasure-island",
+  "district": "PINELLAS",
+  "population": 6584,
+  "elementary": {
+   "name": "GULF BEACHES ELEMENTARY MAGNET SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.567,
+   "state_school_id": "FL-52-6311"
+  },
+  "middle": {
+   "name": "AZALEA MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.046,
+   "state_school_id": "FL-52-0121"
+  },
+  "high": {
+   "name": "BOCA CIEGA HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 3.501,
+   "state_school_id": "FL-52-0431"
+  }
+ },
+ {
+  "id": "bradenton",
+  "district": "MANATEE",
+  "population": 55695,
+  "elementary": {
+   "name": "BALLARD ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.469,
+   "state_school_id": "FL-41-0051"
+  },
+  "middle": {
+   "name": "LOUISE R JOHNSON K-8 SCHOOL OF INTERNATIONAL STUDIES",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.425,
+   "state_school_id": "FL-41-0691"
+  },
+  "high": {
+   "name": "MANATEE HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.211,
+   "state_school_id": "FL-41-0181"
+  }
+ },
+ {
+  "id": "bradenton-beach",
+  "district": "MANATEE",
+  "population": 908,
+  "elementary": {
+   "name": "ANNA MARIA ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.126,
+   "state_school_id": "FL-41-0031"
+  },
+  "middle": {
+   "name": "MARTHA B. KING MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 4.379,
+   "state_school_id": "FL-41-0611"
+  },
+  "high": {
+   "name": "MANATEE HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 6.588,
+   "state_school_id": "FL-41-0181"
+  }
+ },
+ {
+  "id": "cortez",
+  "district": "MANATEE",
+  "population": 4121,
+  "elementary": {
+   "name": "SEA BREEZE ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.154,
+   "state_school_id": "FL-41-0671"
+  },
+  "middle": {
+   "name": "W. D. SUGG MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 3.021,
+   "state_school_id": "FL-41-0581"
+  },
+  "high": {
+   "name": "BAYSHORE HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 4.649,
+   "state_school_id": "FL-41-0072"
+  }
+ },
+ {
+  "id": "englewood",
+  "district": "SARASOTA",
+  "population": 20800,
+  "elementary": {
+   "name": "ENGLEWOOD ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.44,
+   "state_school_id": "FL-58-0121"
+  },
+  "middle": {
+   "name": "L. A. AINGER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 5.612,
+   "state_school_id": "FL-08-0181"
+  },
+  "high": {
+   "name": "WELLEN PARK HIGH SCHOOL",
+   "grade": null,
+   "method": "zone",
+   "distance_mi": null,
+   "state_school_id": null
+  }
+ },
+ {
+  "id": "sarasota",
+  "district": "SARASOTA",
+  "population": 54842,
+  "elementary": {
+   "name": "TUTTLE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.117,
+   "state_school_id": "FL-58-0201"
+  },
+  "middle": {
+   "name": "BOOKER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.953,
+   "state_school_id": "FL-58-0084"
+  },
+  "high": {
+   "name": "BOOKER HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 1.841,
+   "state_school_id": "FL-58-0085"
+  }
+ },
+ {
+  "id": "siesta-key",
+  "district": "SARASOTA",
+  "population": 5454,
+  "elementary": {
+   "name": "PHILLIPPI SHORES ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.683,
+   "state_school_id": "FL-58-0171"
+  },
+  "middle": {
+   "name": "SARASOTA MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 4.986,
+   "state_school_id": "FL-58-0031"
+  },
+  "high": {
+   "name": "SARASOTA HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 3.825,
+   "state_school_id": "FL-58-0051"
+  }
+ },
+ {
+  "id": "venice",
+  "district": "SARASOTA",
+  "population": 25488,
+  "elementary": {
+   "name": "GARDEN ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.648,
+   "state_school_id": "FL-58-0381"
+  },
+  "middle": {
+   "name": "VENICE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 4.851,
+   "state_school_id": "FL-58-0451"
+  },
+  "high": {
+   "name": "VENICE SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.5,
+   "state_school_id": "FL-58-0221"
+  }
+ },
+ {
+  "id": "bonita-springs",
+  "district": "LEE",
+  "population": 53644,
+  "elementary": {
+   "name": "BONITA SPRINGS ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.77,
+   "state_school_id": "FL-36-0121"
+  },
+  "middle": {
+   "name": "BONITA SPRINGS MIDDLE CENTER FOR THE ARTS",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.542,
+   "state_school_id": "FL-36-0611"
+  },
+  "high": {
+   "name": "BONITA SPRINGS HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.22,
+   "state_school_id": "FL-36-0841"
+  }
+ },
+ {
+  "id": "cape-coral",
+  "district": "LEE",
+  "population": 194085,
+  "elementary": {
+   "name": "PATRIOT ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.881,
+   "state_school_id": "FL-36-0461"
+  },
+  "middle": {
+   "name": "CHALLENGER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.806,
+   "state_school_id": "FL-36-0133"
+  },
+  "high": {
+   "name": "CAPE CORAL HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.266,
+   "state_school_id": "FL-36-0621"
+  }
+ },
+ {
+  "id": "chokoloskee",
+  "district": "COLLIER",
+  "population": 346,
+  "elementary": {
+   "name": "EVERGLADES CITY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 3.802,
+   "state_school_id": "FL-11-0051"
+  },
+  "middle": {
+   "name": "EVERGLADES CITY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 3.802,
+   "state_school_id": "FL-11-0051"
+  },
+  "high": {
+   "name": "EVERGLADES CITY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 3.802,
+   "state_school_id": "FL-11-0051"
+  }
+ },
+ {
+  "id": "everglades-city",
+  "district": "COLLIER",
+  "population": 352,
+  "elementary": {
+   "name": "EVERGLADES CITY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.519,
+   "state_school_id": "FL-11-0051"
+  },
+  "middle": {
+   "name": "EVERGLADES CITY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.519,
+   "state_school_id": "FL-11-0051"
+  },
+  "high": {
+   "name": "EVERGLADES CITY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.519,
+   "state_school_id": "FL-11-0051"
+  }
+ },
+ {
+  "id": "fort-myers",
+  "district": "LEE",
+  "population": 86428,
+  "elementary": {
+   "name": "COLONIAL ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.744,
+   "state_school_id": "FL-36-0781"
+  },
+  "middle": {
+   "name": "PAUL LAURENCE DUNBAR MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.632,
+   "state_school_id": "FL-36-0161"
+  },
+  "high": {
+   "name": "DUNBAR HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.186,
+   "state_school_id": "FL-36-0831"
+  }
+ },
+ {
+  "id": "fort-myers-beach",
+  "district": "LEE",
+  "population": 5582,
+  "elementary": {
+   "name": "FORT MYERS BEACH ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.974,
+   "state_school_id": "FL-36-0201"
+  },
+  "middle": {
+   "name": "LEXINGTON MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 4.714,
+   "state_school_id": "FL-36-0351"
+  },
+  "high": {
+   "name": "ESTERO HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 7.389,
+   "state_school_id": "FL-36-0731"
+  }
+ },
+ {
+  "id": "marco-island",
+  "district": "COLLIER",
+  "population": 15760,
+  "elementary": {
+   "name": "TOMMIE BARFIELD ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.342,
+   "state_school_id": "FL-11-0131"
+  },
+  "middle": {
+   "name": "MANATEE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 7.814,
+   "state_school_id": "FL-11-0422"
+  },
+  "high": {
+   "name": "LELY HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 10.291,
+   "state_school_id": "FL-11-0261"
+  }
+ },
+ {
+  "id": "port-charlotte",
+  "district": "CHARLOTTE",
+  "population": 60625,
+  "elementary": {
+   "name": "NEIL ARMSTRONG ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.307,
+   "state_school_id": "FL-08-0111"
+  },
+  "middle": {
+   "name": "PORT CHARLOTTE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.86,
+   "state_school_id": "FL-08-0131"
+  },
+  "high": {
+   "name": "PORT CHARLOTTE HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.843,
+   "state_school_id": "FL-08-0151"
+  }
+ },
+ {
+  "id": "punta-gorda",
+  "district": "CHARLOTTE",
+  "population": 19639,
+  "elementary": {
+   "name": "SALLIE JONES ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.593,
+   "state_school_id": "FL-08-0021"
+  },
+  "middle": {
+   "name": "PUNTA GORDA MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.895,
+   "state_school_id": "FL-08-0121"
+  },
+  "high": {
+   "name": "CHARLOTTE HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.696,
+   "state_school_id": "FL-08-0031"
+  }
+ },
+ {
+  "id": "sanibel-island",
+  "district": "LEE",
+  "population": 6382,
+  "elementary": {
+   "name": "THE SANIBEL SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.213,
+   "state_school_id": "FL-36-0361"
+  },
+  "middle": {
+   "name": "THE SANIBEL SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.213,
+   "state_school_id": "FL-36-0361"
+  },
+  "high": {
+   "name": "IDA S. BAKER HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 10.448,
+   "state_school_id": "FL-36-0861"
+  }
+ },
+ {
+  "id": "key-largo",
+  "district": "MONROE",
+  "population": 12447,
+  "elementary": {
+   "name": "KEY LARGO SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 3.587,
+   "state_school_id": "FL-44-0291"
+  },
+  "middle": {
+   "name": "KEY LARGO SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 3.587,
+   "state_school_id": "FL-44-0291"
+  },
+  "high": {
+   "name": "CORAL SHORES HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 10.783,
+   "state_school_id": "FL-44-0041"
+  }
+ },
+ {
+  "id": "bal-harbour",
+  "district": "MIAMI-DADE",
+  "population": 3093,
+  "elementary": {
+   "name": "RUTH K. BROAD BAY HARBOR K-8 CENTER",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.821,
+   "state_school_id": "FL-13-0241"
+  },
+  "middle": {
+   "name": "MIAMI BEACH NAUTILUS MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 5.481,
+   "state_school_id": "FL-13-6541"
+  },
+  "high": {
+   "name": "MIAMI BEACH SENIOR HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 6.564,
+   "state_school_id": "FL-13-7201"
+  }
+ },
+ {
+  "id": "boca-raton",
+  "district": "PALM BEACH",
+  "population": 97422,
+  "elementary": {
+   "name": "J. C. MITCHELL ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.791,
+   "state_school_id": "FL-50-0931"
+  },
+  "middle": {
+   "name": "BOCA RATON COMMUNITY MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.877,
+   "state_school_id": "FL-50-1491"
+  },
+  "high": {
+   "name": "BOCA RATON COMMUNITY HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.881,
+   "state_school_id": "FL-50-0961"
+  }
+ },
+ {
+  "id": "dania-beach",
+  "district": "BROWARD",
+  "population": 31762,
+  "elementary": {
+   "name": "COLLINS ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.925,
+   "state_school_id": "FL-06-0331"
+  },
+  "middle": {
+   "name": "ATTUCKS MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.982,
+   "state_school_id": "FL-06-0343"
+  },
+  "high": {
+   "name": "HOLLYWOOD HILLS HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 2.094,
+   "state_school_id": "FL-06-1661"
+  }
+ },
+ {
+  "id": "hallandale",
+  "district": "BROWARD",
+  "population": 41217,
+  "elementary": {
+   "name": "GULFSTREAM ACADEMY OF HALLANDALE BEACH",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.562,
+   "state_school_id": "FL-06-0131"
+  },
+  "middle": {
+   "name": "GULFSTREAM ACADEMY OF HALLANDALE BEACH",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.562,
+   "state_school_id": "FL-06-0131"
+  },
+  "high": {
+   "name": "HALLANDALE HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.554,
+   "state_school_id": "FL-06-0403"
+  }
+ },
+ {
+  "id": "highland-beach",
+  "district": "PALM BEACH",
+  "population": 4295,
+  "elementary": {
+   "name": "J. C. MITCHELL ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 2.929,
+   "state_school_id": "FL-50-0931"
+  },
+  "middle": {
+   "name": "BOCA RATON COMMUNITY MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 4.473,
+   "state_school_id": "FL-50-1491"
+  },
+  "high": {
+   "name": "BOCA RATON COMMUNITY HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 4.425,
+   "state_school_id": "FL-50-0961"
+  }
+ },
+ {
+  "id": "hollywood",
+  "district": "BROWARD",
+  "population": 153028,
+  "elementary": {
+   "name": "HOLLYWOOD HILLS ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.475,
+   "state_school_id": "FL-06-0111"
+  },
+  "middle": {
+   "name": "OLSEN MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 2.828,
+   "state_school_id": "FL-06-0471"
+  },
+  "high": {
+   "name": "SOUTH BROWARD HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 2.397,
+   "state_school_id": "FL-06-0171"
+  }
+ },
+ {
+  "id": "lauderdale-by-the-sea",
+  "district": "BROWARD",
+  "population": 6198,
+  "elementary": {
+   "name": "MCNAB ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.235,
+   "state_school_id": "FL-06-0841"
+  },
+  "middle": {
+   "name": "POMPANO BEACH MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 2.874,
+   "state_school_id": "FL-06-0021"
+  },
+  "high": {
+   "name": "NORTHEAST HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 2.54,
+   "state_school_id": "FL-06-1241"
+  }
+ },
+ {
+  "id": "lighthouse-point",
+  "district": "BROWARD",
+  "population": 10486,
+  "elementary": {
+   "name": "NORCREST ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.716,
+   "state_school_id": "FL-06-0561"
+  },
+  "middle": {
+   "name": "DEERFIELD BEACH MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 2.129,
+   "state_school_id": "FL-06-0911"
+  },
+  "high": {
+   "name": "DEERFIELD BEACH HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 2.039,
+   "state_school_id": "FL-06-1711"
+  }
+ },
+ {
+  "id": "north-miami-beach",
+  "district": "MIAMI-DADE",
+  "population": 43676,
+  "elementary": {
+   "name": "FULFORD ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.458,
+   "state_school_id": "FL-13-2081"
+  },
+  "middle": {
+   "name": "JOHN F. KENNEDY MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.822,
+   "state_school_id": "FL-13-6301"
+  },
+  "high": {
+   "name": "NORTH MIAMI BEACH SENIOR HIGH",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.618,
+   "state_school_id": "FL-13-7541"
+  }
+ },
+ {
+  "id": "north-palm-beach",
+  "district": "PALM BEACH",
+  "population": 13162,
+  "elementary": {
+   "name": "THE CONSERVATORY SCHOOL AT NORTH PALM BEACH",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.854,
+   "state_school_id": "FL-50-0131"
+  },
+  "middle": {
+   "name": "HOWELL L. WATKINS MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.482,
+   "state_school_id": "FL-50-0121"
+  },
+  "high": {
+   "name": "PALM BEACH GARDENS HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 2.28,
+   "state_school_id": "FL-50-1371"
+  }
+ },
+ {
+  "id": "palm-beach",
+  "district": "PALM BEACH",
+  "population": 9245,
+  "elementary": {
+   "name": "PALM BEACH PUBLIC SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.385,
+   "state_school_id": "FL-50-0421"
+  },
+  "middle": {
+   "name": "CONNISTON MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 1.54,
+   "state_school_id": "FL-50-0541"
+  },
+  "high": {
+   "name": "FOREST HILL COMMUNITY HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.788,
+   "state_school_id": "FL-50-0581"
+  }
+ },
+ {
+  "id": "palm-beach-gardens",
+  "district": "PALM BEACH",
+  "population": 59222,
+  "elementary": {
+   "name": "TIMBER TRACE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.747,
+   "state_school_id": "FL-50-2011"
+  },
+  "middle": {
+   "name": "WATSON B. DUNCAN MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.675,
+   "state_school_id": "FL-50-1971"
+  },
+  "high": {
+   "name": "PALM BEACH GARDENS HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.177,
+   "state_school_id": "FL-50-1371"
+  }
+ },
+ {
+  "id": "riviera-beach",
+  "district": "PALM BEACH",
+  "population": 37604,
+  "elementary": {
+   "name": "DR. MARY MCLEOD BETHUNE ELEMENTARY",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.72,
+   "state_school_id": "FL-50-2491"
+  },
+  "middle": {
+   "name": "JOHN F. KENNEDY MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.525,
+   "state_school_id": "FL-50-0201"
+  },
+  "high": {
+   "name": "PALM BEACH GARDENS HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 3.283,
+   "state_school_id": "FL-50-1371"
+  }
+ },
+ {
+  "id": "sunny-isles-beach",
+  "district": "MIAMI-DADE",
+  "population": 22342,
+  "elementary": {
+   "name": "NORMAN S. EDELCUP/SUNNY ISLES BEACH K-8",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.63,
+   "state_school_id": "FL-13-0092"
+  },
+  "middle": {
+   "name": "HIGHLAND OAKS MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.69,
+   "state_school_id": "FL-13-6241"
+  },
+  "high": {
+   "name": "ALONZO & TRACY MOURNING SENIOR HIGH BISCAYNE BAY CAMPUS",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.952,
+   "state_school_id": "FL-13-7048"
+  }
+ },
+ {
+  "id": "west-palm-beach",
+  "district": "PALM BEACH",
+  "population": 117415,
+  "elementary": {
+   "name": "ROOSEVELT ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.421,
+   "state_school_id": "FL-50-0341"
+  },
+  "middle": {
+   "name": "BEAR LAKES MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.509,
+   "state_school_id": "FL-50-1981"
+  },
+  "high": {
+   "name": "PALM BEACH LAKES HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 2.631,
+   "state_school_id": "FL-50-1851"
+  }
+ },
+ {
+  "id": "wilton-manors",
+  "district": "BROWARD",
+  "population": 11426,
+  "elementary": {
+   "name": "WILTON MANORS ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.243,
+   "state_school_id": "FL-06-0191"
+  },
+  "middle": {
+   "name": "SUNRISE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.453,
+   "state_school_id": "FL-06-0251"
+  },
+  "high": {
+   "name": "FORT LAUDERDALE HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.711,
+   "state_school_id": "FL-06-0951"
+  }
+ },
+ {
+  "id": "jensen-beach",
+  "district": "MARTIN",
+  "population": 12652,
+  "elementary": {
+   "name": "JENSEN BEACH ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.308,
+   "state_school_id": "FL-43-0211"
+  },
+  "middle": {
+   "name": "STUART MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.892,
+   "state_school_id": "FL-43-0021"
+  },
+  "high": {
+   "name": "JENSEN BEACH HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.767,
+   "state_school_id": "FL-43-0351"
+  }
+ },
+ {
+  "id": "port-st-lucie",
+  "district": "ST. LUCIE",
+  "population": 204851,
+  "elementary": {
+   "name": "BAYSHORE ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.692,
+   "state_school_id": "FL-56-0251"
+  },
+  "middle": {
+   "name": "ST. LUCIE WEST K-8 SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.313,
+   "state_school_id": "FL-56-0131"
+  },
+  "high": {
+   "name": "ST. LUCIE WEST CENTENNIAL HIGH",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.564,
+   "state_school_id": "FL-56-0401"
+  }
+ },
+ {
+  "id": "sebastian",
+  "district": "INDIAN RIVER",
+  "population": 25065,
+  "elementary": {
+   "name": "SEBASTIAN ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.635,
+   "state_school_id": "FL-31-0191"
+  },
+  "middle": {
+   "name": "SEBASTIAN RIVER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.296,
+   "state_school_id": "FL-31-0171"
+  },
+  "high": {
+   "name": "SEBASTIAN RIVER HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.469,
+   "state_school_id": "FL-31-0291"
+  }
+ },
+ {
+  "id": "stuart",
+  "district": "MARTIN",
+  "population": 17435,
+  "elementary": {
+   "name": "J. D. PARKER SCHOOL OF TECHNOLOGY",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.377,
+   "state_school_id": "FL-43-0051"
+  },
+  "middle": {
+   "name": "STUART MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.444,
+   "state_school_id": "FL-43-0021"
+  },
+  "high": {
+   "name": "MARTIN COUNTY HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.542,
+   "state_school_id": "FL-43-0031"
+  }
+ },
+ {
+  "id": "vero-beach",
+  "district": "INDIAN RIVER",
+  "population": 16354,
+  "elementary": {
+   "name": "VERO BEACH ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.383,
+   "state_school_id": "FL-31-0161"
+  },
+  "middle": {
+   "name": "GIFFORD MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.849,
+   "state_school_id": "FL-31-0081"
+  },
+  "high": {
+   "name": "VERO BEACH HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.092,
+   "state_school_id": "FL-31-0031"
+  }
+ },
+ {
+  "id": "indialantic",
+  "district": "BREVARD",
+  "population": 3010,
+  "elementary": {
+   "name": "INDIALANTIC ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.97,
+   "state_school_id": "FL-05-6081"
+  },
+  "middle": {
+   "name": "HERBERT C. HOOVER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.065,
+   "state_school_id": "FL-05-6082"
+  },
+  "high": {
+   "name": "MELBOURNE SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 3.09,
+   "state_school_id": "FL-05-2011"
+  }
+ },
+ {
+  "id": "melbourne-beach",
+  "district": "BREVARD",
+  "population": 3231,
+  "elementary": {
+   "name": "GEMINI ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.92,
+   "state_school_id": "FL-05-6101"
+  },
+  "middle": {
+   "name": "HERBERT C. HOOVER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.549,
+   "state_school_id": "FL-05-6082"
+  },
+  "high": {
+   "name": "MELBOURNE SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 3.944,
+   "state_school_id": "FL-05-2011"
+  }
+ },
+ {
+  "id": "palm-bay",
+  "district": "BREVARD",
+  "population": 119760,
+  "elementary": {
+   "name": "JOHN F. TURNER, SENIOR ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.509,
+   "state_school_id": "FL-05-2121"
+  },
+  "middle": {
+   "name": "SOUTHWEST MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.405,
+   "state_school_id": "FL-05-2122"
+  },
+  "high": {
+   "name": "BAYSIDE HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 3.261,
+   "state_school_id": "FL-05-2211"
+  }
+ },
+ {
+  "id": "satellite-beach",
+  "district": "BREVARD",
+  "population": 11226,
+  "elementary": {
+   "name": "SURFSIDE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.392,
+   "state_school_id": "FL-05-6061"
+  },
+  "middle": {
+   "name": "DELAURA MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.583,
+   "state_school_id": "FL-05-6012"
+  },
+  "high": {
+   "name": "SATELLITE SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.74,
+   "state_school_id": "FL-05-6011"
+  }
+ },
+ {
+  "id": "titusville",
+  "district": "BREVARD",
+  "population": 48789,
+  "elementary": {
+   "name": "APOLLO ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.255,
+   "state_school_id": "FL-05-0061"
+  },
+  "middle": {
+   "name": "ANDREW JACKSON MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.277,
+   "state_school_id": "FL-05-0141"
+  },
+  "high": {
+   "name": "TITUSVILLE HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 1.196,
+   "state_school_id": "FL-05-0011"
+  }
+ },
+ {
+  "id": "west-melbourne",
+  "district": "BREVARD",
+  "population": 25933,
+  "elementary": {
+   "name": "MEADOWLANE INTERMEDIATE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.32,
+   "state_school_id": "FL-05-2031"
+  },
+  "middle": {
+   "name": "CENTRAL MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.293,
+   "state_school_id": "FL-05-3021"
+  },
+  "high": {
+   "name": "MELBOURNE SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 3.253,
+   "state_school_id": "FL-05-2011"
+  }
+ },
+ {
+  "id": "atlantic-beach",
+  "district": "DUVAL",
+  "population": 13513,
+  "elementary": {
+   "name": "ATLANTIC BEACH ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.82,
+   "state_school_id": "FL-16-0651"
+  },
+  "middle": {
+   "name": "MAYPORT COASTAL SCIENCE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.757,
+   "state_school_id": "FL-16-2541"
+  },
+  "high": {
+   "name": "DUNCAN U. FLETCHER HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.031,
+   "state_school_id": "FL-16-2231"
+  }
+ },
+ {
+  "id": "neptune-beach",
+  "district": "DUVAL",
+  "population": 7217,
+  "elementary": {
+   "name": "NEPTUNE BEACH ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.501,
+   "state_school_id": "FL-16-2461"
+  },
+  "middle": {
+   "name": "DUNCAN U. FLETCHER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.813,
+   "state_school_id": "FL-16-0631"
+  },
+  "high": {
+   "name": "DUNCAN U. FLETCHER HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.543,
+   "state_school_id": "FL-16-2231"
+  }
+ },
+ {
+  "id": "ponte-vedra-beach",
+  "district": "ST. JOHNS",
+  "population": 31861,
+  "elementary": {
+   "name": "PONTE VEDRA PALM VALLEY- RAWLINGS ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.435,
+   "state_school_id": "FL-55-0351"
+  },
+  "middle": {
+   "name": "ALICE B. LANDRUM MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.127,
+   "state_school_id": "FL-55-0311"
+  },
+  "high": {
+   "name": "PONTE VEDRA HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 5.536,
+   "state_school_id": "FL-55-0492"
+  }
+ },
+ {
+  "id": "st-augustine-beach",
+  "district": "ST. JOHNS",
+  "population": 6803,
+  "elementary": {
+   "name": "R. B. HUNT ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.962,
+   "state_school_id": "FL-55-0161"
+  },
+  "middle": {
+   "name": "SEBASTIAN MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 6.381,
+   "state_school_id": "FL-55-0301"
+  },
+  "high": {
+   "name": "ST. AUGUSTINE HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 6.966,
+   "state_school_id": "FL-55-0181"
+  }
+ },
+ {
+  "id": "daytona-beach-shores",
+  "district": "VOLUSIA",
+  "population": 5008,
+  "elementary": {
+   "name": "R. J. LONGSTREET ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.678,
+   "state_school_id": "FL-64-3234"
+  },
+  "middle": {
+   "name": "SILVER SANDS MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 3.446,
+   "state_school_id": "FL-64-3431"
+  },
+  "high": {
+   "name": "ATLANTIC HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.248,
+   "state_school_id": "FL-64-4941"
+  }
+ },
+ {
+  "id": "ormond-beach",
+  "district": "VOLUSIA",
+  "population": 43133,
+  "elementary": {
+   "name": "TOMOKA ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.495,
+   "state_school_id": "FL-64-0734"
+  },
+  "middle": {
+   "name": "ORMOND BEACH MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.049,
+   "state_school_id": "FL-64-4235"
+  },
+  "high": {
+   "name": "SEABREEZE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.671,
+   "state_school_id": "FL-64-5836"
+  }
+ },
+ {
+  "id": "palm-coast",
+  "district": "FLAGLER",
+  "population": 89283,
+  "elementary": {
+   "name": "LEWIS E. WADSWORTH ELEMENTARY",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.092,
+   "state_school_id": "FL-18-0131"
+  },
+  "middle": {
+   "name": "BUDDY TAYLOR MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.261,
+   "state_school_id": "FL-18-0011"
+  },
+  "high": {
+   "name": "FLAGLER-PALM COAST HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.965,
+   "state_school_id": "FL-18-0091"
+  }
+ },
+ {
+  "id": "port-orange",
+  "district": "VOLUSIA",
+  "population": 62608,
+  "elementary": {
+   "name": "SWEETWATER ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.214,
+   "state_school_id": "FL-64-4951"
+  },
+  "middle": {
+   "name": "SILVER SANDS MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.291,
+   "state_school_id": "FL-64-3431"
+  },
+  "high": {
+   "name": "SPRUCE CREEK HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.316,
+   "state_school_id": "FL-64-4436"
+  }
+ },
+ {
+  "id": "navarre",
+  "district": "SANTA ROSA",
+  "population": 40817,
+  "elementary": {
+   "name": "HOLLEY-NAVARRE INTERMEDIATE",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.994,
+   "state_school_id": "FL-57-0271"
+  },
+  "middle": {
+   "name": "HOLLEY-NAVARRE MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.873,
+   "state_school_id": "FL-57-0272"
+  },
+  "high": {
+   "name": "NAVARRE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.441,
+   "state_school_id": "FL-57-0351"
+  }
+ },
+ {
+  "id": "mary-esther",
+  "district": "OKALOOSA",
+  "population": 3982,
+  "elementary": {
+   "name": "MARY ESTHER ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.188,
+   "state_school_id": "FL-46-0561"
+  },
+  "middle": {
+   "name": "MAX BRUNER JUNIOR MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.499,
+   "state_school_id": "FL-46-0651"
+  },
+  "high": {
+   "name": "FORT WALTON BEACH HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.074,
+   "state_school_id": "FL-46-0641"
+  }
+ },
+ {
+  "id": "fort-walton-beach",
+  "district": "OKALOOSA",
+  "population": 20922,
+  "elementary": {
+   "name": "ELLIOTT POINT ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.249,
+   "state_school_id": "FL-46-0541"
+  },
+  "middle": {
+   "name": "MAX BRUNER JUNIOR MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.94,
+   "state_school_id": "FL-46-0651"
+  },
+  "high": {
+   "name": "FORT WALTON BEACH HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.473,
+   "state_school_id": "FL-46-0641"
+  }
+ },
+ {
+  "id": "shalimar",
+  "district": "OKALOOSA",
+  "population": 737,
+  "elementary": {
+   "name": "SHALIMAR ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.688,
+   "state_school_id": "FL-46-0431"
+  },
+  "middle": {
+   "name": "CLIFFORD MEIGS MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.307,
+   "state_school_id": "FL-46-0082"
+  },
+  "high": {
+   "name": "CHOCTAWHATCHEE SENIOR HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.144,
+   "state_school_id": "FL-46-0581"
+  }
+ },
+ {
+  "id": "niceville",
+  "district": "OKALOOSA",
+  "population": 15804,
+  "elementary": {
+   "name": "JAMES E PLEW ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.429,
+   "state_school_id": "FL-46-0571"
+  },
+  "middle": {
+   "name": "C. W. RUCKEL MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.647,
+   "state_school_id": "FL-46-0121"
+  },
+  "high": {
+   "name": "NICEVILLE SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.591,
+   "state_school_id": "FL-46-0211"
+  }
+ },
+ {
+  "id": "miramar-beach",
+  "district": "WALTON",
+  "population": 8002,
+  "elementary": {
+   "name": "VAN R. BUTLER ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 5.506,
+   "state_school_id": "FL-66-0151"
+  },
+  "middle": {
+   "name": "FREEPORT MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 13.559,
+   "state_school_id": "FL-66-0146"
+  },
+  "high": {
+   "name": "SOUTH WALTON HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 10.113,
+   "state_school_id": "FL-66-0153"
+  }
+ },
+ {
+  "id": "freeport",
+  "district": "WALTON",
+  "population": 6103,
+  "elementary": {
+   "name": "FREEPORT MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.525,
+   "state_school_id": "FL-66-0146"
+  },
+  "middle": {
+   "name": "FREEPORT MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.525,
+   "state_school_id": "FL-66-0146"
+  },
+  "high": {
+   "name": "FREEPORT SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.982,
+   "state_school_id": "FL-66-0141"
+  }
+ },
+ {
+  "id": "mexico-beach",
+  "district": "BAY",
+  "population": 916,
+  "elementary": {
+   "name": "TYNDALL ACADEMY",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 15.816,
+   "state_school_id": "FL-03-0501"
+  },
+  "middle": {
+   "name": "RUTHERFORD HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 20.063,
+   "state_school_id": "FL-03-0341"
+  },
+  "high": {
+   "name": "RUTHERFORD HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 20.063,
+   "state_school_id": "FL-03-0341"
+  }
+ },
+ {
+  "id": "keaton-beach",
+  "district": "TAYLOR",
+  "population": 11782,
+  "elementary": {
+   "name": "TAYLOR COUNTY ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 6.52,
+   "state_school_id": "FL-62-0041"
+  },
+  "middle": {
+   "name": "TAYLOR COUNTY MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 6.416,
+   "state_school_id": "FL-62-0031"
+  },
+  "high": {
+   "name": "TAYLOR COUNTY HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 6.712,
+   "state_school_id": "FL-62-0161"
+  }
+ },
+ {
+  "id": "horseshoe-beach",
+  "district": "DIXIE",
+  "population": 165,
+  "elementary": {
+   "name": "OLD TOWN ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 21.336,
+   "state_school_id": "FL-15-0041"
+  },
+  "middle": {
+   "name": "DIXIE COUNTY MIDDLE HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 16.405,
+   "state_school_id": "FL-15-0021"
+  },
+  "high": {
+   "name": "DIXIE COUNTY MIDDLE HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 16.405,
+   "state_school_id": "FL-15-0021"
+  }
+ },
+ {
+  "id": "suwannee",
+  "district": "DIXIE",
+  "population": 197,
+  "elementary": {
+   "name": "OLD TOWN ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 20.828,
+   "state_school_id": "FL-15-0041"
+  },
+  "middle": {
+   "name": "DIXIE COUNTY MIDDLE HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 20.29,
+   "state_school_id": "FL-15-0021"
+  },
+  "high": {
+   "name": "DIXIE COUNTY MIDDLE HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 20.29,
+   "state_school_id": "FL-15-0021"
+  }
+ },
+ {
+  "id": "yankeetown",
+  "district": "LEVY",
+  "population": 588,
+  "elementary": {
+   "name": "YANKEETOWN SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.565,
+   "state_school_id": "FL-38-0111"
+  },
+  "middle": {
+   "name": "YANKEETOWN SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.565,
+   "state_school_id": "FL-38-0111"
+  },
+  "high": {
+   "name": "CEDAR KEY HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 20.999,
+   "state_school_id": "FL-38-0041"
+  }
+ },
+ {
+  "id": "inglis",
+  "district": "LEVY",
+  "population": 1476,
+  "elementary": {
+   "name": "YANKEETOWN SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.685,
+   "state_school_id": "FL-38-0111"
+  },
+  "middle": {
+   "name": "YANKEETOWN SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.685,
+   "state_school_id": "FL-38-0111"
+  },
+  "high": {
+   "name": "CEDAR KEY HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 23.937,
+   "state_school_id": "FL-38-0041"
+  }
+ },
+ {
+  "id": "hernando-beach",
+  "district": "HERNANDO",
+  "population": 2452,
+  "elementary": {
+   "name": "WESTSIDE ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 3.16,
+   "state_school_id": "FL-27-0161"
+  },
+  "middle": {
+   "name": "FOX CHAPEL MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 5.903,
+   "state_school_id": "FL-27-0202"
+  },
+  "high": {
+   "name": "FRANK W. SPRINGSTEAD HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 7.082,
+   "state_school_id": "FL-27-0181"
+  }
+ },
+ {
+  "id": "weeki-wachee",
+  "district": "HERNANDO",
+  "population": 18869,
+  "elementary": {
+   "name": "SPRING HILL ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.542,
+   "state_school_id": "FL-27-0211"
+  },
+  "middle": {
+   "name": "WEST HERNANDO MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.526,
+   "state_school_id": "FL-27-0253"
+  },
+  "high": {
+   "name": "CENTRAL HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.208,
+   "state_school_id": "FL-27-0251"
+  }
+ },
+ {
+  "id": "aripeka",
+  "district": "PASCO",
+  "population": 320,
+  "elementary": {
+   "name": "HUDSON ACADEMY",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 4.458,
+   "state_school_id": "FL-51-0951"
+  },
+  "middle": {
+   "name": "HUDSON ACADEMY",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 4.458,
+   "state_school_id": "FL-51-0951"
+  },
+  "high": {
+   "name": "HUDSON HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 4.549,
+   "state_school_id": "FL-51-0521"
+  }
+ },
+ {
+  "id": "hudson",
+  "district": "PASCO",
+  "population": 12951,
+  "elementary": {
+   "name": "GULF HIGHLANDS ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.22,
+   "state_school_id": "FL-51-0083"
+  },
+  "middle": {
+   "name": "HUDSON ACADEMY",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.807,
+   "state_school_id": "FL-51-0951"
+  },
+  "high": {
+   "name": "FIVAY HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.373,
+   "state_school_id": "FL-51-0114"
+  }
+ },
+ {
+  "id": "port-richey",
+  "district": "PASCO",
+  "population": 3052,
+  "elementary": {
+   "name": "RICHEY ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.291,
+   "state_school_id": "FL-51-0271"
+  },
+  "middle": {
+   "name": "GULF MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.39,
+   "state_school_id": "FL-51-0261"
+  },
+  "high": {
+   "name": "WENDELL KRINN TECHNICAL HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.307,
+   "state_school_id": "FL-51-0128"
+  }
+ },
+ {
+  "id": "holiday",
+  "district": "PASCO",
+  "population": 25013,
+  "elementary": {
+   "name": "SUNRAY ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.015,
+   "state_school_id": "FL-51-0072"
+  },
+  "middle": {
+   "name": "PAUL R. SMITH MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.79,
+   "state_school_id": "FL-51-0089"
+  },
+  "high": {
+   "name": "ANCLOTE HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.971,
+   "state_school_id": "FL-51-0113"
+  }
+ },
+ {
+  "id": "palm-harbor",
+  "district": "PINELLAS",
+  "population": 61368,
+  "elementary": {
+   "name": "ELISA NELSON ELEMENTARY",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.118,
+   "state_school_id": "FL-52-3181"
+  },
+  "middle": {
+   "name": "PALM HARBOR MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.008,
+   "state_school_id": "FL-52-3191"
+  },
+  "high": {
+   "name": "PALM HARBOR UNIVERSITY HIGH",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.139,
+   "state_school_id": "FL-52-4681"
+  }
+ },
+ {
+  "id": "oldsmar",
+  "district": "PINELLAS",
+  "population": 14910,
+  "elementary": {
+   "name": "OLDSMAR ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.608,
+   "state_school_id": "FL-52-2961"
+  },
+  "middle": {
+   "name": "SAFETY HARBOR MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.96,
+   "state_school_id": "FL-52-3741"
+  },
+  "high": {
+   "name": "COUNTRYSIDE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.357,
+   "state_school_id": "FL-52-0751"
+  }
+ },
+ {
+  "id": "belleair-beach",
+  "district": "PINELLAS",
+  "population": 1633,
+  "elementary": {
+   "name": "MILDRED HELMS ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.742,
+   "state_school_id": "FL-52-2431"
+  },
+  "middle": {
+   "name": "LARGO MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 3.59,
+   "state_school_id": "FL-52-0141"
+  },
+  "high": {
+   "name": "LARGO HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 3.361,
+   "state_school_id": "FL-52-2081"
+  }
+ },
+ {
+  "id": "tierra-verde",
+  "district": "PINELLAS",
+  "population": 3836,
+  "elementary": {
+   "name": "MAXIMO ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 4.264,
+   "state_school_id": "FL-52-2281"
+  },
+  "middle": {
+   "name": "BAY POINT MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 4.426,
+   "state_school_id": "FL-52-0171"
+  },
+  "high": {
+   "name": "LAKEWOOD HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 5.016,
+   "state_school_id": "FL-52-2031"
+  }
+ },
+ {
+  "id": "indian-shores",
+  "district": "PINELLAS",
+  "population": 1190,
+  "elementary": {
+   "name": "OAKHURST ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.443,
+   "state_school_id": "FL-52-2921"
+  },
+  "middle": {
+   "name": "SEMINOLE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.604,
+   "state_school_id": "FL-52-3931"
+  },
+  "high": {
+   "name": "SEMINOLE HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.639,
+   "state_school_id": "FL-52-3921"
+  }
+ },
+ {
+  "id": "redington-shores",
+  "district": "PINELLAS",
+  "population": 2176,
+  "elementary": {
+   "name": "BAUDER ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.82,
+   "state_school_id": "FL-52-0151"
+  },
+  "middle": {
+   "name": "SEMINOLE MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.739,
+   "state_school_id": "FL-52-3931"
+  },
+  "high": {
+   "name": "SEMINOLE HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.533,
+   "state_school_id": "FL-52-3921"
+  }
+ },
+ {
+  "id": "gibsonton",
+  "district": "HILLSBOROUGH",
+  "population": 18566,
+  "elementary": {
+   "name": "GIBSONTON ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.212,
+   "state_school_id": "FL-29-1601"
+  },
+  "middle": {
+   "name": "EISENHOWER MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.659,
+   "state_school_id": "FL-29-1324"
+  },
+  "high": {
+   "name": "EAST BAY HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.629,
+   "state_school_id": "FL-29-1322"
+  }
+ },
+ {
+  "id": "miami",
+  "district": "MIAMI-DADE",
+  "population": 75572,
+  "elementary": {
+   "name": "CORAL WAY K-8 CENTER",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.326,
+   "state_school_id": "FL-13-1121"
+  },
+  "middle": {
+   "name": "SHENANDOAH MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.742,
+   "state_school_id": "FL-13-6841"
+  },
+  "high": {
+   "name": "MIAMI SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.955,
+   "state_school_id": "FL-13-7461"
+  }
+ },
+ {
+  "id": "jacksonville",
+  "district": "DUVAL",
+  "population": 949611,
+  "elementary": {
+   "name": "SPRING PARK ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 0.391,
+   "state_school_id": "FL-16-0721"
+  },
+  "middle": {
+   "name": "JULIA LANDON COLLEGE PREPARATORY & LEADERSHIP DEVELOPMENT SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.465,
+   "state_school_id": "FL-16-0311"
+  },
+  "high": {
+   "name": "DOUGLAS ANDERSON SCHOOL OF THE ARTS",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.529,
+   "state_school_id": "FL-16-1073"
+  }
+ },
+ {
+  "id": "indian-river-shores",
+  "district": "INDIAN RIVER",
+  "population": 4241,
+  "elementary": {
+   "name": "BEACHLAND ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.808,
+   "state_school_id": "FL-31-0061"
+  },
+  "middle": {
+   "name": "GIFFORD MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.093,
+   "state_school_id": "FL-31-0081"
+  },
+  "high": {
+   "name": "VERO BEACH HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 5.684,
+   "state_school_id": "FL-31-0031"
+  }
+ },
+ {
+  "id": "hutchinson-island",
+  "district": "ST. LUCIE",
+  "population": 4988,
+  "elementary": {
+   "name": "MARIPOSA ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 3.551,
+   "state_school_id": "FL-56-0341"
+  },
+  "middle": {
+   "name": "SOUTHPORT MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 5.42,
+   "state_school_id": "FL-56-0331"
+  },
+  "high": {
+   "name": "PORT ST. LUCIE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 4.293,
+   "state_school_id": "FL-56-0301"
+  }
+ },
+ {
+  "id": "sewalls-point",
+  "district": "MARTIN",
+  "population": 1991,
+  "elementary": {
+   "name": "J. D. PARKER SCHOOL OF TECHNOLOGY",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 2.339,
+   "state_school_id": "FL-43-0051"
+  },
+  "middle": {
+   "name": "STUART MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 2.972,
+   "state_school_id": "FL-43-0021"
+  },
+  "high": {
+   "name": "MARTIN COUNTY HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 3.639,
+   "state_school_id": "FL-43-0031"
+  }
+ },
+ {
+  "id": "palm-city",
+  "district": "MARTIN",
+  "population": 25883,
+  "elementary": {
+   "name": "BESSEY CREEK ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.725,
+   "state_school_id": "FL-43-0331"
+  },
+  "middle": {
+   "name": "HIDDEN OAKS MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 0.795,
+   "state_school_id": "FL-43-0321"
+  },
+  "high": {
+   "name": "MARTIN COUNTY HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.236,
+   "state_school_id": "FL-43-0031"
+  }
+ },
+ {
+  "id": "port-salerno",
+  "district": "MARTIN",
+  "population": 10401,
+  "elementary": {
+   "name": "PORT SALERNO ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 1.119,
+   "state_school_id": "FL-43-0101"
+  },
+  "middle": {
+   "name": "MURRAY MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 0.601,
+   "state_school_id": "FL-43-0081"
+  },
+  "high": {
+   "name": "MARTIN COUNTY HIGH SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 4.142,
+   "state_school_id": "FL-43-0031"
+  }
+ },
+ {
+  "id": "hobe-sound",
+  "district": "MARTIN",
+  "population": 13163,
+  "elementary": {
+   "name": "HOBE SOUND ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.431,
+   "state_school_id": "FL-43-0111"
+  },
+  "middle": {
+   "name": "MURRAY MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 4.912,
+   "state_school_id": "FL-43-0081"
+  },
+  "high": {
+   "name": "SOUTH FORK HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 6.635,
+   "state_school_id": "FL-43-0241"
+  }
+ },
+ {
+  "id": "tequesta",
+  "district": "PALM BEACH",
+  "population": 6158,
+  "elementary": {
+   "name": "LIMESTONE CREEK ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.699,
+   "state_school_id": "FL-50-2031"
+  },
+  "middle": {
+   "name": "JUPITER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 4.066,
+   "state_school_id": "FL-50-1731"
+  },
+  "high": {
+   "name": "JUPITER HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.451,
+   "state_school_id": "FL-50-0081"
+  }
+ },
+ {
+  "id": "juno-beach",
+  "district": "PALM BEACH",
+  "population": 3896,
+  "elementary": {
+   "name": "THE CONSERVATORY SCHOOL AT NORTH PALM BEACH",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 4.081,
+   "state_school_id": "FL-50-0131"
+  },
+  "middle": {
+   "name": "HOWELL L. WATKINS MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 4.307,
+   "state_school_id": "FL-50-0121"
+  },
+  "high": {
+   "name": "WILLIAM T. DWYER HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.965,
+   "state_school_id": "FL-50-2201"
+  }
+ },
+ {
+  "id": "lake-park",
+  "district": "PALM BEACH",
+  "population": 9047,
+  "elementary": {
+   "name": "LAKE PARK ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.462,
+   "state_school_id": "FL-50-0141"
+  },
+  "middle": {
+   "name": "HOWELL L. WATKINS MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.559,
+   "state_school_id": "FL-50-0121"
+  },
+  "high": {
+   "name": "PALM BEACH GARDENS HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 2.807,
+   "state_school_id": "FL-50-1371"
+  }
+ },
+ {
+  "id": "palm-beach-shores",
+  "district": "PALM BEACH",
+  "population": 1330,
+  "elementary": {
+   "name": "LINCOLN ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 2.373,
+   "state_school_id": "FL-50-0211"
+  },
+  "middle": {
+   "name": "JOHN F. KENNEDY MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 2.988,
+   "state_school_id": "FL-50-0201"
+  },
+  "high": {
+   "name": "WILLIAM T. DWYER HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 8.112,
+   "state_school_id": "FL-50-2201"
+  }
+ },
+ {
+  "id": "lake-worth-beach",
+  "district": "PALM BEACH",
+  "population": 42219,
+  "elementary": {
+   "name": "HIGHLAND ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.441,
+   "state_school_id": "FL-50-0671"
+  },
+  "middle": {
+   "name": "LAKE WORTH COMMUNITY MIDDLE",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.233,
+   "state_school_id": "FL-50-2131"
+  },
+  "high": {
+   "name": "LAKE WORTH HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.382,
+   "state_school_id": "FL-50-0691"
+  }
+ },
+ {
+  "id": "lantana",
+  "district": "PALM BEACH",
+  "population": 11504,
+  "elementary": {
+   "name": "LANTANA ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.18,
+   "state_school_id": "FL-50-0751"
+  },
+  "middle": {
+   "name": "LANTANA MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.42,
+   "state_school_id": "FL-50-0761"
+  },
+  "high": {
+   "name": "LAKE WORTH HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 2.335,
+   "state_school_id": "FL-50-0691"
+  }
+ },
+ {
+  "id": "boynton-beach",
+  "district": "PALM BEACH",
+  "population": 80380,
+  "elementary": {
+   "name": "GALAXY ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.483,
+   "state_school_id": "FL-50-0821"
+  },
+  "middle": {
+   "name": "CONGRESS COMMUNITY MIDDLE SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.124,
+   "state_school_id": "FL-50-1581"
+  },
+  "high": {
+   "name": "BOYNTON BEACH COMMUNITY HIGH",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.696,
+   "state_school_id": "FL-50-2361"
+  }
+ },
+ {
+  "id": "vilano-beach",
+  "district": "ST. JOHNS",
+  "population": 2514,
+  "elementary": {
+   "name": "KETTERLINUS ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.949,
+   "state_school_id": "FL-55-0091"
+  },
+  "middle": {
+   "name": "SEBASTIAN MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.369,
+   "state_school_id": "FL-55-0301"
+  },
+  "high": {
+   "name": "ST. AUGUSTINE HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.513,
+   "state_school_id": "FL-55-0181"
+  }
+ },
+ {
+  "id": "crescent-beach",
+  "district": "ST. JOHNS",
+  "population": 844,
+  "elementary": {
+   "name": "W. DOUGLAS HARTLEY ELEMENTARY",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 4.755,
+   "state_school_id": "FL-55-0261"
+  },
+  "middle": {
+   "name": "GAMBLE ROGERS MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 4.231,
+   "state_school_id": "FL-55-0371"
+  },
+  "high": {
+   "name": "PEDRO MENENDEZ HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 5.209,
+   "state_school_id": "FL-55-0401"
+  }
+ },
+ {
+  "id": "beverly-beach",
+  "district": "FLAGLER",
+  "population": 474,
+  "elementary": {
+   "name": "OLD KINGS ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.565,
+   "state_school_id": "FL-18-0201"
+  },
+  "middle": {
+   "name": "BUDDY TAYLOR MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 4.593,
+   "state_school_id": "FL-18-0011"
+  },
+  "high": {
+   "name": "FLAGLER-PALM COAST HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 4.643,
+   "state_school_id": "FL-18-0091"
+  }
+ },
+ {
+  "id": "ormond-by-the-sea",
+  "district": "VOLUSIA",
+  "population": 7312,
+  "elementary": {
+   "name": "ORMOND BEACH ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.987,
+   "state_school_id": "FL-64-1114"
+  },
+  "middle": {
+   "name": "ORMOND BEACH MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.357,
+   "state_school_id": "FL-64-4235"
+  },
+  "high": {
+   "name": "SEABREEZE HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 5.599,
+   "state_school_id": "FL-64-5836"
+  }
+ },
+ {
+  "id": "ponce-inlet",
+  "district": "VOLUSIA",
+  "population": 3364,
+  "elementary": {
+   "name": "SPRUCE CREEK ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.97,
+   "state_school_id": "FL-64-4531"
+  },
+  "middle": {
+   "name": "SILVER SANDS MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 5.206,
+   "state_school_id": "FL-64-3431"
+  },
+  "high": {
+   "name": "SPRUCE CREEK HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 4.669,
+   "state_school_id": "FL-64-4436"
+  }
+ },
+ {
+  "id": "edgewater",
+  "district": "VOLUSIA",
+  "population": 23256,
+  "elementary": {
+   "name": "INDIAN RIVER ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 1.201,
+   "state_school_id": "FL-64-3651"
+  },
+  "middle": {
+   "name": "NEW SMYRNA BEACH MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 3.353,
+   "state_school_id": "FL-64-3931"
+  },
+  "high": {
+   "name": "NEW SMYRNA BEACH HIGH SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 3.436,
+   "state_school_id": "FL-64-3839"
+  }
+ },
+ {
+  "id": "cape-canaveral",
+  "district": "BREVARD",
+  "population": 9972,
+  "elementary": {
+   "name": "CAPE VIEW ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.318,
+   "state_school_id": "FL-05-5031"
+  },
+  "middle": {
+   "name": "COCOA BEACH JUNIOR/SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 5.325,
+   "state_school_id": "FL-05-5011"
+  },
+  "high": {
+   "name": "COCOA BEACH JUNIOR/SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 5.325,
+   "state_school_id": "FL-05-5011"
+  }
+ },
+ {
+  "id": "merritt-island",
+  "district": "BREVARD",
+  "population": 34518,
+  "elementary": {
+   "name": "TROPICAL ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.216,
+   "state_school_id": "FL-05-4041"
+  },
+  "middle": {
+   "name": "THOMAS JEFFERSON MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.534,
+   "state_school_id": "FL-05-4111"
+  },
+  "high": {
+   "name": "MERRITT ISLAND HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 1.623,
+   "state_school_id": "FL-05-4011"
+  }
+ },
+ {
+  "id": "cocoa-village",
+  "district": "BREVARD",
+  "population": 15923,
+  "elementary": {
+   "name": "ENDEAVOUR ELEMENTARY SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.102,
+   "state_school_id": "FL-05-1051"
+  },
+  "middle": {
+   "name": "COCOA HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.698,
+   "state_school_id": "FL-05-1121"
+  },
+  "high": {
+   "name": "COCOA HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.698,
+   "state_school_id": "FL-05-1121"
+  }
+ },
+ {
+  "id": "rockledge",
+  "district": "BREVARD",
+  "population": 27678,
+  "elementary": {
+   "name": "HANS CHRISTIAN ANDERSEN ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.83,
+   "state_school_id": "FL-05-1141"
+  },
+  "middle": {
+   "name": "JOHN F. KENNEDY MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.806,
+   "state_school_id": "FL-05-1101"
+  },
+  "high": {
+   "name": "ROCKLEDGE SENIOR HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 1.733,
+   "state_school_id": "FL-05-1011"
+  }
+ },
+ {
+  "id": "indian-harbour-beach",
+  "district": "BREVARD",
+  "population": 9019,
+  "elementary": {
+   "name": "OCEAN BREEZE ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.166,
+   "state_school_id": "FL-05-6071"
+  },
+  "middle": {
+   "name": "HERBERT C. HOOVER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 3.614,
+   "state_school_id": "FL-05-6082"
+  },
+  "high": {
+   "name": "SATELLITE SENIOR HIGH SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 2.428,
+   "state_school_id": "FL-05-6011"
+  }
+ },
+ {
+  "id": "melbourne",
+  "district": "BREVARD",
+  "population": 84696,
+  "elementary": {
+   "name": "HARBOR CITY ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.366,
+   "state_school_id": "FL-05-3061"
+  },
+  "middle": {
+   "name": "HERBERT C. HOOVER MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 4.371,
+   "state_school_id": "FL-05-6082"
+  },
+  "high": {
+   "name": "EAU GALLIE HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.987,
+   "state_school_id": "FL-05-3011"
+  }
+ },
+ {
+  "id": "marathon",
+  "district": "MONROE",
+  "population": 9689,
+  "elementary": {
+   "name": "STANLEY SWITLIK ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 2.383,
+   "state_school_id": "FL-44-0251"
+  },
+  "middle": {
+   "name": "MARATHON SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.757,
+   "state_school_id": "FL-44-0131"
+  },
+  "high": {
+   "name": "MARATHON SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 1.757,
+   "state_school_id": "FL-44-0131"
+  }
+ },
+ {
+  "id": "big-pine-key",
+  "district": "MONROE",
+  "population": 4521,
+  "elementary": {
+   "name": "SUGARLOAF SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 10.624,
+   "state_school_id": "FL-44-0201"
+  },
+  "middle": {
+   "name": "SUGARLOAF SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 10.624,
+   "state_school_id": "FL-44-0201"
+  },
+  "high": {
+   "name": "MARATHON SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 17.947,
+   "state_school_id": "FL-44-0131"
+  }
+ },
+ {
+  "id": "key-biscayne",
+  "district": "MIAMI-DADE",
+  "population": 14809,
+  "elementary": {
+   "name": "KEY BISCAYNE K-8 CENTER",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 0.33,
+   "state_school_id": "FL-13-2741"
+  },
+  "middle": {
+   "name": "PONCE DE LEON MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 7.058,
+   "state_school_id": "FL-13-6741"
+  },
+  "high": {
+   "name": "CORAL GABLES SENIOR HIGH SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 6.933,
+   "state_school_id": "FL-13-7071"
+  }
+ },
+ {
+  "id": "boca-grande",
+  "district": "LEE",
+  "population": 1283,
+  "elementary": {
+   "name": "PINE ISLAND ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "nearest",
+   "distance_mi": 13.682,
+   "state_school_id": "FL-36-0341"
+  },
+  "middle": {
+   "name": "MARINER MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "nearest",
+   "distance_mi": 17.458,
+   "state_school_id": "FL-36-0722"
+  },
+  "high": {
+   "name": "MARINER HIGH SCHOOL",
+   "grade": "C",
+   "method": "nearest",
+   "distance_mi": 17.395,
+   "state_school_id": "FL-36-0721"
+  }
+ },
+ {
+  "id": "pompano-beach",
+  "district": "BROWARD",
+  "population": 112046,
+  "elementary": {
+   "name": "POMPANO BEACH ELEMENTARY SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 1.163,
+   "state_school_id": "FL-06-0751"
+  },
+  "middle": {
+   "name": "POMPANO BEACH MIDDLE SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 0.548,
+   "state_school_id": "FL-06-0021"
+  },
+  "high": {
+   "name": "BLANCHE ELY HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.357,
+   "state_school_id": "FL-06-0361"
+  }
+ },
+ {
+  "id": "deerfield-beach",
+  "district": "BROWARD",
+  "population": 86859,
+  "elementary": {
+   "name": "PARK RIDGE ELEMENTARY SCHOOL",
+   "grade": "B",
+   "method": "zone",
+   "distance_mi": 1.073,
+   "state_school_id": "FL-06-1951"
+  },
+  "middle": {
+   "name": "LYONS CREEK MIDDLE SCHOOL",
+   "grade": "A",
+   "method": "zone",
+   "distance_mi": 3.537,
+   "state_school_id": "FL-06-3101"
+  },
+  "high": {
+   "name": "DEERFIELD BEACH HIGH SCHOOL",
+   "grade": "C",
+   "method": "zone",
+   "distance_mi": 0.748,
+   "state_school_id": "FL-06-1711"
+  }
+ }
+]
