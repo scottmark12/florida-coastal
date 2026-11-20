@@ -19,6 +19,7 @@ html,body{margin:0;background:#fff;color:var(--ink);font-family:'DM Sans',system
 a{color:inherit}
 .top{display:flex;justify-content:center;padding:14px 20px 4px}
 .top img{height:28px;width:auto;display:block}
+.top a{display:block}
 .lp{max-width:1040px;margin:0 auto;padding:6px 22px 48px;display:grid;gap:22px}
 /* the PDF, fanned */
 .stack{position:relative;width:min(40vw,168px);aspect-ratio:612/792;margin:8px auto 4px}
@@ -74,7 +75,7 @@ form.get button:disabled{opacity:.7;cursor:default}
 @media (prefers-reduced-motion:no-preference){.done .thx{animation:in .35s ease-out}@keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}}
 </style></head>
 <body>
-<div class="top"><img src="/img/fc-logo-black.png" alt="Florida Coastal" width="140" height="28"></div>
+<div class="top"><a id="home" aria-label="Florida Coastal home" tabindex="-1"><img src="/img/fc-logo-black.png" alt="Florida Coastal" width="140" height="28"></a></div>
 <main class="lp" id="lp">
   <div class="stack" aria-hidden="true">
     <img class="b2" src="/img/lp/flood-p5.webp" alt="" loading="lazy">
@@ -110,7 +111,7 @@ form.get button:disabled{opacity:.7;cursor:default}
         <p>You know which towns flood. Answer 8 quick questions and we'll match you with 5 beach towns, with flood and insurance notes for each.</p>
         <a class="q" id="quiz" href="/quiz?utm_source=lp&amp;utm_campaign=flood">Find my 5 towns →</a>
       </div>
-      <p class="also">Or read the <a href="/articles/flood-risk-rankings">full article with the interactive rankings</a>.</p>
+      <p class="also">Or read the <a href="/articles/flood-risk-rankings">full article with the interactive rankings</a>, or <a href="/?utm_source=lp&amp;utm_campaign=flood">explore all 167 coastal towns</a>.</p>
     </div>
   </div>
 </main>
@@ -124,7 +125,7 @@ form.get button:disabled{opacity:.7;cursor:default}
   function show(email,note){
     document.getElementById('sent').textContent='A copy is on its way to '+email+' too.';
     if(note){var p=document.createElement('p');p.className='pv';p.textContent=note;document.getElementById('sent').after(p)}
-    lp.classList.add('done');window.scrollTo({top:0,behavior:'smooth'});
+    lp.classList.add('done');var h=document.getElementById('home');h.href='/?utm_source=lp&utm_campaign=flood';h.removeAttribute('tabindex');window.scrollTo({top:0,behavior:'smooth'});
   }
   em.addEventListener('input',function(){em.classList.remove('bad');var e=f.querySelector('.err');if(e)e.remove()});
   f.addEventListener('submit',function(ev){
