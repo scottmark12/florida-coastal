@@ -104,7 +104,9 @@
     if(!a)return;
     var u;try{u=new URL(a.href,location.href);}catch(x){return;}
     if(!/^https?:$/.test(u.protocol))return;
+    // at = which quiz box (data-fq: top, mid, end) or which labeled section the link sits in.
     // Paths only: never capture form values, email addresses, search terms or URL queries.
-    emit('link_click',{to:(u.origin===location.origin?'':u.origin)+u.pathname.slice(0,220)});
+    var at=a.getAttribute('data-fq')||(a.closest('[data-fc-section]')||{getAttribute:function(){return null}}).getAttribute('data-fc-section');
+    emit('link_click',at?{to:(u.origin===location.origin?'':u.origin)+u.pathname.slice(0,200),at:String(at).slice(0,40)}:{to:(u.origin===location.origin?'':u.origin)+u.pathname.slice(0,220)});
   },{capture:true});
 })();
