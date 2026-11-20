@@ -67,7 +67,8 @@
       var extra = opts.extra ? opts.extra(box) : {}, label = btn ? btn.textContent : '';
       if (btn) { btn.disabled = true; btn.textContent = 'Sending...'; }
       lead(Object.assign({ kind: opts.kind, email: email }, extra)).then(function (r) {
-        done(r.preview ? (opts.thanks || 'Got it.') + ' (Preview: saved as a test, no email sent.)' : (opts.thanks || 'Got it. Check your inbox.'));
+        var th = typeof opts.thanks === 'function' ? opts.thanks() : opts.thanks;
+        done(r.preview ? (th || 'Got it.') + ' (Preview: saved as a test, no email sent.)' : (th || 'Got it. Check your inbox.'));
       }).catch(function () {
         if (!LIVE) { done('Preview only: this form works once the new site is live. Nothing was sent.'); return; }
         if (btn) { btn.disabled = false; btn.textContent = label; }
@@ -85,7 +86,17 @@
     }
     if (box.tagName === 'FORM') { box.removeAttribute('onsubmit'); box.onsubmit = go; } else if (btn) btn.onclick = go;
   }
-  window.FC = { track: track, lead: lead, bind: bind, LIVE: LIVE, SID: SID };
+  /* Read only calls to public functions (e.g. fc_town_agent) */
+  function rpc(fn, args) {
+    return fetch(API + 'rpc/' + fn, { method: 'POST', headers: { apikey: KEY, 'Content-Type': 'application/json' }, body: JSON.stringify(args || {}) })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); });
+  }
+  /* A correction flagged on a town page. Only saved on the live site (each one becomes a to do). */
+  function flag(row) {
+    if (!LIVE) return Promise.resolve({ ok: true, preview: true });
+    return post('fc_flags', row).then(function (r) { if (!r.ok) throw new Error(r.status); track('flag', row.town_id); return { ok: true }; });
+  }
+  window.FC = { track: track, lead: lead, bind: bind, rpc: rpc, flag: flag, LIVE: LIVE, SID: SID };
   if (LIVE) track('pageview');
   document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('form.fx-sign').forEach(function (f) { bind(f, { kind: 'newsletter', thanks: "You're on the list. New guides land in your inbox." }); });

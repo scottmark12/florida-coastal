@@ -37,31 +37,12 @@ function render(file, tpl = fs.readFileSync(TPL, 'utf8')) {
   return tpl.replace(/\{\{town:([a-z-]+)\}\}/g, (m, k) => { if (!(k in slots)) throw new Error('unknown slot ' + k); return slots[k]; });
 }
 
-// Partner agents (src/data/partners.json). A town with a signed partner gets the agent card at the top
-// of its Ask a local form and the agent named in the consent line. Every other town keeps the plain
-// form that Mark and Betsy answer, and its consent line names only Florida Coastal.
-const PARTNERS = path.join(ROOT, 'src', 'data', 'partners.json');
-const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#x27;');
+// Ask a local consent line. The served page names only Florida Coastal; when the town has a signed agent
+// (fc_town_agent in Supabase, set in the team portal), the page script adds the agent's card and names them.
 const CONSENT = 'By tapping Ask a local, you agree Florida Coastal and our partner agent may call or text you, including automated texts.';
-let partnersCache;
 function partner(html, id) {
-  if (!partnersCache) partnersCache = JSON.parse(fs.readFileSync(PARTNERS, 'utf8'));
-  const p = !id.startsWith('_') && partnersCache[id];
   if (!html.includes(CONSENT)) throw new Error('Ask a local consent line missing on ' + id);
-  if (!p) return html.replace(CONSENT, 'By tapping Ask a local, you agree Florida Coastal may call or text you, including automated texts.');
-  for (const k of ['name', 'brokerage', 'license']) if (!p[k]) throw new Error('partners.json ' + id + ' needs ' + k);
-  const first = p.name.split(' ')[0], ini = p.name.split(' ').map(w => w[0]).join('').slice(0, 2).toUpperCase();
-  const m = /<aside id="ask"><div class="card"><h3>Ask a local about ([^<]*)<\/h3><p>[^<]*<\/p>/.exec(html);
-  if (!m) throw new Error('Ask a local card changed shape on ' + id);
-  const short = m[1].replace(/\s*\(.*\)$/, '');
-  const card = '<aside id="ask"><div class="card"><div class="pa"><span class="pa-l">Your ' + esc(short) + ' local</span><div class="pa-w">'
-    + (p.photo ? '<img src="' + esc(p.photo) + '" alt="" loading="lazy">' : '<span class="pa-i" aria-hidden="true">' + esc(ini) + '</span>')
-    + '<div><b>' + esc(p.name) + '</b><small>' + esc(p.brokerage) + ' · Lic. #' + esc(p.license) + '</small></div></div>'
-    + (p.blurb ? '<p class="pa-b">' + esc(p.blurb) + '</p>' : '')
-    + '<p class="pa-d">Featured agent · <a href="disclosures.html">How it works</a></p></div>'
-    + '<h3>Ask ' + esc(first) + ' about ' + esc(m[1]) + '</h3><p>Your question goes straight to ' + esc(first) + ', and we read it too.</p>'
-    + '<style>.pa{margin:0 0 18px;padding:0 0 16px;border-bottom:1px solid #e3ddd2}.pa-l{display:block;font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:#5d6d70;margin:0 0 10px}.pa-w{display:flex;gap:12px;align-items:center}.pa-w img,.pa-i{width:52px;height:52px;border-radius:50%;object-fit:cover;flex:none}.pa-i{display:grid;place-items:center;background:#f1ede6;font-weight:600}.pa-w b{display:block;font-size:17px}.pa-w small{font-size:13px;color:#5d6d70}.pa-b{margin:10px 0 0;font-size:15px;line-height:1.5}.pa-d{margin:8px 0 0!important;font-size:12.5px!important;color:#5d6d70}</style>';
-  return html.replace(m[0], card).replace(CONSENT, 'By tapping Ask a local, you agree Florida Coastal and ' + esc(p.name) + ' may call or text you, including automated texts.');
+  return html.replace(CONSENT, 'By tapping Ask a local, you agree Florida Coastal may call or text you, including automated texts.');
 }
 
 function parse(html) {
