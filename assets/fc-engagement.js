@@ -35,12 +35,35 @@
     if(visible) active += Math.max(0,Math.min(now,activity+60000)-last);
     last = now;
   }
+  /* Scroll depth. depth = how far down the page the bottom of the screen has reached (0 to 100).
+     One scroll_depth event per milestone per page view: 25, 50, 75, 90, 100, plus "end" when the
+     bottom of the main content (article, else main) comes on screen, so footers don't hide readers
+     who finished. Checked on scroll, every 10s and on leave, never at load, so a visitor who
+     doesn't move logs nothing new. h = page height in screens, s = engaged seconds so far. */
+  var depth = 0, marks = [25,50,75,90,100], hit = {}, pending = 0;
+  function measure() {
+    pending = 0;
+    var de = document.documentElement, b = document.body;
+    var full = Math.max(de.scrollHeight, b ? b.scrollHeight : 0), vh = innerHeight || de.clientHeight;
+    if (!full || !vh) return;
+    var bottom = (scrollY || de.scrollTop || 0) + vh;
+    var d = Math.min(100, Math.round(100*bottom/full));
+    if (d > depth) depth = d;
+    var info = function (m) { tick(); return {v:1,p:page,d:m,s:Math.floor(active/1000),h:Math.round(10*full/vh)/10}; };
+    marks.forEach(function (m) { if (depth >= m && !hit[m]) { hit[m] = 1; emit('scroll_depth', info(m)); } });
+    if (!hit.end) {
+      var main = document.querySelector('article') || document.querySelector('main');
+      if (main && main.getBoundingClientRect().bottom <= vh + 40) { hit.end = 1; emit('scroll_depth', info('end')); }
+    }
+  }
+  addEventListener('scroll', function () { if (!pending) { pending = 1; requestAnimationFrame(measure); } }, {passive:true});
   function flush() {
     tick();
+    if (depth || hit.end) measure();
     var seconds = Math.floor(active/1000);
     if(seconds === sent || seconds < 1) return;
     sent = seconds;
-    emit('engagement',{v:2,p:page,s:seconds});
+    emit('engagement',{v:2,p:page,s:seconds,d:depth});
   }
   function touch() { tick(); activity=performance.now(); }
   ['pointerdown','keydown','scroll','touchstart'].forEach(function(e){addEventListener(e,touch,{passive:true,capture:true});});
