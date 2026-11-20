@@ -56,7 +56,32 @@
       if (main && main.getBoundingClientRect().bottom <= vh + 40) { hit.end = 1; emit('scroll_depth', info('end')); }
     }
   }
-  addEventListener('scroll', function () { if (!pending) { pending = 1; requestAnimationFrame(measure); } }, {passive:true});
+  /* Sections. Pages that label their sections (data-fc-section="name": home, Beach Towns) log one
+     section_view per section per page view when it reaches the upper 70% of the screen, so the
+     last section logged is where the visitor trailed off. n = section's place on the page (1 = top),
+     of = how many labeled sections the page has. Sections already on screen at load are held until
+     the first scroll, so visitors who never scroll add nothing beyond their pageview. */
+  var secSeen = {}, secQueue = [], scrolled = false, secs = [].slice.call(document.querySelectorAll('[data-fc-section]'));
+  function secSend(el) {
+    var name = el.getAttribute('data-fc-section');
+    if (secSeen[name]) return;
+    secSeen[name] = 1; tick();
+    emit('section_view', {v:1,p:page,sec:name,n:secs.indexOf(el)+1,of:secs.length,s:Math.floor(active/1000)});
+  }
+  if (secs.length && 'IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function (list) {
+      list.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        io.unobserve(en.target);
+        if (scrolled) secSend(en.target); else secQueue.push(en.target);
+      });
+    }, {rootMargin:'0px 0px -30% 0px', threshold:0});
+    secs.forEach(function (el) { io.observe(el); });
+  }
+  addEventListener('scroll', function () {
+    if (!scrolled) { scrolled = true; secQueue.sort(function (a, b) { return secs.indexOf(a) - secs.indexOf(b); }).forEach(secSend); secQueue = []; }
+    if (!pending) { pending = 1; requestAnimationFrame(measure); }
+  }, {passive:true});
   function flush() {
     tick();
     if (depth || hit.end) measure();

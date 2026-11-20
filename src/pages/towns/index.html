@@ -9,7 +9,7 @@
 <nav class="top"><a class="on" href="../towns/index.html" data-nav="towns">Beach Towns</a><span class="fcmaps"><a href="../map.html" data-nav="maps" aria-haspopup="true">Maps<i class="fcmaps-c" aria-hidden="true"></i></a><span class="fcmaps-dd"><a class="fcmaps-i" href="../map.html" data-sub="regions">Regions</a><a class="fcmaps-i" href="../map.html?mode=vibes" data-sub="vibes">Vibe Map</a><a class="fcmaps-i" href="../map.html?mode=sliders" data-sub="sliders">Slider Map</a></span></span><a href="../articles/index.html" data-nav="articles">Articles</a><a href="../about.html" data-nav="about">About</a></nav>
 <button type="button" class="fcs-ic" aria-label="Search towns, regions and guides"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg></button><a class="fcq cta" href="../find-your-mile.html">Take the quiz</a><button class="fcm-btn" type="button" aria-label="Open menu" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></header><script>/* header ready before first paint (fc-menu.css) */!function(){var h=document.querySelector("header");if(!h)return;h.querySelectorAll(".fcmaps>a[data-nav=maps]").forEach(function(a){if(!a.querySelector(".fcmaps-c")){var c=document.createElement("i");c.className="fcmaps-c";c.setAttribute("aria-hidden","true");a.appendChild(c)}});h.querySelectorAll('a:is([href*="quiz-photo"],[href*="find-your-mile"],[href="/quiz"])').forEach(function(q){q.classList.add("fcq")});if(h.querySelector("a[data-nav]")){h.classList.add("fcm-hasbtn");if(!h.querySelector("button.fcm-btn")){var b=document.createElement("button");b.className="fcm-btn";b.type="button";b.setAttribute("aria-label","Open menu");b.setAttribute("aria-expanded","false");b.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>';if(getComputedStyle(h).position=="static")h.style.position="relative";h.appendChild(b)}}if(h.querySelector('img[src*="fc-logo-white"]')&&!h.classList.contains("top"))h.classList.add("fc-onphoto");var c=getComputedStyle(h).backgroundColor,m=c.match(/[\d.]+/g)||[0,0,0,0],al=m.length>3?+m[3]:1,l=+m[0]*.3+ +m[1]*.59+ +m[2]*.11;h.classList.toggle("fcq-dark",al<.35||l<90);h.querySelectorAll(".fcmaps").forEach(function(sp){var s=null;[].some.call(sp.parentElement.children,function(x){if(x!==sp&&x.tagName=="A"&&!/cta|btn/.test(x.className)&&x.offsetParent){s=x;return 1}});if(s)sp.style.color=getComputedStyle(s).color})}();</script>
 <main>
-<section class="hs"><div class="hs-ph"></div><div class="hs-sh"></div><div class="hs-in">
+<section class="hs" data-fc-section="intro"><div class="hs-ph"></div><div class="hs-sh"></div><div class="hs-in">
 <p class="hs-ey">167 coastal towns<span class="lg"> &middot; Pensacola around to Fernandina</span></p>
 <h1>Every town on the Florida coast</h1>
 <p class="hs-sub">All 167, scored the same way on beaches, walkability, cost and more. Look up a town you've heard about, or start with our best quality of life picks below.</p>
@@ -17,19 +17,19 @@
 <div class="hs-l"><a href="../find-your-mile.html">Not sure yet? Take the quiz</a><a href="../map.html">Browse the map</a></div>
 </div></section>
 
-<section class="s" id="qol"><div class="wrap"><p class="ey">Florida Coastal rankings</p><h2>Most recommended</h2><p class="lede">Our top four picks, out of 167 towns on the Florida coast.</p>
+<section class="s" id="qol" data-fc-section="most recommended"><div class="wrap"><p class="ey">Florida Coastal rankings</p><h2>Most recommended</h2><p class="lede">Our top four picks, out of 167 towns on the Florida coast.</p>
 <div class="mg" id="mg"></div><p class="note" id="mgn">All four score near the top for what people pick most on Florida Coastal: beaches, peace and quiet, walkability and the outdoors.</p><a class="mga" href="../articles/towns-we-recommend.html">See all 30 and how we pick them &rarr;</a></div></section>
 
-<section class="s" id="regions"><div class="wrap"><p class="ey">Seven regions</p><h2>Browse by region</h2><p class="lede">Pick a region, then a stretch of it, and see every town there.</p>
+<section class="s" id="regions" data-fc-section="regions"><div class="wrap"><p class="ey">Seven regions</p><h2>Browse by region</h2><p class="lede">Pick a region, then a stretch of it, and see every town there.</p>
 <div class="cg" id="cg"></div>
 <div class="ar" id="ar"><h3 id="arh"></h3><p class="sub" id="ars"></p><div class="ach" id="ach"></div><div class="ax" id="ax"></div><div class="grid" id="grid"></div></div>
 </div></section>
 
-<section class="az" id="all"><div class="wrap"><p class="ey">A to Z</p><h2 style="font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:48px;margin:0">All 167 towns</h2>
+<section class="az" id="all" data-fc-section="a to z list"><div class="wrap"><p class="ey">A to Z</p><h2 style="font-family:'Libre Caslon Display',Georgia,serif;font-weight:400;font-size:48px;margin:0">All 167 towns</h2>
 <div class="fl"><input id="fq" type="text" placeholder="Filter by name" aria-label="Filter towns by name"><select id="fs" aria-label="Style"></select><select id="fp" aria-label="Price"><option value="">Any price</option><option value="0-350">Under $350K</option><option value="350-500">$350K to $500K</option><option value="500-750">$500K to $750K</option><option value="750-99999">$750K and up</option></select><span class="c" id="fc"></span></div>
 <div class="cols" id="cols"></div></div></section>
 <p class="src" style="max-width:1100px;margin:20px auto;padding:0 20px;font-size:13px;line-height:1.5">Price guides use different dates and measures, including sale prices, asking prices and estimated values. Check each town’s source and period before comparing. Budget filters use the lower end where a range is shown.</p></main>
-<footer class="fx">
+<footer class="fx" data-fc-section="footer">
  
  <div class="fx-main">
   <div class="fx-brand"><img src="../img/fc-logo-black.png" alt="Florida Coastal"><p>167 coastal towns, Pensacola to Fernandina.</p>
