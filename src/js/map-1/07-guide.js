@@ -8,7 +8,7 @@
  const cnt=k=>T.filter(t=>t.v.includes(k)).length;
  const RIMG=r=>(T.find(t=>t.id==RPH[r])||{}).img;
  const STEPS={
-  vibes:['Pick a style from the photo tiles.','The towns that fit light up. Tap any dot to meet one.','Swipe a town card to step through the list, or pull the panel up to see every style.'],
+  vibes:['Pick a vibe from the photo tiles.','The towns that fit light up. Tap any dot to meet one.','Swipe a town card to step through the list, or pull the panel up to see every vibe.'],
   regions:['Pick a region from the photo tiles.','Its towns light up on the map. Tap any dot to meet one.','Swipe a town card to step through every town in the region.'],
   sliders:[()=>PH()?'Pull the panel up to see the 10 sliders.':'The 10 sliders are on the left.','Move the ones that matter most to you.','The top 5 update on the map as you go. Tap a number to meet the town.']};
  const DEMO={vibes:'beaches',regions:'south-keys'};
@@ -17,7 +17,7 @@
   const base={vibes:{eb:'Vibe Map',img:`img/vibes/${S.style&&!isR(S.style)?S.style:'beaches'}.webp`},regions:{eb:'Regions',img:RIMG(rn||'south-keys')},sliders:{eb:'Slider Map',img:f0.img}}[k];
   if(G.step>=0){const s=STEPS[k][G.step];return {...base,stp:`How it works · ${G.step+1} of 3`,tx:typeof s=='function'?s():s,btn:G.step<2?'Next':'Got it',act:()=>{G.step=G.step<2?G.step+1:-1;show()},how:false}}
   if(k=='vibes'){if(!G.ph)return {...base,h3:'Explore like a local',tx:'Pick a feel, like Old Florida or Island Vibes, and see every town that has it.',btn:'Show me how',act:()=>tour('vibes'),how:false};
-   const L=LK.VFEEL,nx=L[(Math.max(0,L.indexOf(st))+1)%L.length];return {...base,h3:`${VIBES[st]||'Best Beaches'} is on`,tx:st=='beaches'?`These ${cnt(st)} towns have the best sand. Tap any style below to switch, or a dot to meet a town.`:`${cnt(st)} towns light up. Tap any style below to switch, or a dot to meet a town.`,btn:`Show me ${VIBES[nx]}`,act:()=>pickStyle(nx),how:false}}
+   const L=LK.VFEEL,nx=L[(Math.max(0,L.indexOf(st))+1)%L.length];return {...base,h3:`${VIBES[st]||'Best Beaches'} is on`,tx:st=='beaches'?`These ${cnt(st)} towns have the best sand. Tap any vibe below to switch, or a dot to meet a town.`:`${cnt(st)} towns light up. Tap any vibe below to switch, or a dot to meet a town.`,btn:`Show me ${VIBES[nx]}`,act:()=>pickStyle(nx),how:false}}
   if(k=='regions'){if(!G.ph)return {...base,h3:'Know the coast',tx:"Florida's coast in seven stretches. Pick one to see every town in it.",btn:'Show me how',act:()=>tour('regions'),how:false};
    const L=R7.map(r=>r[0]),nx=L[(Math.max(0,L.indexOf(rn))+1)%L.length];return {...base,h3:VIBES[st]||'South Florida and the Keys',tx:`${cnt(st)} towns. Swipe the tiles for other regions, or tap a dot to meet a town.`,btn:`Show me ${VIBES['r:'+nx].replace(/^The /,'')}`,act:()=>pickStyle('r:'+nx),how:false}}
   if(!G.ph)return {...base,h3:'Rank towns your way',tx:"Tell us what matters most and we'll rank all 167 towns for you.",btn:'Show me how',act:()=>tour('sliders'),how:false};
@@ -68,7 +68,7 @@
  (function(){const op=window.openPop;window.openPop=openPop=function(t,nopan){if(t&&S.mode=='vibes'&&S.sub=='regions'&&!S.restoring){const rv=(t.v||[]).filter(v=>v.indexOf('r:')===0),rk=rv.find(v=>RTAG[v.slice(2)])||rv[0];if(rk&&S.style!==rk&&VIBES[rk]){G.sx=rk;S.auto=1;pickStyle(rk);S.auto=0;G.sx=rk;setTimeout(()=>op.call(this,t,true),480);return}}return op.apply(this,arguments)}})();
  function styleCard(p,k){const st=S.style,R=isR(st),id=R?st.slice(2):st,L=vOrder(),n=T.filter(t=>t.v.includes(st)).length,f=L[0];if(!f)return false;
   const img=R?RIMG(id):`img/vibes/${id}.webp`,tag=R?(RTAG[id]||VSUB[st]||''):(LK.VSUBL[st]||VSUB[st]||'');
-  p.innerHTML=`<div class="ph" style="background-image:url('${img}')"></div><button class="x" aria-label="Close">&times;</button><div class="bd bstyle"><div class="eb">${R?'':`<i class="sdot" style="background:${VCOL[st]}"></i>`}${R?'Region':'Style'} · ${n} towns</div><h3>${VIBES[st]}</h3><p>${tag}.</p><div class="pnav"><a class="go" href="#" data-first="1">Meet the towns →</a><button data-st="1" aria-label="First town">›</button></div></div>`;
+  p.innerHTML=`<div class="ph" style="background-image:url('${img}')"></div><button class="x" aria-label="Close">&times;</button><div class="bd bstyle"><div class="eb">${R?'':`<i class="sdot" style="background:${VCOL[st]}"></i>`}${R?'Region':'Vibe'} · ${n} towns</div><h3>${VIBES[st]}</h3><p>${tag}.</p><div class="pnav"><a class="go" href="#" data-first="1">Meet the towns →</a><button data-st="1" aria-label="First town">›</button></div></div>`;
   const go=e=>{e&&e.preventDefault();e&&e.stopPropagation();G.sx=st;flyTo(f)};p.querySelector('[data-first]').onclick=go;p.querySelector('[data-st]').onclick=go;
   p.querySelector('.x').onclick=e=>{e.stopPropagation();G.sx=st;p.dataset.intro='';p.classList.remove('on')};
   p.onclick=null;const fresh=p.dataset.intro!='style:'+st;p.dataset.intro='style:'+st;p.classList.remove('full');p.classList.add('on');placePop();

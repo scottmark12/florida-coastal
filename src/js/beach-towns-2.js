@@ -115,7 +115,7 @@ function pickC(c,a){R.c=c;R.a=a;const co=CO.find(x=>x[0]==c);const L=T.filter(t=
 $('ach').onclick=e=>{const b=e.target.closest('button');if(b)pickC(R.c,b.dataset.a)};
 $('ax').onclick=e=>{const b=e.target.closest('button[data-a]');if(b){pickC(R.c,b.dataset.a);$('ach').scrollIntoView({behavior:'smooth',block:'start'})}};
 /* A to Z */
-$('fs').innerHTML='<option value="">Any style</option>'+Object.entries(VIBES).map(([k,v])=>`<option value="${k}">${v}</option>`).join('');
+$('fs').innerHTML='<option value="">Any vibe</option>'+Object.entries(VIBES).map(([k,v])=>`<option value="${k}">${v}</option>`).join('');
 function az(){const q=norm($('fq').value.trim()),s=$('fs').value,p=$('fp').value;let L=T.filter(t=>(!q||norm(t.n+' '+((window.FCAKA||{})[t.id]||'')).includes(q))&&(!s||t.v.includes(s)));
  if(p){const[a,b]=p.split('-').map(Number);L=L.filter(t=>t.m&&t.m>=a&&t.m<b)}
  $('fc').innerHTML=`<b>${L.length}</b> of 167 towns <span class="pl">· Prices are median recorded sales</span>`;$('cols').classList.toggle('fo',!!(q||s||p));

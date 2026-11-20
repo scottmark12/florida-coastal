@@ -15,7 +15,7 @@ const base=$('base'),ov=$('ov');
 const S={vb:null,style:'',price:'',sort:'coast',region:'',pop:null,hover:null};
 const params=new URLSearchParams(location.search);
 // style select
-$('sty').innerHTML='<option value="">All styles</option>'+Object.keys(VIBES).map(k=>`<option value="${k}">${VIBES[k]}</option>`).join('');
+$('sty').innerHTML='<option value="">All vibes</option>'+Object.keys(VIBES).map(k=>`<option value="${k}">${VIBES[k]}</option>`).join('');
 function curReg(){const v=S.vb||[0,0,1200,1400],cx=v[0]+v[2]/2,cy=v[1]+v[3]/2;const near=v[2]<700?REG.map((r,i)=>[i,Math.hypot(X((r[1]+r[2])/2)-cx,Y((r[3]+r[4])/2)-cy)]).sort((a,b)=>a[1]-b[1])[0][0]:-1;return S.region?REG.findIndex(r=>r[0]==S.region):near}
 function chips(){const cur=curReg();$('rname').textContent=cur>=0?REG[cur][0]:'All of Florida';
  const G=[['Panhandle',[0,1]],['Gulf Coast',[2,3,4]],['Keys',[5]],['Atlantic Coast',[6,7,8,9]]];
@@ -82,7 +82,7 @@ function render(fast){
  if(S.pop)placePop();
 }
 function title(){const ci=curReg(),r=ci>=0?REG[ci][0]:'All of Florida';$('h').textContent=r;const n=T.filter(t=>match(t)&&inView(t)).length;$('sub').textContent=`${n} ${S.style?VIBES[S.style]:'beach'} town${n==1?'':'s'}`+(S.style?` · ${VSUB[S.style]}`:'')}
-function list(){chips();if(S.mode=='sliders')return;title();document.querySelectorAll('.tile').forEach(x=>x.classList.toggle('on',x.dataset.k==S.style));if(S.mode=='vibes'){$('h').textContent='Find towns by style';$('sub').textContent='12 styles across 167 coastal towns. Pick one to see where it lives.';if(S.style){const n=T.filter(t=>t.v.includes(S.style)).length;$('seeall').innerHTML=`<span><b>${VIBES[S.style]}</b> &nbsp;${n} towns lit up on the map</span><button id="sa">See the towns</button>`;$('sa').onclick=()=>setMode('explore')}return}
+function list(){chips();if(S.mode=='sliders')return;title();document.querySelectorAll('.tile').forEach(x=>x.classList.toggle('on',x.dataset.k==S.style));if(S.mode=='vibes'){$('h').textContent='Find towns by vibe';$('sub').textContent='12 vibes across 167 coastal towns. Pick one to see where it lives.';if(S.style){const n=T.filter(t=>t.v.includes(S.style)).length;$('seeall').innerHTML=`<span><b>${VIBES[S.style]}</b> &nbsp;${n} towns lit up on the map</span><button id="sa">See the towns</button>`;$('sa').onclick=()=>setMode('explore')}return}
  let L=T.filter(t=>match(t)&&(S.mode=='vibes'||inView(t)));
  if(S.sort=='lo')L.sort((a,b)=>(a.pv??1e9)-(b.pv??1e9));else if(S.sort=='hi')L.sort((a,b)=>(b.pv??-1)-(a.pv??-1));
  $('n').textContent='';
@@ -124,7 +124,7 @@ $('q').addEventListener('keydown',e=>{if(e.key!='Enter')return;const q=e.target.
 // vibes mode
 const VSUB2={island:"Barefoot and slow",oldfl:"Bait shops, no hurry",dock:"Life on the water",sophcalm:"Polished and easy",sophhigh:"Polished with a pulse",afford:"More house for less",active:"Trails and paddling",walk:"Daily life on foot",bluezone:"Walks and time outside",remote:"Pretty, with an easy airport",social:"Bars and events",beaches:"Top ranked sand",schools:"Top school grades"};
 S.mode='explore';
-function setMode(m){S.mode=m;setTimeout(()=>{render();if(m!='sliders')list()},30);$('mhint').textContent={explore:'See every beach town on the map and narrow by style or price.',vibes:'Pick the feel you want and see where it lives.',sliders:'Tell us what matters and we rank all 167 towns for you.'}[m];document.body.classList.toggle('vibes',m=='vibes');document.body.classList.toggle('sliders',m=='sliders');if(m=='sliders'){requestAnimationFrame(()=>{render()});document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));closePop();S.region='';tags();slRender();if(!S.top.length)go(fit(ALL,.02));return}document.body.classList.toggle('pick',m=='vibes'&&!!S.style);document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));
+function setMode(m){S.mode=m;setTimeout(()=>{render();if(m!='sliders')list()},30);$('mhint').textContent={explore:'See every beach town on the map and narrow by vibe or price.',vibes:'Pick the feel you want and see where it lives.',sliders:'Tell us what matters and we rank all 167 towns for you.'}[m];document.body.classList.toggle('vibes',m=='vibes');document.body.classList.toggle('sliders',m=='sliders');if(m=='sliders'){requestAnimationFrame(()=>{render()});document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));closePop();S.region='';tags();slRender();if(!S.top.length)go(fit(ALL,.02));return}document.body.classList.toggle('pick',m=='vibes'&&!!S.style);document.querySelectorAll('#mode button').forEach(b=>b.classList.toggle('on',b.dataset.m==m));
  if(m=='vibes'&&!S.style){S.region='';tags();closePop();go(fit(ALL,.02))}list()}
 function fitStyle(k){const L=T.filter(t=>t.v.includes(k));const b=[Math.min(...L.map(t=>t.lo)),Math.max(...L.map(t=>t.lo)),Math.min(...L.map(t=>t.la)),Math.max(...L.map(t=>t.la))];const pad=.35;return fit([b[0]-1.1,b[1]+1.1,b[2]-pad,b[3]+pad],.04)}
 $('tiles').innerHTML=Object.keys(VIBES).map(k=>`<button class="tile" data-k="${k}"><div class="ph" style="background-image:url('img/vibes/${k}.webp')"><i><span style="display:inline-block;width:9px;height:9px;border-radius:50%;background:${VCOL[k]};margin-right:6px"></span>${T.filter(t=>t.v.includes(k)).length} towns</i></div><b>${VIBES[k]}</b><small>${VSUB2[k]}</small></button>`).join('');
@@ -170,7 +170,7 @@ function score(first){const set=SLK.filter(([k])=>S.sv[k]!=50);
    if(!ok){const up=P.every(t=>{const px=sx+(t.x-cx)/k,py=sy+(t.y-cy)/k-(sy-T0-bh/2);return !(px<cw+(t.c!='atlantic'?120:20)&&py>h-ch-20)});if(up){sy=T0+bh/2;ok=true;break}k*=1.07}}
   if(k>=KS){go(fit(ALL,.02),first?0:500);return}go([cx-sx*k,cy-sy*k,w*k,h*k],first?0:500)},first?0:250);if(size()[0]>=600){const t1=T.find(t=>t.id==S.top[0]);if(!S.pop||!S.top.includes(S.pop.id)||S.pop.id===S.auto||S.pop.id!==S.pinned)openPop(t1,true);S.pinned=t1.id;S.auto=t1.id}render()}
 $('sl').addEventListener('mouseover',e=>{const c=e.target.closest('.t5,.r15');const id=c?c.dataset.id:null;if(id!==S.hover){S.hover=id;if(id&&size()[0]>=600){S.pinned=id;openPop(T.find(t=>t.id==id),true)}render()}});
-document.getElementById('mhint').textContent='See every beach town on the map and narrow by style or price.';
+document.getElementById('mhint').textContent='See every beach town on the map and narrow by vibe or price.';
 
 // save search
 function shareURL(){const q=new URLSearchParams();const ci=curReg();if(ci>=0)q.set('region',REG[ci][0]);if(S.style)q.set('style',S.style);if(S.price)q.set('price',S.price);if(S.mode!='explore')q.set('mode',S.mode);if(S.mode=='sliders'){const sv=SLK.filter(([k])=>S.sv[k]!=50).map(([k])=>k+':'+S.sv[k]).join(',');if(sv)q.set('sv',sv)}return location.origin+location.pathname+'?'+q.toString()}

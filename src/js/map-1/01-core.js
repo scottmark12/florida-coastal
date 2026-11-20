@@ -18,7 +18,7 @@ const base=$('base'),ov=$('ov');
 const S={vb:null,style:'',price:'',sort:'coast',region:'',pop:null,hover:null};
 const params=new URLSearchParams(location.search);
 // style select
-$('sty').innerHTML='<option value="">All styles</option>'+Object.keys(VIBES).map(k=>`<option value="${k}">${VIBES[k]}</option>`).join('');
+$('sty').innerHTML='<option value="">All vibes</option>'+Object.keys(VIBES).map(k=>`<option value="${k}">${VIBES[k]}</option>`).join('');
 function curReg(){const v=S.vb||[0,0,1200,1400],cx=v[0]+v[2]/2,cy=v[1]+v[3]/2;const near=v[2]<700?REG.map((r,i)=>[i,Math.hypot(X((r[1]+r[2])/2)-cx,Y((r[3]+r[4])/2)-cy)]).sort((a,b)=>a[1]-b[1])[0][0]:-1;return S.region?REG.findIndex(r=>r[0]==S.region):near}
 function chips(){const cur=curReg();$('rname').textContent=cur>=0?REG[cur][0]:'All of Florida';
  const G=[['Panhandle',[0,1]],['Gulf Coast',[2,3,4]],['Keys',[5]],['Atlantic Coast',[6,7,8,9]]];
@@ -121,7 +121,7 @@ function list(){chips();if(S.mode=='sliders')return;title();document.querySelect
 function rowOn(){document.querySelectorAll('.t5,.r15').forEach(r=>r.classList.toggle('on',!!S.pop&&r.dataset.id==S.pop.id))}
 function placePop(){rowOn();const p=$('pop');p.style.left='16px';p.style.bottom='16px';p.style.top='auto'}
 function vTag(v){return `<span class="stag"><i style="background:${VCOL[v]}"></i>${LK.VSHORT[v]||VIBES[v]}</span>`}
-function ndWhy(t){const n=S.need,L=[],d=LD[t.id];S.style&&!isR(S.style)&&t.v.includes(S.style)&&L.push('Your style: '+(LK.VSHORT[S.style]||VIBES[S.style]));
+function ndWhy(t){const n=S.need,L=[],d=LD[t.id];S.style&&!isR(S.style)&&t.v.includes(S.style)&&L.push('Your vibe: '+(LK.VSHORT[S.style]||VIBES[S.style]));
  n.bud&&d.med&&L.push(`Median sale around ${fK(d.med)}, under ${fK(n.bud)}`);n.school&&L.push(`Public schools rated ${d.es} of 5`);n.air&&L.push(`Close to ${d.ap||'a major airport'}`);
  return L.length?`<div class="why2"><b>Why it fits</b><ul>${L.map(x=>`<li>${x}</li>`).join('')}</ul></div>`:''}
 const fK=k=>k>=1000?'$'+(k/1000).toFixed(k>=10000?0:2).replace(/\.?0+$/,'')+'M':'$'+Math.round(k)+'K';

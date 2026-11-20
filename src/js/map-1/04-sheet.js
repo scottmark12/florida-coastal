@@ -96,4 +96,4 @@ function score(first){
    if(!ok){const up=P.every(t=>{const px=sx+(t.x-cx)/k,py=sy+(t.y-cy)/k-(sy-T0-bh/2);return !(px<cw+(t.c!='atlantic'?120:20)&&py>h-ch-20)});if(up){sy=T0+bh/2;ok=true;break}k*=1.07}}
   if(k>=KS){go(fit(ALL,.02),first?0:500);return}go([cx-sx*k,cy-sy*k,w*k,h*k],first?0:500)},first?0:250);
 if(size()[0]>=600&&L.length){const t1=L[0];if(!slAnySet()&&!S.introDone&&!S.pop)setTimeout(()=>mapIntro('sliders'),0);else if(!S.pop||!S.top.slice(0,5).includes(S.pop.id)||S.pop.id===S.auto||S.pop.id!==S.pinned)openPop(t1,true);S.pinned=t1.id;S.auto=t1.id}render()}
-document.getElementById('mhint').textContent='See every beach town on the map and narrow by style or price.';
+document.getElementById('mhint').textContent='See every beach town on the map and narrow by vibe or price.';
