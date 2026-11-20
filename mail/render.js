@@ -594,6 +594,39 @@ ${row(`${attached("The Move and Belong Guide", "14 pages on going from new in to
   return { subject, html: shell(subject, "Your guide to your first 90 days in a new town is attached.", rows, "Your free guide", U("welcome")), text, attach: { url: guideUrl || PDFS.guide.url, name: PDFS.guide.name } };
 }
 
+/* Nov 20 2026: the flood rankings landing page (/flood, kind "download", answers.offer "flood-rankings").
+   Day 0 flood:     the PDF attached, short cover note, quiz nudge
+   Day 3 floodquiz: "You know which towns flood. Which ones fit?" the quiz, nothing attached
+   Day 7 welcome:   the Move and Belong Guide (the newsletter welcome), only if they never got it */
+export function buildFloodEmail(lead) {
+  const name = firstName(lead.name);
+  const subject = "Florida beach towns, ranked by flood risk";
+  const rows = `
+<tr><td style="padding:24px 0 0 0;"></td></tr>
+${photo(`${SITE}/img/lp/flood-email.jpg`, `${PDFS.flood.url}`, "Cover of the Florida Coastal flood risk report, palm trees against a cloudy sky", "")}
+${row(`${h1("Here are the rankings")}${deck(`${name ? `Hi ${esc(name)}, here` : "Here"}'s the full report. All 50 towns we ranked, every number, and each town's flood history.`)}`, `30px ${PX} 0 ${PX}`)}
+${row(`${attached("Florida Beach Towns Ranked by Flood Risk", "9 pages. Each town scored 1 to 10 on tide flooding and FEMA's flood map. Print it, mark up the towns you're looking at.")}
+  ${P("One thing worth knowing before you read: the score ranks land and flood zones, not a single house, and it doesn't count rain. Use it to narrow your list, then look at the exact street.", "margin-top:22px;")}
+  ${P(`Still deciding where to look? Our free quiz matches you with 5 towns that fit how you want to live, with flood and insurance notes for each. ${more(`${SITE}/find-your-mile.html?${U("flood")}`, "Find my 5 towns")}`)}
+  ${P("Questions about a town on the list? Just reply.", "margin-bottom:0;")}${sign()}`, `22px ${PX} 0 ${PX}`)}`;
+  const text = `${name ? `Hi ${name}, here` : "Here"}'s the flood risk report. It's attached, or open it here: ${PDFS.flood.url}\n\nThe score ranks land and flood zones, not a single house, and it doesn't count rain. Use it to narrow your list, then look at the exact street.\n\nStill deciding where to look? Take the free quiz: ${SITE}/find-your-mile.html\n\nQuestions about a town? Just reply.\nMark and Betsy Scott\nFlorida Coastal`;
+  return { subject, html: shell(subject, "All 50 towns, scored 1 to 10. The PDF is attached.", rows, "Your free report", U("flood")), text, attach: { url: PDFS.flood.url, name: PDFS.flood.name } };
+}
+
+export function buildFloodQuizEmail(lead) {
+  const name = firstName(lead.name);
+  const subject = "You know which towns flood. Which ones fit?";
+  const quiz = `${SITE}/find-your-mile.html?${U("floodquiz")}`;
+  const rows = `
+${row(`${h1("Which towns actually fit you?")}${deck(`${name ? `Hi ${esc(name)}, a` : "A"} few days ago you grabbed our flood rankings. A low score is a good start, but it won't tell you where you'd love living.`)}`, `30px ${PX} 0 ${PX}`)}
+${row(`${P("That part comes down to how you want your days to go. A walkable downtown or a quiet street. A dock out back or a beach you can bike to. Near family, near an airport, or far from everything.")}
+  ${P("Answer 8 quick questions and we'll match you with 5 towns, each with its median home price, flood and insurance notes, and a local's pick for your first weekend. It takes about 2 minutes.")}
+  ${btn(quiz, "Find my 5 towns")}
+  ${P("Already have a town in mind? Reply and tell us which one. We read every message.", "margin:24px 0 0 0;")}${sign()}`, `22px ${PX} 0 ${PX}`)}`;
+  const text = `${name ? `Hi ${name}, a` : "A"} few days ago you grabbed our flood rankings. A low score is a good start, but it won't tell you where you'd love living.\n\nAnswer 8 quick questions and we'll match you with 5 towns, with flood and insurance notes for each: ${quiz}\n\nAlready have a town in mind? Reply and tell us.\nMark and Betsy Scott\nFlorida Coastal`;
+  return { subject, html: shell(subject, "8 quick questions, 5 towns that fit how you want to live.", rows, "Florida Coastal", U("floodquiz")), text };
+}
+
 /* ======================================================================
    Nov 4 2026: the Shortlist series. One email at a time, each with one job.
    Day 0  top5    Your Florida Shortlist (above): PDF, one tap timeline, reply ask, forward to partner
