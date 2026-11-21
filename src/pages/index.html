@@ -7586,9 +7586,8 @@ html body #fh .fh-tc:focus-visible{outline:2px solid #fff;outline-offset:2px}
 @keyframes fhtc{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){html body #fh .fh-tc{animation:none}}
 html body #fh .fh-tx{transition:bottom .3s ease}
-html body #fh[data-pick] .fh-sub{display:none}
-html body #fh[data-pick] .fh-cta{margin-top:16px}
-@media (max-width:760px){html body #fh[data-pick] .fh-tx{bottom:280px}}
+@media (min-width:761px){html body #fh[data-pick] .fh-sub{display:none}html body #fh[data-pick] .fh-cta{margin-top:16px}}
+
 @media (min-width:761px){html body #fh .fh-tw{gap:12px;padding:0 clamp(24px,4.44vw,80px) 2px}html body #fh .fh-tc{height:64px;padding-left:10px}html body #fh .fh-tc img{width:46px;height:46px}html body #fh .fh-tc b{font-size:15px}html body #fh[data-pick] .fh-tx{bottom:370px}html body #fh[data-pick] .fh-cta{margin-top:26px}}
 html body #fh .fh-vd{display:none}@media (min-width:761px){html body #fh .fh-vp{display:none}html body #fh .fh-vd{display:inline}}html body #fh .fh-now{white-space:nowrap}@media (max-width:359px){html body #fh .fh-sh p{letter-spacing:.1em!important;font-size:10.5px!important}}
 
@@ -7612,6 +7611,15 @@ html body #fh .fh-q{display:flex;justify-content:space-between;gap:12px;width:10
 html body #fh .fh-qm{display:inline}html body #fh .fh-qd{display:none}html body #fh .fh-qp{display:inline}
 }
 @media (min-width:761px){html body #fh .fh-q{margin-top:14px;font-size:14px}html body #fh .fh-lb{font-size:14px}}
+
+/* Phones: headline, line and button at the top (like the old home), map in the space between, tiles at the bottom. JS (fhLay) sizes the map to fit. */
+@media (max-width:760px){
+html body #fh .fh-tx{top:var(--fh-tt,84px);bottom:auto!important;left:20px;right:20px}
+html body #fh .fh-map{clip-path:none!important}
+html body #fh .fh-scr{background:linear-gradient(180deg,rgba(12,30,35,.5) 0,rgba(12,30,35,.28) 34%,rgba(12,30,35,0) 52%)!important}
+html body #fh h1{margin-top:0!important}
+}
+@media (max-width:760px) and (max-height:720px){html body #fh .fh-sub{display:none}html body #fh .fh-cta{margin-top:16px!important}}
 </style></head>
 <body class="pl" data-v="min" data-voice="1" data-logo="1" data-capsnav="1" data-over="1" data-tight="1" data-bleed="1" data-ft="1" data-steps="1" data-pipe="1" data-ph="1" data-hq="1" data-hqgo="1" data-names="1" data-more="1" data-sticky="1" data-short="1" data-newsph="1" data-newsph2="1" data-grade="1"><header class="fcm-hasbtn fcq-dark top">
   <div class="wrap">
@@ -7811,12 +7819,47 @@ addEventListener("DOMContentLoaded", function() {
                 var b = bl[q].getBoundingClientRect();
                 if (r.right > b.left && r.left < b.right && r.bottom > b.top - 6 && r.top < b.bottom) bad = !0
             }
+            for (var q2 = 0; q2 < n && !bad; q2++) {
+                if (lbs[q2].classList.contains("fh-off")) continue;
+                var o = lbs[q2].getBoundingClientRect();
+                if (r.right > o.left && r.left < o.right && r.bottom > o.top && r.top < o.bottom) bad = !0
+            }
+            if (!bad && innerWidth <= 760 && parseFloat(h.style.getPropertyValue("--fhh")) < 190) bad = !0;
             if (bad) l.classList.add("fh-off")
         }
     }
-    lbFit();
-    addEventListener("load", lbFit);
-    addEventListener("resize", lbFit);
+    var txEl = h.querySelector(".fh-tx"),
+        stEl = h.querySelector(".fh-st"),
+        V4 = ["--ft", "--fhh", "--fw", "--fl", "--fh-tt"];
+
+    function fhLay() {
+        if (innerWidth > 760) {
+            for (var q = 0; q < V4.length; q++) h.style.removeProperty(V4[q]);
+            lbFit();
+            return
+        }
+        var hb = h.getBoundingClientRect(),
+            hd = document.querySelector("header"),
+            top = hd ? Math.max(0, hd.getBoundingClientRect().bottom - hb.top) : 64;
+        h.style.setProperty("--fh-tt", Math.round(top + 10) + "px");
+        var tb = txEl.getBoundingClientRect().bottom - hb.top,
+            ro = h.hasAttribute("data-pick") || !tw ? 0 : 66,
+            sb = stEl.getBoundingClientRect().top - hb.top - ro,
+            vw = innerWidth,
+            ft = tb + 16,
+            fhh = Math.max(90, Math.min(sb - 12 - ft, (vw + 2) * .9644)),
+            fw = fhh / .9644,
+            fl = fw >= vw ? vw - fw + 36 : (vw - fw) / 2 + Math.min(24, (vw - fw) / 2);
+        h.style.setProperty("--ft", Math.round(ft) + "px");
+        h.style.setProperty("--fhh", Math.round(fhh) + "px");
+        h.style.setProperty("--fw", Math.round(fw) + "px");
+        h.style.setProperty("--fl", Math.round(fl) + "px");
+        lbFit()
+    }
+    fhLay();
+    addEventListener("load", fhLay);
+    addEventListener("resize", fhLay);
+    document.fonts && document.fonts.ready.then(fhLay);
     h.addEventListener("transitionend", function(e) {
         e.propertyName == "bottom" && lbFit()
     });
