@@ -7590,6 +7590,7 @@ html body #fh[data-pick] .fh-sub{display:none}
 html body #fh[data-pick] .fh-cta{margin-top:16px}
 @media (max-width:760px){html body #fh[data-pick] .fh-tx{bottom:280px}}
 @media (min-width:761px){html body #fh .fh-tw{gap:12px;padding:0 clamp(24px,4.44vw,80px) 2px}html body #fh .fh-tc{height:64px;padding-left:10px}html body #fh .fh-tc img{width:46px;height:46px}html body #fh .fh-tc b{font-size:15px}html body #fh[data-pick] .fh-tx{bottom:370px}html body #fh[data-pick] .fh-cta{margin-top:26px}}
+html body #fh .fh-vd{display:none}@media (min-width:761px){html body #fh .fh-vp{display:none}html body #fh .fh-vd{display:inline}}html body #fh .fh-now{white-space:nowrap}@media (max-width:359px){html body #fh .fh-sh p{letter-spacing:.1em!important;font-size:10.5px!important}}
 </style></head>
 <body class="pl" data-v="min" data-voice="1" data-logo="1" data-capsnav="1" data-over="1" data-tight="1" data-bleed="1" data-ft="1" data-steps="1" data-pipe="1" data-ph="1" data-hq="1" data-hqgo="1" data-names="1" data-more="1" data-sticky="1" data-short="1" data-newsph="1" data-newsph2="1" data-grade="1"><header class="fcm-hasbtn fcq-dark top">
   <div class="wrap">
@@ -7786,7 +7787,7 @@ addEventListener("DOMContentLoaded", function() {
         if (!s) return;
         h.style.setProperty("--vc", C[k] || "#152a2e");
         var lb = h.querySelector(".fh-now");
-        if (lb) lb.innerHTML = "Showing <i></i>" + s[1];
+        if (lb) lb.innerHTML = (pick ? "Our top 5" : '<span class="fh-vp">Tap</span><span class="fh-vd">Click</span> to explore<span class="fh-vd"> by vibe</span>') + " <i></i>" + s[1];
         for (var n = 0; n < dots.length; n++) dots[n].classList.toggle("on", (" " + V[n] + " ").indexOf(" " + k + " ") >= 0);
         var at;
         for (var t = 0; t < tiles.length; t++) {
