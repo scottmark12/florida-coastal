@@ -31,7 +31,8 @@
     "p": "$350K",
     "b": "Brick storefronts from the cotton and oyster days, shrimp boats on the river and St. George Island just across the bridge.",
     "img": "img/c/apalachicola.webp",
-    "pk": "house"
+    "pk": "house",
+    "pcf": true
   },
   "cedarkey": {
     "n": "Cedar Key",
@@ -110,7 +111,8 @@
     "p": "$5.03M",
     "b": "Polished and peaceful, with golf, boating, a walkable downtown and calm Gulf beaches from the pier north to Vanderbilt Beach.",
     "img": "img/c/naples-beach.webp",
-    "pk": "house"
+    "pk": "house",
+    "pc": "$1.16M"
   },
   "keywest": {
     "n": "Key West",
@@ -154,7 +156,8 @@
     "p": "$775K",
     "b": "Atlantic Avenue runs from downtown straight to the ocean, so breakfast, the beach and live music are all on one street.",
     "img": "img/c/delray-beach.webp",
-    "pk": "house"
+    "pk": "house",
+    "pc": "$415K"
   },
   "jupiter": {
     "n": "Jupiter",
@@ -249,7 +252,8 @@
     "p": "$1.02M",
     "b": "A barrier island with no high rises, a lighthouse at its center and nine miles of state park beach at the east end.",
     "img": "img/c/st-george-island.webp",
-    "pk": "house"
+    "pk": "house",
+    "pcf": true
   },
   "st-teresa": {
     "n": "St. Teresa",
@@ -326,7 +330,8 @@
     "p": "$425K",
     "b": "A small town on St. Joseph Bay, known for calm clear water, bay sunsets and the beaches of Cape San Blas.",
     "img": "img/c/port-st-joe.webp",
-    "pk": "house"
+    "pk": "house",
+    "pcf": true
   },
   "crystal-river": {
     "n": "Crystal River",
@@ -591,7 +596,8 @@
     "p": "$1.51M",
     "b": "The largest of the Ten Thousand Islands, with a wide crescent beach on one side and wild mangrove country on the other.",
     "img": "img/c/marco-island.webp",
-    "pk": "house"
+    "pk": "house",
+    "pc": "$620K"
   },
   "port-charlotte": {
     "n": "Port Charlotte",
@@ -635,6 +641,7 @@
     "b": "A tiny oceanfront village at the north tip of Miami Beach, known for a luxury shopping center and a quiet beach path.",
     "img": "img/c/bal-harbour.webp",
     "pk": "house",
+    "pc": "$1.55M",
     "pf": true
   },
   "boca-raton": {
@@ -1401,7 +1408,8 @@
     "p": "$3.91M",
     "b": "An island village across the Rickenbacker Causeway from Miami, with Crandon Park and the Cape Florida Lighthouse at Bill Baggs State Park.",
     "img": "img/c/key-biscayne.webp",
-    "pk": "house"
+    "pk": "house",
+    "pc": "$1.52M"
   },
   "boca-grande": {
     "n": "Boca Grande",

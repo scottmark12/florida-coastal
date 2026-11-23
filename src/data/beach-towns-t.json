@@ -230,7 +230,7 @@
     "b": "Polished and peaceful, with golf, boating, a walkable downtown and calm Gulf beaches from the pier north to Vanderbilt Beach.",
     "img": "../img/c/naples-beach.webp",
     "p": "$5.03M",
-    "m": 5025
+    "m": 1155
   },
   {
     "id": "keywest",
@@ -320,7 +320,7 @@
     "b": "Atlantic Avenue runs from downtown straight to the ocean, so breakfast, the beach and live music are all on one street.",
     "img": "../img/c/delray-beach.webp",
     "p": "$775K",
-    "m": 775
+    "m": 415
   },
   {
     "id": "jupiter",
@@ -1157,7 +1157,7 @@
     "b": "The largest of the Ten Thousand Islands, with a wide crescent beach on one side and wild mangrove country on the other.",
     "img": "../img/c/marco-island.webp",
     "p": "$1.51M",
-    "m": 1510
+    "m": 620
   },
   {
     "id": "port-charlotte",
@@ -1241,7 +1241,7 @@
     "b": "A tiny oceanfront village at the north tip of Miami Beach, known for a luxury shopping center and a quiet beach path.",
     "img": "../img/c/bal-harbour.webp",
     "p": "$18.58M",
-    "m": 18581
+    "m": 1550
   },
   {
     "id": "boca-raton",
@@ -2647,7 +2647,7 @@
     "b": "An island village across the Rickenbacker Causeway from Miami, with Crandon Park and the Cape Florida Lighthouse at Bill Baggs State Park.",
     "img": "../img/c/key-biscayne.webp",
     "p": "$3.91M",
-    "m": 3910
+    "m": 1525
   },
   {
     "id": "boca-grande",

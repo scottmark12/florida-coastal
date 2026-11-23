@@ -84,7 +84,8 @@
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "verified county sample"
         }
-      ]
+      ],
+      "condo_note": "few"
     },
     "cedarkey": {
       "town": "Cedar Key",
@@ -268,6 +269,16 @@
           "source": "Florida DOR county records",
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "verified county sample"
+        },
+        {
+          "median": 1155000,
+          "type": "Condo",
+          "period": "Jan–May 2026",
+          "sales": 578,
+          "area": "Naples Beach (ZIPs 34102, 34103, 34108)",
+          "source": "Naples Area Board of REALTORS local market update (Southwest Florida MLS), via Matt Brown",
+          "source_url": "https://www.mattbrownrealestate.com/blog/may-2026-nabor-real-estate-market-report/",
+          "basis": "provider market"
         }
       ]
     },
@@ -373,6 +384,16 @@
           "source": "Florida DOR county records",
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "verified county sample"
+        },
+        {
+          "median": 415000,
+          "type": "Condo or townhome",
+          "period": "Apr–Jun 2026",
+          "sales": 207,
+          "area": "Delray Beach city",
+          "source": "MIAMI REALTORS local residential market metrics (MLS)",
+          "source_url": "https://www.miamirealtors.com/wp-content/uploads/bsk-pdf-manager/2026/07/City_Palm-Beach-County_Townhouses-and-Condos_2026-Q2_Local-Residential-Market-Metrics.pdf",
+          "basis": "provider market"
         }
       ]
     },
@@ -609,7 +630,8 @@
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "verified county sample"
         }
-      ]
+      ],
+      "condo_note": "few"
     },
     "st-teresa": {
       "town": "St. Teresa",
@@ -774,7 +796,8 @@
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "verified county sample"
         }
-      ]
+      ],
+      "condo_note": "few"
     },
     "crystal-river": {
       "town": "Crystal River",
@@ -1378,6 +1401,16 @@
           "source": "Florida DOR county records",
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "verified county sample"
+        },
+        {
+          "median": 620000,
+          "type": "Condo",
+          "period": "Oct 2025–Sep 2026",
+          "sales": 487,
+          "area": "Marco Island (MLS area MI01)",
+          "source": "Naples Area Board of REALTORS MLS, via Alpizar Real Estate",
+          "source_url": "https://www.alpizarrealestate.com/marco-island/",
+          "basis": "provider market"
         }
       ]
     },
@@ -1483,6 +1516,16 @@
           "source": "Florida DOR county records",
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "longer-window county sample"
+        },
+        {
+          "median": 1550000,
+          "type": "Condo or townhome",
+          "period": "Apr–Jun 2026",
+          "sales": 27,
+          "area": "Bal Harbour village",
+          "source": "MIAMI REALTORS local residential market metrics (MLS)",
+          "source_url": "https://www.miamirealtors.com/wp-content/uploads/bsk-pdf-manager/2026/07/City_Miami-Dade-County_Townhouses-and-Condos_2026-Q2_Local-Residential-Market-Metrics.pdf",
+          "basis": "provider market"
         }
       ]
     },
@@ -3223,6 +3266,16 @@
           "source": "Florida DOR county records",
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "verified county sample"
+        },
+        {
+          "median": 1525000,
+          "type": "Condo or townhome",
+          "period": "Apr–Jun 2026",
+          "sales": 53,
+          "area": "Key Biscayne village",
+          "source": "MIAMI REALTORS local residential market metrics (MLS)",
+          "source_url": "https://www.miamirealtors.com/wp-content/uploads/bsk-pdf-manager/2026/07/City_Miami-Dade-County_Townhouses-and-Condos_2026-Q2_Local-Residential-Market-Metrics.pdf",
+          "basis": "provider market"
         }
       ]
     },

@@ -175,7 +175,7 @@
     "apalachicola": {
       "s": "Apalachicola",
       "rg": "The Forgotten Coast",
-      "pr": "$350K house",
+      "pr": "$350K house · few condo sales",
       "h": "George E. Weems Memorial Hospital, about 1 mi<small class=\"cmp-sub\">Trauma center: Ascension Sacred Heart Bay (Level II), about 50 mi</small>",
       "a": "Tallahassee (TLH), about 1.5 hours",
       "se": "Quiet year round",
@@ -681,7 +681,7 @@
     "naples": {
       "s": "Naples",
       "rg": "Naples, Marco Island and the Everglades",
-      "pr": "$5.03M house",
+      "pr": "$5.03M house · $1.16M condo",
       "h": "NCH Baker Hospital Downtown, about 1 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 28 mi</small>",
       "a": "Southwest Florida (RSW), about 40 minutes",
       "se": "Busy winters, sleepy summers",
@@ -966,7 +966,7 @@
     "delray": {
       "s": "Delray Beach",
       "rg": "The Palm Beaches",
-      "pr": "$775K house",
+      "pr": "$775K house · $415K condo",
       "h": "Baptist Health Bethesda Hospital East, about 3 mi<small class=\"cmp-sub\">Trauma center: Delray Medical Center (Level I), about 4 mi</small>",
       "a": "Palm Beach airport or Fort Lauderdale (FLL)",
       "se": "Busy winters",
@@ -1579,7 +1579,7 @@
     "st-george-island": {
       "s": "St. George Island",
       "rg": "The Forgotten Coast",
-      "pr": "$1.02M house",
+      "pr": "$1.02M house · few condo sales",
       "h": "George E. Weems Memorial Hospital, about 9 mi<small class=\"cmp-sub\">Trauma center: Ascension Sacred Heart Bay (Level II), about 58 mi</small>",
       "a": "Tallahassee (TLH), about 1 hour 40 minutes",
       "se": "Busy summers and spring break, quiet winters",
@@ -2098,7 +2098,7 @@
     "port-st-joe": {
       "s": "Port St. Joe",
       "rg": "The Forgotten Coast",
-      "pr": "$425K house",
+      "pr": "$425K house · few condo sales",
       "h": "Ascension Sacred Heart Gulf, about 3 mi<small class=\"cmp-sub\">Trauma center: Ascension Sacred Heart Bay (Level II), about 32 mi</small>",
       "a": "Northwest Florida Beaches (ECP), about 1 hour",
       "se": "Quiet year round, busier in summer",
@@ -3874,7 +3874,7 @@
     "marco-island": {
       "s": "Marco Island",
       "rg": "Naples, Marco Island and the Everglades",
-      "pr": "$1.51M house",
+      "pr": "$1.51M house · $620K condo",
       "h": "Physicians Regional Medical Center Collier Boulevard, about 12 mi<small class=\"cmp-sub\">Trauma center: Lee Health Gulf Coast Medical Center (Level II), about 43 mi</small>",
       "a": "Southwest Florida (RSW), about 50 minutes",
       "se": "Busy winters",
@@ -4159,7 +4159,7 @@
     "bal-harbour": {
       "s": "Bal Harbour",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$18.58M house",
+      "pr": "$18.58M house · $1.55M condo",
       "h": "Jackson North Medical Center, about 5 mi<small class=\"cmp-sub\">Trauma center: HCA Florida Aventura Hospital (Level II), about 5 mi</small>",
       "a": "Miami (MIA) or Fort Lauderdale (FLL), about 35 minutes",
       "se": "Busy winters",
@@ -9289,7 +9289,7 @@
     "key-biscayne": {
       "s": "Key Biscayne",
       "rg": "Miami and Fort Lauderdale",
-      "pr": "$3.91M house",
+      "pr": "$3.91M house · $1.52M condo",
       "h": "Mercy Hospital in Coconut Grove, across the bay<small class=\"cmp-sub\">Trauma center: Jackson Memorial Ryder Trauma Center (Level I)</small>",
       "a": "Miami (MIA), about 25 minutes",
       "se": "Busy winters and weekends",
