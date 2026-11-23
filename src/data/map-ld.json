@@ -644,7 +644,7 @@
    1,
    0
   ],
-  "med": 5025,
+  "med": 1155,
   "reg": "naples-marco",
   "rn": "Naples, Marco Island and the Everglades",
   "te": true,
@@ -3415,12 +3415,12 @@
    "dining": 53
   },
   "bg": [
-   3,
    2,
    1,
+   0,
    0
   ],
-  "med": 1510,
+  "med": 620,
   "reg": "naples-marco",
   "rn": "Naples, Marco Island and the Everglades",
   "te": true,

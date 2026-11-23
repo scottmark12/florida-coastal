@@ -123,7 +123,8 @@
    "nightlife": 1
   },
   "pk": "house",
-  "pm": 350
+  "pm": 350,
+  "pcf": true
  },
  {
   "id": "cedarkey",
@@ -408,7 +409,8 @@
    "nightlife": 2.9
   },
   "pk": "house",
-  "pm": 5025
+  "pm": 1155,
+  "pc": "$1.16M"
  },
  {
   "id": "keywest",
@@ -910,7 +912,8 @@
    "nightlife": 1.9
   },
   "pk": "house",
-  "pm": 1025
+  "pm": 1025,
+  "pcf": true
  },
  {
   "id": "st-teresa",
@@ -1173,7 +1176,8 @@
    "nightlife": 1
   },
   "pk": "house",
-  "pm": 425
+  "pm": 425,
+  "pcf": true
  },
  {
   "id": "crystal-river",
@@ -2096,7 +2100,8 @@
    "nightlife": 1.9
   },
   "pk": "house",
-  "pm": 1510
+  "pm": 620,
+  "pc": "$620K"
  },
  {
   "id": "port-charlotte",

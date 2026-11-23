@@ -492,10 +492,11 @@
    "house": 4,
    "dock": 3
   },
-  "m": 5025,
+  "m": 1155,
   "g": "naples-marco",
-  "mk": "house",
-  "mh": 5025
+  "mk": "condo",
+  "mh": 5025,
+  "mc": 1155
  },
  "keywest": {
   "s": {
@@ -2641,10 +2642,11 @@
    "house": 4,
    "dock": 5
   },
-  "m": 1510,
+  "m": 620,
   "g": "naples-marco",
-  "mk": "house",
-  "mh": 1510
+  "mk": "condo",
+  "mh": 1510,
+  "mc": 620
  },
  "port-charlotte": {
   "s": {

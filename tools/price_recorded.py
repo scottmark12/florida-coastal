@@ -1,7 +1,7 @@
 """Nov 19 2026: one price route for every surface: recorded sales (what the town pages and compare show).
 Reads data/town-recorded-sale-prices.json and writes into src/data:
   towns.json      p  headline price ("$495K"), pk its kind (house, condo, home), pc condo price when the headline is a house,
-                  pf true when the headline rests on under 20 sales, pm the budget match price in $K (the cheaper of house and condo)
+                  pf true when the headline rests on under 20 sales, pcf true when the town has too few condo sales to give one, pm the budget match price in $K (the cheaper of house and condo)
   results-td.json p, pk, pc, pf (results slides)
   compare-d.json  pr  "$495K house" (Shortlist page)
   beach-towns-t.json p, m (m = match price)
@@ -42,23 +42,24 @@ for tid,v in REC.items():
     if h: i['_mh']=round(h['median']/1000)
     if c: i['_mc']=round(c['median']/1000)
     if h and c: i['pc']=fmt(c['median'])
+    if h and not c and v.get('condo_note')=='few': i['pcf']=True
     if head.get('sales') is not None and head['sales']<20: i['pf']=True
     info[tid]=i
 towns=load(S/'towns.json')
 for t in towns:
     i=info[t['id']]
-    for k in ('pc','pf'): t.pop(k,None)
+    for k in ('pc','pf','pcf'): t.pop(k,None)
     t.update({k:v for k,v in i.items() if not k.startswith('_')})
 dump(S/'towns.json',towns,None)
 res=load(S/'results-td.json')
 for tid,t in res.items():
     if tid in info:
-        for k in ('pc','pf'): t.pop(k,None)
-        t.update({k:info[tid][k] for k in ('p','pk','pc','pf') if k in info[tid]})
+        for k in ('pc','pf','pcf'): t.pop(k,None)
+        t.update({k:info[tid][k] for k in ('p','pk','pc','pf','pcf') if k in info[tid]})
 dump(S/'results-td.json',res,None)
 cd=load(S/'compare-d.json')
 for tid,t in cd['towns'].items():
-    if tid in info: t['pr']=info[tid]['p']+' '+info[tid]['pk']+(' · '+info[tid]['pc']+' condo' if 'pc' in info[tid] else '')
+    if tid in info: t['pr']=info[tid]['p']+' '+info[tid]['pk']+(' · '+info[tid]['pc']+' condo' if 'pc' in info[tid] else ' · few condo sales' if 'pcf' in info[tid] else '')
 dump(S/'compare-d.json',cd,None)
 bt=load(S/'beach-towns-t.json')
 for t in bt:
@@ -76,4 +77,4 @@ for tid,t in qd.items():
             t.pop(k,None)
             if '_'+k in i: t[k]=i['_'+k]
 dump(S/'quiz-qd.json',qd,None)
-print(len(info),'towns; condo beside house:',sum('pc' in i for i in info.values()),'; few sales:',sum('pf' in i for i in info.values()))
+print(len(info),'towns; condo beside house:',sum('pc' in i for i in info.values()),'; few sales:',sum('pf' in i for i in info.values()),'; few condo sales:',sum('pcf' in i for i in info.values()))
