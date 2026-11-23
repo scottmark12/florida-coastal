@@ -567,7 +567,8 @@
    "nightlife": 4
   },
   "pk": "house",
-  "pm": 775
+  "pm": 415,
+  "pc": "$415K"
  },
  {
   "id": "jupiter",
@@ -2247,7 +2248,8 @@
    "nightlife": 1.95
   },
   "pk": "house",
-  "pm": 18581,
+  "pm": 1550,
+  "pc": "$1.55M",
   "pf": true
  },
  {
@@ -4847,7 +4849,8 @@
    "nightlife": 2
   },
   "pk": "house",
-  "pm": 3910
+  "pm": 1525,
+  "pc": "$1.52M"
  },
  {
   "id": "boca-grande",

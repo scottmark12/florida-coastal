@@ -154,7 +154,8 @@
     "p": "$775K",
     "b": "Atlantic Avenue runs from downtown straight to the ocean, so breakfast, the beach and live music are all on one street.",
     "img": "img/c/delray-beach.webp",
-    "pk": "house"
+    "pk": "house",
+    "pc": "$415K"
   },
   "jupiter": {
     "n": "Jupiter",
@@ -635,6 +636,7 @@
     "b": "A tiny oceanfront village at the north tip of Miami Beach, known for a luxury shopping center and a quiet beach path.",
     "img": "img/c/bal-harbour.webp",
     "pk": "house",
+    "pc": "$1.55M",
     "pf": true
   },
   "boca-raton": {
@@ -1401,7 +1403,8 @@
     "p": "$3.91M",
     "b": "An island village across the Rickenbacker Causeway from Miami, with Crandon Park and the Cape Florida Lighthouse at Bill Baggs State Park.",
     "img": "img/c/key-biscayne.webp",
-    "pk": "house"
+    "pk": "house",
+    "pc": "$1.52M"
   },
   "boca-grande": {
     "n": "Boca Grande",

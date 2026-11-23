@@ -895,12 +895,12 @@
    "dining": 7
   },
   "bg": [
-   2,
    1,
+   0,
    0,
    0
   ],
-  "med": 775,
+  "med": 415,
   "reg": "palm-beaches",
   "rn": "The Palm Beaches",
   "te": false,
@@ -3671,7 +3671,7 @@
    1,
    0
   ],
-  "med": 18581,
+  "med": 1550,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,
@@ -8023,7 +8023,7 @@
    1,
    0
   ],
-  "med": 3910,
+  "med": 1525,
   "reg": "miami-fort-lauderdale",
   "rn": "Miami and Fort Lauderdale",
   "te": true,

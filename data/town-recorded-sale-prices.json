@@ -373,6 +373,16 @@
           "source": "Florida DOR county records",
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "verified county sample"
+        },
+        {
+          "median": 415000,
+          "type": "Condo or townhome",
+          "period": "Apr–Jun 2026",
+          "sales": 207,
+          "area": "Delray Beach city",
+          "source": "MIAMI REALTORS local residential market metrics (MLS)",
+          "source_url": "https://www.miamirealtors.com/wp-content/uploads/bsk-pdf-manager/2026/07/City_Palm-Beach-County_Townhouses-and-Condos_2026-Q2_Local-Residential-Market-Metrics.pdf",
+          "basis": "provider market"
         }
       ]
     },
@@ -1483,6 +1493,16 @@
           "source": "Florida DOR county records",
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "longer-window county sample"
+        },
+        {
+          "median": 1550000,
+          "type": "Condo or townhome",
+          "period": "Apr–Jun 2026",
+          "sales": 27,
+          "area": "Bal Harbour village",
+          "source": "MIAMI REALTORS local residential market metrics (MLS)",
+          "source_url": "https://www.miamirealtors.com/wp-content/uploads/bsk-pdf-manager/2026/07/City_Miami-Dade-County_Townhouses-and-Condos_2026-Q2_Local-Residential-Market-Metrics.pdf",
+          "basis": "provider market"
         }
       ]
     },
@@ -3223,6 +3243,16 @@
           "source": "Florida DOR county records",
           "source_url": "https://floridarevenue.com/property/Pages/DataPortal_RequestAssessmentRollGISData.aspx",
           "basis": "verified county sample"
+        },
+        {
+          "median": 1525000,
+          "type": "Condo or townhome",
+          "period": "Apr–Jun 2026",
+          "sales": 53,
+          "area": "Key Biscayne village",
+          "source": "MIAMI REALTORS local residential market metrics (MLS)",
+          "source_url": "https://www.miamirealtors.com/wp-content/uploads/bsk-pdf-manager/2026/07/City_Miami-Dade-County_Townhouses-and-Condos_2026-Q2_Local-Residential-Market-Metrics.pdf",
+          "basis": "provider market"
         }
       ]
     },
