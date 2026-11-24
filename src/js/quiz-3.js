@@ -110,3 +110,6 @@ function qAsk(go2,TOP,a){
    send.then(()=>{location.href=go2.url()})}};
  box.classList.add('ask');document.body.classList.add('qask');const h2=box.querySelector('h2');if(h2)h2.textContent='Your top 5 is ready.';step1();box.appendChild(card);requestAnimationFrame(()=>card.classList.add('in'));
 }
+
+/* Nov 23 2026: start from an article card. /quiz?q1=N answers question 1 and moves on to question 2. */
+;(function(){var m=/[?&]q1=(\d)/.exec(location.search);if(!m)return;var n=+m[1],done=0;function go(){if(done)return;try{if(typeof qPick==='function'&&typeof Q!=='undefined'&&typeof SQ!=='undefined'&&SQ[0]&&SQ[0].o[n]&&Q.step===0&&Q.ans[0]==null){done=1;qPick(n)}}catch(e){}}if(document.readyState==='complete')setTimeout(go,200);else addEventListener('load',function(){setTimeout(go,200)})})();
