@@ -194,7 +194,8 @@ def make_page(a, data):
     if not n:
         die("could not find the More guides band")
     s = s[:a0] + m + s[a1:]
-    leftover = [w for w in (old_id, "water-dunes", "Washing Away") if w in s]
+    unbanded = re.sub(r'<div class="label">More guides</div>.*?</div></div></section>', '', s, flags=re.S)
+    leftover = [w for w in (old_id, "water-dunes", "Washing Away") if w in unbanded]
     if leftover:
         die(f"template text left in the new page: {leftover}")
     path = f"articles/{a['id']}.html"
