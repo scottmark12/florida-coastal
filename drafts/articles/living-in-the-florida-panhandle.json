@@ -1,7 +1,7 @@
 {
  "id": "living-in-the-florida-panhandle",
- "date": "2026-11-22",
- "cat": "Coast Guides",
+ "date": "2026-11-28",
+ "cat": "Picking a town",
  "img": "img/south-walton-sunset.jpg",
  "title": "What Is It Like Living in the Florida Panhandle?",
  "dek": "Slow days, good seafood, whiter sand, cooler winters and, outside 30A, lower home prices than South Florida. The Panhandle has also taken more direct hurricane hits than any other part of the state.",
@@ -40,5 +40,14 @@
    "How often do hurricanes hit the Florida Panhandle?",
    "NOAA counted 66 hurricane direct hits on Northwest Florida from 1851 to 2018, including 14 majors. That count includes Michael in 2018, and Sally, Idalia, Debby, Helene and Isaias have hit Northwest Florida since."
   ]
+ ],
+ "crumb": "Picking a town",
+ "kicker": "Picking a Town · The Panhandle",
+ "alt": "Sunset over the beach in South Walton",
+ "quiz": "Your top 5 towns, Panhandle included, matched to how you live.",
+ "related": [
+  "destin-vs-30a",
+  "pick-your-coast",
+  "florida-beach-towns-fewest-hurricanes"
  ]
 }
